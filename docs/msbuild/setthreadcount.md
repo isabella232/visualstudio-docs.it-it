@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8e3792015696f5424ffe9134a78b1b88f780e5622e2292382bc5b18ff80cad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 35649f2ae7c0aec8b713573fc5b9f8f29e86ac2f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121257485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084818"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 
@@ -43,7 +43,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 
 ## <a name="return-value"></a>Valore restituito
 
- HRESULT **con** il bit **SUCCEEDED** impostato se il conteggio dei thread è stato aggiornato.
+ HRESULT **con** il bit **SUCCEEDED** impostato se il numero di thread è stato aggiornato.
 
 ## <a name="requirements"></a>Requisiti
 

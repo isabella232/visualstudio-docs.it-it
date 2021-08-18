@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: bbbf774a0a14d202283aa066b791d20f768db8120e808afd3782e5bac153f90a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 75b68bfc81cf2a305baa889baf726d6905b7afab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436395"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154543"
 ---
 # <a name="idiasymbolget_managed"></a>IDiaSymbol::get_managed
 Recupera un flag che specifica se il simbolo fa riferimento al codice gestito.
@@ -35,13 +35,13 @@ HRESULT get_managed (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se il simbolo fa riferimento a codice gestito; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il simbolo fa riferimento al codice gestito; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e6aa0f19c8ae8f19fb49a1322e12cae0aa65305217d5ff8a8361132e347a37
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f263a8748e68395b333d5f34fd00e326736afaf2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360053"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144769"
 ---
 # <a name="editor-imports"></a>Importazioni dell'editor
 È possibile importare diversi servizi editor, factory e broker che forniscono all'estensione diversi tipi di accesso all'editor principale. Ad esempio, è possibile importare <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> per fornire un per un determinato tipo di <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> contenuto. Questo strumento di navigazione consente di eseguire diversi tipi di ricerche in un buffer di testo.
@@ -60,7 +60,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 - [Procedura dettagliata: Visualizzare i suggerimenti per le lampadine](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)
 
 ## <a name="import-the-service-provider"></a>Importare il provider di servizi
- È anche possibile importare un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> oggetto (disponibile nell'assembly Microsoft.VisualStudio.Shell.Immutable.10.0) nello stesso modo per ottenere l'accesso Visual Studio servizi:
+ È anche possibile importare un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> oggetto (disponibile nell'assembly Microsoft.VisualStudio.Shell.Immutable.10.0) nello stesso modo per ottenere l'accesso ai Visual Studio seguenti:
 
 ```csharp
 [Import]

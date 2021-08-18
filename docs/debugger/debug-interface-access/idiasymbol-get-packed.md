@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) è compresso.
+description: Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) è di tipo pack.
 title: IDiaSymbol::get_packed | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: e42ff368-56c4-49a2-8676-f80e349efa21
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e6cf89aa0bdd31b826ac8e73000c1bfa8c595c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e22baa634b2ffaf96a5b0f393e3f54863ed802ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161935"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113283"
 ---
 # <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
-Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) è compresso.
+Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) è di tipo pack.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,16 +35,16 @@ HRESULT get_packed (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se il tipo definito dall'utente è compresso; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il tipo definito dall'utente è di tipo pack; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Compresso significa che tutti i membri del tipo definito dall'utente vengono posizionati il più vicino possibile, senza spaziatura interna per allinearli ai limiti della memoria.
+ Packed significa che tutti i membri del tipo definito dall'utente vengono posizionati il più vicino possibile, senza spaziatura interna per allinearsi ai limiti di memoria.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

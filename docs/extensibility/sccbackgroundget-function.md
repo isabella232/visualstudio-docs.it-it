@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a70e410ab292238ccf16fa810148b0f6f7d2069230638af8780e7c024b1fbcfe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f010aa2ba214004422048513cea92adf67d62c69
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144626"
 ---
 # <a name="sccbackgroundget-function"></a>Funzione SccBackgroundGet
 Questa funzione recupera dal controllo del codice sorgente ognuno dei file specificati senza alcuna interazione dell'utente.
@@ -41,7 +41,7 @@ SCCRTN SccBackgroundGet(
 
 [in] Puntatore al contesto del plug-in del controllo del codice sorgente.
 
- nFiles
+ nFile
 
 [in] Numero di file specificati nella `lpFileNames` matrice.
 
@@ -61,18 +61,18 @@ SCCRTN SccBackgroundGet(
 [in] Valore univoco associato a questa operazione.
 
 ## <a name="return-value"></a>Valore restituito
- L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Operazione completata correttamente.|
-|SCC_E_BACKGROUNDGETINPROGRESS|È già in corso un recupero in background (il plug-in del controllo del codice sorgente deve restituire questo valore solo se non supporta operazioni batch simultanee).|
+|SCC_E_BACKGROUNDGETINPROGRESS|È già in corso un recupero in background. Il plug-in del controllo del codice sorgente deve restituire questo valore solo se non supporta operazioni batch simultanee.|
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|
 
 ## <a name="remarks"></a>Commenti
- Questa funzione viene sempre chiamata su un thread diverso da quello che ha caricato il plug-in del controllo del codice sorgente. Non è previsto che questa funzione restituirà finché non viene completata. tuttavia, può essere chiamato più volte con più elenchi di file, tutti contemporaneamente.
+ Questa funzione viene sempre chiamata su un thread diverso da quello che ha caricato il plug-in del controllo del codice sorgente. Questa funzione non deve restituire finché non viene eseguita. tuttavia, può essere chiamato più volte con più elenchi di file, tutti contemporaneamente.
 
- L'uso `dwFlags` dell'argomento è identico a quello di [SccGet.](../extensibility/sccget-function.md)
+ L'uso `dwFlags` dell'argomento è lo stesso di [SccGet](../extensibility/sccget-function.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

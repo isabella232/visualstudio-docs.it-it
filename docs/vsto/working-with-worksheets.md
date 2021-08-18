@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b29fddd4b13df242740fa98922ee9fe762209f3a343c26dd8ef7cceb5293153d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4a61ec0ef19425d83921343341ce497a90889a60
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121407967"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114953"
 ---
 # <a name="work-with-worksheets"></a>Usare i fogli di lavoro
   Le classi <xref:Microsoft.Office.Tools.Excel.Worksheet> e <xref:Microsoft.Office.Interop.Excel.Worksheet> contengono i metodi e le proprietà usate per eseguire attività con i fogli di lavoro.

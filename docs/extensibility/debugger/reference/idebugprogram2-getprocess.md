@@ -1,5 +1,5 @@
 ---
-description: Ottenere il processo in cui è in esecuzione il programma.
+description: Ottiene il processo in cui è in esecuzione il programma.
 title: IDebugProgram2::GetProcess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0f7551b86bd6eb818b1e451d2cc65426cf7441d85da0812afe215dcfaa2feca
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 135d8e632b4cef71050db0ba326388170037e732
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307115"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126544"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
-Ottenere il processo in cui è in esecuzione il programma.
+Ottiene il processo in cui è in esecuzione il programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,9 +49,9 @@ int GetProcess(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- A meno che un motore di debug (DE) non implementi [l'interfaccia IDebugEngineLaunch2,](../../../extensibility/debugger/reference/idebugenginelaunch2.md) l'implementazione del metodo deve sempre restituire perché un DE non è in grado di determinare il processo in esecuzione in e pertanto non può soddisfare un'implementazione di `E_NOTIMPL` questo metodo.
+ A meno che un motore di debug non implementi l'interfaccia [IDebugEngineLaunch2,](../../../extensibility/debugger/reference/idebugenginelaunch2.md) l'implementazione de di questo metodo deve sempre restituire perché de non è in grado di determinare in quale processo è in esecuzione e pertanto non può soddisfare un'implementazione di questo `E_NOTIMPL` metodo.
 
- L'implementazione dell'interfaccia significa che il derea deve sapere come creare un processo. Di `IDebugEngineLaunch2` conseguenza, l'implementazione del de dell'interfaccia [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) è in grado di sapere in quale processo è in esecuzione.
+ L'implementazione dell'interfaccia significa che DE deve sapere come creare un `IDebugEngineLaunch2` processo. Pertanto, l'implementazione de [dell'interfaccia IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) è in grado di conoscere il processo in cui è in esecuzione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

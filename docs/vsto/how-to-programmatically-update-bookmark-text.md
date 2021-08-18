@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aggiornare il testo del segnalibro a livello di codice'
-description: Informazioni su come usare Visual Studio per inserire testo in un segnalibro segnaposto in un documento di Microsoft Word a livello di codice.
+description: Informazioni su come usare Visual Studio per inserire testo in un segnalibro segnaposto in un Microsoft Word documento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,17 +14,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f67dbbe4d1d5c24d617f9cbc49a58ec2d134e90b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2e1c944b00f2581e62f49c56d946d78daefff935
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826200"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155681"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Procedura: Aggiornare il testo del segnalibro a livello di codice
-  È possibile inserire testo in un segnalibro in un documento di Microsoft Office Word in modo da poter recuperare il testo in seguito o sostituire il testo in un segnalibro. Se si sviluppa una personalizzazione a livello di documento, è anche possibile aggiornare il testo in un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> associato a dati. Per altre informazioni, vedere [Associare dati ai controlli nelle soluzioni Office.](../vsto/binding-data-to-controls-in-office-solutions.md)
+  È possibile inserire testo in un segnalibro in un documento di Microsoft Office Word in modo da poter recuperare il testo in seguito o sostituire il testo in un segnalibro. Se si sviluppa una personalizzazione a livello di documento, è anche possibile aggiornare il testo in un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> associato a dati. Per altre informazioni, vedere [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

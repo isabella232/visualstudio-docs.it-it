@@ -1,20 +1,21 @@
 ---
 title: Generare un override di metodo
-description: Informazioni su come generare immediatamente il codice per qualsiasi metodo che può essere sottoposto a override da una classe base.
+description: Informazioni su come generare immediatamente il codice per qualsiasi metodo di cui è possibile eseguire l'override da una classe di base.
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3640fe29a18ba1ec89ab2806810165a0ec509167
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0724500bf90e3e0253d936facf4be62f68533ba1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968060"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085897"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generare un override in Visual Studio
 

@@ -1,6 +1,6 @@
 ---
 title: Composizione di un test codificato dell'interfaccia utente
-description: Informazioni sui file aggiunti alla soluzione di test codificato dell'interfaccia utente quando si crea un test codificato dell'interfaccia utente.
+description: Informazioni sui file aggiunti alla soluzione di test codificati dell'interfaccia utente quando si crea un test codificato dell'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b55c79dd39b5e8393d22542a2334d84b191293
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 840a0b0b1e322bca6a47999cf1c92b0e47bd684a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933076"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068586"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 
@@ -33,7 +34,7 @@ Quando si crea un test codificato dell'interfaccia utente, il **Generatore di te
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sezione delle dichiarazioni](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parziale, generata automaticamente)<br /><br /> [Metodi](#UIMapMethods)<br /><br /> [Proprietà](#UIMapProperties)|No|
 |[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Sì|
 |[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Sì|
-|[UIMap. UITest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
+|[UIMap.uitest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
 
 ### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
 Questo file contiene il codice creato automaticamente dal **Generatore di test codificati dell'interfaccia utente** quando viene creato un test. Questo file viene ricreato ogni volta che un test viene modificato e quindi non è un file in cui si possa aggiungere o modificare il codice.

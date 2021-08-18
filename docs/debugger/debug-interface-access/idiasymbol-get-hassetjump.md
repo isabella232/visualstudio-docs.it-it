@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se la funzione contiene un uso del comando setjmp (abbinato al comando longjmp (/CPP/c-Runtime-Library/Reference/longjmp), che formano il metodo di gestione delle eccezioni in stile C).
+description: Recupera un flag che specifica se la funzione contiene un uso del comando setjmp (associato al comando longjmp(/cpp/c-runtime-library/reference/longjmp), che formano il metodo di gestione delle eccezioni in stile C.
 title: IDiaSymbol::get_hasSetJump | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 22656206-dccf-40ed-b179-fc016d1b262a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b0721969fb9419c8467fdd6019ff4de5aaf761c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6face230a71d30514f589a77964f14ef4236b90d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128679"
 ---
 # <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
-Recupera un flag che specifica se la funzione contiene un uso del comando [setjmp](/cpp/c-runtime-library/reference/setjmp) (abbinato al comando [longjmp](/cpp/c-runtime-library/reference/longjmp) , che formano il metodo di tipo C della gestione delle eccezioni).
+Recupera un flag che specifica se la funzione contiene un uso del [comando setjmp](/cpp/c-runtime-library/reference/setjmp) (associato al [comando longjmp,](/cpp/c-runtime-library/reference/longjmp) che formano il metodo di gestione delle eccezioni in stile C).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +35,19 @@ HRESULT get_hasSetJump(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se la funzione contiene un `setjmp` comando; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se la funzione contiene un `setjmp` comando; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedi anche

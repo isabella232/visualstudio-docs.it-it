@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac784a7f6de528e773219a1aa65da333e8e09832044c25b2106ba72840fb037a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 77e28b608d5c0db1d26d83f2d9a5786877a3ba73
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342466"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145107"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Determina se i simboli di debug vengono caricati per il modulo specificato in base all'identificatore di dominio dell'applicazione.
@@ -44,16 +44,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore per il dominio applicazione.
+[in] Identificatore per il dominio dell'applicazione.
 
 `guidModule`\
-[in] Identificatore univoco del modulo.
+[in] Identificatore univoco per il modulo.
 
 ## <a name="return-value"></a>Valore restituito
-Se vengono caricati i simboli di debug, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
+Se i simboli di debug vengono caricati, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(

@@ -1,6 +1,6 @@
 ---
 title: Funzione CvIsEnabled | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvIsEnabled (libreria C).
+description: Vedere le informazioni di riferimento per la funzione CvIsEnabled (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be750f62e248b3d9f837c5baa561765e14bfba5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bb2e5bf40c038456853a06b9b43a9ee03d8e051
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940943"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084519"
 ---
 # <a name="cvisenabled-function"></a>Funzione CvIsEnabled
 Determina se vi sono sessioni che hanno abilitato il provider ETW specifico.
@@ -53,4 +54,4 @@ HRESULT CvIsEnabledEx(
  **Intestazione:** *cvmarkers.h*
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)
+- [Informazioni di riferimento sulla libreria C++](../profiling/cpp-library-reference.md)

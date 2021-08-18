@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a59cd03281fb5e802a1c93cba65115bbb9b09ee5f57c5c15d01b100b90cbf78d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b917bc14728ee1f8dd37f28bbec42e395455ee35
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292117"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126206"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crea un enumeratore per le proprietà associate al stack frame, ad esempio le variabili locali.
@@ -53,10 +53,10 @@ int EnumProperties (
 
 ## <a name="parameters"></a>Parametri
 `dwFieldSpec`\
-[in] Combinazione di flag dell DEBUGPROP_INFO_FLAGS enumere che specifica [](../../../extensibility/debugger/reference/debug-property-info.md) i campi nelle strutture DEBUG_PROPERTY_INFO valori enumerati. [](../../../extensibility/debugger/reference/debugprop-info-flags.md)
+[in] Combinazione di flag dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi [](../../../extensibility/debugger/reference/debug-property-info.md) nelle strutture DEBUG_PROPERTY_INFO valori enumerati.
 
 `nRadix`\
-[in] Radice da utilizzare nella formattazione di qualsiasi informazione numerica.
+[in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
 
 `refiid`\
 [in] GUID di un filtro utilizzato per selezionare [le](../../../extensibility/debugger/reference/debug-property-info.md) DEBUG_PROPERTY_INFO da enumerare, ad esempio `guidFilterLocals` .

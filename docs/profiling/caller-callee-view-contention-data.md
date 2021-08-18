@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati sui conflitti | Microsoft Docs'
-description: Informazioni sul modo in cui la visualizzazione Chiamante/chiamato visualizza le informazioni sui contenuti per una funzione selezionata e le relative funzioni padre e figlio, in Esplora prestazioni.
+description: Informazioni su come la visualizzazione Chiamante/chiamato visualizza le informazioni sui contenuti per una funzione selezionata e le relative funzioni padre e figlio in Esplora prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bc30fb2c842623441b219d0670d0dcb9f664e766f509c193ee05fb514f5419c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b0b110beed0c206c4e25bfcbdab4ce0c4a3afe3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121302305"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084714"
 ---
 # <a name="callercallee-view----contention-data"></a>Visualizzazione Chiamante/chiamato: dati sui conflitti
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui conflitti per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -32,7 +32,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui 
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Tipo**|Il contesto della funzione:<br /><br /> -   **0** : funzione corrente<br />-   **1** : funzione che chiama la funzione corrente<br />-   **2:** funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
+|**Tipo**|Il contesto della funzione:<br /><br /> -   **0** : funzione corrente<br />-   **1** : funzione che chiama la funzione corrente<br />-   **2** : funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Tempo blocco esclusivo**|- Per la funzione corrente, il periodo in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione. Il tempo di blocco non è incluso nelle funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, la parte del tempo di blocco esclusivo della funzione corrente usata quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il periodo in cui è stato impedito a questa funzione di eseguire il proprio codice quando la funzione è stata chiamata dalla funzione corrente. Il tempo di blocco non è incluso nelle funzioni figlio chiamate dalla funzione chiamata.|
 |**% tempo blocco esclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per questa funzione in questo contesto.|
 |**Conflitti esclusivi**|- Per la funzione corrente, il numero di volte in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione. Non sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, il numero di conflitti esclusivi della funzione corrente che si sono verificati quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di volte in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione quando la funzione è stata chiamata dalla funzione corrente. Non sono inclusi i conflitti che si sono verificati in funzioni chiamate dalla funzione chiamata.|
@@ -53,8 +53,8 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui 
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione chiamante/chiamato](../profiling/caller-callee-view.md)
+- [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
-- [Visualizzazione chiamante/chiamato : dati di strumentazione della memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Visualizzazione chiamante/chiamato : dati di campionamento della memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione chiamante/chiamato : dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)

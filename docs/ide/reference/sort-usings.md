@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e5197a7cdcca551993e3b7a2fdf76f0fb3267748029eb75588ca85f67af2e62b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 262c4276395f2de71d8720dcd9a26839ef4cac51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121446903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117085"
 ---
 # <a name="sort-usings"></a>Ordina using
 
@@ -27,16 +27,16 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Ordina using.
+**Cosa:** Ordinare con .
 
-**Quando:** Si desidera ordinare le direttive all'inizio del file in modo che `using` siano in ordine alfabetico. 
+**Quando:** Si desidera ordinare le direttive nella parte superiore del file in modo che `using` siano in ordine alfabetico. 
 
 **Perché:** Rende più semplice trovare una direttiva using.
 
 ## <a name="how-to"></a>Procedure
 
 1. Selezionare **Modifica** dalla barra dei menu.
-2. Selezionare **IntelliSense**  >  **Sort Usings (Ordina using).**
+2. Selezionare Intellisense Sort Usings **(Intellisense**  >  **Sort Usings).**
 
    ![Ordina using](media/sort-usings.png)
 

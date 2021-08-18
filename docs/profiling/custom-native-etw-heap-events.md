@@ -13,12 +13,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51f6f5bc5d01b48f73f66c3f9697fcd8270ee374b9dc61585448a761b52f26bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 497348f4df25a3c26ce20617f00ac3f79e806e27
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427281"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084584"
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
 

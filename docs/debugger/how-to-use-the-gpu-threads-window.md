@@ -21,21 +21,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 971462777b2c2cf8ccf315b2764fc514b4991548542fcfe0b62144a8689e65e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9be84a36c06da9fde107f5eaa9f1265985faa9db
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378710"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154031"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Procedura: Usare la finestra Thread GPU (C++)
-Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per altre informazioni sulle applicazioni in esecuzione nella GPU, vedere C++ AMP [Panoramica](/cpp/parallel/amp/cpp-amp-overview)di .
+Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per altre informazioni sulle applicazioni eseguite nella GPU, vedere C++ AMP [Panoramica](/cpp/parallel/amp/cpp-amp-overview)di .
 
  La finestra Thread GPU contiene una tabella in cui ogni riga rappresenta un set di thread GPU che hanno gli stessi valori in tutte le colonne. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile contrassegnare, rimuovere i flag, bloccare (sospendere) e sbloccare (riprendere) i thread dalla finestra Thread GPU. Le colonne seguenti sono visualizzate nella finestra Thread GPU:
 
 - Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.
 
-- Colonna del thread corrente, in cui una freccia gialla indica il thread corrente.
+- Colonna thread corrente, in cui una freccia gialla indica il thread corrente.
 
 - Colonna **Conteggio thread**, che visualizza il numero di thread nella stessa posizione.
 
@@ -108,4 +108,4 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 ## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: Usare la finestra Espressioni di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Procedura dettagliata: Debug di un'C++ AMP di lavoro](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Procedura dettagliata: Debug di un C++ AMP appalto](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

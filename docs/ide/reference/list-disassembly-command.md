@@ -1,6 +1,6 @@
 ---
 title: Comando Elenca disassembly
-description: Informazioni sul comando list Disassembly e sul modo in cui avvia il processo di debug e consente di specificare come vengono gestiti gli errori.
+description: Informazioni sul comando List Disassembly e su come inizia il processo di debug e consente di specificare come vengono gestiti gli errori.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de7becc46205e5fb8865a0419102bf65afde14e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f41021b3b0d8c4dd0d0d688573bdc2e5c37da8f6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852089"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143807"
 ---
 # <a name="list-disassembly-command"></a>Comando Elenca disassembly
 Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.
@@ -69,8 +70,8 @@ facoltativo. Abilita la visualizzazione dei numeri di riga associati al codice s
 ## <a name="see-also"></a>Vedere anche
 
 - [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)
-- [Comando list Threads](../../ide/reference/list-threads-command.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Comando Elenca thread](../../ide/reference/list-threads-command.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

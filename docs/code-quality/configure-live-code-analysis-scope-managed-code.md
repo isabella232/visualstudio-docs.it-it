@@ -15,19 +15,19 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e02ea853f402cfcad1d36547e747add2e5a3265930d34561f9d84a7797bd0b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 664d24c2732ee2c63475ac986fa9bbab78831493
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312339"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114186"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Configurare l'analisi del codice in tempo reale per .NET
 
 Visual Studio esegue una serie di analisi del codice in tempo reale, definite anche analisi in *background,* durante la modifica dei file di origine nell'editor. In parte è necessaria un'analisi minima per un'esperienza di modifica dell Visual Studio IDE accettabile. Alcuni di questi sono utili per migliorare la velocità di risposta per le funzionalità dell'IDE. Anche se in parte è necessario abilitare funzionalità IDE aggiuntive, ad esempio la diagnostica e le correzioni del codice dagli analizzatori Roslyn. In base alla funzionalità, queste analisi possono essere raggruppate nel modo seguente:
 
 - **Calcolo in background della diagnostica:** analisi per calcolare errori, avvisi e suggerimenti nei file di origine. Queste informazioni di diagnostica vengono mostrate come voci nell'elenco degli errori e con una disarticola nell'editor. Possono essere classificati in due categorie:
-  - Diagnostica del compilatore Visual Basic C# e C#
+  - Diagnostica del compilatore C# Visual Basic compilazione
   - Diagnostica dell'analizzatore Roslyn, che include:
 
     - Analizzatori IDE predefiniti per i suggerimenti di stile del codice
@@ -42,7 +42,7 @@ Visual Studio esegue una serie di analisi del codice in tempo reale, definite an
 
 ## <a name="default-analysis-scope"></a>Ambito di analisi predefinito
 
-Per impostazione predefinita, l'analisi del codice in tempo reale per il calcolo in background della diagnostica viene eseguita per tutti i file _aperti_ in Visual Studio. Alcune delle _altre analisi in background indicate_ in precedenza vengono eseguite per tutti i progetti che hanno almeno un file aperto. Mentre alcune analisi in background vengono eseguite per l'intera soluzione.
+Per impostazione predefinita, l'analisi del codice in tempo reale per il calcolo in background della diagnostica viene eseguita per tutti i file aperti _in_ Visual Studio. Alcune delle _altre analisi in background indicate_ in precedenza vengono eseguite per tutti i progetti che hanno almeno un file aperto. Mentre alcune analisi in background vengono eseguite per l'intera soluzione.
 
 ## <a name="custom-analysis-scope"></a>Ambito di analisi personalizzato
 

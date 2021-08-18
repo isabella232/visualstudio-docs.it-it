@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia rappresenta una posizione nello spazio degli indirizzi del computer che esegue il programma di cui viene eseguito il debug.
+description: Questa interfaccia rappresenta una posizione nello spazio degli indirizzi del computer che esegue il programma di cui è in corso il debug.
 title: IDebugMemoryContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e004939d27cbf579143716b1cc49968c1f520e7176492608706a5c0f283e6ded
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9cf9d57eefbe69be131a5aa041606ba99dbce973
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433762"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153355"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
-Questa interfaccia rappresenta una posizione nello spazio degli indirizzi del computer che esegue il programma di cui viene eseguito il debug.
+Questa interfaccia rappresenta una posizione nello spazio degli indirizzi del computer che esegue il programma di cui è in corso il debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ IDebugMemoryContext2 : IUnknown
 |[Confronta](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Confronta due contesti nel modo indicato dai flag di confronto.|
 
 ## <a name="remarks"></a>Commenti
- Visual Studio la finestra **Memoria** chiama [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) per ottenere l'interfaccia che contiene l'espressione `IDebugMemoryContext2` valutata usata per l'indirizzo di memoria. Questo contesto viene quindi passato a [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) e [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) per specificare l'indirizzo da leggere o scrivere.
+ Visual Studio della **memoria** chiama [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) per ottenere l'interfaccia che contiene l'espressione valutata `IDebugMemoryContext2` usata per l'indirizzo di memoria. Questo contesto viene quindi passato a [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) [e WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) per specificare l'indirizzo da leggere o scrivere.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

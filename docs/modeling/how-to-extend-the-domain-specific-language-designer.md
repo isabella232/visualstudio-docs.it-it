@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio'
-description: Informazioni su come creare estensioni per la finestra di progettazione da usare per modificare le definizioni del linguaggio specifico di dominio (DSL).
+description: Informazioni su come creare estensioni per la finestra di progettazione da usare per modificare le definizioni DSL (Domain Specific Language).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,38 +10,38 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 570c37fd395d4768e7c583163dada744e16930644fabbabfa494063719234fd8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f48f0674ecfe11ac28c8db6ea635fdb4f86ca77d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121356088"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143391"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 
-È possibile creare estensioni alla finestra di progettazione da usare per modificare le definizioni DSL. I tipi di estensione che è possibile creare includono l'aggiunta di comandi di menu, l'aggiunta di gestori per i movimenti di trascinamento e doppio clic e le regole che vengono attivate quando cambiano determinati tipi di valori o relazioni. Le estensioni possono essere in pacchetto come Visual Studio Integration Extension (VSIX) e distribuite ad altri utenti.
+È possibile apportare estensioni alla finestra di progettazione da usare per modificare le definizioni DSL. I tipi di estensione che è possibile creare includono l'aggiunta di comandi di menu, l'aggiunta di gestori per i movimenti di trascinamento e doppio clic e le regole che vengono attivate quando cambiano determinati tipi di valori o relazioni. Le estensioni possono essere in pacchetto come Visual Studio Integration Extension (VSIX) e distribuite ad altri utenti.
 
 Per codice di esempio e altre informazioni su questa funzionalità, vedere Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).
 
 ## <a name="set-up-the-solution"></a>Configurare la soluzione
 
-Configurare un progetto contenente il codice dell'estensione e un progetto VSIX che esporta il progetto. La soluzione può contenere altri progetti incorporati nello stesso VSIX.
+Configurare un progetto che contiene il codice dell'estensione e un progetto VSIX che esporta il progetto. La soluzione può contenere altri progetti incorporati nello stesso VSIX.
 
-### <a name="to-create-a-dsl-designer-extension-solution"></a>Per creare una soluzione Finestra di progettazione DSL di configurazione
+### <a name="to-create-a-dsl-designer-extension-solution"></a>Per creare una soluzione Finestra di progettazione DSL personalizzata
 
-1. Creare un nuovo progetto usando il **modello di progetto Libreria** di classi. Questo progetto conterrà il codice delle estensioni.
+1. Creare un nuovo progetto usando il modello **di progetto Libreria** di classi. Questo progetto conterrà il codice delle estensioni.
 
 2. Creare un nuovo **progetto Project VSIX.**
 
-     Selezionare **Aggiungi alla soluzione**.
+     Selezionare **Aggiungi alla soluzione.**
 
      *Source.extension.vsixmanifest* viene aperto nell'editor del manifesto VSIX.
 
-3. Sopra il campo Contenuto fare clic **su Aggiungi contenuto**.
+3. Sopra il campo Contenuto fare clic **su Aggiungi contenuto.**
 
-4. Nella finestra **di dialogo Aggiungi** contenuto impostare Seleziona un tipo di contenuto su Componente **MEF** **e** impostare Project progetto di libreria di classi. 
+4. Nella finestra **di dialogo Aggiungi** contenuto impostare Seleziona un tipo di contenuto su Componente **MEF** **e** impostare Project sul progetto di libreria di classi. 
 
-5. Fare **clic su Seleziona edizioni** e assicurarsi Visual Studio Enterprise selezionata. 
+5. Fare **clic su Select Editions** (Seleziona edizioni) e assicurarsi **Visual Studio Enterprise** selezionata.
 
 6. Assicurarsi che il progetto VSIX sia il progetto di avvio della soluzione.
 
@@ -67,15 +67,15 @@ Configurare un progetto contenente il codice dell'estensione e un progetto VSIX 
 
 ## <a name="test-and-deployment"></a>Test e distribuzione
 
-Per testare le estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di Visual Studio. In questo caso, aprire una soluzione DSL. Modificare il diagramma DslDefinition. È possibile visualizzare il comportamento dell'estensione.
+Per testare una delle estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di Visual Studio. In questo caso, aprire una soluzione DSL. Modificare il diagramma DslDefinition. È possibile visualizzare il comportamento dell'estensione.
 
-Per distribuire le estensioni nel Visual Studio e in altri computer, seguire questa procedura:
+Per distribuire le estensioni nel Visual Studio principale e in altri computer, seguire questa procedura:
 
-1. Trovare il file di installazione di VSIX nel progetto VSIX in bin \\ * \\ \* .vsix
+1. Trovare il file di installazione VSIX nel progetto VSIX in bin \\ * \\ \* .vsix
 
-2. Copiare questo file nel computer di destinazione e quindi in Esplora Windows (o Esplora file) fare doppio clic su di esso.
+2. Copiare il file nel computer di destinazione e quindi in Esplora Windows (o Esplora file) fare doppio clic su di esso.
 
-     Verrà Visual Studio Gestione estensioni per confermare che l'estensione è stata installata.
+     Verrà Visual Studio gestione estensioni per confermare che l'estensione è stata installata.
 
 Per disinstallare l'estensione, seguire questa procedura:
 
@@ -85,9 +85,9 @@ Per disinstallare l'estensione, seguire questa procedura:
 
 ## <a name="add-a-shortcut-menu-command"></a>Aggiungere un comando di menu di scelta rapida
 
-Per fare in modo che un comando di menu di scelta rapida venga visualizzato nella superficie Finestra di progettazione DSL o nella finestra Esplora DSL, scrivere una classe simile alla seguente.
+Per visualizzare un comando di menu di scelta rapida nell'area Finestra di progettazione DSL o nella finestra di esplorazione DSL, scrivere una classe simile alla seguente.
 
-La classe deve `ICommandExtension` implementare e deve avere l'attributo `DslDefinitionModelCommandExtension` .
+La classe deve implementare `ICommandExtension` e deve avere l'attributo `DslDefinitionModelCommandExtension` .
 
 ```csharp
 using System.Collections.Generic;

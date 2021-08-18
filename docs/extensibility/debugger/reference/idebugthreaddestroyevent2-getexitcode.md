@@ -1,6 +1,6 @@
 ---
 description: Ottiene il codice di uscita per un thread.
-title: 'IDebugThreadDestroyEvent2:: GetExitCode | Microsoft Docs'
+title: IDebugThreadDestroyEvent2::GetExitCode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b569d526ace8b178d3758e62e36895f5ec0262c5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6df49770bf66d911934bc18311d4bfa2ebea3180
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086833"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153069"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 Ottiene il codice di uscita per un thread.
@@ -42,7 +43,7 @@ int GetExitCode (
 
 ## <a name="parameters"></a>Parametri
 `pdwExit`\
-out Restituisce il codice di uscita del thread.
+[out] Restituisce il codice di uscita del thread.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

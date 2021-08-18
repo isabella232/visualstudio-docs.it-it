@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0750239248ac3afd1b95f8ae05a19707cf2fddbe966dd45a2d8dd1fb7d6775
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 274fecb6e87e221360c2f97086155237d30a7148
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129319"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Enumera in base all'indirizzo dei vari simboli contenuti nell'origine dati.
