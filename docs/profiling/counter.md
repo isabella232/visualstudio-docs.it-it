@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 278201edbd96d3c45c89f6cbb0de506bc4e6196a1041184b921419091b885cb7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b1d49ac97d783457634a82705033ac7a2d043d84
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039280"
 ---
 # <a name="counter"></a>Contatore
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).

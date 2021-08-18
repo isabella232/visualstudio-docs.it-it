@@ -77,10 +77,10 @@ Che cos'è Blazor? Blazor è un framework per la creazione di un'interfaccia ute
 
 Visual Studio per Mac (a partire dalla versione 8.4) include nuove funzionalità che consentono di creare nuovi Blazor progetti server. Fornisce anche il supporto standard che ci si aspetterebbe, ad esempio la compilazione, l'esecuzione e il debug di Blazor progetti. In Visual Studio per Mac stato aggiunto il supporto per la creazione, la compilazione e l'esecuzione di progetti nella Blazor WebAssembly versione 8.6.
 
-Nella procedura dettagliata precedente è stato illustrato come il modello di progetto Blazor App server consente di creare un nuovo progetto app server o Blazor Blazor WebAssembly app. Di seguito sono ora disponibili alcune delle funzionalità aggiuntive di Visual Studio per Mac per supportare lo sviluppo Blazor di progetti.
+Nella procedura dettagliata precedente è stato illustrato come il modello di progetto App server consente Blazor di creare un nuovo progetto app server o Blazor Blazor WebAssembly app. Di seguito sono ora disponibili alcune delle funzionalità aggiuntive di Visual Studio per Mac per supportare lo sviluppo Blazor di progetti.
 
 ### <a name="editor-support-for-razor-files"></a>Supporto dell'editor per *i file razor*
-Visual Studio per Mac include il supporto per la modifica di file con estensione razor, la maggior parte dei file che verranno in uso durante la creazione di Blazor applicazioni. Visual Studio per Mac il supporto completo per colorazione e completamento per i file razor, inclusi i completamenti per i componenti Razor dichiarati nel progetto.
+Visual Studio per Mac include il supporto per la modifica di file razor, la maggior parte dei file che verranno in uso durante la creazione di Blazor applicazioni. Visual Studio per Mac supporto completo per colorazione e completamento per i file razor, inclusi i completamenti per i componenti Razor dichiarati nel progetto.
 
 ![Visual Studio per Mac finestra dell'editor che mostra IntelliSense per Blazor](media/blazor-intellisense.png)
 
@@ -127,7 +127,7 @@ Per altre informazioni sulla configurazione, vedere [configuration in ASP.NET gu
 Questo file contiene codice che configura il comportamento dell'app, ad esempio se l'app richiede il consenso per i cookie. Per altre informazioni, vedere [Avvio delle app in ASP.NET Core](/aspnet/core/fundamentals/startup).
 
 ## <a name="summary"></a>Riepilogo
-In questa esercitazione è stato illustrato come creare una nuova app server o un'app in Visual Studio per Mac ed è stata illustrata alcune delle funzionalità offerte da Visual Studio per Mac per facilitare la creazione Blazor Blazor WebAssembly di Blazor applicazioni.
+In questa esercitazione è stato illustrato come creare una nuova app server o un'app in Visual Studio per Mac ed è stata illustrata alcune delle funzionalità offerte da Visual Studio per Mac per facilitare la creazione di Blazor Blazor WebAssembly Blazor applicazioni.
 
 ## <a name="see-also"></a>Vedi anche
 

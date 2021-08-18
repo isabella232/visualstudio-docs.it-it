@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b51c89095bd4b99fdd815198d1b6ced3b599d8e29d35c5ad2892f21c8990c8ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ea01db137d7c1f6144f43e84f901e92702815fdf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424110"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046880"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Procedura: Personalizzare una scheda incorporata
   È possibile aggiungere gruppi e controlli a una scheda incorporata. Una scheda incorporata è una scheda già presente nella barra multifunzione di un'Microsoft Office applicazione. Ad esempio, la **scheda** Dati è una scheda predefinita in Excel. Quando si crea un gruppo personalizzato, esso viene visualizzato per ultimo nella scheda, ma è possibile spostarlo in un punto qualsiasi della scheda.

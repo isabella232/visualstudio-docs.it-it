@@ -1,5 +1,5 @@
 ---
-description: Restituisce il numero di DEBUG_PROPERTY_INFO nell'enumerazione .
+description: Restituisce il numero di DEBUG_PROPERTY_INFO nell'enumerazione.
 title: IEnumDebugPropertyInfo2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9fd7827e794362b181c10a1db0fdaa69366449bd06e390d0e396e70075dbc8cc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0ba088394b75a68c3aa7e189380984fcbd30a523
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377267"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103325"
 ---
 # <a name="ienumdebugpropertyinfo2getcount"></a>IEnumDebugPropertyInfo2::GetCount
 Restituisce il numero di elementi nell'enumerazione .

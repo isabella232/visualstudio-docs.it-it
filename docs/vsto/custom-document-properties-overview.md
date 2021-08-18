@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a7b8b30304ed840843818a4d576fdfdb49bc36b54e72f77f441e1d9864e876c0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e0e8d3b135036e2566ede875f96ca95aaea8a7a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026668"
 ---
 # <a name="custom-document-properties-overview"></a>Panoramica delle proprietà dei documenti personalizzati
 
@@ -49,7 +49,7 @@ Questa proprietà contiene una stringa che fornisce informazioni dettagliate sul
 
 - Se si esegue o si esegue il debug della soluzione da Visual Studio, la proprietà _AssemblyLocation ha il formato *DeploymentManifestName* | *SolutionID*|vstolocal. La stringa seguente è un esempio:
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     ExcelWorkbook1.vsto|74744e4e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
   *SolutionID* è un GUID utilizzato [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dall'oggetto per identificare la soluzione. SolutionID *viene* generato automaticamente quando si compila il progetto. Il **termine vstolocal** indica a che [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] l'assembly deve essere caricato dalla stessa cartella del documento.
 

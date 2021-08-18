@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 21723deada493dd5e3d6ab6a16c6dc6366829bbb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 04f0dfba96ac09ff9cc87627f111f814f71d51b5554826ea524360c2af5323f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135572"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440929"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Accedere ai dati nei documenti nel server
   È possibile programmare in base ai dati in una personalizzazione a livello di documento senza dover usare il modello a oggetti di Microsoft Office Word o Microsoft Office Excel. Ciò significa che è possibile accedere ai dati contenuti in un documento in un server in cui non è installato Word Excel. Ad esempio, il codice in un server (ad esempio, in una pagina) può personalizzare i dati in un documento e inviare il documento personalizzato a [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] un utente finale. Quando l'utente finale apre il documento, data binding codice nell'assembly della soluzione associa i dati personalizzati al documento. Ciò è possibile perché i dati nel documento sono separati dall'interfaccia utente. Per altre informazioni, vedere [Dati memorizzati nella cache nelle personalizzazioni a livello di documento.](../vsto/cached-data-in-document-level-customizations.md)

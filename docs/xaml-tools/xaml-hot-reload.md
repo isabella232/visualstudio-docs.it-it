@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121351518"
 ---
-# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in Ricaricamento rapido XAML in Visual Studio
+# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML Ricaricamento rapido XAML in Visual Studio
 
-Ricaricamento rapido XAML consente di compilare l'interfaccia utente dell'app WPF o UWP, consentendo di apportare modifiche al codice XAML mentre l'app è in esecuzione. Ricaricamento rapido è disponibile sia in Visual Studio che Blend per Visual Studio. Questa funzionalità consente di compilare e testare in modo incrementale il codice XAML con il vantaggio del contesto dati dell'app in esecuzione, dello stato di autenticazione e di altre complessità reali difficili da simulare durante la fase di progettazione. Per informazioni sulla risoluzione dei problemi Ricaricamento rapido XAML, vedere [Risoluzione dei Ricaricamento rapido XAML.](xaml-hot-reload-troubleshooting.md)
+Ricaricamento rapido XAML consente di compilare l'interfaccia utente dell'app WPF o UWP, consentendo di apportare modifiche al codice XAML mentre l'app è in esecuzione. Ricaricamento rapido è disponibile sia in Visual Studio che Blend per Visual Studio. Questa funzionalità consente di compilare e testare in modo incrementale il codice XAML con il vantaggio del contesto dati dell'app in esecuzione, dello stato di autenticazione e di altre complessità reali difficili da simulare durante la fase di progettazione. Per informazioni sulla risoluzione dei problemi Ricaricamento rapido XAML, vedere [Risoluzione dei Ricaricamento rapido XAML](xaml-hot-reload-troubleshooting.md) in alternativa.
 
 > [!NOTE]
 > Se si usa Xamarin.Forms, vedere [Ricaricamento rapido XAML per Xamarin.Forms.](/xamarin/xamarin-forms/xaml/hot-reload)
@@ -46,13 +46,13 @@ La figura seguente illustra l'uso della struttura ad albero visuale in tempo rea
 
 ## <a name="known-limitations"></a>Limitazioni note
 
-Di seguito sono riportate le limitazioni note di Ricaricamento rapido XAML. Per aggirare eventuali limitazioni, è sufficiente arrestare il debugger e quindi completare l'operazione.
+Di seguito sono riportate le limitazioni note Ricaricamento rapido XAML. Per aggirare eventuali limitazioni, è sufficiente arrestare il debugger e quindi completare l'operazione.
 
 |Limitazione|WPF|UWP|Note|
 |-|-|-|-|
 |Connessione di eventi ai controlli mentre l'app è in esecuzione|Non supportato|Non supportato|Vedere l'errore: *Verificare che l'evento non sia riuscito.* Si noti che in WPF è possibile fare riferimento a un gestore eventi esistente. Nelle app UWP non è supportato il riferimento a un gestore eventi esistente.|
 |Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra dell'app o *in App.xaml*|Supportato a partire Visual Studio 2019 Update 2|Supportato|Esempio: aggiunta di un `SolidColorBrush` oggetto in un dizionario risorse da usare come `StaticResource` .</br>Nota: le risorse statiche, i convertitori di stile e altri elementi scritti in un dizionario risorse possono essere applicati/usati durante l'uso Ricaricamento rapido XAML. Non è supportata solo la creazione della risorsa.</br> Modifica della proprietà del dizionario `Source` risorse.|
-|Aggiunta di nuovi controlli, classi, finestre o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|Nessuno|
+|Aggiunta di nuovi controlli, classi, finestre o altri file al progetto mentre l'app è in esecuzione|Non supportato|Non supportato|Nessuno|
 |Gestione NuGet pacchetti (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|Nessuno|
 |Modifica data binding che usa l'estensione di markup {x:Bind}|N/A|Supportato a partire Visual Studio 2019|Questa operazione richiede Windows 10 versione 1809 (build 10.0.17763). Non supportato in Visual Studio 2017 o versioni precedenti.|
 |La modifica delle direttive x:Uid non è supportata|N/D|Non supportato|Nessuno|

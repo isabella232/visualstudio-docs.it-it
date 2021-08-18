@@ -11,14 +11,15 @@ ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 622abc04609edf410214af6b8acf795f969e2fbc
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c8262d971d1eb9f161693ad86fc1878d29353a79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901110"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028670"
 ---
 # <a name="sccgetuseroption-function"></a>Funzione SccGetUserOption
 Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.
@@ -62,6 +63,6 @@ SCCRTN SccGetUserOption(
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente vuole estrarre la versione locale dei file. `lpVal` è assegnato `SCC_USEROPT_COLV_YES` (l'utente vuole estrarre i file locali) o `SCC_USEROPT_COLV_NO` .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codici errore](../extensibility/error-codes.md)

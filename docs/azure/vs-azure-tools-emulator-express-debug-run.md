@@ -1,19 +1,20 @@
 ---
-title: Emulatore Express per l'esecuzione o il debug del servizio cloud di Azure in locale
+title: Emulator Express per eseguire/eseguire il debug del servizio cloud di Azure in locale
 ms.custom: SEO-VS-2020
 description: Uso di Emulator Express per l'esecuzione e il debug di un servizio cloud in un computer locale
 author: mikejo5000
 manager: jmartens
+ms.technology: vs-azure
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 08381be4fdc4fc23b70fb252c653b62398799a30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be382d80aea5a8f44001dc453741a1685fb644bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037473"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso dell'emulatore Express per l'esecuzione e il debug di un servizio cloud di Azure in un computer locale
 Con l'emulatore Express, è possibile testare ed eseguire il debug di un servizio cloud senza eseguire Visual Studio come amministratore. È possibile configurare le impostazioni del progetto per usare l'emulatore Express o l'emulatore completo, in base ai requisiti del servizio cloud. Per altre informazioni sull'emulatore completo, vedere [Eseguire un'applicazione Azure nell'emulatore di calcolo](/azure/storage/common/storage-use-emulator).
@@ -23,7 +24,7 @@ Quando si crea un progetto di Azure in Azure SDK 2.3 o versione successiva, l'em
 
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà** dal menu di scelta rapida.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere Proprietà dal menu **di scelta rapida.**
 
 1. Nelle pagine delle proprietà di progetti, selezionare la scheda **Web**.
 

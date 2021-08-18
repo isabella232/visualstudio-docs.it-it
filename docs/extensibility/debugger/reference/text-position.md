@@ -11,17 +11,18 @@ ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b99b5dcede7f0e40e0ff77d1e3f7f64b5943c18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 497e412b75ee1c37c28da018e3a9f67ec2cab184
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070895"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102922"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 Descrive la posizione della riga e della colonna nel testo specificato.
@@ -48,13 +49,13 @@ public struct TEXT_POSITION {
 Indice della riga nel file di origine.
 
 `dwColumn`\
-Offset carattere nella riga.
+Offset del carattere nella riga.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata nelle strutture [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
+Questa struttura viene usata nelle strutture [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) [e DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
-Questa struttura viene compilata mediante una chiamata ai metodi seguenti:
+Questa struttura viene compilata da una chiamata ai metodi seguenti:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -78,9 +79,9 @@ Questa struttura viene passata come parametro ai metodi seguenti:
 
 ## <a name="requirements"></a>Requisiti
 
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione dei conflitti di risorse: dati sui conflitti | Microsoft Docs'
-description: Informazioni su come la visualizzazione dei conflitti di risorse elenca i dati sui conflitti per le risorse che sono l'origine di eventi di conflitto.
+description: Informazioni sul modo in cui la visualizzazione Dei contenuti delle risorse elenca i dati sui contenuti per le risorse che sono state l'origine di eventi di contention.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,15 +11,16 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eac43dca403479d4a19ee9bbf9d5291f4db3aad0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7848e4580bf7c5acdeca7edcebb20923d370af01dfd053e4b17234635fefa182
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952694"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121442034"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Visualizzazione dei conflitti di risorse: dati sui conflitti
 Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conflitti relativi alle risorse che hanno causato gli eventi di conflitto. Un evento di conflitto si verifica quando una funzione in un thread deve attendere l'accesso alla risorsa perché una funzione in un altro thread ne ha acquisito l'accesso esclusivo. Ogni risorsa è il nodo radice di un albero delle chiamate in cui vengono visualizzati i percorsi di esecuzione delle funzioni che hanno generato gli eventi di conflitto.
@@ -54,7 +55,7 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
 |**% conflitti inclusivi**|- Per una risorsa, la percentuale di tutti gli eventi di conflitto nell'esecuzione della profilatura che rappresentano eventi di conflitto per l'accesso a questa risorsa.<br />- Per una funzione, il numero di volte in cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. Non sono inclusi gli eventi di blocco in funzioni chiamate dalla funzione.|
 |**Level**|Profondità di questa funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID del processo (PID) del processo in cui era in esecuzione la funzione.|
 |**Nome processo**|Nome del processo.|

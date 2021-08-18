@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b391a522e9cd1f19e98aa73370d6849977d2142da43a277ae49fa8a7a3235d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c87ae1484b3c868b7f633c2550587ae0ff980c69
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054457"
 ---
 # <a name="use-pylint-to-check-python-code"></a>Usare PyLint per controllare il codice Python
 

@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 624a62d1fd582f10ba674ef8a3a03151e487a33960959c68c2abccd2c87e0b5f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7e17781c68fe9790f31e6c3d80ca3de8520ecb5e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360703"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119751"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Ottiene la risoluzione del punto di interruzione che descrive questo punto di interruzione.

@@ -1,6 +1,6 @@
 ---
 title: SDK del visualizzatore di concorrenza | Microsoft Docs
-description: Informazioni su come usare Concurrency Visualizer SDK per instrumentare il codice per visualizzare i marcatori. I marcatori sono icone visualizzate nel visualizzatore di concorrenza per contrassegnare gli eventi.
+description: Informazioni su come usare l'SDK del visualizzatore di concorrenza per instrumentare il codice per visualizzare i marcatori. I marcatori sono icone visualizzate nel visualizzatore di concorrenza per contrassegnare gli eventi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d9375dc71d611e3d5162a7bf39b6af26c2439914f399a01d11da815023d3a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c3d1cc162cc48cef6ee6e9fc1269ea262f5ff0a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355581"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039579"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).(Introduzione all'SDK del visualizzatore di concorrenza).
@@ -30,7 +30,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
  Il visualizzatore di concorrenza espone un provider predefinito che è possibile usare per generare i marcatori. Il provider è già registrato nel visualizzatore di concorrenza e non è necessario eseguire altre operazioni per visualizzare i marcatori nell'interfaccia utente.
 
 ### <a name="c-and-visual-basic"></a>C# e Visual Basic
- In C#, Visual Basic e altro codice gestito usare il provider predefinito chiamando i metodi nella classe [Markers](/previous-versions/hh694099(v=vs.140)). Espone quattro metodi per la generazione di marcatori: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Sono disponibili più overload per queste funzioni, a seconda che si voglia o meno usare le impostazioni predefinite per le proprietà.  L'overload più semplice accetta solo un parametro di stringa che specifica la descrizione dell'evento. La descrizione viene visualizzata nei rapporti del visualizzatore di concorrenza.
+ In C#, Visual Basic e altro codice gestito usare il provider predefinito chiamando i metodi nella classe [Markers](/previous-versions/hh694099(v=vs.140)). Espone quattro metodi per la generazione di marcatori: [WriteFlag,](/previous-versions/hh694185%28v%3dvs.140%29) [EnterSpan,](/previous-versions/hh694205(v=vs.140)) [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert.](/previous-versions/hh694180(v=vs.140)) Sono disponibili più overload per queste funzioni, a seconda che si voglia o meno usare le impostazioni predefinite per le proprietà.  L'overload più semplice accetta solo un parametro di stringa che specifica la descrizione dell'evento. La descrizione viene visualizzata nei rapporti del visualizzatore di concorrenza.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Per aggiungere un SDK a un progetto C# o Visual Basic
 

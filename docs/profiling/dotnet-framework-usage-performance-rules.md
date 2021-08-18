@@ -1,6 +1,6 @@
 ---
 title: Regole di prestazioni per l'utilizzo di .NET Framework | Microsoft Docs
-description: Informazioni sulle regole relative alle prestazioni nella categoria .NET Framework Usage. Identificare metodi specifici che possono essere ottimizzati e identificare modelli di utilizzo più generali.
+description: Informazioni sulle regole di prestazioni nella .NET Framework Utilizzo. Identificare metodi specifici che possono essere ottimizzati e identificare modelli di utilizzo più generali.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,15 +8,16 @@ ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ec2756353ac56b3b5d44e2a50c4d4f5b1c7ebf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff348223ddbf6ee9d543542fb2280504e9f60484c520e270a5529120ac8c5f83
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955385"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355347"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Regole di prestazioni per l'utilizzo di .NET Framework
 Le regole di prestazioni nella categoria relativa all'utilizzo di .NET Framework identificano metodi specifici ottimizzabili e modelli di utilizzo più generici, ad esempio Garbage Collection e conflitti di blocco, che possono essere analizzati per risolvere i problemi relativi alle prestazioni.
@@ -35,6 +36,6 @@ Le regole di prestazioni nella categoria relativa all'utilizzo di .NET Framework
 |[DA0021: Frequenza elevata di Garbage Collection di generazione 1](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|Viene recuperato un numero relativamente elevato di oggetti di memoria .NET in Garbage Collection di generazione 1. Se troppi oggetti di breve durata sono presenti in Garbage Collection di generazione 0, il costo di gestione della memoria può diventare eccessivo.|
 |[DA0022: Frequenza elevata di Garbage Collection di generazione 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|Viene recuperato un numero elevato di oggetti di memoria .NET in Garbage Collection di generazione 2. Se Garbage Collection di generazione 1 contiene troppi oggetti di breve durata, il costo di gestione della memoria può diventare eccessivo. Questa regola viene attivata quando la frequenza di conflitti di blocco supera il valore di soglia superiore della regola DA0005.|
 |[DA0023: Tempo di CPU GC elevato](../profiling/da0023-high-gc-cpu-time.md)|I dati sulle prestazioni del sistema raccolti durante la profilatura indicano che il tempo impiegato in Garbage Collection è elevato rispetto al tempo di elaborazione totale dell'applicazione.|
-|[DA0024: tempo CPU GC eccessivo](../profiling/da0024-excessive-gc-cpu-time.md)|I dati sulle prestazioni del sistema raccolti durante la profilatura indicano che il tempo impiegato in Garbage Collection è eccessivamente elevato rispetto al tempo di elaborazione totale dell'applicazione. Questa regola viene attivata quando il tempo impiegato in Garbage Collection supera il valore di soglia superiore della regola DA0023.|
-|[DA0038: frequenza elevata di conflitti di blocco](../profiling/da0038-high-rate-of-lock-contentions.md)|I dati sulle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza significativamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti.|
-|[DA0039: frequenza molto elevata di conflitti di blocco](../profiling/da0039-very-high-rate-of-lock-contentions.md)|I dati relativi alle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza eccessivamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti. Questa regola viene attivata quando la frequenza di conflitti di blocco supera il valore di soglia superiore della regola DA0038.|
+|[DA0024: Tempo CPU GC eccessivo](../profiling/da0024-excessive-gc-cpu-time.md)|I dati sulle prestazioni del sistema raccolti durante la profilatura indicano che il tempo impiegato in Garbage Collection è eccessivamente elevato rispetto al tempo di elaborazione totale dell'applicazione. Questa regola viene attivata quando il tempo impiegato in Garbage Collection supera il valore di soglia superiore della regola DA0023.|
+|[DA0038: Frequenza elevata di contenuti di blocco](../profiling/da0038-high-rate-of-lock-contentions.md)|I dati sulle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza significativamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti.|
+|[DA0039: Frequenza molto elevata di l'utilizzo dei blocchi](../profiling/da0039-very-high-rate-of-lock-contentions.md)|I dati relativi alle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza eccessivamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti. Questa regola viene attivata quando la frequenza di conflitti di blocco supera il valore di soglia superiore della regola DA0038.|

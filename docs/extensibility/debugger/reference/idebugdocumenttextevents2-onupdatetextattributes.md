@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2645427e283dcef6a8d0f05e6f9cd9d7b847b6eb9509145bfda207a899da3f7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8317bf8374aaff625401f11c576a77d34112630b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390203"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119217"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 Notifica al pacchetto di debug che gli attributi di testo sono stati aggiornati nel documento.

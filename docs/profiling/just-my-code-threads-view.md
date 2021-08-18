@@ -1,6 +1,6 @@
 ---
 title: Just My Code (visualizzazione dei thread) | Microsoft Docs
-description: Viene illustrato come filtrare lo stack di chiamate per visualizzare solo il codice più un livello di funzioni chiamate se si seleziona l'opzione Just My Code.
+description: Informazioni su come filtrare lo stack di chiamate per visualizzare solo il codice più un livello di funzioni chiamate se si seleziona l'opzione Just My Code chiamata.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f09b3e0837adf9490e9c10c81f18ff9fc9c5573e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0359018f960eab6023069e11987a742b91cc71394f91f486ce2be9d3bd5cdff4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918044"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121354983"
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (Visualizzazione thread)
 Se si seleziona questa opzione, lo stack di chiamate verrà filtrato per mostrare solo il codice più un livello di funzioni chiamate attraverso lo stack di chiamate.

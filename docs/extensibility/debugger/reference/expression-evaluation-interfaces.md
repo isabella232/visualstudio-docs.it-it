@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa417eb1fea519647964b03af75f9f630cba4739
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 22110ea35cbac5bc2fbfca06448e7ece2e0fc7cf82b2a62e6f1d0ee835d38eae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065046"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434321"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfacce di valutazione delle espressioni
 > [!IMPORTANT]

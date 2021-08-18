@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 81260e9a6f3f164a54870c0850cf598ac58295772d65eb7e6c489095a2899f00
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ff4f6cb0e5c7dd45618615246c4c652e8611bf4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121232757"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041295"
 ---
 # <a name="add-existing-item-command"></a>Comando Aggiungi elemento esistente
 Aggiunge un file esistente alla soluzione corrente e lo apre.

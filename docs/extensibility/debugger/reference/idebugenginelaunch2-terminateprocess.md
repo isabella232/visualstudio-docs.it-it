@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4b13a11def20f2bc6b90133661df6e4375b4dc832e2d91ba26c24644a24aa68
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a487bd5f79a7953f9d09a0cf57bf90e07847cfe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118957"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 Termina un processo.
@@ -46,7 +46,7 @@ int TerminateProcess (
 [in] Oggetto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) che rappresenta il processo da terminare.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
  Chiamare il [metodo CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md) prima di chiamare questo metodo.

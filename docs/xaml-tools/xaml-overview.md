@@ -1,25 +1,26 @@
 ---
 title: Panoramica di XAML
-description: Informazioni di base su XAML e l'editor di codice XAML e sugli strumenti di finestra di progettazione XAML in Visual Studio.
+description: Informazioni di base su XAML e sull'editor di codice XAML e finestra di progettazione XAML strumenti in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 06/23/2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 6f315573b24989e6ad3a3d451de372430b72f70f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: c2bdb5fad308bfcb1f4ec843b88baa937ca77e3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045606"
 ---
 # <a name="overview-of-xaml"></a>Panoramica di XAML
 
 XAML (Extensible Application Markup Language) è un linguaggio dichiarativo basato su XML. Viene ampiamente usato nei tipi di applicazioni seguenti per creare interfacce utente:
 
 - [App WPF (Windows Presentation Foundation)](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [App piattaforma UWP (Universal Windows Platform) (UWP)](/windows/uwp/xaml-platform/xaml-overview)
+- [App UWP (Universal Windows Platform)](/windows/uwp/xaml-platform/xaml-overview)
 - [App Xamarin.Forms](/xamarin/xamarin-forms/xaml/)
 
 Il codice XAML seguente definisce un semplice pulsante.
@@ -32,19 +33,19 @@ XAML viene inoltre usato per definire i flussi di lavoro nelle [app WF (Windows 
 
 ## <a name="xaml-code-editor"></a>Editor di codice XAML
 
-L' [editor di codice XAML](xaml-code-editor.md) nell'IDE di Visual Studio include tutti gli strumenti necessari per creare app WPF e UWP per la piattaforma Windows e per Novell. Forms. Sebbene l'IDE (Integrated Development Environment) in Visual Studio includa numerose funzionalità che è possibile usare per sviluppare app per altre piattaforme, dispone anche di alcune funzionalità univoche per XAML.
+[L'editor di](xaml-code-editor.md) codice XAML nell'IDE di Visual Studio include tutti gli strumenti necessari per creare app WPF e UWP per la piattaforma Windows e per Xamarin.Forms. Sebbene l'IDE (ambiente di sviluppo integrato) in Visual Studio abbia molte funzionalità che è possibile usare per sviluppare app per altre piattaforme, include anche alcune funzionalità specifiche di XAML.
 
 ## <a name="xaml-designer"></a>XAML Designer
 
-Visual Studio e Blend per Visual Studio forniscono una [finestra di progettazione XAML](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) che consente di creare interfacce utente (UI) per le app WPF, UWP e Novell. Forms. È possibile trascinare i controlli dalla casella degli strumenti o dalla finestra Asset e impostare le proprietà nella finestra Proprietà. Quando si esegue questa operazione, Visual Studio e Blend per Visual Studio creano il codice XAML corrispondente. Se si preferisce, è anche possibile modificare il codice XAML direttamente.
+Visual Studio e Blend per Visual Studio un [finestra di progettazione XAML](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) che consente di creare interfacce utente per le app WPF, UWP e Xamarin.Forms. È possibile trascinare i controlli dalla casella degli strumenti o dalla finestra Asset e impostare le proprietà nella finestra Proprietà. In questo caso, Visual Studio e Blend per Visual Studio il codice XAML corrispondente. Se si preferisce, è anche possibile modificare il codice XAML direttamente.
 
 ## <a name="whats-new"></a>Novità
 
-Per informazioni aggiornate, fare riferimento alle risorse seguenti:
+Per le informazioni più recenti, vedere le risorse seguenti:
 
-- Il post di Blog relativo ai miglioramenti apportati **[agli strumenti XAML in Visual Studio 2019 versione 16,7 Preview 1](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/)**
-- Post **[di Blog sulle novità di strumenti di sviluppo XAML in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)**
-- **[Nuove funzionalità XAML nel video di Visual Studio](https://youtu.be/yI9OyA4ZM2E)** su YouTube
+- Post di blog **[Improvements to XAML tooling in Visual Studio 2019 version 16.7 Preview 1 (Miglioramenti agli strumenti XAML in Visual Studio 2019 versione 16.7 Preview 1)](https://devblogs.microsoft.com/visualstudio/improvements-to-xaml-tooling-in-visual-studio-2019-version-16-7-preview-1/)**
+- Post di blog **[What's new in XAML developer tools in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)** (Novità degli strumenti di sviluppo XAML in Visual Studio 2019)
+- Nuove **[funzionalità XAML in Visual Studio](https://youtu.be/yI9OyA4ZM2E)** video su YouTube
 
 ## <a name="see-also"></a>Vedi anche
 

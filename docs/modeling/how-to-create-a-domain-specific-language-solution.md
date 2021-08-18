@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: ce03349a5179e8dd78220fffd1ff6b21d1a3b495
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: dddd3df6669ed401c6097ebd5761ed9a2c5e5660
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040242"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione Visual Studio specifica.
@@ -30,12 +31,12 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione Visua
 Prima di poter avviare questa procedura, installare questi componenti:
 
 - Visual Studio
-- Visual Studio SDK (installato come parte del carico di lavoro Visual Studio **sviluppo di estensioni)**
+- Visual Studio SDK (installato come parte del carico di **lavoro Visual Studio sviluppo di estensioni)**
 - SDK di modellazione (installato come Visual Studio componente)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una Domain-Specific language
+## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific language
 
 1. Avviare la procedura guidata DSL creando un nuovo **Finestra di progettazione Domain-Specific Language** progetto.
 
@@ -50,7 +51,7 @@ Prima di poter avviare questa procedura, installare questi componenti:
 
 2. Scegliere un modello DSL.
 
-    Nella pagina **Selezione Domain-Specific opzioni della lingua** selezionare uno dei modelli di soluzione, ad esempio Lingua **minima**. Scegliere un modello simile al DSL che si vuole creare.
+    Nella pagina **Selezione Domain-Specific opzioni del linguaggio** selezionare uno dei modelli di soluzione, ad esempio Lingua **minima**. Scegliere un modello simile al DSL che si vuole creare.
 
     Per altre informazioni sui modelli di soluzione, vedere [Scelta di un modello di soluzione Domain-Specific linguaggio.](../modeling/choosing-a-domain-specific-language-solution-template.md)
 
@@ -83,7 +84,7 @@ Digitare una nuova estensione di file.
 
  Verificare che questa estensione di file non sia già stata registrata per l'uso in questo computer, come indicato di seguito:
 
- Esaminare in **Altri strumenti e applicazioni registrati per gestire questa estensione.** Se viene visualizzato il messaggio Nessuna applicazione o **Visual Studio editor** usa questa estensione, è possibile usare questa estensione di file.
+ Esaminare in **Altri strumenti e applicazioni registrati per gestire questa estensione.** Se viene visualizzato il messaggio Nessuna applicazione o Visual Studio editor usa questa **estensione,** è possibile usare questa estensione di file.
 
  Se viene visualizzato un elenco di strumenti o pacchetti, eseguire una delle operazioni seguenti:
 
@@ -95,13 +96,13 @@ Digitare una nuova estensione di file.
 
      \- - oppure -
 
-- Se un Visual Studio che usa questa estensione di file è stato completamente installato nel computer, disinstallarlo. Scegliere **Gestione** estensioni **dal** menu Strumenti .
+- Se un'Visual Studio che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione** estensioni **dal** menu Strumenti .
 
 ### <a name="product-settings-page"></a>Pagina Impostazioni prodotto
  **Qual è il nome del prodotto a cui appartiene la nuova lingua specifica del dominio?**
 Il valore predefinito è il nome DSL.
 
- Questo valore viene usato in Esplora risorse (o Esplora file) per descrivere i file con questa estensione di file.
+ Questo valore viene usato in Windows Explorer (o Esplora file) per descrivere i file con questa estensione di file.
 
  **Qual è il nome della società a cui appartiene il prodotto?**
 Nome della società.

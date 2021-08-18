@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: b10e12302b2fd11a2e4aec9266e5ad517a1edb4ad47e8b64dde44df79847825e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 524d55608b8cc75deea1c876ab03a4a437ad2049
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135377"
 ---
 # <a name="assign-activity-designer"></a>ActivityDesigner Assign
 
@@ -32,7 +32,7 @@ L'attività <xref:System.Activities.Statements.Assign> assegna un valore a una v
 
 L'ActivityDesigner Assegna è disponibile nella categoria **Primitive** della Casella  degli strumenti **,** a  cui si accede facendo clic sulla scheda Casella degli strumenti .In alternativa, selezionare Casella degli strumenti dal **menu** Visualizza o CTRL+ALT+X. 
 
-**L'ActivityDesigner** Assegna può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro in cui vengono posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione **di Assign** ActivityDesigner crea <xref:System.Activities.Statements.Assign> un'attività con **displayName predefinito** di Assign. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione di **Assegna** ActivityDesigner o nella **casella DisplayName** della griglia delle proprietà.
+**L'ActivityDesigner** Assegna può essere  trascinato dalla casella degli strumenti e rilasciato nell'area Progettazione flussi di lavoro in cui vengono posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione **di Assign** ActivityDesigner crea <xref:System.Activities.Statements.Assign> un'attività con **displayName predefinito** di Assign. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione di **Assegna** ActivityDesigner o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-assign-properties"></a>Proprietà di Assign
 

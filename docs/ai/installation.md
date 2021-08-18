@@ -5,17 +5,18 @@ keywords: ai, visual studio
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e8867064e4392cdbf3c2dbc72810ddf22f0cded
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841445"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053462"
 ---
 # <a name="installation"></a>Installazione
 
@@ -27,7 +28,7 @@ Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2
 
 È possibile scaricare gli strumenti da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) o direttamente da Visual Studio:
 
-1. Selezionare **strumenti**  >  **estensioni e aggiornamenti**.
+1. Selezionare **Strumenti**  >  **Estensioni e aggiornamenti**.
 
    ![Menu Estensioni e aggiornamenti in Visual Studio](media/installation/extensions.png)
 
@@ -156,7 +157,7 @@ Visitare [questo sito](https://caffe2.ai/docs/getting-started.html) per eseguire
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità. Consente di **combinare** [programmazione simbolica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) per ottimizzare efficienza e produttività.
+[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) è un framework di apprendimento profondo progettato per efficienza e flessibilità. Consente di combinare **la** programmazione [simbolica e imperativa per ottimizzare](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) l'efficienza e la produttività.
 
 Per installare MXNet, eseguire il comando seguente in un terminale:
 

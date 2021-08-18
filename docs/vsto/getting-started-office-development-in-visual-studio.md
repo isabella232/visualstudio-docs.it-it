@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: bce4ad2f525efe84eafaf8be7680cdc04aaebeb01486bab271b7dd71255ab230
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c93328cb93892cb3f1bbfba1703c3295bc38a2ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038006"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Introduzione (Office sviluppo in Visual Studio)
   In questa sezione sono contenuti gli argomenti che consentono di iniziare a utilizzare gli strumenti di sviluppo di Microsoft Office in Visual Studio.

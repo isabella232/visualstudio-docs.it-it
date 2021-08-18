@@ -15,24 +15,24 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cdf47d983d7070c0cc1a407a5a32f6e661b36cb85ef0310d06be112c2cb0816
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 934ce1f393d7276d0eeffd66515b8c7a874c9fd9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359299"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102610"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura e salvataggio di elementi di progetto
-Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e il salvataggio dei file di progetto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nell'ambiente di sviluppo integrato (IDE). Negli argomenti seguenti vengono illustrati i diversi approcci per l'apertura e il salvataggio di file.
+Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e il salvataggio dei file di progetto nell'ambiente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di sviluppo integrato (IDE). Negli argomenti seguenti vengono illustrati i diversi approcci per l'apertura e il salvataggio di file.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Visualizzazione di file tramite il comando Apri file](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 
- Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce il comando **Apri file** e del ruolo dei progetti nella risposta a questo comando.
+ Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce il comando **Apri file** e il ruolo dei progetti nella risposta a questo comando.
 
 - [Visualizzazione di file tramite il comando Apri con](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 
- Fornisce una spiegazione dettagliata e dettagliata del modo in cui l'IDE gestisce il comando **Apri** con, richiedendo l'apertura di un file con una scelta di editor standard.
+ Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce il comando Apri con , richiedendo l'apertura di un file con un editor standard. 
 
 - [Procedura: Aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)
 
@@ -48,15 +48,15 @@ Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e
 
 - [Salvataggio di un documento standard](../../extensibility/internals/saving-a-standard-document.md)
 
- Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce i comandi **Salva** **,** Salva con nome e Salva tutto per un documento aperto in un editor standard. 
+ Fornisce una spiegazione dettagliata del modo in cui l'IDE gestisce i comandi **Salva** **,** Salva con nome e Salva **tutto** per un documento aperto in un editor standard.
 
 - [Salvataggio di un documento personalizzato](../../extensibility/internals/saving-a-custom-document.md)
 
- Fornisce un diagramma e una spiegazione dettagliata del modo in  cui l'IDE gestisce i comandi **Salva** **,** Salva con nome e Salva tutto per i documenti aperti in un editor personalizzato.
+ Fornisce un diagramma e una spiegazione dettagliata del modo in cui l'IDE gestisce i comandi **Salva** **,** Salva con nome e Salva **tutto** per i documenti aperti in un editor personalizzato.
 
 - [Scelta dell'editor da usare per aprire un file in un progetto](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 
- Illustra il processo seguito dall'IDE per selezionare l'editor o la finestra di progettazione appropriata per un file.
+ Viene illustrato il processo che l'IDE segue per selezionare l'editor o la finestra di progettazione appropriata per un file.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Creazione di finestre di progettazione ed editor personalizzati](../../extensibility/creating-custom-editors-and-designers.md)

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2769e6a6633214e2f7e95d20f2bd61cb360d492f8d850e48d95b8ec6134a97c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4601c7e10d3f3092ad274e0570148bb348a7f41a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431968"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086482"
 ---
 # <a name="supporting-source-control"></a>Supporto del controllo del codice sorgente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta estrazioni di file, archiviazioni e altre operazioni di controllo del codice sorgente per il progetto o l'editor. Come client del controllo del codice sorgente, è progettato per interagire con un pacchetto di controllo del codice sorgente, ad esempio , che fornisce funzionalità di archiviazione, controllo delle versioni e controllo per un set di file definito in modo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] dinamico.

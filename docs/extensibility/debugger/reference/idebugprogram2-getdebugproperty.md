@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e733c57b83cce517bad5680f409abe23ef1432db134276389bbb54880f4328ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: adac39c45a001a45d57b7e2cc5ac816ba4d6dd87
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338878"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087847"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 Ottiene le proprietà del programma.

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2684e0f369320889f74656cd8b10003ee5187bf6c24d1daf5aa4932cbb993377
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 71d12bb0bd80c10140aaaa6f276cf772397d699f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086612"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 Un frammento di codice è una parte di codice inserita nel file di origine. Il frammento di codice è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo l'inserimento del frammento di codice e possono avere valori diversi a seconda del contesto in cui viene inserito il frammento di codice. Subito dopo l'inserimento del frammento di codice, il servizio di linguaggio può formattare il frammento di codice.
@@ -51,7 +51,7 @@ Un frammento di codice è una parte di codice inserita nel file di origine. Il f
 ### <a name="installing-the-snippet-files"></a>Installazione dei file di frammento di codice
  Tutti i frammenti di codice per un linguaggio vengono archiviati come modelli in file XML, in genere un modello di frammento per ogni file. Per informazioni dettagliate sullo schema XML usato per i modelli di frammenti di codice, vedere [Informazioni di riferimento sullo schema dei frammenti di codice](../../ide/code-snippets-schema-reference.md). Ogni modello di frammento di codice viene identificato con un ID lingua. Questo ID lingua viene specificato nel Registro di sistema e inserito `Language` nell'attributo del tag nel \<Code> modello.
 
- In genere sono archiviati i file modello di frammento di codice in due posizioni: 1) in cui è stata installata la lingua e 2) nella cartella dell'utente. Questi percorsi vengono aggiunti al Registro di sistema in modo che Visual Studio **gestione frammenti di** codice possa trovare i frammenti di codice. La cartella dell'utente è la posizione in cui vengono archiviati i frammenti creati dall'utente.
+ In genere sono archiviati i file modello di frammento di codice in due posizioni: 1) in cui è stata installata la lingua e 2) nella cartella dell'utente. Questi percorsi vengono aggiunti al Registro di sistema in modo che Visual Studio **Gestione frammenti di** codice possa trovare i frammenti di codice. La cartella dell'utente è la posizione in cui vengono archiviati i frammenti creati dall'utente.
 
  Il layout di cartella tipico per i file modello di frammento di codice installato è simile al seguente: *[InstallRoot]* \\ *[TestLanguage]* \Snippets \\ *[LCID]* \Snippets.
 
@@ -328,7 +328,7 @@ namespace TestLanguagePackage
 }
 ```
 
- Quando il servizio di linguaggio ottiene il nome del collegamento, chiama il metodo per ottenere il nome file e il titolo <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> del frammento di codice. Il servizio di linguaggio chiama quindi <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> il metodo nella classe per inserire il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> frammento di codice. I metodi seguenti vengono chiamati Visual Studio nell'ordine specificato nella classe durante il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> processo di inserimento del frammento di codice:
+ Quando il servizio di linguaggio ottiene il nome del collegamento, chiama il metodo per ottenere il nome file e il titolo del <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> frammento di codice. Il servizio di linguaggio chiama quindi il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodo nella classe per inserire il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> frammento di codice. I metodi seguenti vengono chiamati da Visual Studio nell'ordine specificato nella classe durante il processo di <xref:Microsoft.VisualStudio.Package.ExpansionProvider> inserimento del frammento di codice:
 
 1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
@@ -341,12 +341,12 @@ namespace TestLanguagePackage
    Per altre informazioni su come ottenere un elenco di frammenti di codice installati per il servizio di linguaggio, vedere Procedura dettagliata: Recupero di un elenco di frammenti di codice installati [(implementazione legacy).](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
 ## <a name="implementing-the-expansionfunction-class"></a>Implementazione della classe ExpansionFunction
- Una funzione di espansione è una funzione denominata incorporata in un modello di frammento di codice e restituisce uno o più valori da inserire in un campo. Per supportare le funzioni di espansione nel servizio di linguaggio, è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe e implementare il <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> metodo . È quindi necessario eseguire l'override del metodo nella classe per restituire una nuova creazione di un'istanza della versione della classe <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> per ogni funzione di espansione <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionFunction> supportata. Se si supporta un elenco di valori possibili da una funzione di espansione, è anche necessario eseguire l'override del metodo nella classe per restituire <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> un elenco di tali <xref:Microsoft.VisualStudio.Package.ExpansionFunction> valori.
+ Una funzione di espansione è una funzione denominata incorporata in un modello di frammento di codice e restituisce uno o più valori da inserire in un campo. Per supportare le funzioni di espansione nel servizio di linguaggio, è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe e implementare il <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> metodo . È quindi necessario eseguire l'override del metodo nella classe per restituire una nuova istanza della versione della classe <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> per ogni funzione di espansione <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionFunction> supportata. Se si supporta un elenco di valori possibili da una funzione di espansione, è anche necessario eseguire l'override del metodo nella classe per restituire <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> un elenco di tali <xref:Microsoft.VisualStudio.Package.ExpansionFunction> valori.
 
- Una funzione di espansione che accetta argomenti o deve accedere ad altri campi non deve essere associata a un campo modificabile, perché il provider di espansione potrebbe non essere completamente inizializzato al momento della chiamata della funzione di espansione. Di conseguenza, la funzione di espansione non è in grado di ottenere il valore dei relativi argomenti o di qualsiasi altro campo.
+ Una funzione di espansione che accetta argomenti o deve accedere ad altri campi non deve essere associata a un campo modificabile, perché il provider di espansione potrebbe non essere completamente inizializzato al momento della chiamata della funzione di espansione. Di conseguenza, la funzione di espansione non è in grado di ottenere il valore degli argomenti o di qualsiasi altro campo.
 
 ### <a name="example"></a>Esempio
- Di seguito è riportato un esempio di implementazione di una semplice funzione di espansione `GetName` denominata . Questa funzione di espansione aggiunge un numero a un nome di classe di base ogni volta che viene creata un'istanza della funzione di espansione (che corrisponde a ogni inserimento del frammento di codice associato).
+ Di seguito è riportato un esempio di come potrebbe essere implementata una `GetName` semplice funzione di espansione denominata . Questa funzione di espansione aggiunge un numero al nome di una classe di base ogni volta che viene creata un'istanza della funzione di espansione , che corrisponde a ogni inserimento del frammento di codice associato.
 
 ```csharp
 using Microsoft.VisualStudio.Package;

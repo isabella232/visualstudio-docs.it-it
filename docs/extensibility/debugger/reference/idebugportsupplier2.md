@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia fornisce le porte al gestore di debug della sessione (SDM).
+description: Questa interfaccia fornisce porte alla gestione del debug di sessione (SDM).
 title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd28e261c9c74601bd88f2d84e1296a1ed508f37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ded700cb5f9e6c7ff725f0b7049842d3e308b014
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088107"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
-Questa interfaccia fornisce le porte al gestore di debug della sessione (SDM).
+Questa interfaccia fornisce porte alla gestione del debug di sessione (SDM).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +34,7 @@ IDebugPortSupplier2 : IUnknown
 Un fornitore di porte personalizzato implementa questa interfaccia per rappresentare un fornitore di porte.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Una chiamata a `CoCreateInstance` con un fornitore di porte `GUID` restituisce questa interfaccia (questo è il modo tipico per ottenere questa interfaccia). Ad esempio:
+Una chiamata a con un fornitore di porte restituisce questa interfaccia (questo è il modo `CoCreateInstance` tipico per ottenere questa `GUID` interfaccia). Esempio:
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -50,16 +51,16 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }
 ```
 
-Una chiamata a [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) restituisce questa interfaccia, che rappresenta il fornitore della porta corrente usato da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
+Una chiamata a [GetPortSupplier restituisce](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) questa interfaccia, che rappresenta il fornitore di porta corrente usato da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) restituisce questa interfaccia, che rappresenta il fornitore della porta che ha creato la porta.
 
-- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) rappresenta un elenco di `IDebugPortSupplier` interfacce (l' `IEnumDebugPortSuppliers` interfaccia viene ottenuta da [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), che rappresenta tutti i fornitori di porte registrati con [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ).
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) rappresenta un elenco di interfacce (l'interfaccia viene ottenuta da `IDebugPortSupplier` `IEnumDebugPortSuppliers` [EnumPortSuppliers,](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)che rappresenta tutti i fornitori di porte registrati con [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ).
 
-Un motore di debug non interagisce in genere con un fornitore di porte.
+Un motore di debug in genere non interagisce con un fornitore di porte.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDebugPortSupplier2` .
+Nella tabella seguente vengono illustrati i metodi di `IDebugPortSupplier2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -72,12 +73,12 @@ La tabella seguente illustra i metodi di `IDebugPortSupplier2` .
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Rimuove una porta.|
 
 ## <a name="remarks"></a>Commenti
-Un fornitore di porte può identificare se stesso in base al nome e all'ID, aggiungere e rimuovere porte ed enumerare tutte le porte fornite dal fornitore della porta.
+Un fornitore di porte può identificarsi in base al nome e all'ID, aggiungere e rimuovere porte ed enumerare tutte le porte fornite dal fornitore della porta.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

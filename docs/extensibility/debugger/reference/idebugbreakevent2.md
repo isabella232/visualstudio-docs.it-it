@@ -1,6 +1,6 @@
 ---
-description: Questa interfaccia indica a Gestione debug sessione (SDM) che un'interruzione asincrona è stata completata correttamente.
-title: Interfaccia IDebugBreakEvent2 | Microsoft Docs
+description: Questa interfaccia indica al gestore di debug della sessione (SDM) che un'interruzione asincrona è stata completata correttamente.
+title: IDebugBreakEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b07b7203f8ce3d557b0bbb2d4c1ca410e481aec67555da5f21f0563702e71656
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1816d2a6c53c4a1840f6511676dafff7a3710394
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293040"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119762"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-Questa interfaccia indica a Gestione debug sessione (SDM) che un'interruzione asincrona è stata completata correttamente.
+Questa interfaccia indica al gestore di debug della sessione (SDM) che un'interruzione asincrona è stata completata correttamente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,13 +31,13 @@ IDebugBreakEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- De implementa questa interfaccia per supportare interruzioni utente in un programma. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia). `IDebugEvent2`
+ Il de implementa questa interfaccia per supportare le interruzioni dell'utente in un programma. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia). `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- SDM chiama [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) quando l'utente ha richiesto la sospensione del programma di cui è in corso il debug. Quando il programma è stato sospeso correttamente, de invia `IDebugBreakEvent2` l'evento. Questo evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma di cui è in corso il debug.
+ L'SDM chiama [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) quando l'utente ha richiesto la sospensione del programma di cui è in corso il debug. Quando il programma è stato sospeso correttamente, il DE invia `IDebugBreakEvent2` l'evento. Questo evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug.
 
 ## <a name="remarks"></a>Commenti
- Ad esempio, un utente può selezionare il comando Interrompi **tutto** dal menu **Debug** per uscire da un programma che esegue un ciclo infinito. SDM indica al programma di arrestarsi chiamando [CauseBreak.](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) De invia quando `IDebugBreakEvent2` il programma si arresta.
+ Ad esempio, un utente può selezionare **il** comando Interrompi tutto dal menu **Debug** per uscire da un programma che esegue un ciclo infinito. SDM indica al programma di arrestarsi chiamando [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). Il de invia `IDebugBreakEvent2` quando il programma si arresta.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

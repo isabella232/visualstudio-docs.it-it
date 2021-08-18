@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveNativeReference | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività ResolveNativeReference per risolvere i riferimenti nativi implementando la classe Microsoft. Build. Tasks. ResolveNativeReference.
+description: Informazioni su MSBuild'attività ResolveNativeReference per risolvere i riferimenti nativi implementando la classe Microsoft.Build.Tasks.ResolveNativeReference.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb987ec458e91c4190e2e0c264a80592f8133e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 212239348ba1f4caf80be1ac9feb029bb702cee3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136677"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (attività)
 
@@ -39,8 +40,8 @@ Risolve i riferimenti nativi. Implementa la classe <xref:Microsoft.Build.Tasks.R
 |---------------|-----------------|
 |`AdditionalSearchPaths`|Parametro <xref:System.String?displayProperty=fullName>`[]` obbligatorio.<br /><br /> Ottiene o imposta i percorsi di ricerca per la risoluzione di identità di assembly di riferimenti nativi.|
 |`ContainedComComponents`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i componenti COM dell'assembly nativo.|
-|`ContainedLooseEtcFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i file *etc* separati elencati nel manifesto nativo.|
-|`ContainedLooseTlbFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i file *tlb* separati dell'assembly nativo.|
+|`ContainedLooseEtcFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i file *Etc* loose elencati nel manifesto nativo.|
+|`ContainedLooseTlbFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i file *TLB* loose dell'assembly nativo.|
 |`ContainedPrerequisiteAssemblies`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta gli assembly che devono essere presenti prima che il manifesto possa essere usato.|
 |`ContainedTypeLibraries`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta le librerie dei tipi dell'assembly nativo.|
 |`ContainingReferenceFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i file di riferimento.|
@@ -48,7 +49,7 @@ Risolve i riferimenti nativi. Implementa la classe <xref:Microsoft.Build.Tasks.R
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="see-also"></a>Vedi anche
 

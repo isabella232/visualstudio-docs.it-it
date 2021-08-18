@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c75c41a68c4c6ba2cebf0b7d16bbf5b5ff064aee8f25d4c2962c9574b5c78ef1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1b01a254283befcd790b0e2ecbb0a35084c5b944
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409618"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026943"
 ---
 # <a name="how-to-define-a-method-instance"></a>Procedura: Definire un'istanza del metodo
   È necessario definire almeno un'istanza del metodo per ogni metodo nel modello.

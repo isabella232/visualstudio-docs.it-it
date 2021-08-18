@@ -12,17 +12,18 @@ ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c972a96c360cc1de0aa3f14c8316c3e1f8c5c156
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fb6c6a72f6c7135882ece0b311478fe1f6f048a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103936"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Recupera le classi con l'attributo specificato in un modulo specificato.
@@ -49,22 +50,22 @@ int GetAttributedClassesinModule (
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-in Identificatore del dominio dell'applicazione.
+[in] Identificatore del dominio applicazione.
 
 `guidModule`\
-in Identificatore univoco del modulo.
+[in] Identificatore univoco del modulo.
 
 `pstrAttribute`\
-in Stringa dell'attributo.
+[in] Stringa dell'attributo.
 
 `ppEnum`\
-out Restituisce un'enumerazione delle classi con attributi.
+[out] Restituisce un'enumerazione delle classi con attributi.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(

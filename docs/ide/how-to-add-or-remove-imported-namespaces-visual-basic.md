@@ -14,14 +14,15 @@ ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e3010e9798f3c056afd5ffc7964ace3f734f53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05856d2443d66297da7313d57cfba9d1582cb1e4a5f2c4dc9d046c1675f2fb8f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970842"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357882"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
 
@@ -38,7 +39,7 @@ Gli spazi dei nomi importati vengono gestiti nella pagina **Riferimenti** di **C
 3. Nell'elenco **Spazi dei nomi importati** selezionare la casella di controllo relativa allo spazio dei nomi da aggiungere.
 
     > [!NOTE]
-    > Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per ulteriori informazioni, vedere [gestione dei riferimenti in un progetto](managing-references-in-a-project.md).
+    > Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>Per rimuovere uno spazio dei nomi importato
 

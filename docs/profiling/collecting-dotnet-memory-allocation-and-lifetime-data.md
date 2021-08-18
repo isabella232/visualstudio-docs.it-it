@@ -1,6 +1,6 @@
 ---
-title: Raccolta dati di durata & di allocazione di memoria .NET
-description: Per individuare i problemi di prestazioni relativi alla memoria nell'applicazione .NET, utilizzare Strumenti di profilatura per raccogliere dati di allocazione della memoria e durata degli oggetti.
+title: Raccogliere i dati di durata dell'allocazione & memoria .NET
+description: Per rilevare i problemi di prestazioni correlati alla memoria nell'applicazione .NET, usare Strumenti di profilatura per raccogliere dati sull'allocazione di memoria e sulla durata degli oggetti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,19 +10,20 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00a8b7c7e92153fcbc323349f30adc458cf973fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2335db6165d5dd973c454723bda9eeee97475ba8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839283"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039787"
 ---
-# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Raccolta dei dati di durata e allocazione della memoria .NET Framework
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Raccogliere i .NET Framework di memoria e i dati di durata
 
-Visual Studio Strumenti di profilatura supporta la raccolta dei dati di allocazione della memoria .NET Framework e della durata degli oggetti, che consente di rilevare problemi di prestazioni relativi alla memoria nell'applicazione.
+Visual Studio Strumenti di profilatura la raccolta di dati di allocazione .NET Framework di memoria e durata degli oggetti, che consente di rilevare i problemi di prestazioni correlati alla memoria nell'applicazione.
 
 - I dati sull'allocazione di memoria .NET includono le dimensioni e il numero di oggetti di memoria .NET Framework allocati.
 
@@ -48,7 +49,7 @@ Per informazioni su come raccogliere dati di memoria .NET tramite gli strumenti 
 
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
 
-2. Nella finestra di dialogo *Pagine delle proprietà della* **sessione di prestazioni** fare clic sulla scheda **Generale** e selezionare la casella di controllo **Raccogliere le informazioni sull'allocazione dell'oggetto .NET**.
+2. Nella finestra *di dialogo Pagine* **delle** proprietà della sessione di prestazioni fare clic sulla **scheda** Generale e selezionare la casella di controllo Raccogli informazioni sull'allocazione di oggetti **.NET.**
 
 3. Per raccogliere dati sulla durata degli oggetti .NET, selezionare la casella di controllo **Raccogliere anche le informazioni sulla durata dell'oggetto .NET**.
 
@@ -56,18 +57,18 @@ Per informazioni su come raccogliere dati di memoria .NET tramite gli strumenti 
 
 È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
 
-- In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni, quindi scegliere **Proprietà**.
+- In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni e quindi scegliere **Proprietà**.
 
 Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si raccolgono dati di memoria .NET.
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|Nella pagina **Generale** specificare i dettagli di denominazione per il file di dati di profilatura (con estensione vsp) generato.|- [Raccolta dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Procedura: impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)|
-|Se il codice contiene più progetti Exe, nella pagina **Avvia** scegliere l'applicazione da avviare.|- [Raccolta dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)|
-|Nella pagina **Interazione tra livelli** aggiungere i dati delle chiamate ADO.NET per l'esecuzione della profilatura.|- [Raccolta dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)|
-|Nella pagina **Eventi di Windows** specificare uno o più eventi Event Tracing for Windows (ETW) da raccogliere con i dati di campionamento.|- [Procedura: raccogliere dati di Event Tracing for Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|Nella pagina **Generale** specificare i dettagli di denominazione per il file di dati di profilatura (con estensione vsp) generato.|- [Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Procedura: Impostare le opzioni del nome del file di dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Se il codice contiene più progetti Exe, nella pagina **Avvia** scegliere l'applicazione da avviare.|- [Raccogliere i dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)|
+|Nella pagina **Interazione tra livelli** aggiungere i dati delle chiamate ADO.NET per l'esecuzione della profilatura.|- [Raccogliere i dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)|
+|Nella pagina **Eventi di Windows** specificare uno o più eventi Event Tracing for Windows (ETW) da raccogliere con i dati di campionamento.|- [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |Nella pagina **Contatori Windows** specificare uno o più contatori di prestazioni del sistema operativo da aggiungere ai dati di profilatura come contrassegni.|- [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|Nella pagina **Avanzate** specificare la versione del runtime di .NET Framework da sottoporre a profilatura se i moduli dell'applicazione usano più versioni di questo. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.|- [Procedura: specificare il runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Nella pagina **Avanzate** specificare la versione del runtime di .NET Framework da sottoporre a profilatura se i moduli dell'applicazione usano più versioni di questo. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.|- [Procedura: Specificare il runtime .NET Framework dati](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>Attività di strumentazione
 
@@ -75,13 +76,13 @@ Le attività nella tabella seguente sono opzioni della finestra di dialogo **Pag
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|Nella pagina **Binari** specificare un percorso per le copie instrumentate dei moduli. Per impostazione predefinita, i file binari originali vengono spostati in una cartella di backup.|- [Procedura: rilocare file binari instrumentati](../profiling/how-to-relocate-instrumented-binaries.md)|
-|Nella pagina **Strumentazione** escludere le funzioni piccole dalla profilatura per ridurre il sovraccarico di profilatura, eseguire la profilatura del codice JavaScript nelle pagine Web ASP.NET e specificare i comandi da eseguire a un prompt dei comandi prima e dopo il processo di strumentazione.|- [Procedura: escludere o includere funzioni brevi dalla strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [How to: Profile JavaScript Code in Web Pages](../profiling/how-to-profile-javascript-code-in-web-pages.md) (Procedura: Profilare codice JavaScript nelle pagine Web)<br />- [Procedura: specificare comandi pre-e post-strumentazione](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
-|Nella pagina **Contatori CPU** specificare uno o più contatori di prestazioni del processore da aggiungere ai dati di profilatura.|- [Procedura: raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)|
-|Nella pagina **Avanzate** specificare eventuali opzioni di VSInstr.exe aggiuntive, ad esempio le opzioni per includere o escludere funzioni specifiche. Per altre informazioni sulle opzioni di VSInstr, vedere [VSInstr](../profiling/vsinstr.md)|- [Procedura: specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Procedura: limitare la strumentazione a funzioni specifiche](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
+|Nella pagina **Binari** specificare un percorso per le copie instrumentate dei moduli. Per impostazione predefinita, i file binari originali vengono spostati in una cartella di backup.|- [Procedura: Rilocare i file binari instrumentati](../profiling/how-to-relocate-instrumented-binaries.md)|
+|Nella pagina **Strumentazione** escludere le funzioni piccole dalla profilatura per ridurre il sovraccarico di profilatura, eseguire la profilatura del codice JavaScript nelle pagine Web ASP.NET e specificare i comandi da eseguire a un prompt dei comandi prima e dopo il processo di strumentazione.|- [Procedura: Escludere o includere funzioni brevi dalla strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [How to: Profile JavaScript Code in Web Pages](../profiling/how-to-profile-javascript-code-in-web-pages.md) (Procedura: Profilare codice JavaScript nelle pagine Web)<br />- [Procedura: Specificare comandi pre-strumentazione e post-strumentazione](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|Nella pagina **Contatori CPU** specificare uno o più contatori di prestazioni del processore da aggiungere ai dati di profilatura.|- [Procedura: Raccogliere dati del contatore CPU](../profiling/how-to-collect-cpu-counter-data.md)|
+|Nella pagina **Avanzate** specificare eventuali opzioni di VSInstr.exe aggiuntive, ad esempio le opzioni per includere o escludere funzioni specifiche. Per altre informazioni sulle opzioni di VSInstr, vedere [VSInstr](../profiling/vsinstr.md)|- [Procedura: Specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Procedura: Limitare la strumentazione a funzioni specifiche](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni [Procedura: scegliere i metodi](../profiling/how-to-choose-collection-methods.md) 
- di raccolta [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md) 
+ [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)

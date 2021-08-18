@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3a3766b17b59023cd810106724a2794d68521c4f45f242503fc84324aaef0c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 97af9ff3cf30954212de6918e83aaa52ef4e3852
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028371"
 ---
 # <a name="vstextbuffer-object"></a>Oggetto VSTextBuffer
 L'oggetto buffer di testo rappresenta un flusso di testo Unicode, generalmente associato a un file. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto può essere usato all'esterno del contesto dell'editor principale, come in una procedura guidata.

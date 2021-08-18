@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: a6168ca38de71d393d0a966a03d5172a515bf21721affe782d94ba6118c2c204
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1461653dff8e757ec462a3d47eb76ba7ed4f0ed5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121266922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135078"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>Procedura: Ottenere una panoramica di un set di schemi usando la Graph dati
 
-Questo argomento descrive come [](../xml-tools/graph-view.md) usare la Graph per visualizzare una visualizzazione di alto livello dei nodi in un set di schemi e le relazioni tra i nodi.
+Questo argomento descrive come usare la visualizzazione [Graph](../xml-tools/graph-view.md) per visualizzare una visualizzazione di alto livello dei nodi in un set di schemi e le relazioni tra i nodi.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Per creare un nuovo file XSD e visualizzare l'elemento radice nella visualizzazione modello di contenuto
 
@@ -32,7 +32,7 @@ Questo argomento descrive come [](../xml-tools/graph-view.md) usare la Graph per
 
 4. Fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor XML **e Progettazione visualizzazioni**.
 
-5. Selezionare la visualizzazione Graph dati dalla barra **degli strumenti XSD**.
+5. Selezionare la visualizzazione Graph sulla barra **degli strumenti XSD**.
 
 6. Selezionare **il nodo Set** di schemi in XML Schema Explorer **e** trascinarlo nell'area di progettazione della Graph schema. Dovrebbero essere visualizzati i nodi globali e le frecce che collegano i nodi tra cui intercorrono relazioni.
 

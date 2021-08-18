@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72cac3ff7768d49f66c87b569312253669d735fa2e64fdb895b51ff29aae2ca4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f3626b7d3f558e9adc7431c21567a74bfe7f0df5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375896"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137645"
 ---
 # <a name="language-service-support-for-debugging"></a>Supporto dei servizi di linguaggio per il debug
 Un servizio di linguaggio può fornire funzionalità che supportano un debugger tramite <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> l'interfaccia . Queste funzionalità includono la convalida dei punti di interruzione e la fornitura di un elenco di espressioni **alla finestra Auto.**

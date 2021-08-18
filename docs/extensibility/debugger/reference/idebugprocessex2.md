@@ -1,6 +1,6 @@
 ---
-description: Questa interfaccia consente al gestore di debug della sessione (SDM) di notificare a un processo che si sta connettendo o scollegando dal processo.
-title: IDebugProcessEx2 | Microsoft Docs
+description: Questa interfaccia consente al gestore di debug di sessione (SDM) di inviare una notifica a un processo che si sta collegando o scollegando dal processo.
+title: Interfaccia IDebugProcessEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11f2c1cbefa4100ac9b025fbdcc1fed119531434ea9dbec033b8233a2ad19730
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4158f7f13f374e933bcf1ec64d40ecd16c85b40c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338904"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071902"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Questa interfaccia consente al gestore di debug della sessione (SDM) di notificare a un processo che si sta connettendo o scollegando dal processo.
+Questa interfaccia consente al gestore di debug di sessione (SDM) di inviare una notifica a un processo che si sta collegando o scollegando dal processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,11 +37,11 @@ IDebugProcessEx2 : IUnknown
 
 - Supporto del collegamento automatico tra più motori di debug
 
-  Se lo desidera, il fornitore della porta personalizzata può implementare questa interfaccia.
+  Il fornitore di porte personalizzato può implementare questa interfaccia, se lo desidera.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 
-- SDM chiama [QueryInterface su](/cpp/atl/queryinterface) `IDebugProcess2` un'interfaccia per ottenere questa interfaccia.
+- SDM chiama [QueryInterface](/cpp/atl/queryinterface) su `IDebugProcess2` un'interfaccia per ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IDebugProcessEx2` .

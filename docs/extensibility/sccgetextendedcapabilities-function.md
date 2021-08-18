@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 986a5f33b4b2476cc327b5e2e4b287f1e29cc5d95487d61ace6ebf22e9d23916
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df8c80eb5644d00cc6130d329b9d2cb7bdf75f8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321051"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086339"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Funzione SccGetExtendedCapabilities
 Questa funzione restituisce funzionalità aggiuntive supportate dal plug-in del controllo del codice sorgente.

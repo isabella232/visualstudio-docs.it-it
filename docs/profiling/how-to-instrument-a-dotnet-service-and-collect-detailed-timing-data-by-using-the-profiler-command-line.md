@@ -1,6 +1,6 @@
 ---
 title: Riga di comando del profiler - Instrumentare il servizio .NET, ottenere i dettagli di intervallo
-description: Informazioni su come usare gli Visual Studio Strumenti di profilatura da riga di comando per raccogliere dati di intervallo dettagliati per un .NET Framework servizio.
+description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura riga di comando per raccogliere dati di intervallo dettagliati per un .NET Framework servizio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ee43ad8621d1903eb7c775225f12a4a13fa68cb57b6a4166c7ec42c69131dd58
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8781170e8f934f457ae16d6193636819f12179ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410697"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038825"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
 
@@ -57,7 +57,7 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
 
    - [L'opzione /start](../profiling/start.md)**:trace** inizializza il profiler.
 
-   - [L'opzione /output](../profiling/output.md)**:** è obbligatoria `OutputFile` con **/start**. `OutputFile` specifica il nome e il percorso dei dati di profilatura (.*vsp*) file.
+   - [L'opzione /output](../profiling/output.md)**:** è obbligatoria `OutputFile` con **/start**. `OutputFile` specifica il nome e la posizione dei dati di profilatura (.*vsp*) file.
 
      È possibile usare una delle opzioni seguenti con l'opzione **/start:trace**.
 
@@ -67,7 +67,7 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
      | Opzione | Descrizione |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
-     | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID sessione è elencato nella **colonna ID sessione** della **scheda** Processi Windows Gestione attività. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
+     | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID sessione è elencato **nella colonna ID** sessione della **scheda** Processi Windows Gestione attività. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
      | [/waitstart](../profiling/waitstart.md)[**:** `Interval` ] | Specifica il numero di secondi di attesa dell'inizializzazione del profiler prima che venga restituito un errore. Se `Interval` non viene specificato, il profiler attende per un tempo indefinito. Per impostazione predefinita, **/start** restituisce immediatamente un valore. |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | Per avviare il profiler con la raccolta dei dati in pausa, aggiungere l'opzione **/globaloff** alla riga di comando **/start**. Usare **/globalon** per riprendere la profilatura. |
      | [/counter](../profiling/counter.md) **:**`Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in Config. Le informazioni sui contatori vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
@@ -81,7 +81,7 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
 
 Mentre il servizio è in esecuzione, è possibile usare le opzioni di *VSPerfCmd.exe* per avviare e arrestare la scrittura dei dati nel file di dati del profiler. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto del servizio.
 
-- Le coppie seguenti di **opzioni VSPerfCmd** avviano e arrestano la raccolta dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le coppie di opzioni **vsPerfCmd seguenti** avviano e arrestano la raccolta dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Descrizione|
     |------------|-----------------|
@@ -111,5 +111,5 @@ Per terminare una sessione di profilatura, arrestare il servizio che esegue il c
 
 ## <a name="see-also"></a>Vedi anche
 
-[Servizi di profilare](../profiling/command-line-profiling-of-services.md) 
+[Profilare i servizi](../profiling/command-line-profiling-of-services.md) 
  [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

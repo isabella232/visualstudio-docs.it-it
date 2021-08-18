@@ -7,20 +7,21 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dc44e39223fd252ae8c4130a1b358aa6af981119
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ee04b9e3a49af86780bc9702de5d5c128dae2173
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671507"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040515"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testing unità di codice JavaScript e TypeScript in Visual Studio
 
-È possibile scrivere ed eseguire unit test in Visual Studio usando alcuni dei framework JavaScript più diffusi senza dover passare al prompt dei comandi. Sono supportati sia Node.js che i progetti ASP.NET Core.
+È possibile scrivere ed eseguire unit test in Visual Studio usando alcuni dei framework JavaScript più diffusi senza dover passare a un prompt dei comandi. Sono supportati Node.js e ASP.NET Core progetto.
 
 I framework supportati sono:
 * Mocha ([mochajs.org](https://mochajs.org/))
@@ -29,11 +30,11 @@ I framework supportati sono:
 * Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (questo framework è specifico di Node.js Tools for Visual Studio)
 
-Per ASP.NET Core e JavaScript o TypeScript, vedere [scrivere unit test per ASP.NET Core ](#write-unit-tests-for-aspnet-core).
+Per ASP.NET Core JavaScript o TypeScript, vedere [Scrivere unit test per ASP.NET Core ](#write-unit-tests-for-aspnet-core).
 
 Se un framework non è supportato, vedere [Aggiungere il supporto per un framework di unit test](#addingFramework) per informazioni sull'aggiunta del supporto.
 
-## <a name="write-unit-tests-in-a-nodejs-project"></a>Scrivere unit test in un progetto Node.js
+## <a name="write-unit-tests-in-a-nodejs-project"></a>Scrivere unit test in un Node.js progetto
 
 Prima di aggiungere unit test al progetto, verificare che il framework che si prevede di usare sia installato localmente nel progetto. La [finestra di installazione del pacchetto npm](npm-package-management.md#npmInstallWindow) semplifica questa operazione.
 
@@ -69,21 +70,21 @@ Se le opzioni di unit test non sono state impostate nelle proprietà del progett
 > [!Note]
 > Le opzioni di unit test prevalgono sulle impostazioni selezionate per i singoli file.
 
-Dopo l'apertura di Esplora test (scegliere **test**  >    >  **Esplora test** di Windows), Visual Studio individua e Visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
+Dopo aver aperto Esplora test (scegliere **Test**  >  **Windows**  >  **Esplora test**), Visual Studio individua e visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
 
 ![Esplora test](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> Per TypeScript, non usare l' `outdir` opzione o `outfile` in *tsconfig.json*, perché Esplora test non sarà in grado di trovare gli unit test.
+> Per TypeScript, non usare l'opzione o intsconfig.jsin , perché Esplora test non sarà in grado di `outdir` `outfile` trovare gli unit test. 
 
-## <a name="run-tests-nodejs"></a>Esegui test (Node.js)
+## <a name="run-tests-nodejs"></a>Eseguire test (Node.js)
 
 È possibile eseguire test in Visual Studio o dalla riga di comando.
 
 ### <a name="run-tests-in-visual-studio"></a>Eseguire test in Visual Studio
 
 ::: moniker range=">=vs-2019"
-È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. In alternativa, è possibile eseguire i test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e scegliendo **Esegui** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. Inoltre, è possibile eseguire il debug dei test selezionati facendo clic con il pulsante destro del mouse e selezionando **debug**.
+È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. In caso contrario, è possibile eseguire test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e scegliendo **Esegui** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. È anche possibile eseguire il debug di test selezionati facendo clic con il pulsante destro del mouse e scegliendo **Debug**.
 ::: moniker-end
 ::: moniker range="vs-2017"
 È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. Oppure è possibile eseguire i test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e selezionando **Esegui test selezionati** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. È inoltre possibile eseguire il debug di test selezionati scegliendo **Esegui debug test selezionati**.
@@ -92,14 +93,14 @@ Dopo l'apertura di Esplora test (scegliere **test**  >    >  **Esplora test** di
 Per TypeScript, gli unit test vengono eseguiti sul codice JavaScript generato.
 
 > [!NOTE]
-> Nella maggior parte degli scenari TypeScript è possibile eseguire il debug di un unit test impostando un punto di interruzione nel codice TypeScript, facendo clic con il pulsante destro del mouse su un test in Esplora test e scegliendo **debug**. Negli scenari più complessi, ad esempio in scenari in cui vengono usate le mappe di origine, è possibile che si verifichino problemi nel codice TypeScript. Come soluzione alternativa, provare a usare la `debugger` parola chiave.
+> Nella maggior parte degli scenari TypeScript è possibile eseguire il debug di un unit test impostando un punto di interruzione nel codice TypeScript, facendo clic con il pulsante destro del mouse su un test in Esplora test e scegliendo **Debug**. In scenari più complessi, ad esempio alcuni scenari che usano mappe di origine, potrebbe essere difficile raggiungere punti di interruzione nel codice TypeScript. Per risolvere il problema, provare a usare la parola `debugger` chiave .
 
 > [!NOTE]
 > Test di profilatura o code coverage non sono attualmente supportati.
 
 ### <a name="run-tests-from-the-command-line"></a>Eseguire test dalla riga di comando
 
-È possibile eseguire i test da [prompt dei comandi per gli sviluppatori per Visual Studio](../ide/reference/command-prompt-powershell.md) usando il comando seguente:
+È possibile eseguire i test [da Prompt dei comandi per gli sviluppatori per Visual Studio](../ide/reference/command-prompt-powershell.md) usando il comando seguente:
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -138,21 +139,21 @@ Test execution time: 1.5731 Seconds
 
 ## <a name="write-unit-tests-for-aspnet-core"></a>Scrivere unit test per ASP.NET Core
 
-1. Creare un progetto ASP.NET Core e aggiungere il supporto TypeScript.
+1. Creare un ASP.NET Core progetto e aggiungere il supporto TypeScript.
 
-   Per un progetto di esempio, vedere [creare un'app ASP.NET Core con typescript](../javascript/tutorial-aspnet-with-typescript.md). Per il supporto del testing unità, è consigliabile iniziare con un modello di progetto ASP.NET Core standard.
+   Per un progetto di esempio, vedere [Creare un'app ASP.NET Core con TypeScript.](../javascript/tutorial-aspnet-with-typescript.md) Per il supporto degli unit test, è consigliabile iniziare con un modello di ASP.NET Core standard.
 
-   Usare il pacchetto NuGet per aggiungere il supporto TypeScript anziché il pacchetto NPM TypeScript.
+   Usare il NuGet per aggiungere il supporto TypeScript anziché il pacchetto TypeScript npm.
 
-1. Installare il pacchetto NuGet [Microsoft. JavaScript. unittest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/)
+1. Installare il NuGet [microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/)
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Scarica progetto**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Scarica** Project .
 
-   Il file con *estensione csproj* verrà aperto in Visual Studio.
+   Il file *con estensione csproj* deve essere aperto in Visual Studio.
 
-1. Aggiungere gli elementi seguenti al file con *estensione csproj* nell' `PropertyGroup` elemento.
+1. Aggiungere gli elementi seguenti al file *con estensione csproj* nell'elemento `PropertyGroup` .
 
-   Questo esempio specifica Mocha come Framework di test. È possibile specificare invece jest, Tape o Jasmine.
+   Questo esempio specifica Mocha come framework di test. È invece possibile specificare Jest, Tape o Jasmine.
 
    ```xml
    <PropertyGroup>
@@ -163,24 +164,24 @@ Test execution time: 1.5731 Seconds
    </PropertyGroup>
    ```
 
-   L' `JavaScriptTestRoot` elemento specifica che gli unit test saranno nella cartella *test* della radice del progetto.
+   `JavaScriptTestRoot`L'elemento specifica che gli unit test saranno nella cartella *tests* della radice del progetto.
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Ricarica progetto**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Ricarica Project**.
 
-1. Aggiungere il supporto NPM, come descritto nell'articolo relativo alla gestione dei pacchetti NPM in [progetti ASP.NET Core](../javascript/npm-package-management.md#aspnet-core-projects).
+1. Aggiungere il supporto npm come descritto nell'articolo npm package management (Gestione pacchetti npm) in [ASP.NET Core progetti](../javascript/npm-package-management.md#aspnet-core-projects).
 
-   Questa operazione richiede l'installazione del runtime di Node.js per il supporto NPM e l'aggiunta di *package.js* nella radice del progetto.
+   Ciò richiede l'installazione del runtime Node.js per il supporto npm *e l'aggiunta di* package.jsnella radice del progetto.
 
-1. In *package.js*, aggiungere il pacchetto NPM desiderato in dipendenze.
+1. In *package.jsin* aggiungere il pacchetto npm desiderato nelle dipendenze.
 
-   Per Mocha, ad esempio, è possibile usare quanto segue:
+   Ad esempio, per mocha, è possibile usare quanto segue:
 
    ```json
    "dependencies": {
      "mocha": "8.3.0",
    ```
 
-   Alcuni framework di unit test, ad esempio jest, richiedono pacchetti NPM aggiuntivi. Per jest, usare il codice JSON seguente:
+   Alcuni framework di unit test, ad esempio Jest, richiedono pacchetti npm aggiuntivi. Per Jest, usare il codice JSON seguente:
 
    ```json
    "dependencies": {
@@ -189,11 +190,11 @@ Test execution time: 1.5731 Seconds
    ```
 
    >[!NOTE]
-   > In alcuni scenari Esplora soluzioni possibile che non venga visualizzato il nodo NPM a causa di un problema noto descritto [qui](https://github.com/aspnet/Tooling/issues/479). Se è necessario visualizzare il nodo NPM, è possibile scaricare il progetto, facendo clic con il pulsante destro del mouse sul progetto e scegliendo **Scarica progetto**, quindi ricaricare il progetto per fare in modo che il nodo NPM venga nuovamente visualizzato.
+   > In alcuni scenari, Esplora soluzioni il nodo npm potrebbe non essere visualizzato a causa di un problema noto descritto [qui.](https://github.com/aspnet/Tooling/issues/479) Se è necessario visualizzare il nodo npm, è possibile scaricare il progetto (fare clic con il pulsante destro del mouse sul progetto e scegliere Scarica **Project**) e quindi ricaricare il progetto per visualizzare nuovamente il nodo npm.
 
 1. Aggiungere il codice da testare.
 
-   Se si usa l'esempio descritto in [creare un'app ASP.NET Core con typescript](tutorial-aspnet-with-typescript.md), aggiungere il codice seguente alla fine del file *Library. TS* , che si trova nella cartella *Scripts* .
+   Se si usa l'esempio descritto in Creare un'app ASP.NET Core con [TypeScript,](tutorial-aspnet-with-typescript.md)aggiungere il codice seguente alla fine del file *library.ts,* che si trova nella cartella *scripts.*
 
    ```typescript
    function getData(value) {
@@ -207,9 +208,9 @@ Test execution time: 1.5731 Seconds
 
    Per TypeScript, gli unit test vengono eseguiti sul codice JavaScript generato.
 
-1. Aggiungere gli unit test alla cartella *test* nella radice del progetto.
+1. Aggiungere gli unit test alla cartella *tests* nella radice del progetto.
 
-   Ad esempio, è possibile usare il codice seguente selezionando la scheda della documentazione corretta corrispondente al Framework di test, in questo esempio Mocha o jest. Questo codice testa una funzione denominata `getData` .
+   Ad esempio, è possibile usare il codice seguente selezionando la scheda della documentazione corretta corrispondente al framework di test, in questo esempio Mocha o Jest. Questo codice verifica una funzione denominata `getData` .
 
    # <a name="mocha"></a>[Moka](#tab/mocha)
 
@@ -224,7 +225,7 @@ Test execution time: 1.5731 Seconds
    })
    ```
 
-   # <a name="jest"></a>[Scherzo](#tab/jest)
+   # <a name="jest"></a>[Jest](#tab/jest)
 
    ```typescript
    const getData = require('../wwwroot/js/library.js');
@@ -234,17 +235,17 @@ Test execution time: 1.5731 Seconds
    });
    ```
 
-1. Aprire Esplora test (scegliere **test**  >    >  **Esplora test** di Windows) e Visual Studio individua e Visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
+1. Aprire Esplora test (scegliere **Test**  >  **Windows**  >  **Esplora test**) e Visual Studio individua e visualizza i test. Se inizialmente i test non vengono visualizzati, ricompilare il progetto per aggiornare l'elenco.
 
-   ![Individuazione test di Esplora test](../javascript/media/unit-tests-aspnet-core-discovery.png)
+   ![Individuazione dei test in Esplora test](../javascript/media/unit-tests-aspnet-core-discovery.png)
 
    > [!NOTE]
-   > Per TypeScript, non usare l' `outfile` opzione in *tsconfig.json*, perché Esplora test non sarà in grado di trovare gli unit test. È possibile usare l' `outdir` opzione, ma assicurarsi che i file di configurazione, ad esempio `package.json` e, `tsconfig.json` siano nella radice del progetto.
+   > Per TypeScript, non usare l'opzione intsconfig.jsin , perché Esplora test non sarà in grado di `outfile` trovare gli unit test.  È possibile usare `outdir` l'opzione , ma assicurarsi che i file di configurazione, ad `package.json` esempio e , siano nella radice del `tsconfig.json` progetto.
 
-## <a name="run-tests-aspnet-core"></a>Esegui test (ASP.NET Core)
+## <a name="run-tests-aspnet-core"></a>Eseguire test (ASP.NET Core)
 
 ::: moniker range=">=vs-2019"
-È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. In alternativa, è possibile eseguire i test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e scegliendo **Esegui** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. Inoltre, è possibile eseguire il debug dei test selezionati facendo clic con il pulsante destro del mouse e selezionando **debug**.
+È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. In caso contrario, è possibile eseguire test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e scegliendo **Esegui** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. È anche possibile eseguire il debug di test selezionati facendo clic con il pulsante destro del mouse e scegliendo **Debug**.
 ::: moniker-end
 ::: moniker range="vs-2017"
 È possibile eseguire i test facendo clic sul collegamento **Esegui tutti** in Esplora test. Oppure è possibile eseguire i test selezionando uno o più test o gruppi, facendo clic con il pulsante destro del mouse e selezionando **Esegui test selezionati** dal menu di scelta rapida. I test vengono eseguiti in background ed Esplora test aggiorna e visualizza automaticamente i risultati. È inoltre possibile eseguire il debug di test selezionati scegliendo **Esegui debug test selezionati**.
@@ -255,7 +256,7 @@ Per TypeScript, gli unit test vengono eseguiti sul codice JavaScript generato.
 ![Risultati di Esplora test](../javascript/media/unit-tests-aspnet-core-run.png)
 
 > [!NOTE]
-> Nella maggior parte degli scenari TypeScript è possibile eseguire il debug di un unit test impostando un punto di interruzione nel codice TypeScript, facendo clic con il pulsante destro del mouse su un test in Esplora test e scegliendo **debug**. Negli scenari più complessi, ad esempio in scenari in cui vengono usate le mappe di origine, è possibile che si verifichino problemi nel codice TypeScript. Come soluzione alternativa, provare a usare la `debugger` parola chiave.
+> Nella maggior parte degli scenari TypeScript è possibile eseguire il debug di un unit test impostando un punto di interruzione nel codice TypeScript, facendo clic con il pulsante destro del mouse su un test in Esplora test e scegliendo **Debug**. In scenari più complessi, ad esempio alcuni scenari che usano mappe di origine, potrebbe essere difficile raggiungere punti di interruzione nel codice TypeScript. Per risolvere il problema, provare a usare la parola `debugger` chiave .
 
 > [!NOTE]
 > Test di profilatura o code coverage non sono attualmente supportati.
@@ -279,7 +280,7 @@ L'individuazione dei framework di test disponibili avviene all'avvio di Visual S
 
 ## <a name="unit-tests-in-net-framework"></a>Unit test in .NET Framework
 
-Non si è limitati alla scrittura di unit test solo nei progetti Node.js e ASP.NET Core. Quando si aggiungono le proprietà TestFramework e TestRoot a un qualsiasi progetto C# o Visual Basic, questi test vengono enumerati e possono essere eseguiti tramite la finestra Esplora Test.
+Non si è limitati alla scrittura di unit test solo nei progetti Node.js e ASP.NET Core progetto. Quando si aggiungono le proprietà TestFramework e TestRoot a un qualsiasi progetto C# o Visual Basic, questi test vengono enumerati e possono essere eseguiti tramite la finestra Esplora Test.
 
 A tale scopo, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni, scegliere **Scarica progetto**, quindi scegliere **Edit Project** (Modifica progetto). Nel file di progetto aggiungere i due elementi seguenti a un gruppo di proprietà.
 
@@ -298,7 +299,7 @@ Successivamente, aggiungere i test alla cartella radice di test specificata. A q
 
 ## <a name="unit-test-net-core-and-net-standard"></a>Unit test .NET Core e .NET Standard
 
-Oltre alle proprietà precedenti, è necessario installare anche il pacchetto NuGet [Microsoft. JavaScript. unittest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) e impostare la proprietà:
+Oltre alle proprietà precedenti, è anche necessario installare il pacchetto NuGet [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) e impostare la proprietà :
 
 ```xml
 <PropertyGroup>
@@ -306,4 +307,4 @@ Oltre alle proprietà precedenti, è necessario installare anche il pacchetto Nu
 </PropertyGroup>
 ```
 
-Alcuni framework di test possono richiedere pacchetti NPM aggiuntivi per il rilevamento dei test. Per scherzo, ad esempio, è necessario il pacchetto NPM di jest-editor-support. Se necessario, consultare la documentazione relativa al Framework specifico.
+Alcuni framework di test possono richiedere pacchetti npm aggiuntivi per il rilevamento dei test. Ad esempio, jest richiede il pacchetto npm jest-editor-support. Se necessario, consultare la documentazione per il framework specifico.

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a5593bd883b935e361623b8bc0325b3d78aea54b378db38a949ed258bad7df66
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3012f92301986e6a5afb03bf7b604c3749ab7c4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262672"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120062"
 ---
 # <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 Seleziona tipi diversi di costruttori.
@@ -53,7 +53,7 @@ Seleziona tutti i costruttori.
 Seleziona costruttori non statici.
 
 `crStatic`\
-Seleziona costruttori statici.
+Seleziona i costruttori statici.
 
 ## <a name="remarks"></a>Commenti
 Passato come argomento al [metodo EnumConstructors.](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)

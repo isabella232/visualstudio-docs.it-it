@@ -156,7 +156,7 @@ DataCollection.CurrentId);
 
 3. Digitare il comando seguente: **VSInstr \<filename>.exe**
 
-4. Digitare il comando seguente: **VSPerfCmd /start:trace /output: \<filename> .vsp**
+4. Digitare il comando seguente: **VSPerfCmd /start:trace /output: \<filename> vsp**
 
 5. Digitare il comando seguente: **VSPerfCmd /globaloff**
 

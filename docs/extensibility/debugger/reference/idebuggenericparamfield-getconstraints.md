@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9170e3b27572fa38c74df07df387c7c4d2fe512711b948d02fb7b8dd8805bae8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2b6822b629f1a66aa80de72b95fdbb1ba8472353
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121451939"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118697"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Recupera i vincoli associati a questo parametro generico.
@@ -49,7 +49,7 @@ int GetConstraints(
 [in] Numero di vincoli.
 
 `ppConstraints`\
-[out] Restituisce una matrice contenente i vincoli associati a questo campo.
+[out] Restituisce una matrice che contiene i vincoli associati a questo campo.
 
 `pcConstraints`\
 [in, out] Numero di vincoli nella `ppConstraints` matrice.
@@ -58,7 +58,7 @@ int GetConstraints(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugGenericParamFieldType** che espone [l'interfaccia IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugGenericParamFieldType** che espone [l'interfaccia IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(

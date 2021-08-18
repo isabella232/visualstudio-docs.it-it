@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 021d16b746688b4d2ef88911bd203494510b17396d23b1f738b42103009107bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5490a0d4bdc6a0b980fdf19a1f63259a22b8a572
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121260579"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028358"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -246,7 +246,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
    ![Visualizzare la pagina About aggiornata che include le modifiche apportate](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
-1. Chiudere il Web browser, premere + **MAIUSC F5** per arrestare la modalità di debug e quindi chiudere Visual Studio.
+1. Chiudere il Web browser, premere + **MAIUSC F5** per arrestare la modalità debug e quindi chiudere Visual Studio.
 
 ::: moniker-end
 

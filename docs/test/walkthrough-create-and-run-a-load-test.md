@@ -13,12 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 764ec7f9f0a1e0b4edb0ed08f35761be18daaa5fe7784c162b353c02766a3e97
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c42c6a98ab9b453131af383b5b39a1c12ed9e895
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384600"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038318"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procedura dettagliata: Creare ed eseguire un test di carico contenente unit test
 
@@ -93,7 +93,7 @@ In questa procedura dettagliata, si completeranno le seguenti attività:
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Per selezionare un modello di combinazione di test per lo scenario
 
-1. In **Modalità di modellazione della combinazione di test** selezionare In base al numero totale di **test.**
+1. In **Come deve essere modellata la combinazione di test** selezionare In base al numero totale di **test.**
 
 2. Scegliere **Avanti**.
 

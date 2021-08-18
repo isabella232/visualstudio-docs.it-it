@@ -9,12 +9,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 8e0563318600c30d595d6fd193aff48f4171d31ae95e39c48c8bb5dd02c154ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 07107cac541f8845b031d39976be4041a7826551
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393269"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045697"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML
 
@@ -56,7 +56,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
 5. Impostare un punto di interruzione nel codice del progetto.
 
-6. Nella nuova istanza di Visual Studio, sulla barra dei menu scegliere **Debug**  >  **Associa a processo**.
+6. Nella nuova istanza di Visual Studio, sulla barra dei menu scegliere Debug Attach to Process **(Esegui debug**  >  **connessione a processo).**
 
 7. Nella finestra di dialogo **Connetti a processo** scegliere **XDesProc.exe** nell'elenco **Processi disponibili** e quindi fare clic sul pulsante **Connetti** .
 

@@ -29,12 +29,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f47b429bdb0ab5275718f45c29c0627cb143efa42e3e275c6d9ff1b82e39cb33
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d31bcb5c74e4ce4b6049daff868ede2811108e79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121299032"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047166"
 ---
 # <a name="build-office-solutions"></a>Compilare Office soluzioni
   I processi di compilazione e debug dei progetti di Office sono in genere analoghi agli stessi processi per altri tipi di progetti in Visual Studio, ad esempio per Windows Form. Gli argomenti di questa sezione illustrano le differenze esistenti. Per informazioni generali su come compilare applicazioni, vedere [Compilare e compilare in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

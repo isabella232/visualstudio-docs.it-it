@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Leggere e scrivere nelle proprietà del documento'
-description: Informazioni su come usare Visual Studio per ottenere o impostare le proprietà del documento in Microsoft Excel e Microsoft Word.
+description: Informazioni su come usare le Visual Studio per ottenere o impostare le proprietà dei documenti in Microsoft Excel e Microsoft Word.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3474d86a7408e841d383c82e5ab38da90253dbbf
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 981f9da1138034dd108a438a69683f4107358ee4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032719"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: Leggere e scrivere nelle proprietà del documento
   È possibile archiviare le proprietà del documento insieme a un documento. Le applicazioni di Office offrono svariate proprietà predefinite, ad esempio autore, titolo e oggetto. Questo argomento illustra come impostare le proprietà dei documenti in Microsoft Office Excel e Microsoft Office Word.
@@ -81,6 +82,6 @@ ms.locfileid: "107826681"
  Anche se si usano Word ed Excel e i rispettivi oggetti, Microsoft Office fornisce l'elenco di proprietà predefinite disponibili per i documenti. Il tentativo di accesso a una proprietà non definita provocherà un'eccezione.
 
 ## <a name="see-also"></a>Vedi anche
-- [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Componenti VSTO programma](../vsto/programming-vsto-add-ins.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
-- [Procedura: Creare e modificare proprietà personalizzate del documento](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Procedura: Creare e modificare proprietà di documenti personalizzati](../vsto/how-to-create-and-modify-custom-document-properties.md)

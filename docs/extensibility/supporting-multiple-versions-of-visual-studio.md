@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e0624461d6f37468c0d44ace6c287bda67021bcbef7c525dd871dab691cf282
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7aa8659754091106cc3f87f13c2e58a14d6b525d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413830"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137483"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Supporto di più versioni di Visual Studio
 Il termine *side-by-side* indica che è possibile installare e gestire più versioni di un prodotto nello stesso computer. Per i pacchetti VSPackage, questo significa che un utente può avere diverse Visual Studio installate nello stesso computer. Tuttavia, non è possibile avere versioni side-by-side dei pacchetti VSPackage caricati in una singola versione di Visual Studio.
@@ -44,7 +44,7 @@ Il termine *side-by-side* indica che è possibile installare e gestire più vers
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Scelta tra vspackage condivisi e con controllo delle versioni](../extensibility/choosing-between-shared-and-versioned-vspackages.md) Viene illustrato come risolvere i problemi side-by-side nel pacchetto VSPackage.
 
-- [Registrazione delle estensioni di file per le distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) Viene descritto come il pacchetto VSPackage può registrare le associazioni di file in uno scenario side-by-side.
+- [Registrazione di estensioni di file per distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) Viene descritto come il pacchetto VSPackage può registrare le associazioni di file in uno scenario side-by-side.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)

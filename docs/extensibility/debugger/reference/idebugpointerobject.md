@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia rappresenta un oggetto puntatore.
-title: IDebugPointerObject | Microsoft Docs
+title: Interfaccia IDebugPointerObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,18 +11,19 @@ ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6b8f6022a9363eb5391d6f0519603fa48668c2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9ea33904465ad48ef0389898e7fffcf672320b86
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087600"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088250"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
-> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 questa modalità di implementazione degli analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
  Questa interfaccia rappresenta un oggetto puntatore.
 
@@ -36,24 +37,24 @@ IDebugPointerObject : IDebugObject
  L'analizzatore di espressioni implementa questa interfaccia per rappresentare un oggetto puntatore.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- L'interfaccia [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) può ottenere questa interfaccia utilizzando [QueryInterface](/cpp/atl/queryinterface) se `IDebugObject` rappresenta un puntatore.
+ [L'interfaccia IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) può ottenere questa interfaccia usando [QueryInterface](/cpp/atl/queryinterface) se `IDebugObject` rappresenta un puntatore.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Oltre ai metodi ereditati da [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), l' `IDebugPointerObject` interfaccia espone i metodi seguenti.
+ Oltre ai metodi ereditati da [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugPointerObject` l'interfaccia espone i metodi seguenti.
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Ottiene l'oggetto al quale punta l'interfaccia.|
-|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Ottiene il valore al quale l'interfaccia punta come una serie di byte consecutivi.|
-|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Imposta il valore su cui l'interfaccia punta da una serie di byte consecutivi.|
+|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Ottiene l'oggetto a cui punta l'interfaccia .|
+|[Getbytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Ottiene il valore a cui l'interfaccia punta come una serie di byte consecutivi.|
+|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Imposta il valore a cui l'interfaccia punta da una serie di byte consecutivi.|
 
 ## <a name="remarks"></a>Commenti
- Un analizzatore di espressioni usa questa interfaccia per rappresentare un puntatore in un albero di analisi.
+ Un analizzatore di espressioni utilizza questa interfaccia per rappresentare un puntatore in un albero di analisi.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: EE. h
+ Intestazione: ee.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

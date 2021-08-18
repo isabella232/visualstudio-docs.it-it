@@ -1,6 +1,6 @@
 ---
 title: Impostazioni a cascata | Strumento di test per sviluppatori Microsoft IntelliTest
-description: Informazioni sulle impostazioni della cascata, che organizza le impostazioni a livello di assembly, di fixture e di esplorazione.
+description: Informazioni sulle impostazioni a cascata, che organizza le impostazioni a livello di assembly, correzione ed esplorazione.
 ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
@@ -8,19 +8,20 @@ helpviewer_keywords:
 - IntelliTest, Settings waterfall
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 283cb7b4a485389fa19e3756e79c35f1cec1041a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da67c83dc7b8eeec327dc2541e5dfde4fe60a4ac5577f34baaf57f0cecb53553
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920502"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440955"
 ---
 # <a name="settings-waterfall"></a>Impostazioni a cascata
 
-Il concetto di impostazioni a cascata significa che l'utente può specificare le impostazioni a livello di **assembly**, di **fixture** e di **esplorazione** :
+Il concetto di cascata delle impostazioni indica che l'utente può specificare le impostazioni a livello **di assembly,** **correzione** **ed** esplorazione:
 
 * Assembly: [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
 * Fixture: [PexClass](attribute-glossary.md#pexclass)
