@@ -1,5 +1,5 @@
 ---
-description: Specifica le informazioni da recuperare su una richiesta del punto di interruzione.
+description: Specifica le informazioni da recuperare su una richiesta di punto di interruzione.
 title: BPREQI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc0d24d07f5c7473df7e963ee56ca6023fffa16d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 88288b6d3c57e65f5f59f580468bde3180f877c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120231"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
-Specifica le informazioni da recuperare su una richiesta del punto di interruzione.
+Specifica le informazioni da recuperare su una richiesta di punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,58 +70,58 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>Campi
 `BPREQI_BPLOCATION`\
-Inizializzare/utilizzare il `bpLocation` campo (percorso punto di interruzione) della struttura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
+Inizializzare/usare il campo (posizione del punto di `bpLocation` interruzione) della [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura .
 
 `BPREQI_LANGUAGE`\
-Inizializza/usa il `guidLanguage` campo della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare `guidLanguage` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_PROGRAM`\
-Inizializza/usa il `pProgram` campo della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare `pProgram` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_PROGRAMNAME`\
-Inizializza/usa il `bstrProgramName` campo della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare `bstrProgramName` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_THREAD`\
-Inizializza/usa il `pThread` campo della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare `pThread` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_THREADNAME`\
-Inizializza/usa il `bstrThreadName` campo della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare `bstrThreadName` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_PASSCOUNT`\
-Inizializza/usa il `bpPassCount` campo della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare `bpPassCount` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_CONDITION`\
-Inizializzare/utilizzare il `bpCondition` campo (condizione del punto di interruzione) della `BP_REQUEST_INFO` `BP_REQUEST_INFO2` struttura o.
+Inizializzare/usare il campo (condizione del punto di `bpCondition` interruzione) della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
 
 `BPREQI_FLAGS`\
-Inizializza/usa il `dwFlags` campo della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare `dwFlags` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_ALLOLDFIELDS`\
-Inizializza/usa tutti i campi per l'oggetto della `BP_REQUEST_INFO` struttura.
+Inizializzare/usare tutti i campi per l'oggetto della `BP_REQUEST_INFO` struttura .
 
 `BPREQI_VENDOR`\
-Inizializza/usa il `guidVendor` campo della `BP_REQUEST_INFO2` struttura.
+Inizializzare/usare `guidVendor` il campo della struttura `BP_REQUEST_INFO2` .
 
 `BPREQI_CONSTRAINT`\
-Inizializza/usa il `bstrConstraint` campo della `BP_REQUEST_INFO2` struttura.
+Inizializzare/usare `bstrConstraint` il campo della struttura `BP_REQUEST_INFO2` .
 
 `BPREQI_TRACEPOINT`\
-Inizializza/usa il `bstrTracepoint` campo della `BP_REQUEST_INFO2` struttura.
+Inizializzare/usare `bstrTracepoint` il campo della struttura `BP_REQUEST_INFO2` .
 
 `BPREQI_ALLFIELDS`\
-Specifica tutti i campi della `BP_REQUEST_INFO2` struttura.
+Specifica tutti i campi per la `BP_REQUEST_INFO2` struttura .
 
 ## <a name="remarks"></a>Commenti
-Passato come argomento ai metodi [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) e [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) per specificare i campi delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) da inizializzare.
+Passato come argomento ai metodi [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) [e BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) per specificare [](../../../extensibility/debugger/reference/bp-request-info.md) quali campi delle strutture BP_REQUEST_INFO e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) devono essere inizializzati.
 
-Questi flag vengono usati anche per indicare quali campi delle `BP_REQUEST_INFO` strutture e `BP_REQUEST_INFO2` vengono usati e validi quando viene restituita ogni struttura.
+Questi flag vengono usati anche per indicare quali campi delle strutture e vengono usati e validi `BP_REQUEST_INFO` `BP_REQUEST_INFO2` quando viene restituita ogni struttura.
 
-Questi valori possono essere combinati con un bit per bit `OR` .
+Questi valori possono essere combinati con un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

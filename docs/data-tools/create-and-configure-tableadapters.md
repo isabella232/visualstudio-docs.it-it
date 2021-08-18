@@ -1,6 +1,6 @@
 ---
 title: Creare e configurare oggetti TableAdapter
-description: Vedere come creare e configurare un oggetto TableAdapter in Visual Studio. Gli oggetti TableAdapter forniscono la comunicazione tra l'applicazione e un database.
+description: Vedere come creare e configurare un TableAdapter in Visual Studio. Gli oggetti TableAdapter consentono la comunicazione tra l'applicazione e un database.
 ms.custom: SEO-VS-2020
 ms.date: 09/01/2017
 ms.topic: how-to
@@ -17,49 +17,49 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 024511b6bec5d060018c2a4976b17d22357ccaa8789a716af14debb037e91169
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f08a8c6d441a8b38f367ecfbdab95e1eabc113a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052967"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 
-Gli oggetti TableAdapter forniscono la comunicazione tra l'applicazione e un database. Si connettono al database, eseguono query o stored procedure e restituiscono una nuova tabella di dati o riempiono un oggetto esistente <xref:System.Data.DataTable> con i dati restituiti. I TableAdapter possono anche inviare dati aggiornati dall'applicazione al database.
+Gli oggetti TableAdapter consentono la comunicazione tra l'applicazione e un database. Si connettono al database, eseguono query o stored procedure e restituiscono una nuova tabella di dati o riempiono un oggetto <xref:System.Data.DataTable> esistente con i dati restituiti. Gli oggetti TableAdapter possono anche inviare dati aggiornati dall'applicazione al database.
 
 Gli oggetti TableAdapter vengono creati automaticamente quando si esegue una delle azioni seguenti:
 
 - Trascinare gli oggetti **di database Esplora server** nella **Progettazione DataSet**.
 
-- Eseguire la Configurazione guidata origine dati e selezionare il tipo di origine dati **Database** o **Servizio Web.**
+- Eseguire la Configurazione guidata origine dati e selezionare il tipo di origine dati **Database** o Servizio **Web.**
 
    ![Configurazione guidata origine dati in Visual Studio](media/data-source-configuration-wizard.png)
 
-È anche possibile creare un nuovo TableAdapter e configurarlo con  un'origine dati trascinando un oggetto TableAdapter dalla casella degli **strumenti** in un'area vuota nella Progettazione DataSet dati.
+È anche possibile creare un nuovo TableAdapter e configurarlo con  un'origine dati trascinando un Oggetto TableAdapter dalla Casella degli strumenti in un'area vuota **nella Progettazione DataSet** dati.
 
-Per un'introduzione ai TableAdapter, vedere [Riempire set di dati tramite TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md).
+Per un'introduzione agli oggetti TableAdapter, vedere [Riempire i set di dati usando oggetti TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md)
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Usare la Configurazione guidata TableAdapter
 
-Eseguire la **Configurazione guidata TableAdapter** per creare o modificare oggetti TableAdapter e le datatable associate. È possibile configurare un TableAdapter esistente facendo clic con il pulsante destro del mouse su di esso **nella** Progettazione DataSet .
+Eseguire la **Configurazione guidata TableAdapter** per creare o modificare oggetti TableAdapter e le tabelle DataTable associate. È possibile configurare un TableAdapter esistente facendo clic su di esso con il pulsante destro del mouse **nella Progettazione DataSet**.
 
 ![Configurazione guidata adattatore tabella raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
-Se si trascina un nuovo oggetto TableAdapter dalla casella degli strumenti quando il **Progettazione DataSet** è attivo, la procedura guidata viene avviata e viene richiesto di specificare l'origine dati a cui deve connettersi l'oggetto TableAdapter. Nella pagina successiva, la procedura guidata chiede quale tipo di comandi deve usare per comunicare con il database, SQL istruzioni o stored procedure. Questa operazione non verrà visualizzata se si configura un oggetto TableAdapter già associato a un'origine dati.
+Se si trascina un nuovo TableAdapter dalla Casella degli strumenti quando il **Progettazione DataSet** è attivo, viene avviata la procedura guidata e viene richiesto di specificare l'origine dati a cui deve connettersi l'oggetto TableAdapter. Nella pagina successiva la procedura guidata chiede quale tipo di comandi deve usare per comunicare con il database, SQL istruzioni o stored procedure. Questa operazione non verrà visualizzata se si sta configurando un TableAdapter già associato a un'origine dati.
 
-- È possibile creare un nuovo stored procedure nel database sottostante se si dispone delle autorizzazioni corrette per il database. Se non si dispone di queste autorizzazioni, questa non sarà un'opzione.
+- È possibile creare una nuova stored procedure nel database sottostante se si dispone delle autorizzazioni corrette per il database. Se non si dispone di queste autorizzazioni, questa non sarà un'opzione.
 
-- È anche possibile scegliere di eseguire stored procedure esistenti per i **comandi SELECT**, **INSERT**, **UPDATE** e **DELETE** del TableAdapter. Il stored procedure assegnato al comando **Update,** ad esempio, viene eseguito quando viene `TableAdapter.Update()` chiamato il metodo .
+- È anche possibile scegliere di eseguire stored procedure esistenti per i **comandi SELECT,** **INSERT,** **UPDATE** **e DELETE** dell'oggetto TableAdapter. Il stored procedure assegnato al comando **Update,** ad esempio, viene eseguito quando viene `TableAdapter.Update()` chiamato il metodo .
 
-Mappare i parametri dalla stored procedure selezionata alle colonne corrispondenti nella tabella dati. Ad esempio, se il stored procedure accetta un parametro denominato che passa alla colonna nella tabella, impostare la colonna `@CompanyName` di origine del parametro su `CompanyName`  `@CompanyName` `CompanyName` .
+Mappare i parametri dalla stored procedure selezionata alle colonne corrispondenti nella tabella dati. Ad esempio, se stored procedure accetta un parametro denominato che viene passato alla colonna nella tabella, impostare la colonna di origine `@CompanyName` `CompanyName` del parametro su  `@CompanyName` `CompanyName` .
 
 > [!NOTE]
-> Il stored procedure assegnato al comando SELECT viene eseguito chiamando il metodo dell'oggetto TableAdapter assegnato nel passaggio successivo della procedura guidata. Il metodo predefinito è , quindi il codice usato in genere per `Fill` eseguire la routine SELECT è `TableAdapter.Fill(tableName)` . Se si modifica il nome predefinito da , sostituire con il nome assegnato e sostituire "TableAdapter" con il nome effettivo del `Fill` `Fill` TableAdapter (ad esempio, `CustomersTableAdapter` ).
+> Il stored procedure assegnato al comando SELECT viene eseguito chiamando il metodo dell'oggetto TableAdapter a cui si fa riferimento nel passaggio successivo della procedura guidata. Il metodo predefinito è , quindi il codice usato in genere `Fill` per eseguire la procedura SELECT è `TableAdapter.Fill(tableName)` . Se si modifica il nome predefinito da , sostituire con il nome assegnato e `Fill` `Fill` sostituire "TableAdapter" con il nome effettivo dell'oggetto TableAdapter , ad esempio `CustomersTableAdapter` .
 
-- La selezione **dell'opzione Crea** metodi per inviare aggiornamenti direttamente al database equivale a impostare `GenerateDBDirectMethods` la proprietà su true. Questa opzione non è disponibile quando l'istruzione SQL originale non fornisce informazioni sufficienti o se la query non è aggiornabile. Questa situazione può verificarsi, ad esempio, nelle **query JOIN** e nelle query che restituiscono un singolo valore (scalare).
+- La selezione **dell'opzione Crea metodi per inviare aggiornamenti direttamente al database** equivale a impostare la proprietà su `GenerateDBDirectMethods` true. Questa opzione non è disponibile quando l'istruzione SQL originale non fornisce informazioni sufficienti o se la query non è aggiornabile. Questa situazione può verificarsi, ad esempio, nelle **query JOIN** e nelle query che restituiscono un singolo valore (scalare).
 
 Le **opzioni avanzate** della procedura guidata consentono di:
 
@@ -67,17 +67,17 @@ Le **opzioni avanzate** della procedura guidata consentono di:
 - Usa concorrenza ottimistica
 - Specificare se aggiornare la tabella dati dopo l'esecuzione delle istruzioni INSERT e UPDATE
 
-## <a name="configure-a-tableadapters-fill-method"></a>Configurare il metodo Fill di un oggetto TableAdapter
+## <a name="configure-a-tableadapters-fill-method"></a>Configurare il metodo Fill di un TableAdapter
 
-In alcuni casi può essere necessario modificare lo schema della tabella del TableAdapter. A tale scopo, modificare il metodo primario del `Fill` TableAdapter. Gli oggetti TableAdapter vengono creati con un metodo `Fill` primario che definisce lo schema della tabella dati associata. Il metodo primario si basa sulla query o sulla stored procedure immessa al momento della configurazione `Fill` originale del TableAdapter. Si tratta del primo metodo (in primo piano) nella tabella di dati in Progettazione DataSet.
+In alcuni casi può essere necessario modificare lo schema della tabella del TableAdapter. A tale scopo, modificare il metodo primario del `Fill` TableAdapter. Gli oggetti TableAdapter vengono creati con un metodo `Fill` primario che definisce lo schema della tabella dati associata. Il metodo principale è basato sulla query o stored procedure immesso al momento della configurazione `Fill` originale dell'oggetto TableAdapter. Si tratta del primo metodo (in primo piano) nella tabella di dati in Progettazione DataSet.
 
 ![TableAdapter con più query](../data-tools/media/tableadapter.gif)
 
-Tutte le modifiche apportate al metodo main del TableAdapter vengono riflesse nello `Fill` schema della tabella dati associata. Ad esempio, la rimozione di una colonna dalla query nel metodo main rimuove anche la `Fill` colonna dalla tabella di dati associata. Inoltre, la rimozione della colonna dal metodo main rimuove la colonna da `Fill` eventuali query aggiuntive per tale TableAdapter.
+Tutte le modifiche apportate al metodo main del TableAdapter vengono riflesse nello `Fill` schema della tabella dati associata. Ad esempio, la rimozione di una colonna dalla query nel metodo main comporta anche la rimozione della `Fill` colonna dalla tabella dati associata. Inoltre, la rimozione della colonna dal metodo main rimuove la colonna `Fill` da eventuali query aggiuntive per tale TableAdapter.
 
 È possibile usare la Configurazione guidata query TableAdapter per creare e modificare query aggiuntive per il TableAdapter. Queste query aggiuntive devono essere conformi allo schema della tabella, a meno che non restituiranno un valore scalare.  Ogni query aggiuntiva ha un nome specificato.
 
-L'esempio seguente illustra come chiamare una query aggiuntiva denominata `FillByCity` :
+Nell'esempio seguente viene illustrato come chiamare una query aggiuntiva denominata `FillByCity` :
 
 `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`
 
@@ -85,38 +85,38 @@ L'esempio seguente illustra come chiamare una query aggiuntiva denominata `FillB
 
 1. Aprire il set di dati in **Progettazione DataSet**.
 
-2. Se si crea una nuova query, trascinare un oggetto  **Query** dalla scheda **DataSet** della Casella degli strumenti in un oggetto o selezionare Aggiungi query dal menu di scelta rapida <xref:System.Data.DataTable> del TableAdapter.  È anche possibile trascinare un **oggetto Query** in un'area vuota del **Progettazione DataSet**, che crea un oggetto TableAdapter senza un oggetto <xref:System.Data.DataTable> associato. Queste query possono restituire solo valori singoli (scalari) o eseguire comandi UPDATE, INSERT o DELETE nel database.
+2. Se si sta creando una nuova query, trascinare un  oggetto **Query** dalla scheda **DataSet** della Casella degli strumenti in un oggetto oppure scegliere Aggiungi query dal menu di scelta rapida <xref:System.Data.DataTable> del TableAdapter.  È anche possibile trascinare un **oggetto Query** in un'area vuota del **Progettazione DataSet**, che crea un oggetto TableAdapter senza un oggetto <xref:System.Data.DataTable> associato. Queste query possono restituire solo valori singoli (scalari) o eseguire comandi UPDATE, INSERT o DELETE sul database.
 
-3. Nella schermata **Scegli connessione dati** selezionare o creare la connessione che verrà utilizzata dalla query.
+3. Nella schermata **Scegliere la connessione dati** selezionare o creare la connessione che verrà utilizzata dalla query.
 
     > [!NOTE]
     > Questa schermata viene visualizzata solo quando la finestra di progettazione non è in grado di determinare la connessione appropriata da usare o quando non sono disponibili connessioni.
 
 4. Nella schermata **Scegliere un tipo di** comando selezionare uno dei metodi seguenti per recuperare i dati dal database:
 
-    - **Usare SQL istruzioni** consente di digitare un'SQL per selezionare i dati dal database.
+    - **Usare SQL istruzioni consente** di digitare un'istruzione SQL per selezionare i dati dal database.
 
-    - **Crea nuovo stored procedure** consente alla procedura guidata di creare un nuovo stored procedure (nel database) in base all'istruzione SELECT specificata.
+    - **Crea nuovo stored procedure** consente di fare in modo che la procedura guidata crei un nuovo stored procedure (nel database) in base all'istruzione SELECT specificata.
 
     - **L'uso di stored procedure** esistenti consente di eseguire un'stored procedure esistente durante l'esecuzione della query.
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-on-an-existing-query"></a>Per avviare la Configurazione guidata query TableAdapter in una query esistente
 
-- Se si modifica una query TableAdapter esistente, fare clic con il pulsante destro del mouse sulla query e quindi scegliere **Configura** dal menu di scelta rapida.
+- Se si modifica una query TableAdapter esistente, fare clic con il pulsante destro del mouse sulla query e quindi scegliere Configura **dal** menu di scelta rapida.
 
     > [!NOTE]
-    > Facendo clic con il pulsante destro del mouse sulla query principale di un oggetto TableAdapter, il TableAdapter e lo schema vengono <xref:System.Data.DataTable> riconfigurati. Facendo clic con il pulsante destro del mouse su una query aggiuntiva in un oggetto TableAdapter, tuttavia, viene configurata solo la query selezionata. La **Configurazione guidata TableAdapter** riconfigura la definizione del TableAdapter, mentre la Configurazione guidata query **TableAdapter** riconfigura solo la query selezionata.
+    > Facendo clic con il pulsante destro del mouse sulla query principale di un TableAdapter, vengono riconfigurati l'oggetto TableAdapter e lo <xref:System.Data.DataTable> schema. Facendo clic con il pulsante destro del mouse su una query aggiuntiva in un oggetto TableAdapter, tuttavia, viene configurata solo la query selezionata. La **Configurazione guidata TableAdapter** riconfigura la definizione di TableAdapter, mentre la Configurazione guidata query **TableAdapter** riconfigura solo la query selezionata.
 
-### <a name="to-add-a-global-query-to-a-tableadapter"></a>Per aggiungere una query globale a un oggetto TableAdapter
+### <a name="to-add-a-global-query-to-a-tableadapter"></a>Per aggiungere una query globale a un TableAdapter
 
-- Le query globali SQL query che restituiscono un singolo valore (scalare) o nessun valore. In genere, le funzioni globali eseguono operazioni di database, ad esempio inserimenti, aggiornamenti ed eliminazioni. Aggregano anche informazioni, ad esempio un numero di clienti in una tabella o gli addebiti totali per tutti gli elementi in un ordine specifico.
+- Le query globali SQL query che restituiscono un singolo valore (scalare) o nessun valore. In genere, le funzioni globali eseguono operazioni di database, ad esempio inserimenti, aggiornamenti ed eliminazioni. Aggregano anche informazioni, ad esempio un conteggio dei clienti in una tabella o gli addebiti totali per tutti gli articoli in un ordine specifico.
 
-     Per aggiungere query globali, trascinare un oggetto  **Query** dalla **scheda DataSet** della Casella degli strumenti in un'area vuota della **Progettazione DataSet**.
+     Per aggiungere query globali, trascinare un oggetto  **Query** dalla scheda **DataSet** della casella degli strumenti in un'area vuota **del Progettazione DataSet**.
 
-- Specificare una query che esegue l'attività desiderata, ad esempio `SELECT COUNT(*) AS CustomerCount FROM Customers` .
+- Specificare una query che esegua l'attività desiderata, ad esempio `SELECT COUNT(*) AS CustomerCount FROM Customers` .
 
     > [!NOTE]
-    > Trascinando un **oggetto Query** direttamente nel **Progettazione DataSet** viene creato un metodo che restituisce solo un valore scalare (singolo). Mentre la query o stored procedure selezionata potrebbe restituire più di un singolo valore, il metodo creato dalla procedura guidata restituisce solo un singolo valore. Ad esempio, la query potrebbe restituire la prima colonna della prima riga dei dati restituiti.
+    > Il **trascinamento di** un oggetto Query **direttamente Progettazione DataSet** crea un metodo che restituisce solo un valore scalare (singolo). Mentre la query o stored procedure selezionata potrebbe restituire più di un singolo valore, il metodo creato dalla procedura guidata restituisce un solo valore. Ad esempio, la query potrebbe restituire la prima colonna della prima riga dei dati restituiti.
 
 ## <a name="see-also"></a>Vedi anche
 

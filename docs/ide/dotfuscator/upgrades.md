@@ -25,12 +25,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: d7820460ed2b652b2e92ea845f83d5130717ba07684945a2f6429fbc9c2d1d22
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2ac56a2b4a7f50412ba377eb090d2c168db11f7a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121357934"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086222"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Aggiornare Dotfuscator Community
 

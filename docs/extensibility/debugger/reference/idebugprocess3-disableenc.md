@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 429cacbc4ef87224459493b0815d9e5dcff7fac3f61ca510d334501226a08eef
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 88be8c57bac99761ac4bcfb6d92451ba0245c483
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276737"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071987"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Questo metodo disabilita in modo esplicito Modifica e continuazione in questo processo (e in tutti i programmi in esso contenuti). Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL` .

@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET | Microsoft Docs'
-description: Esaminare la visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET, che mostra i dati di allocazione e intervallo per una funzione selezionata e le funzioni padre e figlio di essa.
+description: Esaminare la visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET, che mostra i dati di allocazione e intervallo per una funzione selezionata e le relative funzioni padre e figlio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3615ce4ae26c7fdd3d4473f9abf3076df0ee830bde1e8449278c901245dbdc5f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f3558ef81017fe382c5729003be8f1dd80978135
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121257342"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136404"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET
 La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET raccolti con il metodo di strumentazione consente di visualizzare i dati relativi ad allocazione e temporizzazione per una funzione selezionata e le relative funzioni padre e figlio di tale funzione. La visualizzazione Chiamante/chiamato contiene tre griglie.

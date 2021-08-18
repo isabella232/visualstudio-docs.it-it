@@ -1,24 +1,32 @@
 ---
-title: 'Esercitazione: Introduzione a Docker & Visual Studio Code'
+title: 'Esercitazione: Introduzione a Docker & Visual Studio Code in Windows o Mac'
 description: Esercitazione in più passaggi che illustra le nozioni di base sull'uso di Docker con Visual Studio Code.
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: tutorial
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 75a51f478e4e58700f6025dd6a87fcc38439ed87
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 11bf11a0f01cb4faf93fca702d18c0801ec5fe77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222656"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053501"
 ---
 # <a name="tutorial-get-started-with-docker"></a>Esercitazione: Introduzione a Docker
 
-Questa esercitazione illustra come creare e distribuire app Docker, incluso l'uso di più contenitori con un database e l'uso di Docker Compose. Si distribuirà anche l'app in contenitori in Azure.
+Questa esercitazione illustra come creare e distribuire app Docker in Windows o Mac usando Visual Studio Code, incluso l'uso di più contenitori con un database e l'uso di Docker Compose. Si distribuirà anche l'app in contenitori in Azure.
+
+I contenitori sono ambienti virtualizzati compatti, ad esempio macchine virtuali (VM), che forniscono una piattaforma per la compilazione e l'esecuzione di app, ma senza le dimensioni complete e il sovraccarico del sistema operativo completo. [Docker è](https://www.docker.com) un provider di contenitori standard di terze parti e un sistema di gestione dei contenitori standard di terze parti. Docker Desktop viene eseguito nel computer e gestisce i contenitori locali. Gli strumenti di sviluppo come Visual Studio e VS Code offrono estensioni che consentono di usare un servizio Docker Desktop installato localmente per creare app in contenitori, distribuire app in contenitori ed eseguire il debug di app in esecuzione nei contenitori.
+
+## <a name="prerequisites"></a>Prerequisiti
+
+- [Visual Studio Code](https://code.microsoft.com/download)
+- Docker Desktop per [Windows](https://docs.docker.com/docker-for-windows/install/) [o Mac.](https://docs.docker.com/docker-for-mac/install/)
 
 ## <a name="start-the-tutorial"></a>Avviare l'esercitazione
 
@@ -44,7 +52,7 @@ Si noteranno alcuni flag usati. Ecco altre informazioni:
 
 ## <a name="the-vs-code-extension"></a>Estensione VS Code
 
-Prima di andare oltre, è necessario evidenziare l'estensione docker VS Code, che offre una rapida visualizzazione dei contenitori in esecuzione nel computer. Consente di accedere rapidamente ai log dei contenitori, di ottenere una shell all'interno del contenitore e di gestire facilmente il ciclo di vita del contenitore (arresto, rimozione e così via).
+Prima di andare oltre, è necessario evidenziare l'estensione VS Code Docker, che offre una rapida visualizzazione dei contenitori in esecuzione nel computer. Consente di accedere rapidamente ai log dei contenitori, di ottenere una shell all'interno del contenitore e di gestire facilmente il ciclo di vita del contenitore (arresto, rimozione e così via).
 
 Per accedere all'estensione, seguire le istruzioni [riportate qui.](https://code.visualstudio.com/docs/containers/overview) Usare l'icona Docker a sinistra per aprire la visualizzazione Docker. Se si apre l'estensione ora, verrà visualizzata questa esercitazione in esecuzione. Il nome del contenitore ( `angry_taussig` di seguito) è un nome creato in modo casuale. Quindi, molto probabilmente si ha un nome diverso.
 
@@ -61,7 +69,7 @@ Ora che è stato eseguito un contenitore, che *cos'è* un contenitore? In poche 
 
 ## <a name="what-is-a-container-image"></a>Che cos'è un'immagine del contenitore
 
-Quando si esegue un contenitore, usa un file system isolato. Questo file system personalizzato viene fornito da **un'immagine del contenitore**. Poiché l'immagine contiene il file system del contenitore, deve contenere tutto il necessario per eseguire un'applicazione, ad esempio tutte le dipendenze, la configurazione, gli script, i file binari e così via. L'immagine contiene anche altre configurazioni per il contenitore, ad esempio variabili di ambiente, un comando predefinito da eseguire e altri metadati.
+Quando si esegue un contenitore, usa un file system isolato. Questo file system personalizzato viene fornito da un'immagine **del contenitore**. Poiché l'immagine contiene il file system del contenitore, deve contenere tutto il necessario per eseguire un'applicazione, ad esempio tutte le dipendenze, la configurazione, gli script, i file binari e così via. L'immagine contiene anche altre configurazioni per il contenitore, ad esempio variabili di ambiente, un comando predefinito da eseguire e altri metadati.
 
 Verranno approfondite le immagini in un secondo momento, con argomenti come la strating, le procedure consigliate e altro ancora.
 

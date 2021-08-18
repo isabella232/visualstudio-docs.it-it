@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 28210dd5d34137cd656fa16281c87b3d8f8a55af5b56fe83cb30fae11b667887
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0a1791f02264a4e6a32976ef8975375196054b2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312613"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053279"
 ---
 # <a name="automatic-feature-suspension"></a>Sospensione funzionalità automatica
 
@@ -51,7 +51,7 @@ Per impostazione predefinita, l'analisi del codice in tempo reale viene eseguita
 
 ## <a name="gc-low-latency-disabled"></a>Gc a bassa latenza disabilitata
 
-Per abilitare nuovamente la modalità GC a bassa latenza, riavviare Visual Studio. Per impostazione predefinita, Visual Studio la modalità GC a bassa latenza ogni volta che si digita per garantire che la digitazione non blocchi le operazioni GC. Tuttavia, se una condizione di memoria insufficiente Visual Studio visualizza l'avviso di sospensione automatica, la modalità GC a bassa latenza è disabilitata per tale sessione. Il riavvio Visual Studio abilita nuovamente il comportamento GC predefinito. Per altre informazioni, vedere <xref:System.Runtime.GCLatencyMode>.
+Per abilitare nuovamente la modalità GC a bassa latenza, riavviare Visual Studio. Per impostazione predefinita, Visual Studio la modalità GC a bassa latenza ogni volta che si digita per garantire che la digitazione non blocchi le operazioni GC. Tuttavia, se una condizione di memoria insufficiente Visual Studio visualizza l'avviso di sospensione automatica, la modalità GC a bassa latenza è disabilitata per la sessione. Il riavvio Visual Studio abilita nuovamente il comportamento GC predefinito. Per altre informazioni, vedere <xref:System.Runtime.GCLatencyMode>.
 
 ## <a name="visual-studio-caches-flushed"></a>Visual Studio cache scaricate
 

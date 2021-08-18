@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97187d49f73e53967ad172406d22073341822fbf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9fad5d6bb577864b60c7916ac51b4cf84790cf3235e044717fd58a31c7dabd22
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120530"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434503"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
-Specifica come interpretare un ID processo nella [struttura](../../../extensibility/debugger/reference/ad-process-id.md) AD_PROCESS_ID processo.
+Specifica come interpretare un ID processo nella struttura AD_PROCESS_ID [processo.](../../../extensibility/debugger/reference/ad-process-id.md)
 
 ## <a name="syntax"></a>Sintassi
 

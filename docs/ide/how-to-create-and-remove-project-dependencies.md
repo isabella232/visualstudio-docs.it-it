@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare e rimuovere dipendenze di progetto'
-description: Informazioni su come usare Visual Studio per creare e rimuovere la dipendenza del progetto dal codice di altri progetti.
+description: Informazioni su come usare Visual Studio creare e rimuovere la dipendenza del progetto dal codice da altri progetti.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fb5205dbaa3711fa8baa699d488d097cac1f78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e2a29e655d562dcd70f6af8089d37a500e3277494b812d74ba7e19772a3ec02
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878708"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357869"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: Creare e rimuovere dipendenze di progetto
 

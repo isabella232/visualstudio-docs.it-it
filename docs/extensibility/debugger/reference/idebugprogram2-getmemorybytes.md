@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17f6c106a387c5a53a78e8488929f9a54389d58971854f925b3f9f9550c3548b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 042ab2418bc717c18706d84aeca6afe1522c8fc1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338852"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030152"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 Recupera i byte di memoria occupati dal programma.

@@ -1,6 +1,6 @@
 ---
 description: Rappresenta un'interfaccia utente personalizzata per la selezione della porta.
-title: IDebugPortPicker | Microsoft Docs
+title: Interfaccia IDebugPortPicker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,15 @@ ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8390c8a055a9c919bb1a35d8f3288fc810e5329d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7800956063236055962eb295a3101b40f99f22a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072247"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072201"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 Rappresenta un'interfaccia utente personalizzata per la selezione della porta.
@@ -28,10 +29,10 @@ IDebugPortPicker : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata dai fornitori di porte. Un fornitore di porte definisce il selettore di porte esponendolo come CLSID e puntando la `metricPortPickerCLSID` metrica sul CLSID esposto.
+ Questa interfaccia viene implementata dai fornitori di porte. Un fornitore di porte definisce il selettore di porta esponendolo come CLSID e puntando la metrica al `metricPortPickerCLSID` CLSID esposto.
 
 ## <a name="methods"></a>Metodi
- La tabella seguente illustra i metodi di `IDebugPortPicker` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugPortPicker` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -39,8 +40,8 @@ IDebugPortPicker : IUnknown
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Imposta il provider di servizi.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: Msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

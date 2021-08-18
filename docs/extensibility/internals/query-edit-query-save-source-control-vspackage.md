@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ce9aef41af1cb0b11e5098ce2c6767716510eec8632fdf419d1b1f143afa72d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d1945628c68002db457fd0a6751542e3009ded9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337864"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028917"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Query Edit Query Save (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gli editor possono trasmettere gli eventi di query di salvataggio di query (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Lo stub del controllo del codice sorgente implementa il servizio QEQS, in modo che sia il destinatario degli eventi QEQS. Questi eventi vengono quindi delegati al VSPackage del controllo del codice sorgente attualmente attivo. Il pacchetto VSPackage del controllo del codice sorgente attivo <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> implementa e i relativi metodi. I metodi dell'interfaccia vengono in genere chiamati immediatamente prima che un documento venga modificato per la prima volta e immediatamente `IVsQueryEditQuerySave2` prima del salvataggio di un documento.

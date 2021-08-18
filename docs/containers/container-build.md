@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-container-tools
 ms.topic: conceptual
-ms.openlocfilehash: 7e7b80aa144dfb1cbef88c27a3fe09478c91c268ca6b8f9dea6390148b3a2e0d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 60b6381ca90c4313fbd407eed9a709e7d49f1fc1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347935"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052993"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Modalità di compilazione delle app aggiunte a contenitori in Visual Studio
 
-Indipendentemente dal fatto che si esezioni dall'IDE di Visual Studio o si configura una compilazione da riga di comando, è necessario sapere come Visual Studio usa il Dockerfile per compilare i progetti.  Per motivi di prestazioni, Visual Studio segue un processo speciale per le app in contenitori. Comprendere come Visual Studio compila i progetti è particolarmente importante quando si personalizza il processo di compilazione modificando il Dockerfile.
+Sia che si usi l'IDE di Visual Studio o la configurazione di una compilazione da riga di comando, è necessario sapere come Visual Studio usa il Dockerfile per compilare i progetti.  Per motivi di prestazioni, Visual Studio segue un processo speciale per le app in contenitori. Comprendere come Visual Studio compila i progetti è particolarmente importante quando si personalizza il processo di compilazione modificando il Dockerfile.
 
-Quando Visual Studio compila un progetto che non usa contenitori Docker, richiama MSBuild nel computer locale e genera i file di output in una cartella (in genere ) nella cartella della soluzione `bin` locale. Per un progetto in contenitori, tuttavia, il processo di compilazione tiene conto delle istruzioni del Dockerfile per la compilazione dell'app in contenitori. Il Dockerfile che Visual Studio usa è suddiviso in più fasi. Questo processo si basa sulla funzionalità di compilazione *multistage di* Docker.
+Quando Visual Studio compila un progetto che non usa contenitori Docker, richiama MSBuild nel computer locale e genera i file di output in una cartella (in genere ) nella cartella della soluzione `bin` locale. Per un progetto in contenitori, tuttavia, il processo di compilazione prende in considerazione le istruzioni del Dockerfile per la compilazione dell'app in contenitori. Il Dockerfile che Visual Studio usa è suddiviso in più fasi. Questo processo si basa sulla funzionalità di compilazione *multistage di* Docker.
 
 ## <a name="multistage-build"></a>Compilazione multi-fase
 
@@ -82,7 +82,7 @@ Per compilare un'immagine per un singolo progetto contenitore Docker, è possibi
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-L'output sarà simile a quello visualizzato nella finestra **Output** quando si compila la soluzione dall'IDE Visual Studio. Usare sempre , poiché nei casi in cui Visual Studio usa l'ottimizzazione della compilazione multi-fase, i risultati durante la compilazione della configurazione `/p:Configuration=Release` **di debug** potrebbero non essere come previsto. Vedere [Debug.](#debugging)
+L'output sarà simile a quello visualizzato nella finestra **Output** quando si compila la soluzione dall'IDE Visual Studio. Usare sempre , poiché nei casi in cui Visual Studio usa l'ottimizzazione della compilazione multi-fase, i risultati durante la compilazione della configurazione di debug potrebbero `/p:Configuration=Release` non essere come previsto.  Vedere [Debug.](#debugging)
 
 Se si usa un progetto Docker Compose, usare questo comando per compilare le immagini:
 
@@ -92,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>Project riscaldamento
 
-*Project* riscaldamento si riferisce a una serie di passaggi che si verificano quando si seleziona il profilo Docker per un progetto (ovvero quando viene caricato un progetto o viene aggiunto il supporto di Docker) per migliorare le prestazioni delle esecuzioni successive **(F5** o **CTRL** + **F5).** È configurabile in **Strumenti** Opzioni Strumenti  >    >  **Contenitore.** Ecco le attività eseguite in background:
+*Project* riscaldamento si riferisce a una serie di passaggi che si verificano quando si seleziona il profilo Docker per un progetto (ovvero quando viene caricato un progetto o viene aggiunto il supporto di Docker) per migliorare le prestazioni delle esecuzioni successive **(F5** o + **CTRL F5).** È configurabile in **Strumenti** Opzioni Strumenti  >    >  **Contenitore.** Ecco le attività eseguite in background:
 
 - Verificare che Docker Desktop sia installato e in esecuzione.
 - Assicurarsi che Docker Desktop sia impostato sullo stesso sistema operativo del progetto.
@@ -116,7 +116,7 @@ Per ASP.NET app Web di base, potrebbero essere presenti due cartelle aggiuntive 
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>App ASP.NET Core SSL
 
-Gli strumenti contenitore Visual Studio supportano il debug di un'app di base ASP.NET abilitata per SSL con un certificato di sviluppo, come ci si aspetterebbe che funzioni senza contenitori. A tale fine, Visual Studio altri due passaggi per esportare il certificato e renderlo disponibile per il contenitore. Ecco il flusso che Visual Studio gestisce automaticamente durante il debug nel contenitore:
+Gli strumenti contenitore in Visual Studio supportano il debug di un'app di base ASP.NET abilitata per SSL con un certificato di sviluppo, come ci si aspetterebbe che funzioni senza contenitori. A tale fine, Visual Studio altri passaggi per esportare il certificato e renderlo disponibile per il contenitore. Ecco il flusso che Visual Studio gestisce automaticamente durante il debug nel contenitore:
 
 1. Verifica che il certificato di sviluppo locale sia presente e attendibile nel computer host tramite lo `dev-certs` strumento .
 2. Esporta il certificato in %APPDATA%\ASP.NET\Https con una password sicura archiviata nell'archivio dei segreti utente per questa particolare app.
@@ -142,7 +142,7 @@ ASP.NET Core cerca un certificato corrispondente al nome dell'assembly nella car
 
 Se la configurazione supporta compilazioni sia in contenitori che non in contenitori, è necessario usare le variabili di ambiente , perché i percorsi sono specifici dell'ambiente del contenitore.
 
-Per altre informazioni sull'uso di SSL con ASP.NET Core nei contenitori, vedere Hosting di ASP.NET Core [immagini con Docker su HTTPS).](/aspnet/core/security/docker-https)
+Per altre informazioni sull'uso di SSL con ASP.NET Core nei contenitori, vedere [Hosting ASP.NET Core immagini con Docker su HTTPS).](/aspnet/core/security/docker-https)
 
 ## <a name="debugging"></a>Debug
 

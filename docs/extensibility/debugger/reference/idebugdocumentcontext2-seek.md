@@ -1,6 +1,6 @@
 ---
-description: Sposta il contesto del documento in base a un numero specificato di istruzioni o righe.
-title: 'IDebugDocumentContext2:: Seek | Microsoft Docs'
+description: Sposta il contesto del documento di un determinato numero di istruzioni o righe.
+title: Interfaccia IDebugDocumentContext2::Seek | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9fcc430102ec974f2492a8e65894faa45978693
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d18e00071d23e22ed2cbd99f9b88f95c13aee253
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119490"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-Sposta il contesto del documento in base a un numero specificato di istruzioni o righe.
+Sposta il contesto del documento di un determinato numero di istruzioni o righe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +45,10 @@ int Seek(
 
 ## <a name="parameters"></a>Parametri
 `nCount`\
-in Numero di istruzioni o righe da spostare in avanti, a seconda del contesto del documento.
+[in] Numero di istruzioni o righe da spostare, a seconda del contesto del documento.
 
 `ppDocContext`\
-out Restituisce un nuovo oggetto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) con la nuova posizione.
+[out] Restituisce un nuovo [oggetto IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) con la nuova posizione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

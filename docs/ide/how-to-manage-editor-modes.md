@@ -1,6 +1,6 @@
 ---
 title: Modalità schermo intero e Spazio virtuale
-description: Informazioni su come gestire le modalità dell'editor di Visual Studio per visualizzare tutti gli strumenti e le finestre in modo più adatto alle proprie esigenze.
+description: Informazioni su come gestire le Visual Studio dell'editor per visualizzare tutti gli strumenti e le finestre in modo ottimale.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,14 +24,15 @@ ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 112fbd727f28ce1dd3f72626c03e3cc6594da213
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88d615cc82de737fda485a5a179ac14e0a92f607
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935889"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086079"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedura: Gestire le modalità dell'editor
 
@@ -42,9 +43,9 @@ ms.locfileid: "99935889"
 
 ## <a name="enable-full-screen-mode"></a>Abilitare la modalità Schermo intero
 
-È possibile scegliere di nascondere tutte le finestre degli strumenti e visualizzare solo le finestre dei documenti abilitando la modalità **schermo intero** .
+È possibile scegliere di nascondere tutte le finestre degli strumenti e visualizzare solo le finestre dei documenti abilitando **la modalità schermo** intero.
 
-- Premere **ALT** + **MAIUSC** + **invio** per attivare o disattivare la modalità **schermo intero** .
+- Premere **ALT** + **MAIUSC** + **INVIO** per passare o uscire dalla modalità **schermo** intero.
 
      -- o --
 
@@ -56,7 +57,7 @@ Nella modalità **Spazio virtuale** vengono inseriti spazi alla fine di ogni rig
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare i numeri di riga solo in Visual Basic, scegliere il  >  nodo Editor di **testo** di base.
+2. Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare solo i numeri di riga Visual Basic, scegliere il **nodo**  >  **Editor di testo di** base.
 
 3. Selezionare **Generale** e in **Impostazioni** selezionare **Attiva spazio virtuale**.
 
@@ -66,4 +67,4 @@ Nella modalità **Spazio virtuale** vengono inseriti spazi alla fine di ogni rig
 ## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
-- [Tipi di carattere e colori, ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+- [Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0e894841797064cd458eb558ce548957202dafbbdab1ed3bf1d9dfd160dde97
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab5ff2fe9702d56ddc2c4b767ac40f3d63ddbe15
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346700"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052564"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 

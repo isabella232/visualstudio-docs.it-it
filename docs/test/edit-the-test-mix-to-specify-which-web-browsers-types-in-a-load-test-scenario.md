@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 08272fe7906ed98b15c7ec597ef2ac0d64e593f8435b5f5171371d81a0cf1279
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 26098ec0a63d932ed7376ca8c5245c7c39d6ba01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384938"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026746"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali tipi di Web browser includere in uno scenario di test di carico
 
@@ -80,7 +80,7 @@ Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori per
 È anche possibile digitare i valori percentuali direttamente nella colonna **%** anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
-> I dispositivi di scorrimento sono disabilitati quando il totale non è al 100% o quando i valori percentuali immessi nella colonna **%** sono decimali.
+> I dispositivi di scorrimento sono disabilitati quando il totale non viene sommato fino al 100% o quando i valori percentuali immessi nella colonna **%** sono decimali.
 
 Quando si immettono manualmente le percentuali, assicurarsi che la somma di tutti gli elementi sia 100%. Quando si salva una combinazione, se la somma non è pari al 100%, verrà richiesto di accettare i valori percentuali così come sono o di tornare indietro e regolarli. Se si sceglie di accettarle così come sono, le percentuali verranno ripartite proporzionalmente al 100%.  Se ad esempio si dispone di due elementi che sono stati impostati manualmente su 80% e 40%, il primo elemento verrà impostato su 66,67% (80 diviso 120) mentre il secondo su 33,33% (40 diviso 120).
 

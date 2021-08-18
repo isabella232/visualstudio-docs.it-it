@@ -52,7 +52,7 @@ Modificare la frequenza di campionamento in base alla frequenza desiderata. Ques
 
 ![Frequenza di campionamento modificata](../profiling/media/adjustedsamplingratedotnetalloctool.png "Frequenza di campionamento modificata")
 
-Per altre informazioni su come rendere lo strumento più efficiente, vedere [Ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md).
+Per altre informazioni su come rendere lo strumento più efficiente, vedere [Ottimizzazione delle impostazioni del profiler.](../profiling/optimize-profiler-settings.md)
 
 ## <a name="understand-your-data"></a>Informazioni sui dati
 
@@ -62,7 +62,7 @@ Nella visualizzazione grafica precedente il grafico superiore mostra il numero d
 
 ![Grafico filtrato del tempo di allocazione Dotnet](../profiling/media/graphdotnetalloctimefiltered.png "Grafico filtrato del tempo di allocazione Dotnet")
 
-È possibile filtrare i dati tabulari per visualizzare l'attività solo per un intervallo di tempo specificato. È anche possibile ingrandire o ridurre il grafico.
+È possibile filtrare i dati tabulari per visualizzare l'attività solo per un intervallo di tempo specificato. È anche possibile eseguire lo zoom avanti o indietro del grafico.
 
 ### <a name="allocation"></a>Allocation (Allocazione)
 
@@ -137,7 +137,7 @@ La **visualizzazione Raccolta** mostra il numero di oggetti raccolti o conservat
 
 ### <a name="filtering-tools"></a>Strumenti di filtro
 
-Le **visualizzazioni** Allocazioni  , Albero delle chiamate e Funzioni contengono tutte le opzioni **Mostra** Just My Code **e Mostra** codice nativo e una casella di filtro. 
+Le **visualizzazioni** Allocazioni  , Albero delle chiamate e Funzioni contengono tutte le opzioni **Mostra** Just My Code e **Mostra** codice nativo e una casella di filtro. 
 
 - **Mostra Just My Code** comprime sistemi, framework e altro codice non utente in **frame [codice esterno]** in modo che sia possibile concentrarsi solo sul codice. Per altre informazioni, vedere [Eseguire il debug del codice utente con Just My Code](../debugger/just-my-code.md).
 - **Mostra codice nativo mostra** il codice nativo all'interno della destinazione di analisi e può includere codice non utente.

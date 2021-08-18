@@ -1,6 +1,6 @@
 ---
 description: Recupera un elenco di tutte le porte fornite da un fornitore di porte.
-title: 'IDebugPortSupplier2:: EnumPorts | Microsoft Docs'
+title: IDebugPortSupplier2::EnumPorts | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a2fd8436644e2c3dba2cd543284e438e59c194e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a169d59eee15e37f7ed15642a9b8ed04c7ca657f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072182"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072169"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 Recupera un elenco di tutte le porte fornite da un fornitore di porte.
@@ -42,7 +43,7 @@ int EnumPorts(
 
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
-out Restituisce un oggetto [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) contenente un elenco di porte fornite.
+[out] Restituisce un [oggetto IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) contenente un elenco di porte fornite.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

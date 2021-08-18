@@ -1,6 +1,6 @@
 ---
-title: 'IDebugProgramNode2: etachDebugger_V7:D | Microsoft Docs'
-description: Questo metodo è una forma obsoleta obsoleta del metodo di scollegamento utilizzato prima di Visual Studio 2005.
+title: IDebugProgramNode2::D etachDebugger_V7 | Microsoft Docs
+description: Questo metodo è una forma obsoleta e deprecata del metodo detach usato prima Visual Studio 2005.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ helpviewer_keywords:
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16630be49dd884f8bcc82da2fead158eb3a25e5e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 47ad13cc0f3f01665535e6b9d8168af79eb299f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029983"
 ---
 # <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -47,9 +48,9 @@ Un'implementazione deve sempre restituire `E_NOTIMPL` .
 ## <a name="remarks"></a>Commenti
 
 > [!WARNING]
-> A partire da Visual Studio 2005, questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL` .
+> A Visual Studio 2005, questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL` .
 
-Questo metodo viene chiamato quando il debugger si chiude in modo imprevisto. Quando viene chiamato questo metodo, il DE deve riprendere il programma come se l'utente fosse scollegato da esso. Non devono essere inviati altri eventi di debug. Il programma deve trovarsi in uno stato in cui può essere collegato da un'altra istanza del debugger.
+Questo metodo viene chiamato quando il debugger si chiude in modo imprevisto. Quando questo metodo viene chiamato, deretieni il programma come se l'utente si scollegava da esso. Non è necessario inviare altri eventi di debug. Il programma deve essere in uno stato in cui è collegabile da un'altra istanza del debugger.
 
 ## <a name="see-also"></a>Vedi anche
 

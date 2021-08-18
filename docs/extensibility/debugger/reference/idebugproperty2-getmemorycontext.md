@@ -1,6 +1,6 @@
 ---
-description: Ottiene il contesto della memoria del valore della proprietà.
-title: 'IDebugProperty2:: GetMemoryContext | Microsoft Docs'
+description: Ottiene il contesto di memoria del valore della proprietà.
+title: IDebugProperty2::GetMemoryContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35eff7948bc6171a0853f8772b65cf10c0b4cf1b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e66657d2bb82df284240afa65f3378cabd578995
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064969"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071324"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
-Ottiene il contesto della memoria del valore della proprietà.
+Ottiene il contesto di memoria del valore della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +43,10 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Parametri
 `ppMemory`\
-out Restituisce l'oggetto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che rappresenta la memoria associata a questa proprietà.
+[out] Restituisce [l'oggetto IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che rappresenta la memoria associata a questa proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Restituisce `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` se non esiste alcun contesto di memoria da recuperare.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore. Restituisce `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` se non è presente alcun contesto di memoria da recuperare.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

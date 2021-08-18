@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c35d0bda87ded6de95b7bc744c01ea82a97ab3354a2dbf0330dd2abcd18a5097
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2cf7b18d84ae8279c5d15f9404a6d8d500d44d82
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417314"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118905"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Restituisce informazioni che consentono la costruzione di un messaggio di errore leggibile dall'utente.
@@ -62,7 +62,7 @@ int GetErrorMessage(
 [out] Codice di errore di cui si tratta il messaggio.
 
 `pdwType`\
-[out] Gravità dell'errore (usare le costanti MB_XXX per `MessageBox` , ad esempio o `MB_EXCLAMATION` `MB_WARNING` ).
+[out] Gravità dell'errore (usare MB_XXX costanti per `MessageBox` , ad esempio o `MB_EXCLAMATION` `MB_WARNING` .
 
 `pbstrHelpFileName`\
 [out] Percorso di un file della Guida (impostato su un valore Null se non è presente alcun file della Guida).

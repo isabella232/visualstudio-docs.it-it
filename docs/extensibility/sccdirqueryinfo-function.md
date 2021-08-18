@@ -11,14 +11,15 @@ ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a3e65fa03c7fc2b6a8ce83ba2bb39250547aadb
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: eccf7195bfcebb83b59c8b49fd8fc430f23495dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904617"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086378"
 ---
 # <a name="sccdirqueryinfo-function"></a>Funzione SccDirQueryInfo
 Questa funzione esamina un elenco di directory completo per il relativo stato corrente.
@@ -49,7 +50,7 @@ LPLONG  lpStatus
 
  lpStatus
 
-[in, out] Struttura di matrice per il plug-in di controllo del codice sorgente per restituire i flag di stato (per informazioni dettagliate, vedere [Codice di stato della](../extensibility/directory-status-code-enumerator.md) directory).
+[in, out] Struttura di matrice per il plug-in di controllo del codice sorgente per restituire i flag di stato . Per informazioni dettagliate, vedere [Codice di stato della](../extensibility/directory-status-code-enumerator.md) directory.
 
 ## <a name="return-value"></a>Valore restituito
  È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
@@ -69,6 +70,6 @@ LPLONG  lpStatus
 > [!NOTE]
 > Se un plug-in del controllo del codice sorgente sceglie di non implementare uno o più valori di stato, i bit non implementati devono essere impostati su zero.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codice di stato della directory](../extensibility/directory-status-code-enumerator.md)

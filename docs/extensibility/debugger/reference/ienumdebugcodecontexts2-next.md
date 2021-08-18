@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16ae7e40e860964ec520af92c17b6a82be10006e79473a51bf315b63f8f874e9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5940b9a53321841f0eec34c8b0cd14694eaa60d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389384"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103403"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 Restituisce il successivo set di elementi dall'enumerazione.
@@ -56,7 +56,7 @@ int Next(
 [out] Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di elementi richiesto. In `S_FALSE` caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di `S_FALSE` elementi richiesto; in caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

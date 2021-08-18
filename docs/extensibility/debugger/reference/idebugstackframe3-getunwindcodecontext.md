@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a3b88da3473ca6557f2aae36b87f13f2b3fc0be3dc7bfcea6d9ce2645959535
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b63a552db20730318c332968b2f12861e81f4065
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389501"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070909"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Restituisce il contesto del codice che rappresenta una posizione se si è verificata un'operazione di rimozione dello stack.
@@ -49,7 +49,7 @@ int GetUnwindCodeContext(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Anche se questo metodo può restituire un contesto di codice per la posizione dopo la rimozione di uno stack, non significa necessariamente che la rimozione dello stack possa effettivamente verificarsi nella posizione stack frame.
+ Anche se questo metodo può restituire un contesto del codice per la posizione dopo la rimozione di uno stack, non significa necessariamente che la rimozione dello stack possa effettivamente verificarsi nell'stack frame.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

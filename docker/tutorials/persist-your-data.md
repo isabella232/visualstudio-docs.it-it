@@ -1,19 +1,20 @@
 ---
-title: 'Esercitazione su Docker - Parte 4: Rendere persistenti i dati'
+title: 'Esercitazione su Docker - Parte 5: Rendere persistenti i dati'
 description: Informazioni su come rendere persistenti i dati in un database e condividere le directory in un contenitore montando un volume.
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: c9408e099caaef097be3fc4eea26cee2b1889e8e
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 149d67bc0e4004c6207add49a84b81b5c5e80620
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053423"
 ---
 # <a name="persist-your-data"></a> Rendere persistenti i dati
 
@@ -33,11 +34,11 @@ Per visualizzare questa operazione in azione, si inizieranno due contenitori e s
     docker run -d ubuntu bash -c "shuf -i 1-10000 -n 1 -o /data.txt && tail -f /dev/null"
     ```
 
-    Se si è incuriositi del comando, si avvia una shell bash e si richiamano due comandi (perché ha `&&` ). La prima parte seleziona un singolo numero casuale e lo scrive in `/data.txt` . Il secondo comando è semplicemente guardare un file per mantenere il contenitore in esecuzione.
+    Nel caso in cui si sia incuriositi del comando, si avvia una shell bash e si richiamano due comandi (perché ha `&&` ). La prima parte seleziona un singolo numero casuale e lo scrive in `/data.txt` . Il secondo comando è semplicemente guardare un file per mantenere il contenitore in esecuzione.
 
-1. Verificare che sia possibile visualizzare l'output usando `exec` per accedere al contenitore. A tale scopo, aprire l'estensione VS Code e fare clic **sull'opzione Collega** shell. Verrà utilizzata per `exec` aprire una shell nel contenitore all'interno del VS Code terminale.
+1. Verificare che sia possibile visualizzare l'output usando `exec` per accedere al contenitore. A tale scopo, aprire l'estensione VS Code e fare clic **sull'opzione Collega** shell. Verrà utilizzata per `exec` aprire una shell nel contenitore all'interno del terminale VS Code terminale.
 
-    ![VS Code l'interfaccia della riga di comando nel contenitore ubuntu](media/attach_shell.png)
+    ![VS Code'interfaccia della riga di comando nel contenitore ubuntu](media/attach_shell.png)
 
     Verrà visualizzato un terminale che esegue una shell nel contenitore Ubuntu. Eseguire il comando seguente per visualizzare il contenuto del `/data.txt` file. Chiudere di nuovo questo terminale in seguito.
 
@@ -65,7 +66,7 @@ Per visualizzare questa operazione in azione, si inizieranno due contenitori e s
 
 ## <a name="container-volumes"></a>Volumi di contenitori
 
-Con l'esperimento precedente si è visto che ogni contenitore inizia dalla definizione dell'immagine a ogni avvio. Anche se i contenitori possono creare, aggiornare ed eliminare file, tali modifiche andranno perse quando il contenitore viene rimosso e tutte le modifiche vengono isolate in tale contenitore. Con i volumi è possibile modificare tutto questo.
+Con l'esperimento precedente, si è visto che ogni contenitore inizia dalla definizione dell'immagine a ogni avvio. Anche se i contenitori possono creare, aggiornare ed eliminare file, tali modifiche andranno perse quando il contenitore viene rimosso e tutte le modifiche vengono isolate in tale contenitore. Con i volumi è possibile modificare tutto questo.
 
 [I](https://docs.docker.com/storage/volumes/) volumi consentono di connettere percorsi di file system specifici del contenitore al computer host. Se viene montata una directory nel contenitore, le modifiche apportate a tale directory vengono anche viste nel computer host. Se si monta la stessa directory tra i riavvii del contenitore, vengono visualizzati gli stessi file.
 
@@ -75,7 +76,7 @@ Esistono due tipi principali di volumi. alla fine si useranno entrambi, ma si in
 
 Per impostazione predefinita, l'app todo archivia i dati in un [database SQLite](https://www.sqlite.org/index.html) in `/etc/todos/todo.db` . Se non si ha familiarità con SQLite, non c'è problema. Si tratta semplicemente di un database relazionale in cui tutti i dati vengono archiviati in un singolo file. Anche se questo non è il migliore per le applicazioni su larga scala, funziona per le demo di piccole dimensioni. In un secondo momento si parlerà del passaggio a un motore di database effettivo.
 
-Se il database è un singolo file, se è possibile rendere persistente il file nell'host e renderlo disponibile per il contenitore successivo, dovrebbe essere in grado di riprendere il punto in cui è rimasto l'ultimo. Creando un volume e collegando (spesso denominato "montaggio") alla directory in cui sono archiviati i dati, è possibile rendere persistenti i dati. Quando il contenitore scrive nel file, viene salvato in modo `todo.db` permanente nell'host nel volume.
+Se il database è un singolo file, se è possibile rendere persistente il file nell'host e renderlo disponibile per il contenitore successivo, dovrebbe essere in grado di riprendere l'ultimo file rimasto. Creando un volume e collegando (spesso denominato "montaggio") alla directory in cui sono archiviati i dati, è possibile rendere persistenti i dati. Quando il contenitore scrive nel file, viene salvato in modo `todo.db` permanente nell'host nel volume.
 
 Come accennato, si userà un **volume denominato**. Un volume denominato può essere semplicemente un bucket di dati. Docker mantiene la posizione fisica sul disco ed è sufficiente ricordare il nome del volume. Ogni volta che si usa il volume, Docker si assicura che siano forniti i dati corretti.
 
@@ -108,7 +109,7 @@ Come accennato, si userà un **volume denominato**. Un volume denominato può es
 Evviva! A questo punto si è appreso come rendere persistenti i dati.
 
 > [!TIP]
-> Sebbene i volumi denominati e i montamenti di binding (di cui si parlerà in un minuto) siano i due tipi principali di volumi supportati da un'installazione predefinita del motore Docker, sono disponibili molti plug-in dei driver di volume per supportare NFS, SFTP, NetApp e altro ancora. Questo sarà particolarmente importante quando si avvia l'esecuzione di contenitori in più host in un ambiente cluster con Swarm, Kubernetes e così via.
+> Sebbene i volumi denominati e i montamenti di binding (di cui si parlerà in un minuto) siano i due tipi principali di volumi supportati da un'installazione predefinita del motore Docker, sono disponibili molti plug-in di driver di volume per supportare NFS, SFTP, NetApp e altro ancora. Questo sarà particolarmente importante quando si avvia l'esecuzione di contenitori in più host in un ambiente cluster con Swarm, Kubernetes e così via.
 
 ## <a name="dive-into-your-volume"></a>Approfondimento del volume
 

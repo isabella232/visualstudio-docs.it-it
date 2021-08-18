@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Acquisizione di informazioni grafiche | Microsoft Docs'
-description: Vedere come usare Visual Studio Diagnostica della grafica acquisire manualmente informazioni grafiche da un'app Direct3D.
+description: Informazioni su come usare Visual Studio Diagnostica della grafica acquisire manualmente informazioni grafiche da un'app Direct3D.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -54,12 +54,12 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
 
    Con lo stato attivo nell'app premere **STAMP**.
 
-  Ogni volta che si acquisiscono informazioni su un frame, Diagnostica grafica registra gli eventi di Direct3D e lo stato associato e aggiunge questi dati a un log di grafica. Per ogni sessione di Diagnostica grafica viene creato un nuovo log di grafica. Per informazioni sui log di grafica, vedere [Panoramica](overview-of-visual-studio-graphics-diagnostics.md)di .
+  Ogni volta che si acquisiscono informazioni su un frame, Diagnostica grafica registra gli eventi di Direct3D e lo stato associato e aggiunge questi dati a un log di grafica. Per ogni sessione di Diagnostica grafica viene creato un nuovo log di grafica. Per informazioni sui log di grafica, vedere [Panoramica.](overview-of-visual-studio-graphics-diagnostics.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche manualmente. Come passaggio successivo, prendere in considerare questa opzione:
 
-- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Vedere [Panoramica di](overview-of-visual-studio-graphics-diagnostics.md).
+- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Vedere [Panoramica.](overview-of-visual-studio-graphics-diagnostics.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Acquisizione di informazioni grafiche](capturing-graphics-information.md)

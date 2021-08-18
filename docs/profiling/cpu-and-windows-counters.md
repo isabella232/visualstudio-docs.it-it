@@ -1,6 +1,6 @@
 ---
 title: Contatori CPU e Windows | Microsoft Docs
-description: I contatori CPU (hardware) Windows (software) forniscono dati sulle prestazioni. Informazioni su come visualizzarli e come raccogliere dati da essi.
+description: I contatori cpu (hardware) e Windows (software) forniscono dati sulle prestazioni. Informazioni su come visualizzarli e come raccogliere dati da essi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 675061b7a094364122535d429a6835b43a666924011c2b6fea4203514a2222fa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ce6ea2adca59be61c225be4388204c3302c4b7d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355614"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039254"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 
@@ -67,7 +67,7 @@ Gli eventi portabili contengono i seguenti eventi:
 |----------------|-----------------------|
 |Mancati riscontri ITLB|Indica il numero di mancati riscontri nel buffer ITLB (Instruction Translation Lookaside Buffer).|
 
-**Eventi di diramazione**
+**Eventi di ramo**
 
 |Nome evento|Descrizione evento|
 |----------------|-----------------------|
@@ -91,7 +91,7 @@ Per elencare i contatori disponibili in un computer nell'IDE di Visual Studio, �
 
 #### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Per visualizzare un elenco di tutti i contatori CPU supportati sulla piattaforma corrente
 
-1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi **scegliere Proprietà.**
+1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi scegliere **Proprietà**.
 
 2. Eseguire una delle operazioni seguenti:
 
@@ -103,11 +103,11 @@ Per elencare i contatori disponibili in un computer nell'IDE di Visual Studio, �
 
    - Selezionare **Contatori CPU** e quindi **Raccogli contatori CPU**. I contatori CPU sono elencati in **Contatori disponibili**.
 
-      **Nota** Fare **clic su** Annulla per tornare alla configurazione precedente dell'insieme di contatori.
+      **Nota** Fare **clic su** Annulla per tornare alla configurazione precedente della raccolta di contatori.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Per visualizzare un elenco di tutti i contatori Windows supportati sulla piattaforma corrente
 
-1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi **scegliere Proprietà.**
+1. In Esplora prestazioni fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi scegliere **Proprietà**.
 
 2. Fare clic su **Contatori Windows**.
 
@@ -129,11 +129,11 @@ Con lo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md) è po
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     dove *\<Visual Studio Performance Tools Directory>* è il percorso della directory degli strumenti per le prestazioni dell'Visual Studio installazione. Per ottenere il percorso degli strumenti per le prestazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+     dove *\<Visual Studio Performance Tools Directory>* è il percorso della directory Strumenti di prestazioni dell'Visual Studio installazione. Per ottenere il percorso degli strumenti per le prestazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Cenni preliminari](../profiling/overviews-performance-tools.md)
 - [Procedura: Scegliere gli eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
-- [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)
+- [Procedura: Raccogliere i dati dei contatori cpu](../profiling/how-to-collect-cpu-counter-data.md)
 - [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)

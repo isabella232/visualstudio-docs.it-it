@@ -1,6 +1,6 @@
 ---
 title: Events (VSPerfCmd) | Microsoft Docs
-description: Controllare Event Tracing for Windows registrazione (ETW) utilizzando l'opzione eventi nello strumento da riga di comando VSPerfCmd.exe. Esaminare i parametri della sintassi.
+description: Controllare la registrazione di Event Tracing for Windows (ETW) usando l'opzione Events nello VSPerfCmd.exe della riga di comando. Esaminare i parametri della sintassi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,18 +8,19 @@ ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ec92cae275d9f73f24f983905bc0013950e9d37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 268efb7e76ea4b2357b0ef1047ee2076f340dc29
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899561"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038994"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
-L'opzione **eventi** *VSPerfCmd.exe* controlla la registrazione di Event Tracing for Windows (ETW). I dati ETW vengono salvati in un file ETL separato dal file di dati del profiler. I dati possono essere visualizzati in un report usando il comando di [VSPerfReport](../profiling/vsperfreport.md) /summary: ETW.
+LVSPerfCmd.exe **eventi di registrazione** controlla la registrazione ETW (Event Tracing for Windows). I dati ETW vengono salvati in un file ETL separato dal file di dati del profiler. I dati possono essere visualizzati in un report usando il comando di [VSPerfReport](../profiling/vsperfreport.md) /summary: ETW.
 
  L'opzione **Events** può essere chiamata in qualsiasi momento prima di chiamare il comando **Shutdown** di VSPerfCmd per arrestare la profilatura.
 

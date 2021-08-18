@@ -1,5 +1,5 @@
 ---
-description: Descrive le informazioni sul punto di interruzione associato per un punto di interruzione del codice o un punto di interruzione dei dati.
+description: Descrive le informazioni sui punti di interruzione associati per un punto di interruzione del codice o un punto di interruzione dati.
 title: BP_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c611b37003df7d8ccab787a14402e64ee2da9ad3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a47f081b7fcd2f1d61c23654446566196cfccd1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054673"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120283"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
-Descrive le informazioni sul punto di interruzione associato per un punto di interruzione del codice o un punto di interruzione dei dati.
+Descrive le informazioni sui punti di interruzione associati per un punto di interruzione del codice o un punto di interruzione dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +49,7 @@ public struct BP_RESOLUTION_INFO {
 
 ## <a name="members"></a>Members
 `dwFields`\
-Raccolta di flag dalle enumerazioni [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) che specificano i campi da compilare.
+Raccolta di flag delle [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) che specificano i campi compilati.
 
 `bpResLocation`\
 Struttura [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) che specifica la posizione del punto di interruzione nel codice o nei dati.
@@ -60,12 +61,12 @@ Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram
 Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread in cui è in esecuzione l'applicazione che contiene l'errore del punto di interruzione.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene restituita da [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).
+Questa struttura viene restituita [da GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

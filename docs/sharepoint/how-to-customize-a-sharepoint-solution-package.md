@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: ca3341b252f94a4415904744840f24cb05b56b56
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 909bb9952ce788418a5372955e1df56ec719ce633685728fc7951188dac6ba87
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026953"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121352929"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedura: Personalizzare un pacchetto SharePoint soluzione
   È possibile usare Progettazione pacchetti per creare e personalizzare un pacchetto (*.wsp*). Ad esempio, è possibile aggiungere SharePoint di progetto e funzionalità, specificare se il server Web viene reimpostato quando viene distribuita la soluzione e impostare il tipo di server di distribuzione.

@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: f0b7dd6f8e228e0ff16d10976c64ecfacc85a73a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1d599f910cc8fc63fe0069ca6447314d2ad9197bc751cf02c08805689717bcf3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032927"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440916"
 ---
 # <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
 

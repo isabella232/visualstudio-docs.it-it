@@ -1,5 +1,5 @@
 ---
-description: Specifica i flag per il disassembly.
+description: Specifica i flag per disassembly.
 title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28335176a70213f61bfbb77bf6f91cc6155902e7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d4640ee39a936318b5e200fc46135e1fc271c46b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096200"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119997"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
-Specifica i flag per il disassembly.
+Specifica i flag per disassembly.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,32 +54,32 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>Campi
 `DF_DOCUMENTCHANGE`\
-Indica che l'istruzione si trova in un documento diverso rispetto a quello precedente.
+Indica che questa istruzione si trova in un documento diverso da quello precedente.
 
 `DF_DISABLED`\
-Indica che l'istruzione non verrà eseguita.
+Indica che questa istruzione non verrà eseguita.
 
 `DF_INSTRUCTION_ACTIVE`\
-Indica che questa istruzione è una delle istruzioni seguenti da eseguire (possono essere presenti più di uno).
+Indica che questa istruzione è una delle istruzioni seguenti da eseguire (potrebbero essere presenti più istruzioni).
 
 `DF_DATA`\
-Indica che l'istruzione è effettivamente dati (non codice).
+Indica che questa istruzione è realmente dati (non codice).
 
 `DF_HASSOURCE`\
-Indica che l'istruzione contiene l'origine. Alcune istruzioni, ad esempio la profilatura o il Garbage Collection codice, non hanno origine corrispondente.
+Indica che questa istruzione ha origine. Alcune istruzioni, ad esempio la profilatura o il codice di Garbage Collection, non hanno un'origine corrispondente.
 
 `DF_DOCUMENT_CHECKSUM`\
-Indica che `bstrDocumentUrl` il campo contiene dati di checksum dopo l'URL del documento. Vedere la sezione Osservazioni per la struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) per la modalità di archiviazione dei dati di checksum.
+Indica che il campo `bstrDocumentUrl` contiene dati di checksum dopo l'URL del documento. Vedere la sezione Osservazioni per la struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) per informazioni sulla modalità di archiviazione dei dati di checksum.
 
 ## <a name="remarks"></a>Commenti
-Utilizzato come `dwFlags` membro della struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
+Utilizzato come `dwFlags` membro della struttura [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
-Questi flag possono essere combinati con un bit per bit `OR` .
+Questi flag possono essere combinati con un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

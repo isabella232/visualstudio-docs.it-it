@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bcaf1e13a9b6f26d3c838c8cbd739d91c99d62
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1651cb8004603311cab6ea1f429b2917c1cf50e0a8f432f888f901b1a1b467a6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054990"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443776"
 ---
 # <a name="copy-task"></a>Copy (attività)
 

@@ -1,6 +1,6 @@
 ---
 title: Scheda corrente | Microsoft Docs
-description: Selezionare la scheda corrente della visualizzazione thread per visualizzare uno stack di chiamate per un segmento di thread della CPU o un segmento di blocco. Sono inoltre disponibili informazioni sui segmenti DirectX.
+description: Selezionare la scheda Corrente della visualizzazione Thread per visualizzare uno stack di chiamate per un segmento di thread della CPU o un segmento di blocco. Sono disponibili anche informazioni sui segmenti DirectX.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4125a40ea0be18cceb99e7f3a8118a10d26a5437
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05055cfc315c2b86693ec76e23a448a12679335d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955866"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039072"
 ---
 # <a name="current-tab"></a>Scheda Corrente
 Facendo clic sulla scheda **Corrente**, è possibile visualizzare uno stack di chiamate (se disponibile) che è più vicino al punto di selezione corrente nella sequenza temporale se è selezionato un segmento di thread della CPU.  In questo caso, il punto di selezione è rappresentato da una freccia nera (o punto di inserimento) sopra la sequenza temporale. Quando viene selezionato un segmento di blocco, il punto di inserimento non viene visualizzato perché non è in esecuzione. Tuttavia, il segmento è ancora evidenziato e viene visualizzato uno stack di chiamate.

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e8e886c2209ff08fe9fec5e8a06fe40f17d887552ff6f1ac8bf249b424beb59
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5c2388bc139d306ed724c750208ef65b5a835929
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360027"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087171"
 ---
 # <a name="extend-solutions"></a>Estendere le soluzioni
 Una soluzione è un raggruppamento di uno o più progetti che lavorano insieme per creare un'applicazione.
@@ -26,4 +26,4 @@ Una soluzione è un raggruppamento di uno o più progetti che lavorano insieme p
 
 1. [Estendere il Esplora soluzioni filtro spiega](../extensibility/extending-the-solution-explorer-filter.md) come filtrare gli elementi Esplora soluzioni visualizzati.
 
-2. [Gestire il caricamento dei progetti in una soluzione](../extensibility/managing-project-loading-in-a-solution.md) illustra come gestire il caricamento dei progetti per migliorare le prestazioni quando un utente carica una soluzione.
+2. [Gestire il caricamento di progetti in una soluzione](../extensibility/managing-project-loading-in-a-solution.md) spiega come gestire il caricamento dei progetti per migliorare le prestazioni quando un utente carica una soluzione.

@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b53eafbe19fc634e35a7e1c1376aa7247e6d9c1c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 01d9332486aa3a8d02de14d79474c395733f39ba0c7968da2265366574327a1c
+ms.sourcegitcommit: 29a893fb8639ee1d64922e99bf424e10ecce30d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040801"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121465109"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Suggerire una funzionalità per Visual Studio
 
@@ -72,15 +72,15 @@ Un suggerimento di funzionalità contrassegnato come **Servono altre info** indi
 
 ![Stato Chiuso - Informazioni insufficienti per i suggerimenti in Developer Community](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Chiuso - Informazioni non sufficienti** indica che dopo diversi tentativi non sono state ricevute informazioni sufficienti per comprendere completamente il suggerimento della funzionalità. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
+**Chiuso: le informazioni non** sufficienti indicano che dopo diversi tentativi non sono state ricevute informazioni sufficienti per comprendere completamente il suggerimento della funzionalità. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
 
 Se vengono trovate le informazioni aggiuntive necessarie, è possibile richiedere di riattivare il ticket una volta ottenute.
 
 - - -
 
-![Chiuso - Stato Fuori ambito per i suggerimenti in Developer Community](../ide/media/SuggestStates/closed-out-of-scope.png)
+![Chiuso - Stato fuori ambito per i suggerimenti in Developer Community](../ide/media/SuggestStates/closed-out-of-scope.png)
 
-**Chiuso - Fuori ambito** Se un suggerimento non corrisponde alla direzione complessiva del prodotto, verrà chiuso come *Fuori ambito.* Ad esempio, potrebbero esserci investimenti simili in altri membri della Visual Studio famiglia di prodotti. In caso contrario, la funzionalità suggerita potrebbe essere rilevante solo per alcune persone, rendendo un'estensione più adatta a fornirla.
+**Chiuso - Esterno all'ambito** Se un suggerimento non corrisponde alla direzione complessiva del prodotto, verrà chiuso come *Fuori ambito.* Ad esempio, si potrebbero avere investimenti simili in altri membri della Visual Studio di prodotti. In caso contrario, la funzionalità suggerita potrebbe essere pertinente solo per poche persone, rendendo un'estensione più adatta per fornirla.
 
 
 - - -

@@ -1,5 +1,5 @@
 ---
-description: Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (Relative Virtual Address).
+description: Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale relativo.
 title: IDiaEnumSymbolsByAddr::symbolByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: de42d5c3ee1c4f91d0d2099ce3525f8ab3133e6af1e79fad5f537dc6ba492ea0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f223845e1d83a1f12c58973fa6ccb644b9902b8a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134417"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (Relative Virtual Address).
+Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale relativo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT symbolByRVA (
 [out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo trovato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non è stato possibile trovare il simbolo. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il simbolo non è stato trovato. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

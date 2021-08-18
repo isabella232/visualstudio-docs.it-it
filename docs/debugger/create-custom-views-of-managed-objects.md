@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0a45b905e085a703056fe88f7513a9ed299324de699a9695eaffab97e7dc586e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 327e8d74120555a4a121775f79b8ac5afe923f77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345842"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052434"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Creare visualizzazioni personalizzate di oggetti gestiti (C#, Visual Basic, F#, C++/CLI)
 È possibile personalizzare la modalità di visualizzazione dei tipi di dati nelle finestre delle variabili del debugger in Visual Studio.

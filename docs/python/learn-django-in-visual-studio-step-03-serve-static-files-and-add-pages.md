@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f95f2fab7ea2217a97b3c82ae2bdb3d8b22d0211a45ce0ee637703f4652c7e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 286f32477e67013b9766eba18b7ae0325e905d84
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121269678"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038513"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Passaggio 3: Gestire file statici, aggiungere pagine e usare l'ereditarietà dei modelli con l'app Django
 
@@ -66,7 +66,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **HelloDjangoApp** nel progetto Visual Studio, scegliere Aggiungi nuova cartella e assegnare alla cartella il nome   >   `static` .
 
-1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il **modello Foglio** di stile, assegnare al file il nome e `site.css` scegliere **OK**. Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
+1. Fare clic con il pulsante destro del mouse sulla cartella **static** e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo visualizzata selezionare il modello **Foglio di** stile, assegnare al file il nome e `site.css` selezionare **OK.** Il file **site.css** viene visualizzato nel progetto e aperto nell'editor. La struttura di cartelle dovrebbe essere simile a quella nella figura seguente:
 
     ![Struttura di file statici come visualizzato in Esplora soluzioni](media/django/step03-static-file-structure.png)
 
@@ -177,7 +177,7 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloDjangoApp", 
     <div><a href="about">About</a></div>
     ```
 
-1. Salvare tutti i file usando il **comando di** menu Salva tutto oppure premere  >   **CTRL** + **MAIUSC** + **S.** Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
+1. Salvare tutti i file usando il **comando di** menu Salva tutto oppure premere  >   SEMPLICEMENTE **CTRL** + **MAIUSC** + **S.** Tecnicamente, questo passaggio non è necessario in quanto eseguendo il progetto in Visual Studio i file vengono salvati automaticamente. Ciononostante, si tratta di un comando utile da conoscere.
 
 1. Eseguire il progetto per osservare i risultati e controllare lo spostamento tra le pagine. Al termine, arrestare il server.
 

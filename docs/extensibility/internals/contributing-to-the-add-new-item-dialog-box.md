@@ -1,6 +1,6 @@
 ---
 title: Aggiunta di contributi alla finestra di dialogo Aggiungi nuovo elemento | Microsoft Docs
-description: Informazioni su come contribuire alla finestra di dialogo Aggiungi nuovo elemento in Visual Studio registrando i modelli Aggiungi elemento nella sottochiave del Registro di sistema Projects.
+description: Informazioni su come contribuire alla finestra di dialogo Aggiungi nuovo elemento Visual Studio registrando i modelli Aggiungi elemento nella sottochiave del Registro di sistema Projects.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3f986f47d81c0425568fbd9fab1217b257687fe7b70037a50e405d3861c0b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a99ccd5375f91baf0f91fceaadd803ee30d5b985
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305815"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086846"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuire alla finestra di dialogo Aggiungi nuovo elemento
 Un sottotipo di progetto può fornire  una nuova directory completa  di elementi per la finestra di dialogo Aggiungi nuovo elemento registrando i modelli Aggiungi elemento nella sottochiave **del** Registro di sistema Projects.

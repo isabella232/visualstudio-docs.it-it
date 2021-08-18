@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a7855d943463320b7ace6d7fb43542a4be81be5bf992234e16df477f6efb15e4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 37a06c119bc0f28ffd1a5efe46842f25155c237c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333418"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039137"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creare report di profilatura di base tramite la riga di comando
 Questo articolo descrive i comandi VSPerfReport di base che generano report di valori separati da virgole (file con estensione *csv*) da un file di dati di profilatura con estensione *vsp* o *vsps*. Per la descrizione di tutte le opzioni del report, vedere [VSPerfReport](../profiling/vsperfreport.md).

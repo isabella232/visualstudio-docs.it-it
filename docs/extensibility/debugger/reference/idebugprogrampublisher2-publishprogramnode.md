@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f68e6a3b874617608d0155294fa3928ac51d0b2585fe39bdc25edee67cfceded
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4b004a6537eed565d1a607f99a35ea77267fa7ce
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449131"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118658"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Rende un nodo di programma disponibile per l'uso da parte dei motori di debug (DE) e della gestione del debug di sessione (SDM).

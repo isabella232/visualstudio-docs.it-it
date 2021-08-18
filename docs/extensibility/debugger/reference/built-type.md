@@ -1,5 +1,5 @@
 ---
-description: La BUILT_TYPE specifica informazioni su un tipo di campo derivato dai metadati.
+description: La BUILT_TYPE struttura specifica informazioni su un tipo di campo derivato dai metadati.
 title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81b18a6e238b71a7c91445b551beb34dd081e53c24b5301cd58c495a04e1e733
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3179ea403cd542a54d4b4a5e0a10776daa87b76f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120205"
 ---
 # <a name="built_type"></a>BUILT_TYPE
-Questa struttura specifica le informazioni su un tipo di campo derivato dai metadati.
+Questa struttura specifica informazioni su un tipo di campo tratto dai metadati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ GUID del modulo che contiene questo campo.
 Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che identifica il campo sottostante associato a questo campo compilato.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene visualizzata come parte dell'unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `TYPE_INFO` `TYPE_KIND_BUILT` [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) tabella).
+Questa struttura viene visualizzata come parte dell'unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il campo della struttura è impostato su (un valore `dwKind` `TYPE_INFO` `TYPE_KIND_BUILT` dell'enumerazione dwTYPE_KIND). [](../../../extensibility/debugger/reference/dwtype-kind.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: sh.h

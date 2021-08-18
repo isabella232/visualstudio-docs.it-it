@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner della macchina a stati Progettazione flussi di lavoro
-description: Informazioni sugli ActivityDesigner forniti dal sistema che è possibile usare per creare e gestire i flussi di lavoro della macchina a Stati.
+title: Progettazione flussi di lavoro - ActivityDesigner Macchina a stati
+description: Informazioni sugli ActivityDesigner forniti dal sistema che è possibile usare per creare e gestire i flussi di lavoro delle macchine a stati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +8,19 @@ ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d304e2579be2ea75cd8ff30c263c0ebdd517a4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50cd69ea0b46d54095faebf2981de1f1ba0299f2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943594"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135143"
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
 
-Progettazione flussi di lavoro include diversi ActivityDesigner che è possibile usare per la costruzione dei flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e vengono fornite indicazioni sulle relative modalità di utilizzo.
+Progettazione flussi di lavoro include una serie di ActivityDesigner che è possibile usare per costruire i flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e vengono fornite indicazioni sulle relative modalità di utilizzo.
 
 ## <a name="reference"></a>Riferimento
  <xref:System.Activities.Statements.StateMachine>

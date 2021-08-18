@@ -24,16 +24,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b72d97d1300a0745270976afcc0a04e163bac406
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8ea6e78f6913eee9872c99a499834ea4c64ccca27dfbc5909090335aa0489dea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090900"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436056"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
 
-Per impostare Visual Studio opzioni del debugger, selezionare Opzioni strumenti e in Debug selezionare o deselezionare le  >  caselle accanto **alle opzioni**  Generale. È possibile ripristinare tutte le impostazioni predefinite **con** Strumenti  >  **Importa/Esporta Impostazioni** Reimposta tutte le  >  **impostazioni**. Per reimpostare un subset di impostazioni, salvare le impostazioni con l'Importazione/Esportazione guidata **Impostazioni** prima di apportare le modifiche da testare, quindi importare le impostazioni salvate in un secondo momento.
+Per impostare Visual Studio del debugger, selezionare Opzioni strumenti e in Debug selezionare o deselezionare le  >  caselle accanto alle **opzioni** Generale.  È possibile ripristinare tutte le impostazioni predefinite **con** Strumenti  >  **Importa/Esporta Impostazioni** Reimposta tutte le  >  **impostazioni**. Per reimpostare un subset di impostazioni, salvare le impostazioni con l'Importazione/Esportazione guidata **Impostazioni** prima di apportare le modifiche da testare, quindi importare le impostazioni salvate in un secondo momento.
 
 È possibile impostare le opzioni **generali** seguenti:
 
@@ -126,10 +126,10 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 > La scelta della modalità di compatibilità gestita disabilita alcune funzionalità implementate solo nel motore di debug predefinito. Il motore di debug legacy è stato sostituito Visual Studio 2012.
 
 ::: moniker range="vs-2017"
-Usare gli analizzatori di espressioni **C#** e VB legacy: il debugger userà gli analizzatori di espressioni Visual Studio 2013 C# o Visual Basic anziché gli analizzatori di espressioni basati su Roslyn di Visual Studio 2015.
+Usare gli analizzatori di espressioni **C#** e VB legacy: il debugger userà gli analizzatori di espressioni Visual Studio 2013 C# o Visual Basic anziché gli analizzatori di espressioni basati su Visual Studio 2015 Roslyn.
 ::: moniker-end
 
-Avvisa quando si usano visualizzatori del debugger personalizzati per processi potenzialmente non sicuri **(solo gestito):** Visual Studio avvisa l'utente quando si usa un visualizzatore del debugger personalizzato che esegue codice nel processo di cui è stato eseguito il debug, perché potrebbe essere in esecuzione codice non sicuro.
+Avvisa quando si usano visualizzatori del debugger personalizzati per processi potenzialmente non sicuri **(solo gestito):** Visual Studio avvisa quando si usa un visualizzatore del debugger personalizzato che esegue codice nel processo di cui è stato eseguito il debug, perché potrebbe essere in esecuzione codice non sicuro.
 
 **Abilita Windows allocatore heap di debug (solo nativo):** consente all'heap di debug di Windows di migliorare la diagnostica dell'heap. L'abilitazione di questa opzione influirà sulle prestazioni di debug.
 
@@ -192,7 +192,7 @@ Se si usa una versione precedente di Visual Studio, potrebbero essere presenti a
 
 **Avvisa se il debug degli script è disabilitato all'avvio:** visualizza una finestra di dialogo di avviso quando il debugger viene avviato con il debug degli script disabilitato.
 
-**Usa modalità di** compatibilità nativa: quando questa opzione è selezionata, il debugger usa il debugger nativo di Visual Studio 2010 anziché il nuovo debugger nativo.
+**Usa modalità di** compatibilità nativa: quando questa opzione è selezionata, il debugger usa il debugger nativo Visual Studio 2010 anziché il nuovo debugger nativo.
 
 - Usare questa opzione quando si esegue il debug del codice C++ .NET, perché il nuovo motore di debug non supporta la valutazione delle espressioni C++ .NET. Tuttavia, l'abilitazione della modalità di compatibilità nativa disabilita molte funzionalità che dipendono dall'implementazione corrente del debugger per il funzionamento. Ad esempio, il motore legacy non dispone di molti visualizzatori per i tipi predefiniti come `std::string` nei Visual Studio 2015.   Usare Visual Studio 2013 progetti per un'esperienza di debug ottimale in questi casi.
 
