@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb1562bec3b3699d8c9b208245aa27d7c8c7558050ca307c8b0211455038a53a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3367bf80c012fb0e29c099a5f10e0430180c219f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448572"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034513"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 Enumera i valori validi dei flag di eliminazione programma.

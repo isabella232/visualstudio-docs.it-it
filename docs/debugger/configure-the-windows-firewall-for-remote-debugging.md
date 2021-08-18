@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4a3ea65c9db713bcbdb9a9d9b1027767614b21
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9f0be1f06d15c3309d8e67cab50a444228d99241fcde9c8648cc24431d27260f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031406"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121345868"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurare Windows firewall per il debug remoto
 
@@ -99,42 +99,42 @@ Se i criteri di dominio richiedono che la comunicazione di rete sia eseguita tra
 |500, 4500|In uscita|UDP|Necessario se i criteri del dominio richiedono che la comunicazione di rete avvenga tramite IPSec.|
 |80|In uscita|TCP|Richiesto per il debug di server Web.|
 
-Per consentire app specifiche tramite il firewall Windows remoto, vedere Configurare il [debug remoto tramite Windows Firewall](#configure-remote-debugging-through-windows-firewall).
+Per consentire app specifiche tramite il firewall Windows, vedere [Configurare il debug remoto tramite Windows firewall.](#configure-remote-debugging-through-windows-firewall)
 
 ## <a name="configure-remote-debugging-through-windows-firewall"></a>Configurare il debug remoto tramite Windows firewall
 
 È possibile installare gli strumenti di debug remoto nel computer remoto o eseguirli da una cartella condivisa. In entrambi i casi, il firewall del computer remoto deve essere configurato correttamente.
 
-In un computer remoto, gli strumenti di debug remoto sono in:
+In un computer remoto gli strumenti di debug remoto sono disponibili in:
 
-*\<Visual Studio installation directory\>\\Debugger remoto \\ dell'IDE Common7 \\\\\<x86*, *x64*, or *Appx*\>
+*\<Visual Studio installation directory\>\\Debugger remoto \\ DELL'IDE Common7 \\\\\<x86*, *x64*, or *Appx*\>
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Consentire e configurare il debugger remoto tramite Windows firewall
 
-1. Nel Windows **Start** cercare e aprire Windows **firewall** o **Windows Defender Firewall**.
+1. Windows Nel menu **Start cercare** e aprire Windows **Firewall** o **Windows Defender Firewall.**
 
-1. Selezionare **Consenti un'app tramite Windows firewall.**
+1. Selezionare **Allow an app through Windows Firewall (Consenti un'app Windows Firewall).**
 
-1. Se **Debugger remoto o** **Visual Studio Remote Debugger** non viene visualizzato **in** App e funzionalità consentite, selezionare Modifica impostazioni **e** quindi selezionare **Consenti un'altra app.**
+1. Se **debugger remoto** o **Visual Studio Remote Debugger** non viene visualizzato **in** App e funzionalità consentite, selezionare Cambia impostazioni **e** quindi selezionare **Consenti un'altra app.**
 
-1. Se l'app debugger remoto non è ancora elencata nella finestra di dialogo Aggiungi **un'app,** selezionare Sfoglia e passare a * Debugger remoto IDE Common7 , a seconda dell'architettura appropriata per \<Visual Studio installation directory\> \\ \\ \\ \\ \<x86*, *x64*, or *Appx*\> l'app. Selezionare *msvsmon.exe* e quindi **aggiungi**.
+1. Se l'app del debugger remoto non è ancora elencata nella finestra di dialogo Aggiungi **un'app,** selezionare Sfoglia e passare a * Debugger remoto IDE Common7, a seconda dell'architettura appropriata per \<Visual Studio installation directory\> \\ \\ \\ \\ \<x86*, *x64*, or *Appx*\> l'app. Selezionare *msvsmon.exe* e quindi **aggiungi**.
 
-1. **Nell'elenco** App selezionare il **debugger** remoto appena aggiunto. Selezionare **Tipi di** rete e quindi selezionare uno o più tipi di rete, incluso il tipo di rete per la connessione remota.
+1. **Nell'elenco** App selezionare **il debugger** remoto appena aggiunto. Selezionare **Tipi di rete** e quindi selezionare uno o più tipi di rete, incluso il tipo di rete per la connessione remota.
 
 1. Selezionare **Aggiungi** e quindi **OK**.
 
 ## <a name="troubleshoot-the-remote-debugging-connection"></a><a name="troubleshooting"></a>Risolvere i problemi relativi alla connessione di debug remoto
 
-Se non è possibile connettersi all'app con il debugger remoto, assicurarsi che le porte, i protocolli, i tipi di rete e le impostazioni dell'app del firewall di debug remoto siano tutti corretti.
+Se non è possibile connettersi all'app con il debugger remoto, assicurarsi che le porte del firewall di debug remoto, i protocolli, i tipi di rete e le impostazioni dell'app siano tutti corretti.
 
-- Nel menu Windows **Start** cercare e aprire Windows **Firewall** e selezionare Consenti un'app tramite Windows **Firewall**. Assicurarsi che **Remote Debugger** **o Visual Studio Remote Debugger** nell'elenco **App** e funzionalità consentite con una casella di controllo selezionata e che siano selezionati i tipi di rete corretti. In caso contrario, [aggiungere le app e le impostazioni corrette.](#configure-remote-debugging-through-windows-firewall)
+- Nel menu Windows **Start** cercare e aprire Windows **Firewall** e selezionare Consenti un'app **Windows Firewall**. Assicurarsi che **debugger remoto** **o Visual Studio Remote Debugger**  visualizzato nell'elenco App e funzionalità consentite con una casella di controllo selezionata e che siano selezionati i tipi di rete corretti. In caso contrario, [aggiungere le app e le impostazioni corrette.](#configure-remote-debugging-through-windows-firewall)
 
-- Nel menu Windows **Start** cercare e aprire Windows **Firewall con sicurezza avanzata**. Assicurarsi che **Debugger remoto** **o Visual Studio Remote Debugger** in Regole **in** ingresso (e, facoltativamente, Regole in uscita) con un'icona a forma di segno di spunta verde e che tutte le impostazioni siano corrette. 
+- Nel menu Windows **Start** cercare e aprire Windows **Firewall con sicurezza avanzata**. Assicurarsi che **debugger** remoto o **Visual Studio Remote Debugger** visualizzato **in Regole in** ingresso (e, facoltativamente, Regole in uscita) con un'icona a forma di segno di spunta verde e che tutte le impostazioni siano corrette. 
 
-  - Per visualizzare o modificare le impostazioni delle regole, fare clic con il pulsante destro del mouse sull'app **Debugger** remoto nell'elenco e scegliere **Proprietà**. Usare le **schede** Proprietà per abilitare o disabilitare la regola o modificare i numeri di porta, i protocolli o i tipi di rete.
-  - Se l'app debugger remoto non viene visualizzata nell'elenco delle regole, [aggiungere e configurare le porte corrette.](#configure-ports-for-remote-debugging)
+  - Per visualizzare o modificare le impostazioni delle regole, fare clic con il pulsante destro del mouse sull'app **Debugger** remoto nell'elenco e **scegliere Proprietà.** Usare le **schede** Proprietà per abilitare o disabilitare la regola o modificare i numeri di porta, i protocolli o i tipi di rete.
+  - Se l'app del debugger remoto non viene visualizzata nell'elenco delle regole, [aggiungere e configurare le porte corrette.](#configure-ports-for-remote-debugging)
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Debug remoto](../debugger/remote-debugging.md)
-- [Visual Studio di porta del debugger remoto](../debugger/remote-debugger-port-assignments.md)
+- [Visual Studio delle porte del debugger remoto](../debugger/remote-debugger-port-assignments.md)

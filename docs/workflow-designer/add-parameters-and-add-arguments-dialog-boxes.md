@@ -13,12 +13,12 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 45a94ac4a6b14efb479dddcc098000cda7b98b832772aff63d26507edea3d085
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0e15403680d5b18075d450a7e54218c2c7bc0f94
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121225452"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099256"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Aggiungere parametri e argomenti alle finestre di dialogo
 

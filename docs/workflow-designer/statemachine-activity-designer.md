@@ -14,12 +14,12 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: ca75e366d1c7e8c14b5bc59b0155cb99aabaf76464460226526979a42d54ed5f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b6982a3875bc09e95b6f33dd30010adf029b3a91
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440409"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098983"
 ---
 # <a name="statemachine-activity-designer"></a>ActivityDesigner StateMachine
 

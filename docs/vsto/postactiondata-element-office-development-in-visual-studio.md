@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;elemento postActionData (sviluppo per Office)'
-description: L'elemento postActionData dello spazio dei nomi vstav3 specifica i dati associati a qualsiasi azione post-distribuzione che viene eseguita dopo l'installazione delle soluzioni Office.
+title: '&lt;Elemento postActionData &gt; (Office sviluppo)'
+description: L'elemento postActionData dello spazio dei nomi vstav3 specifica i dati associati a qualsiasi azione post-distribuzione eseguita dopo l'installazione Office soluzioni.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a75f61c6d1f80a127f49d96c4e3f4910c66dd8aa
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 4196c3061372d46a2fad4c2b46ff8c1fe4ee2b39
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102470066"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025888"
 ---
-# <a name="ltpostactiondatagt-element-office-development"></a>&lt;&gt;elemento postActionData (sviluppo per Office)
+# <a name="ltpostactiondatagt-element-office-development"></a>&lt;Elemento postActionData &gt; (Office sviluppo)
   L'elemento `postActionData` dello spazio dei nomi `vstav3` specifica i dati associati a qualsiasi azione post-distribuzione che viene eseguita dopo l'installazione di soluzioni Office.
 
 ## <a name="syntax"></a>Sintassi
@@ -43,7 +44,7 @@ ms.locfileid: "102470066"
 ## <a name="post-deployment-action-example"></a>Esempio di azione post-distribuzione
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l'elemento `postAction` in un manifesto dell'applicazione per una soluzione Office distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra l'elemento `postAction` in un manifesto dell'applicazione per una soluzione Office distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -55,6 +56,6 @@ ms.locfileid: "102470066"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

@@ -8,14 +8,15 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: baee9f3e2eaefcd659f8428bd566711949d0fe90
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 4e34e7e01d05b7f4a75e9332f40e6210f70405a08a9ffe826570e77836fa7e70
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900759"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336733"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Strumenti di valutazione per Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Elenco di controllo per gli Visual Studio
@@ -23,7 +24,7 @@ ms.locfileid: "112900759"
 
 ### <a name="overview"></a>Panoramica
 
-- Verificare che tutti i comandi disercitino commenti e suggerimenti che comunicano agli utenti che i comandi sono stati eseguiti.
+- Verificare che tutti i comandi conseevano commenti e suggerimenti che comunicano agli utenti che i comandi sono stati eseguiti.
 
 - Verificare che tutti gli elementi e i controlli dell'interfaccia utente siano visibili in tutti i temi e in Contrasto elevato personalizzata.
 
@@ -41,10 +42,10 @@ ms.locfileid: "112900759"
 
 - Verificare che tutte le etichette siano maiuscole o minuscole e che nessun testo sia interamente minuscolo.
 
-    ||Corretto|Non corretto|
+    ||Risposta esatta.|Risposta errata|
     |-|-------------|---------------|
     |**Testo del comando (tutti)**|Maiuscole/minuscole delle frasi:<br /><br /> **Nome directory:**|Nome directory:|
-    |**Testo del pulsante (client)**|Caso del titolo:<br /><br /> **[ Imposta come predefinito ]**|SET AS DEFAULT|
+    |**Testo del pulsante (client)**|Maiuscole/minuscole:<br /><br /> **[ Imposta come predefinito ]**|SET AS DEFAULT|
     |**Testo del pulsante (online)**|Maiuscole/minuscole delle frasi:<br /><br /> **[ Imposta come predefinito ]**||
 
 - Verificare che tutte le etichette, ad eccezione delle intestazioni e dei pulsanti di gruppo, terminano con i due punti e precedono il controllo a cui sono abbinate.
@@ -61,7 +62,7 @@ ms.locfileid: "112900759"
 
 ### <a name="keyboard-access"></a>Accesso da tastiera
 
-- Verificare che sia disponibile un modo per eseguire ogni attività con la tastiera. In genere questa operazione viene eseguita tramite l'accesso tramite tastiera per ogni controllo, ma per alcune aree altamente visive, una soluzione alternativa, ad esempio passare alla visualizzazione codice, è accettabile.
+- Verificare che sia disponibile un modo per eseguire ogni attività con la tastiera. In genere questa operazione viene eseguita tramite l'accesso tramite tastiera per ogni controllo, ma per alcune aree altamente visive è accettabile una soluzione alternativa, ad esempio passare alla visualizzazione codice.
 
 - Verificare che sia possibile scorrere i controlli in un ordine logico (da sinistra a destra e dall'alto verso il basso). Anche se si tratta di una procedura consigliata per la maggior parte dei controlli, non tutti i controlli richiedono questo approccio. Ad esempio, verificare che i controlli pulsante di opzione siano in un gruppo con una singola tabulazione.
 
@@ -75,7 +76,7 @@ ms.locfileid: "112900759"
 
 - Verificare che tutti gli elementi dell'interfaccia utente usino il servizio di tipi di carattere dell'ambiente. Vedere Tipi [di carattere e formattazione per Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md))
 
-     Per verificare se il servizio è in uso, passare a Strumenti **> opzioni > tipi di carattere e colori.** Nell'elenco a discesa Settings (Impostazioni) scegliere Environment Font (Tipo di carattere ambiente) e modificare il tipo di carattere in modo che sia diverso dal punto di vista stilico (ad esempio, Harrrrrr o Sans) e impostare le dimensioni su 12 pt. Fare quindi clic su OK. Potrebbe essere necessario riavviare l'IDE, ma la maggior parte dell'interfaccia utente verrà cambiata immediatamente. Le aree che non selezionano la modifica del tipo di carattere anche al riavvio non usano il tipo di carattere dell'ambiente.
+     Per verificare se il servizio è in uso, passare a Strumenti **> opzioni > tipi di carattere e colori.** Nell'elenco Impostazioni a discesa, scegliere Environment Font (Tipo di carattere ambiente) e modificare il tipo di carattere in modo diverso dal punto di vista stilistico (ad esempio, Harrrrrr o Sans) e impostare le dimensioni su 12 pt. Fare quindi clic su OK. Potrebbe essere necessario riavviare l'IDE, ma la maggior parte dell'interfaccia utente cambierà immediatamente. Le aree che non selezionano la modifica del tipo di carattere anche al riavvio non usano il tipo di carattere dell'ambiente.
 
 - Verificare che i tipi di carattere derivati dal servizio (ad esempio testo in grassetto o ingrandito) mantenino le dimensioni e la formattazione in relazione al testo "normale" quando le dimensioni del carattere dell'ambiente vengono modificate.
 
@@ -93,17 +94,17 @@ ms.locfileid: "112900759"
 
 - Se utile, le finestre di dialogo devono essere ridimensionabili. Per le finestre di dialogo ridimensionabili, verificare che, al momento del ridimensionamento, i controlli appropriati devono essere ridimensionati mentre le altre parti del dialogo rimangono costanti.
 
-- Verificare che le finestre di dialogo ridimensionabili permangono per tutte le dimensioni regolate dall'utente (dimensioni, posizione, espansione dei controlli della finestra di dialogo e così via).
+- Verificare che le finestre di dialogo ridimensionabili permangono per tutte le dimensioni regolate dall'utente (dimensioni, posizione, espansione dei controlli finestra di dialogo e così via).
 
 - Verificare che non sia presente alcuna icona nella barra del titolo.
 
 - Verificare che non siano presenti pulsanti Riduci a icona e Ingrandisci nella barra del titolo.
 
-#### <a name="dialog-operation-buttons-vs-client-only"></a>Pulsanti delle operazioni della finestra di dialogo (solo VS Client)
+#### <a name="dialog-operation-buttons-vs-client-only"></a>Pulsanti delle operazioni della finestra di dialogo (solo vs client)
 
 - Verificare che i pulsanti dell'operazione siano nell'ordine **seguente: OK**, **Annulla**, **Applica**.
 
-- Verificare che **i pulsanti OK** e **Annulla** siano di dimensioni standard: 75x23 pixel.
+- Verificare che **i pulsanti OK** **e** Annulla siano di dimensioni standard: 75x23 pixel.
 
 - Verificare che **i pulsanti OK** e **Annulla** siano di dimensioni uguali indipendentemente dalla lunghezza della stringa.
 
@@ -185,17 +186,17 @@ ms.locfileid: "112900759"
 
 - Verificare che le caselle di controllo indichino sempre una scelta binaria e non esplorare l'utente o aprire nuove finestre o pagine.
 
-- Se una casella di controllo presenta un'opzione correlata a un controllo di input, verificare che sia posizionato a sinistra e molto vicino sotto tale controllo per indicarne la relazione.
+- Se una casella di controllo presenta un'opzione correlata a un controllo di input, verificare che sia posizionata a sinistra e molto vicina sotto tale controllo per indicarne la relazione.
 
 - Verificare che una casella di controllo non **sia mai** usata come mezzo per abilitare l'intero contenuto di una finestra di dialogo o di una pagina.
 
 #### <a name="group-boxes"></a>Caselle di gruppo
 
-- Verificare che una finestra di dialogo non contenga al suo interno una singola casella di gruppo contenente l'intero contenuto della finestra di dialogo.
+- Verificare che una finestra di dialogo non contenga una singola casella di gruppo che contenga l'intero contenuto della finestra di dialogo.
 
 - Verificare che siano presenti almeno due controlli all'interno di ogni casella di gruppo.
 
-- Raramente devono essere presenti più di due caselle di gruppo in una finestra di dialogo.
+- Raramente in una finestra di dialogo devono essere presenti più di due caselle di gruppo.
 
 - Verificare che non siano presenti caselle di gruppo annidate.
 
@@ -205,13 +206,13 @@ ms.locfileid: "112900759"
 
 - Verificare che tutte le icone siano basate sui concetti di base.
 
-- Verificare che ogni icona sia distinta, facile da riconoscere e non contenga più di due concetti (senza modificatore di stato/linguaggio).
+- Verificare che ogni icona sia distinta, facile da riconoscere e non contenga più di due concetti (senza modificatore/linguaggio di stato).
 
-- Verificare che l'icona di base sia centrata all'interno dello spazio.
+- Verificare che l'icona di base venga visualizzata al centro all'interno dello spazio.
 
-- Verificare che tutte le icone siano leggibili in Contrasto elevato attiva.
+- Verificare che tutte le icone siano leggibili in Contrasto elevato automatica.
 
-- Verificare che qualsiasi colore usato sia allineato agli standard di utilizzo dei colori.
+- Verificare che tutti i colori usati siano allineati agli standard di utilizzo dei colori.
 
 - Verificare che non siano presenti aloni (bordi) intorno alle icone. Se presente, l'alone deve corrispondere al colore di sfondo dell'interfaccia utente adiacente.
 
@@ -219,6 +220,6 @@ ms.locfileid: "112900759"
 
 - Verificare che i controlli interattivi siano sufficientemente grandi da essere facilmente toccabili, con dimensioni minime **di 23x23** pixel
 
-- Verificare che le dimensioni dei controlli usati più di frequente siano di **almeno 40x40** pixel.
+- Verificare che i controlli usati più di frequente siano di **almeno 40x40 pixel.**
 
-- Verificare che i controlli interattivi hanno almeno **5 pixel di spaziatura** tra di essi
+- Verificare che i controlli interattivi abbia almeno **5 pixel di spaziatura** tra di essi

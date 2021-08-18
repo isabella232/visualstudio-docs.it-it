@@ -1,6 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
-description: Informazioni sulla funzione StopProfile e sul modo in cui imposta il contatore su 0 (off) per il livello di profilatura specificato.
+description: Informazioni sulla funzione StopProfile e su come imposta il contatore su 0 (off) per il livello di profilatura specificato.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac62edc3830d60a99448e2faf4cb20949b7081e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4887f5a86f63d4ee68e560b16bcd675959c9c85e1d6557186262e3b946ee8db9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949909"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121354004"
 ---
 # <a name="stopprofile"></a>StopProfile
 La funzione `StopProfile` imposta il contatore su 0 (OFF) per il livello di profilatura specificato.
@@ -109,4 +110,4 @@ void ExerciseStopProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

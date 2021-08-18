@@ -13,18 +13,19 @@ ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76ab3d2a72c957b20a79850dc312f5c16de98afc
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: fc6438ee94197eda422c899706376a4e2fb8b604
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905293"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028436"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
 
-Il servizio di linguaggio implementa il gestore della finestra del codice ed è responsabile della gestione delle aree di controllo, ad esempio la barra a discesa. Per altre informazioni, vedere [Personalizzazione delle finestre del codice tramite l'API legacy](/previous-versions/visualstudio/visual-studio-2015/extensibility/customizing-code-windows-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
+Il servizio di linguaggio implementa il gestore della finestra del codice ed è responsabile della gestione delle aree di controllo, ad esempio la barra a discesa. Per altre informazioni, vedere [Personalizzazione del codice Windows tramite l'API legacy](/previous-versions/visualstudio/visual-studio-2015/extensibility/customizing-code-windows-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
 Nella tabella seguente vengono illustrate le interfacce `VSCodeWindowManager` nell'oggetto .
 

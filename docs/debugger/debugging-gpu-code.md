@@ -1,5 +1,5 @@
 ---
-title: Debug di code | GPU Microsoft Docs
+title: Debug del codice GPU | Microsoft Docs
 description: Informazioni sul debug del codice C++ in esecuzione nell'unità di elaborazione grafica (GPU) in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 312387d07d87955043587dd8159e3d34d46ccf361c1a16b1c8758b2339be978e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 86e7593ff4df88efb24592fcd758156575eb9fd4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113091"
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
 È possibile eseguire il debug del codice C++ in esecuzione nell'unità di elaborazione grafica (GPU). Il supporto del debug di GPU in Visual Studio include il rilevamento di race condition, l'avvio di processi e la connessione a essi e l'integrazione nelle finestre di debug.
@@ -74,7 +74,7 @@ ms.locfileid: "121379464"
  I punti di interruzione condizionali nel codice della GPU sono supportati, ma non è possibile valutare tutte le espressioni nel dispositivo. Quando un'espressione non può essere valutata nel dispositivo, essa viene valutata nel debugger. È probabile che il debugger sia più lento del dispositivo.
 
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Errore: Problema di configurazione con il tipo di acceleratore di debug selezionato.
- Questo errore si verifica quando è presente un'incoerenza tra le impostazioni del progetto e la configurazione del PC in cui si esegue il debug. Per altre informazioni, vedere [Project Impostazioni per una configurazione di debug C++.](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+ Questo errore si verifica quando è presente un'incoerenza tra le impostazioni del progetto e la configurazione del PC in cui si esegue il debug. Per altre informazioni, vedere Project Impostazioni [per una configurazione di debug C++.](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Errore: Il driver di debug per il tipo di acceleratore di debug selezionato non è installato nel computer di destinazione.
  Questo errore si verifica se si esegue il debug in un computer remoto. Il debugger non è in grado di determinare se i driver sono installati nel computer remoto fino al runtime. I driver sono disponibili tramite il produttore della scheda grafica.

@@ -1,6 +1,6 @@
 ---
-description: Recupera il nome dell'assembly in base al modulo e al dominio dell'applicazione.
-title: 'IDebugComPlusSymbolProvider:: GetAssemblyName | Microsoft Docs'
+description: Recupera il nome dell'assembly in base al relativo modulo e dominio dell'applicazione.
+title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c02eb33c75300d1fc1b88a91c0d4935f554920c2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d89172e7b95dd3dce4c0d124565eb0bb80ec6d231077831067b54619e69386b4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088159"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342440"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-Recupera il nome dell'assembly in base al modulo e al dominio dell'applicazione.
+Recupera il nome dell'assembly in base al relativo modulo e dominio dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,19 +46,19 @@ int GetAssemblyName(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-in Identificatore del dominio dell'applicazione.
+[in] Identificatore per il dominio dell'applicazione.
 
 `guidModule`\
-in Identificatore univoco per il modulo.
+[in] Identificatore univoco per il modulo.
 
 `pbstrName`\
-out Restituisce il nome dell'assembly.
+[out] Restituisce il nome dell'assembly.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAssemblyName(

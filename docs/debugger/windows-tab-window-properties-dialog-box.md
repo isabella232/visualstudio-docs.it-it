@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f13a9ee3f8b1ea245625b1734f4d7053e331228a29bdc4bcd78c49aafa34f7db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ff9e7acf648e57dbb3d50a7841e06594fad35733
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112243"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Scheda Finestre, finestra di dialogo Proprietà finestra
 Usare la **Windows** per visualizzare informazioni sulle finestre correlate alla finestra selezionata. Per visualizzare la [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo Windows [visualizzazione.](../debugger/windows-view.md) Selezionare qualsiasi nodo della finestra nell'albero, quindi **scegliere Proprietà** **dal** menu Visualizza.

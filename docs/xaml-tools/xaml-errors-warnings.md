@@ -1,6 +1,6 @@
 ---
 title: Errori e avvisi XAML
-description: Informazioni su errori e avvisi XAML in Visual Studio, tra cui la categorizzazione degli errori, come ottenere informazioni sugli errori e come trovare le opzioni per correggerli.
+description: Informazioni su errori e avvisi XAML in Visual Studio, tra cui come vengono classificati gli errori, come ottenere informazioni sugli errori e come trovare le opzioni per correggerli.
 ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 01dd2befec3f531609206bbd848e534ade251597041bef1ab755a618cc72f1b0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f164a002b5e2c221a10cade55c50fef120452ab6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121365087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098814"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errori e avvisi XAML
 
-Durante la creazione di codice XAML, Visual Studio analizza il codice mentre lo si digita. Quando viene rilevato un errore in una riga di codice, viene visualizzata una sottolineatura ondulata. Se si porta il cursore del mouse sulla sottolineatura, vengono visualizzate informazioni sull'errore o sull'avviso. Per alcuni errori e avvisi, viene visualizzata una lampadina azione rapida e si usa **CTRL** + **.** consente di visualizzare le opzioni per la risoluzione del problema.
+Durante la creazione di codice XAML, Visual Studio analizza il codice mentre lo si digita. Quando viene rilevato un errore in una riga di codice, viene visualizzata una sottolineatura ondulata. Se si porta il cursore del mouse sulla sottolineatura, vengono visualizzate informazioni sull'errore o sull'avviso. Per alcuni errori e avvisi, viene visualizzata una lampadina di Azione rapida e si usa + **CTRL.** consente di visualizzare le opzioni per la risoluzione del problema.
 
 ## <a name="error-types"></a>Tipi di errore
 
@@ -33,7 +33,7 @@ Vari strumenti analizzano il codice XAML in background. Gli errori XAML sono sud
 |Modifica e continuazione per XAML|XECxxxx| Visual Studio 2019 versione 16.1 o precedente |
 |Ricaricamento rapido XAML | XHRxxxx | Visual Studio 2019 versione 16.2 o successiva |
 
-Per altri dettagli sul rebranding di Modifica XAML & come Ricaricamento rapido XAML, vedere le note [sulla versione](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
+Per altri dettagli sul rebranding di Modifica XAML & continua come Ricaricamento rapido XAML, vedi le note [sulla versione](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
 
 > [!Note]
 > Non tutti gli errori o avvisi hanno un codice corrispondente. Gli errori senza codice sono in genere errori della finestra di progettazione XAML.

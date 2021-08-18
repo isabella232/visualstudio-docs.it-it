@@ -1,6 +1,6 @@
 ---
 title: App .NET Core
-description: Repository di esempio che usa la devinit per installare un .NET Core SDK specifico.
+description: Repository di esempio che usa devinit per installare una specifica .NET Core SDK.
 ms.date: 11/04/2020
 ms.topic: reference
 author: andysterland
@@ -11,23 +11,23 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b3e25835f305a96b2205fc96cc0200d68ad033af
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: c56665df760338975e334533bc3ddfdcd4f34434e01a3e17ca8d5d9440679856
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672460"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452940"
 ---
 # <a name="net-core-app"></a>App .NET Core
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Per un esempio completo dell'uso di devinit per installare la versione .NET Core SDK necessaria in codespaces, vedere il repository [devinit-example-DotNet-Core](https://github.com/microsoft/devinit-example-dotnet-core) .
+Vedere il repository [devinit-example-dotnet-core](https://github.com/microsoft/devinit-example-dotnet-core) per un esempio completo dell'uso di devinit per installare la versione .NET Core SDK in Codespaces.
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del _.devinit.js_ nel file nella radice del repository.
+Contenuto del.devinit.js _nel_ file nella radice del repo.
 
 ```json
 {
@@ -41,9 +41,9 @@ Contenuto del _.devinit.js_ nel file nella radice del repository.
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.js
+## <a name="devcontainerjson"></a>.devcontainer.jssu
 
-Contenuto del _.devcontainer.js_ nel file nella radice del repository.
+Contenuto del.devcontainer.js _nel_ file nella radice del repo.
 
 ```json
 {
@@ -53,7 +53,7 @@ Contenuto del _.devcontainer.js_ nel file nella radice del repository.
 
 ## <a name="globaljson"></a>global.json
 
-Contenuto del _global.js_ nel file nella radice del repository.
+Contenuto delglobal.js _nel_ file nella radice del repo.
 
 ```json
 {

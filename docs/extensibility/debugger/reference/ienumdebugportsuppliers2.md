@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d01793a1ed7ac11869063e4183a0e542c58637613d1595d7c13462f6a4fb82ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7620b528b90bf2a34894618ad186c4fdb8aa1c2e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377314"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034825"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Questa interfaccia enumera i fornitori di porte.

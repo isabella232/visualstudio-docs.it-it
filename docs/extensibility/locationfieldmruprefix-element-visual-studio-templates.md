@@ -1,7 +1,7 @@
 ---
 title: Elemento LocationFieldMRUPrefix (modelli di Visual Studio)
 titleSuffix: ''
-description: Informazioni sull'elemento LocationFieldMRUPrefix e sul modo in cui specifica i percorsi usati più di recente nella finestra di dialogo nuovo progetto e Aggiungi nuovo elemento.
+description: Informazioni sull'elemento LocationFieldMRUPrefix e su come specifica i percorsi usati più di recente nella finestra di dialogo Nuovo Project e Aggiungi nuovo elemento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -17,16 +17,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189c7d0979d125b18db0ee8c467fd9538493a266
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2625781da6fb344cf9d3938920a1774391e502094297665515ec033d9eea4d6b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073209"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431708"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelli di Visual Studio)
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (Visual Studio modelli)
 
-Specifica i percorsi utilizzati più di recente nella finestra di dialogo **nuovo progetto** e **Aggiungi nuovo elemento** .
+Specifica i percorsi usati più di recente nella finestra di dialogo Nuovo **Project** **e** Aggiungi nuovo elemento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,11 +40,11 @@ Specifica i percorsi utilizzati più di recente nella finestra di dialogo **nuov
 
 ### <a name="attributes"></a>Attributi
 
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -58,5 +58,5 @@ Specifica i percorsi utilizzati più di recente nella finestra di dialogo **nuov
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)

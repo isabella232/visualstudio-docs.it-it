@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b19c0167d98d425bca39feb9425e3b5f5750fad8baccdb2d780b25bcc21bc9f6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54cd8fc34147fca33e8c1dcb90dce1d1649f3500
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454671"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036071"
 ---
 # <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 Restituisce la lunghezza dell'intervallo di indirizzi in cui il simbolo locale è valido.
@@ -41,7 +41,7 @@ HRESULT get_liveRangeLength (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 > [!NOTE]
-> Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo live.
+> Un codice di errore restituito indica che il simbolo non dispone di informazioni sull'intervallo live.
 
 ## <a name="remarks"></a>Osservazioni
 

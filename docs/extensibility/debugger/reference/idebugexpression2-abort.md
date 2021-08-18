@@ -1,6 +1,6 @@
 ---
-description: Questo metodo annulla la valutazione dell'espressione asincrona avviata da una chiamata al metodo EvaluateAsync.
-title: 'IDebugExpression2:: Abort | Microsoft Docs'
+description: Questo metodo annulla la valutazione asincrona delle espressioni come avviata da una chiamata al metodo EvaluateAsync.
+title: IDebugExpression2::Abort | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6c355d2c4ee3cf63551f54b050b0ea42f4fdddc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1c2647c262d4a5a2700f2293d5737fab533d680d5c0a74da1a9b542b9b4c4a31
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092449"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417288"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
-Questo metodo annulla la valutazione dell'espressione asincrona avviata da una chiamata al metodo [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) .
+Questo metodo annulla la valutazione asincrona delle espressioni come avviata da una chiamata al [metodo EvaluateAsync.](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int Abort();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Quando la valutazione dell'espressione asincrona viene annullata, non invia un evento [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) al callback di evento passato ai [metodi di](../../../extensibility/debugger/reference/idebugengine2-attach.md) [connessione](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o di associazione.
+ Quando la valutazione asincrona delle espressioni viene annullata, non inviare un evento [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) al callback dell'evento passato ai metodi [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) [o Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

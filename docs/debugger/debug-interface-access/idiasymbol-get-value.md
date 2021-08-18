@@ -11,14 +11,15 @@ ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 680ddd3dd90538e3e37991e890b61bc74220c8a3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9801c3afa48dc7f926cb6e99ece583a4b21dbf24
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113251"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 Recupera il valore di una costante.
@@ -34,16 +35,16 @@ HRESULT get_value (
 #### <a name="parameters"></a>Parametri
 `pRetVal`
 
-[in, out] `VARIANT` Oggetto compilato con il valore di una costante.
+[in, out] Oggetto `VARIANT` compilato con il valore di una costante.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
-La variante fornita deve essere inizializzata prima di essere passata a questo metodo. Per ulteriori informazioni, vedere l'esempio.
+L'oggetto VARIANT fornito deve essere inizializzato prima di essere passato a questo metodo. Per altre informazioni, vedere l'esempio.
 
 ## <a name="example"></a>Esempio
 

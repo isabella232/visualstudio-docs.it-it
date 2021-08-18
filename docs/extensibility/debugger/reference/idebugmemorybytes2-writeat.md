@@ -1,6 +1,6 @@
 ---
-description: Scrive il numero di byte di memoria specificato, a partire dall'indirizzo specificato.
-title: 'IDebugMemoryBytes2:: WriteAt | Microsoft Docs'
+description: Scrive il numero specificato di byte di memoria, a partire dall'indirizzo specificato.
+title: IDebugMemoryBytes2::WriteAt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64e8aed5586dc6e2abf33b540654dcd24437e746
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 099da50a72150d425fca560648df743f1804776f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035020"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
-Scrive il numero di byte di memoria specificato, a partire dall'indirizzo specificato.
+Scrive il numero specificato di byte di memoria, a partire dall'indirizzo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,19 +48,19 @@ int WriteAt(
 
 ## <a name="parameters"></a>Parametri
 `pStartContext`\
-in Oggetto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica la posizione in cui iniziare a scrivere i byte.
+[in] Oggetto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica dove iniziare a scrivere byte.
 
 `dwCount`\
 [in] Numero di byte da scrivere.
 
 `rgbMemory`\
-in Byte da scrivere. Si presuppone che questa matrice abbia una dimensione di almeno `dwCount` byte.
+[in] Byte da scrivere. Si presuppone che le dimensioni di questa matrice `dwCount` siano almeno byte.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` se non tutti i byte possono essere scritti o restituisce un codice di errore (in genere `E_FAIL` ).
+ Se ha esito positivo, restituisce ; in caso contrario, restituisce se non tutti i byte possono essere scritti o restituisce un `S_OK` `S_FALSE` codice di errore (in genere `E_FAIL` ).
 
 ## <a name="remarks"></a>Commenti
- Se l'indirizzo iniziale non si trova all'interno della finestra di memoria rappresentata da questo oggetto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) , non viene eseguita alcuna operazione di scrittura e viene restituito un codice di errore, `E_FAIL` anche se la quantità da scrivere si sovrappone allo spazio di memoria.
+ Se l'indirizzo iniziale non si trova all'interno della finestra di memoria rappresentata da questo oggetto [IDebugMemoryBytes2,](../../../extensibility/debugger/reference/idebugmemorybytes2.md) non viene eseguita alcuna scrittura e viene restituito un codice di errore di , anche se la quantità di scrittura si sovrappone allo spazio di `E_FAIL` memoria.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

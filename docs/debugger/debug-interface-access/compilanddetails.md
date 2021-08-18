@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f2817e37d088f8d125b18b4e39051966b690c683
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 26b36e8e48bfe6ec10ea3d02a9bbaeb9b239bb2dd01320db6bbf42523baa17ca
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059011"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121345746"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Le informazioni di compilazione sono suddivise tra simboli con `SymTagCompiland` un tag (dettagli minimi) `SymTagCompilandDetails` e un tag (dettagli elevati). `SymTagCompilandDetails` fornisce numerose informazioni sul compilando che non è disponibile con un `SymTagCompiland` simbolo.

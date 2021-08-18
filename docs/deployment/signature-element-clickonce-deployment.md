@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;Elemento Signature (distribuzione ClickOnce) | Microsoft Docs'
-description: L'elemento Signature contiene le informazioni necessarie per la firma digitale del manifesto della distribuzione. La firma di un manifesto di distribuzione è facoltativa ma consigliata.
+title: '&lt;Elemento &gt; Signature (ClickOnce Deployment) | Microsoft Docs'
+description: L'elemento Signature contiene le informazioni necessarie per firmare digitalmente questo manifesto di distribuzione. La firma di un manifesto di distribuzione è facoltativa ma consigliata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,16 +14,17 @@ ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d95398285d9106719f3c2444d54202b81cfee4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8312a9660ca621857b835f43f9e43a173c93240e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035605"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Elemento Signature (distribuzione ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Elemento &gt; Signature (ClickOnce distribuzione)
 Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.
 
 ## <a name="syntax"></a>Sintassi
@@ -36,12 +37,12 @@ Contiene le informazioni necessarie per apporre una firma digitale al manifesto 
 ```
 
 ## <a name="remarks"></a>Osservazioni
- La firma di un manifesto di distribuzione con una firma della busta è facoltativa, ma consigliata. Per ulteriori informazioni sulla firma di file XML, vedere la World Wide Web Consortium raccomandazione "sintassi e elaborazione della firma XML" descritta in [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .
+ La firma di un manifesto di distribuzione tramite una firma envelope è facoltativa, ma consigliata. Per altre informazioni sulla firma di file XML, vedere la raccomandazione World Wide Web Consortium, "Sintassi ed elaborazione della firma XML", descritta in [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .
 
- Se si desidera firmare il manifesto, è necessario fornire gli hash per tutti i file. Un manifesto con file non con hash non può essere firmato perché gli utenti non possono verificare il contenuto dei file senza hash.
+ Se si vuole firmare il manifesto, è necessario specificare gli hash per tutti i file. Non è possibile firmare un manifesto con file senza hash, perché gli utenti non possono verificare il contenuto dei file senza hash.
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice riportato di seguito viene illustrato un `Signature` elemento in un manifesto di distribuzione utilizzato in una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.
+ L'esempio di codice seguente illustra un `Signature` elemento in un manifesto di distribuzione usato in una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.
 
 ```xml
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
@@ -73,4 +74,4 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [ClickOnce manifesto della distribuzione](../deployment/clickonce-deployment-manifest.md)

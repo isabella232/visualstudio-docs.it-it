@@ -1,6 +1,6 @@
 ---
-description: A partire da Visual Studio 2019 versione 16.8, è possibile usare lo strumento Pubblica per pubblicare applicazioni desktop Windows .NET Core 3.1 o versione successiva usando ClickOnce da Visual Studio.
-title: Distribuire un'applicazione desktop Windows .NET usando ClickOnce
+description: A partire da Visual Studio 2019 versione 16.8, è possibile usare lo strumento Pubblica per pubblicare applicazioni .NET Core 3.1 o versioni più nuove Windows Desktop usando ClickOnce da Visual Studio.
+title: Distribuire un'applicazione .NET Windows Desktop usando ClickOnce
 ms.date: 10/15/2020
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,19 +13,19 @@ ms.technology: vs-ide-deployment
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df9e608b7583e4185a0a9589a363e07e9d249f5be7cba64a8e9db3789f3019d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a093cbf609e2226967b0879e23f13631db91a79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435365"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035774"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>Distribuire un'applicazione desktop Windows .NET usando ClickOnce
 
-A partire da Visual Studio 2019 versione 16.8,  è possibile usare lo strumento Pubblica per pubblicare applicazioni desktop Windows .NET Core 3.1 o versione successiva usando ClickOnce da Visual Studio.
+A partire da Visual Studio 2019 versione 16.8,  è possibile usare lo strumento Pubblica per pubblicare applicazioni .NET Core 3.1 o versioni più nuove Windows Desktop usando ClickOnce da Visual Studio.
 
 > [!NOTE]
-> Se è necessario pubblicare un'.NET Framework Windows, vedere Distribuire [un'app desktop usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic).
+> Se è necessario pubblicare un'.NET Framework Windows, vedere [Distribuire un'app desktop usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic).
 
 ## <a name="publishing-with-clickonce"></a>Pubblicazione con ClickOnce
 
@@ -51,9 +51,9 @@ A partire da Visual Studio 2019 versione 16.8,  è possibile usare lo strumento 
 
     ![Specificare il percorso della cartella](../deployment/media/quickstart-clickonce-install-location.png "Scegliere il percorso di installazione")
 
-1. Nella pagina **Impostazioni** è possibile specificare le impostazioni necessarie per ClickOnce.
+1. Nella pagina **Impostazioni,** è possibile specificare le impostazioni necessarie per ClickOnce.
 
-1. Se si è scelto di eseguire l'installazione da un percorso UNC o da un sito Web, questa pagina consente di specificare se l'applicazione è disponibile offline. Se selezionata, questa opzione elenca l'applicazione nel menu Start degli utenti e consente di aggiornare automaticamente l'applicazione quando viene pubblicata una nuova versione. Per impostazione predefinita, gli aggiornamenti sono disponibili dal percorso di installazione.  Se si vuole avere un percorso diverso per gli aggiornamenti, è possibile specificarne il percorso usando il Impostazioni aggiornamento. Se non si vuole che l'applicazione sia disponibile offline, verrà eseguita dal percorso di installazione.
+1. Se si è scelto di eseguire l'installazione da un percorso UNC o da un sito Web, questa pagina consente di specificare se l'applicazione è disponibile offline. Se selezionata, questa opzione elenca l'applicazione nel menu Start degli utenti e consente di aggiornare automaticamente l'applicazione quando viene pubblicata una nuova versione. Per impostazione predefinita, gli aggiornamenti sono disponibili nel percorso di installazione.  Se si vuole avere un percorso diverso per gli aggiornamenti, è possibile specificarne l'uso usando il collegamento Impostazioni aggiornamento. Se non si vuole che l'applicazione sia disponibile offline, verrà eseguita dal percorso di installazione.
 
     ![Specificare le impostazioni di pubblicazione](../deployment/media/quickstart-clickonce-unc-settings.png "Scegliere le impostazioni di pubblicazione")
 
@@ -61,16 +61,16 @@ A partire da Visual Studio 2019 versione 16.8,  è possibile usare lo strumento 
 
     ![Scegliere le impostazioni di pubblicazione](../deployment/media/quickstart-clickonce-settings.png "Scegliere le impostazioni di pubblicazione")
 
-In questa pagina è inclusa la possibilità di specificare  quali file dell'applicazione  includere nel programma di installazione, quali pacchetti prerequisiti installare e altre opzioni tramite i collegamenti nella parte superiore della pagina. 
+In questa pagina è inclusa la possibilità di specificare  i file dell'applicazione  da includere nel programma di installazione, i pacchetti prerequisiti da installare e altre opzioni tramite i collegamenti nella parte superiore della pagina. 
 
-In questa pagina è anche possibile impostare La versione di pubblicazione e se la versione verrà incrementata automaticamente a ogni pubblicazione.
+In questa pagina è anche possibile impostare la versione di pubblicazione e se la versione verrà incrementata automaticamente a ogni pubblicazione.
 
 > [!NOTE]
-> Il numero di versione di pubblicazione è univoco per ClickOnce profilo. Se si prevede di avere più di un profilo, è necessario tenere presente questo.
+> Il numero di versione di pubblicazione è univoco per ogni ClickOnce di pubblicazione. Se si prevede di avere più di un profilo, è necessario tenere presente questo.
 
 10. Nella pagina **Firma manifesti** è possibile specificare se i manifesti devono essere firmati e quale certificato usare.
 
-    ![Firmare i ClickOnce seguenti](../deployment/media/quickstart-clickonce-sign-manifests.png)
+    ![Firmare i ClickOnce manifesti](../deployment/media/quickstart-clickonce-sign-manifests.png)
 
 1. Nella pagina **Configurazione** è possibile selezionare la configurazione del progetto desiderata.
 
@@ -80,7 +80,7 @@ In questa pagina è anche possibile impostare La versione di pubblicazione e se 
 
     - [Distribuzione dipendente dal framework e distribuzione autonoma](/dotnet/core/deploying/)
     - [Identificatori di runtime di destinazione (RID portabile e altri)](/dotnet/core/rid-catalog)
-    - [Configurazioni di debug e rilascio](../ide/understanding-build-configurations.md)
+    - [Configurazioni di debug e versione](../ide/understanding-build-configurations.md)
 
 1. Selezionare **Fine** per salvare il nuovo ClickOnce Pubblica profilo.
 
@@ -95,4 +95,4 @@ In questa pagina è anche possibile impostare La versione di pubblicazione e se 
 Per le app .NET:
 
 - [Distribuire le .NET Framework e le applicazioni](/dotnet/framework/deployment/)
-- [ClickOnce informazioni di riferimento](clickonce-reference.md)
+- [ClickOnce riferimento](clickonce-reference.md)

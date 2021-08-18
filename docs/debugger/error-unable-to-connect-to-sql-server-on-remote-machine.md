@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8993e3858d95423787b05f1933a68a279f6d4363f9bc149cabe539358e9a0c84
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: db72197e407b7846a496f4996d04d2334e770302
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419858"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112789"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Errore: impossibile eseguire la connessione a SQL Server su un computer remoto
-Impossibile connettersi a SQL Server nome computer *remoto.* Accesso negato. Verificare che il debugger remoto sia installato sul computer remoto. Se il computer remoto non è un dominio o se Visual Studio è eseguito come account locale, il computer remoto deve disporre di un account con gli stessi nome utente e password dell'account locale.
+Non è possibile connettersi a SQL Server nel nome del computer *remoto.* Accesso negato. Verificare che il debugger remoto sia installato sul computer remoto. Se il computer remoto non è un dominio o se Visual Studio è eseguito come account locale, il computer remoto deve disporre di un account con gli stessi nome utente e password dell'account locale.
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 

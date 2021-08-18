@@ -1,6 +1,6 @@
 ---
 title: Individuare i modelli
-description: Informazioni su come individuare e organizzare i modelli di progetto e di elemento.
+description: Informazioni su come individuare e organizzare i modelli di progetto ed elemento.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
@@ -11,12 +11,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: ba986fee3f5cf6098b72f3b7a52340a61d3449d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 52851b97716d6b32cc4087f19f87d060e1c608c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962860"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028046"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare modelli di progetto e modelli di elementi
 
@@ -38,9 +39,9 @@ Per impostazione predefinita, i modelli installati con Visual Studio si trovano 
 
 ::: moniker range="vs-2017"
 
-- *% ProgramFiles (x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<lingua \> \\<ID impostazioni locali\>*
+- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\ \> \\<Language<Locale ID\>*
 
-- *% ProgramFiles (x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \COMMON7\IDE\ITEMTEMPLATES \\<lingua \> \\<ID impostazioni locali\>*
+- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \Common7\IDE\ItemTemplates \\ \> \\<Language<Locale ID\>*
 
 Ad esempio, la directory seguente contiene i modelli di elementi di Visual Basic per la lingua inglese (LCID 1033):
 
@@ -50,9 +51,9 @@ Ad esempio, la directory seguente contiene i modelli di elementi di Visual Basic
 
 ::: moniker range=">=vs-2019"
 
-- *% ProgramFiles (x86)% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<lingua \> \\<ID impostazioni locali\>*
+- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\ \> \\<Language<Locale ID\>*
 
-- *% ProgramFiles (x86)% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \COMMON7\IDE\ITEMTEMPLATES \\<lingua \> \\<ID impostazioni locali\>*
+- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \Common7\IDE\ItemTemplates<\\ Language<Locale \> \\ ID\>*
 
 Ad esempio, la directory seguente contiene i modelli di elementi di Visual Basic per la lingua inglese (LCID 1033):
 
@@ -89,7 +90,7 @@ Ad esempio, la directory seguente contiene i modelli di progetto personalizzati 
 ::: moniker-end
 
 > [!TIP]
-> È possibile modificare il percorso noto per i modelli utente in **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**.
+> È possibile modificare il percorso noto per i modelli utente in **Strumenti**  >  **Opzioni**  >  **Progetti e percorsi**  >  **soluzioni**.
 
 ::: moniker range="vs-2017"
 
@@ -104,25 +105,25 @@ Le categorie nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo ele
 
 1. Creare una cartella nella cartella del linguaggio di programmazione della directory dei modelli di progetto utente. Ad esempio, per specificare una categoria **HelloWorld** per i modelli di progetti C#, creare la directory seguente:
 
-    - *\%USERPROFILE%\Documenti\Visual Studio \<Version\> \Templates\ProjectTemplates\Visual C# \HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ProjectTemplates\Visual C#\HelloWorld*
 
 1. Inserire nella nuova cartella tutti modelli di questa categoria.
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
+1. Scegliere **Nuovo** dal  menu File > **Project**.
 
-   La categoria **HelloWorld** appare nella finestra di dialogo **Nuovo progetto**, in **Installato** > **Visual C#**.
+   La **categoria HelloWorld** viene visualizzata nella **finestra di dialogo Nuovo Project,** in **Visual** > **C# installato.**
 
 ### <a name="create-new-user-item-template-categories"></a>Creare nuove categorie di modelli di progetto utente
 
 1. Creare una cartella nella cartella del linguaggio di programmazione della directory dei modelli di elementi utente. Ad esempio, per specificare una categoria **HelloWorld** per i modelli di elementi C#, creare la directory seguente:
 
-    - *\%USERPROFILE%\Documenti\Visual Studio \<Version\> \Templates\ItemTemplates\Visual C# \HelloWorld*
+    - *\%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates\Visual C#\HelloWorld*
 
 1. Inserire nella nuova cartella tutti modelli di questa categoria.
 
 1. Creare un progetto oppure aprire un progetto esistente. Quindi, scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
 
-   La categoria **HelloWorld** è visualizzata nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato** > **Elementi di Visual C#**.
+   La **categoria HelloWorld** viene visualizzata nella **finestra di** dialogo Aggiungi nuovo elemento in **Elementi** > **Visual C# installati**.
 
 ### <a name="display-templates-in-parent-categories"></a>Visualizzare i modelli in categorie padre
 
@@ -130,7 +131,7 @@ I modelli inclusi nelle sottocategorie possono essere visualizzati nelle relativ
 
 1. Individuare il file con estensione *zip* che contiene il modello.
 
-1. Estrarre il file *zip* .
+1. Estrarre il *.zip* file.
 
 1. Aprire il file con estensione *vstemplate* in Visual Studio.
 
@@ -146,9 +147,9 @@ I modelli inclusi nelle sottocategorie possono essere visualizzati nelle relativ
     </TemplateData>
     ```
 
-1. Salvare e chiudere il file con *estensione vstemplate* .
+1. Salvare e chiudere il file *con estensione vstemplate.*
 
-1. Selezionare i file del modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**.
+1. Selezionare i file nel modello, fare clic  con il pulsante destro del mouse sulla selezione e scegliere Invia alla cartella > **compressa**.
 
    I file verranno compressi in un file *zip*.
 
@@ -163,5 +164,5 @@ I modelli inclusi nelle sottocategorie possono essere visualizzati nelle relativ
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Informazioni di riferimento sullo schema dei modelli di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (modelli di Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)
-- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: Creare modelli di elemento](../ide/how-to-create-item-templates.md)

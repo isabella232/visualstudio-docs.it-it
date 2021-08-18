@@ -17,20 +17,20 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffe1d6cea14568f9d8859e005ee56bf45910348488864fe65f24c8b0512890de
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 46834208ab567ce4071c15a488ed14285328371e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347201"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036966"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF
 
 ::: moniker range="vs-2017"
-Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Usare la **Aggiungi riferimento al servizio** per cercare nella soluzione corrente, in locale, in una rete locale [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] o in Internet.
+Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] . Usare la **Aggiungi riferimento al servizio** finestra di dialogo per cercare nella soluzione corrente, in locale, in una rete locale [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] o in Internet.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-È possibile usare **il nodo Servizi connessi** in **Esplora soluzioni** per accedere al **Microsoft WCF Web Service Reference Provider**, che consente di gestire i riferimenti al servizio dati Windows Communication Foundation (WCF).
+È possibile usare il **nodo Servizi connessi** in **Esplora soluzioni** per accedere al **Microsoft WCF Web Service Reference Provider**, che consente di gestire i riferimenti al servizio dati Windows Communication Foundation (WCF).
 ::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -41,7 +41,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
 
 ::: moniker range="vs-2017"
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del progetto a cui si vuole aggiungere il servizio, quindi **scegliere Aggiungi riferimento al servizio**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del progetto a cui si vuole aggiungere il servizio e quindi scegliere **Aggiungi riferimento al servizio**.
 
    Viene visualizzata la finestra di dialogo **Aggiungi riferimento al servizio**.
 
@@ -50,11 +50,11 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
     > [!NOTE]
     > Si consiglia di fare riferimento solo a servizi provenienti da un'origine attendibile. L'aggiunta di riferimenti da un'origine non attendibile può compromettere la sicurezza.
 
-     È anche possibile selezionare l'URL **dall'elenco** Indirizzi in cui sono archiviati i 15 URL precedenti in cui sono stati trovati metadati del servizio validi.
+     È anche possibile selezionare l'URL **dall'elenco** Indirizzi, in cui sono archiviati i 15 URL precedenti in cui sono stati trovati metadati del servizio validi.
 
      Quando viene eseguita la ricerca, viene visualizzato un indicatore di stato. È possibile arrestare la ricerca in qualsiasi momento facendo clic su **Arresta**.
 
-1. **Nell'elenco** Servizi espandere il nodo del servizio che si vuole usare e selezionare un set di entità.
+1. **Nell'elenco** Servizi espandere il nodo per il servizio che si vuole usare e selezionare un set di entità.
 
 1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
 
@@ -63,7 +63,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
      Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio vengono aggiunti al file *app.config* servizio.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. In **Esplora soluzioni** fare doppio clic o toccare il **Servizi connessi** nodo.
+1. In **Esplora soluzioni** fare doppio clic o toccare il Servizi connessi **nodo.**
 
    Verrà **visualizzata la scheda Configura** servizi.
 
@@ -83,7 +83,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
 
      Quando viene eseguita la ricerca, viene visualizzato un indicatore di stato. È possibile arrestare la ricerca in qualsiasi momento facendo clic su **Arresta**.
 
-1. **Nell'elenco** Servizi espandere il nodo del servizio che si vuole usare e selezionare un set di entità.
+1. **Nell'elenco** Servizi espandere il nodo per il servizio che si vuole usare e selezionare un set di entità.
 
 1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
 
@@ -97,15 +97,15 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
 
 ::: moniker range="vs-2017"
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del progetto a cui si vuole aggiungere il servizio, quindi **scegliere Aggiungi riferimento al servizio**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del progetto a cui si vuole aggiungere il servizio e quindi scegliere **Aggiungi riferimento al servizio**.
 
     Viene visualizzata la finestra di dialogo **Aggiungi riferimento al servizio**.
 
 1. Fare clic **su Individua**.
 
-    Tutti i servizi ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco Servizi . 
+    Tutti i servizi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] (entrambi e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **Servizi.**
 
-1. **Nell'elenco** Servizi espandere il nodo del servizio che si vuole usare e selezionare un set di entità.
+1. **Nell'elenco** Servizi espandere il nodo per il servizio che si vuole usare e selezionare un set di entità.
 
 1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
 
@@ -114,7 +114,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
     Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio vengono aggiunti al file *app.config* servizio.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. In **Esplora soluzioni** fare doppio clic o toccare il **Servizi connessi** nodo. 
+1. In **Esplora soluzioni** fare doppio clic o toccare il Servizi connessi **nodo.** 
 
    Verrà **visualizzata la scheda Configura** servizi.
 
@@ -124,9 +124,9 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
 
 1. Fare clic **su Individua**.
 
-    Tutti i servizi ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco Servizi . 
+    Tutti i servizi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] (entrambi e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **Servizi.**
 
-1. **Nell'elenco** Servizi espandere il nodo del servizio che si vuole usare e selezionare un set di entità.
+1. **Nell'elenco** Servizi espandere il nodo per il servizio che si vuole usare e selezionare un set di entità.
 
 1. Nella casella **Spazio dei nomi** immettere lo spazio dei nomi che si vuole usare per il riferimento.
 
@@ -138,11 +138,11 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
 
 ## <a name="update-a-service-reference"></a>Aggiornare un riferimento al servizio
 
-Il Entity Data Model per un oggetto [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] a volte cambia. In questo caso, è necessario aggiornare il riferimento al servizio.
+La Entity Data Model per un oggetto [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] a volte cambia. In questo caso, è necessario aggiornare il riferimento al servizio.
 
 ### <a name="to-update-a-service-reference"></a>Per aggiornare un riferimento al servizio
 
-- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul riferimento al servizio e quindi **scegliere Aggiorna riferimento al servizio.**
+- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul riferimento al servizio e quindi scegliere **Aggiorna riferimento al servizio**.
 
      Viene visualizzata una finestra di dialogo di stato mentre il riferimento viene aggiornato dalla posizione originale e il client del servizio viene rigenerato per riflettere eventuali modifiche nei metadati.
 
@@ -152,13 +152,13 @@ Se un riferimento al servizio non viene più usato, è possibile rimuoverlo dall
 
 ### <a name="to-remove-a-service-reference"></a>Per rimuovere un riferimento al servizio
 
-- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul riferimento al servizio e quindi scegliere **Elimina.**
+- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul riferimento al servizio e quindi scegliere **Elimina**.
 
-     Il client del servizio verrà rimosso dalla soluzione e i metadati che descrivono il servizio verranno rimossi dal file *app.config.*
+     Il client del servizio verrà rimosso dalla soluzione e i metadati che descrivono il servizio verranno rimossi dal file *app.config* file.
 
     > [!NOTE]
     > Qualsiasi codice che fa riferimento al riferimento al servizio deve essere rimosso manualmente.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Windows Servizi Communication Foundation e servizi dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation Services e servizi dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

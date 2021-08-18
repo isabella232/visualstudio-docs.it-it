@@ -11,14 +11,15 @@ ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: af03a6aa730a81d5e563a28271e2606004de2562
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6f8578ca439d32dbaae13356b0f76fb890d2d5ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113611"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Enumera i vari simboli contenuti nell'origine dati.
@@ -30,20 +31,20 @@ IDiaEnumSymbols : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaEnumSymbols` .
+Nella tabella seguente vengono illustrati i metodi di `IDiaEnumSymbols` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Recupera la `IEnumVARIANT Interface` versione dell'enumeratore.|
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Recupera la versione `IEnumVARIANT Interface` di questo enumeratore.|
 |[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Recupera il numero di simboli.|
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Recupera un simbolo per mezzo di un indice.|
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Recupera un simbolo tramite un indice.|
 |[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Recupera un numero specificato di simboli nella sequenza di enumerazione.|
 |[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Ignora un numero specificato di simboli in una sequenza di enumerazione.|
 |[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
 |[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 
 ## <a name="remarks"></a>Commenti
-Questa interfaccia fornisce i simboli raggruppati in base a un tipo specifico di simbolo, ad esempio, `SymTagUDT` (tipi definiti dall'utente) o `SymTagBaseClass` . Per lavorare con i simboli raggruppati per indirizzo, usare l'interfaccia [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) .
+Questa interfaccia fornisce simboli raggruppati in base a un tipo specifico di simbolo, ad esempio (tipi definiti `SymTagUDT` dall'utente) o `SymTagBaseClass` . Per usare i simboli raggruppati per indirizzo, usare [l'interfaccia IDiaEnumSymbolsByAddr.](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando i metodi seguenti:
@@ -55,10 +56,10 @@ Ottenere questa interfaccia chiamando i metodi seguenti:
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)
 
 ## <a name="example"></a>Esempio
-In questo esempio viene illustrato come ottenere l' `IDiaEnumSymbols` interfaccia e quindi utilizzare tale enumerazione per elencare i tipi definiti dall'utente (UDT).
+In questo esempio viene illustrato come ottenere l'interfaccia e quindi utilizzare tale enumerazione per elencare i tipi `IDiaEnumSymbols` definiti dall'utente (UDT).
 
 > [!NOTE]
-> `CDiaBSTR` è una classe che esegue il wrapping `BSTR` di un oggetto e gestisce automaticamente la liberazione della stringa quando la creazione dell'istanza esce dall'ambito.
+> `CDiaBSTR` è una classe che esegue il wrapping di un oggetto e gestisce automaticamente la liberatura della stringa quando la creazione di istanze `BSTR` esce dall'ambito.
 
 ```C++
 void ShowUDTs(IDiaSymbol *pGlobals)
@@ -87,9 +88,9 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: Dia2.h
 
-Libreria: diaguids. lib
+Libreria: diaguids.lib
 
 DLL: msdia80.dll
 

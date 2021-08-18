@@ -1,6 +1,6 @@
 ---
-title: Eseguire l'associazione ai dati dal servizio nel progetto del componente aggiuntivo VSTO
-description: Informazioni su come aggiungere controlli a un documento di Microsoft Word, associare i controlli ai dati recuperati da MSDN Content Service e rispondere agli eventi in fase di esecuzione.
+title: Eseguire l'associazione ai dati dal servizio VSTO progetto di componente aggiuntivo
+description: Informazioni su come aggiungere controlli a Microsoft Word documento, associare i controlli ai dati recuperati da MSDN Content Service e rispondere agli eventi in fase di esecuzione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b6993cb3eebc7641f4486bdc617ecb78e40aa05c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 1a80c4f6dea1861bd91cfcfe4985975fc7a5e10e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824528"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082673"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procedura dettagliata: Eseguire l'associazione ai dati da un servizio in un progetto di componente aggiuntivo VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procedura dettagliata: Eseguire l'associazione ai dati da un servizio in un VSTO di componente aggiuntivo
   È possibile associare dati ai controlli host nei progetti di componente aggiuntivo VSTO. Questa procedura dettagliata illustra come aggiungere controlli a un documento di Microsoft Office Word, associare i controlli ai dati recuperati dal servizio per la gestione del contenuto MSDN e rispondere agli eventi in fase di esecuzione.
 
  **Si applica a:** le informazioni contenute in questo argomento sono valide per i progetti a livello di applicazione per Word 2010. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
@@ -52,7 +53,7 @@ ms.locfileid: "107824528"
 
 1. Creare un progetto di componente aggiuntivo VSTO di Word denominato **MTPS Content Service** usando Visual Basic o C#.
 
-     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Per altre informazioni, vedere [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio apre il file `ThisAddIn.vb` o `ThisAddIn.cs` e aggiunge il progetto a **Esplora soluzioni**.
 
@@ -117,4 +118,4 @@ ms.locfileid: "107824528"
      Le informazioni vengono scaricate da MTPS Content Service e visualizzate nel controllo contenuto.
 
 ## <a name="see-also"></a>Vedi anche
-- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)

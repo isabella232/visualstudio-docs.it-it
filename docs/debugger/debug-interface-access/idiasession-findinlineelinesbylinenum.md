@@ -9,14 +9,15 @@ ms.assetid: cf32ae7c-a0c8-4800-bc8f-d64fdd15fb06
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 130c270e0be0e38768018467e117361c9befd796
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5a1bcec3f5738781bfe9331682df2cc6e8a9847148ac0448cbeae3259e2a8941
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147765"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454911"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, nel file di origine e nel numero di riga specificati.
@@ -36,26 +37,26 @@ HRESULT findInlineeLinesByVA (
 #### <a name="parameters"></a>Parametri
  `compiland`
 
-in Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il modulo in cui cercare i numeri di riga. Questo parametro non può essere `NULL`.
+[in] Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il compilando in cui cercare i numeri di riga. Questo parametro non può essere `NULL`.
 
  `file`
 
-in Oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine in cui eseguire la ricerca. Questo parametro non può essere `NULL`.
+[in] Oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine in cui eseguire la ricerca. Questo parametro non può essere `NULL`.
 
  `linenum`
 
-in Specifica un numero di riga in base 1.
+[in] Specifica un numero di riga in base uno.
 
 > [!NOTE]
-> Non è possibile usare zero per specificare tutte le righe (usare il metodo [IDiaSession:: findLines](../../debugger/debug-interface-access/idiasession-findlines.md) per trovare tutte le righe).
+> Non è possibile usare zero per specificare tutte le righe (usare il [metodo IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) per trovare tutte le righe).
 
  `column`
 
-in Specifica il numero di colonna. Usare zero per specificare tutte le colonne. Una colonna è un offset di byte in una riga.
+[in] Specifica il numero di colonna. Usare zero per specificare tutte le colonne. Una colonna è un offset di byte in una riga.
 
  `ppResult`
 
-out Restituisce un oggetto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco dei numeri di riga recuperati.
+[out] Restituisce un [oggetto IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco dei numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

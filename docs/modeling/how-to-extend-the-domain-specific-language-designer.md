@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d9354e3b846f48a79aa5cdd0f39a159bd007cdd3
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 570c37fd395d4768e7c583163dada744e16930644fabbabfa494063719234fd8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387217"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356088"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 
@@ -30,7 +31,7 @@ Configurare un progetto contenente il codice dell'estensione e un progetto VSIX 
 
 1. Creare un nuovo progetto usando il **modello di progetto Libreria** di classi. Questo progetto conterrà il codice delle estensioni.
 
-2. Creare un nuovo **progetto VSIX.**
+2. Creare un nuovo **progetto Project VSIX.**
 
      Selezionare **Aggiungi alla soluzione**.
 
@@ -38,7 +39,7 @@ Configurare un progetto contenente il codice dell'estensione e un progetto VSIX 
 
 3. Sopra il campo Contenuto fare clic **su Aggiungi contenuto**.
 
-4. Nella finestra **di dialogo Aggiungi** contenuto impostare Select a Content **Type** (Seleziona un tipo di contenuto) su **MeF Component (Componente MEF)** e **Project (Progetto)** sul progetto di libreria di classi.
+4. Nella finestra **di dialogo Aggiungi** contenuto impostare Seleziona un tipo di contenuto su Componente **MEF** **e** impostare Project progetto di libreria di classi. 
 
 5. Fare **clic su Seleziona edizioni** e assicurarsi Visual Studio Enterprise selezionata. 
 
@@ -72,19 +73,19 @@ Per distribuire le estensioni nel Visual Studio e in altri computer, seguire que
 
 1. Trovare il file di installazione di VSIX nel progetto VSIX in bin \\ * \\ \* .vsix
 
-2. Copiare questo file nel computer di destinazione e quindi in Esplora risorse (o Esplora file) fare doppio clic su di esso.
+2. Copiare questo file nel computer di destinazione e quindi in Esplora Windows (o Esplora file) fare doppio clic su di esso.
 
-     Verrà Visual Studio gestione estensioni per confermare che l'estensione è stata installata.
+     Verrà Visual Studio Gestione estensioni per confermare che l'estensione è stata installata.
 
 Per disinstallare l'estensione, seguire questa procedura:
 
-1. in Visual Studio scegliere Gestione **estensioni** dal menu **Strumenti**.
+1. in Visual Studio scegliere Gestione estensioni **dal** menu **Strumenti**.
 
 2. Selezionare l'estensione ed eliminarla.
 
 ## <a name="add-a-shortcut-menu-command"></a>Aggiungere un comando di menu di scelta rapida
 
-Per fare in modo che un comando di menu di scelta rapida venga visualizzato nella superficie di Finestra di progettazione DSL o nella finestra esplora DSL, scrivere una classe simile alla seguente.
+Per fare in modo che un comando di menu di scelta rapida venga visualizzato nella superficie Finestra di progettazione DSL o nella finestra Esplora DSL, scrivere una classe simile alla seguente.
 
 La classe deve `ICommandExtension` implementare e deve avere l'attributo `DslDefinitionModelCommandExtension` .
 

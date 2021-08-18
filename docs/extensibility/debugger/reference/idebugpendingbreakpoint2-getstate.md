@@ -1,6 +1,6 @@
 ---
 description: Ottiene lo stato del punto di interruzione in sospeso.
-title: 'IDebugPendingBreakpoint2:: GetState | Microsoft Docs'
+title: IDebugPendingBreakpoint2::GetState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,17 +12,18 @@ ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa30a530d2916176b83dfc7e0b8720380ae214fa
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 46d8a67081c4f43fa13726b2f1f163c96e637d39931fea39928e5a89803d4b00
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072637"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339125"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 Ottiene lo stato del punto di interruzione in sospeso.
@@ -43,7 +44,7 @@ int GetState(
 
 ## <a name="parameters"></a>Parametri
 `pState`\
-[in, out] Struttura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) compilata con una descrizione di questo punto di interruzione in sospeso.
+[in, out] Struttura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) che viene compilata con una descrizione di questo punto di interruzione in sospeso.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,6 +1,6 @@
 ---
 title: Debug, finestra di dialogo Opzioni | Microsoft Docs
-description: Trovare i collegamenti che descrivono la finestra di dialogo Opzioni per il debug generale, il debug JIT, il debug della finestra di output e il debug dei simboli in Visual Studio.
+description: Collegamenti che descrivono la finestra di dialogo Opzioni per il debug generale, il debug JIT, il debug della finestra di output e il debug dei simboli in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,23 +21,24 @@ ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6048ff2b86b41a2b825f87d9c9ff9078d414cb7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d06b4caa49f67203fad3eab081d3d2de3e8f9e32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872508"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097428"
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
 Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal menu **Strumenti** sono contenute le pagine elencate di seguito, che consentono di specificare le impostazioni del debugger.
 
-- [Generale, debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
+- [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
 
-- [JIT, debug, finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [JIT, Debug, finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md)
 
-- [Finestra di output, debug, finestra di dialogo Opzioni](../debugger/output-window-debugging-options-dialog-box.md)
+- [Finestra di output, Debug, finestra di dialogo Opzioni](../debugger/output-window-debugging-options-dialog-box.md)
 
 - [Simboli, Debug, finestra di dialogo Opzioni](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 

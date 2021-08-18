@@ -1,5 +1,5 @@
 ---
-title: DA0012-quantità significativa di Reflection | Microsoft Docs
+title: DA0012 - Quantità significativa di reflection | Microsoft Docs
 description: Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,16 @@ ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 733f9d6c38b93005c0344de2f3d5b1d43093c12e
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: a242692ca65a04b2c4841ebe09b5392a328535c0f04d0875ac9c639ad688919d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469961"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121355490"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Utilizzo elevato della reflection
 

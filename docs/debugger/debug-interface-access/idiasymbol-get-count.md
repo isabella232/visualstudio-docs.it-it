@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 405e3b1a06c1dfc1bfe8756f1d990e547dc9dce65ee16448dce8ac219e909a02
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d084631be07c7f670ccf7b344afe0061ada5317a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380001"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097772"
 ---
 # <a name="idiasymbolget_count"></a>IDiaSymbol::get_count
 Recupera il numero di elementi in un elenco o in una matrice.

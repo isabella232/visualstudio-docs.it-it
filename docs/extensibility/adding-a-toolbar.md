@@ -1,6 +1,6 @@
 ---
 title: Aggiunta di una barra degli strumenti | Microsoft Docs
-description: Informazioni su come aggiungere una barra degli strumenti contenente i pulsanti associati ai comandi di Visual Studio Integrated Development Environment (IDE).
+description: Informazioni su come aggiungere una barra degli strumenti contenente pulsanti associati ai comandi Visual Studio ambiente di sviluppo integrato (IDE).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,33 +11,34 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1b478041492bfb857c5497b6df5e2c4af9ad355
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 40d28a92e6c4c0695c21bc7271417aff2fd778f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094939"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035319"
 ---
 # <a name="add-a-toolbar"></a>Aggiungere una barra degli strumenti
-Questa procedura dettagliata illustra come aggiungere una barra degli strumenti all'IDE di Visual Studio.
+Questa procedura dettagliata illustra come aggiungere una barra degli strumenti all Visual Studio IDE.
 
- Una barra degli strumenti è una striscia orizzontale o verticale che contiene i pulsanti associati ai comandi. A seconda della relativa implementazione, una barra degli strumenti nell'IDE può essere riposizionata, ancorata a qualsiasi lato della finestra principale dell'IDE o creata per restare davanti ad altre finestre.
+ Una barra degli strumenti è una striscia orizzontale o verticale che contiene pulsanti associati ai comandi. A seconda dell'implementazione, una barra degli strumenti nell'IDE può essere riposizionata, ancorata su qualsiasi lato della finestra principale dell'IDE o impostata per rimanere davanti ad altre finestre.
 
- Inoltre, gli utenti possono aggiungere comandi a una barra degli strumenti o rimuoverli tramite la finestra di dialogo **Personalizza** . In genere, le barre degli strumenti in VSPackage sono personalizzabili dall'utente. L'IDE gestisce tutte le personalizzazioni e il pacchetto VSPackage risponde ai comandi. Non è necessario che il pacchetto VSPackage sappia dove si trova fisicamente un comando.
+ Inoltre, gli utenti possono aggiungere comandi a una barra degli strumenti o rimuoverli da essa usando la **finestra di** dialogo Personalizza. In genere, le barre degli strumenti nei pacchetti VSPackage sono personalizzabili dall'utente. L'IDE gestisce tutte le personalizzazioni e il pacchetto VSPackage risponde ai comandi. Il pacchetto VSPackage non deve sapere dove si trova fisicamente un comando.
 
- Per ulteriori informazioni sui menu, vedere [comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md).
+ Per altre informazioni sui menu, vedere [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
- A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-an-extension-with-a-toolbar"></a>Creare un'estensione con una barra degli strumenti
- Creare un progetto VSIX denominato `IDEToolbar` . Aggiungere un modello di elemento del comando di menu denominato **ToolbarTestCommand**. Per informazioni su come eseguire questa operazione, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+ Creare un progetto VSIX denominato `IDEToolbar` . Aggiungere un modello di voce di comando di menu **denominato ToolbarTestCommand**. Per informazioni su come eseguire questa operazione, vedere [Creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Creare una barra degli strumenti per l'IDE
 
-1. In *ToolbarTestCommandPackage. vsct* cercare la sezione simboli. Nell'elemento GuidSymbol denominato guidToolbarTestCommandPackageCmdSet aggiungere le dichiarazioni per una barra degli strumenti e un gruppo di barre degli strumenti, come indicato di seguito.
+1. In *ToolbarTestCommandPackage.vsct* cercare la sezione Simboli. Nell'elemento GuidSymbol denominato guidToolbarTestCommandPackageCmdSet aggiungere dichiarazioni per una barra degli strumenti e un gruppo di barre degli strumenti, come indicato di seguito.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -45,7 +46,7 @@ Questa procedura dettagliata illustra come aggiungere una barra degli strumenti 
 
     ```
 
-2. Nella parte superiore della sezione comandi creare una sezione di menu. Aggiungere un elemento di menu alla sezione menu per definire la barra degli strumenti.
+2. Nella parte superiore della sezione Comandi creare una sezione Menu. Aggiungere un elemento Menu alla sezione Menu per definire la barra degli strumenti.
 
     ```xml
     <Menus>
@@ -60,9 +61,9 @@ Questa procedura dettagliata illustra come aggiungere una barra degli strumenti 
     </Menus>
     ```
 
-     Non è possibile nidificare le barre degli strumenti come sottomenu. Non è pertanto necessario assegnare un gruppo padre. Non è inoltre necessario impostare una priorità perché l'utente può spostare le barre degli strumenti. In genere, il posizionamento iniziale di una barra degli strumenti viene definito a livello di codice, ma le successive modifiche da parte dell'utente sono rese permanente.
+     Le barre degli strumenti non possono essere annidate come sottomenu. Pertanto, non è necessario assegnare un gruppo padre. Inoltre, non è necessario impostare una priorità, perché l'utente può spostare le barre degli strumenti. In genere, la posizione iniziale di una barra degli strumenti viene definita a livello di codice, ma le modifiche successive apportate dall'utente vengono rese persistenti.
 
-3. Nella sezione [gruppi](../extensibility/groups-element.md) , dopo la voce di gruppo esistente, definire un elemento di [gruppo](../extensibility/group-element.md) che contenga i comandi per la barra degli strumenti.
+3. Nella sezione [Gruppi,](../extensibility/groups-element.md) dopo la voce di gruppo esistente, definire un [elemento Group](../extensibility/group-element.md) per contenere i comandi per la barra degli strumenti.
 
     ```xml
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"
@@ -71,7 +72,7 @@ Questa procedura dettagliata illustra come aggiungere una barra degli strumenti 
     </Group>
     ```
 
-4. Fare in modo che il pulsante venga visualizzato sulla barra degli strumenti. Nella sezione pulsanti sostituire il blocco padre nel pulsante sulla barra degli strumenti. Il blocco del pulsante risultante sarà simile al seguente:
+4. Fare in modo che il pulsante venga visualizzato sulla barra degli strumenti. Nella sezione Pulsanti sostituire il blocco Padre in Pulsante sulla barra degli strumenti. Il blocco Button risultante dovrebbe essere simile al seguente:
 
     ```xml
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">
@@ -83,13 +84,13 @@ Questa procedura dettagliata illustra come aggiungere una barra degli strumenti 
     </Button>
     ```
 
-     Per impostazione predefinita, se una barra degli strumenti non ha alcun comando, non viene visualizzata.
+     Per impostazione predefinita, se una barra degli strumenti non dispone di comandi, non viene visualizzata.
 
 5. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.
 
-6. Fare clic con il pulsante destro del mouse sulla barra dei menu di Visual Studio per ottenere l'elenco delle barre degli strumenti. Selezionare **barra degli strumenti di test**.
+6. Fare clic con il pulsante destro Visual Studio menu di scelta rapida per ottenere l'elenco delle barre degli strumenti. Selezionare Barra **degli strumenti di test**.
 
-7. A questo punto la barra degli strumenti verrà visualizzata come icona a destra dell'icona Cerca nei file. Quando si fa clic sull'icona, viene visualizzata una finestra di messaggio che indica **ToolbarTestCommandPackage. All'interno di IDEToolbar. ToolbarTestCommand. MenuItemCallback ()**.
+7. A questo punto la barra degli strumenti dovrebbe essere visualizzata come icona a destra dell'icona Trova nei file. Quando si fa clic sull'icona, verrà visualizzata una finestra di messaggio che indica **ToolbarTestCommandPackage. All'interno di IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

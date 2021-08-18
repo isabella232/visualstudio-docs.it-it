@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fad740b0111f909af92a3e8ccc42e10c574b321946f17d386a04ded41408c31b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a62e0714da65552eedc6ca989a5035cdcf655b8d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435790"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096830"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso dei dati IntelliTrace salvati (C#, Visual Basic, C++)
 
@@ -163,7 +163,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     Esempio:
 
-    ![Errore di &#45; SharePoint IntelliTrace &#45; di correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![Errore di &#45; SharePoint IntelliTrace &#45;'ID correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
 2. Aprire il file .iTrace, quindi passare ad **Analisi** e immettere l'ID di correlazione SharePoint per esaminare eventi registrati e di richieste Web corrispondenti.
 
@@ -205,7 +205,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 3. Scegliere **Debug eccezione** per avviare il debug nel punto e nel momento in cui si è verificata l'eccezione.
 
-    ![Eccezioni non gestite &#45; SharePoint log intelliTrace](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Eccezioni non gestite &#45; SharePoint log di IntelliTrace](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
    Per una procedura dettagliata, vedere [Procedura dettagliata: debug di un'SharePoint tramite IntelliTrace.](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md) Per i tipi di dati che l'agente registra, vedere [Funzionalità intelliTrace](../debugger/intellitrace-features.md).
 

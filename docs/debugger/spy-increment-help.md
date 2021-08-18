@@ -1,6 +1,6 @@
 ---
 title: Guida di Spy++ | Microsoft Docs
-description: Visualizzare i collegamenti sull'uso delle visualizzazioni Spy++ e Spy++. Vedere i collegamenti di riferimento che forniscono informazioni dettagliate su ogni comando di menu e finestra di dialogo di Spy++ disponibili.
+description: Visualizzare i collegamenti sull'uso delle visualizzazioni Spy++ e Spy++. Vedere i collegamenti di riferimento che forniscono informazioni dettagliate su ogni comando di menu e finestra di dialogo disponibili di Spy++.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bb361ac9d6dc5134a18399cec9b8a816fdd1123249054fe3c4625ecf580e9360
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 965a1e015a4a5889cb1624ebfb25dbfb213a4f86
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121324600"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096882"
 ---
 # <a name="spy-help"></a>Guida di Spy++
-La documentazione per l'utilità Spy++ include due gruppi di argomenti generali sull'uso di Spy++ e sulle visualizzazioni di Spy++. Queste informazioni sono seguite da Informazioni di riferimento su Spy++, che fornisce altri dettagli su ogni comando di menu e finestra di dialogo disponibili.
+La documentazione per l'utilità Spy++ include due gruppi di argomenti generali sull'uso di Spy++ e sulle visualizzazioni di Spy++. Questi sono seguiti dalla guida di riferimento di Spy++, che fornisce altri dettagli su ogni comando di menu e finestra di dialogo disponibili.
 
 ## <a name="using-spy"></a>Utilizzo di Spy++
  [Uso di Spy++](../debugger/using-spy-increment.md) Introduce lo strumento Spy++ e spiega come può essere usato.
@@ -31,7 +31,7 @@ La documentazione per l'utilità Spy++ include due gruppi di argomenti generali 
 ## <a name="spy-reference"></a>Riferimenti per Spy++
  [Comandi di menu](../debugger/menu-commands.md) Descrive i comandi disponibili in ogni menu di Spy++.
 
- [Finestra di dialogo Carattere](../debugger/font-dialog-box-microsoft-spy-increment-help.md) Usato per configurare il tipo di carattere utilizzato in una finestra Visualizzazioni di Spy++.
+ [Finestra di dialogo Tipo di carattere](../debugger/font-dialog-box-microsoft-spy-increment-help.md) Usato per configurare il tipo di carattere usato in una finestra Visualizzazioni di Spy++.
 
  [Strumenti di ricerca per le visualizzazioni di Spy++](../debugger/search-tools-for-spy-increment-views.md) Finestre di dialogo usate per trovare un nodo specifico in una finestra Visualizzazioni di Spy++.
 

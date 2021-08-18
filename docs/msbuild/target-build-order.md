@@ -1,6 +1,6 @@
 ---
 title: Ordine di compilazione delle destinazioni | Microsoft Docs
-description: Informazioni su come specificare l'ordine in cui vengono eseguite le destinazioni MSBuild, se l'input per una destinazione dipende dall'output di un'altra destinazione.
+description: Informazioni su come specificare l'ordine di esecuzione MSBuild destinazioni, se l'input per una destinazione dipende dall'output di un'altra destinazione.
 ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 873f669890e84281f73a96fa1739d267c10e83a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e2f5df6b5700127f6e10b8bb3f5fea758c1c1ca1ed5c86a9d88fa2331ca4dd0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966136"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334042"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 
@@ -25,7 +26,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 - `InitialTargets`. Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.
 
-- `DefaultTargets`. Questo `Project` attributo specifica le destinazioni da eseguire se una destinazione non viene specificata in modo esplicito nella riga di comando.
+- `DefaultTargets`. Questo `Project` attributo specifica quali destinazioni vengono eseguite se una destinazione non viene specificata in modo esplicito nella riga di comando.
 
 - `DependsOnTargets`. Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.
 
@@ -33,7 +34,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 Una destinazione non viene mai eseguita due volte durante una compilazione, anche se ne dipende una destinazione successiva nella compilazione. Dopo che una destinazione è stata eseguita, il contributo alla compilazione è completo.
 
-Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per ulteriori informazioni sulle condizioni, vedere [condizioni](../msbuild/msbuild-conditions.md).
+Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per altre informazioni sulle condizioni, vedere [Condizioni.](../msbuild/msbuild-conditions.md)
 
 ## <a name="initial-targets"></a>Destinazioni iniziali
 
@@ -59,7 +60,7 @@ Il valore dell'attributo `DefaultTargets` può essere un elenco ordinato di dest
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
-È possibile eseguire l'override delle destinazioni predefinite usando l'opzione **-target** nella riga di comando. L'esempio seguente specifica che viene eseguita la destinazione `Build` e quindi la destinazione `Report`. Quando si specificano le destinazioni in questo modo, le destinazioni predefinite vengono ignorate.
+È possibile eseguire l'override delle destinazioni predefinite usando **l'opzione -target** nella riga di comando. L'esempio seguente specifica che viene eseguita la destinazione `Build` e quindi la destinazione `Report`. Quando si specificano le destinazioni in questo modo, le destinazioni predefinite vengono ignorate.
 
  `msbuild -target:Build;Report`
 
@@ -115,7 +116,7 @@ MSBuild determina l'ordine di compilazione delle destinazioni, come segue:
 
 1. Vengono eseguite le destinazioni `InitialTargets`.
 
-2. Vengono eseguite le destinazioni specificate nella riga di comando mediante l'opzione **-target** . Se non si specifica alcuna destinazione nella riga di comando, vengono eseguite le destinazioni `DefaultTargets`. Se nessuna delle due destinazioni è presente, viene eseguita la prima destinazione rilevata.
+2. Le destinazioni specificate nella riga di comando **dall'opzione -target** vengono eseguite. Se non si specifica alcuna destinazione nella riga di comando, vengono eseguite le destinazioni `DefaultTargets`. Se nessuna delle due destinazioni è presente, viene eseguita la prima destinazione rilevata.
 
 3. Viene valutato l'attributo `Condition` della destinazione. Se l'attributo `Condition` è presente e restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione.
 

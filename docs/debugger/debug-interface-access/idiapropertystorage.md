@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 670c669f80661128b9255456c410c784f0e1f65e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 250eb9de245cb4577fdcb797b91419936a90596909c6010363d9b27f243f11bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134289"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121344884"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Consente di leggere le proprietà persistenti di un set di proprietà DIA.
@@ -45,10 +45,10 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaPropertyStorage` .
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Legge i `ULONGLONG` valori in un set di proprietà.|
 
 ## <a name="remarks"></a>Commenti
-Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), un valore di quattro byte `ULONG` univoco per tale set. Le proprietà esposte tramite `IDiaPropertyStorage` l'interfaccia corrispondono alle proprietà disponibili nell'interfaccia padre. Ad esempio, è possibile accedere alle proprietà dell'interfaccia [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) in base al nome tramite l'interfaccia `IDiaPropertyStorage` (si noti, tuttavia, che anche se la proprietà può essere accessibile, non significa che la proprietà sia valida per un determinato `IDiaSymbol` oggetto).
+Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), un valore di quattro byte `ULONG` univoco per tale set. Le proprietà esposte tramite `IDiaPropertyStorage` l'interfaccia corrispondono alle proprietà disponibili nell'interfaccia padre. Ad esempio, è possibile accedere alle proprietà dell'interfaccia [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) in base al nome tramite l'interfaccia (si noti, tuttavia, che anche se la proprietà può essere accessibile, non significa che la proprietà sia valida per `IDiaPropertyStorage` un determinato `IDiaSymbol` oggetto).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando il metodo `QueryInterface` su un'altra interfaccia. È possibile eseguire query per l'interfaccia nelle interfacce `IDiaPropertyStorage` seguenti:
+Ottenere questa interfaccia chiamando il metodo `QueryInterface` su un'altra interfaccia. Per l'interfaccia è possibile eseguire query nelle interfacce `IDiaPropertyStorage` seguenti:
 
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 

@@ -19,16 +19,16 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe4ff23c94a47ff6ef323e0bf8b4cd200f139149cf50c39d7e249f88b749c29d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cf7ed024e98382ea134c27cd697cdae932d735d5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113783"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 
-In questa procedura dettagliata vengono fornite istruzioni dettagliate per SQL istruzioni direttamente su un database usando i metodi DBDirect di un TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile usarli per eseguire stored procedure e istruzioni SQL specifiche chiamando i singoli metodi , e in base alle esigenze dell'applicazione (a differenza del metodo di overload che esegue le istruzioni UPDATE, INSERT e DELETE in un'unica `Insert` `Update` `Delete` `Update` chiamata).
+Questa procedura dettagliata fornisce istruzioni dettagliate per l'SQL di istruzioni direttamente su un database usando i metodi DBDirect di un TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile usarli per eseguire stored procedure e istruzioni SQL specifiche chiamando i singoli metodi , e in base alle esigenze dell'applicazione (a differenza del metodo di overload che esegue le istruzioni UPDATE, INSERT e DELETE in un'unica `Insert` `Update` `Delete` `Update` chiamata).
 
 Durante questa procedura dettagliata, si apprenderà come:
 
@@ -46,11 +46,11 @@ Durante questa procedura dettagliata, si apprenderà come:
 
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** **Nell'Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte del  carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** **Nell'Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la **finestra SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
+    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -66,7 +66,7 @@ Il primo passaggio consiste nel creare **un'Windows'applicazione Form.**
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
+2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
 
 3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
 
@@ -110,7 +110,7 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
 Creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.
 
-Per creare controlli associati a dati nel form Windows, trascinare il nodo **Region** principale dalla **finestra Origini** dati nel form.
+Per creare controlli associati a dati nel form Windows, trascinare il nodo **Region** principale dalla **finestra** Origini dati nel form.
 
 Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md) `RegionTableAdapter` , , e <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingNavigator> .
 

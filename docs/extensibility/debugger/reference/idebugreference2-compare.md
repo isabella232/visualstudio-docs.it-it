@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e56b2d5883e1c26fbfaa8657b8fed3c5236db348
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 29a437cc02f71c739ad90e0f4e1cbd975399baa44224acfd010e8ad60e40af62
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122087561"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415988"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Confronta un riferimento a un altro. Riservato per utilizzi futuri.
@@ -48,7 +48,7 @@ int Compare (
 [in] Valore [dell'enumerazione REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) che specifica l'operazione di confronto, ad esempio uguale a, minore di o maggiore di.
 
 `pReference`\
-[in] Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che rappresenta il riferimento da confrontare.
+[in] Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che rappresenta il riferimento con cui eseguire il confronto.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.

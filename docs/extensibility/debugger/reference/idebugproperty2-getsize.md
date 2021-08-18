@@ -1,6 +1,6 @@
 ---
-description: Ottiene la dimensione, in byte, del valore della proprietà.
-title: 'IDebugProperty2:: GetSize | Microsoft Docs'
+description: Ottiene le dimensioni, in byte, del valore della proprietà.
+title: IDebugProperty2::GetSize | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7db319a420dc63eaec8afcdcbeaa38fe861a4bea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 17a1ec60b6f1a60980292b4a82cb218d4ad69b15d504f9d377334369ee663c01
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064787"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338696"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
-Ottiene la dimensione, in byte, del valore della proprietà.
+Ottiene le dimensioni, in byte, del valore della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +43,10 @@ int GetSize (
 
 ## <a name="parameters"></a>Parametri
 `pdwSize`\
-out Restituisce la dimensione, in byte, del valore della proprietà.
+[out] Restituisce le dimensioni, in byte, del valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Restituisce `S_GETSIZE_NO_SIZE` se la proprietà non ha dimensioni.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore. Restituisce `S_GETSIZE_NO_SIZE` se la proprietà non ha dimensioni.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

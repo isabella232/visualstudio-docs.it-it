@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc8909ac858bbc35fc39ea8c850729d83d9b14cb6152fa397ec37015d100b830
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b7edc27886128def39b139d139a2463223228364
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050819"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Fornisce il supporto per un fornitore di porte per la selezione e l'interazione con un server principale.

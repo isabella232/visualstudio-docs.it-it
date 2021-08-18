@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f450b6717f14776630e354d7f4b7e351a872414c6f1f2076d8ab6ca210d499c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d85e52cea94045b7db84098dffa4e18b2a9d3da1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036366"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 Recupera un enumeratore stack frame per le piattaforme x86.
