@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0fbfd10c7fc50e73f212b2204e70481f85ee1d4f6bf4cfd42ef46537b5e3ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c9e471f3e72568ceb60c3831357548201b69433
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121288880"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061298"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
@@ -118,13 +118,13 @@ Si notino gli aspetti seguenti della nuova soluzione:
 
      Il DSL viene compilato e installato nell'istanza sperimentale di Visual Studio.
 
-     Viene avviata un'istanza sperimentale di Visual Studio. L'istanza sperimentale prende le impostazioni da un sottoalbero separato del Registro di sistema, in cui Visual Studio le estensioni vengono registrate a scopo di debug. Le istanze normali Visual Studio non hanno accesso alle estensioni registrate.
+     Viene avviata un'istanza Visual Studio sperimentale. L'istanza sperimentale accetta le impostazioni da un sottoalbero separato del Registro di sistema, in cui Visual Studio le estensioni vengono registrate a scopo di debug. Le istanze normali Visual Studio non hanno accesso alle estensioni registrate.
 
 3. Nell'istanza sperimentale di Visual Studio aprire il file di modello **denominato Test** da **Esplora soluzioni**.
 
      \- - oppure -
 
-     Fare clic con il pulsante destro del mouse sul progetto Debug, scegliere **Aggiungi** e quindi fare clic su **Elemento**. Nella finestra **di dialogo Aggiungi** elemento selezionare il tipo di file DSL.
+     Fare clic con il pulsante destro del mouse sul progetto Debug, **scegliere Aggiungi** e quindi fare clic su **Elemento**. Nella finestra **di dialogo Aggiungi** elemento selezionare il tipo di file DSL.
 
      Il file di modello viene aperto come diagramma vuoto.
 
@@ -154,7 +154,7 @@ Se non è possibile visualizzare Esplora risorse nell'istanza di debug di Visual
 
 ### <a name="the-api-of-your-dsl"></a>API del DSL
 
-Il DSL genera un'API che consente di leggere e aggiornare modelli che sono istanze del DSL. Un'applicazione dell'API è la generazione di file di testo da un modello. Per altre informazioni, vedere [Generazione di codice in fase di progettazione tramite modelli di testo T4.](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+Il DSL genera un'API che consente di leggere e aggiornare modelli che sono istanze del DSL. Un'applicazione dell'API è la generazione di file di testo da un modello. Per altre informazioni, vedere Generazione di codice in fase [di progettazione tramite modelli di testo T4.](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
 Nella soluzione Debug aprire i file modello con estensione ".tt". Questi esempi illustrano come generare testo dai modelli e consentono di testare l'API del DSL. Uno degli esempi è scritto in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , l'altro in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .
 
@@ -164,7 +164,7 @@ Il file modello contiene un breve segmento di codice che elenca tutti gli elemen
 
 Il file generato contiene il risultato.
 
-Quando si modifica un file di modello, verranno visualizzati i corrispondenti cambiamenti nei file generati dopo la rigenerazione dei file.
+Quando si modifica un file di modello, dopo la rigenerazione dei file verranno apportate le modifiche corrispondenti nei file generati.
 
 #### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Per rigenerare i file di testo dopo aver modificato il file di modello
 
@@ -183,22 +183,22 @@ Quando si modifica un file di modello, verranno visualizzati i corrispondenti ca
 > [!NOTE]
 > Quando si modifica la definizione DSL, il codice del modello di testo di esempio non funzionerà, a meno che non venga aggiornato.
 
-Per altre informazioni, vedere [Generazione di](../modeling/generating-code-from-a-domain-specific-language.md) codice da un linguaggio Domain-Specific e Scrittura di codice per personalizzare un Domain-Specific [linguaggio.](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+Per altre informazioni, vedere [Generazione di](../modeling/generating-code-from-a-domain-specific-language.md) codice da un linguaggio Domain-Specific e Scrittura di codice per personalizzare un [Domain-Specific lingua.](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 
 ## <a name="customizing-the-dsl"></a>Personalizzazione del linguaggio DSL
 
 Quando si vuole modificare la definizione DSL, chiudere l'istanza sperimentale e aggiornare la definizione nell'istanza Visual Studio principale.
 
 > [!NOTE]
-> Dopo aver modificato la definizione DSL, è possibile che si perdano le informazioni nei modelli di test creati usando le versioni precedenti.  Ad esempio, la soluzione di debug contiene un file denominato Sample, che contiene alcune forme e connettori. Dopo aver avviato lo sviluppo della definizione DSL, queste non saranno visibili e andranno perse quando si salva il file.
+> Dopo aver modificato la definizione DSL, è possibile che si perdano le informazioni nei modelli di test creati con le versioni precedenti.  Ad esempio, la soluzione di debug contiene un file denominato Sample, che contiene alcune forme e connettori. Dopo aver avviato lo sviluppo della definizione DSL, queste non saranno visibili e andranno perse quando si salva il file.
 
 È possibile creare un'ampia gamma di estensioni al linguaggio DSL. Gli esempi seguenti offrono un'idea delle possibilità.
 
-Dopo ogni modifica, salvare la definizione DSL, fare clic su **Trasforma** tutti i modelli **in** Esplora soluzioni e quindi premere **F5** per sperimentare il DSL modificato.
+Dopo ogni modifica, salvare la definizione DSL, fare clic su Trasforma tutti i modelli **in** Esplora soluzioni **e** quindi premere **F5** per sperimentare il DSL modificato.
 
 ### <a name="rename-the-types-and-tools"></a>Rinominare i tipi e gli strumenti
 
-Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire da una definizione Dsl creata dal modello Linguaggio minimo, è possibile eseguire le operazioni di ridenominazione seguenti, per fare in modo che il linguaggio DSL rappresenti alberi familiari.
+Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire da una definizione Dsl creata dal modello Linguaggio minimo, è possibile eseguire le operazioni di ridenominazione seguenti per fare in modo che il linguaggio DSL rappresenti gli alberi delle famiglie.
 
 #### <a name="to-rename-domain-classes-relationships-and-tools"></a>Per rinominare classi di dominio, relazioni e strumenti
 
@@ -210,11 +210,11 @@ Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire 
 
     1. Aprire la finestra Esplora DSL facendo clic sulla scheda in Esplora soluzioni. Se non è possibile visualizzarlo, scegliere Altro **dal** menu **Visualizza Windows** quindi fare clic su **Esplora DSL.** Esplora DSL è visibile solo quando il diagramma di definizione DSL è la finestra attiva.
 
-    2. Aprire il Finestra Proprietà e posizionarlo in modo che sia possibile visualizzare DSL Explorer e Proprietà contemporaneamente.
+    2. Aprire il Finestra Proprietà e posizionarlo in modo che sia possibile visualizzare esplora DSL e Proprietà contemporaneamente.
 
     3. In Esplora DSL espandere **Editor**, **Schede casella degli strumenti**, e quindi *\<your DSL>* **Strumenti**.
 
-    4. Fare **clic su ExampleElement**. Si tratta dell'elemento della casella degli strumenti utilizzato per creare elementi.
+    4. Fare clic **su ExampleElement**. Si tratta dell'elemento della casella degli strumenti utilizzato per creare elementi.
 
     5. Nella finestra Finestra Proprietà modificare la **proprietà Name** in **Person**.
 
@@ -282,9 +282,9 @@ Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire 
    ![Diagramma, casella degli strumenti e finestra di esplorazione dell'albero genealogico](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definire nuove classi
- È possibile aggiungere classi di dominio e relazioni a un modello. Ad esempio, è possibile creare una nuova classe per rappresentare le città e una nuova relazione per rappresentare che una persona ha vissuto in una città.
+ È possibile aggiungere classi di dominio e relazioni a un modello. Ad esempio, è possibile creare una nuova classe per rappresentare la città e una nuova relazione per rappresentare una persona che ha una città.
 
- Per rendere i diversi tipi distinti in un diagramma modello, è possibile eseguire il mapping delle classi di dominio a diversi tipi di forma o a forme con geometrie e colori diversi.
+ Per differenziare i diversi tipi in un diagramma del modello, è possibile eseguire il mapping delle classi di dominio a diversi tipi di forma o a forme con geometria e colori diversi.
 
 ##### <a name="to-add-and-display-a-new-domain-class"></a>Per aggiungere e visualizzare una nuova classe di dominio
 
@@ -297,22 +297,22 @@ Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire 
          Impostarne il nome, ad esempio **Città**.
 
         > [!NOTE]
-        > Ogni classe di dominio ad eccezione della radice del modello deve essere la destinazione di almeno una relazione di incorporamento oppure deve ereditare da una classe che è la destinazione di un incorporamento. Per questo motivo, spesso è utile creare una classe di dominio usando lo strumento Relazione di incorporamento.
+        > Ogni classe di dominio, ad eccezione della radice del modello, deve essere la destinazione di almeno una relazione di incorporamento oppure deve ereditare da una classe che rappresenta la destinazione di un'incorporamento. Per questo motivo, spesso è utile creare una classe di dominio usando lo strumento Relazione di incorporamento.
 
-    2. Aggiungere una proprietà di dominio alla nuova classe, ad esempio **Nome**.
+    2. Aggiungere una proprietà di dominio alla nuova classe, ad esempio **Name**.
 
 2. Aggiungere una relazione di riferimento tra Person e Town.
 
-    1. Fare clic **su Relazione di** riferimento, fare clic su Persona e quindi su Città.
+    1. Fare clic su **Relazione di** riferimento , quindi su Persona e infine su Città.
 
          ![Frammento della definizione DSL: radice dell'albero genealogico](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         > Le relazioni di riferimento rappresentano riferimenti incrociati da una parte dell'albero del modello a un'altra.
 
-3. Aggiungere una forma per rappresentare le città nei diagrammi modello.
+3. Aggiungere una forma per rappresentare l'elemento nei diagrammi del modello.
 
-    1. Trascinare **una forma Geometry** dalla casella degli strumenti al diagramma e rinominarla, ad esempio **TownShape**.
+    1. Trascinare **una forma Geometry dalla** casella degli strumenti al diagramma e rinominarla, ad esempio **TownShape**.
 
     2. Nella finestra Finestra Proprietà impostare i campi Aspetto della nuova forma, ad esempio Colore riempimento e Geometria.
 
@@ -320,15 +320,15 @@ Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire 
 
 4. Eseguire il mapping della classe di dominio Town a TownShape.
 
-    1. Fare clic **sulla mappa degli elementi diagramma,** quindi fare clic sulla classe di dominio Town e quindi sulla classe di forma TownShape.
+    1. Fare clic **su Diagram Element Map** , quindi sulla classe di dominio Town e infine sulla classe di forma TownShape.
 
     2. Nella scheda **Decorator Mappe** della finestra **Dettagli DSL** con il connettore mappa selezionato, selezionare NameDecorator e impostare **Proprietà di** visualizzazione su Nome.
 
-5. Creare un connettore per visualizzare la relazione tra Person e Towns.
+5. Creare un connettore per visualizzare la relazione tra Person e Person.
 
     1. Trascinare un connettore dalla casella degli strumenti al diagramma. Rinominarlo e impostarne le proprietà di aspetto.
 
-    2. Usare lo **strumento Mappa elementi** diagramma per collegare il nuovo connettore alla relazione tra Persona e Città.
+    2. Usare lo **strumento Mappa elementi** diagramma per collegare il nuovo connettore alla relazione tra Person e Town.
 
          ![Definizione dell'albero genealogico con mappa di forme aggiunte](../modeling/media/familyt_shapemap.png)
 
@@ -336,27 +336,27 @@ Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire 
 
     1. In **Esplora DSL espandere** **Editor** e quindi Schede casella **degli strumenti**.
 
-    2. Fare clic con il *\<your DSL>* pulsante destro del mouse e scegliere Aggiungi nuovo elemento **.**
+    2. Fare clic con il pulsante *\<your DSL>* destro del mouse e quindi scegliere Aggiungi nuovo elemento **.**
 
     3. Impostare la **proprietà Name** del nuovo strumento e la relativa **proprietà Class** su Town.
 
-    4. Impostare la **proprietà Icona casella degli** strumenti. Fare **clic su [...]** e nel campo Nome **file** selezionare un file di icona.
+    4. Impostare la proprietà **Icona casella degli** strumenti. Fare **clic su [...]** e nel campo Nome **file** selezionare un file di icona.
 
-7. Creare uno strumento connettore per creare un collegamento tra città e persone.
+7. Creare uno strumento connettore per creare un collegamento tra persone e persone.
 
-    1. Fare clic con il *\<your DSL>* pulsante destro del mouse e scegliere Aggiungi nuovo strumento **connettore**.
+    1. Fare clic con il pulsante *\<your DSL>* destro del mouse su e quindi scegliere Aggiungi nuovo strumento **connettore**.
 
     2. Impostare la proprietà Name del nuovo strumento.
 
-    3. Nella proprietà **ConnectionBuilder** selezionare il generatore che contiene il nome della Person-Town relazione.
+    3. Nella proprietà **ConnectionBuilder** selezionare il generatore che contiene il nome della relazione Person-Town connessione.
 
     4. Impostare **l'icona della casella degli strumenti**.
 
-8. Salvare la definizione DSL, fare clic **su Trasforma tutti i modelli** e quindi premere **F5.**
+8. Salvare la definizione DSL, fare **clic su Trasforma tutti i** modelli e quindi premere **F5.**
 
-9. Nell'istanza sperimentale di Visual Studio aprire un file di modello di test. Usare i nuovi strumenti per creare città e collegamenti tra città e persone. Si noti che è possibile creare solo collegamenti tra i tipi corretti di elemento.
+9. Nell'istanza sperimentale di Visual Studio aprire un file di modello di test. Usare i nuovi strumenti per creare collegamenti e collegamenti tra persone e persone. Si noti che è possibile creare collegamenti solo tra i tipi corretti di elemento.
 
-10. Creare il codice che elenca la città in cui risiede ogni persona. I modelli di testo sono una delle posizioni in cui è possibile eseguire tale codice. Ad esempio, è possibile modificare il file Sample.tt esistente nella soluzione Debug in modo che contenga il codice seguente:
+10. Creare il codice che elenca la città in cui risiede ogni persona. I modelli di testo sono una delle posizioni in cui è possibile eseguire tale codice. Ad esempio, è possibile modificare il file Sample.tt esistente nella soluzione debug in modo che contenga il codice seguente:
 
     ```
     <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" debug="true" #>
@@ -381,34 +381,34 @@ Rinominare le classi di dominio e le relazioni esistenti. Ad esempio, a partire 
 
     ```
 
-     Quando si salva il file *.tt, verrà creato un file sussidiaria contenente l'elenco delle persone e delle rispettive residenze. Per altre informazioni, vedere [Generazione di codice da un Domain-Specific linguaggio .](../modeling/generating-code-from-a-domain-specific-language.md)
+     Quando si salva il file *.tt, verrà creato un file affiliato che contiene l'elenco delle persone e delle rispettive persone. Per altre informazioni, vedere [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="validation-and-commands"></a>Convalida e comandi
- È possibile sviluppare ulteriormente questo DSL aggiungendo vincoli di convalida. Questi vincoli sono metodi che è possibile definire, che assicurano che il modello sia in uno stato corretto. Ad esempio, è possibile definire un vincolo per assicurarsi che la data di nascita di un figlio sia successiva a quella dei relativi elementi padre. La funzionalità di convalida visualizza un avviso se l'utente DSL tenta di salvare un modello che interrompe uno dei vincoli. Per altre informazioni, vedere [Convalida in un linguaggio Domain-Specific.](../modeling/validation-in-a-domain-specific-language.md)
+ È possibile sviluppare ulteriormente questo DSL aggiungendo vincoli di convalida. Questi vincoli sono metodi che è possibile definire, che assicurano che il modello si trova in uno stato corretto. Ad esempio, è possibile definire un vincolo per assicurarsi che la data di nascita di un figlio sia successiva a quella dei suoi genitori. La funzionalità di convalida visualizza un avviso se l'utente DSL tenta di salvare un modello che interrompe uno dei vincoli. Per altre informazioni, vedere [Validation in a Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
 
  È anche possibile definire comandi di menu che l'utente può richiamare. I comandi possono modificare il modello. Possono anche interagire con altri modelli in Visual Studio e con risorse esterne. Per altre informazioni, vedere [Procedura: Modificare un comando di menu standard.](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 
-## <a name="deploying-the-dsl"></a>Distribuzione di DSL
- Per consentire ad altri utenti di usare il linguaggio specifico di dominio, si distribuisce un file Visual Studio Extension (VSIX). Viene creato quando si compila la soluzione DSL.
+## <a name="deploying-the-dsl"></a>Distribuzione del DSL
+ Per consentire ad altri utenti di usare il linguaggio specifico di dominio, distribuire un file Visual Studio Extension (VSIX). Viene creato quando si compila la soluzione DSL.
 
  Individuare il file con estensione vsix nella cartella bin della soluzione. Copiarlo nel computer in cui si vuole installarlo. Nel computer fare doppio clic sul file VSIX. Il DSL può essere usato in tutte le istanze Visual Studio nel computer.
 
- È possibile usare la stessa procedura per installare DSL nel proprio computer in modo che non sia necessario usare l'istanza sperimentale di Visual Studio.
+ È possibile usare la stessa procedura per installare il DSL nel proprio computer in modo che non sia necessario usare l'istanza sperimentale di Visual Studio.
 
  Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Rimozione di DSL sperimentali precedente
- Se sono state create DSL sperimentali non più desiderate, è possibile rimuoverle dal computer reimpostando l'istanza sperimentale Visual Studio sperimentale.
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Rimozione di DSL sperimentali
+ Se sono stati creati DSL sperimentali che non si desidera più, è possibile rimuoverli dal computer reimpostando l'istanza sperimentale Visual Studio sperimentale.
 
- Questo rimuoverà dal computer tutte le DSL sperimentali e altre estensioni Visual Studio sperimentali. Si tratta di estensioni eseguite in modalità di debug.
+ Questo rimuoverà dal computer tutti i DSL sperimentali e altre estensioni Visual Studio sperimentali. Si tratta di estensioni eseguite in modalità di debug.
 
- Questa procedura non rimuove le DSL o altre Visual Studio che sono state completamente installate eseguendo il file VSIX.
+ Questa procedura non rimuove le DSL o altre estensioni Visual Studio installate completamente eseguendo il file VSIX.
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Per reimpostare l'Visual Studio sperimentale
 
-1. Fare **clic su Start**, **scegliere** Tutti i programmi , Microsoft Visual Studio **SDK 2010**, **Strumenti** e quindi reimpostare l'istanza **sperimentale Microsoft Visual Studio 2010**.
+1. Fare clic  **sul pulsante Start**, scegliere Tutti i programmi Microsoft Visual Studio **SDK 2010** **,** Strumenti e quindi reimpostare **l'istanza sperimentale di Microsoft Visual Studio 2010**.
 
-2. Ricompilare eventuali DSL sperimentali o altre estensioni Visual Studio sperimentali che si vuole comunque usare.
+2. Ricompilare eventuali DSL sperimentali o altre estensioni Visual Studio sperimentali che si vuole ancora usare.
 
 ## <a name="see-also"></a>Vedi anche
 

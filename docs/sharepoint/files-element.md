@@ -15,15 +15,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 54344e98aaa8982143fd595ac7e6fb4245905c4ee9645953af889fafe15dde80
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 84c3ab0837680fe815f644d6b0456ce0fe066326
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121269184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093229"
 ---
 # <a name="files-element"></a>Files (elemento)
-  Specifica i file da distribuire con l'SharePoint di progetto, ad esempio i file degli elementi funzionalità e l'output dei progetti non SharePoint dipendenti.
+  Specifica i file da distribuire con l'SharePoint di progetto, ad esempio i file di elemento Feature e l'output di progetti non SharePoint dipendenti.
 
 ## <a name="syntax"></a>Sintassi
 

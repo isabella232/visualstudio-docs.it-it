@@ -15,12 +15,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9bb687a250b35a9805dd62eb8008440523d3dd2957d889f0d1a303b07eba8c4a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a29de66f87cd83b67fa688194da4f86eff5533b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384893"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135663"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedura: Creare un plug-in test di carico
 

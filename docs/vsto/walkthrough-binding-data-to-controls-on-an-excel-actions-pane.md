@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Associare dati ai controlli in un riquadro azioni di Excel'
+title: 'Procedura dettagliata: Associare dati a controlli in un riquadro Excel azioni'
 description: Associare dati ai controlli in un riquadro azioni in Microsoft Excel. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
@@ -18,16 +18,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 377c3405211c91712f8754131d8379c3dae7e820
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 7a6a6a914c1777142a1febefa12c0c78bbcb290d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824549"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099347"
 ---
-# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procedura dettagliata: Associare dati ai controlli in un riquadro azioni di Excel
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procedura dettagliata: Associare dati a controlli in un riquadro Excel azioni
   Questa procedura dettagliata illustra data binding controlli in un riquadro azioni in Microsoft Office Excel. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -38,7 +39,7 @@ ms.locfileid: "107824549"
 
 - Creazione di un controllo riquadro azioni.
 
-- Aggiunta di controlli Windows Forms associati a dati a un controllo riquadro azioni.
+- Aggiunta di controlli form Windows dati a un controllo riquadro azioni.
 
 - Visualizzazione del riquadro azioni all'apertura dell'applicazione.
 
@@ -54,28 +55,28 @@ ms.locfileid: "107824549"
 
 - Accesso a un server con il database di SQL Server Northwind.
 
-- Autorizzazioni per la lettura e la scrittura nel database SQL Server database.
+- Autorizzazioni per la lettura e la scrittura nel database SQL Server.
 
 ## <a name="create-the-project"></a>Creare il progetto
  Il primo passaggio consiste nella creazione di un progetto Cartella di lavoro di Excel.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto Cartella di lavoro di Excel con il nome **Riquadro azioni di Excel personale**. Nella procedura guidata selezionare **Crea un nuovo documento**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto Excel cartella di lavoro con il nome **My Excel Actions Pane**. Nella procedura guidata selezionare **Crea un nuovo documento.** Per altre informazioni, [vedere Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio apre la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il progetto Riquadro azioni di **Excel** **personale a Esplora soluzioni**.
+     Visual Studio apre la nuova cartella Excel cartella di lavoro nella finestra di progettazione e aggiunge il progetto Riquadro **azioni** Excel a **Esplora soluzioni**.
 
 ## <a name="add-a-new-data-source-to-the-project"></a>Aggiungere una nuova origine dati al progetto
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>Per aggiungere una nuova origine dati al progetto
 
-1. Se la **finestra Origini** dati non è visibile, visualizzarla da sulla barra dei menu scegliendo **Visualizza** altre origini dati  >  **di**  >  **Windows**.
+1. Se la **finestra Origini** dati non è visibile, visualizzarla nella barra dei menu scegliendo Visualizza altre Windows  >    >  **dati**.
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
 3. Selezionare **Database** e quindi fare clic su **Avanti.**
 
-4. Selezionare una connessione dati al database di esempio Northwind SQL Server o aggiungere una nuova connessione usando il **pulsante Nuova** connessione.
+4. Selezionare una connessione dati al database di esempio Northwind SQL Server oppure aggiungere una nuova connessione usando il **pulsante Nuova** connessione.
 
 5. Fare clic su **Avanti**.
 
@@ -96,7 +97,7 @@ ms.locfileid: "107824549"
 
 ### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Per aggiungere un controllo NamedRange e un controllo ListObject
 
-1. Verificare che la **cartella di lavoro My Excel Actions Pane.xlsx** sia aperta nella finestra di progettazione Visual Studio, con visualizzato `Sheet1` .
+1. Verificare che la **cartella di lavoro Excel Actions Pane.xlsx** sia aperta nella finestra di progettazione Visual Studio, con `Sheet1` visualizzata.
 
 2. Nella **finestra Origini** dati espandere la **tabella Suppliers** .
 
@@ -110,42 +111,42 @@ ms.locfileid: "107824549"
 
 6. Fare **clic su ListObject** nell'elenco a discesa e quindi trascinare la **tabella Products** nella cella **A6** in `Sheet1` .
 
-     Nella <xref:Microsoft.Office.Tools.Excel.ListObject> cella `ProductNameListObject` **A6** viene creato un controllo denominato . Allo stesso tempo, al progetto vengono aggiunti un adattatore denominato e <xref:System.Windows.Forms.BindingSource> `productsBindingSource` un adattatore di tabella. Il controllo è associato a , che a sua <xref:System.Windows.Forms.BindingSource> volta è associato <xref:System.Data.DataSet> all'istanza di .
+     Nella <xref:Microsoft.Office.Tools.Excel.ListObject> cella `ProductNameListObject` **A6** viene creato un controllo denominato . Allo stesso tempo, un <xref:System.Windows.Forms.BindingSource> adattatore `productsBindingSource` denominato e un adattatore tabella vengono aggiunti al progetto. Il controllo è associato <xref:System.Windows.Forms.BindingSource> all'oggetto , che a sua volta è associato all'istanza <xref:System.Data.DataSet> di .
 
-7. Solo per C#, selezionare **suppliersBindingSource** nella barra dei componenti e impostare la proprietà **Modifiers** su **Internal** nella **finestra** Proprietà.
+7. Solo per C#, selezionare **suppliersBindingSource** nella barra dei componenti e modificare la proprietà **Modificatori** in **Interno** nella **finestra** Proprietà.
 
 ## <a name="add-controls-to-the-actions-pane"></a>Aggiungere controlli al riquadro azioni
- È quindi necessario un controllo riquadro azioni con una casella combinata.
+ A questo punto, è necessario un controllo riquadro azioni con una casella combinata.
 
 ### <a name="to-add-an-actions-pane-control"></a>Per aggiungere un controllo riquadro azioni
 
-1. Selezionare il **progetto Riquadro azioni di Excel** in **Esplora soluzioni**.
+1. Selezionare il **progetto My Excel Actions Pane** in **Esplora soluzioni**.
 
 2. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-3. Nella finestra **di dialogo Aggiungi nuovo elemento** selezionare Controllo **riquadro** azioni , assegnare al controllo il nome **ActionsControl** e fare clic su **Aggiungi**.
+3. Nella finestra **di dialogo Aggiungi nuovo elemento** selezionare Controllo **riquadro** azioni, assegnare al controllo il nome **ActionsControl** e fare clic su **Aggiungi.**
 
-### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Windows Forms associati a dati a un controllo riquadro azioni
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Form associati Windows dati a un controllo riquadro azioni
 
 1. Dalle schede **Controlli comuni** della Casella **degli strumenti** trascinare un controllo nel controllo <xref:System.Windows.Forms.ComboBox> riquadro azioni.
 
-2. Impostare la **proprietà Size** su **171, 21**.
+2. Modificare la **proprietà Size** in **171, 21**.
 
 3. Ridimensionare il controllo utente per adattarlo alla casella combinata.
 
 ## <a name="bind-the-control-on-the-actions-pane-to-data"></a>Associare il controllo nel riquadro azioni ai dati
  In questa sezione si imposta l'origine dati di sulla stessa origine dati <xref:System.Windows.Forms.ComboBox> del controllo nel foglio di <xref:Microsoft.Office.Tools.Excel.NamedRange> lavoro.
 
-### <a name="to-set-data-binding-properties-of-the-control"></a>Per impostare data binding proprietà predefinite del controllo
+### <a name="to-set-data-binding-properties-of-the-control"></a>Per impostare data binding proprietà del controllo
 
-1. Fare clic con il pulsante destro del mouse sul controllo riquadro azioni e quindi **scegliere Visualizza codice**.
+1. Fare clic con il pulsante destro del mouse sul controllo riquadro azioni e **quindi scegliere Visualizza codice.**
 
-2. Aggiungere il codice seguente <xref:System.Windows.Forms.UserControl.Load> all'evento del controllo riquadro azioni.
+2. Aggiungere il codice seguente <xref:System.Windows.Forms.UserControl.Load> all'evento del controllo del riquadro azioni.
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb" id="Snippet1":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet1":::
 
-3. In C# è necessario creare un gestore eventi per `ActionsControl` . È possibile inserire questo codice nel `ActionsControl` costruttore . Per altre informazioni sulla creazione di gestori eventi, [vedere Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md)
+3. In C# è necessario creare un gestore eventi per `ActionsControl` . È possibile inserire questo codice nel `ActionsControl` costruttore . Per altre informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori eventi in Office progetti](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet2":::
 
@@ -154,7 +155,7 @@ ms.locfileid: "107824549"
 
 #### <a name="to-show-the-actions-pane"></a>Per visualizzare il riquadro azioni
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *ThisWorkbook.vb* *o ThisWorkbook.cs* e quindi **scegliere Visualizza codice.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *ThisWorkbook.vb* o *ThisWorkbook.cs* e quindi **scegliere Visualizza codice.**
 
 2. Creare una nuova istanza del controllo utente nella `ThisWorkbook` classe .
 
@@ -184,9 +185,9 @@ ms.locfileid: "107824549"
 
 - Associazione di dati ai controlli in Word. Per altre informazioni, vedere [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word.](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
 
-- Distribuzione del progetto. Per altre informazioni, vedere [Distribuire una soluzione Office tramite ClickOnce.](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- Distribuzione del progetto. Per altre informazioni, vedere [Distribuire una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica del riquadro Azioni](../vsto/actions-pane-overview.md)
 - [Procedura: Gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)
-- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Associare dati a controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)

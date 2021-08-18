@@ -1,21 +1,22 @@
 ---
 title: Modificare lo stile degli oggetti
 titleSuffix: Blend for Visual Studio
-description: Informazioni su come modificare lo stile degli oggetti in Blend per Visual Studio applicando pennelli, impostando gli Stati di visualizzazione e applicando stili e modelli riutilizzabili.
+description: Informazioni su come modificare lo stile degli oggetti in Blend per Visual Studio applicando pennelli, impostando stati di visualizzazione e applicando stili e modelli riutilizzabili.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b98f814e1f310c7d7f281457589a1a9f7d21653
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b42efe1299d6e2a05e03de5aa99893b97603805
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966552"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037863"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificare lo stile degli oggetti in Blend per Visual Studio
 
@@ -77,7 +78,7 @@ Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è p
 
 > [!NOTE]
 > Non è possibile creare stili o modelli per ogni tipo di controllo. Se questi non sono supportati in un controllo, il pulsante di navigazione non verrà visualizzato sopra la tavola da disegno.
-> Per tornare all'ambito di modifica del documento principale, fare clic su **Reimposta l'ambito** ![Icona Reimposta l'ambito](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Per tornare all'ambito di modifica del documento principale, fare clic su **Return scope to** Return scope to icon ![ (Restituise l'ambito ](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png) all'icona).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Applicare uno stile o un modello a un controllo
 
@@ -87,7 +88,7 @@ Fare clic con il pulsante destro del mouse su un oggetto nella finestra [Oggetti
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Ripristinare lo stile o il modello predefinito di un controllo
 
-Selezionare il controllo e nella finestra * * Proprietà * * * * individuare la proprietà **stile** o **modello** . Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
+Selezionare il controllo e nella finestra **Proprietà**** individuare la **proprietà Stile** **o** Modello. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
 
 ## <a name="visual-states"></a>Stati di visualizzazione
 
@@ -95,7 +96,7 @@ Gli stati di visualizzazione consentono di cambiare l'aspetto di un controllo in
 
 ![Stato di passaggio del mouse](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Breve video:** ![Pulsante Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gestire lo stato dei controlli WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Guardare un breve video:** ![ Pulsante ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Riproduci Consente di gestire lo stato dei controlli WPF.](https://www.youtube.com/watch?v=m0PlkF5i6uw)
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Risorse: creare colori, stili e modelli e riutilizzarli in seguito
 

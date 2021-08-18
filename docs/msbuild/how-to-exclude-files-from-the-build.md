@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Escludere file dalla compilazione | Microsoft Docs'
-description: Informazioni su come escludere o includere in modo esplicito i file dalle compilazioni nei file di progetto MSBuild.
+description: Informazioni su come escludere in modo esplicito o includere in modo condizionale i file dalle compilazioni nei MSBuild di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e838460f1e42f34e92a99198b9d4a0e34ce71dcd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d75523b50cddf5270480747345fbcf021ea655e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914372"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136950"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedura: Escludere file dalla compilazione
 
@@ -27,7 +28,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Escludere un file o una directory dagli input per una compilazione
 
- Gli elenchi di elementi sono i file di input per una compilazione. Gli elementi che si vuole includere vengono dichiarati separatamente o come gruppo usando l'attributo `Include`. Ad esempio:
+ Gli elenchi di elementi sono i file di input per una compilazione. Gli elementi che si vuole includere vengono dichiarati separatamente o come gruppo usando l'attributo `Include`. Esempio:
 
 ```xml
 <CSFile Include="Form1.cs"/>
@@ -38,7 +39,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
 
  Se sono stati usati caratteri jolly per includere tutti i file in una directory o in un set annidato di directory come input per una compilazione, potrebbe essere presente uno o più file nella directory oppure una directory nel set annidato di directory che non si vuole includere. Per escludere un elemento dall'elenco di elementi, usare l'attributo `Exclude`.
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Per includere tutti i file con *estensione cs* o *VB* tranne *Form2*
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Per includere tutti i *file con estensione cs* o *vb* ad eccezione di *Form2*
 
 - Usare uno degli attributi `Include` e `Exclude` seguenti:
 
@@ -52,7 +53,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
     ```
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Per includere tutti i file con *estensione cs* o *VB* , ad eccezione di *Form2* e *Form3*
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Per includere tutti i *file con estensione cs* o *vb* ad eccezione *di Form2* e *Form3*
 
 - Usare uno degli attributi `Include` e `Exclude` seguenti:
 
@@ -66,7 +67,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Per includere tutti i file con *estensione jpg* in sottodirectory della directory *images* tranne quelli nella directory *Version2*
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Per includere tutti *.jpg* file nelle sottodirectory della directory *Images* ad eccezione di quelli nella directory *Version2*
 
 - Usare gli attributi `Include` e `Exclude` seguenti:
 
@@ -83,7 +84,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
 
  Se sono presenti elementi che si vuole includere, ad esempio, in una build di debug, ma non in una build di versione, è possibile usare l'attributo `Condition` per specificare le condizioni in cui includere l'elemento.
 
-#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Per includere il file *formula. vb* solo nelle build di rilascio
+#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Per includere il file *Formula.vb* solo nelle build di versione
 
 - Usare un attributo `Condition` simile al seguente:
 
@@ -95,7 +96,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
 
 ## <a name="example"></a>Esempio
 
- Nell'esempio di codice seguente viene compilato un progetto con tutti i file con *estensione cs* nella directory, ad eccezione di *Form2.cs*.
+ L'esempio di codice seguente compila un progetto con tutti i file con estensione *cs* nella directory ad eccezione *di Form2.cs*.
 
 ```xml
 <Project DefaultTargets="Compile"

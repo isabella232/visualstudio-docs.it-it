@@ -15,12 +15,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3d99cd3cb3920a083c592e233947839d6d1f7d05c7dd67bc66e096e5d5bf9ab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a7680930d6617a72db77fb6b5f3d30595faa7ec9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121273578"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109760"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introduzione a progetti e soluzioni
 
@@ -47,7 +47,7 @@ Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina 
 Una soluzione e un progetto verranno creati da zero, in un esercizio didattico che favorisce la comprensione del concetto di progetto. Nell'uso generico di Visual Studio è probabile che si usino alcuni dei numerosi *modelli* di progetto resi disponibili da Visual Studio per la creazione di un nuovo progetto.
 
 > [!NOTE]
-> Non è obbligatorio usare soluzioni e progetti per sviluppare app in Visual Studio. È anche possibile aprire semplicemente una cartella che contiene il codice e avviare la codifica, la compilazione e il debug. Ad esempio, se si clona [un GitHub,](https://github.com/) potrebbe non contenere Visual Studio e soluzioni. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+> Non è obbligatorio usare soluzioni e progetti per sviluppare app in Visual Studio. È anche possibile aprire semplicemente una cartella che contiene il codice e avviare la codifica, la compilazione e il debug. Ad esempio, se si clona [un GitHub,](https://github.com/) potrebbe non contenere Visual Studio progetti e soluzioni. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ## <a name="solutions-and-projects"></a>Soluzioni e progetti
 
@@ -65,9 +65,9 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-1. Nel riquadro sinistro espandere Altri tipi **Project e** quindi selezionare **Visual Studio Soluzioni**. Nel riquadro centrale selezionare il **modello Soluzione** vuota. Assegnare alla soluzione **il nome QuickSolution** e quindi fare clic **sul pulsante OK.**
+1. Nel riquadro sinistro espandere Altri Project **e** quindi selezionare **Visual Studio Soluzioni**. Nel riquadro centrale selezionare il **modello Soluzione** vuota. Assegnare alla soluzione **il nome QuickSolution** e quindi fare clic **sul pulsante OK.**
 
-   ![Modello di soluzione vuota in Visual Studio 2017](media/tutorial-projects-new-solution.png "Il modello Soluzione vuota in Visual Studio 2017.")
+   ![Modello di soluzione vuota in Visual Studio 2017](media/tutorial-projects-new-solution.png "Modello di soluzione vuota in Visual Studio 2017.")
 
    La **Pagina iniziale** si chiude e viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
 
@@ -81,7 +81,7 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 3. Nella pagina **Crea un nuovo progetto** immettere **una** soluzione vuota nella casella di ricerca, selezionare il **modello Soluzione** vuota e quindi **selezionare Avanti.**
 
-   ![Modello Soluzione vuota in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png "Modello soluzione vuota in Visual Studio 2019.")
+   ![Modello Soluzione vuota in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png "Modello di soluzione vuota in Visual Studio 2019.")
 
     > [!TIP]
     > Se sono installati diversi carichi di lavoro, il **modello Soluzione** vuota potrebbe non essere visualizzato nella parte superiore dell'elenco dei risultati della ricerca. Provare a scorrere fino alla **sezione Altri risultati in base alla sezione di** ricerca dell'elenco. Dovrebbe essere visualizzato qui.
@@ -98,7 +98,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range="vs-2017"
 
-1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni selezionare **Aggiungi** nuovo Project > .
+1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni selezionare **Aggiungi** > **nuovo Project**.
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
@@ -107,7 +107,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
-   > Se Visual **C#** non è visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro sviluppo **desktop .NET** Visual Studio. Visual Studio l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo. Un modo semplice per installare un nuovo carico di lavoro è selezionare il collegamento Apri **Programma di installazione di Visual Studio** nell'angolo inferiore sinistro della finestra di dialogo **Aggiungi** nuovo Project lavoro. Dopo Programma di installazione di Visual Studio, selezionare il carico di lavoro **Sviluppo desktop .NET** e quindi il **pulsante** Modifica.
+   > Se Visual **C#** non è visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro **sviluppo desktop .NET** Visual Studio. Visual Studio l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo. Un modo semplice per installare un nuovo carico di lavoro è selezionare il collegamento **Apri Programma di installazione di Visual Studio** nell'angolo inferiore sinistro della finestra di dialogo Aggiungi **nuovo Project** lavoro. Dopo Programma di installazione di Visual Studio, selezionare il carico di lavoro **Sviluppo desktop .NET** e quindi il **pulsante** Modifica.
    >
    > ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer.png "Collegamento Apri Programma di installazione di Visual Studio nella finestra di dialogo Aggiungi nuovo Project in Visual Studio 2017.")
 
@@ -115,7 +115,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range=">=vs-2019"
 
-1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni selezionare **Aggiungi** nuovo Project > .
+1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni selezionare **Aggiungi** > **nuovo Project**.
 
    Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
 
@@ -172,7 +172,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
    }
    ```
 
-   Non è necessario comprendere cosa fa il codice, ma se si vuole, è possibile eseguire il programma premendo **CTRL** F5 e verificare che stampi la data odierna nella finestra della +  console (o output standard).
+   Non è necessario comprendere cosa fa il codice, ma se si vuole, è possibile eseguire il programma premendo **CTRL** F5 e verificare che la data odierna sia stampata nella finestra della +  console (o output standard).
 
 ## <a name="add-a-second-project"></a>Aggiungere un secondo progetto
 
@@ -217,29 +217,29 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
 ::: moniker range="vs-2017"
 
-1. Selezionare il **nodo Dipendenze** nel progetto **QuickTest** e scegliere Aggiungi riferimento dal menu di scelta **rapida.**
+1. Selezionare il **nodo Dipendenze** nel **progetto QuickTest** e scegliere Aggiungi riferimento dal menu di scelta rapida o dal menu di **scelta rapida.**
 
    Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
 
-1. Nel riquadro sinistro espandere Progetti **e** selezionare **Soluzione.** Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi selezionare **OK.**
+1. Nel riquadro sinistro espandere **Progetti e** selezionare **Soluzione**. Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi selezionare **OK.**
 
    Viene aggiunto un riferimento al progetto **QuickDate**.
 
-   ![Screenshot dell'Esplora soluzioni che mostra il riferimento al progetto in Visual Studio](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Screenshot dell'Esplora soluzioni che mostra un riferimento al progetto in Visual Studio.")
+   ![Screenshot del Esplora soluzioni che mostra il riferimento al progetto in Visual Studio](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Screenshot dell'Esplora soluzioni che mostra un riferimento al progetto in Visual Studio.")
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Selezionare il **nodo Dipendenze** nel progetto **QuickTest** e nel menu di scelta rapida fare clic con il pulsante destro del mouse o scegliere Aggiungi Project **riferimento...**.
+1. Selezionare il **nodo Dipendenze** nel progetto **QuickTest** e dal menu di scelta rapida o fare clic con il pulsante destro del mouse selezionare Aggiungi Project **riferimento...**.
 
    Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
 
-1. Nel riquadro sinistro espandere **Progetti** e quindi selezionare **Soluzione.** Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi selezionare **OK.**
+1. Nel riquadro sinistro espandere **Progetti** e quindi selezionare **Soluzione**. Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi selezionare **OK.**
 
    Viene aggiunto un riferimento al progetto **QuickDate**.
 
-   ![Screenshot dell'Esplora soluzioni che mostra un riferimento al progetto in Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Screenshot del Esplora soluzioni che mostra un riferimento al progetto in Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
 
 ::: moniker-end
 
@@ -277,7 +277,7 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    Il file di codice sarà simile al seguente:
 
-   ![Codice CSharp](media/tutorial-projects-cs-code.png "Frammento di codice della sezione Aggiungere codice di test in questo articolo.")
+   ![Codice CSharp](media/tutorial-projects-cs-code.png "Frammento di codice della sezione Aggiungi codice di test in questo articolo.")
 
 ## <a name="project-properties"></a>Proprietà progetto
 
@@ -301,11 +301,11 @@ Se si vuole verificare che il unit test funzioni, scegliere **Test** Esegui tutt
 
 ::: moniker range=">=vs-2019"
 
-Se si vuole verificare che il unit test funzioni, scegliere Test Esegui tutti i test dalla barra dei  >   menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+Se si vuole verificare che il unit test funzioni, scegliere **Test** Esegui tutti i test  >   dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
 
 ::: moniker-end
 
-![Esplora test in Visual Studio mostra che il test è stato superato](media/tutorial-projects-test-explorer.png "Esplora test in Visual Studio che mostra un test superato.")
+![Esplora test in Visual Studio mostra che il test è stato superato](media/tutorial-projects-test-explorer.png "Esplora test in Visual Studio un test superato.")
 
 ::: moniker range="vs-2017"
 
@@ -317,7 +317,7 @@ Se si vuole verificare che il unit test funzioni, scegliere Test Esegui tutti i 
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Se **Esplora test** non si apre automaticamente, aprirlo scegliendo Esplora   >  **test** dalla barra dei menu.
+> Se **Esplora test** non si apre automaticamente, aprirlo scegliendo **Esplora**  >  **test** dalla barra dei menu.
 
 ::: moniker-end
 

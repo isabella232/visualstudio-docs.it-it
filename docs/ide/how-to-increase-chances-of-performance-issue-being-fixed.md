@@ -8,20 +8,20 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 101cb93eab7e0e62de6ff49d92f7179d320a403a472813a640df1778b056ce90
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d51c04cc579433f3f6e72c55a60529088d724237
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121319309"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086092"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
-Lo strumento["Segnala un problema"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)è ampiamente usato dagli utenti Visual Studio per segnalare una serie di problemi. Il team Visual Studio le tendenze di arresto anomalo e lentezza nei commenti e suggerimenti degli utenti e risolve i problemi che influiscono su un'ampia gamma di utenti. Maggiore è l'azione di un ticket di feedback specifico, maggiore è la probabilità che il ticket sia diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o di lentezza per renderli più utilizzabili.
+Lo strumento["Segnala un problema"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)è ampiamente usato Visual Studio utenti per segnalare una serie di problemi. Il team Visual Studio individuare le tendenze di arresto anomalo e lentezza nei commenti e suggerimenti degli utenti e risolvere i problemi che influiscono su un'ampia gamma di utenti. Maggiore è l'azione di un ticket di feedback specifico, maggiore è la probabilità che il ticket sia diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o di lentezza per renderli più utilizzabili.
 
 ## <a name="general-best-practices"></a>Procedure consigliate generali
 
-Visual Studio è una piattaforma complessa e di grandi dimensioni che supporta una vasta gamma di linguaggi, tipi di progetto, piattaforme e altro ancora. Le prestazioni sono una funzione dei componenti installati e attivi in una sessione, delle estensioni installate, delle impostazioni di Visual Studio, della configurazione del computer e infine della forma del codice in corso di modifica. Dato il numero di variabili, è difficile stabilire se la segnalazione di problemi da un utente presenta lo stesso problema sottostante di un report di problema di un altro utente, anche se il sintomo visibile è lo stesso. Di seguito sono fornite alcune procedure consigliate per garantire che la segnalazione di problemi specifica abbia una maggiore probabilità di essere diagnosticata.
+Visual Studio è una piattaforma complessa e di grandi dimensioni che supporta una vasta gamma di linguaggi, tipi di progetto, piattaforme e altro ancora. Il funzionamento è una funzione dei componenti installati e attivi in una sessione, delle estensioni installate, delle impostazioni Visual Studio, della configurazione del computer e infine della forma del codice in corso di modifica. Dato il numero di variabili, è difficile stabilire se la segnalazione di problemi da un utente presenta lo stesso problema sottostante di un report di problema di un altro utente, anche se il sintomo visibile è lo stesso. Di seguito sono fornite alcune procedure consigliate per garantire che la segnalazione di problemi specifica abbia una maggiore probabilità di essere diagnosticata.
 
 **Specificare il titolo più specifico possibile**
 
@@ -29,7 +29,7 @@ Cercare firme distinte per il problema segnalato e includere il più possibile n
 
 **In caso di dubbi, registrare un nuovo report di problema**
 
-Molti problemi potrebbero non avere alcuna firma distintiva o passaggi da riprodurre. In questi casi, un nuovo report è migliore di un upvote o di un commento su un altro report, che segnala un sintomo esterno *simile.* A seconda del tipo di report, includere altri file di diagnostica per il report, come descritto più avanti in questo documento.
+Molti problemi potrebbero non avere alcuna firma distintiva o passaggi da riprodurre. In questi casi, un nuovo report è migliore di un upvote o di un commento su un altro report, che segnala un sintomo esterno *simile.* A seconda del tipo di report, includere file di diagnostica aggiuntivi per il report, come descritto più avanti in questo documento.
 
 **Procedure consigliate specifiche del problema**
 
@@ -99,7 +99,7 @@ Personalizzare il numero di dump e la cartella dump in base alle esigenze. Altre
 
 Ogni volta Visual Studio si arresta in modo anomalo, verrà creato un file **di dumpdevenv.exe.[ number].dmp** nel percorso configurato.
 
-Usare quindi il Visual Studio "Segnala un problema..." Funzionalità. Consentirà di collegare il dump appropriato.
+Usare quindi Visual Studio "Segnala un problema..." Funzionalità. Consentirà di collegare il dump appropriato.
 
 1. Individuare il file dump per l'arresto anomalo del sistema segnalato (cercare un file con l'ora di creazione corretta)
 
@@ -111,7 +111,7 @@ Usare quindi il Visual Studio "Segnala un problema..." Funzionalità. Consentir�
 > **Feedback più prezioso:** In questo caso, il feedback più utile è il dump dell'heap acquisito al momento dell'arresto anomalo.
 
 ## <a name="unresponsiveness"></a>Apatia
-Vs non risponde per un periodo di tempo prolungato.
+Vs non risponde per un lungo periodo di tempo.
 
 **Unresponsiveness riproducibile direttamente**
 
@@ -133,11 +133,11 @@ Ciò che rende più fattibile un problema di lentezza o utilizzo elevato della C
 
 >[!NOTE]
 > Quando possibile, isolare ogni scenario in un report di feedback separato e specifico.
-Ad esempio, se la digitazione e la navigazione sono entrambe lente, seguire questa procedura una volta per ogni problema. Ciò consente al team del prodotto di isolare la causa di problemi specifici.
+Ad esempio, se la digitazione e la navigazione sono entrambe lente, seguire questa procedura una sola volta per ogni problema. Ciò consente al team del prodotto di isolare la causa di problemi specifici.
 
 Per ottenere risultati ottimali nell'acquisizione delle prestazioni, seguire questa procedura:
 
-1. Se non è già in esecuzione, avere una copia del Visual Studio in cui si riprodurrà il problema
+1. Se non è già in esecuzione, aprire una copia Visual Studio in cui riprodurre il problema
 
     - Configurare tutti gli elementi per riprodurre il problema. Ad esempio, se è necessario caricare un progetto specifico con un file specifico aperto, assicurarsi che entrambi i passaggi siano completi prima di procedere.
 
@@ -145,19 +145,19 @@ Per ottenere risultati ottimali nell'acquisizione delle prestazioni, seguire que
 
 2. Avviare una seconda copia del Visual Studio *senza soluzione aperta*
 
-3. Nella nuova copia di Visual Studio aprire lo strumento **Segnala un** problema
+3. Nella nuova copia di Visual Studio aprire lo strumento **Segnala** un problema
 
 4. Seguire la procedura descritta in [Come segnalare un problema](./how-to-report-a-problem-with-visual-studio.md) fino a raggiungere il passaggio "Fornire un dump di traccia e heap (facoltativo)".
 
 5. Scegliere di registrare la prima copia del Visual Studio (quella in cui si è verificato un problema di prestazioni) e avviare la registrazione.
 
-    - Verrà visualizzata l'applicazione Registrazione passaggi e verrà avviata la registrazione.
+    - Verrà visualizzata l'applicazione Steps Recorder e verrà avviata la registrazione.
 
     - **Durante la registrazione,** eseguire l'azione problematica nella prima copia Visual Studio. È difficile correggere specifici problemi di prestazioni se non vengono visualizzati entro il tempo registrato.
 
     - Se l'azione è più breve di 30 secondi e può essere ripetuta facilmente, ripetere l'azione per dimostrare ulteriormente il problema.
 
-    - Nella maggior parte dei casi, è sufficiente una traccia di 60 secondi per dimostrare i problemi, soprattutto se l'azione problematica è durata (o è stata ripetuta) per più di 30 secondi. La durata può essere modificata in base alle esigenze per acquisire il comportamento che si vuole fisso.
+    - Nella maggior parte dei casi, è sufficiente una traccia di 60 secondi per dimostrare i problemi, soprattutto se l'azione problematica è durata (o è stata ripetuta) per più di 30 secondi. La durata può essere modificata in base alle esigenze per acquisire il comportamento desiderato.
 
 6. Fare clic su "Arresta record" in Registrazione passaggi non appena l'operazione lenta o l'evento cpu elevato da segnalare sono stati completati. L'elaborazione della traccia delle prestazioni può richiedere alcuni minuti.
 
@@ -167,26 +167,26 @@ Per ottenere risultati ottimali nell'acquisizione delle prestazioni, seguire que
 
 Durante la registrazione di una traccia delle prestazioni, se l'operazione lenta o la CPU elevata segnalata termina, arrestare immediatamente la registrazione. Se vengono raccolte troppe informazioni, le informazioni meno recenti vengono sovrascritte. Se la traccia non viene arrestata subito (entro pochi secondi) dopo l'operazione interessante, i dati di traccia utili verranno sovrascritti.
 
-Non collegare direttamente tracce delle prestazioni agli elementi di feedback esistenti nel sito Web Community developer. Richiedere/fornire informazioni aggiuntive è un flusso di lavoro supportato Visual Studio strumento predefinito Segnala un problema. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento di feedback verrà impostato su "Need More Info", a cui è possibile rispondere allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la sezione ["Servono altre informazioni"](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) nel documento dello strumento Segnala un problema.
+Non collegare direttamente le tracce delle prestazioni agli elementi di feedback esistenti nel sito Web di Developer Community. Richiedere/fornire informazioni aggiuntive è un flusso di lavoro supportato Visual Studio strumento predefinito Segnala un problema. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento di feedback verrà impostato su "Need More Info", a cui è possibile rispondere allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la [sezione "Informazioni necessarie"](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) nel documento dello strumento Segnala un problema.
 
 > [!NOTE]
-> **Commenti e suggerimenti più importanti:** Per quasi tutti i problemi di lentezza/utilizzo elevato della CPU, il feedback più utile è una descrizione di alto livello delle operazioni che si stava tentando di eseguire, insieme alla traccia delle prestazioni (.etl.zip) che acquisisce il comportamento durante tale \* periodo di tempo.
+> **Feedback più prezioso:** Per quasi tutti i problemi di lentezza/utilizzo elevato della CPU, il feedback più utile è una descrizione di alto livello delle operazioni che si stava tentando di eseguire, insieme alla traccia delle prestazioni (.etl.zip) che acquisisce il comportamento durante tale \* periodo.
 
-**Tracce delle prestazioni avanzate**
+**Tracce avanzate delle prestazioni**
 
-Le funzionalità di raccolta delle tracce nello strumento Segnala un problema sono sufficienti per la maggior parte degli scenari. Tuttavia, in alcuni casi è necessario un maggiore controllo sulla raccolta di tracce (ad esempio, traccia con dimensioni del buffer maggiori), nel qual caso PerfView è un ottimo strumento da usare. I passaggi per la registrazione manuale della traccia delle prestazioni con lo strumento PerfView sono disponibili nella pagina Registrazione delle tracce [delle prestazioni con PerfView.](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md)
+Le funzionalità di raccolta di tracce nello strumento Report-a-problem sono sufficienti per la maggior parte degli scenari. Ma in alcuni casi è necessario un maggiore controllo sulla raccolta di tracce (ad esempio, traccia con dimensioni del buffer maggiori), nel qual caso PerfView è un ottimo strumento da usare. I passaggi per la registrazione manuale della traccia delle prestazioni con lo strumento PerfView sono disponibili nella pagina Registrazione delle tracce [delle prestazioni con PerfView.](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md)
 
 ## <a name="out-of-process-issues"></a>Problemi out-of-process
 
 > [!NOTE]
-> A partire Visual Studio 2019 versione 16.3, i log out-of-process vengono allegati automaticamente ai commenti e suggerimenti inviati tramite lo strumento Segnala un problema.
-Tuttavia, se il problema è riproducibile direttamente, la procedura seguente può comunque contribuire ad aggiungere altre informazioni per diagnosticare meglio il problema.
+> A partire Visual Studio 2019 versione 16.3, i log out-of-process vengono collegati automaticamente ai commenti e suggerimenti inviati tramite lo strumento Segnala un problema.
+Tuttavia, se il problema è direttamente riproducibile, la procedura seguente potrebbe comunque aiutare ad aggiungere altre informazioni per una migliore diagnosi del problema.
 
-Esistono diversi processi satellite che vengono eseguiti in parallelo Visual Studio e forniscono varie funzionalità dall'esterno del processo Visual Studio principale. Se si verifica un errore in uno di questi processi satellite, viene in genere visualizzato sul lato Visual Studio come 'StreamJsonRpc.RemoteInvocationException' o 'StreamJsonRpc.ConnectionLostException'.
+Esistono diversi processi satellite che vengono eseguiti in parallelo Visual Studio e forniscono varie funzionalità dall'esterno del processo di Visual Studio principale. Se si verifica un errore in uno di questi processi satellite, viene in genere visualizzato sul lato Visual Studio come 'StreamJsonRpc.RemoteInvocationException' o 'StreamJsonRpc.ConnectionLostException'.
 
-Ciò che rende questi tipi di problemi più utilizzabili è fornire log aggiuntivi che possono essere raccolti seguendo questa procedura:
+Ciò che rende questi tipi di problemi più gestibili è fornire log aggiuntivi che possono essere raccolti seguendo questa procedura:
 
-1. Se si tratta di un problema riproducibile direttamente, iniziare eliminando la cartella **%temp%/servicehub/logs.** Se non è possibile riprodurre questo problema, mantenere intatta questa cartella e ignorare i punti elenco seguenti:
+1. Se si tratta di un problema riproducibile direttamente, iniziare eliminando la **cartella %temp%/servicehub/logs.** Se non è possibile riprodurre questo problema, mantenere intatta questa cartella e ignorare i punti elenco seguenti:
 
     - Impostare la variabile di ambiente globale **ServiceHubTraceLevel** su **All**
     - Riprodurre il problema.
@@ -199,5 +199,5 @@ Ciò che rende questi tipi di problemi più utilizzabili è fornire log aggiunti
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Segnalare un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)
 * [Segnalare un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)
+* [Visual Studio Strumenti Community](https://aka.ms/feedback/suggest?space=8)
 * [Privacy dei dati della community degli sviluppatori](developer-community-privacy.md)

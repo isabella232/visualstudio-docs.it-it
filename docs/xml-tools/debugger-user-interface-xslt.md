@@ -1,6 +1,6 @@
 ---
 title: Finestre del debugger XSLT
-description: Informazioni sulle parti dell'interfaccia utente del debugger XSLT che controllano il comportamento di debug specifico di XSLT, tra cui le finestre Variabili locali, Output, Punti di interruzione, Stack di chiamate ed Espressioni di controllo.
+description: Informazioni sulle parti dell'interfaccia utente del debugger XSLT che controllano il comportamento di debug specifico di XSLT, tra cui le finestre Variabili locali, Output, Punti di interruzione, Stack di chiamate e Espressioni di controllo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,18 +11,18 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: d5d5a0bd5e0c3885607db77343d20fc013467a93ce7e19be2387d84010556751
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f6cfdde30b3c560b3ef6473a9db0bb12f821402f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351473"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098801"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 
 Questo articolo descrive le finestre e le finestre di dialogo del debugger. Vengono illustrate solo le parti dell'interfaccia utente che hanno un comportamento di debug specifico di XSLT.
 
-Per altre informazioni, vedere Le informazioni di riferimento [sull'interfaccia utente di debug.](../debugger/debugging-user-interface-reference.md)
+Per altre informazioni, vedere Le informazioni di riferimento [sull'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>Finestra Variabili locali
 
@@ -30,7 +30,7 @@ Nella finestra Variabili locali vengono visualizzate le informazioni sulle varia
 
 **Nome**
 
-Questa colonna contiene i nomi di tutte le variabili locali nell'ambito corrente. I set di nodi hanno un controllo struttura ad albero di cui è possibile eseguire il drill-down per visualizzarne le sottocartelle.
+Questa colonna contiene i nomi di tutte le variabili locali nell'ambito corrente. I set di nodi hanno un controllo albero che è possibile eseguire il drill-down per visualizzarne le sottocartelle.
 
 **Valore**
 
@@ -77,7 +77,7 @@ Le variabili visualizzate nella finestra Espressioni di controllo sono relative 
 
 La **finestra Stack di** chiamate viene usata per visualizzare i nomi delle funzioni nello stack di chiamate, i tipi di parametro e i valori dei parametri. Le informazioni relative allo stack di chiamate sono visualizzate solo quando il programma in fase di debug si trova in modalità interruzione.
 
-Lo stack di chiamate rappresenta i vari contesti in cui si verifica l'esecuzione XSLT. Ad esempio, se è presente una chiamata dal modello "a" al modello "b", il modello "a" e il modello "b" vengono visualizzati nella finestra **Stack** di chiamate con il contesto corrente all'inizio dell'elenco. L'utente è in grado di visualizzare la query attualmente in esecuzione.
+Lo stack di chiamate rappresenta i vari contesti in cui si verifica l'esecuzione XSLT. Ad esempio, se è presente una chiamata dal modello "a" al modello "b", il modello "a" e il modello "b" vengono visualizzati nella finestra **Stack** di chiamate con il contesto corrente nella parte superiore dell'elenco. L'utente è in grado di visualizzare la query attualmente in esecuzione.
 
 Se i modelli non dispongono di un nome nel file XSLT, vengono usati i nomi generati dal processore XSLT.
 
@@ -85,13 +85,13 @@ Se si fa clic su un elemento diverso da quello presente all'inizio dell'elenco, 
 
 ## <a name="quickwatch-dialog-box"></a>Controllo immediato (finestra di dialogo)
 
-La **finestra di dialogo** Controllo immediato viene utilizzata per valutare le espressioni XPath 1.0. Il nodo di contesto (il nodo `self::node()` proveniente dalla finestra Variabili locali) fornisce il contesto per l'esecuzione dell'espressione XPath. Il risultato dell'esecuzione dell'espressione XPath viene visualizzato nella finestra Espressioni di controllo.
+La **finestra di dialogo** Controllo immediato viene usata per valutare le espressioni XPath 1.0. Il nodo di contesto (il nodo `self::node()` proveniente dalla finestra Variabili locali) fornisce il contesto per l'esecuzione dell'espressione XPath. Il risultato dell'esecuzione dell'espressione XPath viene visualizzato nella finestra Espressioni di controllo.
 
-Nell'elenco seguente vengono descritte le restrizioni relative alla valutazione delle espressioni XPath:
+L'elenco seguente descrive le restrizioni per la valutazione delle espressioni XPath:
 
 - Sono consentite solo le funzioni XPath incorporate.
 
-- Le funzioni XSLT incorporate, ad esempio `document()` e , non sono `key()` consentite.
+- Le funzioni XSLT incorporate, ad `document()` esempio e , non sono `key()` consentite.
 
 - Non sono consentite funzioni definite dall'utente.
 

@@ -1,6 +1,6 @@
 ---
 title: Attività SignFile | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività SignFile per firmare il file specificato usando il certificato specificato.
+description: Informazioni su MSBuild'attività SignFile per firmare il file specificato usando il certificato specificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eef76a3757d9a2ff8ece5da5c18968097bd7618
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d65187b74dc17c9211a6b3ac8b750606c1c4ae3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878162"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136638"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
 
@@ -43,13 +44,13 @@ Consente di firmare il file specificato usando il certificato specificato.
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`CertificateThumbprint`|Parametro `String` obbligatorio.<br /><br /> Specifica il certificato da usare per la firma. Questo certificato deve trovarsi nell'archivio personale dell'utente corrente.|
-|`SigningTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica i file da firmare con il certificato, di tipo. exe o. dll.|
+|`SigningTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica i file da firmare con il certificato, di tipo .exe o .dll.|
 |`TimestampUrl`|Parametro `String` facoltativo.<br /><br /> Specifica l'URL del server di timestamp.|
 |`TargetFrameworkVersion`|La versione di.NET Framework che viene usata per la destinazione.|
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base Task](../msbuild/task-base-class.md).
+ Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base Task.](../msbuild/task-base-class.md)
 
 ## <a name="example"></a>Esempio
 

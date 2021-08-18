@@ -1,6 +1,6 @@
 ---
-description: Recupera il nome del modulo di cui è in corso il debug.
-title: 'IDebugBeforeSymbolSearchEvent2:: getmodulename | Microsoft Docs'
+description: Recupera il nome del modulo attualmente in fase di debug.
+title: IDebugBeforeSymbolSearchEvent2::GetModuleName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c2d819f8813d923fef50fa81618879d0ab64681
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0959cc854a45b14d2c021ea0564d6275e89af72
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067433"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064708"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
-Recupera il nome del modulo di cui è in corso il debug.
+Recupera il nome del modulo attualmente in fase di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +42,13 @@ public int GetModuleName (
 
 ## <a name="parameters"></a>Parametri
 `pbstrModuleName`\
-out Nome del modulo.
+[out] Nome del modulo.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugBeforeSymbolSearchEventBase** che espone l'interfaccia [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) .
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugBeforeSymbolSearchEventBase** che espone [l'interfaccia IDebugBeforeSymbolSearchEvent2.](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
 
 ```cpp
 STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)

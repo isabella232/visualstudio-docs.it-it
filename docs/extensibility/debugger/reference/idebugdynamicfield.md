@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia rappresenta un tipo di variabile.
-title: IDebugDynamicField | Microsoft Docs
+title: Interfaccia IDebugDynamicField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: feb2cf82f9ede13d179763f6ab02721ad6a616566cc7aae4f9a076c7bf3aad33
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 51606bfa15e8d8f6fbf8ce42364958b4fc888008
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390138"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064422"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 Questa interfaccia rappresenta un tipo di variabile.

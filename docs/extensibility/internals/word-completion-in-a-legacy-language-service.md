@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60011ca0bec1b984a645960e3e55359e7dff7a00ad1956d07392c3d609b454d2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a9f32d6d99545f1daed9aed2c927c7987fe95dcd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261138"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110306"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Completamento delle parole in un servizio di linguaggio legacy
 Il completamento delle parole inserisce i caratteri mancanti in una parola parzialmente digitata. Se è presente un solo completamento possibile, la parola viene completata quando viene immesso il carattere di completamento. Se la parola parziale corrisponde a più di una possibilità, viene visualizzato un elenco di possibili completamenti. Un carattere di completamento può essere qualsiasi carattere non usato per gli identificatori.

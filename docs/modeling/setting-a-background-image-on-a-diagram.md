@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de75e34696f7404488e804a87aa6f1d6c065860855e76b1ae1a7930f2940def
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b0e96a74b56226818c96e049df93dba8b1fa721a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231457"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085546"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Impostazione di un'immagine di sfondo in un diagramma
 In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagine di sfondo per una finestra di progettazione generata usando codice personalizzato.
@@ -26,11 +26,11 @@ In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagin
 
 1. Copiare il file di immagine da usare come sfondo per il diagramma nella directory Dsl\Resources del progetto corrente.
 
-2. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella Dsl\Resources, scegliere **Aggiungi** **e** quindi fare clic su **Elemento esistente.**
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella Dsl\Resources, scegliere **Aggiungi** e quindi fare clic su **Elemento esistente**.
 
-3. Nella finestra **di dialogo Aggiungi** elemento esistente passare alla cartella Dsl\Resources.
+3. Nella finestra **di dialogo Aggiungi elemento** esistente passare alla cartella Dsl\Resources.
 
-4. **Nell'elenco File di tipo fare** clic su File di **immagine**.
+4. **Nell'elenco File di tipo** fare clic su File di **immagine**.
 
 5. Fare clic sul file di immagine copiato nella directory e quindi fare clic su **Aggiungi**.
 
@@ -48,15 +48,15 @@ In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagin
 
 12. Nella finestra **Proprietà** impostare la proprietà `Custom Tool` su `ResXFileCodeGenerator`.
 
-13. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto Dsl, scegliere Aggiungi **e** fare clic su **Nuova cartella.**
+13. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto Dsl, scegliere **Aggiungi** e fare clic su **Nuova cartella**.
 
-14. Assegnare alla cartella il **nome Custom.**
+14. Assegnare alla cartella il **nome Custom**.
 
-15. Fare clic con il pulsante destro del mouse sulla cartella Custom , **scegliere Aggiungi** e fare clic su **Nuovo elemento**.
+15. Fare clic con il pulsante destro del mouse sulla cartella Personalizzata, scegliere **Aggiungi** e fare clic **su Nuovo elemento**.
 
 16. **Nell'elenco Modelli** della finestra di dialogo Aggiungi nuovo elemento **fare** clic su File **di codice**.
 
-17. Nella casella **Nome** digitare e `BackgroundImage.cs` fare clic su **Aggiungi**.
+17. Nella casella **Nome** digitare `BackgroundImage.cs` e fare clic su **Aggiungi**.
 
 18. Copiare il codice seguente nel file BackgroundImage.cs, usando lo spazio dei nomi, il nome della classe del diagramma e il nome della risorsa del file di immagine corretti.
 
@@ -101,7 +101,7 @@ In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagin
     }
     ```
 
-     Per altre informazioni sulla personalizzazione del modello con il codice programma, vedere Esplorazione e aggiornamento [di un modello nel codice programma.](../modeling/navigating-and-updating-a-model-in-program-code.md)
+     Per altre informazioni sulla personalizzazione del modello con il codice del programma, vedere Esplorazione e aggiornamento [di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,6 +1,6 @@
 ---
 title: Codifica e caratteri di interruzione di riga
-description: Informazioni sui caratteri interpretati da Visual Studio come interruzioni di riga e sulla modalità di mantenimento della codifica originale e dei caratteri di interruzione di riga.
+description: Informazioni sui caratteri che Visual Studio interpretano come interruzioni di riga e su come vengono mantenuti i caratteri di codifica e di interruzione di riga originali.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,14 +17,15 @@ ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e466439469db66e8e871115abc9828988f24b546
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db0efa149538d91c5123f6a973d5e8a455ff2e62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924757"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094373"
 ---
 # <a name="encodings-and-line-endings"></a>Codifiche e interruzioni di riga
 
@@ -46,19 +47,19 @@ Quando si apre un file con caratteri di interruzione di riga diversi, è possibi
 
 ## <a name="advanced-save-options"></a>Opzioni di salvataggio avanzate
 
-È possibile utilizzare la finestra di  >  dialogo **Opzioni di salvataggio avanzate** file per determinare il tipo di caratteri di interruzioni di riga desiderati. Con le stesse impostazioni è anche possibile modificare la codifica di un file.
+È possibile usare la finestra di dialogo **Opzioni** di salvataggio avanzate file per  >   determinare il tipo di caratteri di interruzione di riga desiderati. Con le stesse impostazioni è anche possibile modificare la codifica di un file.
 
 ![Opzioni di salvataggio avanzate - finestra di dialogo](media/line_endings.png)
 
 > [!NOTE]
 > Se il comando **Opzioni di salvataggio avanzate** non è disponibile nel menu **File**, è possibile aggiungerlo. 
-> 1. Scegliere **strumenti**, **Personalizza**, 
-> 1. Scegliere la scheda **comandi** , selezionare il pulsante di opzione **barra dei menu** e nell'elenco a discesa corrispondente scegliere **file**. Scegliere il pulsante **Aggiungi comando** . 
-> 1. Nella finestra di dialogo **Aggiungi comando**, in **Categorie** scegliere **File** e quindi nell'elenco **Comandi** scegliere **Opzioni di salvataggio avanzate**. Scegliere il pulsante **OK** .
-> 1. Usare i pulsanti **Sposta su** e **Sposta giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza**. 
+> 1. Scegliere **Strumenti**, **Personalizza**, 
+> 1. Scegliere la **scheda Comandi,** selezionare il **pulsante di** opzione Barra dei menu e nell'elenco a discesa corrispondente scegliere **File**. Scegliere il **pulsante Aggiungi** comando. 
+> 1. Nella finestra di dialogo **Aggiungi comando**, in **Categorie** scegliere **File** e quindi nell'elenco **Comandi** scegliere **Opzioni di salvataggio avanzate**. Scegliere **OK.**
+> 1. Usare i **pulsanti Sposta su** e Sposta **giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza**. 
 > Per altre informazioni, vedere [Personalizzazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> In alternativa, è possibile accedere alla finestra di dialogo **Opzioni di salvataggio avanzate** scegliendo **file**  >  **Salva \<file\> con nome**. Nella finestra di dialogo **Salva file con nome** scegliere il triangolo a discesa accanto al pulsante **Salva** e quindi scegliere **Salva con codifica**.
+> In alternativa, è possibile accedere alla finestra di dialogo **Opzioni di** salvataggio avanzate scegliendo Salva **file** con  >  **\<file\> nome**. Nella finestra **di dialogo Salva file** con nome scegliere il triangolo a discesa accanto al pulsante Salva e quindi scegliere Salva con **codifica**. 
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ada25cdf053bdc7176491afab83b4226f4cf40f3eecbe614fa90d2478676286
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0295e4d0b23e2f474571490d44303aecebbb1f75
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377270"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110813"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Questa interfaccia fornisce metodi per visualizzare i dati sull'oggetto associato. Questa interfaccia fa parte del supporto per i visualizzatori di tipi.

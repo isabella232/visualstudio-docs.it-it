@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 428cf3cdb569eb8db0edde63728e27b736ad72a44488b009fdca000107709b62
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 857cff3d396cfa08d45d7c15bc9b045f7fe23f0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424593"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083700"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Chiamare il codice VSTO componenti aggiuntivi da altre Office soluzioni
   È possibile esporre un oggetto del componente aggiuntivo VSTO in altre soluzioni, ad esempio in altre soluzioni Microsoft Office. Questa funzionalità è utile se il componente aggiuntivo VSTO fornisce un servizio che si vuole usare anche in altre soluzioni. Se ad esempio si dispone di un componente aggiuntivo VSTO per Microsoft Office Excel che esegue calcoli sui dati finanziari da un servizio Web, altre soluzioni possono eseguire questi calcoli chiamando il componente aggiuntivo Excel VSTO in fase di esecuzione.
@@ -77,7 +77,7 @@ ms.locfileid: "121424593"
 
    - Impostare la proprietà **Registra per interoperabilità COM** nel progetto in cui si definisce l'interfaccia. Questa proprietà è necessaria solo se si vuole consentire ai client di usare l'associazione anticipata per chiamare nel VSTO componente aggiuntivo.
 
-   L'esempio di codice seguente illustra una classe `AddInUtilities` con un metodo `ImportData` che è possibile chiamare da altre soluzioni. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere Procedura dettagliata: Chiamare codice in un componente aggiuntivo VSTO [componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+   L'esempio di codice seguente illustra una classe `AddInUtilities` con un metodo `ImportData` che è possibile chiamare da altre soluzioni. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere Procedura dettagliata: Chiamare codice in un VSTO [componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 
    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet3":::
    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet3":::
@@ -95,12 +95,12 @@ ms.locfileid: "121424593"
  Per altre informazioni sull'uso dei thread nelle soluzioni Office, vedere Supporto [del threading in Office](../vsto/threading-support-in-office.md).
 
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Eseguire l'override del metodo RequestComAddInAutomationService
- L'esempio di codice seguente illustra come eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> nella classe `ThisAddIn` del componente aggiuntivo VSTO. Nell'esempio si presuppone che sia stata definita una classe `AddInUtilities` denominata che si vuole esporre ad altre soluzioni. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere Procedura dettagliata: Chiamare codice in un componente aggiuntivo VSTO [componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+ L'esempio di codice seguente illustra come eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> nella classe `ThisAddIn` del componente aggiuntivo VSTO. Nell'esempio si presuppone che sia stata definita una classe `AddInUtilities` denominata che si vuole esporre ad altre soluzioni. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere Procedura dettagliata: Chiamare codice in un VSTO [componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs" id="Snippet1":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb" id="Snippet1":::
 
- Quando il componente aggiuntivo VSTO viene caricato, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama il metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Il runtime assegna l'oggetto restituito alla proprietà COMAddIn.Object di un oggetto che rappresenta il VSTO <xref:Microsoft.Office.Core.COMAddIn> componente aggiuntivo. Questo oggetto <xref:Microsoft.Office.Core.COMAddIn> è disponibile per altre soluzioni Office e per soluzioni che automatizzano Office.
+ Quando il componente aggiuntivo VSTO viene caricato, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama il metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Il runtime assegna l'oggetto restituito alla proprietà COMAddIn.Object di un oggetto che rappresenta il <xref:Microsoft.Office.Core.COMAddIn> VSTO componente aggiuntivo. Questo oggetto <xref:Microsoft.Office.Core.COMAddIn> è disponibile per altre soluzioni Office e per soluzioni che automatizzano Office.
 
 ## <a name="access-objects-from-other-solutions"></a>Accedere agli oggetti da altre soluzioni
  Per chiamare l'oggetto esposto del componente aggiuntivo VSTO, eseguire i passaggi seguenti nella soluzione client:
@@ -114,7 +114,7 @@ ms.locfileid: "121424593"
    Il modo in cui si usa il valore restituito della proprietà COMAddIn.Object è diverso per i client VBA e i client non VBA. Per i client out-of-process, il codice aggiuntivo è necessario per evitare una possibile race condition.
 
 ### <a name="access-objects-from-vba-solutions"></a>Accedere agli oggetti dalle soluzioni VBA
- Nell'esempio di codice seguente viene illustrato come usare VBA per chiamare un metodo esposto da un VSTO componente aggiuntivo. Questa macro VBA chiama un metodo denominato definito in un VSTO componente aggiuntivo denominato `ImportData` **ExcelImportData**. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere Procedura dettagliata: Chiamare codice in un componente aggiuntivo VSTO [componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+ Nell'esempio di codice seguente viene illustrato come usare VBA per chiamare un metodo esposto da un VSTO componente aggiuntivo. Questa macro VBA chiama un metodo denominato definito in un VSTO componente aggiuntivo denominato `ImportData` **ExcelImportData**. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere Procedura dettagliata: Chiamare codice in un VSTO [componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 
 ```vb
 Sub CallVSTOMethod()

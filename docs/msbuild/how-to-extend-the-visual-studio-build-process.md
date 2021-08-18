@@ -1,6 +1,6 @@
 ---
 title: Estendere il processo di compilazione
-description: Informazioni su diversi modi per modificare il processo di compilazione in modo da poter controllare e personalizzare la modalità di compilazione dei progetti.
+description: Informazioni su vari modi per modificare il processo di compilazione in modo da poter controllare e personalizzare la modalità di compilazione dei progetti.
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,27 +16,27 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 59093c90ae087e1862ee03b0ca44ec099ec15b113cef954b5fc05b0a432d18b0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: db2b813937c4966dd4acd37b6e053cbe533e993c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443459"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136937"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: Estendere il processo di compilazione di Visual Studio
 
 Il Visual Studio di compilazione è definito da una serie di MSBuild con estensione *targets* importati nel file di progetto. Uno di questi file importati, *Microsoft.Common.targets,* può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo articolo illustra due metodi che è possibile usare per estendere il Visual Studio di compilazione:
 
-- Override di destinazioni predefinite specifiche definite nelle destinazioni comuni (*Microsoft.Common.targets* o file importati).
+- Override di destinazioni predefinite specifiche definite nelle destinazioni comuni (*Microsoft.Common.targets* o nei file importati).
 
 - Override delle proprietà "DependsOn" definite nelle destinazioni comuni.
 
 ## <a name="override-predefined-targets"></a>Eseguire l'override di destinazioni predefinite
 
-Le destinazioni comuni contengono un set di destinazioni vuote predefinite chiamate prima e dopo alcune delle destinazioni principali nel processo di compilazione. Ad esempio, MSBuild chiama la `BeforeBuild` destinazione prima della destinazione principale e la destinazione dopo la `CoreBuild` `AfterBuild` `CoreBuild` destinazione. Per impostazione predefinita, le destinazioni vuote nelle destinazioni comuni non eseguono alcuna operazione, ma è possibile eseguire l'override del comportamento predefinito definendo le destinazioni desiderate in un file di progetto che importa le destinazioni comuni. Eseguendo l'override delle destinazioni predefinite, è possibile usare le MSBuild per offrire maggiore controllo sul processo di compilazione.
+Le destinazioni comuni contengono un set di destinazioni vuote predefinite chiamate prima e dopo alcune delle destinazioni principali nel processo di compilazione. Ad esempio, MSBuild chiama la destinazione prima della destinazione principale e `BeforeBuild` la destinazione dopo la `CoreBuild` `AfterBuild` `CoreBuild` destinazione. Per impostazione predefinita, le destinazioni vuote nelle destinazioni comuni non eseguono alcuna operazione, ma è possibile eseguirne l'override definendo le destinazioni desiderate in un file di progetto che importa le destinazioni comuni. Eseguendo l'override delle destinazioni predefinite, è possibile usare MSBuild attività per offrire un maggiore controllo sul processo di compilazione.
 
 > [!NOTE]
-> I progetti di tipo SDK hanno un'importazione implicita di *destinazioni dopo l'ultima riga del file di progetto*. Ciò significa che non è possibile eseguire l'override delle destinazioni predefinite a meno che non si specificano manualmente le importazioni come descritto in Procedura: Usare MSBuild [SDK di progetto.](how-to-use-project-sdk.md)
+> I progetti di tipo SDK hanno un'importazione implicita di destinazioni *dopo l'ultima riga del file di progetto*. Ciò significa che non è possibile eseguire l'override delle destinazioni predefinite a meno che non si specificano manualmente le importazioni, come descritto in Procedura: Usare MSBuild [SDK del progetto.](how-to-use-project-sdk.md)
 
 #### <a name="to-override-a-predefined-target"></a>Per eseguire l'override di una destinazione predefinita
 
@@ -64,7 +64,7 @@ La tabella seguente illustra tutte le destinazioni nelle destinazioni comuni di 
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il completamento della compilazione principale. La maggior parte delle personalizzazioni avviene in una di queste due destinazioni.|
 |`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:** le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto, consentendo di aggiungere facilmente eventi di pre e post-compilazione nel file di progetto.|
-|`BeforeRebuild`, `AfterRebuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la ricompilazione. L'ordine di esecuzione della destinazione in *Microsoft.Common.targets* è: `BeforeRebuild` , , e quindi `Clean` `Build` `AfterRebuild` .|
+|`BeforeRebuild`, `AfterRebuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la ricompilazione. L'ordine di esecuzione di destinazione in *Microsoft.Common.targets* è: `BeforeRebuild` , , e quindi `Clean` `Build` `AfterRebuild` .|
 |`BeforeClean`, `AfterClean`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pulitura.|
 |`BeforePublish`, `AfterPublish`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pubblicazione.|
 |`BeforeResolveReferences`, `AfterResolveReferences`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la risoluzione dei riferimenti all'assembly.|
@@ -72,7 +72,7 @@ La tabella seguente illustra tutte le destinazioni nelle destinazioni comuni di 
 
 ## <a name="example-aftertargets-and-beforetargets"></a>Esempio: AfterTargets e BeforeTargets
 
-Nell'esempio seguente viene illustrato come utilizzare `AfterTargets` l'attributo per aggiungere una destinazione personalizzata che esegue operazioni con i file di output. In questo caso, copia i file di output in una nuova *cartella CustomOutput*.  L'esempio illustra anche come pulire i file creati dall'operazione di compilazione personalizzata con una destinazione usando un attributo e specificando che l'operazione di pulizia personalizzata viene eseguita prima `CustomClean` `BeforeTargets` della `CoreClean` destinazione.
+Nell'esempio seguente viene illustrato come usare `AfterTargets` l'attributo per aggiungere una destinazione personalizzata che esegue un'azione con i file di output. In questo caso, copia i file di output in una nuova cartella *CustomOutput*.  L'esempio illustra anche come pulire i file creati dall'operazione di compilazione personalizzata con una destinazione usando un attributo e specificando che l'operazione di pulizia personalizzata viene eseguita `CustomClean` `BeforeTargets` prima della `CoreClean` destinazione.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -111,7 +111,7 @@ Nell'esempio seguente viene illustrato come utilizzare `AfterTargets` l'attribut
 
 ## <a name="override-dependson-properties"></a>Eseguire l'override delle proprietà DependsOn
 
-L'override di destinazioni predefinite è un modo semplice per estendere il processo di compilazione, ma poiché MSBuild valuta la definizione delle destinazioni in sequenza, non è possibile impedire a un altro progetto che importa il progetto di eseguire l'override delle destinazioni di cui è già stato eseguito l'override. Di conseguenza, ad esempio, l'ultima destinazione `AfterBuild` definita nel file di progetto, al termine dell'importazione di tutti gli altri progetti, sarà quella usata durante la compilazione.
+L'override delle destinazioni predefinite è un modo semplice per estendere il processo di compilazione, ma, poiché MSBuild valuta in sequenza la definizione delle destinazioni, non è possibile impedire a un altro progetto che importa il progetto di eseguire l'override delle destinazioni di cui è già stato eseguito l'override. Di conseguenza, ad esempio, l'ultima destinazione `AfterBuild` definita nel file di progetto, al termine dell'importazione di tutti gli altri progetti, sarà quella usata durante la compilazione.
 
 È possibile proteggersi da override imprevisti delle destinazioni eseguendo l'override delle proprietà DependsOn usate negli attributi in `DependsOnTargets` tutte le destinazioni comuni. Nella destinazione `Build`, ad esempio, il valore dell'attributo `DependsOnTargets` è `"$(BuildDependsOn)"`. Tenere in considerazione:
 
@@ -172,7 +172,7 @@ I progetti che importano i file di progetto possono eseguire l'override di quest
 
 ## <a name="example-builddependson-and-cleandependson"></a>Esempio: BuildDependsOn e CleanDependsOn
 
-L'esempio seguente è simile `BeforeTargets` all'esempio `AfterTargets` e , ma mostra come ottenere funzionalità simili. Estende la compilazione usando per aggiungere un'attività personalizzata che copia i file di output dopo la compilazione e aggiunge anche `BuildDependsOn` `CustomAfterBuild` l'attività corrispondente usando `CustomClean` `CleanDependsOn` .  
+L'esempio seguente è simile `BeforeTargets` all'esempio e , ma mostra come ottenere funzionalità `AfterTargets` simili. Estende la compilazione usando per aggiungere un'attività personalizzata che copia i file di output dopo la compilazione e aggiunge anche l'attività `BuildDependsOn` `CustomAfterBuild` corrispondente usando `CustomClean` `CleanDependsOn` .  
 
 In questo esempio si tratta di un progetto di tipo SDK. Come accennato nella nota sui progetti di tipo SDK in precedenza in questo articolo, è necessario usare il metodo di importazione manuale anziché l'attributo che Visual Studio usa quando genera i file `Sdk` di progetto.
 
@@ -221,10 +221,10 @@ In questo esempio si tratta di un progetto di tipo SDK. Come accennato nella not
 </Project>
 ```
 
-L'ordine degli elementi è importante. Gli `BuildDependsOn` elementi e devono essere visualizzati dopo `CleanDependsOn` l'importazione del file di destinazioni SDK standard.
+L'ordine degli elementi è importante. Gli `BuildDependsOn` elementi e devono essere visualizzati dopo `CleanDependsOn` l'importazione del file di destinazione sdk standard.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Visual Studio integrazione](../msbuild/visual-studio-integration-msbuild.md)
+- [Visual Studio'integrazione](../msbuild/visual-studio-integration-msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [File con estensione targets](../msbuild/msbuild-dot-targets-files.md)

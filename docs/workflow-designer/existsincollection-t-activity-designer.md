@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: ac03ddce895b18c95d74fd41a0ab2692fe92ccd750b95611fda0caf950384b8b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1b5110a28dd46acff895a52d0e3c05f3f53b7700
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408000"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099165"
 ---
 # <a name="existsincollectiont-activity-designer"></a>Activity Designer\<T> ExistsInCollection
 

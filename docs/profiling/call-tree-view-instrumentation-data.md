@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di strumentazione | Microsoft Docs'
-description: Informazioni su come la visualizzazione Albero delle chiamate visualizza le informazioni di strumentazione nell'albero delle chiamate in Esplora prestazioni.
+description: Informazioni su come la visualizzazione Albero delle chiamate visualizza le informazioni sulla strumentazione nell'albero delle chiamate in Esplora prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cbab3e863feba8ed2490a38f21923dcdce0531b19ee5d55b181d8b4ed38c447e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9757e38bc11f9a01f7d94625023aa59f4c593474
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333782"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084753"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione
 I valori di una funzione nell'albero delle chiamate indicano il tempo per le istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore delle istanze della funzione con il tempo inclusivo trascorso totale di tutte le funzioni nell'esecuzione della profilatura.
@@ -89,5 +89,5 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
-- [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione Albero delle chiamate - Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

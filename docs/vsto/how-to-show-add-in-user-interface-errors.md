@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo"
-description: Informazioni su come usare le Visual Studio per visualizzare a livello di codice gli errori dell'interfaccia utente del componente aggiuntivo VTSO nelle Microsoft Office applicazioni.
+description: Informazioni su come usare le Visual Studio per visualizzare a livello di codice gli errori dell'interfaccia utente del componente aggiuntivo VTSO Microsoft Office applicazioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,15 +18,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 90bb6c458d53e293cd5128e6b2b461082fd1eeb5bda593fb18a5b74f5d7867e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef5a8780e56da76476038605cfad957cfcd8ba0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384132"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099620"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo
-  Per impostazione predefinita, se un componente VSTO tenta di modificare l'interfaccia utente di Microsoft Office e non riesce, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile usare questi messaggi per determinare perché una barra multifunzione personalizzata non viene visualizzata o perché viene visualizzata una barra multifunzione ma non viene visualizzato alcun controllo.
+  Per impostazione predefinita, se un componente VSTO prova a modificare l'interfaccia utente di Microsoft Office e non riesce, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile usare questi messaggi per determinare perché una barra multifunzione personalizzata non viene visualizzata o perché viene visualizzata una barra multifunzione ma non viene visualizzato alcun controllo.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 

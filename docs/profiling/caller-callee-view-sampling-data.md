@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati di campionamento | Microsoft Docs'
-description: Informazioni su come la visualizzazione Chiamante/chiamato visualizza le informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio in Esplora prestazioni.
+description: Leggere come la visualizzazione Chiamante/chiamato visualizza le informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio in Esplora prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4c00bb9e0e190d165656e691064ee86c3789d46faf22b9c55166ccf092b3ca
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 936c7bec8c4c07a3e90414ed9a75ce6a113d9809
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397033"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084636"
 ---
 # <a name="callercallee-view---sampling-data"></a>Visualizzazione Chiamante/chiamato: dati di campionamento
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -44,7 +44,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 |**Nome della funzione**|Nome completo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
-|**Tipo**|Il contesto della funzione:<br /><br /> -   **0** : funzione corrente<br />-   **1** : funzione che chiama la funzione corrente<br />-   **2** : funzione chiamata dalla funzione corrente|
+|**Tipo**|Il contesto della funzione:<br /><br /> -   **0** : funzione corrente<br />-   **1** : funzione che chiama la funzione corrente<br />-   **2:** funzione chiamata dalla funzione corrente|
 |**Nome funzione radice**|Nome della funzione corrente.|
 |**Esempi inclusivi**|- Per la funzione corrente, il numero di esempi raccolti anche se era in esecuzione questa funzione o una delle relative funzioni figlio.<br />- Per una funzione chiamante, il numero di esempi inclusivi della funzione corrente raccolti quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il numero di esempi inclusivi di questa funzione raccolti quando la funzione corrente ha chiamato questa funzione.|
 |**% campioni inclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che costituivano esempi inclusivi di questa funzione.|
@@ -52,6 +52,6 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 |**% esempi esclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che costituivano esempi esclusivi di questa funzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Visualizzazione chiamante/chiamato : dati di campionamento della memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione chiamante/chiamato : dati di strumentazione della memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione chiamante/chiamato : dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)

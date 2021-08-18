@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f345b94ca9d4bfedef6601273bd74225711f9ef2582abe70eb380ac6cb0328b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ae93e6438c476ce34a6287ba2f35bf6a78e6ac2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414935"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110722"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Questa struttura rappresenta un indirizzo relativo a un `this` puntatore ( `Me` in Visual Basic).

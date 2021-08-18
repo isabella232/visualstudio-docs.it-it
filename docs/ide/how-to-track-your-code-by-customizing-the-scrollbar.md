@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 59af487695addbed60f9e908ec425c7ce1b698ad6482cf367fd00d5d09a2c9eb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eb56e1dfe2e5410761fc52e2c9edc5fa04095b91
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121233108"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086014"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Procedura: Personalizzare la barra di scorrimento
 
@@ -71,7 +71,7 @@ La figura seguente mostra l'opzione **Mostra descrizione comando anteprima**:
 ![Barra di scorrimento di Visual Studio con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> Per modificare i colori visualizzati in modalità mappa, scegliere Strumenti  >  **Opzioni**  >  **Tipi di** carattere e colori  >  **dell'ambiente**. Successivamente, in **Elementi visualizzati** scegliere uno degli elementi preceduti da "Panoramica", apportare le modifiche di colore desiderate e quindi scegliere **OK.**
+> Per modificare i colori visualizzati in modalità mappa, scegliere Strumenti Opzioni Ambiente Tipi di  >    >    >  **carattere e colori.** Successivamente, in **Elementi visualizzati** scegliere uno degli elementi preceduti da "Panoramica", apportare le modifiche desiderate al colore e quindi scegliere **OK.**
 
 ## <a name="see-also"></a>Vedi anche
 

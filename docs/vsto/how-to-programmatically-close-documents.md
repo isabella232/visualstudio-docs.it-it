@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 795629796c0b72368e9bf0bc4fa0e36bdbdcda414b0d5c3af97875f6326171b7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2b90af6301591f5f21c34d9f69e649e3ffa70097
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394498"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083271"
 ---
 # <a name="how-to-programmatically-close-documents"></a>Procedura: Chiudere documenti a livello di codice
   È possibile chiudere il documento attivo oppure specificare un documento da chiudere.

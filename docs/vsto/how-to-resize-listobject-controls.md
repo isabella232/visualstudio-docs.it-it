@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Ridimensionare i controlli ListObject'
-description: Informazioni su come usare Visual Studio ridimensionare a livello di codice i controlli ListObject in una Microsoft Excel cartella di lavoro.
+description: Informazioni su come usare Visual Studio ridimensionare a livello di codice i controlli ListObject in una cartella Microsoft Excel cartella di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,19 +16,19 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e317475db68dda76ef70d95b0783e49fbbbaa10737ec06b4fc574d304509a35a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0dedb2aad7598e1a9a3f97123260580de9a93f34
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440702"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099685"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Procedura: Ridimensionare i controlli ListObject
   Impostare la dimensione di un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> quando lo si aggiunge a una cartella di lavoro di Microsoft Office Excel; tuttavia, potrebbe essere necessario ridimensionarlo in seguito. Ad esempio, potrebbe essere necessario cambiare un elenco a due colonne in uno a tre colonne.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- È possibile ridimensionare controlli <xref:Microsoft.Office.Tools.Excel.ListObject> in fase di progettazione oppure in fase di esecuzione in progetti a livello di documento. È possibile ridimensionare i controlli in fase di <xref:Microsoft.Office.Tools.Excel.ListObject> esecuzione in VSTO di componente aggiuntivo.
+ È possibile ridimensionare controlli <xref:Microsoft.Office.Tools.Excel.ListObject> in fase di progettazione oppure in fase di esecuzione in progetti a livello di documento. È possibile <xref:Microsoft.Office.Tools.Excel.ListObject> ridimensionare i controlli in fase di esecuzione in VSTO progetto di componente aggiuntivo.
 
  Questo argomento descrive le attività seguenti:
 

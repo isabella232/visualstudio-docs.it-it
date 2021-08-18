@@ -9,12 +9,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: e3a08c647f115d6f01ecc8543e5b87d1d4a15a8bf0e20f9633c2999eac41d63c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8233304c0fdcd0092e134e9fe690bba21b9e4a90
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267234"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037824"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 
@@ -74,7 +74,7 @@ Consente di disporre gli oggetti in modo sequenziale da sinistra verso destra. Q
 
 ![Pannello di layout DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Guardare un breve video:** ![ Pulsante Di ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [riproduzione WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Guardare un breve video:** ![ Pulsante ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Riproduci WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Controlli di layout
 

@@ -1,6 +1,6 @@
 ---
 title: Attività GetFileHash | Microsoft Docs
-description: Informazioni su come usare l'attività GetFileHash di MSBuild per calcolare i checksum del contenuto di un file o di un set di file.
+description: Informazioni su come usare MSBuild'attività GetFileHash per calcolare i checksum del contenuto di un file o di un set di file.
 ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fbfd9c2bf0ca56b5b9b6bc11dc48420cfc270
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcd5bbeb94db4e75f11333149c075c6b204eed57
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914707"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085065"
 ---
 # <a name="getfilehash-task"></a>Attività GetFileHash
 

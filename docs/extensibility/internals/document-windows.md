@@ -1,6 +1,6 @@
 ---
 title: Documenti Windows | Microsoft Docs
-description: Informazioni sulle finestre dei documenti Visual Studio, tra cui come implementarle e come la tabella di documenti in esecuzione (RDT) tiene traccia del relativo stato.
+description: Informazioni sulle finestre dei documenti in Visual Studio, tra cui come implementarle e come la tabella di documenti in esecuzione (RDT) tiene traccia del relativo stato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3fc77d895805eae1dbffb092721fc0c8dd616c63b796da42205e1e65c42ea9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a1659bc97e1626e198b2a3867223005c84cf9e7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094880"
 ---
 # <a name="document-windows"></a>Finestre dei documenti
 In Visual Studio, una *finestra del* documento è una finestra figlio con frame associata a una finestra dell'interfaccia a documenti multipli (MDI). Le finestre dei documenti vengono in genere usate per la visualizzazione e la modifica del codice sorgente o del testo, ma possono ospitare anche altri tipi funzionali. Finestre del documento:

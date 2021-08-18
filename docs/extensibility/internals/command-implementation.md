@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9ba7dcaf1f9e2f0e98e7cbb773256d117fcb47edf49d9b8f9815c985156b38
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 76cb43ec2df05480563f0f7f70e1e4fbecbf44c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414662"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095023"
 ---
 # <a name="command-implementation"></a>Implementazione del comando
 Per implementare un comando in un VSPackage, è necessario eseguire le attività seguenti:
@@ -114,7 +114,7 @@ public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, Int
 ```
 
 ## <a name="execution-methods"></a>Metodi di esecuzione
- L'implementazione `Exec` del metodo è simile all'implementazione del metodo `QueryStatus` . Assicurarsi innanzitutto che il contesto non sia una funzione di automazione. Testare quindi sia il GUID che l'ID comando. Se il GUID o l'ID comando non viene riconosciuto, restituire <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED> .
+ L'implementazione `Exec` del metodo è simile all'implementazione del metodo `QueryStatus` . Assicurarsi innanzitutto che il contesto non sia una funzione di automazione. Testare quindi sia il GUID che l'ID comando. Se il GUID o l'ID comando non è riconosciuto, restituire <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED> .
 
  Per gestire il comando, eseguirlo e restituire se <xref:Microsoft.VisualStudio.VSConstants.S_OK> l'esecuzione ha esito positivo. Il comando è responsabile del rilevamento degli errori e della notifica. Pertanto, restituire un codice di errore se l'esecuzione ha esito negativo. L'esempio seguente illustra come deve essere implementato il metodo di esecuzione.
 

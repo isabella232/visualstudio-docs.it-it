@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c02049819487df474898c2c40319ed4a6d13db294ed5d34da84743c0eb4b50a1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 48b438f457dea5aad5c241b0fd1e60daac3761a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376261"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110566"
 ---
 # <a name="command-design"></a>Progettazione dei comandi
 Quando si aggiunge un comando a un VSPackage, è necessario specificare dove deve essere visualizzato, quando è disponibile e come deve essere gestito.
@@ -67,9 +67,9 @@ Quando si aggiunge un comando a un VSPackage, è necessario specificare dove dev
 |-----------|-----------------|
 |[Implementazione del comando](../../extensibility/internals/command-implementation.md)|Viene descritto come implementare i comandi in un vspackage.|
 |[Disponibilità dei comandi](../../extensibility/internals/command-availability.md)|Descrive in che modo Visual Studio contesto determina quali comandi sono disponibili.|
-|[Algoritmo di routing dei comandi](../../extensibility/internals/command-routing-algorithm.md)|Descrive come Visual Studio di routing dei comandi consente di gestire i comandi da vspackage diversi.|
+|[Algoritmo di routing dei comandi](../../extensibility/internals/command-routing-algorithm.md)|Descrive come Visual Studio di routing dei comandi consente la gestione dei comandi da vspackage diversi.|
 |[Linee guida per il posizionamento dei comandi](../../extensibility/internals/command-placement-guidelines.md)|Suggerisce come posizionare i comandi nell'Visual Studio locale.|
 |[Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Descrive come i pacchetti VSPackage possono usare al meglio l'architettura Visual Studio comando.|
 |[Posizionamento predefinito di comandi, gruppi e barre degli strumenti](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Descrive come i pacchetti VSPackage possono usare al meglio i comandi inclusi in Visual Studio.|
-|[Gestire VSPackage](../../extensibility/managing-vspackages.md)|Viene descritto come Visual Studio vspackage.|
-|[Visual Studio file di tabella dei comandi (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Fornisce informazioni sui file con estensione *vsct* basati su XML, usati per descrivere il layout e l'aspetto dei comandi nei pacchetti VSPackage.|
+|[Gestire VSPackage](../../extensibility/managing-vspackages.md)|Descrive come Visual Studio vspackage.|
+|[Visual Studio file di tabella dei comandi (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Fornisce informazioni sui file *vsct* basati su XML, usati per descrivere il layout e l'aspetto dei comandi nei pacchetti VSPackage.|

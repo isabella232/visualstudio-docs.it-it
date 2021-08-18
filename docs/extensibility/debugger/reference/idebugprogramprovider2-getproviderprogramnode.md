@@ -1,6 +1,6 @@
 ---
 description: Recupera il nodo del programma per un programma specifico.
-title: IDebugProgramProvider2::GetProviderProgramNode | Microsoft Docs
+title: Interfaccia IDebugProgramProvider2::GetProviderProgramNode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf520d68a47b8a7e8f4ed7b71c7544ffdf0a947fcdc2c140c68f0ce7ef328bf1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 16de3f0cb0c7179a3fadd9fb69f10cc5f44e4840
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402571"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096115"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Recupera il nodo del programma per un programma specifico.
@@ -53,12 +53,12 @@ int GetProviderProgramNode(
 
 ## <a name="parameters"></a>Parametri
 `Flags`\
-[in] Combinazione di flag [dell'enumerazione PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) I flag seguenti sono tipici di questa chiamata:
+[in] Combinazione di flag [dell'enumerazione PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) I flag seguenti sono tipici per questa chiamata:
 
 |Flag|Descrizione|
 |----------|-----------------|
 |`PFLAG_REMOTE_PORT`|Il chiamante è in esecuzione nel computer remoto.|
-|`PFLAG_DEBUGGEE`|È in corso il debug del chiamante. Verranno restituite informazioni aggiuntive sul marshalling per ogni nodo.|
+|`PFLAG_DEBUGGEE`|Il chiamante è attualmente in fase di debug (verranno restituite informazioni aggiuntive sul marshalling per ogni nodo).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Il chiamante è stato collegato a ma non avviato dal debugger.|
 
 `pPort`\
@@ -74,7 +74,7 @@ int GetProviderProgramNode(
 [in] ID del programma per il quale ottenere il nodo del programma.
 
 `ppProgramNode`\
-[out] Oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo di programma richiesto.
+[out] Oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo del programma richiesto.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

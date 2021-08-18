@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa71ecc2a2c2691702d0a56e3f90eb5c83bd99fcc19d9bf3e7d465952338fba
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 516e35a2b1027679336a6a32c2239fa7762a0503
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121329"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
 Recupera l'offset della posizione del simbolo. Usare quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsRegRel` o `LocIsBitField` .
@@ -41,7 +41,7 @@ HRESULT get_offset (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  L'offset è da un punto noto determinato in precedenza. Ad esempio, l'offset per un `LocIsBitField` tipo di posizione è in genere dall'inizio della classe contenitore.

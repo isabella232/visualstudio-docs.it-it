@@ -1,6 +1,6 @@
 ---
-title: Eseguire il debug in un cluster High-Performance | Microsoft Docs
-description: Informazioni sulle peculiarità del debug di un programma di multielaborazione in un cluster ad alte prestazioni. Due finestre sono particolarmente utili e sono disponibili tecniche particolari.
+title: Eseguire il debug in High-Performance cluster | Microsoft Docs
+description: Informazioni sul debug di un programma multielaborazione in un cluster ad alte prestazioni. Due finestre sono particolarmente utili e sono disponibili tecniche speciali.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,18 +16,19 @@ ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9703ff0e79fc4b44565b933a423a1cdcd7ff6c2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4e6bffa006fac3408bc3b5459cdeee92c9a636f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052057"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: eseguire il debug in un cluster High-Performance (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: Eseguire il debug in un cluster High-Performance (C#, Visual Basic, C++)
 
-Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per i requisiti generali di configurazione remota, vedere [Remote Debugging](../debugger/remote-debugging.md).
+Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per i requisiti generali relativi all'installazione remota, vedere [Debug remoto.](../debugger/remote-debugging.md)
 
  Quando si esegue il debug in un cluster ad alte prestazioni, è possibile usare tutte le tecniche e le finestre di debug di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] disponibili per il debug remoto. Poiché, tuttavia, il debug viene eseguito in remoto, la finestra della console esterna non è disponibile.
 
@@ -99,9 +100,9 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
 ## <a name="see-also"></a>Vedi anche
-- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debug remoto](../debugger/remote-debugging.md)
-- [Procedura: utilizzare la finestra processi](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
-- [Inizia a eseguire il debug di app multithread](../debugger/get-started-debugging-multithreaded-apps.md)
+- [Procedura: Usare la finestra Processi](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [Informazioni di base Debug di app multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Thread e processi](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
-- [Utilizzo di punti di interruzione](../debugger/using-breakpoints.md)
+- [Utilizzo dei punti di interruzione](../debugger/using-breakpoints.md)

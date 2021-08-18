@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ddf18bf8a9ce0e31e3ff692f202b9c274854f10ad7f69c0bc4b5edffc92c1fb4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 96492dbc68869ab63b1da14c6a1c7d8b08cc7a66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120244"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 Indica il motivo per cui un punto di interruzione è stato non associato.

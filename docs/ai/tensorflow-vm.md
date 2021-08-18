@@ -5,18 +5,19 @@ keywords: intelligenza artificiale, visual studio, macchina virtuale per l'appre
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6aef2d0cf8fe727036dda91256ac0330e15d37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a73a22397f05660cd0b5e2c90633f6528297848
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841315"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037577"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Eseguire il training di un modello TensorFlow nel cloud
 
@@ -69,7 +70,7 @@ Nella finestra di invio:
 
 - Nell'elenco **Usa cluster** selezionare la macchina virtuale remota (con prefisso "rm:") a cui inviare il processo.
 
-- Immettere un **nome di processo**.
+- Immettere un Nome **processo**.
 
 - Fare clic su **Submit** (Invia).
 
@@ -78,7 +79,7 @@ Per visualizzare lo stato e i dettagli dei processi, espandere la macchina virtu
 
 ![Browser processi](media/tensorflow-vm/job-browser.png)
 
-## <a name="clean-up-resources"></a>Pulire le risorse
+## <a name="clean-up-resources"></a>Eseguire la pulizia delle risorse
 
 Arrestare la macchina virtuale se non si prevede di usarla entro breve. Dopo aver completato le operazioni con l'esercitazione, eseguire il comando seguente per pulire le risorse:
 

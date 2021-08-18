@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveManifestFiles | Microsoft Docs
-description: Informazioni su MSBuild'attività ResolveManifestFiles per risolvere gli elementi del processo di compilazione in file per la generazione del manifesto.
+description: Informazioni su MSBuild'attività ResolveManifestFiles per risolvere gli elementi del processo di compilazione in file per la generazione di manifesti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f0306ef70bf7aa2c74875001bbd6f4e1a3bec2c14be65565cda0c56ac13892f8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 339dc003ff5c9275567633e05746ab042fd34439
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270367"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136703"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles (attività)
 
@@ -53,7 +53,7 @@ Risolve gli elementi seguenti del processo di compilazione nei file per la gener
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="see-also"></a>Vedi anche
 

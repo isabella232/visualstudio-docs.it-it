@@ -11,16 +11,17 @@ ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 0b181f82c7364797f246730cb6a82075d7040af1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d44a37f1bc4101ea265d1a45e92125db7a728962
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085234"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120504"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 Descrive la posizione di un punto di interruzione in corrispondenza di un indirizzo nel codice.
@@ -38,7 +39,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 
 ## <a name="members"></a>Members
 `bstrContext`\
-Contesto del punto di interruzione, in genere un metodo o un nome di funzione come visualizzato in uno stack di chiamate.
+Contesto del punto di interruzione, in genere un nome di metodo o funzione come visualizzato in uno stack di chiamate.
 
 `bstrModuleUrl`\
 URL del modulo che contiene il punto di interruzione.
@@ -47,15 +48,15 @@ URL del modulo che contiene il punto di interruzione.
 Nome della funzione che contiene il punto di interruzione.
 
 `bstrAddress`\
-Indirizzo del punto di interruzione, analizzato da un analizzatore di espressioni per associarlo a un oggetto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
+Indirizzo del punto di interruzione, analizzato da un analizzatore di espressioni per associarlo a un [oggetto IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
 
 ## <a name="remarks"></a>Commenti
-Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
+Questa struttura è un membro della [struttura](../../../extensibility/debugger/reference/bp-location.md) BP_LOCATION come parte di un'unione.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

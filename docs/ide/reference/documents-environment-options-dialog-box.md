@@ -34,12 +34,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d86d2606d50d3e65adf9a651a143709d89f83650df83fb90322cac7c7b48c434
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f6efebfb3cfe61707b14ed39f2ae4ca2ca79585
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121258954"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094074"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Finestra di dialogo Opzioni: Documenti \> dell'ambiente
 
@@ -74,7 +74,7 @@ Selezionare questa opzione per visualizzare una finestra di messaggio quando il 
 Selezionare questa opzione per il nodo **File esterni** in **Esplora soluzioni**. I file esterni sono file non associati a un progetto o a una soluzione, che possono tuttavia essere visualizzati in **Esplora soluzioni** per comodità.
 
 > [!NOTE]
-> Selezionare questa opzione per abilitare il **comando Visualizza** nel browser nel menu **File** per i documenti Web non inclusi nell'applicazione Web attiva.
+> Selezionare questa opzione per abilitare il **comando Visualizza** nel browser del menu **File** per i documenti Web non inclusi nell'applicazione Web attiva.
 
 **Elementi salvati nel progetto File esterni**
 

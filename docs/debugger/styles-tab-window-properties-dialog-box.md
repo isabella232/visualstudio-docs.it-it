@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea85199480961813c32c3ec0ba78daca668f156854943bbd9f43d200fa7a8f7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c753e44e1382a5a526d24bb0230a13171564208b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419143"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120764"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Scheda Stili, finestra di dialogo Proprietà finestra
 Usare la **scheda** Stili per visualizzare gli stili applicati alla finestra selezionata. Per visualizzare la [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo Windows finestra [Visualizza.](../debugger/windows-view.md) Selezionare qualsiasi nodo della finestra nell'albero, **quindi scegliere Proprietà** dal menu Visualizza. 

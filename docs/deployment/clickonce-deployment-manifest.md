@@ -1,6 +1,6 @@
 ---
-title: Manifesto della distribuzione ClickOnce | Microsoft Docs
-description: Informazioni su un manifesto di distribuzione, un file XML che descrive una distribuzione ClickOnce, inclusa la versione corrente dell'applicazione ClickOnce da distribuire.
+title: ClickOnce Manifesto di distribuzione | Microsoft Docs
+description: Informazioni su un manifesto della distribuzione, un file XML che descrive una distribuzione ClickOnce, inclusa la versione ClickOnce dell'applicazione corrente da distribuire.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,15 @@ ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e8737a29fed109e82240a74569011be60a586c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68d9aa79b08f210f8d8738f4f0113aa967bbf864
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840860"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051625"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto di distribuzione ClickOnce
 Un manifesto della distribuzione è un file XML che descrive una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], inclusa l'identificazione della versione corrente dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da distribuire.
@@ -38,7 +39,7 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
 | [\<compatibleFrameworks> Elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Obbligatorio. Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione. | `SupportUrl` |
 | [\<dependency> Elemento](../deployment/dependency-element-clickonce-deployment.md) | Obbligatorio. Identifica la versione dell'applicazione da installare per la distribuzione e il percorso del manifesto dell'applicazione. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
 | [\<publisherIdentity> Elemento](../deployment/publisheridentity-element-clickonce-deployment.md) | Obbligatorio per i manifesti firmati. Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Signature> Elemento](../deployment/signature-element-clickonce-deployment.md) | facoltativo. Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione. | nessuno |
+| [\<Signature> Elemento](../deployment/signature-element-clickonce-deployment.md) | facoltativo. Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione. | Nessuno |
 | [\<customErrorReporting> Elemento](../deployment/customerrorreporting-element-clickonce-deployment.md) | facoltativo. Specifica un URI da visualizzare quando si verifica un errore. | Uri |
 
 ## <a name="remarks"></a>Commenti
@@ -52,7 +53,7 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
  Il file manifesto della distribuzione deve avere un nome sicuro e può anche contenere certificati per la convalida dell'editore.
 
 ## <a name="file-name-syntax"></a>Sintassi del nome file
- Il nome di un file manifesto di distribuzione deve terminare con l'estensione *. Application* .
+ Il nome di un file manifesto della distribuzione deve terminare con *l'estensione application.*
 
 ## <a name="examples"></a>Esempio
  L'esempio di codice seguente illustra un manifesto della distribuzione.

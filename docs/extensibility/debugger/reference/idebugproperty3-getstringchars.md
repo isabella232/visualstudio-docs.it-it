@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8056b6ebcbb9d6758c05d482b02f0cac584d4a3e7a21974562b7e83658d32308
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c37f4a909596a88b42ce6432cef97d1202388667
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402404"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063863"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la stringa associata a questa proprietà e la archivia in un buffer fornito dall'utente.
@@ -58,10 +58,10 @@ int GetStringChars(
 [out] Posizione in cui viene restituito il numero di caratteri effettivamente archiviati nel buffer. Può essere `NULL` in C++.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
+Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
-In C++ è necessario fare attenzione per assicurare che il buffer sia lungo `buflen` almeno caratteri Unicode. Si noti che un carattere Unicode ha una lunghezza di 2 byte.
+In C++, è necessario fare attenzione per assicurare che il buffer sia lungo `buflen` almeno caratteri Unicode. Si noti che un carattere Unicode ha una lunghezza di 2 byte.
 
 > [!NOTE]
 > In C++, la stringa restituita non include un carattere Null di terminazione. Se specificato, `pceltFetched` specifica il numero di caratteri nella stringa.

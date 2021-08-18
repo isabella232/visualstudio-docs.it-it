@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 50d814890ae0cf134b88003150fd1ce25edb5c6941fbe13194d44227ed9ca647
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab6002e6b9be48aed320a9cf6166b340ec0947cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270731"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093788"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procedura: Compilare un progetto con risorse
 

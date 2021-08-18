@@ -1,6 +1,6 @@
 ---
-title: Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente | Microsoft Docs
-description: Informazioni su come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente, ad esempio menu, barre degli strumenti e finestre degli strumenti, a Visual Studio.
+title: Come i pacchetti VSPackage aggiungono Interfaccia utente elementi | Microsoft Docs
+description: Informazioni su come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente, ad esempio menu, barre degli strumenti e finestre degli strumenti, Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,33 +12,34 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d01c2ed91a5f4aad55c196dfb2e689aeea288a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8234183455083a05095acef1d73ad87917100660
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086040"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063239"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
-Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente (UI), ad esempio menu, barre degli strumenti e finestre degli strumenti, a Visual Studio tramite il file con *estensione vsct* .
+Un VSPackage può aggiungere elementi dell'interfaccia utente, ad esempio menu, barre degli strumenti e finestre degli strumenti, per Visual Studio tramite il file con estensione *vsct.*
 
-È possibile trovare linee guida di progettazione per gli elementi dell'interfaccia [utente nelle linee guida sull'esperienza utente di Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+Le linee guida di progettazione per gli elementi dell'interfaccia utente sono [Visual Studio linee guida per l'esperienza utente.](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)
 
-## <a name="the-visual-studio-command-table-architecture"></a>Architettura della tabella dei comandi di Visual Studio
-Come indicato, l'architettura della tabella dei comandi supporta i principi di architettura precedenti. Di seguito sono riportati i principi di base delle astrazioni, delle strutture di dati e degli strumenti dell'architettura della tabella dei comandi:
+## <a name="the-visual-studio-command-table-architecture"></a>Architettura Visual Studio tabella dei comandi
+Come si può vedere, l'architettura della tabella dei comandi supporta i principi dell'architettura. I tenet alla base delle astrazioni, delle strutture dei dati e degli strumenti dell'architettura della tabella dei comandi sono i seguenti:
 
-- Sono disponibili tre tipi di elementi di base: menu, comandi e gruppi. I menu possono essere esposti nell'interfaccia utente come menu, sottomenu, barre degli strumenti o finestre degli strumenti. I comandi sono procedure che l'utente può eseguire nell'IDE, che possono essere esposte come voci di menu, pulsanti, caselle di riepilogo o altri controlli. I gruppi sono contenitori per i menu e i comandi.
+- Esistono tre tipi di elementi di base: menu, comandi e gruppi. I menu possono essere esposti nell'interfaccia utente come menu, sottomenu, barre degli strumenti o finestre degli strumenti. I comandi sono procedure che l'utente può eseguire nell'IDE e possono essere esposti come voci di menu, pulsanti, caselle di riepilogo o altri controlli. I gruppi sono contenitori per menu e comandi.
 
 - Ogni elemento viene specificato da una definizione che descrive l'elemento, la relativa priorità rispetto ad altri elementi e i flag che ne modificano il comportamento.
 
-- Ogni elemento dispone di una posizione che descrive l'elemento padre dell'elemento. Un elemento può avere più elementi padre, in modo che possa essere visualizzato in più posizioni nell'interfaccia utente.
+- Ogni elemento ha una posizione che descrive l'elemento padre dell'elemento. Un elemento può avere più elementi padre, in modo che possa essere visualizzato in più posizioni nell'interfaccia utente.
 
-Ogni comando deve avere un gruppo come padre, anche se è l'unico elemento figlio in tale gruppo. Ogni menu standard deve avere anche un gruppo padre. Le barre degli strumenti e le finestre degli strumenti fungono da elementi padre. Un gruppo può avere come padre la barra dei menu principale di Visual Studio o qualsiasi menu, barra degli strumenti o finestra degli strumenti.
+Ogni comando deve avere un gruppo come padre, anche se è l'unico figlio in tale gruppo. Ogni menu standard deve avere anche un gruppo padre. Le barre degli strumenti e le finestre degli strumenti fungono da elementi padre. Un gruppo può avere come padre la barra Visual Studio menu principale o qualsiasi menu, barra degli strumenti o finestra degli strumenti.
 
 ### <a name="how-items-are-defined"></a>Modalità di definizione degli elementi
-Un file con *estensione vsct* è formattato in XML. Definisce gli elementi dell'interfaccia utente per un pacchetto e determina la posizione in cui tali elementi vengono visualizzati nell'IDE. A ogni menu, gruppo o comando del pacchetto vengono prima assegnati un GUID e un ID nella `Symbols` sezione. Nel resto del file con *estensione vsct* , ogni menu, comando e gruppo viene identificato in base alla combinazione di GUID e ID. Nell'esempio seguente viene illustrata una `Symbols` sezione tipica generata dal modello di pacchetto di Visual Studio quando nel modello è selezionato un **comando di menu** .
+Un file *con estensione vsct* è formattato in XML. Definisce gli elementi dell'interfaccia utente per un pacchetto e determina la posizione in cui tali elementi vengono visualizzati nell'IDE. A ogni menu, gruppo o comando nel pacchetto vengono innanzitutto assegnati un GUID e un ID nella `Symbols` sezione . Nel resto del file *vsct,* ogni menu, comando e gruppo è identificato dalla combinazione di GUID e ID. L'esempio seguente illustra una sezione tipica generata dal modello Visual Studio pacchetto quando nel modello è selezionato un comando `Symbols` di menu. 
 
 ```xml
 <Symbols>
@@ -61,42 +62,42 @@ Un file con *estensione vsct* è formattato in XML. Definisce gli elementi dell'
 </Symbols>
 ```
 
-L'elemento di primo livello della `Symbols` sezione è l' [elemento GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` gli elementi eseguono il mapping dei nomi ai GUID utilizzati dall'IDE per identificare i pacchetti e le relative parti componente.
+L'elemento di primo livello della `Symbols` sezione è [l'elemento GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` I nomi degli elementi vengono mappati ai GUID usati dall'IDE per identificare i pacchetti e le relative parti del componente.
 
 > [!NOTE]
-> I GUID vengono generati automaticamente dal modello di pacchetto di Visual Studio. È inoltre possibile creare un GUID univoco scegliendo **Crea GUID** dal menu **strumenti** .
+> I GUID vengono generati automaticamente dal modello Visual Studio pacchetto. È anche possibile creare un GUID univoco scegliendo **Crea GUID** **dal** menu Strumenti.
 
-Il primo `GuidSymbol` elemento, `guid<PackageName>Pkg` , è il GUID del pacchetto stesso. Si tratta del GUID usato da Visual Studio per caricare il pacchetto. In genere, non ha elementi figlio.
+Il primo `GuidSymbol` elemento, `guid<PackageName>Pkg` , è il GUID del pacchetto stesso. Si tratta del GUID usato dal Visual Studio per caricare il pacchetto. In genere, non dispone di elementi figlio.
 
-Per convenzione, i menu e i comandi sono raggruppati in un secondo `GuidSymbol` elemento, `guid<PackageName>CmdSet` , e le bitmap sono sotto un terzo `GuidSymbol` elemento, `guidImages` . Non è necessario seguire questa convenzione, ma ogni menu, gruppo, comando e bitmap deve essere figlio di un `GuidSymbol` elemento.
+Per convenzione, i menu e i comandi sono raggruppati sotto un secondo elemento, e le bitmap sono `GuidSymbol` `guid<PackageName>CmdSet` in un terzo `GuidSymbol` elemento, `guidImages` . Non è necessario seguire questa convenzione, ma ogni menu, gruppo, comando e bitmap deve essere figlio di un `GuidSymbol` elemento.
 
-Nel secondo `GuidSymbol` elemento, che rappresenta il set di comandi del pacchetto, sono presenti diversi `IDSymbol` elementi. Ogni [elemento IDSymbol](../../extensibility/idsymbol-element.md) esegue il mapping di un nome a un valore numerico e può rappresentare un menu, un gruppo o un comando che fa parte del set di comandi. Gli `IDSymbol` elementi del terzo `GuidSymbol` elemento rappresentano le bitmap che possono essere usate come icone per i comandi. Poiché le coppie GUID/ID devono essere univoche in un'applicazione, due elementi figlio dello stesso `GuidSymbol` elemento potrebbero avere lo stesso valore.
+Nel secondo `GuidSymbol` elemento, che rappresenta il set di comandi del pacchetto, sono presenti diversi `IDSymbol` elementi. Ogni [elemento IDSymbol](../../extensibility/idsymbol-element.md) esegue il mapping di un nome a un valore numerico e può rappresentare un menu, un gruppo o un comando che fa parte del set di comandi. Gli `IDSymbol` elementi nel terzo elemento rappresentano bitmap che possono essere usate come icone per i `GuidSymbol` comandi. Poiché le coppie GUID/ID devono essere univoche in un'applicazione, nessun elemento figlio dello stesso elemento `GuidSymbol` può avere lo stesso valore.
 
 ### <a name="menus-groups-and-commands"></a>Menu, gruppi e comandi
 Quando un menu, un gruppo o un comando ha un GUID e un ID, può essere aggiunto all'IDE. Ogni elemento dell'interfaccia utente deve avere gli elementi seguenti:
 
-- `guid`Attributo che corrisponde al nome dell' `GuidSymbol` elemento in cui è definito l'elemento dell'interfaccia utente.
+- Attributo `guid` che corrisponde al nome dell'elemento in cui è definito `GuidSymbol` l'elemento dell'interfaccia utente.
 
-- `id`Attributo che corrisponde al nome dell' `IDSymbol` elemento associato.
+- Attributo `id` che corrisponde al nome dell'elemento `IDSymbol` associato.
 
-Insieme, gli `guid` `id` attributi e costituiscono la *firma* dell'elemento dell'interfaccia utente.
+Insieme, gli `guid` attributi e costituiscono la firma `id` *dell'elemento* dell'interfaccia utente.
 
-- `priority`Attributo che determina la posizione dell'elemento dell'interfaccia utente nel menu o nel gruppo padre.
+- Attributo `priority` che determina la posizione dell'elemento dell'interfaccia utente nel menu o nel gruppo padre.
 
-- [Elemento padre](../../extensibility/parent-element.md) con `guid` `id` attributi e che specificano la firma del menu o del gruppo padre.
+- Elemento [Parent con](../../extensibility/parent-element.md) attributi e che `guid` `id` specificano la firma del menu o del gruppo padre.
 
 #### <a name="menus"></a>Menu
-Ogni menu è definito come un [elemento di menu](../../extensibility/menu-element.md) nella `Menus` sezione. I menu devono `guid` contenere `id` gli attributi, e e `priority` un `Parent` elemento e anche gli attributi e gli elementi figlio seguenti:
+Ogni menu è definito come elemento [Menu](../../extensibility/menu-element.md) nella `Menus` sezione . I menu devono avere attributi , e e un elemento e anche `guid` gli attributi e gli elementi figlio aggiuntivi `id` `priority` `Parent` seguenti:
 
-- `type`Attributo che specifica se il menu deve essere visualizzato nell'IDE come un tipo di menu o come barra degli strumenti.
+- Attributo che specifica se il menu deve essere visualizzato nell'IDE come tipo `type` di menu o come barra degli strumenti.
 
-- [Elemento Strings](../../extensibility/strings-element.md) che contiene un [elemento ButtonText](../../extensibility/buttontext-element.md), che specifica il titolo del menu nell'IDE e un [elemento CommandName](../../extensibility/commandname-element.md), che specifica il nome usato nella finestra di **comando** per accedere al menu.
+- Elemento [Strings](../../extensibility/strings-element.md) che contiene un [elemento ButtonText](../../extensibility/buttontext-element.md), che specifica il titolo del menu nell'IDE, e un  elemento [CommandName](../../extensibility/commandname-element.md), che specifica il nome utilizzato nella finestra di comando per accedere al menu.
 
-- Flag facoltativi. Un [elemento CommandFlag](../../extensibility/command-flag-element.md) può essere visualizzato in una definizione di menu per modificarne l'aspetto o il comportamento nell'IDE.
+- Flag facoltativi. Un [elemento CommandFlag può](../../extensibility/command-flag-element.md) essere visualizzato in una definizione di menu per modificarne l'aspetto o il comportamento nell'IDE.
 
-Ogni `Menu` elemento deve avere un gruppo come padre, a meno che non si tratti di un elemento ancorabile, ad esempio una barra degli strumenti. Un menu ancorabile è il proprio padre. Per ulteriori informazioni sui menu e i valori per l' `type` attributo, vedere la documentazione relativa all' [elemento di menu](../../extensibility/menu-element.md) .
+Ogni elemento deve avere un gruppo come padre, a meno che non sia un elemento `Menu` ancorabile, ad esempio una barra degli strumenti. Un menu ancorabile è il proprio elemento padre. Per altre informazioni sui menu e sui valori per `type` l'attributo , vedere la documentazione [dell'elemento Menu.](../../extensibility/menu-element.md)
 
-L'esempio seguente mostra un menu visualizzato sulla barra dei menu di Visual Studio, accanto al menu **strumenti** .
+L'esempio seguente mostra un menu visualizzato nella barra Visual Studio menu, accanto **al** menu Strumenti.
 
 ```xml
 <Menu guid="guidTopLevelMenuCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
@@ -109,9 +110,9 @@ L'esempio seguente mostra un menu visualizzato sulla barra dei menu di Visual St
 ```
 
 #### <a name="groups"></a>Gruppi
-Un gruppo è un elemento definito nella `Groups` sezione del file con *estensione vsct* . I gruppi sono solo contenitori. Non vengono visualizzati nell'IDE ad eccezione di una linea di divisione in un menu. Un [elemento Group](../../extensibility/group-element.md) viene pertanto definito solo in base alla firma, alla priorità e all'elemento padre.
+Un gruppo è un elemento definito nella `Groups` sezione del file con estensione *vsct.* I gruppi sono solo contenitori. Non vengono visualizzate nell'IDE se non come linea di divisione in un menu. Di conseguenza, un [elemento Group](../../extensibility/group-element.md) viene definito solo dalla firma, dalla priorità e dall'elemento padre.
 
-Un gruppo può avere un menu, un altro gruppo o se stesso come elemento padre. Tuttavia, l'elemento padre è in genere un menu o una barra degli strumenti. Il menu nell'esempio precedente è un elemento figlio del `IDG_VS_MM_TOOLSADDINS` gruppo e tale gruppo è un elemento figlio della barra dei menu di Visual Studio. Il gruppo nell'esempio seguente è un elemento figlio del menu nell'esempio precedente.
+Un gruppo può avere un menu, un altro gruppo o se stesso come padre. Tuttavia, l'elemento padre è in genere un menu o una barra degli strumenti. Il menu nell'esempio precedente è un elemento figlio del gruppo e tale gruppo è un elemento figlio Visual Studio `IDG_VS_MM_TOOLSADDINS` barra dei menu. Il gruppo nell'esempio seguente è un elemento figlio del menu nell'esempio precedente.
 
 ```xml
 <Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" priority="0x0600">
@@ -119,7 +120,7 @@ Un gruppo può avere un menu, un altro gruppo o se stesso come elemento padre. T
 </Group>
 ```
 
-Poiché fa parte di un menu, questo gruppo contiene in genere i comandi. Tuttavia, può contenere anche altri menu. Questo è il modo in cui vengono definiti i sottomenu, come illustrato nell'esempio seguente.
+Poiché fa parte di un menu, questo gruppo contiene in genere comandi. Tuttavia, potrebbe contenere anche altri menu. In questo modo vengono definiti i sottomenu, come illustrato nell'esempio seguente.
 
 ```xml
 <Menu guid="guidTopLevelMenuCmdSet" id="SubMenu" priority="0x0100" type="Menu">
@@ -132,12 +133,12 @@ Poiché fa parte di un menu, questo gruppo contiene in genere i comandi. Tuttavi
 ```
 
 #### <a name="commands"></a>Comandi
-Un comando fornito all'IDE viene definito come un [elemento Button](../../extensibility/button-element.md) o un [elemento combinato](../../extensibility/combo-element.md). Per essere visualizzato in un menu o in una barra degli strumenti, il comando deve avere un gruppo come padre.
+Un comando fornito all'IDE è definito come elemento [Button](../../extensibility/button-element.md) o [Combo.](../../extensibility/combo-element.md) Per essere visualizzato in un menu o in una barra degli strumenti, il comando deve avere un gruppo come padre.
 
 ##### <a name="buttons"></a>Pulsanti
-I pulsanti sono definiti nella `Buttons` sezione. Qualsiasi voce di menu, pulsante o altro elemento che un utente fa clic per eseguire un singolo comando è considerato un pulsante. Alcuni tipi di pulsanti possono includere anche la funzionalità List. I pulsanti hanno gli stessi attributi obbligatori e facoltativi dei menu e possono avere anche un [elemento Icon](../../extensibility/icon-element.md) che specifica il GUID e l'ID della bitmap che rappresenta il pulsante nell'IDE. Per ulteriori informazioni sui pulsanti e sui relativi attributi, vedere la documentazione relativa all' [elemento Buttons](../../extensibility/buttons-element.md) .
+I pulsanti sono definiti nella `Buttons` sezione . Qualsiasi voce di menu, pulsante o altro elemento su cui un utente fa clic per eseguire un singolo comando viene considerato un pulsante. Alcuni tipi di pulsante possono includere anche funzionalità di elenco. I pulsanti hanno gli stessi attributi obbligatori e facoltativi dei menu e possono anche avere un elemento [Icon](../../extensibility/icon-element.md) che specifica il GUID e l'ID della bitmap che rappresenta il pulsante nell'IDE. Per altre informazioni sui pulsanti e sui relativi attributi, vedere la documentazione [dell'elemento Buttons.](../../extensibility/buttons-element.md)
 
-Il pulsante nell'esempio seguente è un figlio del gruppo nell'esempio precedente e viene visualizzato nell'IDE come una voce di menu del menu padre del gruppo.
+Il pulsante nell'esempio seguente è un elemento figlio del gruppo nell'esempio precedente e viene visualizzato nell'IDE come voce di menu nel menu padre del gruppo.
 
 ```xml
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -151,11 +152,11 @@ Il pulsante nell'esempio seguente è un figlio del gruppo nell'esempio precedent
 ```
 
 ##### <a name="combos"></a>Combo
-Le combinazioni combinate sono definite nella `Combos` sezione. Ogni `Combo` elemento rappresenta una casella di riepilogo a discesa nell'IDE. È possibile che la casella di riepilogo non sia scrivibile dagli utenti, a seconda del valore dell' `type` attributo della casella combinata. Le combo hanno gli stessi elementi e il comportamento dei pulsanti e possono anche avere gli attributi aggiuntivi seguenti:
+Le combinazioni sono definite nella `Combos` sezione . Ogni `Combo` elemento rappresenta una casella di riepilogo a discesa nell'IDE. La casella di riepilogo può essere scrivibile o meno dagli utenti, a seconda del valore `type` dell'attributo della combinazione. Le combinazioni hanno gli stessi elementi e gli stessi comportamenti dei pulsanti e possono avere anche gli attributi aggiuntivi seguenti:
 
-- `defaultWidth`Attributo che specifica la larghezza in pixel.
+- Attributo `defaultWidth` che specifica la larghezza in pixel.
 
-- `idCommandList`Attributo che specifica un elenco contenente gli elementi visualizzati nella casella di riepilogo. L'elenco dei comandi deve essere dichiarato nello stesso `GuidSymbol` nodo che contiene la casella combinata.
+- Attributo `idCommandList` che specifica un elenco contenente gli elementi visualizzati nella casella di riepilogo. L'elenco di comandi deve essere dichiarato nello stesso `GuidSymbol` nodo che contiene la combinazione.
 
 Nell'esempio seguente viene definito un elemento combinato.
 
@@ -180,34 +181,34 @@ Nell'esempio seguente viene definito un elemento combinato.
 ```
 
 ##### <a name="bitmaps"></a>Bitmap
-I comandi che verranno visualizzati insieme a un'icona devono includere un `Icon` elemento che fa riferimento a una bitmap usando il GUID e l'ID corrispondenti. Ogni bitmap è definita come un [elemento bitmap](../../extensibility/bitmap-element.md) nella `Bitmaps` sezione. Gli unici attributi obbligatori per una `Bitmap` definizione sono `guid` e `href` , che fa riferimento al file di origine. Se il file di origine è una striscia di risorse, è necessario anche un attributo **usato** per elencare le immagini disponibili nella striscia. Per ulteriori informazioni, vedere la documentazione relativa agli [elementi bitmap](../../extensibility/bitmap-element.md) .
+I comandi che verranno visualizzati insieme a un'icona devono includere un elemento che fa riferimento `Icon` a una bitmap usando il RELATIVO GUID e ID. Ogni bitmap è definita come [elemento Bitmap](../../extensibility/bitmap-element.md) nella `Bitmaps` sezione . Gli unici attributi obbligatori per una `Bitmap` definizione sono e , che punta al file di `guid` `href` origine. Se il file di origine è una striscia di risorse, è necessario anche un **attributo usedList** per elencare le immagini disponibili nella striscia. Per altre informazioni, vedere la documentazione [dell'elemento Bitmap.](../../extensibility/bitmap-element.md)
 
-### <a name="parenting"></a>Padre
-Le regole seguenti determinano il modo in cui un elemento può chiamare un altro elemento come padre.
+### <a name="parenting"></a>Genitorialità
+Le regole seguenti regolano il modo in cui un elemento può chiamare un altro elemento come padre.
 
-|Elemento|Definito in questa sezione della tabella dei comandi|Può essere contenuto (come un elemento padre o in base alla posizione nella `CommandPlacements` sezione o entrambi)|Può contenere (definito come padre)|
+|Elemento|Definito in questa sezione della tabella dei comandi|Può essere contenuto (come elemento padre, in base al posizionamento nella `CommandPlacements` sezione o a entrambi)|Può contenere (definito padre)|
 |-------------| - | - | - |
-|Group|[Elemento groups](../../extensibility/groups-element.md), IDE, other VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e comandi|
-|Menu|[Elemento menu](../../extensibility/menus-element.md), IDE, altri VSPackage|da 1 a *n* gruppi|da 0 a *n* gruppi|
-|Barra degli strumenti|[Elemento menu](../../extensibility/menus-element.md), IDE, altri VSPackage|Elemento stesso|da 0 a *n* gruppi|
-|MenuItem|[Elemento Buttons](../../extensibility/buttons-element.md), IDE, other VSPackage|da 1 a *n* gruppi, l'elemento stesso|da-0 a *n* gruppi|
-|Pulsante|[Elemento Buttons](../../extensibility/buttons-element.md), IDE, other VSPackage|da 1 a *n* gruppi, l'elemento stesso||
-|Grafico combinato|[Elemento combos](../../extensibility/combos-element.md), IDE, altri VSPackage|da 1 a *n* gruppi, l'elemento stesso||
+|Group|[Elemento Groups](../../extensibility/groups-element.md), IDE e altri pacchetti VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e comandi|
+|Menu|[Elemento Menus](../../extensibility/menus-element.md), IDE e altri pacchetti VSPackage|Da 1 a *n* gruppi|Da 0 a *n* gruppi|
+|Barra degli strumenti|[Elemento Menus](../../extensibility/menus-element.md), IDE e altri pacchetti VSPackage|L'elemento stesso|Da 0 a *n* gruppi|
+|MenuItem|[Elemento Buttons](../../extensibility/buttons-element.md), IDE, altri pacchetti VSPackage|Da 1 *a n* gruppi, l'elemento stesso|Da -0 a *n* gruppi|
+|Button|[Elemento Buttons](../../extensibility/buttons-element.md), IDE, altri pacchetti VSPackage|Da 1 *a n* gruppi, l'elemento stesso||
+|Grafico combinato|[Elemento Combos](../../extensibility/combos-element.md), IDE, altri pacchetti VSPackage|Da 1 *a n* gruppi, l'elemento stesso||
 
-### <a name="menu-command-and-group-placement"></a>Selezione host per menu, comandi e gruppi
-Un menu, un gruppo o un comando può essere visualizzato in più di una posizione nell'IDE. Per visualizzare un elemento in più posizioni, è necessario aggiungerlo alla `CommandPlacements` sezione come [elemento CommandPlacement](../../extensibility/commandplacement-element.md). Qualsiasi menu, gruppo o comando può essere aggiunto come posizione dei comandi. Tuttavia, le barre degli strumenti non possono essere posizionate in questo modo perché non possono apparire in più posizioni sensibili al contesto.
+### <a name="menu-command-and-group-placement"></a>Posizionamento di menu, comandi e gruppi
+Un menu, un gruppo o un comando può essere visualizzato in più di una posizione nell'IDE. Perché un elemento venga visualizzato in più posizioni, deve essere aggiunto alla `CommandPlacements` sezione come [elemento CommandPlacement](../../extensibility/commandplacement-element.md). È possibile aggiungere qualsiasi menu, gruppo o comando come posizione del comando. Tuttavia, le barre degli strumenti non possono essere posizionate in questo modo perché non possono essere visualizzate in più posizioni sensibili al contesto.
 
-Le sostituzioni di comandi includono `guid` `id` attributi, e `priority` . Il GUID e l'ID devono corrispondere a quelli dell'elemento posizionato. L' `priority` attributo determina la posizione dell'elemento rispetto ad altri elementi. Quando l'IDE unisce due o più elementi con la stessa priorità, le rispettive posizioni non sono definite perché l'IDE non garantisce che le risorse del pacchetto vengano lette nello stesso ordine ogni volta che il pacchetto viene compilato.
+Le posizioni dei comandi `guid` hanno gli attributi , e `id` `priority` . Il GUID e l'ID devono corrispondere a quelli dell'elemento posizionato. `priority`L'attributo determina la posizione dell'elemento rispetto ad altri elementi. Quando l'IDE unisce due o più elementi con la stessa priorità, le relative posizioni non sono definite perché l'IDE non garantisce che le risorse del pacchetto siano lette nello stesso ordine ogni volta che il pacchetto viene compilato.
 
-Se un menu o un gruppo viene visualizzato in più posizioni, tutti gli elementi figlio di tale menu o gruppo verranno visualizzati in ogni istanza.
+Se un menu o un gruppo viene visualizzato in più posizioni, tutti gli elementi figlio del menu o del gruppo verranno visualizzati in ogni istanza.
 
-## <a name="command-visibility-and-context"></a>Visibilità e contesto del comando
-Quando vengono installati più pacchetti VSPackage, un profusion di menu, voci di menu e barre degli strumenti può ingombrare l'IDE. Per evitare questo problema, è possibile controllare la visibilità dei singoli elementi dell'interfaccia utente usando *vincoli di visibilità* e flag di comando.
+## <a name="command-visibility-and-context"></a>Visibilità e contesto dei comandi
+Quando vengono installati più pacchetti VSPackage, una grande di menu, voci di menu e barre degli strumenti può creare confusione nell'IDE. Per evitare questo problema, è possibile controllare la visibilità dei singoli elementi dell'interfaccia utente usando vincoli *di visibilità* e flag di comando.
 
 ### <a name="visibility-constraints"></a>Vincoli di visibilità
-Un vincolo di visibilità viene impostato come [elemento VisibilityItem](../../extensibility/visibilityitem-element.md) nella `VisibilityConstraints` sezione. Un vincolo di visibilità definisce contesti dell'interfaccia utente specifici in cui l'elemento di destinazione è visibile. Un menu o un comando incluso in questa sezione è visibile solo quando uno dei contesti definiti è attivo. Se in questa sezione non viene fatto riferimento a un menu o a un comando, è sempre visibile per impostazione predefinita. Questa sezione non si applica ai gruppi.
+Un vincolo di visibilità viene impostato come [elemento VisibilityItem](../../extensibility/visibilityitem-element.md) nella `VisibilityConstraints` sezione . Un vincolo di visibilità definisce contesti dell'interfaccia utente specifici in cui è visibile l'elemento di destinazione. Un menu o un comando incluso in questa sezione è visibile solo quando è attivo uno dei contesti definiti. Se in questa sezione non viene fatto riferimento a un menu o a un comando, è sempre visibile per impostazione predefinita. Questa sezione non si applica ai gruppi.
 
-`VisibilityItem` gli elementi devono avere tre attributi, come segue: `guid` e `id` dell'elemento dell'interfaccia utente di destinazione, e `context` . L' `context` attributo specifica quando l'elemento di destinazione sarà visibile e accetta qualsiasi contesto dell'interfaccia utente valido come valore. Le costanti di contesto dell'interfaccia utente per Visual Studio sono membri della <xref:Microsoft.VisualStudio.VSConstants> classe. Ogni `VisibilityItem` elemento può assumere un solo valore di contesto. Per applicare un secondo contesto, creare un secondo `VisibilityItem` elemento che punti allo stesso elemento, come illustrato nell'esempio seguente.
+`VisibilityItem` Gli elementi devono avere tre attributi, come indicato di seguito: `guid` e `id` dell'elemento dell'interfaccia utente di destinazione e `context` . L'attributo specifica quando l'elemento di destinazione sarà visibile e accetta `context` qualsiasi contesto dell'interfaccia utente valido come valore. Le costanti di contesto dell'interfaccia utente Visual Studio sono membri della <xref:Microsoft.VisualStudio.VSConstants> classe . Ogni `VisibilityItem` elemento può assumere un solo valore di contesto. Per applicare un secondo contesto, creare un secondo `VisibilityItem` elemento che punti allo stesso elemento, come illustrato nell'esempio seguente.
 
 ```xml
 <VisibilityConstraints>
@@ -227,27 +228,27 @@ I flag di comando seguenti possono influire sulla visibilità dei menu e dei com
 
 Valido per: `Menu`
 
-`CommandWellOnly` Applicare questo flag se il comando non viene visualizzato nel menu di primo livello e si desidera renderlo disponibile per la personalizzazione della shell aggiuntiva, ad esempio, associarlo a una chiave. Dopo l'installazione del pacchetto VSPackage, un utente può personalizzare questi comandi aprendo la finestra di dialogo **Opzioni** e quindi modificando il posizionamento dei comandi nella categoria **ambiente tastiera** . Non influisce sulla selezione host sui menu di scelta rapida, sulle barre degli strumenti, sui controller dei menu o sui sottomenu.
+`CommandWellOnly` Applicare questo flag se il comando non viene visualizzato nel menu di primo livello e si vuole renderlo disponibile per la personalizzazione aggiuntiva della shell, ad esempio associarlo a una chiave. Dopo aver installato il pacchetto VSPackage, un  utente può personalizzare questi comandi aprendo la finestra di dialogo Opzioni e quindi modificando il posizionamento dei comandi nella **categoria Ambiente tastiera.** Non influisce sulla posizione in menu di scelta rapida, barre degli strumenti, controller di menu o sottomenu.
 
 Valido per: `Button` , `Combo`
 
-`DefaultDisabled` Per impostazione predefinita, il comando viene disabilitato se il pacchetto VSPackage che implementa il comando non è caricato o se il metodo QueryStatus non è stato chiamato.
+`DefaultDisabled` Per impostazione predefinita, il comando è disabilitato se il pacchetto VSPackage che implementa il comando non viene caricato o se non è stato chiamato il metodo QueryStatus.
 
 Valido per: `Button` , `Combo`
 
-`DefaultInvisible` Per impostazione predefinita, il comando è invisibile se il pacchetto VSPackage che implementa il comando non è caricato o se il metodo QueryStatus non è stato chiamato.
+`DefaultInvisible` Per impostazione predefinita, il comando è invisibile se il pacchetto VSPackage che implementa il comando non viene caricato o se non è stato chiamato il metodo QueryStatus.
 
-Deve essere combinato con il `DynamicVisibility` flag.
+Deve essere combinato con il `DynamicVisibility` flag .
 
 Valido per: `Button` , `Combo` , `Menu`
 
-`DynamicVisibility` È possibile modificare la visibilità del comando utilizzando il `QueryStatus` metodo o un GUID di contesto incluso nella `VisibilityConstraints` sezione.
+`DynamicVisibility` La visibilità del comando può essere modificata usando il metodo o un GUID di contesto `QueryStatus` incluso nella `VisibilityConstraints` sezione .
 
-Si applica ai comandi visualizzati nei menu, non sulle barre degli strumenti. Gli elementi della barra degli strumenti di primo livello possono essere disabilitati, ma non nascosti, quando il `OLECMDF_INVISIBLE` flag viene restituito dal `QueryStatus` metodo.
+Si applica ai comandi visualizzati nei menu, non nelle barre degli strumenti. Gli elementi della barra degli strumenti di primo livello possono essere disabilitati, ma non nascosti, quando il `OLECMDF_INVISIBLE` flag viene restituito dal `QueryStatus` metodo .
 
-In un menu questo flag indica anche che deve essere nascosto automaticamente quando i relativi membri sono nascosti. Questo flag viene in genere assegnato ai sottomenu perché i menu di primo livello dispongono già di questo comportamento.
+In un menu questo flag indica anche che deve essere nascosto automaticamente quando i relativi membri sono nascosti. Questo flag viene in genere assegnato ai sottomenu perché i menu di primo livello hanno già questo comportamento.
 
-Deve essere combinato con il `DefaultInvisible` flag.
+Deve essere combinato con il `DefaultInvisible` flag .
 
 Valido per: `Button` , `Combo` , `Menu`
 
@@ -255,10 +256,10 @@ Valido per: `Button` , `Combo` , `Menu`
 
 Valido per: `Button`
 
-Per ulteriori informazioni sui flag di comando, vedere la documentazione dell' [elemento CommandFlag](../../extensibility/command-flag-element.md) .
+Per altre informazioni sui flag di comando, vedere la [documentazione dell'elemento CommandFlag.](../../extensibility/command-flag-element.md)
 
 #### <a name="general-requirements"></a>Requisiti generali
-Il comando deve superare la serie di test seguenti prima che sia possibile visualizzarla e abilitarla:
+Per poter essere visualizzato e abilitato, il comando deve superare la serie di test seguente:
 
 - Il comando è posizionato correttamente.
 
@@ -266,29 +267,29 @@ Il comando deve superare la serie di test seguenti prima che sia possibile visua
 
 - Il menu padre o la barra degli strumenti è visibile.
 
-- Il comando non è invisibile a causa di una voce di contesto nella sezione dell' [elemento VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) .
+- Il comando non è invisibile a causa di una voce di contesto nella [sezione dell'elemento VisibilityConstraints.](../../extensibility/visibilityconstraints-element.md)
 
-- Il codice VSPackage che implementa l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia Visualizza e Abilita il comando. Nessun codice di interfaccia lo ha intercettato e ha agito su di esso.
+- Il codice VSPackage che implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia visualizza e abilita il comando. Nessun codice di interfaccia lo ha intercettato e ha agire su di esso.
 
-- Quando un utente fa clic sul comando, diventa soggetto alla procedura illustrata nell' [algoritmo di routing](../../extensibility/internals/command-routing-algorithm.md).
+- Quando un utente fa clic sul comando, diventa soggetto alla procedura descritta in Algoritmo [di routing](../../extensibility/internals/command-routing-algorithm.md).
 
-## <a name="call-pre-defined-commands"></a>Chiama comandi predefiniti
-L' [elemento UsedCommands](../../extensibility/usedcommands-element.md) consente ai VSPackage di accedere ai comandi forniti da altri VSPackage o dall'IDE. A tale scopo, creare un [elemento UsedCommand](../../extensibility/usedcommand-element.md) con il GUID e l'ID del comando da usare. In questo modo si garantisce che il comando venga caricato da Visual Studio, anche se non fa parte della configurazione corrente di Visual Studio. Per altre informazioni, vedere [elemento UsedCommand](../../extensibility/usedcommand-element.md).
+## <a name="call-pre-defined-commands"></a>Chiamare comandi predefiniti
+[L'elemento UsedCommands](../../extensibility/usedcommands-element.md) consente ai pacchetti VSPackage di accedere ai comandi forniti da altri PACCHETTI VSPackage o dall'IDE. A tale scopo, creare un [elemento UsedCommand](../../extensibility/usedcommand-element.md) con il GUID e l'ID del comando da usare. Ciò garantisce che il comando verrà caricato da Visual Studio, anche se non fa parte della configurazione Visual Studio corrente. Per altre informazioni, vedere [Elemento UsedCommand.](../../extensibility/usedcommand-element.md)
 
-## <a name="interface-element-appearance"></a>Aspetto elemento interfaccia
-Di seguito sono riportate alcune considerazioni per la selezione e il posizionamento degli elementi Command:
+## <a name="interface-element-appearance"></a>Aspetto degli elementi dell'interfaccia
+Di seguito sono riportate alcune considerazioni per la selezione e il posizionamento degli elementi di comando:
 
-- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] offre molti elementi dell'interfaccia utente che vengono visualizzati in modo diverso a seconda della selezione host.
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] offre molti elementi dell'interfaccia utente che vengono visualizzati in modo diverso a seconda della posizione.
 
-- Un elemento dell'interfaccia utente definito usando il `DefaultInvisible` flag non verrà visualizzato nell'IDE a meno che non sia visualizzato dall'implementazione del pacchetto VSPackage del <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodo o associato a un particolare contesto dell'interfaccia utente nella `VisibilityConstraints` sezione.
+- Un elemento dell'interfaccia utente definito tramite il flag non verrà visualizzato nell'IDE a meno che non venga visualizzato dall'implementazione VSPackage del metodo o associato a un contesto dell'interfaccia utente specifico nella `DefaultInvisible` <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> sezione `VisibilityConstraints` .
 
-- Anche un comando posizionato correttamente potrebbe non essere visualizzato. Ciò è dovuto al fatto che l'IDE nasconde o Visualizza automaticamente alcuni comandi, a seconda delle interfacce implementate dal pacchetto VSPackage (o non è). Ad esempio, l'implementazione di un pacchetto VSPackage di alcune interfacce di compilazione fa sì che le voci di menu correlate alla compilazione vengano visualizzate automaticamente.
+- Anche un comando posizionato correttamente potrebbe non essere visualizzato. Ciò è dovuto al fatto che l'IDE nasconde o visualizza automaticamente alcuni comandi, a seconda delle interfacce implementate dal PACCHETTO VSPackage. Ad esempio, l'implementazione di un PACCHETTO VSPackage di alcune interfacce di compilazione fa sì che le voci di menu relative alla compilazione siano visualizzate automaticamente.
 
-- `CommandWellOnly`Se si applica il flag nella definizione dell'elemento dell'interfaccia utente, il comando può essere aggiunto solo tramite personalizzazione.
+- L'applicazione del `CommandWellOnly` flag nella definizione dell'elemento dell'interfaccia utente significa che il comando può essere aggiunto solo tramite personalizzazione.
 
-- I comandi possono essere disponibili solo in alcuni contesti dell'interfaccia utente, ad esempio solo quando viene visualizzata una finestra di dialogo quando l'IDE è in visualizzazione progettazione.
+- I comandi possono essere disponibili solo in determinati contesti dell'interfaccia utente, ad esempio solo quando viene visualizzata una finestra di dialogo quando l'IDE è in visualizzazione progettazione.
 
-- Per far sì che alcuni elementi dell'interfaccia utente vengano visualizzati nell'IDE, è necessario implementare una o più interfacce o scrivere codice.
+- Per fare in modo che determinati elementi dell'interfaccia utente siano visualizzati nell'IDE, è necessario implementare una o più interfacce o scrivere codice.
 
 ## <a name="see-also"></a>Vedi anche
-- [Estendi menu e comandi](../../extensibility/extending-menus-and-commands.md)
+- [Estendere menu e comandi](../../extensibility/extending-menus-and-commands.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b47c348411648dc1bb34cf4bcd7bc99d2c66feffa926c4fe7258e30e33034c8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 05e1f8e6418615e3b09d40d8fd5a0431faf526ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261918"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064409"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 Notifica al pacchetto di debug che il testo è stato inserito nel documento.

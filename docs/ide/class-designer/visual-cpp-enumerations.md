@@ -1,6 +1,6 @@
 ---
 title: Enumerazioni C++ in Progettazione classi
-description: Informazioni su come Progettazione classi supporta i tipi di classe enum e enum con ambito C++.
+description: Informazioni su come Progettazione classi supporta i tipi di classe enum C++ e con ambito.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,18 +10,19 @@ ms.assetid: 11e90ba1-18cd-44f8-9e26-e3746a7a19d1
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88675bb7593a901805cc156bbb36a2f49d69ec29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4ab0dc47f9113e17b36617b432df1ffe5f0153e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852557"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109500"
 ---
 # <a name="c-enumerations-in-class-designer"></a>Enumerazioni C++ in Progettazione classi
 
-**Progettazione classi** supporta C++ `enum` e i tipi con ambito `enum class` . Di seguito è illustrato un esempio:
+**Progettazione classi** supporta C++ `enum` e i tipi con `enum class` ambito. Di seguito è illustrato un esempio:
 
 ```cpp
 enum CardSuit {

@@ -11,14 +11,15 @@ ms.assetid: 5c13fa9a-b35e-47b0-806f-1f53bfe1ba89
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dbf8b4b5ce26c67cc91f1d8dafe22f3a75b41c1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 38c360dde5e857a99fb021e3f6a48aef8241ee72
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149116"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134625"
 ---
 # <a name="idiaenumdebugstreamsget_count"></a>IDiaEnumDebugStreams::get_Count
 Recupera il numero di flussi di debug.
@@ -34,7 +35,7 @@ HRESULT get_Count(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il numero di flussi di debug disponibili nell'enumeratore.
+[out] Restituisce il numero di flussi di debug disponibili in questo enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

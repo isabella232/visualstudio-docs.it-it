@@ -1,41 +1,42 @@
 ---
 title: Modifiche dell'API di rilievo in Visual Studio 2022 Preview
-description: Informazioni sulle modifiche all'API che causano la mancata compilazione delle estensioni di Visual Studio esistenti durante la migrazione delle estensioni Visual Studio 2022 Preview.
+description: Informazioni sulle modifiche dell'API che causano la mancata compilazione delle estensioni di Visual Studio esistenti durante la migrazione delle estensioni Visual Studio 2022 Preview.
 ms.date: 06/08/2021
 ms.topic: reference
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: fd2f1661f57cc0e03dfa1a543d9ae1be0a1e0163
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 2e206c6c87c8861f4f0e14bc6a5b7dc518010456
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592268"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110254"
 ---
 # <a name="breaking-api-changes-in-visual-studio-2022"></a>Modifiche dell'API di rilievo Visual Studio 2022
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-Se si esegue la migrazione di un'estensione Visual Studio 2022, le modifiche di rilievo elencate di seguito potrebbero influire sull'utente.
+Se si esegue la migrazione di un'estensione a Visual Studio 2022, le modifiche di rilievo elencate di seguito potrebbero influire sull'utente.
 
 ## <a name="reference-assemblies-no-longer-installed"></a>Assembly di riferimento non più installati
 
-È possibile che molti degli assembly a cui si fa riferimento MSBuild risolti da una directory Visual Studio di installazione non siano più installati. È consigliabile usare NuGet per acquisire gli assembly di riferimento Visual Studio SDK necessari. Per [informazioni dettagliate su questa operazione,](update-visual-studio-extension.md#modernize-your-vsix-project) vedere Modernizzare i progetti.
+È possibile che molti degli assembly a cui si fa riferimento MSBuild risolti da una directory di Visual Studio di installazione non siano più installati. È consigliabile usare NuGet per acquisire gli assembly di riferimento Visual Studio SDK necessari. Per [informazioni dettagliate su questa operazione,](update-visual-studio-extension.md#modernize-your-vsix-project) vedere Modernizzare i progetti.
 
 ## <a name="removed-apis"></a>API rimosse
 
-Nel Visual Studio 2022 sono state rimosse un certo numero di API come parte dello spostamento Visual Studio futuro. Un elenco delle API rimosse è disponibile nella [pagina Elenco API](removed-api-list.md) rimosse.
+Nel Visual Studio 2022 sono state rimosse un certo numero di API come parte del Visual Studio futuro. Un elenco delle API rimosse è disponibile nella [pagina Elenco API](removed-api-list.md) rimosse.
 
 ## <a name="interop-breaking-changes"></a>Modifiche di rilievo dell'interoperabilità
 
 Molte API sono state modificate in Visual Studio 2022, in genere con semplici modifiche che sono semplici da supportare per il codice.
 
-Per gestire le modifiche di rilievo, si prevede di fornire un nuovo meccanismo per la distribuzione degli assembly di interoperabilità. In particolare, per Visual Studio 2022 e oltre viene fornito un singolo assembly di interoperabilità con definizioni per molte interfacce pubbliche Visual Studio comuni. Tale assembly contiene definizioni gestite per molte Visual Studio interfacce che si spostano da più assembly di interoperabilità. Il nuovo assembly di interoperabilità viene distribuito tramite il `Microsoft.VisualStudio.Interop` NuGet pacchetto.
+Per gestire le modifiche di rilievo, si prevede di fornire un nuovo meccanismo per la distribuzione degli assembly di interoperabilità. In particolare, per Visual Studio 2022 e oltre viene fornito un singolo assembly di interoperabilità con definizioni per molte interfacce pubbliche Visual Studio comune. Tale assembly contiene definizioni gestite per molte Visual Studio interfacce che si allontanano da più assembly di interoperabilità. Il nuovo assembly di interoperabilità viene distribuito tramite il `Microsoft.VisualStudio.Interop` NuGet di interoperabilità.
 
 Tuttavia, Visual Studio componenti usati principalmente nei contesti nativi e con un numero ridotto di modifiche di rilievo continueranno ad avere i propri assembly di interoperabilità(ad esempio, l'assembly del debugger sarà ancora VisualStudio.Debugger.Interop.dll come attualmente). In ogni caso, è possibile fare riferimento agli assembly dall'applicazione, proprio come lo sono attualmente.
 
@@ -45,15 +46,15 @@ Ciò offre alcuni vantaggi molto importanti che semplificano l'aggiornamento del
 
 - Eventuali API interrotte diventeranno errori in fase di compilazione, semplificando l'individuazione e la correzione.
 - È necessario aggiornare solo il codice che usa un'API interrotta in Visual Studio 2022.
-- Non sarà possibile usare accidentalmente l'API precedente, ora interrotta.
+- Non sarà possibile usare accidentalmente l'API precedente e ora interrotta.
 
-In generale, queste modifiche comportano una versione più stabile Visual Studio per tutti gli utenti. Lo svantaggio principale di questo approccio è che gli assembly gestiti non potranno essere eseguiti in Visual Studio 2019 e Visual Studio 2022 senza compilare il codice una sola volta per ogni versione di Visual Studio di destinazione.
+In generale, queste modifiche comportano una versione più stabile Visual Studio per tutti gli utenti. Lo svantaggio principale di questo approccio è che gli assembly gestiti non potranno essere eseguiti sia in Visual Studio 2019 che in Visual Studio 2022 senza compilare il codice una volta per ogni versione di Visual Studio di destinazione.
 
-Quando si verificano errori di compilazione a causa delle differenze dell'API tra Visual Studio 2019 e Visual Studio 2022, è possibile trovare l'API o il modello elencato di seguito con indicazioni su come risolverlo.
+Quando si verificano errori di compilazione a causa delle differenze dell'API tra Visual Studio 2019 e Visual Studio 2022, è possibile trovare l'API o il modello che si sta affrontando elencato di seguito con indicazioni su come risolverlo.
 
 ### <a name="int-or-uint-where-intptr-is-expected"></a>`int` o `uint` dove `IntPtr` è previsto
 
-Si prevede che si tratta di un errore molto comune. Per rendere Visual Studio 2022 un processo a 64 bit, alcune API di interoperabilità dove si presupponeva che un puntatore potesse essere contenuto in un intero a 32 bit per usare effettivamente un valore di dimensioni del puntatore.
+Si prevede che si tratta di un errore molto comune. Per rendere Visual Studio 2022 un processo a 64 bit, alcune delle API di interoperabilità dove si presupponeva che un puntatore potesse essere contenuto in un intero a 32 bit per usare effettivamente un valore di dimensioni del puntatore.
 
 Errore di esempio:
 
@@ -76,14 +77,14 @@ Errore di esempio:
 
 > errore CS0433: Il tipo 'IVsDpiAware' esiste sia in 'Microsoft.VisualStudio.Interop, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' e 'Microsoft.VisualStudio.Shell.Interop.16.0.DesignTime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
 
-Fare riferimento alla tabella [di ridefinizione dell'assembly](migrated-assemblies.md) di riferimento per vedere quale nome dell'assembly è il nome preferito in Visual Studio 2022.
+Fare riferimento alla [tabella di ridefinizione dell'assembly](migrated-assemblies.md) di riferimento per vedere quale nome dell'assembly è il nome preferito in Visual Studio 2022.
 Considerando i due assembly denominati nell'errore di esempio precedente e esaminando questa tabella, si noti `Microsoft.VisualStudio.Interop` che è il nuovo nome dell'assembly. La correzione potrebbe quindi essere la rimozione del riferimento `Microsoft.VisualStudio.Shell.Interop.16.0.DesignTime` a dal progetto.
 
 In alcuni casi è disponibile un pacchetto Visual Studio versione 2022 per l'assembly deprecato che contiene server d'inoltro dei tipi. Quando questa opzione è disponibile,  è possibile aggiornare il riferimento al pacchetto alla versione Visual Studio 2022 anziché rimuoverlo. I server d'inoltro dei tipi risolveranno l'errore dal compilatore.
 
-Tenere presente che a volte questi riferimenti possono essere prodotti da riferimenti transitivi al pacchetto e quindi possono essere più difficili da rimuovere rispetto a un riferimento diretto effettuato nel file di progetto. In questi casi, assicurarsi che tutti i riferimenti diretti ai pacchetti utilizzino tutti Visual Studio 2022 SDK. È possibile fare *project.assets.jssu* per identificare la catena di pacchetti responsabili dell'uso dell'assembly deprecato. L'aggiornamento di un riferimento di pacchetto transitivo a una versione Visual Studio 2022 è semplice come installarlo come riferimento diretto.
+Tenere presente che a volte questi riferimenti possono essere prodotti da riferimenti transitivi al pacchetto e quindi possono essere più difficili da rimuovere rispetto a un riferimento diretto effettuato nel file di progetto. In questi casi, assicurarsi che tutti i riferimenti diretti ai pacchetti utilizzino tutti Visual Studio 2022 SDK. È possibile fare *riferimentoproject.assets.js* per identificare la catena di pacchetti responsabili dell'uso dell'assembly deprecato. L'aggiornamento di un riferimento di pacchetto transitivo a una versione Visual Studio 2022 è semplice come installarlo come riferimento diretto.
 
-Se non è possibile modificare l'albero delle dipendenze, ad esempio perché implica una dipendenza di terze parti, è possibile aggiungere un riferimento diretto al pacchetto precedente Visual Studio 2022 e aggiungere metadati a tale elemento per risolvere l'errore del `ExcludeAssets="compile"` `PackageReference` compilatore. Tenere tuttavia presente che con questa tecnica l'estensione può mantenere una dipendenza da un assembly pre-Visual Studio 2022 e l'estensione potrebbe non funzionare correttamente in fase di esecuzione.
+Se non è possibile modificare l'albero delle dipendenze, ad esempio perché implica una dipendenza di terze parti, è possibile aggiungere un riferimento diretto al pacchetto pre-Visual Studio 2022 e aggiungere metadati a tale elemento per risolvere l'errore del `ExcludeAssets="compile"` `PackageReference` compilatore. Tenere tuttavia presente che con questa tecnica l'estensione può mantenere una dipendenza da un assembly pre-Visual Studio 2022 e l'estensione potrebbe non funzionare correttamente in fase di esecuzione.
 
 ### <a name="missing-reference-to-an-interop-assembly"></a>Riferimento mancante a un assembly di interoperabilità
 
@@ -103,7 +104,7 @@ In alcuni casi è disponibile un pacchetto Visual Studio versione 2022 per l'ass
 
 Esistono due definizioni di questa interfaccia, in due spazi dei nomi. Solo uno di questi era destinato all'utilizzo gestito.
 
-Visual Studio 2019 Namespace | Visual Studio 2022 Namespace | Uso previsto
+Visual Studio 2019 Namespace | Visual Studio 2022 Spazio dei nomi | Uso previsto
 --|--|--
 Microsoft.VisualStudio.Shell.IAsyncServiceProvider | Microsoft.VisualStudio.Shell.IAsyncServiceProvider | Utilizzo del codice gestito
 Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider | Microsoft.VisualStudio.Shell.COMAsyncServiceProvider.IAsyncServiceProvider | solo interoperabilità di basso livello

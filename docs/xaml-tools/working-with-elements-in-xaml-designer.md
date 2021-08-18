@@ -9,12 +9,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 3af78174e4735a7e38ee6e13c429e6d30685faec1e36102ddfd5c3ae5c5c4f7c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9db24c368bdbf3f7503b650f5ba588b603b0b2a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121365367"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037772"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Usare gli elementi nella finestra di progettazione XAML
 
@@ -110,7 +110,7 @@ Per separare gli elementi ed eliminare il layout, fare clic con il pulsante dest
 
 È possibile ripristinare i valori predefiniti per le proprietà di layout specifiche di un elemento usando i comandi di reimpostazione del layout. Questo comando consente di reimpostare il margine, l'allineamento, la larghezza, l'altezza e la dimensione di un elemento, separatamente o contemporaneamente.
 
-Per reimpostare il layout dell'elemento, fare clic con il pulsante destro del mouse sull'elemento nella finestra Struttura documento o nella tavola da disegno e quindi scegliere **Layout** Reset PropertyName , dove PropertyName è la proprietà che si vuole reimpostare (oppure scegliere Layout Reset All per reimpostare tutte le proprietà di layout per  >       >   l'elemento).
+Per reimpostare il layout dell'elemento, fare clic con il pulsante destro del mouse sull'elemento nella finestra Struttura documento o nella tavola da disegno e quindi scegliere **Layout**  >  **Reset** *PropertyName*, dove *PropertyName* è la proprietà che si vuole reimpostare (oppure **scegliere Layout** Reset All per reimpostare tutte le proprietà di layout per l'elemento).  >  
 
 ## <a name="see-also"></a>Vedi anche
 

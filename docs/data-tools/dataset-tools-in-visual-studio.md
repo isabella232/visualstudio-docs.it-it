@@ -50,31 +50,31 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fdb068ad34e2261d99e24b7f836d74c642311949345795d8a2d8e34511bbcd54
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1e021a8ab30829aedd0a695a53993998e312ff81
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347370"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036992"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 
 > [!NOTE]
-> I set di dati e le classi correlate sono tecnologie .NET legacy dei primi anni 2000 che consentono alle applicazioni di usare i dati in memoria mentre le applicazioni vengono disconnesse dal database. Sono particolarmente utili per le applicazioni che consentono agli utenti di modificare i dati e rendere persistenti le modifiche nel database. Anche se i set di dati si sono dimostrati una tecnologia di grande successo, è consigliabile che le nuove applicazioni .NET usino Entity Framework. Entity Framework un modo più naturale per usare i dati tabulari come modelli a oggetti e offre un'interfaccia di programmazione più semplice.
+> I set di dati e le classi correlate sono tecnologie .NET legacy dei primi anni 2000 che consentono alle applicazioni di usare i dati in memoria mentre le applicazioni sono disconnesse dal database. Sono particolarmente utili per le applicazioni che consentono agli utenti di modificare i dati e rendere persistenti le modifiche nel database. Anche se i set di dati si sono dimostrati una tecnologia di grande successo, è consigliabile che le nuove applicazioni .NET usino Entity Framework. Entity Framework offre un modo più naturale per usare i dati tabulari come modelli a oggetti e offre un'interfaccia di programmazione più semplice.
 
-Un `DataSet` oggetto è un oggetto in memoria che è essenzialmente un mini-database. Contiene oggetti , e in cui è possibile archiviare e modificare i dati di uno o più database senza dover `DataTable` `DataColumn` mantenere una connessione `DataRow` aperta. Il set di dati mantiene le informazioni sulle modifiche ai dati, in modo che gli aggiornamenti possano essere monitorati e inviati di nuovo al database quando l'applicazione viene riconnessa.
+Un `DataSet` oggetto è un oggetto in memoria che è essenzialmente un mini-database. Contiene oggetti , e in cui è possibile archiviare e modificare i dati di uno o più database senza dover `DataTable` `DataColumn` mantenere una connessione `DataRow` aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, in modo che gli aggiornamenti possano essere monitorati e inviati di nuovo al database quando l'applicazione viene riconnessa.
 
-I set di dati e le classi correlate sono definiti nello spazio <xref:System.Data?displayProperty=fullName> dei nomi nell'API .NET. È possibile creare e modificare i set di dati in modo dinamico nel codice usando ADO.NET. La documentazione in questa sezione illustra come usare i set di dati usando Visual Studio finestre di progettazione. I set di dati creati tramite le finestre di progettazione usano **oggetti TableAdapter** per interagire con il database. I set di dati creati a livello di codice usano **oggetti DataAdapter.** Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapter e DataReader .](/dotnet/framework/data/adonet/dataadapters-and-datareaders)
+I set di dati e le classi correlate sono definiti nello <xref:System.Data?displayProperty=fullName> spazio dei nomi nell'API .NET. È possibile creare e modificare i set di dati in modo dinamico nel codice usando ADO.NET. La documentazione in questa sezione illustra come usare i set di dati usando Visual Studio di progettazione. I set di dati creati tramite le finestre di progettazione usano **oggetti TableAdapter** per interagire con il database. I set di dati creati a livello di codice usano **oggetti DataAdapter.** Per informazioni sulla creazione di set di dati a livello di codice, [vedere DataAdapters e DataReaders.](/dotnet/framework/data/adonet/dataadapters-and-datareaders)
 
-Se l'applicazione deve solo leggere i dati da un database e non eseguire aggiornamenti, aggiunte o eliminazioni, è in genere possibile ottenere prestazioni migliori usando un oggetto per recuperare i dati in un oggetto generico o in un altro oggetto `DataReader` `List` raccolta. Se si visualizzano i dati, è possibile associare l'interfaccia utente alla raccolta.
+Se l'applicazione deve solo leggere i dati da un database e non eseguire aggiornamenti, aggiunte o eliminazioni, è in genere possibile ottenere prestazioni migliori usando un oggetto per recuperare i dati in un oggetto generico o in un altro oggetto `DataReader` `List` raccolta. Se si visualizzano i dati, è possibile associare i dati dell'interfaccia utente alla raccolta.
 
 ## <a name="dataset-workflow"></a>Flusso di lavoro del set di dati
 
 Visual Studio strumenti per semplificare l'uso dei set di dati. Il flusso di lavoro end-to-end di base è:
 
-- Usare la [finestra Origini dati per](add-new-data-sources.md#data-sources-window) creare un nuovo set di dati da una o più origini dati. Usare il **Progettazione DataSet** per configurare il set di dati e impostarne le proprietà. Ad esempio, è necessario specificare le tabelle dell'origine dati da includere e le colonne di ogni tabella. Scegliere con attenzione per risparmiare la quantità di memoria necessaria per il set di dati. Per altre informazioni, vedere [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).
+- Usare la [finestra Origini dati per](add-new-data-sources.md#data-sources-window) creare un nuovo set di dati da una o più origini dati. Usare il **Progettazione DataSet** per configurare il set di dati e impostarne le proprietà. Ad esempio, è necessario specificare quali tabelle dell'origine dati includere e quali colonne di ogni tabella. Scegliere con attenzione per risparmiare la quantità di memoria necessaria per il set di dati. Per altre informazioni, vedere [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).
 
-- Specificare le relazioni tra le tabelle in modo che le chiavi esterne vengano gestite correttamente. Per altre informazioni, vedere [Riempire i set di dati tramite TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md)
+- Specificare le relazioni tra le tabelle in modo che le chiavi esterne vengano gestite correttamente. Per altre informazioni, vedere [Compilare i set di dati usando oggetti TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md)
 
 - Usare la **Configurazione guidata TableAdapter** per specificare la query o il stored procedure che popola il set di dati e le operazioni di database (aggiornamento, eliminazione e così via) da implementare. Per altre informazioni, vedere gli argomenti seguenti:
 
@@ -86,13 +86,13 @@ Visual Studio strumenti per semplificare l'uso dei set di dati. Il flusso di lav
 
   - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 
-- Eseguire query e cercare i dati nel set di dati. Per altre informazioni, vedere [Eseguire query sui set di dati](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sui dati in un <xref:System.Data.DataSet> oggetto . Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+- Eseguire query e cercare i dati nel set di dati. Per altre informazioni, vedere Eseguire [query sui set di dati.](../data-tools/query-datasets.md) [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sui dati in un <xref:System.Data.DataSet> oggetto . Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 
-- Usare la **finestra Origini dati** per associare i controlli dell'interfaccia utente al set di dati o alle singole colonne e per specificare le colonne modificabili dall'utente. Per altre informazioni, vedere [Associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Usare la **finestra Origini dati** per associare i controlli dell'interfaccia utente al set di dati o alle singole colonne e per specificare le colonne modificabili dall'utente. Per altre informazioni, vedere [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="datasets-and-n-tier-architecture"></a>Set di dati e architettura a più livelli
 
-Per informazioni sui set di dati nelle applicazioni a più livelli, vedere Usare i set di [dati in applicazioni a più livelli.](../data-tools/work-with-datasets-in-n-tier-applications.md)
+Per informazioni sui set di dati nelle applicazioni a più livelli, vedere Usare set di dati [in applicazioni a più livelli.](../data-tools/work-with-datasets-in-n-tier-applications.md)
 
 ## <a name="datasets-and-xml"></a>Set di dati e XML
 

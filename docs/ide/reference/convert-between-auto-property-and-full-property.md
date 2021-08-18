@@ -1,22 +1,23 @@
 ---
 title: Eseguire la conversione tra proprietà automatica e proprietà completa
-description: Informazioni su come usare il menu azioni rapide e refactoring per eseguire la conversione tra una proprietà implementata automaticamente e una proprietà completa.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per eseguire la conversione tra una proprietà implementata automaticamente e una proprietà completa.
 ms.custom: SEO-VS-2020
 ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3680444c07658da8e77b6058f5a71b9dcf119193
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e3a2f2c5ea08375a9a6596717ab43cd17fd5228
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907599"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094334"
 ---
 # <a name="convert-between-auto-property-and-full-property"></a>Eseguire la conversione tra proprietà automatica e proprietà completa
 
@@ -28,12 +29,12 @@ Questo refactoring si applica a:
 
 **Quando:** La logica della proprietà è stata modificata.
 
-**Motivo:** È possibile eseguire manualmente la conversione tra una proprietà implementata automaticamente in una proprietà completa, tuttavia questa funzionalità eseguirà automaticamente il lavoro. 
+**Perché:** È possibile eseguire manualmente la conversione tra una proprietà implementata automaticamente in una proprietà completa, ma questa funzionalità esegue automaticamente il lavoro. 
 
 ## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore sul nome della proprietà.
-2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare una delle due opzioni seguenti: 
 
     Selezionare **Converti in proprietà completa**.
@@ -42,7 +43,7 @@ Questo refactoring si applica a:
 
     Selezionare **Usa proprietà automatica**. 
 
-    ![Converti proprietà completa in proprietà automatica](media/convert-full-property-to-auto-property.png) 
+    ![Convertire la proprietà completa in proprietà automatica](media/convert-full-property-to-auto-property.png) 
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -12,14 +12,15 @@ ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340012663ad7d21c0b5c2ef81283f5d780d6011c
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: ecd4682058bfb024db55658d88d0e629a40881b6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901526"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094516"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Si tratta di una funzione di callback specificata in una chiamata a [SccSetOption](../extensibility/sccsetoption-function.md) (usando l'opzione ) e viene usata per comunicare le modifiche dei nomi apportate dal plug-in del controllo del codice sorgente `SCC_OPT_NAMECHANGEPFN` all'IDE.
@@ -55,6 +56,6 @@ typedef void (*OPTNAMECHANGEPFN)(
 
  Se l'IDE non supporta questo callback, non chiamerà [SccSetOption](../extensibility/sccsetoption-function.md) per specificarlo. Se il plug-in non supporta questo callback, verrà restituito dalla funzione quando `SCC_E_OPNOTSUPPORTED` l'IDE tenta di impostare il `SccSetOption` callback.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)
