@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8243c8e9676d8052c66ab7fb9179e0961a1eaa2e9c91e3bbada29bb01b624647
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f98067fa432816f282b3ab140ca24d0474dcfdb8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380481"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134593"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
 Riporta all'inizio la sequenza di enumerazione.

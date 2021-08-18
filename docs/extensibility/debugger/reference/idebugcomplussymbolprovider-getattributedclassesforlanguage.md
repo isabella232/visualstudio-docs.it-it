@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f502a9249688f9d94691342ef3b9d60254a66698b64674b77b6676e01c15c881
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cdc3aaed482d765747f6eac8451990aee556cab0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377951"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103962"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Recupera le classi con l'attributo specificato implementate nel linguaggio di programmazione specificato.
@@ -48,7 +48,7 @@ int GetAttributedClassesForLanguage (
 
 ## <a name="parameters"></a>Parametri
 `guidLanguage`\
-[in] Identificatore univoco della lingua.
+[in] Identificatore univoco per la lingua.
 
 `pstrAttribute`\
 [in] Stringa dell'attributo.
@@ -60,7 +60,7 @@ int GetAttributedClassesForLanguage (
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(

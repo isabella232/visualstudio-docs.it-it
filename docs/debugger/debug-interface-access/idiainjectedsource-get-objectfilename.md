@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8774efa9bc1f8fe7a35883901be6d795116950e101d01f42093da692fb84d028
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cfe2dc595f541bfa7c68acbcf07cf98f84ffff55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392272"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134305"
 ---
 # <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
 Recupera il nome del file oggetto in cui è stata compilata l'origine.

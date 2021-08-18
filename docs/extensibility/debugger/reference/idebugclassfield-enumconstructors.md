@@ -1,6 +1,6 @@
 ---
 description: Crea un enumeratore per i costruttori per questa classe.
-title: 'IDebugClassField:: EnumConstructors | Microsoft Docs'
+title: IDebugClassField::EnumConstructors | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8efba9ecb25259b6aa4998a1f22fedf443c1281a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a019a55fc9610e0953b6083ad901c16ae73d0907
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119724"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Crea un enumeratore per i costruttori per questa classe.
@@ -44,18 +45,18 @@ int EnumConstructors(
 
 ## <a name="parameters"></a>Parametri
 `cMatch`\
-in Valore dell'enumerazione [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) che specifica il tipo di costruttori da enumerare.
+[in] Valore [dell'enumerazione CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) che specifica il tipo di costruttori da enumerare.
 
 `ppEnum`\
-out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco dei costruttori. Restituisce un valore null se non sono presenti costruttori.
+[out] Restituisce un [oggetto IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco di costruttori. Restituisce un valore Null se non sono presenti costruttori.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non sono presenti costruttori. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Ogni elemento dell'enumerazione è un oggetto [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) che descrive un metodo del costruttore.
+ Ogni elemento dell'enumerazione è un [oggetto IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) che descrive un metodo costruttore.
 
- L'elenco dei costruttori non include in genere i costruttori predefiniti forniti da un compilatore.
+ L'elenco di costruttori in genere non include i costruttori predefiniti forniti da un compilatore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

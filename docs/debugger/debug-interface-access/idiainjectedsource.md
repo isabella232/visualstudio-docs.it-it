@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0532aa2a30c7ef70b77e4e3342d7213ec9c4bf5df68beaa39112e1ba6c92996f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6b58eae372af82a03dc2629b4b92a5e472342fdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454999"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139309"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Accede al codice sorgente inserito archiviato nell'origine dati DIA.
@@ -39,7 +39,7 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaInjectedSource` .
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Recupera il numero di byte di codice.|
 |[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Recupera il nome file per l'origine.|
 |[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Recupera il nome del file oggetto in cui è stata compilata l'origine.|
-|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Recupera il nome assegnato al codice sorgente non file. cio, codice inserito.|
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Recupera il nome assegnato al codice sorgente non file. ad esempio il codice inserito.|
 |[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Recupera l'indicatore della compressione di origine utilizzata.|
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Recupera i byte del codice sorgente.|
 
@@ -47,10 +47,10 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaInjectedSource` .
 L'origine inserita è il testo inserito durante la compilazione. Questo non significa il preprocessore `#include` usato in C++.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando i [metodi IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) o [IDiaEnumInjectedSources::Next.](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) Vedere [l'interfaccia IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) per un esempio di recupero `IDiaInjectedSource` dell'interfaccia.
+Ottenere questa interfaccia chiamando i [metodi IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md) o [IDiaEnumInjectedSources::Next.](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md) Per un esempio di come ottenere l'interfaccia, vedere l'interfaccia [IDiaEnumInjectedSources.](../../debugger/debug-interface-access/idiaenuminjectedsources.md) `IDiaInjectedSource`
 
 ## <a name="example"></a>Esempio
-In questo esempio vengono visualizzati i dati disponibili `IDiaInjectedSource` nell'interfaccia . Per un approccio alternativo che usa [l'interfaccia IDiaPropertyStorage,](../../debugger/debug-interface-access/idiapropertystorage.md) vedere l'esempio [nell'interfaccia IDiaEnumInjectedSources.](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+In questo esempio vengono visualizzati i dati disponibili `IDiaInjectedSource` dall'interfaccia . Per un approccio alternativo [all'uso dell'interfaccia IDiaPropertyStorage,](../../debugger/debug-interface-access/idiapropertystorage.md) vedere l'esempio nell'interfaccia [IDiaEnumInjectedSources.](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 
 ```C++
 void PrintInjectedSource(IDiaInjectedSource* pSource)

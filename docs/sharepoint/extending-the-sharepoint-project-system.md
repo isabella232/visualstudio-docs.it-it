@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 0fea459c7a442d25363c66efc7be69d21a5e3fb2fd5b31b94e8f09665415d872
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3a00ae9a4ecfc5f8fbc0b5c0357b4db47db114b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425388"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149260"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Estendere il SharePoint di progetto
   È possibile creare SharePoint soluzioni personalizzate usando un set di modelli di progetto e modelli di elemento in Visual Studio. Questi modelli soddisfano i requisiti di molti scenari di sviluppo, ma è possibile individuare alcuni casi in cui non forniscono funzionalità necessarie. In questi casi è possibile estendere il sistema SharePoint progetto.
@@ -47,7 +47,7 @@ ms.locfileid: "121425388"
 ## <a name="common-development-tasks"></a>Attività di sviluppo comuni
  È possibile eseguire le attività comuni seguenti nelle estensioni del SharePoint di progetto:
 
-- Salvare dati di stringa personalizzati con elementi di progetto e in diversi tipi diversi di file di progetto. Per altre informazioni, vedere [Salvare i dati nelle estensioni del sistema SharePoint progetto](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+- Salvare dati stringa personalizzati con elementi di progetto e in diversi tipi diversi di file di progetto. Per altre informazioni, vedere [Salvare i dati nelle estensioni del SharePoint di progetto](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 - Convertire un oggetto nel sistema SharePoint progetto in un oggetto corrispondente nel modello a oggetti di automazione Visual Studio modello a oggetti di integrazione o viceversa. Per altre informazioni, vedere [Conver tra](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)SharePoint di sistema del progetto e altri Visual Studio tipi di progetto .
 
@@ -58,5 +58,5 @@ ms.locfileid: "121425388"
 - [Estendere SharePoint creazione di pacchetti e distribuzione](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Salvare i dati nelle estensioni del sistema SharePoint progetto](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [Eseguire la conversione SharePoint tipi di sistema del progetto e altri Visual Studio di progetto](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
-- [Estendere gli SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Estendere gli SharePoint seguenti in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

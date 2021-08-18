@@ -1,5 +1,5 @@
 ---
-title: '&lt;&gt;elemento compatibleFrameworks (distribuzione ClickOnce) | Microsoft Docs'
+title: '&lt;Elemento compatibleFrameworks &gt; (ClickOnce Deployment) | Microsoft Docs'
 description: L'elemento compatibleFrameworks identifica le versioni del .NET Framework in cui l'applicazione può essere installata ed eseguita.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,20 +14,21 @@ ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed84d7f7ed60a95baba293a33059a05093400bbb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138933"
 ---
-# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;elemento compatibleFrameworks (distribuzione ClickOnce)
+# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;Elemento compatibleFrameworks &gt; (distribuzione ClickOnce)
 Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione.
 
 > [!NOTE]
-> [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) non supporta l' `compatibleFrameworks` elemento quando si salva un manifesto dell'applicazione che è già stato firmato con un certificato utilizzando [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). È invece necessario usare [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) non supporta l'elemento quando si salva un manifesto dell'applicazione che è già stato firmato con `compatibleFrameworks` un certificato usando [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). È invece necessario usare [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,27 +44,27 @@ Identifica le versioni di .NET Framework in cui è possibile installare ed esegu
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- L' `compatibleFrameworks` elemento è necessario per i manifesti di distribuzione destinati al [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Runtime fornito da .NET Framework 4 o versione successiva. L' `compatibleFrameworks` elemento contiene uno o più `framework` elementi che specificano le versioni .NET Framework in cui l'applicazione può essere eseguita. Il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime eseguirà l'applicazione sul primo disponibile `framework` nell'elenco.
+ L'elemento è obbligatorio per i manifesti di distribuzione che hanno come destinazione il runtime fornito `compatibleFrameworks` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da .NET Framework 4 o versione successiva. `compatibleFrameworks`L'elemento contiene uno o più elementi che `framework` specificano le .NET Framework in cui l'applicazione può essere eseguita. Il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] runtime eseguirà l'applicazione nel primo oggetto `framework` disponibile in questo elenco.
 
- Nella tabella seguente sono elencati gli attributi `compatibleFrameworks` supportati dall'elemento.
+ Nella tabella seguente sono elencati gli attributi supportati `compatibleFrameworks` dall'elemento .
 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`S` `upportUrl`|facoltativo. Specifica un URL in cui è possibile scaricare la versione .NET Framework compatibile preferita.|
 
 ## <a name="framework"></a>framework
- Obbligatorio. Nella tabella seguente sono elencati gli attributi `framework` supportati dall'elemento.
+ Obbligatorio. Nella tabella seguente sono elencati gli attributi supportati `framework` dall'elemento .
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`targetVersion`|Obbligatorio. Specifica il numero di versione del .NET Framework di destinazione.|
-|`profile`|Obbligatorio. Specifica il profilo della .NET Framework di destinazione.|
-|`supportedRuntime`|Obbligatorio. Specifica il numero di versione del runtime associato alla .NET Framework di destinazione.|
+|`targetVersion`|Obbligatorio. Specifica il numero di versione del .NET Framework.|
+|`profile`|Obbligatorio. Specifica il profilo dell'oggetto di .NET Framework.|
+|`supportedRuntime`|Obbligatorio. Specifica il numero di versione del runtime associato al .NET Framework.|
 
 ## <a name="remarks"></a>Commenti
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice riportato di seguito viene illustrato un `compatibleFrameworks` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione. Questa distribuzione può essere eseguita in [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . Può anche essere eseguito nel .NET Framework 4 perché è un superset di [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .
+ Nell'esempio di codice seguente viene illustrato `compatibleFrameworks` un elemento in un manifesto della [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Questa distribuzione può essere eseguita in [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . Può essere eseguito anche nel .NET Framework 4 perché è un superset di [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
@@ -75,4 +76,4 @@ Identifica le versioni di .NET Framework in cui è possibile installare ed esegu
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [ClickOnce di distribuzione](../deployment/clickonce-deployment-manifest.md)

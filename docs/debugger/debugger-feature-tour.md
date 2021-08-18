@@ -10,18 +10,19 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3f441428f5edb214542116d6046e39dedcd293
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: 0a857fc74fe76703361d260062c447f139cedc61
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703389"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134182"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
-Questo argomento presenta gli strumenti debugger disponibili in Visual Studio. Nel contesto di Visual Studio il *debug di un'app* implica in genere l'esecuzione dell'applicazione con il debugger collegato, ovvero in modalità debugger. Durante il debug, il debugger offre diversi modi per vedere le operazioni eseguite dal codice durante l'esecuzione. È possibile eseguire il codice un'istruzione alla volta ed esaminare i valori archiviati nelle variabili, impostare espressioni di controllo sulle variabili per vedere quando cambiano i valori, è possibile esaminare il percorso di esecuzione del codice, e così via. Se è la prima volta che si prova a eseguire il debug del codice, è possibile leggere Debug per principianti assoluti [prima](../debugger/debugging-absolute-beginners.md) di passare a questo argomento.
+Questo argomento presenta gli strumenti debugger disponibili in Visual Studio. Nel contesto di Visual Studio il *debug di un'app* implica in genere l'esecuzione dell'applicazione con il debugger collegato, ovvero in modalità debugger. Durante il debug, il debugger offre diversi modi per vedere le operazioni eseguite dal codice durante l'esecuzione. È possibile eseguire il codice un'istruzione alla volta ed esaminare i valori archiviati nelle variabili. È possibile impostare espressioni di controllo sulle variabili per vedere quando cambiano i valori, è possibile esaminare il percorso di esecuzione del codice, e così via. Se è la prima volta che si prova a eseguire il debug del codice, è possibile leggere Debug per principianti assoluti [prima](../debugger/debugging-absolute-beginners.md) di passare a questo argomento.
 
 Le funzionalità qui descritte sono applicabili a C#, C++, Visual Basic, JavaScript e ad altri linguaggi supportati da Visual Studio (se non diversamente specificato).
 
@@ -33,7 +34,7 @@ Se si ha un file aperto nell'editor del codice, è possibile impostare un punto 
 
 ![Impostare un punto di interruzione](../debugger/media/dbg-tour-set-a-breakpoint.gif "Imposta punto di interruzione")
 
-Premere **F5** (**Debug > Avvia**  debug ) ![](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") o il pulsante Avvia debug Avvia debug sulla barra degli strumenti debug e il debugger viene eseguito fino al primo punto di interruzione rilevato. Se l'app non è ancora in esecuzione, F5 avvia il debugger e lo arresta in corrispondenza del primo punto di interruzione.
+Premere **F5** (**Debug > Avvia** debug  ) ![](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") o il pulsante Avvia debug Avvia debug sulla barra degli strumenti debug e il debugger viene eseguito fino al primo punto di interruzione rilevato. Se l'app non è ancora in esecuzione, F5 avvia il debugger e lo arresta in corrispondenza del primo punto di interruzione.
 
 I punti di interruzione sono una funzionalità utile quando si conosce la riga di codice o la sezione di codice che si vuole esaminare nel dettaglio.
 
@@ -72,7 +73,7 @@ In questo esempio **Esegui istruzione specifica** si interrompe in corrispondenz
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Raggiungere rapidamente un punto del codice usando il mouse
 
-Nel debugger passare il puntatore del mouse su una riga di codice fino a quando non si fa clic sul pulsante Esegui su **(Esegui** esecuzione qui) Screenshot del pulsante Esegui per fare clic nel ![ debugger Visual Studio. Il pulsante indica che l'esecuzione deve essere eseguita fino alla riga in cui è posizionato il pulsante.](../debugger/media/dbg-tour-run-to-click.png) viene visualizzato a sinistra.
+Nel debugger passare il puntatore del  mouse su una riga di codice fino a quando non si fa clic sul pulsante Esegui su (Esegui esecuzione qui) Screenshot del pulsante Esegui per fare clic nel ![ debugger Visual Studio. Il pulsante indica che l'esecuzione deve essere eseguita fino alla riga in cui è posizionato il pulsante.](../debugger/media/dbg-tour-run-to-click.png) viene visualizzato a sinistra.
 
 ![Screenshot del debugger Visual Studio che mostra il pulsante Esegui su clic visualizzato a sinistra di una chiamata alla funzione Update.](../debugger/media/dbg-tour-run-to-click-2.png)
 
@@ -116,13 +117,13 @@ Se si vuole arrestare il debugger e tornare all'editor di codice, è possibile p
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Modificare il codice e continuare il debug (C#, VB, C++, XAML)
 
-Nella maggior parte dei linguaggi supportati Visual Studio, è possibile modificare il codice nel mezzo di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic nel codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5,** **F10** o **F11** per continuare il debug.
+Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice nel mezzo di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic nel codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5,** **F10** o **F11** per continuare il debug.
 
 ![Modifica e continuazione del debug](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
 Per altre informazioni sull'uso della funzionalità e sulle limitazioni delle funzionalità, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).
 
-Per modificare il codice XAML durante una sessione di debug, vedere Scrivere ed eseguire [il debug del codice XAML](../xaml-tools/xaml-hot-reload.md)con Ricaricamento rapido XAML .
+Per modificare il codice XAML durante una sessione di debug, vedere Scrivere ed eseguire il debug di [codice XAML con](../xaml-tools/xaml-hot-reload.md)Ricaricamento rapido XAML .
 
 ## <a name="inspect-variables-with-data-tips"></a>Esaminare le variabili con i suggerimenti dati
 
@@ -204,7 +205,7 @@ Espandere il nodo **Impostazioni eccezioni** per vedere altre opzioni relative a
 
 È possibile configurare il progetto per la compilazione come configurazione [di debug](../debugger/how-to-set-debug-and-release-configurations.md)o versione, configurare le proprietà del progetto per il debug o configurare le impostazioni [generali per](../debugger/how-to-specify-debugger-settings.md) il debug. È anche possibile configurare il debugger per visualizzare informazioni personalizzate usando funzionalità come [l'attributo DebuggerDisplay](using-the-debuggerdisplay-attribute.md) o, per C/C++, il [framework NatVis.](create-custom-views-of-native-objects.md)
 
-Le proprietà di debug sono specifiche di ogni tipo di progetto. Ad esempio, è possibile specificare un argomento da passare all'applicazione all'avvio. È possibile accedere alle proprietà specifiche del progetto facendo clic con il pulsante destro del mouse sul progetto Esplora soluzioni e **scegliendo Proprietà.** Le proprietà di debug vengono in genere visualizzate **nella scheda** Compilazione **o Debug,** a seconda del tipo di progetto specifico.
+Le proprietà di debug sono specifiche di ogni tipo di progetto. Ad esempio, è possibile specificare un argomento da passare all'applicazione all'avvio. È possibile accedere alle proprietà specifiche del progetto facendo clic con il pulsante destro del mouse sul progetto Esplora soluzioni e **scegliendo Proprietà**. Le proprietà di debug vengono in genere visualizzate **nella scheda** Compilazione **o Debug,** a seconda del tipo di progetto specifico.
 
 ![Proprietà progetto](../debugger/media/dbg-tour-project-properties.png "Proprietà progetto")
 

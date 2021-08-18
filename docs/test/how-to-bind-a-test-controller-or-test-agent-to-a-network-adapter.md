@@ -1,6 +1,6 @@
 ---
-title: Associare test controller/agente di test a una scheda di rete
-description: Informazioni su come associare un test controller o un agente di test a una scheda di rete utilizzando un indirizzo IP, nel caso in cui sia installato per più schede di rete.
+title: Associare test controller/test agent a una scheda di rete
+description: Informazioni su come associare un test controller o un agente di test a una scheda di rete usando un indirizzo IP, nel caso in cui sia installato per più schede di rete.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -13,12 +13,13 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: f35e870e625a0f494692d082494ee0c2511ffd8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: a1ea5e3729eaa9b52d825540fe392b61519a5f60
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966838"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123021"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 

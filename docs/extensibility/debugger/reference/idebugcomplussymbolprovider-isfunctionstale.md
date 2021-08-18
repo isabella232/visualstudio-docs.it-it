@@ -1,5 +1,5 @@
 ---
-description: Determina se la funzione all'indirizzo di debug specificato viene considerata non obsoleta.
+description: Determina se la funzione all'indirizzo di debug specificato è considerata obsoleta.
 title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf0cb10662512f4c5428e6774b3e72ef5a9fce276411afb76387fbad4098492e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f160180b9076345612f285df69e64b90f0d442b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434061"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103754"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
-Determina se la funzione all'indirizzo di debug specificato viene considerata non obsoleta.
+Determina se la funzione all'indirizzo di debug specificato è considerata obsoleta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ int IsFunctionStale(
 [in] Indirizzo di debug rappresentato da [un'interfaccia IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Questo indirizzo deve essere un METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Valore restituito
-Se la funzione viene considerata non obsoleta, restituisce `S_OK` . Se la funzione non è obsoleta, restituisce `S_FALSE` .
+Se la funzione è considerata non obsoleta, restituisce `S_OK` . Se la funzione non è obsoleta, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionStale(

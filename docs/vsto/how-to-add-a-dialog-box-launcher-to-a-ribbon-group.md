@@ -1,6 +1,6 @@
 ---
-title: "Procedura: Aggiungere un'icona di avvio di una finestra di dialogo a un gruppo della barra multifunzione"
-description: È possibile aggiungere un'icona di avvio della finestra di dialogo a qualsiasi gruppo di una barra multifunzione in grado di aprire finestre di dialogo o riquadri attività correlati che forniscono altre opzioni correlate al gruppo.
+title: "Procedura: Aggiungere un'utilità di avvio della finestra di dialogo a un gruppo della barra multifunzione"
+description: È possibile aggiungere un'utilità di avvio della finestra di dialogo a qualsiasi gruppo di una barra multifunzione in grado di aprire finestre di dialogo o riquadri attività correlati che forniscono altre opzioni correlate al gruppo.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,36 +16,36 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a113a863169921cd080180e7baeeb8a627517a76bd42da0a9b26806533ffcbd7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 43ff3dec0245759c35dd8fc4165dc7b279835cde
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440851"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037993"
 ---
-# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procedura: Aggiungere un'icona di avvio di una finestra di dialogo a un gruppo della barra multifunzione
-  È possibile aggiungere un'icona di avvio della finestra di dialogo a qualsiasi gruppo di una barra multifunzione. Un'icona di avvio della finestra di dialogo è una piccola icona visualizzata in un gruppo. Gli utenti fanno clic su questa icona per aprire finestre di dialogo o riquadri attività correlati che forniscono altre opzioni correlate al gruppo.
+# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procedura: Aggiungere un'utilità di avvio della finestra di dialogo a un gruppo della barra multifunzione
+  È possibile aggiungere un'utilità di avvio della finestra di dialogo a qualsiasi gruppo in una barra multifunzione. L'icona di avvio di una finestra di dialogo è una piccola icona visualizzata in un gruppo. Gli utenti fanno clic su questa icona per aprire finestre di dialogo o riquadri attività correlati che forniscono altre opzioni correlate al gruppo.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Per aggiungere un'icona di avvio della finestra di dialogo a un gruppo della barra multifunzione
+### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Per aggiungere un'utilità di avvio della finestra di dialogo a un gruppo della barra multifunzione
 
 1. Selezionare il file di codice della barra multifunzione (file *con estensione vb* o *cs)* in **Esplora soluzioni**.
 
-2. Scegliere **Progettazione** dal menu **Visualizza**.
+2. Scegliere **Progettazione dal** menu **Visualizza**.
 
-3. Nella finestra di progettazione della barra multifunzione fare clic con il pulsante destro del mouse su qualsiasi gruppo e quindi scegliere **Aggiungi DialogBoxLauncher**.
+3. Nella finestra di progettazione della barra multifunzione fare clic con il pulsante destro del mouse su qualsiasi gruppo e quindi scegliere **Aggiungi finestra di dialogoLauncher.**
 
-     Aggiungere codice all'evento del gruppo per aprire una finestra di dialogo <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> personalizzata o incorporata.
+     Aggiungere codice <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> all'evento del gruppo per aprire una finestra di dialogo personalizzata o incorporata.
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Office esempi di sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md)
+- [Office e procedure dettagliate per lo sviluppo di applicazioni](../vsto/office-development-samples-and-walkthroughs.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
 - [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione al codice XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione al file XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
 - [Procedura: Modificare la posizione di una scheda sulla barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)
 - [Procedura: Aggiungere controlli alla visualizzazione backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
@@ -54,4 +54,4 @@ ms.locfileid: "121440851"
 - [Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)
 - [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in fase di esecuzione](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
-- [Procedura dettagliata: Creare una scheda personalizzata usando il codice XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Procedura dettagliata: Creare una scheda personalizzata usando xml della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

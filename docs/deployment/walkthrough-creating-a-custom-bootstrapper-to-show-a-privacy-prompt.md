@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: ed118f13d4c968e4cbac7c86f23eedcda09cbb19d0b9afb737a8847d9ee8852e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f0c34a56b610ee65f2f9d8d4ac506224950c302
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390875"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133614"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procedura dettagliata: Creare un programma di avvio automatico personalizzato con un prompt di privacy
 È possibile configurare le ClickOnce per l'aggiornamento automatico quando gli assembly con versioni di file e versioni di assembly più recenti diventano disponibili. Per assicurarsi che i clienti acconsentino a questo comportamento, è possibile visualizzare una richiesta di privacy. Possono quindi scegliere se concedere l'autorizzazione all'applicazione per l'aggiornamento automatico. Se l'applicazione non è autorizzata ad aggiornare automaticamente, non viene installata.
@@ -266,35 +266,35 @@ ms.locfileid: "121390875"
 
      Nel programma di installazione viene visualizzato il contratto di licenza software update consent dialog.
 
-6. Leggere il contratto di licenza software e quindi fare clic su **Accetta.**
+6. Leggere il contratto di licenza software e quindi fare clic su **Accetta**.
 
-     Viene visualizzata l'applicazione Update Consent Dialog con il testo seguente: L'applicazione che si sta per installare verifica la disponibilità degli aggiornamenti più recenti sul Web. Facendo clic su Accetto, si autorizza l'applicazione a verificare automaticamente la disponibilità di aggiornamenti su Internet.
+     Viene visualizzata l'applicazione Finestra di dialogo di consenso all'aggiornamento con il testo seguente: L'applicazione che si sta per installare controlla la disponibilità degli aggiornamenti più recenti sul Web. Facendo clic su Accetto, si autorizza l'applicazione a verificare automaticamente la disponibilità di aggiornamenti su Internet.
 
 7. Chiudere l'applicazione o fare clic su Annulla.
 
-     L'applicazione visualizza un errore: Si è verificato un errore durante l'installazione dei componenti di sistema per *ApplicationName*. Il programma di installazione non può continuare finché tutti i componenti di sistema non sono stati installati correttamente.
+     L'applicazione visualizza un errore: Si è verificato un errore durante l'installazione dei componenti di sistema per *ApplicationName*. Il programma di installazione non può continuare fino a quando tutti i componenti di sistema non sono stati installati correttamente.
 
-8. Fare clic su Dettagli per visualizzare il messaggio di errore seguente: Impossibile installare la finestra di dialogo di consenso per l'aggiornamento del componente con il messaggio di errore seguente: "Il contratto di aggiornamento automatico non è accettato". Non è stato possibile installare i componenti seguenti: - Finestra di dialogo di consenso per l'aggiornamento
+8. Fare clic su Dettagli per visualizzare il messaggio di errore seguente: Impossibile installare la finestra di dialogo di consenso per l'aggiornamento dei componenti con il messaggio di errore seguente: "Il contratto di aggiornamento automatico non è accettato". Impossibile installare i componenti seguenti: - Finestra di dialogo di consenso per l'aggiornamento
 
 9. Fare clic su **Chiudi**.
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Per creare e testare il programma di installazione facendo clic su Accetto
 
-1. Nella **Esplora soluzioni** fare clic sul nome dell'applicazione che si vuole distribuire.
+1. In **Esplora soluzioni** fare clic sul nome dell'applicazione che si vuole distribuire.
 
-2. Nel menu **Project** fare clic su *Proprietà NomeProgetto* .
+2. Nel menu **Project** scegliere *Proprietà NomeProgetto* .
 
-3. Fare clic **sulla pagina** Pubblica e quindi su **Pubblica ora.**
+3. Fare clic **sulla pagina** Pubblica e quindi su **Pubblica adesso**.
 
 4. Se l'output di pubblicazione non si apre automaticamente, passare all'output di pubblicazione.
 
 5. Eseguire il *Setup.exe* programma.
 
-     Il programma di installazione mostra il contratto di licenza software per la finestra di dialogo di consenso all'aggiornamento.
+     Il programma di installazione mostra il Contratto di licenza software di Dialogo di consenso aggiornamento.
 
-6. Leggere il contratto di licenza software e quindi fare clic su **Accetta.**
+6. Leggere il contratto di licenza software e quindi fare clic su **Accetta**.
 
-     Viene visualizzata l'applicazione Update Consent Dialog con il testo seguente: L'applicazione che si sta per installare verifica la disponibilità degli aggiornamenti più recenti sul Web. Facendo clic su Accetto, si autorizza l'applicazione a verificare automaticamente la disponibilità di aggiornamenti su Internet.
+     Viene visualizzata l'applicazione Finestra di dialogo di consenso all'aggiornamento con il testo seguente: L'applicazione che si sta per installare controlla la disponibilità degli aggiornamenti più recenti sul Web. Facendo clic su Accetto, si autorizza l'applicazione a verificare automaticamente la disponibilità di aggiornamenti su Internet.
 
 7. Fare **clic su Accetto** e quindi su **Continua.**
 

@@ -1,6 +1,6 @@
 ---
 title: Attività XmlPoke | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività XmlPoke per impostare i valori come specificato da una query XPath in un file XML.
+description: Informazioni su MSBuild'attività XmlPoke per impostare i valori come specificato da una query XPath in un file XML.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d829376fcece336434fa5e816c725d5be61ac1a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5abe59d607ef2c80ca1451da94f9cc6cd7d08688e669178848ea7fed5da183de
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956035"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443087"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (attività)
 
@@ -42,7 +43,7 @@ Imposta i valori come specificato da una query XPath in un file XML.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

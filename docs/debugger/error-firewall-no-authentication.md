@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 398779b06ec74d7c7902eb617aa27b28e9f66d4bcc33651c456436b360acee6f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7e42a9dd2856c9bee14b480b261231932dc30236
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240091"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030953"
 ---
 # <a name="error-firewall-no-authentication"></a>Errore: nessuna autenticazione del firewall
 Nel computer remoto Windows Firewall non è configurato in modo da consentire il debug remoto. Per il debug remoto con `No Authentication` è necessario aggiungere msvsmon.exe all'elenco delle eccezioni. Potrebbe inoltre essere necessario aprire alcune porte IPSEC.

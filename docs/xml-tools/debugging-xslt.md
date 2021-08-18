@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8038c954ff4abe447418247c6d99485dc081bc14299ecbc2c3a5c29b93cccba9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de0bfdb24b3e1bb6377387385927256af8460d2b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351109"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045567"
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 

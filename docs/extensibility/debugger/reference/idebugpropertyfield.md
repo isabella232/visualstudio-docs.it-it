@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3ddd18efd48b43ff59aaa2e60ed8361f3a73da2b3b462b472b45a3ef9db34d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4e0780f43953bdf7afb10e2d038ce46b794d3dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402337"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071097"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Questa interfaccia fornisce le funzioni che consentono di ottenere e impostare una proprietà.
@@ -41,7 +41,7 @@ IDebugPropertyField : IDebugContainerField
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Ottiene il metodo che ottiene la proprietà.|
+|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Ottiene il metodo che ottiene la proprietà .|
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Ottiene il metodo che imposta la proprietà .|
 
 ## <a name="remarks"></a>Commenti

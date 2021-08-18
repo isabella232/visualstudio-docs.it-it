@@ -1,6 +1,6 @@
 ---
-title: "Procedura dettagliata: utilizzo delle funzionalità dell'editor XML"
-description: Per informazioni su come creare un nuovo documento XML, seguire la procedura descritta in questa procedura dettagliata che illustra le funzionalità dell'editor XML.
+title: "Procedura dettagliata: Uso delle funzionalità dell'editor XML"
+description: Informazioni su come creare un nuovo documento XML seguendo i passaggi di questa procedura dettagliata che illustra le funzionalità dell'editor XML.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,39 +8,40 @@ ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d0bb8b47162966974499fed20c826b52dcfaa4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 563f629ed21d524eb302d55af2550c86a89922e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045502"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: Usare le funzionalità dell'editor XML
 
-Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo documento XML. Nella procedura dettagliata vengono inoltre utilizzate alcune delle funzionalità dell'editor XML che lo rendono utile per la creazione di XML.
+Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo documento XML. La procedura dettagliata usa anche alcune delle funzionalità dell'editor XML che lo rendono utile per la creazione XML.
 
 > [!NOTE]
-> Prima di avviare la procedura dettagliata, salvare il file *hiree. xsd* (incluso di seguito in questo argomento) nel computer locale.
+> Prima di iniziare la procedura dettagliata, salvare il file *hireDate.xsd* (incluso di seguito in questo argomento) nel computer locale.
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a un XML Schema
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a uno schema XML
 
-1. Scegliere **nuovo** dal menu **file** e quindi fare clic su **file**.
+1. Scegliere **Nuovo** dal menu File **e** fare clic su **File**.
 
-2. Selezionare **file XML** nel riquadro **modelli** e fare clic su **Apri**.
+2. Selezionare **File XML nel** riquadro Modelli **e** fare clic su **Apri.**
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
+3. Nella finestra delle proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel **campo** Schemi.
 
-     Verrà visualizzata la finestra di dialogo **schemi XSD** .
+     Verrà **visualizzata la finestra di** dialogo Schemi XSD .
 
 4. Fare clic su **Aggiungi**.
 
-     Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
+     Verrà **visualizzata la finestra** di dialogo Apri schema XSD .
 
-5. Selezionare il file *hiree. xsd* e fare clic su **Apri**.
+5. Selezionare il file *hireDate.xsd* e fare clic su **Apri**.
 
 6. Fare clic su **OK**.
 
@@ -54,51 +55,51 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
     - **!--** aggiungere un commento.
 
-    - **! DOCTYPE** per aggiungere un tipo di documento.
+    - **! DOCTYPE per** aggiungere un tipo di documento.
 
     - **?** per aggiungere un'istruzione di elaborazione.
 
-    - **dipendente** per aggiungere l'elemento radice.
+    - **employee** per aggiungere l'elemento radice.
 
-2. Selezionare **&lt; !--** per aggiungere un nodo di commento e premere **invio**.
+2. Selezionare **&lt; !--** per aggiungere un nodo di commento e premere **INVIO.**
 
      L'editor inserisce un tag di fine comment e colloca il cursore tra i tag comment di inizio e di fine.
 
-3. Digitare il **file XML di test**.
+3. Digitare nel **file XML di test**.
 
-4. In una nuova riga digitare `<` e selezionare **Employee** dall'elenco dei membri.
+4. In una nuova riga digitare `<` e selezionare **employee dall'elenco** dei membri.
 
      L'editor aggiunge l'inizio di un elemento XML, `<employee`. A questo punto è possibile aggiungere attributi all'elemento o chiudere il tag di inizio digitando `>`.
 
 5. Digitare `>` per chiudere il tag.
 
-6. L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. La **Descrizione comando** Visualizza il messaggio: **l'elemento "Employee" contiene contenuto incompleto. Previsto ' ID '**.
+6. L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. La **descrizione comando** visualizza il messaggio: **L'elemento 'employee' ha contenuto incompleto. Previsto 'ID'.**
 
-7. Digitare `<` e selezionare **ID** nell'elenco dei membri. Digitare quindi `>`.
+7. Digitare `<` e selezionare ID **dall'elenco** dei membri. Digitare quindi `>`.
 
      L'editor aggiunge l'elemento XML, `<ID></ID>`, e posiziona il cursore dopo il tag di inizio identificatore.
 
-8. Digitare **ABC**.
+8. Digitare **abc**.
 
-     Il testo **ABC** presenta una sottolineatura ondulata. La **Descrizione comando** Visualizza il messaggio: **l'elemento ' ID ' ha un valore non valido in base al relativo tipo di dati**.
+     Il **testo abc** ha una sottolineatura ondulata. La **descrizione comando** visualizza il messaggio: **L'elemento 'ID' ha un valore non valido in base al tipo di dati**.
 
-9. Fare clic con il pulsante destro del mouse sull'elemento ID e scegliere **Vai a definizione**.
+9. Fare clic con il pulsante destro del mouse sull'elemento ID e **scegliere Vai a definizione.**
 
-     L'editor apre il file *hiree. xsd* in una nuova finestra del documento e posiziona il cursore sulla definizione dell'elemento dello schema dell'ID.
+     L'editor apre il file *hireDate.xsd* in una nuova finestra del documento e posiziona il cursore sulla definizione dell'elemento dello schema ID.
 
-10. Tornare al file XML e sostituire il testo **ABC** con **123**.
+10. Tornare al file XML e sostituire il testo **abc** con **123**.
 
-     La sottolineatura ondulata e la **Descrizione comando** vengono cancellate sotto il valore dell'elemento ID. La **Descrizione comando** per il tag di fine Employee ora Visualizza il messaggio: **l'elemento "Employee" contiene contenuto incompleto. Previsto ' hire-date '**.
+     La sottolineatura ondulata e **la descrizione comando** vengono cancellate sotto il valore dell'elemento ID. La **descrizione comando** per il tag di fine del dipendente visualizza ora il messaggio: **L'elemento 'employee' ha contenuto incompleto. Previsto 'hire-date'.**
 
-11. Posizionare il cursore dopo il tag di fine ID, digitare `<` , selezionare **hire-date** nell'elenco dei membri, quindi digitare `>` .
+11. Posizionare il cursore dopo il tag di fine ID, `<` digitare , **selezionare hire-date** nell'elenco dei membri e quindi digitare `>` .
 
      L'editor aggiunge l'elemento XML, `<hire-date></hire-date>`, e posiziona il cursore dopo il tag di inizio data assunzione.
 
-12. Digitare **2003-01-10** per il valore data di assunzione.
+12. Digitare **2003-01-10** come valore della data di assunzione.
 
 ## <a name="to-format-the-xml-document"></a>Per formattare il documento XML
 
-- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL** + **E**,**D**.
+- Selezionare il **pulsante Formatta** documento sulla barra degli strumenti dell'editor XML oppure premere **CTRL** + **E**,**D**.
 
    ![Pulsante Formatta documento XML in Visual Studio](media/format-xml-document.png)
 
@@ -108,11 +109,11 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 1. Dal menu **File** selezionare **Salva con nome**.
 
-     Viene visualizzata la finestra **di dialogo Salva file con nome** . Il nome file predefinito è *"XMLFile1"*.
+     Verrà **visualizzata la finestra di** dialogo Salva file con nome . Il nome file predefinito è *'XMLFile1'.*
 
-2. Immettere il nome del file e il percorso del documento XML, quindi fare clic su **Salva**.
+2. Immettere il nome file e il percorso per il documento XML e fare clic su **Salva**.
 
-## <a name="hiredatexsd-file"></a>il file con estensione XSD viene assunto
+## <a name="hiredatexsd-file"></a>File hireDate.xsd
 
 In questa procedura dettagliata viene usato il file di schema seguente:
 

@@ -1,6 +1,6 @@
 ---
 title: Impossibile modificare la finestra di progettazione durante il debug
-description: Impossibile modificare la finestra di progettazione durante il debug. Visualizza le informazioni su questo messaggio di Object Relational Designer di Visual Studio (O/R Designer).
+description: La finestra di progettazione non può essere modificata durante il debug. Visualizzare informazioni su questo Visual Studio Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -8,21 +8,22 @@ ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 244fbcc21c062c50b2f61940a1b43cf17c22761f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8aba38b17301286a3edc216cc411d2829d998f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052655"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Impossibile modificare la finestra di progettazione durante il debug
 
-Questo messaggio viene visualizzato quando viene effettuato un tentativo di modificare gli elementi in **Progettazione relazionale** oggetti quando l'applicazione è in esecuzione in modalità di debug. Quando l'applicazione è in esecuzione in modalità di debug, la **finestra di progettazione di O/R** è di sola lettura.
+Questo messaggio viene visualizzato quando si tenta di modificare gli elementi in **O/R Designer** quando l'applicazione è in esecuzione in modalità di debug. Quando l'applicazione è in esecuzione in modalità di debug, **O/R Designer** è di sola lettura.
 
-Per correggere l'errore, scegliere **Interrompi debug** dal menu **debug** . L'applicazione interrompe il debug ed è possibile modificare gli elementi in **Progettazione relazionale** oggetti.
+Per correggere l'errore, scegliere **Arresta debug** dal menu **Debug.** L'applicazione interrompe il debug ed è possibile modificare gli elementi in **O/R Designer.**
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL strumenti in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

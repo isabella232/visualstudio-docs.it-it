@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d117f8832a36b02f32b5e3bf062eb7a624dd13b62e2d6cfb9f2f1627fc97239
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e6019a3005b8445774c84b38c3f6408fade4a51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427457"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039878"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (attività)
 

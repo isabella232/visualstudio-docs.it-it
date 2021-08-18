@@ -10,16 +10,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 02eee819bec26614e8ddf4860c258973174689ff1b6480726b1474ac6f463533
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5b376d71a23469f551be6230b7d9f16eb4637da8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428679"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034019"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 
-In un Visual Studio di testo in fase di progettazione, la direttiva carica un assembly in modo che il codice `assembly` del modello possa usare i relativi tipi. L'effetto è simile all'aggiunta di un riferimento ad assembly in un Visual Studio progetto.
+In un Visual Studio di testo in fase di progettazione, la direttiva carica un assembly in modo che il codice `assembly` del modello possa usare i relativi tipi. L'effetto è simile all'aggiunta di un riferimento all'assembly in un Visual Studio progetto.
 
  Per una panoramica generale della scrittura di modelli di testo, vedere [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
@@ -39,7 +39,7 @@ In un Visual Studio di testo in fase di progettazione, la direttiva carica un as
 
 - Il percorso assoluto dell'assembly
 
-  È possibile usare la sintassi per fare riferimento Visual Studio variabili di ambiente, ad esempio `$(variableName)` `$(SolutionDir)` e `%VariableName%` . Esempio:
+  È possibile usare la `$(variableName)` sintassi per fare riferimento Visual Studio variabili di ambiente, ad esempio `$(SolutionDir)` e `%VariableName%` . Esempio:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ec7e50f73d09202a238acbbad894f422b6877e6f27d032583b44f75e5d1fa311
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 03e79801db056e5caf6d9e365015e619b12c6f9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039540"
 ---
 # <a name="concurrency-visualizer"></a>Visualizzatore di concorrenze
 

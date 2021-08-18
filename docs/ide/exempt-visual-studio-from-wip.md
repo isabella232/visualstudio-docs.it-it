@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd76144ba847a3ca191bb3be55d032b9bebd8c690d57ec5c95f01861fb4b469
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: afd3473e26d7bb2c3d729cd3ea4df9a530b3a1bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413245"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137415"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Configurare Visual Studio come app esclusa da WIP
 

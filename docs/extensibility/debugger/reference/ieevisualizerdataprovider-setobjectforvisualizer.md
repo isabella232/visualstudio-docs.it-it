@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ebd0ff5ac54e7f6c634eb4321e8f8979b562536d3ad1e46b2abf0459fe694792
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4530b575fdd9de8dd18687c2ec7fbd676298697
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389436"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137925"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Questo metodo modifica l'oggetto rappresentato dal visualizzatore.

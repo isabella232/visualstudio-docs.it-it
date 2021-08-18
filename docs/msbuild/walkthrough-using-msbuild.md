@@ -10,14 +10,15 @@ ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8af56d7acb7875e57ad335746c876f938d414bbf
-ms.sourcegitcommit: 2694ab246eb857a1c607738a67198c46f826f106
+ms.openlocfilehash: 1fdd31e296050585044186e31158f893a45b095b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114995662"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040060"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 
@@ -29,21 +30,21 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 
 - Come usare gli elementi di compilazione.
 
-È possibile eseguire MSBuild da Visual Studio o dalla finestra **di comando**. In questa procedura dettagliata si crea un file di progetto MSBuild in Visual Studio. Si modifica il file di progetto in Visual Studio e si usa la **finestra di comando** per compilare il progetto ed esaminare i risultati.
+È possibile eseguire MSBuild da Visual Studio o dalla **finestra di comando**. In questa procedura dettagliata si crea un file di progetto MSBuild in Visual Studio. Si modifica il file di progetto in Visual Studio e si usa la **finestra di comando** per compilare il progetto ed esaminare i risultati.
 
 ## <a name="install-msbuild"></a>Installare MSBuild
 
 ::: moniker range="vs-2017"
 
-Se è stato Visual Studio, è già stato MSBuild installato. Per installare MSBuild 15 in un sistema senza Visual Studio, passare [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/)download precedenti, espandere **Visual Studio 2017** e scegliere il pulsante **Scarica.** Se si ha una sottoscrizione Visual Studio, accedere e trovare il collegamento per scaricare la versione più recente di **Build Tools per Visual Studio 2017.** Se non si ha una sottoscrizione Visual Studio, è comunque possibile installare la versione più recente degli strumenti di compilazione. In questa pagina usare il selettore di versione per passare alla versione 2019 della pagina e seguire le istruzioni di installazione.
+Se è stato Visual Studio, è già stato installato MSBuild. Per installare MSBuild 15 in un sistema senza Visual Studio, passare [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/)download precedenti, espandere **Visual Studio 2017** e scegliere il pulsante **Scarica.** Se si ha una sottoscrizione Visual Studio, accedere e trovare il collegamento per scaricare la versione più recente di Build Tools per Visual Studio **2017.** Se non si ha una sottoscrizione Visual Studio, è comunque possibile installare la versione più recente degli strumenti di compilazione. In questa pagina usare il selettore di versione per passare alla versione 2019 della pagina e seguire le istruzioni di installazione.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Se è stato Visual Studio, è già stato MSBuild installato. Con Visual Studio 2019 e versioni successive, viene installato nella cartella di Visual Studio di installazione. Per un'installazione predefinita tipica in Windows 10, MSBuild.exe si trova nella cartella di installazione in *MSBuild\Current\Bin*.
+Se è stato Visual Studio, è già stato installato MSBuild. Con Visual Studio 2019 e versioni successive, viene installato nella cartella di Visual Studio di installazione. Per un'installazione predefinita tipica Windows 10, MSBuild.exe si trova nella cartella di installazione in *MSBuild\Current\Bin*.
 
-Per installare MSBuild in un sistema senza Visual Studio, passare Visual Studio downloads (Download di [Visual Studio)](https://visualstudio.microsoft.com/downloads/) e scorrere verso il basso fino a **All Downloads**(Tutti i download), quindi espandere Tools for Visual Studio 2019 (Strumenti per **Visual Studio 2019).** Installare **Build Tools per Visual Studio 2019,** che include MSBuild, oppure installare il [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk).
+Per installare MSBuild in un sistema senza Visual Studio, passare [Visual Studio download](https://visualstudio.microsoft.com/downloads/) e scorrere verso il basso fino a **Tutti** i download, quindi espandere Strumenti per Visual Studio **2019.** Installare **Gli strumenti di compilazione Visual Studio 2019**, che include MSBuild, o installare il .NET Core SDK [.](/dotnet/core/sdk#acquiring-the-net-core-sdk)
 
-Nel programma di installazione assicurarsi che MSBuild per i carichi di lavoro in uso siano selezionati e scegliere **Installa.**
+Nel programma di installazione assicurarsi che MSBuild per i carichi di lavoro in uso siano selezionati e scegliere **Installa**.
 
 ![Installazione di MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
 
@@ -58,12 +59,12 @@ Nel programma di installazione assicurarsi che MSBuild per i carichi di lavoro i
 1. Aprire Visual Studio e creare un progetto:
 
     ::: moniker range=">=vs-2019"
-    Nella casella di ricerca digitare **winforms** e quindi scegliere **Create a new Windows Forms App (.NET Framework) .** Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Nella casella di ricerca digitare **winforms** e quindi scegliere Create **a new Windows Forms App (.NET Framework)**. Nella finestra di dialogo visualizzata scegliere **Crea**.
 
     Nella casella **Project nome** digitare `BuildApp` . Immettere un **Percorso** per la soluzione, ad esempio *D:\\*.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **Project**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)**. Scegliere quindi **OK**.
+    Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)**. Scegliere quindi **OK**.
 
     Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\*. Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionata), **Aggiungi al controllo del codice sorgente** (non selezionata) e **Nome soluzione** (**BuildApp**).
     ::: moniker-end
@@ -78,14 +79,14 @@ Nel programma di installazione assicurarsi che MSBuild per i carichi di lavoro i
 
 1. In **Esplora soluzioni** fare clic sul nodo del progetto **BuildApp**.
 
-1. Nel browser **Proprietà** si noti che la **proprietà Project File** è *BuildApp.csproj.* Tutti i file di progetto sono denominati con il *suffisso proj*. Se è stato creato un progetto Visual Basic, il nome del file di progetto *sarà BuildApp.vbproj.*
+1. Nel browser **Proprietà** si noti che la **proprietà Project File** è *BuildApp.csproj*. Tutti i file di progetto sono denominati con il suffisso *proj*. Se è stato creato un Visual Basic progetto, il nome del file di progetto sarà *BuildApp.vbproj.*
 
 1. Fare ancora clic con il pulsante destro del mouse sul nodo del progetto, quindi scegliere **Modifica BuildApp.csproj**. 
 
      Il file di progetto verrà visualizzato nell'editor del codice.
 
 >[!NOTE]
-> Per alcuni tipi di progetto, ad esempio C++, è necessario scaricare il progetto (fare clic con il pulsante destro del mouse sul file di progetto e scegliere Scarica **progetto**) prima di poter aprire e modificare il file di progetto.
+> Per alcuni tipi di progetto, ad esempio C++, è necessario scaricare il progetto (fare clic con il pulsante destro del mouse sul file di progetto e scegliere **Scarica progetto**) prima di poter aprire e modificare il file di progetto.
 
 ## <a name="targets-and-tasks"></a>Destinazioni e attività
 
@@ -96,13 +97,13 @@ I file di progetto sono file in formato XML con il nodo radice [Project](../msbu
 <Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
-I progetti .NET Core (in stile SDK) più nuovi hanno un `Sdk` attributo .
+I progetti .NET Core (di tipo SDK) più nuovi hanno un `Sdk` attributo .
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 ```
 
-Se il progetto non è di tipo SDK, è necessario specificare lo spazio dei nomi xmlns nell'elemento Project. Se `ToolsVersion` è presente in un nuovo progetto, deve corrispondere alla MSBuild precedente. Se non si conosce la versione MSBuild, è possibile ottenerla dai primi due numeri dall'output della riga di comando seguente (ad esempio, 16.0):
+Se il progetto non è un progetto di tipo SDK, è necessario specificare lo spazio dei nomi xmlns nell'Project elemento . Se `ToolsVersion` è presente in un nuovo progetto, deve corrispondere alla MSBuild precedente. Se non si conosce la versione MSBuild, è possibile ottenerla dai primi due numeri dall'output della riga di comando seguente (ad esempio, 16.0):
 
 ```console
 MSBuild -ver
@@ -113,7 +114,7 @@ La compilazione di un'applicazione viene eseguita con gli elementi [Target](../m
 - Un'attività è la più piccola unità di lavoro, in altre parole, l'"atom" di una compilazione. Le attività sono componenti eseguibili indipendenti che possono avere input e output. Attualmente nel file di progetto non sono presenti attività definite o a cui si fa riferimento. Le attività vengono aggiunte al file di progetto nelle sezioni seguenti. Per altre informazioni, vedere l'argomento [Attività](../msbuild/msbuild-tasks.md).
 
 - Una destinazione è una sequenza denominata di attività. Per altre informazioni, vedere l'argomento [Destinazioni](../msbuild/msbuild-targets.md).
-- [potrebbe essere una sequenza denominata di attività, ma, in modo critico, rappresenta un elemento da creare o eseguire, quindi deve essere definito in modo orientato agli obiettivi]
+- [potrebbe essere una sequenza denominata di attività, ma in modo critico rappresenta qualcosa da compilarsi o eseguire, quindi deve essere definito in modo orientato agli obiettivi]
 
 La destinazione predefinita non è definita nel file di progetto. Viene invece specificata nei progetti importati. L'elemento [Import](../msbuild/import-element-msbuild.md) specifica i progetti importati. In un progetto C#, ad esempio, la destinazione predefinita viene importata dal file *Microsoft.CSharp.targets*.
 
@@ -123,7 +124,7 @@ La destinazione predefinita non è definita nel file di progetto. Viene invece s
 
 I file importati vengono effettivamente inseriti nel file di progetto dove vi si fa riferimento.
 
-Nei progetti in stile SDK questo elemento import non viene visualizzato, perché l'attributo SDK causa l'importazione implicita di questo file.
+Nei progetti di tipo SDK questo elemento di importazione non viene visualizzato, perché l'attributo SDK determina l'importazione implicita di questo file.
 
 MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che ogni destinazione non venga compilata più di una volta.
 
@@ -133,7 +134,7 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 
 **Per aggiungere una destinazione e un'attività**
 
-1. Aggiungere queste righe al file di progetto, subito dopo l'istruzione Import o l'elemento Project apertura.
+1. Aggiungere queste righe al file di progetto, subito dopo l'istruzione Import o l'elemento Project di apertura.
 
     ```xml
     <Target Name="HelloWorld">
@@ -152,13 +153,13 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 
 3. Salvare il file di progetto.
 
-L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e delle informazioni sull'utilizzo, vedere [Informazioni di riferimento sulle attività.](../msbuild/msbuild-task-reference.md)
+L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e delle informazioni sull'utilizzo, vedere [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md).
 
 L'attività Messaggio accetta il valore stringa dell'attributo Text come input e lo visualizza nel dispositivo di output (o lo scrive in uno o più log, se applicabile). La destinazione HelloWorld esegue l'attività Message due volte: prima per visualizzare "Hello" e quindi per visualizzare "World".
 
 ## <a name="build-the-target"></a>Compilare la destinazione
 
-Se si prova a compilare il progetto Visual Studio, non verrà compilata la destinazione definita. Ciò è dovuto Visual Studio sceglie la destinazione predefinita, che è ancora quella nel file *con estensione targets* importato.
+Se si tenta di compilare questo progetto da Visual Studio, non verrà compilata la destinazione definita. Questo perché Visual Studio la destinazione predefinita, che è ancora quella nel file con estensione *targets* importato.
 
 Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **prompt dei comandi per gli sviluppatori** per Visual Studio. Usare l'opzione della riga di comando -target o -t per selezionare la destinazione.
 
@@ -171,7 +172,7 @@ Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **
 
    (Windows 10) Nella casella di ricerca della barra delle applicazioni iniziare a digitare il nome dello strumento, ad esempio `dev` o `developer command prompt`. Verrà visualizzato un elenco di app installate che corrispondono ai criteri di ricerca.
 
-   Se è necessario trovarlo manualmente, il file vieneLaunchDevCmd.bat *nella* cartella<di installazione di *VisualStudio \> \Common7\Tools.*
+   Se è necessario trovarlo manualmente, il file viene *LaunchDevCmd.bat* nella cartella<di installazione di *VisualStudio \> \Common7\Tools.*
 
 2. Dalla finestra di comando passare alla cartella contenente il file di progetto, in questo caso *D:\BuildApp\BuildApp*.
 
@@ -253,7 +254,7 @@ Usare questa sintassi per esaminare alcune delle proprietà nel file di progetto
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-1. Esaminare l'output. Dovrebbero essere visualizzati questi due righe (l'output potrebbe essere diverso):
+1. Esaminare l'output. Dovrebbero essere visualizzati queste due righe (l'output potrebbe essere diverso):
 
     ::: moniker range="=vs-2022"
 
@@ -283,7 +284,7 @@ Usare questa sintassi per esaminare alcune delle proprietà nel file di progetto
 
 ### <a name="conditional-properties"></a>Proprietà condizionali
 
-Molte proprietà come `Configuration` sono definite in modo condizionale, cio' l'attributo viene visualizzato `Condition` nell'elemento property. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio,
+Molte proprietà, `Configuration` ad esempio , vengono definite in modo condizionale, ci esempio l'attributo viene visualizzato `Condition` nell'elemento proprietà. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio,
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -295,11 +296,11 @@ Quasi tutti gli elementi di MSBuild possono avere un attributo Condition. Per al
 
 ### <a name="reserved-properties"></a>Proprietà riservate
 
-In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, [vedere Procedura: Fare](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) riferimento al nome o al percorso del file di progetto e MSBuild [proprietà riservate e note.](../msbuild/msbuild-reserved-and-well-known-properties.md)
+In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, [vedere Procedura: Fare riferimento](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) al nome o al percorso del file di progetto MSBuild proprietà riservate e [note.](../msbuild/msbuild-reserved-and-well-known-properties.md)
 
 ### <a name="environment-variables"></a>Variabili di ambiente
 
-È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [Procedura: Usare variabili di ambiente in una compilazione.](../msbuild/how-to-use-environment-variables-in-a-build.md)
+È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione.](../msbuild/how-to-use-environment-variables-in-a-build.md)
 
 ## <a name="set-properties-from-the-command-line"></a>Impostare le proprietà dalla riga di comando
 
@@ -349,7 +350,7 @@ Modificare l'attività Message per visualizzare il valore della proprietà Confi
     $(Configuration) is "Debug"
     ```
 
-Per altre informazioni, vedere MSBuild [caratteri speciali.](../msbuild/msbuild-special-characters.md)
+Per altre informazioni, vedere [MSBuild caratteri speciali.](../msbuild/msbuild-special-characters.md)
 
 ## <a name="build-items"></a>Elementi di compilazione
 
@@ -642,9 +643,9 @@ Si noti che i metadati espressi in questa sintassi non causano la divisione in b
 
 ## <a name="next-steps"></a>Passaggi successivi
 
- Per informazioni su come creare un semplice file di progetto un passaggio alla volta, vedere Procedura dettagliata: Creazione di un file di progetto MSBuild file di progetto [da zero.](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+ Per informazioni su come creare un file di progetto semplice un passaggio alla volta, vedere Procedura dettagliata: Creazione di un file di progetto MSBuild [da zero.](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [MSBuild panoramica](../msbuild/msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

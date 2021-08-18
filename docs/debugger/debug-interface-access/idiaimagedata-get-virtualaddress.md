@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b12d7bde054096b590bbfbff851967dfc46abb512a38416dca3735ecc21b4da
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2f40263a7a5a512e23b668a081749d08a9657826
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455023"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134401"
 ---
 # <a name="idiaimagedataget_virtualaddress"></a>IDiaImageData::get_virtualAddress
 Recupera la posizione nella memoria virtuale dell'immagine.

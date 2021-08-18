@@ -3,10 +3,10 @@ title: ID dei carichi di lavoro e dei componenti di Visual Studio Professional
 titleSuffix: ''
 description: Usare Visual Studio Professional ID del carico di lavoro e del componente per installare Visual Studio dalla riga di comando o specificare una dipendenza in un manifesto VSIX.
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 08/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 70e5d2003f0da6776a3ea7df1da3c55e85ba3962
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: b9734b2a1295f9b086c5bf51557548ba503ac574
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565258"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055783"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Elenco dei componenti di Visual Studio Professional
 

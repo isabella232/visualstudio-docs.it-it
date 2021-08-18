@@ -1,7 +1,7 @@
 ---
-title: Controllare un'eccezione
+title: Esaminare un'eccezione
 titleSuffix: ''
-description: Informazioni sulle informazioni fornite da Visual Studio per semplificare il debug delle eccezioni e su come disabilitare selettivamente le interruzioni nelle eccezioni.
+description: Informazioni sulle informazioni fornite Visual Studio per eseguire il debug delle eccezioni e su come disabilitare in modo selettivo l'interruzione in caso di eccezioni.
 ms.custom: SEO-VS-2020
 ms.date: 1/18/2020
 ms.topic: how-to
@@ -17,50 +17,51 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e10dc341ce33ba91c05348e9d3fba545437ce497
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b93a717d4a3f22db860f2bbef51bc51e0f8cc85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139054"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Esaminare un'eccezione usando l'helper eccezioni 
 
-La gestione delle eccezioni è un problema comune, indipendentemente dalla tecnologia o dal livello di esperienza. Può essere un'esperienza frustrante capire perché le eccezioni causano problemi nel codice. Quando si esegue il debug di un'eccezione in Visual Studio, è opportuno ridurre tale frustrazione fornendo informazioni rilevanti sull'eccezione per facilitare il debug del problema.
+La gestione delle eccezioni è un problema comune, indipendentemente dalla tecnologia o dal livello di esperienza. Può essere un'esperienza frustrante capire perché le eccezioni causano problemi nel codice. Quando si esegue il debug di un'eccezione in Visual Studio, è necessario ridurre la frustrazione fornendo informazioni sulle eccezioni pertinenti per facilitare il debug del problema più velocemente.
 
 ![Helper eccezioni](media/debugger-exception-helper-default.png)
 
-## <a name="pause-on-the-exception"></a>Sospendi sull'eccezione
-Quando il debugger interrompe un'eccezione, viene visualizzata un'icona di errore di eccezione a destra della riga di codice. Accanto all'icona dell'eccezione verrà visualizzato un helper eccezioni non modale.
+## <a name="pause-on-the-exception"></a>Sospendi in base all'eccezione
+Quando il debugger si interrompe in caso di eccezione, viene visualizzata un'icona di errore di eccezione a destra della riga di codice. Accanto all'icona dell'eccezione verrà visualizzato un helper eccezioni non modale.
 
 ![Helper eccezioni accanto a una riga di codice](media/debugger-exception-helper-locerror.png)
 
-## <a name="inspect-exception-info"></a>Controllare le informazioni sull'eccezione
-È possibile leggere immediatamente il tipo di eccezione e il messaggio di eccezione nell'helper eccezioni e se l'eccezione è stata generata o non gestita. È possibile esaminare e visualizzare le proprietà dell'oggetto eccezione facendo clic sul collegamento **Visualizza dettagli** .
+## <a name="inspect-exception-info"></a>Esaminare le informazioni sulle eccezioni
+È possibile leggere immediatamente il tipo di eccezione e il messaggio di eccezione nell'helper eccezioni e se l'eccezione è stata generata o non gestita. È possibile esaminare e visualizzare le proprietà dell'oggetto Exception facendo clic **sul collegamento Visualizza** dettagli.
 
-## <a name="analyze-null-references"></a>Analizza riferimenti null
-A partire da Visual Studio 2017, per il codice .NET e C/C++, quando si raggiunge un `NullReferenceException` oggetto o `AccessViolation` , vengono visualizzate le informazioni di analisi null nell'helper eccezioni. L'analisi viene visualizzata come testo sotto il messaggio dell'eccezione. Nell'illustrazione seguente le informazioni sono visualizzate come "**s** is null".
+## <a name="analyze-null-references"></a>Analizzare i riferimenti Null
+A partire da Visual Studio 2017, sia per il codice .NET che per il codice C/C++, quando si preme o , vengono visualizzate informazioni di analisi `NullReferenceException` `AccessViolation` null nell'helper eccezioni. L'analisi viene visualizzata come testo sotto il messaggio di eccezione. Nella figura seguente le informazioni vengono visualizzate come "**s** era null".
 
-![Analisi null Helper eccezioni](media/debugger-exception-helper-default.png)
+![Analisi Null dell'helper eccezioni](media/debugger-exception-helper-default.png)
 
 
 > [!NOTE]
-> L'analisi di riferimento null nel codice gestito richiede .NET versione 4.6.2. L'analisi dei valori null non è attualmente supportata per piattaforma UWP (Universal Windows Platform) (UWP) e per altre applicazioni .NET Core. È disponibile solo durante il debug di codice che non dispone di ottimizzazioni del codice JIT (just-in-Time).
+> L'analisi dei riferimenti Null nel codice gestito richiede .NET versione 4.6.2. L'analisi Null non è attualmente supportata per la piattaforma UWP (Universal Windows Platform) e altre applicazioni .NET Core. È disponibile solo durante il debug di codice che non dispone di ottimizzazioni del codice JIT (Just-In-Time).
 
 ## <a name="configure-exception-settings"></a>Configurare le impostazioni delle eccezioni 
-È possibile configurare il debugger in modo che si interrompa quando viene generata un'eccezione del tipo corrente dalla sezione **Impostazioni eccezioni** dell'helper eccezioni. Se il debugger viene sospeso in corrispondenza di un'eccezione generata, è possibile utilizzare la casella di controllo per disabilitare l'interruzione di tale tipo di eccezione quando viene generata in futuro. Se non si vuole interrompere questa particolare eccezione quando viene generata in questo particolare modulo, selezionare la casella di controllo in base al nome del modulo in **tranne quando viene generata da:** nella finestra **Impostazioni eccezioni** . 
+È possibile configurare il debugger in modo che si interrompa quando viene generata un'eccezione del tipo corrente dalla sezione **Eccezione Impostazioni** dell'helper eccezioni. Se il debugger viene sospeso in corrispondenza di un'eccezione generata, è possibile usare la casella di controllo per disabilitare l'interruzione del tipo di eccezione quando viene generata in futuro. Se non si vuole interrompere questa eccezione specifica quando viene generata in questo modulo specifico, selezionare la casella di controllo in Base al nome del modulo in Tranne quando viene generata **da:** nella finestra Impostazioni **eccezione.** 
 
 ## <a name="inspect-inner-exceptions"></a>Esaminare le eccezioni interne 
-Se l'eccezione presenta eccezioni interne ([innerException](/dotnet/api/system.exception.innerexception), è possibile visualizzarle nell'helper eccezioni. Se sono presenti più eccezioni, è possibile spostarsi tra di esse usando le frecce sinistra e destra visualizzate sopra lo stack di chiamate.
+Se l'eccezione presenta eccezioni interne ([InnerException](/dotnet/api/system.exception.innerexception), è possibile visualizzarle nell'helper eccezioni. Se sono presenti più eccezioni, è possibile spostarsi tra di esse usando le frecce sinistra e destra visualizzate sopra lo stack di chiamate.
 
-![Helper eccezione con eccezione interna](media/debugger-exception-helper-innerexception.png)
+![Helper eccezioni con eccezione interna](media/debugger-exception-helper-innerexception.png)
 
-## <a name="inspect-rethrown-exceptions"></a>Controllare le eccezioni rigenerate
-Nei casi in cui è stata rilevata un'eccezione `thrown` , l'helper eccezioni Mostra lo stack di chiamate dalla prima volta che è stata generata l'eccezione. Se l'eccezione è stata generata più volte, viene visualizzato solo lo stack di chiamate dell'eccezione originale.
+## <a name="inspect-rethrown-exceptions"></a>Esaminare le eccezioni generate di nuovo
+Nei casi in cui un'eccezione è stata l'helper eccezioni mostra lo stack di chiamate dalla prima volta che è stata `thrown` generata l'eccezione. Se l'eccezione è stata generata più volte, viene visualizzato solo lo stack di chiamate dell'eccezione originale.
 
-![Helper eccezioni con eccezioni rigenerate](media/debugger-exception-helper-innerexception.png)
+![Helper eccezioni con eccezioni generate nuovamente](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Condividere una sessione di debug con Live Share
-Dall'helper eccezioni è possibile avviare una sessione di [Live Share](/visualstudio/liveshare/) usando il collegamento **avvia Live Share sessione...**. Tutti gli utenti che partecipano alla sessione Live Share possono visualizzare l'helper eccezioni insieme a qualsiasi altra informazione di debug.
+Dall'helper eccezioni è possibile avviare una [sessione Live Share](/visualstudio/liveshare/) usando il collegamento Avvia **Live Share sessione...**. Tutti gli utenti che aderiscono Live Share sessione possono visualizzare l'helper eccezioni insieme a qualsiasi altra informazione di debug.

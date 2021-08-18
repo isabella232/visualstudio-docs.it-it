@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d68b7a1a26de24ff77833086a125a7373749fbbd888fdec7bfca0634aed0575
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a1d9ddd3ac533e486b757b77014776d1c9657b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124152"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -457,7 +457,7 @@ Definisce gli oggetti modificabili del frammento di codice. L'elemento `Object` 
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Default](../ide/code-snippets-schema-reference.md#default-element)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
+|[Elemento predefinito](../ide/code-snippets-schema-reference.md#default-element)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
 |[Elemento Function](../ide/code-snippets-schema-reference.md#function-element)|Elemento facoltativo. Specifica una funzione da eseguire quando il valore letterale riceve lo stato attivo in Visual Studio. In un elemento `Function` possono essere presenti zero elementi `Literal` oppure uno.|
 |[Elemento ID](../ide/code-snippets-schema-reference.md#id-element)|Elemento obbligatorio. Specifica un identificatore univoco per il valore letterale. In un elemento `ID` deve essere presente esattamente un elemento `Literal`.|
 |[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Elemento facoltativo. Descrive l'utilizzo e il valore previsti del valore letterale. Possono essere presenti zero o un elemento **Tooltip** in un elemento `Literal`.|
@@ -485,7 +485,7 @@ Specifica informazioni sui riferimenti ad assembly richiesti dal frammento di co
 
 |Elemento padre|Descrizione|
 | - |-----------------|
-|[References - elemento](../ide/code-snippets-schema-reference.md#references-element)|Elemento di raggruppamento per elementi `Reference`.|
+|[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento di raggruppamento per elementi `Reference`.|
 
 ## <a name="references-element"></a>Elemento References
 
@@ -507,7 +507,7 @@ Raggruppa singoli elementi `Reference`.
 
 ## <a name="shortcut-element"></a>Elemento Shortcut
 
-Specifica il testo del collegamento usato per inserire il frammento di codice. Il valore di testo di un `Shortcut` elemento può contenere solo caratteri alfanumerici e caratteri di sottolineatura ( _ ).
+Specifica il testo del collegamento usato per inserire il frammento di codice. Il valore di testo di un elemento può contenere solo `Shortcut` caratteri alfanumerici e caratteri di sottolineatura ( _ ).
 
 > [!CAUTION]
 > Il carattere di sottolineatura (_) non è supportato nei collegamenti ai frammenti di codice C++.
@@ -539,10 +539,10 @@ Specifica i riferimenti, le importazioni, le dichiarazione e il codice del framm
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Code](../ide/code-snippets-schema-reference.md#code-element)|Elemento obbligatorio. Specifica il codice che si desidera inserire in un file di documentazione. In un elemento `Code` deve essere presente esattamente un elemento `Snippet`.|
+|[Elemento code](../ide/code-snippets-schema-reference.md#code-element)|Elemento obbligatorio. Specifica il codice che si desidera inserire in un file di documentazione. In un elemento `Code` deve essere presente esattamente un elemento `Snippet`.|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Elemento facoltativo. Specifica i valori letterali e gli oggetti che costituiscono le parti modificabili di un frammento di codice. In un elemento `Declarations` possono essere presenti zero elementi `Snippet` oppure uno.|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento facoltativo. Raggruppa singoli elementi `Import`. In un elemento `Imports` possono essere presenti zero elementi `Snippet` oppure uno.|
-|[References - elemento](../ide/code-snippets-schema-reference.md#references-element)|Elemento facoltativo. Raggruppa singoli elementi `Reference`. In un elemento `References` possono essere presenti zero elementi `Snippet` oppure uno.|
+|[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento facoltativo. Raggruppa singoli elementi `Reference`. In un elemento `References` possono essere presenti zero elementi `Snippet` oppure uno.|
 
 |Elemento padre|Descrizione|
 | - |-----------------|

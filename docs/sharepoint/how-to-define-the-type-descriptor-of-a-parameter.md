@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 3ad8bec797873fdc5dd4eede5a8862d5b4458f87c47b050360d7e1cffbaf9ad2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ae1570010fc71d6edf56cdf9090f371c218a322a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409579"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148896"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedura: Definire il descrittore di tipo di un parametro
   Un descrittore di tipo contiene proprietà che descrivono il tipo di dati di un parametro. Può definire un campo, un'entità o una raccolta di entità. Per altre informazioni, vedere [TypeDescriptor.](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))

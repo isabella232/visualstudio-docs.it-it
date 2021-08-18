@@ -1,6 +1,6 @@
 ---
 title: Il debug in modalità mista per i processi IA64 non è supportato
-description: Visual Studio non supporta il debug in modalità mista di codice gestito e nativo nei processi IA64 (Itanium). Vedere questo articolo per le soluzioni alternative.
+description: Visual Studio non supporta il debug in modalità mista del codice gestito e nativo nei processi IA64 (Itanium). Vedere questo articolo per le soluzioni alternative.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,15 @@ ms.assetid: 20bc1e38-049b-4388-87c4-936815d85b46
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 19232155a802e0e883b6169fe71fe5005711031c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7fd65ca46782938de41a63e2c317ec9b2b43330
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930265"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090564"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Il debug in modalità mista per i processi IA64 non è supportato.
 Visual Studio non supporta debug in modalità mista di codice gestito e nativo nei processi IA64. Questo significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.
@@ -49,7 +50,7 @@ Visual Studio non supporta debug in modalità mista di codice gestito e nativo n
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, quindi fare clic su **Proprietà** nel menu di scelta rapida.
 
-2. Nelle pagine delle proprietà fare clic su **piattaforma** e selezionare Win32 dall'elenco di piattaforme.
+2. Nelle pagine delle proprietà fare clic **su Piattaforma** e selezionare Win32 nell'elenco delle piattaforme,
 
 ## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 843bbe19b167bbb99160a9fa853aeebb31185d012aac62d44ec8d1a1857bb01d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 13a1bcf4a4d5fed816ef467cdc15c5c6fb974f18
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139147"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 Recupera tutti gli elementi figlio di un identificatore padre specificato che corrispondono al nome e al tipo di simbolo.
@@ -39,11 +39,11 @@ HRESULT findChildren (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-[in] Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta l'elemento padre. Se questo simbolo padre è una funzione, un modulo o un blocco, i relativi elementi figlio lessicali vengono restituiti in `ppResult` . Se il simbolo padre è un tipo, vengono restituiti i relativi elementi figlio della classe. Se questo parametro è , deve essere impostato su o , che restituisce l'ambito `NULL` `symtag` globale `SymTagExe` `SymTagNull` (.exe file).
+[in] Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta l'elemento padre. Se questo simbolo padre è una funzione, un modulo o un blocco, i relativi elementi figlio lessicali vengono restituiti in `ppResult` . Se il simbolo padre è un tipo , vengono restituiti i relativi elementi figlio della classe. Se questo parametro è `NULL` , deve essere impostato su o , che restituisce `symtag` `SymTagExe` `SymTagNull` l'ambito globale (.exe file).
 
  `symtag`
 
-[in] Specifica il tag del simbolo degli elementi figlio da recuperare. I valori vengono presi [dall'enumerazione SymTagEnum.](../../debugger/debug-interface-access/symtagenum.md) Impostare su `SymTagNull` per recuperare tutti gli elementi figlio.
+[in] Specifica il tag dei simboli degli elementi figlio da recuperare. I valori vengono prelevati [dall'enumerazione SymTagEnum.](../../debugger/debug-interface-access/symtagenum.md) Impostare su `SymTagNull` per recuperare tutti gli elementi figlio.
 
  `name`
 
@@ -61,7 +61,7 @@ HRESULT findChildren (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come trovare variabili locali della funzione `pFunc` che corrispondono al nome `szVarName` .
+ Nell'esempio seguente viene illustrato come trovare le variabili locali della funzione `pFunc` che corrispondono al nome `szVarName` .
 
 ```C++
 IDiaEnumSymbols* pEnum;

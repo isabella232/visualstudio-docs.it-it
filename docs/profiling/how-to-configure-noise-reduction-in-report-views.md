@@ -1,6 +1,6 @@
 ---
 title: Configurare la riduzione del rumore nelle visualizzazioni report | Microsoft Docs
-description: Usare le funzionalità di taglio e riduzione, entrambe abilitate per impostazione predefinita, per ridurre il rumore e rendere più evidenti i problemi di prestazioni nei report.
+description: Usare il trimming e la riduzione, entrambi abilitati per impostazione predefinita, per ridurre il rumore e rendere più evidenti i problemi di prestazioni nei report.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,15 +14,16 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5037cf0184608829d5a86d736bead5b61f5172c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 015ea700cca87912013b5b12c3d9e2ead78a0c54
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969334"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038851"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedura: Configurare la riduzione del rumore nelle visualizzazioni dei report
 I rapporti di prestazioni possono essere configurati per la riduzione del rumore limitando la quantità di dati presentati nelle visualizzazioni Albero delle chiamate e Allocazioni. Con la riduzione del rumore, i problemi di prestazioni sono più evidenti. In questo modo è più semplice analizzare i rapporti di prestazioni.
@@ -80,7 +81,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
 4. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedi anche
-- [Personalizzare le visualizzazioni report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
+- [Personalizzare le visualizzazioni dei report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
 - [Procedura: Escludere o includere funzioni brevi nella strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)
 - [Visualizzazione allocazioni](../profiling/dotnet-memory-allocations-view.md)

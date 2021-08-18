@@ -1,6 +1,6 @@
 ---
-title: Documento di log di grafica | Microsoft Docs
-description: Informazioni sul documento di log della grafica in Visual Studio, che registra gli eventi di grafica che si sono verificati durante l'esecuzione di un'app in una sessione di diagnostica grafica.
+title: Documentazione del log di grafica | Microsoft Docs
+description: Informazioni sul documento Log di grafica in Visual Studio, che registra gli eventi di grafica che si sono verificati durante l'esecuzione di un'app in una sessione di diagnostica della grafica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fbf6e002254f10ca983cfaff4198008aaa9724a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f713687e1b4b045fc6d48d9c6a237a11a8f3091e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841107"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058576"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 Il documento di log della grafica è la registrazione degli eventi di grafica che si sono verificati durante l'esecuzione dell'app in una sessione di diagnostica della grafica. Dopo la registrazione, è possibile esaminare il log in Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.
@@ -39,7 +40,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
 #### <a name="to-inspect-a-pixel"></a>Per esaminare un pixel
 
-- Nella parte superiore del documento di log della grafica, selezionare il pixel desiderato dall'output della destinazione di rendering. Dopo avere selezionato un pixel, è possibile usare la finestra **Cronologia pixel grafica** per visualizzare informazioni dettagliate sul pixel selezionato. Per ulteriori informazioni, vedere la pagina relativa alla [cronologia dei pixel](graphics-pixel-history.md).
+- Nella parte superiore del documento di log della grafica, selezionare il pixel desiderato dall'output della destinazione di rendering. Dopo avere selezionato un pixel, è possibile usare la finestra **Cronologia pixel grafica** per visualizzare informazioni dettagliate sul pixel selezionato. Per altre informazioni, vedere [Cronologia pixel.](graphics-pixel-history.md)
 
 ## <a name="playback-machine"></a>Computer riproduzione
  Nell'angolo superiore destro di **Elenco frame** è disponibile **Computer riproduzione**. Computer riproduzione è un computer o un dispositivo usato per riprodurre gli eventi della grafica da un file di log della grafica durante una sessione di diagnostica della grafica successiva. Usando un dispositivo diverso dal computer di sviluppo per riprodurre gli eventi acquisiti, è possibile riprodurre in modo più accurato l'ambiente di esecuzione in cui si verifica il problema. È ad esempio possibile usare un computer con un hardware o driver di grafica diversi rispetto a quelli presenti nel computer di sviluppo o altri tipi di dispositivi, come un tablet Windows RT basato su ARM o un dispositivo Windows Phone.
@@ -49,7 +50,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 ## <a name="graphics-log-summary-information"></a>Informazioni di riepilogo del log di grafica
  Quando un file di log di grafica è il documento attivo, nella finestra **Proprietà** sono visualizzate informazioni sull'ambiente che ha ospitato la sessione di acquisizione di Diagnostica della grafica. Sono visualizzate numerose categorie di informazioni.
 
- **Informazioni su Direct3D** Elenca le informazioni sulle funzionalità hardware e driver della scheda video utilizzata durante la sessione di acquisizione.
+ **Informazioni direct3D** Elenca le informazioni sulle funzionalità hardware e driver della scheda video utilizzata durante la sessione di acquisizione.
 
 |Proprietà|Descrizione|
 |--------------|-----------------|
@@ -61,7 +62,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Formati estesi (BGRA e così via)**|**True** se i formati estesi come BGRA sono supportati; in caso contrario, **False**.|
 |**Livello funzionalità hardware massimo**|Visualizza il livello di funzionalità massimo supportato dalla scheda video.|
 
- **Visualizza informazioni** Elenca le informazioni sulla scheda di visualizzazione utilizzata durante la sessione di acquisizione.
+ **Visualizzare le informazioni** Elenca le informazioni sulla scheda di visualizzazione utilizzata durante la sessione di acquisizione.
 
 |Proprietà|Descrizione|
 |--------------|-----------------|
@@ -71,15 +72,15 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Versione driver**|Versione del driver della scheda video grafica.|
 |**Nome**|Nome della scheda video grafica.|
 
- **File esperimento** Elenca le informazioni sul file di esperimento associato alla sessione di acquisizione.
+ **File dell'esperimento** Elenca le informazioni sul file dell'esperimento associato alla sessione di acquisizione.
 
 |Proprietà|Descrizione|
 |--------------|-----------------|
-|**Percorso**|Percorso del file con estensione vsglog. **Nota:**  In acquisizione legacy questa proprietà è inutilizzata.|
+|**Percorso**|Percorso del file con estensione vsglog. **Nota:**  In caso di acquisizione legacy, questa proprietà non viene utilizzata.|
 
- **Informazioni sul modulo** Elenca il nome e la versione delle librerie di collegamento dinamico (dll) caricate dall'app durante la sessione di acquisizione.
+ **Informazioni sul modulo** Elenca il nome e la versione delle librerie a collegamento dinamico (DLL) caricate dall'app durante la sessione di acquisizione.
 
- **Informazioni di sistema** Elenca le informazioni relative all'hardware e al sistema operativo che ospitavano l'app durante la sessione di acquisizione.
+ **System Information** Elenca le informazioni sull'hardware e il sistema operativo che ha ospitato l'app durante la sessione di acquisizione.
 
 |Proprietà|Descrizione|
 |--------------|-----------------|
@@ -96,14 +97,14 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Data/ora ultima modifica**|Data e ora in cui è stata compilata l'app.|
 |**Percorso**|Percorso dell'app.|
 |**ID processo**|ID processo assegnato all'app.|
-|**Versione**|Versione dell'app.|
+|**Version**|Versione dell'app.|
 
- **File di log VSG** Elenca le informazioni sul documento del log di grafica.
+ **File di log VSG** Elenca le informazioni sul documento di log di grafica.
 
 | Proprietà | Descrizione |
 |------------------------| - |
 | **Creato da** | Nome dell'app che ha creato il documento di log della grafica. Ad esempio, se la sessione di acquisizione è stata avviata da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (acquisizione manuale), il valore di questa proprietà è [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
-| **Ora di inizio della sessione** | Data e ora in cui è stata iniziata la sessione di acquisizione. |
+| **Ora di inizio sessione** | Data e ora in cui è stata iniziata la sessione di acquisizione. |
 | **Dimensioni** | Dimensione del documento log grafica. |
 
 ## <a name="see-also"></a>Vedi anche

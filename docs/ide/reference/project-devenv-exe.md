@@ -1,6 +1,6 @@
 ---
 title: -Project (devenv.exe)
-description: Informazioni su come usare l'opzione Project della riga di comando devenv per identificare un singolo progetto all'interno della configurazione di soluzione specificata per compilare, pulire, ricompilare o distribuire il progetto.
+description: Informazioni su come usare l Project della riga di comando devenv per identificare un singolo progetto all'interno della configurazione di soluzione specificata per compilare, pulire, ricompilare o distribuire il progetto.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 41915f0fc2c7e981438c9799d1a26031ddda9af162a939d228307288016a5d63
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5be70c47759831c452e513ab2a4d4432840c1022
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372173"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123827"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -64,7 +64,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="remarks"></a>Commenti
 
-- Deve essere usato parte di un `devenv` `/Build` comando , , o `/Clean` `/Rebuild` `/Deploy` .
+- Deve essere usato parte di `devenv` `/Build` un comando , , `/Clean` o `/Rebuild` `/Deploy` .
 
 - Racchiudere le stringhe che includono spazi tra virgolette doppie.
 

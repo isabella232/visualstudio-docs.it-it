@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce0250a3644859953bef3f12f0a380546a0eb2aaf94139029f2ba14f0b4760e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4e7b3ba57298f996e360236252c0a8dfe0ee1011
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307440"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138653"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Precarica i moduli designati dal provider di simboli specificato.
@@ -48,10 +48,10 @@ int PreloadModules (
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Questo metodo facoltativo viene usato quando si esegue un collegamento del processo di hosting. Offre al edizione Enterprise la possibilità di "riscaldamento" come parte del collegamento.
+Questo metodo facoltativo viene usato quando si esegue un collegamento a un processo di hosting. Offre al edizione Enterprise la possibilità di "riscaldamento" come parte del collegamento.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto ExpressionEvaluatorPackage** che espone l'interfaccia [IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+Nell'esempio seguente viene illustrato come implementare questo metodo per un **oggetto ExpressionEvaluatorPackage** che espone l'interfaccia [IDebugExpressionEvaluator2.](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

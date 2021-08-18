@@ -1,6 +1,6 @@
 ---
 title: Strumenti di localizzazione
-description: Informazioni sugli strumenti di localizzazione inclusi in Visual Studio e su come usarli per creare applicazioni localizzate in più linguaggi.
+description: Informazioni sugli strumenti di localizzazione inclusi in Visual Studio e su come usarli per creare applicazioni localizzate in più lingue.
 ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
@@ -15,14 +15,15 @@ ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 77402f7503818b310a592a39706ac717ac728852
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4411ab1280bc8c39fcbf49a5ee80f1722a84d1d5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847960"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086157"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Sviluppare app globalizzate e localizzate
 
@@ -41,11 +42,11 @@ Ad esempio, il sistema di progetto per app Windows Forms può generare file di r
 
 - App di Windows
 
-   È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per ulteriori informazioni, vedere [supporto bidirezionale per applicazioni Windows Form](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per altre informazioni, vedere [Supporto bidirezionale per Windows applicazioni Form.](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
 
 - App Web
 
-   I servizi Web supportano l'invio e la ricezione di testo UTF-8 e Unicode. Sono quindi adatti per le applicazioni che prevedono l'uso delle lingue bidirezionali. L'interfaccia utente delle applicazioni Web client è basata sui browser, pertanto il livello di supporto bidirezionale di un'applicazione Web dipende dal grado di supporto delle funzionalità bidirezionali nel browser dell'utente. In Visual Studio è possibile creare applicazioni con supporto per testo in arabo o ebraico, ordine di lettura da destra a sinistra, codifica di file e impostazioni cultura locali. Per altre informazioni, vedere [supporto bidirezionale per le applicazioni web ASP.NET](/previous-versions/6eedwbtt(v=vs.140)).
+   I servizi Web supportano l'invio e la ricezione di testo UTF-8 e Unicode. Sono quindi adatti per le applicazioni che prevedono l'uso delle lingue bidirezionali. L'interfaccia utente delle applicazioni Web client è basata sui browser, pertanto il livello di supporto bidirezionale di un'applicazione Web dipende dal grado di supporto delle funzionalità bidirezionali nel browser dell'utente. In Visual Studio è possibile creare applicazioni con supporto per testo in arabo o ebraico, ordine di lettura da destra a sinistra, codifica di file e impostazioni cultura locali. Per altre informazioni, vedere [Supporto bidirezionale per ASP.NET applicazioni Web.](/previous-versions/6eedwbtt(v=vs.140))
 
 > [!NOTE]
 > Le app console non includono il supporto del testo per le lingue bidirezionali. Questo fatto dipende dall'interazione tra Windows e le applicazioni console.

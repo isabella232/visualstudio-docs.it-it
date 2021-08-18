@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 03/08/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 7faf85d07d0c6de4f559e038b47e1935886ac0c3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d6d906a1658d7ccab428762ed8a0d1677d841837f7e37337435ef66d9afa5549
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122098"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436657"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Eseguire il debug di app in un contenitore Docker locale
 

@@ -1,6 +1,6 @@
 ---
-description: 'IDebugDynamicFieldCOMPlus:: GetTypeFromTypeDef recupera un tipo in base al relativo token.'
-title: 'IDebugDynamicFieldCOMPlus:: GetTypeFromTypeDef | Microsoft Docs'
+description: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef recupera un tipo dato il relativo token.
+title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4cc8e9167085895ce4f0f10784b07aa418afd3fa
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 39fff35d412ee960f08a97d35e61d758a84a542e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094003"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064370"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
-Recupera un tipo in base al relativo token.
+Recupera un tipo dato il relativo token.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,16 +48,16 @@ int GetTypeFromTypeDef(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-in Identificatore del dominio dell'applicazione.
+[in] Identificatore del dominio applicazione.
 
 `guidModule`\
-in Identificatore univoco del modulo.
+[in] Identificatore univoco del modulo.
 
 `tokClass`\
-in Token che rappresenta il tipo.
+[in] Token che rappresenta il tipo.
 
 `ppType`\
-out Restituisce un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che contiene il tipo.
+[out] Restituisce un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che contiene il tipo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

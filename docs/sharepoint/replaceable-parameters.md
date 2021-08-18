@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.technology: sharepoint-development
 ms.workload: office
-ms.openlocfilehash: 7f7def73b011134a670cc79346d1a4e289d9e67252c9889a01a8599ebd603190
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e36edf6d8482fcb48a6a77695a6631aed1868203
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367492"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092943"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   I parametri sostituibili, o *token,* possono essere usati all'interno dei file di progetto per fornire valori per SharePoint elementi della soluzione i cui valori effettivi non sono noti in fase di progettazione. Sono simili in funzione ai [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token di modello standard. Per altre informazioni, vedere [Parametri del modello.](../ide/template-parameters.md)

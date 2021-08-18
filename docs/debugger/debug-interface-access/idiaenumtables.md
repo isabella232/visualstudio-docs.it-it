@@ -11,14 +11,15 @@ ms.assetid: 016190c5-09e4-48f2-bf60-9b02603a03e0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 022ab4db45355db86965582c951e67ee41d53bde
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bea0f72726ed8a484aa520ed8733b06fda619a6a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157868"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044566"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
 Enumera le varie tabelle contenute nell'origine dati.
@@ -30,13 +31,13 @@ IDiaEnumTables : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDiaEnumTables` .
+ Nella tabella seguente vengono illustrati i metodi di `IDiaEnumTables` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Recupera la versione dell' [interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) dell'enumeratore.|
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Recupera la versione [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) di questo enumeratore.|
 |[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Recupera il numero di tabelle.|
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Recupera una tabella per mezzo di un indice o un nome.|
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Recupera una tabella tramite un indice o un nome.|
 |[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Recupera un numero specificato di tabelle nella sequenza di enumerazione.|
 |[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Ignora un numero specificato di tabelle in una sequenza di enumerazione.|
 |[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
@@ -45,10 +46,10 @@ IDiaEnumTables : IUnknown
 ## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando il metodo [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) .
+Ottenere questa interfaccia chiamando il [metodo IDiaSession::getEnumTables.](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come ottenere l' `IDiaEnumTables` interfaccia da una sessione. Per un esempio più completo dell'utilizzo delle tabelle, vedere l'interfaccia [IDiaTable](../../debugger/debug-interface-access/idiatable.md) .
+In questo esempio viene illustrato come ottenere `IDiaEnumTables` l'interfaccia da una sessione. Per un esempio più completo dell'uso delle tabelle, vedere [l'interfaccia IDiaTable.](../../debugger/debug-interface-access/idiatable.md)
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -63,9 +64,9 @@ void ShowTableNames(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: Dia2.h
 
-Libreria: diaguids. lib
+Libreria: diaguids.lib
 
 DLL: msdia80.dll
 

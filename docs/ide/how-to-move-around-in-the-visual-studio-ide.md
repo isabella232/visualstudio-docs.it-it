@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Spostarsi all'interno dell'IDE"
-description: Informazioni su come spostarsi nell'IDE di Visual Studio da finestra a finestra e da file a file in diversi modi.
+description: Informazioni su come spostarsi nell'IDE Visual Studio da finestra a finestra e da file a file in diversi modi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,14 +17,15 @@ ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 384a6252ef17709970f6e902dfdf83a157b0460a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f3f41dfb6c1f53175d163ece81ed66fd9cc10d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968047"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137392"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: Spostarsi nell'IDE di Visual Studio
 
@@ -45,7 +46,7 @@ I comandi Posizione precedente e Posizione successiva consentono di scorrere tra
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Per spostarsi tra i file aperti in ordine di utilizzo
 
-- Per attivare i documenti aperti nell'ordine in cui sono stati modificati più di recente, premere **CTRL** + **-** (trattino).
+- Per attivare i documenti aperti nell'ordine in cui sono stati toccati più di recente, premere **CTRL** + **-** (trattino).
 
 - Per attivare i documenti aperti in ordine inverso, premere **CTRL** + **MAIUSC** + **-** (trattino).
 
@@ -65,7 +66,7 @@ Lo **strumento di spostamento dell'IDE** funziona in modo analogo allo strumento
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Per passare a file specifici nell'editor
 
-- Premere **CTRL** + **Tab** per visualizzare lo **strumento di navigazione dell'IDE**. Tenere premuto il tasto **CTRL** e premere ripetutamente **Tab** fino a quando non si seleziona il file a cui si desidera passare.
+- Premere **CTRL TAB** + **per** visualizzare lo strumento di navigazione **dell'IDE.** Tenere premuto **CTRL e** premere ripetutamente **TAB** fino a selezionare il file a cui si vuole passare.
 
     > [!TIP]
     > Per invertire l'ordine di spostamento nell'elenco dei **file attivi**, tenere premuto **CTRL**+**MAIUSC** e premere **TAB**.
@@ -76,7 +77,7 @@ Lo **strumento di spostamento dell'IDE** funziona in modo analogo allo strumento
 
     \- - oppure -
 
-- Nella barra dei menu scegliere finestre **finestra**  >  .
+- Nella barra dei menu scegliere **Finestra**  >  **Windows**.
 
 - Nell'elenco selezionare il file che si vuole visualizzare e scegliere **Attiva**.
 
@@ -89,7 +90,7 @@ Lo **strumento di spostamento dell'IDE** consente di scorrere le finestre degli 
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Per passare a una finestra degli strumenti specifica nell'IDE
 
-- Premere **ALT** + **F7** per visualizzare lo **strumento di navigazione dell'IDE**. Tenere premuto il tasto **ALT** e premere ripetutamente **F7** fino a quando non si seleziona la finestra a cui si intende passare.
+- Premere **ALT** + **F7 per** visualizzare lo strumento di navigazione **dell'IDE.** Tenere premuto **ALT e** premere ripetutamente **F7** fino a selezionare la finestra a cui si vuole passare.
 
     > [!TIP]
     > Per invertire l'ordine di spostamento nell'elenco **Finestra degli strumenti attivi**, tenere premuto **MAIUSC**+**ALT** e premere **F7**.

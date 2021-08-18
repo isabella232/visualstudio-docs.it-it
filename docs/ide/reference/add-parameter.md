@@ -7,14 +7,15 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1e623bea0eab4b45aec3d331864db49a2787f8c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c48e062ec4187fad479f5013fb8786c7eb018cc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846348"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123970"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Aggiungere un parametro a un metodo tramite un'azione rapida
 
@@ -34,14 +35,14 @@ Questa generazione di codice si applica a:
 
 1. Aggiungere un argomento aggiuntivo a una chiamata del metodo.
 
-   Una zigzag rossa viene visualizzata sotto il nome del metodo in cui viene chiamato.
+   Sotto il nome del metodo in cui viene chiamato viene visualizzata una linea a linee rossa.
 
-2. Posizionare il puntatore sul zigzag rosso fino a quando non viene visualizzato il menu azioni rapide. Selezionare la **freccia verso il basso** nel menu Azioni rapide e quindi selezionare **Aggiungi il parametro a [metodo]**.
+2. Posizionare il puntatore del mouse sulla linea a forma di ondro rossa fino a quando non viene visualizzato il menu Azioni rapide. Selezionare la **freccia verso il basso** nel menu Azioni rapide e quindi selezionare **Aggiungi il parametro a [metodo]**.
 
    ![Azione rapida di aggiunta del parametro al metodo in Visual Studio](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > È anche possibile accedere al menu azioni rapide posizionando il cursore sulla riga della chiamata al metodo e quindi premendo **CTRL** + **.** (periodo) o selezionando l'icona a bulbo di luce nel margine del file.
+   > È anche possibile accedere al menu Azioni rapide posizionando il cursore sulla riga della chiamata al metodo e quindi premendo + **CTRL.** (punto) o selezionando l'icona a forma di lampadina nel margine del file.
 
    Visual Studio aggiunge il nuovo parametro alla dichiarazione del metodo.
 

@@ -12,20 +12,21 @@ ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: de0e052fd42f1603889f7521a1e45e50b0f36eea
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 07f0db5c24f8f9251d503162f0581aad454b0b7b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102869"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Implementazione di esempio della valutazione delle espressioni
 > [!IMPORTANT]
 > In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Per **un'espressione della** finestra Espressione di controllo, Visual Studio [chiama ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) per produrre un [oggetto IDebugExpression2.](../../extensibility/debugger/reference/idebugexpression2.md) `IDebugExpressionContext2::ParseText`Crea un'istanza di un analizzatore di espressioni (EE) e chiama [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) per ottenere un [oggetto IDebugParsedExpression.](../../extensibility/debugger/reference/idebugparsedexpression.md)
+ Per **un'espressione della** finestra Espressione di Visual Studio chiama [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) per produrre un [oggetto IDebugExpression2.](../../extensibility/debugger/reference/idebugexpression2.md) `IDebugExpressionContext2::ParseText`Crea un'istanza di un analizzatore di espressioni (edizione Enterprise) e chiama [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) per ottenere un [oggetto IDebugParsedExpression.](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
  Esegue `IDebugExpressionEvaluator::Parse` le attività seguenti:
 
@@ -109,6 +110,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Valutare un'finestra Espressioni di controllo personalizzata](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Valutare un'espressione di controllo](../../extensibility/debugger/evaluating-a-watch-expression.md)

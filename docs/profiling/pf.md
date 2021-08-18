@@ -1,24 +1,25 @@
 ---
 title: PF | Microsoft Docs
-description: Informazioni su come l'opzione VSPerfCmd.exe PF imposta l'evento di profilatura campionato per gli errori di pagina e modifica il numero di errori di pagina in un intervallo di campionamento.
+description: Informazioni su come lVSPerfCmd.exe PF imposta l'evento di profilatura campionato per gli errori di pagina e modifica il numero di errori di pagina in un intervallo di campionamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee20d393a4c18c77dd059bbb78ed67b3c7264aee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b782e630e04e5e490d56bc3a4830404c79a2c26a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957335"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060908"
 ---
 # <a name="pf"></a>PF
-L'opzione *PF di* **VSPerfCmd.exe** imposta l'evento di profilatura campionato sugli errori di pagina e modifica facoltativamente il numero di errori di pagina in un intervallo di campionamento dal valore predefinito di 10.
+*L'opzioneVSPerfCmd.exe* **PF** imposta l'evento di profilatura campionato per gli errori di pagina e, facoltativamente, modifica il numero di errori di pagina in un intervallo di campionamento rispetto al valore predefinito di 10.
 
 > [!NOTE]
 > L'opzione **PF** non può essere usata in sistemi a 64 bit.
@@ -41,20 +42,20 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **PF** può essere specificata solo in una riga di comando che include una delle opzioni seguenti.
 
- **Avvia:** `AppName` Avvia il profiler e l'applicazione specificata da AppName.
+ **Launch (Avvia):** `AppName` Avvia il profiler e l'applicazione specificata da AppName.
 
- **Connetti:** `PID` Connette il profiler al processo specificato da AppName.
+ **Collega:** `PID` Collega il profiler al processo specificato da AppName.
 
 ## <a name="invalid-options"></a>Opzioni non valide
  Le opzioni seguenti non possono essere specificate nella stessa riga di comando che include **PF**.
 
- **Timer**[**:** `Cycles` ] imposta l'evento di campionamento sui cicli di clock del processore e, facoltativamente, imposta l'intervallo di campionamento su `Cycles` . L'intervallo Timer predefinito è 10.000.000.
+ **Timer**[**:** `Cycles` ] Imposta l'evento di campionamento su cicli di clock del processore e, facoltativamente, imposta l'intervallo di campionamento su `Cycles` . L'intervallo Timer predefinito è 10.000.000.
 
- **Sys**[**:** `Events` ] imposta l'evento di campionamento sulle chiamate dall'applicazione profilata al kernel del sistema operativo (syscalls) e, facoltativamente, imposta l'intervallo di campionamento su `Events` . L'intervallo Sys predefinito è 10.
+ **Sys**[**:**] Imposta l'evento di campionamento per le chiamate dall'applicazione profilata al kernel del sistema operativo (syscalls) e, facoltativamente, imposta l'intervallo `Events` di campionamento su `Events` . L'intervallo Sys predefinito è 10.
 
  **Contatore:** `Name` [ `,Reload` [ `,FriendlyName` ]] Imposta l'evento di campionamento sul contatore delle prestazioni della CPU specificato da `Name` e imposta l'intervallo di campionamento su `Reload` .
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] Raccoglie dati di memoria .NET. Per impostazione predefinita (**allocazione**), i dati vengono raccolti a ogni evento di allocazione della memoria. Quando viene specificato il parametro **Lifetime** , i dati vengono raccolti anche in corrispondenza di ogni evento Garbage Collection.
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] Raccoglie dati di memoria .NET. Per impostazione predefinita (**Allocation**), i dati vengono raccolti a ogni evento di allocazione della memoria. Quando si **specifica il** parametro Lifetime, vengono raccolti anche i dati a ogni evento di Garbage Collection.
 
 ## <a name="example"></a>Esempio
  Questo esempio illustra come impostare l'evento di campionamento di profilatura per gli errori di pagina e imposta l'intervallo di campionamento su 20 errori di pagina.

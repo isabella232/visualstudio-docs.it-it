@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c6b7e0d5a361321f1173688c8501a97d14b7e326119c4854c0fcd4310f1ac5ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9daebc52f63acdf6e165ea162c90189fab534193
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425336"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149026"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procedura: Aggiungere una proprietà a SharePoint progetti
   È possibile usare un'estensione di progetto per aggiungere una proprietà a qualsiasi SharePoint progetto. La proprietà viene visualizzata nella **finestra** Proprietà quando il progetto viene selezionato in **Esplora soluzioni**.
@@ -87,4 +87,4 @@ ms.locfileid: "121425336"
 - [Estendere SharePoint progetti](../sharepoint/extending-sharepoint-projects.md)
 - [Procedura: Creare un'estensione SharePoint progetto](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Procedura: Aggiungere una voce di menu di scelta rapida SharePoint progetti](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
-- [Estendere il SharePoint di progetto](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Estendere il SharePoint del progetto](../sharepoint/extending-the-sharepoint-project-system.md)

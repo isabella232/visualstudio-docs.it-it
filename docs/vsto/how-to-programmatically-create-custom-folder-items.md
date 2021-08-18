@@ -31,5 +31,5 @@ ms.locfileid: "121440760"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare le cartelle](../vsto/working-with-folders.md)
-- [Procedura: Aggiungere a livello di codice una voce Outlook contatti](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Procedura: Aggiungere una voce a un Outlook a livello di codice](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Procedura: Creare appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)

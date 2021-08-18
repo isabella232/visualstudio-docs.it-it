@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0b1264063553b13d3401f770dbd08ef2a51417df2314c30e895987a969851e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7dbf82e8586dbd12b99b2c360b1da3fb021133d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378120"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089433"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Valutazione delle espressioni in modalità di interruzione
 Nella sezione seguente viene descritto il processo che si verifica quando il debugger è in modalità di interruzione e deve eseguire la valutazione delle espressioni.

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 193b7cc73b87bee1a5332bd1b46a38276f0fb4b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b8406499b96e20e97577069f1b52819e6f7b148a738042553051bf02c03f220a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100972"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447525"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
@@ -91,7 +91,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    ```
 
 ::: moniker range=">=vs-2019"                                              
-- Suggerire l'uso di per i .NET Framework assembly
+- Suggerire l'uso di per i tipi .NET Framework assembly
 ::: moniker-end
                                          
 ::: moniker range="vs-2017"                                                
@@ -152,7 +152,7 @@ Selezionare queste caselle di controllo per visualizzare le linee verticali trat
 
 - Suggerimenti per il tipo inline 
     
-    Quando questa opzione è selezionata, inserisce hint di tipo per le variabili con tipi deducibili e tipi di parametri lambda.  
+    Se selezionata, inserisce hint di tipo per le variabili con tipi dedosi e tipi di parametri lambda.  
     
     ![Hint di tipo inline per CSharp](media/inline-type-hints-csharp.png)
 

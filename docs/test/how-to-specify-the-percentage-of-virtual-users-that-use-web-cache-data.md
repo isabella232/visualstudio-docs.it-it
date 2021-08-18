@@ -1,6 +1,6 @@
 ---
 title: 'Test di carico: impostare la percentuale di utenti virtuali usando i dati della cache Web'
-description: Informazioni su come specificare la percentuale di nuove proprietà Users nella Finestra Proprietà. Le proprietà degli scenari dei test di carico vengono modificate tramite l'Editor test di carico.
+description: Informazioni su come specificare la percentuale di nuove proprietà Users nel Finestra Proprietà. Le proprietà degli scenari dei test di carico vengono modificate tramite l'Editor test di carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: bb8b418377d169de8e06c2ab9f17a8a67a90ea0d3f00067cba0fe27165c9437b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 917c83afd652a21e8edfbe094bf9d942ff0cfe46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366615"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135624"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web
 

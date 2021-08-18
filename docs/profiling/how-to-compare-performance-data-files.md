@@ -17,12 +17,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 59421f44a2b5d9d30285f9959ea22d090b6bddcc3d4777a29e0de1e4cf98483e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 68ca77065935ca0635523471479988ea2ba9de47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231171"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061025"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procedura: Confrontare i file di dati delle prestazioni
 È possibile confrontare i risultati di due diversi file di dati del profiler, con estensione *vsp* o *vsps*, creando un report o una visualizzazione di confronto "Diff". Il confronto indica le differenze, le regressioni relative alle prestazioni e i miglioramenti riscontrati da una sessione di profilatura all'altra.

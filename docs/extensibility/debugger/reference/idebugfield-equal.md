@@ -1,6 +1,6 @@
 ---
-description: Questo metodo confronta questo campo con il campo specificato per verificarne l'uguaglianza.
-title: 'IDebugField:: EQUAL | Microsoft Docs'
+description: Questo metodo confronta questo campo con il campo specificato per verificane l'uguaglianza.
+title: IDebugField::Equal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58673703fa0e585095c9a82fe2c7a4bc3e14827c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f9625aa138330f8504dd90371808a62f8c50ee9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077109"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138458"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-Questo metodo confronta questo campo con il campo specificato per verificarne l'uguaglianza.
+Questo metodo confronta questo campo con il campo specificato per verificane l'uguaglianza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +43,10 @@ int Equal(
 
 ## <a name="parameters"></a>Parametri
 `pField`\
-in Campo da confrontare con questo.
+[in] Campo da confrontare con questo.
 
 ## <a name="return-value"></a>Valore restituito
- Se i campi sono uguali, restituisce `S_OK` . Se i campi sono diversi, restituisce `S_FALSE.` in caso contrario, restituisce un codice di errore.
+ Se i campi sono uguali, restituisce `S_OK` . Se i campi sono diversi, restituisce `S_FALSE.` Otherwise, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

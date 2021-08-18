@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Modificare i dati memorizzati nella cache in una cartella di lavoro in un server'
-description: Informazioni su come modificare un set di dati memorizzato nella cache in Microsoft Excel cartella di lavoro senza avviare Excel usando la classe ServerDocument.
+description: Informazioni su come modificare un set di dati memorizzato nella cache in Microsoft Excel cartella di lavoro di Excel usando la classe ServerDocument.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
@@ -20,15 +20,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 03e0a76e71fd7cab0eb66ed3cd468447e9d658a253ab06f09d9e958984435653
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a98370ee84f914b5f556276a6d83d7713246d615
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032095"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Procedura dettagliata: Modificare i dati memorizzati nella cache in una cartella di lavoro in un server
-  Questa procedura dettagliata illustra come modificare un set di dati memorizzato nella cache in una cartella di lavoro Microsoft Office Excel senza avviare Excel usando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe .
+  Questa procedura dettagliata illustra come modificare un set di dati memorizzato nella cache in una cartella Microsoft Office Excel cartella di lavoro di senza Excel utilizzando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe .
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "121384041"
 
  Vengono illustrate le attività seguenti:
 
-- Definizione di un set di dati contenente i dati del database AdventureWorksLT.
+- Definizione di un set di dati che contiene i dati del database AdventureWorksLT.
 
 - Creazione di istanze del set di dati in un progetto Excel cartella di lavoro e in un progetto di applicazione console.
 
@@ -46,7 +46,7 @@ ms.locfileid: "121384041"
 
 - Modifica di una colonna di dati nel set di dati memorizzato nella cache eseguendo il codice nell'applicazione console, senza avviare Excel.
 
-  Sebbene questa procedura dettagliata presupponga che il codice sia in esecuzione nel computer di sviluppo, il codice illustrato in questa procedura dettagliata può essere usato in un server in cui non è installato Excel.
+  Sebbene in questa procedura dettagliata si presupponga che il codice sia in esecuzione nel computer di sviluppo, il codice illustrato in questa procedura dettagliata può essere usato in un server in cui non è installato Excel.
 
 > [!NOTE]
 > Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE Visual Studio .](../ide/personalizing-the-visual-studio-ide.md)
@@ -58,14 +58,14 @@ ms.locfileid: "121384041"
 
 - [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Accesso a un'istanza in Microsoft SQL Server o Microsoft SQL Server Express a cui è collegato il database di esempio AdventureWorksLT. È possibile scaricare il database AdventureWorksLT dal SQL Server [samples GitHub .](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
+- Accesso a un'istanza in Microsoft SQL Server o Microsoft SQL Server Express a cui è collegato il database di esempio AdventureWorksLT. È possibile scaricare il database AdventureWorksLT dal SQL Server [Samples GitHub repo](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
 
-  - Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere Procedura: Collegare un [database (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [Procedura: Collegare un database (SQL Server Management Studio).](/sql/relational-databases/databases/attach-a-database)
 
   - Per collegare un database tramite la riga di comando, vedere [Procedura: Collegare un file di database SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Creare un progetto di libreria di classi che definisce un set di dati
- Per usare lo stesso set di dati in un progetto Excel cartella di lavoro e in un'applicazione console, è necessario definire il set di dati in un assembly separato a cui fanno riferimento entrambi questi progetti. Per questa procedura dettagliata, definire il set di dati in un progetto di libreria di classi.
+ Per usare lo stesso set di dati in un progetto di cartella di lavoro di Excel e in un'applicazione console, è necessario definire il set di dati in un assembly separato a cui fanno riferimento entrambi i progetti. Per questa procedura dettagliata, definire il set di dati in un progetto di libreria di classi.
 
 ### <a name="to-create-the-class-library-project"></a>Per creare il progetto di libreria di classi
 
@@ -73,32 +73,32 @@ ms.locfileid: "121384041"
 
 2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-3. Nel riquadro modelli espandere **Visual C#** o **Visual Basic** e quindi fare clic su **Windows**.
+3. Nel riquadro dei modelli espandere **Visual C#** o **Visual Basic**, quindi fare clic **su Windows**.
 
-4. Nell'elenco dei modelli di progetto selezionare **Libreria di classi**.
+4. Nell'elenco dei modelli di progetto selezionare **Libreria di classi.**
 
-5. Nella casella **Nome** digitare **AdventureWorksDataSet**.
+5. Nella **casella Nome** digitare **AdventureWorksDataSet**.
 
-6. Fare clic su **Sfoglia,** passare alla cartella *%UserProfile%\Documenti* (per Windows XP e versioni precedenti) o *%UserProfile%\Documents* (per Windows Vista) e quindi fare clic su **Seleziona cartella**.
+6. Fare clic su Sfoglia , passare alla cartella *%UserProfile%\Documenti* (per Windows XP e versioni precedenti) o alla cartella *%UserProfile%\Documents* (per Windows Vista) e quindi fare clic su **Seleziona cartella**.
 
-7. Nella finestra **di dialogo Project** verificare che la casella di controllo Crea **directory** per soluzione non sia selezionata.
+7. Nella finestra **di Project** nuova directory verificare che la casella di controllo **Crea directory** per soluzione non sia selezionata.
 
 8. Fare clic su **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]aggiunge il **progetto AdventureWorksDataSet** **Esplora soluzioni** e apre il file di codice **Class1.cs** o **Class1.vb.**
 
-9. In **Esplora soluzioni** fare clic con il pulsante destro del mouse **su Class1.cs** **o Class1.vb** e quindi scegliere **Elimina**. Questo file non è necessario per questa procedura dettagliata.
+9. In **Esplora soluzioni** fare clic con il pulsante destro **del mouse su Class1.cs** o **Class1.vb** e quindi scegliere **Elimina.** Questo file non è necessario per questa procedura dettagliata.
 
-## <a name="define-a-dataset-in-the-class-library-project"></a>Definire un set di dati nel progetto di libreria di classi
+## <a name="define-a-dataset-in-the-class-library-project"></a>Definire un set di dati nel progetto libreria di classi
  Definire un set di dati tipizzato contenente i dati del database AdventureWorksLT per SQL Server 2005. Più avanti in questa procedura dettagliata si farà riferimento a questo set di dati da un progetto Excel cartella di lavoro e da un progetto di applicazione console.
 
- Il set di *dati è un set di* dati tipizzato che rappresenta i dati nella tabella Product del database AdventureWorksLT. Per altre informazioni sui set di dati tipizzati, vedere Strumenti per set di [dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+ Il set di dati *è un set di* dati tipizzato che rappresenta i dati nella tabella Product del database AdventureWorksLT. Per altre informazioni sui set di dati tipizzati, vedere [Strumenti per i set](../data-tools/dataset-tools-in-visual-studio.md)di dati in Visual Studio .
 
-### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Per definire un set di dati tipizzato nel progetto di libreria di classi
+### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Per definire un set di dati tipizzato nel progetto libreria di classi
 
 1. In **Esplora soluzioni** fare clic sul **progetto AdventureWorksDataSet.**
 
-2. Se la **finestra Origini** dati non è visibile, visualizzarla da sulla barra dei menu, scegliendo Visualizza Windows  >    >  **origini dati**.
+2. Se la **finestra Origini** dati non è visibile, visualizzarla scegliendo Visualizza altre origini Windows  >    >  **dati.**
 
 3. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -110,7 +110,7 @@ ms.locfileid: "121384041"
 
 6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** scegliere **Avanti**.
 
-7. Nella pagina **Scegli oggetti di database** espandere **Tabelle** e selezionare **Prodotto (SalesLT).**
+7. Nella pagina **Scelta oggetti di database** espandere **Tabelle** e selezionare **Prodotto (SalesLT).**
 
 8. Fare clic su **Fine**.
 
@@ -118,28 +118,28 @@ ms.locfileid: "121384041"
 
    - Un set di dati tipizzato denominato `AdventureWorksLTDataSet`. Questo set di dati rappresenta il contenuto della tabella Product nel database AdventureWorksLT.
 
-   - Oggetto TableAdapter denominato `ProductTableAdapter` . Questo TableAdapter può essere usato per leggere e scrivere dati in `AdventureWorksLTDataSet` . Per altre informazioni, vedere [Panoramica di TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
+   - Oggetto TableAdapter denominato `ProductTableAdapter` . Questo TableAdapter può essere utilizzato per leggere e scrivere dati in `AdventureWorksLTDataSet` . Per altre informazioni, vedere [Cenni preliminari sugli oggetti TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
 
      Si useranno entrambi gli oggetti più avanti in questa procedura dettagliata.
 
-9. In **Esplora soluzioni** fare clic con il pulsante destro del mouse **su AdventureWorksDataSet** e scegliere **Compila**.
+9. In **Esplora soluzioni** fare clic con il pulsante destro del mouse **su AdventureWorksDataSet** e scegliere **Compila.**
 
      Verificare che il progetto venga compilato senza errori.
 
 ## <a name="create-an-excel-workbook-project"></a>Creare un progetto Excel cartella di lavoro
- Creare un Excel di cartella di lavoro per l'interfaccia ai dati. Più avanti in questa procedura dettagliata si creerà un oggetto che visualizza i dati e si aggiungerà un'istanza del set di dati alla cache dei dati <xref:Microsoft.Office.Tools.Excel.ListObject> nella cartella di lavoro.
+ Creare un Excel cartella di lavoro per l'interfaccia per i dati. Più avanti in questa procedura dettagliata si creerà un oggetto che visualizza i dati e si aggiungerà un'istanza del set di dati alla cache dei dati <xref:Microsoft.Office.Tools.Excel.ListObject> nella cartella di lavoro.
 
 ### <a name="to-create-the-excel-workbook-project"></a>Per creare il progetto Excel cartella di lavoro
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla **soluzione AdventureWorksDataSet,** scegliere Aggiungi e quindi fare clic su Nuovo **Project**. 
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione **AdventureWorksDataSet,** scegliere Aggiungi **e** quindi fare clic su **Project**.
 
-2. Nel riquadro modelli espandere **Visual C#** o **Visual Basic** e quindi espandere **Office**.
+2. Nel riquadro dei modelli espandere **Visual C#** o **Visual Basic**, quindi espandere **Office**.
 
-3. Nel nodo **Office** nodo espanso selezionare il **nodo 2010.**
+3. Nel nodo **Office** espanso selezionare il **nodo 2010.**
 
-4. Nell'elenco dei modelli di progetto selezionare il Excel cartella di lavoro.
+4. Nell'elenco dei modelli di progetto selezionare il progetto Excel cartella di lavoro.
 
-5. Nella casella **Nome** digitare **AdventureWorksReport**. Non modificare il percorso.
+5. Nella **casella Nome** digitare **AdventureWorksReport**. Non modificare il percorso.
 
 6. Fare clic su **OK**.
 
@@ -150,36 +150,36 @@ ms.locfileid: "121384041"
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre la **cartella di lavoro AdventureWorksReport** nella finestra di progettazione e aggiunge il **progetto AdventureWorksReport** **Esplora soluzioni**.
 
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Aggiungere il set di dati alle origini dati nel progetto Excel cartella di lavoro
- Prima di poter visualizzare il set di dati nella cartella Excel, è necessario aggiungere il set di dati alle origini dati nel progetto Excel cartella di lavoro.
+ Prima di poter visualizzare il set di dati nella cartella di lavoro Excel, è necessario aggiungere il set di dati alle origini dati nel progetto Excel cartella di lavoro.
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Per aggiungere il set di dati alle origini dati nel progetto Excel cartella di lavoro
 
 1. In **Esplora soluzioni** fare doppio clic su **Sheet1.cs** o **Sheet1.vb** nel **progetto AdventureWorksReport.**
 
-     La cartella di lavoro viene aperta nella finestra di progettazione.
+     La cartella di lavoro verrà aperta nella finestra di progettazione.
 
 2. Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
 
      Verrà **visualizzata la Configurazione guidata origine** dati.
 
-3. Fare **clic su Oggetto** e quindi su **Avanti.**
+3. Fare **clic su** Oggetto e quindi su **Avanti.**
 
 4. Nella pagina **Selezionare l'oggetto a cui si vuole eseguire l'associazione** fare clic **su Aggiungi riferimento**.
 
 5. Nella scheda **Progetti** fare clic su **AdventureWorksDataSet** e quindi su **OK.**
 
-6. Nello spazio **dei nomi AdventureWorksDataSet** dell'assembly **AdventureWorksDataSet** fare clic **su AdventureWorksLTDataSet** e quindi su **Fine.**
+6. Nello spazio **dei nomi AdventureWorksDataSet** dell'assembly **AdventureWorksDataSet** fare clic su **AdventureWorksLTDataSet** e quindi su **Fine.**
 
-     Verrà **visualizzata la finestra** Origini dati e **AdventureWorksLTDataSet** verrà aggiunto all'elenco di origini dati.
+     Verrà **visualizzata la** finestra Origini dati e **AdventureWorksLTDataSet** verrà aggiunto all'elenco delle origini dati.
 
-## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Creare un oggetto ListObject associato a un'istanza del set di dati
- Per visualizzare il set di dati nella cartella di lavoro, <xref:Microsoft.Office.Tools.Excel.ListObject> creare un oggetto associato a un'istanza del set di dati. Per altre informazioni sull'associazione di controlli ai dati, vedere [Associare dati](../vsto/binding-data-to-controls-in-office-solutions.md)ai controlli in Office soluzioni .
+## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Creare un ListObject associato a un'istanza del set di dati
+ Per visualizzare il set di dati nella cartella di lavoro, <xref:Microsoft.Office.Tools.Excel.ListObject> creare un oggetto associato a un'istanza del set di dati. Per altre informazioni sull'associazione di controlli ai dati, vedere [Associare dati a controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
 
-### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Per creare un oggetto ListObject associato a un'istanza del set di dati
+### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Per creare un Oggetto ListObject associato a un'istanza del set di dati
 
 1. Nella finestra **Origini dati** espandere il **nodo AdventureWorksLTDataSet** in **AdventureWorksDataSet**.
 
-2. Selezionare il **nodo Product,** fare clic sulla freccia a discesa visualizzata e **selezionare ListObject** nell'elenco a discesa.
+2. Selezionare il **nodo Product,** fare clic sulla freccia a discesa visualizzata e selezionare **ListObject** nell'elenco a discesa.
 
      Se la freccia a discesa non viene visualizzata, verificare che la cartella di lavoro sia aperta nella finestra di progettazione.
 
@@ -188,7 +188,7 @@ ms.locfileid: "121384041"
      Nel foglio di lavoro viene creato un controllo denominato <xref:Microsoft.Office.Tools.Excel.ListObject> , a partire dalla cella `productListObject` A1. Allo stesso tempo vengono aggiunti al progetto un oggetto del set di dati denominato `adventureWorksLTDataSet` e un oggetto <xref:System.Windows.Forms.BindingSource> denominato `productBindingSource` . <xref:Microsoft.Office.Tools.Excel.ListObject> è associato a <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato all'oggetto del set di dati.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>Aggiungere il set di dati alla cache dei dati
- Per consentire al codice esterno al Excel di lavoro di accedere al set di dati nella cartella di lavoro, è necessario aggiungere il set di dati alla cache dei dati. Per altre informazioni sulla cache dei dati, vedere [Cached data in document-level customizations (Dati](../vsto/cached-data-in-document-level-customizations.md) memorizzati nella cache nelle personalizzazioni a livello di documento) e [Cache data (Memorizzare i dati nella cache).](../vsto/caching-data.md)
+ Per consentire al codice esterno al Excel di lavoro di accedere al set di dati nella cartella di lavoro, è necessario aggiungere il set di dati alla cache dei dati. Per altre informazioni sulla cache dei dati, vedere [Cached data in document-level customizations (Dati](../vsto/cached-data-in-document-level-customizations.md) memorizzati nella cache nelle personalizzazioni a livello di documento) e [Cache data (Dati della cache).](../vsto/caching-data.md)
 
 ### <a name="to-add-the-dataset-to-the-data-cache"></a>Per aggiungere il set di dati alla cache dei dati
 
@@ -232,7 +232,7 @@ ms.locfileid: "121384041"
 
 ### <a name="to-create-the-console-application-project"></a>Per creare il progetto di applicazione console
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione **AdventureWorksDataSet,** scegliere Aggiungi **e** quindi fare clic su **Nuovo Project**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione **AdventureWorksDataSet,** scegliere Aggiungi **e** quindi fare clic su **Project**.
 
 2. Nel riquadro **Project tipi espandere** **Visual C#** o **Visual Basic** e quindi fare clic su **Windows**.
 

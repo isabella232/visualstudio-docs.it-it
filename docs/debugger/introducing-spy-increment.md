@@ -1,6 +1,6 @@
 ---
-title: Introduzione a Spy + + | Microsoft Docs
-description: Vedere lo strumento di debug di Spy + +. Visualizza un albero grafico delle relazioni tra oggetti di sistema. Ottiene le proprietà per le finestre, i thread, i processi o i messaggi selezionati.
+title: Introduzione a Spy++ | Microsoft Docs
+description: Informazioni sullo strumento di debug Di Spy++. Visualizzare un albero grafico delle relazioni tra oggetti di sistema. Ottiene le proprietà per finestre, thread, processi o messaggi selezionati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: eefc69d7dbd7d05eaadc3e9fe8976c0ff03c9a30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ab19d666bf02d1c9c9d764ed1c18d097a3f8935
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138913"
 ---
 # <a name="introducing-spy"></a>Introduzione a Spy++
 Spy++ consente di eseguire le attività seguenti:
@@ -32,7 +33,7 @@ Spy++ consente di eseguire le attività seguenti:
 
 - Usare lo [strumento di ricerca](../debugger/how-to-use-the-finder-tool.md) per selezionare una finestra tramite posizionamento del puntatore del mouse.
 
-- Impostare l' [opzione Message](../debugger/how-to-open-messages-view-from-find-window.md) utilizzando parametri di selezione del log dei messaggi complessi.
+- Impostare [l'opzione message](../debugger/how-to-open-messages-view-from-find-window.md) usando parametri di selezione del log dei messaggi complessi.
 
   In Spy++ sono disponibili una barra degli strumenti e collegamenti ipertestuali che consentono un uso più rapido. Sono inoltre presenti un comando **Aggiorna** per aggiornare la visualizzazione attiva, uno **strumento di ricerca finestre** per facilitare il controllo e una finestra di dialogo **Tipo di carattere** per personalizzare le finestre di visualizzazione. Inoltre, Spy++ consente di salvare e ripristinare le preferenze dell'utente.
 
@@ -42,7 +43,7 @@ Spy++ consente di eseguire le attività seguenti:
 > Sono disponibili altre due utilità simili a Spy++, ossia PView, che mostra i dettagli relativi a processi e thread, e DDESPY.EXE, che consente di monitorare i messaggi di DDE (Dynamic Data Exchange).
 
 ## <a name="64-bit-operating-systems"></a>Sistemi operativi a 64 bit
- Sono disponibili due versioni di Spy++. La prima, denominata Spy++ (spyxx.exe), è stata progettata per visualizzare i messaggi inviati a una finestra in esecuzione in un processo a 32 bit. Ad esempio, Visual Studio viene eseguito in un processo a 32 bit. Pertanto, è possibile usare Spy++ per visualizzare i messaggi inviati a **Esplora soluzioni**. Poiché la configurazione predefinita per la maggior parte delle compilazioni in Visual Studio prevede l'esecuzione in un processo a 32 bit, questa prima versione di Spy + + è quella disponibile nel menu **strumenti** di Visual Studio, se [sono installati i componenti richiesti](../debugger/how-to-start-spy-increment.md).
+ Sono disponibili due versioni di Spy++. La prima, denominata Spy++ (spyxx.exe), è stata progettata per visualizzare i messaggi inviati a una finestra in esecuzione in un processo a 32 bit. Ad esempio, Visual Studio viene eseguito in un processo a 32 bit. Pertanto, è possibile usare Spy++ per visualizzare i messaggi inviati a **Esplora soluzioni**. Poiché la configurazione predefinita per la maggior parte delle compilazioni in Visual Studio è l'esecuzione in un processo a 32 bit, questa prima versione di Spy++ è quella disponibile nel **menu** Strumenti in Visual Studio, se sono installati i componenti [necessari.](../debugger/how-to-start-spy-increment.md)
 
  La seconda versione, denominata Spy++ (64 bit) (spyxx_amd64.exe), è stata progettata per visualizzare i messaggi inviati a una finestra in esecuzione in un processo a 64 bit. Ad esempio, in un sistema operativo a 64 bit, il Blocco note viene eseguito in un processo a 64 bit. Pertanto, è possibile usare Spy++ (64 bit) per visualizzare i messaggi inviati al Blocco note. Spy++ (64 bit) si trova in genere in
 

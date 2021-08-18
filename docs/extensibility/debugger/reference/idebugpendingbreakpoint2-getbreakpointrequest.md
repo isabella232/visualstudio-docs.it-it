@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e148cc38b01449c6544c805eb0c500b8398f3238f4a77e3bb0ef36aa5cceabaa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dc4a783e1d2750bee582d8ce2e27d782c736577c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339138"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043024"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Ottiene la richiesta del punto di interruzione utilizzata per creare questo punto di interruzione in sospeso.

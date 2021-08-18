@@ -6,29 +6,30 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 836c77f3651b7686e9366fe75ea7922a248fd28f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8f62d78e573f0fa2379fb3c36e91f0db971b8270
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389631"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061376"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controllo delle proprietà Color, Line Style e altre
 
-Alcune proprietà della forma, ad esempio il colore, possono essere "esposte". Ciò significa che le proprietà possono essere collegate a una proprietà di dominio della forma. Altri devono essere controllati direttamente.
+Alcune proprietà della forma, ad esempio il colore, possono essere "esposte". In altre informazioni, le proprietà possono essere collegate a una proprietà di dominio della forma. Altri devono essere controllati direttamente.
 
 ## <a name="exposing-a-property"></a>Esposizione di una proprietà
  Alcune proprietà della forma, ad esempio il colore, possono essere collegate al valore di una proprietà di dominio.
 
- Nella definizione DSL selezionare una forma, un connettore o una classe diagramma. Nel menu di scelta rapida scegliere **Aggiungi** esposto e quindi scegliere la proprietà desiderata, ad esempio Colore riempimento.
+ Nella definizione DSL selezionare una forma, un connettore o una classe di diagramma. Nel menu di scelta rapida scegliere **Aggiungi** esposto e quindi scegliere la proprietà desiderata, ad esempio Colore riempimento.
 
- La forma ha ora una proprietà di dominio che è possibile impostare nel codice programma o come utente.
+ La forma dispone ora di una proprietà di dominio che è possibile impostare nel codice del programma o come utente.
 
 ## <a name="dynamically-updating-an-exposed-property"></a>Aggiornamento dinamico di una proprietà esposta
- In genere si vuole rendere la proprietà esposta dipendente da un'altra proprietà. Ad esempio, è possibile che una forma venga impostata in rosso ogni volta che una determinata proprietà di dominio è minore di zero. Per creare questa dipendenza, creare una [regola](../modeling/rules-propagate-changes-within-the-model.md). Ad esempio:
+ In genere si vuole rendere la proprietà esposta dipendente da un'altra proprietà. Ad esempio, può essere necessario che una forma si trasformi in rosso ogni volta che una determinata proprietà di dominio è minore di zero. Per creare questa dipendenza, creare una [regola](../modeling/rules-propagate-changes-within-the-model.md). Ad esempio:
 
 ```csharp
 using System;

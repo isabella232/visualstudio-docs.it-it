@@ -1,5 +1,5 @@
 ---
-description: Recupera la versione System. Runtime. InteropServices. ComTypes. IEnumVARIANT dell'enumeratore Segments.
+description: Recupera la versione System.Runtime.InteropServices.ComTypes.IEnumVARIANT dell'enumeratore segments.
 title: IDiaEnumSegments::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 504505fa-b35c-402f-a440-8972c589cc5b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ea354ae25c1dc822640d3f9cf2c7d0c9c7f3a8fd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 290f97a34b1564deda79df7976edaf9b95abc953
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044662"
 ---
 # <a name="idiaenumsegmentsget__newenum"></a>IDiaEnumSegments::get__NewEnum
-Recupera la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
+Recupera la versione <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> di questo enumeratore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get__NewEnum (
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-out Restituisce l' `IUnknown` interfaccia che rappresenta la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
+[out] Restituisce `IUnknown` l'interfaccia che rappresenta la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione di questo enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

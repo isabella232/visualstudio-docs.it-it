@@ -1,6 +1,6 @@
 ---
-title: Scoprire chi sta passando un valore di parametro errato | Microsoft Docs
-description: È possibile individuare il codice che chiama la funzione e passare un valore di parametro non corretto. Informazioni su come usare un punto di interruzione condizionale a tale scopo.
+title: Scoprire chi passa un valore di parametro errato | Microsoft Docs
+description: È possibile individuare il codice che chiama la funzione e passare un valore di parametro non corretto. Informazioni su come usare un punto di interruzione condizionale per eseguire questa operazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7f361905fa87630c2db2a8371975c056d8211548262fb551f6d1129d278f0d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 41f175caaf2f3e9dc4bc0843fa9d2f3a10bb1767
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453945"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043986"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Come è possibile individuare chi passa un valore di parametro errato?
 ## <a name="problem-description"></a>Descrizione del problema
@@ -43,7 +43,7 @@ ms.locfileid: "121453945"
 
 2. Fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere **Condizione**.
 
-3. Nella finestra di dialogo **Condizione punto di interruzione** selezionare la casella di controllo **Condizione**. Vedere [Punti di interruzione avanzati](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+3. Nella finestra di dialogo **Condizione punto di interruzione** selezionare la casella di controllo **Condizione**. Vedere [Punti di interruzione avanzati.](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)
 
 4. Nella casella di testo immettere un'espressione, ad esempio `Var==3`, in cui `Var` è il nome del parametro che contiene il valore errato e `3` il valore errato passato.
 

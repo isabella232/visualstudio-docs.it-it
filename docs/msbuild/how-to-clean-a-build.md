@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Pulire una compilazione | Microsoft Docs'
-description: Informazioni su come usare MSBuild per pulire una compilazione, eliminando tutti i file intermedi e di output e lasciando solo i file di progetto e componente.
+description: Informazioni su come usare MSBuild una compilazione, eliminando tutti i file intermedi e di output e lasciando solo i file di progetto e componente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bce5eab808fbc4a4283212dc440e19a95a31fe94fb6c5aa5fd799fba7e2f92c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6b10eb89a5ad833c2f2bac09af68ac500dacfe58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137093"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
 

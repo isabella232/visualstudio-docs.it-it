@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c39a53fe2462b0e516d10ba4ab68cf2c6f6f6fab9911364649596e6b705b45
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ee92f235bc973d0929e89ceae8d24f8ca77b9865
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042374"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 Lo Visual Studio Image Library Viewer può caricare ed eseguire ricerche nei manifesti delle immagini, consentendo all'utente di modificarli nello Visual Studio stesso. L'utente può modificare sfondo, dimensioni, DPI, contrasto elevato e altre impostazioni. Lo strumento visualizza anche le informazioni di caricamento per ogni manifesto dell'immagine e le informazioni sull'origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:
@@ -86,7 +86,7 @@ Lo Visual Studio Image Library Viewer può caricare ed eseguire ricerche nei man
 </Image>
 ```
 
- Alcuni simboli sono predefiniti per tutti i manifesti. Possono essere usati nell'attributo Uri dell'elemento o per fare riferimento \<Source> ai percorsi nel computer \<Import> locale.
+ Alcuni simboli sono predefiniti per tutti i manifesti. Possono essere usati nell'attributo Uri \<Source> dell'elemento o per fare riferimento ai percorsi nel computer \<Import> locale.
 
 |**Simbolo**|**Descrizione**|
 |-|-|
@@ -129,7 +129,7 @@ Lo Visual Studio Image Library Viewer può caricare ed eseguire ricerche nei man
 
 |**Attributo**|**Definition**|
 |-|-|
-|Uri|[Obbligatorio] URI che definisce la posizione da cui è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> - URI [di tipo pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) che usa l application:/// autorità<br /><br /> - Riferimento assoluto alle risorse del componente<br /><br /> - Percorso di un file contenente una risorsa nativa|
+|Uri|[Obbligatorio] URI che definisce la posizione da cui è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> - URI [di tipo pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) che usa l application:/// autorità<br /><br /> - Riferimento alla risorsa componente assoluto<br /><br /> - Percorso di un file contenente una risorsa nativa|
 |Sfondo|[Facoltativo] Indica quale tipo di sfondo deve essere usato dall'origine.<br /><br /> I possibili valori sono i seguenti:<br /><br /> - *Chiaro:* la sorgente può essere usata su uno sfondo chiaro.<br /><br /> - *Scuro:* l'origine può essere usata su uno sfondo scuro.<br /><br /> - *HighContrast:* l'origine può essere usata in qualsiasi background in Contrasto elevato modalità.<br /><br /> - *HighContrastLight:* l'origine può essere usata su uno sfondo chiaro Contrasto elevato modalità.<br /><br /> -*HighContrastDark:* l'origine può essere usata su uno sfondo scuro in Contrasto elevato predefinita.<br /><br /> Se **l'attributo Background** viene omesso, l'origine può essere usata in qualsiasi sfondo.<br /><br /> Se **Background** è *Light,* *Dark,* *HighContrastLight* o *HighContrastDark,* i colori dell'origine non vengono mai invertiti. Se **Background** viene omesso o impostato su *HighContrast,* l'inversione dei colori dell'origine è controllata dall'attributo **AllowColorInversion** dell'immagine.|
 
  Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi seguenti:
@@ -202,7 +202,7 @@ Lo Visual Studio Image Library Viewer può caricare ed eseguire ricerche nei man
 
  **Ricerca del catalogo immagini KnownMonikers**
 
- Per ottenere una corrispondenza Visual Studio stile, un'estensione Visual Studio può usare immagini nel catalogo immagini Visual Studio anziché creare e usare le proprie. Questo ha il vantaggio di non dover mantenere tali immagini e garantisce che l'immagine avrà un'immagine di supporto con valori DPI elevati, quindi dovrebbe essere corretta in tutte le impostazioni DPI supportate da Visual Studio.
+ Per ottenere una corrispondenza Visual Studio stile, un'estensione Visual Studio può usare immagini nel Catalogo immagini Visual Studio anziché creare e usare immagini proprie. Questo ha il vantaggio di non dover mantenere tali immagini e garantisce che l'immagine avrà un'immagine di supporto con valori DPI elevati, quindi dovrebbe essere corretta in tutte le impostazioni DPI supportate da Visual Studio.
 
  Il visualizzatore della libreria di immagini consente di cercare un manifesto in modo che un utente possa trovare il moniker che rappresenta un asset di immagine e usarlo nel codice. Per cercare immagini, immettere il termine di ricerca desiderato nella casella di ricerca e premere INVIO. La barra di stato nella parte inferiore visualizza il numero di corrispondenze trovate tra le immagini totali in tutti i manifesti.
 

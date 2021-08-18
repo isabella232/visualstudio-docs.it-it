@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a97a0566b9210c0b2de74dbd7009136663e5b2b27289e756323ca862e1d379
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2eb3189afe60dbd2f797846afcd404fe487d6fb9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121260072"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124243"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -36,7 +36,7 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
 |![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Proprietà|
 |![Simbolo struttura](../ide/media/vxstruct_icon.gif)|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif)|Campo o variabile|
-|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Evento|
+|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
 |![Simbolo di enumerazione](../ide/media/vxenum_icon.gif)|Enumerazione|![Icona Costante](../ide/media/vxconstant_icon.gif)|Costante|
 |![Simbolo definizione dei tipi](../ide/media/vxtypedef_icon.gif)|TypeDef|![Simbolo di enumerazione elementi](../ide/media/vxenumitem_icon.gif)|Elemento di enumerazione|
 |![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Modulo|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|
@@ -47,9 +47,9 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |![Simbolo Inoltro dei tipi](../ide/media/ob_type_forward.gif)|Inoltro del tipo|||
 
 > [!TIP]
-> Per visualizzare al meglio le icone in questa pagina, assicurarsi che il tema Microsoft Docs sia impostato su **Chiaro**. È possibile attivare o disattivare questo tema colori dal controllo che si trova nella parte inferiore sinistra della pagina, come illustrato nello screenshot seguente:
+> Per visualizzare al meglio le icone in questa pagina, assicurarsi che il tema Microsoft Docs sia impostato su **Chiaro.** È possibile attivare o disattivare questo tema colori dal controllo che si trova nella parte inferiore sinistra della pagina, come illustrato nello screenshot seguente:
 >
-> ![Tema Docs](../ide/media/toggle-docs-color-theme.png "Attivare o disattivare il tema dei colori Microsoft Docs pagine")
+> ![Tema docs](../ide/media/toggle-docs-color-theme.png "Attivare o disattivare il tema colori Microsoft Docs pagine")
 
 ## <a name="signal-icons"></a>Icone di segnalazione
 
@@ -68,7 +68,7 @@ Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne 
 > Se il progetto è incluso in un database di controllo del codice sorgente potrebbero essere visualizzate altre icone di segnalazione per indicare lo stato di controllo del codice sorgente, ad esempio se il codice è stato archiviato o estratto.
 
 > [!TIP]
-> Per visualizzare altre immagini e icone dell'applicazione visualizzate in Visual Studio, scaricare Visual Studio [**Image Library.**](https://www.microsoft.com/download/details.aspx?id=35825)
+> Per visualizzare altre immagini e icone dell'applicazione visualizzate in Visual Studio, scaricare la raccolta Visual Studio [**immagini.**](https://www.microsoft.com/download/details.aspx?id=35825)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76e38ea4f709c7fac0e36eed0a2178e3b16edb231ef74512732fcde7e1d3ffd6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ce19d388dcf01b9766bc10d645d47750ee24cfb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064103"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 Invia la stringa di messaggio specificata alla finestra di output del debugger.

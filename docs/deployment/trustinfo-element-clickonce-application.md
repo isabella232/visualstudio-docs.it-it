@@ -1,5 +1,5 @@
 ---
-title: '&lt;&gt;elemento trustInfo (applicazione ClickOnce) | Microsoft Docs'
+title: '&lt;Elemento trustInfo &gt; (ClickOnce app) | Microsoft Docs'
 description: L'elemento trustInfo descrive le autorizzazioni di sicurezza minime necessarie per l'esecuzione dell'applicazione nel computer client. L'elemento trustInfo è obbligatorio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -22,14 +22,15 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc3d08921100d05bea77e22bbec4659862b90143
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945019"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120686"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (applicazione ClickOnce)
 Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'applicazione nel computer client.
@@ -89,7 +90,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
      Obbligatorio. Identifica la versione dell'autorizzazione. In genere questo valore è `1`.
 
 ## <a name="ipermission"></a>IPermission
- facoltativo. Questo elemento è figlio dell'elemento `PermissionSet` . L' `IPermission` elemento identifica in modo completo una classe di autorizzazioni nel .NET Framework. L'elemento `IPermission` ha gli attributi seguenti, ma può avere attributi aggiuntivi che corrispondono alle proprietà della classe di autorizzazioni. Per scoprire la sintassi di un'autorizzazione specifica, vedere gli esempi elencati nel file Security.config.
+ facoltativo. Questo elemento è figlio dell'elemento `PermissionSet` . `IPermission`L'elemento identifica completamente una classe di autorizzazione nel .NET Framework. L'elemento `IPermission` ha gli attributi seguenti, ma può avere attributi aggiuntivi che corrispondono alle proprietà della classe di autorizzazioni. Per scoprire la sintassi di un'autorizzazione specifica, vedere gli esempi elencati nel file Security.config.
 
 - `class`
 
@@ -163,7 +164,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 
  Tutte le autorizzazioni richieste mediante `defaultAssemblyRequest` e `assemblyRequest` verranno concesse senza chiedere all'utente se il manifesto di distribuzione ha una licenza di attendibilità valida.
 
- Per ulteriori informazioni sull'elevazione delle autorizzazioni, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
+ Per altre informazioni sull'elevazione delle autorizzazioni, vedere [Protezione ClickOnce applicazioni](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
 ## <a name="examples"></a>Esempio
  I seguenti tre esempi di codice descrivono gli elementi `trustInfo` per le aree di sicurezza denominate predefinite, ovvero Internet, LocalIntranet e FullTrust, per l'uso in un manifesto dell'applicazione di distribuzione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -271,4 +272,4 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

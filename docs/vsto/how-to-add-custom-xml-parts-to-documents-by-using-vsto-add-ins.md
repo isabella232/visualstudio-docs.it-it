@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9df71329ecf3058b3dd9cf9d9dfa86e6eae43888ae4c5b782c9e229753e6a594
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 84e769cd1d841a5116750963dcee4c0cb1186bf4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268274"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046958"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Procedura: Aggiungere parti XML personalizzate ai documenti usando VSTO componenti aggiuntivi
   È possibile archiviare dati XML nei tipi seguenti di documenti creando una parte XML personalizzata in un componente aggiuntivo VSTO:
@@ -40,7 +40,7 @@ ms.locfileid: "121268274"
 
   Per altre informazioni, vedere [Panoramica delle parti XML personalizzate.](../vsto/custom-xml-parts-overview.md)
 
-  **Si applica a:** le informazioni contenute in questo argomento si applicano ai progetti a livello di applicazione per Excel, PowerPoint e Word. Per altre informazioni, vedere [Funzionalità disponibili per Office e tipo di progetto](../vsto/features-available-by-office-application-and-project-type.md).
+  **Si applica a:** le informazioni contenute in questo argomento si applicano ai progetti a livello di applicazione per Excel, PowerPoint e Word. Per altre informazioni, vedere [Funzionalità disponibili per l'applicazione Office tipo di progetto](../vsto/features-available-by-office-application-and-project-type.md)e .
 
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Per aggiungere una parte XML personalizzata a una cartella di lavoro di Excel
 
@@ -70,7 +70,7 @@ ms.locfileid: "121268274"
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Per aggiungere una parte XML personalizzata a una presentazione di PowerPoint
 
-1. Aggiungere un nuovo <xref:Microsoft.Office.Core.CustomXMLPart> oggetto al [file Microsoft.Office. Interoperabilità. PowerPoint._Presentation.CustomXMLParts nella](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) presentazione. L'oggetto <xref:Microsoft.Office.Core.CustomXMLPart> contiene la stringa XML che si vuole memorizzare nella presentazione.
+1. Aggiungere un nuovo <xref:Microsoft.Office.Core.CustomXMLPart> oggetto al [file Microsoft.Office. Interoperabilità. PowerPoint._Presentation.CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) nella presentazione. L'oggetto <xref:Microsoft.Office.Core.CustomXMLPart> contiene la stringa XML che si vuole memorizzare nella presentazione.
 
      Nell'esempio di codice seguente una parte XML personalizzata viene aggiunta a una presentazione specificata.
 

@@ -1,6 +1,6 @@
 ---
 title: Impostare il tema Visual Studio scuro e modificare i colori del testo
-description: Informazioni su come modificare il tema Visual Studio colore predefinito in modalità scura e modificare i colori del carattere nell'editor di codice.
+description: Informazioni su come modificare l'impostazione Visual Studio tema colori in modalità scura e modificare i colori dei caratteri nell'editor di codice.
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperf-fy21q1
@@ -10,36 +10,36 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 731f253fbfa80bcfe423230a4d6d7dce189450bc7fc5d7a02eb0a339d9af6366
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 945a2e1c7650e43afa9d9e0562371545ca09746d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137223"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Procedura: Personalizzare l'IDE Visual Studio e l'editor
 
-In questo articolo di procedura verrà personalizzato il tema Visual Studio colore dal tema blu predefinito al tema scuro. Verranno quindi personalizzati i colori per due diversi tipi di testo nell'editor di codice.
+In questo articolo di procedura verrà personalizzato il tema Visual Studio dal tema blu predefinito al tema scuro. Verranno quindi personalizzati i colori per due diversi tipi di testo nell'editor di codice.
 
 ::: moniker range="vs-2017"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
-## <a name="set-the-color-theme-for-the-ide"></a>Impostare il tema dei colori per l'IDE
+## <a name="set-the-color-theme-for-the-ide"></a>Impostare il tema colori per l'IDE
 
 Il tema colori predefinito per l'interfaccia utente di Visual Studio è denominato **Blu**. Per questa esercitazione verrà cambiato in **Scuro**.
 
 1. Nella barra dei menu, ovvero la riga dei menu con **File** e **Modifica**, scegliere **Strumenti** > **Opzioni**.
 
-1. Nella pagina **delle**  >  **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
+1. Nella pagina **delle**  >  **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
 
    Il tema colori per l'intero ambiente di sviluppo di Visual Studio (IDE) diventa **scuro**.
 
@@ -58,14 +58,14 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> È possibile installare temi predefiniti aggiuntivi installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo aver installato questo strumento, nell'elenco a discesa Tema colore vengono visualizzati altri temi di colore. 
+> È possibile installare temi predefiniti aggiuntivi installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo aver installato questo strumento, nell'elenco a discesa Tema colori vengono visualizzati temi colori aggiuntivi. 
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> È possibile creare temi personalizzati installando Visual Studio **Color Theme Designer** da Visual Studio [Marketplace.](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)
+> È possibile creare temi personalizzati installando la finestra Visual Studio **Color Theme Designer (Progettazione** temi colori) [Visual Studio Marketplace.](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 
 Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di tutto, creare un nuovo file XML per visualizzare i colori predefiniti.
 
-1. Dalla barra dei menu scegliere **File**  >  **nuovo**  >  **file**.
+1. Dalla barra dei menu scegliere **File**  >  **Nuovo**  >  **file.**
 
 1. Nella finestra di dialogo **Nuovo file**, nella categoria **Generale**, scegliere **File XML** e quindi scegliere **Apri**.
 
@@ -113,7 +113,7 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
 1. In **Ambiente** scegliere la categoria **Tipi di carattere e colori**.
 
-   Si noti che il testo in **Mostra impostazioni per** indica Editor di **testo.** &mdash; Espandere l'elenco a discesa per visualizzare l'elenco completo delle posizioni in cui è possibile personalizzare i tipi di carattere e il colore del testo.
+   Si noti che il testo in **Mostra impostazioni per** indica Editor **di** &mdash; testo. Espandere l'elenco a discesa per visualizzare l'elenco completo delle posizioni in cui è possibile personalizzare i tipi di carattere e il colore del testo.
 
 1. Per modificare il colore del testo dei numeri di riga, in **Elementi visualizzati** scegliere **Numero di riga**. Nella casella **Primo piano elemento** scegliere **Verde oliva**.
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd021ab15e7318a36fb7e41dd6f4f24ccaeebf0226b9a9ac76d0394d09a5349d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 97caa4f5677ec9357db1a0756f96cd37476ef66c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395896"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054444"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -70,7 +70,7 @@ Per cambiare l'ambiente attivo, fare clic con il pulsante destro del mouse sull'
 
 ## <a name="project-templates"></a>Modelli di progetto
 
-In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu File Nuovo Project o fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere Aggiungi nuovo Project , che visualizza la finestra di dialogo Nuovo Project riportata di  >    >      >   **seguito.** Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il **nodo**  >  **Python** installato:
+In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu File Nuovo Project o fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere Aggiungi nuovo Project , che visualizzano entrambe la finestra di dialogo Nuovo Project riportata di  >    >      >  seguito.  Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il **nodo**  >  **Python** installato:
 
 ![Finestra di dialogo Nuovo progetto con modelli Python](media/projects-new-project-dialog.png)
 
@@ -124,7 +124,7 @@ La tabella seguente riepiloga i modelli disponibili in Visual Studio 2019 (non t
 
 Per file collegati si intendono i file importati in un progetto, ma che in genere si trovano all'esterno delle cartelle di progetto dell'applicazione. Tali file vengono visualizzati in **Esplora soluzioni** come file normali contraddistinti da un'icona di collegamento sovrapposta: ![icona file collegati](media/projects-linked-file-icon.png)
 
-Questi file collegati vengono specificati nel file con estensione *pyproj* usando l'elemento `<Compile Include="...">`. I file collegati sono impliciti se usano un percorso relativo all'esterno della struttura di directory o espliciti se usano percorsi all'interno Esplora soluzioni **:**
+Questi file collegati vengono specificati nel file con estensione *pyproj* usando l'elemento `<Compile Include="...">`. I file collegati sono impliciti se usano un percorso relativo all'esterno della struttura di directory o espliciti se usano percorsi all'interno di **Esplora soluzioni**:
 
 ```xml
 <Compile Include="..\test2.py">
@@ -161,7 +161,7 @@ I riferimenti alle estensioni indicano in genere le dipendenze tra progetti e ve
 
 Un riferimento a un file con estensione *pyd* consente di abilitare la funzionalità IntelliSense per il modulo generato. Visual Studio carica il file con estensione *pyd* nell'interprete Python e ne esamina tipi e funzioni. Prova inoltre ad analizzare le stringhe di documento relative alle funzioni per offrire il supporto per la firma.
 
-Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non ha alcun effetto sul comportamento in fase di esecuzione, ma alcuni completamenti non sono disponibili fino al completamento dell'analisi.
+Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non ha effetto sul comportamento in fase di esecuzione, ma alcuni completamenti non sono disponibili fino al completamento dell'analisi.
 
 Potrebbe anche essere necessario aggiungere un [percorso di ricerca](search-paths.md) per la cartella che contiene il modulo.
 
