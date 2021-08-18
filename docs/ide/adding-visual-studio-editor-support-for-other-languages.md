@@ -1,6 +1,6 @@
 ---
 title: Aggiungere il supporto di altri linguaggi nell'editor
-description: Informazioni su come l'editor Visual Studio supporta la lettura e lo spostamento tra diversi linguaggi di computer e su come è possibile aggiungere il supporto per altri linguaggi.
+description: Informazioni su come l'editor Visual Studio supporta la lettura e lo spostamento tra linguaggi di computer diversi e come è possibile aggiungere il supporto per altri linguaggi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4933868248da896766d95875dc8e78b2eb56b1052456e55ca086a554cd7296cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3d6436d5e78905075c28c9e42a49262698a9a83f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124269"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Aggiungere il supporto di altri linguaggi all'editor di Visual Studio
 
@@ -109,10 +109,10 @@ In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla 
 |Nome cartella|Descrizione|
 |-----------------|-----------------|
 |\\*\<language name>*|Cartella del linguaggio. Sostituire *\<language name>* con il nome della lingua. ad esempio, *\Matlab*.|
-|*\Syntaxes*|Cartella della grammatica. Contiene i file *json di grammatica* per il linguaggio, ad esempioMatlab.js *in*.|
+|*\Syntaxes*|Cartella della grammatica. Contiene i file *json di grammatica* per la lingua, ad esempioMatlab.js *in*.|
 |*\Snippets*|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|
 
-In Windows% *userprofile%* si risolve nel percorso: *\\ \<user name> c:\Users*. Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
+In Windows% *userprofile%* viene risolto nel *\\ \<user name> percorso: c:\Users*. Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
 
 > [!TIP]
 > Se ci sono file aperti nell'editor, sarà necessario chiuderli e riaprirli per vedere l'evidenziazione della sintassi dopo aver aggiunto le grammatiche TextMate.
@@ -125,4 +125,4 @@ Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMa
 - [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
 - [Procedura dettagliata: Visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)
 - [Codice di esempio: Grammatica TextMate](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/TextmateGrammar)
-- [Codice di esempio: supporto della lingua personalizzata](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)
+- [Codice di esempio: Supporto del linguaggio personalizzato](https://github.com/microsoft/VSSDK-Extensibility-Samples/tree/master/Ook_Language_Integration)

@@ -1,6 +1,6 @@
 ---
 title: Pagina delle proprietà dell'applicazione per app UWP
-description: Informazioni su come usare la pagina Applicazione per specificare le informazioni sull'assembly e sul pacchetto del progetto UWP (Universal Windows Platform) e specificare come destinazione Windows 10 versione.
+description: Informazioni su come usare la pagina Applicazione per specificare l'assembly e il pacchetto del progetto UWP (Universal Windows Platform) e specificare la versione Windows 10 destinazione.
 ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: d63e1a0d7493b4d6f56f826db72c2c328defbaac970d2d6bc18ca8b42b339c92
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 298ccbb112d373255feadfad136255bf367df350
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121430948"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094295"
 ---
 # <a name="application-property-page-uwp-projects"></a>Pagina delle proprietà dell'applicazione (progetti UWP)
 
@@ -39,7 +39,7 @@ Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLan
 
 Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Informazioni sull'assembly** &mdash; Se si sceglie questo pulsante, viene visualizzata [la finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
+**Informazioni sugli assembly** &mdash; Se si sceglie questo pulsante, viene visualizzata [la finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
 
 **Manifesto del pacchetto** &mdash; Se si sceglie questo pulsante, viene aperta la finestra di progettazione del manifesto. Per accedere alla finestra di progettazione del manifesto, è anche possibile scegliere il file _Package.appxmanifest_ in **Esplora soluzioni**. Per altre informazioni, vedere [Configurare un pacchetto con Progettazione manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 

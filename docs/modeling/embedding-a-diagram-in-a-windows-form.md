@@ -1,6 +1,6 @@
 ---
 title: Incorporamento di un diagramma in Windows Form
-description: Informazioni su come incorporare un diagramma DSL in un controllo Windows, visualizzato nella finestra Visual Studio.
+description: Informazioni su come incorporare un diagramma DSL in un controllo Windows, visualizzato nella finestra Visual Studio dati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,16 +10,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a58dba9c6698b46786c665df0262c580b9048c3675a3715787459005405999
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7c8abdb8b3eff82c7dc36ec9be8bb7e9c1be7d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271381"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150573"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Incorporare un diagramma in Windows Form
 
-È possibile incorporare un diagramma DSL in un controllo Windows, che viene visualizzato nella Visual Studio finestra.
+È possibile incorporare un diagramma DSL in Windows, che viene visualizzato nella finestra Visual Studio.
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Incorporare un diagramma DSL in un controllo Windows dati
 

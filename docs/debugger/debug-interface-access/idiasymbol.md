@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fee827b8d955dc86f81d3b8f9e13d7c6b29a4d1f684464c27c2a268d2756cd3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 99b0fdd7526a9d14b8f5d0f937b63c5303c3ace2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420383"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121265"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Descrive le proprietà di un'istanza di simbolo.
@@ -39,49 +39,49 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaSymbol` .
 |Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|Recupera tutti gli elementi figlio del simbolo.|
-|[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Recupera gli elementi figlio del simbolo. Questo metodo è la versione estesa di [IDiaSymbol::findChildren.](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|
+|[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Recupera gli elementi figlio del simbolo. Questo metodo è la versione estesa di [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).|
 |[IDiaSymbol::findChildrenExByAddr](../../debugger/debug-interface-access/idiasymbol-findchildrenexbyaddr.md)|Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo specificato.|
-|[IDiaSymbol::findChildrenExByRVA](../../debugger/debug-interface-access/idiasymbol-findchildrenexbyrva.md)|Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo RVA (Relative Virtual Address) specificato.|
+|[IDiaSymbol::findChildrenExByRVA](../../debugger/debug-interface-access/idiasymbol-findchildrenexbyrva.md)|Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo virtuale relativo specificato.|
 |[IDiaSymbol::findChildrenExByVA](../../debugger/debug-interface-access/idiasymbol-findchildrenexbyva.md)|Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo virtuale specificato.|
-|[IDiaSymbol::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasymbol-findinlineframesbyaddr.md)|Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.|
-|[IDiaSymbol::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasymbol-findinlineframesbyrva.md)|Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (Relative Virtual Address) specificato.|
+|[IDiaSymbol::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasymbol-findinlineframesbyaddr.md)|Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo specificato.|
+|[IDiaSymbol::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasymbol-findinlineframesbyrva.md)|Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo specificato.|
 |[IDiaSymbol::findInlineFramesByVA](../../debugger/debug-interface-access/idiasymbol-findinlineframesbyva.md)|Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato.|
 |[IDiaSymbol::findInlineeLines](../../debugger/debug-interface-access/idiasymbol-findinlineelines.md)|Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo.|
 |[IDiaSymbol::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyaddr.md)|Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'intervallo di indirizzi specificato.|
-|[IDiaSymbol::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyrva.md)|Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo RVA (Relative Virtual Address) specificato.|
+|[IDiaSymbol::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyrva.md)|Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale relativo (RVA) specificato.|
 |[IDiaSymbol::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyva.md)|Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato.|
-|[IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsbyrvaforacceleratorpointertag.md)|Dato un valore di tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub in corrispondenza di un indirizzo virtuale relativo specificato.|
-|[IDiaSymbol::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsforacceleratorpointertag.md)|Restituisce il numero di tag del puntatore del tasto di scelta rapida in C++ AMP funzione stub.|
-|[IDiaSymbol::get_acceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-acceleratorpointertags.md)|Restituisce tutti i valori dei tag del puntatore del tasto di scelta rapida che corrispondono a C++ AMP funzione stub dell'acceleratore.|
+|[IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsbyrvaforacceleratorpointertag.md)|Dato un valore tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub in corrispondenza di un indirizzo virtuale relativo specificato.|
+|[IDiaSymbol::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsforacceleratorpointertag.md)|Restituisce il numero di tag del puntatore del tasto di scelta rapida in una C++ AMP stub.|
+|[IDiaSymbol::get_acceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-acceleratorpointertags.md)|Restituisce tutti i valori dei tag del puntatore del tasto di scelta rapida che corrispondono a una C++ AMP di stub dell'acceleratore.|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|Recupera il modificatore di accesso di un membro di classe.|
-|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|Recupera la parte dell'offset di una posizione dell'indirizzo.|
-|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|Recupera la parte di sezione di un percorso di indirizzo.|
+|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|Recupera la parte di offset di una posizione di indirizzo.|
+|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|Recupera la parte di sezione di un percorso di indirizzi.|
 |[IDiaSymbol::get_addressTaken](../../debugger/debug-interface-access/idiasymbol-get-addresstaken.md)|Recupera un flag che indica se un altro simbolo fa riferimento a questo indirizzo.|
-|[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|Recupera il valore relativo all'età di un database di programma.|
+|[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|Recupera il valore di età di un database di programma.|
 |[IDiaSymbol::get_arrayIndexType](../../debugger/debug-interface-access/idiasymbol-get-arrayindextype.md)|Recupera l'identificatore di simbolo del tipo di indice della matrice.|
 |[IDiaSymbol::get_arrayIndexTypeId](../../debugger/debug-interface-access/idiasymbol-get-arrayindextypeid.md)|Recupera l'identificatore del tipo di indice della matrice del simbolo.|
-|[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|Recupera il numero di versione principale del back-end.|
+|[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|Recupera il numero di versione principale back-end.|
 |[IDiaSymbol::get_backEndMinor](../../debugger/debug-interface-access/idiasymbol-get-backendminor.md)|Recupera il numero di versione secondaria back-end.|
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|Recupera il numero di build back-end.|
 |[IDiaSymbol::get_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)|Recupera l'offset dei dati di base.|
 |[IDiaSymbol::get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)|Recupera lo slot di dati di base.|
 |[IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)|Recupera il simbolo da cui si basa il puntatore.|
 |[IDiaSymbol::get_baseSymbolId](../../debugger/debug-interface-access/idiasymbol-get-basesymbolid.md)|Recupera l'ID simbolo da cui si basa il puntatore.|
-|[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|Recupera il tag di tipo di un tipo semplice.|
-|[IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)|Recupera la posizione di bit di una posizione.|
+|[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|Recupera il tag type di un tipo semplice.|
+|[IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)|Recupera la posizione in bit di una posizione.|
 |[IDiaSymbol::get_builtInKind](../../debugger/debug-interface-access/idiasymbol-get-builtinkind.md)|Recupera un tipo predefinito del tipo HLSL.|
 |[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)|Restituisce un indicatore della convenzione di chiamata di un metodo.|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|Recupera un riferimento all'elemento padre della classe del simbolo.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|Recupera l'identificatore padre della classe del simbolo.|
 |[IDiaSymbol::get_code](../../debugger/debug-interface-access/idiasymbol-get-code.md)|Recupera un flag che indica se il simbolo fa riferimento a un indirizzo di codice.|
 |[IDiaSymbol::get_compilerGenerated](../../debugger/debug-interface-access/idiasymbol-get-compilergenerated.md)|Recupera un flag che indica se il simbolo è stato generato dal compilatore.|
-|[IDiaSymbol::get_compilerName](../../debugger/debug-interface-access/idiasymbol-get-compilername.md)|Recupera il nome del compilatore utilizzato per creare [l'oggetto compilando](../../debugger/debug-interface-access/compiland.md).|
+|[IDiaSymbol::get_compilerName](../../debugger/debug-interface-access/idiasymbol-get-compilername.md)|Recupera il nome del compilatore utilizzato per creare [compilando](../../debugger/debug-interface-access/compiland.md).|
 |[IDiaSymbol::get_constructor](../../debugger/debug-interface-access/idiasymbol-get-constructor.md)|Recupera un flag che indica se il tipo di dati definito dall'utente ha un costruttore.|
 |[IDiaSymbol::get_container](../../debugger/debug-interface-access/idiasymbol-get-container.md)|Recupera il simbolo contenitore di questo simbolo.|
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|Recupera un flag che indica se il tipo di dati definito dall'utente è costante.|
-|[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|Recupera il numero di elementi in un elenco o una matrice.|
+|[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|Recupera il numero di elementi in un elenco o in una matrice.|
 |[IDiaSymbol::get_countLiveRanges](../../debugger/debug-interface-access/idiasymbol-get-countliveranges.md)|Recupera il numero di intervalli di indirizzi validi associati al simbolo locale.|
-|[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|Recupera un flag che indica se la funzione utilizza una convenzione di chiamata personalizzata.|
+|[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|Recupera un flag che indica se la funzione usa una convenzione di chiamata personalizzata.|
 |[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|Recupera i byte di dati di un simbolo OEM.|
 |[IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)|Recupera la classificazione delle variabili di un simbolo di dati.|
 |[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|Recupera il flag che descrive le funzionalità Modifica e continuazione del programma o dell'unità compilata.|
@@ -181,41 +181,41 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaSymbol` .
 |[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|Recupera il valore della firma del simbolo.|
 |[IDiaSymbol::get_sizeInUdt](../../debugger/debug-interface-access/idiasymbol-get-sizeinudt.md)|Recupera le dimensioni di un membro di un tipo definito dall'utente.|
 |[IDiaSymbol::get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)|Recupera il numero di slot della posizione.|
-|[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|Recupera il nome del file di origine.|
+|[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|Recupera il nome file del file di origine.|
 |[IDiaSymbol::getSrcLineOnTypeDefn](../../debugger/debug-interface-access/idiasymbol-getsrclineontypedefn.md)|Recupera il file di origine e il numero di riga che indicano dove è definito un tipo definito dall'utente specificato.|
-|[IDiaSymbol::get_stride](../../debugger/debug-interface-access/idiasymbol-get-stride.md)|Recupera lo stride della matrice o della matrice strided.|
+|[IDiaSymbol::get_stride](../../debugger/debug-interface-access/idiasymbol-get-stride.md)|Recupera lo stride della matrice o della matrice con stride.|
 |[IDiaSymbol::get_subType](../../debugger/debug-interface-access/idiasymbol-get-subtype.md)|Recupera il sottotipo.|
 |[IDiaSymbol::get_subTypeId](../../debugger/debug-interface-access/idiasymbol-get-subtypeid.md)|Recupera l'ID del sottotipo.|
 |[IDiaSymbol::get_symbolsFileName](../../debugger/debug-interface-access/idiasymbol-get-symbolsfilename.md)|Recupera il nome del file da cui sono stati caricati i simboli.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|Recupera l'identificatore univoco del simbolo.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|Recupera il classificatore del tipo di simbolo.|
 |[IDiaSymbol::get_targetOffset](../../debugger/debug-interface-access/idiasymbol-get-targetoffset.md)|Recupera la sezione offset di una destinazione thunk.|
-|[IDiaSymbol::get_targetRelativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetrelativevirtualaddress.md)|Recupera l'indirizzo RVA (Relative Virtual Address) di una destinazione thunk.|
-|[IDiaSymbol::get_targetSection](../../debugger/debug-interface-access/idiasymbol-get-targetsection.md)|Recupera la sezione dell'indirizzo di una destinazione thunk.|
-|[IDiaSymbol::get_targetVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetvirtualaddress.md)|Recupera l'indirizzo virtuale di una destinazione thunk.|
+|[IDiaSymbol::get_targetRelativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetrelativevirtualaddress.md)|Recupera l'indirizzo virtuale relativo (RVA) di una destinazione thunk.|
+|[IDiaSymbol::get_targetSection](../../debugger/debug-interface-access/idiasymbol-get-targetsection.md)|Recupera la sezione address di una destinazione thunk.|
+|[IDiaSymbol::get_targetVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetvirtualaddress.md)|Recupera l'indirizzo virtuale (VA) di una destinazione thunk.|
 |[IDiaSymbol::get_textureSlot](../../debugger/debug-interface-access/idiasymbol-get-textureslot.md)|Recupera lo slot di trama.|
-|[IDiaSymbol::get_thisAdjust](../../debugger/debug-interface-access/idiasymbol-get-thisadjust.md)|Recupera il `this` regolatore logico per il metodo .|
-|[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|Recupera il tipo thunk di una funzione.|
+|[IDiaSymbol::get_thisAdjust](../../debugger/debug-interface-access/idiasymbol-get-thisadjust.md)|Recupera il regolatore `this` logico per il metodo.|
+|[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|Recupera il tipo di thunk di una funzione.|
 |[IDiaSymbol::get_timeStamp](../../debugger/debug-interface-access/idiasymbol-get-timestamp.md)|Recupera il timestamp del file eseguibile sottostante.|
-|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|Recupera il token di metadati di una funzione o di una variabile gestita.|
+|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|Recupera il token di metadati di una funzione gestita o di una variabile.|
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|Recupera un riferimento alla firma della funzione.|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|Recupera l'identificatore del tipo del simbolo.|
 |[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|Recupera una matrice di valori di tipo specifici del compilatore per questo simbolo.|
-|[IDiaSymbol::get_typeIds](../../debugger/debug-interface-access/idiasymbol-get-typeids.md)|Recupera una matrice di valori di identificatori di tipo specifici del compilatore per questo simbolo.|
+|[IDiaSymbol::get_typeIds](../../debugger/debug-interface-access/idiasymbol-get-typeids.md)|Recupera una matrice di valori di identificatore di tipo specifici del compilatore per questo simbolo.|
 |[IDiaSymbol::get_uavSlot](../../debugger/debug-interface-access/idiasymbol-get-uavslot.md)|Recupera lo slot uav.|
-|[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|Recupera la varietà di un tipo definito dall'utente (UDT).|
+|[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|Recupera l'ampia gamma di un tipo definito dall'utente (UDT).|
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|Recupera un flag che indica se il tipo di dati definito dall'utente non è allineato.|
-|[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|Recupera il nome non decorato per un nome C++ decorato, o collegamento.|
-|[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|Estensione del `get_undecoratedName` metodo che recupera il nome non dichiarato in base al valore di un campo di estensione.|
+|[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|Recupera il nome non decorato per un nome decorato O collegamento C++.|
+|[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|Estensione del metodo che recupera il nome non dichiarato in base `get_undecoratedName` al valore di un campo di estensione.|
 |[IDiaSymbol::get_unmodifiedTypeId](../../debugger/debug-interface-access/idiasymbol-get-unmodifiedtypeid.md)|Recupera l'ID del tipo originale (non modificato).|
-|[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|Recupera il limite superiore di una dimensione di matrice ARRAYRAN.|
-|[IDiaSymbol::get_upperBoundId](../../debugger/debug-interface-access/idiasymbol-get-upperboundid.md)|Recupera l'identificatore di simbolo del limite superiore di una dimensione di matrice FORTRAN.|
+|[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|Recupera il limite superiore di una dimensione di matrice FORTRAN.|
+|[IDiaSymbol::get_upperBoundId](../../debugger/debug-interface-access/idiasymbol-get-upperboundid.md)|Recupera l'identificatore del simbolo del limite superiore di una dimensione di matrice FORTRAN.|
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|Recupera il valore di una costante.|
 |[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|Recupera un flag che indica se la funzione è virtuale.|
-|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|Recupera l'indirizzo virtuale della posizione.|
-|[IDiaSymbol::get_virtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseclass.md)|Recupera un flag che indica se il tipo di dati definito dall'utente è una classe base virtuale.|
+|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|Recupera l'indirizzo virtuale (VA) della posizione.|
+|[IDiaSymbol::get_virtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseclass.md)|Recupera un flag che indica se il tipo di dati definito dall'utente è una classe di base virtuale.|
 |[IDiaSymbol::get_virtualBaseDispIndex](../../debugger/debug-interface-access/idiasymbol-get-virtualbasedispindex.md)|Recupera l'indice nella tabella di spostamento della base virtuale.|
-|[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|Recupera l'offset nella tabella di funzioni virtuali di una funzione virtuale.|
+|[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|Recupera l'offset nella tabella delle funzioni virtuali di una funzione virtuale.|
 |[IDiaSymbol::get_virtualBasePointerOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbasepointeroffset.md)|Recupera l'offset del puntatore di base virtuale.|
 |[IDiaSymbol::get_virtualBaseTableType](../../debugger/debug-interface-access/idiasymbol-get-virtualbasetabletype.md)|Recupera il tipo di un puntatore di tabella di base virtuale.|
 |[IDiaSymbol::get_virtualTableShape](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshape.md)|Recupera l'interfaccia dei simboli del tipo della tabella virtuale per un tipo definito dall'utente.|
@@ -260,10 +260,10 @@ Ottenere questa interfaccia chiamando uno dei metodi seguenti:
 - [IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come visualizzare le variabili locali per una funzione in un determinato indirizzo virtuale relativo. Illustra anche come i simboli di tipi diversi sono correlati tra loro.
+Questo esempio illustra come visualizzare le variabili locali per una funzione in un determinato indirizzo virtuale relativo. Viene inoltre illustrato come i simboli di tipi diversi sono correlati tra loro.
 
 > [!NOTE]
-> `CDiaBSTR` è una classe che esegue il wrapping di un oggetto e gestisce automaticamente la liberatura della stringa quando la creazione di `BSTR` un'istanza esce dall'ambito.
+> `CDiaBSTR` è una classe che esegue il wrapping di un oggetto e gestisce automaticamente la liberatura della stringa quando la creazione di istanze `BSTR` esce dall'ambito.
 
 ```C++
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )

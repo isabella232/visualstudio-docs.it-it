@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a1cd1e92b117c9d1e239d032820e30e2375f1ffbf424334050178703b10b50e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 636f0d3f2fcd827a32a5e683f4465c97d03d2d06
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391672"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121353"
 ---
 # <a name="idiasymbolget_objectfilename"></a>IDiaSymbol::get_objectFileName
 Recupera il nome del file oggetto.

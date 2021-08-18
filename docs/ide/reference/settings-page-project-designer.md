@@ -1,6 +1,6 @@
 ---
 title: Pagina Impostazioni, Creazione progetti
-description: Informazioni su come usare la pagina impostazioni di progettazione progetti per specificare le impostazioni dell'applicazione di un progetto.
+description: Informazioni su come usare la Impostazioni di progettazione Project per specificare le impostazioni dell'applicazione di un progetto.
 ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ee71e717d2287b4e6deb32b1b94c142cf7de73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d65fcf4097069c48061f45d26293178cab2f379
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957673"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150989"
 ---
 # <a name="settings-page-project-designer"></a>Pagina Impostazioni, Creazione progetti
 
@@ -75,7 +76,7 @@ Immettere il nome dell'impostazione dell'applicazione in questo campo.
 
 Usare l'elenco a discesa per selezionare un tipo di impostazione. L'elenco include i tipi più utilizzati, ad esempio **String**, **(Stringa di connessione)** e **System.Drawing.Font**. È possibile scegliere un tipo diverso selezionando **Sfoglia** alla fine dell'elenco e quindi selezionando un tipo dalla finestra di dialogo **Seleziona un tipo**. Il tipo selezionato viene aggiunto ai tipi più utilizzati dell'elenco a discesa (solo per la soluzione corrente).
 
-**Scope**
+**Ambito**
 
 Selezionare **Applicazione** o **Utente**.
 

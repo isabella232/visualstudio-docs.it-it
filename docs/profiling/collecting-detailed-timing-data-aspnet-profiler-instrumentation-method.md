@@ -1,5 +1,5 @@
 ---
-title: Raccogliere dati di intervallo per ASP.NET tramite strumentazione
+title: Raccogliere dati di intervallo per i ASP.NET tramite strumentazione
 description: Informazioni su come usare VSPerfCmd per raccogliere dati dettagliati sulle prestazioni per un'ASP.NET Web. Fornisce l'accesso completo Strumenti di profilatura funzionalità.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,18 +15,18 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 95065c3de317afca162064f063330d19804f98573a7cafd61123652801ea08b6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 78bcf3fcb7ae2512a3ab92474f68cc80e238a765
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107927"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Raccogliere dati di intervallo dettagliati per un'applicazione Web ASP.NET usando il metodo di strumentazione del profiler tramite la riga di comando
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando lo strumento della riga di comando **VSPerfCmd** e il metodo di strumentazione.
 
 > [!NOTE]
-> Lo strumento **VSPerfCmd** consente l'accesso completo alle funzionalità degli strumenti di profilatura, tra cui la sospensione e la ripresa della profilatura e la raccolta di dati aggiuntivi dal processore e dai contatori delle prestazioni di Windows. Quando queste funzionalità non sono necessarie è anche possibile usare lo strumento da riga di comando **VSPerfASPNETCmd**. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. Per altre informazioni, vedere [Profilatura rapida del sito Web con VSPerfASPNETCmd.](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
+> Lo strumento **VSPerfCmd** consente l'accesso completo alle funzionalità degli strumenti di profilatura, tra cui la sospensione e la ripresa della profilatura e la raccolta di dati aggiuntivi dal processore e dai contatori delle prestazioni di Windows. Quando queste funzionalità non sono necessarie è anche possibile usare lo strumento da riga di comando **VSPerfASPNETCmd**. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. Per altre informazioni, vedere [Profilatura rapida di siti Web con VSPerfASPNETCmd.](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 
 ## <a name="common-tasks"></a>Attività comuni
 

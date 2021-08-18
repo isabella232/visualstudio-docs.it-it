@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che indica se il simbolo corrisponde a una variabile locale condivisa di gruppo nel codice compilato per un acceleratore C++ AMP.
+description: Recupera un flag che indica se il simbolo corrisponde a una variabile locale condivisa di gruppo nel codice compilato per un C++ AMP Acceleratore.
 title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e334766cb5659d4f94c7db2f5fbdc0e4ab68a2ebb79e64a877c77c6e0a125dad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bc8da59465ce2aa20c37bf03c9b9fbcd4186c7c7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379870"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031226"
 ---
 # <a name="idiasymbolget_isacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-Recupera un flag che indica se il simbolo corrisponde a una variabile locale condivisa di gruppo nel codice compilato per un acceleratore C++ AMP.
+Recupera un flag che indica se il simbolo corrisponde a una variabile locale condivisa di gruppo nel codice compilato per un C++ AMP Acceleratore.
 
 ## <a name="syntax"></a>Sintassi
 

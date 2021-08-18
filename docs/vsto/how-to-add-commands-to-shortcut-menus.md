@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a85b45dbe8ffd616b89078795f0cd9ffe11da7fd97e92339dab8ed2162ae2d2f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4694ca84475aa569b047e8de818613fe30d04c29
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424209"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100257"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedura: Aggiungere comandi ai menu di scelta rapida
   In questo argomento viene illustrato come aggiungere comandi a un menu di scelta rapida in un'applicazione Office utilizzando un VSTO componente aggiuntivo.
@@ -51,7 +51,7 @@ ms.locfileid: "121424209"
 
 7. Nell'editor di codice aggiungere codice XML che descriva il menu di scelta rapida e il controllo da aggiungere al menu di scelta rapida.
 
-     Nell'esempio seguente viene aggiunto un pulsante, un controllo e un controllo della raccolta al menu di scelta rapida per un documento di Word. L'ID del controllo di questo menu di scelta rapida è ContextMenuText. Per un elenco completo degli ID di controllo Office 2010, vedere i file della Guida di [Office 2010:](https://www.microsoft.com/download/details.aspx?id=6627)Office di controllo dell'interfaccia utente Fluent.
+     Nell'esempio seguente viene aggiunto un pulsante, un controllo e un controllo della raccolta al menu di scelta rapida per un documento di Word. L'ID del controllo di questo menu di scelta rapida è ContextMenuText. Per un elenco completo degli ID di controllo Office 2010, vedere file della Guida di [Office 2010:](https://www.microsoft.com/download/details.aspx?id=6627)Office di controllo dell'interfaccia utente Fluent.
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>

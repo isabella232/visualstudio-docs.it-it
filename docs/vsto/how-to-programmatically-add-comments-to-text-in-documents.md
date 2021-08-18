@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aggiungere commenti al testo nei documenti a livello di codice'
-description: Aggiungere commenti al testo nei documenti a livello di codice. La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in un documento di Microsoft Word.
+description: Aggiungere commenti al testo nei documenti a livello di codice. La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in un Microsoft Word documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,17 +14,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4e03f189f2236131308b8f9ea5d90c52ffa3147d
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 3e8b8d2f89b87d312b0a3868974fa6d9f7d039f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825823"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083349"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedura: Aggiungere commenti al testo nei documenti a livello di codice
-  La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in Microsoft Office documento di Word.
+  La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in un documento Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -37,7 +38,7 @@ ms.locfileid: "107825823"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet118":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet118":::
 
-## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Per aggiungere un nuovo commento al testo in un componente aggiuntivo VSTO
+## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>Per aggiungere un nuovo commento al testo in un VSTO componente aggiuntivo
 
 1. Chiamare il metodo <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> della proprietà <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> e fornire un intervallo e il testo del commento.
 

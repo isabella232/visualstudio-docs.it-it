@@ -13,12 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0baba356946135e07a2e41d12c5161461098a06697ec4a72a7dd4232fe06aaae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f67e518e5f9701ae011733d796252431ce6c9eda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366745"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083830"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modificare i modelli di carico per definire le attività di utenti virtuali
 
@@ -64,11 +64,11 @@ Un modello di carico passaggio può essere usato per aumentare il carico sul ser
 
 - **Durata passaggio (secondi):** 1.800
 
-- **Tempo di rampa passaggio (secondi):** 20
+- **Tempo di rampa passaggio (secondi)**: 20
 
 - **Numero utenti passaggio:** 100
 
-  Queste impostazioni consentono l'esecuzione del test di carico per 30 minuti (1.800 secondi) a carichi utente di 100, 200, 300, fino a 2.000 utenti. La **proprietà Tempo di** rampa passaggio vale una menzione speciale, perché è l'unica di queste proprietà non disponibile per la selezione nella finestra di dialogo **Creazione guidata test di carico**. Questa proprietà consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti). In questo esempio il carico utente aumenterebbe da 100 a 200 utenti in un intervallo di 20 secondi, ovvero un aumento di 5 utenti al secondo. Per altre informazioni, vedere [Procedura: Specificare la proprietà step ramp time per un modello di carico passaggio.](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+  Queste impostazioni consentono l'esecuzione del test di carico per 30 minuti (1.800 secondi) a carichi utente di 100, 200, 300, fino a 2.000 utenti. La **proprietà Tempo di** rampa passaggio vale una menzione speciale, perché è l'unica di queste proprietà non disponibile per la selezione nella finestra di dialogo **Creazione guidata test di carico**. Questa proprietà consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti). In questo esempio il carico utente aumenterebbe da 100 a 200 utenti in un intervallo di 20 secondi, ovvero un aumento di 5 utenti al secondo. Per altre informazioni, vedere Procedura: Specificare la proprietà [step ramp time per un modello di carico passaggio.](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
 
 ### <a name="goal-based"></a>Basato su obiettivo
 

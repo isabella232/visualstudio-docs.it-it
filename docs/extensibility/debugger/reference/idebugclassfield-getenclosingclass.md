@@ -1,6 +1,6 @@
 ---
 description: Ottiene la classe che racchiude questa classe.
-title: 'IDebugClassField:: GetEnclosingClass | Microsoft Docs'
+title: IDebugClassField::GetEnclosingClass | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c59eb2559634c67b210f4fc3b4ce41743346c8ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dd6f6314afd1489609d5f93a44f3645cb70de8e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088484"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072416"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 Ottiene la classe che racchiude questa classe.
@@ -42,13 +43,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>Parametri
 `ppClassField`\
-out Restituisce un oggetto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che rappresenta la classe contenitore. Restituisce un valore null se non è presente alcuna classe contenitore.
+[out] Restituisce un [oggetto IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che rappresenta la classe contenitore. Restituisce un valore Null se non esiste alcuna classe contenitore.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
-Se la classe rappresentata da questo oggetto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) è una classe annidata, il `ppClassField` parametro restituisce un `IDebugClassField` oggetto che rappresenta la classe contenitore. Ad esempio, data questa definizione di classe:
+Se la classe rappresentata da questo [oggetto IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) è una classe annidata, il parametro restituisce un oggetto che `ppClassField` rappresenta la classe `IDebugClassField` contenitore. Ad esempio, data questa definizione di classe:
 
 ```
 class RootClass {
@@ -56,7 +57,7 @@ class RootClass {
 };
 ```
 
-La chiamata al `GetEnclosingClass` metodo sull' `IDebugClassField` oggetto che rappresenta la `NestedClass` classe restituisce un `IDebugClassField` oggetto che rappresenta la classe `RootClass` .
+La chiamata `GetEnclosingClass` al metodo `IDebugClassField` sull'oggetto che rappresenta `NestedClass` la classe restituisce un oggetto che rappresenta la classe `IDebugClassField` `RootClass` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

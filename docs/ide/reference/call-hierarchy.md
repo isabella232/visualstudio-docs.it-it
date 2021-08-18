@@ -1,6 +1,6 @@
 ---
 title: Trovare le chiamate a un metodo
-description: Informazioni su come usare la finestra gerarchia di chiamata per esplorare tutte le chiamate a e talvolta da un metodo, una proprietà o un costruttore selezionato.
+description: Informazioni su come usare la finestra Gerarchia di chiamate per spostarsi tra tutte le chiamate a e talvolta a un metodo, una proprietà o un costruttore selezionato.
 ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e7384376b604f2097d68bf8bac06b2af0158e09b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97f6e4a351267c5cd26ad283ecdf6cc49cf2e8620707805dd0234c708ff9b698
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836475"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430908"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
 
@@ -30,7 +31,7 @@ In Visual Studio, è possibile visualizzare una gerarchia di chiamata in fase di
 
 Per visualizzare la finestra **Gerarchia di chiamata**, fare clic con il pulsante destro del mouse nell'editor del codice sul nome di una chiamata a un metodo, una proprietà o un costruttore e quindi scegliere **Visualizza gerarchia delle chiamate**.
 
-Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo del membro, vengono visualizzati i sottonodi **Chiamate a** *nome membro* e per C++ **Chiamate da** *nome membro*.
+Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo del membro, **Chiamate a** nome *membro* e per C++, Chiamate **dal** nome *del membro* vengono visualizzati i sottonodi.
 
 Per il codice C++, è possibile visualizzare le chiamate da e verso un membro:
 
@@ -56,10 +57,10 @@ Quando si seleziona un membro figlio nel riquadro della visualizzazione struttur
 
 - Il riquadro dei dettagli **Gerarchia di chiamata** visualizza tutte le righe di codice in cui tale membro figlio viene chiamato dal membro padre.
 
-- La finestra **definizione codice** , se aperta, Visualizza il codice per il membro selezionato (solo C++). Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
+- La **finestra Definizione** codice, se aperta, visualizza il codice per il membro selezionato (solo C++). Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> La funzionalità **gerarchia di chiamata** non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
+> La **funzionalità Gerarchia** di chiamate non trova riferimenti a gruppi di metodi, inclusi i punti in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
 
 ## <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e8a11b47421f95e4527095f0e696795e8f3785d4c95679faebd05563d59a3bb8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 231bb94681311956e300c312dd971bf8d6e7d07b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342258"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079155"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 Rimuove l'elenco di eccezioni impostate dall'IDE per una particolare architettura o linguaggio di runtime.

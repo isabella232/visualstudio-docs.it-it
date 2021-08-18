@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d395a170a9daee3bfd4544b34fa1a203f6a9df9ba8d63d36266a7c588838548
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a87ca5252e51262cdc70835e910ca67f6fedcb10
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121399791"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150872"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
@@ -43,9 +43,9 @@ Nell'elenco dei membri, l'icona a sinistra rappresenta il tipo del membro, ad es
 
 È possibile richiamare la funzionalità **Elenca membri** manualmente digitando **CTRL**+**J**, scegliendo **Modifica** > **IntelliSense** > **Elenca membri** o il pulsante **Elenca membri** sulla barra degli strumenti dell'editor. Se richiamato in una riga vuota o al di fuori di un ambito riconoscibile, l'elenco conterrà simboli dello spazio dei nomi globale.
 
-Per disattivare Elenca membri per impostazione predefinita (in modo che non venga visualizzato a meno che non venga richiamato in modo specifico), passare a Opzioni strumenti Tutti i linguaggi e deselezionare Elenca automaticamente  >    >   **i membri**. Se si vuole disattivare la funzionalità Elenca membri solo per un linguaggio specifico, andare sulle impostazioni **Generali** per quel linguaggio.
+Per disattivare Elenca membri per impostazione predefinita (in modo che non venga visualizzato a meno che non venga richiamato in modo specifico), passare a Strumenti Opzioni Tutti i linguaggi e  >    >   deselezionare **Elenca automaticamente i membri**. Se si vuole disattivare la funzionalità Elenca membri solo per un linguaggio specifico, andare sulle impostazioni **Generali** per quel linguaggio.
 
-È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Ad esempio, se si immette un identificatore non presente nell'elenco e si preme **TAB,** in modalità di completamento la voce sostituirà l'identificatore tipiato. Per passare dalla modalità di completamento alla modalità suggerimento, premere **CTRL** ALT+BARRA SPAZIATRICE oppure scegliere Modifica Modalità di +  +    >  **completamento attiva/disattiva IntelliSense.**  >  
+È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Ad esempio, se si immette un identificatore che non è presente nell'elenco e si preme **TAB,** in modalità di completamento la voce sostituirà l'identificatore digitato. Per alternare tra la modalità di completamento e la modalità di suggerimento, premere **CTRL** ALT+BARRA SPAZIATRICE oppure scegliere Modifica +  +    >  **IntelliSense**  >  **Attiva/Disattiva modalità di completamento.**
 
 ## <a name="parameter-info"></a>Informazioni sul parametro
 
@@ -57,7 +57,7 @@ Il parametro in grassetto indica il parametro successivo richiesto durante la di
 
 Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md).
 
-È possibile richiamare manualmente Le informazioni sui parametri scegliendo Modifica informazioni parametri  >  **IntelliSense**, premendo  >    + **CTRL+MAIUSC+BARRA** +   SPAZIATRICE oppure scegliendo il pulsante Informazioni parametro sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente le informazioni sui parametri scegliendo Modifica informazioni parametri  >  **IntelliSense**, premendo  >    + **CTRL+MAIUSC+BARRA** +   SPAZIATRICE oppure scegliendo il pulsante Informazioni parametro sulla barra degli strumenti dell'editor.
 
 ## <a name="quick-info"></a>Informazioni rapide
 
@@ -69,19 +69,19 @@ Quando si seleziona un membro nella casella **Elenca membri**, vengono visualizz
 
 ![Informazioni sui parametri in un file di codice C&#35;](../ide/media/vs2015_paraminfo.png)
 
-È possibile richiamare manualmente informazioni rapide scegliendo Modifica informazioni rapide  >  **IntelliSense**, premendo CTRL K, CTRL I o scegliendo il pulsante Informazioni rapide sulla barra degli  >    +   + strumenti dell'editor. 
+È possibile richiamare manualmente informazioni rapide scegliendo Modifica informazioni rapide  >  **IntelliSense**, premendo CTRL K , CTRL I o scegliendo il pulsante Informazioni rapide sulla barra degli  >    +   + strumenti dell'editor. 
 
 Se una funzione è sottoposta a overload, è possibile che IntelliSense non visualizzi le informazioni per tutte le forme di overload.
 
-È possibile disattivare le informazioni rapide per il codice C++ passando a Strumenti Opzioni Editor di testo  >    >    >  **C/C++** Avanzate e impostando Info rapide  >   **automaticamente** su `false` .
+È possibile disattivare Le informazioni rapide per il codice C++ passando a Strumenti Opzioni Editor di testo  >    >    >  **C/C++**  >    Avanzate e impostando Informazioni rapide automaticamente su `false` .
 
 ## <a name="complete-word"></a>Completa parola
 
-Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile richiamare Completa parola scegliendo Modifica IntelliSense Completa parola , premendo CTRL+BARRA SPAZIATRICE oppure scegliendo il pulsante Completa parola sulla barra  >    >  degli  + strumenti dell'editor. 
+Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile richiamare Completa parola scegliendo Modifica  >  **IntelliSense** Completa parola , premendo  >    + **CTRL+BARRA**  SPAZIATRICE oppure scegliendo il pulsante Completa parola sulla barra degli strumenti dell'editor.
 
 ## <a name="intellisense-options"></a>Opzioni IntelliSense
 
-Le opzioni IntelliSense sono attive per impostazione predefinita. Per disattivarli, scegliere Strumenti Opzioni Editor di testo e deselezionare Informazioni sui parametri o Elenca membri automaticamente se non si vuole la  >    >   funzionalità Elenca membri.  
+Le opzioni IntelliSense sono attive per impostazione predefinita. Per disattivarli, scegliere Strumenti Opzioni Editor di  >    >  **testo e** deselezionare   Informazioni sui parametri o Elenca automaticamente i membri se non si vuole la funzionalità Elenca membri.
 
 ## <a name="intellisense-icons"></a>Icone di IntelliSense
 Le icone in IntelliSense possono trasmettere un significato aggiuntivo con i modificatori di icona. Si tratta di stelle, cuori e lucchetti sovrapposti all'icona dell'oggetto per indicare, rispettivamente, che l'oggetto è protetto, interno o privato.

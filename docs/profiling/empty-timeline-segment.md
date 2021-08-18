@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf348388f6668f2c3df5e439b28a5de58d5777df7e40e5b957ec824106af15f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 367d82905e46eeacd9bb20c9e8a7444ce804ffe2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150404"
 ---
 # <a name="empty-timeline-segment"></a>Segmento della sequenza temporale vuoto
 Nel visualizzatore di concorrenza, il motivo per cui una sezione della sequenza temporale è vuota (presenta uno sfondo bianco) dipende dal tipo di canale.

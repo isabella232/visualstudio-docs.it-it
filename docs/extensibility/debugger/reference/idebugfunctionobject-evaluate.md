@@ -1,5 +1,5 @@
 ---
-description: IDebugFunctionObject::Evaluate chiama la funzione e restituisce il valore risultante come oggetto.
+description: IDebugFunctionObject::Evaluate chiama la funzione e restituisce il valore risultante come oggetto .
 title: IDebugFunctionObject::Evaluate | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bd3d7cae43ce8f49bdae121aca156490d5a197ebdb46c068c6167e79c2e6137
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5526282313c6cdc72fe3834e75855463036811e7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121451991"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088666"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 Chiama la funzione e restituisce il valore risultante come oggetto .
@@ -55,7 +55,7 @@ int Evaluate(
 [in] Numero di parametri nella `ppParams` matrice.
 
 `dwTimeout`\
-[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere a tempo indeterminato.
+[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo indefinito.
 
 `ppResult`\
 [out] Restituisce un [oggetto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta il valore della funzione come oggetto .

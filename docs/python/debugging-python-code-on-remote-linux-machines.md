@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e48ed48ab334b784b8399fc7126360e8d112a28d26bc572460419114f4900765
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1aeec469756ae67346fad3183a9933fa3e7bf8bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396074"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140532"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Eseguire il debug remoto di codice Python in Linux
 

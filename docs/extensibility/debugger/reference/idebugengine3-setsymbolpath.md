@@ -1,6 +1,6 @@
 ---
 description: Imposta il percorso o i percorsi in cui vengono cercati i simboli di debug.
-title: 'IDebugEngine3:: SetSymbolPath | Microsoft Docs'
+title: IDebugEngine3::SetSymbolPath | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3bc24aa6ae07505f4f1fce16593f11e44e752a9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 73e7d4cb8ed36546e60326bc0935817d9b647adb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066115"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118983"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 Imposta il percorso o i percorsi in cui vengono cercati i simboli di debug.
@@ -47,27 +48,27 @@ int SetSymbolPath(
 ## <a name="parameters"></a>Parametri
 
 `szSymbolSearchPath`\
-in Stringa che contiene il percorso o i percorsi di ricerca dei simboli. Per informazioni dettagliate, vedere la sezione "osservazioni". Non può essere null.
+[in] Stringa contenente il percorso o i percorsi di ricerca dei simboli. Per informazioni dettagliate, vedere "Osservazioni". Non può essere null.
 
 `szSymbolCachePath`\
-in Stringa contenente il percorso locale in cui i simboli possono essere memorizzati nella cache. Non può essere null.
+[in] Stringa contenente il percorso locale in cui è possibile memorizzare i simboli nella cache. Non può essere null.
 
 `Flags`\
-in Non utilizzato; sempre impostato su 0.
+[in] Non usato; è sempre impostato su 0.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- La stringa `szSymbolSearchPath` è un elenco di uno o più percorsi, separati da punti e virgola, per la ricerca di simboli. Questi percorsi possono essere un percorso locale, un percorso di tipo UNC o un URL. Questi percorsi possono anche essere costituiti da una combinazione di tipi diversi. Se il percorso è UNC (ad esempio, \\ \Symserver\Symbols), il motore di debug deve determinare se il percorso è un server di simboli e deve essere in grado di caricare i simboli da tale server, inserendoli nella cache nel percorso specificato da `szSymbolCachePath` .
+ La stringa è un elenco di uno o più percorsi, separati da punti e `szSymbolSearchPath` virgola, per la ricerca di simboli. Questi percorsi possono essere un percorso locale, un percorso di tipo UNC o un URL. Questi percorsi possono anche essere una combinazione di tipi diversi. Se il percorso è UNC ,ad esempio \\ \Symserver\Symbols, il motore di debug deve determinare se il percorso è un server di simboli e deve essere in grado di caricare simboli da tale server, memorizzandoli nella cache nel percorso specificato da `szSymbolCachePath` .
 
- Il percorso dei simboli può anche contenere uno o più percorsi della cache. Le cache sono elencate in ordine di priorità, con la prima cache con priorità più elevata e separate da * simboli. Ad esempio:
+ Il percorso del simbolo può anche contenere uno o più percorsi della cache. Le cache sono elencate in ordine di priorità, con la cache con priorità più alta per prima e separate da simboli *. Esempio:
 
 ```
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com
 ```
 
- Il metodo [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) esegue il carico effettivo dei simboli.
+ Il [metodo LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) esegue il caricamento effettivo dei simboli.
 
 ## <a name="see-also"></a>Vedi anche
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)

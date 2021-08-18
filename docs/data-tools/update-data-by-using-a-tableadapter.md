@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77ef45eadadab661639b17c4e29fdf13986da9fd89bf51f7c7358252d64af932
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 38f804232dd633be82e328716312c9c8f1cf53e6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346661"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036784"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aggiornare i dati mediante un TableAdapter
 
@@ -47,7 +47,7 @@ La procedura esatta per l'aggiornamento di un'origine dati può variare a second
 
 Chiamare il `Update` metodo di un oggetto TableAdapter. Passare il nome della tabella dati che contiene i valori da scrivere nel database.
 
-### <a name="to-update-a-database-by-using-a-tableadapter"></a>Per aggiornare un database tramite un tableadapter
+### <a name="to-update-a-database-by-using-a-tableadapter"></a>Per aggiornare un database tramite un TableAdapter
 
 - Racchiudere il metodo del TableAdapter `Update` in un `try` / `catch` blocco . Nell'esempio seguente viene illustrato come aggiornare il contenuto della tabella `Customers` in `NorthwindDataSet` dall'interno di un `try` / `catch` blocco .
 

@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Righe | Microsoft Docs
-description: Informazioni sul modo in cui la visualizzazione righe è disponibile solo per i dati del profiler raccolti tramite il metodo di campionamento.
+description: Informazioni su come la visualizzazione Righe è disponibile solo per i dati del profiler raccolti tramite il metodo di campionamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +13,16 @@ ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f99431faaa7bfc77bd7cd9a14be03f7cc2238127
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 645bd910ec6213f9aef006f7e95e1f3fe7833250
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917832"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141805"
 ---
 # <a name="lines-view"></a>Visualizzazione Righe
 La visualizzazione Righe è disponibile solo per i dati del profiler raccolti tramite il metodo di campionamento. La visualizzazione non è disponibile per i dati raccolti mediante la strumentazione.
@@ -46,5 +47,5 @@ La visualizzazione Righe è disponibile solo per i dati del profiler raccolti tr
 
 ## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)
-- [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Righe](../profiling/lines-view-contention-data.md)

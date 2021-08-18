@@ -1,21 +1,22 @@
 ---
 title: Monitorare con TensorBoard
-description: Informazioni su come usare Visual Studio per visualizzare lo stato di avanzamento del training del modello con TensorBoard.
+description: Informazioni su come usare le Visual Studio visualizzare lo stato di avanzamento del training del modello con TensorBoard.
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6fe17902ad84ec6d7a6e5b9929bd965e7c29b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5d4fb9799a94e6c583c8f49ccf69f284834a448
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841393"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037629"
 ---
 # <a name="monitor-with-tensorboard"></a>Monitorare con TensorBoard
 
@@ -23,8 +24,8 @@ ms.locfileid: "99841393"
 
 1. Fare clic con il pulsante destro de mouse sul progetto e scegliere **Run TensorBoard** (Esegui TensorBoard) quindi selezionare la directory dei log di output di TensorBoard.
 
-    ![Screenshot di Visual Studio Esplora soluzioni con il progetto MNIST selezionato. Viene aperto un menu di scelta rapida e viene selezionato il comando Esegui TensorBoard.](media/monitor-tensorboard/run-tensorboard.png)
+    ![Screenshot della Visual Studio Esplora soluzioni con il progetto MNIST selezionato. Viene aperto un menu di scelta rapida ed è selezionato il comando Run TensorBoard (Esegui TensorBoard).](media/monitor-tensorboard/run-tensorboard.png)
 
 2. Si noti che gli errori diminuiscono nel tempo e ciò indica un miglioramento della qualità.
 
-    ![Screenshot della finestra principale di TensorBoard che mostra le visualizzazioni grafiche dei dati dei log TensorBoard.](media/monitor-tensorboard/tensorboard.png)
+    ![Screenshot della finestra principale di TensorBoard che mostra visualizzazioni grafiche dei dati dai log di TensorBoard.](media/monitor-tensorboard/tensorboard.png)

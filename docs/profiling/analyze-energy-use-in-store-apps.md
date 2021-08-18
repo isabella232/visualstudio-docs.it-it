@@ -1,6 +1,6 @@
 ---
 title: Analizzare il consumo di energia nelle app UWP | Microsoft Docs
-description: Usare il profiler Visual Studio consumo di energia per analizzare le richieste di energia e alimentazione delle app UWP in esecuzione su dispositivi a batteria.
+description: Usare il profiler Visual Studio consumo energetico per analizzare le esigenze di energia e alimentazione delle app UWP in esecuzione nei dispositivi a batteria.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: d759f13d3c6c7da554465e7a7efd5ecaf984c2c949610151145651cb3fc511b6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 475b6dad983bf196a094399da38a644f55170384
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121257615"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077035"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
 
@@ -94,7 +94,7 @@ if (performance && performance.mark) {
 
 1. Scegliere **Avvia strumenti di diagnostica senza debug** dal menu **Debug**.
 
-     ![Scegliere Consumo energia nel Profiler prestazioni](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Scegliere Consumo di energia nel Profiler prestazioni](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Scegliere **Utilizzo di energia** , quindi **Avvia**.
 
@@ -116,7 +116,7 @@ if (performance && performance.mark) {
 
 2. Dall'elenco **Seleziona pacchetto di applicazioni installato** scegliere la destinazione.
 
-3. Scegliere **Consumo energia** nella pagina Profiler prestazioni consumo.
+3. Scegliere **Consumo di** energia nella Profiler prestazioni.
 
 4. Scegliere **Avvia** per iniziare la profilatura.
 
@@ -143,7 +143,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Ottimizzare l'utilizzo di energia
  Oltre alla trasmissione di dati, le connessioni di rete comportano un costo in termini di energia per l'inizializzazione, la gestione e la chiusura della connessione. Alcune reti mantengono aperta la connessione per un certo periodo successivo all'invio o alla ricezione dei dati per consentire la trasmissione di più dati tramite una singola connessione. Puoi utilizzare il riquadro **Risorse (On/Off)** per esaminare la modalità di interazione dell'app con la connessione.
 
- ![Risorse &#40;in&#47;di&#41; di lavoro](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![&#40;&#47;di&#41; di risorse](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Se le barre **Rete** e **Trasferimento dati** indicano che la connessione rimane aperta per lunghi periodi di tempo per trasmettere in modo intermittente una serie di pacchetti di dati di piccole dimensioni, puoi suddividere i dati in batch per inviarli in un'unica trasmissione, riducendo il tempo in cui la rete rimane aperta e risparmiando costi energetici.
 

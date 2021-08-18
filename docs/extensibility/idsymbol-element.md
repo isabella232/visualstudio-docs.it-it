@@ -11,17 +11,18 @@ ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5158b16fb2d12a7d1a93c0296126e915a138269
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 513033b2db2cbf222c7835679ad36e00b91887b6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904942"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086898"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
-`IDSymbol`L'elemento contiene l'ID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando. Il GUID deriva dall'elemento `GuidSymbol` padre. `IDSymbol`L'elemento ha un attributo che fornisce un nome `name` descrittivo per l'ID, contenuto `value` nell'attributo .
+`IDSymbol`L'elemento contiene l'ID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando. Il GUID proviene dall'elemento `GuidSymbol` padre. `IDSymbol`L'elemento ha un attributo che fornisce un nome `name` descrittivo per l'ID, contenuto `value` nell'attributo .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +50,7 @@ ms.locfileid: "112904942"
 |[Elemento GuidSymbol](../extensibility/guidsymbol-element.md)|Contiene il GUID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando. Raggruppa gli elementi `IDSymbol`.|
 
 ## <a name="remarks"></a>Commenti
- Ogni `IDSymbol` elemento in un determinato elemento deve avere un elemento `GuidSymbol` `value` univoco. Tuttavia, gli elementi con valori identici possono esistere in un pacchetto purché `IDSymbol` hanno elementi padre diversi.
+ Ogni `IDSymbol` elemento in un determinato elemento deve avere un `GuidSymbol` `value` univoco. Tuttavia, gli elementi con valori identici possono esistere in un pacchetto purché `IDSymbol` hanno elementi padre diversi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visual Studio file di tabella dei comandi (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

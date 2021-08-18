@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61152240fe28fbf2b5329bfc5aebd1fbf06dca4a235c3595379b3604621b8bc5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7c65ad63859daf50228de9b93b5f304a179e377b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121277192"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088289"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 Imposta il valore a cui punta da una serie di byte consecutivi.
@@ -64,7 +64,7 @@ int SetBytes(
  Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo viene usato se il puntatore rappresentato da [questo oggetto IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) punta a un tipo primitivo o a una matrice semplice di tipi primitivi, ovvero una matrice che può essere rappresentata da una semplice sequenza di byte. Questo `IDebugPointerObject` oggetto non può essere un riferimento Null (deve puntare a un indirizzo in memoria).
+ Questo metodo viene usato se il puntatore rappresentato da [questo oggetto IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) punta a un tipo primitivo o a una semplice matrice di tipi primitivi, ovvero una matrice che può essere rappresentata da una semplice sequenza di byte. Questo `IDebugPointerObject` oggetto non può essere un riferimento Null (deve puntare a un indirizzo in memoria).
 
 ## <a name="see-also"></a>Vedi anche
 - [Getbytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)

@@ -1,5 +1,5 @@
 ---
-title: 'DA0002: VSPerfCorProf.dll manca | Microsoft Docs'
+title: 'DA0002 : VSPerfCorProf.dll è mancante | Microsoft Docs'
 description: Questo avviso si verifica quando gli strumenti da riga di comando per la raccolta di dati del profiler vengono usati senza usare lo strumento VSPerfCLREnv.cmd per inizializzare le variabili di ambiente necessarie o se un altro profiler è in esecuzione all'avvio del Strumenti di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9edb5318bfd1daa77d08873b94db12afcbe3551c044b06e7e88698e52d6850
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d6aabbae9b0e65933e9340a09a20d66fba4da98f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368838"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084376"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll mancante
 

@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b4866d0ad11aef18e2e8e2975908893d8e879966e9530a200d8a9a300fd62f3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 92228687c5158a4f0bd896090a1aa349686b7074
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121383742"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037902"
 ---
 # <a name="messaging-activity-designers"></a>ActivityDesigner Messaggistica
 
-Gli ActivityDesigner di messaggistica vengono usati per creare e configurare attività di messaggistica che inviano e ricevono messaggi Windows Communication Foundation (WCF) dall'interno di un'applicazione Windows Workflow Foundation (WF). Nella versione 4 sono state introdotte cinque attività di messaggistica .NET Framework 4. Il Progettazione flussi di lavoro fornisce due finestre di progettazione di modelli che consentono di gestire la messaggistica all'interno di un flusso di lavoro.
+Gli ActivityDesigner di messaggistica vengono usati per creare e configurare attività di messaggistica che inviano e ricevono messaggi Windows Communication Foundation (WCF) da un'applicazione Windows Workflow Foundation (WF). Cinque attività di messaggistica sono state introdotte in .NET Framework 4. Il Progettazione flussi di lavoro due finestre di progettazione modelli che consentono di gestire la messaggistica all'interno di un flusso di lavoro.
 
 Gli argomenti contenuti in questa sezione e elencati nella tabella seguente forniscono indicazioni su come usare le finestre di progettazione dell'attività Progettazione flussi di lavoro e dei modelli.
 

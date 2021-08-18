@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46d8a67081c4f43fa13726b2f1f163c96e637d39931fea39928e5a89803d4b00
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b5d9623721f5ea32e5251164d79a43788c2d7c41
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050884"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 Ottiene lo stato del punto di interruzione in sospeso.

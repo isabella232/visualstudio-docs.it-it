@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f535f9d6ad4aa917cde493dfcfe089896634d706
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46d687b0684472300511ca9d6ff17dcbf34c925e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948114"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054431"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gestire i pacchetti necessari con requirements.txt
 
@@ -39,7 +40,7 @@ Dal punto di vista tecnico, per tenere traccia dei requisiti è possibile usare 
 
 Poiché i file *requirements.txt* servono a bloccare i requisiti di un ambiente, vengono indicate le versioni precise per tutti i pacchetti installati. L'uso di versioni precise garantisce di poter riprodurre facilmente l'ambiente in un altro computer. I pacchetti vengono inclusi anche se sono stati installati con un intervallo di versioni, come dipendenza di un altro pacchetto o con un programma di installazione diverso da pip.
 
-Se pip non riesce a installare un pacchetto e questo è presente in un file *requirements.txt*, l'intera installazione non riesce. In questo caso, modificare manualmente il file in modo da escludere questo pacchetto oppure usare le [opzioni di pip](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) in modo che facciano riferimento a una versione installabile del pacchetto. Ad esempio, può essere preferibile usare [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) per compilare una dipendenza e aggiungere l' `--find-links <path>` opzione all' *requirements.txt*:
+Se pip non riesce a installare un pacchetto e questo è presente in un file *requirements.txt*, l'intera installazione non riesce. In questo caso, modificare manualmente il file in modo da escludere questo pacchetto oppure usare le [opzioni di pip](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) in modo che facciano riferimento a una versione installabile del pacchetto. Ad esempio, è preferibile usare [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) per compilare una dipendenza e aggiungere l'opzione `--find-links <path>` al *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure
@@ -71,4 +72,4 @@ Cleaning up...
 - [Gestire ambienti Python in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)
 - [Percorsi di ricerca](search-paths.md)
-- [Informazioni di riferimento sulla finestra ambienti Python](python-environments-window-tab-reference.md)
+- [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)

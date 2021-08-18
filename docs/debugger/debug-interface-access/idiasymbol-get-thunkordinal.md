@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8cc04bd3b6869bfde35ae5dcb7bc0a88f3ce5c7d5a3d9ab4c7d01268ea82f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06ad9b4e11e81a337095b49a15411688e2974e1f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404682"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134139"
 ---
 # <a name="idiasymbolget_thunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 Recupera il tipo di thunk di una funzione.
@@ -46,7 +46,7 @@ HRESULT get_thunkOrdinal (
 ## <a name="remarks"></a>Commenti
  Questa proprietà è valida solo se il simbolo è un [valore di enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagThunk` .
 
- Un "thunk" è una parte di codice che esegue la conversione tra uno spazio di indirizzi di memoria a 32 bit (noto anche come spazio indirizzi flat) e uno spazio indirizzi a 16 bit (noto come spazio indirizzi segmentato).
+ Un "thunk" è una parte di codice che esegue la conversione tra uno spazio indirizzi di memoria a 32 bit (noto anche come spazio indirizzi flat) e uno spazio indirizzi a 16 bit (noto come spazio indirizzi segmentato).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

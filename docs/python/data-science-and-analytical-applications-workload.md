@@ -6,15 +6,16 @@ ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bd57dd13bdb487307c416cd5013f197172d5fc6c
-ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+ms.openlocfilehash: d33a33cacd1c5fb6c2d7cd4c45a14fa32d2cc1bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114796216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140505"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
 
@@ -38,7 +39,7 @@ Python e R sono due dei principali linguaggi di scripting usati per le attività
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Python è un linguaggio di scripting fondamentale usato per le attività di data science. Python è facile da imparare ed è supportato da un nutrito ecosistema di pacchetti. Questi pacchetti soddisfano le esigenze di un'ampia gamma di scenari, ad esempio l'acquisizione e la pulizia dei dati, il training di modelli di dati, la distribuzione dei dati e i tracciati. F# è anche un potente linguaggio .NET funzionale adatto per un'ampia gamma di attività di elaborazione dati.
+Python è un linguaggio di scripting fondamentale usato per le attività di data science. Python è facile da imparare ed è supportato da un nutrito ecosistema di pacchetti. Questi pacchetti soddisfano le esigenze di un'ampia gamma di scenari, ad esempio l'acquisizione e la pulizia dei dati, il training di modelli di dati, la distribuzione dei dati e i tracciati. F# è anche un potente linguaggio .NET funzionale ideale per un'ampia gamma di attività di elaborazione dei dati.
 ::: moniker-end
 
 <!--Note link on the image because this one is large -->
@@ -80,15 +81,15 @@ SQL Server supporta l'uso di Python per eseguire attività di analisi avanzate d
 
 L'esecuzione del codice nella posizione in cui si trovano già i dati offre i vantaggi seguenti:
 
-- **Eliminazione dello spostamento dei dati:** invece di spostare i dati dal database all'applicazione o al modello, è possibile compilare applicazioni nel database. Questa funzionalità consente di evitare le barriere a livello di sicurezza, conformità, governance e integrità, oltre a una serie di problemi simili correlati allo spostamento di grandi quantità di dati. È anche possibile usare set di dati che non potrebbero essere gestiti con la memoria di un computer client.
+- **Eliminazione dello spostamento dei dati:** anziché spostare i dati dal database all'applicazione o al modello, è possibile compilare applicazioni nel database. Questa funzionalità consente di evitare le barriere a livello di sicurezza, conformità, governance e integrità, oltre a una serie di problemi simili correlati allo spostamento di grandi quantità di dati. È anche possibile usare set di dati che non potrebbero essere gestiti con la memoria di un computer client.
 
-- **Distribuzione semplice:** dopo aver pronto un modello, distribuirlo nell'ambiente di produzione è semplice incorporarlo in uno script T-SQL T. Qualsiasi applicazione client SQL scritta in qualsiasi linguaggio può quindi sfruttare modelli e intelligence tramite una chiamata di stored procedure. Non sono necessarie integrazioni specifiche del linguaggio.
+- **Distribuzione semplice:** quando un modello è pronto, distribuirlo nell'ambiente di produzione è semplice incorporarlo in uno script T-SQL. Qualsiasi applicazione client SQL scritta in qualsiasi linguaggio può quindi sfruttare modelli e intelligence tramite una chiamata di stored procedure. Non sono necessarie integrazioni specifiche del linguaggio.
 
-- **Enterprise prestazioni** e scalabilità di livello superiore: è possibile usare le funzionalità avanzate di SQL Server, ad esempio gli indici di tabelle e colonne in memoria, con le API scalabili ad alte prestazioni nei pacchetti RevoScale. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
+- **Enterprise** prestazioni e scalabilità di livello superiore: è possibile usare le funzionalità avanzate di SQL Server come gli indici di tabelle e archivi colonne in memoria con le API scalabili ad alte prestazioni nei pacchetti RevoScale. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
 
-- **Estendibilità** dettagliata: è possibile installare ed eseguire uno dei pacchetti open source più recenti in SQL Server per creare applicazioni di deep learning e intelligenza artificiale su enormi quantità di dati in SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
+- **Estensibilità** dettagliata: è possibile installare ed eseguire uno dei pacchetti open source più recenti in SQL Server per creare applicazioni di Deep Learning e intelligenza artificiale su enormi quantità di dati in SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
 
-- **Disponibilità elevata senza** costi aggiuntivi: le integrazioni del linguaggio sono disponibili in tutte le edizioni di SQL Server 2017 e versioni successive, inclusa l'edizione Express.
+- **Ampia disponibilità senza costi aggiuntivi:** le integrazioni dei linguaggi sono disponibili in tutte le edizioni di SQL Server 2017 e versioni successive, inclusa l'edizione Express.
 
 Per sfruttare al meglio l'integrazione in SQL Server, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Elaborazione ed archiviazione dati** con l'opzione **SQL Server Data Tools**. Questa opzione abilita SQL IntelliSense, l'evidenziazione della sintassi e la distribuzione.
 

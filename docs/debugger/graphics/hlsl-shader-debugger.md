@@ -1,6 +1,6 @@
 ---
 title: Debugger shader HLSL | Microsoft Docs
-description: Usare il debugger HLSL in Analizzatore grafica per comprendere il funzionamento del codice HLSL nell'app. Il debugger può simulare l'esatto thread HLSL che interessa.
+description: Usare il debugger HLSL in Analizzatore grafica per comprendere il funzionamento del codice HLSL nell'app. Il debugger può simulare l'esatto thread HLSL di interesse.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b1f8b38d980186d72064b42fc28ade3576670f1925328a61c247d6dabf96b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b9cc3cb9a0792121f03d16be1f52ba3c1cf9fe39
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362612"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133926"
 ---
 # <a name="hlsl-shader-debugger"></a>Debugger dello shader HLS
 Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a comprendere come opera il codice dello shader HLSL in condizioni di funzionamento reali dell'app.
@@ -41,7 +41,7 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
 
   Tuttavia, il debugger HLSL fornisce un'esperienza di debug più simile a quella di tipo CPU rispetto a quanto sarebbe altrimenti possibile.
 
-## <a name="hlsl-shader-edit--apply"></a>Modifica shader HLSL & applica
+## <a name="hlsl-shader-edit--apply"></a>Modifica dello shader HLSL & applica
  Il debugger dello shader HLSL non supporta la funzionalità Modifica e continuazione nello stesso modo del debugger CPU perché il modello di esecuzione delle GPU non consente l'annullamento dello stato dello shader. Il debugger HLSL supporta invece la funzionalità Modifica e applicazione, che consente di modificare i file di origine HLSL e quindi di scegliere **Applica** per rigenerare il frame per vedere l'effetto delle modifiche. Il codice modificato dello shader viene archiviato in un file separato per mantenere l'integrità del file di origine HLSL del progetto, ma una volta definite le modifiche è possibile scegliere **Copia in...** per copiare le modifiche nel progetto. Con questa funzionalità è possibile scorrere rapidamente il codice dello shader contenente gli errori ed eliminare i passaggi di ricompilazione e acquisizione che comportano un grande consumo di risorse dal flusso di lavoro del debug HLSL.
 
 ## <a name="hlsl-disassembly"></a>Disassembly HLSL
@@ -72,7 +72,7 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
    > [!NOTE]
    > Questo punto di ingresso nel debugger HLSL esegue il debug del thread del pixel shader che corrisponde alla chiamata di disegno, alla primitiva e al pixel desiderati oppure dei thread del vertex shader i cui risultati sono interpolati dalla chiamata di disegno, dalla primitiva e dal pixel desiderato. Nel caso dei vertex shader, è possibile migliorare ulteriormente il punto di ingresso in un vertice specifico espandendo i dettagli del vertex shader.
 
-   Per esempi su come usare il debugger HLSL per eseguire il debug degli errori shader, vedere [Esempi](graphics-diagnostics-examples.md) o procedure dettagliate collegate nella sezione Vedere anche.
+   Per esempi su come usare il debugger HLSL [](graphics-diagnostics-examples.md) per eseguire il debug degli errori dello shader, vedere Esempi o procedure dettagliate a cui è collegato nella sezione Vedere anche.
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)

@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5c7bb3cf932c1e90c0540cd4c8ec378487563b0b5122818a2d2744fd5e2ebb66
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3df15148f2a42d0dea7a258d17097d515a1249e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425362"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136118"
 ---
 # <a name="how-to-add-a-finder-method"></a>Procedura: Aggiungere un metodo Finder
   Per consentire al servizio Connettività dati business (BDC) di visualizzare un elenco di entità in una web part o in un elenco, è necessario creare un *metodo Finder.* Un metodo Finder è un metodo speciale che restituisce una raccolta di istanze di entità. Per altre informazioni, vedere [Progettazione di un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)

@@ -1,6 +1,6 @@
 ---
 title: Cronologia pixel grafica | Microsoft Docs
-description: Risolvere i problemi di rendering visualizzando la cronologia di un pixel specifico. Cronologia pixel grafica Mostra gli effetti degli eventi Direct3D.
+description: Risolvere i problemi di rendering tramite la visualizzazione della cronologia di un pixel specifico. Cronologia pixel grafica mostra gli effetti degli eventi Direct3D.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 977d97bad864c27c164b6a7da0b14ad1a08128e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed00f0616cc18ce9f2bc73ebbae0927e0c79e990
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888628"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058568"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visual Studio consente di comprendere in che modo uno specifico pixel viene interessato dagli eventi Direct3D che si verificano durante un frame del gioco o dell'app.

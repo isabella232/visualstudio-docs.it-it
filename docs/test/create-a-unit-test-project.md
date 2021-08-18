@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 81dcaf5bee778c3330f504030634db7b24030c5bf360528b7c23f3c472242811
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d7b5629cc50a2a9d08d00daabd2b4579e628a6cb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395357"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140050"
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
@@ -30,7 +30,7 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
 ::: moniker range="vs-2017"
 
-2. Nella finestra **di dialogo Nuovo Project**  espandere il nodo Installato, scegliere la lingua da usare per il progetto di test e quindi **scegliere Test**.
+2. Nella finestra **di Project** nuovo progetto  di test espandere il nodo Installato , scegliere il linguaggio da usare per il progetto di test e quindi **scegliere Test**.
 
 3. Selezionare il modello di progetto per il framework di test che si vuole usare, ad esempio **Progetto di test MSTest** o **Progetto di test NUnit**. Assegnare un nome al progetto e quindi scegliere **OK**.
 
@@ -52,7 +52,7 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
    1. Selezionare il progetto di test in **Esplora soluzioni**.
 
-   2. Nel menu **Project** scegliere **Aggiungi riferimento**.
+   2. Nel menu **Project** scegliere **Aggiungi riferimento.**
 
    3. In **Gestione riferimenti** selezionare il nodo **Soluzione** in **Progetti**. Selezionare il progetto di codice da testare, quindi selezionare **OK**.
 

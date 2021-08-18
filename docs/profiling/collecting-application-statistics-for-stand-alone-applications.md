@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dbc5e6dea90f60e5474d27c19a23fc0a10e348ba1ad3529d106555b885c195b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 425119d1793bef1ddac99c36f15b91664241a3bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136417"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccogliere le statistiche delle applicazioni autonome tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche sulle prestazioni per le applicazioni client autonome tramite il metodo di campionamento dalla riga di comando.

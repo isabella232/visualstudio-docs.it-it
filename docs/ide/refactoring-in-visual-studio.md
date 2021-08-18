@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bdd98bf263ac8ef40bb0cf8a2e5d82d9a277421072185ac0e6188cb2c63329a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 65eb2f7992e15751fe67380423cd5999f03b5011
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412387"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078167"
 ---
 # <a name="refactor-code"></a>Effettuare il refactoring del codice
 

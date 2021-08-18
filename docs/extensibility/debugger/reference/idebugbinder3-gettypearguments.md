@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa3de2f8fc505aa6baaffd5c4370ef407c09029a33f9d2c2c14d02b8174f8e6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5e09dc87423eef2327100385e5c1a823aea5f042
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262425"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119802"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Questo metodo recupera un elenco di tipi di argomento associati a questo oggetto.
@@ -52,7 +52,7 @@ int GetTypeArguments(
 [in] Numero di campi da ignorare prima di ottenere i tipi di argomento.
 
 `count`\
-[in] Numero di campi argomento da restituire (specifica anche le dimensioni della `ppFields` matrice).
+[in] Numero di campi dell'argomento da restituire (specifica anche le dimensioni della `ppFields` matrice).
 
 `ppFields`\
 [in, out] Matrice di campi che verranno compilati al ritorno di questo metodo.

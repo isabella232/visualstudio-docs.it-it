@@ -17,12 +17,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 799ac67e5e136c479820b160e8e8f071d53f2d9c1d9db381fb3d24aa405e974b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 42de6efe72db8ae8cc1583114a288dd037c4b0c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355074"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150469"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procedura: Raccogliere dati ETW (Event Tracing for Windows)
 

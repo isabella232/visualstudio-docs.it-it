@@ -1,6 +1,6 @@
 ---
 title: Elemento ItemMetadata (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento ItemMetadata di MSBuild, che contiene una chiave di metadati dell'elemento definita dall'utente che ha il valore dei metadati.
+description: Informazioni sull'MSBuild itemMetadata, che contiene una chiave di metadati dell'elemento definita dall'utente con il valore dei metadati.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f48c57769ff6f969e68a50418b017d9928149fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aca05e3711d23e8346770fb45523f98c0c72da38
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913814"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143183"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
 
@@ -50,7 +51,7 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
 
 ### <a name="child-elements"></a>Elementi figlio
 
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -78,5 +79,5 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)

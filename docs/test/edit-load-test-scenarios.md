@@ -1,6 +1,6 @@
 ---
 title: Scenari di test di carico
-description: Informazioni su come modificare gli scenari di test di carico, che consentono di configurare i test per simulare carichi di lavoro complessi e realistici.
+description: Informazioni su come modificare scenari di test di carico, che consentono di configurare test per simulare carichi di lavoro complessi e realistici.
 ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
@@ -12,12 +12,13 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 01129ae017dd51a6bc36d966a495eb7fd1afd2f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 1b269b0563c82a97fcbf17c7b920a9433e1c1692
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926898"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123125"
 ---
 # <a name="edit-load-test-scenarios"></a>Modificare gli scenari di test di carico
 
@@ -50,14 +51,14 @@ Uno scenario è costituito anche da molte altre proprietà che è possibile modi
 |Attività|Argomenti correlati|
 |-|-----------------------|
 |**Aggiungere pause di interazione umana artificiali nello scenario:** il tempo interazione utente consente di simulare il comportamento umano rispetto alle attese tra le interazioni con un sito Web. I tempi interazione utente intercorrono tra le richieste in un test delle prestazioni Web e tra le iterazioni del test in uno scenario di test di carico. L'uso dei tempi interazione utente in un test di carico può essere utile per creare simulazioni di carico più accurate.|-   [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md)|
-|**Specificare il numero di utenti virtuali per lo scenario:** è possibile configurare le proprietà del modello di carico per specificare come viene regolato il carico utente simulato durante un test di carico. Sono disponibili tre modelli di carico incorporati: costante, per passaggio e basato su obiettivo. La scelta del modello di carico e la regolazione delle proprietà avvengono per ottenere livelli appropriati in base agli obiettivi del test di carico.|-   [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
+|**Specificare il numero di utenti virtuali per lo scenario:** è possibile configurare le proprietà del modello di carico per specificare come viene regolato il carico utente simulato durante un test di carico. Sono disponibili tre modelli di carico incorporati: costante, per passaggio e basato su obiettivo. La scelta del modello di carico e la regolazione delle proprietà avvengono per ottenere livelli appropriati in base agli obiettivi del test di carico.|-   [Modificare i modelli di carico per modellare le attività degli utenti virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurare la probabilità che un utente virtuale esegua un test nello scenario:** è possibile usare la combinazione di test per specificare la probabilità che un utente virtuale esegua un test specifico in uno scenario di test di carico. In questo modo, è possibile simulare un carico in maniera più realistica. Anziché avere un unico flusso di lavoro nelle applicazioni, è possibile avere più flussi di lavoro in modo da ottenere una migliore approssimazione della modalità di interazione degli utenti finali con le applicazioni.|-   [Modificare i modelli di combinazione di test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
 |**Aggiungere o rimuovere un test delle prestazioni Web o uno unit test da uno scenario di test di carico:** è possibile aggiungere o rimuovere un test delle prestazioni Web o uno unit test da un test di carico di uno scenario. Un test di carico contiene uno o più scenari, ciascuno dei quali contiene uno o più test delle prestazioni Web o unit test.|-   [Modificare la combinazione di test](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**Configurare la combinazione di reti necessaria per lo scenario:** usando la combinazione di reti, è possibile simulare più realisticamente il carico di rete in uno scenario di test di carico. Il carico viene generato usando una combinazione di reti eterogenea anziché un solo tipo di rete. Viene creata una maggiore approssimazione dell'interazione degli utenti finali con le applicazioni. Il modello di combinazione di reti deve riflettere gli obiettivi di quello scenario.|-   [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md)|
 |**Selezionare la combinazione di Web browser appropriata per lo scenario:** usando la combinazione di browser, è possibile simulare più realisticamente il carico Web in uno scenario di test di carico. Il carico viene generato usando una combinazione eterogenea di browser anziché un solo browser. Viene quindi creata una migliore approssimazione dei browser che saranno usati nelle applicazioni.|-   [Specificare i tipi di Web browser](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**Configurare le impostazioni delle interazioni del test per lo scenario**: usando l'Editor test di carico e la finestra Proprietà, è possibile modificare uno scenario di test di carico per configurare le impostazioni delle iterazioni del test. Per impostazione predefinita, un scenario viene configurato senza il numero massimo di iterazioni. facoltativamente, è possibile configurare il numero massimo di iterazioni nello scenario e l'intervallo tra un'iterazione e l'altra.|-   [Configurare le iterazioni di test in uno scenario](../test/configure-test-iterations-in-a-load-test-scenario.md)|
 |**Configurare le impostazioni di ritardo per lo scenario:** usando l'**Editor test di carico** e la finestra **Proprietà**, è possibile specificare un ritardo prima di avviare uno scenario in un test di carico. La proprietà **Ritarda ora di inizio** può ad esempio essere utile quando è necessario che in uno scenario venga avviata la produzione di articoli usati in un altro scenario. È possibile ritardare il secondo scenario per consentire al primo di popolare i dati.|-   [Configurare ritardi di avvio di uno scenario](../test/configure-scenario-start-delays.md)|
-|**Specificare computer remoti da usare in uno scenario di test di carico:** dopo aver creato un test di carico, è possibile modificare le proprietà dello scenario di test di carico e indicare gli agenti di test da includere. Per ulteriori informazioni, vedere [test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md).|-   [Procedura: Specificare agenti di test da usare](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
+|**Specificare computer remoti da usare in uno scenario di test di carico:** dopo aver creato un test di carico, è possibile modificare le proprietà dello scenario di test di carico e indicare gli agenti di test da includere. Per altre informazioni, vedere [Test controller e agenti di test.](configure-test-agents-and-controllers-for-load-tests.md)|-   [Procedura: Specificare agenti di test da usare](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 855aea5fefede1e454a8f273ad1cdf402cae4b9aea6159f0ac6f86fb93d64818
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 391115fb1ba263e8ddff0878c5284f42ba458897
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366238"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122722"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Procedura: Visualizzare documenti nell'anteprima di stampa a livello di codice
   Se la soluzione genera un report, è possibile che si voglia far visualizzare il report all'utente in modalità Anteprima di stampa.

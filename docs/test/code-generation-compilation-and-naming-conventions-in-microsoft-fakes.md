@@ -1,6 +1,6 @@
 ---
 title: 'Microsoft Fakes: generare & codice di compilazione; convenzioni di denominazione'
-description: Informazioni sulle opzioni e sui problemi Fakes generazione e compilazione del codice, incluse le convenzioni di denominazione Fakes tipi, membri e parametri generati.
+description: Informazioni sulle opzioni e sui problemi Fakes generazione e compilazione del codice, incluse le convenzioni di denominazione per Fakes tipi, membri e parametri generati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10469a19000000720d2a11dc9b48e4f849e30f81f8952429d39beefbfb74f396
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e683d40d93dca29445491b1e3fccdcd9c863b8f6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395408"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123099"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
@@ -252,20 +252,20 @@ attribute of the Assembly element in the .fakes:
 > [!NOTE]
 > - **Getter e setter di indicizzatori** vengono trattati in modo analogo a quelli di proprietà. Il nome predefinito per un indicizzatore è `Item`.
 > - I nomi dei **tipi di parametro** vengono trasformati e concatenati.
-> - **Il tipo restituito** viene ignorato a meno che non sia presente un'ambiguità di overload. Se esiste un'ambiguità di overload, il tipo restituito viene aggiunto alla fine del nome.
+> - **Il tipo restituito** viene ignorato a meno che non vi sia un'ambiguità di overload. Se esiste un'ambiguità di overload, il tipo restituito viene aggiunto alla fine del nome.
 
 ### <a name="parameter-type-naming-conventions"></a>Convenzioni di denominazione dei tipi di parametro
 
 |Dato un|La stringa aggiunta è...|
 |-|-|
-|Tipo `T`|T<br /><br /> Lo spazio dei nomi, la struttura annidata e i tipi generici vengono eliminati.|
+|Un **tipo**`T`|T<br /><br /> Lo spazio dei nomi, la struttura annidata e i tipi generici vengono eliminati.|
 |Un **parametro out**`out T`|`TOut`|
 |**Parametro Ref** `ref T`|`TRef`|
 |Tipo **di matrice**`T[]`|`TArray`|
 |Tipo di **matrice multidimensionale**`T[ , , ]`|`T3`|
 |Tipo di **puntatore**`T*`|`TPtr`|
 |Tipo **generico**`T<R1, ...>`|`TOfR1`|
-|Argomento **di tipo generico di** `!i` tipo`C<TType>`|`Ti`|
+|Argomento **di tipo generico** di `!i` tipo`C<TType>`|`Ti`|
 |Argomento **di metodo generico** del `!!i` metodo`M<MMethod>`|`Mi`|
 |Tipo **annidato**`N.T`|Vengono aggiunti `N` e quindi `T`.|
 

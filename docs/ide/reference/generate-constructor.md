@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: a74b9d65db028646a6aca28b2c3bbb738e51ae18
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5b11489a6233a016beb287930c9ca7d1082f646f46a7bf50179862866347233d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151704"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429716"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 

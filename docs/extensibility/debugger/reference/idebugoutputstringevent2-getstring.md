@@ -1,6 +1,6 @@
 ---
 description: Ottiene il messaggio visualizzabile.
-title: 'IDebugOutputStringEvent2:: GetString | Microsoft Docs'
+title: IDebugOutputStringEvent2::GetString | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: f059f8e0-ad44-49ac-ba90-73576ada5e06
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d066f2e88d65c6a75e1ccb881b0e3553afc8b7d9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9560a6512f0208414789359562bd2d8870b79d18
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084675"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088380"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 Ottiene il messaggio visualizzabile.
@@ -42,7 +43,7 @@ int GetString(
 
 ## <a name="parameters"></a>Parametri
 `pbstrString`\
-out Restituisce il messaggio visualizzabile.
+[out] Restituisce il messaggio visualizzabile.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

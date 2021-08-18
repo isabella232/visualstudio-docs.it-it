@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: e91e569573076d1614a9fa946b67f3bda01e6fba
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8b1d0914c83a8cc36a389006560401619fab1ef7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150638"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
 Le transazioni assicurano che le modifiche apportate all'archivio siano considerate come un gruppo. È possibile eseguire il commit o il rollback delle modifiche raggruppate come singola unità.
@@ -57,7 +58,7 @@ catch (Exception ex)
  Per rendere permanenti le modifiche, è `Commit` necessario che la transazione venga eliminata. Se si verifica un'eccezione che non viene rilevata all'interno della transazione, l'archivio verrà reimpostato sullo stato precedente alle modifiche.
 
 ## <a name="rolling-back-a-transaction"></a>Rollback di una transazione
- Per assicurarsi che l'archivio rimanga nello stato precedente alla transazione o ne venga ripristinato lo stato, è possibile usare una di queste tattiche:
+ Per assicurarsi che l'archivio rimanga nello stato precedente alla transazione o ne venga ripristinato lo stato, è possibile usare una di queste strategie:
 
 1. Generare un'eccezione che non viene intercettata nell'ambito della transazione.
 
@@ -70,10 +71,10 @@ catch (Exception ex)
 ## <a name="transactions-do-not-affect-non-store-objects"></a>Le transazioni non influiscono sugli oggetti non di archiviazione
  Le transazioni regolano solo lo stato dell'archivio. Non possono annullare le modifiche parziali apportate a elementi esterni, ad esempio file, database o oggetti dichiarati con tipi ordinari all'esterno della definizione DSL.
 
- Se un'eccezione potrebbe lasciare una modifica di questo tipo incoerente con l'archivio, è necessario gestire tale possibilità nel gestore di eccezioni. Un modo per assicurarsi che le risorse esterne rimangano sincronizzate con gli oggetti Store è quello di accoppiare ogni oggetto esterno a un elemento nell'archivio usando gestori eventi. Per altre informazioni, vedere [Propagare modifiche all'esterno del modello da parte dei gestori eventi.](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+ Se un'eccezione potrebbe lasciare tale modifica incoerente con l'archivio, è necessario gestire tale possibilità nel gestore di eccezioni. Un modo per assicurarsi che le risorse esterne rimangano sincronizzate con gli oggetti Store è quello di accoppiare ogni oggetto esterno a un elemento nell'archivio usando gestori eventi. Per altre informazioni, vedere [Propagare modifiche all'esterno del modello da parte dei gestori eventi.](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ## <a name="rules-fire-at-the-end-of-a-transaction"></a>Le regole vengono applicate alla fine di una transazione
- Alla fine di una transazione, prima dell'eliminazione della transazione, vengono attivato le regole associate agli elementi nell'archivio. Ogni regola è un metodo applicato a un elemento del modello modificato. Ad esempio, esistono regole di "correzione" che aggiornano lo stato di una forma quando il relativo elemento del modello viene modificato e che creano una forma quando viene creato un elemento del modello. Non esiste alcun ordine di attivazione specificato. Una modifica apportata da una regola può essere applicata a un'altra regola.
+ Alla fine di una transazione, prima dell'eliminazione della transazione, vengono attivato le regole associate agli elementi nell'archivio. Ogni regola è un metodo applicato a un elemento del modello modificato. Ad esempio, esistono regole di "correzione" che aggiornano lo stato di una forma quando il relativo elemento del modello viene modificato e che creano una forma quando viene creato un elemento del modello. Non è stato specificato alcun ordine di attivazione. Una modifica apportata da una regola può essere applicata a un'altra regola.
 
  È possibile definire regole personalizzate. Per altre informazioni sulle regole, vedere [Risposta e propagazione delle modifiche.](../modeling/responding-to-and-propagating-changes.md)
 
@@ -91,7 +92,7 @@ catch (Exception ex)
  Ciò è particolarmente utile per il trasferimento di informazioni tra le regole.
 
 ## <a name="transaction-state"></a>Stato della transazione
- In alcuni casi è necessario evitare di propagare una modifica se la modifica è causata dall'annullamento o dal nuovo annullamento di una transazione. Questa operazione può verificarsi, ad esempio, se si scrive un gestore del valore della proprietà in grado di aggiornare un altro valore nell'archivio. Poiché l'operazione di annullamento reimposta tutti i valori nell'archivio sui rispettivi stati precedenti, non è necessario calcolare i valori aggiornati. Usare questo codice:
+ In alcuni casi è necessario evitare di propagare una modifica se la modifica è causata dall'annullamento o dal nuovo annullamento di una transazione. Ciò può verificarsi, ad esempio, se si scrive un gestore del valore della proprietà in grado di aggiornare un altro valore nello Store. Poiché l'operazione di annullamento reimposta tutti i valori nell'archivio sui rispettivi stati precedenti, non è necessario calcolare i valori aggiornati. Usare questo codice:
 
 ```csharp
 if (!this.Store.InUndoRedoOrRollback) {...}

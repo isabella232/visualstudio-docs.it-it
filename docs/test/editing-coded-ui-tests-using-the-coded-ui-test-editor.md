@@ -14,12 +14,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6be42c91936da9a02c735ea8759e6ccba918b4f12f7dc52a3cfdd9036fa793ff
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b3939debb9ee62a1bb5e621a9e1a99f1b6e99752
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121441447"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140076"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
 
@@ -64,7 +64,7 @@ Quando si apre il file *UIMap.uitest* associato al test codificato dell'interfac
 
 ![Modifica del menu di scelta rapida con il generatore di test codificati dell'interfaccia utente.](../test/media/editcodeduitest.png)
 
-In **Esplora soluzioni** aprire il menu di scelta rapida *per UIMap.uitest* e scegliere **Apri**. Il test codificato dell'interfaccia utente viene visualizzato **nell'Editor test codificati dell'interfaccia utente.** Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.
+In **Esplora soluzioni** aprire il menu di scelta rapida per *UIMap.uitest* e scegliere **Apri**. Il test codificato dell'interfaccia utente viene visualizzato **nell'Editor test codificati dell'interfaccia utente.** Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.
 
 > [!TIP]
 > Quando si seleziona un'azione dell'interfaccia utente che si trova in un metodo nel riquadro **Azioni dell'interfaccia utente** , viene evidenziato il controllo corrispondente. È possibile modificare anche le proprietà delle azioni dell'interfaccia utente o dei controlli.
@@ -93,7 +93,7 @@ Dopo aver completato le modifiche, salvare le modifiche nel  file *UIMap.Designe
 
 - Per annullare le modifiche apportate alle proprietà, **scegliere** Annulla **dal** menu Modifica o premere **CTRL** + **Z.**
 
-- È possibile usare il **pulsante Trova sulla barra degli** strumenti dell'editor test codificati dell'interfaccia utente per aprire lo strumento Trova e sostituisci in Visual Studio.  È quindi possibile usare il **controllo Trova** per individuare un'azione dell'interfaccia utente nell'editor test codificato dell'interfaccia utente. Ad esempio, è possibile provare a cercare "Fare clic sul pulsante Accesso". Questo è utile nei test di grandi dimensioni. Non è possibile usare la funzionalità di sostituzione nello strumento **Trova e** sostituisci nell'Editor test codificati dell'interfaccia utente. Per altre informazioni, vedere la sezione relativa al controllo di ricerca in [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md).
+- È possibile usare il **pulsante Trova nella barra degli** strumenti dell'editor test codificati dell'interfaccia utente per aprire lo strumento Trova e sostituisci in Visual Studio.  È quindi possibile usare il **controllo Trova per** individuare un'azione dell'interfaccia utente nell'editor test codificato dell'interfaccia utente. Ad esempio, è possibile provare a cercare "Fare clic sul pulsante Accesso". Questo è utile nei test di grandi dimensioni. Non è possibile usare la funzionalità di sostituzione nello strumento **Trova e** sostituisci nell'Editor test codificati dell'interfaccia utente. Per altre informazioni, vedere la sezione relativa al controllo di ricerca in [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md).
 
 - A volte può essere difficile identificare la posizione dei controlli nell'interfaccia utente dell'applicazione sottoposta a test. Una delle funzionalità dell'Editor di test codificati dell'interfaccia utente consente di selezionare un controllo elencato nella mappa del controllo dell'interfaccia utente e visualizzarne la posizione nell'applicazione sottoposta a test. Per altre informazioni, vedere [Individuare un controllo dell'interfaccia utente nell'applicazione sottoposta a test](#locate-a-ui-control-in-the-application-under-test) più avanti in questo articolo.
 
@@ -140,7 +140,7 @@ Se si determina che uno dei metodi di test nel test codificato dell'interfaccia 
 
 Nel **riquadro** Azione dell'interfaccia utente selezionare il metodo di test che si vuole spostare nel file *UIMap.cs* o *UIMap.vb* per facilitare la funzionalità del codice personalizzato che non verrà sovrascritta quando il codice di test viene ricompilato. Scegliere poi il pulsante **Sposta codice** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente o aprire il menu di scelta rapida per il metodo di test e scegliere **Sposta codice**. Il metodo di test viene rimosso dal file *UIMap.uitest* e non viene più visualizzato nel riquadro **Azioni dell'interfaccia** utente. Per modificare il file di test spostato, aprire il file *UIMap.cs* o *UIMap.vb* **da Esplora soluzioni**.
 
-Dopo aver modificato il metodo , salvare le modifiche apportate  al file *UIMap.Designer* scegliendo Salva sulla barra Visual Studio strumenti.
+Dopo aver modificato il metodo , salvare le modifiche apportate  al file *UIMap.Designer* scegliendo Salva sulla barra degli strumenti Visual Studio.
 
 > [!WARNING]
 > Dopo aver spostato un metodo, non è più possibile modificarlo mediante l'editor di test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice. Quando si sposta un metodo, verrà visualizzata una finestra di dialogo di Microsoft Visual Studio Avvisa che il metodo verrà spostato dal file *UIMap.uitest* al file *UIMap.cs* o *UIMap.vb* e che non sarà più possibile modificare il metodo usando l'Editor di test codificati dell'interfaccia utente. Scegliere **Sì**.

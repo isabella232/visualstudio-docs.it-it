@@ -1,6 +1,6 @@
 ---
 title: Attività GetFrameworkPath | Microsoft Docs
-description: Informazioni su come usare l MSBuild operazione GetFrameworkPath per recuperare il percorso .NET Framework assembly.
+description: Informazioni su come usare l MSBuild'attività GetFrameworkPath per recuperare il percorso .NET Framework assembly.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 30585cba87e24449ef3e95a43dd97b9bbe9dbceca397e2238ba45883b8a1f05d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 80c4feb8c0b1ba92df467a634e748c177341bb8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397683"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077361"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (attività)
 
@@ -48,9 +48,9 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GetFramewo
 
 ## <a name="remarks"></a>Commenti
 
-Se sono installate diverse versioni .NET Framework, questa attività restituisce la versione in MSBuild è progettata per l'esecuzione.
+Se sono installate diverse versioni del .NET Framework, questa attività restituisce la versione MSBuild è progettata per l'esecuzione.
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

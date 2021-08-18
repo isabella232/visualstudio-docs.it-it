@@ -8,17 +8,18 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e52b7b3fd620080b73e8d3de80672003ecb8fcf7
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: ce29e7f2d8d75cf60423cbb65ca3b2da449e4c6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900529"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094542"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
-La maggior parte dei Visual Studio è il [layout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)della finestra di dialogo utilità, ovvero le finestre di dialogo non inteme che seguono i principi standard di layout delle finestre di dialogo [di Windows Desktop.](/windows/desktop/uxguide/win-dialog-box) Quando Visual Studio per aggiornare l'interfaccia utente, alcune delle finestre di dialogo più importanti hanno una nuova progettazione che le definisce esperienze di definizione del prodotto. Il [layout della finestra di dialogo](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) a t-to-tato ha un aspetto a base di testo.
+La maggior parte dei dialog Visual Studio è il [layout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)della finestra di dialogo utilità , ovvero le finestre di dialogo non inteme che seguono i principi di layout Windows [di dialogo](/windows/desktop/uxguide/win-dialog-box)desktop. Quando Visual Studio per aggiornare l'interfaccia utente, alcune delle finestre di dialogo più importanti hanno una nuova progettazione che le definisce esperienze di definizione del prodotto. Il [layout della finestra di dialogo](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) a t-to-tato ha un aspetto a base di testo.
 
 ## <a name="utility-dialog-layout"></a><a name="BKMK_UtilityDialogLayout"></a> Layout della finestra di dialogo utilità
 
@@ -59,7 +60,7 @@ La maggior parte dei Visual Studio è il [layout](../../extensibility/ux-guideli
 
 - Se sono presenti pulsanti orizzontali che operano all'interno della finestra di dialogo, la configurazione alternativa del pulsante di comando è uno stack verticale in alto a destra. Vedere [Pulsanti di comando interni di](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) seguito.
 
-- Lo spazio a sinistra dei pulsanti di comando (in basso a sinistra/al centro della finestra di dialogo) è considerato parte della "banda" dei controlli delle operazioni del dialogo. L'unico elemento che deve intromettersi in tale spazio è un collegamento alla Guida rilevante per l'attività o la finestra di dialogo complessiva.
+- Lo spazio a sinistra dei pulsanti di comando (in basso a sinistra/al centro della finestra di dialogo) è considerato parte della "banda" dei controlli delle operazioni del dialogo. L'unico elemento che deve intromettersi in tale spazio è un collegamento alla Guida pertinente per l'attività o la finestra di dialogo complessiva.
 
 - I pulsanti di comando devono essere di 75 x 23 pixel.
 
@@ -84,7 +85,7 @@ La maggior parte dei Visual Studio è il [layout](../../extensibility/ux-guideli
 
  ![Distanza consigliata tra controlli](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-d_ControlDistance")
 
- **Figura 08.01-d: Raccomandazioni per la distanza tra i controlli**
+ **Figura 08.01-d: Consigli per la distanza tra i controlli**
 
 #### <a name="control-indentation"></a>Rientro del controllo
  Quando i controlli sono annidati, allineare orizzontalmente i controlli interni al bordo sinistro del controllo precedente, in genere l'etichetta.
@@ -123,7 +124,7 @@ La maggior parte dei Visual Studio è il [layout](../../extensibility/ux-guideli
  **[Sfoglia...]** I pulsanti che seguono una casella di testo devono digitare "Sfoglia..." in modo completo, inclusi i puntini di sospensione. Se lo spazio è ridotto o sono presenti più **pulsanti [Sfoglia...]** sullo schermo, il pulsante può essere ridotto solo ai puntini di sospensione.
 
 ## <a name="themed-dialog-layout"></a><a name="BKMK_ThemedDialogLayout"></a> Layout della finestra di dialogo a t-to-tato
- Le finestre di dialogo con Visual Studio hanno un aspetto più chiaro e offrono più spazio vuoto. La tipografia offre maggiore enfasi e interesse, offrendo un'interlinea più aperta e una variazione delle dimensioni e dei pesi dei caratteri. Laddove possibile, le barre del titolo e del colore sono state ridotte o rimosse. Il layout di queste finestre di dialogo deve seguire questo modello di base:
+ Le finestre di dialogo a Visual Studio hanno un aspetto più chiaro e offrono più spazio vuoto. La tipografia offre maggiore enfasi e interesse, offrendo un'interlinea più aperta e una variazione delle dimensioni e dei pesi dei caratteri. Laddove possibile, le barre del titolo e del colore sono state ridotte o rimosse. Il layout di queste finestre di dialogo deve seguire questo modello di base:
 
 1. Lo sfondo del dialogo è bianco.
 
@@ -154,9 +155,9 @@ La maggior parte dei Visual Studio è il [layout](../../extensibility/ux-guideli
 
  ![Colori della finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-k_ThemedDialogColors")
 
- **Figura 08.01-k: Finestra di dialogo con tema - Colori**
+ **Figura 08.01-k: finestra di dialogo con tema - Colori**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Modelli delle applicazioni per Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 - [Controlli (Windows)](/windows/desktop/uxguide/controls)
 - [Finestre di dialogo (Windows)](/windows/desktop/uxguide/win-dialog-box)

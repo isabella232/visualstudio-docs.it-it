@@ -10,16 +10,16 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 72028bf039c3291a161cb1a6b4eab6895876d566605212c6f21eb6940a9ddcc5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 999c41f50bc1ded593fd529e45acd876665303ce
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031653"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Set di regole consigliate miste
 
-Le regole consigliate miste Microsoft sono incentrate sui problemi più comuni e critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza, arresti anomali delle applicazioni e altri importanti errori logici e di progettazione. Questo set di regole include tutte le regole nel set [di regole Miste minime.](mixed-minimum-rules-rule-set.md)
+Le regole consigliate miste di Microsoft sono incentrate sui problemi più comuni e critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza, arresti anomali delle applicazioni e altri importanti errori logici e di progettazione. Questo set di regole include tutte le regole nel set di regole [Regole minime](mixed-minimum-rules-rule-set.md) miste.
 
 Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti C++ che supportano Common Language Runtime.
 
@@ -30,7 +30,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C6029](/cpp/code-quality/c6029)|Utilizzo del valore non verificato|
 |[C6031](/cpp/code-quality/c6031)|Valore restituito ignorato|
 |[C6053](/cpp/code-quality/c6053)|Terminazione zero da chiamata|
-|[C6054](/cpp/code-quality/c6054)|Terminazione zero mancante|
+|[C6054](/cpp/code-quality/c6054)|Zero terminazione mancante|
 |[C6059](/cpp/code-quality/c6059)|Concatenazione non valida|
 |[C6063](/cpp/code-quality/c6063)|Argomento stringa mancante per formattare la funzione|
 |[C6064](/cpp/code-quality/c6064)|Argomento Integer mancante per formattare la funzione|
@@ -39,25 +39,25 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C6101](/cpp/code-quality/c6101)|Restituzione di memoria non inizializzata|
 |[C6200](/cpp/code-quality/c6200)|L'indice supera il limite massimo del buffer|
 |[C6201](/cpp/code-quality/c6201)|L'indice supera il limite massimo del buffer di stack|
-|[C6214](/cpp/code-quality/c6214)|Cast HRESULT non valido a BOOL|
-|[C6215](/cpp/code-quality/c6215)|Cast BOOL non valido a HRESULT|
-|[C6216](/cpp/code-quality/c6216)|Cast BOOL Compiler-Inserted non valido a HRESULT|
+|[C6214](/cpp/code-quality/c6214)|Cast HRESULT non valido in BOOL|
+|[C6215](/cpp/code-quality/c6215)|Cast BOOL a HRESULT non valido|
+|[C6216](/cpp/code-quality/c6216)|Errore Compiler-Inserted eseguire il cast di BOOL a HRESULT|
 |[C6217](/cpp/code-quality/c6217)|Test HRESULT non valido con NOT|
-|[C6220](/cpp/code-quality/c6220)|Confronto HRESULT non valido con -1|
+|[C6220](/cpp/code-quality/c6220)|Confronto di HRESULT non valido con -1|
 |[C6226](/cpp/code-quality/c6226)|Assegnazione HRESULT non valida a -1|
-|[C6230](/cpp/code-quality/c6230)|HRESULT non valido utilizzato come valore booleano|
-|[C6235](/cpp/code-quality/c6235)|Costante diverso da zero con Logical-Or|
+|[C6230](/cpp/code-quality/c6230)|HRESULT non valido da usare come valore booleano|
+|[C6235](/cpp/code-quality/c6235)|Costante non zero con Logical-Or|
 |[C6236](/cpp/code-quality/c6236)|Logical-Or con costante diverso da zero|
-|[C6237](/cpp/code-quality/c6237)|Zero con Logical-And perde effetti collaterali|
-|[C6242](/cpp/code-quality/c6242)|Rimozione forzata locale|
-|[C6248](/cpp/code-quality/c6248)|Creazione di dacl Null|
-|[C6250](/cpp/code-quality/c6250)|Descrittori di indirizzi non ritirati|
+|[C6237](/cpp/code-quality/c6237)|Zero con Logical-And perde gli effetti collaterali|
+|[C6242](/cpp/code-quality/c6242)|Rimozione locale forzata|
+|[C6248](/cpp/code-quality/c6248)|Creazione dell'elenco DACL Null|
+|[C6250](/cpp/code-quality/c6250)|Descrittori di indirizzi non scaricati|
 |[C6255](/cpp/code-quality/c6255)|Uso non protetto di Alloca|
-|[C6258](/cpp/code-quality/c6258)|Uso di Terminate Thread|
+|[C6258](/cpp/code-quality/c6258)|Uso del thread di terminazione|
 |[C6259](/cpp/code-quality/c6259)|Dead Code In Bitwise-Or Limited Switch|
 |[C6260](/cpp/code-quality/c6260)|Uso dell'aritmetica dei byte|
 |[C6262](/cpp/code-quality/c6262)|Utilizzo eccessivo dello stack|
-|[C6263](/cpp/code-quality/c6263)|Uso di Alloca nel ciclo|
+|[C6263](/cpp/code-quality/c6263)|Uso di Alloca In Loop|
 |[C6268](/cpp/code-quality/c6268)|Parentesi mancanti nel cast|
 |[C6269](/cpp/code-quality/c6269)|Dereferenziazione puntatore ignorata|
 |[C6270](/cpp/code-quality/c6270)|Argomento Float mancante per formattare la funzione|
@@ -93,7 +93,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C6305](/cpp/code-quality/c6305)|Uso dimensione e conteggio non corrispondente|
 |[C6306](/cpp/code-quality/c6306)|Chiamata di funzione dell'argomento variabile non corretto|
 |[C6306](/cpp/code-quality/c6308)|Perdita di riallocazione|
-|[C6310](/cpp/code-quality/c6310)|Costante di filtro eccezioni non valida|
+|[C6310](/cpp/code-quality/c6310)|Costante filtro eccezioni non valida|
 |[C6312](/cpp/code-quality/c6312)|Ciclo di esecuzione di continuazione eccezioni|
 |[C6314](/cpp/code-quality/c6314)|Bitwise-Or precedenza|
 |[C6317](/cpp/code-quality/c6317)|Not Not Complement|
@@ -107,7 +107,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C6335](/cpp/code-quality/c6335)|Perdita dell'handle di processo|
 |[C6381](/cpp/code-quality/c6381)|Informazioni sull'arresto mancanti|
 |[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count sovraccarico del buffer|
-|[C6384](/cpp/code-quality/c6384)|Divisione delle dimensioni dell'indicatore di misura|
+|[C6384](/cpp/code-quality/c6384)|Divisione delle dimensioni del puntatore|
 |[C6385](/cpp/code-quality/c6385)|Overrun di lettura|
 |[C6386](/cpp/code-quality/c6386)|Overrun di scrittura|
 |[C6387](/cpp/code-quality/c6387)|Valore parametro non valido|
@@ -144,23 +144,23 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C6995](/cpp/code-quality/c6995)|Impossibile salvare il file di log XML|
 |[C26100](/cpp/code-quality/c26100)|Race condition|
 |[C26101](/cpp/code-quality/c26101)|Non è possibile usare correttamente l'operazione interlocked|
-|[C26110](/cpp/code-quality/c26110)|Blocco non riuscito del chiamante|
+|[C26110](/cpp/code-quality/c26110)|Il chiamante non riesce a mantenere il blocco|
 |[C26111](/cpp/code-quality/c26111)|Il chiamante non riesce a rilasciare il blocco|
 |[C26112](/cpp/code-quality/c26112)|Il chiamante non può contenere alcun blocco|
-|[C26115](/cpp/code-quality/c26115)|Non è possibile rilasciare il blocco|
+|[C26115](/cpp/code-quality/c26115)|Non è stato possibile rilasciare il blocco|
 |[C26116](/cpp/code-quality/c26116)|Non è possibile acquisire o mantenere il blocco|
 |[C26117](/cpp/code-quality/c26117)|Rilascio del blocco non confermato|
 |[C26140](/cpp/code-quality/c26140)|Errore di annotazione SAL di concorrenza|
-|[C28020](/cpp/code-quality/c28020)|L'espressione non è true in questa chiamata|
+|[C28020](/cpp/code-quality/c28020)|L'espressione non è vera in questa chiamata|
 |[C28021](/cpp/code-quality/c28021)|Il parametro annotato deve essere un puntatore|
 |[C28022](/cpp/code-quality/c28022)|Le classi di funzione in questa funzione non corrispondono alle classi di funzione nel typedef usato per definirla.|
-|[C28023](/cpp/code-quality/c28023)|La funzione assegnata o passata deve avere un'annotazione della classe Function per \_ almeno una delle \_ \_ classi|
-|[C28024](/cpp/code-quality/c28024)|Il puntatore a funzione a cui viene assegnato viene annotato con la classe di funzione, che non è contenuta nell'elenco delle classi di funzione.|
+|[C28023](/cpp/code-quality/c28023)|La funzione assegnata o passata deve avere un'annotazione della classe Function per almeno una delle classi \_ \_ \_|
+|[C28024](/cpp/code-quality/c28024)|Il puntatore a funzione assegnato a viene annotato con la classe di funzione, che non è contenuta nell'elenco delle classi di funzione.|
 |[C28039](/cpp/code-quality/c28039)|Il tipo di parametro effettivo deve corrispondere esattamente al tipo|
-|[C28112](/cpp/code-quality/c28112)|È sempre necessario accedere a una variabile a cui si accede tramite una funzione interlocked tramite una funzione Interlocked.|
+|[C28112](/cpp/code-quality/c28112)|È sempre necessario accedere a una variabile a cui si accede tramite una funzione Interlocked tramite una funzione Interlocked.|
 |[C28113](/cpp/code-quality/c28113)|Accesso a una variabile locale tramite una funzione interlocked|
 |[C28125](/cpp/code-quality/c28125)|La funzione deve essere chiamata dall'interno di un blocco try/except|
-|[C28137](/cpp/code-quality/c28137)|L'argomento variabile deve invece essere una costante (letterale)|
+|[C28137](/cpp/code-quality/c28137)|L'argomento variabile deve essere invece una costante (letterale)|
 |[C28138](/cpp/code-quality/c28138)|L'argomento costante deve invece essere variabile|
 |[C28159](/cpp/code-quality/c28159)|Prendere in considerazione l'uso di un'altra funzione.|
 |[C28160](/cpp/code-quality/c28160)|Error (annotazione)|
@@ -172,7 +172,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28196](/cpp/code-quality/c28196)|Il requisito non è soddisfatto. L'espressione non restituisce true.|
 |[C28202](/cpp/code-quality/c28202)|Riferimento non valido a membro non statico|
 |[C28203](/cpp/code-quality/c28203)|Riferimento ambiguo al membro di classe.|
-|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore utilizzato in un contesto non \_ \_ \_ valido|
+|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore usato in un contesto non \_ \_ \_ valido|
 |[C28206](/cpp/code-quality/c28206)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](/cpp/code-quality/c28207)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28209](/cpp/code-quality/c28209)|La dichiarazione per il simbolo ha una dichiarazione in conflitto|
@@ -209,7 +209,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28240](/cpp/code-quality/c28240)|L'annotazione nel parametro presenta param2 ma nessun param1|
 |[C28241](/cpp/code-quality/c28241)|Annotazione per la funzione nel parametro non riconosciuta|
 |[C28243](/cpp/code-quality/c28243)|L'annotazione per la funzione nel parametro richiede più dereferenziazioni di quante ne siano consentite dal tipo annotato effettivo|
-|[C28244](/cpp/code-quality/c28244)|L'annotazione per la funzione ha un parametro nonparabile/annotazione esterna|
+|[C28244](/cpp/code-quality/c28244)|L'annotazione per la funzione ha un parametro/annotazione esterna non configurabile|
 |[C28245](/cpp/code-quality/c28245)|L'annotazione per la funzione annota 'this' in una funzione non membro|
 |[C28246](/cpp/code-quality/c28246)|Nell'annotazione per la funzione, il parametro non corrisponde al tipo del parametro|
 |[C28250](/cpp/code-quality/c28250)|Annotazione incoerente per la funzione: errore dell'istanza precedente.|

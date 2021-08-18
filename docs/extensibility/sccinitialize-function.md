@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0602bd3b16b519b8fa6d0a6d42d0f882a3796a3f381007c835738846952504
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef0d2cc678bc32d33aa8fec0fdfbea4ee9a619bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400829"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110215"
 ---
 # <a name="sccinitialize-function"></a>Funzione SccInitialize
 Questa funzione inizializza il plug-in del controllo del codice sorgente e fornisce funzionalità e limiti all'ambiente di sviluppo integrato (IDE).
@@ -87,7 +87,7 @@ SCCRTN SccInitialize (
 
  Punta `ppvContext` a un `NULL` puntatore. Il plug-in del controllo del codice sorgente può allocare una struttura per il proprio utilizzo e archiviare un puntatore a tale struttura in `ppvContext` . L'IDE passerà questo puntatore a ogni altra funzione API VSSCI, consentendo al plug-in di avere informazioni sul contesto disponibili senza ricorrere all'archiviazione globale e per supportare più istanze del plug-in. Questa struttura deve essere deallocata quando viene chiamato [SccUninitialize.](../extensibility/sccuninitialize-function.md)
 
- I `lpCallerName` parametri e consentono `lpSccName` all'IDE e al plug-in di controllo del codice sorgente di scambiare nomi. Questi nomi possono essere usati semplicemente per distinguere tra più istanze o possono essere effettivamente visualizzati in menu o finestre di dialogo.
+ I `lpCallerName` parametri e consentono `lpSccName` all'IDE e al plug-in di controllo del codice sorgente di scambiare nomi. Questi nomi possono essere usati semplicemente per distinguere tra più istanze o possono essere effettivamente visualizzati nei menu o nelle finestre di dialogo.
 
  Il parametro è una stringa utilizzata come commento per identificare il percorso del progetto ausiliario archiviato nel file di soluzione e passato al plug-in del controllo del codice sorgente in una chiamata `lpAuxPathLabel` a [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]usa la stringa "SourceSafe Project:"; altri plug-in del controllo del codice sorgente non devono usare questa particolare stringa.
 

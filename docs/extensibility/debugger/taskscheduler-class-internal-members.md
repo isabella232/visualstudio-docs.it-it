@@ -11,14 +11,15 @@ ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58b370a6742387f7493e4c6357cffd05f2bd88a5
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 02897900a9117eee3d9a917b2e86580d21980345
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900148"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137665"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - Membri interni
 Questo articolo descrive i membri interni della classe che consentono <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere <xref:System.Threading.Tasks.TaskScheduler> l'articolo di riferimento.
@@ -47,6 +48,6 @@ Questo articolo descrive i membri interni della classe che consentono <xref:Syst
 
 ## <a name="remarks"></a>Commenti
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
 - [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,6 +1,6 @@
 ---
-title: Valori dei dati di durata dell'allocazione di memoria & oggetto
-description: Informazioni sul modo in cui il metodo di profilatura dell'allocazione di memoria .NET raccoglie informazioni sulle dimensioni e il numero di oggetti creati in un'allocazione.
+title: Allocazione di memoria & valori dei dati di durata degli oggetti
+description: Informazioni su come il metodo di profilatura dell'allocazione di memoria .NET raccoglie informazioni sulle dimensioni e sul numero di oggetti creati in un'allocazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2faabb8d37cdebf1bdd6c83d10356edc1ce78690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8106bd071eefc6d2ad08ee147420aa81ffe9044
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921934"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140852"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Informazioni sull'allocazione di memoria e i valori dei dati di durata di un oggetto
 

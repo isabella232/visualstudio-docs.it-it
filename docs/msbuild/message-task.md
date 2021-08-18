@@ -1,6 +1,6 @@
 ---
 title: Attività Message | Microsoft Docs
-description: Informazioni sui parametri e le impostazioni per l'MSBuild message, che registra i messaggi durante le compilazioni.
+description: Informazioni sui parametri e sulle impostazioni per l'attività MSBuild Message, che registra i messaggi durante le compilazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ceeb0b25b5f26746fa5307729a8716a82fab0de57a005848b463db2d7a8f26
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b9ee3a2514d89c5b2d436666b2ff512feb8a1b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370060"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077205"
 ---
 # <a name="message-task"></a>attività Message
 
@@ -43,13 +43,13 @@ Registra un messaggio durante una compilazione.
 
 ## <a name="remarks"></a>Commenti
 
- `Message`L'attività MSBuild progetti di inviare messaggi ai logger in passaggi diversi del processo di compilazione.
+ `Message`L'attività consente MSBuild di inviare messaggi ai logger in passaggi diversi del processo di compilazione.
 
  Se il parametro `Condition` restituisce `true`, verrà registrato il valore del parametro `Text` e la compilazione continuerà a essere eseguita. Se il parametro `Condition` non esiste, verrà registrato il testo del messaggio. Per altre informazioni sulla registrazione, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Per impostazione predefinita, il messaggio viene inviato a tutti i logger registrati. Il parametro `Importance` viene interpretato dal logger. In genere, un messaggio impostato su viene inviato quando il livello di dettaglio del `high` logger è impostato su <xref:Microsoft.Build.Framework.LoggerVerbosity> .`Minimal` o successiva. Un messaggio impostato su `low` viene inviato quando il livello di dettaglio del logger è impostato su <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .
+ Per impostazione predefinita, il messaggio viene inviato a tutti i logger registrati. Il parametro `Importance` viene interpretato dal logger. In genere, un messaggio impostato su viene inviato quando il livello di dettaglio del `high` logger è impostato su <xref:Microsoft.Build.Framework.LoggerVerbosity> .`Minimal` o successiva. Un messaggio impostato su viene inviato quando il livello di dettaglio `low` del logger è impostato su <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c822b6e8cbce1279a14c5a947d70208fc7f5480a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4142e958bcac56ea972cc271d8b3f9fa215f21ae80b99bc78c95f7109a4f85f8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958375"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430577"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 
@@ -61,7 +61,7 @@ Specifica il percorso dei file di output per la configurazione del progetto. Dig
 
 Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Scegliendo il comando **Compila** dal menu **Debug** (F5) la compilazione verrà inserita nel percorso di debug indipendentemente dal **Percorso output** specificato. Il comando **Compila** del menu **Compila** la inserisce invece nel percorso specificato.
 
-**Opzione esplicita**
+**Option explicit**
 
 Specifica se consentire la dichiarazione implicita delle variabili. Selezionare **On** per richiedere la dichiarazione esplicita delle variabili. In questo modo il compilatore segnala errori se le variabili non vengono dichiarate prima dell'uso. Selezionare **Off** per consentire la dichiarazione implicita delle variabili.
 
@@ -73,7 +73,7 @@ Quando si crea un progetto, l'impostazione **Option Explicit** nella **pagina Co
 
 L'impostazione di **Option Explicit** su `Off` non è in genere consigliabile. È possibile digitare un nome di variabile in modo errato in una o più posizioni e ciò può causare risultati imprevisti quando viene eseguito il programma.
 
-**Option Strict**
+**Option strict**
 
 Specifica se applicare la semantica rigorosa per i tipi. Quando **Option Strict** è **On**, le condizioni seguenti causano un errore in fase di compilazione:
 
@@ -107,9 +107,9 @@ La sezione **Configurazioni avvisi** della **pagina Compilazione** include impos
 
 Quando si imposta **Option Strict** su **On**, tutte e tre queste impostazioni di configurazione degli avvisi vengono impostate su **Errore**. Quando si imposta **Option Strict** su **Off**, tutte e tre le impostazioni vengono impostate su **Nessuno**.
 
-È possibile modificare singolarmente ogni impostazione di configurazione degli avvisi su **Nessuno**, **Avviso** o **Errore**. Se tutte e tre le impostazioni di configurazione degli avvisi sono impostate su **errore**, `On` viene visualizzato nella `Option strict` casella. Se tutti e tre sono impostati su **None**, `Off` viene visualizzato in questa casella. Per qualsiasi altra combinazione di queste impostazioni, viene visualizzato **(personalizzato)**.
+È possibile modificare singolarmente ogni impostazione di configurazione degli avvisi su **Nessuno**, **Avviso** o **Errore**. Se tutte e tre le impostazioni di configurazione degli avvisi sono impostate **su Errore**, viene visualizzato nella `On` casella `Option strict` . Se tutti e tre sono impostati su **Nessuno**, `Off` viene visualizzato in questa casella. Per qualsiasi altra combinazione di queste impostazioni, viene visualizzato **(personalizzato)**.
 
-**Option Compare**
+**Confronto delle opzioni**
 
 Specifica il tipo di confronto di stringhe da usare. Selezionare **Binario** per indicare al compilatore di usare confronti di stringhe binari con distinzione tra maiuscole e minuscole. Selezionare **Testo** per usare confronti di stringhe di testo specifici delle impostazioni locali senza distinzione tra maiuscole e minuscole.
 
@@ -119,7 +119,7 @@ Se un file di codice sorgente contiene un'[istruzione Option Compare](/dotnet/vi
 
 Quando si crea un progetto, l'impostazione **Option Compare** nella **pagina Compilazione** viene impostata sul valore dell'impostazione **Option Compare** nella finestra di dialogo **Opzioni**. Per visualizzare o modificare l'impostazione in questa finestra di dialogo scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, quindi fare clic su **Impostazioni predefinite di Visual Basic**. L'impostazione predefinita iniziale di **Option Compare** in **Impostazioni predefinite di Visual Basic** è **Binario**.
 
-**Deduce dall'opzione**
+**Deduzione dell'opzione**
 
 Specifica se consentire l'inferenza del tipo di variabile locale nelle dichiarazioni di variabile. Selezionare **On** per consentire l'uso dell'inferenza del tipo di variabile locale. Selezionare **Off** per impedire l'inferenza del tipo di variabile locale.
 
@@ -191,6 +191,6 @@ Fare clic su questo pulsante per accedere alla finestra di dialogo **Impostazion
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Procedura: Specificare eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

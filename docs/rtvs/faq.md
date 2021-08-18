@@ -7,14 +7,15 @@ ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: acfd103e3839115c795de57c8e3359058885b7a6
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 9d49c6b8d52fd047a109f2f470c97adafb457810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679992"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054301"
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -38,7 +39,7 @@ A. Assolutamente sì. Di seguito sono elencate alcune estensioni usate di freque
 
 Per altre informazioni, vedere [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-**D. Poiché RTVS è in Visual Studio, significa che R può essere usato facilmente con C#, C++ e altri linguaggi Microsoft?**
+**D. Poiché RTVS è in Visual Studio, significa che R può essere facilmente usato con C#, C++ e altri linguaggi Microsoft?**
 
 R. No. RTVS è uno strumento per lo sviluppo di codice R e usa gli interpreti R nativi standard. L'interoperabilità tra R e altri linguaggi non è al momento supportata.
 
@@ -50,9 +51,9 @@ A. La versione 1.0 di RTVS è solo in lingua inglese. La versione 1.1 sarà loca
 
 **D. Mi piace molto le impostazioni Visual Studio, ma voglio provare le nuove impostazioni di data science. Cosa dovrei fare?**
 
-A. Salvare le impostazioni Visual Studio impostazioni **correnti** usando Strumenti importa ed esporta Impostazioni e quindi  >  passare alle impostazioni di data science. Per ripristinare le impostazioni salvate, usare di nuovo il comando **Importa/Esporta impostazioni**.
+A. Salvare le impostazioni correnti Visual Studio usando Strumenti di importazione ed esportazione Impostazioni , quindi  >  passare alle impostazioni di data science. Per ripristinare le impostazioni salvate, usare di nuovo il comando **Importa/Esporta impostazioni**.
 
-**D. È possibile archiviare il Visual Studio progetto in una condivisione di rete?**
+**D. È possibile archiviare il Visual Studio in una condivisione di rete?**
 
 A. No, Visual Studio non supporta il caricamento di progetti da una condivisione di rete.
 
@@ -78,9 +79,9 @@ A. No, RTVS supporta soltanto edizioni di R a 64 bit in esecuzione su edizioni d
 
 A. Sì, è possibile usare qualsiasi sistema di controllo del codice sorgente integrato in Visual Studio.
 
-**D. Quali sono le impostazioni *consigliate per gitignore* per un progetto RTVS?**
+**D. Quali sono le impostazioni *.gitignore consigliate* per un progetto RTVS?**
 
-A. GitHub un repository di file *gitignore* consigliati. È possibile visualizzarlo qui: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+A. GitHub un repository di file *con estensione gitignore* consigliati. È possibile visualizzarlo qui: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Servizi remoti
 
@@ -106,12 +107,12 @@ A. Vedere l'articolo [Execute on remote server](/machine-learning-server/r/how-t
 
 ## <a name="rtvs-development-and-features"></a>Sviluppo e funzionalità di RTVS
 
-**D. La funzionalità X è mancante, ma RStudio lo ha.**
+**D. La funzionalità X è mancante, ma RStudio la include.**
 
-A. RStudio è un IDE per R avanzato e maturo il cui sviluppo è in corso da diversi anni. RTVS tenta di offrire tutte le funzionalità critiche necessarie agli utenti. Contribuire a classificare in ordine di priorità il lavoro futuro tramite la presentazione di [problemi GitHub](https://github.com/Microsoft/RTVS/issues/).
+A. RStudio è un IDE per R avanzato e maturo il cui sviluppo è in corso da diversi anni. RTVS tenta di offrire tutte le funzionalità critiche necessarie agli utenti. Contribuire a classificare in ordine di priorità le attività future tramite [l'archiviazione di problemi GitHub](https://github.com/Microsoft/RTVS/issues/).
 
 **D. È possibile contribuire a RTVS?**
 
-A. Assolutamente sì. Il codice sorgente è disponibile su [GitHub](https://github.com/microsoft/RTVS). Usare la funzionalità di gestione dei problemi per segnalare bug e commentare quelli già registrati.
+A. Assolutamente sì. Il codice sorgente si [GitHub](https://github.com/microsoft/RTVS). Usare la funzionalità di gestione dei problemi per segnalare bug e commentare quelli già registrati.
 
-È anche possibile contribuire a questa documentazione semplicemente selezionare il &mdash; **comando** Modifica in alto a destra in qualsiasi pagina. Sono inoltre benvenuti i commenti sulla documentazione, da aggiungere nella parte inferiore della pagina.
+Per contribuire a questa documentazione, è sufficiente selezionare il comando Modifica in alto a &mdash; destra in qualsiasi pagina.  Sono inoltre benvenuti i commenti sulla documentazione, da aggiungere nella parte inferiore della pagina.

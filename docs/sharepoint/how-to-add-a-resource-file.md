@@ -16,17 +16,17 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d1769e9efdbd2856a5086e7d0be41e3a8ef3a19a0031b5e9096fe02e2954afaf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b11fdbdda72f1929afc1f5d2726332246b312d07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425349"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149039"
 ---
 # <a name="how-to-add-a-resource-file"></a>Procedura: Aggiungere un file di risorse
   I comandi per l'aggiunta di file di risorse sono disponibili nel menu di scelta rapida del nodo della soluzione e dei nodi di funzionalità in Esplora soluzioni. Per altre informazioni, vedere [Localizzazione di SharePoint soluzioni](../sharepoint/localizing-sharepoint-solutions.md).
 
-### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Per aggiungere un file di risorse globale a una soluzione SharePoint globale
+### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Per aggiungere un file di risorse globali a una soluzione SharePoint globale
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire una soluzione SharePoint predefinita.
 

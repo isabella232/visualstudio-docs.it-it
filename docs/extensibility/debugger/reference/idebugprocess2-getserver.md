@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 801aca72d13510e0a6985167732c51f599dd28104e9680465b2617f885e2c3e1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f89de8e1481f9a201d6d88d7301bdff01ac108a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416274"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087925"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 Ottiene il server in cui è in esecuzione questo processo.

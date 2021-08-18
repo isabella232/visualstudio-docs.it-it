@@ -1,6 +1,6 @@
 ---
 title: Set di dati tipizzati e non tipizzati
-description: Comprendere la differenza tra i set di DataSet tipizzati e non tipizzati. Confronto tra l'accesso ai dati nei set di dati tipizzati e non tipizzati.
+description: Comprendere la differenza tra set di dati tipizzati e non tipizzati. Contrasta l'accesso ai dati nei set di dati tipizzati e non tipizzati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,37 +11,38 @@ ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: daf4f722eb51a08e7a6ddb287e5b54956ecdfe73
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 3ce12fd272297429ba62c4e947025ada7c350d26
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216020"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036836"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Set di dati tipizzati e non tipizzati
-Un set di dati tipizzato è un set di dati che viene innanzitutto derivato dalla classe di base <xref:System.Data.DataSet> e quindi utilizza le informazioni del **Progettazione DataSet**, memorizzato in un file XSD, per generare una nuova classe DataSet fortemente tipizzata. Le informazioni dello schema (tabelle, colonne e così via) vengono generate e compilate in questa nuova classe DataSet come set di oggetti e proprietà di prima classe. Poiché un DataSet tipizzato eredita dalla <xref:System.Data.DataSet> classe di base, la classe tipizzata presuppone tutte le funzionalità della <xref:System.Data.DataSet> classe e può essere utilizzata con i metodi che accettano un'istanza di una <xref:System.Data.DataSet> classe come parametro.
+Un set di dati tipizzato è un set di dati derivato prima dalla classe di base e quindi usa le informazioni di Progettazione DataSet , archiviate in un file xsd, per generare una nuova classe dataset fortemente <xref:System.Data.DataSet> tipizzato.  Le informazioni dello schema (tabelle, colonne e così via) vengono generate e compilate in questa nuova classe di set di dati come set di proprietà e oggetti di prima classe. Poiché un set di dati tipizzato eredita dalla classe di base, la classe tipizzato presuppone tutte le funzionalità della classe e può essere usata con metodi che accettano un'istanza di una classe <xref:System.Data.DataSet> <xref:System.Data.DataSet> come <xref:System.Data.DataSet> parametro.
 
-Un set di dati non tipizzato, al contrario, non ha uno schema incorporato corrispondente. Come in un DataSet tipizzato, un set di dati non tipizzato contiene tabelle, colonne e così via, ma vengono esposte solo come raccolte. Tuttavia, dopo aver creato manualmente le tabelle e gli altri elementi di dati in un set di dati non tipizzato, è possibile esportare la struttura del set di dati come uno schema usando il metodo del set di dati <xref:System.Data.DataSet.WriteXmlSchema%2A> .
+Un set di dati non tipizzato, al contrario, non ha uno schema predefinito corrispondente. Come in un set di dati tipizzato, un set di dati non tipizzato contiene tabelle, colonne e così via, ma questi vengono esposti solo come raccolte. Tuttavia, dopo aver creato manualmente le tabelle e altri elementi dati in un set di dati non tipizzato, è possibile esportare la struttura del set di dati come schema usando il metodo del set di <xref:System.Data.DataSet.WriteXmlSchema%2A> dati.
 
 ## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Contrasto dell'accesso ai dati nei set di dati tipizzati e non tipizzati
-La classe per un set di dati tipizzato dispone di un modello a oggetti in cui le relative proprietà accettano i nomi effettivi delle tabelle e delle colonne. Se, ad esempio, si utilizza un set di dati tipizzato, è possibile fare riferimento a una colonna utilizzando codice come il seguente:
+La classe per un set di dati tipizzato ha un modello a oggetti in cui le relative proprietà accettano i nomi effettivi delle tabelle e delle colonne. Ad esempio, se si usa un set di dati tipizzato, è possibile fare riferimento a una colonna usando codice simile al seguente:
 
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet4":::
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet4":::
 
-Al contrario, se si utilizza un set di dati non tipizzato, il codice equivalente è:
+Al contrario, se si lavora con un set di dati non tipizzato, il codice equivalente è:
 
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet5":::
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet5":::
 
-L'accesso tipizzato non è più semplice da leggere, ma anche completamente supportato da IntelliSense nell' **editor di codice** di Visual Studio. Oltre a essere più facile da utilizzare, la sintassi per il set di dati tipizzato fornisce il controllo del tipo in fase di compilazione, riducendo notevolmente la possibilità di errori nell'assegnazione di valori ai membri del set di dati. Se si modifica il nome di una colonna nella <xref:System.Data.DataSet> classe e quindi si compila l'applicazione, viene visualizzato un errore di compilazione. Facendo doppio clic sull'errore di compilazione nella **elenco attività**, è possibile passare direttamente alla riga o alle righe di codice che fanno riferimento al nome della colonna precedente. L'accesso a tabelle e colonne in un DataSet tipizzato è anche leggermente più rapido in fase di esecuzione, perché l'accesso viene determinato in fase di compilazione, non tramite raccolte in fase di esecuzione.
+L'accesso tipizzato non solo è più facile da leggere, ma è anche completamente supportato da IntelliSense nell'editor Visual Studio **codice.** Oltre a essere più semplice da usare, la sintassi per il set di dati tipizzato fornisce il controllo dei tipi in fase di compilazione, riducendo notevolmente la possibilità di errori nell'assegnazione di valori ai membri del set di dati. Se si modifica il nome di una colonna nella classe e quindi si compila <xref:System.Data.DataSet> l'applicazione, viene visualizzato un errore di compilazione. Facendo doppio clic sull'errore di compilazione nel **Elenco attività**, è possibile passare direttamente alla riga o alle righe di codice che fanno riferimento al nome della colonna precedente. Anche l'accesso a tabelle e colonne in un set di dati tipizzato è leggermente più veloce in fase di esecuzione perché l'accesso viene determinato in fase di compilazione, non tramite raccolte in fase di esecuzione.
 
-Anche se i set di dati tipizzati presentano molti vantaggi, un set di dati non tipizzato risulta utile in diverse circostanze. Lo scenario più ovvio è quando non è disponibile alcuno schema per il set di dati. Questa situazione può verificarsi, ad esempio, se l'applicazione sta interagendo con un componente che restituisce un set di dati, ma non si sa in anticipo quale sia la struttura. In modo analogo, in alcuni casi si utilizzano dati che non dispongono di una struttura prevedibile statica. In tal caso, non è pratico usare un DataSet tipizzato, perché sarebbe necessario rigenerare la classe DataSet tipizzata con ogni modifica nella struttura dei dati.
+Anche se i set di dati tipizzati presentano molti vantaggi, un set di dati non tipizzato è utile in diverse circostanze. Lo scenario più ovvio è quando non è disponibile alcuno schema per il set di dati. Ciò può verificarsi, ad esempio, se l'applicazione interagisce con un componente che restituisce un set di dati, ma non si conosce in anticipo la struttura. Analogamente, in alcuni casi si lavora con dati che non hanno una struttura statica e prevedibile. In tal caso, non è pratico usare un set di dati tipizzato, perché sarebbe necessario rigenerare la classe del set di dati tipizzato con ogni modifica nella struttura dei dati.
 
-Più in generale, è possibile creare un set di dati in modo dinamico senza che sia disponibile uno schema. In tal caso, il set di dati è semplicemente una struttura comoda in cui è possibile tenere le informazioni, purché i dati possano essere rappresentati in modo relazionale. Allo stesso tempo, è possibile sfruttare le funzionalità del set di dati, ad esempio la possibilità di serializzare le informazioni da passare a un altro processo o scrivere un file XML.
+Più in generale, spesso è possibile creare un set di dati in modo dinamico senza avere uno schema disponibile. In tal caso, il set di dati è semplicemente una struttura pratica in cui è possibile conservare le informazioni, purché i dati possano essere rappresentati in modo relazionale. Allo stesso tempo, è possibile sfruttare le funzionalità del set di dati, ad esempio la possibilità di serializzare le informazioni da passare a un altro processo o di scrivere un file XML.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti DataSet](../data-tools/dataset-tools-in-visual-studio.md)
+- [Strumenti del set di dati](../data-tools/dataset-tools-in-visual-studio.md)

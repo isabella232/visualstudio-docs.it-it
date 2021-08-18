@@ -1,5 +1,5 @@
 ---
-description: Recupera gli argomenti del parametro di tipo per questa istanza.
+description: Recupera gli argomenti dei parametri di tipo per questa istanza.
 title: IDebugGenericFieldInstance::GetTypeArguments | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e14c4f7c6b93cc62f65824dcfd45360ab7a081fcd7e098693603ddfc8d5bb79d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f5ec9596b145835fd9667e04d674e6d953bfba5f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121451966"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088549"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-Recupera gli argomenti del parametro di tipo per questa istanza.
+Recupera gli argomenti dei parametri di tipo per questa istanza.
 
 ## <a name="syntax"></a>Sintassi
 

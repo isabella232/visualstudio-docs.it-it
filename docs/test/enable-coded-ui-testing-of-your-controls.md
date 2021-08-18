@@ -1,26 +1,27 @@
 ---
 title: Abilitare il test codificato dell'interfaccia utente per i controlli
-description: Informazioni su come implementare il supporto per il Framework dei test codificati dell'interfaccia utente per rendere il controllo più testabile.
+description: Informazioni su come implementare il supporto per il framework di test codificati dell'interfaccia utente per rendere il controllo più testabile.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1b4cdc135e0fac7bfbcfb1a558f74195a0f1a191
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d75e6debf4fb50be2d144f0843e6c0be6a84a76c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926651"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140037"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare test codificati dell'interfaccia utente per i controlli
 
 È utile implementare il supporto del framework dei test codificati dell'interfaccia utente per facilitare i test dei controlli. È possibile aggiungere gradualmente livelli crescenti di supporto. Iniziare supportando la registrazione, la riproduzione e la convalida delle proprietà. Partendo da queste basi, abilitare il generatore di test codificato dell'interfaccia utente per riconoscere le proprietà personalizzate dei controlli. Specificare classi personalizzate per accedere a tali proprietà dal codice generato. È anche possibile consentire al generatore di test codificati dell'interfaccia utente di acquisire le azioni nella modalità che più si avvicina di più allo scopo dell'azione registrata.
 
-! Diagramma che illustra il modo in cui le classi in ChartControl vengono estese attraverso la classe CreateAccessabilityInstance alle classi in ChartControlExtensionPackage. (.. cuit_full.png/test/media/)
+! Diagramma che illustra come le classi in ChartControl vengono estese tramite la classe CreateAccessabilityInstance alle classi in ChartControlExtensionPackage. (.. /test/media/cuit_full.png)
 
 [!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
@@ -28,16 +29,16 @@ ms.locfileid: "99926651"
 
 Il generatore di test codificati dell'interfaccia utente acquisisce informazioni sui controlli intercettati durante la registrazione e quindi genera il codice per riprodurre quella sessione. Se il controllo non supporta l'accessibilità, il generatore di test codificati dell'interfaccia utente acquisisce le azioni, come ad esempio i clic del mouse, usando le coordinate dello schermo. Quando il test viene riprodotto, il codice generato emette le azioni nelle stesse coordinate dello schermo. Se, quando il test viene riprodotto, il controllo viene visualizzato in un punto diverso dello schermo, l'azione da parte del codice generato non riuscirà. Se non si implementa l'accessibilità per il controllo, è possibile che i test abbiano esito negativo se vengono riprodotti in configurazioni di schermo diverse, in ambienti diversi o quando il layout dell'interfaccia utente viene modificato.
 
-![Screenshot della finestra di registrazione nel generatore di test codificati dell'interfaccia utente. Il pulsante Sospendi è evidenziato e il client ' ChartControl ' viene visualizzato in una descrizione comando.](../test/media/cuit_recordnosupport.png)
+![Screenshot della finestra di registrazione nel generatore di test codificati dell'interfaccia utente. Il pulsante Sospendi è evidenziato e il client Fare clic su "ChartControl" viene visualizzato in una descrizione comando.](../test/media/cuit_recordnosupport.png)
 
 Se si implementa l'accessibilità, il generatore di test codificati dell'interfaccia utente la userà per acquisire informazioni sul controllo quando registra un test. Quindi, quando si esegue il test, il codice generato riprodurrà tali eventi sul controllo, anche se questo si trova altrove nell'interfaccia utente. Gli autori del test possono creare le asserzioni anche usando le proprietà di base del controllo.
 
-![Screenshot della finestra di registrazione nel generatore di test codificati dell'interfaccia utente. Il pulsante Sospendi è evidenziato e l'etichetta ' A ' viene visualizzata in una descrizione comando.](../test/media/cuit_record.png)
+![Screenshot della finestra di registrazione nel generatore di test codificati dell'interfaccia utente. Il pulsante Sospendi è evidenziato e in una descrizione comando viene visualizzata l'etichetta Fare clic su "A".](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Per supportare registrazione e riproduzione, convalida delle proprietà e navigazione per un controllo Windows Form
 Implementare l'accessibilità per il controllo come descritto nella procedura seguente e descritto in dettaglio in <xref:System.Windows.Forms.AccessibleObject>.
 
-![Diagramma delle classi in ChartControl che mostra la relazione tra CreateAccessabilityInstance e la classe ChartControl. CurveLegend.](../test/media/cuit_accessible.png)
+![Diagramma delle classi in ChartControl che mostra la relazione tra CreateAccessabilityInstance e la classe ChartControl.CurveLegend.](../test/media/cuit_accessible.png)
 
 1. Implementare una classe che derivi da <xref:System.Windows.Forms.Control.ControlAccessibleObject> ed eseguire l'override della proprietà <xref:System.Windows.Forms.Control.AccessibilityObject%2A> per restituire un oggetto della classe.
 
@@ -77,7 +78,7 @@ Implementare l'accessibilità per il controllo come descritto nella procedura se
 
 Dopo aver implementato il supporto di base per la registrazione, la riproduzione e la convalida delle proprietà, è possibile rendere disponibili le proprietà personalizzate del controllo ai test codificati dell'interfaccia utente mediante l'implementazione di un plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. La procedura seguente, ad esempio, crea un provider di proprietà che consente ai test codificati dell'interfaccia utente di accedere alla proprietà di stato dei controlli figlio del controllo CurveLegend del grafico:
 
-![Screenshot della finestra principale del generatore di test codificati dell'interfaccia utente parzialmente analizzato da una finestra Aggiungi asserzioni con la proprietà stato di un controllo di testo selezionato.](../test/media/cuit_customprops.png)
+![Screenshot della finestra principale del generatore di test codificati dell'interfaccia utente parzialmente coperta da una finestra Aggiungi asserzioni con la proprietà State di un controllo Text selezionata.](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Per supportare la convalida delle proprietà personalizzate
 
@@ -173,7 +174,7 @@ Quando Visual Studio registra un test, acquisisce ogni evento di mouse e tastier
 
 1. Aggiungere il filtro azioni al metodo <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> del pacchetto di estensione.
 
-1. Compilare i file binari e copiarli in *%programmi%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Compilare i file binari e copiarli in *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Il filtro azioni non dipende dall'implementazione di accessibilità o dal provider di proprietà.
@@ -184,7 +185,7 @@ Il provider di proprietà e il filtro azioni vengono implementati in un pacchett
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Per eseguire il debug del provider di proprietà o del filtro azioni
 
-1. Compilare la versione di debug del pacchetto di estensione copiare i file *. dll* e *. pdb* in *%programmi%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Compilare la versione di debug del pacchetto di estensione *copiare* i file.dlle *pdb* in *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2. Eseguire l'applicazione (non nel debugger).
 

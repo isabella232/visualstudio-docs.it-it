@@ -3,19 +3,19 @@ title: ID dei carichi di lavoro e dei componenti di Visual Studio Community 2017
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti per installare Visual Studio tramite la riga di comando o per specificarli come dipendenza in un manifesto VSIX
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: ec1a9fe14a5bf78395b76f0dc85f4ad061ed3329
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 6937993e8612ed023d8ac1a7d031a6d8e6f3ac32b7f422e970d4a132b2c3020d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449747"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122085805"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2017"></a>Editor principale di Visual Studio (incluso in Visual Studio Community 2017)
 

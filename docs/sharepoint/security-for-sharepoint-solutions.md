@@ -1,6 +1,6 @@
 ---
 title: Sicurezza per SharePoint soluzioni | Microsoft Docs
-description: Informazioni sulle funzionalità Visual Studio incorporate per migliorare la sicurezza delle SharePoint applicazioni.
+description: Scoprire le funzionalità Visual Studio incorporate per migliorare la sicurezza delle SharePoint applicazioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,42 +18,42 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c46356124b7ed957d3ff61d4118ade2638538d242686875f4a69972b254a3a16
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d287552b07f67c7415688fefd87f876242b230f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367466"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084064"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicurezza per SharePoint soluzioni
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]include le funzionalità seguenti per migliorare la sicurezza delle SharePoint applicazioni.
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]incorpora le funzionalità seguenti per migliorare la sicurezza delle SharePoint applicazioni.
 
 ## <a name="safe-control-entries"></a>Cassaforte voci di controllo
- Ogni SharePoint di progetto creato in ha una [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Cassaforte proprietà Control **Entries** che rappresenta una raccolta di controlli sicuri. La **Cassaforte** sottoproprietà consente di specificare i controlli che si considerano sicuri. Per altre informazioni, vedere [Fornire informazioni sul pacchetto e sulla distribuzione negli elementi del progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e Specifica [Cassaforte Web part](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
+ Ogni SharePoint di progetto creato in ha una [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] **proprietà Cassaforte Control Entries** che rappresenta una raccolta di controlli sicuri. La **Cassaforte** sottoproprietà consente di specificare i controlli da considerare sicuri. Per altre informazioni, vedere [Fornire informazioni sul pacchetto e sulla distribuzione negli](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) elementi del progetto e Specifica [Cassaforte Web part](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>attributo AllowPartiallyTrustedCallers
  Per impostazione predefinita, solo le applicazioni completamente attendibili dal sistema di sicurezza dall'accesso di codice di runtime possono accedere a un assembly di codice gestito condiviso. Contrassegnare un assembly completamente attendibile con l'attributo AllowPartiallyTrustedCallers consente agli assembly parzialmente attendibili di accedervi.
 
- L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi soluzione SharePoint non distribuita nella Global Assembly Cache di sistema ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ). Sono incluse le soluzioni in modalità sandbox o le soluzioni distribuite nella directory bin SharePoint dell'applicazione. Per altre informazioni, vedere [Version 1 Security Changes for the Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) and [Deploying Web part in SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
+ L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi SharePoint soluzione non distribuita nella Global Assembly Cache di sistema ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ). Sono incluse soluzioni in modalità sandbox o soluzioni distribuite nella directory bin SharePoint dell'applicazione. Per altre informazioni, vedere Modifiche alla [sicurezza della versione 1](/previous-versions/msp-n-p/ff921345(v=pandp.10)) per Microsoft .NET Framework e Distribuzione di Web part [in SharePoint Foundation.](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14))
 
 ## <a name="safe-against-script-property"></a>Cassaforte sulla proprietà script
- *L'inserimento* di script è l'inserimento di codice potenzialmente dannoso in controlli o pagine Web. Per proteggere i SharePoint 2010 dall'inserimento di script, i collaboratori non possono visualizzare o modificare le web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo SafeControl denominato SafeAgainstScript. In [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] impostare questo attributo nella sottoproprietà Control **Entries** Cassaforte di un elemento di progetto Cassaforte **Against Script**. Per altre informazioni, vedere [Fornire informazioni su pacchetti e distribuzioni negli](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) elementi del progetto e [Procedura: Contrassegnare i controlli come controlli sicuri.](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+ *L'inserimento* di script injection è l'inserimento di codice potenzialmente dannoso in controlli o pagine Web. Per proteggere i SharePoint 2010 dall'inserimento di script, i collaboratori non possono visualizzare o modificare le web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo SafeControl denominato SafeAgainstScript. In impostare questo attributo nella sottoproprietà Voci di controllo Cassaforte di un elemento di [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto Cassaforte su  **script**. Per altre informazioni, vedere [Fornire informazioni sul pacchetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e sulla distribuzione negli elementi del progetto e [Procedura: Contrassegnare i controlli come controlli sicuri.](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 
-## <a name="vista-and-windows-7-user-account-control"></a>Controllo dell'account utente Windows Vista e Windows 7
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporano una funzionalità di sicurezza nota come Controllo dell'account utente. Per sviluppare SharePoint in sistemi e , Controllo dell'account utente richiede [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] l'esecuzione [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] come amministratore di sistema. Dal menu **Start** aprire il menu di scelta rapida per [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , quindi scegliere Esegui come **amministratore**.
+## <a name="vista-and-windows-7-user-account-control"></a>Controllo dell'account utente di Vista e Windows 7
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporano una funzionalità di sicurezza nota come Controllo dell'account utente. Per sviluppare SharePoint soluzioni nei sistemi e , il controllo dell'account utente richiede [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] l'esecuzione [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] come amministratore di sistema. Dal menu **Start** aprire il menu di scelta rapida per [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quindi scegliere Esegui come **amministratore**.
 
- Per configurare il collegamento per l'esecuzione sempre come amministratore, aprire il relativo menu di scelta rapida, scegliere Proprietà , scegliere il pulsante Avanzate nella finestra di dialogo Proprietà e quindi selezionare la casella di controllo Esegui come [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] amministratore .    
+ Per configurare il collegamento per l'esecuzione sempre come amministratore, aprire il relativo menu di scelta rapida, scegliere Proprietà, scegliere il pulsante Avanzate nella finestra di dialogo Proprietà e quindi selezionare la casella di controllo Esegui come [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] amministratore.    
 
- Per altre informazioni, vedere [Understanding and Configuring User Account Control in Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10)). e [Windows 7 Controllo dell'account utente](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
+ Per altre informazioni, vedere [Informazioni e configurazione del controllo dell'account utente in Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10)). e [Windows 7 Controllo dell'account utente](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
 
 ## <a name="sharepoint-permissions-considerations"></a>SharePoint sulle autorizzazioni
- Per sviluppare SharePoint, è necessario disporre di autorizzazioni sufficienti per l'esecuzione e il debug SharePoint soluzioni. Prima di poter testare una SharePoint, seguire questa procedura per assicurarsi di disporre delle autorizzazioni necessarie:
+ Per sviluppare SharePoint, è necessario disporre di autorizzazioni sufficienti per eseguire ed eseguire il debug SharePoint soluzioni. Prima di testare una soluzione SharePoint, seguire questa procedura per assicurarsi di disporre delle autorizzazioni necessarie:
 
 1. Aggiungere l'account utente come amministratore nel sistema.
 
-2. Aggiungere l'account utente come amministratore della farm per il server SharePoint server.
+2. Aggiungere l'account utente come amministratore farm per il server SharePoint server.
 
-    1. In SharePoint 2010 Central Administration scegliere il **collegamento Manage the farm administrators group (Gestisci il** gruppo amministratori farm).
+    1. In SharePoint 2010 Central Administration (Amministrazione centrale 2010) scegliere **il collegamento Manage the farm administrators group (Gestisci** il gruppo amministratori farm).
 
     2. Nella pagina **Amministratori farm** scegliere l'opzione **di** menu Nuovo
 
@@ -82,7 +82,7 @@ ms.locfileid: "121367466"
 
 ### <a name="general-security"></a>Sicurezza generale
 
-- [Ciclo di vita dello sviluppo della sicurezza MSDN](https://www.microsoft.com/msrc?rtc=1)
+- [Ciclo di vita dello sviluppo per la sicurezza MSDN](https://www.microsoft.com/msrc?rtc=1)
 
 - [Come compilare applicazioni ASP.NET protette: autenticazione, autorizzazione e comunicazioni protette (la pagina potrebbe essere in inglese)](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 

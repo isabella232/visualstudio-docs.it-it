@@ -12,15 +12,15 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c21ccedcac25214c3620f0c1fc4c69be5837bcd57e40b2727e8de2403952da
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2764b98e41b5f6261947c18b9cb0bede6bff0511
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427223"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136391"
 ---
 # <a name="attach"></a>Collegamento
- **LVSPerfCmd.exe'opzione Collega** avvia la profilatura di esempio del processo in esecuzione specificato dall'ID processo (PID).
+LVSPerfCmd.exe **di collegamento** avvia la profilatura di esempio del processo in esecuzione specificato dall'ID del processo (PID).
 
  Per usare l'opzione **Attach**, è necessario specificare il metodo **Sample** nell'opzione Start.
 
@@ -52,7 +52,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Opzioni di intervallo
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di Attach. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[**:**] PF [ : ] Sys [ : Events] Counter [ : , ] Specifica il numero e il `Cycles` tipo `Events` <strong></strong> `Name` `Reload` `FriendlyName` dell'intervallo di campionamento.
+ **Timer**[**:**] `Cycles` **PF**[**:**] Sys [ : Events] Counter [ : , , ] Specifica il numero e il `Events` tipo <strong></strong> `Name` `Reload` `FriendlyName` dell'intervallo di campionamento.
 
 - **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 

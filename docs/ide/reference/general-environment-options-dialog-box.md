@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc28e51942e8a1f52dbf573bdc477d081c74efb6aa714c07fc8eff351824fc1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7c65f9e40e1e3369d8187347404baf4502275f8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121304229"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094009"
 ---
 # <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: Generale \> ambiente
 

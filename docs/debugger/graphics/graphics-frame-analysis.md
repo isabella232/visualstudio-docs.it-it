@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a849af128e15c4f29155a84b55082eb0762e4e79c1922ad7c1cb7b6ace905803
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 320db3d923aeaf3e192715807c09de89bbf9faca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240221"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121024"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.
@@ -35,7 +35,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 
   Anche se l'analisi dei frame è stata progettata principalmente per permettere di ottenere prestazioni di rendering migliori, può anche aiutare a ottenere una qualità visiva superiore per una destinazione di prestazioni specifica o a ridurre il consumo di energia della GPU.
 
-  Per una dimostrazione delle attività di analisi dei frame che possono essere esere per l'app, è possibile guardare il [video](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Visual Studio analisi dei frame di grafica video su Channel 9.
+  Per visualizzare una dimostrazione di ciò che l'analisi dei frame può eseguire per l'app, è possibile guardare il [video](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) Visual Studio analisi dei frame di grafica su Channel 9.
 
 ## <a name="using-frame-analysis"></a>Uso dell'analisi dei frame
  Prima di potere usare l'analisi dei frame è necessario acquisire informazioni sugli elementi grafici dall'app durante l'esecuzione, esattamente come si farebbe con gli altri strumenti di Analizzatore grafica. Selezionare quindi la scheda **Analisi dei frame** nella finestra del documento del registro elementi grafici (con estensione vsglog).
@@ -171,7 +171,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 > Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità.
 
 ### <a name="warp"></a>WARP
- L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. L'esecuzione dell'analisi dei frame nei dispositivi WARP non è impedita, ma in genere non è utile perché WARP in esecuzione su una CPU di fascia alta è più lento rispetto anche alle GPU moderne meno idonee e poiché le prestazioni WARP possono variare notevolmente a seconda della particolare CPU in cui è in esecuzione.
+ L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. L'esecuzione dell'analisi dei frame nei dispositivi WARP non è impedita, ma in genere non è un'attività utile perché WARP in esecuzione su una CPU di fascia alta è più lento rispetto anche alle GPU moderne meno idonee e poiché le prestazioni WARP possono variare notevolmente a seconda della PARTICOLARE CPU su cui è in esecuzione.
 
 ## <a name="variants"></a><a name="Variants"></a> Varianti
  Ogni modifica apportata dall'analisi dei frame al modo in cui è eseguito il rendering di un frame durante la riproduzione è definita *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:
