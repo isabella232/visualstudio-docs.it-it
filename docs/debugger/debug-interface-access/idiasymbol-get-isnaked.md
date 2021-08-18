@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bc54c29a94c79be4dafae45128ddb63595f45aec489da7e4e3a0c59a71b45e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 68b4cf880b2b296751ec0a364d88207c35754c4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436419"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036135"
 ---
 # <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
-Recupera un flag che specifica se la funzione ha l'attributo [naked,](/cpp/cpp/naked-cpp) ovvero non ha codice di prologo o epilogo aggiunto dal compilatore.
+Recupera un flag che specifica se la funzione ha l'attributo [naked,](/cpp/cpp/naked-cpp) ovvero se la funzione non ha codice di prologo o epilogo aggiunto dal compilatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT get_isNaked(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,4 +52,4 @@ HRESULT get_isNaked(
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [Chiamate di funzione Naked](/cpp/cpp/naked-function-calls)
+- [Chiamate di funzioni naked](/cpp/cpp/naked-function-calls)

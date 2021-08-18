@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7464ecbaa00f16105ed04129f61c2b8c1952a406861f4f06c2e1d026207b3af0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 536c793ae93c2b697d0eb420e82a60172570bc73
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377515"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125829"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 Restituisce il successivo set di elementi dall'enumerazione.
@@ -50,13 +50,13 @@ int Next(
 [in] Numero di elementi da recuperare. Specifica anche le dimensioni massime della `rgelt` matrice.
 
 `rgelt`\
-[in, out] Matrice di [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) elementi da riempiti.
+[in, out] Matrice di [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) elementi da riempire.
 
 `pceltFetched`\
 [out] Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di `S_FALSE` elementi richiesto. In caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di `S_FALSE` elementi richiesto; in caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

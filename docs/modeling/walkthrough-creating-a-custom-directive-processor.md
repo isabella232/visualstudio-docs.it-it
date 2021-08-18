@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 816b99dfc80aa2436d22dc1df270301143bfdf23
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 516bd5d66e62e76215d1a33c37bf6305a6e9c4351b1ca7a456666f17786a9850
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055250"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428614"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 

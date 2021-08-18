@@ -10,12 +10,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
-ms.openlocfilehash: 95c8d746e39fdf4c5536dd69028c5f246280ba5c76a51f69ee4c92eea21f52c3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e43c010e84f31b39167baa60cef6cceb7b21c25
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035410"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Esercitazione: Introduzione a Progettazione Windows Forms
 

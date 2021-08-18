@@ -1,6 +1,6 @@
 ---
 title: wsl-install
-description: strumento devinit WSL-install.
+description: devinit tool wsl-install.
 ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
@@ -11,36 +11,36 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4dff121d7866918d5c30986dc9bd4c3cab039ac5
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 448df85f9a67189d22a8d371c1d5ec30b960928a9242c05f44e07ba5eb198bc2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672425"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121418028"
 ---
 # <a name="wsl-install"></a>wsl-install
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo `wsl-install` strumento viene usato per installare le distribuzioni di Linux per il [sottosistema Windows per Linux](/windows/wsl/) (WSL).
+Lo `wsl-install` strumento viene usato per installare le distribuzioni Linux per [sottosistema Windows per Linux](/windows/wsl/) (WSL).
 
 > [!IMPORTANT]
-> Lo `wsl-install` strumento richiede che WSL 2 sia già abilitato in Windows. Se per qualche motivo WSL 2 non è abilitato, è possibile seguire la [documentazione di installazione di WSL](https://docs.microsoft.com/windows/wsl/install-win10). È anche possibile usare lo strumento [WindowsFeature-Enable](tool-windowsfeature-enable.md) per abilitare le funzionalità di Windows necessarie.
+> Lo `wsl-install` strumento richiede che WSL 2 sia già abilitato in Windows. Se per qualche motivo WSL 2 non è abilitato, è possibile seguire la documentazione [di installazione di WSL](https://docs.microsoft.com/windows/wsl/install-win10). È anche possibile usare lo [strumento windowsfeature-enable](tool-windowsfeature-enable.md) per abilitare le funzionalità Windows necessarie.
 
 ## <a name="usage"></a>Utilizzo
 
-Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
+Se entrambe `input` le proprietà e vengono omesse o vuote, lo strumento seguirà `additionalOptions` il [comportamento](#default-behavior) predefinito descritto di seguito.
 
 | Nome                                             | Tipo   | Obbligatoria | valore                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
-| **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                             |
-| [**input**](#input)                              | string | Sì      | Distro da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.     |
-| [**additionalOptions**](#additional-options)     | stringa | No       | Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.  |
+| **Commenti**                                     | stringa | No       | Proprietà comments facoltativa. Non usato.                             |
+| [**Input**](#input)                              | string | Sì      | Distribuzione da installare. Per informazioni [dettagliate,](#input) vedere Input di seguito.     |
+| [**additionalOptions**](#additional-options)     | stringa | No       | Per [informazioni dettagliate, vedere](#additional-options) Opzioni aggiuntive di seguito.  |
 
 ### <a name="input"></a>Input
 
-URI del pacchetto di distribuzione dell'applicazione AppX ( `.appx` ) che contiene la distribuzione da distribuire. L'URI deve puntare a un `.appx` archivio che contiene un singolo oggetto `install.tar.gz` nella radice dell'archivio o all'interno di un `.appx` archivio interno. Esempi di distribuzioni supportate includono:
+URI per il pacchetto di distribuzione dell'applicazione AppX ( `.appx` ) contenente la distribuzione da distribuire. L'URI deve puntare a un archivio che contiene un singolo nella radice dell'archivio `.appx` o all'interno di un archivio `install.tar.gz` `.appx` interno. Di seguito sono riportati alcuni esempi di distribuzione supportate:
 
 | Distribuzione                          | Uri                                                           |
 |---------------------------------|---------------------------------------------------------------|
@@ -53,7 +53,7 @@ URI del pacchetto di distribuzione dell'applicazione AppX ( `.appx` ) che contie
 | SUSE Linux Enterprise Server 12 | https://aka.ms/wsl-sles-12                                    |
 
 > [!NOTE]
-> Le distribuzioni Linux ARM non sono attualmente supportate negli spazi di codespace di GitHub.
+> Le distribuzioni Arm Linux non sono attualmente supportate GitHub Codespaces.
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
@@ -61,17 +61,17 @@ Sono supportate più opzioni aggiuntive:
 
 | Nome                      | Tipo      | Obbligatoria | valore                                                                                                                                                                                    |
 |---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| --WSL-Version             | stringa    | No       | Versione di WSL da usare. Il valore predefinito è 2.                                                                                                                                  |
-| --Post-creazione-comando     | stringa    | No       | Comando da eseguire all'interno della distribuzione di Linux una volta completata l'installazione. Il comando deve essere formattato come una singola parola o racchiuso tra virgolette. Il valore predefinito è no Command.  |
+| --wsl-version             | stringa    | No       | Versione di WSL da usare. Il valore predefinito è 2.                                                                                                                                  |
+| --post-create-command     | stringa    | No       | Comando da eseguire all'interno della distribuzione Linux al termine dell'installazione. Il comando deve essere formattato come singola parola o racchiuso tra virgolette. Il valore predefinito è nessun comando.  |
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `wsl-install` strumento è l'errore come la `input` proprietà, la distro da installare, è obbligatoria.
+Il comportamento predefinito dello `wsl-install` strumento è l'errore perché la proprietà , la distribuzione da `input` installare, è obbligatoria.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `wsl-install` usando un `.devinit.json` .
+Di seguito sono riportati esempi di come eseguire `wsl-install` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-ubuntu-2004"></a>.devinit.jssu che installerà Ubuntu 20,04:
+#### <a name="devinitjson-that-will-install-ubuntu-2004"></a>.devinit.jsin verrà installato Ubuntu 20.04:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -84,7 +84,7 @@ Di seguito sono riportati alcuni esempi di come eseguire `wsl-install` usando un
 }
 ```
 
-#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command"></a>.devinit.jssu che installerà Ubuntu 20,04 ed eseguirà un comando post-creazione:
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command"></a>.devinit.jsche installerà Ubuntu 20.04 ed eseguirà un comando post-creazione:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -98,7 +98,7 @@ Di seguito sono riportati alcuni esempi di come eseguire `wsl-install` usando un
 }
 ```
 
-#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command-that-configures-the-packages-listed"></a>.devinit.jssu che installerà Ubuntu 20,04 ed eseguirà un comando post-creazione che configura i pacchetti elencati:
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command-that-configures-the-packages-listed"></a>.devinit.jsin verrà installato Ubuntu 20.04 e verrà eseguito un comando post-creazione che configura i pacchetti elencati:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

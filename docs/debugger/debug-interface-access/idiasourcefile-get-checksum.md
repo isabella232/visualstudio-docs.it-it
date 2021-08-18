@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c816fd0e44ee4870bbc656aa48621b175908692
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 972871513555feeb52b40086de58e619d7c7720c1540a4bfb7d5de419fd56ab6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058874"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121344676"
 ---
 # <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
 Recupera i byte di checksum.
@@ -51,7 +51,7 @@ HRESULT get_checksum (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Per determinare il tipo di algoritmo di checksum usato per generare i byte di checksum, chiamare il metodo [IDiaSourceFile::get_checksumType.](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)
+ Per determinare il tipo di algoritmo di checksum usato per generare i byte di checksum, chiamare il [metodo IDiaSourceFile::get_checksumType.](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)
 
  Il checksum viene in genere generato dall'immagine del file di origine in modo che le modifiche apportate al file di origine si riflettano nelle modifiche nei byte del checksum. Se i byte di checksum non corrispondono a un checksum generato dall'immagine caricata del file, il file deve essere considerato danneggiato o manomesso.
 

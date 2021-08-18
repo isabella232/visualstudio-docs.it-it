@@ -21,19 +21,19 @@ ms.locfileid: "121347726"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
-Questa procedura dettagliata illustra come creare un'applicazione di base "forms over data" in Visual Studio. L'app usa SQL Server Local DB, il database Northwind, Entity Framework 6 (non Entity Framework Core) e Windows Presentation Foundation per .NET Framework (non .NET Core). Illustra come eseguire il data binding di base con una visualizzazione master-dettagli e include anche uno strumento di navigazione  associazione personalizzato con i pulsanti Sposta successivo **,** Sposta precedente **,** Sposta all'inizio **,** Sposta alla fine **,** Aggiorna ed **Elimina**.
+Questa procedura dettagliata illustra come creare un'applicazione di base "forms over data" in Visual Studio. L'app usa SQL Server Local DB, il database Northwind, Entity Framework 6 (non Entity Framework Core) e Windows Presentation Foundation per .NET Framework (non .NET Core). Illustra come eseguire il data binding di base con una visualizzazione master-dettagli e include anche uno strumento di spostamento  associazione personalizzato con i pulsanti Sposta successivo **,** Sposta precedente **,** Sposta all'inizio **,** Sposta alla fine **,** Aggiorna ed **Elimina**.
 
 Questo articolo è in particolare sull'uso degli strumenti per i dati in Visual Studio e non tenta di spiegare in modo approfondito le tecnologie sottostanti. Si presuppone che l'utente abbia una conoscenza di base di XAML, Entity Framework e SQL. In questo esempio non viene inoltre illustrata l'architettura Model-View-ViewModel (MVVM), che è standard per le applicazioni WPF. Tuttavia, è possibile copiare questo codice nella propria applicazione MVVM con poche modifiche.
 
 ## <a name="install-and-connect-to-northwind"></a>Installare e connettersi a Northwind
 
-In questo esempio vengono SQL Server Express Local DB e il database di esempio Northwind. Se il provider ADO.NET per il prodotto supporta Entity Framework, dovrebbe funzionare anche con altri SQL di database.
+In questo esempio vengono SQL Server Express Local DB e il database di esempio Northwind. Se il provider ADO.NET dati per tale prodotto supporta Entity Framework, dovrebbe funzionare anche con altri SQL di database.
 
 1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nel **programma di installazione di Visual Studio**, è possibile installare SQL Server Express Local DB nel contesto del carico di lavoro **Sviluppo per desktop .NET** o come componente singolo.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (**SQL Server Esplora oggetti** viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati **nel Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
+    1. In Visual Studio aprire la **finestra SQL Server Esplora oggetti** dati. (**SQL Server Esplora oggetti** viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati **nel Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -49,7 +49,7 @@ In questo esempio vengono SQL Server Express Local DB e il database di esempio N
 
 1. In Visual Studio creare un nuovo progetto di **app WPF** C#.
 
-2. Aggiungere il NuGet per Entity Framework 6. In **Esplora soluzioni** selezionare il nodo del progetto. Nel menu principale scegliere Gestisci **Project**  >  **pacchetti NuGet pacchetti**.
+2. Aggiungere il pacchetto NuGet per Entity Framework 6. In **Esplora soluzioni** selezionare il nodo del progetto. Nel menu principale scegliere Gestisci **Project**  >  **pacchetti NuGet pacchetti**.
 
      ![Voce NuGet di menu Gestisci pacchetti](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 

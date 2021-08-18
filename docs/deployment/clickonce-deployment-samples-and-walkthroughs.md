@@ -1,6 +1,6 @@
 ---
 title: ClickOnce Esempi di distribuzione e procedure dettagliate | Microsoft Docs
-description: Usare queste applicazioni di esempio, il codice di esempio e le tecniche per comprendere le tecniche usate per distribuire applicazioni Windows Form, WPF e console.
+description: Usare queste applicazioni di esempio, il codice di esempio e le tecniche per comprendere le tecniche usate per distribuire Windows, WPF e applicazioni console.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4778cf4b8aa461b3c60ef6f4c6a209a2f4f597
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: bc2908a8c279e5badbf25bd79f8191be0ea13ca76adf0f56e058424386636580
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104911"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343534"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Esempi e procedure dettagliate relative alla distribuzione ClickOnce
 Questa sezione contiene applicazioni di esempio, codice di esempio e procedure dettagliate che illustrano la sintassi, la struttura e le tecniche usate per distribuire applicazioni Windows Form, WPF e console.

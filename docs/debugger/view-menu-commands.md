@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c01ad2ee834d39a957ae2180b5d094fdc113964
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2ccd5affce7f94b0352cf9472f4dfe7e1cc9b7f584b42e3f73d6b91596446ab9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035975"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121418779"
 ---
 # <a name="view-menu-commands"></a>comandi del menu Visualizza
 Il menu **Visualizza** fornisce comandi per il controllo dell'interfaccia utente di Spy++.

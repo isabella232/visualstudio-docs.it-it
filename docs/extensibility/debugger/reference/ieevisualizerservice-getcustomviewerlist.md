@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42a42c36eef04f1e858f2025703a74501e3c785a0bb5f2e17cd3b4e891ecf793
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3676390d81e4f95d523d6164f2664ec8337c1a32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401895"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125946"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Questo metodo restituisce un elenco di visualizzatori di tipo noti a questo servizio.
@@ -66,7 +66,7 @@ int GetCustomViewerList(
 ## <a name="remarks"></a>Commenti
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) passa la richiesta a questo metodo come parte del supporto per i visualizzatori di tipi. Se l'analizzatore di espressioni fornisce anche visualizzatori personalizzati per lo stesso [](../../../extensibility/debugger/reference/debug-custom-viewer.md) tipo, può aggiungere all'elenco strutture DEBUG_CUSTOM_VIEWER compilate in modo appropriato per tali visualizzatori personalizzati. Assicurarsi che [GetCustomViewerCount rifletta](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) gli altri visualizzatori.
 
- Per [informazioni dettagliate sulle differenze tra visualizzatori e visualizzatori,](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) vedere Visualizzatore di tipi e Visualizzatore personalizzato.
+ Per [informazioni dettagliate sulle differenze tra visualizzatori e](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) visualizzatori, vedere Visualizzatore di tipi e Visualizzatore personalizzato.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

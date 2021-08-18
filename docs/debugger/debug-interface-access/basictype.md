@@ -1,6 +1,6 @@
 ---
 title: BasicType | Microsoft Docs
-description: Trovare informazioni di riferimento sull'enumerazione BasicType, che specifica il tipo di base di un simbolo in Visual Studio Debug Interface Access SDK.
+description: Trovare informazioni di riferimento sull'enumerazione BasicType, che specifica il tipo di base di un simbolo nell'SDK Visual Studio di accesso all'interfaccia di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: 19ae53ba-cd6e-47b6-9f94-27ae663ce955
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a86a25d02b1aa51e49d80b71dbd37b2aa4c2d103
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 033ab7c7d2c77470393425b0862cfbed24f7b06a1c6d6e11f364f5337c4487e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865589"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121345689"
 ---
 # <a name="basictype"></a>BasicType
 Specifica il tipo di base del simbolo.
@@ -52,47 +53,47 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elementi
-btNoType non è specificato alcun tipo di base.
+btNoType Non è specificato alcun tipo di base.
 
-il tipo di base di btVoid è `void` .
+btVoid Basic type is a `void` .
 
-il tipo di base di btChar è un `char` (tipo C/C++).
+btChar Basic type è a `char` (tipo C/C++).
 
-il tipo di base di btWChar è un carattere wide (Unicode) ( `WCHAR` ).
+btWChar Basic è un carattere wide (Unicode) ( `WCHAR` ).
 
-il tipo di base di btInt è `signed int` (tipo C/C++).
+btInt Basic type è `signed int` (tipo C/C++).
 
-il tipo di base di btUInt è `unsigned int` (tipo C/C++).
+btUInt Il tipo basic è `unsigned int` (tipo C/C++).
 
-il tipo di base di btFloat è un numero a virgola mobile ( `FLOAT` ).
+btFloat Basic è un numero a virgola mobile ( `FLOAT` ).
 
-il tipo di base di btBCD è un valore decimale con codifica binaria ( `BCD` ).
+Il tipo btBCD Basic è un decimale a codifica binaria ( `BCD` ).
 
-il tipo di base di btBool è un valore booleano ( `BOOL` ).
+btBool Basic type è un valore booleano ( `BOOL` ).
 
-il tipo di base di btLong è un `long int` (tipo C/C++).
+btLong Basic type è un `long int` (tipo C/C++).
 
-il tipo di base di btULong è un `unsigned long int` tipo (C/C++).
+btULong Basic type è un `unsigned long int` (tipo C/C++).
 
-il tipo di base di btCurrency è Currency.
+btCurrency Basic type is currency.
 
-il tipo di base di btDate è date/time ( `DATE` ).
+btDate Basic type is date/time ( `DATE` ).
 
-il tipo di base di btVariant è una struttura di tipo variabile ( `VARIANT` ).
+btVariant Basic type è una struttura di tipo variabile ( `VARIANT` ).
 
-il tipo di base di btComplex è un numero complesso.
+btComplex Basic è un numero complesso.
 
-il tipo di base di btBit è bit.
+Il tipo btBit Basic è un bit.
 
-il tipo di base di btBSTR è una stringa di base o binaria ( `BSTR` ).
+btBSTR Tipo basic è una stringa di base o binaria ( `BSTR` ).
 
-il tipo di base di btHresult è `HRESULT` .
+btHresult Il tipo di base è `HRESULT` .
 
 ## <a name="remarks"></a>Commenti
-I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_BaseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .
+I valori di questa enumerazione vengono restituiti dal [metodo IDiaSymbol::get_baseType.](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst. h
+Intestazione: cvconst.h
 
 ## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

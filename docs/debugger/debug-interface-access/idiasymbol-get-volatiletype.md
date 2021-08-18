@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfde9541f787d3c573880c94f7d4b62ea09e8f7babb6c7aa7eed3a2dcb9f404
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 735c8715405f7c882154751658faca2eb389f5c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065932"
 ---
 # <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
 Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) è volatile.
@@ -41,7 +41,7 @@ HRESULT get_volatileType (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  In C++ un tipo definito dall'utente può essere contrassegnato con la parola chiave , a indicare che non è possibile presunirne il contenuto da un `volatile` accesso a quello successivo.

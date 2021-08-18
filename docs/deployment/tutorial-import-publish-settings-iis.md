@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: ca5aac87838ad52aee0432a6430f74d35281b063ad2ae94c92f1c2baca3476d3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 53b7a6d482573b0eec4f3357c839b651a93fd282
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403841"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035592"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione in IIS importando le impostazioni di pubblicazione in Visual Studio
 
@@ -32,10 +32,10 @@ In questa esercitazione si apprenderà come:
 > * Importare il file delle impostazioni di pubblicazione in Visual Studio
 > * Distribuire l'app in IIS
 
-Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da un profilo di pubblicazione (*\* .pubxml*) creato in Visual Studio. Il file delle impostazioni di pubblicazione viene creato da IIS o dal servizio app di Azure oppure può essere creato manualmente e quindi importato in Visual Studio.
+Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da un profilo di pubblicazione (*\* pubxml*) creato in Visual Studio. Il file delle impostazioni di pubblicazione viene creato da IIS o dal servizio app di Azure oppure può essere creato manualmente e quindi importato in Visual Studio.
 
 > [!NOTE]
-> Se è sufficiente copiare un profilo di pubblicazione Visual Studio (file con estensione pubxml) da un'installazione di Visual Studio a un'altra, è possibile trovare il profilo di \* pubblicazione, *\<profilename\> .pubxml*, nella cartella nomeprogetto *\\ di<\> \Properties\PublishProfiles* per i tipi di progetto gestiti. Per i siti Web, cercare nella cartella *\App_Data*. I profili di pubblicazione sono file XML di MSBuild.
+> Se è sufficiente copiare un profilo di pubblicazione Visual Studio (file con estensione pubxml) da un'installazione di Visual Studio a un'altra, è possibile trovare il profilo di pubblicazione, con estensione \* *\<profilename\> pubxml*, nella cartella nomeprogetto *\\ di<\> \Properties\PublishProfiles* per i tipi di progetto gestiti. Per i siti Web, cercare nella cartella *\App_Data*. I profili di pubblicazione sono file XML di MSBuild.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -43,35 +43,35 @@ Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da u
 
 * È necessario aver installato Visual Studio 2019 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * È necessario aver installato Visual Studio 2017 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 ::: moniker-end
 
-* Nel server è necessario eseguire Windows Server 2012, Windows Server 2016 o Windows Server 2019 ed è necessario che il ruolo [Server Web IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) sia installato correttamente (necessario per generare il file delle impostazioni di pubblicazione (*\* .publishsettings*)). Nel server deve essere installato anche ASP.NET 4.5 o ASP.NET Core. Per configurare ASP.NET 4.5, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 e ASP.NET 4.5). Per configurare ASP.NET Core, vedere [Host ASP.NET Core in Windows con IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Per ASP.NET Core, assicurarsi di configurare il pool di applicazioni per l'uso di Nessun **codice gestito,** come descritto nell'articolo.
+* Nel server è necessario che sia in esecuzione Windows Server 2012, Windows Server 2016 o Windows Server 2019 e che il ruolo [Server Web IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) sia installato correttamente (necessario per generare il file delle impostazioni di pubblicazione (*\* .publishsettings*)). Nel server deve essere installato anche ASP.NET 4.5 o ASP.NET Core. Per configurare ASP.NET 4.5, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 e ASP.NET 4.5). Per configurare ASP.NET Core, vedere [Host ASP.NET Core in Windows con IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Per ASP.NET Core, assicurarsi di configurare il pool di applicazioni per l'uso di Nessun **codice gestito,** come descritto nell'articolo.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Creare un nuovo progetto ASP.NET in Visual Studio
 
 1. Creare un nuovo progetto nel computer che esegue Visual Studio.
 
-    Scegliere il modello corretto. In questo esempio scegliere **un ASP.NET App applicazione Web (.NET Framework)** o (solo per **C#)** ASP.NET Core Applicazione Web e quindi selezionare **OK.**
+    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET App web (.NET Framework)** o (solo per C#) ASP.NET Core **Applicazione Web** e quindi selezionare **OK.**
 
-    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Project** nuovo progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **ASP.NET e sviluppo** Web.
+    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Nuovo Project** progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro ASP.NET sviluppo Web** e web.
 
     Il modello di progetto selezionato (ASP.NET o ASP.NET Core) deve corrispondere alla versione di ASP.NET installata nel server Web.
 
-1. Scegliere **MVC** (.NET Framework) o Applicazione **Web (Model-View-Controller)** (per .NET Core) e verificare che l'opzione Nessuna autenticazione sia selezionata e quindi selezionare **OK.** 
+1. Scegliere **MVC** (.NET Framework) o Applicazione **Web (Model-View-Controller) (per** .NET Core) e assicurarsi che l'opzione Nessuna autenticazione sia selezionata e quindi selezionare **OK**. 
 
-1. Digitare un nome come **MyWebApp e** selezionare **OK.**
+1. Digitare un nome come **MyWebApp** e selezionare **OK.**
 
     Visual Studio crea il progetto.
 
-1. Scegliere **Compila**  >  **soluzione (o** premere **CTRL**  +  **MAIUSC**  +  **B)** per compilare il progetto.
+1. Scegliere **Compila**  >  **soluzione di** compilazione (o premere **CTRL**  +  **MAIUSC**  +  **B**) per compilare il progetto.
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>Installare e configurare Distribuzione Web in Windows Server
 

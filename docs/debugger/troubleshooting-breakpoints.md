@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef3445c45eb56e3f787522eb4d0fa076e2781875af2ea35a301515e91b15c16
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0caeb4a9a37497922af5c5b7d94f539859644c02
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121310917"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096817"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Risolvere i problemi relativi ai punti di interruzione Visual Studio debugger
 
@@ -43,7 +43,7 @@ Passare alla finestra **Moduli** (**Debug** Windows Moduli ) e verificare  >    
 
 Se un file di origine è stato modificato e l'origine non corrisponde più al codice di cui si esegue il debug, il debugger non imposta punti di interruzione nel codice per impostazione predefinita. In genere, questo problema si verifica quando un file di origine viene modificato, ma il codice sorgente non è stato ricompilato. Per risolvere questo problema, ricompilare il progetto. Se il sistema di compilazione pensa che il progetto sia già aggiornato anche se non lo è, è possibile forzare la ricompilazione del sistema del progetto salvando nuovamente il file di origine o pulendo l'output di compilazione del progetto prima della compilazione.
 
-In rari scenari può essere necessario eseguire il debug senza avere codice sorgente corrispondente. Il debug senza codice sorgente corrispondente può generare un'esperienza di debug confusa, quindi assicurarsi che sia così che si vuole procedere.
+In rari scenari può essere necessario eseguire il debug senza avere codice sorgente corrispondente. Il debug senza la corrispondenza del codice sorgente può generare un'esperienza di debug confusa, quindi assicurarsi che questo sia il modo in cui si vuole procedere.
 
 Per disabilitare questi controlli di sicurezza, eseguire una delle operazioni seguenti:
 * Per modificare un singolo punto di interruzione, passare il mouse sull'icona del punto di interruzione nell'editor e fare clic sull'icona delle impostazioni (ingranaggio). Viene aggiunta una finestra di anteprima all'editor. Nella parte superiore della finestra di anteprima è presente un collegamento ipertestuale che indica la posizione del punto di interruzione. Fare clic sul collegamento ipertestuale per consentire la modifica del percorso del punto di interruzione e selezionare Consenti che il codice sorgente **sia diverso da quello originale.**

@@ -1,6 +1,6 @@
 ---
 title: Uso di trame e immagini
-description: Informazioni su come usare l'editor di immagini in Visual Studio per creare e modificare trame e immagini in formati come quelli usati nello sviluppo di app DirectX.
+description: Informazioni su come usare l'editor di immagini Visual Studio creare e modificare trame e immagini in formati come quelli usati nello sviluppo di app DirectX.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 21d3b402bbffd9528755098131ff9ed1ee636906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37a5d3b0766013b127aa939943f7811202d935db
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908145"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035345"
 ---
 # <a name="work-with-textures-and-images"></a>Usare trame e immagini
 

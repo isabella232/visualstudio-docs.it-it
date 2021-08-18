@@ -13,12 +13,12 @@ metadata:
   manager: jmartens
   ms.workload:
   - multiple
-  ms.openlocfilehash: 530719aafeaf617aa92b09388768a46e2ccd5bf5
-  ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+  ms.openlocfilehash: 0a9de49d4022d4c73c2a24d77c1d1a759d47ab9a329e383472dc0cebcfd7f134
+  ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/29/2021
-  ms.locfileid: "114796177"
+  ms.lasthandoff: 08/12/2021
+  ms.locfileid: "121454471"
 title: Domande frequenti per il debug di snapshot in Visual Studio
 summary: Ecco un elenco di domande che potrebbero sorgere durante il debug di applicazioni di Azure attive con Snapshot Debugger.
 sections:
@@ -68,7 +68,7 @@ sections:
     answer: >
       Per Servizi app:
 
-      1. Disabilitare l'estensione debugger remoto tramite portale di Azure per il servizio app.
+      1. Disabilitare l'estensione del debugger remoto tramite portale di Azure per il servizio app.
 
       2. portale di Azure > pannello delle risorse del servizio applicazione *>'applicazione Impostazioni*
 
@@ -220,4 +220,4 @@ sections:
             $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
             Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
          ```
-additionalContent: "\n## <a name=\"see-also\"></a>Vedere anche\n  - [Debug in Visual Studio](../debugger/index.yml)\n  - [Eseguire il debug di app ASP.NET attive con Snapshot Debugger](../debugger/debug-live-azure-applications.md)\n  - [Eseguire il debug ASP.NET set di scalabilità Macchine virtuali di Azure\\Macchine virtuali usando il Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)\n  - [Eseguire il debug di servizi Azure Kubernetes ASP.NET attivi con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)\n  - [Risoluzione dei problemi e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md)"
+additionalContent: "\n## <a name=\"see-also\"></a>Vedi anche\n  - [Debug in Visual Studio](../debugger/index.yml)\n  - [Eseguire il debug di app ASP.NET attive con Snapshot Debugger](../debugger/debug-live-azure-applications.md)\n  - [Eseguire il debug ASP.NET set di scalabilità Macchine virtuali di Azure\\Macchine virtuali usando il Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)\n  - [Eseguire il debug di servizi Azure Kubernetes ASP.NET attivi con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)\n  - [Risoluzione dei problemi e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md)"

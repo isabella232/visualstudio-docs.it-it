@@ -1,6 +1,6 @@
 ---
 title: Preparare il debug di progetti console | Microsoft Docs
-description: Ottenere informazioni sulla preparazione per il debug di progetti console (C#, C++, Visual Basic, F#) in Visual Studio.
+description: Informazioni sulla preparazione al debug di progetti console (C#, C++, Visual Basic, F#) in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,16 +20,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ad23e0c60d995a59fcd64e952b1b52fa4e3df5ae0199468338fdceb92595ec34
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e627e88eb1dbfefe710233eb0136bbe650c782e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404512"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097415"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione del debug: progetti console (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione al debug: progetti console (C#, C++, Visual Basic, F#)
 
-La preparazione per il debug di un progetto Console è simile alla preparazione per il debug di un progetto Windows, con alcune considerazioni aggiuntive, ad esempio l'impostazione di argomenti della riga di comando e come sospendere l'app per il debug. Per altre informazioni, vedere [Preparazione del debug per un'app Windows Form](../debugger/debugging-preparation-windows-forms-applications.md). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
+La preparazione del debug di un progetto Console è simile alla preparazione per il debug di un progetto Windows, con alcune considerazioni aggiuntive, ad esempio l'impostazione di argomenti della riga di comando e la sospensione dell'app per il debug. Per altre informazioni, vedere [Preparazione del debug per un'app Windows Form.](../debugger/debugging-preparation-windows-forms-applications.md) A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
 
 - Applicazione console C#, Visual Basic e F#
 
@@ -37,13 +37,13 @@ La preparazione per il debug di un progetto Console è simile alla preparazione 
 
 - Applicazione console C++ (Win32)
 
-  Un'applicazione console usa la finestra della **console** per accettare l'input e visualizzare i messaggi di output. Per scrivere nella **finestra console,** l'applicazione deve usare l'oggetto **Console** anziché l'oggetto Debug. Per scrivere nella finestra di **output di Visual Studio**, usare l'oggetto Debug come di consueto. Assicurarsi di conoscere la posizione di scrittura dell'applicazione per evitare di cercare i messaggi nella finestra errata. Per altre informazioni, vedere [Classe Console](/dotnet/api/system.console), [Classe Debug](/dotnet/api/system.diagnostics.debug) e [Finestra di output](../ide/reference/output-window.md).
+  Un'applicazione console usa la finestra della **console** per accettare l'input e visualizzare i messaggi di output. Per scrivere nella finestra **Console,** l'applicazione deve usare **l'oggetto Console** anziché l'oggetto Debug. Per scrivere nella finestra di **output di Visual Studio**, usare l'oggetto Debug come di consueto. Assicurarsi di conoscere la posizione di scrittura dell'applicazione per evitare di cercare i messaggi nella finestra errata. Per altre informazioni, vedere [Classe Console](/dotnet/api/system.console), [Classe Debug](/dotnet/api/system.diagnostics.debug) e [Finestra di output](../ide/reference/output-window.md).
 
 ## <a name="set-command-line-arguments"></a>Impostare gli argomenti della riga di comando
 
-Potrebbe essere necessario specificare gli argomenti della riga di comando per l'applicazione console. Per altre informazioni, vedere Project Impostazioni per una configurazione di [debug C++,](../debugger/project-settings-for-a-cpp-debug-configuration.md) [Project Impostazioni per una](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)configurazione di debug Visual Basic o Project Impostazioni per configurazioni di debug [C#.](../debugger/project-settings-for-csharp-debug-configurations.md)
+Potrebbe essere necessario specificare gli argomenti della riga di comando per l'applicazione console. Per altre informazioni, vedere Project Impostazioni per una configurazione di [debug C++,](../debugger/project-settings-for-a-cpp-debug-configuration.md)Project Impostazioni per una configurazione di [debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)o Project Impostazioni per configurazioni di debug [C#.](../debugger/project-settings-for-csharp-debug-configurations.md)
 
-Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le sessioni di debug e tra le sessioni di Visual Studio. Pertanto, se l'applicazione console è un'applicazione di cui è stato fatto il debug in precedenza, tenere presente che potrebbero essere presenti argomenti delle sessioni precedenti immessi nella finestra di dialogo Pagine **\<Project> delle** proprietà.
+Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le sessioni di debug e tra le sessioni di Visual Studio. Pertanto, se l'applicazione console è già stata debug, tenere presente che potrebbero essere presenti argomenti delle sessioni precedenti immessi nella finestra di **\<Project> dialogo Pagine** delle proprietà.
 
 ## <a name="start-the-application"></a>Avviare l'applicazione
 
@@ -51,11 +51,11 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 
 - Impostare un punto di interruzione nel codice e avviare l'applicazione.
 
-- Avviare l'applicazione usando **F10** (**Debug** step over ) o  >   **F11** (**Debug**  >  **Step Into**) e quindi spostarsi nel codice usando altre opzioni, ad esempio **Esegui per fare** clic su .
+- Avviare l'applicazione **usando F10** (**Esegui** istruzione/istruzione di debug ) o  >   **F11** (Esegui istruzione di debug ) e quindi spostarsi nel codice usando altre opzioni, ad esempio  >  Esegui per fare clic **su**.
 
 - Nell'editor di codice fare clic con il pulsante destro del mouse su una riga e **scegliere Esegui fino al cursore**.
 
-  Durante il debug di un'applicazione console, può essere necessario avviare l'applicazione dal prompt dei comandi anziché da Visual Studio. In tal caso, è possibile avviare l'applicazione dal prompt dei comandi e connettervi il debugger di Visual Studio. Per altre informazioni, vedere [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+  Durante il debug di un'applicazione console, può essere necessario avviare l'applicazione dal prompt dei comandi anziché da Visual Studio. In tal caso, è possibile avviare l'applicazione dal prompt dei comandi e connettervi il debugger di Visual Studio. Per altre informazioni, vedere [Connettersi a processi in esecuzione.](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
   Quando si avvia un'applicazione console da Visual Studio, la finestra della **console** viene visualizzata in secondo piano rispetto alla finestra di Visual Studio. Se si tenta di avviare l'applicazione console da Visual Studio senza alcun apparente risultato, provare a spostare la finestra di Visual Studio.
 

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dcb143c5a4afd1a88598127cd21e446fbfe5a414
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5ded7785b7535dee6e1a2c29a6590a1f0ff396625f534722c1cb0a620c3915d5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065475"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453328"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
 È possibile usare lo strumento Finder nella finestra **di dialogo Trova finestra** per visualizzare le proprietà o i messaggi della finestra. Lo strumento Finder può anche individuare le finestre figlio disabilitate e distinguere la finestra da evidenziare se le finestre figlio disabilitate si sovrappongono.
@@ -50,7 +50,7 @@ ms.locfileid: "122065475"
 
 5. Fare clic su **OK**.
 
-    Se è stata selezionata **l'opzione Proprietà**, [viene visualizzata la finestra di dialogo Proprietà](../debugger/window-properties-dialog-box.md) finestra . Se è stata selezionata **l'opzione Messaggi**, [viene visualizzata una](../debugger/messages-view.md) finestra Visualizzazione messaggi.
+    Se è stata selezionata **l'opzione Proprietà**, [viene visualizzata la finestra di dialogo Proprietà](../debugger/window-properties-dialog-box.md) finestra . Se è stata selezionata **l'opzione Messaggi**, [viene visualizzata una finestra Visualizzazione](../debugger/messages-view.md) messaggi.
 
 ## <a name="see-also"></a>Vedi anche
 - [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)

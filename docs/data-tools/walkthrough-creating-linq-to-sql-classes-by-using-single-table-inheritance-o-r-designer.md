@@ -1,6 +1,6 @@
 ---
 title: LINQ to SQL classi con ereditarietà a tabella singola
-description: In questa procedura dettagliata creare LINQ to SQL classi personalizzate usando l'ereditarietà a tabella singola nel Visual Studio Object Relational Designer (Progettazione O/R).
+description: In questa procedura dettagliata vengono create LINQ to SQL classi usando l'ereditarietà a tabella singola nel Visual Studio Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,8 +21,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121346499"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare LINQ to SQL classi con ereditarietà a tabella singola (O/R Designer)
-Gli [LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola, in quanto vengono in genere implementati nei sistemi relazionali. Questa procedura dettagliata si espande in base ai passaggi generici forniti nell'argomento Procedura: Configurare l'ereditarietà tramite Progettazione [O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare LINQ to SQL con ereditarietà a tabella singola (O/R Designer)
+Gli [LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola, in quanto viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici descritti nell'argomento [Procedura:](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) Configurare l'ereditarietà tramite Progettazione oggetti e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
 
 Durante questa procedura dettagliata vengono eseguite le attività seguenti:
 
@@ -69,9 +69,9 @@ Allo scopo di verificare che l'ereditarietà sia configurata correttamente, è n
 
 ### <a name="to-add-data-to-the-table"></a>Per aggiungere dati alla tabella
 
-1. Aprire la tabella nella visualizzazione dati Fare clic con il pulsante destro **del mouse sulla** tabella Person Esplora server o **Esplora database** fare clic su Mostra **dati tabella**. 
+1. Aprire la tabella nella visualizzazione dati Fare clic con il pulsante destro **del mouse sulla** **tabella** Person Esplora server o **Esplora database** quindi scegliere Mostra **dati tabella.**
 
-2. Copiare i dati riportati di seguito nella tabella È possibile copiarlo e incollarlo nella tabella selezionando l'intera riga nel **riquadro risultati.**
+2. Copiare i dati riportati di seguito nella tabella È possibile copiarlo e incollarlo nella tabella selezionando l'intera riga nel **riquadro** Risultati.
 
     |**ID**|**Tipo**|**FirstName**|**LastName**|**Responsabile**|
     |-|-|-|-|-|

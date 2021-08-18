@@ -1,6 +1,6 @@
 ---
-description: Ignora il numero specificato di elementi nell'enumerazione dei percorsi del codice.
-title: 'IEnumCodePaths2:: Skip | Microsoft Docs'
+description: Ignora il numero specificato di elementi nell'enumerazione dei percorsi di codice.
+title: IEnumCodePaths2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc453d9b12171a3aad070b1b7774ebfabc0d1dc0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ec0f2634eccc1cbd894bd3244af7f71f696304a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083297"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125764"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 Ignora il numero di elementi specificato.
@@ -45,10 +46,10 @@ int Skip(
 [in]Numero di elementi da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è maggiore del numero di elementi `celt` rimanenti; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione viene impostata sulla fine e `S_FALSE` viene restituito.
+ Se specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione `celt` viene impostata sulla fine e viene `S_FALSE` restituito .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

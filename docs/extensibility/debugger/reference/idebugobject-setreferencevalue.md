@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b18af9741c4108b2638be0d55cec78d9a4fc683f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 71f1b02a48d14c01c0a28433be3d0321c2fe3855e045af839e384808be9e52a9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034890"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451796"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 Imposta il valore di riferimento di questo oggetto .

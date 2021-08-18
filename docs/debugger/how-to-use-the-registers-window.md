@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab893453cb0f0603ded5220c45268dc5f0ad058
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 94048bef497f21a77e3e94d583f26d65ceef53553725195ea1100ab5313b9887
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097103"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121453240"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizzare i valori dei registri nella finestra Registri (C#, C++, Visual Basic, F#)
 
@@ -50,7 +50,7 @@ Per informazioni sui flag visualizzati nella finestra **Registri,** vedere [Info
 
 **Per aprire la finestra Registri**
 
-1. Abilitare il debug a livello di indirizzo selezionando Abilita debug **a** livello di indirizzo **in** Strumenti (o **Debug**) > **Opzioni**  >  **debug**.
+1. Abilitare il debug a livello di indirizzo selezionando Abilita debug a livello di indirizzo **in** Strumenti **(o** Debug **)**> **Opzioni**  >  **di debug**.
 
 1. Durante l'esecuzione del debug o in corrispondenza di un punto di interruzione,  >  **selezionare Debug Windows**  >  **Registra** oppure premere **ALT** + **5.**
 

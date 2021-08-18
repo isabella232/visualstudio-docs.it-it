@@ -1,6 +1,6 @@
 ---
 title: Panoramica dell'interfaccia utente Domain-Specific Language Tools
-description: Viene fornita una panoramica dell'interfaccia utente di una soluzione di strumenti del linguaggio specifico di dominio in Visual Studio.
+description: Fornisce una panoramica dell'interfaccia utente di una soluzione di strumenti di linguaggio specifici del dominio in Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -14,15 +14,15 @@ ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e5eadf964f8809c10a4a7b6654397b7ebb9b4f1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a2640cafaa265436def7a49e9089fe65bcfe98046610a906f690fd65ae707aab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047738"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428933"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
-Quando si apre per la prima volta una soluzione Domain-Specific Language Tools (Strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
+Quando si apre per la prima volta una soluzione Domain-Specific Language Tools (DSL Tools) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
 
  ![Progettazione DSL](../modeling/media/dsl_designer.png)
 

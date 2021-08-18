@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4264e2f97ddd8c7e0016c6c3d28b4ea56212642feadd777879c270edc4b705
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2c48cb11e5f7f0b11664ed915a019f961aa60b07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379998"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097780"
 ---
 # <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 Recupera l'identificatore padre della classe del simbolo.

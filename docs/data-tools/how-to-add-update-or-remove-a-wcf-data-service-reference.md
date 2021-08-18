@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 46834208ab567ce4071c15a488ed14285328371e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ffe1d6cea14568f9d8859e005ee56bf45910348488864fe65f24c8b0512890de
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036966"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347201"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF
 
@@ -63,13 +63,13 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
      Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio vengono aggiunti al file *app.config* servizio.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. In **Esplora soluzioni** fare doppio clic o toccare il Servizi connessi **nodo.**
+1. In **Esplora soluzioni** fare doppio clic o toccare il **Servizi connessi** nodo.
 
    Verrà **visualizzata la scheda Configura** servizi.
 
 1. Scegliere **Microsoft WCF Web Service Reference Provider**.
 
-   Verrà **visualizzata la finestra WCF Web Service Reference** configurazione.
+   Verrà **visualizzata la WCF Web Service Reference** configurazione.
 
    ![Screenshot della finestra di dialogo Provider di servizi Web WCF](media/vs-2019/configure-wcf-web-service-reference-dialog.png)
 
@@ -114,13 +114,13 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
     Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio vengono aggiunti al file *app.config* servizio.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. In **Esplora soluzioni** fare doppio clic o toccare il Servizi connessi **nodo.** 
+1. In **Esplora soluzioni** fare doppio clic o toccare il **Servizi connessi** nodo. 
 
    Verrà **visualizzata la scheda Configura** servizi.
 
 1. Scegliere **Microsoft WCF Web Service Reference Provider**.
 
-   Verrà **visualizzata la finestra WCF Web Service Reference** configurazione.
+   Verrà **visualizzata la WCF Web Service Reference** configurazione.
 
 1. Fare clic **su Individua**.
 
@@ -138,7 +138,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!I
 
 ## <a name="update-a-service-reference"></a>Aggiornare un riferimento al servizio
 
-La Entity Data Model per un oggetto [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] a volte cambia. In questo caso, è necessario aggiornare il riferimento al servizio.
+Il Entity Data Model per un oggetto [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] a volte cambia. In questo caso, è necessario aggiornare il riferimento al servizio.
 
 ### <a name="to-update-a-service-reference"></a>Per aggiornare un riferimento al servizio
 

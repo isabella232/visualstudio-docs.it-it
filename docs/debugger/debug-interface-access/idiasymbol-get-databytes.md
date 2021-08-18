@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f023d9822d25bbcb2b50f37ad5d78400945cd907a535f58e6efd7bf13bf0e474
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fbf794feee79ae8865165c31cc5dfc7c07730b55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312020"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036183"
 ---
 # <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 Recupera i byte di dati di un simbolo OEM.
@@ -37,7 +37,7 @@ HRESULT get_dataBytes (
 #### <a name="parameters"></a>Parametri
  `cbData`
 
-[in] Dimensione del buffer in cui contenere i dati.
+[in] Dimensioni del buffer per contenere i dati.
 
  `pcbData`
 
@@ -50,7 +50,7 @@ HRESULT get_dataBytes (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 

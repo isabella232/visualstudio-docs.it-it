@@ -1,5 +1,5 @@
 ---
-description: "IDiaSymbol:: findInlineeLinesByVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato (VA)."
+description: IDiaSymbol::findInlineeLinesByVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato.
 title: IDiaSymbol::findInlineeLinesByVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 61427d33-30d2-4ac9-9bd6-c58c6c705072
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b0eeb503e49f4fd9cda3c9cb7404e712e3c626
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c734fb46b759160e4424da97cb00dd6a97bd559e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156706"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097788"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato (VA).
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,15 +35,15 @@ HRESULT findInlineeLinesByVA (
 #### <a name="parameters"></a>Parametri
  `va`
 
-in Specifica l'indirizzo come VA.
+[in] Specifica l'indirizzo come va va.
 
  `length`
 
-in Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.
+[in] Specifica l'intervallo di indirizzi, in numero di byte, da coprire con questa query.
 
  `ppResult`
 
-out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

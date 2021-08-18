@@ -9,14 +9,15 @@ ms.assetid: 56ba4bc0-8f96-47c2-8b18-332b4e7c2d91
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f2e590c70da50a9c316bdad99cee4e4cb056312d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: df3fcddf2f31282d27e6f9a5744f2cf8592d2a1e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036303"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
 Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo.
@@ -32,7 +33,7 @@ HRESULT findInlineeLines (
 #### <a name="parameters"></a>Parametri
  `ppResult`
 
-out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

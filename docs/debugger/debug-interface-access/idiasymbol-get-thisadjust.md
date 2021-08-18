@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ba2bbb653942a6621b7147bda7295c8091b5e7fbac1310112b907c33f3636a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7b4f166f936bef12c183eb7064d10f1c1d6217e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036063"
 ---
 # <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
 Recupera il regolatore `this` logico per il metodo.

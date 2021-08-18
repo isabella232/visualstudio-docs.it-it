@@ -1,6 +1,6 @@
 ---
 title: Beta privata
-description: Personalizzazioni di esempio usate nel repository di Visual Studio preview beta di GitHub codespaces.
+description: Personalizzazioni di esempio usate nel repository GitHub Codespaces Visual Studio beta di anteprima.
 ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
@@ -11,23 +11,23 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dfcaa045710a28eb0caec144cb922c9a5506f6ba
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 0b6ca27eccae7b76a6a33fbb5158448d8a160e166603eb8d7605c398dc49befd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672432"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452851"
 ---
 # <a name="private-beta"></a>Beta privata
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione agli spazi dei codebase di GitHub da Visual Studio 2019 non sarà più supportata e l'anteprima privata è stata conclusa. Ci stiamo concentrando sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e per le soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro di Visual Studio. Come parte di questo `devinit` e gli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio per informazioni sulle future anteprime e informazioni di roadmap.
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Questo esempio illustra come personalizzare uno spazio dei caratteri per Visual Studio in modo che abbia le stesse funzionalità della beta privata iniziale di [GitHub codespaces](https://github.com/features/codespaces) .
+Questo esempio illustra come personalizzare uno spazio di codice per Visual Studio avere le stesse funzionalità della versione beta privata GitHub [Codespaces](https://github.com/features/codespaces) iniziale.
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_.
+Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve essere nella stessa cartella di _.devcontainer.jsin_.
 
 ```json
 {
@@ -71,9 +71,9 @@ Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve trovarsi
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.js
+## <a name="devcontainerjson"></a>.devcontainer.jssu
 
-Contenuto del _.devcontainer.js_ nel file nella radice del repository.
+Contenuto del.devcontainer.js _nel_ file nella radice del repo.
 
 ```json
 {

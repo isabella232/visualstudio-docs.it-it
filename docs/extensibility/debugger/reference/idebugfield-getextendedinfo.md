@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54cdd5b8c57e6aaf9e28832b21dd82430ed98d38
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3881d9f94ca552fd675c774cdd8ec93dd2e2edfe18dca43a4a2d77b74532a245
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122088822"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452004"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Questo metodo ottiene informazioni estese su un campo.

@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di strumentazione di memoria .NET | Microsoft Docs'
-description: Informazioni sulla visualizzazione albero delle chiamate dei dati di strumentazione per l'allocazione di memoria .NET in Esplora prestazioni.
+description: Leggere la visualizzazione Albero delle chiamate dei dati di strumentazione di allocazione di memoria .NET in Esplora prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f021ebfa21604b13e7e5536b504c6868205ecdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f417c5601e812ee9001db9ed0ae4bb4bcb1d0f0e53a02e30d6e57f2abb7eb4a3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910718"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427210"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione di memoria .NET
 La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di strumentazione contiene i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati temporali e di memoria .NET per la funzione.
@@ -37,18 +38,18 @@ La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazion
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome funzione**|Nome della funzione.|
+|**Nome della funzione**|Nome della funzione.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome assegnato al processo.|
 |**Sovraccarico temporale per probe esclusivi**|Sovraccarico temporale per questa funzione causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i valori di tempo esclusivo.|
 |**Sovraccarico temporale per probe inclusivi**|Sovraccarico temporale per questa funzione e per le relative funzioni figlio causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i tempi inclusivi.|
-|**Tipo**|Il contesto della funzione:<br /><br /> -   **0** : la funzione corrente<br />-   **1** : funzione che chiama la funzione corrente<br />-   **2** -funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
+|**Tipo**|Il contesto della funzione:<br /><br /> -   **0** : funzione corrente<br />-   **1** : funzione che chiama la funzione corrente<br />-   **2:** funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Nome funzione radice**|Nome della funzione corrente. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 
 ## <a name="net-memory-values"></a>Valori di memoria .NET

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ca3261998ae754b637c8adb412850676cb93532f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 41711344f3047667b722d929b361eb4ac0c3b21e9abdb199b53425dcde1c180e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044502"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121344892"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 Consente a un'applicazione client di fornire byte di un file eseguibile come specificato da un indirizzo virtuale relativo.

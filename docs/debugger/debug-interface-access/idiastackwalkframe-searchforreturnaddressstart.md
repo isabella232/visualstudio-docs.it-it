@@ -1,5 +1,5 @@
 ---
-description: Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o in prossimità dell'indirizzo specificato.
+description: Cerca l'indirizzo stack frame specificato in corrispondenza o vicino all'indirizzo specificato.
 title: IDiaStackWalkFrame::searchForReturnAddressStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 49beac1d7f7c998b5ad3a73222903830a934bc9c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fd8070890752e08e265ee2f526964a871e848f76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158908"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036375"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o in prossimità dell'indirizzo specificato.
+Cerca l'indirizzo stack frame specificato in corrispondenza o vicino all'indirizzo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,15 +37,15 @@ HRESULT searchForReturnAddressStart (
 #### <a name="parameters"></a>Parametri
  `frame`
 
-in Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame corrente.
+[in] Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'oggetto stack frame.
 
  `startAddress`
 
-in Indirizzo di memoria virtuale da cui iniziare la ricerca.
+[in] Indirizzo di memoria virtuale da cui iniziare la ricerca.
 
  `returnAddress`
 
-out Restituisce l'indirizzo restituito della funzione più vicino a `startAddress` .
+[out] Restituisce l'indirizzo restituito della funzione più vicina a `startAddress` .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

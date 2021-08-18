@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di un controllo WebView (UWP) | Microsoft Docs
-description: Informazioni su come controllare ed eseguire il debug dei controlli WebView usati in un'app Windows Runtime. È possibile usare il DOM Explorer e la finestra della console JavaScript.
+description: Informazioni su come esaminare ed eseguire il debug dei controlli WebView usati in un'app Windows Runtime. È possibile usare il DOM Explorer e la finestra Console JavaScript.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,19 +13,20 @@ ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: c3876befa45904d21b5a1672ca6fcc72c51bf801
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cdf7632e28e0055b874ef54ae7c6379f623ca6b365a88018641501f56ab40fa9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865657"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121345960"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Eseguire il debug di un controllo WebView in un'app UWP
 
- Per esaminare ed eseguire il debug dei controlli `WebView` in un'app di Windows Runtime, puoi configurare Visual Studio in modo da collegare Script Debugger all'avvio dell'app. Sono disponibili due modi per interagire con `WebView` i controlli tramite il debugger:
+ Per esaminare ed eseguire il debug dei controlli `WebView` in un'app di Windows Runtime, puoi configurare Visual Studio in modo da collegare Script Debugger all'avvio dell'app. È possibile interagire con i controlli in due `WebView` modi usando il debugger:
 
 - Aprire [DOM Explorer`WebView` per un'istanza di ](../debugger/quickstart-debug-html-and-css.md) ed esaminare gli elementi DOM, controllare i problemi relativi allo stile CSS e sottoporre a test le modifiche apportate agli stili con rendering dinamico.
 
@@ -62,7 +63,7 @@ ms.locfileid: "99865657"
 
      La finestra di DOM Explorer associata al controllo `WebView` viene visualizzata come nuova scheda in Visual Studio.
 
-5. Visualizzare e modificare gli elementi DOM attivi e gli stili CSS come descritto in [eseguire il debug di stili CSS usando Dom Explorer](quickstart-debug-html-and-css.md).
+5. Visualizzare e modificare gli elementi DOM e gli stili CSS, come descritto in [Eseguire il debug di stili CSS DOM Explorer](quickstart-debug-html-and-css.md).
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Usare la finestra Console JavaScript per esaminare ed eseguire il debug di un controllo WebView
 
@@ -83,7 +84,7 @@ ms.locfileid: "99865657"
     > [!NOTE]
     > Tramite la console puoi interagire con un singolo `WebView`, `iFrame`, contratto di condivisione o Web worker alla volta. Ogni elemento richiede un'istanza separata dell'host della piattaforma Web (WWAHost.exe). Puoi interagire con un solo host alla volta.
 
-6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in [Guida introduttiva: eseguire il debug](../debugger/quickstart-debug-javascript-using-the-console.md) dei [comandi della console](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)JavaScript e JavaScript.
+6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in Guida introduttiva: Eseguire il [debug di comandi javascript](../debugger/quickstart-debug-javascript-using-the-console.md) [e console JavaScript.](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 
 ## <a name="see-also"></a>Vedi anche
 

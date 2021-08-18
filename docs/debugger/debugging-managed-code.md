@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b4ff397996ac57d85ac52a338bdce6049e392dc725227c2021e384c81093931
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a5f56710ea026cdd1962ea5fc43f914549bec300
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240403"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097514"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Eseguire il debug di codice gestito (C#, Visual Basic, F#, C++/CLI)
 

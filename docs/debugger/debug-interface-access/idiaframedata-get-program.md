@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 22946c85ecb74a54a4e4ff844ff7b0f8359bbf62bee78aeda108a33342ac60c1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e78315ba7fe4f4de3ae94cafe6d8ffa78ef32065
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036415"
 ---
 # <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
 Recupera la stringa di programma utilizzata per calcolare il set di registri prima della chiamata alla funzione corrente.
@@ -45,7 +45,7 @@ HRESULT get_program (
 
 1. Spostare il contenuto del registro `ebp` in `T0` .
 
-2. Aggiungere `4` al valore in per produrre un indirizzo, ottenere il valore da tale indirizzo e `T0` archiviarlo nel registro `eip` .
+2. Aggiungere al valore in per produrre un indirizzo, ottenere il valore da tale indirizzo e `4` `T0` archiviare il valore nel registro `eip` .
 
 3. Ottenere il valore dall'indirizzo archiviato in `T0` e archiviarlo nel registro `ebp` .
 

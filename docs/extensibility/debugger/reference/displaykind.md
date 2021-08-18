@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11d6cd9390b115b583df5d83db102af0253bf13384d7e612af65edfc6536ccd6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3f491751cb3ef14537ab4be112722c957ea0fc20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378029"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065033"
 ---
 # <a name="displaykind"></a>DisplayKind
-Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e visualizzarli all'utente.
+Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e visualizzarli all'utente.
 
 ## <a name="syntax"></a>Sintassi
 

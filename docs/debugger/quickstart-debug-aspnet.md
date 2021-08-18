@@ -1,6 +1,6 @@
 ---
-title: ASP.NET Core di debug
-description: Eseguire il debug di ASP.NET Core usando il debugger di Visual Studio
+title: Eseguire il debug ASP.NET Core
+description: Eseguire ASP.NET Core debug usando il debugger Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -10,16 +10,17 @@ ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 882a192a96764356e90d78498ef5ed5ccd29ce25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f4455a8cfcbc62cc06e48692a2d19b55d1686bf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908343"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065293"
 ---
-# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Guida introduttiva: eseguire il debug di ASP.NET Core con il debugger di Visual Studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il ASP.NET Core debug con il debugger Visual Studio debug
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
@@ -31,7 +32,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **Modelli**, quindi scegliere **Crea una nuova applicazione Web ASP.NET Core**. Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
+    Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
 
     Nella finestra di dialogo visualizzata scegliere **Applicazione Web** nel riquadro centrale e quindi fare clic su **OK**.
 

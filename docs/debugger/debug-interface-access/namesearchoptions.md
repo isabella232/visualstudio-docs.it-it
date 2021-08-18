@@ -11,14 +11,15 @@ ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bd074de0c44803a06d5399f2bd4dc1e3c43618a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 82bebfc05ac360ac2cb32eac70679805b592c4cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155348"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065876"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Specifica le opzioni di ricerca per i nomi di simboli e file.
@@ -48,13 +49,13 @@ enum NameSearchOptions {
 
 `nsfCaseSensitive` Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole.
 
-`nsfCaseInsensitive` Applica una corrispondenza con il nome senza distinzione tra maiuscole e minuscole.
+`nsfCaseInsensitive` Applica una corrispondenza nome senza distinzione tra maiuscole e minuscole.
 
-`nsfFNameExt` Considera i nomi come percorsi e applica un nome nomefile. EXT corrispondente.
+`nsfFNameExt` Considera i nomi come percorsi e applica una corrispondenza nomefile.ext.
 
-`nsfRegularExpression` Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole utilizzando asterischi (*) e punti interrogativi (?) come caratteri jolly. Altri caratteri di espressione regolare comuni non sono supportati.
+`nsfRegularExpression` Applica una corrispondenza con distinzione tra maiuscole e minuscole usando asterischi (*) e punti interrogativi (?) come caratteri jolly. Altri caratteri di espressione regolare comuni non sono supportati.
 
-`nsfUndecoratedName` Si applica solo ai simboli con nomi non decorati e decorati.
+`nsfUndecoratedName` Si applica solo ai simboli con nomi sia non decorati che decorati.
 
 ## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono passati ai metodi seguenti:
@@ -66,7 +67,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti:
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: dia2.h
 
 ## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

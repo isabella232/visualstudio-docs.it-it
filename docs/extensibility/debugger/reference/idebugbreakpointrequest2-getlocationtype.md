@@ -1,6 +1,6 @@
 ---
-description: Ottiene il tipo di posizione del punto di interruzione della richiesta del punto di interruzione.
-title: 'IDebugBreakpointRequest2:: GetLocationType | Microsoft Docs'
+description: Ottiene il tipo di posizione del punto di interruzione di questa richiesta del punto di interruzione.
+title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bd254d5bfd9126a65ad7364212f628b1b45cb61
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 888d17e7616162120835ef77cee47a24e149b5cf4902b78b5a819c8f451b6b48
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054517"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452278"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-Ottiene il tipo di posizione del punto di interruzione della richiesta del punto di interruzione.
+Ottiene il tipo di posizione del punto di interruzione di questa richiesta del punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetLocationType(
 
 ## <a name="parameters"></a>Parametri
 `pBPLocationType`\
-out Restituisce un valore dall'enumerazione [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) che descrive il percorso di questa richiesta del punto di interruzione.
+[out] Restituisce un valore dall'enumerazione [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) che descrive il percorso della richiesta del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_FAIL` se il `bpLocation` campo nella struttura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) associata non è valido.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_FAIL` se il campo nella struttura BP_REQUEST_INFO non è `bpLocation` valido. [](../../../extensibility/debugger/reference/bp-request-info.md)
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CDebugBreakpointRequest` oggetto semplice che espone l'interfaccia[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugBreakpointRequest` semplice che espone[l'interfaccia IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)

@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dadd3882513ac0bdf824ab984aaca532f3bac9101ec6c81671e9c5638777586
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0ae8733c30a299123e1f0d21a43be943a24a5277
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404525"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097588"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra Registri in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -45,7 +45,7 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
 
  Quando si osserva la **finestra Registri,** vengono visualizzati voci come `EAX = 003110D8` .
 
- Il simbolo a sinistra del `=` segno è il nome del registro, , in questo `EAX` caso. Il numero alla destra del segno `=` rappresenta il contenuto del registro.
+ Il simbolo a sinistra del segno `=` è il nome del registro, , in questo `EAX` caso. Il numero alla destra del segno `=` rappresenta il contenuto del registro.
 
  Oltre a esaminare il contenuto di un registro, nella finestra **Registri** è possibile eseguire altre attività. Se si sta utilizzando codice nativo in modalità di interruzione, è possibile fare clic sul contenuto di un registro e modificarne il valore. Si tratta di un'operazione che deve essere eseguita con criterio. Se non si comprende la funzione del registro che si sta modificando e quali dati esso contenga, un'incauta modifica provocherà, con molta probabilità, un arresto anomalo del programma o altri effetti indesiderati. Una spiegazione dettagliata degli insiemi di registri dei vari processori Intel e compatibili, tuttavia, eccede l'ambito di questa breve introduzione.
 

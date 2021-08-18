@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8d104d4e3515e2023408c4d17a7260ac12a6e9c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e97d498abbd7cbc650a0438a96570c172e5cf1d48031c92f8bef7b09de8f1860
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057512"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338891"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` viene implementato da un fornitore di porte per avvisare l'utente che il collegamento al processo non è sicuro.

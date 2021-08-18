@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: de3f60072ed476bf0fb9336bea741f8e6d647f0c877664c808a7adabf69f39e9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 995470a5156850bf789a233b2629a41859585440
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362134"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065540"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Procedura: eseguire il debug del metodo OnStart
 È possibile eseguire il debug di un servizio Windows stesso avviando il servizio e connettendo il debugger al processo del servizio. Per altre informazioni, vedere [Procedura: Eseguire il debug di applicazioni di servizio per Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Per eseguire il debug del metodo <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> di un servizio Windows, è tuttavia necessario avviare il debugger all'interno del metodo.
@@ -45,7 +45,7 @@ ms.locfileid: "121362134"
 
     Verrà visualizzata una finestra di dialogo analoga alla seguente:
 
-    ![Screenshot di una Visual Studio finestra di dialogo Debugger JUST-In-Time che mostra un'eccezione .NET Framework si è verificata in WindowsService-Asis.exe.](../debugger/media/onstartdebug.png)
+    ![Screenshot di una Visual Studio finestra di dialogo Debugger JUST-In-Time che mostra un'eccezione di .NET Framework non gestita che si è verificata WindowsService-Asis.exe.](../debugger/media/onstartdebug.png)
 
 3. Selezionare **Sì, esegui il debug \<service name> di .**
 

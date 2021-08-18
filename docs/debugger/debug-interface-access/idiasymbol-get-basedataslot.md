@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 333e8dcd3f250a75f2a93c0d11a6326a13d8878d8a0e733dd2150e83c757d79c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a91d58ddb48979ac3aff229a099cf0b681b8f15c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420832"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097764"
 ---
 # <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
 Recupera lo slot di dati di base.

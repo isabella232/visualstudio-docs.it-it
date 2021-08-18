@@ -1,5 +1,5 @@
 ---
-description: Recupera la posizione del bit della posizione.
+description: Recupera la posizione in bit della posizione.
 title: IDiaSymbol::get_bitPosition | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: b0059407-8655-497b-81ca-025595989371
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d0220afe8b5946e52dfe3885a23bdc1827b2e1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7ac3b809bd77624cceccd476d6d025ed72454de6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156447"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036207"
 ---
 # <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
-Recupera la posizione del bit della posizione. Utilizzato quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsBitField` .
+Recupera la posizione in bit della posizione. Utilizzato quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsBitField` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +35,19 @@ HRESULT get_bitPosition (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce la posizione del bit del percorso.
+[out] Restituisce la posizione in bit della posizione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o codice `S_FALSE` di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedi anche

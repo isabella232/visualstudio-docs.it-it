@@ -24,7 +24,7 @@ Questo messaggio viene visualizzato quando si trascinano elementi che non usano 
 
 **O/R Designer** supporta solo connessioni dati che usano il provider .NET Framework per SQL Server. Sono valide solo le connessioni a Microsoft SQL Server o a File di database Microsoft SQL Server.
 
-Per correggere l'errore, aggiungere solo gli elementi dalle connessioni dati che usano il .NET Framework provider di dati per SQL Server in **O/R Designer.**
+Per correggere l'errore, aggiungere solo gli elementi dalle connessioni dati che usano il .NET Framework provider di dati per SQL Server in **Progettazione O/R.**
 
 ## <a name="see-also"></a>Vedi anche
 

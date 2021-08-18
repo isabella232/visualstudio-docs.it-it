@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a6e3d2f775d7c57179601d38fa4c0a2307887b95afb5160b0257033ce8a8e9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d7285648ad1cb9f93dd11f5374f1eb2cf8ecbfdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436275"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065780"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -290,7 +290,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 ### <a name="run-the-app"></a>Eseguire l'app
 
-1. Premere **F5 o** il **pulsante Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug nella barra degli strumenti Debug, sopra l'editor di codice.
+1. Premere **F5 o** il **pulsante Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug, sopra l'editor di codice.
 
     L'app viene avviata e il debugger non visualizza alcuna eccezione. Tuttavia, l'output visualizzato nella finestra della console è diverso da quanto ci si aspetta. Ecco l'output previsto:
 

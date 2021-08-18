@@ -1,6 +1,6 @@
 ---
 title: Problemi di sicurezza/controllo delle versioni/manifesto (ClickOnce)
-description: Informazioni sui problemi relativi alla sicurezza ClickOnce, al controllo delle versioni delle applicazioni e alla sintassi del manifesto e alla semantica che possono causare la mancata riuscita di una distribuzione ClickOnce.
+description: Informazioni sui problemi relativi alla ClickOnce, al controllo delle versioni delle applicazioni, alla sintassi e alla semantica dei manifesti che possono causare ClickOnce una distribuzione non riuscita.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,82 +22,83 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 55758f67c845cbf753d51ebfb94b87af6cf55cde
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6048aeb6972b2f60c8ba421e9a1593ba2cf42a7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877629"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035625"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 
-Esistono diversi problemi relativi alla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sicurezza, al controllo delle versioni delle applicazioni e alla sintassi del manifesto e alla semantica che possono causare la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mancata riuscita della distribuzione.
+Esistono diversi problemi relativi alla sicurezza, al controllo delle versioni delle applicazioni, alla sintassi e alla semantica dei manifesti che possono causare la non riuscita [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] di una distribuzione.
 
-## <a name="clickonce-and-windows-vista-user-account-control"></a>Controllo dell'account utente di ClickOnce e Windows Vista
+## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce e Windows controllo dell'account utente di Vista
 
-In [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] , per impostazione predefinita, le applicazioni vengono eseguite come utente standard, anche se l'utente corrente è connesso con un account che dispone di autorizzazioni di amministratore. Se un'applicazione deve eseguire un'azione che richiede autorizzazioni di amministratore, indica al sistema operativo che quindi chiede all'utente di immettere le credenziali di amministratore. Questa funzionalità, denominata controllo dell'account utente, impedisce alle applicazioni di apportare modifiche che potrebbero influire sull'intero sistema operativo senza l'approvazione esplicita dell'utente. Le applicazioni Windows dichiarano che richiedono questa elevazione delle autorizzazioni specificando l' `requestedExecutionLevel` attributo nella `trustInfo` sezione del manifesto dell'applicazione.
+In le applicazioni vengono eseguite per impostazione predefinita come utente standard, anche se l'utente corrente è connesso con un [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] account con autorizzazioni di amministratore. Se un'applicazione deve eseguire un'azione che richiede autorizzazioni di amministratore, indica al sistema operativo, che quindi richiede all'utente di immettere le credenziali di amministratore. Questa funzionalità, denominata Controllo dell'account utente, impedisce alle applicazioni di apportare modifiche che potrebbero influire sull'intero sistema operativo senza l'approvazione esplicita di un utente. Windows dichiarano di richiedere questa elevazione delle autorizzazioni specificando l'attributo `requestedExecutionLevel` nella sezione del manifesto `trustInfo` dell'applicazione.
 
-A causa del rischio di esporre le applicazioni agli attacchi con elevazione di sicurezza, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni non possono richiedere l'elevazione delle autorizzazioni se UAC è abilitato per il client. Qualsiasi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che tenti di impostare il relativo `requestedExecutionLevel` attributo `requireAdministrator` `highestAvailable` su o non verrà installata in [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] .
+A causa del rischio di esporre le applicazioni ad attacchi di elevazione dei privilegi di sicurezza, le applicazioni non possono richiedere l'elevazione delle autorizzazioni se controllo dell'account utente [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è abilitato per il client. Qualsiasi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che tenta di impostare il relativo attributo su o non verrà installata in `requestedExecutionLevel` `requireAdministrator` `highestAvailable` [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] .
 
-In alcuni casi, l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione potrebbe tentare di eseguire con autorizzazioni di amministratore a causa della logica di rilevamento del programma di installazione in [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] . In questo caso, è possibile impostare l' `requestedExecutionLevel` attributo nel manifesto dell'applicazione su `asInvoker` . Questa operazione causerà l'esecuzione dell'applicazione senza elevazione dei privilegi. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] aggiunge automaticamente questo attributo a tutti i manifesti dell'applicazione.
+In alcuni casi, è possibile che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] l'applicazione tenti di essere eseguita con autorizzazioni di amministratore a causa della logica di rilevamento del programma di installazione in [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] . In questo caso, è possibile impostare `requestedExecutionLevel` l'attributo nel manifesto dell'applicazione su `asInvoker` . In questo modo l'applicazione stessa verrà eseguita senza elevazione dei privilegi. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] aggiunge automaticamente questo attributo a tutti i manifesti dell'applicazione.
 
-Se si sta sviluppando un'applicazione che richiede autorizzazioni di amministratore per l'intera durata dell'applicazione, è consigliabile distribuire l'applicazione usando la tecnologia Windows Installer (MSI). Per ulteriori informazioni, vedere [nozioni di base su Windows Installer](../extensibility/internals/windows-installer-basics.md).
+Se si sviluppa un'applicazione che richiede autorizzazioni di amministratore per l'intera durata dell'applicazione, è consigliabile distribuire l'applicazione usando invece la tecnologia Windows Installer (MSI). Per altre informazioni, vedere [nozioni Windows installer.](../extensibility/internals/windows-installer-basics.md)
 
-## <a name="online-application-quotas-and-partial-trust-applications"></a>Quote di applicazioni online e applicazioni con attendibilità parziale
+## <a name="online-application-quotas-and-partial-trust-applications"></a>Quote di applicazioni online e applicazioni parzialmente attendibili
 
-Se l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene eseguita online anziché tramite un'installazione, deve rientrare nella quota accantonata per le applicazioni online. Inoltre, un'applicazione di rete eseguita in attendibilità parziale, ad esempio con un set limitato di autorizzazioni di sicurezza, non può essere maggiore della metà della dimensione della quota.
+Se [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] l'applicazione viene eseguita online anziché tramite un'installazione, deve rientrare nella quota impostata per le applicazioni online. Inoltre, un'applicazione di rete eseguita in attendibilità parziale, ad esempio con un set limitato di autorizzazioni di sicurezza, non può essere superiore alla metà delle dimensioni della quota.
 
-Per ulteriori informazioni e istruzioni su come modificare la quota dell'applicazione online, vedere [Cenni preliminari sulla cache ClickOnce](../deployment/clickonce-cache-overview.md).
+Per altre informazioni e istruzioni su come modificare la quota di applicazioni online, vedere panoramica ClickOnce [cache.](../deployment/clickonce-cache-overview.md)
 
 ## <a name="versioning-issues"></a>Problemi relativi al controllo delle versioni
 
-È possibile che si verifichino problemi se si assegnano nomi sicuri all'assembly e si incrementa il numero di versione dell'assembly per riflettere l'aggiornamento di un'applicazione. Tutti gli assembly compilati con un riferimento a un assembly con nome sicuro devono essere ricompilati o l'assembly tenterà di fare riferimento alla versione precedente. L'assembly proverà a eseguire questa operazione perché l'assembly usa il valore della versione precedente nella relativa richiesta di binding.
+È possibile che si verifichino problemi se si assegnano nomi sicuri all'assembly e si incrementa il numero di versione dell'assembly per riflettere un aggiornamento dell'applicazione. Qualsiasi assembly compilato con un riferimento a un assembly con nome sicuro deve essere ricompilato oppure l'assembly tenterà di fare riferimento alla versione precedente. L'assembly proverà a eseguire questa operazione perché l'assembly usa il valore della versione precedente nella richiesta di associazione.
 
-Si immagini, ad esempio, di avere un assembly con nome sicuro nel proprio progetto con la versione 1.0.0.0. Dopo aver compilato l'assembly, aggiungerlo come riferimento al progetto che contiene l'applicazione principale. Se si aggiorna l'assembly, si incrementa la versione in 1.0.0.1 e si prova a distribuirla senza ricompilare anche l'applicazione, l'applicazione non sarà in grado di caricare l'assembly in fase di esecuzione.
+Si supponga, ad esempio, di avere un assembly con nome sicuro nel proprio progetto con la versione 1.0.0.0. Dopo aver compilato l'assembly, aggiungerlo come riferimento al progetto che contiene l'applicazione principale. Se si aggiorna l'assembly, si incrementa la versione a 1.0.0.1 e si tenta di distribuirlo senza ricompilare anche l'applicazione, l'applicazione non sarà in grado di caricare l'assembly in fase di esecuzione.
 
-Questo errore può verificarsi solo se si modificano i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti manualmente. questo errore non dovrebbe verificarsi se si genera la distribuzione usando Visual Studio.
+Questo errore può verificarsi solo se si modificano i manifesti manualmente. Questo errore non dovrebbe verificarsi se si genera la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando Visual Studio.
 
-## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Specificare singoli assembly di .NET Framework nel manifesto
+## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Specificare singoli .NET Framework assembly nel manifesto
 
-Se una distribuzione è stata modificata manualmente [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] per fare riferimento a una versione precedente di un assembly .NET Framework, l'applicazione non verrà caricata. Se, ad esempio, è stato aggiunto un riferimento all'assembly System.Net per una versione della .NET Framework prima della versione specificata nel manifesto, si verificherà un errore. In generale, non si deve tentare di specificare riferimenti a singoli assembly di .NET Framework, perché la versione di .NET Framework in cui viene eseguita l'applicazione viene specificata come dipendenza nel manifesto dell'applicazione.
+L'applicazione non verrà caricata se è stata modificata manualmente una distribuzione per fare riferimento a una versione precedente di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un assembly .NET Framework. Ad esempio, se è stato aggiunto un riferimento all'assembly System.Net per una versione del .NET Framework precedente alla versione specificata nel manifesto, si verificherà un errore. In generale, non è consigliabile tentare di specificare riferimenti a singoli assembly .NET Framework, perché la versione del .NET Framework in cui viene eseguita l'applicazione viene specificata come dipendenza nel manifesto dell'applicazione.
 
-## <a name="manifest-parsing-issues"></a>Problemi di analisi dei manifesti
+## <a name="manifest-parsing-issues"></a>Problemi di analisi del manifesto
 
-I file manifesto utilizzati da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono file XML ed è necessario che siano entrambi ben formati e validi: devono rispettare le regole di sintassi XML e utilizzare solo elementi e attributi definiti nel XML schema pertinente.
+I file manifesto utilizzati da sono file XML e devono essere sia in formato corretto che validi: devono rispettare le regole della sintassi XML e utilizzare solo gli elementi e gli attributi definiti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nell'XML Schema pertinente.
 
-Un elemento che può causare problemi in un file manifesto è la selezione di un nome per l'applicazione che contiene un carattere speciale, ad esempio virgolette singole o doppie. Il nome dell'applicazione fa parte della propria [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identità. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Attualmente non analizza le identità che contengono caratteri speciali. Se l'applicazione non viene attivata, assicurarsi di usare solo caratteri alfabetici e numerici per il nome e provare a distribuirla nuovamente.
+Un elemento che può causare problemi in un file manifesto è la selezione di un nome per l'applicazione che contiene un carattere speciale, ad esempio una virgoletta singola o doppia. Il nome dell'applicazione fa parte della relativa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identità. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] attualmente non analizza le identità che contengono caratteri speciali. Se l'applicazione non viene attivata, assicurarsi di usare solo caratteri alfabetici e numerici per il nome e provare a distribuirla nuovamente.
 
-Se i manifesti della distribuzione o dell'applicazione sono stati modificati manualmente, è possibile che siano stati danneggiati in modo involontario. Il manifesto danneggiato impedisce un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installazione corretta. È possibile eseguire il debug di tali errori in fase di esecuzione facendo clic su **Dettagli** nella finestra di dialogo **errore ClickOnce** e leggendo il messaggio di errore nel log. Il log elenca uno dei messaggi seguenti:
+Se i manifesti dell'applicazione o della distribuzione sono stati modificati manualmente, potrebbero essere stati involontariamente danneggiati. Il manifesto danneggiato impedirà un'installazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] corretta. È possibile eseguire il debug  di tali errori in fase di esecuzione facendo clic su Dettagli nella finestra di dialogo ClickOnce **errore** e leggendo il messaggio di errore nel log. Nel log verrà elencato uno dei messaggi seguenti:
 
-- Una descrizione dell'errore di sintassi, il numero di riga e la posizione del carattere in cui si è verificato l'errore.
+- Descrizione dell'errore di sintassi e numero di riga e posizione del carattere in cui si è verificato l'errore.
 
-- Nome di un elemento o di un attributo utilizzato per la violazione dello schema del manifesto. Se il codice XML è stato aggiunto manualmente ai manifesti, sarà necessario confrontare le aggiunte agli schemi del manifesto. Per ulteriori informazioni, vedere [manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) e [manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md).
+- Nome di un elemento o di un attributo usato in violazione dello schema del manifesto. Se il codice XML è stato aggiunto manualmente ai manifesti, sarà necessario confrontare le aggiunte agli schemi del manifesto. Per altre informazioni, vedere [l'ClickOnce di distribuzione](../deployment/clickonce-deployment-manifest.md) e ClickOnce [dell'applicazione.](../deployment/clickonce-application-manifest.md)
 
-- Conflitto ID. I riferimenti alle dipendenze nei manifesti di distribuzione e dell'applicazione devono essere univoci in entrambi `name` `publicKeyToken` gli attributi e. Se entrambi gli attributi corrispondono tra due elementi qualsiasi all'interno di un manifesto, l'analisi del manifesto avrà esito negativo.
+- Conflitto di ID. I riferimenti alle dipendenze nei manifesti di distribuzione e dell'applicazione devono essere univoci nei relativi `name` `publicKeyToken` attributi e . Se entrambi gli attributi corrispondono tra due elementi qualsiasi all'interno di un manifesto, l'analisi del manifesto non riuscirà.
 
-## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauzioni per la modifica manuale di manifesti o applicazioni
+## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauzioni quando si modificano manualmente manifesti o applicazioni
 
-Quando si aggiorna un manifesto dell'applicazione, è necessario firmare di nuovo sia il manifesto dell'applicazione che il manifesto della distribuzione. Il manifesto di distribuzione contiene un riferimento al manifesto dell'applicazione che include l'hash del file e la relativa firma digitale.
+Quando si aggiorna un manifesto dell'applicazione, è necessario firmare nuovamente sia il manifesto dell'applicazione che il manifesto della distribuzione. Il manifesto della distribuzione contiene un riferimento al manifesto dell'applicazione che include l'hash del file e la relativa firma digitale.
 
-### <a name="precautions-with-deployment-provider-usage"></a>Precauzioni con l'utilizzo del provider di distribuzione
+### <a name="precautions-with-deployment-provider-usage"></a>Precauzioni per l'utilizzo del provider di distribuzione
 
-Il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione ha una `deploymentProvider` proprietà che punta al percorso completo della posizione da cui l'applicazione deve essere installata e gestita:
+Il manifesto della distribuzione ha una proprietà che punta al percorso completo del percorso da cui l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deve essere installata e `deploymentProvider` utilizzata:
 
 ```xml
 <deploymentProvider codebase="http://myserver/myapp.application" />
 ```
 
-Questo percorso viene impostato quando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea l'applicazione ed è obbligatorio per le applicazioni installate. Il percorso punta alla posizione standard in cui il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programma di installazione installerà l'applicazione e cerca gli aggiornamenti. Se si utilizza il comando **xcopy** per copiare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in un percorso diverso, ma non si modifica la `deploymentProvider` proprietà, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] si riferisce ancora al percorso originale quando tenta di scaricare l'applicazione.
+Questo percorso viene impostato quando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea l'applicazione ed è disponibile per le applicazioni installate. Il percorso punta al percorso standard da cui il programma di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installazione installerà l'applicazione e cerca gli aggiornamenti. Se si usa il **comando xcopy** per copiare un'applicazione in un percorso diverso, ma non si modifica la proprietà , farà comunque riferimento al percorso originale quando tenta di scaricare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `deploymentProvider` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] l'applicazione.
 
-Se si desidera spostare o copiare un'applicazione, è necessario aggiornare anche il `deploymentProvider` percorso, in modo che il client venga effettivamente installato dal nuovo percorso. L'aggiornamento di questo percorso rappresenta principalmente un problema se sono state installate applicazioni. Per le applicazioni online che vengono sempre avviate tramite l'URL originale, l'impostazione di `deploymentProvider` è facoltativa. Se `deploymentProvider` è impostato, verrà rispettato; in caso contrario, l'URL utilizzato per avviare l'applicazione verrà utilizzato come URL di base per scaricare i file dell'applicazione.
+Se si vuole spostare o copiare un'applicazione, è necessario aggiornare anche il percorso, in modo che il client si `deploymentProvider` installi effettivamente dal nuovo percorso. L'aggiornamento di questo percorso rappresenta principalmente un problema se sono state installate applicazioni. Per le applicazioni online che vengono sempre avviate tramite l'URL originale, l'impostazione `deploymentProvider` di è facoltativa. Se è impostato, verrà rispettato. In caso contrario, l'URL usato per avviare l'applicazione verrà usato come URL di base per scaricare i `deploymentProvider` file dell'applicazione.
 
 > [!NOTE]
 > Ogni volta che si aggiorna il manifesto, è necessario firmarlo di nuovo.
 
 ## <a name="see-also"></a>Vedi anche
 
-[Risolvere i problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) 
- [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md) 
- [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Risolvere i ClickOnce distribuzioni](../deployment/troubleshooting-clickonce-deployments.md) 
+ [Proteggere ClickOnce applicazioni](../deployment/securing-clickonce-applications.md) 
+ [Scegliere una strategia ClickOnce distribuzione locale](../deployment/choosing-a-clickonce-deployment-strategy.md)

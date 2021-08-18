@@ -1,6 +1,6 @@
 ---
 title: Attività WriteLinesToFile | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività WriteLinesToFile per scrivere i percorsi degli elementi specificati nel file di testo specificato.
+description: Informazioni su MSBuild'attività WriteLinesToFile per scrivere i percorsi degli elementi specificati nel file di testo specificato.
 ms.custom: SEO-VS-2020
 ms.date: 09/20/2018
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4e2f98f25c43fbd467218ed8777ad5f4a2ecb9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d117f8832a36b02f32b5e3bf062eb7a624dd13b62e2d6cfb9f2f1627fc97239
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887952"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121427457"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (attività)
 
@@ -47,7 +48,7 @@ Scrive i percorsi degli elementi specificati nel file di testo indicato.
 
  Se `Overwrite` è `true`, crea un nuovo file, scrive il contenuto nel file e quindi lo chiude. Se il file di destinazione è già esistente, viene sovrascritto. Se `Overwrite` è `false`, accoda il contenuto al file, creando il file di destinazione nel caso in cui non esista.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

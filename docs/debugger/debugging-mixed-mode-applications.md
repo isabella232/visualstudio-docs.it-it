@@ -1,6 +1,6 @@
 ---
 title: Debug Mixed-Mode applicazioni | Microsoft Docs
-description: Eseguire il debug di un'applicazione in modalità mista, ovvero un'app che combina il codice nativo con il codice gestito eseguito in Common Language Runtime, in Visual Studio.
+description: Eseguire il debug di un'applicazione in modalità mista, ovvero un'app che combina codice nativo con codice gestito eseguito in Common Language Runtime, in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe0a77b9ed32be07f02abcc837af8595fcd10fb42b2effb0ccece336b57f566
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 13eff8e5d1d078c838d0b193dc5fe7b88a23f56b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404554"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097480"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debug delle applicazioni in modalità mista
 Un'applicazione in modalità mista combina codice nativo (C++) con codice gestito, ad esempio Visual Basic, Visual C# o C++ eseguito in Common Language Runtime. Il debug di applicazioni in modalità mista è ampiamente trasparente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e non è molto diverso dal debug di un'applicazione in modalità singola. È tuttavia necessario fare alcune considerazioni specifiche.

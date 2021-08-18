@@ -10,17 +10,18 @@ ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5915d96b574336d7091239275a2aaef456a7f3
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 12adec8bbaad32d801de2dabdfb792bc1cc196ecce47a0cbfb35cb84052def21
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899367"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452667"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit usati da comandi specifici
-Il comportamento di una serie di funzioni nell'API plug-in del controllo del codice sorgente può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. I vari flag di bit usati dall'API plug-in del controllo del codice sorgente sono qui dettagliati, raggruppati in base alla funzione che li usa.
+Il comportamento di una serie di funzioni nell'API plug-in del controllo del codice sorgente può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. I vari flag di bit usati dall'API plug-in del controllo del codice sorgente sono dettagliati qui, raggruppati in base alla funzione che li usa.
 
 ## <a name="checked-out-flag"></a>Flag estratto
  Questo flag può essere impostato per [SccAdd](../extensibility/sccadd-function.md) o [SccCheckin](../extensibility/scccheckin-function.md).
@@ -36,7 +37,7 @@ Il comportamento di una serie di funzioni nell'API plug-in del controllo del cod
 |----------|-----------|-----------------|
 |`SCC_FILETYPE_AUTO`|0x00|È previsto che il plug-in del controllo del codice sorgente rilevi automaticamente se il file è di tipo testo o binario.|
 |`SCC_FILETYPE_TEXT`|0x01|Il tipo di file è text.|
-|`SCC_FILETYPE_BINARY`|0x04|Il tipo di file è binary. **Nota:** `SCC_FILETYPE_TEXT` I `SCC_FILETYPE_BINARY` flag e si escludono a vicenda.   Impostare una o nessuna delle due opzioni.|
+|`SCC_FILETYPE_BINARY`|0x04|Il tipo di file è binary. **Nota:** `SCC_FILETYPE_TEXT` I `SCC_FILETYPE_BINARY` flag e si escludono a vicenda.   Impostare esattamente una o nessuna delle due opzioni.|
 |`SCC_ADD_STORELATEST`|0x02|Archiviare solo la versione più recente (senza delta).|
 
 ## <a name="diff-flags"></a>Flag Diff
@@ -104,8 +105,8 @@ Il comportamento di una serie di funzioni nell'API plug-in del controllo del cod
 |`SCC_OPT_EQ_ENABLE`|0x01L|Abilita la registrazione delle code di eventi.|`SCC_OPT_EVENTQUEUE`|
 |`SCC_OPT_HCM_NO`|0L|(Impostazione predefinita) Non ha la modalità di annullamento. Se lo si desidera, il plug-in deve fornire .|`SCC_OPT_HASCANCELMODE`|
 |`SCC_OPT_HCM_YES`|1L|L'IDE gestisce l'annullamento.|`SCC_OPT_HASCANCELMODE`|
-|`SCC_OPT_SCO_NO`|0L|(Impostazione predefinita) OK per estrarre dall'interfaccia utente del plug-in; la directory di lavoro è impostata.|`SCC_OPT_SCCCHECKOUTONLY`|
+|`SCC_OPT_SCO_NO`|0L|(Impostazione predefinita) OK per estrarre dall'interfaccia utente del plug-in. la directory di lavoro è impostata.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1L|Nessuna estrazione dell'interfaccia utente del plug-in, nessuna directory di lavoro.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

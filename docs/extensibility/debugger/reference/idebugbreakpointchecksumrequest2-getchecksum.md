@@ -1,6 +1,6 @@
 ---
-description: Recupera il checksum del documento per una richiesta del punto di interruzione in base all'identificatore univoco dell'algoritmo di checksum da utilizzare.
-title: 'IDebugBreakpointChecksumRequest2:: GetCheckSum | Microsoft Docs'
+description: Recupera il checksum del documento per una richiesta di punto di interruzione in base all'identificatore univoco dell'algoritmo di checksum da usare.
+title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,20 +9,21 @@ ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9d4fc1d20b8b41d3462ad931a50de6485b920a5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3b338cacbe3228aa48dc89b632eecaab6ce3fa02bfe90ac6af2a82b182a0071f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078097"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342531"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Recupera il checksum del documento per una richiesta del punto di interruzione in base all'identificatore univoco dell'algoritmo di checksum da utilizzare.
+Recupera il checksum del documento per una richiesta di punto di interruzione in base all'identificatore univoco dell'algoritmo di checksum da usare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +43,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>Parametri
 `guidAlgorithm`\
-in Identificatore univoco dell'algoritmo di checksum.
+[in] Identificatore univoco dell'algoritmo di checksum.
 
 `pChecksumData`\
-out Checksum del documento per la richiesta del punto di interruzione.
+[out] Checksum del documento per la richiesta del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrata una funzione che controlla se il checksum di un documento, che sta per essere associato, corrisponde a uno dall'interfaccia utente.
+L'esempio seguente mostra una funzione che controlla se il checksum di un documento, che sta per essere associato, corrisponde a uno dall'interfaccia utente.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

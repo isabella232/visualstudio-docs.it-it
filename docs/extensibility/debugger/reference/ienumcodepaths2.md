@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952df4bec381fdce0850d2f74f0bc81329f14c2c10a7f6dc2ad3de019761c355
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 93a7d85899a84b8cced0cf12efaba19a29449476
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448663"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125751"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Questa interfaccia rappresenta un elenco di percorsi di codice.
@@ -34,7 +34,7 @@ IEnumCodePaths2 : IUnknown
  Il motore di debug implementa questa interfaccia per rappresentare un elenco di percorsi di codice.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [EnumCodePaths per](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) ottenere questa interfaccia.
+ Chiamare [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) per ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IEnumCodePaths2` .
@@ -48,7 +48,7 @@ IEnumCodePaths2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Ottiene il numero di percorsi di codice in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- Un percorso di codice rappresenta un punto di ramo o una chiamata di funzione in un programma. Un elenco di percorsi di codice rappresenta il percorso attraverso il quale è stata eseguita l'esecuzione del codice.
+ Un percorso di codice rappresenta un punto di diramazione o una chiamata di funzione in un programma. Un elenco di percorsi di codice rappresenta il percorso attraverso il quale è stata eseguita l'esecuzione del codice.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

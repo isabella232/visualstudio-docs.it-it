@@ -32,21 +32,21 @@ ms.locfileid: "121346700"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 
-Se un set di dati contiene vincoli, ad esempio vincoli di chiave esterna, possono generare errori correlati all'ordine delle operazioni eseguite sul set di dati. Ad esempio, il caricamento dei record figlio prima del caricamento dei record padre correlati può violare un vincolo e causare un errore. Non appena si carica un record figlio, il vincolo verifica la presenza del record padre correlato e genera un errore.
+Se un set di dati contiene vincoli, ad esempio vincoli di chiave esterna, può generare errori correlati all'ordine delle operazioni eseguite sul set di dati. Ad esempio, il caricamento dei record figlio prima del caricamento dei record padre correlati può violare un vincolo e causare un errore. Non appena si carica un record figlio, il vincolo verifica la presenza del record padre correlato e genera un errore.
 
-Se non esistesse alcun meccanismo per consentire la sospensione temporanea dei vincoli, viene generato un errore ogni volta che si tenta di caricare un record nella tabella figlio. Un altro modo per sospendere tutti i vincoli in un set di dati è con <xref:System.Data.DataRow.BeginEdit%2A> le proprietà , e <xref:System.Data.DataRow.EndEdit%2A> .
+Se non esiste alcun meccanismo per consentire la sospensione temporanea dei vincoli, viene generato un errore ogni volta che si tenta di caricare un record nella tabella figlio. Un altro modo per sospendere tutti i vincoli in un set di dati è con <xref:System.Data.DataRow.BeginEdit%2A> le proprietà e <xref:System.Data.DataRow.EndEdit%2A> .
 
 > [!NOTE]
-> Gli eventi di convalida , ad esempio e , non verranno <xref:System.Data.DataTable.ColumnChanging> generati quando i vincoli sono <xref:System.Data.DataTable.RowChanging> disattivati.
+> Gli eventi di convalida , ad esempio e , non <xref:System.Data.DataTable.ColumnChanging> verranno generati quando i vincoli sono <xref:System.Data.DataTable.RowChanging> disattivati.
 
-## <a name="to-suspend-update-constraints-programmatically"></a>Per sospendere l'aggiornamento dei vincoli a livello di codice
+## <a name="to-suspend-update-constraints-programmatically"></a>Per sospendere i vincoli di aggiornamento a livello di codice
 
-- Nell'esempio seguente viene illustrato come disattivare temporaneamente il controllo dei vincoli in un set di dati:
+- L'esempio seguente illustra come disattivare temporaneamente il controllo dei vincoli in un set di dati:
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet10":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet10":::
 
-## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Per sospendere i vincoli di aggiornamento utilizzando il Progettazione DataSet
+## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Per sospendere i vincoli di aggiornamento usando il Progettazione DataSet
 
 1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati nel Progettazione DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 

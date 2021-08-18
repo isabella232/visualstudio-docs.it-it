@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b6614104d9d806f837a317ab8f4956d254d924819203c5bd9c3901f459264cad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3208091cc7822bce8bcce82c404977283692ec3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436565"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036214"
 ---
 # <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
 Recupera un tipo predefinito del tipo HLSL.

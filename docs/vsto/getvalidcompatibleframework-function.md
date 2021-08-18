@@ -1,6 +1,6 @@
 ---
-title: GetValidCompatibleFramework (funzione)
-description: Informazioni sul modo in cui l'API GetValidCompatibleFramework supporta l'infrastruttura Office e non è destinata all'uso diretto dal codice.
+title: Funzione GetValidCompatibleFramework
+description: Informazioni su come l'API GetValidCompatibleFramework supporta l'infrastruttura Office e non deve essere usata direttamente dal codice.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
@@ -10,17 +10,18 @@ dev_langs:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b089f954c59219461c8e267ee6e88e47015fc794
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0e13e1ea1eda0e0768a1982b56bd7eeb496a1a2fc49ee9a2be64ad8e47dc0ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860620"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424190"
 ---
-# <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework (funzione)
-  Questa API supporta l'infrastruttura Office e non è destinata all'uso diretto dal codice.
+# <a name="getvalidcompatibleframework-function"></a>Funzione GetValidCompatibleFramework
+  Questa API supporta l'Office e non deve essere usata direttamente dal codice.
 
 ## <a name="syntax"></a>Sintassi
 

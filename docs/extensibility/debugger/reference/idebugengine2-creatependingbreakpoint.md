@@ -1,5 +1,5 @@
 ---
-description: Crea un punto di interruzione in sospeso nel motore di debug .
+description: Crea un punto di interruzione in sospeso nel motore di debug.
 title: IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9088fdc05142faca79a4d2f6b31a76b2344c7800c6920cc19927486c01957ae7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 31a138104cbaeea8eb0a2313956f5d1bba34db28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307830"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035286"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
-Crea un punto di interruzione in sospeso nel motore di debug .
+Crea un punto di interruzione in sospeso nel motore di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,17 +51,17 @@ int CreatePendingBreakpoint(
 [out] Restituisce un [oggetto IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il punto di interruzione in sospeso.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. In genere `E_FAIL` restituisce se il parametro non corrisponde ad alcun linguaggio supportato dal de se il parametro non è valido o `pBPRequest` `pBPRequest` incompleto.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. In genere `E_FAIL` restituisce se il parametro non corrisponde ad alcun linguaggio supportato da DE di se il parametro non è valido o `pBPRequest` `pBPRequest` incompleto.
 
 ## <a name="remarks"></a>Commenti
 Un punto di interruzione in sospeso è essenzialmente una raccolta di tutte le informazioni necessarie per associare un punto di interruzione al codice. Il punto di interruzione in sospeso restituito da questo metodo non è associato al codice fino a quando non [viene chiamato](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) il metodo Bind.
 
-Per ogni punto di interruzione in sospeso impostato dall'utente, gestione debug sessione (SDM) chiama questo metodo in ogni de associato. È necessario verificare che il punto di interruzione sia valido per i programmi in esecuzione in tale de.
+Per ogni punto di interruzione in sospeso impostato dall'utente, lo SDM (Session Debug Manager) chiama questo metodo in ogni deallegato. È necessario verificare che il punto di interruzione sia valido per i programmi in esecuzione in tale DE.
 
-Quando l'utente imposta un punto di interruzione in una riga di codice, il de è libero di associare il punto di interruzione alla riga più vicina nel documento che corrisponde a questo codice. In questo modo l'utente può impostare un punto di interruzione nella prima riga di un'istruzione su più righe, ma associarlo all'ultima riga (in cui tutto il codice è attribuita nelle informazioni di debug).
+Quando l'utente imposta un punto di interruzione in una riga di codice, de è libero di associare il punto di interruzione alla riga più vicina nel documento che corrisponde a questo codice. In questo modo l'utente può impostare un punto di interruzione nella prima riga di un'istruzione su più righe, ma associarlo all'ultima riga (in cui tutto il codice è attribuito nelle informazioni di debug).
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CProgram` semplice. L'implementazione del de può `IDebugEngine2::CreatePendingBreakpoint` quindi inoltrare tutte le chiamate a questa implementazione del metodo in ogni programma.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CProgram` semplice. L'implementazione di DE di `IDebugEngine2::CreatePendingBreakpoint` potrebbe quindi inoltrare tutte le chiamate a questa implementazione del metodo in ogni programma.
 
 ```
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)
