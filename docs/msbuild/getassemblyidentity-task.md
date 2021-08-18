@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b016d39453e79aea045c61a84202cad71d4164c32bc5d0aa566dd27f49870b77
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 28b26047a0893cc9e0ab783e83988b5c7ea1fb08
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427814"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143378"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (attività)
 

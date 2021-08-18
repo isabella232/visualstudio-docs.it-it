@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9f5e067021e13f0a59c3b45882b204de04167559e39977446aeb779f6b4bf7e8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef769394bafd1727ac16f4dbaadf6e6ca27c7e77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101323"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementare un'interfaccia in Visual Studio
 
@@ -46,7 +46,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
@@ -77,5 +77,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Generazione del codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

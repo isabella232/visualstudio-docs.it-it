@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare uno shader con sfumatura basata sulla geometria'
-description: Informazioni su come usare Progettazione shader e Graph Linguaggio shader per creare uno shader sfumato basato su geometria che ridimensiona un valore di colore RGB costante.
+description: Informazioni su come usare la finestra di progettazione shader e il Graph shader per creare uno shader con sfumatura basata sulla geometria che ridimensiona un valore di colore RGB costante.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 4abfa5057c0b9f634f7524fd8421ae44e24fbe0896a520dd65902699881c0299
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 68d0c5af184fa22a41204f7d1937831b67c80244
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121263322"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104872"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con un gradiente basato sulla geometria
 

@@ -1,6 +1,6 @@
 ---
 title: Elemento Task di UsingTask (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento Task di UsingTask di MSBuild, che contiene i dati passati a un TaskFactory TaskFactory.
+description: Informazioni sull'elemento Task del MSBuild UsingTask, che contiene i dati passati a un oggetto UsingTask TaskFactory.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 29259d71a610a4d83740c139c1309db477288004
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e5156d0d128bce8b927bbdc8faacdd93834e167
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965993"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142754"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>Elemento Task di UsingTask (MSBuild)
 
@@ -52,13 +53,13 @@ Contiene i dati passati a un oggetto `UsingTask` `TaskFactory` . Per altre infor
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Data|Il testo compreso tra i tag `Task` viene inviato testualmente a `TaskFactory`.|
+|Dati|Il testo compreso tra i tag `Task` viene inviato testualmente a `TaskFactory`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fornisce un modo per registrare le attività in MSBuild. Possono esistere zero o più elementi `UsingTask` in un progetto. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Consente di registrare le attività in MSBuild. Possono esistere zero o più elementi `UsingTask` in un progetto. |
 
 ## <a name="example"></a>Esempio
 
@@ -81,4 +82,4 @@ Contiene i dati passati a un oggetto `UsingTask` `TaskFactory` . Per altre infor
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project sullo schema del file](../msbuild/msbuild-project-file-schema-reference.md)

@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: b6e7d5b4492a6bf81c190db27cced4c1b3bfae6ca398793305c90787aa4974e8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 224de248715a75a3291869f4bc588384f662643f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436950"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067347"
 ---
 # <a name="suppress-code-analysis-violations"></a>Rimuovere le violazioni dell'analisi del codice
 
@@ -42,7 +42,7 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
 
 - **Dall'editor di codice**
 
-  Posizionare il cursore nella riga di codice con la violazione e premere **CTRL** + **PUNTO (.)** per aprire il menu **Azioni** rapide. Selezionare **Suppress CAXXXX (Elimina CAXXXX)** e quindi **scegliere in Origine** o In Origine **(attributo)**.
+  Posizionare il cursore nella riga di codice con la violazione e premere **CTRL** + **PUNTO (.)** per aprire il menu **Azioni** rapide. Selezionare **Suppress CAXXXX (Elimina CAXXXX)** e quindi **scegliere in Source (Origine)** **o In Source (attribute) (Origine - attributo).**
 
   Se si sceglie **in Origine**, viene visualizzata un'anteprima della direttiva per il preprocessore che verrà aggiunta al codice.
 
@@ -52,7 +52,7 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
   ::: moniker range=">=vs-2019"
   :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor.png" alt-text="Eliminare la diagnostica dal menu Azioni rapide":::
 
-  Se si sceglie **in Origine (attributo),** viene visualizzata un'anteprima dell'attributo [SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute) che verrà aggiunto al codice.
+  Se si sceglie **origine (attributo),** viene visualizzata un'anteprima dell'attributo [SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute) che verrà aggiunto al codice.
 
   :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor-attribute.png" alt-text="Eliminare la diagnostica dal menu Azioni rapide usando l'attributo":::
   ::: moniker-end
@@ -68,7 +68,7 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
   Nella finestra **di dialogo Anteprima** modifiche selezionare **Applica.**
 
   > [!NOTE]
-  > Se non viene visualizzata l'opzione di **menu** **Elimina** in Esplora soluzioni , è probabile che la violazione proviene dalla compilazione e non dall'analisi in tempo reale. **L'Elenco errori** visualizza la diagnostica, o violazioni delle regole, sia dall'analisi del codice in tempo reale che dalla compilazione. Poiché la diagnostica di compilazione può essere obsoleta, ad esempio, se il codice è stato modificato per correggere la violazione ma non è stato ricompilato, non è possibile eliminare la diagnostica dall'Elenco **errori**. La diagnostica dall'analisi in tempo reale, o IntelliSense, è sempre aggiornata con le origini correnti e può essere eliminata **dall'Elenco errori**. Per escludere *la diagnostica* di  compilazione dalla selezione, impostare il filtro origine Elenco errori da Compilazione **+ IntelliSense** a Solo **IntelliSense.** Selezionare quindi la diagnostica che si vuole eliminare e procedere come descritto in precedenza.
+  > Se non viene visualizzata l'opzione di **menu** **Elimina** in Esplora soluzioni , è probabile che la violazione proviene dalla compilazione e non dall'analisi in tempo reale. **L'Elenco errori** visualizza la diagnostica, o violazioni delle regole, sia dall'analisi del codice in tempo reale che dalla compilazione. Poiché la diagnostica di compilazione può essere obsoleta, ad esempio se è stato modificato il codice per correggere la violazione ma non è stato ricompilato, non è possibile eliminare la diagnostica dall'Elenco **errori**. La diagnostica dall'analisi in tempo reale, o IntelliSense, è sempre aggiornata con le origini correnti e può essere eliminata **dall'Elenco errori**. Per escludere *la diagnostica* di  compilazione dalla selezione, impostare il filtro origine Elenco errori da Compilazione **+ IntelliSense** a Solo **IntelliSense.** Selezionare quindi la diagnostica che si vuole eliminare e procedere come descritto in precedenza.
   >
   > ![Filtro di origine elenco errori in Visual Studio](media/error-list-filter.png)
 
@@ -76,7 +76,7 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
 
 Il [file di eliminazione globale](#global-level-suppressions) usa l'attributo [SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute).
 
-- In **Elenco errori selezionare** le regole da eliminare, quindi fare clic con il pulsante destro del mouse e scegliere Elimina in File  >  **di eliminazione**. Viene **visualizzata la finestra** di dialogo Anteprima modifiche che mostra <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> un'anteprima dell'attributo aggiunto al file delle eliminazioni globali.
+- In **Elenco errori selezionare** le regole da eliminare, quindi fare clic con il pulsante destro del mouse e scegliere Elimina in File  >  **di eliminazione**. Verrà **visualizzata la finestra** di dialogo Anteprima modifiche che mostra <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> un'anteprima dell'attributo aggiunto al file delle eliminazioni globali.
 
   ![Anteprima dell'aggiunta dell'attributo SuppressMessage al file di eliminazione](media/preview-changes-in-suppression-file.png)
 
@@ -89,7 +89,7 @@ Il [file di eliminazione globale](#global-level-suppressions) usa l'attributo [S
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-- Dal menu **Analizza** scegliere Analizza **Esegui** Code Analysis elimina problemi attivi sulla barra dei menu per eliminare tutte le violazioni  >   correnti. Questa operazione viene talvolta definita "baselining".
+- Dal menu **Analizza** selezionare Analizza Esegui **Code Analysis** elimina problemi attivi sulla barra dei menu per eliminare  >   tutte le violazioni correnti. Questa operazione viene talvolta definita "baselining".
 ::: moniker-end
 
 ## <a name="suppress-violations-using-project-settings"></a>Eliminare le violazioni usando le impostazioni del progetto
@@ -98,7 +98,7 @@ Da **Esplora soluzioni** aprire le proprietà per il progetto **(fare** clic con
 
 ## <a name="suppress-violations-using-a-rule-set"></a>Eliminare le violazioni usando un set di regole
 
-**Nell'editor del set di regole** deselezionare la casella di controllo accanto al nome o impostare **Azione** **su Nessuno.**
+**Nell'editor del set di** regole deselezionare la casella di controllo accanto al nome o impostare **Azione** **su Nessuno.**
 
 ## <a name="in-source-suppression-and-the-suppressmessage-attribute"></a>Eliminazione nel codice sorgente e attributo SuppressMessage
 
@@ -191,7 +191,7 @@ Per motivi di manutenibilità, non è consigliabile omettere il nome della regol
 
 Gli attributi di eliminazione possono essere applicati a un metodo, ma non possono essere incorporati all'interno di un corpo del metodo. Ciò significa che tutte le violazioni di una determinata regola vengono soppresse se si aggiunge <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> l'attributo al metodo .
 
-In alcuni casi può essere necessario eliminare una particolare istanza della violazione, ad esempio in modo che il codice futuro non sia automaticamente esente dalla regola di analisi del codice. Alcune regole di analisi del codice consentono di eseguire questa operazione usando la `MessageId` proprietà <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> dell'attributo . In generale, le regole legacy per le violazioni di un simbolo specifico (una variabile locale o un parametro) rispettano la `MessageId` proprietà . [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) è un esempio di tale regola. Tuttavia, le regole legacy per le violazioni nel codice eseguibile (non simbolo) non rispettano la `MessageId` proprietà . Inoltre, .NET Compiler Platform analizzatori ("Roslyn") non rispettano la `MessageId` proprietà .
+In alcuni casi può essere necessario eliminare una particolare istanza della violazione, ad esempio in modo che il codice futuro non sia automaticamente esente dalla regola di analisi del codice. Alcune regole di analisi del codice consentono di eseguire questa operazione usando la `MessageId` proprietà <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> dell'attributo . In generale, le regole legacy per le violazioni su un simbolo specifico (una variabile locale o un parametro) rispettano la `MessageId` proprietà . [CA1500:VariableNamesShouldNotMatchFieldNames è](../code-quality/ca1500.md) un esempio di tale regola. Tuttavia, le regole legacy per le violazioni nel codice eseguibile (non simbolo) non rispettano la `MessageId` proprietà . Inoltre, .NET Compiler Platform analizzatori ("Roslyn") non rispettano la `MessageId` proprietà .
 
 Per eliminare una particolare violazione del simbolo di una regola, specificare il nome del simbolo per `MessageId` la proprietà <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> dell'attributo. L'esempio seguente illustra il codice con due violazioni di [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md)uno per la variabile e &mdash; uno per la variabile `name` `age` . Viene eliminata solo la `age` violazione per il simbolo.
 
@@ -235,7 +235,7 @@ Lo strumento di analisi del codice gestito esamina gli attributi applicati a liv
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Quando si elimina un avviso con ambito, l'avviso viene eliminato `namespace` sullo spazio dei nomi stesso. Non elimina l'avviso per i tipi all'interno dello spazio dei nomi.
+> Quando si elimina un avviso con ambito, l'avviso viene eliminato `namespace` sullo spazio dei nomi stesso. Non elimina l'avviso per i tipi all'interno dello spazio dei nomi .
 
 Qualsiasi eliminazione può essere espressa specificando un ambito esplicito. Queste eliminazioni devono essere live a livello globale. Non è possibile specificare l'eliminazione a livello di membro decorando un tipo.
 
@@ -248,7 +248,7 @@ Le eliminazioni a livello globale sono l'unico modo per eliminare i messaggi che
 
 #### <a name="global-suppression-file"></a>File di eliminazione globale
 
-Il file di eliminazione globale mantiene le eliminazioni che sono eliminazioni a livello globale o eliminazioni che non specificano una destinazione. Ad esempio, le soppressioni per le violazioni a livello di assembly vengono archiviate in questo file. Inoltre, alcune ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per il code-behind di un form. Un file di eliminazione globale viene creato e aggiunto al progetto la prima volta che  si seleziona l'opzione In **Project Suppression File** del comando Elimina nella finestra **Elenco** errori.
+Il file di eliminazione globale mantiene le eliminazioni che sono eliminazioni a livello globale o eliminazioni che non specificano una destinazione. Ad esempio, le soppressioni per le violazioni a livello di assembly vengono archiviate in questo file. Inoltre, alcune ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per il code-behind di un modulo. Un file di eliminazione globale viene creato e aggiunto al progetto la prima volta che  si seleziona l'opzione In **Project Suppression File** del comando Elimina nella finestra **Elenco** errori.
 
 #### <a name="module-suppression-scope"></a>Ambito di eliminazione dei moduli
 

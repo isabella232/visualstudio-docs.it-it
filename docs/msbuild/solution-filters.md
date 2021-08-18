@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a080e6ba9703138d9ad8b6d272f09dd18c65ffb75a35fc2aa8cd42e90d00e172
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a21916045c3a06dba224d4db632bc9332ac6d83b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427515"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143001"
 ---
 # <a name="solution-filters-in-msbuild"></a>Filtri della soluzione in MSBuild
 
@@ -33,13 +33,13 @@ La compilazione di un file di filtro della soluzione dalla riga di comando usa e
 msbuild [options] solutionFilterFile.slnf
 ```
 
-È anche possibile aggiungere opzioni e proprietà aggiuntive come di consueto. Vedere [MSBuild riferimento alla riga di comando.](msbuild-command-line-reference.md) Questo comando compila i progetti filtrati e gli eventuali progetti da cui dipendono. Quando si compila un filtro della soluzione dalla riga di comando, MSBuild automaticamente le dipendenze. Compila un progetto se è specificato nel filtro o a cui fa riferimento un progetto compilato.
+È anche possibile aggiungere opzioni e proprietà aggiuntive come di consueto. Vedere [MSBuild della riga di comando.](msbuild-command-line-reference.md) Questo comando compila i progetti filtrati e gli eventuali progetti da cui dipendono. Quando si compila un filtro della soluzione dalla riga di comando, MSBuild automaticamente le dipendenze. Compila un progetto se è specificato nel filtro o a cui fa riferimento un progetto compilato.
 
 ## <a name="solution-filter-files"></a>File di filtro della soluzione
 
 È possibile usare Visual Studio per usare i file di filtro della soluzione. L'apertura di un filtro di soluzione Visual Studio i progetti scaricati e i progetti caricati e offre la possibilità di caricare altri progetti per selezionarli per la compilazione. È possibile caricare anche tutti i progetti da cui dipendono i progetti iniziali per la compilazione, ma questa operazione non è necessaria. Vedere [Soluzioni filtrate.](../ide/filtered-solutions.md)
 
-Il filtro della soluzione non deve essere nella stessa cartella della soluzione. Il percorso del file di soluzione è relativo al percorso del file di filtro della soluzione, ma i percorsi di ogni progetto sono relativi al file di soluzione stesso e devono corrispondere ai percorsi del progetto nel file di soluzione. L'esempio seguente illustra l'uso di percorsi relativi:
+Il filtro della soluzione non deve essere nella stessa cartella della soluzione. Il percorso del file di soluzione è relativo al percorso del file di filtro della soluzione, ma i percorsi di ogni progetto sono relativi al file di soluzione stesso e devono corrispondere ai percorsi del progetto nel file della soluzione. L'esempio seguente illustra l'uso di percorsi relativi:
 
 ```json
 {
@@ -56,7 +56,7 @@ Le barre rovesciate nei percorsi devono essere raddoppiate, perché sono precedu
 
 ## <a name="example"></a>Esempio
 
-Ecco un esempio di una soluzione filtrata in Visual Studio:
+Ecco un esempio di soluzione filtrata in Visual Studio:
 
 ![Screenshot della soluzione filtrata in Visual Studio](media/solution-with-filter.png)
 
@@ -76,9 +76,9 @@ Di seguito è riportato il file di filtro della soluzione Visual Studio generato
 }
 ```
 
-In questo esempio, quando si compila con il filtro abilitato (usando il comando ), MSBuild compila MyApplication e ProjectA perché sono elencati in modo esplicito nel file di filtro `MSBuild [options] MyFilter.slnf` della soluzione. Come parte della compilazione di ProjectA, MSBuild classlibrary1 perché ProjectA dipende da esso.  ProjectB non viene compilato. Questa discussione presuppone una compilazione pulita. Se i progetti sono stati compilati in precedenza, le regole consuete si applicano per ignorare i progetti già aggiornati.
+In questo esempio, quando si compila con il filtro abilitato (usando il comando ), MSBuild compila MyApplication e ProjectA perché sono elencati in modo esplicito nel file di filtro `MSBuild [options] MyFilter.slnf` della soluzione. Come parte della compilazione di ProjectA, MSBuild classlibrary1 perché ProjectA dipende da esso.  Il progettoB non viene compilato. Questa discussione presuppone una compilazione pulita. Se i progetti sono stati compilati in precedenza, le regole consuete si applicano per ignorare i progetti già aggiornati.
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Soluzioni filtrate](../ide/filtered-solutions.md)
-- [MSBuild della riga di comando](msbuild-command-line-reference.md)
+- [MSBuild riferimento alla riga di comando](msbuild-command-line-reference.md)

@@ -1,6 +1,6 @@
 ---
 title: Estendere le finestre Proprietà, Elenco attività, Output, Opzioni
-description: Informazioni su come integrare le informazioni sulla finestra degli strumenti in Visual Studio in una nuova pagina Opzioni e in una nuova impostazione nella pagina Proprietà.
+description: Informazioni su come integrare le informazioni sulla finestra degli strumenti Visual Studio in una nuova pagina Opzioni e in una nuova impostazione nella pagina Proprietà.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: how-to
@@ -15,14 +15,15 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3334ba3694ee3c1354c152b013c38472e4b90b72
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0d6d222ff143680ad6ae228649e695ee14268a39
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903281"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144782"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estendere le finestre Proprietà, Elenco attività, Output e Opzioni
 È possibile accedere a qualsiasi finestra degli strumenti Visual Studio. Questa procedura dettagliata illustra come integrare le  informazioni sulla finestra degli  strumenti in una nuova pagina  Opzioni e una nuova impostazione nella pagina Proprietà e come scrivere nelle finestre Elenco attività **e Output.**
@@ -47,11 +48,11 @@ ms.locfileid: "112903281"
 
 2. Dalla sezione **Tutti i controlli WPF** della Casella degli **strumenti** trascinare un **controllo Canvas** nella griglia.
 
-3. Trascinare **un controllo TextBox**, **un pulsante** e un **controllo ListBox** nell'area di disegno. Disporre gli elementi in modo che TextBox e Button siano sullo stesso livello e listBox riempia il resto della finestra sotto di essi, come nell'immagine seguente.
+3. Trascinare **un controllo TextBox**, **un controllo Button** e un **controllo ListBox** nell'area di disegno. Disporre gli elementi in modo che TextBox e Button siano sullo stesso livello e listBox riempia il resto della finestra sotto di essi, come nell'immagine seguente.
 
      ![Finestra degli strumenti finita](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
-4. Nel riquadro XAML individuare il pulsante e impostarne la proprietà Content su **Aggiungi**. Riconnettere il gestore eventi del pulsante al controllo Button aggiungendo un `Click="button1_Click"` attributo . Il blocco Canvas dovrebbe essere simile al seguente:
+4. Nel riquadro XAML trovare il pulsante e impostarne la proprietà Content su **Aggiungi**. Riconnettere il gestore eventi del pulsante al controllo Button aggiungendo un `Click="button1_Click"` attributo . Il blocco Canvas dovrebbe essere simile al seguente:
 
     ```xml
     <Canvas HorizontalAlignment="Left" Width="306">
@@ -81,7 +82,7 @@ ms.locfileid: "112903281"
     }
     ```
 
-3. In *TodoWindow.cs* modificare il costruttore TodoWindowControl per includere il parametro TodoWindow. Il codice dovrebbe essere simile al seguente:
+3. In *TodoWindow.cs* modificare il costruttore TodoWindowControl in modo da includere il parametro TodoWindow. Il codice dovrebbe essere simile al seguente:
 
     ```csharp
     public TodoWindow() : base(null)
@@ -133,13 +134,13 @@ ms.locfileid: "112903281"
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
     ```
 
-2. Il primo parametro del costruttore ProvideOptionPage è il tipo della classe `ToolsOptions` creata in precedenza. Il secondo parametro, "ToDo", è il nome della categoria nella **finestra di dialogo** Opzioni. Il terzo parametro, "Generale", è il nome  della sottocategoria della finestra di dialogo Opzioni in cui sarà disponibile la pagina Opzioni. I due parametri successivi sono ID risorsa per le stringhe. il primo è il nome della categoria e il secondo è il nome della sottocategoria. Il parametro finale determina se è possibile accedere a questa pagina usando l'automazione.
+2. Il primo parametro per il costruttore ProvideOptionPage è il tipo della classe `ToolsOptions` , creata in precedenza. Il secondo parametro, "ToDo", è il nome della categoria nella **finestra di dialogo** Opzioni. Il terzo parametro, "Generale", è il nome  della sottocategoria della finestra di dialogo Opzioni in cui sarà disponibile la pagina Opzioni. I due parametri successivi sono ID risorsa per le stringhe. il primo è il nome della categoria e il secondo è il nome della sottocategoria. Il parametro finale determina se è possibile accedere a questa pagina usando l'automazione.
 
      Quando un utente apre la pagina Opzioni, dovrebbe essere simile all'immagine seguente.
 
      ![Pagina Opzioni](../extensibility/media/t5optionspage.gif "T5OptionsPage")
 
-     Si noti la categoria **ToDo** e la sottocategoria **Generale**.
+     Si notino la **categoria ToDo** e la sottocategoria **Generale**.
 
 ## <a name="make-data-available-to-the-properties-window"></a>Rendere disponibili i dati per il Finestra Proprietà
  È possibile rendere disponibili le informazioni sull'elenco ToDo creando una classe denominata che archivia le informazioni sui singoli `TodoItem` elementi nell'elenco ToDo.
@@ -274,7 +275,7 @@ ms.locfileid: "112903281"
     }
     ```
 
-2. Nella visualizzazione Progettazione selezionare il controllo ListBox. Nella finestra **Proprietà** fare clic sul **pulsante Gestori eventi** e trovare **l'evento SelectionChanged.** Compilare la casella di testo **con listBox_SelectionChanged**. Questa operazione aggiunge uno stub per un gestore SelectionChanged e lo assegna all'evento .
+2. Nella visualizzazione Progettazione selezionare il controllo ListBox. Nella finestra **Proprietà** fare clic sul **pulsante Gestori** eventi e trovare **l'evento SelectionChanged.** Compilare la casella di testo **con listBox_SelectionChanged**. Questa operazione aggiunge uno stub per un gestore SelectionChanged e lo assegna all'evento .
 
 3. Implementare il metodo `TrackSelection()`. Poiché è necessario ottenere i servizi, è necessario rendere accessibile l'oggetto <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> da TodoWindowControl. Aggiungere il metodo seguente alla classe `TodoWindow`:
 
@@ -367,18 +368,18 @@ ms.locfileid: "112903281"
 
 8. Testare il codice. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.
 
-9. Aprire la **pagina**  >  **Opzioni** degli strumenti. Nel riquadro sinistro dovrebbe essere visualizzata la categoria ToDo. Le categorie sono elencate in ordine alfabetico, quindi cercare sotto ts.
+9. Aprire la **pagina**  >  **Opzioni** degli strumenti. Nel riquadro sinistro dovrebbe essere visualizzata la categoria ToDo. Le categorie sono elencate in ordine alfabetico, quindi cercare sotto le T.
 
-10. Nella pagina **delle opzioni Todo** dovrebbe essere visualizzata la proprietà `DaysAhead` impostata su **0.** Modificarlo in **2**.
+10. Nella pagina **Delle opzioni Todo** dovrebbe essere visualizzata la proprietà `DaysAhead` impostata su **0.** Modificarlo in **2**.
 
-11. Nel menu **Visualizza/Altre finestre** aprire **TodoWindow.** Digitare **EndDate nella** casella di testo e fare clic su **Aggiungi**.
+11. Nel menu **Visualizza/Altro Windows** aprire **TodoWindow**. Digitare **EndDate** nella casella di testo e fare clic su **Aggiungi**.
 
-12. Nella casella di riepilogo dovrebbe essere visualizzata una data successiva di due giorni rispetto a oggi.
+12. Nella casella di riepilogo dovrebbe essere visualizzata una data due giorni dopo la data odierna.
 
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Aggiungere testo alla finestra Output e gli elementi alla Elenco attività
- Per il **Elenco attività**, creare un nuovo oggetto di tipo Task e quindi aggiungere tale oggetto Task al Elenco attività **chiamando** il relativo metodo `Add` . Per scrivere nella finestra **Output,** chiamare il relativo metodo per ottenere un oggetto riquadro e quindi chiamare il `GetPane` metodo `OutputString` dell'oggetto riquadro.
+ Per la **Elenco attività**, creare un nuovo oggetto di tipo Task e quindi aggiungerlo al Elenco attività **chiamando** il relativo metodo `Add` . Per scrivere nella finestra **Output,** chiamare il relativo metodo per ottenere un oggetto riquadro e quindi chiamare il `GetPane` metodo `OutputString` dell'oggetto riquadro.
 
-1. In *TodoWindowControl.xaml.cs* aggiungere il codice nel metodo per ottenere il riquadro Generale della finestra Output (impostazione predefinita) e `button1_Click` scriverlo.   Il metodo dovrebbe essere simile al seguente:
+1. In *TodoWindowControl.xaml.cs* aggiungere il codice per ottenere il riquadro Generale della finestra `button1_Click` **Output** (impostazione predefinita) e scriverlo.  Il metodo dovrebbe essere simile al seguente:
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -405,7 +406,7 @@ ms.locfileid: "112903281"
     }
     ```
 
-2. Per aggiungere elementi al controllo Elenco attività, è necessario un elemento per aggiungere una classe annidata alla classe TodoWindowControl. La classe annidata deve derivare da <xref:Microsoft.VisualStudio.Shell.TaskProvider> . Aggiungere il codice seguente alla fine della `TodoWindowControl` classe .
+2. Per aggiungere elementi alla classe Elenco attività, è necessario un oggetto per aggiungere una classe annidata alla classe TodoWindowControl. La classe annidata deve derivare da <xref:Microsoft.VisualStudio.Shell.TaskProvider> . Aggiungere il codice seguente alla fine della `TodoWindowControl` classe .
 
     ```csharp
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]
@@ -432,7 +433,7 @@ ms.locfileid: "112903281"
     }
     ```
 
-4. Aggiungere , che cancella i Elenco attività, e , che aggiunge una voce alla `ClearError()` `ReportError()` Elenco attività, alla `TodoWindowControl` classe .
+4. Aggiungere , che cancella i Elenco attività e , che aggiunge una voce al `ClearError()` `ReportError()` Elenco attività, alla `TodoWindowControl` classe .
 
     ```csharp
     private void ClearError()
@@ -484,21 +485,21 @@ ms.locfileid: "112903281"
 
 1. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.
 
-2. Aprire **TodoWindow** **(Visualizza**  >  **Altre finestre**  >  **TodoWindow).**
+2. Aprire **TodoWindow** (**Visualizza**  >  **altre Windows**  >  **TodoWindow**).
 
-3. Digitare un valore nella casella di testo e quindi fare clic su **Aggiungi**.
+3. Digitare qualcosa nella casella di testo e quindi fare clic su **Aggiungi**.
 
-     Una data di scadenza 2 giorni dopo la data odierna viene aggiunta alla casella di riepilogo. Non vengono generati errori e il **Elenco attività** (**Visualizza** Elenco attività ) non deve  >  contenere voci.
+     Alla casella di riepilogo viene aggiunta una data di scadenza di 2 giorni dopo la data odierna. Non vengono generati errori e il **Elenco attività** (**View** Elenco attività ) non deve  >  contenere voci.
 
-4. Modificare ora l'impostazione nella **pagina**  >  **Strumenti Opzioni**  >  **ToDo** da **2** a **0.**
+4. Modificare ora l'impostazione nella **pagina ToDo** delle opzioni  >    >   degli strumenti **da 2** a **0.**
 
-5. Digitare un altro elemento in **TodoWindow e** quindi fare di nuovo clic **su Aggiungi.** In questo modo viene generato un errore e anche una voce nella **Elenco attività**.
+5. Digitare altro in **TodoWindow** e quindi fare di nuovo clic **su Aggiungi.** In questo modo viene attivato un errore e anche una voce **nel Elenco attività**.
 
      Quando si aggiungono elementi, la data iniziale viene impostata su ora più 2 giorni.
 
 6. Scegliere **Output** dal menu Visualizza **per** aprire la **finestra Output.**
 
-     Si noti che ogni volta che si aggiunge un elemento, viene visualizzato un messaggio nel **Elenco attività** riquadro.
+     Si noti che ogni volta che si aggiunge un elemento, viene visualizzato un messaggio nel **Elenco attività.**
 
 7. Fare clic su uno degli elementi in ListBox.
 

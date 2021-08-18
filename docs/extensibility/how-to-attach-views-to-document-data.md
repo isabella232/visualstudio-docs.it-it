@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b014141d2f4f396d35b2e163b7c191ab0115325988d7484a544066a077ce98
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4171f80f3dc63fb00a64fc99c3620771ea8c48c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376599"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124984"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Procedura: Associare visualizzazioni ai dati del documento
 Se si dispone di una nuova visualizzazione documento, è possibile collegarla a un oggetto dati del documento esistente.

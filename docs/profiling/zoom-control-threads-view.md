@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 365d444379d174fa2011f76a6faf4ad3431f320ccf628b4dfbf39b0f0a6ebd73
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a99b64bfc6f36f674d31f5b8eb7e51a6f1fa11fe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121426170"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140596"
 ---
 # <a name="zoom-control-threads-view"></a>Controllo zoom (visualizzazione Thread)
 Il controllo zoom è un dispositivo di scorrimento che consente di ingrandire e ridurre la sequenza temporale, in modo da potersi concentrare sulle aree di particolare interesse. Poiché questo controllo esegue uno zoom avanti al centro della visualizzazione della sequenza temporale, centrare l'area di interesse prima di procedere.

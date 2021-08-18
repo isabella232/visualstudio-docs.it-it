@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e0dacb8d9fa997c3509015d1824d88ebf152863c461fad299906a235d4541f16
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9258e80ea3a3a050daebc1ea1189a573733c928b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074396"
 ---
 # <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
 Recupera una matrice di tipi specifici del compilatore per questo simbolo.
@@ -37,7 +37,7 @@ HRESULT get_types (
 #### <a name="parameters"></a>Parametri
  `cTypes`
 
-[in] Dimensioni del buffer per contenere i dati.
+[in] Dimensione del buffer in cui contenere i dati.
 
  `pcTypes`
 
@@ -51,7 +51,7 @@ HRESULT get_types (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

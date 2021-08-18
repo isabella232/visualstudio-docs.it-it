@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: d9c64040e4ff5b3ca96ef4b49b749b2be73a6dc63a0fa9fd48f2201007de2dcd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8445e7fa26fb8beef7452a53b3e4733bcfc43f47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420965"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105691"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola Fxcop
 
@@ -26,7 +26,7 @@ Se in precedenza è stata usata l'analisi statica del codice Visual Studio, ci s
 
 ## <a name="ported-rules"></a>Regole trasferite
 
-La [pagina della](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) documentazione rigenerata automaticamente nel repo roslyn-analyzers include l'elenco più aggiornato delle regole che sono state portate agli analizzatori Roslyn. Tale pagina contiene anche informazioni aggiuntive, ad esempio se la regola è abilitata per impostazione predefinita e se è associata una correzione *del codice*. Le[correzioni di codice](../ide/quick-actions.md) sono correzioni con un solo clic disponibili nel menu dell'icona a forma di lampadina in Visual Studio.
+La [pagina della](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) documentazione rigenerata automaticamente nel repo roslyn-analyzers include l'elenco più aggiornato delle regole che sono state portate agli analizzatori Roslyn. Tale pagina contiene anche informazioni aggiuntive, ad esempio se la regola è abilitata per impostazione predefinita e se è associata una correzione *del codice*. Le[correzioni di codice](../ide/quick-actions.md) sono correzioni con un solo clic disponibili nel menu dell'icona della lampadina in Visual Studio.
 
 Alla data in questa pagina, l'elenco delle regole FxCop che sono state portate agli [analizzatori .NET](install-net-analyzers.md) include:
 
@@ -68,7 +68,7 @@ ID regola | Titolo
 [CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | I tipi di titolari statici non devono avere costruttori (CA1053 fa parte di [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) per analizzatori .NET)
 [CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | I parametri URI non devono essere stringhe
 [CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | I valori restituiti uri non devono essere stringhe
-[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Le proprietà URI non devono essere stringhe
+[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Le proprietà uri non devono essere stringhe
 [CA1058](/dotnet/fundamentals/code-analysis/quality-rules/ca1058) | I tipi non devono estendere tipi di base specifici
 [CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | Spostare i pinvoke nella classe di metodi nativi
 [CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061) | Non nascondere i metodi di una classe base
@@ -127,8 +127,8 @@ ID regola | Titolo
 [CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | Specificare il marshalling per gli argomenti di stringa P/Invoke
 [CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109) | Controllare i gestori di eventi visibili
 [CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119) | Impostare come sealed i metodi che soddisfano interfacce private
-[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | Non rilevare eccezioni di stato danneggiate
-[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | Rigenerare per mantenere i dettagli dello stack.
+[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | Non rilevare eccezioni di stato danneggiato
+[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | Rigenera per mantenere i dettagli dello stack.
 [CA2201](/dotnet/fundamentals/code-analysis/quality-rules/ca2201) | Non generare tipi di eccezione riservati
 [CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207) | Inizializzare i campi statici dei tipi di valore inline
 [CA2208](/dotnet/fundamentals/code-analysis/quality-rules/ca2208) | Creare istanze di eccezioni di argomento correttamente
@@ -143,7 +143,7 @@ ID regola | Titolo
 [CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | Gli operatori devono avere overload simmetrici
 [CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | Le proprietà di raccolte devono essere in sola lettura
 [CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | Implementare costruttori di serializzazione
-[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | Operatore di overload uguale a in caso di override del tipo di valore Equals
+[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | Operatore di overload uguale a quando si esegue l'override del tipo di valore Equals
 [CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | Passare oggetti URI di sistema anziché stringhe
 [CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | Contrassegnare tutti i campi non serializzabili
 [CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | Contrassegnare i tipi ISerializable con Serializable
@@ -191,7 +191,7 @@ CA5366 | Usare XmlReader per il dataset Read Xml
 CA5367 | Non serializzare tipi con campi puntatore
 CA5368 | Impostare ViewStateUserKey per le classi derivate dalla pagina
 [CA5369](/dotnet/fundamentals/code-analysis/quality-rules/ca5369) | Usare XmlReader per la deserializzazione
-[CA5370](/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | Usare XmlReader per convalidare il lettore
+[CA5370](/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | Usare XmlReader per la convalida del lettore
 [CA5371](/dotnet/fundamentals/code-analysis/quality-rules/ca5371) | Usare XmlReader per la lettura dello schema
 [CA5372](/dotnet/fundamentals/code-analysis/quality-rules/ca5372) | Usare XmlReader per XPathDocument
 [CA5373](/dotnet/fundamentals/code-analysis/quality-rules/ca5373) | Non usare la funzione di derivazione di chiave obsoleta

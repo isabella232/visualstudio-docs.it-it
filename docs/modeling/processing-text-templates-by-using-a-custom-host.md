@@ -10,21 +10,22 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: a301df6edaf8558ade5c8a297f233b58de6d8f4e
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ed2f7b273948bac1ba07322ed079dd5cbd92711a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390932"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100751"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Elaborare modelli di testo tramite un host personalizzato
 
 Il *processo di trasformazione del modello di* testo accetta un file modello *di* testo come input e produce un file di testo come output. È possibile chiamare il motore di trasformazione del testo da un'estensione Visual Studio o da un'applicazione autonoma in esecuzione in un computer in cui Visual Studio è installato. Tuttavia, è necessario fornire un *host di modelli di testo*. Questa classe connette il modello all'ambiente, trovando risorse quali gli assembly e i file di inclusione e gestendo l'output e i messaggi di errore.
 
 > [!TIP]
-> Se si scrive un pacchetto o un'estensione che verrà eseguita all'interno di Visual Studio, è consigliabile usare il servizio di creazione modelli di testo, anziché scrivere un host personalizzato. Per altre informazioni, vedere [Chiamata della trasformazione testo in un'estensione di Visual Studio.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+> Se si scrive un pacchetto o un'estensione che verrà eseguita all'interno di Visual Studio, è consigliabile usare il servizio di creazione modelli di testo, anziché scrivere un host personalizzato. Per altre informazioni, vedere [Richiamo della trasformazione testo in un'estensione di Visual Studio.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
 > [!NOTE]
 > Si sconsiglia di utilizzare le trasformazioni del modello di testo nelle applicazioni server. Si sconsiglia di utilizzare le trasformazioni del modello di testo eccetto in un thread singolo. Questo perché il motore del modello di testo riutilizza un solo AppDomain per tradurre, compilare ed eseguire i modelli. Il codice tradotto non è progettato per essere thread-safe. Il motore è progettato per elaborare i file in modo seriale, come si trova in un progetto Visual Studio in fase di progettazione.

@@ -1,6 +1,6 @@
 ---
 title: Rapporto di riepilogo per thread | Microsoft Docs
-description: Visualizza un grafico a barre mostra la percentuale di tempo trascorso da ogni thread non visibile in ogni categoria di attività durante l'intervallo di tempo attualmente visibile.
+description: Visualizza un grafico a barre mostra la percentuale di tempo che ogni thread non visibile impiega in ogni categoria di attività durante l'intervallo di tempo attualmente visibile.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4c573dcd835d19299e14c92e714894a01c30e06a637a57f339c184dbcd80b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 35c74faa492f7ce9899dc9be67f3af50d38bc511
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121316045"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107086"
 ---
 # <a name="per-thread-summary-report"></a>Report di riepilogo per thread
 Questo grafico a barre mostra la percentuale di tempo usata da ogni thread non nascosto per ciascuna categoria di attività durante l'intervallo di tempo attualmente visibile. "Esecuzione" indica che il thread è in esecuzione; tutte le altre categorie indicano che il thread è in attesa.

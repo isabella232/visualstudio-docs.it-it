@@ -13,14 +13,15 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 90d3f8f95cb4b6aef3b2538a26226f5bad40f33b
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 3690bdcfd80593599d792c2091583e95fdc513b6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924942"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144002"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 
@@ -41,7 +42,7 @@ La finestra **Elenco errori** consente di eseguire le attività seguenti:
 
 - Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
 
-Per visualizzare **l'Elenco errori,** scegliere **Visualizza**  >  **elenco errori** oppure premere **CTRL** + **\\** + **E.**
+Per visualizzare **l'Elenco errori**, scegliere **Visualizza**  >  **elenco errori** oppure premere **CTRL** + **\\** + **E**.
 
 È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.
 
@@ -66,7 +67,7 @@ Se ai risultati della ricerca è applicato un filtro, il nome del filtro viene v
 
 L'elenco sul lato destro della barra degli strumenti specifica se visualizzare errori di compilazione (errori risultanti da un'operazione di compilazione) o di IntelliSense (errori rilevati prima di eseguire una compilazione) o di entrambi.
 
-## <a name="search"></a>Ricerca
+## <a name="search"></a>Cerca
 
 Usare la casella di testo **Elenco errori di ricerca** sul lato destro della barra degli strumenti **Elenco errori** per trovare errori specifici nell'elenco errori. È possibile cercare una colonna visibile nell'elenco errori e i risultati di ricerca vengono sempre ordinati in base alla colonna con priorità di ordinamento anziché alla query o al filtro applicato. Se si sceglie il tasto **Esc** mentre è attivo l'**Elenco errori**, è possibile cancellare il termine di ricerca e i risultati di ricerca filtrati. È anche possibile fare clic sulla **X** sul lato destro della casella di testo per cancellare il contenuto.
 

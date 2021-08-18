@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 11cfbc1386ccd7994e2594f8ddde4a1add3613d27c0fcf1782a3d9dd2a1ed13a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f9b6cb0d017fdfade0b78f2d42609a7e52ad9a3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121353046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149481"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Eseguire il debug delle estensioni per SharePoint strumenti in Visual Studio
   È possibile eseguire il debug SharePoint estensioni degli strumenti nell'istanza sperimentale o nell'istanza normale di Visual Studio. Se è necessario risolvere i problemi relativi al comportamento di un'estensione, è anche possibile modificare i valori del Registro di sistema per visualizzare informazioni aggiuntive sugli errori e per configurare la modalità Visual Studio esecuzione SharePoint comandi.
@@ -106,7 +106,7 @@ ms.locfileid: "121353046"
 3. **Nell'elenco Processi disponibili** scegliere *vssphost.exe*.
 
     > [!NOTE]
-    > Se vssphost.exe non viene visualizzato nell'elenco, è necessario avviare il processo *vssphost4.exe* nell'istanza di Visual Studio in cui si esegue l'estensione. In genere, questa operazione viene eseguita eseguendo un'azione che Visual Studio connettersi al sito SharePoint nel computer di sviluppo. Ad esempio, Visual Studio  avvia *vssphost4.exe* quando si espande un nodo di connessione del sito (un nodo che visualizza un URL del sito) nel nodo Connessioni **SharePoint** nella finestra  **di Esplora server** o quando si aggiungono determinati elementi del progetto SharePoint, ad esempio elementi istanza elenco o ricevitore di eventi, a un progetto SharePoint.
+    > Se vssphost.exe non viene visualizzato nell'elenco, è necessario avviare il processo *vssphost4.exe* nell'istanza di Visual Studio in cui si esegue l'estensione. In genere, questa operazione viene eseguita eseguendo un'azione che Visual Studio connettersi al sito SharePoint nel computer di sviluppo. Ad esempio, Visual Studio  avvia *vssphost4.exe* quando si espande un nodo di connessione del sito (un nodo che visualizza un URL del sito) nel nodo Connessioni **SharePoint** nella  finestra **di Esplora server** o quando si aggiungono determinati elementi di progetto SharePoint, ad esempio elementi istanza elenco o ricevitore di eventi, a un progetto SharePoint.
 
 4. Scegliere il **pulsante Allega.**
 
@@ -115,23 +115,23 @@ ms.locfileid: "121353046"
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modificare i valori del Registro di sistema per facilitare il debug SharePoint estensioni degli strumenti
  Quando si esegue il debug di un'estensione degli strumenti SharePoint in Visual Studio, è possibile modificare i valori nel Registro di sistema per risolvere i problemi dell'estensione. I valori sono presenti sotto **laHKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** chiave. Questi valori non esistono per impostazione predefinita.
 
- Per risolvere i problemi relativi a qualsiasi estensione SharePoint, è possibile creare e impostare il valore EnableDiagnostics. Nella tabella seguente viene descritto questo valore.
+ Per risolvere i problemi relativi a qualsiasi estensione degli strumenti SharePoint, è possibile creare e impostare il valore EnableDiagnostics. Nella tabella seguente viene descritto questo valore.
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|EnableDiagnostics|REG_DWORD che specifica se i messaggi di diagnostica vengono visualizzati nella finestra **Output.**<br /><br /> Per visualizzare i messaggi di diagnostica, impostare questo valore su 1. Per interrompere la visualizzazione dei messaggi, impostare questo valore su 0 o eliminare questo valore.<br /><br /> Per scrivere messaggi nella finestra **Output** da un'estensione degli strumenti SharePoint, usare il SharePoint servizio di progetto. Per altre informazioni, vedere [Usare il SharePoint servizio di progetto](../sharepoint/using-the-sharepoint-project-service.md).|
+|EnableDiagnostics|REG_DWORD che specifica se i messaggi di diagnostica vengono visualizzati nella finestra **Output.**<br /><br /> Per visualizzare i messaggi di diagnostica, impostare questo valore su 1. Per interrompere la visualizzazione dei messaggi, impostare questo valore su 0 o eliminare questo valore.<br /><br /> Per scrivere messaggi nella finestra **Output** da un'estensione SharePoint Tools, usare il SharePoint servizio di progetto. Per altre informazioni, vedere [Usare il SharePoint servizio di progetto](../sharepoint/using-the-sharepoint-project-service.md).|
 
  Se l'estensione include un SharePoint, è possibile creare e impostare valori aggiuntivi per risolvere i problemi del comando. Nella tabella seguente vengono descritti questi valori.
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|AttachDebuggerToHostProcess|REG_DWORD specifica se visualizzare una finestra di dialogo che consente di collegare il debuggervssphost4.exe *non* appena viene avviato. Ciò è utile se il comando di cui si vuole eseguire il debug viene eseguito da vssphost.exe immediatamente dopo l'avvio e non è disponibile tempo sufficiente per collegare manualmente il debugger prima dell'esecuzione del comando. Per visualizzare la finestra di dialogo, *vssphost4.exe* chiama <xref:System.Diagnostics.Debugger.Break%2A> il metodo all'avvio.<br /><br /> Per abilitare questo comportamento, impostare questo valore su 1. Per disattivare questo comportamento, impostare questo valore su 0 o eliminare questo valore.<br /><br /> Se si imposta questo valore su 1, è anche possibile aumentare il valore hostProcessStartupTimeout per concedere tempo sufficiente per collegare il debugger prima che Visual Studio si aspetti che *vssphost4.exe* segnali che è stato avviato correttamente.|
-|ChannelOperationTimeout|REG_DWORD che specifica il tempo, in secondi, di attesa Visual Studio un comando SharePoint esecuzione. Se il comando non viene eseguito in tempo, viene <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> generata un'eccezione .<br /><br /> Il valore predefinito è 120 secondi.|
+|AttachDebuggerToHostProcess|REG_DWORD specifica se visualizzare una finestra di dialogo che consente di collegare il debuggervssphost4.exe *non* appena viene avviato. Ciò è utile se il comando di cui si vuole eseguire il debug viene eseguito da vssphost.exe immediatamente dopo l'avvio e non è disponibile tempo sufficiente per collegare manualmente il debugger prima dell'esecuzione del comando. Per visualizzare la finestra di dialogo, *vssphost4.exe* chiama <xref:System.Diagnostics.Debugger.Break%2A> il metodo all'avvio.<br /><br /> Per abilitare questo comportamento, impostare questo valore su 1. Per disattivare questo comportamento, impostare questo valore su 0 o eliminare questo valore.<br /><br /> Se si imposta questo valore su 1, è anche possibile aumentare il valore HostProcessStartupTimeout per concedere tempo sufficiente per collegare il debugger prima che Visual Studio si aspetti che *vssphost4.exe* segnali che è stato avviato correttamente.|
+|ChannelOperationTimeout|REG_DWORD che specifica il tempo, in secondi, di attesa Visual Studio l'esecuzione di SharePoint comando. Se il comando non viene eseguito in tempo, viene <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> generata un'eccezione .<br /><br /> Il valore predefinito è 120 secondi.|
 |HostProcessStartupTimeout|REG_DWORD che specifica il tempo, in secondi, di attesa  Visual Studio attesavssphost4.exeper segnalare che è stato avviato correttamente. Se *vssphost4.exe* non segnala un avvio corretto nel tempo, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> viene generata un'eccezione .<br /><br /> Il valore predefinito è 60 secondi.|
 |MaxReceivedMessageSize|REG_DWORD che specifica la dimensione massima consentita, in byte, dei messaggi WCF passati tra Visual Studio e *vssphost4.exe*.<br /><br /> Il valore predefinito è 1.048.576 byte (1 MB).|
-|MaxStringContentLength|REG_DWORD che specifica le dimensioni massime consentite, in byte, delle stringhe passate tra Visual Studio e *vssphost4.exe*.<br /><br /> Il valore predefinito è 1.048.576 byte (1 MB).|
+|MaxStringContentLength|REG_DWORD che specifica la dimensione massima consentita, in byte, delle stringhe passate tra Visual Studio e *vssphost4.exe*.<br /><br /> Il valore predefinito è 1.048.576 byte (1 MB).|
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Estendere gli SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Estendere gli strumenti SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Distribuire estensioni per gli strumenti SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

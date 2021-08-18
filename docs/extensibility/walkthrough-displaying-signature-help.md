@@ -13,17 +13,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4c8e69c261b25a4f3a425fc11eb8ccd259dbad2bf951f980e985163a23b4d0d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b1f7685f54daeb2c2299b5b6866295fce4bafd79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121374624"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144184"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procedura dettagliata: Visualizzare la Guida per la firma
 La Guida alla firma (nota anche come *Informazioni* sui parametri ) visualizza la firma di un metodo in una descrizione comando quando un utente specifica il carattere iniziale dell'elenco di parametri (in genere una parentesi di apertura). Quando vengono digitati un parametro e un separatore di parametri (in genere una virgola), la descrizione comando viene aggiornata per visualizzare il parametro successivo in grassetto. È possibile definire la Guida per la firma nei modi seguenti: nel contesto di un servizio di linguaggio, definire l'estensione e il tipo di contenuto del nome file e visualizzare la Guida per la firma solo per quel tipo oppure visualizzare la Guida per la firma per un tipo di contenuto esistente, ad esempio "text". Questa procedura dettagliata illustra come visualizzare la Guida per la firma per il tipo di contenuto "text".
 
- La Guida alla firma viene in genere attivata digitando un carattere specifico, ad esempio "(" (parentesi di apertura) e ignorato digitando un altro carattere, ad esempio ")" (parentesi di chiusura). Le funzionalità di IntelliSense attivate dalla digitazione di un carattere possono essere implementate usando un gestore di comandi per le sequenze di tasti (l'interfaccia ) e un provider di gestori che implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> l'interfaccia . Per creare l'origine della Guida per la firma, ovvero l'elenco delle firme che fanno parte della Guida per la firma, implementare l'interfaccia e un provider di origine <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> che esegue <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> l'interfaccia. I provider sono parti Managed Extensibility Framework (MEF) e sono responsabili dell'esportazione delle classi di origine e controller e dell'importazione di servizi e broker, ad esempio , che consente di spostarsi nel buffer di testo e di , che attiva la sessione della Guida per la <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> firma.
+ La Guida per la firma viene in genere attivata digitando un carattere specifico, ad esempio "(" (parentesi di apertura) e ignorata digitando un altro carattere, ad esempio ")" (parentesi di chiusura). Le funzionalità di IntelliSense attivate dalla digitazione di un carattere possono essere implementate usando un gestore di comandi per le sequenze di tasti (l'interfaccia ) e un provider di gestori che implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> l'interfaccia . Per creare l'origine della Guida per la firma, ovvero l'elenco delle firme che fanno parte della Guida per la firma, implementare l'interfaccia e un provider di origine <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> che esegue <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> l'interfaccia. I provider sono parti Managed Extensibility Framework (MEF) e sono responsabili dell'esportazione delle classi di origine e controller e dell'importazione di servizi e broker, ad esempio , che consente di spostarsi nel buffer di testo e di , che attiva la sessione della Guida per la <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> firma.
 
  Questa procedura dettagliata illustra come configurare la Guida per la firma per un set hard-coded di identificatori. Nelle implementazioni complete, il linguaggio è responsabile di fornire tale contenuto.
 
@@ -159,7 +159,7 @@ La Guida alla firma (nota anche come *Informazioni* sui parametri ) visualizza l
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb" id="Snippet19":::
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs" id="Snippet19":::
 
-6. Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>. In questo esempio sono presenti solo due firme, ognuna delle quali ha due parametri. Pertanto, questo metodo non è obbligatorio. In un'implementazione più completa, in cui sono disponibili più origini della Guida per la firma, questo metodo viene usato per decidere se l'origine della Guida per la firma con la priorità più alta può fornire una firma corrispondente. In caso contrario, il metodo restituisce Null e all'origine con priorità successiva viene richiesto di specificare una corrispondenza.
+6. Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>. In questo esempio sono presenti solo due firme, ognuna delle quali ha due parametri. Pertanto, questo metodo non è obbligatorio. In un'implementazione più completa, in cui sono disponibili più origini della Guida per la firma, questo metodo viene usato per decidere se l'origine della Guida per la firma con la priorità più alta può fornire una firma corrispondente. In caso contrario, il metodo restituisce Null e all'origine con priorità successiva viene richiesto di fornire una corrispondenza.
 
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb" id="Snippet20":::
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs" id="Snippet20":::
@@ -185,7 +185,7 @@ La Guida alla firma (nota anche come *Informazioni* sui parametri ) visualizza l
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs" id="Snippet23":::
 
 ## <a name="implement-the-command-handler"></a>Implementare il gestore dei comandi
- La Guida alla firma viene in genere attivata da una parentesi di apertura "(" carattere e ignorata da una parentesi di chiusura ")". È possibile gestire queste sequenze di tasti eseguendo un in modo che attiva una sessione della Guida alla firma quando riceve un carattere parentesi di apertura preceduto da un nome di metodo noto e chiude la sessione quando riceve un carattere parentesi di <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> chiusura.
+ La Guida alla firma viene in genere attivata da una parentesi di apertura "(" carattere e ignorata da una parentesi di chiusura ")". È possibile gestire queste sequenze di tasti eseguendo un in modo che attiva una sessione della Guida per la firma quando riceve un carattere parentesi di apertura preceduto da un nome di metodo noto e chiude la sessione quando riceve un carattere parentesi di <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> chiusura.
 
 #### <a name="to-implement-the-command-handler"></a>Per implementare il gestore dei comandi
 
@@ -219,7 +219,7 @@ La Guida alla firma (nota anche come *Informazioni* sui parametri ) visualizza l
 
 ### <a name="to-implement-the-signature-help-command-provider"></a>Per implementare il provider di comandi della Guida per la firma
 
-1. Aggiungere una classe denominata che implementa ed esporta la classe `TestSignatureHelpController` <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> con , e <xref:Microsoft.VisualStudio.Utilities.NameAttribute> <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> .
+1. Aggiungere una classe denominata `TestSignatureHelpController` che implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ed esportarla con , e <xref:Microsoft.VisualStudio.Utilities.NameAttribute> <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> .
 
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb" id="Snippet29":::
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs" id="Snippet29":::

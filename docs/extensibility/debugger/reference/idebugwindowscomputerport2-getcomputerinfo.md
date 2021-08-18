@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e043ccc9f626e5a0ab3b0d8e5c3f1b5a6c1f1fabf66c93a93c233f15111c8ca3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 96ff05a705affe9d2703a0fa1f365d626092cfcf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306634"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153030"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Recupera informazioni sul computer in cui è in esecuzione il debugger.

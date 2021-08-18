@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa67ee2296b6a35081ccef389ccc6062096f08da39b71368f637a81e0f4a606
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a945a3c8fe06fee411c5c19c84281540c2b2f85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412582"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151925"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Suggerimenti relativi alle scelte rapide per Visual Studio
 
@@ -77,26 +77,26 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Modalità di suggerimento di IntelliSense|**CTRL** + **ALT** + **Spazio** (Attiva/Disattiva)|
 |Forzare la visualizzazione di IntelliSense|**CTRL**+**J**|
 |Azioni rapide|**CTRL** + **.**|
-|Selezione frammento di codice|**CTRL** + **Scheda K**,**X** o **?****(Visual Basic)**|
+|Selezione frammento di codice|**CTRL** + **K**,**X** o **?**,**scheda** (Visual Basic)|
 |Racchiudi tra|**CTRL** + **K**,**S**|
 |Visualizzare informazioni rapide|**CTRL** + **K**,**I**|
 |Passa a|**CTRL** + **,**|
 |Esplorare i riferimenti evidenziati|**CTRL** + **MAIUSC** + **Su** (precedente)<br />**CTRL** + **MAIUSC** + **Down** (Avanti)|
-|Zoom dell'editor|**CTRL+FRECCIA DESTRA** +  + MAIUSC **>** (In)<br />**CTRL+FRECCIA DESTRA** +  + MAIUSC **<** (Out)|
+|Zoom dell'editor|**CTRL** +  + MAIUSC **>** (In)<br />**CTRL** +  + MAIUSC **<** (Out)|
 |Selezione blocco|Tenere premuto **ALT** e trascinare il mouse<br />**MAIUSC** + **ALT** + **Tasti di direzione**|
-|Spostare una riga su/giù|**ALT** + **Freccia su**  /  **ALT** + **Freccia giù**|
-|Duplicare una riga|**CTRL+FRECCIA DESTRA** + **E**,**V**|
+|Spostare una riga su/giù|**ALT** + **Freccia SU**  /  **ALT** + **Freccia GIÙ**|
+|Duplicare una riga|**CTRL** + **E**,**V**|
 |Espandere la selezione|**MAIUSC** + **ALT**+**=**|
 |Comprimere la selezione|**MAIUSC** + **ALT**+**-**|
 |Vai a definizione|**F12**|
 |Visualizza definizione|**ALT** + **F12**|
-|Stack Vai a definizione|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **8** (Indietro)<br />**CTRL+FRECCIA DESTRA** + **MAIUSC** + **7** (Inoltra)|
+|Stack Vai a definizione|**CTRL** + **MAIUSC** + **8** (Indietro)<br />**CTRL** + **MAIUSC** + **7** (Avanti)|
 |Chiudere la finestra Visualizza definizione|**ESC**|
-|Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**CTRL+FRECCIA DESTRA** + **ALT** + **Home**|
-|Spostarsi tra più finestre Visualizza definizione|**CTRL+FRECCIA DESTRA** +  + ALT **-** e **CTRL** + **ALT**+**=**|
+|Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**CTRL** + **ALT** + **Home page**|
+|Spostarsi tra più finestre Visualizza definizione|**CTRL** +  + ALT **-** e **CTRL** + **ALT**+**=**|
 |Spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
-|Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**MAIUSC** + **Esc**|
-|Passare al blocco di inclusione|**CTRL+FRECCIA DESTRA** + **ALT** + **Freccia su**|
+|Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**MAIUSC** + **ESC**|
+|Passare al blocco di inclusione|**CTRL** + **ALT** + **Freccia SU**|
 |Passare al problema successivo/precedente|**ALT** + **PgUp**  /  **ALT** + **PgDn**|
 |Menu di navigazione contestuale|**Alt**+**`**|
 
@@ -105,7 +105,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Attività|Tasto di scelta rapida|
 |-|-|
 |Aggiungere i pulsanti|Selezionare il pulsante di overflow della barra degli strumenti|
-|Casella combinata Trova nella barra degli strumenti standard|**CTRL+FRECCIA DESTRA** + **D**|
+|Casella combinata Trova nella barra degli strumenti standard|**CTRL** + **D**|
 |Modalità comando casella di testo Trova|digitare **>**|
 |Creare nuovi alias|Digitare **\<new alias> \<command> l'alias** nella **finestra di** comando|
 
@@ -115,15 +115,15 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |-|-|
 |Consente di iniziare il debug|**F5**|
 |Arrestare l'esecuzione del debug|**MAIUSC** + **F5**|
-|Riavviare il debug|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **F5**|
+|Riavviare il debug|**CTRL** + **MAIUSC** + **F5**|
 |Eseguire l'istruzione/routine|**F10**|
 |Eseguire l'istruzione|**F11**|
 |Uscire dall'istruzione/routine|**MAIUSC** + **F11**|
-|Esecuzione fino al cursore|**CTRL+FRECCIA DESTRA** + **F10**|
-|Impostare l'istruzione successiva|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **F10**|
+|Esecuzione fino al cursore|**CTRL** + **F10**|
+|Impostare l'istruzione successiva|**CTRL** + **MAIUSC** + **F10**|
 |Impostare e attivare/disattivare il punto di interruzione|**F9**|
-|Disabilitare il punto di interruzione|**CTRL+FRECCIA DESTRA** + **F9**|
-|Controllo immediato (finestra)|**CTRL+FRECCIA DESTRA** + **ALT** + **I**|
+|Disabilitare il punto di interruzione|**CTRL** + **F9**|
+|Controllo immediato (finestra)|**CTRL** + **ALT** + **I**|
 |Modalità di comando Finestra di controllo immediato|digitare **>**|
 |Finestra di controllo immediato - Cancellare il buffer|Digitare **cls**|
 |Finestra di controllo immediato - Stampare il valore|Digitare **?varname**|

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a232ce7297aee8e2682bbadf3340f0014de7e0492a3a364d17035750abff63e6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5fb876a9b242c5984cda2cfb6c813bde6a6059f6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121444459"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150833"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un visualizzatore di immagini
 
@@ -56,16 +56,16 @@ Al termine, l'app dovrebbe essere simile all'immagine seguente:
 |[Passaggio 5: Aggiungere controlli al modulo](../ide/step-5-add-controls-to-your-form.md)|Aggiungere controlli, ad esempio un controllo `PictureBox` e un controllo `CheckBox`, al form. Aggiungere pulsanti al form.|
 |[Passaggio 6: Assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md)|Rinominare i pulsanti con nomi più significativi.|
 |[Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo](../ide/step-7-add-dialog-components-to-your-form.md)|Aggiungere un componente `OpenFileDialog` e un componente `ColorDialog` al modulo.|
-|[Passaggio 8: Scrivere il codice per il gestore dell'evento show a picture button](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Scrivere codice usando lo strumento IntelliSense.|
+|[Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Scrivere codice usando lo strumento IntelliSense.|
 |[Passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md)|Esaminare e testare il codice. Aggiungere commenti in base alle necessità.|
 |[Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Scrivere codice per far funzionare altri pulsanti e una casella di controllo utilizzando IntelliSense.|
 |[Passaggio 11: Eseguire l'app e provare altre funzionalità](../ide/step-11-run-your-program-and-try-other-features.md)|Eseguire l'app e impostare il colore di sfondo. Provare altre funzionalità, ad esempio la modifica di colori, tipi di carattere e bordi.|
 
-Sono disponibili anche risorse di video learning gratuite. Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali su C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
+Sono disponibili anche ottime risorse gratuite per l'apprendimento video. Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali su C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per iniziare l'esercitazione, iniziare con **[Passaggio 1: Creare un progetto](../ide/step-1-create-a-windows-forms-application-project.md)** di applicazione Windows Forms .
+Per iniziare l'esercitazione, iniziare **[con Passaggio 1: Creare un progetto Windows'applicazione Forms.](../ide/step-1-create-a-windows-forms-application-project.md)**
 
 ## <a name="see-also"></a>Vedi anche
 

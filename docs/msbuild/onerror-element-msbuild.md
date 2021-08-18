@@ -1,6 +1,6 @@
 ---
 title: Elemento OnError (MSBuild) | Microsoft Docs
-description: Informazioni su MSBuild usa l'elemento OnError per causare l'esecuzione di una o più destinazioni, se l'attributo ContinueOnError è false per un'attività non riuscita.
+description: Informazioni su MSBuild usa l'elemento OnError per determinare l'esecuzione di una o più destinazioni, se l'attributo ContinueOnError è false per un'attività non riuscita.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ce12ec85a638a6c63d2a0a0243c7c6e17ef3aa1f51c0092982a3074a5254f8a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ba50100afaa5a3cebc5a3bc9d59f4e922b8da7b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121288139"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108460"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 
@@ -71,7 +71,7 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 
 ## <a name="example"></a>Esempio
 
- Il codice seguente esegue le attività `TaskOne` e `TaskTwo`. Se `TaskOne` non riesce, MSBuild valuta l'elemento `OnError` ed esegue la `OtherTarget` destinazione.
+ Il codice seguente esegue le attività `TaskOne` e `TaskTwo`. Se `TaskOne` ha esito negativo, MSBuild valuta `OnError` l'elemento ed esegue la `OtherTarget` destinazione.
 
 ```xml
 <Target Name="ThisTarget">
@@ -85,5 +85,5 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
 - [Server di destinazione](../msbuild/msbuild-targets.md)

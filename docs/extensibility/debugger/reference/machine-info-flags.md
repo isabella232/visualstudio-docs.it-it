@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e26f2bb00ed8a9f612db6643b4bed8d3e5db3d04910ea939f346fc388716a157
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c7c6f471a1b238f7773876cbf7fb28aaab8679c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276334"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152601"
 ---
 # <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
 Usato per descrivere un computer.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a975190aebbb26ac77614e1fc0e0d7a358bda3440da0b5f8bcdb7562390902e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1f8597a62f319247ca607d4b1f5221665f3de186
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415689"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152991"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Questa interfaccia rappresenta una matrice di byte.
@@ -31,7 +31,7 @@ IEEDataStorage : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- L'analizzatore di espressioni (edizione Enterprise) implementa questa interfaccia per rappresentare una matrice di byte (usata dai visualizzatori di tipi per recuperare e modificare i dati tramite [l'interfaccia IPropertyProxyEESide).](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Il edizione Enterprise in genere implementa questa interfaccia per supportare visualizzatori di tipi esterni.
+ L'analizzatore di espressioni (edizione Enterprise) implementa questa interfaccia per rappresentare una matrice di byte (usata dai visualizzatori di tipi per recuperare e modificare i dati tramite [l'interfaccia IPropertyProxyEESide).](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) L edizione Enterprise implementa in genere questa interfaccia per supportare i visualizzatori di tipi esterni.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Tutti i metodi `IPropertyProxyEESide` nell'interfaccia restituiscono questa interfaccia. Chiamare [GetPropertyProxy per](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) ottenere [l'interfaccia IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) Chiamare [QueryInterface](/cpp/atl/queryinterface) su [un'interfaccia IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) per ottenere [l'interfaccia IPropertyProxyProvider.](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)
@@ -45,9 +45,9 @@ IEEDataStorage : IUnknown
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Recupera il numero di byte di dati disponibili.|
 
 ## <a name="remarks"></a>Commenti
- Questa interfaccia viene usata da un visualizzatore di tipi per accedere ai dati di un oggetto specifico. I dati vengono considerati come una matrice di byte, consentendo al visualizzatore di tipi di modificarli nel modo necessario per presentarlo all'utente.
+ Questa interfaccia viene usata da un visualizzatore di tipi per accedere ai dati di un oggetto specifico. I dati vengono considerati come una matrice di byte, consentendo al visualizzatore di tipi di modificarli in qualsiasi modo sia necessario per presentarlo all'utente.
 
- Un visualizzatore personalizzato può anche usare questa interfaccia, se necessario, anche se, più in genere, un visualizzatore personalizzato usa un'interfaccia personalizzata, [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) o [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (per i dati orientati alle stringhe).
+ Un visualizzatore personalizzato può anche usare questa interfaccia, se lo si desidera, anche se in genere un visualizzatore personalizzato usa un'interfaccia personalizzata, [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) o [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (per i dati orientati alle stringhe).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

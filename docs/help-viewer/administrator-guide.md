@@ -10,18 +10,18 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b7dfed5affb1d1c0c58efc46f001e4f68ea6bacc7167edff1967d64aff656ed
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7f7256c806c0e7198569c2d323895d74f78ee03
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358649"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151990"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 
 Il visualizzatore della Guida consente di gestire le installazioni della Guida locale per gli ambienti di rete con o senza accesso a Internet. Il contenuto della Guida locale viene configurato per ogni singolo computer. Per impostazione predefinita, gli utenti devono disporre dei diritti di amministratore per aggiornare l'installazione della Guida locale.
 
-Se l'ambiente di rete consente ai client di accedere a Internet, è possibile usare l'eseguibile **di Gestione** contenuto della Guida per distribuire il contenuto della Guida locale da Internet. Per altre informazioni sulla *sintassiHlpCtntMgr.exe* riga di comando, vedere Argomenti della riga di comando per Gestione contenuto [della Guida.](../help-viewer/command-line-arguments.md)
+Se l'ambiente di rete consente ai client  di accedere a Internet, è possibile usare il file eseguibile di Gestione contenuto della Guida per distribuire il contenuto della Guida locale da Internet. Per altre informazioni sulla *sintassiHlpCtntMgr.exe* riga di comando, vedere Argomenti della riga di comando [per Gestione contenuto della Guida.](../help-viewer/command-line-arguments.md)
 
 Per informazioni sulla creazione del contenuto, sulla creazione di un endpoint servizio Intranet e tipi di attività simili, vedere [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md).
 
@@ -43,7 +43,7 @@ Se nell'ambiente di rete non si ha l'accesso a Internet, Help Viewer può distri
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-Per altre informazioni sulla *sintassiHlpCtntMgr.exe* riga di comando, vedere Argomenti della riga di comando per Gestione contenuto [della Guida.](../help-viewer/command-line-arguments.md)
+Per altre informazioni sulla *sintassiHlpCtntMgr.exe* riga di comando, vedere Argomenti della riga di comando [per Gestione contenuto della Guida.](../help-viewer/command-line-arguments.md)
 
 Requisiti:
 
@@ -142,7 +142,7 @@ Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai c
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3. Eseguire il *.bat* file nei computer locali in cui si vuole installare il contenuto della Guida.
+3. Eseguire il *.bat* nei computer locali in cui si vuole installare il contenuto della Guida.
 
 ## <a name="see-also"></a>Vedi anche
 

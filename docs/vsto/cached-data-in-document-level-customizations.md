@@ -21,17 +21,17 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cac4ed52e82664fd5aca2fd4e924f24b3eb68e58e18cd6142db9c7c236af35be
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 528e452142bbac81654a6f55878265ee544ddb39
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384587"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083737"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dati memorizzati nella cache nelle personalizzazioni a livello di documento
   L'obiettivo principale delle personalizzazioni a livello di documento è separare i dati dalla visualizzazione Office documenti. I dati si riferiscono alle informazioni archiviate nel documento, inclusi numeri e testo. View fa riferimento all'interfaccia utente e al modello a oggetti Microsoft Office Word e Microsoft Office Excel.
 
- Visual Studio separa i dati dalla visualizzazione nelle personalizzazioni *a* livello di documento consentendo l'incorporazione dei dati come isola di dati , denominata anche cache *dei dati*. È possibile leggere o modificare i dati direttamente senza avviare Word o Excel. Ciò è utile quando è necessario modificare i dati nei documenti in un server in cui non Microsoft Office installato. Word e Excel sono destinati all'uso negli ambienti client; non sono progettati per essere eseguiti in un server.
+ Visual Studio separa i dati dalla visualizzazione nelle personalizzazioni *a* livello di documento consentendo l'incorporazione dei dati come isola di dati , denominata anche cache *dei dati*. È possibile leggere o modificare i dati direttamente senza avviare Word o Excel. Ciò è utile quando è necessario modificare i dati nei documenti in un server in cui non Microsoft Office installati. Word e Excel sono destinati all'uso negli ambienti client; non sono progettati per essere eseguiti in un server.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 

@@ -21,20 +21,21 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b9beb330f452ff97b7f5a81539cfc62c02404901
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a33dcd7d6d6f3dfc045951a4533b6aae8e9ee0af
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909162"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152016"
 ---
 # <a name="manage-references-in-a-project"></a>Gestire i riferimenti in un progetto
 
 Prima di scrivere codice per un componente esterno o servizio connesso, il progetto deve contenere innanzitutto un riferimento a esso. Un riferimento è essenzialmente una voce in un file di progetto che contiene le informazioni necessarie a Visual Studio per individuare il componente o il servizio.
 
-Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** o **Dipendenze** di **Esplora soluzioni** e scegliere **Aggiungi riferimento**. È anche possibile fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **riferimento**. Per altre informazioni, vedere [procedura: aggiungere o rimuovere riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** o **Dipendenze** di **Esplora soluzioni** e scegliere **Aggiungi riferimento**. È anche possibile fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **riferimento.** Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti.](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 
 ![Aggiungere un riferimento in Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -58,7 +59,7 @@ Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul no
 
 I progetti della piattaforma UWP (Universal Windows Platform) possono creare riferimenti ad altri progetti UWP nella soluzione oppure a progetti o file binari di Windows 8.1, purché tali progetti non usino API deprecate in Windows 10. Per altre informazioni vedere la pagina relativa al [passaggio da Windows Runtime 8 alla piattaforma UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
-Se si sceglie di ridestinare i progetti Windows 8.1 a Windows 10, vedere [porta, migrazione e aggiornamento dei progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Se si sceglie di ridestinare i Windows 8.1 a Windows 10, vedere [Convertire,](../porting/port-migrate-and-upgrade-visual-studio-projects.md)eseguire la migrazione e aggiornare Visual Studio progetti .
 
 ### <a name="extension-sdk-references"></a>Riferimenti all'SDK di estensione
 
@@ -115,7 +116,7 @@ Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di de
 
 I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile aggiungere riferimenti a progetti tramite la scheda **Progetto** della finestra di dialogo Gestione riferimenti. Visual Studio può trovare un assembly se viene specificato un percorso al progetto.
 
-In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto può fare riferimento a una versione compilata in precedenza del progetto. Questo può comportare la necessità di diverse versioni di una singola DLL nella directory *bin* , il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: "Avviso: impossibile copiare la dipendenza 'file' del progetto 'progetto' nella directory di esecuzione perché sovrascriverebbe il riferimento 'file'.". Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze di progetto](../ide/how-to-create-and-remove-project-dependencies.md).
+In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto può fare riferimento a una versione compilata in precedenza del progetto. Ciò può comportare la necessità di diverse versioni di una singola DLL nella directory *bin,* il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: "Avviso: impossibile copiare la dipendenza 'file' del progetto 'progetto' nella directory di esecuzione perché sovrascriverebbe il riferimento 'file'.". Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze di progetto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.

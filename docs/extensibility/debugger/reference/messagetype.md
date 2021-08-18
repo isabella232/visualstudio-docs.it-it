@@ -1,6 +1,6 @@
 ---
-description: Specifica il tipo e il motivo del messaggio.
-title: MESSAGETYPE | Microsoft Docs
+description: Specifica il tipo di messaggio e il motivo.
+title: MessageTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b85933896dfff38c2d346fd18144710e2e6fc127
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3172188d878d40d3957ea56ff3c6f57ca561a1be
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091526"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125335"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Specifica il tipo e il motivo del messaggio.
+Specifica il tipo di messaggio e il motivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,32 +54,32 @@ public enum enum_MESSAGETYPE {
 
 ## <a name="fields"></a>Campi
  `MT_OUTPUTSTRING`\
- Indica che il messaggio deve essere inviato alla finestra di output. Si escludono a vicenda `MT_MESSAGEBOX` .
+ Indica che il messaggio deve essere inviato alla finestra di output. Si escludono a vicenda da `MT_MESSAGEBOX` .
 
  `MT_MESSAGEBOX`\
- Indica che il messaggio deve essere visualizzato in una finestra di messaggio. Si escludono a vicenda `MT_OUTPUTSTRING` .
+ Indica che il messaggio deve essere visualizzato in una finestra di messaggio. Si escludono a vicenda da `MT_OUTPUTSTRING` .
 
  `MT_TYPE_MASK`\
  Valore della maschera per isolare la destinazione del messaggio.
 
  `MT_REASON_EXCEPTION`\
- Indica che una finestra di messaggio viene visualizzata come risultato di un'eccezione. Si escludono a vicenda `MT_REASON_TRACEPOINT` .
+ Indica che una finestra di messaggio viene visualizzata come risultato di un'eccezione. Si escludono a vicenda da `MT_REASON_TRACEPOINT` .
 
  `MT_REASON_TRACEPOINT`\
- Indica che una finestra di messaggio viene visualizzata come risultato dell'esecuzione di un punto di analisi. Si escludono a vicenda `MT_REASON_EXCEPTION` .
+ Indica che una finestra di messaggio viene visualizzata come risultato del raggiungere un punto di analisi. Si escludono a vicenda a `MT_REASON_EXCEPTION` .
 
  `MT_REASON_MASK`\
  Valore della maschera per isolare il motivo del messaggio visualizzato.
 
 ## <a name="remarks"></a>Commenti
- Questi valori vengono restituiti dai metodi [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) .
+ Questi valori vengono restituiti dai [metodi GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) [e GetErrorMessage.](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)
 
- Uno dei motivi per cui i valori possono essere combinati con uno dei valori di destinazione di output utilizzando un bit per bit `OR` .
+ Uno dei valori di motivo può essere combinato con uno dei valori di destinazione di output utilizzando un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

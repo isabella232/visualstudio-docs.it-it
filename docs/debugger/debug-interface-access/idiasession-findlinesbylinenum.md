@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d82e56f608573c316789210cd04502e57220440941082b98f07bce7395a59bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54a5d74e65879873db3d6a9394b9f7a74e6d0a64
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380262"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105489"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 Determina i numeri di riga del compilando in cui si trova il numero di riga specificato in un file di origine all'interno o vicino.

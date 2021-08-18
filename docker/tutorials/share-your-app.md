@@ -1,19 +1,20 @@
 ---
-title: "Esercitazione su Docker - Parte 3: Condividere l'app"
+title: "Esercitazione su Docker - Parte 2: Condividere l'app"
 description: Viene descritto come condividere immagini Docker usando il registro Docker Hub dati.
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d64d10c7abefc14f31c39c3b8397e95cec67e9f4
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 86c339693423369a35ebb039c3629a872ddbc702
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067903"
 ---
 # <a name="share-your-app"></a>Condividere l'app
 
@@ -27,7 +28,7 @@ Per eseguire il push di un'immagine, è innanzitutto necessario creare un Docker
 
 1. Fare clic **sul pulsante Crea** repository.
 
-1. Per il nome del riposino, usare `getting-started` . Assicurarsi che Visibility sia `Public` .
+1. Per il nome del repo, usare `getting-started` . Assicurarsi che Visibility sia `Public` .
 
 1. Fare clic **sul pulsante** Crea.
 
@@ -63,7 +64,7 @@ Se si guarda sul lato destro della pagina, verrà visualizzata una sezione denom
     docker push <username>/getting-started
     ```
 
-    Anziché la riga di comando, è anche possibile fare  clic con il pulsante destro del mouse sul tag immagine nella sezione Immagini della visualizzazione Docker e scegliere **Push...**, quindi **scegliere Connessione registry...** e quindi **Docker Hub**.
+    Anziché la riga di comando, è anche possibile fare  clic con il pulsante destro del mouse sul tag immagine nella sezione Immagini della visualizzazione Docker e scegliere **Push...**, quindi scegliere **Connessione registry...** e quindi **Docker Hub**.
 
 ## <a name="run-the-image-on-a-new-instance"></a>Eseguire l'immagine in una nuova istanza
 
@@ -85,13 +86,13 @@ Ora che l'immagine è stata compilata e inserita in un registro, provare a esegu
 
     Si dovrebbe vedere che l'immagine viene trascinata verso il basso e alla fine si avvia.
 
-1. Fare clic sul badge 3000 quando viene visualizzato e verrà visualizzata l'app con le modifiche apportate. Evviva! Se il badge 3000 non viene visualizzato, è possibile fare clic sul pulsante **Apri** porta e digitare 3000.
+1. Fare clic sul badge 3000 quando viene visualizzato e verrà visualizzata l'app con le modifiche apportate. Evviva! Se il badge 3000 non viene visualizzato,  è possibile fare clic sul pulsante Apri porta e digitare 3000.
 
 ## <a name="recap"></a>Riepilogo
 
-In questa sezione si è appreso come condividere le immagini tramite push in un registro. Si è quindi passati a un'istanza completamente nuova ed è stato possibile eseguire l'immagine appena inserita. Questo è piuttosto comune nelle pipeline CI, in cui la pipeline creerà l'immagine ed eseerne il push in un registro e quindi l'ambiente di produzione potrà usare la versione più recente dell'immagine.
+In questa sezione si è appreso come condividere immagini tramite push in un registro. Si è quindi passati a un'istanza completamente nuova ed è stato possibile eseguire l'immagine appena inserita. Questo è piuttosto comune nelle pipeline CI, in cui la pipeline creerà l'immagine ed eseerne il push in un registro e quindi l'ambiente di produzione potrà usare la versione più recente dell'immagine.
 
-A questo punto, tenere presente che alla fine dell'ultima sezione, al riavvio dell'app, sono stati persi tutti gli elementi dell'elenco attività. Non si tratta ovviamente di un'esperienza utente ottimale, quindi si apprenderà ora come rendere persistenti i dati tra i riavvii.
+A questo punto, tenere presente che alla fine dell'ultima sezione, al riavvio dell'app, sono stati persi tutti gli elementi dell'elenco attività. Questa non è ovviamente un'esperienza utente ottimale, quindi si apprenderà ora come rendere persistenti i dati tra i riavvii.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

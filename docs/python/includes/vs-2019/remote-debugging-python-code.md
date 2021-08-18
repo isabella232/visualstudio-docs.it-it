@@ -6,23 +6,24 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dcc5d9746a556af54ea206528fcb9a402e25d700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74b4e25bccf52893302adf4bca6bb81a5e7e3794
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916595"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140530"
 ---
-Visual Studio può avviare ed eseguire il debug di applicazioni Python in locale e in remoto in un computer Windows (vedere [Remote Debugging](../../../debugger/remote-debugging.md)). È anche possibile eseguire il debug in modalità remota su un sistema operativo, un dispositivo o un'implementazione di Python diversi da CPython usando la [libreria debugpy](https://pypi.org/project/debugpy/).
+Visual Studio avviare ed eseguire il debug di applicazioni Python in locale e in remoto in un computer Windows remoto (vedere [Debug remoto](../../../debugger/remote-debugging.md)). Può anche eseguire il debug in modalità remota in un sistema operativo, un dispositivo o un'implementazione Python diversa da CPython usando la [libreria debugpy](https://pypi.org/project/debugpy/).
 
-Quando si usa debugpy, il codice Python di cui è in corso il debug ospita il server di debug a cui Visual Studio può connettersi. L'hosting richiede una piccola modifica del codice per importare e abilitare il server e potrebbe richiedere configurazioni della rete o del firewall nel computer remoto per consentire le connessioni TCP.
+Quando si usa debugpy, il codice Python in fase di debug ospita il server di debug a cui Visual Studio collegarsi. L'hosting richiede una piccola modifica del codice per importare e abilitare il server e potrebbe richiedere configurazioni della rete o del firewall nel computer remoto per consentire le connessioni TCP.
 
 > [!NOTE]
-> Per Visual Studio 2019 versione 16,4 e precedenti, è stata usata la [libreria ptvsd](https://pypi.python.org/pypi/ptvsd) . La libreria debugpy ha sostituito ptvsd 4 in Visual Studio 2019 versione 16,5.
+> Per Visual Studio 2019 versione 16.4 e precedenti, è stata usata la [libreria ptvsd.](https://pypi.python.org/pypi/ptvsd) La libreria debugpy ha sostituito ptvsd 4 in Visual Studio 2019 versione 16.5.
 
 ## <a name="set-up-a-linux-computer"></a>Impostare un computer Linux
 
@@ -32,7 +33,7 @@ Per eseguire questa procedura dettagliata sono necessari gli elementi seguenti:
 - La porta 5678 (in ingresso) deve essere aperta nel firewall di tale computer, in base all'impostazione predefinita per il debug remoto.
 
 > [!NOTE]
-> Questa procedura dettagliata è basata su Visual Studio 2019 versione 16,6.
+> Questa procedura dettagliata è basata Visual Studio 2019 versione 16.6.
 
 È possibile creare facilmente [macchine virtuali Linux in Azure](/azure/virtual-machines/linux/creation-choices) e [accedervi usando Desktop remoto](/azure/virtual-machines/linux/use-remote-desktop) da Windows. L'uso di Ubuntu per la macchina virtuale è comodo perché Python è installato per impostazione predefinita. Se si preferisce scegliere un altro percorso di download per Python, vedere l'elenco di opzioni in [Installazione degli interpreti Python](../../installing-python-interpreters.md).
 
@@ -67,7 +68,7 @@ Per informazioni dettagliate sulla creazione di una regola del firewall per una 
 
 1. Installare il pacchetto `debugpy` nell'ambiente usando `pip3 install debugpy`.
    >[!NOTE]
-   >È consigliabile registrare la versione di debugpy installata nel caso in cui sia necessaria per la risoluzione dei problemi; l' [elenco debugpy](https://pypi.org/project/debugpy/) Mostra anche le versioni disponibili.
+   >È buona idea registrare la versione di debugpy installata nel caso in cui sia necessaria per la risoluzione dei problemi. [L'elenco debugpy](https://pypi.org/project/debugpy/) mostra anche le versioni disponibili.
 
 1. Abilitare il debug remoto aggiungendo il codice seguente nel primo punto possibile in *guessing-game.py* prima di altro codice. Anche se non è un requisito vincolante, non è possibile eseguire il debug di qualsiasi thread in background generato prima della chiamata della funzione `listen`.
 
@@ -79,7 +80,7 @@ Per informazioni dettagliate sulla creazione di una regola del firewall per una 
 1. Salvare il file ed eseguire `python3 guessing-game.py`. La chiamata a `listen` viene eseguita in background e attende connessioni in ingresso quando si interagisce in altro modo con il programma. Se richiesto, è possibile chiamare la funzione `wait_for_client` dopo `listen` per bloccare il programma fino al collegamento del debugger.
 
 > [!Tip]
-> Oltre a `listen` e `wait_for_client` , debugpy fornisce anche una funzione helper `breakpoint` , che funge da punto di interruzione a livello di codice se il debugger è collegato. È anche disponibile una funzione `is_client_connected` che restituisce `True` se il debugger è collegato (si noti che non è necessario verificare questo risultato prima di chiamare qualsiasi altra funzione `debugpy`).
+> Oltre a e , debugpy fornisce anche una funzione helper , che funge da punto di interruzione a livello di codice `listen` se il debugger è `wait_for_client` `breakpoint` collegato. È anche disponibile una funzione `is_client_connected` che restituisce `True` se il debugger è collegato (si noti che non è necessario verificare questo risultato prima di chiamare qualsiasi altra funzione `debugpy`).
 
 ## <a name="attach-remotely-from-python-tools"></a>Collegarsi in remoto da Python Tools
 
@@ -87,15 +88,15 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
 
 1. Creare una copia del file remoto nel computer locale e aprirlo in Visual Studio. La posizione del file non è importante, ma il relativo nome deve corrispondere al nome dello script nel computer remoto.
 
-1. Opzionale Per avere IntelliSense per debugpy nel computer locale, installare il pacchetto debugpy nell'ambiente Python.
+1. (Facoltativo) Per avere IntelliSense per il debugpy nel computer locale, installare il pacchetto debugpy nell'ambiente Python.
 
-1. Selezionare **debug**  >  **Connetti a processo**.
+1. Selezionare **Debug**  >  **collegamento a processo**.
 
-1. Nella finestra di dialogo **Connetti a processo** visualizzata, impostare **tipo di connessione** su **python remote (debugpy)**.
+1. Nella finestra **di dialogo Collega a** processo visualizzata impostare Tipo **di** connessione su Python **remoto (debugpy).**
 
-1. Nel campo **destinazione connessione** immettere `tcp://<ip_address>:5678` dove `<ip_address>` è quello del computer remoto, che può essere un indirizzo esplicito o un nome come MyVM.cloudapp.NET, e `:5678` è il numero di porta di debug remoto.
+1. Nel campo **Destinazione connessione** immettere dove è quello del computer remoto (che può essere un indirizzo esplicito o un nome come myvm.cloudapp.net) e è il numero di porta del debug `tcp://<ip_address>:5678` `<ip_address>` `:5678` remoto.
 
-1. Premere **invio** per popolare l'elenco dei processi debugpy disponibili in tale computer:
+1. Premere **INVIO** per popolare l'elenco dei processi di debug disponibili nel computer:
 
     ![Immissione della destinazione di connessione e indicazione dei processi](../../media/remote-debugging-attach.png)
 
@@ -107,27 +108,27 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
 
     ![Visual Studio sospende il debug quando viene raggiunto il punto di interruzione](../../media/remote-debugging-breakpoint-hit.png)
 
-1. Quando si arresta il debug, Visual Studio si disconnette dal programma, che rimane in esecuzione nel computer remoto. debugpy continua anche ad ascoltare il connessione dei debugger, in modo che sia possibile riconnettersi al processo in qualsiasi momento.
+1. Quando si arresta il debug, Visual Studio si disconnette dal programma, che rimane in esecuzione nel computer remoto. debugpy continua anche a essere in ascolto del collegamento dei debugger, quindi è possibile ricollegare il processo in qualsiasi momento.
 
 ### <a name="connection-troubleshooting"></a>Risoluzione dei problemi di connessione
 
-1. Assicurarsi di aver selezionato **python remote (debugpy)** per il tipo di **connessione**
-1. Verificare che il segreto nella **destinazione della connessione** corrisponda esattamente alla chiave privata nel codice remoto.
-1. Verificare che l'indirizzo IP nella **destinazione della connessione** corrisponda a quello del computer remoto.
-1. Verificare che la porta di debug remoto sia stata aperta nel computer remoto e che sia stato incluso il suffisso della porta nella destinazione della connessione, ad esempio `:5678` .
+1. Assicurarsi di aver selezionato **Python remoto (debugpy)** per Tipo **di connessione**
+1. Verificare che il segreto in **Destinazione connessione corrisponda** esattamente al segreto nel codice remoto.
+1. Verificare che l'indirizzo IP in **Destinazione connessione** corrisponda a quello del computer remoto.
+1. Verificare di aver aperto la porta di debug remoto nel computer remoto e di aver incluso il suffisso di porta nella destinazione della connessione, ad esempio `:5678` .
     - Se è necessario usare una porta diversa, è possibile specificarla in `listen` , come in `debugpy.listen((host, port))` . In questo caso, aprire quella porta specifica nel firewall.
-1. Verificare che la versione di debugpy installata nel computer remoto restituita da `pip3 list` corrisponda a quella usata dalla versione degli strumenti Python in uso in Visual Studio nella tabella seguente. Se necessario, aggiornare debugpy nel computer remoto.
+1. Verificare che la versione di debugpy installata nel computer remoto restituita dalle corrispondenze usate dalla versione degli strumenti Python in uso in Visual Studio nella tabella `pip3 list` seguente. Se necessario, aggiornare debugpy nel computer remoto.
 
-    | Versione di Visual Studio | Versione di Python Tools/debugpy |
+    | Versione di Visual Studio | Strumenti Python/versione di debugpy |
     | --- | --- |
-    | 2019 16,6 | 1.0.0 B5 |
-    | 2019 16,5 | 1.0.0 B1 |
+    | 2019 16.6 | 1.0.0b5 |
+    | 2019 16.5 | 1.0.0b1 |
 
 > [!NOTE]
-> Visual Studio 2019 versione 16-16,4 USA ptvsd, non debugpy. Il processo in questa procedura dettagliata per tali versioni è simile, ma i nomi delle funzioni sono diversi. Visual Studio 2019 versione 16,5 USA debugpy, ma i nomi di funzione sono identici a quelli di ptvsd. Invece di `listen` , usare `enable_attach` . Invece di `wait_for_client` , usare `wait_for_attach` . Invece di `breakpoint` , usare `break_into_debugger` .
+> Visual Studio 2019 versione 16.0-16.4 ha utilizzato ptvsd, non debugpy. Il processo di questa procedura dettagliata per queste versioni è simile, ma i nomi delle funzioni sono diversi. Visual Studio 2019 versione 16.5 usa debugpy, ma i nomi delle funzioni sono gli stessi di quelli in ptvsd. Invece di `listen` , si userebbe `enable_attach` . Invece di `wait_for_client` , si userebbe `wait_for_attach` . Invece di `breakpoint` , si userebbe `break_into_debugger` .
 
-## <a name="using-ptvsd-3x-for-legacy-debugging"></a>Uso di ptvsd 3. x per il debug legacy
-La versione 15.8 e successive di Visual Studio 2017 usano un debugger basato sulla versione ptvsd 4.1 +. Visual Studio 2019 versioni 16,5 e successive usano un debugger basato su debugpy. Queste versioni del debugger sono compatibili con Python 2,7 e Python 3.5 +. Se si usa Python 2,6, 3,1 a 3,4 o IronPython, Visual Studio Mostra l'errore, il **debugger non supporta questo ambiente Python**. Le informazioni seguenti si applicano solo al debug remoto con ptvsd 3. x.
+## <a name="using-ptvsd-3x-for-legacy-debugging"></a>Uso di ptvsd 3.x per il debug legacy
+La versione 15.8 e successive di Visual Studio 2017 usano un debugger basato sulla versione ptvsd 4.1 +. Visual Studio 2019 versione 16.5 e successive usa un debugger basato su debugpy. Queste versioni del debugger sono compatibili con Python 2.7 e Python 3.5+. Se si usa Python 2.6, da 3.1 a 3.4 o IronPython, Visual Studio visualizza l'errore, debugger non supporta questo ambiente **Python.** Le informazioni seguenti si applicano solo al debug remoto con ptvsd 3.x.
 
 1. Con ptvsd 3.x, la funzione `enable_attach` richiede il passaggio di un "segreto" come primo argomento, che limita l'accesso allo script in esecuzione. Si immette questo segreto quando si collega il debugger remoto. Sebbene non sia consigliabile, è possibile consentire a chiunque di eseguire la connessione usando `enable_attach(secret=None)`.
 
@@ -168,7 +169,7 @@ Per impostazione predefinita, la connessione al server di debug remoto di ptvsd 
 
 1. Visual Studio segnala i potenziali problemi di certificato quando si esegue la connessione con SSL. È possibile ignorare gli avvisi e continuare, ma anche se il canale rimane crittografato per evitare intercettazioni, può comunque essere vulnerabile agli attacchi di tipo man-in-the-middle.
 
-    1. Se viene visualizzato l'avviso il **certificato remoto non è attendibile** , significa che il certificato non è stato aggiunto correttamente alla CA radice attendibile. Verificare questi passaggi e riprovare.
+    1. Se viene visualizzato **l'avviso seguente il** certificato remoto non è attendibile, significa che il certificato non è stato aggiunto correttamente alla CA radice attendibile. Verificare questi passaggi e riprovare.
 
         ![Avviso su attendibilità del certificato SSL](../../media/remote-debugging-ssl-warning.png)
 

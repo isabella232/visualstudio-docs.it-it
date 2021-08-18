@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia enumera le porte di un fornitore di computer o porte.
+description: Questa interfaccia enumera le porte di un computer o di un fornitore di porte.
 title: IEnumDebugPorts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 243fcf1476f2f278ebed550805fcdfc9cf82d03300a1df70ad2c1c833ac3cdc8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c6d8a8f2156aca008303e65726a180ac84ae700f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121291688"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144873"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
-Questa interfaccia enumera le porte di un fornitore di computer o porte.
+Questa interfaccia enumera le porte di un computer o di un fornitore di porte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +34,7 @@ IEnumDebugPorts2 : IUnknown
  Un fornitore di porte personalizzato implementa questa interfaccia per rappresentare un elenco di porte create dal fornitore. Visual Studio implementa questa interfaccia a supporto del proprio fornitore di porte.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [EnumPorts per](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) ottenere questa interfaccia che rappresenta un elenco di porte create dal fornitore della porta. Chiamare [EnumPersistedPorts per](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) ottenere questa interfaccia che rappresenta un elenco di porte salvate su disco.
+ Chiamare [EnumPorts per](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) ottenere questa interfaccia che rappresenta un elenco di porte create dal fornitore della porta. Chiamare [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) per ottenere questa interfaccia che rappresenta un elenco di porte salvate su disco.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IEnumDebugPorts2` .
@@ -48,7 +48,7 @@ IEnumDebugPorts2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|Ottiene il numero di porte in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- Visual Studio usa questa interfaccia per popolare un elenco di porte usate per la connessione ai processi.
+ Visual Studio questa interfaccia consente di popolare un elenco di porte usate per la connessione ai processi.
 
  Un motore di debug in genere non usa questa interfaccia.
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f3900ccb8b1c502fce9c0af4288fc50ed9a63b2409207fd3a5878e0b6ff9e4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3522bdfc122cdb684a95f2407dd1f373ce3b1f9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292884"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072537"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 Questa interfaccia rappresenta le informazioni necessarie per creare e associare qualsiasi tipo di punto di interruzione. Si tratta di [un'estensione di IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)

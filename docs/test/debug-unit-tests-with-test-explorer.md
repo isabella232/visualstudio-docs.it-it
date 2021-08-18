@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a4f38b1cf719057557f711befce0fc8fcb3f1b78973badd838c1825fa11d1d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 52817c2a3f0ad48c44b9eb1033a9e5b78d833e9d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366764"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083869"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Eseguire il debug e analizzare unit test con Esplora test
 

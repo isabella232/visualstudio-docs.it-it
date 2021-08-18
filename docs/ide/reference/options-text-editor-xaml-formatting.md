@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, XAML, Formattazione
-description: Informazioni su come usare la pagina Opzioni di formattazione e le relative sottopagine per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in XAML.
+description: Informazioni su come usare la pagina Opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in XAML.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
@@ -29,14 +29,15 @@ ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: f550499545fda3250f4d2449697513fbc8c09fa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47311af7eee476ac4beea2c73bfa5ab00ed19ea6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970790"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069389"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
 
@@ -64,7 +65,7 @@ La formattazione automatica si verifica quando si finisce di digitare un tag di 
 
 La formattazione automatica si verifica quando si finisce di digitare un tag di inizio.
 
-**Quando si incolla dagli Appunti**
+**Incollare dagli Appunti**
 
 La formattazione automatica si verifica quando si incolla XAML dagli Appunti nella visualizzazione XAML.
 

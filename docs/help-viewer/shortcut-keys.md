@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 684f867b5191eb7fe0d51c53acef6ab907d75014453ba689b68223894244b9b8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6bde8a8b4b68e7e40eaa25a0df044028dd641a85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121373479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109682"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tasti di scelta rapida in Help Viewer
 
@@ -31,19 +31,19 @@ ms.locfileid: "121373479"
 |Applicazione generale|**F11**|Passare dalla visualizzazione a schermo intero alla visualizzazione normale e viceversa.|
 |Barra degli strumenti|**Backspace**<br /><br /> -OPPURE-<br /><br /> **ALT** + **Freccia SINISTRA**|Visualizzare la pagina precedente.|
 |Barra degli strumenti|**ALT** + **Freccia DESTRA**|Visualizzare la pagina successiva.|
-|Barra degli strumenti|**ALT** + **Home**|Visualizzare la home page del **revisore della guida**.|
-|Barra degli strumenti|**CTRL+FRECCIA DESTRA** + **S**|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|
-|Barra degli strumenti|**CTRL+FRECCIA DESTRA** + **D**|Aggiungere l'argomento corrente alla scheda **Preferiti**.|
-|Barra degli strumenti|**CTRL+FRECCIA DESTRA** + **F**|Visualizzare la barra di **ricerca** nell'area dell'argomento da usare per cercare un testo nell'argomento corrente.|
-|Barra degli strumenti|**CTRL+FRECCIA DESTRA** + **P**|Stampare la pagina corrente.|
-|Barra degli strumenti|**CTRL+FRECCIA DESTRA** + **F2**|Visualizzare un'anteprima di stampa della pagina corrente.|
-|Barra degli strumenti|**CTRL+FRECCIA DESTRA** + **O**|Visualizzare la finestra di dialogo **Opzioni Help Viewer**.|
-|Barra degli strumenti|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **M**|Visualizzare la scheda **Gestisci contenuto**.|
-|Strumenti di spostamento|**ALT** + **C**<br /><br /> -OPPURE-<br /><br /> **CTRL+FRECCIA DESTRA** + **MAIUSC** + **C**|Visualizzare la scheda **Sommario**.|
-|Strumenti di spostamento|**ALT** + **I**<br /><br /> -OPPURE-<br /><br /> **CTRL+FRECCIA DESTRA** + **MAIUSC** + **I**|Visualizzare la scheda **Indice**.|
-|Strumenti di spostamento|**ALT** + **F**<br /><br /> -OPPURE-<br /><br /> **CTRL+FRECCIA DESTRA** + **MAIUSC** + **F**|Visualizzare la scheda **Preferiti**.|
-|Strumenti di spostamento|**ALT** + **S**<br /><br /> -OPPURE-<br /><br /> **Ctrl** + E<br /><br /> -OPPURE-<br /><br /> **CTRL+FRECCIA DESTRA** + **MAIUSC** + **S**|Visualizzare la scheda **Cerca**.|
-|Strumenti di spostamento|**ALT** + **M**<br /><br /> -OPPURE-<br /><br /> **CTRL+FRECCIA DESTRA** + **MAIUSC** + **M**|Visualizzare la scheda **Gestisci contenuto**.|
+|Barra degli strumenti|**ALT** + **Home page**|Visualizzare la home page del **revisore della guida**.|
+|Barra degli strumenti|**CTRL** + **S**|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|
+|Barra degli strumenti|**CTRL** + **D**|Aggiungere l'argomento corrente alla scheda **Preferiti**.|
+|Barra degli strumenti|**CTRL** + **F**|Visualizzare la barra di **ricerca** nell'area dell'argomento da usare per cercare un testo nell'argomento corrente.|
+|Barra degli strumenti|**CTRL** + **P**|Stampare la pagina corrente.|
+|Barra degli strumenti|**CTRL** + **F2**|Visualizzare un'anteprima di stampa della pagina corrente.|
+|Barra degli strumenti|**CTRL** + **O**|Visualizzare la finestra di dialogo **Opzioni Help Viewer**.|
+|Barra degli strumenti|**CTRL** + **MAIUSC** + **M**|Visualizzare la scheda **Gestisci contenuto**.|
+|Strumenti di spostamento|**ALT** + **C**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **MAIUSC** + **C**|Visualizzare la scheda **Sommario**.|
+|Strumenti di spostamento|**ALT** + **I**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **MAIUSC** + **I**|Visualizzare la scheda **Indice**.|
+|Strumenti di spostamento|**ALT** + **F**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **MAIUSC** + **F**|Visualizzare la scheda **Preferiti**.|
+|Strumenti di spostamento|**ALT** + **S**<br /><br /> -OPPURE-<br /><br /> **Ctrl** + E<br /><br /> -OPPURE-<br /><br /> **CTRL** + **MAIUSC** + **S**|Visualizzare la scheda **Cerca**.|
+|Strumenti di spostamento|**ALT** + **M**<br /><br /> -OPPURE-<br /><br /> **CTRL** + **MAIUSC** + **M**|Visualizzare la scheda **Gestisci contenuto**.|
 |Argomento|Tasto del **menu di scelta rapida**<br /><br /> OR<br /><br /> **MAIUSC** + **F10**|Visualizzare il menu di scelta rapida per l'elemento corrente dell'interfaccia utente.|
 |Argomento|**Freccia SU**|Scorrere verso l'inizio del documento una riga alla volta.|
 |Argomento|**Freccia GIÙ**|Scorrere verso la fine del documento una riga alla volta.|

@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 31b6bf4e9fa4041710da1269ff239eecb3e75749e1819144fc99fed5f198efb5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a70a7b5c574e233d9597124ceb4497c4bf03742c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408123"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099763"
 ---
 # <a name="how-to-programmatically-print-documents"></a>Procedura: Stampare documenti a livello di codice
   È possibile stampare un intero documento di Microsoft Office Word o parte di un documento sulla stampante predefinita.

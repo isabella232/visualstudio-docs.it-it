@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di un glifo di margine | Microsoft Docs'
+title: 'Procedura dettagliata: Creazione di un glifo | Microsoft Docs'
 description: Informazioni su come personalizzare l'aspetto dei margini dell'editor usando estensioni dell'editor personalizzate usando questa procedura dettagliata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0672c68167b06195883b431b6e49b96f93cb9db8b9f80b94183c2a09a7a33289
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5e5bd2d49f1bc2af8f90a1fb92e42a08a6de5c11
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078570"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Procedura dettagliata: Creare un glifo del margine
 È possibile personalizzare l'aspetto dei margini dell'editor usando estensioni dell'editor personalizzate. Questa procedura dettagliata inserisce un glifo personalizzato sul margine dell'indicatore ogni volta che la parola "todo" viene visualizzata in un commento del codice.
@@ -28,9 +28,9 @@ ms.locfileid: "121334978"
 
 ## <a name="create-a-mef-project"></a>Creare un progetto MEF
 
-1. Creare un progetto VSIX C#. Nella finestra **di dialogo Nuovo Project** selezionare Visual **C# /Extensibility** e quindi **VSIX Project**. Assegnare alla soluzione il nome `TodoGlyphTest` .
+1. Creare un progetto VSIX C#. Nella finestra **di dialogo Project** nuova versione selezionare Visual **C# /Extensibility**, quindi **VSIX Project**. Assegnare alla soluzione il nome `TodoGlyphTest` .
 
-2. Aggiungere un elemento di progetto Editor Classifier. Per altre informazioni, vedere [Creare un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Aggiungere un elemento di progetto Editor Classifier. Per altre informazioni, vedere Creare [un'estensione con un modello di elemento dell'editor.](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
 3. Eliminare i file di classe esistenti.
 
@@ -61,7 +61,7 @@ ms.locfileid: "121334978"
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs" id="Snippet4":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb" id="Snippet4":::
 
-6. Aggiungere una classe denominata `TodoGlyphFactoryProvider` che implementa <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider> . Esportare questa classe con <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "TodoGlyph", after <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> VsTextMarker, a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> di "code" e a di <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> TodoTag.
+6. Aggiungere una classe denominata `TodoGlyphFactoryProvider` che implementa <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider> . Esportare questa classe con <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "TodoGlyph", after <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> VsTextMarker, a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> di "code" e di <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> TodoTag.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs" id="Snippet5":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb" id="Snippet5":::
@@ -93,7 +93,7 @@ ms.locfileid: "121334978"
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs" id="Snippet9":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb" id="Snippet9":::
 
-5. Alla classe aggiungere campi privati per un e `TodoTagger` per il testo da trovare negli <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> intervalli di classificazione.
+5. Alla classe aggiungere campi privati per un oggetto e per il testo `TodoTagger` <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> da trovare negli intervalli di classificazione.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs" id="Snippet10":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb" id="Snippet10":::
@@ -103,7 +103,7 @@ ms.locfileid: "121334978"
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs" id="Snippet11":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb" id="Snippet11":::
 
-7. Implementare il metodo individuando tutti gli intervalli di classificazione i cui nomi includono la parola "comment" e il cui testo <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> include il testo di ricerca. Ogni volta che viene trovato il testo di ricerca, restituisce un nuovo <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> tipo `TodoTag` .
+7. Implementare il metodo individuando tutti gli intervalli di classificazione i cui nomi includono la parola "comment" e il cui testo <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> include il testo di ricerca. Ogni volta che viene trovato il testo di ricerca, restituisce un nuovo <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> di tipo `TodoTag` .
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs" id="Snippet12":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb" id="Snippet12":::
@@ -113,7 +113,7 @@ ms.locfileid: "121334978"
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs" id="Snippet13":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb" id="Snippet13":::
 
-9. Aggiungere una classe `TodoTaggerProvider` denominata che implementa ed <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> esportarla con un valore di <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "code" e <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> un di TodoTag.
+9. Aggiungere una classe `TodoTaggerProvider` denominata che implementa ed <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> esportarla con <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "code" e <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> todoTag.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs" id="Snippet14":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb" id="Snippet14":::
@@ -135,9 +135,9 @@ ms.locfileid: "121334978"
 
 1. Compilare la soluzione.
 
-2. Eseguire il progetto premendo **F5.** Viene avviata una seconda istanza Visual Studio.
+2. Eseguire il progetto premendo **F5.** Viene avviata una seconda Visual Studio di .
 
-3. Assicurarsi che il margine dell'indicatore sia visualizzato. Scegliere **Opzioni** dal menu **Strumenti**. Nella pagina **Editor di** testo verificare che **l'opzione Margine indicatore** sia selezionata.
+3. Assicurarsi che il margine dell'indicatore sia visualizzato. Scegliere **Opzioni** dal menu **Strumenti.** Nella pagina **Editor di** testo verificare che l'opzione **Margine indicatore** sia selezionata.
 
 4. Aprire un file di codice con commenti. Aggiungere la parola "todo" a una delle sezioni di commento.
 

@@ -1,5 +1,5 @@
 ---
-description: Determina che la funzione in corrispondenza dell'indirizzo di debug specificato viene eliminata.
+description: Determina che la funzione all'indirizzo di debug specificato viene eliminata.
 title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 995043c40c9b091e1fa483628ba71695fcdf52013ec6bcd438a68ef62b1fb0c9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4f5f6d764020f78823464d4d8e9784551411fcc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434126"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145081"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-Determina che la funzione in corrispondenza dell'indirizzo di debug specificato viene eliminata.
+Determina che la funzione all'indirizzo di debug specificato viene eliminata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ int IsFunctionDeleted(
 Se la funzione viene eliminata, restituisce `S_OK` . Se la funzione esiste, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(

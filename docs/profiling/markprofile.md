@@ -1,6 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
-description: Il metodo MarkProfile inserisce un contrassegno del profilo nel file con estensione vsp. La profilatura per il thread contenente la funzione MarkProfile deve essere impostata su ON affinché il contrassegno venga inserito.
+description: Il metodo MarkProfile inserisce un contrassegno del profilo nel file con estensione vsp. La profilatura per il thread contenente la funzione MarkProfile deve essere on per l'inserimento del contrassegno.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e66049ec5547913dad8df7256f2db3d2395fa0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8c1f089f96457c25bad703de40311000eaa65fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149676"
 ---
 # <a name="markprofile"></a>MarkProfile
 Il metodo `MarkProfile` inserisce un contrassegno del profilo nel file con estensione *vsp*. La profilatura per il thread che contiene la funzione `MarkProfile` deve essere impostata su ON affinché il contrassegno possa essere inserito.
@@ -49,7 +50,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="remarks"></a>Commenti
  Il valore del contrassegno viene inserito nel file con estensione *vsp* ogni volta che il codice viene eseguito se il thread che contiene la funzione MarkProfile è in corso di profilatura. È possibile chiamare MarkProfile più volte.
 
- I contrassegni del profilo hanno ambito globale. Ad esempio, è possibile usare un contrassegno del profilo inserito in un thread per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread in. file *VSP* .
+ I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno di profilo inserito in un thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread in . *File vsp.*
 
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).
 
@@ -62,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="function-information"></a>Informazioni sulla funzione
  *Intestazione: dichiarata in VSPerf.h*
 
- Libreria di importazione: *VSPerf. lib*
+ Libreria di importazione: *VSPerf.lib*
 
 ## <a name="example"></a>Esempio
  Il codice seguente illustra la funzione MarkProfile.
@@ -100,4 +101,4 @@ void ExerciseMarkProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio informazioni di riferimento sulle API del profiler (native)](../profiling/visual-studio-profiler-api-reference-native.md)

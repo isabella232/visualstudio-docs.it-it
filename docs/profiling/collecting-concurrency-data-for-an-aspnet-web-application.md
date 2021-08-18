@@ -1,6 +1,6 @@
 ---
-title: Riga di comando del profiler-ottenere i dati di concorrenza ASP.NET
-description: Vedere le informazioni di riferimento sul metodo di concorrenza di Visual Studio Strumenti di profilatura, che consente di raccogliere dati sui conflitti di risorse.
+title: Riga di comando del profiler - Ottenere ASP.NET di concorrenza
+description: Vedere le informazioni di riferimento sul metodo di concorrenza di Visual Studio Strumenti di profilatura, che consente di raccogliere i dati sui contenuti delle risorse.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,15 +11,16 @@ ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1973dcb992da8bfafc13fc897e2499b16d24bccc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f11ff21ad7e33008f85262ed489ea7e82ea59100
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868426"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142403"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Raccogliere dati di concorrenza per un'applicazione Web ASP.NET tramite la riga di comando del profiler
 Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di raccogliere i dati relativi ai conflitti di risorse.
@@ -28,7 +29,7 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|Connettere il profiler a un'applicazione ASP.NET in esecuzione|-   [Procedura: connessione del profiler a un'applicazione ASP.NET per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
+|Connettere il profiler a un'applicazione ASP.NET in esecuzione|-   [Procedura: Connettere il profiler a un'ASP.NET per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
 ## <a name="reference"></a>Riferimento
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)
@@ -47,11 +48,11 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|**Sottoporre a profilatura applicazioni client autonome**|-   [Raccogli dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
-|**Sottoporre a profilatura i servizi**|-   [Raccogli dati di concorrenza](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**Sottoporre a profilatura applicazioni client autonome**|-   [Raccogliere dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Sottoporre a profilatura i servizi**|-   [Raccogliere dati di concorrenza](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
 ### <a name="analyze-concurrency-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di concorrenza
-- [Visualizzazioni dei dati sui conflitti di risorse](../profiling/resource-contention-data-views.md)
+- [Visualizzazioni dei dati sui contenuti delle risorse](../profiling/resource-contention-data-views.md)
 
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)
 

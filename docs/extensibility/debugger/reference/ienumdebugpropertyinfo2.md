@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia enumera DEBUG_PROPERTY_INFO strutture.
+description: Questa interfaccia enumera DEBUG_PROPERTY_INFO strutture .
 title: IEnumDebugPropertyInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4616db107c42e38006d8e790b24adaf8f0e4acabef35088bcb5c28b09654509
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 83e3f094763b19b712273563ce1446f07b1c1efd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152744"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
-Questa interfaccia enumera [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture.
+Questa interfaccia enumera [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ IEnumDebugPropertyInfo2 : IUnknown
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Avanti](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Recupera un numero specificato di [strutture](../../../extensibility/debugger/reference/debug-property-info.md) DEBUG_PROPERTY_INFO in una sequenza di enumerazione.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Ignora un numero specificato di [strutture](../../../extensibility/debugger/reference/debug-property-info.md) DEBUG_PROPERTY_INFO in una sequenza di enumerazione.|
+|[Avanti](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|Recupera un numero specificato di strutture [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) in una sequenza di enumerazione.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|Ignora un numero specificato di strutture [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) in una sequenza di enumerazione.|
 |[Reimpostazione](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
 |[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|Ottiene il numero di [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- In generale, una proprietà è una gerarchia di informazioni che può includere un nome, un valore, un indirizzo e un tipo, nonché qualsiasi altra informazione appropriata per l'oggetto proprietà associato o per stack frame. Per [altri dettagli, vedere IDebugProperty2.](../../../extensibility/debugger/reference/idebugproperty2.md)
+ In generale, una proprietà è una gerarchia di informazioni che può includere un nome, un valore, un indirizzo e un tipo, nonché qualsiasi altra informazione appropriata per l'oggetto o l'oggetto stack frame. Per [altri dettagli, vedere IDebugProperty2.](../../../extensibility/debugger/reference/idebugproperty2.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

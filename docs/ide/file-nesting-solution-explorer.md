@@ -1,6 +1,6 @@
 ---
 title: Regole di annidamento in Esplora soluzioni
-description: Informazioni sulle regole di annidamento dei file Esplora soluzioni, i set di impostazioni e la personalizzazione.
+description: Informazioni su come Esplora soluzioni di annidamento dei file, i set di impostazioni e la personalizzazione.
 ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
@@ -10,12 +10,13 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jmartens
-ms.openlocfilehash: aa3ca640fed4e32c19defd925a49369890219035
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: c1b91bf55dfe56737464bf5b333b365f6a5bb882
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869453"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109305"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Annidamento file in Esplora soluzioni
 

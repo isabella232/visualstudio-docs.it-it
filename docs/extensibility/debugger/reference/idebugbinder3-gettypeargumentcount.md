@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5fb1d6e54252f2dd4caa05268aedac9e86da4d8276274782416772c85d39503f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e030b15e555785f2ca57c3dd91f55803e8665967
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434165"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072746"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 Questo metodo restituisce il numero di tipi di argomento associati a questo oggetto.

@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dcc9f12a65ad163acd07724da534039c772b385446f00b30dab627d441a42fc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7659d5ab851704e686bb7ed63bb4b10fccd57f46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121316864"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150599"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -35,7 +35,7 @@ I metodi alternativi sono i seguenti:
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Distribuzione di un processore di direttiva in un pacchetto VSIX
 
-È possibile aggiungere un processore di direttiva personalizzato a [Visual Studio Extension (VSIX).](../extensibility/starting-to-develop-visual-studio-extensions.md)
+È possibile aggiungere un processore di direttiva personalizzato a [un'estensione Visual Studio (VSIX).](../extensibility/starting-to-develop-visual-studio-extensions.md)
 
  È necessario assicurarsi che i due elementi seguenti siano contenuti nel file .vsix:
 
@@ -108,7 +108,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 2. Se si desidera installare il processore di direttiva in un altro computer, copiare il file .vsix nell'altro computer.
 
-3. Fare doppio clic sul file .vsix. Viene visualizzato Visual Studio programma di installazione dell'estensione.
+3. Fare doppio clic sul file .vsix. Verrà Visual Studio programma di installazione dell'estensione.
 
 4. Riavviare Visual Studio. Si sarà ora in grado di eseguire modelli di testo che contengono direttive che si riferiscono al processore di direttiva personalizzato. Ogni direttiva è nel seguente formato:
 
@@ -177,7 +177,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 4. Nel nuovo nodo, aggiungere valori stringa per Class e CodeBase o Assembly, sulla base delle tabelle seguenti.
 
-   1. Fare clic con il pulsante destro del mouse sul nodo creato, scegliere **Nuovo** e quindi fare clic su **Valore stringa**.
+   1. Fare clic con il pulsante destro del mouse sul nodo creato, scegliere **Nuovo** e quindi fare clic **su Valore stringa**.
 
    2. Modificare il nome del valore.
 

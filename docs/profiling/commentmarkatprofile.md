@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 17726150fc1fa963e54fe16baa244c392a691093a9afc5ce578fe7eba435ceb5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 59cdbe8bd3be23c2f356cb171449806cea5def87
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121257238"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107901"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Il `CommentMarkAtProfile` metodo inserisce un valore timestamp, un segno numerico e una stringa di commento nel file *con estensione vsp.* Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.

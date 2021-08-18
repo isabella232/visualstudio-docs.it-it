@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5acfcd50032c7f1f41a3733e73050aae1270d4e0f109dbb8a59229f1404f08f5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a8724b75e4360e8b7e4b097fa00f5f3ed112e735
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416586"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126791"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Consente [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] all'interfaccia utente di visualizzare il testo **all'interno della sezione Informazioni** sul trasporto della **finestra di dialogo** Associa a processo .

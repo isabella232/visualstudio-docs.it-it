@@ -1,6 +1,6 @@
 ---
 title: Periodo di elaborazione dell'interfaccia utente | Microsoft Docs
-description: Informazioni che i segmenti nella sequenza temporale sono associati ai tempi di blocco categorizzati come elaborazione dell'interfaccia utente.
+description: Informazioni sul fatto che i segmenti nella sequenza temporale sono associati a tempi di blocco classificati come elaborazione dell'interfaccia utente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 809af327fc2bb608647a76575736bd0e2b00c5b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 160200ebb40f99ce2f22086d5904995cc54e9a80
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922039"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141051"
 ---
 # <a name="ui-processing-time"></a>Periodo di elaborazione dell'interfaccia utente
 Questi segmenti nella sequenza temporale sono associati ai periodi di blocco categorizzati come Elaborazione interfaccia utente. Ciò implica che un thread stia distribuendo messaggi di Windows o eseguendo altre operazioni dell'interfaccia utente. Durante questo periodo, un thread è stato bloccato in un'API che il visualizzatore di concorrenza conteggia come Elaborazione interfaccia utente. Le interfacce API come `GetMessage()` e `MsgWaitForMultipleObjects()` rientrano in questo gruppo.

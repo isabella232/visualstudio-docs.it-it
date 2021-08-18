@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f6e4a351267c5cd26ad283ecdf6cc49cf2e8620707805dd0234c708ff9b698
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e4e439e945e60a2824b4a3c694dd048be248c757
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121430908"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151808"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
 

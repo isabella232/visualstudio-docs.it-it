@@ -1,21 +1,22 @@
 ---
 title: LineOff | Microsoft Docs
-description: Informazioni su come l'opzione LineOff di VSPerfCmd Disabilita la raccolta dei dati del numero di riga quando si usa VSPerfCmd per avviare l'applicazione.
+description: Informazioni su come l'opzione LineOff di VSPerfCmd disabilita la raccolta dei dati dei numeri di riga quando vsPerfCmd viene usato per avviare l'applicazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a141e713dd03f99db6ce47224c64236a0219cdd5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89b9217460e7f64fb085d674486583bf424e6b1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917905"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107433"
 ---
 # <a name="lineoff"></a>LineOff
 Per impostazione predefinita, il profiler raccoglie i dati dei numeri di riga del codice sorgente e i dati di offset dei numeri di riga quando si usa il metodo di campionamento per la profilatura. L'opzione **LineOff** di VSPerfCmd disabilita la raccolta dei dati dei numeri di riga quando VSPerfCmd viene usato per avviare l'applicazione. I dati di profilatura vengono raccolti a livello di funzione quando si specifica l'opzione **LineOff**.

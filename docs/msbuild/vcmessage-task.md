@@ -1,6 +1,6 @@
 ---
 title: Attività VCMessage | Microsoft Docs
-description: Informazioni su MSBuild'attività VCMessage per registrare messaggi di avviso ed errore durante una compilazione per i progetti C++.
+description: Informazioni su MSBuild'attività VCMessage per registrare messaggi di avviso e di errore durante una compilazione per progetti C++.
 ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0be84534352316aabf0272074f7e8c2c41ff6f7d4c6b313933c3b23e9e7a5c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 705298bf73bceda32ca82a9dc85f96816794d8e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397202"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108213"
 ---
 # <a name="vcmessage-task"></a>attività VCMessage
 

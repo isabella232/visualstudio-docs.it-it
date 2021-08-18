@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 9021722e450bd16edbf16dfde019aa91a873664940172ca68055cd03a99bf565
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ae501119b74300dea4397ccaaadbf13da99bbf6e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121426216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140622"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>Novità negli strumenti di profilatura di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -34,7 +34,7 @@ Per altre informazioni, vedere le [Note sulla versione per [!include[vs_dev15](.
 
 Lo strumento Utilizzo CPU dispone di [nuove visualizzazioni](../profiling/Beginners-Guide-to-Performance-Profiling.md) che aiutano a identificare le funzioni che possono causare problemi di prestazioni. La nuova visualizzazione **Chiamante/chiamato** consente di analizzare i costi delle chiamate di funzione effettuate da e verso una funzione selezionata.
 
-![Visualizzazione chiamante del chiamante degli strumenti di diagnostica](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
+![Visualizzazione chiamante chiamato degli strumenti di diagnostica](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
 ## <a name="see-also"></a>Vedi anche
 

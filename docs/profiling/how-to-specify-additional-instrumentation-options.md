@@ -1,6 +1,6 @@
 ---
 title: Specificare opzioni di strumentazione aggiuntive | Microsoft Docs
-description: Informazioni su come instrumentare i file binari usando l'IDE di Visual Studio o tramite gli strumenti da riga di comando.
+description: Informazioni su come instrumentare i file binari usando l'IDE Visual Studio o gli strumenti da riga di comando.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5652088b3b90c7dd9df067c81d8eb38fe348ec19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c62f001f2714a90b250f34e43cd3a582d1f5f099
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150131"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Procedura: Specificare opzioni di strumentazione aggiuntive
 
@@ -43,5 +44,5 @@ ms.locfileid: "99906872"
 
 ## <a name="see-also"></a>Vedi anche
 
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni [Profilo dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [Profilare dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

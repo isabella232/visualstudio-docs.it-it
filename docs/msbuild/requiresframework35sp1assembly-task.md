@@ -1,6 +1,6 @@
 ---
 title: Attività RequiresFramework35SP1Assembly | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività RequiresFramework35SP1Assembly per determinare se l'applicazione richiede .NET Framework 3,5 SP1.
+description: Informazioni su MSBuild usa l'attività RequiresFramework35SP1Assembly per determinare se l'applicazione richiede .NET Framework 3.5 SP1.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b435df9b028689ea6c0d1f2c61e7e8df8bb8bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77f57eb4b36fb4bf12088dd46dc457127b576098
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093669"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly (attività)
 
@@ -49,7 +50,7 @@ Determina se l'applicazione richiede .NET Framework 3.5 SP1.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="see-also"></a>Vedi anche
 

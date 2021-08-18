@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fb87be6aefda46033c13911be0d1781ceaa8999bf26d7111204cb4a9dd7fa0d1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5640984c0de325f1b2e699a3658f914f627b87a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268092"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083258"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procedura: Copiare dati e formattazione tra fogli di lavoro a livello di codice
   È possibile copiare dati da un intervallo di un foglio in tutti gli altri fogli di una cartella di lavoro usando il <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metodo . Specificare un intervallo e se copiare i dati, la formattazione o entrambi.

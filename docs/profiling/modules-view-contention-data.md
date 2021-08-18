@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati sui conflitti | Microsoft Docs'
-description: Informazioni su come la visualizzazione moduli dei dati sui conflitti Visualizza i dati di concorrenza raggruppati in base ai moduli campionati nei dati di profilatura.
+description: Informazioni sul modo in cui la visualizzazione Moduli dei dati sui contenuti visualizza i dati di concorrenza raggruppati in base ai moduli campionati nei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b3a73cec5f05072f0a99940b82a362ccb8e1edde
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 556e7becfd87cd9ffd9a47737cee1330d93413b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969269"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076412"
 ---
 # <a name="modules-view---contention-data"></a>Visualizzazione Moduli: dati sui conflitti
 Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati sulla concorrenza raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo in cui si sono verificati gli eventi di conflitto sono elencate nel nodo del modulo.
@@ -37,7 +38,7 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
 |**Conflitti inclusivi**|- Per una funzione, il numero di volte in cui l'esecuzione di questa funzione o di una funzione chiamata da questa è stata bloccata.<br />- Per un modulo, il numero di conflitti in cui almeno una funzione da questo modulo era nello stack.<br />- Per una riga o un'istruzione, il numero di volte per cui è stata bloccata l'esecuzione della riga o dell'istruzione.|
 |**% conflitti inclusivi**|- Per una funzione o un modulo, la percentuale di tutti i campioni nell'esecuzione della profilatura che costituivano campioni esclusivi di questa funzione o di questo modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale era in esecuzione la riga o l'istruzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|
 |**Percorso modulo**|Percorso del modulo che contiene il modulo, la funzione, la riga o il puntatore all'istruzione.|
 |**Nome**|Nome del modulo o della funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
@@ -45,7 +46,7 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Moduli](../profiling/modules-view.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)

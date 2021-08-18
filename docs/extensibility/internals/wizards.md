@@ -1,6 +1,6 @@
 ---
 title: Procedure guidate | Microsoft Docs
-description: Informazioni su come elencare la procedura guidata tra le procedure guidate e i modelli disponibili Visual Studio e sui requisiti che la procedura guidata deve soddisfare nell'IDE.
+description: Informazioni su come elencare la procedura guidata tra le procedure guidate e i modelli disponibili in Visual Studio e sui requisiti che la procedura guidata deve soddisfare nell'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,21 +13,21 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3dfd9aa95b44fff288f13cf106366da94f73f845d9bb2ad4626830d8b6fe7b02
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c652e67db103350a9e3fa92e08212422caae424
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375418"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152328"
 ---
 # <a name="wizards"></a>Procedure guidate
-Dopo aver creato una procedura guidata, in genere si vuole aggiungerla all'ambiente di sviluppo integrato (IDE) in modo che altri utenti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possano usarla. La procedura guidata aggiunta viene quindi visualizzata nelle **finestre di dialogo Aggiungi nuovo Project** o Aggiungi **nuovo** elemento. Per visualizzare le finestre di  dialogo Aggiungi nuovo **Project** o Aggiungi nuovo elemento, fare clic con il pulsante destro del mouse su una soluzione aperta **in Esplora soluzioni**, scegliere Aggiungi **e** quindi fare clic su Nuovo **Project** o **Nuovo elemento**.
+Dopo aver creato una procedura guidata, in genere si vuole aggiungerla all'ambiente di sviluppo integrato (IDE) in modo che altri utenti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possano usarla. La procedura guidata aggiunta viene quindi visualizzata nelle **finestre di dialogo Aggiungi Project** nuovo elemento **o** Aggiungi nuovo elemento . Per visualizzare le finestre di  dialogo **Aggiungi nuovo Project** o Aggiungi nuovo elemento , fare clic con il pulsante destro del mouse su una soluzione aperta in **Esplora soluzioni**, scegliere Aggiungi **e** quindi fare clic su **Nuovo Project** o **Nuovo elemento**.
 
- Le procedure guidate possono essere implementate in per consentire agli utenti di selezionare da una visualizzazione albero dei valori disponibili quando aprono la finestra di dialogo Aggiungi nuovo Project o Aggiungi nuovo elemento oppure quando fanno clic con il pulsante destro del mouse su un elemento [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in **Esplora soluzioni**.  
+ Le procedure guidate possono essere implementate in per consentire agli utenti di selezionare da una visualizzazione albero dei valori disponibili quando aprono la finestra di dialogo Aggiungi nuovo Project o Aggiungi nuovo elemento oppure quando fanno clic con il pulsante destro del mouse su un elemento [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **in Esplora soluzioni**.  
 
- Nella procedura guidata è possibile specificare l'opzione per la localizzazione del nome di un nuovo progetto o di un nuovo progetto ed è possibile determinare l'icona che verrà visualizzata dagli utenti quando selezionano la procedura guidata. È anche possibile controllare l'ordine di visualizzazione dei nuovi elementi rispetto ad altri elementi disponibili. Gli elementi non devono essere organizzati in ordine alfabetico.
+ Nella procedura guidata è possibile specificare la possibilità di localizzazione del nome di un nuovo progetto o di un nuovo progetto e di determinare l'icona che verrà visualizzata dagli utenti quando selezionano la procedura guidata. È anche possibile controllare l'ordine in cui vengono visualizzati i nuovi elementi rispetto ad altri elementi disponibili. Gli elementi non devono essere organizzati in ordine alfabetico.
 
- È anche possibile specificare una procedura guidata che viene avviata in modo diverso, in base ai parametri personalizzati passati alla procedura guidata quando viene aperta.
+ È anche possibile specificare una procedura guidata che viene avviata in modo diverso, in base ai parametri personalizzati passati alla procedura guidata all'apertura.
 
  Negli argomenti di questa sezione vengono illustrati i file implementati per fare in modo che le finestre di dialogo Aggiungi nuovo Project e Aggiungi nuovo elemento elenchino la procedura guidata tra le procedure guidate e i modelli disponibili e i requisiti che la procedura guidata deve soddisfare per funzionare correttamente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  nell'IDE. 
 
@@ -38,7 +38,7 @@ Dopo aver creato una procedura guidata, in genere si vuole aggiungerla all'ambie
 
 - [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)
 
- Viene illustrato come l'IDE avvia le procedure guidate ed elenca le tre parti del file vsz.
+ Viene illustrato come l'IDE avvia le procedure guidate ed elenca le tre parti del file con estensione vsz.
 
 - [Interfaccia della procedura guidata (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)
 
@@ -46,11 +46,11 @@ Dopo aver creato una procedura guidata, in genere si vuole aggiungerla all'ambie
 
 - [Parametri di contesto](../../extensibility/internals/context-parameters.md)
 
- Illustra come vengono implementate le procedure guidate e cosa accade quando l'IDE passa parametri di contesto all'implementazione.
+ Viene illustrato come vengono implementate le procedure guidate e cosa accade quando l'IDE passa parametri di contesto all'implementazione.
 
 - [Parametri personalizzati](../../extensibility/internals/custom-parameters.md)
 
- Viene illustrato come usare i parametri personalizzati per controllare il funzionamento della procedura guidata dopo l'avvio della procedura guidata.
+ Viene illustrato come utilizzare parametri personalizzati per controllare il funzionamento della procedura guidata dopo l'avvio della procedura guidata.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Project Types](../../extensibility/internals/project-types.md) (Tipi di progetto)

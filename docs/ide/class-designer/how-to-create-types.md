@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: creare tipi utilizzando Progettazione classi'
-description: Informazioni su come progettare nuovi tipi per i progetti C# e Visual Basic creandoli in un diagramma classi.
+description: Informazioni su come progettare nuovi tipi per C# Visual Basic progetti creandoli in un diagramma classi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,22 +17,23 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6102d5252564834f1de7c533e763d7b08a8f9fb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51379952830a518b6a5f57cfed75d632f3c3f0c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880541"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102025"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare tipi usando Progettazione classi
 
 Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramma di classi. Per visualizzare i tipi esistenti, vedere [Procedura : Visualizzare i dati esistenti](how-to-view-existing-types.md).
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a> Crea un nuovo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Creare un nuovo tipo
 
-1. Nella **casella degli strumenti**, sotto **Progettazione classi**, trascinare uno di questi in un diagramma classi:
+1. Nella casella **degli** strumenti, **in Progettazione classi**, trascinare uno di questi elementi in un diagramma classi:
 
     - **Classe** o **Classe astratta**
 

@@ -6,14 +6,15 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35850293b1ef739506fe6848e000396f6bacf1d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6e6dabf79cdd3c1774f016991098a1bde337568
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852297"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151535"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introdurre una variabile locale in Visual Studiio
 
@@ -44,10 +45,10 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sull'icona ![Screenshot dell'icona del cacciavite visualizzata nel margine sinistro del menu azioni rapide e refactoring.](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.
+      - Fare clic sull'icona ![Screenshot dell'icona del cacciavite visualizzata nel margine sinistro del menu Azioni rapide e refactoring.](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.
 
    ![Anteprima di Introduce l'elemento locale](media/local-preview-cs.png)
 
@@ -72,4 +73,4 @@ Questa generazione di codice si applica a:
 ## <a name="see-also"></a>Vedi anche
 
 - [Generazione codice](../code-generation-in-visual-studio.md)
-- [Anteprima modifiche](../../ide/preview-changes.md)
+- [Anteprima delle modifiche](../../ide/preview-changes.md)

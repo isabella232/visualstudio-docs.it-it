@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c632f0de62f931b68b56c321e846eca9265f50b9c19f0704da7fee2b7bd8a8ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d2bca5417403df2479d5de22aeaef4480feb9331
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126973"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 Ottiene il modulo che viene caricato o scaricato.

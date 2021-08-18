@@ -18,12 +18,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1438014d593e9a2772449856ba67a90b84d99ce2c607ffb75594361dc05be4d7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f56d93ff5ff58122d8a1db88d22183f3dd85b978
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332716"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150118"
 ---
 # <a name="how-to-set-the-current-session"></a>Procedura: Impostare la sessione corrente
 

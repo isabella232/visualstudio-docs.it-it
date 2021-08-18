@@ -25,16 +25,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cef675b46b32e6465f7f0256b0e60407742215852dc13ce27ff7354db0044bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c0b371f4aceef5baadd7a00738d885974b88c584
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143131"
 ---
 # <a name="msbuild-conditional-constructs"></a>Costrutti condizionali di MSBuild
 
-MSBuild fornisce un meccanismo per l'elaborazione di uno o con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [Otherwise.](../msbuild/otherwise-element-msbuild.md)
+MSBuild un meccanismo per l'elaborazione con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [Otherwise.](../msbuild/otherwise-element-msbuild.md)
 
 ## <a name="use-the-choose-element"></a>Usare l'elemento Choose
 
@@ -82,7 +82,7 @@ MSBuild fornisce un meccanismo per l'elaborazione di uno o con gli elementi [Cho
 </Project>
 ```
 
-In questo esempio viene usata una condizione su una costante `DEFINED_CONSTANT` del compilatore. Questi elementi sono inclusi nella `DefinedConstants` proprietà . L'espressione regolare viene usata per trovare la corrispondenza con la costante esatta in un elenco delimitato da punto e virgola.
+In questo esempio viene usata una condizione per una costante `DEFINED_CONSTANT` del compilatore. Questi elementi sono inclusi nella `DefinedConstants` proprietà . L'espressione regolare viene usata per trovare la corrispondenza con la costante esatta in un elenco separato da punti e virgola.
 
 ```xml
 <Choose>
@@ -96,7 +96,7 @@ In questo esempio viene usata una condizione su una costante `DEFINED_CONSTANT` 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [Scegliere l'elemento (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

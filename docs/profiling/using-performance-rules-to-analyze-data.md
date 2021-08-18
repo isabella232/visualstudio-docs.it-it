@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ad220b0e674510824c569523b437e2cf03cb716e6a3921e1f0ad41d6b6374ba
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1366d4e73499c1ff3cd7e6424197b5ebb7005b99
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270146"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140853"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Usare le regole per le prestazioni per analizzare dati
 Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] segnalano i problemi che possono rallentare l'esecuzione di un'applicazione sottoposta a profilatura. Gli avvisi possono anche indicare che potrebbe essere necessario modificare i metodi di raccolta per raccogliere dati più utili. Gli avvisi di prestazioni sono generati automaticamente in una sessione di profilatura. Gli avvisi vengono visualizzati nella finestra **Elenco errori** quando viene aperto un file di dati di profilatura in Visual Studio. Dalla finestra **Elenco errori** è possibile individuare il codice sorgente del problema e visualizzare informazioni dettagliate sull'errore, ad esempio informazioni su come risolvere il problema. È inoltre possibile disabilitare gli avvisi a cui non si è interessati.
@@ -29,7 +29,7 @@ Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](..
 
  Fornisce informazioni su come aprire la finestra **Elenco errori** per visualizzare gli avvisi di prestazioni del profiler.
 
-- [Procedura: Configurare le regole di prestazioni](../profiling/how-to-configure-performance-rules.md)
+- [Procedura: Configurare le regole per le prestazioni](../profiling/how-to-configure-performance-rules.md)
 
  Fornisce informazioni su come attivare o disattivare i singoli avvisi di prestazioni.
 

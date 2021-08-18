@@ -1,6 +1,6 @@
 ---
 title: -Log (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando devenv log per registrare tutte le attività nel file di log per la risoluzione dei problemi.
+description: Informazioni su come usare l'opzione della riga di comando Devenv log per registrare tutte le attività nel file di log per la risoluzione dei problemi.
 ms.custom: SEO-VS-2020
 ms.date: 12/12/2018
 ms.topic: reference
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 20972061208021ceea189c46e8e299a488748532e40eeed2544f28db13887efd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 244ff78a82838bcd2d65766680fe86c059cd43d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121357141"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151379"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
