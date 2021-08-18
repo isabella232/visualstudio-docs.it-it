@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8009e7541fa848db1d1b0019eb24743bc0aca0c1e3d5bb22cb1b463aa260c3cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e8135bb76d8e3c6ae21e2287966b8478f9db6c07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453895"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105210"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Come è possibile utilizzare le finestre debugger mentre si esegue il debug di un programma in primo piano?
 ## <a name="problem-description"></a>Descrizione del problema

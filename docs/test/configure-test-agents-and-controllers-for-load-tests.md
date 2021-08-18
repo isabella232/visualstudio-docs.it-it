@@ -1,6 +1,6 @@
 ---
 title: Configurare agenti di test/controller di test per i test di carico
-description: Informazioni su Visual Studio possibile creare un carico simulato usando macchine virtuali o fisiche per generare un carico maggiore di quello che un singolo computer può generare da solo.
+description: Informazioni su Visual Studio possibile creare un carico simulato usando macchine virtuali o fisiche per generare più carico di quanto un singolo computer possa generare da solo.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1f789b8e5816b072b815cb59bae6c1cd377e0d055db53b8a663f6b4d5c2f7266
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7c9a85e89e878076302796145c7669e8d5cdd83e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425049"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106666"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Panoramica di agenti di test e test controller per i test di carico
 

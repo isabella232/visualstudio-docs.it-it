@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fba8b77d946d501dfd444bc1a097c47b59b92f7f1c9d32163828bdca0f4a1367
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 35179a9cc65393f953f63464038f33d2a84e756b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386927"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048427"
 ---
 # <a name="troubleshoot-broken-references"></a>Risolvere i problemi relativi ai riferimenti interrotti
 
@@ -46,7 +46,7 @@ Di seguito sono elencate le soluzioni a questi problemi.
 
 Se i progetti sono condivisi e si trovano in computer diversi, è possibile che alcuni riferimenti non vengano individuati quando un componente viene posizionato in una directory diversa in ogni computer. I riferimenti vengono archiviati con il nome del file del componente( ad esempio, *MyComponent*). Quando un riferimento viene aggiunto a un progetto, il percorso della cartella del file del componente (ad esempio, *C:\MyComponents)* viene aggiunto alla proprietà del progetto **ReferencePath.**
 
-Quando si apre il progetto, i file dei componenti a cui viene fatto riferimento vengono cercati nelle directory del percorso dei riferimenti. Se il progetto viene aperto in un computer che archivia il componente in una directory diversa, ad esempio *D:\MyComponents*, il riferimento non viene trovato e viene visualizzato un errore nella **Elenco attività**.
+Quando si apre il progetto, i file dei componenti a cui viene fatto riferimento vengono cercati nelle directory del percorso dei riferimenti. Se il progetto viene aperto in un computer in cui è archiviato il componente in una directory diversa, ad esempio *D:\MyComponents*, il riferimento non viene trovato e viene visualizzato un **errore nel Elenco attività**.
 
 Per risolvere questo problema, è possibile eliminare il riferimento interrotto e quindi sostituirlo usando la finestra **di dialogo** Aggiungi riferimento. Un'altra soluzione consiste nell'uso dell'elemento **ReferencePath** nelle pagine delle proprietà del progetto e nella modifica delle cartelle visualizzate nell'elenco in modo che puntino ai percorsi corretti. La proprietà **ReferencePath** viene mantenuta per ogni utente in ogni computer. Di conseguenza, la modifica del percorso dei riferimenti non ha alcun effetto sugli altri utenti del progetto.
 

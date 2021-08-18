@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee0846d35eb6c7f8349cec5c0f409e95e30a46b665900a5beba39c980f3b0b92
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 21c1486855dba6906937f95f10cae2f323ff0383
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414714"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078791"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Applicazione delle impostazioni tra più connessioni di progetto
 Un plug-in del controllo del codice sorgente compilato usando l'API plug-in del controllo del codice sorgente versione 1.2 può usare un'operazione batch per eseguire la stessa operazione di controllo del codice sorgente in più progetti o più contesti di connessione. I batch possono essere usati per eliminare dall'esperienza utente le finestre di dialogo ridondanti per ogni progetto.
@@ -26,7 +26,7 @@ Un plug-in del controllo del codice sorgente compilato usando l'API plug-in del 
  Se un utente seleziona più elementi che appartengono a più di una connessione in un plug-in del controllo del codice sorgente compilato usando l'API plug-in del controllo del codice sorgente versione 1.1 (ad esempio, due progetti Web in computer con condivisione file diversi) e li esemplifica, l'utente visualizza ripetutamente la stessa finestra di dialogo. Questo scenario si verifica anche  se l'utente fa clic sulla casella di controllo Applica a tutti nella finestra di dialogo, perché l'IDE reimposta il proprio stato per ogni contesto di connessione.
 
 ## <a name="new-capability-flag"></a>Nuovo flag di funzionalità
- La funzione imposta il flag per indicare che è in corso `SccBeginBatch` `SCC_CAP_BATCH` un'operazione batch.
+ La `SccBeginBatch` funzione imposta il flag per indicare che è in corso `SCC_CAP_BATCH` un'operazione batch.
 
 ## <a name="new-functions"></a>Nuove funzioni
 Le nuove funzioni seguenti supportano l'operazione batch:

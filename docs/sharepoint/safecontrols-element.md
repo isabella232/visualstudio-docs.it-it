@@ -1,6 +1,6 @@
 ---
-title: Elementi SafeControls | Microsoft Docs
-description: Ottenere informazioni sull'elemento SafeControls, che contiene una raccolta di controlli ASPX o web part contrassegnati come sicuri per l'accesso SharePoint pagina ASPX del sito.
+title: Elemento SafeControls | Microsoft Docs
+description: Ottenere informazioni sull'elemento SafeControls, che contiene una raccolta di controlli ASPX o web part contrassegnati come sicuri per l'accesso SharePoint pagina ASPX di un sito web.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,15 +15,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5348bdf4b2a4cc0a7c7c161795ae3caca34ab82b37daf65c1415613631f92d97
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 063da0761f15c1a3b39468a810fd5d3055cece62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092787"
 ---
 # <a name="safecontrols-element"></a>SafeControls (elemento)
-  Raccolta di controlli ASPX e Web part designati come sicuri per qualsiasi utente di accedere a qualsiasi pagina ASPX nel SharePoint sito.
+  Raccolta di controlli ASPX e Web part designati come sicuri per l'accesso da parte di qualsiasi utente in qualsiasi pagina ASPX del SharePoint sito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ ms.locfileid: "121409306"
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[SafeControl](../sharepoint/safecontrol-element.md)|Elemento facoltativo.<br /><br /> Rappresenta un controllo ASPX o una web part designata come sicura per l'accesso di qualsiasi utente in qualsiasi pagina ASPX SharePoint sito.|
+|[SafeControl](../sharepoint/safecontrol-element.md)|Elemento facoltativo.<br /><br /> Rappresenta un controllo ASPX o una web part designata come sicura per l'accesso da parte di qualsiasi utente in qualsiasi pagina ASPX del SharePoint sito.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -64,5 +64,5 @@ ms.locfileid: "121409306"
 |**Può essere vuoto**|No|
 
 ## <a name="see-also"></a>Vedere anche
-- [SharePoint riferimento allo schema dell'elemento di progetto](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [SharePoint sullo schema dell'elemento di progetto](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi del progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

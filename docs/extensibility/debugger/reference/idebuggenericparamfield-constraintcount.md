@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f49b98fe463977790230201a146a79375f005321aa353d9a2a59e9ac6dd7296
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 66f559b6c4e4967fdf1e649b5116780728b01dbc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292442"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138120"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
 Restituisce il numero di vincoli associati a questo parametro generico.

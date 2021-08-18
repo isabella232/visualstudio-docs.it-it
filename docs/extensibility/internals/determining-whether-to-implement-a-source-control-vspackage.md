@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a833abb38b42ff136532159996b438bf7466a4d6fb3eec10dcdab14eda3e8c9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5e16803a570c845e9283debcfb9e8d388b1cdd20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124659"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinare se implementare un VSPackage del controllo del codice sorgente
 

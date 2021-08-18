@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: a5ea7e231025a70eec3f54b804a58039df0dded14340ad0c4887005b908c343a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 30197480c1108340a9b27c5fc28f874699defa9d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121406619"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139790"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script di Windows PowerShell)
 ## <a name="syntax"></a>Sintassi
@@ -122,4 +122,4 @@ Il file di configurazione JSON specifica i dettagli degli elementi da distribuir
 È possibile modificare il file di configurazione JSON per cambiare gli elementi da distribuire. La sezione webSite è obbligatoria, ma la sezione del database è facoltativa.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per altre informazioni, vedere [Publish-WebApplicationVM (Windows PowerShell script).](vs-azure-tools-publish-webapplicationvm.md)
+Per altre informazioni, vedere [Publish-WebApplicationVM (Windows PowerShell script)](vs-azure-tools-publish-webapplicationvm.md).

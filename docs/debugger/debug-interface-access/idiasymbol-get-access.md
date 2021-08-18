@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eab39b6b1adbf13975b647c374b6993b74ffe11011239cf1db2021325992693
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 71ed7ca5018e69541d254750f5e7c4956cded569
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121264210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081325"
 ---
 # <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 Recupera il modificatore di accesso di un membro di classe.

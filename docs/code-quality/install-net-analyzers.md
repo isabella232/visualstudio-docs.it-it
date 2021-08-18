@@ -1,7 +1,7 @@
 ---
-title: Abilitare o installare gli analizzatori .NET di terze parti
+title: Abilitare o installare analizzatori .NET di terze parti
 ms.date: 08/03/2018
-description: Informazioni su come abilitare gli analizzatori .NET di terze parti da .NET SDK o installare questi analizzatori come pacchetto NuGet.
+description: Informazioni su come abilitare analizzatori .NET di terze parti da .NET SDK o installare questi analizzatori come NuGet pacchetto.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,29 +9,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 368fd5bc9c8b7e2659c86b6e3dc69a609da37617
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 25d98bfd0ddbc691c6fbc1ce22a129f9c6cfa692
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144663"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091279"
 ---
-# <a name="enable-or-install-first-party-net-analyzers"></a>Abilitare o installare gli analizzatori .NET di terze parti
+# <a name="enable-or-install-first-party-net-analyzers"></a>Abilitare o installare analizzatori .NET di terze parti
 
 ## <a name="overview"></a>Panoramica
 
-Gli analizzatori della piattaforma del compilatore .NET (Roslyn) ispezionano il codice C# o Visual Basic per individuare problemi di stile e di qualità del codice. Gli analizzatori .NET della prima entità sono **indipendenti dalla piattaforma di destinazione**. Ovvero non è necessario che il progetto sia destinato a una piattaforma .NET specifica. Gli analizzatori funzionano per i progetti destinati a e per le `net5.0` versioni precedenti di .NET, ad esempio `netcoreapp` , `netstandard` e `net472` .
+Gli analizzatori della piattaforma del compilatore .NET (Roslyn) ispezionano il codice C# o Visual Basic per individuare problemi di stile e di qualità del codice. Gli analizzatori .NET di prima parte sono indipendenti dalla **piattaforma di destinazione.** Ciò significa che il progetto non deve avere come destinazione una piattaforma .NET specifica. Gli analizzatori funzionano per i progetti `net5.0` che hanno come destinazione e versioni precedenti di .NET, ad esempio `netcoreapp` , e `netstandard` `net472` .
 
-È possibile abilitare o installare gli analizzatori .NET della prima entità in uno dei modi seguenti:
+È possibile abilitare o installare gli analizzatori .NET di prima parte in uno dei modi seguenti:
 
-- **Abilita da .NET SDK**: a partire da Visual Studio 2019 16,8 e .NET 5,0, questi analizzatori sono [inclusi in .NET SDK](/dotnet/fundamentals/code-analysis/overview). Per impostazione predefinita, l'analisi è abilitata per i progetti destinati a .NET 5,0 o versione successiva. È possibile abilitare l'analisi del codice per i progetti destinati a versioni precedenti di .NET impostando la proprietà [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) di MSBuild su `true` . È anche possibile disabilitare l'analisi del codice per il progetto impostando `EnableNETAnalyzers` su `false` .
+- **Abilitare da .NET SDK:** a partire da Visual Studio 2019 16.8 e .NET 5.0, questi analizzatori sono inclusi in [.NET SDK.](/dotnet/fundamentals/code-analysis/overview) L'analisi è abilitata per impostazione predefinita per i progetti che hanno come destinazione .NET 5.0 o versione successiva. È possibile abilitare l'analisi del codice nei progetti che hanno come destinazione versioni precedenti di .NET impostando la proprietà [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) di MSBUILD su `true` . È anche possibile disabilitare l'analisi del codice per il progetto impostando `EnableNETAnalyzers` su `false` .
 
-- **Installare come pacchetto NuGet**: se non si vuole passare a .NET 5 + SDK o se si preferisce un modello basato su pacchetti NuGet, gli analizzatori sono anche disponibili nel `Microsoft.CodeAnalysis.NetAnalyzers` [pacchetto nuget](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) in Visual Studio 2019.  Per gli aggiornamenti delle versioni su richiesta potrebbe essere preferibile un modello basato su pacchetti. Se si è in Visual Studio 2017, installare invece la `2.9.x` versione più recente del `Microsoft.CodeAnalysis.FxCopAnalyzers` [pacchetto NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) .
+- Installa come pacchetto **NuGet:** se non si vuole passare a .NET 5+ SDK o se si preferisce un modello basato su pacchetti di NuGet, gli analizzatori sono disponibili anche nel pacchetto `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) in Visual Studio 2019.  Si potrebbe preferire un modello basato su pacchetto per gli aggiornamenti delle versioni su richiesta. Se si è in Visual Studio 2017, installare invece la versione più recente `2.9.x` `Microsoft.CodeAnalysis.FxCopAnalyzers` [del NuGet versione.](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
 
 > [!NOTE]
-> È consigliabile abilitare gli analizzatori di .NET SDK anziché installare il `Microsoft.CodeAnalysis.NetAnalyzers` [pacchetto NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), quando possibile. L'abilitazione degli analizzatori di .NET SDK consente di ottenere automaticamente le correzioni di bug e i nuovi analizzatori dell'analizzatore appena si aggiorna l'SDK. Nel modello NuGet è necessario aggiornare il pacchetto NuGet ogni volta che si desiderano le correzioni di bug più recenti. Il pacchetto NuGet viene aggiornato con maggiore frequenza.
+> È consigliabile abilitare gli analizzatori da .NET SDK anziché installare il pacchetto `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), quando possibile. L'abilitazione degli analizzatori da .NET SDK garantisce di ottenere automaticamente le correzioni di bug e i nuovi analizzatori non appena si aggiorna l'SDK. Nel modello NuGet è necessario aggiornare il pacchetto NuGet ogni volta che si desiderano le correzioni di bug più recenti. Il NuGet viene aggiornato più frequentemente.
 
 ## <a name="see-also"></a>Vedi anche
 

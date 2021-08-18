@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Controllare l'ortografia nei documenti a livello di codice"
+title: 'Procedura: Eseguire il controllo ortografico nei documenti a livello di codice'
 description: Per controllare l'ortografia in un documento a livello di codice, è possibile usare il metodo CheckSpelling.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -16,14 +16,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a2f03c61a1d35e9c66e1e660a3d2fdb56c2bac9ba6f25cd41cd795d2f172ee51
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 76c8e5f235865e13252b19c7cafdb261d24cea68
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268079"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083297"
 ---
-# <a name="how-to-programmatically-check-spelling-in-documents"></a>Procedura: Controllare l'ortografia nei documenti a livello di codice
+# <a name="how-to-programmatically-check-spelling-in-documents"></a>Procedura: Eseguire il controllo ortografico nei documenti a livello di codice
   Per controllare l'ortografia in un documento, usare il <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> metodo . Questo metodo restituisce un valore booleano che indica se il parametro fornito è stato digitato correttamente.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -37,4 +37,4 @@ ms.locfileid: "121268079"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

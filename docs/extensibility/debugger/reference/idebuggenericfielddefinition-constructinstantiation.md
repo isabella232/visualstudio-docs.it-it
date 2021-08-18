@@ -1,6 +1,6 @@
 ---
-description: Costruisce un'istanza di campo in base a una matrice di argomenti di tipo.
-title: 'IDebugGenericFieldDefinition:: ConstructInstantiation | Microsoft Docs'
+description: Costruisce un'istanza del campo in base a una matrice di argomenti di tipo.
+title: IDebugGenericFieldDefinition::ConstructInstantiation | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4565077357678725a6601ac14c48cfce21ec9101
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b6047737d7b4aeee9d1ec74e4fe1fea57b1722ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063435"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096154"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-Costruisce un'istanza di campo in base a una matrice di argomenti di tipo.
+Costruisce un'istanza del campo in base a una matrice di argomenti di tipo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +46,13 @@ int ConstructInstantiation(
 
 ## <a name="parameters"></a>Parametri
 `cArgs`\
-in Numero di argomenti nella `ppArgs` matrice.
+[in] Numero di argomenti nella `ppArgs` matrice.
 
 `ppArgs`\
-in Matrice che contiene gli argomenti di tipo. Gli argomenti di tipo devono essere tipi chiusi (generics non generici o con istanze complete).
+[in] Matrice contenente gli argomenti di tipo. Gli argomenti di tipo devono essere tipi chiusi (generics non generici o di cui è stata creata un'istanza completa).
 
 `ppConstructedField`\
-out Restituisce l'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il nuovo campo.
+[out] Restituisce [l'interfaccia IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il nuovo campo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

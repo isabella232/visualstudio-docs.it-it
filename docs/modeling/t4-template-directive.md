@@ -1,20 +1,21 @@
 ---
 title: Direttiva template T4
-description: Si apprenderà che Visual Studio modello di testo T4 inizia in genere con una direttiva di modello che specifica come deve essere elaborato il modello.
+description: Si apprenderà che Visual Studio modello di testo T4 inizia in genere con una direttiva del modello, che specifica come deve essere elaborato il modello.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 622a6392df2608048a3ac24fda0f4dffc8e43dd4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: cc13b9f7e9b063de3fb0c8b12157cba87c4bb8f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386137"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150586"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
@@ -98,7 +99,7 @@ Se si imposta il valore di questo attributo su `true`, viene aggiunta una propri
 
 Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile ai modelli in fase di [progettazione,](../modeling/design-time-code-generation-by-using-t4-text-templates.md)ma non [ai modelli in fase di esecuzione.](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
-Quando è e si usa Visual Studio, è possibile eseguire `hostspecific` `true` il cast a `this.Host` IServiceProvider per accedere Visual Studio funzionalità. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
+Quando è e si usa Visual Studio, è possibile eseguire `hostspecific` `true` il cast a `this.Host` IServiceProvider per accedere Visual Studio funzionalità. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -134,9 +135,9 @@ Valori validi:
 
 `VB`
 
-`language`L'attributo specifica il linguaggio ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o ) da utilizzare per il codice [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] sorgente nei blocchi di istruzioni e espressioni. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
+`language`L'attributo specifica il linguaggio ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o ) da usare per il codice [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] sorgente nei blocchi di istruzioni e espressioni. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
 
-Ad esempio:
+Esempio:
 
 ```vb
 <#@ template language="VB" #>
@@ -158,7 +159,7 @@ Squares of numbers:
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Ereditarietà in un modello di testo (pre-elaborato) della fase di esecuzione
 
-È possibile utilizzare l'ereditarietà tra i modelli di testo della fase di esecuzione per creare un modello di base che disponga di molte varianti derivate. I modelli di run-time sono quelli con la **proprietà Strumento** personalizzato impostata su **TextTemplatingFilePreprocessor**. Un modello della fase di esecuzione genera codice che è possibile chiamare nell'applicazione per creare il testo definito nel modello. Per altre informazioni, vedere Generazione di testo in fase [di esecuzione con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
+È possibile utilizzare l'ereditarietà tra i modelli di testo della fase di esecuzione per creare un modello di base che disponga di molte varianti derivate. I modelli di run-time sono quelli con la **proprietà Strumento** personalizzato impostata su **TextTemplatingFilePreprocessor.** Un modello della fase di esecuzione genera codice che è possibile chiamare nell'applicazione per creare il testo definito nel modello. Per altre informazioni, vedere Generazione di testo in fase [di esecuzione con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
 Se non si specifica un attributo `inherits`, una classe di base e una classe derivata vengono generate dal modello di testo. Quando si specifica l'attributo `inherits`, viene generata solo la classe derivata. È possibile scrivere manualmente una classe di base, ma deve fornire i metodi utilizzati dalla classe derivata.
 
@@ -253,7 +254,7 @@ Valori validi:
 
 Impostare questo attributo su false rimuove i tag che identificano i numeri di riga nel codice generato. Ciò significa che il compilatore segnalerà gli errori utilizzando i numeri di riga del codice generato. Ciò rende disponibili più opzioni di debug, infatti è possibile scegliere di eseguire il debug del modello di testo o del codice generato.
 
-Questo attributo può essere utile anche se i nomi di file assoluti nei pragma causano unioni distratte nel controllo del codice sorgente.
+Questo attributo può essere utile anche se i nomi file assoluti nei pragma causano unioni distratte nel controllo del codice sorgente.
 
 ## <a name="visibility-attribute"></a>Attributo di visibilità
 

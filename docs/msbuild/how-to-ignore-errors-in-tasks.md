@@ -12,12 +12,12 @@ author: ghogen
 ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
-ms.openlocfilehash: 3f40805c7798fbd4e93a0467ef6137d2ea0956d481821db25efb475a41e1a149
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1e63d6e35714947010243d06c2b0e8ba7e4237c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397657"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108746"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedura: Ignorare gli errori nelle attività
 

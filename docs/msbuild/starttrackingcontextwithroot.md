@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: ec1f9b55f0a77aa1b8397820a82c78cc15d73f870e2e9144873722530fbca975
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 62ecbb05d0fd129709345c23887aca1d9ed201be
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369767"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142975"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 

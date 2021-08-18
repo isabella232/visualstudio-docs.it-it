@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e12b710a72c5ccf97776bf5b7fb4964ba56c1faa1b4b094231244f2ddb431c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ee8f82fdc1e93e74e1dfc5fba99bb01576a583ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090408"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specificare i file di simboli (con estensione pdb) e di origine nel debugger Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -45,9 +45,9 @@ Quando si compila un progetto dall'IDE Visual Studio con la configurazione della
 
 Per una spiegazione dettagliata dei file di simboli, vedere quanto segue:
 
-- [Informazioni sui file di simboli e Visual Studio delle simboli](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
+- [Informazioni sui file di simboli e Visual Studio dei simboli](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Perché Visual Studio file di simboli del debugger in modo che corrispondano esattamente ai file binari con cui sono stati compilati?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
+- [Perché è Visual Studio file di simboli del debugger in modo che corrispondano esattamente ai file binari con cui sono stati compilati?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>Funzionamento dei file di simboli
 
@@ -58,10 +58,10 @@ Il file *con estensione pdb* contiene informazioni sul debug e sullo stato del p
 
 I file di simboli mostrano anche il percorso dei file di origine e, facoltativamente, il server da cui recuperarli.
 
-Il debugger carica solo i file con estensione *pdb* che corrispondono esattamente ai file con estensione *pdb* creati durante la creazione di un'app, ovvero i file *con estensione pdb* originali o le copie. Questa [duplicazione esatta](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) è necessaria perché il layout delle app può cambiare anche se il codice stesso non è stato modificato.
+Il debugger carica solo i file con estensione *pdb* che corrispondono esattamente ai file con estensione *pdb* creati durante la creazione di un'app, ovvero i file con estensione *pdb* originali o le copie. Questa [duplicazione esatta](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) è necessaria perché il layout delle app può cambiare anche se il codice stesso non è stato modificato.
 
 > [!TIP]
-> Per eseguire il debug di codice all'esterno del codice sorgente del progetto, ad esempio codice Windows o codice di terze parti chiamato dal progetto, è necessario specificare il percorso dei file con estensione *pdb* del codice esterno (e, facoltativamente, i file di origine), che devono corrispondere esattamente alle compilazioni nell'app.
+> Per eseguire il debug di codice all'esterno del codice sorgente del progetto, ad esempio codice Windows o codice di terze parti chiamate dal progetto, è necessario specificare il percorso dei file con estensione *pdb* del codice esterno (e, facoltativamente, i file di origine), che devono corrispondere esattamente alle compilazioni nell'app.
 
 ## <a name="symbol-file-locations-and-loading-behavior"></a>Percorsi dei file di simboli e comportamento di caricamento
 
@@ -78,7 +78,7 @@ Il debugger cerca anche i file di simboli nei percorsi seguenti:
 
 2. Stessa cartella della DLL o del file *.exe* file.
 
-3. Tutti i percorsi specificati nelle opzioni del debugger per i file di simboli. Per aggiungere e abilitare le posizioni dei simboli, vedere [Configurare i percorsi dei simboli e le opzioni di caricamento.](#BKMK_Specify_symbol_locations_and_loading_behavior)
+3. Qualsiasi percorso specificato nelle opzioni del debugger per i file di simboli. Per aggiungere e abilitare le posizioni dei simboli, vedere [Configurare i percorsi dei simboli e le opzioni di caricamento.](#BKMK_Specify_symbol_locations_and_loading_behavior)
 
    - Qualsiasi cartella della cache di simboli locale.
 
@@ -93,14 +93,14 @@ Il debugger cerca anche i file di simboli nei percorsi seguenti:
      **Server di simboli di terze parti:** i provider di servizi di Windows e le librerie possono fornire l'accesso al server di simboli su Internet.
 
      > [!WARNING]
-     > Se si usa un server di simboli diverso dai server di simboli Microsoft pubblici, assicurarsi che il server dei simboli e il relativo percorso siano attendibili. Poiché i file di simboli possono contenere codice eseguibile arbitrario, è possibile essere esposti a minacce per la sicurezza.
+     > Se si usa un server di simboli diverso dai server di simboli Microsoft pubblici, assicurarsi che il server di simboli e il relativo percorso siano attendibili. Poiché i file di simboli possono contenere codice eseguibile arbitrario, è possibile essere esposti a minacce per la sicurezza.
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Configurare i percorsi dei simboli e le opzioni di caricamento
 
 Nella pagina **Strumenti**  >  **Opzioni**  >  **Simboli**  >  **di** debug è possibile:
 
-- Specificare e selezionare percorsi di ricerca e server di simboli per microsoft, Windows o componenti di terze parti.
+- Specificare e selezionare percorsi di ricerca e server di simboli per Microsoft, Windows o componenti di terze parti.
 - Specificare i moduli per i quali il debugger deve caricare automaticamente i simboli.
 - Modificare queste impostazioni durante il debug attivo. Vedere Gestire [i simboli durante il debug.](#manage-symbols-while-debugging)
 
@@ -109,7 +109,7 @@ Nella pagina **Strumenti**  >  **Opzioni**  >  **Simboli**  >  **di** debug è p
 1. In Visual Studio strumenti **Opzioni** Simboli di  >  **debug**  >    >   (o Simboli delle **opzioni**  >    >  **di debug**).
 
 2. In **Percorsi file di simboli (con estensione pdb)**,
-   - Per usare **i server di simboli Microsoft** o **NuGet.org Symbol Server,** selezionare la casella di controllo.
+   - Per usare i **server di simboli Microsoft** o **NuGet.org Symbol Server,** selezionare la casella di controllo.
 
    - Per aggiungere un nuovo percorso del server dei simboli,
      1. Selezionare il **+** simbolo nella barra degli strumenti.
@@ -167,9 +167,9 @@ Nella pagina **Strumenti**  >  **Opzioni**  >  **Simboli**  >  **di** debug è p
   >[!IMPORTANT]
   >I comandi arbitrari possono essere incorporati nel file con estensione *pdb* di un'app, quindi assicurarsi di inserire solo i comandi da eseguire in un file *srcsrv.ini* file. Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
-  >Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Se, ad esempio,cmd.exeelencati nel *srcsrv.ini*, un utente  malintenzionato potrebbe specificare parametricmd.exeche lo renderebbero pericoloso. 
+  >Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Ad esempio, se  nelcmd.exeè elencato unsrcsrv.ini *,* un  utente malintenzionato potrebbe specificare parametricmd.exeche lo renderebbero pericoloso.
 
-  Selezionare questo elemento e gli elementi figlio desiderati. Consentire al server di origine di assembly parzialmente attendibili **(solo gestito)** ed eseguire sempre comandi **del server** di origine non attendibili senza chiedere conferma può aumentare i rischi per la sicurezza.
+  Selezionare questo elemento e gli elementi figlio desiderati. Consentire al server di origine di assembly parzialmente attendibili **(solo gestito)** e Esegui sempre comandi **del server** di origine non attendibili senza chiedere conferma può aumentare i rischi per la sicurezza.
 
   ![Opzioni di abilitazione del server di origine](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 

@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, F#, Avanzate
-description: 'Informazioni su come utilizzare la pagina Avanzate nella sezione F # per modificare le impostazioni relative alle guide e alla struttura del blocco per F #.'
+description: Informazioni su come usare la pagina Avanzate nella sezione F# per modificare le guide alla struttura dei blocchi e le impostazioni di struttura per F#.
 ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
@@ -9,18 +9,19 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42398657a896b823637d8235c859b5802812a112
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8849e7d3eb3acf1b30fff2cb44b21ad0b8cbd254
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943926"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062264"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opzioni, Editor di testo, F#, Avanzate
 
-Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **F #**  >  **Avanzate**.
+Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina delle opzioni, scegliere **Opzioni** strumenti e quindi editor  >   **di testo**  >  **F#**  >  **Avanzate**.
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
@@ -32,5 +33,5 @@ Selezionare questa casella di controllo per delineare automaticamente la struttu
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../../ide/reference/options-text-editor-all-languages-tabs.md)

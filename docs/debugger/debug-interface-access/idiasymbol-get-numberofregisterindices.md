@@ -9,14 +9,15 @@ ms.assetid: 1ec8b8ea-e423-4327-8dc0-a390e6e3ffb0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fc328522a0c4d998642c4f58fd5409daeccac742
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3273237604b6a352eb5469fce123d0211590a909
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121361"
 ---
 # <a name="idiasymbolget_numberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 Recupera il numero di indici di registro.
@@ -31,10 +32,10 @@ HRESULT get_numberOfRegisterIndices(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Puntatore a un oggetto `DWORD` che include il numero di indici di registro.
+[out] Puntatore a un `DWORD` oggetto che contiene il numero di indici di registro.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

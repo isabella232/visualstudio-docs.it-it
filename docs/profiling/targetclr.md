@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2101d6702c4a493ba720ca1107d74c9fdeb7b2fc8e99e188c8400dd867109c0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 083f650992a931686e49d878df1e2c323bd45f3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396383"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141259"
 ---
 # <a name="targetclr"></a>TargetCLR
 L'opzione **TargetCLR** specifica la versione di Common Language Runtime (CLR) da sottoporre a profilatura quando in un'applicazione è caricata più di una versione di CLR.
@@ -35,7 +35,7 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **TargetCLR** può essere usata solo con le opzioni **Launch** o **Attach**.
 
- **Avvia:** `AppName` Avvia l'applicazione specificata e inizia a profilare.
+ **Avviare:** `AppName` Avvia l'applicazione specificata e inizia a profilare.
 
  **Collega:** `PID` Inizia a profilare il processo specificato.
 

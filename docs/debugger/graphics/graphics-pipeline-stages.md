@@ -1,6 +1,6 @@
 ---
-title: Fasi pipeline grafica | Microsoft Docs
-description: Risolvere i problemi di rendering visualizzando la modalità di trasformazione di una chiamata di progetto in ogni fase della pipeline grafica Direct3D.
+title: Fasi della pipeline grafica | Microsoft Docs
+description: Per risolvere i problemi di rendering, vedere come viene trasformata una chiamata di disegno in ogni fase della pipeline grafica Direct3D.
 ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cc2737fbe6bdbcb331da4e1d27a77d356735aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7a86d93e49f92734bcccd9eefab6ed498734479
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888654"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058553"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
 La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata di disegno viene trasformata in ogni fase della pipeline grafica Direct3D.
@@ -60,54 +61,54 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
 > [!NOTE]
 > I compute shader non sono supportati nella finestra **Fasi pipeline grafica**.
 
- **Assembler di input** L'assembler di input legge i dati relativi a indici e vertici specificati dall'app e li assembla per l'hardware grafico.
+ **Assembler di input** L'assembler di input legge i dati dell'indice e dei vertici specificati dall'app e lo assembla per l'hardware grafico.
 
  Nella finestra Fasi pipeline, l'output di Assemblaggio input viene visualizzato come modello wireframe. Per esaminare in dettaglio i risultati, selezionare **Assemblaggio input** nella finestra **Fasi pipeline grafica** per vedere i vertici assemblati in 3D completo usando l'editor modello.
 
 > [!NOTE]
 > Se la semantica `POSITION` non è presente nell'output dell'assemblaggio input, nella fase **Assemblaggio input** non verrà visualizzato nulla.
 
- **Vertex shader** La fase vertex shader elabora i vertici, in genere eseguendo operazioni quali trasformazione, Skinning e illuminazione. Produce lo stesso numero di vertici che accetta come input.
+ **Vertex shader** La fase vertex shader elabora i vertici, in genere eseguendo operazioni quali trasformazione, interfaccia e illuminazione. Produce lo stesso numero di vertici che accetta come input.
 
  Nella finestra Fasi pipeline, l'output di Vertex shader viene visualizzato come immagine raster wireframe. Per esaminare in dettaglio i risultati, selezionare **Vertex shader** nella finestra **Fasi pipeline grafica** per vedere i vertici elaborati nell'editor di immagini.
 
 > [!NOTE]
 > Se la semantica `POSITION` o `SV_POSITION` non è presente nell'output di vertex shader, nella fase **Vertex shader** non verrà visualizzato nulla.
 
- **Hull shader** (solo Direct3D 11 e Direct3D 12) la fase Hull shader elabora i punti di controllo che definiscono una superficie di ordine inferiore, ad esempio una linea, un triangolo o un quad. Come output, produce patch geometriche di ordine superiori e costanti patch che vengono passate alla fase del mosaico a funzione fissa.
+ **Hull Shader** (solo Direct3D 11 e Direct3D 12) La fase dello hull shader elabora i punti di controllo che definiscono una superficie di ordine inferiore, ad esempio una linea, un triangolo o un quad. Come output, produce patch geometriche di ordine superiori e costanti patch che vengono passate alla fase del mosaico a funzione fissa.
 
  La fase Hull shader non viene visualizzata nella finestra Fasi pipeline.
 
- **Fase mosaico** (solo Direct3D 11 e Direct3D 12) la fase mosaico è un'unità hardware a funzione fissa (non programmabile) che pre-elabora il dominio rappresentato dall'output dello scafo dello shader. Come output, crea uno schema di campionamento del dominio e un set di primitive più piccole, punti, linee e triangoli, che connettono in questi campioni.
+ Fase a **tessellatore** (solo Direct3D 11 e Direct3D 12) La fase a tessellatore è un'unità hardware a funzione fissa (non programmabile) che pre-elabora il dominio rappresentato dall'output dello hull shader. Come output, crea uno schema di campionamento del dominio e un set di primitive più piccole, punti, linee e triangoli, che connettono in questi campioni.
 
  La fase del mosaico non viene visualizzata nella finestra Fasi pipeline.
 
- **Domain shader** (solo Direct3D 11 e Direct3D 12) la fase Domain shader elabora le patch di geometria di ordine superiore dallo scafo dello shader, insieme i fattori a mosaico della fase a mosaico. I fattori a mosaico possono essere includere fattori di input della fase di mosaico così come fattori di output. Come output, calcola la posizione del vertice di un punto sulla patch di output in base ai fattori a mosaico.
+ **Domain Shader** (solo Direct3D 11 e Direct3D 12) La fase domain shader elabora le patch di geometria di ordine superiore dello shader Hull, insieme ai fattori a schema a fasi della fase a tessellazione. I fattori a mosaico possono essere includere fattori di input della fase di mosaico così come fattori di output. Come output, calcola la posizione del vertice di un punto sulla patch di output in base ai fattori a mosaico.
 
  La fase Domain shader non viene visualizzata nella finestra Fasi pipeline.
 
- **Geometria shader** La fase geometry shader elabora intere primitive, ovvero punti, linee o triangoli, oltre ai dati dei vertici facoltativi per le primitive adiacenti al bordo. A differenza dei vertex shader, i geometry shader possono produrre più o meno primitive che accettano come input.
+ **Shader geometrico** La fase geometry shader elabora intere primitive, ovvero punti, linee o triangoli, insieme ai dati dei vertici facoltativi per le primitive adiacenti al bordo. A differenza dei vertex shader, i geometry shader possono produrre più o meno primitive che accettano come input.
 
  Nella finestra Fasi pipeline, l'output di Geometry Shader viene visualizzato come immagine raster wireframe. Per esaminare in dettaglio i risultati, selezionare **Geometry shader** nella finestra **Fasi pipeline grafica** per vedere le primitive elaborate nell'editor di immagini.
 
- **Fase output flusso** La fase di output del flusso può intercettare primitive trasformate prima della rasterizzazione e scriverle nella memoria; da qui è possibile ridistribuire i dati come input alle fasi precedenti della pipeline grafica o essere letti dalla CPU.
+ **Fase di output del flusso** La fase di output del flusso può intercettare le primitive trasformate prima della rasterizzazione e scriverle in memoria. da qui i dati possono essere ricircolati come input nelle fasi precedenti della pipeline grafica o essere letti dalla CPU.
 
  La fase Output flusso non viene visualizzata nella finestra Fasi pipeline.
 
- **Fase di rasterizzazione** La fase di rasterizzazione è un'unità hardware a funzione fissa (non programmabile) che converte le primitive vettoriali, ovvero punti, linee e triangoli, in un'immagine raster eseguendo la conversione della linea di analisi. Durante la rasterizzazione i vertici vengono trasformati nello spazio del ritaglio omogeneo e tagliati. Come output, viene eseguito il mapping dei pixel shader e gli attributi dei vertici della primitiva vengono interpolati e preparati per il pixel shader.
+ **Fase di rasterizzazione** La fase di rasterizzazione è un'unità hardware a funzione fissa (non programmabile) che converte primitive vettoriali( punti, linee, triangoli) in un'immagine raster eseguendo la conversione della linea di analisi. Durante la rasterizzazione i vertici vengono trasformati nello spazio del ritaglio omogeneo e tagliati. Come output, viene eseguito il mapping dei pixel shader e gli attributi dei vertici della primitiva vengono interpolati e preparati per il pixel shader.
 
  La fase di rasterizzazione non viene visualizzata nella finestra Fasi pipeline.
 
- **Pixel shader** La fase pixel shader elabora le primitive rasterizzate insieme ai dati dei vertici interpolati per generare valori per pixel quali il colore e la profondità.
+ **Pixel shader** La pixel shader elabora primitive rasterizzate insieme ai dati dei vertici interpolati per generare valori per pixel, ad esempio colore e profondità.
 
  Nella finestra Fasi pipeline, l'output di Pixel shader viene visualizzato come un'immagine raster a colori. Per esaminare in dettaglio i risultati, selezionare **Pixel shader** nella finestra **Fasi pipeline grafica** per vedere le primitive elaborate nell'editor di immagini.
 
- **Unione output** La fase di Unione dell'output combina l'effetto dei pixel di cui è stato appena eseguito il rendering insieme al contenuto esistente dei buffer corrispondenti (colore, profondità e stencil) per produrre nuovi valori in questi buffer.
+ **Unione dell'output** La fase di unione dell'output combina l'effetto dei pixel di cui è stato appena eseguito il rendering con il contenuto esistente dei buffer corrispondenti( colore, profondità e stencil) per produrre nuovi valori in questi buffer.
 
  Nella finestra Fasi pipeline, l'output di Unione output viene visualizzato come un'immagine raster a colori. Per esaminare in dettaglio i risultati, selezionare **Unione output** nella finestra **Fasi pipeline grafica** per vedere il buffer frame unito.
 
-### <a name="vertex-and-geometry-shader-preview"></a>Anteprima di Vertex e geometry shader
- Quando si seleziona la fase Vertex o geometry shader nella finestra **fasi pipeline** , è possibile visualizzare gli input e gli output dello shader nel pannello seguente.  Qui sono disponibili informazioni dettagliate sull'elenco dei vertici forniti agli shader dopo che sono stati assemblati dalla fase Assembler di input.
+### <a name="vertex-and-geometry-shader-preview"></a>Anteprima vertex e geometry shader
+ Quando si seleziona la fase vertex shader o geometry shader nella finestra **Fasi** pipeline, è possibile visualizzare gli input e gli output dello shader nel pannello seguente.  Qui sono disponibili informazioni dettagliate sull'elenco dei vertici forniti agli shader dopo che sono stati assemblati dalla fase dell'assembler di input.
 
  ![Visualizzatore del buffer di input delle fasi del vertex shader](media/gfx_diag_vertex_shader_inbuffers.png)
 

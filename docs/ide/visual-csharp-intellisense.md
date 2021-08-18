@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92717a55fb25c8a4d5662cb544eeb61d42fdce6b5d1356709b4b0f4d4d86b60b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6b61d197321605e787eb36efeff2f3d6dc51e050
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121289231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061571"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -105,7 +105,7 @@ Fare clic sull'icona di lampadina di errore, quindi scegliere **using System.Xml
 
 ### <a name="add-missing-using-directives-on-paste"></a>Aggiungi direttive using mancanti dopo operazione Incolla
 
-IntelliSense può aggiungere automaticamente `using` direttive mancanti al codice quando si incolla un tipo nel file di codice. Questa funzionalità consente di risparmiare tempo automatizzando l'attività di aggiunta di direttive using mancanti quando si incolla un tipo in un file. Abilitare questa funzionalità in **Strumenti** Opzioni  >  **Editor**  >  **di testo**  >  **C#** o   >   Avanzate di base e selezionare Aggiungi direttive using mancanti in Incolla.
+IntelliSense può aggiungere automaticamente `using` direttive mancanti al codice quando si incolla un tipo nel file di codice. Questa funzionalità consente di risparmiare tempo automatizzando l'attività di aggiunta di direttive using mancanti quando si incolla un tipo in un file. Abilitare questa funzionalità in **Strumenti Opzioni** Editor  >    >  **di testo**  >  **C#** o Avanzate   >   di base e selezionare Aggiungi direttive using mancanti in Incolla.
 
 ### <a name="remove-and-sort-usings"></a>Opzione Rimuovi e ordina using
 
@@ -165,7 +165,7 @@ Se si preme **TAB,** IntelliSense completa automaticamente l'istruzione e visual
 Se si preme **TAB,** IntelliSense esegue lo stub di un metodo con la firma corretta e inserisce il cursore nel corpo del gestore eventi.
 
 > [!NOTE]
-> Usare il **comando Torna** indietro del menu **Visualizza** (**CTRL**) per + **-** tornare all'istruzione di collegamento all'evento.
+> Usare il **comando Indietro** nel menu **Visualizza** (**CTRL**) per + **-** tornare all'istruzione di collegamento all'evento.
 
 ## <a name="see-also"></a>Vedi anche
 

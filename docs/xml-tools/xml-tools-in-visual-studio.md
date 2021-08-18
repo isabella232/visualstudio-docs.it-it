@@ -35,20 +35,20 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: ed82ee7f73f9d5dd871e333275c8564d849db5b737e795faa431eece12388e54
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ff3edfedecc3598ba2571723f4757a60ffc8c45
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121350979"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098567"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Panoramica degli strumenti XML in Visual Studio
 
-*Extensible Markup Language (XML) è un linguaggio* di markup che fornisce un formato per la descrizione dei dati. XML separa i dati e la relativa presentazione usando fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e CSS (Cascading Style Sheets). Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
+*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per la descrizione dei dati. XML separa i dati e la relativa presentazione usando fogli di stile associati, ad esempio Extensible Stylesheet Language (XSL) e CSS (Cascading Style Sheets). Visual Studio comprende strumenti e funzionalità che semplificano l'uso del codice XML, XSLT e degli schemi XML.
 
 ## <a name="xml-editor"></a>Editor XML
 
-[L'editor XML](xml-editor.md) viene utilizzato per modificare i documenti XML. Fornisce il controllo completo della sintassi XML, la convalida dello schema durante la digitazione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
+[L'editor XML](xml-editor.md) viene usato per modificare i documenti XML. Fornisce il controllo completo della sintassi XML, la convalida dello schema durante la digitazione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
 
 Le altre funzionalità includono:
 

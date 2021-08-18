@@ -1,6 +1,6 @@
 ---
 title: Attività XslTransformation | Microsoft Docs
-description: Informazioni su MSBuild'attività XslTransformation per trasformare un input XML usando xslt e l'output in un dispositivo o un file di output.
+description: Informazioni su MSBuild'attività XslTransformation per trasformare un input XML usando un xslt e un output in un dispositivo o un file di output.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: db5d8254ee428f35ee495fd514a42523bd488ce9d225365e6c2884d1df4a7e05
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 488af4bb29292d428b33a526c92768906868dfc4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397072"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093489"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation (attività)
 
@@ -46,11 +46,11 @@ Consente di trasformare un input XML tramite un XSLT o un XSLT compilato e di cr
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene usato un file di trasformazione XSL *transform.xslt* per modificare il file XML `$(XmlInputFileName)` . Il codice XML trasformato viene scritto in `$(IntermediateOutputPath)output.xml` . La trasformazione XSL accetta `$(Parameter1)` come parametro di input.
+Nell'esempio seguente viene usato un file di trasformazione XSL *transform.xslt* per modificare il file xml `$(XmlInputFileName)` . Il codice XML trasformato viene scritto in `$(IntermediateOutputPath)output.xml` . La trasformazione XSL accetta `$(Parameter1)` come parametro di input.
 
 ```xml
     <XslTransformation XslInputPath="transform.xslt"

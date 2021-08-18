@@ -1,6 +1,6 @@
 ---
 title: Override di Gestione contenuto della Guida
-description: Informazioni sulle sostituzioni di Gestione contenuto della Guida, che modificano il comportamento predefinito di Help Viewer e delle funzionalità correlate alla Guida nell'IDE Visual Studio.
+description: Informazioni sulle sostituzioni di Gestione contenuto della Guida, che modificano il comportamento predefinito di Help Viewer e delle funzionalità correlate alla Guida nell'IDE Visual Studio guida.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d0838b648a08f430bbe917c9ec073b2760dfe0605f13a83a6ced5ef3e32040f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 16bd273925ec3fc01dddecf3b9d7d2f0a0dcf2d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358662"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109721"
 ---
 # <a name="help-content-manager-overrides"></a>Override di Gestione contenuto della Guida
 

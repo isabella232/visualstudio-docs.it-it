@@ -1,6 +1,6 @@
 ---
 title: Profilatura rapida di sito Web con VSPerfASPNETCmd | Microsoft Docs
-description: Informazioni sul modo in cui lo strumento da riga di comando VSPerfASPNETCmd consente di profilare facilmente le applicazioni Web ASP.NET.
+description: Informazioni su come lo strumento da riga di comando VSPerfASPNETCmd consente di profilare facilmente ASP.NET applicazioni Web.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,22 +9,23 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b68cac6131a213d67a40927c04a85600ffe0f1cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af271772104d1e21f211987c8dcee54fdf0a88c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952811"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141571"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 
-Lo strumento da riga di comando **VSPerfASPNetCmd** consente di profilare facilmente [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le applicazioni Web. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).
+Lo strumento da riga di comando **VSPerfASPNETCmd** consente di profilare facilmente [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le applicazioni Web. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni Windows 8 e Windows Server 2012 applicazioni](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  In alcuni scenari, quali la raccolta di dati di concorrenza o la sospensione e la ripresa della profilatura, **VSPerfCmd** costituisce il metodo di profilatura preferito.
 
@@ -51,7 +52,7 @@ Usare la riga di comando seguente per raccogliere dati di intervallo dettagliati
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-Se si desidera profilare compilati in modo statico. file *dll* nell'applicazione Web, è necessario instrumentare i file utilizzando lo strumento da riga di comando [VSInstr](../profiling/vsinstr.md) . Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.
+Se si desidera profilare in modo statico compilato . *dll* nell'applicazione Web, è necessario instrumentare i file usando lo strumento da riga di comando [VSInstr.](../profiling/vsinstr.md) Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.
 
 ## <a name="to-collect-net-memory-data"></a>Per raccogliere dati di memoria .NET
 

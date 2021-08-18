@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ecc6d204fe571c42fe2879bedb83bbffdab330c39cd0ab6791173888cd6de6be
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7a229bd68ffd0ce0c9c699a8db43dfc48f85b3a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389085"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152666"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 Restituisce una copia dell'enumerazione corrente come oggetto separato.

@@ -1,20 +1,21 @@
 ---
 title: Unit test con la versione precedente di .NET Framework come destinazione
-description: Informazioni su come creare progetti unit test per individuare versioni specifiche del .NET Framework. La versione di destinazione deve essere 3.5 o successiva e non può essere una versione client.
+description: Informazioni su come creare unit test per le versioni specifiche del .NET Framework. La versione di destinazione deve essere 3.5 o successiva e non può essere una versione client.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 7808c83e8ba517a26d60fe12cb563c5a1a64b8db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 19c0300cf8549b01b36f911bfb287bbdc3a22f1e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123034"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
 
@@ -62,11 +63,11 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 4. Usare l'elenco a discesa **Framework di destinazione (tutte le configurazioni)** per impostare il framework di destinazione su **.NET Framework 3.5** o una versione successiva, come indicato nella didascalia B della figura seguente. Non specificare una versione client.
 
-     ![Screenshot della finestra di dialogo Impostazioni avanzate del compilatore. L'elenco a discesa Framework di destinazione è evidenziato e il valore è impostato su ".NET Frameowrk 3,5".](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Screenshot della finestra di dialogo Impostazioni compilatore avanzato. L'elenco a discesa Framework di destinazione è evidenziato e il valore è impostato su '.NET Frameowrk 3.5'.](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Ridestinazione per progetti di unit test C#
 
-1. Creare un nuovo progetto di **progetto di unit test** di C#.
+1. Creare un nuovo unit test C# **Project** progetto.
 
 2. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del nuovo progetto di test C#.
 
@@ -74,7 +75,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 3. Nella scheda **Applicazione** scegliere **Framework di destinazione**. Nell'elenco a discesa scegliere **.NET Framework 3.5** o versione successiva, come illustrato nella figura seguente. Non specificare una versione client.
 
-   ![Illustrazione della scheda applicazione nel riquadro Proprietà Esplora soluzioni che evidenzia il percorso dell'elenco a discesa Framework di destinazione.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Illustrazione della scheda Applicazione nel riquadro Esplora soluzioni proprietà che evidenzia la posizione dell'elenco a discesa Framework di destinazione.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Ridestinazione per progetti di unit test C++/CLI
 
@@ -85,7 +86,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 2. In **Esplora soluzioni** scegliere **Scarica progetto** dal nuovo progetto di test C++.
 
-3. In **Esplora soluzioni** scegliere il progetto di test C++ scaricato e quindi scegliere **modifica \<project name> . vcxproj**.
+3. In **Esplora soluzioni** scegliere il progetto di test C++ scaricato e quindi **scegliere Modifica \<project name> .vcxproj**.
 
    Il file *VCXPROJ* viene aperto nell'editor.
 
@@ -108,6 +109,6 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Creare SharePoint soluzioni](../sharepoint/create-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Finestra di dialogo impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+- [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

@@ -1,6 +1,6 @@
 ---
 title: Uso degli asset 3D nel gioco o nell'app
-description: Informazioni su come usare Visual Studio elaborare asset 3D e includerli nelle compilazioni. Visual Studio personalizzazioni della compilazione per ogni asset prodotto.
+description: Informazioni su come usare Visual Studio per elaborare asset 3D e includerli nelle compilazioni. Visual Studio personalizzazioni della compilazione per ogni asset prodotto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b173542659197472bcf99844d749d6992849cbc8a84db257da26ef05415b44
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f25e5462557fe1b33949d396877fa57ec2d6dd35
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452966"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112035"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedura: Usare asset 3D nel gioco o nell'app
 
@@ -217,7 +217,7 @@ cbuffer MiscVars : register(b3)
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
-|[Procedura: Esportare una trama con alfa premoltimullied](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
+|[Procedura: Esportare una trama con alfa premoltilied](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
 |[Procedura: Esportare una trama da usare con app Direct2D o JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
 |[Uso di asset 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descrive gli strumenti di modifica forniti da Visual Studio per la creazione e la manipolazione di asset 3D, tra cui trame e immagini, modelli 3D e shader.|
 |[Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)|Descrive come esportare uno shader dalla finestra di progettazione shader.|

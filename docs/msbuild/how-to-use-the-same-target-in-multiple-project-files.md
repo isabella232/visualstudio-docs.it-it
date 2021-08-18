@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Usare la stessa destinazione in più file di progetto | Microsoft Docs'
-description: Informazioni su come salvare una destinazione in un file MSBuild progetto e importarla in qualsiasi altro progetto che deve usare la destinazione.
+description: Informazioni su come salvare una destinazione in un MSBuild di progetto e importarla in qualsiasi altro progetto che deve usare la destinazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 710c38aa99026721f61968d241997ee8f94a5331ae4bc9b9479e3d2b1dca73a4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1f9fa6593cfb5e6ef21379b7513be02d943e9c66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443438"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143339"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: Usare la stessa destinazione in più file di progetto
 
@@ -27,7 +27,7 @@ Se sono stati creati diversi MSBuild di progetto, è possibile che sia necessari
 
 ## <a name="use-the-import-element"></a>Usare l'elemento Import
 
-L'elemento `Import` consente di inserire un file di progetto in un altro file di progetto. Il file di progetto importato deve essere un file di MSBuild file di progetto valido e contenere codice XML ben formato. L'attributo `Project` specifica il percorso del file di progetto importato. Per altre informazioni `Import` sull'elemento , vedere Elemento Import [(MSBuild)](../msbuild/import-element-msbuild.md).
+L'elemento `Import` consente di inserire un file di progetto in un altro file di progetto. Il file di progetto da importare deve essere un file di MSBuild file di progetto valido e contenere codice XML ben formato. L'attributo `Project` specifica il percorso del file di progetto importato. Per altre informazioni `Import` sull'elemento , vedere Elemento Import [(MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Per importare un progetto
 

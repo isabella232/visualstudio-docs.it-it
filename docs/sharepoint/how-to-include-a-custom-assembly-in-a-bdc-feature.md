@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c45867e769f14323b10c3d42fb5bf52a9560823da1eb3b62246297e19dd69396
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 14026e6de7a376e4548723b4b540d314e499bbf1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409553"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092995"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: Includere un assembly personalizzato in una funzionalità BDC
   Il progetto può fare riferimento ad assembly da altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly al file di funzionalità del progetto usando la finestra di dialogo Assegna assembly a cui si fa riferimento **a LobSystems** .

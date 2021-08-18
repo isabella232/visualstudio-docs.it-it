@@ -1,6 +1,6 @@
 ---
-description: Ottiene il contesto del codice che descrive la posizione di questo evento.
-title: 'IDebugCanStopEvent2:: GetCodeContext | Microsoft Docs'
+description: Ottiene il contesto del codice che descrive il percorso di questo evento.
+title: Interfaccia IDebugCanStopEvent2::GetCodeContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b906241a189edf78f3917d7d80ba4e4e073d50c4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5bdb7f4865174548247c91a5fc5c268ef419af1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088588"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079844"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
-Ottiene il contesto del codice che descrive la posizione di questo evento.
+Ottiene il contesto del codice che descrive il percorso di questo evento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +43,15 @@ int GetCodeContext(
 
 ## <a name="parameters"></a>Parametri
 `ppCodeContext`\
-out Restituisce l'oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta la posizione del codice corrente.
+[out] Restituisce [l'oggetto IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il percorso del codice corrente.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Per la maggior parte delle architetture in fase di esecuzione, un contesto di codice può essere considerato come un indirizzo nel flusso di esecuzione di un programma, puntando a un'istruzione specifica.
+ Per la maggior parte delle architetture di run-time, un contesto di codice può essere pensato come un indirizzo nel flusso di esecuzione di un programma, che punta a un'istruzione specifica.
 
- Per ottenere il contesto del documento, che è orientato verso le righe del codice sorgente, chiamare il metodo [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) .
+ Per ottenere il contesto del documento, orientato verso le righe di codice sorgente, chiamare il [metodo GetDocumentContext.](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

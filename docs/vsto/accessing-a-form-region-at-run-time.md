@@ -14,26 +14,27 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: dbd60f5773392af2066e4693751dd6fff99128b9
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 45b09372438fbe25f35f5b96bf711f0fdd387881
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827968"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047348"
 ---
 # <a name="access-a-form-region-at-run-time"></a>Accedere a un'area del modulo in fase di esecuzione
 
 |Si applica a|
 |----------------|
-|Le informazioni fornite in questo argomento sono valide solo per i tipi di progetto e le versioni di Microsoft Office seguenti. Per altre informazioni, vedere Funzionalità [disponibili in base all'applicazione di Office e al tipo di progetto](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Tipo di progetto**<br /><br /> - Progetti di componente aggiuntivo VSTO<br /><br /> **Versione di Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
+|Le informazioni fornite in questo argomento sono valide solo per i tipi di progetto e le versioni di Microsoft Office seguenti. Per altre informazioni, vedere [Funzionalità disponibili per l'applicazione Office tipo di progetto.](../vsto/features-available-by-office-application-and-project-type.md)<br /><br /> **Project tipo**<br /><br /> - VSTO progetti di componente aggiuntivo<br /><br /> **Versione di Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
 
- Usare la classe `Globals` per accedere alle aree del modulo da qualsiasi punto del progetto Outlook. Per altre informazioni sulla classe `Globals` , vedere Accesso globale agli oggetti nei progetti di [Office.](../vsto/global-access-to-objects-in-office-projects.md)
+ Usare la classe `Globals` per accedere alle aree del modulo da qualsiasi punto del progetto Outlook. Per altre informazioni sulla classe `Globals` , vedere Accesso globale agli oggetti in Office [progetti](../vsto/global-access-to-objects-in-office-projects.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>Accedere alle aree del modulo visualizzate in una finestra specifica di Outlook Inspector
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>Accedere alle aree del modulo visualizzate in una finestra Outlook controllo
  Per accedere a tutte le aree del modulo visualizzate in uno specifico controllo Outlook, chiamare la proprietà `FormRegions` della classe `Globals` e passare un oggetto <xref:Microsoft.Office.Interop.Outlook.Inspector> che rappresenta il controllo.
 
  Nell'esempio seguente viene recuperata la raccolta di aree del modulo visualizzate nel controllo che ha attualmente lo stato attivo. Viene quindi effettuato l'accesso a un'area del modulo della raccolta denominata `formRegion1` e il testo visualizzato in una casella di testo viene impostato su `Hello World`.
@@ -41,7 +42,7 @@ ms.locfileid: "107827968"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet2":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet2":::
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Accedere alle aree del modulo visualizzate in una finestra specifica di Outlook Explorer
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>Accedere alle aree del modulo visualizzate in una finestra Outlook Explorer
  Per accedere a tutte le aree del modulo visualizzate in una specifica finestra di esplorazione Outlook, chiamare la proprietà `FormRegions` della classe `Globals` e passare un oggetto <xref:Microsoft.Office.Interop.Outlook.Explorer> che rappresenta la finestra di esplorazione.
 
  Nell'esempio seguente viene recuperata la raccolta di aree del modulo visualizzate nella finestra di esplorazione che ha attualmente lo stato attivo. Viene quindi effettuato l'accesso a un'area del modulo della raccolta denominata `formRegion1` e il testo visualizzato in una casella di testo viene impostato su `Hello World`.
@@ -70,17 +71,17 @@ ms.locfileid: "107827968"
 
  Per consentire l'accesso a un controllo dall'esterno del file di codice dell'area del modulo, creare una proprietà in tale file di codice per la restituzione del controllo.
 
- Per altre informazioni su come creare proprietà in C#, vedere Procedura: Dichiarare e usare le proprietà di lettura/scrittura &#40;C&#35; guida per [programmatori&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).
+ Per altre informazioni su come creare proprietà in C#, vedere Procedura: Dichiarare e usare le proprietà di lettura/scrittura &#40;[guida per programmatori C&#35; ](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)&#41;.
 
- Per altre informazioni su come creare proprietà in Visual Basic, vedere [Procedura: Creare una proprietà (Visual Basic).](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)
+ Per altre informazioni su come creare proprietà in Visual Basic, vedere Procedura: Creare una proprietà [(Visual Basic).](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)
 
 ## <a name="see-also"></a>Vedi anche
-- [Linee guida per la creazione di aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [Azioni personalizzate nelle aree del modulo di Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
+- [Linee guida per la creazione Outlook aree del modulo](../vsto/guidelines-for-creating-outlook-form-regions.md)
+- [Procedura dettagliata: Progettare un'Outlook del modulo](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Procedura: Aggiungere un'area del modulo a Outlook progetto di componente aggiuntivo](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Azioni personalizzate nelle aree Outlook modulo](../vsto/custom-actions-in-outlook-form-regions.md)
+- [Associare un'area del modulo a una Outlook di messaggio personalizzata](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Procedura dettagliata: Importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [Procedura: Impedire a Outlook di visualizzare un'area del modulo](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
-- [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
+- [Procedura: Impedire Outlook visualizzare un'area del modulo](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Creare aree Outlook modulo](../vsto/creating-outlook-form-regions.md)
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)

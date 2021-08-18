@@ -1,7 +1,7 @@
 ---
 title: Set di regole Regole estese delle linee guida di progettazione per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole delle linee guida per la progettazione estese in Visual Studio, incentrata sull'usabilità e sulla manutenibilità. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole delle linee guida di progettazione estese in Visual Studio, in particolare sull'usabilità e sulla manutenibilità. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
@@ -11,20 +11,20 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a52421f9d2b98af34a67b796f95fa6babf00901eb56862f747019e9b0cd702f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d284dec49e0973f2781f00f178fa193b52797085
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405396"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075333"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 
-Il set di regole Microsoft Extended Design Guideline Rules si espande in base alle regole delle linee guida di progettazione di base per ottimizzare i problemi di usabilità e manutenibilità segnalati. L'accento è posto sulle linee guida per la denominazione. È consigliabile includere questo set di regole se il progetto include codice di libreria o se si vogliono applicare gli standard più elevati per la scrittura di codice facile da gestire.
+Il set di regole Microsoft Extended Design Guideline Rules si espande in base alle regole delle linee guida di progettazione di base per ottimizzare i problemi di usabilità e manutenibilità segnalati. Viene posta particolare attenzione alle linee guida per la denominazione. È consigliabile includere questo set di regole se il progetto include codice di libreria o se si vogliono applicare gli standard più elevati per la scrittura di codice facile da gestire.
 
-Le regole delle linee guida per la progettazione estese includono tutte le regole nel set di regole Basic [Design Guideline Rules,](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) che include le regole nel set di regole [regole](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) consigliate gestite.
+Le regole delle linee guida per la progettazione estese includono tutte le regole del set di regole Basic [Design Guideline Rules,](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) che include le regole nel set di regole [managed recommended rules.](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
-Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Extended Design Guideline Rules.
+Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Extended Design Guideline Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|

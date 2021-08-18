@@ -1,6 +1,6 @@
 ---
 title: -SafeMode (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando devenv SafeMode per avviare Visual Studio in modalità provvisoria, caricando solo l'ambiente e i servizi predefiniti.
+description: Informazioni su come usare l'opzione della riga di comando devenv safeMode per avviare Visual Studio in modalità provvisoria, caricando solo l'ambiente e i servizi predefiniti.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b89fe1bd998b8bd74ebb9e80998eac53824bceddebd9d8a208a038746cfa2daf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: abc61c4a92bfab394fab783196ff2ca9fab831d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056173"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 

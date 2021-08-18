@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e073afadb97d4b0f33e70d2ffce86f10828360d2581728e277d7723e843b17c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 19c8a3b0e6c91c1751462660a5c9f08913419890
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401986"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095699"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Questo metodo ottiene un nuovo oggetto per il visualizzatore. Questo metodo creerà sempre un nuovo oggetto dall'oggetto esistente.
@@ -49,7 +49,7 @@ int GetNewObjectForVisualizer(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- `This method` valuta nuovamente l'oggetto attualmente rappresentato e restituisce il risultato come nuovo oggetto. L'oggetto esistente verrà aggiornato come risultato della valutazione.
+ `This method` valuta nuovamente l'oggetto attualmente rappresentato e restituisce il risultato come nuovo oggetto . L'oggetto esistente verrà aggiornato in seguito alla valutazione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

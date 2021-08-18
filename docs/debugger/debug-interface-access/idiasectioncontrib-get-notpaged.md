@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d698af4dfa6d93ccba001c9d9c4e299771abe313bb48a446ca21ddb2e72547
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e710a38faf44d326b733b96c00a590e495ae9a5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121281157"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066510"
 ---
 # <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
 Recupera un flag che indica se la sezione non può essere disallocazione della memoria.

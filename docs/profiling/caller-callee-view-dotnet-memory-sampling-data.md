@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET | Microsoft Docs'
-description: Informazioni sul modo in cui la visualizzazione chiamante/chiamato Visualizza i dati di campionamento di memoria .NET per una funzione selezionata e le relative funzioni padre e figlio in Esplora prestazioni.
+description: Informazioni su come la visualizzazione Chiamante/chiamato visualizza i dati di campionamento della memoria .NET per una funzione selezionata e le relative funzioni padre e figlio in Esplora prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 58236bbacfaa262c23400506cb32331719000b81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e024bf05e2b49ff98ec8c6821d9303844296039
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967527"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108096"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Visualizzazione Chiamante-chiamato: dati di campionamento di memoria .NET
 La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profilatura della memoria .NET per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -35,10 +36,10 @@ La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profila
 |------------|-----------------|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome funzione**|Nome completo della funzione.|
+|**Nome della funzione**|Nome completo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Tipo**|Il contesto della funzione:<br /><br /> **0**: la funzione corrente<br /><br /> **1**: una funzione che chiama la funzione corrente<br /><br /> **2**: una funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
@@ -53,7 +54,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profila
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che rappresentavano allocazioni esclusive di questa funzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione chiamante/chiamato : dati di strumentazione della memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
-- [Visualizzazione chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Visualizzazione chiamante/chiamato : dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)

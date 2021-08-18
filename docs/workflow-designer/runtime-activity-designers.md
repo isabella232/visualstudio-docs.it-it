@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8eda440e1e4084e7dbb4b8567ca9001b323f451155cb377377f18e69116ee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3fc1c434c867f919861631666892f22d12e7979b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121243341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091994"
 ---
 # <a name="runtime-activity-designers"></a>ActivityDesigner Runtime
 Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e terminare le attività del flusso di lavoro. Gli argomenti contenuti in questa sezione forniscono indicazioni su come usare gli ActivityDesigner Progettazione flussi di lavoro.

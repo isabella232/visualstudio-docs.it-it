@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET | Microsoft Docs'
-description: Informazioni su come nella visualizzazione albero delle chiamate vengono visualizzati i dati di campionamento di memoria .NET per i percorsi di esecuzione della funzione attraversati nell'applicazione profilata.
+description: Informazioni su come la visualizzazione Albero delle chiamate visualizza i dati di campionamento della memoria .NET per i percorsi di esecuzione delle funzioni attraversati nell'applicazione profilata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34e8f2e6148dc504e6dc8f25f81bc1ba8acb1f47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9b2473a38961a6ff94a25d08867541b4dd2a8baf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093333"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati di allocazione della memoria .NET per queste chiamate di funzione.
@@ -37,10 +38,10 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |------------|-----------------|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene la funzione.|
+|**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
-|**Nome funzione**|Nome completo della funzione.|
+|**Nome della funzione**|Nome completo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Level**|Profondità della funzione nell'albero delle chiamate.|
@@ -54,6 +55,6 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che rappresentavano allocazioni esclusive di questa funzione.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
-- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+- [Visualizzazione Albero delle chiamate - Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)

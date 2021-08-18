@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b17b39492c0558bae68aacdd653a2413b16af2c3f134e1680fe72b63e6d0a9f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b8c88e1c6bcffda9c6bde4c740d233e4166787c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410905"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123528"
 ---
 # <a name="t4-include-directive"></a>Direttiva include T4
 
@@ -29,7 +29,7 @@ In un modello di testo in Visual Studio è possibile includere testo da un altro
 
 - `filePath` può essere assoluto o relativo al file modello corrente.
 
-   Inoltre, estensioni Visual Studio specifiche possono specificare le proprie directory per cercare i file di inclusione. Ad esempio, dopo aver installato Visualization and Modeling SDK (DSL Tools), la cartella seguente viene aggiunta all'elenco di inclusione: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` .
+   Inoltre, estensioni Visual Studio specifiche possono specificare le proprie directory per cercare i file di inclusione. Ad esempio, dopo aver installato Visualization and Modeling SDK (DSL Tools), all'elenco di inclusione viene aggiunta la cartella seguente: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` .
 
    Queste cartelle di inclusione aggiuntive potrebbero dipendere dall'estensione del file incluso. Ad esempio, la cartella di inclusione di Strumenti DSL è accessibile soltanto ai file inclusi con l'estensione `.tt`
 
@@ -41,7 +41,7 @@ In un modello di testo in Visual Studio è possibile includere testo da un altro
 
 - Il nome di un file incluso non deve utilizzare l'estensione `".tt"`.
 
-   È possibile utilizzare un'altra estensione, quale `".t4"` per i file inclusi. Questo perché, quando si aggiunge un file a un progetto, Visual Studio imposta automaticamente la proprietà `.tt` **Strumento** personalizzato su `TextTemplatingFileGenerator` . Non è in genere consigliabile che i file inclusi vengano trasformati singolarmente.
+   È possibile utilizzare un'altra estensione, quale `".t4"` per i file inclusi. Questo perché, quando si aggiunge un file a un progetto, Visual Studio automaticamente la relativa proprietà `.tt` **Strumento** personalizzato su `TextTemplatingFileGenerator` . Non è in genere consigliabile che i file inclusi vengano trasformati singolarmente.
 
    D'altra parte, occorre tener presente che in alcuni casi, l'estensione di file determina in quali cartelle aggiuntive verranno cercati i file di inclusione. Questo potrebbe essere importante quando si dispone di un file incluso che include altri file.
 

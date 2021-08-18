@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d9cb25a3cea69ee9544dcb514eee7623d0c258a811089d181f6a272d39e80933
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 57157b7166f1720a8fb043751078c47f0b3da47a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404954"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058818"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo virtuale specificato.

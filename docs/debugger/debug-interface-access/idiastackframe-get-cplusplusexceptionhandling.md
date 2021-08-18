@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che indica se la gestione delle eccezioni C++ è attiva.
+description: Recupera un flag che indica se la gestione delle eccezioni C++ è in vigore.
 title: IDiaStackFrame::get_cplusplusExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: f2631820-c986-40ca-b61e-230d7a9c426c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7e0fb0d3c6006a9ee2b83bae8e02d1150530f9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e5f4f6d622497ee5ac149a74d3b35b0f7d0a6911
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156895"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161457"
 ---
 # <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-Recupera un flag che indica se la gestione delle eccezioni C++ è attiva.
+Recupera un flag che indica se la gestione delle eccezioni C++ è in vigore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,15 +35,15 @@ HRESULT get_cplusplusExceptionHandling (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce `TRUE` se la gestione delle eccezioni C++ è attiva per questo frame. in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se la gestione delle eccezioni C++ è in vigore per questo frame; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- La gestione delle eccezioni C++ non è uguale alla gestione delle eccezioni strutturata o di sistema.
+ La gestione delle eccezioni C++ non è uguale alla gestione strutturata o delle eccezioni di sistema.
 
- Per determinare se la gestione strutturata delle eccezioni è attiva, chiamare il metodo [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) .
+ Per determinare se la gestione strutturata delle eccezioni è in vigore, chiamare il [metodo IDiaStackFrame::get_systemExceptionHandling.](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

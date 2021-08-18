@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e87248314a97301fb49a8f4c4fef7db1a44f3e9d4eca7a84b58ea139ef12d188
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72322527a2a5614061e4c30bc71654d8002f8f0f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389878"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138419"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Questo metodo ottiene il contenitore di un campo.
@@ -43,7 +43,7 @@ int GetContainer(
 
 ## <a name="parameters"></a>Parametri
 `ppContainerField`\
-[out] Restituisce il contenitore come rappresentato [dall'interfaccia IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md)
+[out] Restituisce il contenitore rappresentato [dall'interfaccia IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

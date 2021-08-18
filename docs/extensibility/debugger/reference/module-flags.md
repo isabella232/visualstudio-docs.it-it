@@ -11,17 +11,18 @@ ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b78e0ec9f720307a60485283b98939dee954ff29
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 83aa45e4fdcac756dbd623abcb1203fa160c9820
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079787"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110787"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 Usato per descrivere un modulo.
@@ -65,20 +66,20 @@ public enum enum_MODULE_FLAGS {
  Specifica un modulo a 64 bit.
 
  `MODULE_FLAG_OPTIMIZED`\
- Specifica che il modulo è stato ottimizzato. Questo stato viene riflesso nella finestra **moduli** .
+ Specifica che il modulo è stato ottimizzato. Questo stato si riflette nella **finestra** Moduli.
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Specifica che il modulo non è stato ottimizzato. Questo stato viene riflesso nella finestra **moduli** . Questo è lo stato predefinito.
+ Specifica che il modulo non è stato ottimizzato. Questo stato si riflette nella **finestra** Moduli. Questo è lo stato predefinito.
 
 ## <a name="remarks"></a>Commenti
- Utilizzato per il `m_dwModuleFlags` membro della struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
+ Utilizzato per `m_dwModuleFlags` il membro della [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struttura .
 
- Questi flag possono essere combinati con un bit per bit `OR` .
+ Questi flag possono essere combinati con un bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

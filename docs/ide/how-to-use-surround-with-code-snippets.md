@@ -1,6 +1,6 @@
 ---
 title: Come usare frammenti di codice racchiusi | Microsoft Docs
-description: Informazioni su come accedere ai frammenti di codice racchiusi tramite un tasto di scelta rapida, dal menu modifica o dal menu di scelta rapida.
+description: Informazioni su come accedere ai frammenti di codice racchiusi tramite una scelta rapida da tastiera, dal menu Modifica o da un menu di scelta rapida o da un clic con il pulsante destro del mouse.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 103df21549aee2f50570b9ed52e7b70f42efacbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bd454b71bf7f2b69fd9564e474c054ee413c99f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869024"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109019"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Procedura: Usare frammenti di codice racchiusi
 
@@ -29,7 +30,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 1. Nell'**Editor di codice** selezionare il testo da racchiudere.
 
-1. Digitare **CTRL** + **K**, **CTRL** + **S**.
+1. Digitare **CTRL** + **K,** **CTRL** + **S**.
 
 1. Selezionare un frammento di codice nell'elenco tramite il mouse oppure digitare il nome del frammento e premere **TAB** o **INVIO**.
 
@@ -51,7 +52,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 1. Nell'**Editor di codice** selezionare il testo da racchiudere.
 
-1. Fare clic con il pulsante destro del mouse sul testo selezionato, quindi selezionare il comando **Racchiudi** tra dal menu di scelta rapida.
+1. Fare clic con il pulsante destro del mouse sul testo selezionato e quindi scegliere il comando **Racchiude** tra dal menu di scelta rapida.
 
 1. Selezionare il frammento di codice dallo strumento per l'inserimento di frammenti di codice e quindi premere **TAB** o **INVIO**.
 

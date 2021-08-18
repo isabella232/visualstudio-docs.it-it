@@ -16,15 +16,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: bbcd13bfb73f2b97d733b8a8f3d85038828edba30f3e1ea36588848405169390
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 211bba75c6acee1a820a2b8b4adaefb508818a04
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332274"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060076"
 ---
 # <a name="how-to-create-an-application-page"></a>Procedura: Creare una pagina dell'applicazione
-  È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint queste pagine sono denominate pagine dell'applicazione. A differenza di una pagina del sito, una pagina dell'applicazione contiene codice eseguito dietro la pagina. Per altre informazioni, vedere [Creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+  È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint, queste pagine sono denominate pagine dell'applicazione. A differenza di una pagina del sito, una pagina dell'applicazione contiene codice eseguito dietro la pagina. Per altre informazioni, vedere [Creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 ### <a name="to-create-an-application-page"></a>Per creare una pagina dell'applicazione
 
@@ -34,7 +34,7 @@ ms.locfileid: "121332274"
 
 2. Scegliere il nodo di progetto in **Esplora soluzioni**.
 
-3. Sulla barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento**.
+3. Sulla barra dei menu **scegliere** Project Aggiungi nuovo  >  **elemento**.
 
 4. Nella finestra **di dialogo Aggiungi nuovo elemento** espandere il **nodo** SharePoint e quindi scegliere l'elemento **2010.**
 

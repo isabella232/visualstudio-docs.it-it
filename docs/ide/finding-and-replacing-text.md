@@ -33,12 +33,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2baaf7bc54316a37774e1ed0a60f47196cedcf24831f2f42ee09684229ed9d6d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f12d801fc54088c79d22a3c69cd27206a8b667e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121233043"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048986"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 

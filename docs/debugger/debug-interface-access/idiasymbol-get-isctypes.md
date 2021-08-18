@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 99c234b8ecafbc206dfa75cecf4402ae5007d9635982fbb4bad5fdd4958922ef
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 85a75e87b759a84c70f8d4f92d455a6d9a4e8cc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436435"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044142"
 ---
 # <a name="idiasymbolget_isctypes"></a>IDiaSymbol::get_isCTypes
 Recupera un flag che indica se il file di simboli contiene tipi C.
@@ -41,7 +41,7 @@ HRESULT get_isCTypes(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  Questa proprietà è disponibile dal tipo `SymTagExe` di simbolo (vedere [Exe](../../debugger/debug-interface-access/exe.md)).

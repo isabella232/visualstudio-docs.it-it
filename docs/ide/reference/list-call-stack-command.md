@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 523ba80842c915fa5535ebc9d9b41d569f2ffa17134626c9cafcedf04563ce6c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7984cc74cf2116c72b9c9a35aa2cf0f272ec6cd3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121357193"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151483"
 ---
 # <a name="list-call-stack-command"></a>Comando Elenca stack di chiamate
 Visualizza lo stack di chiamate corrente.
@@ -117,5 +117,5 @@ per impostare lo stack frame corrente sul secondo frame.
 - [Comando Elenca thread](../../ide/reference/list-threads-command.md)
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)
