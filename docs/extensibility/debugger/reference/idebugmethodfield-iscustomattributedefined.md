@@ -1,6 +1,6 @@
 ---
 description: Determina se è stato definito un attributo personalizzato specifico.
-title: 'IDebugMethodField:: IsCustomAttributeDefined | Microsoft Docs'
+title: IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7cd9e1ae31e893639b41537bb5b09323cc70ff9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: afecc77ef3b38c9c6e7b106ce0f76fb5c167719f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081893"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035046"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Determina se è stato definito un attributo personalizzato specifico.
@@ -42,10 +43,10 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parametri
 `pszCustomAttributeName`\
-in Stringa che contiene il nome dell'attributo personalizzato da trovare.
+[in] Stringa contenente il nome dell'attributo personalizzato da trovare.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce S_OK se l'attributo personalizzato è definito su questo metodo; in caso contrario, restituisce S_FALSE.
+ Restituisce S_OK se l'attributo personalizzato è definito in questo metodo. In caso contrario, restituisce S_FALSE.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

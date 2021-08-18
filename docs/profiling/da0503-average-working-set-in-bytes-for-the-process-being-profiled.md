@@ -1,5 +1,5 @@
 ---
-title: DA0503-working set medio in byte per il processo sottoposto a profilatura | Microsoft Docs
+title: DA0503 - Working set medio in byte per il processo profilato | Microsoft Docs
 description: Questo messaggio indica la quantità media di memoria fisica, in byte, usata attualmente dal processo espressa in byte (il working set).
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,16 @@ ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b9913d3408a3219c2c07fa096c1f17b3a61afd8c
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: f2e593a8773127c834add09008bf40ac2a9803cd0f53b169fdf6e0bdd337a770
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465803"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333288"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Working set medio in byte del processo sottoposto a profilatura
 

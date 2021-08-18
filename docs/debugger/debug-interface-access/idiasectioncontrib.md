@@ -1,5 +1,5 @@
 ---
-description: Recupera i dati che descrivono un contributo di sezione, cio' un blocco contiguo di memoria contribuito all'immagine da un compilando.
+description: Recupera i dati che descrivono un contributo di sezione, ad esempio un blocco contiguo di memoria contributo all'immagine da un compilando.
 title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73fd193b1bc59aceb9909336d9f06bc88e765f0b21871b1bc4b0c5604bbd7694
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 639386da6ee310e37390264550d5f101df7390a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081453"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
-Recupera i dati che descrivono un contributo di sezione, cio' un blocco contiguo di memoria contribuito all'immagine da un compilando.
+Recupera i dati che descrivono un contributo di sezione, ad esempio un blocco contiguo di memoria contributo all'immagine da un compilando.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,11 +37,11 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaSectionContrib` .
 |------------|-----------------|
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|Recupera un riferimento al simbolo di compilazione che ha contribuito a questa sezione.|
 |[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Recupera la parte di sezione dell'indirizzo del contributo.|
-|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Recupera la parte di offset dell'indirizzo del contributo.|
-|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|Recupera l'indirizzo virtuale relativo dell'immagine del contributo.|
-|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Recupera l'indirizzo virtuale (VA) del contributo.|
+|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Recupera la parte offset dell'indirizzo del contributo.|
+|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|Recupera l'indirizzo RVA (Relative Virtual Address) dell'immagine del contributo.|
+|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Recupera l'indirizzo virtuale del contributo.|
 |[IDiaSectionContrib::get_length](../../debugger/debug-interface-access/idiasectioncontrib-get-length.md)|Recupera il numero di byte in una sezione.|
-|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|Recupera un flag che indica se la sezione non può essere disallocazione della memoria.|
+|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|Recupera un flag che indica se non è possibile eseguire il page out della memoria della sezione.|
 |[IDiaSectionContrib::get_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|Recupera un flag che indica se la sezione non deve essere riempita fino al limite di memoria successivo.|
 |[IDiaSectionContrib::get_code](../../debugger/debug-interface-access/idiasectioncontrib-get-code.md)|Recupera un flag che indica se la sezione contiene codice eseguibile.|
 |[IDiaSectionContrib::get_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|Recupera un flag che indica se la sezione contiene codice a 16 bit.|
@@ -63,10 +63,10 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaSectionContrib` .
 ## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Questa interfaccia viene ottenuta chiamando i [metodi IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) e [IDiaEnumSectionContribs::Next.](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) Vedere [l'interfaccia IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) per un esempio di recupero `IDiaSectionContrib` dell'interfaccia.
+Questa interfaccia viene ottenuta chiamando i [metodi IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) e [IDiaEnumSectionContribs::Next.](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) Per un esempio di come ottenere l'interfaccia, vedere l'interfaccia [IDiaEnumSectionContribs.](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) `IDiaSectionContrib`
 
 ## <a name="example"></a>Esempio
-Questa funzione mostra l'indirizzo di ogni sezione insieme ai simboli associati. Vedere [l'interfaccia IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) per vedere come `IDiaSectionContrib` viene ottenuta l'interfaccia.
+Questa funzione mostra l'indirizzo di ogni sezione insieme ai simboli associati. Vedere [l'interfaccia IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) per vedere come viene `IDiaSectionContrib` ottenuta l'interfaccia.
 
 ```C++
 void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)

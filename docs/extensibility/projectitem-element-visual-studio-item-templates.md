@@ -27,7 +27,7 @@ ms.locfileid: "121447805"
 Specifica un file incluso nel modello di elemento.
 
 > [!NOTE]
-> `ProjectItem`L'elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. In questo argomento viene illustrato `ProjectItem` l'elemento per item. Per una spiegazione `ProjectItem` dell'elemento per i modelli di progetto, vedere Elemento [ProjectItem (Visual Studio modelli di progetto).](../extensibility/projectitem-element-visual-studio-project-templates.md)
+> `ProjectItem`L'elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. In questo argomento viene illustrato `ProjectItem` l'elemento per item. Per una spiegazione `ProjectItem` dell'elemento per i modelli di progetto, vedere Elemento [ProjectItem (Visual Studio di progetto).](../extensibility/projectitem-element-visual-studio-project-templates.md)
 
  \<VSTemplate> \<TemplateContent>
  \<ProjectItem>

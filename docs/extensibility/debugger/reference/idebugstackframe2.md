@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69bb2e2f58393311b0867a7ea684b99a8df51676
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: efd95513477fce009775e2fb56110e68f2717ae31843b983845e64a970314e40
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029671"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448832"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Questa interfaccia rappresenta una singola stack frame in uno stack di chiamate in un thread specifico.
@@ -34,7 +34,7 @@ IDebugStackFrame2 : IUnknown
  Il motore di debug implementa questa interfaccia per rappresentare un stack frame.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) per recuperare [un'interfaccia IEnumDebugFrameInfo2.](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Chiamare [Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) per recuperare una [struttura FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) che contiene l'interfaccia `IDebugStackFrame2` .
+ Chiamare [EnumFrameInfo per](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) recuperare [un'interfaccia IEnumDebugFrameInfo2.](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) Chiamare [Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) per recuperare una [struttura FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) contenente l'interfaccia `IDebugStackFrame2` .
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IDebugStackFrame2` .

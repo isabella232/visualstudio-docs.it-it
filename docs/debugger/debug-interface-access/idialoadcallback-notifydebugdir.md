@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d7db4245a96ac77327e8251d1c3df312819a2423b05108e66610022f2c83065
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 48e87a968eea1ad35796a495d76584488bdac332
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121326016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081541"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Chiamato quando è stata trovata una directory di debug nel file .exe.
@@ -53,7 +53,7 @@ HRESULT NotifyDebugDir (
 ## <a name="remarks"></a>Commenti
  Il [metodo IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) richiama questo callback quando trova una directory di debug durante l'elaborazione del file eseguibile.
 
- Questo metodo elimina la necessità che il client inverti il file eseguibile e/o di debug per supportare informazioni di debug diverse da quelle trovate nel file con estensione pdb. Con questi dati, il client può riconoscere il tipo di informazioni di debug disponibili e se si trova nel file eseguibile o nel file con estensione dbg.
+ Questo metodo elimina la necessità per il client di eseguire il reverse engineer del file eseguibile e/o del file di debug per supportare informazioni di debug diverse da quelle presenti nel file con estensione pdb. Con questi dati, il client può riconoscere il tipo di informazioni di debug disponibili e se si trova nel file eseguibile o nel file con estensione dbg.
 
  La maggior parte dei client non avrà bisogno di questo callback perché il metodo apre in modo trasparente i file con estensione pdb e dbg quando necessario `IDiaDataSource::loadDataForExe` per la gestione dei simboli.
 

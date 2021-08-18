@@ -1,6 +1,6 @@
 ---
 title: Office Tastiera di Word, Impostazioni, finestra di dialogo Opzioni
-description: Informazioni su come fare in modo Microsoft Word comandi dei tasti di scelta rapida quando il documento ha lo stato attivo selezionando Schema dinamico della tastiera.
+description: Informazioni su come fare in modo Microsoft Word comandi dei tasti di scelta rapida quando il documento ha lo stato attivo selezionando Schema della tastiera dinamico.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ffdd9872431e670833ce6639706f1c27ba1f69218049f2daf4d8cbb169f8298d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ec9df6fb069994144503f89808d2b6cf64a14883
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121331195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025940"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office Tastiera di Word, Impostazioni, finestra di dialogo Opzioni
   Microsoft Office Word e Visual Studio entrambi gestiscono i tasti di scelta rapida. La stessa combinazione di tasti di scelta rapida può contenere comandi diversi in Word e Visual Studio. Quando Word è aperto in un progetto a livello di documento in Visual Studio, solo un'applicazione alla volta riceve i comandi dei tasti di scelta rapida. Per impostazione predefinita, Visual Studio tutti i comandi dei tasti di scelta rapida, ma è possibile fare in modo che Word li riceva quando il documento ha lo stato attivo selezionando Schema della **tastiera dinamico**.

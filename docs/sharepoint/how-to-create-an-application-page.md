@@ -1,6 +1,6 @@
 ---
-title: "Procedura: creare una pagina dell'applicazione | Microsoft Docs"
-description: Creare una pagina Web ASP.NET (nota anche come pagina dell'applicazione) in Visual Studio per uno o più siti di SharePoint.
+title: "Procedura: Creare una pagina dell'applicazione | Microsoft Docs"
+description: Creare una ASP.NET Web (nota anche come pagina dell'applicazione) in Visual Studio per uno o più SharePoint web.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,42 +13,43 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 74e7aab4cbc012afbf045672dbf4af248ada4c61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbcd13bfb73f2b97d733b8a8f3d85038828edba30f3e1ea36588848405169390
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925622"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332274"
 ---
-# <a name="how-to-create-an-application-page"></a>Procedura: creare una pagina dell'applicazione
-  È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint queste pagine sono denominate pagine dell'applicazione. Diversamente da una pagina del sito, una pagina dell'applicazione contiene il codice che viene eseguito dietro la pagina. Per ulteriori informazioni, vedere [creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+# <a name="how-to-create-an-application-page"></a>Procedura: Creare una pagina dell'applicazione
+  È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint queste pagine sono denominate pagine dell'applicazione. A differenza di una pagina del sito, una pagina dell'applicazione contiene codice eseguito dietro la pagina. Per altre informazioni, vedere [Creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 ### <a name="to-create-an-application-page"></a>Per creare una pagina dell'applicazione
 
 1. In Visual Studio aprire o creare un progetto SharePoint.
 
-     Per ulteriori informazioni, vedere [modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
+     Per altre informazioni, vedere Modelli [SharePoint progetto e elemento di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 2. Scegliere il nodo di progetto in **Esplora soluzioni**.
 
-3. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
+3. Sulla barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento**.
 
-4. Nella finestra di dialogo **Aggiungi nuovo elemento** espandere il nodo **SharePoint** , quindi scegliere l'elemento **2010** .
+4. Nella finestra **di dialogo Aggiungi nuovo elemento** espandere il **nodo** SharePoint e quindi scegliere l'elemento **2010.**
 
-5. Nell'elenco dei modelli di SharePoint scegliere **pagina applicazione**.
+5. Nell'elenco dei modelli SharePoint scegliere **Pagina applicazione**.
 
-6. Nella casella **nome** specificare un nome per la pagina applicazione, quindi scegliere il pulsante **Aggiungi** .
+6. Nella casella **Nome** specificare un nome per la pagina dell'applicazione e quindi scegliere il **pulsante** Aggiungi.
 
-     Visual Studio aggiunge diversi file e cartelle al progetto. Per ulteriori informazioni su questi file, vedere [creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+     Visual Studio aggiunge diverse cartelle e file al progetto. Per altre informazioni su questi file, vedere [Creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
-     Nella visualizzazione **origine** di Visual Web Developer Designer viene visualizzato il file di paging ASP.NET. È possibile progettare la pagina aggiungendo i controlli dalla **casella degli strumenti** e inserendoli nei segnaposto di contenuto. Per ulteriori informazioni, vedere [visualizzazione origine, progettazione pagina Web](/previous-versions/aspnet/ms178154\(v\=vs.100\)).
+     Nella visualizzazione **Origine** della finestra di progettazione di Visual Web Developer viene visualizzato ASP.NET file di pagina. È possibile progettare la pagina aggiungendo controlli dalla casella **degli strumenti** e posizionandoli nei segnaposto del contenuto. Per altre informazioni, vedere [Visualizzazione Origine, Progettazione pagine Web.](/previous-versions/aspnet/ms178154\(v\=vs.100\))
 
 7. Se si desidera gestire gli eventi di controllo, aggiungere il codice al file di codice per la pagina applicazione.
 
-     Il file di codice viene visualizzato se si espande il nodo per il file di paging ASP.NET con estensione *CS* o *VB* , a seconda del linguaggio del progetto. Per un esempio end-to-end di come creare una pagina dell'applicazione, vedere [procedura dettagliata: creare un'applicazione di SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
+     Il file di codice viene visualizzato se si espande il nodo per il file di pagina ASP.NET e ha estensione *cs* o *vb,* a seconda del linguaggio del progetto. Per un esempio end-to-end di come creare una pagina dell'applicazione, vedere Procedura dettagliata: Creare una SharePoint [pagina dell'applicazione](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [Procedura dettagliata: creare una pagina dell'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)
+- [Creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Procedura dettagliata: Creare una pagina SharePoint'applicazione](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

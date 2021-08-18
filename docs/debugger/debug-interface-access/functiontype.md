@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d3ff9ac477480aeb3cc4a27a03f2a6189a7752966824a9d0f80241c2daf5a7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4a0f250d62db800fc603c7047fc5ac01c82a764e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121326433"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081719"
 ---
 # <a name="functiontype"></a>FunctionType
 Ogni firma di funzione univoca è identificata da un `SymTagFunctionType` simbolo. Ogni parametro viene identificato come simbolo figlio della classe con un `SymTagFunctionArgType` tag .

@@ -1,6 +1,6 @@
 ---
 description: Ottiene la porta su cui è in esecuzione il processo.
-title: 'IDebugProcess2:: getPort | Microsoft Docs'
+title: IDebugProcess2::GetPort | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 83704cc45a1dd85031d1088bac8883a6a5996875
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4feae4e00fb21b1092156fcaf09d3dfab863000b23d497a1067e104e5c6dfdba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081776"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416287"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 Ottiene la porta su cui è in esecuzione il processo.
@@ -42,7 +43,7 @@ int GetPort(
 
 ## <a name="parameters"></a>Parametri
 `ppPort`\
-out Restituisce un oggetto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta su cui è stato avviato il processo.
+[out] Restituisce un [oggetto IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta su cui è stato avviato il processo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

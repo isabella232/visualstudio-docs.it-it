@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, IntelliSense
-description: Informazioni su come utilizzare la pagina IntelliSense della finestra di dialogo Opzioni per modificare le impostazioni che influiscono sul comportamento di IntelliSense per JavaScript.
+description: Informazioni su come usare la pagina IntelliSense della finestra di dialogo Opzioni per modificare le impostazioni che influiscono sul comportamento di IntelliSense per JavaScript.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae69061c68d76c30dcc845f6aaa922496529f9bf61c29dac1d7200ec1406b6da
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932358"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334419"
 ---
-# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Finestra di dialogo Opzioni: editor di testo \> JavaScript \> IntelliSense
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Finestra di dialogo Opzioni: \> IntelliSense JavaScript per Editor \> di testo
 
 Utilizzare la pagina **IntelliSense** della finestra di dialogo **Opzioni** per modificare le impostazioni relative al funzionamento di IntelliSense per JavaScript. Per accedere alla pagina **IntelliSense**, scegliere **Strumenti** > **Opzioni** sulla barra dei menu e quindi espandere **Editor di testo** > **JavaScript/TypeScript** > **IntelliSense**.
 
@@ -36,7 +36,7 @@ La pagina **IntelliSense** include le sezioni seguenti:
 
 ### <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-**USA solo TAB o invio per il commit**
+**Usare solo TAB o INVIO per eseguire il commit**
 
 Se si seleziona questa casella di controllo, l'editor di codice JavaScript aggiungerà istruzioni agli elementi selezionati nell'elenco di completamento solo dopo che è stato premuto **TAB** o **INVIO**. Se si deseleziona questa casella di controllo, anche altri caratteri, tra cui punti, virgole, due punti, parentesi aperte e parentesi graffe aperte ({), possono aggiungere istruzioni agli elementi selezionati.
 

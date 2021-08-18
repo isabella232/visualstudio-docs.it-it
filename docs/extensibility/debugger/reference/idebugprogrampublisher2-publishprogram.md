@@ -1,5 +1,5 @@
 ---
-description: Questo metodo rende disponibile un programma per i motori di debug (DEs) e gestione debug della sessione.
+description: Questo metodo rende disponibile un programma per i motori di debug (DE) e la gestione del debug di sessione.
 title: IDebugProgramPublisher2::P ublishProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba1ac74813ea0c3ae5b7eadb26d540b7bfe20707
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 167514d361ee3119d63682f3edf37b7ae0db193a4bd1db00c596057f9ca26419
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065229"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121449144"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Questo metodo rende disponibile un programma per i motori di debug (DEs) e gestione debug della sessione.
+Questo metodo rende disponibile un programma per i motori di debug (DE) e la gestione del debug di sessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +47,13 @@ int PublishProgram(
 
 ## <a name="parameters"></a>Parametri
 `Engines`\
-in Matrice di GUID per DEs che può avviare o connettersi al programma.
+[in] Matrice di GUID per ID che possono essere avviati o collegati a questo programma.
 
 `szFriendlyName`\
-in Nome descrittivo per il programma (visualizzato in menu o finestre di dialogo presentate all'utente).
+[in] Nome descrittivo del programma (visualizzato nei menu o nelle finestre di dialogo presentate all'utente).
 
 `pDebuggeeInterface`\
-[in] `IUnknown` interfaccia per il programma (questo valore viene usato come cookie per identificare in modo univoco il programma; lo stesso valore viene usato per annullare la pubblicazione del programma)
+[in] `IUnknown` interfaccia per il programma (questo valore viene usato come cookie per identificare in modo univoco il programma; lo stesso valore viene usato per "annullare la pubblicazione" del programma)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

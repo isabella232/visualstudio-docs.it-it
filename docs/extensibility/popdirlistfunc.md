@@ -12,14 +12,15 @@ ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c98b35d9f915e16072333c72df2e1e045850f5d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 21ccd6041eb5a6790635975150910bcb31a515aa6f800743ff94be45e36c579f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900395"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447896"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Si tratta di una funzione di callback data alla funzione [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) per aggiornare una raccolta di directory e (facoltativamente) nomi di file per individuare le directory nel controllo del codice sorgente.
@@ -61,7 +62,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="remarks"></a>Commenti
  Se il `fOptions` parametro della funzione contiene il flag , l'elenco conterrà probabilmente nomi `SccPopulateDirList` di file e nomi di `SCC_PDL_INCLUDEFILES` directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Codici di errore](../extensibility/error-codes.md)

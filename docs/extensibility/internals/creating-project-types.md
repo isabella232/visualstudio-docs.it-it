@@ -1,6 +1,6 @@
 ---
 title: Creazione Project tipi | Microsoft Docs
-description: Informazioni su come estendere Visual Studio progettazione, creazione e registrazione di un nuovo tipo di progetto che supporta le attività di programmazione.
+description: Informazioni su come estendere Visual Studio progettando, creando e registrando un nuovo tipo di progetto che supporta le attività di programmazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -27,15 +27,15 @@ ms.locfileid: "121448162"
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Project di progettazione dei tipi](../../extensibility/internals/project-type-design-decisions.md)
 
- Vengono illustrati l'elemento, la persistenza del file di progetto e le decisioni di progettazione del meccanismo di impegno da prendere prima di creare un nuovo tipo di progetto.
+ Vengono illustrati l'elemento, la persistenza del file di progetto e le decisioni di progettazione del meccanismo di impegno che è necessario prendere prima di creare un nuovo tipo di progetto.
 
 - [Elenco di controllo: Creare nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 
- Viene fornita una panoramica dei passaggi da seguire per creare un nuovo tipo di progetto che supporta attività di programmazione quali la modifica del codice e la compilazione, la compilazione, il debug e la distribuzione di applicazioni nel progetto.
+ Viene fornita una panoramica dei passaggi da eseguire per creare un nuovo tipo di progetto che supporta attività di programmazione quali la modifica del codice e la compilazione, la compilazione, il debug e la distribuzione di applicazioni nel progetto.
 
 - [Creare istanze del progetto usando le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 
- Vengono fornite informazioni su come fornire e usare una factory di progetto per creare istanze di un nuovo progetto.
+ Fornisce informazioni su come fornire e usare una factory del progetto per creare istanze di un nuovo progetto.
 
 - [Registrare un tipo di progetto](../../extensibility/internals/registering-a-project-type.md)
 
@@ -43,24 +43,24 @@ ms.locfileid: "121448162"
 
 - [Project persistenza](../../extensibility/internals/project-persistence.md)
 
- Viene illustrato l'uso di per rendere persistenti sia gli oggetti di progetto basati su file che `IPersistFileFormat` non basati su file.
+ Viene illustrato l'uso di per rendere persistenti sia gli oggetti di progetto basati su `IPersistFileFormat` file che non basati su file.
 
 - [Usare MSBuild](../../extensibility/internals/using-msbuild.md)
 
- Viene descritto come il tipo di progetto può usare il motore di compilazione per consentire agli utenti di [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] compilare da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e dalla riga di comando.
+ Descrive come il tipo di progetto può usare il motore di compilazione per consentire agli utenti di compilare da [!INCLUDE[vstecmsbuild](../../extensibility/internals/includes/vstecmsbuild_md.md)] e dalla riga di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Supporto degli strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- Viene illustrata l'architettura degli strumenti di visualizzazione del codice, ad esempio **Visualizzatore** oggetti **e Visualizzazione classi** finestra. Descrive le interfacce e i metodi usati per implementare l'esplorazione di oggetti in un VSPackage.
+ Viene illustrata l'architettura degli strumenti di visualizzazione del codice, ad esempio **visualizzatore** oggetti **e Visualizzazione classi** finestra. Descrive le interfacce e i metodi usati per implementare l'esplorazione di oggetti in un VSPackage.
 
 - [Aggiungere modelli di progetto e di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Illustra il significato dei progetti per determinare quale editor viene usato quando un elemento di progetto viene aperto e come è possibile modificare le risorse del progetto.
+ Viene illustrato il significato dei progetti per determinare quale editor viene usato quando viene aperto un elemento di progetto e come è possibile modificare le risorse del progetto.
 
-- [Installare VSPackage con il Windows di installazione](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Installare i pacchetti VSPackage con il Windows di installazione](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Illustra come assegnare al pacchetto VSPackage la propria identità univoca e come eseguire il wrapping delle DLL vsPackage e di altre informazioni in un pacchetto del programma di installazione di Windows (file *.MSI)* per la distribuzione ai clienti.
+ Illustra come assegnare al pacchetto VSPackage la propria identità univoca e come eseguire il wrapping delle DLL VSPackage e di altre informazioni in un pacchetto del programma di installazione di Windows (file *.MSI)* per la distribuzione ai clienti.
 
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
@@ -68,8 +68,8 @@ ms.locfileid: "121448162"
 
 - [VSPackages](../../extensibility/internals/vspackages.md)
 
- Fornisce una panoramica di un VSPackage, un oggetto COM installabile che estende l'ambiente e illustra come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implementare un vspackage personalizzato.
+ Fornisce una panoramica di un PACCHETTO VSPackage, un oggetto COM installabile che estende l'ambiente e illustra come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implementare un pacchetto VSPackage personalizzato.
 
 - [Project tipi](../../extensibility/internals/project-types.md)
 
- Viene illustrato come usare i progetti per modificare il codice, compilare e compilare codice ed eseguire ed eseguire il codice di debug e vengono forniti collegamenti ad argomenti dettagliati su come creare tipi di progetto.
+ Viene illustrato come usare i progetti per modificare il codice, compilare e compilare codice, eseguire ed eseguire il codice e come eseguirne il debug e vengono forniti collegamenti ad argomenti dettagliati su come creare tipi di progetto.

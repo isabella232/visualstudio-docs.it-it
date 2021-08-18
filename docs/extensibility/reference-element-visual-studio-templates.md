@@ -1,6 +1,6 @@
 ---
-title: Elemento Reference (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento Reference e sul modo in cui specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.
+title: Elemento Reference (Visual Studio Templates) | Microsoft Docs
+description: Informazioni sull'elemento Reference e su come specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,14 +16,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc23edf0897ca71f1b59f126987e42f9d3cb1a8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 84aed9d443e38e6d61069f919de115394d5f8450d56b0da930d95c1a915c08e1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068518"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336688"
 ---
-# <a name="reference-element-visual-studio-templates"></a>Elemento Reference (modelli di Visual Studio)
+# <a name="reference-element-visual-studio-templates"></a>Elemento Reference (Visual Studio modelli)
 Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.
 
  \<VSTemplate> \<TemplateContent>
@@ -42,27 +42,27 @@ Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica le informazioni su un assembly utilizzato dal modello per aggiungere un riferimento a tale assembly ai progetti. Deve essere presente un `Assembly` elemento in ogni `Reference` elemento.|
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica informazioni su un assembly, che il modello usa per aggiungere un riferimento di tale assembly ai progetti. Deve essere presente un `Assembly` elemento in ogni `Reference` elemento.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.|
+|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Raggruppa i riferimenti all'assembly aggiunti dal modello ai progetti.|
 
 ## <a name="remarks"></a>Commenti
  `Reference` è un elemento figlio obbligatorio di `References`.
 
- Gli `Reference` `References` elementi e possono essere utilizzati solo nei file con *estensione vstemplate* il cui `Type` valore di attributo è `Item` .
+ Gli elementi e possono essere usati solo nei file con estensione `Reference` `References` *vstemplate* con un `Type` valore di attributo pari a `Item` .
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato l' `TemplateContent` elemento di un modello di elemento. Il codice XML aggiunge riferimenti agli assembly *System.dll* e *System.Data.dll* .
+ Nell'esempio seguente viene illustrato `TemplateContent` l'elemento di un modello di elemento. Questo codice XML aggiunge riferimenti agli *System.dll* *eSystem.Data.dll* assembly.
 
 ```xml
 <TemplateContent>
@@ -83,5 +83,5 @@ Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggi
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

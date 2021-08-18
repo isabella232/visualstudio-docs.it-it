@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d4c946e78a611d7e4837366fbbf618f317c775d7d362f2807ccd40d084b1c9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf9753900bcccaf92cd1813103ad41173355c2c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358948"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049467"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossario del plug-in del controllo del codice sorgente
 I termini e le definizioni utili seguenti riguardano la documentazione dell'SDK del plug-in del controllo del codice sorgente.
@@ -45,7 +45,7 @@ I termini e le definizioni utili seguenti riguardano la documentazione dell'SDK 
 
  Merge Processo durante il quale due o più file di codice sorgente vengono combinati per formare un nuovo file che incorpora tutte le funzionalità dei file precedenti. Questo concetto è fondamentale nel controllo della versione in cui due o più sviluppatori lavorano contemporaneamente sui file.
 
- Project Una cartella di controllo del codice sorgente viene spesso definita progetto. Questa operazione non ha alcuna relazione con progetti o soluzioni in Visual Studio.
+ Project Una cartella di controllo del codice sorgente viene spesso definita progetto. Non ha alcuna relazione con progetti o soluzioni in Visual Studio.
 
  Plug-in Dll che fornisce funzionalità di controllo del codice sorgente implementando l'API del plug-in del controllo del codice sorgente.
 

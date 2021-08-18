@@ -70,7 +70,7 @@ Gerarchia degli elementi:
  `TemplateContent` è un elemento obbligatorio.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
+ L'esempio seguente illustra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

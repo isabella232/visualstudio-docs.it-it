@@ -1,6 +1,6 @@
 ---
 title: Riferimento per la libreria C | Microsoft Docs
-description: Leggere un'introduzione alle informazioni di riferimento per la libreria C per l'SDK del Visualizzatore di concorrenza in Visual Studio.
+description: Leggere un'introduzione alle informazioni di riferimento sulla libreria C per Concurrency Visualizer SDK in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: daee4b0295d42607177031f5ea8a3a512ee9b68e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c193f68956e8edb86e9cf6cb676e1c0f091d4508a38fd59172a33c61097081f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892424"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121333795"
 ---
 # <a name="c-library-reference"></a>Riferimento per la libreria C
 In questa sezione sono contenute informazioni di riferimento per l'SDK del visualizzatore di concorrenza.

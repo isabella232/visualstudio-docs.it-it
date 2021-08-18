@@ -1,5 +1,5 @@
 ---
-title: Elemento VSTemplate (modelli di Visual Studio) | Microsoft Docs
+title: Elemento VSTemplate (modelli Visual Studio) | Microsoft Docs
 description: Informazioni sull'elemento VSTemplate e su come contiene tutti i metadati relativi al modello di progetto, al modello di elemento o starter kit.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,14 +15,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7509614613ac80bc4f697f7f93358819eb9ecde4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b57965d7b59ca921c0b3831c24413709f85f0ff5ee8a394f357629ea66992357
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062213"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335212"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (modelli di Visual Studio)
+# <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (Visual Studio modelli)
 Contiene tutti i metadati relativi al modello di progetto, al modello di elemento o starter kit.
 
 ## <a name="syntax"></a>Sintassi
@@ -42,14 +42,14 @@ Contiene tutti i metadati relativi al modello di progetto, al modello di element
 
 | Attributo | Descrizione |
 |-----------| - |
-| `Type` | Identifica il modello come modello di progetto o modello di elemento. Questo attributo può avere un valore di `Project` o `Item` . |
-| `Version` | Specifica un numero di versione per il modello. I modelli in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] hanno un `Version` valore di attributo pari a `3.0.0` . |
+| `Type` | Identifica il modello come modello di progetto o modello di elemento. Questo attributo può avere un valore `Project` o `Item` . |
+| `Version` | Specifica un numero di versione per il modello. I modelli in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e hanno un valore di attributo pari a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] `Version` `3.0.0` . |
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica i dati che categorizzano il modello e ne definisce la modalità di visualizzazione nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica i dati che classificano il modello e definisce la modalità di visualizzazione nella finestra di dialogo Nuovo **Project** **o** Aggiungi nuovo elemento.|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica il contenuto del modello.|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Elemento facoltativo.|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Elemento facoltativo.|
@@ -58,10 +58,10 @@ Contiene tutti i metadati relativi al modello di progetto, al modello di element
  No.
 
 ## <a name="remarks"></a>Osservazioni
- L' `VSTemplate` elemento è l'elemento radice dei file con *estensione vstemplate* .
+ `VSTemplate`L'elemento è l'elemento radice dei *file con estensione vstemplate.*
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione.
+ L'esempio seguente illustra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -88,5 +88,5 @@ Contiene tutti i metadati relativi al modello di progetto, al modello di element
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)

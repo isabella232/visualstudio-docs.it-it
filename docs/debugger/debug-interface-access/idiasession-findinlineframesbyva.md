@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ea39013ba5825f3607c743c48c04b35a66547dceb1210106ba2244f99e646b8d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 56a4f01564bd6e8bcdb484fe06deceebb264b12b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081373"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
 Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato.
@@ -38,7 +38,7 @@ HRESULT findInlineFramesByVA (
 
  `va`
 
-[in] Specifica l'indirizzo come va.
+[in] Specifica l'indirizzo come va va.
 
  `ppResult`
 

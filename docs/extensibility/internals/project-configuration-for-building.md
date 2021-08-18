@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07112d61162f4007db1581c75188295e152e809cd733ff6b3220c5ed1ca742b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3ef4ab11bd4f5dca68e07a3084371024728336e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401545"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049766"
 ---
 # <a name="project-configuration-for-building"></a>Configurazione del progetto per la compilazione
 L'elenco delle configurazioni di soluzione per una determinata soluzione viene gestito dalla finestra di dialogo Configurazioni soluzione .
@@ -39,7 +39,7 @@ L'elenco delle configurazioni di soluzione per una determinata soluzione viene g
 
  Vedere [Configurazione della soluzione](../../extensibility/internals/solution-configuration.md) per informazioni relative all'aggiunta e alla ridenominazione di configurazioni per soluzioni e progetti.
 
- Project dipendenze e l'ordine di compilazione sono indipendenti dalla configurazione della soluzione, ad esempio è possibile configurare un solo albero delle dipendenze per tutti i progetti nella soluzione. Facendo clic con il pulsante destro del mouse sulla  soluzione o sul progetto e selezionando l'opzione Project **Dipendenze** o ordine di compilazione Project si apre la finestra di dialogo Project **dipendenze.** Può anche essere aperto dal menu **Project.**
+ Project dipendenze e l'ordine di compilazione sono indipendenti dalla configurazione della soluzione, in quanto è possibile configurare un solo albero delle dipendenze per tutti i progetti nella soluzione. Facendo clic con il pulsante destro del mouse sulla  soluzione o sul progetto e selezionando l'opzione Project **Dipendenze** o ordine di compilazione Project si apre la finestra di dialogo Project **dipendenze.** Può anche essere aperto dal menu **Project.**
 
  ![Project dipendenze Project](../../extensibility/internals/media/vsprojdependencies.gif "Dipendenze vsProjDependencies") dipendenze
 
@@ -50,7 +50,7 @@ L'elenco delle configurazioni di soluzione per una determinata soluzione viene g
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] I processi di compilazione includono le tipiche operazioni di compilazione e collegamento che vengono richiamate con un singolo comando di compilazione. Possono essere supportati anche altri due processi di compilazione: un'operazione pulita per eliminare tutti gli elementi di output da una compilazione precedente e un controllo aggiornato per determinare se un elemento di output in una configurazione è stato modificato.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Gli oggetti restituiscono un <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> oggetto corrispondente <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> (restituito da ) per gestire i processi di compilazione. Per segnalare lo stato di un'operazione di compilazione mentre è in corso, le configurazioni effettuano chiamate a , un'interfaccia implementata dall'ambiente e qualsiasi altro oggetto interessato agli eventi <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> di stato della compilazione.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Gli oggetti restituiscono un <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> oggetto corrispondente <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> (restituito da ) per gestire i processi di compilazione. Per segnalare lo stato di un'operazione di compilazione mentre è in corso, le configurazioni effettuano chiamate a , un'interfaccia implementata dall'ambiente e qualsiasi altro oggetto interessato agli eventi di stato <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> della compilazione.
 
  Una volta compilate, le impostazioni di configurazione possono essere usate per determinare se possono essere eseguite o meno sotto il controllo del debugger. Le configurazioni <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> implementano per supportare il debug.
 

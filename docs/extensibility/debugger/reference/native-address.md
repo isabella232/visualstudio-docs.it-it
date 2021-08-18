@@ -11,17 +11,18 @@ ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 799120bf3a068ccbc7eebad729b4312d6715af34
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 10cded1aca1dfca2a46677f851eacb4966103a5f00687b53e62bd9e78b0be125
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086469"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388968"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
@@ -44,17 +45,17 @@ public struct NATIVE_ADDRESS {
 ## <a name="members"></a>Members
 
 `unknown`\
-L'indirizzo nativo (il significato di questo dipende dal runtime e dal sistema operativo).
+L'indirizzo nativo (il significato dipende dal runtime e dal sistema operativo).
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_NATIVE` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
+Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_NATIVE` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) tabella).
 
 ## <a name="requirements"></a>Requisiti
 
-Intestazione: sh. h
+Intestazione: sh.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

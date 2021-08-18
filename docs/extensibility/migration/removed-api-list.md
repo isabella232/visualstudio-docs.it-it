@@ -11,12 +11,12 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 4501fdb465452eff1623e39c50e8c97f3bb5ca5b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 707002e3ec7038b15c7ef813b76e0d9691b264840b4134c701b2fbedbed51df1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041646"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447922"
 ---
 # <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK ha rimosso le API
 
@@ -74,7 +74,7 @@ Gli utenti `IToolTipProvider` di devono usare invece ( `IToolTipService` [docume
 
 ## <a name="ivstextscanner-and-ivsfulltextscanner"></a>IVsTextScanner e IVsFullTextScanner
 
-E `IVsTextScanner` `IVsFullTextScanner` vengono rimossi in Visual Studio 2022. Tutti gli utenti di `IVsTextScanner` o devono invece passare a `IVsFullTextScanner` `IVsTextLines` .
+e `IVsTextScanner` `IVsFullTextScanner` vengono rimossi in Visual Studio 2022. Tutti gli utenti di `IVsTextScanner` o devono invece passare a `IVsFullTextScanner` `IVsTextLines` .
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
@@ -82,7 +82,7 @@ Gli utenti `IVsTextScanner` di o devono usare invece ( `IVsFullTextScanner` `IVs
 
 ## <a name="asynchronous-solution-load-and-lightweight-solution-load"></a>Caricamento asincrono della soluzione e caricamento leggero della soluzione
 
-In Visual Studio 2022 vengono rimosse le funzionalità caricamento asincrono della soluzione (ASL) e caricamento leggero della soluzione (LSL), in quanto vengono rimossi i metodi seguenti:
+Le funzionalità caricamento asincrono della soluzione (ASL) e caricamento leggero della soluzione (LSL) vengono rimosse in Visual Studio 2022, di conseguenza vengono rimossi i metodi seguenti:
 
 ### <a name="interfaces"></a>Interfacce
 
@@ -110,7 +110,7 @@ Nessuno.
 
 ## <a name="ivsdummy"></a>IVsDummy
 
-`IVsDummy`L'oggetto viene rimosso Visual Studio 2022 e non verrà sostituito. 
+`IVsDummy`L'oggetto viene rimosso in Visual Studio 2022 e non verrà sostituito. 
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
@@ -118,7 +118,7 @@ Nessuno. Tuttavia, non dovrebbe avere alcun impatto perché l'API non ha fatto n
 
 ## <a name="microsoftvisualstudioshelltask"></a>Microsoft.VisualStudio.Shell.Task
 
-La `Microsoft.VisualStudio.Shell.Task` classe è stata rinominata in modo da non essere in conflitto con la classe molto `Microsoft.VisualStudio.Shell.TaskListItem` `System.Threading.Tasks.Task` comune.
+La `Microsoft.VisualStudio.Shell.Task` classe è stata rinominata in modo da non essere in conflitto con la classe molto `Microsoft.VisualStudio.Shell.TaskListItem` `System.Threading.Tasks.Task` diffusa.
 
 ## <a name="open-from-source-safe"></a>Apri dal codice sorgente sicuro
 
@@ -134,7 +134,7 @@ Nessuno.
 
 ## <a name="new-wpf-xaml-designer-for-net-framework"></a>Nuovo finestra di progettazione XAML WPF per .NET Framework
 
-L'finestra di progettazione XAML WPF corrente per .NET Framework è stato deprecato e verrà sostituito con un nuovo finestra di progettazione XAML WPF per .NET Framework, basato sulla stessa architettura usata per WPF finestra di progettazione XAML per .NET (.NET Core). Ciò significa anche che wpf .NET Framework modello di estendibilità dei controlli basato su .design.dll e Microsoft. Windows. Design.Extensibility non è più supportato. Il nuovo finestra di progettazione XAML WPF .NET Framework fornirà lo stesso modello di estendibilità di WPF finestra di progettazione XAML per .NET (.NET Core). Se è già stata creata un'estensione .designtools.dll per .NET (.NET Core), tale estensione funzionerà per il nuovo finestra di progettazione XAML WPF per .NET Framework. Fare riferimento al collegamento alla migrazione seguente per altre informazioni su come eseguire la migrazione al nuovo modello di estendibilità per le piattaforme WPF (.NET Framework e .NET Core) e le piattaforme UWP in futuro. 
+L'finestra di progettazione XAML WPF corrente per .NET Framework è stato deprecato e verrà sostituito con un nuovo finestra di progettazione XAML WPF per .NET Framework, basato sulla stessa architettura usata per WPF finestra di progettazione XAML per .NET (.NET Core). Ciò significa anche che il modello .NET Framework di estendibilità dei controlli WPF basato su .design.dll e Microsoft. Windows. Design.Extensibility non è più supportato. Il nuovo modello finestra di progettazione XAML WPF .NET Framework fornirà lo stesso modello di estendibilità di WPF finestra di progettazione XAML per .NET (.NET Core). Se è già stata creata un'estensione .designtools.dll per .NET (.NET Core), tale estensione funzionerà per il nuovo finestra di progettazione XAML WPF per .NET Framework. Fare riferimento al collegamento alla migrazione seguente per altre informazioni su come eseguire la migrazione al nuovo modello di estendibilità per le piattaforme WPF (.NET Framework e .NET Core) e le piattaforme UWP in futuro. 
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 

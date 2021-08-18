@@ -8,14 +8,15 @@ author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: b0703d8523066914bad00c8313600a63b8cb0f06
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 94e6a4cf733590fb2bf57c0e0f0490e6453f86539611bfa8d1d66e88c8095a6c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680136"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332521"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service per Linux
 
@@ -102,7 +103,7 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
 
 1. Nella sezione **Rete** della macchina virtuale aggiungere 5444 come porta in ingresso consentita. Per usare una porta diversa, modificare l'impostazione nel file di configurazione del daemon RTVS (*/etc/rtvs/rtvsd.config.json*).
 1. (Facoltativo) Impostare un nome DNS. È anche possibile usare l'indirizzo IP.
-1. Connettersi alla macchina virtuale con un client SSH, ad esempio PuTTY per WIndows.
+1. Connessione alla macchina virtuale usando un client SSH, ad esempio PuTTY per Windows.
 1. Seguire le istruzioni sopra riportate per un [computer Ubuntu fisico](#physical-ubuntu-computer).
 
 ### <a name="windows-subsystem-for-linux-wsl"></a>Sottosistema di Windows per Linux (WSL)

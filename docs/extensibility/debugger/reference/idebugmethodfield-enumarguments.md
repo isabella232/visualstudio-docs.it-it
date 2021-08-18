@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13ae620928aa3afce92ef12b43e3ac70f49a2467
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3edb2fe2634d11285900327312b979b54e1d398a40a926890f1428f0f6fa1ae1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118619"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417067"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 Crea un enumeratore per il tipo di ogni argomento necessario per chiamare il metodo .

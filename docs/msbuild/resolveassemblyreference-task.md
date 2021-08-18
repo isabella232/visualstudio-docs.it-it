@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d180c8cea42076e2ca4a39a57dbabe6ebbf4b1c4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2164b29d221e838c54a539f4f3d965b89e5291835007b530317829af355826a1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108408"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334081"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference (attività)
 
@@ -42,7 +42,7 @@ Determina tutti gli assembly che dipendono dall'assembly specificato, incluse di
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`AllowedAssemblyExtensions`|Parametro `String[]` facoltativo.<br /><br /> Estensioni di file di assembly da usare per la risoluzione dei riferimenti. Le estensioni di file predefinite sono *exe* e *dll*.|
-|`AllowedRelatedFileExtensions`|Parametro `String[]` facoltativo.<br /><br /> Estensioni di file da usare per una ricerca di file correlati tra loro. Le estensioni predefinite sono *pdb e* *.xml*.|
+|`AllowedRelatedFileExtensions`|Parametro `String[]` facoltativo.<br /><br /> Estensioni di file da usare per una ricerca di file correlati tra loro. Le estensioni predefinite sono *pdb* e *.xml*.|
 |`AppConfigFile`|Parametro `String` facoltativo.<br /><br /> Specifica un file *app.config* da cui analizzare ed estrarre mapping bindingRedirect. Se questo parametro è specificato, il parametro `AutoUnify` deve essere `false`.|
 |`Assemblies`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica gli elementi per cui devono essere identificati i percorsi completi e le dipendenze. Questi elementi possono avere nomi semplici come "System" o nomi sicuri come "System, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".<br /><br /> Gli elementi passati a questo parametro possono facoltativamente avere i metadati degli elementi seguenti:<br /><br /> -   `Private`: valore `Boolean` . Se `true`, l'elemento viene copiato in locale. Il valore predefinito è `true`.<br />-   `HintPath`: valore `String` . Specifica il percorso e il nome file da usare come riferimento. Viene usato quando {HintPathFromItem} è specificato nel parametro `SearchPaths`. Il valore predefinito è una stringa vuota.<br />-   `SpecificVersion`: valore `Boolean` . Se `true`, il nome esatto specificato nell'attributo `Include` deve corrispondere. Se `false`, è possibile usare qualsiasi assembly con lo stesso nome semplice. Se `SpecificVersion` non viene specificato, l'attività esamina il valore nell'attributo `Include` dell'elemento. Se l'attributo è un nome semplice, si comporta come se `SpecificVersion` è impostato su `false`. Se l'attributo è un nome sicuro, si comporta come se `SpecificVersion` è impostato su `true`.<br />     Se usato con un tipo di elemento Reference, l'attributo `Include` deve essere il nome Fusion completo dell'assembly da risolvere. L'assembly viene risolto solo se il nome Fusion corrisponde esattamente all'attributo `Include` .<br />     Quando un progetto ha come destinazione una versione di .NET Framework e fa riferimento a un assembly compilato per una versione di .NET Framework più recente, il riferimento viene risolto solo se `SpecificVersion` è impostato su `true`.<br />     Quando un progetto ha come destinazione un profilo e fa riferimento a un assembly non incluso nel profilo, il riferimento viene risolto solo se `SpecificVersion` è impostato su `true`.<br />-   `ExecutableExtension`: valore `String` . Se presente, l'assembly risolto deve avere questa estensione. Se assente, viene considerata prima di tutto l'estensione *dll*, seguita da *exe*, per ogni directory esaminata.<br />-   `SubType`: valore `String` . Solo gli elementi con metadati SubType vuoti verranno risolti in percorsi di assembly completi. Gli elementi con metadati SubType non vuoti vengono ignorati.<br />-   `AssemblyFolderKey`: valore `String` . Questi metadati sono supportati per scopi di compatibilità con le versioni precedenti. Specifica una chiave del Registro di sistema definita dall'utente, ad esempio **hklm \\ \<VendorFolder>**, che `Assemblies` deve usare per risolvere i riferimenti agli assembly.|
 |`AssemblyFiles`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica un elenco di assembly completi per i quali trovare le dipendenze.<br /><br /> Gli elementi passati a questo parametro possono facoltativamente avere i metadati degli elementi seguenti:<br /><br /> -   `Private`: valore `Boolean` facoltativo. Se true, l'elemento viene copiato in locale.<br />-   `FusionName`: metadati `String` facoltativi. Specifica il nome semplice o sicuro per questo elemento. Se questo attributo è presente, permette di risparmiare tempo perché non è necessario aprire il file di assembly per ottenere il nome.|

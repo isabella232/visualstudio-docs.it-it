@@ -1,5 +1,5 @@
 ---
-title: Debug com e ActiveX | Microsoft Docs
+title: Com e ActiveX debug | Microsoft Docs
 description: Suggerimenti sul debug di applicazioni COM e ActiveX controlli in Visual Studio. Informazioni sul debug di server e contenitori COM. Trovare gli strumenti di debug COM.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b306be70b9aa75c2f00a88882126fe46712b70679001453d8c6876a0c9965d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b44c0e7e7f9d128a204819ec964f45c264d4d715
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345933"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081789"
 ---
 # <a name="com-and-activex-debugging"></a>Debug di COM e ActiveX
 In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e di controlli ActiveX.

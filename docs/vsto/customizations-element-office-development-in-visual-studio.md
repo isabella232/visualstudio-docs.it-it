@@ -1,6 +1,6 @@
 ---
-title: '&lt;elemento customizations &gt; (sviluppo per Office in Visual Studio)'
-description: Informazioni su come l'elemento customizations dello spazio dei nomi vstov4 contiene tutte le informazioni sull'installazione e sul caricamento di ogni soluzione Office.
+title: '&lt;elemento customizations &gt; (Office sviluppo in Visual Studio)'
+description: Informazioni sul modo in cui l'elemento customizations dello spazio dei nomi vstov4 contiene tutte le informazioni sull'installazione e il caricamento di ogni Office soluzione.
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
@@ -15,16 +15,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 27b20a13d96b8fc23fcde2dbb8f14d1f1f27ceea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e9548c0cb730f9386a8a167e403161850a082e4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849931"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026525"
 ---
-# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;elemento customizations &gt; (sviluppo per Office in Visual Studio)
+# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;elemento customizations &gt; (Office sviluppo in Visual Studio)
   L'elemento `customizations` dello spazio dei nomi `vstov4` contiene tutte le informazioni sull'installazione e sul caricamento di ogni soluzione Office.
 
 ## <a name="syntax-for-document-level-customizations"></a>Sintassi per le personalizzazioni a livello di documento
@@ -65,7 +66,7 @@ ms.locfileid: "99849931"
  L'elemento `customizations` ha l'elemento figlio seguente.
 
 ### <a name="customization"></a>Personalizzazione
- Obbligatorio. L' `customization` elemento nello `vstov4` spazio dei nomi è definito in [&#60;elemento&#62; di personalizzazione &#40;sviluppo per Office in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
+ Obbligatorio. `customization`L'elemento nello spazio dei nomi è definito in&#60;`vstov4` [personalizzazione&#62; elemento &#40;Office sviluppo in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).
 
 ## <a name="example-of-a-document-level-customization"></a>Esempio di personalizzazione a livello di documento
 
@@ -73,7 +74,7 @@ ms.locfileid: "99849931"
  L'esempio di codice seguente illustra l'elemento `customizations` per una personalizzazione a livello di documento.
 
 > [!NOTE]
-> Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+> Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -87,10 +88,10 @@ ms.locfileid: "99849931"
 </vstov4:customizations>
 ```
 
-## <a name="example-of-a-vsto-add-in"></a>Esempio di componente aggiuntivo VSTO
+## <a name="example-of-a-vsto-add-in"></a>Esempio di VSTO componente aggiuntivo
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l' `customizations` elemento per un componente aggiuntivo VSTO. Si tratta di un componente aggiuntivo VSTO per Outlook che include aree del modulo. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra `customizations` l'elemento per VSTO componente aggiuntivo. Si tratta di un componente aggiuntivo VSTO per Outlook che include aree del modulo. Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -124,6 +125,6 @@ ms.locfileid: "99849931"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

@@ -11,14 +11,15 @@ ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7f9a981146d5e024333f17557f4fdbc3d35bc05
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3ff57a503094e018e65bdf9913c48cb3abc9f9c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082933"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034800"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Questa interfaccia enumera i programmi in esecuzione nella sessione di debug corrente.
@@ -30,13 +31,13 @@ IEnumDebugPrograms2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia per fornire un elenco di programmi di cui è in corso il debug dal DE.
+ Il motore di debug implementa questa interfaccia per fornire un elenco di programmi di cui DE esegue il debug.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Visual Studio chiama [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) per ottenere questa interfaccia. [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) non viene usato da Visual Studio.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IEnumDebugPrograms2` .
+ Nella tabella seguente vengono illustrati i metodi di `IEnumDebugPrograms2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -49,18 +50,18 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="remarks"></a>Commenti
  Visual Studio usa questa interfaccia per:
 
-- Popolare la finestra **moduli** (chiamando [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) e chiamando [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) in ogni programma).
+- Popolare la finestra **Moduli** chiamando [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) e quindi [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) in ogni programma.
 
-- Popolare l'elenco **Connetti a processo** (chiamando `IDebugProcess2::EnumPrograms` e quindi chiamando [QueryInterface](/cpp/atl/queryinterface) in ogni interfaccia [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) per ottenere un'interfaccia [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) ).
+- Popolare **l'elenco Associa** a processo chiamando e quindi chiamando QueryInterface su ogni interfaccia `IDebugProcess2::EnumPrograms` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) per ottenere [un'interfaccia IDebugEngineProgram2.](../../../extensibility/debugger/reference/idebugengineprogram2.md) [](/cpp/atl/queryinterface)
 
-- Genera un elenco di DEs in grado di eseguire il debug di ogni programma nel processo (usando [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).
+- Generare un elenco di DE in grado di eseguire il debug di ogni programma nel processo [(usando GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).
 
-- Applicare gli aggiornamenti di modifica e continuazione (ENC) a ogni programma (chiamando IDebugProcess2:: EnumPrograms e quindi chiamando [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).
+- Applicare gli aggiornamenti di Modifica e continuazione (ENC) a ogni programma (chiamando IDebugProcess2::EnumPrograms e quindi [chiamando GetENCUpdate).](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8469773cf57d8cac2c24f04260a6d1037de125b2691115b270a3b0c693cd675b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 68e2f923088ce16958ffbcd197baaf76f16c5733
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339294"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034877"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Imposta il valore dell'oggetto da una serie consecutiva di byte.
@@ -54,7 +54,7 @@ int SetValue(
  Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- I valori nella matrice vengono copiati in questo [oggetto IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) sostituendo qualsiasi valore esistente. La dimensione del nuovo valore può essere maggiore o minore del valore esistente. Non `IDebugObject` può essere un riferimento Null.
+ I valori nella matrice vengono copiati in questo [oggetto IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) sostituendo qualsiasi valore esistente. Le dimensioni del nuovo valore possono essere maggiori o minori del valore esistente. Non `IDebugObject` può essere un riferimento Null.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

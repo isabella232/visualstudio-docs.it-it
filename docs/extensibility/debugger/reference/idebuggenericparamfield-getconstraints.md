@@ -1,6 +1,6 @@
 ---
 description: Recupera i vincoli associati a questo parametro generico.
-title: 'IDebugGenericParamField:: GetConstraints | Microsoft Docs'
+title: IDebugGenericParamField::GetConstraints | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 80a148907c8bb3a50d41c58777efaf965872a0b4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9170e3b27572fa38c74df07df387c7c4d2fe512711b948d02fb7b8dd8805bae8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072741"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451939"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Recupera i vincoli associati a questo parametro generico.
@@ -45,10 +46,10 @@ int GetConstraints(
 
 ## <a name="parameters"></a>Parametri
 `cConstraints`\
-in Numero di vincoli.
+[in] Numero di vincoli.
 
 `ppConstraints`\
-out Restituisce una matrice che contiene i vincoli associati a questo campo.
+[out] Restituisce una matrice contenente i vincoli associati a questo campo.
 
 `pcConstraints`\
 [in, out] Numero di vincoli nella `ppConstraints` matrice.
@@ -57,7 +58,7 @@ out Restituisce una matrice che contiene i vincoli associati a questo campo.
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugGenericParamFieldType** che espone l'interfaccia [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugGenericParamFieldType** che espone [l'interfaccia IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(

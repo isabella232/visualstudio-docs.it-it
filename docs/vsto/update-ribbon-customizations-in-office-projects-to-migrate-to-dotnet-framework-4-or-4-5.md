@@ -1,6 +1,6 @@
 ---
-title: Aggiornamento delle personalizzazioni della barra multifunzione di cui è stata eseguita la migrazione .NET Framework 4.5
-description: Informazioni su come apportare modifiche al codice del progetto se il framework di destinazione viene modificato .NET Framework 4 o versioni successive.
+title: Aggiornare le personalizzazioni della barra multifunzione migrate .NET Framework 4.5
+description: Informazioni su come apportare modifiche al codice del progetto se il framework di destinazione viene modificato nel .NET Framework 4 o versione successiva.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,25 +16,25 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3c0bfb5920a4e6b005fb8a707732132854d7a99d6ce686450bcf813867ef6c51
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0f40e0e3bfd2e5aed59cddb9d99f7d89c3b2aaaa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121285153"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025693"
 ---
-# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Aggiornamento delle personalizzazioni della barra multifunzione di cui è stata eseguita la migrazione .NET Framework 4.5
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Aggiornare le personalizzazioni della barra multifunzione migrate .NET Framework 4.5
 
-  Se il progetto contiene una personalizzazione della barra multifunzione creata usando l'elemento di progetto Barra multifunzione **(finestra** di progettazione visiva), è necessario apportare le modifiche seguenti al codice del progetto se il framework di destinazione viene modificato in o versioni [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] successive.
+  Se il progetto contiene una personalizzazione della barra multifunzione creata usando l'elemento di progetto Barra multifunzione **(finestra** di progettazione visiva), è necessario apportare le modifiche seguenti al codice del progetto se il framework di destinazione viene modificato in o versione [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] successiva.
 
 - Modificare il codice della barra multifunzione generato.
 
-- Modificare il codice che crea un'istanza dei controlli barra multifunzione in fase di esecuzione, gestisce gli eventi della barra multifunzione o imposta la posizione di un componente barra multifunzione a livello di codice.
+- Modificare il codice che crea un'istanza dei controlli della barra multifunzione in fase di esecuzione, gestisce gli eventi della barra multifunzione o imposta la posizione di un componente della barra multifunzione a livello di codice.
 
 ## <a name="update-the-generated-ribbon-code"></a>Aggiornare il codice della barra multifunzione generato
  Se la versione di. il Framework di destinazione del progetto viene aggiornato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario modificare il codice generato per l'elemento barra multifunzione effettuando i passaggi seguenti. I file di codice che è necessario aggiornare dipendono dal linguaggio di programmazione e dalla modalità di creazione del progetto:
 
-- Nei Visual Basic progetti o nei progetti Visual C# creati in o eseguire tutti i passaggi nel file code-behind della barra multifunzione [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] (*YourRibbonItem*. Designer.cs o *YourRibbonItem*. Designer.vb). Per visualizzare il file code-behind nei Visual Basic, fare clic sul pulsante **Mostra** tutti i file in **Esplora soluzioni**.
+- Nei Visual Basic o nei progetti Visual C# creati in o eseguire tutti i passaggi nel file code-behind della barra [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] multifunzione (*YourRibbonItem*. Designer.cs o *YourRibbonItem.* Designer.vb). Per visualizzare il file code-behind nei Visual Basic, fare clic **sul pulsante Mostra** tutti i file in **Esplora soluzioni**.
 
 - Nei progetti Visual C# creati in Visual Studio 2008 e quindi aggiornati a , eseguire i primi due passaggi nel file di codice della barra multifunzione [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] (*YourRibbonItem*.cs o *YourRibbonItem*.vb) ed eseguire i passaggi rimanenti nel file code-behind della barra multifunzione.
 
@@ -102,13 +102,13 @@ ms.locfileid: "121285153"
     this.button1 = this.Factory.CreateRibbonButton();
     ```
 
-     Per un elenco completo dei metodi helper per i controlli barra multifunzione, vedere Creare un'istanza [dei controlli barra multifunzione](#ribboncontrols).
+     Per un elenco completo dei metodi helper per i controlli della barra multifunzione, vedere Creare un'istanza [dei controlli della barra multifunzione.](#ribboncontrols)
 
 4. Nei progetti Visual C# modificare qualsiasi riga di codice nel metodo `InitializeComponent` che usa un delegato <xref:System.EventHandler%601> per usare invece un delegato specifico della barra multifunzione.
 
      Ad esempio, si supponga che il file contenga la riga di codice seguente con la quale viene gestito l'evento <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> in un progetto destinato a .NET Framework 3.5.
 
-    \<CodeContentPlaceHolder>8 </CodeContentPlaceHolder> In un progetto destinato a o versione [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] successiva, è invece necessario usare il codice seguente.
+    \<CodeContentPlaceHolder>8 </CodeContentPlaceHolder> In un progetto destinato a o versioni [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] successive, è necessario usare invece il codice seguente.
 
     \<CodeContentPlaceHolder>9 </CodeContentPlaceHolder> Per un elenco completo dei delegati della barra multifunzione, vedere Gestire gli eventi della barra [multifunzione.](#ribbonevents)
 
@@ -121,12 +121,12 @@ ms.locfileid: "121285153"
 
 - Usando la proprietà Factory della classe Ribbon. Usare questo approccio dal codice della classe Ribbon.
 
-- Usando il metodo `Globals.Factory.GetRibbonFactory`. Usare questo approccio dal codice all'esterno della classe Ribbon. Per altre informazioni sulla classe Globals, vedere Accesso globale agli oggetti [nei Office progetti](../vsto/global-access-to-objects-in-office-projects.md).
+- Usando il metodo `Globals.Factory.GetRibbonFactory`. Usare questo approccio dal codice all'esterno della classe Ribbon. Per altre informazioni sulla classe Globals, vedere Accesso globale agli [oggetti nei Office globali.](../vsto/global-access-to-objects-in-office-projects.md)
 
   L'esempio di codice seguente dimostra come creare <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> in una classe Ribbon in un progetto destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive. 
 
-\<CodeContentPlaceHolder>10 </CodeContentPlaceHolder> 
- \<CodeContentPlaceHolder> 11 La tabella seguente elenca i controlli che è possibile creare a livello di codice e il metodo da usare per creare i controlli nei progetti che hanno come destinazione o </CodeContentPlaceHolder> [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] versioni successive.
+\<CodeContentPlaceHolder>10 11 La tabella seguente elenca i controlli che è possibile creare a livello di codice e il metodo da usare per creare i controlli nei progetti che hanno come destinazione </CodeContentPlaceHolder> 
+ \<CodeContentPlaceHolder> o </CodeContentPlaceHolder> versioni [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] successive.
 
 |Control|Metodo RibbonFactory da usare nei progetti [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive|
 |-------------| - |
@@ -153,7 +153,7 @@ ms.locfileid: "121285153"
 
  La tabella seguente elenca gli eventi della barra multifunzione e i delegati associati nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive.
 
-|Evento|Delegato da usare in progetti di [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive|
+|Event|Delegato da usare in progetti di [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive|
 |-----------| - |
 |Evento <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> in una classe Ribbon generata|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|
@@ -166,7 +166,7 @@ ms.locfileid: "121285153"
 
 - Usando la proprietà `Factory` della classe Ribbon. Usare questo approccio dal codice della classe Ribbon.
 
-- Usando il metodo `Globals.Factory.GetRibbonFactory`. Usare questo approccio dal codice all'esterno della classe Ribbon. Per altre informazioni sulla classe Globals, vedere Accesso globale agli oggetti [nei Office progetti](../vsto/global-access-to-objects-in-office-projects.md).
+- Usando il metodo `Globals.Factory.GetRibbonFactory`. Usare questo approccio dal codice all'esterno della classe Ribbon. Per altre informazioni sulla classe Globals, vedere Accesso globale agli [oggetti nei Office globali.](../vsto/global-access-to-objects-in-office-projects.md)
 
   L'esempio di codice seguente dimostra come impostare la proprietà `Position` di una scheda in una classe Ribbon in un progetto destinato a .NET Framework 3.5.
 
@@ -189,5 +189,5 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Eseguire Office le soluzioni .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Eseguire Office soluzioni di migrazione al .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)

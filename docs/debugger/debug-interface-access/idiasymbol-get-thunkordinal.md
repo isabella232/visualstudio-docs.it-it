@@ -11,14 +11,15 @@ ms.assetid: 4b28d78a-1974-4d8a-8bb7-781bf630f2f4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: de9b0fa692ff44096e962bc952b91c3f2fd314f2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 28c8cc04bd3b6869bfde35ae5dcb7bc0a88f3ce5c7d5a3d9ab4c7d01268ea82f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160610"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404682"
 ---
 # <a name="idiasymbolget_thunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 Recupera il tipo di thunk di una funzione.
@@ -34,18 +35,18 @@ HRESULT get_thunkOrdinal (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un valore dall'enumerazione [THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md) enumerazione che specifica il tipo di thunk di una funzione.
+[out] Restituisce un valore [dall'enumerazione THUNK_ORDINAL Enumeration](../../debugger/debug-interface-access/thunk-ordinal.md) che specifica il tipo di thunk di una funzione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Questa proprietà è valida solo se il simbolo è un valore di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagThunk` .
+ Questa proprietà è valida solo se il simbolo è un [valore di enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagThunk` .
 
- Un "thunk" è una porzione di codice che esegue la conversione tra uno spazio degli indirizzi di memoria a 32 bit (noto anche come spazio degli indirizzi flat) e uno spazio degli indirizzi a 16 bit (noto come spazio di indirizzi segmentato).
+ Un "thunk" è una parte di codice che esegue la conversione tra uno spazio di indirizzi di memoria a 32 bit (noto anche come spazio indirizzi flat) e uno spazio indirizzi a 16 bit (noto come spazio indirizzi segmentato).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

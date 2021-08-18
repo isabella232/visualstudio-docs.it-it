@@ -12,14 +12,15 @@ ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028d1a9aae21aae8c6368e4eea3820aabd200be6
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: cef8f5520ebd0034ff5d8852129b1f076bf53b28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901799"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050013"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedura: Supportare la struttura in un servizio di linguaggio legacy
 La struttura viene usata per espandere o comprimere aree di testo diverse. Il modo in cui viene usata la struttura può essere definito in modo diverso da linguaggi diversi. Per altre informazioni, vedere [Struttura](../../ide/outlining.md).
@@ -47,6 +48,6 @@ La struttura viene usata per espandere o comprimere aree di testo diverse. Il mo
 > [!NOTE]
 > Prestare attenzione a nascondere i caratteri di nuova riga. Il testo nascosto deve estendersi dall'inizio della prima riga all'ultimo carattere dell'ultima riga di una sezione, lasciando visibile il carattere finale della nuova riga.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: Fornire supporto per il testo nascosto in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
-- [Procedura: Fornire il supporto della struttura espansa in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Procedura: Fornire supporto della struttura espansa in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

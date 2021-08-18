@@ -1,5 +1,5 @@
 ---
-description: Accede a informazioni che descrivono il processo di mapping da un blocco di byte di testo immagine a un numero di riga del file di origine.
+description: Accede alle informazioni che descrivono il processo di mapping da un blocco di byte di testo dell'immagine a un numero di riga del file di origine.
 title: IDiaLineNumber | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 1071f7d0-1f8c-4384-933f-c49c7eb930bd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cffe65f66aee4ae53418e93480e9b3e457812247
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c1c547688dc7eb004d07a54d7b2319113bbf42fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157455"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081549"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
-Accede a informazioni che descrivono il processo di mapping da un blocco di byte di testo immagine a un numero di riga del file di origine.
+Accede alle informazioni che descrivono il processo di mapping da un blocco di byte di testo dell'immagine a un numero di riga del file di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,32 +31,32 @@ IDiaLineNumber : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-La tabella seguente illustra i metodi di `IDiaLineNumber` .
+Nella tabella seguente vengono illustrati i metodi di `IDiaLineNumber` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Recupera un riferimento al simbolo per il modulo che ha fornito i byte del testo dell'immagine.|
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Recupera un riferimento al simbolo per il compilando che ha contribuito ai byte del testo dell'immagine.|
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Recupera un riferimento all'oggetto file di origine.|
 |[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Recupera il numero di riga nel file di origine.|
-|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Recupera il numero di riga del codice sorgente in base 1 in cui termina l'istruzione o l'espressione.|
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Recupera il numero di riga di origine in base uno in cui termina l'istruzione o l'espressione.|
 |[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Recupera il numero di colonna in cui inizia l'espressione o l'istruzione.|
 |[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Recupera il numero di colonna in cui termina l'espressione o l'istruzione.|
-|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Recupera la parte della sezione dell'indirizzo di memoria in cui inizia un blocco.|
-|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Recupera la parte di offset dell'indirizzo di memoria in cui inizia un blocco.|
-|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Recupera l'indirizzo RVA (relative Virtual Address) dell'immagine di un blocco.|
-|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Recupera l'indirizzo virtuale (VA) di un blocco.|
-|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Recupera il numero di byte in un blocco.|
+|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Recupera la parte di sezione dell'indirizzo di memoria in cui inizia un blocco.|
+|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Recupera la parte dell'offset dell'indirizzo di memoria in cui inizia un blocco.|
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Recupera l'indirizzo RVA (Relative Virtual Address) dell'immagine di un blocco.|
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Recupera l'indirizzo virtuale di un blocco .|
+|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Recupera il numero di byte in un blocco .|
 |[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Recupera un identificatore univoco del file di origine per il file di origine che ha contribuito a questa riga.|
-|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Recupera un flag che indica che le informazioni sulla riga descrivono l'inizio di un'istruzione nell'origine del programma.|
-|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera l'identificatore univoco per il modulo che ha contribuito a questa riga.|
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Recupera un flag che indica che queste informazioni sulla riga descrivono l'inizio di un'istruzione nell'origine del programma.|
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera l'identificatore univoco per il compilando che ha contribuito a questa riga.|
 
 ## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando il metodo [IDiaEnumLineNumbers:: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) o [IDiaEnumLineNumbers:: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) .
+Ottenere questa interfaccia chiamando i [metodi IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) o [IDiaEnumLineNumbers::Next.](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)
 
 ## <a name="example"></a>Esempio
-La funzione seguente Visualizza i numeri di riga usati in una funzione (rappresentata da `pSymbol` ).
+La funzione seguente visualizza i numeri di riga usati in una funzione (rappresentata da `pSymbol` ).
 
 ```C++
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
@@ -136,9 +137,9 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2. h
+Intestazione: Dia2.h
 
-Libreria: diaguids. lib
+Libreria: diaguids.lib
 
 DLL: msdia80.dll
 

@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 1f3d84e5c16bd6961428552d96468cd46e4049886d85e798f29ab3cbe1362a2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 171608021bb967306a89e22bff68c7d3cd3ce639
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384379"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026252"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Procedura: Aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice
   È possibile creare un foglio di lavoro a livello di codice, quindi aggiungerlo alla raccolta di fogli di lavoro nella cartella di lavoro.
@@ -55,5 +55,5 @@ ms.locfileid: "121384379"
 - [Procedura: Eliminare fogli di lavoro da cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
 - [Procedura: Selezionare fogli di lavoro a livello di codice](../vsto/how-to-programmatically-select-worksheets.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
-- [Accesso globale agli oggetti nei progetti Office globali](../vsto/global-access-to-objects-in-office-projects.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Accesso globale agli oggetti nei Office progetto](../vsto/global-access-to-objects-in-office-projects.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

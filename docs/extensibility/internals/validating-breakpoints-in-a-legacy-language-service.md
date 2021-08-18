@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c1f14dc02880c85c9d75b343e7b2ff6e701cae8f1af930bb190df855219c1ec
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 29ab2cc7d33dc4ec94759fce2ddb9d2335688ed4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121238346"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034539"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Convalida dei punti di interruzione in un servizio di linguaggio legacy
 Un punto di interruzione indica che l'esecuzione del programma deve essere interrotta in un determinato punto mentre è in esecuzione in un debugger. Un utente può inserire un punto di interruzione in qualsiasi riga del file di origine, poiché l'editor non è a conoscenza di ciò che costituisce una posizione valida per un punto di interruzione. All'avvio del debugger, tutti i punti di interruzione contrassegnati (denominati punti di interruzione in sospeso) vengono associati alla posizione appropriata nel programma in esecuzione. Allo stesso tempo, i punti di interruzione vengono convalidati per assicurarsi che contrassegnino percorsi di codice validi. Ad esempio, un punto di interruzione in un commento non è valido perché non è presente codice in tale posizione nel codice sorgente. Il debugger disabilita i punti di interruzione non validi.

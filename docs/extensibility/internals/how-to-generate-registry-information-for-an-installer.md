@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Generare informazioni del Registro di sistema per un programma di installazione | Microsoft Docs'
-description: Informazioni su come usare l'utilità RegPkg.exe in Visual Studio generare informazioni del Registro di sistema VSPackage per l'incorporamento in un pacchetto Windows programma di installazione.
+description: Informazioni su come usare l'utilità RegPkg.exe in Visual Studio generare informazioni del Registro di sistema VSPackage per l'incorporamento in un pacchetto di installazione Windows programma di installazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,16 +15,16 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc3a5bad80b41f66a4616ed31cb091833cea17cf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 092421db5e1ee4d38193b32b07650929aadbab4e6941b57950028640b1af1ad7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042517"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448039"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Procedura: Generare informazioni del Registro di sistema per un programma di installazione
 
-*LRegPkg.exe* utilità può essere usata per generare un manifesto di registrazione per un VSPackage gestito. Il manifesto può essere incorporato in un pacchetto di Windows programma di installazione. RegPkg può anche generare un file che può essere incluso in un file di origine del programma di installazione basato sul set di Windows di strumenti XML del programma [di installazione .](https://wixtoolset.org/)
+*LRegPkg.exe* utilità può essere usata per generare un manifesto di registrazione per un VSPackage gestito. Il manifesto può essere incorporato in un pacchetto di Windows programma di installazione. RegPkg può anche generare un file che può essere incluso in un file di origine del programma di installazione basato sul set di strumenti XML Windows [Installer](https://wixtoolset.org/).
 
 > [!IMPORTANT]
 > RegPkg genera nomi di percorso specifici per il sistema di sviluppo, pertanto ogni volta che si usa RegPkg, è necessario modificare l'output per usare le proprietà formattate Windows Installer appropriate. Ad esempio, il `InprocServer32` valore deve esseremscoree.dlle i percorsi devono usare e *\<SystemFolder\>* *\<#filekey\>* *\<$componentkey\>* . La modifica dell'output in questo modo supporta i computer con Windows installati in un'unità diversa o in una directory diversa, nomi di directory localizzati e percorsi che gli utenti possono scegliere. Per altre informazioni, vedere [Formattato](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) in Windows Installer SDK. Se si seguono le convenzioni RegPkg per i percorsi del sistema di sviluppo, ad esempio gli ID file nel *formato File_, \<filename\>* è necessario apportare meno modifiche.

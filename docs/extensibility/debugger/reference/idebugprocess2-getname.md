@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e010d17191e6f039e13647908661bab4b22df5c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 920db4fbd7702b0a01997dee1570128d6d38285a35f0893985e6480fa72b25ce
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122087977"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416313"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 Ottiene il titolo, il nome descrittivo o il nome file del processo.

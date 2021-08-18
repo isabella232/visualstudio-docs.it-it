@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb628f967f9d56f954c2c639951f9317fa8efed9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1cf6376ca9ef5442e4f71588a6de7d3a4a33886ba8520f18914f03d7522fa463
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048063"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411321"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Richiamare la trasformazione del testo nel processo di compilazione
 
@@ -290,13 +290,13 @@ Queste direttive ottengono valori da T4parameterValues in MSBuild e negli host d
 
 **Perché è necessario trasformare i modelli nel server di compilazione? I modelli sono già stati trasformati in Visual Studio prima di archiviare il codice.**
 
-Se si aggiorna un file incluso o un altro file letto dal modello, Visual Studio non trasforma automaticamente il file. La trasformazione dei modelli come parte della compilazione garantisce che tutto sia aggiornato.
+Se si aggiorna un file incluso o un altro file letto dal modello, Visual Studio il file non viene trasformato automaticamente. La trasformazione dei modelli come parte della compilazione garantisce che tutto sia aggiornato.
 
 **Quali altre opzioni ci sono per trasformare i modelli di testo?**
 
 - [L'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) può essere usata negli script di comando. Nella maggior parte dei casi, è più semplice usare MSBuild.
 
-- [Richiamare la trasformazione testo in un'estensione Visual Studio.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Richiamare la trasformazione testo in un'estensione Visual Studio testo](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 - [I modelli di testo in fase di](../modeling/design-time-code-generation-by-using-t4-text-templates.md) progettazione vengono trasformati Visual Studio.
 

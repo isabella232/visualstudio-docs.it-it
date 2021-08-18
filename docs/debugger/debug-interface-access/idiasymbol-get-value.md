@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9801c3afa48dc7f926cb6e99ece583a4b21dbf24
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a04829912fc4aef2e4ff23e4e1f586f29d3b262923faaa0ba156d541884c6914
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113251"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121404650"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 Recupera il valore di una costante.

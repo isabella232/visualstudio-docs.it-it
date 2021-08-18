@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab3f467f9a3f247afc738a98ab824dd347f7c20a5d8f618b9684eb4ef1511b9f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 11305d2a63b2e461629302e4a9bf88ed6d7c21b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375884"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049831"
 ---
 # <a name="legacy-language-service-features-2"></a>Funzionalità del servizio di linguaggio legacy 2
 Negli argomenti seguenti sono elencate alcune delle funzionalità del servizio di linguaggio legacy che è possibile fornire.

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d375672fa25949f85da7551a55c606d21e5c266e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2c8a9b09ac8ad7391336816f4416a25ebd98484badb21ff81e1ec4604784eead
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028878"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414467"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informazioni rapide in un servizio di linguaggio legacy
 Informazioni rapide di IntelliSense visualizza informazioni su un identificatore nell'origine quando l'utente posiziona il cursore nell'identificatore e seleziona Informazioni rapide dal menu **IntelliSense** o posiziona il cursore del mouse sull'identificatore.  In questo modo viene visualizzata una descrizione comando con informazioni sull'identificatore. Queste informazioni sono in genere costituite dal tipo di identificatore. Quando il motore di debug è attivo, queste informazioni potrebbero includere il valore corrente. Il motore di debug fornisce valori di espressione , mentre il servizio di linguaggio gestisce solo gli identificatori.
