@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87680df78d4b7ba733f55b5070b1d89f5f2a2d07b664d2f1f38a92848d3a65b5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 15f4cd96377ea76db064e5a1eda6f0f9d35ef902
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145809"
 ---
 # <a name="bp_type"></a>BP_TYPE
 Specifica se il punto di interruzione si trova in una posizione del codice, è un percorso dati o è un altro tipo di punto di interruzione.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ead84502e6100fb9fd5349ac9308d244c5aa90640c2bbc66e3b31dd3d150943
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fc1d78840915899181046d3e1bfb19d554751c1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121237709"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144600"
 ---
 # <a name="sccbeginbatch-function"></a>Funzione SccBeginBatch
 Questa funzione avvia una sequenza batch di operazioni di controllo del codice sorgente. [SccEndBatch](../extensibility/sccendbatch-function.md) verrà chiamato per terminare il batch. Questi batch potrebbero non essere annidati.

@@ -1,6 +1,6 @@
 ---
 description: Recupera un elenco degli stack frame per questo thread.
-title: IDebugThread2::EnumFrameInfo | Microsoft Docs
+title: Interfaccia IDebugThread2::EnumFrameInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07ede35a1014d9c192740af58e5a5bdcc4ff93851c8204905384955a77da2b00
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 81f44920bfec45f4ba6860343e1fc5f19569714a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389514"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153134"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Recupera un elenco degli stack frame per questo thread.
@@ -53,7 +53,7 @@ int EnumFrameInfo (
 [in] Radice utilizzata nella formattazione delle informazioni numeriche nell'enumeratore.
 
 `ppEnum`\
-[out] Restituisce un [oggetto IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che contiene un elenco di [strutture FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) che descrivono la stack frame.
+[out] Restituisce un [oggetto IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che contiene un elenco di [strutture FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) che descrivono l'stack frame.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee504bfb1cc919fd721f66fd3e0141784d7cd7fe3f3d5df27d927ac71a27d98
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 17c02f56d29fbda871cbe74cf156deffbb1908e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133562"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedura: Modificare il punto pivot di un modello 3D
 

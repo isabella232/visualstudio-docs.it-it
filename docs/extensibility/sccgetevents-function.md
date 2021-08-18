@@ -11,14 +11,15 @@ ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9438ac10301e2da43b26a88575e44a8ad2c0bf82
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 2a5c382b7c7a5bd48d1b2db22a4c0469d0f16b2d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144444"
 ---
 # <a name="sccgetevents-function"></a>Funzione SccGetEvents
 Questa funzione recupera un evento di stato in coda.
@@ -61,10 +62,10 @@ SCCRTN SccGetEvents (
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Commenti
- Questa funzione viene chiamata durante l'elaborazione inattiva per verificare se sono stati esatti aggiornamenti dello stato per i file nel controllo del codice sorgente. Il plug-in di controllo del codice sorgente mantiene lo stato di tutti i file che conosce e ogni volta che il plug-in nota una modifica dello stato, lo stato e il file associato vengono archiviati in una coda. Quando `SccGetEvents` viene chiamato , viene recuperato e restituito l'elemento principale della coda. Questa funzione è vincolata a restituire solo le informazioni memorizzate nella cache in precedenza e deve avere un turnaround molto rapido( ovvero nessuna lettura del disco o richiesta dello stato al sistema di controllo del codice sorgente); in caso contrario, le prestazioni dell'IDE potrebbero iniziare a peggiorare.
+ Questa funzione viene chiamata durante l'elaborazione inattiva per verificare se sono stati esatti aggiornamenti di stato per i file nel controllo del codice sorgente. Il plug-in di controllo del codice sorgente mantiene lo stato di tutti i file di cui è a conoscenza e ogni volta che il plug-in indica una modifica dello stato, lo stato e il file associato vengono archiviati in una coda. Quando `SccGetEvents` viene chiamato , l'elemento principale della coda viene recuperato e restituito. Questa funzione è vincolata a restituire solo le informazioni memorizzate nella cache in precedenza e deve avere un turnaround molto rapido( ovvero nessuna lettura del disco o richiesta dello stato al sistema di controllo del codice sorgente); in caso contrario, le prestazioni dell'IDE potrebbero iniziare a peggiorare.
 
  Se non è presente alcun aggiornamento dello stato per il report, il plug-in del controllo del codice sorgente archivia una stringa vuota nel buffer a cui punta `lpFileName` . In caso contrario, il plug-in archivia il nome del percorso completo del file per il quale sono state modificate le informazioni sullo stato e restituisce il codice di stato appropriato (uno dei valori dettagliati in Codice di stato [del file](../extensibility/file-status-code-enumerator.md)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codice di stato del file](../extensibility/file-status-code-enumerator.md)

@@ -1,6 +1,6 @@
 ---
 title: Immissione della modalità di interruzione | Microsoft Docs
-description: Informazioni sul processo che si verifica per un punto di interruzione rilevato in una funzione, sull'esecuzione fino alla riga di codice sorgente in corrispondenza del cursore o sull'esecuzione fino a un punto di interruzione.
+description: Informazioni sul processo che si verifica per un punto di interruzione rilevato in una funzione, l'esecuzione alla riga di codice sorgente in corrispondenza del cursore o l'esecuzione fino a un punto di interruzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79e864849059e7d3e3543dbe2df6c2b79c720d7730e45431cfaa4ec8a4d26dca
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 01d52a2596dfc0d5b67cdcf5208c0819aaa099c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342986"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153563"
 ---
 # <a name="enter-break-mode"></a>Entrare in modalità di interruzione
-Nelle informazioni seguenti viene descritto il processo che si verifica quando viene rilevato un punto di interruzione dopo l'esecuzione di un'istruzione in una funzione, l'esecuzione fino alla riga di codice sorgente che contiene il cursore o l'esecuzione fino a un punto di interruzione.
+Le informazioni seguenti descrivono il processo che si verifica quando viene rilevato un punto di interruzione dopo l'esecuzione di un'istruzione in una funzione, l'esecuzione alla riga di codice sorgente in cui è presente il cursore o l'esecuzione fino a un punto di interruzione.
 
 ## <a name="break-mode-process"></a>Processo in modalità di interruzione
 
@@ -38,9 +38,9 @@ Nelle informazioni seguenti viene descritto il processo che si verifica quando v
 
     - [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) per ottenere le informazioni sul codice sorgente
 
-    - [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) per ottenere il nome del file
+    - [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) per ottenere il nome file
 
-    - [IDebugDocumentContext2::GetStatementRange per](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) ottenere l'intervallo di istruzioni
+    - [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) per ottenere l'intervallo di istruzioni
 
     - [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) per ottenere informazioni sulla memoria
 

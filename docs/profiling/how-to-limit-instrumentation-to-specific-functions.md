@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 23924193840226117c6e63541f8288faf8962be2781d634b1040964f3202571f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6333ea82f3b1b708561033b40ffa0cd0cdefb41f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131313"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a funzioni specifiche
 È possibile limitare la strumentazione e la raccolta dei dati a una o più funzioni impostando le opzioni nella pagina **Avanzate** di **Sessione prestazioni** o nelle pagine delle proprietà del file binario di destinazione:

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare un modello 3D di base'
-description: Informazioni su come usare l'Editor modelli per creare un modello 3D di base, inclusa l'aggiunta di oggetti a una scena, la traduzione di selezioni e altre attività.
+description: Informazioni su come usare l'Editor modelli per creare un modello 3D di base, inclusa l'aggiunta di oggetti a una scena, la traduzione delle selezioni e altre attività.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 11d99d94a972f14ca0945d7e405dbb372724a7d15c0a2697c21d3403852abdde
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a9bb4e2c847cdc198f3955cccb2f3b86cd85dcff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153667"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Procedura: Creare un modello 3D di base
 
@@ -43,7 +43,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Per creare un modello 3D semplificato di una casa
 
-1. Creare un modello 3D da usare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Attività iniziali in [Editor modelli](../designers/model-editor.md).
+1. Creare un modello 3D da usare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Attività iniziali [nell'Editor modelli](../designers/model-editor.md).
 
 2. Aggiungere un cubo alla scena. Nella finestra **Casella degli strumenti**, in **Forme**, selezionare **Cubo** e spostarlo nell'area di progettazione.
 
@@ -61,7 +61,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
     ![Una lato del cubo è stato ulteriormente estruso](../designers/media/gfx_model_demo_house_extend.png)
 
-7. Eseguire la triangolazione del modello. Sulla barra degli strumenti dell'Editor modelli scegliere **Strumenti**  >    >  **avanzati Triangolazione**.
+7. Eseguire la triangolazione del modello. Sulla barra degli strumenti dell'editor dei modelli **scegliere Strumenti**  >    >  **avanzati Triangolazione.**
 
 8. Creare il tetto della casa. Passare alla modalità di selezione bordo scegliendo **Seleziona bordo** nella barra degli strumenti dell'editor dei modelli e quindi scegliere il cubo per attivarlo. Durante la selezione dei bordi visualizzati qui, tenere premuto **CTRL**:
 

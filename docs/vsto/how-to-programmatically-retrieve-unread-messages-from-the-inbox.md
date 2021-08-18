@@ -1,6 +1,6 @@
 ---
 title: Ottenere messaggi non letti dalla posta in arrivo a livello di codice
-description: Informazioni su come usare Visual Studio recuperare a livello di codice i messaggi non letti dalla posta in arrivo in Microsoft Outlook.
+description: Informazioni su come usare i Visual Studio per recuperare a livello di codice i messaggi non letti dalla posta in arrivo in Microsoft Outlook.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,15 +18,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 10de77f2ab2d23d1f63643cd7f37094d62402f26d9d57ca2d03df4db844a681f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e86ff6198def71423076b62a0da6206887903676
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366186"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115265"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Procedura: Recuperare messaggi non letti dalla posta in arrivo a livello di codice
-  In questo esempio vengono recuperati i messaggi di posta elettronica non letti Outlook **posta** in arrivo e viene visualizzato il numero di elementi.
+  In questo esempio vengono recuperati i messaggi di posta elettronica non letti Outlook posta in **arrivo** e viene visualizzato il numero di elementi.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "121366186"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>Vedere anche
-- [Usare elementi di posta elettronica](../vsto/working-with-mail-items.md)
+- [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
 - [Introduzione alla programmazione VSTO componenti aggiuntivi](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Procedura: Creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)
 - [Procedura: Inviare messaggi di posta elettronica a livello di codice](../vsto/how-to-programmatically-send-e-mail-programmatically.md)

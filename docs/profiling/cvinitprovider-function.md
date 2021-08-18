@@ -1,6 +1,6 @@
 ---
 title: Funzione CvInitProvider | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvInitProvider (libreria C).
+description: Vedere le informazioni di riferimento per la funzione CvInitProvider (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f23d3ceadf2ee8d1a0c6b53b395c379caf505179
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0432a57deee0b88cd0b30d16cc741b391250b55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940995"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131780"
 ---
 # <a name="cvinitprovider-function"></a>Funzione CvInitProvider
 Inizializza il provider di marcatori. Deve essere chiamata prima di qualsiasi altra funzione SDK del visualizzatore di concorrenza.
@@ -45,4 +46,4 @@ HRESULT CvInitProvider(
  **Intestazione:** *cvmarkers.h*
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)
+- [Informazioni di riferimento sulla libreria C++](../profiling/cpp-library-reference.md)

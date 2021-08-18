@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a08181747c347160b3393f8762b910f791ace0c506b136379ed3d4aea1e19b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f90fef207241225dfdfecc649299cf1132bdd56e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448962"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118463"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Recupera un valore che corrisponde alla metrica specificata dell'analizzatore di espressioni.
@@ -56,7 +56,7 @@ private int GetEEMetricDword(
 [in] Nome della metrica.
 
 `pdwValue`\
-[out] Restituisce il valore che corrisponde alla stringa della metrica.
+[out] Restituisce il valore corrispondente alla stringa della metrica.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

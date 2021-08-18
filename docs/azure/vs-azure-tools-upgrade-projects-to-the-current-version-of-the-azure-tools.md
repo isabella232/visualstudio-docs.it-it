@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 2fbe048d232c7129709ed1655bcb0dc86b11eb8d9b497c859fffdd921db9fa52
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1bf1fc53eb6444772beb5566ef4b9141af8176b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121363191"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147479"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Come aggiornare i progetti alla versione attuale degli strumenti di Microsoft Azure per Visual Studio
 ## <a name="overview"></a>Panoramica

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a61ab05230b1c2573e38b3de60b2c8d57bd08b1984dfa87f8853ad0ff13471d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3ed6183e1e159b1883d268a2514c597df7d09197
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345020"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161738"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
 Determina se le query del Registro di sistema possono essere usate per individuare i percorsi di ricerca dei simboli.

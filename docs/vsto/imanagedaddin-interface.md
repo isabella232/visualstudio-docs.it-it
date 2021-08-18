@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a8706bedc9d56099602650120dc12146cd0b7a802bc5114d90f6953db3a14b17
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8fe3ac3ca61d54f14cd72387623461dd5057740b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147907"
 ---
 # <a name="imanagedaddin-interface"></a>interfaccia IManagedAddin
-  Implementare l'interfaccia IManagedAddin per creare un componente che carica componenti VSTO componenti aggiuntivi. Questa interfaccia è stata aggiunta nel sistema di Microsoft Office 2007.
+  Implementare l'interfaccia IManagedAddin per creare un componente che carica i componenti VSTO componenti aggiuntivi. Questa interfaccia è stata aggiunta nel sistema di Microsoft Office 2007.
 
 ## <a name="syntax"></a>Sintassi
 

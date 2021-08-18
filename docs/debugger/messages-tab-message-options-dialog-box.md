@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b81fd00da997912a0b9ad1ece7abc28136f8e7c7bb06fd91dd571d5cd752b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 05b7a13c07a92beaabbacaca3461ae1fa0d29609
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146823"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Scheda Messaggi, Finestra di dialogo Opzioni messaggio
 Usare la **scheda Messaggi** per selezionare i tipi di messaggio da elencare in [Visualizzazione messaggi](../debugger/messages-view.md)e per specificare i criteri di ricerca dei messaggi. Per visualizzare la [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere Log Messages **(Registra** messaggi) dal menu **Spy.**

@@ -1,6 +1,6 @@
 ---
 title: UnInit | Microsoft Docs
-description: Usare il metodo UnInit() di VsgDbg per finalizzare e chiudere il file di log grafico e liberare risorse di registrazione.
+description: Usare il metodo UnInit() di VsgDbg per finalizzare e chiudere il file di log di grafica e liberare le risorse di registrazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0534ef85ec1bebb9483e4d815447476004394efa0dfe61dc27b2ba404209c562
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 031d14efcf7985e70f7276ec1f6475b2e02adf7c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154070"
 ---
 # <a name="uninit"></a>UnInit
 Finalizza il file di log di grafica, lo chiude e libera le risorse utilizzate durante la registrazione attiva delle informazioni grafiche da parte dell'applicazione.

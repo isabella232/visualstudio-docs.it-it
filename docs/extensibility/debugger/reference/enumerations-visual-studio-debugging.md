@@ -1,5 +1,5 @@
 ---
-description: Di seguito sono riportate le enumerazioni per l Visual Studio SDK di debug.
+description: Di seguito sono riportate le enumerazioni per Visual Studio Debugging SDK.
 title: Enumerazioni (Visual Studio debug) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,31 +13,31 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f9592569b436808b5e8d713e1e11ce6b890e20e6a1e5f8d2972d8173cc97b77
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ee22e24dc2bb8047cec6e9fd96c4b978ed5eb3c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390346"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145575"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerazioni (debug di Visual Studio)
 Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l'SDK di debug.
 
-- [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Specifica come interpretare un ID processo nella struttura AD_PROCESS_ID [processo.](../../../extensibility/debugger/reference/ad-process-id.md)
+- [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Specifica come interpretare un ID processo nella [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura .
 
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Specifica i tipi di un indirizzo.
 
-- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Specifica dove si trova un assembly.
+- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Specifica la posizione di un assembly.
 
-- [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) Specifica il motivo per cui il motore di debug (DE) deve connettersi a un nodo del programma.
+- [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) Specifica il motivo per cui il motore di debug (DE) si connette a un nodo di programma.
 
 - [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) Specifica lo stile della condizione del punto di interruzione per i punti di interruzione in sospeso e associati.
 
 - [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) Specifica il tipo di errore di un punto di interruzione.
 
-- [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Fornisce flag facoltativi che possono essere utilizzati per specificare informazioni aggiuntive quando si imposta un punto di interruzione.
+- [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Fornisce flag facoltativi che possono essere utilizzati per specificare informazioni aggiuntive durante l'impostazione di un punto di interruzione.
 
-- [BP_FLAGS90](../../../extensibility/debugger/reference/bp-flags90.md) Enumera i valori validi per i flag facoltativi che possono essere usati per specificare informazioni aggiuntive durante l'impostazione di un punto di interruzione. Questa enumerazione estende [l'BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) di dati.
+- [BP_FLAGS90](../../../extensibility/debugger/reference/bp-flags90.md) Enumera i valori validi per i flag facoltativi che possono essere utilizzati per specificare informazioni aggiuntive durante l'impostazione di un punto di interruzione. Questa enumerazione estende [](../../../extensibility/debugger/reference/bp-flags.md) l BP_FLAGS enumere.
 
 - [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) Specifica il tipo di posizione del punto di interruzione per una richiesta di punto di interruzione.
 
@@ -49,17 +49,17 @@ Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-qu
 
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Specifica se il punto di interruzione si trova in una posizione del codice, è un percorso dati o è un altro tipo di punto di interruzione.
 
-- [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) Indica il motivo per cui un punto di interruzione è stato non associato.
+- [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) Indica il motivo per cui un punto di interruzione è stato scollegato.
 
 - [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) Specifica le informazioni da recuperare su una risoluzione non riuscita di un punto di interruzione.
 
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) Specifica le informazioni da recuperare su una richiesta di punto di interruzione.
 
-- [BPREQI_FIELDS90](../../../extensibility/debugger/reference/bpreqi-fields90.md) Enumera i valori validi che specificano le informazioni da recuperare su una richiesta di punto di interruzione. Questa enumerazione estende [l'BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) di dati.
+- [BPREQI_FIELDS90](../../../extensibility/debugger/reference/bpreqi-fields90.md) Enumera i valori validi che specificano le informazioni da recuperare su una richiesta di punto di interruzione. Questa enumerazione estende [l'BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumerazione .
 
-- [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Specifica le informazioni da recuperare sulla risoluzione corretta di un punto di interruzione.
+- [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) Specifica quali informazioni devono essere recuperate sulla risoluzione corretta di un punto di interruzione.
 
-- [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) Usato per determinare se un programma può arrestare l'esecuzione dopo aver raggiunto un punto specifico dell'esecuzione.
+- [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) Utilizzato per determinare se un programma può arrestare l'esecuzione dopo aver raggiunto un punto specifico dell'esecuzione.
 
 - [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) Valore che indica il protocollo utilizzato per comunicare tra un server di debug e il pacchetto di debug.
 
@@ -83,7 +83,7 @@ Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-qu
 
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) Specifica l'ambito del flusso disassembly.
 
-- [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e visualizzarli all'utente.
+- [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e visualizzarli all'utente.
 
 - [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) Specifica i criteri per confrontare due contesti di documento.
 
@@ -93,7 +93,7 @@ Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-qu
 
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) Rappresenta i motivi per cui Modifica e continuazione non è disponibile.
 
-- [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) Specifica i flag che controllano la valutazione dell'espressione.
+- [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) Specifica i flag che controllano la valutazione delle espressioni.
 
 - [EVALFLAGS90](../../../extensibility/debugger/reference/evalflags90.md) Enumera i valori validi per i flag che controllano la valutazione dell'espressione. Questa enumerazione estende [l'enumerazione EVALFLAGS.](../../../extensibility/debugger/reference/evalflags.md)
 
@@ -105,11 +105,11 @@ Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-qu
 
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Specifica il tipo di campo contenuto in un [oggetto IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
-- [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) Enumera tipi aggiuntivi di campi che un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) può contenere. Questa enumerazione estende [l'FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) di dati.
+- [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) Enumera tipi aggiuntivi di campi che un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) può contenere. Questa enumerazione estende [](../../../extensibility/debugger/reference/field-kind.md) l FIELD_KIND enumere.
 
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) Specifica i modificatori per un tipo di campo.
 
-- [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Specifica le informazioni da recuperare su un oggetto stack frame.
+- [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Specifica le informazioni da recuperare su un oggetto stack frame specificato.
 
 - [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) Specifica il tipo di nome host.
 
@@ -123,7 +123,7 @@ Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-qu
 
 - [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) Usato per descrivere un computer.
 
-- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) Specifica il tipo e il motivo del messaggio.
+- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) Specifica il tipo di messaggio e il motivo.
 
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) Usato per descrivere un modulo.
 
@@ -131,7 +131,7 @@ Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-qu
 
 - [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) Specifica lo stato dei simboli per un modulo.
 
-- [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Seleziona l'opzione case per i nomi corrispondenti.
+- [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Seleziona l'opzione di distinzione tra maiuscole e minuscole per i nomi corrispondenti.
 
 - [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) Specifica il tipo di un oggetto dall'analizzatore di espressioni.
 
@@ -147,7 +147,7 @@ Di seguito sono riportate le enumerazioni per [!INCLUDE[vsprvs](../../../code-qu
 
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) Descrive o specifica le proprietà di un processo.
 
-- [PROGRAM_DESTROY_FLAGS](../../../extensibility/debugger/reference/program-destroy-flags.md) Enumera i valori validi dei flag di eliminazione del programma.
+- [PROGRAM_DESTROY_FLAGS](../../../extensibility/debugger/reference/program-destroy-flags.md) Enumera i valori validi dei flag di eliminazione programma.
 
 - [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) Specifica le proprietà associate a un provider di programmi.
 

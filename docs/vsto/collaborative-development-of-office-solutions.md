@@ -1,6 +1,6 @@
 ---
 title: Sviluppo collaborativo di Office soluzioni
-description: Informazioni su come più sviluppatori possono lavorare a un progetto Office nello stesso modo in cui collaborano ad altri Visual Studio progetto.
+description: Informazioni su come più sviluppatori possono lavorare su Office progetto nello stesso modo in cui collaborano ad altri Visual Studio progetto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,15 +18,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cbe0c1544cb2d99b8958385affe1d972d5dc71c5f7a8192adcd63257f1cacd71
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 27efa4a1191840cc312700c3361b7c35ea9d251b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130702"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Sviluppo collaborativo di Office soluzioni
-  Più sviluppatori possono lavorare a un Office progetto nello stesso modo in cui collaborano ad altri Visual Studio progetti. Visual Studio individua correttamente l Microsoft Office installazione in ogni computer, anche se Office installato in percorsi diversi. Esistono tuttavia alcune considerazioni importanti da tenere presenti.
+  Più sviluppatori possono lavorare su un Office progetto nello stesso modo in cui collaborano ad altri Visual Studio progetti. Visual Studio l'installazione Microsoft Office in ogni computer, anche se Office in percorsi diversi. Esistono tuttavia alcune considerazioni importanti da tenere presenti.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -46,6 +46,6 @@ ms.locfileid: "121268430"
  I certificati temporanei generati automaticamente in fase di compilazione non sono protetti da password. I certificati contengono il nome di accesso dello sviluppatore e altre informazioni personali. Se si distribuiscono personalizzazioni firmate da certificati temporanei, altri utenti potrebbero essere in grado di accedere a queste informazioni.
 
 ## <a name="see-also"></a>Vedi anche
-- [Soluzioni Office sicurezza](../vsto/securing-office-solutions.md)
+- [Proteggere Office soluzioni](../vsto/securing-office-solutions.md)
 - [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)
 - [Creare Office soluzioni](../vsto/building-office-solutions.md)

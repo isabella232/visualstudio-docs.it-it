@@ -11,14 +11,15 @@ ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 568e442f5294b3aaa4cd8c99d7bbd1f769581ca6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: eba0654d97d37633ca1b2afce45b83de1a96bc1b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087743"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133081"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Questa interfaccia rappresenta un tipo di puntatore.
@@ -33,22 +34,22 @@ IDebugPointerField : IDebugContainerField
  Il provider di simboli implementa questa interfaccia per rappresentare un puntatore.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Usare [QueryInterface](/cpp/atl/queryinterface) per ottenere questa interfaccia dall'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_POINTER` .
+ Usare [QueryInterface](/cpp/atl/queryinterface) per ottenere questa interfaccia [dall'interfaccia IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_POINTER` .
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
- Oltre ai metodi sulle `IDebugField` `IDebugContainerField` interfacce e, questa interfaccia implementa il metodo seguente:
+## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
+ Oltre ai metodi sulle interfacce e , questa interfaccia `IDebugField` `IDebugContainerField` implementa il metodo seguente:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive la destinazione del puntatore.|
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Restituisce un [oggetto IDebugField che](../../../extensibility/debugger/reference/idebugfield.md) descrive la destinazione del puntatore.|
 
 ## <a name="remarks"></a>Commenti
- In C/C++ un puntatore può essere un contenitore se viene usato con la notazione di matrice. Ad esempio, dato `char *pString` , `pString` ha un tipo di puntatore a `char` . `pString[3]` dispone del tipo di un contenitore che è un puntatore a `char` che fa riferimento al quarto elemento del contenitore.
+ In C/C++ un puntatore può essere un contenitore se viene usato con la notazione di matrice. Ad esempio, dato `char *pString` , ha un tipo di `pString` puntatore a `char` . `pString[3]` ha il tipo di un contenitore che è un puntatore a `char` che fa riferimento al quarto elemento di tale contenitore.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh. h
+ Intestazione: sh.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 80392102edaa243e7a9a42fb5dbca4dca1c171de71cce73db91dcf63e6ec4c0f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1d8979cb41da78823967cc5d5f9c0f9f6e48fb76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404722"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147150"
 ---
 # <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
 Recupera un flag che specifica se il tipo di dati definito dall'utente viene visualizzato in un ambito lessicale non globale.

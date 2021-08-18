@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c773aa6870e92ffbc0f7ef8712c2ed65e6f37e6eeb89906a1c29dd55644becb1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4b2de7a03dae8bcd0fcbebd4dcd2aaba7aba6f09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131469"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>Procedura: Connettere il profiler a un servizio nativo per raccogliere statistiche dell'applicazione tramite la riga di comando (VSPerfCmd)
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un servizio nativo e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.

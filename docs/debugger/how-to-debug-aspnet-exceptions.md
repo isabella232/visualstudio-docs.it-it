@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 68292ce2feee48ed91185719bbd038ef3a2c1c5fb9d1b5cbd565f4492ad68c4a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d8e1ffd49153ba51b8b636ba30d756a3975680b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161258"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedura: debug di eccezioni ASP.NET
 Il debug delle eccezioni è una parte importante dello sviluppo di una potente applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per informazioni generali su come eseguire il debug delle eccezioni, vedere [Gestione delle eccezioni con il debugger.](../debugger/managing-exceptions-with-the-debugger.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 888d17e7616162120835ef77cee47a24e149b5cf4902b78b5a819c8f451b6b48
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7f2a496c7c4d2414ea793c12f16d9b5ebdb2057c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452278"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111541"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 Ottiene il tipo di posizione del punto di interruzione di questa richiesta del punto di interruzione.

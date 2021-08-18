@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b1dce6d9f8e410f4cf0b642a2f50eeb864a0d54d7fedafa3a524e76615ebb83
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c69ab2bedfda4394c0256db7040de39e8a520ca4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401596"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124815"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procedura: Aggiornare un'Visual Studio predefinita
 È possibile aggiornare un'Visual Studio nel sistema usando **Estensioni e aggiornamenti** per installare la versione aggiornata. Se si crea una versione aggiornata di un'estensione, è possibile indicarla come aggiornata incrementando il numero di versione nel manifesto VSIX.
 
- Gli aggiornamenti vengono installati quando il manifesto VSIX dell'estensione in ingresso ha lo stesso di quello installato `ID` e un numero `Version` superiore. Se il `Version` numero è uguale o inferiore, non è possibile installare il pacchetto. Se i `ID` valori non corrispondono, il pacchetto non ancora installato viene riconosciuto come estensione separata.
+ Gli aggiornamenti vengono installati quando il manifesto VSIX dell'estensione in ingresso ha lo stesso di quello installato `ID` e un numero `Version` superiore. Se il `Version` numero è uguale o inferiore, il pacchetto non può essere installato. Se i valori non corrispondono, il pacchetto non ancora installato viene `ID` riconosciuto come estensione separata.
 
  Per evitare conflitti durante lo sviluppo, è consigliabile disinstallare le versioni precedenti delle estensioni in corso e disinstallare o disabilitare eventuali altre estensioni potenzialmente in conflitto.
 
@@ -37,9 +37,9 @@ ms.locfileid: "121401596"
 
 3. Nel riquadro centrale fare clic sull'aggiornamento da installare.
 
-     Il numero di versione dell'estensione aggiornata viene visualizzato nel riquadro di destra, insieme ad altre informazioni.
+     Il numero di versione dell'estensione aggiornata viene visualizzato nel riquadro destro, insieme ad altre informazioni.
 
-4. Nella parte inferiore del riquadro destro fare clic su **Aggiorna**.
+4. Nella parte inferiore del riquadro destro fare clic su **Aggiorna.**
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Per pubblicare un aggiornamento di un'estensione
 
@@ -48,21 +48,21 @@ ms.locfileid: "121401596"
     > [!IMPORTANT]
     > Tutte le estensioni utente non firmate non vengono aggiornate automaticamente. È consigliabile firmare sempre le estensioni.
 
-2. In **Esplora soluzioni** aprire *source.extension.manifest*.
+2. In **Esplora soluzioni** aprire *source.extension.manifest.*
 
 3. Nella finestra di progettazione del manifesto aumentare il valore del numero nel **campo** Versione.
 
 4. Salvare la soluzione e compilarla.
 
-5. Upload nuovo file *vsix* (nella cartella *\bin\Debug del progetto) nel sito \* Web [Visual Studio Marketplace.](https://marketplace.visualstudio.com/vs)
+5. Upload il nuovo file con estensione *vsix* (nella cartella *\bin\Debug del progetto) nel sito \* Web Visual Studio [Marketplace.](https://marketplace.visualstudio.com/vs)
 
-     Quando un utente con una versione precedente dell'estensione apre Estensioni e **aggiornamenti,** la nuova versione verrà visualizzata nell'elenco **Aggiornamenti,** a condizione che lo strumento sia impostato per la ricerca automatica degli aggiornamenti.
+     Quando un utente che dispone di una versione precedente dell'estensione apre  Estensioni e aggiornamenti **,** la nuova versione verrà visualizzata nell'elenco Aggiornamenti, a condizione che lo strumento sia impostato per la ricerca automatica degli aggiornamenti.
 
-     È possibile abilitare o disabilitare il controllo  automatico degli aggiornamenti nella parte inferiore del  riquadro Aggiornamenti (**Abilita/disabilita** il rilevamento automatico degli aggiornamenti disponibili ), che modifica l'impostazione Controlla aggiornamenti **in** Opzioni strumenti Estensioni dell'ambiente  >    >    >  **e aggiornamenti**.
+     È possibile abilitare o disabilitare il controllo  automatico degli aggiornamenti nella parte inferiore del  riquadro Aggiornamenti (**Abilita/disabilita** il rilevamento automatico degli aggiornamenti disponibili), che modifica l'impostazione Verifica la disponibilità di aggiornamenti **in** Strumenti Opzioni Estensioni ambiente  >    >    >  **e aggiornamenti**.
 
     > [!NOTE]
-    > A partire da Visual Studio 2015 Update 2, è possibile specificare **(in** Estensioni e aggiornamenti dell'ambiente opzioni strumenti ) se si vogliono gli aggiornamenti automatici per le estensioni per utente, tutte le estensioni utente o entrambe  >    >    >  (impostazione predefinita).
+    > A partire da Visual Studio 2015 Update 2, è possibile specificare **(in** Strumenti Opzioni Estensioni ambiente e aggiornamenti ) se si desiderano gli aggiornamenti automatici per le estensioni per utente, tutte le estensioni utente o entrambe  >    >    >  (impostazione predefinita).
 
 ## <a name="see-also"></a>Vedi anche
 - [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Trovare e usare le Visual Studio personalizzate](../ide/finding-and-using-visual-studio-extensions.md)
+- [Trovare e usare le Visual Studio seguenti](../ide/finding-and-using-visual-studio-extensions.md)

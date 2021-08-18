@@ -1,5 +1,5 @@
 ---
-title: Elementi Combos | Microsoft Docs
+title: Elemento Combos | Microsoft Docs
 description: L'elemento Combo raggruppa gli elementi Combo, che definiscono i comandi visualizzati in una casella combinata. Questo articolo contiene un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3396a7c8587ea9a4d8a6da660df467c2d9baeaf686c42c68efbdcce754650195
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de5beb57536a3683ec2096d118b661022175dca1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121278916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146134"
 ---
 # <a name="combos-element"></a>Elemento Combos
-Raggruppa [gli elementi dell'elemento Combo.](../extensibility/combo-element.md)
+Raggruppa [gli elementi dell'elemento](../extensibility/combo-element.md) Combo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,20 +40,20 @@ Raggruppa [gli elementi dell'elemento Combo.](../extensibility/combo-element.md)
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
 |[Elemento Combos](../extensibility/combos-element.md)|Raggruppa gli elementi combo.|
-|[Elemento combo](../extensibility/combo-element.md)|Definisce i comandi visualizzati in una casella combinata.|
+|[Elemento combinato](../extensibility/combo-element.md)|Definisce i comandi visualizzati in una casella combinata.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti del pacchetto VSPackage.|
 
 ## <a name="example"></a>Esempio
 

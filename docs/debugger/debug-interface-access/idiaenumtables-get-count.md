@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 81687fad1bb60d418bb88a099ad39758cb0b7faf7eaf252a65ce33d92739bb2b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c2bcbe87119c349ed1108bd3264b2c6fa70d13ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345124"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129239"
 ---
 # <a name="idiaenumtablesget_count"></a>IDiaEnumTables::get_Count
 Recupera il numero di tabelle.

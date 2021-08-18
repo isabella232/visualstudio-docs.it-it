@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 857598491d628538eeb49905613daa3348c6ef9d371cc80f10c87f02a898160e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d366401b76e328f23ab77a65563fbe90a4fb7f29
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345164"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129295"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Recupera un numero specificato di simboli nella sequenza di enumerazione.

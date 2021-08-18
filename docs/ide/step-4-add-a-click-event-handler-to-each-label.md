@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 865258edefa07ed824d76762503f29fedfc7335cbc1709288d1392b7bc54d751
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 088a6a3b3f606b2c857afc624d044f5d4a8f0b04
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121232120"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132054"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta
 

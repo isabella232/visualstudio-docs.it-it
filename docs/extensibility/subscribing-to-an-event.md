@@ -1,6 +1,6 @@
 ---
-title: Sottoscrizione di un'istanza di | Microsoft Docs
-description: Informazioni su come creare una finestra degli strumenti che risponde agli eventi in una tabella documento in esecuzione in Visual Studio SDK.
+title: Sottoscrizione a un'istanza di | Microsoft Docs
+description: Informazioni su come creare una finestra degli strumenti che risponde agli eventi in una tabella di documenti in esecuzione in Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,28 +11,29 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01271016eed9a4a157b333a2f0435589b0a028d5
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f35da7cb7b4129af3aaf6a3289cd2bb0c8b7d10e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899393"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117397"
 ---
 # <a name="subscribing-to-an-event"></a>Sottoscrizione a un evento
-Questa procedura dettagliata illustra come creare una finestra degli strumenti che risponde agli eventi in una tabella di documenti in esecuzione (RDT). Una finestra degli strumenti ospita un controllo utente che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> . Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> metodo connette l'interfaccia agli eventi .
+Questa procedura dettagliata illustra come creare una finestra degli strumenti che risponde agli eventi in una tabella di documenti in esecuzione (RDT). Una finestra degli strumenti ospita un controllo utente che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> . Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> metodo connette l'interfaccia agli eventi.
 
 ## <a name="prerequisites"></a>Prerequisiti
  A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installazione di Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
-## <a name="subscribing-to-rdt-events"></a>Sottoscrizione di eventi RDT
+## <a name="subscribing-to-rdt-events"></a>Sottoscrizione a eventi RDT
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>Per creare un'estensione con una finestra degli strumenti
 
-1. Creare un progetto denominato **RDTExplorer** usando il modello VSIX e aggiungere un modello di elemento della finestra degli strumenti personalizzato denominato **RDTExplorerWindow**.
+1. Creare un progetto denominato **RDTExplorer** usando il modello VSIX e aggiungere un modello di elemento della finestra degli strumenti personalizzato denominato **RDTExplorerWindow.**
 
-     Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [Creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
+     Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [Creazione di un'estensione con una finestra degli strumenti.](../extensibility/creating-an-extension-with-a-tool-window.md)
 
 #### <a name="to-subscribe-to-rdt-events"></a>Per sottoscrivere eventi RDT
 
@@ -55,7 +56,7 @@ Questa procedura dettagliata illustra come creare una finestra degli strumenti c
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3. Modificare la classe in modo che, oltre a derivare dalla classe `RDTExplorerWindow` <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> , implementi <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> l'interfaccia .
+3. Modificare la classe in modo che, oltre `RDTExplorerWindow` a derivare dalla classe , <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> implementi <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> l'interfaccia .
 
     ```csharp
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents
@@ -64,7 +65,7 @@ Questa procedura dettagliata illustra come creare una finestra degli strumenti c
 
 4. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
 
-    - Implementare l'interfaccia . Posizionare il cursore sul nome IVsRunningDocTableEvents. Verrà visualizzata una lampadina nel margine sinistro. Fare clic sulla freccia GIÙ a destra della lampadina e selezionare **Implementa interfaccia**.
+    - Implementare l'interfaccia . Posizionare il cursore sul nome IVsRunningDocTableEvents. Verrà visualizzata una lampadina nel margine sinistro. Fare clic sulla freccia GIÙ a destra della lampadina e selezionare **Implementa interfaccia.**
 
 5. In ogni metodo nell'interfaccia sostituire la riga `throw new NotImplementedException();` con la seguente:
 
@@ -80,7 +81,7 @@ Questa procedura dettagliata illustra come creare una finestra degli strumenti c
 
      Contiene il cookie restituito dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> metodo .
 
-7. Eseguire l'override del metodo Initialize() di RDTExplorerWindow per registrarsi per gli eventi RDT. È consigliabile ottenere sempre i servizi nel metodo Initialize() di ToolWindowPane, non nel costruttore.
+7. Eseguire l'override del metodo Initialize() di RDTExplorerWindow per eseguire la registrazione per gli eventi RDT. È consigliabile ottenere sempre i servizi nel metodo Initialize() di ToolWindowPane, non nel costruttore.
 
     ```csharp
     protected override void Initialize()
@@ -91,7 +92,7 @@ Questa procedura dettagliata illustra come creare una finestra degli strumenti c
     }
     ```
 
-     Il <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> servizio viene chiamato per ottenere un'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> . Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> metodo connette gli eventi RDT a un oggetto che implementa , in questo caso un oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> RDTExplorer.
+     Il <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> servizio viene chiamato per ottenere un'interfaccia. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> metodo connette gli eventi RDT a un oggetto che implementa , in questo caso un oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> RDTExplorer.
 
 8. Aggiornare il metodo Dispose() di RDTExplorerWindow.
 
@@ -129,12 +130,12 @@ Questa procedura dettagliata illustra come creare una finestra degli strumenti c
     }
     ```
 
-11. Compilare il progetto e avviare il debug. Viene Visual Studio'istanza sperimentale.
+11. Compilare il progetto e avviare il debug. Verrà visualizzata Visual Studio'istanza sperimentale.
 
-12. Aprire **RDTExplorerWindow** **(Visualizza/Altre finestre/RDTExplorerWindow).**
+12. Aprire **RDTExplorerWindow** **(Visualizza/Altro Windows/RDTExplorerWindow**).
 
      Verrà **visualizzata la finestra RDTExplorerWindow** con un elenco di eventi vuoto.
 
 13. Aprire o creare una soluzione.
 
-     Quando `OnBeforeLastDocument` vengono generati gli eventi e , la notifica di ogni evento viene visualizzata `OnAfterFirstDocument` nell'elenco degli eventi.
+     Quando `OnBeforeLastDocument` vengono generati gli eventi e , la notifica di ogni evento viene visualizzata `OnAfterFirstDocument` nell'elenco di eventi.

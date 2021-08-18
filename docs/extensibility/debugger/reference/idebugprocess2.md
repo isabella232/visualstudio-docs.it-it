@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: dede0cad4da45ccb5df4fe528214f4e0e22d2cdc9d5fe472a41be544e248c1cf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 47acaa5d1776bd35fd6c418dab9abd3158b6ac8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132834"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Questa interfaccia rappresenta un processo in esecuzione su una porta. Se la porta è la porta locale, in genere `IDebugProcess2` rappresenta un processo fisico nel computer locale.

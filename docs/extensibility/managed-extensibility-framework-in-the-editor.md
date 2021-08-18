@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7a98dee0c42188cfc684064744fde0c3e683d70c19d1909de98669edb46b1af
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 52492e48ed9b5e2150f31c18ac07f66e45486054
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359130"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102311"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework nell'editor
 L'editor viene compilato usando Managed Extensibility Framework (MEF). È possibile compilare componenti MEF personalizzati per estendere l'editor e il codice può utilizzare anche i componenti dell'editor.
@@ -30,7 +30,7 @@ L'editor viene compilato usando Managed Extensibility Framework (MEF). È possib
 
  Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF).](/dotnet/framework/mef/index)
 
-### <a name="component-parts-and-composition-containers"></a>Componenti e contenitori di composizione
+### <a name="component-parts-and-composition-containers"></a>Parti componenti e contenitori di composizione
  Una parte del componente è una classe o un membro di una classe che può eseguire una o entrambe le operazioni seguenti:
 
 - Utilizzare un altro componente

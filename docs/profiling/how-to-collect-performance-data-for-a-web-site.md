@@ -1,6 +1,6 @@
 ---
-title: Raccolta dei dati sulle prestazioni per un sito Web | Microsoft
-description: Informazioni su come usare la creazione guidata sessione di prestazioni per raccogliere dati sulle prestazioni per un'app Web ASP.NET. L'app viene eseguita nel computer locale e può essere aperta in Visual Studio.
+title: Raccogliere dati sulle prestazioni per un sito Web | Microsoft
+description: Informazioni su come usare la Procedura guidata prestazioni per raccogliere dati sulle prestazioni per un ASP.NET app Web. L'app viene eseguita nel computer locale e può essere aperta in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,15 +17,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e42522967b39c381e834ea93ccb1965aeb97fe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88a705ad675c5d546e884460b1b105bba18c77ac
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886223"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131456"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 
@@ -58,7 +59,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
     - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .
 
-    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **profilo JavaScript** .
+    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la **casella di controllo Profila JavaScript.**
 
 6. Fare clic su **Avanti**.
 
@@ -104,7 +105,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
 ## <a name="see-also"></a>Vedi anche
 
-[Panoramica](../profiling/overviews-performance-tools.md) 
- [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
- di prestazioni [Informazioni sui valori](../profiling/understanding-instrumentation-data-values.md) 
- dei dati di strumentazione [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)
+[Panoramiche](../profiling/overviews-performance-tools.md) 
+ [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md) 
+ [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md) 
+ [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

@@ -1,6 +1,6 @@
 ---
 description: Specifica l'unità di passaggio per l'esecuzione di istruzioni.
-title: Istruzione STEPUNIT | Microsoft Docs
+title: STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48b9a6c4b008fe44dcfcbfe0599d871bc609513c79801510369b657eaa819b9c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6c078f7f2840ed4123c83850bea5843992e460e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448546"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132301"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Specifica l'unità di passaggio per l'esecuzione di istruzioni.
@@ -48,7 +48,7 @@ enum enum_STEPUNIT {
 
 ## <a name="fields"></a>Campi
  `STEP_STATEMENT`\
- Istruzione per istruzione.
+ Passaggi per istruzione.
 
  `STEP_LINE`\
  Passaggi per riga.

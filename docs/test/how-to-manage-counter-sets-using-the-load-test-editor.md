@@ -1,6 +1,6 @@
 ---
 title: Insiemi di contatori di test di carico
-description: Informazioni su come utilizzare il Editor test di carico gestione di per gestire gli insiemi di contatori scegliendo i computer e assegnando insiemi di contatori da raccogliere da ogni computer.
+description: Informazioni su come usare il Editor test di carico gestione per gestire gli insiemi di contatori scegliendo i computer e assegnando insiemi di contatori da raccogliere da ogni computer.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -15,12 +15,13 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 684715ed8ac29a3c85d0ea46799a2e14fb9722bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: fd18acc2f5ca22cfa70c9a28042f460cb0e7f8bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961443"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148545"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedura: Gestire insiemi di contatori usando l'Editor test di carico
 

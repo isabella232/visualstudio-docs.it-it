@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo | Microsoft Docs'
-description: Seguire un'indagine che trova uno stato del dispositivo non configurato correttamente. Mostra l'uso dell'elenco di eventi di grafica, delle fasi della pipeline grafica e della Cronologia pixel grafica.
+title: 'Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo | Microsoft Docs'
+description: Seguire un'indagine che rileva uno stato del dispositivo non configurato correttamente. Mostra l'uso di Elenco eventi di grafica, Fasi pipeline grafica e Cronologia pixel grafica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a8eff8a088823bc46363d2e5ea7b40b3e2b8478e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fe9a05bd1c819ae2b17f6898341efcea7e47b49
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890435"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154174"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo
 Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa della configurazione non corretta dello stato del dispositivo.

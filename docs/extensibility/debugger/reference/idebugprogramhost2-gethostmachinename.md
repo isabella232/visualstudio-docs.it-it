@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9b94c4a8478036c27ec964ef7f0d197bf205fe4d2b247d9c6d5a4c252101dd6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6ee45f9c46ed9bbab870bafcdfee306ffd4f2957
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132600"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
 Ottiene il nome del computer in cui è in esecuzione il processo che ospita questo programma.

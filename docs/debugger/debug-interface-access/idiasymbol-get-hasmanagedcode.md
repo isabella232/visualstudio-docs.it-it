@@ -11,14 +11,15 @@ ms.assetid: e40f82f5-88fe-4a9b-b594-3605f42773ec
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1cac64e0e6419749a07d75e0beb9f5f8d4a566c5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0bd8c7dd0154eb25289d3a9e44fe24097d817b24
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160946"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128687"
 ---
 # <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 Recupera un flag che indica se il modulo contiene codice gestito.
@@ -34,22 +35,22 @@ HRESULT get_hasManagedCode(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-out Restituisce `TRUE` se il modulo contiene codice gestito; in caso contrario, restituisce `FALSE` , il codice è codice non gestito.
+[out] Restituisce `TRUE` se il modulo contiene codice gestito; in caso contrario, restituisce , il codice è codice non `FALSE` gestito.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Questa proprietà è disponibile dal `SymTagCompilandDetails` tipo di simbolo (vedere [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
+ Questa proprietà è disponibile dal tipo `SymTagCompilandDetails` di simbolo (vedere [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedi anche

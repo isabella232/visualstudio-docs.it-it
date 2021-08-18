@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f5912453c7104b9d6b5f15c46c195413f7d82194505d203a8256fb124409d2a5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 50e3101a313583f40b5c348dca9e095a5d6dd395
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362961"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147070"
 ---
 # <a name="idiasymbolget_targetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 Recupera l'indirizzo RVA (Relative Virtual Address) di una destinazione thunk.

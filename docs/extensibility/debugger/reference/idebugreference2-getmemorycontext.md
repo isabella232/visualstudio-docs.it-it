@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7148be6288df7a494d64732a73d52281d622a0b761794cd2c0c55ae370e89de8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bda8c1fa28e66506e3c761f33b962300b167b0f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338592"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118502"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 Ottiene un contesto di memoria di un riferimento. Riservato per utilizzi futuri.

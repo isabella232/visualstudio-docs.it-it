@@ -1,6 +1,6 @@
 ---
-title: Scheda file di paging, finestra di dialogo Proprietà processo | Microsoft Docs
-description: Utilizzare la scheda file di paging delle proprietà del processo per esaminare il file di paging di un processo. Questo articolo descrive le impostazioni disponibili.
+title: Scheda File di pagina, finestra di dialogo Proprietà processo | Microsoft Docs
+description: Usare la scheda File di paging di Proprietà processo per esaminare il file di paging di un processo. Questo articolo descrive le impostazioni disponibili.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,22 +10,23 @@ ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b762fc95d510d5b99a2d4f8f939ef1801b5e70cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c1c2e703a0c07e36594bc5fa67c5da6f2e060d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891566"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153862"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Scheda File di paging, finestra di dialogo Proprietà processo
-Utilizzare la scheda **file** di paging per esaminare il file di paging di un processo. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
+Usare la **scheda File di** paging per esaminare il file di paging di un processo. Per visualizzare la [finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo su una finestra [Visualizzazione](../debugger/processes-view.md) processi. Selezionare un nodo di processo nell'albero, quindi **scegliere Proprietà** **dal** menu Visualizza.
 
- Nella scheda **file di paging** sono disponibili le impostazioni seguenti:
+ Nella scheda File di pagina sono disponibili **le impostazioni** seguenti:
 
 |Voce|Descrizione|
 |-----------|-----------------|
-|**Byte file di paging**|Numero corrente di pagine utilizzate da questo processo nel file di paging. Il file di paging archivia le pagine di dati utilizzate dal processo, ma non incluse in altri file. Il file di paging viene usato da tutti i processi e la mancanza di spazio nel file di paging può causare errori durante l'esecuzione di altri processi.|
-|**N. max byte file di paging**|Numero massimo di pagine utilizzate dal processo nel file di paging.|
-|**Errori di pagina**|Numero di errori di pagina dei thread in esecuzione in questo processo. Un errore di pagina si verifica quando un thread fa riferimento a una pagina di memoria virtuale che non si trova nel proprio working set nella memoria principale. Pertanto, la pagina non verrà recuperata dal disco se è presente nell'elenco di standby e quindi già nella memoria principale o se è utilizzata da un altro processo con cui la pagina è condivisa.|
+|**Byte file di paging**|Numero corrente di pagine utilizzato da questo processo nel file di paging. Il file di paging archivia le pagine di dati utilizzate dal processo, ma non contenute in altri file. Il file di paging viene usato da tutti i processi e la mancanza di spazio nel file di paging può causare errori durante l'esecuzione di altri processi.|
+|**N. max byte file di paging**|Numero massimo di pagine utilizzate da questo processo nel file di paging.|
+|**Errori di pagina**|Numero di errori di pagina da parte dei thread in esecuzione in questo processo. Un errore di pagina si verifica quando un thread fa riferimento a una pagina di memoria virtuale che non si trova nel proprio working set nella memoria principale. Di conseguenza, la pagina non verrà recuperata dal disco se è presente nell'elenco di standby e quindi è già presente nella memoria principale o se viene utilizzata da un altro processo con cui la pagina è condivisa.|

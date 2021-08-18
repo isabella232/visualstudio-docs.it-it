@@ -11,17 +11,18 @@ ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 293b3635dd1a725f90ce63a0aa2f8568d5b324e3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6537f5fe122dd0d5093893efedf121de1393fbbf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078175"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145874"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 Specifica se il punto di interruzione dei dati viene emulato o implementato nell'hardware.
@@ -46,12 +47,12 @@ public enum enum_BP_RES_DATA_FLAGS {
 Specifica che il punto di interruzione dei dati viene emulato.
 
 ## <a name="remarks"></a>Commenti
-Utilizzato per il `dwFlags` membro della struttura [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .
+Utilizzato per `dwFlags` il membro della [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

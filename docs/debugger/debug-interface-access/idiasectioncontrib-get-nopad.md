@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fd371a69f493e68be60f10a5cb997786db6103b29cb440d40a9b2807cb87c9c4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a6b522beb9237ca2d72b066ac16caf80827132c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454943"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161565"
 ---
 # <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
 Recupera un flag che indica se la sezione non deve essere riempita fino al limite di memoria successivo.

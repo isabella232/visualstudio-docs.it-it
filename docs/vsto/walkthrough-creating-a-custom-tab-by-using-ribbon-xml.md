@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 49d93a5251c0eb45b3ea9246b0850ad57ae9b1bd2590d681ba44dd3f995025d7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2aec6648b1a432166f4ba9205fb07beef91f5ebf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121225907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147557"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procedura dettagliata: Creare una scheda personalizzata usando xml della barra multifunzione
   Questa procedura dettagliata illustra come creare una scheda personalizzata della barra multifunzione usando **l'elemento Barra multifunzione (XML).**

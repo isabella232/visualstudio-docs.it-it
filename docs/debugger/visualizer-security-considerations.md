@@ -1,6 +1,6 @@
 ---
-title: Considerazioni sulla sicurezza del Visualizzatore | Microsoft Docs
-description: Un visualizzatore per il debugger di Visual Studio deve essere eseguito con attendibilità totale. Quando si scrive il proprio, tenere presente le possibili minacce alla sicurezza e adottare le precauzioni appropriate.
+title: Considerazioni sulla sicurezza del visualizzatore | Microsoft Docs
+description: Un visualizzatore per Visual Studio debugger deve essere eseguito con attendibilità totale. Durante la scrittura, tenere presente le possibili minacce alla sicurezza e adottare le precauzioni appropriate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,14 +16,15 @@ ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c735fe4a14a0412fbb41b28b5a40e27083c3bca6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07e1265eef9026f247f924301bcbcd18188e68d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146563"
 ---
 # <a name="visualizer-security-considerations"></a>Considerazioni sulla sicurezza del visualizzatore
 La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. Attualmente non sono noti attacchi in grado di sfruttare tali rischi, ma gli sviluppatori devono essere a conoscenza della loro esistenza e adottare misure di sicurezza adeguate come descritto in questo argomento al fine di impedire eventuali attacchi futuri.
@@ -40,7 +41,7 @@ La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. At
  Per ovviare a questa vulnerabilità, tenere presenti le interfacce esposte dal visualizzatore.
 
 ## <a name="see-also"></a>Vedi anche
-- [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)
+- [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

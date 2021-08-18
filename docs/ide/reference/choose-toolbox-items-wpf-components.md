@@ -15,16 +15,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d690dddd660227155b36b6b97aff7cc3582d95d397fd5f2fe05ac90b5873724
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9ca6d95de8aec31042309d2b06e3b3b4b1ce5ff2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151756"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
-Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, **scegliere** Scegli elementi della  Casella degli strumenti dal **menu** Strumenti per visualizzare la finestra di dialogo Scegli elementi della Casella degli strumenti e quindi selezionare la relativa scheda **Componenti WPF.** Per ordinare i componenti elencati, selezionare un'intestazione di colonna qualsiasi.
+Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, **scegliere** Scegli elementi della  casella degli strumenti dal **menu** Strumenti per visualizzare la finestra di dialogo Scegli elementi della casella degli strumenti e quindi selezionare la scheda **Componenti WPF.** Per ordinare i componenti elencati, selezionare qualsiasi intestazione di colonna.
 
 - Quando la casella di controllo accanto a un componente è selezionata, l'icona di tale componente viene visualizzata nella **casella degli strumenti**.
 

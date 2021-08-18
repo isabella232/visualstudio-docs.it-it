@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fdd8cde2628a76c700e29b58885e45ff608fe0b3043df8b26e161a748066eaa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ce77f01c2cae0e1f56b9a55b41f291dc7814a2b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117904"
 ---
 # <a name="supported-event-types"></a>Tipi di evento supportati
 Visual Studio debug supporta attualmente i tipi di evento seguenti:
@@ -56,7 +56,7 @@ Visual Studio debug supporta attualmente i tipi di evento seguenti:
 > [!NOTE]
 > [L'interfaccia IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) è necessaria per tutti gli eventi.
 
-|Evento|IDebugProgram2|IDebugThread2|Arresto di eventi|
+|Event|IDebugProgram2|IDebugThread2|Arresto di eventi|
 |-----------|--------------------|-------------------|---------------------|
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Consentito, ma non obbligatorio|Consentito, ma non obbligatorio|No|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Obbligatoria|Obbligatoria|Sì|

@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bbfd3d2b7dc0a69e9443dcbd44c3e6232ba1c1a9a9336dcfc643564d9dd28ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 34ad9f8da134241ce818cf37022a28fd8509b7f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121429485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117371"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 

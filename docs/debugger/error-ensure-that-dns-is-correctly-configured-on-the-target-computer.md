@@ -1,5 +1,5 @@
 ---
-title: Verificare che il DNS sia configurato correttamente nel computer di destinazione | Microsoft Docs
+title: Assicurarsi che DNS sia configurato correttamente nel computer di destinazione | Microsoft Docs
 description: Questo errore si verifica quando il computer di destinazione non è in grado di risolvere il nome del computer host del debugger Visual Studio.
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -13,14 +13,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cf61e50cc1a6a831625d9cb7c0b12a286e20239f
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 871163bb5ee4e29eebd037b1c499addc06fc8d96
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161418"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Errore: verificare che il DNS sia configurato correttamente nel computer di destinazione.
 Quando si tenta di eseguire il debug remoto, potrebbe essere visualizzato il seguente messaggio di errore:
@@ -35,4 +36,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Per ulteriori informazioni, visitare il [sito Web Microsoft Windows](https://www.microsoft.com/windows/) e cercare le **impostazioni di modifica TCP/IP**.
 
-  Se è possibile risolvere il problema DNS, è possibile provare a eseguire il debugger remoto con un account diverso. L'errore si verifica quando è in esecuzione il debugger remoto con l'account del sistema locale o l'account del servizio di rete. Se si esegue il debugger remoto con un altro account, è possibile usare l'autenticazione NTLM, che non richiede il DNS. . Per la procedura, vedere [errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Se è possibile risolvere il problema DNS, è possibile provare a eseguire il debugger remoto con un account diverso. L'errore si verifica quando è in esecuzione il debugger remoto con l'account del sistema locale o l'account del servizio di rete. Se si esegue il debugger remoto con un altro account, è possibile usare l'autenticazione NTLM, che non richiede il DNS. . Per la procedura, vedere Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di [connettersi a questo computer.](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)

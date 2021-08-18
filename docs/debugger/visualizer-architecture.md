@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e73f1746bf4a5b5ee597ad905392cd1f95dc2135379e89b102cce4381c70aa7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3def27cc4960852bce00fdc65f575231c9be871f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121418584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160998"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:
@@ -90,7 +90,7 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
-- [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Procedura dettagliata: Scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)

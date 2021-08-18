@@ -1,6 +1,6 @@
 ---
 title: Strumenti di debug COM | Microsoft Docs
-description: Ottenere le descrizioni degli strumenti di debug che consentono di testare e ispezionare i programmi COM, ad esempio il Visualizzatore oggetti OLE/COM.
+description: Ottenere descrizioni degli strumenti di debug che consentono di testare ed esaminare i programmi COM, ad esempio il Visualizzatore oggetti OLE/COM.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,14 +21,15 @@ ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ccdd59d523c771671abfd8511ecc6bcd34732b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4f35cc78c94db0925d3682a06cc27d30770f68a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857753"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129714"
 ---
 # <a name="com-debugging-tools"></a>Strumenti di debug COM
 
@@ -44,9 +45,9 @@ Per la verifica delle applicazioni, sono disponibili anche gli esempi ActiveX MF
 
 ### <a name="see-also"></a>Vedi anche
 
-- [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [Debug com e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Strumenti di debug COM](../debugger/com-debugging-tools.md)
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
-- [Esempio OCLIENT: viene illustrata un'applicazione contenitore di modifica visiva](/previous-versions/c2f86tzd(v=vs.100))
-- [Esempio SUPERPAD: illustra un server di modifica visiva che modifica il testo con CEditView](/previous-versions/ms177543(v=vs.100))
+- [Esempio OCLIENT: illustra un'applicazione contenitore di modifica visiva](/previous-versions/c2f86tzd(v=vs.100))
+- [Esempio SUPERPAD: illustra un server di modifica visiva che modifica il testo usando CEditView](/previous-versions/ms177543(v=vs.100))

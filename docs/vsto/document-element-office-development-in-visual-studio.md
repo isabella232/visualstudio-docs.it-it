@@ -1,6 +1,6 @@
 ---
-description: L'elemento document dello spazio dei nomi vstov4 archivia informazioni specifiche della personalizzazione per le personalizzazioni a livello di documento.
-title: '&lt;&gt;elemento document (sviluppo per Office in Visual Studio)'
+description: L'elemento documento dello spazio dei nomi vstov4 archivia informazioni specifiche della personalizzazione per le personalizzazioni a livello di documento.
+title: '&lt;Elemento &gt; document (Office sviluppo in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3563169bd9b567cd974248bf4185cb9bc8a7b022
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 66ef774db63c01a1b622c6ea937bd29444bc3d71
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148298"
 ---
-# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento document (sviluppo per Office in Visual Studio)
-  L' `document` elemento dello `vstov4` spazio dei nomi archivia informazioni specifiche della personalizzazione per le personalizzazioni a livello di documento.
+# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;Elemento &gt; document (Office sviluppo in Visual Studio)
+  `document`L'elemento dello spazio dei nomi archivia informazioni specifiche della `vstov4` personalizzazione per le personalizzazioni a livello di documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,14 +39,14 @@ ms.locfileid: "102221041"
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`solutionId`|Obbligatorio. GUID utilizzato dal Strumenti di Visual Studio per Office Runtime per identificare in modo univoco una soluzione a livello di documento. Questo valore viene archiviato come _AssemblyLocation proprietà personalizzata del documento. Per altre informazioni, vedere [Cenni preliminari sulle proprietà personalizzate dei documenti](../vsto/custom-document-properties-overview.md).|
+|`solutionId`|Obbligatorio. GUID usato dal runtime Visual Studio Tools per Office per identificare in modo univoco una soluzione a livello di documento. Questo valore viene archiviato come proprietà _AssemblyLocation personalizzata del documento. Per altre informazioni, vedere [Panoramica delle proprietà personalizzate dei documenti.](../vsto/custom-document-properties-overview.md)|
 
  `document` è privo di elementi figlio.
 
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
 
 ### <a name="description"></a>Descrizione
- Nell'esempio di codice seguente viene illustrato l' `document` elemento in una soluzione Office a livello di documento distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ Nell'esempio di codice seguente viene illustrato l'elemento in una soluzione Office `document` a livello di documento distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -56,6 +57,6 @@ ms.locfileid: "102221041"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

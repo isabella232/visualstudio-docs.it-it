@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: cd2a701d8e5be3084466617e966f0475807e74db4645ffe6c1754a0cf0bafdaf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7892facb24caabe874e18773dd37996bad19f7a3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427860"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093775"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 
@@ -84,7 +84,7 @@ Dopo avere scritto il file di progetto in modo che accetti più configurazioni, 
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
   ```
 
-  Le variabili di ambiente vengono considerate anche come proprietà e vengono incorporate automaticamente da MSBuild. Per altre informazioni sull'uso delle variabili di ambiente, [vedere Procedura: Usare variabili di ambiente in una compilazione.](../msbuild/how-to-use-environment-variables-in-a-build.md)
+  Le variabili di ambiente vengono considerate anche come proprietà e vengono incorporate automaticamente da MSBuild. Per altre informazioni sull'uso delle variabili di ambiente, vedere [Procedura: Usare variabili di ambiente in una compilazione.](../msbuild/how-to-use-environment-variables-in-a-build.md)
 
   Il valore della proprietà specificato nella riga di comando ha la precedenza sui valori impostati per la stessa proprietà nel file di progetto e tale valore nel file di progetto ha la precedenza sul valore in una variabile di ambiente.
 

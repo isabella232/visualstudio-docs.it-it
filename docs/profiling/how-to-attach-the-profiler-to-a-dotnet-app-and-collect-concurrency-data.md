@@ -1,6 +1,6 @@
 ---
 title: Connettere il profiler a .NET per raccogliere dati di concorrenza
-description: Informazioni su come ottenere dati di concorrenza di processi e thread usando gli strumenti Visual Studio Strumenti di profilatura riga di comando per connettere il profiler a un'app .NET Framework in esecuzione.
+description: Informazioni su come ottenere dati di concorrenza di processi e thread usando Visual Studio Strumenti di profilatura strumenti da riga di comando per connettere il profiler a un'app .NET Framework in esecuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,18 +12,18 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95c06dc9a043d0b11fb021ab8b1fadb33ec6dc830dfad4a0f0978fa5be8f85b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 17af3dc14c0ba3cef3045fff84fd9ea3e5110c93
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150443"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati su conflitti tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione NET Framework autonoma in esecuzione (client) e raccogliere dati sulla concorrenza di processi e thread.
 
 > [!NOTE]
-> Per ottenere il percorso degli strumenti di profilatura, vedere [Procedura dettagliata: Uso delle API del profiler.](../profiling/walkthrough-using-profiler-apis.md) Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
  Mentre il profiler è connesso all'applicazione, è possibile sospendere e riprendere la raccolta dei dati. Per terminare una sessione di profilatura, il profiler non deve essere più connesso all'applicazione e deve essere arrestato in modo esplicito.
 
@@ -57,7 +57,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     - [/lineoff](../profiling/lineoff.md) disabilita la raccolta dei dati dei numeri di riga.
 
-    - [/targetclr](../profiling/targetclr.md) **: specifica** la versione di Common Language Runtime (CLR) da profilare quando vengono caricate più versioni del runtime in `Version` un'applicazione. facoltativo.
+    - [/targetclr](../profiling/targetclr.md) **:** specifica la versione di Common Language Runtime (CLR) da profilare quando vengono caricate più versioni del runtime `Version` in un'applicazione. facoltativo.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Mentre è in esecuzione l'applicazione di destinazione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni *VSPerfCmd.exe*. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.
@@ -70,7 +70,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
-    |[/attach:](../profiling/attach.md) { `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID del processo (`PID`) o dal nome del processo (ProcName). **/detach** arresta la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo specifico.|
+    |[/attach:](../profiling/attach.md) { `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID del processo (`PID`) o dal nome del processo (ProcName). **/detach** arresta la raccolta dei dati per il processo specificato o per tutti i processi se non è specificato un processo specifico.|
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
  Per terminare una sessione di profilatura, non deve essere in corso una raccolta di dati dal profiler. È possibile interrompere la raccolta dei dati da un'applicazione profilata con il metodo di concorrenza chiudendo l'applicazione o richiamando l'opzione **VSPerfCmd /detach**. È quindi possibile richiamare l'opzione **VSPerfCmd /shutdown** per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /off** cancella le variabili di ambiente di profilatura.

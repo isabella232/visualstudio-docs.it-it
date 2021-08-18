@@ -11,14 +11,15 @@ ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6356fd02c8045aee9dc48ebc9d30a346159080bb
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 1be87038e7baedaac0ea1244b8acfc500c70a2c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902033"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111970"
 ---
 # <a name="command-flag-eelement"></a>Flag di comando Eelement
 Modifica l'elemento padre.
@@ -47,8 +48,8 @@ Modifica l'elemento padre.
 |DefaultDocked|Ancorato per impostazione predefinita. Questa impostazione non si applica più alle barre degli strumenti perché sono sempre ancorate.|
 |DefaultInvisible|Per impostazione predefinita, il comando è invisibile se il pacchetto VSPackage che lo implementa non viene caricato o il `QueryStatus` metodo non è stato chiamato.<br /><br /> È consigliabile combinarlo con il `DynamicVisibility` flag .<br /><br /> Valido per: `Button` , `Combo` , `Menu`|
 |DontCache|L'ambiente di sviluppo non memorizza nella cache `QueryStatus` i risultati del metodo per questo comando.<br /><br /> Per un menu, indica a un controller di menu di non memorizzare nella cache il testo delle relative voci di menu. Usare questo flag quando il menu contiene elementi dinamici o elementi con testo dinamico.<br /><br /> Valido per: `Button` , `Menu`|
-|DynamicItemStart|Indica l'inizio di un elenco dinamico. In questo modo l'ambiente può compilare un elenco chiamando successivamente il metodo sugli elementi dell'elenco fino a quando non viene restituito `QueryStatus` OLECMDERR_E_UNSUPPORTED flag. Ciò funziona bene per gli elementi, ad esempio gli elenchi MRU (Most Recently Used) e gli elenchi di finestre.<br /><br /> Valido per: `Button`|
-|DynamicVisibility|La visibilità del comando può essere modificata tramite il metodo o tramite un GUID di contesto `QueryStatus` incluso nella `VisibilityConstraints` sezione .<br /><br /> Si applica ai comandi visualizzati nei menu e nelle barre degli strumenti delle finestre degli strumenti, ma non nelle barre degli strumenti di primo livello visualizzate nella finestra principale. Gli elementi della barra degli strumenti di primo livello possono essere disabilitati, ma non nascosti, quando il flag OLECMDF_INVISIBLE viene restituito dal `QueryStatus` metodo . I comandi della barra degli strumenti visualizzati sulle barre degli strumenti della finestra degli strumenti possono essere nascosti.<br /><br /> In un menu, questo flag indica anche che deve essere automaticamente nascosto quando tutti i relativi membri sono nascosti. Questo flag viene in genere assegnato ai sottomenu perché i menu di primo livello hanno già questo comportamento.<br /><br /> Questo flag deve essere combinato con il `DefaultInvisible` flag .<br /><br /> Valido per: `Button` , `Combo` , `Menu`|
+|DynamicItemStart|Indica l'inizio di un elenco dinamico. In questo modo l'ambiente può compilare un elenco chiamando successivamente il metodo sugli elementi dell'elenco fino a quando non viene restituito `QueryStatus` OLECMDERR_E_UNSUPPORTED flag . Ciò funziona bene per gli elementi, ad esempio gli elenchi MRU (Most Recently Used) e gli elenchi di finestre.<br /><br /> Valido per: `Button`|
+|DynamicVisibility|La visibilità del comando può essere modificata tramite il metodo o tramite un GUID di contesto `QueryStatus` incluso nella `VisibilityConstraints` sezione .<br /><br /> Si applica ai comandi visualizzati nei menu e nelle barre degli strumenti delle finestre degli strumenti, ma non nelle barre degli strumenti di primo livello visualizzate nella finestra principale. Gli elementi della barra degli strumenti di primo livello possono essere disabilitati ma non nascosti, quando il flag OLECMDF_INVISIBLE viene restituito dal `QueryStatus` metodo . I comandi della barra degli strumenti visualizzati sulle barre degli strumenti della finestra degli strumenti possono essere nascosti.<br /><br /> In un menu, questo flag indica anche che deve essere automaticamente nascosto quando tutti i relativi membri sono nascosti. Questo flag viene in genere assegnato ai sottomenu perché i menu di primo livello hanno già questo comportamento.<br /><br /> Questo flag deve essere combinato con il `DefaultInvisible` flag .<br /><br /> Valido per: `Button` , `Combo` , `Menu`|
 |FilterKeys|Vedere l'argomento Filtro delle chiavi in [Elemento combinato](../extensibility/combo-element.md).<br /><br /> Valido per: `Combo`|
 |FixMenuController|Se questo comando è posizionato in un controller di menu, il comando è sempre l'impostazione predefinita. in altri, il comando viene selezionato ogni volta che viene selezionato il pulsante del controller di menu stesso. Se il controller di menu ha il flag impostato, il controller di menu prende anche il testo dal `TextIsAnchorCommand` comando che ha il flag `FixMenuController` .<br /><br /> Il flag deve essere impostato su un solo comando in un controller `FixMenuController` di menu. Se più comandi sono contrassegnati, l'ultimo comando nel menu diventa il comando predefinito.<br /><br /> Valido per: `Button`|
 |IconAndText|Visualizzare un'icona e un testo nel menu e nella barra degli strumenti.<br /><br /> Valido per: `Button` , `Combo` , `Menu`|
@@ -56,8 +57,8 @@ Modifica l'elemento padre.
 |NoButtonCustomize|Non consentire all'utente di personalizzare questo pulsante.<br /><br /> Valido per: `Button` , `Combo`|
 |NoKeyCustomize|Non abilitare la personalizzazione della tastiera.<br /><br /> Valido per: `Button` , `Combo`|
 |NoShowOnMenuController|Se questo comando è posizionato in un controller di menu, il comando non viene visualizzato nell'elenco a discesa.<br /><br /> Valido per: `Button`|
-|NotInTBList|Non viene visualizzato nell'elenco delle barre degli strumenti disponibili. Questa opzione è valida solo per i tipi di menu Barra degli strumenti.<br /><br /> Valido per: `Menu`|
-|NoToolbarClose|L'utente non può chiudere la barra degli strumenti. Questa opzione è valida solo per i tipi di menu Barra degli strumenti.<br /><br /> Valido per: `Menu`|
+|NotInTBList|Non viene visualizzato nell'elenco delle barre degli strumenti disponibili. Questa opzione è valida solo per i tipi di menu della barra degli strumenti.<br /><br /> Valido per: `Menu`|
+|NoToolbarClose|L'utente non può chiudere la barra degli strumenti. Questa opzione è valida solo per i tipi di menu della barra degli strumenti.<br /><br /> Valido per: `Menu`|
 |Pict|Mostra solo un'icona su una barra degli strumenti, ma solo il testo in un menu. Se non viene specificata alcuna icona, visualizza uno spazio vuoto selezionabile su una barra degli strumenti.<br /><br /> Valido per: `Button`|
 |PostExec|Rende il comando non bloccante. L'ambiente di sviluppo rinvia l'esecuzione fino al completamento di tutte le query di pre-elaborazione.<br /><br /> Valido per: `Button`|
 |RouteToDocs|Il comando viene instradato al documento attivo.<br /><br /> Valido per: `Button`|
@@ -76,5 +77,5 @@ Modifica l'elemento padre.
 |[Elemento Buttons](../extensibility/buttons-element.md)|Fornisce un gruppo per gli [elementi elemento](../extensibility/button-element.md) Button.|
 |[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu implementati da un VSPackage.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visual Studio tabella dei comandi (. Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

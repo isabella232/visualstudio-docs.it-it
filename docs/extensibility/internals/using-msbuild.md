@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47a6d8298b8ddcbeb3878f81beee8f00881be74c84c097b68e6a2563fd810546
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0e9839812175d3e74b3e2d42ad04c3a32f7caa09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375699"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117722"
 ---
 # <a name="using-msbuild"></a>Uso di MSBuild
 MSBuild fornisce un formato XML ben definito ed estendibile per la creazione di file di progetto che descrivono completamente gli elementi di progetto da compilare, le attività di compilazione e le configurazioni di compilazione.

@@ -1,6 +1,6 @@
 ---
 description: Durante l'accesso a un servizio Web XML dal codice chiamante, è possibile che si verifichi un timeout con conseguente interruzione del debug.
-title: Timeout durante il debug dei servizi Web | Microsoft Docs
+title: Timeout durante il debug di servizi Web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9270a36015c3227b27d3a921370255e7f15d0aa994f69cb7548f82832b1fb885
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7b31ed5f408f8398cd29615c5848ff8b0153f23
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419910"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154382"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Errore: timeout durante il debug dei servizi Web
 Durante l'accesso a un servizio Web XML dal codice chiamante, è possibile che si verifichi un timeout con conseguente interruzione del debug. Potrebbe essere visualizzato un messaggio di errore simile al seguente.

@@ -1,6 +1,6 @@
 ---
-description: Questo metodo recupera un oggetto Memory che rappresenta la memoria a cui è associato questo oggetto.
-title: 'IDebugBinder3:: GetMemoryObject | Microsoft Docs'
+description: Questo metodo recupera un oggetto memoria che rappresenta la memoria a cui è associato questo oggetto.
+title: IDebugBinder3::GetMemoryObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10518db1aca373d749858855730cee458649cb5f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: eeffc3d63afe3a950cff6da04c777b7a18357af0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067361"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145315"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Questo metodo recupera un oggetto Memory che rappresenta la memoria a cui è associato questo oggetto.
+Questo metodo recupera un oggetto memoria che rappresenta la memoria a cui è associato questo oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +47,13 @@ int GetMemoryObject(
 
 ## <a name="parameters"></a>Parametri
 `pField`\
-in Specifica il campo per il quale ottenere l'oggetto memoria.
+[in] Specifica il campo per cui ottenere l'oggetto memoria.
 
 `uConstant`\
-in Rappresenta un indirizzo di memoria o un valore per un valore costante.
+[in] Rappresenta un indirizzo di memoria o un valore per un valore costante.
 
 `ppObject`\
-out Oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta la memoria a cui è associato questo oggetto.
+[out] Oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta la memoria a cui è associato questo oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

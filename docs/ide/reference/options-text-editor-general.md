@@ -37,12 +37,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e511c2f729c4df447f08c29e2942c1f661daf7e6437d8c60dd38175433bbd5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7cfd0ef18f85511d23825468f1b208c34bc7e209
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412258"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151236"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: Editor di \> testo Generale
 

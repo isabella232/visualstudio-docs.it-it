@@ -11,23 +11,24 @@ ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: de87e78b6f7ea14643df1070faf731e92d7a5767
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b87387ed7708b6737f2cab59b2fdce68c551ec5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850217"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102064"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procedura: Creare un tipo nullable in Progettazione classi
 
 Alcuni tipi di valore non sempre hanno (o hanno bisogno di) un valore definito. Questa è una pratica comune nei database, in cui ad alcuni campi potrebbero non essere assegnati valori. Ad esempio, è possibile assegnare un valore null a un campo di database per indicare che non gli è stato ancora assegnato un valore.
 
-Un *tipo nullable* è un tipo di valore che si estende in modo che prenda l'intervallo tipico di valori per il tipo e anche un valore null. Ad esempio, un Nullable di `Int32` , indicato anche come Nullable \<Int32> , può essere assegnato qualsiasi valore compreso tra-2147483648 e 2147483647, oppure può essere assegnato un valore null. A un Nullable \<bool> è possibile assegnare i valori `True` , `False` o null (nessun valore).
+Un *tipo nullable* è un tipo di valore che si estende in modo che prenda l'intervallo tipico di valori per il tipo e anche un valore null. Ad esempio, un nullable di , anche noto come Nullable, può essere assegnato a qualsiasi valore compreso tra -2147483648 e 2147483647 oppure può essere assegnato `Int32` \<Int32> un valore Null. A un oggetto Nullable \<bool> possono essere assegnati i valori , o null `True` `False` (nessun valore).
 
 I tipi nullable sono istanze della struttura <xref:System.Nullable%601>. Ogni istanza di un tipo nullable ha due proprietà pubbliche di sola lettura `HasValue` e `Value`:
 
@@ -90,7 +91,7 @@ Per altre informazioni sui tipi nullable in C#, vedere [Tipi nullable](/dotnet/c
 ## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Nullable%601>
-- [Tipi Nullable](/dotnet/csharp/programming-guide/nullable-types/index)
+- [Tipi nullable](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Uso dei tipi nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
 - [Procedura: Identificare un tipo nullable](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
-- [Tipi di valore Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+- [Tipi di valore nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

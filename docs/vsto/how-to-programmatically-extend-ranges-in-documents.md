@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 2098265ec257ae11353577ea7145bbe85d52d374501220f0f8c79ceb7bf04eb6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7297a638b22ca031ae4c728675a054a3430a2cf8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148025"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Procedura: Estendere gli intervalli nei documenti a livello di codice
   Una volta definito un oggetto <xref:Microsoft.Office.Interop.Word.Range> in un documento di Microsoft Office Word, è possibile modificare i punti iniziale e finale usando i metodi <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> . I metodi <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> accettano gli stessi due argomenti, *Unit* e *Count*. I metodi *Count* rappresenta il numero di unità da spostare, mentre l'argomento *Unit* può rappresentare uno dei seguenti valori <xref:Microsoft.Office.Interop.Word.WdUnits> :
@@ -52,7 +52,7 @@ ms.locfileid: "121408721"
 
 ## <a name="to-extend-a-range"></a>Per estendere un intervallo
 
-1. Definire un intervallo di caratteri. Per altre informazioni, vedere Procedura: Definire e selezionare intervalli nei documenti a [livello di codice.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+1. Definire un intervallo di caratteri. Per altre informazioni, vedere Procedura: Definire e selezionare intervalli nei [documenti a livello di codice.](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 
      L'esempio di codice seguente può essere usato in una personalizzazione a livello di documento.
 
@@ -93,7 +93,7 @@ ms.locfileid: "121408721"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet38":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: Reimpostare gli intervalli a livello di codice nei documenti di Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Procedura: Reimpostare gli intervalli nei documenti di Word a livello di codice](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
 - [Procedura: Comprimere intervalli o selezioni nei documenti a livello di codice](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
 - [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Procedura: Recuperare a livello di codice i caratteri iniziale e finale negli intervalli](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

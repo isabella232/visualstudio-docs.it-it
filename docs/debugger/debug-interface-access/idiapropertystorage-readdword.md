@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ea1eda58f9dcec599f46c83b76024c1c3e521c83cdd58366ef030efd7ee38a2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 58b51638b742fa8dfe874c4d46ff7bd0894f7766
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161701"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 Legge i `DWORD` valori in un set di proprietà.
@@ -43,10 +43,10 @@ HRESULT ReadDWORD (
 [out] Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `DWORD` .
+ In caso di esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `DWORD` .
 
 ## <a name="remarks"></a>Commenti
- Un è definito da Windows come intero senza `DWORD` segno a 32 bit.
+ Un `DWORD` oggetto è definito da Windows come intero senza segno a 32 bit.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

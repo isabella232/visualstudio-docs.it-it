@@ -1,6 +1,6 @@
 ---
 title: Installare la Guida offline
-description: Vedere come installare Microsoft Help Viewer per leggere la Guida offline. Diversi prodotti, ad esempio Visual Studio e SQL Server, usano Help Viewer per distribuire il contenuto della Guida.
+description: Vedere come installare le Microsoft Help Viewer per leggere la Guida offline. Diversi prodotti, ad esempio Visual Studio e SQL Server, usano Help Viewer per distribuire il contenuto della Guida.
 ms.date: 11/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: e075b545f2445e024cc3e4ecd58d2676041db606498bd6298b965b2723db1184
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d35a88c3ebfe8a42d5346c05b56af7c5c618e521
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358497"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124282"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installazione di Microsoft Help Viewer
 

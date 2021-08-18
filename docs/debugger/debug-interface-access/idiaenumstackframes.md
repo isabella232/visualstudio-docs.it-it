@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e17f49808174b0b01b233dddfb54e079d6f0c257eefdc9bd14a2a402b4279424
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 53a9f0ff20ae1ac514d284871bf9ea6cc0e3417e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121281508"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129399"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Enumera i vari stack frame disponibili.

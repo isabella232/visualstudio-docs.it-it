@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aggiungere ed eliminare commenti del foglio di lavoro a livello di codice'
-description: Informazioni su come aggiungere ed eliminare commenti a livello di codice Microsoft Office fogli di lavoro di Excel. È possibile aggiungere commenti solo a celle singole, non a intervalli di più celle.
+description: Informazioni su come aggiungere ed eliminare commenti a livello di codice in Microsoft Office Excel di lavoro. È possibile aggiungere commenti solo a singole celle, non a intervalli di più celle.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 20b718be3bec6cac3ee6c0b0985fa6efca867189
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 04259cdb6f21254dba6c7769347403fbb6410f26
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826941"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148155"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Procedura: Aggiungere ed eliminare commenti del foglio di lavoro a livello di codice
   È possibile aggiungere ed eliminare commenti a livello di codice nei fogli di lavoro di Microsoft Office Excel. I commenti possono essere aggiunti solo a singole celle, non a intervalli con più celle.
@@ -46,7 +47,7 @@ ms.locfileid: "107826941"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet29":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet29":::
 
-## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Aggiungere ed eliminare un commento in un progetto di componente aggiuntivo VSTO
+## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Aggiungere ed eliminare un commento in un VSTO progetto di componente aggiuntivo
  Gli esempi seguenti presuppongono la presenza di un oggetto <xref:Microsoft.Office.Interop.Excel.Range> a cella singola denominato `dateComment` nel foglio di lavoro attivo.
 
 ### <a name="to-add-a-new-comment-to-an-excel-range"></a>Per aggiungere un nuovo commento a un intervallo di Excel

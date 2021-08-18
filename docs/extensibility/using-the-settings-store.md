@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777959fe8ca21d3e560f935285ca8a0a3885a441a0118f6ade8a40b208a5bc7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ed4ee9291539575d1ddb7da31849955ff6d182c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375143"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132236"
 ---
 # <a name="using-the-settings-store"></a>Uso dell'archivio delle impostazioni
 Esistono due tipi di archivi di impostazioni:
@@ -27,12 +27,12 @@ Esistono due tipi di archivi di impostazioni:
 
 - Impostazioni utente, ovvero impostazioni scrivibili, ad esempio quelle  visualizzate nelle pagine della finestra di dialogo Opzioni, pagine delle proprietà e alcune altre finestre di dialogo. Visual Studio estensioni possono usarle per l'archiviazione locale di piccole quantità di dati.
 
-  Questa procedura dettagliata illustra come leggere i dati dall'archivio delle impostazioni di configurazione. Per una spiegazione su come scrivere [nell'archivio Impostazioni](../extensibility/writing-to-the-user-settings-store.md) utente, vedere Scrittura in User Impostazioni Store.
+  Questa procedura dettagliata illustra come leggere i dati dall'archivio delle impostazioni di configurazione. Per una spiegazione su come scrivere [nell'archivio delle impostazioni utente, vedere](../extensibility/writing-to-the-user-settings-store.md) Scrittura nell'archivio Impostazioni utente.
 
 ## <a name="creating-the-example-project"></a>Creazione dell'esempio Project
  Questa sezione illustra come creare un progetto di estensione semplice con un comando di menu per la dimostrazione.
 
-1. Ogni Visual Studio inizia con un progetto di distribuzione VSIX che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `SettingsStoreExtension` . È possibile trovare il modello di progetto VSIX nella finestra **di dialogo Nuovo Project** in Visual **C# /Extensibility**.
+1. Ogni Visual Studio'estensione inizia con un progetto di distribuzione VSIX che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `SettingsStoreExtension` . È possibile trovare il modello di progetto VSIX nella **finestra di dialogo Nuovo Project** in Visual **C# /Extensibility**.
 
 2. Aggiungere ora un modello di elemento di comando personalizzato **denominato SettingsStoreCommand**. Nella finestra **di dialogo Aggiungi nuovo** elemento passare a Visual **C# /Extensibility** e selezionare **Comando personalizzato**. Nel campo **Nome** nella parte inferiore della finestra modificare il nome del file di comando in **SettingsStoreCommand.cs**. Per altre informazioni su come creare un comando personalizzato, vedere [Creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -87,4 +87,4 @@ Esistono due tipi di archivi di impostazioni:
     > [!NOTE]
     > Assicurarsi di cercare la chiave che contiene \14.0Exp_Config\ e non \14.0_Config \\ . Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni di configurazione sono nell'hive del Registro di sistema "14.0Exp_Config".
 
-3. Espandere il nodo \Prodotti installati\. Se il messaggio nei passaggi precedenti è **Microsoft Windows Phone Strumenti di sviluppo Installato: True,** \Prodotti installati\ deve contenere un nodo microsoft Windows Phone Strumenti di sviluppo. Se il messaggio è **Microsoft Windows Phone Strumenti di sviluppo Installato: False**, \Prodotti installati\ non deve contenere un nodo Windows Phone Strumenti di sviluppo Microsoft.
+3. Espandere il nodo \Prodotti installati\. Se il messaggio nei passaggi precedenti è **Microsoft Windows Phone Strumenti di sviluppo Installato: True**, \Prodotti installati\ deve contenere un nodo microsoft Windows Phone Strumenti di sviluppo. Se il messaggio è **Microsoft Windows Phone Strumenti di sviluppo Installato: False,** \Prodotti installati\ non deve contenere un nodo Windows Phone Strumenti di sviluppo Microsoft.

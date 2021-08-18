@@ -1,5 +1,5 @@
 ---
-title: DA0014-frequenze estremamente elevate di paging di memoria attiva su disco | Microsoft Docs
+title: DA0014- Frequenze estremamente elevate di paging della memoria attiva su disco | Microsoft Docs
 description: I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata una frequenza estremamente elevata di paging di memoria attiva da e su disco durante la profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,16 @@ ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3467feff8a947146a5ec407054094a76e09d57fa
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: ea42e94eab6c5da65e5e1d59e93f71680dea1500
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469988"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131755"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frequenze molto elevate di paging di memoria attiva su disco
 
@@ -46,7 +47,7 @@ ms.locfileid: "102469988"
 > Questa regola viene attivata quando i livelli di paging della memoria attiva raggiungono una frequenza molto elevata. Quando il livello di paging è significativo, ma non estremo, viene invece attivata la regola informativa [DA0017: Frequenze elevate di paging di memoria attiva su disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md) . Individuare la colonna **Memoria\Pagine/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'attività I/O di paging è più elevata rispetto ad altre fasi.
+ Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla [visualizzazione](../profiling/marks-view.md) Contrassegni. Individuare la colonna **Memoria\Pagine/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'attività I/O di paging è più elevata rispetto ad altre fasi.
 
  Se si raccolgono dati del profilo per un'applicazione ASP.NET in un scenario del test di carico, provare a eseguire nuovamente il test di carico su un computer configurato con memoria fisica (o RAM) aggiuntiva.
 

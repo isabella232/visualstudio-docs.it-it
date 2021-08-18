@@ -1,5 +1,5 @@
 ---
-title: Elementi Commands | Microsoft Docs
+title: Elemento Commands | Microsoft Docs
 description: "L'elemento Commands rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage e può avere queste sezioni: menu, gruppi, pulsanti, combinazioni e bitmap."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,14 +13,15 @@ ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4c7b058acdd634079d0ca60dddb9f80e0e26ff0
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 35cea63308ffaef653904f4c959164bd09b73df0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901870"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146095"
 ---
 # <a name="commands-element"></a>Elemento Commands
 Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage. La raccolta può avere fino a cinque sottosezioni, come indicato di seguito: menu, gruppi, pulsanti, combinazioni e bitmap.
@@ -90,6 +91,6 @@ Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage. La 
 <Commands>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 815cb4a46141ddc5f6e85fefe4ff71a53cd473e958ffaa5c2779e99355aca6cf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cfc18bab08a141e5c7173d622e0bc55d1a2f0fbc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228558"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131001"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedura: Creare un ricevitore di eventi per un'istanza di elenco specifica
   Un ricevitore di eventi dell'istanza di elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco. Sebbene il modello del ricevitore di eventi non abiliti la destinazione di un'istanza di elenco specifica, è possibile modificare un ricevitore di eventi con ambito definizione di elenco per rispondere agli eventi in un'istanza di elenco specifica.

@@ -1,6 +1,6 @@
 ---
-description: Questo metodo ottiene l'aggiornamento di modifica e continuazione (ENC) per questo programma.
-title: 'IDebugProgram2:: GetENCUpdate | Microsoft Docs'
+description: Questo metodo ottiene l'aggiornamento ENC (Edit and Continue) per questo programma.
+title: IDebugProgram2::GetENCUpdate | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d6b60c8b17a8db1420222a7242164ce1c0eedd1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9d124a1cd00f999c41bfc5259183658aada84696
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075926"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132756"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-Questo metodo ottiene l'aggiornamento di modifica e continuazione (ENC) per questo programma. Un modulo di debug personalizzato restituisce sempre `E_NOTIMPL`.
+Questo metodo ottiene l'aggiornamento ENC (Edit and Continue) per questo programma. Un modulo di debug personalizzato restituisce sempre `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int GetENCUpdate(
 
 ## <a name="parameters"></a>Parametri
 `ppUpdate`\
-out Restituisce un'interfaccia interna che può essere utilizzata per aggiornare il programma.
+[out] Restituisce un'interfaccia interna che può essere utilizzata per aggiornare questo programma.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

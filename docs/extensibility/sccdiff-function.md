@@ -11,14 +11,15 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 484d8b5e988ede9b50099e3c0376f2c3afce8317
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 1a644d677fb2a6f1d50909294649b270617a5bf0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904656"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117618"
 ---
 # <a name="sccdiff-function"></a>Funzione SccDiff
 Questa funzione consente di visualizzare (o, facoltativamente, solo di verificare) le differenze tra il file corrente (sul disco locale) e l'ultima versione archiviata nel sistema di controllo del codice sorgente.
@@ -75,7 +76,7 @@ SCCRTN SccDiff(
 
  In alternativa, l'IDE potrebbe semplicemente dover determinare se un file è stato modificato. Ad esempio, l'IDE potrebbe dover determinare se è sicuro estrarre un file senza informare l'utente. In tal caso, l'IDE passa il `SCC_DIFF_CONTENTS` flag . Il plug-in del controllo del codice sorgente deve controllare il file su disco, byte per byte, rispetto al file controllato dal codice sorgente e restituire un valore che indica se i due file sono diversi senza visualizzare nulla all'utente.
 
- Come ottimizzazione delle prestazioni, il plug-in del controllo del codice sorgente può usare un'alternativa basata su un checksum o un timestamp anziché il confronto byte per byte chiamato da : queste forme di confronto sono ovviamente più veloci ma meno `SCC_DIFF_CONTENTS` affidabili. Non tutti i sistemi di controllo del codice sorgente possono supportare questi metodi di confronto alternativi e il plug-in potrebbe essere necessario eseguire il fall back a un confronto del contenuto. Tutti i plug-in del controllo del codice sorgente devono supportare almeno un confronto dei contenuti.
+ Come ottimizzazione delle prestazioni, il plug-in del controllo del codice sorgente può usare un'alternativa basata su un checksum o un timestamp anziché il confronto byte per byte chiamato da : queste forme di confronto sono ovviamente più veloci ma meno `SCC_DIFF_CONTENTS` affidabili. Non tutti i sistemi di controllo del codice sorgente possono supportare questi metodi di confronto alternativi e il plug-in potrebbe essere necessario eseguire il fall back a un confronto dei contenuti. Tutti i plug-in del controllo del codice sorgente devono supportare almeno un confronto dei contenuti.
 
 > [!NOTE]
 > I flag di differenza rapida si escludono a vicenda. Non è possibile passare alcun flag, ma non è valido passare contemporaneamente più flag. `SCC_DIFF_QUICK_DIFF`, che è una maschera che combina tutti i flag, può essere usata per il test, ma non deve mai essere passata come parametro.
@@ -88,5 +89,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|Confronta automaticamente il file tramite un checksum, se supportato. Se non è supportato, viene eseguito il falls back a un confronto del contenuto.|
 |SCC_DIFF_QD_TIME|Confronta automaticamente il file tramite il relativo timestamp, se supportato. Se non è supportato, viene eseguito il falls back a un confronto del contenuto.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

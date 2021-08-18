@@ -1,6 +1,6 @@
 ---
 title: Personalizzare colonne delle visualizzazioni dei rapporti | Microsoft Docs
-description: È possibile aggiungere, rimuovere e ridisporre le colonne nelle visualizzazioni degli strumenti Visual Studio prestazioni, ad esempio nella visualizzazione Funzioni, nella visualizzazione Processo e nella visualizzazione Chiamante/chiamato.
+description: È possibile aggiungere, rimuovere e ridisporre le colonne nelle visualizzazioni degli strumenti per le prestazioni di Visual Studio, ad esempio nella visualizzazione Funzioni, nella visualizzazione Processo e nella visualizzazione Chiamante/chiamato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +17,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cb363b94402f793cccb717561c8cfeb677b0f47e573611de249ea7a361a4ae5b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd67cab9a729eeaf6280c01ef4315900c9640de0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150183"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedura: Personalizzare le colonne delle visualizzazioni dei report
 Gli strumenti per le prestazioni in Visual Studio Team System Development Edition sono completamente integrati nell'ambiente di sviluppo integrato (IDE) per fornire un'esperienza utente. L'elenco seguente indica le visualizzazioni che possono essere personalizzate aggiungendo, rimuovendo e ridisponendo le colonne:

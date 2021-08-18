@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14cb7be76bc941fd04eba217f0708ae94817821034b0dd1999ce194e090105a4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c686b87346487d452a166d41b94a4a8b17d3e82d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117969"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfacce del provider di simboli
 Di seguito sono riportate le interfacce di gestione dei simboli per [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
