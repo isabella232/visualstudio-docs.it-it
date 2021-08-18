@@ -1,6 +1,6 @@
 ---
-title: Server COM e debug del contenitore | Microsoft Docs
-description: Informazioni sul debug dei server e dei contenitori COM. Eseguire il debug di un server e di un contenitore COM nella stessa soluzione, un'app Server senza informazioni sul contenitore o un'app SDI.
+title: Debug di server e contenitori COM | Microsoft Docs
+description: Informazioni sul debug di server e contenitori COM. Eseguire il debug di un server COM e di un contenitore nella stessa soluzione, in un'app server senza informazioni sul contenitore o in un'app SDI.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,14 +21,15 @@ ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d5591ce205f60fbdf63181106233ba04d7b23dd6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17ad04ea4e87a99d1f9e98cef197d986b5e31dc1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865852"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129688"
 ---
 # <a name="com-server-and-container-debugging"></a>Debug dei server e dei contenitori COM
 Le applicazioni COM eseguono alcune attività che non sono sotto il controllo diretto del programmatore. Le comunicazioni tra le DLL, il conteggio di utilizzo degli oggetti e le operazioni relative agli Appunti rappresentano solo alcune delle aree nelle quali potrebbero verificarsi comportamenti non prevedibili. In questi casi il primo passo consiste nel tracciare il codice sorgente.
@@ -58,4 +59,4 @@ Le applicazioni COM eseguono alcune attività che non sono sotto il controllo di
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [Debug com e ActiveX](../debugger/com-and-activex-debugging.md)

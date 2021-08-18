@@ -11,14 +11,15 @@ ms.assetid: cbe3d8ac-319a-40ac-bc3e-4eb81b2d7807
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 92ada384d6e231a33dc2b1bbccfafa1e790f1c9c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e58f03a45b1fe680644c1bbc320383d6e3ac44ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147436"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128855"
 ---
 # <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 Recupera il valore di un registro specificato come archiviato nel stack frame.
@@ -35,11 +36,11 @@ HRESULT get_registerValue(
 #### <a name="parameters"></a>Parametri
  `registerIndex`
 
-in Uno dei valori di enumerazione dell' [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) .
+[in] Uno dei valori [dell CV_HREG_e numere](../../debugger/debug-interface-access/cv-hreg-e.md) di enumerazione.
 
  `pRetVal`
 
-out Valore archiviato nel registro.
+[out] Valore archiviato nel registro.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.

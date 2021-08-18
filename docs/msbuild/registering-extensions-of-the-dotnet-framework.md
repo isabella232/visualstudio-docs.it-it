@@ -1,6 +1,6 @@
 ---
 title: Registrazione di estensioni di .NET Framework | Microsoft Docs
-description: Informazioni su come aggiungere una cartella che contiene un assembly che estende una versione specifica del .NET Framework al registro di sistema.
+description: Informazioni su come aggiungere una cartella contenente un assembly che estende una versione specifica del .NET Framework al Registro di sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - dotnet
-ms.openlocfilehash: 61197fcfe84c96eed2c46b662f93a06386bb9c1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0af48178d270bcce0a83b81aa54fface2b0b1e3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931845"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084831"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Registrare estensioni di .NET Framework
 
@@ -36,4 +37,4 @@ ms.locfileid: "99931845"
 
 ### <a name="see-also"></a>Vedi anche
 
-- [integrazione con Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Visual Studio'integrazione](../msbuild/visual-studio-integration-msbuild.md)

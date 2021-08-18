@@ -1,17 +1,13 @@
 ---
 title: Modificare un valore di registro | Microsoft Docs
-description: Informazioni su come modificare il contenuto di un registro modificando il relativo valore nella finestra registri (disponibile solo se il debug a livello di indirizzo è abilitato).
+description: Informazioni su come modificare il contenuto di un registro modificandone il valore nella finestra Registri (disponibile solo se è abilitato il debug a livello di indirizzo).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
-- JScript
 helpviewer_keywords:
 - Registers window, editing register values
 - register values
@@ -19,16 +15,17 @@ ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4187be3bd4d5d2099374acea58d86bd093538ef7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71532f7b1c1aad8959ce3a10e7b955d55c3e51d9
+ms.sourcegitcommit: 4cf966e03cdce4c520f6d4bde0b2711c099e0edd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917386"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122188689"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedura: modificare un valore di registro (C#, C++, Visual Basic, F #)
+# <a name="how-to-edit-a-register-value-c"></a>Procedura: Modificare un valore di registro (C++)
 
 La finestra Registri è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo **Debug**.
 
