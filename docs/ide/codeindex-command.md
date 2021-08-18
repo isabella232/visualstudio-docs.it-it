@@ -1,6 +1,6 @@
 ---
 title: Comando CodeIndex
-description: Informazioni su come usare il comando codeindex per gestire l'indicizzazione del codice su Azure DevOps Server (precedentemente noto come Team Foundation Server).
+description: Informazioni su come usare il comando CodeIndex per gestire l'indicizzazione del codice Azure DevOps Server (noto in precedenza come Team Foundation Server ).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 47875bcece910433a1d20ad66867acd7fdbee8d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a16d1ec94ad958f7a93b061c23650148fe38398d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841924"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056329"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -51,13 +52,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/indexingStatus**|Mostrare lo stato e la configurazione del servizio di indicizzazione del codice.|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: avvia l'indicizzazione di tutti gli insiemi di modifiche.<br />-   **off**: arresta l'indicizzazione di tutti gli insiemi di modifiche.<br />-   **keepupOnly**: interrompe l'indicizzazione degli insiemi di modifiche creati in precedenza e avvia l'indicizzazione solo dei nuovi insiemi di modifiche.|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> È possibile usare il carattere jolly (*) all'inizio, alla fine, oppure a entrambe le estremità del percorso server.|Specifica l'elenco di file di codice e i rispettivi percorsi da non indicizzare.<br /><br /> -   **add**: aggiunge il file da non indicizzare all'elenco di file ignorati.<br />-   **remove**: rimuove il file da indicizzare dall'elenco di file ignorati.<br />-   **removeAll**: cancella l'elenco dei file ignorati e avvia l'indicizzazione di tutti i file.<br />-   **view**: visualizza tutti i file non sottoposti a indicizzazione.|
-|**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Mostra il numero specificato di file che supera la dimensione specificata in KB. È quindi possibile usare l'opzione **/ignoreList** per escludere questi file dall'indicizzazione.|
+|**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize` ]|Mostra il numero specificato di file che supera la dimensione specificata in KB. È quindi possibile usare l'opzione **/ignoreList** per escludere questi file dall'indicizzazione.|
 |**/reindexAll**|Cancellare i dati indicizzati in precedenza e riavviare l'indicizzazione.|
 |**/destroyCodeIndex [/noPrompt]**|Eliminare l'indice del codice e rimuovere tutti i dati indicizzati. Non è richiesta conferma se si usa l'opzione **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Controllare la quantità di dati temporanei creati da CodeLens durante l'elaborazione degli insiemi di modifiche. Il limite predefinito è 2 GB.<br /><br /> -   **view**: mostra il limite di dimensioni attuale.<br />-   `SizeInGBs`: modifica il limite di dimensioni.<br />-   **disable**: rimuove il limite di dimensioni.<br /><br /> Questo limite viene verificato prima dell'elaborazione di un nuovo insieme di modifiche con CodeLens. Se i dati temporanei superano questo limite, CodeLens sospende l'elaborazione degli insiemi di modifiche precedenti, non di quelli nuovi. CodeLens riavvia l'elaborazione dopo che i dati sono stati puliti e sono tornati sotto il limite. La pulizia viene eseguita automaticamente una volta al giorno. Questo implica che i dati temporanei potrebbero superare questo limite prima dell'esecuzione del processo di pulizia.|
 |**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Controllare la lunghezza dell'intervallo di indicizzazione della cronologia delle modifiche. Ciò incide sulla quantità di cronologia che CodeLens mostra all'utente. Il limite predefinito è di 12 mesi. Questo significa che CodeLens mostra la cronologia delle modifiche solo degli ultimi 12 mesi.<br /><br /> -   **view**: mostra il numero di mesi corrente.<br />-   **all**: indicizza tutta la cronologia delle modifiche.<br />-   `NumberOfMonths`: modifica il numero di mesi usato per indicizzare la cronologia delle modifiche.|
-|**/CollectionName:**`CollectionName`|Specifica il nome dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
-|**/CollectionId:**`CollectionId`|Specifica il numero di identificazione dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
+|**/collectionName:**`CollectionName`|Specifica il nome dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
+|**/collectionId:**`CollectionId`|Specifica il numero di identificazione dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
 
 ## <a name="examples"></a>Esempio
 

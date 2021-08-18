@@ -1,6 +1,6 @@
 ---
 title: ClickOnce e Authenticode | Microsoft Docs
-description: Informazioni sui certificati utilizzati da Authenticode per verificare l'autenticità delle applicazioni. Informazioni sul modo in cui i certificati vengono convalidati e archiviati.
+description: Informazioni sui certificati che Authenticode usa per verificare l'autenticità delle applicazioni. Informazioni su come vengono convalidati e archiviati i certificati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,14 +18,15 @@ ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: e6541e99b23579713e77cf2bf1dc62152f02b4ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e10c5281222e7c53410502867faa16d567d0bf4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946098"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133653"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 *Authenticode* è una tecnologia Microsoft basata sulla crittografia standard che consente di firmare il codice di un'applicazione con certificati digitali che verificano l'autenticità dell'editore dell'applicazione. Usando la tecnologia Authenticode per la distribuzione di applicazioni, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] consente di ridurre i rischi di trojan horse, ovvero virus o altri programmi dannosi presentati da una terza parte malintenzionata in modo ingannevole come programmi legittimi provenienti da una fonte definita e attendibile. Firmare le distribuzioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un certificato digitale è un passaggio facoltativo per verificare che gli assembly e i file non siano stati manomessi.
@@ -35,7 +36,7 @@ ms.locfileid: "99946098"
 ## <a name="authenticode-and-code-signing"></a>Firma del codice e Authenticode
  Un *certificato digitale* è un file che contiene una coppia di chiavi di crittografia pubblica/privata, nonché i metadati relativi all'editore a cui è stato rilasciato il certificato e all'autorità di certificazione.
 
- Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per ulteriori informazioni, vedere [Introduzione alla firma del codice](/windows/desktop/seccrypto/cryptography-tools).
+ Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere [Introduzione alla firma del codice.](/windows/desktop/seccrypto/cryptography-tools)
 
  È possibile ottenere un certificato per la firma del codice in uno dei tre modi seguenti:
 
@@ -43,14 +44,14 @@ ms.locfileid: "99946098"
 
 - Ricevendone uno da un gruppo dell'organizzazione responsabile della creazione di certificati digitali.
 
-- Generare un certificato personalizzato usando il cmdlet New-SelfSignedCertificate PowerShell o *MakeCert.exe*, incluso con [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
+- Generare un certificato personalizzato usando il cmdlet New-SelfSignedCertificate PowerShell o usando *MakeCert.exe*, incluso in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Vantaggi derivanti dall'uso di Autorità di certificazione
  Un certificato generato mediante New-SelfSignedCertificate o la *MakeCert.exe* utilità viene comunemente definito un *autocertificato* o un *certificato di prova*. Questo tipo di certificato agisce in modo analogo ai file con estensione *snk* in .NET Framework. È costituito esclusivamente da una coppia di chiavi crittografiche pubbliche/private e non contiene informazioni verificabili sull'editore. Gli autocertificati consentono di distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un elevato livello di attendibilità in una rete intranet. Tuttavia, quando sono eseguite in un computer client, queste applicazioni vengono identificate da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] come provenienti da un editore sconosciuto. Per impostazione predefinita, non è possibile usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmate con autocertificati e distribuite su Internet.
 
  Al contrario, se si riceve un certificato proveniente da una CA, ad esempio un fornitore di certificati o un reparto dell'organizzazione, il certificato offre maggiore sicurezza agli utenti. Non solo identifica l'editore del software firmato, ma verifica anche l'identità mediante un controllo con la CA che ha apposto la firma. Se la CA non è l'autorità radice, Authenticode verificherà con l'autorità radice che la CA sia autorizzata a rilasciare certificati. Per maggiore sicurezza, si consiglia di usare un certificato rilasciato da una CA, se possibile.
 
- Per ulteriori informazioni sulla generazione di certificati autocertificati, vedere [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) o [Makecert](/windows/desktop/SecCrypto/makecert).
+ Per altre informazioni sulla generazione di autocert, vedere [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) o [MakeCert.](/windows/desktop/SecCrypto/makecert)
 
 ### <a name="timestamps"></a>Timestamp
  I certificati usati per firmare applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scadono dopo un determinato periodo di tempo, in genere dodici mesi. Per evitare di dover firmare costantemente le stesse applicazioni con nuovi certificati, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] supporta i timestamp. Se un'applicazione è firmata con un timestamp, il certificato continuerà a essere accettato anche dopo la scadenza, purché il timestamp sia valido. Questo consente il download e l'esecuzione delle applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con certificati scaduti ma timestamp validi. Permette anche di continuare a scaricare e installare gli aggiornamenti per le applicazioni installate con certificati scaduti.
@@ -64,9 +65,9 @@ ms.locfileid: "99946098"
 
 - Disinstallare l'applicazione e reinstallare una nuova versione con un certificato valido.
 
-### <a name="store-certificates"></a>Archivia certificati
+### <a name="store-certificates"></a>Archiviare i certificati
 
-- È possibile archiviare i certificati come file con *estensione pfx* nel file System oppure archiviarli all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita, l'utilità *MakeCert.exe* archivia i certificati nel contenitore di chiavi personale, a meno che non venga specificato di salvarli in un file con estensione *pfx*. *Mage.exe* e *MageUI.exe*, gli strumenti di [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] per la creazione di distribuzioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consentono di usare certificati archiviati in entrambi i modi.
+- È possibile archiviare i certificati come file con estensione *pfx* nel file system oppure all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita, l'utilità *MakeCert.exe* archivia i certificati nel contenitore di chiavi personale, a meno che non venga specificato di salvarli in un file con estensione *pfx*. *Mage.exe* e *MageUI.exe*, gli strumenti di [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] per la creazione di distribuzioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consentono di usare certificati archiviati in entrambi i modi.
 
 ## <a name="see-also"></a>Vedi anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

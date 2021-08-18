@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione associato è stato disassociato da un programma caricato.
+description: Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione associato è stato scollegato da un programma caricato.
 title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27c032c1563bf208c378044b4e093529a2dba10c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d632e10c28bcb3ef1b5aa0ec464c82806021673f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088640"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104196"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
-Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione associato è stato disassociato da un programma caricato.
+Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione associato è stato scollegato da un programma caricato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,26 +31,26 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia come parte del supporto per i punti di interruzione. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (il SDM USA [QueryInterface](/cpp/atl/queryinterface) per accedere all' `IDebugEvent2` interfaccia).
+ Il motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia). `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE crea e invia questo oggetto evento quando un punto di interruzione associato è stato non associato. L'evento viene inviato utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.
+ Il de crea e invia questo oggetto evento quando un punto di interruzione associato è stato non associato. L'evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugBreakpointUnboundEvent2` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugBreakpointUnboundEvent2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Ottiene il punto di interruzione che è diventato non associato.|
-|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Ottiene il motivo per cui il punto di interruzione non è associato.|
+|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Ottiene il punto di interruzione non associato.|
+|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Ottiene il motivo per cui il punto di interruzione è stato scollegato.|
 
 ## <a name="remarks"></a>Commenti
- Quando una DLL o una classe del motore di debug viene scaricata, tutti i punti di interruzione associati al codice in tale modulo devono essere disassociati dal programma di cui è in corso il debug. `IDebugBreakpointUnboundEvent2`Viene inviato un oggetto per ogni punto di interruzione non associato.
+ Quando una DLL del motore di debug o una classe viene scaricata, tutti i punti di interruzione associati al codice in tale modulo devono essere scollegati dal programma di cui si esegue il debug. Viene `IDebugBreakpointUnboundEvent2` inviato un oggetto per ogni punto di interruzione non associato.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,6 +1,6 @@
 ---
 title: Utilità RegPkg | Microsoft Docs
-description: Informazioni su come l'utilità RegPkg.exe registra un VSPackage con Visual Studio e lo prepara per la distribuzione.
+description: Informazioni su come lRegPkg.exe'utilità registra un VSPackage con Visual Studio e lo prepara per la distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,18 +14,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed91788526177392901a6fd8aa03f139f9267827
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7911c31b6e7766d69e51b65abea8184f4d6fbbdc8d2518560b13d665c365e61f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062849"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432228"
 ---
 # <a name="regpkg-utility"></a>Utilità RegPkg
 > [!NOTE]
-> Il modo migliore per registrare i pacchetti in Visual Studio è l'uso di file con estensione pkgdef. Ciò consente la distribuzione dell'estensione senza dover accedere al Registro di sistema, un requisito per la distribuzione VSIX. I file Pkgdef vengono creati tramite [l'utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Per altre informazioni sulla distribuzione Visual Studio pacchetto, vedere [Shipping Visual Studio Extensions.](../../extensibility/shipping-visual-studio-extensions.md)
+> Il modo preferito per registrare i pacchetti in Visual Studio è usare i file con estensione pkgdef. Ciò consente la distribuzione delle estensioni senza dover accedere al Registro di sistema, che è un requisito per la distribuzione VSIX. I file Pkgdef vengono creati tramite [l'utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Per altre informazioni sulla distribuzione Visual Studio pacchetto, vedere [Shipping Visual Studio Extensions](../../extensibility/shipping-visual-studio-extensions.md).
 
- LRegPkg.exe utilità registra un VSPackage con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e lo prepara per la distribuzione. Questa utilità viene usata in background durante lo sviluppo di VSPackage. Viene eseguito come parte del processo di compilazione in modo che sia possibile compilare ed eseguire un VSPackage nell'hive sperimentale.
+ LRegPkg.exe'utilità registra un VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con e lo prepara per la distribuzione. Questa utilità viene usata in background durante lo sviluppo di VSPackage. Viene eseguito come parte del processo di compilazione in modo da poter compilare ed eseguire un VSPackage nell'hive sperimentale.
 
  RegPkg può generare script del Registro di sistema in diversi formati. È possibile incorporare questi script nei progetti di distribuzione, ad esempio .msi progetti o Windows file del set di strumenti XML del programma di installazione.
 

@@ -1,20 +1,21 @@
 ---
 title: API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
-description: Questo articolo descrive i membri di CppUnitTestFramework, che è possibile usare per scrivere unit test C++ basati sul Framework di unit test nativo Microsoft.
+description: Questo articolo descrive i membri CppUnitTestFramework, che è possibile usare per scrivere unit test C++ basati su Microsoft Native Unit Test Framework.
 ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 355259f784d496fae574a331382d03d3fbe5bfd6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8530bcdcdd47a57d97260a1b48f05df1e8661b80
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844528"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092241"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -24,13 +25,13 @@ I file di intestazione e lib si trovano in *\<Visual Studio installation folder>
 
 I percorsi dei file di intestazione e lib vengono configurati automaticamente in un progetto di test nativo.
 
-## <a name="in-this-topic"></a><a name="In_this_topic"></a> Contenuto dell'argomento
+## <a name="in-this-topic"></a><a name="In_this_topic"></a> In questo argomento
 
-[CppUnitTest. h](#cppUnitTest_h)
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Creare classi e metodi di test](#create_test_classes_and_methods)
 
-- [Inizializzazione e pulizia](#Initialize_and_cleanup)
+- [Inizializzare e pulire](#Initialize_and_cleanup)
 
   - [Metodi di test](#test_methods)
 
@@ -60,17 +61,17 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 
     - [AreNotSame](#general_are_not_same)
 
-    - [È null](#general_is_null)
+    - [È Null](#general_is_null)
 
-    - [Non è null](#general_is_not_null)
+    - [Non è Null](#general_is_not_null)
 
     - [È true](#general_is_True)
 
-    - [È false](#general_is_false)
+    - [È False](#general_is_false)
 
     - [Errato](#general_Fail)
 
-  - [Asserzioni di Windows Runtime](#winrt_asserts)
+  - [Windows Asserzioni di runtime](#winrt_asserts)
 
     - [AreEqual](#winrt_are_equal)
 
@@ -80,9 +81,9 @@ I percorsi dei file di intestazione e lib vengono configurati automaticamente in
 
     - [AreNotSame](#winrt_are_not_same)
 
-    - [È null](#winrt_is_null)
+    - [È Null](#winrt_is_null)
 
-    - [Non è null](#winrt_is_not_null)
+    - [Non è Null](#winrt_is_not_null)
 
   - [Asserzioni di eccezione](#exception_asserts)
 
@@ -249,7 +250,7 @@ TEST_IGNORE()
 
 Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `Ignore` e il valore di attributo `true`.
 
-## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a> CppUnitTestAssert. h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
 ### <a name="general-asserts"></a><a name="general_asserts"></a> Asserzioni generali
 
@@ -389,7 +390,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-null"></a><a name="general_is_null"></a> È null
+#### <a name="is-null"></a><a name="general_is_null"></a> È Null
 Verificare che un puntatore sia NULL.
 
 ```cpp
@@ -400,7 +401,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-not-null"></a><a name="general_is_not_null"></a> Non è null
+#### <a name="is-not-null"></a><a name="general_is_not_null"></a> Non è Null
 Verificare che un puntatore non sia NULL
 
 ```cpp
@@ -421,7 +422,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-false"></a><a name="general_is_false"></a> È false
+#### <a name="is-false"></a><a name="general_is_false"></a> Is False
 Verificare che una condizione sia False
 
 ```cpp
@@ -431,7 +432,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="fail"></a><a name="general_Fail"></a> Esito negativo
+#### <a name="fail"></a><a name="general_Fail"></a> Fallire
 Forza il risultato del test case come non superato
 
 ```cpp
@@ -512,7 +513,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-null"></a><a name="winrt_is_null"></a> È null
+#### <a name="is-null"></a><a name="winrt_is_null"></a> È Null
 Verifica che un puntatore di Windows Runtime sia un nullptr.
 
 ```cpp
@@ -523,7 +524,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a> Non è null
+#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a> Non è Null
 Verifica che un puntatore di Windows Runtime non sia un nullptr.
 
 ```cpp
@@ -534,9 +535,9 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-### <a name="exception-asserts"></a><a name="exception_asserts"></a> Asserzioni di eccezione
+### <a name="exception-asserts"></a><a name="exception_asserts"></a> Asserzioni di eccezioni
 
-#### <a name="expect-exception"></a><a name="expect_exception"></a> Aspetta eccezione
+#### <a name="expect-exception"></a><a name="expect_exception"></a> Eccezione prevista
 Verificare che una funzione generi un'eccezione:
 
 ```cpp
@@ -557,12 +558,12 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a> CppUnitTestLogger. h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
 ### <a name="logger"></a><a name="logger"></a> Logger
 La classe Logger contiene metodi statici per scrivere nella **finestra di output**.
 
-### <a name="write-message"></a><a name="write_message"></a> Scrivi messaggio
+### <a name="write-message"></a><a name="write_message"></a> Scrivere un messaggio
 Scrivere una stringa nella **finestra di output**
 
 ```cpp

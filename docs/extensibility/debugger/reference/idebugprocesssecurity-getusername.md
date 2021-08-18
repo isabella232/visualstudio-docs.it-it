@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a376a8d51d7b4d974bf0c7b609bbc53cc334cb33
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 025e6d4b707280ee00cd262cb917ab30c47298835e0d881faa000c049796a0fd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057577"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451770"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 Ottiene il nome utente dal fornitore della porta.
@@ -47,7 +47,7 @@ int GetUserName (
  Se il metodo ha esito positivo, viene restituito `S_OK`. In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- `GetUserName` restituisce il nome utente visualizzato nella colonna **Nome** utente della finestra **di dialogo** Collega a processo. Per visualizzare la **finestra di dialogo** Collega a processo , scegliere Collega **a** processo **dal** menu Strumenti nell'ambiente di sviluppo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] integrato (IDE).
+ `GetUserName` restituisce il nome utente visualizzato nella colonna **Nome** utente della finestra **di dialogo Connessione** a processo . Per visualizzare la **finestra di dialogo Associa** a processo , scegliere Associa **a** processo dal menu **Strumenti** nell'ambiente di sviluppo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] integrato (IDE).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

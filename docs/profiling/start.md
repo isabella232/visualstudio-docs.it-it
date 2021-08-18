@@ -1,24 +1,25 @@
 ---
 title: Start | Microsoft Docs
-description: Informazioni su come l'opzione Start è un'opzione di VSPerfCmd.exe che inizializza il profiler sul metodo di profilatura specificato.
+description: Informazioni su come l'opzione Start VSPerfCmd.exe'opzione che inizializza il profiler sul metodo di profilatura specificato.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 98c1fa8a5d95b9819c6b988282fe9fcdb6259bd5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1468b4e7931a0a4d6f39593c28f42563cacce7952a7ab853a362fb4240e11083
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960058"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121441709"
 ---
 # <a name="start"></a>Avvio
-L'opzione **Start** è un'opzione di *VSPerfCmd.exe* che inizializza il profiler sul metodo di profilatura specificato.
+**L'opzione** Start è *VSPerfCmd.exe'opzione* che inizializza il profiler sul metodo di profilatura specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,19 +48,19 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **CrossSession**&#124;**CS** Abilita la profilatura tra processi. Sono supportati entrambi i nomi dell'opzione **CrossSession** e **CS**.
 
- **Utente:**[ `domain\` ] `username` consente l'accesso client al monitoraggio dall'account specificato.
+ **Utente:**[ `domain\` ] Abilita `username` l'accesso client al monitoraggio dall'account specificato.
 
  **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** specifica un contatore delle prestazioni di Windows da includere come contrassegno nel file di dati di profilatura. **AutoMark** specifica l'intervallo in millisecondi tra le raccolte del file di dati.
 
 ## <a name="invalid-options"></a>Opzioni non valide
  Non è possibile usare le opzioni seguenti con l'opzione **Start** nella riga di comando.
 
- **Status** **Status** si applica ai processi profilati. Questa opzione elenca i processi e i thread insieme al relativo stato di profilatura corrente (On/Off). Ad esempio, se un processo viene arrestato, **Status** non indica questo stato nel rapporto. **Status** mostra che il processo è profilato o non profilato.
+ **Lo** **stato** si applica ai processi profilati. Questa opzione elenca i processi e i thread insieme al relativo stato di profilatura corrente (On/Off). Ad esempio, se un processo viene arrestato, **Status** non indica questo stato nel rapporto. **Status** mostra che il processo è profilato o non profilato.
 
- **Shutdown**[**:** `Timeout` ] disattiva il profiler.
+ **Shutdown**[**:** `Timeout` ] Disattiva il profiler.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra come usare l'opzione *Start di* **VSPerfCmd.exe** per inizializzare il profiler.
+ Nell'esempio seguente viene illustrato come usare *lVSPerfCmd.exe'opzione* **Start** per inizializzare il profiler.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

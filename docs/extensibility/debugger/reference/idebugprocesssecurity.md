@@ -1,6 +1,6 @@
 ---
 description: IDebugProcessSecurity viene implementato da un fornitore di porte per avvisare l'utente che la connessione al processo non è sicura.
-title: IDebugProcessSecurity | Microsoft Docs
+title: Interfaccia IDebugProcessSecurity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +9,18 @@ ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7466d88be9460a2b4680fc7d14a741df9238ea0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f8d104d4e3515e2023408c4d17a7260ac12a6e9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076264"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057512"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` viene implementato da un fornitore di porte per avvisare l'utente che la connessione al processo non è sicura.
+`IDebugProcessSecurity` viene implementato da un fornitore di porte per avvisare l'utente che il collegamento al processo non è sicuro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -28,7 +29,7 @@ IDebugProcessSecurity : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugProcessSecurity` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugProcessSecurity` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -36,12 +37,12 @@ IDebugProcessSecurity : IUnknown
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Avvisa un utente che la connessione al processo di debug non è sicura.|
 
 ## <a name="remarks"></a>Commenti
- Implementare questa interfaccia per visualizzare un avviso e consentire all'utente di annullare se il processo a cui si sta effettuando il fissaggio può essere considerato non sicuro.
+ Implementare questa interfaccia per visualizzare un avviso e consentire all'utente di annullare se il processo a cui si sta collegando può essere considerato non sicuro.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

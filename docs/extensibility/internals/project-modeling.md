@@ -1,5 +1,5 @@
 ---
-title: Project Modello di | Microsoft Docs
+title: Project Modelli di | Microsoft Docs
 description: Informazioni sugli oggetti di progetto standard necessari per creare l'automazione per il nuovo tipo di progetto e sul percorso seguito dall'automazione del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7edc9fe6e4703315356d5289f0054d2aacdbe76c9e752c4b8608e8e58f32e38e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 20db69ce89fcc2f4137682e46c04f0efb9f557c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359215"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057213"
 ---
 # <a name="project-modeling"></a>Definizione di modelli di progetto
 Il passaggio successivo per fornire l'automazione per il progetto consiste nell'implementare gli oggetti di progetto standard: le raccolte e , gli oggetti e e gli oggetti rimanenti univoci per <xref:EnvDTE.Projects> `ProjectItems` `Project` <xref:EnvDTE.ProjectItem> l'implementazione. Questi oggetti standard sono definiti nel file Dteinternal.h. Un'implementazione degli oggetti standard viene fornita nell'esempio BscPrj. È possibile usare queste classi come modelli per creare oggetti di progetto standard affiancati agli oggetti di progetto di altri tipi di progetto.

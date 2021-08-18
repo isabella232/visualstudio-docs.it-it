@@ -1,6 +1,6 @@
 ---
 title: Dati di IntelliTrace
-description: Informazioni su come configurare l'adattatore dati di diagnostica per IntelliTrace per raccogliere informazioni di traccia diagnostica specifiche in Visual Studio.
+description: Informazioni su come configurare l'adattatore dati di diagnostica per IntelliTrace per raccogliere informazioni di traccia di diagnostica specifiche Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
@@ -13,16 +13,17 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 6ecc16725913e159bb2dfeb45277c4555efa50a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: f25c0b0e2ab80ac61b0256d1b4af2e95c02b2382
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092514"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
 
-È possibile configurare l'adattatore dati di diagnostica per IntelliTrace per raccogliere informazioni di traccia diagnostica specifiche in Visual Studio. Questo adattatore può essere utilizzato nei test per raccogliere eventi di diagnostica significativi per l'applicazione, che uno sviluppatore può utilizzare successivamente per la traccia del codice allo scopo di individuare la causa di un bug. L'adattatore dati di diagnostica per IntelliTrace può essere utilizzato per i test manuali o per quelli automatizzati.
+È possibile configurare l'adattatore dati di diagnostica per IntelliTrace per raccogliere informazioni di traccia di diagnostica specifiche Visual Studio. Questo adattatore può essere utilizzato nei test per raccogliere eventi di diagnostica significativi per l'applicazione, che uno sviluppatore può utilizzare successivamente per la traccia del codice allo scopo di individuare la causa di un bug. L'adattatore dati di diagnostica per IntelliTrace può essere utilizzato per i test manuali o per quelli automatizzati.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -67,7 +68,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
 
 2. Selezionare **IntelliTrace**.
 
-3. Se si aggiunge IntelliTrace per un ruolo client Web o un'applicazione Web ASP.NET, è necessario selezionare anche **proxy client ASP.NET per IntelliTrace e l'effetto test**.
+3. Se si aggiunge IntelliTrace per un ruolo client Web o per un'applicazione Web ASP.NET, è necessario selezionare anche ASP.NET **Client Proxy per IntelliTrace** e Impatto test .
 
      Questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.
 
@@ -83,7 +84,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
     > [!WARNING]
     > Se si abilita la raccolta di dati di IntelliTrace, la raccolta di dati di code coverage non funzionerà.
 
-5. Scegliere la scheda **generale** . Selezionare **solo eventi IntelliTrace** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante il test.
+5. Scegliere la **scheda** Generale. Selezionare **Eventi IntelliTrace solo per** registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante il test.
 
      -oppure-
 
@@ -91,7 +92,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
 
 6. Per raccogliere dati dall'applicazione ASP.NET in esecuzione su Internet Information Services, selezionare **Raccogli dati da applicazioni ASP.NET in esecuzione su Internet Information Services**. Impostare e configurare l'agente di test sul ruolo del server Web. Vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
-7. Scegliere la scheda **moduli** . Selezionare **Raccogli dati da tutti i moduli tranne i seguenti** e usare **Aggiungi** per aggiungere all'elenco dei moduli e **rimuovere** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
+7. Scegliere la **scheda** Moduli. Selezionare Raccogli **dati da tutti i moduli tranne** i seguenti e usare **Aggiungi** per aggiungere all'elenco di moduli e **Rimuovi** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
 
      -oppure-
 
@@ -100,17 +101,17 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
     > [!NOTE]
     > Se possibile, selezionare i processi specifici che si desidera monitorare. Si tratta dell'operazione consigliata per prestazioni ottimali.
 
-8. Scegliere la scheda **processi** . Selezionare **Raccogli dati da tutti i processi tranne i seguenti** e utilizzare **Aggiungi** per aggiungere all'elenco di processi e **rimuovere** per rimuovere un processo. Questa opzione consente di includere tutti i processi in esecuzione nel sistema, ad eccezione di quelli specificati.
+8. Scegliere **la scheda Processi.** Selezionare **Raccogli dati da tutti i processi tranne** i seguenti e usare **Aggiungi** per aggiungere all'elenco di processi e **Rimuovi** per rimuovere un processo. Questa opzione consente di includere tutti i processi in esecuzione nel sistema, ad eccezione di quelli specificati.
 
      -oppure-
 
      Selezionare **Raccogli dati solo dai processi specificati** e usare **Aggiungi** per aggiungere processi all'elenco e **Rimuovi** per rimuovere i processi. Questa opzione consente di specificare esattamente i processi desiderati.
 
-9. Opzionale Scegliere la scheda **eventi IntelliTrace** . Selezionare o deselezionare ogni categoria di eventi IntelliTrace che si desidera includere o escludere quando si raccolgono eventi di diagnostica.
+9. (Facoltativo) Scegliere la **scheda Eventi IntelliTrace.** Selezionare o deselezionare ogni categoria di eventi IntelliTrace che si vuole includere o escludere quando si raccolgono eventi di diagnostica.
 
 10. (Facoltativo) Espandere ogni categoria di eventi IntelliTrace e selezionare o deselezionare i singoli eventi che si desidera includere o escludere.
 
-11. Opzionale Scegliere la scheda **Avanzate** . Scegliere quindi la freccia accanto a **quantità massima di spazio su disco per la registrazione** e selezionare le dimensioni massime che si desidera abilitare per il file di IntelliTrace da usare.
+11. (Facoltativo) Scegliere la **scheda** Avanzate. Scegliere quindi la freccia accanto a **Quantità** massima di spazio su disco per la registrazione e selezionare le dimensioni massime da abilitare per il file IntelliTrace da usare.
 
     > [!NOTE]
     > Se si aumenta la dimensione della registrazione, si potrebbe verificare un problema di timeout quando si salva la registrazione con i risultati test.
@@ -123,7 +124,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
     ::: moniker-end
     ::: moniker range=">=vs-2019"
     > [!NOTE]
-    > Per reimpostare la configurazione per l'adattatore dati di diagnostica, scegliere **Reimposta configurazione predefinita** in Visual Studio.
+    > Per reimpostare la configurazione per questo adattatore dati di diagnostica, scegliere **Ripristina la configurazione predefinita** in Visual Studio.
     ::: moniker-end
 
 ## <a name="see-also"></a>Vedi anche

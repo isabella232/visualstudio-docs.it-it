@@ -1,6 +1,6 @@
 ---
 title: Ingrandire i grafici dei risultati dei test di carico
-description: Informazioni su come esaminare i dati generati durante l'esecuzione di un test di carico in modo più dettagliato usando le barre dello zoom per eseguire lo zoom avanti e scorrere fino a un'area del grafico.
+description: Informazioni su come esaminare i dati generati durante un'esecuzione del test di carico in modo più dettagliato usando le barre di zoom per ingrandire e scorrere fino a un'area del grafico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: ee81f279f82ee4803a5ac188b5d647769f8a148bb6e7a73328f6c36236d6318c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6ea4f593bb0c6f54c32af6dae6ed860c8fb167f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366531"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033187"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
 
@@ -46,7 +46,7 @@ Per riportare i controlli zoom allo stato che consente di visualizzare la cronol
 
 Nell'illustrazione precedente, il grafico **Sistema sotto test** è stato ingrandito al fine di esaminare problemi di soglia. Le violazioni di soglia sono state abilitate tramite l'opzione **Mostra violazioni di soglia su grafico** del menu a discesa **Opzioni grafico** presente nella barra degli strumenti.
 
-Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+Per altre informazioni, vedere [Analizzare i risultati del test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="display-graphs"></a>Visualizzare i grafici
 
@@ -76,7 +76,7 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Per sincronizzare lo zoom e lo scorrimento
 
-1. Nell'Analizzatore **test di** carico scegliere Sincronizza controlli **zoom orizzontale**.
+1. Nell'analizzatore **test di carico** scegliere Sincronizza controlli zoom **orizzontale**.
 
      Quando il pulsante **Sincronizza controlli zoom orizzontali** è selezionato, lo zoom e lo scorrimento della scala cronologica di un singolo grafico vengono applicati anche alla scala cronologica degli altri grafici.
 
@@ -118,6 +118,6 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati del test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Analizzare i risultati del test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

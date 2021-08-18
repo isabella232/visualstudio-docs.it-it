@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff428f1a72812996a8217d4193deebe7393cbcc4a2fa9b0b870ab41f7094a0bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7471cc1d5b7a3aaa90ae2329d080e4c9e68a2db9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392757"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044995"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Procedura: Eseguire manualmente l'analisi del codice legacy per il codice gestito
 
-Lo strumento di analisi del codice fornisce informazioni sui possibili difetti nel codice sorgente. È possibile eseguire automaticamente l'analisi del codice a ogni compilazione di un progetto di codice ed è anche possibile eseguire manualmente l'analisi del codice. Le regole controllate quando viene eseguita l'analisi del codice vengono specificate nella Code Analysis delle pagine delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Configurare un Code Analysis per un'istanza di Project](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
+Lo strumento di analisi del codice fornisce informazioni sui possibili difetti nel codice sorgente. È possibile eseguire automaticamente l'analisi del codice a ogni compilazione di un progetto di codice ed è anche possibile eseguire manualmente l'analisi del codice. Le regole controllate quando viene eseguita l'analisi del codice vengono specificate nella Code Analysis delle pagine delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Configurare la Code Analysis per un'istanza di codice Project](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
 
 ## <a name="to-run-code-analysis-manually"></a>Per eseguire manualmente l'analisi del codice
 
@@ -34,4 +34,4 @@ setx EnableLegacyCodeAnalysis true
 
 2. Nella **Esplora soluzioni** fare clic sul progetto.
 
-3. Nel menu **Analizza** fare clic su **Esegui Code Analysis su Project** *nome*.
+3. Nel menu **Analizza** fare clic su **Esegui Code Analysis in Project** *nome*.

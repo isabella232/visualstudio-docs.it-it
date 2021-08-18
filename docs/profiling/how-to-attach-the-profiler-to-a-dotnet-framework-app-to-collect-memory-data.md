@@ -1,6 +1,6 @@
 ---
 title: Connettere il profiler a .NET per raccogliere dati di memoria
-description: Informazioni su come usare Visual Studio Strumenti di profilatura da riga di comando per connettere il profiler a un'app .NET Framework autonoma (client) in esecuzione e ottenere i dati di memoria.
+description: Informazioni su come usare Visual Studio Strumenti di profilatura strumenti da riga di comando per connettere il profiler a un'app .NET Framework autonoma (client) e ottenere i dati di memoria.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -87,7 +87,7 @@ Quando è in esecuzione l'applicazione di destinazione, è possibile controllare
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato da `PID`.|
-    |[/attach:](../profiling/attach.md) { `PID`&#124;} `ProcName` [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** avvia la raccolta dei dati per il processo specificato da `PID` o dal nome del processo (ProcName). **/detach** arresta la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo specifico.|
+    |[/attach:](../profiling/attach.md) { `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** avvia la raccolta dei dati per il processo specificato da `PID` o dal nome del processo (ProcName). **/detach** arresta la raccolta dei dati per il processo specificato o per tutti i processi se non è specificato un processo specifico.|
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
 
@@ -114,4 +114,4 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 ## <a name="see-also"></a>Vedi anche
 
 [Profilare applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md) 
- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+ [Viste dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

@@ -1,6 +1,6 @@
 ---
 description: Questo metodo ottiene il tipo di campo.
-title: 'IDebugField:: getkind | Microsoft Docs'
+title: IDebugField::GetKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e26f6850f8d0cdd1a197ec88a93ee1069d065bf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f866d4564f912111d04dcd4d8c35e942e863193e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077044"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088809"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Questo metodo ottiene il tipo di campo.
@@ -42,7 +43,7 @@ int GetKind(
 
 ## <a name="parameters"></a>Parametri
 `pdwKind`\
-out Restituisce il tipo di campo come una combinazione di [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) costanti.
+[out] Restituisce il tipo di campo come combinazione di [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) costanti.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

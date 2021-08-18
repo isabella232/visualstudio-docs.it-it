@@ -11,20 +11,21 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc9f399397dc9fee94c31a48aa8a868a73011b1
-ms.sourcegitcommit: 8d847400f5662461dcd5d866d0edab20f66cb375
+ms.openlocfilehash: b7bb97ec03ffbd596cf9f726ddb47ba2ca6f79501f15412dff0d60d2d83f68d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114664519"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436708"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare i set di regole per raggruppare le regole di analisi del codice
 
 Quando si configura l'analisi del codice Visual Studio, è possibile scegliere da un elenco di set di regole *predefiniti.* Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole progettato per analizzare il codice per le API disponibili pubblicamente. È anche possibile applicare un set di regole che include tutte le regole disponibili.
 
-È possibile personalizzare un set di regole aggiungendo o eliminando regole o modificando i livelli di gravità delle regole in modo che vengano visualizzati come avvisi o errori in **Elenco errori**. I set di regole personalizzati possono soddisfare una necessità per l'ambiente di sviluppo specifico. Quando si personalizza un set di regole, l'editor del set di regole fornisce strumenti di ricerca e filtro per facilitare il processo.
+È possibile personalizzare un set di regole aggiungendo o eliminando regole o modificando i livelli di gravità delle regole in modo che vengano visualizzati come avvisi o errori in **Elenco errori**. I set di regole personalizzati possono soddisfare le esigenze dell'ambiente di sviluppo specifico. Quando si personalizza un set di regole, l'editor del set di regole fornisce strumenti di ricerca e filtro per facilitare il processo.
 
 I set di regole sono disponibili [per l'analisi del codice gestito,](/dotnet/fundamentals/code-analysis/code-quality-rule-options) [l'analisi legacy del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md)e [l'analisi del codice C++.](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)
 

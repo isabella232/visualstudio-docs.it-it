@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651bdf8b4bc9e43b5583855e3b1301e5fe4a2141fd5abeaae1483f169fcad8ec
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 13f07dc42327f90fc9bc816562c2b4e2117ee113
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262100"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079389"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Determina l'esistenza di un attributo personalizzato per questo campo e, se esistente, restituisce le informazioni sull'attributo.

@@ -1,6 +1,6 @@
 ---
 title: Creare diagrammi delle dipendenze dal codice
-description: Informazioni su come creare un diagramma delle dipendenze in Visual Studio visualizzare l'architettura logica di alto livello del sistema software.
+description: Informazioni su come creare un diagramma delle dipendenze in Visual Studio per visualizzare l'architettura logica di alto livello del sistema software.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,20 +15,20 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: dbb9cf7f9c3d024a28c0726ff54e0f0a5a981cd3d2242527706a5716de996a02
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b475e8c7e259acc6dcac42eefb6b1bd35d4f32c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231717"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040463"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
 
-Per visualizzare l'architettura logica di alto livello del sistema software, creare un diagramma *delle* dipendenze in Visual Studio. Per assicurarsi che il codice rimanga coerente con questa progettazione, convalidare il codice con un diagramma delle dipendenze. È possibile creare diagrammi delle dipendenze per Visual C# e Visual Basic progetti. Per vedere quali edizioni di Visual Studio supportano questa funzionalità, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione.](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
+Per visualizzare l'architettura logica di alto livello del sistema software, creare *un* diagramma delle dipendenze in Visual Studio. Per assicurarsi che il codice rimanga coerente con questa progettazione, convalidare il codice con un diagramma delle dipendenze. È possibile creare diagrammi delle dipendenze per visual c# e Visual Basic progetti. Per informazioni su quali edizioni di Visual Studio questa funzionalità, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Creare un diagramma delle dipendenze](../modeling/media/layerdiagramvisualizecode.png)
 
-Un diagramma delle dipendenze consente di organizzare Visual Studio elementi della soluzione in gruppi logici astratti denominati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali elementi eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È anche possibile specificare le dipendenze prevista *o esistente tra* i livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono usare o usano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.
+Un diagramma delle dipendenze consente di organizzare Visual Studio elementi della soluzione in gruppi logici astratti denominati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali elementi eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È anche possibile specificare le dipendenze esistenti *o destinate tra* i livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono usare o usano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.
 
 [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
@@ -46,13 +46,13 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione abbi
 > [!NOTE]
 > I diagrammi delle dipendenze per i progetti .NET Core sono supportati a partire Visual Studio 2019 versione 16.2.
 
-1. Scegliere **Nuovo** diagramma dipendenze dal menu **Architettura**.
+1. Scegliere **Nuovo** diagramma **dipendenze dal** menu Architettura .
 
-2. In **Modelli** scegliere Diagramma **dipendenze.**
+2. In **Modelli** scegliere **Diagramma dipendenze**.
 
 3. Assegnare un nome al diagramma.
 
-4. In **Aggiungi a modello Project** selezionare un progetto di modellazione esistente nella soluzione.
+4. In **Aggiungi a modello Project** passare a e selezionare un progetto di modellazione esistente nella soluzione.
 
      -oppure-
 
@@ -63,19 +63,19 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione abbi
 
 5. Assicurarsi di salvare sia il progetto di modellazione che il diagramma delle dipendenze.
 
-## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Trascinare o copiare e incollare da una mappa codice
+## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Trascinare e rilasciare o copiare e incollare da una mappa codice
 
 1. Generare una mappa codice per la soluzione usando **il** menu Architettura.
 
-2. È consigliabile applicare un filtro della mappa codice per rimuovere le cartelle della soluzione e "Asset di test" se si vogliono applicare solo le dipendenze nel codice del prodotto.
+2. È consigliabile applicare un filtro mappa codice per rimuovere le cartelle della soluzione e "Asset di test" se si vogliono applicare solo le dipendenze nel codice del prodotto.
 
-3. Nella mappa codice generata rimuovere il nodo "Esterno" o espanderlo per visualizzare gli assembly esterni, a seconda che si vogliano applicare le dipendenze dello spazio dei nomi ed eliminare gli assembly non necessari dalla mappa codice.
+3. Nella mappa codice generata rimuovere il nodo "Esterno" o espanderlo per visualizzare gli assembly esterni, a seconda che si voglia applicare le dipendenze dello spazio dei nomi ed eliminare gli assembly non necessari dalla mappa codice.
 
 4. Creare un nuovo diagramma delle dipendenze per la soluzione **usando** il menu Architettura
 
-5. Selezionare tutti i nodi nella mappa codici (usare _CTRL_ A o usare la selezione a banda di lancio premendo MAIUSC prima di fare clic, trascinare  +  e rilasciare. 
+5. Selezionare tutti i nodi nella mappa codice (usare _CTRL_ A o usare la selezione elastica premendo MAIUSC prima di fare  +  clic, trascinare e  rilasciare).
 
-6. Trascinare e rilasciare, o copiare e incollare, gli elementi selezionati nel nuovo diagramma convalida delle dipendenze.
+6. Trascinare e rilasciare o copiare e incollare gli elementi selezionati nel nuovo diagramma convalida delle dipendenze.
 
 7. Viene illustrata l'architettura dell'app corrente. Decidere quale deve essere l'architettura e modificare di conseguenza il diagramma delle dipendenze.
 
@@ -86,19 +86,19 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione abbi
 
  È inoltre possibile collegare livelli a elementi che non supportano la convalida, ad esempio documenti Word o presentazioni PowerPoint, in modo da associare un livello con specifiche o piani. È anche possibile collegare livelli a file di progetti condivisi tra più applicazioni, ma il processo di convalida non includerà tali livelli, che vengano visualizzati con nomi generici come "Livello 1" e "Livello 2".
 
- Per verificare se un elemento collegato supporta la convalida, aprire **Esplora livelli** ed esaminare la **proprietà Supports Validation** dell'elemento. Vedere [Gestione dei collegamenti agli artefatti.](#Managing)
+ Per verificare se un elemento collegato supporta la convalida, aprire **Esplora** livelli ed esaminare la proprietà **Supports Validation** dell'elemento. Vedere [Gestione dei collegamenti agli elementi](#Managing).
 
 |**To**|**seguire le operazioni di seguito riportate**|
 |-|-|
-|Creare un livello per un solo elemento|<ol><li>Trascinare l'elemento nel diagramma delle dipendenze da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Vedere [Eseguire il mapping delle dipendenze tra le soluzioni e](../modeling/map-dependencies-across-your-solutions.md) Usare le mappe codice per eseguire il debug delle [applicazioni.](../modeling/use-code-maps-to-debug-your-applications.md)</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'elemento.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Il trascinamento dei file binari nel diagramma delle dipendenze non aggiunge automaticamente i relativi riferimenti al progetto di modellazione. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modello. **Per aggiungere file binari al progetto di modellazione** <ol><li>In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto di modellazione e quindi scegliere **Aggiungi elemento esistente.**</li><li>Nella finestra **di dialogo Aggiungi** elemento esistente individuare i file binari, selezionarli e quindi scegliere **OK.**     I file binari verranno visualizzati nel progetto di modellazione.</li><li>In **Esplora soluzioni** scegliere un file binario aggiunto e quindi premere **F4** per aprire la **finestra** Proprietà.</li><li>In ogni file binario impostare la **proprietà Azione di** compilazione su **Convalida.**</li></ol>|
-|Creare un solo livello per tutti gli artefatti selezionati|Trascinare contemporaneamente tutti gli artefatti nel diagramma delle dipendenze.<br /><br /> Nel diagramma viene visualizzato un livello collegato a tutti gli elementi.|
-|Creare un livello per ogni elemento selezionato|Tenere premuto MAIUSC **mentre** si trascinano contemporaneamente tutti gli artefatti nel diagramma delle dipendenze. **Nota:**  Se si usa **MAIUSC** per selezionare un intervallo di elementi, rilasciare il tasto dopo aver selezionato gli elementi. Premerlo e tenerlo premuto nuovamente quando si trascinano gli elementi nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|
+|Creare un livello per un solo elemento|<ol><li>Trascinare l'elemento nel diagramma delle dipendenze da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Vedere [Eseguire il mapping delle dipendenze tra le soluzioni](../modeling/map-dependencies-across-your-solutions.md) e Usare mappe codice per eseguire il debug delle [applicazioni.](../modeling/use-code-maps-to-debug-your-applications.md)</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'elemento.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Il trascinamento dei file binari nel diagramma delle dipendenze non aggiunge automaticamente i relativi riferimenti al progetto di modellazione. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modello. **Per aggiungere file binari al progetto di modellazione** <ol><li>In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto di modellazione e quindi scegliere **Aggiungi elemento esistente**.</li><li>Nella finestra **di dialogo Aggiungi elemento** esistente individuare i file binari, selezionarli e quindi scegliere **OK.**     I file binari verranno visualizzati nel progetto di modellazione.</li><li>In **Esplora soluzioni** scegliere un file binario aggiunto e quindi premere **F4** per aprire la **finestra** Proprietà.</li><li>In ogni file binario impostare la **proprietà Azione di** compilazione su **Convalida**.</li></ol>|
+|Creare un solo livello per tutti gli artefatti selezionati|Trascinare contemporaneamente tutti gli elementi nel diagramma delle dipendenze.<br /><br /> Nel diagramma viene visualizzato un livello collegato a tutti gli elementi.|
+|Creare un livello per ogni elemento selezionato|Tenere premuto **MAIUSC** mentre si trascinano contemporaneamente tutti gli elementi nel diagramma delle dipendenze. **Nota:**  Se si usa **MAIUSC** per selezionare un intervallo di elementi, rilasciare il tasto dopo aver selezionato gli elementi. Premerlo e tenerlo premuto nuovamente quando si trascinano gli elementi nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|
 |Aggiungere un artefatto a un livello|Trascinare l'elemento sul livello.|
-|Creare un nuovo livello non collegato|Nella casella **degli** strumenti espandere la **sezione Diagramma dipendenze** e trascinare un **livello** nel diagramma delle dipendenze.<br /><br /> Per aggiungere più livelli, fare doppio clic sullo strumento. Al termine, scegliere lo strumento **Puntatore** o premere **ESC.**<br /><br /> - oppure -<br /><br /> Aprire il menu di scelta rapida per il diagramma delle dipendenze, **scegliere Aggiungi** e quindi scegliere **Livello.**|
-|Creare livelli annidati|Trascinare un livello esistente su un altro livello.<br /><br /> - oppure -<br /><br /> Aprire il menu di scelta rapida per un livello, **scegliere Aggiungi** e quindi scegliere **Livello.**|
+|Creare un nuovo livello non collegato|Nella casella **degli** strumenti espandere la **sezione Diagramma** dipendenze e quindi trascinare un **livello** nel diagramma delle dipendenze.<br /><br /> Per aggiungere più livelli, fare doppio clic sullo strumento. Al termine, scegliere lo strumento **Puntatore** o premere **ESC.**<br /><br /> - oppure -<br /><br /> Aprire il menu di scelta rapida per il diagramma delle dipendenze, **scegliere Aggiungi** e quindi **Scegliere Livello**.|
+|Creare livelli annidati|Trascinare un livello esistente su un altro livello.<br /><br /> - oppure -<br /><br /> Aprire il menu di scelta rapida per un livello, scegliere **Aggiungi** e quindi **Scegliere Livello**.|
 |Creare un nuovo livello contenente due o più livelli esistenti|Selezionare i livelli, aprire il menu di scelta rapida per la selezione e quindi scegliere **Raggruppa.**|
-|Modificare il colore di un livello|Impostarne **la** proprietà Color sul colore desiderato.|
-|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà Spazi dei nomi **non consentiti del** livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Modificare il colore di un livello|Impostarne **la proprietà Color** sul colore desiderato.|
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Spazi dei nomi** non consentiti del livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 |Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Dipendenze** spazio dei nomi non consentito del livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 |Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi nella proprietà **Spazi dei nomi obbligatori del** livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 
@@ -112,7 +112,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione abbi
 
 ## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> Gestire i collegamenti tra livelli ed elementi
 
-1. Nel diagramma delle dipendenze aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti.**
+1. Nel diagramma delle dipendenze aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti**.
 
      **Esplora livelli** mostra i collegamenti degli artefatti per il livello selezionato.
 
@@ -120,23 +120,23 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione abbi
 
 |**To**|**In Esplora livello**|
 |-|-|
-|Eliminare il collegamento tra il livello e un elemento|Aprire il menu di scelta rapida per il collegamento all'elemento e quindi scegliere **Elimina.**|
-|Spostare il collegamento da un livello a un altro|Trascinare il collegamento dell'elemento in un livello esistente del diagramma.<br /><br /> - oppure -<br /><br /> 1. Aprire il menu di scelta rapida per il collegamento all'elemento e quindi scegliere **Taglia.**<br />2. Nel diagramma delle dipendenze aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla.**|
-|Copiare il collegamento da un livello a un altro|1. Aprire il menu di scelta rapida per il collegamento all'elemento e quindi scegliere **Copia.**<br />2. Nel diagramma delle dipendenze aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla.**|
+|Eliminare il collegamento tra il livello e un elemento|Aprire il menu di scelta rapida per il collegamento all'elemento e quindi scegliere **Elimina**.|
+|Spostare il collegamento da un livello a un altro|Trascinare il collegamento dell'elemento in un livello esistente del diagramma.<br /><br /> - oppure -<br /><br /> 1. Aprire il menu di scelta rapida per il collegamento all'elemento e quindi scegliere **Taglia**.<br />2. Nel diagramma delle dipendenze aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla**.|
+|Copiare il collegamento da un livello a un altro|1. Aprire il menu di scelta rapida per il collegamento all'elemento e quindi scegliere **Copia**.<br />2. Nel diagramma delle dipendenze aprire il menu di scelta rapida per il livello e quindi scegliere **Incolla**.|
 |Creare un nuovo livello da un collegamento dell'elemento esistente|Trascinare il collegamento dell'artefatto in un'area vuota del diagramma.|
-|Verificare che un artefatto collegato supporti la convalida rispetto al diagramma delle dipendenze.|Esaminare la colonna **Supports Validation (Supporto** convalida) per il collegamento dell'artefatto.|
+|Verificare che un elemento collegato supporti la convalida rispetto al diagramma delle dipendenze.|Esaminare la colonna **Supports Validation** (Supporta convalida) per il collegamento dell'artefatto.|
 
-## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Decodificare le dipendenze esistenti
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Reverse engineer delle dipendenze esistenti
  È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. È possibile decompilare dipendenze esistenti per elementi collegati a livelli nel diagramma.
 
 > [!NOTE]
-> Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per visualizzare gli artefatti con dipendenze che è possibile decodificare, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti.** In **Esplora livelli** esaminare la colonna Supporto **convalida.** Le dipendenze non verranno progettate in modo inverso per gli artefatti per i quali questa colonna indica **False.**
+> Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per visualizzare gli elementi con dipendenze che è possibile decodificare, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**. In **Esplora livelli** esaminare la colonna Supporto **convalida.** Le dipendenze non verranno decodificate per gli artefatti per i quali questa colonna mostra **False**.
 
-- Selezionare uno o più livelli, aprire il menu di scelta rapida per un livello selezionato e quindi scegliere **Genera dipendenze.**
+- Selezionare uno o più livelli, aprire il menu di scelta rapida per un livello selezionato e quindi scegliere **Genera dipendenze**.
 
   In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.
 
-## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Modificare i livelli e le dipendenze per mostrare la progettazione prevista
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Modificare livelli e dipendenze per visualizzare la progettazione prevista
  Per descrivere le modifiche che si prevede di apportare al sistema o all'architettura prevista, modificare il diagramma delle dipendenze:
 
 |**To**|**Eseguire questi passaggi**|
@@ -144,7 +144,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione abbi
 |Modificare o limitare la direzione di una dipendenza|Impostarne **la proprietà Direction.**|
 |Creare nuove dipendenze|Usare gli **strumenti Dipendenza** e **Dipendenza bidirezionale.**<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, scegliere lo strumento **Puntatore** o premere **ESC.**|
 |Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Dipendenze** spazio dei nomi non consentito del livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
-|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà Spazi dei nomi **non consentiti del** livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Spazi dei nomi** non consentiti del livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 |Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi nella proprietà **Spazi dei nomi obbligatori del** livello. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 
 ## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> Modificare la modalità di visualizzazione degli elementi nel diagramma

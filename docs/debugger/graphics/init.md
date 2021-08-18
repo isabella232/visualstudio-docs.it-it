@@ -8,14 +8,15 @@ ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fc6732ed506d1aa7e4ac3e47c629aadae796201d
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: d7aab5c2ddb35f1158aa83a4a365e5a0594ce457
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232375"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133822"
 ---
 # <a name="init"></a>Init
 Prepara il componente di diagnostica della grafica integrato nell'applicazione per acquisire e registrare attivamente le informazioni grafiche in un file di log di grafica.

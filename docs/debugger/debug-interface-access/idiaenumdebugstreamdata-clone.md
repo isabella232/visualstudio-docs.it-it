@@ -1,6 +1,6 @@
 ---
-description: Crea un enumeratore che contiene la stessa sequenza enumerata dell'enumeratore del flusso dei dati di debug corrente.
-title: 'IDiaEnumDebugStreamData:: Clone | Microsoft Docs'
+description: Crea un enumeratore che contiene la stessa sequenza enumerata dell'enumeratore del flusso di dati di debug corrente.
+title: IDiaEnumDebugStreamData::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,14 +11,15 @@ ms.assetid: e7f17750-0694-4634-bf34-c821cd265c2f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b6d603f86a09f6f00922490c094ccb3d996ef1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 965fb81fec0964b5e682c21e03c67410b148eae0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158218"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044904"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
 Crea un enumeratore che contiene la stessa sequenza enumerata dell'enumeratore corrente.
@@ -34,7 +35,7 @@ HRESULT Clone (
 #### <a name="parameters"></a>Parametri
  ppenum
 
-out Restituisce un oggetto [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) che contiene la sequenza duplicata di record del flusso di dati di debug.
+[out] Restituisce un [oggetto IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) che contiene la sequenza duplicata dei record del flusso di dati di debug.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

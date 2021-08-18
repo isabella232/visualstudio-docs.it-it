@@ -1,6 +1,6 @@
 ---
 title: Helper SDK per il debug | Microsoft Docs
-description: Informazioni sulle funzioni e sulle dichiarazioni che sono funzioni helper globali per l'implementazione di motori di debug, analizzatori di espressioni e provider di simboli in C++.
+description: Informazioni sulle funzioni e le dichiarazioni che sono funzioni helper globali per l'implementazione di motori di debug, analizzatori di espressioni e provider di simboli in C++.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,24 +17,24 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d09b91f0cbe2db0755546932455326a4e78eb13c07c846d8dd55f8984bc0145d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd85921256d8212a1d02d2d24277ff2ed71dde97
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388987"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103065"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Helper SDK per il debug
 Queste funzioni e dichiarazioni sono funzioni helper globali per l'implementazione di motori di debug, analizzatori di espressioni e provider di simboli in C++.
 
 > [!NOTE]
-> Non esistono versioni gestite di queste funzioni e dichiarazioni al momento.
+> Al momento non sono disponibili versioni gestite di queste funzioni e dichiarazioni.
 
 ## <a name="overview"></a>Panoramica
- Per consentire ai motori di debug, agli analizzatori di espressioni e ai provider di simboli di essere usati Visual Studio, è necessario registrarli. Questa operazione viene eseguita impostando le sottochiavi e le voci del Registro di sistema, altrimenti note come "impostazione delle metriche". Le funzioni globali seguenti sono progettate per semplificare il processo di aggiornamento di queste metriche. Per informazioni sul layout di ogni sottochiave del Registro di sistema aggiornata da queste funzioni, vedere la sezione relativa ai percorsi del Registro di sistema.
+ Per poter usare i motori di debug, gli analizzatori di espressioni e i provider di simboli Visual Studio, è necessario registrarli. Questa operazione viene eseguita impostando le sottochiavi e le voci del Registro di sistema, note anche come "metriche di impostazione". Le funzioni globali seguenti sono progettate per semplificare il processo di aggiornamento di queste metriche. Per informazioni sul layout di ogni sottochiave del Registro di sistema aggiornata da queste funzioni, vedere la sezione Percorsi del Registro di sistema.
 
-## <a name="general-metric-functions"></a>Funzioni metriche generali
- Si tratta di funzioni generali usate dai motori di debug. Le funzioni specializzate per gli analizzatori di espressioni e i provider di simboli sono dettagliate più avanti.
+## <a name="general-metric-functions"></a>Funzioni di metrica generali
+ Si tratta di funzioni generali usate dai motori di debug. Le funzioni specializzate per gli analizzatori di espressioni e i provider di simboli vengono fornite in dettaglio più avanti.
 
 ### <a name="getmetric-method"></a>Metodo GetMetric
  Recupera un valore della metrica dal Registro di sistema.
@@ -52,12 +52,12 @@ HRESULT GetMetric(
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|pszMachine|[in] Nome di un computer possibilmente remoto il cui registro verrà scritto ( `NULL` significa computer locale).|
+|pszMachine|[in] Nome di un computer remoto il cui registro verrà scritto ( `NULL` significa computer locale).|
 |pszType|[in] Uno dei tipi di metrica.|
 |guidSection|[in] GUID di un motore, un analizzatore, un'eccezione e così via specifici. Specifica una sottosezione in un tipo di metrica per un elemento specifico.|
 |pszMetric|[in] Metrica da ottenere. Corrisponde a un nome di valore specifico.|
 |pdwValue|[in] Posizione di archiviazione del valore dalla metrica. Esistono diverse versioni di GetMetric che possono restituire un valore DWORD (come in questo esempio), un BSTR, un GUID o una matrice di GUID.|
-|pszAltRoot|[in] Radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
+|pszAltRoot|[in] Una radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
 
 ### <a name="setmetric-method"></a>Metodo SetMetric
  Imposta il valore della metrica specificato nel Registro di sistema.
@@ -79,8 +79,8 @@ HRESULT SetMetric(
 |guidSection|[in] GUID di un motore, un analizzatore, un'eccezione e così via specifici. Specifica una sottosezione in un tipo di metrica per un elemento specifico.|
 |pszMetric|[in] Metrica da ottenere. Corrisponde a un nome di valore specifico.|
 |dwValue|[in] Posizione di archiviazione del valore nella metrica. Esistono diverse versioni di SetMetric che possono archiviare un valore DWORD (in questo esempio), un BSTR, un GUID o una matrice di GUID.|
-|fUserSpecific|[in] TRUE se la metrica è specifica dell'utente e se deve essere scritta nell'hive dell'utente anziché nell'hive del computer locale.|
-|pszAltRoot|[in] Radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
+|fUserSpecific|[in] TRUE se la metrica è specifica dell'utente e deve essere scritta nell'hive dell'utente anziché nell'hive del computer locale.|
+|pszAltRoot|[in] Una radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
 
 ### <a name="removemetric-method"></a>Metodo RemoveMetric
  Rimuove la metrica specificata dal Registro di sistema.
@@ -99,10 +99,10 @@ HRESULT RemoveMetric(
 |pszType|[in] Uno dei tipi di metrica.|
 |guidSection|[in] GUID di un motore, un analizzatore, un'eccezione e così via specifici. Specifica una sottosezione in un tipo di metrica per un elemento specifico.|
 |pszMetric|[in] Metrica da rimuovere. Corrisponde a un nome di valore specifico.|
-|pszAltRoot|[in] Radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
+|pszAltRoot|[in] Una radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
 
 ### <a name="enummetricsections-method"></a>Metodo EnumMetricSections
- Enumera le diverse sezioni delle metriche nel Registro di sistema.
+ Enumera le varie sezioni delle metriche nel Registro di sistema.
 
 ```cpp
 HRESULT EnumMetricSections(
@@ -116,11 +116,11 @@ HRESULT EnumMetricSections(
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|pszMachine|[in] Nome di un computer possibilmente remoto il cui registro verrà scritto ( `NULL` significa computer locale).|
+|pszMachine|[in] Nome di un computer remoto il cui registro verrà scritto ( `NULL` significa computer locale).|
 |pszType|[in] Uno dei tipi di metrica.|
 |rgguidSections|[in, out] Matrice preallocata di GUID da riempire.|
 |pdwSize|[in] Numero massimo di GUID che possono essere archiviati nella `rgguidSections` matrice.|
-|pszAltRoot|[in] Radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
+|pszAltRoot|[in] Una radice alternativa del Registro di sistema da usare. Impostare su `NULL` per usare il valore predefinito.|
 
 ## <a name="expression-evaluator-functions"></a>Funzioni dell'analizzatore di espressioni
 
@@ -195,11 +195,11 @@ HRESULT EnumMetricSections(
 |MetricaEngineCanWatchProcess|Impostare questo valore su un valore diverso da zero per indicare che il motore di debug guarderà gli eventi di elaborazione anziché il provider di programmi.|
 |metricaRemoteDebugging|Impostare questo valore su un valore diverso da zero per indicare il supporto per il debug remoto.|
 |metricEncUseNativeBuilder|Impostare questa opzione su un valore diverso da zero per indicare che Gestione modifiche e continuazione deve usare il encbuild.dll del motore di debug per la compilazione per Modifica e continuazione. **Nota:**  Un motore di debug personalizzato non deve mai impostarlo o deve sempre impostarlo su 0.|
-|metricaLoadUnderWOW64|Impostare questa proprietà su un valore diverso da zero per indicare che il motore di debug deve essere caricato nel processo dell'oggetto del debug in WOW durante il debug di un processo a 64 bit. In caso contrario, il motore di debug verrà caricato nel processo Visual Studio (in esecuzione in WOW64).|
+|metricaLoadUnderWOW64|Impostare questa proprietà su un valore diverso da zero per indicare che il motore di debug deve essere caricato nel processo dell'oggetto del debug in WOW durante il debug di un processo a 64 bit. In caso contrario, il motore di debug verrà caricato nel Visual Studio processo (in esecuzione in WOW64).|
 |metricLoadProgramProviderUnderWOW64|Impostare questa proprietà su un valore diverso da zero per indicare che il provider di programmi deve essere caricato nel processo dell'oggetto del debug durante il debug di un processo a 64 bit in WOW. In caso contrario, verrà caricato nel Visual Studio processo.|
 |MetricaStopOnExceptionCrossingManagedBoundary|Impostare questa proprietà su un valore diverso da zero per indicare che il processo deve essere interrotta se viene generata un'eccezione non gestita attraverso i limiti del codice gestito/non gestito.|
 |metricaAutoSelectPriority|Impostare questa opzione su una priorità per la selezione automatica del motore di debug (i valori più alti sono uguali alla priorità più alta).|
-|metricAutoSelectIncompatibleList|Chiave del Registro di sistema contenente voci che specificano GUID per i motori di debug da ignorare nella selezione automatica. Queste voci sono un numero (0, 1, 2 e così via) con un GUID espresso come stringa.|
+|metricaAutoSelectIncompatibleList|Chiave del Registro di sistema contenente voci che specificano GUID per i motori di debug da ignorare nella selezione automatica. Queste voci sono un numero (0, 1, 2 e così via) con un GUID espresso come stringa.|
 |metricIncompatibleList|Chiave del Registro di sistema contenente voci che specificano GUID per motori di debug incompatibili con questo motore di debug.|
 |metricaDisableJITOptimization|Impostare questo valore su un valore diverso da zero per indicare che le ottimizzazioni JIT (per il codice gestito) devono essere disabilitate durante il debug.|
 

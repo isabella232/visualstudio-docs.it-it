@@ -1,6 +1,6 @@
 ---
 title: Introduzione alla modifica del codice nell'editor del codice
-description: Informazioni su come usare l'editor di codice in Visual Studio per aggiungere codice a un file e su come scrivere codice, passare a esso ed eseguire il refactoring.
+description: Informazioni su come usare l'editor di codice in Visual Studio aggiungere codice a un file e su come scrivere codice, accederlo ed eseguire il refactoring.
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom:
@@ -8,19 +8,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce656c43dd04ab91bd3fd34dcd01dbad27cc644
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ed8aeefb35ec0659646a19d055f85743ef643d81
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386449"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041529"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -29,21 +29,21 @@ In questa introduzione all'editor di codice di Visual Studio della durata di 10 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2022"
 
 > [!TIP]
-> Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina dei download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
+> Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ Visual Studio offre *frammenti di codice* utili che è possibile usare per gener
 
    La firma del metodo `static void Main()` viene aggiunta al file.
 
-I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per il linguaggio scegliendo Modifica frammento di codice  >  **IntelliSense** Inserisci frammento e quindi scegliendo la  >  cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
+I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per il linguaggio scegliendo Modifica frammento di codice  >  **IntelliSense** e quindi  >  scegliendo la cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
 
 ![Elenco di frammenti di codice per C#](media/tutorial-code-snippet-list.png)
 
@@ -131,15 +131,15 @@ La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di 
 
 ## <a name="collapse-code-blocks"></a>Comprimere i blocchi di codice
 
-Non è necessario visualizzare il [costruttore](/dotnet/csharp/programming-guide/classes-and-structs/constructors) vuoto per `Class1` che è stato generato, pertanto per semplificare la visualizzazione del codice si procederà a comprimere il costruttore. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga del costruttore. Oppure, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi del codice del costruttore e premere **CTRL** + **M**, **CTRL** + **M**.
+Non è necessario visualizzare il [costruttore](/dotnet/csharp/programming-guide/classes-and-structs/constructors) vuoto per `Class1` che è stato generato, pertanto per semplificare la visualizzazione del codice si procederà a comprimere il costruttore. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga del costruttore. In caso contrario, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi del codice del costruttore e premere **CTRL** + **M**, **CTRL** + **M**.
 
 ![Pulsante di compressione evidenziato](media/tutorial-collapse.png)
 
-Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice, fare clic sulla stessa casella grigia in cui è ora presente un segno più oppure premere di nuovo **CTRL** + **M**, **CTRL** + **M.** Questa funzionalità è [denominata Struttura ed](../ide/outlining.md) è particolarmente utile quando si comprottono metodi lunghi o intere classi.
+Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice, fare clic sulla stessa casella grigia in cui è ora presente un segno più oppure premere **di** nuovo CTRL + **M**, **CTRL** + **M.** Questa funzionalità è [denominata Struttura ed](../ide/outlining.md) è particolarmente utile quando si comprendono metodi lunghi o intere classi.
 
 ## <a name="view-symbol-definitions"></a>Visualizzare le definizioni dei simboli
 
-L Visual Studio editor semplifica il controllo della definizione di un tipo, di un metodo e così via. Un modo è passare al file che contiene la definizione, ad esempio scegliendo Vai a **definizione** in qualsiasi punto in cui viene fatto riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `string`.
+L Visual Studio editor semplifica l'ispezione della definizione di un tipo, di un metodo e così via. Un modo è passare al file che contiene la definizione, ad esempio scegliendo Vai a **definizione** in qualsiasi punto in cui viene fatto riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `string`.
 
 1. Fare clic con il pulsante destro del mouse su una qualsiasi ricorrenza di `string` e scegliere **Visualizza definizione** dal menu del contenuto. In caso contrario, **premere ALT** + **F12.**
 
@@ -151,7 +151,7 @@ L Visual Studio editor semplifica il controllo della definizione di un tipo, di 
 
 ## <a name="use-intellisense-to-complete-words"></a>Usare IntelliSense per il completamento di parole
 
-[IntelliSense](../ide/using-intellisense.md) è una risorsa di valore inestimabile per la scrittura di codice. Consente di visualizzare informazioni sui membri disponibili di un tipo o sui dettagli parametro per diversi overload di un metodo. È anche possibile usare IntelliSense per completare una parola dopo aver digitato un numero di caratteri sufficiente a evitare ambiguità. Aggiungere una riga di codice per stampare le stringhe ordinate nella finestra della console, ovvero la posizione standard in cui finisce l'output del programma.
+[IntelliSense](../ide/using-intellisense.md) è una risorsa di valore inestimabile durante la codifica. Consente di visualizzare informazioni sui membri disponibili di un tipo o sui dettagli parametro per diversi overload di un metodo. È anche possibile usare IntelliSense per completare una parola dopo aver digitato un numero di caratteri sufficiente a evitare ambiguità. Aggiungere una riga di codice per stampare le stringhe ordinate nella finestra della console, ovvero la posizione standard in cui finisce l'output del programma.
 
 1. Sotto la variabile `query` iniziare a digitare il codice seguente:
 
@@ -178,7 +178,7 @@ L Visual Studio editor semplifica il controllo della definizione di un tipo, di 
 
 Quando si inizia a creare codice è facile commettere errori e quindi dover modificare il nome di una variabile o di un metodo. Ora si userà la funzionalità [refactoring](../ide/refactoring-in-visual-studio.md) di Visual Studio per rinominare la variabile `_words` come `words`.
 
-1. Posizionare il cursore sulla definizione della variabile e scegliere Rinomina dal menu di scelta rapida o dal menu di scelta rapida oppure `_words` premere **CTRL**  + **R**, **CTRL** + **R**.
+1. Posizionare il cursore sulla definizione della variabile e scegliere Rinomina dal menu di scelta rapida o dal menu di scelta rapida `_words` oppure premere **CTRL**  + **R**, **CTRL** + **R**.
 
    Nella parte superiore destra dell'editor viene visualizzata la finestra di dialogo popup **Rinomina**.
 

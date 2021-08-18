@@ -18,12 +18,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1f67b1c817237a7bf79ae20009f949b0922fe4dbcf6380e184b009616307db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d117494a021c34e35438b053eafedc1e7466861d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368383"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076640"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedura: Creare manualmente sessioni di prestazioni
 Una sessione di prestazioni può essere creata manualmente. Per eseguire questa operazione, non è necessario aprire un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md).

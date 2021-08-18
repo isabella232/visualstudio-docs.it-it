@@ -11,14 +11,15 @@ ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2e7560c91882afe1ee2608bb2ae2fc105738dc
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1e499466eebb4ef856839d1e71880011c6490aba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223940"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076477"
 ---
 # <a name="marker_importance-enumeration"></a>Enumerazione marker_importance
 Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.
@@ -46,4 +47,4 @@ enum marker_importance;
  **Spazio dei nomi:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Vedi anche
-- [spazio dei nomi Diagnostic](../profiling/diagnostic-namespace.md)
+- [spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)

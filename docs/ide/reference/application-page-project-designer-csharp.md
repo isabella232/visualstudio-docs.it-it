@@ -1,6 +1,6 @@
 ---
 title: Pagina Applicazione delle proprietà del progetto C#
-description: Informazioni su come usare la pagina applicazione di progettazione progetti C# per specificare le impostazioni e le proprietà dell'applicazione del progetto.
+description: Informazioni su come usare la pagina Applicazione di Progettazione Project C# per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
@@ -13,20 +13,21 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30f0951073214a70ec2865bce89426d0758b19cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3b369e1862dc295d4262d30709c2ee30a21854bead9e91b69fc6ca0fa726866
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965109"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357603"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
 
 Usare la pagina **Applicazione** di **Creazione progetti** per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere   >  **proprietà** progetto dalla barra dei menu. Quando si apre **Creazione progetti**, fare clic sulla scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Scegliere quindi **Project**  >  **proprietà** nella barra dei menu. Quando si apre **Creazione progetti**, fare clic sulla scheda **Applicazione**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -83,9 +84,9 @@ Per altre informazioni sul reindirizzamento, vedere [Reindirizzamento delle vers
 
 **Oggetto di avvio**
 
-Definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione per questa proprietà è **(non impostato)**.
+Definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione per questa proprietà è **(Non impostata).**
 
-Per impostazione predefinita, in un progetto di app WPF il valore di questa opzione è **(Non impostato)**. L'altra opzione è \[nomeprogetto].App. In un progetto WPF è necessario impostare l'URI di avvio per caricare una risorsa interfaccia utente all'avvio dell'applicazione. A tale scopo, aprire il file *Application. XAML* nel progetto e impostare la `StartupUri` proprietà su un file con *estensione XAML* nel progetto, ad esempio *Window1. XAML*. Per un elenco di elementi radice accettabili, vedere <xref:System.Windows.Application.StartupUri%2A>. È necessario definire anche un metodo `public static void Main()` in una classe del progetto. Questa classe verrà visualizzata nell'elenco **Oggetto di avvio** come *NomeProgetto.NomeClasse*. Sarà quindi possibile selezionare la classe come oggetto di avvio.
+Per impostazione predefinita, in un progetto di app WPF il valore di questa opzione è **(Non impostato)**. L'altra opzione è \[nomeprogetto].App. In un progetto WPF è necessario impostare l'URI di avvio per caricare una risorsa interfaccia utente all'avvio dell'applicazione. A tale scopo, aprire il file *Application.xaml* nel progetto e impostare la proprietà su un file con estensione xaml nel progetto, ad esempio `StartupUri` *Window1.xaml.*  Per un elenco di elementi radice accettabili, vedere <xref:System.Windows.Application.StartupUri%2A>. È necessario definire anche un metodo `public static void Main()` in una classe del progetto. Questa classe verrà visualizzata nell'elenco **Oggetto di avvio** come *NomeProgetto.NomeClasse*. Sarà quindi possibile selezionare la classe come oggetto di avvio.
 
 Per altre informazioni, vedere [/main (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) (/main (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -103,7 +104,7 @@ Per impostazione predefinita, questo pulsante di opzione è selezionato e sono a
 
 **Icona**
 
-Imposta il file con *estensione ico* che si vuole usare come icona del programma. Fare clic su **Sfoglia** per cercare un elemento grafico esistente o digitare il nome del file che si sta cercando. Per altre informazioni, vedere [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)).
+Imposta il file *con estensione ico* che si vuole usare come icona del programma. Fare clic su **Sfoglia** per cercare un elemento grafico esistente o digitare il nome del file che si sta cercando. Per altre informazioni, vedere [/win32icon (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (/win32icon (opzioni del compilatore C#)).
 
 Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 

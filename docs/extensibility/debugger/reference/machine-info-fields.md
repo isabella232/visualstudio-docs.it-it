@@ -11,17 +11,18 @@ ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3361ed090dc724f948d98aa0037949e0c573d56d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 448edb134ba6065c85ee1547c73f45f9df769563
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057936"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103143"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 Specifica il tipo di informazioni da recuperare per un computer specifico.
@@ -47,25 +48,25 @@ public enum enum_MACHINE_INFO_FIELDS {
 
 ## <a name="fields"></a>Campi
  `MCIF_NAME`\
- Inizializza/usa il `bstrName` campo nella struttura.
+ Inizializzare/usare `bstrName` il campo nella struttura .
 
  `MCIF_FLAGS`\
- Inizializza/usa il `Flags` campo nella struttura.
+ Inizializzare/usare `Flags` il campo nella struttura .
 
  `MIF_ALL`\
- Inizializzare/utilizzare tutti i campi della struttura.
+ Inizializzare/usare tutti i campi nella struttura .
 
 ## <a name="remarks"></a>Commenti
- Questi valori vengono passati al metodo [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) per indicare quali membri della struttura [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) devono essere inizializzati.
+ Questi valori vengono passati al [metodo GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) [](../../../extensibility/debugger/reference/machine-info.md) per indicare quali membri della struttura MACHINE_INFO devono essere inizializzati.
 
- Usato anche nel `Fields` membro della `MACHINE_INFO` struttura per indicare quali campi vengono usati e validi.
+ Usato anche nel `Fields` membro della struttura per indicare quali campi vengono usati e `MACHINE_INFO` validi.
 
- Questi flag possono essere combinati con un bit per bit `OR` .
+ Questi flag possono essere combinati con un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

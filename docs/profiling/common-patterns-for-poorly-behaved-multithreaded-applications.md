@@ -1,6 +1,6 @@
 ---
-title: Modelli comuni per le app multithreading con un comportamento non frequente
-description: Il visualizzatore di concorrenza fornisce grafici per applicazioni multi-thread e una raccolta di modelli comuni di quelli con comportamento non accurato.
+title: Modelli comuni per le app multithreading con comportamento non buon
+description: Il visualizzatore di concorrenza fornisce grafici per le applicazioni multi-thread e una raccolta di modelli comuni di applicazioni con comportamento non accurato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a601701bba6384e9ece69a2e91750ca753786e917a3f17fd92e5660dcd63343
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e645af13f52f64664cb4d9539dcd9c3769d9dd08
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333704"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039709"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelli comuni per applicazioni multithreading con comportamenti non validi
 
@@ -27,7 +27,7 @@ Il visualizzatore di concorrenza consente agli sviluppatori di visualizzare il c
 
 ## <a name="lock-contention-and-serialized-execution"></a>Conflitti di blocco ed esecuzione serializzata
 
-![L'esecuzione serializzata viene causata da una causa di una l'insodd di blocco](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
+![Una contentione di blocco che causa l'esecuzione serializzata](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
 
 In alcuni casi un'applicazione parallelizzata continua a funzionare in modo seriale anche se ha più thread e il computer dispone di un numero sufficiente di core logici. Il primo sintomo è costituito da scarse prestazioni multithreading, talvolta addirittura leggermente inferiori rispetto a un'implementazione seriale. In qualsiasi momento nella visualizzazione Thread non è visibile l'esecuzione di più thread in parallelo, ma di un solo thread. A questo punto, se si fa clic su un segmento di sincronizzazione in un thread, è possibile visualizzare uno stack di chiamate per il thread bloccato (stack di chiamate di blocco) e il thread che ha rimosso la condizione di blocco (stack di chiamate di sblocco). Se lo stack di chiamate di sblocco si verifica nel processo che si sta analizzando, viene visualizzato anche un connettore pronto per thread. A questo punto, dagli stack di chiamate di blocco e di sblocco è possibile passare al codice per analizzare in modo più approfondito la causa della serializzazione.
 
@@ -39,17 +39,17 @@ Per altre informazioni, vedere la sezione "Start with the problem" (Partire dal 
 
 ## <a name="uneven-workload-distribution"></a>Distribuzione ineguale del carico di lavoro
 
-![Screenshot di un grafo del carico di lavoro per i thread paralleli nel visualizzatore di concorrenza. I thread terminano in momenti diversi che mostrano un modello di passaggio delle scale.](../profiling/media/unevenworkload_1.png)
+![Screenshot di un grafico del carico di lavoro per i thread paralleli nel visualizzatore di concorrenza. I thread terminano in momenti diversi, mostrando un modello a gradini.](../profiling/media/unevenworkload_1.png)
 
 Quando si verifica una distribuzione irregolare del lavoro tra diversi thread paralleli in un'applicazione, man mano che ogni thread completa il proprio lavoro viene visualizzato un tipico modello a gradini, come illustrato nella figura precedente. Nella maggior parte dei casi il visualizzatore di concorrenza indica orari di inizio molto ravvicinati per ogni thread simultaneo. Tuttavia, anziché terminare simultaneamente, questi thread di solito terminano in modo irregolare. Questo modello indica una distribuzione irregolare del lavoro all'interno di un gruppo di thread paralleli. Ciò potrebbe causare una diminuzione delle prestazioni. L'approccio migliore a questo problema consiste nel rivalutare l'algoritmo tramite il quale il lavoro viene suddiviso tra i thread paralleli.
 
 Come illustrato nella figura seguente, il visualizzatore di concorrenza può esporre questo sintomo anche nella visualizzazione Utilizzo CPU, dove l'utilizzo della CPU viene rappresentato sotto forma di una scala discendente.
 
-![Screenshot della visualizzazione Utilizzo CPU nel visualizzatore di concorrenza che mostra un modello di passaggio delle scale alla fine del grafico Utilizzo CPU.](../profiling/media/unevenworkload_2.png)
+![Screenshot della visualizzazione Utilizzo CPU nel visualizzatore di concorrenza che mostra un modello a gradini alla fine del grafico Utilizzo CPU.](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>Oversubscription
 
-![Screenshot di un grafo del carico di lavoro per tutti i thread attivi nel visualizzatore di concorrenza. Una legenda mostra la quantità di tempo impiegato in Esecuzione e Preemption.](../profiling/media/oversubscription.png)
+![Screenshot di un grafico del carico di lavoro per tutti i thread attivi nel visualizzatore di concorrenza. Una legenda mostra la quantità di tempo impiegato per l'esecuzione e la preemption.](../profiling/media/oversubscription.png)
 
 In caso di oversubscription, il numero di thread attivi in un processo è maggiore del numero di core logici disponibili nel sistema. L'illustrazione precedente mostra i risultati dell'oversubscription con una significativa rappresentazione per bande della precedenza in tutti i thread attivi. La legenda, poi, indica che una percentuale elevata di tempo (l'84% in questo esempio) viene impiegata nella precedenza. Questo può indicare che il processo richiede al sistema di eseguire più thread simultanei rispetto al numero di core logici. Tuttavia, questo potrebbe indicare anche che altri processi nel sistema stanno usando le risorse che dovrebbero invece essere disponibili per il processo in questione.
 
@@ -67,7 +67,7 @@ Un uso eccessivo o improprio delle operazioni di I/O è una causa comune dell'in
 
 ## <a name="lock-convoys"></a>Serie di istruzioni di blocco
 
-![Bloccare ivoy](../profiling/media/lock_convoys.png "Lock_Convoys")
+![Numero di convoy di blocco](../profiling/media/lock_convoys.png "Lock_Convoys")
 
 Le serie di istruzioni di blocco si verificano quando l'applicazione acquisisce blocchi in base al principio del primo arrivato e la frequenza di arrivo in corrispondenza del blocco è maggiore della frequenza di acquisizione. A causa della combinazione di queste due condizioni le richieste per il blocco iniziano ad accumularsi. Per opporsi a questo problema è possibile fare uso di blocchi "non equi", ovvero blocchi che danno accesso al primo thread che li trova in stato sbloccato. L'illustrazione precedente mostra questo tipo di comportamento delle serie di istruzioni. Per risolvere il problema, ridurre i conflitti tra gli oggetti di sincronizzazione e usare blocchi non equi.
 

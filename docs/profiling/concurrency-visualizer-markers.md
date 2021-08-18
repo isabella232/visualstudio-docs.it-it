@@ -1,6 +1,6 @@
 ---
 title: Marcatori del visualizzatore di concorrenza.| Microsoft Docs
-description: "Informazioni sui marcatori nel visualizzatore di concorrenza. I marcatori sono icone che rappresentano gli eventi generati da un'app. Esistono tre tipi: flag, messaggi ed intervalli."
+description: "Informazioni sui marcatori nel visualizzatore di concorrenza. I marcatori sono icone che rappresentano gli eventi generati da un'app. Esistono tre tipi: flag, messaggi e intervalli."
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 12ed8b9b71fe8d0a8a5260069709ca1f8a2bad15c65869020d735f42f5af3447
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6ad086e4b17ebeb1e9ec3f04f56d102c5e6bc6cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333535"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039592"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcatori del visualizzatore di concorrenza
 I marcatori del visualizzatore di concorrenza sono icone che rappresentano eventi in un'app.  In genere, l'applicazione genera questi eventi per definire fasi o occorrenze di un'applicazione.  Gli eventi possono essere generati dall'app o da librerie e runtime usati dall'app.

@@ -1,6 +1,6 @@
 ---
 title: Integrazione di modelli tramite Modelbus
-description: Informazioni sul Visual Studio ModelBus fornisce un metodo per creare collegamenti tra modelli e da altri strumenti in modelli.
+description: Informazioni su Visual Studio ModelBus fornisce un metodo per creare collegamenti tra modelli e da altri strumenti in modelli.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 08de293f3f52130a56e91e60f72886c76225729d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e59383e5ef150cce7bb342f7759289898e2c31805a316a25b8de4a9d0811daaf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040164"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356127"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrare i modelli usando Visual Studio Modelbus
 
@@ -101,7 +101,7 @@ Per consentire a un DSL di usare riferimenti a un altro DSL, è prima di tutto n
 
     - Assembly DSL esposto, ad **esempio** Fabrikam.FamilyTree.Dsl.dll
 
-    - Assembly dell'adattatore del bus del modello esposto, ad esempio **Fabrikam.FamilyTree.ModelBusAdapter.dll**
+    - Assembly dell'adattatore bus del modello esposto, ad esempio **Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
 4. Aggiungere gli assembly .NET seguenti ai riferimenti del progetto del progetto DSL usato.
 
@@ -123,7 +123,7 @@ Per consentire a un DSL di usare riferimenti a un altro DSL, è prima di tutto n
 
 1. Fare clic con il pulsante destro del mouse sulla proprietà del dominio e **quindi scegliere Modifica proprietà specifiche modelBusReference**. Verrà visualizzata una finestra di dialogo. Si tratta del *selettore del bus di modello*.
 
-2. Selezionare il tipo **di ModelBusReference appropriato:** in un modello o in un elemento all'interno di un modello.
+2. Selezionare il tipo **di ModelBusReference appropriato:** a un modello o a un elemento all'interno di un modello.
 
 3. Nella stringa di filtro della finestra di dialogo File, immettere una stringa come `Family Tree files |*.ftree`. Sostituire l'estensione di file del DSL esposto.
 

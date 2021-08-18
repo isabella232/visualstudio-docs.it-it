@@ -1,5 +1,5 @@
 ---
-description: Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o in prossimità dell'indirizzo dello stack specificato.
+description: Cerca nell'indirizzo stack frame specificato un indirizzo mittente in corrispondenza o vicino all'indirizzo dello stack specificato.
 title: IDiaStackWalkHelper::searchForReturnAddressStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 0a33142e-5d31-44ea-874a-a2e94d95cbd2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfda60c2be8f7900a8b2fc0db54e4801c628bb7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f556ec473053e7a8ebba5c90760104d65fa76983
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156769"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074556"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
-Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o in prossimità dell'indirizzo dello stack specificato.
+Cerca nell'indirizzo stack frame specificato un indirizzo mittente in corrispondenza o vicino all'indirizzo dello stack specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,15 +37,15 @@ HRESULT searchForReturnAddressStart(
 #### <a name="parameters"></a>Parametri
  `frame`
 
-in Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame corrente.
+[in] Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'oggetto stack frame.
 
  `startAddress`
 
-in Indirizzo di memoria virtuale da cui iniziare la ricerca.
+[in] Indirizzo di memoria virtuale da cui iniziare la ricerca.
 
  `ReturnAddress`
 
-out Restituisce l'indirizzo restituito della funzione più vicino a `startAddress` .
+[out] Restituisce l'indirizzo restituito della funzione più vicino a `startAddress` .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

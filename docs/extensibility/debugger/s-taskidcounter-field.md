@@ -9,17 +9,18 @@ ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7676012e6cf140fb4a93d4735169d05de37f5de4
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 88e673be6736e7570a068e4c1d728063bdb39aa2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902384"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102896"
 ---
 # <a name="s_taskidcounter-field"></a>Campo s_taskIdCounter
-Identificatore disponibile successivo per un <xref:System.Threading.Tasks.Task> oggetto .
+Identificatore successivo disponibile per un <xref:System.Threading.Tasks.Task> oggetto .
 
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
@@ -35,5 +36,5 @@ Identificatore disponibile successivo per un <xref:System.Threading.Tasks.Task> 
 
 ## <a name="remarks"></a>Osservazioni
 
-## <a name="see-also"></a>Vedere anche
-- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Vedi anche
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

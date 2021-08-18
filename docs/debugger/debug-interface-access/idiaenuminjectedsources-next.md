@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8e2a2f7b595bdc3484af78542dcd7d45ce1244fee9ea588ba5c1e1cff11a61
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a764df156aa661501d442d163a0f2f1a46dec22b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455159"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134473"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Recupera un numero specificato di origini inserite nella sequenza di enumerazione.

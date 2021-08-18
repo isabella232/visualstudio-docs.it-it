@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: bb85e77705e06e3864064aa9054f02c01993211f444d551c2eaccebbfb10219e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 89bd6ca22fab59837cbf949b6b90ffee628ee55b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121229104"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060544"
 ---
 # <a name="create-r-markdown-documents"></a>Creare documenti R Markdown
 

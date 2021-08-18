@@ -1,6 +1,6 @@
 ---
 description: Recupera un elenco di tutti i contesti di codice associati a questo contesto del documento.
-title: 'IDebugDocumentContext2:: EnumCodeContexts | Microsoft Docs'
+title: IDebugDocumentContext2::EnumCodeContexts | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99f60cd99a694c6f2610982a2b85fe2dbce1282b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8711c14028301e4a9de60c919f161f4884e3a1bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066698"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079233"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 Recupera un elenco di tutti i contesti di codice associati a questo contesto del documento.
@@ -47,10 +48,10 @@ int EnumCodeContexts(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Un singolo contesto di documento può generare più contesti di codice quando il documento utilizza i modelli o i file di inclusione.
+Un singolo contesto del documento può generare più contesti di codice quando il documento usa modelli o file di inclusione.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CDebugContext` oggetto semplice che espone l'interfaccia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugContext` semplice che espone [l'interfaccia IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ```cpp
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)

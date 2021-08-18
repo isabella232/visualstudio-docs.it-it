@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: da57c81881da82c03bfef6ea34369ff9848405772bea0baa486e4ee08e204de3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3aa44ec0b698c13e7e164649a389e647c9395e57
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362929"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031138"
 ---
 # <a name="idiasymbolget_textureslot"></a>IDiaSymbol::get_textureSlot
 Recupera lo slot di trama.

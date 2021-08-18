@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: db4e032f755337067ba208c0a8a6267c155ba4847b8259e7f5f7cd70822b9509
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9f9e4110402a9ca557f8fbb85aee9c0e9592a4dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231626"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040320"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: Aggiungere un comando al menu di scelta rapida
 
@@ -300,7 +300,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Se si modifica la sezione Symbols del file VSCT, è necessario anche modificare queste dichiarazioni in modo corrispondente e incrementare il numero di versione in Package.tt.
 
- Registrare i comandi di menu come parte di questo set di comandi. `GetMenuCommands()` viene chiamato una volta quando viene inizializzato il diagramma:
+ Registrare i comandi di menu come parte di questo set di comandi. `GetMenuCommands()` viene chiamato una volta quando il diagramma viene inizializzato:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -324,9 +324,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>Per verificare il comando
 
-1. Sulla barra **degli Esplora soluzioni** fare clic su Trasforma tutti **i modelli**.
+1. Sulla barra **Esplora soluzioni** fare clic su **Trasforma tutti i modelli**.
 
-2. Premere **F5 per** ricompilare la soluzione e avviare il debug del linguaggio specifico di dominio nella compilazione sperimentale.
+2. Premere **F5** per ricompilare la soluzione e avviare il debug del linguaggio specifico di dominio nella compilazione sperimentale.
 
 3. Nella build sperimentale aprire un diagramma di esempio.
 
@@ -354,7 +354,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Eseguire il metodo OnStatus per verificare che command.Visible e command.Enabled siano impostati su true.
 
-**Viene visualizzato un testo di menu errato o il comando viene visualizzato nella posizione errata:**
+Viene visualizzato il testo del menu errato **o il comando viene visualizzato nella posizione errata:**
 
 - Assicurarsi che la combinazione di GUID e ID sia univoca per questo comando.
 
@@ -364,7 +364,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Procedura: Modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md)
-- [Codice di esempio: diagrammi di circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Distribuzione di soluzioni linguistiche specifiche del dominio](msi-and-vsix-deployment-of-a-dsl.md)
+- [Codice di esempio: Diagrammi di circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

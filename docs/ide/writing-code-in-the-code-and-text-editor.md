@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 428c86247686987c6b32c1b6dc109c338f590cd50593c41144e880add7c73b03
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2e947606f13b986503e5af5cfc54c9e4ee758b79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121288984"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040580"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -60,14 +60,14 @@ I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in 
 |Inserisci tabulazione in righe selezionate|Cambia gli spazi iniziali in tabulazioni dove appropriato.|
 |Rimuovi tabulazione da righe selezionate|Cambia le tabulazioni iniziali in spazi. Per convertire tutti gli spazi nel file in tabulazioni (o tutte le tabulazioni in spazi), è possibile usare i comandi `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Questi comandi non vengono visualizzati nei Visual Studio, ma è possibile  chiamarli dalla finestra accesso rapido o dalla finestra di comando.|
 |Maiuscole|Converte in maiuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in maiuscolo il carattere nel punto di inserimento. Scelta rapida: + **CTRL+MAIUSC+U.** + |
-|Minuscole|Converte in minuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in minuscolo il carattere nel punto di inserimento. Collegamento:  + **CTRL+U.**|
-|Sposta in alto righe selezionate|Sposta la riga selezionata di una riga verso l'alto. Collegamento: **ALT FRECCIA** + **SU.**|
-|Sposta in basso righe selezionate|Sposta la riga selezionata di una riga verso il basso. Collegamento: **ALT FRECCIA** + **GIÙ.**|
-|Elimina spazio vuoto superfluo|Elimina le tabulazioni o gli spazi alla fine della riga corrente. Collegamento:  + **CTRL+K,** **CTRL**+**\\**|
-|Mostra/Nascondi spazi|Visualizza gli spazi sotto forma di punti mediani e le tabulazioni sotto forma di frecce. La fine di un file viene visualizzata come un glifo rettangolare. Se **l'opzione** Strumenti Opzioni Editor di testo Tutti i linguaggi Mostra glifi visibili per il ritorno a capo automatico è selezionata, viene visualizzato anche tale  >    >    >    >    >   glifo.|
+|Minuscole|Converte in minuscolo tutti i caratteri nella selezione oppure, se non sono state effettuate selezioni, converte in minuscolo il carattere nel punto di inserimento. Scelta rapida: + **CTRL+U.**|
+|Sposta in alto righe selezionate|Sposta la riga selezionata di una riga verso l'alto. Scelta rapida: **ALT** + **Freccia SU**.|
+|Sposta in basso righe selezionate|Sposta la riga selezionata di una riga verso il basso. Scelta rapida: **ALT** + **Freccia GIÙ**.|
+|Elimina spazio vuoto superfluo|Elimina le tabulazioni o gli spazi alla fine della riga corrente. Scelta rapida: **CTRL** + **K,** **CTRL**+**\\**|
+|Mostra/Nascondi spazi|Visualizza gli spazi sotto forma di punti mediani e le tabulazioni sotto forma di frecce. La fine di un file viene visualizzata come un glifo rettangolare. Se **l'opzione** Strumenti Opzioni Editor di testo Tutti i linguaggi Visualizza glifi visibili per il ritorno a capo automatico è selezionata, viene visualizzato anche tale  >    >    >    >    >   glifo.|
 |A capo automatico|Rende visibili tutte le righe di un documento nella finestra del codice. È possibile attivare e disattivare il ritorno a capo nelle impostazioni **Tutti i linguaggi dell'editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**).|
-|Commenta selezione|Aggiunge caratteri di commento alla selezione o alla riga corrente. Collegamento: **CTRL** + **K,** **CTRL** + **C**|
-|Rimuovi commento selezione|Rimuove tutti i caratteri di commento dalla selezione o dalla riga corrente. Collegamento: **CTRL** + **K,** **CTRL** + **U**|
+|Commenta selezione|Aggiunge caratteri di commento alla selezione o alla riga corrente. Scelta rapida: **CTRL** + **K,** **CTRL** + **C**|
+|Rimuovi commento selezione|Rimuove tutti i caratteri di commento dalla selezione o dalla riga corrente. Scelta rapida: **CTRL** + **K,** **CTRL** + **U**|
 |Aumenta rientro riga|Aggiunge una tabulazione (o gli spazi equivalenti) alle righe selezionate o alla riga corrente.|
 |Riduci rientro riga|Rimuove una tabulazione (o gli spazi equivalenti) dalle righe selezionate o dalla riga corrente.|
 |Seleziona tag|In un documento che contiene tag, ad esempio XML o HTML, seleziona il tag.|

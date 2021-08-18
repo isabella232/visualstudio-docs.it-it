@@ -1,6 +1,6 @@
 ---
-description: Recupera un'origine inserita per mezzo di un indice.
-title: 'IDiaEnumInjectedSources:: Item | Microsoft Docs'
+description: Recupera un'origine inserita tramite un indice.
+title: IDiaEnumInjectedSources::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: 14846955-7270-451d-91d2-9cb34bb65187
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d1ab3a9ce19705a4d9ff22f33a1275efc0e8b02
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0b77564566d1f45ca860483867bc407de1e5040c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148997"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134465"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
-Recupera un'origine inserita per mezzo di un indice.
+Recupera un'origine inserita tramite un indice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +34,13 @@ HRESULT Item (
 ```
 
 #### <a name="parameters"></a>Parametri
- indice
+ index
 
-in Indice dell'oggetto [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) da recuperare. L'indice è compreso `count` tra 0 e-1, dove `count` viene restituito dal metodo [IDiaEnumInjectedSources:: get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) .
+[in] Indice [dell'oggetto IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) da recuperare. L'indice è l'intervallo da 0 a -1, dove viene restituito dal metodo `count` `count` [IDiaEnumInjectedSources::get_Count.](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)
 
  injectedSource
 
-out Restituisce un oggetto [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) che rappresenta l'origine inserita.
+[out] Restituisce un [oggetto IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) che rappresenta l'origine inserita.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

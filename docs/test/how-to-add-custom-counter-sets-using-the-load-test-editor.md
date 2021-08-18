@@ -13,12 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6675a0c4e4c4de6c3c0ad664c75330d19395ca69ed51c4d60caa12c08aa873ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5980dc94d4be706730c9d9e053e907e6b6267424
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121331676"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092566"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Procedura: Aggiungere insiemi di contatori personalizzati usando l'Editor test di carico
 

@@ -1,5 +1,5 @@
 ---
-description: Fornisce supporto delle impostazioni locali per un fornitore di porte.
+description: Fornisce il supporto delle impostazioni locali per un fornitore di porte.
 title: IDebugPortSupplierLocale2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: da7c08363d07e577d11259b8633aa15ac3cd0eb0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fb273e38e207f36f7d438b7fba0bfe093f1c8344
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071766"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088016"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Fornisce supporto delle impostazioni locali per un fornitore di porte.
+Fornisce il supporto delle impostazioni locali per un fornitore di porte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,16 +32,16 @@ IDebugPortSupplierLocale2 : IUnknown
  Un fornitore di porte personalizzato implementa questa interfaccia per impostare le impostazioni locali.
 
 ## <a name="methods"></a>Metodi
- La tabella seguente illustra i metodi di **IDebugPortSupplierLocale2**.
+ La tabella seguente illustra i metodi di **IDebugPortSupplierLocale2.**
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Imposta le impostazioni locali per il fornitore della porta.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Portpriv. h
+ Intestazione: Portpriv.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

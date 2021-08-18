@@ -3,16 +3,17 @@ title: Ottimizzazione del codice di Azure
 description: Informazioni su come il codice di Azure come strumento di ottimizzazione in Visual Studio consente di rendere il codice più affidabile e migliorare le prestazioni.
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: b7a20b4ae57ee5cf1127441bc43dea021c170188
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9836f13ac97641876746e0c514f11efc297d2975
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844034"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134883"
 ---
 # <a name="optimizing-your-azure-code"></a>Ottimizzare il codice Azure
 Quando si programmano app che utilizzano Microsoft Azure, esistono alcune procedure consigliate da seguire per evitare problemi con la scalabilità di app, il comportamento e le prestazioni in un ambiente cloud. Microsoft fornisce uno strumento di analisi del codice di Azure che riconosce molti di questi problemi comunemente riscontrati e aiuta a risolverli. È possibile scaricare lo strumento in Visual Studio tramite NuGet.
@@ -47,10 +48,10 @@ Creare metodi asincroni, ad esempio [await](/dotnet/csharp/language-reference/op
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-La chiamata di metodi asincroni all'interno del metodo [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) fa sì che il runtime del servizio cloud ricicli il ruolo di lavoro. Quando viene avviato un ruolo di lavoro, l'esecuzione del programma ha luogo all'interno del metodo [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)). L'uscita dal metodo Run comporta il riavvio del ruolo di lavoro. Quando il runtime di ruolo di lavoro raggiunge il metodo asincrono, invia tutte le operazioni dopo il metodo asincrono e poi ritorna  In questo modo, il ruolo di lavoro esce dal metodo Run e viene riavviato. Nell'iterazione successiva dell'esecuzione, il ruolo di lavoro raggiunge nuovamente il metodo asincrono e viene riavviato, causando nuovamente il riciclo anche del ruolo di lavoro.
+La chiamata di metodi asincroni all'interno del metodo [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) fa sì che il runtime del servizio cloud ricicli il ruolo di lavoro. Quando viene avviato un ruolo di lavoro, l'esecuzione del programma ha luogo all'interno del metodo [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)). Se si esce dal metodo Run, il ruolo di lavoro viene riavviato. Quando il runtime di ruolo di lavoro raggiunge il metodo asincrono, invia tutte le operazioni dopo il metodo asincrono e poi ritorna  In questo modo il ruolo di lavoro viene chiuso dal metodo Run e riavviato. Nell'iterazione successiva dell'esecuzione, il ruolo di lavoro raggiunge nuovamente il metodo asincrono e viene riavviato, causando nuovamente il riciclo anche del ruolo di lavoro.
 
 ### <a name="solution"></a>Soluzione
-Posizionare tutte le operazioni asincrone fuori dal metodo [Run](/previous-versions/azure/reference/ee772746(v=azure.100)) . Chiamare quindi il metodo asincrono sottoposto a refactoring dall'interno del metodo Run, ad esempio RunAsync (). Wait. Lo strumento di analisi del codice di Azure può aiutare a risolvere il problema.
+Posizionare tutte le operazioni asincrone fuori dal metodo [Run](/previous-versions/azure/reference/ee772746(v=azure.100)) . Chiamare quindi il metodo asincrono di cui è stato eseguito il refactoring dall'interno del metodo Run, ad esempio RunAsync().wait. Lo strumento di analisi del codice di Azure può aiutare a risolvere il problema.
 
 Il seguente frammento di codice dimostra la correzione del codice per questo problema:
 
@@ -334,7 +335,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 });
 ```
 
-Per altre informazioni, vedere [configurare l'accesso in lettura pubblico anonimo per contenitori e BLOB](/azure/storage/blobs/anonymous-read-access-configure?tabs=portal).
+Per altre informazioni, vedere [Configurare l'accesso in lettura pubblico anonimo per contenitori e BLOB.](/azure/storage/blobs/anonymous-read-access-configure?tabs=portal)
 
 ## <a name="use-cloudconfigurationmanager"></a>Utilizzare CloudConfigurationManager
 ### <a name="id"></a>ID

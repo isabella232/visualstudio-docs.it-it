@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 130cbfbd889cc8ee9420271867f1d9582250ce6251cbd335203f3ec935f2bcf4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e6d718c187c862febe20d94182b858e993599306
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391968"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134265"
 ---
 # <a name="idiasegmentget_write"></a>IDiaSegment::get_write
 Recupera un flag che indica se il segmento può essere modificato.
@@ -35,7 +35,7 @@ HRESULT get_write (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se il segmento può essere scritto in ; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se il segmento può essere scritto; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e179b781ea430ab30d3d93ff52cd65b66e013ad3163b7ab54095f23e0c205c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 50c7069e47533e65273ffd988eed676a59376a1e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380494"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134585"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 Ignora un numero specificato di elementi dati del frame in una sequenza di enumerazione.
@@ -35,10 +35,10 @@ HRESULT Skip (
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Numero di elementi dati del frame nella sequenza di enumerazione da ignorare.
+[in] Numero di elementi di dati del frame nella sequenza di enumerazione da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce ; in caso contrario, restituisce se `S_OK` non sono presenti altri record da `S_FALSE` ignorare.
+ Se ha esito positivo, restituisce ; in caso contrario, restituisce se non sono `S_OK` presenti altri record da `S_FALSE` ignorare.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

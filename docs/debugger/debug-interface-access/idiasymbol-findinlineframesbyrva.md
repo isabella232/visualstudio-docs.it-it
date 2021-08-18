@@ -1,5 +1,5 @@
 ---
-description: IDiaSymbol::findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo specificato.
+description: IDiaSymbol::findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo (RVA) specificato.
 title: IDiaSymbol::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 532de406a97bffd9f48671a585971e4fccb6d028648d053a1de4c823c33bfbfa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ce4ae1bdafd5189f40d780fa17550d9113e33bb4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091068"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
 Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo specificato.

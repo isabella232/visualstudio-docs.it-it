@@ -20,26 +20,26 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: faaeae36f5c9e4ff658e79656cff0af6823d5be81673250f1b95452fdb117687
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 054019a9c683924d27963a8be6d67679c8feb65d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121286175"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047218"
 ---
 # <a name="bookmark-control"></a>Bookmark (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è un segnalibro con un nome univoco che espone gli eventi e può essere associato ai dati. Può essere usato come segnaposto per contrassegnare un elemento o una posizione in un documento di Microsoft Office Word. Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è una combinazione degli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> e <xref:Microsoft.Office.Interop.Word.Range> .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Word.Bookmark> al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Word.Bookmark> a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli Segnalibro ai documenti di Word.](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+ Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Word.Bookmark> al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Word.Bookmark> a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli Bookmark ai documenti di Word.](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 
 ## <a name="bind-data-to-the-control"></a>Associare dati al controllo
  Un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> supporta un data binding semplice. Il segnalibro deve essere associato a un'origine dati usando la proprietà <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> . La proprietà di data binding predefinita del segnalibro è <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> .
 
- Se i dati nel set di dati associato vengono aggiornati, il <xref:Microsoft.Office.Tools.Word.Bookmark> controllo visualizza le modifiche.
+ Se i dati nel set di dati associato vengono aggiornati, il <xref:Microsoft.Office.Tools.Word.Bookmark> controllo mostra le modifiche.
 
- Nei progetti a livello di documento è anche possibile associare i dati ai segnalibri usando la finestra **Origini dati** . Per altre informazioni, vedere [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ Nei progetti a livello di documento è anche possibile associare i dati ai segnalibri usando la finestra **Origini dati** . Per altre informazioni, [vedere Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formattazione
  La formattazione applicabile a <xref:Microsoft.Office.Interop.Word.Bookmark> può essere applicata anche a un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> . Questa formattazione include tipi di carattere, rientri, spaziatura, numerazione e stili.
@@ -58,7 +58,7 @@ ms.locfileid: "121286175"
  Nei progetti a livello di documento, quando si trascina un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> dalla **casella degli strumenti** al documento, Visual Studio genera automaticamente un nome per il controllo, che può essere modificato nella finestra **Proprietà** .
 
 ## <a name="overlapping-controls"></a>Controlli sovrapposti
- I controlli segnalibro possono sovrapporsi tra loro. Lo stesso testo può essere condiviso da più segnalibri. Quando si assegna un nuovo testo a uno dei segnalibri sovrapposti, contiene solo il nuovo testo e i segnalibri non si sovrappongono più. L'altro segnalibro ora contiene solo il testo che non è stato condiviso tra i segnalibri sovrapposti originali.
+ I controlli Segnalibro possono sovrapporsi tra loro. Lo stesso testo può essere condiviso da più segnalibri. Quando si assegna un nuovo testo a uno dei segnalibri sovrapposti, questo contiene solo il nuovo testo e i segnalibri non si sovrappongono più. L'altro segnalibro contiene ora solo il testo che non è stato condiviso tra i segnalibri sovrapposti originali.
 
  La tabella seguente mostra in che modo la frase "This is sample text." è condiviso da due segnalibri sovrapposti:
 
@@ -68,7 +68,7 @@ ms.locfileid: "121286175"
 |Segnalibro1|This is sample|
 |Segnalibro2|sample text.|
 
- Se si assegna il nuovo testo "This is replacement." in Bookmark1, i segnalibri non si sovrappongono e Bookmark2 mantiene solo il testo che non era originariamente parte di Bookmark1.
+ Se si assegna il nuovo testo "This is replacement." per Bookmark1, i segnalibri non si sovrappongono e Bookmark2 mantiene solo il testo che in origine non era in bookmark1.
 
 |Segnalibro|Testo|
 |--------------|----------|
@@ -117,5 +117,5 @@ Gli eventi seguenti sono disponibili per il controllo <xref:Microsoft.Office.Too
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Procedura: Aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Procedura dettagliata: Creare menu di scelta rapida per i segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Associare dati a controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

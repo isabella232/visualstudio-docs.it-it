@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 453607a93b02c68695f61d5835cdc5f20d931a3059098e934efe2f0859e63d1f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 582521a59cc4652aaf3bdf92f5f0c24b19283e20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121323729"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103663"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 Crea un enumeratore per i campi del contenitore.
@@ -51,7 +51,7 @@ int EnumFields(
 
 ## <a name="parameters"></a>Parametri
 `dwKindFilter`\
-[in] Combinazione di [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) costanti che selezionano i campi da enumerare. I tipi di campo possono descrivere tipi di archiviazione, ad esempio classe o primitiva, o informazioni specifiche, ad esempio puntatore locale, parametro o "this".
+[in] Combinazione di [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) costanti che selezionano i campi da enumerare. I tipi di campo possono descrivere i tipi di archiviazione, ad esempio classe o primitiva, o informazioni specifiche, ad esempio puntatore locale, parametro o "this".
 
 `dwModifiersFilter`\
 [in] Combinazione di [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) costanti che selezionano i campi da enumerare. I modificatori di campo possono essere autorizzazioni di accesso, ad esempio pubbliche o private, o informazioni di archiviazione, ad esempio virtuali, statiche o finali.

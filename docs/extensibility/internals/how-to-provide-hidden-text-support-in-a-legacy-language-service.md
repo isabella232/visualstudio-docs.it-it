@@ -12,14 +12,15 @@ ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c62f50cfff8662c543d24dceabdb429a9b9b05
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6af8e2ff58fe5515d0cdd55bad5abdb8b96416ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102688"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: Fornire supporto per il testo nascosto in un servizio di linguaggio legacy
 Oltre alle aree del contorno, è possibile creare aree di testo nascoste. Le aree di testo nascoste possono essere controllate dal client o dall'editor e vengono usate per nascondere completamente un'area di testo. L'editor visualizza un'area nascosta sotto forma di linee orizzontali. Un esempio è la visualizzazione **Solo** script nell'editor HTML.

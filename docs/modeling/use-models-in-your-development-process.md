@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 095a6f17691d3265320a7b77905f70903bec1cb5
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 910aa4d25325ac6498e941bbba3a1a6d7ee2f957
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388503"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033993"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 
@@ -96,7 +97,7 @@ All'approcciarsi di ogni iterazione, è possibile usare modelli per definire cos
 
 ### <a name="link-model-to-work-items"></a>Collegare il modello agli elementi di lavoro
 
-Dopo il workshop di requisiti, elaborare i dettagli del modello requisiti e collegare il modello alle attività di sviluppo. A tale scopo, collegare gli elementi di lavoro di Team Foundation agli elementi del modello.
+Dopo il workshop di requisiti, elaborare i dettagli del modello requisiti e collegare il modello alle attività di sviluppo. È possibile eseguire questa operazione collegando gli elementi di lavoro in Team Foundation agli elementi del modello.
 
 È possibile collegare qualsiasi elemento agli elementi di lavoro, ma quelli più utili sono i seguenti:
 
@@ -126,14 +127,14 @@ Diversi tipi di diagramma sono utili per descrivere la progettazione a diversi l
 |-|-|
 |Processo aziendale<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|- I diagrammi classi concettuali descrivono i concetti aziendali usati all'interno del processo aziendale.|
 |Requisiti utente<br /><br /> La definizione di ciò che gli utenti richiedono al sistema.|- Le regole di business e i requisiti di qualità del servizio possono essere descritti in documenti separati.|
-|Progettazione ad alto livello<br /><br /> La struttura generale del sistema: i componenti principali e la modalità con cui vengono accoppiati.|- I diagrammi delle dipendenze descrivono come il sistema è strutturato in parti interdipendenti. È possibile convalidare il codice del programma rispetto ai diagrammi delle dipendenze per assicurarsi che rispetti l'architettura.|
+|Progettazione ad alto livello<br /><br /> La struttura generale del sistema: i componenti principali e la modalità con cui vengono accoppiati.|- I diagrammi delle dipendenze descrivono come il sistema è strutturato in parti interdipendenti. È possibile convalidare il codice del programma in base ai diagrammi delle dipendenze per assicurarsi che rispetti l'architettura.|
 |Analisi codice<br /><br /> I diagrammi possono essere generati dal codice.|- I diagrammi delle dipendenze mostrano le dipendenze tra le classi. Il codice aggiornato può essere convalidato rispetto a un diagramma delle dipendenze.<br />- I diagrammi classi mostrano le classi nel codice.|
 
 ## <a name="external-resources"></a>Risorse esterne
 
 |**Categoria**|**Collegamenti**|
 |-|-|
-|**Video**|![collegamento al video ](../data-tools/media/playvideo.gif) [MSDN How Do I Videos: How to Create and Use UML Models and Diagrams (How Do I Videos: How to Create and Use UML Models and Diagrams (](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100)) Come creare e usare diagrammi e modelli UML Visual Studio 2010 Ultimate)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Video**|![collegamento al video ](../data-tools/media/playvideo.gif) [MSDN How Do I Videos: How to Create and Use UML Models and Diagrams (How Do I Videos: How to Create and Use UML Models and Diagrams(](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100)) Come creare e usare diagrammi e modelli UML Visual Studio 2010 Ultimate)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**Forum**|- [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blog**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](/previous-versions/dn630665(v=msdn.10))|

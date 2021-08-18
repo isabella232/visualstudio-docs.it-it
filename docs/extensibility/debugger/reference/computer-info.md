@@ -9,17 +9,18 @@ ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c7ebcee7270eb187998ce7c6078277dd90897012
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 461ff8398617b75e54460288e40f82bcdcf4e0b4660c51ca514b078a47d7ef22
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096460"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452433"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
 Descrive il computer in cui è in esecuzione il debugger.
@@ -49,18 +50,18 @@ public struct COMPUTER_INFO
 Identifica l'architettura del microprocessore.
 
 `wSuiteMask`\
-Identifica la maschera del gruppo.
+Identifica la maschera della suite.
 
 `dwOperatingSystemVersion`\
 Numero di versione del sistema operativo.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene restituita dal metodo [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) .
+Questa struttura viene restituita dal [metodo GetComputerInfo.](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: Msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,6 +1,6 @@
 ---
 title: Apri progetto (comando)
-description: Informazioni sul comando Apri progetto e su come viene aperto un progetto o una soluzione esistente.
+description: Informazioni sul comando Apri Project e su come viene aperto un progetto o una soluzione esistente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,15 @@ ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4298c840094f7f1f75e58be1b25213cdf66a6674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7e74880ec1dd038dd5bd50416bc97652cf1818c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881970"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041214"
 ---
 # <a name="open-project-command"></a>Comando Apri progetto
 
@@ -61,5 +62,5 @@ L'esempio seguente apre il progetto Visual Basic **Test1**:
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

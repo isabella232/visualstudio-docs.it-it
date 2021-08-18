@@ -1,6 +1,6 @@
 ---
-title: "Riga di comando del profiler: aprire l'app .NET Framework client, ottenere i dati di memoria"
-description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura da riga di comando per avviare un'app .NET Framework autonoma e raccogliere dati sull'attività di memoria.
+title: Riga di comando del profiler - Aprire l'app .NET Framework client, ottenere i dati di memoria
+description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura riga di comando per avviare un'app .NET Framework autonoma e raccogliere dati sulle attività di memoria.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ae577364987be7fa4ed9a6be633b4fa0efd7c0ba301f434055730bdf15432248
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 068bb1cca204e2202f5ed231c07e81062beab44f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410671"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033447"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di memoria tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma .NET Framework e raccogliere dati di memoria.
@@ -59,9 +59,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 3. Avviare l'applicazione di destinazione. Digitare:
 
-    **VSPerfCmd**[/launch:](../profiling/launch.md)  `appName` **/gc:**{**allocation**&#124;**lifetime**}[ `Options` ]  
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[ `Options` ]
 
-   - [L'opzione /gc](../profiling/gc-vsperfcmd.md)**:** è necessaria per raccogliere .NET Framework dati `Keyword` di memoria. Il parametro keyword specifica se raccogliere i dati sull'allocazione di memoria o se raccogliere sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.
+   - [L'opzione /gc](../profiling/gc-vsperfcmd.md)**:** è necessaria per raccogliere .NET Framework `Keyword` di memoria. Il parametro keyword specifica se raccogliere i dati sull'allocazione di memoria o se raccogliere sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.
 
      |Parola chiave|Descrizione|
      |-------------|-----------------|
@@ -88,7 +88,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
-    |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** inizia a raccogliere dati per il processo specificato da `PID` (ID di processo). **detach** interrompe la raccolta dei dati per tutti i processi.|
+    |[/attach:](../profiling/attach.md)  `PID` [/detach](../profiling/detach.md)|**/attach** inizia a raccogliere dati per il processo specificato da `PID` (ID di processo). **detach** interrompe la raccolta dei dati per tutti i processi.|
 
 - È anche possibile usare l'opzione **VSPerfCmd.exe**[/mark](../profiling/mark.md) per inserire un indicatore di profilatura nel file di dati. Il comando **/mark** aggiunge un identificatore, un timestamp e una stringa di testo facoltativa definita dall'utente. I contrassegni possono essere usati per filtrare i dati.
 
@@ -111,4 +111,4 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 ## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Viste dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
