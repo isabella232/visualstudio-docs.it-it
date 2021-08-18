@@ -1,6 +1,6 @@
 ---
-title: IDebugExpressionContext2 | Microsoft Docs
-description: Questa interfaccia rappresenta un contesto per la valutazione dell'espressione
+title: Oggetto IDebugExpressionContext2 | Microsoft Docs
+description: Questa interfaccia rappresenta un contesto per la valutazione delle espressioni
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d8745207f1ab075aedd43815e7a97a4f0721bb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 01d5c04d8314bcf81f1a7d3e42ddf4d4517956d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092293"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064227"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 Questa interfaccia rappresenta un contesto per la valutazione dell'espressione.
@@ -30,13 +31,13 @@ IDebugExpressionContext2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia per rappresentare un contesto in cui è possibile valutare un'espressione.
+ Il motore di debug implementa questa interfaccia per rappresentare un contesto in cui un'espressione può essere valutata.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Una chiamata a [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) restituisce l'interfaccia. Questa interfaccia è accessibile solo quando il programma di cui è in corso il debug è stato sospeso ed è disponibile un stack frame.
+ Una chiamata a [GetExpressionContext restituisce](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) l'interfaccia this. Questa interfaccia è accessibile solo quando il programma in fase di debug è stato sospeso ed è stack frame disponibile un'interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugExpressionContext2` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugExpressionContext2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -44,14 +45,14 @@ IDebugExpressionContext2 : IUnknown
 |[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analizza un'espressione basata su testo per la valutazione.|
 
 ## <a name="remarks"></a>Commenti
- Un contesto di valutazione può essere considerato come un ambito per eseguire la valutazione dell'espressione.
+ Un contesto di valutazione può essere pensato come un ambito per l'esecuzione della valutazione delle espressioni.
 
- Quando un programma si interrompe, gestione debug sessione (SDM) ottiene un stack frame da DE con una chiamata a [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Il SDM chiama quindi [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) per ottenere l' `IDebugExpressionContext2` interfaccia. Questa operazione è seguita da una chiamata a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) per creare un'interfaccia [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , che rappresenta l'espressione analizzata pronta per la valutazione.
+ Quando un programma si arresta, gestione debug sessione (SDM) ottiene un stack frame da DE con una chiamata a [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). SDM chiama quindi [GetExpressionContext per](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) ottenere l'interfaccia `IDebugExpressionContext2` . Questa operazione è seguita da una chiamata a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) per creare [un'interfaccia IDebugExpression2,](../../../extensibility/debugger/reference/idebugexpression2.md) che rappresenta l'espressione analizzata pronta per la valutazione.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

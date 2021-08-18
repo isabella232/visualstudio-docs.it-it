@@ -11,17 +11,18 @@ ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 226e8471d83208e9647578fca0fa16cc7b49e4eb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8ceac7506d7196461462119f4404e01983df41c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087639"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153264"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 Ottiene l'oggetto a cui punta.
@@ -44,13 +45,13 @@ int Dereference(
 
 ## <a name="parameters"></a>Parametri
 `dwIndex`\
-in Offset di byte semplice dall'inizio dell'oggetto a cui punta.
+[in] Offset di byte semplice dall'inizio dell'oggetto a cui punta.
 
 `ppObject`\
-out Restituisce un oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto a cui punta, più l'offset, se presente.
+[out] Restituisce un [oggetto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto a cui punta, se presente, più l'offset.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se l'oggetto non punta a un altro oggetto.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore. Restituisce E_FAIL se questo oggetto non punta a un altro oggetto.
 
 ## <a name="remarks"></a>Commenti
  L'oggetto a cui punta può essere un tipo primitivo o più complesso, ad esempio una classe o una struttura.

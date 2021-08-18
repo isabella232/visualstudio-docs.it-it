@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a0a9a4be6943f34379bc2217673eaceb6b904f19837154166b7eddfe7b8ce928
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 34a278abc20ef939cd038813b4e2ed07b20b1bcf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312188"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129311"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 Ignora un numero specificato di simboli in una sequenza di enumerazione.

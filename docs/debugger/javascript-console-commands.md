@@ -1,6 +1,6 @@
 ---
 title: Comandi della console JavaScript | Microsoft Docs
-description: Usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript. Questo articolo si applica alle app Node.js, alle app UWP e alle app Apache Cordova.
+description: Usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript. Questo articolo si applica Node.js app, app UWP e Apache Cordova app.
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
@@ -11,27 +11,28 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: d874b2831d906a42856e71d42dac6df1a1fe8d6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71c064a7da6f3d0e781b545c14adba96a4e1c674
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906384"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112607"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della console JavaScript in Visual Studio
 
-È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Guida introduttiva: debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). Le informazioni contenute in questo argomento sono valide per Node.js app, app UWP e app create con Strumenti di Visual Studio per Apache Cordova.
+È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Avvio rapido: Eseguire il debug di JavaScript.](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true) Le informazioni contenute in questo argomento si applicano Node.js app, app UWP e app create usando Strumenti di Visual Studio per Apache Cordova.
 
-Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **debug**  >    >  **console JavaScript** di Windows.
+Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo Debug Windows  >    >  **Console JavaScript**.
 
 > [!NOTE]
 > Se la finestra non è disponibile durante una sessione di debug, assicurarsi che il tipo di debugger sia impostato su **Script** nelle proprietà di debug per il progetto.
 
-Per informazioni sull'uso della console in Microsoft Edge Developer Tools, vedere [questo argomento](/microsoft-edge/devtools-guide).
+Per informazioni sull'uso della console in Microsoft Edge Strumenti di sviluppo, vedere [questo argomento.](/microsoft-edge/devtools-guide)
 
 ## <a name="console-object-commands"></a>Comandi dell'oggetto console
 
@@ -56,9 +57,9 @@ Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è po
 |`groupEnd()`|Termina il gruppo corrente.<br /><br /> Requisiti:<br /><br /> Visual Studio 2013|Vedere l'esempio per il comando `group` .|
 |`info(message)`|Invia `message` alla finestra della console. Il messaggio è preceduto da un simbolo di informazioni.|`console.info("info message");`<br /><br /> Per altri esempi, vedere [Formatting console.log output](#ConsoleLog) più avanti in questo argomento.|
 |`log(message)`|Invia `message` alla finestra della console.<br /><br /> Se si passa un oggetto, questo comando lo invia alla finestra della console e lo visualizza in un visualizzatore oggetti. È possibile usare il visualizzatore per controllare le proprietà nella finestra della console.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|Usato nelle app Web. Non supportato nelle app UWP che usano JavaScript.|Non supportata.|
-|`profile(reportName)`|Usato nelle app Web. Non supportato nelle app UWP che usano JavaScript.|Non supportata.|
-|`profileEnd()`|Usato nelle app Web. Non supportato nelle app UWP che usano JavaScript.|Non supportata.|
+|`msIsIndependentlyComposed(element)`|Usato nelle app Web. Non supportato nelle app UWP con JavaScript.|Non supportata.|
+|`profile(reportName)`|Usato nelle app Web. Non supportato nelle app UWP con JavaScript.|Non supportata.|
+|`profileEnd()`|Usato nelle app Web. Non supportato nelle app UWP con JavaScript.|Non supportata.|
 |`select(element)`|Seleziona l'elemento HTML `element` specificato in [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|
 |`time (name)`|Avvia un timer identificato dal parametro facoltativo `name` . Se usato con `console.timeEnd`, calcola il tempo che intercorre tra `time` e `timeEnd`e invia il risultato (misurato in ms) alla console usando la stringa `name` come prefisso. Usato per abilitare la strumentazione del codice dell'app per la misurazione delle prestazioni.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|Arresta un timer identificato dal parametro facoltativo `name` . Vedere il comando della console `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -88,7 +89,7 @@ if (console && console.log) {
 ```
 
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Esame degli oggetti nella finestra della console JavaScript
-È possibile interagire con qualsiasi oggetto all'interno dell'ambito quando si usa la finestra della console JavaScript. Per controllare un oggetto esterno all'ambito nella finestra della console, usare `console.log` , `console.dir`o altri comandi del codice. In alternativa, è possibile interagire con l'oggetto dalla finestra della console mentre si trova nell'ambito impostando un punto di interruzione nel codice (punto di interruzione Inserisci punto **di interruzione**  >  ).
+È possibile interagire con qualsiasi oggetto all'interno dell'ambito quando si usa la finestra della console JavaScript. Per controllare un oggetto esterno all'ambito nella finestra della console, usare `console.log` , `console.dir`o altri comandi del codice. In alternativa, è possibile interagire con l'oggetto dalla finestra della console mentre si trova nell'ambito impostando un punto di interruzione nel codice (**Punto** di interruzione  >  **Inserisci punto di interruzione**).
 
 ## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Formattazione dell'output di console.log
 Se si passano più argomenti a `console.log`, la console li considererà come una matrice e concatenerà l'output.

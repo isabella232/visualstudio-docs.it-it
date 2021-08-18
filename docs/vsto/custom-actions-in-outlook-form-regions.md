@@ -1,6 +1,6 @@
 ---
-title: Azioni personalizzate nelle aree del modulo di Outlook
-description: Informazioni su come i pulsanti di visualizzazione azione, ad esempio Rispondi e Rispondi a tutti, consentono agli utenti di rispondere a un Microsoft Office elemento di Outlook.
+title: Azioni personalizzate nelle aree Outlook modulo
+description: Informazioni su come i pulsanti di visualizzazione dell'azione, ad esempio Rispondi e Rispondi a tutti, consentono agli utenti di rispondere a un Microsoft Office Outlook elemento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,47 +13,48 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75fcc83dc06a9503b5ab1571315dc95028734446
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947880"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130689"
 ---
-# <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree del modulo di Outlook
-  Azioni visualizzano i pulsanti che consentono agli utenti di rispondere a un Microsoft Office elemento Outlook. Ad esempio, per rispondere a un elemento di posta elettronica, gli utenti fanno clic sui pulsanti **Rispondi**, **Rispondi a tutti** o Esegui azione di **inoltro** . Ognuna di queste azioni crea un nuovo elemento di posta elettronica e popola i campi dell'elemento usando le informazioni dell'elemento originale.
+# <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree Outlook modulo
+  Le azioni visualizzano i pulsanti che consentono agli utenti di rispondere a un Microsoft Office Outlook elemento. Ad esempio, per rispondere a un elemento di posta elettronica, gli utenti possono fare clic sui pulsanti **di** azione Rispondi **,** Rispondi a tutti **o** Inoltra . Ognuna di queste azioni crea un nuovo elemento di posta elettronica e popola i campi dell'elemento usando le informazioni dell'elemento originale.
 
- È possibile creare un'azione personalizzata che apre qualsiasi tipo di elemento di Outlook. Ad esempio, è possibile aggiungere un'azione personalizzata che apre un nuovo appuntamento o un nuovo elemento di attività. Impostare le proprietà di un'azione personalizzata o usare codice personalizzato per popolare i campi del nuovo elemento. Le azioni personalizzate vengono visualizzate nell'elenco a discesa **azioni personalizzate** di un elemento aperto in una finestra di controllo di Outlook.
+ È possibile creare un'azione personalizzata che apre qualsiasi tipo di Outlook elemento. Ad esempio, è possibile aggiungere un'azione personalizzata che apre un nuovo appuntamento o elemento attività. Impostare le proprietà di un'azione personalizzata o usare codice personalizzato per popolare i campi del nuovo elemento. Le azioni personalizzate vengono visualizzate **nell'elenco** a discesa Azioni personalizzate di un elemento aperto in una Outlook di controllo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Aggiungere azioni personalizzate a un'area del modulo
- Per aggiungere un'azione personalizzata a un'area del modulo, utilizzare la finestra di dialogo **azioni personalizzate** . È possibile aprire la finestra di dialogo **azioni personalizzate** selezionando l'area del modulo in **Esplora soluzioni**, espandendo il nodo **manifesto** nella **finestra Proprietà**, selezionando la proprietà **CustomActions** , quindi facendo clic sul pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")).
+ Per aggiungere un'azione personalizzata a un'area del modulo, usare la **finestra di dialogo Azioni** personalizzate .  È ![possibile](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")  aprire la finestra di dialogo Azioni personalizzate selezionando l'area del modulo in Esplora soluzioni , espandendo il nodo **Manifesto** nella finestra Proprietà **,** selezionando la proprietà **CustomActions** e quindi facendo clic sul pulsante con i puntini di sospensione ( ASP.NET puntini di sospensione di Progettazione per dispositivi mobili ).
 
- È possibile utilizzare la finestra di dialogo **azioni personalizzate** per specificare un *modulo di destinazione*. Un modulo di destinazione è il modulo che viene visualizzato quando l'utente esegue l'azione personalizzata.
+ È possibile usare la **finestra di dialogo Azioni** personalizzate per specificare un formato di *destinazione.* Un modulo di destinazione è il modulo visualizzato quando l'utente esegue l'azione personalizzata.
 
- È inoltre possibile utilizzare la finestra di dialogo **azioni personalizzate** per specificare come si desidera che le informazioni dell'elemento originale vengano visualizzate nel modulo di destinazione.
+ È anche possibile usare la **finestra di dialogo** Azioni personalizzate per specificare come si desidera che le informazioni dell'elemento originale vengano visualizzate nel modulo di destinazione.
 
- Nella tabella seguente vengono descritte le proprietà disponibili nella finestra di dialogo **azioni personalizzate** .
+ Nella tabella seguente vengono descritte le proprietà disponibili nella **finestra di dialogo Azioni** personalizzate .
 
 |Proprietà|Descrizione|
 |--------------|-----------------|
-|**AddressLike**|Consente di specificare la modalità di indirizzamento del modulo di destinazione.|
-|**Corpo**|Specifica il modo in cui il corpo dell'elemento originale viene aggiunto al form di destinazione.|
+|**AddressLike**|Specifica come verrà indirizzato il form di destinazione.|
+|**Corpo**|Specifica il modo in cui il corpo dell'elemento originale viene accodato al form di destinazione.|
 |**Enabled**|Indica se l'azione personalizzata è abilitata. Se questa proprietà è impostata su **false**, l'azione personalizzata è disabilitata.|
-|**Metodo**|Specifica il tipo di risposta disponibile quando viene eseguita l'azione personalizzata. L'azione personalizzata può inviare il modulo, aprire il modulo o richiedere all'utente se vuole inviare o aprire il modulo.|
+|**Metodo**|Specifica il tipo di risposta disponibile quando viene eseguita l'azione personalizzata. L'azione personalizzata può inviare il modulo, aprire il modulo o chiedere all'utente se vuole inviare o aprire il modulo.|
 |**Nome**|Specifica il nome interno che è possibile usare per fare riferimento a questa azione personalizzata nel codice.|
 |**ShowOnRibbon**|Indica se visualizzare l'azione personalizzata sulla barra multifunzione dell'elemento originale.|
-|**SubjectPrefix**|Specifica il testo che viene inserito all'inizio della riga dell'oggetto del form di destinazione.|
-|**TargetForm**|Specifica il nome della classe del messaggio del form di destinazione. Inserire, ad esempio, **IPM. Attività** per l'apertura di un form attività.|
+|**SubjectPrefix**|Specifica il testo inserito all'inizio della riga dell'oggetto del form di destinazione.|
+|**TargetForm**|Specifica il nome della classe messaggio del form di destinazione. Ad esempio, digitare **IPM. Attività per** aprire un modulo attività.|
 |**Title**|Specifica l'etichetta del pulsante di azione personalizzato.|
 
 ## <a name="customize-a-custom-action-at-run-time"></a>Personalizzare un'azione personalizzata in fase di esecuzione
- È anche possibile aggiungere il comportamento all'azione personalizzata usando il codice. Ad esempio, è possibile aggiungere il codice che accetta i nomi dei destinatari di posta elettronica e aggiunge tali nomi come partecipanti in un nuovo elemento appuntamento. A tale scopo, gestire l'evento [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) dell' [oggetto MailItem](/office/vba/api/Outlook.MailItem).
+ È anche possibile aggiungere il comportamento all'azione personalizzata usando il codice. Ad esempio, è possibile aggiungere codice che accetta i nomi dei destinatari di posta elettronica e li aggiunge come partecipanti in un nuovo elemento appuntamento. A tale scopo, gestire [l'evento CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) [dell'oggetto MailItem](/office/vba/api/Outlook.MailItem).
 
 ## <a name="see-also"></a>Vedi anche
-- [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
-- [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
+- [Creare aree Outlook modulo](../vsto/creating-outlook-form-regions.md)
+- [Procedura dettagliata: Progettare un'Outlook del modulo](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Associare un'area del modulo a una Outlook di messaggio personalizzata](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

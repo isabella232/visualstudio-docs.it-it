@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d154c05338f9d8931aaee982e2b79b6cecc06177669cd1e10aa3280e7a04056
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f91f9692ab0cd6c9b8cc4cbaf9cdc44cd4d12ad5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391168"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146589"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Uso dell'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
 
@@ -31,7 +31,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 > [!NOTE]
 > È anche possibile raccogliere gli stessi dati IntelliTrace per le app Web e SharePoint in esecuzione nei computer remoti usando **Microsoft Monitoring Agent** in modalità **Trace** .
 >
-> È possibile raccogliere gli eventi relativi alle prestazioni nei dati IntelliTrace eseguendo l'agente in modalità **Monitor** . La modalità **Monitor** ha un impatto minore sulle prestazioni rispetto alla modalità **Traccia** o all' **IntelliTraccia stand-alone collector**. Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato. Vedere [Uso del Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> È possibile raccogliere gli eventi relativi alle prestazioni nei dati IntelliTrace eseguendo l'agente in modalità **Monitor** . La modalità **Monitor** ha un impatto minore sulle prestazioni rispetto alla modalità **Traccia** o all' **IntelliTraccia stand-alone collector**. Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato. Vedere [Uso dell'Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > L'agente di raccolta autonomo IntelliTrace non supporta gli snapshot di processo.
 
  **Requisiti**
@@ -83,9 +83,9 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1. Nel server dell'app creare la directory dell'agente di raccolta, ad esempio **C:\IntelliTraceCollector**
 
-2. Ottenere l'agente di raccolta [dall'Area](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)download [Microsoft, my.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)o dalla cartella Visual Studio 2013 di installazione di Visual Studio 2013 Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):
+2. Ottenere l'agente di raccolta [dall'Area](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)download [Microsoft, my.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)o dalla Visual Studio 2013 di installazione di Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):
 
-   - **Area download Microsoft** o **my.visualstudio.com:**
+   - **Area download Microsoft** **o my.visualstudio.com**:
 
      1. Accanto a **IntelliTraceCollector.exe**, scegliere **carica**.
 
@@ -148,7 +148,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>Installare i cmdlet di PowerShell intelliTrace per raccogliere dati per app Web o SharePoint applicazioni
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>Installare i cmdlet di PowerShell intelliTrace per raccogliere dati per le app Web o SharePoint applicazioni
 
 1. Nel server dell'app, verificare che PowerShell sia abilitato. Nella maggior parte delle versioni di Windows Server, è possibile aggiungere questa funzionalità nello strumento di amministrazione **Server Manager** .
 
@@ -293,7 +293,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
     > [!NOTE]
     > Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli nel computer di sviluppo. Vedere [Diagnosticare i problemi dopo la distribuzione.](../debugger/diagnose-problems-after-deployment.md)
 
-## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> Ricerca per categorie ottenere il maggior numero di dati senza rallentare l'app?
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> Ricerca per categorie ottenere la maggior parte dei dati senza rallentare l'app?
  IntelliTrace può raccogliere grandi quantità di dati: l'impatto sulle prestazioni dell'app dipende dai dati raccolti da IntelliTrace e dal tipo di codice analizzato. Vedere [Ottimizzazione della raccolta IntelliTrace nei server di produzione](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/).
 
  Esistono dei metodi per ottenere la maggior quantità di dati possibile senza rallentare l'app:

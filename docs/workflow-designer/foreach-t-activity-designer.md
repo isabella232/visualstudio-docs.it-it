@@ -1,6 +1,6 @@
 ---
 title: Progettazione flussi di lavoro - ActivityDesigner ForEach &lt; T &gt;
-description: Informazioni su come l'attività ForEach <T> esegue l'attività contenuta nel relativo corpo per ogni elemento in una raccolta Values specificata.
+description: Informazioni su come l'attività ForEach <T> esegue l'attività contenuta nel relativo corpo per ogni elemento in una raccolta Di valori specificata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ab21d25420296ba800ccecbc09257f67f8834e79813169d1e4c06a02d682dd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2f54139ddcaf214bf63292f49b9f847effed3ba5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114745"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ActivityDesigner ForEach &lt; T &gt;
 
@@ -34,7 +34,7 @@ Nella tabella seguente sono elencate le proprietà più utili dell'attività <xr
 |<xref:System.Activities.Statements.ForEach%601.Values%2A>|Vero|Raccolta di elementi da scorrere. Per impostare , digitare un'Visual Basic nella casella Valori <xref:System.Activities.Statements.ForEach%601.Values%2A> dell'ActivityDesigner **ForEach<T \>** o nella griglia delle proprietà. |
 |*TypeArgument*|Vero|Tipo degli elementi nella raccolta <xref:System.Activities.Statements.ForEach%601.Values%2A> specificata dal parametro generico *T*. Per impostazione predefinita, *TypeArgument* è impostato su **Int32.** Per modificare il tipo, modificare il valore della casella combinata *TypeArgument* nella griglia delle proprietà.|
 
-Per impostazione predefinita, l'iteratore del ciclo è denominato **item**. È possibile modificare il nome della variabile di iteratore nell'ActivityDesigner <xref:System.Activities.Statements.ForEach%601>. L'iteratore del ciclo può essere usato nelle espressioni contenute in elementi figlio dell'attività <xref:System.Activities.Statements.ForEach%601>.
+Per impostazione predefinita, l'iteratore del ciclo è **denominato item**. È possibile modificare il nome della variabile di iteratore nell'ActivityDesigner <xref:System.Activities.Statements.ForEach%601>. L'iteratore del ciclo può essere usato nelle espressioni contenute in elementi figlio dell'attività <xref:System.Activities.Statements.ForEach%601>.
 
 ## <a name="see-also"></a>Vedi anche
 

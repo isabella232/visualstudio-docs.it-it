@@ -1,6 +1,6 @@
 ---
-description: Fa in modo che il processo passi un'istruzione o un'istruzione.
-title: 'IDebugProcess3:: Step | Microsoft Docs'
+description: Fa sì che il processo passi un'istruzione o un'istruzione.
+title: IDebugProcess3::Step | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,23 +11,24 @@ ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d5c9e43676751a97baf0bf664c3da17dcf9aca5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 27dc90056c9c0e5c0521a4102cec4714c72b3cc9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076524"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132821"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
-Fa in modo che il processo passi un'istruzione o un'istruzione.
+Fa sì che il processo passi un'istruzione o un'istruzione.
 
 > [!NOTE]
-> Questo metodo deve essere utilizzato al posto di [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md).
+> Questo metodo deve essere usato al posto del [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,21 +50,21 @@ int Step(
 
 ## <a name="parameters"></a>Parametri
 `pThread`\
-in Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread di cui viene eseguito il ripasso.
+[in] Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread di cui si esegue l'esecuzione di un'interruzione.
 
 `sk`\
-in Uno dei valori [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) .
+[in] Uno dei [valori STEPKIND.](../../../extensibility/debugger/reference/stepkind.md)
 
 `step`\
-in Uno dei valori [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) .
+[in] Uno dei [valori di STEPUNIT.](../../../extensibility/debugger/reference/stepunit.md)
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce il codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Se è presente una sincronizzazione dei thread o una comunicazione tra thread, gli altri thread del processo devono essere eseguiti quando viene eseguito un determinato thread.
+ In caso di sincronizzazione dei thread o di comunicazione tra thread, gli altri thread del processo devono essere eseguiti quando un particolare thread esegue un'istruzione alla volta.
 
- **Avviso** di Non inviare un evento di arresto o un evento immediato (sincrono) a [un evento durante](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) la gestione della chiamata; in caso contrario, il debugger potrebbe smettere di rispondere.
+ **Avviso** Non inviare un evento di arresto o un evento immediato (sincrono) [all'evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; In caso contrario, il debugger potrebbe smettere di rispondere.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

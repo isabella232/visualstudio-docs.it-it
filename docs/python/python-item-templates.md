@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7effabe9323611685ef392820f4eb56f183a41d17245966b662ca7d1a2d3b63a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e637e935e860b27337a829fc9f736e53c4428acf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060739"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
-I modelli di elemento sono disponibili nei progetti Python tramite il comando di menu **Project** Aggiungi nuovo elemento o il comando Aggiungi nuovo elemento nel menu di scelta  >   rapida in   >   **Esplora soluzioni**.
+I modelli di elemento sono disponibili nei progetti Python tramite il comando di menu **Project** Aggiungi nuovo elemento o il comando Aggiungi nuovo elemento nel menu di scelta rapida  >     >   in **Esplora soluzioni**.
 
 ![Finestra di dialogo Aggiungi nuovo elemento](media/project-item-templates.png)
 

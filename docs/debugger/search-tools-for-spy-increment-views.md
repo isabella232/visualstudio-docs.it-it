@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf5a59411062acef3eb269cca84b8e10fa7bc57e36fb9c0eba70ef68168d4a2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c2c0bcb370e88805c4aca3e22157949ea3ba3d8a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146732"
 ---
 # <a name="search-tools-for-spy-views"></a>Strumenti di ricerca per le visualizzazioni di Spy++
 Usare queste finestre di dialogo per specificare i dati che verranno visualizzati in una finestra visualizzazioni di Spy++:

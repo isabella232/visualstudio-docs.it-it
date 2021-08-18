@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 63158ea74b23dbd89995a3ee7608fad68e2a69d482aba9a76a7fd89d5d932b75
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e11a6d85e8a33803b7cbf8b912d3db834996753
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154695"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Apre e prepara i dati di debug associati al file .exe/.dll.
@@ -37,36 +37,36 @@ HRESULT loadDataForExe (
 #### <a name="parameters"></a>Parametri
 eseguibile
 
-[in] Percorso del .exe o .dll file.
+[in] Percorso del file .exe o .dll.
 
 searchPath
 
-[in] Percorso alternativo per la ricerca dei dati di debug.
+[in] Percorso alternativo in cui cercare i dati di debug.
 
 pCallback
 
 [in] Interfaccia per un oggetto che supporta un'interfaccia di callback di debug, ad esempio `IUnknown` [IDiaLoadCallback,](../../debugger/debug-interface-access/idialoadcallback.md) [IDiaLoadCallback2,](../../debugger/debug-interface-access/idialoadcallback2.md) [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)e/o le interfacce [IDiaReadExeAtRVACallback.](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. La tabella seguente illustra alcuni dei possibili codici di errore per questo metodo.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati alcuni dei possibili codici di errore per questo metodo.
 
 |Valore|Descrizione|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Impossibile aprire il file o il formato del file non è valido.|
-|E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
+|E_PDB_FORMAT|Si è tentato di accedere a un file con un formato obsoleto.|
 |E_PDB_INVALID_SIG|La firma non corrisponde.|
 |E_PDB_INVALID_AGE|L'età non corrisponde.|
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
 ## <a name="remarks"></a>Commenti
-L'intestazione di debug del .exe/.dll il percorso dei dati di debug associato.
+L'intestazione di debug del file .exe/.dll il percorso dei dati di debug associato.
 
 Se si caricano dati di debug da un server di simboli, *symsrv.dll* deve essere presente nella stessa directory in cui è installata l'applicazione dell'utente o *msdia140.dll* oppure deve essere presente nella directory di sistema.
 
 Questo metodo legge l'intestazione di debug e quindi cerca e prepara i dati di debug. Facoltativamente, lo stato di avanzamento della ricerca può essere segnalato e controllato tramite callback. Ad esempio, [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) viene richiamato quando il metodo trova `IDiaDataSource::loadDataForExe` ed elabora una directory di debug.
 
-Le [interfacce IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) e [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) consentono all'applicazione client di fornire metodi alternativi per la lettura dei dati dal file eseguibile quando non è possibile accedere direttamente al file tramite I/O di file standard.
+Le [interfacce IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) e [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) consentono all'applicazione client di fornire metodi alternativi per la lettura dei dati dal file eseguibile quando non è possibile accedere al file direttamente tramite I/O standard del file.
 
 Per caricare un file con estensione pdb senza convalida, usare il [metodo IDiaDataSource::loadDataFromPdb.](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306dfa4a8c4948c99b2d388120a4ac4757e83aaeb3b813df17d3bb9a0cc0ea10
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eddf2260b3b518fd411f649feba37d6b8e0830a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121323716"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111463"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Recupera il nome del server.
@@ -46,13 +46,13 @@ int GetServerName(
 [out] Restituisce il nome del server.
 
 > [!NOTE]
-> Il chiamante è responsabile della liberatura della stringa.
+> Il chiamante è responsabile della liberare la stringa.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Per un nome descrittivo del server, chiamare il [metodo GetServerFriendlyName.](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)
+ Per un nome descrittivo del server, chiamare [il metodo GetServerFriendlyName.](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

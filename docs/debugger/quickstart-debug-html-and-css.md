@@ -20,12 +20,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 55e64d2d4c1249efe8306aba8a9279d75b4034ef41c14d6b4f161dee694046c7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 32e12e8646b25adff81c217626de6cacee724600
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419346"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153849"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle app UWP in Visual Studio
 
@@ -148,7 +148,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     ![App FlipView con i risultati previsti](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
-7. Scegliere **Computer locale** dall'elenco a discesa accanto al **pulsante** Avvia debug sulla barra degli **strumenti Debug:**
+7. Scegliere **Computer locale dall'elenco** a discesa accanto al **pulsante** Avvia debug sulla barra degli **strumenti Debug:**
 
     ![Selezionare l'elenco di destinazione del debug](../debugger/media/js_select_target.png "JS_Select_Target")
 
@@ -201,7 +201,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     Le cose sono migliorate. C'è ancora un problema da risolvere. I margini sembrano troppo grandi.
 
-19. Per analizzare, passare a Visual Studio e scegliere la **scheda Layout** per esaminare il modello di riquadro dell'elemento.
+19. Per analizzare, passare a Visual Studio e scegliere la **scheda Layout** per esaminare il modello box dell'elemento.
 
     Nella **scheda Layout** verranno visualizzati gli elementi seguenti:
 

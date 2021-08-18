@@ -1,6 +1,6 @@
 ---
 title: Connettere il profiler al servizio .NET per raccogliere dati di memoria
-description: Usare Visual Studio Strumenti di profilatura strumenti da riga di comando per collegare il profiler a un .NET Framework e raccogliere dati di memoria.
+description: Usare Visual Studio Strumenti di profilatura da riga di comando per connettere il profiler a un servizio .NET Framework e raccogliere dati di memoria.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad4a878d0c357a81fc6f8c62a08385df1741d2ad5591c7bf4aca6df7d05a73fc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 859c71d1bee179f59ab19ddf1b1e038809db7d43
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131482"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un servizio .NET Framework per raccogliere dati di memoria tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un servizio .NET Framework e raccogliere dati di memoria. È possibile raccogliere dati relativi al numero e alla dimensione delle allocazioni di memoria ed è anche possibile raccogliere dati sulla durata degli oggetti di memoria.
@@ -96,7 +96,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
-- Le coppie seguenti di **opzioni VSPerfCmd** avviano e arrestano la raccolta dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le coppie di opzioni **vsPerfCmd seguenti** avviano e arrestano la raccolta dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Descrizione|
     |------------|-----------------|
@@ -129,4 +129,4 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 ## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
-- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+- [Viste dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

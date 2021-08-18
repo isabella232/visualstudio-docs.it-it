@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 7c1d9ad5133cc7314a834b665190460487e7bc5a0654fe939801c28ecca7370f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 73dac3ba52b31efd55a1c6621b0e32d098bdb997
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385328"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131157"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procedura: Aggiungere un nodo SharePoint personalizzato a Esplora server
-  È possibile aggiungere nodi personalizzati nel nodo **SharePoint connessioni** in **Esplora server**. Ciò è utile quando si desidera visualizzare componenti aggiuntivi SharePoint che non vengono visualizzati **in** Esplora server per impostazione predefinita. Per altre informazioni, vedere [Estendere il nodo SharePoint connessioni in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  È possibile aggiungere nodi personalizzati nel nodo **SharePoint connessioni** in **Esplora server**. Ciò è utile quando si vogliono visualizzare componenti aggiuntivi SharePoint che non vengono visualizzati **in** Esplora server per impostazione predefinita. Per altre informazioni, vedere [Estendere il nodo SharePoint connessioni in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
  Per aggiungere un nodo personalizzato, creare prima di tutto una classe che definisce il nuovo nodo. Creare quindi un'estensione che aggiunge il nodo come figlio di un nodo esistente.
 
@@ -74,7 +74,7 @@ ms.locfileid: "121385328"
 
 4. Nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> metodo gestire <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> l'evento del <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> parametro .
 
-5. Nel gestore eventi aggiungere il nuovo nodo alla raccolta di nodi figlio <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> dell'oggetto <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> esposto dal parametro degli argomenti dell'evento.
+5. Nel gestore eventi aggiungere il nuovo nodo alla raccolta di nodi figlio <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> dell'oggetto esposto dal parametro degli argomenti <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> dell'evento.
 
      Nell'esempio di codice seguente viene illustrato come aggiungere il nuovo nodo come figlio del nodo SharePoint del sito in **Esplora server**.
 
@@ -97,7 +97,7 @@ ms.locfileid: "121385328"
 - System.Drawing
 
 ## <a name="deploy-the-extension"></a>Distribuzione dell'estensione
- Per distribuire **l Esplora server,creare** un pacchetto di estensione (VSIX) per l'assembly e tutti gli altri file che si [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] desidera distribuire con l'estensione. Per altre informazioni, vedere [Deploy extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Per distribuire **l'Esplora server,** creare un pacchetto di estensione (VSIX) per l'assembly e tutti gli altri file che si [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] desidera distribuire con l'estensione. Per altre informazioni, vedere [Deploy extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [Estendere il nodo SharePoint connessioni in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

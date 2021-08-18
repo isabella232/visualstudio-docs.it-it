@@ -1,5 +1,5 @@
 ---
-description: IDiaSession::findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo (RVA) specificato.
+description: IDiaSession::findInlineFramesByRVA recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (Relative Virtual Address) specificato.
 title: IDiaSession::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d3bdd113d78b72d321a97a6bb61e927a873ee7c34dc582be32300a51d6cd98
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9bcbdffd4615ee7bb08b2164a9fd9e8624ca75c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405010"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161532"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale relativo specificato.
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (Relative Virtual Address) specificato.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b50e437db991df942c68b23a7c3ac664bb2c59e7fa32c4495a643b4b4db163b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 36aca2df154f70902f65fa4bee9546d14f4bad94
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128887"
 ---
 # <a name="idiastackframeget_lengthparams"></a>IDiaStackFrame::get_lengthParams
 Recupera il numero di byte di parametri inseriti nello stack.

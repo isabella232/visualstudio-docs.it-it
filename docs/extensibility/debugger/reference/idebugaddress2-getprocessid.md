@@ -1,6 +1,6 @@
 ---
-description: Recupera l'ID del processo a cui appartiene l'oggetto rappresentato da questa interfaccia IDebugAddress2.
-title: 'IDebugAddress2:: GetProcessID | Microsoft Docs'
+description: Recupera l'ID del processo proprietario dell'oggetto rappresentato da questa interfaccia IDebugAddress2.
+title: IDebugAddress2::GetProcessID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 2c18889d-074a-4b95-87b4-bf1a067f44ed
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd7665af4f88c695dd74b51293da3eced3861230
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 35139838a879aa742ded8d3aac2b57cd71500821
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064890"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
-Recupera l'ID del processo a cui appartiene l'oggetto rappresentato da questa interfaccia [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) .
+Recupera l'ID del processo proprietario dell'oggetto rappresentato da questa [interfaccia IDebugAddress2.](../../../extensibility/debugger/reference/idebugaddress2.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +43,10 @@ int GetProcessID (
 
 ## <a name="parameters"></a>Parametri
 `pProcID`\
-out ID del processo.
+[out] ID del processo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

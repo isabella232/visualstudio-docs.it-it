@@ -1,6 +1,6 @@
 ---
-description: Determina se un attributo personalizzato esiste per nome.
-title: 'IDebugCustomAttributeQuery2:: IsCustomAttributeDefined | Microsoft Docs'
+description: Determina se un attributo personalizzato esiste in base al nome.
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 646fe46f9d83a320423136b8601ee56b3f4ac583
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d4e3fe35577c37d70413b0b4ad8a3bd17d76451c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077590"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111411"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-Determina se un attributo personalizzato esiste per nome.
+Determina se un attributo personalizzato esiste in base al nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parametri
 `pszCustomAttributeName`\
-in Stringa che contiene il nome dell'attributo personalizzato da trovare.
+[in] Stringa contenente il nome dell'attributo personalizzato da trovare.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce S_OK se l'attributo personalizzato è definito su questo campo, in caso contrario restituisce S_FALSE.
+ Restituisce S_OK se l'attributo personalizzato è definito in questo campo. In caso contrario, restituisce S_FALSE.
 
 ## <a name="remarks"></a>Commenti
- Per ottenere i byte degli attributi associati all'attributo personalizzato, chiamare il metodo [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) .
+ Per ottenere i byte dell'attributo associati all'attributo personalizzato, chiamare il [metodo GetCustomAttributeByName.](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

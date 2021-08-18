@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8760b07b84df3fd1ab763cd14a984a7b291b42cbdeefbbf3da70ecf2ff8998b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 315f3e70f0e848a43182eb88bf016b090c1b9650
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132795"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 Questa interfaccia viene inviata all'avvio di un processo.
@@ -31,10 +31,10 @@ IDebugProcessCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) o il fornitore di porte personalizzato implementa questa interfaccia per segnalare che è stato creato un processo. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM usa [QueryInterface per](/cpp/atl/queryinterface) accedere all'interfaccia. `IDebugEvent2`
+ Il motore di debug (DE) o il fornitore della porta personalizzata implementa questa interfaccia per segnalare che è stato creato un processo. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM usa [QueryInterface per](/cpp/atl/queryinterface) accedere all'interfaccia. `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- La de o il fornitore di porte personalizzato crea e invia questo oggetto evento per segnalare la creazione di un processo. Il de invia questo evento usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug. Il fornitore della porta personalizzata invia questo evento usando [l'interfaccia IDebugPortEvents2.](../../../extensibility/debugger/reference/idebugportevents2.md)
+ De o il fornitore della porta personalizzata crea e invia questo oggetto evento per segnalare la creazione di un processo. De invia questo evento usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma di cui è in corso il debug. Il fornitore della porta personalizzata invia questo evento usando [l'interfaccia IDebugPortEvents2.](../../../extensibility/debugger/reference/idebugportevents2.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

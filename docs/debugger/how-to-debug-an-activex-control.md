@@ -1,6 +1,6 @@
 ---
-title: Eseguire il debug di ActiveX controllo | Microsoft Docs
-description: Informazioni su come eseguire il debug di ActiveX controllo . È necessario specificare un eseguibile contenitore, che è possibile eseguire nelle pagine Project proprietà o quando si avvia il debug.
+title: Eseguire il debug ActiveX controllo | Microsoft Docs
+description: Informazioni su come eseguire il debug di ActiveX controllo. È necessario specificare un file eseguibile contenitore, che è possibile eseguire nelle pagine Project proprietà o quando si inizia il debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -27,12 +27,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 12eec4742fb4c420e10637b212a1fa6bbc578b0d07d058296b931f4ce60a7015
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e3d47b749813fe4d60fde4086e5b4eeb66cff651
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362328"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161297"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedura: eseguire il debug di un controllo ActiveX
 
@@ -45,7 +45,7 @@ Per effettuare il debug di un controllo ActiveX, è necessario specificare un co
 
 1. In Esplora soluzioni selezionare il progetto.
 
-2. Scegliere **Pagine** delle proprietà dal menu **Visualizza**.
+2. Scegliere **Pagine delle** proprietà dal menu **Visualizza**.
 
 3. Nella finestra di dialogo **Pagine delle proprietà del progetto** aprire la cartella **Proprietà di configurazione** e selezionare **Debug**.
 

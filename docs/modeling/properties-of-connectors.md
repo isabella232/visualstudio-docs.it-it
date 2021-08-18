@@ -12,24 +12,24 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: bcc53dda3ce19fb962cd7fe30b0dc7e6fdf6e45d6e27f2194750c36425afe166
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ada7d2c78b818c18c9fdf21618ce66595eb9acfd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370502"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100764"
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 I connettori rappresentano le relazioni di dominio in una finestra di progettazione generata.
 
- Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione [di un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  I connettori hanno le proprietà elencate nella tabella seguente.
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
 |Color|Colore di questo connettore.|Nero|
-|Stile trattino|Stile del trattino per la linea per questo connettore (Solid, Dash, Dot, DashDot, DashDotDot o Custom).|Tinta unita|
+|Stile trattino|Stile del trattino per la linea per questo connettore (Tinta unita, Trattino, Punto, DashDot, DashDotDot o Personalizzato).|Tinta unita|
 |Stile di fine origine|Stile finale di origine per questo connettore (EmptyArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|
 |Stile di fine destinazione|Stile finale di destinazione per questo connettore (EmptyArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questo connettore.|Nero|

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf23b1e57e2677fba142b1711b74437239e2f63c24b1209b2b832e9aa35c81c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ae0365760045dd6e8e36bcb01920116d92707c21
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239480"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112022"
 ---
 # <a name="work-with-shaders"></a>Usare gli shader
 

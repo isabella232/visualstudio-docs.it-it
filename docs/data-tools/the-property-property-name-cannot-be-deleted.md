@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95caaef5270b5e5a59567a8d91380347f10fef69c1b2a21de87b7030e6ce98f4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 307e0f7bf52ed7e95536a13b4b292fda90ef4be1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346791"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129922"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Impossibile eliminare la proprietà \<property name>
 
-Impossibile eliminare la proprietà perché è impostata come \<property name> proprietà Discriminator **per** l'ereditarietà tra \<class name> e \<class name>
+La proprietà \<property name> non può essere eliminata perché è impostata come proprietà Discriminator **per** l'ereditarietà tra \<class name> e \<class name>
 
 La proprietà selezionata è impostata come **Proprietà Discriminator** per l'ereditarietà tra le classi indicate nel messaggio di errore. Le proprietà non possono essere eliminate se partecipano alla configurazione dell'ereditarietà tra le classi di dati.
 

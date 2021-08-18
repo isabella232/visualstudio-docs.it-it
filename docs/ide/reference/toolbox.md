@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 068cfa548f2421791e79e9a79f56eb530b9b06aa9cdb3a7951433c2cc3b36e89
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9f601c3245aaf61957f10c5adbd8f9a602256450
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121371894"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061888"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
