@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e5014f3ba96d11fc5a851e5255404fae50289322062786a6952bf4bec192cb9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e8036b4a5e8caf026da2e4da9e2347f595eaa12e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448325"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070249"
 ---
 # <a name="file-status-code-enumerator"></a>Enumeratore del codice di stato del file
 `SccStatus`L'enumeratore contiene valori costanti denominati che specificano lo stato di un file nel sistema di controllo del codice sorgente. Questa enumerazione viene usata da [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e dalla funzione di callback (per informazioni `POPLISTFUNC` dettagliate, vedere [POPLISTFUNC).](../extensibility/poplistfunc.md)
@@ -56,7 +56,7 @@ enum SccStatus {
 
  SCC_STATUS_NOTCONTROLLED file non è in controllo del codice sorgente.
 
- SCC_STATUS_CONTROLLED il file è sotto controllo del codice sorgente.
+ SCC_STATUS_CONTROLLED file è in controllo del codice sorgente.
 
  SCC_STATUS_CHECKEDOUT estratto dall'utente corrente sul disco locale.
 
@@ -64,7 +64,7 @@ enum SccStatus {
 
  SCC_STATUS_OUTEXCLUSIVE file è estratto in modo esclusivo.
 
- SCC_STATUS_OUTMULTIPLE file è estratto da più utenti.
+ SCC_STATUS_OUTMULTIPLE file è estratto da più di un utente.
 
  SCC_STATUS_OUTOFDATE il file non è il più recente.
 
@@ -72,17 +72,17 @@ enum SccStatus {
 
  SCC_STATUS_LOCKED il file è bloccato. Non sono consentite altre versioni.
 
- SCC_STATUS_MERGED file è stato unito ma non ancora risolto/verificato.
+ SCC_STATUS_MERGED il file è stato unito ma non ancora risolto/verificato.
 
- SCC_STATUS_SHARED file è condiviso tra progetti.
+ SCC_STATUS_SHARED file viene condiviso tra progetti.
 
  SCC_STATUS_PINNED file è condiviso con una versione esplicita.
 
  SCC_STATUS_MODIFIED file è stato modificato/interrotto/violato.
 
- SCC_STATUS_OUTBYUSER file è estratto dall'utente corrente.
+ SCC_STATUS_OUTBYUSER file estratto dall'utente corrente.
 
- SCC_STATUS_NOMERGE file non può mai essere unito con e non deve essere salvato prima di get.
+ SCC_STATUS_NOMERGE file non può mai essere unito e non deve essere salvato prima di get.
 
  SCC_STATUS_RESERVED_1 riservato per uso interno.
 

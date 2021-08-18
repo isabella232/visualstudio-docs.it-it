@@ -1,5 +1,5 @@
 ---
-title: DA0038-frequenza elevata di conflitti di blocco | Microsoft Docs
+title: DA0038 - Frequenza elevata di | Microsoft Docs
 description: I dati sulle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza significativamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,16 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1dcf86ac1fb54c8898427c5b0166dc0f0175027
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: a1d8e84b935f2e4db7b4a3cf7699c5ac1bb16740
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465931"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142195"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Frequenza elevata di conflitti di blocco
 

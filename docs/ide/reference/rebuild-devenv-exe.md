@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3ef4a0394f62e214865e89f08d6d65771954e8724686db27a76ded978d7b46
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c787cb853ce259f9aec7cf932d0f9e59d0b595c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400114"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117163"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 

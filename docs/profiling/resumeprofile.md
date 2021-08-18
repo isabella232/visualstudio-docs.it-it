@@ -1,6 +1,6 @@
 ---
 title: ResumeProfile | Microsoft Docs
-description: Informazioni sul modo in cui il metodo ResumeProfile decrementa il contatore Suspend/Resume per il livello di profilatura specificato.
+description: Informazioni su come il metodo ResumeProfile decrementa il contatore Suspend/Resume per il livello di profilatura specificato.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5607efbf9e979ff427d772089731af01cdd71867
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d52e2dccda89829d05bac6e17f5fc0dcdc70cc62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950156"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141473"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 Il metodo `ResumeProfile` decrementa il contatore Suspend/Resume per il livello di profilatura specificato.
@@ -69,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="function-information"></a>Informazioni sulla funzione
  *Intestazione: dichiarata in VSPerf.h*
 
- Libreria di importazione: *VSPerf. lib*
+ Libreria di importazione: *VSPerf.lib*
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra la funzione ResumeProfile. Nell'esempio si presuppone che sia stata effettuata una chiamata al metodo SuspendProfile per lo stesso thread o processo identificato da [PROFILE_CURRENTID](../profiling/profile-currentid.md).
@@ -105,4 +106,4 @@ void ExerciseResumeProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

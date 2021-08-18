@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad2225e5bf24959502ad559f011efeafd78126882c023bb2a7c8abf64d56c23
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4bf24de415421f0407f0de68357e607050acdbb6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121304840"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041477"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 

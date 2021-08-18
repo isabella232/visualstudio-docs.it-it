@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveNonMSBuildProjectOutput | Microsoft Docs
-description: Informazioni su MSBuild usa l'attività ResolveNonMSBuildProjectOutput per determinare i file di output per i riferimenti MSBuild progetto.
+description: Informazioni su MSBuild usa l'attività ResolveNonMSBuildProjectOutput per determinare i file di output per i riferimenti non MSBuild progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 68451c13f3bdf24c7ddb454b43c87cf6fc003adf04c3a209c66acc3ddac2c1a6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de57cbcd1b1ad59f3edfce47f09bf88a8e9ea94e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369904"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100621"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput (attività)
 
@@ -43,7 +43,7 @@ Determina i file di output per riferimenti a progetti non MSBuild.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="see-also"></a>Vedi anche
 

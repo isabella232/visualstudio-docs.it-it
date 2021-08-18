@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Dettagli risorsa: dati sui conflitti | Microsoft Docs'
-description: Informazioni sul modo in cui la visualizzazione dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati da conflitti su una risorsa selezionata.
+description: Informazioni su come la visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati da problemi relativi a una risorsa selezionata.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,15 +11,16 @@ ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 715742221b5d8b21f574e7fb8001bd0a3c56cef5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e07b658d28cfbc91e8c9ea3d3613f201be1146e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960208"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054522"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati dai conflitti relativi a una risorsa selezionata. Si verifica un evento di blocco quando un thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso alla risorsa.
@@ -56,7 +57,7 @@ La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale
 
 - Nel grafico della sequenza temporale fare clic su **Totale**.
 
-     Viene visualizzata la visualizzazione Conflitti per la risorsa. Per altre informazioni, vedere [visualizzazione dei conflitti di risorse](../profiling/resource-contentions-view-contention-data.md).
+     Viene visualizzata la visualizzazione Conflitti per la risorsa. Per altre informazioni, vedere [Visualizzazione dei contenuti delle risorse.](../profiling/resource-contentions-view-contention-data.md)
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Per visualizzare tutti gli eventi di conflitto di un thread
 

@@ -10,26 +10,27 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4ef237bf3fc90708192a37014c15c0a15dea127e
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f083ce6e5e5fa5fba24670fd6c148596d96524ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116526"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un host del modello di testo personalizzato
 
-Un *host del modello di testo* fornisce un ambiente che consente l'esecuzione del motore di trasformazione *del* modello di testo. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore o *il processore di direttiva* che richiede un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [Processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
+Un *host modello di testo* fornisce un ambiente che consente l'esecuzione del motore di trasformazione *del* modello di testo. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore o *il processore di direttiva* che richiede un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per altre informazioni, vedere [Processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
 
-È possibile scrivere un host personalizzato  se si vuole usare la funzionalità di trasformazione del modello di testo dall'esterno Visual Studio o se si vuole integrare tale funzionalità in strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da [ITextTemplatingEngineHost.](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) Per la documentazione dei singoli metodi, vedere [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
+È possibile scrivere un host personalizzato  se si vuole usare la funzionalità di trasformazione del modello di testo dall'esterno Visual Studio o se si vuole integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da [ITextTemplatingEngineHost.](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) Per la documentazione dei singoli metodi, vedere [ITextTemplatingEngineHost.](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 > [!WARNING]
-> Se si scrive un Visual Studio o un pacchetto, è consigliabile usare il servizio di creazione modelli di testo anziché creare un host personalizzato. Per altre informazioni, vedere [Chiamata della trasformazione testo in un'estensione di Visual Studio.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+> Se si scrive un Visual Studio o un pacchetto, è consigliabile usare il servizio di creazione modelli di testo anziché creare un host personalizzato. Per altre informazioni, vedere [Richiamo della trasformazione testo in un'estensione di Visual Studio.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
 Vengono illustrate le attività seguenti:
 
@@ -716,7 +717,7 @@ In questa procedura dettagliata, si crea un host personalizzato in un'applicazio
    End Namespace
    ```
 
-4. Aprire [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] solo il menu **Progetto** e fare clic su **Proprietà CustomHost**. **Nell'elenco Oggetto di** avvio fare clic su **CustomHost.Program**.
+4. Aprire [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] solo il menu **Project** e fare clic su **Proprietà CustomHost**. **Nell'elenco Oggetto di** avvio fare clic su **CustomHost.Program**.
 
 5. Scegliere **Salva tutti** dal menu **File**.
 
@@ -788,7 +789,7 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Invece di digitare l'indirizzo, è possibile passare al file CustomHost.exe in **Esplora risorse** e quindi trascinare il file nella finestra del prompt dei comandi.
+    > Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe in **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.
 
 3. Digitare uno spazio.
 
@@ -799,11 +800,11 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > Anziché digitare l'indirizzo, è possibile passare al file TestTemplate.tt in **Esplora risorse** e quindi trascinare il file nella finestra del prompt dei comandi.
+    > Anziché digitare l'indirizzo, è possibile passare al file TestTemplate.tt in **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.
 
      L'applicazione host personalizzata viene eseguita e completa il processo di trasformazione del modello di testo.
 
-5. In **Esplora risorse** passare alla cartella che contiene il file TestTemplate.tt.
+5. In **Windows Explorer** passare alla cartella che contiene il file TestTemplate.tt.
 
      Questa cartella contiene anche file TestTemplate1.txt.
 

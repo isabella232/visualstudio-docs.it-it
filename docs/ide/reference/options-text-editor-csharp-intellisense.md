@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33dc002147ab07994dd3d64d64a595b896e9bcf41c594891ca4cf60e4bcb9061
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9dbb48c2d629ec4afef7a56218bf6af785540d73
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372153"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100946"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opzioni, Editor di testo, C#, IntelliSense
 

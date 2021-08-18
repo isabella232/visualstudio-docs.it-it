@@ -1,5 +1,5 @@
 ---
-title: Recupero di informazioni sul servizio dal Impostazioni Store | Microsoft Docs
+title: Recupero delle informazioni sul servizio dal Impostazioni Store | Microsoft Docs
 description: Informazioni su come usare l'archivio impostazioni per trovare tutti i servizi disponibili o per determinare se è installato un particolare servizio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3765859ed2ae3896ef6659d3df4dcbfe65b35963e8058bc8011c94f43324b467
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 668dce1e6cec7c27c3f816cfeb2131231983f571
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401752"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087184"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Ottenere informazioni sul servizio dall'archivio impostazioni
 È possibile usare l'archivio impostazioni per trovare tutti i servizi disponibili o per determinare se è installato un particolare servizio. È necessario conoscere il tipo della classe del servizio.
@@ -64,7 +64,7 @@ ms.locfileid: "121401752"
 ## <a name="find-a-specific-service"></a>Trovare un servizio specifico
  È anche possibile usare il <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> metodo per determinare se è installato un particolare servizio. È necessario conoscere il tipo della classe del servizio.
 
-1. In MenuItemCallback del progetto creato nella procedura precedente cercare nell'archivio delle impostazioni di configurazione la raccolta con l'insieme secondario denominato dal `Services` GUID del servizio. In questo caso si cerca il servizio Guida.
+1. In MenuItemCallback del progetto creato nella procedura precedente cercare nell'archivio delle impostazioni di configurazione la raccolta con l'insieme secondario denominato dal `Services` GUID del servizio. In questo caso verrà ricercato il servizio Guida.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

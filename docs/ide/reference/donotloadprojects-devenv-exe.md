@@ -1,6 +1,6 @@
 ---
 title: -DoNotLoadProjects (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando devenv doNotLoadProjects per aprire la soluzione specificata senza caricare progetti.
+description: Informazioni su come usare l'opzione della riga di comando devenv DoNotLoadProjects per aprire la soluzione specificata senza caricare progetti.
 ms.custom: SEO-VS-2020
 ms.date: 04/30/2019
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab801d73fd3ae3879ca402c581520cda7df4dd8493bb0b0ed1b0a55eb69c551a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06e3320697acc7dac972da1233532fda06869701
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387603"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101466"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 

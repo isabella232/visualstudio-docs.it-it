@@ -1,6 +1,6 @@
 ---
 title: Elemento Group | Microsoft Docs
-description: L'elemento Group definisce un gruppo di comandi VSPackage. Questo articolo descrive attributi, elementi figlio ed elementi padre.
+description: L'elemento Group definisce un gruppo di comandi VSPackage. Questo articolo descrive gli attributi, gli elementi figlio e gli elementi padre.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781004b69925e7c2cec1e1b7f9a4754e279832de78102d6d1ad85a54c6263b6e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f48fb0f27f4439b1a2d2e881a5040a15ddd565d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376508"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087041"
 ---
 # <a name="group-element"></a>Group - elemento
 Definisce un gruppo di comandi VSPackage.
@@ -42,7 +42,7 @@ Definisce un gruppo di comandi VSPackage.
 |guid|Obbligatorio. GUID dell'identificatore del comando GUID/ID.|
 |id|Obbligatorio. ID dell'identificatore del comando GUID/ID.|
 |priority|facoltativo. Valore numerico che specifica la priorità.|
-|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 

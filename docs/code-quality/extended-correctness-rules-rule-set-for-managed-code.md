@@ -1,7 +1,7 @@
 ---
 title: Set di regole estese di correttezza per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole extended correctness rules in Visual Studio, utile per l'interoperabilità COM e le applicazioni per dispositivi mobili. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole di correttezza estesa in Visual Studio, utile per l'interoperabilità COM e le applicazioni per dispositivi mobili. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
@@ -11,20 +11,20 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8600b06e7450148fffe2d2fc0dbb5f957a1edc855e466d105814528adf0d5d7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a664b01f5fec771f4891389d3ec807d2e4976797
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405409"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114173"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
 
-Il set di regole Microsoft Extended Correctness Rules ottimizza la logica e gli errori di utilizzo del framework segnalati dall'analisi del codice. L'accento è posto su scenari specifici, ad esempio l'interoperabilità COM e le applicazioni per dispositivi mobili. È consigliabile includere questo set di regole se uno di questi scenari si applica al progetto o per trovare altri problemi nel progetto.
+Il set di regole Microsoft Extended Correctness Rules ottimizza la logica e gli errori di utilizzo del framework segnalati dall'analisi del codice. Particolare attenzione viene posta su scenari specifici, ad esempio l'interoperabilità COM e le applicazioni per dispositivi mobili. È consigliabile includere questo set di regole se uno di questi scenari si applica al progetto o per individuare altri problemi nel progetto.
 
-Il set di regole Microsoft Extended Correctness Rules include le regole incluse nel set di regole [Regole](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) di correttezza di base, che contiene le regole presenti nel set di regole [regole](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) consigliate gestite.
+Il set di regole di Microsoft Extended Correctness Rules include le regole incluse nel set di regole Regole di correttezza di base, che contiene le regole presenti nel set di regole regole consigliate [gestite.](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) [](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)
 
-Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Extended Correctness Rules.
+Nella tabella seguente vengono descritte tutte le regole del set di regole di Microsoft Extended Correctness Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|

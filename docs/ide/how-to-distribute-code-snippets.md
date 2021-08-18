@@ -10,16 +10,17 @@ ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b60eb1156fe3d64081724e310a41a38b54af50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab7146c9240358ded884f0170d53b9e342b4ebcc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969815"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086118"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: Distribuire frammenti di codice
 
@@ -33,7 +34,7 @@ Installare il carico di lavoro **Sviluppo di estensioni di Visual Studio** per o
 
 ## <a name="set-up-the-extension"></a>Configurazione dell'estensione
 
-In questa procedura si userà lo stesso frammento di codice Hello World creato in [procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Questo articolo specifica il frammento di codice XML, quindi non è necessario tornare indietro e creare un frammento di codice.
+In questa procedura si userà lo stesso Hello World di codice creato in [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Questo articolo specifica il frammento di codice XML, quindi non è necessario tornare indietro e creare un frammento di codice.
 
 1. Creare un nuovo progetto dal modello di **progetto VSIX vuoto** e assegnare al progetto il nome **TestSnippet**.
 
@@ -113,7 +114,7 @@ In questa procedura si userà lo stesso frammento di codice Hello World creato i
 
    Verrà visualizzata una seconda istanza di Visual Studio.
 
-3. Nell'istanza sperimentale, passare a **strumenti**  >  **Gestione frammenti di codice** e impostare il **linguaggio** su **Basic**. *HelloWorldVB* verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento *HelloWorldVB*.
+3. Nell'istanza sperimentale passare **a** Strumenti Gestione  >  **frammenti di codice e** impostare **Linguaggio** su **Base.** *HelloWorldVB* verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento *HelloWorldVB*.
 
 4. Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.
 

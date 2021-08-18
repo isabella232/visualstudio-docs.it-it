@@ -17,25 +17,26 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 542b74e7d3bb73847303fa4215651eea7e110e91
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: d191318172700a12552341c5bd3c7a2c03e63734
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384876"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157605"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizzare e modellare l'architettura
 
-Assicurarsi che l'app soddisfi i requisiti di architettura usando Visual Studio architettura e strumenti di modellazione per progettare e modellare l'app.
+Assicurarsi che l'app soddisfi i requisiti di architettura usando Visual Studio e gli strumenti di modellazione per progettare e modellare l'app.
 
-1. Comprendere meglio il codice del programma esistente [visualizzando la struttura](visualize-code.md) del codice, il comportamento e le relazioni con le mappe codice e i diagrammi delle dipendenze.
+1. Comprendere meglio il codice del programma esistente [visualizzando la struttura,](visualize-code.md) il comportamento e le relazioni del codice con mappe codice e diagrammi delle dipendenze.
     - Vedere l'organizzazione e le relazioni del codice creando mappe **codice.** 
     - Visualizzare le dipendenze tra assembly, spazi dei nomi, classi, metodi e così via.
     - Individuare i conflitti tra il codice e la relativa progettazione creando **diagrammi delle dipendenze per** convalidare il codice.
     - Vedere la struttura e i membri della classe per un progetto specifico [creando diagrammi classi dal codice.](../ide/class-designer/designing-and-viewing-classes-and-types.md)
-    - [Generare testo usando modelli T4 con](../modeling/code-generation-and-t4-text-templates.md) blocchi di testo e logica di controllo all'interno dei modelli per generare file basati su testo. 
+    - [Generare testo usando modelli T4 con blocchi](../modeling/code-generation-and-t4-text-templates.md) di testo e logica di controllo all'interno dei modelli per generare file basati su testo. 
     
 1. Informare il team sulla necessità di rispettare le dipendenze dell'architettura.
 
@@ -85,9 +86,9 @@ Altre informazioni:
 
 Visual Studio è disponibile in diverse edizioni. Non tutti questi strumenti offrono supporto per gli strumenti di architettura e modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
 
-|**Funzionalità**|**Enterprise Edition**|**Edizione Professional**|**Community Edition**|
+|**Funzionalità**|**Enterprise edition**|**Professional edition**|**Community edizione**|
 |-|-|-|-|
-|**Mappe codice**|Sì|Supporta solo la lettura delle mappe codice, il filtro delle mappe codice, l'aggiunta di nuovi nodi generici e la creazione di un nuovo grafico diretto da una selezione.|-|
+|**Mappe codice**|Sì|Supporta solo la lettura delle mappe codice, il filtraggio delle mappe codice, l'aggiunta di nuovi nodi generici e la creazione di un nuovo Graph diretto da una selezione.|-|
 |**Diagrammi delle dipendenze**|Sì|Supporta solo la lettura dei diagrammi delle dipendenze.|Supporta solo la lettura dei diagrammi delle dipendenze.|
 |**Grafici diretti** (diagrammi DGML)|Sì|Sì|Sì|
 |**Clonazione del codice**|Sì|-|-|

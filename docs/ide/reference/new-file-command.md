@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2605d64b9f39c90b36c467a3c8883f17af0fadc09f6e132f3cbb04fd68ee67d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4cb9e82ea6f44ddeb0e16ed8e70eed92612c0c07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372413"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101037"
 ---
 # <a name="new-file-command"></a>Comando Nuovo file
 Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File esterni.

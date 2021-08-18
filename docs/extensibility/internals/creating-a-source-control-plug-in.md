@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 495c04edfc85bacf50d2f7ba5440c27d17d08ed3c805f0f39d55408f6a6969a5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 652fe6311543e12965775218cc321a7a1542b3c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305789"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086742"
 ---
 # <a name="create-a-source-control-plug-in"></a>Creare un plug-in del controllo del codice sorgente
 L Visual Studio SDK fornisce risorse che consentono di aggiungere funzionalità di controllo del codice sorgente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] all'ambiente di sviluppo integrato (IDE). Consente di usare qualsiasi DLL plug-in conforme all'API plug-in del controllo del codice sorgente descritta in questa documentazione.

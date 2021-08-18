@@ -1,6 +1,6 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
-description: Ottenere informazioni sul tipo di enumerazione CV_CFL_LANG, che specifica il linguaggio del codice dell'applicazione o del modulo collegato in Debug Interface Access SDK.
+description: Ottenere informazioni sul tipo CV_CFL_LANG di enumerazione, che specifica il linguaggio di codice dell'applicazione o del modulo collegato nell'SDK di accesso all'interfaccia di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: 4e8e0613-ad02-4de9-9f46-e4753c5b0251
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c20fbe0c46a6c964a05b92ccd3a8bcf73cd1f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8bb3192316bf3dbdda7ee06f9bfa9a159ab8d982
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857370"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058935"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 Specifica il linguaggio del codice sorgente dell'applicazione o del modulo collegato.
@@ -49,45 +50,45 @@ typedef enum CV_CFL_LANG {
 ```
 
 ## <a name="elements"></a>Elementi
-CV_CFL_C lingua dell'applicazione è C.
+CV_CFL_C linguaggio dell'applicazione è C.
 
-CV_CFL_CXX linguaggio dell'applicazione è C++.
+CV_CFL_CXX linguaggio applicativo è C++.
 
-CV_CFL_FORTRAN lingua dell'applicazione è FORTRAN.
+CV_CFL_FORTRAN linguaggio dell'applicazione è FORTRAN.
 
-CV_CFL_MASM linguaggio applicazione è Microsoft Macro Assembler.
+CV_CFL_MASM linguaggio applicativo è Microsoft Macro Assembler.
 
-CV_CFL_PASCAL linguaggio di applicazione è Pascal.
+CV_CFL_PASCAL linguaggio dell'applicazione è Pascal.
 
-CV_CFL_BASIC lingua dell'applicazione è di base.
+CV_CFL_BASIC linguaggio applicativo è BASIC.
 
-CV_CFL_COBOL linguaggio dell'applicazione è COBOL.
+CV_CFL_COBOL linguaggio applicativo è COBOL.
 
-CV_CFL_LINK applicazione è un modulo generato dal linker.
+CV_CFL_LINK'applicazione è un modulo generato dal linker.
 
-CV_CFL_CVTRES applicazione è un modulo di risorse convertito con lo strumento CVTRES.
+CV_CFL_CVTRES application è un modulo di risorse convertito con lo strumento CVTRES.
 
-CV_CFL_CVTPGD applicazione è un modulo ottimizzato con POGO generato con lo strumento CVTPGD.
+CV_CFL_CVTPGD application è un modulo ottimizzato per POGO generato con lo strumento CVTPGD.
 
-CV_CFL_CSHARP linguaggio dell'applicazione è C#.
+CV_CFL_CSHARP linguaggio applicativo è C#.
 
-CV_CFL_VB lingua dell'applicazione è Visual Basic.
+CV_CFL_VB linguaggio dell'applicazione Visual Basic.
 
-CV_CFL_ILASM linguaggio dell'applicazione è un assembly di linguaggio intermedio, ovvero un assembly CLR (Common Language Runtime).
+CV_CFL_ILASM Application Language è un assembly di linguaggio intermedio, ovvero un assembly CLR (Common Language Runtime).
 
-CV_CFL_JAVA linguaggio dell'applicazione è Java.
+CV_CFL_JAVA linguaggio applicativo è Java.
 
-CV_CFL_JSCRIPT linguaggio dell'applicazione è JScript.
+CV_CFL_JSCRIPT linguaggio applicativo è Jscript.
 
-CV_CFL_MSIL linguaggio dell'applicazione è un linguaggio MSIL (Microsoft Intermediate Language) sconosciuto, probabilmente il risultato dell'utilizzo dell'opzione [/LTCG (generazione codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation) .
+CV_CFL_MSIL linguaggio applicativo è un linguaggio MSIL (Microsoft Intermediate Language) sconosciuto, probabilmente il risultato dell'uso dell'opzione [/LTCG (generazione](/cpp/build/reference/ltcg-link-time-code-generation) di codice in fase di collegamento).
 
-CV_CFL_HLSL linguaggio applicazione è un linguaggio shader di alto livello.
+CV_CFL_HLSL linguaggio dell'applicazione è il linguaggio shader di alto livello.
 
 ## <a name="remarks"></a>Commenti
-I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_Language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .
+I valori in questa enumerazione vengono restituiti da una chiamata al [metodo IDiaSymbol::get_language.](../../debugger/debug-interface-access/idiasymbol-get-language.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst. h
+Intestazione: cvconst.h
 
 ## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

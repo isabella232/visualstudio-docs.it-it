@@ -9,25 +9,26 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b45bf6418562da5315c986a64a1295c137e982d6
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7ee6eff6c47a818eca29673b5aad6905e6f52e28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388685"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085338"
 ---
 # <a name="text-template-utility-methods"></a>Metodi di utilità per i modelli di testo
 
 Esistono diversi metodi che sono sempre disponibili quando si scrive codice in un modello Visual Studio testo. Questi metodi sono definiti in <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> .
 
 > [!TIP]
-> È anche possibile usare altri metodi e servizi forniti dall'ambiente host in un normale modello di testo (non pre-elaborato). Ad esempio, è possibile risolvere i percorsi di file, gli errori di log e ottenere i servizi forniti da Visual Studio e da qualsiasi pacchetto caricato. Per altre informazioni, vedere [Accesso Visual Studio da un modello di testo.](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))
+> È anche possibile usare altri metodi e servizi forniti dall'ambiente host in un normale modello di testo (non pre-elaborato). Ad esempio, è possibile risolvere i percorsi di file, gli errori di log e ottenere i servizi forniti da Visual Studio e da qualsiasi pacchetto caricato. Per altre informazioni, vedere [Accesso Visual Studio da un modello di testo](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ## <a name="write-methods"></a>Metodi di scrittura
 
-È possibile usare i metodi e per aggiungere testo all'interno di un blocco `Write()` `WriteLine()` di codice standard, anziché usare un blocco di codice di espressione. I due blocchi di codice seguenti sono funzionalmente equivalenti.
+È possibile usare i metodi e per aggiungere testo all'interno di un blocco `Write()` `WriteLine()` di codice standard, anziché un blocco di codice di espressione. I due blocchi di codice seguenti sono funzionalmente equivalenti.
 
 ### <a name="code-block-with-an-expression-block"></a>Blocco di codice con un blocco di espressioni
 
@@ -99,7 +100,7 @@ Hello
 
 ## <a name="error-and-warning-methods"></a>Metodi di errore e avviso
 
-È possibile usare i metodi di utilità di errore e avviso per aggiungere messaggi all'Visual Studio degli errori. Ad esempio, il codice seguente aggiungerà un messaggio di errore all'Elenco errori.
+È possibile usare i metodi di utilità di errore e avviso per aggiungere messaggi all'elenco Visual Studio errori. Ad esempio, il codice seguente aggiungerà un messaggio di errore all'Elenco errori.
 
 ```
 <#
@@ -121,7 +122,7 @@ La proprietà `this.Host` può fornire l'accesso alle proprietà esposte dall'ho
 
 `<#@template ... hostspecific="true" #>`
 
-Il tipo di `this.Host` dipende dal tipo di host in cui è in esecuzione il modello. In un modello in esecuzione in Visual Studio, è possibile eseguire il cast a per ottenere l'accesso `this.Host` `IServiceProvider` a servizi come l'IDE. Ad esempio:
+Il tipo di `this.Host` dipende dal tipo di host in cui è in esecuzione il modello. In un modello in esecuzione in Visual Studio, è possibile eseguire il cast a per ottenere l'accesso `this.Host` `IServiceProvider` a servizi come l'IDE. Esempio:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

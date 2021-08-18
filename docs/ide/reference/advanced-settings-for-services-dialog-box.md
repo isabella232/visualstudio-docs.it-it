@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Impostazioni avanzate per i servizi
-description: Informazioni su come usare le funzionalità avanzate Impostazioni per servizi per configurare le impostazioni avanzate per i servizi delle applicazioni client.
+description: Informazioni su come usare le funzionalità advanced Impostazioni for Services per configurare le impostazioni avanzate per i servizi delle applicazioni client.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a752855e639d6c7bce13ba1caa588ae0928828706ff7e4c56cc488437c8b0b68
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e8d2ad0bb710efcc6038e1ae23856aaaef54ffc5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121232718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101687"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Finestra di dialogo Impostazioni avanzate per i servizi
 I servizi delle applicazioni client offrono accesso semplificato a servizi di accesso, ruolo e profilo di [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] da applicazioni Windows Forms e Windows Presentation Foundation (WPF). Per configurare i servizi delle applicazioni client, è possibile usare la pagina **Servizi** in **Creazione progetti**. Per altre informazioni sulla pagina **Servizi**, vedere [Services Page, Project Designer](../../ide/reference/services-page-project-designer.md) (Pagina Servizi, Creazione progetti).

@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 020f7fee2fca88fe8139fb9ef727f0ab9ad5b17d8e80e58e5d6c100003bf626c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8a31872097d34a6ad7c8ce052c635c9b48770b5c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121354555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141597"
 ---
 # <a name="perftips"></a>PerfTips
 
@@ -31,11 +31,11 @@ Quando il debugger interrompe l'esecuzione in un punto di interruzione o un'oper
 
 ## <a name="diagnostics-tools-window"></a>Finestra Strumenti di diagnostica
 
-I punti di interruzione e i dati di intervallo associati vengono registrati nella **Strumenti di diagnostica** finestra.
+I punti di interruzione e i dati di intervallo associati vengono registrati nella **finestra** Strumenti di diagnostica dati.
 
-Nella figura seguente viene illustrata **la Strumenti di diagnostica** seguente.
+La figura seguente mostra la **Strumenti di diagnostica** finestra.
 
-![Screenshot della finestra Strumenti di diagnostica nel debugger di Visual Studio, che mostra la sequenza temporale degli eventi e i grafici per l'utilizzo della memoria e della CPU.](../profiling/media/diagnostictools-update1.png)
+![Screenshot della finestra Strumenti di diagnostica nel debugger Visual Studio, che mostra la sequenza temporale eventi e i grafici per l'utilizzo della memoria e della CPU.](../profiling/media/diagnostictools-update1.png)
 
 - La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
 

@@ -1,5 +1,5 @@
 ---
-title: Gestione della distribuzione specializzata | Microsoft Docs
+title: Gestione delle distribuzioni specializzate | Microsoft Docs
 description: Informazioni su come gestire la distribuzione specializzata di un progetto di applicazione in Visual Studio. Ad esempio, una distribuzione in un server Web o in un dispositivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6de38ecefce3fe8b953523a61317af6fc808d92361ad0c89348269e4cacf679
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 88cb63133cbe3dbe8c41c64cdae1f0bdc64ff5f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359523"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069913"
 ---
 # <a name="handle-specialized-deployment"></a>Gestire la distribuzione specializzata
-Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, ad esempio, supporta una distribuzione per consentire a un progetto di aggiornare un server Web. Analogamente, un **progetto Smart Device** supporta una distribuzione per copiare un'applicazione compilata nel dispositivo di destinazione. Project sottotipi possono fornire un comportamento di distribuzione specializzato implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> l'interfaccia . Questa interfaccia definisce un set completo di operazioni di distribuzione:
+Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, ad esempio, supporta una distribuzione per consentire a un progetto di aggiornare un server Web. Analogamente, un progetto **smart device** supporta una distribuzione per copiare un'applicazione compilata nel dispositivo di destinazione. Project sottotipi possono fornire un comportamento di distribuzione specializzato implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> l'interfaccia . Questa interfaccia definisce un set completo di operazioni di distribuzione:
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>
 
@@ -95,7 +95,7 @@ Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, 
 
     ```
 
-- Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> il metodo per eseguire l'operazione di commit specifica per l'applicazione.  Questo metodo viene usato principalmente per la distribuzione di database.
+- Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> il metodo per eseguire l'operazione di commit specifica dell'applicazione.  Questo metodo viene usato principalmente per la distribuzione del database.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -113,7 +113,7 @@ Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, 
 
     ```
 
-- Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> metodo per eseguire un'operazione di rollback. Quando viene chiamato questo metodo, il progetto di distribuzione deve eseguire le operazioni appropriate per eseguire il rollback delle modifiche e ripristinare lo stato del progetto. Questo metodo viene usato principalmente per la distribuzione di database.
+- Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> metodo per eseguire un'operazione di rollback. Quando viene chiamato questo metodo, il progetto di distribuzione deve eseguire le operazioni appropriate per eseguire il rollback delle modifiche e ripristinare lo stato del progetto. Questo metodo viene usato principalmente per la distribuzione del database.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -131,7 +131,7 @@ Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, 
 
     ```
 
-- Implementare il metodo per determinare se un progetto è in grado di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> avviare un'operazione di distribuzione.
+- Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> il metodo per determinare se un progetto è in grado di avviare o meno un'operazione di distribuzione.
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -290,7 +290,7 @@ Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, 
     ```
 
 > [!NOTE]
-> Tutti gli esempi di codice forniti in questo argomento sono parti di un esempio più ampio negli [esempi di VSSDK.](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
+> Tutti gli esempi di codice forniti in questo argomento sono parti di un esempio più ampio negli [esempi di VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 ## <a name="see-also"></a>Vedi anche
 - [Project sottotipi](../../extensibility/internals/project-subtypes.md)

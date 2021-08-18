@@ -1,6 +1,6 @@
 ---
 title: Visualizzazioni di Spy++ | Microsoft Docs
-description: Informazioni sulle visualizzazioni nello strumento di debug Spy++. Spy ++ visualizza le visualizzazioni albero delle finestre, dei messaggi, dei processi e dei thread disponibili nel computer.
+description: Informazioni sulle visualizzazioni nello strumento di debug di Spy++. Spy ++ visualizza le visualizzazioni albero delle finestre, dei messaggi, dei processi e dei thread disponibili nel computer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,22 +14,22 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d3fea25adc17013510130ccacf565c39546ec264641c5966cc137938dd63871
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c670cbb34da33d4745a4480cce28934ceebd6e79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121324509"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112321"
 ---
 # <a name="spy-views"></a>Visualizzazioni di Spy++
 Spy ++ visualizza le visualizzazioni albero delle finestre, dei messaggi, dei processi e dei thread disponibili nel computer.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Windows visualizzazione](../debugger/windows-view.md) Visualizza una visualizzazione albero delle finestre e dei controlli disponibili.
+ [Windows dati](../debugger/windows-view.md) Visualizza una visualizzazione albero delle finestre e dei controlli disponibili.
 
  [Visualizzazione Messaggi](../debugger/messages-view.md) Visualizza il flusso di messaggi associato a una finestra, un processo o un thread.
 
- [Visualizzazione processi](../debugger/processes-view.md) Visualizza una visualizzazione albero dei processi attivi.
+ [Visualizzazione Processi](../debugger/processes-view.md) Visualizza una visualizzazione albero dei processi attivi.
 
  [Visualizzazione Thread](../debugger/threads-view.md) Visualizza una visualizzazione albero dei thread attivi.
 

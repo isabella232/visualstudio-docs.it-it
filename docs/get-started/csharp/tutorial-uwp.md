@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f70508f1272fb8fc6f7a33de7830925c038dae747f79b18ad93cb10009ce8d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aa0dda71a18b20f5b503aeb4c09c083a76bd664d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121374345"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157826"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: Creare la prima applicazione universal Windows Platform in Visual Studio con XAML e C&#35;
 

@@ -1,5 +1,5 @@
 ---
-description: Ottiene un'interfaccia specificata tra i limiti del processo.
+description: Ottiene un'interfaccia specificata attraverso i limiti del processo.
 title: Interfaccia IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 585f05969f0bf987abd6db67fae826ba00e916a6eb279989042087a499b757b5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a17ef182c3b480ce2fa2809c2258a7509d30b14b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402376"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071058"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Ottiene un'interfaccia specificata tra i limiti del processo.
+Ottiene un'interfaccia specificata attraverso i limiti del processo.
 
 ## <a name="syntax"></a>Sintassi
 

@@ -14,14 +14,14 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3397532d1d27ed6f4bf51b844d9ac048ce4ef2490d4efc1bfe294eced8b5f14c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 57865bd4a762b497eed53450ca5fc6ed8a8f771a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387558"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144028"
 ---
-# <a name="options-dialog-box-environment--preview-features"></a>Finestra di dialogo Opzioni: Funzionalità di \> anteprima dell'ambiente
+# <a name="options-dialog-box-environment--preview-features"></a>Finestra di dialogo Opzioni: Funzionalità \> di anteprima dell'ambiente
 
 Usare questa pagina della finestra di dialogo **Opzioni** per abilitare o disabilitare le funzionalità di anteprima in Visual Studio. La pagina delle opzioni **Funzionalità di anteprima** cambia spesso, man mano che diverse funzionalità di anteprima vengono rese disponibili in Visual Studio.
 

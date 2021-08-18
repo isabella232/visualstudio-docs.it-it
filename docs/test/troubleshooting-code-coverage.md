@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi di code coverage
-description: Informazioni su come risolvere i messaggi di risultati vuoti non corretti quando si prevede Visual Studio raccogliere dati per assembly nativi e gestiti.
+description: Informazioni su come risolvere messaggi di risultati vuoti non corretti quando si prevede Visual Studio raccogliere dati per assembly nativi e gestiti.
 ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
@@ -10,16 +10,16 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6c961772204909cdf23dab0fa0dde32fe409274699644d9b17ad86ff5cced309
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ea2976e01f8f02b0d6ea858afceb43ecad7ef1c7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395045"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054119"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
-Lo code coverage di analisi delle Visual Studio raccoglie i dati per gli assembly nativi e gestiti *(.dll* o *.exe* file). In alcuni casi, tuttavia, nella finestra **Risultati code coverage** viene visualizzato un errore simile a "Risultati vuoti generati: ...." Esistono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
+Lo code coverage di analisi dei Visual Studio raccoglie i dati per gli assembly nativi e gestiti *(.dll* o *.exe* file). In alcuni casi, tuttavia, nella finestra **Risultati code coverage** viene visualizzato un errore simile a "Risultati vuoti generati: ...." Esistono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
 
 ## <a name="what-you-should-see"></a>Elementi che dovrebbero essere visualizzati
 
@@ -60,7 +60,7 @@ Quando si modificano e si rieseguono i test, i risultati di un code coverage pre
 
 Analisi Aprire la cartella di destinazione di compilazione (in genere &mdash; *bin\debug)* e verificare che per ogni assembly sia presente un file con estensione *pdb* nella stessa directory del file *.dll* *o.exe.*
 
-Spiegazione Il motore code coverage richiede che ogni assembly abbia il file con estensione &mdash; *pdb* associato accessibile durante l'esecuzione dei test. Se non è presente alcun file *con estensione pdb* per un determinato assembly, l'assembly non viene analizzato.
+Spiegazione Il motore code coverage richiede che a ogni assembly sia associato un file con estensione &mdash; *pdb* accessibile durante l'esecuzione dei test. Se non è presente alcun file *con estensione pdb* per un determinato assembly, l'assembly non viene analizzato.
 
 Il file *con estensione pdb* deve essere generato dalla stessa compilazione dei file *.dll* o *.exe* file.
 
@@ -68,7 +68,7 @@ Soluzione &mdash; Assicurarsi che le impostazioni di compilazione generino il fi
 
 Per i progetti C++, assicurarsi che i file con estensione pdb generati abbiano informazioni di debug complete. Aprire le proprietà del progetto e verificare che l'opzione Genera informazioni di debug del debug del **linker** sia impostata su Genera informazioni di debug ottimizzata per la condivisione e la pubblicazione  >    >   **(/DEBUG:FULL).**
 
-Se i file con estensione *pdb* *e.dll* o *.exe* sono in posizioni diverse, copiare il file con estensione *pdb* nella stessa directory. È anche possibile configurare un motore code coverage per cercare i file con estensione *pdb* in un'altra posizione. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
+Se i file con estensione *pdb* *.dll* *o.exe* sono in posizioni diverse, copiare il file con estensione *pdb* nella stessa directory. È anche possibile configurare un motore code coverage per la ricerca di file con estensione *pdb* in un'altra posizione. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="use-an-instrumented-or-optimized-binary"></a>Usare un binario instrumentato o ottimizzato
 

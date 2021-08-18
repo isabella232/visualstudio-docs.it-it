@@ -1,6 +1,6 @@
 ---
 title: Comando Elenca origine
-description: Informazioni sul comando List Source e su come visualizza le righe di codice sorgente specificate.
+description: Informazioni sul comando Elenca origine e su come visualizza le righe di codice sorgente specificate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 467abd21c80036b1b16edbb1b64ee818ca726e5e3218eb77d002408c49843e1c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 03f62140322bca8efb3a3f8ba006293ab52ce665
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387421"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143755"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
 Visualizza le righe del codice sorgente specificate.

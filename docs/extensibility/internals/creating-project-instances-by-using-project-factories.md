@@ -1,5 +1,5 @@
 ---
-title: Creazione Project istanze usando Project factory | Microsoft Docs
+title: Creazione Project istanze di usando Project factory | Microsoft Docs
 description: Informazioni su come creare istanze della classe di progetto usando le factory di progetto nell Visual Studio ide (Integrated Development Environment).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fc9fa9d4f10c59d4e17f2314cdbed80da26c3b5e24b115fb755c1fce9645b24
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9c733308203cae49a79f722db4b6b1eec37f6a7e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086677"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creare istanze del progetto usando le factory di progetto
 Project tipi in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usano una *factory di progetto per* creare istanze di oggetti di progetto. Una factory di progetto è simile a una factory standard class factory per gli oggetti COM cocreabili. Tuttavia, gli oggetti di progetto non sono cocreabili. Possono essere creati solo usando una factory del progetto.
@@ -37,11 +37,11 @@ Project tipi in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa
 
 2. Chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> metodo . Il progetto di proprietà esegue tutte le relative istanze quando viene chiamato questo metodo anziché chiamare come nel caso di progetti che `IVsProjectFactory::CreateProject` non sono di proprietà. L'enumerazione di input `VSOWNEDPROJECTOBJECT` è in genere il progetto di proprietà aggregato. Il progetto di proprietà può usare questa variabile per determinare se il relativo oggetto di progetto è già stato creato (cookie diverso da NULL) o deve essere creato (cookie uguale a NULL).
 
-   Project tipi sono identificati da un GUID di progetto univoco, simile al CLSID di un oggetto COM cocreabile. In genere, una factory del progetto gestisce la creazione di istanze di un singolo tipo di progetto, anche se è possibile che una factory del progetto gestisca più GUID di tipo di progetto.
+   Project tipi di progetto sono identificati da un GUID di progetto univoco, simile al CLSID di un oggetto COM cocreabile. In genere, una factory del progetto gestisce la creazione di istanze di un singolo tipo di progetto, anche se è possibile che una factory del progetto gestisca più GUID di tipo di progetto.
 
    Project tipi di file sono associati a una determinata estensione di file. Quando un utente tenta di aprire un file di progetto esistente o tenta di creare un nuovo progetto clonando un modello, l'IDE usa l'estensione nel file per determinare il GUID del progetto corrispondente.
 
-   Non appena l'IDE determina se deve creare un nuovo progetto o aprire un progetto esistente di un determinato tipo, l'IDE usa le informazioni nel Registro di sistema in **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** per trovare il pacchetto VSPackage che implementa la factory del progetto richiesta. L'IDE carica questo VSPackage. Nel metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> il vspackage deve registrare la factory del progetto con l'IDE chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metodo .
+   Non appena l'IDE determina se deve creare un nuovo progetto o aprire un progetto esistente di un determinato tipo, l'IDE usa le informazioni nel Registro di sistema in **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** per trovare il vspackage che implementa la factory del progetto richiesta. L'IDE carica questo VSPackage. Nel metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> il vspackage deve registrare la factory del progetto con l'IDE chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metodo .
 
    Il metodo principale dell'interfaccia è , che deve gestire due scenari: l'apertura `IVsProjectFactory` di un progetto esistente e la creazione di un nuovo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> progetto. La maggior parte dei progetti archivia lo stato del progetto in un file di progetto. In genere, i nuovi progetti vengono creati effettuando una copia del file modello passato al `CreateProject` metodo e quindi aprendo la copia. Viene creata un'istanza dei progetti esistenti aprendo direttamente il file di progetto passato al `CreateProject` metodo . Il `CreateProject` metodo può visualizzare funzionalità aggiuntive dell'interfaccia utente all'utente in base alle esigenze.
 

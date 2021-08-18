@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 09cde94f6a38eba9264d42e588cc334536f5757f294bbfb369253e976435bfb5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f4a06eed799b06a3d2809b4e10dc09090a92f9c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379633"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113123"
 ---
 # <a name="thunk"></a>Thunk
 Ognuna `thunk` è identificata da un `SymTagThunk` tag .

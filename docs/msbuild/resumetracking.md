@@ -1,6 +1,6 @@
 ---
 title: ResumeTracking | Microsoft Docs
-description: Informazioni su sintassi, requisiti e valore restituito MSBuild ResumeTracking, che riprende il rilevamento nel contesto corrente.
+description: Informazioni su sintassi, requisiti e valore restituito per MSBuild ResumeTracking, che riprende il rilevamento nel contesto corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f8a6d78f90cfbc640fb491adc192b03f149f119d7e52079129549d40d18168
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6b2d7b4bd0bdbdf60864344edb552c884482a93e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121302721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143053"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 

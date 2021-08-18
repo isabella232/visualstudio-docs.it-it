@@ -11,14 +11,15 @@ ms.assetid: 99daa97b-5c05-455d-bd1e-800762ccf7c9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b05b9a651072854b3e7db91a8f27d94781f323
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b40e449f784a065d20126916694da01c238680f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147429"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066164"
 ---
 # <a name="idiastackframeget_type"></a>IDiaStackFrame::get_type
 Recupera il tipo di frame.
@@ -34,7 +35,7 @@ HRESULT get_type (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un valore dall'enumerazione [StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) .
+[out] Restituisce un valore [dall'enumerazione StackFrameTypeEnum.](../../debugger/debug-interface-access/stackframetypeenum.md)
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

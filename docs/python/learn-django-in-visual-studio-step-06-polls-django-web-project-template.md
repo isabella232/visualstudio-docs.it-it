@@ -7,17 +7,18 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b52cc9615eb4829aede06ae65c152e47b3ff3844
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 69b675f19060cf57d8c9dca03414709de5545199
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054483"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Passaggio 6: Usare il modello Progetto Web Django di sondaggi
 
@@ -34,21 +35,21 @@ In questo passaggio viene descritto come:
 > - Comprendere le visualizzazioni e i modelli di pagina creati dal modello di progetto (passaggio 6-4)
 > - Creare un'interfaccia di amministrazione personalizzata (passaggio 6-5)
 
-Un progetto creato con questo modello è simile a quello ottenuto seguendo l'esercitazione [scrivere la prima app Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) nella documentazione di Django. L'app Web è costituita da un sito pubblico che consente agli utenti di visualizzare i sondaggi e di votarli, insieme a un'interfaccia amministrativa personalizzata tramite la quale è possibile gestire i polling. Viene usato lo stesso sistema di autenticazione usato per il modello "Progetto Web Django" e viene usato in modo più estensivo il database mediante l'implementazione di modelli Django come illustrato nelle sezioni seguenti.
+Un progetto creato usando questo modello è simile a quello che si ottiene seguendo l'esercitazione Scrittura della prima [app Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) nella documentazione di Django. L'app Web è costituita da un sito pubblico che consente agli utenti di visualizzare i sondaggi e votarli, insieme a un'interfaccia amministrativa personalizzata tramite la quale è possibile gestire i sondaggi. Viene usato lo stesso sistema di autenticazione usato per il modello "Progetto Web Django" e viene usato in modo più estensivo il database mediante l'implementazione di modelli Django come illustrato nelle sezioni seguenti.
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Passaggio 6-1: Creare il progetto e inizializzare il database
 
-1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningDjango** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **file**  >  **Nuovo**  >  In alternativa, **progetto** ).
+1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningDjango** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File**  >  **Nuovo**  >  **Project** invece.
 
 1. Nella finestra di dialogo Nuovo progetto cercare e selezionare il modello **Progetto Web Django di sondaggi**, assegnare al progetto il nome "DjangoPolls" e selezionare **OK**.
 
 1. Come gli altri modelli di progetto in Visual Studio, il modello "Progetto Web Django di sondaggi" include un file *requirements.txt* e Visual Studio chiede dove installare le dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite.
 
-1. Al termine della configurazione dell'ambiente virtuale in Python, seguire le istruzioni nel file *readme.html* visualizzato per inizializzare il database e creare un utente Django con privilegi avanzati, ovvero un amministratore. Per prima cosa, fare clic con il pulsante destro del mouse sul progetto **DjangoPolls** in **Esplora soluzioni**, selezionare il comando **Python**  >  **Django migrate** , quindi fare di nuovo clic con il pulsante destro del mouse sul progetto, selezionare il comando **Python**  >  **Django create superuser** e seguire le istruzioni. Se si prova a creare prima di tutto un utente con privilegi avanzati, viene generato un errore perché il database non è stato inizializzato.
+1. Al termine della configurazione dell'ambiente virtuale in Python, seguire le istruzioni nel file *readme.html* visualizzato per inizializzare il database e creare un utente Django con privilegi avanzati, ovvero un amministratore. La procedura è innanzitutto fare clic con il pulsante destro del mouse sul progetto **DjangoPolls** **in Esplora soluzioni,** selezionare il comando **Python**  >  **Django Migrate,** quindi fare di nuovo clic con il pulsante destro del mouse sul progetto, selezionare il comando **Python**  >  **Django Create Superuser** e seguire le istruzioni. Se si prova a creare prima di tutto un utente con privilegi avanzati, viene generato un errore perché il database non è stato inizializzato.
 
 1. Impostare il progetto **DjangoPolls** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse su tale progetto in **Esplora soluzioni** e selezionando **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
-1. Selezionare **debug**  >  **Avvia debug** (**F5**) o usare il pulsante **server Web** sulla barra degli strumenti per eseguire il server:
+1. Selezionare **Debug**  >  **Avvia debug** (**F5**) o usare il pulsante **Server Web** sulla barra degli strumenti per eseguire il server:
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -113,7 +114,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Come si può notare, un modello Poll include una descrizione nel campo `text` e una data di pubblicazione in `pub_date`. Questi campi sono gli unici esistenti per il polling nel database. il `total_votes` campo viene calcolato in fase di esecuzione.
+Come si può notare, un modello Poll include una descrizione nel campo `text` e una data di pubblicazione in `pub_date`. Questi campi sono gli unici disponibili per il polling nel database. Il `total_votes` campo viene calcolato in fase di esecuzione.
 
 Un modello Choice è correlato a un modello Poll tramite il campo `poll`, contiene una descrizione in `text` e conserva un conteggio per l'opzione specifica in `votes`. Il `votes_percentage` campo viene calcolato in fase di esecuzione e non viene trovato nel database.
 
@@ -171,7 +172,7 @@ Poiché inevitabilmente si apporteranno modifiche ai modelli nel tempo, Django c
 
 1. Apportare modifiche ai modelli nel file *models.py*.
 1. In Visual Studio fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e quindi scegliere **Python** > **Creazione migrazioni Django**. Come descritto in precedenza, questo comando genera script in *app/migrations* per eseguire la migrazione del database dallo stato corrente al nuovo stato.
-1. Per applicare gli script al database effettivo, fare di nuovo clic con il pulsante destro del mouse sul progetto e selezionare **Python**  >  **Django migrate**.
+1. Per applicare gli script al database effettivo, fare di nuovo clic con il pulsante destro del mouse sul progetto e scegliere **Python**  >  **Django Migrate**.
 
 Django tiene traccia delle migrazioni applicate a uno specifico database, in modo che quando si esegue il comando di migrazione, Django applica le migrazioni necessarie. Se si crea un nuovo database vuoto, ad esempio, eseguendo il comando di migrazione il database viene aggiornato con i modelli correnti applicando ogni script di migrazione. Analogamente, se si apportano più modifiche ai modelli e si generano le migrazioni in un computer di sviluppo, è quindi possibile applicare le migrazioni cumulative al database di produzione eseguendo il comando di migrazione nel server di produzione. Anche in questo caso, Django applica solo gli script di migrazione che sono stati generati dall'ultima migrazione del database di produzione.
 
@@ -184,22 +185,22 @@ Per vedere l'effetto della modifica di un modello, seguire questa procedura:
     ```
 
 1. Salvare il file, fare clic con il pulsante destro del mouse sul progetto **DjangoPolls** in **Esplora soluzioni** e quindi selezionare **Python** > **Creazione migrazioni Django**.
-1. Selezionare il comando **progetto**  >  **Mostra tutti i file** per visualizzare lo script appena generato nella cartella **migrazioni** , il cui nome inizia con **002_auto_**. Fare clic con il pulsante destro del mouse sul file e scegliere **Includi nel progetto**. È quindi possibile selezionare il **progetto**  >  **Mostra tutti i file** per ripristinare la visualizzazione originale. Per informazioni dettagliate su questo passaggio, vedere la seconda domanda di seguito.
+1. Selezionare il **Project** comando Mostra tutti i file per visualizzare lo script appena generato nella cartella  >   **migrations** il cui nome inizia **con 002_auto_**. Fare clic con il pulsante destro del mouse sul file e scegliere **Includi nel progetto**. È quindi possibile **selezionare** Project mostra tutti i  >  **file** per ripristinare la visualizzazione originale. Per informazioni dettagliate su questo passaggio, vedere la seconda domanda di seguito.
 1. Se lo si desidera, aprire il file per esaminare come sono cambiati gli script Django dallo stato del modello precedente al nuovo stato.
-1. Fare di nuovo clic con il pulsante destro del mouse sul progetto di Visual Studio e selezionare **Python**  >  **Django migrate** per applicare le modifiche al database.
+1. Fare di nuovo clic con il Visual Studio progetto e selezionare **Python**  >  **Django Migrate** per applicare le modifiche al database.
 1. Se si desidera, aprire il database in un visualizzatore appropriato per verificare la modifica.
 
 In generale, grazie alla funzionalità di migrazione di Django non è mai necessario gestire manualmente lo schema del database. È sufficiente apportare le modifiche ai modelli, generare gli script di migrazione e applicarli con il comando di migrazione.
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Domanda: Cosa accade se si dimentica di eseguire il comando di migrazione dopo aver apportato modifiche ai modelli?
 
-Risposta: se i modelli non corrispondono a quelli presenti nel database, Django non riesce in fase di esecuzione con le eccezioni appropriate. Se, ad esempio, si dimentica di eseguire la migrazione della modifica del modello mostrata nella sezione precedente, viene visualizzato un errore in **tale colonna: app_poll. Author**:
+Risposta: Se i modelli non corrispondono a quanto contenuto nel database, Django ha esito negativo in fase di esecuzione con le eccezioni appropriate. Ad esempio, se si dimentica di eseguire la migrazione della modifica del modello illustrata nella sezione precedente, viene visualizzato un errore che non contiene tale **colonna: app_poll.author**:
 
 ![Errore visualizzato quando non è stata eseguita la migrazione di una modifica del modello](media/django/step06-exception-when-forgetting-to-migrate.png).
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Domanda: Perché Esplora soluzioni non mostra gli script appena generati dopo l'esecuzione del comando Creazione migrazioni Django?
 
-Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Migrazione Django**, non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderle visibili, selezionare prima di tutto il comando di menu **progetto**  >  **Mostra tutti i file** o il pulsante della barra degli strumenti illustrato nell'immagine seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
+Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Migrazione Django**, non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderli visibili, selezionare prima il Project di menu Mostra tutti i file o il pulsante della barra degli strumenti illustrato  >   nell'immagine seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
 
 ![Comando Includi nel progetto in Esplora soluzioni](media/django/step06-include-migrations-script-in-project.png)
 

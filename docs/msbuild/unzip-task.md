@@ -25,12 +25,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0fe999e6a86f405208c0da3b0b9008a3214db2afb70e5307375d998e7f6b3e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 30120b45a26fe46e80f6dca1eb6f68e1f4ce7e93
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369553"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142741"
 ---
 # <a name="unzip-task"></a>Attività Unzip
 

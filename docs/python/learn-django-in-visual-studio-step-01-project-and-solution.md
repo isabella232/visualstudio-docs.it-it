@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0279d2c628570c67514e7405b3df63507ae20c33b3a03cfd2db7f5be19d49276
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bd3bb5bd5b9ac4864c9eb38f290d34d7cdd7fc1f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396255"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156617"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Django in Visual Studio
 
@@ -64,20 +64,20 @@ Durante questa esercitazione si creerà un'unica soluzione di Visual Studio cont
 
 Quando si usa Django dalla riga di comando, generalmente si avvia un progetto eseguendo il comando `django-admin startproject <project_name>`. In Visual Studio l'uso del modello Progetto Web Django vuoto fornisce la stessa struttura che in un progetto e una soluzione di Visual Studio.
 
-1. Nella Visual Studio file nuovo Project, cercare "Django" e selezionare il modello Blank  >    >   **Django Web Project** (Web Django vuoto). Il modello è disponibile anche in **Python**  >  **Web** nell'elenco a sinistra.
+1. In Visual Studio selezionare **File** nuovo  >    >  **Project,** cercare "Django" e selezionare il modello di Project **Web Django** vuoto. Il modello si trova anche in **Python**  >  **Web** nell'elenco a sinistra.
 
     ![Finestra di dialogo Nuovo progetto in Visual Studio per il modello Progetto Web Django vuoto](media/django/step01-new-blank-project.png)
 
 1. Nei campi nella parte inferiore della finestra di dialogo immettere le informazioni seguenti, come mostrato nella figura precedente, e quindi selezionare **OK**:
 
-    - **Nome:** impostare il nome del progetto Visual Studio su **BasicProject.** Questo nome verrà usato anche per il progetto Django.
+    - **Nome**: impostare il nome del progetto Visual Studio su **BasicProject.** Questo nome verrà usato anche per il progetto Django.
     - **Percorso**: specificare un percorso in cui creare la soluzione e il progetto di Visual Studio.
-    - **Soluzione:** lasciare questo controllo impostato sul valore predefinito **Crea nuova** soluzione.
+    - **Soluzione:** lasciare questo controllo impostato su Crea **nuova soluzione** predefinito.
     - **Nome soluzione:** impostare su **LearningDjango,** appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
     - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
     - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
-1. Dopo qualche istante, Visual Studio verrà visualizzata una finestra di dialogo con il messaggio **This project requires external packages** (Questo progetto richiede pacchetti esterni), come illustrato di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
+1. Dopo un po', Visual Studio viene visualizzata una finestra di dialogo che indica che questo **progetto richiede pacchetti esterni** (illustrato di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
     ![Messaggio che indica che il progetto richiede pacchetti esterni](media/django/step01-requirements-prompt-install-myself.png)
 
@@ -100,7 +100,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer, pagina Modifiche](media/django/step01-team-explorer-changes.png)
 
-1. Sulla barra Visual Studio di stato selezionare il pulsante commit di cui non è stato eseguito  il commit di cui è stato eseguito il commit (la freccia in su con **2**) per aprire la pagina Sincronizzazione **in Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
+1. Nella barra Visual Studio stato selezionare il pulsante commit non associati (freccia su **con 2)** per aprire la pagina Sincronizzazione in  **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
 
     ![Finestra di Team Explorer che mostra le opzioni relative ai repository Git per il controllo del codice sorgente](media/django/step01-team-explorer.png)
 
@@ -135,7 +135,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Comando Aggiungi ambiente virtuale in Esplora soluzioni](media/django/step01-add-virtual-environment-command.png)
 
-1. Viene **visualizzata la finestra di dialogo** Aggiungi ambiente virtuale con un messaggio che indica Che è stato trovato un file requirements.txt **virtuale.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
+1. Viene **visualizzata una finestra di dialogo** Aggiungi ambiente virtuale con un messaggio che indica che è stato trovato un file requirements.txt **virtuale.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
 
     ![Finestra di dialogo Aggiungi ambiente virtuale con il messaggio sul file requirements.txt](media/django/step01-add-virtual-environment-found-requirements.png)
 
@@ -190,7 +190,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>Passaggio 1-5: Eseguire il progetto Django vuoto
 
-1. In Visual Studio debug selezionare **Debug** Avvia debug  >   (**F5**) o usare il pulsante **Server Web** sulla barra degli strumenti (il browser visualizzato può variare):
+1. In Visual Studio Debug Avvia debug (  >   **F5**) o usare il pulsante Server **Web** sulla barra degli strumenti (il browser visualizzato può variare):
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -208,7 +208,7 @@ Risposta: Sì e no. Django ha un server Web integrato, usato per scopi di svilup
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Domanda: Qual è la differenza tra l'uso dei comandi del menu Debug e dei comandi del server nel sottomenu Python del progetto?
 
-Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile collegare un debugger al processo in esecuzione in un secondo momento, se necessario, usando il **comando Esegui** debug  >  **connessione a** processo.
+Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile collegare un debugger al processo in esecuzione in un secondo momento, se necessario, usando il **comando Esegui debug** connessione  >  **a** processo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

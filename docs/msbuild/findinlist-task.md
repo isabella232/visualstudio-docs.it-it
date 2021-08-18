@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f7682929efd7be1d3ee99e71fa0ace598aa8ee00d7007a391bdf0cb541f3465f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f50c3a96b3d2b7ff4d18e28b74ace5f9cd31f522
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428042"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069317"
 ---
 # <a name="findinlist-task"></a>FindInList (attività)
 

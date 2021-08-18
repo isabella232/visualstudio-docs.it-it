@@ -1,6 +1,6 @@
 ---
 description: Questo messaggio indica la quantità massima di memoria virtuale che il processo ha attualmente allocato in byte (byte privati).
-title: DA0506 - Byte privati massimi allocati per il processo profilato | Microsoft Docs
+title: 'DA0506: numero massimo di byte privati allocati per il processo profilato | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cb34ae103713df9867a633cdb2ac7e7c2985ef1c26e4c56057fdf673d13daade
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5daf5ad6b727014d63e77da848a94d31b36c3c4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142091"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Byte privati massimi allocati per il processo sottoposto a profilatura
 

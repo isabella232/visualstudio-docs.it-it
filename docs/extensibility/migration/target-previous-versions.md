@@ -11,18 +11,18 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 0abd690d5c9d1af9e58bfa856d8880f01e34e8f0c4758188c6f2dd7f15303564
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b7509e53108d9b33570c92f6d6bedb8f200a1fe6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400894"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086404"
 ---
 # <a name="target-a-previous-version-when-creating-an-extension-in-visual-studio-2022-preview"></a>Destinazione di una versione precedente durante la creazione di un'estensione in Visual Studio 2022 Preview
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-Quando si crea un nuovo progetto VSIX usando Visual Studio 2022 Preview, il progetto viene creato da un modello destinato a Visual Studio 2022. Se si vuole usare come destinazione Visual Studio 2019 o una versione precedente, è necessario modificare il progetto creato.
+Quando si crea un nuovo progetto VSIX usando Visual Studio 2022 Preview, il progetto viene creato da un modello destinato a Visual Studio 2022. Se si vuole impostare come destinazione Visual Studio 2019 o una versione precedente, è necessario modificare il progetto creato.
 
 È [consigliabile usare](update-visual-studio-extension.md#use-shared-projects-for-multi-targeting) progetti condivisi per Visual Studio 2019 e Visual Studio 2022 condividendo al tempo stesso la maggior parte o tutto il codice nell'estensione.
 

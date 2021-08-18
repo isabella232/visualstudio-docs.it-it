@@ -1,6 +1,6 @@
 ---
 description: Recupera un elenco di programmi in esecuzione da un processo specificato.
-title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
+title: Interfaccia IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 85abab5d1e1955d645d73a1d753fec6c4f9a507f6653f0f727a9f39cfb17d7b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 258a8c3309e695258c1599101e2b8fdc44e4f735
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126375"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera un elenco di programmi in esecuzione da un processo specificato.
@@ -51,12 +51,12 @@ int GetProviderProcessData(
 
 ## <a name="parameters"></a>Parametri
 `Flags`\
-[in] Combinazione di flag [dell'enumerazione PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) I flag seguenti sono tipici per questa chiamata:
+[in] Combinazione di flag [dell'enumerazione PROVIDER_FLAGS.](../../../extensibility/debugger/reference/provider-flags.md) I flag seguenti sono tipici di questa chiamata:
 
 |Flag|Descrizione|
 |----------|-----------------|
 |`PFLAG_REMOTE_PORT`|Il chiamante è in esecuzione nel computer remoto.|
-|`PFLAG_DEBUGGEE`|Il chiamante è attualmente in fase di debug (verranno restituite informazioni aggiuntive sul marshalling per ogni nodo).|
+|`PFLAG_DEBUGGEE`|È in corso il debug del chiamante. Verranno restituite informazioni aggiuntive sul marshalling per ogni nodo.|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Il chiamante è stato collegato a ma non avviato dal debugger.|
 |`PFLAG_GET_PROGRAM_NODES`|Il chiamante richiede la visualizzazione di un elenco di nodi di programma da restituire.|
 
@@ -67,7 +67,7 @@ int GetProviderProcessData(
 [in] Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) contenente l'ID del processo che contiene il programma in questione.
 
 `EngineFilter`\
-[in] Matrice di GUID per i motori di debug assegnati per eseguire il debug di questo processo. Verranno usati per filtrare i programmi effettivamente restituiti in base al supporto dei motori forniti. Se non viene specificato alcun motore, verranno restituiti tutti i programmi.
+[in] Matrice di GUID per i motori di debug assegnati per eseguire il debug di questo processo( che verranno usati per filtrare i programmi effettivamente restituiti in base al supporto dei motori forniti; se non viene specificato alcun motore, verranno restituiti tutti i programmi).
 
 `pProcess`\
 [out] Struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) che viene compilata con le informazioni richieste.

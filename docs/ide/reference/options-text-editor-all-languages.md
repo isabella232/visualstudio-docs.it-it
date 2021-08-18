@@ -45,12 +45,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7caa9f6c547c8e06fbb76d4b3d2372b9662c5330aa08e96e9ce7eb24c7d2d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f581f48efb9fbba97aa65b9826f7114f7377e951
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400212"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100998"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Finestra di dialogo Opzioni: Editor di testo \> Tutti i linguaggi
 

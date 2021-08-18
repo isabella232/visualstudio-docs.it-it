@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f269eff3dc742fe2f397f637f1fb84104cb15a20a8412b27563bffb2fce15b77
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b57b4d22d94aebec58303b124cd549690aa64de2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398060"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116539"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 Gli autori di un linguaggio specifico di dominio possono definire vincoli di convalida per verificare che il modello creato dall'utente sia significativo. Ad esempio, se il linguaggio specifico di dominio consente agli utenti di disegnare l'albero genealogico di determinate persone e dei relativi antenati, è possibile scrivere un vincolo per garantire che le date di nascita dei figli siano successive a quelle dei genitori.
@@ -236,7 +236,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Esecuzione della convalida in caso di modifica
  Se si vuole che l'utente venga avvertito immediatamente nel caso in cui il modello non è più valido, è possibile definire un evento dell'archivio che esegue la convalida. Per altre informazioni sugli eventi di archiviazione, vedere Propagazione delle modifiche all'esterno del modello da parte dei [gestori eventi.](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
- Oltre al codice di convalida, aggiungere un file di codice personalizzato al progetto **DslPackage,** con contenuto simile all'esempio seguente. Questo codice usa il controller `ValidationController` allegato al documento. Questo controller visualizza gli errori di convalida nell'Visual Studio degli errori.
+ Oltre al codice di convalida, aggiungere un file di codice personalizzato al progetto **DslPackage,** con contenuto simile all'esempio seguente. Questo codice usa il controller `ValidationController` allegato al documento. Questo controller visualizza gli errori di convalida nell'elenco Visual Studio errori.
 
 ```csharp
 using System;
@@ -332,7 +332,7 @@ validationController.ValidateCustom
 
  **Adattare la modifica per ottenere nuovamente un modello valido.**  Se ad esempio un utente imposta una proprietà su un valore superiore a quello massimo consentito, è possibile ripristinare la proprietà sul valore massimo, definendo a tale scopo una regola. Per altre informazioni, vedere [Regole di propagazione delle modifiche all'interno del modello.](../modeling/rules-propagate-changes-within-the-model.md)
 
- **Eseguire il rollback della transazione se si prova a effettuare una modifica non valida.** È anche possibile definire una regola a questo scopo, ma in alcuni casi è possibile eseguire l'override di un gestore di proprietà **OnValueChanging()** o eseguire l'override di un metodo come Per eseguire il rollback di una transazione, usare Per altre informazioni, vedere Gestori di modifica del valore della proprietà di `OnDeleted().` `this.Store.TransactionManager.CurrentTransaction.Rollback().` dominio. [](../modeling/domain-property-value-change-handlers.md)
+ **Eseguire il rollback della transazione se si prova a effettuare una modifica non valida.** È anche possibile definire una regola a questo scopo, ma in alcuni casi è possibile eseguire l'override di un gestore di proprietà **OnValueChanging()** o di eseguire l'override di un metodo come Per eseguire il rollback di una transazione, usare Per altre informazioni, vedere Domain `OnDeleted().` Property Value Change `this.Store.TransactionManager.CurrentTransaction.Rollback().` [Handlers](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Assicurarsi di informare l'utente dell'adattamento della modifica o del rollback. Ad esempio, usare `System.Windows.Forms.MessageBox.Show("message").`

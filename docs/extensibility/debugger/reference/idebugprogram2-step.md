@@ -1,6 +1,6 @@
 ---
 description: Esegue un passaggio.
-title: 'IDebugProgram2:: Step | Microsoft Docs'
+title: IDebugProgram2::Step | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,23 +11,24 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2470c62215c8c708056f7c123adc5eac3a5e389d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 038c490fb9e889199193463f098e44386556b3fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084493"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071644"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Esegue un passaggio.
 
 > [!NOTE]
-> Questo metodo è deprecato. Usare invece il metodo [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
+> Questo metodo è deprecato. Usare invece [il metodo](../../../extensibility/debugger/reference/idebugprocess3-step.md) Step.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,22 +50,22 @@ int Step(
 
 ## <a name="parameters"></a>Parametri
 `pThread`\
-in Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread di cui viene eseguito il ripasso.
+[in] Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread in fase di esecuzione.
 
 `sk`\
-in Valore dell'enumerazione [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) che specifica il tipo di passaggio.
+[in] Valore [dell'enumerazione STEPKIND](../../../extensibility/debugger/reference/stepkind.md) che specifica il tipo di passaggio.
 
 `step`\
-in Valore dell'enumerazione [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) che specifica l'unità di misura (ad esempio, per istruzione o istruzione).
+[in] Valore [dell'enumerazione STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) che specifica l'unità di passaggio, ad esempio per istruzione o istruzione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Se è presente una sincronizzazione dei thread o una comunicazione tra thread, gli altri thread nel programma devono essere eseguiti quando viene eseguito un determinato thread.
+ Nel caso in cui sia presente una sincronizzazione dei thread o una comunicazione tra thread, gli altri thread nel programma devono essere eseguiti quando un thread specifico esegue istruzioni.
 
 > [!WARNING]
-> Non inviare un evento di arresto o un evento immediato (sincrono) a [un evento durante](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) la gestione della chiamata; in caso contrario, il debugger potrebbe smettere di rispondere.
+> Non inviare un evento di arresto o un evento immediato (sincrono) a [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata. in caso contrario, il debugger potrebbe bloccarsi.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

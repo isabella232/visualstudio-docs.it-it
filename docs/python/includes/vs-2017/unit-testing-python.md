@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 612d4bd7d66add8c3fe7c45e8f03ca3531b0b4c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 307a82b346f1fead5c78091544d0ccdfe8509e6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920685"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156408"
 ---
 ## <a name="discover-and-view-tests"></a>Individuare e visualizzare i test
 
@@ -39,27 +40,27 @@ Per convenzione, Visual Studio identifica i test come metodi il cui nome inizia 
 
 1. Se necessario, salvare il file e aprire **Esplora test** con il comando di menu **Test** > **Windows** > **Esplora test**.
 
-1. **Esplora test** Cerca i test nel progetto e li Visualizza come illustrato di seguito. Fare doppio clic su un test per aprirne il file di origine.
+1. **Esplora test** cerca i test nel progetto e li visualizza come illustrato di seguito. Fare doppio clic su un test per aprirne il file di origine.
 
     ![Esplora test con test_A predefinito](../../media/unit-test-A.png)
 
-1. Quando si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in **Esplora test** usando il menu **Raggruppa per** sulla barra degli strumenti:
+1. Quando si aggiungono altri test al progetto, è possibile organizzare la visualizzazione in **Esplora test** usando il **menu** Raggruppa per sulla barra degli strumenti:
 
     ![Menu Raggruppa per della barra degli strumenti in Esplora test](../../media/unit-test-group-menu.png)
 
 1. È anche possibile immettere testo nel campo di **Cerca** per filtrare i test in base al nome.
 
-Per ulteriori informazioni sul `unittest` modulo e sulla scrittura di test, vedere la [documentazione di Python 2,7](https://docs.python.org/2/library/unittest.html) o la [documentazione di Python 3,7](https://docs.python.org/3/library/unittest.html) (Python.org).
+Per altre informazioni sul modulo e sulla scrittura di test, vedere la documentazione di `unittest` [Python 2.7](https://docs.python.org/2/library/unittest.html) o la documentazione di [Python 3.7](https://docs.python.org/3/library/unittest.html) (python.org).
 
 ## <a name="run-tests"></a>Esecuzione dei test
 
-In **Esplora test** è possibile eseguire test in diversi modi:
+In **Esplora test** è possibile eseguire i test in diversi modi:
 
 - L'opzione **Esegui tutto** esegue chiaramente tutti i test visualizzati, tenendo conto degli eventuali filtri applicati.
-- Il menu **Run (Esegui** ) fornisce i comandi per eseguire i test non riusciti, superati o non eseguiti come gruppo.
+- Il menu **Esegui** visualizza i comandi per eseguire test non riusciti, superati o non eseguiti come gruppo.
 - È possibile selezionare uno o più test, fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.
 
-I test vengono eseguiti in background e **Esplora test** aggiorna lo stato di ogni test dopo il completamento:
+I test vengono eseguiti in background **e Esplora test** aggiorna lo stato di ogni test al completamento:
 
 - I test superati sono contraddistinti da un segno di spunta verde, nonché dall'indicazione del tempo necessario per eseguirli:
 
@@ -79,7 +80,7 @@ Per avviare il debug, impostare un punto di interruzione iniziale nel codice, fa
 
 ![Debug di un test](../../media/unit-test-debugging.png)
 
-È anche possibile usare il **code coverage analizza per i test selezionati**. Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+È anche possibile usare **l'opzione Analizza code coverage per test selezionati**. Per altre informazioni, vedere [Usare la funzionalità code coverage per determinare la quantità di codice testato](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ### <a name="known-issues"></a>Problemi noti
 

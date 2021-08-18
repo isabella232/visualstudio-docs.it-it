@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d3b9ae0fe4379f0573a6ef7e7a31b3fabed4f07b8dd569c3a6d196223ac1e93f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a622fa1d85ed916a393d7ea4cac56a335d550f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385211"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115590"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procedura: Creare un controllo utente per una pagina SharePoint o una web part dell'applicazione
   È possibile creare controlli utente personalizzati che forniscono funzionalità personalizzate per la soluzione SharePoint in uso, nonché riutilizzare le funzionalità in questione all'interno del progetto. È possibile includere i controlli utente in una web part o in una pagina applicazione, aggiungere altri controlli ASP.NET e di SharePoint e definire proprietà e metodi per il controllo. Per altre informazioni sui controlli utente, vedere [Creare controlli](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) riutilizzabili per web part o pagine dell'applicazione e Controlli utente e controlli server [in SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).

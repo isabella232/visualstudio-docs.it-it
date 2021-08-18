@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8d82e1bab12c3393f6b5781c86219422727c0a2d163ab6aecdfdf86c6763599
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: abf1098b3c117cdc549eb530e2b9eac682ff55bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121233524"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101882"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funzionalità di generazione del codice in Visual Studio
 

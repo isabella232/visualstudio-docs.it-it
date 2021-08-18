@@ -1,6 +1,6 @@
 ---
 title: Finestra di controllo immediato
-description: Informazioni su come utilizzare la finestra controllo immediato per eseguire il debug e la valutazione di espressioni, istruzioni EXECUTE e valori di variabili di stampa.
+description: Informazioni su come usare la finestra Controllo immediato per eseguire il debug e la valutazione di espressioni, eseguire istruzioni e stampare valori di variabili.
 ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d3d2cc42e958c59ef058a1f69921145ea18475
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dcc91c8f7b9fa5cc33d9368d377c2a002b55107
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157787"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 
@@ -35,7 +36,7 @@ La finestra **Controllo immediato** supporta IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Visualizzare i valori delle variabili
 
-La finestra **Controllo immediato** è particolarmente utile durante il debug di un'app. Per verificare, ad esempio, il valore di una variabile `varA` , è possibile usare il [comando stampa](../../ide/reference/print-command.md):
+La finestra **Controllo immediato** è particolarmente utile durante il debug di un'app. Ad esempio, per controllare il valore di una variabile `varA` , è possibile usare il comando [Stampa](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
@@ -50,7 +51,7 @@ Il punto interrogativo (?) è un alias di `Debug.Print`. Questo comando può qui
 Entrambe le versioni di questo comando restituiscono il valore della variabile `varA`.
 
 > [!TIP]
-> Per immettere un comando di Visual Studio nella finestra **Controllo immediato**, far precedere al comando un segno di maggiore di (>). Per immettere più comandi, passare al [finestra di comando](command-window.md).
+> Per immettere un comando di Visual Studio nella finestra **Controllo immediato**, far precedere al comando un segno di maggiore di (>). Per immettere più comandi, passare alla [finestra di comando](command-window.md).
 
 ## <a name="design-time-expression-evaluation"></a>Valutazione delle espressioni in fase di progettazione
 
@@ -80,7 +81,7 @@ Entrambe le versioni di questo comando restituiscono il valore della variabile `
 
     La finestra **Controllo immediato** esegue `MyFunction` e visualizza `4`.
 
-Se la funzione o la subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per ulteriori informazioni, vedere [procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).
+Se la funzione o la subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per altre informazioni, vedere [Procedura dettagliata: debug in fase di progettazione.](../../debugger/walkthrough-debugging-at-design-time.md)
 
 Non è possibile usare la valutazione delle espressioni in fase di progettazione nei tipi di progetto che richiedono l'avvio di un ambiente di esecuzione, tra cui progetti Visual Studio Tools per Office, progetti Web, progetti Smart Device e progetti SQL.
 
@@ -137,5 +138,5 @@ In alcune configurazioni, le notifiche di eccezioni first-chance vengono visuali
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
 - [Procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)
 - [Uso delle espressioni regolari in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
-description: Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore dei dati del frame corrente.
-title: 'IDiaEnumFrameData:: Clone | Microsoft Docs'
+description: Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore di dati del frame corrente.
+title: IDiaEnumFrameData::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,14 +11,15 @@ ms.assetid: 28a17300-1626-422f-a17a-3a4d3872c37c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5df5295143e9a6fb815ddc78d103b910ccfda7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1f22ad93668c617f687824c8825955fc63f537d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158085"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113744"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -34,7 +35,7 @@ HRESULT Clone(
 #### <a name="parameters"></a>Parametri
  ppenum
 
-out Restituisce un oggetto [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) che contiene un duplicato dell'enumeratore. I dati del frame non sono duplicati, ma solo l'enumeratore.
+[out] Restituisce un [oggetto IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) che contiene un duplicato dell'enumeratore. I dati del frame non vengono duplicati, ma solo l'enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

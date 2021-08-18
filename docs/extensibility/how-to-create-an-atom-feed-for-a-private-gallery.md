@@ -14,28 +14,28 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: eff01da3538e1a2d36b18031e7871c64461ed83f0340b0e0a177f7b080f505b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ff57a36930ebf1ad248480cd7ea15a50440529b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376469"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086950"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: Creare un feed Atom per una raccolta privata
-È possibile creare un feed Atom (RSS) in un percorso Intranet che contiene estensioni e aggiungere il feed a Estensioni e **aggiornamenti** come raccolta privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).
+È possibile creare un feed Atom (RSS) in un percorso Intranet che contiene estensioni e aggiungere il feed a **Estensioni** e aggiornamenti come raccolta privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).
 
 ## <a name="create-an-atom-feed"></a>Creare un feed Atom
- Per creare un feed Atom come raccolta privata, è prima di tutto necessario raccogliere le estensioni (file con estensione *vsix)* in una cartella. Se necessario, è possibile organizzarli in sottocartelle. Sono necessarie anche le risorse seguenti:
+ Per creare un feed Atom come raccolta privata, è necessario innanzitutto raccogliere le estensioni (file con estensione *vsix)* in una cartella. Se si vuole, è possibile organizzarli in sottocartelle. Sono necessarie anche le risorse seguenti:
 
-- Un *atom.xml* file che rende disponibili le estensioni come raccolta privata. Per informazioni su come connettere il file *atom.xml* ad **Estensioni e aggiornamenti,** vedere [Raccolte private](../extensibility/private-galleries.md).
+- Un *atom.xml* che rende disponibili le estensioni come raccolta privata. Per informazioni su come connettere il file *atom.xml* **a Estensioni e aggiornamenti,** vedere [Raccolte private.](../extensibility/private-galleries.md)
 
-- Cartella che contiene tutti i file di immagine estratti dalle estensioni, ad esempio schermate. Il *atom.xml* file contiene collegamenti relativi a queste immagini in modo che siano disponibili in **Estensioni e aggiornamenti**.
+- Cartella che contiene tutti i file di immagine estratti dalle estensioni, ad esempio screenshot. Il *fileatom.xml* contiene collegamenti relativi a queste immagini in modo che siano disponibili in Estensioni e **aggiornamenti.**
 
   Si supponga, ad esempio, di aver raccolto le due estensioni seguenti in una cartella:
 
 - *Template_Wizard_239.vsix*, che è un modello di progetto VSIX vuoto.
 
-- *SelectionHighlight.vsix,* che è uno strumento per evidenziare tutte le istanze di una parola selezionata.
+- *SelectionHighlight.vsix,* uno strumento che consente di evidenziare tutte le istanze di una parola selezionata.
 
   Il contenuto del file *atom.xml* sarà simile all'esempio seguente:
 
@@ -73,7 +73,7 @@ ms.locfileid: "121376469"
 </feed>
 ```
 
- Si noti che i due tag di collegamento fanno riferimento alle schermate nella cartella generata delle immagini.
+ Si noti che i due tag di collegamento fanno riferimento alle schermate nella cartella di immagini generata.
 
 ## <a name="see-also"></a>Vedi anche
 - [Raccolte private](../extensibility/private-galleries.md)

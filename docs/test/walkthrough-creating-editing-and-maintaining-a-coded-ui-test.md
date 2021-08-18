@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 70324bc1f96ca0396b3cca1b5c713a448105554001c9ec71957180dcc5afe991
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b11c5643b6f36335b843469ff099b07804d727ac
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384658"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053989"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
@@ -114,7 +114,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 2. Cercare e selezionare il modello di progetto **Progetto di test codificato dell'interfaccia utente** e procedere con i passaggi necessari per creare il nuovo progetto.
 
    > [!NOTE]
-   > Se il modello test  codificato dell'interfaccia utente non Project, è necessario installare il componente di test codificato dell'interfaccia [utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se il modello **coded ui test Project** non è visualizzato, è necessario installare il componente di test codificato [dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
      Il nuovo progetto di test codificato dell'interfaccia utente denominato **CodedUITestProject1** viene aggiunto alla soluzione e viene visualizzata la finestra di dialogo **Genera codice per test codificato dell'interfaccia utente**.
 
@@ -169,7 +169,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Modificare ed eseguire di nuovo il test codificato dell'interfaccia utente
 
-1. Nella finestra **Esplora test** selezionare il test non superato e nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest()**.
+1. Nella finestra **Esplora test** selezionare il test non superato e nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest().**
 
 2. Il file *UIMap.Designer.cs* viene aperto con il punto di errore evidenziato nel codice:
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 63edc199e5c6386adc9c11dc3e893c4b093f994033b2f2b4c06043b92f38c011
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 67a84c3cb119c571f24a3f8a5a60dbafa89a8a4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121272421"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101765"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedura: Modificare tipi di carattere, colori e temi in Visual Studio
 
@@ -33,12 +33,12 @@ Ecco come modificare il tema colori della cornice dell'IDE e delle finestre degl
 
 1. Nell'elenco di opzioni scegliere **Ambiente**  >  **Generale.**
 
-1. Nell'elenco **Tema** colori scegliere il tema  blu predefinito,  il tema Chiaro, il tema Scuro o il tema Blu **(contrasto** aggiuntivo). 
+1. Nell'elenco **Tema** colori scegliere il tema  blu predefinito,  il tema Chiaro, il tema Scuro o il tema Blu  **(contrasto aggiuntivo).**
 
    ![Screenshot della finestra di dialogo Opzioni per modificare il tema colori](media/fonts-colors-theme.png "Screenshot della finestra di dialogo Opzioni che è possibile usare per modificare il tema colori")
 
     > [!NOTE]
-    > Quando si modifica un tema colori, il testo nell'IDE ripristina i tipi di carattere e le dimensioni predefiniti o personalizzati in precedenza per tale tema.
+    > Quando si modifica un tema colori, il testo nell'IDE ripristina i tipi di carattere e le dimensioni predefiniti o precedentemente personalizzati per tale tema.
 
     :::moniker range="vs-2017"
 
@@ -50,7 +50,7 @@ Ecco come modificare il tema colori della cornice dell'IDE e delle finestre degl
     :::moniker range="vs-2019"
 
     > [!TIP]
-    > È possibile creare e modificare temi di Visual Studio personalizzati installando la finestra Visual Studio [Color Theme Designer](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
+    > È possibile creare e modificare temi personalizzati Visual Studio installando la finestra Visual Studio [Color Theme Designer](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
 
     :::moniker-end
 
@@ -93,11 +93,11 @@ Per altre informazioni, vedere la pagina [Modificare i tipi di carattere e i col
 
 ## <a name="accessibility-options"></a>Opzioni di accessibilità
 
-Se si ha problemi di vista, sono disponibili opzioni per il tema colori. È possibile usare un'opzione a contrasto elevato per *tutte* le app e l'interfaccia utente in un computer o un'opzione di contrasto aggiuntivo solo per Visual Studio app.
+Se si ha problemi di vista, sono disponibili opzioni per il tema colori. È possibile usare un'opzione  a contrasto elevato per tutte le app e l'interfaccia utente in un computer o un'opzione di contrasto aggiuntivo solo per Visual Studio.
 
 ### <a name="use-windows-high-contrast"></a>Usare Windows contrasto elevato
 
-Utilizzare una delle procedure seguenti per attivare o disattivare l Windows a contrasto elevato:
+Usare una delle procedure seguenti per attivare o disattivare l Windows a contrasto elevato:
 
 - In Windows o in qualsiasi applicazione Microsoft, premere ALT di sinistra MAIUSC di sinistra +  + **PrtScn.**
 
@@ -117,7 +117,7 @@ Usare le procedure seguenti per attivare o disattivare l Visual Studio di contra
 Per altre informazioni su altre opzioni Visual Studio accessibilità disponibili, vedere la pagina Funzionalità [di accessibilità Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) accessibilità.
 
 > [!TIP]
-> Se è disponibile un'opzione di accessibilità per i colori o i tipi di carattere che si  pensa potrebbero essere utili, ma che non sono attualmente disponibili in Visual Studio, è possibile contattarci selezionando Suggerisci una funzionalità in Visual Studio [Developer Community](https://aka.ms/feedback/suggest?space=8). Per altre informazioni su questo forum e sul suo funzionamento, vedere la pagina [Suggerisci una](../ide/suggest-a-feature.md) funzionalità.
+> Se è disponibile un'opzione di accessibilità per i colori o i tipi di carattere che si  pensa possa essere utile ma non è attualmente disponibile in Visual Studio, determinare selezionando Suggerisci una funzionalità in Visual Studio [Developer Community](https://aka.ms/feedback/suggest?space=8). Per altre informazioni su questo forum e sul suo funzionamento, vedere la pagina [Suggerisci una](../ide/suggest-a-feature.md) funzionalità.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

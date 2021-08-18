@@ -1,23 +1,24 @@
 ---
 title: Spostare la dichiarazione di variabile vicino al riferimento
-description: Informazioni su come usare il menu azioni rapide e refactoring per spostare dichiarazioni di variabili più vicine al loro utilizzo.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per avvicinare le dichiarazioni di variabili al relativo utilizzo.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce731da61c0c119869c1c1b85a87ebe44fabf273
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81d87f80a5cc9ab7d228c808045afd6d891b5d1f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101076"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Refactoring con spostamento della dichiarazione vicino al riferimento
 
@@ -40,7 +41,7 @@ Questo refactoring si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sposta la dichiarazione accanto al riferimento** dal popup della finestra di anteprima.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sposta la dichiarazione accanto al riferimento** dal popup della finestra di anteprima.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Sposta la dichiarazione accanto al riferimento** dal popup della finestra di anteprima.
 

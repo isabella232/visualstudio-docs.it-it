@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f326885e0a98c4dc5a71f3024530d176951883101f126b0b2d9fe9755e843478
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c20f0b6eb2a496455469f3bc7404839954add74d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121399496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116799"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 

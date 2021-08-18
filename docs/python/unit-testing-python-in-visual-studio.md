@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c638a099f51a3ee7ca80d1d52d2b0a8e16c77a10889a2f118f5a5930602c9e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c35563a44bdcba5de9df820cb363def7818cb5ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121245057"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156410"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configurare gli unit test per il codice Python
 

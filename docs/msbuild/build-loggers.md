@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac40c5ab5f836fee3b0f98a0339138fbf02eb0fe0ce6e64f552f9c8e5c86a18
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a2ae63b8d658eff88a8da22123ca6aba40cf676a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428640"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085221"
 ---
 # <a name="build-loggers"></a>Logger di compilazione
 
@@ -47,7 +47,7 @@ Il logger è stato registrato per eventi specifici e dovrà gestire questi event
 
 ## <a name="respond-to-logger-verbosity-values"></a>Rispondere ai valori di dettaglio del logger
 
-In alcuni casi, può essere necessario registrare le informazioni di un evento solo se l'opzione **-verbosity** di MSBuild.exe contiene un determinato valore. In questo esempio, il gestore eventi registra un messaggio solo se la proprietà , impostata dall'opzione <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> **-verbosity,** è uguale a <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .
+In alcuni casi, può essere necessario registrare le informazioni di un evento solo se l'opzione **-verbosity** di MSBuild.exe contiene un determinato valore. In questo esempio il gestore eventi registra un messaggio solo se la proprietà , impostata dall'opzione <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> **-verbosity,** è uguale a <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .
 
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet4":::
 
@@ -55,7 +55,7 @@ In alcuni casi, può essere necessario registrare le informazioni di un evento s
 
 Dopo aver compilato il logger in un assembly, è necessario indicare MSBuild usare tale logger durante le compilazioni. Questa operazione viene eseguita usando **l'opzione -logger** *conMSBuild.exe*. Per altre informazioni sulle opzioni disponibili per *MSBuild.exe*, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
 
-La riga di comando seguente compila il progetto *MyProject.csproj* e usa la classe logger implementata in *SimpleLogger.dll*. **L'opzione -nologo** nasconde il banner e il messaggio di copyright e l'opzione **-noconsolelogger** disabilita il logger di console MSBuild predefinito.
+La riga di comando seguente compila il progetto *MyProject.csproj* e usa la classe logger implementata in *SimpleLogger.dll*. **L'opzione -nologo** nasconde il banner e il messaggio sul copyright e l'opzione **-noconsolelogger** disabilita il logger MSBuild console predefinito.
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll

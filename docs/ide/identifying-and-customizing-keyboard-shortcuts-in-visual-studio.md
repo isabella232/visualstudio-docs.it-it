@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9b38b27df28d551fc33e9a23bdad8276a422a4
-ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
+ms.openlocfilehash: e69c2f43d4fdd306c556632aad2c271072987a9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "113725547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101726"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificare e personalizzare i tasti di scelta rapida in Visual Studio
 
@@ -44,7 +45,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identificare un tasto di scelta rapida
 
-1. Sulla barra dei menu scegliere **Strumenti**  >  **Opzioni**.
+1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**.
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
@@ -64,7 +65,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizzare un tasto di scelta rapida
 
-1. Sulla barra dei menu scegliere **Strumenti**  >  **Opzioni**.
+1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**.
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
@@ -89,9 +90,9 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto *Globale*
 6. Nella casella **Premi tasti di scelta rapida** immettere il tasto di scelta rapida che si vuole usare.
 
     > [!NOTE]
-    > È possibile creare un tasto di scelta rapida che combina una lettera con **il tasto ALT,** **il tasto CTRL** o entrambi. È anche possibile creare un tasto di scelta rapida che combina il tasto **MAIUSC** e una lettera con il **tasto ALT,** **il tasto CTRL** o entrambi.
+    > È possibile creare un collegamento che combina una lettera con **ALT,** **CTRL** o entrambi. È anche possibile creare un collegamento che combina il **tasto** MAIUSC e una lettera con **alt,** **CTRL** o entrambi.
 
-     Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, scegliere **backspace** per eliminare il collegamento prima di provarne uno diverso.
+     Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, scegliere **il tasto Backspace** per eliminare il collegamento prima di provarne uno diverso.
 
     ![Specificare un collegamento diverso per un comando](../ide/media/reassignshortcut.png)
 

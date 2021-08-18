@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73817c23ae8c5dc36c5d0e818bcf0af310a63e3ba9b0435ad1e253954ccd70fe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 943d67c89d3ec8334dce585575db63fbb7291a42
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380507"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113720"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 Recupera un elemento dati del frame tramite un indice.

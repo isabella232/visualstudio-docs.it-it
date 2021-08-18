@@ -1,6 +1,6 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
-description: Informazioni sull'MSBuild Target, che contiene un set di attività che MSBuild eseguire in sequenza.
+description: Informazioni sull'MSBuild target, che contiene un set di attività che MSBuild eseguire in sequenza.
 ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f3a374f1d35b830b8066054ace6555ef32ff3f4e6ad3349551259b65f0affaf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 35b4153eab1bbe2d320019c46d4b8e854f2ca6a3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443139"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142858"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
@@ -127,4 +127,4 @@ Contiene un set di attività che MSBuild eseguire in sequenza.
 ## <a name="see-also"></a>Vedi anche
 
 - [Server di destinazione](../msbuild/msbuild-targets.md)
-- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project sullo schema del file](../msbuild/msbuild-project-file-schema-reference.md)

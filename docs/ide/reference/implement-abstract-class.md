@@ -1,20 +1,21 @@
 ---
 title: Implementare una classe astratta
-description: Informazioni su come usare il menu azioni rapide e refactoring per generare immediatamente il codice necessario per implementare una classe astratta.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per generare immediatamente il codice necessario per implementare una classe astratta.
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05527e8ab1414b3f372f6db22c258d51fcd119a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 201ebe54d84803ab0621afd5754ce507b1d32ac7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852505"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101310"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementare una classe astratta in Visual Studio
 
@@ -45,7 +46,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.

@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1917e9e3bf45f678ef898af6781c7eff019bea18986650045df86ce152815805
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d217f85d57e4e44e824f708343764a89f3ba2efe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358350"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101947"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoring di classi e tipi in Progettazione classi
 

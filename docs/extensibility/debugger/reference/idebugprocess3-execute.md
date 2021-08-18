@@ -1,5 +1,5 @@
 ---
-description: Continua l'esecuzione di questo processo da uno stato arrestato. Qualsiasi stato di esecuzione precedente, ad esempio un passaggio, viene cancellato e il processo inizia di nuovo a essere eseguito.
+description: Continua l'esecuzione di questo processo da uno stato arrestato. Qualsiasi stato di esecuzione precedente, ad esempio un passaggio, viene cancellato e l'esecuzione del processo viene avviata di nuovo.
 title: IDebugProcess3::Execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,18 +17,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf95f47dc1eb4d4e6d64333fa847222db0dc388b81c70afff667d346becaf367
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b32c80a904e9ec96fd5f49b3d54c75fce26327b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416222"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126674"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-Continua l'esecuzione di questo processo da uno stato arrestato. Qualsiasi stato di esecuzione precedente, ad esempio un passaggio, viene cancellato e il processo inizia di nuovo a essere eseguito.
+Continua l'esecuzione di questo processo da uno stato arrestato. Qualsiasi stato di esecuzione precedente, ad esempio un passaggio, viene cancellato e l'esecuzione del processo viene avviata di nuovo.
 
 > [!NOTE]
-> Questo metodo deve essere usato al posto di [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
+> Questo metodo deve essere usato al posto di [Execute.](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,10 +52,10 @@ int Execute(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Quando l'utente avvia l'esecuzione da uno stato arrestato nel thread di un altro processo, questo metodo viene chiamato su questo processo. Questo metodo viene chiamato anche quando l'utente seleziona il **comando Avvia** dal menu **Debug** nell'IDE. L'implementazione di questo metodo può essere semplice come chiamare il [metodo Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) sul thread corrente nel processo.
+ Quando l'utente avvia l'esecuzione da uno stato arrestato nel thread di un altro processo, questo metodo viene chiamato su questo processo. Questo metodo viene chiamato anche quando l'utente seleziona il **comando Avvia** dal menu **Debug** nell'IDE. L'implementazione di questo metodo può essere semplice quanto chiamare il metodo [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) sul thread corrente nel processo.
 
 > [!WARNING]
-> Non inviare un evento di arresto o un evento immediato (sincrono) a [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata. in caso contrario, il debugger potrebbe bloccarsi.
+> Non inviare un evento di arresto o un evento immediato (sincrono) [all'evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; In caso contrario, il debugger potrebbe smettere di rispondere.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

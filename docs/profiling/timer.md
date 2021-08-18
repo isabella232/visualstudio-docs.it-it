@@ -1,6 +1,6 @@
 ---
 title: Timer | Microsoft Docs
-description: Informazioni su come l'VSPerfCmd.exe Timer imposta l'evento di profilatura campionato sui cicli di clock del processore.
+description: Informazioni su come lVSPerfCmd.exe timer imposta l'evento di profilatura campionato sui cicli di clock del processore.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1244a3fc5ff93ea1e576bc61e592c716548c976a93cfcbb2900fad2e5c8a8b8c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ed930b323f4b0a3983b102483135b4dde3c5aa1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270198"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141077"
 ---
 # <a name="timer"></a>Timer
 *L'opzioneVSPerfCmd.exe* **Timer** imposta l'evento di profilatura campionato in cicli di clock del processore e facoltativamente modifica il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.000.000. In un processore da 1 GH (un gigahertz), un valore di 10.000.000 cicli di clock è pari a circa 100 campioni al secondo. Il numero minimo di cicli che è possibile specificare è 50.000.
@@ -39,7 +39,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **Timer** può essere specificata solo in una riga di comando che include una delle opzioni seguenti.
 
- **Avviare:** `AppName` Avvia il profiler e l'applicazione specificata da `AppName` .
+ **Avvia:** `AppName` Avvia il profiler e l'applicazione specificata da `AppName` .
 
  **Collega:** `PID` Collega il profiler al processo specificato dall'ID processo ( `PID` ).
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4728412127311475b7861a2640ef96ac55f94387e79357a6bbee0a5c3fa0f01
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4793bd69ffba676081139d61c0d81bcef4c336c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448162"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086664"
 ---
 # <a name="create-project-types"></a>Creare tipi di progetto
 È possibile estendere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] creando un nuovo tipo di progetto. Per creare un nuovo tipo di progetto, è necessario comprendere diversi concetti e completare una serie di passaggi. Negli argomenti seguenti viene fornita una panoramica di come creare tipi di progetto.
@@ -58,9 +58,9 @@ ms.locfileid: "121448162"
 
  Viene illustrato il significato dei progetti per determinare quale editor viene usato quando viene aperto un elemento di progetto e come è possibile modificare le risorse del progetto.
 
-- [Installare i pacchetti VSPackage con il Windows di installazione](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Installare i pacchetti VSPackage con il Windows installazione](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Illustra come assegnare al pacchetto VSPackage la propria identità univoca e come eseguire il wrapping delle DLL VSPackage e di altre informazioni in un pacchetto del programma di installazione di Windows (file *.MSI)* per la distribuzione ai clienti.
+ Illustra come assegnare al pacchetto VSPackage una propria identità univoca e come eseguire il wrapping delle DLL VSPackage e di altre informazioni in un pacchetto del programma di installazione di Windows (file *.MSI)* per la distribuzione ai clienti.
 
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
@@ -70,6 +70,6 @@ ms.locfileid: "121448162"
 
  Fornisce una panoramica di un PACCHETTO VSPackage, un oggetto COM installabile che estende l'ambiente e illustra come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implementare un pacchetto VSPackage personalizzato.
 
-- [Project tipi](../../extensibility/internals/project-types.md)
+- [Project seguenti](../../extensibility/internals/project-types.md)
 
  Viene illustrato come usare i progetti per modificare il codice, compilare e compilare codice, eseguire ed eseguire il codice e come eseguirne il debug e vengono forniti collegamenti ad argomenti dettagliati su come creare tipi di progetto.

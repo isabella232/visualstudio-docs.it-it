@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2958c9ef57405f0e1a3cf5312c51a31bc24e4641190cb905b5c3007499e86b4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1fcc979118c4bb82327fe6bfcab76d3ca0d11b48
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127506"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Imposta il numero di passaggi per il punto di interruzione associato.
@@ -47,12 +47,12 @@ int SetHitCount(
 [in] Numero di hit da impostare.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell BP_STATE enumerazione ). [](../../../extensibility/debugger/reference/bp-state.md)
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell BP_STATE enumere). [](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Commenti
  Il numero di passaggi è il numero di volte in cui questo punto di interruzione è stato attivato durante l'esecuzione corrente della sessione.
 
- Questo metodo viene in genere chiamato dal motore di debug per aggiornare il numero di passaggi corrente per questo punto di interruzione.
+ Questo metodo viene in genere chiamato dal motore di debug per aggiornare il numero di passaggi corrente in questo punto di interruzione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

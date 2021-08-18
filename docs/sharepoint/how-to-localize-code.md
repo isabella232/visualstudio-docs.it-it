@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: a3cb812003543571bcd6fc2fea9307cc725247c8347aa4f108cdb7b494adb995
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c65edab726fb0def889364f37f2eed41778bcfe6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367512"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084233"
 ---
 # <a name="how-to-localize-code"></a>Procedura: Localizzare il codice
   Il codice non localizzato usa valori stringa hard-coded. Per localizzare le stringhe di codice, sostituirle con chiamate a , ovvero <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> un metodo che fa riferimento alle risorse localizzate.
@@ -41,11 +41,11 @@ ms.locfileid: "121367512"
 
 3. Ripetere i passaggi 1 e 2 per aggiungere file di risorse separati all'elemento di progetto SharePoint, uno per ogni lingua localizzata.
 
-     Usare lo stesso nome di base per ogni file di risorse localizzato, ma aggiungere l'ID impostazioni cultura. Ad esempio, assegnare un nome a una risorsa localizzata *MyAppResources.de-DE.resx*.
+     Usare lo stesso nome di base per ogni file di risorse localizzato, ma aggiungere l'ID impostazioni cultura. Ad esempio, denomere una risorsa localizzata *MyAppResources.de-DE.resx*.
 
 4. Aprire ogni file di risorse e aggiungere stringhe localizzate. Utilizzare gli stessi ID di stringa in ogni file.
 
-5. Modificare il valore della proprietà **Tipo** di distribuzione di ogni file di risorse in **AppGlobalResource** per fare in modo che ogni file sia distribuito nella cartella App_GlobalResources del server.
+5. Modificare il valore della **proprietà Tipo** di distribuzione di ogni file di risorse in **AppGlobalResource** per fare in modo che ogni file sia distribuito nella cartella App_GlobalResources server.
 
 6. Lasciare il valore della **proprietà Azione di** compilazione di ogni file come Risorsa **incorporata**.
 
@@ -69,7 +69,7 @@ ms.locfileid: "121367512"
 
 13. In SharePoint modificare la lingua di visualizzazione rispetto all'impostazione predefinita.
 
-     Le stringhe localizzate vengono visualizzate nell'applicazione. Per visualizzare le risorse localizzate, SharePoint server deve essere installato un language pack corrispondente alle impostazioni cultura del file di risorse.
+     Le stringhe localizzate vengono visualizzate nell'applicazione. Per visualizzare le risorse localizzate, nel server SharePoint deve essere installato un language pack corrispondente alle impostazioni cultura del file di risorse.
 
 ## <a name="see-also"></a>Vedi anche
 - [Localizzare SharePoint soluzioni](../sharepoint/localizing-sharepoint-solutions.md)

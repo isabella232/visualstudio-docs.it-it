@@ -1,6 +1,6 @@
 ---
 title: File WPF con estensione targets | Microsoft Docs
-description: Informazioni su come Windows Presentation Foundation (WPF) estende MSBuild aggiungendo un set di attività specifiche di WPF in un file con estensione targets speciale, Microsoft.WinFX.targets.
+description: Informazioni su come Windows Presentation Foundation (WPF) estende MSBuild aggiungendo un set di attività specifiche di WPF in un file speciale con estensione targets, Microsoft.WinFX.targets.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,16 +20,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9da54bb700b6d0b8e593616bdc7d7cb15a814775abfba3cb200c95d2024a0ef3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1e7fde5440859f76cef6fe1ca0b41122f2e932b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355789"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142429"
 ---
 # <a name="wpf-targets-files"></a>File WPF con estensione targets
 
-Windows Presentation Foundation (WPF) estende il MSBuild aggiungendo un set di attività specifiche di WPF combinate in un file con estensione *targets* speciale, *Microsoft.WinFX.targets.* Questo file combina il set di MSBuild attività necessarie per compilare un MSBuild progetto in WPF.
+Windows Presentation Foundation (WPF) estende il MSBuild aggiungendo un set di attività specifiche di WPF combinate in un file speciale con estensione *targets,* *Microsoft.WinFX.targets.* Questo file combina il set di attività MSBuild necessarie per compilare un progetto MSBuild in WPF.
 
 ## <a name="see-also"></a>Vedi anche
 

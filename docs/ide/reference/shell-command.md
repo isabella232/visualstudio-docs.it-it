@@ -1,6 +1,6 @@
 ---
 title: Comando Shell
-description: Informazioni sul comando shell e sul modo in cui avvia i programmi eseguibili da Visual Studio.
+description: Informazioni sul comando Shell e su come avvia programmi eseguibili dall'interno Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b520d3bedf31bc09dc0cf48e86777872176e2e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 070d58d8fc4561c37dfce66fd89c2e6905184daa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117111"
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -88,8 +89,8 @@ Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartell
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Finestra di output](../../ide/reference/output-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

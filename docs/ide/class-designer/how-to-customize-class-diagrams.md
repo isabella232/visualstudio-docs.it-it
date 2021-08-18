@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: personalizzare i diagrammi classi (Progettazione classi)'
-description: Viene illustrato come modificare il modo in cui i diagrammi classi visualizzano le informazioni e come personalizzare l'intero diagramma o i singoli tipi nell'area di progettazione.
+description: Informazioni su come modificare il modo in cui i diagrammi classi visualizzano le informazioni e su come personalizzare l'intero diagramma o i singoli tipi nell'area di progettazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,14 +13,15 @@ ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 768c61ab525d03a7b9a1a80481b84b492d6bd0c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47879d6ee3b28087925fbbbb15869869d1d7ab32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919638"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041464"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Procedura: Personalizzare i diagrammi classi
 
@@ -130,5 +131,5 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 ## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Passare dalla notazione membro alla notazione associazione](how-to-change-between-member-notation-and-association-notation.md)
-- [Procedura: visualizzare i tipi esistenti](how-to-view-existing-types.md)
+- [Procedura: Visualizzare i tipi esistenti](how-to-view-existing-types.md)
 - [Visualizzazione di tipi e relazioni](designing-and-viewing-classes-and-types.md)
