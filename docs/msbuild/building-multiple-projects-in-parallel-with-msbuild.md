@@ -1,6 +1,6 @@
 ---
 title: Compilazione di più progetti in parallelo con MSBuild | Microsoft Docs
-description: Informazioni sulle impostazioni di MSBuild che è possibile usare per compilare più progetti più velocemente eseguendoli in parallelo.
+description: Informazioni sulle impostazioni MSBuild che è possibile usare per compilare più progetti più velocemente eseguendoli in parallelo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e90a649a11933e4281140299bf9ee1b564a212
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6bdbb3efdf836f29307bdf97b21c5a910ef908f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939630"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109006"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Compilare più progetti in parallelo con MSBuild
 
@@ -48,7 +49,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 
 ## <a name="buildinparallel-task-parameter"></a>Parametro dell'attività BuildInParallel
 
-`BuildInParallel` parametro booleano facoltativo in un'attività MSBuild. Quando `BuildInParallel` è impostato su `true` (il valore predefinito è `true`), vengono generati più processi di lavoro per compilare contemporaneamente il maggior numero possibile di progetti. Affinché questo approccio funzioni, è necessario che l'opzione `-maxcpucount` sia impostata su un valore maggiore di 1 e che il sistema sia almeno di tipo dual-core o che disponga di due o più processori.
+`BuildInParallel`è un parametro booleano facoltativo in un'MSBuild attività. Quando `BuildInParallel` è impostato su `true` (il valore predefinito è `true`), vengono generati più processi di lavoro per compilare contemporaneamente il maggior numero possibile di progetti. Affinché questo approccio funzioni, è necessario che l'opzione `-maxcpucount` sia impostata su un valore maggiore di 1 e che il sistema sia almeno di tipo dual-core o che disponga di due o più processori.
 
 Di seguito è riportato un esempio, tratto da *microsoft.common.targets*, che descrive come impostare il parametro `BuildInParallel`.
 

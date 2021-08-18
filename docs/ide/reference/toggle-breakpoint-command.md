@@ -1,6 +1,6 @@
 ---
 title: Comando Imposta/Rimuovi punto di interruzione
-description: Informazioni su come usare il comando attiva/disattiva punto di interruzione per attivare o disattivare il punto di interruzione, a seconda dello stato corrente, nella posizione corrente del file.
+description: Informazioni su come usare il comando Attiva/Disattiva punto di interruzione per attivare o disattivare il punto di interruzione, a seconda dello stato corrente, nella posizione corrente nel file.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a02cb0659df431b3e6eca7c9ad1f13f8c3676b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0404840f5aa1859c058391c7398f7c2d1fcd86fd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886483"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123801"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Imposta/Rimuovi punto di interruzione
 Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file.
@@ -46,7 +47,7 @@ Nell'esempio seguente il punto di interruzione corrente viene impostato/rimosso.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

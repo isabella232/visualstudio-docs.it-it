@@ -1,6 +1,6 @@
 ---
-description: Restituisce un oggetto contesto del codice corrispondente a un identificatore del percorso del codice specificato.
-title: 'IDebugDisassemblyStream2:: GetCodeContext | Microsoft Docs'
+description: Restituisce un oggetto contesto del codice corrispondente a un identificatore di posizione del codice specificato.
+title: IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c532c68435d1eaabdb03f8acae571ac4b71a5a7b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9ebecbc3ef26ae1f297d773bccafbe5f740d62a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067075"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079298"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
-Restituisce un oggetto contesto del codice corrispondente a un identificatore del percorso del codice specificato.
+Restituisce un oggetto contesto del codice corrispondente a un identificatore di posizione del codice specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,18 +45,18 @@ int GetCodeContext(
 
 ## <a name="parameters"></a>Parametri
 `uCodeLocationId`\
-in Specifica l'identificatore della posizione del codice. Per una descrizione dell'identificatore di una posizione del codice, vedere la sezione Osservazioni per il metodo [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) .
+[in] Specifica l'identificatore del percorso del codice. Per una descrizione di un identificatore della posizione del codice, vedere la sezione Osservazioni relativa al metodo [GetCodeLocationId.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
 
 `ppCodeContext`\
-out Restituisce un oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il contesto del codice associato.
+[out] Restituisce un [oggetto IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il contesto del codice associato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- L'identificatore del percorso del codice può essere restituito da una chiamata al metodo [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) e può essere visualizzato nella struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
+ L'identificatore della posizione del codice può essere restituito da una chiamata al [metodo GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) e può essere visualizzato nella [struttura DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
- Per convertire un contesto di codice in un identificatore di posizione del codice, chiamare il metodo [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) .
+ Per convertire un contesto del codice in un identificatore di posizione del codice, chiamare il [metodo GetCodeLocationId.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a56c8028e4d2bf801836239674716d5c9d86bea8bd40a3d3aa8708b3d202fab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f9cd2387623ec4b97a96201ae74af8beebb6d053
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420412"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031098"
 ---
 # <a name="idiasymbolget_virtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 Recupera l'identificatore del simbolo della forma della tabella virtuale del simbolo.
@@ -35,13 +35,13 @@ HRESULT get_virtualTableShapeId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'ID del simbolo della forma della tabella virtuale del simbolo.
+[out] Restituisce l'ID del simbolo di forma della tabella virtuale del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.

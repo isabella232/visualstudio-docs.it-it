@@ -12,18 +12,19 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: fc46d7ed1e369d31a9d0675f0595073f51f28d17
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 76c6994546e380b9a599c9cdcbbc8a9392333007
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679793"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060700"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opzioni di R Tools per Visual Studio
 
-Impostazioni'accesso tramite il menu R Tools Options (Opzioni strumenti **R)** o Tools Options (Opzioni strumenti) e  >     >   scorrendo fino a **R Tools**:
+Impostazioni è possibile accedere tramite il menu R Tools Options (Opzioni strumenti **R)** o Tools Options (Opzioni strumenti) e  >     >   scorrendo fino a **R Tools**:
 
   ![Finestra di dialogo Opzioni per R Tools](media/options-dialog.png)
 
@@ -44,7 +45,7 @@ La voce di menu **R Tools > Impostazioni di Data Science** configura l'IDE di Vi
 
 ![Layout delle finestre per data scientist in Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Per ripristinare le altre impostazioni Visual Studio in un secondo momento, usare prima di tutto il comando Importa ed esporta Impostazioni strumenti, selezionare Esporta impostazioni di ambiente selezionate e specificare un nome  >   file.  Per ripristinare tali impostazioni, usare lo stesso comando e selezionare **Importa le impostazioni di ambiente selezionate**. È possibile usare gli stessi comandi anche se si modifica il layout per i data scientist e si vuole tornarvi in un secondo momento, anziché usare direttamente il comando **Impostazioni di Data Science**.
+Per ripristinare altre impostazioni Visual Studio in un secondo momento, usare prima il comando Importa ed esporta Impostazioni strumenti, selezionare Esporta impostazioni di ambiente selezionate e specificare un nome  >   file.  Per ripristinare tali impostazioni, usare lo stesso comando e selezionare **Importa le impostazioni di ambiente selezionate**. È possibile usare gli stessi comandi anche se si modifica il layout per i data scientist e si vuole tornarvi in un secondo momento, anziché usare direttamente il comando **Impostazioni di Data Science**.
 
 ## <a name="text-editor--r--advanced-options"></a>Editor di testo > R > Opzioni avanzate
 

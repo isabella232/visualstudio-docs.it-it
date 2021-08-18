@@ -1,6 +1,6 @@
 ---
 title: Aggiunta di dati di interazione tra livelli dalla riga di comando | Microsoft Docs
-description: Per le applicazioni a più livelli che comunicano con uno o più database, usare la profilatura dell'interazione tra livelli per le informazioni sul tempo di esecuzione per le chiamate sincrone.
+description: Per le applicazioni multilivello che comunicano con uno o più database, usare la profilatura dell'interazione tra livelli per le informazioni sul tempo di esecuzione per le chiamate sincrone.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9070e515fd59f7b29427f20322ef6cb1a01afaee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f185cf57e118c923d8fbdfda6caa30a23059b9d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901327"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136443"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
 
@@ -34,7 +35,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccogliere dati TIP in un computer remoto**
 
-Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **\_ vs_profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **\_ vs_profiler**.exedalla cartella _\<Platform>_ **\_** _\<Language>_ **** _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 **Report TIP**
 
@@ -157,4 +158,4 @@ Per aggiungere l'interazione tra livelli ai dati di profilatura raccolti tramite
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Per ulteriori informazioni su VSPerfASPNETCmd, vedere [profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Per altre informazioni su VSPerfASPNETCmd, vedere Profilatura rapida del sito [Web con VSPerfASPNETCmd.](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

@@ -1,6 +1,6 @@
 ---
 title: Profilatura e sicurezza in Windows Vista | Microsoft Docs
-description: A seconda delle impostazioni delle autorizzazioni di accesso utente disponibili, è possibile che un singolo utente disponga delle autorizzazioni di sicurezza per la profilatura di un processo nel computer.
+description: A seconda delle impostazioni di Autorizzazioni di accesso utente disponibili, un singolo utente potrebbe disporre dell'autorizzazione di sicurezza per profilare un processo nel computer.
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,16 @@ ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0419ae09f2b43b396062fc8a3232b0a63c81483c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 381cffa54c1dc0446b3e0e2cbc9fa897643e5058
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936392"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060804"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilatura e sicurezza in Windows Vista
 

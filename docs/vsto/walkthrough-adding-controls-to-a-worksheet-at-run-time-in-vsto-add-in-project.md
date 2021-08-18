@@ -1,6 +1,6 @@
 ---
-title: Aggiungere controlli al foglio di lavoro in fase di esecuzione nel progetto di componente aggiuntivo VSTO
-description: Informazioni su come usare la barra multifunzione per consentire agli utenti di aggiungere un pulsante, un controllo NamedRange e un oggetto ListObject a un foglio di lavoro.
+title: Aggiungere controlli al foglio di lavoro in fase di esecuzione nel VSTO del componente aggiuntivo
+description: Informazioni su come usare la barra multifunzione per consentire agli utenti di aggiungere un controllo Button, un controllo NamedRange e un oggetto ListObject a un foglio di lavoro.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,19 +16,20 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 178180e8c698ca56b15e46bcbe65877d68c6b2a1
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d8706772526682c8856cedf5881ee0cd3f75dc76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824679"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032147"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione nel progetto di componente aggiuntivo VSTO
-  È possibile aggiungere controlli a qualsiasi foglio di lavoro aperto mediante un componente aggiuntivo VSTO per Excel. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti l'aggiunta di oggetti <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro. Per informazioni, vedere [Aggiungere controlli ai documenti di Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+# <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di VSTO progetto di componente aggiuntivo
+  È possibile aggiungere controlli a qualsiasi foglio di lavoro aperto mediante un componente aggiuntivo VSTO per Excel. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti l'aggiunta di oggetti <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro. Per informazioni, vedere [Aggiungere controlli Office documenti in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
- **Si applica a:** Le informazioni contenute in questo argomento si applicano ai progetti di componente aggiuntivo VSTO per Excel. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
+ **Si applica a:** Le informazioni contenute in questo argomento si applicano VSTO di componenti aggiuntivi per Excel. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
  Vengono illustrate le attività seguenti:
 
@@ -47,14 +48,14 @@ ms.locfileid: "107824679"
 
 - Excel
 
-## <a name="create-a-new-excel-vsto-add-in-project"></a>Creare un nuovo progetto di componente aggiuntivo VSTO per Excel
+## <a name="create-a-new-excel-vsto-add-in-project"></a>Creare un nuovo Excel VSTO di componente aggiuntivo
  Creare innanzitutto un progetto di componente aggiuntivo VSTO per Excel.
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO per Excel
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creare un progetto di componente aggiuntivo VSTO di Excel con il nome **ExcelDynamicControls.** Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. In creare un progetto Excel VSTO componente aggiuntivo con [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] il nome **ExcelDynamicControls**. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Aggiungere un riferimento all'assembly **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** assembly. Tale riferimento è necessario per aggiungere a livello di codice un controllo Windows Form al foglio di lavoro più avanti in questa procedura dettagliata.
+2. Aggiungere un riferimento **all'Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** assembly. Tale riferimento è necessario per aggiungere a livello di codice un controllo Windows Form al foglio di lavoro più avanti in questa procedura dettagliata.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Fornire un'interfaccia utente per aggiungere controlli a un foglio di lavoro
  Aggiungere una scheda personalizzata alla barra multifunzione di Excel. Gli utenti possono selezionare caselle di controllo nella scheda per aggiungere i controlli a un foglio di lavoro.
@@ -63,7 +64,7 @@ ms.locfileid: "107824679"
 
 1. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nella finestra **di dialogo Aggiungi nuovo** elemento selezionare Barra multifunzione **(finestra di progettazione visiva)** e quindi fare clic su **Aggiungi.**
+2. Nella finestra **di dialogo Aggiungi nuovo elemento** selezionare Barra multifunzione **(finestra di progettazione visiva)** e quindi fare clic su **Aggiungi**.
 
      Un file denominato **Ribbon1.cs o** **Ribbon1.vb** viene aperto nella finestra di progettazione della barra multifunzione e visualizza una scheda e un gruppo predefiniti.
 
@@ -76,28 +77,28 @@ ms.locfileid: "107824679"
     |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**Button**|
-    |**Label**|**Button**|
+    |**Etichetta**|**Button**|
 
 6. Aggiungere una seconda casella di controllo a **group1** e quindi modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**NamedRange**|
-    |**Label**|**NamedRange**|
+    |**Etichetta**|**NamedRange**|
 
 7. Aggiungere una terza casella di controllo **a group1** e quindi modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**ListObject**|
-    |**Label**|**ListObject**|
+    |**Etichetta**|**ListObject**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di lavoro
  I controlli gestiti possono essere aggiunti solo a elementi host che fungono da contenitori. Poiché i progetti di componenti aggiuntivi VSTO vengono usati con qualsiasi cartella di lavoro aperta, il componente aggiuntivo VSTO converte il foglio di lavoro in un elemento host oppure ottiene un elemento host esistente, prima di aggiungere il controllo. Aggiungere codice ai gestori di eventi Click di ciascun controllo per generare un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> basato su un foglio di lavoro aperto. Aggiungere quindi un oggetto <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.ListObject> alla selezione corrente nel foglio di lavoro.
 
 ### <a name="to-add-controls-to-a-worksheet"></a>Per aggiungere controlli a un foglio di lavoro
 
-1. Nella finestra di progettazione della barra multifunzione fare doppio clic **su Pulsante**.
+1. Nella finestra di progettazione della barra multifunzione fare doppio clic su **Pulsante**.
 
      Il <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> gestore eventi della casella di controllo **Pulsante** viene aperto nell'editor di codice.
 
@@ -108,11 +109,11 @@ ms.locfileid: "107824679"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet2":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet2":::
 
-3. In **Esplora soluzioni** selezionare *Ribbon1.cs* o *Ribbon1.vb.*
+3. In **Esplora soluzioni** selezionare *Ribbon1.cs* o *Ribbon1.vb*.
 
-4. Scegliere **Progettazione dal** menu **Visualizza**.
+4. Scegliere **Progettazione** dal menu **Visualizza**.
 
-5. Nella finestra di progettazione della barra multifunzione fare doppio clic **su NamedRange.**
+5. Nella finestra di progettazione della barra multifunzione fare doppio clic **su NamedRange**.
 
 6. Sostituire il gestore eventi `NamedRange_Click` con il codice seguente.
 
@@ -136,7 +137,7 @@ ms.locfileid: "107824679"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet1":::
 
 ## <a name="remove-controls-from-the-worksheet"></a>Rimuovere i controlli dal foglio di lavoro
- I controlli non sono resi permanenti quando il foglio di lavoro viene salvato e chiuso. È necessario rimuovere a livello di codice tutti i controlli Windows Form generati prima che il foglio di lavoro venga salvato, altrimenti quando la cartella di lavoro viene nuovamente aperta, verrà visualizzata solo una struttura del controllo. Aggiungere all'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> il codice per rimuovere i controlli Windows Form dalla raccolta di controlli dell'elemento host generato. Per altre informazioni, vedere [Rendere persistenti i controlli dinamici nei documenti di Office.](../vsto/persisting-dynamic-controls-in-office-documents.md)
+ I controlli non sono resi permanenti quando il foglio di lavoro viene salvato e chiuso. È necessario rimuovere a livello di codice tutti i controlli Windows Form generati prima che il foglio di lavoro venga salvato, altrimenti quando la cartella di lavoro viene nuovamente aperta, verrà visualizzata solo una struttura del controllo. Aggiungere all'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> il codice per rimuovere i controlli Windows Form dalla raccolta di controlli dell'elemento host generato. Per altre informazioni, vedere Rendere persistenti i controlli [dinamici nei Office documenti.](../vsto/persisting-dynamic-controls-in-office-documents.md)
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>Per rimuovere i controlli dal foglio di lavoro
 
@@ -149,7 +150,7 @@ ms.locfileid: "107824679"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet6":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet6":::
 
-4. In C# è necessario creare un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Questo codice può essere inserito nel metodo `ThisAddIn_Startup`. Per altre informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md) Sostituire il metodo `ThisAddIn_Startup` con il codice seguente.
+4. In C# è necessario creare un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Questo codice può essere inserito nel metodo `ThisAddIn_Startup`. Per altre informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori](../vsto/how-to-create-event-handlers-in-office-projects.md)eventi in Office progetti . Sostituire il metodo `ThisAddIn_Startup` con il codice seguente.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet5":::
 
@@ -187,11 +188,11 @@ ms.locfileid: "107824679"
 ## <a name="next-steps"></a>Passaggi successivi
  In questo argomento vengono fornite altre informazioni sui controlli nei progetti di componenti aggiuntivi VSTO per Excel:
 
-- Per informazioni su come salvare i controlli in un foglio di lavoro, vedere l'esempio di controlli dinamici del componente aggiuntivo VSTO di Excel negli esempi e nelle procedure dettagliate di sviluppo [di Office.](../vsto/office-development-samples-and-walkthroughs.md)
+- Per informazioni su come salvare i controlli in un foglio di lavoro, vedere l'esempio di controlli dinamici del componente aggiuntivo Excel VSTO in esempi e procedure dettagliate Office [sviluppo.](../vsto/office-development-samples-and-walkthroughs.md)
 
 ## <a name="see-also"></a>Vedi anche
-- [Soluzioni Excel](../vsto/excel-solutions.md)
-- [Panoramica dei controlli Windows Form nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
+- [Excel soluzioni](../vsto/excel-solutions.md)
+- [Windows di controlli form in Office documenti](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Controlli su Office documenti](../vsto/controls-on-office-documents.md)
 - [Controllo NamedRange](../vsto/namedrange-control.md)
 - [Controllo ListObject](../vsto/listobject-control.md)

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 711572aac90d499fb0392e56dada57b16c58e8e3823cee761a9825b6ab81bb99
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 288210ac250be0dd92ec409a4b1d45075c0baf2e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419897"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134064"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Errore: il server Web non è configurato in modo corretto
 
@@ -35,17 +35,17 @@ Per risolvere il problema, seguire questa procedura:
 
     Ad esempio, se si usa un profilo di pubblicazione per una build di rilascio, modificarlo in Debug e ripubblicare. In caso contrario, l'attributo debug verrà impostato su `false` durante la pubblicazione.
 
-2. (IIS) Verificare che il percorso fisico sia corretto. In IIS questa impostazione è presente in Impostazioni di base **> percorso** fisico (o Impostazioni **avanzate** nelle versioni precedenti di IIS).
+2. (IIS) Verificare che il percorso fisico sia corretto. In IIS questa impostazione è presente in Basic **Impostazioni > Physical Path** (Percorso fisico di base) (o Advanced **Impostazioni** nelle versioni precedenti di IIS).
 
     Il percorso fisico potrebbe non essere corretto se l'applicazione Web è stata copiata in un computer diverso, rinominata manualmente o spostata. Reimpostare IIS e riprovare.
 
-3. Se si esegue il debug in Visual Studio, verificare che nelle proprietà sia selezionato il server corretto. Aprire **Proprietà > server Web > o** Proprietà > **debug** a seconda del tipo di progetto. Per un Web Forms, aprire Pagine **delle proprietà > Opzioni di avvio > Server**).
+3. Se si esegue il debug in Visual Studio, verificare che nelle proprietà sia selezionato il server corretto. Aprire **Proprietà > server web > o** Proprietà > **debug** a seconda del tipo di progetto. Per un progetto Web Forms, aprire Pagine **delle proprietà > opzioni di avvio > Server**).
 
     Se si usa un server esterno (personalizzato), ad esempio IIS, l'URL deve essere corretto. In caso contrario, selezionare IIS Express e riprovare.
 
 4. (IIS) Verificare che nel server sia installata ASP.NET versione corretta di .
 
-    Le versioni di ASP.NET non corrispondenti in IIS e nel progetto Visual Studio possono causare questo problema. Potrebbe essere necessario impostare la versione del framework in web.config. Per installare ASP.NET in IIS, usare Installazione guidata piattaforma [Web (WebPI).](https://www.microsoft.com/web/downloads/platform.aspx) Vedere anche [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (Iis 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (Iis 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) or, for ASP.NET Core, Host on Windows with IIS ( Host [in Windows con IIS).](https://docs.asp.net/en/latest/publishing/iis.html)
+    Le versioni non corrispondenti ASP.NET in IIS e nel progetto Visual Studio possono causare questo problema. Potrebbe essere necessario impostare la versione del framework in web.config. Per installare ASP.NET in IIS, usare Installazione [guidata piattaforma Web (WebPI).](https://www.microsoft.com/web/downloads/platform.aspx) Vedere anche [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (Iis 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) or, for ASP.NET Core, Host on Windows with IIS ( Host in Windows [con IIS).](https://docs.asp.net/en/latest/publishing/iis.html)
 
 4. Se il limite in IIS è troppo basso e sono presenti troppe connessioni, potrebbe essere `maxConnection` necessario aumentare il limite di [connessione](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
 

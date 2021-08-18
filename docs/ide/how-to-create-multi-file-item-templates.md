@@ -1,6 +1,6 @@
 ---
 title: Creazione di modelli di elemento a più file
-description: Informazioni su come creare un modello di elemento in Visual Studio costituito da più file.
+description: Informazioni su come creare un modello di Visual Studio che è costituito da più file.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
@@ -12,12 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: 0917faeccdabf8af63e03b4bdf061d39dc31057f85fddca341e14f81c111e205
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c98b811f3bc2daf2048cd70b14a1060088fa1c32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372875"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109175"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 
@@ -39,7 +39,7 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
 
 1. Creare il modello di elemento come se si creasse manualmente un modello di elemento a file singolo, ma includere ogni file che costituisce l'elemento a più file.
 
-1. Nel file *XML con estensione vstemplate* aggiungere un elemento per ogni `ProjectItem` singolo file e aggiungere un attributo a questo `TargetFileName` elemento. Impostare il valore `TargetFileName` dell'attributo su *$fileinputname$. FileExtension*, dove *FileExtension* è l'estensione del file incluso nel modello. Esempio:
+1. Nel file XML *con estensione vstemplate* aggiungere un `ProjectItem` elemento per ogni singolo file e aggiungere un attributo a questo `TargetFileName` elemento. Impostare il valore `TargetFileName` dell'attributo *su $fileinputname$. FileExtension*, dove *FileExtension* è l'estensione del file incluso nel modello. Esempio:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -56,11 +56,11 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
      > [!NOTE]
      > Quando un elemento derivato da questo modello viene aggiunto a un progetto, i nomi dei file deriveranno dal nome immesso dall'utente nella finestra di dialogo **Aggiungi nuovo elemento**.
 
-1. Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere Invia alla cartella  >  **compressa**.
+1. Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere Invia a cartella  >  **compressa**.
 
    I file selezionati vengono compressi in un *.zip* file.
 
-1. Copiare il *.zip* file nel percorso del modello di elemento utente. Per impostazione predefinita, la directory è *%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare i modelli.](../ide/how-to-locate-and-organize-project-and-item-templates.md)
+1. Copiare il *.zip* file nel percorso del modello di elemento utente. Per impostazione predefinita, la directory *è %USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare i modelli.](../ide/how-to-locate-and-organize-project-and-item-templates.md)
 
 1. Chiudere e riaprire Visual Studio.
 
@@ -100,4 +100,4 @@ L'esempio seguente illustra un modello di Windows Form. Quando viene creato un e
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: Creare modelli di elemento](../ide/how-to-create-item-templates.md)
 - [Parametri di modelli](../ide/template-parameters.md)
-- [Procedura: Sostituire parametri in un modello](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Procedura: Sostituire i parametri in un modello](../ide/how-to-substitute-parameters-in-a-template.md)

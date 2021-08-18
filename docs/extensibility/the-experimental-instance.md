@@ -15,25 +15,25 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70f9d10595e1d0b458fc7102b48a1e1df8ee9daf6d2f04b993e7814891c41273
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 515183771fd4063b20d7ea2ade416d1b84c31cfb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447610"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137457"
 ---
 # <a name="the-experimental-instance"></a>Istanza sperimentale
-Per proteggere l Visual Studio di sviluppo di applicazioni non testate che potrebbero modificarlo, VSSDK offre uno spazio sperimentale che è possibile usare per sperimentare. Si sviluppano nuove applicazioni usando Visual Studio come di consueto, ma si eseguono usando questa istanza sperimentale.
+Per proteggere il Visual Studio di sviluppo da applicazioni non testate che potrebbero modificarlo, VSSDK offre uno spazio sperimentale che è possibile usare per sperimentare. Si sviluppano nuove applicazioni usando Visual Studio come di consueto, ma è possibile eseguirle usando questa istanza sperimentale.
 
- Ogni applicazione con un pacchetto VSIX avvia l'Visual Studio istanza sperimentale in modalità di debug.
+ Ogni applicazione con un pacchetto VSIX avvia l'istanza Visual Studio sperimentale in modalità di debug.
 
  Se si vuole avviare l'istanza sperimentale di Visual Studio all'esterno di una soluzione specifica, eseguire il comando seguente nella finestra di comando:
 
  *\<Visual studio installation path>*"\Common7\IDE\devenv.exe" /RootSuffix Exp
 
 > [!NOTE]
-> L'istanza sperimentale viene scritta nel Registro di sistema nei `<version number>Exp` nodi `<version number>Exp_Config` e . Ad esempio, l Visual Studio area del Registro di sistema sperimentale di 2015 è
+> L'istanza sperimentale viene scritta nel Registro di sistema nei `<version number>Exp` nodi e `<version number>Exp_Config` . Ad esempio, l'Visual Studio del Registro di sistema sperimentale di 2015 è
 >
 > `HKCU\Software\Microsoft\VisualStudio\14.0Exp` e `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`
 
- È consigliabile eseguire l'estensione nell'istanza sperimentale durante lo sviluppo. Quando si distribuisce l'estensione, questa viene eseguita nell'istanza di sviluppo. Per altre informazioni sulla registrazione di applicazioni, vedere [Registrazione di pacchetti VSPackage.](../extensibility/internals/registering-vspackages.md)
+ È consigliabile eseguire l'estensione nell'istanza sperimentale durante lo sviluppo. Quando si distribuisce l'estensione, viene eseguita nell'istanza di sviluppo. Per altre informazioni sulla registrazione di applicazioni, vedere [Registrazione di VSPackage.](../extensibility/internals/registering-vspackages.md)

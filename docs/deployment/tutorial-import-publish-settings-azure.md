@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 18231d36d5aef25917dccde045cad739848ef3f19bc840cac76753636c4bfc03
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fbb2f336d318216de178ca295c5d9d56c91175da
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390940"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133666"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
@@ -34,7 +34,7 @@ In questa esercitazione si apprenderà come:
 Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da un profilo di pubblicazione (*\* pubxml*) creato in Visual Studio. Il file delle impostazioni di pubblicazione viene creato dal servizio app di Azure e quindi importato in Visual Studio.
 
 > [!NOTE]
-> Se è sufficiente copiare un profilo di pubblicazione Visual Studio (file con estensione *\* pubxml)* da un'installazione di Visual Studio a un'altra, è possibile trovare il profilo di pubblicazione, *\<profilename\> .pubxml*, nella cartella nomeprogetto *\\ di<\> \Properties\PublishProfiles* per i tipi di progetto gestiti. Per i siti Web, cercare nella cartella *\App_Data*. I profili di pubblicazione sono file XML di MSBuild.
+> Se è sufficiente copiare un profilo di pubblicazione Visual Studio (file con estensione *\* pubxml)* da un'installazione di Visual Studio a un'altra, è possibile trovare il profilo di pubblicazione, con estensione *\<profilename\> pubxml*, nella cartella nomeprogetto *\\ di<\> \Properties\PublishProfiles* per i tipi di progetto gestiti. Per i siti Web, cercare nella cartella *\App_Data*. I profili di pubblicazione sono file XML di MSBuild.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -58,9 +58,9 @@ Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da u
 
 1. Creare un nuovo progetto nel computer che esegue Visual Studio.
 
-    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET App web (.NET Framework)** o (solo per C#) ASP.NET Core **Applicazione Web** e quindi selezionare **OK.**
+    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET App web (.NET Framework)** o (solo per **C#)** ASP.NET Core Applicazione Web e quindi selezionare **OK.**
 
-    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di dialogo Nuovo **Project** progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro ASP.NET sviluppo Web e** web.
+    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo** Nuovo Project progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro ASP.NET sviluppo Web.**
 
     Il modello di progetto selezionato (ASP.NET o ASP.NET Core) deve corrispondere alla versione di ASP.NET installata nel server Web.
 
@@ -76,7 +76,7 @@ Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da u
 
 1. Nel portale di Azure aprire il servizio app di Azure.
 
-1. Passare a **Get publish profile** (Ottieni profilo di pubblicazione) e salvare il profilo in locale.
+1. Passare a **Get publish profile (Ottieni** profilo di pubblicazione) e salvare il profilo in locale.
 
     ![Recuperare il profilo di pubblicazione](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 

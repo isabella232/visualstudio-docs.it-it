@@ -1,6 +1,6 @@
 ---
 title: Aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
-description: Informazioni su come utilizzare il pannello dei contatori per aggiungere contatori delle prestazioni a un grafico e sulla proprietà frequenza di campionamento.
+description: Informazioni su come usare il pannello Contatori per aggiungere contatori delle prestazioni a un grafico e informazioni sulla proprietà Frequenza di campionamento.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -13,12 +13,13 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: bbf233d025d168f3f9d197af5876a0d6e735a9e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 743dbd7c5732c674d18fcbb586dd375a47bd74bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942399"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123073"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedura: aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
 
@@ -28,9 +29,9 @@ Per aggiungere contatori delle prestazioni a un grafico, è possibile usare il r
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Considerazioni sull'intervallo di campionamento del contatore delle prestazioni**
+**Considerazioni sull'intervallo di campionamento dei contatori delle prestazioni**
 
-Nelle impostazioni esecuzione test di carico scegliere un valore per la proprietà **Frequenza di campionamento** basato sulla lunghezza del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [procedura: specificare la frequenza di campionamento](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Nelle impostazioni esecuzione test di carico scegliere un valore per la proprietà **Frequenza di campionamento** basato sulla lunghezza del test di carico. Una frequenza di campionamento inferiore, ad esempio il valore predefinito di cinque secondi, richiede più spazio nel database dei risultati del test di carico. Per i test di carico più lunghi, l'aumento della frequenza di campionamento riduce la quantità di dati raccolti. Per altre informazioni, vedere [Procedura: Specificare la frequenza di campionamento.](../test/how-to-specify-the-sample-rate-for-a-load-test.md)
 
 Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
@@ -41,7 +42,7 @@ Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 |8 - 24 ore|30 secondi|
 |> 24 ore|60 secondi|
 
-**Considerazioni per l'inclusione di dettagli dell'intervallo per la raccolta dei dati percentile**
+**Considerazioni sull'inclusione dei dettagli di intervallo per la raccolta di dati percentili**
 
 Nelle impostazioni esecuzione test dell'Editor test di carico è disponibile una proprietà denominata **Intervallo archiviazione dettagli**. Se la proprietà **Intervallo archiviazione dettagli** è abilitata, il tempo richiesto per eseguire ogni singolo test, transazione e pagina durante il test di carico verrà archiviato nel repository dei risultati del test di carico. Ciò consente di visualizzare i dati del novantesimo e del novantacinquesimo percentile nell'**Analizzatore test di carico**, nelle tabelle Test, Transazioni e Pagine.
 
@@ -49,7 +50,7 @@ Per abilitare la proprietà **Intervallo archiviazione dettagli** nelle propriet
 
 La quantità di spazio richiesta nel repository dei risultati del test di carico per l'archiviazione dei dati dettaglio dell'intervallo potrebbe essere molto elevata, soprattutto per i test di carico a esecuzione prolungata. Inoltre, è necessario più tempo per archiviare questi dati nel repository dei risultati alla fine del test di carico, in quanto tali dati vengono archiviati negli agenti del test di carico fino al termine dell'esecuzione del test di carico. Quando il test di carico viene completato, i dati vengono archiviati nel repository. La proprietà **Intervallo archiviazione dettagli** è abilitata per impostazione predefinita. Se ciò costituisce un problema per l'ambiente di test, è consigliabile impostare **Intervallo archiviazione dettagli** su **Nessuno**.
 
-Per altre informazioni, vedere [procedura: specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Per altre informazioni, vedere Procedura: Specificare la proprietà di archiviazione [dei dettagli dell'intervallo.](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Per visualizzare un determinato contatore delle prestazioni su un grafico del test di carico
 
@@ -86,5 +87,5 @@ Per altre informazioni, vedere [procedura: specificare la proprietà Intervallo 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Procedura: creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)

@@ -19,55 +19,55 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8888191a2b482aba2ff1fed2233e7156a0bf52564f1cac3339d8293d10fb36e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b8376b7f5fa54f7c51ae9f55841778c8cbcdbdf4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121399094"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034084"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usare le mappe codice per eseguire il debug delle applicazioni
 
 [Le mappe codice Visual Studio](../modeling/map-dependencies-across-your-solutions.md) consentono di evitare di perdersi in codebase di grandi dimensioni, codice non familiare o codice legacy. Ad esempio, quando si esegue il debug, potrebbe essere necessario esaminare il codice in molti file e progetti. Usare le mappe codice per esplorare queste parti di codice e comprendere le relazioni tra loro. In questo modo, non è necessario tenere traccia di questo codice a mente o creare un diagramma separato. Se il lavoro viene interrotto, le mappe codice consentono di aggiornare la memoria relativa al codice usato.
 
-![Mapping del codice &#45; relazioni mappa nel codice](../modeling/media/codemapstoryboardpaint.png)
+![Mapping del codice &#45; relazioni della mappa nel codice](../modeling/media/codemapstoryboardpaint.png)
 
 **Una freccia verde indica la posizione del cursore nell'editor**
 
-Per informazioni dettagliate sui comandi e sulle azioni che è possibile usare quando si usano le mappe codice, vedere Esplorare e [ridisporre le mappe codice.](../modeling/browse-and-rearrange-code-maps.md)
+Per informazioni dettagliate sui comandi e le azioni che è possibile usare quando si usano le mappe codice, vedere Esplorare e ridisporre [le mappe codice.](../modeling/browse-and-rearrange-code-maps.md)
 
 Altre informazioni sul [debug in Visual Studio con lo strumento Debugger](../debugger/debugger-feature-tour.md).
 
 > [!NOTE]
-> Per creare e modificare mappe codice, è necessario Visual Studio Enterprise edizione. Nelle Visual Studio Community e Professional, è possibile aprire i diagrammi generati Enterprise edizione, ma non è possibile modificarli.
+> Per creare e modificare le mappe codice, è necessario Visual Studio Enterprise edizione. Nelle edizioni Visual Studio Community e Professional, è possibile aprire i diagrammi generati in Enterprise edition, ma non è possibile modificarli.
 
 ## <a name="understand-the-problem"></a>Informazioni sul problema
  Si supponga che sia presente un bug in un programma di disegno su cui si sta lavorando. Per riprodurre il bug, aprire la soluzione in Visual Studio premere **F5** per avviare il debug.
 
- Quando si disegna una linea e si sceglie **Annulla l'ultimo tratto,** non accade nulla finché non si disegna la linea successiva.
+ Quando si disegna una linea e si sceglie **Annulla l'ultimo tratto,** non accade nulla finché non si disegna la riga successiva.
 
- ![Mapping del codice &#45; bug di Repro](../modeling/media/codemapstoryboardpaint0.png)
+ ![Bug di &#45; della mappa codice](../modeling/media/codemapstoryboardpaint0.png)
 
  Di conseguenza, iniziare l'analisi cercando il metodo `Undo`. Il metodo si trova nella classe `PaintCanvas`.
 
- ![Mappa codice &#45; trovare il codice](../modeling/media/codemapstoryboardpaint1.png)
+ ![Code map &#45; Find code (Trova codice)](../modeling/media/codemapstoryboardpaint1.png)
 
 ## <a name="start-mapping-the-code"></a>Avviare il mapping del codice
  A questo punto è possibile avviare il mapping del metodo `undo` e le relative relazioni. Nell'editor di codice aggiungere il metodo `undo` e i campi a cui viene fatto riferimento a una nuova mappa codici. Quando si crea una nuova mappa, l'indicizzazione del codice potrebbe richiedere del tempo. Ciò consente alle operazioni successive di essere eseguite più velocemente.
 
- ![Tabella codici &#45; metodo Show e campi correlati](../modeling/media/codemapstoryboardpaint3.png)
+ ![Mappa codice &#45; mostra metodo e campi correlati](../modeling/media/codemapstoryboardpaint3.png)
 
 > [!TIP]
 > L'evidenziazione verde indica gli ultimi elementi aggiunti alla mappa. La freccia verde mostra la posizione del cursore nel codice. Le frecce tra gli elementi rappresentano relazioni diverse. È possibile ottenere altre informazioni sugli elementi nella mappa spostandovi sopra il mouse ed esaminando le relative descrizioni comandi.
 
- ![Mappa codice &#45; mostra le descrizioni comando](../modeling/media/codemapstoryboardpaint4.png)
+ ![Code map &#45; Show tooltips (Mostra descrizioni comando)](../modeling/media/codemapstoryboardpaint4.png)
 
 ## <a name="navigate-and-examine-code-from-the-map"></a>Passare al codice ed esaminarlo dal mapping
  Per visualizzare la definizione del codice per ogni campo, fare doppio clic sul campo sulla mappa oppure selezionare il campo e premere **F12.** La freccia verde si sposta tra gli elementi nella mappa. Il cursore nell'editor di codice viene spostato automaticamente.
 
- ![Screenshot di una finestra della mappa codice con il campo cronologia selezionato e una finestra dell'editor di codice in cui sono evidenziate tutte le istanze della cronologia.](../modeling/media/codemapstoryboardpaint5.png)
+ ![Screenshot di una finestra della mappa codice con il campo della cronologia selezionato e una finestra dell'editor di codice in cui sono evidenziate tutte le istanze della cronologia.](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Screenshot di una finestra della mappa codice con il campo paintObjects selezionato e una finestra dell'editor di codice in cui sono evidenziate tutte le istanze di paintObjects.](../modeling/media/codemapstoryboardpaint5a.png)
+ ![Screenshot di una finestra della mappa codice con il campo paintObjects selezionato e una finestra dell'editor di codice in cui sono evidenziate tutte le istanze di paintObject.](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > È inoltre possibile spostare la freccia verde sulla mappa spostando il cursore nell'editor di codice.
@@ -75,7 +75,7 @@ Altre informazioni sul [debug in Visual Studio con lo strumento Debugger](../deb
 ## <a name="understand-relationships-between-pieces-of-code"></a>Informazioni sulle relazioni tra parti di codice
  A questo punto si desidera sapere quale altro codice interagisce con i campi `history` e `paintObjects`. È possibile aggiungere tutti i metodi che fanno riferimento a questi campi alla mappa. Questa operazione può essere eseguita dalla mappa o dall'editor di codice.
 
- ![Mappa codice &#45; trovare tutti i riferimenti](../modeling/media/codemapstoryboardpaint6.png)
+ ![Code map &#45; Find all references (Trova tutti i riferimenti)](../modeling/media/codemapstoryboardpaint6.png)
 
  ![Aprire una mappa del codice nell'editor del codice](../modeling/media/codemapstoryboardpaint6a.png)
 
@@ -87,11 +87,11 @@ Altre informazioni sul [debug in Visual Studio con lo strumento Debugger](../deb
  ![Screenshot di una finestra della mappa codice con il menu Layout aperto e il comando Da sinistra a Rgiht selezionato.](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
-> Per impostazione predefinita, **il layout incrementale** è attivato. Ciò consente di ridisporre la mappa il meno possibile quando vengono aggiunti nuovi elementi. Per ridisporre l'intera mappa ogni volta che si aggiungono nuovi elementi, disattivare **Layout incrementale**.
+> Per impostazione predefinita, **il layout incrementale** è attivato. Ciò consente di ridisporre la mappa il meno possibile quando vengono aggiunti nuovi elementi. Per ridisporre l'intera mappa ogni volta che si aggiungono nuovi elementi, disattivare **Layout incrementale.**
 
  ![Screenshot di una finestra della mappa codice con le frecce delle relazioni tra i campi che puntano da sinistra a destra.](../modeling/media/codemapstoryboardpaint7.png)
 
- Esaminiamo questi metodi. Nella mappa fare doppio clic sul **metodo PaintCanvas** oppure selezionare questo metodo e premere **F12.** Questo metodo crea `history` e `paintObjects` come elenchi vuoti.
+ Esaminiamo questi metodi. Sulla mappa fare doppio clic sul **metodo PaintCanvas** oppure selezionare questo metodo e premere **F12.** Questo metodo crea `history` e `paintObjects` come elenchi vuoti.
 
  ![Screenshot di una finestra della mappa codice con il metodo PaintCanvas selezionato e un'immagine del frammento di codice che mostra il nome del metodo PainCanvas evidenziato.](../modeling/media/codemapstoryboardpaint8.png)
 
@@ -106,44 +106,44 @@ Altre informazioni sul [debug in Visual Studio con lo strumento Debugger](../deb
 ## <a name="find-the-problem-by-examining-the-map"></a>Individuare il problema esaminando il mapping
  Sembra che tutti i metodi che modificano `history` e `paintObjects` chiamino `Repaint`. Tuttavia il metodo `undo` non chiama `Repaint`, anche se `undo` modifica gli stessi campi. Pertanto, è possibile risolvere il problema chiamando `Repaint` da `undo`.
 
- ![Mapping del codice &#45; trovare la chiamata al metodo mancante](../modeling/media/codemapstoryboardpaint11.png)
+ ![Mappa codice &#45; chiamata al metodo mancante](../modeling/media/codemapstoryboardpaint11.png)
 
  Se non fosse stata disponibile una mappa che mostrava questa chiamata mancante, sarebbe stato più difficile individuare il problema, specialmente in caso di codice più complesso.
 
 ## <a name="share-your-discovery-and-next-steps"></a>Condividere l'individuazione e passaggi successivi
  Prima che l'utente o un altro sviluppatore corregga il bug, è possibile inserire note nella mappa sul problema e su come correggerlo.
 
- ![Mapping del codice &#45; elementi di commento e flag per il follow-up](../modeling/media/codemapstoryboardpaint12.png)
+ ![Code map &#45; comment and flag items for followup (Elementi di commento e flag della mappa codice per il follow-up)](../modeling/media/codemapstoryboardpaint12.png)
 
  Ad esempio, è possibile aggiungere commenti alla mappa e contrassegnare gli elementi usando i colori.
 
- ![Mapping del &#45; elementi contrassegnati e contrassegnati](../modeling/media/codemapstoryboardpaint12a.png)
+ ![Elementi contrassegnati e &#45; contrassegnati e commentati della mappa codice](../modeling/media/codemapstoryboardpaint12a.png)
 
  Se Microsoft Outlook è installato, è possibile inviare la mappa ad altre persone tramite posta elettronica. È inoltre possibile esportare la mappa come un'immagine o in un altro formato.
 
- ![Mappa codice &#45; condivisione, esportazione, posta elettronica](../modeling/media/codemapstoryboardpaint13.png)
+ ![Mappa codici &#45; condivisione, esportazione, posta elettronica](../modeling/media/codemapstoryboardpaint13.png)
 
 ## <a name="fix-the-problem-and-show-what-you-did"></a>Correggere il problema e visualizzare le operazioni effettuate
  Per correggere il bug, aggiungere la chiamata per `Repaint` a `undo`.
 
- ![Mapping del codice &#45; aggiungi chiamata al metodo mancante](../modeling/media/codemapstoryboardpaint14.png)
+ ![Code map &#45; Add missing method call (Aggiungi chiamata al metodo mancante)](../modeling/media/codemapstoryboardpaint14.png)
 
- Per confermare la correzione, riavviare la sessione di debug e tentare di riprodurre il bug. Ora la **scelta di Annulla l'ultimo** tratto funziona come previsto e conferma che è stata apportata la correzione corretta.
+ Per confermare la correzione, riavviare la sessione di debug e tentare di riprodurre il bug. Ora scegliere **Annulla l'ultimo tratto** funziona come previsto e conferma di aver apportato la correzione corretta.
 
- ![Mapping del &#45; confermare la correzione del codice](../modeling/media/codemapstoryboardpaint15.png)
+ ![Correzione della mappa &#45; confermare la correzione del codice](../modeling/media/codemapstoryboardpaint15.png)
 
  È possibile aggiornare la mappa per mostrare la correzione apportata.
 
- ![Mappa del codice &#45; mappa di aggiornamento con chiamata al metodo mancante](../modeling/media/codemapstoryboardpaint16.png)
+ ![Mappa codice &#45; aggiornare la mappa con chiamata al metodo mancante](../modeling/media/codemapstoryboardpaint16.png)
 
- La mappa mostra ora un collegamento tra **undo** e **Repaint**.
+ La mappa mostra ora un collegamento tra **l'annullamento** e **il ridisegno di**.
 
  ![Mappa codice &#45; mappa aggiornata con chiamata al metodo](../modeling/media/codemapstoryboardpaint17.png)
 
 > [!NOTE]
 > Quando si aggiorna la mappa, è possibile che venga visualizzato un messaggio che indica che l'indice di codice usato per creare la mappa è stato aggiornato. Ciò significa che un utente ha modificato il codice e di conseguenza la mappa non corrisponde al codice corrente. L'aggiornamento della mappa non verrà arrestato, ma potrebbe essere necessario ricreare la mappa per confermare che corrisponde al codice.
 
- A questo punto, l'indagine è stata completata. Il problema è stato individuato e corretto eseguendo il mapping del codice. Si dispone inoltre di una mappa che consente di spostarsi nel codice e di ricordare quanto indicato e che mostra i passaggi eseguiti per correggere il problema.
+ A questo punto l'analisi è stata completata. Il problema è stato individuato e corretto eseguendo il mapping del codice. Si dispone inoltre di una mappa che consente di spostarsi nel codice e di ricordare quanto indicato e che mostra i passaggi eseguiti per correggere il problema.
 
 ## <a name="see-also"></a>Vedi anche
 

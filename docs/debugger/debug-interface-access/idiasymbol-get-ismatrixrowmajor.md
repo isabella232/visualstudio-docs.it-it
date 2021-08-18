@@ -1,5 +1,5 @@
 ---
-description: Specifica se la matrice è di tipo row major.
+description: Specifica se la matrice è principale di riga.
 title: IDiaSymbol::get_isMatrixRowMajor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fe081bea2e3bb2f7b3fd8cabbdc517e632ac6b0838fe2c612bed54468e334d65
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7cd7953e62e52ba1e5deb033f9d18cdda96d2386
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420630"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066129"
 ---
 # <a name="idiasymbolget_ismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
-Specifica se la matrice è di tipo row major.
+Specifica se la matrice è principale di riga.
 
 ## <a name="syntax"></a>Sintassi
 

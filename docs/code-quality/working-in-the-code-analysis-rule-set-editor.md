@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d5985411fe58852a004d6f74d0015f07732d3de243895642492282a50367df
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 724d5c541d90eedc335aaf840eea389510b6d8dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347948"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031614"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor del set di regole di analisi del codice
 
@@ -66,14 +66,14 @@ Nella tabella seguente vengono descritti i controlli sulla barra degli strumenti
 
 ## <a name="rule-set-fields"></a>Campi del set di regole
 
-I campi del set di regole visualizzano informazioni su un set di regole e possono essere usati per ordinare e raggruppare l'elenco di regole. Per visualizzare o nascondere i campi, **selezionare** Opzioni colonne sulla barra degli strumenti dell'editor del set di regole e quindi selezionare o deselezionare le caselle di controllo dei campi da visualizzare o nascondere.
+I campi del set di regole visualizzano informazioni su un set di regole e possono essere usati per ordinare e raggruppare l'elenco di regole. Per visualizzare o nascondere  i campi, selezionare Opzioni colonne sulla barra degli strumenti dell'editor del set di regole e quindi selezionare o deselezionare le caselle di controllo dei campi da visualizzare o nascondere.
 
 La tabella seguente descrive i campi di un set di regole:
 
 |Campo|Descrizione|
 |-----------|-----------------|
 |**ID**|Identificatore della regola.|
-|**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice vengono raggruppate per categoria. Per altre informazioni, vedere [Avvisi dell'analisi del codice](/dotnet/fundamentals/code-analysis/quality-rules/index).|
+|**Categoria**|Oltre all'appartenenza ai set di regole, vengono raggruppate anche le regole di analisi del codice per categoria. Per altre informazioni, vedere [Avvisi dell'analisi del codice](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nome**|Titolo della regola.|
 |**Namespace**|Spazio dei nomi della regola.|
 |**Tipo di destinazione**|Indica se la regola è per codice nativo, gestito o di database.|

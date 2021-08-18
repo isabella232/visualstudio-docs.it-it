@@ -1,5 +1,5 @@
 ---
-description: Recupera il valore dell'ID OEM (Original Equipment Manufacturer) del simbolo.
+description: Recupera il valore ID OEM (Original Equipment Manufacturer) del simbolo.
 title: IDiaSymbol::get_oemId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7bde81aadd179e6b09b2e46e7f0789a7433232
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fe88b4c523e71f9100c67736cfbc2f224df16c93
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155915"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121345"
 ---
 # <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
-Recupera il valore dell'ID OEM (Original Equipment Manufacturer) del simbolo.
+Recupera il valore ID OEM (Original Equipment Manufacturer) del simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,16 +35,16 @@ HRESULT get_oemId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un valore univoco che identifica un OEM.
+[out] Restituisce un valore univoco che identifica un OEM.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Questa proprietà si applica solo ai simboli con un tipo di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagCustomType` .
+ Questa proprietà si applica solo ai simboli con [tipo di enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) `SymTagCustomType` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

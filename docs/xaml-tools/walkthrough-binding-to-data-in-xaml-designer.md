@@ -13,12 +13,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 9b6ad5e0286a6faedf60718fd1533d83cb3a5fcd7fdf2104b89d3bb09e69da91
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 084f91e368c4addaebe53d768966459080f9d7a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440240"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037785"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 

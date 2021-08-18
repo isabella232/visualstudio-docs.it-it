@@ -1,6 +1,6 @@
 ---
 title: Attività ZipDirectory | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività ZipDirectory per creare un archivio zip dal contenuto di una directory.
+description: Informazioni su MSBuild usa l'attività ZipDirectory per creare un .zip archivio dal contenuto di una directory.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
@@ -22,14 +22,15 @@ caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d6b897a33dacdbd52beaabdd9289a010df92a85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0110224fb885d6fdb125e187b4233f1a34a9b11d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039865"
 ---
 # <a name="zipdirectory-task"></a>Attività ZipDirectory
 
@@ -50,11 +51,11 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 
- L'esempio seguente, se usato come file con *estensione targets* importato, crea un archivio *zip* dalla directory di output dopo la compilazione di un progetto. La `$(OutputPath)` proprietà verrebbe normalmente definita in un file di progetto MSBuild, quindi un file di progetto che importa il file seguente produrrebbe un archivio zip `output.zip` :
+ L'esempio seguente (se usato come file con  estensione *targets* importato) crea un archivio.zipdalla directory di output dopo la compilazione di un progetto. La proprietà verrebbe in genere definita in un file MSBuild di progetto, quindi un file di progetto che importa il file seguente produrrebbe `$(OutputPath)` un archivio `output.zip` ZIP:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

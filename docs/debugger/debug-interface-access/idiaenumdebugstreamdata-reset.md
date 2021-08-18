@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 01afda5c89483d829e0bdaac1e6de1f428ff91a5ef866b4e2ccd18c2436f5f87
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8dfc369942b1078a3146717eaf7fd3a2faf8f80d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345204"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134641"
 ---
 # <a name="idiaenumdebugstreamdatareset"></a>IDiaEnumDebugStreamData::Reset
 Reimposta all'inizio di una sequenza enumerata.

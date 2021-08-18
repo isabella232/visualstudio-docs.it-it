@@ -10,14 +10,15 @@ ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f841899c7bf48a36351197c33c55e148ae210e5
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 8f36d0914f55f9ca16c8856106d332af6be79b4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898848"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137600"
 ---
 # <a name="vssdk-utilities"></a>Utilità VSSDK
 Negli argomenti di questa sezione vengono descritti gli strumenti forniti con VSSDK.

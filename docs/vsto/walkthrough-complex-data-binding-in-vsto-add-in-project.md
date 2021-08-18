@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: data binding complesse nel progetto di componente aggiuntivo VSTO'
-description: Informazioni su come aggiungere controlli a un foglio di lavoro di Microsoft Excel e associare i controlli ai dati in fase di esecuzione.
+title: 'Procedura dettagliata: Data binding nel VSTO del componente aggiuntivo'
+description: Informazioni su come aggiungere controlli a un foglio Microsoft Excel e associare i controlli ai dati in fase di esecuzione.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,16 +15,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 49f87968c545e9fcca7548cd2fbda866d18b660b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 8f9a554d485abf329a5f3a2933f306035cefa27c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032011"
 ---
-# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Procedura dettagliata: data binding complesse nel progetto di componente aggiuntivo VSTO
+# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Procedura dettagliata: Data binding nel VSTO del componente aggiuntivo
   È possibile associare dati a controlli host e Windows Form in progetti di componente aggiuntivo VSTO. Questa procedura dettagliata illustra come aggiungere controlli a un foglio di lavoro di Microsoft Office Excel e associare i controlli ai dati in fase di esecuzione.
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
@@ -44,11 +45,11 @@ ms.locfileid: "107826356"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Accesso a un'istanza in esecuzione di SQL Server 2005 o SQL Server 2005 Express con il database di esempio `AdventureWorksLT` collegato. È possibile scaricare il `AdventureWorksLT` database dal [repository GitHub SQL Server Samples](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
+- Accesso a un'istanza in esecuzione di SQL Server 2005 o SQL Server 2005 Express con il database di esempio `AdventureWorksLT` collegato. È possibile scaricare il `AdventureWorksLT` database dal SQL Server samples GitHub [.](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
 
-  - Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [Procedura: Collegare un database (SQL Server Management Studio).](/sql/relational-databases/databases/attach-a-database)
+  - Per collegare un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere Procedura: Collegare un [database (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-  - Per collegare un database tramite la riga di comando, vedere [Procedura: Collegare un file di database SQL Server Express](/previous-versions/sql/).
+  - Per collegare un database tramite la riga di comando, vedere [Procedura: Collegare un file](/previous-versions/sql/)di database SQL Server Express .
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
  Il primo passaggio consiste nel creare un progetto di componente aggiuntivo VSTO per Excel.
@@ -66,7 +67,7 @@ ms.locfileid: "107826356"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Per aggiungere un set di dati tipizzato al progetto
 
-1. Se la **finestra Origini** dati non è visibile, visualizzarla scegliendo Visualizza altre origini dati di Windows sulla barra  >    >  **dei** menu.
+1. Se la **finestra Origini** dati non è visibile, visualizzarla da sulla barra dei menu, scegliendo Visualizza Windows  >    >  **origini dati**.
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -82,18 +83,18 @@ ms.locfileid: "107826356"
 
 7. Fare clic su **Fine**.
 
-    Il file *AdventureWorksLTDataSet.xsd* viene aggiunto **Esplora soluzioni**. Questo file definisce gli elementi seguenti:
+    Il file *AdventureWorksLTDataSet.xsd* viene aggiunto a **Esplora soluzioni**. Questo file definisce gli elementi seguenti:
 
    - Un set di dati tipizzato denominato `AdventureWorksLTDataSet`. Questo set di dati rappresenta i contenuti della tabella **Address (SalesLT)** nel database AdventureWorksLT.
 
-   - Oggetto TableAdapter denominato `AddressTableAdapter` . Questo TableAdapter può essere utilizzato per leggere e scrivere dati in `AdventureWorksLTDataSet` . Per altre informazioni, vedere [Cenni preliminari sugli oggetti TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
+   - Oggetto TableAdapter denominato `AddressTableAdapter` . Questo TableAdapter può essere usato per leggere e scrivere dati in `AdventureWorksLTDataSet` . Per altre informazioni, vedere [Panoramica di TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
 
      Si useranno entrambi gli oggetti più avanti in questa procedura dettagliata.
 
-## <a name="create-controls-and-bind-controls-to-data"></a>Creare controlli e associare controlli ai dati
+## <a name="create-controls-and-bind-controls-to-data"></a>Creare controlli e associare i controlli ai dati
  Per questa procedura dettagliata il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> visualizza tutti i dati nella tabella selezionata non appena l'utente apre la cartella di lavoro. L'oggetto elenco usa un <xref:System.Windows.Forms.BindingSource> per connettere il controllo al database.
 
- Per altre informazioni sull'associazione di controlli ai dati, vedere [Associare dati ai controlli nelle soluzioni Office.](../vsto/binding-data-to-controls-in-office-solutions.md)
+ Per altre informazioni sull'associazione di controlli ai dati, vedere [Associare dati](../vsto/binding-data-to-controls-in-office-solutions.md)ai controlli in Office soluzioni .
 
 ### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>Per aggiungere l'oggetto elenco, il set di dati e l'adattatore tabella
 
@@ -107,7 +108,7 @@ ms.locfileid: "107826356"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs" id="Snippet2":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb" id="Snippet2":::
 
-3. Aggiungere il codice seguente al metodo `ThisAddIn_Startup` . Viene generato un elemento host che estende il foglio di lavoro. Per altre informazioni, vedere Estendere documenti di Word e cartelle di lavoro [di Excel nei componenti aggiuntivi VSTO in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+3. Aggiungere il codice seguente al metodo `ThisAddIn_Startup` . Viene generato un elemento host che estende il foglio di lavoro. Per altre informazioni, vedere Estendere documenti di Word e Excel cartelle di lavoro in VSTO [componenti aggiuntivi in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs" id="Snippet3":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb" id="Snippet3":::
@@ -133,9 +134,9 @@ ms.locfileid: "107826356"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
-- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Procedura: Popolare i fogli di lavoro con i dati di un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Dati nelle soluzioni Office dati](../vsto/data-in-office-solutions.md)
+- [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Procedura: Popolare fogli di lavoro con dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [Procedura: Popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Procedura: Popolare documenti con dati dai servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
 - [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
@@ -143,8 +144,8 @@ ms.locfileid: "107826356"
 - [Procedura: Aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Procedura dettagliata: Data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Procedura dettagliata: Data binding in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
-- [Panoramica dell'uso dei file di database locali nelle soluzioni Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [Usare i file di database locali nella Office delle soluzioni](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Aggiungere nuove origini dati](../data-tools/add-new-data-sources.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Panoramica dell'uso dei file di database locali nelle soluzioni Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [Usare i file di database locali nella Office delle soluzioni](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Panoramica del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6eb81c3ca39155a797682afa891fcabe4bae26e56373499cf46cf0e03903bb83
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 24d03d04d8f819861b30ef31c1d01cecc7e2e346
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360833"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120075"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 Descrive un riferimento.
@@ -58,7 +58,7 @@ public struct DEBUG_REFERENCE_INFO {
 Combinazione di flag [dell'DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica quali campi vengono compilati.
 
 `bstrName`\
-Nome dell'oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) specificato dall'utente.
+Nome specificato dall'utente [dell'oggetto IDebugReference2.](../../../extensibility/debugger/reference/idebugreference2.md)
 
 `bstrType`\
 Tipo di riferimento come stringa formattata.

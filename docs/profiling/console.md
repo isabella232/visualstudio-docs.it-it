@@ -1,6 +1,6 @@
 ---
 title: Console | Microsoft Docs
-description: Usare l'opzione console di VSPerfCmd.exe per avviare l'applicazione specificata in una nuova finestra del prompt dei comandi. È necessario usarlo con l'opzione Launch.
+description: Usare l'opzione Console di VSPerfCmd.exe avviare l'applicazione specificata in una nuova finestra del prompt dei comandi. È necessario usarlo con l'opzione Launch.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,15 +8,16 @@ ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 242a5234c2b7368a992676e12ecbdcd5ea36219f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: caaadb9329ef277cc5e82e787f56f9b3b2b96696
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955411"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039514"
 ---
 # <a name="console"></a>Console
 L'opzione **Console** di VSPerfCmd.exe consente di avviare l'applicazione specificata in una nuova finestra del prompt dei comandi. **Console** può essere usata solo con l'opzione **Launch** di VSPerfCmd. Se l'applicazione non è un'applicazione della riga di comando, **Console** non ha alcun effetto.
@@ -33,7 +34,7 @@ VSPerfCmd.exe /Launch:AppName /Console
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **Console** può essere specificata solo in una riga di comando che contiene anche l'opzione **Launch**.
 
- **Avvia:** `AppName` Avvia il profiler e l'applicazione specificata da `AppName` .
+ **Launch (Avvia):** `AppName` Avvia il profiler e l'applicazione specificata da `AppName` .
 
 ## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)

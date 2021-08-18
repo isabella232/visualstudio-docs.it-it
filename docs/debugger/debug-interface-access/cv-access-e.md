@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 98803034210b9897d6d40a2378791c8ce5385110589b05dd602fd27159e26059
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f784380e1c96a28c200ee2f7ab70cfd21c40a343
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121326577"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121763"
 ---
 # <a name="cv_access_e"></a>CV_access_e
 Specifica l'ambito di visibilità (livello di accesso) delle funzioni membro e delle variabili.
@@ -43,7 +43,7 @@ CV_protected membro ha accesso protetto.
 CV_public membro ha accesso pubblico.
 
 ## <a name="remarks"></a>Commenti
-L'identificatore di accesso non è incluso qui perché viene in genere usato da funzioni non membro che hanno accesso sia agli elementi privati che agli elementi `friend` protetti della classe. Usare il [metodo IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) per trovare i simboli con `SymTagFriend` accesso.
+L'identificatore di accesso non è incluso qui perché viene in genere usato da funzioni non membro che hanno accesso agli elementi privati e `friend` protetti della classe. Usare il [metodo IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) per trovare i simboli con `SymTagFriend` accesso.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst.h

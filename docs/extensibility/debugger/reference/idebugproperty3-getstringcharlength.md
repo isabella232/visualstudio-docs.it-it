@@ -1,6 +1,6 @@
 ---
 description: Restituisce il numero di caratteri nella stringa della proprietà associata.
-title: 'IDebugProperty3:: GetStringCharLength | Microsoft Docs'
+title: IDebugProperty3::GetStringCharLength | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 558716cc4b857ee26b7d8bcc8b8d5ac69f96cc5b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 43e4e935e9661e3054b1da4b1d86316c563e4d3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083947"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063889"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Restituisce il numero di caratteri nella stringa della proprietà associata.
@@ -44,16 +45,16 @@ int GetStringCharLength(
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`pLen`|out Restituisce il numero di caratteri nella stringa della proprietà.|
+|`pLen`|[out] Restituisce il numero di caratteri nella stringa della proprietà.|
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore.
+Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Commenti
-Questo metodo viene in genere utilizzato come preludio all'allocazione di un buffer per una chiamata al metodo [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) .
+In genere, questo metodo viene usato come preludio all'allocazione di un buffer per una chiamata al [metodo GetStringChars.](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CProperty** che espone l'interfaccia [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CProperty** che espone l'interfaccia [IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
 
 ```cpp
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)

@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b4099365a1c5709c6b4c74af3eb6eec0a5eb72b2d367527ce9168ce9cc1f51bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c3ae7df6646fa2c24344c91c03c614b50dbad0b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267364"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082647"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione
   Usando la finestra di progettazione della barra multifunzione è possibile creare una scheda personalizzata per aggiungervi e posizionarvi controlli.
@@ -108,7 +108,7 @@ ms.locfileid: "121267364"
 
 12. Aggiungere un secondo pulsante **a group1** e impostare la **proprietà Label** su Show Actions **Pane 2**.
 
-13. Dalla scheda **Office della casella** degli strumenti trascinare un controllo **ToggleButton** in **group1.**
+13. Dalla scheda **Office della barra multifunzione** della casella degli **strumenti** trascinare un **controllo ToggleButton** in **group1.**
 
 14. Impostare la **proprietà Etichetta** su Nascondi **riquadro azioni.**
 
@@ -141,7 +141,7 @@ ms.locfileid: "121267364"
 
 1. Premere **F5** per eseguire il progetto.
 
-2. Scegliere la **scheda My Custom Tab (Scheda** personalizzata).
+2. Scegliere la **scheda My Custom Tab (Scheda personalizzata).**
 
 3. Nel gruppo **Gestione riquadri azioni** personalizzati scegliere **Mostra riquadro azioni 1.**
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c84e7d52425b6060995d7713e4aee72d931d894d9a9afc6e100c6d408d4d442f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df2029ec156920e17963e8f3ead99771d76c4eb1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292728"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111437"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
 Questo metodo determina se questa porta si trova nel computer locale.

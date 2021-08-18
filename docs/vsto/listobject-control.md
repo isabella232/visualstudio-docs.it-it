@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 555cb96deb97b08068ca1b9634ee1770d0f340f021e3e9e29f09ec8150a09eaf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e4193fd3aeeed1630ce6b35f27101f88293d495b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408149"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032537"
 ---
 # <a name="listobject-control"></a>ListObject (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> è un elenco che espone gli eventi e può essere associato a dati. Quando si aggiunge un elenco a un foglio di lavoro, Visual Studio crea un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> su cui è possibile programmare direttamente senza dover passare attraverso il modello a oggetti di Microsoft Office Excel.
@@ -37,7 +37,7 @@ ms.locfileid: "121408149"
  Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> ai fogli di lavoro aperti solo in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli ListObject ai fogli di lavoro.](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 
 > [!NOTE]
-> Per impostazione predefinita, gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [Aggiungere controlli a Office documenti in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+> Per impostazione predefinita, gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [Aggiungere controlli ai documenti Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
 ## <a name="bind-data-to-the-control"></a>Associare dati al controllo
  Un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> supporta un data binding semplice e complesso. Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> può essere associato a un'origine dati usando le proprietà <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> e <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> in fase di progettazione o il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> in fase di esecuzione.
@@ -119,7 +119,7 @@ ms.locfileid: "121408149"
 - [Procedura: Compilare controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Office e procedure dettagliate per lo sviluppo di applicazioni](../vsto/office-development-samples-and-walkthroughs.md)
 - [Associare dati a controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Estendere documenti di Word Excel cartelle di lavoro VSTO componenti aggiuntivi in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estendere documenti di Word Excel cartelle di lavoro di VSTO componenti aggiuntivi in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controlli su Office documenti](../vsto/controls-on-office-documents.md)
 - [Aggiungere controlli ai Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Procedura: Popolare i fogli di lavoro con i dati di un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)

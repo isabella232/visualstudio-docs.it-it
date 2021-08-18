@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7840b52f476855f1447dd0f28910b291d00872b89f882d1328707ae5677961ef
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6c6c83d059455cc6046547af079de022bb7447d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380594"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134617"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
 Ignora un numero specificato di flussi di debug in una sequenza di enumerazione.

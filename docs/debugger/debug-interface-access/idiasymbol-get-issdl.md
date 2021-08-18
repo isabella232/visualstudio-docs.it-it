@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 28cb649e359b2164eb044f34df37d7997926c05a4ff00ea94b19637defe786e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ec3c7d1986797534e168e6fc7be9864098c3f20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121311758"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031186"
 ---
 # <a name="idiasymbolget_issdl"></a>IDiaSymbol::get_isSdl
 Specifica se il modulo viene compilato con l'opzione /SDL.

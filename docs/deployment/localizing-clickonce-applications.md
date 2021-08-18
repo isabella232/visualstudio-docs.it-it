@@ -1,6 +1,6 @@
 ---
-title: Localizzazione di applicazioni ClickOnce | Microsoft Docs
-description: Informazioni su tre modi per localizzare l'applicazione ClickOnce in una versione appropriata per impostazioni cultura specifiche.
+title: Localizzazione di ClickOnce applicazioni | Microsoft Docs
+description: Informazioni su tre modi per localizzare l'applicazione ClickOnce a una versione appropriata per impostazioni cultura specifiche.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,14 +21,15 @@ ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97756456d192921c2fff4ef9f283a89e775165c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051534"
 ---
 # <a name="localize-clickonce-applications"></a>Localizzazione delle applicazioni ClickOnce
 La localizzazione è il processo di adattamento di un'applicazione a impostazioni cultura specifiche. Questo processo consiste nel tradurre il testo dell'interfaccia utente in una lingua specifica di un paese/regione, usare la formattazione di data e valuta corretta, regolare la dimensione dei controlli di un form e, se necessario, eseguire il mirroring dei controlli da destra verso sinistra.
@@ -53,14 +54,14 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
  Il vantaggio di questo approccio è dato dalla possibilità di creare un'unica distribuzione e di semplificare il processo della distribuzione localizzata. In fase di esecuzione verrà usato l'assembly satellite appropriato, a seconda delle impostazioni cultura predefinite del sistema operativo Windows dell'utente. L'inconveniente di questo approccio riguarda il fatto che, ogni volta che l'applicazione viene installata o aggiornata in un computer client, vengono scaricati tutti gli assembly satellite. Se nell'applicazione è contenuto un numero elevato di stringhe o i clienti hanno una connessione di rete lenta, questo processo può influire sulle prestazioni durante l'aggiornamento dell'applicazione.
 
 > [!NOTE]
-> Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche [procedura: supportare la localizzazione in Windows Form usando AutoSize e il controllo TableLayoutPanel](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).
+> Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche Procedura: Supportare la localizzazione nei Windows [usando AutoSize e il controllo TableLayoutPanel](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).
 
 ## <a name="generate-one-deployment-for-each-culture"></a>Generare una distribuzione per le singole impostazioni cultura
  In questa strategia di distribuzione vengono generate più distribuzioni. In ogni distribuzione viene incluso solo l'assembly satellite necessario per impostazioni cultura specifiche e la distribuzione viene contrassegnata come specifica di tali impostazioni cultura.
 
  Per usare questo metodo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], impostare la proprietà **Lingua di pubblicazione** nella scheda **Pubblica** sul paese/regione desiderato. L'assembly satellite richiesto per il paese/regione selezionato verrà incluso automaticamente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e tutti gli altri assembly satellite verranno esclusi dalla distribuzione.
 
- È possibile eseguire la stessa operazione utilizzando lo strumento *MageUI.exe* in Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Usare il pulsante **Popola** nella scheda **File** del manifesto dell'applicazione per escludere tutti gli altri assembly satellite dalla directory dell'applicazione, quindi impostare il campo **Impostazioni cultura** nella scheda **Nome** per il manifesto della distribuzione in *MageUI.exe*. Questi passaggi non consentono solo di includere l'assembly satellite corretto, ma anche di impostare l'attributo `language` dell'elemento `assemblyIdentity` nel manifesto della distribuzione sul valore delle impostazioni cultura corrispondenti.
+ È possibile eseguire la stessa operazione usando lo *strumentoMageUI.exe* in Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Usare il pulsante **Popola** nella scheda **File** del manifesto dell'applicazione per escludere tutti gli altri assembly satellite dalla directory dell'applicazione, quindi impostare il campo **Impostazioni cultura** nella scheda **Nome** per il manifesto della distribuzione in *MageUI.exe*. Questi passaggi non consentono solo di includere l'assembly satellite corretto, ma anche di impostare l'attributo `language` dell'elemento `assemblyIdentity` nel manifesto della distribuzione sul valore delle impostazioni cultura corrispondenti.
 
  Dopo aver pubblicato l'applicazione, è necessario ripetere questo passaggio per tutte le impostazioni cultura aggiuntive supportate dall'applicazione. La pubblicazione deve essere eseguita ogni volta in una directory di server Web o in una directory di condivisione file diversa, perché ogni manifesto dell'applicazione farà riferimento a un assembly satellite diverso e ogni manifesto della distribuzione avrà un valore diverso per l'attributo `language`.
 
@@ -81,6 +82,6 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
 - È possibile impostare la proprietà <xref:System.Threading.Thread.CurrentUICulture%2A> a livello di codice nell'applicazione. Questa proprietà deve essere impostata prima di chiamare il metodo <xref:System.Windows.Forms.Application.Run%2A>.
 
 ## <a name="see-also"></a>Vedi anche
-- [\<assemblyIdentity> elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [\<assemblyIdentity> Elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Globalizzazione di Windows Form](/dotnet/framework/winforms/advanced/globalizing-windows-forms)
+- [Globalizzazione di Windows moduli](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

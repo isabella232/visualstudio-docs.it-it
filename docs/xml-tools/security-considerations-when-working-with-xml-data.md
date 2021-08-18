@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cddb1ecab1a2600d347aebeb245f2faf693a7db5ae7f2aa2467acf3ae69f1ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1860fa79502701a0adaa233302d99092c7724dde
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440097"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037733"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considerazioni sulla sicurezza quando si lavora con i dati XML
 
@@ -24,7 +24,7 @@ In questo argomento vengono illustrati i problemi di sicurezza che è necessario
 
 ## <a name="xml-editor"></a>Editor XML
 
-L'editor XML si basa sull'Visual Studio editor di testo. e si basa sulle classi <xref:System.Xml> e <xref:System.Xml.Xsl> per gestire gran parte dei processi XML.
+L'editor XML è basato sul Visual Studio editor di testo. e si basa sulle classi <xref:System.Xml> e <xref:System.Xml.Xsl> per gestire gran parte dei processi XML.
 
 - Le trasformazioni XSLT vengono eseguite in un nuovo dominio applicazione. Le trasformazioni XSLT sono in *modalità sandbox.* in altri casi, i criteri di sicurezza dall'accesso di codice del computer vengono usati per determinare le autorizzazioni limitate in base alla posizione del foglio di stile XSLT. Ad esempio, per i fogli di stile provenienti da un'area Internet vengono applicate autorizzazioni con la limitazione massima, mentre per i fogli di stile copiati sull'unità disco rigido del computer vengono eseguiti con un livello di Attendibilità totale.
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera l'intervallo per la posizione corrente del documento.
+description: Recupera l'intervallo per la posizione del documento corrente.
 title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f62d00ef9abb422132da27c0f7eb2112477d79ca8b4939c5dd10ceb6344de39
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5a262287e6dc84316686f1132ed0ac496eee35e0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261996"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111243"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
-Recupera l'intervallo per la posizione corrente del documento.
+Recupera l'intervallo per la posizione del documento corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,14 +52,14 @@ public int GetRange(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- L'intervallo specificato in una posizione del documento per un punto di interruzione della posizione viene usato dal motore di debug per cercare in anticipo un'istruzione che effettivamente contribuisce al codice. Si consideri il codice di esempio seguente:
+ L'intervallo specificato in una posizione del documento per un punto di interruzione della posizione viene usato dal motore di debug (DE) per cercare in anticipo un'istruzione che contribuisce effettivamente al codice. Si consideri il codice di esempio seguente:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- La riga 5 non genera codice per il programma di cui è in corso il debug. Se il debugger che imposta il punto di interruzione alla riga 5 vuole che DE eserviti la ricerca in avanti di una determinata quantità per la prima riga che contribuisce al codice, il debugger specifica un intervallo che include righe candidate aggiuntive in cui un punto di interruzione potrebbe essere posizionato correttamente. De cerca quindi in avanti nelle righe fino a quando non trova una riga che può accettare un punto di interruzione.
+ La riga 5 non genera codice per il programma in fase di debug. Se il debugger che imposta il punto di interruzione alla riga 5 vuole che il de venga cercato in avanti per la prima riga che contribuisce al codice, il debugger specifica un intervallo che include righe candidate aggiuntive in cui un punto di interruzione potrebbe essere inserito correttamente. Il de cerca quindi in avanti attraverso tali righe fino a quando non trova una riga che può accettare un punto di interruzione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)

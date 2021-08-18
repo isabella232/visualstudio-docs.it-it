@@ -1,6 +1,6 @@
 ---
 title: Testo dell'interfaccia utente e Guida per Visual Studio | Microsoft Docs
-description: Informazioni sul testo e sulla terminologia dell'interfaccia utente usati nelle informazioni della Guida per Visual Studio.
+description: Informazioni sul testo dell'interfaccia utente e sulla terminologia usati nelle informazioni della Guida per Visual Studio.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -10,16 +10,16 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e946715687b46f651ac301f4e95207dbde23451011e9a48d0c20ae6a200e073
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ca987c3f4b311b75b6a6070f8340c179c2ea6e0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335420"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078713"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e Guida per Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Testo e terminologia dell'interfaccia utente
- Il testo comprensibile è fondamentale per un'interfaccia utente efficace. Gli utenti del software tendono a leggere prima le etichette, in questo caso quelle più rilevanti per completare l'attività in corso. Il testo statico viene letto con una frequenza minore. Pianificare l'avvio delle sessioni di lavoro da parte degli utenti con un'analisi rapida dell'intera finestra, seguita da una lettura dell'interfaccia utente in questo ordine approssimativo:
+ Il testo comprensibile è fondamentale per un'interfaccia utente efficace. Gli utenti del software tendono a leggere prima le etichette, cio' quelle più rilevanti per completare l'attività a portata di mano. Il testo statico viene letto con minore frequenza. Pianificare l'avvio delle sessioni di lavoro da parte degli utenti con un'analisi rapida dell'intera finestra, seguita da una lettura dell'interfaccia utente in questo ordine approssimativo:
 
 1. Controlli interattivi al centro
 
@@ -41,15 +41,15 @@ ms.locfileid: "121335420"
  Il testo della barra del titolo deve corrispondere al comando che ha generato l'interfaccia utente.
 
 #### <a name="instructional-text-helper-text"></a>Testo informativo (testo helper)
- In alcune finestre di dialogo è utile fornire istruzioni principali principali per spiegare cosa fare nella finestra o nella pagina. Questo testo viene talvolta definito "testo helper".
+ In alcuni dialoghe è utile fornire istruzioni principali importanti per spiegare cosa fare nella finestra o nella pagina. Questa operazione viene talvolta definita "testo helper".
 
 ##### <a name="writing-style-rules-for-helper-text"></a>Scrittura di regole di stile per il testo helper
 
 - Non spiegare l'ovvio. A meno che non sia assolutamente necessario, non includere testo informativo.
 
-- Il testo informativo viene sempre inserito nella parte superiore del dialogo e deve fare riferimento all'attività eseguita.
+- Il testo informativo viene sempre posizionato nella parte superiore della finestra di dialogo e deve fare riferimento all'attività eseguita.
 
-- Spiegare con precisione agli utenti cosa devono fare. Evitare comunicazioni e ridondanza eccessive.
+- Spiegare con precisione agli utenti cosa devono fare. Evitare un numero eccessivo di comunicazioni e ridondanza.
 
 - Esaminare ogni finestra ed eliminare le parole e le istruzioni duplicate.
 
@@ -60,9 +60,9 @@ ms.locfileid: "121335420"
 - Seguire le linee guida Microsoft esistenti [per Interfaccia utente testo](/windows/desktop/uxguide/text-ui) e stile e [tono.](/windows/desktop/uxguide/text-style-tone)
 
 #### <a name="supplemental-instructions"></a>Istruzioni supplementari
- Le istruzioni supplementari forniscono informazioni aggiuntive che consentono all'utente di comprendere i controlli o i raggruppamenti di controlli. Può anche includere il testo dei suggerimenti necessario per comprendere il formato previsto dal controllo di input. Usare istruzioni supplementari solo se necessario. Riservarli per i casi in cui è probabile che l'utente non comprendi completamente le ramificazioni della scelta effettuata.
+ Le istruzioni supplementari forniscono informazioni aggiuntive che consentono all'utente di comprendere i controlli o i raggruppamenti di controlli. Può anche includere il testo dei suggerimenti necessario per comprendere il formato previsto dal controllo di input. Usare istruzioni supplementari con parsimonio. Riservarle per i casi in cui è probabile che l'utente non comprendi completamente le ramificazioni della scelta che sta facendo.
 
- ![Screenshot che mostra il Internet Explorer opzioni con il testo supplementare sottostante che descrive l'impatto della modifica delle impostazioni delle opzioni.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![Screenshot che mostra il Internet Explorer opzioni con testo supplementare sotto di esso che descrive l'impatto della modifica delle impostazioni delle opzioni.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Testo supplementare in Visual Studio**
 
@@ -70,69 +70,69 @@ ms.locfileid: "121335420"
 
  **Testo supplementare in Visual Studio**
 
-#### <a name="infotips"></a>Descrizioni comandi
- Spesso, il testo informativo potrebbe essere troppo lungo per essere posizionato sul posto nell'interfaccia utente o essere utile solo per i nuovi utenti, con la sensazione di creare confusione per gli utenti esperti. In questo caso, il testo informativo/informativo deve essere inserito come descrizione comando sotto una descrizione comando.
+#### <a name="infotips"></a>Suggerimenti per le informazioni
+ Spesso, il testo informativo potrebbe essere troppo lungo per posizionarsi sul posto nell'interfaccia utente o potrebbe essere utile solo per i nuovi utenti, con la sensazione di disordine per gli utenti esperti. In questo caso, il testo informativo o informativo deve essere inserito come descrizione comando in un suggerimento informativo.
 
- Le descrizioni comandi devono essere posizionate accanto ai controlli a cui sono correlate e devono usare l'icona specifica della descrizione comandi, che è discreta ma evidente.
+ I suggerimenti informazioni devono essere posizionati vicino ai controlli a cui sono correlati e devono usare l'icona specifica del suggerimento, che è discreta ma evidente.
 
  ![InfoTip in Visual Studio](../../extensibility/ux-guidelines/media/0601-d_infotip.png "0601-d_InfoTip")
 
  **Esempio di suggerimento in Visual Studio**
 
-##### <a name="writing-style-rules-for-infotips"></a>Scrittura di regole di stile per le descrizioni comandi
+##### <a name="writing-style-rules-for-infotips"></a>Scrittura di regole di stile per i suggerimenti info
 
-- Scrivere descrizioni comandi come frasi complete. Richiedono verbi specifici, la distinzione tra maiuscole e minuscole e la punteggiatura finale.
+- Scrivere suggerimenti info come frasi complete. Richiedono verbi specifici, lettere maiuscole e minuscole e punteggiatura finale.
 
-- Usare le descrizioni comandi per integrare l'istruzione o le informazioni principali. Se si usano solo parole diverse per rideterminare l'idea principale, non è necessaria una descrizione comandi.
+- Usare le descrizioni comandi per integrare le istruzioni o le informazioni principali. Se si usano solo parole diverse per riasserre l'idea principale, non è necessario un suggerimento.
 
-- Tenere brevi e brevi le descrizioni comandi. Usare parole piccole e linguaggio semplice e quotidiano che supporti e incoraggi l'utente.
+- Mantenere le descrizioni comandi brevi e corte. Usare parole piccole e un linguaggio semplice e quotidiano che supporti e incoraggi l'utente.
 
 - Seguire le linee guida Microsoft esistenti [per Interfaccia utente testo](/windows/desktop/uxguide/text-ui) e stile e [tono.](/windows/desktop/uxguide/text-style-tone)
 
 #### <a name="control-labels"></a>Etichette di controllo
- Le etichette dei controlli devono essere brevi, concise e seguire le linee [guida Windows Desktop per i controlli](/windows/desktop/uxguide/controls).
+ Le etichette di controllo devono essere brevi, concise e seguire le indicazioni [Windows Desktop per i controlli](/windows/desktop/uxguide/controls).
 
- Per altre informazioni sul formato dell'etichetta del controllo e sul posizionamento all'interno dell'interfaccia utente, vedere [Layout per Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
+ Per altre informazioni sul formato dell'etichetta del controllo e sulla posizione all'interno dell'interfaccia utente, vedere [Layout per Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="help-links"></a>Collegamenti della Guida
- I collegamenti alla Guida possono essere inseriti all'interno del testo informativo o nel corpo dell'interfaccia utente. Possono essere collegamenti alla Guida o avviare finestre di dialogo interne.
+#### <a name="help-links"></a>Collegamenti alla Guida
+ I collegamenti della Guida possono essere inseriti all'interno del testo informativo o nel corpo dell'interfaccia utente. Possono essere collegamenti alla Guida o avviare finestre di dialogo interne.
 
-##### <a name="visual-style-rules-for-help-links"></a>Regole dello stile di visualizzazione per i collegamenti della Guida
+##### <a name="visual-style-rules-for-help-links"></a>Regole di stile di visualizzazione per i collegamenti della Guida
 
-- Usare i colori di ambiente corretti per i collegamenti ipertestuali. Quando si fa clic su un collegamento ipertestuale con uno stile corretto, il rosso non lampeggia brevemente. Se viene visualizzato, è un'indicazione che i colori dell'ambiente non vengono usati.
+- Usare i colori dell'ambiente corretti per i collegamenti ipertestuali. Quando si fa clic su un collegamento ipertestuale con uno stile corretto, il rosso non lampeggia brevemente. Se viene visualizzato, significa che i colori dell'ambiente non vengono usati.
 
 - Le sottolineature devono essere usate solo al passaggio del mouse o quando il collegamento è incorporato in un paragrafo.
 
-- Per informazioni più dettagliate sugli stili visivi e di interazione per i collegamenti ipertestuali, vedere Pulsanti e collegamenti ipertestuali.
+- Per informazioni più dettagliate sugli stili di visualizzazione e interazione per i collegamenti ipertestuali, vedere Pulsanti e collegamenti ipertestuali.
 
 ##### <a name="writing-style-rules-for-help-links"></a>Scrittura di regole di stile per i collegamenti della Guida
 
-- Quando si avviano le finestre di dialogo, mantenere gli standard per i puntini di sospensione: nessun pulsante con i puntini di sospensione per la navigazione, puntini di sospensione se l'attività richiede un'interfaccia utente aggiuntiva.
+- Quando si avviano dialoghe, mantenere gli standard per i puntini di sospensione: nessun puntini di sospensione per la navigazione, puntini di sospensione se l'attività richiede un'interfaccia utente aggiuntiva.
 
      ![Collegamento Guida in Visual Studio](../../extensibility/ux-guidelines/media/0601-e_helplink.png "0601-e_HelpLink")
 
      **I puntini di sospensione (...) in un collegamento alla Guida indicano che l'attività richiederà un'interfaccia utente aggiuntiva.**
 
-- I collegamenti non devono iniziare con "Learn", perché questa non è la finalità dell'utente. L'utente vuole rispondere a una domanda specifica, non ricevere una formazione generale.
+- I collegamenti non devono iniziare con "Learn", perché questa non è la finalità dell'utente. L'utente vuole rispondere a una domanda specifica, non ricevere un'istruzione generale.
 
-- Collegamenti alla Guida per le frasi in modo da porre la domanda a cui risponderà l'argomento.
+- Collegamenti alla Guida per frasi in modo da porre la domanda a cui risponderà l'argomento.
 
-     Risposta errata: "Altre informazioni sui prezzi Windows azure Servizi mobili"
+     Non corretto: "Altre informazioni sui Windows prezzi Servizi mobili Azure"
 
-     Risposta corretta: "Quali opzioni di prezzo sono disponibili per Windows azure Servizi mobili?"
+     Correzione: "Quali opzioni di prezzo sono disponibili per Windows Azure Servizi mobili?"
 
-- Non usare mai *Click...* per il testo del collegamento.
+- Non usare *mai Fare clic sul* testo del collegamento.
 
-- Non collegare mai solo la parola "qui". Ciò è problematico per alcune utilità per la lettura dello schermo, che eseranno solo la parola con collegamento ipertestuale.
+- Non collegare mai solo la parola "qui". Ciò è problematico per alcune utilità per la lettura dello schermo, che esereranno solo la parola con collegamento ipertestuale.
 
-     Risposta errata: "Trovare informazioni su azure Windows Azure Servizi mobili **qui"**
+     Non corretto: "Trovare informazioni su Windows Azure Servizi mobili **qui"**
 
-     Risposta corretta: "Quali opzioni di prezzo sono disponibili per Windows azure Servizi mobili?"
+     Correzione: "Quali opzioni di prezzo sono disponibili per Windows Azure Servizi mobili?"
 
-- Per altre informazioni sullo stile di scrittura corretto per i collegamenti della Guida, vedere le linee [guida Windows Desktop per la Guida](/windows/desktop/uxguide/winenv-help)di .
+- Per altre informazioni sullo stile di scrittura corretto per i collegamenti della Guida, vedere le linee [guida Windows Desktop per la Guida.](/windows/desktop/uxguide/winenv-help)
 
-#### <a name="hint-text"></a>Testo del suggerimento
- Il testo del suggerimento viene visualizzato come filigrana all'interno di un controllo o sotto il controllo. La formattazione corretta verrà applicata usando il token VSColors appropriato, `Environment.GrayText` .
+#### <a name="hint-text"></a>Testo dei suggerimenti
+ Il testo del suggerimento viene visualizzato come filigrana all'interno di un controllo o sotto il controllo . La formattazione corretta verrà applicata usando il token VSColors appropriato, `Environment.GrayText` .
 
  Può essere visualizzato in diversi formati.
 
@@ -142,18 +142,18 @@ ms.locfileid: "121335420"
 
 - Con un verbo, fornendo istruzioni:
 
-     ![Screenshot di una casella di testo con il testo del suggerimento nel controllo con il testo "Enter your name".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![Screenshot di una casella di testo con il testo del suggerimento nel controllo con il testo "Immettere il nome".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - Con testo che indica una voce obbligatoria:
 
      ![Screenshot di una casella di testo con il testo del suggerimento nel controllo che legge " \< \> Obbligatorio ".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>Testo della filigrana
- In un'area di progettazione vuota, il testo deve indicare le attività da eseguire e fornire collegamenti per aprire altre finestre correlate, se appropriato:
+ In un'area di progettazione vuota, il testo deve indicare cosa fare e fornire collegamenti per aprire altre finestre correlate, se appropriato:
 
  ![Testo filigrana in Visual Studio](../../extensibility/ux-guidelines/media/0601-i_watermarktext.png "0601-i_WatermarkText")
 
- **Esempio di testo della filigrana in Visual Studio**
+ **Esempio di testo limite in Visual Studio**
 
 ### <a name="common-terminology"></a>Terminologia comune
 
@@ -247,42 +247,42 @@ ms.locfileid: "121335420"
 
 - **Specifico.** Evitare formulazioni vaghe e assegnare nomi e posizioni specifici degli oggetti coinvolti. Ad esempio, un messaggio di errore come "carattere non valido" non è utile. Quale carattere? "File non trovato". Quale file?
 
-- **Cortese.** Non incolpare l'utente o non farlo sentire uno stolto. Evitare linguaggio ostile o offensivo (kill, execute, terminate, fatal, illegal). Evitare il testo in maiuscolo, che viene spesso visto come un urlo e non è leggibile. Non usare l'ironia.
+- **Cortese.** Non incolpare l'utente o farlo provare. Evitare un linguaggio offensivo o offensivo (terminare, eseguire, terminare, irreversibile, non valido). Evitare il testo in maiuscolo, che viene spesso considerato come un'eserezione e non è leggibile. Non usare l'avaio.
 
-- **Risposta esatta.** Usare l'ortografia e la grammatica corrette (anche in caratteri alfa). Gli errori di digitazione sono poco professionale e imbarazzanti.
+- **Risposta esatta.** Usare ortografia e grammatica corrette (anche in caratteri alfa). Gli errori di digitazione sono poco professionale e imbarazzanti.
 
-- **Contestualmente appropriato.** Usare il testo del pulsante appropriato. Evitare il pulsante "OK" e usare invece "Continua" o "Sì/No".
+- **Appropriato a livello di contesto.** Usare il testo del pulsante appropriato. Evitare il pulsante "OK" e usare invece "Continua" o "Sì/No".
 
 ### <a name="error-message-examples"></a>Esempi di messaggi di errore
 
 |Buono|Non valido|
 |----------|---------|
-|"Il numero composto non è più in servizio. Controllare il numero e comporre di nuovo o digitare 0 per l'operatore."|- "Errore (449): Numero non valido"<br />- "Questo errore di eccezione non gestita indica che l'operazione è stata completata correttamente".<br /><br /> ![Messaggio di errore non valido in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
+|"Il numero composto non è più in servizio. Controllare il numero e comporre di nuovo o comporre 0 per l'operatore."|- "Errore (449): numero non valido"<br />- "Questo errore di eccezione non gestita indica che l'operazione è stata completata correttamente".<br /><br /> ![Messaggio di errore non valido in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>Accesso alla Guida
 
 ### <a name="overview"></a>Panoramica
  Oltre alla documentazione in MSDN, un utente Visual Studio dispone di diversi punti di accesso per assistere l'utente nell'interfaccia utente. Per garantire che questi punti di accesso siano disponibili in modo coerente, i team delle funzionalità devono sfruttare il sistema della Guida offerto dall'ambiente. Questi punti di accesso sono:
 
-- **Testo informativo e supplementare nei dialoghe.** Testo statico che fornisce la direzione o la spiegazione, sulla superficie dell'interfaccia utente o disponibile al passaggio del mouse su un'icona della descrizione comando.
+- **Testo informativo e supplementare nelle finestre di dialogo.** Testo statico che fornisce la direzione o la spiegazione, nell'area dell'interfaccia utente o disponibile al passaggio del mouse su un'icona di suggerimento.
 
-- **Guida F1** (solo editor). Nell'editor Visual Studio, un utente può considerare attendibile che in qualsiasi momento premendo F1 verrà visualizzato un argomento della Guida specifico per la selezione corrente. Assicurarsi che gli argomenti associati a F1 siano appropriati e informativi.
+- **Guida F1** (solo editor). Nell'editor Visual Studio un utente può considerare attendibile che in qualsiasi momento premendo F1 verrà visualizzato un argomento della Guida specifico della selezione corrente. Assicurarsi che gli argomenti associati a F1 siano appropriati e informativi.
 
 - **Collegamenti ipertestuali agli argomenti della Guida.** Collegamento ipertestuale all'interno di una finestra di dialogo, una finestra degli strumenti o un'area di progettazione che avvia un argomento per aiutare l'utente a ottenere altre informazioni su una tecnologia, una funzionalità o informazioni su come eseguire un'attività.
 
-- **Meccanismi dell'interfaccia utente helper, ad esempio smart tag e finestre di dialogo di compilazione.** Questi meccanismi facilitano la comprensione di un elemento dell'interfaccia utente o facilitano un'attività, ad esempio smart tag o finestre di dialogo del generatore.
+- **Meccanismi dell'interfaccia utente helper, ad esempio smart tag e compilazione di finestre di dialogo.** Questi meccanismi facilitano la comprensione di un elemento dell'interfaccia utente o facilitano un'attività, ad esempio smart tag o finestre di dialogo del generatore.
 
-- **Pulsanti della Guida dell'interfaccia** utente (deprecati). Indicatore visibile nella barra del titolo che consente di accedere all'argomento della Guida di F1 correlato.
+- **Pulsanti della Guida dell'interfaccia** utente (deprecati). Indicatore visibile nella barra del titolo che consente di accedere all'argomento della Guida F1 correlato.
 
 ### <a name="text"></a>Testo
 
-#### <a name="instructional-and-supplemental-text-in-dialogs"></a>Testo informativo e supplementare nei dialoghe
- Nei dialoghe che supportano attività complesse potrebbe essere necessario fornire testo informativo all'interno dell'interfaccia utente, spesso nella parte superiore della finestra di dialogo o vicino a controlli complessi. Per informazioni [dettagliate sullo stile di scrittura,](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) vedere Testo e terminologia dell'interfaccia utente.
+#### <a name="instructional-and-supplemental-text-in-dialogs"></a>Testo informativo e supplementare nelle finestre di dialogo
+ Nelle finestre di dialogo che supportano attività complesse potrebbe essere necessario fornire testo informativo all'interno dell'interfaccia utente, spesso nella parte superiore della finestra di dialogo o in prossimità di controlli complessi. Per informazioni [dettagliate sullo stile di scrittura,](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) vedere Testo e terminologia dell'interfaccia utente.
 
-#### <a name="infotips"></a>Suggerimenti per le informazioni
- Spesso, il testo informativo potrebbe essere troppo lungo per essere posizionato sul posto nell'interfaccia utente o potrebbe essere utile solo per i nuovi utenti, con la sensazione di disordine per gli utenti esperti. In questo caso, il testo informativo o informativo deve essere inserito come descrizione comando in un suggerimento informativo.
+#### <a name="infotips"></a>Descrizioni comandi
+ Spesso, il testo informativo potrebbe essere troppo lungo per essere posizionato sul posto nell'interfaccia utente o essere utile solo per i nuovi utenti, con la sensazione di creare confusione per gli utenti esperti. In questo caso, il testo informativo/informativo deve essere inserito come descrizione comando sotto una descrizione comando.
 
- I suggerimenti informazioni devono essere posizionati vicino ai controlli a cui sono correlati e devono usare l'icona specifica del suggerimento, che è discreta ma evidente.
+ Le descrizioni comandi devono essere posizionate accanto ai controlli a cui sono correlate e devono usare l'icona specifica della descrizione comandi, che è discreta ma evidente.
 
  ![InfoTip in Visual Studio](../../extensibility/ux-guidelines/media/0601-d_infotip.png "0601-d_InfoTip")
 
@@ -291,37 +291,37 @@ ms.locfileid: "121335420"
 ### <a name="interactive-help-mechanisms"></a>Meccanismi della Guida interattiva
 
 #### <a name="f1-help"></a>Guida sensibile al contesto
- La Guida F1 è necessaria all'interno di un editor o di un'area di progettazione, ma non altrove nell'Visual Studio ambiente.
+ La Guida F1 è necessaria all'interno di un editor o di un'area di progettazione, ma non in altre Visual Studio ambiente.
 
 #### <a name="hyperlinks-to-help-topics"></a>Collegamenti ipertestuali agli argomenti della Guida
- I collegamenti ipertestuali possono essere usati per eseguire un'azione, spostarsi all'interno dell'IDE o avviare la Guida in un browser. Vedere [testo e terminologia dell'interfaccia](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) utente per informazioni dettagliate sulla lingua e i pulsanti e i collegamenti ipertestuali 07.10.01 per le linee guida per oggetti visivi e layout.
+ I collegamenti ipertestuali possono essere usati per eseguire un'azione, spostarsi all'interno dell'IDE o avviare la Guida in un browser. Vedere [Testo e terminologia dell'interfaccia](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) utente per informazioni dettagliate sulla lingua e Pulsanti e collegamenti ipertestuali 07.10.01 per linee guida per oggetti visivi e layout.
 
 #### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>Pulsanti della Guida [?] nelle barre del titolo della finestra di dialogo (deprecati)
- Per la maggior parte, i pulsanti Della Guida [?] nella barra del titolo delle finestre di dialogo sono deprecati. Gli argomenti dell'interfaccia utente non fanno più parte del modello di documentazione e pertanto potrebbe non esserci un argomento pertinente a cui collegarsi. Essenzialmente, il pulsante della barra del titolo era lo stesso della Guida di F1 e non è più necessario nei dialoghe. In alcuni casi, questo può comunque essere usato come indicatore che sono disponibili più informazioni concettuali o procedurali, anche se i collegamenti ipertestuali vengono usati più comunemente nell'interfaccia utente più recente.
+ Nella maggior parte dei casi, i pulsanti della Guida [?] nella barra del titolo delle finestre di dialogo sono deprecati. Gli argomenti dell'interfaccia utente non fanno più parte del modello di documentazione e pertanto potrebbe non esserci un argomento pertinente a cui collegarsi. In sostanza, il pulsante della barra del titolo è lo stesso della Guida F1 e non è più necessario nelle finestre di dialogo. In alcuni casi, questo può comunque essere usato come indicatore della disponibilità di informazioni più concettuali o procedurali, anche se i collegamenti ipertestuali sono più comunemente usati nell'interfaccia utente più recente.
 
-##### <a name="dialogs-created-through-the-environment"></a>Dialogs created through the environment (Dialogs created through the environment) (Dialogs created through the
- Molte finestre di dialogo della shell vengono create tramite la **funzione VBDialogBoxParam.** Questa funzione condivisa è stata aggiornata per facilitare lo spostamento del pulsante **?** dalla finestra di dialogo a **?** mantenendo un'architettura compatibile con le versioni precedenti ed estendibile.
+##### <a name="dialogs-created-through-the-environment"></a>Dialogs created through the environment
+ Molte finestre di dialogo della shell vengono create tramite **la funzione VBDialogBoxParam.** Questa funzione condivisa è stata aggiornata per facilitare lo **spostamento** del pulsante ? dalla finestra di dialogo all'oggetto **?** mantenendo un'architettura compatibile con le versioni precedenti ed estendibile.
 
- In particolare, la funzione **VBDialogBoxParam** cerca nel modello di finestra di dialogo un pulsante il cui ID è **IDHELP** (9) o l'etichetta è **Help** o **&Help**. Se viene trovato un pulsante ? viene nascosto e lo **stile** WS_EX_CONTEXTHELP viene aggiunto alla finestra di dialogo, che inserisce **?** nella barra del titolo della finestra di dialogo.
+ In particolare, la **funzione VBDialogBoxParam** cerca nel modello di finestra di dialogo un pulsante il cui ID è **IDHELP** (9) o label è **Help** **o&Help**. Se viene trovato un pulsante ?  , il pulsante viene nascosto e WS_EX_CONTEXTHELP alla finestra di dialogo viene aggiunto lo stile **?** nella barra del titolo della finestra di dialogo.
 
- Quando il dialogo viene creato, inserisce la procedura del dialogo in uno stack e richiama la finestra di dialogo con una procedura di pre-elaborazione del dialogo denominata **DialogPreProc**. Quando l'oggetto **?** viene fatto clic sul pulsante e viene inviato **un WM_SYSCOMMAND** di **SC_CONTEXTHELP** alla finestra di dialogo. **DialogPreProc** acquisisce questo comando e  lo modifica in un messaggio WM_HELP, che viene passato alla procedura originale della finestra di dialogo.
+ Quando il dialogo viene creato, inserisce la procedura del dialogo in uno stack e richiama il dialogo con una procedura di dialogo di pre-elaborazione denominata **DialogPreProc.** Quando l'oggetto **?** viene fatto clic sul pulsante e viene inviato **un WM_SYSCOMMAND** di **SC_CONTEXTHELP** alla finestra di dialogo. **DialogPreProc** acquisisce questo comando e lo modifica in un messaggio **WM_HELP,** che viene passato alla procedura di dialogo originale.
 
- La maggior parte delle finestre di dialogo create dall'ambiente ha un pulsante ? nella finestra di dialogo. Quando viene visualizzata la finestra di dialogo, il pulsante ? viene nascosto automaticamente e solo **?** il pulsante funziona. Se l'oggetto **?** il pulsante viene rimosso o modificato in Windows, questa soluzione consente di tornare rapidamente ai pulsanti originali della Guida.
+ La maggior parte delle finestre di dialogo create dall'ambiente ha un pulsante ? nella finestra di dialogo. Quando viene visualizzata la finestra di dialogo, il pulsante ? viene nascosto automaticamente e solo **il pulsante ?** il pulsante funziona. Se l'oggetto **?** il pulsante viene rimosso o modificato in Windows, questa soluzione consente di tornare rapidamente ai pulsanti della Guida originali.
 
  Questa soluzione presuppone quattro presupposti che potrebbero causare bug:
 
-- Il pulsante della Guida della finestra di dialogo è **IDHELP** (9).
+- Il pulsante della Guida della finestra di dialogo **è IDHELP** (9).
 
 - La finestra di dialogo ha un aspetto corretto quando il pulsante ? è nascosto.
 
-- La finestra di dialogo non sostituisce il relativo winproc.
+- Il dialogo non sostituisce il relativo winproc.
 
-- La finestra di dialogo non è incorporata all'interno di un'altra finestra di dialogo.
+- La finestra di dialogo non è incorporata all'interno di un altro dialogo.
 
-  Se la finestra di dialogo si trova all'interno di msenv e non usa **VBDialogBoxParam,** esaminare l'uso **di VBDialogBoxParam** prima di implementare un gestore personalizzato.
+  Se il dialogo si trova all'interno di msenv e non usa **VBDialogBoxParam,** esaminare l'uso di **VBDialogBoxParam** prima di implementare un gestore personalizzato.
 
-##### <a name="dialogs-created-through-other-packages"></a>Dialogs created through other packages (Dialogs created through other packages) (Dialogs created through other
- È possibile implementare una soluzione personalizzata per i dialoghe che si trovano all'esterno di msenv. Per una classe di finestra di dialogo condivisa nel pacchetto VSPackage, è consigliabile spostare il pulsante sulla barra del titolo o implementare un gestore in ogni finestra di dialogo. Il codice seguente è uno scheletro di un'implementazione che consente di iniziare:
+##### <a name="dialogs-created-through-other-packages"></a>Finestre di dialogo create tramite altri pacchetti
+ È possibile implementare una soluzione personalizzata per i dialognti che si trovano all'esterno di msenv. Per una classe di finestra di dialogo condivisa nel pacchetto VSPackage, è consigliabile spostare il pulsante sulla barra del titolo o implementare un gestore in ogni finestra di dialogo. Il codice seguente è uno scheletro di un'implementazione per iniziare:
 
 ```
 struct DLGPROCITEM
@@ -378,7 +378,7 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 ```
 
 ##### <a name="help-buttons-in-managed-code"></a>Pulsanti della Guida nel codice gestito
- L'override del comportamento predefinito del pulsante Guida della barra del titolo della finestra è semplice nel codice gestito. Di seguito è riportata un'applicazione demo completa che illustra questo comportamento. In sostanza, è necessario eseguire l'override del metodo **WndProc** del  form e quindi disattivare le richieste della Guida F1 quando viene intercettato un messaggio SC_CONTEXTHELP messaggio.
+ L'override del comportamento predefinito del pulsante ? della barra del titolo della finestra è semplice nel codice gestito. Di seguito è riportata un'applicazione demo completa che illustra questo comportamento. In sostanza, è necessario eseguire l'override del metodo **WndProc** del form e quindi inviare le richieste della Guida F1 quando viene intercettato **SC_CONTEXTHELP** messaggio di errore.
 
 ```
 using System;

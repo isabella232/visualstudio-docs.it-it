@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fd47ef85bd1789a8ff8ccad52709405ed38c4c78e9e8efbc462aa86d02a2ced
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1428019cad4c057c41721f30c9375a60c3cbc55f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370021"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108499"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 
@@ -54,7 +54,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
  Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Pertanto, se una destinazione crea output che sono trasformazioni degli input, MSBuild può analizzare i timestamp degli input e degli output e decidere se ignorare, compilare o ricompilare parzialmente una destinazione.
 
- Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata con una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` viene eseguita solo per il file modificato e tutti gli altri file vengono ignorati. Per altre informazioni sull'analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: Compilare in modo incrementale.](../msbuild/how-to-build-incrementally.md)
+ Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata con una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` viene eseguita solo per il file modificato e tutti gli altri file vengono ignorati. Per altre informazioni sull'analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: Compilare in modo incrementale](../msbuild/how-to-build-incrementally.md).
 
 ```xml
 <Target Name="CopyOutputs"
@@ -72,7 +72,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ### <a name="description"></a>Descrizione
 
- Nell'esempio seguente viene illustrato MSBuild file di progetto che usa trasformazioni. In questo esempio si presuppone che sia presente un solo *file* xsd nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0*.
+ L'esempio seguente mostra un MSBuild di progetto che usa le trasformazioni. Questo esempio presuppone che nella directory *c:\sub0\sub1\sub2\sub3* sia presente un solo file *xsd* e che la directory di lavoro sia *c:\sub0*.
 
 ### <a name="code"></a>Codice
 

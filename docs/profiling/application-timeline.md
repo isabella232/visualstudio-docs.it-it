@@ -1,6 +1,6 @@
 ---
 title: Analizzare il consumo di risorse nelle app XAML
-description: Usare il profiler Sequenza temporale applicazione per individuare i problemi di prestazioni nelle applicazioni XAML. È possibile analizzare il tempo impiegato per varie attività in diversi scenari.
+description: Usare il Sequenza temporale applicazione profiler per trovare problemi di prestazioni nelle applicazioni XAML. È possibile analizzare il tempo impiegato per varie attività in vari scenari.
 ms.custom: SEO-VS-2020
 ms.date: 11/01/2018
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: d352c118bd8b21b9dcbf62f7dd32eaf2999ed471
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: da90e8325caf591759cf7914e89dac06d68de21d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388022"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039826"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -50,7 +51,7 @@ I passaggi principali sono indicati di seguito.
 
 3. Selezionare **Sequenza temporale applicazione** e fare clic su **Avvia** nella parte inferiore della finestra.
 
-   ![strumento Sequenza temporale applicazione selezionato](../profiling/media/apptimelineselect.png "strumento Sequenza temporale applicazione")
+   ![Sequenza temporale applicazione selezionato](../profiling/media/apptimelineselect.png "Sequenza temporale applicazione strumento")
 
    > [!NOTE]
    > È possibile che venga visualizzata una finestra Controllo dell'account utente che richiede le autorizzazioni per l’esecuzione di *VsEtwCollector.exe*. Fare clic su **Sì**.
@@ -107,7 +108,7 @@ Sono supportati i seguenti eventi:
 |**Layout**|Nelle applicazioni di grandi dimensioni, migliaia di elementi potrebbero apparire sullo schermo contemporaneamente. Questa visualizzazione può comportare una bassa frequenza dei fotogrammi dell'interfaccia utente e una velocità di risposta dell’applicazione conseguentemente scarsa. L'evento Layout determina in modo accurato il costo del layout di ogni elemento, ovvero il tempo impiegato in Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride. Crea anche le strutture ad albero visuali che hanno preso parte a un passaggio di Layout. È possibile usare questa visualizzazione per determinare quali alberi logici eliminare o per valutare altri meccanismi di rinvio per ottimizzare il passaggio di layout.|
 |**Rendering**|Tempo impiegato per disegnare elementi XAML sullo schermo.|
 |**I / 0**|Tempo impiegato per il recupero di dati dal disco locale o dalle risorse di rete cui è possibile accedere tramite l' [API Microsoft Windows Internet (WinINet)](/windows/desktop/WinInet/portal).|
-|**Codice dell'app**|Tempo impiegato per l'esecuzione del codice dell'applicazione (utente) non correlato all'analisi o al layout.|
+|**Codice app**|Tempo impiegato per l'esecuzione del codice dell'applicazione (utente) non correlato all'analisi o al layout.|
 |**Altro XAML**|Tempo impiegato per l'esecuzione del codice runtime XAML.|
 
 > [!TIP]
@@ -122,7 +123,7 @@ Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, fil
 |**Ordina per**|Ordina in base a ora di inizio o lunghezza degli eventi.|
 |![Raggruppare gli eventi per frame](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Aggiunge o rimuove una categoria **Frame** di primo livello che raggruppa gli eventi per frame.|
 |![Filtrare l'elenco dei dettagli della sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
-|![Personalizzare le informazioni dettagliate sulla sequenza temporale](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
+|![Personalizzare le informazioni sui dettagli della sequenza temporale](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
 
 ## <a name="see-also"></a>Vedi anche
 

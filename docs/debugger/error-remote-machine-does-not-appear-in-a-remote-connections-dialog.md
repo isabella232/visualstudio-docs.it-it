@@ -1,6 +1,6 @@
 ---
 description: Se il computer remoto non viene visualizzato nella finestra di dialogo Connessioni remote, controllare le cause più comuni riportate di seguito.
-title: Il computer remoto non viene visualizzato in una finestra di dialogo Connessioni | Microsoft Docs
+title: Il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d4086185a99ede835f2e2a05520732fbb9e2fe43f61c34188462a971371ba0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 08802c1d24d55469b3dc47d7d68f1132baba4378
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420183"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121087"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Errore: il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote
 Se il computer remoto non viene visualizzato nella finestra di dialogo Connessioni remote, controllare le cause più comuni riportate di seguito.

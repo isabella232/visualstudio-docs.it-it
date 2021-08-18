@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e75c0a2e75fc9207967501d0fae4a670f06e362f4f907438db1f84678c1d9173
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 98e9deea5c05098cb07995d1d1898f3d7848100e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121232978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109188"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Estendere una versione di valutazione o aggiornare una licenza
 

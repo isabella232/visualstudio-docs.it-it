@@ -9,17 +9,18 @@ ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 504c917d9fb2b1e2cd15ac8154faf70eaf98beec
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0552a109d671e7162d8ec41a7022bbacbfa48c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054582"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064968"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 Descrive una matrice di identificatori univoci per i motori di debug disponibili.
@@ -47,15 +48,15 @@ public struct GUID_ARRAY
 Numero di identificatori univoci nella matrice.
 
 `Members`\
-Matrice contenente gli identificatori univoci.
+Matrice che contiene identificatori univoci.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene restituita dal metodo [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) .
+Questa struttura viene restituita dal [metodo GetEngineFilter.](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: Msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

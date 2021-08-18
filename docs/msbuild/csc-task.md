@@ -1,6 +1,6 @@
 ---
 title: Attività Csc | Microsoft Docs
-description: Questo articolo descrive l'attività Csc di MSBuild, che esegue il wrapping del compilatore C#, csc.exe e produce file .exe, .dll o netmodule.
+description: Questo articolo descrive l'attività MSBuild Csc, che esegue il wrapping del compilatore C#, csc.exe e produce .exe, .dll o .netmodule.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a63b114379f56ca5f253f853a1ff6bdd6c60dc
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: cae7ff3a8c413051e38d9a6c5209717d1b5b481f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588475"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123424"
 ---
 # <a name="csc-task"></a>Csc (attività)
 
@@ -46,7 +47,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 | `CodePage` | Parametro `Int32` facoltativo.<br /><br /> Specifica la tabella codici da usare per tutti i file del codice sorgente nella compilazione. Per altre informazioni, vedere [-codepage (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Parametro `String` facoltativo.<br /><br /> Specifica il tipo di debug. `DebugType` può essere `full` o `pdbonly`. Il valore predefinito è `full`, che consente di associare un debugger a un programma in esecuzione. La specifica di `pdbonly` consente il debug del codice sorgente quando il programma viene avviato nel debugger, ma assembler viene visualizzato solo quando il programma in esecuzione è collegato al debugger.<br /><br /> Questo parametro esegue l'override del parametro `EmitDebugInformation`.<br /><br /> Per altre informazioni, vedere [-debug (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `DefineConstants` | Parametro `String` facoltativo.<br /><br /> Definisce i simboli del preprocessore. Per altre informazioni, vedere [-define (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option). |
-| `DelaySign` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che si vuole solo posizionare la chiave pubblica nell'assembly. Se `false` , specifica che si vuole un assembly con firma completa<br /><br /> Questo parametro ha effetto solo se usato con il parametro `KeyFile` o `KeyContainer`.<br /><br /> Per altre informazioni, vedere [-delaysign (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
+| `DelaySign` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che si vuole solo posizionare la chiave pubblica nell'assembly. Se `false` , specifica che si vuole un assembly completamente firmato<br /><br /> Questo parametro ha effetto solo se usato con il parametro `KeyFile` o `KeyContainer`.<br /><br /> Per altre informazioni, vedere [-delaysign (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
 | `Deterministic` | Parametro `Boolean` facoltativo.<br/><br/> Se `true`, l'output del compilatore è un assembly il cui contenuto binario è identico in tutte le compilazioni se gli input sono identici.<br/><br/>Per altre informazioni, vedere [-deterministic (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Parametro `String` facoltativo.<br /><br /> Specifica l'elenco di avvisi da disabilitare. Per altre informazioni, vedere [-nowarn (opzioni del compilatore C#).](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option) |
 | `DocumentationFile` | Parametro `String` facoltativo.<br /><br /> Elabora commenti sulla documentazione in un file XML. Per altre informazioni, vedere [-doc (opzioni del compilatore C#).](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option) |
@@ -81,9 +82,9 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 | `WarningLevel` | Parametro `Int32` facoltativo.<br /><br /> Specifica il livello di avviso da visualizzare nel compilatore. Per altre informazioni, vedere [-warn (opzioni del compilatore C#).](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option) |
 | `WarningsAsErrors` | Parametro `String` facoltativo.<br /><br /> Specifica un elenco di avvisi da considerare come errori. Per altre informazioni, vedere [-warnaserror (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Questo parametro esegue l'override del parametro `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Parametro `String` facoltativo.<br /><br /> Specifica un elenco di avvisi che non vengono considerati errori. Per altre informazioni, vedere [-warnaserror (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Questo parametro è utile solo se il parametro `TreatWarningsAsErrors` è impostato su `true`. |
-| `Win32Icon` | Parametro `String` facoltativo.<br /><br /> Inserisce un file *con estensione ico* nell'assembly, che fornisce al file di output l'aspetto **desiderato** Esplora file . Per altre informazioni, vedere [-win32icon (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
+| `Win32Icon` | Parametro `String` facoltativo.<br /><br /> Inserisce un file *con estensione ico* nell'assembly, che fornisce al file di output l'aspetto desiderato in **Esplora file**. Per altre informazioni, vedere [-win32icon (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
 | `Win32Manifest` | Parametro `String` facoltativo.<br /><br /> Specifica il manifesto Win32 da includere. |
-| `Win32Resource` | Parametro `String` facoltativo.<br /><br /> Inserisce un file di risorsa Win32 ( con estensione *res*) nel file di output. Per altre informazioni, vedere [-win32res (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
+| `Win32Resource` | Parametro `String` facoltativo.<br /><br /> Inserisce un file di risorsa Win32 *(con estensione res)* nel file di output. Per altre informazioni, vedere [-win32res (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

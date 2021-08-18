@@ -1,6 +1,6 @@
 ---
 title: Informazioni di riferimento su MSBuild WPF | Microsoft Docs
-description: Informazioni su come Windows Presentation Foundation (WPF) estende il motore MSBuild compilazione con supporto aggiuntivo per la compilazione.
+description: Informazioni su come Windows Presentation Foundation (WPF) estende il motore MSBuild compilazione con supporto di compilazione aggiuntivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: da5b4c98758afcc1019f0b32290173ebbf35674bef2801bb0636fa888ba05787
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2bb0cd5b231b2a626bbba687b42d11f8724d9225
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397085"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039969"
 ---
 # <a name="wpf-msbuild-reference"></a>Informazioni di riferimento su MSBuild WPF
 

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f57c8a77872d38400bb45e0d8c9136869b8eefa714c01ea4c3b0a2f4aadb578c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 61f0e4a2613a8ccf66c0f5205d730a38264d8e3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121442372"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107394"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analizzare l'utilizzo della memoria senza eseguire il debug nel Profiler prestazioni
 
@@ -141,11 +141,11 @@ L'albero **Heap gestito** di un report dettagli dello snapshot include le colonn
 |**Modulo**|Il modulo che contiene il costruttore.|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Albero Percorsi della radice (report dettagli dello snapshot)
-L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector di .NET pulisce la memoria per un oggetto solo quando sono stati rilasciati tutti i riferimenti a esso.
+L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando sono stati rilasciati tutti i riferimenti ad esso.
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**.
 
-![Albero Percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Percorsi dell'albero radice per i tipi")
+![Percorsi dell'albero radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Percorsi dell'albero radice per i tipi")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-details-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report dettagli dello snapshot)
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
@@ -157,7 +157,7 @@ Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot 
 |Nome|Descrizione|
 |-|-|
 |**Tipo di oggetto** o **Istanza**|Il nome del tipo o dell'istanza.|
-|**Conteggio riferimenti**|Per i tipi, il numero di istanze di oggetto del tipo.|
+|**Conteggio dei riferimenti**|Per i tipi, il numero di istanze di oggetto del tipo.|
 |**Dimensioni (byte)**|Per un tipo, la dimensione di tutte le istanze del tipo, meno la dimensione degli oggetti contenuti nel tipo.<br /><br /> Per un'istanza, la dimensione dell'oggetto meno la dimensione degli oggetti contenuti nell'oggetto.|
 |**Dimensione inclusiva (byte)**|La dimensione totale delle istanze del tipo o la dimensione dell'istanza, inclusa la dimensione degli oggetti contenuti.|
 |**Modulo**|Il modulo che contiene il costruttore.|
@@ -181,7 +181,7 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 |Nome|Descrizione|
 |-|-|
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|
-|**Count**|Numero di istanze di un tipo nello snapshot principale. **Il conteggio** è sempre 1 per un'istanza.|
+|**Count**|Numero di istanze di un tipo nello snapshot principale. **Count** è sempre 1 per un'istanza.|
 |**Diff. conteggio**|Per un tipo, differenza nel numero di istanze del tipo tra lo snapshot principale e quello precedente. Il campo è vuoto per un'istanza.|
 |**Dimensioni (byte)**|La dimensione degli oggetti nello snapshot principale, meno la dimensione degli oggetti negli oggetti. Per un tipo, **Dimensione (byte)** e **Dimensione inclusiva (byte)** corrispondono ai totali delle dimensioni delle istanze di tipo.|
 |**Diff. dimensione totale (byte)**|Per un tipo, la differenza nella dimensione totale delle istanze del tipo tra lo snapshot principale e quello precedente, meno la dimensione degli oggetti nelle istanze. Il campo è vuoto per un'istanza.|
@@ -191,24 +191,24 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Albero Percorsi della radice (report differenze degli snapshot)
 
-L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector di .NET pulisce la memoria per un oggetto solo quando sono stati rilasciati tutti i riferimenti a esso.
+L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando sono stati rilasciati tutti i riferimenti ad esso.
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**. La differenza di numero rispetto allo snapshot precedente è indicata nella colonna **Diff. conteggio riferimenti**.
 
- ![Albero Percorsi della radice in un report delle diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero Percorsi alla radice in un report diff")
+ ![Albero Percorsi alla radice in un report diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero Percorsi alla radice in un report diff")
 
 ### <a name="referenced-types-or-referenced-objects-tree-snapshot-diff-reports"></a><a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report differenze degli snapshot)
 
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
-![Tipi a cui si fa riferimento in un report delle diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report diff")
+![Tipi a cui si fa riferimento in un report diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report diff")
 
 Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)**, **Dimensione inclusiva (byte)** e **Modulo**.
 
 |Nome|Descrizione|
 |-|-|
 |**Tipo di oggetto** o **Istanza**|Nome dell'istanza di tipo o di oggetto.|
-|**Conteggio riferimenti**|Numero di istanze di un tipo nello snapshot principale.|
+|**Conteggio dei riferimenti**|Numero di istanze di un tipo nello snapshot principale.|
 |**Diff. conteggio riferimenti**|Per un tipo, differenza nel numero di istanze del tipo tra lo snapshot principale e quello precedente.|
 |**Dimensioni (byte)**|La dimensione degli oggetti nello snapshot principale, meno la dimensione degli oggetti negli oggetti. Per un tipo, **Dimensione (byte)** e **Dimensione inclusiva (byte)** corrispondono ai totali delle dimensioni delle istanze di tipo.|
 |**Diff. dimensione totale (byte)**|Per un tipo, la differenza nella dimensione totale delle istanze del tipo tra lo snapshot principale e quello precedente, meno la dimensione degli oggetti nelle istanze. |

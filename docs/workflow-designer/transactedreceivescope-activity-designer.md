@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: a9848ff2ad312f3dd7d46f4891d9be25add92b0f2f8291beacdbf1050a29d650
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cbdbd2ce46e5d9d6bf9f0f69c81c9bfdaa0b1d6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121284204"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135117"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>ActivityDesigner TransactedReceiveScope
 

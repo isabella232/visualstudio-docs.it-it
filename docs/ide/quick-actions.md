@@ -1,23 +1,24 @@
 ---
 title: Azioni rapide, lampadine e cacciavite
-description: Informazioni su come usare una singola azione rapida per effettuare il refactoring, generare o modificare il codice in altro modo.
+description: Informazioni su come usare una singola azione rapida per eseguire il refactoring, generare o modificare in altro modo il codice.
 ms.custom: SEO-VS-2020
 ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d9c257bcf0e2a88a384c22010abb08894483ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9128a9b488c5f7ab76ce398aa2a087e7ccf1481
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137275"
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -25,17 +26,17 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 
 È possibile usare le azioni rapide per:
 
-- Applicare una correzione del codice per la violazione di una regola dell' [analizzatore di codice](../code-quality/roslyn-analyzers-overview.md)
+- Applicare una correzione del codice per una violazione [della regola dell'analizzatore](../code-quality/roslyn-analyzers-overview.md) del codice
 
 ::: moniker range=">=vs-2019"
 
-- [Elimina](../code-quality/use-roslyn-analyzers.md#suppress-violations) la violazione di una regola dell'analizzatore del codice o ne [Configura](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu) la gravità
+- [Eliminare una](../code-quality/use-roslyn-analyzers.md#suppress-violations) violazione della regola dell'analizzatore del codice [o configurarne](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu) la gravità
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-- [Elimina](../code-quality/use-roslyn-analyzers.md#suppress-violations) la violazione di una regola dell'analizzatore del codice
+- [Eliminare una violazione](../code-quality/use-roslyn-analyzers.md#suppress-violations) della regola dell'analizzatore del codice
 
 ::: moniker-end
 
@@ -46,13 +47,13 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Refactoring (Visual Studio per Mac)](/visualstudio/mac/refactoring).
 
-È possibile applicare azioni rapide usando l'icona a bulbo della lampadina o l'icona del cacciavite o ![ ](media/light-bulb-icon.png) ![ ](media/screwdriver-icon.png) premendo **CTRL** + **.** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
+Le azioni rapide possono essere applicate usando l'icona lampadina lampadina o l'icona a forma di cacciavite a forma di cacciavite ![ ](media/light-bulb-icon.png) oppure premendo ![ ](media/screwdriver-icon.png)  + **CTRL.** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
 
 È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio compariranno in base a tali regole.
 
 ## <a name="icons"></a>Icone
 
-L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. L'icona a forma di *cacciavite* ![icona cacciavite](media/screwdriver-icon.png) indica semplicemente che sono disponibili azioni per la modifica del codice, ma l'utente può scegliere di non usarle. L'icona a forma di *lampadina gialla* ![icona lampadina](media/light-bulb-icon.png) indica che sono disponibili azioni che si *devono* eseguire per migliorare il codice. L'icona a forma di *lampadina che indica un errore* ![icona lampadina di errore](media/error-light-bulb-icon.png) suggerisce che è disponibile un'azione che corregge un errore nel codice.
+L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. *L'icona a* forma di cacciavite icona a forma di cacciavite indica solo che sono disponibili azioni per modificare il codice, ma non è ![ necessario ](media/screwdriver-icon.png) usarle necessariamente. *L'icona lampadina* gialla icona lampadina indica che sono disponibili azioni da ![ eseguire per migliorare il ](media/light-bulb-icon.png) codice.  *L'icona a forma di* lampadina di errore icona lampadina indica che è disponibile ![ un'azione che corregge ](media/error-light-bulb-icon.png) un errore nel codice.
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Per visualizzare una lampadina o un cacciavite
 
@@ -64,7 +65,7 @@ Se è disponibile una correzione, le lampadine compaiono:
 
 - Nel margine sinistro dell'editor quando si sposta il punto di inserimento (cursore) sulla riga di codice applicabile
 
-È anche possibile premere **CTRL** + **.** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
+È anche possibile premere + **CTRL.** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
 
 Per vedere le potenziali correzioni, selezionare la freccia GIÙ accanto alla lampadina o il collegamento **Mostra correzioni potenziali**. Viene visualizzato un elenco delle azioni rapide disponibili.
 

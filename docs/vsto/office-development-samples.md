@@ -1,6 +1,6 @@
 ---
 title: Office di sviluppo
-description: Informazioni sulle applicazioni Visual Studio di esempio che illustrano come usare gli strumenti di Microsoft Office per creare Office soluzioni.
+description: Informazioni sugli esempi Visual Studio applicazioni che illustrano come usare gli strumenti di sviluppo Microsoft Office per creare Office soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 44385ed995d716854c3b5b40b1aed4b2c8e3debacc93f13a1c220df1d2bcf975
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9c21ef73a61057873903b6faa492585ecdd29cad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121365972"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032407"
 ---
 # <a name="office-development-samples"></a>Office di sviluppo
   Visual Studio include applicazioni di esempio che illustrano come usare Microsoft Office Developer Tools per creare soluzioni Office. Il codice in questi esempi illustra la sintassi, la struttura e le tecniche usate per creare soluzioni Office.
 
- Per gli esempi più attuali, vedere [Esempi per sviluppatori MSDN: Informazioni sul codice](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) nel sito Web Microsoft.
+ Per gli esempi più attuali, vedere Esempi [per sviluppatori MSDN: informazioni sul codice](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) nel sito Web Microsoft.
 
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]
 

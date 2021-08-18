@@ -1,5 +1,5 @@
 ---
-description: Recupera il limite inferiore di una dimensione della matrice FORTRAN.
+description: Recupera il limite inferiore di una dimensione di matrice FORTRAN.
 title: IDiaSymbol::get_lowerBound | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: e9a6440b-d068-4de4-a240-6723d20812b9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b81c853c69aae755fa17c5d37f0e92c94d4871d2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 070475ac67cf38ecc862ce6f96e77d5d47c16422
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031154"
 ---
 # <a name="idiasymbolget_lowerbound"></a>IDiaSymbol::get_lowerBound
-Recupera il limite inferiore di una dimensione della matrice FORTRAN.
+Recupera il limite inferiore di una dimensione di matrice FORTRAN.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,13 +35,13 @@ HRESULT get_lowerBound (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il limite inferiore di una dimensione della matrice FORTRAN.
+[out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il limite inferiore di una dimensione di matrice FORTRAN.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

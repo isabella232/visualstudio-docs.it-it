@@ -1,6 +1,6 @@
 ---
-title: Riga di comando del profiler - Instrumentare il componente .NET del client, ottenere i dati di ora
-description: Informazioni su come usare gli Visual Studio Strumenti di profilatura da riga di comando per raccogliere dati di intervallo per un componente .NET Framework di un'applicazione autonoma.
+title: Riga di comando del profiler - Instrumentare il componente client .NET, ottenere i dati di ora
+description: Informazioni su come usare gli strumenti Visual Studio Strumenti di profilatura riga di comando per raccogliere dati di intervallo per un componente .NET Framework di un'applicazione autonoma.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,15 +12,15 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2df7702884071787292b335a9da9f7b6dfa43644890276035ba5b1e80de757e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 86421cef936a14b10f211c9660e9d920fa97bd3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107654"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: Instrumentare un componente autonomo .NET Framework e raccogliere dati di intervallo con il profiler tramite la riga di comando
-In questo argomento viene descritto come usare Strumenti di profilatura strumenti da riga di comando per instrumentare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .NET Framework, ad esempio .*exe* o . *dll* e per raccogliere dati di intervallo dettagliati.
+In questo argomento viene descritto come usare Strumenti di profilatura da riga di comando per instrumentare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .NET Framework, ad esempio .*exe* o . *dll* e per raccogliere dati di intervallo dettagliati.
 
 > [!NOTE]
 > Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).

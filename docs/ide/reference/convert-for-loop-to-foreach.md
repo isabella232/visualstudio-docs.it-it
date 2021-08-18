@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e24b262ebd0ddb169ae754ddc9a57cfffba342e7cb4ed836d195b41d3a58605
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b6648ffa903a0a8f3e808801f1c8627a164de251
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121430279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041308"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Effettuare il refactoring per convertire un ciclo for in un'istruzione foreach e viceversa
 

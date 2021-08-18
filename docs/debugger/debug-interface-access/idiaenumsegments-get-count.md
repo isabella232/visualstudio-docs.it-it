@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c6e21dc7a154d8815e85bc800d4190248643feca991bac883dcb6df610d952
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06dbd9990f3767ccace13795319490ae5cfa3d5d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380342"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134439"
 ---
 # <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
 Recupera il numero di segmenti.

@@ -13,12 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00767b7dc125dc66e48627fbcc1ddefb20ecf511b2d7ba8d7b91e4230a589bbd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 00e6b1883f34f0beb9a6ae82e4513a63852d81e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121227947"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092839"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 

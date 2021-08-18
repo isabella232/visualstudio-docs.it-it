@@ -7,16 +7,17 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 891822d0b79cbfd53cf14229f11e003bf740c660
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9aaade6fc17b2ec0ce36decd66cff25ee2dc9e6e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061532"
 ---
 # <a name="packagejson-configuration"></a>Configurazione di package.json
 
@@ -49,7 +50,7 @@ Si supponga di usare React e che sia necessario includere i pacchetti npm **reac
 
 La notazione precedente indica a npm di usare sempre la versione esatta specificata, in questo caso la versione 16.4.2.
 
-È possibile usare una notazione speciale per limitare gli aggiornamenti agli aggiornamenti della patch (correzioni di bug). In questo esempio:
+È possibile usare una notazione speciale per limitare gli aggiornamenti agli aggiornamenti della patch (correzioni di bug). Esempio:
 
   ```json
   "dependencies": {

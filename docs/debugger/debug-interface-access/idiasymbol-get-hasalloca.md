@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se la funzione contiene una chiamata a alloca (usata per allocare memoria nello stack).
+description: Recupera un flag che specifica se la funzione contiene una chiamata ad alloca (usata per allocare memoria nello stack).
 title: IDiaSymbol::get_hasAlloca | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e685f56316f674d20e8aa9ec50f9ed8dfb38dc6158be744e9ab9f7bc714920af
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 91a87bc8bbe7375fbafdd1c42371a267c435835c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436536"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121537"
 ---
 # <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
-Recupera un flag che specifica se la funzione contiene una chiamata a (utilizzata per `alloca` allocare memoria nello stack).
+Recupera un flag che specifica se la funzione contiene una chiamata a `alloca` (usata per allocare memoria nello stack).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 

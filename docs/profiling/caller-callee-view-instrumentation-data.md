@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abef15506a3d44dad2ff44b4ac6f425dc02f6fd35c2babe4b27ff964b783733
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 08de14aa1c7616cbafcca8841a2c5d0400b97965
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076919"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Visualizzazione Chiamante/chiamato: dati di strumentazione
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio nell'albero delle chiamate. La visualizzazione Chiamante/chiamato contiene tre griglie.

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a78679b57f4d10679d9aa0bd36efe79d7d52970a3eb4dd919371934acfea9a98
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 285ec0ddab554888503588577ede7df99fd9ddde
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292338"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050611"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 Termina il programma.
@@ -45,7 +45,7 @@ int Terminate();
 ## <a name="remarks"></a>Commenti
  Se possibile, il programma verrà terminato e scaricato dal processo. In caso contrario, il motore di debug eseguirà qualsiasi pulizia necessaria.
 
- Questo metodo o il [metodo Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) viene chiamato dall'IDE, in genere in risposta all'arresto di tutti i debug da parte dell'utente. L'implementazione di questo metodo dovrebbe, idealmente, terminare il programma all'interno del processo. Se questo non è possibile, il de deve impedire l'esecuzione del programma in questo processo (ed eseguire eventuali operazioni di pulizia necessarie). Se il `IDebugProcess2::Terminate` metodo è stato chiamato dall'IDE, l'intero processo verrà terminato dopo la chiamata del metodo `IDebugProgram2::Terminate` .
+ Questo metodo o il [metodo Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) viene chiamato dall'IDE, in genere in risposta all'arresto di tutti i debug da parte dell'utente. L'implementazione di questo metodo dovrebbe, idealmente, terminare il programma all'interno del processo. Se ciò non è possibile, il derea dovrebbe impedire l'esecuzione del programma in questo processo (ed eseguire qualsiasi pulizia necessaria). Se il `IDebugProcess2::Terminate` metodo è stato chiamato dall'IDE, l'intero processo verrà terminato dopo la chiamata del metodo `IDebugProgram2::Terminate` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

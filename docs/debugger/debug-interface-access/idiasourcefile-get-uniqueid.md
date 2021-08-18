@@ -1,5 +1,5 @@
 ---
-description: Recupera un valore di chiave Integer semplice univoco per questa immagine.
+description: Recupera un valore di chiave integer semplice univoco per questa immagine.
 title: IDiaSourceFile::get_uniqueId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0595e20518db1e977a75384c7aec3d1b8cef7716
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e765d97ef7a3cde84857d91b1a02c05a122614c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147576"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066156"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
-Recupera un valore di chiave Integer semplice univoco per questa immagine.
+Recupera un valore di chiave integer semplice univoco per questa immagine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,13 +35,13 @@ HRESULT get_uniqueId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce un valore di chiave Integer semplice univoco per questa immagine.
+[out] Restituisce un valore di chiave integer semplice univoco per questa immagine.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Il confronto tra chiavi anziché stringhe può accelerare l'elaborazione dei numeri di riga.
+ Il confronto delle chiavi anziché delle stringhe può accelerare l'elaborazione del numero di riga.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

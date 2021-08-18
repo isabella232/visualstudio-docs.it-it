@@ -1,6 +1,6 @@
 ---
 title: Windows Panoramica dei controlli form Office documenti
-description: Informazioni su Windows Form sono oggetti con cui gli utenti possono interagire per immettere o modificare i dati.
+description: Informazioni su Windows form sono oggetti con cui gli utenti possono interagire per immettere o modificare i dati.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8b8273d5eeaaa1e08ea2a8eae07d3831de6d0faa6259ccb32f25ae981ef57c1c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 34de9b336138ca85e96be835ba71fc86a4797810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121225647"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135559"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Panoramica dei controlli form Office documenti
   I controlli Windows Form sono oggetti con cui gli utenti possono interagire per immettere o modificare i dati. Nei progetti a livello di documento per Microsoft Office Excel e Microsoft Office Word è possibile aggiungere controlli Windows Form al documento o alla cartella di lavoro nel progetto in fase di progettazione oppure aggiungere questi controlli a livello di codice in fase di esecuzione. È possibile aggiungere questi controlli a livello di codice a qualsiasi documento o foglio di lavoro aperto in fase di esecuzione in un componente aggiuntivo VSTO per Excel o Word.
@@ -76,7 +76,7 @@ In un Windows Form
 ## <a name="add-windows-forms-controls-programmatically"></a>Aggiungere controlli Windows Form a livello di codice
  È possibile aggiungere controlli Windows Form a documenti di Word e fogli di lavoro di Excel in fase di esecuzione. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] fornisce metodi helper per l'aggiunta dei controlli Windows Form più comuni. Questi metodi helper consentono di aggiungere rapidamente controlli a un documento di Office e di accedere alle funzionalità combinate dei controlli Windows Form e alle funzionalità correlate a Office di questi controlli.
 
- Per altre informazioni, vedere [Aggiungere controlli a Office documenti in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+ Per altre informazioni, vedere [Aggiungere controlli ai documenti Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
 ## <a name="use-windows-forms-controls-in-document-level-projects"></a>Usare Windows form nei progetti a livello di documento
  Alcuni aspetti dell'uso dei controlli Windows Form nei documenti sono specifici dei progetti a livello di documento, che consentono di progettare l'interfaccia utente del documento usando la finestra di progettazione di Visual Studio.
@@ -117,7 +117,7 @@ In un Windows Form
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Impedire la visualizzazione di dati vecchi nelle cartelle Excel durante il caricamento
  Quando si aggiungono controlli Windows Form a documenti o fogli di lavoro in fase di progettazione, i controlli rimangono nel documento quando l'utente chiude il documento. I controlli aggiunti in fase di progettazione sono anche definiti *controlli statici*.
 
- Quando si apre una cartella di lavoro di Excel che contiene controlli statici, la cartella di lavoro mostra una bitmap del controllo in un controllo ActiveX fino a quando non viene eseguito il codice di personalizzazione e caricato il controllo effettivo. Excel crea questa bitmap e la archivia nella cartella di lavoro quando si salva la cartella di lavoro. La bitmap mostra l'aspetto del controllo al momento dell'ultimo salvataggio della cartella di lavoro, inclusi tutti i dati che vi erano visualizzati. Per altre informazioni sul controllo ActiveX che contiene controlli e bitmap di Windows Forms, vedere Limitazioni dei controlli Windows [Forms Office documenti.](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+ Quando si apre una cartella di lavoro di Excel che contiene controlli statici, la cartella di lavoro mostra una bitmap del controllo in un controllo ActiveX fino a quando non viene eseguito il codice di personalizzazione e caricato il controllo effettivo. Excel crea questa bitmap e la archivia nella cartella di lavoro quando si salva la cartella di lavoro. La bitmap mostra l'aspetto del controllo al momento dell'ultimo salvataggio della cartella di lavoro, inclusi tutti i dati che vi erano visualizzati. Per altre informazioni sul controllo ActiveX che contiene controlli e bitmap di Windows Forms, vedere Limitazioni dei controlli Windows Forms Office [documenti.](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
 
  In determinate condizioni, il codice non viene caricato e viene visualizzata solo la bitmap, ad esempio quando l'utente apre la cartella di lavoro in modalità di progettazione. Inoltre, se l'utente apre la cartella di lavoro in un computer in cui non è installato [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , non viene eseguita la personalizzazione per caricare i caricare i controlli e pertanto è visibile solo la bitmap del controllo. È consigliabile rimuovere sempre le informazioni personali dai controlli nelle cartelle di lavoro prima di salvare una cartella di lavoro e inviarla a un altro utente per assicurarsi che le informazioni personali non vengano accidentalmente divulgate.
 
@@ -139,7 +139,7 @@ In un Windows Form
 
 - Per aggiungere il controllo come forma mobile, usare un overload che accetta la coordinata superiore e la coordinata sinistra del controllo.
 
-  Per altre informazioni, vedere [Aggiungere controlli a Office documenti in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+  Per altre informazioni, vedere [Aggiungere controlli ai documenti Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
   Se si apre un modello di Word nella finestra di progettazione di Visual Studio, i controlli non inline nel modello potrebbero non essere visibili perché Visual Studio apre il modello in visualizzazione **Normale** . Per visualizzare i controlli, modificare la visualizzazione in **Layout di stampa**.
 

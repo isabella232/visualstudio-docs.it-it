@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9141950953e385ad39aa94ca0fdcd61b8f677459671e8f58f85f7e9784217bbe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b7c5f57b81899ead03b96fd7d26dbcaf63ffeda6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368981"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136378"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler
 
@@ -27,7 +27,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
 
 |Attività|Contenuti correlati|
 |----------|---------------------|
-|**Avviare un'applicazione e sottoporre a profilatura la memoria .NET**|-   [Procedura: Avviare un'applicazione .NET Framework con il profiler per raccogliere dati di memoria](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
+|**Avviare un'applicazione e sottoporre a profilatura la memoria .NET**|-   [Procedura: Avviare un'.NET Framework con il profiler per raccogliere dati di memoria](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**Connettere il profiler a un'applicazione .NET**|-   [Procedura: Connettere il profiler a un'applicazione .NET Framework per raccogliere dati di memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
 |**Instrumentare un'applicazione per raccogliere dati di memoria .NET**|-   [Procedura: Instrumentare un componente .NET Framework autonomo e raccogliere dati di memoria con il profiler](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|
 

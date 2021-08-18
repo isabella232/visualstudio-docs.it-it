@@ -1,6 +1,6 @@
 ---
 title: Esercitazione sugli unit test C#
-description: Informazioni su come creare, eseguire e personalizzare una serie di unit test usando il framework microsoft unit test per il codice gestito e Visual Studio Esplora test.
+description: Informazioni su come creare, eseguire e personalizzare una serie di unit test usando il framework microsoft unit test per codice gestito e Visual Studio Test Explorer.
 ms.custom: SEO-VS-2020
 ms.date: 02/12/2021
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b1f368973d274ae4000da60bbb98af4fcf6340bb568258f7ac61f9b00048143f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: af57961130a3bba5590d50a5285319ac5321bdb8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424652"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059907"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -298,7 +298,7 @@ Un metodo di test deve soddisfare i seguenti requisiti:
 
 ## <a name="build-and-run-the-test"></a>Compilare ed eseguire il test
 
-1. Scegliere **Compila** soluzione **dal** menu Compila oppure premere **CTRL**  +  **MAIUSC**  +  **B**.
+1. Scegliere **Compila** soluzione **dal** menu Compila oppure premere **CTRL**  +  **MAIUSC**  +  **B.**
 
 2. Se **Esplora test** non è aperto, aprirlo scegliendo Test   >  **Windows** Esplora test dalla barra dei menu superiore (oppure premere  >   **CTRL**  +  **E**, **T**).
 
@@ -442,7 +442,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Rieseguire il test, riscrivere e rianalizzare
 
-Attualmente, il metodo di test non gestisce tutti i case che deve eseguire. Se il metodo sotto test, il metodo , non è riuscito a generare un quando l'oggetto è maggiore del saldo (o minore di zero), il `Debit` metodo di test <xref:System.ArgumentOutOfRangeException> `debitAmount` passerebbe. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
+Attualmente, il metodo di test non gestisce tutti i case che dovrebbe. Se il metodo testato, il metodo non genera un'eccezione quando è maggiore del saldo (o minore di zero), il metodo `Debit` <xref:System.ArgumentOutOfRangeException> di test viene `debitAmount` superato. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
 
 È presente un bug nel metodo di test. Per risolvere il problema, aggiungere un'asserzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> alla fine del metodo di test per gestire il caso in cui non viene generata alcuna eccezione.
 
