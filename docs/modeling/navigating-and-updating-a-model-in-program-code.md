@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe92dbaab0e952f6e46f3ca5fd6d877717dfa44d6eaa20a821275f338a17be4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 13a45254688893e28c8b9f4eb411d01302978644
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398313"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100842"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Esplorare e aggiornare i modelli nel codice del programma
 
@@ -58,7 +58,7 @@ ms.locfileid: "121398313"
 
  `henry.Name = "Henry VIII";`
 
- Se nella definizione DSL il  tipo di una proprietà è **Calculated**, non è possibile impostarlo. Per altre informazioni, vedere [Calculated and Custom Archiviazione Properties](../modeling/calculated-and-custom-storage-properties.md).
+ Se nella definizione DSL il  tipo di una proprietà è **Calcolato,** non è possibile impostarlo. Per altre informazioni, vedere [Calculated and Custom Archiviazione Properties](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relazioni
  Le relazioni di dominio definite nella definizione DSL diventano coppie di proprietà, una nella classe a ogni estremità della relazione. I nomi delle proprietà vengono visualizzati nel diagramma DslDefinition come etichette sui ruoli su ogni lato della relazione. A seconda della molteplicità del ruolo, il tipo della proprietà è la classe all'altra estremità della relazione o una raccolta di tale classe.
@@ -67,7 +67,7 @@ ms.locfileid: "121398313"
 
  `FamilyTreeModel ftree = henry.FamilyTreeModel;`
 
- Le proprietà alle estremità opposte di una relazione sono sempre reciproche. Quando viene creato o eliminato un collegamento, le proprietà del ruolo in entrambi gli elementi vengono aggiornate. L'espressione seguente (che usa le estensioni `System.Linq` di ) è sempre true per la relazione ParentsHaveChildren nell'esempio:
+ Le proprietà alle estremità opposte di una relazione sono sempre reciproche. Quando viene creato o eliminato un collegamento, le proprietà del ruolo in entrambi gli elementi vengono aggiornate. L'espressione seguente (che usa le estensioni di ) è `System.Linq` sempre true per la relazione ParentsHaveChildren nell'esempio:
 
  `(Person p) => p.Children.All(child => child.Parents.Contains(p))`
 
@@ -125,7 +125,7 @@ ms.locfileid: "121398313"
 
  `DomainRoleInfo sourceRole = relationship.DomainRole[0];`
 
- Le classi predecessori degli elementi del modello sono le seguenti:
+ Le classi predecessore degli elementi del modello sono le seguenti:
 
 - ModelElement: tutti gli elementi e le relazioni sono ModelElement
 
@@ -244,7 +244,7 @@ Per impostazione predefinita, ogni relazione di incorporamento `PropagatesDelete
 
 Per impostazione predefinita, `PropagatesDelete` non è true per i ruoli delle relazioni di riferimento.
 
-È possibile fare in modo che le regole di eliminazione omettono propagazioni specifiche quando si elimina un oggetto. Ciò è utile se si sostituisce un elemento per un altro. Specificare il GUID di uno o più ruoli per cui l'eliminazione non deve essere propagata. Il GUID può essere ottenuto dalla classe di relazione:
+È possibile fare in modo che le regole di eliminazione omettono propagazioni specifiche quando si elimina un oggetto. Ciò è utile se si sostituisce un elemento per un altro. Specificare il GUID di uno o più ruoli per i quali l'eliminazione non deve essere propagata. Il GUID può essere ottenuto dalla classe di relazione:
 
 `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
@@ -477,13 +477,13 @@ partial class MyDiagram
  È anche possibile impostare il colore e altre proprietà esposte dei connettori usando questo metodo.
 
 ### <a name="use-transactions"></a>Usare le transazioni
- Forme, connettori e diagrammi sono sottotipi di <xref:Microsoft.VisualStudio.Modeling.ModelElement> e sono presenti nello Store. È pertanto necessario apportare modifiche solo all'interno di una transazione. Per altre informazioni, [vedere Procedura: Usare transazioni per aggiornare il modello.](../modeling/how-to-use-transactions-to-update-the-model.md)
+ Forme, connettori e diagrammi sono sottotipi di <xref:Microsoft.VisualStudio.Modeling.ModelElement> e sono presenti nello Store. È quindi necessario apportare modifiche solo all'interno di una transazione. Per altre informazioni, [vedere Procedura: Usare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ## <a name="document-view-and-document-data"></a><a name="docdata"></a> Visualizzazione documento e dati del documento
  ![Diagramma classi di tipi di diagramma standard](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Archiviare partizioni
- Quando viene caricato un modello, il diagramma di accompagnamento viene caricato contemporaneamente. In genere, il modello viene caricato in Store.DefaultPartition e il contenuto del diagramma viene caricato in un'altra partizione. In genere, il contenuto di ogni partizione viene caricato e salvato in un file separato.
+ Quando un modello viene caricato, il diagramma che lo accompagna viene caricato contemporaneamente. In genere, il modello viene caricato in Store.DefaultPartition e il contenuto del diagramma viene caricato in un'altra partizione. In genere, il contenuto di ogni partizione viene caricato e salvato in un file separato.
 
 ## <a name="see-also"></a>Vedi anche
 

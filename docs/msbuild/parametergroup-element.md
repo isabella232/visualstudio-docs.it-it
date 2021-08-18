@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c5023f6533dc94e5eb4bb92a6a6f8c015d91b84578b1dc562ac3fca92f2dae12
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c56eb3b3bfb79bd7896657719157fc6a4bd8e99c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443123"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100673"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 

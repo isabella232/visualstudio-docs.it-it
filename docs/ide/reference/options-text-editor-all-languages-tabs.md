@@ -44,12 +44,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d984fe1c20ae5eb036a60e6e2b2e6db23890a72a633d33946463f0bcd61034
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c8a37f493f90ee8bbc6d36e9a5d4eb9de5d57ab3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372335"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101011"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opzioni, Editor di testo, Tutti i linguaggi, Schede
 

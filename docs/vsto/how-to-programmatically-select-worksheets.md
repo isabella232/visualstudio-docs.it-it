@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Selezionare fogli di lavoro a livello di codice'
-description: Usare Visual Studio per selezionare a livello di codice i fogli di lavoro di Microsoft Excel con l'elemento host del foglio di lavoro o la raccolta sheets della cartella di lavoro di Excel.
+description: Usare Visual Studio per selezionare a livello Microsoft Excel fogli di lavoro con l'elemento host del foglio di lavoro o la raccolta di fogli della cartella Excel lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,24 +13,25 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 04f410292fff686e7604e917e6c3fa7002c65273
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 82d74fff713741208981278474b295c17975a639
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032732"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Procedura: Selezionare fogli di lavoro a livello di codice
   Il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> seleziona l'oggetto specificato e questa operazione sposta la selezione dell'utente al nuovo oggetto. Usare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> se si vuole applicare lo stato attivo all'oggetto senza modificare la selezione dell'utente.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Se si desidera selezionare un foglio di lavoro esistente in un componente aggiuntivo VSTO o se il foglio di lavoro è stato creato in fase di esecuzione in una personalizzazione a livello di documento, è necessario accedervi usando la raccolta excel della cartella di lavoro di Excel. In caso contrario, è possibile accedere direttamente all'elemento <xref:Microsoft.Office.Interop.Excel.Sheets> <xref:Microsoft.Office.Tools.Excel.Worksheet> host.
+ Se si desidera selezionare un foglio di lavoro esistente in un componente aggiuntivo VSTO o se il foglio di lavoro è stato creato in fase di esecuzione in una personalizzazione a livello di documento, è necessario accedervi tramite la raccolta Excel della cartella di lavoro di Excel; in caso contrario, è possibile accedere direttamente all'elemento <xref:Microsoft.Office.Interop.Excel.Sheets> <xref:Microsoft.Office.Tools.Excel.Worksheet> host.
 
 ## <a name="use-the-worksheet-host-item"></a>Usare l'elemento host del foglio di lavoro
- In una personalizzazione a livello di documento aggiungere il codice seguente a *Sheet1.vb* *o Sheet1.cs*.
+ In una personalizzazione a livello di documento aggiungere il codice seguente a *Sheet1.vb* *o Sheet1.cs.*
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>Per selezionare il primo foglio di lavoro in una cartella di lavoro usando un elemento host
 
@@ -39,7 +40,7 @@ ms.locfileid: "107826252"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet19":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet19":::
 
-## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Usare la raccolta sheets della cartella di lavoro di Excel
+## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Usare la raccolta sheets della cartella di lavoro Excel lavoro
  Accedere al foglio di lavoro usando la raccolta <xref:Microsoft.Office.Interop.Excel.Sheets> di Excel.
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>Per selezionare il primo foglio di lavoro in una cartella di lavoro usando la raccolta Sheets della cartella di lavoro di Excel
@@ -55,8 +56,8 @@ ms.locfileid: "107826252"
 - [Procedura: Eliminare fogli di lavoro da cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
 - [Procedura: Nascondere fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Procedura: Proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Elemento host del foglio di lavoro](../vsto/worksheet-host-item.md)
-- [Accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Elemento host Foglio di lavoro](../vsto/worksheet-host-item.md)
+- [Accesso globale agli oggetti nei Office progetto](../vsto/global-access-to-objects-in-office-projects.md)
 - [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)

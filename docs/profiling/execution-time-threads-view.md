@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 871f3ce7b2be50ddaff7c3723469ea34921855cfacb649416fe3bcb63d69e06e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 48455b4411994f61864a08aa05032bf8b0caafb3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355282"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131573"
 ---
 # <a name="execution-time-threads-view"></a>Tempo di esecuzione (visualizzazione Thread)
 Questi segmenti nella sequenza temporale della visualizzazione thread rappresentano il tempo di esecuzione, quando il thread è in esecuzione su un core logico nel sistema.

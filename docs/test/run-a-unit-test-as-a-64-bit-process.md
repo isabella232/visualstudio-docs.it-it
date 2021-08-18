@@ -1,6 +1,6 @@
 ---
 title: Eseguire uno unit test come processo a 64 bit
-description: Informazioni su come eseguire unit test e acquisire code coverage informazioni come processo a 64 bit. È necessario disporre di un computer a 64 bit.
+description: Informazioni su come eseguire unit test e acquisire code coverage come processo a 64 bit. È necessario disporre di un computer a 64 bit.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: how-to
@@ -13,12 +13,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 702e83e487f6d2bbfbb85d8026476ff1c3db9cbfccbbf7f6b431f0ea93b0f1ed
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 64c125736abd67b37cf84e2b67b6b54a863032b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121315109"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100387"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Eseguire uno unit test come processo a 64 bit
 

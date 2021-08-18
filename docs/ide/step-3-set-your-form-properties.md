@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d67536e525e6e5d97b0e54ffdabea378e6ee10f7405016c3c7ff929664ed74
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c7f9d8153a27807c394f2d6b3f383365e4fbb65d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121399574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132041"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: Impostare le proprietà del modulo
 
@@ -29,9 +29,9 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 1. Fare clic in qualsiasi punto all'interno del form **Form1** per selezionarlo. Analizzare la finestra **Proprietà**, che ora visualizza le proprietà per il form. I form dispongono di diverse proprietà. Ad esempio, è possibile impostare il colore primo piano e di sfondo, il testo del titolo visualizzato all'inizio del form, le dimensioni del form e altre proprietà.
 
    > [!NOTE]
-   > Se la **finestra Proprietà** non viene visualizzata, arrestare l'app scegliendo il pulsante arresta debug quadrato sulla barra degli strumenti o chiudendo semplicemente la finestra.  Se l'app viene arrestata e  la finestra Proprietà non è ancora visualizzata, scegliere **Visualizza** finestra Proprietà sulla barra  >  **dei** menu.
+   > Se la **finestra Proprietà** non viene visualizzata, arrestare l'app scegliendo il pulsante arresta debug quadrato sulla barra degli strumenti o semplicemente chiudendo la finestra.  Se l'app viene arrestata e  la finestra Proprietà non è ancora visualizzata, scegliere **Visualizza** finestra Proprietà sulla barra  >  **dei** menu.
 
-1. Dopo aver selezionato il form, individuare la proprietà **Testo** nella finestra **Proprietà**. A seconda di come è ordinato l'elenco, potrebbe essere necessario scorrere verso il basso. Scegliere **Testo,** digitare **Visualizzatore immagini** e quindi premere **INVIO.**  Il modulo dovrebbe ora avere il testo **Visualizzatore** immagini nella barra del titolo e la **finestra** Proprietà dovrebbe essere simile allo screenshot seguente.
+1. Dopo aver selezionato il form, individuare la proprietà **Testo** nella finestra **Proprietà**. A seconda di come è ordinato l'elenco, potrebbe essere necessario scorrere verso il basso. Scegliere **Testo,** digitare **Visualizzatore immagini** e quindi premere **INVIO.**  Il modulo dovrebbe ora avere il testo **Visualizzatore** immagini nella barra del titolo e la **finestra** Proprietà dovrebbe avere un aspetto simile allo screenshot seguente.
 
     ![Finestra Proprietà](../ide/media/express_edittextproperty.png)<br>
    ***Proprietà** _ _window*

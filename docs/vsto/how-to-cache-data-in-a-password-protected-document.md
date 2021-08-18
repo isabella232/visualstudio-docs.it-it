@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: db686d8b31f9a47fc68dc37f4844be60c46bf7a2812024c2385c147d6f604610
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4f2db608c826dd4b589ea2ed1f53bd504f209369
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440838"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100101"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedura: Memorizzare nella cache i dati in un documento protetto da password
   Se si aggiungono dati alla cache dei dati in un documento o in una cartella di lavoro protetta con una password, le modifiche apportate ai dati memorizzati nella cache non vengono salvate automaticamente. È possibile salvare le modifiche ai dati memorizzati nella cache eseguendo l'override di due metodi nel progetto.

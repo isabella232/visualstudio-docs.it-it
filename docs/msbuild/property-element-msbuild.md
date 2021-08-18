@@ -19,16 +19,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4203d177c4d4289f26ba445538005951a11792887acc9ec16ef35e5398b6acad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 450ac3215b967aced23dcadf99e2f6a049c75cd9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270413"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100608"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 
-Contiene un nome un valore della proprietà definiti dall'utente. Ogni proprietà usata in un MSBuild progetto deve essere specificata come figlio di un `PropertyGroup` elemento .
+Contiene un nome un valore della proprietà definiti dall'utente. Ogni proprietà usata in un MSBuild deve essere specificata come figlio di un `PropertyGroup` elemento.
 
  \<Project> \<PropertyGroup>
 

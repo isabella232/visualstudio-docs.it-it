@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 21f36f294a0503f0d9dce85e352c49af197257be1112e012c766eb1c7a945f94
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b5611047e3c79d6cd5d6a5951135a18d5fb3c0b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379854"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066121"
 ---
 # <a name="idiasymbolget_ishlsldata"></a>IDiaSymbol::get_isHLSLData
 Specifica se questo simbolo rappresenta dati HLSL (High Level Shader Language).

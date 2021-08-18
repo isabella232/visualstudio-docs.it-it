@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d65fcf4097069c48061f45d26293178cab2f379
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3215adc8cbefc4fb9e15b3f0c3876a6fe14acddc272f3ef059fabcd816967b37
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150989"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356933"
 ---
 # <a name="settings-page-project-designer"></a>Pagina Impostazioni, Creazione progetti
 

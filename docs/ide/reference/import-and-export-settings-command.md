@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: eb9c82d02a708d8aec49a620b836da6761594733c67b52cb04c1e4d7adfe62ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3074371bbf76d3f393e89655d85e2ed1a08ec58e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372465"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101271"
 ---
 # <a name="import-and-export-settings-command-vssettings-file"></a>Importare ed esportare Impostazioni comando (file con estensione vssettings)
 

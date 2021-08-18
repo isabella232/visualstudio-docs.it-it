@@ -15,12 +15,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: ba2e171a60be856fe083ac66e073524190343c5d788ebbed14a07db41755a3ee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 900e6c829234c534e01e1512aef9ca3ba4a41447
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412185"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048661"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurare le impostazioni di attendibilità per file e cartelle
 

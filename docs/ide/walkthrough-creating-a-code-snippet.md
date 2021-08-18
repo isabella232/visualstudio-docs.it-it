@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f04ba5610783fbe940504c83c387aa3aade90f24ad8bb1aaf1cecde945f169f1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 866f4880caf90977e3da809e63def40932c8f024
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121258512"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116643"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 

@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)"
-description: Informazioni su come usare la proprietà Icon per specificare l'icona visualizzata in Esplora file e nella barra delle applicazioni di Windows per l'applicazione compilata.
+description: Informazioni su come usare la proprietà Icon per specificare l'icona visualizzata Esplora file e la barra Windows barra delle applicazioni per l'applicazione compilata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77be1eefb4ea4da139bb536e9d838afecddd7202
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f986be76b22e89d6038e9331da0f2892b866a4425e8324d6f3da963add6ca7c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869297"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357856"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)
 
@@ -33,15 +34,15 @@ La proprietà `Icon` per un progetto specifica il file icona (*.ico*) che verrà
 
 1. In **Esplora soluzioni** scegliere un nodo progetto, non il nodo **Soluzione**.
 
-1. Sulla barra dei menu scegliere proprietà **progetto**  >  .
+1. Sulla barra dei menu scegliere **Project**  >  **proprietà**.
 
 1. Quando si apre **Creazione progetti**, scegliere la scheda **Applicazione**.
 
-1. **(Visual Basic)** &mdash; Nell'elenco **icona** scegliere un file icona (*. ico*).
+1. **(Visual Basic)** &mdash; **Nell'elenco** Icona scegliere un file di icona (*con estensione ico).*
 
-    **C#** &mdash; Accanto all'elenco **icona** scegliere il **\<Browse...>** pulsante, quindi selezionare il percorso del file icona desiderato.
+    **C#** &mdash; Accanto **all'elenco** Icona scegliere il pulsante e quindi passare al percorso del **\<Browse...>** file dell'icona desiderato.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Pagina applicazione, Progettazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [Pagina applicazione, Progettazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Pagina Applicazione, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Pagina Applicazione, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)

@@ -1,6 +1,6 @@
 ---
 title: IntelliSense per JavaScript
-description: Scopri in che modo Visual Studio offre IntelliSense più completo, il supporto per le funzionalità JavaScript moderne e funzionalità di produttività migliorate.
+description: Informazioni su come Visual Studio intelliSense più ricco, il supporto per le moderne funzionalità JavaScript e le funzionalità di produttività migliorate.
 ms.custom: SEO-VS-2020
 ms.date: 06/28/2017
 ms.topic: conceptual
@@ -27,12 +27,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4120a6038949f172b96bec599f2329b69abcac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3c5f997b7a4be43e6a8482a6282ecaaf2e3babf3e13bb5b08e734bb149b9ea75
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903966"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121357830"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 
@@ -145,5 +145,5 @@ Se non si vuole usare l'acquisizione automatica, disattivarla mediante l'aggiunt
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Uso di IntelliSense](../ide/using-intellisense.md)
 - [JavaScript support (Supporto per JavaScript) (Visual Studio per Mac)](/visualstudio/mac/javascript)

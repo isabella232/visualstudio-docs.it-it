@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: df38c3d18f18f7c1c2bda021a8827fe76305c4c2cdd6fd2fce3e76269acf7c5d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2e34d25ea59b20eebc986106123070dd1d23b9dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066400"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 Recupera un file di origine in base all'identificatore del file di origine.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8691f5c1f2b72b6f82336d4b1304fc47c0f4a1fca8c43bd199c75a8b737ae3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9c3892267d47cf48fc5fcd8b7e0179478b4c324a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379657"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031032"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Gerarchia lessicale dei tipi di simboli
 La tabella seguente illustra i tipi di simboli nella gerarchia lessicale.
@@ -28,24 +28,24 @@ La tabella seguente illustra i tipi di simboli nella gerarchia lessicale.
 
 |Tipo di simbolo|Descrizione|
 |-----------------|-----------------|
-|[Annotazione](../../debugger/debug-interface-access/annotation.md)|Specifica una posizione annotata nel codice programma.|
+|[Annotazione](../../debugger/debug-interface-access/annotation.md)|Specifica una posizione annotata nel codice del programma.|
 |[Bloccato](../../debugger/debug-interface-access/block.md)|Specifica gli ambiti annidati nelle funzioni.|
-|`Compiland`|Specifica un `compiland` collegato al file .exe.|
-|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Specifica i dati di compilazione che possono richiedere il caricamento di dettagli aggiuntivi del processo di compilazione e quindi l'overhead di runtime per il recupero.|
-|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Specifica eventuali variabili di ambiente aggiuntive significative per la compilazione del compilando.|
+|`Compiland`|Specifica un `compiland` oggetto collegato al .exe file.|
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Specifica i dati di compilazione che possono richiedere il caricamento di dettagli aggiuntivi del compilatore e pertanto comportano un sovraccarico in fase di esecuzione per il recupero.|
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Specifica eventuali variabili di ambiente aggiuntive significative per la compilazione del compilazione.|
 |[Custom (Debug Interface Access SDK)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Specifica un simbolo definito dall'utente.|
 |[Dati (Debug Interface Access SDK)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Specifica variabili quali parametri, variabili locali, variabili globali e membri di classe.|
 |[Exe](../../debugger/debug-interface-access/exe.md)|Specifica l'ambito globale dei dati. corrisponde a un intero .exe o .dll file.|
 |[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Specifica una funzione con un punto definito in corrispondenza del quale deve terminare il debug.|
 |[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Specifica una funzione con un punto definito in corrispondenza del quale deve iniziare il debug.|
 |[Funzione (Debug Interface Access SDK)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Specifica una funzione.|
-|[Etichetta (Debug Interface Access SDK)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Specifica una posizione nel codice programma.|
+|[Etichetta (Debug Interface Access SDK)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Specifica una posizione nel codice del programma.|
 |[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Specifica un simbolo esterno che viene visualizzato durante la compilazione del programma eseguibile.|
 |[Thunk](../../debugger/debug-interface-access/thunk.md)|Specifica un oggetto `thunk` .|
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Specifica un `namespace` identificatore.|
 
 > [!NOTE]
-> Possono essere disponibili proprietà aggiuntive dei simboli a seconda del tipo di simbolo. Queste proprietà sono elencate negli argomenti relativi ai singoli simboli.
+> A seconda del tipo di simbolo possono essere disponibili proprietà aggiuntive del simbolo. Queste proprietà sono elencate negli argomenti relativi ai singoli simboli.
 
 ## <a name="see-also"></a>Vedi anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

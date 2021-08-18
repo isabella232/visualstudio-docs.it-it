@@ -1,6 +1,6 @@
 ---
 title: Introduzione agli strumenti per le prestazioni | Microsoft Docs
-description: Informazioni sulle diverse modalità offerte da Visual Studio per raccogliere, visualizzare e analizzare i dati relativi alle prestazioni del codice.
+description: Informazioni sui diversi modi in cui Visual Studio raccogliere, visualizzare e analizzare i dati sulle prestazioni del codice.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: conceptual
@@ -11,15 +11,16 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb65e3cb8273f36cd9255bc0a3a2f8e91689f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c0aabc9292d4c904d36b00820935aadd1545057
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907373"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131521"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introduzione agli strumenti per le prestazioni
 
@@ -29,9 +30,9 @@ Visual Studio include vari metodi per raccogliere, visualizzare e analizzare i d
 
 - I report delle prestazioni offrono visualizzazioni a diversi livelli della struttura dell'applicazione, delle righe di codice sorgente e dei processi. I report delle prestazioni visualizzano dati di esecuzione dell'app, dalle funzioni chiamanti e chiamate all'albero delle chiamate dell'intera app.
 
-Per profilare rapidamente un progetto, un'app o un sito Web ASP.NET, selezionare **debug**  >  **Performance Profiler** e selezionare **creazione guidata sessione di prestazioni**. Per istruzioni dettagliate, vedere [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-cpu-sampling.md) e [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+Per profilare rapidamente un progetto, un'app o ASP.NET, selezionare **Debug**  >  **Profiler prestazioni** e selezionare **Creazione guidata sessione di prestazioni.** Per istruzioni dettagliate, vedere [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-cpu-sampling.md) e [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
 
-Per specificare e configurare manualmente una sessione di profilatura delle prestazioni, selezionare **debug**  >  **Profiler**  >  **Esplora prestazioni**. Usare la cartella **Destinazioni** e le pagine **Proprietà** in **Esplora prestazioni** per configurare le sessioni. Per istruzioni, vedere [Procedura: Creare manualmente sessioni di prestazioni](../profiling/how-to-manually-create-performance-sessions.md).
+Per specificare e configurare manualmente una sessione di profilatura delle prestazioni, selezionare **Debug**  >  **Profiler**  >  **Esplora prestazioni**. Usare la cartella **Destinazioni** e le pagine **Proprietà** in **Esplora prestazioni** per configurare le sessioni. Per istruzioni, vedere [Procedura: Creare manualmente sessioni di prestazioni](../profiling/how-to-manually-create-performance-sessions.md).
 
 **Vedere anche:**
 

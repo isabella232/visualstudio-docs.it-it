@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 138ac253be9d275cf640efdbcca4b295ced0e63e2219605df12376d674e69285
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aea82023781bb98fcc64f80f088c6ab4e4f91e09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369020"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131859"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i componenti client autonomi tramite il metodo di strumentazione dalla riga di comando.

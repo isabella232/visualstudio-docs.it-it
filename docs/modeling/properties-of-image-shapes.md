@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 60061af52e6344cc500d2c00dbeb11b350f3fc8c35560b26ef7bc524e1198a13
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf8e185030f459e758a578c38ede44e14588326a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410957"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116604"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 
@@ -42,7 +42,7 @@ ms.locfileid: "121410957"
 
 Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nella **cartella Resources** del **progetto Dsl.**
 
-Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [Personalizzazione](../modeling/customizing-and-extending-a-domain-specific-language.md)ed estensione di un Domain-Specific language .
 
 Le forme immagine hanno le proprietà elencate nella tabella seguente.
 

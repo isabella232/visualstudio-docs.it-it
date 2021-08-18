@@ -1,6 +1,6 @@
 ---
-title: Riferimenti gestiti (sviluppo per Office in Visual Studio)
-description: Informazioni sulla documentazione di riferimento delle API per gli spazi dei nomi e i tipi usati nei progetti di Office destinati alla .NET Framework.
+title: Riferimento gestito (Office sviluppo in Visual Studio)
+description: Informazioni sulla documentazione di riferimento sulle API per gli spazi dei nomi e i tipi usati Office progetti che hanno come destinazione il .NET Framework.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
@@ -14,17 +14,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9364b191886408e509aa09a83bde70ce8240707e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5452ea5990b4facb108deffe87870100ec17ca0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958752"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032511"
 ---
-# <a name="managed-reference-office-development-in-visual-studio"></a>Riferimenti gestiti (sviluppo per Office in Visual Studio)
-  Questa sezione include documentazione di riferimento alle API per gli spazi dei nomi e i tipi usati nei progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Per la documentazione di riferimento delle API sugli spazi dei nomi e i tipi usati nei progetti di Office destinati a .NET Framework 3,5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio: [riferimenti gestiti (sviluppo per Office in Visual Studio)](managed-reference-office-development-in-visual-studio.md).
+# <a name="managed-reference-office-development-in-visual-studio"></a>Riferimento gestito (Office sviluppo in Visual Studio)
+  Questa sezione include documentazione di riferimento alle API per gli spazi dei nomi e i tipi usati nei progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](includes/net-v45-md.md)]. Per la documentazione di riferimento sulle API sugli spazi dei nomi e sui tipi usati nei progetti Office che hanno come destinazione .NET Framework 3.5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio: Riferimento gestito [(sviluppo di Office in Visual Studio).](managed-reference-office-development-in-visual-studio.md)
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -74,7 +75,7 @@ ms.locfileid: "99958752"
  Contiene classi di attività MSBuild che vengono usate per compilare progetti di Office.
 
 ## <a name="see-also"></a>Vedi anche
-- [Panoramica di Visual Studio Tools per Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
-- [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
-- [Procedure dettagliate e esempi di sviluppo per Office](office-development-samples-and-walkthroughs.md)
-- [Progettazione e creazione di soluzioni Office](designing-and-creating-office-solutions.md)
+- [Visual Studio degli strumenti per Office runtime](visual-studio-tools-for-office-runtime-overview.md)
+- [Introduzione allo &#40;Office sviluppo in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+- [Office esempi di sviluppo e procedure dettagliate](office-development-samples-and-walkthroughs.md)
+- [Progettare e creare Office soluzioni](designing-and-creating-office-solutions.md)

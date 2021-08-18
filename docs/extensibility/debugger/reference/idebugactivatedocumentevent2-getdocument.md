@@ -1,6 +1,6 @@
 ---
 description: Ottiene il documento da attivare.
-title: Interfaccia IDebugActivateDocumentEvent2::GetDocument | Microsoft Docs
+title: IDebugActivateDocumentEvent2::GetDocument | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7bc89983b0470bcff37eb1f4d76b16f35d07505ca1e2b1a278d75fd07b79b34
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 529f981476bd2db7655fa86a6c9182998656fe97
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121323846"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064929"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 Ottiene il documento da attivare.

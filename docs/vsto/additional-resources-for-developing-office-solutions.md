@@ -1,5 +1,5 @@
 ---
-title: Risorse aggiuntive per sviluppare soluzioni Office
+title: Risorse aggiuntive per lo sviluppo Office soluzioni
 description: Informazioni sulle risorse aggiuntive che è possibile usare per sviluppare estensioni per Microsoft Office applicazioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -12,27 +12,28 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: dd1b1862d3215698ee17ed152bba6d4d569667ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ea652b090c7ce5b8d69d69a53a2c50bf013a730
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100270"
 ---
-# <a name="additional-resources-to-develop-office-solutions"></a>Risorse aggiuntive per sviluppare soluzioni Office
+# <a name="additional-resources-to-develop-office-solutions"></a>Risorse aggiuntive per lo sviluppo Office soluzioni
   Gli strumenti di sviluppo di Microsoft Office in Visual Studio rappresentano solo uno dei diversi modi per estendere le applicazioni di Office. Le applicazioni di Office includono infatti anche alcune funzionalità incorporate, tra cui i formati Open XML, non contemplate dagli strumenti di sviluppo di Office in Visual Studio o da questa documentazione.
 
  Queste risorse contengono informazioni utili per scoprire le possibilità offerte da Microsoft Office e dagli strumenti di sviluppo di Office in Visual Studio.
 
-[Centro per sviluppatori Office](https://developer.microsoft.com/office/docs)
+[Office per sviluppatori](https://developer.microsoft.com/office/docs)
 
 Portale centrale per accedere alle ultime risorse per gli sviluppatori Office (non specifico per lo sviluppo di Office con Visual Studio).
 
-[Sezione sviluppo Microsoft Office di MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12))
+[Microsoft Office sviluppo di MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12))
 
 Area di MSDN Library dove è possibile trovare articoli e documentazione di riferimento sullo sviluppo di soluzioni per diverse versioni di Office (non specifiche per lo sviluppo di Office con Visual Studio).
 
 ## <a name="see-also"></a>Vedi anche
-- [Supporto aggiuntivo per gli errori nelle soluzioni Office](../vsto/additional-support-for-errors-in-office-solutions.md)
+- [Supporto aggiuntivo per gli errori nelle Office soluzioni](../vsto/additional-support-for-errors-in-office-solutions.md)

@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 07449cb310d3f362d32791c20d8e903481e68663
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a9192de1f2d56017be3bf3036170cd183a191ed8393dac8d3a912091c0fe14f0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027656"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356010"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 

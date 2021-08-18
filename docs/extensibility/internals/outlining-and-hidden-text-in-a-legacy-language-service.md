@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2b1315e072ca9d6bff6734df5b6030bd19059a0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: eeb87cdc225210dbe839a4a4cacc9ae0b44243b0bd1accde0ae4668c73694222
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102545"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432293"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Definizione della struttura e testo nascosto in un servizio di linguaggio legacy
 La struttura consente di comprimere una sequenza di righe di testo in un'unica riga. In C++, ad esempio, tutti i metodi possono essere compressi in una singola riga, visualizzando solo la firma del metodo. Il testo nascosto è la sequenza di righe di testo che possono essere visualizzate o nascoste.

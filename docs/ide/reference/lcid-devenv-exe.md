@@ -18,14 +18,15 @@ ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e5aad581babafe882fccc13e8594aa60437d9df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35a8fa0a783817d5ad1fdc4b6bce39f873a051f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852141"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101102"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -45,7 +46,7 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="remarks"></a>Commenti
 
-Carica l'IDE e imposta la lingua naturale predefinita per l'ambiente. Questa modifica viene mantenute tra le sessioni e l'IDE Mostra questa modifica nella casella **strumenti**  >  **Opzioni**  >  **ambiente**  >  **impostazioni internazionali**  >   .
+Carica l'IDE e imposta la lingua naturale predefinita per l'ambiente. Questa modifica viene mantenuta tra le sessioni e l'IDE mostra questa modifica nella casella Opzioni degli strumenti Ambiente Impostazioni  >    >    >    >  **lingua.**
 
 Se la lingua specificata non è disponibile nel sistema in uso, l'opzione `/LCID` viene ignorata.
 

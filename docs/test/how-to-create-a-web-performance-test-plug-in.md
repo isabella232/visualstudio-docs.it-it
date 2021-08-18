@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: b3134ab644ec378c5c2869c5eb35a40c119e48dabb210a0dbf552c04d51eb8ba
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0100ea9f882a95279dadba0dc06e5feb20d7de9d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395203"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047465"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: Creare un plug-in di test prestazioni Web
 
@@ -38,7 +38,7 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
 
 1. Aprire un progetto di test di carico e prestazioni web che contenga un test delle prestazioni web.
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi nuovo **Project**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere Aggiungi **e** quindi nuovo **Project**.
 
 3. Creare un nuovo progetto **Libreria di classi**.
 

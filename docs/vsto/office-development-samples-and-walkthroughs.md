@@ -23,19 +23,19 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cb0b8a016d6d2a48497fe12d73e64d18f0e32b8550c26c0bc4168ef63547f0e9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5d75b44792647212aeeb027259dc0cc97ab4aa97
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121365991"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032394"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office esempi di sviluppo e procedure dettagliate
   Questa sezione contiene applicazioni di esempio, codice di esempio e procedure dettagliate che illustrano la sintassi, la struttura e le tecniche usate per compilare Microsoft Office soluzioni.
 
  Il codice di esempio è destinato a scopi didattici e non deve essere usato nelle soluzioni distribuite senza modifiche. In particolare, è necessario prendere in considerazione la sicurezza.
 
- Per informazioni sulla protezione delle applicazioni, vedere [Proteggere Office soluzioni](../vsto/securing-office-solutions.md).
+ Per informazioni sulla protezione delle applicazioni, vedere [Soluzioni Office sicurezza](../vsto/securing-office-solutions.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "121365991"
 
 |Argomento|Descrizione|
 |-----------|-----------------|
-|[Office di sviluppo](../vsto/office-development-samples.md)|Vengono forniti collegamenti ad applicazioni di esempio che illustrano l'uso di Office e SharePoint sviluppo in Visual Studio.|
+|[Office di sviluppo](../vsto/office-development-samples.md)|Fornisce collegamenti ad applicazioni di esempio che illustrano l'uso di Office e SharePoint sviluppo in Visual Studio.|
 |[Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)|Vengono elencate guide dettagliate che forniscono un'introduzione agli strumenti di sviluppo Office in Visual Studio e illustrano come integrare Word in Office Business Applications.|
 |[Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)|Vengono elencate guide dettagliate che forniscono un'introduzione agli strumenti di sviluppo Office in Visual Studio e illustrano come integrare Excel in Office Business Applications.|
 |[Procedure dettagliate sui dati Office soluzioni](../vsto/data-in-office-solutions-walkthroughs.md)|Vengono elencate guide dettagliate che illustrano come usare i dati nelle soluzioni.|
@@ -56,6 +56,6 @@ ms.locfileid: "121365991"
 |-----------|-----------------|
 |[Introduzione allo &#40;Office sviluppo in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Vengono forniti collegamenti a informazioni sull'installazione, i modelli di progetto, Office assembly di interoperabilità primari e le novità dello Office sviluppo.|
 |[Architettura delle Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Illustra il funzionamento del codice Office soluzioni dal punto di vista dello sviluppatore e dell'utente finale e include informazioni sul funzionamento del codice gestito con Office documenti e applicazioni.|
-|[Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)|Vengono elencate le domande frequenti sulla programmazione con Office sviluppo in Visual Studio e vengono forniti collegamenti ad argomenti che consentono di risolvere i problemi comuni.|
-|[Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)|Vengono forniti collegamenti a informazioni su come creare Microsoft Office e sul ruolo degli assembly nella soluzione.|
+|[Attività comuni nella programmazione Office dati](../vsto/common-tasks-in-office-programming.md)|Vengono elencate le domande frequenti sulla programmazione con Office sviluppo in Visual Studio e vengono forniti collegamenti ad argomenti che consentono di risolvere i problemi comuni.|
+|[Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)|Vengono forniti collegamenti a informazioni su come creare Microsoft Office soluzioni e sul ruolo degli assembly nella soluzione.|
 |[Panoramica del riquadro Azioni](../vsto/actions-pane-overview.md)|Fornisce una panoramica del riquadro attività a livello di documento denominato riquadro azioni.|

@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d33e3d882d25045802f2c015c88b87b970d9d04e
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: b8dd8c40aa1abe61589b1c8c71a9a83477db07fa7af90131bd2b1b5d06027a55
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390437"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356358"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Eseguire il mapping delle dipendenze con le mappe codice
 
@@ -48,9 +49,9 @@ In Visual Studio, le mappe codice consentono di vedere più rapidamente come si 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per creare una mappa del codice in Visual Studio, installare prima i componenti Mappa codice e [ **Convalida dipendenze** in  tempo reale](install-architecture-tools.md)
+Per creare una mappa codice in Visual Studio, installare prima i componenti Mappa codice e [ **Convalida dipendenze** in  tempo reale](install-architecture-tools.md)
 
-Per creare e modificare le mappe codice, è necessario **Visual Studio Enterprise edizione**. Tuttavia, nelle edizioni Visual Studio Community e Professional è possibile aprire i diagrammi generati nell'edizione Enterprise, ma non è possibile modificarli.
+Per creare e modificare le mappe codice, è necessario **Visual Studio Enterprise edizione**. Tuttavia, nelle edizioni Visual Studio Community e Professional, è possibile aprire i diagrammi generati in Enterprise edition, ma non è possibile modificarli.
 
 > [!NOTE]
 > Prima di condividere le mappe create in Visual Studio Enterprise con altri utenti che usano Visual Studio Professional, assicurarsi che tutti gli elementi sulla mappa( ad esempio elementi nascosti, gruppi espansi e collegamenti tra gruppi) siano visibili.
@@ -65,7 +66,7 @@ Per aggiungere una mappa codice vuota:
 
 2. Nella finestra **di dialogo Aggiungi nuovo** elemento in **Installato** scegliere la **categoria** Generale.
 
-3. Scegliere il **modello Directed Graph Document(.dgml)** e quindi selezionare **Aggiungi.**
+3. Scegliere il **modello Directed Graph Document(.dgml) e** quindi selezionare **Aggiungi.**
 
    > [!TIP]
    > Questo modello potrebbe non essere visualizzato in ordine alfabetico, quindi scorrere verso il basso fino alla fine dell'elenco dei modelli se non viene visualizzato.
@@ -83,7 +84,7 @@ Altre informazioni:
 
 Per visualizzare tutte le dipendenze nella soluzione:
 
-1. Sulla barra dei menu scegliere **Architettura** Genera  >  **mappa codice per la soluzione.** Se il codice non è stato modificato dall'ultima compilazione, è invece possibile selezionare Architettura Genera mappa codice per la soluzione  >  **senza** compilazione.
+1. Sulla barra dei menu scegliere **Architettura** Genera  >  **mappa codice per la soluzione.** Se il codice non è stato modificato dall'ultima compilazione, è possibile selezionare Architettura Genera mappa codice per la soluzione  >  **senza compilazione.**
 
    ![Comando di generazione mappa del codice](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -106,7 +107,7 @@ Per visualizzare tutte le dipendenze nella soluzione:
    Oppure usare la tastiera selezionando l'elemento e quindi premendo il tasto più ( **+** ). Per esplorare i livelli più profondi di codice, effettuare la stessa operazione per gli spazi dei nomi, i tipi e i membri.
 
    > [!TIP]
-   > Per altre informazioni sull'uso delle mappe codice con il mouse, la tastiera e il tocco, vedere Esplorare e ridisporre [le mappe codice.](../modeling/browse-and-rearrange-code-maps.md)
+   > Per altre informazioni sull'uso delle mappe codice con il mouse, la tastiera e il tocco, vedere Esplorare e ridisporre le [mappe codice.](../modeling/browse-and-rearrange-code-maps.md)
 
 5. Per semplificare la mappa e concentrarsi sulle singole parti, scegliere **Filtri** nella barra degli strumenti della mappa codice e selezionare solo i tipi di nodi e di collegamenti desiderati. Ad esempio, è possibile nascondere tutti i contenitori di Cartella soluzione e Assembly.
 
@@ -133,7 +134,7 @@ Per visualizzare tutte le dipendenze nella soluzione:
 
    ![Drill-down dei gruppi a livello di classe e membro](../modeling/media/dependencygraph_expandedselectedgroups_2012.png)
 
-10. Un altro modo per concentrarsi sulla mappa di soluzione complessa consiste nel generare una nuova mappa contenente gli elementi selezionati da una mappa esistente. Tenere **premuto CTRL** mentre si selezionano gli elementi su cui si vuole concentrarsi, aprire il menu di scelta rapida e scegliere Nuovo grafico da **Selezione.**
+10. Un altro modo per concentrarsi sulla mappa di soluzione complessa consiste nel generare una nuova mappa contenente gli elementi selezionati da una mappa esistente. Tenere **premuto CTRL** mentre si selezionano gli elementi su cui si vuole concentrarsi, aprire il menu di scelta rapida e scegliere Graph da **Selezione**.
 
     ![Mostra gli elementi selezionati in una nuova mappa codici](../modeling/media/codemapsshowonnewmap.png)
 
@@ -161,9 +162,9 @@ Si supponga di avere una revisione del codice da eseguire in alcuni file con mod
 
    ![Selezionare gli elementi da mappare](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. Sulla barra **Esplora soluzioni** barra degli strumenti fare clic **su Mostra nella mappa** codice Pulsante Crea nuovo ![ grafo da nodi selezionati ](../modeling/media/createnewgraphfromselectedbutton.gif) . In caso contrario, aprire il menu di scelta rapida per uno o un gruppo di elementi e **scegliere Mostra nella mappa codice.**
+1. Sulla barra **Esplora soluzioni** barra degli strumenti scegliere Mostra **nella** mappa codice ![ Crea Graph pulsante Da nodi selezionati ](../modeling/media/createnewgraphfromselectedbutton.gif) . In caso contrario, aprire il menu di scelta rapida per uno o un gruppo di elementi e **scegliere Mostra nella mappa codice.**
 
-   È anche possibile trascinare elementi **Esplora soluzioni**, **Visualizzazione classi** o Visualizzatore oggetti **in** [una](#add-a-code-map) mappa codice nuova o esistente. Per includere la gerarchia padre per gli elementi, tenere premuto **CTRL** mentre si trascinano gli elementi oppure usare il pulsante Includi elementi padre sulla barra degli strumenti della mappa codice per specificare l'azione predefinita.  È anche possibile trascinare file di assembly dall'Visual Studio, ad esempio **da Esplora risorse**.
+   È anche possibile trascinare elementi **Esplora soluzioni**, **Visualizzazione classi** o Visualizzatore oggetti **in** una [mappa](#add-a-code-map) codice nuova o esistente. Per includere la gerarchia padre per gli elementi, tenere premuto **CTRL** mentre si trascinano gli elementi oppure usare il pulsante Includi elementi padre sulla barra degli strumenti della mappa codice per specificare l'azione predefinita.  È anche possibile trascinare i file di assembly dall'Visual Studio, ad esempio **da Windows Explorer.**
 
    > [!NOTE]
    > Quando si aggiungono elementi da un progetto condiviso tra più app, ad esempio Windows Phone o Microsoft Store, tali elementi vengono visualizzati sulla mappa con il progetto di app attualmente attivo. Se si cambia il contesto passando a un altro progetto di applicazione e si aggiungono altri elementi dal progetto condiviso, tali elementi vengono visualizzati con il nuovo progetto di applicazione attivo. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.
@@ -176,15 +177,15 @@ Si supponga di avere una revisione del codice da eseguire in alcuni file con mod
 
    ![Espandere un nodo in una mappa codice](../modeling/media/dependencygraph_containment.png)
 
-   Per espandere tutti gli elementi, selezionarli premendo **CTRL** A, quindi aprire il menu di scelta rapida per la mappa + e scegliere Group Expand **(Espandi**  >  **gruppo).** Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
+   Per espandere tutti gli elementi, selezionarli premendo **CTRL** A, quindi aprire il + menu di scelta rapida per la mappa e scegliere Group Expand **(Espandi**  >  **gruppo).** Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
 
 5. Continuare ad espandere gli elementi a cui si è interessati, fino al livello di classe e membro, se necessario.
 
    ![Espandere i gruppi a livello di classe e membro](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   Per visualizzare i membri presenti nel codice ma non visualizzati sulla mappa, fare clic sull'icona Refetch Children (Elementi figlio **refetch) Icona Refetch** Children (Elementi figlio refetch) nell'angolo superiore sinistro ![ di un ](../modeling/media/dependencygraph_deletednodesicon.png) gruppo.
+   Per visualizzare i membri presenti nel codice ma non visualizzati sulla mappa, fare clic sull'icona Refetch Children (Elementi figlio **refetch) Icona Refetch Children** (Elementi figlio refetch) nell'angolo superiore sinistro ![ di un ](../modeling/media/dependencygraph_deletednodesicon.png) gruppo.
 
-6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire  il menu di scelta rapida e quindi scegliere l'opzione Mostra per il tipo di elementi correlati da aggiungere alla mappa. Ad esempio:
+6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire  il menu di scelta rapida e quindi scegliere l'opzione Mostra per il tipo di elementi correlati da aggiungere alla mappa. Esempio:
 
     Per un **assembly** scegliere:
 
@@ -240,8 +241,8 @@ Si supponga di avere una revisione del codice da eseguire in alcuni file con mod
 - [Condividere mappe codice](share-code-maps.md)
 - [Creare mappe codice per C++](code-maps-for-cpp.md)
 - [Migliorare le prestazioni della mappa codice](code-maps-performance.md)
-- [Video: Informazioni sulla progettazione dal codice con Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
-- [Video: Informazioni sulla progettazione dal codice con Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [Video: Comprendere la progettazione dal codice con Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [Video: Comprendere la progettazione dal codice con Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)

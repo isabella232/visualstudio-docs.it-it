@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 4f5e6bbf7326b768e0f6cd0fe48e6501e5ad0b4efca2ece75a0df5b781c0a6fa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8da6e8bd908466b8314ab9ff6cf3e9d998644a77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047699"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Procedura: Gestire i conflitti di distribuzione
   È possibile fornire il proprio codice per gestire i conflitti di distribuzione per un SharePoint di progetto. Ad esempio, è possibile determinare se esistono già file nell'elemento di progetto corrente nel percorso di distribuzione e quindi eliminare i file distribuiti prima della distribuzione dell'elemento di progetto corrente. Per altre informazioni sui conflitti di distribuzione, vedere [Estensione SharePoint creazione di pacchetti e distribuzione.](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

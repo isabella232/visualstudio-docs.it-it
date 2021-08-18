@@ -18,22 +18,22 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 62303e762206762a1351a2ea267860df4152b319ddf910d2fe866def0712c90a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0cdcee9a763a7354ceca6821796f455a1a878aa3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121315330"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100452"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Chiamare nei modelli SharePoint a oggetti
   Quando si creano estensioni per gli strumenti SharePoint in Visual Studio, potrebbe essere necessario chiamare SharePoint API per eseguire determinate attività. Ad esempio, se si crea un passaggio di distribuzione personalizzato per i progetti SharePoint, potrebbe essere necessario chiamare le API SharePoint per eseguire alcune delle attività per distribuire soluzioni.
 
  [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]e forniscono due diversi modelli a oggetti che è possibile usare nelle estensioni SharePoint strumenti: un modello a oggetti [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] server e un modello a oggetti client. Ogni modello a oggetti presenta vantaggi e svantaggi nel contesto delle estensioni SharePoint strumenti.
 
- Per una panoramica dei modelli SharePoint a oggetti, vedere Panoramica del modello di programmazione [delle estensioni](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)SharePoint tools .
+ Per una panoramica dei modelli SharePoint a oggetti, vedere Panoramica del modello di programmazione [delle estensioni SharePoint tools](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).
 
 ## <a name="use-the-client-object-model-in-extension-projects"></a>Usare il modello a oggetti client nei progetti di estensione
- Quando si sviluppa un'estensione per gli strumenti SharePoint, è possibile usare il modello a oggetti client nel progetto come qualsiasi altro set di API gestite. È possibile aggiungere riferimenti agli assembly nel modello a oggetti client al progetto ed è possibile chiamare le API nel modello a oggetti client direttamente dal codice.
+ Quando si sviluppa un'estensione per gli SharePoint, è possibile usare il modello a oggetti client nel progetto come qualsiasi altro set di API gestite. È possibile aggiungere riferimenti agli assembly nel modello a oggetti client al progetto ed è possibile chiamare le API nel modello a oggetti client direttamente dal codice.
 
  Tuttavia, il modello a oggetti client presenta due svantaggi nel contesto delle estensioni SharePoint strumenti:
 
@@ -43,14 +43,14 @@ ms.locfileid: "121315330"
 
   Per una procedura dettagliata che illustra come usare il modello a oggetti client in un'estensione degli strumenti SharePoint in Visual Studio, vedere [Procedura dettagliata:](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)Chiamare il modello a oggetti client SharePoint in un'estensione Esplora server .
 
-## <a name="use-the-server-object-model-in-extension-projects"></a>Usare il modello a oggetti server nei progetti di estensione
+## <a name="use-the-server-object-model-in-extension-projects"></a>Usare il modello a oggetti del server nei progetti di estensione
  Il modello a oggetti del server è un superset del modello a oggetti client. Quando si usa il modello a oggetti del server, è possibile usare tutte le funzionalità che [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ed [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] espongono a livello di codice.
 
- SharePoint estensioni degli strumenti di configurazione possono usare le API nel modello a oggetti del server, ma non possono chiamare direttamente le API. Il modello a oggetti del server può essere chiamato solo da un processo a 64 bit destinato .NET Framework 3.5. Tuttavia, SharePoint strumenti di configurazione richiedono e vengono eseguite nel processo di Visual Studio [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a 32 bit. In questo modo SharePoint estensioni degli strumenti non fanno riferimento direttamente agli assembly nel SharePoint a oggetti del server.
+ SharePoint estensioni degli strumenti di configurazione possono usare le API nel modello a oggetti del server, ma non possono chiamare direttamente le API. Il modello a oggetti del server può essere chiamato solo da un processo a 64 bit destinato .NET Framework 3.5. Tuttavia, SharePoint estensioni degli strumenti richiedono e vengono eseguite nel processo di Visual Studio [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a 32 bit. In questo modo SharePoint estensioni degli strumenti non fanno riferimento direttamente agli assembly nel SharePoint a oggetti del server.
 
- Se si vuole usare il modello a oggetti del server in un'estensione SharePoint tools, è necessario creare un comando SharePoint *personalizzato* per chiamare l'API. Il comando SharePoint in un assembly secondario che può chiamare direttamente nel modello a oggetti del server. Nel progetto di estensione si chiama il SharePoint comando indirettamente usando il metodo ExecuteCommand di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> oggetto.
+ Se si vuole usare il modello a oggetti del server in un'estensione SharePoint tools, è necessario creare un comando SharePoint *personalizzato* per chiamare l'API. Si definisce il SharePoint comando in un assembly secondario che può chiamare direttamente nel modello a oggetti del server. Nel progetto di estensione si chiama il comando SharePoint indirettamente usando il metodo ExecuteCommand di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> oggetto.
 
- Per altre informazioni sulla creazione e sull'uso SharePoint comandi, vedere [Procedura: Creare](../sharepoint/how-to-create-a-sharepoint-command.md) un comando SharePoint e [Procedura: Eseguire](../sharepoint/how-to-execute-a-sharepoint-command.md)un comando SharePoint comando . Per informazioni su come distribuire SharePoint comandi, vedere Deploy [extensions for the SharePoint tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Per altre informazioni sulla creazione e sull'SharePoint comandi, vedere [Procedura: Creare](../sharepoint/how-to-create-a-sharepoint-command.md) un comando SharePoint e [Procedura:](../sharepoint/how-to-execute-a-sharepoint-command.md)Eseguire un comando SharePoint . Per informazioni su come distribuire SharePoint comandi, vedere Distribuire estensioni per gli strumenti SharePoint [in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
  Per le procedure dettagliate che illustrano come creare e usare i comandi SharePoint, vedere Procedura [dettagliata:](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) Creare un passaggio di distribuzione personalizzato per i progetti SharePoint e Procedura dettagliata: estendere Esplora server per visualizzare [le web part.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 

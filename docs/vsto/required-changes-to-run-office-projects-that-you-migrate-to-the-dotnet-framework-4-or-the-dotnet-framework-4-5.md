@@ -1,6 +1,6 @@
 ---
-title: Modifiche richieste per i progetti di Office migrati a .NET 4,5
-description: Informazioni sulle modifiche che è necessario apportare al progetto se il Framework di destinazione viene modificato in .NET Framework 4 o versione successiva da una versione precedente del .NET Framework.
+title: Modifiche necessarie per i Office di cui è stata eseguita la migrazione a .NET 4.5
+description: Informazioni sulle modifiche da apportare al progetto se il framework di destinazione viene modificato in .NET Framework 4 o versione successiva da una versione precedente del .NET Framework.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -13,22 +13,23 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4fbe3c311e734cc076ab898544470c3e27e91795
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b1e3ca556e07e0d4df8a27142a0700fd40e09a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032225"
 ---
-# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Modifiche richieste per i progetti di Office migrati a .NET 4,5
+# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Modifiche necessarie per i Office di cui è stata eseguita la migrazione a .NET 4.5
 
-  Se il Framework di destinazione di un progetto di Office viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive da una versione precedente del .NET Framework, è necessario eseguire le attività seguenti per assicurarsi che la soluzione possa essere eseguita nel computer di sviluppo e nei computer degli utenti finali:
+  Se il framework di destinazione di un progetto Office viene modificato in o versione successiva da una versione precedente del .NET Framework, è necessario eseguire le attività seguenti per assicurarsi che la soluzione possa essere eseguita nel computer di sviluppo e nei computer degli utenti [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] finali:
 
 - Rimuovere l'oggetto <xref:System.Security.SecurityTransparentAttribute> dal progetto se è stato aggiornato da Visual Studio 2008.
 
-- Eseguire un comando **Pulisci** in Visual Studio per poter eseguire o eseguire il debug del progetto nel computer di sviluppo.
+- Eseguire un **comando Clean** in Visual Studio essere in grado di eseguire o eseguire il debug del progetto nel computer di sviluppo.
 
 - Aggiornare il prerequisito di .NET Framework per il progetto.
 
@@ -36,10 +37,10 @@ ms.locfileid: "99943718"
 
   Per altre informazioni su queste attività, vedere le sezioni corrispondenti riportate di seguito.
 
-## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Rimuovere l'attributo SecurityTransparent dai progetti che si aggiornano da Visual Studio 2008
+## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Rimuovere l'attributo SecurityTransparent dai progetti aggiornati da Visual Studio 2008
  Se si aggiorna un progetto di Office da Visual Studio 2008 e il framework di destinazione del progetto viene successivamente modificato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario rimuovere <xref:System.Security.SecurityTransparentAttribute> dal progetto. Visual Studio non rimuove automaticamente questo attributo. Se non si rimuove questo attributo, viene visualizzato un messaggio di errore quando si compila il progetto.
 
- Per ulteriori informazioni sulle condizioni in cui Visual Studio può modificare il Framework di destinazione di un progetto aggiornato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , vedere [aggiornamento e migrazione di soluzioni Office](../vsto/upgrading-and-migrating-office-solutions.md).
+ Per altre informazioni sulle condizioni in cui Visual Studio modificare il framework di destinazione di un progetto aggiornato a o , vedere Aggiornare ed eseguire la migrazione Office [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] [soluzioni](../vsto/upgrading-and-migrating-office-solutions.md).
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>Per rimuovere SecurityTransparentAttribute
 
@@ -60,18 +61,18 @@ ms.locfileid: "99943718"
     [assembly: SecurityTransparent()]
     ```
 
-## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Eseguire il comando Pulisci per eseguire il debug o eseguire un progetto nel computer di sviluppo
- Se un progetto di Office è stato compilato prima della modifica del Framework di destinazione del progetto in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, è necessario eseguire un comando **Pulisci** e quindi ricompilare il progetto dopo la modifica del Framework di destinazione. Se non si esegue un comando **pulito** , si riceverà un oggetto <xref:System.Runtime.InteropServices.COMException> quando si tenta di eseguire il debug o di eseguire il progetto ridestinato.
+## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>Eseguire il comando clean per eseguire il debug o l'esecuzione di un progetto nel computer di sviluppo
+ Se un progetto Office è stato compilato prima che il framework di destinazione del progetto venga modificato in o versione successiva, è necessario eseguire un comando Clean e quindi ricompilare il progetto dopo la modifica del [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] framework di destinazione.  Se non si esegue un **comando Clean,** si riceverà un quando si tenta di eseguire il debug o <xref:System.Runtime.InteropServices.COMException> di eseguire il progetto ridestinato.
 
- Per ulteriori informazioni sul comando **Pulisci** , vedere [compilazione di soluzioni Office](../vsto/building-office-solutions.md).
+ Per altre informazioni sul **comando Clean,** vedere [Build Office solutions](../vsto/building-office-solutions.md).
 
 ## <a name="update-the-prerequisites-for-deployment"></a>Aggiornare i prerequisiti per la distribuzione
- Quando si ridestina un progetto di Office a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, è necessario aggiornare anche il prerequisito .NET Framework corrispondente nella finestra di dialogo **prerequisiti** . In caso contrario, i controlli di progetto limited di InstallShield la distribuzione ClickOnce o per e installa una versione precedente di .NET Framework.
+ Quando si ridestina un progetto Office a o versioni successive, è necessario aggiornare anche il prerequisito di .NET Framework corrispondente nella [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] **finestra di dialogo** Prerequisiti . In caso contrario, i controlli di progetto limited di InstallShield la distribuzione ClickOnce o per e installa una versione precedente di .NET Framework.
 
- Per ulteriori informazioni sull'aggiornamento dei prerequisiti per la distribuzione ai computer degli utenti finali, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](/previous-versions/bb608608(v=vs.110)).
+ Per altre informazioni sull'aggiornamento dei prerequisiti per la distribuzione nei computer degli utenti finali, vedere [Procedura:](/previous-versions/bb608608(v=vs.110))Installare i prerequisiti nei computer degli utenti finali per eseguire Office soluzioni .
 
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Reinstallare le soluzioni nei computer degli utenti finali
- Se si usa ClickOnce per distribuire una soluzione Office destinata a .NET Framework 3.5 e quindi si modifica la destinazione del progetto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, gli utenti finali devono disinstallare la soluzione e reinstallarla dopo averla ripubblicata. Se si ripubblica la soluzione ridestinata e la soluzione viene aggiornata sui computer degli utenti finali, gli utenti finali riceveranno un <xref:System.Runtime.InteropServices.COMException> quando eseguiranno la soluzione aggiornata.
+ Se si usa ClickOnce per distribuire una soluzione Office destinata a .NET Framework 3.5 e quindi si modifica la destinazione del progetto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, gli utenti finali devono disinstallare la soluzione e reinstallarla dopo averla ripubblicata. Se si ripubblica la soluzione ridestinata e la soluzione viene aggiornata nei computer degli utenti finali, gli utenti finali riceveranno un messaggio quando eseguono <xref:System.Runtime.InteropServices.COMException> la soluzione aggiornata.
 
 ## <a name="see-also"></a>Vedi anche
-- [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Eseguire Office soluzioni di migrazione a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Allocazioni per la memoria .NET | Microsoft Docs
-description: Informazioni sulla visualizzazione allocazioni di memoria .NET, in cui sono elencati i tipi creati durante l'esecuzione della profilatura.
+description: Informazioni sulla visualizzazione allocazioni di memoria .NET, che elenca i tipi creati durante l'esecuzione della profilatura.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,15 +15,16 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ab3cfd9ae57e48e7a5884729efce8413b543be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5c456a90ed949063386593734fa21a7b497e361
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964797"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131716"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
 Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzione della profilatura. Ogni tipo è il nodo radice di un albero delle chiamate in cui vengono visualizzati i percorsi di esecuzione delle funzioni che hanno generato le allocazioni del tipo.
@@ -46,7 +47,7 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
 |**Nome**|Nome della funzione o del tipo allocato.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
-|**Nome del modulo**|Nome del modulo che contiene il tipo o la funzione.|
+|**Nome modulo**|Nome del modulo che contiene il tipo o la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene il tipo o la funzione.|
 |**File di origine**|File di origine che contiene la definizione per il tipo o la funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa definizione di tipo o funzione nel file di origine.|

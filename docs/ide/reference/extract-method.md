@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 10f8b09defe7c4e156b015f590f1b494ba2704a164f0ce67625d1cac5b93e653
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 28595d4ed837249385a18b4a60cd12f1713b5640
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121304372"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101427"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring con estrazione di un metodo
 
@@ -45,13 +45,13 @@ Questo refactoring si applica a:
 
    - Visual Basic:
 
-       ![Screenshot che Visual Basic codice per main sub. In tale sub viene evidenziata una riga di codice.](media/extractmethod-highlight-vb.png)
+       ![Screenshot che Visual Basic codice per main sub. In sub viene evidenziata una riga di codice.](media/extractmethod-highlight-vb.png)
 
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+M**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai metodo** dal popup della finestra di anteprima.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai metodo** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring - Estrai metodo**.
       - Fare clic con il pulsante destro del mouse sul codice e scegliere **Refactoring > Estrai > Estrai metodo**.

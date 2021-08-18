@@ -1,6 +1,6 @@
 ---
 title: Gestire i canali | Microsoft Docs
-description: Informazioni su come organizzare i canali per il processo in modo che sia possibile esaminare particolari modelli nella visualizzazione thread del Visualizzatore di concorrenza.
+description: Informazioni su come organizzare i canali per il processo in modo da poter esaminare modelli specifici nella visualizzazione Thread nel visualizzatore di concorrenza.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ebeb885d427cf6a9a6ca80d4d0ad572b23d7f685
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 225d261cad0e4e8c206c00e124478a83e2710845
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131287"
 ---
 # <a name="manage-channels"></a>Gestione dei canali
 Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile organizzare i canali per il processo in modo da poter esaminare modelli specifici. È possibile ordinare i canali, spostarli verso l'alto o verso il basso e nasconderli o visualizzarli.
@@ -60,6 +61,6 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
  Se una traccia contiene eventi marcatori, è possibile usare questo comando per raggruppare i canali dei marcatori sotto il thread che ha generato gli eventi marcatori.  I canali dei dischi vengono spostati all'inizio dell'elenco dei canali e i canali GPU vengono spostati alla fine.
 
 ## <a name="see-also"></a>Vedi anche
-- [Controllo zoom (visualizzazione thread)](../profiling/zoom-control-threads-view.md)
-- [Modalità misurazione attiva/disattiva](../profiling/measure-mode-on-off.md)
+- [Controllo Zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)
+- [Modalità misura attivata/disattivata](../profiling/measure-mode-on-off.md)
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

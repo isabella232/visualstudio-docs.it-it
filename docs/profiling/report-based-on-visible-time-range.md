@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9959e600701901a9ba4aee7f104e09fe175abe3fd95d6345bfc711c80cd73177
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6046e7622369e34108adc3ca8996752e86de1203
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121442047"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131209"
 ---
 # <a name="report-based-on-visible-time-range"></a>Report basato sull'intervallo di tempo visibile
 La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i canali attualmente visibili. Per visualizzare i dettagli per subset dei dati diversi, fare clic sugli elementi nella legenda.

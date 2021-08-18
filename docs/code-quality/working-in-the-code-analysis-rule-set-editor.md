@@ -13,37 +13,37 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 724d5c541d90eedc335aaf840eea389510b6d8dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e3d5985411fe58852a004d6f74d0015f07732d3de243895642492282a50367df
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031614"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347948"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor del set di regole di analisi del codice
 
-L'editor del set di regole di analisi del codice consente di specificare le regole incluse in un set di regole personalizzato e di impostare la gravità delle violazioni delle regole.
+L'editor del set di regole di analisi del codice consente di specificare le regole incluse in un set di regole personalizzate e di impostare la gravità delle violazioni delle regole.
 
 La tabella seguente illustra le opzioni di gravità:
 
 |Azione (gravità)|Descrizione|
 |-|-|
-|Avviso|Genera un avviso **nell'elenco errori e** anche in fase di compilazione.|
-|Errore|Genera un errore **nell'elenco errori e** anche in fase di compilazione.|
-|Info|Genera un messaggio **nell'Elenco errori**.|
-|Nascosto|La violazione non è visibile all'utente. L'IDE viene tuttavia informato della violazione.|
+|Avviso|Genera un avviso **nell'Elenco errori e** anche in fase di compilazione.|
+|Errore|Genera un errore **nell'Elenco errori e** anche in fase di compilazione.|
+|Info|Genera un messaggio in **Elenco errori**.|
+|Nascosto|La violazione non è visibile all'utente. L'IDE, tuttavia, viene informato della violazione.|
 |Nessuno|La regola viene eliminata. Il comportamento è identico a quello che si verifica se la regola è stata rimossa dal set di regole.|
 
 L'editor visualizza le regole in una struttura ad albero che raggruppa le regole in base a un campo del set di regole specificato. Per aggiungere o rimuovere regole da un set di regole, eseguire uno o più dei passaggi seguenti:
 
-- Selezionare o deselezionare la casella di controllo del nodo del gruppo per aggiungere o rimuovere tutte le regole nel gruppo. Quando si seleziona un gruppo, tutte le regole vengono impostate **sull'azione** Avviso.
+- Selezionare o deselezionare la casella di controllo del nodo del gruppo per aggiungere o rimuovere tutte le regole nel gruppo. Quando si seleziona un gruppo, tutte le regole vengono impostate **sull'azione Avviso.**
 
    > [!TIP]
-   > È possibile modificare la modalità  di raggruppamento delle regole nell'elenco a discesa Raggruppa per.
+   > È possibile modificare la modalità di raggruppamento delle regole **nell'elenco a** discesa Raggruppa per.
 
 - Fare clic **sul campo** Azione di un gruppo e specificare l'azione da applicare a tutte le regole del gruppo.
 
-- Selezionare o deselezionare la casella di controllo per una singola regola. Quando si seleziona la casella di controllo per una regola, la regola viene impostata **sull'azione** Avviso.
+- Selezionare o deselezionare la casella di controllo per una singola regola. Quando si seleziona la casella di controllo per una regola, la regola viene impostata **sull'azione Avviso.**
 
 ## <a name="toolbar"></a>Barra degli strumenti
 
@@ -60,20 +60,20 @@ Nella tabella seguente vengono descritti i controlli sulla barra degli strumenti
 |**Nascondere le regole che non si applicano alla soluzione corrente**|Mostra o nasconde le regole che non sono dello stesso tipo di destinazione della soluzione.|
 |**Visualizzare le regole che possono generare Code Analysis errori**|Mostra o nasconde le regole a cui è assegnata l'azione Errore.|
 |**Visualizzare le regole che possono generare Code Analysis avvisi**|Mostra o nasconde le regole a cui è assegnata l'azione Avviso.|
-|**Mostra regole non abilitate**|Mostra o nasconde le regole a cui è assegnata l'azione Nessuno.|
+|**Mostra regole non abilitate**|Mostra o nasconde le regole a cui è assegnata l'azione Nessuna.|
 |**Aggiungere o rimuovere set di regole figlio**|Aggiunge o rimuove le regole nei set di regole selezionati.|
-|**Regole di ricerca**|Cerca la stringa specificata in tutti i valori di campo.|
+|**Regole di ricerca**|Cerca in tutti i valori di campo la stringa specificata.|
 
 ## <a name="rule-set-fields"></a>Campi del set di regole
 
-I campi del set di regole visualizzano informazioni su un set di regole e possono essere usati per ordinare e raggruppare l'elenco di regole. Per visualizzare o nascondere  i campi, selezionare Opzioni colonne sulla barra degli strumenti dell'editor del set di regole e quindi selezionare o deselezionare le caselle di controllo dei campi da visualizzare o nascondere.
+I campi del set di regole visualizzano informazioni su un set di regole e possono essere usati per ordinare e raggruppare l'elenco di regole. Per visualizzare o nascondere i campi, **selezionare** Opzioni colonne sulla barra degli strumenti dell'editor del set di regole e quindi selezionare o deselezionare le caselle di controllo dei campi da visualizzare o nascondere.
 
 La tabella seguente descrive i campi di un set di regole:
 
 |Campo|Descrizione|
 |-----------|-----------------|
 |**ID**|Identificatore della regola.|
-|**Categoria**|Oltre all'appartenenza ai set di regole, vengono raggruppate anche le regole di analisi del codice per categoria. Per altre informazioni, vedere [Avvisi dell'analisi del codice](/dotnet/fundamentals/code-analysis/quality-rules/index).|
+|**Categoria**|Oltre all'appartenenza ai set di regole, anche le regole di analisi del codice vengono raggruppate per categoria. Per altre informazioni, vedere [Avvisi di analisi codice.](/dotnet/fundamentals/code-analysis/quality-rules/index)|
 |**Nome**|Titolo della regola.|
 |**Namespace**|Spazio dei nomi della regola.|
 |**Tipo di destinazione**|Indica se la regola è per codice nativo, gestito o di database.|

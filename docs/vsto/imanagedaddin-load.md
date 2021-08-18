@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f30c6a45d4ff43811e34ec4357961e0c80ae0eb9637b9fd7aee661a54296f75f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7be4be6b08c5ea9b0813e4782a0ac1a77cec2890
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366069"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032654"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Chiamato quando viene caricato un componente aggiuntivo VSTO gestito.
@@ -35,7 +35,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 |Parametro|Descrizione|
 |---------------|-----------------|
 |*bstrManifestURL*|Percorso completo del manifesto per il componente aggiuntivo VSTO.|
-|*pdispApplication*|Puntatore a un oggetto IDispatch che rappresenta l'applicazione host che sta caricando VSTO componente aggiuntivo.|
+|*pdispApplication*|Puntatore a un oggetto IDispatch che rappresenta l'applicazione host che sta caricando il VSTO componente aggiuntivo.|
 
 ## <a name="return-value"></a>Valore restituito
  Valore HRESULT che indica se il metodo è stato completato correttamente.

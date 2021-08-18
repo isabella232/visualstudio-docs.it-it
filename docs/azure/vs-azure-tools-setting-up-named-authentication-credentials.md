@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 91a1aba5f4cd1d1843a2d7bf9b417b9a3d99cd427872acd454b7d7add048011a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e7d8acc861e1460cc569ce6e1bd75ce01bd6e4b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121421213"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031822"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurare le credenziali di autenticazione denominate
 

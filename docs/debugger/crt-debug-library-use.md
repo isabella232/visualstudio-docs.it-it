@@ -1,6 +1,6 @@
 ---
 title: Uso della libreria di debug CRT | Microsoft Docs
-description: Informazioni sul modo in cui la libreria di runtime C (CRT) supporta le attività di debug e cosa è necessario fare per usare le librerie di debug CRT.
+description: Informazioni su come la libreria di runtime C (CRT) supporta le attività di debug e su cosa è necessario fare per usare le librerie di debug CRT.
 ms.custom: SEO-VS-2020
 ms.date: 10/03/2019
 ms.topic: conceptual
@@ -28,17 +28,18 @@ ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fe50082f8ff62c4a19b7725facc18f43d672e353
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b571f8cf47e78da939e67732b9676c7fc507e778
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865709"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031367"
 ---
 # <a name="crt-debug-library-use"></a>Utilizzo della libreria di debug CRT
-La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per usare una delle librerie di debug CRT, è necessario collegare con [/debug](/cpp/build/reference/debug-generate-debug-info) e compilare con **/MDD**, **/MTD** o **/ldd crea un**.
+La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per usare una delle librerie di debug CRT, è necessario collegarsi a [/DEBUG](/cpp/build/reference/debug-generate-debug-info) e compilare con **/MDd**, **/MTd** o **/LDd**.
 
 ## <a name="remarks"></a>Commenti
  Le definizioni e le macro principali del debug CRT sono disponibili nel file di intestazione CRTDBG.h.
@@ -50,4 +51,4 @@ La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Pe
 ## <a name="see-also"></a>Vedi anche
 
 - [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)
-- [/MD,/MT,/LD (USA libreria Run-Time)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [/MD, /MT, /LD (usare Run-Time library)](/cpp/build/reference/md-mt-ld-use-run-time-library)

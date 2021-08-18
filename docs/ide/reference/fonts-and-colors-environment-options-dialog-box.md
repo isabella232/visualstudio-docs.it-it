@@ -1,6 +1,6 @@
 ---
 title: Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina Tipi di carattere e colori nella sezione Ambiente per stabilire una combinazione di tipi di carattere e colori personalizzata per vari elementi dell'interfaccia utente nell'IDE.
+description: Informazioni su come usare la pagina Tipi di carattere e colori nella sezione Ambiente per stabilire un tipo di carattere e una combinazione di colori personalizzati per vari elementi dell'interfaccia utente nell'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -28,16 +28,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f33c07e40d4ef1d2ba224dae33a26f322d9db189976ca4376988f1bb7ee1c180
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 514e07e855299ca7862a393b7f9b576d761ae8f6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121304268"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101349"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). È possibile accedere a questa finestra di dialogo facendo clic **su** Opzioni strumenti e quindi selezionando Tipi  >   **di** carattere e  >  **colori dell'ambiente.**
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). È possibile accedere a questa finestra di dialogo facendo clic **su**  >  **Opzioni** strumenti e quindi selezionando **Tipi di** carattere e  >  **colori dell'ambiente**.
 
 Le modifiche apportate alla combinazione colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
@@ -66,7 +66,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
 
 - **Tipo di carattere ambiente**
 
-     Modifica lo stile e le dimensioni del carattere per tutti gli elementi dell'interfaccia utente IDE che non hanno già un'opzione separata in **Mostra impostazioni per**.
+     Modifica lo stile e le dimensioni del carattere per tutti gli elementi dell'interfaccia utente IDE che non dispongono già di un'opzione separata in **Mostra impostazioni per**.
 
      ::: moniker range="vs-2017"
 
@@ -79,7 +79,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.
 
     > [!NOTE]
-    > Le modifiche apportate al testo **degli elementi [All Text Tool Windows]** non vengono applicate durante la sessione in cui vengono apportate. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
+    > Le modifiche al testo **degli elementi [Tutti** gli strumenti di Windows] non vengono applicate durante la sessione in cui vengono apportate. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
 
 **Valori predefiniti**
 

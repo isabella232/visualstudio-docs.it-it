@@ -1,6 +1,6 @@
 ---
 title: -Clean (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando di devenv pulita per pulire tutti i file intermedi e le directory di output.
+description: Informazioni su come usare l'opzione della riga di comando Clean devenv per pulire tutti i file intermedi e le directory di output.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c3fdc30737a2266241e19ae40f840a41784cc1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3178d4a78b91d862dd6c222dbec6277a31fe9c75a9c7ebf97cbd4a4d2ec6dbfc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963289"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121430850"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -34,7 +35,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 ## <a name="arguments"></a>Argomenti
 
-- *NomeSoluzione*
+- *Solutionname*
 
   Obbligatorio. Il percorso completo e il nome del file della soluzione.
 
@@ -50,7 +51,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la pulizia del `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *Config*.
 
-- `/Out`*OutputFileName*
+- `/Out`*OutputFilename*
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 

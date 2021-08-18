@@ -8,15 +8,16 @@ ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: e0fe78e781af4f2fafa52a230036bc20b657fd8e
-ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
+ms.openlocfilehash: bcf84506f44e6aab30e0d5ce10e19f05a4a87c09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109848266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132028"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novità di MSBuild 15
 
@@ -42,7 +43,7 @@ MSBuild è ora incluso in [.NET Core SDK](https://www.microsoft.com/net/download
 
 ## <a name="updates"></a>Aggiornamenti
 
-- [L'elemento](../msbuild/project-element-msbuild.md) Project ha un nuovo `SDK` attributo. L'attributo `Xmlns` è ora facoltativo. Per altre informazioni sull'attributo `SDK`, vedere [Procedura: Usare SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacchetti, metapacchetti e framework](/dotnet/core/packages) e [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
+- [Project elemento](../msbuild/project-element-msbuild.md) ha un nuovo `SDK` attributo . L'attributo `Xmlns` è ora facoltativo. Per altre informazioni sull'attributo `SDK`, vedere [Procedura: Usare SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacchetti, metapacchetti e framework](/dotnet/core/packages) e [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
 - [L'elemento Item](../msbuild/item-element-msbuild.md) all'esterno delle destinazioni ha un nuovo `Update` attributo . È stata inoltre eliminata la restrizione relativa all'attributo `Remove`.
 - *Directory.Build.props* è un file definito dall'utente che fornisce personalizzazioni ai progetti in una directory. Questo file viene importato automaticamente da *Microsoft.Common.props,* a meno che la proprietà `ImportDirectoryBuildTargets` non sia impostata su **false.** *Directory.Build.targets* viene importato da *Microsoft.Common.targets*.
 - Eventuali metadati il cui nome non è in conflitto con l'elenco di attributi corrente possono essere espressi come un attributo. Per altre informazioni, vedere [Elemento Item.](../msbuild/item-element-msbuild.md)

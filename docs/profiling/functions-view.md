@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Funzioni | Microsoft Docs
-description: Ottenere informazioni sulla visualizzazione funzioni nella Esplora prestazioni di Visual Studio. La visualizzazione Funzioni elenca le funzioni chiamate durante la profilatura.
+description: Ottenere informazioni sulla visualizzazione Funzioni nel Visual Studio Esplora prestazioni. La visualizzazione Funzioni elenca le funzioni chiamate durante la profilatura.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,22 +15,23 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 94bbce64cbcb8a5b6106682b89dd87383f985197
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36d764112e02dde7686f5cca2be4b67d5360bda0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907383"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131534"
 ---
 # <a name="functions-view"></a>Visualizzazione Funzioni
 La visualizzazione Funzioni elenca le funzioni chiamate durante la profilatura.
 
  Per impostazione predefinita, le funzioni vengono elencate per nome. Per visualizzare le funzioni per modulo, fare clic con il pulsante destro del mouse nella finestra Visualizzazione Funzioni e quindi selezionare **Mostra in visualizzazione Modulo**. Verrà visualizzata la visualizzazione Modulo.
 
- Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi scegliere **Aggiungi/Rimuovi colonne**. È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md).
+ Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi scegliere **Aggiungi/Rimuovi colonne.** È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md).
 
  Le colonne disponibili nella visualizzazione Funzioni dipendono dal metodo di profilatura (campionamento o strumentazione) usato per raccogliere i dati e dal fatto che i dati della memoria .NET siano stati raccolti o meno durante l'esecuzione della profilatura.
 

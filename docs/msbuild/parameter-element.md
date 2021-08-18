@@ -20,16 +20,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5e6d8a022b30b848807f1ab16a15061b83300166f34a753c903fdcef5d75e0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d408158d203d62c562073d188dc0a5319b964738
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121288126"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100738"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
 
-Contiene informazioni su un parametro specifico per un'attività generata da un oggetto `UsingTask` `TaskFactory` .  Il nome dell'elemento è il nome del parametro.  Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contiene informazioni su un parametro specifico per un'attività generata da `UsingTask` `TaskFactory` un oggetto .  Il nome dell'elemento è il nome del parametro.  Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask>
  \<ParameterGroup>
@@ -63,7 +63,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da un oggetto `UsingTask` `TaskFactory` .|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da `UsingTask` `TaskFactory` un oggetto .|
 
 ## <a name="example"></a>Esempio
 
@@ -86,4 +86,4 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
-- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)

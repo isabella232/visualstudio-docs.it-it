@@ -1,6 +1,6 @@
 ---
 title: Finestra di controllo immediato
-description: Informazioni su come usare la finestra Controllo immediato per eseguire il debug e la valutazione di espressioni, eseguire istruzioni e stampare valori di variabili.
+description: Informazioni su come usare la finestra Controllo immediato per eseguire il debug e la valutazione di espressioni, eseguire istruzioni e stampare i valori delle variabili.
 ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dcc91c8f7b9fa5cc33d9368d377c2a002b55107
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 84177dd5f6890e162c69de8ecbb883e5d933c028d39e13785575c97db8ec2ad5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157787"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429212"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 

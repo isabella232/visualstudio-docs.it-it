@@ -9,20 +9,21 @@ ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32e75b938f45df5d4fa91bec4b59964dfc6a54e5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c935059fc7af18563cc203c5d79ee5887675d1663f94d2b06a99a2233bd89f8e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095927"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434347"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Enumera i valori validi per i flag che controllano la valutazione dell'espressione. Questa enumerazione estende l'enumerazione [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) .
+Enumera i valori validi per i flag che controllano la valutazione dell'espressione. Questa enumerazione estende [l'enumerazione EVALFLAGS.](../../../extensibility/debugger/reference/evalflags.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,33 +74,33 @@ Specifica che il valore restituito, se presente, deve essere valutato.
 Specifica che gli effetti collaterali non sono consentiti.
 
 `EVAL90_ALLOWBPS`\
-Specifica l'arresto in corrispondenza di punti di interruzione.
+Specifica l'arresto in corrispondenza dei punti di interruzione.
 
 `EVAL90_ALLOWERRORREPORT`\
-Specifica che la segnalazione degli errori all'host deve essere consentita. Utilizzato principalmente per la valutazione di espressioni nello script in Internet Explorer.
+Specifica che la segnalazione degli errori all'host deve essere consentita. Usato principalmente per la valutazione delle espressioni nello script in Internet Explorer.
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-Impone la valutazione delle funzioni come indirizzi, anziché richiamare la funzione.
+Forza la valutazione delle funzioni come indirizzi, anziché richiamare la funzione.
 
 `EVAL90_NOFUNCEVAL`\
-Impedisce la valutazione della funzione. Si consideri, ad esempio, il `int` token nell'espressione `myExpression(int) + 10` . Questa funzione può essere valutata correttamente come un indirizzo, ma non come valore.
+Impedisce la valutazione della funzione. Si consideri ad esempio `int` il token nell'espressione `myExpression(int) + 10` . Questa funzione può essere valutata correttamente come indirizzo, ma non come valore.
 
 `EVAL90_NOEVENTS`\
-Flag che indica che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati a gestione debug sessione (SDM) o all'IDE.
+Flag per indicare che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati alla gestione del debug di sessione (SDM) o all'IDE.
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
 Abilita la valutazione delle espressioni in fase di progettazione.
 
 `EVAL90_ALLOW_IMPLICIT_VARS`\
-Consente la creazione di variabili implicite.
+Consente la creazione implicita di variabili.
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-Forza la valutazione a essere eseguita immediatamente. Questa operazione è utile per la manutenzione di una richiesta, ad esempio una richiesta dell'utente.
+Forza l'esecuzione immediata della valutazione. Ciò è utile quando si esegue una richiesta, ad esempio una richiesta dell'utente.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Msdbg90. h
+Intestazione: Msdbg90.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

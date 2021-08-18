@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Funzioni: dati sui conflitti | Microsoft Docs'
-description: Ottenere informazioni dettagliate sulla visualizzazione del report Funzioni dei dati relativi ai contenuti in cui sono elencate le funzioni nell'esecuzione della profilatura che sono state bloccate dall'esecuzione durante l'esecuzione della profilatura.
+description: Ottenere informazioni dettagliate sulla visualizzazione del report Funzioni dei dati sui contenuti, in cui sono elencate le funzioni nell'esecuzione della profilatura di cui è stata bloccata l'esecuzione durante l'esecuzione della profilatura.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc7fa07b9f7d8ad2694a6decba0db50b93dbdb6b7093fd4e2f81913d3514a91
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1f1397f25707f4354a0413df97517ee4efe419d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131560"
 ---
 # <a name="functions-view---contention-data"></a>Visualizzazione Funzioni: dati sui conflitti
 La visualizzazione report Funzioni dei dati sui conflitti elenca le funzioni nell'esecuzione della profilatura la cui esecuzione è stata bloccata durante l'esecuzione della profilatura stessa.

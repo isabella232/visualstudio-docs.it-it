@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Riepilogo: dati di campionamento | Microsoft Docs'
-description: Scopri in che modo la visualizzazione di riepilogo Visualizza informazioni sulle funzioni più dispendiose in un'esecuzione della profilatura.
+description: Informazioni su come la visualizzazione Riepilogo visualizza informazioni sulle funzioni più costose per le prestazioni in un'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,16 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 681e86a8483790a91a6a7e75eef95b5033042e5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14e97957951052322be67861c43e97c537c10cb42f15d8dbdc84172c0e1a4163
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861543"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121353999"
 ---
 # <a name="summary-view---sampling-data"></a>Visualizzazione Riepilogo: dati di campionamento
 La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Per altre informazioni, inclusa una descrizione degli elenchi dei collegamenti di notifica e dei rapporti, vedere [Visualizzazione Riepilogo](../profiling/summary-view.md).
@@ -27,7 +28,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 > Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="timeline-graph"></a>Grafico della sequenza temporale
- Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra la percentuale di utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [procedura: filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra la percentuale di utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni del report dalla sequenza temporale di riepilogo.](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
 
 ## <a name="hot-path"></a>Percorso critico
  In **Percorso critico** viene visualizzato il percorso di esecuzione in cui è stata raccolta la maggior parte dei campioni. È possibile fare clic su una funzione per attivare la visualizzazione Dettagli funzione per la funzione. Per visualizzare altre visualizzazioni per la funzione, fare clic con il pulsante destro del mouse sulla funzione e scegliere una visualizzazione nell'elenco.
@@ -54,4 +55,4 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 
 ## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Riepilogo: dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)
-- [Visualizzazione Riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)
+- [Visualizzazione riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)

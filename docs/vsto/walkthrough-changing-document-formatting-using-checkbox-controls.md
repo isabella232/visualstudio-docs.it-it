@@ -1,6 +1,6 @@
 ---
 title: Modificare la formattazione del documento usando i controlli CheckBox
-description: Informazioni su come usare i Windows Forms in una personalizzazione a livello di documento per Microsoft Word per modificare la formattazione del testo.
+description: Informazioni su come usare i Windows Form in una personalizzazione a livello di documento per Microsoft Word modificare la formattazione del testo.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,17 +16,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3f6fbb91c37fd8956860eed8e4d39f8b0a8c1a0e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: e9f280b2e8db25788e89bdb66d9ec5455c7a1efe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824419"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032056"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: Modificare la formattazione dei documenti usando i controlli CheckBox
-  Questa procedura dettagliata illustra come usare i Windows Forms in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.
+  Questa procedura dettagliata illustra come usare i Windows Form in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
@@ -36,7 +37,7 @@ ms.locfileid: "107824419"
 
 - Formattazione del testo quando viene selezionata un'opzione.
 
-  Per visualizzare il risultato come esempio completato, vedere l'esempio di controlli Word in Esempi e procedure dettagliate per lo sviluppo [di Office.](../vsto/office-development-samples-and-walkthroughs.md)
+  Per visualizzare il risultato come esempio completato, vedere l'esempio di controlli Word Office esempi di [sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -54,7 +55,7 @@ ms.locfileid: "107824419"
 
 1. Creare un progetto Documento di Word con il nome **My Word Formatting**. Nella procedura guidata selezionare **Crea un nuovo documento**.
 
-     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Per altre informazioni, vedere [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **progetto My Word Formatting** a **Esplora soluzioni**.
 
@@ -92,19 +93,19 @@ ms.locfileid: "107824419"
     |**Nome**|**applyUnderlineFont**|
     |**Text**|**Sottolineato**|
 
-### <a name="add-text-and-a-bookmark-control"></a>Aggiungere testo e un controllo Bookmark
+### <a name="add-text-and-a-bookmark-control"></a>Aggiungere testo e un controllo Segnalibro
 
 1. Spostare il punto di inserimento sotto i controlli casella di controllo e digitare il testo seguente:
 
     **Fare clic su una casella di controllo per modificare la formattazione del testo.**
 
-2. Dalla scheda **Controlli Word** della casella **degli strumenti** trascinare un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nel documento.
+2. Dalla scheda **Controlli word** della Casella **degli strumenti** trascinare un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nel documento.
 
-    Verrà **visualizzata la finestra di dialogo** Aggiungi controllo Segnalibro .
+    Verrà **visualizzata la finestra di** dialogo Aggiungi controllo segnalibro .
 
 3. Selezionare il testo aggiunto al documento e fare clic su **OK.**
 
-    Un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo **denominato Bookmark1** viene aggiunto al testo selezionato nel documento.
+    Un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo denominato **Bookmark1** viene aggiunto al testo selezionato nel documento.
 
 4. Nella finestra **Proprietà** modificare il valore della proprietà **(Name)** in **fontText.**
 
@@ -113,9 +114,9 @@ ms.locfileid: "107824419"
 ## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Formattare il testo quando una casella di controllo è selezionata o deselezionata
  Quando l'utente seleziona un'opzione di formattazione, modificare il formato del testo nel documento.
 
-### <a name="change-formatting-when-a-check-box-is-selected"></a>Modificare la formattazione quando è selezionata una casella di controllo
+### <a name="change-formatting-when-a-check-box-is-selected"></a>Modificare la formattazione quando viene selezionata una casella di controllo
 
-1. Fare clic con il `ThisDocument` pulsante **destro Esplora soluzioni** e quindi **scegliere Visualizza** codice dal menu di scelta rapida.
+1. Fare clic con il pulsante destro del Esplora soluzioni e quindi scegliere `ThisDocument` **Visualizza** codice dal menu di scelta rapida. 
 
 2. Solo per C#, aggiungere le costanti seguenti alla **classe ThisDocument.**
 
@@ -136,7 +137,7 @@ ms.locfileid: "107824419"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb" id="Snippet5":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet5":::
 
-6. In C# è necessario aggiungere gestori eventi per le caselle di testo <xref:Microsoft.Office.Tools.Word.Document.Startup> all'evento . Per informazioni su come creare gestori eventi, vedere [Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md)
+6. In C# è necessario aggiungere gestori eventi per le caselle di testo <xref:Microsoft.Office.Tools.Word.Document.Startup> all'evento . Per informazioni su come creare gestori eventi, vedere [Procedura: Creare gestori](../vsto/how-to-create-event-handlers-in-office-projects.md)eventi in Office progetti .
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet6":::
 
@@ -152,7 +153,7 @@ ms.locfileid: "107824419"
 3. Verificare che il testo sia formattato correttamente.
 
 ## <a name="next-steps"></a>Passaggi successivi
- Questa procedura dettagliata illustra le nozioni di base sull'uso delle caselle di controllo e la modifica a livello di codice della formattazione del testo nei documenti di Word. Ecco alcune possibili attività successive:
+ Questa procedura dettagliata illustra le nozioni di base sull'uso delle caselle di controllo e sulla modifica a livello di codice della formattazione del testo nei documenti di Word. Ecco alcune possibili attività successive:
 
 - Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento usando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
@@ -160,6 +161,6 @@ ms.locfileid: "107824419"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
-- [Esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Office esempi di sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md)
 - [Controllo NamedRange](../vsto/namedrange-control.md)
-- [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Limitazioni dei controlli Windows Form nei Office documenti](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

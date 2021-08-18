@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af762c5ba47139419415afd97309a40071d5945db1731baaa77dd2632491c5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 318c10af962aed0790cfa4b193b17637ec30be0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121363198"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031627"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Set di regole consigliate native
 
@@ -93,7 +93,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C6305](/cpp/code-quality/c6305)|Uso dimensione e conteggio non corrispondente|
 |[C6306](/cpp/code-quality/c6306)|Chiamata di funzione dell'argomento variabile non corretto|
 |[C6306](/cpp/code-quality/c6308)|Perdita di riallocazione|
-|[C6310](/cpp/code-quality/c6310)|Costante di filtro eccezioni non valida|
+|[C6310](/cpp/code-quality/c6310)|Costante filtro eccezioni non valida|
 |[C6312](/cpp/code-quality/c6312)|Ciclo di esecuzione di continuazione eccezioni|
 |[C6314](/cpp/code-quality/c6314)|Bitwise-Or precedenza|
 |[C6317](/cpp/code-quality/c6317)|Not Not Complement|
@@ -107,7 +107,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C6335](/cpp/code-quality/c6335)|Perdita dell'handle di processo|
 |[C6381](/cpp/code-quality/c6381)|Informazioni sull'arresto mancanti|
 |[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count sovraccarico del buffer|
-|[C6384](/cpp/code-quality/c6384)|Divisione delle dimensioni dell'indicatore di misura|
+|[C6384](/cpp/code-quality/c6384)|Divisione delle dimensioni del puntatore|
 |[C6385](/cpp/code-quality/c6385)|Overrun di lettura|
 |[C6386](/cpp/code-quality/c6386)|Overrun di scrittura|
 |[C6387](/cpp/code-quality/c6387)|Valore parametro non valido|
@@ -147,7 +147,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C26110](/cpp/code-quality/c26110)|Blocco non riuscito del chiamante|
 |[C26111](/cpp/code-quality/c26111)|Il chiamante non riesce a rilasciare il blocco|
 |[C26112](/cpp/code-quality/c26112)|Il chiamante non può contenere alcun blocco|
-|[C26115](/cpp/code-quality/c26115)|Non è stato possibile rilasciare il blocco|
+|[C26115](/cpp/code-quality/c26115)|Non è possibile rilasciare il blocco|
 |[C26116](/cpp/code-quality/c26116)|Non è possibile acquisire o mantenere il blocco|
 |[C26117](/cpp/code-quality/c26117)|Rilascio del blocco non confermato|
 |[C26140](/cpp/code-quality/c26140)|Errore di annotazione SAL di concorrenza|
@@ -157,13 +157,13 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28020](/cpp/code-quality/c28020)|L'espressione non è true in questa chiamata|
 |[C28021](/cpp/code-quality/c28021)|Il parametro annotato deve essere un puntatore|
 |[C28022](/cpp/code-quality/c28022)|Le classi di funzione in questa funzione non corrispondono alle classi di funzione nel typedef usato per definirla.|
-|[C28023](/cpp/code-quality/c28023)|La funzione assegnata o passata deve avere un'annotazione della classe Function per almeno una delle classi \_ \_ \_|
-|[C28024](/cpp/code-quality/c28024)|Il puntatore a funzione assegnato a viene annotato con la classe di funzione, che non è contenuta nell'elenco delle classi di funzione.|
+|[C28023](/cpp/code-quality/c28023)|La funzione assegnata o passata deve avere un'annotazione della classe Function per \_ almeno una delle \_ \_ classi|
+|[C28024](/cpp/code-quality/c28024)|Il puntatore a funzione a cui viene assegnato viene annotato con la classe di funzione, che non è contenuta nell'elenco delle classi di funzione.|
 |[C28039](/cpp/code-quality/c28039)|Il tipo di parametro effettivo deve corrispondere esattamente al tipo|
-|[C28112](/cpp/code-quality/c28112)|È sempre necessario accedere a una variabile a cui si accede tramite una funzione Interlocked tramite una funzione Interlocked.|
+|[C28112](/cpp/code-quality/c28112)|È sempre necessario accedere a una variabile a cui si accede tramite una funzione interlocked tramite una funzione Interlocked.|
 |[C28113](/cpp/code-quality/c28113)|Accesso a una variabile locale tramite una funzione interlocked|
 |[C28125](/cpp/code-quality/c28125)|La funzione deve essere chiamata dall'interno di un blocco try/except|
-|[C28137](/cpp/code-quality/c28137)|L'argomento variabile deve essere invece una costante (letterale)|
+|[C28137](/cpp/code-quality/c28137)|L'argomento variabile deve invece essere una costante (letterale)|
 |[C28138](/cpp/code-quality/c28138)|L'argomento costante deve invece essere variabile|
 |[C28159](/cpp/code-quality/c28159)|Prendere in considerazione l'uso di un'altra funzione.|
 |[C28160](/cpp/code-quality/c28160)|Error (annotazione)|
@@ -175,7 +175,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28196](/cpp/code-quality/c28196)|Il requisito non è soddisfatto. L'espressione non restituisce true.|
 |[C28202](/cpp/code-quality/c28202)|Riferimento non valido a membro non statico|
 |[C28203](/cpp/code-quality/c28203)|Riferimento ambiguo al membro di classe.|
-|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore usato in un contesto non \_ \_ \_ valido|
+|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore utilizzato in un contesto non \_ \_ \_ valido|
 |[C28206](/cpp/code-quality/c28206)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](/cpp/code-quality/c28207)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28209](/cpp/code-quality/c28209)|La dichiarazione per il simbolo ha una dichiarazione in conflitto|
@@ -212,7 +212,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28240](/cpp/code-quality/c28240)|L'annotazione nel parametro presenta param2 ma nessun param1|
 |[C28241](/cpp/code-quality/c28241)|Annotazione per la funzione nel parametro non riconosciuta|
 |[C28243](/cpp/code-quality/c28243)|L'annotazione per la funzione nel parametro richiede più dereferenziazioni di quante ne siano consentite dal tipo annotato effettivo|
-|[C28244](/cpp/code-quality/c28244)|L'annotazione per la funzione ha un parametro/annotazione esterna non configurabile|
+|[C28244](/cpp/code-quality/c28244)|L'annotazione per la funzione ha un parametro nonparabile/annotazione esterna|
 |[C28245](/cpp/code-quality/c28245)|L'annotazione per la funzione annota 'this' in una funzione non membro|
 |[C28246](/cpp/code-quality/c28246)|Nell'annotazione per la funzione, il parametro non corrisponde al tipo del parametro|
 |[C28250](/cpp/code-quality/c28250)|Annotazione incoerente per la funzione: errore dell'istanza precedente.|

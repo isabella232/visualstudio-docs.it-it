@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e15d2c6f74c4872c5e55c9ce76293a1ab097d3176be33843a4deea89a692664c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 38ff09b4d75880a6cd6e5665b37c38d0c6612230
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434217"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064864"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 Contrassegna questo alias per la rimozione.

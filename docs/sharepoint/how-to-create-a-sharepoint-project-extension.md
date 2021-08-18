@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 63bfc09edca9a87df95893758ffe4a6a8c85a465eb8cb23cc6c7d97416361eea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9c70044b4a15bd0058a8bfb63ddcff44c149937d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352942"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131040"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Procedura: Creare un'estensione SharePoint progetto
-  Creare un'estensione di progetto quando si vuole aggiungere funzionalità a SharePoint progetto aperto in Visual Studio. Per altre informazioni, vedere [Estendere il sistema SharePoint progetto](../sharepoint/extending-the-sharepoint-project-system.md).
+  Creare un'estensione di progetto quando si vuole aggiungere funzionalità a SharePoint progetto aperto in Visual Studio. Per altre informazioni, vedere [Estendere il SharePoint del progetto.](../sharepoint/extending-the-sharepoint-project-system.md)
 
 ### <a name="to-create-a-project-extension"></a>Per creare un'estensione di progetto
 
@@ -188,9 +188,9 @@ ms.locfileid: "121352942"
   }
   ```
 
-Questo esempio usa il SharePoint servizio di progetto per scrivere il messaggio nella finestra **Output** e nella **finestra Elenco errori.** Per altre informazioni, vedere [Usare il SharePoint servizio di progetto](../sharepoint/using-the-sharepoint-project-service.md).
+Questo esempio usa il SharePoint servizio di progetto per scrivere il messaggio nella finestra **Output** e nella **finestra Elenco** errori. Per altre informazioni, vedere [Usare il SharePoint servizio di progetto](../sharepoint/using-the-sharepoint-project-service.md).
 
- Per esempi che illustrano come gestire gli eventi e , vedere Procedura: Aggiungere una voce di menu di scelta rapida a progetti SharePoint e Procedura: Aggiungere una proprietà a SharePoint <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> [progetti](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md). [](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+ Per esempi che illustrano come gestire gli eventi e , vedere Procedura: Aggiungere una voce di menu di scelta rapida a progetti SharePoint e Procedura: Aggiungere una proprietà <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> a SharePoint [progetti](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md). [](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio richiede riferimenti agli assembly seguenti:
@@ -203,7 +203,7 @@ Questo esempio usa il SharePoint servizio di progetto per scrivere il messaggio 
  Per distribuire l'estensione, creare un pacchetto di estensione (VSIX) per l'assembly e qualsiasi altro file che [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] si vuole distribuire con l'estensione. Per altre informazioni, vedere [Deploy Extensions for the SharePoint tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Estendere il SharePoint di progetto](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Estendere il SharePoint del progetto](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Procedura: Aggiungere una voce di menu di scelta rapida SharePoint progetti](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Procedura: Aggiungere una proprietà a SharePoint progetti](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [Procedura dettagliata: Creare un'estensione SharePoint progetto](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)

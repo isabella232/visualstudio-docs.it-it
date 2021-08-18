@@ -1,6 +1,6 @@
 ---
 title: Visualizzazioni dei dati del metodo di strumentazione | Microsoft Docs
-description: Informazioni sulle informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di strumentazione.
+description: Informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di strumentazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d73f446b3c74d491ca375d10d0ef701a104e530e9bbcd7cd7159322e9dbc42
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5de9832fff0ee49b807dce73efe41274d0d3e128
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368253"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131300"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.

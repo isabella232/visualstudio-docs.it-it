@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c528c5b7538508d9cbd987e03e4b3b250055ebca675f53aff92ad824e89dda
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 77f9f87bfc745770b6df728ac33d24e36d364052
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121429459"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101453"
 ---
 # <a name="evaluate-statement-command"></a>Valuta istruzione (comando)
 

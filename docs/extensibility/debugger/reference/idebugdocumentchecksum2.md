@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9b990df938a0f569fbaca238941ff5d3da83285
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3bcd872ed06fac90d48bc773250fd007d3ed1d21e8b4714876d62e038df2f813
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089290"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433996"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 Rappresenta un checksum per un documento di debug e consente di passare il checksum tra i componenti.

@@ -20,7 +20,7 @@ ms.locfileid: "121351018"
 ---
 # <a name="edit-xslt-style-sheets"></a>Modifica dei fogli di stile XSLT
 
-L'editor XML può essere usato anche per modificare i fogli di stile XSLT. È possibile usare le funzionalità predefinite dell'editor, quali IntelliSense, struttura, frammenti XML e così via. Sono inoltre disponibili nuove funzionalità che semplificano lo sviluppo in XSLT.
+L'editor XML può essere utilizzato anche per modificare i fogli di stile XSLT. È possibile usare le funzionalità predefinite dell'editor, quali IntelliSense, struttura, frammenti XML e così via. Sono inoltre disponibili nuove funzionalità che semplificano lo sviluppo in XSLT.
 
 ## <a name="xslt-features"></a>Funzionalità XSLT
 
@@ -28,7 +28,7 @@ Nella tabella seguente vengono descritte le funzionalità specifiche per usare i
 
 **Colorazione della sintassi**
 
-Le parole chiave XSLT, ad esempio e , vengono visualizzate nel colore delle parole chiave XSLT specificato dalle impostazioni Tipi di carattere `template` `match` **e** Colori.
+Le parole chiave XSLT, ad `template` esempio e , vengono visualizzate nel colore delle parole chiave XSLT specificato dalle impostazioni Tipi di carattere `match` **e** colori.
 
 **Sottolineature ondulate**
 
@@ -40,7 +40,7 @@ Il codice nei blocchi di script è supportato dal debugger XSLT, consentendo di 
 
 **Visualizzazione dell'output XSLT**
 
-È possibile eseguire una trasformazione XSL e visualizzare l'output dall'editor XML. Per altre informazioni, vedere [Procedura: Eseguire una trasformazione XSLT dall'editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+È possibile eseguire una trasformazione XSL e visualizzare l'output dall'editor XML. Per altre informazioni, vedere [Procedura: Eseguire una trasformazione XSLT dall'editor XML.](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)
 
 **Debug XSLT**
 

@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd2dd9610167197a8deaa1bdc88d4e5689636e75263785d92618eceee37f3bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 323d8c68f55b1804aee20298a2e4c1d34cd9a6e0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398484"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048362"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procedura dettagliata: Sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo
 
@@ -86,7 +86,7 @@ La funzionalità di **generazione dall'uso** può essere usata con framework di 
 
 7. Fare clic su **OK** per chiudere la finestra di dialogo e creare il nuovo file.
 
-8. In **Esplora soluzioni**, esaminare il nodo del progetto **GFUDemo_VB** o **GFUDemo_CS** per verificare che il nuovo file *Automobile.vb* o *Automobile.cs* sia presente. Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
+8. In **Esplora soluzioni** esaminare il nodo del progetto **GFUDemo_VB** o **GFUDemo_CS** per verificare che il nuovo file *Automobile.vb* o *Automobile.cs* sia presente. Nell'editor del codice lo stato attivo è ancora in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. È quindi possibile continuare a scrivere il test con un'interruzione minima.
 
 ### <a name="generate-a-property-stub"></a>Generare uno stub per una proprietà
 Si supponga che la specifica del prodotto indichi che la classe `Automobile` ha due proprietà pubbliche denominate `Model` e `TopSpeed`. Queste proprietà devono essere inizializzate con i valori predefiniti `"Not specified"` e `-1` dal costruttore predefinito. Lo unit test seguente verificherà che il costruttore predefinito imposti le proprietà sui valori predefiniti corretti.

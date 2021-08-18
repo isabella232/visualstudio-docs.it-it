@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e55e6df622fd29a1e8a6bbdd0d4937654e6e7243a0d908a3a6e0b8d8e4d75d7c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dd666577e7e37807105f32ca89d9e224a5cdf3b8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404770"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031218"
 ---
 # <a name="idiasymbolget_ispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
 Specifica se questo simbolo è un puntatore a una funzione membro.

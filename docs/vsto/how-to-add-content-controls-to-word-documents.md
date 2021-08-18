@@ -26,14 +26,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a902e85f8c53aa7a3d1ebe3b6480a7c68fa60601
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: a9df9bebf1ff731b20f4a5673b3450e5ccc0c10a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100205"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procedura: Aggiungere controlli contenuto ai documenti di Word
   Nei progetti di Word a livello di documento è possibile aggiungere controlli contenuto al documento nel progetto in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO di Word è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione.
@@ -46,7 +47,7 @@ ms.locfileid: "107827903"
 
 - [Aggiungere controlli contenuto in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)
 
-- [Aggiungere controlli contenuto in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)
+- [Aggiungere controlli contenuto in fase di esecuzione in un VSTO di componente aggiuntivo](#runtimeaddin)
 
   Per informazioni sui controlli contenuto, vedere [Controlli contenuto](../vsto/content-controls.md).
 
@@ -105,7 +106,7 @@ ms.locfileid: "107827903"
 
 - Aggiungere un controllo basato su un controllo contenuto nativo nel documento.
 
-  I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [Aggiungere controlli ai documenti di Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+  I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [Aggiungere controlli Office documenti in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
 > [!NOTE]
 > Per aggiungere un controllo contenuto casella di controllo a un documento in un progetto di Word 2010, è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [Controlli contenuto](../vsto/content-controls.md).
@@ -137,7 +138,7 @@ ms.locfileid: "107827903"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs" id="Snippet702":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb" id="Snippet702":::
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Aggiungere controlli contenuto in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Aggiungere controlli contenuto in fase di esecuzione in un progetto VSTO componente aggiuntivo
  È possibile aggiungere controlli contenuto a livello di codice a qualsiasi documento aperto in fase di esecuzione usando un componente aggiuntivo VSTO. A tale scopo, generare un elemento host <xref:Microsoft.Office.Tools.Word.Document> basato su un documento aperto e quindi usare i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> di tale elemento host. Ogni metodo ha tre overload che è possibile usare per aggiungere un controllo contenuto nei modi seguenti:
 
 - Aggiungere un controllo in corrispondenza della selezione corrente.
@@ -146,16 +147,16 @@ ms.locfileid: "107827903"
 
 - Aggiungere un controllo basato su un controllo contenuto nativo nel documento.
 
-  I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [Rendere persistenti i controlli dinamici nei documenti di Office.](../vsto/persisting-dynamic-controls-in-office-documents.md)
+  I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [Rendere persistenti i controlli dinamici nei Office documenti.](../vsto/persisting-dynamic-controls-in-office-documents.md)
 
-  Per altre informazioni sulla generazione di elementi host nei progetti di componente aggiuntivo VSTO, vedere Estendere documenti di Word e cartelle di lavoro di Excel nei componenti aggiuntivi [VSTO in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+  Per altre informazioni sulla generazione di elementi host nei progetti di componente aggiuntivo VSTO, vedere Estendere documenti di Word e cartelle di lavoro Excel in VSTO componenti aggiuntivi in fase di [esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 
 > [!NOTE]
-> Per aggiungere un controllo contenuto casella di controllo a un documento è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [Controlli contenuto.](../vsto/content-controls.md)
+> Per aggiungere un controllo contenuto casella di controllo a un documento è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [Controlli contenuto](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Per aggiungere un controllo contenuto in corrispondenza della selezione corrente
 
-1. Usare un metodo con il nome (dove classe del controllo è il nome della classe del controllo contenuto che si desidera aggiungere, ad esempio ) e che ha un singolo parametro per il nome del <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> nuovo  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> controllo.
+1. Usare un metodo con il nome (dove classe di controllo è il nome della classe del controllo contenuto che si desidera aggiungere, ad esempio ) e che dispone di un singolo parametro per il nome del <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> nuovo  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> controllo.
 
      L'esempio di codice seguente usa il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> per aggiungere un nuovo oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> all'inizio del documento attivo. Per eseguire il codice, aggiungerlo alla classe `ThisAddIn` nel progetto e chiamare il metodo `AddRichTextControlAtSelection` dal gestore eventi `ThisAddIn_Startup` .
 
@@ -164,7 +165,7 @@ ms.locfileid: "107827903"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Per aggiungere un controllo contenuto in corrispondenza di un intervallo specificato
 
-1. Usare un metodo con il nome (dove classe del controllo è il nome della classe del controllo contenuto che si vuole aggiungere, ad esempio ) e che <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> ha un  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> parametro <xref:Microsoft.Office.Interop.Word.Range> .
+1. Usare un metodo con il nome (dove classe di controllo è il nome della classe del controllo contenuto che si vuole aggiungere, ad esempio ), e che <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> dispone di un  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> parametro <xref:Microsoft.Office.Interop.Word.Range> .
 
      L'esempio di codice seguente usa il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> per aggiungere un nuovo oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> all'inizio del documento attivo. Per eseguire il codice, aggiungerlo alla classe `ThisAddIn` nel progetto e chiamare il metodo `AddRichTextControlAtRange` dal gestore eventi `ThisAddIn_Startup` .
 
@@ -173,7 +174,7 @@ ms.locfileid: "107827903"
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Per aggiungere un controllo contenuto basato su un controllo contenuto nativo
 
-1. Usare un metodo con il nome (dove classe del controllo è il nome della classe del controllo contenuto che si vuole aggiungere, ad esempio ) e che <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> ha un  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> parametro `Microsoft.Office.Interop.Word.ContentControl` .
+1. Usare un metodo con il nome (dove classe di controllo è il nome della classe del controllo contenuto che si vuole aggiungere, ad esempio ), e che <xref:Microsoft.Office.Tools.Word.ControlCollection> `Add` \<*control class*> dispone di un  <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> parametro `Microsoft.Office.Interop.Word.ContentControl` .
 
      L'esempio di codice seguente usa il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> per creare un nuovo oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> per ogni controllo in formato RTF nativo in un documento, dopo l'apertura del documento. Per eseguire il codice, aggiungerlo alla classe `ThisAddIn` nel progetto.
 
@@ -187,7 +188,7 @@ ms.locfileid: "107827903"
 ## <a name="see-also"></a>Vedi anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
-- [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Aggiungere controlli per Office documenti in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Componenti VSTO programma](../vsto/programming-vsto-add-ins.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)

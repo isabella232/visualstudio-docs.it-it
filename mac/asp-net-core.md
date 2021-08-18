@@ -19,7 +19,7 @@ ms.locfileid: "121350196"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
- Visual Studio per Mac semplifica lo sviluppo del servizio dell'app con il supporto per la ASP.NET Core di sviluppo Web più recente. Il funzionamento di ASP.NET Core si basa su .NET Core, l'evoluzione più recente di .NET Framework e del runtime. È stato ottimizzato per prestazioni veloci, fattorizzate per piccole dimensioni di installazione e rivisto per l'esecuzione in Linux e macOS, nonché per Windows.
+ Visual Studio per Mac semplifica lo sviluppo del servizio dell'app con il supporto per la piattaforma di sviluppo Web ASP.NET Core più recente. Il funzionamento di ASP.NET Core si basa su .NET Core, l'evoluzione più recente di .NET Framework e del runtime. È stato ottimizzato per prestazioni veloci, è stato eseguito il factored per piccole dimensioni di installazione e è stato rivisto per l'esecuzione in Linux e macOS, nonché per Windows.
 
 ## <a name="installing-net-core"></a>Installazione di .NET Core
 
@@ -39,16 +39,16 @@ Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a crear
 - **.NET Core > API**
 - **.NET Core > Applicazione Web**
 - **.NET Core > Applicazione Web (Model-View-Controller)**
-- **App server .NET Core > Blazor**
+- **.NET Core > Blazor Server App**
 - **App > .NET Core Blazor WebAssembly**
 
 ![Opzioni di progetto ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un nome al progetto e premere **Crea**. Verrà creata una nuova ASP.NET Core app. Nel riquadro sinistro della finestra della soluzione espandere la seconda freccia e quindi selezionare **Startup.cs**. Dovrebbe essere simile all'immagine seguente:
+Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un nome al progetto e premere **Crea**. Verrà creata una nuova app ASP.NET Core app. Nel riquadro sinistro della finestra della soluzione espandere la seconda freccia e quindi selezionare **Startup.cs.** Dovrebbe essere simile all'immagine seguente:
 
 ![Vista del nuovo progetto ASP.NET Core vuoto](media/asp-net-core-2019-empty-project.png)
 
-Il ASP.NET Core vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, illustrati di seguito. Crea anche una cartella Dependencies, che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, .NET Core Framework e le destinazioni MSBuild che compilano il progetto:
+Il ASP.NET Core vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs,** illustrati di seguito. Crea anche una cartella Dependencies che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni MSBuild che compilano il progetto:
 
 ![Finestra della soluzione che visualizza le dipendenze](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -70,7 +70,7 @@ Aprire ed esaminare il file **Program.cs** nel progetto. Si noti che nel metodo 
     }
 ```
 
-Un ASP.NET Core app crea un server Web nel metodo principale configurando e avviando un host tramite un'istanza di [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
+Un ASP.NET Core app crea un server Web nel metodo main configurando e avviando un host tramite un'istanza di [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
 
 * `.UseStartup<Startup>()`: specifica la classe di avvio.
 
@@ -124,11 +124,11 @@ Il metodo `Configure` consente di comporre pipeline delle richieste tramite [mid
 
 Il metodo `Configure` del modello predefinito è destinato all'esecuzione di alcune operazioni. Prima configura una pagina di gestione delle eccezioni da usare durante lo sviluppo. Quindi invia una risposta alla pagina Web di richiesta con la semplice frase "Hello World".
 
-Questo semplice progetto "Hello World"può ora essere eseguito senza l'aggiunta di altro codice. Per eseguire l'app, è possibile selezionare il browser in cui eseguire l'app usando l'elenco a discesa a destra del pulsante Riproduci oppure semplicemente fare clic sul pulsante Riproduci (triangolare) per usare il browser predefinito:
+Questo semplice progetto "Hello World"può ora essere eseguito senza l'aggiunta di altro codice. Per eseguire l'app, è possibile selezionare il browser in cui eseguire l'app usando l'elenco a discesa a destra del pulsante Riproduci oppure fare semplicemente clic sul pulsante Riproduci (triangolare) per usare il browser predefinito:
 
 ![Esecuzione del browser](media/asp-net-web-picker.png)
 
-Per avviare il progetto Web, Visual Studio per Mac usa una porta casuale. Per scoprire quale porta si tratta, aprire l'output dell'applicazione, elencato nel menu **> Altro Windows.** L'output dovrebbe essere simile a quello illustrato di seguito:
+Per avviare il progetto Web, Visual Studio per Mac usa una porta casuale. Per scoprire quale porta si tratta, aprire l'output dell'applicazione, elencato nel menu Visualizza > **Altro Windows.** L'output dovrebbe essere simile a quello illustrato di seguito:
 
 ![Output applicazione con la porta di ascolto](media/asp-net-core-image6.png)
 
@@ -138,13 +138,13 @@ Quando il progetto è in esecuzione, il Web browser predefinito viene avviato e 
 
 ## <a name="adding-a-controller"></a>Aggiunta di un controller
 
-Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per stabilire una separazione logica delle responsabilità di ogni parte dell'app. Il modello di progettazione MVC è costituito dai concetti seguenti:
+Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per stabilire una separazione logica delle responsabilità di ogni parte dell'app. Lo schema progettuale MVC è costituito dai concetti seguenti:
 
 - **Model** (Modello): classe che rappresenta i dati dell'app.
 - **View** (Vista): visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
 - **Controller**: classe che gestisce le richieste del browser e risponde all'input e all'interazione dell'utente.
 
-Per altre informazioni sull'uso di MVC, vedere la guida [Panoramica ASP.NET Core MVC.](/aspnet/core/mvc/overview)
+Per altre informazioni sull'uso di MVC, vedere [panoramica di ASP.NET Core MVC.](/aspnet/core/mvc/overview)
 
 Per aggiungere un controller, eseguire le operazioni seguenti:
 
@@ -242,7 +242,7 @@ Per installare correttamente .NET Core, assicurarsi che tutti i passaggi vengano
 
 Questa guida offre un'introduzione ad ASP.NET Core. Descrive che cos'è e quando usarlo e fornisce informazioni per l'uso in Visual Studio per Mac.
 Per altre informazioni sui passaggi successivi da qui, vedere le guide seguenti:
-- [ASP.NET Core](/aspnet/core/) documenti.
+- [ASP.NET Core](/aspnet/core/) docs.
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
 - [ASP.NET Core hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) (Esercitazione pratica su ASP.NET Core).
 

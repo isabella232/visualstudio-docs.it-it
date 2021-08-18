@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a95473b7216bffec573ce46b0751c0a222f880b3cbee801cbe406a81d7948a5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f329e2b3849bc9d74ac7454c40c789df7631a342
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121333821"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131963"
 ---
 # <a name="average-cpu-utilization"></a>Utilizzo CPU medio
 Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del processo profilato per la durata del processo. Nel grafico non viene indicato quale core specifico è attivo in un determinato momento. Ad esempio, se due core sono ognuno in esecuzione al 50% della capacità per un periodo di tempo specificato, in questa visualizzazione verrà indicato l'utilizzo di un solo core logico.

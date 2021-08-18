@@ -1,6 +1,6 @@
 ---
 title: Comando Elenca moduli
-description: Informazioni sul comando Elenca moduli e su come elencare i moduli per il processo corrente.
+description: Informazioni sul comando Elenca moduli e su come elenca i moduli per il processo corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 90a76b448fa4670e87baee821102734391f120415a29ec66f1d021aeb70f0f78
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 75375db0abfd49e62d209c7ba7fd8139862d3553
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121429186"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132080"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
 Elenca i moduli disponibili per il processo corrente.

@@ -1,23 +1,24 @@
 ---
 title: Eseguire unit test con Esplora test
-description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare le esecuzioni automatiche dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco di test, creare playlist e usare i collegamenti ai test.
+description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare le esecuzioni test automatiche dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco di test, creare playlist e usare i collegamenti ai test.
 ms.date: 07/14/2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 26dbed25f42f40614597075ad26c855398b56025
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 9c9f31d17a4a1453020f5e18b4877beb7344d50d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925124"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100504"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
-Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare Esplora test per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È anche possibile analizzare i code coverage ed eseguire [il debug di unit test](../test/debug-unit-tests-with-test-explorer.md).
+Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare Esplora test per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È anche possibile analizzare i code coverage ed [eseguire il debug di unit test](../test/debug-unit-tests-with-test-explorer.md).
 
 **Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++.
 
@@ -25,14 +26,14 @@ Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit
 
 Se non è già stato configurato un progetto di test nella soluzione Visual Studio, è necessario creare e compilare un progetto di test.
 
-- [Introduzione a unit test (.NET)](../test/getting-started-with-unit-testing.md)
+- [Introduzione all'unit test (.NET)](../test/getting-started-with-unit-testing.md)
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)
 
 Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Esplora test può tuttavia eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
-Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non  è visibile, scegliere Test dal menu Visual Studio, scegliere **Windows** e quindi Esplora test **(o** premere **CTRL**  +  **E**, **T**).
+Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non  è visibile, scegliere Test dal menu Visual Studio, scegliere **Windows** e quindi scegliere **Esplora** test (o premere **CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
@@ -62,11 +63,11 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ::: moniker range="vs-2017"
 È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
-- Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto** (o premere **CTRL** + **R**, **V**).
+- Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto** oppure premere **CTRL** + **R**, **V**.
 
 - Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui** e quindi scegliere il gruppo dal menu.
 
-- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui** test selezionati (o premere **CTRL** + **R**, **T**).
+- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui** test selezionati oppure premere **CTRL** + **R**, **T**.
 
 - Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore Esecuzione test in parallelo sulla barra degli strumenti Visual Studio Esplora test. Quando questo pulsante è selezionato, i test verranno eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
@@ -75,11 +76,11 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 ::: moniker range=">=vs-2019"
 È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
-- Per eseguire tutti i test in una soluzione, scegliere **l'icona Esegui** tutto (o premere **CTRL** + **R**, **V**).
+- Per eseguire tutti i test in una soluzione, scegliere **l'icona** Esegui tutto oppure premere **CTRL** + **R**, **V**.
 
 - Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui** e quindi scegliere il gruppo dal menu.
 
-- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui** test selezionati (o premere **CTRL** + **R**, **T**).
+- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui** test selezionati oppure premere **CTRL** + **R**, **T**.
 
 - Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test nel menu Impostazioni sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 ::: moniker-end
@@ -148,7 +149,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 
 È possibile definire i propri livelli della gerarchia e raggruppare in base a **Stato** e quindi a **Classe**, ad esempio, selezionando le opzioni di Raggruppa per nell'ordine preferito.
 
-![Screenshot dell'Visual Studio Test Explorer che mostra una gerarchia di test in un riquadro e il menu Raggruppa per nell'altro con le opzioni Classe e Stato selezionate.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Screenshot dell'Visual Studio Esplora test che mostra una gerarchia di test in un riquadro e il menu Raggruppa per nell'altro con le opzioni Classe e Stato selezionate.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
@@ -363,7 +364,7 @@ Per altre informazioni, vedere [Usare la funzionalità code coverage per determi
 
 ## <a name="test-shortcuts"></a>Tasti di scelta rapida per i test
 
-I test possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e scegliendo Esegui **test** o usando i tasti di scelta rapida predefiniti di Esplora test [in](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono o eseguono [il debug dei test](../test/debug-unit-tests-with-test-explorer.md) in base alla posizione del cursore nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
+I **test** possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e scegliendo Esegui test o usando i tasti di scelta rapida predefiniti di Esplora test [in](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono o eseguono [il debug dei test](../test/debug-unit-tests-with-test-explorer.md) in base alla posizione in cui si trova il cursore nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
 
 |Comandi frequenti| Tasti di scelta rapida|
 |-|------------------------|
@@ -377,15 +378,15 @@ I test possono essere eseguiti da Esplora test facendo clic con il pulsante dest
 
 ::: moniker range=">=vs-2019"
 ## <a name="test-audio-cue"></a>Testare il segnale audio
-Esplora test può riprodurre un suono al termine dell'esecuzione di un test. Sono disponibili due suoni: un suono per indicare che l'esecuzione del test è riuscita con tutti i test superati e un secondo suono per indicare che l'esecuzione del test è stata completata con almeno un test non superato. È possibile configurare questi suoni nella finestra di dialogo predefinita Windows 10 audio. Questa funzionalità è disponibile a partire Visual Studio 2019 Update 16.9 Preview 3.
+Esplora test può riprodurre un suono al termine dell'esecuzione di un test. Sono presenti due suoni: un suono per indicare che l'esecuzione del test è riuscita con tutti i test superati e un secondo suono per indicare che l'esecuzione del test è stata completata con almeno un test non superato. È possibile configurare questi suoni nella finestra di dialogo predefinita Windows 10 audio. Questa funzionalità è disponibile a partire Visual Studio 2019 Update 16.9 Preview 3.
 
 1. Aprire la finestra di dialogo Windows 10 audio predefinita.
 2. Passare alla **scheda Suoni.**
-3. Trovare la **Microsoft Visual Studio** predefinita. Scegliere **i suoni Esecuzione test completata** o Esecuzione **test** non riuscita per selezionare i suoni preimpostati o selezionare il file audio.  
+3. Trovare la **Microsoft Visual Studio** categorie. Scegliere **i suoni Esecuzione test completata** o Esecuzione **test** non riuscita per selezionare i suoni preimpostati o selezionare il file audio.  
 ![Windows 10 di dialogo audio](../test/media/default-windows-10-sound-dialog.png)
 
 ::: moniker-end
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire il debug di unit test con Esplora test](../test/debug-unit-tests-with-test-explorer.md)

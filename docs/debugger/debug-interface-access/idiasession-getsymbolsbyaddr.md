@@ -1,5 +1,5 @@
 ---
-description: Recupera un enumeratore che trova i simboli nell'ordine dei rispettivi indirizzi.
+description: Recupera un enumeratore che trova i simboli nell'ordine dei relativi indirizzi.
 title: IDiaSession::getSymbolsByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: eafcc757-b488-487d-a063-ad3703ff42e8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b19b342a799cf0db2254795133bcf1ee6569a75
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 679ec90169ed8b95fe2fd10c0e1453efbcac243b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066270"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
-Recupera un enumeratore che trova i simboli nell'ordine dei rispettivi indirizzi.
+Recupera un enumeratore che trova i simboli nell'ordine dei relativi indirizzi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT getSymbolsByAddr(
 #### <a name="parameters"></a>Parametri
  `ppEnumbyAddr`
 
-out Restituisce un oggetto [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) . Usare questa interfaccia per cercare i simboli nell'archivio simboli in base alla posizione di memoria.
+[out] Restituisce un [oggetto IDiaEnumSymbolsByAddr.](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) Usare questa interfaccia per cercare i simboli nell'archivio simboli in base alla posizione di memoria.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

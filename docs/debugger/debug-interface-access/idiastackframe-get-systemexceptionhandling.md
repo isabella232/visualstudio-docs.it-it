@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 768a9d8f59503b7c37a19b7f12f281e8419bb1bb31602028a53d9f5eca30d4d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c8b5e0966465d807e6fac26c98fd9fb5d922abba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454863"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066172"
 ---
 # <a name="idiastackframeget_systemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 Recupera un flag che indica se la gestione delle eccezioni di sistema è in vigore.

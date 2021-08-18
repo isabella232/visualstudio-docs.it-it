@@ -11,15 +11,16 @@ ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a60b51571d33a619cdc04c534f6b77fafcb584f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5b4dd043d50135427042a435adf9465036265cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955281"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131664"
 ---
 # <a name="net-memory-data-views"></a>Visualizzazioni dei dati di memoria .NET
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler che contengono dati di profilatura della memoria .NET.
@@ -37,19 +38,19 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i tipi che sono stati allocati durante la profilatura, il numero di istanze, le dimensioni in byte e la generazione di Garbage Collection del tipo.
 
-- [Visualizzazione albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Albero delle chiamate - Campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
  Visualizza un albero gerarchica che rappresenta i percorsi di esecuzione e i dati sull'allocazione di memoria di funzioni nella profilatura.
 
-- [Visualizzazione moduli-campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
 
  Organizza i dati sull'allocazione di memoria .NET tramite modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando è stata allocata la memoria.
 
-- [Visualizzazione chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 
  Elenca i dati sull'allocazione di memoria per una funzione selezionata, le funzioni che hanno chiamato la funzione selezionata e le funzioni che sono state chiamate dalla funzione selezionata.
 
-- [Visualizzazione funzioni-campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Funzioni - Campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)
 
  Elenca i dati sull'allocazione di memoria per le funzioni nella profilatura.
 
@@ -65,15 +66,15 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Visualizza un albero gerarchica che rappresenta i percorsi di esecuzione, i dati sull'allocazione di memoria e i dati temporali dettagliati per le funzioni instrumentate nella profilatura.
 
-- [Visualizzazione moduli-strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 
  Organizza i dati di profilatura usando il modulo ed elenca le funzioni, i dati sull'allocazione di memoria e i dati temporali dettagliati per il modulo.
 
-- [Visualizzazione chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 
  Elenca i dati sull'allocazione di memoria e i dati temporali dettagliati per una funzione instrumentata selezionata, le funzioni che hanno chiamato la funzione selezionata e le funzioni che sono state chiamate dalla funzione selezionata.
 
-- [Visualizzazione funzioni-strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione Funzioni - Strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 
  Elenca i dati sull'allocazione di memoria per le funzioni instrumentate nella profilatura.
 
