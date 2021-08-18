@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Visualizzare commenti del foglio di lavoro a livello di codice'
-description: Informazioni su come visualizzare e nascondere commenti a livello di codice in un foglio di lavoro di Microsoft Excel a livello di documento o di applicazione.
+description: Informazioni su come visualizzare e nascondere i commenti in un foglio Microsoft Excel a livello di documento o di applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: af327a6756189c73f80f624205451274abf19264
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 614fea5dc82ebd79096a81ea96d26a0a84216678
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828670"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083245"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Procedura: Visualizzare commenti del foglio di lavoro a livello di codice
   A livello di codice è possibile visualizzare e nascondere i commenti nei fogli di lavoro di Microsoft Office Excel.

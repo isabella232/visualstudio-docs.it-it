@@ -1,6 +1,6 @@
 ---
 title: 'Esercitazione 3: Creare un gioco di abbinamenti'
-description: Informazioni su come creare un gioco di abbinamenti, in cui il giocatore deve corrispondere a coppie di icone nascoste.
+description: Informazioni su come creare un gioco corrispondente, in cui il giocatore deve corrispondere a coppie di icone nascoste.
 ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a47f483a830c2ba6d83c45a0f2179537fb87ea0fe09254a7b2499487cc65b4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 596236c1770623b244219164c2d8c555b413c620
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411841"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040593"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 
@@ -29,7 +29,7 @@ Questa esercitazione illustra le attività seguenti:
 
 - Archiviare oggetti, ad esempio icone, in un oggetto <xref:System.Collections.Generic.List%601>.
 
-- Usare un `foreach` ciclo in C# o `For Each` un ciclo in Visual Basic scorrere gli elementi in un elenco.
+- Usare un `foreach` ciclo in C# o un ciclo in Visual Basic scorrere gli elementi in un `For Each` elenco.
 
 - Tenere traccia dello stato di un form utilizzando variabili di riferimento.
 
@@ -55,7 +55,7 @@ Al termine, l'app dovrebbe essere simile all'immagine seguente:
 |[Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.|
 |[Passaggio 9: Provare altre funzionalità](../ide/step-9-try-other-features.md)|Provare altre funzionalità, ad esempio modificare le icone e i colori oppure aggiungere una griglia e i suoni. Provare a ingrandire la lavagna e a regolare il timer.|
 
-Sono disponibili anche ottime risorse gratuite per l'apprendimento video. Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali su C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
+Sono disponibili anche risorse di video learning gratuite. Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali su C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

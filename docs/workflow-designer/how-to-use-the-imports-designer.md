@@ -1,6 +1,6 @@
 ---
-title: 'Progettazione flussi di lavoro - Procedura: Usare la finestra di progettazione Importazioni'
-description: Informazioni su come la finestra di progettazione importazioni consente di immettere spazi dei nomi per i tipi che verranno utilizzati nelle espressioni.
+title: 'Progettazione flussi di lavoro - Procedura: Usare Progettazione importazioni'
+description: Informazioni su come progettazione importazioni consente di immettere spazi dei nomi per i tipi che verranno utilizzati nelle espressioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b1b83b73a02d283450d161f69353e8a72aa159b5987a393327ac4432d6fb729
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2a7ca00f988981dd7a5d1e6c0e2954ba27441499
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135322"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procedura: utilizzare la finestra di progettazione importazioni
 
@@ -36,7 +36,7 @@ Sulla finestra di progettazione importazioni influiscono sia le modifiche all'in
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Per aggiungere uno spazio dei nomi all'elenco degli spazi dei nomi importati
 
-1. Aprire un'applicazione del servizio flusso di lavoro WCF, un'applicazione console del flusso di lavoro o un progetto di libreria di attività in Visual Studio o in un'applicazione flusso di lavoro rihosted.
+1. Aprire un'applicazione del servizio flusso di lavoro WCF, un'applicazione console del flusso di lavoro o un progetto di libreria di attività Visual Studio o un'applicazione del flusso di lavoro rihosted.
 
 2. Fare **clic su** Importazioni nella parte inferiore dell'area di disegno principale. Verrà visualizzata la finestra di progettazione importazioni.
 
@@ -44,6 +44,6 @@ Sulla finestra di progettazione importazioni influiscono sia le modifiche all'in
 
      Mentre si digita, viene visualizzato un elenco degli spazi dei nomi validi che corrispondono ai caratteri tipizzati.
 
-4. Premere **INVIO per** aggiungere lo spazio dei nomi all'elenco.
+4. Premere **INVIO** per aggiungere lo spazio dei nomi all'elenco.
 
 5. Se si vuole rimuovere uno spazio dei nomi dall'elenco, selezionare lo spazio dei nomi e quindi premere **CANC** sulla tastiera. Si noti che è possibile eliminare uno spazio dei nomi solo se non è valido per qualsiasi motivo, ad esempio se il progetto non fa più riferimento all'assembly che lo contiene.

@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 03176f6bc4b449d7bf3347f769fb84f0909e00ab15ed4e4b122e58213f635a09
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b41f54d6e0b5750f32a4062d0915cbde1fe92cff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109227"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gestire le estensioni per Visual Studio
 

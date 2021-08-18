@@ -1,6 +1,6 @@
 ---
 title: Usare un ambiente lab per DevOps
-description: Informazioni sugli ambienti Lab e su come usare il cloud con Azure Pipelines o Team Foundation Server compilazione e rilascio.
+description: Informazioni sugli ambienti lab e su come usare il cloud con Azure Pipelines o Team Foundation Server build e versione.
 ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: how-to
@@ -8,15 +8,16 @@ helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a16b8df2539272f96f0211fdf08e32fe4e4eaac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e411beddb093a75528e2cacd2d3eba945e134b62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887822"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033018"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 

@@ -1,6 +1,6 @@
 ---
 title: Attività GenerateTemporaryTargetAssembly | Microsoft Docs
-description: Usare l MSBuild generateTemporaryTargetAssembly per generare un assembly se un progetto fa riferimento a un tipo dichiarato in locale.
+description: Usare l MSBuild'attività GenerateTemporaryTargetAssembly per generare un assembly se un progetto fa riferimento a un tipo dichiarato localmente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 505eb1370dd1ccbcfe782211bf9f1a4e958ef10906da4afcd9c1deb3fa4bf0bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 513aa3ae1f14cff7958da1492819cd6321558694
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093840"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Attività GenerateTemporaryTargetAssembly
 

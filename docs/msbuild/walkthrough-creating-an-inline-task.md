@@ -1,6 +1,6 @@
 ---
 title: "Procedura dettagliata: Creazione di un'attività inline | Microsoft Docs"
-description: Viene illustrata la creazione MSBuild'attività inline nel file di progetto, senza dover creare un assembly separato per ospitare l'attività.
+description: Illustrare la creazione MSBuild'attività inline nel file di progetto, senza dover creare un assembly separato per ospitare l'attività.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,16 +14,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f48dc054a4b3523a6c2a8ac644029fa2385b6ef05c41fcc64d124ae87e2c3c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e91ba93007cb721d8045ff1253ae39796b227124
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397137"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108161"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procedura dettagliata: Creare un'attività inline
 
-Le attività MSBuild vengono in genere create tramite la compilazione di una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. Per altre informazioni, vedere [Attività inline.](../msbuild/msbuild-inline-tasks.md)
+Le attività MSBuild vengono in genere create tramite la compilazione di una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. Per altre informazioni, vedere [Attività inline](../msbuild/msbuild-inline-tasks.md).
 
  Questa procedura dettagliata mostra come creare ed eseguire le attività inline seguenti:
 
@@ -49,7 +49,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 #### <a name="to-create-and-modify-a-project-file"></a>Per creare e modificare un file di progetto
 
-1. In Visual Studio creare un nuovo progetto usando il modello C# **Windows'applicazione Forms.** Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\*. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
+1. In Visual Studio creare un nuovo progetto usando il modello Applicazione **Form Windows** C#. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\*. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
 
 3. Scegliere **OK** per creare il file di progetto.
 
@@ -99,9 +99,9 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 1. Fare clic su **Start**, scegliere **Tutti i programmi,**, quindi individuare la cartella **Strumenti di Visual Studio** e infine fare clic su **Prompt dei comandi di Visual Studio**.
 
-2. Nella finestra **del prompt dei comandi** individuare la cartella che contiene il file di progetto, in questo caso *D:\InlineTasks\InlineTasks. \\*
+2. Nella finestra **del prompt dei** comandi individuare la cartella che contiene il file di progetto, in questo caso *D:\InlineTasks\InlineTasks \\*.
 
-3. Digitare **msbuild** senza opzioni di comando e quindi premere **INVIO.** Per impostazione predefinita, viene compilato il file *InlineTasks.csproj* e viene elaborata la destinazione predefinita TestBuild, che richiama l'attività Hello.
+3. Digitare **msbuild** senza opzioni di comando e quindi premere **INVIO.** Per impostazione predefinita, compila il file *InlineTasks.csproj* ed elabora la destinazione predefinita TestBuild, che richiama l'attività Hello.
 
 4. Esaminare l'output nella **finestra del prompt dei comandi**. Dovrebbe essere visualizzata questa riga:
 
@@ -253,7 +253,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 ### <a name="handle-reserved-characters"></a>Gestire caratteri riservati
 
- Il parser di MSBuild elabora le attività inline come codice XML. I caratteri con significato riservato in XML, ad esempio " ", vengono rilevati e gestiti come se fossero XML e non come codice \<" and "> sorgente .NET. Per includere i caratteri riservati nelle espressioni di codice, ad esempio `Files.Length > 0`, scrivere l'elemento `Code` in modo che il relativo contenuto si trovi in un'espressione CDATA, come indicato di seguito:
+ Il parser di MSBuild elabora le attività inline come codice XML. I caratteri con significato riservato in XML, ad esempio " ", vengono rilevati e gestiti come se fossero XML e non nel codice \<" and "> sorgente .NET. Per includere i caratteri riservati nelle espressioni di codice, ad esempio `Files.Length > 0`, scrivere l'elemento `Code` in modo che il relativo contenuto si trovi in un'espressione CDATA, come indicato di seguito:
 
  ```xml
 <Code Type="Fragment" Language="cs">

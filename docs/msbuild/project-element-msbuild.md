@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: bb6716e341d62b1e49aa2986a7af666d7cb2140e0c3d0b0d145a116e22ae5a24
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef40e3e42fed7eb9b981defabdd073e4ab9c8c9e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397293"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108433"
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
 
@@ -61,11 +61,11 @@ Elemento radice obbligatorio di un file MSBuild progetto.
 
 | Attributo | Descrizione |
 |------------------------| - |
-| `DefaultTargets` | Attributo facoltativo.<br /><br /> Destinazione o destinazioni predefinite che saranno il punto di ingresso della compilazione se non è stata specificata alcuna destinazione. Per specificare più destinazioni, usare il punto e virgola (;) come delimitatore.<br /><br /> Se non viene specificata alcuna destinazione predefinita nell'attributo o nella riga di comando di MSBuild, il motore esegue la prima destinazione nel file di progetto dopo la valutazione degli elementi `DefaultTargets` [Import.](../msbuild/import-element-msbuild.md) |
+| `DefaultTargets` | Attributo facoltativo.<br /><br /> Destinazione o destinazioni predefinite che saranno il punto di ingresso della compilazione se non è stata specificata alcuna destinazione. Per specificare più destinazioni, usare il punto e virgola (;) come delimitatore.<br /><br /> Se non viene specificata alcuna destinazione predefinita nell'attributo o nella riga di comando MSBuild, il motore esegue la prima destinazione nel file di progetto dopo la valutazione degli elementi `DefaultTargets` [Import.](../msbuild/import-element-msbuild.md) |
 | `InitialTargets` | Attributo facoltativo.<br /><br /> Destinazione o destinazioni iniziali da eseguire prima delle destinazioni specificate nell'attributo `DefaultTargets` o nella riga di comando. Per specificare più destinazioni, usare il punto e virgola (`;`) come delimitatore. Se più file importati definiscono `InitialTargets`, tutte le destinazioni menzionate verranno eseguite nell'ordine in cui si rilevano le importazioni. |
 | `Sdk` | Attributo facoltativo. <br /><br /> Nome e versione facoltativa dell'SDK da usare per creare istruzioni Import implicite che vengono aggiunte al file PROJ. Se non viene specificata alcuna versione, MSBuild tenterà di risolvere una versione predefinita.  Ad esempio, `<Project Sdk="Microsoft.NET.Sdk" />` o `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Attributo facoltativo.<br /><br /> Versione del set di strumenti usato da MSBuild per determinare i valori per $(MSBuildBinPath) e $(MSBuildToolsPath). |
-| `TreatAsLocalProperty` | Attributo facoltativo.<br /><br /> Nomi di proprietà che non verranno considerati come globali. Questo attributo impedisce a proprietà della riga di comando specifiche di eseguire l'override dei valori delle proprietà impostati in un file di progetto o di destinazioni e di tutte le importazioni successive. Per specificare più proprietà, usare il punto e virgola (;) come delimitatore.<br /><br /> Le proprietà globali in genere eseguono l'override dei valori delle proprietà impostati nel file di progetto o di destinazioni. Se la proprietà è elencata nel valore `TreatAsLocalProperty`, il valore della proprietà globale non esegue l'override dei valori della proprietà impostati in tale file e delle importazioni successive. Per altre informazioni, vedere [Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Nota:** per impostare le proprietà globali al prompt dei comandi, usare l'opzione **-property** (o **-p**). È anche possibile impostare o modificare le proprietà globali per i progetti figlio in una compilazione a più progetti usando l'attributo `Properties` dell'attività di MSBuild. Per altre informazioni, vedere attività [MSBuild .](../msbuild/msbuild-task.md) |
+| `TreatAsLocalProperty` | Attributo facoltativo.<br /><br /> Nomi di proprietà che non verranno considerati come globali. Questo attributo impedisce a proprietà della riga di comando specifiche di eseguire l'override dei valori delle proprietà impostati in un file di progetto o di destinazioni e di tutte le importazioni successive. Per specificare più proprietà, usare il punto e virgola (;) come delimitatore.<br /><br /> Le proprietà globali in genere eseguono l'override dei valori delle proprietà impostati nel file di progetto o di destinazioni. Se la proprietà è elencata nel valore `TreatAsLocalProperty`, il valore della proprietà globale non esegue l'override dei valori della proprietà impostati in tale file e delle importazioni successive. Per altre informazioni, vedere [Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Nota:** per impostare le proprietà globali al prompt dei comandi, usare l'opzione **-property** (o **-p**). È anche possibile impostare o modificare le proprietà globali per i progetti figlio in una compilazione a più progetti usando l'attributo `Properties` dell'attività di MSBuild. Per altre informazioni, vedere MSBuild [attività](../msbuild/msbuild-task.md). |
 | `xmlns` | Attributo facoltativo.<br /><br /> Quando specificato, l'attributo `xmlns` deve avere il valore di `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -91,5 +91,5 @@ Elemento radice obbligatorio di un file MSBuild progetto.
 
 - [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md)
 - [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)
-- [Project sullo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

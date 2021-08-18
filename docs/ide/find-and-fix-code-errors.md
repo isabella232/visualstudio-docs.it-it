@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f44d005e9e2170e643c7e27e0b24db4bd822b510c6e8dfe7ef508031d24e662a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ba92c8142104f8d31be22f1699b0a395da46a715
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121233680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109279"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 

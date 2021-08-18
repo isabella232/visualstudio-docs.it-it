@@ -1,6 +1,6 @@
 ---
 description: Ottiene il contesto del documento che descrive la posizione nel documento che deve essere resa attiva dal pacchetto di debug.
-title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
+title: Interfaccia IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21bdd7bf7d47ba3578ec72c6dbbe1a5672f1adea36352ea87fc4ce4692066c81
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 95c0c235f7504f71c2938bc901da1e5f1556e8a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342648"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104534"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Ottiene il contesto del documento che descrive la posizione nel documento che deve essere resa attiva dal pacchetto di debug.

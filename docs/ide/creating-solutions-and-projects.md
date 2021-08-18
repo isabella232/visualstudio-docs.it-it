@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d7d0788a6f2ce14cf68ea82b7dacab160752119545d4b6e3008ddaa644029429
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fba43be5a5b48e39df48d7d0316dfe650e0be2f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413285"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109448"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Creare, usare ed eliminare progetti Visual Studio soluzioni
 
@@ -145,7 +145,7 @@ Per eliminare definitivamente una soluzione o altri componenti dal sistema, usar
 
 È possibile accedere Esplora file in Windows usando Esplora soluzioni in Visual Studio. Ecco come.
 
-1. In **Esplora soluzioni**, nel menu di scelta rapida della soluzione che si vuole eliminare fare clic con il pulsante destro del mouse, **selezionare Apri** cartella Esplora file .
+1. In **Esplora soluzioni** scegliere Apri cartella nel menu di scelta rapida (menu di scelta rapida) della soluzione **da eliminare Esplora file**.
 
 1. In Esplora file spostarsi in alto di un livello.
 
@@ -158,4 +158,4 @@ Per eliminare definitivamente una soluzione o altri componenti dal sistema, usar
 - [Soluzioni filtrate in Visual Studio](filtered-solutions.md)
 - [Repository open source Microsoft su GitHub](https://github.com/Microsoft)
 - [Esempi di codice per sviluppatori](https://code.msdn.microsoft.com/)
-- [Risorse per la risoluzione Visual Studio errori dell'IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
+- [Risorse per la risoluzione dei Visual Studio ide](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)

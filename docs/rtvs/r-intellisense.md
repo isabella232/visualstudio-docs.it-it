@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 2afcb305d235f8648f56e8a4a83c566b513bb841cbd94bb64672829ce03efba9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a635ac8cc95648d1885239661c4b7edf4167692b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060687"
 ---
 # <a name="intellisense"></a>IntelliSense
 

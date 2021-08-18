@@ -1,6 +1,6 @@
 ---
 title: Funzione CvLeaveSpan | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvLeaveSpan (libreria C).
+description: Vedere le informazioni di riferimento per la funzione CvLeaveSpan (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: 3bf65fdf-a471-4efd-ac7a-03e701bbae5d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: da049fc5cc96e9eaa6830159db8c60f9469e2ac4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5e2e7e275128a46a8f2792cddbbc0c2e6b326c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948257"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136169"
 ---
 # <a name="cvleavespan-function"></a>Funzione CvLeaveSpan
 Contrassegna la fine della sezione.
@@ -42,4 +43,4 @@ HRESULT CvLeaveSpan(
  **Intestazione:** *cvmarkers.h*
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)
+- [Informazioni di riferimento sulla libreria C++](../profiling/cpp-library-reference.md)

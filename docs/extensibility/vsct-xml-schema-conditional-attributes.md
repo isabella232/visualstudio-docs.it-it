@@ -14,19 +14,19 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56f3cd8929d9ca17b01df2e78ab6a1b8354558445450137bd2e68aa1a8785d1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e6e18b5daaf572e4dd48173abfff57fd1c7cf6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335277"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041555"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>Attributi condizionali di XML Schema VSCT
-È possibile applicare attributi condizionali a tutti gli elenchi e gli elementi. Gli operatori logici e le espressioni di espansione dei simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.
+# <a name="vsct-xml-schema-conditional-attributes"></a>Attributi condizionali dello schema XML VSCT
+È possibile applicare attributi condizionali a tutti gli elenchi ed elementi. Gli operatori logici e le espressioni di espansione dei simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.
 
- È possibile testare le espansioni dei token rispetto ad altre espansioni o costanti del token. La funzione `Defined()` verifica se è stato definito un nome specifico, anche se non ha alcun valore.
+ È possibile testare le espansioni di token rispetto ad altre espansioni di token o costanti. La funzione `Defined()` verifica se un nome specifico è stato definito, anche se non ha alcun valore.
 
- Quando un attributo Condition viene applicato a un elenco, la condizione viene applicata a ogni elemento figlio nell'elenco. Se un elemento figlio stesso contiene un attributo Condition, la condizione viene combinata con l'espressione padre tramite un'operazione AND.
+ Quando un attributo Condition viene applicato a un elenco, la condizione viene applicata a ogni elemento figlio nell'elenco. Se un elemento figlio contiene un attributo Condition, la condizione viene combinata con l'espressione padre tramite un'operazione AND.
 
  I valori 1, '1' e 'true' vengono valutati come true e 0, '0' e 'false' vengono valutati come false.
 

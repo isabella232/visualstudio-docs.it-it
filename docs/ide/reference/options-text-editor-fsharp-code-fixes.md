@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, F#, Correzioni del codice
-description: Informazioni su come usare la pagina Correzioni del codice nella sezione F# per specificare le impostazioni che consentono di identificare gli errori del codice e offrire soluzioni.
+description: Informazioni su come usare la pagina Correzioni codice nella sezione F# per specificare le impostazioni che consentono di identificare gli errori di codice e offrire soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 004a3600066faa10758eccfaa718c72916aaf0c4c115d0466f1178d08c38e6a2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2f63076cdccf2324ab85602054babecb27628ec5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041126"
 ---
-# <a name="options-text-editor--f--code-fixes"></a>Opzioni: Editor di testo > correzioni del codice > F#
+# <a name="options-text-editor--f--code-fixes"></a>Opzioni: Correzioni del codice > F# > dell'editor di testo
 
-Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina di opzioni, scegliere **Opzioni** strumenti e quindi scegliere Editor di testo  >     >  **Correzioni del codice**  >  **F#**.
+Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina delle opzioni, scegliere **Opzioni** degli strumenti e quindi correzioni di  >  codice F# dell'editor   >    >  **di testo.**
 
 ## <a name="code-fixes"></a>Correzioni del codice
 

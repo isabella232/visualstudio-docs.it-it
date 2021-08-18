@@ -25,12 +25,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b96d65b74c6d7ed1816051d29d5335c4bba46aec50c5c600886f5e6f123221eb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 380ffd8f39590218ecbe82cde464b227a1046e8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121258642"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056056"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: Ambiente \> Elenco attività
 

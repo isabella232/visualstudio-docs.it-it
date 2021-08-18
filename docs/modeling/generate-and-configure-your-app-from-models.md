@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 68339159ed9926490f22a82cd30ce69f45ab6a30
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2eb43192ad2f33b37198679171b25aa8133fd06f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388867"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061246"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
 È possibile generare o configurare parti dell'applicazione da un modello.
@@ -37,7 +38,7 @@ ms.locfileid: "112388867"
   Tuttavia, se si parte da un'applicazione esistente, potrebbe rendersi necessaria un'attività di refactoring non indifferente per separare i diversi comportamenti regolati dal modello in modo che possano essere variati in modo indipendente. Si consiglia di valutare questo aspetto dell'applicazione quando si effettua una stima del costo del progetto.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configurazione dell'applicazione in base a un modello
- Se si vuole variare il comportamento dell'applicazione in fase di esecuzione, non è possibile usare la generazione di codice, poiché genera il codice sorgente prima che venga compilata l'applicazione. È invece possibile progettare l'applicazione per leggere il modello e modificarne il comportamento di conseguenza. Per altre informazioni, vedere:
+ Se si vuole variare il comportamento dell'applicazione in fase di esecuzione, non è possibile usare la generazione di codice, poiché genera il codice sorgente prima che venga compilata l'applicazione. È invece possibile progettare l'applicazione in modo da leggere il modello e variare il comportamento di conseguenza. Per altre informazioni, vedere:
 
 - [Procedura: aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
@@ -48,15 +49,15 @@ ms.locfileid: "112388867"
 ## <a name="developing-a-derived-application"></a>Sviluppo di un'applicazione derivata
  Per lo sviluppo di un'applicazione derivata potranno rivelarsi utili le linee guida descritte di seguito.
 
-- **Iniziare in modo specifico e quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.
+- **Iniziare in modo specifico, quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.
 
-     Ad esempio, progettare un sito Web con un set specifico di pagine Web prima di progettare un'applicazione Web che presenta pagine definite in un modello.
+     Ad esempio, progettare un sito Web con un set specifico di pagine Web prima di progettare un'applicazione Web che presenta le pagine definite in un modello.
 
 - **Modellare gli aspetti della variante.** Identificare gli aspetti che varieranno tra una distribuzione e l'altra o nel tempo con il mutare dei requisiti. Questi sono gli aspetti che devono essere derivati da un modello.
 
      Ad esempio, se il set di pagine Web e i collegamenti tra di esse cambiano, ma lo stile e il formato delle pagine sono sempre gli stessi, il modello deve descrivere i collegamenti, ma non deve descrivere il formato delle pagine.
 
-- **Separare i problemi.** Se gli aspetti variabili possono essere suddivisi in aree indipendenti, usare modelli separati per ogni area. Usando ModelBus, è possibile definire operazioni che influiscono su entrambi modelli e i vincoli reciproci.
+- **Separare le problematiche.** Se gli aspetti variabili possono essere suddivisi in aree indipendenti, usare modelli separati per ogni area. Usando ModelBus, è possibile definire operazioni che influiscono su entrambi modelli e i vincoli reciproci.
 
      Ad esempio, usare un modello per definire la navigazione tra le pagine Web e un modello diverso per definire il layout delle pagine.
 
@@ -70,7 +71,7 @@ ms.locfileid: "112388867"
 
 - **UML o DSL?** Prendere in considerazione la creazione della notazione dei modelli tramite stereotipi per estendere UML. Definire un modello DSL se non si ha un diagramma UML appropriato. Evitare tuttavia di alterare la semantica standard di UML.
 
-     Ad esempio, un diagramma classi UML è una raccolta di caselle e di frecce. Con questa notazione si può, teoricamente, definire qualsiasi elemento. L'uso del diagramma classi è tuttavia consigliato solo quando si descrive un set di tipi. È ad esempio possibile adattare i diagrammi classi per descrivere diversi tipi di pagine Web.
+     Ad esempio, un diagramma classi UML è una raccolta di caselle e di frecce. Con questa notazione si può, teoricamente, definire qualsiasi elemento. L'uso del diagramma classi è tuttavia consigliato solo quando si descrive un set di tipi. Ad esempio, è possibile adattare i diagrammi classi per descrivere diversi tipi di pagine Web.
 
 ## <a name="see-also"></a>Vedi anche
 

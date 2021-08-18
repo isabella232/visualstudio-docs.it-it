@@ -1,6 +1,6 @@
 ---
-description: Recupera un tipo dato il tipo primitivo.
-title: 'IDebugDynamicFieldCOMPlus:: GetTypeFromPrimitive | Microsoft Docs'
+description: Recupera un tipo dato il relativo tipo primitivo.
+title: IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: d7f51e2a-1b72-489c-b7b6-4af7b7e4d663
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b222546f529aca563d6e54a674d7c361111decb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c201fc97f6c401786300182577fff5d72464a788
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094042"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119178"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
-Recupera un tipo dato il tipo primitivo.
+Recupera un tipo dato il relativo tipo primitivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +44,10 @@ int GetTypeFromPrimitive(
 
 ## <a name="parameters"></a>Parametri
 `dwCorElementType`\
-in Valore dell' [enumerazione CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) che rappresenta il tipo primitivo.
+[in] Valore [dell'enumerazione CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) che rappresenta il tipo primitivo.
 
 `ppType`\
-out Restituisce il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il tipo.
+[out] Restituisce [l'oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il tipo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,5 +1,5 @@
 ---
-title: Struttura del file [Content_types].xml file | Microsoft Docs
+title: Struttura dell'oggetto [Content_types].xml File | Microsoft Docs
 description: Informazioni sulla struttura del file dei tipi di contenuto, che contiene informazioni sui tipi di contenuto in un pacchetto VSIX.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,23 +13,24 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96d4d0eeea34300894674a2105d080e8a6abb607
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 681b2877983762ec0601543ae996748612fd3812
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900421"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049311"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struttura del file [Content_types].xml
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio usa il file [Content_Types].xml per installare il pacchetto, ma non installa il file stesso.
 
 > [!NOTE]
-> Anche se questo argomento si applica solo ai file [Content_Type].xml usati nei pacchetti VSIX, il tipo di file [Content_Types].xml fa parte dello standard *Open Packaging Conventions (OPC).* Per altre informazioni, vedere [OPC: A New Standard for Packaging Your Data (OPC: un nuovo standard](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) per la creazione di pacchetti dei dati) nel sito Web MSDN.
+> Anche se questo argomento si applica solo ai file [Content_Type].xml usati nei pacchetti VSIX, il tipo di file [Content_Types].xml fa parte dello standard *Open Packaging Conventions (OPC).* Per altre informazioni, vedere [OPC: A New Standard for Packaging Your Data](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) nel sito Web MSDN.
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
- Le sezioni seguenti descrivono l'elemento radice e i relativi attributi ed elementi figlio.
+ Le sezioni seguenti descrivono l'elemento radice, i relativi attributi e gli elementi figlio.
 
 ### <a name="root-element"></a>Elemento radice
 
@@ -41,7 +42,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Xmlns`|(Obbligatorio). Percorso dello schema utilizzato per questo file [Content_Types].xml.|
+|`Xmlns`|(Obbligatorio). Percorso dello schema usato per questo file [Content_Types].xml.|
 
 ### <a name="attribute-name-attribute"></a>{Nome attributo} Attributo
 
@@ -60,7 +61,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Extension`|Estensione del nome file di un file nel pacchetto VSIX.|
+|`Extension`|Estensione di file di un file nel pacchetto VSIX.|
 |`ContentType`|Descrive il tipo di contenuto associato all'estensione di file.|
 
 ### <a name="attribute-name-attribute"></a>{Nome attributo} Attributo
@@ -101,7 +102,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 </Types>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Informazioni di riferimento sullo schema dell'estensione VSIX 1.0](/previous-versions/dd393700(v=vs.110))
-- [OPC: un nuovo standard per la creazione del pacchetto dei dati](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)
+- [OPC: un nuovo standard per la creazione di pacchetti dei dati](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

@@ -1,12 +1,13 @@
 ---
 title: Effettuare il refactoring di un campo in una proprietà
-description: Informazioni su come usare il menu azioni rapide e refactoring per convertire un campo in una proprietà.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per convertire un campo in una proprietà.
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
 dev_langs:
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd2c6c1946b900cc422060891537544f318bd994
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3c60840fcbf0953c308bec174c49058e7f94163e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882049"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062342"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring Incapsula campo
 
@@ -51,7 +52,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+E**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Incapsula campo**.
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
@@ -64,7 +65,7 @@ Questo refactoring si applica a:
    La proprietà viene creata e vengono aggiornati i riferimenti al campo, se selezionato.
 
    > [!TIP]
-   > Usare il collegamento **Anteprima modifiche** nella finestra popup [per vedere quale sarà il risultato prima del](../../ide/preview-changes.md) commit.
+   > Usare il **collegamento Anteprima modifiche** nella finestra popup per visualizzare il risultato [prima](../../ide/preview-changes.md) di eseguire il commit.
 
    - C#:
 

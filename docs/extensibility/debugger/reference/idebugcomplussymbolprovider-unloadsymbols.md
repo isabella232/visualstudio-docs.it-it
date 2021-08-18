@@ -1,5 +1,5 @@
 ---
-description: Scarica i simboli di debug per il modulo specificato dalla memoria.
+description: Scarica dalla memoria i simboli di debug per il modulo specificato.
 title: IDebugComPlusSymbolProvider::UnloadSymbols | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b57c4f9c0e58e8757ee7b2e89ed7e6e35337e5eca4fcbd7bf66bd55be39eefa7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cca0463c2b79d42b2af6d8da9d9f9e65bba49a40
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342401"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119685"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
-Scarica i simboli di debug per il modulo specificato dalla memoria.
+Scarica dalla memoria i simboli di debug per il modulo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ int UnloadSymbols(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::UnloadSymbols(

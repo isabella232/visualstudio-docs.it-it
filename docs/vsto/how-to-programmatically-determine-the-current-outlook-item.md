@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4be80a5b9e07e74432aafbb357df2a989c2d596ebbe2760e8430b462a36bec66
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d2f6ba1230ce306f742468d96c47dfdcf17b8d5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351850"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083233"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: determinare a livello di codice l'elemento Outlook corrente
   In questo esempio viene utilizzato l'evento per visualizzare il `Explorer.SelectionChange` nome della cartella corrente e alcune informazioni sull'elemento selezionato. Il codice visualizza quindi l'elemento selezionato.

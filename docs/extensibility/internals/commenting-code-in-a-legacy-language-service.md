@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d01cb64696e4f440ad0c92125dab0411c722371f2d86f478c5553f0f02f9e013
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 92df2305d35180be4fe3df594e809c8e599fad42
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321207"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102662"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Aggiungere commenti al codice in un servizio di linguaggio legacy
 I linguaggi di programmazione offrono in genere un modo per annotare o commentare il codice. Un commento è una sezione di testo che fornisce informazioni aggiuntive sul codice, ma viene ignorata durante la compilazione o l'interpretazione.

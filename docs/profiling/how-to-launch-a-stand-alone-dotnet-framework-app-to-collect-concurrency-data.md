@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9ed0972f96ef3d9ef8a5692943ca31548e3667f4ade64812990ba20ab5186cf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d0bc0d26c6d7232f0264455c9e4a2db987aef47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033473"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma .NET Framework e raccogliere dati di concorrenza di thread e processi

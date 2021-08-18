@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15026141a091b56c930628978007fa93833b80f0ded64df86d23eb091acfce06
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f1bfa6a64d8c48b92118d7a21fe9e10fce2e84c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358285"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041386"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Usare il codice C++ in Progettazione classi
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f17d6dd777b443a79f92d038d18199a6c95ec6b8d59e406cb97de88c13f80264
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 270adddde131adf43761ce384e21ff993f161e43
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121371601"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048505"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto
 È stato creato un gioco divertente, ma serve un elemento aggiuntivo per completare l'opera. Il gioco deve terminare quando il giocatore vince, pertanto è necessario aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.
@@ -41,7 +41,7 @@ ms.locfileid: "121371601"
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step8/cs/form1.cs" id="Snippet11":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step8/vb/form1.vb" id="Snippet11":::
 
-3. Salvare ed eseguire il programma. Giocare e accoppiare tutte le icone. Quando si vince, il programma visualizza un **messageBox** di congratulazioni (come illustrato nello screenshot seguente) e quindi chiude la casella.
+3. Salvare ed eseguire il programma. Giocare e accoppiare tutte le icone. Quando si vince, il programma visualizza un **MessageBox** di congratulazioni (come illustrato nello screenshot seguente) e quindi chiude la casella.
 
      ![Gioco di abbinamenti con MessageBox](../ide/media/express_tut4step8.png)<br/>
 ***Gioco corrispondente** _ _with* ***MessageBox***

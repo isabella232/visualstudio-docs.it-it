@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f84c9483da176a67d4636dd22a6cadee062e826eb82f06d561b6384aa17ad794
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7ea2673de387e8d10034dffc0fac8ce755f35e83
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055744"
 ---
-# <a name="learn-to-use-the-code-editor-for-javascript"></a>Informazioni sull'uso dell'editor di codice per JavaScript
+# <a name="learn-to-use-the-code-editor-for-javascript"></a>Informazioni su come usare l'editor di codice per JavaScript
 
 In questa breve introduzione all'editor di codice di Visual Studio viene illustrato in che modo Visual Studio semplifica la scrittura, la navigazione e la comprensione del codice.
 
 > [!TIP]
-> Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio. Per altre informazioni su come ottenere il servizio di linguaggio per TypeScript, vedere [Supporto di TypeScript](../javascript/javascript-in-vs-2019.md#typescript-support).
+> Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio. Per altre informazioni su come ottenere il servizio di linguaggio per TypeScript, vedere [Supporto di TypeScript.](../javascript/javascript-in-vs-2019.md#typescript-support)
 
 Questo articolo presuppone una certa familiarità con lo sviluppo di JavaScript. Se non è questo il caso, è consigliabile vedere prima l'esercitazione [Creare un progetto Node.js e un'app Express in Visual Studio](../javascript/tutorial-nodejs.md).
 
@@ -49,11 +49,11 @@ IntelliSense è una risorsa molto importante per la creazione di codice. Consent
 
 IntelliSense può visualizzare anche informazioni sui tipi quando si passa il mouse sugli elementi di programmazione.
 
-Per specificare informazioni di IntelliSense, il servizio di linguaggio può usare i file TypeScript *d.ts* e i commenti JSDoc. Per le librerie JavaScript più comuni, i file *d.ts* vengono acquisiti automaticamente. Per altre informazioni sull'acquisizione delle informazioni intelliSense, vedere [JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json). Se si è interessati alla programmazione AngularJS in Visual Studio, è possibile usare l'estensione del servizio di linguaggio [AngularJS](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio) per Visual Studio per ottenere IntelliSense.
+Per specificare informazioni di IntelliSense, il servizio di linguaggio può usare i file TypeScript *d.ts* e i commenti JSDoc. Per le librerie JavaScript più comuni, i file *d.ts* vengono acquisiti automaticamente. Per altri dettagli su come vengono acquisite le informazioni di IntelliSense, vedere [JavaScript IntelliSense.](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json) Se si è interessati alla programmazione AngularJS in Visual Studio, è possibile usare l'estensione del servizio di linguaggio [AngularJS](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio) per Visual Studio per ottenere IntelliSense.
 
 ## <a name="check-syntax"></a>Controllare la sintassi
 
-Il servizio di linguaggio usa ESLint per il controllo e il rilevamento di errori della sintassi. Se è necessario impostare le opzioni per il controllo della sintassi nell'editor, **selezionare** Opzioni  >    >  **strumenti JavaScript/TypeScript**  >  **Linting**. Le opzioni di rilevamento degli errori puntano al file di configurazione globale ESLint.
+Il servizio di linguaggio usa ESLint per il controllo e il rilevamento di errori della sintassi. Se è necessario impostare le opzioni per il controllo della sintassi nell'editor, selezionare Strumenti  >  **Opzioni**  >  **JavaScript/TypeScript**  >  **Linting**. Le opzioni di rilevamento degli errori puntano al file di configurazione globale ESLint.
 
 Nel codice seguente parte della sintassi viene evidenziata con una linea verde a zig zag all'interno dell'espressione. Spostare il puntatore del mouse sull'evidenziazione della sintassi.
 
@@ -67,7 +67,7 @@ Nel riquadro inferiore è possibile fare clic sulla scheda **Elenco errori** per
 
 È possibile correggere il codice aggiungendo la virgola (`,`) prima di `"data"`.
 
-Per altre informazioni sulla linting, vedere [Linting](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md).
+Per altre informazioni sul lint, vedere [Linting.](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md)
 
 ## <a name="comment-out-code"></a>Codice di impostazione come commento
 
@@ -79,15 +79,15 @@ I caratteri del commento di JavaScript `//` vengono aggiunti all'inizio di ogni 
 
 ## <a name="collapse-code-blocks"></a>Comprimere i blocchi di codice
 
-Se è necessario semplificare la visualizzazione di alcune aree del codice, è possibile comprimerlo. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga di una funzione. In caso contrario, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi del codice del costruttore e premere **CTRL** + **M**, **CTRL** + **M**.
+Se è necessario semplificare la visualizzazione di alcune aree del codice, è possibile comprimerlo. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga di una funzione. Oppure, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi del codice del costruttore e premere **CTRL** + **M**, **CTRL** + **M**.
 
 ![Pulsante di compressione evidenziato](../javascript/media/write-code-collapse-code.png)
 
-Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice, fare clic sulla stessa casella grigia in cui è ora presente un segno più oppure premere **di** nuovo CTRL + **M**, **CTRL** + **M.** Questa funzionalità è detta [Struttura](../ide/outlining.md) ed è particolarmente utile per comprimere funzioni molto lunghe o intere classi.
+Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice, fare clic sulla stessa casella grigia in cui è ora presente un segno più oppure premere di nuovo **CTRL** + **M**, **CTRL** + **M.** Questa funzionalità è detta [Struttura](../ide/outlining.md) ed è particolarmente utile per comprimere funzioni molto lunghe o intere classi.
 
 ## <a name="view-definitions"></a>Visualizzare le definizioni
 
-L Visual Studio editor semplifica l'ispezione della definizione di un tipo, di una funzione e così via. Un modo è passare al file che contiene la definizione, ad esempio scegliendo **Vai** a definizione in qualsiasi punto in cui viene fatto riferimento all'elemento di programmazione. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../ide/go-to-and-peek-definition.md#peek-definition). Prendiamo ad esempio la definizione del metodo `render` nell'esempio seguente.
+L Visual Studio editor semplifica l'analisi della definizione di un tipo, di una funzione e così via. Un modo è passare al file che contiene la definizione, ad esempio scegliendo Vai a **definizione** in qualsiasi punto in cui viene fatto riferimento all'elemento di programmazione. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../ide/go-to-and-peek-definition.md#peek-definition). Prendiamo ad esempio la definizione del metodo `render` nell'esempio seguente.
 
 Fare clic con il pulsante destro del mouse su `render` e scegliere **Visualizza definizione** dal menu del contenuto. In caso contrario, **premere ALT** + **F12.**
 
@@ -101,7 +101,7 @@ Chiudere la finestra di visualizzazione della definizione scegliendo la piccola 
 
 Visual Studio offre *frammenti di codice* utili che è possibile usare per generare in modo semplice e rapido blocchi di codice di uso comune. I [frammenti di codice](../ide/code-snippets.md) sono disponibili per vari linguaggi di programmazione, tra cui JavaScript. Ora verrà aggiunto un ciclo `for` al file di codice.
 
-Posizionare il cursore nel punto in cui si vuole inserire il frammento di codice, fare clic con il pulsante destro del mouse e scegliere **Inserisci**  >  **frammento di codice**.
+Posizionare il cursore nel punto in cui si vuole inserire il frammento di codice, fare clic con il pulsante destro del mouse e scegliere **Inserisci frammento**  >  **di codice.**
 
 ![Frammenti di codice in Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
@@ -117,7 +117,7 @@ for (var i = 0; i < length; i++) {
 }
 ```
 
-È possibile esaminare i frammenti di codice disponibili per il linguaggio scegliendo Modifica frammento di codice  >  **IntelliSense** e quindi  >  scegliendo la cartella del linguaggio.
+È possibile esaminare i frammenti di codice disponibili per il linguaggio scegliendo Modifica frammento di codice  >  **IntelliSense** Inserisci frammento e quindi scegliendo la  >  cartella del linguaggio.
 
 ## <a name="see-also"></a>Vedi anche
 

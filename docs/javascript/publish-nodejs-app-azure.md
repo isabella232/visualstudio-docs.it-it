@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2a3cad9500df712286c592c45c8c8ce03d96ea7f7d7eb4fca3cc1c0ecea7bb52
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 397374c1df912707d308acdf5df9fcdbc9d5221b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398759"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061506"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Pubblicare un'applicazione Node.js in Azure (Servizio app Linux)
 
@@ -42,13 +42,13 @@ In questa esercitazione verranno illustrate le procedure per:
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se non è già stato installato Visual Studio 2019, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio 2019, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
 
-    Se è necessario installare il carico di lavoro ma Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
     ![Carico di lavoro Node.js nel programma di installazione di Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 
@@ -66,7 +66,7 @@ In questa esercitazione verranno illustrate le procedure per:
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Node.js** e scegliere **Create new Basic Azure Node.js Express 4 application** (Crea nuova applicazione Basic Azure Node.js Express 4) (TypeScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **TypeScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
+    Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **Project**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **TypeScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
 
     ![Creare una nuova app rapida TypeScript](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -88,7 +88,7 @@ Per configurare GitHub per Visual Studio:
 
 1. Assicurarsi che sia installata l'[Estensione GitHub per Visual Studio](https://visualstudio.github.com/) e abilitata tramite la voce di menu **Strumenti** > **Estensioni e aggiornamenti**.
 
-2. Dal menu selezionare **Visualizza**  >  **altri Windows**  >  **GitHub**.
+2. Scegliere Visualizza **altro** dal menu  >  **Windows**  >  **GitHub**.
 
     Viene visualizzata la finestra di GitHub.
 

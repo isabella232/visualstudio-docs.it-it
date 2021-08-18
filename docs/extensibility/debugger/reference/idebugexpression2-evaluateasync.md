@@ -1,6 +1,6 @@
 ---
 description: Questo metodo valuta l'espressione in modo asincrono.
-title: 'IDebugExpression2:: EvaluateAsync | Microsoft Docs'
+title: IDebugExpression2::EvaluateAsync | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bea7a5a05dc5277e693d033452f0b4e7342ea946
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ad7d4c41aae0b1d48502fdb19865e737004696ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092423"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118879"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Questo metodo valuta l'espressione in modo asincrono.
@@ -44,23 +45,23 @@ int EvaluateAsync(
 
 ## <a name="parameters"></a>Parametri
 `dwFlags`\
-in Combinazione di flag dell'enumerazione [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) che controllano la valutazione dell'espressione.
+[in] Combinazione di flag [dell'enumerazione EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) che controllano la valutazione dell'espressione.
 
 `pExprCallback`\
-in Questo parametro è sempre un valore null.
+[in] Questo parametro è sempre un valore Null.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Un codice di errore tipico è:
 
 |Errore|Descrizione|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|È attualmente in corso la valutazione di un'altra espressione e la valutazione dell'espressione simultanea non è supportata.|
+|E_EVALUATE_BUSY_WITH_EVALUATION|È in corso la valutazione di un'altra espressione e la valutazione simultanea delle espressioni non è supportata.|
 
 ## <a name="remarks"></a>Commenti
-Questo metodo deve restituire immediatamente dopo l'avvio della valutazione dell'espressione. Quando l'espressione viene valutata correttamente, è necessario inviare un [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) al callback di evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) come fornito tramite [Connetti](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Connetti](../../../extensibility/debugger/reference/idebugengine2-attach.md).
+Questo metodo deve restituire immediatamente dopo l'avvio della valutazione dell'espressione. Quando l'espressione viene valutata correttamente, è necessario inviare un [oggetto IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) al callback dell'evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) come specificato tramite [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CExpression` oggetto semplice che implementa l'interfaccia [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CExpression` semplice che implementa [l'interfaccia IDebugExpression2.](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,

@@ -1,6 +1,6 @@
 ---
 description: Recupera il testo dalla posizione specificata nel documento.
-title: 'IDebugDocumentText2:: GetText | Microsoft Docs'
+title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e353643a193b999343c762cc0ba813f652ee2a6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e27190907911be82b2552d8ea057ed02693a356
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119425"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera il testo dalla posizione specificata nel documento.
@@ -48,22 +49,22 @@ int GetText(
 
 ## <a name="parameters"></a>Parametri
 `pos`\
-in Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che indica la posizione del testo da recuperare.
+[in] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che indica la posizione del testo da recuperare.
 
 `cMaxChars`\
-in Numero massimo di caratteri del testo da recuperare.
+[in] Numero massimo di caratteri del testo da recuperare.
 
 `pText`\
-[in, out] Puntatore a un buffer che deve essere compilato con il testo desiderato. Questo buffer deve essere in grado di contenere almeno un `cMaxChars` numero di caratteri wide.
+[in, out] Puntatore a un buffer che deve essere compilato con il testo desiderato. Questo buffer deve essere in grado di contenere almeno `cMaxChars` un numero di caratteri wide.
 
 `pcNumChars`\
-out Restituisce il numero di caratteri effettivamente recuperati.
+[out] Restituisce il numero di caratteri effettivamente recuperati.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Questo esempio mostra in che modo questo metodo può essere chiamato da C#.
+Questo esempio illustra come questo metodo può essere chiamato da C#.
 
 ```csharp
 using System.Runtime.Interop.Services;

@@ -1,6 +1,6 @@
 ---
 title: Periodo di I/O (visualizzazione dei thread) | Microsoft Docs
-description: Informazioni sulle modalità di associazione dei segmenti di tempo di I/O a tempi di blocco categorizzati come I/O, il che significa che un thread è in attesa del completamento di un'operazione di I/O.
+description: Informazioni su come i segmenti di tempo di I/O sono associati ai tempi di blocco classificati come I/O, il che significa che un thread è in attesa del completamento di un'operazione di I/O.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 0c4ec14d-d8dd-49c1-999c-dcbf4e8e1dc8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e147d97616f846339dc12e3941f6944f277d8318
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 527ab5a69de0698ac876adf2e7b75d540e7e51a3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060947"
 ---
 # <a name="io-time-threads-view"></a>Tempo di I/O (visualizzazione thread)
 Questi segmenti nella sequenza temporale sono associati ai periodi di blocco categorizzati come I/O. Ciò significa che un thread è in attesa del completamento di un'operazione di I/O. È possibile che il thread sia stato bloccato in un'API oppure da un tempo di attesa del kernel correlato all'I/O che il visualizzatore di concorrenza conteggia come I/O. Le interfacce API `CreateFile()`, `ReadFile()` e `WSARecv()` rientrano in questo gruppo.

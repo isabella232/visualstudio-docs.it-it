@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia rappresenta un documento di testo.
-title: IDebugDocumentText2 | Microsoft Docs
+title: Interfaccia IDebugDocumentText2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffb2aa817caff01b598bc789c6aaa8b7dbacfcd1d3d590a7715f6be4e18d1121
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ffa88c04333243ba016477e98a216bf957616ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417340"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119412"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Questa interfaccia rappresenta un documento di testo.
@@ -45,7 +45,7 @@ IDebugDocumentText2 : IDebugDocument2
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Recupera il testo dalla posizione specificata nel documento.|
 
 ## <a name="remarks"></a>Commenti
- Un oggetto che implementa questa interfaccia deve implementare anche l'interfaccia , che <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> fornisce l'interfaccia per un oggetto <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> [IDebugDocumentTextEvents2.](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
+ Un oggetto che implementa questa interfaccia deve implementare anche l'interfaccia , che fornisce <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> l'interfaccia per un oggetto <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> [IDebugDocumentTextEvents2.](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

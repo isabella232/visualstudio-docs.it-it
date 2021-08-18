@@ -2,19 +2,19 @@
 title: ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools 2017
 titleSuffix: ''
 description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio per creare applicazioni basate su Windows classiche
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: b3fe0d729902ea454d9f81e51e4957bf2c7d37d1
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 5fba0770a7c3832f270e060a8625f33210651f0e15651dfb0ce458879918d1e9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449805"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122055847"
 ---
 ## <a name="azure-development-build-tools"></a>Strumenti di compilazione sviluppo di Azure
 

@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Chiudere documenti Visio a livello di codice'
-description: Informazioni su come chiudere il documento attivo Microsoft Office Visio usando il Microsoft.Office.Interop.Visio.Document. Metodo Close.
+title: 'Procedura: Chiudere documenti di Visio a livello di codice'
+description: Informazioni su come chiudere il Microsoft Office Visio attivo usando il Microsoft.Office.Interop.Visio.Docpubblicazione. Metodo Close.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,14 +16,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 625b0c6aa9ebf728945afa01655f641a779c1422686c055c986140646c99b0fa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c48b814629e01e370696bb30f8ee15af60098ec3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423956"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046646"
 ---
-# <a name="how-to-programmatically-close-visio-documents"></a>Procedura: Chiudere documenti Visio a livello di codice
+# <a name="how-to-programmatically-close-visio-documents"></a>Procedura: Chiudere documenti di Visio a livello di codice
   Per chiudere il documento attivo di Microsoft Office Visio, è possibile usare il metodo `Microsoft.Office.Interop.Visio.Document.Close`.
 
  Per informazioni dettagliate su questo metodo, vedere la documentazione di riferimento di VBA relativa al metodo [Microsoft.Office.Interop.Visio.Document.Close](/office/vba/api/Visio.Document.Close) .
@@ -42,7 +42,7 @@ ms.locfileid: "121423956"
 ## <a name="see-also"></a>Vedi anche
 - [Visio soluzioni](../vsto/visio-solutions.md)
 - [Visio panoramica del modello a oggetti](../vsto/visio-object-model-overview.md)
-- [Procedura: Creare nuovi documenti Visio codice](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Procedura: Aprire documenti Visio a livello di codice](../vsto/how-to-programmatically-open-visio-documents.md)
-- [Procedura: Salvare documenti Visio codice](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Procedura: Stampare documenti Visio codice](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Procedura: Creare nuovi documenti di Visio a livello di codice](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Procedura: Aprire documenti di Visio a livello di codice](../vsto/how-to-programmatically-open-visio-documents.md)
+- [Procedura: Salvare documenti di Visio a livello di codice](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Procedura: Stampare documenti di Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)

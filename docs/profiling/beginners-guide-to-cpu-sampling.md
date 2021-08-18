@@ -18,12 +18,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 78907673a1175542cb1384e3a0bfffa5639f4a9d5f455cdd50d57fab42693f87
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8187b7543ba603cd23239a463b1ae9875e46c09e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108122"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.

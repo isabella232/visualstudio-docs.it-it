@@ -10,12 +10,13 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: c93c636d8321affead3c3fce6f3074801cb9ae87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 0f85602761444283f13a32ef3709a1e417c46d9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882648"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047413"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: Selezionare l'impostazione di esecuzione test attiva per un test di carico
 
@@ -26,7 +27,7 @@ Dopo avere creato il test di carico mediante la **Creazione guidata test di cari
 In un test di carico possono essere contenute una o più *impostazioni esecuzione test*, ovvero un set di proprietà che determinano la modalità di esecuzione del test di carico. Sono organizzate in categorie nella finestra **Proprietà**. Quando si esegue un test di carico, viene utilizzata l'impostazione esecuzione test impostata correntemente come attiva.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà delle impostazioni esecuzione test e delle relative descrizioni, vedere [proprietà delle impostazioni esecuzione test di carico](../test/load-test-run-settings-properties.md).
+> Per un elenco completo delle proprietà delle impostazioni di esecuzione e delle relative descrizioni, vedere [Proprietà delle impostazioni esecuzione test di carico](../test/load-test-run-settings-properties.md).
 
 Se il test di carico contiene solo un nodo di impostazioni di esecuzione nella cartella **Impostazioni di esecuzione**, il nodo sarà sempre il nodo attivo. Se il test di carico contiene più nodi di impostazioni di esecuzione, è possibile selezionare quello da utilizzare per l'esecuzione di un test di carico. Vedere [Procedura: Aggiungere impostazioni di esecuzione a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 

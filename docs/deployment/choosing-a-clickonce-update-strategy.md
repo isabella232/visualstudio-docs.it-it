@@ -1,6 +1,6 @@
 ---
-title: Scelta di una strategia di aggiornamento ClickOnce | Microsoft Docs
-description: Informazioni su come un'applicazione ClickOnce supporta gli aggiornamenti automatici e le strategie di aggiornamento che è possibile usare.
+title: Scelta di una ClickOnce di aggiornamento | Microsoft Docs
+description: Informazioni su come ClickOnce'applicazione supporta gli aggiornamenti automatici e sulle strategie di aggiornamento che è possibile usare.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,14 +16,15 @@ ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cfe475c3d608acb0fb2fb513e740879e9a38bad6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895076"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133783"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Scegliere una strategia di aggiornamento ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può fornire il supporto per gli aggiornamenti automatici delle applicazioni. Un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] legge periodicamente il file manifesto di distribuzione per verificare l'eventuale disponibilità di aggiornamenti. In caso affermativo, la nuova versione dell'applicazione viene scaricata ed eseguita. Per maggiore efficienza, vengono scaricati solo i file che risultano modificati.
@@ -36,9 +37,9 @@ ms.locfileid: "99895076"
 > Per gli aggiornamenti dell'applicazione è necessario disporre della connettività di rete. In assenza di una connessione di rete, l'applicazione verrà eseguita senza il controllo della disponibilità di aggiornamenti, indipendentemente dalla strategia di aggiornamento prescelta.
 
 > [!NOTE]
-> In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di \<xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. L' `deploymentProvider` elemento corrisponde a Visual Studio al campo **percorso aggiornamento** nella finestra di dialogo **aggiornamenti** della scheda **pubblica** . Questa regola è rilassata in .NET Framework 3,5. Per ulteriori informazioni, vedere [distribuzione di applicazioni ClickOnce per i server di test e di produzione senza](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)eseguire la firma.
+> In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di \<xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. L'elemento corrisponde Visual Studio al campo Percorso di aggiornamento della finestra di dialogo `deploymentProvider` Aggiornamenti della **scheda** Pubblica.   Questa regola è disponibile in .NET Framework 3.5. Per altre informazioni, vedere Distribuzione di applicazioni ClickOnce per i server di test e [di produzione senza dimettersi.](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 
-## <a name="check-for-updates-after-application-startup"></a>Verifica la disponibilità di aggiornamenti dopo l'avvio dell'applicazione
+## <a name="check-for-updates-after-application-startup"></a>Verificare la disponibilità di aggiornamenti dopo l'avvio dell'applicazione
  Se si utilizza questa strategia, l'applicazione tenterà di individuare e leggere il file manifesto di distribuzione in background, mentre è in esecuzione. Se è disponibile un aggiornamento, la volta successiva che l'utente eseguirà l'applicazione verrà chiesto di scaricarlo e installarlo.
 
  Questa strategia risulta più adatta a connessioni di rete con larghezza di banda limitata o ad applicazioni di maggiori dimensioni che possono richiedere lunghi tempi di download.
@@ -74,7 +75,7 @@ ms.locfileid: "99895076"
 </subscription>
 ```
 > [!NOTE]
-> Per le applicazioni .NET 3,1 e versioni successive, il controllo degli aggiornamenti prima che l'applicazione venga avviata è l'unica opzione di aggiornamento supportata.
+> Per le applicazioni .NET 3.1 e versioni più recenti, il controllo degli aggiornamenti prima dell'avvio dell'applicazione è l'unica opzione di aggiornamento supportata.
 
 ## <a name="make-updates-required"></a>Rendere necessari gli aggiornamenti
  In alcuni casi può essere necessario richiedere agli utenti di eseguire una versione aggiornata dell'applicazione. È ad esempio possibile che sia stata apportata una modifica a una risorsa esterna, quale un servizio Web, che impedisce il corretto funzionamento dell'applicazione. In tal caso, può essere opportuno contrassegnare l'aggiornamento come obbligatorio e impedire che gli utenti eseguano la versione precedente.
@@ -106,10 +107,10 @@ ms.locfileid: "99895076"
 
  Questa strategia risulta più adatta quando sono necessarie strategie di aggiornamento differenti per utenti differenti.
 
-## <a name="block-update-checking"></a>Blocca il controllo degli aggiornamenti
+## <a name="block-update-checking"></a>Bloccare il controllo degli aggiornamenti
  È anche possibile impedire all'applicazione di effettuare il controllo della disponibilità di aggiornamenti. Questo può essere utile, ad esempio, quando si dispone di un'applicazione semplice che non verrà mai aggiornata, ma si desidera trarre vantaggio dalla semplicità di installazione offerta dalla distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
- È inoltre consigliabile bloccare il controllo degli aggiornamenti se l'applicazione usa API di distribuzione per eseguire i propri aggiornamenti; vedere "fornire un'interfaccia utente per gli aggiornamenti" più indietro in questo argomento.
+ È anche necessario bloccare il controllo degli aggiornamenti se l'applicazione usa le API di distribuzione per eseguire i propri aggiornamenti. vedere "Fornire un'interfaccia utente per gli aggiornamenti" più indietro in questo argomento.
 
  Per bloccare il controllo della disponibilità di aggiornamenti, deselezionare la casella di controllo **Controlla aggiornamenti dell'applicazione** nella finestra di dialogo Aggiornamenti applicazione.
 

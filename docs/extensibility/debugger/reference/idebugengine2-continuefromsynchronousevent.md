@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 795de0521d4ea33b54cf8875e45a74a8ff61ab64a59eb664c73d96ac9e73822d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1febf6a5e473d0e67b2625e0d684479ecb74890
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261762"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119152"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Chiamato dal gestore di debug della sessione (SDM) per indicare che è stato ricevuto ed elaborato un evento di debug sincrono, inviato in precedenza dal motore di debug (DE) a SDM.
@@ -49,7 +49,7 @@ HRESULT ContinueFromSynchronousEvent(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Il de deve verificare che sia l'origine dell'evento rappresentato dal `pEvent` parametro .
+De deve verificare che sia l'origine dell'evento rappresentato dal `pEvent` parametro .
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CEngine` semplice che implementa [l'interfaccia IDebugEngine2.](../../../extensibility/debugger/reference/idebugengine2.md)

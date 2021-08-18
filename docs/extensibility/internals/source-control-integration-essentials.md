@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00015c08a95e0fea62911942f996817d115ceaeedc04a677dfc2cc36597d78db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c3a74b54d332f7ae8176702cf1744fb576e19afd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401167"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034571"
 ---
 # <a name="source-control-integration-essentials"></a>Nozioni fondamentali sull'integrazione del controllo del codice sorgente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di integrazione del controllo del codice sorgente: un plug-in del controllo del codice sorgente che fornisce funzionalità di base e viene compilato usando l'API plug-in del controllo del codice sorgente (precedentemente nota come API MSSCCI) e una soluzione di integrazione del controllo del codice sorgente basata su VSPackage che fornisce funzionalità più affidabili.
@@ -32,7 +32,7 @@ ms.locfileid: "121401167"
 
 1. Creare una DLL che implementa le funzioni specificate nei [plug-in del controllo del codice sorgente.](../../extensibility/source-control-plug-ins.md)
 
-2. Registrare la DLL impostando le voci del Registro di sistema appropriate, come descritto in [Procedura: Installare un plug-in del controllo del codice sorgente.](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+2. Registrare la DLL effettuando le voci del Registro di sistema appropriate, come descritto in [Procedura: Installare un plug-in del controllo del codice sorgente.](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 
 3. Creare un'interfaccia utente helper e visualizzarla quando richiesto dal pacchetto dell'adattatore di controllo del codice sorgente (il componente che gestisce la funzionalità di controllo del codice sorgente tramite [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] plug-in del controllo del codice sorgente).
 
@@ -49,7 +49,7 @@ ms.locfileid: "121401167"
 
 3. Specificare i glifi da usare e gestire **Esplora soluzioni** glifi. Vedere [Controllo glifi.](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 
-4. Gestire gli eventi Di modifica query e Salvataggio query, come illustrato in [Query Edit Query Save](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).
+4. Gestire gli eventi Di modifica query e Salva query, come illustrato in [Query Edit Query Save](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).
 
    Per altre informazioni, vedere Creazione [di un pacchetto VSPackage del controllo del codice sorgente.](../../extensibility/internals/creating-a-source-control-vspackage.md)
 

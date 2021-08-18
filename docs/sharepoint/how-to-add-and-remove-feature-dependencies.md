@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d0e2a1ad31543e9248502e822c3905e274887c463cba5fe4c63c0b4c4acbb5c1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 30df44d4972f596204c5c6c9fd4a91ee23948c99
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425297"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093073"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Procedura: Aggiungere e rimuovere dipendenze di funzionalità
   La SharePoint può dipendere da altre funzionalità per funzionalità o dati. In questi casi, è possibile contrassegnare queste altre funzionalità come dipendenze per la funzionalità. In questo modo, il server SharePoint verifica che le funzionalità dipendenti siano attivate prima dell'attivazione della funzionalità.

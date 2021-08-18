@@ -1,6 +1,6 @@
 ---
-title: '&lt;Elemento Strings &gt; (Bootstrapper) | Microsoft Docs'
-description: L'elemento Strings definisce le stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti e i messaggi di errore di installazione.
+title: '&lt;Elemento &gt; Strings (bootstrapper) | Microsoft Docs'
+description: L'elemento Strings definisce stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti e i messaggi di errore di installazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,16 +18,17 @@ ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c8cac705f4e6ae8d72f3a2e9bd5ec4c8ed68bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c962435431164f78e542d9186bfe44c4659a3923
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877473"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073708"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Elemento Strings &gt; (programma di avvio automatico)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Elemento &gt; Strings (programma di avvio automatico)
 Definisce le stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti e i messaggi di errore di installazione.
 
 ## <a name="syntax"></a>Sintassi
@@ -42,10 +43,10 @@ Definisce le stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti 
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- L' `Strings` elemento è un elemento figlio dell' `Package` elemento. Non ha attributi.
+ `Strings`L'elemento è un elemento figlio dell'elemento `Package` . Non ha attributi.
 
 ## <a name="string"></a>string
- L' `String` elemento è un elemento figlio dell' `Strings` elemento. Un `Strings` elemento può contenere uno o più `String` elementi.
+ `String`L'elemento è un elemento figlio dell'elemento `Strings` . Un `Strings` elemento può avere uno o più `String` elementi.
 
  `String` ha l'attributo seguente.
 
@@ -54,7 +55,7 @@ Definisce le stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti 
 |`Name`|Obbligatorio. Nome della stringa.|
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente vengono specificate tutte le stringhe inglesi per il programma di installazione .NET Framework.
+ Nell'esempio di codice seguente vengono specificate tutte le stringhe in lingua inglese per il .NET Framework programma di installazione.
 
 ```xml
 <Strings>
@@ -76,4 +77,4 @@ Definisce le stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti 
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [\<Package> elemento](../deployment/package-element-bootstrapper.md)
+- [\<Package> Elemento](../deployment/package-element-bootstrapper.md)

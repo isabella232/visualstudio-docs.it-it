@@ -1,6 +1,6 @@
 ---
 title: Avvio di una compilazione all'interno dell'IDE | Microsoft Docs
-description: Informazioni su come usare Microsoft. VisualStudio. Shell. Interop. IVsBuildManagerAccessor per avviare le compilazioni per i sistemi di progetto personalizzati.
+description: Informazioni su come usare Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor per avviare le compilazioni per i sistemi di progetto personalizzati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee685ebf542dbf9405afce8cfdf5c4a7e060b79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e8c13ca9d8c5cbbb42e11ca9c17d4c5b1381dcba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093627"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Avvio di una compilazione all'interno dell'IDE
 
@@ -25,7 +26,7 @@ I sistemi di progetto personalizzati devono usare <xref:Microsoft.VisualStudio.S
 
 ## <a name="parallel-builds-and-threads"></a>Compilazioni parallele e thread
 
- Visual Studio consente le compilazioni parallele, che richiedono la mediazione per l'accesso alle risorse comuni. I sistemi di progetto sono in grado di eseguire le compilazioni in modo asincrono, ma non devono chiamare le funzioni di compilazione dall'interno di callback.
+ Visual Studio le compilazioni parallele, che richiedono l'accesso alle risorse comuni. I sistemi di progetto sono in grado di eseguire le compilazioni in modo asincrono, ma non devono chiamare le funzioni di compilazione dall'interno di callback.
 
  Se il sistema di progetto modifica le variabili di ambiente, è necessario impostare il valore NodeAffinity della compilazione su OutOfProc. Il requisito implica che non è possibile usare oggetti host, poiché richiedono il nodo in-process.
 
