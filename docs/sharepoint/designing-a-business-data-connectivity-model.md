@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d7f8fec702baa493183753c2f23f945842f48bc3b9fbbad80833e33a3ea6c313
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 831fe9dfe29744a395dc07a7c3d2d0ac901a43ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121353007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060193"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Progettare un modello di connettività dei dati aziendali
   È possibile sviluppare un modello per il servizio BDC (Business Data Connectivity) aggiungendo entità e metodi a un file di modello. Un'entità descrive una raccolta di campi dati. Ad esempio, un'entità può rappresentare una tabella in un database. Un metodo esegue un'attività, ad esempio l'aggiunta, l'eliminazione o l'aggiornamento dei dati rappresentati dalle entità. Per altre informazioni, vedere [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -64,7 +64,7 @@ ms.locfileid: "121353007"
 
  La **proprietà Descrittore del tipo** associato mette in relazione il descrittore di filtro con un parametro di input. Quando un utente fornisce un valore di filtro, il servizio BDC passa tale valore al metodo usando il parametro di input .
 
- La **proprietà Type** descrive il criterio di filtro che si vuole usare. In SharePoint, il criterio di filtro selezionato influisce sul testo visualizzato nell'Interfaccia utente (interfaccia utente). Ad esempio, per un criterio di filtro Comparator, il testo è **uguale** a viene visualizzato come controllo sopra una web part dati business. Per altre informazioni su ogni criterio di filtro, vedere [Tipi di filtri supportati dal BDC.](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))
+ La **proprietà Type** descrive il criterio di filtro che si vuole usare. In SharePoint, il criterio di filtro selezionato influisce sul testo visualizzato nell'Interfaccia utente (interfaccia utente). Ad esempio, per un criterio di  filtro Comparator, il testo è uguale a viene visualizzato come controllo sopra una web part dati business. Per altre informazioni su ogni criterio di filtro, vedere [Tipi di filtri supportati dal BDC.](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))
 
  Per altre informazioni sulle proprietà di un descrittore di filtro, vedere [FilterDescriptor](/previous-versions/office/developer/sharepoint-2010/ee557835(v=office.14)).
 
@@ -72,7 +72,7 @@ ms.locfileid: "121353007"
  In alcuni casi, l'utente potrebbe non fornire un valore di filtro. È possibile specificare un valore predefinito aggiungendo un valore predefinito all'istanza del metodo o impostando il valore predefinito nel codice del metodo. Per altre informazioni su come aggiungere un valore predefinito all'istanza del metodo, vedere [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)). Per un esempio di come impostare il valore predefinito di un parametro di input nel codice del metodo, vedere [Procedura: Aggiungere](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)un descrittore di filtro a un metodo Finder .
 
 ## <a name="validate-the-model"></a>Convalidare il modello
- È possibile convalidare il modello durante lo sviluppo. Visual Studio identifica i problemi che possono impedire il comportamento del modello come previsto. Questi problemi vengono visualizzati nell'elenco Visual Studio **errori .**
+ È possibile convalidare il modello durante lo sviluppo. Visual Studio identifica i problemi che possono impedire il comportamento del modello come previsto. Questi problemi vengono visualizzati nell'Visual Studio **degli errori.**
 
  È possibile convalidare un modello aprendo il menu di scelta rapida per Progettazione integrazione applicativa dei dati e quindi scegliendo **Convalida**. Se il modello contiene errori, vengono visualizzati **nell'Elenco errori**. È possibile spostare rapidamente il cursore sul codice contenente un errore facendo doppio clic sull'errore nell'elenco. In alternativa, è possibile premere  **ripetutamente F8** o MAIUSC F8 per spostarsi avanti o indietro tra gli +  errori nell'elenco.
 

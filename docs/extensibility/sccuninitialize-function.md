@@ -11,14 +11,15 @@ ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d46aedd3e962d0684689ff29a34061b777fe08e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 56d2365df1e613976943bd8ba33f6d49a32566f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904074"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117592"
 ---
 # <a name="sccuninitialize-function"></a>Funzione SccUninitialize
 Questa funzione pulisce tutte le allocazioni o le connessioni aperte create da una chiamata precedente a [SccInitialize](../extensibility/sccinitialize-function.md) in preparazione dell'arresto del plug-in del controllo del codice sorgente.
@@ -46,6 +47,6 @@ SCCRTN SccUninitialize (
 ## <a name="remarks"></a>Commenti
  Il plug-in di controllo del codice sorgente è responsabile della preparazione per l'arresto e della liberazione della memoria allocata dal plug-in per la struttura del contesto. La funzione viene chiamata una volta per ogni istanza specifica di un plug-in. Una chiamata a [SccInitialize](../extensibility/sccinitialize-function.md) precede questa chiamata. Nessun progetto può essere ancora aperto al momento della chiamata a `SccUninitialize` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

@@ -13,22 +13,22 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea5186872232f3c84ac41567938ea5822915746b37adafffe7263077d3c87b43
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02f30713513715df87dff72418328b46e795ec16
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121260371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117605"
 ---
 # <a name="simplified-embedding"></a>Incorporamento semplificato
-L'incorporamento semplificato è abilitato in un editor quando il relativo oggetto visualizzazione documento è associato a (ovvero è reso figlio di) e l'interfaccia viene implementata per gestire i relativi comandi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> della finestra. Gli editor di incorporamento semplificati non possono ospitare controlli attivi. Gli oggetti utilizzati per creare un editor con incorporamento semplificato sono illustrati nella figura seguente.
+L'incorporamento semplificato viene abilitato in un editor quando il relativo oggetto visualizzazione documento è padre di (ovvero è reso figlio di ) e l'interfaccia viene implementata per gestire i comandi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> della finestra. Gli editor di incorporamento semplificati non possono ospitare controlli attivi. Gli oggetti usati per creare un editor con incorporamento semplificato sono illustrati nella figura seguente.
 
  ![Immagine dell'editor di incorporamento semplificato](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor") Editor con incorporamento semplificato
 
 > [!NOTE]
-> Tra gli oggetti in questa illustrazione, solo `CYourEditorFactory` l'oggetto è necessario per creare un editor standard basato su file. Se si crea un editor personalizzato, non è necessario implementare , perché è probabile che l'editor abbia <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> un proprio meccanismo di persistenza privato. Per gli editor non personalizzati, tuttavia, è necessario farlo.
+> Degli oggetti in questa figura, solo `CYourEditorFactory` l'oggetto è necessario per creare un editor standard basato su file. Se si crea un editor personalizzato, non è necessario implementare , perché è probabile che l'editor abbia <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> un proprio meccanismo di persistenza privato. Per gli editor non personalizzati, tuttavia, è necessario eseguire questa operazione.
 
- Tutte le interfacce implementate per creare un editor con incorporamento semplificato sono contenute `CYourEditorDocument` nell'oggetto . Tuttavia, per supportare più visualizzazioni dei dati del documento, suddividere le interfacce in oggetti dati e oggetti visualizzazione separati, come indicato nella tabella seguente.
+ Tutte le interfacce implementate per creare un editor con incorporamento semplificato sono contenute `CYourEditorDocument` nell'oggetto . Tuttavia, per supportare più visualizzazioni dei dati del documento, suddividere le interfacce in oggetti dati e visualizzazione separati, come indicato nella tabella seguente.
 
 |Interfaccia|Posizione dell'interfaccia|Uso|
 |---------------|---------------------------|---------|

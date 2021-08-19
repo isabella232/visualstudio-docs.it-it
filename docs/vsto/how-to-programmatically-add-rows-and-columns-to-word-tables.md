@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cc4064677d35ada2a03baa1b4212a101bb6bd9a6df20f797596f9c31a961567e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6bf994d622384e52aa98f0192234a749c66ebf24
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083310"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procedura: Aggiungere righe e colonne alle tabelle di Word a livello di codice
   In una tabella di Microsoft Office Word le celle sono organizzate in righe e colonne. È possibile usare il metodo <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Rows> per aggiungere righe alla tabella e il metodo <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Columns> per aggiungere colonne.
@@ -41,7 +41,7 @@ ms.locfileid: "121424008"
 > - Documento di Word 2010
 > - Modello di Word 2010
 >
->   Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento a **Microsoft.Office. Assembly Interop.Word,** quindi è necessario usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione Office applicazioni tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari [di Word 2010.](office-primary-interop-assemblies.md)
+>   Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento a **Microsoft.Office. Assembly Interop.Word** ed è quindi necessario usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione Office applicazioni tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari [di Word 2010.](office-primary-interop-assemblies.md)
 
 ### <a name="to-add-a-row-to-a-table"></a>Per aggiungere una riga a una tabella
 
@@ -63,7 +63,7 @@ ms.locfileid: "121424008"
 > [!IMPORTANT]
 > Questo codice viene eseguito solo in progetti creati usando modelli di componente aggiuntivo VSTO per Word.
 >
-> Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento a **Microsoft.Office. Assembly Interop.Word,** quindi è necessario usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione Office applicazioni tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari [di Word 2010.](office-primary-interop-assemblies.md)
+> Se si vuole eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento a **Microsoft.Office. Assembly Interop.Word** ed è quindi necessario usare le classi di tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Impostare](how-to-target-office-applications-through-primary-interop-assemblies.md) come destinazione Office applicazioni tramite assembly di interoperabilità primari e Informazioni di riferimento sugli assembly di interoperabilità primari [di Word 2010.](office-primary-interop-assemblies.md)
 
 ### <a name="to-add-a-row-to-a-table"></a>Per aggiungere una riga a una tabella
 
@@ -82,4 +82,4 @@ ms.locfileid: "121424008"
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Creare tabelle di Word a livello di codice](how-to-programmatically-create-word-tables.md)
 - [Procedura: Aggiungere testo e formattazione alle celle nelle tabelle di Word a livello di codice](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [Procedura: Popolare tabelle di Word con proprietà di documento a livello di codice](how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [Procedura: Popolare a livello di codice le tabelle di Word con le proprietà del documento](how-to-programmatically-populate-word-tables-with-document-properties.md)
