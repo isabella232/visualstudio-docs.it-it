@@ -1,5 +1,5 @@
 ---
-title: Non è possibile eliminare il metodo di backup
+title: Impossibile eliminare il metodo di backup
 description: Questo metodo correlato è il metodo sottostante per i seguenti metodi predefiniti di inserimento, aggiornamento o eliminazione
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -8,31 +8,32 @@ ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94e9f1f91aa5c879e0e3ed0034e0d1f554901513
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8dcf07340584a3103a854dae3ffa7787cabee448
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866372"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129909"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Questo metodo correlato è il metodo sottostante per i seguenti metodi predefiniti di inserimento, aggiornamento o eliminazione
 
-Questo metodo correlato è il metodo sottostante per i seguenti `Insert` metodi predefiniti, `Update` o `Delete` . Se viene eliminato, verranno eliminati anche questi metodi. Continuare?
+Questo metodo correlato è il metodo di supporto per i metodi `Insert` `Update` , o predefiniti `Delete` seguenti. Se viene eliminato, verranno eliminati anche questi metodi. Continuare?
 
-Il `DataContext` metodo selezionato è attualmente usato come uno dei `Insert` metodi, `Update` o `Delete` per una delle classi di entità in **Progettazione relazionale di o/R**. Se si elimina il metodo selezionato, la classe di entità che utilizza questo metodo ripristina il comportamento predefinito della fase di esecuzione per l'esecuzione dell'istruzione INSERT, Update o DELETE durante un aggiornamento.
+Il metodo selezionato viene attualmente usato come uno dei metodi , o per una delle classi di `DataContext` `Insert` entità in `Update` `Delete` **O/R Designer.** Se si elimina il metodo selezionato, la classe di entità che usa questo metodo ripristina il comportamento di run-time predefinito per l'esecuzione dell'inserimento, dell'aggiornamento o dell'eliminazione durante un aggiornamento.
 
-## <a name="selected-method-options"></a>Opzioni metodo selezionate
+## <a name="selected-method-options"></a>Opzioni del metodo selezionate
 
-- Per eliminare il metodo selezionato, facendo in modo che la classe di entità usi gli aggiornamenti del runtime, fare clic su **Sì**.
+- Per eliminare il metodo selezionato, facendo in modo che la classe di entità usi gli aggiornamenti di runtime, fare clic su **Sì**.
 
-   Il metodo selezionato viene eliminato e tutte le classi che utilizzano questo metodo per eseguire l'override del comportamento di aggiornamento vengono ripristinate in base al comportamento predefinito della fase di esecuzione LINQ to SQL.
+   Il metodo selezionato viene eliminato e tutte le classi che hanno usato questo metodo per eseguire l'override del comportamento di aggiornamento vengono ripristinate usando il comportamento LINQ to SQL in fase di esecuzione.
 
-- Per chiudere la finestra di messaggio lasciando invariato il metodo selezionato, fare clic su **No**.
+- Per chiudere la finestra di messaggio, lasciando invariato il metodo selezionato, fare clic su **No**.
 
    La finestra di messaggio viene chiusa e non vengono apportate modifiche.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL strumenti in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

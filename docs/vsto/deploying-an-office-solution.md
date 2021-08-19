@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a4040e67c52d8c05ce5f8e2c9359848fd4fd73b94eb0f2ba91b48ced61e69e4a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2345e66ac6d13e4110db7b660d227963bf7abae1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424372"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130676"
 ---
 # <a name="deploy-an-office-solution"></a>Distribuire una soluzione Office distribuzione
   È possibile distribuire le soluzioni Office utilizzando ClickOnce o Windows Installer. L'utilizzo di ClickOnce consente di ridurre il numero di passaggi necessari per la distribuzione e l'aggiornamento della soluzione. Se si utilizza Windows Installer, viene mantenuto il controllo sulla modalità di installazione della soluzione e sulle pagine del programma di installazione che vengono visualizzate quando gli utenti installano la soluzione.
@@ -47,5 +47,5 @@ ms.locfileid: "121424372"
 ## <a name="see-also"></a>Vedi anche
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Distribuire una Office di distribuzione usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Distribuire una soluzione Office usando il programma di Windows di installazione](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)
+- [Distribuire una soluzione Office usando il programma di installazione Windows](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)
 - [Risolvere i Office distribuzione della soluzione](../vsto/troubleshooting-office-solution-deployment.md)

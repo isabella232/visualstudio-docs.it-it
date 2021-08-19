@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 369acd0f0b459aa4d5e5691c0159087c0bdf152edeb5388d3f62d3978f58ac30
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e16519a4c2545db6fae8cc69bbdc8d32e6ac164f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431461"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158268"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funzioni API del plug-in del controllo del codice sorgente
 L'API plug-in del controllo del codice sorgente fornisce le funzioni seguenti, che devono essere implementate dal plug-in di controllo del codice sorgente in conformità con questa API. Le firme di ogni funzione e la semantica associata ai flag di bit e ad altri parametri sono descritte in dettaglio in questo riferimento.
@@ -81,12 +81,12 @@ L'API plug-in del controllo del codice sorgente fornisce le funzioni seguenti, c
 |[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Recupera i flag che specificano le funzionalità estese supportate dal plug-in del controllo del codice sorgente.|
 |[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|Recupera le opzioni specifiche dell'utente.|
 |[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Esamina un elenco di directory e file in uno o più progetti nel controllo del codice sorgente. Ogni directory e nome file trovato viene passato a una funzione di callback.|
-|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Esamina le modifiche dei nomi apportate a un elenco di file. Ogni nome file viene passato a una funzione di callback con il relativo stato di modifica.|
+|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Esamina le modifiche al nome apportate a un elenco di file. Ogni nome file viene passato a una funzione di callback con il relativo stato di modifica.|
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: scc.h
 
- Per impostazione predefinita, nella cartella Include comune dell'SDK dell'ambiente, *[unità]* \Programmi\VSIP 8.0\EnvSDK\common\inc, è disponibile anche nella cartella VSIP con l'esempio MSSCCI *,[unità]* \Programmi\VSIP 8.0\MSSCCI.
+ (Fornito nella cartella Environment SDK common includes, per impostazione predefinita *[unità]* \Programmi\VSIP 8.0\EnvSDK\common\inc; fornito anche nella cartella VSIP con l'esempio MSSCCI, *[unità]* \Programmi\VSIP 8.0\MSSCCI).
 
 ## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

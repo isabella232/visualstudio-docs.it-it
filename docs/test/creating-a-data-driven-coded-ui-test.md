@@ -1,6 +1,6 @@
 ---
 title: Esercitazione Creare un test codificato dell'interfaccia utente basato sui dati
-description: Informazioni su come usare i test codificati dell'interfaccia utente basati sui dati per testare condizioni diverse eseguendo i test più volte con valori di parametro diversi.
+description: Informazioni su come usare test codificati dell'interfaccia utente guidati dai dati per testare condizioni diverse eseguendo i test più volte con valori di parametro diversi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: eadba1454e04c95bf1e2b3610a019e3503ec3af3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38c1a5dc40dde5805ec9d233287b95233585f480
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140102"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -40,7 +41,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
     ![Creare un progetto di test codificato dell'interfaccia utente](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Se non viene visualizzato il modello di **progetto di test codificato dell'interfaccia utente** , è necessario [installare il componente test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se il modello test  codificato dell'interfaccia utente non Project, è necessario installare il componente di test codificato dell'interfaccia [utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Scegliere di **registrare le azioni**.
 
@@ -66,7 +67,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Scelta rapida da tastiera: **CTRL** + **R**,**T**).
+5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL** + **R**,**T**).
 
     Nella finestra **Esplora test** viene visualizzato il risultato del test che mostra se il test è stato superato o meno. Per aprire la finestra Esplora test, scegliere **Finestre** dal menu **Test** e quindi **Esplora test**.
 
@@ -94,7 +95,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Scelta rapida da tastiera: **CTRL** + **R**,**T**).
+9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL** + **R**,**T**).
 
      A questo punto, tutti i valori dei parametri sono definiti nei relativi metodi come costanti. Ora verrà creato un set di dati in modo che il test sia basato sui dati.
 
@@ -205,7 +206,7 @@ Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usan
 
 ### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Quali sono gli attributi di origine dati per altri tipi di origine dati, ad esempio SQL Express o XML?
 
-**R:** È possibile usare le stringhe di origine dati di esempio nella tabella seguente copiando le stringhe nel codice e apportando le personalizzazioni necessarie.
+**A:** È possibile usare le stringhe di origine dati di esempio nella tabella seguente copiandole nel codice ed effettuando le personalizzazioni necessarie.
 
 **Tipi di origini dati e attributi**
 
@@ -233,7 +234,7 @@ Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usan
 
 **R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente, ovvero *CodedUITest1.cs*.
 
-Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà nel file *UIMapDesigner.cs* . È necessario rimuovere il riferimento al metodo originale nel file *UITest.cs* codificato e sostituirlo con il nome del metodo rinominato.
+Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override di metodi e proprietà nel file *UIMapDesigner.cs.* È necessario rimuovere il riferimento al metodo originale nel file *CODED UITest.cs* e sostituirlo con il nome del metodo rinominato.
 
 ## <a name="see-also"></a>Vedi anche
 

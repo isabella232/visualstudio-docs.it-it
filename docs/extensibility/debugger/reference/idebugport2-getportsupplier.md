@@ -1,6 +1,6 @@
 ---
 description: Ottiene il fornitore della porta per questa porta.
-title: 'IDebugPort2:: GetPortSupplier | Microsoft Docs'
+title: IDebugPort2::GetPortSupplier | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 7a7b0615-df6b-4726-ab35-39dfa1ebed8f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dde5dc8545926aa74f7e2bc70df073f5f18952ce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cb8bcc59a1134c62b77e25e560bb2a4bf4914c0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087366"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160062"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 Ottiene il fornitore della porta per questa porta.
@@ -42,7 +43,7 @@ int GetPortSupplier(
 
 ## <a name="parameters"></a>Parametri
 `ppSupplier`\
-out Restituisce un oggetto [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) che rappresenta il fornitore della porta per una porta.
+[out] Restituisce un [oggetto IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) che rappresenta il fornitore della porta per una porta.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

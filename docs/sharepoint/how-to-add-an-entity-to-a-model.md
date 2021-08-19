@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: b4293aefb0e5730c15c259fc7367cfe3f3f566adbc8d80744846274f95706287
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7905b4b3686c10ad9c6ac019253c71f94305f0b8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093190"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Procedura: Aggiungere un'entità a un modello
   Per creare un'entità, aggiungere un controllo entità dalla casella degli strumenti Visual Studio **alla** finestra di progettazione di Business Data Connectivity (BDC).

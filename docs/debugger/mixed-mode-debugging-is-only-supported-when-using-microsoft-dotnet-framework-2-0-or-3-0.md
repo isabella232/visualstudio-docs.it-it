@@ -1,5 +1,5 @@
 ---
-title: Il debug in modalità mista è supportato solo quando si usa Microsoft .NET Framework 2,0 o 3,0 | Microsoft Docs
+title: Il debug in modalità mista è supportato solo quando si usa Microsoft .NET Framework 2.0 o 3.0 | Microsoft Docs
 description: Le versioni di Microsoft .NET Framework precedenti alla 2.0 non forniscono alcun supporto per il debug in modalità mista di processi a 64 bit. Vedere questo articolo per le soluzioni alternative.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,14 +15,15 @@ ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 497eed63b695557fe19f7fd2cf5bb4900d632355
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d627d35242caf4d9856f62428289a5b6d3ffeec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112529"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Supporto del debug in modalità mista solo quando si utilizza Microsoft .NET Framework 2.0 o 3.0
 Le versioni di Microsoft .NET Framework precedenti alla 2.0 non forniscono alcun supporto per il debug in modalità mista di processi a 64 bit. Ciò significa che non è possibile passare dal codice gestito al codice nativo o viceversa durante l'esecuzione del debug.
@@ -53,7 +54,7 @@ Le versioni di Microsoft .NET Framework precedenti alla 2.0 non forniscono alcun
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-- Vedere [configurazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Vedere [Configurazione del SQL debug](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36c37361307a7215586ae85140413c51fe2095b15eb48487afa9815d8851c5bc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 885bc1c660d43b5d39af337c31adac81df409e8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433177"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125563"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 Reimposta l'enumerazione sul primo elemento.

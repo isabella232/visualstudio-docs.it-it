@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19c2da562a3f9a50c9dc4aa56cf095df9d6da285aa482b5268d3ba79a955ff98
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02ee66092f80f7f73952b6cc796107b7234a9337
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359286"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094633"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 La persistenza è una considerazione di progettazione chiave per il progetto. La maggior parte dei progetti usa elementi di progetto che rappresentano i file. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta anche i progetti i cui dati non sono basati su file. Sia i file di proprietà del progetto che il file di progetto devono essere resi persistenti. L'IDE indica al progetto di salvare se stesso o un elemento di progetto.
@@ -32,8 +32,8 @@ La persistenza è una considerazione di progettazione chiave per il progetto. La
 
 - Gli elementi non basati su file possono salvare gli elementi in un database o in un repository.
 
-## <a name="commit-models"></a>Eseguire il commit di modelli
- Dopo aver deciso dove si trovano gli elementi del progetto, è necessario scegliere il modello di commit appropriato. Ad esempio, in un modello basato su file con file locali, ogni progetto può essere salvato in modo autonomo. In un modello di repository è possibile salvare più elementi in una transazione. Per altre informazioni, vedere Prendere decisioni [Project di progettazione dei tipi.](../../extensibility/internals/project-type-design-decisions.md)
+## <a name="commit-models"></a>Modelli di commit
+ Dopo aver deciso dove si trovano gli elementi del progetto, è necessario scegliere il modello di commit appropriato. Ad esempio, in un modello basato su file con file locali, ogni progetto può essere salvato in modo autonomo. In un modello di repository è possibile salvare più elementi in una transazione. Per altre informazioni, vedere Prendere decisioni [Project di progettazione dei tipi](../../extensibility/internals/project-type-design-decisions.md).
 
  Per determinare le estensioni di file, i progetti implementano l'interfaccia , che fornisce informazioni che consentono al client di un oggetto di implementare la finestra di dialogo Salva con nome, ovvero per compilare l'elenco a discesa Tipo file e gestire l'estensione iniziale <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> del nome file.  
 
