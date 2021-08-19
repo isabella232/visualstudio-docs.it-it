@@ -1,6 +1,6 @@
 ---
 title: Specificare i file da pubblicare (ClickOnce)
-description: Informazioni su come escludere file, contrassegnare i file come file di dati o prerequisiti e creare gruppi per l'installazione condizionale per un'applicazione ClickOnce.
+description: Informazioni su come escludere file, contrassegnarli come file di dati o prerequisiti e creare gruppi per l'installazione condizionale per un ClickOnce appliazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,47 +17,48 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: d093438dc30bee08abbc45c6cf3c2555fbe208c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6fbe8b1543fdff870a0a5557c313080acd390c8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887484"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146290"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: Specificare i file da pubblicare mediante ClickOnce
-Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, insieme all'applicazione vengono distribuiti tutti i file non di codice del progetto. In alcuni casi, è possibile che non si desideri o non sia necessario pubblicare determinati file o che si voglia installare determinati file in base alle condizioni. Visual Studio offre le funzionalità per escludere file, contrassegnare i file come file di dati o prerequisiti e creare gruppi di file per l'installazione condizionale.
+Quando si pubblica [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un'applicazione, tutti i file non di codice nel progetto vengono distribuiti insieme all'applicazione. In alcuni casi, potrebbe non essere necessario pubblicare determinati file o installare determinati file in base alle condizioni. Visual Studio offre le funzionalità per escludere i file, contrassegnarli come file di dati o prerequisiti e creare gruppi di file per l'installazione condizionale.
 
- I file per un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione vengono gestiti nella finestra di dialogo **file applicazione** , accessibili dalla pagina **pubblica** di **Progettazione progetti**.
+ I file per [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un'applicazione vengono gestiti nella  **finestra di** dialogo File dell'applicazione , accessibile dalla pagina Pubblica della **finestra di Project Designer**.
 
- Inizialmente, è presente un singolo gruppo di file denominato **(obbligatorio)**. È possibile creare altri gruppi di file e assegnarvi file. Non è possibile modificare il **gruppo di download** per i file necessari per l'esecuzione dell'applicazione. Il file con estensione exe o i file dell'applicazione contrassegnati come file di dati, ad esempio, devono appartenere al gruppo **(obbligatorio)** .
+ Inizialmente è presente un singolo gruppo di file **denominato (Obbligatorio).** È possibile creare gruppi di file aggiuntivi e assegnare file a essi. Non è possibile modificare **il gruppo di download** per i file necessari per l'esecuzione dell'applicazione. Ad esempio, i file .exe dell'applicazione contrassegnati come file di dati devono appartenere al **gruppo (Obbligatorio).**
 
- Il valore predefinito per lo stato di pubblicazione di un file è contrassegnato con **(auto)**. Per impostazione predefinita, ad esempio, il file con estensione exe dell'applicazione ha lo stato di pubblicazione **include (auto)** .
+ Il valore dello stato di pubblicazione predefinito di un file è contrassegnato **con (Auto).** Ad esempio, lo stato di .exe'applicazione è **Includi (automatico)** per impostazione predefinita.
 
- I file con la proprietà **azione di compilazione** impostata su **contenuto** sono designati come file dell'applicazione e verranno contrassegnati come inclusi per impostazione predefinita. Possono essere inclusi, esclusi o contrassegnati come file di dati. Le eccezioni sono le seguenti:
+ I file con **la proprietà Azione di** compilazione impostata su **Contenuto** vengono designati come file dell'applicazione e verranno contrassegnati come inclusi per impostazione predefinita. Possono essere inclusi, esclusi o contrassegnati come file di dati. Le eccezioni sono le seguenti:
 
-- Per impostazione predefinita, i file di dati quali i file di database SQL (con *estensione MDF* e *MDB*) e i file XML verranno contrassegnati come file di dati.
+- I file di dati database SQL (*mdf* e *mdb*) e i file XML verranno contrassegnati come file di dati per impostazione predefinita.
 
-- I riferimenti agli assembly (file con *estensione dll* ) sono designati come indicato di seguito quando si aggiunge il riferimento: se **Copy Local** è **false**, è contrassegnato per impostazione predefinita come assembly prerequisiti (**prerequisito (auto)**) che deve essere presente nella GAC prima di installare l'applicazione. Se **Copy Local** è **true**, l'assembly è contrassegnato per impostazione predefinita come assembly dell'applicazione (**include (auto)**) e verrà copiato nella cartella dell'applicazione in fase di installazione. Un riferimento COM verrà visualizzato nella finestra di dialogo **file applicazione** (come file *ocx* ) solo se la relativa proprietà **isolata** è impostata su **true**. Per impostazione predefinita, verrà incluso.
+- I riferimenti agli assembly *(file.dll)* vengono designati come segue quando si aggiunge il riferimento: Se Copy **Local** è **False**, è contrassegnato per impostazione predefinita come assembly prerequisito (**Prerequisite (Auto)**) che deve essere presente nella Global Assembly Cache prima dell'installazione dell'applicazione. Se **Copy Local** è **True,** l'assembly è contrassegnato per impostazione predefinita come assembly dell'applicazione **(Include (Auto)** e verrà copiato nella cartella dell'applicazione al momento dell'installazione. Un riferimento COM verrà visualizzato nella **finestra** di dialogo File dell'applicazione (come file con estensione *ocx)* solo se la relativa **proprietà Isolated** è impostata su **True.** Per impostazione predefinita, verrà incluso.
 
-### <a name="to-add-files-to-the-application-files-dialog-box"></a>Per aggiungere file alla finestra di dialogo file applicazione
+### <a name="to-add-files-to-the-application-files-dialog-box"></a>Per aggiungere file alla finestra di dialogo File applicazione
 
 1. Selezionare un file di dati in **Esplora soluzioni**.
 
-2. Nella Finestra Proprietà impostare la proprietà **operazione di compilazione** sul valore del **contenuto** .
+2. Nella finestra Finestra Proprietà modificare la **proprietà Azione di** compilazione sul **valore** Contenuto.
 
-### <a name="to-exclude-files-from-clickonce-publishing"></a>Per escludere file dalla pubblicazione ClickOnce
+### <a name="to-exclude-files-from-clickonce-publishing"></a>Per escludere i file dalla ClickOnce pubblicazione
 
 1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Fare clic sul pulsante **file applicazione** per aprire la finestra di dialogo **file applicazione** .
+3. Fare clic **sul pulsante File applicazione** per aprire la finestra di dialogo **File** applicazione .
 
-4. Nella finestra di dialogo **file applicazione** selezionare il file che si desidera escludere.
+4. Nella finestra **di dialogo File** applicazione selezionare il file da escludere.
 
-5. Nel campo **stato pubblicazione** selezionare **Escludi** dall'elenco a discesa.
+5. Nel campo **Stato pubblicazione** selezionare **Escludi** dall'elenco a discesa.
 
 ### <a name="to-mark-files-as-data-files"></a>Per contrassegnare i file come file di dati
 
@@ -65,11 +66,11 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Fare clic sul pulsante **file applicazione** per aprire la finestra di dialogo **file applicazione** .
+3. Fare clic **sul pulsante File applicazione** per aprire la finestra di dialogo **File** applicazione .
 
-4. Nella finestra di dialogo **file applicazione** selezionare il file che si desidera contrassegnare come dati.
+4. Nella finestra **di dialogo File** applicazione selezionare il file da contrassegnare come dati.
 
-5. Nel campo **stato pubblicazione** selezionare file di **dati** dall'elenco a discesa.
+5. Nel campo **Stato pubblicazione** selezionare File **di dati** nell'elenco a discesa.
 
 ### <a name="to-mark-files-as-prerequisites"></a>Per contrassegnare i file come prerequisiti
 
@@ -77,28 +78,28 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Fare clic sul pulsante **file applicazione** per aprire la finestra di dialogo **file applicazione** .
+3. Fare clic **sul pulsante File applicazione** per aprire la finestra di dialogo **File** applicazione .
 
-4. Nella finestra di dialogo **file applicazione** selezionare l'assembly dell'applicazione (file con *estensione dll* ) che si desidera contrassegnare come prerequisito. Si noti che l'applicazione deve avere un riferimento all'assembly dell'applicazione affinché venga visualizzata nell'elenco.
+4. Nella finestra **di dialogo File** applicazione selezionare l'assembly dell'applicazione *(.dll* file) da contrassegnare come prerequisito. Si noti che l'applicazione deve avere un riferimento all'assembly dell'applicazione per poter essere visualizzata nell'elenco.
 
-5. Nel campo **stato pubblicazione** selezionare **prerequisito** dall'elenco a discesa.
+5. Nel campo **Stato pubblicazione** selezionare **Prerequisito** nell'elenco a discesa.
 
-### <a name="to-add-a-new-file-group"></a>Per aggiungere un nuovo gruppo di file
+### <a name="to-add-a-new-file-group"></a>Per aggiungere un nuovo file group
 
 1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Fare clic sul pulsante **file applicazione** per aprire la finestra di dialogo **file applicazione** .
+3. Fare clic **sul pulsante File applicazione** per aprire la finestra di dialogo **File** applicazione .
 
-4. Nella finestra di dialogo **file applicazione** selezionare il campo **gruppo** per un file che si desidera includere nel nuovo gruppo.
+4. Nella finestra **di dialogo File** applicazione selezionare il campo **Gruppo** per un file da includere nel nuovo gruppo.
 
     > [!NOTE]
-    > Per i file è necessario che la proprietà **azione di compilazione** sia impostata su **contenuto** prima che i nomi file vengano visualizzati nella finestra di dialogo **file applicazione** .
+    > I file devono avere la **proprietà Azione di** compilazione impostata su **Contenuto** prima che i nomi dei file vengano visualizzati nella finestra di **dialogo File** applicazione .
 
-5. Nel campo **Scarica gruppo** , selezionare **\<New...>** dall'elenco a discesa.
+5. Nel campo **Download Group (Scarica** gruppo) **\<New...>** selezionare dall'elenco a discesa.
 
-6. Nella finestra di dialogo **nuovo gruppo** immettere un nome per il gruppo e quindi fare clic su **OK**.
+6. Nella finestra **di dialogo Nuovo** gruppo immettere un nome per il gruppo e quindi fare clic su **OK.**
 
 ### <a name="to-add-a-file-to-a-group"></a>Per aggiungere un file a un gruppo
 
@@ -106,15 +107,15 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Fare clic sul pulsante **file applicazione** per aprire la finestra di dialogo **file applicazione** .
+3. Fare clic **sul pulsante File applicazione** per aprire la finestra di dialogo **File** applicazione .
 
-4. Nella finestra di dialogo **file applicazione** selezionare il campo **gruppo** per un file che si desidera includere nel nuovo gruppo.
+4. Nella finestra **di dialogo File** applicazione selezionare il campo **Gruppo** per un file da includere nel nuovo gruppo.
 
-5. Nel campo **Scarica gruppo** selezionare un gruppo dall'elenco a discesa.
+5. Nel campo **Download Group (Scarica** gruppo) selezionare un gruppo dall'elenco a discesa.
 
     > [!NOTE]
-    > Non è possibile modificare il **gruppo di download** per i file necessari per l'esecuzione dell'applicazione.
+    > Non è possibile modificare **il gruppo di download** per i file necessari per l'esecuzione dell'applicazione.
 
 ## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Procedura: Pubblicare un'applicazione ClickOnce tramite la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

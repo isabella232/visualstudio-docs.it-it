@@ -1,5 +1,5 @@
 ---
-description: Determina se la ricerca di un file con estensione pdb è consentita nel percorso in cui si trova .exe file.
+description: Determina se la ricerca di un file con estensione pdb è consentita nel percorso in .exe in cui si trova il file.
 title: IDiaLoadCallback2::RestrictReferencePathAccess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: eb24cbf84c57b7c7db74a992ad9c19361d4d741fc1594ffa94b83979ec9fbbff
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 892290feb5717441783fe6d81b7eda0838b94047
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345012"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044526"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
-Determina se la ricerca di un file con estensione pdb è consentita nel percorso in cui si trova .exe file.
+Determina se la ricerca di un file con estensione pdb è consentita nel percorso in .exe in cui si trova il file.
 
 ## <a name="syntax"></a>Sintassi
 

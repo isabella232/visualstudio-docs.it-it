@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa77f3779fa6bcf8708d53437e0194ec6c14a026abe57b11ca98a75e2f3d6b8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c4c643614bfdeaea4e000a0693cca488a34aba16
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391944"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044350"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mappe dati dal numero di sezione ai segmenti dello spazio indirizzi.

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9250ee676b823f470f87d8f339b7a19d5ceca7232cda7dda0ec49cd8b5ec89b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf57d1d20e16bf91fab3a790c2d2f717b3bfd8f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029151"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo di aggiunta di elementi alla finestra **di dialogo Aggiungi nuovo elemento** inizia con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, la sezione **AddItemTemplates** contiene  il percorso e il nome della directory in cui vengono inseriti gli elementi resi disponibili nella finestra di dialogo Aggiungi nuovo elemento.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0bd8c7dd0154eb25289d3a9e44fe24097d817b24
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: cdc63c26f8e2b1589e09ab46206e3703d9c8ad9faf2e8e125bd2682b3c6117a3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128687"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121454751"
 ---
 # <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 Recupera un flag che indica se il modulo contiene codice gestito.

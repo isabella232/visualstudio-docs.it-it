@@ -1,6 +1,6 @@
 ---
-title: Stack di chiamate eventi di grafica | Microsoft Docs
-description: Esaminare Graphics Event Call Stack (Stack di chiamate eventi di grafica) in Visual Studio Graphics Analyzer per eseguire il mapping della relazione tra gli eventi grafici problematici e il codice sorgente dell'app.
+title: Stack di chiamate di eventi di grafica | Microsoft Docs
+description: Esaminare Graphics Event Call Stack in Visual Studio Graphics Analyzer per eseguire il mapping della relazione tra gli eventi grafici problematici e il codice sorgente dell'app.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c69340445f36e9044557bc4dbeb60a92fcf0580178d464938022ce51ba0ece
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 29bc023dcc4eae885746396f77b27f27188ada61
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454072"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044041"
 ---
 # <a name="graphics-event-call-stack"></a>Stack di chiamate eventi di grafica
 Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio consente di mappare la relazione tra gli eventi di grafica problematici e il codice sorgente dell'app.

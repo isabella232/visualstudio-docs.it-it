@@ -16,12 +16,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 09abd8d00c4f60aec0ae7086c518d4c3929679bc231886c0c942a39aa9235da0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 95fbd25cea0930cd9f545c007980217e84abcb4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043492"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 Contiene i dati per la posizione di un punto di interruzione in corrispondenza di una riga specifica in un file di origine del codice.

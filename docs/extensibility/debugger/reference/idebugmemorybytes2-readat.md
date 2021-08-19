@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d25cefdc360f054f94dac4eb9c1827cb3f45a91452942178f057137ff6d2bde
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a6715129ad449e7d92ed2b74785469408973b25c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417236"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043440"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Legge una sequenza di byte, a partire da una posizione specificata.
@@ -52,7 +52,7 @@ int ReadAt(
 
 ## <a name="parameters"></a>Parametri
 `pStartContext`\
-[in] Oggetto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica dove iniziare a leggere i byte.
+[in] Oggetto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica dove iniziare la lettura dei byte.
 
 `dwCount`\
 [in] Numero di byte da leggere. Specifica anche la lunghezza della `rgbMemory` matrice.
@@ -70,13 +70,13 @@ int ReadAt(
  Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Se vengono richiesti 100 byte e i primi 50 sono leggibili, i 20 successivi sono illeggibili e i restanti 30 sono leggibili, questo metodo restituisce:
+ Se vengono richiesti 100 byte e i primi 50 sono leggibili, i 20 successivi sono illeggibili e i 30 rimanenti sono leggibili, questo metodo restituisce:
 
  *`pdwRead` = 50
 
  *`pdwUnreadable` = 20
 
- In questo caso, poiché , il chiamante deve eseguire una chiamata aggiuntiva per leggere i restanti 30 byte dei 100 originali richiesti e l'oggetto `*pdwRead + *pdwUnreadable < dwCount` [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) passato nel parametro deve essere avanzato di `pStartContext` 70.
+ In questo caso, poiché , il chiamante deve effettuare una chiamata aggiuntiva per leggere i 30 byte rimanenti dei 100 originali richiesti e l'oggetto `*pdwRead + *pdwUnreadable < dwCount` [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) passato nel parametro deve essere avanzato di `pStartContext` 70.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

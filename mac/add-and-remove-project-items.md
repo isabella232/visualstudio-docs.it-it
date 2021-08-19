@@ -15,7 +15,7 @@ ms.locfileid: "121438673"
 ---
 # <a name="adding-and-removing-project-items"></a>Aggiunta e rimozione di elementi di progetto
 
-È possibile aggiungere nuovi elementi di progetto al progetto facendo clic  con il pulsante destro del mouse sul nodo Project nella finestra della soluzione e scegliendo **Aggiungi > nuovo file:**
+È possibile aggiungere nuovi elementi di progetto al progetto facendo clic  con il pulsante destro del mouse sul nodo Project nella finestra della soluzione e scegliendo Aggiungi > **nuovo file**:
 
 ![Aggiungere un nuovo elemento di progetto](media/add-and-remove-project-items-image1.png)
 
@@ -25,7 +25,7 @@ Verrà visualizzata la finestra di dialogo Nuovo file, in cui sono disponibili m
 
 ## <a name="adding-existing-files"></a>Aggiunta di file esistenti
 
-È possibile aggiungere file esistenti al progetto facendo clic con il pulsante destro del mouse sul nodo Project e scegliendo Aggiungi > **Aggiungi file...**. In alternativa, per aggiungere un'intera cartella, selezionare **> Aggiungi cartella esistente...**. Verrà visualizzato il browser di file, che consente di cercare nel sistema l'elemento necessario da aggiungere.
+È possibile aggiungere file esistenti al progetto facendo clic con il pulsante destro del mouse sul nodo Project e scegliendo Aggiungi > **Aggiungi file...**. In alternativa, per aggiungere un'intera cartella, selezionare Aggiungi > **Aggiungi cartella esistente...**. Verrà visualizzato il browser di file, che consente di cercare nel sistema l'elemento necessario da aggiungere.
 
 ## <a name="removing-items"></a>Rimozione di elementi
 

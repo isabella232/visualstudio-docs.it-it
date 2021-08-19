@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bf7553867e832c03eb921e6aff51a61ab8b460b5b38fddf10ad01d78a2bf8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 63cdfa5e371f67db2faffa7b18c0eacf4e2db411
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121407980"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114771"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messaggi di errore in Progettazione flussi di lavoro
 
@@ -40,7 +40,7 @@ Gli errori Progettazione flussi di lavoro si verificano nelle situazioni seguent
 
 Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro ha esito positivo, ma <xref:System.Activities.InvalidWorkflowException> viene generata un'eccezione in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
 
-All Visual Studio, quando un flusso di lavoro viene caricato, i relativi errori vengono visualizzati **nell'Elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic sull'errore in **Elenco errori**.
+All Visual Studio, quando viene caricato un flusso di lavoro, i relativi errori vengono visualizzati **nell'Elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic sull'errore in **Elenco errori**.
 
 ### <a name="expression-errors"></a>Errori nelle espressioni
  Un'espressione non valida viene segnalata da un cerchio rosso con un punto esclamativo bianco accanto a essa. Se si posiziona il mouse su questa icona, viene visualizzata una descrizione comandi relativa all'origine dell'errore. All'Visual Studio fare clic sull'espressione per visualizzare la riga che sottolinea l'origine dell'errore. Se si posiziona il mouse sul testo sottolineato, viene visualizzata una descrizione comandi relativa all'origine dell'errore.

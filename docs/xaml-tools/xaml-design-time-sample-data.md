@@ -1,5 +1,5 @@
 ---
-title: Usare dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
+title: Usare i dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
 description: Informazioni su come usare i dati di esempio in fase di progettazione in XAML.
 ms.date: 06/01/2021
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: e129875a4ac4c5d66e72e7180c58131c48cd486ddc24e24923556d2261dc094e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cf3fbfc29b79d04ae71fa4ba50815b22045997c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121296307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114537"
 ---
-# <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>Usare dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
+# <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
 
 Alcuni controlli che si distoglieno i dati, ad esempio ListView, ListBox o DataGrid, sono difficili da visualizzare senza dati. In questo documento verrà esaminato un nuovo approccio che consente agli sviluppatori che lavorano su progetti **WPF .NET Core** o **progetti wpf .NET Framework** con la nuova finestra di progettazione di abilitare i dati di esempio in questi controlli. 
 

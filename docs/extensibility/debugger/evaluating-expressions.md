@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fd3f27aaf6080a853dbacc856d0b6ac258319b81560bd002a5b562ecef6a7dc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 142c5d195990e87a7741fbbbe0eeef4a7020c63a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342843"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080338"
 ---
 # <a name="evaluate-expressions"></a>Valutare le espressioni
 Le espressioni vengono create dalle stringhe passate dalle **finestre Auto**, **Espressione di** controllo , **Controllo** immediato **o Controllo** immediato . Quando un'espressione viene valutata, genera una stringa stampabile che contiene il nome e il tipo della variabile o dell'argomento e il relativo valore. Questa stringa viene visualizzata nella finestra IDE corrispondente.

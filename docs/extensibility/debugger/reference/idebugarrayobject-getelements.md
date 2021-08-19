@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 919a6a1ea6486cedec6ede700c9db0038a41d032a606bd5f80f13af8045a1f61
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72f3ec74ccb8eae959f3a12b9233bb329c0f72c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403104"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080000"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 Ottiene un enumeratore di tutti gli elementi della matrice.
@@ -43,7 +43,7 @@ int GetElements(
 
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
-[out] Restituisce un [oggetto IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) che consente l'enumerazione su tutti gli elementi.
+[out] Restituisce un [oggetto IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) che consente l'enumerazione di tutti gli elementi.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.

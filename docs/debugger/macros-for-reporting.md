@@ -1,6 +1,6 @@
 ---
-title: Macro per la creazione di | Microsoft Docs
-description: Informazioni sulle macro di debug _RPTn e _RPTFn in CRTDBG. H e sulla creazione di macro di debug.
+title: Macro per reporting | Microsoft Docs
+description: Informazioni sulle macro di debug _RPTn e _RPTFn disponibili in CRTDBG. H e sulla creazione di macro di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,19 +25,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c3479483b5baf1bef9d6001ff5a8bffca53a675bd9d50d916d7241c8e67ee96c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 042a1ce4b4e2c180de46bc8609000df97b422c86
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453120"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080702"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
-Per il debug, è possibile **usare _RPTn** e **_RPTFn** macro, definite in CRTDBG. H, per sostituire l'uso `printf` di istruzioni . Non è necessario chiuderli in #ifdef perché scompaiono automaticamente nella build  di rilascio quando _DEBUG non è definito.
+Per il debug, è possibile usare **le** macro _RPTn e **_RPTFn,** definite in CRTDBG. H, per sostituire l'uso `printf` di istruzioni . Non è necessario chiuderli nelle #ifdef, perché scompaiono automaticamente nella build  di versione quando _DEBUG non è definito.
 
 |Macro|Descrizione|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Genera una stringa di messaggio e da zero a quattro argomenti. Per **_RPT1** da **_RPT4**, la stringa di messaggio viene utilizzata come stringa di formattazione di tipo printf per gli argomenti.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Genera una stringa di messaggio e da zero a quattro argomenti. Ad **_RPT1** a **_RPT4**, la stringa di messaggio funge da stringa di formattazione di tipo printf per gli argomenti.|
 |**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|Come **_RPTn**, ma queste macro generano anche il nome file e il numero di riga in cui si trova la macro.|
 
  Si consideri l'esempio seguente:
@@ -57,7 +57,7 @@ Per il debug, è possibile **usare _RPTn** e **_RPTFn** macro, definite in CRTDB
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-È possibile che una particolare applicazione necessita di report di debug che le macro fornite con la libreria di runtime C non forniscono. In questi casi, è possibile scrivere una macro progettata in modo specifico per soddisfare i propri requisiti. In uno dei file di intestazione, ad esempio, è possibile includere un codice simile al seguente per definire una macro denominata **ALERT_IF2**:
+È possibile che una particolare applicazione richiede la creazione di report di debug che le macro fornite con la libreria di runtime C non forniscono. In questi casi, è possibile scrivere una macro progettata in modo specifico per soddisfare i propri requisiti. In uno dei file di intestazione, ad esempio, è possibile includere un codice simile al seguente per definire una macro denominata **ALERT_IF2**:
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */

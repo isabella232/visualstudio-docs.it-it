@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: d665adbf7640b0c8d5d2489ee75c22ef9e41603954dd812b9f8984ab789b55a0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 80535ec883db07e1a431b90ca18e6fbfd53023ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121243432"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114732"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: aggiungere attività nella Casella degli strumenti
 
@@ -24,7 +24,7 @@ Le attività possono essere aggiunte alla **casella degli** strumenti nella solu
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>Per aggiungere un'attività dall'interno del progetto corrente
 
-1. Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. Per altre informazioni sull'aggiunta di una nuova attività personalizzata al progetto, vedere [Procedura: Aggiungere un nuovo elemento a](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)un flusso di lavoro Project .
+1. Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. Per altre informazioni sull'aggiunta di una nuova attività personalizzata al progetto, vedere [Procedura: Aggiungere un](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)nuovo elemento a un flusso di lavoro Project .
 
 2. Aggiungere la logica personalizzata all'attività.
 

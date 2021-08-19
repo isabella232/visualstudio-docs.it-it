@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35cd10b93a7085654823db94bd7bcc1817012af4b6937b212fd39d568d57bca3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f943127371fc881b06390eb25b6833325b3a457
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132317"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>Registrazione di un servizio di linguaggio legacy 1
 Nel framework del pacchetto gestito (MPF), il servizio di linguaggio viene profferito da un vspackage (vedere [VSPackage )](../../extensibility/internals/vspackages.md)e viene registrato con aggiungendo chiavi e voci del Registro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di sistema. Questo processo di registrazione viene eseguito in parte durante l'installazione e in parte in fase di esecuzione.

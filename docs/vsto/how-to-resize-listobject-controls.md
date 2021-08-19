@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Ridimensionare i controlli ListObject'
-description: Informazioni su come usare Visual Studio ridimensionare a livello di codice i controlli ListObject in una cartella Microsoft Excel cartella di lavoro.
+description: Informazioni su come usare le Visual Studio per ridimensionare a livello di codice i controlli ListObject in una cartella Microsoft Excel lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0dedb2aad7598e1a9a3f97123260580de9a93f34
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e317475db68dda76ef70d95b0783e49fbbbaa10737ec06b4fc574d304509a35a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099685"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440702"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Procedura: Ridimensionare i controlli ListObject
   Impostare la dimensione di un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> quando lo si aggiunge a una cartella di lavoro di Microsoft Office Excel; tuttavia, potrebbe essere necessario ridimensionarlo in seguito. Ad esempio, potrebbe essere necessario cambiare un elenco a due colonne in uno a tre colonne.
@@ -38,14 +38,14 @@ ms.locfileid: "122099685"
 
 - [Ridimensionare i controlli ListObject in fase di esecuzione in VSTO progetto di componente aggiuntivo](#runtimeaddin)
 
-  Per altre informazioni sui <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [Controllo ListObject](../vsto/listobject-control.md).
+  Per altre informazioni sui <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [Controllo ListObject.](../vsto/listobject-control.md)
 
 ## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a> Ridimensionare un controllo ListObject in fase di progettazione
  Per ridimensionare un elenco, è possibile selezionare e trascinare uno dei punti di controllo oppure è possibile ridefinirne la dimensione nella finestra di dialogo **Ridimensiona elenco** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Per ridimensionare un elenco usando la finestra di dialogo Ridimensiona elenco
 
-1. Fare clic in un punto qualsiasi della  <xref:Microsoft.Office.Tools.Excel.ListObject> tabella. Verrà **visualizzata la** scheda Progettazione di  >  **Strumenti** tabella sulla barra multifunzione.
+1. Fare clic in un punto qualsiasi della  <xref:Microsoft.Office.Tools.Excel.ListObject> tabella. Verrà **visualizzata la scheda** Progettazione di  >  **Strumenti** tabella nella barra multifunzione.
 
 2. Nella sezione Proprietà fare clic su **Ridimensiona tabella**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "122099685"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet7":::
 
 ## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Ridimensionare un oggetto ListObject in fase di esecuzione in VSTO progetto di componente aggiuntivo
- È possibile ridimensionare un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> in qualsiasi foglio di lavoro aperto in fase di esecuzione. Per altre informazioni su come aggiungere un controllo a un foglio di lavoro usando un componente aggiuntivo VSTO, vedere Procedura: Aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> [ListObject ai fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md).
+ È possibile ridimensionare un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> in qualsiasi foglio di lavoro aperto in fase di esecuzione. Per altre informazioni su come aggiungere un controllo a un foglio di lavoro usando un componente aggiuntivo VSTO, vedere Procedura: Aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> [ListObject ai fogli di lavoro.](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Per ridimensionare un oggetto elenco a livello di codice
 
@@ -86,12 +86,12 @@ ms.locfileid: "122099685"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet13":::
 
 ## <a name="see-also"></a>Vedi anche
-- [Estendere documenti di Word Excel cartelle di lavoro in VSTO componenti aggiuntivi in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [Controlli sui Office di lavoro](../vsto/controls-on-office-documents.md)
-- [Aggiungere controlli per Office documenti in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Estendere documenti di Word Excel cartelle di lavoro di VSTO componenti aggiuntivi in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Controlli su Office documenti](../vsto/controls-on-office-documents.md)
+- [Aggiungere controlli ai Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [Controllo ListObject](../vsto/listobject-control.md)
 - [Procedura: Aggiungere controlli ListObject ai fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [Procedura: Ridimensionare i controlli Segnalibro](../vsto/how-to-resize-bookmark-controls.md)
+- [Procedura: Ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md)
 - [Procedura: Ridimensionare i controlli NamedRange](../vsto/how-to-resize-namedrange-controls.md)

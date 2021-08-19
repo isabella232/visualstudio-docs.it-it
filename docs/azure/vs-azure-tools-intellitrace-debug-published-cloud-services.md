@@ -21,7 +21,7 @@ Con IntelliTrace è possibile registrare informazioni di debug approfondite per 
 
 È possibile usare IntelliTrace se Visual Studio Enterprise è installato e l'applicazione Azure è destinata a .NET Framework 4 o versione successiva. IntelliTrace raccoglie informazioni per i ruoli Azure. Le macchine virtuali per questi ruoli eseguono sempre sistemi operativi a 64 bit.
 
-In alternativa, è possibile usare [il debug](vs-azure-tools-debugging-cloud-services-overview.md) remoto per connettersi direttamente a un servizio cloud in esecuzione in Azure.
+In alternativa, è possibile usare [il debug remoto](vs-azure-tools-debugging-cloud-services-overview.md) per connettersi direttamente a un servizio cloud in esecuzione in Azure.
 
 > [!IMPORTANT]
 > IntelliTrace è destinato esclusivamente a scenari di debug e non deve essere usato per una distribuzione di produzione.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be97d5967a09bc35b9b7a4af836e91eb602d806c1a02d559d40c94fc62eee64
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9de2b48d77b9b457e8da66a14172e2650428d049
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362354"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043934"
 ---
 # <a name="how-to-control-messages-view"></a>Procedura: controllare la visualizzazione messaggi
 Con Spy++, si ha un notevole controllo sul contenuto di una [finestra di visualizzazione messaggi.](../debugger/messages-view.md) È possibile [avviare e arrestare](../debugger/how-to-start-and-stop-the-message-log-display.md) la visualizzazione dei messaggi in qualsiasi momento ed è possibile specificare:

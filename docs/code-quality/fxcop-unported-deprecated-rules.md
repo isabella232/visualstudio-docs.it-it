@@ -1,5 +1,5 @@
 ---
-description: Le seguenti regole di analisi legacy FxCop sono deprecate e non verranno implementate come analizzatori.
+description: Le regole di analisi legacy FxCop seguenti sono deprecate e non verranno implementate come analizzatori.
 title: Regole deprecate
 ms.date: 05/21/2019
 ms.topic: reference
@@ -9,18 +9,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 21a151f7d2da18f1c498269504f216b1f7fbd44c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7804d8dc3baa9df631ae721ea3a2c89328293642
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144702"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045190"
 ---
 # <a name="deprecated-rules"></a>Regole deprecate
 
-Le seguenti regole di analisi legacy FxCop sono deprecate e non verranno implementate come analizzatori. Per ulteriori informazioni, è possibile eseguire la ricerca in base all'ID regola, ad esempio **CA1009**, nella [pagina Roslyn-Analyzers GitHub issues](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Le regole di analisi legacy FxCop seguenti sono deprecate e non verranno implementate come analizzatori. Per altre informazioni, è possibile eseguire la ricerca in base all'ID regola (ad esempio, **CA1009)** nella pagina dei problemi GitHub [roslyn-analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1006](ca1006.md)
 - [CA1009](ca1009.md)

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare una richiesta di riunione a livello di codice'
-description: Informazioni su come creare a livello di codice una richiesta di riunione in Microsoft Outlook e inviare la richiesta a un partecipante richiesto.
+description: Informazioni su come creare una richiesta di riunione in Microsoft Outlook a livello di codice e inviare la richiesta a un partecipante richiesto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b3b439bb881ee626060bb5d88f378085f4b49894
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: dfa0c7b8eb39a9bc8a64191784fab0d3788cf86d78f19a948310b6cbcf82e59d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099841"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440773"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>Procedura: Creare una richiesta di riunione a livello di codice
   In questo esempio viene creata una convocazione riunione in Microsoft Office Outlook e viene inviata la convocazione a un partecipante richiesto.

@@ -11,14 +11,15 @@ ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a86943e683502bdd1cd19668e9aafcb8fe7e1bc8
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 873daaa0e491b85c001a82aec0a17e4255c64ea7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146199"
 ---
 # <a name="bitmaps-element"></a>Bitmaps - elemento
 Raggruppa gli [elementi dell'elemento Bitmap.](../extensibility/bitmap-element.md)
@@ -39,7 +40,7 @@ Raggruppa gli [elementi dell'elemento Bitmap.](../extensibility/bitmap-element.m
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 

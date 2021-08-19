@@ -20,19 +20,19 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 8dd983f9a7929298dc6f5e3ef549027d9ab15ba4cbe180483a617712f3e30af6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: be79b205e8b31cf25e6d287784a7f5b144943282
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121315187"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027019"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Procedura: Aggiungere un metodo Finder specifico
   È possibile restituire una singola istanza di entità creando un *metodo Finder* specifico. Il servizio BDC (Business Data Connectivity) esegue il metodo Finder specifico quando un utente sceglie un'entità in una web part di dati business o in un elenco esterno. Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
 
 ### <a name="to-create-a-specific-finder-method"></a>Per creare un metodo Finder specifico
 
-1. In Progettazione **BDC** scegliere un'entità.
+1. In Progettazione **integrazione applicativa dei dati** scegliere un'entità.
 
     Per informazioni su come aggiungere un'entità a **Progettazione integrazione** Visual Studio, vedere [Procedura: Aggiungere un'entità a un modello.](../sharepoint/how-to-add-an-entity-to-a-model.md)
 
@@ -56,7 +56,7 @@ ms.locfileid: "121315187"
 
      Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
 
-4. Aprire la Visual Studio **proprietà.**
+4. Aprire la finestra Visual Studio **proprietà.**
 
 5. Configurare il descrittore di tipo del parametro restituito come descrittore del tipo di entità. Per informazioni su come creare un descrittore del tipo di entità, vedere [Procedura: Definire il](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)descrittore di tipo di un parametro .
 

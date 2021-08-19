@@ -1,6 +1,6 @@
 ---
 title: Nodi del filtro
-description: Informazioni sui nodi filtro, che trasformano un input come un campione di colore o trama in un valore di colore figurativo, nella finestra di progettazione shader.
+description: Informazioni sui nodi filtro, che trasformano un input come un campione di colore o trama in un valore di colore figurativo, in Progettazione shader.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 8af162b4e2ff81cab74bc364e85c965d6f5c0004c5b1e7959b5afc9f9faf5e5c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 953841c4910178766fb313544758c1fd30be7c47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390823"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146212"
 ---
 # <a name="filter-nodes"></a>Nodi del filtro
 

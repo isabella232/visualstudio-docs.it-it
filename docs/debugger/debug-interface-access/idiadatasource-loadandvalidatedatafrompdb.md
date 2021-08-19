@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fc843cc275342646c9cdf435ca2ece9eafdc0dbd7c108183d12dc0cd550d50
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a3d09b96f835b84399742a461b404bc4b75ddc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121326337"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097946"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Apre e verifica che il file di database di programma (con estensione pdb) corrisponda alle informazioni sulla firma fornite e prepara il file con estensione pdb come origine dati di debug.
@@ -65,7 +65,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
 ## <a name="remarks"></a>Commenti
-Un file con estensione pdb contiene sia i valori di firma che i valori di età. Questi valori vengono replicati nel file .exe o .dll corrispondente al file con estensione pdb. Prima di preparare l'origine dati, questo metodo verifica che la firma e l'età del file con estensione pdb denominato corrispondano ai valori specificati.
+Un file con estensione pdb contiene sia i valori di firma che i valori di età. Questi valori vengono replicati nel .exe o .dll file corrispondente al file con estensione pdb. Prima di preparare l'origine dati, questo metodo verifica che la firma e l'età del file con estensione pdb denominato corrispondano ai valori specificati.
 
 Per caricare un file con estensione pdb senza convalida, usare il [metodo IDiaDataSource::loadDataFromPdb.](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
 

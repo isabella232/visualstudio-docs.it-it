@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8ca8233495fd6db2d7a238483ef81a83b1ff28a5e59cb51f9075584bdcf9e27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7ff61649cfa9c2d78256751e9c25fb0a4b670bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434776"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146082"
 ---
 # <a name="create-an-options-page"></a>Creare una pagina di opzioni
 
@@ -30,7 +30,7 @@ Questa procedura dettagliata crea una semplice pagina Strumenti/Opzioni che usa 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
- A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
+ A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nell'Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-a-tools-options-grid-page"></a>Creare una pagina della griglia Opzioni strumenti
 
@@ -38,13 +38,13 @@ Questa procedura dettagliata crea una semplice pagina Strumenti/Opzioni che usa 
 
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Per creare il progetto VSIX e aggiungere un VSPackage
 
-1. Ogni Visual Studio'estensione inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyToolsOptionsExtension` . È possibile trovare il modello di progetto VSIX nella finestra **di dialogo Project** nuovo progetto cercando "vsix".
+1. Ogni Visual Studio'estensione inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyToolsOptionsExtension` . È possibile trovare il modello di progetto VSIX nella finestra **di dialogo Project** ricerca di "vsix".
 
-2. Aggiungere un VSPackage aggiungendo un modello di Visual Studio pacchetto denominato `MyToolsOptionsPackage` . Nella finestra **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Nella finestra **di dialogo Aggiungi nuovo elemento** passare a Estendibilità degli elementi di **Visual C#** e selezionare Visual Studio  >   **pacchetto.** Nel campo **Nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `MyToolsOptionsPackage.cs` . Per altre informazioni su come creare un VSPackage, vedere [Creare un'estensione con un VSPackage.](../extensibility/creating-an-extension-with-a-vspackage.md)
+2. Aggiungere un VSPackage aggiungendo un modello di Visual Studio pacchetto denominato `MyToolsOptionsPackage` . Nella finestra di **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento.** Nella finestra **di dialogo Aggiungi nuovo elemento** passare a Estendibilità degli elementi di **Visual C#** e selezionare Visual Studio  >   **pacchetto.** Nel campo **Nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `MyToolsOptionsPackage.cs` . Per altre informazioni su come creare un VSPackage, vedere [Creare un'estensione con un VSPackage.](../extensibility/creating-an-extension-with-a-vspackage.md)
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Per creare la griglia delle proprietà Opzioni strumenti
 
-1. Aprire il file *MyToolsOptionsPackage nell'editor* del codice.
+1. Aprire il file *MyToolsOptionsPackage* nell'editor del codice.
 
 2. Aggiungere l'istruzione using seguente.
 
@@ -77,7 +77,7 @@ Questa procedura dettagliata crea una semplice pagina Strumenti/Opzioni che usa 
 
     - Applicare un <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> oggetto per assegnare un nome alla proprietà.
 
-    - Applicare un <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> oggetto per assegnare alla proprietà una descrizione.
+    - Applicare un <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> oggetto per assegnare una descrizione alla proprietà.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -102,15 +102,15 @@ Questa procedura dettagliata crea una semplice pagina Strumenti/Opzioni che usa 
 
 7. Nell'istanza sperimentale di Visual Studio scegliere Opzioni **dal** menu **Strumenti.**
 
-     Nel riquadro sinistro dovrebbe essere visualizzato **Categoria.** Le categorie di opzioni sono elencate in ordine alfabetico, quindi dovrebbero essere visualizzate a metà dell'elenco. Aprire **My Category e** quindi fare clic su My Grid **Page**. La griglia delle opzioni viene visualizzata nel riquadro destro. La categoria di proprietà **è My Options** e il nome della proprietà è My Integer **Option**. La descrizione della **proprietà, Opzione Numero intero,** viene visualizzata nella parte inferiore del riquadro. Modificare il valore iniziale di 256 in un altro valore. Fare **clic su OK** e quindi **riaprire My Grid Page**. Come si può vedere, il nuovo valore viene mantenuto.
+     Nel riquadro sinistro dovrebbe essere visualizzato **Categoria.** Le categorie di opzioni sono elencate in ordine alfabetico, quindi dovrebbero essere visualizzate a metà dell'elenco. Aprire **My Category e** quindi fare clic su My Grid **Page**. La griglia delle opzioni viene visualizzata nel riquadro destro. La categoria di proprietà è **My Options** e il nome della proprietà è My **Integer Option**. La descrizione della **proprietà, Opzione Numero intero,** viene visualizzata nella parte inferiore del riquadro. Modificare il valore iniziale di 256 in un altro valore. Fare **clic su OK** e quindi **riaprire My Grid Page**. Come si può vedere, il nuovo valore viene mantenuto.
 
-     La pagina delle opzioni è disponibile anche Visual Studio casella di ricerca della pagina. Nella casella di ricerca nella parte superiore dell'IDE digitare **Categoria.** Nei risultati verrà visualizzato My **Category -> My Grid Page** (Categoria -> Pagina griglia).
+     La pagina delle opzioni è disponibile anche Visual Studio casella di ricerca della pagina. Nella casella di ricerca nella parte superiore dell'IDE digitare **My Category.** Nei risultati verrà visualizzato My **Category -> My Grid Page** (Categoria -> Pagina griglia).
 
 ## <a name="create-a-tools-options-custom-page"></a>Creare una pagina personalizzata di Opzioni degli strumenti
 
  In questa sezione viene creata una pagina Opzioni strumenti con un'interfaccia utente personalizzata. Usare questa pagina per visualizzare e modificare il valore di una proprietà.
 
-1. Aprire il file *MyToolsOptionsPackage nell'editor* del codice.
+1. Aprire il file *MyToolsOptionsPackage* nell'editor del codice.
 
 2. Aggiungere l'istruzione using seguente.
 

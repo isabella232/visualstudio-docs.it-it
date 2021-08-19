@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5ae51d6c7ec8dc87ac137a57b3e2bfee81c2c612329798124e8cb752e4a0d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d3a06891aa68b8cacbb64e6d65830de86ee3bbda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345705"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044972"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Riferimenti di Debug Interface Access SDK
 

@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;Elemento PackageFiles (programma di avvio automatico) | Microsoft Docs'
-description: Informazioni sull'elemento PackageFiles, che contiene elementi PackageFile che definiscono i pacchetti di installazione eseguiti come risultato dell'elemento Command.
+title: '&lt;Elemento &gt; PackageFiles (programma di avvio automatico) | Microsoft Docs'
+description: Informazioni sull'elemento PackageFiles, che contiene gli elementi PackageFile che definiscono i pacchetti di installazione eseguiti come risultato dell'elemento Command.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,17 +15,18 @@ ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fbf76fec604819d7944a7b54fa4b2421e37c111
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d986c13a4c575fa70dd4496c0b87073baa1615f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925365"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080377"
 ---
-# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;&gt;Elemento PackageFiles (programma di avvio automatico)
-L' `PackageFiles` elemento contiene `PackageFile` elementi che definiscono i pacchetti di installazione eseguiti come risultato dell' `Command` elemento.
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Elemento PackageFiles &gt; (programma di avvio automatico)
+`PackageFiles`L'elemento contiene elementi che definiscono i pacchetti di installazione `PackageFile` eseguiti come risultato `Command` dell'elemento .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,23 +49,23 @@ L' `PackageFiles` elemento contiene `PackageFile` elementi che definiscono i pac
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|Facoltativa. Se è impostato su `false` , il programma di installazione scaricherà solo i file a cui fa riferimento l' `Command` elemento. Se è impostato su `true` , tutti i file verranno scaricati.<br /><br /> Se è impostato su `IfNotHomesite` , il comportamento del programma di installazione sarà identico a quello di se `False` `ComponentsLocation` è impostato su `HomeSite` e in caso contrario si comporterà come se `True` . Questa impostazione può essere utile per consentire ai pacchetti di programmi di avvio automatico di eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|
+|`CopyAllPackageFiles`|Facoltativa. Se impostato su `false` , il programma di installazione scarica solo i file a cui viene fatto riferimento dall'elemento `Command` . Se impostato su `true` , verranno scaricati tutti i file.<br /><br /> Se impostato su , il programma di installazione si comporterà come se fosse impostato su e in caso contrario si comporterà come `IfNotHomesite` `False` se `ComponentsLocation` `HomeSite` `True` . Questa impostazione può essere utile per consentire ai pacchetti che sono a loro volta programmi di bootstrap di eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|
 
 ## <a name="packagefile"></a>PackageFile
- L' `PackageFile` elemento è un elemento figlio dell' `PackageFiles` elemento. Un `PackageFiles` elemento deve contenere almeno un `PackageFile` elemento.
+ `PackageFile`L'elemento è figlio `PackageFiles` dell'elemento . Un `PackageFiles` elemento deve avere almeno un elemento `PackageFile` .
 
  `PackageFile` ha gli attributi seguenti.
 
 | Attributo | Descrizione |
 |---------------| - |
-| `Name` | Obbligatorio. Nome del file del pacchetto. Si tratta del nome a cui l' `Command` elemento fa riferimento quando definisce le condizioni in base alle quali viene installato un pacchetto. Questo valore viene usato anche come chiave nella `Strings` tabella per recuperare il nome localizzato che gli strumenti come [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizzeranno per descrivere il pacchetto. |
+| `Name` | Obbligatorio. Nome del file del pacchetto. Si tratta del nome a cui `Command` l'elemento farà riferimento quando definisce le condizioni in cui viene installato un pacchetto. Questo valore viene usato anche come chiave nella tabella per recuperare il nome localizzato che verrà usato da strumenti come `Strings` [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per descrivere il pacchetto. |
 | `HomeSite` | facoltativo. Percorso del pacchetto nel server remoto, se non è incluso nel programma di installazione. |
 | `CopyOnBuild` | facoltativo. Specifica se il programma di avvio automatico deve copiare il file del pacchetto sul disco in fase di compilazione. Il valore predefinito è true. |
-| `PublicKey` | Chiave pubblica crittografata del firmatario del certificato del pacchetto. Obbligatorio se `HomeSite` viene utilizzato; in caso contrario, facoltativo. |
-| `Hash` | facoltativo. Hash SHA1 del file del pacchetto. Viene utilizzato per verificare l'integrità del file al momento dell'installazione. Se non è possibile calcolare l'hash identico dal file del pacchetto, il pacchetto non verrà installato. |
+| `PublicKey` | Chiave pubblica crittografata del firmatario del certificato del pacchetto. Obbligatorio se `HomeSite` viene utilizzato ; in caso contrario, facoltativo. |
+| `Hash` | facoltativo. Hash SHA1 del file del pacchetto. Viene usato per verificare l'integrità del file in fase di installazione. Se non è possibile calcolare l'hash identico dal file del pacchetto, il pacchetto non verrà installato. |
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente vengono definiti i pacchetti per il .NET Framework pacchetto ridistribuibile e le relative dipendenze, ad esempio il Windows Installer.
+ Nell'esempio di codice seguente vengono definiti i pacchetti per .NET Framework ridistribuibile e le relative dipendenze, ad esempio il programma di Windows.
 
 ```xml
 <PackageFiles>
@@ -76,6 +77,6 @@ L' `PackageFiles` elemento contiene `PackageFile` elementi che definiscono i pac
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [\<Product> elemento](../deployment/product-element-bootstrapper.md)
-- [\<Package> elemento](../deployment/package-element-bootstrapper.md)
-- [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)
+- [\<Product> Elemento](../deployment/product-element-bootstrapper.md)
+- [\<Package> Elemento](../deployment/package-element-bootstrapper.md)
+- [Informazioni di riferimento sullo schema di prodotti e pacchetti](../deployment/product-and-package-schema-reference.md)

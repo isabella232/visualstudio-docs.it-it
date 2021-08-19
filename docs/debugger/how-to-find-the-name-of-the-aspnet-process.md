@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: ea5a2c954f031139c66616f80c4dc5b44d2efb5d8b0aa0329c5e043d4a75d909
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd2bf1a08eeaf1467ae948c78f84d7bfbab67d12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379126"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043947"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Trovare il nome del processo ASP.NET
 
@@ -43,7 +43,7 @@ Per eseguire il debug di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_m
     - *inetinfo.exe* sono applicazioni ASP meno recenti in esecuzione in-process.
 
 >[!NOTE]
->Visual Studio 2012 e versioni precedenti possono essere nel file system ed essere eseguiti nel server di testWebDev.WebServer.exe[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o *WebDev.WebServer40.exe*.  In questo caso, per il debug locale, *connettersiWebDev.WebServer.exe* o *WebDev.WebServer40.exe* anziché al [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo.
+>Visual Studio 2012 e il codice precedente possono essere nel file system ed essere eseguiti nel server di testWebDev.WebServer.exe[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o *WebDev.WebServer40.exe*.  In questo caso, per il debug locale, *connettersiWebDev.WebServer.exe* o *WebDev.WebServer40.exe* anziché al [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo.
 
 **Vedere anche:**
 

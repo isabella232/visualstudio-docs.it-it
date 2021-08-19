@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: b070da362b84aa7e258ad6ecd628ea524e4a9b3daf7abd06118b783399c2baa9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fa26f068b723c4c67c09017eab5a5a5e7ca210fd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121314251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114706"
 ---
 # <a name="invokemethod-activity-designer"></a>ActivityDesigner InvokeMethod
 

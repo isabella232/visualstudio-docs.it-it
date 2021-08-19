@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a07f6c9ad1059b9630bd578338d1c96df3875010edf29018674c71ed597f681
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 451f9963b61d213b8aa95fe83ab68806d6c88bdc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386108"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027825"
 ---
 # <a name="access-models-from-text-templates"></a>Accedere ai modelli da modelli di testo
 
-Usando modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo basati su modelli linguistici specifici del dominio. Per informazioni di base sui modelli di testo, vedere [Generazione di codice e modelli di testo T4.](../modeling/code-generation-and-t4-text-templates.md) I modelli di testo funzionano in modalità sperimentale durante il debug del DSL e funzionano anche in un computer in cui è stato distribuito il DSL.
+Usando modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo basati su modelli linguistici specifici del dominio. Per informazioni di base sui modelli di testo, vedere [Generazione di codice e Modelli di testo T4.](../modeling/code-generation-and-t4-text-templates.md) I modelli di testo funzionano in modalità sperimentale durante il debug del DSL e funzionano anche in un computer in cui è stato distribuito il DSL.
 
 > [!NOTE]
 > Quando si crea una soluzione DSL, nel progetto di debug vengono generati file con estensione **\* tt** del modello di testo di esempio. Quando si modificano i nomi delle classi di dominio, questi modelli non funzionano più. Tuttavia, includono le direttive di base necessarie e forniscono esempi che è possibile aggiornare in modo che corrispondano al linguaggio DSL.
@@ -143,7 +143,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  Tuttavia, una delle funzioni della direttiva specifica di DSL è importare lo spazio dei nomi DSL, in modo che il codice del modello possa usare le classi di dominio definite in tale DSL. Poiché non si usa la direttiva , è necessario aggiungere le direttive **\<assembly>** e per tutti i modelli che è possibile **\<import>** caricare. Questo è semplice se i diversi modelli che è possibile caricare sono tutte istanze dello stesso DSL.
 
- Per caricare il file, il metodo più efficace è usare Visual Studio ModelBus. In uno scenario tipico, il modello di testo userà una direttiva specifica di DSL per caricare il primo modello nel modo consueto. Tale modello conterrà riferimenti ModelBus a un altro modello. È possibile usare ModelBus per aprire il modello a cui si fa riferimento e accedere a un particolare elemento. Per altre informazioni, vedere [Uso Visual Studio ModelBus in un modello di testo.](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ Per caricare il file, il metodo più efficace è l'uso Visual Studio ModelBus. In uno scenario tipico, il modello di testo userà una direttiva specifica di DSL per caricare il primo modello nel modo consueto. Tale modello conterrà riferimenti ModelBus a un altro modello. È possibile usare ModelBus per aprire il modello a cui si fa riferimento e accedere a un particolare elemento. Per altre informazioni, vedere [Uso Visual Studio ModelBus in un modello di testo.](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
  In uno scenario meno comune, potrebbe essere necessario aprire un file di modello per il quale si dispone solo di un nome file e che potrebbe non essere presente nel progetto Visual Studio corrente. In questo caso, è possibile aprire il file usando la tecnica descritta in [Procedura: Aprire un](../modeling/how-to-open-a-model-from-file-in-program-code.md)modello da file nel codice programma .
 

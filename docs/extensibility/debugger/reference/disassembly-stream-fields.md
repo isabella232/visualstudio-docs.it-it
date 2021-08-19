@@ -1,5 +1,5 @@
 ---
-description: Specifica le informazioni da recuperare su un campo Disassembly.
+description: Specifica le informazioni da recuperare su un campo disassembly.
 title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9241331e4e66c4a34a3afb29b54cf2ce6aab0e0f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4a43ce4836e761e2660d52d634672f878a86bc66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096187"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080078"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
-Specifica le informazioni da recuperare su un campo Disassembly.
+Specifica le informazioni da recuperare su un campo disassembly.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,55 +68,55 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Campi
 `DSF_ADDRESS`\
-Inizializzare/usare il `bstrAddress` campo.
+Inizializzare/usare il `bstrAddress` campo .
 
 `DSF_ADDRESSOFFSET`\
-Inizializzare/usare il `bstrAddressOffset` campo.
+Inizializzare/usare il `bstrAddressOffset` campo .
 
 `DSF_CODEBYTES`\
-Inizializzare/usare il `bstrCodeBytes` campo.
+Inizializzare/usare il `bstrCodeBytes` campo .
 
 `DSF_OPCODE`\
-Inizializzare/usare il `bstrOpCode` campo.
+Inizializzare/usare il `bstrOpCode` campo .
 
 `DSF_OPERANDS`\
-Inizializzare/usare il `bstrOperands` campo.
+Inizializzare/usare il `bstrOperands` campo .
 
 `DSF_SYMBOL`\
-Inizializzare/usare il `bstrSymbol` campo.
+Inizializzare/usare il `bstrSymbol` campo .
 
 `DSF_CODELOCATIONID`\
-Inizializzare/usare il `uCodeLocationId` campo.
+Inizializzare/usare il `uCodeLocationId` campo .
 
 `DSF_POSITION`\
-Inizializzare/usare `posBeg` i `posEnd` campi e.
+Inizializzare/usare `posBeg` i campi e `posEnd` .
 
 `DSF_DOCUMENTURL`\
-Inizializzare/usare il `bstrDocumentUrl` campo.
+Inizializzare/usare il `bstrDocumentUrl` campo .
 
 `DSF_BYTEOFFSET`\
-Inizializzare/usare il `dwByteOffset` campo.
+Inizializzare/usare il `dwByteOffset` campo .
 
 `DSF_FLAGS`\
-Inizializza/usa il `dwFlags` campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
+Inizializzare/usare `dwFlags` il campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
 Includere i nomi dei simboli nel `bstrOperands` campo.
 
 `DSF_ALL`\
-Specifica tutti i campi per il flusso Disassembly.
+Specifica tutti i campi per il flusso disassembly.
 
 ## <a name="remarks"></a>Commenti
-Passato come parametro al metodo [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) per indicare quali campi della struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devono essere inizializzati.
+Passato come parametro al [metodo Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) per indicare quali campi della [struttura DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devono essere inizializzati.
 
-Utilizzato per il `dwFields` membro della `DisassemblyData` struttura per indicare quali campi vengono utilizzati e validi quando viene restituita la struttura.
+Utilizzato per il membro della struttura per indicare quali campi vengono utilizzati e `dwFields` `DisassemblyData` validi quando viene restituita la struttura .
 
-Questi valori possono essere combinati con un bit per bit `OR` .
+Questi valori possono essere combinati con un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

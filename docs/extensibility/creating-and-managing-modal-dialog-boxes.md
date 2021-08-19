@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88c1f943fd7c8579673047acbc533ca4577992bc7e13258276496a2499129e5c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a7565e9dd7c1382daabe14b9ce80a641a69813d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146069"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Creare e gestire finestre di dialogo modali
 Quando si crea una finestra di dialogo modale all'interno di Visual Studio, è necessario assicurarsi che la finestra padre della finestra di dialogo sia disabilitata mentre viene visualizzata la finestra di dialogo, quindi ri abilitare nuovamente la finestra padre dopo la chiusura della finestra di dialogo. In caso contrario, è possibile che venga visualizzato l'errore Microsoft Visual Studio arrestarsi perché è attiva una finestra *di dialogo modale. Chiudere il dialogo attivo e riprovare.*

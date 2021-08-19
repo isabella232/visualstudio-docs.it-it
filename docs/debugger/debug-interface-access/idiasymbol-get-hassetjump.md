@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6face230a71d30514f589a77964f14ef4236b90d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 494121aebb41e0582a7538a13239010baca976513f0713373b4bbc11e2215b0a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128679"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436475"
 ---
 # <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
 Recupera un flag che specifica se la funzione contiene un uso del [comando setjmp](/cpp/c-runtime-library/reference/setjmp) (associato al [comando longjmp,](/cpp/c-runtime-library/reference/longjmp) che formano il metodo di gestione delle eccezioni in stile C).

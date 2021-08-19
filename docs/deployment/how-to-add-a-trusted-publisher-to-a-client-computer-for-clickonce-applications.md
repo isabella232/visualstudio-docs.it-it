@@ -1,6 +1,6 @@
 ---
-title: Aggiungi autore attendibile alla casella client (ClickOnce)
-description: Informazioni su come aggiungere un certificato a un computer client in modo che le applicazioni ClickOnce vengano eseguite a un livello di attendibilità superiore senza chiedere conferma all'utente.
+title: Casella Aggiungi autore attendibile al client (ClickOnce)
+description: Informazioni su come aggiungere un certificato a un computer client in modo che le applicazioni ClickOnce a un livello di attendibilità superiore senza chiedere conferma all'utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,14 +15,15 @@ ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: c04b8d700d7739f0e4ef1fba259aab0595cea28c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5005c64ba03b91a9150258e501e8ef07deac00ac
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947814"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146407"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce
 Con la distribuzione di applicazioni attendibili, è possibile configurare i computer client in modo che le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siano eseguite con un livello di attendibilità superiore senza chiedere conferma all'utente. Le procedure seguenti illustrano come usare lo strumento da riga di comando CertMgr.exe per aggiungere un certificato dell'autore all'archivio editori attendibili in un computer client.
@@ -50,7 +51,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
 1. Ottenere un certificato digitale da un'autorità di certificazione.
 
-2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per ulteriori informazioni sui formati di certificato, vedere [esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per altre informazioni sui formati dei certificati, vedere [Esportare un certificato.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))
 
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:
 

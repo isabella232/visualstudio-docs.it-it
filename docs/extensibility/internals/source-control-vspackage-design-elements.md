@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a694ddc6ddd6c9872e242311ce6d197cbefc9520957e5506e238063bf8e233b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a398b85320a6218221a7e67640f5bd3c73f8c197
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414389"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132249"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Elementi di progettazione dei pacchetti VSPackage di controllo del codice sorgente
 Negli argomenti di questa sezione viene descritta la struttura che il pacchetto VSPackage del controllo del codice sorgente deve implementare per una completa integrazione. Elenca anche le interfacce e i servizi che il controllo del codice sorgente VSPackage può implementare e le interfacce e i servizi che il pacchetto VSPackage del controllo del codice sorgente può usare da altri componenti per supportare il modello e la funzionalità del controllo del codice [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sorgente.

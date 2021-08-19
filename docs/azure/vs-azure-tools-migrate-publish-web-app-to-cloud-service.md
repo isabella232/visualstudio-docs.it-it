@@ -1,33 +1,34 @@
 ---
-title: Eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud
+title: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud
 description: Informazioni su come eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud di Azure da Visual Studio
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 3154ffd50043ecc824ca44fcae86e54e511ab5bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28403c0d33eb9e1076b334a977deaecf6a0a99801a87a33edbcb25f7c9aa7b2d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844086"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121456239"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud di Azure da Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure da Visual Studio
 
 Per sfruttare i servizi di hosting e scalabilità di Azure, è possibile eseguire la migrazione e la distribuzione dell'applicazione Web in un servizio cloud di Azure. Sono necessarie solo modifiche minime al codice. Questo articolo illustra solo la procedura di distribuzione in un servizio cloud; per il Servizio app, vedere [Distribuire un'app Web nel Servizio app di Azure](/azure/app-service/app-service-deploy-local-git).
 
 > [!Important]
-> Questa migrazione è supportata solo per i progetti di flusso di lavoro ASP.NET, WCF e WCF specifici. Non è supportata per progetti ASP.NET Core. Vedere [Modelli di progetto supportati](#supported-project-templates).
+> Questa migrazione è supportata solo per i progetti ASP.NET, WCF e flusso di lavoro WCF specifici. Non è supportata per progetti ASP.NET Core. Vedere [Modelli di progetto supportati](#supported-project-templates).
 
 ## <a name="migrate-a-project-to-cloud-services"></a>Migrare un progetto in un servizio cloud
 
-1. Fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **aggiungi > nuovo progetto** e aggiungere un nuovo progetto **servizio cloud di Azure (versione classica)** alla soluzione esistente.
-1. Nella finestra di dialogo **nuovo Microsoft Azure servizio cloud (classico)** , fare clic su OK senza aggiungere alcun ruolo al progetto.
-1. Fare clic con il pulsante destro del mouse sul nodo ruoli nel progetto di servizi cloud appena aggiunto e scegliere **Aggiungi progetto di ruolo Web nella soluzione...**.
-1. Nella finestra di dialogo **associa a progetto di ruolo** selezionare il progetto che si desidera associare come ruolo Web.
+1. Fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi **> Nuovo Project...** e aggiungere un nuovo progetto servizio cloud di **Azure (versione classica)** alla soluzione esistente.
+1. Nella finestra **di dialogo Microsoft Azure Cloud Service (versione classica)** fare clic su OK senza aggiungere ruoli al progetto.
+1. Fare clic con il pulsante destro del mouse sul nodo ruoli nel progetto servizi cloud appena aggiunto e selezionare Aggiungi **ruolo Web Project nella soluzione...**.
+1. Nella finestra **di dialogo Associa Project** ruolo selezionare il progetto che si vuole associare come ruolo Web.
 
    > [!Important]
    > Se si dispone di altri assembly o file necessari per l'applicazione Web, è necessario impostare manualmente le proprietà di questi file. Per informazioni su come impostare queste proprietà, vedere [Includere file nel pacchetto del servizio](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).

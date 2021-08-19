@@ -1,20 +1,21 @@
 ---
 title: Dati di diagnostica e i log generati dal sistema
-description: Informazioni sui log generati dal sistema di Visual Studio, sui tipi di dati raccolti e sul modo in cui vengono usati per risolvere i problemi e migliorare la qualità del prodotto.
+description: Informazioni Visual Studio log generati dal sistema, sui tipi di dati raccolti e su come vengono usati per risolvere i problemi e migliorare la qualità del prodotto.
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
-ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
+ms.openlocfilehash: 1c273da8e1be162eccae100db817ab78c58f8582
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106171836"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028202"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Log generati dal sistema raccolti da Visual Studio
 
@@ -22,11 +23,11 @@ Visual Studio raccoglie i log generati dal sistema per la risoluzione dei proble
 
 ## <a name="types-of-collected-data"></a>Tipi di dati raccolti
 
-Visual Studio raccoglie i log generati dal sistema per arresti anomali, non risposta dell'interfaccia utente e utilizzo elevato della CPU o della memoria. Vengono anche raccolte informazioni sugli errori rilevati durante l'installazione o l'utilizzo del prodotto. I dati raccolti variano a seconda dell'errore e possono includere le analisi degli stack, i dump di memoria e le informazioni sulle eccezioni:
+Visual Studio raccoglie i log generati dal sistema per arresti anomali, non risponde all'interfaccia utente e utilizzo elevato della CPU o della memoria. Vengono anche raccolte informazioni sugli errori rilevati durante l'installazione o l'utilizzo del prodotto. I dati raccolti variano a seconda dell'errore e possono includere le analisi degli stack, i dump di memoria e le informazioni sulle eccezioni:
 
 - Per l'utilizzo elevato della CPU e la mancanza di risposta, vengono raccolte le analisi degli stack dei thread di Visual Studio interessati.
 
-- Per i casi in cui le tracce dello stack di alcuni thread non sono sufficienti per determinare la causa principale del problema, ad esempio, arresti anomali, mancata risposta o utilizzo elevato della memoria, viene raccolto un *dump* della memoria. Il dump rappresenta lo stato del processo nel momento in cui si è verificato l'errore.
+- Nei casi in cui le tracce dello stack di alcuni thread non sono sufficienti per determinare la causa radice del problema, ad esempio arresti anomali, non risponde o utilizzo elevato della memoria, si raccoglie un *dump* della memoria . Il dump rappresenta lo stato del processo nel momento in cui si è verificato l'errore.
 
 - Per le condizioni di errore imprevisto, ad esempio un'eccezione durante il tentativo di scrivere in un file su disco, vengono raccolte informazioni sull'eccezione. Le informazioni includono il nome dell'eccezione, l'analisi dello stack del thread in cui si è verificata l'eccezione, il messaggio associato all'eccezione e altre informazioni sull'eccezione specifica.
 
@@ -54,7 +55,7 @@ Il flusso di lavoro per determinare la causa radice di un errore varia a seconda
 
 ### <a name="error-classification"></a>Classificazione degli errori
 
-In base ai log, gli errori sono classificati e conteggiati per stabilire la priorità della loro analisi. Ad esempio, è possibile che venga individuato "System.IO. \_ _Error. WinIOError "in" System.IO.FileStream.Init "si è verificato 500 volte nella versione \<x> del prodotto e ha la frequenza massima di occorrenza in tale versione.
+In base ai log, gli errori sono classificati e conteggiati per stabilire la priorità della loro analisi. Ad esempio, è possibile scoprire che "System.IO. \_ _Error.WinIOError" in "System.IO.FileStream.Init" si è verificato 500 volte nella versione del prodotto e ha la frequenza di occorrenza più \<x> elevata in tale versione.
 
 ### <a name="work-items-for-tracking"></a>Elementi di lavoro per il rilevamento
 
@@ -70,7 +71,7 @@ Gli autori delle estensioni devono limitare l'esposizione delle informazioni per
 
 ## <a name="opt-out-of-data-collection"></a>Rifiutare esplicitamente la raccolta dei dati
 
-Considerate le finalità della raccolta dei dati e i vincoli di accesso e memorizzazione, si consiglia di usare le impostazioni di privacy predefinite di Visual Studio e Windows. È possibile tuttavia [rifiutare esplicitamente](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) il programma Analisi utilizzo software di Visual Studio. Quando si rifiuta esplicitamente, si rifiuta esplicitamente la raccolta dei dati di diagnostica **facoltativi** . È **necessaria** una raccolta di dati di diagnostica per assicurarsi che Visual Studio sia protetto, aggiornato e funzioni come previsto. La raccolta dei dati di diagnostica richiesta non sarà interessata dalla scelta di rifiutare esplicitamente la VSCEIP. Per rifiutare esplicitamente la raccolta di log generati dal sistema per tutti i programmi, vedere [Diagnostica, feedback e privacy in Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Le opzioni possono variare a seconda della versione di Windows in uso.
+Considerate le finalità della raccolta dei dati e i vincoli di accesso e memorizzazione, si consiglia di usare le impostazioni di privacy predefinite di Visual Studio e Windows. È possibile tuttavia [rifiutare esplicitamente](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) il programma Analisi utilizzo software di Visual Studio. Quando si rifiuta esplicitamente, si rifiuta esplicitamente la raccolta **dei dati** di diagnostica facoltativa. È necessaria una raccolta **di** dati di diagnostica per assicurarsi che Visual Studio sia sicuro, aggiornato e funzioni come previsto. La raccolta dei dati di diagnostica richiesta non sarà interessata dalla scelta di rifiutare esplicitamente VSCEIP. Per rifiutare esplicitamente la raccolta di log generati dal sistema per tutti i programmi, vedere [Diagnostica, feedback e privacy in Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Le opzioni possono variare a seconda della versione di Windows in uso.
 
 ## <a name="see-also"></a>Vedi anche
 

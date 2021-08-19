@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c62a9b9eb14ddfc010c69d2969ad2ccf708142dfc3dddcefc86949aa3e4ebda0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 05d3e5caab93b0e4604a662a095f8a094b183b5b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044374"
 ---
 # <a name="idiasegmentget_offset"></a>IDiaSegment::get_offset
 Recupera l'offset, in segmenti, in cui inizia la sezione.

@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79b5dc9863be3e9f0bdc0fadbd292948d8ad352f0ff6b5435d28fc07b7ad1fb9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 493ac3476d6387b6796cd827d98b5f71970aa5f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400166"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062173"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 
@@ -33,7 +33,7 @@ ms.locfileid: "121400166"
 
 ## <a name="category-list"></a>Elenco di categorie
 
-I risultati delle ricerche effettuate in Avvio veloce vengono visualizzati in quattro categorie: **Usati di recente**, **Menu**, **Opzioni** e **Documenti aperti** con un'indicazione del numero di elementi in ogni categoria. Per attraversare i risultati della ricerca per categoria, scegliere **i tasti CTRL** Q per visualizzare tutti i risultati della categoria +  successiva. Dopo aver visualizzato l'ultima categoria, **CTRL** + **Q** mostra alcuni risultati di ogni categoria. Premere **CTRL** + **MAIUSC** + **Q per** spostarsi tra le categorie in ordine inverso. Per visualizzare tutti i risultati della ricerca in una categoria, scegliere il nome della categoria.
+I risultati delle ricerche effettuate in Avvio veloce vengono visualizzati in quattro categorie: **Usati di recente**, **Menu**, **Opzioni** e **Documenti aperti** con un'indicazione del numero di elementi in ogni categoria. Per scorrere i risultati della ricerca per categoria, premere **CTRL** Q per visualizzare tutti i +  risultati della categoria successiva. Quando viene visualizzata l'ultima categoria, **CTRL** + **Q** mostra alcuni risultati di ogni categoria. Premere **CTRL** + **MAIUSC** + **Q** per spostarsi tra le categorie in ordine inverso. Per visualizzare tutti i risultati della ricerca in una categoria, scegliere il nome della categoria.
 
 È possibile usare i metodi rapidi seguenti per limitare la ricerca a categorie specifiche.
 
@@ -45,7 +45,7 @@ I risultati delle ricerche effettuate in Avvio veloce vengono visualizzati in qu
 |Documenti|@doc<br /><br /> Ad esempio: `@doc program.cs`|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
 
 > [!NOTE]
-> È possibile modificare i tasti di scelta rapida nella **pagina**  >  **Tastiera** generale nella **finestra di dialogo** Opzioni .
+> È possibile modificare i tasti di scelta rapida nella **pagina**  >  **Tastiera** generale della **finestra di** dialogo Opzioni .
 
 ## <a name="show-previous-results"></a>Visualizzare i risultati precedenti
 

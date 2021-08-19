@@ -1,5 +1,5 @@
 ---
-description: Specifica la posizione in cui si trova un assembly.
+description: Specifica dove si trova un assembly.
 title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 191e22dc7b0a70fc6eb83e6237bdcadd25995c2b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f76437d28c9adccd3e98ab31dae4c19c0411230c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085442"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080130"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Specifica la posizione in cui si trova un assembly.
+Specifica dove si trova un assembly.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,20 +56,20 @@ L'assembly si trova nello spazio dei nomi corrente.
 L'assembly si trova in una directory utente.
 
 `ALR_SHAREDDIR`\
-L'assembly si trova in una directory condivisa.
+L'assembly si trova nella directory condivisa.
 
 `ALR_REMOTEDIR`\
 L'assembly si trova in una directory remota.
 
 ## <a name="remarks"></a>Commenti
-Questi valori vengono restituiti dai metodi [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .
+Questi valori vengono restituiti dai [metodi ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) [e GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
 
-Questi valori possono essere combinati con l' `OR` operazione.
+Questi valori possono essere combinati con `OR` l'operazione .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

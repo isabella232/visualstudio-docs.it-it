@@ -7,15 +7,16 @@ ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb96cdafd08825f14c83d99471356f4e3a92eea5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e015195077c925bfb214ca9dd5f3f0ea9509c36
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922406"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027539"
 ---
 # <a name="overviews-performance-tools"></a>Panoramiche (strumenti per le prestazioni)
 Questa sezione fornisce una panoramica dei concetti e della terminologia per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilizzabili per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.
@@ -45,7 +46,7 @@ Questa sezione fornisce una panoramica dei concetti e della terminologia per gli
 
  Vengono fornite informazioni sui valori dei dati restituiti quando si usa il metodo di profilatura della concorrenza.
 
-- [Finestra Esplora prestazioni](../profiling/performance-explorer-window.md)
+- [Esplora prestazioni finestra](../profiling/performance-explorer-window.md)
 
  Viene descritta la finestra usata per configurare e avviare sessioni di prestazioni.
 
@@ -59,5 +60,5 @@ Questa sezione fornisce una panoramica dei concetti e della terminologia per gli
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Attività iniziali](../profiling/getting-started-with-performance-tools.md)
+- [Introduzione](../profiling/getting-started-with-performance-tools.md)
 - [Esplora prestazioni](../profiling/performance-explorer.md)

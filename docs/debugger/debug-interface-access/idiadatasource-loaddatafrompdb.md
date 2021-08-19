@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 053a09d770069bc0030025fb6be130276b9942d327dc971b400e7a434e038a2c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 957cee1c9694f31f0fecd2123d7b4d7fdf104df5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044896"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Apre e prepara un file di database di programma (con estensione pdb) come origine dati di debug.

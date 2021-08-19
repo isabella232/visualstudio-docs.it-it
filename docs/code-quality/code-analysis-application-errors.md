@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7358c266b40d900670c00cd2f24cb91f20b7b3c5e454f84559474cd5d554be
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 62ee5dd35eaa779292f89696f6ab18f6d1dbbeec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405630"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098073"
 ---
 # <a name="code-analysis-application-errors"></a>Errori nell'applicazione dell'analisi del codice
 
@@ -57,7 +57,7 @@ Questa sezione è un riferimento ai messaggi di errore generati dallo strumento 
 |[CA0503](ca0503.md)|La proprietà è deprecata. Usare la proprietà di sovvazione|
 |[CA0504](ca0504.md)|La directory delle regole è stata ignorata perché non esiste|
 |[CA0505](ca0505.md)|La proprietà è deprecata. Usare la proprietà di sovvazione|
-|[Errori di FxCopCmd](fxcopcmd-errors.md)|Errori di analisi del codice gestito.|
+|[Errori fxCopCmd](fxcopcmd-errors.md)|Errori di analisi del codice gestito.|
 
 ## <a name="related-sections"></a>Sezioni correlate
 

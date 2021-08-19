@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 48381d452b0c67a34581092a47896aba60e7125c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: b852dce9799ebe7aee87bbecbe2beee7a6cd4616
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115018"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procedura dettagliata: Creare menu di scelta rapida per i segnalibri
-  Questa procedura dettagliata illustra come creare menu di scelta rapida per <xref:Microsoft.Office.Tools.Word.Bookmark> i controlli in una personalizzazione a livello di documento per Word. Quando un utente fa clic con il pulsante destro del mouse sul testo in un segnalibro, viene visualizzato un menu di scelta rapida che offre all'utente le opzioni per la formattazione del testo.
+  Questa procedura dettagliata illustra come creare menu di scelta rapida per i controlli in una personalizzazione a livello di <xref:Microsoft.Office.Tools.Word.Bookmark> documento per Word. Quando un utente fa clic con il pulsante destro del mouse sul testo in un segnalibro, viene visualizzato un menu di scelta rapida che offre all'utente le opzioni per la formattazione del testo.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
@@ -35,7 +36,7 @@ ms.locfileid: "107826304"
 
 - [Aggiungere testo e segnalibri al documento](#BKMK_addtextandbookmarks).
 
-- [Aggiungere comandi a un menu di scelta rapida](#BKMK_AddCmndsShortMenu).
+- [Aggiungere comandi a un menu di scelta rapida.](#BKMK_AddCmndsShortMenu)
 
 - [Formattare il testo nel segnalibro](#BKMK_formattextbkmk).
 
@@ -49,16 +50,16 @@ ms.locfileid: "107826304"
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
 ## <a name="create-the-project"></a><a name="BKMK_CreateProject"></a> Creare il progetto
- Il primo passaggio consiste nel creare un progetto di documento di Word in Visual Studio.
+ Il primo passaggio consiste nel creare un progetto documento di Word in Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-- Creare un progetto di documento di Word con il nome **My Bookmark Shortcut Menu**. Nella procedura guidata selezionare **Crea un nuovo documento.** Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Creare un progetto di documento di Word con il nome **My Bookmark Shortcut Menu**. Nella procedura guidata selezionare **Crea un nuovo documento**. Per altre informazioni, vedere [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il progetto Menu di **scelta** rapida Segnalibro a **Esplora soluzioni**.
+     Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **progetto My Bookmark Shortcut Menu** a **Esplora soluzioni**.
 
 ## <a name="add-text-and-bookmarks-to-the-document"></a><a name="BKMK_addtextandbookmarks"></a> Aggiungere testo e segnalibri al documento
- Aggiungere testo al documento e quindi aggiungere due segnalibri sovrapposti.
+ Aggiungere del testo al documento e quindi aggiungere due segnalibri sovrapposti.
 
 ### <a name="to-add-text-to-your-document"></a>Per aggiungere testo al documento
 
@@ -81,7 +82,7 @@ ms.locfileid: "107826304"
     `bookmark2` viene aggiunto al documento.
 
    > [!NOTE]
-   > Le parole "fare clic con il pulsante destro del mouse sul testo" sono sia in `bookmark1` che in `bookmark2` .
+   > Le parole "fare clic con il pulsante destro del mouse sul testo" sono sia in `bookmark1` che `bookmark2` in .
 
    Quando si aggiunge un segnalibro a un documento in fase di progettazione, viene <xref:Microsoft.Office.Tools.Word.Bookmark> creato un controllo . È possibile programmare in base a diversi eventi del segnalibro. È possibile scrivere codice nel caso del segnalibro in modo che quando l'utente fa clic con il pulsante destro del mouse sul testo nel <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> segnalibro, viene visualizzato un menu di scelta rapida.
 
@@ -96,16 +97,16 @@ ms.locfileid: "107826304"
 
 3. Sulla barra dei menu scegliere **Visualizza**  >  **codice**.
 
-     Il file **di classe ThisDocument** viene aperto nell'editor di codice.
+     Il file **di classe ThisDocument** verrà aperto nell'editor di codice.
 
-4. Aggiungere il codice seguente alla **classe ThisDocument.** Questo codice esegue l'override del metodo CreateRibbonExtensibilityObject e restituisce la classe XML della barra multifunzione all'applicazione di Office.
+4. Aggiungere il codice seguente alla **classe ThisDocument.** Questo codice esegue l'override del metodo CreateRibbonExtensibilityObject e restituisce la classe XML della barra multifunzione all Office appliazione.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet1":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet1":::
 
 5. In **Esplora soluzioni** selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato Ribbon1.xml.
 
-6. Sulla barra dei menu scegliere **Visualizza**  >  **codice.**
+6. Sulla barra dei menu scegliere **Visualizza**  >  **codice**.
 
      Il file XML della barra multifunzione viene aperto nell'editor di codice.
 
@@ -127,7 +128,7 @@ ms.locfileid: "107826304"
 
      Questo codice aggiunge due pulsanti al menu di scelta rapida visualizzato quando si fa clic con il pulsante destro del mouse sul documento.
 
-8. In **Esplora soluzioni** fare clic con il pulsante destro del `ThisDocument` mouse su e quindi scegliere Visualizza **codice.**
+8. In **Esplora soluzioni** fare clic con il pulsante destro `ThisDocument` del mouse su e quindi scegliere Visualizza **codice**.
 
 9. Dichiarare le variabili seguenti e una variabile segnalibro a livello di classe.
 
@@ -136,7 +137,7 @@ ms.locfileid: "107826304"
 
 10. In **Esplora soluzioni** selezionare il file di codice della barra multifunzione. Per impostazione predefinita, il file di codice della barra multifunzione è **denominato Ribbon1.cs** o **Ribbon1.vb.**
 
-11. Sulla barra dei menu scegliere **Visualizza**  >  **codice.**
+11. Sulla barra dei menu scegliere **Visualizza**  >  **codice**.
 
      Il file di codice della barra multifunzione viene aperto nell'editor di codice.
 
@@ -154,11 +155,11 @@ ms.locfileid: "107826304"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet6":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet6":::
 
-2. **Esplora soluzioni** selezionare **ThisDocument.cs** o **ThisDocument.vb.**
+2. **Esplora soluzioni** selezionare **ThisDocument.cs** o **ThisDocument.vb**.
 
-3. Sulla barra dei menu scegliere **Visualizza**  >  **codice.**
+3. Sulla barra dei menu scegliere **Visualizza**  >  **codice**.
 
-     Il file **di classe ThisDocument** viene aperto nell'editor di codice.
+     Il file **di classe ThisDocument** verrà aperto nell'editor di codice.
 
 4. Aggiungere il codice seguente alla **classe ThisDocument.**
 
@@ -168,12 +169,12 @@ ms.locfileid: "107826304"
     > [!NOTE]
     > È necessario scrivere codice per gestire il caso in cui i segnalibri si sovrappongono. In caso contrario, per impostazione predefinita, il codice verrà chiamato per tutti i segnalibri nella selezione.
 
-5. In C# è necessario aggiungere gestori eventi per i controlli segnalibro <xref:Microsoft.Office.Tools.Word.Document.Startup> all'evento . Per informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md)
+5. In C# è necessario aggiungere gestori eventi per i controlli segnalibro <xref:Microsoft.Office.Tools.Word.Document.Startup> all'evento . Per informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori](../vsto/how-to-create-event-handlers-in-office-projects.md)eventi in Office progetti .
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet4":::
 
 ## <a name="test-the-application"></a>Testare l'applicazione
- Testare il documento per verificare che le voci di menu grassetto e corsivo vengano visualizzate nel menu di scelta rapida quando si fa clic con il pulsante destro del mouse sul testo in un segnalibro e che il testo sia formattato correttamente.
+ Testare il documento per verificare che le voci di menu in grassetto e corsivo vengano visualizzate nel menu di scelta rapida quando si fa clic con il pulsante destro del mouse sul testo in un segnalibro e che il testo sia formattato correttamente.
 
 ### <a name="to-test-your-document"></a>Per testare il documento
 
@@ -196,7 +197,7 @@ ms.locfileid: "107826304"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
-- [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
+- [Office Personalizzazione dell'interfaccia utente](../vsto/office-ui-customization.md)
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Controllo Segnalibro](../vsto/bookmark-control.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

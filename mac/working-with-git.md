@@ -59,9 +59,9 @@ Queste schede consentono le azioni seguenti:
 
 ## <a name="switching-branches"></a>Cambio di rami
 
-Per impostazione predefinita, il primo ramo creato in un repository è noto come **ramo** principale. Tecnicamente non c'è nulla di diverso tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che viene più spesso pensato nei team di sviluppo come ramo "live" o "di produzione".
+Per impostazione predefinita, il primo ramo creato in un repository è noto come **ramo** principale. Tecnicamente non c'è nulla di diverso tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che viene spesso pensato nei team di sviluppo come ramo "live" o "di produzione".
 
-È possibile creare una linea di sviluppo indipendente diramando main (o qualsiasi altro ramo). In questo modo viene fornita una nuova versione del ramo principale in un momento nel tempo, consentendo lo sviluppo indipendentemente da ciò che è "live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
+È possibile creare una linea di sviluppo indipendente diramando main (o qualsiasi altro ramo). In questo modo viene fornita una nuova versione del ramo principale in un punto nel tempo, consentendo lo sviluppo indipendentemente da ciò che è "live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 
@@ -91,7 +91,7 @@ Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Contro
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file nel repository remoto, premere **Commit,** immettere un messaggio di commit e confermare con il pulsante Commit:
+Per eseguire il commit di un file nel repository remoto, premere **Commit**, immettere un messaggio di commit e confermare con il pulsante Commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 
