@@ -8,24 +8,24 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 56e54aeb628ab6f80cef6400f48be40d675975df3bc8c87b78d1126a70fa5a99
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e8ac1d909cba36a7204ae781aacf1b8fdb2abee0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121363696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098580"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gestire le risorse associate agli account di Azure in Visual Studio Cloud Explorer
 
 ::: moniker range=">=vs-2022"
 > [!Important]
-> Cloud Explorer è stato ritirato in Visual Studio 2022. È invece possibile usare le alternative seguenti:
+> Cloud Explorer è stato ritirato nel Visual Studio 2022. È invece possibile usare le alternative seguenti:
 > - Usare [Microsoft Azure Storage Explorer](/azure/vs-azure-tools-storage-manage-with-storage-explorer) è un'app autonoma gratuita di Microsoft. È possibile usarla per rappresentare facilmente dati di Archiviazione di Azure in Windows, macOS e Linux.
 > - La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l'accesso diretto da riga di comando con privilegi elevati al server del servizio app e al relativo file system. Oltre a essere un utile strumento di debug, supporta operazioni CLI, come l'installazione dei pacchetti.
 >
 > Se necessario, è possibile usare il portale di Azure o continuare a usare il nodo azure di Esplora server nelle versioni precedenti di Visual Studio.
 >
-> Per altre informazioni su Visual Studio 2022, vedere le note [sulla versione](/visualstudio/releases/2022/release-notes-preview/).
+> Per altre informazioni su Visual Studio 2022, vedere le [note sulla versione](/visualstudio/releases/2022/release-notes-preview/).
 
 ::: moniker-end
 
@@ -41,13 +41,13 @@ Cloud Explorer è basato sullo stack di Azure Resource Manager, proprio come il 
 * Account di Microsoft Azure: se non si ha un account, è possibile [iscriversi per ottenere una versione di valutazione gratuita](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) oppure [attivare i vantaggi della sottoscrizione di Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).
 
 > [!NOTE]
-> Per visualizzare Cloud Explorer, premere **CTRL** + **Q** per attivare la casella di ricerca e quindi **immettere Cloud Explorer**.
+> Per visualizzare Cloud Explorer, premere **CTRL** + **Q** per attivare la casella di ricerca e quindi immettere **Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Aggiungere un account di Azure a Cloud Explorer
 
-Per visualizzare le risorse associate a un account Azure, è innanzitutto necessario aggiungere l'account **Cloud Explorer**.
+Per visualizzare le risorse associate a un account Azure, è prima necessario aggiungere l'account **a Cloud Explorer**.
 
-1. Nella **Cloud Explorer** selezionare il pulsante **Gestione** account.
+1. In **Cloud Explorer** selezionare il pulsante **Gestione** account.
 
    ![Icona delle impostazioni account di Azure di Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -114,10 +114,10 @@ L'azione **Open in portal** è disponibile per ogni risorsa. Quando si sceglie q
 
 ## <a name="find-resources-in-cloud-explorer"></a>Cercare risorse in Cloud Explorer
 
-Per individuare le risorse con un nome specifico nelle sottoscrizioni dell'account Azure, immettere il nome nella **casella** Cerca in **Cloud Explorer**.
+Per individuare le risorse con un nome specifico nelle sottoscrizioni dell'account Azure, immettere il nome nella casella di **ricerca** in **Cloud Explorer**.
 
   ![Ricerca di risorse in Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-Quando si immettono caratteri nella **casella Cerca,** nell'albero delle risorse vengono visualizzate solo le risorse che corrispondono a tali caratteri.
+Quando si immettono caratteri nella **casella Di** ricerca, nell'albero delle risorse vengono visualizzate solo le risorse che corrispondono a tali caratteri.
 
 ::: moniker-end

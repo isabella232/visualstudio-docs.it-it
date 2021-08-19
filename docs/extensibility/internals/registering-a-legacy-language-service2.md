@@ -1,5 +1,5 @@
 ---
-title: Registrazione di un servizio di linguaggio legacy 2 | Microsoft Docs
+title: Registrazione di un servizio di linguaggio legacy2 | Microsoft Docs
 description: Questo articolo elenca le voci del Registro di sistema per le varie opzioni del servizio di linguaggio disponibili in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,20 +15,20 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649f4039baa6d899aaa560fbaa0712c3e905b5c8db0edb46d95c18e8f55d0312
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d33ce0af87df2e3d6506fef48aeb91f1b9ebdeef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275294"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062951"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrazione di un servizio di linguaggio legacy 2
-Nelle sezioni seguenti vengono elencate le voci del Registro di sistema per le varie opzioni del servizio di linguaggio disponibili in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+Le sezioni seguenti forniscono elenchi di voci del Registro di sistema per le varie opzioni del servizio di linguaggio disponibili in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- Nell'elenco seguente di voci del Registro di sistema, *VS Reg Root* è uguale HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X.Y*, dove *X.Y* è il numero [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di versione.
+ Nell'elenco seguente delle voci del Registro di sistema, *VS Reg Root* è uguale HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X.Y*, dove *X.Y* è il numero [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di versione.
 
 ## <a name="registry-entries-for-language-service-options"></a>Voci del Registro di sistema per le opzioni del servizio di linguaggio
- La chiave RADICE \Languages\Language Services Language Name di *VISUAL* Studio può \\  contenere i valori seguenti.
+ La *chiave VS Reg Root*\Languages\Language Services Language \\ *Name* può contenere i valori seguenti.
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
@@ -37,15 +37,15 @@ Nelle sezioni seguenti vengono elencate le voci del Registro di sistema per le v
 |Pacchetto|REG_SZ|*\<GUID>*|GUID del pacchetto VSPackage.|
 |ShowCompletion|REG_DWORD|0-1|Specifica se le opzioni **Completamento istruzione** nella finestra **di dialogo** Opzioni sono abilitate.|
 |ShowSmartIndent|REG_DWORD|0-1|Specifica se l'opzione per selezionare **Rientro** intelligente nella finestra **di** dialogo Opzioni è abilitata.|
-|RequestStockColors|REG_DWORD|0-1|Specifica se i colori personalizzati o predefiniti vengono utilizzati per colorare le parole chiave.|
+|RequestStockColors|REG_DWORD|0-1|Specifica se i colori personalizzati o predefiniti vengono usati per colorare le parole chiave.|
 |ShowHotURLs|REG_DWORD|0-1|Specifica se l'utente può fare clic su URL.|
-|Il valore predefinito è Non Hot URLs (URL non ad accesso hot)|REG_DWORD|0-1|Specifica l'impostazione iniziale per l'opzione Abilita navigazione URL con **clic** singolo nella finestra **di dialogo** Opzioni .|
+|Impostazione predefinita su URL non hot|REG_DWORD|0-1|Specifica l'impostazione iniziale per l'opzione **Abilita navigazione URL** a singolo clic nella finestra di **dialogo** Opzioni .|
 |DefaultToInsertSpaces|REG_DWORD|0-1|Specifica se il servizio di linguaggio dispone di "spazi di inserimento" come opzione di tabulazione predefinita.|
 |ShowDropdownBarOption|REG_DWORD|0-1|Abilita o disabilita **l'opzione Barra di** spostamento nella finestra **di** dialogo Opzioni che mostra o nasconde la barra **di spostamento**.|
 |Solo finestra del codice singolo|REG_DWORD|0-1|Abilita o disabilita la scelta **Nuova finestra** nel menu **Finestra** per un servizio di linguaggio.|
 |EnableAdvancedMembersOption|REG_DWORD|0-1|Abilita o disabilita **un'impostazione della finestra** di dialogo Opzioni per Nascondi membri **avanzati**.|
 |Supporto CF_HTML|REG_DWORD|0-1|Specifica se l'editor consente di copiare e incollare dati HTML.|
-|EnableLineNumbersOption|REG_DWORD|0-1|Specifica se le opzioni **Numeri di** riga nella finestra **di dialogo** Opzioni sono abilitate per un servizio di linguaggio.|
+|EnableLineNumbersOption|REG_DWORD|0-1|Specifica se le opzioni **Numeri di** riga nella finestra di **dialogo Opzioni** sono abilitate per un servizio di linguaggio.|
 |HideAdvancedMembersByDefault|REG_DWORD|0-1|Specifica se i membri avanzati, ad esempio i campi privati, sono nascosti negli elenchi di completamento.|
 |ShowBraceCompletion|REG_DWORD|0-1|Specifica se **l'opzione Completamento parentesi graffe** nella **finestra di** dialogo Opzioni è abilitata.|
 
@@ -65,7 +65,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-debugger-languages-options"></a>Voci del Registro di sistema per le opzioni dei linguaggi del debugger
- La *chiave RADICE \Languages\Language* Services Language \\ *Name*\Debugger Languages GUID \ può includere i \\ valori seguenti.
+ La *chiave RADICE DI VISUAL STUDIO Reg*\Languages\Language Services Language \\ *Name*\Debugger Languages \\ *GUID*\ può includere i valori seguenti.
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
@@ -84,11 +84,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-tools-options"></a>Voci del Registro di sistema per le opzioni degli strumenti dell'editor
- È possibile aggiungere chiavi del Registro di sistema nella chiave EditorToolsOptions per le pagine delle proprietà e i nodi delle proprietà. Queste chiavi e i relativi  valori identificano le pagine delle proprietà nella finestra di dialogo Opzioni **(nel** menu Strumenti) usate per configurare il servizio di linguaggio. Nell'esempio seguente *Nome* pagina è il nome  di una pagina delle proprietà e Nome nodo è il nome di un nodo nell'albero della **finestra di** dialogo Opzioni . La voce di pagina e la voce del nodo devono essere specificate separatamente.
+ È possibile aggiungere chiavi del Registro di sistema nella chiave EditorToolsOptions per le pagine delle proprietà e i nodi delle proprietà. Queste chiavi e i relativi  valori identificano le pagine delle proprietà nella finestra di dialogo Opzioni **(nel** menu Strumenti) usate per configurare il servizio di linguaggio. Nell'esempio seguente *Nome* pagina è il nome  di una pagina delle proprietà e Nome nodo è il nome di un nodo nell'albero della finestra **di dialogo** Opzioni . La voce di pagina e la voce del nodo devono essere specificate separatamente.
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
-|Valore predefinito.|REG_SZ|Resid|Nome visualizzato localizzato di questa pagina di opzioni. Il nome può essere un testo letterale, o # , dove è un ID risorsa stringa nella `nnn` DLL satellite del pacchetto `nnn` VSPackage specificato.|
+|Valore predefinito.|REG_SZ|Resid|Nome visualizzato localizzato di questa pagina delle opzioni. Il nome può essere un testo letterale o # , dove è un ID risorsa stringa nella `nnn` DLL satellite del pacchetto `nnn` VSPackage specificato.|
 |Pacchetto|REG_SZ|*GUID*|GUID del pacchetto VSPackage che implementa questa pagina di opzioni.|
 |Pagina|REG_SZ|*GUID*|GUID della pagina delle proprietà da richiedere dal pacchetto VSPackage chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metodo . Se questa voce del Registro di sistema non è presente, la chiave del Registro di sistema descrive un nodo, non una pagina.|
 
@@ -144,7 +144,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DisplayName|REG_SZ|Resid|Nome da visualizzare nella **finestra di dialogo** Apri con . Il nome è l'ID risorsa stringa o un nome in formato standard.|
 |ExcludeDefTextEditor|REG_DWORD|0-1|Usato per il **comando di** menu Apri con. Se non si vuole elencare l'editor di testo predefinito nell'elenco degli editor disponibili per un tipo di file specifico, impostare questo valore su 1.|
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|Usato per qualsiasi servizio di linguaggio in grado di aprire un file con il supporto della tabella codici. Ad esempio, quando si apre un file  .txt usando il comando Apri con , vengono fornite opzioni per l'uso dell'editor del codice sorgente con e senza codifica.<br /><br /> Il GUID specificato nel nome della sottochiave è per la factory dell'editor della tabella codici. il GUID collegato specificato in questa voce del Registro di sistema specifica è per la normale factory dell'editor. Lo scopo di questa voce è che se l'IDE non apre un file usando l'editor predefinito, l'IDE tenterà di usare l'editor successivo nell'elenco. Questo editor successivo non deve essere la factory dell'editor della tabella codici perché questa factory dell'editor è fondamentalmente la stessa della factory dell'editor che ha avuto esito negativo.|
-|Pacchetto|REG_SZ|*\<GUID>*|GUID vspackage per il ResID del nome visualizzato.|
+|Pacchetto|REG_SZ|*\<GUID>*|GUID del pacchetto VSPackage per il ResID del nome visualizzato.|
 
 ### <a name="example"></a>Esempio
 

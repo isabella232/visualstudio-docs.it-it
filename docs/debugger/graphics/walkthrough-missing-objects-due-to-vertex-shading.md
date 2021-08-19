@@ -1,6 +1,6 @@
 ---
-title: "Procedura dettagliata: oggetti mancanti a causa dell'ombreggiatura del vertex | Microsoft Docs"
-description: Eseguire un'indagine che trova un errore del vertex shader. Mostra l'elenco di eventi di grafica, le fasi della pipeline grafica, il debugger HLSL e lo stack di chiamate eventi di grafica.
+title: "Procedura dettagliata: Oggetti mancanti a causa dell'ombreggiatura dei vertici | Microsoft Docs"
+description: Seguire un'analisi che rileva un errore vertex shader. Mostra l'uso di Elenco eventi di grafica, Fasi pipeline grafica, Debugger HLSL e Stack di chiamate eventi di grafica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d07020e3e5b80325daa254f8d8c612a92b9dfb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cff4d2b8312c6b4c086fb321019aca2cd8db0d8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908534"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147027"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex
 Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa di un errore che si verifica durante la fase Vertex shader.
@@ -60,7 +61,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
 
 3. Passando da una chiamata di disegno alla successiva nella finestra **Elenco eventi di grafica** , esaminare la finestra **Fasi pipeline grafica** per individuare l'oggetto mancante. Per semplificare questa operazione, immettere "Draw" nella casella **Cerca** nell'angolo in alto a destra della finestra **Elenco eventi di grafica** . questo modo l'elenco viene filtrato in modo da contenere solo gli eventi nei cui titoli compare "Draw".
 
-    Nella finestra **fasi pipeline grafica** la fase **assembler input** Mostra la geometria dell'oggetto prima che venga trasformata, mentre la fase **vertex shader** Mostra lo stesso oggetto dopo che è stato trasformato. In questo scenario, si avrà la certezza di aver trovato l'oggetto mancante quando l'oggetto viene visualizzato nella fase **Assembler input** ma non nella fase **Vertex shader** .
+    Nella finestra **Fasi pipeline** grafica la fase **Assembler** di input mostra la geometria dell'oggetto prima della trasformazione e la fase **Vertex shader** mostra lo stesso oggetto dopo la trasformazione. In questo scenario, si avrà la certezza di aver trovato l'oggetto mancante quando l'oggetto viene visualizzato nella fase **Assembler input** ma non nella fase **Vertex shader** .
 
    > [!NOTE]
    > Se altre fasi della geometria, ad esempio la fase Hull shader, Domain shader o Geometry shader, elaborano l'oggetto, potrebbero essere la causa del problema. In genere, il problema è correlato alla prima fase il cui risultato non viene visualizzato o viene visualizzato in modo imprevisto.
@@ -122,7 +123,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
 
    Per risolvere il problema, spostare la riga di codice che imposta il valore di `m_marbleConstantBufferData.projection` dopo la riga che inizializza il valore della variabile locale `projection`.
 
-   ![Codice sorgente&#43;&#43; C corretto](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
+   ![Codice sorgente C&#43;&#43; corretto](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
 
    Dopo aver corretto il codice, è possibile ricompilare ed eseguire l'app di nuovo per verificare che il problema di rendering sia stato risolto:
 

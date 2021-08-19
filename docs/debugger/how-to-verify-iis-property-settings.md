@@ -1,5 +1,5 @@
 ---
-title: Verificare i valori delle proprietà IIS Impostazioni | Microsoft Docs
+title: Verificare i valori delle proprietà iis Impostazioni | Microsoft Docs
 description: Informazioni su come verificare le impostazioni delle proprietà IIS impostate per un'applicazione Web usando lo strumento di amministrazione di IIS.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9b7d95e6700e7950d92282e86ca86d12d824a18f288acd10a3939b945bfb45
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9742fb9ba7b7960dd3a82b2fe65af6a4e9bd7270
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453253"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146914"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedura: verificare le impostazioni delle proprietà di IIS
 

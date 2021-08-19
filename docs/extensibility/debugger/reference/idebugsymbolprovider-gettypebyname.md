@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4b27b5dc829ab68405c4cbcda6ece4a8a625fb7b9d4e2c7ffe86d9df0faf75d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd14af4e9002505e422ecf53994bb183451d2c50
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306803"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063720"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Questo metodo esegue il mapping di un nome di simbolo a un tipo di simbolo.

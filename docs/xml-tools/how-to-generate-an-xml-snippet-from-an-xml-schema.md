@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: dc4459222af2d6b53b6d2e881c493225be535792f4cde587a3c6def3f0fff02b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 955c656355f1c88de064754a97cb24324abdf392
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121243081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098749"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: Generare un frammento XML da un XML Schema
 
@@ -61,7 +61,7 @@ I passaggi descritti in questa sezione illustrano come usare la funzionalità de
 
 3. Nella finestra delle proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel **campo** Schemi.
 
-     Verrà **visualizzata la finestra** di dialogo Schemi XSD .
+     Verrà **visualizzata la finestra di** dialogo Schemi XSD .
 
 4. Fare clic su **Aggiungi**.
 

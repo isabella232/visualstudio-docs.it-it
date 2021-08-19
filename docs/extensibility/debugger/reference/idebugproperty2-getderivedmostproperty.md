@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d202ba8594031cb72da1306e0828ef32423ac55c8cacfb58247ac6d373896b6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: afa85a74a5104725f6712667317f8a5b8acfff0f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402493"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132574"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Ottiene la proprietà più derivata di una proprietà.
@@ -46,10 +46,10 @@ int GetDerivedMostProperty (
 [out] Restituisce un [oggetto IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta la proprietà più derivata.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore. Restituisce `S_GETDERIVEDMOST_NO_DERIVED_MOST` se non è presente alcuna proprietà più derivata da recuperare.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore. Restituisce `S_GETDERIVEDMOST_NO_DERIVED_MOST` se non è presente alcuna proprietà nella maggior parte dei casi derivata da recuperare.
 
 ## <a name="remarks"></a>Commenti
- Ad esempio, se questa proprietà descrive un oggetto che implementa ma che è effettivamente una creazione di un'istanza di derivata da , questo metodo restituisce un oggetto `ClassRoot` `ClassDerived` `ClassRoot` [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che descrive `ClassDerived` l'oggetto.
+ Ad esempio, se questa proprietà descrive un oggetto che implementa ma che è effettivamente una creazione di un'istanza di derivato da , questo metodo restituisce un `ClassRoot` `ClassDerived` oggetto `ClassRoot` [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che descrive l'oggetto. `ClassDerived`
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

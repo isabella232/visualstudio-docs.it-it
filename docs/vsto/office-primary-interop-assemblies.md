@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d6f610e9cd1667b84f382f7b1f48c231a69ec44797bafc343f11a7c508636df1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: af8f6e830458ea106860e3a2fc1fc0347b294746
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394167"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115096"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -66,7 +66,7 @@ A partire Visual Studio 2017, queste copie degli pias vengono installate nei per
 
 - `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` nei sistemi operativi a 64 bit)
+- (o nei sistemi operativi a `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` 64 bit)
 
 > [!NOTE]
 > Per le versioni precedenti di Visual Studio, questi PIA verranno installati nella cartella Visual Studio Tools per Office\PIA nella cartella per tale versione di `%ProgramFiles%` Visual Studio.
@@ -84,12 +84,12 @@ Gli assembly di interoperabilità primari di Office non sono richiesti per l'ese
 
 Ogni modello di progetto di Office in Visual Studio è progettato per funzionare con una singola applicazione di Microsoft Office. Per usare le funzionalità in più applicazioni di Microsoft Office oppure per usare funzionalità in un'applicazione o un componente che non ha un progetto in Visual Studio, è necessario aggiungere un riferimento agli assembly di interoperabilità primari richiesti.
 
-Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità personali installati da Visual Studio nella `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory . Queste versioni degli assembly vengono visualizzate nella **scheda Framework** della finestra di **dialogo Gestione** riferimenti . Per altre informazioni, vedere Procedura: Impostare come destinazione [Office applicazioni tramite assembly di interoperabilità primari.](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly di interoperabilità personali installati da Visual Studio nella `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory . Queste versioni degli assembly vengono visualizzate nella **scheda Framework** della finestra di dialogo **Gestione** riferimenti . Per altre informazioni, vedere Procedura: Impostare come destinazione [Office applicazioni tramite assembly di interoperabilità primari.](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 
 Se sono stati installati e registrati gli assembly di interoperabilità primari nella Global Assembly Cache, queste versioni appariranno nella scheda **COM** della finestra di dialogo **Gestione riferimenti** . Evitare di aggiungere riferimenti a queste versioni degli assembly, perché possono verificarsi alcuni problemi di sviluppo durante il loro uso. Ad esempio, se sono state registrate versioni differenti degli assembly di interoperabilità primari nella Global Assembly Cache, il progetto verrà automaticamente associato all'ultima versione registrata dell'assembly, anche se è stata specificata una versione differente nella scheda **COM** della finestra di dialogo **Gestione riferimenti** .
 
 > [!NOTE]
-> Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, i riferimenti agli assembly e vengono aggiunti automaticamente quando si aggiunge un riferimento agli assembly `Office.dll` `Microsoft.Vbe.Interop.dll` Word, Excel, Outlook, Microsoft Forms o Graph.
+> Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, i riferimenti agli assembly e vengono aggiunti automaticamente quando si aggiunge un riferimento agli assembly `Office.dll` `Microsoft.Vbe.Interop.dll` word, Excel, Outlook, Microsoft Forms o Graph.
 
 <a name="pialist"></a>
 

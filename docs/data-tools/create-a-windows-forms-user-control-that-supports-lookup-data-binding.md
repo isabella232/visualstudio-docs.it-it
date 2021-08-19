@@ -1,5 +1,5 @@
 ---
-title: Uso di tabelle di ricerca data binding - Windows Form
+title: Uso di tabelle di ricerca in data binding - Windows Form
 description: Informazioni su come creare un controllo utente Windows Form che supporta la ricerca data binding, usando la classe LookupBindingPropertiesAttribute in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 279d45c46d42f1df2011e7164e66f5aa7fa8eecb543eed8eea3970edcf625765
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b46b844a514e64acf3de1bc4af0f1d9fdf3d015f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347519"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037044"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding di ricerca
 
@@ -65,7 +65,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
+    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -77,11 +77,11 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 ## <a name="create-a-windows-forms-app-project"></a>Creare un progetto Windows'app Forms
 
-Il primo passaggio consiste nel creare un **progetto Windows'applicazione Form.**
+Il primo passaggio consiste nel creare un **progetto Windows'applicazione Forms.**
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
 
 3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
 

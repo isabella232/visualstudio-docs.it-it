@@ -17,18 +17,18 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6956740daec7a782bca3d265d7c868dcd7b2c4dec47fde4b0416d4d9d6cd6f5b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 213bededbd5d6eea8a0eb6b01f742c6cf82d8e4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347506"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037031"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding semplice
 
 Quando si visualizzano dati nei form delle applicazioni Windows, è possibile scegliere i controlli esistenti dalla **Casella degli strumenti** o creare controlli personalizzati se l'applicazione richiede funzionalità che non sono disponibili nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. I controlli che implementano <xref:System.ComponentModel.DefaultBindingPropertyAttribute> possono contenere una proprietà associabile ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.TextBox> o <xref:System.Windows.Forms.CheckBox>.
 
-Per altre informazioni sulla creazione di controlli, vedere [Sviluppo di Windows Form in fase di progettazione.](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)
+Per altre informazioni sulla creazione di controlli, vedere [Sviluppo di Windows form in fase di progettazione.](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)
 
 Quando si creano controlli da usare in scenari di data binding, è necessario implementare uno degli attributi di data binding seguenti:
 
@@ -60,11 +60,11 @@ Durante questa procedura dettagliata, si apprenderà come:
 
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** **Nell'Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** **Nell'Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte del  carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati **nel Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
+    1. In Visual Studio aprire la **finestra SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati **nel Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -123,7 +123,7 @@ Per controlli semplici che supportano il data binding, implementare l'attributo 
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-In questo passaggio viene **utilizzata la Configurazione guidata origine** dati per creare un'origine dati basata sulla tabella del database di esempio `Customers` Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [Procedura: Installare database di esempio.](../data-tools/installing-database-systems-tools-and-samples.md)
+In questo passaggio viene **utilizzata la Configurazione guidata origine** dati per creare un'origine dati basata sulla tabella del database di esempio `Customers` Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, [vedere Procedura: Installare database di esempio.](../data-tools/installing-database-systems-tools-and-samples.md)
 
 1. Per aprire la **finestra Origini** dati , **scegliere** Mostra origini dati dal menu **Dati**.
 
@@ -181,7 +181,7 @@ A seconda dei requisiti dell'applicazione, dopo la creazione di un controllo che
 
 - Posizionamento dei controlli personalizzati in una libreria di controlli in modo da poterli usare di nuovo in altre applicazioni.
 
-- Creazione di controlli che supportano scenari di associazioni di dati più complessi. Per altre informazioni, vedere Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) che supporta i controlli data binding complessi e Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)che supporta la ricerca data binding .
+- Creazione di controlli che supportano scenari di associazioni di dati più complessi. Per altre informazioni, vedere Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) che supporti i controlli data binding complessi e Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)che supporti la ricerca data binding .
 
 ## <a name="see-also"></a>Vedi anche
 

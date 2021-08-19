@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96979c45471aab356a22f206698e50e238009bb54bea0edc02db5bacad1e6464
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f1677f2e5c50092dd3a4255e48282401ce936bfe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448949"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132496"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Ottiene il contesto del documento per questo stack frame.
@@ -49,7 +49,7 @@ int GetDocumentContext (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo è più veloce rispetto alla [chiamata al metodo GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) e quindi alla chiamata del [metodo GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) nel contesto del codice. Tuttavia, non è garantito che ogni motore di debug implementerà questo metodo.
+ Questo metodo è più veloce rispetto a chiamare il [metodo GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) e quindi chiamare il [metodo GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) nel contesto del codice. Tuttavia, non è garantito che ogni motore di debug implementerà questo metodo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

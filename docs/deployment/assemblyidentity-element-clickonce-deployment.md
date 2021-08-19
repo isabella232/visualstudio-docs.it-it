@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;elemento assemblyIdentity (distribuzione ClickOnce) | Microsoft Docs'
-description: L'elemento assemblyIdentity è obbligatorio nella distribuzione ClickOnce. Non contiene elementi figlio e ha attributi descritti in questo articolo.
+title: '&lt;Elemento assemblyIdentity &gt; (ClickOnce Deployment) | Microsoft Docs'
+description: L'elemento assemblyIdentity è obbligatorio ClickOnce distribuzione. Non contiene elementi figlio e dispone degli attributi descritti in questo articolo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,17 +16,18 @@ ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: bc689c80d033c6b92178f020c0d3273f6ec86ca7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4633b5ed024b1e43134b33827a5614bfa5f8d17
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146498"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento assemblyIdentity (distribuzione ClickOnce)
-Identifica l'assembly primario dell' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;Elemento assemblyIdentity &gt; (distribuzione ClickOnce)
+Identifica l'assembly primario [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,20 +43,20 @@ Identifica l'assembly primario dell' [!INCLUDE[ndptecclick](../deployment/includ
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- L' `assemblyIdentity` elemento è obbligatorio. Non contiene elementi figlio e ha gli attributi seguenti.
+ `assemblyIdentity`L'elemento è obbligatorio. Non contiene elementi figlio e ha gli attributi seguenti.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`name`|Obbligatorio. Identifica il nome leggibile della distribuzione a scopo informativo.<br /><br /> Se `name` contiene caratteri speciali, ad esempio virgolette singole o doppie, l'attivazione dell'applicazione potrebbe non riuscire.|
 |`version`|Obbligatorio. Specifica il numero di versione dell'assembly, nel formato seguente: `major.minor.build.revision` .<br /><br /> Questo valore deve essere incrementato in un manifesto aggiornato per attivare un aggiornamento dell'applicazione.|
-|`publicKeyToken`|Obbligatorio. Specifica una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte del valore hash SHA-1 della chiave pubblica in cui il manifesto di distribuzione è firmato. La chiave pubblica usata per firmare deve essere di 2048 bit o superiore.<br /><br /> Sebbene la firma di un assembly sia consigliata ma facoltativa, questo attributo è obbligatorio. Se un assembly non è firmato, è necessario copiare un valore da un assembly autofirmato oppure utilizzare un valore "fittizio" di tutti gli zeri.|
-|`processorArchitecture`|Obbligatorio. Specifica il processore. I valori validi sono `msil` per tutti i processori, `x86` per windows a 32 bit, `IA64` per Windows a 64 bit e `Itanium` per processori Itanium Intel 64-bit.|
-|`type`|Obbligatorio. Per la compatibilità con la tecnologia di installazione side-by-side di Windows. L'unico valore consentito è `win32` .|
+|`publicKeyToken`|Obbligatorio. Specifica una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte del valore hash SHA-1 della chiave pubblica con cui viene firmato il manifesto della distribuzione. La chiave pubblica usata per firmare deve essere di 2048 bit o superiore.<br /><br /> Sebbene la firma di un assembly sia consigliata ma facoltativa, questo attributo è obbligatorio. Se un assembly non è firmato, è necessario copiare un valore da un assembly autofirmato o usare un valore "fittizio" di tutti gli zeri.|
+|`processorArchitecture`|Obbligatorio. Specifica il processore. I valori validi sono per tutti i processori, per i Windows a 32 bit, per i Windows a 64 bit e per i processori `msil` `x86` Intel Itanium a `IA64` `Itanium` 64 bit.|
+|`type`|Obbligatorio. Per la compatibilità Windows tecnologia di installazione side-by-side. L'unico valore consentito è `win32` .|
 
 ## <a name="remarks"></a>Commenti
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice riportato di seguito viene illustrato un `assemblyIdentity` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione. Questo esempio di codice fa parte di un esempio più ampio fornito per l'argomento [manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) .
+ Nell'esempio di codice seguente viene illustrato un `assemblyIdentity` elemento in un manifesto della [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Questo esempio di codice fa parte di un esempio più ampio fornito per [l'argomento ClickOnce manifesto della](../deployment/clickonce-deployment-manifest.md) distribuzione.
 
 ```xml
 <!-- Identify the deployment. -->
@@ -69,5 +70,5 @@ Identifica l'assembly primario dell' [!INCLUDE[ndptecclick](../deployment/includ
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
-- [\<assemblyIdentity> elemento](../deployment/assemblyidentity-element-clickonce-application.md)
+- [ClickOnce di distribuzione](../deployment/clickonce-deployment-manifest.md)
+- [\<assemblyIdentity> Elemento](../deployment/assemblyidentity-element-clickonce-application.md)

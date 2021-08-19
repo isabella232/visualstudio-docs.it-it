@@ -1,6 +1,6 @@
 ---
 title: Procedure consigliate per MSBuild | Microsoft Docs
-description: Informazioni sulle procedure consigliate per la scrittura MSBuild script, ad esempio l'uso degli attributi Condition e il non uso di caratteri jolly.
+description: Informazioni sulle procedure consigliate per la scrittura di MSBuild script, ad esempio l'uso degli attributi Condition e l'uso di caratteri jolly.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c407e93234af7491e99d66d70f667efdc85b5f3790cf7f76408ffa65ee7c9d6a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b96ed3b0e2ece6c8b0cd27c5733c863d4204c513
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397592"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115759"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate per MSBuild
 
@@ -33,7 +33,7 @@ Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni
 </MyProperty>
 ```
 
-- In generale, evitare l'uso di caratteri jolly quando si selezionano gli elementi. Al contrario, specificare i file in modo esplicito. Ciò è dovuto al fatto che nella maggior parte dei tipi di progetto MSBuild espande i caratteri jolly in diversi momenti, ad esempio quando si aggiungono o rimuovono elementi, il che può causare un comportamento imprevisto. Un'eccezione è nei progetti .NET Core SDK, che elaborano correttamente i caratteri jolly.
+- In generale, evitare l'uso di caratteri jolly quando si selezionano gli elementi. Al contrario, specificare i file in modo esplicito. Ciò è dovuto al fatto che nella maggior parte dei MSBuild i caratteri jolly vengono espansi in diversi momenti, ad esempio quando si aggiungono o rimuovono elementi, il che può causare un comportamento imprevisto. Un'eccezione è nei progetti .NET Core SDK in stile, che elaborano correttamente i caratteri jolly.
 
 ## <a name="see-also"></a>Vedi anche
 

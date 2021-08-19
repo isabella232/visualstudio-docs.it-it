@@ -1,6 +1,6 @@
 ---
 title: Distribuire app UWP | Microsoft Docs
-description: Distribuire piattaforma UWP (Universal Windows Platform) (UWP) da Visual Studio. Specificare un dispositivo di destinazione locale o remoto per la distribuzione. Informazioni su opzioni di distribuzione.
+description: Distribuire app UWP (Universal Windows Platform) da Visual Studio. Specificare un dispositivo di destinazione locale o remoto per la distribuzione. Informazioni su opzioni di distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -12,14 +12,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 0a1c1802d92beb436bbd2ac87bd1e7a39f6086f1
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 686448117cdb112c9136091a951853b275947ea6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387866"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080952"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
 
@@ -55,7 +56,7 @@ La distribuzione avviene automaticamente quando si esegue il debug dell'app da V
 In un Windows 10 remoto è necessario abilitare la [modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development). Nei Windows 10 che eseguono Creator's Update o versioni successive, gli strumenti remoti vengono installati automaticamente quando si distribuisce l'app. Per altre informazioni, vedere Eseguire [il debug di un pacchetto dell'app installato.](../debugger/debug-installed-app-package.md)
 
 > [!NOTE]
-> Nelle versioni precedenti all'aggiornamento di Windows 10, il Remote Tools per Visual Studio deve essere installato nel dispositivo remoto e il debugger remoto deve essere in esecuzione.
+> Nelle versioni precedenti a Creator's Update di Windows 10, il Remote Tools per Visual Studio deve essere installato nel dispositivo remoto e il debugger remoto deve essere in esecuzione.
 
 La distribuzione usa il canale di rete del debugger remoto per inviare i file dell'app al dispositivo remoto.
 

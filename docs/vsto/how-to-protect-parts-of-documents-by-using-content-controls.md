@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Proteggere parti di documenti usando i controlli contenuto'
-description: Informazioni su come usare Visual Studio proteggere parti di un documento di Microsoft Word usando i controlli contenuto.
+description: Informazioni su come usare Visual Studio proteggere parti di un documento Microsoft Word usando i controlli contenuto.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -19,14 +19,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cc333871d4f371530db84a0c4f07ab891db2a937
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 49988266ebee5821323ee3a9994312d99033c9f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825472"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046490"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: Proteggere parti di documenti usando i controlli contenuto
   Quando si protegge parte di un documento, si impedisce agli utenti di modificare o eliminare il contenuto in quella parte del documento. È possibile proteggere parti di un documento di Microsoft Office Word usando i controlli contenuto in diversi modi.
@@ -111,4 +112,4 @@ ms.locfileid: "107825472"
 - [Procedura: Aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Aggiungere controlli ai Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)

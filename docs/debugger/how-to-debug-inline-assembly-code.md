@@ -1,6 +1,6 @@
 ---
-title: Eseguire il debug di codice assembly inline | Microsoft Docs
-description: Quando si esegue il debug del codice assembly inline, utilizzare la finestra Disassembly per visualizzare le istruzioni dell'assembly e utilizzare la finestra registri per visualizzare i valori del registro.
+title: Eseguire il debug del codice assembly inline | Microsoft Docs
+description: Quando si esegue il debug del codice assembly inline, usare la finestra Disassembly per visualizzare le istruzioni dell'assembly e usare la finestra Registri per visualizzare i valori del registro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,14 +19,15 @@ ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fd6b1821c10940bdd510ed2b8e866ca8369dce3d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d58d0daf43767df5d9113e1e3addd01c0736a4a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146956"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedura: eseguire il debug di codice assembly inline
 

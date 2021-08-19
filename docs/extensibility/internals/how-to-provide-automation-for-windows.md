@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Fornire automazione per Windows | Microsoft Docs'
-description: Informazioni su come fornire automazione per le finestre dei documenti e degli strumenti Visual Studio usando i metodi Microsoft.VisualStudio.Shell.Interop.
+description: Informazioni su come fornire automazione per le finestre dei documenti e degli strumenti in Visual Studio usando i metodi Microsoft.VisualStudio.Shell.Interop.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d84e58bb91d49382fe4713c9ecdb6ca081d13141ef3cc2080781ca2e6b666f1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4631c05514382c5fc082a650178ea0b7f78191f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388643"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063278"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Procedura: Fornire automazione per le finestre
 

@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8079880ee889a949595b9e7f325bce30ab0a03ca1bdc33b630e1638b8ba8de
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 351f74cca82ff57efa45f2314e5bbcab4dfc7751
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081157"
 ---
 # <a name="idiasymbolget_sizeinudt"></a>IDiaSymbol::get_sizeInUdt
 Recupera le dimensioni di un membro di un tipo definito dall'utente.

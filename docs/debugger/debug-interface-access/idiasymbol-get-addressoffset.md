@@ -1,5 +1,5 @@
 ---
-description: Recupera la parte dell'offset di una posizione dell'indirizzo.
+description: Recupera la parte di offset di una posizione dell'indirizzo.
 title: IDiaSymbol::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e753e4b09116190b956889299f39fddd75aa6a8d5ee4563e8e09893bfc5ee190
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2dcbee6f04a61bb21ffc1071b200297ecd0b3890
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404874"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081301"
 ---
 # <a name="idiasymbolget_addressoffset"></a>IDiaSymbol::get_addressOffset
-Recupera la parte dell'offset di una posizione dell'indirizzo. Usare quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è impostata su `LocIsStatic` .
+Recupera la parte di offset di una posizione dell'indirizzo. Utilizzare quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è impostata su `LocIsStatic` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,16 +35,16 @@ HRESULT get_addressOffset (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce la parte dell'offset di una posizione dell'indirizzo.
+[out] Restituisce la parte di offset di una posizione di indirizzo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Per i membri statici che si trovano in una DLL esterna, l'offset restituito da questo metodo può essere 0 perché questo metodo si basa su come ottenere l'indirizzo virtuale del membro. Gli indirizzi virtuali sono validi solo se il metodo [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) nell'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) è stato chiamato con un parametro diverso da zero che specifica l'indirizzo di caricamento della DLL.
+ Per i membri statici che si trovano in una DLL esterna, l'offset restituito da questo metodo può essere 0 perché questo metodo si basa su come ottenere l'indirizzo virtuale del membro. Gli indirizzi virtuali sono validi solo se il [metodo IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) nell'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) è stato chiamato con un parametro diverso da zero che specifica l'indirizzo di caricamento della DLL.
 
  Per ottenere la parte di sezione di un indirizzo, chiamare il [metodo IDiaSymbol::get_addressSection.](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)
 

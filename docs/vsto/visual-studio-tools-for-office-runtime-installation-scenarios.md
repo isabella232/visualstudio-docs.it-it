@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools per Office di installazione di runtime
+title: Visual Studio Tools per Office scenari di installazione di runtime
 description: Informazioni su come installare gli strumenti Visual Studio 2010 per Office runtime. Questo articolo descrive tre scenari di installazione.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
@@ -16,22 +16,22 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4869314ef51dbfdcdb73d3a44578b689425f8647ce30b63c67fbd090bd2740ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 110e78b404ef5d25264a0e168bf9b6de5cad5d3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384106"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082686"
 ---
-# <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools per Office di installazione di runtime
+# <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools per Office scenari di installazione di runtime
 
-  È possibile installare gli strumenti Visual Studio 2010 per il runtime Office in tre modi:
+  È possibile installare gli strumenti Visual Studio 2010 per Office runtime in tre modi:
 
 - Quando si installa Visual Studio.
 
 - Quando si installa Microsoft Office.
 
-- Quando si installa l'Visual Studio 2010 Tools per Office runtime ridistribuibile.
+- Quando si installa la versione Visual Studio 2010 Tools per Office runtime ridistribuibile.
 
   I componenti runtime vengono installati in base alla configurazione del computer e allo scenario di installazione.
 
@@ -56,7 +56,7 @@ ms.locfileid: "121384106"
 > [!WARNING]
 > Non è possibile creare un progetto Office destinato a .NET Framework 3.5 utilizzando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] o versione successiva.
 
- Per altre informazioni su come installare gli strumenti Office per sviluppatori, vedere [Procedura:](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)Configurare un computer per sviluppare Office soluzioni .
+ Per altre informazioni su come installare gli strumenti di sviluppo Office, vedere [Procedura: Configurare](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)un computer per sviluppare Office applicazioni .
 
 ### <a name="install-the-runtime-with-office"></a>Installare il runtime con Office
 
@@ -64,17 +64,17 @@ ms.locfileid: "121384106"
 
  Le Office per o versioni successive vengono installate anche con Office se le versioni corrispondenti del .NET Framework sono già [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] presenti nel computer.
 
- Per assicurarsi che gli utenti abbiano le estensioni necessarie per usare l'applicazione, includere la versione più recente degli strumenti di Visual Studio 2010 per Office runtime ridistribuibile come prerequisito per la soluzione. Per altre informazioni sui prerequisiti, vedere Office [della soluzione per la distribuzione](/previous-versions/bb608617(v=vs.110)).
+ Per assicurarsi che gli utenti siano in grado di usare l'applicazione con le estensioni necessarie, includere la versione più recente di Visual Studio 2010 Tools for Office Runtime Redistributable come prerequisito per la soluzione. Per altre informazioni sui prerequisiti, vedere l'Office [della soluzione per la distribuzione](/previous-versions/bb608617(v=vs.110)).
 
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>Installare il runtime usando il runtime ridistribuibile
 
- È possibile installare il runtime eseguendo manualmente Visual Studio 2010 Tools for Office Runtime Redistributable o includendo il ridistribuibile come prerequisito quando si distribuisce una soluzione Office.
+ È possibile installare il runtime eseguendo manualmente gli strumenti di Visual Studio 2010 per Office Runtime ridistribuibili o includendo il ridistribuibile come prerequisito quando si distribuisce una soluzione Office.
 
- Quando si installa il runtime usando Visual Studio 2010 Tools for Office Runtime Redistributable, le estensioni Office per .NET Framework 3.5 e le estensioni Office per o versioni successive vengono installate se le versioni corrispondenti del .NET Framework sono già presenti [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nel computer. Se nel computer manca una di queste versioni di .NET Framework quando è installato il runtime, le estensioni di Office per la versione mancante di .NET Framework al momento non vengono installate. Se si installa la versione mancante di .NET Framework in un secondo momento, il runtime installerà automaticamente le estensioni di Office corrispondenti alla successiva installazione (se il runtime è stato installato con una soluzione che è stata distribuita tramite ClickOnce) o al successivo caricamento (se il runtime è stato installato con una soluzione che è stata distribuita tramite Windows Installer) di una soluzione che richiede le estensioni.
+ Quando si installa il runtime usando gli strumenti di Visual Studio 2010 per Office runtime ridistribuibili, le estensioni Office per .NET Framework 3.5 e le estensioni Office per o versioni successive vengono installate se le versioni corrispondenti del .NET Framework sono già presenti [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nel computer. Se nel computer manca una di queste versioni di .NET Framework quando è installato il runtime, le estensioni di Office per la versione mancante di .NET Framework al momento non vengono installate. Se si installa la versione mancante di .NET Framework in un secondo momento, il runtime installerà automaticamente le estensioni di Office corrispondenti alla successiva installazione (se il runtime è stato installato con una soluzione che è stata distribuita tramite ClickOnce) o al successivo caricamento (se il runtime è stato installato con una soluzione che è stata distribuita tramite Windows Installer) di una soluzione che richiede le estensioni.
 
- Per altre informazioni sull'inclusione dei prerequisiti in una soluzione ClickOnce, vedere [Procedura:](/previous-versions/bb608608(v=vs.110))Installare i prerequisiti nei computer degli utenti finali per eseguire Office soluzioni . Per altre informazioni su come installare manualmente il runtime dal pacchetto ridistribuibile, vedere Procedura: Installare Visual Studio Tools per Office [runtime ridistribuibile](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).
+ Per altre informazioni sull'inclusione dei prerequisiti in una soluzione ClickOnce, vedere [Procedura: Installare](/previous-versions/bb608608(v=vs.110))i prerequisiti nei computer degli utenti finali per eseguire Office soluzioni . Per altre informazioni su come installare manualmente il runtime dal pacchetto ridistribuibile, vedere Procedura: Installare Visual Studio Tools per Office [runtime ridistribuibile.](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio Tools per Office di runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [Assembly nel runtime di Visual Studio Tools per Office](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)
+- [Assembly nel runtime Visual Studio Tools per Office](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)

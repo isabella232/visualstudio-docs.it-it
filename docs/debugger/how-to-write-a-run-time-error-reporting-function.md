@@ -1,6 +1,6 @@
 ---
-title: Scrivere una funzione di segnalazione errori di run-time | Microsoft Docs
-description: Vedere esempi di scrittura di una funzione di segnalazione degli errori di run-time personalizzata in Visual Studio. Deve avere la stessa dichiarazione di _CrtDbgReportW e restituire un valore pari a 1.
+title: Scrivere una funzione di segnalazione degli errori di | Microsoft Docs
+description: Vedere esempi di scrittura di una funzione di segnalazione degli errori di run-time personalizzata in Visual Studio. Deve avere la stessa dichiarazione di _CrtDbgReportW e restituire il valore 1.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,14 +17,15 @@ ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff82afdfda8af746533f07f21d330c359a1618c
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9f4131f5bea3f3c1a2c880c64302fd44ab5a3535
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385137"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146849"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Procedura: Scrivere una funzione per la segnalazione degli errori di runtime (C++)
 Una funzione personalizzata per la segnalazione degli errori di runtime deve avere la stessa dichiarazione di `_CrtDbgReportW` e deve restituire al debugger il valore 1.
@@ -63,7 +64,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```
 
 ## <a name="example-2"></a>Esempio 2
-Nell'esempio che segue viene illustrata una funzione personalizzata più complessa. In questo esempio l'istruzione switch gestisce vari tipi di errore, definiti dal parametro `reportType` di `_CrtDbgReportW`. Poiché si sta sostituendo `_CrtDbgReportW`, non è possibile utilizzare `_CrtSetReportMode`. La funzione dovrà quindi gestire l'output. Nel primo argomento della variabile in questa funzione viene utilizzato un numero di errore di runtime. Per altre informazioni, [vedere](/cpp/c-runtime-library/reference/rtc-seterrortype)_RTC_SetErrorType .
+Nell'esempio che segue viene illustrata una funzione personalizzata più complessa. In questo esempio l'istruzione switch gestisce vari tipi di errore, definiti dal parametro `reportType` di `_CrtDbgReportW`. Poiché si sta sostituendo `_CrtDbgReportW`, non è possibile utilizzare `_CrtSetReportMode`. La funzione dovrà quindi gestire l'output. Nel primo argomento della variabile in questa funzione viene utilizzato un numero di errore di runtime. Per altre informazioni, vedere [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
 
 ```cpp
 #include <windows.h>
@@ -124,4 +125,4 @@ int main()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-[Personalizzazione dei controlli Run-Time native](../debugger/native-run-time-checks-customization.md)
+[Personalizzazione dei Run-Time nativi](../debugger/native-run-time-checks-customization.md)

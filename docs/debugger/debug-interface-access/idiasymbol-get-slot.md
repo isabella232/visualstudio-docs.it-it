@@ -11,17 +11,18 @@ ms.assetid: 97e405b8-483f-4da0-91e7-ca4d88251ecd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd3fcbcba541ada2fabeff134fe600940a81fd9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a97f674378e6ac44cbff36e01e59d68d9a59b0cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081141"
 ---
 # <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
-Recupera il numero di slot della posizione. Utilizzare quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsSlot` .
+Recupera il numero di slot della posizione. Utilizzare quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsSlot` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,13 +35,13 @@ HRESULT get_slot (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il numero di slot della posizione.
+[out] Restituisce il numero di slot della posizione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

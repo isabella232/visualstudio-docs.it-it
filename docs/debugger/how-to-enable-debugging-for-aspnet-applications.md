@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 55b2ef029c4cf8fa502ae73fe5afadbfda136c6f9e5b55d1e451daa71df81fc6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f452ed79ce12e7f5e8e265bbb46a3a011bb10328
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146943"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Eseguire il debug di app ASP.NET o ASP.NET Core in Visual Studio
 
@@ -42,10 +42,10 @@ Il server di IIS Express è incluso in Visual Studio. IIS Express è il server d
 - Se non è installato, installare il carico di lavoro **sviluppo web ASP.NET web**. Eseguire di nuovo il Programma di installazione di Visual Studio, selezionare **Modifica** e aggiungere questo carico di lavoro.
 
    ::: moniker range="vs-2017"
-   In Visual Studio 2017 cercare il componente di supporto **IIS in** fase di sviluppo. Assicurarsi che sia selezionato quando si aggiunge il carico di lavoro.
+   In Visual Studio 2017 cercare il componente supporto IIS in **fase di** sviluppo. Assicurarsi che sia selezionato quando si aggiunge il carico di lavoro.
    ::: moniker-end
 - Eseguire Visual Studio come amministratore.
-- Installare e configurare correttamente IIS con le versioni appropriate di ASP.NET e/o ASP.NET Core. Per altre informazioni sull'uso di IIS ASP.NET Core, vedere [Host ASP.NET Core on Windows with IIS (Host ASP.NET Core su Windows con IIS).](/aspnet/core/host-and-deploy/iis/index) Per ASP.NET, vedere [Install IIS and ASP.NET Modules](/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules).
+- Installare e configurare correttamente IIS con le versioni appropriate di ASP.NET e/o ASP.NET Core. Per altre informazioni sull'uso di IIS con ASP.NET Core, vedere [Host ASP.NET Core on Windows with IIS (Host ASP.NET Core su Windows con IIS).](/aspnet/core/host-and-deploy/iis/index) Per ASP.NET, vedere [Install IIS and ASP.NET Modules](/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules).
 - Assicurarsi che l'app venga eseguita in IIS senza errori.
 
 ## <a name="debug-aspnet-apps"></a>Eseguire il debug ASP.NET app
@@ -161,38 +161,38 @@ Esistono diversi modi per pubblicare le app in IIS. Questi passaggi illustrano c
 
 3. Scegliere **IIS, FTP e così via e fare** clic su **Pubblica.**
 
-    ![Screenshot della finestra di dialogo Seleziona una destinazione di pubblicazione in Visual Studio. Viene selezionato un Distribuzione Web IIS, FTP e il pulsante Pubblica.](media/dbg-aspnet-local-iis.png)
+    ![Screenshot della finestra di dialogo Selezionare una destinazione di pubblicazione Visual Studio. È selezionata una connessione IIS, FTP Distribuzione Web e il pulsante Pubblica è evidenziato.](media/dbg-aspnet-local-iis.png)
 
-4. Nella finestra **di dialogo CustomProfile,** per **Metodo di pubblicazione,** scegliere **File system**.
+4. Nella finestra **di dialogo CustomProfile** scegliere File system **per Metodo** di **pubblicazione.**
 
 5. Per **Percorso di destinazione** selezionare **Sfoglia** (**...**).
 
-   - Per ASP.NET, selezionare **IIS locale,** selezionare il sito Web creato per l'app e quindi **selezionare Apri**.
+   - Per ASP.NET, selezionare **IIS locale,** selezionare il sito Web creato per l'app e quindi selezionare **Apri.**
 
      ![Pubblicare in ASP.NET in IIS](media/dbg-aspnet-local-iis1.png "Pubblicare ASP.NET in IIS")
 
-   - Per ASP.NET Core selezionare **File system,** selezionare la cartella impostata per l'app e quindi **selezionare Apri**.
+   - Per ASP.NET Core, selezionare **File system,** selezionare la cartella impostata per l'app e quindi selezionare **Apri.**
 
 1. Selezionare **Avanti**.
 
-1. In **Configurazione** selezionare **Debug nell'elenco** a discesa.
+1. In **Configurazione** selezionare **Debug dall'elenco** a discesa.
 
 1. Selezionare **Salva**.
 
-1. Nella finestra **di** dialogo Pubblica verificare che sia visualizzato **CustomProfile** (o il nome del profilo appena creato) e **che LastUsedBuildConfiguration sia** impostato su **Debug**.
+1. Nella finestra **di** dialogo Pubblica verificare che venga visualizzato **CustomProfile** (o il nome del profilo appena creato) e **che LastUsedBuildConfiguration** sia impostato su **Debug**.
 
 1. Selezionare **Pubblica**.
 
-    ![Screenshot della finestra di dialogo Pubblica con l'app CustomProfile selezionata, il pulsante Pubblica evidenziato e LastBuildConfiguration impostato su Debug.](media/dbg-aspnet-local-iis-select-site.png)
+    ![Screenshot della finestra di dialogo Pubblica, con l'app CustomProfile selezionata, il pulsante Pubblica evidenziato e LastBuildConfiguration impostato su Debug.](media/dbg-aspnet-local-iis-select-site.png)
 
 > [!IMPORTANT]
-> La modalità di debug riduce notevolmente le prestazioni dell'app. Per ottenere prestazioni ottimali, impostare nelweb.confige specificare una build di versione quando si distribuisce un'app di produzione o si `debug="false"` eservino misurazioni delle prestazioni. 
+> La modalità di debug riduce notevolmente le prestazioni dell'app. Per ottenere prestazioni ottimali, impostare nellaweb.confige specificare una build di rilascio quando si distribuisce un'app di produzione o si `debug="false"` eservino misurazioni delle prestazioni. 
 
 ## <a name="see-also"></a>Vedi anche
 - [Debug di ASP.NET: requisiti di sistema](aspnet-debugging-system-requirements.md)
 - [Procedura: Eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)
 - [Procedura: Trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)
 - [Eseguire il debug di applicazioni Web distribuite](debugging-deployed-web-applications.md)
-- [Procedura dettagliata: Debug di un Web Form](walkthrough-debugging-a-web-form.md)
+- [Procedura dettagliata: debug di un Web Form](walkthrough-debugging-a-web-form.md)
 - [Procedura: Eseguire il debug di eccezioni ASP.NET](how-to-debug-aspnet-exceptions.md)
 - [Eseguire il debug di applicazioni Web: errori e risoluzione dei problemi](debugging-web-applications-errors-and-troubleshooting.md)

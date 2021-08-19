@@ -17,12 +17,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fcc18ec69b14aef16e16d1674080bc0e06666e6505a64e34bf888abc1e4d2724
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 98771014f903b88ad57ec8713fd2867094c483b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121301278"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033797"
 ---
 # <a name="function-details-view"></a>Visualizzazione Dettagli funzione
 La finestra **Visualizzazione Dettagli funzione** visualizza le informazioni seguenti:

@@ -1,6 +1,6 @@
 ---
 title: Sviluppo di applicazioni con Progettazione flussi di lavoro
-description: Informazioni su come sviluppare applicazioni con il Progettazione flussi di lavoro, che è possibile utilizzare per la creazione grafica e il debug di applicazioni WF in Visual Studio.
+description: Informazioni su come sviluppare applicazioni con il Progettazione flussi di lavoro, che è possibile usare per la costruzione grafica e il debug di applicazioni WF in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,34 +16,35 @@ ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: ee870e3c3794fc0f87b9e29e2bff8b20b79d84fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d470de397cc67b96e2e75b9d6cdd637b4958bd8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082582"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Sviluppare app con Progettazione flussi di lavoro
 
-Il Progettazione flussi di lavoro è una finestra di progettazione visiva e un debugger per la costruzione grafica e il debug di applicazioni [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) in Visual Studio. Consente di comporre un'applicazione flusso di lavoro composita, una libreria attività o un servizio Windows Communication Foundation (WCF) tramite l'utilizzo di modelli e ActivityDesigner.
+Il Progettazione flussi di lavoro è una finestra di progettazione visiva e un debugger per la costruzione grafica e il debug di applicazioni [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) in Visual Studio. Consente di comporre un'applicazione del flusso di lavoro composito, una libreria di attività o un servizio Windows Communication Foundation (WCF) tramite l'uso di modelli e ActivityDesigner.
 
-## <a name="install-windows-workflow-foundation"></a>Installa Windows Workflow Foundation
+## <a name="install-windows-workflow-foundation"></a>Installare Windows Workflow Foundation
 
-Per usare i modelli di progetto del flusso di lavoro in Visual Studio, installare prima il componente **Windows Workflow Foundation** .
+Per usare i modelli di progetto flusso di lavoro Visual Studio, installare prima il **Windows Workflow Foundation.**
 
-1. Aprire Programma di installazione di Visual Studio. Per aprirlo, è possibile scegliere **strumenti**  >  **Ottieni strumenti e funzionalità** in Visual Studio.
+1. Aprire Programma di installazione di Visual Studio. Un modo rapido per aprirlo è **selezionare** Strumenti  >  **Ottieni strumenti e funzionalità** in Visual Studio.
 
-1. In Programma di installazione di Visual Studio selezionare la scheda **singoli componenti** .
+1. Nella Programma di installazione di Visual Studio selezionare la **scheda Singoli** componenti.
 
-1. Scorrere verso il basso fino alla categoria **attività di sviluppo** , quindi selezionare il componente **Windows Workflow Foundation** .
+1. Scorrere verso il basso fino alla **categoria Attività di** sviluppo e quindi selezionare il Windows Workflow **Foundation.**
 
-   ![Componente Windows Workflow Foundation per Visual Studio](media/windows-workflow-foundation-component.png)
+   ![Windows Componente Workflow Foundation per Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Selezionare **Modifica**.
 
-   Visual Studio installa il componente **Windows Workflow Foundation** .
+   Visual Studio installa il componente **Windows Workflow Foundation.**
 
 ## <a name="see-also"></a>Vedi anche
 

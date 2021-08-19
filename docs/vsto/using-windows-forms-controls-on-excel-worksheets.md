@@ -1,6 +1,6 @@
 ---
 title: Usare Windows Form nei fogli Excel lavoro
-description: Informazioni su come aggiungere Windows form alle cartelle di lavoro Microsoft Excel nello stesso modo in cui si aggiungono controlli Windows Form.
+description: Informazioni su come aggiungere Windows form alle cartelle di lavoro Microsoft Excel nello stesso modo in cui si aggiungono i controlli Windows Form.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 30c8bd62801dfa26cc53f4660948e2f75d44e974a7a7126fc71a66bd3dc8791c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 98a48f2c1f67c8758f9d5019e01f711192ab59b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267455"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082712"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usare Windows Form nei fogli Excel lavoro
-  È possibile aggiungere Windows form personalizzati alle cartelle di lavoro Microsoft Office Excel nello stesso modo in cui si aggiungono i controlli Windows Form. Per informazioni generali sull'uso dei controlli nei documenti, vedere [Windows Forms controls on Office documents overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
+  È possibile aggiungere Windows form alle cartelle di lavoro Microsoft Office Excel nello stesso modo in cui si aggiungono i controlli Windows Form. Per informazioni generali sull'uso dei controlli nei documenti, vedere [Windows Forms controls on Office documents overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 

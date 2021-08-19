@@ -1,5 +1,5 @@
 ---
-title: Fallback della Guida di F1 senza corrispondenza
+title: Fallback della guida F1 per la non corrispondenza
 description: Come si può osservare, Nessuna corrispondenza F1 trovata.
 ms.prod: visual-studio
 ms.technology: ''
@@ -27,12 +27,12 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 2e89710790497fb16c607c6d0e869e78e42dc952e80f1f05ef85b68a56bffc8c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 05853b1b77fd3266e82cfc0c7af17b5f55d168a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412927"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062498"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>Come si può osservare, Non `F1` è stata trovata alcuna corrispondenza della Guida
 

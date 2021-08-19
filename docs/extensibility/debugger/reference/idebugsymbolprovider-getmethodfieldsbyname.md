@@ -1,6 +1,6 @@
 ---
-description: Questo metodo ottiene il campo che rappresenta il nome completo di un metodo.
-title: 'IDebugSymbolProvider:: GetMethodFieldsByName | Microsoft Docs'
+description: Questo metodo ottiene il campo che rappresenta un nome di metodo completo.
+title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54962d87bcb3de471c9799f4c6be9f969b8eed17
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0cd7053f8d4bea283a47d6cce8042c9a303cb8e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087002"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063707"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-Questo metodo ottiene il campo che rappresenta il nome completo di un metodo.
+Questo metodo ottiene il campo che rappresenta un nome di metodo completo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,19 +47,19 @@ int GetMethodFieldsByName(
 
 ## <a name="parameters"></a>Parametri
 `pszFullName`\
-in Nome del metodo.
+[in] Nome del metodo.
 
 `nameMatch`\
-in Consente di selezionare il tipo di corrispondenza, ad esempio con distinzione tra maiuscole e minuscole.
+[in] Seleziona il tipo di corrispondenza, ad esempio, con distinzione tra maiuscole e minuscole.
 
 `ppEnum`\
-out Restituisce un enumeratore [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) per i campi associati a questo metodo.
+[out] Restituisce un [enumeratore IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) per i campi associati a questo metodo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Un metodo può essere associato a più campi se è in overload, ad esempio.
+ Un metodo può essere associato a più campi, ad esempio se è sottoposto a overload.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

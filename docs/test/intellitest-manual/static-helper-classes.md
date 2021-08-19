@@ -12,12 +12,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 62e58da2d6bf5e188231c3d46580e8202d97a6bfeaa1246c9d040dd2a2160e85
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fa4c088543775a55b0ec9b2bedea07a92b44cc9b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366511"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033005"
 ---
 # <a name="static-helper-classes"></a>Classi helper statiche
 

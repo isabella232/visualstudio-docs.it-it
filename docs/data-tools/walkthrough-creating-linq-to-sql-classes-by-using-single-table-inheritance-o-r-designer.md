@@ -1,6 +1,6 @@
 ---
 title: LINQ to SQL classi con ereditarietà a tabella singola
-description: In questa procedura dettagliata vengono create LINQ to SQL classi usando l'ereditarietà a tabella singola nel Visual Studio Object Relational Designer (O/R Designer).
+description: In questa procedura dettagliata creare LINQ to SQL classi personalizzate usando l'ereditarietà a tabella singola nel Visual Studio Object Relational Designer (Progettazione O/R).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff15209b60fb40200388eac2d9b1d90bb153fcfbba5c204f391c5bc7fbd70343
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d88bd7c28ae5d9d7aa078eb5e0006f233765514
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036745"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare LINQ to SQL con ereditarietà a tabella singola (O/R Designer)
-Gli [LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola, in quanto viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici descritti nell'argomento [Procedura:](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) Configurare l'ereditarietà tramite Progettazione oggetti e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare LINQ to SQL classi con ereditarietà a tabella singola (O/R Designer)
+Gli [LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola, in quanto viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata si espande in base ai passaggi generici forniti nell'argomento Procedura: Configurare l'ereditarietà tramite Progettazione [O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
 
 Durante questa procedura dettagliata vengono eseguite le attività seguenti:
 
@@ -69,9 +69,9 @@ Allo scopo di verificare che l'ereditarietà sia configurata correttamente, è n
 
 ### <a name="to-add-data-to-the-table"></a>Per aggiungere dati alla tabella
 
-1. Aprire la tabella nella visualizzazione dati Fare clic con il pulsante destro **del mouse sulla** **tabella** Person Esplora server o **Esplora database** quindi scegliere Mostra **dati tabella.**
+1. Aprire la tabella nella visualizzazione dati Fare clic con il pulsante destro **del mouse sulla** tabella Person Esplora server o **Esplora database** fare clic su Mostra **dati tabella**. 
 
-2. Copiare i dati riportati di seguito nella tabella È possibile copiarlo e incollarlo nella tabella selezionando l'intera riga nel **riquadro** Risultati.
+2. Copiare i dati riportati di seguito nella tabella È possibile copiarlo e incollarlo nella tabella selezionando l'intera riga nel **riquadro risultati.**
 
     |**ID**|**Tipo**|**FirstName**|**LastName**|**Responsabile**|
     |-|-|-|-|-|
@@ -118,11 +118,11 @@ Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casel
 
 ### <a name="to-create-the-inheritance"></a>Per creare l'ereditarietà
 
-1. In **Esplora server** o **Esplora database** passare alla tabella **Person** creata in precedenza.
+1. In **Esplora server** **o Esplora database** passare alla tabella **Person** creata in precedenza.
 
 2. Trascinare la **tabella Person** nell'area di progettazione **di O/R Designer.**
 
-3. Trascinare una seconda **tabella Person** in **O/R Designer** e modificarne il nome in **Employee**.
+3. Trascinare una **seconda tabella Person** in **O/R Designer** e modificarne il nome in **Employee**.
 
 4. Eliminare la proprietà **Manager** dall'oggetto **Person**.
 

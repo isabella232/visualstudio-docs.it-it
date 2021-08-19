@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 9427f722354ba6ef7d1694e12bf176170cd969a346bd6b85420845a2ec0a410f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 11707021ab8cd3275980dfce24baf24facdb03e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352861"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115499"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Usare i moduli per includere i file nella soluzione
   In alcuni casi può essere necessario distribuire file nel server SharePoint indipendentemente dal tipo di file, ad esempio le nuove pagine master. A tale scopo, è possibile usare *Moduli* (da non confondere con i [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una SharePoint soluzione. Quando la soluzione viene distribuita, i file nel modulo vengono copiati nelle cartelle specificate nel server SharePoint.
@@ -49,15 +49,15 @@ ms.locfileid: "121352861"
 |*Elements.xml*|File di definizione per il modulo.|
 |*Sample.txt*|Un file segnaposto che funge da esempio di file nel modulo.|
 
- Il *Elements.xml* file contiene gli elementi seguenti:
+ Il *fileElements.xml* contiene gli elementi seguenti:
 
 |Nome dell'elemento|Descrizione|
 |------------------|-----------------|
 |Elementi|Contiene tutti gli elementi definiti nel modulo.|
 |Modulo|L'elemento module ha un singolo attributo, *Name,* che specifica il nome del modulo nel formato `<Module Name="Module1">` .<br /><br /> Si noti che se si modifica il nome del modulo (o la relativa proprietà *Folder Name),* è necessario aggiornare manualmente il nome nell'elemento Module.<br /><br /> Se si specifica una sottodirectory per i file nell'elemento Module, (WSS) creerà automaticamente una struttura di [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] directory corrispondente.|
-|File|L'elemento File ha due parametri, *Path* e *Url.*<br /><br /> - Percorso: il nome e il percorso del file nella SharePoint soluzione. Il formato è `Path="Module1\Sample.txt"` .<br /><br /> - URL: percorso in cui verrà distribuito il file nel server SharePoint. Il formato è `Url="Module1/Sample.txt"` .<br /><br /> - Tipo: attributo facoltativo con due impostazioni: *GhostableInLibrary* e *Ghostable.* Il formato è `Type="GhostableInLibrary"` . Se si *specifica GhostableInLibrary,* il file verrà aggiunto a una raccolta documenti in SharePoint insieme a un elemento elenco associato al file quando viene aggiunto alla raccolta. Se si *specifica Ghostable,* il file viene aggiunto SharePoint all'esterno della raccolta documenti.|
+|File|L'elemento File ha due parametri, *Path* e *Url.*<br /><br /> - Percorso: il nome e il percorso del file nella SharePoint soluzione. Il formato è `Path="Module1\Sample.txt"` .<br /><br /> - URL: percorso in cui verrà distribuito il file nel server SharePoint server. Il formato è `Url="Module1/Sample.txt"` .<br /><br /> - Tipo: attributo facoltativo con due impostazioni: *GhostableInLibrary* e *Ghostable.* Il formato è `Type="GhostableInLibrary"` . Se si *specifica GhostableInLibrary,* il file verrà aggiunto a una raccolta documenti in SharePoint insieme a un elemento elenco associato al file quando viene aggiunto alla raccolta. Se si *specifica Ghostable,* il file viene aggiunto SharePoint all'esterno della raccolta documenti.|
 
- Ogni file che si vuole distribuire richiede una voce `<File>` di elemento separata in *Elements.xml*.
+ Ogni file che si vuole distribuire richiede una voce di `<File>` elemento separata in *Elements.xml*.
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Includere file usando un modulo](../sharepoint/how-to-include-files-by-using-a-module.md)

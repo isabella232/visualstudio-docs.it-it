@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8236f6c030e70033a77aa9c71d759dedaa453608c20a957fc63e2f8743613e4a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4d045dcddd1cdebb4308e35bf9060b013216a670
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037083"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
 
@@ -30,7 +30,7 @@ Uno scenario applicativo comune prevede la visualizzazione dei dati selezionati 
 
 L'uso di query con parametri rende più efficiente il funzionamento dell'applicazione, consentendo al database di eseguire in modo ottimale le operazioni di filtro rapido dei record. La richiesta invece di un'intera tabella del database, il relativo trasferimento in rete e l'uso della logica dell'applicazione per trovare i record desiderati possono comportare una riduzione della velocità e dell'efficienza dell'applicazione.
 
-È possibile aggiungere query con parametri a qualsiasi Oggetto TableAdapter (e controlli per accettare i valori dei parametri ed eseguire la query) usando **la** finestra di dialogo Generatore criteri di ricerca . Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
+È possibile aggiungere query con parametri a qualsiasi TableAdapter (e controlli per accettare i valori dei parametri ed eseguire la query) usando la finestra di dialogo **Generatore** criteri di ricerca . Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
@@ -42,7 +42,7 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 - Aggiunta di controlli per la visualizzazione dei dati nel form.
 
-- Completamento della finestra **di dialogo Generatore** criteri di ricerca.
+- Completamento della finestra **di dialogo Generatore criteri** di ricerca.
 
 - Immissione di parametri nel modulo ed esecuzione della query con parametri.
 
@@ -59,7 +59,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la **finestra** SQL Server Esplora oggetti. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati nel **Programma di installazione di Visual Studio**. Espandere il **nodo SQL Server.** Fare clic con il pulsante destro del mouse Local DB'istanza di query e **scegliere Nuova query**.
+    1. In Visual Studio aprire la **finestra** SQL Server Esplora oggetti dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati nel **Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza di query e **scegliere Nuova query**.
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -139,7 +139,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form:
 
-1. Assicurarsi che la finestra Windows Form abbia lo stato attivo e che la **finestra Origini** dati sia aperta e bloccata.
+1. Assicurarsi che la finestra Windows Forms abbia lo stato attivo e che la **finestra Origini** dati sia aperta e bloccata.
 
 1. Espandere il nodo **Customers** nella finestra **Origini dati**.
 

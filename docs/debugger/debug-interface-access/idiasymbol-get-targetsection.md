@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7e27b26f8e5f022f5145cffe51126c6614a8c3f67000fb56432e8c2c5d7fc6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2796fb05c2279b58895d348ae96a4d8868c8753f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362953"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147038"
 ---
 # <a name="idiasymbolget_targetsection"></a>IDiaSymbol::get_targetSection
 Recupera la sezione dell'indirizzo di una destinazione thunk.
