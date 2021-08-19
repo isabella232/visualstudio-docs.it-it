@@ -1,6 +1,6 @@
 ---
-title: Copia elementi del diagramma classi in un documento di Office
-description: Informazioni su come usare Progettazione classi per copiare le forme da un diagramma classi .NET in altri documenti. si otterrà una copia della forma o del codice sottostante.
+title: Copiare gli elementi del diagramma classi in un Office doc
+description: Informazioni su come usare Progettazione classi per copiare forme da un diagramma classi .NET ad altri documenti. Si otterrà una copia della forma o del codice sottostante.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d9be1a6dc591757ec261120df917866d5e207f49
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebad7d5ecefa600a60c6f5564df4c0a23bb1258b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056433"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Procedura: Copiare elementi dei diagrammi classi in un documento di Microsoft Office
 
@@ -44,5 +45,5 @@ Fare clic con il pulsante destro del mouse sulla forma e scegliere **Copia immag
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: stampare diagrammi classi](how-to-print-class-diagrams.md)
-- [Procedura: esportare diagrammi classi come immagini](how-to-export-class-diagrams-as-images.md)
+- [Procedura: Stampare diagrammi classi](how-to-print-class-diagrams.md)
+- [Procedura: Esportare diagrammi classi come immagini](how-to-export-class-diagrams-as-images.md)

@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 5271d49a6177f0582f6bfbcf94a0ddee7a2d123de9e877f302c9e98882d4799b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4e3a96df24b06297f79d52a72edcae56b7d87ac6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358610"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056511"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Trovare argomenti tramite l'indice del visualizzatore della Guida
 

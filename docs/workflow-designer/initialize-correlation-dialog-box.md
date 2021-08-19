@@ -13,18 +13,18 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 123fa7a3b9a9cbc65ed458ab5b412268f00dd15001148db26915c4ddf882845a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 391ff86b47b766b01066913b492d4f963361d49c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267052"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155174"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Finestra di dialogo Inizializza correlazione
 
-La **finestra di dialogo** Inizializza correlazione viene usata Progettazione flussi di lavoro per modificare la proprietà di <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività. Per altre informazioni, vedere [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
+La **finestra di dialogo** Inizializza correlazione viene usata in Progettazione flussi di lavoro per modificare la proprietà di <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività. Per altre informazioni, vedere [InitializeCorrelation.](../workflow-designer/initializecorrelation-activity-designer.md)
 
-La tabella seguente descrive gli elementi dell'interfaccia utente della finestra di dialogo **Inizializza** correlazione:
+Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra **di dialogo Inizializza** correlazione:
 
 |Elemento dell'interfaccia utente|Descrizione|
 |-|-----------------|
@@ -33,7 +33,7 @@ La tabella seguente descrive gli elementi dell'interfaccia utente della finestra
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Per avviare la finestra di dialogo Inizializza correlazione
 
-Fare **clic su** Visualizza **nell'ActivityDesigner InitializeCorrelation** o selezionare <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività in Progettazione flussi di lavoro. Fare quindi clic sul pulsante con i puntini di sospensione accanto alla <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> proprietà nella griglia delle proprietà.
+Fare **clic su** Visualizza **nell'ActivityDesigner InitializeCorrelation** o selezionare <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività in Progettazione flussi di lavoro. Fare quindi clic sul pulsante con i puntini di sospensione accanto <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> alla proprietà nella griglia delle proprietà.
 
 ## <a name="see-also"></a>Vedi anche
 

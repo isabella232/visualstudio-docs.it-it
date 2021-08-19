@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b6265e086e3490afb739deede39cc61b02246aa25d18b0524e4041668525d7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4bfdecc836056cc1a786ee36937c64aac564575d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121289062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151028"
 ---
 # <a name="set-language-specific-editor-options"></a>Impostare opzioni dell'editor specifiche del linguaggio
 
@@ -27,7 +27,7 @@ Visual Studio offre numerose opzioni dell'editor di testo applicabili a linguagg
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>Impostazioni disponibili nella finestra di dialogo Opzioni
 
-[Opzioni, Editor di testo, Base (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
+[Opzioni, Editor di testo, Basic (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
 Vengono descritte le impostazioni per il codice Visual Basic, ad esempio quelle che riguardano i costrutti End, la riformattazione del codice, la struttura e i suggerimenti per la correzione degli errori.
 
 [Opzioni, Editor di testo, C/C++, Formattazione](../../ide/reference/options-text-editor-c-cpp-formatting.md)\

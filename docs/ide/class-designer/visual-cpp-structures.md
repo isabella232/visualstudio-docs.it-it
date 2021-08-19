@@ -1,6 +1,6 @@
 ---
 title: Strutture C++ in Progettazione classi
-description: Informazioni su come Progettazione classi supporta le strutture C++ dichiarate con la parola chiave struct.
+description: Informazioni su come Progettazione classi le strutture C++ dichiarate con lo struct della parola chiave.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ca35f9e1c3c1340330ddbbe36ede540fe1e547d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3d05c4aac4b4d2962d27f4d5586d5fb289ac9aa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879956"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078388"
 ---
 # <a name="c-structures-in-class-designer"></a>Strutture C++ in Progettazione classi
 
@@ -44,4 +45,4 @@ Una forma struttura C++ in un diagramma classi è simile per aspetto e funzionam
 
 - [Uso del codice C++](working-with-visual-cpp-code.md)
 - [Classi e struct](/cpp/cpp/classes-and-structs-cpp)
-- [struct](/cpp/cpp/struct-cpp)
+- [Struct](/cpp/cpp/struct-cpp)

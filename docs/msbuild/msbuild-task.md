@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ebe6c55754ae3759a28c6df65eadaa11604ad63244f0fdc0aed22802b571b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a0e44c65ec3367721cdc18f22739a4f53bccb176
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397462"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108642"
 ---
 # <a name="msbuild-task"></a>MSBuild (attività)
 

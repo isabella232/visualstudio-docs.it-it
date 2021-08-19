@@ -1,20 +1,21 @@
 ---
 title: Direttiva parameter T4
-description: Si noti che in Visual Studio la direttiva parameter dichiara le proprietà nel codice del modello inizializzate dai valori passati dal contesto esterno.
+description: Come si Visual Studio, la direttiva parameter dichiara le proprietà nel codice del modello inizializzate dai valori passati dal contesto esterno.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef80179d43996669b9d883fd2ca9163208d18d7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a8a6101915112c1d7035611bec84c6c8d6bf6bc4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386098"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085364"
 ---
 # <a name="t4-parameter-directive"></a>Direttiva parameter T4
 
@@ -85,7 +86,7 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passaggio di valori a un Run-Time di testo (pre-elaborato)
- In genere non è necessario usare la direttiva con modelli di testo `<#@parameter#>` di run-time (pre-elaborati). È invece possibile definire un costruttore aggiuntivo o una proprietà impostabile per il codice generato, tramite il quale si passano i valori dei parametri. Per altre informazioni, vedere [Generazione di testo di run-time con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
+ In genere non è necessario usare la `<#@parameter#>` direttiva con modelli di testo di run-time (pre-elaborati). In alternativa, è possibile definire un costruttore aggiuntivo o una proprietà impostabile per il codice generato, tramite il quale si passano i valori dei parametri. Per altre informazioni, vedere [Generazione di testo di run-time con modelli di testo T4.](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
  Tuttavia, se si vuole usare in un modello di run-time, è possibile passarvi i valori `<#@parameter>` usando il dizionario Session. Si supponga, ad esempio, di aver creato il file come modello pre-elaborato denominato `PreTextTemplate1` . È possibile richiamare il modello nel programma usando il codice seguente.
 

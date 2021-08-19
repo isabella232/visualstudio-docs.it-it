@@ -19,18 +19,18 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5c4eac1e41ca7cf12003e28723bcc3889c787f15460e6a334f1328aa7111b141
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2343212faa44d2085f216e8e44ba3e45eb807f5d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060427"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informazioni aggiuntive per gli errori SharePoint errore
   È possibile trovare assistenza per la risoluzione SharePoint errori e avvisi degli strumenti di risoluzione dei problemi e [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nei forum pubblici.
 
 ## <a name="troubleshoot-errors-and-issues"></a>Risolvere gli errori e i problemi
- Per assistenza su alcuni errori comuni e altri problemi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] negli SharePoint, vedere gli argomenti seguenti:
+ Per assistenza su alcuni errori comuni e altri problemi SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti, vedere gli argomenti seguenti:
 
 - [Risolvere i SharePoint soluzioni](../sharepoint/troubleshooting-sharepoint-solutions.md)
 

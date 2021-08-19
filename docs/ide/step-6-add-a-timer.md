@@ -1,6 +1,6 @@
 ---
 title: 'Passaggio 6: Aggiungere un timer'
-description: Informazioni su come aggiungere un <xref:System.Windows.Forms.Timer> controllo al gioco di abbinamenti.
+description: Informazioni su come aggiungere un <xref:System.Windows.Forms.Timer> controllo al gioco di corrispondenza.
 ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: tutorial
@@ -14,19 +14,19 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2367536dd520876d753bce3c3ffa46e4c9853208e9ddf53385c1c84374f160bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 964f49c6a149ccf0f5af46456005ff0e1f82826b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121289179"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078050"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
 
 ## <a name="to-add-a-timer"></a>Per aggiungere un timer
 
-1. Nella casella degli strumenti **di progettazione** Windows Form  scegliere **Timer** (nella categoria Componenti) e quindi premere **INVIO** oppure fare doppio clic sul timer per aggiungere un controllo timer al form. L'icona del timer, denominata **Timer1,** dovrebbe essere visualizzata in uno spazio sotto il form, come illustrato nell'immagine seguente.
+1. Dalla casella degli **strumenti di Windows Forms Designer**  scegliere **Timer** (nella categoria Componenti) e quindi premere **INVIO** oppure fare doppio clic sul timer per aggiungere un controllo timer al form. L'icona del timer, denominata **Timer1,** dovrebbe essere visualizzata in uno spazio sotto il form, come illustrato nell'immagine seguente.
 
      ![Timer](../ide/media/express_timer.png)<br/>
 ***Timer***
@@ -36,7 +36,7 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
 
 2. Scegliere l'icona **Timer1** per selezionare il timer. Nella finestra **Proprietà** passare dalla visualizzazione degli eventi a quella delle proprietà. Impostare quindi la proprietà **Interval** del timer su **750**, ma lasciare la proprietà **Enabled** impostata su **False**. La proprietà **Interval** indica al timer il tempo di attesa tra eventi *tick* o il momento in cui viene attivato l'evento <xref:System.Windows.Forms.Timer.Tick>. Il valore 750 indica al timer di attendere tre quarti di secondo (750 millisecondi) prima di generare il relativo evento Tick. Il metodo <xref:System.Windows.Forms.Timer.Start> per avviare il timer verrà chiamato solo dopo che il giocatore avrà scelto la seconda etichetta.
 
-3. Scegliere l'icona del controllo **timer Windows Progettazione**  Form e quindi premere INVIO oppure fare doppio clic sul timer per aggiungere un gestore dell'evento Tick vuoto. Sostituire il codice con quello indicato di seguito oppure immettere manualmente il codice seguente nel gestore eventi.
+3. Scegliere l'icona del controllo **timer in Progettazione**  Windows Form e quindi premere INVIO oppure fare doppio clic sul timer per aggiungere un gestore eventi Tick vuoto. Sostituire il codice con quello indicato di seguito oppure immettere manualmente il codice seguente nel gestore eventi.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet7":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet7":::
@@ -49,7 +49,7 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
     > [!NOTE]
     > Un oggetto Timer ha un metodo `Start()` che avvia il timer e un metodo `Stop()` che lo arresta. Impostando la proprietà **Enabled** del timer su **True** nella finestra **Proprietà**, il timer inizia a contare tick non appena il programma viene avviato. Se però si lascia questa proprietà impostata su **False**, il timer inizia a contare tick solo quando viene chiamato il metodo `Start()`. Di norma, un timer genera l'evento Tick ripetutamente tramite la proprietà **Interval** per stabilire quanti millisecondi attendere tra un ciclo e l'altro. Quando il metodo `Stop()` del timer viene chiamato nell'evento Tick, il timer passa in modalità *evento unico*: quando viene chiamato il metodo `Start()`, il timer attende l'intervallo specificato, genera un unico evento Tick e quindi si arresta.
 
-4. Per vedere il nuovo timer in azione, andare nell'editor di codice e aggiungere il codice seguente all'inizio e alla fine del metodo del gestore dell'evento `label_Click()`. Si aggiungono due istruzioni all'inizio e tre istruzioni alla fine. Il resto del metodo `if` rimane lo stesso.
+4. Per vedere il nuovo timer in azione, andare nell'editor di codice e aggiungere il codice seguente all'inizio e alla fine del metodo del gestore dell'evento `label_Click()`. Si aggiungono due istruzioni all'inizio e tre istruzioni nella parte inferiore. Il resto del metodo `if` rimane lo stesso.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet8":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet8":::
@@ -66,4 +66,4 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
 
 - Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 7: Mantenere le coppie visibili.](../ide/step-7-keep-pairs-visible.md)**
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere riferimenti alle etichette.](../ide/step-5-add-label-references.md)
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere riferimenti alle etichette](../ide/step-5-add-label-references.md).

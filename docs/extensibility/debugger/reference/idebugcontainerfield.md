@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0345582e0429af045f085833be8b41158ca7ac12e3a5b1dda1721ed5b72d270
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a6f915bf6047e6517768ec498eeb15044abe945
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127402"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Questa interfaccia rappresenta un simbolo o un tipo che è un contenitore per altri simboli o tipi.

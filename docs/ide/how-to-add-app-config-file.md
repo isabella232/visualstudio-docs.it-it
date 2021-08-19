@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aggiungere un file app.config a un progetto'
-description: Informazioni su come aggiungere un app.config file a un progetto C# in modo da poter personalizzare il modo in cui Common Language Runtime individua e carica i file di assembly.
+description: Informazioni su come aggiungere un app.config a un progetto C# in modo da poter personalizzare il modo in cui Common Language Runtime individua e carica i file di assembly.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: b08127e5e0cd175d600685fc407573e0770fa61d78e15c9d0df0c35add4e7e77
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 75938513834b98789aa2b9501a9face06c7c1697
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387733"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101804"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: Aggiungere un file di configurazione dell'applicazione a un progetto C#
 

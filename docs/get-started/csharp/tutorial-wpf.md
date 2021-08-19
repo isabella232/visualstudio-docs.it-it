@@ -14,12 +14,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b10c4cc144b9267b2ff0bda7245f175727d7e59227e201ff55a2066fc0afa693
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9f9de66433b9795df31ea708f54012bcf8818538
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144249"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: Creare un'applicazione semplice con C\#
 
@@ -28,11 +28,11 @@ Completando questa esercitazione, si acquisirà familiarità con molti strumenti
 ## <a name="prerequisites"></a>Prerequisiti
 
 ::: moniker range="vs-2017"
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?) per installarlo gratuitamente.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-- Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+- Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 - Per questa esercitazione è possibile .NET Framework o .NET Core. .NET Core è il framework più recente e moderno. .NET Core richiede Visual Studio 2019 versione 16.3 o successiva.
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Quando si apre per la prima volta, Visual Studio richiede di eseguire l'accesso.
 
 Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 
-![Visual Studio 2017 IDE con l'Impostazioni generale applicata](../media/exploreide-idewithgeneralsettings.png "Screenshot dell'IDE Visual Studio 2017 con l'Impostazioni generale applicata")
+![Visual Studio 2017 IDE con applicazione Impostazioni generale](../media/exploreide-idewithgeneralsettings.png "Screenshot dell'IDE Visual Studio 2017 con l'Impostazioni generale applicata")
 
 ::: moniker-end
 
@@ -62,9 +62,9 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 ::: moniker range="vs-2017"
 
-1. Creare un nuovo progetto. Nella barra dei menu selezionare **File**  >  **Nuovo**  >  **Project**.
+1. Creare un nuovo progetto. Nella barra dei menu selezionare **File**  >  **nuovo**  >  **Project**.
 
-     ![Nella barra dei menu scegliere File, Nuovo, Project](../media/exploreide-filenewproject.png "Screenshot della barra dei menu in cui scegliere File, Nuovo, Project")
+     ![Sulla barra dei menu scegliere File, Nuovo, Project](../media/exploreide-filenewproject.png "Screenshot della barra dei menu in cui si sceglie File, Nuovo, Project")
 
 1. Nella finestra di dialogo **Nuovo progetto** selezionare la categoria **Installati** > **Visual C#** > **Windows Desktop** e quindi selezionare il modello **App WPF (.NET Framework)**. Assegnare al progetto il nome **HelloWPFApp** e scegliere **OK**.
 
@@ -82,13 +82,13 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 1. Nella schermata **Crea un nuovo progetto** cercare "WPF", scegliere Applicazione **WPF** e quindi **scegliere Avanti.**
 
-   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="Modello di applicazione WPF nella finestra di dialogo 'Crea un nuovo progetto'":::
+   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="Modello di applicazione WPF nella finestra di dialogo &quot;Crea un nuovo progetto&quot;":::
 
-1. Nella schermata successiva assegnare al progetto il nome **HelloWPFApp** e scegliere **Avanti.**
+1. Nella schermata successiva assegnare al progetto un nome, **HelloWPFApp,** e scegliere **Avanti.**
 
    :::image type="content" source="./media/vs-2019/explore-ide-name-project.png" alt-text="Assegnare al progetto il nome &quot;HelloWPFApp&quot;":::
 
-1. Nella finestra **Informazioni aggiuntive** dovrebbe essere già **selezionato .NET Core 3.1** per il framework di destinazione. In caso contrario, **selezionare .NET Core 3.1.** Scegliere quindi **Crea.**
+1. Nella finestra **Informazioni aggiuntive** è necessario che **.NET Core 3.1** sia già selezionato per il framework di destinazione. In caso contrario, **selezionare .NET Core 3.1.** Scegliere quindi **Crea**.
 
    :::image type="content" source="./media/vs-2019/wpf-target-framework.png" alt-text="Nella finestra &quot;Informazioni aggiuntive&quot; assicurarsi che sia selezionato .NET Core 3.1":::
 
@@ -107,17 +107,17 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. A tale scopo, sce
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro del mouse *su MainWindow.xaml* e **scegliere Rinomina.** Rinominare il file in *Greetings.xaml.*
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro *del mouse su MainWindow.xaml* e scegliere **Rinomina**. Rinominare il file in *Greetings.xaml.*
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
-Se la finestra di progettazione non è aperta, *selezionare Greetings.xaml* e premere  + **MAIUSC F7** per aprire la finestra di progettazione.
+Se la finestra di progettazione non è aperta, selezionare *Greetings.xaml* e premere + **MAIUSC F7** per aprire la finestra di progettazione.
 
 Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:System.Windows.Controls.TextBlock>, due controlli <xref:System.Windows.Controls.RadioButton> e un controllo <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Aggiungere un controllo TextBlock
 
-1. Premere **CTRL** + **Q per** attivare la casella di ricerca e digitare Casella degli **strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
+1. Premere **CTRL Q** + **per** attivare la casella di ricerca e digitare Casella degli **strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
 1. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
@@ -151,7 +151,7 @@ Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:Sys
 
 1. Se si vuole, riallineare al centro il controllo TextBlock e quindi salvare le modifiche premendo **CTRL+S** o usando la voce di menu **File**.
 
-Si aggiungeranno quindi due [controlli RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
+Successivamente, si aggiungeranno due [controlli RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
 
 ### <a name="add-radio-buttons"></a>Aggiungere pulsanti di opzione
 
@@ -207,7 +207,7 @@ L'ultimo elemento dell'interfaccia utente che verrà aggiunto è un [controllo](
 
 ### <a name="add-the-button-control"></a>Aggiungere il controllo del pulsante
 
-1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione. Se si usa il Visual Studio 2019 o versione successiva, una linea rossa consente di centrare il controllo.
+1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione. Se si usa la Visual Studio 2019 o versione successiva, una linea rossa consente di centrare il controllo.
 
 1. Nella visualizzazione XAML modificare il valore di **Contenuto** per il controllo Button da `Content="Button"` a `Content="Display"`, e salvare le modifiche.
 

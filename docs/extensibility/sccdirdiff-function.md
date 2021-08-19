@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 617c94220d13eed915a854bb9cf638bb390db1aeaa3a111c089d65283446f15e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 15f4cd3bd1175cbea11656f62159a56f1c57bb98
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447766"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158320"
 ---
 # <a name="sccdirdiff-function"></a>Funzione SccDirDiff
 Questa funzione visualizza le differenze tra la directory locale corrente sul disco client e il progetto corrispondente nel controllo del codice sorgente.

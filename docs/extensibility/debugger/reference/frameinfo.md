@@ -1,6 +1,6 @@
 ---
-description: Descrive un stack frame.
-title: FRAMEINFO | Microsoft Docs
+description: Descrive una stack frame.
+title: FrameINFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0df1689a6d72e972c2bb0f18082041997511843b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6c2f2da572c18dfce5aac6a8aa748a07347ff088
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059249"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104612"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
-Descrive un stack frame.
+Descrive una stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,7 +67,7 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Members
 `m_dwValidFields`\
-Combinazione di flag dell'enumerazione [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica i campi che vengono compilati.
+Combinazione di flag [dell'FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica quali campi vengono compilati.
 
 `m_bstrFuncName`\
 Nome della funzione associato all'stack frame.
@@ -78,39 +79,39 @@ Tipo restituito associato all'stack frame.
 Argomenti per la funzione associata all'stack frame.
 
 `m_bstrLanguage`\
-Lingua in cui è implementata la funzione.
+Linguaggio in cui viene implementata la funzione.
 
 `m_bstrModule`\
 Nome del modulo associato all'stack frame.
 
 `m_addrMin`\
-Indirizzo dello stack fisico minimo.
+Indirizzo minimo dello stack fisico.
 
 `m_addrMAX`\
 Indirizzo massimo dello stack fisico.
 
 `m_pFrame`\
-Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta questo stack frame.
+Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta questa stack frame.
 
 `m_pModule`\
 Oggetto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) che rappresenta il modulo che contiene questo stack frame.
 
 `m_fHasDebugInfo`\
-Diverso da zero ( `TRUE` ) se le informazioni di debug esistono nel frame specificato.
+Diverso da zero ( `TRUE` ) se nel frame specificato sono presenti informazioni di debug.
 
 `m_fStaleCode`\
-Diverso da zero ( `TRUE` ) se l'stack frame è associato a codice che non è più valido.
+Diverso da zero ( `TRUE` ) se il stack frame è associato a codice non più valido.
 
 `m_fAnnotatedFrame`\
-Diverso da zero ( `TRUE` ) se il stack frame viene annotato da gestione debug sessione (SDM).
+Diverso da zero ( `TRUE` ) se il stack frame è annotato dalla gestione del debug di sessione (SDM).
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) da compilare. Questa struttura è inoltre contenuta in un elenco contenuto nell'interfaccia [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che, a sua volta, viene restituito da una chiamata al metodo [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
+Questa struttura viene passata [al metodo GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) da completare. Questa struttura è contenuta anche in un elenco contenuto nell'interfaccia [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che, a sua volta, viene restituita da una chiamata al [metodo EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

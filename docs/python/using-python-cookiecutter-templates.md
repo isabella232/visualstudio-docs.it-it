@@ -6,24 +6,25 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 920822cca275f0285f922fc49a60af3a3b152d6b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920613"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140310"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) offre un'interfaccia utente grafica per individuare modelli, opzioni del modello di input e creare progetti e file. Questa estensione è inclusa in Visual Studio 2017 e versioni successive e può essere installata separatamente nelle versioni precedenti di Visual Studio.
 
-Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python mentre Visual Studio è in esecuzione, selezionare il pulsante **Home** sulla barra degli strumenti di tagliatore per rilevare l'interprete appena installato. (Vedere [ambienti Python](managing-python-environments-in-visual-studio.md) per altre informazioni sugli ambienti in generale).
+Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python Visual Studio in esecuzione, selezionare il pulsante **Home** sulla barra degli strumenti Cookiecutter per rilevare l'interprete appena installato. Per altre informazioni sugli ambienti in generale, vedere Ambienti [Python.](managing-python-environments-in-visual-studio.md)
 
-Una volta installato, selezionare **Visualizza**  >  **tagliatore Explorer** per aprire la relativa finestra:
+Dopo l'installazione, **selezionare Visualizza**  >  **Cookiecutter Explorer** per aprire la relativa finestra:
 
 ![Finestra principale di Cookiecutter](media/cookiecutter-overview.png)
 
@@ -48,7 +49,7 @@ Quando si seleziona un modello e si fa clic su **Next** (Avanti), Cookiecutter c
 
 Se si seleziona un modello dai gruppi **Recommended** (Consigliati) o **GitHub** oppure si immette un URL personalizzato nella casella di ricerca e si seleziona tale modello, questo viene clonato e installato nel computer locale. Se tale modello è stato installato in una sessione precedente di Visual Studio, questo verrà eliminato automaticamente e verrà clonata la versione più recente.
 
-Se si seleziona un modello dal gruppo **installato** oppure si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio carica il modello senza clonarlo.
+Se si seleziona un  modello dal gruppo Installato o si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio tale modello senza clonarlo.
 
 > [!Important]
 > I modelli di Cookiecutter vengono clonati in un'unica cartella *~/.cookiecutter*. Il nome di ogni sottocartella viene definito in base al nome del repository GIT, che non include il nome utente di GitHub. Possono verificarsi conflitti se si clonano modelli diversi con lo stesso nome provenienti da autori diversi. In questo caso, Cookiecutter impedisce di sovrascrivere il modello esistente con un modello diverso con lo stesso nome. Per installare il nuovo modello, è prima necessario eliminare quello esistente.
@@ -75,13 +76,13 @@ Dopo aver creato correttamente i file, Cookiecutter offre un'opzione per aprire 
 
 ## <a name="cookiecutter-options"></a>Opzioni di Cookiecutter
 
-Le opzioni tagliatore sono disponibili tramite **strumenti**  >  **Opzioni**  >  **tagliatore**:
+Le opzioni cookiecutter sono disponibili tramite  >    >  **Cookiecutter** di Opzioni degli strumenti :
 
 ![Opzioni di Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Opzione | Descrizione |
 | --- | --- |
-| **URL feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
+| **URL del feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Ottimizzare i modelli di Cookiecutter per Visual Studio
@@ -99,8 +100,8 @@ Il rendering predefinito delle variabili di un modello dipende dal tipo di dati 
 | --- | --- |
 | Etichetta | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
 | Descrizione | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
-| URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Se si seleziona il collegamento ipertestuale, il browser predefinito dell'utente verrà aperto su tale URL. |
-| Selettore | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: Casella di testo con un pulsante **...** che visualizza una finestra di dialogo di connessione al database.</li></ul> |
+| URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Selezionando il collegamento ipertestuale si apre il browser predefinito dell'utente a tale URL. |
+| Selettore | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: casella di testo con un **pulsante ...** che apre una finestra di dialogo di connessione al database.</li></ul> |
 
 Esempio:
 
@@ -170,7 +171,7 @@ Se non è necessario passare un argomento, lasciare una stringa vuota oppure ome
 ]
 ```
 
-Usare una matrice per più argomenti. Per le opzioni, suddividere l'opzione e il relativo valore in argomenti separati, usando correttamente le virgolette. Ad esempio:
+Usare una matrice per più argomenti. Per le opzioni, suddividere l'opzione e il relativo valore in argomenti separati, usando correttamente le virgolette. Esempio:
 
 ```json
 "_visual_studio_post_cmds": [
@@ -218,7 +219,7 @@ Errori di caricamento:
 Errori di esecuzione:
 
 - **iknite/cookiecutter-ansible-role** (lo script hook di post-generazione richiede input nella console)
-- **benregn/tagliatore-Django-Ansible** (errore Jinja)
+- **benregn/cookiecutter-django-ansible** (errore Jinja)
 
 Uso di Bash (non irreversibile):
 

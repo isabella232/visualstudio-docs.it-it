@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 02fd98766100d563f7f2eb3b07c1633e1e8ba991483d4d9b0f8b431e972cb1a1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a4c033d9df9f06df318d6156c73b3aee2d828ed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344551"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058834"
 ---
 # <a name="idiastackframeget_lengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
 Recupera il numero di byte dei registri salvati inseriti nello stack.

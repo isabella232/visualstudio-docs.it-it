@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ee115eea0342d1e8ce2c34beed7ce1cfadc98d00ea431a1f0a28fc32aee7bdf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8b1f05e564f5d26c3c470917dbdf9bb9045a689a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121258928"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143911"
 ---
 # <a name="extract-local-function-refactoring"></a>Refactoring di estrazione di funzioni locali
 

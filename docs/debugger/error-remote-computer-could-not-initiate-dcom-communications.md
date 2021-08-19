@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c316b87f35186b58b58ae0b8db93edeee3c4a56ab903847ec95187ffb4491a2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8a5141560aefaf31337ffc82eee1bfa0f413d43c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058647"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Errore: il computer remoto non può avviare le comunicazioni DCOM
 Quando il computer remoto ha tentato di comunicare con il computer locale si è verificato un errore DCOM. Il computer locale è il computer che
@@ -34,7 +34,7 @@ Quando il computer remoto ha tentato di comunicare con il computer locale si è 
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-1. Se nel computer locale è abilitato Windows [](../debugger/remote-debugging.md) firewall, vedere Debug remoto per istruzioni su come configurare il firewall per il debug locale.
+1. Se nel computer locale è abilitato [](../debugger/remote-debugging.md) Windows, vedere Debug remoto per istruzioni su come configurare il firewall per il debug locale.
 
 2. Testare l'autenticazione di Windows tentando di aprire una condivisione di file nel computer locale dal server remoto.
 

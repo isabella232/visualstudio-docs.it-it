@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d1fbcbc8ce8d54dbacee710590f59e28ccf2ac881b02e3f6475b0cc8c6d8009c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 01536094bdb9fd084b32ce56429d085f5f377f8f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228909"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149221"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
   Rappresenta una proprietà personalizzata inclusa in una funzionalità quando viene distribuita in SharePoint. Dopo aver distribuito una funzionalità, è possibile accedere alla proprietà nel codice.

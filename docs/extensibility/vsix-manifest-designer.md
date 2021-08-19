@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fc696d14ca7eb7c9efd3f038ce399cb19f1a926be8bbe515f694b5aa23d4af1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 884acc6c4af165b9174c814d47e08489dcaa3291
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335238"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158075"
 ---
 # <a name="vsix-manifest-designer"></a>Finestra di progettazione del manifesto VSIX
 Modifica un file manifesto del pacchetto VSIX, che imposta il comportamento di installazione per un'Visual Studio predefinita.
@@ -97,7 +97,7 @@ Modifica un file manifesto del pacchetto VSIX, che imposta il comportamento di i
 
   **Questa estensione VSIX viene installata per tutti gli utenti (è necessaria l'elevazione dei privilegi durante l'installazione)** Se si seleziona questa casella di controllo, l'estensione viene installata per tutti gli utenti. in caso contrario, viene installato solo per l'utente corrente.
 
-  **Questo pacchetto VSIX viene installato dal programma di Windows installazione** Se si seleziona questa casella di controllo, l'estensione viene installata dal programma di installazione Windows *(file.msi;* in caso contrario, viene installato come pacchetto VSIX tipico (file *con estensione vsix).*
+  **Questo pacchetto VSIX viene installato dal programma Windows installazione** Se si seleziona questa casella di controllo, l'estensione viene installata dal programma di installazione Windows *(file.msi;* in caso contrario, viene installato come pacchetto VSIX tipico (file *con estensione vsix).*
 
   La **scheda Asset** contiene i controlli seguenti.
 

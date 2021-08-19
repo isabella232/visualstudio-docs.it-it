@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 98ba7716a5b76a996437167c78ac066b2f43d9420430a69a62179fbb17b73a6b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3387a210515be1a6db82d9c5e15f87ca4128a1f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121371738"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150898"
 ---
 # <a name="set-bookmarks-in-code"></a>Impostare segnalibri nel codice
 
-È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni: la finestra **Segnalibro** (**Visualizza** finestra  >  **segnalibro**) e la barra degli strumenti dell'editor di testo.
+È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni: la finestra **Segnalibro** **(Visualizza** finestra  >  **Segnalibro)** e la barra degli strumenti dell'editor di testo.
 
 ![Barra degli strumenti segnalibro](media/bookmark-toolbar.png)
 

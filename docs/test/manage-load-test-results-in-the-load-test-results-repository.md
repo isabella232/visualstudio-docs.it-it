@@ -1,6 +1,6 @@
 ---
 title: Gestire i risultati dei test di carico
-description: Informazioni su come gestire i dati raccolti durante un test di carico, archiviati nel database Risultati test repository SQL carico.
+description: Informazioni su come gestire i dati raccolti durante un test di carico, archiviati nel database del Risultati test di SQL carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7d5bf3decd66b285bbc50d5bee21b5f46fe380f77cac72b7a36273ce39378c59
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 407e265424863d7018fc6b3e12fc23bddd0a9812
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352669"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139907"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gestire i risultati dei test di carico nel repository dei risultati del test di carico
 
@@ -49,17 +49,17 @@ Quando è installato Visual Studio Enterprise, l'archivio dei risultati dei test
 |Attività|Argomenti correlati|
 |-|-----------------------|
 |**Configurare un repository dei risultati del test di carico**: è possibile configurare un repository dei risultati del test di carico in un database SQL. **Nota:** un repository del test di carico può essere creato anche quando si installa un test controller. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).||
-|**Selezione e visualizzazione di un repository dei risultati:** è possibile selezionare un repository dei risultati specifico. La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui archiviare i risultati del test di carico utilizzando la finestra **Gestisci controller test**.|-   [Procedura: Selezionare un repository dei risultati del test di carico](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Selezione e visualizzazione di un repository dei risultati:** è possibile selezionare un repository dei risultati specifico. La scelta non è limitata a un archivio dei risultati locale. Spesso i test di carico vengono eseguiti su un insieme remoto di computer agente. I risultati ottenuti dai computer agente o locale possono essere memorizzati in qualsiasi server SQL in cui sia stato creato un archivio dei risultati del test di carico. In entrambi i casi è necessario identificare la posizione in cui archiviare i risultati del test di carico utilizzando la finestra **Gestisci controller test**.|-   [Procedura: Selezionare un repository dei risultati del test di carico](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Eliminare un risultato del test di carico dal repository**: è possibile rimuovere un risultato del test di carico dall'**Editor test di carico** utilizzando la finestra di dialogo **Apri e gestisci risultati test di carico**.|-   [Procedura: Eliminare i risultati del test di carico da un repository](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importare ed esportare risultati in un repository:** è possibile importare ed esportare risultati del test di carico dall'**Editor test di carico**.|-   [Procedura: Importare i risultati del test di carico in un repository](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Procedura: Esportare i risultati del test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Importare ed esportare risultati in un repository:** è possibile importare ed esportare risultati del test di carico dall'**Editor test di carico**.|-   [Procedura: Importare i risultati del test di carico in un repository](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Procedura: Esportare i risultati dei test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Attività correlate
 
-[Analizzare i risultati del test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 È possibile visualizzare i risultati di un test di carico in esecuzione e di un test di carico completato tramite l'**analizzatore test di carico**.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Analizzare i risultati del test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)

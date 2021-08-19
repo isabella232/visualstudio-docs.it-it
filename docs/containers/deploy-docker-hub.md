@@ -1,60 +1,60 @@
 ---
-title: Distribuire un contenitore Docker ASP.NET Core nell'hub Docker | Microsoft Docs
-description: Informazioni su come usare gli strumenti del contenitore di Visual Studio per distribuire un'app Web di ASP.NET Core nell'hub Docker
+title: Distribuire un ASP.NET Core Docker in Docker Hub | Microsoft Docs
+description: Informazioni su come usare Visual Studio Container Tools per distribuire un ASP.NET Core app Web Docker Hub
 author: ghogen
 manager: jmartens
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2fe4c9a1ac39ed090eae657c02ea8417002a2473
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059333"
 ---
 # <a name="deploy-to-docker-hub"></a>Distribuire in Docker Hub
 
-Docker Hub fornisce un servizio di hosting pratico per i repository di immagini. È possibile eseguire facilmente la distribuzione nell'hub Docker manualmente da Visual Studio.
+Docker Hub un comodo servizio di hosting per i repository di immagini. È possibile eseguire facilmente la distribuzione in Docker Hub manualmente da Visual Studio.
 
-## <a name="create-a-docker-account-and-docker-hub-repository"></a>Creare un account Docker e un repository Docker Hub
+## <a name="create-a-docker-account-and-docker-hub-repository"></a>Creare un account Docker e Docker Hub repository
 
-[Iscriversi](https://hub.docker.com/signup) per ottenere un account Docker, se non ne è già presente uno.
+[Iscriversi per](https://hub.docker.com/signup) un account Docker, se non se ne ha già uno.
 
-Se non si dispone di un repository Docker Hub, crearne uno nell' [Hub Docker](https://hub.docker.com/).
+Se non si ha un repository Docker Hub, crearne uno [in Docker Hub](https://hub.docker.com/).
 
-## <a name="publish-the-image-for-a-single-project-to-docker-hub"></a>Pubblicare l'immagine per un singolo progetto nell'hub Docker
+## <a name="publish-the-image-for-a-single-project-to-docker-hub"></a>Pubblicare l'immagine per un singolo progetto in Docker Hub
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica...**. Verrà visualizzata una schermata che mostra le opzioni di distribuzione.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Pubblica...**. Viene visualizzata una schermata che mostra le opzioni di distribuzione.
 
    ![Screenshot delle opzioni di distribuzione](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. Scegliere **docker container Registry** e quindi fare clic su **Hub Docker**.
+1. Scegliere **Registro Contenitori Docker** e quindi scegliere **Docker Hub**.
 
-   ![Screenshot della finestra di dialogo di pubblicazione-scegliere l'hub Docker](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![Screenshot della finestra di dialogo Pubblica: scegliere Docker Hub](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
 1. Immettere le credenziali di Docker.
 
-   ![Screenshot della finestra di dialogo dell'hub Docker](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
+   ![Screenshot della finestra Docker Hub dialogo](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. Se ci si connette al proprio repository (non appartenente a un'organizzazione), lasciare selezionata la casella di controllo per la **pubblicazione in un repository personale** . Se il repository è di proprietà di un'organizzazione, deselezionare la casella di controllo e immettere il nome dell'organizzazione. Immettere il nome utente e la password di Docker per l'account Docker con le autorizzazioni per accedere al repository a cui ci si connette e quindi selezionare **Save (Salva**).
+1. Se ci si connette al proprio repository (non fa parte di un'organizzazione), lasciare selezionata la casella di controllo Pubblica in **un repository** personale. Se il repository è di proprietà di un'organizzazione, deselezionare la casella di controllo e immettere il nome dell'organizzazione. Immettere il nome utente e la password Docker per l'account Docker che dispone delle autorizzazioni per accedere al repository a cui ci si connette e quindi selezionare **Salva**.
 
-   Visual Studio tenta di distribuire l'immagine nell'hub docker.  In caso di esito positivo, viene visualizzata la schermata di **pubblicazione** con l'URL dell'immagine del repository, il tag dell'immagine, il repository e la configurazione della build, ad esempio **Release**.
+   Visual Studio tenta di distribuire l'immagine nel Docker Hub.  In caso  di esito positivo, viene visualizzata la schermata Pubblica con l'URL per l'immagine del repository, il tag dell'immagine, il repository e la configurazione della compilazione , ad esempio **Release**.
 
-   ![Screenshot della schermata di pubblicazione](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
+   ![Screenshot della schermata Pubblica](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 
-1. È possibile aggiornare l'immagine in qualsiasi momento facendo clic sul pulsante **pubblica** in questa pagina.  In alternativa, è possibile modificare o rimuovere il profilo usando i collegamenti sotto l'URL.
+1. È possibile aggiornare l'immagine in qualsiasi momento facendo clic sul **pulsante** Pubblica in questa pagina.  In caso contrario, è possibile modificare o rimuovere il profilo usando i collegamenti sotto l'URL.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Eseguire la pubblicazione in [azure container Registry](/azure/container-registry/) attenendosi alla procedura illustrata in [distribuire in Azure container Registry](hosting-web-apps-in-docker.md).
+Pubblicare [in Registro Azure Container](/azure/container-registry/) seguendo la procedura descritta in Distribuire in [Registro Azure Container](hosting-web-apps-in-docker.md).
 
-Configurare l'integrazione e il recapito continui con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
+Configurare l'integrazione continua e il recapito (CI/CD) [con Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
 ## <a name="see-also"></a>Vedi anche
 
-[Distribuisci nel servizio app Azure](deploy-app-service.md) 
- [Strumenti contenitore di Visual Studio](./index.yml).
+[Distribuire in Servizio app di Azure](deploy-app-service.md) 
+ [Visual Studio Container Tools](./index.yml).

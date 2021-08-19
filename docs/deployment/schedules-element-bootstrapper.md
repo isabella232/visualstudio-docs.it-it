@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7ca1fb76480738240f2c6a1240e1f243ef534c37fe8f1dd3e9dba4c5b5da10
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8f9430dd814ba76f0a8e688d6a198c8715fc4d99
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435322"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120712"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Elemento Schedules &gt; (programma di avvio automatico)
 L'elemento contiene elementi che definiscono orari specifici in cui devono essere eseguiti i comandi definiti `Schedules` `Schedule` `Command` dall'elemento .

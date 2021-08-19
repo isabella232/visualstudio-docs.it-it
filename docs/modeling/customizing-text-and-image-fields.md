@@ -1,6 +1,6 @@
 ---
 title: Personalizzazione dei campi testo e immagine
-description: Informazioni sulla personalizzazione dei file di testo e immagine. Si apprenderà anche che quando si definisce un elemento Decorator di testo in una forma, è rappresentato da un oggetto TextField.
+description: Informazioni sulla personalizzazione di file di testo e di immagine. Si apprenderà anche che quando si definisce un elemento Decorator di testo in una forma, questo è rappresentato da un oggetto TextField.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,20 +10,20 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f56c67a16b59b17de5a4bd95ad9a074203b097224844f541adc8b658d60edea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 13cde2406402f6afc2d61deca4e6e95e838e5dff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386056"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085637"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
-Quando si definisce un elemento Decorator di testo in una forma, viene rappresentato da un oggetto TextField. Per esempi di inizializzazione di TextFields e di altri ShapeField, esaminare Dsl\GeneratedCode\Shapes.cs nella soluzione DSL.
+Quando si definisce un elemento Decorator di testo in una forma, questo viene rappresentato da un oggetto TextField. Per esempi di inizializzazione di TextFields e di altri oggetti ShapeField, esaminare Dsl\GeneratedCode\Shapes.cs nella soluzione DSL.
 
- TextField è un oggetto che gestisce un'area all'interno di una forma, ad esempio lo spazio assegnato a un'etichetta. Un'istanza TextField è condivisa tra molte forme della stessa classe. L'istanza TextField non archivia separatamente il testo dell'etichetta per ogni istanza: il metodo accetta invece la forma come parametro e può cercare il testo dipendente dallo stato corrente della forma e dal relativo elemento del `GetDisplayText(ShapeElement)` modello.
+ TextField è un oggetto che gestisce un'area all'interno di una forma, ad esempio lo spazio assegnato a un'etichetta. Un'istanza TextField è condivisa tra molte forme della stessa classe. L'istanza TextField non archivia separatamente il testo dell'etichetta per ogni istanza: il metodo accetta la forma come parametro e può cercare il testo dipendente dallo stato corrente della forma e dal relativo elemento del `GetDisplayText(ShapeElement)` modello.
 
 ## <a name="how-the-appearance-of-a-text-field-is-determined"></a>Come viene determinato l'aspetto di un campo di testo
- Il `DoPaint()` metodo viene chiamato per visualizzare il campo sullo schermo. È possibile eseguire l'override del valore predefinito oppure `DoPaint(),` è possibile eseguire l'override di alcuni dei metodi che chiama. La versione semplificata seguente dei metodi predefiniti consente di comprendere come eseguire l'override del comportamento predefinito:
+ Il `DoPaint()` metodo viene chiamato per visualizzare il campo sullo schermo. È possibile eseguire l'override `DoPaint(),` del valore predefinito oppure eseguire l'override di alcuni dei metodi che chiama. La versione semplificata seguente dei metodi predefiniti consente di comprendere come eseguire l'override del comportamento predefinito:
 
 ```csharp
 // Simplified version:
@@ -83,15 +83,15 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
 ```
 
- Esistono diverse altre coppie di `Get` metodi e `Default` proprietà, ad esempio `DefaultMultipleLine/GetMultipleLine()` . È possibile assegnare un valore alla proprietà Default per modificare il valore per tutte le istanze del campo della forma. Per fare in modo che il valore vari da un'istanza di forma a un'altra o dipendente dallo stato della forma o dal relativo elemento del modello, eseguire l'override del `Get` metodo .
+ Esistono diverse altre coppie di `Get` metodi e `Default` proprietà, ad esempio `DefaultMultipleLine/GetMultipleLine()` . È possibile assegnare un valore alla proprietà Default per modificare il valore per tutte le istanze del campo della forma. Per fare in modo che il valore vari da un'istanza della forma a un'altra o che dipende dallo stato della forma o dal relativo elemento del modello, eseguire l'override del `Get` metodo .
 
 ## <a name="static-customizations"></a>Personalizzazioni statiche
- Se si vuole modificare ogni istanza di questo campo della forma, verificare innanzitutto se è possibile impostare la proprietà nella definizione DSL. Ad esempio, è possibile impostare le dimensioni e lo stile del carattere nel Finestra Proprietà.
+ Se si vuole modificare ogni istanza di questo campo della forma, verificare prima di tutto se è possibile impostare la proprietà nella definizione DSL. Ad esempio, è possibile impostare le dimensioni e lo stile del carattere nel Finestra Proprietà.
 
- In caso contrario, eseguire l'override del metodo della classe shape e assegnare un valore alla `InitializeShapeFields` proprietà appropriata del campo di `Default...` testo.
+ In caso contrario, eseguire l'override del metodo della classe shape e assegnare un valore `InitializeShapeFields` alla proprietà appropriata del campo di `Default...` testo.
 
 > [!WARNING]
-> Per eseguire l'override di , è necessario impostare la proprietà Generates Double Derived della `InitializeShapeFields()` classe shape su nella definizione  `true` DSL.
+> Per eseguire l'override di , è necessario impostare la proprietà `InitializeShapeFields()` **Generates Double Derived** della classe shape su nella `true` definizione DSL.
 
  In questo esempio una forma ha un campo di testo che verrà usato per i commenti dell'utente. Si vuole usare il tipo di carattere di commento standard. Poiché si tratta di un tipo di carattere standard del set di stili, è possibile impostare l'ID carattere predefinito:
 
@@ -113,7 +113,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 
  Nell'esempio seguente il tipo di carattere di un campo di testo dipende dallo stato di una proprietà di dominio booleana dell'elemento del modello della forma.
 
- Per eseguire questo codice di esempio, creare una nuova soluzione DSL usando il modello Linguaggio minimo. Aggiungere una proprietà di dominio `AlternateState` booleana alla classe di dominio ExampleElement. Aggiungere un elemento Decorator icona alla classe ExampleShape e impostarne l'immagine su un file bitmap. Fare **clic su Trasforma tutti i modelli**. Aggiungere un nuovo file di codice nel progetto DSL e inserire il codice seguente.
+ Per eseguire questo codice di esempio, creare una nuova soluzione DSL usando il modello Linguaggio minimo. Aggiungere una proprietà di dominio `AlternateState` booleana alla classe di dominio ExampleElement. Aggiungere un elemento Decorator dell'icona alla classe ExampleShape e impostarne l'immagine su un file bitmap. Fare clic **su Trasforma tutti i modelli**. Aggiungere un nuovo file di codice nel progetto DSL e inserire il codice seguente.
 
  Per testare il codice, premere F5 e nella soluzione di debug aprire un diagramma di esempio. Verrà visualizzato lo stato predefinito dell'icona. Selezionare la forma e nel Finestra Proprietà modificare il valore della **proprietà AlternateState.** Il tipo di carattere del nome dell'elemento deve cambiare.
 
@@ -171,16 +171,16 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="style-sets"></a>Set di stili
- Nell'esempio precedente viene illustrato come modificare il campo di testo con qualsiasi tipo di carattere disponibile. Tuttavia, un metodo preferibile è modificarlo in uno dei set di stili associati alla forma o all'applicazione. A tale scopo, eseguire l'override <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> di o GetTextBrushId().
+ Nell'esempio precedente viene illustrato come modificare il campo di testo in qualsiasi tipo di carattere disponibile. Tuttavia, un metodo preferibile è modificarlo in uno di un set di stili associato alla forma o all'applicazione. A tale scopo, eseguire l'override <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> di o GetTextBrushId().
 
- In alternativa, provare a modificare il set di stili della forma eseguendo l'override di <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A> . Ciò ha l'effetto di modificare i tipi di carattere e i pennelli per tutti i campi forma.
+ In alternativa, provare a modificare il set di stili della forma eseguendo l'override di <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A> . Ciò ha l'effetto di modificare i tipi di carattere e i pennelli per tutti i campi della forma.
 
 ## <a name="customizing-image-fields"></a>Personalizzazione dei campi immagine
- Quando si definisce un elemento Decorator di immagine in una forma e quando si definisce una forma immagine, l'area in cui viene visualizzata la forma viene gestita da un oggetto ImageField. Per esempi di inizializzazione di ImageFields e di altri ShapeField, esaminare Dsl\GeneratedCode\Shapes.cs nella soluzione DSL.
+ Quando si definisce un elemento Decorator dell'immagine in una forma e quando si definisce una forma immagine, l'area in cui viene visualizzata la forma viene gestita da un imageField. Per esempi di inizializzazione di ImageFields e di altri oggetti ShapeField, esaminare Dsl\GeneratedCode\Shapes.cs nella soluzione DSL.
 
- ImageField è un oggetto che gestisce un'area all'interno di una forma, ad esempio lo spazio assegnato a un elemento Decorator. Un'istanza di ImageField è condivisa tra molte forme della stessa classe shape. L'istanza ImageField non archivia un'immagine separata per ogni forma: il metodo assume invece la forma come parametro e può cercare l'immagine dipendente dallo stato corrente della forma e dal relativo elemento `GetDisplayImage(ShapeElement)` del modello.
+ ImageField è un oggetto che gestisce un'area all'interno di una forma, ad esempio lo spazio assegnato a un elemento Decorator. Un'istanza di ImageField è condivisa tra molte forme della stessa classe shape. L'istanza ImageField non archivia un'immagine separata per ogni forma: il metodo assume invece la forma come parametro e può cercare l'immagine in base allo stato corrente della forma e al relativo elemento del `GetDisplayImage(ShapeElement)` modello.
 
- Se si desidera un comportamento speciale, ad esempio un'immagine variabile, è possibile creare una classe personalizzata derivata da ImageField.
+ Se si vuole un comportamento speciale, ad esempio un'immagine di variabile, è possibile creare una classe personalizzata derivata da ImageField.
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>Per creare una sottoclasse di ImageField
 
@@ -198,9 +198,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Questo esempio rende una modifica dell'icona dipendente dallo stato dell'elemento del modello della forma.
 
 > [!WARNING]
-> Questo esempio illustra come creare un elemento Decorator dinamico dell'immagine. Tuttavia, se si vuole passare solo da una o due immagini a seconda dello stato di una variabile di modello, è più semplice creare diversi elementi Decorator di immagine, individuarli nella stessa posizione della forma e quindi impostare il filtro Visibilità in modo che dipersi da valori specifici della variabile del modello. Per impostare questo filtro, selezionare la mappa delle forme nella definizione DSL, aprire la finestra Dettagli DSL e fare clic sulla scheda Decorator.
+> In questo esempio viene illustrato come creare un elemento Decorator dinamico dell'immagine. Tuttavia, se si vuole passare solo da una o due immagini a seconda dello stato di una variabile del modello, è più semplice creare più elementi Decorator immagine, individuarli nella stessa posizione nella forma e quindi impostare il filtro Visibilità in modo che dipersi da valori specifici della variabile del modello. Per impostare questo filtro, selezionare la mappa delle forme nella definizione DSL, aprire la finestra Dettagli DSL e fare clic sulla scheda Decorator.
 
- Per eseguire questo codice di esempio, creare una nuova soluzione DSL usando il modello Linguaggio minimo. Aggiungere una proprietà di dominio `AlternateState` booleana alla classe di dominio ExampleElement. Aggiungere un elemento Decorator icona alla classe ExampleShape e impostarne l'immagine su un file bitmap. Fare **clic su Trasforma tutti i modelli**. Aggiungere un nuovo file di codice nel progetto DSL e inserire il codice seguente.
+ Per eseguire questo codice di esempio, creare una nuova soluzione DSL usando il modello Linguaggio minimo. Aggiungere una proprietà di dominio `AlternateState` booleana alla classe di dominio ExampleElement. Aggiungere un elemento Decorator dell'icona alla classe ExampleShape e impostarne l'immagine su un file bitmap. Fare clic **su Trasforma tutti i modelli**. Aggiungere un nuovo file di codice nel progetto DSL e inserire il codice seguente.
 
  Per testare il codice, premere F5 e nella soluzione di debug aprire un diagramma di esempio. Verrà visualizzato lo stato predefinito dell'icona. Selezionare la forma e nel Finestra Proprietà modificare il valore della **proprietà AlternateState.** L'icona dovrebbe quindi apparire ruotata di 90 gradi su tale forma.
 

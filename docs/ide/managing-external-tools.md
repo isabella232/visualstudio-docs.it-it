@@ -1,6 +1,6 @@
 ---
 title: Gestire strumenti esterni
-description: Informazioni su come aggiungere e gestire nuovi strumenti esterni a cui è possibile accedere tramite il menu strumenti.
+description: Informazioni su come aggiungere e gestire nuovi strumenti esterni a cui è possibile accedere tramite il menu Strumenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c20c59c720818f3b039e9b0f404a722404cd5669
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9b7db6b407c92aee112301cedd34f93b6b2a91fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085923"
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
 
@@ -49,9 +50,9 @@ Il menu **Strumenti** include alcuni comandi predefiniti, tra cui:
 
 È possibile aggiungere uno strumento esterno per visualizzarlo nel menu **Strumenti**.
 
-1. Aprire la finestra di dialogo **strumenti** esterni scegliendo **strumenti**  >  **strumenti esterni**.
+1. Aprire la **finestra di dialogo** Strumenti esterni scegliendo **Strumenti**  >  **Strumenti esterni**.
 
-1. Fare clic su **Aggiungi** e quindi compilare le informazioni. Ad esempio, la voce seguente causa l'apertura di **Esplora risorse** nella directory del file attualmente aperto in Visual Studio:
+1. Fare clic su **Aggiungi** e quindi compilare le informazioni. Ad esempio, la voce seguente **Windows Explorer** viene aperto nella directory del file attualmente aperto in Visual Studio:
 
    * Titolo: `Open File Location`
 
@@ -83,8 +84,8 @@ Di seguito è riportato un elenco completo di argomenti che possono essere usati
 |Nome file soluzione|$(SolutionFileName)|Nome file della soluzione corrente (unità + percorso + nome file).|
 
 > [!NOTE]
-> La barra di stato IDE Visualizza le variabili di **riga corrente** e **colonna corrente** per indicare dove si trova il punto di inserimento nell' **Editor del codice** attivo. La variabile di **testo corrente** restituisce il testo o il codice selezionato in quella posizione.
+> La barra di stato dell'IDE visualizza **le variabili Riga** corrente e Colonna corrente per indicare dove si trova il punto di inserimento nell'editor di codice **attivo.**  La **variabile Testo** corrente restituisce il testo o il codice selezionato in tale posizione.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumenti per la compilazione in C/C++](/cpp/build/reference/c-cpp-build-tools)
+- [Strumenti di compilazione C/C++](/cpp/build/reference/c-cpp-build-tools)

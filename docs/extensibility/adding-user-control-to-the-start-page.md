@@ -16,12 +16,12 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: c88aa9524d86fc42c65597a06a12dd03f778edb9c6ecd156e87539c05d91b772
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 794ff65d58e03b22584f0a4d2a291371b1e08c81
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121278955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120556"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Aggiungere il controllo utente alla pagina iniziale
 
@@ -35,7 +35,7 @@ Aggiungere prima di tutto un Windows Presentation Foundation utente (WPF) alla s
 
 1. Creare una pagina iniziale usando è stata creata in [Creare una pagina iniziale personalizzata.](../extensibility/creating-a-custom-start-page.md)
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere Aggiungi **e** quindi fare clic su **Project**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere Aggiungi **e** quindi fare clic su **Nuovo Project**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo Project** espandere il nodo Visual Basic **o Visual C#** e fare clic **su** Windows .  Nel riquadro centrale selezionare **Libreria di controlli utente WPF**.
 
@@ -70,7 +70,7 @@ Per implementare un controllo utente WPF, compilare l'interfaccia utente in XAML
     </Grid>
     ```
 
-3. Aggiungere il frame seguente all'elemento di primo `<Grid>` livello subito dopo l'elemento che contiene il pulsante e la casella di `<Grid>` testo.
+3. Aggiungere il frame seguente all'elemento di primo `<Grid>` livello subito dopo `<Grid>` l'elemento che contiene il pulsante e la casella di testo.
 
     ```vb
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />

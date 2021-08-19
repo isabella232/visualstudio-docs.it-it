@@ -30,6 +30,8 @@
       href: tutorial-asp-net-core-with-react.md
     - name: Creare un'app ASP.NET Core con Angular
       href: tutorial-asp-net-core-with-angular.md
+    - name: Creare un ASP.NET Core app con Vue
+      href: tutorial-asp-net-core-with-vue.md
     - name: Creare un'app ASP.NET Core con TypeScript
       href: tutorial-aspnet-with-typescript.md
     - name: Pubblicare un'app Node.js nel Servizio app Linux

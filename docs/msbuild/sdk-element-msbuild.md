@@ -1,6 +1,6 @@
 ---
 title: Elemento Sdk (MSBuild) | Microsoft Docs
-description: Informazioni su sintassi, attributi ed elementi per l'elemento dell'SDK di MSBuild, che fa riferimento a un SDK di progetto MSBuild.
+description: Informazioni su sintassi, attributi ed elementi per l'MSBuild Sdk, che fa riferimento a un SDK MSBuild progetto.
 ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: reference
@@ -17,18 +17,19 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5f66cc6500a3320e0da962985f5b7fff1e86dc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f4af21014bd749897bf8872fc09c934f1e6ecf9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937901"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108356"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
 
-Fa riferimento a un SDK di progetto MSBuild.
+Fa riferimento a MSBuild SDK del progetto.
 
  \<Project> \<Sdk>
 
@@ -52,16 +53,16 @@ Fa riferimento a un SDK di progetto MSBuild.
 
 ### <a name="child-elements"></a>Elementi figlio
 
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un MSBuild di progetto. |
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Fare riferimento a un SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

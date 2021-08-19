@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 76d6f06582c5a9b596a3084e519041982e0a9de3d07eee7e10330b6bdb86a882
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 56dee60e63ce2f6d3d298c3c70e57f59910a16ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396461"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150222"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 
@@ -66,7 +66,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.
 
-     Verrà **\<folder name> visualizzata la** finestra di dialogo Proprietà .
+     Verrà **\<folder name> visualizzata la finestra** di dialogo Proprietà .
 
 3. Fare clic sulla scheda **Security** (Sicurezza).
 

@@ -1,6 +1,6 @@
 ---
 title: "Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato"
-description: Creare un riquadro attività personalizzato che automatizza Microsoft PowerPoint inserendo le date in una diapositiva quando l'utente fa clic su un controllo MonthCalendar nel riquadro attività personalizzato.
+description: Creare un riquadro attività personalizzato che automatizza Microsoft PowerPoint inserendo date in una diapositiva quando l'utente fa clic su un controllo MonthCalendar nel riquadro attività personalizzato.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 84df3ee24dd57072717b662237ed6e71ae7ca89c63a5bd5a3a532fc7a3f29eee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e31147694042309c77801d3058ea42fcdf6b8828
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267429"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155499"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato
   Questa procedura dettagliata mostra come creare un riquadro attività personalizzato che consente di automatizzare PowerPoint. Il riquadro attività personalizzato inserisce le date in una diapositiva quando l'utente fa clic su un controllo <xref:System.Windows.Forms.MonthCalendar> che si trova nel riquadro attività personalizzato.
@@ -58,7 +58,7 @@ ms.locfileid: "121267429"
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto di componente aggiuntivo VSTO per PowerPoint denominato **MyAddIn**, usando il modello per il progetto di componente aggiuntivo di PowerPoint. Per altre informazioni, [vedere Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto di componente aggiuntivo VSTO per PowerPoint denominato **MyAddIn**, usando il modello per il progetto di componente aggiuntivo di PowerPoint. Per altre informazioni, vedere [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice **ThisAddIn.cs** o **ThisAddIn.vb** e aggiunge il progetto **MyAddIn** a **Esplora soluzioni**.
 
@@ -91,7 +91,7 @@ ms.locfileid: "121267429"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet1":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet1":::
 
-3. Aggiungere il codice seguente alla classe `MyUserControl` . Questo codice dichiara un [oggetto Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) come membro di `MyUserControl` . Nel passaggio seguente si userà questa [forma per](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) aggiungere una casella di testo a una diapositiva nella presentazione attiva.
+3. Aggiungere il codice seguente alla classe `MyUserControl` . Questo codice dichiara un [oggetto Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) come membro di `MyUserControl` . Nel passaggio seguente si userà questa [forma](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) per aggiungere una casella di testo a una diapositiva nella presentazione attiva.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet2":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet2":::
@@ -138,7 +138,7 @@ ms.locfileid: "121267429"
 ## <a name="next-steps"></a>Passaggi successivi
  Per altre informazioni su come creare i riquadri attività personalizzati, vedere gli argomenti seguenti:
 
-- Creare un riquadro attività personalizzato in un VSTO componente aggiuntivo per un'applicazione diversa. Per altre informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [Riquadri attività personalizzati.](../vsto/custom-task-panes.md)
+- Creare un riquadro attività personalizzato in un VSTO componente aggiuntivo per un'applicazione diversa. Per altre informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [Riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
 - Creare un pulsante della barra multifunzione da usare per visualizzare o nascondere un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione.](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 

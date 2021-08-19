@@ -1,6 +1,6 @@
 ---
 title: StartProfile| Microsoft Docs
-description: Informazioni sulla funzione StartProfile e sul modo in cui imposta il contatore su 1 (on) per il livello di profilatura specificato.
+description: Informazioni sulla funzione StartProfile e su come imposta il contatore su 1 (on) per il livello di profilatura specificato.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +9,16 @@ ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a2fee1e5c7a091af1ed996d374f4ed7e60b8f2f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0501ef7fb0e5572c08a0712efa711130d21dabe0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157232"
 ---
 # <a name="startprofile"></a>StartProfile
 La funzione `StartProfile` imposta il contatore su 1 (On) per il livello di profilatura specificato.
@@ -69,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="function-information"></a>Informazioni sulla funzione
  *Intestazione: dichiarata in VSPerf.h*
 
- Libreria di importazione: *VSPerf. lib*
+ Libreria di importazione: *VSPerf.lib*
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra la chiamata della funzione StartProfile.
@@ -109,4 +110,4 @@ void ExerciseStartProfile()
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9b8e13846c423d73bbb58bd41deae20345c63c5862bb2ec54005f1acfbf519b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 528471301c1de6d44d5de6464fa24c81f13b8b36
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121230534"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054509"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -62,19 +62,19 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Passaggio 1-1: Creare un progetto e una soluzione di Visual Studio
 
-1. In Visual Studio selezionare **File**  >  **nuovo**  >  **Project,** cercare "Flask" e selezionare il modello di Project **Web Flask** vuoto. Il modello si trova anche in **Python**  >  **Web** nell'elenco a sinistra.
+1. In Visual Studio selezionare **File** Nuovo Project, cercare "Flask" e selezionare il modello Blank  >    >   **Flask Web Project (Project** Web Flask vuoto). Il modello è disponibile anche in **Python**  >  **Web** nell'elenco a sinistra.
 
     ![Finestra di dialogo Nuovo progetto in Visual Studio per il modello Progetto Web Flask vuoto](media/flask/step01-new-blank-project.png)
 
 1. Nei campi nella parte inferiore della finestra di dialogo immettere le informazioni seguenti, come mostrato nella figura precedente, e quindi selezionare **OK**:
 
-    - **Nome**: impostare il nome del progetto Visual Studio su **BasicProject.** Questo nome verrà usato anche per il progetto Flask.
+    - **Nome:** impostare il nome del progetto Visual Studio su **BasicProject.** Questo nome verrà usato anche per il progetto Flask.
     - **Percorso**: specificare un percorso in cui creare la soluzione e il progetto di Visual Studio.
     - **Nome della soluzione**: impostare su **LearningFlask**, un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
     - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
     - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
-1. Dopo un po', Visual Studio viene visualizzata una finestra di dialogo che indica che questo **progetto richiede pacchetti esterni** (illustrato di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
+1. Dopo qualche istante, Visual Studio viene visualizzata una finestra di dialogo che indica Che il **progetto richiede pacchetti esterni** (illustrato di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
     ![Messaggio che indica che il progetto richiede pacchetti esterni](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
@@ -97,7 +97,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer, pagina Modifiche](media/flask/step01-team-explorer-changes.png)
 
-1. Nella barra Visual Studio stato selezionare il pulsante commit non associati (freccia su **con 2)** per aprire la pagina Sincronizzazione in  **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
+1. Sulla barra Visual Studio stato selezionare il pulsante commit di cui non è stato eseguito il  commit di cui è stato eseguito il commit (la freccia in su con **2**) per aprire la pagina Sincronizzazione in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
 
     ![Finestra di Team Explorer che mostra le opzioni relative ai repository Git per il controllo del codice sorgente](media/flask/step01-team-explorer.png)
 
@@ -132,7 +132,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Comando Aggiungi ambiente virtuale in Esplora soluzioni](media/flask/step01-add-virtual-environment-command.png)
 
-1. Viene **visualizzata una finestra di dialogo** Aggiungi ambiente virtuale con un messaggio che indica che è stato trovato un file requirements.txt **virtuale.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
+1. Viene **visualizzata la finestra di dialogo** Aggiungi ambiente virtuale con un messaggio che indica Che è stato trovato requirements.txt **file.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
 
     ![Finestra di dialogo Aggiungi ambiente virtuale con il messaggio sul file requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 

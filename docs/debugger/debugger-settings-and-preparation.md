@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6153bd6a1657db7d780334a1a47bc443752045526a06e6067ea75f8bdb57b98a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 52ace570c8f0280583ec1071d53eac66e3b1ee5c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379503"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113104"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.
@@ -43,7 +43,7 @@ In questa sezione vengono descritte le impostazioni delle proprietà correlate a
 
  [Progetti console](../debugger/debugging-preparation-console-projects.md) Vengono fornite istruzioni su come configurare progetti console per il debug.
 
- [Procedura: Eseguire il debug di un eseguibile che](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) non fa parte di una Visual Studio soluzione Viene illustrato come eseguire il debug di un eseguibile che non viene creato come parte di un Visual Studio progetto.
+ [Procedura: Eseguire il debug di un eseguibile che non fa parte di una Visual Studio soluzione](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) Viene illustrato come eseguire il debug di un eseguibile che non viene creato come parte di un Visual Studio progetto.
 
  [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md) Viene descritto come eseguire il debug di applicazioni a 64 bit.
 

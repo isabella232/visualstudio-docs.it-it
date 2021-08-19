@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 2a72c5f14beb74658fd06c10728083c9eccba8adbd62c0a77db1aaf1bd32f092
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dbdd742184ebea14912bbcca2938192b8de459f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425310"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093099"
 ---
 # <a name="how-to-add-an-updater-method"></a>Procedura: Aggiungere un metodo Updater
   È possibile abilitare gli utenti per aggiornare i dati aziendali in un SharePoint esterno creando un *metodo updater.* Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)

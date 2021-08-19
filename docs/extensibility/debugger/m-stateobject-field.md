@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0268f5a76d73f6546d2b916c9dd7e542109338d24a8ed6e5dbe0372391721ce1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fad86acc86043e58bfa68f0cf8687b7c439b7ad6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160348"
 ---
 # <a name="m_stateobject-field"></a>m_stateObject campo
 Oggetto che rappresenta i dati che verranno utilizzati dall'azione.

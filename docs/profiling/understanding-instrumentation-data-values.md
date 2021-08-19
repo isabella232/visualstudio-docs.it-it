@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a02deb51774a46c7d7618d912b87c49e187c852e0048108bf502fbf02f1e1a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 751d990a7b7e3623311fd7487e0303100ec7300a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395981"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140817"
 ---
 # <a name="understand-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
 

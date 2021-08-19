@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e31fdbb3b0c1f1520b11f08d065c690fa7763372e31c0cedd8ffca729598ca2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: adf3b3b6efd6e1c0df4c8cd45c0d0bb9c6f2196d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121426404"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107386"
 ---
 # <a name="marker_serieswrite_flag-method"></a>Metodo marker_series::write_flag
 Scrive un flag nel file di traccia del visualizzatore di concorrenza.
