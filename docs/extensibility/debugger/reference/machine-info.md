@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b59699c5ec284c2bb1d9534de8960b7706c1804ea95310f1a14b93fd7085d472
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e230937de42ebda2697fe4cc43fc77bbee340cfb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125374"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
 Descrive un computer specifico.
@@ -47,16 +47,16 @@ public struct MACHINE_INFO {
 
 ## <a name="members"></a>Members
  `Fields`\
- Combinazione di flag [dell'enumerazione MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) che specificano quali campi della struttura vengono inizializzati.
+ Combinazione di flag [dell'MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) che specificano i campi della struttura inizializzati.
 
  `bstrName`\
  Nome del computer. Equivale a chiamare [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
 
  `Flags`\
- Combinazione di flag [dell'enumerazione MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) che descrive gli attributi del computer.
+ Combinazione di flag [dell'enumerazione MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) che descrivono gli attributi del computer.
 
 ## <a name="remarks"></a>Commenti
- Questa struttura viene restituita da una chiamata [al metodo GetMachineInfo.](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)
+ Questa struttura viene restituita da una chiamata al [metodo GetMachineInfo.](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

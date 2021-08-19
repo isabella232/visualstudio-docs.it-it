@@ -1,6 +1,6 @@
 ---
 title: "Procedura: implementare un'interfaccia (Progettazione classi)"
-description: Informazioni su come implementare un'interfaccia nel diagramma classi collegandolo a una classe che fornisce il codice per i metodi di interfaccia.
+description: Informazioni su come implementare un'interfaccia nel diagramma classi connetterla a una classe che fornisce il codice per i metodi dell'interfaccia.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 358d099839c42c20b47b850b84dc3dd307855b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a992800a6155aaa8afdd9ae2491b977885199ddd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951888"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124191"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Procedura: Implementare un'interfaccia in Progettazione classi
 
@@ -44,7 +45,7 @@ Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to
 2. Aprire **Visualizzazione classi** e individuare l'interfaccia.
 
     > [!TIP]
-    > Se **Visualizzazione classi** non è aperto, aprire **Visualizzazione classi** dal menu **Visualizza** o premere **CTRL** + **MAIUSC** + **C**.
+    > Se **Visualizzazione classi** non è aperto, **aprire** Visualizzazione classi dal **menu** Visualizza o premere CTRL  +  + **MAIUSC+C.**
 
 3. Trascinare il nodo di interfaccia nella forma della classe nel diagramma.
 
@@ -53,6 +54,6 @@ Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to
 ## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Creare tipi usando Progettazione classi](how-to-create-types.md)
-- [Procedura: visualizzare i tipi esistenti](how-to-view-existing-types.md)
+- [Procedura: Visualizzare tipi esistenti](how-to-view-existing-types.md)
 - [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md)
 - [Refactoring di classi e tipi](refactoring-classes-and-types.md)

@@ -1,6 +1,6 @@
 ---
 title: Comando Vai a
-description: Informazioni sul comando Vai a e sul modo in cui sposta il cursore nella riga specificata.
+description: Informazioni sul comando Vai a e su come sposta il cursore nella riga specificata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,15 @@ ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f81e5a17a573fdca25482479111a9f83e95a16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebc75b92886ea4d6938a2dd517418a3fac41e8f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946449"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143833"
 ---
 # <a name="go-to-command"></a>Comando Vai a
 Sposta il cursore sulla riga specificata.
@@ -50,7 +51,7 @@ L'alias per questo comando è GoToLn.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

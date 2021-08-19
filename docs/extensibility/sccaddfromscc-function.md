@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 888a0e0647fe84861f430c31449e86944a7193bfe7cc56583a35f273849d431d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d80a2d6defaef3bb794048fc2846c774434f46c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388153"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144652"
 ---
 # <a name="sccaddfromscc-function"></a>Funzione SccAddFromScc
 Questa funzione consente all'utente di cercare i file già presenti nel sistema di controllo del codice sorgente e successivamente di renderli parte del progetto corrente. Ad esempio, questa funzione può ottenere un file di intestazione comune nel progetto corrente senza copiare il file. La matrice restituita di `lplpFileNames` file, , contiene l'elenco di file che l'utente vuole aggiungere al progetto IDE.

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ab98f0cbc33b3726387b40650ab4bb6f63fd161c0cf548878a349c61ddbf202
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b6359f48339bdaff781960d5fcbaafcfc8c1a9d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121324366"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112048"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
 Gli articoli di questa sezione della documentazione contengono informazioni sui diversi nodi di progettazione shader che possono essere usati per creare vari effetti grafici.

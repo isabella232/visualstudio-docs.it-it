@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Ridimensionare i controlli Bookmark'
-description: Informazioni su come usare Visual Studio per impostare le dimensioni di un controllo Bookmark quando lo si aggiunge a un documento di Microsoft Word.
+description: Informazioni su come usare Visual Studio per impostare le dimensioni di un controllo Bookmark quando lo si aggiunge a un Microsoft Word documento.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b2b2bd963b2f0b4eb574630382930eb0805909be
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 34026efaa0a5f9396c5daf3eb6b987435ca9e414
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825784"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155720"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Procedura: Ridimensionare i controlli Bookmark
   Le dimensioni di un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> vengono impostate quando il controllo viene aggiunto a un documento di Microsoft Office Word. È anche possibile ridimensionare tale controllo in un secondo momento.
@@ -69,7 +70,7 @@ ms.locfileid: "107825784"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet3":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet3":::
 
-### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>Per ridimensionare un segnalibro in un progetto di componente aggiuntivo VSTO in fase di esecuzione
+### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>Per ridimensionare un segnalibro in VSTO progetto di componente aggiuntivo in fase di esecuzione
 
 1. Modificare le proprietà <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> di un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> creato in fase di esecuzione.
 

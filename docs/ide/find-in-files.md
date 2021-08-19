@@ -21,23 +21,23 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1afeed717e93fca3bb2b33bb05db5876201c1265e506fe23b807ba9ce080412c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8bc709578539ff299647bae583f8370a3ba1b8d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121272642"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101830"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
-**Trova nei file** consente di cercare un set specificato di file. Le corrispondenze Visual Studio vengono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate nella scheda Cerca **nei** file della finestra **di dialogo** Trova e sostituisci .
+**Trova nei file** consente di cercare un set specificato di file. Le corrispondenze Visual Studio vengono elencate nella **finestra Risultati** ricerca nell'IDE. La modalità di visualizzazione dei risultati dipende dalle opzioni selezionate **nella** scheda Cerca nei file della finestra **di dialogo** Trova e sostituisci .
 
 ::: moniker range=">=vs-2019"
 
 :::image type="content" source="media/find-files-vs2019.png" alt-text="Screenshot della finestra di dialogo Trova e sostituisci in Visual Studio 2019, con la scheda Cerca nei file aperta.":::
 
 > [!IMPORTANT]
-> Se si usa **Visual Studio 2019** [**versione 16.6**](/visualstudio/releases/2019/release-notes-v16.6/) o  precedente, la finestra di dialogo Trova e sostituisci potrebbe non essere visualizzata qui. Passare alla versione [Visual Studio 2017](find-in-files.md?view=vs-2017&preserve-view=true) di questa pagina per le descrizioni corrispondenti a quanto visualizzato sullo schermo.
+> Se si usa Visual Studio **2019** [**versione 16.6**](/visualstudio/releases/2019/release-notes-v16.6/) o  precedente, la finestra di dialogo Trova e sostituisci potrebbe non essere visualizzata qui. Passare alla versione [Visual Studio 2017](find-in-files.md?view=vs-2017&preserve-view=true) di questa pagina per le descrizioni corrispondenti a quanto visualizzato sullo schermo.
 
 ::: moniker-end
 

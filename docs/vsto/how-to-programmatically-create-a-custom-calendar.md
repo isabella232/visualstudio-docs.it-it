@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9ff88bcc982eb70994844559836295f441f59ce707bf1a125e378b2ae1e780db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 144b64bd5f38cca5dda638e8c787ecdd5e09b8da
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155928"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Procedura: Creare un calendario personalizzato a livello di codice
-  Questo esempio crea una nuova cartella Calendar denominata **PersonalCalendar** e quindi crea un nuovo elemento Appointment e lo aggiunge alla cartella Calendar. Il codice visualizza quindi la cartella Calendar.
+  Questo esempio crea una nuova cartella Calendar denominata **PersonalCalendar,** quindi crea un nuovo elemento Appointment e lo aggiunge alla cartella Calendar. Il codice visualizza quindi la cartella Calendar.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

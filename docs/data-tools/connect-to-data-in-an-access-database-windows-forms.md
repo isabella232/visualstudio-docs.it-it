@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a10073af291f927d23974c80f244255e76c659a4fbbc8617b9d9c99514c1bb9d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b8280c29649a792839e2bc18a409e76f276b71e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347767"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154940"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Connettersi ai dati in un database di Access
 
@@ -32,11 +32,11 @@ Per usare queste procedure, è necessario un progetto Windows Forms o WPF e un d
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Creare un set di dati per un file con estensione accdb
 
-Connessione ai database creati con Microsoft 365, Access 2013, Access 2010 o Access 2007 usando la procedura seguente.
+Connessione database creati con Microsoft 365, Access 2013, Access 2010 o Access 2007 usando la procedura seguente.
 
-1. Aprire un progetto Windows form o applicazione WPF in Visual Studio.
+1. Aprire un progetto Windows Form o applicazione WPF in Visual Studio.
 
-2. Per aprire la **finestra Origini** dati, **scegliere** Altre origini Windows dati dal menu   >  **Visualizza**.
+2. Per aprire la **finestra Origini** dati, **scegliere** Altre origini **Windows** dati dal menu  >  **Visualizza**.
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
@@ -76,7 +76,7 @@ Connessione ai database creati con Microsoft 365, Access 2013, Access 2010 o Acc
 
 Connessione ai database creati con Access 2000-2003 usando la procedura seguente.
 
-1. Aprire un progetto Windows form o applicazione WPF in Visual Studio.
+1. Aprire un progetto Windows Form o applicazione WPF in Visual Studio.
 
 2. Nel menu **Visualizza** selezionare **Altre** origini Windows  >  **dati**.
 
@@ -112,7 +112,7 @@ Connessione ai database creati con Access 2000-2003 usando la procedura seguente
 
 Il set di dati appena creato è disponibile nella **finestra Origini** dati. A questo punto è possibile eseguire una delle attività seguenti:
 
-- Selezionare gli elementi nella finestra **Origini** dati e trascinarli nel form o nell'area di progettazione (vedere Associare i controlli [form Windows](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) ai dati in Visual Studio o panoramica data binding [WPF](/dotnet/desktop-wpf/data/data-binding-overview)).
+- Selezionare gli  elementi nella finestra Origini dati e trascinarli nel form o nell'area di progettazione (vedere Associare [controlli Form Windows](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) ai dati in Visual Studio o wpf [data binding panoramica](/dotnet/desktop-wpf/data/data-binding-overview)).
 
 - Aprire l'origine dati in **Progettazione DataSet** per aggiungere o modificare gli oggetti che costituiscono il set di dati.
 

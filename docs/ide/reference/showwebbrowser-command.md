@@ -1,6 +1,6 @@
 ---
 title: Comando ShowWebBrowser
-description: Informazioni sul comando Mostra Web browser e su come viene visualizzato l'URL specificato in una finestra del Web browser all'interno dell'IDE o esterno all'IDE.
+description: Informazioni sul comando Mostra Web Browser e su come viene visualizzato l'URL specificato in una finestra del Web browser all'interno dell'IDE o esterno all'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c51b422f187fd2302e998f95568393a6bcf5c1bb530336885f0192a092b4d1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 66da9ebb378d16bb73910ed2b84e379ab5bfaa2c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121303800"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150976"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 
@@ -61,5 +61,5 @@ L'esempio seguente illustra la home page di Microsoft Docs in un Web browser all
 
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

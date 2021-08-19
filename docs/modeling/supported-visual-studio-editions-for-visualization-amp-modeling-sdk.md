@@ -10,18 +10,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b8435f37ebe68e954af135be0f513247191ea8a9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 661daaea4908a674e97c28f672ffc7f709429a8f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386397"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123554"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
 
-Di seguito sono elencati gli Visual Studio edizioni supportate con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e distribuzione. Per altre informazioni su queste edizioni, vedere il Microsoft Visual Studio [Developer Center.](https://visualstudio.microsoft.com/)
+Di seguito sono elencati gli Visual Studio edizioni supportate con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e distribuzione. Per altre informazioni su queste edizioni, vedere l'Microsoft Visual Studio [Developer Center.](https://visualstudio.microsoft.com/)
 
 ## <a name="authoring-edition"></a>Edizione per lo sviluppo
 
@@ -37,7 +38,7 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 ## <a name="deployment-editions"></a>Edizioni per la distribuzione
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] supporta le configurazioni seguenti per la distribuzione dei linguaggi specifici di dominio compilati:
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] supporta le configurazioni seguenti per la distribuzione dei linguaggi specifici del dominio compilati:
 
 - Visual Studio Enterprise
 
@@ -48,7 +49,7 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 - Pacchetto ridistribuibile Visual Studio Shell (modalità isolata)
 
 > [!NOTE]
-> Per fare in modo che un DSL possa essere eseguito in un prodotto shell, è necessario impostare il **campo Supported VS Edition** (Edizione di Visual Studio supportata) nel manifesto dell'estensione. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
+> Per rendere possibile l'esecuzione di un DSL in un prodotto Shell, è necessario impostare il campo **Supported VS Edition** nel manifesto dell'estensione. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Vedi anche
 

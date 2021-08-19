@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2389e47f132d6a3e45624d71709fdfba2a449650731baa37001bef38809c83bb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0818826989132a67be54d8aa35db8bad69251a82
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339424"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145354"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si desidera che l'elemento dell'interfaccia sia coerente con funzionalità simili, usare i nomi di token esistenti nei file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.
@@ -247,7 +247,7 @@ Quando si usa una barra Visual Studio standard nella funzionalità, si ha access
 
 **Elenchi a discesa e caselle combinate: selezione dell'input di testo**
 
-![Selezione dell'input di testo della casella combinata/elenco a discesa](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Selezione dell'input di testo della casella combinata/elenco a discesa
+![Selezione input testo casella combinata/elenco a discesa](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Selezione input testo casella combinata/elenco a discesa
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -322,7 +322,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 ### <a name="ui-text"></a>Testo dell'interfaccia utente
 
 #### <a name="instructional-text"></a>Testo informativo
-Il testo informativo offre una spiegazione principale delle attività da eseguire in una finestra di dialogo o in una pagina di documento.
+Il testo informativo offre una spiegazione principale importante delle attività da eseguire in una finestra di dialogo o in una pagina del documento.
 
 ![Testo informativo predefinito](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Testo informativo predefinito
 
@@ -331,7 +331,7 @@ Il testo informativo offre una spiegazione principale delle attività da eseguir
 | Primo piano (testo) | `Environment.ControlText` |
 
 #### <a name="secondary-instructional-text"></a>Testo informativo secondario
-Nelle pagine del documento con molti controlli e testo, un testo informativo usa un valore di colore diverso. Ciò consente di comunicare quali informazioni sono più importanti e ridurre la densità complessiva degli elementi dell'interfaccia utente. Vedere anche la sezione seguente sul testo dei suggerimenti.
+Nelle pagine del documento con molto testo e controlli, un testo informativo usa un valore di colore diverso. Ciò consente di comunicare le informazioni più importanti e ridurre la densità complessiva degli elementi dell'interfaccia utente. Vedere anche la sezione seguente sul testo dei suggerimenti.
 
 ![Testo informativo secondario](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Testo informativo secondario
 
@@ -339,12 +339,12 @@ Nelle pagine del documento con molti controlli e testo, un testo informativo usa
 | --- | --- |
 | Primo piano (testo) | `Environment.ControlEditHintText` |
 
-#### <a name="hint-text"></a>Testo del suggerimento
+#### <a name="hint-text"></a>Testo dei suggerimenti
 Il testo del suggerimento viene visualizzato in un controllo vuoto, sotto un controllo o in un'area del documento vuota per mostrare all'utente cosa fare successivamente. È possibile usare il testo dei suggerimenti con sfondi finestra o controllo.
 
-**Testo suggerimento predefinito**
+**Testo del suggerimento predefinito**
 
-![Testo suggerimento predefinito](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Testo suggerimento predefinito
+![Testo del suggerimento predefinito](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Testo suggerimento predefinito
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -359,7 +359,7 @@ Il testo del suggerimento viene visualizzato in un controllo vuoto, sotto un con
 | Primo piano (testo) | `Environment.ControlRequiredHintText` |
 | Sfondo | `Environment.ControlRequiredBackground` |
 
-**Testo del controllo Casella di ricerca**
+**Testo del controllo casella di ricerca**
 
 > Vedere [Caselle di](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) ricerca per altri token di colore correlati al controllo Cerca.
 
@@ -485,7 +485,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 **Collegamento ipertestuale inline della barra informazioni (all'interno di una frase): stato predefinito**
 
-![Pulsante collegamento ipertestuale predefinito della barra informazioni inline](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Pulsante collegamento ipertestuale predefinito della barra informazioni inline
+![Pulsante di collegamento ipertestuale predefinito della barra informazioni inline](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Pulsante di collegamento ipertestuale predefinito della barra informazioni inline
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -493,7 +493,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 **Collegamento ipertestuale inline della barra informazioni (all'interno di una frase): stato del passaggio del mouse**
 
-![Pulsante collegamento ipertestuale inline della barra informazioni al passaggio del mouse](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Pulsante collegamento ipertestuale inline della barra informazioni al passaggio del mouse
+![Pulsante del collegamento ipertestuale inline della barra informazioni al passaggio del mouse](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Pulsante del collegamento ipertestuale inline della barra informazioni al passaggio del mouse
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -507,9 +507,9 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 | --- | --- |
 | Primo piano (testo) | `Infobar.HyperlinkMouseDown`<br />(Con sottolineatura) |
 
-**Pulsante Barra informazioni: stato predefinito**
+**Pulsante della barra informazioni: stato predefinito**
 
-![Pulsante barra informazioni predefinito](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Pulsante Barra informazioni predefinita
+![Pulsante predefinito della barra informazioni](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Pulsante predefinito della barra informazioni
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -529,7 +529,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 **Pulsante della barra informazioni: stato premuto**
 
-![Pulsante della barra informazioni premuto](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Pulsante della barra delle informazioni premuto
+![Pulsante della barra informazioni premuto](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Pulsante della barra informazioni premuto
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -539,7 +539,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 **Pulsante della barra informazioni: stato disabilitato**
 
-![Pulsante Della barra informazioni disabilitato](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Pulsante Della barra informazioni disabilitato
+![Pulsante della barra informazioni disabilitato](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Pulsante della barra informazioni disabilitato
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -549,7 +549,7 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 
 **Pulsante della barra informazioni: stato attivo**
 
-![Pulsante barra informazioni con stato attivo](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Pulsante barra informazioni con stato attivo
+![Pulsante della barra informazioni con stato attivo](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Pulsante della barra informazioni con stato attivo
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -558,13 +558,13 @@ Le barre informazioni vengono usate per fornire altre informazioni su un contest
 | Bordo | `InfoBar.ButtonFocusBorder` |
 
 ### <a name="scroll-bars"></a>Barre di scorrimento
-Lo stile delle barre di scorrimento viene applicato Visual Studio'ambiente e non è necessario che sia applicato un titolo. Tuttavia, è possibile decidere di sfruttare i colori usati nelle barre di scorrimento in modo che l'interfaccia utente appartieni sempre coerente con questa parte dell'ambiente Visual Studio locale.
+Lo stile delle barre di scorrimento viene applicato Visual Studio'ambiente e non è necessario che siano a colori. Tuttavia, è possibile decidere di sfruttare i colori usati nelle barre di scorrimento in modo che l'interfaccia utente appai sempre coerente con questa parte dell'Visual Studio ambiente.
 
-![Barra di scorrimento (linea rossa)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "0303-140_ScrollbarRedline")<br />Barra di scorrimento (linea rossa)
+![Barra di scorrimento (redline)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "0303-140_ScrollbarRedline")<br />Barra di scorrimento (redline)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... quando si crea l'interfaccia utente che si vuole associare alle Visual Studio di scorrimento. | ... per qualsiasi elemento che non si vuole sempre associare all'interfaccia utente della barra di scorrimento. |
+| ... quando si crea un'interfaccia utente che si vuole associare alle Visual Studio di scorrimento. | ... per qualsiasi elemento che non si vuole sempre associare all'interfaccia utente della barra di scorrimento. |
 
 **Barra di scorrimento: stato predefinito**
 
@@ -633,12 +633,12 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 - "Disabilitato" significa che la funzionalità di ricerca è disattivata per il contesto corrente.
 
-![Casella di ricerca (linea rossa)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Casella di ricerca (linea rossa)
+![Casella di ricerca (redline)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Casella di ricerca (redline)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
 | ... quando si progetta una casella di ricerca personalizzata. | ... per qualsiasi elemento che non sia una casella di ricerca. |
-| | ... per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca. |
+| | ... per qualsiasi elemento che non si vuole sempre associare all'interfaccia utente della casella di ricerca. |
 
 **Campo di input per la ricerca con stato attivo**
 
@@ -651,7 +651,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | Bordo | `SearchControl.FocusedBorder` |
 | Separatore | `SearchControl.FocusedDropDownSeparator` |
 
-**Campo di input di ricerca attivo senza stato attivo**
+**Campo di input di ricerca attivo non attivo**
 
 ![Campo di input di ricerca con stato non attivo](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />Campo di input di ricerca attivo senza stato attivo
 
@@ -662,9 +662,9 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | Bordo | `SearchControl.UnfocusedBorder` |
 | Separatore | `SearchControl.DropDownSeparator` |
 
-**Campo di input di ricerca non attivo e non attivo**
+**Campo di input di ricerca non attivo e inattivo**
 
-![Campo di input di ricerca non attivo e non attivo](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Campo di input di ricerca non attivo e non attivo
+![Campo di input di ricerca non attivo e inattivo](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />Campo di input di ricerca non attivo e inattivo
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -707,9 +707,9 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | Primo piano (glifo Cancella) | `SearchControl.ClearGlyph` |
 | Bordo | N/A |
 
-**Pulsante di azione di ricerca non con stato non in stato di a fuoco**
+**Pulsante azione di ricerca non messa a fuoco**
 
-![Pulsante di azione di ricerca non con stato non in stato di a fuoco](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />Pulsante di azione di ricerca non con stato non in stato di a fuoco
+![Pulsante azione di ricerca non messa a fuoco](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />Pulsante azione di ricerca non messa a fuoco
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -838,7 +838,7 @@ Il menu a discesa della casella di ricerca può essere leggermente più compless
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
+| Sfondo | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (testo della casella di controllo) | `SearchControl.PopupCheckboxMouseDownText` |
 | Primo piano (testo del collegamento) | `SearchControl.PopupButtonMouseDownText` |
 | Bordo | `SearchControl.PopupControlMouseOverBorder` |
@@ -851,9 +851,9 @@ Il menu a discesa della casella di ricerca può essere leggermente più compless
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo della casella di controllo | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
+| Sfondo della casella di controllo | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (testo della casella di controllo) | `SearchControl.PopupCheckboxMouseDownText` |
-| Sfondo del collegamento | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
+| Sfondo del collegamento | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (testo del collegamento) | `SearchControl.PopupButtonMouseDownText` |
 
 ### <a name="tree-views"></a><a name="BKMK_TreeView"></a> Visualizzazioni albero
@@ -863,7 +863,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... ovunque sia necessario implementare una visualizzazione organizzativa gerarchica. | ... per qualsiasi elemento non simile a una visualizzazione albero. |
+| ... ovunque sia necessario implementare una visualizzazione organizzativa gerarchica. | ... per qualsiasi elemento che non sia simile a una visualizzazione albero. |
 | | ... in qualsiasi combinazione di sfondo/primo piano diversa da quella specificata. |
 
 **Elemento della visualizzazione albero: stato predefinito**
@@ -910,7 +910,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 | Primo piano (glifo) | `TreeView.SelectedItemActiveGlyph` |
 | Bordo | `TreeView.FocusVisualBorder` |
 
-**Elemento della visualizzazione albero: stato selezionato e non attivo**
+**Elemento della visualizzazione albero: selezionato, stato non attivo**
 
 ![Elemento della visualizzazione albero selezionato e non con stato selezionato](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303-152_TreeViewUnfocused")<br />Elemento della visualizzazione albero selezionato e non con stato selezionato
 
@@ -921,7 +921,7 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 | Primo piano (glifo) | `TreeView.SelectedItemInactiveGlyph` |
 | Bordo | Nessuno |
 
-**Elemento della visualizzazione albero: stato selezionato, selezionato e con stato attivo al passaggio del mouse**
+**Elemento della visualizzazione albero: stato attivo, selezionato e con stato attivo**
 
 ![Elemento della visualizzazione albero selezionato e con stato attivo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br />Elemento della visualizzazione albero selezionato e con stato attivo al passaggio del mouse
 
@@ -932,9 +932,9 @@ Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Vi
 | Primo piano (glifo) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | Bordo | `TreeView.FocusVisualBorder` |
 
-**Elemento della visualizzazione albero: stato con passaggio del mouse, selezionato e con stato non attivo**
+**Elemento della visualizzazione albero: stato selezionato, selezionato e non attivo**
 
-![Elemento della visualizzazione albero selezionato e non con stato attivato al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br />Elemento della visualizzazione albero selezionato e non con stato attivato al passaggio del mouse
+![Elemento della visualizzazione albero selezionato e non attivato al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br />Elemento della visualizzazione albero selezionato e non attivato al passaggio del mouse
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -972,7 +972,7 @@ Lo sfondo dell'ambiente è costituito da due livelli. Il livello inferiore è un
 ### <a name="command-shelf"></a>Scaffale dei comandi
 Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi, uno per il punto in cui si trova la barra dei menu e l'altro per il punto in cui si trova la barra dei comandi. Un singolo gruppo della barra dei comandi ha valori di colore di sfondo propri, che vengono descritti in modo più dettagliato nella sezione "Barra dei comandi". Il testo della barra dei menu e della barra dei comandi viene descritto nelle rispettive sezioni.
 
-![Visual Studio scaffale dei comandi (linea rossa)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Visual Studio scaffale dei comandi (redline)
+![Visual Studio scaffale dei comandi (linea rossa)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Visual Studio scaffale dei comandi (linea rossa)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
@@ -1056,7 +1056,7 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... ogni volta che si crea un titolo di menu personalizzato. | ... per qualsiasi elemento che non si vuole sempre associare al titolo del menu. |
+| ... ogni volta che si crea un titolo di menu personalizzato. | ... per qualsiasi elemento che non deve sempre corrispondere al titolo del menu. |
 | | ... in qualsiasi combinazione di sfondo/primo piano diversa da quella specificata. |
 
 **Titolo del menu: stato predefinito**
@@ -1080,7 +1080,7 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.CommandBarMouseOverBackgroundBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.CommandBarMouseOverBackgroundBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.CommandBarTextHover` |
 | Primo piano (glifo) | `Environment.CommandBarMenuMouseOverGlyph` |
 | Bordo | `Environment.CommandBarBorder` |
@@ -1093,7 +1093,7 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo) | `Environment.CommandBarMenuMouseDownGlyph` |
 | Bordo | `Environment.CommandBarMenuBorder`<br />(Solo i lati sinistro, superiore e destro). |
@@ -1125,7 +1125,7 @@ Una singola voce di menu è costituita dal testo del menu e da un'icona facoltat
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.CommandBarMenuBackgroundGradientBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo del sottomenu) | `Environment.CommandBarMenuSubmenuGlyph` |
 | Bordo | `Environment.CommandBarMenuBorder` |
@@ -1135,7 +1135,7 @@ Una singola voce di menu è costituita dal testo del menu e da un'icona facoltat
 
 **Voci di menu: stati selezionati e selezionati**
 
-![Menu scelto](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Voce di menu selezionata
+![Menu scelto](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Voce di menu Selezionata
 
 ![Menu selezionato](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303-012_MenuSelected")<br />Voce di menu selezionata
 
@@ -1285,7 +1285,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 > [!IMPORTANT]
 > Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se l'elenco a discesa non include un'area di testo modificabile, usare i token di colore per gli elenchi a discesa [della barra dei comandi.](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)
 
-![Riga rossa della casella combinata della barra dei comandi](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />Casella combinata della barra dei comandi (redline)
+![Riga rossa della casella combinata della barra dei comandi](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />Casella combinata della barra dei comandi (riga rossa)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
@@ -1415,14 +1415,14 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 #### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a> Elenchi a discesa della barra dei comandi
 
 > [!IMPORTANT]
-> Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa include un'area di testo modificabile, usare i token di colore per le caselle combinate [della barra dei comandi.](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)
+> Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa include un'area di testo modificabile, usare i token di colore per le [caselle](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)combinate della barra dei comandi .
 
 ![Elenco a discesa della barra dei comandi (redline)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303-042_DropdownRedline")<br />Elenco a discesa della barra dei comandi (redline)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
 | ... quando si creano controlli elenco a discesa personalizzati. | ... per qualsiasi elemento non simile a un elenco a discesa. |
-| | ... per le caselle combinate o i pulsanti di divisione. |
+| | ... per caselle combinate o pulsanti di menu combinato. |
 
 **Campo di selezione a discesa della barra dei comandi: stato predefinito**
 
@@ -1450,18 +1450,18 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.DropDownPopupBackgroundBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.DropDownPopupBackgroundBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.ComboBoxItemText` |
 | Bordo | `Environment.DropDownPopupBorder` |
 | Ombreggiatura | `Environment.DropShadowBackground` |
 
 **Campo di selezione a discesa della barra dei comandi: stato del passaggio del mouse**
 
-![Campo di selezione a discesa della barra dei comandi al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br />Campo di selezione a discesa della barra dei comandi al passaggio del mouse
+![Campo di selezione della barra dei comandi al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br />Campo di selezione della barra dei comandi al passaggio del mouse
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.DropDownMouseOverBackgroundBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.DropDownMouseOverBackgroundBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.DropDownMouseOverText` |
 | Bordo | `Environment.DropDownMouseOverBorder` |
 | Separatore | `Environment.DropDownButtonMouseOverSeparator` |
@@ -1487,7 +1487,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
  **Campo di selezione a discesa della barra dei comandi: stato premuto**
 
-![Rilasciare&#45;campo di selezione verso il basso premuto](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br />Campo di selezione della barra dei comandi premuto
+![Rilasciare&#45;di selezione verso il basso premuto](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br />Campo di selezione della barra dei comandi premuto
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -1611,31 +1611,31 @@ Il pulsante "Altre opzioni" viene usato quando un gruppo della barra dei comandi
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
+| Sfondo | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (glifo) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 **Pulsanti "Altre opzioni" e "Overflow" della barra dei comandi: stato premuto**
 
 ![Pulsante "Altre opzioni" della barra dei comandi premuto](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />Pulsante "Altre opzioni" della barra dei comandi premuto
 
-![Overflow selezionato](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />Pulsante 'Overflow' della barra dei comandi premuto
+![Overflow selezionato](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />Pulsante "Overflow" della barra dei comandi premuto
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
+| Sfondo | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (glifo) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 ## <a name="document-windows"></a>Finestre dei documenti
-Non è necessario replicare le finestre dei documenti, perché sono fornite dall'ambiente Visual Studio sistema. Tuttavia, si potrebbe scegliere di sfruttare i colori usati nelle finestre dei documenti in modo che l'interfaccia utente appaia sempre coerente con questa parte dell'ambiente di Visual Studio.
+Non è necessario replicare le finestre dei documenti, perché sono fornite dall'Visual Studio ambiente. Tuttavia, si potrebbe scegliere di sfruttare i colori usati nelle finestre dei documenti in modo che l'interfaccia utente appaia sempre coerente con questa parte dell'ambiente di Visual Studio.
 
-Quando si usano token di colore della finestra del documento, prestare attenzione a usarli solo per elementi simili e sempre a coppie. In caso contrario, si potrebbero ottenere risultati imprevisti nell'interfaccia utente.
+Quando si usano token di colore della finestra del documento, prestare attenzione a usarli solo per elementi simili e sempre in coppie. In caso contrario, si potrebbero ottenere risultati imprevisti nell'interfaccia utente.
 
 ### <a name="document-window-frames"></a>Frame della finestra del documento
 Le finestre dei documenti possono essere ancorate nell'IDE o mobili come finestre separate. Quando una finestra del documento è mobile all'esterno dell'IDE, si trova ancora in un'area del documento e ha colori di sfondo, bordo, testo e tabulazione uguali a quando fa parte dell'IDE. Tuttavia, il documento si trova all'interno di una cornice che ha colori di sfondo, del bordo e del testo propri. Quando le finestre degli strumenti sono ancorate nell'area dei documenti, ereditano il comportamento e il colore per le rispettive schede dai nomi di token delle finestre dei documenti.
 
-![Finestra del documento ancorata (redline)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />Finestra del documento ancorata (redline)
+![Finestra del documento ancorata (linea rossa)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />Finestra del documento ancorata (redline)
 
-![Finestra mobile del documento (linea rossa)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />Finestra mobile del documento (linea rossa)
+![Finestra del documento mobile (linea rossa)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />Finestra del documento mobile (linea rossa)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
@@ -1661,9 +1661,9 @@ Le finestre dei documenti possono essere ancorate nell'IDE o mobili come finestr
 | Bordo | `Environment.MainWindowActiveDefaultBorder` |
 | Bordo (glifo) | `Environment.RaftedWindowButtonActiveBorder`<br />(Impostata su trasparente) |
 
-**Cornice della finestra del documento mobile senza stato attivo: stato predefinito**
+**Cornice della finestra del documento mobile non attiva: stato predefinito**
 
-![Frame della finestra del documento mobile con stato non attivo predefinito](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />Frame della finestra del documento mobile con stato non attivo predefinito
+![Cornice della finestra del documento mobile non attiva predefinita](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />Cornice della finestra del documento mobile non attiva predefinita
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -1683,9 +1683,9 @@ Le finestre dei documenti possono essere ancorate nell'IDE o mobili come finestr
 | Primo piano (glifo) | `Environment.RaftedWindowButtonHoverActiveGlyph` |
 | Bordo (glifo) | `Environment.RaftedWindowButtonHoverActiveBorder` |
 
-**Cornice della finestra del documento mobile senza stato attivo: stato del passaggio del mouse**
+**Cornice della finestra del documento mobile non attiva: stato del passaggio del mouse**
 
-![Cornice della finestra del documento mobile con stato non attivo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />Cornice della finestra del documento mobile con stato non attivo al passaggio del mouse
+![Cornice della finestra del documento mobile non attiva al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />Cornice della finestra del documento mobile non attiva al passaggio del mouse
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -1728,13 +1728,13 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 
 **Scheda del documento con stato attivo selezionata**
 
-![Scheda del documento con stato attivo selezionata](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303-074_SelectedTabFocused")<br />Scheda documento con stato attivo selezionata
+![Scheda del documento con stato attivo selezionata](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303-074_SelectedTabFocused")<br />Scheda del documento con stato attivo selezionata
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
 | Sfondo | `Environment.FileTabSelectedGradientTop`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (testo) | `Environment.FileTabSelectedText` |
-| Bordo | `Environment.FileTabSelectedBorder`<br />Impostare lo stesso colore dello sfondo. |
+| Bordo | `Environment.FileTabSelectedBorder`<br />Impostata sullo stesso colore dello sfondo. |
 | Bordo del documento | `Environment.FileTabDocumentBorderBackground` |
 
 **Scheda documento selezionata e non con stato attivo**
@@ -1745,7 +1745,7 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 | --- | --- |
 | Sfondo | `Environment.FileTabInactiveGradientTop`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (testo) | `Environment.FileTabInactiveText` |
-| Bordo | `Environment.FileTabInactiveBorder`<br />Impostare lo stesso colore dello sfondo. |
+| Bordo | `Environment.FileTabInactiveBorder`<br />Impostata sullo stesso colore dello sfondo. |
 | Bordo del documento | `Environment.FileTabInactiveDocumentBorderBackground` |
 
 **Scheda Documento in background: stato predefinito**
@@ -1756,7 +1756,7 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 | --- | --- |
 | Sfondo | `Environment.FileTabBackground` |
 | Primo piano (testo) | `Environment.FileTabText` |
-| Bordo | `Environment.FileTabBorder`<br />Impostare lo stesso colore dello sfondo. |
+| Bordo | `Environment.FileTabBorder`<br />Impostata sullo stesso colore dello sfondo. |
 
 **Scheda documento in background: stato del passaggio del mouse**
 
@@ -1766,7 +1766,7 @@ Per ogni documento aperto è presente una scheda nel canale delle schede dei doc
 | --- | --- |
 | Sfondo | `Environment.FileTabHotGradientTop`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
 | Primo piano (testo) | `Environment.FileTabHotText` |
-| Bordo | `Environment.FileTabHotBorder`<br />Impostare lo stesso colore dello sfondo. |
+| Bordo | `Environment.FileTabHotBorder`<br />Impostata sullo stesso colore dello sfondo. |
 
 #### <a name="preview-tab"></a>Scheda anteprima
 Chiamata anche scheda "provvisoria". La scheda di anteprima viene visualizzata sul lato destro del canale della scheda del documento quando l'utente fa clic su un elemento nella Esplora soluzioni degli strumenti. Questa scheda funge da anteprima del documento e offre all'utente anche l'opzione di mantenere il documento aperto sul lato sinistro del canale delle schede dei documenti. Può essere aperta una sola scheda anteprima per volta. Le schede anteprima hanno sia uno sfondo sia stati selezionati, come le schede aperte, e possono avere stato attivo o non attivo quando sono attive.
@@ -1775,7 +1775,7 @@ Chiamata anche scheda "provvisoria". La scheda di anteprima viene visualizzata s
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... in qualsiasi punto in cui si sta creando l'anteprima provvisoria e si vuole che un elemento corrisponda al colore della scheda di anteprima corrente. | ... per qualsiasi tipo di documento o scheda non provvisorio (anteprima). |
+| ... in qualsiasi punto in cui si sta creando l'anteprima provvisoria e si vuole che un elemento corrisponda al colore della scheda dell'anteprima corrente. | ... per qualsiasi tipo di documento o scheda non provvisorio (anteprima). |
 | | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
 
 **Scheda anteprima con stato attivo e selezionato**
@@ -1786,7 +1786,7 @@ Chiamata anche scheda "provvisoria". La scheda di anteprima viene visualizzata s
 | --- | --- |
 | Sfondo | `Environment.FileTabProvisionalSelectedActive` |
 | Primo piano (testo) | `Environment.FileTabProvisionalSelectedActiveForeground` |
-| Bordo | `Environment.FileTabProvisionalSelectedActiveBorder`<br />Impostare lo stesso colore dello sfondo. |
+| Bordo | `Environment.FileTabProvisionalSelectedActiveBorder`<br />Impostata sullo stesso colore dello sfondo. |
 | Bordo del documento | `Environment.FileTabProvisionalSelectedActiveBorder` |
 
 **Scheda anteprima non messa a fuoco selezionata**
@@ -1810,7 +1810,7 @@ Chiamata anche scheda "provvisoria". La scheda di anteprima viene visualizzata s
 | Primo piano (testo) | `Environment.FileTabProvisionalInactiveForeground` |
 | Bordo | `Environment.FileTabProvisionalInactiveBorder`<br />Impostare lo stesso colore dello sfondo. |
 
-**Scheda anteprima in background: stato del passaggio del mouse**
+**Scheda Anteprima sfondo: stato del passaggio del mouse**
 
 ![Scheda Anteprima in background al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br />Scheda Anteprima in background al passaggio del mouse
 
@@ -1891,7 +1891,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 **Tag: stato premuto**
 
-![Pressed tag (Tag premuto)](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303-179_TagPressed")<br />Pressed tag (Tag premuto)
+![Tag premuto](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303-179_TagPressed")<br />Tag premuto
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -1949,7 +1949,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 **Tag selezionato con glifo Close ( ): stato &times; del passaggio del mouse**
 
-![Tag selezionato con glifo Close ( &times; ) al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Tag selezionato con il glifo Close ( &times; ) al passaggio del mouse
+![Tag selezionato con l'glifo Close ( &times; ) al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Tag selezionato con l'glifo Close ( &times; ) al passaggio del mouse
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -1959,7 +1959,7 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 
 **Tag selezionato con glifo Close ( &times; ): stato premuto**
 
-![Tag selezionato e premuto con il glifo Close ( &times; )](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />Tag selezionato e premuto con il glifo Close ( &times; )
+![Tag selezionato e premuto con l'glifo Close ( &times; )](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />Tag selezionato e premuto con l'glifo Close ( &times; )
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -1968,13 +1968,13 @@ Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichia
 | Bordo | `Tag.TagSelectedGlyphPressedBorder` |
 
 ## <a name="tool-windows"></a>Finestre degli strumenti
-Non è necessario replicare le finestre degli strumenti, perché sono fornite dall'ambiente Visual Studio locale. Tuttavia, si potrebbe scegliere di sfruttare i colori usati nelle finestre degli strumenti in modo che l'interfaccia utente appaia sempre coerente con questa parte dell'ambiente di Visual Studio.
+Non è necessario replicare le finestre degli strumenti, perché sono fornite dall'ambiente Visual Studio servizio. Tuttavia, si potrebbe scegliere di sfruttare i colori usati nelle finestre degli strumenti in modo che l'interfaccia utente appaia sempre coerente con questa parte dell'ambiente di Visual Studio.
 
 ![Finestra degli strumenti (linea rossa)](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />Finestra degli strumenti (linea rossa)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... in qualsiasi punto in cui si crea l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
+| ... in qualsiasi punto in cui si sta creando l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
 
 ### <a name="tool-window-frame"></a>Cornice delle finestre degli strumenti
 Le finestre degli strumenti in Visual Studio vengono usate per molte attività diverse e possono avere stati diversi. Se una finestra degli strumenti è aperta, può essere assegnata a uno qualsiasi dei quattro lati dell'area del documento. Le finestre degli strumenti possono anche essere mobili al di fuori dell'IDE, per poter essere riposizionate in qualsiasi punto dello schermo dell'utente. Le finestre mobili sono sempre in primo piano nell'IDE. Infine, le finestre degli strumenti possono essere ancorate come finestre dei documenti ed essere visualizzate come scheda nell'area dei documenti. Le finestre degli strumenti ancorate come finestre dei documenti vengono colorate in parte usando i nomi di token delle finestre dei documenti.
@@ -1983,7 +1983,7 @@ Le finestre degli strumenti in Visual Studio vengono usate per molte attività d
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ...  in qualsiasi punto in cui si crea l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
+| ...  in qualsiasi punto in cui si sta creando l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
 
 **Finestra degli strumenti ancorata**
 
@@ -2013,17 +2013,17 @@ Le finestre degli strumenti in Visual Studio vengono usate per molte attività d
 | Bordo | `Environment.MainWindowInactiveBorder` |
 
 ### <a name="toolbox-like-windows"></a>Finestre simili alla casella degli strumenti
-La casella degli strumenti è una delle finestre degli strumenti comuni usate più di frequente in Visual Studio. Si tratta essenzialmente di un controllo albero con un tema e uno stile speciali applicati.
+La casella degli strumenti è una delle finestre degli strumenti più comuni usate in Visual Studio. Si tratta essenzialmente di un controllo albero con un tema e uno stile speciali applicati.
 
-![Finestra simile alla casella degli strumenti (linea rossa)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />Finestra simile alla casella degli strumenti (linea rossa)
+![Finestra simile a Casella degli strumenti (linea rossa)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />Finestra simile a Casella degli strumenti (linea rossa)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... quando si progetta una finestra degli strumenti che deve essere sempre coerente con la casella degli strumenti della shell. | ... per qualsiasi elemento che non sia simile all'interfaccia utente della casella degli strumenti o se non si è certi che l'interfaccia utente avrà problemi se i colori della casella degli strumenti della shell cambiano. |
+| ... quando si progetta una finestra degli strumenti che deve essere sempre coerente con la casella degli strumenti della shell. | ... per qualsiasi elemento non simile all'interfaccia utente della casella degli strumenti o se non si è certi che l'interfaccia utente avrà problemi se i colori della casella degli strumenti della shell cambiano. |
 
 **Nodi della casella degli strumenti: stato predefinito**
 
-![Nodo padre predefinito della casella degli strumenti](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "0303-190_ToolboxParentNode")<br />Nodo padre predefinito della casella degli strumenti
+![Nodo padre della casella degli strumenti predefinito](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "0303-190_ToolboxParentNode")<br />Nodo padre della casella degli strumenti predefinito
 
 ![Nodo figlio predefinito della casella degli strumenti](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303-191_ToolboxChildNode")<br />Nodo figlio predefinito della casella degli strumenti
 
@@ -2047,9 +2047,9 @@ La casella degli strumenti è una delle finestre degli strumenti comuni usate pi
 
 **Nodi della casella degli strumenti selezionati: stato attivo**
 
-![Nodo padre della casella degli strumenti selezionato con stato attivo](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />Nodo padre della casella degli strumenti selezionato con stato attivo
+![Nodo padre della casella degli strumenti con stato attivo e selezionato](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />Nodo padre della casella degli strumenti con stato attivo e selezionato
 
-![Nodo figlio della casella degli strumenti selezionato con stato attivo](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />Nodo figlio della casella degli strumenti selezionato con stato attivo
+![Nodo figlio della casella degli strumenti con stato attivo e selezionato](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />Nodo figlio della casella degli strumenti con stato attivo e selezionato
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -2060,7 +2060,7 @@ La casella degli strumenti è una delle finestre degli strumenti comuni usate pi
 
 **Nodi della casella degli strumenti selezionati: stato non attivo**
 
-![Nodo padre della casella degli strumenti selezionato e non attivo](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />Nodo padre della casella degli strumenti selezionato e non attivo
+![Nodo padre della casella degli strumenti selezionato senza stato attivo](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />Nodo padre della casella degli strumenti selezionato senza stato attivo
 
 ![Nodo figlio della casella degli strumenti selezionato e non attivo](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />Nodo figlio della casella degli strumenti selezionato e non attivo
 
@@ -2072,13 +2072,13 @@ La casella degli strumenti è una delle finestre degli strumenti comuni usate pi
 | Primo piano (testo) | `TreeView.SelectedItemInactive`<br />Dalla categoria [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 
 ### <a name="tool-window-title-bar"></a>Barra del titolo delle finestre degli strumenti
-Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella parte superiore della barra del titolo. Non ha un nome di token per lo stato non attivo.
+Il bordo della barra del titolo non è un bordo reale, ma una linea spesso nella parte superiore della barra del titolo. Non ha un nome di token per lo stato non attivo.
 
-![Barra del titolo della finestra degli strumenti (linea rossa)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />Barra del titolo della finestra degli strumenti (linea rossa)
+![Barra del titolo della finestra degli strumenti (redline)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />Barra del titolo della finestra degli strumenti (redline)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... in qualsiasi punto in cui si crea l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
+| ... in qualsiasi punto in cui si sta creando l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
 
 **Barra del titolo con stato attivo**
 
@@ -2086,7 +2086,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.TitleBarActiveGradientBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.TitleBarActiveGradientBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.TitleBarActiveText` |
 | Bordo | `Environment.TitleBarActiveBorder`<br />Impostare lo stesso colore dello sfondo. |
 | Quadratino di trascinamento | `Environment.TitleBarDragHandleActive` |
@@ -2097,17 +2097,17 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.TitleBarInactiveGradientBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.TitleBarInactiveGradientBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.TitleBarInactiveText` |
 | Bordo | N/A |
 | Quadratino di trascinamento | `Environment.TitleBarDragHandle` |
 
 #### <a name="tool-window-title-bar-buttons"></a>Pulsanti della barra del titolo della finestra degli strumenti
-![Pulsante barra del titolo (redline)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />Pulsante barra del titolo (redline)
+![Pulsante della barra del titolo (redline)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />Pulsante della barra del titolo (redline)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... per i pulsanti visualizzati nell'interfaccia utente che utilizzano token di colore dalle barre del titolo della finestra degli strumenti. | ... per i pulsanti visualizzati in altre posizioni. |
+| ... per i pulsanti visualizzati nell'interfaccia utente che usa token di colore dalle barre del titolo della finestra degli strumenti. | ... per i pulsanti visualizzati in altre posizioni. |
 | | ... in qualsiasi combinazione di sfondo/primo piano diversa da quella specificata. |
 
 **Pulsanti della barra del titolo con stato attivo: stato predefinito**
@@ -2122,7 +2122,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 **Pulsanti della barra del titolo senza stato attivo: stato predefinito**
 
-![Pulsanti predefiniti della barra del titolo senza messa a fuoco](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />Pulsanti predefiniti della barra del titolo senza messa a fuoco
+![Pulsanti predefiniti e senza stato di avanzamento della barra del titolo](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />Pulsanti predefiniti e senza stato di avanzamento della barra del titolo
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -2142,7 +2142,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 **Pulsanti della barra del titolo senza stato attivo: stato del passaggio del mouse**
 
-![Pulsanti della barra del titolo non con stato attivato al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br />Pulsanti della barra del titolo non con stato attivato al passaggio del mouse
+![Pulsanti della barra del titolo senza stato attivato al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br />Pulsanti della barra del titolo senza stato attivato al passaggio del mouse
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -2152,7 +2152,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 **Pulsanti della barra del titolo con stato attivo: stato premuto**
 
-![Pulsanti della barra del titolo con stato attivo alla pressione](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br />Pulsanti della barra del titolo con stato attivo alla pressione
+![Pulsanti della barra del titolo con stato attivo sulla pressione](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br />Pulsanti della barra del titolo con stato attivo sulla pressione
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -2162,7 +2162,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 **Pulsanti della barra del titolo senza stato attivo: stato premuto**
 
-![Pulsanti della barra del titolo non messa a fuoco sulla pressione](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br />Pulsanti della barra del titolo non messa a fuoco sulla pressione
+![Pulsanti della barra del titolo senza stato premuto](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br />Pulsanti della barra del titolo senza stato premuto
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -2175,7 +2175,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... in qualsiasi punto in cui si crea l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
+| ... in qualsiasi punto in cui si sta creando l'interfaccia utente che si vuole associare alle finestre degli strumenti. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
 
 **Scheda della finestra degli strumenti con stato attivo selezionata**
 
@@ -2185,7 +2185,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 | --- | --- |
 | Sfondo | `Environment.ToolWindowTabSelectedTab` |
 | Primo piano (testo) | `Environment.ToolWindowTabSelectedActiveText` |
-| Bordo | `Environment.ToolWindowTabSelectedBorder`<br />Impostata sullo stesso colore dello sfondo. |
+| Bordo | `Environment.ToolWindowTabSelectedBorder`<br />Impostare lo stesso colore dello sfondo. |
 
 **Scheda della finestra degli strumenti con stato non attivo selezionata**
 
@@ -2195,11 +2195,11 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 | --- | --- |
 | Sfondo | `Environment.ToolWindowTabSelectedTab` |
 | Primo piano (testo) | `Environment.ToolWindowTabSelectedText` |
-| Bordo | `Environment.ToolWindowTabSelectedBorder`<br />Impostata sullo stesso colore dello sfondo. |
+| Bordo | `Environment.ToolWindowTabSelectedBorder`<br />Impostare lo stesso colore dello sfondo. |
 
 **Scheda della finestra degli strumenti in background: stato predefinito**
 
-![Scheda della finestra degli strumenti in background predefinita](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br />Scheda della finestra degli strumenti in background predefinita
+![Scheda predefinita della finestra degli strumenti in background](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br />Scheda predefinita della finestra degli strumenti in background
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
@@ -2215,15 +2215,15 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 | --- | --- |
 | Sfondo | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(Cursori sfumatura impostati sullo stesso valore di colore in Visual Studio 2013. |
 | Primo piano (testo) | `Environment.ToolWindowTabMouseOverText` |
-| Bordo | `Environment.ToolWindowTabMouseOverBorder`<br />Impostata sullo stesso colore dello sfondo. |
+| Bordo | `Environment.ToolWindowTabMouseOverBorder`<br />Impostare lo stesso colore dello sfondo. |
 
 ### <a name="auto-hide-tabs"></a>Schede Nascondi automaticamente
 
-![Nascondi automaticamente le schede (linea rossa)](../../extensibility/ux-guidelines/media/0303-107_autohideredline.png "0303-107_AutoHideRedline") Nascondi automaticamente le schede (redline)
+![Nascondi automaticamente le schede (linea rossa)](../../extensibility/ux-guidelines/media/0303-107_autohideredline.png "0303-107_AutoHideRedline") Nascondi automaticamente le schede (linea rossa)
 
 | Utilizzare... | Non usare ... |
 | --- | --- |
-| ... in qualsiasi punto in cui si crea l'interfaccia utente che si vuole associare alle schede della finestra degli strumenti nascoste automaticamente. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
+| ... in qualsiasi punto in cui si sta creando l'interfaccia utente che si vuole associare alle schede delle finestre degli strumenti nascoste automaticamente. | ... per qualsiasi interfaccia utente che non si vuole modificare automaticamente se la shell ha un aggiornamento del tema. |
 
 **Nascondi automaticamente le schede: stato predefinito**
 
@@ -2231,7 +2231,7 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.AutoHideTabBackgroundBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.AutoHideTabBackgroundBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.AutoHideTabText` |
 | Bordo | `Environment.AutoHideTabBorder` |
 
@@ -2241,6 +2241,6 @@ Il bordo della barra del titolo non è un bordo vero, ma una linea spessa nella 
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Cursore sfumatura per questo token non usato nell'interfaccia utente a colori. |
+| Sfondo | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />I cursori sfumatura per questo token non vengono usati nell'interfaccia utente con colori. |
 | Primo piano (testo) | `Environment.AutoHideTabMouseOverText` |
 | Bordo | `Environment.AutoHideTabMouseOverBorder` |

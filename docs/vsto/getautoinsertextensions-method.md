@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7bb7a75c4bc1abd5c5fb29c55a3be42e44ff2af55403c1d9ecccbf00efb5c755
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0a4da4447af30a44c00d824120fb6733f409a6ac
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268326"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155993"
 ---
 # <a name="getautoinsertextensions-method"></a>Metodo GetAutoInsertExtensions
   Ottiene informazioni sulle app per Office che devono essere inserite automaticamente durante il debug.

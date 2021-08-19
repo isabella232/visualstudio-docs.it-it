@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 9c587af0742b156b9d51f899d5a5e1cd121d4b2a50cfaa00d6b922e7c9054c2c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 76edd5250d0876a0e7ac8dfafb1d03f00dc5c89f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367525"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156357"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Procedura: Eseguire codice quando un SharePoint viene distribuito o ritirato
   Se si desidera eseguire attività aggiuntive quando un progetto SharePoint viene distribuito o ritirato, è possibile gestire gli eventi generati da Visual Studio. Per altre informazioni, vedere [Estendere SharePoint creazione di pacchetti e distribuzione](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f529a258a6e3bb14c6e9c7f5b0ab7e4311265c169f33872ef7b30f48688b3343
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 814db4514454659780021c17e873a8e2363cb54f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369449"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142442"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Usare più processori per la compilazione di progetti
 

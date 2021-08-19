@@ -1,6 +1,6 @@
 ---
-description: Ottiene le informazioni sulla lingua per questo contesto del codice.
-title: 'IDebugCodeContext2:: GetLanguageInfo | Microsoft Docs'
+description: Ottiene le informazioni sulla lingua per questo contesto di codice.
+title: Interfaccia IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62d076a2780ab8d49f79379111eaeef9dd1cdc88
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f1f3c2ac4eb0a41e94415ab83605f978e691311d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088380"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145133"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
-Ottiene le informazioni sulla lingua per questo contesto del codice.
+Ottiene le informazioni sulla lingua per questo contesto di codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +45,16 @@ int GetLanguageInfo(
 
 ## <a name="parameters"></a>Parametri
 `pbstrLanguage`\
-[in, out] Restituisce una stringa che contiene il nome del linguaggio, ad esempio "C++".
+[in, out] Restituisce una stringa contenente il nome del linguaggio, ad esempio "C++".
 
 `pguidLanguage`\
-[in, out] Restituisce il GUID per la lingua del contesto del codice, ad esempio `guidCPPLang` .
+[in, out] Restituisce il GUID per il linguaggio del contesto del codice, ad esempio `guidCPPLang` .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Almeno uno dei parametri deve restituire un valore non null.
+ Almeno uno dei parametri deve restituire un valore non Null.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

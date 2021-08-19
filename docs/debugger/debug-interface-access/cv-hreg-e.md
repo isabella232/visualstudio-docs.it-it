@@ -1,6 +1,6 @@
 ---
 title: CV_HREG_e | Microsoft Docs
-description: Ottenere informazioni di riferimento sul tipo di enumerazione CV_HREG_e, che specifica un registro di destinazione in Debug Interface Access SDK.
+description: Ottenere informazioni di riferimento sul tipo CV_HREG_e di enumerazione, che specifica un registro di destinazione nell'SDK di accesso all'interfaccia di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,20 +12,21 @@ ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cbc24e8abe378a1a6c61680a797a6014efc5a91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2e35a4dd170d78aeda22200d4634300bdb8a184
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857342"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154800"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 Specifica un registro di destinazione.
 
 > [!NOTE]
-> Poiché l' `CV_HREG_e` enumerazione è troppo grande per essere duplicata nel suo complesso, viene fornita una versione abbreviata come riferimento. Le voci mancanti sono notate in corsivo. L'enumerazione complete è disponibile nel file di intestazione cvconst. h.
+> Poiché l'enumerazione è troppo grande per essere duplicata nella sua interezza, come riferimento viene fornita una `CV_HREG_e` versione abbreviata. Le voci mancanti vengono notate in corsivo. L'enumerazione completa è disponibile nel file di intestazione cvconst.h.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -411,30 +412,30 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Elementi
-CV_REG_ * i registri usati dai processori Intel 80x86 e ix86 e p-code.
+CV_REG_* Registri usati dai processori Intel 80x86 e ix86 e p-code.
 
-CV_R68_ * registri usati dal processore 68K.
+CV_R68_* Registri usati dal processore da 68.000.
 
-CV_M4_ * registri utilizzati dal processore di serie MIPS 4000.
+CV_M4_* Registri usati dal processore MIPS serie 4000.
 
-CV_ALPHA_ * registri usati dal processore della serie Alpha AXP di Digital Equipment Corporation.
+CV_ALPHA_* Registri usati dal processore della serie Alpha AXP di Digital Equipment Corporation.
 
-CV_PPC_ * registri usati dal processore PowerPC Motorola/IBM.
+CV_PPC_* Registri usati dal processore PowerPC Motorola/IBM.
 
-CV_SH3_ * e CV_SH_ i \* registri usati dal processore Hitachi SH3 e Hitachi SH Series.
+CV_SH3_* e CV_SH_ registri \* usati dal processore Hitachi SH3 e Hitachi SH series.
 
-CV_ARM_ * i registri usati dai processori Advanced RISC Machine (ARM).
+CV_ARM_* Registri usati dai processori RISC Machine (ARM) avanzati.
 
-CV_IA64_ * registri usati dai processori della serie Intel IA64.
+CV_IA64_* Registri usati dai processori Intel serie IA64.
 
-Registri di CV_TRI_ * usati dal processore Tricore di Infineon Technologies.
+CV_TRI_* Registri usati dal processore TriCore di Infineon Technologies.
 
-CV_AM33_ * registri utilizzati da Matsushita/Panasonic AM33 e dai processori correlati.
+CV_AM33_* Registri usati da Matsushita/Panasonic AM33 e dai processori correlati.
 
-CV_M32R_ * i registri usati dal processore Mitsubishi M32R.
+CV_M32R_* Registri usati dal processore Mitsubishi M32R.
 
 ## <a name="remarks"></a>Commenti
-Ogni tipo di processore utilizza un proprio set di registri univoco.
+Ogni tipo di processore usa un proprio set univoco di registri.
 
 I valori di questa enumerazione vengono passati ai metodi seguenti:
 
@@ -449,7 +450,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti:
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
 
 ## <a name="requirements"></a>Requisiti:
-Intestazione: cvconst. h
+Intestazione: cvconst.h
 
 ## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

@@ -1,6 +1,6 @@
 ---
 description: Ottiene il nome e il GUID del motore di debug che esegue questo programma.
-title: Interfaccia IDebugProgram2::GetEngineInfo | Microsoft Docs
+title: IDebugProgram2::GetEngineInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bea94c8cc32668d8a86a63e353e5ae9392f9ba5ed833d34a3b6afcefb1488fd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 33d4fa887d24db3b7ec7922060b649748d9a0063
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126583"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Ottiene il nome e il GUID del motore di debug che esegue questo programma.

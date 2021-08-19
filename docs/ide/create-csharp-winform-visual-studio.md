@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fd11bea99b443ed04584d2c2d91105655d3387a08b852934823623fe366942
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 464a75441a0f32ba3ca1196c9a6ed43b3bc0940f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387911"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124061"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creare un'app Windows Forms in Visual Studio con C\#
 

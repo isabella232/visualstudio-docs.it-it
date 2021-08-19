@@ -23,12 +23,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: 45c9ec5ea9a2701d9784dfe3edcbaef301a7a036005fcd2e98bec73829d49c1f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 43047bfe02f510d65e7e72995af9a38f4afe8aa8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121272993"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124022"
 ---
 # <a name="install-dotfuscator-community"></a>Installare Dotfuscator Community
 

@@ -1,6 +1,6 @@
 ---
-title: Informazioni di riferimento sull'interfaccia utente di debug | Microsoft Docs
-description: Esaminare i collegamenti alle informazioni di riferimento sulle varie finestre di dialogo che possono verificarsi nell'interfaccia utente di debug di Visual Studio.
+title: Informazioni di riferimento Interfaccia utente debug | Microsoft Docs
+description: Esaminare i collegamenti per informazioni di riferimento sulle varie finestre di dialogo che possono essere visualizzate nell'interfaccia utente di debug di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 57f1cad8-c908-42bf-8ec5-6eb567df08e9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3788567cc3c8f75581ab0131ab5dda2196c07a2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4286524ad955e2e857c8298288bf2497cdffec37
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872365"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113026"
 ---
 # <a name="debugging-user-interface-reference"></a>Riferimenti dell'interfaccia utente di debug
 Quando si esegue il debug di un'applicazione è possibile che vengano visualizzate le finestre di dialogo elencate di seguito.
@@ -34,13 +35,13 @@ Quando si esegue il debug di un'applicazione è possibile che vengano visualizza
 
 - [Finestra di dialogo Scegli punti di interruzione](../debugger/choose-breakpoints-dialog-box.md)
 
-- [File di origine di debug, proprietà comuni, finestra di dialogo Pagine delle proprietà della soluzione](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
+- [Eseguire il debug di file di origine, Proprietà comuni, finestra di dialogo Pagine delle proprietà della soluzione](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 
 - [Debug, finestra di dialogo Opzioni](../debugger/debugging-options-dialog-box.md)
 
-- [Finestra di dialogo modifica e continuazione](../debugger/edit-and-continue-dialog-box.md)
+- [Finestra di dialogo Modifica e continuazione](../debugger/edit-and-continue-dialog-box.md)
 
-- [Finestra di dialogo Interrompi debug in corso](../debugger/stop-debugging-in-progress-dialog-box.md)
+- [Finestra di dialogo Arresta debug in corso](../debugger/stop-debugging-in-progress-dialog-box.md)
 
 - [Finestre di dialogo di errore e di avviso per il debug](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 

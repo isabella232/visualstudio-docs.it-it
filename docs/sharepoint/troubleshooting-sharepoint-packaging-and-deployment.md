@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5ac5c6dc29380d160724d46e43222b2958f1c75b7dd5c33a2bf88f98427a6b38
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d02271664f9a259754c19c9ae90612b76e1645c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156253"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Risolvere i SharePoint creazione di pacchetti e distribuzione
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.

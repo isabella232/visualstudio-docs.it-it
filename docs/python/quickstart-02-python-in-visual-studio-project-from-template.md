@@ -6,16 +6,17 @@ ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81f337cf3feca517f46632e7fe08a9f5a62cd707
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c77f8c52e62772cbef61f7ae07f29a2594e608c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156500"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Guida introduttiva: Creare un progetto Python da un modello in Visual Studio
 
@@ -23,7 +24,7 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 
 1. Avviare Visual Studio.
 
-1. Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**, quindi nella finestra di dialogo **nuovo progetto** cercare "Blank Flask", selezionare il modello di **progetto Web Flask vuoto** nell'elenco centrale, assegnare un nome al progetto e selezionare **OK**:
+1. Nella barra dei menu superiore scegliere **File** Nuovo Project , quindi nella finestra di dialogo Nuovo Project cercare  >    >  "flask  vuoto", selezionare il modello **Blank Flask Web Project** nell'elenco centrale, assegnare un nome al progetto e selezionare OK :
 
     ![Creazione di un nuovo progetto con il modello Blank Flask Web Project](media/quickstart-python-06-blank-flask-template.png)
 
@@ -73,19 +74,19 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
         app.run(HOST, PORT)
     ```
 
-1. Selezionare **debug**  >  **Avvia senza eseguire debug** per eseguire l'app e aprire un browser a `localhost:5555` .
+1. Selezionare **Avvia debug** senza eseguire  >  **debug** per eseguire l'app e aprire un browser in `localhost:5555` .
 
 **Domanda: quali altri modelli Python offre Visual Studio?**
 
-**Risposta**: con il carico di lavoro Python installato, Visual Studio offre diversi modelli di progetto, inclusi quelli per i framework Web [Flask, Bottle e Django](../python/python-web-application-project-templates.md), per i servizi cloud di Azure e per diversi scenari di apprendimento automatico, nonché un modello per creare un progetto da una struttura di cartelle esistente contenente un'app Python. Per accedervi, è possibile usare la finestra di dialogo **file**  >  **nuovo**  >  **progetto** selezionando il nodo del linguaggio **Python** e i relativi nodi figlio.
+**Risposta**: con il carico di lavoro Python installato, Visual Studio offre diversi modelli di progetto, inclusi quelli per i framework Web [Flask, Bottle e Django](../python/python-web-application-project-templates.md), per i servizi cloud di Azure e per diversi scenari di apprendimento automatico, nonché un modello per creare un progetto da una struttura di cartelle esistente contenente un'app Python. È possibile accedervi tramite **la finestra** di dialogo Nuovo Project file selezionando il nodo del  >    >   **linguaggio Python** e i relativi nodi figlio.
 
-Visual Studio offre anche diversi file o *modelli di elemento* per creare rapidamente una classe Python, un pacchetto Python, uno unit test Python, un file *web.config* e altro ancora. Quando è aperto un progetto Python, è possibile accedere ai modelli di elemento tramite il comando di menu **progetto**  >  **Aggiungi nuovo elemento** . Vedere il riferimento ai [modelli di elemento](python-item-templates.md).
+Visual Studio offre anche diversi file o *modelli di elemento* per creare rapidamente una classe Python, un pacchetto Python, uno unit test Python, un file *web.config* e altro ancora. Quando è aperto un progetto Python, è possibile accedere ai modelli di elemento **Project** comando di menu  >  **Aggiungi** nuovo elemento. Vedere il riferimento ai [modelli di elemento](python-item-templates.md).
 
 L'uso di modelli consente di risparmiare una quantità di tempo significativa quando si inizia un progetto o si crea un file. I modelli sono anche un ottimo modo per ottenere informazioni sui diversi tipi di app e strutture di codice. È utile dedicare alcuni minuti alla creazione di progetti ed elementi dai diversi modelli per acquisire familiarità con ciò che questi ultimi hanno da offrire.
 
 **Domanda: si possono usare anche modelli Cookiecutter?**
 
-**Risposta**: Sì. Visual Studio infatti garantisce l'integrazione diretta con Cookiecutter, su cui è possibile acquisire informazioni tramite [Guida introduttiva: Creare un progetto da un modello Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Risposta:** Sì! Visual Studio infatti garantisce l'integrazione diretta con Cookiecutter, su cui è possibile acquisire informazioni tramite [Guida introduttiva: Creare un progetto da un modello Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
