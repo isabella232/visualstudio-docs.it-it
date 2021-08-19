@@ -1,6 +1,6 @@
 ---
 title: Attività AssignCulture | Microsoft Docs
-description: Usare l MSBuild'attività AssignCulture per produrre un elemento con un metadati denominato Culture contenente l'identificatore delle impostazioni cultura corrispondente.
+description: Usare l'MSBuild AssignCulture per produrre un elemento con un metadati denominato Culture contenente l'identificatore delle impostazioni cultura corrispondente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bce381e9d851764d2c7d331a247d085f829e94a06ea2750da332c7ab0997008
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0d758a906bf65f3efd91f9c9aba0c64ef95567d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428627"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085299"
 ---
 # <a name="assignculture-task"></a>AssignCulture (attività)
 
@@ -46,7 +46,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `AssignCult
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

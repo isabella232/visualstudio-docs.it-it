@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa7d151e349d67a9a7edb781bdbf07c9b8523d03cd7b974b8b5a6f3c968c87d9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8e74dec064f2603fa19745ec0abab8b7a402307a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403208"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119971"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
 Specifica i modificatori per un tipo di campo.
@@ -177,7 +177,7 @@ Indica che il campo ha un nome speciale, ad esempio per `.ctor` un costruttore [
 Indica che al campo è applicata `Overloads` la parola chiave [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] (solo ).
 
 `FIELD_MOD_WRITEONLY`\
-Indica che il campo è di sola scrittura. Questo valore non è incluso in , perché l'unico uso di tali campi `FIELD_MOD_ALL` di sola scrittura è per la valutazione della funzione. Un utente deve richiedere in modo esplicito i `FIELD_MOD_WRITEONLY` campi.
+Indica che il campo è di sola scrittura. Questo valore non è incluso in , perché l'unico uso di tali campi `FIELD_MOD_ALL` di sola scrittura è per la valutazione della funzione. Un utente deve richiedere in modo esplicito `FIELD_MOD_WRITEONLY` i campi.
 
 `FIELD_MOD_ACCESS_MASK`\
 Indica una maschera per l'accesso ai campi.
@@ -188,7 +188,7 @@ Indica una maschera per i modificatori di campo.
 ## <a name="remarks"></a>Commenti
 Utilizzato per `dwModifiers` il membro della [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struttura .
 
-Questi valori vengono anche passati al [metodo EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) per filtrare per campi specifici.
+Questi valori vengono passati anche al [metodo EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) per filtrare campi specifici.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: sh.h

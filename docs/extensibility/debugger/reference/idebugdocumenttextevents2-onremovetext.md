@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e7608a82ab1867171cd8a5aed92c5723a3db0a39810d4de245d44e6b7971db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 378510588f3b647cd7f4447797b58183f5875b32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452134"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119256"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 Notifica al pacchetto di debug che il testo è stato rimosso dal documento.

@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi relativi ai frammenti di codice
-description: Informazioni su come risolvere i problemi relativi ai frammenti di codice IntelliSense causati in genere da contenuto non valido nel file di frammento o da un file di frammento danneggiato.
+description: Informazioni su come risolvere i problemi relativi ai frammenti di codice IntelliSense causati in genere da contenuto non valido nel file del frammento di codice o da un file di frammento danneggiato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4126adddbadf9e117a9070813f1bc227c0cff271f8863cb59c3b60777a775b93
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 37170a41f348a2892055aa39877c8ba74837d34d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231938"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055913"
 ---
 # <a name="troubleshoot-snippets"></a>Risoluzione dei problemi relativi ai frammenti di codice
 

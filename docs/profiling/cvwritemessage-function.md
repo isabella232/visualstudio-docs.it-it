@@ -29,12 +29,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a5343ca9221990ce7661b843dfb221c602c32126e9d81940213b640de2c6fa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 67e6b88c34520f805bffb7af5d12465d4f2ee427
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396734"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084441"
 ---
 # <a name="cvwritemessage-function"></a>Funzione CvWriteMessage
 Scrive un messaggio nel file di traccia del visualizzatore di concorrenza.

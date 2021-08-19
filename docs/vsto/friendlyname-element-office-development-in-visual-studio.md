@@ -1,6 +1,6 @@
 ---
-description: L'elemento FriendlyName dello spazio dei nomi vstov4 archivia il nome visualizzato nell'elenco dei programmi installati.
-title: '&lt;elemento FriendlyName &gt; (sviluppo per Office in Visual Studio)'
+description: L'elemento friendlyName dello spazio dei nomi vstov4 archivia il nome visualizzato nell'elenco dei programmi installati.
+title: '&lt;Elemento friendlyName &gt; (Office sviluppo in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: adcf46a2c232176026181283549c0c59fc713603
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 887c28cdd81f4f3176dcf29804fa9f6ec4b27123
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083609"
 ---
-# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;elemento FriendlyName &gt; (sviluppo per Office in Visual Studio)
+# <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;Elemento friendlyName &gt; (Office sviluppo in Visual Studio)
   L'elemento `friendlyName` dello spazio dei nomi `vstov4` archivia il nome visualizzato nell'elenco dei programmi installati.
 
 ## <a name="syntax"></a>Sintassi
@@ -37,10 +38,10 @@ ms.locfileid: "102223446"
 
  L'elemento `friendlyName` è privo di attributi o elementi figlio.
 
-## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
+## <a name="vsto-add-in-example"></a>VSTO Esempio di componente aggiuntivo
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l'elemento `friendlyName` in una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra l'elemento `friendlyName` in una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -52,6 +53,6 @@ ms.locfileid: "102223446"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 641457a61f368db9ded75f27b335b345aab3019665c573d7589cea10beed5b3f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3b262db1aa9fe9d97a6d89fa99a49c11c75945aa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394577"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099945"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Procedura: Modificare la formattazione a livello di codice nelle righe del foglio di lavoro contenenti celle selezionate
   È possibile modificare il tipo di carattere di un'intera riga che contiene una cella selezionata in modo che il testo sia in grassetto.

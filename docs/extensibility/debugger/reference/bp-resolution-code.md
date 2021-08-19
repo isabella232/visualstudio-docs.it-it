@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72ea6404413bb4839789a75b0aaa9314440ec30b633293df49d67d6603fc49b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d1ebfce508a63dec3c6088cf2e6612649c8536ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120296"
 ---
 # <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
 Descrive la posizione di un punto di interruzione del codice.

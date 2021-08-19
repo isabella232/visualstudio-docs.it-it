@@ -459,7 +459,7 @@
               href: code-metrics-maintainability-index-range-and-meaning.md
             - name: Accoppiamento tra classi
               href: code-metrics-class-coupling.md
-            - name: Complessità tematica
+            - name: Complessità ciclomatica
               href: code-metrics-cyclomatic-complexity.md
             - name: Profondità dell'ereditarietà
               href: code-metrics-depth-of-inheritance.md

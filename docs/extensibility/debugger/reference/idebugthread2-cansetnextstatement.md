@@ -1,6 +1,6 @@
 ---
-description: Determina se il puntatore all'istruzione corrente può essere impostato sulla stack frame specificata.
-title: 'IDebugThread2:: CanSetNextStatement | Microsoft Docs'
+description: Determina se il puntatore all'istruzione corrente può essere impostato sull'oggetto stack frame.
+title: IDebugThread2::CanSetNextStatement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25846bf028eb93f83767b2ab964f152feabcaefb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: da8c86bb52c09c91b0bde2f309eb212e88cf0a03
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070986"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153251"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Determina se il puntatore all'istruzione corrente può essere impostato sulla stack frame specificata.
+Determina se il puntatore all'istruzione corrente può essere impostato sull'oggetto stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +45,10 @@ int CanSetNextStatement (
 
 ## <a name="parameters"></a>Parametri
 `pStackFrame`\
-Riservato per un utilizzo futuro; impostare su un valore null. Se si tratta di un valore null, utilizzare la stack frame corrente.
+Riservato per un uso futuro; impostato su un valore Null. Se si tratta di un valore Null, usare l'oggetto stack frame.
 
 `pCodeContext`\
-in Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che descrive la posizione del codice che sta per essere eseguita e il relativo contesto.
+[in] Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che descrive il percorso del codice che sta per essere eseguito e il relativo contesto.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

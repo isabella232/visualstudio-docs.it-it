@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a76ee7facb47a76e7d3887c8eb391f076769edb51a9ace6b62899fe57e29e79
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0fe5176217e0c683c2a68b36b0276015ccdc16c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433931"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118892"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 Il motore di debug invia questa interfaccia al gestore di debug di sessione (SDM) quando viene generata un'eccezione nel programma attualmente in esecuzione.

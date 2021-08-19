@@ -1,6 +1,6 @@
 ---
 title: Attività DownloadFile | Microsoft Docs
-description: Informazioni sui parametri dell'attività DownloadFile di MSBuild, che consente di scaricare i file specificati tramite HTTP.
+description: Informazioni sui parametri dell'attività MSBuild DownloadFile, che scarica i file specificati tramite HTTP.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
@@ -22,14 +22,15 @@ caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c68b468cac63d556e9757210c8ce2933d94cba6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44f1f59b30cca2cd547766350285491c348d3513
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877213"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077621"
 ---
 # <a name="downloadfile-task"></a>Attività DownloadFile
 
@@ -54,7 +55,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `DownloadFi
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

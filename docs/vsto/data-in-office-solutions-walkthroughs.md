@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3028d532ce605b1c6cc275d879a5961ab546fe7893828e6b2ce75da23cb3f759
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1d8df3bae055c1d827562e9da8d0022ae9e7c2b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424398"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053740"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Procedure dettagliate sui dati Office soluzioni
   Le procedure dettagliate seguenti mostrano come usare i dati nelle personalizzazioni a livello di documento e i componenti aggiuntivi VSTO per Microsoft Office Word e Microsoft Office Excel.

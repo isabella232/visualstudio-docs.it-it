@@ -1,6 +1,6 @@
 ---
 title: Funzioni degli elementi | Microsoft Docs
-description: Informazioni su MSBuild codice nelle attività e nelle destinazioni può chiamare le funzioni degli elementi per ottenere informazioni sugli elementi nel progetto.
+description: Informazioni su MSBuild codice nelle attività e nelle destinazioni può chiamare funzioni elemento per ottenere informazioni sugli elementi nel progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f75d5a0de6bedd7635ab073f7d3711ca75b07552e11b88958baf1b5d37e18727
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 534a1abf01f3b1493018c4d7adb5161e1a02cf60
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121303124"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077348"
 ---
 # <a name="item-functions"></a>funzioni Item
 
-Il codice nelle attività e nelle destinazioni può chiamare le funzioni degli elementi per ottenere informazioni sugli elementi nel progetto (in MSBuild 4.0 e versioni successive). Queste funzioni semplificano il recupero di elementi distinti e sono più veloci rispetto al ciclo degli elementi.
+Il codice nelle attività e nelle destinazioni può chiamare funzioni elemento per ottenere informazioni sugli elementi nel progetto (in MSBuild 4.0 e versioni successive). Queste funzioni semplificano il recupero di elementi distinti e sono più veloci rispetto all'esecuzione di cicli tra gli elementi.
 
 ## <a name="string-item-functions"></a>Funzioni degli elementi per i valori stringa
 
@@ -107,7 +107,7 @@ Nell'esempio seguente viene illustrato come usare le funzioni intrinseche degli 
 
 ## <a name="msbuild-condition-functions"></a>MSBuild di condizione
 
-Le funzioni `Exists` e non sono funzioni `HasTrailingSlash` item. Sono disponibili per l'uso con `Condition` l'attributo . Vedere [MSBuild condizioni .](msbuild-conditions.md)
+Le funzioni `Exists` e non sono funzioni `HasTrailingSlash` elemento. Sono disponibili per l'uso con `Condition` l'attributo . Vedere [MSBuild condizioni .](msbuild-conditions.md)
 
 ## <a name="see-also"></a>Vedi anche
 

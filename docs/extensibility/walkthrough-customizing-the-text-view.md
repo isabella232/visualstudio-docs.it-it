@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493d11fe5c024631bc333a0bea6bd834f54eefccac9e97d24c4d22d16f2de60f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd60c6e9c6253a214de7a08173462895cdf29fc1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078544"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Procedura dettagliata: Personalizzare la visualizzazione testo
 È possibile personalizzare una visualizzazione di testo modificando una delle proprietà seguenti nella mappa in formato editor:
@@ -31,7 +31,7 @@ ms.locfileid: "121400478"
 
 - Testo selezionato
 
-- Testo selezionato inattivo(ovvero testo selezionato che ha perso lo stato attivo)
+- Testo selezionato inattivo( ovvero testo selezionato che ha perso lo stato attivo)
 
 - Spazio vuoto visibile
 
@@ -71,7 +71,7 @@ ms.locfileid: "121400478"
 
 ## <a name="change-the-view-properties"></a>Modificare le proprietà della vista
 
-1. Impostare il metodo <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> in modo che le proprietà della vista siano modificate all'apertura della vista. Per apportare la modifica, trovare prima l'elemento corrispondente <xref:System.Windows.ResourceDictionary> all'aspetto della visualizzazione che si vuole trovare. Modificare quindi la proprietà appropriata nel dizionario risorse e impostare le proprietà. Eseguire il batch delle chiamate al metodo chiamando il metodo prima di impostare le proprietà e quindi dopo <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> aver impostato le <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> proprietà.
+1. Impostare il metodo <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> in modo che le proprietà della vista siano modificate all'apertura della vista. Per apportare la modifica, trovare <xref:System.Windows.ResourceDictionary> prima l'elemento corrispondente all'aspetto della visualizzazione che si vuole trovare. Modificare quindi la proprietà appropriata nel dizionario risorse e impostare le proprietà. Eseguire il batch delle chiamate al metodo chiamando il metodo prima di impostare le proprietà e quindi dopo <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> aver impostato le <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> proprietà.
 
     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs" id="Snippet4":::
     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb" id="Snippet4":::

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88334ae13ca4941749c2a7434e0829b880074cde5397d4251849fc7bf67a6331
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 794da0fdccdeee1da47181e5d243bd22734602b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417743"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120452"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 Specifica il tipo di posizione del punto di interruzione per una richiesta di punto di interruzione.
@@ -75,10 +75,10 @@ public enum enum_BP_LOCATION_TYPE {
 Non specifica la posizione del punto di interruzione.
 
 `BPLT_FILE_LINE`\
-Specifica il tipo di percorso del punto di interruzione come riga di file.
+Specifica il tipo di posizione del punto di interruzione come riga di file.
 
 `BPLT_FUNC_OFFSET`\
-Specifica il tipo di posizione del punto di interruzione come offset di funzione.
+Specifica il tipo di posizione del punto di interruzione come offset della funzione.
 
 `BPLT_CONTEXT`\
 Specifica il tipo di posizione del punto di interruzione come contesto.
@@ -111,15 +111,15 @@ Specifica il tipo di posizione del punto di interruzione come indirizzo del codi
 Specifica il tipo di posizione del punto di interruzione come stringa di dati.
 
 `BPLT_TYPE_MASK`\
-Specifica una maschera di bit, in modo che il tipo di punto di interruzione possa essere estratto dal valore .
+Specifica una maschera di bit, in modo che il tipo di punto di interruzione possa essere estratto dal valore.
 
 `BPLT_LOCATION_TYPE_MASK`\
-Specifica una maschera di bit, in modo che il tipo di posizione del punto di interruzione possa essere estratto dal valore .
+Specifica una maschera di bit, in modo che il tipo di posizione del punto di interruzione possa essere estratto dal valore.
 
 ## <a name="remarks"></a>Commenti
 Passato come parametro al [metodo GetLocationType.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
 
-Un tipo di posizione del punto di interruzione è costituito da un tipo di punto di interruzione e da un tipo di posizione. Ciò significa che un tipo di posizione del punto di interruzione non è mai solo un tipo di punto di interruzione (ad esempio, ) o un tipo di posizione `BPT_CODE` (ad esempio, `BPLT_FILE_LINE` ). Le costanti predefinite per tutti i tipi di posizione dei punti di interruzione attualmente supportati sono incluse in questa enumerazione ( `BPLT_CODE_FILE_LINE` da `BPLT_DATA_STRING` a ).
+Un tipo di posizione del punto di interruzione è costituito da un tipo di punto di interruzione e da un tipo di posizione. Ciò significa che un tipo di posizione del punto di interruzione non è mai solo un tipo di punto di interruzione (ad esempio, ) o un tipo di posizione `BPT_CODE` (ad esempio, `BPLT_FILE_LINE` ). Le costanti predefinite per tutti i tipi di posizione dei punti di interruzione attualmente supportati sono incluse in questa enumerazione `BPLT_CODE_FILE_LINE` (da a `BPLT_DATA_STRING` ).
 
 `BPT_CODE`e `BPT_DATA` sono membri [dell'enumerazione BP_TYPE.](../../../extensibility/debugger/reference/bp-type.md)
 

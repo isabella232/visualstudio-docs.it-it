@@ -1,6 +1,6 @@
 ---
 title: Modifica dell'aspetto di un comando | Microsoft Docs
-description: Informazioni su come fornire commenti e suggerimenti per modificare l'aspetto di un comando, ad esempio rendere i comandi disponibili/non disponibili, nascosti/visualizzati o selezionati/deselezionati.
+description: Informazioni su come inviare commenti e suggerimenti modificando l'aspetto di un comando, ad esempio rendendo i comandi disponibili/non disponibili, nascosti/visualizzati o selezionati/deselezionati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6344d5d58856c420807e80020d80f0067d0f973c566b3e613782e5fa0b85ef11
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a13b9a33819aa8b1546fc1139497daa1adf21339
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452628"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058136"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modificare l'aspetto di un comando
 È possibile inviare commenti e suggerimenti all'utente modificando l'aspetto di un comando. Ad esempio, è possibile che un comando sia diverso quando non è disponibile. È possibile rendere i comandi disponibili o non disponibili, nasconderli o mostrarli oppure selezionare o deselezionarli nel menu.
 
-Per modificare l'aspetto di un comando, eseguire una di queste azioni:
+Per modificare l'aspetto di un comando, eseguire una delle azioni seguenti:
 
 - Specificare i flag appropriati nella definizione del comando nel file della tabella dei comandi.
 
@@ -63,7 +63,7 @@ Per modificare l'aspetto di un comando, eseguire una di queste azioni:
     }
     ```
 
-5. Ottenere il comando che si vuole aggiornare <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> dall'oggetto e quindi impostare le proprietà appropriate sull'oggetto comando. Ad esempio, il metodo seguente rende disponibile o non disponibile il comando specificato da un set di comandi VSPackage. Il codice seguente rende la voce di menu denominata `New Text` non disponibile dopo che è stata selezionata.
+5. Ottenere il comando che si desidera aggiornare <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> dall'oggetto e quindi impostare le proprietà appropriate sull'oggetto comando. Ad esempio, il metodo seguente rende disponibile o non disponibile il comando specificato da un set di comandi VSPackage. Il codice seguente rende la voce di menu denominata `New Text` non disponibile dopo che è stata selezionata.
 
     ```csharp
     public bool ChangeMyCommand(int cmdID, bool enableCmd)
@@ -81,14 +81,14 @@ Per modificare l'aspetto di un comando, eseguire una di queste azioni:
     }
     ```
 
-6. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza Visual Studio sperimentale.
+6. Compilare il progetto e avviare il debug. Verrà visualizzata l'Visual Studio sperimentale di .
 
-7. Scegliere **Richiama** **ChangeMenuText** dal menu Strumenti. A questo punto il nome del comando **è Invoke ChangeMenuText,** quindi il gestore del comando non chiama **ChangeMyCommand().**
+7. Scegliere **Il comando** Richiama **ChangeMenuText dal** menu Strumenti. A questo punto il nome del comando **è Invoke ChangeMenuText**, quindi il gestore del comando non chiama **ChangeMyCommand()**.
 
-8. Nel menu **Strumenti** dovrebbe essere visualizzato Nuovo **testo.** Fare clic **su Nuovo testo**. Il comando dovrebbe ora essere disattivato.
+8. Nel menu **Strumenti** dovrebbe essere visualizzato **Nuovo testo**. Fare **clic su Nuovo testo**. Il comando dovrebbe ora essere disattivato.
 
 ## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md)
-- [Visual Studio tabella dei comandi (. Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio tabella dei comandi (. Vsct) File](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

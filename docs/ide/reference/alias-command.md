@@ -1,6 +1,6 @@
 ---
 title: Comando Alias
-description: Informazioni su come usare il comando alias per creare un nuovo alias per un comando completo, per un comando completo e per argomenti o per un altro alias.
+description: Informazioni su come usare il comando Alias per creare un nuovo alias per un comando completo, completare il comando e gli argomenti o un altro alias.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a20a14cc0f48e86840b770aca934b188bf152dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5c1b3f07a563484b70e36ed4257ee4dac005faf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969789"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101635"
 ---
 # <a name="alias-command"></a>Comando Alias
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.
@@ -79,7 +80,7 @@ In questo esempio viene visualizzato un elenco di tutti gli alias correnti e le 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

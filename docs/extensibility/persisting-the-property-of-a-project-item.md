@@ -1,5 +1,5 @@
 ---
-title: Persistenza della proprietà di un Project item | Microsoft Docs
+title: Persistenza della proprietà di un Project elemento | Microsoft Docs
 description: Informazioni su come rendere persistente una proprietà aggiunta a un elemento di progetto archiviando la proprietà nel file di progetto nel tipo di progetto esteso.
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
@@ -14,17 +14,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e201b60ea4634c6960d6e98c64214deadd62a6b7608cb73d15b71bf2a497254f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6747329014eced976fd6b21737c86dd7e073943d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305282"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102129"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Rendere persistente la proprietà di un elemento di progetto
 È possibile rendere persistente una proprietà aggiunta a un elemento di progetto, ad esempio l'autore di un file di origine. A tale scopo, archiviare la proprietà nel file di progetto.
 
- Il primo passaggio per rendere persistente una proprietà in un file di progetto consiste nell'ottenere la gerarchia del progetto come <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaccia. È possibile ottenere questa interfaccia tramite Automazione o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> tramite . Dopo aver ottenuto l'interfaccia , è possibile usarla per determinare quale elemento di progetto è attualmente selezionato. Dopo aver creato l'ID dell'elemento di progetto, è possibile <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> usare per aggiungere la proprietà .
+ Il primo passaggio per rendere persistente una proprietà in un file di progetto consiste nell'ottenere la gerarchia del progetto come <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaccia. È possibile ottenere questa interfaccia usando Automazione o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Dopo aver ottenuto l'interfaccia, è possibile usarla per determinare quale elemento di progetto è attualmente selezionato. Dopo aver creato l'ID dell'elemento di progetto, è possibile usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> per aggiungere la proprietà .
 
  Nelle procedure seguenti la proprietà *VsPkg.cs* viene mantenuta `Author` con il valore nel file di `Tom` progetto.
 
@@ -59,7 +59,7 @@ ms.locfileid: "121305282"
     }
     ```
 
-## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Per ottenere la gerarchia del progetto usando IVsMonitorSelection
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Per ottenere la gerarchia del progetto tramite IVsMonitorSelection
 
 1. Aggiungere il codice seguente al pacchetto VSPackage:
 
@@ -122,10 +122,10 @@ ms.locfileid: "121305282"
 
 2. Selezionare l'elemento di progetto VsPkg.cs in **Esplora soluzioni**.
 
-3. Usare un punto di interruzione o determinare in altro modo che il pacchetto VSPackage è caricato e che SetItemAttribute viene eseguito.
+3. Usare un punto di interruzione o determinare in caso contrario che il pacchetto VSPackage sia caricato e che SetItemAttribute venga eseguito.
 
    > [!NOTE]
-   > È possibile caricare automaticamente un VSPackage nel contesto dell'interfaccia <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> utente. Per altre informazioni, vedere [Caricare pacchetti VSPackage.](../extensibility/loading-vspackages.md)
+   > È possibile caricare automaticamente un VSPackage nel contesto dell'interfaccia <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> utente. Per altre informazioni, vedere [Caricare VSPackage.](../extensibility/loading-vspackages.md)
 
 4. Chiudere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e quindi aprire il file di progetto in Blocco note. Verrà visualizzato il \<Author> tag con il valore Tom, come indicato di seguito:
 

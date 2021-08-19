@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ff181b541cc2f7d46dcfb30bca38fa0f1e297b3ec4bcee61417d0ada6be943
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a3dc6aa48ef15e49928c87baeb913e18048a7e9e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376274"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102720"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Progettare file di tabella dei comandi XML (con estensione vsct)
-Un file di tabella dei comandi XML (*vsct*) descrive il layout e l'aspetto degli elementi di comando per un VSPackage. Gli elementi di comando includono pulsanti, caselle combinate, menu, barre degli strumenti e gruppi di elementi di comando. Questo articolo descrive i file della tabella dei comandi XML, il modo in cui influiscono sulle voci di comando e sui menu e come crearli.
+Un file di tabella dei comandi XML (*vsct*) descrive il layout e l'aspetto degli elementi di comando per un VSPackage. Gli elementi di comando includono pulsanti, caselle combinate, menu, barre degli strumenti e gruppi di elementi di comando. Questo articolo descrive i file della tabella dei comandi XML, il modo in cui influiscono sulle voci di comando e i menu e su come crearli.
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Comandi, menu, gruppi e file con estensione vsct
  I *file vsct* sono organizzati in base a comandi, menu e gruppi di comandi. I tag XML nel file *con estensione vsct* rappresentano ognuno di questi elementi, insieme ad altri elementi associati, ad esempio pulsanti di comando, posizionamento dei comandi e bitmap.
@@ -35,7 +35,7 @@ Un file di tabella dei comandi XML (*vsct*) descrive il layout e l'aspetto degli
 
 - Il nuovo tag è il punto in cui si fa riferimento ad altri file con estensione h da compilare, ad esempio **\<extern>** i file per la barra degli  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] strumenti.
 
-- Mentre *i file con estensione vsct* supportano l'istruzione **/include,** come fanno i file con estensione *ctc,* include anche un nuovo **\<import>** elemento. La differenza è che **/include** include *tutte* le informazioni, mentre **\<import>** include solo i nomi.
+- Mentre *i file con estensione vsct* supportano l'istruzione **/include,** come fanno i file con estensione *ctc,* include anche un nuovo **\<import>** elemento. La differenza è che **/include** include *tutte* le informazioni, mentre **\<import>** contiene solo i nomi.
 
 - Mentre *i file con estensione ctc* richiedono un file di intestazione in cui si definiscono le direttive per il preprocessore, non è necessario per i file con estensione *vsct.* Inserire invece le direttive nella tabella dei simboli, che si trova negli elementi , nella parte **\<Symbol>** inferiore del file con estensione *vsct.*
 
@@ -55,7 +55,7 @@ Un file di tabella dei comandi XML (*vsct*) descrive il layout e l'aspetto degli
 
 - *L'argomento Icon* è facoltativo.
 
-- Sezione Bitmap: questa sezione è la stessa di un file con estensione *ctc,* con la differenza che è ora possibile specificare un nome di file tramite Href che verrà estratto dal compilatore *vsct.exein* fase di compilazione.
+- Sezione Bitmap: questa sezione è la stessa di un file con estensione *ctc,* con la differenza che è ora possibile specificare un nome di file tramite Href che verrà estratto dal compilatore *vsct.exein fase* di compilazione.
 
 - ResID: l'ID risorsa bitmap precedente può essere usato e funziona comunque come nei *file con estensione ctc.*
 
@@ -63,7 +63,7 @@ Un file di tabella dei comandi XML (*vsct*) descrive il layout e l'aspetto degli
 
 - Keybinding: non è più necessario specificare un emulatore. Se ne specifica uno, il compilatore presuppone che l'editor e l'emulatore siano uguali.
 
-- Keychord: Keychord è stato eliminato. Il nuovo formato è *Key1,Mod1,Key2,Mod2.*  È possibile specificare un carattere, una costante esadecimale o VK.
+- Keychord: il keychord è stato eliminato. Il nuovo formato è *Key1,Mod1,Key2,Mod2.*  È possibile specificare un carattere, una costante esadecimale o VK.
 
 Il nuovo compilatore, *vsct.exe*, compila sia i file *con estensione ctc* che *vsct.* Il *compilatorectc.exe* precedente, tuttavia, non riconoscerà o compilerà *i file con estensione vsct.*
 
@@ -92,7 +92,7 @@ Il nuovo compilatore, *vsct.exe*, compila sia i file *con estensione ctc* che *v
 
 - [Elemento VisibilityConstraints:](../../extensibility/visibilityconstraints-element.md)specifica se un comando viene visualizzato in qualsiasi momento o solo in determinati contesti, ad esempio quando viene visualizzata una determinata finestra di dialogo o finestra. I menu e i comandi che hanno un valore per questo elemento verranno visualizzati solo quando il contesto specificato è attivo. Il comportamento predefinito è visualizzare il comando in qualsiasi momento.
 
-- [Elemento KeyBindings](../../extensibility/keybindings-element.md): specifica eventuali associazioni di tasti per i comandi. In altre informazioni, una o più combinazioni di tasti che devono essere premute per eseguire il comando, ad esempio **CTRL** + **S.**
+- [Elemento KeyBindings](../../extensibility/keybindings-element.md): specifica eventuali associazioni di tasti per i comandi. Ad esempio, una o più combinazioni di tasti che devono essere premute per eseguire il comando, ad esempio **CTRL** + **S.**
 
 - [Elemento UsedCommands](../../extensibility/usedcommands-element.md): informa l'ambiente che, sebbene il comando specificato sia implementato da altro codice, quando il vspackage corrente è attivo, fornisce l'implementazione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] del comando.
 
@@ -116,9 +116,9 @@ Il nuovo compilatore, *vsct.exe*, compila sia i file *con estensione ctc* che *v
 - I comandi e i sottomenu possono anche essere assegnati a più gruppi e i gruppi possono essere assegnati a più menu usando [l'elemento Commands](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>Note sul file con estensione vsct
- Se si apportano modifiche a un file con estensione *vsct* dopo che è stato compilato e lo si è posizionati in una DLL satellite nativa, è necessario eseguiredevenv.exe **/setup /nosetupvstemplates**. Questa operazione forza la rilettura delle risorse VSPackage specificate nel registro sperimentale e il database interno che descrive [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la ricompila.
+ Se si apportano modifiche a un file con estensione *vsct* dopo la compilazione e la posizione in una DLL satellite nativa, è necessario eseguiredevenv.exe **/setup /nosetupvstemplates**. Questa operazione forza la rilettura delle risorse VSPackage specificate nel registro sperimentale e il database interno che descrive [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la ricompila.
 
- Durante lo sviluppo, è possibile creare e registrare più progetti VSPackage nell'hive sperimentale del Registro di sistema che può causare confusione nell'IDE. Per risolvere questo problema, è possibile ripristinare le impostazioni predefinite dell'hive sperimentale per rimuovere tutti i VSPackage registrati e le eventuali modifiche apportate all'IDE. Per reimpostare l'hive sperimentale, usare lo strumento CreateExpInstance.exe fornito con Visual Studio SDK. È possibile trovarlo all'indirizzo:
+ Durante lo sviluppo, è possibile creare e registrare più progetti VSPackage nell'hive sperimentale del Registro di sistema che può causare confusione nell'IDE. Per risolvere questo problema, è possibile ripristinare le impostazioni predefinite dell'hive sperimentale per rimuovere tutti i VSPackage registrati e le eventuali modifiche apportate all'IDE. Per reimpostare l'hive sperimentale, usare lo strumento CreateExpInstance.exe fornito con Visual Studio SDK. È possibile trovarlo in:
 
  *%PROGRAMFILES(x86)%\Visual Studio \\ \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 

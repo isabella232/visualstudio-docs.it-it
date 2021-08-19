@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 2a2744e82fc1012e40257cb23371584eb7792aea9b24562ff1de9e66acbee1a9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b2795a4bcfe74bbebdf37c0f59eded6ae2d08cfe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394784"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053898"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;Elemento customization &gt; (Office sviluppo in Visual Studio)
   L'elemento `customization` dello spazio dei nomi `vstov4` descrive una specifica soluzione Office. Gli elementi figlio sono diversi per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
@@ -67,13 +67,13 @@ ms.locfileid: "121394784"
  L'elemento `customization` ha l'elemento figlio seguente.
 
 #### <a name="document"></a>documento
- L'elemento nello spazio dei nomi è definito&#60;documento&#62; di &#40;Office `document` `vstov4` sviluppo in [Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).
+ L'elemento nello spazio dei nomi è definito&#60;documento&#62; di sviluppo &#40;Office `document` `vstov4` in [Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).
 
 ### <a name="vsto-add-ins"></a>Componenti aggiuntivi VSTO
  L'elemento `customization` ha l'elemento figlio seguente.
 
 #### <a name="appaddin"></a>appAddin
- L'elemento nello spazio dei nomi `appAddin` è definito in&#60;`vstov4` [appAddin&#62;'elemento &#40;Office sviluppo in Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).
+ L'elemento nello spazio dei nomi `appAddin` è definito in&#60;`vstov4` [appAddin ](../vsto/appaddin-element-office-development-in-visual-studio.md)&#62; elemento &#40;Office sviluppo in Visual Studio&#41;.
 
 ## <a name="example-of-a-document-level-customization"></a>Esempio di personalizzazione a livello di documento
 

@@ -1,6 +1,6 @@
 ---
 title: Errori di Progettazione classi
-description: Per informazioni su come risolvere gli errori di progettazione della classe, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo.
+description: Informazioni su come risolvere gli errori di progettazione delle classi trascinando di nuovo il codice sorgente modificato o rilocato nel diagramma classi per visualizzarlo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -28,14 +28,15 @@ ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf6f7f9fc01e1c1a047edaf1102fe6a23b35239
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c0968376926be9a4e7311121a3f0cc636eaa855
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102051"
 ---
 # <a name="class-designer-errors"></a>Errori di Progettazione classi
 
@@ -50,4 +51,4 @@ Nelle risorse seguenti è possibile trovare assistenza per altri errori e avvisi
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Progettazione e visualizzazione di classi e tipi](designing-and-viewing-classes-and-types.md)
+- [Progettare e visualizzare classi e tipi](designing-and-viewing-classes-and-types.md)

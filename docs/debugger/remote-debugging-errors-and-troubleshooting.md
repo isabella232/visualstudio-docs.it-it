@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c53bcf0db2954c4edbf9ff5c8b04a62f8cbed0b883f0c0af57ddade5dfeb2916
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3a111fef09a702cc122b391d2d1f864d0bf5117d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121310933"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153810"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errori e risoluzione dei problemi relativi al debug remoto
 
@@ -56,13 +56,13 @@ Quando si esegue il debugger remoto come servizio, è consigliabile eseguire il 
 
 - Per semplificare l'installazione e la configurazione del debugger remoto.
 
-Anche se è possibile eseguire il debug senza eseguire il debugger remoto come amministratore, esistono diversi requisiti per il corretto funzionamento e spesso richiedono passaggi di configurazione del servizio più avanzati.
+Sebbene sia possibile eseguire il debug senza eseguire il debugger remoto come amministratore, esistono diversi requisiti per il corretto funzionamento e spesso richiedono passaggi di configurazione del servizio più avanzati.
 
 - L'account in uso nel computer remoto deve avere il **privilegio di accesso come** servizio. Vedere la procedura descritta in "Per aggiungere l'accesso come servizio" nell'articolo [impossibile connettersi all'errore.](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 
 - L'account deve disporre dei diritti per eseguire il debug del processo di destinazione. Per ottenere questi diritti, è necessario eseguire il debugger remoto con lo stesso account del processo di cui eseguire il debug. L'alternativa più semplice consiste nell'eseguire il servizio come amministratore. 
 
-- L'account deve essere in grado di connettersi nuovamente al computer Visual Studio rete. In un dominio è più facile connettersi se il debugger remoto è in esecuzione con gli account di sistema locale o di servizio di rete predefiniti o un account di dominio. Gli account predefiniti hanno privilegi di sicurezza elevati che possono presentare un rischio per la sicurezza.
+- L'account deve essere in grado di connettersi nuovamente al computer Visual Studio rete. In un dominio è più semplice connettersi se il debugger remoto è in esecuzione con gli account di sistema locale o di servizio di rete predefiniti o un account di dominio. Gli account predefiniti hanno privilegi di sicurezza elevati che possono presentare un rischio per la sicurezza.
 
 ### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Quando si esegue il debugger remoto come applicazione (modalità normale)
 
@@ -70,7 +70,7 @@ Se si sta tentando di connettersi a un processo non con privilegi elevati, ad es
 
 Si vuole eseguire il debugger remoto come amministratore in diversi scenari:
 
-- Si vuole connettersi a processi in esecuzione come un altro utente (ad esempio durante il debug di IIS) o
+- Si vuole connettersi ai processi in esecuzione come un altro utente (ad esempio durante il debug di IIS) o
 
 - Si sta tentando di avviare un altro processo e il processo da avviare è un amministratore.
 

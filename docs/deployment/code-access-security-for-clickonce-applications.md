@@ -1,6 +1,6 @@
 ---
-title: Sicurezza dall'accesso di codice per ClickOnce applicazioni | Microsoft Docs
-description: Informazioni sulla sicurezza dall'accesso di codice per ClickOnce applicazioni e su come configurare le autorizzazioni di sicurezza dall'accesso di codice.
+title: Sicurezza dall'accesso di codice ClickOnce applicazioni | Microsoft Docs
+description: Informazioni sulla sicurezza dall'accesso di codice per ClickOnce e su come configurare le autorizzazioni di sicurezza dall'accesso di codice.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 21d55ea85fe1075ef9c5bd8a7af238beaafc76e4ce6a142f9ecb16f639dd3cb1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1d60cc8e982e094a3deff406763c234c755a1c32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435686"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153745"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sicurezza dall'accesso di codice per applicazioni ClickOnce
 Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vincoli di sicurezza per l'accesso al codice. Per poter scrivere correttamente le applicazioni ClickOnce è quindi importante comprendere le implicazioni di questo tipo di sicurezza.
@@ -53,13 +53,13 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
 ## <a name="configure-security-permissions"></a>Configurare le autorizzazioni di sicurezza
  È sempre necessario configurare l'applicazione ClickOnce per richiedere l'area appropriata per limitare le autorizzazioni per la sicurezza dell'accesso di codice. È possibile configurare le autorizzazioni di sicurezza nella pagina **Sicurezza** di **Creazione progetti**.
 
- La pagina **Sicurezza** in **Creazione progetti** contiene una casella di controllo **Abilita impostazioni di sicurezza ClickOnce** . Quando questa casella di controllo è selezionata, le richieste di autorizzazioni di sicurezza vengono aggiunte al manifesto della distribuzione per l'applicazione. Al momento dell'installazione all'utente verrà richiesto di concedere le autorizzazioni se le autorizzazioni richieste superano quelle predefinite per l'area da cui viene distribuita l'applicazione. Per altre informazioni, vedere [Procedura: Abilitare le ClickOnce di sicurezza.](../deployment/how-to-enable-clickonce-security-settings.md)
+ La pagina **Sicurezza** in **Creazione progetti** contiene una casella di controllo **Abilita impostazioni di sicurezza ClickOnce** . Quando questa casella di controllo è selezionata, le richieste di autorizzazioni di sicurezza vengono aggiunte al manifesto della distribuzione per l'applicazione. Al momento dell'installazione all'utente verrà richiesto di concedere le autorizzazioni se le autorizzazioni richieste superano quelle predefinite per l'area da cui viene distribuita l'applicazione. Per altre informazioni, vedere [Procedura: Abilitare le impostazioni ClickOnce sicurezza.](../deployment/how-to-enable-clickonce-security-settings.md)
 
  Alle applicazioni distribuite da posizioni diverse vengono concessi livelli diversi di autorizzazioni senza richiesta di conferma. Ad esempio, se un'applicazione viene distribuita da Internet, riceve un set di autorizzazioni molto limitato. Se viene installata da una Intranet locale riceve un maggior numero di autorizzazioni, mentre se viene installata da CD-ROM riceve autorizzazioni di attendibilità totale.
 
  Come punto di partenza per la configurazione delle autorizzazioni, è possibile selezionare un'area di sicurezza dall'elenco **Area** nella pagina **Sicurezza** . Se l'applicazione potrebbe essere potenzialmente distribuita da più aree, selezionare l'area con il minor numero di autorizzazioni. Per altre informazioni, vedere [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).
 
- Le proprietà che è possibile impostare variano in base al set di autorizzazioni. Non tutti i set di autorizzazioni dispongono di proprietà configurabili. Per altre informazioni sull'elenco completo di autorizzazioni che l'applicazione può richiedere, vedere <xref:System.Security.Permissions>. Per altre informazioni su come impostare le autorizzazioni per un'area personalizzata, vedere Procedura: Impostare autorizzazioni [personalizzate per un'ClickOnce app.](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+ Le proprietà che è possibile impostare variano in base al set di autorizzazioni. Non tutti i set di autorizzazioni dispongono di proprietà configurabili. Per altre informazioni sull'elenco completo di autorizzazioni che l'applicazione può richiedere, vedere <xref:System.Security.Permissions>. Per altre informazioni su come impostare le autorizzazioni per un'area personalizzata, vedere Procedura: Impostare autorizzazioni [personalizzate per un'ClickOnce personalizzata.](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Eseguire il debug di un'applicazione con autorizzazioni limitate
  È probabile che uno sviluppatore usi le autorizzazioni di attendibilità totale nel computer di sviluppo. Quindi, quando esegue il debug dell'applicazione, non visualizzerà le stesse eccezioni di sicurezza visualizzate dagli utenti quando eseguono la stessa operazione con autorizzazioni limitate.

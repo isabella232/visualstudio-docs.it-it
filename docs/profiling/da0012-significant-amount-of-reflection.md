@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a242692ca65a04b2c4841ebe09b5392a328535c0f04d0875ac9c639ad688919d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aecafde31cf799122b9aae60003c1de22b026c8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121355490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084311"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Utilizzo elevato della reflection
 

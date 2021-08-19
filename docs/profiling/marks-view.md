@@ -16,19 +16,19 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cf90357819457f4c1466ce111cb923b58b6bc1f6cbdcd49b73632ea90a2ef434
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9cf6b69960980507bebd036ac49332dfa42aed9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332703"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076438"
 ---
 # <a name="marks-view"></a>Visualizzazione Contrassegni
 Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campionamento inseriti nell'applicazione.
 
  I contrassegni predefiniti preinseriti nel report indicano l'inizio e la fine del programma.
 
- In questa visualizzazione vengono presentati anche i dati dei contatori di Windows ottenuti da contrassegni generati automaticamente. Per altre informazioni, vedere [Procedura: Raccogliere dati Windows contatore.](../profiling/how-to-collect-windows-counter-data.md)
+ In questa visualizzazione vengono presentati anche i dati dei contatori di Windows ottenuti da contrassegni generati automaticamente. Per altre informazioni, vedere [Procedura: Raccogliere i dati Windows contatore.](../profiling/how-to-collect-windows-counter-data.md)
 
  Per creare un filtro tra due contrassegni, selezionare i contrassegni, fare clic con il pulsante destro del mouse sui contrassegni e quindi scegliere **Aggiungi filtro in contrassegni** o **Aggiungi filtro in timestamp**.
 
@@ -43,6 +43,6 @@ Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campiona
  Dati del contatore delle prestazioni di Windows Quando vengono raccolti dati del contatore delle prestazioni di Windows, i valori vengono visualizzati in una colonna che ha il nome del contatore.
 
 ## <a name="see-also"></a>Vedi anche
-- [Panoramica del report sulle prestazioni](../profiling/performance-report-overview.md)
+- [Panoramica dei report sulle prestazioni](../profiling/performance-report-overview.md)
 - [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)
 - [&#91;nib&#93; controllo raccolta dati](/previous-versions/bb385767(v=vs.110))

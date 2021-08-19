@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 47191298721ad8b5354b370a3e6b5392ce00c011457767fb86cdda7e6c092271
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 97cd6a5d85cd35c4365d9a71c97b8b2d20e05153
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078219"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Errore irreversibile del processo di Visual Studio
 
@@ -26,7 +26,7 @@ Visual Studio usa diversi processi out-of-process per svolgere le attività nece
 
 Se il processo *ServiceHub.RoslynCodeAnalysisService.exe* o *ServiceHub.RoslynCodeAnalysisService32.exe* termina per qualche motivo, viene visualizzata una barra informazioni popup con il messaggio seguente:
 
-**"Sfortunatamente, un processo usato Visual Studio ha rilevato un errore irreversibile. È consigliabile salvare il lavoro e quindi chiudere e riavviare Visual Studio."**
+**"Sfortunatamente, un processo usato da Visual Studio ha rilevato un errore irreversibile. È consigliabile salvare il lavoro e quindi chiudere e riavviare Visual Studio."**
 
 Se viene visualizzato questo messaggio, salvare il lavoro, quindi chiudere e riavviare Visual Studio.
 

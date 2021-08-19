@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4506320611b71a26b280025eda99d9d9bea961b0f1fcf333c3bfe7afd84f1284
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cec77762a356f86d8cab32402c824ec70ae41e8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338020"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057343"
 ---
 # <a name="editor-and-language-service-extensions"></a>Estensioni dell'editor e del servizio di linguaggio
-È possibile estendere la maggior parte delle funzionalità dell Visual Studio editor di codice. L'editor è basato sul Windows Presentation Foundation (WPF) ed è scritto in codice gestito. Anche se questa progettazione differisce dalle progettazioni nelle versioni precedenti di Visual Studio, offre la maggior parte delle stesse funzionalità. Per estendere l'editor, usare Managed Extensibility Framework (MEF).
+È possibile estendere la maggior parte delle funzionalità dell Visual Studio editor di codice. L'editor è basato sul Windows Presentation Foundation (WPF) ed è scritto in codice gestito. Anche se questa progettazione è diversa dalle progettazioni nelle versioni precedenti di Visual Studio, offre la maggior parte delle stesse funzionalità. Per estendere l'editor, usare Managed Extensibility Framework (MEF).
 
  L Visual Studio SDK fornisce adattatori noti come *s shims* per supportare i pacchetti VSPackage scritti per le versioni precedenti. Tuttavia, se si dispone di un VSPackage esistente, è consigliabile aggiornarlo alla nuova tecnologia per ottenere prestazioni e affidabilità migliori.
 
@@ -35,4 +35,4 @@ ms.locfileid: "121338020"
 |[Creare editor e finestre di progettazione personalizzati](../extensibility/creating-custom-editors-and-designers.md)|Collegamenti a documenti che illustrano come creare editor personalizzati.|
 |[Estendibilità del servizio di linguaggio legacy](../extensibility/internals/legacy-language-service-extensibility.md)|Collegamenti a documenti che descrivono come integrare i linguaggi di programmazione in Visual Studio.|
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Introduce la Managed Extensibility Framework (MEF).|
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Introduce la Windows Presentation Foundation (WPF).|
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Introduce l'Windows Presentation Foundation (WPF).|

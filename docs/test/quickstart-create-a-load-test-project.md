@@ -1,6 +1,6 @@
 ---
 title: Creare un progetto di test di carico e Web
-description: Questa Guida introduttiva illustra come creare ed eseguire un progetto di test di carico e prestazioni Web in Visual Studio.
+description: Informazioni su come creare ed eseguire un progetto di test di carico e prestazioni Web in Visual Studio questo avvio rapido.
 ms.custom: SEO-VS-2020
 ms.date: 03/14/2018
 ms.topic: quickstart
@@ -9,12 +9,13 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: d440b4d9fe175cb685b7e7ed3c5eb5911e541fde
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: dfc8f4835c2534c80109b3fc93eb7907bcef729d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054236"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
@@ -30,7 +31,7 @@ I progetti di test di carico e prestazioni Web sono disponibili solo nell'**ediz
 
 Se il componente degli strumenti per test di carico e delle prestazioni Web non è già installato, è necessario installarlo tramite il programma di installazione di Visual Studio.
 
-1. Aprire **programma di installazione di Visual Studio** dal menu **Start** di Windows. È anche possibile accedervi in Visual Studio dalla finestra di dialogo nuovo progetto oppure scegliendo **strumenti**  >  **Ottieni strumenti e funzionalità** dalla barra dei menu.
+1. Aprire **Programma di installazione di Visual Studio** dal menu **Start** di Windows. È anche possibile accedervi in Visual Studio dalla finestra di dialogo nuovo progetto o scegliendo Strumenti  >  **Ottieni** strumenti e funzionalità dalla barra dei menu.
 
 1. In **Programma di installazione di Visual Studio** scegliere la scheda **Singoli componenti** e scorrere verso il basso fino alla sezione **Debug e test**. Selezionare **Strumenti per test di carico e delle prestazioni Web**.
 
@@ -48,7 +49,7 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 1. Aprire Visual Studio.
 
-2. Scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu.
+2. Scegliere **File** > **nuovo** > **Project** dalla barra dei menu.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -64,7 +65,7 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 1. Aprire Visual Studio.
 
-2. Nella finestra Start scegliere **Crea un nuovo progetto**.
+2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
 3. Nella pagina **Crea un nuovo progetto** digitare **test web** nella casella di ricerca e quindi selezionare il modello **Progetto di test di carico e prestazioni Web \[Deprecato]** per C#. Scegliere **Avanti**.
 
@@ -72,11 +73,11 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
 ::: moniker-end
 
-   Visual Studio crea il progetto e Visualizza i file in **Esplora soluzioni**. Il progetto contiene inizialmente un file di test Web denominato *WebTest1. WebTest*.
+   Visual Studio crea il progetto e visualizza i file in **Esplora soluzioni**. Il progetto contiene inizialmente un file di test Web denominato *WebTest1.webtest*.
 
 ## <a name="add-a-load-test-to-the-project"></a>Aggiungere un test di carico al progetto
 
-1. Dal menu di scelta rapida o dal menu di scelta rapida del nodo del progetto in **Esplora soluzioni** scegliere **Aggiungi**  >  **test di carico**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida del nodo del progetto **in** Esplora soluzioni scegliere **Aggiungi**  >  **test di carico**.
 
    Viene avviata la **Creazione guidata test di carico**.
 

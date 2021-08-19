@@ -8,14 +8,15 @@ ms.topic: how-to
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f5aa141d73879e61a06e7a2b19f03bd53243a7
-ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
+ms.openlocfilehash: 1cea6b082a5cdb51f0de2053bbc7912cd32ce500
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113046027"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102363"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Avviare Visual Studio tramite DTE
 
@@ -29,7 +30,7 @@ Per vedere il codice di avvio in azione, creare un progetto seguendo questa proc
 
 1. Creare un nuovo **progetto app console** per il .NET Framework.
 
-2. Installare [ lMicrosoft.VisualStudio.Setup.Configuration. Interoperabilità](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) del pacchetto NuGet e aggiunta di un riferimento all'assembly.
+2. Installare [lMicrosoft.VisualStudio.Setup.Configuration. Interoperabilità](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet pacchetto e aggiungere un riferimento all'assembly.
 
 3. Aggiungere un riferimento a EnvDTE.
 
@@ -181,7 +182,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Individuare Visual Studio](locating-visual-studio.md)
 - [Procedura dettagliata: Accedere all'oggetto DTE da un'estensione dell'editor](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

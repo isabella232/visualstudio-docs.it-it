@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d902db579048e3ea30866aefa5b1cc132e964b7eee8153a5e102eee3b762b68
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c70a59cd6510b761ce1cf44bc3d6d66d5766efe5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305672"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137710"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Procedura: Registrare una libreria con il gestore di oggetti
 Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi** **,** Visualizzatore oggetti , **Visualizzatore chiamate** e Risultati ricerca simboli **,** consentono di visualizzare i simboli nel progetto o nei componenti esterni. I simboli includono spazi dei nomi, classi, interfacce, metodi e altri elementi del linguaggio. Le librerie tiene traccia di questi simboli ed esporli al gestore di oggetti che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] popola gli strumenti con i dati.

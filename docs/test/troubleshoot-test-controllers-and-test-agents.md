@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi dei test controller e degli agenti di test
-description: Informazioni su alcuni problemi comuni che possono verificarsi quando si lavora con i test controller e gli agenti di test Visual Studio.
+description: Informazioni su alcuni problemi comuni che possono verificarsi quando si lavora con test controller e agenti di test in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f152c2452545c4ce3ee2b9da74eb47c434aea2d67f7f45eb26806c27767e02d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d88014eb9b6141ccc06919aa6d869b364588feee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352370"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054161"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
 
@@ -100,7 +100,7 @@ Per correggere questo errore, è necessario associare il controller di test a un
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Per ottenere l'indirizzo IP della scheda di rete
 
-1. Scegliere **Avvia** e quindi **Esegui**.
+1. Scegliere **Avvia** e quindi **Esegui.**
 
      Viene visualizzata la finestra di dialogo **Esegui**.
 

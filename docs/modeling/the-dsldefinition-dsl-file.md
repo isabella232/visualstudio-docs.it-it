@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c969a16ada27211b7997ea190f996dd1dd6c31ce327bad60371114545efb54f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c31d6b6b5cc1c1542c27b15af4e6ee741272c3d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370476"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085351"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
-Questo argomento descrive la struttura del file DslDefinition.dsl nel progetto Dsl di una soluzione, che definisce un linguaggio [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *specifico di dominio.* Il file DslDefinition.dsl descrive le classi e le relazioni di un linguaggio specifico di dominio, insieme al diagramma, alle forme, ai connettori, al formato di serializzazione e alla casella degli strumenti del linguaggio specifico di dominio e ai relativi strumenti di modifica.  In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.
+Questo argomento descrive la struttura del file DslDefinition.dsl nel progetto Dsl di una soluzione, che definisce un linguaggio [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *specifico di dominio.* Il file DslDefinition.dsl descrive le classi e le relazioni di un linguaggio specifico di dominio, insieme al diagramma, alle forme, ai connettori, al formato di serializzazione e alla casella degli strumenti del linguaggio specifico di dominio e dei relativi strumenti di modifica.  In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.
 
 In genere, si usa *Finestra di progettazione Domain-Specific Language* per modificare il file DslDefinition.dsl. Poiché il formato del file DslDefinition.dsl non elaborato è XML, è possibile aprirlo in un editor XML. Può risultare utile comprendere quali informazioni sono contenute nel file e come sono organizzate per eseguire il debug ed estendere le funzionalità.
 
@@ -59,7 +59,7 @@ Questa sezione definisce uno schema di serializzazione e include altre informazi
 
 ### <a name="explorerbehavior"></a>ExplorerBehavior
 
-Questa sezione definisce la modalità di visualizzazione **della finestra Esplora DSL** quando l'utente modifica un modello.
+Questa sezione definisce come viene visualizzata **la finestra DSL Explorer** quando l'utente modifica un modello.
 
 ### <a name="connectionbuilders"></a>ConnectionBuilders
 
@@ -71,7 +71,7 @@ Questa sezione definisce un diagramma e viene usata per specificare proprietà c
 
 ### <a name="designer"></a>Designer
 
-Questa sezione definisce una finestra di progettazione (editor), che riunisce **una** casella degli strumenti, le impostazioni di convalida, un diagramma e uno schema di serializzazione. La sezione Designer definisce anche la classe radice del modello, che di solito corrisponde alla classe radice del diagramma.
+In questa sezione viene definita una finestra di progettazione (editor), che riunisce una casella **degli** strumenti, le impostazioni di convalida, un diagramma e uno schema di serializzazione. La sezione Designer definisce anche la classe radice del modello, che di solito corrisponde alla classe radice del diagramma.
 
 ### <a name="explorer"></a>Explorer
 
@@ -151,7 +151,7 @@ Ogni classe ha un set di proprietà e può avere una classe base. Nell'esempio D
 </DomainClass>
 ```
 
-`NamedElement` è la base di diverse altre classi, ad esempio , che ha proprietà proprie oltre alla proprietà `Component` `Name` ereditata da `NamedElement` . Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
+`NamedElement` è la base di molte delle altre classi, ad esempio , che ha proprietà proprie oltre alla proprietà `Component` `Name` ereditata da `NamedElement` . Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -209,7 +209,7 @@ Ogni proprietà di dominio può anche avere i seguenti attributi:
 
 - **IsBrowsable**. Questo attributo determina se la proprietà viene visualizzata nella **finestra Proprietà** quando l'utente fa clic su un oggetto della classe padre.
 
-- **IsUIReadOnly**. Questo attributo determina se l'utente  può modificare la proprietà nella finestra Proprietà o tramite un elemento Decorator in cui viene visualizzata la proprietà.
+- **IsUIReadOnly**. Questo attributo determina se l'utente può modificare la proprietà nella **finestra** Proprietà o tramite un elemento Decorator in cui viene visualizzata la proprietà.
 
 - **Tipo**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.
 
@@ -312,7 +312,7 @@ Quando si scrive codice C# per questo modello, è possibile attraversare un coll
 
 ## <a name="element-merge-directives"></a>Direttive di merge degli elementi
 
-Quando l'utente del linguaggio trascina un elemento dalla **casella** degli strumenti nel diagramma, viene costruita un'istanza della classe dello strumento. Vengono anche creati collegamenti tra l'istanza e gli elementi del modello esistenti. Alcuni elementi, ad esempio componenti o commenti, vengono creati quando  l'utente del linguaggio li trascina dalla casella degli strumenti in una parte vuota del diagramma. Altri elementi vengono creati quando l'utente del linguaggio li trascina su altri elementi host. Un elemento OutPort o InPort viene creato ad esempio quando l'utente del linguaggio lo trascina su un componente.
+Quando l'utente del linguaggio trascina un elemento dalla **Casella** degli strumenti nel diagramma, viene costruita un'istanza della classe dello strumento. Vengono anche creati collegamenti tra l'istanza e gli elementi del modello esistenti. Alcuni elementi, ad esempio componenti o commenti, vengono creati quando  l'utente del linguaggio li trascina dalla Casella degli strumenti in una parte vuota del diagramma. Altri elementi vengono creati quando l'utente del linguaggio li trascina su altri elementi host. Un elemento OutPort o InPort viene creato ad esempio quando l'utente del linguaggio lo trascina su un componente.
 
 Una possibile classe host, come Component, accetta un nuovo elemento solo se la classe host include una direttiva di unione degli elementi per la classe del nuovo elemento. Il nodo DomainClass con Name="Component" contiene ad esempio:
 
@@ -381,7 +381,7 @@ Ogni nodo `XmlClassData` include i nodi e gli attributi figlio seguenti:
 
 - **MonikerElementName nei** file di modello serializzati dell'utente. Questo attributo introduce un moniker che fa riferimento a questa classe.
 
-- **MonikerAttributeName**, che identifica il nome dell'attributo XML all'interno di un moniker. In questo frammento di file serializzato di un utente, l'autore del linguaggio specifico di dominio ha definito **MonikerElementName** come "inPortMoniker" e **MonikerAttributeName** come "path":
+- **MonikerAttributeName**, che identifica il nome dell'attributo XML all'interno di un moniker. In questo frammento del file serializzato di un utente, l'autore del linguaggio specifico di dominio ha definito **MonikerElementName** come "inPortMoniker" e **MonikerAttributeName** come "path":
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -397,9 +397,9 @@ Un **attributo DomainPropertyMoniker** identifica la proprietà a cui fanno rife
 
 **L'attributo XmlName** assegna il nome dell'attributo corrispondente come dovrebbe essere visualizzato nel codice XML. Per convenzione, questa stringa corrisponde al nome della proprietà con l'iniziale minuscola.
 
-Per impostazione predefinita, **l'attributo Representation** è impostato su Attribute. Se **La rappresentazione** è impostata su Element, nel codice XML viene creato un nodo figlio. Se **La rappresentazione** è impostata su Ignora, la proprietà non viene serializzata.
+Per impostazione predefinita, **l'attributo Representation** è impostato su Attribute. Se **La** rappresentazione è impostata su Elemento, viene creato un nodo figlio nel codice XML. Se **La rappresentazione** è impostata su Ignora, la proprietà non viene serializzata.
 
-Gli **attributi IsMonikerKey** e **IsMonikerQualifier** assegnano a una proprietà un ruolo nell'identificazione delle istanze della classe padre. È possibile impostare **IsMonikerKey** su true per una proprietà definita in o ereditata da una classe. Questo attributo identifica una singola istanza della classe padre. La proprietà impostata su `IsMonikerKey` è in genere un nome o un altro identificatore chiave. La proprietà di stringa `Name` è ad esempio la chiave moniker per NamedElement e le relative classi derivate. Quando l'utente salva un modello in un file, questo attributo deve contenere valori univoci per ogni istanza, tra i propri elementi di pari livello nell'albero delle relazioni di incorporamento.
+Gli **attributi IsMonikerKey** **e IsMonikerQualifier** assegnano a una proprietà un ruolo nell'identificazione delle istanze della classe padre. È possibile impostare **IsMonikerKey** su true per una proprietà definita in o ereditata da una classe. Questo attributo identifica una singola istanza della classe padre. La proprietà impostata su `IsMonikerKey` è in genere un nome o un altro identificatore chiave. La proprietà di stringa `Name` è ad esempio la chiave moniker per NamedElement e le relative classi derivate. Quando l'utente salva un modello in un file, questo attributo deve contenere valori univoci per ogni istanza, tra i propri elementi di pari livello nell'albero delle relazioni di incorporamento.
 
 Nel file modello serializzato, il moniker completo di un elemento è un percorso dalla radice del modello fino all'albero delle relazioni di incorporamento, con un riferimento alla chiave moniker in ogni punto. Gli elementi InPort, ad esempio, sono incorporati in elementi Component, che a loro volta sono incorporati nella radice del modello. Un moniker valido è il seguente:
 
@@ -407,13 +407,13 @@ Nel file modello serializzato, il moniker completo di un elemento è un percorso
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
-È possibile impostare **l'attributo IsMonikerQualifier** per una proprietà stringa e fornire un modo aggiuntivo per costruire il nome completo di un elemento. Ad esempio, nel file DslDefinition.dsl **Namespace** è un qualificatore moniker.
+È possibile impostare **l'attributo IsMonikerQualifier** per una proprietà stringa e fornire un modo aggiuntivo per costruire il nome completo di un elemento. Nel file DslDefinition.dsl, ad esempio, **Namespace** è un qualificatore di moniker.
 
 ### <a name="xmlrelationshipdata"></a>XmlRelationshipData
 
 In un file modello serializzato, i collegamenti, sia delle relazioni di incorporamento che di quelle di riferimento, sono rappresentati dai nodi figlio dell'origine della relazione. Per le relazioni di incorporamento, il nodo figlio contiene un sottoalbero. Per le relazioni di riferimento, il nodo figlio contiene un moniker che fa riferimento a un'altra parte dell'albero.
 
-**L'attributo XmlRelationshipData** in **un attributo XmlClassData** definisce esattamente come vengono annidati i nodi figlio all'interno dell'elemento di origine. Ogni relazione che è un'origine nella classe di dominio ha un **attributo XmlRelationshipData.**
+**L'attributo XmlRelationshipData** in un **attributo XmlClassData** definisce esattamente come vengono annidati i nodi figlio all'interno dell'elemento di origine. Ogni relazione che è un'origine nella classe di dominio ha un **attributo XmlRelationshipData.**
 
 **L'attributo DomainRelationshipMoniker** identifica una delle relazioni di origine nella classe.
 
@@ -441,7 +441,7 @@ Quindi il file serializzato contiene:
    </ports> ...
 ```
 
-Se **l'attributo UseFullForm** è impostato su true, viene introdotto un ulteriore livello di annidamento. Questo livello rappresenta la relazione stessa. L'attributo deve essere impostato su True se la relazione include proprietà.
+Se **l'attributo UseFullForm** è impostato su true, viene introdotto un livello aggiuntivo di annidamento. Questo livello rappresenta la relazione stessa. L'attributo deve essere impostato su True se la relazione include proprietà.
 
 ```xml
 <XmlClassData ElementName="outPort">
@@ -483,7 +483,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
 
 - **Dsl** è il nodo RootClass e la classe del diagramma. DomainClass, DomainRelationship e altri elementi sono incorporati in `Dsl`.
 
-- **Classes** è **roleElementName della** relazione tra Domain-Specific Language e DomainClass.
+- **Classes** è il **RoleElementName** della relazione tra Domain-Specific Language e DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>

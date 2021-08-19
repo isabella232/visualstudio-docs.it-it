@@ -6,16 +6,15 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
-ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 1609081f364a2a20f983f8d8acd55181a71de42f
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 8e846388320da492ddccd7b2628112a32f0c4145
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334317"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053436"
 ---
 # <a name="use-docker-compose"></a>Usare Docker Compose
 
@@ -275,7 +274,7 @@ Ora che il file è `docker-compose.yml` disponibile, è possibile avviarlo.
     Il nome del servizio viene visualizzato all'inizio della riga (spesso colorato) per distinguere i messaggi. Per visualizzare i log per un servizio specifico, è possibile aggiungere il nome del servizio alla fine del comando logs, ad esempio `docker-compose logs -f app` .
 
     > [!TIP]
-    > **Attesa del database prima di avviare l'app** All'avvio, l'app è in realtà in attesa che MySQL sia operativo e pronto prima di provare a connettersi a it.Docker non ha alcun supporto predefinito per attendere che un altro contenitore sia completamente operativo, in esecuzione e pronto prima di avviare un altro contenitore. Per i progetti basati su Node, è possibile usare la [dipendenza della porta di](https://github.com/dwmkerr/wait-port) attesa. Sono disponibili progetti simili per altri linguaggi/framework.
+    > **Attesa del database prima di avviare l'app** Quando l'app viene avviato, in realtà si trova e attende che MySQL sia operativo e pronto prima di provare a connettersi a it.Docker non ha alcun supporto predefinito per attendere che un altro contenitore sia completamente operativo e pronto prima di avviare un altro contenitore. Per i progetti basati su Node, è possibile usare la [dipendenza della porta di](https://github.com/dwmkerr/wait-port) attesa. Sono disponibili progetti simili per altri linguaggi/framework.
 
 1. A questo punto, dovrebbe essere possibile aprire l'app e vederla in esecuzione. E hey! È possibile eseguire un singolo comando.
 
@@ -291,7 +290,7 @@ Se si scorre verso il basso la rete, verranno visualizzati i due contenitori def
 
 ## <a name="tear-it-all-down"></a>Disattesa tutto
 
-Quando si è pronti per eliminare tutto, è sufficiente eseguire oppure fare clic con il pulsante destro del mouse sull'applicazione nell'elenco dei contenitori nell'estensione Docker VS Code e selezionare Componi verso il `docker-compose down` **basso.** I contenitori verranno arresti e la rete verrà rimossa.
+Quando si è pronti per eliminare tutto, è sufficiente eseguire oppure fare clic con il pulsante destro del mouse sull'applicazione nell'elenco dei contenitori nell'estensione Docker VS Code e scegliere `docker-compose down` Componi.  I contenitori verranno arresti e la rete verrà rimossa.
 
 > [!WARNING]
 > **Rimozione di volumi** Per impostazione predefinita, i volumi denominati nel file compose NON vengono rimossi quando si esegue `docker-compose down` . Per rimuovere i volumi, è necessario aggiungere il `--volumes` flag .

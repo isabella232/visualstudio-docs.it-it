@@ -1,6 +1,6 @@
 ---
 title: Come testare una DLL C++ per le app UWP
-description: Informazioni su come creare unit test per una DLL C++ per app universali Windows Platform con Il framework di test Microsoft per C++.
+description: Informazioni su come creare unit test per una DLL C++ per app universal Windows Platform con Microsoft Test Framework per C++.
 ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 7cb42908ded494a2fcc3941a67b0236530e3eb1adf56a74936789608dd29eb4a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e39e2c6db8f7bc80bcc4a1f8ce267cab9b6891a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121243783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054080"
 ---
 # <a name="how-to-test-a-c-dll"></a>Come testare una DLL C++
 
@@ -133,7 +133,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     2. Nella finestra di dialogo **Pagina delle proprietà di RooterLib** espandere **Proprietà di configurazione**, espandere **C++** e scegliere **Preprocessore**.
 
-    3. Scegliere **\<Edit...>** **dall'elenco Definizioni preprocessore** e quindi aggiungere `ROOTERLIB_EXPORTS` nella finestra di dialogo **Definizioni preprocessore** .
+    3. Scegliere **\<Edit...>** **dall'elenco Definizioni preprocessore** e quindi aggiungere nella finestra di dialogo `ROOTERLIB_EXPORTS` **Definizioni preprocessore** .
 
 4. Aggiungere implementazioni minime delle funzioni dichiarate. Aprire *RooterLib.cpp* e aggiungere il codice seguente:
 
@@ -193,13 +193,13 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     Il nuovo test viene visualizzato in **Esplora test** nel nodo Test **non eseguiti.**
 
-5. In **Esplora test** scegliere Esegui **tutto.**
+5. In **Esplora test** scegliere Esegui **tutto**.
 
     ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png)
 
    È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentare i test in modo iterativo e renderli superati
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentare in modo iterativo i test e renderli superati
 
 1. Aggiungere un nuovo test:
 
@@ -222,7 +222,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
     >
     > Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.
 
-2. In **Esplora test** scegliere Esegui **tutto.**
+2. In **Esplora test** scegliere Esegui **tutto**.
 
 3. Il test ha esito negativo.
 
@@ -252,7 +252,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     ```
 
-5. Compilare la soluzione e quindi in **Esplora test** scegliere **Esegui tutto.**
+5. Compilare la soluzione e quindi in **Esplora test** scegliere **Esegui tutto**.
 
      Entrambi i test vengono superati.
 
@@ -292,9 +292,9 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
    };
    ```
 
-2. In **Esplora test** scegliere Esegui **tutto.**
+2. In **Esplora test** scegliere Esegui **tutto**.
 
-    Il test ha esito negativo. Scegliere il nome del test in **Esplora test.** L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di **Esplora test**.
+    Il test ha esito negativo. Scegliere il nome del test in **Esplora test**. L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di **Esplora test**.
 
     ![NegativeRangeTests non riuscito](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 

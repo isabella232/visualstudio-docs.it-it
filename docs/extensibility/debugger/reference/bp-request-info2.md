@@ -1,5 +1,5 @@
 ---
-description: Contiene le informazioni necessarie per implementare un punto di interruzione, tra cui GUID del fornitore, vincolo e punto di analisi.
+description: Contiene le informazioni necessarie per implementare un punto di interruzione, tra cui GUID del fornitore, vincolo e punto di traccia.
 title: BP_REQUEST_INFO2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54ab1ec2ad37517a7a7fbfd7059022e1c5a26f82
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a5934c73460cb6256865d431e19765a6518556e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078201"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120361"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
-Contiene le informazioni necessarie per implementare un punto di interruzione, tra cui GUID del fornitore, vincolo e punto di analisi.
+Contiene le informazioni necessarie per implementare un punto di interruzione, tra cui GUID del fornitore, vincolo e punto di traccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,7 +67,7 @@ public struct BP_REQUEST_INFO2 {
 
 ## <a name="members"></a>Members
 `dwFields`\
-Combinazione di flag dell'enumerazione [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) che specifica i campi che vengono compilati.
+Combinazione di flag [dell'BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) che specifica quali campi vengono compilati.
 
 `guidLanguage`\
 GUID del linguaggio.
@@ -87,30 +88,30 @@ Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.
 Nome del thread in cui si verifica il punto di interruzione.
 
 `bpCondition`\
-Struttura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) che descrive le condizioni in base alle quali verrà attivato il punto di interruzione.
+Struttura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) che descrive le condizioni in cui verrà generato il punto di interruzione.
 
 `bpPassCount`\
-Struttura di [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) contenente le informazioni sul conteggio dei passaggi del punto di interruzione.
+Struttura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) che contiene le informazioni sul conteggio dei passaggi del punto di interruzione.
 
 `dwFlags`\
-Combinazione di flag dell'enumerazione [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) che specifica i flag per il punto di interruzione richiesto.
+Combinazione di flag [dell'enumerazione BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) che specifica i flag per il punto di interruzione richiesto.
 
 `guidVendor`\
-GUID del fornitore. Può essere un valore null.
+GUID del fornitore. Può essere un valore Null.
 
 `bstrConstraint`\
-Nome del vincolo di punto di interruzione. Può essere un valore null.
+Nome del vincolo del punto di interruzione. Può essere un valore Null.
 
 `bstrTracepoint`\
-Nome del punto di traccia. Può essere un valore null.
+Nome del punto di traccia. Può essere un valore Null.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene restituita dal metodo [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) .
+Questa struttura viene restituita dal [metodo GetRequestInfo2.](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,6 +1,6 @@
 ---
 title: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
-description: Informazioni su come aggiungere o rimuovere spazi dei nomi importati e aggiungere o rimuovere importazioni utente.
+description: Informazioni su come aggiungere o rimuovere spazi dei nomi importati e come aggiungere o rimuovere importazioni utente.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 05856d2443d66297da7313d57cfba9d1582cb1e4a5f2c4dc9d046c1675f2fb8f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02af241606b8b8cc4646048b507f3672bf20e4ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121357882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101791"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
 

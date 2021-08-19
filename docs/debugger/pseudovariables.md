@@ -1,6 +1,6 @@
 ---
-title: Pseudo variabili riportate | Microsoft Docs
-description: Esaminare pseudo variabili riportate nel debugger di Visual Studio. Pseudo variabili riportate sono termini usati per visualizzare determinati dati in una finestra delle variabili o nella finestra di dialogo controllo immediato.
+title: Pseudovariables | Microsoft Docs
+description: Esaminare le pseudovariabili nel debugger Visual Studio sistema. Le pseudovariabili sono termini usati per visualizzare determinati dati in una finestra variabile o nella finestra di dialogo Controllo immediato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,16 +17,17 @@ ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 88880110ca00141382d7038ec001f3cc4159f2b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc4e1d16ee7a79ed3de15ed987939a89373e5c2e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908333"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120829"
 ---
-# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo variabili riportate nel debugger di Visual Studio
+# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariabili nel debugger Visual Studio
 Le pseudo variabili sono termini usati per visualizzare determinate informazioni in una finestra delle variabili o nella finestra di dialogo **Controllo immediato**. È possibile immettere una pseudo variabile in modo analogo all'immissione di una variabile normale. Tuttavia, le pseudo variabili non sono variabili e non corrispondono a nomi di variabili presenti nel programma.
 
 ## <a name="example"></a>Esempio
@@ -34,7 +35,7 @@ Le pseudo variabili sono termini usati per visualizzare determinate informazioni
 
 `$handles`
 
- Nel codice nativo, è possibile usare il pseudo variabili riportate illustrato nella tabella seguente:
+ Nel codice nativo è possibile usare le pseudovariabili illustrate nella tabella seguente:
 
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
@@ -51,11 +52,11 @@ Le pseudo variabili sono termini usati per visualizzare determinate informazioni
 |`$exceptionstack`|Visualizza la traccia dello stack dell'eccezione corrente di Windows Runtime. `$ exceptionstack` funziona solo nelle app UWP. `$ exceptionstack` non è supportato per le eccezioni C++ e SEH|
 |`$returnvalue`|Visualizza il valore restituito di un metodo.|
 
- In C# è possibile usare il pseudo variabili riportate illustrato nella tabella seguente:
+ In C# è possibile usare le pseudovariabili illustrate nella tabella seguente:
 
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
-|`$exception`|Visualizza informazioni sull'ultima eccezione. Se non si è verificata alcuna eccezione, la valutazione di `$exception` produce un messaggio di errore.<br /><br /> Quando la finestra informazioni sulle eccezioni è disabilitata, `$exception` viene aggiunto automaticamente alla finestra **variabili locali** quando si verifica un'eccezione.|
+|`$exception`|Visualizza informazioni sull'ultima eccezione. Se non si è verificata alcuna eccezione, la valutazione di `$exception` produce un messaggio di errore.<br /><br /> Quando Exception Assistant è disabilitato, `$exception` viene aggiunto automaticamente alla **finestra Variabili** locali quando si verifica un'eccezione.|
 |`$user`|Consente di visualizzare una struttura con le informazioni sull'account in cui viene eseguita l'applicazione. Per motivi di sicurezza non vengono visualizzate informazioni sulla password.|
 |`$returnvalue`|Visualizza il valore restituito di un metodo .NET.|
 
@@ -64,9 +65,9 @@ Le pseudo variabili sono termini usati per visualizzare determinate informazioni
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
 |`$exception`|Visualizza informazioni sull'ultima eccezione. Se non si è verificata alcuna eccezione, la valutazione di `$exception` produce un messaggio di errore.|
-|`$delete` o `$$delete`|Elimina una variabile implicita creata nella finestra **Immediata**. La sintassi è `$delete,` *Variable* o `$delete,` *Variable*`.`|
-|`$objectids` o `$listobjectids`|Visualizza tutti gli ID oggetto attivi come figli dell'espressione specificata. La sintassi è `$objectid,` *Expression* o `$listobjectids,` *Expression*`.`|
-|`$`*N*`#`|Visualizza l'oggetto con ID dell'oggetto uguale a *N*.|
+|`$delete` o `$$delete`|Elimina una variabile implicita creata nella finestra **Immediata**. La sintassi è `$delete,` *variabile* o `$delete,` *variabile*`.`|
+|`$objectids` o `$listobjectids`|Visualizza tutti gli ID oggetto attivi come figli dell'espressione specificata. La sintassi è `$objectid,` *expression* o `$listobjectids,` *expression*`.`|
+|`$` *N* `#`|Visualizza l'oggetto con ID dell'oggetto uguale a *N*.|
 |`$dynamic`|Visualizza il nodo **Visualizzazione dinamica** speciale per un oggetto che implementa `IDynamicMetaObjectProvider`. Interfaccia. La sintassi è `$dynamic,` *object*. Questa funzionalità si applica solo al codice che usa .NET Framework versione 4 o successiva.|
 
 ## <a name="see-also"></a>Vedi anche

@@ -1,6 +1,6 @@
 ---
-description: Attiva o Disabilita lo stato di abilitazione del punto di interruzione in sospeso.
-title: 'IDebugPendingBreakpoint2:: Enable | Microsoft Docs'
+description: Attiva o disattiva lo stato abilitato del punto di interruzione in sospeso.
+title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd3539d7be7930ecc04958c9a005ed873f8282d4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: adfbef4d8dfdf9885a62af8943e0f1caa4736a57
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153238"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Attiva o Disabilita lo stato di abilitazione del punto di interruzione in sospeso.
+Attiva o disattiva lo stato abilitato del punto di interruzione in sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,18 +44,18 @@ int Enable(
 
 ## <a name="parameters"></a>Parametri
 `fEnable`\
-in Impostare su un valore diverso da zero ( `TRUE` ) per abilitare un punto di interruzione in sospeso o su zero ( `FALSE` ) per disabilitare.
+[in] Impostare su un valore diverso da zero ( ) per abilitare un punto di interruzione in sospeso `TRUE` o su zero ( ) per `FALSE` disabilitare.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
 ## <a name="remarks"></a>Commenti
-Quando un punto di interruzione in sospeso viene abilitato o disabilitato, tutti i punti di interruzione associati vengono impostati sullo stesso stato.
+Quando un punto di interruzione in sospeso è abilitato o disabilitato, tutti i punti di interruzione associati vengono impostati sullo stesso stato.
 
 Questo metodo può essere chiamato il numero di volte necessario, anche se il punto di interruzione è già abilitato o disabilitato.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CPendingBreakpoint` oggetto semplice che espone l'interfaccia [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CPendingBreakpoint` semplice che espone [l'interfaccia IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)

@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 88ebe38a881e148f10149189a2d27ac81bd0ddc2
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2e714f486ebfb83f6cf5b6374e722b7d83cd3de3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827032"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083531"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Procedura: Aggiungere controlli Chart ai fogli di lavoro
-  È possibile aggiungere controlli a un foglio Microsoft Office Excel in fase di progettazione e in fase di <xref:Microsoft.Office.Tools.Excel.Chart> esecuzione nelle personalizzazioni a livello di documento. È anche possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli in fase di esecuzione nei componenti aggiuntivi VSTO.
+  È possibile aggiungere controlli a un foglio Microsoft Office Excel in fase di progettazione e in fase di <xref:Microsoft.Office.Tools.Excel.Chart> esecuzione nelle personalizzazioni a livello di documento. È anche possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli in fase di VSTO componenti aggiuntivi.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -33,7 +34,7 @@ ms.locfileid: "107827032"
 
 - [Aggiungere controlli Chart in fase di esecuzione in un progetto a livello di documento](#runtimedoclevel)
 
-- [Aggiungere controlli Chart in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)
+- [Aggiungere controlli Chart in fase di esecuzione in un VSTO di componente aggiuntivo](#runtimeaddin)
 
   Per altre informazioni sui <xref:Microsoft.Office.Tools.Excel.Chart> controlli, vedere [Controllo Chart](../vsto/chart-control.md).
 
@@ -47,7 +48,7 @@ ms.locfileid: "107827032"
 
 1. Nel gruppo **Grafici** della  scheda Inserisci fare clic su **Colonna,** selezionare una categoria di grafici e quindi fare clic sul tipo di grafico desiderato.
 
-2. Nella finestra **di dialogo** Inserisci grafico fare clic su **OK**.
+2. Nella finestra **di dialogo Inserisci** grafico fare clic su **OK**.
 
 3. Nel gruppo **Dati** della scheda Progettazione **fare** clic su **Seleziona dati**.
 
@@ -58,7 +59,7 @@ ms.locfileid: "107827032"
 6. Nella finestra **di dialogo Seleziona origine** dati fare clic su **OK**.
 
 ## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Aggiungere controlli grafico in fase di esecuzione in un progetto a livello di documento
- È possibile aggiungere il controllo <xref:Microsoft.Office.Tools.Excel.Chart> in modo dinamico in fase di esecuzione I grafici creati dinamicamente non vengono salvati in modo permanente nel documento come controlli host quando il documento viene chiuso. Per altre informazioni, vedere [Aggiungere controlli ai documenti di Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+ È possibile aggiungere il controllo <xref:Microsoft.Office.Tools.Excel.Chart> in modo dinamico in fase di esecuzione I grafici creati dinamicamente non vengono salvati in modo permanente nel documento come controlli host quando il documento viene chiuso. Per altre informazioni, vedere [Aggiungere controlli Office documenti in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Per aggiungere un controllo Chart a un foglio di lavoro a livello di codice
 
@@ -67,10 +68,10 @@ ms.locfileid: "107827032"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet1":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet1":::
 
-## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Aggiungere controlli grafico in fase di esecuzione in un progetto di componente aggiuntivo VSTO
- È possibile aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.Chart> a livello di codice a qualsiasi foglio di lavoro aperto in un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere Estendere documenti di Word e cartelle di lavoro [di Excel nei componenti aggiuntivi VSTO in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Aggiungere controlli grafico in fase di esecuzione in un VSTO di componente aggiuntivo
+ È possibile aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.Chart> a livello di codice a qualsiasi foglio di lavoro aperto in un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere Estendere documenti di Word e Excel cartelle di lavoro in VSTO [componenti aggiuntivi in fase di esecuzione.](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 
- I controlli Chart creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro viene chiuso. Per altre informazioni, vedere [Aggiungere controlli ai documenti di Office in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
+ I controlli Chart creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro viene chiuso. Per altre informazioni, vedere [Aggiungere controlli Office documenti in fase di esecuzione.](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Per aggiungere un controllo Chart a un foglio di lavoro a livello di codice
 
@@ -85,10 +86,10 @@ ms.locfileid: "107827032"
 - Dati da usare per creare il grafico, archiviati nell'intervallo da A5 a D8 nel foglio di lavoro.
 
 ## <a name="see-also"></a>Vedi anche
-- [Estendere documenti di Word e cartelle di lavoro di Excel nei componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
+- [Estendere documenti di Word Excel cartelle di lavoro in VSTO componenti aggiuntivi in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Controlli sui Office di lavoro](../vsto/controls-on-office-documents.md)
 - [Controllo Grafico](../vsto/chart-control.md)
-- [Automatizzare Excel tramite oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
+- [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)
-- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Associare dati ai controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

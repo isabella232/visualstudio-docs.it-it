@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Opzioni messaggio | Microsoft Docs
-description: Specificare in Opzioni messaggio quali messaggi sono elencati nella visualizzazione Messaggi e quali dati dei messaggi visualizzare.
+description: Specificare in Opzioni messaggio quali messaggi sono elencati nella visualizzazione Messaggi e quali dati del messaggio visualizzare.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,22 +13,22 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c6daa23ee811a26301f7c437dc480f50725d0ef53469b4864e0235193b2d59
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 31db089d32a40d660c08dc5e1c06533f171d219f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343716"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154005"
 ---
 # <a name="message-options-dialog-box"></a>Finestra di dialogo Opzioni messaggio
-Utilizzare questa finestra di dialogo per selezionare i messaggi elencati in [Visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare questa finestra di dialogo, scegliere **Log Messages (Registra** messaggi) dal menu **Spy.**
+Utilizzare questa finestra di dialogo per selezionare i messaggi elencati in [Visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare questa finestra di dialogo, scegliere Log Messages (Log **Messages)** dal menu **Spy.**
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Windows, finestra di dialogo Opzioni messaggio](../debugger/windows-tab-message-options-dialog-box.md) Consente di selezionare i tipi di messaggi da elencare. Include lo strumento Finder.
+ [Windows scheda Messaggi, finestra di dialogo Opzioni messaggio](../debugger/windows-tab-message-options-dialog-box.md) Consente di selezionare i tipi di messaggi da elencare. Include lo strumento Di ricerca.
 
  [Scheda Messaggi, finestra di dialogo Opzioni messaggio](../debugger/messages-tab-message-options-dialog-box.md) Consente di selezionare i tipi di messaggio da visualizzare.
 
- [Scheda Output, finestra di dialogo Opzioni messaggio](../debugger/output-tab-message-options-dialog-box.md) Utilizzato per specificare i dati del messaggio da visualizzare.
+ [Scheda Output, finestra di dialogo Opzioni messaggio](../debugger/output-tab-message-options-dialog-box.md) Consente di specificare i dati del messaggio da visualizzare.
 
 ## <a name="related-sections"></a>Sezioni correlate
  [Finestra di dialogo Ricerca messaggi](../debugger/message-search-dialog-box.md) Usato per trovare il nodo per un messaggio specifico nella visualizzazione Messaggio.
@@ -37,9 +37,9 @@ Utilizzare questa finestra di dialogo per selezionare i messaggi elencati in [Vi
 
  [Informazioni di riferimento su Spy++](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy++.
 
- [Ricerca di un messaggio nella visualizzazione messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md) Viene illustrato come trovare un messaggio specifico nella visualizzazione Messaggi.
+ [Ricerca di un messaggio nella visualizzazione Messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md) Viene illustrato come trovare un messaggio specifico nella visualizzazione Messaggi.
 
- [Apertura della visualizzazione messaggi dalla finestra Trova](../debugger/how-to-open-messages-view-from-find-window.md) Viene illustrato come aprire la visualizzazione Messaggi dalla finestra di dialogo Trova finestra.
+ [Apertura della visualizzazione Messaggi dalla finestra Trova](../debugger/how-to-open-messages-view-from-find-window.md) Viene illustrato come aprire la visualizzazione Messaggi dalla finestra di dialogo Trova finestra.
 
  [Visualizzazione Messaggi](../debugger/messages-view.md) Visualizza il flusso di messaggi associato a una finestra, un processo o un thread.
 

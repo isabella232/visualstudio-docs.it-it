@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6298300127cbcbfec706bb5cf9fcda89a68c12cf
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 8be3320976e8a51acb37be95334f609d8e4f6b3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334635"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049233"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procedura dettagliata: Creare un SDK con C++
 Questa procedura dettagliata illustra come creare un SDK nativo della libreria matematica C++, creare un pacchetto dell'SDK come estensione Visual Studio (VSIX) e quindi usarlo per creare un'app. La procedura dettagliata è suddivisa in questi passaggi:
@@ -28,7 +28,7 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 - [Per creare un'app di esempio che usa la libreria di classi](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere Visual Studio [SDK](../extensibility/visual-studio-sdk.md).
+ Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK.](../extensibility/visual-studio-sdk.md)
 
 ## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>Per creare le librerie native e Windows Runtime
 
@@ -44,7 +44,7 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
      :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp" id="Snippet2":::
 
-5. In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione  **'NativeMath'** e quindi scegliere  >  **Aggiungi nuovo** Project .
+5. In **Esplora soluzioni** aprire il menu di scelta rapida **per la soluzione 'NativeMath'** e quindi scegliere Aggiungi   >  **nuovo** Project .
 
 6. Nell'elenco dei modelli espandere **Visual C++** e quindi selezionare il modello Windows **Componente runtime.** Nella casella **Nome** specificare `NativeMathWRT` e quindi fare clic sul pulsante **OK.**
 
@@ -60,15 +60,31 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
 ## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> Per creare il progetto di estensione NativeMathVSIX
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione  **'NativeMath'** e quindi scegliere  >  **Aggiungi nuovo** Project .
+1. In **Esplora soluzioni** aprire il menu di scelta rapida **per la soluzione 'NativeMath'** e quindi scegliere Aggiungi   >  **nuovo** Project .
 
-2. Nell'elenco dei modelli espandere **estendibilità di Visual C#** e quindi  >  selezionare **VSIX Project**. Nella casella **Nome** specificare **NativeMathVSIX** e quindi scegliere **OK.**
+2. Nell'elenco dei modelli espandere **estendibilità** di Visual C# e quindi selezionare  >   **VSIX Project**. Nella casella **Nome** specificare **NativeMathVSIX** e quindi fare clic sul **pulsante OK.**
 
-3. In **Esplora soluzioni** aprire il menu di scelta rapida per **source.extension.vsixmanifest** e quindi scegliere **Visualizza codice**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida **per source.extension.vsixmanifest** e quindi scegliere **Visualizza codice**.
 
 4. Usare il codice XML seguente per sostituire il codice XML esistente.
 
-    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
+    ```xml
+    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+      <Metadata>
+        <Identity Id="NativeMathVSIX..c6b3cae1-e7e2-4e71-90f6-21017ea0dff7" Version="1.0" Language="en-US" Publisher="MyName" />
+        <DisplayName>Native Math SDK</DisplayName>
+        <Description>Native Math Library w/ Windows Runtime Additions</Description>
+      </Metadata>
+      <Installation Scope="Global" AllUsers="true">
+        <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="Windows" TargetPlatformVersion="v8.0" SdkName="NativeMathSDK" SdkVersion="1.0" />
+      </Installation>
+      <Dependencies>
+      </Dependencies>
+      <Assets>
+        <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+      </Assets>
+    </PackageManifest>
+    ```
 
 5. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto NativeMathVSIX** e quindi scegliere **Aggiungi**  >  **nuovo elemento**.
 
@@ -78,7 +94,7 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
     :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml" id="Snippet5":::
 
-8. In **Esplora soluzioni**, nel **progetto NativeMathVSIX** creare questa struttura di cartelle:
+8. In **Esplora soluzioni**, nel **progetto NativeMathVSIX,** creare questa struttura di cartelle:
 
     ```xml
     \DesignTime
@@ -95,20 +111,20 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
                 \Neutral
     ```
 
-9. In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione **'NativeMath'** e quindi scegliere Apri cartella **in** Esplora file .
+9. In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione **'NativeMath'** e quindi scegliere **Apri cartella in** Esplora file .
 
 10. In **Esplora file** copiare *$SolutionRoot$\NativeMath\NativeMath.h* e quindi in **Esplora soluzioni**, nel **progetto NativeMathVSIX,** incollarlo nella cartella *\\ $SolutionRoot$\NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include.*
 
      Copiare *$SolutionRoot$\Debug\NativeMath\NativeMath.lib* e incollarlo nella cartella *$SolutionRoot$\NativeMathVSIX\DesignTime\Debug\x86. \\*
 
-     Copiare *$SolutionRoot$\Debug\NativeMath\NativeMath.dll* e incollarlo nella cartella *\\ $SolutionRoot$\NativeMathVSIX\Redist\Debug\x86.*
+     Copiare *$SolutionRoot$\Debug\NativeMath\NativeMath.dll* e incollarlo nella cartella *$SolutionRoot$\NativeMathVSIX\Redist\Debug\x86. \\*
 
      Copiare *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.dll* e incollarlo nella cartella *$SolutionRoot$\NativeMathVSIX\Redist\Debug\x86.*
      Copiare *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.winmd* e incollarlo nella cartella *$SolutionRoot$\NativeMathVSIX\References\CommonConfiguration\Neutral.*
 
      Copiare *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.pri* e incollarlo nella cartella *$SolutionRoot$\NativeMathVSIX\References\CommonConfiguration\Neutral.*
 
-11. Nella *cartella $SolutionRoot$\NativeMathVSIX\DesignTime\Debug\x86 \\* creare un file di testo denominato *NativeMathSDK.props* e incollarne il contenuto seguente:
+11. Nella cartella *$SolutionRoot$\NativeMathVSIX\DesignTime\Debug\x86 \\* creare un file di testo denominato *NativeMathSDK.props* e incollarne il contenuto seguente:
    
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -127,7 +143,7 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
 12. Sulla barra dei menu scegliere **Visualizza** altro Windows finestra Proprietà  >    >   (Tastiera: scegliere **il tasto F4).**
 
-13. In **Esplora soluzioni** selezionare il file **NativeMathWRT.winmd.** Nella finestra **Proprietà** modificare la proprietà **Azione di** compilazione in **Contenuto**, quindi impostare la proprietà Includi **in VSIX** su **True**.
+13. In **Esplora soluzioni** selezionare il file **NativeMathWRT.winmd.** Nella finestra **Proprietà** modificare la proprietà **Azione di** compilazione in **Contenuto** e quindi impostare la proprietà Includi **in VSIX** su **True.**
 
      Ripetere questo processo per il file **NativeMath.h.**
 

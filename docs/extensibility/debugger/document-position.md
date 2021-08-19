@@ -1,6 +1,6 @@
 ---
-title: Posizione del documento | Microsoft Docs
-description: Informazioni su come la posizione di un documento Visual Studio debug fornisce un'astrazione di una posizione in un file di origine nota all'IDE.
+title: Posizione documento | Microsoft Docs
+description: Informazioni su come una posizione del documento Visual Studio debug fornisce un'astrazione di una posizione in un file di origine noto all'IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +13,17 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd46dc38580dae3b5f45d1b3896862592e208da04103b65019eb081f4bc3dcdb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 458c9f9dad2bdb3484cd9a67a643b446d129fa23
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343025"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153576"
 ---
 # <a name="document-position"></a>Posizione del documento
-Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, posizione *del documento*:
+Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, una *posizione del documento*:
 
-- Fornisce un'astrazione di una posizione in un file di origine noto all'IDE. Per la maggior parte delle lingue attuali, una posizione del documento può essere pensata come una posizione in un file di origine.
+- Fornisce un'astrazione di una posizione in un file di origine come noto all'IDE. Per la maggior parte delle lingue, una posizione del documento può essere pensata come una posizione in un file di origine.
 
 - Descrive una posizione in un documento di origine in un motore di debug.
 
