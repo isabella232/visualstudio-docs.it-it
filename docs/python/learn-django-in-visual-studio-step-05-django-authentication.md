@@ -7,23 +7,24 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f589aed953a852cb57570988d914f77b2fa10b2
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 17a6ee7cbf622eb90debd961ba36f159bf7fbc6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806017"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156526"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 
 **Passaggio precedente: [Usare il modello Progetto Web Django completo](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 ::: moniker range="vs-2017"
-Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Il modello "progetto Web Django di polling" descritto nel passaggio 6 di questa esercitazione include anche lo stesso flusso. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel *Settings.py* del progetto Django.
+Poiché l'autenticazione è un'esigenza comune per le app Web, il modello "Progetto Web Django" include un flusso di autenticazione di base. Anche il modello "Polls Django Web Project" illustrato nel passaggio 6 di questa esercitazione include lo stesso flusso. Quando si usa uno dei modelli di progetto Django, Visual Studio include tutti i moduli necessari per l'autenticazione nel settings.py *Django.*
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -41,7 +42,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Se non si sono ancora seguite le istruzioni contenute nel file *readme.html* all'interno della radice del progetto per creare un utente con privilegi avanzati (amministratore), farlo ora.
 
-1. Eseguire l'app da Visual Studio usando **debug**  >  **Avvia debug** (**F5**). Quando l'app viene visualizzata nel browser, osservare che l'opzione di **accesso** viene visualizzata nell'angolo in alto a destra della barra di spostamento.
+1. Eseguire l'app da Visual Studio **debug**  >  **avvia debug** (**F5**). Quando l'app viene visualizzata nel browser, osservare che l'opzione di **accesso** viene visualizzata nell'angolo in alto a destra della barra di spostamento.
 
     ![Controllo di accesso nella pagina dell'app Progetto Web Django](media/django/step05-login-control.png)
 
@@ -210,7 +211,7 @@ I passaggi seguenti permettono di provare il flusso di autenticazione e descrivo
 
 1. Al termine, arrestare il server ed eseguire di nuovo il commit delle modifiche nel controllo del codice sorgente.
 
-### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Domanda: qual è lo scopo del tag {% csrf_token%} visualizzato negli \<form\> elementi?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Domanda: Qual è lo scopo del tag {% csrf_token %} visualizzato negli \<form\> elementi?
 
 Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersito false (crsf, cross-site request forgery)](https://docs.djangoproject.com/en/2.0/ref/csrf/) predefinita di Django (documentazione di Django). Questo tag viene aggiunto in genere a qualsiasi elemento che prevede metodi di richiesta POST, PUT o DELETE, ad esempio un modulo. La funzione di rendering del modello (`render`) inserisce quindi la protezione necessaria.
 
@@ -224,7 +225,7 @@ Risposta: Il tag `{% csrf_token %}` include la [protezione da richieste intersit
 > [!Note]
 > Durante l'esercitazione è stato eseguito il commit della soluzione di Visual Studio nel controllo del codice sorgente. A questo punto è utile eseguire un altro commit. La soluzione dovrebbe corrispondere al codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
-A questo punto, sono stati esaminati tutti i modelli "progetto Web Django vuoto" e "progetto Web Django" in Visual Studio. Sono state apprese le nozioni di base di Django, ad esempio l'uso di visualizzazioni e modelli, e sono stati analizzati il routing, l'autenticazione e l'uso di modelli di database. A questo punto, si dovrebbe essere in grado di creare un'app Web con tutti i modelli e le visualizzazioni necessari.
+Sono stati ora esaminati tutti i modelli "Blank Django Web Project" e "Django Web Project" in Visual Studio. Sono state apprese le nozioni di base di Django, ad esempio l'uso di visualizzazioni e modelli, e sono stati analizzati il routing, l'autenticazione e l'uso di modelli di database. A questo punto, si dovrebbe essere in grado di creare un'app Web con tutti i modelli e le visualizzazioni necessari.
 
 L'esecuzione di un'app Web nel computer di sviluppo è solo un passaggio per rendere disponibile l'app ai clienti. I passaggi successivi possono includere le attività seguenti:
 

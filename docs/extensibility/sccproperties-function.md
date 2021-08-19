@@ -11,14 +11,15 @@ ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd50353ab29c05e5e5db2dc2b3f363af46ca8aa7
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 99d83dc2cdf5dd39a6f55f39ff78a203b4ed29b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904191"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109994"
 ---
 # <a name="sccproperties-function"></a>Funzione SccProperties
 Questa funzione visualizza le proprietà del controllo del codice sorgente per un file o un progetto.
@@ -47,7 +48,7 @@ SCCRTN SccProperties (
 [in] Nome completo del percorso del file o del progetto.
 
 ## <a name="return-value"></a>Valore restituito
- L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
@@ -63,5 +64,5 @@ SCCRTN SccProperties (
 
  Le proprietà sono definite dal plug-in del controllo del codice sorgente e possono differire da plug-in a plug-in. Se il plug-in consente all'utente di modificare le proprietà del controllo del codice sorgente di un file, deve tornare a segnalare all'IDE che il file o il progetto deve `SCC_I_RELOAD` essere ricaricato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,5 +1,5 @@
 ---
-description: Il simbolo VTable ha un simbolo figlio della classe identificato dal tag SymTagVTableShape.
+description: Il simbolo VTable) ha un simbolo figlio della classe identificato dal tag SymTagVTableShape.
 title: VTableShape | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,31 +12,32 @@ ms.assetid: dd97f4c3-115d-46a9-b506-2531e30a0d8f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 661d2d2595cc0ead1e15daeadf4d5fb059800b76
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c29ae9f4922e6d2f4c3a110c6b4220d9a24088b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161522"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090972"
 ---
 # <a name="vtableshape"></a>VTableShape
-Il simbolo [vtable](../../debugger/debug-interface-access/vtable.md) ha un simbolo figlio della classe identificato dal `SymTagVTableShape` tag.
+Il [simbolo VTable](../../debugger/debug-interface-access/vtable.md) ha un simbolo figlio della classe identificato dal `SymTagVTableShape` tag .
 
 ## <a name="properties"></a>Proprietà
- Nella tabella seguente vengono illustrate proprietà valide aggiuntive per questo tipo di simbolo.
+ La tabella seguente illustra altre proprietà valide per questo tipo di simbolo.
 
 |Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Se la classe di VTable è contrassegnata come costante.|
-|[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|Numero di voci in VTable.|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo del modulo di inclusione.|
+|[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` se la classe della tabella VTable è contrassegnata come costante.|
+|[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|Numero di voci nella tabella VTable.|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo del compilatore che lo contiene.|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo padre lessicale.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagVTableShape` uno dei valori di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .|
-|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` Se la classe di VTable è non allineata.|
-|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se la classe di VTable è contrassegnata come volatile.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indice del simbolo.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagVTableShape` (uno dei valori [dell'enumerazione SymTagEnum).](../../debugger/debug-interface-access/symtagenum.md)|
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` se la classe della tabella VTable non è allineata.|
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` se la classe della tabella VTable è contrassegnata come volatile.|
 
 ## <a name="see-also"></a>Vedi anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

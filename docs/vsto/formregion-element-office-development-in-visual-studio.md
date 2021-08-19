@@ -1,6 +1,6 @@
 ---
-description: L'elemento formRegion dello spazio dei nomi vstov4 identifica un Microsoft Office area del modulo di Outlook associata a un componente aggiuntivo VSTO.
-title: '&lt;&gt;elemento formRegion (sviluppo per Office in Visual Studio)'
+description: L'elemento formRegion dello spazio dei nomi vstov4 identifica un'area Microsoft Office Outlook del modulo associata a un VSTO componente aggiuntivo.
+title: '&lt;Elemento &gt; formRegion (Office sviluppo in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0851ba9e117b464d3a2fbb9ad9903af17ceda0c4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f78e6867afd4839dab329a9543fafe4015bf777f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221080"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156019"
 ---
-# <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento formRegion (sviluppo per Office in Visual Studio)
-  L' `formRegion` elemento dello `vstov4` spazio dei nomi identifica un Microsoft Office area del modulo di Outlook associata a un componente aggiuntivo VSTO.
+# <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;Elemento &gt; formRegion (Office sviluppo in Visual Studio)
+  L'elemento dello spazio dei nomi identifica Microsoft Office Outlook'area del modulo associata a un `formRegion` VSTO componente `vstov4` aggiuntivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +59,7 @@ ms.locfileid: "102221080"
 |`name`|Obbligatorio. Identifica il modulo associato all'area del modulo.|
 
 ## <a name="example"></a>Esempio
- L'esempio di codice seguente illustra un elemento `formRegion` in un manifesto dell'applicazione per un componente aggiuntivo VSTO di Outlook distribuito con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Esistono tre classi di messaggi associate a questa unica area del modulo. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra un elemento `formRegion` in un manifesto dell'applicazione per un componente aggiuntivo VSTO di Outlook distribuito con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Esistono tre classi di messaggi associate a questa unica area del modulo. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml
 <vstov4:formRegion
@@ -71,7 +72,7 @@ ms.locfileid: "102221080"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Creare aree Outlook modulo](../vsto/creating-outlook-form-regions.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

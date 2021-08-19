@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: e32ef34e26084df149509a3172d748794784fb45adaead0935db8097cc8cd1c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9307884be7ae0ded9d679cd1d3f60a3661b28b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367382"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156149"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Verificare ed eseguire il debug SharePoint codice
 Con IntelliTrace e unit test è possibile eseguire più facilmente il debug delle soluzioni SharePoint, nonché garantire il corretto funzionamento di ogni singolo metodo in esse. È possibile utilizzare queste funzionalità per SharePoint progetti in Visual Studio seguendo le stesse procedure usate per altri tipi di progetti.

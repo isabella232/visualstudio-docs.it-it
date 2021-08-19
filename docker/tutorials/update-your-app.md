@@ -6,15 +6,16 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d15e2773b76db30f952ac9e711dd515a1c8df76a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0ce798b3264eedea5826df0ca2076c7fbc6ee4c6
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053449"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334304"
 ---
 # <a name="update-the-app"></a>Aggiornare l'app
 
@@ -52,7 +53,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 (bb242b2ca4d67eba76e79474fb36bb5125708ebdabd7f45c8eaf16caaabde9dd): Bind for 0.0.0.0:3000 failed: port is already allocated.
 ```
 
-Che cosa è successo? Impossibile avviare il nuovo contenitore, perché il contenitore precedente è ancora in esecuzione. Questo è un problema perché il contenitore usa la porta 3000 dell'host e solo un processo nel computer (contenitori inclusi) può restare in ascolto su una porta specifica. Per risolvere il problema, rimuovere il contenitore precedente.
+Cosa è successo? Impossibile avviare il nuovo contenitore, perché il contenitore precedente è ancora in esecuzione. Questo è un problema perché il contenitore usa la porta 3000 dell'host e un solo processo nel computer (contenitori inclusi) può restare in ascolto su una porta specifica. Per risolvere il problema, rimuovere il contenitore precedente.
 
 ## <a name="replace-the-old-container"></a>Sostituire il contenitore precedente
 
@@ -102,7 +103,7 @@ Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due c
     docker run -dp 3000:3000 getting-started
     ```
 
-1. Aggiornare il browser su [http://localhost:3000](http://localhost:3000) e verrà visualizzato il testo della Guida aggiornato.
+1. Aggiornare il browser in [http://localhost:3000](http://localhost:3000) e verrà visualizzato il testo della Guida aggiornato.
 
 ![Applicazione aggiornata con testo vuoto aggiornato](media/todo-list-updated-empty-text.png)
 

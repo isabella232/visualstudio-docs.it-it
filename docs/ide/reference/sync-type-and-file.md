@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9202adea6b129e3e747426fbb6f0694bfd23c250
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: bc6c525b0846270158f4d795be92535cfa4a6e8f
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048713"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334609"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring con sincronizzazione di un tipo con un nome di file o un nome di file con un tipo
 
@@ -32,7 +32,7 @@ Questo refactoring si applica a:
 
 **Quando:** è stato rinominato un file o un tipo e non è ancora stato aggiornato il file o il nome corrispondente.
 
-**Perché:** se si inserisce un tipo in un file con un nome diverso o viceversa, risulta difficile trovare ciò che si sta cercando. Rinominando il tipo o il file, il codice diventa più leggibile e la navigazione più semplice.
+**Perché:** L'inserimento di un tipo in un file con un nome diverso o viceversa rende difficile trovare ciò che si sta cercando. Rinominando il tipo o il file, il codice diventa più leggibile e la navigazione più semplice.
 
 > [!NOTE]
 > Questo refactoring non è ancora disponibile per i progetti .NET Standard e .NET Core.

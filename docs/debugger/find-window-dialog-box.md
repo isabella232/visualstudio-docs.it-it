@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8156ba13e1ba7d1c2b70979f688e6eb70bf0ccd25894ac9a338a0344c8352
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 604074774c01a3b170f33bf263fd9e75ed0042a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090887"
 ---
 # <a name="find-window-dialog-box"></a>Finestra di dialogo Trova finestra
 Utilizzare questa finestra di dialogo per selezionare una finestra e visualizzarne le proprietà o i messaggi. Per visualizzare questa finestra di dialogo, scegliere **Trova finestra** dal menu **Spy.**

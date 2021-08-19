@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f6d8c4d7907da705de8f204f93c007c13b2e67749f3bc089fc48ee674909a8b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9c5dea7c359de1c6bb07b9d8f6a60625e87029e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397514"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143066"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 
@@ -144,7 +144,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [GenerateApplicationManifest (attività)](../msbuild/generateapplicationmanifest-task.md)
 
- Genera un manifesto ClickOnce'applicazione o un manifesto nativo.
+ Genera un ClickOnce dell'applicazione o un manifesto nativo.
 
 - [GenerateBootstrapper (attività)](../msbuild/generatebootstrapper-task.md)
 
@@ -156,7 +156,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [GenerateResource (attività)](../msbuild/generateresource-task.md)
 
- Converte *.txt* file con estensione *resx in* file con estensione resources binari *di* Common Language Runtime.
+ Converte *.txt* file con estensione *resx* in file con estensione resources binari *di* Common Language Runtime.
 
 - [GenerateTrustInfo (attività)](../msbuild/generatetrustinfo-task.md)
 
@@ -224,7 +224,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - Attività ResGen
 
- Obsoleta. Usare [l'attività GenerateResource](../msbuild/generateresource-task.md) per convertire *.txt* file *resx* in e da file con estensione resources binari *di* Common Language Runtime.
+ Obsoleta. Usare [l'attività GenerateResource](../msbuild/generateresource-task.md) per convertire *.txt* file con estensione *resx* in e da file con estensione *resources* binari di Common Language Runtime.
 
 - [ResolveAssemblyReference (attività)](../msbuild/resolveassemblyreference-task.md)
 

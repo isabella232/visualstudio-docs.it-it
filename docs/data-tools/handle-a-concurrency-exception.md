@@ -21,16 +21,16 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6195fa7e27c6c6f72166dfc00ba888f3644cfe23cb6b38570f4ba6502f458054
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ac64e951c5307d0fe940e6ec92c2e35a727e3811
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347181"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075229"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
-Le eccezioni di concorrenza ( ) vengono generate quando due utenti tentano di modificare contemporaneamente gli stessi dati <xref:System.Data.DBConcurrencyException?displayProperty=fullName> in un database. In questa procedura dettagliata viene creata un'applicazione Windows che illustra come rilevare un oggetto , individuare la riga che ha causato l'errore e apprendere una strategia per <xref:System.Data.DBConcurrencyException> gestirlo.
+Le eccezioni di concorrenza ( ) vengono generate quando due utenti tentano di modificare contemporaneamente gli stessi dati <xref:System.Data.DBConcurrencyException?displayProperty=fullName> in un database. In questa procedura dettagliata viene creata un'applicazione Windows che illustra come intercettare un oggetto , individuare la riga che ha causato l'errore e apprendere una strategia per <xref:System.Data.DBConcurrencyException> gestirlo.
 
 Questa procedura dettagliata illustra il processo seguente:
 
@@ -42,7 +42,7 @@ Questa procedura dettagliata illustra il processo seguente:
 
 4. Compilare un set di dati con i dati della tabella Customers del database Northwind.
 
-5. Usare la **funzionalità Mostra dati** **tabella** Esplora server per accedere ai dati della tabella Customers e modificare un record.
+5. Usare la **funzionalità Mostra dati** tabella in **Esplora server** accedere ai dati della tabella Customers e modificare un record.
 
 6. Modificare lo stesso record con un valore diverso, aggiornare il set di dati e tentare di scrivere le modifiche nel database, determinando la creazione di un errore di concorrenza.
 
@@ -78,7 +78,7 @@ Iniziare creando una nuova applicazione Windows Forms:
 
 4. Assegnare al **progetto il nome ConcurrencyWalkthrough** e quindi scegliere **OK.**
 
-     Il **progetto ConcurrencyWalkthrough** viene creato e aggiunto **a Esplora soluzioni** e viene aperto un nuovo form nella finestra di progettazione.
+     Il **progetto ConcurrencyWalkthrough** viene creato e aggiunto a **Esplora soluzioni** e viene aperto un nuovo form nella finestra di progettazione.
 
 ## <a name="create-the-northwind-dataset"></a>Creare il set di dati Northwind
 
@@ -205,7 +205,7 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
     > [!NOTE]
     > Passare a un'altra riga per eseguire il commit della modifica.
 
-7. Passare al form in esecuzione di ConcurrencyWalkthrough.
+7. Passare al modulo in esecuzione di ConcurrencyWalkthrough.
 
 8. Nel primo record del modulo (**ALFKI**) modificare **ContactName** in **Maria Anders1**.
 

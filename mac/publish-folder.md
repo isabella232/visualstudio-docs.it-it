@@ -10,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 2944fa88297cbf7b0d3fe7149b4b690f5a7f1012cebdcd25daeb9c85e68461fc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7bebfd1498290aa38ebb2ac5ed5ada9989afefb
+ms.sourcegitcommit: ed472824f47cbb913fa30e3e67317af57a05e397
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121381705"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122399224"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare in una cartella usando Visual Studio per Mac
 
@@ -61,5 +61,6 @@ Per modificare il percorso della cartella di pubblicazione, aprire il profilo di
 Per modificare la configurazione di compilazione usata, modificare la proprietà `LastUsedBuildConfiguration` nel profilo di pubblicazione.
 
 ## <a name="see-also"></a>Vedi anche
- - [dotnet publish](https://docs.microsoft.com/dotnet/core/tools/dotnet-publish)
- - [Pubblicare un'app Web in un sito Web usando Visual Studio](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-a-web-site?view=vs-2019)
+ - [dotnet publish](/dotnet/core/tools/dotnet-publish)
+ - [Eseguire la pubblicazione un'app Web in un sito Web usando Visual Studio](/visualstudio/deployment/quickstart-deploy-to-a-web-site?view=vs-2019&preserve-view=true)
+ - [Pubblicare un'app ASP.NET Core in IIS](/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-5.0&tabs=visual-studio&preserve-view=true)

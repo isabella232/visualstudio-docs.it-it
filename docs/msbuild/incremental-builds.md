@@ -1,6 +1,6 @@
 ---
 title: Compilazioni incrementali | Microsoft Docs
-description: Informazioni sulle compilazioni incrementali di MSBuild, ottimizzate in modo da non eseguire i file di output aggiornati.
+description: Informazioni sulle MSBuild incrementali, ottimizzate in modo che i file di output aggiornati non siano eseguiti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,21 +10,22 @@ ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f1237128852cec39ff49204e1c269f10153b42ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9535d77469277f7b9133a8ee68950164c308193d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914073"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143261"
 ---
 # <a name="incremental-builds"></a>Compilazioni incrementali
 
 Le compilazioni incrementali sono compilazioni ottimizzate in modo da non eseguire le destinazioni con file di output aggiornati rispetto ai file di input corrispondenti. Un elemento di destinazione può avere sia un attributo `Inputs`, che indica quali elementi la destinazione accetta come input, sia un attributo `Outputs`, che indica quali elementi vengono generati come output. MSBuild tenta di trovare un mapping uno a uno tra i valori di questi attributi. Se esiste un mapping uno a uno, MSBuild confronta il timestamp di ogni elemento di input con il timestamp dell'elemento di output corrispondente. I file di output per cui non esiste un mapping uno a uno vengono confrontati con tutti i file di input. Un elemento viene considerato aggiornato se il relativo file di output è stato creato nello stesso momento dei relativi file di input o è più recente.
 
 > [!NOTE]
-> Quando MSBuild valuta i file di input, vengono considerati solo i contenuti dell'elenco nell'esecuzione corrente. Le modifiche apportate all'elenco dall'ultima compilazione non rendono automaticamente una destinazione obsoleta.
+> Quando MSBuild valuta i file di input, viene considerato solo il contenuto dell'elenco nell'esecuzione corrente. Le modifiche nell'elenco dell'ultima compilazione non rendono automaticamente una destinazione non aggiornata.
 
 Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione. Questa *compilazione incrementale* della destinazione può migliorare significativamente la velocità di compilazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione, ma ignora gli elementi aggiornati e in questo modo tutti gli elementi vengono aggiornati. Questo processo è noto come *compilazione incrementale parziale*.
 
@@ -54,7 +55,7 @@ Esistono tre casi:
 
 - La destinazione non ha output non aggiornati e viene ignorata. MSBuild valuta la destinazione e apporta modifiche a elementi e proprietà come se la destinazione fosse stata eseguita.
 
-Per supportare la compilazione incrementale, le attività devono garantire che il valore dell'attributo `TaskParameter` di qualsiasi elemento `Output` sia uguale a un parametro di input dell'attività. Ecco alcuni esempi:
+Per supportare la compilazione incrementale, le attività devono garantire che il valore dell'attributo `TaskParameter` di qualsiasi elemento `Output` sia uguale a un parametro di input dell'attività. Di seguito sono riportati alcuni esempi:
 
 ```xml
 <CreateProperty Value="123">

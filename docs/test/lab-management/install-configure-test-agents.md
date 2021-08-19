@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d4b472c7346c270e3c96e76170fd7c39be573e56bff1a0b0a06bb4872b7fdde
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 709e429a1b131a3c9124c2e182d6b9407da9b23f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121299294"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156084"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
@@ -60,9 +60,9 @@ Questi programmi di installazione sono disponibili come file ISO per facilitarne
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versioni compatibili di TFS, del test controller e dell'agente di test
+## <a name="compatible-versions-of-tfs-the-test-controller-and-test-agent"></a>Versioni compatibili di TFS, test controller e agente di test
 
-È possibile combinare versioni diverse di TFS, il test controller e l'agente di test, in base alla tabella seguente:
+È possibile combinare versioni diverse di TFS, test controller e l'agente di test, in base alla tabella seguente:
 
 | TFS | Controller | Agente |
 | --- | -------------------------------------- | ---------- | ----- |
@@ -88,5 +88,5 @@ La tabella seguente visualizza gli scenari supportati da Agents per Visual Studi
 | - | - |
 | Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [pipeline di compilazione](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
 | Test di carico (test delle prestazioni) usando computer remoti in posizioni locali | Per eseguire i test di carico in locale, usare Test Controller e Test Agents 2013 Update 5. |
-| Esecuzione remota di test automatizzati da Microsoft Test Manager (deprecata in Visual Studio 2017) usando un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
+| Esecuzione remota di test automatizzati da Microsoft Test Manager (deprecati in Visual Studio 2017) usando un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
 | Sviluppatori che eseguono test remoti in Visual Studio | Non più supportata. |

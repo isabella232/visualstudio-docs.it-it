@@ -1,6 +1,6 @@
 ---
 title: Trova e sostituisci nei file
-description: Informazioni sulla funzionalità Sostituisci nei file e su come consente di cercare una stringa o un'espressione nel codice di un set specificato di file e modificare alcune o tutte le corrispondenze trovate.
+description: Informazioni sulla funzionalità Sostituisci nei file e su come consente di cercare nel codice di un set specificato di file una stringa o un'espressione e modificare alcune o tutte le corrispondenze trovate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,16 +17,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 614757f7a4d6fde6d4df113d3b933d7e4b6d5a9b9f0a83ff88c5f450a35139dd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cd651db796bcf4e6d626a6cc348a25f5a7f80794
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121232224"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143456"
 ---
 # <a name="replace-in-files"></a>Sostituisci nei file
 
-**Sostituisci nei file** consente di cercare una stringa o un'espressione nel codice di un determinato set di file e di modificare alcune o tutte le corrispondenze trovate. Le corrispondenze trovate e le azioni eseguite sono elencate nella **finestra Risultati** ricerca selezionata in **Opzioni risultato**.
+**Sostituisci nei file** consente di cercare una stringa o un'espressione nel codice di un determinato set di file e di modificare alcune o tutte le corrispondenze trovate. Le corrispondenze trovate e le azioni eseguite sono elencate nella **finestra Risultati** ricerca selezionata in **Opzioni risultati**.
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti **nella** Guida a seconda delle impostazioni attive o dell'edizione. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++**, scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
@@ -95,7 +95,7 @@ Quando questa opzione è selezionata, i risultati della ricerca corrente sostitu
 
 **Mostra solo nomi file**
 
-Quando questa casella di controllo è selezionata, **le** finestre Risultati ricerca elencano i nomi e i percorsi completi per tutti i file che contengono la stringa di ricerca. Tuttavia, i risultati non includono la riga di codice in cui viene visualizzata la stringa. Questa casella di controllo è disponibile solo **per Trova nei** file.
+Quando questa casella di controllo è selezionata, le **finestre Risultati** ricerca elencano i nomi completi e i percorsi di tutti i file che contengono la stringa di ricerca. Tuttavia, i risultati non includono la riga di codice in cui viene visualizzata la stringa. Questa casella di controllo è disponibile **solo per Cerca nei** file.
 
 **Non chiudere i file modificati con Sostituisci tutto**
 
@@ -107,5 +107,5 @@ Se questa casella di controllo è selezionata, i file in cui sono state eseguite
 ## <a name="see-also"></a>Vedi anche
 
 - [Cercare e sostituire testo](../ide/finding-and-replacing-text.md)
-- [Trovare nei file](../ide/find-in-files.md)
+- [Cerca nei file](../ide/find-in-files.md)
 - [Comandi di Visual Studio](../ide/reference/visual-studio-commands.md)

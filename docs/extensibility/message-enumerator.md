@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f0bcffa2f0d579d101c2ebcaed92e097c9443c8d4a54c50a6ff7ac798e30258
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2ade39f1c90e3201d19975bd671674c8a2d113f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414142"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110241"
 ---
 # <a name="message-enumerator"></a>Enumeratore di messaggi
-I flag seguenti vengono usati per la funzione, che è una funzione di callback fornita dall'IDE quando chiama `TEXTOUTPROC` [SccOpenProject](../extensibility/sccopenproject-function.md) (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) per informazioni dettagliate sulla funzione di callback).
+I flag seguenti vengono usati per la funzione , che è una funzione di callback fornita dall'IDE quando chiama `TEXTOUTPROC` [SccOpenProject](../extensibility/sccopenproject-function.md) (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) per informazioni dettagliate sulla funzione di callback).
 
  Se all'IDE viene richiesto di annullare il processo, potrebbe essere visualizzato uno dei messaggi di annullamento. In questo caso, il plug-in del controllo del codice sorgente usa `SCC_MSG_STARTCANCEL` per chiedere all'IDE di visualizzare il **pulsante** Annulla. Successivamente, è possibile inviare qualsiasi set di messaggi normali. Se uno di questi valori restituisce `SCC_MSG_RTN_CANCEL` , il plug-in chiude l'operazione e restituisce . Il plug-in esegue anche il polling `SCC_MSG_DOCANCEL` periodico per determinare se l'utente ha annullato l'operazione. Al termine di tutte le operazioni o se l'utente ha annullato, il plug-in invia `SCC_MSG_STOPCANCEL` . I tipi , SCC_MSG_WARNING e SCC_MSG_ERROR vengono usati per i messaggi visualizzati nell'elenco `SCC_MSG_INFO` di scorrimento dei messaggi. `SCC_MSG_STATUS` è un tipo speciale che indica che il testo deve essere visualizzato in una barra di stato o in un'area di visualizzazione temporanea. Non rimane permanentemente nell'elenco.
 
@@ -43,7 +43,7 @@ enum {
 ```
 
 ## <a name="members"></a>Members
- SCC_MSG_RTN_CANCEL restituire dal callback per indicare l'annullamento.
+ SCC_MSG_RTN_CANCEL restituito dal callback per indicare l'annullamento.
 
  SCC_MSG_RTN_OK restituire dal callback per continuare.
 

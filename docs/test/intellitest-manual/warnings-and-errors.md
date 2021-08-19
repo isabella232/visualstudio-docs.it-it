@@ -1,6 +1,6 @@
 ---
 title: Avvisi ed errori | Strumento di test per sviluppatori Microsoft IntelliTest
-description: Questo articolo include avvisi ed errori di IntelliTest, divisi in categorie, con descrizioni per ogni avviso ed errore.
+description: Questo articolo include avvisi ed errori IntelliTest, suddivisi in categorie, con descrizioni per ogni avviso ed errore.
 ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Warnings and errors
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 69fea3216602bf78084ef9141280fd4ba7aa4c57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6197b73c407069cca3ff20c862895c61e59b13a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920410"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092358"
 ---
 # <a name="warnings-and-errors"></a>Avvisi ed errori
 
@@ -32,27 +33,27 @@ ms.locfileid: "99920410"
   * [MaxRunsWithoutNewTests superato](#maxrunswithoutnewtests-exceeded)
 
 * **Risoluzione di vincoli**
-  * [Non è possibile concretizzare la la soluzione](#cannot-concretize-solution)
+  * [Impossibile concretizzare la soluzione](#cannot-concretize-solution)
 
-* **Domini o Runtime**
-  * [Serve aiuto per costruire l'oggetto](#help-construct)
+* **Domini o runtime**
+  * [Serve aiuto per costruire un oggetto](#help-construct)
   * [Serve aiuto per trovare i tipi](#help-types)
-  * [Tipo utilizzabile indovinato](#usable-type-guessed)
+  * [Tipo utilizzabile intuito](#usable-type-guessed)
 
 * **Esecuzione**
   * [Errore imprevisto durante l'esplorazione](#unexpected-exploration)
   * [TargetInvocationException](#targetinvocationexception)
 
 * **Strumentazione**
-  * [Metodo non instrumentato denominato](#uninstrumented-method-called)
+  * [Metodo non intrumentato chiamato](#uninstrumented-method-called)
   * [Metodo esterno chiamato](#external-method-called)
-  * [Metodo non instrumentato denominato](#uninstrumentable-method-called)
+  * [Metodo uninstrumentable chiamato](#uninstrumentable-method-called)
   * [Problema di testabilità](#testability-issue)
   * [Limitazione](#limitation)
 
 * **Interprete**
-  * [Chiamata osservata non corrispondente](#observed-call-mismatch)
-  * [Valore archiviato nel campo statico](#value-static-field)
+  * [Mancata corrispondenza delle chiamate osservate](#observed-call-mismatch)
+  * [Valore archiviato in un campo statico](#value-static-field)
 
 <a name="maxbranches-exceeded"></a>
 ## <a name="maxbranches-exceeded"></a>MaxBranches superato
@@ -101,7 +102,7 @@ IntelliTest limita la lunghezza dei percorsi di esecuzione che esplora durante l
 
 Ogni diramazione condizionale che dipende dagli input dello [unit test con parametri](test-generation.md#parameterized-unit-testing) viene conteggiata in base a questo limite.
 
-Ad esempio, ogni percorso nel codice seguente usa **n + 1** condizioni:
+Ad esempio, ogni percorso nel codice seguente usa **condizioni n+1:**
 
 ```csharp
 [PexMethod]
@@ -116,7 +117,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Ad esempio:
+È possibile modificare l'opzione **MaxConditions** di un attributo derivato da **PexSettingsAttributeBase**, ad esempio [PexClass](attribute-glossary.md#pexclass) o [PexMethod](attribute-glossary.md#pexmethod). Esempio:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -256,7 +257,7 @@ IntelliTest [genera input di test](input-generation.md) per qualsiasi tipo .NET.
 
 IntelliTest [genera input di test](input-generation.md) per qualsiasi tipo .NET. Quando un tipo è astratto o è un'interfaccia, IntelliTest deve scegliere una particolare implementazione del tipo. Per effettuare questa scelta, deve conoscere i tipi esistenti.
 
-Quando viene visualizzato questo avviso, viene indicato che IntelliTest ha esaminato alcuni degli assembly a cui si fa riferimento ed è stato trovato un tipo di implementazione, ma non è certo che debba utilizzare quel tipo o se sono disponibili altri tipi appropriati altrove. IntelliTest ha semplicemente scelto un tipo che sembrava promettente.
+Quando viene visualizzato questo avviso, IntelliTest ha esaminato alcuni assembly a cui si fa riferimento e ha trovato un tipo di implementazione, ma non è sicuro se deve usare tale tipo o se sono disponibili tipi più appropriati altrove. IntelliTest ha semplicemente scelto un tipo che sembrava promettente.
 
 Per evitare questo avviso, è possibile accettare la scelta di IntelliTest o indicare a IntelliTest di usare altri tipi aggiungendo un attributo [PexUseType](attribute-glossary.md#pexusetype) corrispondente.
 

@@ -1,6 +1,6 @@
 ---
 title: Modelli per progetti e file
-description: Informazioni sul modo in cui i modelli di progetto e di elemento forniscono stub riutilizzabili che forniscono agli utenti un codice e una struttura di base.
+description: Informazioni sul modo in cui i modelli di progetto e di elemento forniscono stub riutilizzabili che forniscono agli utenti codice e struttura di base.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: e5a3a555a9c0674c70e93ec557416c05d282fbcf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: f6f70f6daa549834cbc2bbe8874722de07d0ea76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956815"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109435"
 ---
 # <a name="project-and-item-templates"></a>Modelli di progetti e di elementi
 
@@ -29,7 +30,7 @@ Con Visual Studio vengono installati vari modelli di progetti e di elementi pred
 
 I modelli rappresentano un punto di partenza per iniziare a creare progetti o per espandere i progetti esistenti. I modelli di progetto forniscono i file necessari per un determinato tipo di progetto, includono i riferimenti ad assembly standard e impostano le proprietà di progetto predefinite e le opzioni del compilatore. La complessità dei modelli di elementi può variare: da un singolo file vuoto con una determinata estensione di file fino a più file del codice sorgente con codice stub, file di informazioni sulla progettazione e risorse incorporate.
 
-È possibile usare modelli installati, creare modelli personalizzati o scaricare e usare modelli creati dalla community. Per altre informazioni, vedere [procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md) e [procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md).
+È possibile usare modelli installati, creare modelli personalizzati o scaricare e usare modelli creati dalla community. Per altre informazioni, vedere [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md) e [Procedura: Creare modelli di elemento.](../ide/how-to-create-item-templates.md)
 
 ## <a name="contents-of-a-template"></a>Contenuto di un modello
 
@@ -67,12 +68,12 @@ Quando questi file vengono compressi in un file con estensione *zip* e inseriti 
 
 - I modelli di elementi vengono visualizzati nella finestra **Aggiungi nuovo elemento**.
 
-Per ulteriori informazioni sulle cartelle dei modelli, vedere [procedura: individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Per altre informazioni sulle cartelle modello, vedere [Procedura: Individuare e organizzare i modelli.](../ide/how-to-locate-and-organize-project-and-item-templates.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)
-- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: Creare modelli di elemento](../ide/how-to-create-item-templates.md)
 - [Aggiungere o modificare tag nei modelli di progetto](template-tags.md)
 - [Parametri di modelli](../ide/template-parameters.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)

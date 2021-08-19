@@ -11,16 +11,16 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: ed004ee7208ab599aab568d515af6b9de45d2e05a2fd35525e0a7bd082bf1112
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8874a6ee31dd00662544e710d28f5d0e53491425
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372172"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048843"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opzioni, Editor di testo, XML, Varie
 
-Usare la pagina delle opzioni **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per accedere alle varie opzioni XML, scegliere Strumenti   >  **Opzioni**  >  **Editor**  >   di testo XML e quindi scegliere Varie .
+Usare la pagina delle opzioni **Varie** per modificare le impostazioni di completamento automatico e dello schema per l'editor XML. Per accedere alle varie opzioni XML, scegliere Strumenti   >  **Opzioni**  >  **Editor**  >   di testo XML e quindi Varie .
 
 ## <a name="auto-insert"></a>Inserimento automatico
 

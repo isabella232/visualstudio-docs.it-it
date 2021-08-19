@@ -194,9 +194,9 @@
           href: ide/create-new-project.md
         - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
-        - name: Aprire un progetto da un repo in Visual Studio 2017
+        - name: Aprire un progetto da un Visual Studio 2017
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Aprire un progetto da un Visual Studio 2019
+        - name: Aprire un progetto da un repo in Visual Studio 2019
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Portabilità, migrazione e aggiornamento dei progetti'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -1426,8 +1426,12 @@
           href: ide/dotfuscator/capabilities.md
         - name: Installare Dotfuscator Community
           href: ide/dotfuscator/install.md
+        - name: Registrare Dotfuscator Community
+          href: ide/dotfuscator/register.md
         - name: Aggiornare Dotfuscator Community
           href: ide/dotfuscator/upgrades.md
+        - name: Eseguire l'aggiornamento da Dotfuscator Community 5
+          href: ide/dotfuscator/upgrade-from-5.md
 - name: Risorse
   expanded: true
   items:
@@ -1456,7 +1460,7 @@
           href: ide/diagnostic-data-collection.md
     - name: Esperienze connesse in Visual Studio
       href: ide/reference/connected-experiences.md
-    - name: Risoluzione degli errori dell'IDE
+    - name: Risoluzione degli errori IDE
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: Invia commenti
   items:

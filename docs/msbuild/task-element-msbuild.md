@@ -1,6 +1,6 @@
 ---
 title: Elemento Task di target (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento Task della destinazione MSBuild, che crea ed esegue un'istanza di un'attività MSBuild.
+description: Informazioni sull'elemento Task di MSBuild Target, che crea ed esegue un'istanza di un'MSBuild attività.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -16,18 +16,19 @@ ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b8e3cb3acccc2e7ae4c6c2d93353bec79a3690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c95fc838337b5e1af288312daf840ac9c394b2dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966045"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142832"
 ---
-# <a name="task-element-of-target-msbuild"></a>Elemento Task di target (MSBuild)
+# <a name="task-element-of-target-msbuild"></a>Elemento Task di Target (MSBuild)
 
-Crea ed esegue un'istanza di un'attività MSBuild. Il nome dell'elemento viene determinato dal nome dell'attività da creare.
+Crea ed esegue un'istanza di un'MSBuild attività. Il nome dell'elemento viene determinato dal nome dell'attività da creare.
 
  \<Project> \<Target>
 
@@ -50,7 +51,7 @@ Crea ed esegue un'istanza di un'attività MSBuild. Il nome dell'elemento viene d
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`Condition`|Attributo facoltativo. Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
-|`ContinueOnError`|Attributo facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori dall'attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md).|
+|`ContinueOnError`|Attributo facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true.** Quando un'attività ha esito negativo, le attività successive [nell'elemento Target](../msbuild/target-element-msbuild.md) e la compilazione continuano a essere eseguite e tutti gli errori dell'attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop o** **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md).|
 |`Parameter`|Obbligatorio se la classe dell'attività contiene una o più proprietà contrassegnate con l'attributo `[Required]`.<br /><br /> Un parametro per l'attività definita dall'utente che contiene il valore del parametro come valore. L'elemento `Task` può includere qualsiasi numero di parametri, con ogni attributo mappato a una proprietà .NET nella classe dell'attività.|
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -63,11 +64,11 @@ Crea ed esegue un'istanza di un'attività MSBuild. Il nome dell'elemento viene d
 
 | Elemento | Descrizione |
 | - | - |
-| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività di MSBuild. |
+| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento Container per MSBuild attività. |
 
 ## <a name="remarks"></a>Commenti
 
- Un `Task` elemento in un file di progetto MSBuild crea un'istanza di un'attività, ne imposta le proprietà e le esegue. L'elemento `Output` archivia i parametri di output nelle proprietà o negli elementi da usare in altri punti nel file di progetto.
+ Un elemento in un MSBuild di progetto crea un'istanza di un'attività, imposta le proprietà su di essa `Task` ed esegue l'attività. L'elemento `Output` archivia i parametri di output nelle proprietà o negli elementi da usare in altri punti nel file di progetto.
 
  In presenza di elementi [OnError](../msbuild/onerror-element-msbuild.md) nell'elemento padre `Target` di un'attività, questi verranno comunque valutati se l'attività ha esito negativo e `ContinueOnError` ha il valore `false`. Per altre informazioni sulle attività, vedere [Attività](../msbuild/msbuild-tasks.md).
 
@@ -93,4 +94,4 @@ Crea ed esegue un'istanza di un'attività MSBuild. Il nome dell'elemento viene d
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)

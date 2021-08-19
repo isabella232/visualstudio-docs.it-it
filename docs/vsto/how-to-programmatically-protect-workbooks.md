@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Proteggere le cartelle di lavoro a livello di codice'
-description: Informazioni su come proteggere una cartella di lavoro di Microsoft Excel in modo che gli utenti non possano aggiungere o eliminare fogli di lavoro e rimuovere la protezione della cartella di lavoro a livello di codice.
+description: Informazioni su come proteggere una cartella di lavoro Microsoft Excel in modo che gli utenti non possano aggiungere o eliminare fogli di lavoro e rimuovere la protezione della cartella di lavoro a livello di codice.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,21 +17,22 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9f0b479c56be6da7b14f87263c8c01d66910ac20
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 41875cb3be9ee49d696991c1eb4bc33605123cd2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827110"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092215"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Procedura: Proteggere le cartelle di lavoro a livello di codice
-  È possibile proteggere una cartella Microsoft Office di Excel in modo che gli utenti non possano aggiungere o eliminare fogli di lavoro e rimuovere la protezione della cartella di lavoro a livello di codice. Facoltativamente, è possibile specificare una password, indicare se si vuole proteggere la struttura (in modo che gli utenti non possano spostare i fogli) e indicare se si vuole proteggere le finestre della cartella di lavoro.
+  È possibile proteggere una cartella di Microsoft Office Excel in modo che gli utenti non possano aggiungere o eliminare fogli di lavoro e rimuovere la protezione della cartella di lavoro a livello di codice. Facoltativamente, è possibile specificare una password, indicare se si vuole proteggere la struttura (in modo che gli utenti non possano spostare i fogli) e indicare se si vuole proteggere le finestre della cartella di lavoro.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- La protezione di una cartella di lavoro non impedirà agli utenti di modificare le celle. Per proteggere i dati, è necessario proteggere i fogli di lavoro. Per altre informazioni, vedere Procedura: Proteggere i fogli di [lavoro a livello di codice.](../vsto/how-to-programmatically-protect-worksheets.md)
+ La protezione di una cartella di lavoro non consente agli utenti di modificare le celle. Per proteggere i dati, è necessario proteggere i fogli di lavoro. Per altre informazioni, vedere [Procedura: Proteggere i fogli di](../vsto/how-to-programmatically-protect-worksheets.md)lavoro a livello di codice.
 
  Negli esempi di codice seguenti viene utilizzata una variabile per contenere una password ottenuta dall'utente.
 
@@ -39,14 +40,14 @@ ms.locfileid: "107827110"
 
 ### <a name="to-protect-a-workbook"></a>Per proteggere una cartella di lavoro
 
-1. Chiamare il <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> metodo della cartella di lavoro e includere una password. Per usare l'esempio di codice seguente, eseguirlo nella `ThisWorkbook` classe , non in una classe sheet.
+1. Chiamare il <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> metodo della cartella di lavoro e includere una password. Per usare l'esempio di codice seguente, eseguirlo nella `ThisWorkbook` classe , non in una classe foglio.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs" id="Snippet10":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb" id="Snippet10":::
 
 ### <a name="to-unprotect-a-workbook"></a>Per rimuovere la protezione di una cartella di lavoro
 
-1. Chiamare il <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> metodo , passando una password, se necessaria. Per usare l'esempio di codice seguente, eseguirlo nella `ThisWorkbook` classe , non in una classe sheet.
+1. Chiamare il <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> metodo , passando una password, se necessaria. Per usare l'esempio di codice seguente, eseguirlo nella `ThisWorkbook` classe , non in una classe foglio.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs" id="Snippet11":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb" id="Snippet11":::
@@ -55,7 +56,7 @@ ms.locfileid: "107827110"
 
 ### <a name="to-protect-a-workbook"></a>Per proteggere una cartella di lavoro
 
-1. Chiamare il <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> metodo della cartella di lavoro e includere una password. Questo esempio di codice usa la cartella di lavoro attiva. Per usare questo esempio, eseguire il codice dalla classe `ThisAddIn` nel progetto.
+1. Chiamare il <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> metodo della cartella di lavoro e includere una password. In questo esempio di codice viene utilizzata la cartella di lavoro attiva. Per usare questo esempio, eseguire il codice dalla classe `ThisAddIn` nel progetto.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet6":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet6":::
@@ -71,4 +72,4 @@ ms.locfileid: "107827110"
 - [Usare le cartelle di lavoro](../vsto/working-with-workbooks.md)
 - [Procedura: Proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)
 - [Procedura: Nascondere fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

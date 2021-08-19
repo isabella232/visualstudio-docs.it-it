@@ -1,5 +1,5 @@
 ---
-description: Recupera gli elementi figlio del simbolo validi in corrispondenza dell'indirizzo RVA (relativo Virtual Address) specificato.
+description: Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo RVA (Relative Virtual Address) specificato.
 title: IDiaSymbol::findChildrenExByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a888c29663e4d5dc9e487c9d6df283c0c13cfbf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c51a5ded5af919bd38cf5e83c2e86dd78246da31
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156762"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074532"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
-Recupera gli elementi figlio del simbolo validi in corrispondenza dell'indirizzo RVA (relativo Virtual Address) specificato.
+Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo RVA (Relative Virtual Address) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,34 +39,34 @@ HRESULT findChildrenExByRVA (
 #### <a name="parameters"></a>Parametri
  `symtag`
 
-in Specifica i tag dei simboli degli elementi figlio da recuperare, come definito nell' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Impostare su `SymTagNull` per tutti gli elementi figlio da recuperare.
+[in] Specifica i tag dei simboli degli elementi figlio da recuperare, come definito [nell'enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Impostare su `SymTagNull` per recuperare tutti gli elementi figlio.
 
  `name`
 
-in Specifica il nome degli elementi figlio da recuperare. Impostare su `NULL` per tutti gli elementi figlio da recuperare.
+[in] Specifica il nome degli elementi figlio da recuperare. Impostare su `NULL` per recuperare tutti gli elementi figlio.
 
  `compareFlags`
 
-in Specifica le opzioni di confronto da applicare alla corrispondenza dei nomi. I valori dell'enumerazione [NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) possono essere usati singolarmente o in combinazione.
+[in] Specifica le opzioni di confronto da applicare alla corrispondenza dei nomi. I valori [dell'enumerazione NameSearchOptions Enumeration](../../debugger/debug-interface-access/namesearchoptions.md) possono essere usati da soli o in combinazione.
 
  `address`
 
-in Specifica l'RVA.
+[in] Specifica l'RVA.
 
  `ppResult`
 
-out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) che contiene un elenco dei simboli figlio recuperati.
+[out] Restituisce un [oggetto IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) che contiene un elenco dei simboli figlio recuperati.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce `S_OK` se è stato trovato almeno un elemento figlio del simbolo oppure restituisce `S_FALSE` se non sono stati trovati elementi figlio; in caso contrario, restituisce un codice di errore.
+ Restituisce se è stato trovato almeno un elemento figlio del simbolo oppure restituisce se non sono stati trovati elementi figlio; in caso `S_OK` `S_FALSE` contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- I simboli locali restituiti includono informazioni sull'intervallo Live.
+ I simboli locali restituiti includono informazioni sull'intervallo live.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: dia2. h
+ Intestazione: Dia2.h
 
- Libreria: diaguids. lib
+ Libreria: diaguids.lib
 
  DLL: msdia100.dll
 

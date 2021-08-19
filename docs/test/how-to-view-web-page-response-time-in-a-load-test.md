@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66084cee9d5d2ba979a2967fbe2782ead65df17f6c3c2130966c5d6db08ac3b4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9b8889bfe93a28e5ce2ed27f4b96b9dd87bb11f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121227128"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075645"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: Visualizzare il tempo di risposta delle pagine Web in un test di carico usando l'Analizzatore test di carico
 
-Il tempo necessario per il caricamento di ogni pagina Web è noto come *tempo di risposta.* Quando si crea un test web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina web nel test web.
+Il tempo necessario per il caricamento di ogni pagina Web è noto come *tempo di risposta*. Quando si crea un test web, è possibile impostare un tempo di risposta obiettivo per ogni richiesta di pagina web nel test web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -32,7 +32,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 - La percentuale di iterazioni test che soddisfano il tempo di risposta obiettivo per la pagina.
 
-- È possibile analizzare i tempi di risposta delle pagine Web usando la visualizzazione Tabelle o La visualizzazione Grafici nell'analizzatore **test di carico:**
+- È possibile analizzare i tempi di risposta delle pagine Web usando la visualizzazione Tabelle o la visualizzazione Grafici **nell'Analizzatore test di carico:**
 
 - Analisi dei tempi di risposta della pagina web nella visualizzazione Tabelle
 
@@ -60,12 +60,12 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
    |**95%**|Novantacinquesimo percentile per il tempo di risposta. Ciò indica che il 95% delle pagine ha risposto più velocemente di questo numero, mentre il 5% più lentamente.|
    |**99%**|Novantanovesimo percentile per il tempo di risposta. Ciò indica che il 99% delle pagine ha risposto più velocemente di questo numero, mentre il 1% più lentamente.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Max**|Tempo di risposta massimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-   |**Std Dev**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Sviluppo std**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Tempo di risposta pagina**|Tempo di risposta medio per tutte le richieste effettuate per la pagina Web.|
-   |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:**  L'obiettivo temporale della pagina viene visualizzato solo quando l'obiettivo è stato definito per la richiesta nel test delle prestazioni Web.|
+   |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:**  L'obiettivo del tempo di pagina viene visualizzato solo quando l'obiettivo è stato definito per la richiesta nel test delle prestazioni Web.|
    |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina web che soddisfano il tempo di risposta obiettivo.|
 
-   Per altre informazioni, vedere Analizzare i risultati e gli errori del [test di carico nella vista Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+   Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Visualizzare i dati sul tempo di risposta in un grafico
 
@@ -73,7 +73,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 Per visualizzare i dati sul tempo di risposta in un grafico:
 
-1. **Nell'analizzatore test di** carico scegliere **Grafici sulla** barra degli strumenti per assicurarsi che il grafo sia visualizzato.
+1. **Nell'Analizzatore test di** carico **scegliere Grafici sulla** barra degli strumenti per assicurarsi che il grafico sia visualizzato.
 
 2. Nella finestra **Contatori** espandere il nodo dello scenario desiderato, ad esempio `Scenario1`.
 
@@ -87,12 +87,12 @@ Per visualizzare i dati sul tempo di risposta in un grafico:
 
     I dati vengono aggiunti al grafico.
 
-7. (Facoltativo) Ripetere il passaggio precedente per **Avg. Page Time**(Tempo medio pagina), **Page Response Time Goal (Obiettivo tempo di** risposta pagina) **e Total Pages (Totale pagine).**
+7. (Facoltativo) Ripetere il passaggio precedente per **Avg. Page Time (Tempo** medio pagina), **Page Response Time Goal (Obiettivo tempo di** risposta pagina) e Total Pages **(Totale pagine).**
 
    > [!NOTE]
    > Il valore **Page Response Time Goal** è costante.
 
-   Per altre informazioni, vedere [Analizzare i risultati del test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
+   Per altre informazioni, vedere [Analizzare i risultati dei test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Vedi anche
 

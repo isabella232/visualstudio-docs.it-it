@@ -1,6 +1,6 @@
 ---
 title: Attività RemoveDir | Microsoft Docs
-description: Informazioni su come MSBuild usa l'attività RemoveDir per rimuovere la directory specificata e tutti i relativi file e sottodirectory.
+description: Informazioni su MSBuild'attività RemoveDir per rimuovere la directory specificata e tutti i relativi file e sottodirectory.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 879cbe356f9da52ce0679ee63355d54aec0c9d1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 342f1da7d476f95397d474d8edf972f36f49b5c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931825"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143079"
 ---
 # <a name="removedir-task"></a>RemoveDir (attività)
 
@@ -42,7 +43,7 @@ Rimuove le directory specificate con tutti i relativi file e sottodirectory.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

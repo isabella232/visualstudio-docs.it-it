@@ -1,5 +1,5 @@
 ---
-description: Questa funzione ottiene il numero di versione dell'API plug-in del controllo del codice sorgente supportata dal plug-in di controllo del codice sorgente.
+description: Questa funzione ottiene il numero di versione dell'API plug-in del controllo del codice sorgente supportata dal plug-in del controllo del codice sorgente.
 title: Funzione SccGetVersion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dd1501e4d9341241b0c07d67571d362ff0fe1dd0bffc489be8cf5c35b4ecd77
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3746d249152062d3dc877d0be9dbe6082f2eb8d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447753"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110202"
 ---
 # <a name="sccgetversion-function"></a>Funzione SccGetVersion
-Questa funzione ottiene il numero di versione dell'API plug-in del controllo del codice sorgente supportata dal plug-in di controllo del codice sorgente.
+Questa funzione ottiene il numero di versione dell'API plug-in del controllo del codice sorgente supportata dal plug-in del controllo del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
 

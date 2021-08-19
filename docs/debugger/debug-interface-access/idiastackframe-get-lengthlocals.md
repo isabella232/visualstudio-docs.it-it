@@ -1,5 +1,5 @@
 ---
-description: IDiaStackFrame::get_lengthLocals recupera il numero di byte di variabili locali inseriti nello stack.
+description: IDiaStackFrame::get_lengthLocals recupera il numero di byte delle variabili locali di cui è stato inserito il push nello stack.
 title: IDiaStackFrame::get_lengthLocals | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ece9a0c98cedccb96df48766dff0465e878a75da0c625c9fac8b7396ca7fa8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2f869744ea9b1093fa3e7d2cf16cf1203af4b2bf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454871"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074692"
 ---
 # <a name="idiastackframeget_lengthlocals"></a>IDiaStackFrame::get_lengthLocals
-Recupera il numero di byte di variabili locali inseriti nello stack.
+Recupera il numero di byte delle variabili locali di cui è stato inserito il push nello stack.
 
 ## <a name="syntax"></a>Sintassi
 

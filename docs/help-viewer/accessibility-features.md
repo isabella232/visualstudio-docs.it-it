@@ -1,6 +1,6 @@
 ---
 title: Accessibilità di Help Viewer
-description: Esaminare l'elenco delle funzionalità di accessibilità nel Microsoft Help Viewer, coprendo l'accesso alla tastiera, le dimensioni del carattere, le dimensioni della finestra e la posizione del Visualizzatore della guida.
+description: Esaminare l'elenco delle funzionalità di accessibilità nel Microsoft Help Viewer, che riguardano l'accesso tramite tastiera, le dimensioni del carattere, le dimensioni della finestra e la posizione di Help Viewer.
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,15 @@ ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ada860eb82b6c391e04e7431d6625c876174654
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9aff2c09e740aff68f98a27df7dff326cac7a0ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944355"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109708"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funzionalità di accessibilità di Help Viewer
 Microsoft cerca di sviluppare prodotti e servizi che siano facili da utilizzare per chiunque. Questo argomento fornisce le informazioni sulle funzionalità, i prodotti e i servizi in grado di rendere Microsoft Help Viewer accessibile agli utenti con diverse abilità.

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c875f115611c1e28af39874ca8f384b0afb067022f6539b0f2ff5d9855f77a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6298300127cbcbfec706bb5cf9fcda89a68c12cf
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375111"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334635"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procedura dettagliata: Creare un SDK con C++
 Questa procedura dettagliata illustra come creare un SDK nativo della libreria matematica C++, creare un pacchetto dell'SDK come estensione Visual Studio (VSIX) e quindi usarlo per creare un'app. La procedura dettagliata è suddivisa in questi passaggi:
@@ -28,11 +28,11 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 - [Per creare un'app di esempio che usa la libreria di classi](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK.](../extensibility/visual-studio-sdk.md)
+ Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere Visual Studio [SDK](../extensibility/visual-studio-sdk.md).
 
 ## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>Per creare le librerie native e Windows Runtime
 
-1. Nella barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
+1. Sulla barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
 
 2. Nell'elenco dei modelli espandere **Visual C++** Windows Universale e quindi selezionare il modello  >  DLL **(Windows app** universali). Nella casella **Nome** specificare `NativeMath` e quindi fare clic sul pulsante **OK.**
 
@@ -46,7 +46,7 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
 5. In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione  **'NativeMath'** e quindi scegliere  >  **Aggiungi nuovo** Project .
 
-6. Nell'elenco dei modelli espandere **Visual C++** e quindi selezionare il modello Windows **Runtime Component** . Nella casella **Nome** specificare `NativeMathWRT` e quindi fare clic sul pulsante **OK.**
+6. Nell'elenco dei modelli espandere **Visual C++** e quindi selezionare il modello Windows **Componente runtime.** Nella casella **Nome** specificare `NativeMathWRT` e quindi fare clic sul pulsante **OK.**
 
 7. Aggiornare *Class1.h in* modo che corrisponda al codice seguente:
 
@@ -62,29 +62,13 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione  **'NativeMath'** e quindi scegliere  >  **Aggiungi nuovo** Project .
 
-2. Nell'elenco dei modelli espandere estendibilità di **Visual C#**  >  e quindi selezionare **VSIX Project**. Nella casella **Nome** specificare **NativeMathVSIX** e quindi scegliere **OK.**
+2. Nell'elenco dei modelli espandere **estendibilità di Visual C#** e quindi  >  selezionare **VSIX Project**. Nella casella **Nome** specificare **NativeMathVSIX** e quindi scegliere **OK.**
 
-3. In **Esplora soluzioni** aprire il menu di scelta rapida **per source.extension.vsixmanifest** e quindi scegliere **Visualizza codice**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per **source.extension.vsixmanifest** e quindi scegliere **Visualizza codice**.
 
 4. Usare il codice XML seguente per sostituire il codice XML esistente.
 
-    ```xml
-    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-      <Metadata>
-        <Identity Id="NativeMathVSIX..c6b3cae1-e7e2-4e71-90f6-21017ea0dff7" Version="1.0" Language="en-US" Publisher="MyName" />
-        <DisplayName>Native Math SDK</DisplayName>
-        <Description>Native Math Library w/ Windows Runtime Additions</Description>
-      </Metadata>
-      <Installation Scope="Global" AllUsers="true">
-        <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="Windows" TargetPlatformVersion="v8.0" SdkName="NativeMathSDK" SdkVersion="1.0" />
-      </Installation>
-      <Dependencies>
-      </Dependencies>
-      <Assets>
-        <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
-      </Assets>
-    </PackageManifest>
-    ```
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
 
 5. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto NativeMathVSIX** e quindi scegliere **Aggiungi**  >  **nuovo elemento**.
 
@@ -94,7 +78,7 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
     :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml" id="Snippet5":::
 
-8. In **Esplora soluzioni**, nel **progetto NativeMathVSIX,** creare questa struttura di cartelle:
+8. In **Esplora soluzioni**, nel **progetto NativeMathVSIX** creare questa struttura di cartelle:
 
     ```xml
     \DesignTime
@@ -141,9 +125,9 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
     </Project>
     ```
 
-12. Sulla barra dei menu scegliere **Visualizza**  >  **altro Windows** proprietà  >  **(Tastiera:** scegliere il tasto **F4).**
+12. Sulla barra dei menu scegliere **Visualizza** altro Windows finestra Proprietà  >    >   (Tastiera: scegliere **il tasto F4).**
 
-13. In **Esplora soluzioni** selezionare il file **NativeMathWRT.winmd.** Nella finestra **Proprietà** modificare la proprietà **Azione di** compilazione in **Contenuto** e quindi impostare la proprietà Includi **in VSIX** su **True.**
+13. In **Esplora soluzioni** selezionare il file **NativeMathWRT.winmd.** Nella finestra **Proprietà** modificare la proprietà **Azione di** compilazione in **Contenuto**, quindi impostare la proprietà Includi **in VSIX** su **True**.
 
      Ripetere questo processo per il file **NativeMath.h.**
 
@@ -171,9 +155,9 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
 ## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi
 
-1. Nella barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
+1. Sulla barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
 
-2. Nell'elenco dei modelli espandere **Visual C++**  >  **Windows Universale** e quindi selezionare **App vuota**. Nella casella **Nome** specificare **NativeMathSDKSample** e quindi scegliere **OK.**
+2. Nell'elenco dei modelli espandere **Visual C++**  >  **Windows Universale** e quindi selezionare **App vuota**. Nella casella **Nome** specificare **NativeMathSDKSample** e quindi fare clic sul **pulsante OK.**
 
 3. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto NativeMathSDKSample** e quindi scegliere **Aggiungi**  >  **riferimento**.
 
@@ -181,13 +165,13 @@ Questa procedura dettagliata illustra come creare un SDK nativo della libreria m
 
 5. Visualizzare le proprietà del progetto per NativeMathSDKSample.
 
-    Le proprietà definite in *NativeMathSDK.props* sono state applicate quando è stato aggiunto il riferimento. È possibile verificare che le proprietà siano state applicate esaminando **la VC++ directory** delle proprietà di configurazione del **progetto.**
+    Le proprietà definite in *NativeMathSDK.props* sono state applicate quando è stato aggiunto il riferimento. È possibile verificare che le proprietà siano state applicate esaminando la **VC++ directory** delle proprietà di configurazione **del progetto.**
 
 6. In **Esplora soluzioni** aprire **MainPage.xaml** e quindi usare il codice XAML seguente per sostituirlo:
 
     :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml" id="Snippet1":::
 
-7. Aggiornare *Mainpage.xaml.h* in modo che corrisponda al codice seguente:
+7. Aggiornare *Mainpage.xaml.h* in modo che corrisponda a questo codice:
 
     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h" id="Snippet2":::
 

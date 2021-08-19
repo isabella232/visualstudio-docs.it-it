@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 698277be15cc0c338e5a313809b3befc2f80744aaea1d987274a0443938f3ed2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6240f730023780bddc4a904b2e4ae8f96c54e7e7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126778"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 Imposta le impostazioni locali per il fornitore della porta.

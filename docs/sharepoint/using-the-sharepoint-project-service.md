@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f1edd12c7ca1fef8586ffdde6ee52ae2abd3eb29e90ae49641735f4197fe98bb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f94407d91bceb51fe8307c051e047a64397f236c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409358"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156175"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Usare il SharePoint servizio di progetto
   Il sistema di progetti SharePoint include un servizio progetto che può essere usato per eseguire attività correlate al sistema di progetti. Il servizio progetto è un oggetto <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.

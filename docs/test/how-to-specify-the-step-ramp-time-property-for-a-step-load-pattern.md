@@ -1,6 +1,6 @@
 ---
-title: Tempo di preparazione del passaggio per i test di carico
-description: Informazioni su come impostare la proprietà tempo di preparazione passaggio nella Finestra Proprietà. La proprietà Tempo di preparazione passaggio viene usata solo con un modello di carico per passaggio.
+title: Tempo di rampa del passaggio per i test di carico
+description: Informazioni su come impostare la proprietà Tempo di rampa passaggio nel Finestra Proprietà. La proprietà Tempo di preparazione passaggio viene usata solo con un modello di carico per passaggio.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +10,13 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 9d630d84124bb132c82389ecf73af24aac7e1a49
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 3cce2cecbebd6e215f5eb249fa7e999b404ccbc5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092449"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio
 
@@ -24,9 +25,9 @@ Dopo avere creato il test di carico mediante la **Creazione guidata test di cari
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Per un elenco completo delle proprietà dello scenario del test di carico e delle relative descrizioni, vedere [proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario di test di carico.](../test/load-test-scenario-properties.md)
 
-La proprietà tempo di preparazione **passaggio** viene impostata nella finestra **Proprietà** . Le proprietà degli scenari dei test di carico vengono modificate nell'**Editor test di carico**.
+La **proprietà Tempo di rampa** passaggio viene impostata nella **finestra** Proprietà. Le proprietà degli scenari dei test di carico vengono modificate nell'**Editor test di carico**.
 
 La proprietà **Tempo di preparazione passaggio** viene usata solo con un modello di carico passaggio. Per altre informazioni, vedere [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
@@ -45,7 +46,7 @@ Un modello di carico per passaggio viene utilizzato per aumentare il carico sul 
 Queste impostazioni attivano l'esecuzione del test di carico per 30 minuti (1800 secondi) a carichi utente di 100, 200, 300, fino a 2000 utenti.
 
 > [!NOTE]
-> La proprietà tempo di preparazione **passaggio** è la sola di queste proprietà che non è disponibile per la scelta nella **nuova creazione guidata test di carico**.
+> La **proprietà Tempo di** rampa passaggio è l'unica di queste proprietà che non è disponibile per la scelta nella finestra **Creazione guidata test di carico**.
 
 La proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti). In questo esempio il carico utente aumenterebbe da 100 a 200 utenti in un intervallo di 20 secondi, ovvero un aumento di 5 utenti al secondo.
 
@@ -75,4 +76,4 @@ La proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, a
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)
-- [Modificare i modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modificare i modelli di carico per modellare le attività degli utenti virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)

@@ -1,6 +1,6 @@
 ---
 title: Framework e piattaforma di destinazione di MSBuild | Microsoft Docs
-description: Informazioni su come creare un progetto MSBuild da eseguire in una versione di .NET Framework di destinazione e una piattaforma di destinazione o un'architettura software.
+description: Informazioni su come compilare un progetto MSBuild da eseguire in una versione .NET Framework di destinazione e in una piattaforma di destinazione o in un'architettura software.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,18 +8,19 @@ ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f30308e2ccb66494251347c5fc29de5a115d8d77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: edc39690f057054092dc311709886187d0d1abdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878409"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143092"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 
-È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile fare riferimento a un'applicazione per l'esecuzione nel .NET Framework 2,0 in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
+È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare come destinazione un'applicazione da eseguire nel .NET Framework 2.0 in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
 
 > [!IMPORTANT]
 > Questo articolo descrive il metodo precedente per specificare un framework di destinazione. I progetti in stile SDK abilitano framework di destinazione diversi, ad esempio netstandard. Per altre informazioni, vedere [Framework di destinazione](/dotnet/standard/frameworks).
@@ -32,13 +33,13 @@ ms.locfileid: "99878409"
 
 - .NET Framework 2.0 (incluso in Visual Studio 2005)
 
-- Il .NET Framework 3,0 (incluso in Windows Vista)
+- La .NET Framework 3.0 (inclusa in Windows Vista)
 
-- Il .NET Framework 3,5 (incluso in Visual Studio 2008)
+- Il .NET Framework 3.5 (incluso in Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- Il .NET Framework 4,6 (incluso in Visual Studio 2015)
+- Il .NET Framework 4.6 (incluso in Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -63,7 +64,7 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
  Un *profilo target* è un subset di un framework di destinazione. Ad esempio, Framework 4 Client Profile non include riferimenti agli assembly di MSBuild.
 
  > [!NOTE]
- > I profili di destinazione si applicano solo alle [librerie di classi](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)portabili.
+ > I profili di destinazione si applicano solo [alle librerie di classi portabili.](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)
 
  Il framework di destinazione viene specificato nella proprietà `TargetFrameworkProfile` in un file di progetto. È possibile modificare il profilo target usando il controllo del framework di destinazione nelle pagine delle proprietà del progetto nell'IDE.
 
@@ -78,7 +79,7 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
 
 - `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.
 
-- `x64` designa un sistema operativo Windows a 64 bit in esecuzione su un processore Intel x64 o sul relativo equivalente.
+- `x64`designa un sistema operativo Windows a 64 bit in esecuzione in un processore Intel x64 o nel relativo equivalente.
 
 - `Xbox` definisce la piattaforma Microsoft Xbox 360.
 

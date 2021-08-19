@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 74dfca28e59ddfe0b8d699ea742fdc2f23702885a5e55cc2d74bb7dadd58937c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c9b4c1c6caf43bcdb51ecb09e7dc09ebad3ab1d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121446872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143560"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>Semplificare il refactoring dell'interpolazione di stringhe
 
@@ -38,7 +38,7 @@ Questo refactoring si applica a:
 
 1. Posizionare il punto di caret sull'interpolazione di stringhe:
 
-2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
 
 3. Selezionare **Semplifica interpolazione**
 

@@ -1,6 +1,6 @@
 ---
 title: Classe di base TaskExtension | Microsoft Docs
-description: Informazioni sui parametri aggiunti dalla classe di base Microsoft.Build.Tasks.TaskExtension alle attività che ereditano da essa.
+description: Informazioni sui parametri che la classe di base Microsoft.Build.Tasks.TaskExtension aggiunge alle attività che ereditano da essa.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d8d7eb53e9fd85f977fb11ae9216c7825ee854c3a044203f4f6ebd62253572e6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 56bdde67acb9432cb02e89735a137ca3f094d6cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121302578"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142767"
 ---
 # <a name="taskextension-base-class"></a>Classe di base TaskExtension
 

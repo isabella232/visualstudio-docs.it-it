@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5487210ddf84e139c434bb33342b6cbcd21a77bf87c86755b08dbb5e5698b856
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 04cc77650572f5e3539d4b53e4602e4c16259b61
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121311544"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090837"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
 >[!NOTE]
@@ -37,7 +37,7 @@ ms.locfileid: "121311544"
  Passare a [Panoramica](overview-of-visual-studio-graphics-diagnostics.md) per altre informazioni sulle Visual Studio Diagnostica della grafica offerte.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Panoramica](overview-of-visual-studio-graphics-diagnostics.md) Vengono presentati il flusso Diagnostica della grafica e gli strumenti di .
+ [Panoramica](overview-of-visual-studio-graphics-diagnostics.md) Vengono presentati il flusso Diagnostica della grafica e gli strumenti.
 
  [Attività iniziali](getting-started-with-visual-studio-graphics-diagnostics.md) In questa sezione si apprenderà come installare Visual Studio Diagnostica della grafica e come iniziare a usare Diagnostica della grafica con l'app Direct3D.
 
@@ -45,13 +45,13 @@ ms.locfileid: "121311544"
 
  [Utilizzo GPU](../../profiling/gpu-usage.md) Per usare Diagnostica della grafica profilare l'app, usare lo strumento Utilizzo GPU. Utilizzo GPU può essere usato insieme ad altri strumenti di profilatura, ad esempio Utilizzo CPU, per correlare le attività della CPU e GPU che potrebbero contribuire a problemi di prestazioni nell'app.
 
- [Documento di log di grafica](graphics-log-document.md) Per iniziare l'esame di un log di grafica registrato, usare la finestra del documento Log di grafica per selezionare un frame acquisito, o anche un pixel specifico, in modo da poter esaminare in dettaglio gli eventi *che* lo interessano, ovvero le chiamate all'API DirectX.
+ [Documento di log di grafica](graphics-log-document.md) Per iniziare l'esame di un log di grafica registrato, usare la finestra del documento Log di grafica per selezionare un frame acquisito, o anche un pixel specifico, in modo da poter esaminare in dettaglio gli eventi *(ovvero* le chiamate api DirectX) che lo interessano.
 
  [Analisi dei frame](graphics-frame-analysis.md) Dopo aver selezionato un frame, è possibile usare analisi dei frame di grafica per esaminare e ottimizzare le prestazioni di rendering.
 
  [Elenco eventi](graphics-event-list.md) Dopo aver selezionato un frame, usare l'Elenco **eventi di grafica** per esaminarne gli eventi per determinare se sono correlati al problema di rendering.
 
- [Stato](graphics-state.md) La finestra Stato consente di comprendere lo stato della grafica attivo al momento dell'evento corrente.
+ [Stato](graphics-state.md) La finestra Stato consente di comprendere lo stato grafico attivo al momento dell'evento corrente.
 
  [Fasi della pipeline](graphics-pipeline-stages.md) Nella finestra **Fasi pipeline** grafica si esamina il modo in cui l'evento attualmente selezionato viene elaborato da ogni fase della pipeline grafica in modo da poter identificare la prima posizione in cui viene visualizzato il problema di rendering. L'esame delle fasi della pipeline è particolarmente utile quando un oggetto non viene visualizzato a causa di una trasformazione non corretta o quando una delle fasi produce output non corrispondente a quanto atteso dalla fase successiva.
 
@@ -65,7 +65,7 @@ ms.locfileid: "121311544"
 
  [Strumento di acquisizione da riga di comando](command-line-capture-tool.md) Usare lo strumento di acquisizione da riga di comando per acquisire e riprodurre rapidamente le informazioni grafiche senza Visual Studio o a livello di codice. In particolare, è possibile usare lo strumento di acquisizione da riga di comando per l'automazione o in un ambiente di test.
 
- [Esempi](graphics-diagnostics-examples.md) Diversi esempi illustrano come usare gli strumenti di Diagnostica della grafica insieme per diagnosticare diversi tipi di problemi di rendering.
+ [Esempi](graphics-diagnostics-examples.md) Alcuni esempi illustrano come usare gli strumenti Diagnostica della grafica per diagnosticare diversi tipi di problemi di rendering.
 
 ## <a name="related-sections"></a>Sezioni correlate
 

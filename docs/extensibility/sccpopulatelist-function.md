@@ -1,5 +1,5 @@
 ---
-description: Questa funzione aggiorna un elenco di file per un determinato comando di controllo del codice sorgente e fornisce lo stato del controllo del codice sorgente in tutti i file specificati.
+description: Questa funzione aggiorna un elenco di file per un comando di controllo del codice sorgente specifico e fornisce lo stato del controllo del codice sorgente per tutti i file specificati.
 title: Funzione SccPopulateList | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce9ed39a90e467bb31f8272d9977406149a5b1ecdf3eecc390903ad0bf24c9e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9cf2474f32e1d1cacb1d5a137f42ae30571c6d15
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305204"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110033"
 ---
 # <a name="sccpopulatelist-function"></a>Funzione SccPopulateList
-Questa funzione aggiorna un elenco di file per un determinato comando di controllo del codice sorgente e fornisce lo stato del controllo del codice sorgente in tutti i file specificati.
+Questa funzione aggiorna un elenco di file per un comando di controllo del codice sorgente specifico e fornisce lo stato del controllo del codice sorgente per tutti i file specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,11 +44,11 @@ SCCRTN SccPopulateList (
 
 [in] Struttura del contesto del plug-in del controllo del codice sorgente.
 
- nComando
+ nCommand
 
-[in] Comando del controllo del codice sorgente che verrà applicato a tutti i file nella `lpFileNames` matrice (vedere [Codice di comando](../extensibility/command-code-enumerator.md) per un elenco dei comandi possibili).
+[in] Comando di controllo del codice sorgente che verrà applicato a tutti i file nella `lpFileNames` matrice (vedere [Codice di comando](../extensibility/command-code-enumerator.md) per un elenco dei comandi possibili).
 
- nFile
+ nFiles
 
 [in] Numero di file nella `lpFileNames` matrice.
 
@@ -58,22 +58,22 @@ SCCRTN SccPopulateList (
 
  pfnPopulate
 
-[in] Funzione di callback IDE da chiamare per aggiungere e rimuovere file (per informazioni dettagliate, [vedere POPLISTFUNC).](../extensibility/poplistfunc.md)
+[in] Funzione di callback IDE da chiamare per aggiungere e rimuovere file (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per informazioni dettagliate).
 
  pvCallerData
 
-[in] Valore da passare invariato alla funzione di callback.
+[in] Valore che deve essere passato invariato alla funzione di callback.
 
  lpStatus
 
-[in, out] Matrice per il plug-in di controllo del codice sorgente per restituire i flag di stato per ogni file.
+[in, out] Matrice per il plug-in del controllo del codice sorgente per restituire i flag di stato per ogni file.
 
- fOpzioni
+ fOptions
 
-[in] Flag di comando (per informazioni dettagliate, vedere la sezione "Flag PopulateList" di [Bitflags Usati da comandi](../extensibility/bitflags-used-by-specific-commands.md) specifici).
+[in] Flag di comando (per informazioni dettagliate, vedere la sezione "Flag PopulateList" in Flag di bit usati [da](../extensibility/bitflags-used-by-specific-commands.md) comandi specifici).
 
 ## <a name="return-value"></a>Valore restituito
- È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|
@@ -81,15 +81,15 @@ SCCRTN SccPopulateList (
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Commenti
- Questa funzione esamina l'elenco di file per il relativo stato corrente. Usa la funzione di callback per inviare una notifica al chiamante quando un file non corrisponde `pfnPopulate` ai criteri per `nCommand` . Ad esempio, se il comando è e un file nell'elenco non è estratto, il callback viene usato `SCC_COMMAND_CHECKIN` per informare il chiamante. In alcuni casi, il plug-in del controllo del codice sorgente può trovare altri file che potrebbero far parte del comando e aggiungerli. Ciò consente, ad esempio, a un utente Visual Basic di estrarre un file .bmp usato dal proprio progetto, ma non viene visualizzato nel file di Visual Basic progetto. Un utente sceglie il **comando Get** nell'IDE. L'IDE visualizza un elenco di tutti i file che l'utente può ottenere, ma prima che venga visualizzato l'elenco, viene chiamata la funzione per assicurarsi che l'elenco da visualizzare sia `SccPopulateList` aggiornato.
+ Questa funzione esamina l'elenco dei file per verificare lo stato corrente. Usa la funzione `pfnPopulate` di callback per notificare al chiamante quando un file non corrisponde ai criteri per `nCommand` . Ad esempio, se il comando è e un file nell'elenco non è estratto, il callback viene usato `SCC_COMMAND_CHECKIN` per informare il chiamante. In alcuni casi, il plug-in del controllo del codice sorgente può trovare altri file che potrebbero far parte del comando e aggiungerli. In questo modo, ad esempio, un utente di Visual Basic può estrarre un file .bmp usato dal proprio progetto, ma non viene visualizzato nel file Visual Basic progetto. Un utente sceglie il **comando Get** nell'IDE. L'IDE visualizza un elenco di tutti i file che l'utente può ottenere, ma prima che venga visualizzato l'elenco, viene chiamata la funzione per assicurarsi che l'elenco da visualizzare sia `SccPopulateList` aggiornato.
 
 ## <a name="example"></a>Esempio
- L'IDE compila un elenco di file che l'utente può ottenere. Prima di visualizzare questo elenco, chiama la funzione , offrendo al plug-in del controllo del codice sorgente la possibilità di aggiungere ed `SccPopulateList` eliminare file dall'elenco. Il plug-in modifica l'elenco chiamando la funzione di callback specificata (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per altri dettagli).
+ L'IDE compila un elenco di file che l'utente può ottenere. Prima di visualizzare questo elenco, chiama la funzione , offrendo al plug-in del controllo del codice sorgente la possibilità di `SccPopulateList` aggiungere ed eliminare file dall'elenco. Il plug-in modifica l'elenco chiamando la funzione di callback specificata (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per altri dettagli).
 
- Il plug-in continua a chiamare la funzione , che aggiunge ed elimina i file, fino a quando non viene completata e `pfnPopulate` quindi viene restituita dalla `SccPopulateList` funzione. L'IDE può quindi visualizzare il relativo elenco. La `lpStatus` matrice rappresenta tutti i file nell'elenco originale passato dall'IDE. Il plug-in compila lo stato di tutti questi file, oltre a usare la funzione di callback.
+ Il plug-in continua a chiamare la funzione , che aggiunge ed elimina i file, fino a quando non viene completata e `pfnPopulate` quindi viene restituito dalla `SccPopulateList` funzione . L'IDE può quindi visualizzare il relativo elenco. La `lpStatus` matrice rappresenta tutti i file nell'elenco originale passato dall'IDE. Il plug-in inserisce lo stato di tutti questi file oltre a usare la funzione di callback .
 
 > [!NOTE]
-> Un plug-in del controllo del codice sorgente ha sempre la possibilità di tornare immediatamente da questa funzione, lasciando l'elenco così come è. Se un plug-in implementa questa funzione, può indicarlo impostando il flag di bit della funzionalità nella prima chiamata `SCC_CAP_POPULATELIST` a [SccInitialize](../extensibility/sccinitialize-function.md). Per impostazione predefinita, il plug-in deve sempre presupporre che tutti gli elementi passati siano file. Tuttavia, se l'IDE imposta il flag nel parametro , tutti gli elementi passati devono `SCC_PL_DIR` `fOptions` essere considerati directory. Il plug-in deve aggiungere tutti i file che appartengono alle directory. L'IDE non passerà mai una combinazione di file e directory.
+> Un plug-in del controllo del codice sorgente ha sempre la possibilità di tornare immediatamente da questa funzione, lasciando l'elenco così come è. Se un plug-in implementa questa funzione, può indicare questo valore impostando il flag di bit della funzionalità nella prima chiamata `SCC_CAP_POPULATELIST` a [SccInitialize.](../extensibility/sccinitialize-function.md) Per impostazione predefinita, il plug-in deve sempre presupporre che tutti gli elementi passati siano file. Tuttavia, se l'IDE imposta il flag nel parametro , tutti gli elementi `SCC_PL_DIR` passati devono essere considerati `fOptions` directory. Il plug-in deve aggiungere tutti i file che appartengono alle directory. L'IDE non passerà mai una combinazione di file e directory.
 
 ## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

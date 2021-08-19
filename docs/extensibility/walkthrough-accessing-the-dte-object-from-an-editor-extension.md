@@ -10,18 +10,19 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094a37960fa5b32d018eebe3becee4fde43cc392
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: ffac31d74412e8f0d7a99e62374762e0dc9adad9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905124"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049207"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>Procedura dettagliata: Accedere all'oggetto DTE da un'estensione dell'editor
 
-Nei pacchetti VSPackage è possibile ottenere l'oggetto DTE chiamando il <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metodo con il tipo dell'oggetto DTE. Nelle Managed Extensibility Framework (MEF) è possibile importare e quindi <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> chiamare il metodo con un tipo di <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> <xref:EnvDTE.DTE> .
+Nei pacchetti VSPackage è possibile ottenere l'oggetto DTE chiamando il <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metodo con il tipo dell'oggetto DTE. Nelle Managed Extensibility Framework (MEF) è possibile importare e <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> quindi chiamare il metodo con un tipo di <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> <xref:EnvDTE.DTE> .
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -92,7 +93,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Punti di estensione del servizio di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)
 - [Avviare Visual Studio tramite DTE](launch-visual-studio-dte.md)

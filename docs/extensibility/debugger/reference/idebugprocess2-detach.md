@@ -1,5 +1,5 @@
 ---
-description: Disconnette il debugger da questo processo scollegando tutti i programmi nel processo.
+description: Scollega il debugger da questo processo scollegando tutti i programmi nel processo.
 title: IDebugProcess2::D etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 957579bb2a19bffb0774ecd400218e5f8105127734969c26c43772dbea743bdc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 44e45fa717f1292b57626df3fc68f90c8f0a9639
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276867"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126726"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-Disconnette il debugger da questo processo scollegando tutti i programmi nel processo.
+Scollega il debugger da questo processo scollegando tutti i programmi nel processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ int Detach();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Tutti i programmi e il processo continuano l'esecuzione, ma non fanno più parte della sessione di debug. Al termine dell'operazione di scollegamento, non verranno inviati altri eventi di debug per questo processo (e i relativi programmi).
+ Tutti i programmi e il processo continuano a essere in esecuzione, ma non fanno più parte della sessione di debug. Al termine dell'operazione di scollegamento, non verranno inviati altri eventi di debug per questo processo (e i relativi programmi).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

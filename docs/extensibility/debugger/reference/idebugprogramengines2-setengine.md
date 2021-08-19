@@ -1,6 +1,6 @@
 ---
-description: Indica al programma o al nodo del programma quale motore di debug (DE) utilizzare per eseguire il debug del programma.
-title: 'IDebugProgramEngines2:: semotore | Microsoft Docs'
+description: Indica al programma o al nodo del programma quale motore di debug (DE) usare per eseguire il debug di questo programma.
+title: IDebugProgramEngines2::SetEngine | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: c05857ee-89cf-455e-8f1e-300cce4a2eab
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e938cd63c88d0d58866b36528a1342983dc457f1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 04df0fe2c61b28eeb44ded883df4b0053633da0d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084181"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126427"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
-Indica al programma o al nodo del programma quale motore di debug (DE) utilizzare per eseguire il debug del programma.
+Indica al programma o al nodo del programma quale motore di debug (DE) usare per eseguire il debug di questo programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int SetEngine(
 
 ## <a name="parameters"></a>Parametri
 `guidEngine`\
-in GUID dell'oggetto DE.
+[in] GUID del de.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

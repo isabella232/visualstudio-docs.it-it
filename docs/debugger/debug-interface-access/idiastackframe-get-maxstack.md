@@ -1,5 +1,5 @@
 ---
-description: 'IDiaStackFrame:: get_maxStack Recupera il numero massimo di byte inseriti nello stack nel frame.'
+description: IDiaStackFrame::get_maxStack recupera il numero massimo di byte inseriti nello stack nel frame.
 title: IDiaStackFrame::get_maxStack | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: 6352e972-7105-4d0e-aeba-b8fc16d62dec
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7668d07db8717892951110b181ae2baa5cd7d153
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4ec5aab1561d70488a8e57db85a74fdca9da70cd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074668"
 ---
 # <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
 Recupera il numero massimo di byte inseriti nello stack nel frame.
@@ -34,7 +35,7 @@ HRESULT get_maxStack (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il numero massimo di byte inseriti nello stack.
+[out] Restituisce il numero massimo di byte inseriti nello stack.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

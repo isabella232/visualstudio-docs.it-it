@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 21556deca0da180d145b11ed155e0d8b993301a00362e9a67a9af1d4aa02f9a6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 15782ae1a10eebd39f6c7b15748d6b050c6a4707
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121229702"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156513"
 ---
 # <a name="refactor-python-code"></a>Effettuare il refactoring del codice Python
 

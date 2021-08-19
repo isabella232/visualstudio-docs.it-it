@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 59fe8ee674bca836f25db75a828bbb807734e4b57e646b563570bae3355b766e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 19585e36094868cedad279f0f7b4d982647da1d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121242782"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091825"
 ---
 # <a name="xml-document-validation"></a>Convalida di documenti XML
 
