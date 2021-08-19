@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1ee1880f3f695799f019e1d5105ff3cc1ca5d62c5498d30141b9ef30b71f4d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c34c07cf1db2eea797f362d05caa7637ba1286c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113712"
 ---
 # <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 Recupera il numero di elementi dati del frame.

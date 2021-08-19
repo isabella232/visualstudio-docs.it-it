@@ -1,6 +1,6 @@
 ---
-title: Risolvere i problemi di modelli di progetto e modelli di elementi
-description: Informazioni su come risolvere i problemi relativi ai modelli quando questi non vengono caricati nell'ambiente di sviluppo.
+title: Risolvere i problemi relativi ai modelli di progetto e ai modelli di elemento
+description: Informazioni su come risolvere i problemi relativi ai modelli quando non vengono caricati nell'ambiente di sviluppo.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
@@ -9,12 +9,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 842e34ce18767f5d16cc55d16b8346369fe6cef9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 00580c7a1e63dd3c68fc9a86b67812ed3a1dfa8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869115"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085962"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedura: Risolvere i problemi relativi ai modelli
 
@@ -38,7 +39,7 @@ Se il file con estensione *vstemplate* di un modello non rispetta lo schema di m
 
 1. Individuare il file con estensione *zip* che contiene il modello.
 
-1. Estrarre il file *zip* .
+1. Estrarre il *.zip* file.
 
 1. Nel menu **File** di Visual Studio scegliere **Apri** > **File**.
 
@@ -51,7 +52,7 @@ Se il file con estensione *vstemplate* di un modello non rispetta lo schema di m
 
 1. Salvare e chiudere il file con estensione *vstemplate*.
 
-1. Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse e scegliere **Invia a**  >  **cartella compressa**. I file selezionati vengono compressi in un file con *estensione zip* .
+1. Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse e scegliere Invia alla cartella  >  **compressa**. I file selezionati vengono compressi in un *.zip* file.
 
 1. Inserire il nuovo file *zip* nella stessa directory del file *zip* precedente.
 
@@ -66,4 +67,4 @@ Se il file con estensione *vstemplate* di un modello non rispetta lo schema di m
 - [Risoluzione dei problemi di individuazione dei modelli (estendibilità)](../extensibility/troubleshooting-template-discovery.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Informazioni di riferimento sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)

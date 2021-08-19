@@ -10,19 +10,19 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0aa917f79845b7baaad4c65583a5a5a07853f4feec28cab7de9646751aaf3b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7e8d1ed7ea20daa171541a21cf2d0e14a376180b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121429147"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085591"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 I modelli di testo Visual Studio un modo utile per generare testo di qualsiasi tipo. È possibile usare modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare parte del codice del progetto. Questo argomento riepiloga le domande più frequenti Ricerca per categorie ...?" Domande.
 
  In questo argomento, più risposte precedute da elenchi puntati sono suggerimenti alternativi.
 
- Per un'introduzione generale ai modelli di testo, vedere [Generazione di codice e Modelli di testo T4.](../modeling/code-generation-and-t4-text-templates.md)
+ Per un'introduzione generale ai modelli di testo, vedere [Generazione di codice e modelli di testo T4.](../modeling/code-generation-and-t4-text-templates.md)
 
 ## <a name="how-to-"></a>Come si fa...
 
@@ -116,7 +116,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
      L'implicazione del termine "modello" è che rappresenta alcuni aspetti dell'azienda più direttamente rispetto al codice del programma generato o ad altri file. Ad esempio, potrebbe rappresentare il piano di una rete di comunicazione che il software generato supervisionerà.
 
 ### <a name="what-is-the-benefit-of-using-text-templates"></a>Qual è il vantaggio dell'uso di modelli di testo?
- In genere, si generano più codice o altri file da un modello. Il modello rappresenta i requisiti più direttamente del codice generato. Omette i dettagli di implementazione e viene scritto in termini di requisiti, anziché del codice. Quando i requisiti cambiano, come di solito, è possibile aggiornare il modello in modo più semplice e affidabile rispetto alle diverse parti del codice del programma.
+ In genere, si generano più codice o altri file da un modello. Il modello rappresenta i requisiti più direttamente del codice generato. Omette i dettagli di implementazione e viene scritto in termini di requisiti, anziché nel codice. Quando i requisiti cambiano, come in genere, è possibile aggiornare il modello in modo più semplice e affidabile rispetto alle diverse parti del codice del programma.
 
  La generazione di codice è quindi uno strumento utile dal punto di vista dei metodi di sviluppo agile.
 

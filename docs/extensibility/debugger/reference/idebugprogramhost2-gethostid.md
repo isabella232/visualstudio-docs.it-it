@@ -1,5 +1,5 @@
 ---
-description: Ottiene l'identificatore di processo del processo che ospita questo programma.
+description: Ottiene l'identificatore del processo che ospita questo programma.
 title: IDebugProgramHost2::GetHostId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30697b9388183c36177ebce0c05480e026580b12bab0bfb9e5f928d9d4858b5d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b6e2f65ba4258f3990d06e4617a98338b9696b27
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389644"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159659"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
-Ottiene l'identificatore di processo del processo che ospita questo programma.
+Ottiene l'identificatore del processo che ospita questo programma.
 
 ## <a name="syntax"></a>Sintassi
 

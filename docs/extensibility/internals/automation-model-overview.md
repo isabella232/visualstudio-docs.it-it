@@ -14,18 +14,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24fdf3e87e4e8e58237052527e595bd60908373388d1e127f2607c88a609bfac
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ed2f1491b9e692662de282e6f78f9f44c59aa5d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159347"
 ---
 # <a name="automation-model-overview"></a>Panoramica del modello di automazione
 Il modello di automazione è costituito da un set di oggetti in cui è possibile scrivere Visual Studio componente aggiuntivo o estensione. Un componente aggiuntivo è un'applicazione in grado di modificare l'ambiente Visual Studio e automatizzare le attività comuni. Un Visual Studio estensione può creare componenti Visual Studio personalizzati o aggiungere alla funzionalità dei componenti standard, ad esempio l'editor di testo.
 
 ## <a name="objects-in-the-automation-model"></a>Oggetti nel modello di automazione
- Il modello di automazione è costituito da gruppi correlati di oggetti che controllano i facet principali dell'ambiente comune. Il diagramma seguente illustra il set completo di oggetti Visual Studio che costituiscono il modello di automazione.
+ Il modello di automazione è costituito da gruppi correlati di oggetti che controllano i facet principali dell'ambiente comune. Il diagramma seguente illustra l'ampio set di oggetti Visual Studio che costituiscono il modello di automazione.
 
  ![Visual Studio di oggetti di automazione](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")
 

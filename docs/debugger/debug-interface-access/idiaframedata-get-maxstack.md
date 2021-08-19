@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 463925b552d9b8942a51d581bfe6ad31828ca89ebaf97f3993a63c739bca2d21
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f0af1f96f3f9ee468c18b89a1fd15f291ce2de0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147287"
 ---
 # <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
 Recupera il numero massimo di byte inseriti nello stack nel frame.
