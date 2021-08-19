@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9349492bbedc9bcf87af5eda58b19f571fa7e6cac6dcc5c6b89f05ce42ca9e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d407418d158adbd06dd64f998a1c6831b9f7cd1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343182"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133237"
 ---
 # <a name="debugger-concepts"></a>Concetti relativi al debugger
 Per eseguire la compilazione Visual Studio pacchetto di debug, è necessario avere familiarità con i concetti relativi all'architettura usati nella progettazione del pacchetto.

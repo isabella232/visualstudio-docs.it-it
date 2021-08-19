@@ -2,7 +2,7 @@
 title: Rimuovere Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate su Visual Studio rimuovere completamente i dati dal computer.
-ms.date: 12/19/2019
+ms.date: 08/17/2021
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -15,19 +15,19 @@ f1_keywords:
 - clean up
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5af0cf31d3a53b12910ea8108c93a99cbaf3e87f
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 82545d775d03b13ce87ea11682124f43e70856cf
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306956"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334700"
 ---
 # <a name="remove-visual-studio"></a>Rimuovere Visual Studio
 
@@ -43,7 +43,7 @@ Con lo strumento è possibile usare una delle opzioni della riga di `InstallClea
 | Commutatore | Comportamento                                                                                                                                                                                                                                                                                                                 |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `-i`   | Questa opzione è l'impostazione predefinita se non viene passata nessun'altra opzione. Rimuove solo la directory di installazione principale e le informazioni sul prodotto. Usare questa opzione se si intende reinstallare la stessa versione di Visual Studio dopo l'esecuzione dello `InstallCleanup.exe` strumento.                                                              |
-| `-f`   | Questa opzione rimuove la directory di installazione principale, le informazioni sul prodotto e la maggior parte delle altre funzionalità installate all'esterno della directory di installazione, che potrebbero essere condivise anche con altre installazioni di Visual Studio o altri prodotti. Usare questa opzione se si prevede di rimuovere Visual Studio senza reinstallarla in un secondo momento. |
+| `-f`   | Questa opzione rimuove la directory di installazione principale, le informazioni sul prodotto e la maggior parte delle altre funzionalità installate all'esterno della directory di installazione, che potrebbero essere condivise anche con altre installazioni Visual Studio o altri prodotti. Usare questa opzione se si prevede di rimuovere Visual Studio senza reinstallarla in un secondo momento. |
 
 Ecco come eseguire lo `InstallCleanup.exe` strumento:
 
@@ -54,7 +54,7 @@ Ecco come eseguire lo `InstallCleanup.exe` strumento:
 1. Immettere il percorso completo dello strumento `InstallCleanup.exe` e aggiungere l'opzione della riga di comando preferita. Per impostazione predefinita, il percorso dello strumento è il seguente. Le virgolette doppie racchiudno un comando contenente spazi:
 
    ```shell
-   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\InstallCleanup.exe"
    ```
 
    > [!NOTE]

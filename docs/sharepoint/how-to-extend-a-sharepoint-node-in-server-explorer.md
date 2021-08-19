@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 13402693d965e4cf15bdcf60c6b6d3496cd57ff0cb84fab612dbb48d4f346d08
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ae10e800473eccd347f5dc1398510255d5b7ee4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409566"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130975"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Procedura: Estendere un nodo SharePoint in Esplora server
   È possibile estendere i nodi nel **nodo SharePoint connessioni** in **Esplora server**. Ciò è utile quando si vogliono aggiungere nuovi nodi figlio, voci di menu di scelta rapida o proprietà a un nodo esistente. Per altre informazioni, vedere [Estendere il nodo SharePoint connessioni in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

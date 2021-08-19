@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5374712be1fb25e91e573651869315ab830612bc6f0da1203a814573df7be429
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f6cee707882c9cf4b8c16749922e844eee1c596a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408982"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148454"
 ---
 # <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
@@ -46,7 +46,7 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Per eseguire l'aggiornamento alla versione dell'adattatore di test stabile più recente
 
-1. Aprire il NuGet Gestione pacchetti per la soluzione passando a Strumenti  >  **NuGet Gestione pacchetti**  >  **Gestione NuGet pacchetti per la soluzione**.
+1. Aprire il NuGet Gestione pacchetti per la soluzione passando a Strumenti  >  **NuGet Gestione pacchetti**  >  **gestione NuGet pacchetti per la soluzione**.
 
 2. Fare clic sulla scheda **Aggiornamenti** e cercare gli adattatori di test MSTest, NUnit o xUnit installati.
 

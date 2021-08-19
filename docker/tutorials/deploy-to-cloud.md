@@ -6,19 +6,20 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: a0eecb44ae13f127e32cf0d15effdbd026d1e6c4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: faa4fe632662a9e57ab6e39573a42ad4e3da4c97
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059751"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334493"
 ---
 # <a name="deploy-to-the-cloud"></a>Distribuire nel cloud
 
-Ora che l'app è stata eseguita in locale, è possibile iniziare a pensare di eseguirla nel cloud in modo che altri utenti possano accedervi e usarla. A tale scopo, si useranno i contesti Docker. Un contesto è la posizione in cui si lavora attualmente con i contenitori. Al momento è disponibile solo il contesto "predefinito", quindi è necessario aggiungerne uno cloud e distribuirvi l'app.
+Ora che l'app è stata eseguita in locale, è possibile iniziare a pensare di eseguirla nel cloud in modo che altri utenti possano accedervi e usarla. A tale scopo, si useranno i contesti Docker. Un contesto è la posizione in cui si lavora attualmente con i contenitori. Al momento è disponibile solo il contesto "predefinito", quindi sarà necessario aggiungerne uno cloud e distribuirvi l'app.
 
 ## <a name="create-your-cloud-context"></a>Creare il contesto cloud
 
@@ -28,7 +29,7 @@ Ora che l'app è stata eseguita in locale, è possibile iniziare a pensare di es
 
 Verrà visualizzato solo il contesto predefinito per il lavoro locale.
 
-1. Per eseguire la distribuzione nel cloud, è necessario creare un nuovo contesto ACI, ma a tale scopo è prima necessario l'estensione dell'account Azure per l'autenticazione con Azure.
+1. Per eseguire la distribuzione nel cloud, è necessario creare un nuovo contesto ACI, ma a tale scopo, è prima necessario l'estensione dell'account Azure per l'autenticazione con Azure.
 
    ![Aggiunta dell'estensione di Azure](media/addazureextension.png)
 
@@ -42,7 +43,7 @@ Verrà chiesto in quale gruppo di risorse eseguire questi contenitori. Seleziona
 
 ![Selezione del gruppo di risorse](media/selectresourcegroup.png)
 
-È ora possibile visualizzare il contesto ACI elencato e fare clic con il pulsante destro del mouse su di esso per renderlo il contesto corrente attivo/in uso:
+È ora possibile visualizzare il contesto ACI elencato e fare clic con il pulsante destro del mouse per renderlo il contesto corrente attivo/in uso:
 
 ![È possibile selezionare un nuovo contesto ACI](media/listofcontexts.png)
 
@@ -61,7 +62,7 @@ Verrà chiesto in quale gruppo di risorse eseguire questi contenitori. Seleziona
 
 1. Per verificare che tutto funzioni correttamente, è possibile fare clic con il pulsante destro del mouse sul contenitore in esecuzione e **scegliere Visualizza nel browser**.
 
-   ![Contenitore in ACI con INDIRIZZO IP pubblico](media/containerinaci.png)
+   ![Contenitore in ACI con IP pubblico](media/containerinaci.png)
 
 È anche possibile vedere che il contenitore è in esecuzione in un indirizzo IP pubblico e funziona correttamente.
 
@@ -81,7 +82,7 @@ Verrà chiesto in quale gruppo di risorse eseguire questi contenitori. Seleziona
 
 ## <a name="recap"></a>Riepilogo
 
-Il carico di lavoro è stato quindi distribuito correttamente nel cloud per la prima volta. È possibile eseguire tutte queste operazioni anche dalla riga di comando all'interno del contesto ACI usando e anche usando per eseguire `docker run` `docker compose up` le applicazioni multi-contenitore. Per altre informazioni sull'esecuzione dei contenitori nel cloud, leggere la documentazione estesa [sull'uso di ACI](https://docs.docker.com/engine/context/aci-integration/).
+Il carico di lavoro è stato quindi distribuito correttamente nel cloud per la prima volta. È possibile eseguire tutte queste operazioni anche dalla riga di comando all'interno del contesto ACI usando e anche usando per eseguire `docker run` `docker compose up` le applicazioni multi-contenitore. Per altre informazioni sull'esecuzione dei contenitori nel cloud, leggere la documentazione [estesa sull'uso di ACI](https://docs.docker.com/engine/context/aci-integration/).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

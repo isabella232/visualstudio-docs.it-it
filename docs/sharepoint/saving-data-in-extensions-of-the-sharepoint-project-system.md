@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 9746877749f5364203216bc87472228739dd23c2cf2505159097833410a0e14d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 671571551483c4eff71c1324e1c53c7cbb43ff9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409293"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084051"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Salvare i dati nelle estensioni del sistema SharePoint progetto
   Quando si estende il SharePoint di progetto, è possibile salvare i dati stringa che vengono mantenuti dopo la chiusura SharePoint progetto. I dati sono in genere associati a un particolare elemento di progetto o al progetto stesso.
@@ -41,7 +41,7 @@ ms.locfileid: "121409293"
 
 - Se si vuole che i dati siano disponibili per tutti gli sviluppatori che aprono il SharePoint, salvare i dati nel file di progetto. Questo file viene sempre archiviato nei database del controllo del codice sorgente, quindi i dati in questo file sono disponibili per altri sviluppatori che estraeno il progetto.
 
-- Se si vuole che i dati siano disponibili solo per lo sviluppatore corrente con il progetto SharePoint aperto in Visual Studio, salvare i dati nel file delle opzioni utente del progetto. Questo file in genere non viene archiviato nei database del controllo del codice sorgente, quindi i dati in questo file non sono disponibili per altri sviluppatori che estraeno il progetto.
+- Se si vuole che i dati siano disponibili solo per lo sviluppatore corrente con il progetto SharePoint aperto in Visual Studio, salvare i dati nel file di opzioni utente del progetto. Questo file in genere non viene archiviato nei database del controllo del codice sorgente, quindi i dati in questo file non sono disponibili per altri sviluppatori che estraeno il progetto.
 
 ### <a name="save-data-to-the-project-file"></a>Salvare i dati nel file di progetto
  Per salvare i dati nel file di progetto, convertire un oggetto in un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> oggetto e quindi usare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> . Nell'esempio di codice seguente viene illustrato come utilizzare questo metodo per salvare il valore di una proprietà del progetto nel file di progetto. Per visualizzare questo esempio nel contesto di un esempio più ampio, vedere [Procedura: Aggiungere una proprietà a SharePoint progetti](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).

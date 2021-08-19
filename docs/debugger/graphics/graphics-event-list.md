@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 62851bbce37529c3a2d7cb4f2920c77f52034b7bd6b5940676a7e04fedf9da5d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2cb03305b036e5954340dc04a3c14d786b7735d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362836"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052083"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.
@@ -106,13 +106,13 @@ Visual Studio 2017 e versioni successive contengono la **finestra Cronologia** r
 
 ![Cronologia risorse](media/gfx_diag_resource_history.png)
 
-Questa finestra consente di visualizzare la cronologia dell'elemento selezionato nell'elenco di eventi.  L'elenco a discesa nella parte superiore può essere usato per selezionare altri elementi di cui visualizzare la cronologia.  La metà superiore della finestra contiene eventi di **impostazione dei frame.**  Si tratta degli eventi che rientrano nella categoria *Crea* tipo e sono chiamate che in genere inizializzano e creano la risorsa.  La metà inferiore della finestra contiene la **sezione Eventi frame.**  Si tratta dei normali eventi di lettura e scrittura che si verificano durante l'utilizzo della risorsa.
+Questa finestra consente di visualizzare la cronologia dell'elemento selezionato nell'elenco eventi.  L'elenco a discesa nella parte superiore può essere usato per selezionare altri elementi di cui visualizzare la cronologia.  La metà superiore della finestra contiene gli eventi **di impostazione dei frame**.  Si tratta degli eventi che rientrano nella categoria *Crea* tipo e sono chiamate che in genere inizializzano e creano la risorsa.  La metà inferiore della finestra contiene la **sezione Eventi** frame.  Si tratta dei normali eventi di lettura e scrittura che si verificano durante l'utilizzo della risorsa.
 
 | Colonna | Descrizione |
 |-----------| - |
-| **Tipo** | Mostra il tipo di voce, in genere *Create,* *Read* e *Write.* |
-| **Visualizzazione** | Mostra un'anteprima della risorsa in quel momento.  Fare doppio clic sull'anteprima per aprire una visualizzazione dettagli della risorsa in quel momento. |
-| **Event** | Mostra la chiamata al metodo che si è verificata che ha generato l'evento.  È possibile visualizzare qualsiasi cronologia aggiuntiva per i singoli elementi selezionando l'icona dell'orologio icona ![ icona a forma di orologio nella riga ](media/gfx_watch.png) appropriata.  È anche possibile selezionare qualsiasi elemento disegnato in blu, ad esempio nello `m_commandList` screenshot precedente, per altri dettagli. |
+| **Tipo** | Mostra il tipo di voce, in genere *Create*, *Read* e *Write*. |
+| **Visualizzazione** | Mostra un'anteprima della risorsa in quel momento.  Fare doppio clic sull'anteprima per aprire una visualizzazione dei dettagli della risorsa in quel momento. |
+| **Event** | Mostra la chiamata al metodo che ha generato l'evento.  È possibile visualizzare qualsiasi cronologia aggiuntiva per i singoli elementi selezionando l'icona dell'orologio ![ ](media/gfx_watch.png) sulla riga appropriata.  Inoltre, qualsiasi elemento disegnato in testo blu, ad esempio nello `m_commandList` screenshot precedente, può essere selezionato per altri dettagli. |
 
 <!-- /VERSIONLESS -->
 

@@ -19,14 +19,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9a4dfe4ad526d811d0252816cd0544913328cb9f21e290ae40d653e211cd9e2e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 589feff2d70d2681898212df33d7b3ec468e6231
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384340"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099984"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedura: Riempire automaticamente gli intervalli con dati a modifica incrementale
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedura: Riempire automaticamente gli intervalli con dati che cambiano in modo incrementale
   Il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo <xref:Microsoft.Office.Interop.Excel.Range> dell'oggetto consente di riempire automaticamente un intervallo in un foglio di lavoro. In genere, il metodo viene usato per archiviare valori in aumento o <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> decrescente in modo incrementale in un intervallo. È possibile specificare il comportamento specificando una costante facoltativa <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> dall'enumerazione .
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]

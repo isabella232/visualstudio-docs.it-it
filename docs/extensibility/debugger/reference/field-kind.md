@@ -11,20 +11,21 @@ ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2476b819d940b5fb6014d00e1bdf920f02a46696
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9429f3637172b8797eb700717383786e51be8354
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085208"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072888"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-Specifica il tipo di campo contenuto in un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
+Specifica il tipo di campo contenuto in un [oggetto IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -127,7 +128,7 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>Campi
 `FIELD_KIND_TYPE`\
-Indica che il campo è solo un tipo.
+Indica che il campo è solo di tipo .
 
 `FIELD_KIND_SYMBOL`\
 Indica che il campo è un simbolo, con tipo, nome e altre informazioni.
@@ -136,7 +137,7 @@ Indica che il campo è un simbolo, con tipo, nome e altre informazioni.
 Indica che il campo è un tipo di dati primitivo.
 
 `FIELD_TYPE_STRUCT`\
-Indica che il campo è una struttura.
+Indica che il campo è una struttura .
 
 `FIELD_TYPE_CLASS`\
 Indica che il campo è una classe.
@@ -145,7 +146,7 @@ Indica che il campo è una classe.
 Indica che il campo è un'interfaccia.
 
 `FIELD_TYPE_UNION`\
-Indica che il campo è un'Unione.
+Indica che il campo è un'unione.
 
 `FIELD_TYPE_ARRAY`\
 Indica che il campo è una matrice.
@@ -154,7 +155,7 @@ Indica che il campo è una matrice.
 Indica che il campo è un metodo.
 
 `FIELD_TYPE_BLOCK`\
-Indica che il campo è un blocco.
+Indica che il campo è un blocco .
 
 `FIELD_TYPE_POINTER`\
 Indica che il campo è un puntatore.
@@ -169,7 +170,7 @@ Indica che il campo è un'etichetta.
 Indica che il campo è un typedef.
 
 `FIELD_TYPE_BITFIELD`\
-Indica che il campo è un bit.
+Indica che il campo è un campo di bit.
 
 `FIELD_TYPE_NAMESPACE`\
 Indica che il campo è uno spazio dei nomi.
@@ -202,7 +203,7 @@ Indica che il campo è locale.
 Indica che il campo è un parametro.
 
 `FIELD_SYM_THIS`\
-Indica che il campo è il puntatore "This".
+Indica che il campo è il puntatore "this".
 
 `FIELD_SYM_GLOBAL`\
 Indica che il campo è globale.
@@ -226,14 +227,14 @@ Indica una maschera per i tipi di campo.
 Indica una maschera per le informazioni sui simboli.
 
 ## <a name="remarks"></a>Commenti
-Restituito da una chiamata al metodo [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
+Restituito da una chiamata al [metodo GetKind.](../../../extensibility/debugger/reference/idebugfield-getkind.md)
 
-A seconda del tipo di campo, è possibile chiamare [QueryInterface](/cpp/atl/queryinterface) sull'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) per un tipo di interfaccia più specifico. Se, ad esempio, [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_METHOD` , è possibile chiamare `QueryInterface` su I `DebugField` per ottenere l'interfaccia [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .
+A seconda del tipo di campo, [QueryInterface](/cpp/atl/queryinterface) può essere chiamato [sull'interfaccia IDebugField](../../../extensibility/debugger/reference/idebugfield.md) per una forma di interfaccia più specifica. Ad esempio, se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce , è possibile chiamare `FIELD_TYPE_METHOD` su I per ottenere `QueryInterface` `DebugField` [l'interfaccia IDebugMethodField.](../../../extensibility/debugger/reference/idebugmethodfield.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh. h
+Intestazione: sh.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

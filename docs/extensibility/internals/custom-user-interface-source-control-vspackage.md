@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b688933859a4993b3032ab5b3fd1672eeae7261a4afb0788f5329435f12f98d7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: beff4e1ca4d0f3bef8b8e32d30ebeecae0aaf3a8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275515"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063486"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaccia utente personalizzata (VSPackage del controllo del codice sorgente)
 Un PACCHETTO VSPackage dichiara le voci di menu e i relativi stati predefiniti tramite il file Visual Studio di comando (con estensione *vsct).* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]L'ambiente di sviluppo integrato (IDE, Integrated Development Environment) visualizza le voci di menu negli stati predefiniti fino al caricamento del pacchetto VSPackage. Successivamente, viene <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chiamato il metodo per abilitare o disabilitare le voci di menu.
@@ -32,7 +32,7 @@ Un PACCHETTO VSPackage dichiara le voci di menu e i relativi stati predefiniti t
 ## <a name="ui-constraints-on-source-control-vspackages"></a>Vincoli dell'interfaccia utente nei pacchetti VSPackage del controllo del codice sorgente
  Poiché il pacchetto VSPackage del controllo del codice sorgente non può essere rimosso dall'IDE dopo il caricamento, il VSPackage deve essere in grado di entrare in uno stato inattivo. Quando un PACCHETTO VSPackage riceve una notifica che indica che non è più attivo, il pacchetto VSPackage disabilita l'interfaccia utente e ignora qualsiasi interazione ide esterna. L'implementazione del metodo del VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> deve nascondere i comandi quando il VSPackage non è attivo.
 
- Ogni VSPackage del controllo del codice sorgente deve implementare `IVsSccProvider` l'interfaccia . Due metodi sull'interfaccia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e , devono essere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> implementati dal pacchetto VSPackage.
+ Ogni pacchetto VSPackage del controllo del codice sorgente deve implementare `IVsSccProvider` l'interfaccia . Due metodi sull'interfaccia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e , devono essere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> implementati dal pacchetto VSPackage.
 
  Il pacchetto VSPackage del controllo del codice sorgente potrebbe aver sottoscritto vari eventi IDE, implementati da <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> , e così via. È anche possibile che il pacchetto VSPackage abbia implementato interfacce di callback abilitate per il Registro di sistema, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> . Queste interfacce devono essere tutte ignorate quando sono inattive.
 

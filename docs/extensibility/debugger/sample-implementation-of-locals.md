@@ -11,22 +11,23 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac52f1524c4be2e4a7afcbd21fb437977fb663e3
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 71b358543463e8c780a122dfa466651639f5a906
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902280"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063629"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementazione di esempio di variabili locali
 > [!IMPORTANT]
 > In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Di seguito è riportata una panoramica Visual Studio ottiene le variabili locali per un metodo dall'analizzatore di espressioni (EE):
+ Di seguito è riportata una panoramica Visual Studio le variabili locali per un metodo dall'analizzatore di espressioni (edizione Enterprise):
 
-1. Visual Studio chiama [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) (DE) del motore di debug per ottenere un oggetto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta tutte le proprietà del stack frame, incluse le variabili locali.
+1. Visual Studio chiama [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) del motore di debug per ottenere un oggetto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta tutte le proprietà del stack frame, incluse le variabili locali.
 
 2. `IDebugStackFrame2::GetDebugProperty` chiama [GetMethodProperty per](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) ottenere un oggetto che descrive il metodo all'interno del quale si è verificato il punto di interruzione. Il de fornisce un provider di simboli ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), un indirizzo ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) e un binder ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).
 
@@ -55,12 +56,12 @@ ms.locfileid: "112902280"
 
  [Ottenere valori locali](../../extensibility/debugger/getting-local-values.md) Viene illustrato come ottenere il valore dell'oggetto locale, che richiede i servizi di un oggetto binder specificato dal contesto di valutazione.
 
- [Valutare le variabili locali](../../extensibility/debugger/evaluating-locals.md) Viene illustrato come vengono valutate le variabili locali.
+ [Valutare le variabili locali](../../extensibility/debugger/evaluating-locals.md) Spiega come vengono valutate le variabili locali.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md) Fornisce gli argomenti passati quando de chiama l'analizzatore di espressioni (EE).
+ [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md) Fornisce gli argomenti passati quando de chiama l'analizzatore di espressioni (edizione Enterprise).
 
  [Esempio myCEE](/previous-versions/) Illustra un approccio di implementazione alla creazione di un analizzatore di espressioni per il linguaggio MyC.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md)

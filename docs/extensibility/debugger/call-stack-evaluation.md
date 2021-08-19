@@ -11,14 +11,15 @@ ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059c42349c7f8e681709d69104cf65a6fc245206
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a196560a3b0ee2fc10733b112540b1f9ff619e67
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145991"
 ---
 # <a name="call-stack-evaluation"></a>Valutazione dello stack di chiamate
 Per visualizzare gli stack frame dello stack di chiamate durante la modalità di interruzione, è necessario implementare il [metodo EnumFrameInfo.](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
@@ -39,5 +40,5 @@ Per visualizzare gli stack frame dello stack di chiamate durante la modalità di
 
  Per enumerare i contesti di codice, è necessario implementare tutti i metodi di [IEnumDebugCodeContexts2.](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo dell'esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)

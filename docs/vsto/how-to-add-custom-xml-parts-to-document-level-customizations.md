@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aggiungere parti XML personalizzate alle personalizzazioni a livello di documento'
-description: Informazioni su come archiviare i dati XML in una cartella di lavoro Microsoft Office Excel o Microsoft Office documento di Word creando una parte XML personalizzata in una personalizzazione a livello di documento.
+description: Informazioni su come archiviare dati XML in una cartella di lavoro di Microsoft Office Excel o Microsoft Office documento di Word creando una parte XML personalizzata in una personalizzazione a livello di documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -21,15 +21,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 32d4adc62f816381b0d9cffa0bde5463d0756610d58741f01153928317760cab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 217bb0178a09822a7f44af91ed475fd9364dc09d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424099"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083505"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Procedura: Aggiungere parti XML personalizzate alle personalizzazioni a livello di documento
-  È possibile archiviare dati XML in una cartella di lavoro di Microsoft Office Excel o in un documento di Microsoft Office Word creando una parte XML personalizzata in una personalizzazione a livello di documento. Per altre informazioni, vedere [Panoramica delle parti XML personalizzate.](../vsto/custom-xml-parts-overview.md)
+  È possibile archiviare dati XML in una cartella di lavoro di Microsoft Office Excel o in un documento di Microsoft Office Word creando una parte XML personalizzata in una personalizzazione a livello di documento. Per altre informazioni, vedere [Cenni preliminari sulle parti XML personalizzate.](../vsto/custom-xml-parts-overview.md)
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 

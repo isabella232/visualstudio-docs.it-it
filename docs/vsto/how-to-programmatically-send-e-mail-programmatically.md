@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f2a46c68ff957451715c426d1b1effd3f16bfda9cb1d32347c56c44d769ac3fb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1a8f2fb5843ccb39808250ef847e8e5b4355960
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366212"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115239"
 ---
 # <a name="how-to-programmatically-send-email"></a>Procedura: Inviare messaggi di posta elettronica a livello di codice
   Questo esempio invia un messaggio di posta elettronica ai contatti con il nome di **dominio example.com** negli indirizzi di posta elettronica.

@@ -1,6 +1,6 @@
 ---
-title: Comandi che devono essere eseguiti dopo l'| Microsoft Docs
-description: Informazioni sui comandi che devono essere eseguiti come parte dell'installazione di un'estensione distribuita tramite un file .msi in Visual Studio.
+title: Comandi che devono essere eseguiti dopo l'installazione | Microsoft Docs
+description: Informazioni sui comandi che devono essere eseguiti durante l'installazione di un'estensione distribuita tramite un file .msi in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,21 +13,21 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9038fafaccef8d73b15684fef8d425645ab55dcf6296487fa4993685dc5a17ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5659c2adbe3b7d8f74ccf0a3a28feefdd7d9421c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401498"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050182"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandi che devono essere eseguiti dopo l'installazione
 Se si distribuisce l'estensione tramite un file *.msi,* è necessario eseguire **devenv /setup** come parte dell'installazione per consentire Visual Studio individuare le estensioni.
 
 > [!NOTE]
-> Le informazioni contenute in questo argomento si applicano alla *ricercadevenv.exe* con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare *devenv.exe* con le versioni successive di Visual Studio, vedere [Rilevare i requisiti di sistema](../../extensibility/internals/detecting-system-requirements.md).
+> Le informazioni contenute in questo argomento si applicano *alla ricercadevenv.exe* con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare *le* devenv.execon le versioni successive di Visual Studio, vedere [Rilevare i requisiti di sistema.](../../extensibility/internals/detecting-system-requirements.md)
 
-## <a name="find-devenvexe"></a>Trovare devenv.exe
- È possibile individuare i  valoridevenv.exedi ogni versione dai valori del Registro di sistema che i programmi di installazione scrivono usando la tabella RegLocator e le tabelle AppSearch per archiviare i valori del Registro di sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come proprietà. Per altre informazioni, vedere [Rilevare i requisiti di sistema.](../../extensibility/internals/detecting-system-requirements.md)
+## <a name="find-devenvexe"></a>Trova devenv.exe
+ È possibile individuare la  versione di ognidevenv.exedai valori del Registro di sistema che i programmi di installazione scrivono, usando la tabella RegLocator e le tabelle AppSearch per archiviare i valori del Registro di sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] come proprietà. Per altre informazioni, vedere [Rilevare i requisiti di sistema.](../../extensibility/internals/detecting-system-requirements.md)
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Righe della tabella RegLocator per individuare devenv.exe da versioni diverse di Visual Studio
 
@@ -55,7 +55,7 @@ Se si distribuisce l'estensione tramite un file *.msi,* è necessario eseguire *
 ## <a name="run-devenvexe"></a>Eseguire devenv.exe
  Dopo l'esecuzione dell'azione standard AppSearch nel programma di installazione, ogni proprietà nella tabella AppSearch ha un valore che punta al file *devenv.exe* per la versione corrispondente di Visual Studio. Se uno dei valori del Registro di sistema specificati non è presente, perché la versione di Visual Studio non è installata, la proprietà specificata viene impostata su Null.
 
- Windows Il programma di installazione supporta l'esecuzione di un eseguibile a cui una proprietà punta tramite il tipo di azione personalizzata 50. L'azione personalizzata deve includere le opzioni di esecuzione nello script `msidbCustomActionTypeInScript` (1024) e `msidbCustomActionTypeCommit` (512) per assicurarsi che il pacchetto VSPackage sia stato installato correttamente prima di integrarlo in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Per altre informazioni, vedere [Tabella CustomAction](/windows/desktop/msi/customaction-table) e [Opzioni di esecuzione in script dell'azione personalizzata](/windows/desktop/msi/custom-action-in-script-execution-options).
+ Windows Il programma di installazione supporta l'esecuzione di un eseguibile a cui una proprietà punta tramite il tipo di azione personalizzata 50. L'azione personalizzata deve includere le opzioni di esecuzione nello script `msidbCustomActionTypeInScript` (1024) e `msidbCustomActionTypeCommit` (512) per assicurarsi che il VSPackage sia stato installato correttamente prima di integrarlo in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Per altre informazioni, vedere [Tabella CustomAction e](/windows/desktop/msi/customaction-table) [Opzioni di esecuzione nello script dell'azione personalizzata.](/windows/desktop/msi/custom-action-in-script-execution-options)
 
  Le azioni personalizzate di tipo 50 specificano la proprietà contenente l'eseguibile come valore della colonna Source e degli argomenti della riga di comando nella colonna Target.
 
@@ -71,9 +71,9 @@ Se si distribuisce l'estensione tramite un file *.msi,* è necessario eseguire *
  Le azioni personalizzate devono essere scritte nella tabella InstallExecuteSequence per pianificarle per l'esecuzione durante l'installazione. Usare la proprietà corrispondente in ogni riga della colonna Condizione per impedire l'esecuzione dell'azione personalizzata se tale versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è installata nel sistema.
 
 > [!NOTE]
-> Le proprietà con valori Null restituiscono se `False` usate nelle condizioni.
+> Le proprietà con valori Null restituiscono `False` se usate nelle condizioni.
 
- Il valore della colonna Sequenza per ogni azione personalizzata dipende da altri valori di sequenza nel pacchetto Windows installer. I valori di sequenza devono essere tali *che* devenv.exeazioni personalizzate vengono eseguite il più vicino possibile a immediatamente prima dell'azione standard InstallFinalize.
+ Il valore della colonna Sequenza per ogni azione personalizzata dipende da altri valori di sequenza nel pacchetto Windows Installer. I valori di sequenza devono essere tali *chedevenv.exe* azioni personalizzate vengono eseguite il più vicino possibile a immediatamente prima dell'azione standard InstallFinalize.
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Tabella InstallExecuteSequence per pianificare le devenv.exe personalizzate
 

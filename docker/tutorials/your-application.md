@@ -1,29 +1,30 @@
 ---
 title: "Esercitazione su Docker - Parte 2: Compilare ed eseguire l'app di esempio todo list"
-description: Panoramica dell'app di esempio todo list eseguita in Node.js.
+description: Panoramica dell'app di esempio todo list in esecuzione in Node.js.
 ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: a80358f74d949eb10686004466d91a8116101a1f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f7e22de1de21773d8218e9a2e6567ebe72563354
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053475"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334330"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilare ed eseguire l'app di esempio todo
 
 >[!NOTE]
 > Questa è una continuazione di un'esercitazione che inizia [qui](docker-tutorial.md)
 
-Per il resto di questa esercitazione, si lavora con un semplice gestore di elenchi attività in esecuzione in Node.js. Se non si ha familiarità con Node.js, non è necessario preoccuparsi. Non è necessaria alcuna esperienza JavaScript reale.
+Per il resto di questa esercitazione, si lavora con un semplice gestore di elenchi attività in esecuzione in Node.js. Se non si ha familiarità con Node.js, non preoccuparsi. Non è necessaria alcuna esperienza JavaScript reale.
 
-A questo punto, il team di sviluppo è piuttosto piccolo e si sta semplicemente creando un'app per dimostrare il proprio MVP (prodotto con validità minima). Si vuole mostrare come funziona e cosa è in grado di fare senza dover pensare a come funzionerà per un team di grandi dimensioni, più sviluppatori e così via.
+A questo punto, il team di sviluppo è piuttosto piccolo e si sta semplicemente creando un'app per dimostrare il proprio MVP (prodotto con validità minima). Si vuole mostrare come funziona e cosa può fare senza dover pensare a come funzionerà per un team di grandi dimensioni, più sviluppatori e così via.
 
 ![Todo List Manager Screenshot](media/todo-list-sample.png)
 
@@ -37,7 +38,7 @@ Prima di poter eseguire l'applicazione, è necessario ottenere il codice sorgent
 
    ![Screenshot che mostra il pulsante Codice verde e l'opzione Scarica ZIP](media/download-zip.png)
 
-1. Dopo l'estrazione, usare l'editor di codice preferito per aprire il progetto. Se si ha bisogno di un editor, è possibile [usare](https://code.visualstudio.com/)Visual Studio Code . Dovrebbero essere visualizzati i due sottodirectory e `package.json` ( e `src` `spec` ).
+1. Dopo l'estrazione, usare l'editor di codice preferito per aprire il progetto. Se si ha bisogno di un editor, è possibile usare [Visual Studio Code](https://code.visualstudio.com/). Dovrebbero essere visualizzati i due sottodirectory e `package.json` ( e `src` `spec` ).
 
     ![Screenshot della Visual Studio Code aperta con l'app caricata](media/ide-screenshot.png)
 

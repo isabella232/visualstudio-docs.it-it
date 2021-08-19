@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec0c2e9018625b733e8f5c5c6f9270bd9b28cab1eadb54a026562d798b54ec74
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1c4b37e5ae834a614cb741cb7589dad9dd1d6677
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063122"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Salvataggio permanente e tabella documenti in esecuzione
 Nell'IDE, i progetti sono completamente responsabili della gestione della persistenza degli elementi di progetto, che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vengono ese ne usando il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . I documenti sono l'unità di base di persistenza nell'Visual Studio ambiente. I progetti coordinano l'apertura, il salvataggio e la ridenominazione dei documenti con la tabella di documenti in esecuzione (RDT), una risorsa che tiene traccia dello stato di tutti i documenti aperti.

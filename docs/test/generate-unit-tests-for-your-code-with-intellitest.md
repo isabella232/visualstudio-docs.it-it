@@ -8,17 +8,18 @@ f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0f23fbacccc4fd46552699a84e657f3a6718941a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dba46c3b111f82bdb6e03eca5442b2f497e8ad3e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936275"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083804"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procedura: generare unit test usando IntelliTest
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procedura: Generare unit test tramite IntelliTest
 
 IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni ramo condizionale nel codice. Vengono ad esempio analizzate le istruzioni `if`, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
 
@@ -50,7 +51,7 @@ Per generare unit test, i tipi devono essere pubblici.
 
    ![Viene visualizzata la finestra Risultati dell'esplorazione contenente i test](../test/media/pexexplorationresults.png)
 
-Per generare unit test per tutti i metodi pubblici di una classe, è sufficiente fare clic con il pulsante destro del mouse sulla classe invece che su un metodo specifico e quindi scegliere **Esegui IntelliTest**. Usare l'elenco a discesa nella finestra **risultati esplorazione** per visualizzare gli unit test e i dati di input per ogni metodo della classe.
+Per generare unit test per tutti i metodi pubblici di una classe, è sufficiente fare clic con il pulsante destro del mouse sulla classe invece che su un metodo specifico e quindi scegliere **Esegui IntelliTest**. Usare l'elenco a discesa nella finestra **Risultati** esplorazione per visualizzare gli unit test e i dati di input per ogni metodo nella classe .
 
 ![Selezionare i risultati del test per visualizzarli nell'elenco](../test/media/selectpextest.png)
 
@@ -62,7 +63,7 @@ Per i test che vengono superati verificare che i risultati indicati nella colonn
 
      ![Selezionare i test, fare clic con il pulsante destro del mouse e scegliere Salva](../test/media/savepextests.png)
 
-     È possibile visualizzare il progetto di test e il unit test con parametri che è stato creato. i singoli unit test, corrispondenti a ognuna delle righe, vengono salvati nel file con *estensione g.cs* nel progetto di test e un unit test con parametri viene salvato nel file con *estensione cs* corrispondente. È possibile eseguire gli unit test e visualizzare i risultati da Esplora test come se si trattasse di unit test creati manualmente.
+     È possibile visualizzare il progetto di test e il unit test con parametri creato. I singoli unit test, corrispondenti a ognuna delle righe, vengono salvati nel file con estensione *g.cs* nel progetto di test e un unit test con parametri viene salvato nel file con estensione *cs* corrispondente. È possibile eseguire gli unit test e visualizzare i risultati da Esplora test come se si trattasse di unit test creati manualmente.
 
      ![Aprire il file di classe nel metodo di test per visualizzare unit test](../test/media/testmethodpex.png)
 
@@ -82,7 +83,7 @@ Per i test che vengono superati verificare che i risultati indicati nella colonn
 
      ![Fare clic con il pulsante destro del mouse sull'avviso e scegliere Correzione](../test/media/pexfixwarning.png)
 
-     Questa scelta viene aggiunta nel file *PexAssemblyInfo.cs* .
+     Questa scelta viene aggiunta nel file *PexAssemblyInfo.cs.*
 
      `[assembly: PexUseType(typeof(Camera))]`
 
@@ -144,13 +145,13 @@ Accettare il formato predefinito per generare i test o modificare la modalità d
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>D: È possibile usare altri framework di unit test con IntelliTest?
 
 **R:** Sì, seguire questa procedura per [trovare e installare altri framework](../test/install-third-party-unit-test-frameworks.md).
-Le estensioni del Framework di test sono disponibili anche in Visual Studio Marketplace, ad esempio il [Generatore di test NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
+Le estensioni del framework di test sono disponibili anche in Visual Studio Marketplace, ad esempio [NUnit Test Generator.](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 
 Dopo aver riavviato Visual Studio e riaperto la soluzione, fare doppio clic nella classe o nel metodo, quindi scegliere **Crea IntelliTest**. Selezionare qui il framework installato:
 
 ![Selezionare altri framework unit test per IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
-Eseguire quindi IntelliTest per generare singoli unit test nei file con *estensione g.cs* corrispondenti.
+Eseguire quindi IntelliTest per generare singoli unit test nei file *con estensione g.cs* corrispondenti.
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>D: È possibile reperire maggiori informazioni sulla modalità di generazione dei test?
 

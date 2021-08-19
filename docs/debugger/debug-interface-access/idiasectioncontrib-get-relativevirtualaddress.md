@@ -1,5 +1,5 @@
 ---
-description: Recupera l'indirizzo RVA (relative Virtual Address) dell'immagine del contributo.
+description: Recupera l'indirizzo virtuale relativo dell'immagine del contributo.
 title: IDiaSectionContrib::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 32f9674d-94f1-4590-99de-a2eb60da4af8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd7e1271ed163e9efe4971ca4af08858e79c7ff
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: df0c1d8ce49a8cecbff4d3ad87157303de5d06d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147996"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066424"
 ---
 # <a name="idiasectioncontribget_relativevirtualaddress"></a>IDiaSectionContrib::get_relativeVirtualAddress
-Recupera l'indirizzo RVA (relative Virtual Address) dell'immagine del contributo.
+Recupera l'indirizzo virtuale relativo dell'immagine del contributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get_relativeVirtualAddress (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce l'immagine RVA del contributo.
+[out] Restituisce l'RVA dell'immagine del contributo.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

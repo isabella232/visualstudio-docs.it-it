@@ -2,7 +2,7 @@
 title: Esercitazione sull'uso di Python in Visual Studio, passaggio 6, usare Git
 titleSuffix: ''
 description: Passaggio 6 di un'esercitazione di base per l'uso di Python in Visual Studio, dedicato alle funzionalità di Visual Studio correlate a Git.
-ms.date: 01/28/2019
+ms.date: 08/16/2021
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -12,16 +12,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 581f2fe50c03f4b77ed87723e2c848adc1c9fed960a9e1b6d551cc1085fb03e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 846dd5b260cc7f309b745a3dc8cfeb54ac69fd12
+ms.sourcegitcommit: 51a01cc1f1feeac9432c7989db4578e30a573fa1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121229312"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122274078"
 ---
 # <a name="step-6-work-with-git"></a>Passaggio 6: Utilizzo di Git
 
 **Passaggio precedente: [ Installare i pacchetti e gestire l'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+
+[!INCLUDE[..get-started/includes/git-source-control.md](../get-started/includes/git-source-control.md)]
+
+::: moniker range="vs-2017"
 
 Visual Studio offre l'integrazione diretta con repository Git locali e repository remoti di servizi quali GitHub e Azure Repos. L'integrazione include la clonazione di un repository, le modifiche di esecuzione del commit e la gestione dei rami.
 
@@ -33,7 +37,7 @@ Questo articolo offre una panoramica di base sulla creazione di un repository Gi
 
     ![Le informazioni aggiuntive vengono visualizzate quando si posiziona un controllo Git nella finestra di Visual Studio](media/working-with-git-01.png)
 
-1. Quando si crea un nuovo repository o si seleziona uno dei controlli Git, Visual Studio apre la finestra **Team Explorer**. È possibile aprire la finestra in qualsiasi momento con **la** visualizzazione  >  **Team Explorer** comando di menu. La finestra include tre riquadri principali, tra cui l'uso dell'elenco a discesa nell Team Explorer **intestazione.** Il **riquadro Sincronizza,** che fornisce le operazioni di pubblicazione, viene visualizzato anche quando si seleziona il **controllo Push** (icona freccia su):
+1. Quando si crea un nuovo repository o si seleziona uno dei controlli Git, Visual Studio apre la finestra **Team Explorer**. È possibile aprire la finestra in qualsiasi momento con **l'opzione Visualizza**  >  **Team Explorer** comando di menu. Nella finestra sono disponibili tre riquadri principali, tra cui l'uso dell'elenco a discesa **nell'intestazione Team Explorer.** Il **riquadro Sincronizza,** che fornisce operazioni di pubblicazione, viene visualizzato anche quando si seleziona il **controllo Push** (icona a forma di freccia su):
 
     ![Team Explorer in Visual Studio dopo la creazione di un repository locale](media/working-with-git-02.png)
 
@@ -51,13 +55,15 @@ Questo articolo offre una panoramica di base sulla creazione di un repository Gi
 
 1. Selezionando il controllo Git con il nome del repository **(CosineWave** in un'immagine precedente), **Team Explorer** mostra un'interfaccia Connessione con cui è possibile passare rapidamente **a** un altro repository completamente.
 
-1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. Se si è connessi a un repository remoto, selezionare l'intestazione  dell'elenco  a discesa in **Team Explorer,** scegliere Sincronizza per passare alla sezione Sincronizzazione e usare i comandi **Pull** e **Fetch** presentati qui.
+1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. Se si è connessi a un repository remoto, selezionare l'intestazione  dell'elenco a  discesa in Team Explorer , scegliere **Sincronizza** per passare alla sezione Sincronizzazione e usare i comandi **Pull** e **Fetch** presentati.
 
 ## <a name="go-deeper"></a>Approfondimento
 
-Per una breve procedura dettagliata sulla creazione di un progetto da un repository Git remoto, vedere Guida introduttiva: Clonare un repository di codice [Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Per una breve procedura dettagliata sulla creazione di un progetto da un repository Git remoto, vedere Avvio [rapido: Clonare](quickstart-03-python-in-visual-studio-project-from-repository.md)un repository di codice Python in Visual Studio .
 
 Per un'esercitazione molto più completa, comprendente la gestione dei conflitti di unione, la revisione di codice con richieste pull, la riassegnazione e il cherry-pick delle modifiche tra rami, vedere [Get started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart) (Introduzione a Git e Azure Repos).
+
+::: moniker-end
 
 ## <a name="tutorial-review"></a>Revisione dell'esercitazione
 

@@ -1,6 +1,6 @@
 ---
 title: Comando Elenca memoria
-description: Informazioni sul comando list Memory e su come viene visualizzato il contenuto dell'intervallo di memoria specificato.
+description: Informazioni sul comando Elenca memoria e su come visualizza il contenuto dell'intervallo di memoria specificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb0d62f6f4ade51fe0224917a1e3ec3a199de14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe86f12ffba2d61783bd858f207f00803952fe83
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852050"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085858"
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
 Visualizza il contenuto dell'intervallo di memoria specificato.
@@ -74,11 +75,11 @@ Di seguito viene riportato un elenco degli alias disponibili per il comando **De
 |-----------| - |
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**DB**|Debug.ListMemory /Format:OneByte|
-|**DC**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**Db**|Debug.ListMemory /Format:OneByte|
+|**Dc**|Debug.ListMemory /Format:FourBytes /Ansi|
 |**dd**|Debug.ListMemory /Format:FourBytes|
-|**DF**|Debug.ListMemory /Format:Float|
-|**DQ**|Debug.ListMemory /Format:EightBytes|
+|**Df**|Debug.ListMemory /Format:Float|
+|**Dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
 ## <a name="example"></a>Esempio
@@ -90,8 +91,8 @@ Di seguito viene riportato un elenco degli alias disponibili per il comando **De
 ## <a name="see-also"></a>Vedere anche
 
 - [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)
-- [Comando list Threads](../../ide/reference/list-threads-command.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Comando Elenca thread](../../ide/reference/list-threads-command.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

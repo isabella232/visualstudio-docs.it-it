@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Proprietà thread | Microsoft Docs
-description: Informazioni sulla finestra di dialogo Proprietà thread nello strumento di debug di Spy++. Usare questa finestra di dialogo per ottenere altre informazioni su un thread specifico.
+description: Informazioni sulla finestra di dialogo Proprietà thread nello strumento di debug Di Spy++. Usare questa finestra di dialogo per altre informazioni su un thread specifico.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,20 +14,20 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a110d88d0bd0e6e8783b9f22c22051b9a133666e41e4031948bcd96bfd5f27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df590e8577c52ddeb7f2a8302d310c7c681c8358
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435712"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146628"
 ---
 # <a name="thread-properties-dialog-box"></a>Finestra di dialogo Proprietà thread
-Usare questa finestra di dialogo per altre informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una [finestra Visualizzazione](../debugger/threads-view.md) thread oppure aprire [la visualizzazione Messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare un nodo di thread nell'albero, quindi **scegliere Proprietà** **dal** menu Visualizza.
+Usare questa finestra di dialogo per altre informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una [finestra](../debugger/threads-view.md) Visualizzazione thread oppure aprire [Visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare un nodo di thread nell'albero, quindi **scegliere Proprietà** **dal** menu Visualizza.
 
  La **scheda** Generale è l'unica scheda visualizzata. Nei Windows 98 e Windows 95 viene visualizzata una versione modificata di questa scheda.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Scheda Generale, finestra di dialogo Proprietà thread](../debugger/general-tab-thread-properties-dialog-box.md) Usare questa finestra di dialogo per ottenere altre informazioni sul thread selezionato.
+ [Scheda Generale, finestra di dialogo Proprietà thread](../debugger/general-tab-thread-properties-dialog-box.md) Usare questa finestra di dialogo per altre informazioni sul thread selezionato.
 
 ## <a name="related-sections"></a>Sezioni correlate
  [Finestra di dialogo Ricerca thread](../debugger/thread-search-dialog-box.md) Usato per trovare il nodo per un thread specifico nella visualizzazione Thread.
