@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 23639240b7331983392902985676ceff322ec14b82059b93d221abb98c0d956d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 01e861e21540fdfba9ac869838c3f080e2fe2422
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393363"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037811"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Penna in Blend per Visual Studio
 

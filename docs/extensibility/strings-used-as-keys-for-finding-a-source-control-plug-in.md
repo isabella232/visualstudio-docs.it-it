@@ -10,19 +10,20 @@ ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f25a105c442fa4a1ff8ed0f95b9c49272d751932
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 878dc8239361b0490d17f25ad0b96f748f39cf6e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899383"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117579"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente
 Le stringhe seguenti sono le chiavi per l'accesso al Registro di sistema per trovare informazioni sul plug-in del controllo del codice sorgente.
 
- `STR_SCC_PROVIDER_REG_LOCATION`, , e sono chiavi o valori del Registro di sistema usati per registrare una DLL come plug-in di controllo del codice sorgente `STR_PROVIDERREGKEY` `STR_SCCPROVIDERPATH` per `STR_SCCPROVIDERNAME` Visual Studio.
+ `STR_SCC_PROVIDER_REG_LOCATION`, , e sono chiavi del Registro di sistema o valori usati per registrare una DLL come plug-in di controllo del codice `STR_PROVIDERREGKEY` `STR_SCCPROVIDERPATH` `STR_SCCPROVIDERNAME` sorgente per Visual Studio.
 
  `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY` `SCC_KEY, SCC_FILE_SIGNATURE` , e vengono usati per descrivere il `SCC_STATUS_FILE` formato di MSSCCPRJ. File SCC.
 
@@ -44,11 +45,11 @@ Le stringhe seguenti sono le chiavi per l'accesso al Registro di sistema per tro
 |`SCC_NSE`|Estensione dello spazio dei nomi|
 |`SCC_NSE_PREFIX`|Prefisso protocale|
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|
-|`STR_SCCHELPCOLLECTION`|HelpCollection|
+|`STR_SCCHELPCOLLECTION`|Raccolta HelpCollection|
 |`STR_UI_LANGUAGE`|UILanguage|
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [Procedura: Installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [File MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

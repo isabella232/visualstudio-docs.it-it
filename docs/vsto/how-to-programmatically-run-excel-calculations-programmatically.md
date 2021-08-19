@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Eseguire calcoli di Excel a livello di codice'
-description: Informazioni su come usare le Visual Studio per eseguire calcoli a livello di codice in una cartella Microsoft Excel lavoro.
+title: 'Procedura: Eseguire calcoli Excel a livello di codice'
+description: Informazioni su come usare Visual Studio per eseguire calcoli a livello di codice in una cartella Microsoft Excel cartella di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,20 +18,20 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 234457e235a78281858a45a202fdeff9ff781a849fef5a5757ad505f368cd023
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab15a81c0ddb03dd30a865b1a11b191bc9c7f5f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384236"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083128"
 ---
-# <a name="how-to-programmatically-run-excel-calculations"></a>Procedura: Eseguire calcoli di Excel a livello di codice
-  Si usa un processo simile per eseguire calcoli in un controllo o in un <xref:Microsoft.Office.Tools.Excel.NamedRange> oggetto intervallo Excel nativo.
+# <a name="how-to-programmatically-run-excel-calculations"></a>Procedura: Eseguire calcoli Excel a livello di codice
+  Si usa un processo simile per eseguire calcoli in un controllo o in un oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> intervallo Excel nativo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="run-calculations-in-a-namedrange-control"></a>Eseguire calcoli in un controllo NamedRange
- Nell'esempio seguente viene <xref:Microsoft.Office.Tools.Excel.NamedRange> creato un oggetto nella cella A1 e quindi viene calcolata la cella. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .
+ Nell'esempio seguente viene <xref:Microsoft.Office.Tools.Excel.NamedRange> creato un oggetto in corrispondenza della cella A1 e quindi viene calcolata la cella. Questo codice deve essere inserito in una classe foglio, non nella classe `ThisWorkbook` .
 
 ### <a name="to-run-calculations-in-a-namedrange-control"></a>Per eseguire calcoli in un controllo NamedRange
 
@@ -45,7 +45,7 @@ ms.locfileid: "121384236"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet76":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet76":::
 
-## <a name="run-calculations-in-a-native-excel-range"></a>Eseguire calcoli in un intervallo di Excel nativo
+## <a name="run-calculations-in-a-native-excel-range"></a>Eseguire calcoli in un intervallo Excel nativo
 
 ### <a name="to-run-calculations-in-a-native-excel-range"></a>Per eseguire calcoli in un intervallo Excel nativo
 
@@ -62,4 +62,4 @@ ms.locfileid: "121384236"
 ## <a name="see-also"></a>Vedi anche
 - [Usare gli intervalli](../vsto/working-with-ranges.md)
 - [Controllo NamedRange](../vsto/namedrange-control.md)
-- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

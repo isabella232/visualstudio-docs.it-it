@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Stampare fogli di lavoro a livello di codice'
-description: Informazioni su come usare Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una Microsoft Excel cartella di lavoro.
+description: Informazioni su come usare i Visual Studio per stampare a livello di codice qualsiasi foglio di lavoro in una cartella Microsoft Excel lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9671e678c28523bf3ab0aaeb443845b795f7b208b9db5db459afcd2692a08e7d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d02691d20748a9b982b30f49b1ec5426b7932e83
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440734"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099750"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Procedura: Stampare fogli di lavoro a livello di codice
 
@@ -69,7 +69,7 @@ ms.locfileid: "121440734"
 ## <a name="see-also"></a>Vedi anche
 
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
-- [Procedura: Eseguire il controllo ortografico nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
-- [Elemento host foglio di lavoro](../vsto/worksheet-host-item.md)
-- [Accesso globale agli oggetti nei progetti Office globali](../vsto/global-access-to-objects-in-office-projects.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Procedura: Controllare l'ortografia nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [Elemento host Worksheet](../vsto/worksheet-host-item.md)
+- [Accesso globale agli oggetti nei Office progetto](../vsto/global-access-to-objects-in-office-projects.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

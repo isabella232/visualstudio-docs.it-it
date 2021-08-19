@@ -4,20 +4,19 @@ description: Informazioni su come creare il progetto Matching Game e aggiungere 
 ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4c6b3c65cc7a4c68288c01964388bbf8ec54a0
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 68f87a6d9e9b601e0226614eb82b8a689d4a6f47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306423"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040983"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -27,7 +26,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ::: moniker range="vs-2017"
 
-1. Sulla barra dei menu scegliere **File** > **nuovo** > **progetto**.
+1. Sulla barra dei menu scegliere **File** > **nuovo** > **Project**.
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
@@ -46,9 +45,9 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere Quindi Desktop **dall'elenco Tipo di** progetto. 
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere Quindi **Desktop nell'elenco** **Project tipo di** connessione.
 
-   Dopo aver applicato **il** filtro Tipo di progetto, scegliere il modello app Windows Forms **(.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
+   Dopo aver applicato il filtro **Project** tipo, scegliere il modello **Windows Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
 
    ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 

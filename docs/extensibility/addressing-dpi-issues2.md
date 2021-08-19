@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fecd47dd43d3c5f075c3e6794ee0a1cdb16815a9bf4b4bf6deb4777632a3736b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3ca4544b153d5b365d3200a79a519cf6271d29bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343350"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133406"
 ---
 # <a name="address-dpi-issues"></a>Risolvere i problemi relativi ai valori DPI
 Un numero crescente di dispositivi viene spedto con schermate ad alta risoluzione. Queste schermate hanno in genere più di 200 pixel per pollice (ppi). L'uso di un'applicazione in questi computer richiederà la scalabilità verticale del contenuto per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A inizio 2014, l'obiettivo principale per gli schermi ad alta densità è quello di dispositivi di elaborazione mobile (tablet, portatili a forma di acino e telefoni).
@@ -152,7 +152,7 @@ Consigli:
 
 - Per i livelli di zoom di grandi dimensioni non multipli del 100% (ad esempio, 250% o 350%), il ridimensionamento delle immagini iconografiche con risultati bicubici comporta un'interfaccia utente fuzzy e senza problemi. Un risultato migliore si ottiene ridimensionando prima di tutto l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, 200% o 300%) e il ridimensionamento con bicubico da qui. Per altre informazioni, vedere Caso speciale: pre-scalabilità di immagini WPF per livelli DPI di grandi dimensioni.
 
-  La classe DpiHelper nello spazio dei nomi Microsoft.VisualStudio.PlatformUI fornisce un membro <xref:System.Windows.Media.BitmapScalingMode> che può essere usato per l'associazione. Consentirà alla shell Visual Studio di controllare in modo uniforme la modalità di ridimensionamento delle bitmap nel prodotto, a seconda del fattore di scala DPI.
+  La classe DpiHelper nello spazio dei nomi Microsoft.VisualStudio.PlatformUI fornisce un membro <xref:System.Windows.Media.BitmapScalingMode> che può essere usato per l'associazione. Consente alla shell Visual Studio di controllare in modo uniforme la modalità di ridimensionamento delle bitmap nel prodotto, a seconda del fattore di scala DPI.
 
   Per usarlo in XAML, aggiungere:
 
@@ -167,18 +167,18 @@ La Visual Studio shell imposta già questa proprietà nelle finestre e nelle fin
 
 Alcune dell'interfaccia utente possono essere ridimensionate indipendentemente dal livello di zoom DPI impostato dal sistema, ad esempio l'editor di testo Visual Studio e le finestre di progettazione basate su WPF (WPF Desktop e Windows Store). In questi casi, DpiHelper.BitmapScalingMode non deve essere usato. Per risolvere questo problema nell'editor, il team IDE ha creato una proprietà personalizzata intitolata RenderOptions.BitmapScalingMode. Impostare il valore della proprietà su HighQuality o NearestNeighbor a seconda del livello di zoom combinato del sistema e dell'interfaccia utente.
 
-## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Caso speciale: prescalamento di immagini WPF per livelli DPI di grandi dimensioni
-Per livelli di zoom molto grandi che non sono multipli del 100% (ad esempio, 250%, 350% e così via), ridimensionare le immagini iconografiche con risultati bicubici in un'interfaccia utente fuzzy e lavata. L'impressione di queste immagini insieme al testo nitido è quasi simile a quella di un'illusione ottica. Le immagini sembrano essere più vicine all'occhio e fuori messa a fuoco in relazione al testo. Il risultato della scalabilità con queste dimensioni ingrandite può essere migliorato ridimensionando prima l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, 200% o 300%) e ridimensionando con bicubico fino al resto (un ulteriore 50%).
+## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Caso speciale: prescaling di immagini WPF per livelli DPI di grandi dimensioni
+Per i livelli di zoom molto grandi che non sono multipli del 100% (ad esempio, 250%, 350% e così via), il ridimensionamento delle immagini iconografiche con bicubic comporta un'interfaccia utente fuzzy e non più disponibile. L'impressione di queste immagini insieme a testo nitido è quasi simile a quella di un'idea ottico. Le immagini sembrano essere più vicine all'occhio e fuori dalla messa a fuoco in relazione al testo. Il risultato del ridimensionamento con queste dimensioni ingrandite può essere migliorato ridimensionando prima l'immagine con NearestNeighbor al multiplo più grande del 100% (ad esempio, 200% o 300%) e ridimensionando con bicubico fino al resto (un ulteriore 50%).
 
-Di seguito è riportato un esempio delle differenze nei risultati, in cui la prima immagine viene ridimensionata con l'algoritmo di scalabilità doppia migliorato 100%->200%->250% e la seconda con l'algoritmo bicubico 100%->250%.
+Di seguito è riportato un esempio delle differenze nei risultati, in cui la prima immagine viene ridimensionata con l'algoritmo di ridimensionamento doppio migliorato 100% >200% >250% e la seconda solo con bicubico 100% >250%.
 
-![Esempio di doppio ridimensionamento dei problemi DPI](../extensibility/media/dpi-issues-double-scaling-example.png "Esempio di doppio ridimensionamento dei problemi DPI")
+![Esempio di scalabilità doppia dei problemi DPI](../extensibility/media/dpi-issues-double-scaling-example.png "Esempio di scalabilità doppia dei problemi DPI")
 
-Per consentire all'interfaccia utente di usare questo doppio ridimensionamento, sarà necessario modificare il markup XAML per la visualizzazione di ogni elemento Image. Gli esempi seguenti illustrano come usare il doppio ridimensionamento in WPF in Visual Studio usando la libreria DpiHelper e Shell.12/14.
+Per consentire all'interfaccia utente di usare questo doppio ridimensionamento, sarà necessario modificare il markup XAML per la visualizzazione di ogni elemento Image. Gli esempi seguenti illustrano come usare la scalabilità doppia in WPF in Visual Studio usando la libreria DpiHelper e Shell.12/14.
 
-Passaggio 1: Eseguire il ridimensionamento preliminare dell'immagine al 200%, al 300% e così via usando NearestNeighbor.
+Passaggio 1: Pre-ridimensionare l'immagine al 200%, al 300% e così via usando NearestNeighbor.
 
-Ridimensionare l'immagine usando un convertitore applicato a un'associazione o con un'estensione di markup XAML. Esempio:
+Eseguire il ridimensionamento preliminare dell'immagine usando un convertitore applicato a un'associazione o con un'estensione di markup XAML. Esempio:
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -189,7 +189,7 @@ Ridimensionare l'immagine usando un convertitore applicato a un'associazione o c
 
 ```
 
-Se è necessario anche che l'immagine sia a base di testo (la maggior parte, se non tutte dovrebbero), il markup può usare un convertitore diverso che esegue prima il ridimensionamento dell'immagine e quindi il pre-ridimensionamento. Il markup può usare o <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter> , a seconda dell'output di conversione desiderato.
+Se l'immagine deve anche essere con i colori (la maggior parte, se non tutte, dovrebbero), il markup può usare un convertitore diverso che esegue prima il ridimensionamento dell'immagine e quindi il pre-ridimensionamento. Il markup può usare o <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter> , a seconda dell'output di conversione desiderato.
 
 ```xaml
 <vsui:DpiPrescaleThemedImageSourceConverter x:Key="DpiPrescaleThemedImageSourceConverter" />
@@ -229,9 +229,9 @@ Poiché WPF ridimensiona l'interfaccia utente per il valore DPI corrente usando 
     ```
 
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Abilitazione del supporto HDPI per WebOC
-Per impostazione predefinita, i controlli WebOC (ad esempio il controllo WebBrowser in WPF o l'interfaccia IWebBrowser2) non abilitano il rilevamento e il supporto HDPI. Il risultato sarà un controllo incorporato con contenuto visualizzato troppo piccolo in uno schermo ad alta risoluzione. Di seguito viene descritto come abilitare il supporto di valori DPI elevati in un'istanza WebOC Web specifica.
+Per impostazione predefinita, i controlli WebOC (ad esempio il controllo WebBrowser in WPF o l'interfaccia IWebBrowser2) non abilitano il rilevamento e il supporto HDPI. Il risultato sarà un controllo incorporato con contenuto di visualizzazione troppo piccolo su uno schermo ad alta risoluzione. Di seguito viene descritto come abilitare il supporto di valori DPI elevati in un'istanza WebOC specifica.
 
-Implementare l'interfaccia IDocHostUIHandler (vedere l'articolo MSDN su [IDocHostUIHandler:](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85))
+Implementare l'interfaccia IDocHostUIHandler (vedere l'articolo MSDN su [IDocHostUIHandler):](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85))
 
 ```idl
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),
@@ -330,7 +330,7 @@ customDoc.SetUIHandler(this);
 
 ```
 
-Se NON è stata implementata l'interfaccia ICustomDoc, non appena la proprietà document di WebOC è valida, sarà necessario eseguire il cast a un oggetto IOleObject e chiamare il metodo , passando la classe che implementa `SetClientSite` IDocHostUIHandler. Impostare il flag DOCHOSTUIFLAG_DPI_AWARE per DOCHOSTUIINFO passato alla `GetHostInfo` chiamata al metodo:
+Se NON è stata implementata l'interfaccia ICustomDoc, non appena la proprietà document di WebOC è valida, sarà necessario eseguire il cast a un oggetto IOleObject e chiamare il metodo , passando la classe che implementa `SetClientSite` IDocHostUIHandler. Impostare il flag DOCHOSTUIFLAG_DPI_AWARE sull'oggetto DOCHOSTUIINFO passato alla `GetHostInfo` chiamata al metodo :
 
 ```csharp
 public int GetHostInfo(DOCHOSTUIINFO info)
@@ -349,7 +349,7 @@ Questo dovrebbe essere tutto ciò che serve per ottenere il controllo WebOC per 
 
 1. Se la proprietà del documento nel controllo WebOC cambia, potrebbe essere necessario riassociare il documento alla classe IDocHostUIHandler.
 
-2. Se il codice precedente non funziona, si è verificato un problema noto con WebOC che non raccoglie la modifica al flag DPI. Il modo più affidabile per risolvere questo problema è attivare o disattivare lo zoom ottico del WebOC, ovvero due chiamate con due valori diversi per la percentuale di zoom. Inoltre, se questa soluzione alternativa è necessaria, potrebbe essere necessario eseguirla a ogni chiamata di navigazione.
+2. Se l'opzione precedente non funziona, si è verificato un problema noto con weboc che non ha rilevato la modifica al flag DPI. Il modo più affidabile per risolvere questo problema è attivare o disattivare lo zoom ottico di WebOC, ovvero due chiamate con due valori diversi per la percentuale di zoom. Inoltre, se questa soluzione alternativa è necessaria, potrebbe essere necessario eseguirla a ogni chiamata di navigazione.
 
     ```csharp
     // browser2 is a SHDocVw.IWebBrowser2 in this case

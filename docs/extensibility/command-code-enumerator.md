@@ -1,6 +1,6 @@
 ---
-title: Enumeratore command code | Microsoft Docs
-description: L'enumeratore del codice di comando viene usato nelle opzioni per SccGetCommandOptions e SccPopulateListto per indicare il comando per cui sono specificate le opzioni.
+title: Enumeratore del codice di | Microsoft Docs
+description: L'enumeratore codice comando viene usato nelle opzioni per SccGetCommandOptions e SccPopulateListto per indicare il comando per cui sono specificate le opzioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c692cc7f2dcfa1f978b5448b84e255178a6cf390bb50a1a2918a6981a07543
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 153b39b1742dc6f78e23df1f1cdd30b052738684
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434802"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133302"
 ---
 # <a name="command-code-enumerator"></a>Enumeratore del codice di comando
-Questo enumeratore viene usato nelle opzioni per [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md)per indicare il comando per cui sono specificate le opzioni.
+Questo enumeratore viene usato nelle opzioni [per SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md)per indicare il comando per cui vengono specificate le opzioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ SCC_COMMAND_CHECKIN corrisponde a [SccCheckin](../extensibility/scccheckin-funct
 
 SCC_COMMAND_UNCHECKOUT corrisponde a [SccUncheckout](../extensibility/sccuncheckout-function.md).
 
-SCC_COMMAND_ADD corrisponde a [SccAdd.](../extensibility/sccadd-function.md)
+SCC_COMMAND_ADD corrisponde a [SccAdd](../extensibility/sccadd-function.md).
 
 SCC_COMMAND_REMOVE corrisponde a [SccRemove](../extensibility/sccremove-function.md).
 

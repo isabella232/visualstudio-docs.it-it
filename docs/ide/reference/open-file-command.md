@@ -14,14 +14,15 @@ ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 96376c352d3019ba2efefc1f82e75e89a4ac2370
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa31ee8ce28b29f81066e12f80aa0c73fccb8731
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935625"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117319"
 ---
 # <a name="open-file-command"></a>Comando Apri file
 
@@ -70,5 +71,5 @@ In questo esempio viene aperto il file di stile "Test1.css" nell'editor del codi
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Controllo immediato (finestra)](../../ide/reference/immediate-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

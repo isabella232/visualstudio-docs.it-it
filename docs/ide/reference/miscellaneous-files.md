@@ -1,6 +1,6 @@
 ---
 title: File esterni
-description: Informazioni su come usare i file non inclusi in un progetto Visual Studio soluzione.
+description: Informazioni su come lavorare su file non inclusi in un progetto Visual Studio soluzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b6e70decea2458c621e1bb1f304902ea7cd299e703b5ae7071761e989c185e4d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: db9b62e2e3135045c2a4a822585f2e69fe85b02a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334614"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041243"
 ---
 # <a name="miscellaneous-files"></a>File esterni
 
@@ -38,10 +38,10 @@ L'apertura di file in modo indipendente da un progetto o una soluzione è utile 
 
 Esplora soluzioni possibile visualizzare **una cartella** File esterni per i file se le opzioni per la cartella sono abilitate. È possibile impostare le opzioni da [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md). Dopo la chiusura di un file esterno, esso non è associato ad alcuna soluzione o progetto particolare a meno che non sia stata abilitata un'opzione a tale scopo.
 
-La **cartella File** esterni rappresenta i file come collegamenti. Sebbene questa cartella non faccia parte di una soluzione, all'apertura di una soluzione vengono aperti di nuovo alcuni o tutti i file esterni aperti quando la soluzione è stata chiusa l'ultima volta, in base alle impostazioni per la cartella.
+La **cartella File esterni rappresenta** i file come collegamenti. Sebbene questa cartella non faccia parte di una soluzione, all'apertura di una soluzione vengono aperti di nuovo alcuni o tutti i file esterni aperti quando la soluzione è stata chiusa l'ultima volta, in base alle impostazioni per la cartella.
 
 > [!NOTE]
-> Alcuni dei file che non  vengono visualizzati nella cartella File esterni sono file che non è possibile modificare all'interno dell'IDE, ad esempio .zip file e .doc file. L'IDE non rileva i file che possono essere modificati solo tramite un editor esterno.
+> Alcuni dei file che non  vengono visualizzati nella cartella File esterni sono file che non è possibile modificare all'interno dell'IDE, ad esempio file .zip e file .doc. L'IDE non rileva i file che possono essere modificati solo tramite un editor esterno.
 
 ## <a name="commands-available-in-the-ide"></a>Comandi disponibili nell'IDE
 

@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: af9d538ca2f6fd0a7610fef4548c51723cd4f75b120e59e11bedba27435f283a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 564c18a439da1f12c5be36b53839f57ad07fb440
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121430252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117462"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Convertire un ciclo foreach in LINQ
 

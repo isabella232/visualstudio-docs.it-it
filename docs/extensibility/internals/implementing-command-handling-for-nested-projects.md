@@ -1,5 +1,5 @@
 ---
-title: Implementazione della gestione dei comandi per progetti annidati | Microsoft Docs
+title: Implementazione della gestione dei comandi per i progetti annidati | Microsoft Docs
 description: Informazioni su come implementare la gestione dei comandi per i progetti annidati nell Visual Studio di sviluppo integrato (IDE).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,20 +13,20 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54a3412050a8034a5941bbcb445795a28a86a1329bfa174678e067f7ef463729
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9489f37fff9fe1e798a42825a29cf59ec49336e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375936"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042322"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementazione della gestione dei comandi per i progetti annidati
-L'IDE può passare i comandi passati tramite le interfacce e ai progetti annidati oppure i progetti padre possono filtrare o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> eseguire l'override dei comandi.
+L'IDE può passare i comandi passati tramite le interfacce e ai progetti annidati oppure i progetti padre possono <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> filtrare o eseguire l'override dei comandi.
 
 > [!NOTE]
-> Solo i comandi normalmente gestiti dal progetto padre possono essere filtrati. Non è possibile **filtrare** **comandi** come Compila e Distribuisci gestiti dall'IDE.
+> È possibile filtrare solo i comandi normalmente gestiti dal progetto padre. Non è possibile **filtrare** comandi come **Compila** e Distribuisci gestiti dall'IDE.
 
- I passaggi seguenti descrivono il processo di implementazione della gestione dei comandi.
+ La procedura seguente descrive il processo di implementazione della gestione dei comandi.
 
 ## <a name="procedures"></a>Procedure
 
@@ -38,7 +38,7 @@ L'IDE può passare i comandi passati tramite le interfacce e ai progetti annidat
 
       - o -
 
-   2. Se il comando ha avuto origine in una finestra della gerarchia, ad esempio un comando di menu di scelta rapida in Esplora soluzioni, l'IDE chiama il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> sull'elemento padre del progetto.
+   2. Se il comando ha origine in una finestra della gerarchia, ad esempio un comando di menu di scelta rapida in Esplora soluzioni, l'IDE chiama il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> sull'elemento padre del progetto.
 
 2. Il progetto padre può esaminare i parametri da passare a , ad esempio e , per determinare se il `QueryStatus` `pguidCmdGroup` progetto padre deve `prgCmds` filtrare i comandi. Se il progetto padre viene implementato per filtrare i comandi, deve impostare:
 
@@ -50,7 +50,7 @@ L'IDE può passare i comandi passati tramite le interfacce e ai progetti annidat
 
     Il progetto padre deve quindi restituire `S_OK` .
 
-    Se il progetto padre non filtra il comando, deve restituire semplicemente `S_OK` . In questo caso, l'IDE instrada automaticamente il comando al progetto figlio.
+    Se il progetto padre non filtra il comando, deve restituire solo `S_OK` . In questo caso, l'IDE indirizza automaticamente il comando al progetto figlio.
 
     Il progetto padre non deve instradare il comando al progetto figlio. L'IDE esegue questa attività.
 

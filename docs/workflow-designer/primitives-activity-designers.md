@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner Progettazione flussi di lavoro primitive
-description: Informazioni su come usare gli ActivityDesigner primitivi per creare e configurare diverse attività nello spazio dei nomi System. Activities. Statements.
+title: Progettazione flussi di lavoro - ActivityDesigner primitive
+description: Informazioni su come usare gli ActivityDesigner Primitives per creare e configurare varie attività nello spazio dei nomi System.Activities.Statements.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +8,19 @@ ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: e59e0d22d0e7ad0fac645cf1c902df9e2c6e835e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d453ef31a65f9c875a70e05b68d627c5a4d6efc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099022"
 ---
 # <a name="primitives-activity-designers"></a>ActivityDesigner Primitive
 
-Gli ActivityDesigner primitivi consentono di creare e configurare diverse attività nello spazio dei nomi <xref:System.Activities.Statements>, quali Assign e Delay. Negli argomenti contenuti in questa sezione vengono fornite indicazioni su come utilizzare le Progettazione flussi di lavoro progettazione di modelli e attività.
+Gli ActivityDesigner primitivi consentono di creare e configurare diverse attività nello spazio dei nomi <xref:System.Activities.Statements>, quali Assign e Delay. Gli argomenti contenuti in questa sezione forniscono indicazioni su come usare l'attività Progettazione flussi di lavoro e i progettisti di modelli.
 
 ## <a name="related-sections"></a>Sezioni correlate
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

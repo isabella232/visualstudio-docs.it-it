@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 700bdb997a11ce2d29ba84812e12edd5d8462d39f97acab63857ea70a00c12ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d86b78041bd4f78a382c82e95f4b330e7ddd5d2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379790"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147142"
 ---
 # <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
 Recupera un flag che specifica se la classe o il metodo è sealed.
@@ -41,10 +41,10 @@ HRESULT get_sealed(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Una classe sealed non può essere utilizzata come classe base. Un metodo sealed non può essere sovraccaricato.
+ Una classe sealed non può essere utilizzata come classe base. Un metodo sealed non può essere overidden.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: Dia2.h

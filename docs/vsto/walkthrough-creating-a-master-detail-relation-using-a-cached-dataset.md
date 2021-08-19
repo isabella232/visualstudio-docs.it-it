@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 177b21e2278153693601adf7b7dc18b751cf184e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: c4d8d32ea4abfd7b81e6e86bc8d1affa32d1c3b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824848"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059868"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procedura dettagliata: Creare una relazione master-dettagli usando un set di dati memorizzato nella cache
   Questa procedura dettagliata illustra la creazione di una relazione master/dettagli in un foglio di lavoro e la memorizzazione nella cache dei dati in modo che la soluzione possa essere usata offline.
@@ -33,7 +34,7 @@ ms.locfileid: "107824848"
 
 - Configurare un set di dati da memorizzare nella cache in un foglio di lavoro.
 
-- Aggiungere codice per abilitare lo scorrimento dei record.
+- Aggiungere codice per abilitare lo scorrimento tra i record.
 
 - Testare il progetto.
 
@@ -49,23 +50,23 @@ ms.locfileid: "107824848"
 
 - Accesso al database di SQL Server Northwind. Il database può essere nel computer di sviluppo o in un server.
 
-- Autorizzazioni per la lettura e la scrittura nel database SQL Server database.
+- Autorizzazioni per la lettura e la scrittura nel database SQL Server.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
- In questo passaggio verrà creato un progetto Cartella di lavoro di Excel.
+ In questo passaggio si creerà un progetto Excel cartella di lavoro.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto cartella di lavoro di Excel con il nome **My Master-Detail** usando Visual Basic o C#. Assicurarsi che **l'opzione Crea un nuovo documento** sia selezionata. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un Excel cartella di lavoro con il nome **My Master-Detail** usando Visual Basic o C#. Assicurarsi che **l'opzione Crea un nuovo documento** sia selezionata. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-   Visual Studio apre la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **progetto Master-Dettagli** a **Esplora soluzioni**.
+   Visual Studio apre la nuova cartella Excel cartella di lavoro nella finestra di progettazione e aggiunge il progetto **My Master-Detail** **a Esplora soluzioni**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
  Usare la finestra **Origini dati** per aggiungere un DataSet tipizzato al progetto.
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1. Se la **finestra Origini** dati non è visibile, visualizzarla scegliendo Visualizza altre origini dati di Windows sulla barra  >    >  **dei** menu.
+1. Se la **finestra Origini** dati non è visibile, visualizzarla scegliendo Visualizza altre origini Windows  >    >  **dati.**
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -75,32 +76,32 @@ ms.locfileid: "107824848"
 
 5. Dopo aver selezionato o creato una connessione, fare clic su **Avanti.**
 
-6. Deselezionare l'opzione per salvare la connessione, se selezionata, e quindi fare clic su **Avanti.**
+6. Deselezionare l'opzione per salvare la connessione, se selezionata, quindi fare clic su **Avanti.**
 
-7. Espandere il **nodo** Tabelle nella finestra **Oggetti di** database .
+7. Espandere il **nodo** Tabelle nella **finestra Oggetti di** database .
 
 8. Selezionare la **tabella Orders** e la tabella **Order Details.**
 
 9. Fare clic su **Fine**.
 
-   La procedura guidata aggiunge le due tabelle alla **finestra Origini** dati. Aggiunge anche un set di dati tipizzato al progetto visibile in **Esplora soluzioni**.
+   La procedura guidata aggiunge le due tabelle alla **finestra Origini** dati . Aggiunge anche un set di dati tipizzato al progetto visibile in **Esplora soluzioni**.
 
 ## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di lavoro
- In questo passaggio si aggiungeranno un intervallo denominato, un oggetto elenco e due pulsanti al primo foglio di lavoro. Aggiungere prima di tutto l'intervallo denominato e l'oggetto elenco dalla finestra **Origini** dati in modo che siano associati automaticamente all'origine dati. Aggiungere quindi i pulsanti dalla Casella **degli strumenti**.
+ In questo passaggio si aggiungeranno un intervallo denominato, un oggetto elenco e due pulsanti al primo foglio di lavoro. Aggiungere prima di tutto l'intervallo denominato e l'oggetto elenco dalla finestra Origini **dati** in modo che siano associati automaticamente all'origine dati. Aggiungere quindi i pulsanti dalla casella **degli strumenti**.
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>Per aggiungere un intervallo denominato e un oggetto elenco
 
-1. Verificare che la **cartella di lavoro My Master-Detail.xlsx** sia aperta nella finestra di progettazione Visual Studio, con **Sheet1** visualizzato.
+1. Verificare che la **cartella di lavoro Master-Detail.xlsx** sia aperta nella finestra Visual Studio, con **Sheet1** visualizzato.
 
-2. Aprire la **finestra Origini** dati ed espandere il **nodo** Orders.
+2. Aprire la **finestra Origini** dati ed espandere il **nodo** Ordini .
 
 3. Selezionare la **colonna OrderID** e quindi fare clic sulla freccia a discesa visualizzata.
 
 4. Fare **clic su NamedRange** nell'elenco a discesa e quindi trascinare la **colonna OrderID** nella cella **A2.**
 
-     Nella <xref:Microsoft.Office.Tools.Excel.NamedRange> cella `OrderIDNamedRange` **A2** viene creato un controllo denominato . Allo stesso tempo, un denominato , un adattatore di tabella e <xref:System.Windows.Forms.BindingSource> `OrdersBindingSource` <xref:System.Data.DataSet> un'istanza vengono aggiunti al progetto. Il controllo è associato a , che a sua <xref:System.Windows.Forms.BindingSource> volta è associato <xref:System.Data.DataSet> all'istanza di .
+     Nella <xref:Microsoft.Office.Tools.Excel.NamedRange> cella `OrderIDNamedRange` **A2** viene creato un controllo denominato . Allo stesso tempo, un oggetto denominato , un adattatore di tabella e <xref:System.Windows.Forms.BindingSource> `OrdersBindingSource` <xref:System.Data.DataSet> un'istanza di vengono aggiunti al progetto. Il controllo è associato <xref:System.Windows.Forms.BindingSource> all'oggetto , che a sua volta è associato all'istanza <xref:System.Data.DataSet> di .
 
-5. Scorrere verso il basso oltre le colonne nella **tabella Orders.** Nella parte inferiore dell'elenco è disponibile la **tabella Dettagli** ordine. è qui perché è un elemento figlio della **tabella Orders.** Selezionare questa **tabella Dettagli** ordine, non quella che si trova allo stesso livello della tabella **Orders** e quindi fare clic sulla freccia a discesa visualizzata.
+5. Scorrere verso il basso oltre le colonne sotto la **tabella Orders.** Nella parte inferiore dell'elenco è disponibile la **tabella Dettagli** ordine. è qui perché è un elemento figlio della **tabella Orders.** Selezionare questa **tabella Dettagli** ordine, non quella che si trova allo stesso livello della tabella **Orders,** quindi fare clic sulla freccia a discesa visualizzata.
 
 6. Fare **clic su ListObject** nell'elenco a discesa e quindi trascinare la **tabella OrderDetails** nella cella **A6.**
 
@@ -150,11 +151,11 @@ ms.locfileid: "107824848"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet16":::
 
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>Aggiungere codice per abilitare lo scorrimento tra i record
- Aggiungere codice al <xref:System.Windows.Forms.Control.Click> gestore eventi di ogni pulsante per spostarsi tra i record.
+ Aggiungere codice al gestore <xref:System.Windows.Forms.Control.Click> eventi di ogni pulsante per spostarsi tra i record.
 
 ### <a name="to-scroll-through-the-records"></a>Per scorrere i record
 
-1. Aggiungere un gestore eventi per l'evento di e aggiungere il codice seguente per spostarsi all'indietro <xref:System.Windows.Forms.Control.Click> `Button1` tra i record:
+1. Aggiungere un gestore eventi per l'evento di e aggiungere il codice seguente per spostarsi indietro <xref:System.Windows.Forms.Control.Click> `Button1` tra i record:
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet17":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet17":::
@@ -167,31 +168,31 @@ ms.locfileid: "107824848"
 ## <a name="test-the-application"></a>Testare l'applicazione
  È ora possibile testare la cartella di lavoro per assicurarsi che i dati siano visualizzati come previsto e che sia possibile usare la soluzione offline.
 
-### <a name="to-test-the-data-caching"></a>Per testare la memorizzazione nella cache dei dati
+### <a name="to-test-the-data-caching"></a>Per testare la memorizzazione dei dati nella cache
 
 1. Premere **F5**.
 
-2. Verificare che l'intervallo denominato e l'oggetto elenco siano riempiti con i dati dell'origine dati.
+2. Verificare che l'intervallo denominato e l'oggetto elenco siano compilati con i dati dell'origine dati.
 
-3. Scorrere alcuni record facendo clic sui pulsanti.
+3. Scorrere alcuni dei record facendo clic sui pulsanti.
 
 4. Salvare la cartella di lavoro, quindi chiudere la cartella di lavoro e Visual Studio.
 
 5. Disabilitare la connessione al database. Scollegare il cavo di rete dal computer se il database si trova in un server o arrestare il servizio SQL Server se il database si trova nel computer di sviluppo.
 
-6. Aprire Excel e quindi aprire **My Master-Detail.xlsx** dalla directory *\bin* (*\Master-Detail\bin* in Visual Basic o *\My Master-Detail\bin\debug* in C#).
+6. Aprire Excel e quindi my **Master-Detail.xlsx** dalla directory *\bin* (*\Master-Detail\bin* in Visual Basic o *\My Master-Detail\bin\debug* in C#).
 
 7. Scorrere alcuni record per verificare che il foglio di lavoro funzioni normalmente quando è disconnesso.
 
-8. Riconnettersi al database. Connettere nuovamente il computer alla rete se il database si trova in un server o avviare il servizio SQL Server se il database si trova nel computer di sviluppo.
+8. Riconnettersi al database. Connessione il computer alla rete se il database si trova in un server o avviare il servizio SQL Server se il database si trova nel computer di sviluppo.
 
 ## <a name="next-steps"></a>Passaggi successivi
- Questa procedura dettagliata illustra le nozioni di base relative alla creazione di una relazione dati master/dettagli in un foglio di lavoro e alla memorizzazione nella cache di un set di dati. Ecco alcune possibili attività successive:
+ Questa procedura dettagliata illustra le nozioni di base per la creazione di una relazione dati master/dettagli in un foglio di lavoro e la memorizzazione nella cache di un set di dati. Ecco alcune possibili attività successive:
 
-- Distribuzione della soluzione. Per altre informazioni, vedere [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
+- Distribuzione della soluzione. Per altre informazioni, vedere [Distribuire una Office distribuzione](../vsto/deploying-an-office-solution.md)
 
 ## <a name="see-also"></a>Vedi anche
-- [Associare dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
+- [Associare dati a controlli in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Dati in Office soluzioni](../vsto/data-in-office-solutions.md)
 - [Dati cache](../vsto/caching-data.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)

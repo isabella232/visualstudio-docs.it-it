@@ -5,22 +5,21 @@ ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c11e13f87ab166c3e1f545dbe2a885ada5e488b5
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: b2f285893e32d1067c67ec8d76fe41c5958f9766
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295377"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116910"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 
@@ -34,7 +33,7 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 
 - I metodi rappresentano la modalità di organizzazione del codice, vale a dire il modo in cui viene raggruppato il codice.
 
-- Nella maggior parte dei casi, un metodo esegue un piccolo numero di operazioni in un ordine specifico, ad esempio come il `showButton_Click()` Metodo (o `ShowButton_Click()` ) Mostra una finestra di dialogo e quindi carica un'immagine.
+- Nella maggior parte dei casi, un metodo esegue un numero ridotto di operazioni in un ordine specifico, ad esempio il modo in cui il metodo (o ) mostra una finestra di dialogo e quindi carica `showButton_Click()` `ShowButton_Click()` un'immagine.
 
 - Un metodo è costituito da *istruzioni* o righe di codice. Un metodo può essere considerato un modo per raggruppare istruzioni d codice.
 
@@ -50,7 +49,7 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Le istruzioni consentono ai programmi di eseguire azioni. In C# un'istruzione termina sempre con un punto e virgola. In Visual Basic la fine di una riga è la fine di un'istruzione. In Visual Basic non è necessario alcun punto e virgola. L'istruzione precedente indica <xref:System.Windows.Forms.PictureBox> al controllo di caricare il file selezionato dall'utente con il componente **OpenFileDialog** .
+   Le istruzioni consentono ai programmi di eseguire azioni. In C# un'istruzione termina sempre con un punto e virgola. In Visual Basic la fine di una riga è la fine di un'istruzione. Non è necessario alcun punto e virgola Visual Basic. L'istruzione precedente indica <xref:System.Windows.Forms.PictureBox> al controllo di caricare il file selezionato dall'utente con il componente **OpenFileDialog.**
 
 ## <a name="to-add-comments"></a>Per aggiungere commenti
 
@@ -61,21 +60,21 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs" id="Snippet1":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb" id="Snippet1":::
 
-    Il gestore dell'evento <xref:System.Windows.Forms.Control.Click> del pulsante **showButton** è ora completato e funziona. Si è iniziato a scrivere codice, iniziando con l'istruzione `if`. Un' `if` istruzione è il modo in cui si indica all'app, "controllare questa cosa e, se è vero, eseguire queste azioni". In questo caso, si indica all'app di aprire la finestra di dialogo **Apri file** e se l'utente seleziona un file e sceglie il pulsante **OK** , caricare il file in **PictureBox**.
+    Il gestore dell'evento <xref:System.Windows.Forms.Control.Click> del pulsante **showButton** è ora completato e funziona. Si è iniziato a scrivere codice, iniziando con l'istruzione `if`. Un'istruzione è il modo in cui si indica all'app: "Controllare questa cosa e, se è `if` vero, eseguire queste azioni". In questo caso, si indica all'app di aprire la finestra di dialogo Apri **file** e, se l'utente seleziona un file e sceglie **il pulsante OK,** caricare il file in **PictureBox**.
 
     > [!TIP]
     > L'IDE è compilato in modo da semplificare la scrittura del codice anche tramite i *frammenti di codice*. Un frammento è un collegamento che viene espanso in un piccolo blocco di codice.
     >
-    >  È possibile visualizzare tutti i frammenti disponibili. Sulla barra dei menu scegliere **strumenti**  >  **Gestione frammenti di codice**. Per C#, il `if` frammento di codice si trova in **Visual C#** . Per Visual Basic, i `if` frammenti di codice sono inclusi nei **modelli di codice**  >  **condizionali e cicli**. È possibile utilizzare questo strumento di gestione per esplorare frammenti esistenti o aggiungere frammenti personalizzati.
+    >  È possibile visualizzare tutti i frammenti disponibili. Sulla barra dei menu scegliere **Strumenti**  >  **Gestione frammenti di codice**. Per C#, il `if` frammento di codice si trova in **Visual C#.** Ad Visual Basic, i `if` frammenti di codice sono in **modelli di**  >  **codice condizionali e cicli**. È possibile utilizzare questo strumento di gestione per esplorare frammenti esistenti o aggiungere frammenti personalizzati.
     >
     >  Per attivare un frammento quando si digita il codice, digitarlo e premere **TAB**. Molti frammenti di codice vengono visualizzati nella finestra di **IntelliSense** ed è per questo motivo che è necessario premere **TAB** due volte: prima per selezionare il frammento di codice nella finestra di **IntelliSense** e poi per indicare all'IDE di usare il frammento di codice. Si noti che IntelliSense supporta il frammento `if`, ma non il frammento `ifelse`.
 
-1. Prima di eseguire l'applicazione, salvare l'app scegliendo il pulsante della barra degli strumenti **Salva tutto** , che dovrebbe essere simile allo screenshot seguente.
+1. Prima di eseguire l'applicazione, salvare  l'app scegliendo il pulsante Salva tutto sulla barra degli strumenti, che dovrebbe essere simile allo screenshot seguente.
 
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br>
-***Salva tutto** _ _button *
+***Salva tutto** _ _button*
 
-     In alternativa, per salvare l'app, scegliere **file**  >  **Salva tutto** dalla barra dei menu o premere **CTRL** + **MAIUSC** + **S**. Una procedura consigliata consiste nel salvare presto e spesso.
+     In alternativa, per salvare l'app, scegliere **Salva** tutto dalla barra  >   dei menu o premere **CTRL** + **MAIUSC** + **S.** Una procedura consigliata consiste nel salvare presto e spesso.
 
      Quando è in esecuzione, il programma dovrebbe essere simile all'immagine seguente.
 
@@ -83,9 +82,9 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 
 ## <a name="to-test-your-app"></a>Per testare l'app
 
-1. Premere il tasto **F5** o scegliere il pulsante della barra degli strumenti **Avvia debug** .
+1. Fare clic sul **tasto F5** o scegliere il **pulsante Avvia debug sulla** barra degli strumenti.
 
-1. Scegliere il pulsante **Visualizza immagine** per eseguire il codice appena scritto. Prima di tutto, l'app apre una finestra di dialogo **Apri file** . Verificare che i filtri vengano visualizzati nell'elenco a discesa **Tipo file** nella parte inferiore della finestra di dialogo. Passare quindi a un'immagine e aprirla. In genere è possibile trovare immagini di esempio incluse nel sistema operativo Windows nella cartella *Documenti*, che si trova all'interno della cartella *Immagini\Immagini campione*.
+1. Scegliere il pulsante **Visualizza immagine** per eseguire il codice appena scritto. In primo luogo, l'app apre **una finestra di dialogo Apri** file. Verificare che i filtri vengano visualizzati nell'elenco a discesa **Tipo file** nella parte inferiore della finestra di dialogo. Passare quindi a un'immagine e aprirla. In genere è possibile trovare immagini di esempio incluse nel sistema operativo Windows nella cartella *Documenti*, che si trova all'interno della cartella *Immagini\Immagini campione*.
 
     > [!TIP]
     > Se nella finestra di dialogo relativa alla **selezione di un file immagine** non sono presenti immagini, assicurarsi che il filtro **Tutti i file (*.\*)** sia selezionato nell'elenco a discesa nella parte inferiore destra della finestra di dialogo.
@@ -96,11 +95,11 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 10: scrivere codice per pulsanti aggiuntivi e una casella di controllo](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)**.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 10: Scrivere codice](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** per pulsanti aggiuntivi e una casella di controllo.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-* [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
-* [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
+* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: Creare un gioco corrispondente](tutorial-3-create-a-matching-game.md)

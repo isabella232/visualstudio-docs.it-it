@@ -1,5 +1,5 @@
 ---
-description: Recupera l'elemento di designazione del registro della posizione quando l'enumerazione LocationType è impostata su LocIsEnregistered'.
+description: Recupera l'oggetto register designator della posizione quando l'enumerazione LocationType) è impostata su LocIsEnregistered'.
 title: IDiaSymbol::get_registerId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a82c9b0cc7c2db8ad7b0bc5329ab74fb7f4ef1e274c5366e71afd3ff665ce1d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 715fc20baafeaf6ed7adb8790b84daedfc9d3b19
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147232"
 ---
 # <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
-Recupera l'elemento di designazione del registro della posizione quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è impostata su `LocIsEnregistered` .
+Recupera l'designatore del registro della posizione quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è impostata su `LocIsEnregistered` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,13 +35,13 @@ HRESULT get_registerId (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'elemento di designazione del registro della posizione.
+[out] Restituisce l'designatore del registro della posizione.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  Se il simbolo è relativo a un registro, ad esempio se l'enumerazione [LocationType](../../debugger/debug-interface-access/locationtype.md) del simbolo è impostata su , usare il metodo seguito da una chiamata al metodo `LocIsRegRel` `get_registerId` [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) per ottenere l'offset dal registro in cui si trova il simbolo.

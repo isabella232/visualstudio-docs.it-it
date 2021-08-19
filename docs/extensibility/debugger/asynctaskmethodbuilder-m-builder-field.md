@@ -1,5 +1,5 @@
 ---
-description: Rappresenta l'oggetto generatore generico a cui questa istanza non generica delega.
+description: Rappresenta l'oggetto generatore generico a cui delega questa istanza non generica.
 title: AsyncTaskMethodBuilder.m_builder campo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56407d5a46ea314e06d77a4743728ab4531bce24
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 3dbc7090ca937d389d993e13ec96571792c33df3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903866"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133328"
 ---
 # <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder campo
-Rappresenta l'oggetto generatore generico a cui questa istanza non generica delega.
+Rappresenta l'oggetto generatore generico a cui delega questa istanza non generica.
 
  **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
@@ -35,6 +36,6 @@ Rappresenta l'oggetto generatore generico a cui questa istanza non generica dele
 
 ## <a name="remarks"></a>Osservazioni
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
 - [Estensioni interne parallele per l'.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

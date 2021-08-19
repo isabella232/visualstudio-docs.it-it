@@ -13,12 +13,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: 55f8d161eff6b1df3395a8819bba4064c5a7c4af3172e77c7669a3d3b2b340f8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bd48e160b4134ff3439a1258386328b27f84b184
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411815"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116812"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -36,7 +36,7 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Esempio:
 
 ### <a name="enable-parameter-substitution-in-templates"></a>Abilitare la sostituzione dei parametri nei modelli
 
-1. Nel file *con estensione vstemplate* del modello individuare l'elemento corrispondente all'elemento per cui si vuole abilitare `ProjectItem` la sostituzione dei parametri.
+1. Nel file *con estensione vstemplate* del modello individuare l'elemento che corrisponde all'elemento per il quale si vuole abilitare la `ProjectItem` sostituzione dei parametri.
 
 1. Impostare l'attributo `ReplaceParameters` dell'elemento `ProjectItem` su `true`.
 
@@ -122,7 +122,7 @@ Nel file *.vstemplate* del modello di progetto includere l'attributo `ReplacePar
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura: Sostituire parametri in un modello](how-to-substitute-parameters-in-a-template.md)
+- [Procedura: Sostituire i parametri in un modello](how-to-substitute-parameters-in-a-template.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
 - [Riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md)

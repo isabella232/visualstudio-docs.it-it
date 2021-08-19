@@ -1,6 +1,6 @@
 ---
 description: Determina se l'attributo personalizzato specificato è definito.
-title: 'IDebugCustomAttributeQuery:: IsCustomAttributeDefined | Microsoft Docs'
+title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09fc33f9fce838d04537d713d74f7d0ed17c96bc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ace63a8041a402989a4bf8c6863e0f8dff2c1b87
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079480"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 Determina se l'attributo personalizzato specificato è definito.
@@ -41,13 +42,13 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>Parametri
 `pszCustomAttributeName`\
-in Nome dell'attributo personalizzato.
+[in] Nome dell'attributo personalizzato.
 
 ## <a name="return-value"></a>Valore restituito
 Se l'attributo personalizzato è definito, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugClassFieldSymbol** che espone l'interfaccia [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugClassFieldSymbol** che espone [l'interfaccia IDebugCustomAttributeQuery.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(

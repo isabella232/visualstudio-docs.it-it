@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Righe: dati sui conflitti | Microsoft Docs'
-description: Informazioni su come la visualizzazione Righe dei dati sui problemi elenca i dati sulle prestazioni per le istruzioni in esecuzione durante la raccolta degli esempi nell'esecuzione della profilatura.
+description: Informazioni sul modo in cui la visualizzazione Righe dei dati relativi ai dati relativi alle prestazioni elenca i dati sulle prestazioni per le istruzioni in esecuzione quando gli esempi sono stati raccolti nell'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 34e1280b9f44bef7017afed0cc6af60852d6c1bd82f7c9667313bdee6602edb0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dd89ab925a1604adc11f57c271566ccf9b70ca1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121426703"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038734"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
 Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura. In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione.
@@ -68,5 +68,5 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Righe](../profiling/lines-view.md)
-- [Visualizzazione Righe: campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)

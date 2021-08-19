@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 738340efbdc7f266ae8da5ed10363858df970f7175507ddf73e4c5ec5097a4ec
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9652a60149a068643a4a8d0b06728534a4ac521
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351837"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099776"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procedura: Elencare a livello di codice i file delle cartelle di lavoro usati di recente
   La proprietà restituisce una raccolta che contiene i nomi di tutti i file visualizzati nell'elenco Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> di file usati di recente. La lunghezza dell'elenco varia a seconda del numero di file che l'utente ha selezionato per la conservazione. È possibile visualizzare i risultati in un intervallo.

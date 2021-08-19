@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87ebb7ebbacbf03dcbf3275fc809ec26bffbada80c2786df10260aa1eab4a075
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 21aea5a0c368fdd6920255ee73e59fcd63d9bcfc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359767"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159082"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Elenco di controllo: Creare un servizio di linguaggio legacy
 L'elenco di controllo seguente riepiloga i passaggi di base da eseguire per creare un servizio di linguaggio per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'editor principale. Per integrare il servizio di linguaggio in , è necessario creare un analizzatore di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] espressioni di debug. Per altre informazioni, vedere [Scrivere un analizzatore](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) di espressioni CLR nell'estendibilità Visual Studio [debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md).

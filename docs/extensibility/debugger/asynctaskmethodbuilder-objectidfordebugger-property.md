@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3dd80191b215a61ea31075cb0bf273f27ab37da435a3642dce928be9a4ff149
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0dc405a2998e8e3e186439667120e726189bc9e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434698"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133315"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Proprietà AsyncTaskMethodBuilder.ObjectIdForDebugger
 Ottiene un oggetto che può essere utilizzato per identificare in modo univoco questo generatore nel debugger.

@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e664e8af4d65ec0e629d2a26a307aaf71a6ca12bd411855032b2ca394a160f93
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6bfd357776428a9fbf08f15e82b796bd0ca0195f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369436"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039904"
 ---
 # <a name="writecodefragment-task"></a>Attività WriteCodeFragment
 

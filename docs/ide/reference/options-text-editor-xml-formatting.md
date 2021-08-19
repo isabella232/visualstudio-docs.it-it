@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, XML, Formattazione
-description: Informazioni su come utilizzare la pagina formattazione nella sezione XML per specificare la modalità di formattazione di elementi e attributi nei documenti XML.
+description: Informazioni su come usare la pagina Formattazione nella sezione XML per specificare la formattazione di elementi e attributi nei documenti XML.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
@@ -10,16 +10,17 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: b5e3674c955b229c4c517db5d1dab3d36830da5d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 4d870026d55cb092b005b0148f392cf29181380e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932319"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117137"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opzioni, Editor di testo, XML, Formattazione
 
-Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, scegliere **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **XML**, quindi scegliere **formattazione**.
+Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, **scegliere** Strumenti  >  **Opzioni** Editor  >  **di testo**  >  **XML,** quindi scegliere **Formattazione.**
 
 ## <a name="attributes"></a>Attributi
 
@@ -43,7 +44,7 @@ Il secondo attributo e i successivi vengono allineati verticalmente in modo da c
 
 ## <a name="auto-reformat"></a>Riformatta automaticamente
 
-**Quando si incolla dagli Appunti**
+**Incollare dagli Appunti**
 
 Consente di riformattare il testo XML incollato dagli Appunti.
 

@@ -5,18 +5,19 @@ keywords: ai, visual studio, tensorflow, locale
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ceb21701958630c8b783d5b6850c5e0a0ab229a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1e27999af1c467f0231c28a6f1ea53fb4c466a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841380"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037564"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Eseguire il training di un modello TensorFlow in locale
 
@@ -52,7 +53,7 @@ Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for
 
    ![Aprire la soluzione](media/tensorflow-local/open-solution.png)
 
-- Trovare il progetto MNIST in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
+- Trovare il progetto MNIST in Esplora soluzioni , fare **clic** con il pulsante destro del mouse e scegliere **Imposta come Project**.
 
 - Fare clic su **Start** (Avvia).
 

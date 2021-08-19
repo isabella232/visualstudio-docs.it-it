@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ad0fbe5ee74507f84adeb072e69c09d8bf9cb43d528778b2d625fc7f25901c4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aab621ab68d90b44e1132ddbafeb69db57af209b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400284"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117332"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactoring con spostamento di un tipo in un file corrispondente
 
@@ -47,7 +47,7 @@ Questo refactoring si applica a:
 
 2. Eseguire quindi una delle operazioni seguenti:
 
-   - Premere  + **CTRL.**
+   - Premere  + **CTRL+ .**
    - Fare clic con il pulsante destro del mouse e scegliere **Azioni rapide e refactoring**
 
 1. Scegliere **Sposta il tipo in *TypeName*.cs** dal menu, dove *TypeName* è il nome del tipo selezionato.

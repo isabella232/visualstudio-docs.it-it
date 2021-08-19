@@ -1,6 +1,6 @@
 ---
-description: Ottiene il tipo di classe di attributi personalizzati.
-title: 'IDebugCustomAttribute:: GetAttributeTypeField | Microsoft Docs'
+description: Ottiene il tipo di classe dell'attributo personalizzato.
+title: IDebugCustomAttribute::GetAttributeTypeField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0d0cfdfcdb49c934d9f4c0288f66a52e3e48f49
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cb75854f05fdaa30488894274d42d73733604aae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088094"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079558"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
-Ottiene il tipo di classe di attributi personalizzati.
+Ottiene il tipo di classe dell'attributo personalizzato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int GetAttributeTypeField(
 
 ## <a name="parameters"></a>Parametri
 `ppCAType`\
-out Restituisce l'oggetto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che rappresenta la classe di cui l'attributo personalizzato è un'istanza.
+[out] Restituisce [l'oggetto IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che rappresenta la classe di cui l'attributo personalizzato è un'istanza.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Un attributo personalizzato è sempre una classe. Questo metodo fornisce l'accesso a un oggetto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che descrive tale classe.
+ Un attributo personalizzato è sempre una classe. Questo metodo fornisce l'accesso a [un oggetto IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che descrive tale classe.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: e51fd5a806a9ede74d824c94d3eda84dc0541e9ebe235cb76242c6a783d02c9a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a44cf8413e60b0dd5049f7ce31d699e6cfbbca47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423709"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099087"
 ---
 # <a name="finalstate-activity-designer"></a>ActivityDesigner FinalState
 
@@ -24,7 +24,7 @@ La finestra di progettazione di <xref:System.Activities.Core.Presentation.FinalS
 
 ## <a name="using-the-finalstate-activity-designer"></a>Uso di ActivityDesigner FinalState
 
-La **finestra di progettazione FinalState** viene usata per creare un oggetto preconfigurato come stato di <xref:System.Activities.Statements.State> terminazione in una macchina a stati. Un oggetto creato usando ActivityDesigner ha la proprietà impostata su true , non ha alcuna attività e nessuna transizione da <xref:System.Activities.Statements.State> <xref:System.Activities.Core.Presentation.FinalState> essa <xref:System.Activities.Statements.State.IsFinal%2A>  <xref:System.Activities.Statements.State.Exit%2A> originata. Per usare ActivityDesigner per aggiungere un'attività preconfigurata come stato di terminazione in una macchina a stati, trascinare <xref:System.Activities.Core.Presentation.FinalState> <xref:System.Activities.Statements.State> **l'ActivityDesigner FinalState**  dalla sezione **Macchina** a stati della Casella degli strumenti e rilasciarla nella finestra di progettazione del flusso di lavoro. Un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState> può essere rilasciato in <xref:System.Activities.Statements.StateMachine> e le transizioni possono essere aggiunte successivamente, o una transizione può essere creata quando viene rilasciato un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState>. Per altre informazioni sulla creazione di transizioni, vedere [Transizione](../workflow-designer/transition-activity-designer.md).
+La **finestra di progettazione FinalState** viene usata per creare un oggetto preconfigurato come stato di <xref:System.Activities.Statements.State> terminazione in una macchina a stati. La <xref:System.Activities.Statements.State> proprietà di un oggetto creato usando l'ActivityDesigner è impostata su true, non ha alcuna attività e nessuna transizione <xref:System.Activities.Core.Presentation.FinalState> da essa <xref:System.Activities.Statements.State.IsFinal%2A>  <xref:System.Activities.Statements.State.Exit%2A> originata. Per usare l'ActivityDesigner per aggiungere un'attività preconfigurata come stato di terminazione in una macchina a stati, trascinare <xref:System.Activities.Core.Presentation.FinalState> <xref:System.Activities.Statements.State> **l'ActivityDesigner FinalState**  dalla sezione **Macchina** a stati della casella degli strumenti e rilasciarla nella finestra di progettazione del flusso di lavoro. Un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState> può essere rilasciato in <xref:System.Activities.Statements.StateMachine> e le transizioni possono essere aggiunte successivamente, o una transizione può essere creata quando viene rilasciato un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState>. Per altre informazioni sulla creazione di transizioni, vedere [Transizione.](../workflow-designer/transition-activity-designer.md)
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività di stato in Progettazione flussi di lavoro 
 
@@ -32,8 +32,8 @@ Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.State> nell'intestazione. Il valore predefinito è **State**. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner. <xref:System.Activities.Statements.State.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Statements.State.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.State.Entry%2A>|Falso|Specifica l'azione che si verifica quando viene eseguita la transizione di questo stato. Questo valore può essere impostato trascinando un'attività dalla Casella **degli** strumenti e rilasciarla <xref:System.Activities.Statements.State.Entry%2A> nella sezione dello stato.|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.State> nell'intestazione. Il valore predefinito è **State.** Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner. <xref:System.Activities.Statements.State.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Statements.State.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
+|<xref:System.Activities.Statements.State.Entry%2A>|Falso|Specifica l'azione che si verifica quando viene eseguita la transizione di questo stato. Questo valore può essere impostato trascinando un'attività dalla **Casella** degli strumenti e rilasciarla nella sezione <xref:System.Activities.Statements.State.Entry%2A> dello stato.|
 
 ## <a name="see-also"></a>Vedi anche
 

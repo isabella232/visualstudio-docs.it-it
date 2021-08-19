@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c613bb9642ad63a8df13dcf033e1618c79dd2c567d26f6dde62463aaec2a70d9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6577f42f053649e47a92615ae40e76f45f3c0c6e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099555"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del Registro di sistema VSTO componenti aggiuntivi
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.
@@ -43,9 +43,9 @@ ms.locfileid: "121267533"
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrare VSTO componenti aggiuntivi per l'utente corrente e per tutti gli utenti
  Un componente aggiuntivo VSTO installato può essere registrato in due modi diversi:
 
-- Solo per l'utente corrente, ovvero è disponibile solo per l'utente connesso al computer quando VSTO componente aggiuntivo. In questo caso, le voci del Registro di sistema vengono create nel **HKEY_CURRENT_USER**.
+- Solo per l'utente corrente, ovvero è disponibile solo per l'utente connesso al computer quando VSTO è installato il componente aggiuntivo. In questo caso, le voci del Registro di sistema vengono create nel **HKEY_CURRENT_USER**.
 
-- Per tutti gli utenti, ovvero qualsiasi utente che accede al computer può usare il componente VSTO componente aggiuntivo. In questo caso, le voci del Registro di sistema vengono create in **HKEY_LOCAL_MACHINE**.
+- Per tutti gli utenti, ovvero qualsiasi utente che accede al computer può usare il componente VSTO componente aggiuntivo. In questo caso, le voci del Registro di sistema vengono create **in HKEY_LOCAL_MACHINE**.
 
   Tutti i componenti aggiuntivi VSTO creati con Visual Studio possono essere registrati per l'utente corrente. Tuttavia, i componenti aggiuntivi VSTO possono essere registrati per tutti gli utenti solo in determinati scenari. Questi scenari dipendono dalla versione di Microsoft Office installata nel computer e dal modo in cui è stato distribuito il componente aggiuntivo VSTO.
 
@@ -53,15 +53,15 @@ ms.locfileid: "121267533"
  Se si usa ClickOnce per distribuire un componente aggiuntivo VSTO, quest'ultimo può essere registrato solo per l'utente corrente. Questo perché ClickOnce supporta solo la creazione di chiavi in **HKEY_CURRENT_USER**. Se si vuole registrare un componente aggiuntivo VSTO per tutti gli utenti di un computer, è necessario distribuirlo tramite Windows Installer. Per altre informazioni su questi tipi di distribuzione, vedere Deploy [an Office solution by using ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) and Deploy an Office solution by using Windows [Installer](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Voci del Registro di sistema
- Le voci VSTO del Registro di sistema del componente aggiuntivo  necessarie si trovano nelle chiavi del Registro di sistema **seguenti,** dove Radice è HKEY_CURRENT_USER o **HKEY_LOCAL_MACHINE a** seconda che l'installazione sia per l'utente corrente o per tutti gli utenti.
+ Le voci VSTO del Registro di sistema del componente aggiuntivo  necessarie si trovano nelle chiavi del Registro di sistema seguenti, dove Radice è **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE a** seconda che l'installazione sia per l'utente corrente o per tutti gli utenti.
 
 |Office Applicazione|Percorso di configurazione|
 |------------------|------------------|
-|Visio|*Root*\Software\Microsoft \\ *Visio*\Addins \\ *add-in ID*|
+|Visio|*ROOT*\Software\Microsoft \\ *Visio*\Addins \\ *add-in ID*|
 |Tutti gli altri|*Root*\Software\Microsoft\Office \\ *Office application name*\Addins \\ *add-in ID*|
 
 > [!NOTE]
-> Se il programma di installazione ha come destinazione tutti gli utenti in un Windows a 64 bit, è consigliabile che includa due voci del Registro di sistema, una nel HKEY_LOCAL_MACHINE\Software\Microsoft e una nel nodo HKEY_LOCAL_MACHINE\Software\\ **WOW6432Node**\Microsoft hive. Ciò è dovuto al fatto che gli utenti possono usare versioni a 32 bit o a 64 bit Office nel computer.
+> Se il programma di installazione è mirato a tutti gli utenti in un Windows a 64 bit, è consigliabile che includa due voci del Registro di sistema, una sotto il HKEY_LOCAL_MACHINE\Software\Microsoft e una nel nodo \\ **HKEY_LOCAL_MACHINE\SoftwareWOW6432Node**\Microsoft hive. Ciò è dovuto al fatto che gli utenti possono usare versioni a 32 bit o a 64 bit Office nel computer.
 >
 >Se il programma di installazione ha come destinazione l'utente corrente, non è necessario installarlo nel nodo WOW6432 perché il percorso HKEY_CURRENT_USER\Software condiviso.
 >
@@ -105,6 +105,6 @@ ms.locfileid: "121267533"
 ## <a name="see-also"></a>Vedi anche
 - [Architettura delle Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Compilare Office soluzioni](../vsto/building-office-solutions.md)
+- [Creare Office soluzioni](../vsto/building-office-solutions.md)
 - [Distribuire una soluzione Office distribuzione](../vsto/deploying-an-office-solution.md)
  

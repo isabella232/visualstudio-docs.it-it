@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Scorrere a livello di codice gli elementi trovati nei documenti'
-description: Informazioni su come scorrere a livello di codice gli elementi trovati in Microsoft Word documento usando Visual Studio.
+title: 'Procedura: Eseguire un ciclo a livello di codice tra gli elementi trovati nei documenti'
+description: Informazioni su come scorrere a livello di codice gli elementi trovati in un documento Microsoft Word usando Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,14 +18,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8a9333efec2886ba4ed7d8d33a99e2de85bd1733f10837299643cae0c19a9f30
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab13fee63ab9ed98ba75148a8f099fe1df003bef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440747"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083219"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Procedura: Scorrere a livello di codice gli elementi trovati nei documenti
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Procedura: Eseguire un ciclo a livello di codice tra gli elementi trovati nei documenti
   Nella classe <xref:Microsoft.Office.Interop.Word.Find> è presente una proprietà <xref:Microsoft.Office.Interop.Word.Find.Found%2A> , che restituisce **true** ogni volta che viene trovato un elemento di cui è stata effettuata la ricerca. Per scorrere in ciclo tutte le istanze trovate in un oggetto <xref:Microsoft.Office.Interop.Word.Range> , è possibile usare il metodo <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "121440747"
 
 ## <a name="vsto-add-in-example"></a>VSTO Esempio di componente aggiuntivo
 
-### <a name="to-loop-through-items-in-a-vsto-add-in"></a>Per scorrere in ciclo gli elementi in VSTO componente aggiuntivo
+### <a name="to-loop-through-items-in-a-vsto-add-in"></a>Per scorrere in ciclo gli elementi in un VSTO componente aggiuntivo
 
 1. L'esempio seguente mostra il codice completo per un componente aggiuntivo VSTO. Per usare questo codice, eseguirlo dalla classe `ThisAddIn` nel progetto.
 
@@ -76,7 +76,7 @@ ms.locfileid: "121440747"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Cercare e sostituire rext nei documenti a livello di codice](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [Procedura: Impostare le opzioni di ricerca in Word a livello di codice](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Procedura: Impostare le opzioni di ricerca a livello di codice in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
 - [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Procedura: Ripristinare le selezioni a livello di codice dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

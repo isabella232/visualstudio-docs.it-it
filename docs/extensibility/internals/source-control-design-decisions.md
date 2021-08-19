@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79cbc22b16835e0f6c3fa9caa41ac9720c7022d8786520b1baf89d33c3b64948
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f0901d3cbdd6e73db85e7b56df3bca3af38fde0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275177"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159048"
 ---
 # <a name="source-control-design-decisions"></a>Decisioni di progettazione relative al controllo del codice sorgente
 Quando si implementa il controllo del codice sorgente, è necessario prendere in considerazione le decisioni di progettazione seguenti per i progetti.

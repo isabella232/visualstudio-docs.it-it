@@ -11,17 +11,18 @@ ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c265f8312b9a23b3b10f06595240dae20894f001
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 71b8b4ef578646a63ec64fbbde506dd71984fe35
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061550"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042816"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -48,22 +49,22 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>Members
 
 `tokMethod`\
-ID del metodo o della funzione a cui fa parte la variabile locale.
+ID del metodo o della funzione di cui fa parte la variabile locale.
 
-[C++] `_mdToken` è un oggetto `typedef` per un oggetto a 32 bit `int` .
+[C++] `_mdToken` è un `typedef` oggetto per un oggetto a 32 `int` bit.
 
 `pLocal`\
-Token il cui indirizzo è rappresentato da questa struttura.
+Token di cui rappresenta l'indirizzo rappresentato da questa struttura.
 
 `dwIndex`\
-Può essere l'indice di questa variabile locale nel metodo o nella funzione o in un altro valore (specifico del linguaggio).
+Può essere l'indice di questa variabile locale nel metodo o nella funzione o un altro valore (specifico del linguaggio).
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_LOCAL` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
+Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_LOCAL` dati). [](../../../extensibility/debugger/reference/address-kind.md)
 
 > [!WARNING]
-> [Solo C++] Se `pLocal` non è null, è necessario chiamare `Release` sul puntatore del token ( `addr` è un campo nella struttura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) ):
+> [Solo C++] Se non è Null, è necessario chiamare sul puntatore del token ( è un campo `pLocal` nella `Release` `addr` [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -74,9 +75,9 @@ Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../.
 
 ## <a name="requirements"></a>Requisiti
 
-Intestazione: sh. h
+Intestazione: sh.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

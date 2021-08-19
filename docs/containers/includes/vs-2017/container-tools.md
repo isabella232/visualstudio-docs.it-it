@@ -4,16 +4,16 @@ author: ghogen
 description: Informazioni su come usare gli strumenti di Visual Studio 2017 e Docker per Windows
 ms.author: ghogen
 ms.date: 02/01/2019
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: include
-ms.openlocfilehash: 92b97cb1091722bdf0caa6e7708e015612c545ad
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: cc9df8638e72e2175aa55b5b8ab819d4b476d5dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112044707"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147375"
 ---
-Con Visual Studio, è possibile compilare, eseguire il debug ed eseguire facilmente app ASP.NET Core in contenitori e pubblicarle in Registro Azure Container, Docker Hub, Servizio app di Azure o nel proprio registro contenitori. In questo articolo verrà pubblicata in Registro Container.
+Con Visual Studio, è possibile compilare, eseguire il debug ed eseguire facilmente app ASP.NET Core ASP.NET Core in contenitori e pubblicarle in Registro Azure Container, Docker Hub, Servizio app di Azure o nel registro contenitori. In questo articolo verrà pubblicata in Registro Contenitori.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -23,20 +23,20 @@ Con Visual Studio, è possibile compilare, eseguire il debug ed eseguire facilme
 
 ## <a name="installation-and-setup"></a>Installazione e configurazione
 
-Per l'installazione di Docker, esaminare prima di tutto le informazioni in [Docker Desktop per Windows: Cosa](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)sapere prima di installare . Installare [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Per l'installazione di Docker, esaminare prima le informazioni in [Docker Desktop per Windows: Cosa sapere prima di installare](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installare [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="add-a-project-to-a-docker-container"></a>Aggiungere un progetto in un contenitore Docker
 
 1. Nel menu di Visual Studio selezionare **File > Nuovo > Progetto**.
 1. Nella sezione **Modelli** della finestra di dialogo **Nuovo progetto** selezionare **Visual C# > Web**.
-1. Selezionare **ASP.NET Core Web Application** (Applicazione Web core) oppure, se si vuole usare il .NET Framework anziché .NET Core, selezionare ASP.NET Web application **(Applicazione Web).**
+1. Selezionare **ASP.NET Core'applicazione Web** oppure, se si vuole usare il .NET Framework anziché .NET Core, selezionare ASP.NET **Applicazione Web**.
 1. Assegnare un nome alla nuova applicazione (o accettare quello predefinito), quindi selezionare **OK**.
-1. Selezionare **Applicazione Web.**
+1. Selezionare **Applicazione Web**.
 1. Spuntare la casella di controllo **Abilita Supporto Docker**.
 
    ![Casella di controllo Abilita supporto Docker](../../media/container-tools/enable-docker-support.PNG)
 
-   Lo screenshot mostra .NET Core. Se si usa un .NET Framework, l'aspetto è leggermente diverso.
+   Lo screenshot mostra .NET Core. se si usa .NET Framework, l'aspetto è leggermente diverso.
 
 1. Selezionare il tipo di contenitore appropriato (Windows o Linux) e fare clic su **OK**.
 

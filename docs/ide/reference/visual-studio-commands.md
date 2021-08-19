@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e16e6d084a4e39f58fa18ab7becd5c2f5264e53bb1775fd99240ce427062b46
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 180852e2895318f1ffc2fbf411c3945373b5ab4c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447001"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040970"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 

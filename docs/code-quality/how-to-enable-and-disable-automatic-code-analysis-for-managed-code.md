@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: ff4ffe458a059cb202af61054459b349e470cbe267e95e1844ea7cdaabf22d82
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c687a8c2fd1293913670af4489dfb5c9663344c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455381"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147349"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Procedura: Abilitare e disabilitare l'analisi del codice binario per il codice gestito
 
@@ -32,13 +32,13 @@ Per abilitare o disabilitare l'analisi del codice legacy:
 
 ::: moniker range="vs-2017"
 
-4. Per abilitare o disabilitare l'analisi automatica del codice, selezionare o deselezionare la casella **di controllo Abilita** Code Analysis durante la compilazione.
+4. Per abilitare o disabilitare l'analisi del codice automatica, selezionare o deselezionare la **casella di controllo Code Analysis durante la** compilazione.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Per abilitare o disabilitare l'analisi del codice automatica, selezionare o deselezionare la casella di **controllo** Esegui in compilazione nella **sezione Analizzatori binari.**
+4. Per abilitare o disabilitare l'analisi del codice automatica, selezionare o deselezionare la casella di **controllo** Esegui alla compilazione nella **sezione Analizzatori binari.**
 
    ![Eseguire l'analisi del codice binario nell'opzione di compilazione in Visual Studio](media/run-on-build-binary-analyzers.png)
 

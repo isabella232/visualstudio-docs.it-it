@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Eliminare a livello di codice Outlook contatti'
-description: Informazioni su come eliminare i contatti a livello di codice in Microsoft Outlook. In questo esempio viene eliminato un contatto.
+title: 'Procedura: Eliminare contatti di Outlook a livello di codice'
+description: Informazioni su come eliminare i contatti in Microsoft Outlook a livello di codice. In questo esempio viene eliminato un contatto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,14 +16,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 87c201f40b158fda97b8fbb8d0d0e036ee897909597224ddc47b4c150f1784c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 82346b3bd8e5b30179977554826beb95d1291e8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099815"
 ---
-# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: Eliminare a livello di codice Outlook contatti
+# <a name="how-to-programmatically-delete-outlook-contacts"></a>Procedura: Eliminare contatti di Outlook a livello di codice
   In questo esempio viene eliminato un contatto. L'esempio presuppone che un contatto denominato "Armando Pinto" esista nella cartella **Contatti** .
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -35,4 +35,4 @@ ms.locfileid: "121394446"
 ## <a name="see-also"></a>Vedere anche
 - [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
 - [Procedura: Cercare un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
-- [Procedura: Accedere ai contatti Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Procedura: Accedere ai contatti a Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)

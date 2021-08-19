@@ -1,6 +1,6 @@
 ---
 title: Riformattazione del codice in un servizio di linguaggio legacy | Microsoft Docs
-description: Informazioni sull'abilitazione del supporto per la riformattazione del codice sorgente per Visual Studio servizio di linguaggio legacy.
+description: Informazioni sull'abilitazione del supporto per la riformattazione del codice sorgente per un Visual Studio di linguaggio legacy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0af9dc7bf25e448a1e5a128276f55016a1049db49f55e14689fce9a6e8376972
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d0778b5f60abe8c72e12783fa65017d86c11aa7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414493"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159062"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Riformattazione del codice in un servizio di linguaggio legacy
 
@@ -28,9 +28,9 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] codice sorgente
 > [!NOTE]
 > L'inserimento o l'eliminazione di caratteri di nuova riga può influire sui marcatori, ad esempio punti di interruzione e segnalibri, ma l'aggiunta o la rimozione di spazi o tabulazioni non influisce sui marcatori.
 
-Gli utenti possono avviare un'operazione di riformattazione selezionando **Formatta** selezione o **Formatta** documento dal **menu** **Avanzate** del menu Modifica. Un'operazione di riformattazione può essere attivata anche quando viene inserito un frammento di codice o un particolare carattere. Ad esempio, quando si digita una parentesi graffa di chiusura in C#, tutti gli elementi compresi tra la parentesi graffa aperta corrispondente e la parentesi graffa di chiusura vengono automaticamente rientrati al livello appropriato.
+Gli utenti possono avviare un'operazione di riformattazione selezionando **Formatta** selezione o **Formatta** documento dal **menu** **Avanzate** del menu Modifica. Un'operazione di riformattazione può essere attivata anche quando viene inserito un frammento di codice o un carattere specifico. Ad esempio, quando si digita una parentesi graffa di chiusura in C#, tutti gli elementi tra la parentesi graffa aperta corrispondente e la parentesi graffa di chiusura vengono automaticamente rientrati al livello appropriato.
 
-Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] invia il comando **Formatta selezione** o **Formatta** documento al servizio di linguaggio, la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe chiama il metodo nella classe <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> . Per supportare la formattazione, è necessario eseguire <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> l'override del metodo e fornire il proprio codice di formattazione.
+Quando invia il comando Format Selection o Format Document al servizio di linguaggio, la classe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] chiama il metodo nella classe   <xref:Microsoft.VisualStudio.Package.ViewFilter> <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> . Per supportare la formattazione, è necessario eseguire l'override <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> del metodo e fornire il proprio codice di formattazione.
 
 ## <a name="enabling-support-for-reformatting"></a>Abilitazione del supporto per la riformattazione
 

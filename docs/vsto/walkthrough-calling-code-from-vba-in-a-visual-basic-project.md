@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: Chiamare il codice da VBA in un Visual Basic progetto'
-description: Informazioni su come chiamare un metodo in una personalizzazione a livello di documento per Microsoft Word dal codice Visual Basic, Applications Edition (VBA) nel documento.
+title: 'Procedura dettagliata: Chiamare codice da VBA in un progetto Visual Basic codice'
+description: Informazioni su come chiamare un metodo in una personalizzazione a livello di documento Microsoft Word codice Visual Basic, Applications Edition (VBA) nel documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -20,16 +20,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f4fe056f70e0af03809b43d60968bd8a1a50bf08
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 631511ba470b42d07878d175c953bb7047914fc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824484"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147648"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Procedura dettagliata: Chiamare il codice da VBA in un Visual Basic progetto
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Procedura dettagliata: Chiamare codice da VBA in un progetto Visual Basic codice
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Word da codice Visual Basic, Applications Edition (VBA) contenuto nel documento. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `ThisDocument` , esporre il metodo al codice VBA e quindi chiamare il metodo dal codice VBA contenuto nel documento.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -67,7 +68,7 @@ ms.locfileid: "107824484"
 
 1. Avviare Word.
 
-2. Salvare il documento attivo come documento con attivazione macro di Word **( \* docm)** con il nome **DocumentWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
+2. Salvare il documento attivo come documento di Word con attivazione **macro \* (docm)** con il nome **DocumentWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
 
 3. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
@@ -116,7 +117,7 @@ ms.locfileid: "107824484"
 
 9. Fare clic su **Fine**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il **documento DocumentWithVBA** nella finestra di progettazione e aggiunge il **progetto CallingCodeFromVBA** **a Esplora soluzioni**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il **documento DocumentWithVBA** nella finestra di progettazione e aggiunge il **progetto CallingCodeFromVBA** **Esplora soluzioni**.
 
 ## <a name="trust-the-location-of-the-document"></a>Considerare attendibile il percorso del documento
  Per poter esporre il codice contenuto nella soluzione al codice VBA contenuto nel documento è necessario che quest'ultimo sia impostato come attendibile per l'esecuzione. L'operazione può essere eseguita in vari modi. Questa procedura dettagliata prevede la concessione dell'attendibilità al percorso del documento con il **Centro protezione** di Word.
@@ -214,13 +215,13 @@ ms.locfileid: "107824484"
 ## <a name="next-steps"></a>Passaggi successivi
  Altre informazioni su come chiamare elementi di codice in soluzioni Office da VBA sono disponibili negli argomenti seguenti:
 
-- Chiamata di codice da VBA in una personalizzazione di Visual C#. Questo processo è diverso dal processo usato per Visual Basic. Per altre informazioni, vedere [Procedura dettagliata: Chiamare codice da VBA in un progetto Visual C&#35; .](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
+- Chiamata di codice da VBA in una personalizzazione di Visual C#. Questo processo è diverso dal processo usato per Visual Basic. Per altre informazioni, vedere [Procedura dettagliata: Chiamare codice da VBA in un progetto Visual C&#35; visuale.](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
 
-- Chiamare codice in un componente aggiuntivo VSTO da VBA. Per altre informazioni, vedere Procedura dettagliata: Chiamare codice in un componente aggiuntivo [VSTO da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+- Chiamare codice in un componente aggiuntivo VSTO da VBA. Per altre informazioni, vedere [Procedura dettagliata: Chiamare codice in un VSTO componente aggiuntivo da VBA.](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Combinare le personalizzazioni VBA e a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
-- [Procedura: Esporre codice a VBA in un progetto Visual Basic codice](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [Procedura: Esporre codice a VBA in un progetto Visual C&#35; codice](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [Procedura: Esporre il codice a VBA in un Visual Basic progetto](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [Procedura: Esporre codice a VBA in un progetto Visual C&#35; visuale](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Procedura dettagliata: Chiamare codice da VBA in un progetto visual c&#35; visual c](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)

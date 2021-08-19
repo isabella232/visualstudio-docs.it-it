@@ -1,5 +1,5 @@
 ---
-description: Questo metodo ottiene un'interfaccia per il server su cui si trova la porta.
+description: Questo metodo ottiene un'interfaccia per il server su cui si trova questa porta.
 title: Interfaccia IDebugDefaultPort2::GetServer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f841379db4154c424b59ce9223f374243d53288c9d3e3a5cb3d35e5cbba05415
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 877dd6fc81c4bbb865594d822da10c2749c6b493
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417535"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079337"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
-Questo metodo ottiene un'interfaccia per il server su cui si trova la porta.
+Questo metodo ottiene un'interfaccia per il server su cui si trova questa porta.
 
 ## <a name="syntax"></a>Sintassi
 

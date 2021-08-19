@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5ec3dcb514097f495aa323948d7491a80811fdecf95269793e61f82545f49930
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e20f4cba0d826a7a9b608f1fc56fde1a35ae54c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307947"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079415"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Ottiene i byte degli attributi personalizzati in base al nome dell'attributo personalizzato.
@@ -53,7 +53,7 @@ int GetCustomAttributeByName(
 [in, out] Matrice compilata con i byte dell'attributo personalizzato.
 
 `pdwLen`\
-[in, out] Specifica il numero massimo di byte da restituire nella matrice e `ppBlob` restituisce il numero di byte effettivamente scritti nella matrice.
+[in, out] Specifica il numero massimo di byte da restituire nella matrice e restituisce il `ppBlob` numero di byte effettivamente scritti nella matrice.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se l'attributo personalizzato non esiste. In caso contrario, verrà restituito un codice di errore.
@@ -63,7 +63,7 @@ int GetCustomAttributeByName(
 
  I byte dell'attributo rappresentano i dati non elaborati dell'attributo personalizzato.
 
- Se i parametri e sono impostati su un valore Null, questo metodo può essere usato per determinare `ppBlob` se l'attributo personalizzato esiste `pdwLen` semplicemente. Un'alternativa più semplice, tuttavia, consiste nel chiamare il [metodo IsCustomAttributeDefined.](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)
+ Se i parametri e sono impostati su un valore Null, questo metodo può essere usato per determinare se `ppBlob` `pdwLen` l'attributo personalizzato esiste semplicemente. Un'alternativa più semplice, tuttavia, consiste nel chiamare il [metodo IsCustomAttributeDefined.](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

@@ -10,18 +10,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: c2ed8700cfb18aacf41464bfdfacaedac557bb00
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4b51d2754ec3c48c9ca2f7a86640959221ff2a28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388906"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040346"
 ---
 # <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
 
-È possibile scrivere codice per creare e aggiornare diagrammi delle dipendenze e per convalidare la struttura del codice del programma rispetto ai diagrammi di dipendenza in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
+È possibile scrivere codice per creare e aggiornare i diagrammi delle dipendenze e per convalidare la struttura del codice del programma rispetto ai diagrammi delle dipendenze in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,13 +30,13 @@ ms.locfileid: "112388906"
 
 - Visual Studio
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+- [Visual Studio Sdk](../extensibility/visual-studio-sdk.md)
 
-- Sdk di modellazione per Visual Studio
+- SDK di modellazione per Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-È necessario avere un'edizione appropriata di Visual Studio installato nel computer in cui si vogliono eseguire le estensioni del livello. Per informazioni sulle edizioni di Visual Studio diagrammi delle dipendenze, vedere Supporto dell'edizione per gli strumenti di [architettura e modellazione](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
+È necessario avere un'edizione appropriata di Visual Studio installato nel computer in cui si vogliono eseguire le estensioni del livello. Per informazioni sulle edizioni di Visual Studio diagrammi delle dipendenze, vedere Supporto dell'edizione per gli strumenti di architettura [e modellazione](../modeling/analyze-and-model-your-architecture.md#VersionSupport).
 
 ## <a name="see-also"></a>Vedi anche
 

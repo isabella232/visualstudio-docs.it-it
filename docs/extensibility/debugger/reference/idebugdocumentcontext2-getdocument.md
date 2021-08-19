@@ -1,5 +1,5 @@
 ---
-description: Ottiene il documento che contiene questo contesto del documento.
+description: Ottiene il documento che contiene il contesto del documento.
 title: Interfaccia IDebugDocumentContext2::GetDocument | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a244f08c4c455edce778732d1f93bbe023e3112379480c535e0471eed0c8a4d3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9b3616376617e6fcc88f9de7bae15bcca072130
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079220"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
-Ottiene il documento che contiene questo contesto del documento.
+Ottiene il documento che contiene il contesto del documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +43,13 @@ int GetDocument(
 
 ## <a name="parameters"></a>Parametri
 `ppDocument`\
-[out] Restituisce un [oggetto IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il documento che contiene questo contesto del documento.
+[out] Restituisce un [oggetto IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il documento che contiene il contesto del documento.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo è per i motori di debug che forniscono documenti direttamente all'IDE. In caso contrario, questo metodo deve restituire `E_NOTIMPL` .
+ Questo metodo è per i motori di debug che forniscono i documenti direttamente all'IDE. In caso contrario, questo metodo deve restituire `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

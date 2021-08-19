@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb528d3f8c12e21f327b168a88d4df070e2863188fcc8e1580135db9685c1ca4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b3f87d8a33c4b6ea43aebc487d09dafc87169eca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307778"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079129"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Questo metodo indica al motore di debug le informazioni sullo stato di JustMyCode.
