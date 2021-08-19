@@ -10,14 +10,15 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 293851f1f3e72508a9bc119fb7551b0118ab2a9b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c3a97b75f1df66d8353c06acf74f8d69b26a6e8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903147"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152250"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione del servizio di linguaggio e dell'editor
 L'editor fornisce punti di estensione che è possibile estendere come Managed Extensibility Framework (MEF), incluse la maggior parte delle funzionalità del servizio di linguaggio. Queste sono le categorie principali dei punti di estensione:
@@ -117,15 +118,15 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 > [!NOTE]
 > In Visual Studio, le estensioni di file vengono registrate usando in <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> un pacchetto del servizio di linguaggio. Associa <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> un tipo di contenuto MEF a un'estensione di file registrata in questo modo.
 
- Per esportare l'estensione di file nella definizione del tipo di contenuto, è necessario includere gli attributi seguenti:
+ Per esportare l'estensione del nome file nella definizione del tipo di contenuto, è necessario includere gli attributi seguenti:
 
-- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: specifica l'estensione del nome file.
+- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: specifica l'estensione di file.
 
 - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: specifica il tipo di contenuto.
 
   Poiché la <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> classe è sealed, è possibile esportarla senza parametri di tipo.
 
-  Nell'esempio seguente vengono illustrati gli attributi di esportazione di un'estensione di file in una definizione di tipo di contenuto.
+  L'esempio seguente illustra gli attributi di esportazione di un'estensione di file in una definizione di tipo di contenuto.
 
 ```
 [Export]
@@ -193,7 +194,7 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
 
 - <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: nome visualizzato del formato.
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: specifica se il formato viene visualizzato nella pagina **Tipi di** carattere e colori della finestra **di dialogo** Opzioni .
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: specifica se il formato viene visualizzato nella pagina Tipi di carattere **e** colori della **finestra di dialogo** Opzioni .
 
 - <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: priorità del formato. I valori validi sono di <xref:Microsoft.VisualStudio.Text.Classification.Priority> .
 
@@ -219,7 +220,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
 ## <a name="extend-margins-and-scrollbars"></a>Estendere margini e barre di scorrimento
- I margini e le barre di scorrimento sono gli elementi principali della visualizzazione dell'editor oltre alla visualizzazione testo stessa. Oltre ai margini standard visualizzati intorno alla visualizzazione testo, è possibile specificare un numero qualsiasi di margini.
+ Margini e barre di scorrimento sono gli elementi principali della visualizzazione dell'editor oltre alla visualizzazione testo stessa. Oltre ai margini standard visualizzati intorno alla visualizzazione testo, è possibile specificare un numero qualsiasi di margini.
 
  Implementare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> un'interfaccia per definire un margine. È inoltre necessario implementare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> l'interfaccia per creare il margine.
 
@@ -227,7 +228,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: nome del margine.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui viene visualizzato il margine, rispetto agli altri margini.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui viene visualizzato il margine rispetto agli altri margini.
 
    I margini predefiniti sono i seguenti:
 
@@ -241,9 +242,9 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 
 - <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: tipo di margine (sinistro, destro, superiore o inferiore).
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per il quale il margine è valido.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") per il quale il margine è valido.
 
-  L'esempio seguente mostra gli attributi di esportazione in un provider di margini per un margine visualizzato a destra del margine del numero di riga.
+  L'esempio seguente illustra gli attributi di esportazione in un provider di margini per un margine visualizzato a destra del margine del numero di riga.
 
 ```
 [Export(typeof(IWpfTextViewMarginProvider))]
@@ -254,7 +255,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
 ## <a name="extend-tags"></a>Estendere i tag
- I tag sono un modo per associare i dati a diversi tipi di testo. In molti casi, i dati associati vengono visualizzati come effetto visivo, ma non tutti i tag hanno una presentazione visiva. È possibile definire un tipo di tag personalizzato implementando <xref:Microsoft.VisualStudio.Text.Tagging.ITag> . È anche necessario implementare per fornire i tag per un determinato set di intervalli di <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> testo e per fornire il <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> tagger. È necessario esportare il provider di tagger insieme agli attributi seguenti:
+ I tag sono un modo per associare i dati a diversi tipi di testo. In molti casi, i dati associati vengono visualizzati come effetto visivo, ma non tutti i tag hanno una presentazione visiva. È possibile definire un tipo di tag personalizzato implementando <xref:Microsoft.VisualStudio.Text.Tagging.ITag> . È inoltre necessario <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementare per fornire i tag per un determinato set di intervalli di testo e per <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> fornire il tagger. È necessario esportare il provider di tagger insieme agli attributi seguenti:
 
 - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per il quale il tag è valido.
 
@@ -495,7 +496,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 
 - Un presentatore  IntelliSense è responsabile della visualizzazione del contenuto.
 
-  Nella maggior parte dei casi è consigliabile fornire almeno un'origine e un controller. È anche possibile fornire un presentatore se si vuole personalizzare la visualizzazione.
+  Nella maggior parte dei casi, è consigliabile fornire almeno un'origine e un controller. È anche possibile fornire un presentatore se si vuole personalizzare la visualizzazione.
 
 ### <a name="implement-an-intellisense-source"></a>Implementare un'origine IntelliSense
  Per personalizzare un'origine, è necessario implementare una o più delle interfacce di origine seguenti:

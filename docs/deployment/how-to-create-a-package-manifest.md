@@ -1,6 +1,6 @@
 ---
 title: Creare un manifesto del pacchetto | Microsoft Docs
-description: Informazioni sull'uso di un pacchetto del programma di avvio automatico per distribuire i prerequisiti per l ClickOnce appliazione, che contiene un manifesto del pacchetto per ogni impostazione locale.
+description: Informazioni sull'uso di un pacchetto del programma di avvio automatico per distribuire i prerequisiti per l'applicazione ClickOnce, che contiene un manifesto del pacchetto per ogni impostazione locale.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -21,17 +21,17 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 077926f3e2649a9e3fa49d39168e89e73c0af9fd313afe32bbfd8c20602d7609
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06b7eefddb7c824140b277f1e85b7ce774c8c286
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435491"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051547"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto del pacchetto
 Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico contiene un singolo file manifesto del prodotto, ma un manifesto del pacchetto per ogni impostazione locale. La funzionalità condivisa tra versioni localizzate diverse deve essere insito nel manifesto del prodotto.
 
- Per altre informazioni sui manifesti del prodotto, vedere [Procedura: Creare un manifesto del prodotto.](../deployment/how-to-create-a-product-manifest.md)
+ Per altre informazioni sui manifesti dei prodotti, [vedere Procedura: Creare un manifesto del prodotto.](../deployment/how-to-create-a-product-manifest.md)
 
 ## <a name="create-the-package-manifest"></a>Creare il manifesto del pacchetto
 
@@ -41,7 +41,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
 
 2. Creare una sottodirectory con il nome delle impostazioni locali, ad esempio *en* per l'inglese.
 
-3. In Visual Studio creare un file XML denominato *package.xml* e salvarlo nella cartella *C:\package\en.*
+3. In Visual Studio creare un file XML denominato *package.xml* e salvarlo nella *cartella C:\package\en.*
 
 4. Aggiungere XML per elencare il nome del pacchetto del programma di avvio automatico, le impostazioni cultura per il manifesto del pacchetto localizzato e il contratto di licenza facoltativo. Nel codice XML seguente vengono utilizzate `DisplayName` le variabili e , definite in un elemento `Culture` successivo.
 
@@ -53,7 +53,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
         LicenseAgreement="eula.txt">
     ```
 
-5. Aggiungere XML per elencare tutti i file presenti nella directory specifica delle impostazioni locali. Il codice XML seguente usa un file denominato *eula.txt* applicabile per le impostazioni **locali en.**
+5. Aggiungere XML per elencare tutti i file presenti nella directory specifica delle impostazioni locali. Nel codice XML seguente viene utilizzato un file denominato *eula.txt* applicabile per le **impostazioni locali en.**
 
     ```xml
     <PackageFiles>
@@ -61,7 +61,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
     </PackageFiles>
     ```
 
-6. Aggiungere codice XML per definire stringhe localizzabili per il pacchetto del programma di avvio automatico. Il codice XML seguente aggiunge stringhe di errore per le **impostazioni locali en.**
+6. Aggiungere CODICE XML per definire stringhe localizzabili per il pacchetto del programma di avvio automatico. Nel codice XML seguente vengono aggiunte stringhe di errore per **le impostazioni locali en.**
 
     ```xml
       <Strings>
@@ -74,7 +74,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
     </Strings>
     ```
 
-7. Copiare *la cartella C:\package* nella directory del Visual Studio bootstrapper. Ad Visual Studio 2010, si tratta della directory *\Programmi\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.*
+7. Copiare *la cartella C:\package* nella directory del Visual Studio bootstrap. Per Visual Studio 2010, si tratta della directory *\Programmi\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.*
 
 ## <a name="example"></a>Esempio
  Il manifesto del pacchetto contiene informazioni specifiche delle impostazioni locali, ad esempio messaggi di errore, condizioni di licenza software e Language Pack.

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c09fd6f9862fb3c3426b74bb7c0f62e947bc6050ea02edcbc81990f283bee58
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 231934a246a5ce57f87bf08b134c0e288c6f5534
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343012"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138887"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>Abilitare il debug di un programma
 Prima che il motore di debug possa eseguire il debug di un programma, è necessario avviare DE o collegarlo a un programma esistente.

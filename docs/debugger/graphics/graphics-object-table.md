@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e584c1e187c95ab44c8c16e021176ab46f7fd43ad6487c76167e8414d60fdb18
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 13c702ddbb2ce3c3799ee163adc1d81790f42472
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404451"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138952"
 ---
 # <a name="graphics-object-table"></a>Tabella oggetti grafici
 La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio consente di individuare gli oggetti Direct3D che supportano un frame specifico del gioco o dell'app.
@@ -74,7 +74,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
  In Direct3D 12, le risorse sono oggetti polivalenti che forniscono dati alla pipeline di rendering. In Direct3D11, al contrario, vengono definiti molti oggetti specifici per dimensioni e tipi diversi delle risorse. Una risorsa Direct3D 12 può contenere dati di trame, vertici, shader e altro ancora. Possono anche rappresentare destinazioni di rendering, ad esempio il buffer di profondità. I dettagli di una risorsa Direct3D 12 vengono visualizzati in una nuova finestra del documento. Analisi grafica userà il visualizzatore appropriato per il contenuto dell'oggetto risorsa, se è in grado di determinare il tipo. Ad esempio, un oggetto risorsa che contiene dati di trama, come l'oggetto D3D11 Texture2D, viene visualizzato con il Visualizzatore trame.
 
 ### <a name="device-context-object"></a>Oggetto contesto del dispositivo
- In Direct3D 11 e Direct3D 10 l'oggetto contesto di dispositivo (**Contesto di dispositivo D3D11** o **Dispositivo D3D10**) è particolarmente importante perché contiene le informazioni sullo stato più importanti ed è collegato ad altri oggetti di stato attualmente impostati. I dettagli del contesto di dispositivo vengono visualizzati in una nuova finestra del documento e ogni categoria di informazioni viene visualizzata nella propria scheda. Il contesto del dispositivo cambia quando viene selezionato un nuovo evento per riflettere lo stato corrente del dispositivo.
+ In Direct3D 11 e Direct3D 10 l'oggetto contesto di dispositivo (**Contesto di dispositivo D3D11** o **Dispositivo D3D10**) è particolarmente importante perché contiene le informazioni sullo stato più importanti ed è collegato ad altri oggetti di stato attualmente impostati. I dettagli del contesto di dispositivo vengono visualizzati in una nuova finestra del documento e ogni categoria di informazioni viene visualizzata nella propria scheda. Il contesto di dispositivo cambia quando viene selezionato un nuovo evento per riflettere lo stato corrente del dispositivo.
 
 ### <a name="buffer-object"></a>Oggetto buffer
  I dettagli dell'oggetto buffer (Buffer D3D11 o Buffer D3D10) vengono visualizzati in una nuova finestra del documento che mostra il contenuto del buffer in una tabella e fornisce un'interfaccia per modificare il modo in cui il contenuto del buffer viene visualizzato. La tabella dei **dati del buffer** supporta le funzioni di copia e incolla in modo da poter usare un altro strumento, ad esempio Microsoft Excel, per esaminarne il contenuto. Il contenuto del buffer viene interpretato in base al valore della casella combinata **formato**, che si trova sopra la tabella dei **dati del buffer**. Nella casella è possibile immettere un formato di dati composito costituito dai tipi di dati elencati nella tabella seguente. Ad esempio, con "float int" viene visualizzato un elenco di strutture che contengono un valore a virgola mobile a 32 bit seguito da un valore Signed Integer a 32 bit. I formati dati compositi specificati vengono aggiunti alla casella combinata per un uso successivo.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca3367b44fc9b35b16435e4b223de2ac0e9bae5ce1a190f409b4106accf9d51
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 77a8f8a6e933d8655085d5c9e4537391ecf6c7e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392328"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121640"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Recupera un numero specificato di tabelle nella sequenza di enumerazione.

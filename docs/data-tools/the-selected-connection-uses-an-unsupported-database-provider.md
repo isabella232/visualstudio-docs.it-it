@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ba0c26ce4c9b7b06703ab6dead8b77a0bdc1fccf13d707a5feb066006626a290
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b4956314b994d66e972a9e65a30ee5eb8d8aac13
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346765"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121955"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>La connessione selezionata utilizza un provider di database non supportato
 
@@ -24,7 +24,7 @@ Questo messaggio viene visualizzato quando si trascinano elementi che non usano 
 
 **O/R Designer** supporta solo connessioni dati che usano il provider .NET Framework per SQL Server. Sono valide solo le connessioni a Microsoft SQL Server o a File di database Microsoft SQL Server.
 
-Per correggere l'errore, aggiungere solo gli elementi dalle connessioni dati che usano il .NET Framework provider di dati per SQL Server in **Progettazione O/R.**
+Per correggere l'errore, aggiungere solo gli elementi dalle connessioni dati che usano il .NET Framework provider di dati per SQL Server in **O/R Designer.**
 
 ## <a name="see-also"></a>Vedi anche
 

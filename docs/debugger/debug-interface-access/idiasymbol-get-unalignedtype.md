@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4096b0a30c6bf1adc18a43218ffe3598eeb8273a11ebfe2c3ff67908010e1fc1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f623a3d6a98093a00d44b95c86d91152df179e3e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420518"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139131"
 ---
 # <a name="idiasymbolget_unalignedtype"></a>IDiaSymbol::get_unalignedType
 Recupera un flag che specifica se il tipo di dati definito dall'utente non è allineato.
@@ -35,13 +35,13 @@ HRESULT get_unalignedType (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se il tipo di dati definito dall'utente non è allineato; in caso contrario, restituisce `FALSE` .
+[out] Restituisce se il tipo di dati definito dall'utente `TRUE` non è allineato; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

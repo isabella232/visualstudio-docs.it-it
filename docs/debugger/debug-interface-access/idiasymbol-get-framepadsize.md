@@ -1,5 +1,5 @@
 ---
-description: Recupera le dimensioni aggiuntive del riempimento aggiunte a ogni funzione.
+description: Recupera le dimensioni aggiuntive del pad aggiunte a ogni funzione.
 title: IDiaSymbol::get_framePadSize | Microsoft Docs
 ms.date: 04/27/2021
 ms.topic: reference
@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f9920d5c2a690f9b2687c14b60ae298c4fde4feb009675d157e7158cdd5e30
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 052aa705c645ee7dc991f5311aa9d96f3b6a637d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240544"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052269"
 ---
 # <a name="idiasymbolget_framepadsize"></a>IDiaSymbol::get_framePadSize
 
-Recupera le dimensioni aggiuntive del riempimento aggiunte a ogni funzione.
+Recupera le dimensioni aggiuntive del pad aggiunte a ogni funzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,16 +40,16 @@ HRESULT get_framePadSize (
 
 ## <a name="return-value"></a>Valore restituito
 
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o codice `S_FALSE` di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
 
-Le dimensioni aggiuntive del riempimento vengono in genere usate da Modifica e continuazione.
+Le dimensioni aggiuntive del pad vengono in genere usate da Modifica e continuazione.
 
-Questo metodo è supportato a partire Visual Studio 2019 versione 16.10 Preview 2.
+Questo metodo è supportato a partire da Visual Studio 2019 versione 16.10 Preview 2.
 
 ## <a name="requirements"></a>Requisiti
 

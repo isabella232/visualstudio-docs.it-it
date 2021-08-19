@@ -1,6 +1,6 @@
 ---
 title: Tecniche di debug CRT | Microsoft Docs
-description: Esistono diverse tecniche che è possibile usare per eseguire il debug di un programma che usa la libreria di runtime del linguaggio C (CRT). Usare questo articolo e i relativi collegamenti per ottenere informazioni su tali tecniche.
+description: Esistono diverse tecniche che è possibile usare per eseguire il debug di un programma che usa la libreria di runtime C (CRT). Usare questo articolo e i relativi collegamenti per informazioni su queste tecniche.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,14 +19,15 @@ ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d5f85584403cc18cd00708a8d4698723d614ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4874b2fc3c60d6365579cbbca808b566cf6f8189
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857610"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121704"
 ---
 # <a name="crt-debugging-techniques"></a>Tecniche di debug CRT
 Se si effettua il debug di un programma che utilizza la libreria di runtime del linguaggio C, possono essere utili le seguenti tecniche di debug.
@@ -44,7 +45,7 @@ Se si effettua il debug di un programma che utilizza la libreria di runtime del 
 
  Vengono descritte le speciali versioni di debug delle funzioni di allocazione heap, ad esempio: i vantaggi delle chiamate in modo esplicito, come CRT mappa le chiamate, come evitare la conversione, registrazione dei tipi separati di allocazioni nei blocchi client e i risultati della mancata definizione di _DEBUG.
 
- [Dettagli heap di debug CRT](../debugger/crt-debug-heap-details.md)
+ [Dettagli dell'heap di debug CRT](../debugger/crt-debug-heap-details.md)
 
  Vengono forniti collegamenti a gestione della memoria e heap di debug, tipi di blocchi sull'heap di debug, utilizzo dell'heap di debug, funzioni per la creazione di report sullo stato dell'heap e registrazione delle richieste di allocazione dell'heap.
 
@@ -58,5 +59,5 @@ Se si effettua il debug di un programma che utilizza la libreria di runtime del 
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-- [Debug del codice nativo](../debugger/debugging-native-code.md) : vengono illustrati alcuni problemi e tecniche di debug comuni per le applicazioni C e C++.
-- [Sicurezza del debugger](../debugger/debugger-security.md) : fornisce consigli per un debug più sicuro.
+- [Debug di codice nativo:](../debugger/debugging-native-code.md) illustra alcuni problemi di debug comuni e alcune tecniche per le applicazioni C e C++.
+- [Sicurezza del debugger:](../debugger/debugger-security.md) fornisce raccomandazioni per un debug più sicuro.

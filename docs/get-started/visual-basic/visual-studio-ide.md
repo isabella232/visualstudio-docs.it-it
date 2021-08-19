@@ -1,6 +1,6 @@
 ---
 title: Panoramica per gli sviluppatori Visual Basic
-description: Informazioni sull'Visual Studio per modificare, eseguire il debug e compilare il codice e quindi pubblicare un'app Visual Basic sviluppatore.
+description: Informazioni sull'Visual Studio per modificare, eseguire il debug e compilare il codice e quindi pubblicare un'app come Visual Basic sviluppatore.
 ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
@@ -8,19 +8,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 486201d61f6bd2d149c9aea66efee1814ce667e7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2b7649af4136c13688a6f2311d715b7c4bb113bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386631"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152211"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -34,7 +34,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 ::: moniker range=">=vs-2019"
 
-[![The Visual Studio 2019 IDE](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
+[![Ide Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ::: moniker-end
 
-- [Intellisense](../../ide/using-intellisense.md)
+- [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense è un termine che indica diverse funzionalità che visualizzano le informazioni sul codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor senza dover cercare le informazioni sul tipo altrove. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [IntelliSense per C#](../../ide/visual-csharp-intellisense.md), [IntelliSense per Visual C++](../../ide/visual-cpp-intellisense.md), [IntelliSense per JavaScript](../../ide/javascript-intellisense.md) e [IntelliSense per Visual Basic](../../ide/visual-basic-specific-intellisense.md). La figura seguente mostra come IntelliSense visualizza un elenco di membri per un tipo:
 
@@ -111,7 +111,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
    La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
    > [!TIP]
-   > Premere **CTRL** + **Q** come tasto di scelta rapida per la casella di ricerca.
+   > Premere **CTRL** + **Q come** collegamento alla casella di ricerca.
 
    ::: moniker range="vs-2017"
 
@@ -234,15 +234,15 @@ Per modificare il tema **Scuro**:
 1. Aprire Visual Studio. Nella finestra iniziale selezionare **Continua senza codice.**
 
 
-    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="Screenshot della finestra Iniziale in Visual Studio 2019, con il collegamento &quot;Continua senza codice&quot; evidenziato.":::
+    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="Screenshot della finestra Start in Visual Studio 2019, con il collegamento &quot;Continua senza codice&quot; evidenziato.":::
 
    Si aprirà l'IDE.
 
 ::: moniker-end
 
-2. Sulla barra dei menu scegliere **Opzioni** strumenti  >  **per aprire** la finestra **di dialogo** Opzioni.
+2. Nella barra dei menu scegliere **Opzioni** strumenti  >  **per** aprire la finestra **di dialogo** Opzioni.
 
-3. Nella pagina **delle**  >  **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi fare clic su **OK.**
+3. Nella pagina **delle**  >  **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi fare clic su **OK.**
 
    ![Impostare il tema colori scuro in Visual Studio](media/change-color-theme.png)
 
@@ -264,13 +264,13 @@ Per modificare il tema **Scuro**:
 
 Visual Studio verrà quindi configurato per usare impostazioni di ambiente su misura per gli sviluppatori Visual Basic.
 
-1. Nella barra dei menu scegliere **Strumenti**  >  **Importa/Esporta impostazioni**.
+1. Nella barra dei menu scegliere **Strumenti**  >  **Importa/Esporta** Impostazioni .
 
-2. **Nell'Importazione/Esportazione guidata impostazioni** selezionare **Reimposta tutte** le impostazioni nella prima pagina e quindi fare clic su **Avanti.**
+2. **Nell'Importazione/Esportazione Impostazioni guidata** selezionare **Reimposta tutte** le impostazioni nella prima pagina e quindi fare clic su **Avanti.**
 
-3. Nella pagina **Salva impostazioni correnti selezionare** un'opzione per salvare o meno le impostazioni correnti e quindi fare clic su **Avanti.** (Se non è stata personalizzata alcuna impostazione, selezionare **No, ripristina solo le impostazioni sovrascrivendo le impostazioni correnti**.)
+3. Nella pagina **Salva Impostazioni** corrente selezionare un'opzione per salvare o meno le impostazioni correnti e quindi fare clic su **Avanti.** (Se non è stata personalizzata alcuna impostazione, selezionare **No, ripristina solo le impostazioni sovrascrivendo le impostazioni correnti**.)
 
-4. Nella pagina **Scegliere una raccolta predefinita di impostazioni** scegliere **Visual Basic** e quindi fare clic su **Fine.**
+4. Nella pagina **Scegliere una raccolta predefinita di Impostazioni** scegliere Visual Basic e quindi fare clic su **Fine.** 
 
 5. Nella pagina **Reimpostazione completata** fare clic su **Chiudi**.
 
@@ -282,11 +282,11 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range="vs-2017"
 
-1. Nella barra dei menu Visual Studio scegliere **File** > **New Project (File nuovo progetto).**
+1. Nella barra dei menu Visual Studio scegliere **File** > **nuovo Project**.
 
    ![File > Nuovo progetto sulla barra dei menu](media/file-new-project-menu.png)
 
-   La **finestra di dialogo** Nuovo progetto mostra diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La **finestra di Project** nuovo progetto mostra diversi modelli di *progetto.* Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria **.NET Core** in **Visual Basic** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -346,19 +346,19 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 ::: moniker range=">=vs-2019"
 
-1. Nella barra dei menu Visual Studio scegliere **File** New Project  >  **(File nuovo**  >  **progetto).** In alternativa, premere **CTRL** + **MAIUSC** + **N**.)
+1. Nella barra dei menu Visual Studio scegliere **File**  >    >  **nuovo Project**. In alternativa, premere **CTRL** + **MAIUSC** + **N**.)
 
-    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="Screenshot della selezione file > Nuovo > progetto dalla barra dei menu Visual Studio 2019.":::
+    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="Screenshot della selezione > file > Project dalla barra dei menu Visual Studio 2019.":::
 
    Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file e le impostazioni di base necessari per un determinato tipo di progetto.
 
-1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati del  modello scegliendo Visual Basic dall'elenco  **a** discesa Tutti i linguaggi, **Windows** dall'elenco Tutte le piattaforme e **Console** dall'elenco Tutti i tipi **di** progetto .
+1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati del  modello scegliendo Visual Basic dall'elenco **a** discesa  Tutti i linguaggi, **Windows** dall'elenco Tutte le piattaforme e **Console** dall'elenco Tutti i tipi **di** progetto .
 
    Selezionare il **modello Applicazione** console e quindi fare clic su **Avanti.**
 
-    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019, in cui si seleziona il modello desiderato.":::
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; Visual Studio 2019, in cui si seleziona il modello desiderato.":::
 
-1. Nella finestra Configura il **nuovo** progetto immettere  **HelloWorld** nella casella Nome progetto, facoltativamente modificare il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ) e quindi fare clic `C:\Users\<name>\source\repos` su **Avanti.**
+1. Nella finestra **Configura** il nuovo progetto immettere **HelloWorld** nella casella **nome Project,** modificare facoltativamente il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ) e quindi fare clic `C:\Users\<name>\source\repos` su **Avanti.**
 
     :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="Screenshot della finestra &quot;Configura il nuovo progetto&quot; in Visual Studio 2019, in cui si immette il nome del progetto.":::
 
@@ -433,7 +433,7 @@ In primo luogo, rinominare la variabile `name`:
 
    La variabile viene rinominata all'interno del progetto, ovvero in questo caso in due posizioni.
 
-4. Si esamini ora IntelliSense. Sotto la riga `Console.WriteLine("Hello &quot; + username + &quot;!")` digitare il frammento di codice seguente:
+4. Si esamini ora IntelliSense. Sotto la riga `Console.WriteLine("Hello " + username + "!")` digitare il frammento di codice seguente:
 
     ```vb
    Dim now = Date.

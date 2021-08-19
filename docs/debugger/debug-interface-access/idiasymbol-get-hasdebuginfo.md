@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se il compilando contiene informazioni di debug.
+description: Recupera un flag che specifica se compiland) contiene informazioni di debug.
 title: IDiaSymbol::get_hasDebugInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a3be705a82ae0047323c6bbb6b2e09cfc3a2f6b8ecb5383dfe030afc5e444d34
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e1a395963637974abfa126a310fed0ba3d0dc09e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379966"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139139"
 ---
 # <a name="idiasymbolget_hasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
-Recupera un flag che specifica se il [compilando](../../debugger/debug-interface-access/compiland.md) contiene informazioni di debug.
+Recupera un flag che specifica se il processo di compilazione [contiene](../../debugger/debug-interface-access/compiland.md) informazioni di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT get_hasDebugInfo(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 

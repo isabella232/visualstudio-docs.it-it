@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: afc181097a2dd9f9b23949f91176aea17cb81e61184333eef0b39cea54bcce3d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d57d647855c30eee350cf088ecf35f68f6c15d2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391688"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052229"
 ---
 # <a name="idiasymbolget_isvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
 Specifica se il `this` puntatore punta a un membro dati con ereditarietà virtuale.

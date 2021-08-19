@@ -1,5 +1,5 @@
 ---
-description: Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
+description: Descrive l'ampia gamma di tipi definiti dall'utente (UDT).
 title: UdtKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b3ae98b911b7e5a7026740afe574044a49fdf5d8b8b96be05f2e4546cbdb4e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a8f9a065ceb5fce06f01c1e64c6d5acf48959539
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391568"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052165"
 ---
 # <a name="udtkind"></a>UdtKind
-Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
+Descrive l'ampia gamma di tipi definiti dall'utente (UDT).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ UdtUnion UDT è un'unione.
 UdtInterface UDT è un'interfaccia.
 
 ## <a name="remarks"></a>Commenti
-I valori di questa enumerazione vengono restituiti dal [metodo IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
+I valori in questa enumerazione vengono restituiti dal [metodo IDiaSymbol::get_udtKind.](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst.h

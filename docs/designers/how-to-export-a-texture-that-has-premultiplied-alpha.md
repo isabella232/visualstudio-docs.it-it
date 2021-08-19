@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: esportare una trama con alfa premoltiplicati'
-description: Informazioni su come la pipeline di contenuti immagine genera trame alfa premoltiliate da un'immagine di origine che può essere più semplice da usare e più affidabile.
+description: Informazioni su come la pipeline del contenuto delle immagini genera trame alfa premoltilied da un'immagine di origine che può essere più semplice da usare e più affidabile.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 0143a0a69ed1a1d54873c24426c840999191545750fd5618592a37c3f9090b5f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7f21aa94786fb9914bd72dfccfa9a59b8469d09f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403594"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073643"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procedura: Esportare una trama con alfa premoltiplicati
 
@@ -43,9 +43,9 @@ I valori alfa premoltiplicati offrono diversi vantaggi rispetto ai valori conven
 
 1. Iniziare con una trama di base. Caricare un file d'immagine esistente oppure crearne uno nuovo, come illustrato in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md).
 
-2. Configurare il file di trama in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni**, aprire il menu di scelta rapida del file della trama e scegliere **Proprietà**. Nella pagina **Proprietà di configurazione**  >  **Generale** impostare la proprietà **Tipo di** elemento su Image **Content Pipeline**. Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da compilazione) sia impostata su **No**, quindi scegliere il pulsante **Applica**. Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).
+2. Configurare il file di trama in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni**, aprire il menu di scelta rapida del file della trama e scegliere **Proprietà**. Nella pagina **Proprietà di configurazione**  >  **Generale** impostare la proprietà **Tipo di** elemento su Pipeline **contenuto immagine**. Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da compilazione) sia impostata su **No**, quindi scegliere il pulsante **Applica**. Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).
 
-3. Configurare la pipeline di contenuti immagine per generare valori alfa premoltiplicati. Nella pagina **Generale** della pipeline di contenuti immagine delle proprietà di configurazione impostare la proprietà Converti in formato alfa premoltiplicato  >    >   su **Sì (/generatepremultipliedalpha).** 
+3. Configurare la pipeline di contenuti immagine per generare valori alfa premoltiplicati. Nella pagina **Generale** della pipeline di contenuto dell'immagine delle proprietà di configurazione impostare la proprietà Converti in formato alfa  >    >   **pre-moltiplicato** su **Sì (/generatepremultipliedalpha).**
 
 4. Fare clic su **OK** .
 

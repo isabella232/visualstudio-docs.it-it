@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 667806b5291413a189feec79053e8721ba3f9e814656a37b610be0289454a26b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 41c19bfc8402506f02fbc4824728cec13efde43b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415013"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152549"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Riferimenti (API di debug di Visual Studio)
 

@@ -1,6 +1,6 @@
 ---
 title: Gestione debug processi | Microsoft Docs
-description: Informazioni sulla gestione del debug del processo, un componente di Visual Studio che rende disponibili i programmi per la gestione del debug di sessione e i motori di debug.
+description: Informazioni sulla gestione del debug dei processi, un componente di Visual Studio che rende disponibili i programmi per la gestione del debug di sessione e i motori di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b6ba687039486bee9b6313cd18438db1b18e51aa1a68730c2ba6e64800a7e8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 86d8128f997aff275380b25f90b908bc8abaf535
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452472"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104692"
 ---
 # <a name="process-debug-manager"></a>Gestione debug processi
 Gestione debug processi (PDM) è un componente di Visual Studio che gestisce programmi e processi, rendendoli disponibili per la gestione del debug della sessione e per i motori di debug.

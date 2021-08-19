@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a5bffe8192b434b00d59e1d89b625ff13d5253c80035a26a83ee28ebe94b8ef1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 91f2853190ae9c3882584aedad9401cee2572cfb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415715"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153082"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Imposta il nome del thread.

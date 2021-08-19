@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-container-tools
 ms.topic: reference
-ms.openlocfilehash: 1664eef6fcc8e92f5ce0f27574952222aa85597871cacc941573d72373daa485
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d05d4a42a6e2433cc9dfc5190a9e380dda49dab0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436682"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122059"
 ---
 # <a name="container-tools-launch-settings"></a>Impostazioni di avvio di Strumenti contenitore
 

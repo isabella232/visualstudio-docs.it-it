@@ -11,14 +11,15 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6afd0a9658f088b66f2c18c632ffcd7b9a09f555
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: be359809e973d8fbb0e1fe0b964d04bc3e41b5d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898861"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152302"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 L'elemento KeyBinding specifica i tasti di scelta rapida per i comandi.
@@ -46,7 +47,7 @@ L'elemento KeyBinding specifica i tasti di scelta rapida per i comandi.
 |key2|facoltativo. I valori validi includono tutti i caratteri alfanumerici tipizzabili e i valori esadecimali a due cifre preceduti da 0x [e VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
 |mod2|facoltativo. Qualsiasi combinazione **di CTRL,** **ALT** **e MAIUSC** separati da spazio.|
 |emulatore|facoltativo.|
-|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

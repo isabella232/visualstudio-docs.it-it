@@ -1,6 +1,6 @@
 ---
 title: Creare un oggetto DataTable nel Progettazione DataSet
-description: In questa procedura dettagliata viene creato un oggetto DataTable (senza tableAdapter) usando il Progettazione DataSet. Creare una nuova Windows'applicazione Forms e aggiungerne uno nuovo.
+description: In questa procedura dettagliata viene creato un oggetto DataTable (senza TableAdapter) usando il Progettazione DataSet. Creare una nuova Windows'applicazione Forms e aggiungerne un nuovo set di dati.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -15,16 +15,16 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 08c5355ab65947ef41a45f5d7f66f5b5e82a6994e9f0f0190870b28d687ffa7e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f93279bd67a8e293d3883e573ad6dbb8aee8ccc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346570"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052538"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procedura dettagliata: Creare un oggetto DataTable nel Progettazione DataSet
 
-Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable> oggetto (senza un TableAdapter) usando il **Progettazione DataSet**. Per informazioni sulla creazione di tabelle di dati che includono TableAdapter, vedere [Creare e configurare oggetti TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
+In questa procedura dettagliata viene illustrato come creare <xref:System.Data.DataTable> un oggetto (senza un TableAdapter) usando il **Progettazione DataSet**. Per informazioni sulla creazione di tabelle di dati che includono TableAdapter, vedere [Creare e configurare oggetti TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
 
 ## <a name="create-a-new-windows-forms-application"></a>Creare una nuova applicazione Windows Forms Application
 
@@ -36,7 +36,7 @@ Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable
 
 4. Assegnare al **progetto il nome DataTableWalkthrough** e quindi scegliere **OK.**
 
-     Il **progetto DataTableWalkthrough** viene creato e aggiunto **Esplora soluzioni**.
+     Il **progetto DataTableWalkthrough** viene creato e aggiunto **a Esplora soluzioni**.
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Aggiungere un nuovo set di dati all'applicazione
 

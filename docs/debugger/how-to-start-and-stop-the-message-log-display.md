@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e47b99eb9e6e0eb5ca8763b6e3bc269cb216a5defd1e38c21ccc1ea62ce62008
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ebaae16da706724f2d0813073ea57039fd7c4095
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453436"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051911"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Procedura: avviare e arrestare la visualizzazione del log dei messaggi
 Quando una [finestra](../debugger/messages-view.md) Visualizzazione messaggi  è  attiva, nel **menu** Messaggi di Spy++  viene visualizzata  l'opzione Avvia registrazione o Arresta registrazione e il pulsante corrispondente della barra degli strumenti Avvia registrazione o Arresta registrazione diventa attivo.

@@ -1,6 +1,6 @@
 ---
 description: Ottiene il tipo di elemento nella matrice.
-title: 'IDebugArrayField:: GetElementType | Microsoft Docs'
+title: IDebugArrayField::GetElementType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a4c6e5eb14d3fa320cb8b86c20c6d336466c42cc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 346ca568371d1ea0dfe04d6f6854e13bb8c23ab6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072812"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Ottiene il tipo di elemento nella matrice.
@@ -42,13 +43,13 @@ int GetElementType(
 
 ## <a name="parameters"></a>Parametri
 `ppType`\
-out Restituisce un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive il tipo di elemento.
+[out] Restituisce un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive il tipo di elemento.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
+ Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- L'oggetto [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) presuppone che tutti gli elementi della matrice siano dello stesso tipo.
+ [L'oggetto IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) presuppone che tutti gli elementi della matrice siano dello stesso tipo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

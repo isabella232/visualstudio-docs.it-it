@@ -1,5 +1,5 @@
 ---
-title: Prerequisiti per la distribuzione di applicazioni a 64 bit | Microsoft Docs
+title: Distribuzione dei prerequisiti per le applicazioni a 64 bit | Microsoft Docs
 description: Informazioni sui componenti ridistribuibili che è possibile usare come prerequisiti per ClickOnce distribuzione di applicazioni in piattaforme a 64 bit.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 91209a76acc754a900bfc88d5d488f0b4729703121d1125abc9f25990ca1c9c9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f63acf1616aa7d8c3725362851cde0df10e82d19
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435563"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051612"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
 La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione sono **x86** per le piattaforme a 32 bit, **x64** per i computer che supportano i set di istruzioni AMD64 ed EM64T e **Itanium** per il processore Itanium a 64 bit.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1ecefa0e9ee6299ef1b8e09a370398e6a9c263fab901a52f8d7aec45ca45013
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 41128445dca38d6d735d3dd4f83b84363bcb4989
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121238905"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138679"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -51,7 +51,7 @@ Nella tabella seguente vengono illustrati i metodi di `IDebugExpressionEvaluator
 |[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|Imposta la radice del Registro di sistema. Usato per il debug side-by-side.|
 
 ## <a name="remarks"></a>Commenti
-In una situazione tipica, il motore di debug (DE) crea un'istanza dell'analizzatore di espressioni (edizione Enterprise) in seguito a una chiamata a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Poiché il de conosce il linguaggio e il fornitore del edizione Enterprise che vuole usare, il de ottiene il CLSID del edizione Enterprise dal Registro di sistema (la funzione [HELPER SDK](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) per il debug, , consente il `GetEEMetric` recupero).
+In una situazione tipica, il motore di debug (DE) crea un'istanza dell'analizzatore di espressioni (edizione Enterprise) come risultato di una chiamata a [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Poiché il de conosce il linguaggio e il fornitore del edizione Enterprise che vuole usare, il de ottiene il CLSID del edizione Enterprise dal Registro di sistema (la funzione [HELPER SDK](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) per il debug, , consente il `GetEEMetric` recupero).
 
 Dopo la edizione Enterprise viene creata un'istanza di , la funzione DE chiama [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) per analizzare l'espressione e archiviarla in un [oggetto IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md) Successivamente, una chiamata a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) valuta l'espressione.
 
@@ -63,7 +63,7 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come creare un'istanza dell'analizzatore di espressioni in base a un provider di simboli e a un indirizzo nel codice sorgente. In questo esempio viene utilizzata una funzione `GetEEMetric` , dalla libreria SDK [Helpers for Debugging,](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) dbgmetric.lib.
+Questo esempio illustra come creare un'istanza dell'analizzatore di espressioni in base a un provider di simboli e a un indirizzo nel codice sorgente. In questo esempio viene utilizzata una funzione `GetEEMetric` , dalla libreria sdk [Helpers for Debugging,](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) dbgmetric.lib.
 
 ```cpp
 IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolProvider,

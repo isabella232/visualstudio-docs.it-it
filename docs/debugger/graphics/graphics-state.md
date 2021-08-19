@@ -1,6 +1,6 @@
 ---
-title: Stato grafica | Microsoft Docs
-description: Risolvere i problemi di rendering visualizzando lo stato di grafica per ogni chiamata di progetto. Vengono evidenziate le parti dello stato modificate dalla chiamata precedente.
+title: Stato della grafica | Microsoft Docs
+description: Risolvere i problemi di rendering tramite la visualizzazione dello stato della grafica per ogni chiamata di disegno. Le parti dello stato modificate rispetto alla chiamata precedente sono evidenziate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f909d7e250be193bb446d25cd4182d4f062ebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a33f50be257c3e484d99ca6851d125f414edb424
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888602"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138900"
 ---
 # <a name="graphics-state"></a>Stato grafica
 La finestra Stato in Diagnostica grafica di Visual Studio consente di comprendere lo stato di grafica attivo al momento dell'evento corrente, ad esempio una chiamata di disegno.

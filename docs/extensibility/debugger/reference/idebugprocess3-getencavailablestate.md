@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cad537b0c575bf792c1ad06b398e564ff6a5aba25f65a919b8df372506db803
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1aab8ade63a8db1152913ca11834bbce4b2597a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416209"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087912"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Questo metodo ottiene lo stato corrente di Modifica e continuazione del processo. Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL` .

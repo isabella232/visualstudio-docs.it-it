@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c62658c14754a317554fd7e06960cd2f87ff3f2a43bc98811a7479b98700bd3c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: caed437da38206b351634e8f59d04463a221e267
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152510"
 ---
 # <a name="document-lock-holder-management"></a>Gestione del titolare del blocco dei documenti
 
@@ -40,7 +40,7 @@ Nel caso in cui il file "b" sia già aperto dall'editor "B" quando l'editor "A" 
 
 ## <a name="additional-document-edit-lock-considerations"></a>Considerazioni aggiuntive sul blocco delle modifiche ai documenti
 
-Si ottiene un comportamento diverso se l'editor "A" è l'unico editor che ha un blocco di modifica del documento sul file "b" rispetto a quello che si farebbe se l'editor "B" contiene anche un blocco di modifica del documento sul file "b". In , Progettazione classi è un esempio di finestra di progettazione visiva che non contiene un blocco di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifica sul file di codice associato.  Ovvero, se l'utente ha un diagramma classi aperto nella visualizzazione Progettazione e il file di codice associato viene aperto contemporaneamente e se l'utente modifica il file di codice ma non salva le modifiche, le modifiche andranno perse anche nel file del diagramma classi (cd). Se il **Progettazione classi** ha l'unico blocco di modifica del documento sul file di codice, all'utente non viene richiesto di salvare le modifiche alla chiusura del file di codice. L'IDE chiede all'utente di salvare le modifiche solo dopo che l'utente ha chiuso il **Progettazione classi**. Le modifiche salvate vengono riflesse in entrambi i file. Se sia il **Progettazione classi** che l'editor del file di codice hanno mantenuto blocchi di modifica del documento sul file di codice, all'utente viene richiesto di salvare quando si chiude il file di codice o il modulo. A questo punto le modifiche salvate vengono riflesse sia nel form che nel file di codice. Per altre informazioni sui diagrammi classi, vedere [Usare i diagrammi classi (Progettazione classi)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
+Si ottiene un comportamento diverso se l'editor "A" è l'unico editor con un blocco di modifica del documento sul file "b" rispetto a quello che si farebbe se l'editor "B" contiene anche un blocco di modifica del documento sul file "b". In , Progettazione classi è un esempio di finestra di progettazione visiva che non contiene [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] un blocco di modifica sul file di codice associato.  Ovvero, se l'utente ha un diagramma classi aperto nella visualizzazione Progettazione e il file di codice associato viene aperto contemporaneamente e se l'utente modifica il file di codice ma non salva le modifiche, le modifiche andranno perse anche nel file del diagramma classi (cd). Se il **Progettazione classi** ha l'unico blocco di modifica del documento sul file di codice, all'utente non viene richiesto di salvare le modifiche alla chiusura del file di codice. L'IDE chiede all'utente di salvare le modifiche solo dopo che l'utente ha chiuso il **Progettazione classi**. Le modifiche salvate vengono riflesse in entrambi i file. Se sia il **Progettazione classi** che l'editor del file di codice hanno mantenuto blocchi di modifica del documento sul file di codice, all'utente viene richiesto di salvare quando si chiude il file di codice o il modulo. A questo punto le modifiche salvate vengono riflesse sia nel form che nel file di codice. Per altre informazioni sui diagrammi classi, vedere [Usare i diagrammi classi (Progettazione classi)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
 
 Si noti che se è necessario inserire un blocco di modifica su un documento per un non editor, è necessario implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> l'interfaccia .
 

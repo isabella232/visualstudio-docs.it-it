@@ -1,6 +1,6 @@
 ---
-description: Questo metodo imposta il linguaggio da utilizzare per creare risultati stampabili.
-title: 'IDebugExpressionEvaluator:: setlocale | Microsoft Docs'
+description: Questo metodo imposta la lingua da utilizzare per creare risultati stampabili.
+title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f833311fe9029931c0d56cbe828bd027c45c26a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8b73b017359441bf56d753980345fbfe778a344c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092059"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138718"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-Questo metodo imposta il linguaggio da utilizzare per creare risultati stampabili.
+Questo metodo imposta la lingua da utilizzare per creare risultati stampabili.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +43,13 @@ int SetLocale(
 
 ## <a name="parameters"></a>Parametri
 `wLangID`\
-in Identificatore della lingua.
+[in] Identificatore della lingua.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo può essere chiamato più volte durante il caricamento dell'analizzatore di espressioni (EE), quindi l'EE deve essere in grado di cambiare le lingue in tempo reale. EE usa questa impostazione locale per restituire i messaggi di errore e le stringhe nella lingua appropriata.
+ Questo metodo può essere chiamato più volte durante il caricamento dell'analizzatore di espressioni (edizione Enterprise), quindi il edizione Enterprise deve essere in grado di cambiare lingua in tempo reale. L edizione Enterprise usa queste impostazioni locali per restituire messaggi di errore e stringhe nella lingua appropriata.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
