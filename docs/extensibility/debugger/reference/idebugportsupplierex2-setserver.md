@@ -1,6 +1,6 @@
 ---
 description: Imposta il server principale per il fornitore della porta.
-title: 'IDebugPortSupplierEx2:: myserver | Microsoft Docs'
+title: Interfaccia IDebugPortSupplierEx2::SetServer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +9,18 @@ ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81de22828536dd118cb69ed4c3c73d51f55a8535
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f33a9ba9609c64ef474002680ada9a86998f3e07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071909"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159932"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 Imposta il server principale per il fornitore della porta.

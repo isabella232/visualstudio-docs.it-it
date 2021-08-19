@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 796ad78bfe8337db7bf177235284624877a7ed555da025fff8728b9cc2ce8b6b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cdf5e84eaeace022d733d7f8521aecdbc2cd58d1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345492"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105592"
 ---
 # <a name="dia2dump-sample"></a>Esempio Dia2dump
 
@@ -32,7 +32,7 @@ L'esempio Dia2dump viene installato con Visual Studio e contiene la soluzione e 
 
 L'esempio viene installato quando si sceglie il carico di lavoro Sviluppo desktop con **C++** nel Programma di installazione di Visual Studio. Per informazioni su come installare Visual Studio e scegliere carichi di lavoro specifici e singoli componenti, vedere [Installare](../../install/install-visual-studio.md)Visual Studio .
 
-Dopo l'installazione, l'esempio si trova nella directory di Visual Studio, in una sottodirectory denominata \DIA SDK\Samples\DIA2Dump.
+Dopo l'installazione, l'esempio si trova nella directory di installazione Visual Studio, in una sottodirectory denominata \DIA SDK\Samples\DIA2Dump.
 
 ## <a name="build-the-sample"></a>Compilare l'esempio
 
@@ -40,7 +40,7 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 ### <a name="to-build-the-dia2dump-sample-in-visual-studio"></a>Per compilare l'esempio Dia2Dump in Visual Studio
 
-1. Aprire il file DIA2Dump.sln in Visual Studio. Se la soluzione non è stata copiata in un'altra directory, potrebbe essere richiesto di riavviare Visual Studio con autorizzazioni elevate.
+1. Aprire il file DIA2Dump.sln in Visual Studio. Se la soluzione non è stata copiata in un'altra directory, potrebbe essere richiesto di riavviare il Visual Studio con autorizzazioni elevate.
 
 1. In **Esplora soluzioni** selezionare il progetto Dia2Dump (non la soluzione).
 
@@ -54,7 +54,7 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 1. Scegliere **OK** per salvare le modifiche apportate alle proprietà del progetto.
 
-1. Scegliere **Ricompila** soluzione dal menu **Compila**. Per impostazione predefinita, Visual Studio compila una versione di debug dell'esempio, che si trova in una sottodirectory Debug della directory della soluzione.
+1. Scegliere **Ricompila** **soluzione dal** menu Compila . Per impostazione predefinita, Visual Studio compila una versione di debug dell'esempio, che si trova in una sottodirectory Debug della directory della soluzione.
 
 1. Chiudere Visual Studio.
 
@@ -62,7 +62,7 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 1. In una finestra del prompt dei comandi per sviluppatori passare alla directory in cui sono stati copiati i file di esempio. Se l'esempio non è stato copiato in un'altra directory, è necessario usare una finestra del prompt dei comandi per sviluppatori con privilegi elevati (esegui come amministratore).
 
-1. Immettere il comando `nmake makefile` per compilare la configurazione di debug predefinita di dia2dump.exe.
+1. Immettere il comando `nmake makefile` per compilare la configurazione di debug predefinita dia2dump.exe.
 
 ## <a name="run-the-dia2dump-sample"></a>Eseguire l'esempio Dia2Dump
 

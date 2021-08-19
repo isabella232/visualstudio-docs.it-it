@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2864293c14852f41a65813fa17a1cf6ec9bb4ff2c9ec74e05ede64121f1289b5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9b2139b9483253507f926d9ac0ef37bba155f666
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121246461"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107349"
 ---
 # <a name="modules-view---instrumentation-data"></a>Visualizzazione Moduli - dati di strumentazione
 Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura. Le funzioni del modulo sono elencate sotto il nodo del modulo.

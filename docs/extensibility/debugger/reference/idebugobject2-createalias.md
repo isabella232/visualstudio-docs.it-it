@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce75ad8f1b6e8bac1cc61281fef8b7dbbb268a2cd5121644f40822334eda1d66
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7ac9bb6b5916270afc27ec1c8f3b501d78b52664
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043180"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Crea un ID o un alias univoco per questo oggetto o restituisce un alias esistente.

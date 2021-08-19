@@ -1,7 +1,7 @@
 ---
 title: Set di regole base di correttezza per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sulla regola Regole di correttezza di base impostata in Visual Studio, incentrata sugli errori logici e sugli errori comuni delle API del framework. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole regole di correttezza di base in Visual Studio, incentrati sugli errori logici e sugli errori comuni dell'API del framework. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: e0c8d23c6370f1869c514875119ddb6504b9a9a02eca2694af6405e002a3fbcf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02c7b660c6aba7f25e631a14146582f08c3d5117
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121456219"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155148"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 
-Il set di regole Regole di correttezza di base si concentra sugli errori logici e sugli errori comuni nell'utilizzo delle API del framework. Le regole di correttezza di base includono le regole nel set di regole [regole consigliate](managed-recommended-rules-rule-set-for-managed-code.md) gestite.
+Il set di regole Regole di correttezza di base si concentra sugli errori logici e sugli errori comuni nell'utilizzo delle API del framework. Le regole di correttezza di base includono le regole nel set [di regole regole consigliate](managed-recommended-rules-rule-set-for-managed-code.md) gestite.
 
 Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Basic Correctness Rules.
 

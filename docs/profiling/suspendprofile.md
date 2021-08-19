@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 05b3ed78dc22a713c5d567e9b29f8616ceee63c2366e170d008d6e7d0a9716f7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0826afe211de54723f49fa29b40fb0f91ede026f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121441696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157150"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 Il metodo `SuspendProfile` incrementa il contatore Suspend/Resume per il livello di profilatura specificato.

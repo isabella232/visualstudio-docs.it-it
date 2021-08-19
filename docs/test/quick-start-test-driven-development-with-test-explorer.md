@@ -1,26 +1,27 @@
 ---
 title: Procedura dettagliata sullo sviluppo basato su test
-description: Informazioni su come sviluppare un metodo testato in C# usando Microsoft Test Framework, che può essere facilmente adattato per altri linguaggi o Framework di test, ad esempio NUnit.
+description: Informazioni su come sviluppare un metodo testato in C# usando Microsoft Test Framework, che è possibile adattare facilmente ad altri linguaggi o framework di test, ad esempio NUnit.
 ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: de154900bee2c78453f559c8c90020147e8c528c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683945"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106653"
 ---
-# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procedura dettagliata: sviluppo basato su test con Esplora test
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procedura dettagliata: Sviluppo basato su test con Esplora test
 
 Creare unit test per garantire il corretto funzionamento del codice attraverso modifiche incrementali. Esistono diversi framework che possono essere utilizzati per scrivere unit test, tra i quali alcuni sviluppati da terze parti. Alcuni framework di test sono specializzati per il testing in diversi linguaggi o piattaforme. Esplora test fornisce una singola interfaccia per gli unit test per uno qualsiasi di questi framework. Per altre informazioni su **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md) e [Domande frequenti su Esplora test](test-explorer-faq.md).
 
-Questa procedura dettagliata illustra come sviluppare un metodo testato in C# usando il framework di test Microsoft (MSTest). È possibile adattare facilmente la procedura per altri linguaggi o altri framework di test, ad esempio NUnit. Per altre informazioni, vedere [installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
+Questa procedura dettagliata illustra come sviluppare un metodo testato in C# usando il framework di test Microsoft (MSTest). È possibile adattare facilmente la procedura per altri linguaggi o altri framework di test, ad esempio NUnit. Per altre informazioni, vedere [Installare framework di unit test di terze parti.](install-third-party-unit-test-frameworks.md)
 
 ## <a name="create-a-test-and-generate-code"></a>Creare un test e generare codice
 
@@ -28,7 +29,7 @@ Questa procedura dettagliata illustra come sviluppare un metodo testato in C# us
 
 2. Nella stessa soluzione aggiungere un nuovo progetto di test MSTest.
 
-   A partire da Visual Studio 2019 versione 16,9, il nome del modello di progetto MSTest è stato modificato dal **progetto di test MSTest (.NET Core)** al **progetto di unit test**.
+   A partire da Visual Studio 2019 versione 16.9, il nome del modello di progetto MSTest è stato modificato da **MSTest Test Project (.NET Core)** a **Unit Test Project**.
 
    Assegnare al progetto di test il nome **MathTests**.
 
@@ -54,7 +55,7 @@ Questa procedura dettagliata illustra come sviluppare un metodo testato in C# us
 
 4. Generare un tipo dal codice di test.
 
-   1. Posizionare il cursore su `Rooter` , quindi dal menu lampadina scegliere **genera il tipo ' Rooter '**  >  **genera nuovo tipo**.
+   1. Posizionare il cursore su , quindi scegliere Genera tipo `Rooter` **'Rooter'** Genera nuovo tipo dal menu  >  **lampadina.**
 
       ![Azione rapida Genera nuovo tipo](media/test-driven-development-generate-new-type.png)
 
@@ -93,7 +94,7 @@ A questo punto sono stati creati un test e uno stub che è possibile modificare 
     }
     ```
 
-2. In **Esplora test** scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere Esegui **tutto.**
 
    La soluzione verrà compilata e il test verrà eseguito e avrà esito positivo.
 
@@ -130,7 +131,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
     }
     ```
 
-2. In **Esplora test** scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere Esegui **tutto.**
 
    Il nuovo test ha esito negativo nonostante il primo test abbia comunque esito positivo. Per trovare il punto di errore, selezionare il test con esito negativo e quindi esaminare i dettagli nel riquadro **Riepilogo dettagli test**.
 
@@ -150,7 +151,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
     }
     ```
 
-4. In **Esplora test** scegliere **Esegui tutto**.
+4. In **Esplora test** scegliere Esegui **tutto.**
 
    Ora entrambi i test avranno esito positivo.
 
@@ -175,7 +176,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
     }
     ```
 
-2. In **Esplora test** scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere Esegui **tutto.**
 
    Il metodo sottoposto al test entra in un ciclo e deve essere annullato manualmente.
 
@@ -195,7 +196,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
         ...
     ```
 
-5. In **Esplora test** scegliere **Esegui tutto**.
+5. In **Esplora test** scegliere Esegui **tutto.**
 
    Tutti i test avranno esito positivo.
 

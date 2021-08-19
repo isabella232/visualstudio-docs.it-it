@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a47c29f07a590667a22ed123ba660202b4de9c449e606a8d921dd02eb0b7f52
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d14b48d4cc3e32c48886222919b5e1f80f72fc69
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434399"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160207"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!` Rappresenta i motivi per cui **Modifica e** continuazione non è disponibile.
+`This is for internal use only!` Rappresenta i motivi per **cui Modifica e continuazione** non è disponibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>Campi
 `ENCUN_NONE`\
-Nessun motivo specifico per cui Modifica e continuazione non è disponibile.
+Non esistono motivi specifici per cui Modifica e continuazione non è disponibile.
 
 `ENCUN_INTEROP`\
 Modifica e continuazione non è disponibile durante una chiamata InterOp.
@@ -74,10 +74,10 @@ Modifica e continuazione non è disponibile durante l'elaborazione del codice in
 Modifica e continuazione non è disponibile perché la sessione è stata collegata, non avviata dal debugger.
 
 `ENCUN_WIN64`\
-Modifica e continuazione non è disponibile durante l'elaborazione del codice Windows a 64 bit.
+Modifica e continuazione non è disponibile durante l'elaborazione di codice Windows a 64 bit.
 
 ## <a name="remarks"></a>Commenti
-Questa enumerazione è per uso interno solo da parte di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . I [metodi GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementati da un fornitore di porte personalizzato devono sempre restituire `E_NOTIMPL` .
+Questa enumerazione è per uso interno solo da parte di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . I [metodi GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) [e DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementati da un fornitore di porte personalizzato devono sempre restituire `E_NOTIMPL` .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.idl

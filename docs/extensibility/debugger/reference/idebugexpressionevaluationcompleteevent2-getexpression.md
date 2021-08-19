@@ -13,17 +13,18 @@ ms.assetid: faf6b2dd-2afd-4852-b21c-7e8d3130e141
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f2685283d30c4c748bbf3f740b94b203f33520d6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 68365f95a01afb0c973acf8abcdda382fdd1559b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092254"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064253"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 Ottiene l'espressione originale.
@@ -44,13 +45,13 @@ int GetExpression(
 
 ## <a name="parameters"></a>Parametri
 `ppExpr`\
-out Restituisce un oggetto [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) che rappresenta l'espressione analizzata.
+[out] Restituisce un [oggetto IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) che rappresenta l'espressione analizzata.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo restituisce l'oggetto creato in una chiamata al metodo [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) .
+ Questo metodo restituisce l'oggetto creato in una chiamata al [metodo ParseText.](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)

@@ -1,6 +1,6 @@
 ---
-description: Enumera gli analizzatori di espressioni disponibili in base agli identificatori di lingua e fornitore.
-title: 'IDebugSettingsCallback2:: enums | Microsoft Docs'
+description: Enumera gli analizzatori di espressioni disponibili in base alla lingua e all'identificatore del fornitore.
+title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,20 +9,21 @@ ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7606bd46587c7141bddea0c822f08459f2d262d9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 06a2c2572c1c4109cee4bdda5f5483be58a52f0f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075666"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118450"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumera gli analizzatori di espressioni disponibili in base agli identificatori di lingua e fornitore.
+Enumera gli analizzatori di espressioni disponibili in base alla lingua e all'identificatore del fornitore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +47,13 @@ public int EnumEEs(
 
 ## <a name="parameters"></a>Parametri
 `celtBuffer`\
-in Numero di elementi nel `pceltEEs` buffer.
+[in] Numero di elementi nel `pceltEEs` buffer.
 
 `rgguidLang`\
-[in, out] Identificatore univoco per il linguaggio di programmazione.
+[in, out] Identificatore univoco del linguaggio di programmazione.
 
 `rgguidVendor`\
-[in, out] Identificatore univoco per il fornitore.
+[in, out] Identificatore univoco del fornitore.
 
 `pceltEEs`\
 [in, out] Matrice di analizzatori di espressioni.

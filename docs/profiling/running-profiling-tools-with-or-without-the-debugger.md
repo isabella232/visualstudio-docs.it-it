@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d207fd29eb77a5e90c1aae2fb60f0672d3769ab57cfcd7ad0e4a3035bd6332c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d697a96a0b91554342ba57a6265b4a087c8458a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121441821"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157397"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
@@ -31,7 +31,7 @@ Per decidere quali strumenti e risultati usare, tenere presente quanto segue:
 - Strumento integrato nel debugger e strumento non debugger
   - I problemi di prestazioni esterni, come ad esempio i problemi di I/O dei file o di velocità di risposta della rete non sono visualizzati in modo molto diverso negli strumenti integrati nel debugger o negli altri.
   - Il debugger stesso modifica i tempi di prestazioni, in quanto esegue le operazioni del debugger necessarie, ad esempio l'intercettazione di eccezioni e gli eventi di caricamento dei moduli.
-  - I numeri di prestazioni della build di Profiler prestazioni sono i più precisi e accurati. I risultati dello strumento integrato nel debugger sono particolarmente utili per confrontarli con altre misurazioni correlate al debug o per usare le funzionalità del debugger.
+  - I numeri delle prestazioni della build di Profiler prestazioni sono i più precisi e accurati. I risultati dello strumento integrato nel debugger sono particolarmente utili per confrontarli con altre misurazioni correlate al debug o per usare le funzionalità del debugger.
   - Alcuni strumenti, ad esempio lo strumento di allocazione di oggetti .NET, sono disponibili solo per scenari non di debugger.
 - Debug e build di rilascio
   - Per i problemi causati da chiamate a elevato utilizzo di CPU, potrebbero esserci notevoli differenze di prestazioni tra le build di rilascio e di debug. Verificare se il problema esiste nelle build di rilascio.
@@ -46,7 +46,7 @@ Quando si avvia il debug in Visual Studio debug selezionando Debug Avvia debug o
 
 - Usare l'icona **Impostazioni** sulla barra degli strumenti per scegliere se visualizzare **Utilizzo memoria**, **Analisi interfaccia utente** o **Utilizzo CPU**.
 
-- Selezionare **Impostazioni** nell'elenco **Impostazioni** a discesa per aprire le pagine **Strumenti di diagnostica con** altre opzioni.
+- Selezionare **Impostazioni** **nell'Impostazioni** a discesa delle proprietà per aprire Strumenti di diagnostica **pagine** delle proprietà con altre opzioni.
 
 - Se si esegue Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace selezionando Strumenti  >  **Opzioni**  >  **IntelliTrace.**
 
@@ -63,7 +63,7 @@ Durante una sessione di debug, la scheda Eventi della finestra Strumenti di diag
 
 Usare **l'elenco** a discesa Filtro per filtrare gli eventi in e fuori dalla visualizzazione, selezionando o deselezionando categorie specifiche di eventi.
 
-![Screenshot del filtro eventi di diagnostica](../profiling/media/diagnosticeventfilter.png "Filtro eventi di diagnostica")
+![Screenshot del filtro degli eventi di diagnostica](../profiling/media/diagnosticeventfilter.png "Filtro eventi di diagnostica")
 
 Usare la casella di ricerca per trovare una stringa specifica nell'elenco di eventi. Ecco i risultati di una ricerca del nome della stringa *corrispondente* a quattro eventi:
 
@@ -75,7 +75,7 @@ Per altre informazioni, vedere l'articolo relativo a come [eseguire ricerche e a
 
 Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli strumenti Profiler prestazioni.
 
-1. Con un progetto aperto in Visual Studio, impostare la configurazione della soluzione su **Rilascio** e selezionare Debugger **Windows** locale (o **Computer** locale) come destinazione della distribuzione.
+1. Con un progetto aperto in Visual Studio, impostare la configurazione della soluzione su **Release** e selezionare **Debugger Windows** locale (o **Computer** locale) come destinazione della distribuzione.
 
 1. Selezionare **Debug**  >  **Profiler prestazioni** o premere **ALT** + **F2.**
 
@@ -93,7 +93,7 @@ Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli st
 
    I dati analizzati vengono visualizzati nella **pagina Report.**
 
-È possibile salvare i report e aprirli dall'elenco **Sessioni aperte di** recente nella Strumenti di diagnostica di avvio.
+È possibile salvare i report e aprirli dall'elenco Sessioni aperte **di** recente nella Strumenti di diagnostica avvio.
 
 ![Screenshot dell'Strumenti di diagnostica di sessioni aperte di recente](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
@@ -108,4 +108,4 @@ Per altre informazioni, vedere:
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Raccogliere dati di profilatura dalla riga di comando
 
-Per misurare i dati sulle prestazioni dalla riga di comando, è possibile usare VSDiagnostics.exe, incluso in Visual Studio o nella Strumenti remoti. Ciò è utile per acquisire tracce delle prestazioni nei sistemi in Visual Studio non è installato o per creare script per la raccolta di tracce delle prestazioni. Per istruzioni dettagliate, vedere Misurare [le prestazioni dell'applicazione dalla riga di comando.](../profiling/profile-apps-from-command-line.md)
+Per misurare i dati sulle prestazioni dalla riga di comando, è possibile usare VSDiagnostics.exe, incluso in Visual Studio o nella Strumenti remoti. Ciò è utile per acquisire tracce delle prestazioni nei sistemi Visual Studio non è installato o per creare script per la raccolta di tracce delle prestazioni. Per istruzioni dettagliate, vedere Misurare [le prestazioni dell'applicazione dalla riga di comando.](../profiling/profile-apps-from-command-line.md)

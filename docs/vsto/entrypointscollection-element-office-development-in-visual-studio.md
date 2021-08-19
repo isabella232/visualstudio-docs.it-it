@@ -1,6 +1,6 @@
 ---
-description: L'elemento entryPointsCollection dello spazio dei nomi vstav3 contiene tutti gli elementi entryPoints associati alle soluzioni Office.
-title: '&lt;&gt;elemento entryPointsCollection (sviluppo per Office in Visual Studio)'
+description: L'elemento entryPointsCollection dello spazio dei nomi vstav3 contiene tutti gli elementi entryPoints associati Office soluzioni.
+title: '&lt;Elemento entryPointsCollection &gt; (Office sviluppo in Visual Studio)'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,16 +15,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: da689b71f50d43d60d78cf702a28eb5ba7ae0bb1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 65ba6319caed660f0ee752ce1aa7a2804c48b53a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223602"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106367"
 ---
-# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento entryPointsCollection (sviluppo per Office in Visual Studio)
+# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;Elemento entryPointsCollection &gt; (Office sviluppo in Visual Studio)
   L'elemento `entryPointsCollection` dello spazio dei nomi `vstav3` contiene tutti gli elementi `entryPoints` associati a soluzioni Office.
 
 ## <a name="syntax"></a>Sintassi
@@ -50,12 +51,12 @@ ms.locfileid: "102223602"
  `entryPointsCollection` presenta gli elementi seguenti:
 
 ### <a name="entrypoints"></a>entryPoints
- Obbligatorio. Il ruolo dell' `entryPoints` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento entryPoints&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Obbligatorio. Il ruolo dell'elemento nello spazio dei nomi è definito `entryPoints` `vstav3` in&#60;[entryPoints ](../vsto/entrypoints-element-office-development-in-visual-studio.md)&#62; elemento &#40;Office sviluppo in Visual Studio&#41;.
 
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra l'elemento `entryPointsCollection` in un manifesto dell'applicazione per una soluzione a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra l'elemento `entryPointsCollection` in un manifesto dell'applicazione per una soluzione a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -98,10 +99,10 @@ ms.locfileid: "102223602"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO
+## <a name="vsto-add-in-example"></a>VSTO Esempio di componente aggiuntivo
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra un elemento `entryPointsCollection` in un manifesto dell'applicazione per una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra un elemento `entryPointsCollection` in un manifesto dell'applicazione per una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -120,10 +121,10 @@ ms.locfileid: "102223602"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="multi-project-deployment-example"></a>Esempio di distribuzione di più progetti
+## <a name="multi-project-deployment-example"></a>Esempio di distribuzione Project multi-distribuzione
 
 ### <a name="description"></a>Descrizione
- L'esempio di codice seguente illustra un elemento `entryPointsCollection` in un manifesto dell'applicazione per una distribuzione di più progetti con due soluzioni Office. Questo esempio di codice fa parte di un esempio più ampio fornito nei [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+ L'esempio di codice seguente illustra un elemento `entryPointsCollection` in un manifesto dell'applicazione per una distribuzione di più progetti con due soluzioni Office. Questo esempio di codice fa parte di un esempio più ampio fornito in [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Codice
 
@@ -180,6 +181,6 @@ ms.locfileid: "102223602"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
-- [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
-- [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Manifesti dell'applicazione per Office soluzioni](../vsto/application-manifests-for-office-solutions.md)
+- [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce manifesto dell'applicazione](../deployment/clickonce-application-manifest.md)

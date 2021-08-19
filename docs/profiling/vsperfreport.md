@@ -1,6 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
-description: Informazioni su come usare lo strumento da riga di comando VSPerfReport per creare report usando Visual Studio Strumenti di profilatura di dati di profilatura.
+description: Si apprenderà che lo strumento da riga di comando VSPerfReport viene usato per creare report usando Visual Studio Strumenti di profilatura file di dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8e249601ada0304e074872dbe04b7a2653af79226faa8fb60493447174c365
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef7d9f356cd0babe78e1364aacb3657f762f31ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121230612"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156758"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file con estensione *csv*.
@@ -60,7 +60,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**SymbolPath:**`path`|Specifica uno o più percorsi di ricerca o server di simboli che contengono i simboli per il file di dati del profiler.|
 |**DebugSymPath**|Elenca i percorsi in cui vengono cercati i simboli e se vengono trovati. Questa opzione è utile per risolvere i problemi di risoluzione dei simboli.|
 |**PackSymbols**|Salva i simboli nel file di dati di profilatura (con estensione vsp) in modo che i file di simboli (con estensione *pdb*) non siano necessari per l'analisi.|
-|**Output: nome** *file&#124;* *percorso*|Specifica un percorso alternativo per i file dei report generati. Per impostazione predefinita, i report vengono creati nella directory corrente.|
+|**Output: percorso** *&#124;* *nome file*|Specifica un percorso alternativo per i file dei report generati. Per impostazione predefinita, i report vengono creati nella directory corrente.|
 |**SummaryFile**|Analizza e salva le informazioni analizzate in un file di riepilogo vsps.|
 |**PrintMarks**|Mostra il nome e il timestamp di tutti i contrassegni nel file di report specificato.|
 |**?**|Visualizza le informazioni sull'utilizzo.|

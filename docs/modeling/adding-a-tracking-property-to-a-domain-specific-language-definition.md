@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 546636ec3de4656bf0f6480dfaa5141d38e963d6
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 798b88b23aa68ec6e12e81ef5061160a8a7636df
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384915"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157696"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -34,7 +35,7 @@ In questa procedura dettagliata viene creato un linguaggio specifico di dominio 
 
   Una proprietà di rilevamento ha due stati: rilevamento e aggiornamento da parte dell'utente. Le proprietà di rilevamento hanno le funzionalità seguenti:
 
-- Quando si trova nello stato di rilevamento, viene calcolato il valore della proprietà di rilevamento e il valore viene aggiornato quando cambiano le altre proprietà nel modello.
+- Quando si trova nello stato di rilevamento, viene calcolato il valore della proprietà di rilevamento e il valore viene aggiornato con la modifica di altre proprietà nel modello.
 
 - Quando si è aggiornato in base allo stato dell'utente, il valore della proprietà di rilevamento mantiene il valore su cui l'ultimo utente ha impostato la proprietà.
 
@@ -74,7 +75,7 @@ Prima di iniziare questa procedura dettagliata, è necessario installare questi 
 
     7. Usare il valore predefinito per lo spazio dei nomi radice per i progetti nella soluzione , `CompanyName.ProductName.TrackingPropertyDSL` .
 
-    8. Consentire alla procedura guidata di creare un file di chiave con nome sicuro per gli assembly.
+    8. Consente alla procedura guidata di creare un file di chiave con nome sicuro per gli assembly.
 
     9. Esaminare i dettagli della soluzione e quindi fare clic su **Fine** per creare il progetto di definizione DSL.
 
@@ -103,11 +104,11 @@ Prima di iniziare questa procedura dettagliata, è necessario installare questi 
 
 3. Alla classe **di dominio ExampleElement** aggiungere una proprietà di dominio denominata `Namespace` .
 
-     Nella finestra **Proprietà** per la nuova proprietà impostare **Is Browsable** su **False** e **Kind** su **CustomStorage**.
+     Nella finestra **Proprietà** per la nuova proprietà impostare **Is Browsable** su **False** e **Kind** su **CustomStorage.**
 
 4. Alla classe **di dominio ExampleElement** aggiungere una proprietà di dominio denominata `IsNamespaceTracking` .
 
-     Nella finestra **Proprietà** per la nuova proprietà impostare **Is Browsable** su **False,** impostare **Default Value** su e `true` impostare **Type** su **Boolean**.
+     Nella finestra **Proprietà** per la nuova proprietà impostare **Is Browsable** su **False,** impostare **Default Value** su e `true` impostare **Type** su **Boolean.**
 
 ### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Per aggiornare gli elementi del diagramma e i dettagli DSL
 
@@ -119,7 +120,7 @@ Prima di iniziare questa procedura dettagliata, è necessario installare questi 
 
 2. Nella finestra di progettazione DSL selezionare la linea che connette la **classe ExampleElement** alla **forma ExampleShape.**
 
-    1. Nella finestra **Dettagli DSL** selezionare la scheda **Mappe decorator.**
+    1. Nella finestra **Dettagli DSL** selezionare la scheda **Decorator Mappe.**
 
     2. **Nell'elenco Decorator** selezionare **NamespaceDecorator**, selezionare la relativa casella di controllo e quindi nell'elenco **Proprietà** di visualizzazione selezionare Spazio **dei nomi**.
 
@@ -129,7 +130,7 @@ Prima di iniziare questa procedura dettagliata, è necessario installare questi 
 
     2. Nella finestra **Proprietà** per il descrittore del tipo di dominio impostare **Custom Coded** su **True.**
 
-4. In **Esplora linguaggio DSL** selezionare il **nodo Comportamento di serializzazione XML.**
+4. In **Esplora linguaggio DSL** selezionare il **nodo Comportamento serializzazione XML.**
 
     1. Nella finestra **Proprietà** impostare **Custom Post Load** su **True.**
 
@@ -243,9 +244,9 @@ Al file HelperClasses.cs aggiungere le `TrackingHelper` classi e come indicato d
 Implementare `GetCustomProperties` il metodo per il descrittore di tipo per la classe di `ExampleModel` dominio.
 
 > [!NOTE]
-> Il codice generato da Strumenti DSL per il descrittore di tipo personalizzato per le chiamate . Tuttavia, gli strumenti DSL non generano codice `ExampleModel` che implementa il metodo `GetCustomProperties` .
+> Il codice generato da Strumenti DSL per il descrittore di tipo personalizzato per le chiamate . Tuttavia, gli `ExampleModel` strumenti DSL non generano codice `GetCustomProperties` che implementa il metodo .
 
-La definizione di questo metodo crea il descrittore della proprietà di rilevamento per la proprietà di rilevamento dello spazio dei nomi. Inoltre, la specifica di attributi per la proprietà di rilevamento consente alla **finestra Proprietà** di visualizzare correttamente la proprietà.
+La definizione di questo metodo crea il descrittore della proprietà di rilevamento per la proprietà Di rilevamento dello spazio dei nomi. Inoltre, la specifica di attributi per la proprietà di rilevamento consente alla **finestra Proprietà** di visualizzare correttamente la proprietà.
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Per modificare il descrittore di tipo per la classe di dominio ExampleModel
 
@@ -345,7 +346,7 @@ La definizione del `GetCustomElementsValue` metodo fornisce la logica per la pro
 
 Aggiungere inoltre un metodo a `OnDefaultNamespaceChanged` `ExampleModel` ed eseguire l'override del `OnValueChanged` metodo della classe `DefaultNamespacePropertyHandler` annidata di per chiamare `ExampleModel` `OnDefaultNamespaceChanged` .
 
-Poiché la proprietà DefaultNamespace viene usata per calcolare la proprietà Di rilevamento dello spazio dei nomi, è necessario notificare a tutte le classi di dominio che il `ExampleModel` `ExampleElement` valore di DefaultNamespace è stato modificato.
+Poiché la proprietà DefaultNamespace viene usata per calcolare la proprietà Di rilevamento dello spazio dei nomi, deve notificare a tutte le classi di dominio che il `ExampleModel` `ExampleElement` valore di DefaultNamespace è stato modificato.
 
 ### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Per modificare il gestore della proprietà per la proprietà rilevata
 
@@ -418,10 +419,10 @@ Aggiungere un `CalculateNamespace` metodo alla classe di `ExampleElement` domini
 
 La definizione di questo metodo fornisce la logica per la proprietà calcolata CustomElements di `ExampleModel` . Questo metodo conta il numero di classi di dominio con una proprietà di rilevamento dello spazio dei nomi che si trova nello stato aggiornato dall'utente e restituisce una stringa che rappresenta questo conteggio come percentuale degli elementi totali nel `ExampleElement` modello.
 
-Aggiungere anche l'archiviazione per e i metodi da ottenere e impostare, la proprietà di archiviazione personalizzata Spazio dei nomi della `ExampleElement` classe di dominio.
+Aggiungere anche l'archiviazione per e i metodi da ottenere e impostare, la proprietà di archiviazione personalizzata Namespace della `ExampleElement` classe di dominio.
 
 > [!NOTE]
-> Il codice generato da Strumenti DSL per chiama i metodi get e set. Tuttavia, gli strumenti DSL non generano codice `ExampleModel` che implementa i metodi.
+> Il codice generato da Strumenti DSL per chiama i metodi get e set. Tuttavia, gli strumenti DSL non generano codice `ExampleModel` che implementa i metodi .
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Per aggiungere il metodo per il descrittore di tipo personalizzato
 
@@ -726,11 +727,11 @@ Il passaggio successivo consiste nel compilare ed eseguire la finestra di proget
 
 3. In **Esplora soluzioni** fare doppio clic sul file Test.trackingPropertyDsl per aprirlo nella finestra di progettazione e quindi fare clic sull'area di progettazione.
 
-    Si noti che nella finestra **Proprietà** per il diagramma la proprietà **Spazio** dei nomi predefinito è **DefaultNamespace** e la proprietà **Elementi** personalizzati è **0/0.**
+    Si noti che nella **finestra Proprietà** per il diagramma la proprietà **Spazio** dei nomi predefinito è **DefaultNamespace** e la proprietà **Elementi** personalizzati è **0/0.**
 
 4. Trascinare **un elemento ExampleElement** dalla **Casella degli strumenti** all'area del diagramma.
 
-5. Nella finestra **Proprietà** per l'elemento selezionare la proprietà **Spazio dei** nomi elemento e modificare il valore da **DefaultNamespace** ad **OtherNamespace**.
+5. Nella finestra **Proprietà** per l'elemento selezionare la proprietà **Spazio dei** nomi dell'elemento e modificare il valore da **DefaultNamespace** ad **OtherNamespace**.
 
     Si noti che il valore di **Spazio dei nomi dell'elemento** è ora visualizzato in grassetto.
 
@@ -744,7 +745,7 @@ Il passaggio successivo consiste nel compilare ed eseguire la finestra di proget
 
 8. Fare clic sull'area di progettazione.
 
-    Nella finestra **Proprietà** del diagramma il valore di **Elementi personalizzati** è **ora 1/2.**
+    Nella finestra **Proprietà** per il diagramma il valore di **Elementi personalizzati** è **ora 1/2.**
 
 9. Modificare **Lo spazio dei nomi** predefinito per il diagramma da **DefaultNamespace** a **NewNamespace**.
 

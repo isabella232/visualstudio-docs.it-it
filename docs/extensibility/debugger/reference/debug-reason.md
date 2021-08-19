@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 790dbcf8988af2751a8ce2eafda854797c89538ff3ca425b1bc11b9e53c9c795
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 493328f0dbad03030c3f817177a5adb4dc213bc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378042"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160283"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
 Specifica il motivo per cui il processo è stato avviato per il debug.
@@ -61,7 +61,7 @@ Il processo è stato avviato su richiesta dell'utente.
 Il processo già in esecuzione è stato collegato dall'utente.
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-Il processo è stato collegato automaticamente al momento dell'avvio.
+Il processo è stato collegato automaticamente a quando è stato avviato.
 
 `DEBUG_REASON_CAUSALITY`\
 Il processo è stato avviato a causa di un evento di debug JIT *(Just-In-Time).*

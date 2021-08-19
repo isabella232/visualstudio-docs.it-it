@@ -1,6 +1,6 @@
 ---
 description: Crea un oggetto utilizzando un costruttore.
-title: IDebugFunctionObject::CreateObject | Microsoft Docs
+title: Interfaccia IDebugFunctionObject::CreateObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3477d95d583520db8faca131a3ad96b3fff7195f2ca5840f7a5752f3ddd685d2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d5385aff3c0b50239192a95efcf4789cc2f0900c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088731"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Crea un oggetto utilizzando un costruttore.
@@ -64,9 +64,9 @@ int CreateObject(
  Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una classe (o di un altro tipo complesso che richiede un costruttore) che è un parametro per la funzione rappresentata [dall'interfaccia IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+ Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una classe (o un altro tipo complesso che richiede un costruttore) che è un parametro per la funzione rappresentata [dall'interfaccia IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
- Se il parametro object non richiede un costruttore, chiamare il [metodo CreateObjectNoConstructor.](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
+ Se il parametro dell'oggetto non richiede un costruttore, chiamare il [metodo CreateObjectNoConstructor.](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

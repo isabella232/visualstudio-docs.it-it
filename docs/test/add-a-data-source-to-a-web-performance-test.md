@@ -1,6 +1,6 @@
 ---
 title: Aggiungere un'origine dati a un test delle prestazioni Web
-description: Informazioni su come associare dati per fornire valori diversi allo stesso test, ad esempio per fornire valori diversi ai parametri post del modulo.
+description: Informazioni su come associare dati per fornire valori diversi allo stesso test, ad esempio per fornire valori diversi ai parametri di post del modulo.
 ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: f603ff3c3392e10df7bcb1b24ffd54defabc95166c60018b7d53d914115631b0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 61e84588dee91b8bf17d74780f76539d478b3c1b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366987"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068761"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
 

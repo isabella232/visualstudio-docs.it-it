@@ -1,6 +1,6 @@
 ---
 title: -Build (devenv.exe)
-description: Informazioni sull'opzione della riga di comando di compilazione devenv e su come usarla per compilare una soluzione o un progetto con un file di configurazione della soluzione specificato.
+description: Informazioni sull'opzione della riga di comando Build devenv e su come usarla per compilare una soluzione o un progetto con un file di configurazione della soluzione specificato.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e7f14647729f167b4dc816519d398a00467547
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be1dcdd4f0ca75f57992ff00d8bf3b3c1501b6ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101596"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -35,7 +36,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 ## <a name="arguments"></a>Argomenti
 
-- *NomeSoluzione*
+- *Solutionname*
 
   Obbligatorio. Il percorso completo e il nome del file della soluzione.
 
@@ -51,7 +52,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la compilazione del progetto denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *SolnConfigName*.
 
-- `/Out`*OutputFileName*
+- `/Out`*OutputFilename*
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 

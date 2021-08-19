@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b17d7b79fcdcaf43242c1b619cd2c08f3f576040f67e8f708a75237f194709ab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b3f49a6e1ff74eda4561b4fc0283ca9196f8040
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121285374"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155629"
 ---
 # <a name="office-ui-customization"></a>Office Personalizzazione dell'interfaccia utente
   È possibile personalizzare l'interfaccia utente (UI) delle applicazioni Microsoft Office mediante gli strumenti di sviluppo di Office in Visual Studio. Questo argomento descrive le funzionalità dell'interfaccia utente che è possibile personalizzare nelle sezioni seguenti:
@@ -93,7 +93,7 @@ ms.locfileid: "121285374"
 
  Quando si sviluppano progetti a livello di documento per Excel o Word, è possibile utilizzare la finestra di progettazione di Visual Studio per aggiungere questi controlli al documento o cartella di lavoro nel progetto in fase di creazione oppure aggiungere i controlli a livello di codice in fase di runtime. Quando si sviluppano progetti di componente aggiuntivo VSTO per Excel o Word, è possibile aggiungere controlli a livello di codice a qualsiasi cartella di lavoro o documento aperto in fase di esecuzione.
 
- Per altre informazioni, vedere [Panoramica degli elementi host](../vsto/host-items-and-host-controls-overview.md) e dei controlli host e Windows controlli form Office panoramica dei [documenti.](../vsto/windows-forms-controls-on-office-documents-overview.md)
+ Per altre informazioni, vedere [Panoramica degli elementi host](../vsto/host-items-and-host-controls-overview.md) e dei controlli host e Windows dei form Office panoramica dei [documenti.](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
 ## <a name="shortcut-menus"></a><a name="Shortcut"></a> Menu di scelta rapida
  Quando si preme il pulsante destro del mouse in un documento o in una finestra dell'applicazione, viene visualizzato un menu di scelta rapida. È possibile impostare un menu di scelta rapida in modo che venga visualizzato dopo un evento, ad esempio quando un utente fa clic con il pulsante destro del mouse su un documento, una cartella di lavoro o un controllo host. È possibile aggiungere diversi comandi o controlli di menu a a un menu di scelta rapida. Creare menu di scelta rapida utilizzando XML. Se si aggiunge un **elemento barra multifunzione (XML)** al progetto Office, è possibile aggiungere codice XML al file XML della barra multifunzione per creare menu di scelta rapida. Per altre informazioni sull'uso di XML per creare menu di scelta rapida, vedere [Procedura: Aggiungere comandi ai menu di scelta rapida.](../vsto/how-to-add-commands-to-shortcut-menus.md)

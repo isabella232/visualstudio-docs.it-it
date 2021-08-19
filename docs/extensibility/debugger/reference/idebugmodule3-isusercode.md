@@ -1,6 +1,6 @@
 ---
 description: Recupera informazioni sul fatto che il modulo rappresenti o meno il codice utente.
-title: 'IDebugModule3:: IsUserCode | Microsoft Docs'
+title: IDebugModule3::IsUserCode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbc56943574cc5549e96e3281b4398df7d486f7d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 494f06ff4f5538ab9c12e80c7908b370fa21fcad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051014"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 Recupera informazioni sul fatto che il modulo rappresenti o meno il codice utente.
@@ -42,7 +43,7 @@ int IsUserCode(
 
 ## <a name="parameters"></a>Parametri
 `pfUser`\
-out Diverso da zero ( `TRUE` ) se il modulo rappresenta il codice utente, zero ( `FALSE` ) in caso contrario.
+[out] Diverso da zero ( `TRUE` ) se il modulo rappresenta il codice utente, zero ( ) in caso `FALSE` contrario.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.

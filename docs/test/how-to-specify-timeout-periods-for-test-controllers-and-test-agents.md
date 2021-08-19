@@ -13,12 +13,13 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 3cca59fc165871e24269723635a1393d2f859178
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 32497ccd5158c7155fc95f925d578520c5eff9ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879566"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148493"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per controller e agenti di test
 
@@ -48,7 +49,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Per specificare le opzioni di timeout agente per un controller di test
 
-1. Aprire il file di configurazione *QTCcontroller.exe.config* XML disponibile in *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Aprire il file *QTCcontroller.exe.config* di configurazione XML disponibile in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Individuare il tag `<appSettings>`.
 
@@ -82,7 +83,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Per specificare le opzioni di timeout agente per un agente di test
 
-1. Aprire il file di configurazione *QTAgentService.exe.config* XML disponibile in *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Aprire il file *QTAgentService.exe.config* di configurazione XML disponibile in *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 2. Individuare il tag `<appSettings>`.
 
@@ -119,4 +120,4 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
 - [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Procedura: associare un test controller o un agente di test a una scheda di rete](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Procedura: Associare un test controller o un agente di test a una scheda di rete](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

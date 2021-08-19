@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 500d0072ffca6f0ada6d035aa59c60b8358a13aec9230077b64a724f5faf4747
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8d1f2cac97ee883ddca7fec7a2f5d0725459c029
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121273683"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158307"
 ---
 # <a name="sccenumchangedfiles-function"></a>Funzione SccEnumChangedFiles
 Dato un elenco di file locali, questa funzione determina quali file sono diversi dalle versioni corrispondenti nel database di controllo del codice sorgente.
@@ -58,7 +58,7 @@ SCCRTN SccEnumChangedFiles(
 [in, out] Matrice di valori che indica lo stato della differenza di ogni file (la matrice deve avere `cFiles` almeno voci). Un valore diverso da zero indica che il file è diverso.
 
 ## <a name="return-value"></a>Valore restituito
- È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
+ L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|

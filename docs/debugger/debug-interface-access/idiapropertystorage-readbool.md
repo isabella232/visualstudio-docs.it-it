@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b7e04906d5e809538c5cb99b9b43d66701020b5d387ff3ab824367b72a94508
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9b2ba2f6e86522f5770aec30b1617742054cd9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344996"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074756"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Legge i `BOOL` valori in un set di proprietà.
@@ -43,10 +43,10 @@ HRESULT ReadBOOL (
 [out] Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL` .
+ In caso di esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL` .
 
 ## <a name="remarks"></a>Commenti
- Per risultati coerenti, interpretare il `BOOL` valore in modo che i valori diversi da zero siano e zero sia `TRUE` `FALSE` .
+ Per risultati coerenti, interpretare il valore in modo che i valori diversi da `BOOL` zero siano e zero sia `TRUE` `FALSE` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - multiple
-ms.openlocfilehash: 446d8824d75f7728b766ca40783c51d6f5a394797181612c7e7e55807ce7894a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2ca8b3f2e7d0b75d0461a905832263635db5708f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359097"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158554"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet sdk come riferimento al progetto
 
@@ -32,9 +32,9 @@ La tabella seguente consente di confrontare le funzionalità di riferimento di u
 | Funzionalità | Supporto SDK | Note all'SDK | Supporto NuGet | Note a NuGet |
 | - | - | - |---------------| - |
 | Facendo riferimento a una sola entità, il meccanismo rende disponibili tutti i file e tutte le funzionalità. | S | Per aggiungere un SDK, usare la finestra di dialogo **Gestione riferimenti**. Tutti i file e tutte le funzionalità sono disponibili durante il flusso di lavoro di sviluppo. | S | |
-| MSBuild utilizza automaticamente assembly e Windows metadati (*con estensione winmd).* | S | I riferimenti all'interno dell'SDK vengono passati automaticamente al compilatore. | S | |
-| MSBuild consuma automaticamente i file con estensione h o lib. | S | Il file *SDKName.props* Visual Studio come configurare la directory Visual C++ e così via, per l'utilizzo automatico di file con estensione *h* *o lib.* | N | |
-| MSBuild utilizza automaticamente i *file.js* o *CSS.* | S | In **Esplora soluzioni**, è possibile espandere il nodo di riferimento di JavaScript SDK per visualizzare singoli *file.js* o *css* e quindi generare tag trascinando tali file nei file `<source include/>` di origine. L'SDK supporta F5 e il programma di installazione automatica dei pacchetti. | S | |
+| MSBuild utilizza automaticamente assembly e Windows file di metadati (*con estensione winmd).* | S | I riferimenti all'interno dell'SDK vengono passati automaticamente al compilatore. | S | |
+| MSBuild consuma automaticamente i file con estensione h o lib. | S | Il file *SDKName.props* Visual Studio come configurare la directory Visual C++ e così via, per l'utilizzo automatico di file con estensione *h* o *lib.* | N | |
+| MSBuild utilizza automaticamente i *file.js* o *CSS.* | S | In **Esplora soluzioni**, è possibile espandere il nodo di riferimento di JavaScript SDK per visualizzare singoli *file.js* o CSS e quindi generare *tag* trascinando tali file nei file `<source include/>` di origine. L'SDK supporta F5 e il programma di installazione automatica dei pacchetti. | S | |
 | MSBuild aggiunge automaticamente il controllo nella **casella degli strumenti**. | S | La **casella degli strumenti** può consumare gli SDK e visualizzare i controlli nelle schede specificate dall'utente. | N | |
 | Il meccanismo supporta il programma di installazione di Visual Studio per le estensioni (VSIX, Visual Studio Installer for eXtensions). | S | VSIX è dotato di un manifesto speciale e di logica per la creazione di pacchetti SDK | S | È possibile incorporare VSIX in un altro programma di installazione. |
 | Il **Visualizzatore oggetti** enumera i riferimenti. | S | Il **Visualizzatore oggetti** ottiene automaticamente l'elenco di riferimenti negli SDK e li enumera. | N | |

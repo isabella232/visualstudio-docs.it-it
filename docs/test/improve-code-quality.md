@@ -1,6 +1,6 @@
 ---
 title: Strumenti di test
-description: Informazioni su Visual Studio strumenti di test che consentono all'utente e al team di sviluppare e sostenere standard elevati di eccellenza del codice.
+description: Informazioni su Visual Studio strumenti di test per aiutare l'utente e il team a sviluppare e sostenere standard elevati di eccellenza del codice.
 ms.custom: SEO-VS-2020
 ms.date: 03/16/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 344418a1943f9225d5422923b044d04aa6ac4e955060fe2aefa10c27ee2dcfbe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7cfb71071efab7e119c04d32f3362e00add4bdc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121227206"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148519"
 ---
-# <a name="first-look-at-testing-tools-in-visual-studio"></a>Prima di tutto esaminare gli strumenti di test in Visual Studio
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>Prima di tutto, esaminare gli strumenti di test in Visual Studio
 
 Gli strumenti di test di Visual Studio consentono allo sviluppatore e al team di creare e gestire standard di eccellenza del codice elevati.
 
@@ -53,7 +53,7 @@ Visual Studio è anche estendibile e consente l'uso di adattatori di unit test d
 [Live Unit Testing](../test/live-unit-testing.md) consente di eseguire automaticamente unit test in background e di visualizzare graficamente i risultati di code coverage e test nell'editor del codice di Visual Studio.
 
 > [!NOTE]
-> Live Unit Testing è disponibile solo Enterprise edizione ed è supportato solo per il codice .NET.
+> Gli unit test live sono disponibili solo Enterprise edizione ed è supportato solo per il codice .NET.
 
 ## <a name="intellitest"></a>IntelliTest
 
@@ -73,7 +73,7 @@ IntelliTest genera automaticamente unit test e dati di test per il codice gestit
 [Code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) determina la percentuale di codice del progetto che viene effettivamente testata dai test codificati come ad esempio gli unit test. Per una protezione efficace dai bug, i test devono analizzare o "coprire" gran parte del codice.
 
 > [!NOTE]
-> Il code coverage è disponibile solo Enterprise edizione.
+> Il code coverage è disponibile solo in Enterprise edizione.
 
 L'analisi di code coverage può essere applicata sia al codice gestito che a quello non gestito (nativo).
 
@@ -88,7 +88,7 @@ Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando E
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) consente di isolare il codice che si sta testando sostituendo altre parti dell'applicazione con stub o shim.
 
 > [!NOTE]
-> Microsoft Fakes sono disponibili solo in Enterprise edition ed è supportata solo per il codice .NET.
+> Microsoft Fakes sono disponibili solo in Enterprise edition ed è supportato solo per il codice .NET.
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Test dell'interfaccia utente con interfaccia utente codificata e Selenium
 

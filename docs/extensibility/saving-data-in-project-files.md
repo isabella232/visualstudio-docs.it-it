@@ -15,23 +15,23 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c0e96007303ee3bdd95f11ae6be784bd95804022fa1e1fb06458ba64ba42184
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4e215954edfafa1463739431e0b422ae7521ab35
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158385"
 ---
 # <a name="save-data-in-project-files"></a>Salvare i dati nei file di progetto
 Un sottotipo di progetto può salvare e recuperare dati specifici del sottotipo nel file di progetto. Managed Package Framework (MPF) fornisce due interfacce per eseguire questa attività:
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>L'interfaccia consente di accedere ai valori delle proprietà **MSBuild** sezione del file di progetto. I metodi forniti da possono essere chiamati da qualsiasi utente ogni volta che l'utente deve <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> caricare o salvare i dati correlati alla compilazione.
 
-- Viene usato per rendere persistenti i dati non <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> correlati alla compilazione nel codice XML in formato libero. I metodi forniti da vengono chiamati da ogni volta che è necessario rendere persistenti i dati non correlati alla compilazione <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nel file di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto.
+- l'oggetto viene usato per rendere persistenti i dati <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> non correlati alla compilazione nel codice XML in formato libero. I metodi forniti da vengono chiamati da ogni volta che è necessario rendere persistenti i dati non correlati alla compilazione <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nel file di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto.
 
-  Per altre informazioni su come rendere persistenti i dati correlati alla compilazione e non alla compilazione, vedere Rendere persistenti i dati [nel file MSBuild progetto](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).
+  Per altre informazioni su come rendere persistenti i dati correlati alla compilazione e non alla compilazione, vedere Rendere persistenti i dati nel [file MSBuild progetto](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).
 
-## <a name="save-and-retrieve-build-related-data"></a>Salvare e recuperare dati correlati alla compilazione
+## <a name="save-and-retrieve-build-related-data"></a>Salvare e recuperare i dati correlati alla compilazione
 
 ### <a name="to-save-a-build-related-data-in-the-project-file"></a>Per salvare i dati correlati alla compilazione nel file di progetto
 

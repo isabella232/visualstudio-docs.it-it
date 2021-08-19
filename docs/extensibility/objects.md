@@ -1,6 +1,6 @@
 ---
 title: Oggetti | Microsoft Docs
-description: Negli articoli di questa sezione vengono fornite informazioni di riferimento sugli oggetti utilizzati per creare un'istanza dell'editor di testo principale in Visual Studio SDK.
+description: Gli articoli di questa sezione forniscono informazioni di riferimento sugli oggetti usati per creare un'istanza dell'editor di testo principale in Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,26 +10,27 @@ ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: dba3e410934211e72599a30fff02f875c288c33c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: af3a945af061674fd4bd44a312cbaf48b8d0cc1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090408"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158528"
 ---
 # <a name="objects"></a>Oggetti
-Nelle informazioni di riferimento seguenti vengono illustrati gli oggetti utilizzati per creare un'istanza dell'editor di testo principale.
+Le informazioni di riferimento seguenti illustrano gli oggetti usati per creare un'istanza dell'editor di testo principale.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Oggetto oggetto VsCodeWindow.](../extensibility/vscodewindow-object.md) Descrive l'oggetto finestra del codice, una finestra di documento specializzata che può racchiudere una o più visualizzazioni di testo.
+- [Oggetto VSCodeWindow](../extensibility/vscodewindow-object.md) Descrive l'oggetto finestra del codice, una finestra di documento specializzata che può includere una o più visualizzazioni di testo.
 
-- [Oggetto VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) Descrive l'oggetto Gestione finestre del codice implementato dal servizio di linguaggio ed è responsabile della gestione delle aree di controllo.
+- [Oggetto VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) Descrive l'oggetto di gestione della finestra del codice implementato dal servizio di linguaggio ed è responsabile della gestione delle aree di controllo.
 
-- [Oggetto oggetto VsTextBuffer](../extensibility/vstextbuffer-object.md) Descrive l'oggetto buffer di testo, che rappresenta un flusso di testo Unicode, i dati per un file.
+- [Oggetto VSTextBuffer](../extensibility/vstextbuffer-object.md) Descrive l'oggetto buffer di testo, che rappresenta un flusso di testo Unicode, i dati per un file.
 
-- [Oggetto oggetto VsTextView](../extensibility/vstextview-object.md) Viene descritta la visualizzazione di testo, una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo.
+- [Oggetto VSTextView](../extensibility/vstextview-object.md) Descrive la visualizzazione testo, una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Riferimenti per Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) Viene presentato un elenco di argomenti di riferimento.
+- [Visual Studio sdk di riferimento](../extensibility/visual-studio-sdk-reference.md) Presenta un elenco di argomenti di riferimento.
