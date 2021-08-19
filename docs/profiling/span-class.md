@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a1cc9c68785914f23fbb75391b2d7f6b9b9fafcf4c1da9bba4b2b38d1ac305f1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 635904a3e506db18d0a161eeb7fdf1474e0b7d23
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410268"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157306"
 ---
 # <a name="span-class"></a>Classe span
 Definisce una fase dell'applicazione.

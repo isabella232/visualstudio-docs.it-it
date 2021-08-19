@@ -1,6 +1,6 @@
 ---
 title: API del test delle prestazioni Web
-description: Informazioni sull'API del test delle prestazioni Web, che supporta test delle prestazioni Web codificati, plug-in di test, plug-in di richiesta, richieste e regole di estrazione/convalida.
+description: Informazioni sull'API test prestazioni Web, che supporta test delle prestazioni Web codificati, plug-in di test, plug-in di richiesta, richieste e regole di estrazione/convalida.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +11,13 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: f2afc1ab325fab8da6bdaba5650ae06d9cfcce14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: ba9eccbfba9bd965969f426714eab51289c7e1fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969230"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139959"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Procedura: Usare l'API del test delle prestazioni Web
 
@@ -53,7 +54,7 @@ ms.locfileid: "99969230"
 
          Viene visualizzata la finestra di dialogo **Aggiungi plug-in test Web**.
 
-    2. In **Seleziona un plug-in selezionare** la classe del plug-in del test delle prestazioni Web.
+    2. In **Selezionare un plug-in** selezionare la classe plug-in del test delle prestazioni Web.
 
     3. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
@@ -70,5 +71,5 @@ ms.locfileid: "99969230"
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Procedura: usare l'API del test di carico](../test/how-to-use-the-load-test-api.md)
-- [Procedura: creazione di un plug-in del test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Procedura: Usare l'API del test di carico](../test/how-to-use-the-load-test-api.md)
+- [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)

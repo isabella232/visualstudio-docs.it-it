@@ -1,6 +1,6 @@
 ---
 title: Override delle impostazioni ToolsVersion | Microsoft Docs
-description: Informazioni su diversi modi per modificare o eseguire l'override del valore del set MSBuild strumenti per progetti e soluzioni.
+description: Informazioni su diversi modi in cui è possibile modificare o eseguire l'override del valore del set MSBuild strumenti per progetti e soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 18b44ce11ec7e20dcf109f2b66a72d61b2a981dd08adb35349ed833b1b8925f0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8bcb1307714b33e87a886cef18dd97e3d6000e0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370034"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108422"
 ---
 # <a name="override-toolsversion-settings"></a>Override delle impostazioni ToolsVersion
 

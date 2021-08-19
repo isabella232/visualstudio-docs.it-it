@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 203a9481ed6a8d78784335420a3eceb641f29250c8f789c25e60cbb9d8d65c53
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5e587682bd8e4257d14c0c6602cf45255effeede
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121230066"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054366"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 

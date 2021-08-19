@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6374a124e20ea72704c117d7acb174354755ec7d3520eeb4fd4a92bbc20206c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 18e227775be9885595855ec6230b6cf8521df675
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410190"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157033"
 ---
 # <a name="thread-details-view---contention-data"></a>Visualizzazione Dettagli thread: dati sui conflitti
 La visualizzazione Dettagli thread presenta un grafico della sequenza temporale degli eventi di blocco nel thread selezionato di un'esecuzione della profilatura causati da conflitti relativi alle risorse. Si verifica un evento di blocco quando il thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso a una risorsa.

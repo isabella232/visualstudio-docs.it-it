@@ -11,14 +11,15 @@ ms.assetid: 050ec02f-b7b3-48fc-8e35-58bdf7d938b0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 385fc875b7a2ce3b99a05bea9827c8b5f61fe3fa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 26a5c1e979eb5ca0a0dcb18f87bacdc86bd915bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147198"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113531"
 ---
 # <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
 Recupera il nome del simbolo.
@@ -34,13 +35,13 @@ HRESULT get_name (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il nome del simbolo.
+[out] Restituisce il nome del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="example"></a>Esempio
 

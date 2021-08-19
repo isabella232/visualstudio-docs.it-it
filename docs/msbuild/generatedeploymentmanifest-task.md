@@ -1,6 +1,6 @@
 ---
 title: Attività GenerateDeploymentManifest | Microsoft Docs
-description: Informazioni su come usare l MSBuild'attività GenerateDeploymentManifest per generare un manifesto ClickOnce distribuzione.
+description: Informazioni su come usare l MSBuild generateDeploymentManifest per generare un manifesto ClickOnce distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b40841507812d7d2892a57f24995f580c8be9a3e79c52286835336f462390f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5d25f20394217b8910a4036841a4e53dd60b12a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121427834"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137151"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (attività)
 

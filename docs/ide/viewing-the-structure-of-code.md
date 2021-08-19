@@ -1,6 +1,6 @@
 ---
 title: Usare le finestre degli strumenti per visualizzare la struttura del codice
-description: Informazioni su come usare le finestre degli strumenti Visualizzazione classi, Gerarchia di chiamate, Visualizzatore oggetti e Definizione codice (solo C++) per esaminare le classi e i relativi membri in Visual Studio.
+description: Informazioni su come usare le finestre degli strumenti Visualizzazione classi, Gerarchia di chiamata, Visualizzatore oggetti e Definizione codice (solo C++) per esaminare le classi e i relativi membri in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 09/19/2019
 ms.topic: reference
@@ -27,12 +27,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d37766aa3ac8dcb72ee4f7dc2e3dd79fd37df38c36dc5a9e159dfbf848acde9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cce4607a1721927681be35b984d08b74aa16f581
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093996"
 ---
 # <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>Visualizzare la struttura del codice usando finestre degli strumenti diverse
 
@@ -80,14 +80,14 @@ Il **Visualizzazione classi Impostazioni** sulla barra degli strumenti ha le imp
 
 ### <a name="class-view-shortcut-menu"></a>Menu di scelta rapida di Visualizzazione classi
 
-Il menu di scelta rapida (o fare clic con il pulsante destro del mouse) **in** Visualizzazione classi può contenere i comandi seguenti, a seconda del tipo di progetto selezionato:
+Il menu di scelta rapida (o il menu di scelta rapida) in **Visualizzazione classi** può contenere i comandi seguenti, a seconda del tipo di progetto selezionato:
 
 |Nome|Descrizione|
 |-|-|
 |**Vai a definizione**|Trova la definizione dell'elemento nel codice sorgente o nel **Visualizzatore oggetti**, se l'elemento non è definito nel progetto aperto.|
 |**Sfoglia definizione**|Visualizza l'elemento selezionato nel **Visualizzatore oggetti**.|
 |**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca**.|
-|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il **pulsante Cancella trova** (**X**) accanto alla **casella** Trova .|
+|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il **pulsante Cancella ricerca** (**X**) accanto alla **casella** Trova.|
 |**Copia**|Copia il nome completo dell'elemento.|
 |**Ordina alfabeticamente**|Elenca tipi e membri in ordine alfabetico per nome.|
 |**Ordina per tipo di membro**|Elenca i tipi e membri nell'ordine in base al tipo (in cui le classi precedono le interfacce, le interfacce precedono i delegati e i metodi precedono le proprietà).|
@@ -151,7 +151,7 @@ Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è pos
 
 ### <a name="object-browser-settings"></a>Impostazioni di Visualizzatore oggetti
 
-Usando il **visualizzatore oggetti Impostazioni** sulla barra degli strumenti, è possibile specificare una delle visualizzazioni seguenti:
+Usando il pulsante **Visualizzatore Impostazioni** sulla barra degli strumenti, è possibile specificare una delle visualizzazioni seguenti:
 
 |Nome|Descrizione|
 |-|-|
@@ -206,7 +206,7 @@ Il menu di scelta rapida (o fare clic con il pulsante destro del mouse) nella **
 |**Generare Graph di file di inclusione**||
 |**Visualizza definizione**||
 |**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca**.|
-|**Vai a dichiarazione**||
+|**Vai alla dichiarazione**||
 |**Trova tutti i riferimenti**|Consente di trovare i riferimenti al tipo o membro nella soluzione.|
 |**Visualizza gerarchia delle chiamate**|Visualizza il metodo nella finestra **Gerarchia di chiamata**.|
 |**Attiva/disattiva file di codice/intestazione**||

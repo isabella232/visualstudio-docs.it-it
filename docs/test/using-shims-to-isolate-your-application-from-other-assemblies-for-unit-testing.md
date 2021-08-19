@@ -11,18 +11,18 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: fb91f2e037b13e73a6be0193e54f54d711dadddc1897946ca72e92609399f9b7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9bba159da05ad3e1c893c3fc241c44cd1c6de8d1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394966"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053976"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli sms per isolare l'app per gli unit test
 
 **I tipi Shim** sono una delle due tecnologie che Microsoft Fakes Framework usa per isolare i componenti sotto test dall'ambiente. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. In questo modo è più semplice scrivere i test.
 
-Usare *gli sms* per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare i componenti della soluzione l'uno dall'altro, usare *stub*.
+Usare *s shims* per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare i componenti della soluzione l'uno dall'altro, usare *stub*.
 
 Per una panoramica e indicazioni di "avvio rapido", vedere [Isolare](../test/isolating-code-under-test-with-microsoft-fakes.md)il codice sotto test con Microsoft Fakes .
 
@@ -31,7 +31,7 @@ Per una panoramica e indicazioni di "avvio rapido", vedere [Isolare](../test/iso
 - Visual Studio Enterprise
 - Un progetto .NET Framework
 ::: moniker range=">=vs-2019"
-- .NET Core, .NET 5.0 e il progetto di tipo SDK supportano l'anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti di tipo .NET Core e SDK.](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+- .NET Core, .NET 5.0 e i progetti di tipo SDK supportano l'anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti di tipo .NET Core e SDK.](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Esempio: il bug dell'anno 2000
@@ -67,22 +67,22 @@ using (ShimsContext.Create()) {
 
 ## <a name="how-to-use-shims"></a>Come utilizzare gli shim
 
-Aggiungere prima di tutto un Fakes assembly:
+Aggiungere prima di tutto un assembly Fakes seguente:
 
 1. In **Esplora soluzioni**, 
     - Per un modello .NET Framework Project precedente (stile non SDK), espandere il unit test riferimenti **del** progetto.
     ::: moniker range=">=vs-2019"
-    - Per un progetto di tipo SDK che ha come destinazione .NET Framework, .NET Core  o .NET 5.0, espandere il nodo Dipendenze per trovare l'assembly da fingere in **Assembly**, **Progetti** o **Pacchetti**.
+    - Per un progetto di tipo SDK che ha come destinazione .NET Framework, .NET Core o .NET 5.0, espandere il nodo **Dipendenze** per trovare l'assembly da fingere in **Assembly**, **Progetti** o **Pacchetti**.
     ::: moniker-end
-    - Se si lavora in Visual Basic, selezionare **Mostra** tutti i file nella barra degli **strumenti** Esplora soluzioni per visualizzare il **nodo** Riferimenti.
+    - Se si sta lavorando in Visual Basic, selezionare **Mostra** tutti i file nella barra **degli strumenti** Esplora soluzioni per visualizzare il **nodo** Riferimenti.
 
-2. Selezionare l'assembly che contiene le definizioni di classe per cui si desidera creare sms. Ad esempio, se si vuole eseguire lo shim **DateTime,** **selezionareSystem.dll**.
+2. Selezionare l'assembly che contiene le definizioni di classe per cui si desidera creare sms. Ad esempio, se si vuole eseguire lo shim **DateTime,** selezionare **System.dll**.
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
 ### <a name="use-shimscontext"></a>Utilizzare ShimsContext
 
-Quando si usano tipi shim in un framework unit test, eseguire il wrapping del codice di test in un oggetto per controllare `ShimsContext` la durata degli shim. In caso contrario, gli s shims durerebbero fino all'arresto di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
+Quando si usano tipi shim in un framework unit test, eseguire il wrapping del codice di test in un oggetto per controllare la `ShimsContext` durata degli shim. In caso contrario, gli s shims durerebbero fino all'arresto di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
 
 ```csharp
 //unit test code
@@ -509,7 +509,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Per shim <xref:System.Environment?displayProperty=fullName> , aggiungere il contenuto seguente al file mscorlib.fakes dopo l'elemento **Assembly:**
+Per shim <xref:System.Environment?displayProperty=fullName> aggiungere il contenuto seguente al file mscorlib.fakes dopo l'elemento **Assembly:**
 
 ```xml
 <ShimGeneration>

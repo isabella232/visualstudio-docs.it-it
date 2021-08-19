@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 402e6df722cb0c5e3bceb88614e0b137e3ef5e488378c357b3788a441e59baa4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06317f9249371076ddc306ac5a38e3fe764996f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432930"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087262"
 ---
 # <a name="servers-visual-studio-sdk"></a>Server (Visual Studio SDK)
 Nell'architettura del debugger, un *server*:

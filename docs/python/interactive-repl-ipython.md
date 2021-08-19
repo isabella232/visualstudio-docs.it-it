@@ -11,18 +11,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8551d609fda85d94356528be645aff01a3a8cfe124884d9700bdd47a9cec44de
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a03216c2fbbc83af1f4a995b43ed4576716e1eb9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367843"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140349"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usare IPython nella finestra interattiva
 
 La finestra **interattiva** di Visual Studio in modalità IPython costituisce un ambiente di sviluppo interattivo avanzato e al contempo semplice da usare che include funzionalità di elaborazione parallela interattiva. Questo articolo illustra l'uso di IPython nella finestra **interattiva** di Visual Studio, in cui sono anche disponibili tutte le funzionalità della [finestra interattiva](python-interactive-repl-in-visual-studio.md) normale.
 
-Per questa procedura dettagliata, è necessario avere installato IPython, numpy e matplotlib. Se si usa Anaconda, queste librerie sono già installate. Nella parte restante della procedura dettagliata si presuppone l'uso di Anaconda.
+Per questa procedura dettagliata, è necessario aver installato IPython, numpy e matplotlib. Se si usa Anaconda, queste librerie sono già installate. Il resto della procedura dettagliata presuppone l'uso di Anaconda.
 
 > [!Note]
 > IronPython non supporta IPython, anche se è possibile selezionarlo nel modulo delle **opzioni interattive**. Per altre informazioni, vedere la pagina relativa alla [richiesta di funzionalità](https://github.com/Microsoft/PTVS/issues/84).
@@ -33,7 +33,7 @@ Per questa procedura dettagliata, è necessario avere installato IPython, numpy 
 
 3. Selezionare la scheda **Panoramica** e quindi **Usa la modalità interattiva IPython.** In Visual Studio 2015 selezionare **Configure interactive options** (Configura opzioni interattive) per aprire la finestra di dialogo **Opzioni** e quindi impostare **Modalità interattiva** su **IPython** e selezionare **OK**.
 
-4. Selezionare **Apri finestra interattiva** per visualizzare la **finestra** interattiva in modalità IPython. Se la modalità interattiva è stata appena modificata può essere necessario reimpostare la finestra. Se viene visualizzato solo un prompt >>> potrebbe anche essere necessario premere **INVIO** in modo da visualizzare un prompt simile a **In [2]**.
+4. Selezionare **Apri finestra interattiva** per visualizzare la finestra **Interattiva** in modalità IPython. Se la modalità interattiva è stata appena modificata può essere necessario reimpostare la finestra. Se viene visualizzato solo un prompt >>> potrebbe anche essere necessario premere **INVIO** in modo da visualizzare un prompt simile a **In [2]**.
 
     ![Finestra interattiva in modalità IPython](media/ipython-repl-03.png)
 
@@ -79,8 +79,8 @@ Per questa procedura dettagliata, è necessario avere installato IPython, numpy 
 
 8. Per visualizzare i grafici all'esterno della finestra **interattiva**, eseguire il codice invece di usare il comando **Debug** > **Avvia senza eseguire debug**.
 
-IPython offre molte altre funzionalità utili, ad esempio l'escape nella shell di sistema, la sostituzione delle variabili, l'acquisizione dell'output e così via. Per altre [informazioni, vedere la documentazione di IPython.](https://ipython.org/documentation.html)
+IPython offre molte altre funzionalità utili, ad esempio l'escape alla shell di sistema, la sostituzione delle variabili, l'acquisizione dell'output e così via. Per altre informazioni, vedere la documentazione [di IPython.](https://ipython.org/documentation.html)
 
 ## <a name="see-also"></a>Vedi anche
 
-- Il [Data Science Virtual Machine Azure](/azure/machine-learning/data-science-virtual-machine/overview) è preconfigurato per l'esecuzione di jupyter notebook insieme a un'ampia gamma di altri strumenti data science distribuzione.
+- Azure [Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview) è preconfigurato per l'esecuzione di notebook Jupyter insieme a un'ampia gamma di data science strumenti.

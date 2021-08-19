@@ -1,6 +1,6 @@
 ---
-title: 'Procedura dettagliata: struttura | Microsoft Docs'
-description: Informazioni su come definire e visualizzare le aree della struttura nel contesto di un servizio di linguaggio o per l'estensione del nome file e il tipo di contenuto.
+title: 'Procedura dettagliata: Struttura dei | Microsoft Docs'
+description: Informazioni su come definire e visualizzare aree strutturate nel contesto di un servizio di linguaggio o per l'estensione di file e il tipo di contenuto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,40 +10,41 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 7bf4c0cc8757ea4f034da2ac17d6c76971f86305
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 987f45f32e5fda2b1d8dfa2db1036c70288a2d66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217229"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078518"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: definizione della struttura
-Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, definendo i tipi di aree di testo che si desidera espandere o comprimere. È possibile definire le aree nel contesto di un servizio di linguaggio oppure definire l'estensione del nome di file e il tipo di contenuto e applicare la definizione di area solo a tale tipo oppure applicare le definizioni delle aree a un tipo di contenuto esistente, ad esempio "testo". Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.
+Configurare funzionalità basate sulla lingua, ad esempio la struttura, definendo i tipi di aree di testo da espandere o comprimere. È possibile definire aree nel contesto di un servizio di linguaggio o definire un'estensione di file e un tipo di contenuto personalizzati e applicare la definizione dell'area solo a tale tipo oppure applicare le definizioni di area a un tipo di contenuto esistente, ad esempio "text". Questa procedura dettagliata illustra come definire e visualizzare aree strutturate.
 
 ## <a name="prerequisites"></a>Prerequisiti
- A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
-## <a name="create-a-managed-extensibility-framework-mef-project"></a>Creare un progetto di Managed Extensibility Framework (MEF)
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Creare un Managed Extensibility Framework (MEF)
 
 ### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF
 
 1. Creare un progetto VSIX. Assegnare alla soluzione il nome `OutlineRegionTest`.
 
-2. Aggiungere un modello di elemento classificatore editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Aggiungere un modello di elemento Editor Classifier al progetto. Per altre informazioni, vedere [Creare un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
 3. Eliminare i file di classe esistenti.
 
-## <a name="implement-an-outlining-tagger"></a>Implementare un codificatore della struttura
- Le aree della struttura sono contrassegnate da un tipo di tag ( <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> ). Questo tag fornisce il comportamento della struttura standard. È possibile espandere o comprimere l'area delineata. L'area delineata è contrassegnata da un segno di addizione ( **+** ) se è compresso o un segno meno ( **-** ) se è espanso e l'area espansa è delimitata da una linea verticale.
+## <a name="implement-an-outlining-tagger"></a>Implementare un tagger di struttura
+ Le aree di struttura sono contrassegnate da un tipo di tag ( <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> ). Questo tag fornisce il comportamento di struttura standard. L'area strutturata può essere espansa o compressa. L'area evidenziata è contrassegnata da un segno più ( ) se è compressa o da un segno meno ( ) se è espansa e l'area espansa è delimitata da una linea **+** **-** verticale.
 
- Nei passaggi seguenti viene illustrato come definire un tag che crea aree della struttura per tutte le aree delimitate dalle parentesi quadre (**[**,**]**).
+ La procedura seguente illustra come definire un tagger che crea aree struttura per tutte le aree delimitate dalle parentesi quadre (**[**,**]**).
 
-### <a name="to-implement-an-outlining-tagger"></a>Per implementare un codificatore della struttura
+### <a name="to-implement-an-outlining-tagger"></a>Per implementare un tagger di struttura
 
 1. Aggiungere un file di classe e assegnargli il nome `OutliningTagger`.
 
@@ -52,22 +53,22 @@ Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, def
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet1":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet1":::
 
-3. Creare una classe denominata `OutliningTagger` e implementarla <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> :
+3. Creare una classe denominata `OutliningTagger` e fare in modo che implementi <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> :
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet2":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet2":::
 
-4. Aggiungere alcuni campi per tenere traccia del buffer di testo e dello snapshot e per accumulare i set di righe che devono essere contrassegnati come aree della struttura. Questo codice include un elenco di oggetti Region (da definire in seguito) che rappresentano le aree della struttura.
+4. Aggiungere alcuni campi per tenere traccia del buffer di testo e dello snapshot e per accumulare i set di righe che devono essere contrassegnate come aree di struttura. Questo codice include un elenco di oggetti Region (da definire in un secondo momento) che rappresentano le aree di struttura.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet3":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet3":::
 
-5. Aggiungere un costruttore di tag che Inizializza i campi, analizza il buffer e aggiunge un gestore eventi all' <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> evento.
+5. Aggiungere un costruttore di tagger che inizializza i campi, analizza il buffer e aggiunge un gestore eventi <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> all'evento .
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet4":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet4":::
 
-6. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metodo, che crea un'istanza degli intervalli di tag. In questo esempio si presuppone che gli intervalli nell'oggetto <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passato al metodo siano contigui, sebbene non sia sempre il caso. Questo metodo crea un'istanza di un nuovo intervallo di tag per ognuna delle aree della struttura.
+6. Implementare <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> il metodo , che crea un'istanza degli intervalli di tag. In questo esempio si presuppone che gli intervalli nell'oggetto passato al metodo siano contigui, anche se potrebbe <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> non essere sempre il caso. Questo metodo crea un'istanza di un nuovo intervallo di tag per ognuna delle aree di struttura.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet5":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet5":::
@@ -77,42 +78,42 @@ Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, def
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet6":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet6":::
 
-8. Aggiungere un `BufferChanged` gestore eventi che risponde agli eventi analizzando <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> il buffer di testo.
+8. Aggiungere un `BufferChanged` gestore eventi che risponde agli eventi <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> analizzando il buffer di testo.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet7":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet7":::
 
-9. Aggiungere un metodo che analizza il buffer. L'esempio riportato di seguito è a solo illustrazione. Il buffer viene analizzato in modo sincrono nelle aree della struttura nidificata.
+9. Aggiungere un metodo che analizza il buffer. L'esempio qui riportato è solo a scopo illustrativo. Analizza in modo sincrono il buffer in aree struttura nidificate.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet8":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet8":::
 
-10. Il metodo helper seguente ottiene un valore integer che rappresenta il livello della struttura, in modo che 1 sia la coppia di parentesi graffa più a sinistra.
+10. Il metodo helper seguente ottiene un numero intero che rappresenta il livello della struttura, in modo che 1 sia la coppia di parentesi graffe più a sinistra.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet9":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet9":::
 
-11. Il metodo helper seguente converte un'area (definita più avanti in questo articolo) in un elemento SnapshotSpan.
+11. Il metodo helper seguente converte un'area (definita più avanti in questo articolo) in snapshotSpan.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet10":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet10":::
 
-12. Il codice seguente è a solo illustrazione. Definisce una classe PartialRegion che contiene il numero di riga e l'offset dell'inizio di un'area della struttura e un riferimento all'area padre (se presente). Questo codice consente al parser di configurare aree della struttura nidificata. Una classe Region derivata contiene un riferimento al numero di riga alla fine di un'area della struttura.
+12. Il codice seguente è solo a scopo illustrativo. Definisce una classe PartialRegion che contiene il numero di riga e l'offset dell'inizio di un'area di struttura e un riferimento all'area padre (se presente). Questo codice consente al parser di configurare aree struttura nidificate. Una classe Region derivata contiene un riferimento al numero di riga della fine di un'area di struttura.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet11":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet11":::
 
-## <a name="implement-a-tagger-provider"></a>Implementare un provider di tag
- Esporta un provider di tag per il tag. Il provider del tag crea un oggetto `OutliningTagger` per un buffer del tipo di contenuto "Text"; in caso contrario, restituisce `OutliningTagger` se il buffer ne contiene già uno.
+## <a name="implement-a-tagger-provider"></a>Implementare un provider di tagger
+ Esportare un provider di tagger per il tagger. Il provider di tag crea un oggetto per un buffer del tipo di contenuto "text", altrimenti restituisce un se il `OutliningTagger` buffer ne ha già `OutliningTagger` uno.
 
 ### <a name="to-implement-a-tagger-provider"></a>Per implementare un provider di tag
 
-1. Creare una classe denominata `OutliningTaggerProvider` che implementi <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> ed esporti gli attributi ContentType e TagType.
+1. Creare una classe denominata `OutliningTaggerProvider` che implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> e esportarla con gli attributi ContentType e TagType.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet12":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet12":::
 
-2. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> metodo aggiungendo un oggetto `OutliningTagger` alle proprietà del buffer.
+2. Implementare <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> il metodo aggiungendo un oggetto alle proprietà del `OutliningTagger` buffer.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs" id="Snippet13":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb" id="Snippet13":::
@@ -126,7 +127,7 @@ Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, def
 
 2. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
 
-3. Creare un file di testo. Digitare il testo che include le parentesi quadre di apertura e di chiusura.
+3. Creare un file di testo. Digitare un testo che includa sia le parentesi di apertura che le parentesi di chiusura.
 
     ```
     [
@@ -134,7 +135,7 @@ Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, def
     ]
     ```
 
-4. Deve essere presente un'area della struttura che include entrambe le parentesi quadre. Si dovrebbe essere in grado di fare clic sul segno meno a sinistra della parentesi aperta per comprimere l'area della struttura. Quando l'area è compressa, il simbolo dei puntini di sospensione (*...*) viene visualizzato a sinistra dell'area compressa e viene visualizzato un popup contenente il **testo al passaggio del mouse** quando si sposta il puntatore sui puntini di sospensione.
+4. Deve essere presente un'area di struttura che include entrambe le parentesi quadre. Dovrebbe essere possibile fare clic sul segno meno a sinistra della parentesi aperta per comprimere l'area di struttura. Quando l'area è compressa, il simbolo dei puntini di sospensione (*...*) dovrebbe  essere visualizzato a sinistra dell'area compressa e quando si sposta il puntatore del mouse sui puntini di sospensione dovrebbe essere visualizzato un popup contenente il testo al passaggio del mouse.
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+- [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

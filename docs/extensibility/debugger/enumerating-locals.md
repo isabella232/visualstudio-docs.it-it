@@ -1,6 +1,6 @@
 ---
 title: Enumerazione delle variabili locali | Microsoft Docs
-description: Informazioni dettagliate su come Visual Studio IDebugProperty2::EnumChildren per popolare la finestra Variabili locali.
+description: Informazioni dettagliate su come Visual Studio usa IDebugProperty2::EnumChildren per popolare la finestra Variabili locali.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,20 +14,20 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01392932831ab7ba5fec867a427b4a2c8868070abdda93de53593e9c3f27beb2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f301330cb586ff838efb4fe5278b0158a8f9129a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378220"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057915"
 ---
-# <a name="enumerate-locals"></a>Enumerare le variabili locali
+# <a name="enumerate-locals"></a>Enumerare variabili locali
 > [!IMPORTANT]
-> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015 questa modalità di implementazione degli analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
-Quando Visual Studio è pronto per popolare  la finestra Variabili locali, chiama [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) sull'oggetto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) restituito da [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (vedere [Implementazione di GetMethodProperty).](../../extensibility/debugger/implementing-getmethodproperty.md) `IDebugProperty2::EnumChildren`restituisce un [oggetto IEnumDebugPropertyInfo2.](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
+Quando Visual Studio è pronto per popolare  la finestra Variabili locali, chiama [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) sull'oggetto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) restituito da [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (vedere Implementazione di [GetMethodProperty).](../../extensibility/debugger/implementing-getmethodproperty.md) `IDebugProperty2::EnumChildren`restituisce un [oggetto IEnumDebugPropertyInfo2.](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
 
-`IDebugProperty2::EnumChildren`L'implementazione esegue le attività seguenti:
+`IDebugProperty2::EnumChildren`L'implementazione di esegue le attività seguenti:
 
 1. Garantisce che rappresenti un metodo.
 
@@ -44,7 +44,7 @@ Quando Visual Studio è pronto per popolare  la finestra Variabili locali, chiam
 4. Restituisce `IEnumDebugProperty2Info2` l'interfaccia `CEnumPropertyInfo` dall'oggetto .
 
 ## <a name="managed-code"></a>Codice gestito
-In questo esempio viene illustrata `IDebugProperty2::EnumChildren` un'implementazione di nel codice gestito.
+Questo esempio illustra un'implementazione `IDebugProperty2::EnumChildren` di nel codice gestito.
 
 ```csharp
 namespace EEMC

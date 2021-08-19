@@ -1,6 +1,6 @@
 ---
 title: Panoramica del multitargeting di MSBuild | Microsoft Docs
-description: Informazioni su come usare MSBuild per compilare un'applicazione da eseguire in una delle diverse versioni del .NET Framework e in una qualsiasi delle diverse piattaforme di sistema.
+description: Informazioni su come usare MSBuild compilare un'applicazione da eseguire in una delle diverse versioni del .NET Framework e in una delle diverse piattaforme di sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a80329cf3c6a5f86336dedfaef87c94ac8293a5c1be50319f8e0876c4f665324
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a71c3c774e512d012b1f1bbd99a8e00aa1304cda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397566"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136846"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Panoramica del multitargeting di MSBuild
 
@@ -39,7 +39,7 @@ Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualun
 
 ## <a name="target-framework-and-platform"></a>Framework e piattaforma di destinazione
 
- Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  Ad esempio, è possibile scegliere come destinazione un'applicazione .NET Framework 2.0 per l'esecuzione in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  È ad esempio possibile scegliere come destinazione un'applicazione .NET Framework 2.0 per l'esecuzione in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Set di strumenti (ToolsVersion)
 

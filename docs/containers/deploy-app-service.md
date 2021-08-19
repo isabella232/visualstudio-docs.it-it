@@ -9,14 +9,14 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 02/21/2021
 ms.author: ghogen
-ms.openlocfilehash: 8609c0888662a5fb0609da641e1dfb86510b8797deeeb1a79709cd36174d0936
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6dd3a1bf0dd7b40f101f95e74c18dee071b4cfc6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121348250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122162032"
 ---
-# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Distribuire un ASP.NET Core contenitore Servizio app di Azure usando Visual Studio
+# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Distribuire un ASP.NET Core contenitore in Servizio app di Azure usando Visual Studio
 
 Questa esercitazione illustra l'uso di Visual Studio pubblicare l'applicazione Web ASP.NET Core contenitore in un [Servizio app di Azure](/azure/app-service). Servizio app di Azure è un servizio appropriato per un'app Web a contenitore singolo ospitata in Azure.
 
@@ -45,11 +45,11 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 4. Assegnare un nome alla nuova applicazione (o accettare quello predefinito), quindi selezionare **OK**.
 5. Selezionare **Applicazione Web.**
 6. Spuntare la casella di controllo **Abilita Supporto Docker**.
-7. Selezionare il tipo **di contenitore Linux** e fare clic su **OK.** Windows contenitori non sono supportati per la distribuzione in Servizio app di Azure come contenitore.
+7. Selezionare il tipo **di contenitore Linux** e fare clic su **OK.** Windows contenitori non sono supportati per la distribuzione Servizio app di Azure come contenitore.
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. Nella finestra iniziale di Visual Studio scegliere **Crea un nuovo progetto**.
-1. Scegliere **ASP.NET Core App Web** e scegliere **Avanti.**
+1. Scegliere **ASP.NET Core'app Web** e scegliere **Avanti.**
 1. Assegnare un nome alla nuova applicazione (o prendere il valore predefinito) e scegliere **Avanti.**
 1. Scegliere la versione di .NET di destinazione. Se non si è certi, scegliere la versione LTS (Long-Term Support).
 1. Scegliere se si vuole il supporto SSL tramite la casella di controllo **Configura per HTTPS**.
@@ -63,7 +63,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
 1. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Pubblica**.
 1. Nella finestra di dialogo di destinazione di pubblicazione scegliere **Servizio app Linux** o Servizio **app.** Si tratta del sistema operativo che ospiterà il server Web.
-1. È possibile pubblicare solo nel servizio app oppure nel servizio app e nel Registro Azure Container(ACR). Per pubblicare il contenitore in un Registro Azure Container, scegliere **Create new App Service for containers**(Crea nuovo servizio app per contenitori) e fare clic su **Publish (Pubblica).**
+1. È possibile pubblicare solo nel servizio app oppure nel servizio app e nel Registro Azure Container (ACR). Per pubblicare il contenitore in un Registro Azure Container( ACR), scegliere **Create new App Service for containers**(Crea nuovo servizio app per contenitori) e fare clic su **Publish (Pubblica).**
 
    ![Screenshot della finestra di dialogo di pubblicazione](media/deploy-app-service/publish-app-service-linux-1.png)
 
@@ -95,7 +95,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
    ![Screenshot della scheda Destinazione specifica della pubblicazione guidata](media/deploy-app-service/publish-app-service-windows.png)
 
-1. Se non si è connessi all'account Azure giusto con la sottoscrizione che si vuole usare, accedere usando il pulsante in alto a sinistra nella **finestra Pubblica.**
+1. Se non è stato eseguito l'accesso all'account Azure giusto con la sottoscrizione che si vuole usare, accedere usando il pulsante in alto a sinistra nella **finestra Pubblica.**
 
 1. È possibile usare un servizio app esistente o crearne uno nuovo facendo clic sul collegamento **Create new Servizio app di Azure (Crea nuovo** servizio). Trovare il servizio app esistente nella visualizzazione albero espandendo  il gruppo di risorse oppure modificare l'impostazione Visualizza in **Tipo** di risorsa per ordinare in base al tipo.
 
@@ -109,7 +109,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
    ![Screenshot che mostra le opzioni del piano di hosting](media/deploy-app-service/hosting-plan.png)
 
-   È possibile visualizzare i dettagli su queste opzioni nella Servizio app di Azure [panoramica del piano.](/azure/app-service/overview-hosting-plans)
+   È possibile visualizzare i dettagli su queste opzioni nella [Servizio app di Azure panoramica del piano.](/azure/app-service/overview-hosting-plans)
 
 1. Dopo aver selezionato o creato queste risorse, scegliere **Fine.** Il contenitore viene distribuito in Azure nel gruppo di risorse e nel servizio app selezionato. Questo processo richiede un po' di tempo. Al termine, nella scheda **Pubblica** vengono visualizzate informazioni sugli elementi pubblicati, incluso l'URL del sito.
 

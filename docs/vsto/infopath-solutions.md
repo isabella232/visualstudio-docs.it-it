@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: aafd260434a80d84c192c4c84b5435de4f847310a1e87cddf90f20359e8b4b93
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 22d8a0bf0ec927cff6499a8401ce0601add22f02
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394141"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155699"
 ---
 # <a name="infopath-solutions"></a>soluzioni InfoPath
   Visual Studio fornisce modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office InfoPath 2013 e InfoPath 2010. InfoPath non è disponibile in Office 2016.
@@ -38,7 +38,7 @@ ms.locfileid: "121394141"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
- I componenti aggiuntivi VSTO per InfoPath sono simili ai componenti aggiuntivi VSTO per altre applicazioni di Microsoft Office. Questi tipi di soluzioni sono costituiti da un assembly caricato dall'applicazione. Gli utenti finali possono avere accesso alle funzionalità di questo assembly indipendentemente dal modulo o dal modello di modulo aperto. Per altre informazioni VSTO componenti aggiuntivi, [](../vsto/getting-started-programming-vsto-add-ins.md) vedere Introduzione alla programmazione VSTO componenti aggiuntivi e Architettura di VSTO [componenti aggiuntivi](../vsto/architecture-of-vsto-add-ins.md).
+ I componenti aggiuntivi VSTO per InfoPath sono simili ai componenti aggiuntivi VSTO per altre applicazioni di Microsoft Office. Questi tipi di soluzioni sono costituiti da un assembly caricato dall'applicazione. Gli utenti finali possono avere accesso alle funzionalità di questo assembly indipendentemente dal modulo o dal modello di modulo aperto. Per altre informazioni VSTO componenti aggiuntivi, vedere [](../vsto/getting-started-programming-vsto-add-ins.md) Introduzione alla programmazione VSTO componenti aggiuntivi e Architettura dei componenti aggiuntivi VSTO [componenti aggiuntivi](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
 > Visual Studio 2015 non include i progetti del modello di modulo InfoPath forniti nelle versioni precedenti di Visual Studio. Non è nemmeno possibile usare Visual Studio 2015 per aprire o modificare un progetto del modello di modulo InfoPath creato in una versione precedente di Visual Studio. Tuttavia, è possibile aprire e modificare un progetto del modello di modulo InfoPath usando Visual Studio Tools for Applications. Per altre informazioni, vedere [Usare VSTO 2008 in InfoPath 2010.](/archive/blogs/infopath/working-with-vsto-2008-projects-in-infopath-2010)
@@ -63,8 +63,8 @@ ms.locfileid: "121394141"
 - [Introduzione alla programmazione VSTO componenti aggiuntivi](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office panoramica dello sviluppo di soluzioni &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Componenti aggiuntivi VSTO programma](../vsto/programming-vsto-add-ins.md)
+- [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Componenti VSTO programma](../vsto/programming-vsto-add-ins.md)
 - [Scrivere codice in Office soluzioni](../vsto/writing-code-in-office-solutions.md)
 - [Office assembly di interoperabilità primari](../vsto/office-primary-interop-assemblies.md)
 - [Office Personalizzazione dell'interfaccia utente](../vsto/office-ui-customization.md)

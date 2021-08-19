@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ad6002dea8a09ffc841b711f0f721ac746163d872ac673c2d344f936a962f1e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e227b830f516077a2b168e0ecb7e3cbec09f7ea1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345036"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161746"
 ---
 # <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 Recupera l'indicatore della compressione di origine utilizzata.
@@ -35,13 +35,13 @@ HRESULT get_sourceCompression (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'indicatore della compressione di origine utilizzata. Il valore zero indica che non è stata usata alcuna compressione di origine.
+[out] Restituisce l'indicatore della compressione di origine utilizzata. Il valore zero indica che non è stata utilizzata alcuna compressione di origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Il valore restituito da questo metodo è specifico del compilatore usato. Ad esempio, un compilatore potrebbe usare Run-Length codifica o compressione in stile Huffman.
+ Il valore restituito da questo metodo è specifico del compilatore usato. Ad esempio, un compilatore potrebbe usare Run-Length codifica o la compressione in stile Huffman.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

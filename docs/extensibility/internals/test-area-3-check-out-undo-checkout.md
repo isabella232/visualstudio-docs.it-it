@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6605d60d44e676b9e9a24025ccc03f18d3305d8827d4c10e440e4cfd097f773b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 96c5940a97fc799393d7830fa5589183afe33fb0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431838"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158788"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Area di test 3: estrarre o annullare l'estrazione
 Questa area di test del plug-in di controllo del codice sorgente illustra la modifica e il ripristino degli elementi dall'archivio versioni tramite **i comandi Estrai** **e** Annulla estrazione.
@@ -88,7 +88,7 @@ Quando l'utente si riconnette all'archivio versioni, gli stati di estrazione di 
 |Durante la disconnessione, estrarre un file e quindi connettersi per la sincronizzazione|1. Disconnettere un progetto controllato usando la finestra di dialogo Modifica controllo del codice sorgente (**File**, **Controllo del codice** sorgente , Modifica controllo del codice **sorgente**).<br />2. Estrarre un file.<br />3. Fare clic su Estrai (disconnesso) nella finestra di dialogo di avviso.<br />4. Modificare il file.<br />5. Connessione la finestra di dialogo Modifica controllo del codice sorgente .<br />6. Ottenere la versione più recente del file modificato.|Comportamento previsto comune|
 
 ### <a name="case-3c-query-editquery-save-qeqs"></a>Caso 3c: Query Edit/Query Save (QEQS)
- Gli elementi nel controllo del codice sorgente vengono registrati per le modifiche, le modifiche e i salvamenti per consentire agli utenti di gestire facilmente i file. Quando viene modificato un elemento controllato archiviato, QEQS intercetta la modifica tentata e chiede all'utente se vuole estrarre il file per modificarlo. A seconda **delle impostazioni** di Strumenti **,** Opzioni, l'utente è obbligato a estrarre il file per modificarlo oppure può essere autorizzato a modificare una copia in memoria e a estrarlo in un secondo momento. Se l'impostazione Strumenti  **,** Opzioni dell'utente non è impostata per visualizzare la finestra di dialogo di estrazione e per estrarla, quando l'utente apporta la modifica, il file viene estratto automaticamente, quando possibile.
+ Gli elementi nel controllo del codice sorgente vengono registrati per le modifiche, le modifiche e i salvamenti per consentire agli utenti di gestire facilmente i file. Quando viene modificato un elemento controllato archiviato, QEQS intercetta la modifica tentata e chiede all'utente se vuole estrarre il file per modificarlo. A seconda **delle impostazioni** di Strumenti **,** Opzioni, l'utente è obbligato a estrarre il file per modificarlo o può essere autorizzato a modificare una copia in memoria e a estrarlo in un secondo momento. Se l'impostazione Strumenti  **,** Opzioni dell'utente non è impostata per visualizzare la finestra di dialogo di estrazione e per estrarla, quando l'utente apporta la modifica, il file viene estratto automaticamente, quando possibile.
 
 #### <a name="expected-behavior"></a>Comportamento previsto
 
@@ -131,7 +131,7 @@ Quando l'utente si riconnette all'archivio versioni, gli stati di estrazione di 
 
 - L'impostazione predefinita è basata sull'impostazione **Estrai versione locale** dell'utente. Se l'utente ha scelto di estrarre la versione locale, l'impostazione predefinita per l'annullamento dell'estrazione è ripristinare sempre la versione es check-out.
 
-- Dopo l'accettazione dell'annullamento, le icone **Esplora soluzioni** vengono aggiornate per i file interessati e l'elemento viene rimosso dalla finestra **Archiviazioni in** sospeso.
+- Dopo l'accettazione dell'annullamento, le icone Esplora soluzioni vengono aggiornate per i file interessati e l'elemento viene rimosso dalla finestra **Archiviazioni in** sospeso. 
 
 |Azione|Passaggi di test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|

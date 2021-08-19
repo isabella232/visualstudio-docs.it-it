@@ -1,5 +1,5 @@
 ---
-description: Ottiene il campo a cui è collegato l'attributo personalizzato.
+description: Ottiene il campo a cui è associato l'attributo personalizzato.
 title: IDebugCustomAttribute::GetParentField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 06b517d44c1b077674b76ce3e4d8991a851cc598398a8b0c913de478330f39c7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f953a5d1d5f533468ff5de85553108cc988ca679
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111481"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Ottiene il campo a cui è collegato l'attributo personalizzato.
+Ottiene il campo a cui è associato l'attributo personalizzato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ int GetParentField(
 
 ## <a name="parameters"></a>Parametri
 `ppField`\
-[out] Restituisce [l'oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il campo a cui è collegato l'attributo personalizzato.
+[out] Restituisce [l'oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il campo a cui è associato l'attributo personalizzato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; In caso contrario, restituisce un codice di errore.

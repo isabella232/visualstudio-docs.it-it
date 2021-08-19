@@ -1,6 +1,6 @@
 ---
 title: Eseguire la profilatura di codice JavaScript nelle pagine Web | Microsoft Docs
-description: Informazioni su come Visual Studio Strumenti di profilatura possibile raccogliere i dati sulle prestazioni per il codice JavaScript usando il metodo di profilatura della strumentazione.
+description: Informazioni su Visual Studio Strumenti di profilatura raccogliere dati sulle prestazioni per il codice JavaScript usando il metodo di profilatura della strumentazione.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 288fa04fa44528ad34c68cf3d770bb6d5673b976
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6ff70d45f47a8f7c34be58cfa33491f28e34bdb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060973"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web
 

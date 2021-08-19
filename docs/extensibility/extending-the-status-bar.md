@@ -14,17 +14,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa0acbd99328b55f0a15335572a0a185e1394ee85cc992cf71a59c2f52e1d9de
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3b95beaf29f976b621f2b3581376bc6e84f13e46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414896"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144678"
 ---
 # <a name="extend-the-status-bar"></a>Estendere la barra di stato
 È possibile usare la Visual Studio di stato nella parte inferiore dell'IDE per visualizzare le informazioni.
 
- Quando si estende la barra di stato, è possibile visualizzare le informazioni e l'interfaccia utente in quattro aree: l'area di feedback, l'indicatore di stato, l'area di animazione e l'area della finestra di progettazione. L'area di feedback consente di visualizzare il testo ed evidenziare il testo visualizzato. L'indicatore di stato mostra lo stato di avanzamento incrementale per le operazioni a esecuzione breve, ad esempio il salvataggio di un file. L'area di animazione visualizza un'animazione a ciclo continuo per operazioni a esecuzione lunga o operazioni di lunghezza non determinata, ad esempio la compilazione di più progetti in una soluzione. L'area della finestra di progettazione mostra il numero di riga e di colonna della posizione del cursore.
+ Quando si estende la barra di stato, è possibile visualizzare le informazioni e l'interfaccia utente in quattro aree: l'area di feedback, l'indicatore di stato, l'area di animazione e l'area della finestra di progettazione. L'area di feedback consente di visualizzare il testo ed evidenziare il testo visualizzato. L'indicatore di stato mostra lo stato di avanzamento incrementale per le operazioni a esecuzione breve, ad esempio il salvataggio di un file. L'area di animazione visualizza un'animazione a ciclo continuo per operazioni a esecuzione lunga o operazioni di lunghezza non determinata, ad esempio la compilazione di più progetti in una soluzione. L'area della finestra di progettazione mostra la riga e il numero di colonna della posizione del cursore.
 
  È possibile ottenere la barra di stato usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> l'interfaccia (dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> servizio ). Inoltre, qualsiasi oggetto presente in una cornice di finestra può essere registrato come oggetto client della barra di stato implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> l'interfaccia . Ogni volta che viene attivata una finestra, Visual Studio esegue una query sull'oggetto in tale finestra per `IVsStatusbarUser` l'interfaccia . Se viene trovato, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo sull'interfaccia restituita e l'oggetto può aggiornare la barra di stato dall'interno di tale metodo. Le finestre dei documenti, ad esempio, possono usare il metodo per aggiornare le informazioni nell'area della finestra di progettazione <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> quando diventano attive.
 

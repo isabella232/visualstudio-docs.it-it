@@ -1,6 +1,6 @@
 ---
 title: Funzioni dei frammenti di codice
-description: Informazioni sulle funzioni GenerateSwitchCases (EnumerationLiteral), ClassName () e SimpleTypeName (TypeName) disponibili per l'uso con i frammenti di codice C#.
+description: Informazioni sulle funzioni GenerateSwitchCases(EnumerationLiteral), ClassName( ) e SimpleTypeName(TypeName) disponibili per l'uso con frammenti di codice C#.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ce569dabca9e5d867310b8d510975331f5a9f046
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e941f7975d0be7116d316aea79b7e8580a64426
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954436"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056394"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
 

@@ -17,18 +17,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66d2b57b97c60b9d485a3804d13d42925bd038942f4115e68ea046e27a7958c1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e91d96c00624b68feb2a6869c1bf3a595036e825
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431799"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158645"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guida per il test dei plug-in del controllo del codice sorgente
 In questa sezione vengono fornite indicazioni per testare il plug-in del controllo del codice sorgente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Viene fornita una panoramica completa delle aree di test più comuni, nonché di alcune delle aree più complesse che possono essere problematiche. Questa panoramica non è destinata a essere un elenco completo di test case.
 
 > [!NOTE]
-> Alcune correzioni di bug e miglioramenti all'IDE più recente possono individuare problemi con i plug-in del controllo del codice sorgente esistenti che non sono stati rilevati in precedenza durante l'uso di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versioni precedenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . È consigliabile testare il plug-in del controllo del codice sorgente esistente per le aree enumerate in questa sezione, anche se non sono state apportate modifiche al plug-in dalla versione precedente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+> Alcune correzioni di bug e miglioramenti all'IDE più recente possono individuare problemi con i plug-in del controllo del codice sorgente esistenti che non sono stati rilevati in precedenza durante l'uso [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di versioni precedenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . È consigliabile testare il plug-in del controllo del codice sorgente esistente per le aree enumerate in questa sezione, anche se non sono state apportate modifiche al plug-in dalla versione precedente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="common-preparation"></a>Preparazione comune
  È necessario un computer con e il plug-in di controllo del codice [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sorgente di destinazione installato. Un secondo computer configurato in modo simile può essere usato per alcuni dei test Open from Source Control .
@@ -88,7 +88,7 @@ In questa sezione vengono fornite indicazioni per testare il plug-in del control
 
 - [Area di test 5: Modificare il controllo del codice sorgente](../../extensibility/internals/test-area-5-change-source-control.md)
 
-  - Caso 5a: Associare
+  - Caso 5a: Binding
 
   - Caso 5b: Annullare l'associazione
 

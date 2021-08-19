@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8599752b059ea760a0b0977e3ef01f91537074c2884e123935164c57c55c05
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2aaa5db4253d4964c564c369c66712ba0e86d21
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121442190"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141623"
 ---
 # <a name="modules-view---sampling-data"></a>Visualizzazione Moduli: dati di campionamento
 Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni campionate del modulo sono elencate sotto il nodo del modulo.

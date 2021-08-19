@@ -1,6 +1,6 @@
 ---
-description: Determina se il punto di interruzione in sospeso può essere associato a una posizione di codice.
-title: 'IDebugPendingBreakpoint2:: CanBind | Microsoft Docs'
+description: Determina se questo punto di interruzione in sospeso può essere associato a una posizione del codice.
+title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ffc2638d6f0a538279b400eacd4155a56054bd7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 57c51f4e834814ef32032cf867adfc715a1c2f31
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160114"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-Determina se il punto di interruzione in sospeso può essere associato a una posizione di codice.
+Determina se questo punto di interruzione in sospeso può essere associato a una posizione del codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +44,16 @@ int CanBind (
 
 ## <a name="parameters"></a>Parametri
 `ppErrorEnum`\
-out Restituisce un oggetto [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) che contiene un elenco di oggetti [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) in caso di errori.
+[out] Restituisce un [oggetto IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) che contiene un elenco di [oggetti IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) in caso di errori.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK.` `S_FALSE` se il punto di interruzione non può eseguire l'associazione, nel qual caso gli errori vengono restituiti dal `ppErrorEnum` parametro. In caso contrario, verrà restituito un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
+ Se ha esito positivo, restituisce `S_OK.` Restituisce se il punto di interruzione non può essere associato, nel qual caso gli errori `S_FALSE` vengono restituiti dal `ppErrorEnum` parametro . In caso contrario, verrà restituito un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo viene chiamato per determinare cosa accadrebbe se il punto di interruzione in sospeso fosse associato. Chiamare il metodo [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) per associare effettivamente il punto di interruzione in sospeso.
+ Questo metodo viene chiamato per determinare cosa accadrebbe se questo punto di interruzione in sospeso fosse associato. Chiamare il [metodo Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) per associare effettivamente il punto di interruzione in sospeso.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un `CPendingBreakpoint` oggetto semplice che espone l'interfaccia [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto semplice che `CPendingBreakpoint` espone [l'interfaccia IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)

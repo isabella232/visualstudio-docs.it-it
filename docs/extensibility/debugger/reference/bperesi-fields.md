@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: effaa705459b0009e9462898109c951df9cc4436dbee5c59222f703f04cc2b49
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 34a12b0e86b5805e97a563374506962618bf7853
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390393"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145770"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 Specifica le informazioni da recuperare su una risoluzione non riuscita di un punto di interruzione.
@@ -54,7 +54,7 @@ public enum enum_BPERESI_FIELDS {
 
 ## <a name="fields"></a>Campi
 `PERESI_BPRESLOCATION`\
-Inizializzare/usare il campo (posizione di risoluzione del punto di `bpResLocation` interruzione) [della BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura .
+Inizializzare/usare il `bpResLocation` campo (posizione di risoluzione del punto di interruzione) [della BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura .
 
 `BPERESI_PROGRAM`\
 Inizializzare/usare `pProgram` il campo della struttura `BP_ERROR_RESOLUTION_INFO` .
@@ -66,7 +66,7 @@ Inizializzare/usare `pThread` il campo della struttura `BP_ERROR_RESOLUTION_INFO
 Inizializzare/usare `bstrMessage` il campo della struttura `BP_ERROR_RESOLUTION_INFO` .
 
 `BPERESI_TYPE`\
-Inizializzare/usare il campo (tipo di punto di `dwType` interruzione) della `BP_ERROR_RESOLUTION_INFO` struttura .
+Inizializzare/usare il `dwType` campo (tipo di punto di interruzione) della `BP_ERROR_RESOLUTION_INFO` struttura .
 
 `BPERESI_ALLFIELDS`\
 Inizializzare/usare tutti i campi della `BP_ERROR_RESOLUTION_INFO` struttura .
@@ -74,9 +74,9 @@ Inizializzare/usare tutti i campi della `BP_ERROR_RESOLUTION_INFO` struttura .
 ## <a name="remarks"></a>Commenti
 Passato come parametro al [metodo GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) per indicare quali campi della [struttura](../../../extensibility/debugger/reference/bp-error-resolution-info.md) BP_ERROR_RESOLUTION_INFO devono essere inizializzati.
 
-Questi valori vengono usati anche per indicare quali campi della struttura vengono usati e `BP_ERROR_RESOLUTION_INFO` validi quando tale struttura viene restituita.
+Questi valori vengono usati anche per indicare quali campi della struttura vengono usati e `BP_ERROR_RESOLUTION_INFO` validi quando viene restituita tale struttura.
 
-Questi valori possono essere combinati con un oggetto bit per `OR` bit.
+Questi valori possono essere combinati con un bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

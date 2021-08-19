@@ -11,14 +11,15 @@ ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ee479721a7168aae5504b58495cfb536f5b38a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b6a6fee96546ee0ced5bd6ed7b0a9ff07f1aacf4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102156041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154551"
 ---
 # <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 Restituisce l'inizio dell'intervallo di indirizzi in cui il simbolo locale è valido.
@@ -34,20 +35,20 @@ HRESULT get_liveRangeStartRelativeVirtualAddress (
 #### <a name="parameters"></a>Parametri
  `address`
 
-out Restituisce l'inizio dell'intervallo di indirizzi.
+[out] Restituisce l'inizio dell'intervallo di indirizzi.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. L'indirizzo virtuale relativo restituito è l'inizio dell'intervallo in cui il simbolo è valido.
 
 > [!NOTE]
-> Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.
+> Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo live.
 
 ## <a name="remarks"></a>Osservazioni
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: dia2. h
+ Intestazione: Dia2.h
 
- Libreria: diaguids. lib
+ Libreria: diaguids.lib
 
  DLL: msdia100.dll
 

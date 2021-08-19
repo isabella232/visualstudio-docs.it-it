@@ -1,6 +1,6 @@
 ---
-title: Connettere il profiler all'app autonoma .NET. ottenere le statistiche dell'app
-description: Informazioni su come Visual Studio Strumenti di profilatura strumenti da riga di comando per connettere il profiler a un'applicazione .NET Framework autonoma (client) e ottenere statistiche.
+title: Connettere il profiler all'app .NET autonoma; ottenere le statistiche dell'app
+description: Informazioni su come Visual Studio Strumenti di profilatura strumenti da riga di comando per connettere il profiler a un'applicazione .NET Framework (client) autonoma in esecuzione e ottenere statistiche.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41ff72d2e23126cf5f7bc7530f556f7c28ce53c0a6ebd4185f58e9dd16478228
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ebe924374e33fe9c1fb82dd947be5244c7d0fa88
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396560"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150482"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione (client) autonoma .NET Framework in esecuzione e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.
@@ -71,9 +71,9 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
    - `PID` specifica l'ID del processo dell'applicazione di destinazione. `ProcessName` specifica il nome del processo. Si noti che se si specifica `ProcessName` e sono in esecuzione più processi con lo stesso nome, i risultati sono imprevedibili. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
 
-   - [/targetclr](../profiling/targetclr.md) **:** specifica la versione di Common Language Runtime (CLR) da profilare quando vengono caricate più versioni del runtime `Version` in un'applicazione. facoltativo.
+   - [/targetclr](../profiling/targetclr.md) **: specifica** la versione di Common Language Runtime (CLR) da profilare quando vengono caricate più versioni del runtime in `Version` un'applicazione. facoltativo.
 
-   - Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa una volta ogni 10 secondi su un processore da 1 GHz. È possibile specificare una delle opzioni seguenti per modificare l'intervallo del ciclo di clock o per specificare un evento di campionamento diverso. [/targetclr](../profiling/targetclr.md)**:** specifica la versione di CLR da profilare quando vengono caricate più versioni del runtime `Version` in un'applicazione. facoltativo.
+   - Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa una volta ogni 10 secondi su un processore da 1 GHz. È possibile specificare una delle opzioni seguenti per modificare l'intervallo del ciclo di clock o per specificare un evento di campionamento diverso. [/targetclr](../profiling/targetclr.md)**: specifica** la versione di CLR da profilare quando vengono caricate più versioni del runtime in `Version` un'applicazione. facoltativo.
 
    |Evento di esempio|Descrizione|
    |-|-|
@@ -93,7 +93,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato da `PID`.|
-    |[/attach:](../profiling/attach.md) { `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** avvia la raccolta dei dati per il processo specificato da `PID` o dal nome del processo (ProcName). **/detach** arresta la raccolta dei dati per il processo specificato o per tutti i processi se non è specificato un processo specifico.|
+    |[/attach:](../profiling/attach.md) { `PID`&#124;} `ProcName` [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** avvia la raccolta dei dati per il processo specificato da `PID` o dal nome del processo (ProcName). **/detach** arresta la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo specifico.|
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
  Per terminare una sessione di profilatura, il profiler deve essere disconnesso da tutti i processi profilati e deve essere arrestato in modo esplicito. È possibile disconnettere il profiler da un'applicazione profilata tramite il metodo di campionamento chiudendo l'applicazione o chiamando l'opzione **VSPerfCmd /detach**. È quindi possibile chiamare l'opzione **VSPerfCmd /shutdown** per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /off** cancella le variabili di ambiente di profilatura.

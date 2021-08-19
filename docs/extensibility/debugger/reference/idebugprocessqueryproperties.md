@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia è un'interfaccia di estensione implementata dagli implementatori di IDebugProcess2.
+description: Questa interfaccia è un'interfaccia di estensione implementata dagli implementatori IDebugProcess2.
 title: Proprietà IDebugProcessQueryProperties | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dad8262b2c8add1787d07dbd4589c2398d9c807abef5aaa06fc3ba46244f193
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e71603039747356ab1f3ba68b7f8750d4e21986d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433411"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159841"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
-Questa interfaccia è un'interfaccia di estensione implementata dagli [implementatori di IDebugProcess2.](../../../extensibility/debugger/reference/idebugprocess2.md) Consente all'implementatore di ottenere informazioni sull'ambiente del processo di debug.
+Questa interfaccia è un'interfaccia di estensione implementata dagli [implementatori IDebugProcess2.](../../../extensibility/debugger/reference/idebugprocess2.md) Consente all'implementatore di ottenere informazioni sull'ambiente del processo di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ IDebugProcessQueryProperties: IUnknown
 |Metodo|Descrizione|
 |------------|-----------------|
 |[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Esegue una query per il valore di una proprietà.|
-|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Esegue una query per i valori delle proprietà.|
+|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Esegue query per i valori delle proprietà.|
 
 ## <a name="remarks"></a>Commenti
  Questa interfaccia viene implementata raramente.

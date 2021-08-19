@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: fd9f937f20b9bbb00d1b69692320b676a5a5ca4688b6720bc798053e673cfdd0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8636166da9506e7bf3d5923167e2a449b8000462
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157436"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
 
@@ -27,7 +27,7 @@ Da un'Visual Studio, è possibile usare ModelBus a questo scopo. ModelBus fornis
 
 Impostare framework **di destinazione** del progetto di applicazione su .NET Framework 4 o versione successiva.
 
-1. Aprire il Visual Studio per l'applicazione in cui si vuole leggere un modello DSL.
+1. Aprire il Visual Studio progetto per l'applicazione in cui si vuole leggere un modello DSL.
 
 2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e quindi scegliere **Proprietà**.
 

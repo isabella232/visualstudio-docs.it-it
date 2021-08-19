@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43608336cb6c2a07f5cf788661fadd25b8986aadbb7c4467020481bff8e42250
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ea8f071907ab4bb5c2d95d392cb9b17c1b9d5c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121374116"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157910"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>Informazioni sull'uso dell'editor di codice con C\#
 

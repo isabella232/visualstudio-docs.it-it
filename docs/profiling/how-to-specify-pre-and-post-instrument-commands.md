@@ -1,6 +1,6 @@
 ---
 title: Specificare comandi pre- e post-strumentazione | Microsoft Docs
-description: Informazioni su come specificare i comandi eseguiti prima o dopo la strumentazione dei file binari in una sessione di prestazioni.
+description: Informazioni su come specificare i comandi che vengono eseguiti prima o dopo la strumentazione dei file binari in una sessione di prestazioni.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +17,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bd986863ffb49987bb282b19e8679dbc6f4fed01b7976dd2bc9582425a7b2f21
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d3350483fe1bf6744449d7a57b40c23b3a3c370e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231080"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150079"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre e post-strumentazione
 
@@ -47,7 +47,7 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi pre-strumentazione**.
 
     > [!NOTE]
-    > È possibile fare clic sul pulsante con i  puntini di sospensione **(...)** adiacente alla casella Riga di comando per individuare e selezionare il file .exe, cmd o .bat appropriato.
+    > È possibile fare clic sul pulsante con i  puntini di sospensione **(...)** accanto alla casella Riga di comando per individuare e selezionare il file .exe, cmd o .bat appropriato.
 
 4. Fare clic su **OK**.
 
@@ -66,7 +66,7 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi post-strumentazione**.
 
     > [!NOTE]
-    > È possibile fare clic sul pulsante con i  puntini di sospensione **(...)** adiacente alla casella Riga di comando per individuare e selezionare il file .exe, cmd o .bat appropriato.
+    > È possibile fare clic sul pulsante con i  puntini di sospensione **(...)** accanto alla casella Riga di comando per individuare e selezionare il file .exe, cmd o .bat appropriato.
 
 4. Fare clic su **OK**.
 

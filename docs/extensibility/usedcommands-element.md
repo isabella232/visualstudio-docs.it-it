@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: be720228c3ea53e9bfc5f5b5f2da44e919d94199120a3fbafeb3a575e8d56266
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ddeaf7e4c06a264a31311d1458b8e99bfc005be4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158125"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
 L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.

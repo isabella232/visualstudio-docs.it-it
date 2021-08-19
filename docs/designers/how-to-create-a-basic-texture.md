@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare una trama di base'
-description: Informazioni su come usare l'editor di immagini per creare una trama di base, inclusa l'impostazione delle dimensioni della trama, l'impostazione delle proprietà degli strumenti e altre attività.
+description: Informazioni su come usare l'editor di immagini per creare una trama di base, tra cui l'impostazione delle dimensioni della trama, l'impostazione delle proprietà dello strumento e altre attività.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac90077831d852ba0361c46186d18fe39cf9e81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd312e8934d14a986606020558adc57339250706
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112061"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
 
@@ -51,7 +52,7 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. 
 
 4. Impostare il colore di primo piano su un nero completamente trasparente. Nella finestra **Proprietà**, nel gruppo di proprietà **Colori**, selezionare **Primo piano**. Impostare i valori delle proprietà **R**, **G**, **B** e **A** accanto alla selezione colori su `0`.
 
-5. Sulla barra degli strumenti dell'editor di immagini scegliere lo strumento **riempimento** , quindi tenere premuto il tasto **MAIUSC** e scegliere qualsiasi punto nell'immagine. L'utilizzo del tasto **MAIUSC** fa sì che il valore alfa del colore di riempimento sostituisca il colore nell'immagine; in caso contrario, il valore alfa viene utilizzato per sfumare il colore di riempimento insieme al colore nell'immagine.
+5. Sulla barra degli strumenti  dell'editor di immagini scegliere lo strumento Riempimento, quindi tenere premuto **MAIUSC** e scegliere un punto qualsiasi nell'immagine. **L'uso del** tasto MAIUSC fa sì che il valore alfa del colore di riempimento sostituisca il colore nell'immagine; In caso contrario, il valore alfa viene usato per unire il colore di riempimento con il colore nell'immagine.
 
     > [!IMPORTANT]
     > Questo passaggio, insieme alla selezione del colore nel passaggio precedente, assicura che l'immagine di base sia preparata per la trama di destinazione "bullseye" che si intende disegnare. Poiché l'immagine viene riempita con un nero trasparente e il bordo della destinazione è nero, non saranno presenti artefatti di aliasing intorno alla destinazione.
@@ -66,7 +67,7 @@ Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. 
 
 10. Assicurarsi che l'antialiasing sia abilitato. Nella finestra **Proprietà**, nel gruppo di proprietà **Aspetto**, assicurarsi che la proprietà **Anti-alias** sia impostata.
 
-11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per creare il cerchio in modo più semplice, è possibile premere e tenere premuto il tasto **MAIUSC** mentre si estrae.
+11. Usando lo strumento **Ellisse** disegnare un cerchio dalla coordinata in pixel `(3, 3)` alla coordinata in pixel `(508, 508)`. Per disegnare più facilmente il cerchio, è possibile tenere premuto **MAIUSC** mentre si disegna.
 
     > [!NOTE]
     > Le coordinate in pixel della posizione corrente del puntatore sono visualizzate nella barra di stato di Visual Studio.
@@ -87,7 +88,7 @@ La trama di destinazione "bullseye" è completa. Di seguito è riportata l'immag
 
 ![Trama di destinazione "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png)
 
-Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [procedura: creare e modificare i livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [Procedura: Creare e modificare livelli MIP.](../designers/how-to-create-and-modify-mip-levels.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c380f65f9bde1e6980d6989aecaaa93d5e60a548d8805416532215a2bcf64034
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b422efc8e3f8e6ec9c39b02089e22c5eab6ed3cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425022"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083934"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
 
@@ -62,7 +62,7 @@ Per disattivare e attivare le impostazioni personalizzate,  deselezionare o sele
 
 ::: moniker range=">=vs-2019"
 
-Per disattivare e attivare le impostazioni personalizzate, deselezionare o selezionare il file dal menu **Test.**
+Per disattivare e attivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test.**
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Il code coverage richiede file di simboli (file *PDB*) per gli assembly. Per gli
 
 ## <a name="include-or-exclude-assemblies-and-members"></a>Includere o escludere assembly e membri
 
-È possibile includere o escludere assembly o tipi e membri specifici dall code coverage a analisi. Se la **sezione Include** è vuota o omessa, vengono inclusi tutti gli assembly caricati e a cui sono associati file PDB. Se un assembly o un membro corrisponde a una clausola nella **sezione Exclude,** viene escluso dal code coverage. La **sezione Exclude** ha la precedenza sulla sezione **Include:** se un assembly è elencato sia in **Include** che **in Exclude,** non verrà incluso in code coverage.
+È possibile includere o escludere assembly o tipi e membri specifici dall code coverage a analisi. Se la **sezione Include** è vuota o omessa, vengono inclusi tutti gli assembly caricati e a cui sono associati file PDB. Se un assembly o un membro corrisponde a una clausola nella **sezione Exclude,** viene escluso dal code coverage. La **sezione Exclude** ha la precedenza sulla sezione **Include:** se un assembly è elencato in **Include** ed **Exclude,** non verrà incluso in code coverage.
 
 Ad esempio, il codice XML seguente esclude un singolo assembly specificandone il nome:
 

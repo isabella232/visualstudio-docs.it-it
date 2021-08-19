@@ -1,5 +1,5 @@
 ---
-description: Recupera la versione System. Runtime. InteropServices. ComTypes. IEnumVARIANT dell'enumeratore dei simboli.
+description: Recupera la versione System.Runtime.InteropServices.ComTypes.IEnumVARIANT dell'enumeratore symbols.
 title: IDiaEnumSymbols::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 879609ea-8e5a-4fa3-afa6-d24870fb4392
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ec594958912a4f964f876665e229bf66b77b6968
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 962771f9243a53ca7ca1f92441439663c0f9d710
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148717"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129343"
 ---
 # <a name="idiaenumsymbolsget__newenum"></a>IDiaEnumSymbols::get__NewEnum
-Recupera la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
+Recupera la versione <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> di questo enumeratore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +35,7 @@ HRESULT get__NewEnum (
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-out Restituisce l' `IUnknown` interfaccia che rappresenta la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione dell'enumeratore.
+[out] Restituisce `IUnknown` l'interfaccia che rappresenta <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> la versione di questo enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

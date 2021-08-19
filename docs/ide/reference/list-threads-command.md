@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cdd6f76a9ba1f73884127d19dd40ce2c64fb64752b04bbe5698408a84c5048
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2585399f9e63286eb6c846054eb30e80fad8fe20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447532"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151444"
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
 Visualizza un elenco dei thread del programma corrente.
@@ -53,5 +53,5 @@ Quando specificato, l'argomento `index` contrassegna il thread indicato come thr
 - [Comando List Disassembly](../../ide/reference/list-disassembly-command.md)
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

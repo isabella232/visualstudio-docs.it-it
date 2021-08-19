@@ -6,22 +6,23 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a58af8098a49992e81380c6567755c31709d1dc3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d625edfafbbf0f7cf1bdbfbf16697d401c8ec63
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140531"
 ---
-Visual Studio può avviare ed eseguire il debug di applicazioni Python in locale e in remoto in un computer Windows (vedere [Remote Debugging](../../../debugger/remote-debugging.md)). È anche possibile eseguire il debug in remoto su un altro sistema operativo o dispositivo oppure su un'implementazione di Python diversa da CPython usando la [libreria ptvsd](https://pypi.python.org/pypi/ptvsd).
+Visual Studio avviare ed eseguire il debug di applicazioni Python in locale e in remoto in un computer Windows (vedere [Debug remoto).](../../../debugger/remote-debugging.md) È anche possibile eseguire il debug in remoto su un altro sistema operativo o dispositivo oppure su un'implementazione di Python diversa da CPython usando la [libreria ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Quando si usa ptvsd, il codice Python di cui si esegue il debug ospita il server di debug a cui può collegarsi Visual Studio. L'hosting richiede una piccola modifica del codice per importare e abilitare il server e potrebbe richiedere configurazioni della rete o del firewall nel computer remoto per consentire le connessioni TCP.
 
-![icona della fotocamera cinematografica per il video](../../../install/media/video-icon.png "Guardare un video") Per un'introduzione al debug remoto, vedere [Deep Dive: debug remoto multipiattaforma](https://youtu.be/y1Qq7BrV6Cc) (YouTube.com, 6m22s), applicabile sia a Visual Studio 2015 che a 2017.
+![icona della fotocamera del film per il video](../../../install/media/video-icon.png "Guardare un video") Per un'introduzione al debug remoto, vedere [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6m22s), applicabile sia a Visual Studio 2015 che a 2017.
 
 ## <a name="set-up-a-linux-computer"></a>Impostare un computer Linux
 
@@ -85,13 +86,13 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
 
 1. (Facoltativo) Per usare IntelliSense per ptvsd nel computer locale, installare il pacchetto ptvsd nell'ambiente Python.
 
-1. Selezionare **debug**  >  **Connetti a processo**.
+1. Selezionare **Debug**  >  **Attach to Process (Esegui debug connessione a processo).**
 
 1. Nella finestra di dialogo **Connetti a processo** visualizzata impostare **Tipo di connessione** su **Python remote (ptvsd)** (Python remoto). Nelle versioni precedenti di Visual Studio questi comandi sono denominati rispettivamente **Trasporto** e **Debug remoto Python**.
 
 1. Nel campo **Destinazione della connessione** (**Qualificatore** nelle versioni precedenti) immettere `tcp://<ip_address>:5678` dove `<ip_address>` è l'indirizzo del computer remoto (che può essere un indirizzo esplicito o un nome come myvm.cloudapp.net) e `:5678` è il numero di porta per il debug remoto.
 
-1. Premere **invio** per popolare l'elenco dei processi ptvsd disponibili in tale computer:
+1. Premere **INVIO** per popolare l'elenco dei processi ptvsd disponibili nel computer:
 
     ![Immissione della destinazione di connessione e indicazione dei processi](../../media/remote-debugging-qualifier.png)
 
@@ -169,7 +170,7 @@ Per impostazione predefinita, la connessione al server di debug remoto di ptvsd 
 
 1. Visual Studio segnala i potenziali problemi di certificato quando si esegue la connessione con SSL. È possibile ignorare gli avvisi e continuare, ma anche se il canale rimane crittografato per evitare intercettazioni, può comunque essere vulnerabile agli attacchi di tipo man-in-the-middle.
 
-    1. Se viene visualizzato l'avviso il **certificato remoto non è attendibile** , significa che il certificato non è stato aggiunto correttamente alla CA radice attendibile. Verificare questi passaggi e riprovare.
+    1. Se di seguito viene **visualizzato l'avviso** il certificato remoto non è attendibile, significa che il certificato non è stato aggiunto correttamente alla CA radice attendibile. Verificare questi passaggi e riprovare.
 
         ![Avviso su attendibilità del certificato SSL](../../media/remote-debugging-ssl-warning.png)
 

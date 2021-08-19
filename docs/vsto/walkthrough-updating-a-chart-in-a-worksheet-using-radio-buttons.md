@@ -1,6 +1,6 @@
 ---
 title: Aggiornare un grafico nel foglio di lavoro usando i pulsanti di opzione
-description: Informazioni di base sull'uso dei pulsanti di opzione in un foglio di lavoro di Microsoft Excel per offrire all'utente un modo per passare rapidamente tra le opzioni.
+description: Informazioni di base sull'uso dei pulsanti di opzione in un Microsoft Excel di lavoro per offrire all'utente un modo per passare rapidamente da un'opzione all'altro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,21 +14,22 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3d61579181f00d97a74cc48e022bb5d93a05c0f0
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 4edf0813fcbcd9b7013b85bcf251da9a47beb78a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155382"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: aggiornamento di un grafico in un foglio di lavoro mediante i pulsanti di opzione
-  Questa procedura dettagliata illustra le nozioni di base sull'uso dei pulsanti di opzione Microsoft Office foglio di lavoro di Excel per offrire all'utente un modo per passare rapidamente tra le opzioni. In questo caso, le opzioni modificano lo stile di un grafico.
+  Questa procedura dettagliata illustra le nozioni di base sull'uso dei pulsanti di opzione in un Microsoft Office Excel di lavoro per offrire all'utente un modo per passare rapidamente da un'opzione all'altro. In questo caso, le opzioni modificano lo stile di un grafico.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Per visualizzare il risultato come esempio completato, vedere l'esempio di controlli Excel in Esempi e procedure dettagliate per lo sviluppo [di Office.](../vsto/office-development-samples-and-walkthroughs.md)
+ Per visualizzare il risultato come esempio completo, vedere l'esempio Excel controlli di esempio in Office di sviluppo [e procedure dettagliate.](../vsto/office-development-samples-and-walkthroughs.md)
 
  Vengono illustrate le attività seguenti:
 
@@ -47,19 +48,19 @@ ms.locfileid: "107828176"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="add-a-chart-to-a-worksheet"></a>Aggiungere un grafico a un foglio di lavoro
- È possibile creare un progetto Cartella di lavoro di Excel che personalizza una cartella di lavoro esistente. In questa procedura dettagliata si aggiungerà un grafico a una cartella di lavoro e quindi si userà questa cartella di lavoro in una nuova soluzione Excel. L'origine dati in questa procedura dettagliata è un foglio di lavoro **denominato Data for Chart**.
+ È possibile creare un progetto Excel cartella di lavoro esistente che personalizza una cartella di lavoro esistente. In questa procedura dettagliata si aggiungerà un grafico a una cartella di lavoro e quindi si userà questa cartella di lavoro in una nuova Excel soluzione. L'origine dati in questa procedura dettagliata è un foglio di lavoro **denominato Data for Chart**.
 
 ### <a name="to-add-the-data"></a>Per aggiungere i dati
 
 1. Aprire Microsoft Excel.
 
-2. Fare clic con il pulsante destro del mouse sulla scheda **Sheet3** e quindi **scegliere Rinomina** dal menu di scelta rapida.
+2. Fare clic con il pulsante destro del mouse sulla scheda **Foglio3** , quindi **scegliere Rinomina** dal menu di scelta rapida.
 
-3. Rinominare il foglio in **Dati per grafico**.
+3. Rinominare il foglio in **Dati per Grafico**.
 
 4. Aggiungere i dati seguenti a **Data for Chart con** la cella A4 nell'angolo superiore sinistro e E8 nell'angolo inferiore destro.
 
-   |Area/trimestre|T1|T2|T3|T4|
+   |Area/Trimestre|T1|T2|T3|T4|
    |-|--------|--------|--------|--------|
    |West|500|550|550|600|
    |East|600|625|675|700|
@@ -70,9 +71,9 @@ ms.locfileid: "107828176"
 
 ### <a name="to-add-a-chart-in-excel"></a>Per aggiungere un grafico in Excel
 
-1. Nel gruppo Grafici **della** scheda Inserisci **fare** clic su **Colonna** e quindi su **Tutti i tipi di grafico**.
+1. Nel gruppo **Grafici** della  scheda Inserisci fare clic su **Colonna** e quindi su **Tutti i tipi di grafico**.
 
-2. Nella finestra **di dialogo Inserisci** grafico fare clic su **OK**.
+2. Nella finestra **di dialogo Inserisci** grafico fare clic su **OK.**
 
 3. Nel gruppo **Dati** della scheda Progettazione **fare** clic su **Seleziona dati**.
 
@@ -89,22 +90,22 @@ ms.locfileid: "107828176"
 9. Uscire da Excel.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
- In questo passaggio si creerà un progetto Cartella di lavoro di Excel basato sulla cartella **di lavoro ExcelChart.**
+ In questo passaggio verrà creato un progetto cartella Excel cartella di lavoro basata sulla cartella **di lavoro ExcelChart.**
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto cartella di lavoro di Excel con il **nome My Excel Chart**. Nella procedura guidata selezionare **Copia un documento esistente.**
+1. Creare un progetto Excel cartella di lavoro con il nome **My Excel Chart**. Nella procedura guidata selezionare **Copia un documento esistente.**
 
-     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Per altre informazioni, [vedere Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. Fare clic **sul pulsante** Sfoglia e passare alla cartella di lavoro creata in precedenza in questa procedura dettagliata.
 
 3. Fare clic su **OK**.
 
-     Visual Studio apre la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **progetto My Excel Chart** a **Esplora soluzioni**.
+     Visual Studio apre la nuova cartella Excel cartella di lavoro nella finestra di progettazione e aggiunge il progetto My **Excel Chart** **a Esplora soluzioni**.
 
 ## <a name="set-properties-of-the-chart"></a>Impostare le proprietà del grafico
- Quando si crea un nuovo progetto cartella di lavoro di Excel che usa una cartella di lavoro esistente, i controlli host vengono creati automaticamente per tutti gli intervalli denominati, gli oggetti elenco e i grafici nella cartella di lavoro. È possibile modificare il nome del <xref:Microsoft.Office.Tools.Excel.Chart> controllo usando la **finestra** Proprietà.
+ Quando si crea un nuovo progetto Excel workbook che usa una cartella di lavoro esistente, i controlli host vengono creati automaticamente per tutti gli intervalli denominati, gli oggetti elenco e i grafici nella cartella di lavoro. È possibile modificare il nome del <xref:Microsoft.Office.Tools.Excel.Chart> controllo usando la **finestra** Proprietà.
 
 ### <a name="to-change-the-name-of-the-chart-control"></a>Per modificare il nome del controllo Chart
 
@@ -116,7 +117,7 @@ ms.locfileid: "107828176"
     |**HasLegend**|**false**|
 
 ## <a name="add-controls"></a>Aggiungere controlli
- Questo foglio di lavoro usa i pulsanti di opzione per consentire agli utenti di modificare rapidamente lo stile del grafico. Tuttavia, i pulsanti di opzione devono essere esclusivi. Quando si seleziona un pulsante, nessun altro pulsante nel gruppo può essere selezionato contemporaneamente. Questo comportamento non si verifica per impostazione predefinita quando si aggiungono diversi pulsanti di opzione a un foglio di lavoro.
+ Questo foglio di lavoro usa i pulsanti di opzione per consentire agli utenti di modificare rapidamente lo stile del grafico. Tuttavia, i pulsanti di opzione devono essere esclusivi: quando si seleziona un pulsante, nessun altro pulsante nel gruppo può essere selezionato contemporaneamente. Questo comportamento non si verifica per impostazione predefinita quando si aggiungono diversi pulsanti di opzione a un foglio di lavoro.
 
  Un modo per aggiungere questo comportamento è raggruppare i pulsanti di opzione in un controllo utente, scrivere il codice dietro il controllo utente e quindi aggiungere il controllo utente al foglio di lavoro.
 
@@ -132,7 +133,7 @@ ms.locfileid: "107828176"
 
 1. Se il controllo utente non è visibile nella finestra di progettazione, fare doppio clic **su ChartOptions** in **Esplora soluzioni**.
 
-2. Dalla scheda **Controlli comuni** della **Casella** degli strumenti trascinare un controllo **Pulsante** di opzione nel controllo utente e modificare le proprietà seguenti.
+2. Dalla scheda **Controlli comuni** della casella **degli strumenti** trascinare un controllo **Pulsante di** opzione nel controllo utente e modificare le proprietà seguenti.
 
    | Proprietà | Valore |
    |----------|------------------|
@@ -196,12 +197,12 @@ ms.locfileid: "107828176"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet17":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet17":::
 
-5. In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni su come creare gestori eventi, vedere [Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md)
+5. In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni su come creare gestori eventi, vedere [Procedura: Creare gestori](../vsto/how-to-create-event-handlers-in-office-projects.md)eventi in Office progetti .
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet18":::
 
 ## <a name="add-the-user-control-to-the-worksheet"></a>Aggiungere il controllo utente al foglio di lavoro
- Quando si compila la soluzione, il nuovo controllo utente viene aggiunto automaticamente alla casella degli **strumenti**. È quindi possibile trascinare il controllo dalla Casella **degli strumenti** al foglio di lavoro.
+ Quando si compila la soluzione, il nuovo controllo utente viene aggiunto automaticamente alla casella **degli strumenti**. È quindi possibile trascinare il controllo dalla Casella **degli strumenti** al foglio di lavoro.
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>Per aggiungere il controllo utente al foglio di lavoro
 
@@ -209,11 +210,11 @@ ms.locfileid: "107828176"
 
      Il **controllo utente ChartOptions** viene aggiunto alla casella **degli strumenti**.
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro **del mouse su Sheet1.vb** o **Sheet1.cs** e **quindi scegliere Progettazione visualizzazioni**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1.vb** o **Sheet1.cs** e **quindi scegliere Progettazione visualizzazioni**.
 
-3. Trascinare **il controllo ChartOptions** dalla Casella **degli strumenti** al foglio di lavoro.
+3. Trascinare **il controllo ChartOptions** dalla **Casella degli strumenti** al foglio di lavoro.
 
-     Un nuovo controllo `my_Excel_Chart_ChartOptions1` denominato viene aggiunto al progetto.
+     Al progetto `my_Excel_Chart_ChartOptions1` viene aggiunto un nuovo controllo denominato .
 
 4. Modificare il nome del controllo in **ChartOptions1.**
 
@@ -227,7 +228,7 @@ ms.locfileid: "107828176"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet19":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet19":::
 
-2. In C# è necessario aggiungere un gestore eventi per il controllo utente <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> all'evento , come illustrato di seguito. Per informazioni su come creare gestori eventi, vedere [Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md)
+2. In C# è necessario aggiungere un gestore eventi per il controllo utente <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> all'evento , come illustrato di seguito. Per informazioni su come creare gestori eventi, vedere [Procedura: Creare gestori](../vsto/how-to-create-event-handlers-in-office-projects.md)eventi in Office progetti .
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet20":::
 
@@ -243,9 +244,9 @@ ms.locfileid: "107828176"
 3. Verificare che lo stile del grafico sia modificato in base alla selezione.
 
 ## <a name="next-steps"></a>Passaggi successivi
- Questa procedura dettagliata illustra le nozioni di base sull'uso dei pulsanti di opzione e degli stili dei grafici nei fogli di lavoro. Ecco alcune possibili attività successive:
+ Questa procedura dettagliata illustra le nozioni di base sull'uso di pulsanti di opzione e stili di grafico nei fogli di lavoro. Ecco alcune possibili attività successive:
 
-- Distribuzione del progetto. Per altre informazioni, vedere [Distribuire una soluzione Office.](../vsto/deploying-an-office-solution.md)
+- Distribuzione del progetto. Per altre informazioni, vedere [Deploy an Office solution](../vsto/deploying-an-office-solution.md).
 
 - Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un foglio di lavoro usando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 

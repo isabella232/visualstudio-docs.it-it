@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e26484088607bf90658a778e7d26804d3ded31ebe5bd33149ab7b0ee59488d66
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c0280b68982d82e94a025b4f1d180638f8e4028d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121238723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095414"
 ---
 # <a name="ienumdebugmodules2getcount"></a>IEnumDebugModules2::GetCount
 Restituisce il numero di elementi nell'enumerazione .
