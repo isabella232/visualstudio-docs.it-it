@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f41608335ecefa59ae78f04339cbb1f47d5e6a0f996b3052be6162206cc333b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 75b963cdd27ec4a48830a2db23db081b7315898a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424359"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130650"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;Elemento entryPoints &gt; (Office sviluppo in Visual Studio)
   L'elemento `entryPoints` dello spazio dei nomi `vstav3` contiene tutti gli elementi `entryPoint` associati a una soluzione Office.

@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 38f3e684cf9d045baeb107b7d0ab84cddfff50be
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 150bc0a1fb78c58ecc9e086cf20a25e32243215b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679829"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060505"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Creare tracciati visivi dei dati con R
 
@@ -49,7 +50,7 @@ In tutti i casi il ridimensionamento di una finestra dei tracciati esegue nuovam
 
 ## <a name="plot-window-commands"></a>Comandi della finestra dei tracciati
 
-La barra degli strumenti della finestra dei tracciati contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu  >  **Tracciati di** R Tools.
+La barra degli strumenti della finestra del tracciato contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu  >  **Tracciati di** R Tools.
 
 | Button | Comando | Descrizione |
 | --- | --- | --- |
@@ -68,22 +69,22 @@ La barra degli strumenti della finestra dei tracciati contiene i comandi applica
 
 Poiché gli esperti di dati spesso lavorano con molti tracciati provenienti da set di dati diversi, RTVS consente di creare il numero necessario di finestre dei tracciati indipendenti. Le finestre possono essere disposte come si preferisce all'interno del frame di Visual Studio o anche all'esterno del frame. (Vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) per informazioni generali su ancoraggio e ridimensionamento delle finestre.)
 
-È possibile creare una nuova finestra dei tracciati usando il pulsante della barra degli strumenti o **Tracciati** di R Tools  >    >  **Nuova finestra tracciato**. La nuova finestra dei tracciati diventa la finestra *attiva*, in cui viene eseguito il rendering dei nuovi tracciati. Per modificare la finestra attiva, accedere a essa e selezionare il pulsante della barra degli strumenti **Attiva finestra dei tracciati** o **R Tools** > **Tracciati** > **Attiva finestra dei tracciati**.
+Si crea una nuova finestra del tracciato usando il pulsante della barra degli strumenti o **R Tools**  >  **Traccia nuova** finestra  >  **tracciato**. La nuova finestra dei tracciati diventa la finestra *attiva*, in cui viene eseguito il rendering dei nuovi tracciati. Per modificare la finestra attiva, accedere a essa e selezionare il pulsante della barra degli strumenti **Attiva finestra dei tracciati** o **R Tools** > **Tracciati** > **Attiva finestra dei tracciati**.
 
 I tracciati sono anch'essi oggetti indipendenti, quindi è possibile copiarli o spostarli tra le finestre dei tracciati usando il mouse per trascinare la selezione oppure i comandi **Copia**, **Taglia** e **Incolla** disponibili nel menu **Modifica** e nel menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse.
 
-Il comportamento predefinito per il trascinamento della selezione è copy. per spostare, trascinare e rilasciare mentre si preme **MAIUSC.**
+Il comportamento predefinito per il trascinamento della selezione è copy. per spostarsi, trascinare e rilasciare mentre si preme **MAIUSC.**
 
 ## <a name="plot-history"></a>Cronologia dei tracciati
 
-I comandi dei tracciati vengono mantenuti nella cronologia dei tracciati per ogni finestra, assicurando il mantenimento di tutti i tracciati all'interno di una sessione. Per esplorare la cronologia, usare i pulsanti freccia sulla barra degli strumenti della finestra dei tracciati o **CTRL** + **ALT** + **F11** e **CTRL** + **ALT** + **F12.** È anche possibile rimuovere singoli tracciati o cancellare tutti i tracciati dalla finestra usando i pulsanti della barra degli strumenti o i comandi di menu  >  **Tracciati** di R Tools.
+I comandi dei tracciati vengono mantenuti nella cronologia dei tracciati per ogni finestra, assicurando il mantenimento di tutti i tracciati all'interno di una sessione. Per esplorare la cronologia, usare i pulsanti freccia sulla barra degli strumenti della finestra del tracciato o **CTRL** + **ALT** + **F11** e **CTRL** +  + **ALT+F12.** È anche possibile rimuovere singoli tracciati o cancellare di nuovo tutti i tracciati dalla finestra usando i pulsanti della barra degli strumenti o i comandi di menu  >  **Tracciati** di R Tools.
 
-Per visualizzare l'intera raccolta di tracciati, aprire la finestra della cronologia dei tracciati usando il pulsante della barra degli strumenti o la finestra Cronologia  >    >  **tracciati di** R Tools .
+Per visualizzare l'intera raccolta di tracciati, aprire la finestra cronologia tracciato usando il pulsante della barra degli strumenti o la finestra Cronologia tracciati di **R**  >    >  **Tools**.
 Nella cronologia è disponibile un elenco di miniature per i tracciati che sono stati visualizzati in tale finestra, raggruppate in base alle diverse finestre dei tracciati (o ai dispositivi). Con i pulsanti dello zoom presenti sulla barra degli strumenti è possibile modificare la dimensione delle miniature.
 
 ![Finestra cronologia dei tracciati](media/plotting-plot-history-window.png)
 
-Per aprire un tracciato nella finestra associata, fare doppio clic su di esso, selezionarlo e quindi selezionare il pulsante della barra **degli strumenti** Mostra tracciato. In alternativa, fare clic con il pulsante destro del mouse sul tracciato e **scegliere Mostra tracciato.** È anche possibile selezionare un singolo tracciato e copiare, tagliare o eliminare dal menu di scelta rapida **o** modifica.
+Per aprire un tracciato nella finestra associata, fare doppio clic sul tracciato, selezionarlo e quindi selezionare il **pulsante Mostra barra degli** strumenti Tracciato. In alternativa, fare clic con il pulsante destro del mouse sul tracciato e **scegliere Mostra tracciato**. È anche possibile selezionare un singolo tracciato e copiare, tagliare o eliminare dal menu di scelta rapida **o** Modifica.
 
 La durata della cronologia dei tracciati in tutte le finestre è associata alla durata della sessione di R interattiva. Se si reimposta la sessione di R o si esce e si riavvia Visual Studio, la cronologia dei tracciati viene reimpostata.
 

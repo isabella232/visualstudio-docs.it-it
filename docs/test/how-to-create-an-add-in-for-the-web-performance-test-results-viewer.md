@@ -1,6 +1,6 @@
 ---
 title: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
-description: Informazioni su come creare un componente Visual Studio componente aggiuntivo per estendere l'interfaccia utente del Visualizzatore prestazioni Web Risultati test e implementare le classi necessarie per estendere l'interfaccia utente.
+description: Informazioni su come creare un componente aggiuntivo Visual Studio per estendere l'interfaccia utente del Visualizzatore prestazioni Web Risultati test e implementare le classi necessarie per estendere l'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4675e679dc62ae999553b5dd7de37dd9e89cf8a0dd5f75c7c5c6a45be452e15
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 10bab04db18962c592cac96eb707b0303874d5b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384951"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135637"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo per web performance Risultati test Viewer
 
@@ -40,7 +40,7 @@ Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazio
 Creare o aprire una soluzione non di produzione con la quale sperimentare che contenga un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web con uno o più test delle prestazioni Web per l'applicazione Web ASP.NET.
 
 > [!NOTE]
-> È possibile creare un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web che contiene test delle prestazioni Web seguendo le procedure descritte in [Procedura: Creare](../test/how-to-create-a-web-service-test.md) un test del servizio Web e Generare ed eseguire un test delle prestazioni [Web codificato.](../test/generate-and-run-a-coded-web-performance-test.md)
+> È possibile creare un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web contenente test delle prestazioni Web seguendo le procedure descritte in [Procedura: Creare](../test/how-to-create-a-web-service-test.md) un test del servizio Web e Generare ed eseguire un [test](../test/generate-and-run-a-coded-web-performance-test.md)delle prestazioni Web codificato.
 
 ## <a name="create-a-visual-studio-add-in"></a>Creare un componente aggiuntivo per Visual Studio
 
@@ -52,7 +52,7 @@ Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo articolo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Per creare un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere Aggiungi **e** quindi selezionare **Nuovo Project**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi selezionare **Nuovo Project**.
 
 2. Creare un nuovo progetto di **componente aggiuntivo di Visual Studio**.
 
@@ -112,7 +112,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Per creare un controllo da utilizzare nel Visualizzatore risultati test Web
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere Aggiungi **e** quindi selezionare **Nuovo Project**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi selezionare **Nuovo Project**.
 
 2. Creare un nuovo progetto **Libreria di controlli Windows Form**.
 

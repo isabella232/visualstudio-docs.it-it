@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia rappresenta una posizione astratta di una funzione in un documento di origine.
-title: IDebugFunctionPosition2 | Microsoft Docs
+title: Oggetto IDebugFunctionPosition2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5afd44827d8d9b6f244bc914728bd090261ab25
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ab8fd2348ce7c8e84e38d8b8029c23712620816b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064161"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Questa interfaccia rappresenta una posizione astratta di una funzione in un documento di origine.
@@ -30,26 +31,26 @@ IDebugFunctionPosition2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) implementa questa interfaccia per rappresentare la posizione di una funzione all'interno di un documento di origine.
+ Il motore di debug implementa questa interfaccia per rappresentare la posizione di una funzione all'interno di un documento di origine.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Questa interfaccia viene fornita come parte di un'Unione [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) (in particolare, una struttura [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) ) che fa parte della struttura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) , utilizzata per la creazione di un punto di interruzione in sospeso.
+ Questa interfaccia viene fornita come parte di un'unione [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) (in particolare, una struttura [BP_LOCATION_CODE_FUNC_OFFSET)](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) che a sua volta fa parte della [struttura BP_REQUEST_INFO,](../../../extensibility/debugger/reference/bp-request-info.md) usata nella creazione di un punto di interruzione in sospeso.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugFunctionPosition2` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugFunctionPosition2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Ottiene il nome della funzione a cui è correlata questa posizione.|
+|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Ottiene il nome della funzione a cui è relativa questa posizione.|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Ottiene l'offset dall'inizio della funzione.|
 
 ## <a name="remarks"></a>Commenti
- La posizione rappresentata da questa interfaccia è basata su testo, in particolare una struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) .
+ La posizione rappresentata da questa interfaccia è basata sul testo, in particolare una [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

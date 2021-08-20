@@ -1,6 +1,6 @@
 ---
 title: Modelli XSLT predefiniti
-description: Informazioni sui modelli predefiniti XSLT usati durante l'elaborazione XSLT quando nel foglio di stile non è presente alcuna regola di modello esplicita corrispondente.
+description: Informazioni sui modelli XSLT predefiniti usati durante l'elaborazione XSLT quando non esiste una regola di modello esplicita corrispondente nel foglio di stile.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 21e9204765e9bb467f483fabf58ebd12d67e71862377d3038e47047a0a874919
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b4c6fa558a11966045865bd4da079d3266ed61a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121383482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135013"
 ---
-# <a name="xslt-default-templates"></a>Modelli predefiniti XSLT
+# <a name="xslt-default-templates"></a>Modelli XSLT predefiniti
 
 Se il foglio di stile non contiene corrispondenti regole di modello esplicite, nel corso dell'elaborazione XSLT viene usato un modello predefinito. Il modello predefinito, noto anche come regola di modello incorporata, è definito nella sezione 5.8 della raccomandazione W3C XSLT 1.0 (informazioni in lingua inglese). Il modello predefinito consente al processore XSLT di elaborare un nodo anche in assenza di corrispondenti regole di modello esplicite. Tuttavia, poiché la regola di modello incorporata non è definita in modo esplicito nel foglio di stile, possono verificarsi trasformazioni XSLT impreviste o ambigue.
 

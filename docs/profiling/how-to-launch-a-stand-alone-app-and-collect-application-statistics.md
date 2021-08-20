@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a52a66da6607e5c8b85f6ac43bed9a0993d7ab57e64a1cb2630c11104a8b235
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d8626bd4742e14f14b32fe47e3e61412020f5dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121426781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107615"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Avviare un'applicazione autonoma con il profiler e raccogliere statistiche dell'applicazione usando la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.

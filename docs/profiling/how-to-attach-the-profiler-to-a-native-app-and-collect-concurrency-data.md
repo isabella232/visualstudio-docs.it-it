@@ -1,6 +1,6 @@
 ---
-title: Connettere il profiler alle app native & raccogliere dati di concorrenza
-description: Usare Visual Studio Strumenti di profilatura strumenti da riga di comando per collegare il profiler a un'applicazione nativa in esecuzione (C/C++) autonoma e ottenere i dati relativi ai thread.
+title: Connettere il profiler all'app nativa & raccogliere dati di concorrenza
+description: Usare Visual Studio Strumenti di profilatura da riga di comando per connettere il profiler a un'applicazione nativa in esecuzione (C/C++) autonoma e ottenere i dati sui contenuti dei thread.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc19b7a377d689bb0fee3520cd71f231a4f67cea93c13537d5636acb3335f3ec
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a7d1fbbe7ed499e1171a80663b204560d58ae80c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368427"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107849"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione autonoma nativa (C/C++) in esecuzione e raccogliere dati sui conflitti di thread.
@@ -62,7 +62,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
-    |[/attach:](../profiling/attach.md) { `PID`&#124;`ProcName` } [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID di processo (`PID`) o dal nome di processo (*ProcName*). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo.|
+    |[/attach:](../profiling/attach.md) { `PID`&#124;} `ProcName` [/detach](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID di processo (`PID`) o dal nome di processo (*ProcName*). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo.|
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
  Per terminare una sessione di profilatura, non deve essere in corso una raccolta di dati dal profiler. È possibile interrompere la raccolta dei dati da un'applicazione profilata con il metodo di campionamento chiudendo l'applicazione o richiamando l'opzione **VSPerfCmd /detach**. È quindi possibile richiamare l'opzione **VSPerfCmd /shutdown** per disattivare il profiler e chiudere il file di dati di profilatura.

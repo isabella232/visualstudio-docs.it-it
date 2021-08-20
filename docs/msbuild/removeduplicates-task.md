@@ -1,6 +1,6 @@
 ---
 title: Attività RemoveDuplicates | Microsoft Docs
-description: Informazioni su MSBuild'attività RemoveDuplicates per rimuovere elementi duplicati dalla raccolta di elementi specificata.
+description: Informazioni su MSBuild'attività RemoveDuplicates per rimuovere gli elementi duplicati dalla raccolta di elementi specificata.
 ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f987a524d3184bbfc6a019d4e6061f5b14f3b78fe4682cdab225f7c4a9b292e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 53abd38178770ddff46216dbba2cd1548e204fec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369975"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068748"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (attività)
 
@@ -45,7 +45,7 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 
  In questa attività non viene fatta distinzione tra maiuscole e minuscole e non vengono confrontati i metadati quando si determinano i duplicati.
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

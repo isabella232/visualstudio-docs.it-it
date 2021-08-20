@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ec3bb66c9d65507d5b2cc9139d6d120c8fe6120ab5fe7ec5591cb6d52a0c9c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5180ca730b8caba06e31cc3a17443988578b1877
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121316292"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068920"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 

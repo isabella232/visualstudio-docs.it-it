@@ -1,6 +1,6 @@
 ---
 description: Questo metodo invia eventi che significano la creazione e la distruzione di processi e programmi su una porta.
-title: IDebugPortEvents2::Event | Microsoft Docs
+title: Interfaccia IDebugPortEvents2::Event | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30731bddcde55f34cf3e568434909bcd68f728735d44b757ec0da898f31189d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72fba2dcbe82879ab22783cf07727d5c00d546d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121323469"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133029"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Questo metodo invia eventi che significano la creazione e la distruzione di processi e programmi su una porta.
@@ -53,7 +53,7 @@ int Event(
 
 ## <a name="parameters"></a>Parametri
 `pMachine`\
-[in] Oggetto [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) che rappresenta il server di debug (ce ne è uno per ogni istanza di ) in cui si è verificato [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l'evento.
+[in] Oggetto [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) che rappresenta il server di debug (ne esiste uno per ogni istanza di ) in cui si è verificato [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l'evento.
 
 `pPort`\
 [in] Oggetto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta in cui si è verificato l'evento.

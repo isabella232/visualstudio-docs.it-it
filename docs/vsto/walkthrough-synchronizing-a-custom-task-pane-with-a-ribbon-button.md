@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ce9f00bf31013450c25dd3bac6325e7288be50a2b866989fd3b0b9d301b30410
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e76b25516001143842422481eb6055be95a99178
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121225751"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135585"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione
   Questa procedura dettagliata illustra come creare un riquadro attività personalizzato che gli utenti possono nascondere o visualizzare facendo clic su un interruttore sulla barra multifunzione. È consigliabile creare sempre un elemento dell'interfaccia utente, ad esempio un pulsante, che gli utenti possono usare per visualizzare o nascondere il riquadro attività personalizzato, perché le applicazioni di Microsoft Office non forniscono una modalità predefinita per visualizzare o nascondere i riquadri attività personalizzati.

@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b09bef8bfedc1420172c11ab8913d2ba9b305964ef0cd4d0212477d84490de43
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4e4c37a90774cdbd148900a8df9ddb6b3d58bb1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424411"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106536"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità
   Gli strumenti di sviluppo di Office in Visual Studio forniscono classi e finestre di progettazione che gestiscono molti dettagli di implementazione quando vengono usate per creare riquadri attività personalizzati, personalizzazioni della barra multifunzione e aree del modulo di Outlook in un componente aggiuntivo VSTO. Tuttavia, se sono necessari requisiti speciali è anche possibile implementare *l'interfaccia di estendibilità* per ogni funzionalità.

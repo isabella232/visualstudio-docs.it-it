@@ -1,6 +1,6 @@
 ---
 title: 'Passaggio 9: Provare altre funzionalità'
-description: Informazioni su come modificare icone e colori, aggiungere un timer di gioco, aggiungere suoni e ingrandirla.
+description: Informazioni su come modificare icone e colori, aggiungere un timer di gioco, aggiungere suoni e ingrandire il tabellone di gioco.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
@@ -11,17 +11,17 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cc62ff5f6b09d2fde79e2267b294bb2e87328884a3f6ef1b5807ddc2216fd8f0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d35a2ee77341ab97209a41084751a0093b37a818
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386940"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061732"
 ---
 # <a name="step-9-try-other-features"></a>Passaggio 9: Provare altre funzionalità
 Per acquisire maggiore dimestichezza, provare a modificare icone e colori oppure aggiungere un timer di gioco o suoni. Per rendere più impegnativo il gioco, provare a ingrandire la lavagna e a regolare il timer.
 
-Per scaricare una versione completa dell'esempio, vedere Esempio di esercitazione [completa sul gioco corrispondente.](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)
+Per scaricare una versione completa dell'esempio, vedere Completare [l'esempio di esercitazione sul gioco di abbinamenti.](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)
 
 ## <a name="to-try-other-features"></a>Per provare altre funzionalità
 
@@ -49,6 +49,6 @@ Per scaricare una versione completa dell'esempio, vedere Esempio di esercitazion
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Sono disponibili utilissime risorse di formazione video gratuite. Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti). Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali di C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)
+- Sono disponibili utilissime risorse di formazione video gratuite. Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti). Per altre informazioni sulla programmazione in C#, vedere [Nozioni fondamentali su C#: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

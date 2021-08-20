@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 28403c0d33eb9e1076b334a977deaecf6a0a99801a87a33edbcb25f7c9aa7b2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f4e4093edfdc5ff9d2d4ef14bd6cf670c2b9b613
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121456239"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067692"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure da Visual Studio
 

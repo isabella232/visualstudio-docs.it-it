@@ -33,16 +33,16 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e225ca9b342b7808a5cc30beb69a63bc543c62def756ecd1754b908f9e49f0b0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6a7f986674aa215e2fae98dc469bd1807afcedbc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108694"
 ---
 # <a name="link-task"></a>Link (attività)
 
-Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere Opzioni del [linker](/cpp/build/reference/linker-options) [e](/cpp/build/msbuild-visual-cpp) Usare MSBuild dalla riga di comando e Usare il set di strumenti [Microsoft C++ dalla riga di comando.](/cpp/build/building-on-the-command-line)
+Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [](/cpp/build/msbuild-visual-cpp) Opzioni del [linker](/cpp/build/reference/linker-options) e Usare MSBuild dalla riga di comando e Usare il set di strumenti [Microsoft C++ dalla riga di comando.](/cpp/build/building-on-the-command-line)
 
 ## <a name="parameters"></a>Parametri
 
@@ -220,7 +220,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
 - **DelayLoadDLLs**
 
-  Parametro **String[]** facoltativo.
+  Parametro **Facoltativo String[].**
 
   Questo parametro fa in modo che le DLL vengano *caricate in ritardo*. Specificare il nome di una DLL di cui ritardare il caricamento.
 
@@ -254,11 +254,11 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
 - **EmbedManagedResourceFile**
 
-  Parametro **String[]** facoltativo.
+  Parametro **Facoltativo String[].**
 
   Incorpora un file di risorse in un assembly. Specificare il nome file di risorse necessario. Facoltativamente, specificare il nome logico, che viene usato per caricare la risorsa, e l'opzione **PRIVATE**, che indica nel manifesto dell'assembly che il file di risorse è privato.
 
-  Per altre informazioni, vedere [/ASSEMBLYRESOURCE (Incorpora una risorsa gestita).](/cpp/build/reference/assemblyresource-embed-a-managed-resource)
+  Per altre informazioni, vedere [/ASSEMBLYRESOURCE (Incorporamento di una risorsa gestita).](/cpp/build/reference/assemblyresource-embed-a-managed-resource)
 
 - **EnableCOMDATFolding**
 
@@ -282,7 +282,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specifica una funzione del punto di ingresso come indirizzo iniziale per un file *EXE* o una DLL. Specificare un nome di funzione come valore del parametro.
 
-  Per altre informazioni, vedere [/ENTRY (simbolo del punto di ingresso).](/cpp/build/reference/entry-entry-point-symbol)
+  Per altre informazioni, vedere [/ENTRY (simbolo del punto di ingresso)](/cpp/build/reference/entry-entry-point-symbol).
 
 - **FixedBaseAddress**
 
@@ -290,7 +290,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, crea un programma o una DLL caricabile solo nel relativo indirizzo di base preferito.
 
-  Per altre informazioni, vedere [/FIXED (Indirizzo di base fisso).](/cpp/build/reference/fixed-fixed-base-address)
+  Per altre informazioni, vedere [/FIXED (Indirizzo di base fisso)](/cpp/build/reference/fixed-fixed-base-address).
 
 - **ForceFileOutput**
 
@@ -310,7 +310,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
 - **ForceSymbolReferences**
 
-  Parametro **String[]** facoltativo.
+  Parametro **Facoltativo String[].**
 
   Questo parametro indica al linker di aggiungere un simbolo specificato alla tabella dei simboli.
 
@@ -322,7 +322,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Questo parametro ottimizza il programma inserendo le funzioni incluse nel pacchetto specificate (COMDATs) nell'immagine secondo un ordine predeterminato.
 
-  Per altre informazioni, vedere [/ORDER (Inserisci funzioni nell'ordine).](/cpp/build/reference/order-put-functions-in-order)
+  Per altre informazioni, vedere [/ORDER (Inserire funzioni nell'ordine)](/cpp/build/reference/order-put-functions-in-order).
 
 - **GenerateDebugInformation**
 
@@ -330,7 +330,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, crea informazioni di debug per il file *EXE* o per la DLL.
 
-  Per altre informazioni, vedere [/DEBUG (Genera informazioni di debug).](/cpp/build/reference/debug-generate-debug-info)
+  Per altre informazioni, vedere [/DEBUG (Genera informazioni di debug)](/cpp/build/reference/debug-generate-debug-info).
 
 - **GenerateManifest**
 
@@ -344,9 +344,9 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Parametro **booleano** facoltativo.
 
-  Se `true`, crea un *file di mappa*. L'estensione del nome file del file di mapping è *map.*
+  Se `true`, crea un *file di mappa*. L'estensione del nome file del file di mapping è *.map*.
 
-  Per altre informazioni, vedere [/MAP (Genera file map).](/cpp/build/reference/map-generate-mapfile)
+  Per altre informazioni, vedere [/MAP (Genera mapfile)](/cpp/build/reference/map-generate-mapfile).
 
 - **HeapCommitSize**
 
@@ -354,7 +354,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specifica la quantità di memoria fisica nellheap da allocare alla volta.
 
-  Per altre informazioni, vedere `commit` l'argomento in [/HEAP (Imposta dimensioni heap).](/cpp/build/reference/heap-set-heap-size) Vedere anche il parametro **HeapReserveSize**.
+  Per altre informazioni, vedere `commit` l'argomento in [/HEAP (Impostare le dimensioni dell'heap).](/cpp/build/reference/heap-set-heap-size) Vedere anche il parametro **HeapReserveSize**.
 
 - **HeapReserveSize**
 
@@ -362,7 +362,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specifica il totale di allocazione dell'heap nella memoria virtuale.
 
-  Per altre informazioni, vedere `reserve` l'argomento in [/HEAP (Imposta dimensioni heap).](/cpp/build/reference/heap-set-heap-size) Vedere anche il parametro **HeapCommitSize** in questa tabella.
+  Per altre informazioni, vedere `reserve` l'argomento in [/HEAP (Impostare le dimensioni dell'heap).](/cpp/build/reference/heap-set-heap-size) Vedere anche il parametro **HeapCommitSize** in questa tabella.
 
 - **IgnoreAllDefaultLibraries**
 
@@ -390,7 +390,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
 - **IgnoreSpecificDefaultLibraries**
 
-  Parametro **String[]** facoltativo.
+  Parametro **Facoltativo String[].**
 
   Specifica il nome di una o più librerie predefinite da ignorare. Separare più librerie usando il punto e virgola.
 
@@ -402,13 +402,13 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, il linker produce un'immagine solo se può produrre anche una tabella dei gestori di eccezioni sicuri dell'immagine.
 
-  Per altre informazioni, vedere [/SAFESEH (l'immagine ha gestori di eccezioni sicuri).](/cpp/build/reference/safeseh-image-has-safe-exception-handlers)
+  Per altre informazioni, vedere [/SAFESEH (l'immagine include gestori di eccezioni sicure).](/cpp/build/reference/safeseh-image-has-safe-exception-handlers)
 
 - **ImportLibrary**
 
   Nome della libreria di importazione specificato dall'utente che sostituisce il nome predefinito della libreria.
 
-  Per altre informazioni, vedere [/IMPLIB (Assegnare un nome alla libreria di importazione).](/cpp/build/reference/implib-name-import-library)
+  Per altre informazioni, vedere [/IMPLIB (Name import library)](/cpp/build/reference/implib-name-import-library).
 
 - **KeyContainer**
 
@@ -416,7 +416,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Contenitore che contiene la chiave per un assembly firmato.
 
-  Per altre informazioni, vedere [/KEYCONTAINER (Specifica un contenitore di chiavi per firmare un assembly).](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) Vedere anche il parametro **KeyFile** in questa tabella.
+  Per altre informazioni, vedere [/KEYCONTAINER (Specificare un contenitore di chiavi per firmare un assembly).](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) Vedere anche il parametro **KeyFile** in questa tabella.
 
 - **Keyfile**
 
@@ -424,7 +424,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specifica un file che contiene la chiave per un assembly firmato.
 
-  Per altre informazioni, vedere [/KEYFILE (specifica la chiave o la coppia di chiavi per firmare un assembly).](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) Vedere anche il parametro **KeyContainer**.
+  Per altre informazioni, vedere [/KEYFILE (Specificare una chiave o una coppia di chiavi per firmare un assembly).](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) Vedere anche il parametro **KeyContainer**.
 
 - **LargeAddressAware**
 
@@ -482,7 +482,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, specifica che il linker deve visualizzare un indicatore di stato che mostra la percentuale di completamento del collegamento.
 
-  Per altre informazioni, vedere `STATUS` l'argomento di [/LTCG (generazione di](/cpp/build/reference/ltcg-link-time-code-generation)time code collegamento).
+  Per altre informazioni, vedere `STATUS` l'argomento [di /LTCG (generazione time code collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).
 
 - **LinkTimeCodeGeneration**
 
@@ -506,13 +506,13 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Per altre informazioni, vedere [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).
 
-- **File Manifesto**
+- **ManifestFile**
 
   Parametro **String** facoltativo.
 
   Sostituisce il nome file manifesto predefinito con il nome file specificato.
 
-  Per altre informazioni, vedere [/MANIFESTFILE (Denota file manifesto).](/cpp/build/reference/manifestfile-name-manifest-file)
+  Per altre informazioni, vedere [/MANIFESTFILE (Nome file manifesto)](/cpp/build/reference/manifestfile-name-manifest-file).
 
 - **MapExports**
 
@@ -520,7 +520,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, indica al linker di includere le funzioni esportate in un file di mappa.
 
-  Per altre informazioni, vedere `EXPORTS` l'argomento di [/MAPINFO (Include information in mapfile)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
+  Per altre informazioni, vedere `EXPORTS` l'argomento [di /MAPINFO (Include information in mapfile)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
 - **MapFileName**
 
@@ -534,7 +534,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specifica il nome file e l'estensione di file del file *IDL*.
 
-  Per altre informazioni, vedere [/IDLOUT (assegnare un nome ai file di output MIDL).](/cpp/build/reference/idlout-name-midl-output-files)
+  Per altre informazioni, vedere [/IDLOUT (Denome file di output MIDL).](/cpp/build/reference/idlout-name-midl-output-files)
 
 - **MergeSections**
 
@@ -542,7 +542,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Combina le sezioni in un'immagine. Specificare `from-section=to-section`.
 
-  Per altre informazioni, vedere [/MERGE (Combina sezioni).](/cpp/build/reference/merge-combine-sections)
+  Per altre informazioni, vedere [/MERGE (combina sezioni)](/cpp/build/reference/merge-combine-sections).
 
 - **MidlCommandFile**
 
@@ -550,7 +550,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specificare il nome di un file che contiene opzioni della riga di comando MIDL.
 
-  Per altre informazioni, vedere [/MIDL (Specifica le opzioni della riga](/cpp/build/reference/midl-specify-midl-command-line-options)di comando MIDL).
+  Per altre informazioni, vedere [/MIDL (Specificare le opzioni della riga di comando MIDL).](/cpp/build/reference/midl-specify-midl-command-line-options)
 
 - **MinimumRequiredVersion**
 
@@ -564,7 +564,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specifica il nome di un [file di definizione moduli](/cpp/build/reference/module-definition-dot-def-files).
 
-  Per altre informazioni, vedere [/DEF (Specifica il file di definizione del modulo).](/cpp/build/reference/def-specify-module-definition-file)
+  Per altre informazioni, vedere [/DEF (Specificare il file di definizione del modulo)](/cpp/build/reference/def-specify-module-definition-file).
 
 - **MSDOSStubFileName**
 
@@ -580,7 +580,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, crea una DLL di sole risorse.
 
-  Per altre informazioni, vedere [/NOENTRY (nessun punto di ingresso).](/cpp/build/reference/noentry-no-entry-point)
+  Per altre informazioni, vedere [/NOENTRY (Nessun punto di ingresso)](/cpp/build/reference/noentry-no-entry-point).
 
 - **ObjectFiles**
 
@@ -602,7 +602,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Esegue l'override del nome e del percorso predefiniti del programma creato dal linker.
 
-  Per altre informazioni, vedere [/OUT (Nome file di output)](/cpp/build/reference/out-output-file-name).
+  Per altre informazioni, vedere [/OUT (nome file di output).](/cpp/build/reference/out-output-file-name)
 
 - **PerUserRedirection**
 
@@ -622,7 +622,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, indica a *Bind.exe* che l'immagine collegata non deve essere associata.
 
-  Per altre informazioni, vedere [/ALLOWBIND (Impedisci associazione DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
+  Per altre informazioni, vedere [/ALLOWBIND (Impedisci associazione DLL).](/cpp/build/reference/allowbind-prevent-dll-binding)
 
 - **Profilo**
 
@@ -676,7 +676,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, imposta il checksum nell'intestazione di un file *EXE*.
 
-  Per altre informazioni, vedere [/RELEASE (Imposta il checksum)](/cpp/build/reference/release-set-the-checksum).
+  Per altre informazioni, vedere [/RELEASE (imposta il checksum).](/cpp/build/reference/release-set-the-checksum)
 
 - **ShowProgress**
 
@@ -714,7 +714,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Specifica gli attributi di una sezione. Esegue l'override degli attributi impostati quando è stato compilato il file *OBJ* per la sezione.
 
-  Per altre informazioni, vedere [/SECTION (Specificare gli attributi della sezione).](/cpp/build/reference/section-specify-section-attributes)
+  Per altre informazioni, vedere [/SECTION (Specifica gli attributi della sezione).](/cpp/build/reference/section-specify-section-attributes)
 
 - **StackCommitSize**
 
@@ -738,7 +738,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Crea un secondo file database di programma (PDB) che omette i simboli che non si vuole distribuire ai clienti. Specificare il nome del secondo file PDB.
 
-  Per altre informazioni, vedere [/PDBSTRIPPED (Strip private symbols)](/cpp/build/reference/pdbstripped-strip-private-symbols).
+  Per altre informazioni, vedere [/PDBSTRIPPED (Rimuove i simboli privati).](/cpp/build/reference/pdbstripped-strip-private-symbols)
 
 - **Sottosistema**
 
@@ -758,7 +758,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   - **Applicazione EFI**  -  **/SUBSYSTEM:EFI_APPLICATION**
 
-  - **Driver del servizio di avvio**  -  EFI **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+  - Driver del **servizio di avvio EFI**  -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
   - ROM EFI   -  **/SUBSYSTEM:EFI_ROM**
 
@@ -776,7 +776,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, indica al linker di non includere una tabella di indirizzi di importazione nell'immagine finale.
 
-  Per altre informazioni, vedere `NOBIND` l'argomento [/DELAY (Delay load import settings)](/cpp/build/reference/delay-delay-load-import-settings).
+  Per altre informazioni, vedere `NOBIND` l'argomento di [/DELAY (impostazioni di importazione a caricamento ritardato).](/cpp/build/reference/delay-delay-load-import-settings)
 
 - **SupportUnloadOfDelayLoadedDLL**
 
@@ -784,7 +784,7 @@ Esegue il wrapping dello strumento del linker Microsoft C++, *link.exe*. Lo stru
 
   Se `true`, indica alla funzione dell'helper di caricamento ritardato di supportare lo scaricamento esplicito della DLL.
 
-  Per altre informazioni, vedere `UNLOAD` l'argomento [di /DELAY (Impostazioni di caricamento ritardato dell'importazione).](/cpp/build/reference/delay-delay-load-import-settings)
+  Per altre informazioni, vedere `UNLOAD` l'argomento [/DELAY (Delay load import settings)](/cpp/build/reference/delay-delay-load-import-settings).
 
 - **SuppressStartupBanner**
 

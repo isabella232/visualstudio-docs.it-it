@@ -12,14 +12,14 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 61e061c656e94a7aae6b6cbaeabc7614284cd8483a7120993fe87f951caadb8f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b32cdf6da48b1becc9aed825f6e14127e31ee30b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121227752"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135819"
 ---
-# <a name="create-unit-test-method-stubs-from-code"></a>Creare unit test stub del metodo dal codice
+# <a name="create-unit-test-method-stubs-from-code"></a>Creare unit test stub di metodo dal codice
 
 Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa.
 
@@ -29,7 +29,7 @@ Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Il comando di menu **Crea unit test** è disponibile solo per il codice C#.
+> Il comando di menu **Crea unit** test è disponibile solo per il codice C#.
 ::: moniker-end
 
 Il comando di menu **Crea unit test** è estendibile e può essere usato per generare test per MSTest, MSTest V2, NUnit e xUnit.
@@ -40,7 +40,7 @@ Per iniziare, selezionare un metodo, un tipo o uno spazio dei nomi nell'editor d
 
 ![Uso del comando Crea unit test](media/createunittestcommand.png)
 
-Se le opzioni del framework di test per NUnit o xUnit non sono disponibili, vedere Usare framework di unit test [di terze parti.](#use-third-party-unit-test-frameworks)
+Se le opzioni del framework di test per NUnit o xUnit non sono disponibili, vedere Usare framework unit test [di terze parti.](#use-third-party-unit-test-frameworks)
 
 ## <a name="set-unit-test-traits"></a>Impostare tratti di unit test
 

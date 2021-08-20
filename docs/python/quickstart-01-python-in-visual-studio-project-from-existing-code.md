@@ -1,21 +1,22 @@
 ---
-title: Guida introduttiva-creare un progetto Python dal codice
+title: Guida introduttiva- Creare un progetto Python dal codice
 description: In questa guida introduttiva viene creato un progetto Visual Studio per Python da una cartella esistente, usando un modello appropriato.
 ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2a4df840a2eaa6077589b86b28aab1a7f83c8f55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b6e49c140cec81412daacaffa42fe0b1563b224
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879800"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068696"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Guida introduttiva: Creare un progetto Python a partire da un codice esistente
 
@@ -26,7 +27,7 @@ Dopo aver [installato il supporto Python in Visual Studio](installing-python-sup
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-Se lo si desidera, eseguire il programma premendo **CTRL** + **F5** o selezionando **debug**  >  **Avvia senza eseguire debug**.
+Se lo si desidera, eseguire il programma premendo **CTRL** + **F5** o selezionando **Avvia** debug senza  >  **eseguire debug**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

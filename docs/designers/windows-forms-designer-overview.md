@@ -1,6 +1,6 @@
 ---
 title: Progettare app di Windows Form
-description: Informazioni sulle Progettazione Windows Form in Visual Studio, che fornisce una soluzione di sviluppo rapida per la creazione di applicazioni basate su Windows Form.
+description: Informazioni su Windows Progettazione Form in Visual Studio, che offre una soluzione di sviluppo rapido per la creazione Windows applicazioni basate su form.
 ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: overview
@@ -9,12 +9,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 768c19f78102bf19346867beda967a069c1d182e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-designers
+ms.openlocfilehash: 667fad26fdf2e09a4982b656a645666048b60ecf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844957"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133536"
 ---
 # <a name="windows-forms-designer-overview"></a>Panoramica di Progettazione Windows Form
 
@@ -39,7 +40,7 @@ Usando la finestra di progettazione è possibile:
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Panoramica di Windows Form](/dotnet/framework/winforms/windows-forms-overview)
+- [Windows Panoramica dei moduli](/dotnet/framework/winforms/windows-forms-overview)
 - [Controlli Windows Form](/dotnet/framework/winforms/controls/)
 - [Input dell'utente in Windows Form](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Associare dati in Windows Form](/dotnet/framework/winforms/windows-forms-data-binding)

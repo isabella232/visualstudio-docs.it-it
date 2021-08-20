@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a972617b071f3c6f45a289a5fc01647bf3adee7fd9ebfa4ba4e2712c4774816
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 521a185b3733ef8f5c4f862b992d1953031fd5fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110774"
 ---
 # <a name="stepkind"></a>STEPKIND
 Specifica il tipo di passaggio per l'esecuzione di istruzioni.

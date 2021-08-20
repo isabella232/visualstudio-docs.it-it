@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b6abba8ab26670cb2c76f8208a9c57d2b4975dff7233759c4666c1051ecf9430
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72610d93adcc036aaa9f1b742a0b87b01d89def5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352019"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130468"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Impatto del salvataggio automatico sulle Office soluzioni
 

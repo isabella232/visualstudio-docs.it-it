@@ -1,5 +1,5 @@
 ---
-title: Elementi Groups | Microsoft Docs
+title: Elemento Groups | Microsoft Docs
 description: L'elemento Groups contiene voci che definiscono i gruppi di comandi di un VSPackage. Questo articolo include un esempio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 465340b0252acf75fc9a083e2990e4857d300c911e939ea8d4bb726c1fff6a3e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 703c0717a93cd2a201bad708830c42497758edb3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087002"
 ---
 # <a name="groups-element"></a>Elemento Groups
 Contiene voci che definiscono i gruppi di comandi di un VSPackage.
@@ -40,7 +40,7 @@ Contiene voci che definiscono i gruppi di comandi di un VSPackage.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -53,7 +53,7 @@ Contiene voci che definiscono i gruppi di comandi di un VSPackage.
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti del pacchetto VSPackage.|
 
 ## <a name="example"></a>Esempio
 

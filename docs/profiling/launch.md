@@ -7,15 +7,16 @@ ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c6072fe7e3387f19669861e5ede945ab3f0c417a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 57c7cbe1ee119489171417515e557b46ee2755ed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917993"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107420"
 ---
 # <a name="launch"></a>Launch
 L'opzione **Launch** avvia il profiler usando il metodo di campionamento e avvia anche l'applicazione specificata.
@@ -34,11 +35,11 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Opzioni valide
  Le seguenti opzioni di VSPerfCmd possono essere combinate con l'opzione **Launch** in una singola riga di comando.
 
- **Inizio:** `Method` Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.
+ **Avvio:** `Method` Inizializza la sessione del profiler della riga di comando e imposta il metodo di profilatura specificato.
 
  **GlobalOn** e **GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
 
- **ProcessOn:** `PID` e **ProcessOff**: `PID` riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
+ **ProcessOn:** `PID` e **ProcessOff**: riprende `PID` (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
 
  **TargetCLR** Specifica la versione di Common Language Runtime (CLR) di .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.
 
@@ -47,14 +48,14 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **Console** Avvia l'applicazione della riga di comando specificata in una nuova finestra.
 
- **Argomenti:** `ArgList` Specifica l'elenco di argomenti da passare all'applicazione.
+ **Args:** `ArgList` Specifica l'elenco di argomenti da passare all'applicazione.
 
  **LineOff** Disabilita la raccolta dei dati di profilatura a livello di riga.
 
 ## <a name="sampling-options"></a>Opzioni di campionamento
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di **Launch**. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**sys**[**:** `Events` ]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[:**allocation**&#124;**Lifetime**] specifica il numero e il tipo di intervallo di campionamento.
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**Sys**[**:** `Events` ]**Counter**[**:**, ] GC [: allocation&#124;lifetime ] Specifica il numero e il tipo di intervallo `Name` `Reload` di `FriendlyName` campionamento. 
 
 - **Timer**: esegue il campionamento di ogni `Cycles` dei cicli di clock del processore non interrotti. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 

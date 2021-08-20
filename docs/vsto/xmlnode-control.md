@@ -15,15 +15,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ffd8fd0aa1b6d969a610f411caef11d09f47e3e73340ff82b3cab3fe5538cf22
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8b3c67526ac00f9cc7266f6bb93992505d3b70ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440643"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068275"
 ---
 # <a name="xmlnode-control"></a>XMLNode (controllo)
-  **Importante** Le informazioni contenute in questo argomento relative a Microsoft Word vengono presentate esclusivamente a vantaggio e all'uso di utenti e organizzazioni che si trovano al di fuori del Stati Uniti e dei relativi territori o che usano o sviluppano programmi in esecuzione su prodotti Microsoft Word concessi in licenza da Microsoft prima di gennaio 2010, quando Microsoft ha rimosso un'implementazione di funzionalità specifiche correlate al codice XML personalizzato da Microsoft Word. Queste informazioni relative Microsoft Word non possono essere lette o usate da singoli utenti o organizzazioni nel Stati Uniti o nei relativi territori che usano o sviluppano programmi eseguiti su prodotti Microsoft Word concessi in licenza da Microsoft dopo il 10 gennaio 2010; tali prodotti non si comporteranno come i prodotti concessi in licenza prima di tale data o acquistati e concessi in licenza per l'uso al di fuori del Stati Uniti.
+  **Importante** Le informazioni contenute in questo argomento relative a Microsoft Word vengono presentate esclusivamente a vantaggio e all'uso di utenti e organizzazioni che si trovano al di fuori del Stati Uniti e dei relativi territori o che usano o sviluppano programmi in esecuzione su prodotti Microsoft Word concessi in licenza da Microsoft prima di gennaio 2010, quando Microsoft ha rimosso un'implementazione di funzionalità specifiche correlate al codice XML personalizzato da Microsoft Word. Queste informazioni relative Microsoft Word non possono essere lette o usate da singoli utenti o organizzazioni nel Stati Uniti o nei relativi territori che usano o sviluppano programmi in esecuzione su prodotti Microsoft Word concessi in licenza da Microsoft dopo il 10 gennaio 2010; tali prodotti non si comporteranno come i prodotti concessi in licenza prima di tale data o acquistati e concessi in licenza per l'uso al di fuori del Stati Uniti.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
@@ -59,7 +59,7 @@ ms.locfileid: "121440643"
 - <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
 
 ## <a name="compare-events"></a>Confrontare gli eventi
- È possibile acquisire un evento quando l'utente sposta il cursore all'interno del contesto di un determinato <xref:Microsoft.Office.Tools.Word.XMLNode> controllo. Ad esempio, è possibile avere un controllo denominato con un controllo figlio denominato e con due <xref:Microsoft.Office.Tools.Word.XMLNode> controlli figlio denominati e come indicato `Customer` di <xref:Microsoft.Office.Tools.Word.XMLNode> `Company` `Company` <xref:Microsoft.Office.Tools.Word.XMLNode> `CompanyName` `CompanyRegion` seguito:
+ È possibile acquisire un evento quando l'utente sposta il cursore all'interno del contesto di un determinato <xref:Microsoft.Office.Tools.Word.XMLNode> controllo. Ad esempio, è possibile avere un controllo denominato con un controllo figlio denominato e con <xref:Microsoft.Office.Tools.Word.XMLNode> due controlli figlio denominati e come indicato `Customer` di <xref:Microsoft.Office.Tools.Word.XMLNode> `Company` `Company` <xref:Microsoft.Office.Tools.Word.XMLNode> `CompanyName` `CompanyRegion` seguito:
 
 ```xml
 <Customer>

@@ -9,16 +9,16 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: 76a886002bb8b8d7aaeca60690e83847087bf42cb5d54e9cee7922c714e61a29
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8b371a8132e7de05bef68cc8ff67d0951ce67d8f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121348896"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105912"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 
-Con Visual Studio, è possibile connettere uno degli elementi seguenti a Archiviazione di Azure usando la **Servizi connessi** funzionalità:
+Con Visual Studio, è possibile connettere uno degli elementi seguenti a Archiviazione di Azure usando **la** Servizi connessi funzionalità:
 
 - .NET Framework app console
 - ASP.NET MVC (.NET Framework)
@@ -26,7 +26,7 @@ Con Visual Studio, è possibile connettere uno degli elementi seguenti a Archivi
 - .NET Core (tra cui app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App Windows universali
+- App Windows Universal Platform
 - Xamarin
 - Cordova
 
@@ -45,7 +45,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con  il pulsante destro del mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu **di scelta rapida.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro **del** mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
     ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 

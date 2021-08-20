@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f769f7af0412b19be1addd0b556a647c5d8041bd9b3c3f48e0022315d3519bc9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 22bb90aff703d1782a602fab9f23b7923a2620bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121419923"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134051"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
 

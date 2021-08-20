@@ -11,21 +11,21 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b6852d06048acf86f50c8d56fb91bc8a298ec949d77d9a23afef5cc56adb68ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 55e8812004cb652512eb946218a969679ad399bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121230196"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060765"
 ---
 # <a name="format-python-code"></a>Formattare il codice Python
 
 Visual Studio consente di riformattare rapidamente il codice in base a opzioni di formattazione preconfigurate.
 
-- Per formattare una selezione: selezionare **Modifica**  >  **selezione formato**  >  **avanzata** o premere **CTRL** + **E**  >  **F**.
-- Per formattare l'intero file, selezionare **Modifica**  >  **documento**  >  **di formato avanzato** o premere  +   >  **CTRL+D.**
+- Per formattare una selezione, selezionare **Modifica**  >  **selezione formato**  >  **avanzato** o premere **CTRL** + **E**  >  **F**.
+- Per formattare l'intero file, selezionare **Modifica**  >  **documento in** formato  >  **avanzato** o premere  +   >  **CTRL+D.**
 
-Le opzioni vengono impostate tramite Strumenti **Opzioni**  >  **Editor di** testo  >    >  **Formattazione Python**  >   e le relative schede annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
+Le opzioni vengono impostate tramite **Strumenti Opzioni** Editor di  >    >  **testo**  >  **Formattazione Python**  >   e le relative schede annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
 
 ![Opzioni di formattazione di Python in Visual Studio](media/options-editor-formatting.png)
 
@@ -110,7 +110,7 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Fill Comment Paragraph (Riempi paragrafo commenti)
 
-**Modifica**  >  **Avanzate**  >  **Riempi paragrafo di commento** (**CTRL** E P ) ridisposi il testo dei commenti e lo formatta, combinando le righe brevi e +   >  suddividendo quelle lunghe.
+**Modifica**  >  **Avanzate**  >  **Riempi paragrafo commento** (**CTRL** E P ) ridisponi e formatta il testo del commento, combinando le righe brevi e +   >  suddividendo quelle lunghe.
 
 Esempio:
 

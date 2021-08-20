@@ -1,6 +1,6 @@
 ---
 title: Attività GenerateBootstrapper | Microsoft Docs
-description: Usare l'attività GenerateBootstrapper di MSBuild per un modo automatico per rilevare, scaricare e installare un'applicazione e i relativi prerequisiti.
+description: Usare l MSBuild generateBootstrapper per un modo automatico per rilevare, scaricare e installare un'applicazione e i relativi prerequisiti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,15 @@ ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 93dbe9d3bf49118328cb53dcd6602bb5fda77b13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b198b62a7931d2bb88e3194cc8f159d67602c98d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914874"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069251"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (attività)
 
@@ -80,7 +81,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
   </BootstrapperItem>
   ```
 
-   L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input MSBuild necessari, a meno che non `ApplicationFile` sia specificato No. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.
+   L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono necessari per MSBuild di input, a meno che non `ApplicationFile` venga specificato alcun elemento . È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.
 
    Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.
 
@@ -154,7 +155,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
 
 ## <a name="example"></a>Esempio
 

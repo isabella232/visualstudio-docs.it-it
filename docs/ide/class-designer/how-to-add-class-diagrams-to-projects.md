@@ -11,14 +11,15 @@ ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0af2717efec7cab8594f193c06e8813bd556b01f
-ms.sourcegitcommit: c3713f284c4fe10b10996d5eb67077ddd8641424
+ms.openlocfilehash: 539c3f9bbd59de6bc1df1bf60f39d96b1b1f439b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112375786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069508"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Procedura: Aggiungere diagrammi classi ai progetti
 
@@ -44,7 +45,7 @@ Se non è stato installato il componente **Progettazione classi**, seguire quest
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>Aggiungere un diagramma classi vuoto a un progetto
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e quindi scegliere **Aggiungi** > **Nuovo elemento**. In caso contrario, premere **CTRL** + **MAIUSC** + **A.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e quindi scegliere **Aggiungi** > **Nuovo elemento**. In caso contrario, **premere CTRL** + **MAIUSC** + **A.**
 
    Verrà **visualizzata la finestra di dialogo** Aggiungi nuovo elemento.
 
@@ -66,11 +67,11 @@ In **Esplora soluzioni** aprire il menu di scelta rapida di un file di classe (c
 In **Visualizzazione classi** aprire il menu di scelta rapida del tipo o dello spazio dei nomi e quindi scegliere **Visualizza diagramma classi**.
 
 > [!TIP]
-> Se **Visualizzazione classi** non è aperto, **aprire** Visualizzazione classi **dal** menu Visualizza.
+> Se **Visualizzazione classi** non è aperto, aprire **Visualizzazione classi** **dal** menu Visualizza.
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Per visualizzare il contenuto di un progetto completo in un diagramma classi
 
-In **Esplora soluzioni** o Visualizzazione classi fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizza**, quindi scegliere Visualizza **diagramma classi**.
+In **Esplora soluzioni** o Visualizzazione classi fare clic con il pulsante destro del mouse sul progetto e scegliere Visualizza **,** quindi scegliere Visualizza **diagramma classi.**
 
 Verrà creato un diagramma classi compilato automaticamente.
 

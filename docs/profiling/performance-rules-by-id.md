@@ -1,21 +1,22 @@
 ---
 title: Regole di prestazioni in base all'ID | Microsoft Docs
-description: "Informazioni sulle regole relative alle prestazioni in base all'ID, incluso DA0001: Use StringBuilder for concatenations and DA0011: dispendiod CompareTo."
+description: "Informazioni sulle regole di prestazioni in base all'ID, tra cui DA0001: Usare StringBuilder per le concatenazioni e DA0011: Expensive CompareTo."
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d37686ff8bde7824fe27a3d2084dada9e758c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a12e90b25411e05985e80230c36cfb9452cc902
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922120"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107134"
 ---
 # <a name="performance-rules-by-id"></a>Regole di prestazioni in base all'ID
 
@@ -46,7 +47,7 @@ ms.locfileid: "99922120"
 | [DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md) | Le chiamate ai metodi <xref:System.Data> costituiscono una percentuale significativa dei dati di profilatura e non sono stati raccolti dati di interazione tra livelli durante l'esecuzione della profilatura. È consigliabile ripetere la profilatura e aggiungere dati di interazione tra livelli. |
 | [DA0038: Frequenza elevata di conflitti di blocco](../profiling/da0038-high-rate-of-lock-contentions.md) | I dati sulle prestazioni del sistema raccolti con i dati di profilatura indicano un'enorme frequenza di conflitti di blocco durante l'esecuzione dell'applicazione. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti. |
 | [DA0039: Frequenza molto elevata di conflitti di blocco](../profiling/da0039-very-high-rate-of-lock-contentions.md) | I dati sulle prestazioni del sistema raccolti con i dati di profilatura indicano una frequenza eccessivamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. Considerare la possibilità di eseguire di nuovo la profilatura con il metodo di profilatura della concorrenza per individuare la causa del conflitto. |
-| [DA0501: utilizzo medio della CPU da parte del processo sottofilato.](../profiling/da0501-average-cpu-consumption-by-the-process-being-profiled.md) | In questo messaggio viene indicata la percentuale di tempo impiegato da un processore per l'esecuzione di istruzioni dall'applicazione. Il valore indicato è il valore medio fra tutti gli intervalli di misurazione nei quali il processo sottoposto a profilatura era attivo. In un computer con più processori il valore può essere maggiore del 100%. |
+| [DA0501: Utilizzo medio della CPU del processo profilato.](../profiling/da0501-average-cpu-consumption-by-the-process-being-profiled.md) | In questo messaggio viene indicata la percentuale di tempo impiegato da un processore per l'esecuzione di istruzioni dall'applicazione. Il valore indicato è il valore medio fra tutti gli intervalli di misurazione nei quali il processo sottoposto a profilatura era attivo. In un computer con più processori il valore può essere maggiore del 100%. |
 | [DA0502: Consumo massimo CPU del processo sottoposto a profilatura](../profiling/da0502-maximum-cpu-consumption-by-the-process-being-profiled.md) | In questo messaggio viene indicata la percentuale più elevata di tempo impiegato da un processore per l'esecuzione di istruzioni dall'applicazione. Il valore indicato è il valore più elevato segnalato fra tutti gli intervalli di misurazione nei quali il processo sottoposto a profilatura era attivo. In un computer con più processori la percentuale può essere maggiore del 100%. |
 | [DA0503: Working set medio in byte del processo sottoposto a profilatura](../profiling/da0503-average-working-set-in-bytes-for-the-process-being-profiled.md) | Questo messaggio indica la quantità media di memoria fisica, in byte, usata attualmente dal processo espressa in byte (il working set). Il working set del processo contiene pagine provenienti dallo spazio indirizzi del processo che attualmente occupano memoria fisica. |
 | [DA0504: Working set massimo in byte del processo sottoposto a profilatura](../profiling/da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md) | Questo messaggio indica la quantità più elevata di memoria fisica, in byte, usata attualmente dal processo. Il working set del processo contiene pagine provenienti dallo spazio indirizzi del processo che attualmente occupano memoria fisica. Questa regola indica il valore più elevato per il working set del processo mentre la profilatura era attiva. |

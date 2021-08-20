@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 20090419fd73492e60645dc0742505d15da4a21a8fc6811f17611feeb207a565
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1e7928b06a75ed3a27d654182ab65f0baeba6144
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392770"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059424"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati delle metriche del codice
 
@@ -95,7 +95,7 @@ I risultati vengono generati e viene **visualizzata la** finestra Risultati metr
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Il **comando Calcola metriche codice** non funziona per i progetti .NET Core e .NET Standard codice. Per calcolare le metriche del codice per un progetto .NET Standard .NET Core, è possibile:
+> Il **comando Calcola metriche codice** non funziona per i progetti .NET Core e .NET Standard codice. Per calcolare le metriche del codice per un progetto .NET Core o .NET Standard, è possibile:
 >
 > - Calcolare invece le metriche del codice [dalla riga di comando](#command-line-code-metrics)
 >
@@ -105,7 +105,7 @@ I risultati vengono generati e viene **visualizzata la** finestra Risultati metr
 
 ## <a name="command-line-code-metrics"></a>Metriche del codice della riga di comando
 
-È possibile generare dati sulle metriche del codice dalla riga di comando per i progetti C# e Visual Basic per .NET Framework, .NET Core e .NET Standard applicazioni. Per eseguire metriche del codice dalla riga di comando, installare il pacchetto [microsoft.CodeAnalysis.Metrics NuGet](#microsoftcodeanalysismetrics-nuget-package) o compilare manualmente ilMetrics.exe[file](#metricsexe) eseguibile.
+È possibile generare dati sulle metriche del codice dalla riga di comando per i progetti C# e Visual Basic per .NET Framework, .NET Core e .NET Standard app. Per eseguire le metriche del codice dalla riga di comando, installare il pacchetto [microsoft.CodeAnalysis.Metrics NuGet](#microsoftcodeanalysismetrics-nuget-package) o compilare ilMetrics.exe[eseguibile](#metricsexe) manualmente.
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pacchetto NuGet Microsoft.CodeAnalysis.Metrics
 
@@ -278,7 +278,7 @@ L'output XML generato ha il formato seguente:
 Se non si vuole installare il pacchetto NuGet, è possibile  generare e usare direttamente ilMetrics.exeeseguibile. Per generare il file *Metrics.exe* eseguibile:
 
 1. Clonare [il repo dotnet/roslyn-analyzers.](https://github.com/dotnet/roslyn-analyzers)
-2. Aprire Prompt dei comandi per gli sviluppatori per Visual Studio come amministratore.
+2. Aprire Prompt dei comandi per gli sviluppatori per Visual Studio amministratore.
 3. Dalla radice del **repo roslyn-analyzers** eseguire il comando seguente: `Restore.cmd`
 4. Modificare la directory in *src\Tools\Metrics*.
 5. Eseguire il comando seguente per compilare **il progetto Metrics.csproj:**
@@ -314,11 +314,11 @@ Per altre informazioni, vedere [Abilitare la generazione di metriche del codice 
 ### <a name="previous-versions"></a>Versioni precedenti
 
 ::: moniker range=">=vs-2019"
-Visual Studio 2015 includeva uno strumento di metrica del codice da riga di comando denominato *ancheMetrics.exe*. Questa versione precedente dello strumento ha fatto un'analisi binaria, cio' un'analisi basata su assembly. La versione più recente dello strumento *Metrics.exe* analizza invece il codice sorgente. Poiché lo  strumentoMetrics.exepiù recente è basato sul codice sorgente, i risultati delle metriche del codice della riga di comando possono essere diversi da quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*. A partire Visual Studio 2019, l'IDE Visual Studio analizza il codice sorgente come lo strumento da riga di comando e i risultati dovrebbero essere gli stessi.
+Visual Studio 2015 includeva uno strumento di metrica del codice da riga di comando denominato *ancheMetrics.exe*. Questa versione precedente dello strumento ha fatto un'analisi binaria, cio' un'analisi basata su assembly. La versione più recente dello strumento *Metrics.exe* analizza invece il codice sorgente. Poiché lo  strumentoMetrics.exepiù recente è basato sul codice sorgente, i risultati delle metriche del codice della riga di comando possono essere diversi da quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*. A partire Visual Studio 2019, l'IDE di Visual Studio analizza il codice sorgente come lo strumento da riga di comando e i risultati dovrebbero essere gli stessi.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2015 includeva uno strumento di metrica del codice da riga di comando denominato *ancheMetrics.exe*. Questa versione precedente dello strumento ha fatto un'analisi binaria, cio' un'analisi basata su assembly. Il nuovo *strumentoMetrics.exe* analizza invece il codice sorgente. Poiché il nuovo *strumentoMetrics.exe* è basato sul codice sorgente, i risultati delle metriche del codice della riga di comando sono diversi da quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
+Visual Studio 2015 includeva uno strumento di metrica del codice da riga di comando denominato *ancheMetrics.exe*. Questa versione precedente dello strumento ha fatto un'analisi binaria, cio' un'analisi basata su assembly. Il nuovo strumento *Metrics.exe* analizza invece il codice sorgente. Poiché il nuovo *strumentoMetrics.exe* è basato sul codice sorgente, i risultati delle metriche del codice della riga di comando sono diversi da quelli generati dall'IDE di Visual Studio e dalle versioni precedenti *diMetrics.exe*.
 ::: moniker-end
 
 Il nuovo strumento di metrica del codice della riga di comando calcola le metriche anche in presenza di errori del codice sorgente, purché sia possibile caricare la soluzione e il progetto.
@@ -326,10 +326,10 @@ Il nuovo strumento di metrica del codice della riga di comando calcola le metric
 #### <a name="metric-value-differences"></a>Differenze tra i valori delle metriche
 
 ::: moniker range=">=vs-2019"
-A partire Visual Studio 2019 versione 16.4 e Microsoft.CodeAnalysis.Metics (2.9.5) e sostituire la metrica `SourceLines` `ExecutableLines` `LinesOfCode` precedente. Per le descrizioni delle nuove metriche, vedere [Valori delle metriche del codice.](../code-quality/code-metrics-values.md) La `LinesOfCode` metrica è disponibile in modalità legacy.
+A partire da Visual Studio 2019 versione 16.4 e Microsoft.CodeAnalysis.Metics (2.9.5) e sostituire la metrica `SourceLines` `ExecutableLines` `LinesOfCode` precedente. Per le descrizioni delle nuove metriche, vedere [Valori delle metriche del codice.](../code-quality/code-metrics-values.md) La `LinesOfCode` metrica è disponibile in modalità legacy.
 ::: moniker-end
 ::: moniker range="vs-2017"
-La metrica è più accurata e affidabile nel nuovo strumento di metrica del codice della `LinesOfCode` riga di comando. È indipendente da eventuali differenze di codegen e non cambia quando cambia il set di strumenti o il runtime. Il nuovo strumento conta le righe di codice effettive, incluse righe vuote e commenti.
+La metrica è più accurata e affidabile nel nuovo strumento di metrica del `LinesOfCode` codice della riga di comando. È indipendente da eventuali differenze di codegen e non cambia quando cambia il set di strumenti o il runtime. Il nuovo strumento conta le righe di codice effettive, incluse righe vuote e commenti.
 ::: moniker-end
 
 Altre metriche, ad esempio e , usano le stesse formule delle versioni precedenti diMetrics.exe, ma il nuovo strumento conta il numero di istruzioni (istruzioni di origine logica) anziché istruzioni di linguaggio `CyclomaticComplexity` `MaintainabilityIndex` ** `IOperations` intermedio (IL). I numeri saranno leggermente diversi da quelli generati dall'IDE Visual Studio e dalle versioni precedenti *diMetrics.exe*.

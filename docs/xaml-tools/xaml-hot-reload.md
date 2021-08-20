@@ -1,5 +1,5 @@
 ---
-title: Scrivere codice XAML ed eseguirne il debug Ricaricamento rapido XAML
+title: Scrivere codice XAML ed eseguirne il debug usando Ricaricamento rapido XAML
 description: Ricaricamento rapido XAML, o Modifica e continuazione XAML, consente di apportare modifiche al codice XAML durante l'esecuzione di app
 ms.date: 09/23/2020
 ms.topic: conceptual
@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 50fa8c216da426172a30d7b3b1adf2254dad4e28adeac9b05055de5e9bfa094b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4baea5effc0670a8366074187475c7c09c5b39ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351518"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130273"
 ---
-# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML Ricaricamento rapido XAML in Visual Studio
+# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in Ricaricamento rapido XAML in Visual Studio
 
-Ricaricamento rapido XAML consente di compilare l'interfaccia utente dell'app WPF o UWP, consentendo di apportare modifiche al codice XAML mentre l'app è in esecuzione. Ricaricamento rapido è disponibile sia in Visual Studio che Blend per Visual Studio. Questa funzionalità consente di compilare e testare in modo incrementale il codice XAML con il vantaggio del contesto dati dell'app in esecuzione, dello stato di autenticazione e di altre complessità reali difficili da simulare durante la fase di progettazione. Per informazioni sulla risoluzione dei problemi Ricaricamento rapido XAML, vedere [Risoluzione dei Ricaricamento rapido XAML](xaml-hot-reload-troubleshooting.md) in alternativa.
+Ricaricamento rapido XAML consente di compilare l'interfaccia utente dell'app WPF o UWP, consentendo di apportare modifiche al codice XAML mentre l'app è in esecuzione. Ricaricamento rapido è disponibile sia in Visual Studio che Blend per Visual Studio. Questa funzionalità consente di compilare e testare in modo incrementale il codice XAML con il vantaggio del contesto dati dell'app in esecuzione, dello stato di autenticazione e di altre complessità reali difficili da simulare durante la fase di progettazione. Per assistenza nella risoluzione dei Ricaricamento rapido XAML, vedere [Risoluzione dei Ricaricamento rapido XAML.](xaml-hot-reload-troubleshooting.md)
 
 > [!NOTE]
 > Se si usa Xamarin.Forms, vedere [Ricaricamento rapido XAML per Xamarin.Forms.](/xamarin/xamarin-forms/xaml/hot-reload)

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aprire cartelle di lavoro a livello di codice'
-description: Informazioni su come usare le Visual Studio per aprire a livello di codice una cartella di lavoro di Microsoft Excel o usare una cartella di lavoro esistente.
+description: Informazioni su come usare le Visual Studio per aprire una cartella di lavoro di Microsoft Excel a livello di codice o usare una cartella di lavoro esistente.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4dba79b1b0eea03ca3aae23e98fb93e6ef776d80
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 529b957613ae954d35c2284870d6512c7357ac64
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105964"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Procedura: Aprire cartelle di lavoro a livello di codice
   La raccolta in Microsoft Office Excel consente di usare tutte le cartelle di lavoro aperte <xref:Microsoft.Office.Interop.Excel.Workbooks> e di aprire le cartelle di lavoro.
@@ -46,5 +47,5 @@ ms.locfileid: "107824783"
 - [Procedura: Salvare cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-save-workbooks.md)
 - [Procedura: Chiudere cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-close-workbooks.md)
 - [Limitazioni a livello di codice di elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)

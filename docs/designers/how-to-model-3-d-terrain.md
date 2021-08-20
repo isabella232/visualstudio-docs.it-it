@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Creare un modello di territorio 3D'
-description: Informazioni su come usare l'editor dei modelli per creare un modello di terreno 3D suddividendo un piano in modo da creare visi aggiuntivi e manipolando i vertici.
+description: Informazioni su come usare l'Editor modelli per creare un modello di terreno 3D dividendo un piano per creare visi aggiuntivi e modificando i vertici.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,14 +8,15 @@ ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 969dd229d8d6cd6bdbe9d53eaabd63f1eedd6570
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0c992cb071b0a74a9c7d6c5bc3ab93cd17ad1b6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930850"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133575"
 ---
 # <a name="how-to-model-3d-terrain"></a>Procedura: Creare un modello di terreno 3D
 
@@ -55,7 +56,7 @@ Il modello di terreno è completo. Di seguito viene nuovamente illustrato il mod
 
 ![Scena 3D che illustra un modello di terreno](../designers/media/digit-terrain-model.png)
 
-È possibile usare questo modello di terreno per dimostrare l'effetto dello shader sfumato descritto in [procedura: creare uno shader con sfumatura basata sulla geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+È possibile usare questo modello di terreno per illustrare l'effetto dello shader sfumatura descritto in [Procedura: Creare uno shader](../designers/how-to-create-a-geometry-based-gradient-shader.md)con gradiente basato su geometria.
 
 ## <a name="see-also"></a>Vedi anche
 

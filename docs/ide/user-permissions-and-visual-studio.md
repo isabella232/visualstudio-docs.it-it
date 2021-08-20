@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 03338da39eb9be3d080839c4c0cd567e3162da7e871bb449f08242c49eed6f5a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1c0f1aa61371a3caecad6dbc30874db6299a2283
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386615"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061558"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
@@ -28,7 +28,7 @@ Per motivi di sicurezza, è consigliabile eseguire Visual Studio come utente tip
 > [!WARNING]
 > Accertarsi inoltre di non compilare, avviare o eseguire il debug di una soluzione di Visual Studio che non provenga da una persona o un percorso attendibile.
 
-È possibile eseguire quasi tutte le attività nell'IDE Visual Studio come utente tipico. Sono necessarie autorizzazioni di amministratore per completare le attività seguenti:
+È possibile eseguire quasi tutte le attività nell Visual Studio IDE come utente tipico. Sono necessarie autorizzazioni di amministratore per completare le attività seguenti:
 
 |Area|Attività|Per ulteriori informazioni|
 |----------|----------| - |
@@ -57,7 +57,7 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 1. Aprire il menu **Start** e scorrere fino Visual Studio 2017.
 
-1. Dal menu di scelta rapida o dal menu di scelta rapida Visual Studio **2017,** selezionare **Altro** > **Esegui come amministratore**.
+1. Dal menu di scelta rapida o dal menu di **scelta rapida Visual Studio 2017,** selezionare **Altro** Esegui > **come amministratore**.
 
    All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 
@@ -67,7 +67,7 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 1. Aprire il menu **Start** e scorrere fino Visual Studio 2019.
 
-1. Dal menu di scelta rapida o dal menu di scelta rapida Visual Studio **2019,** selezionare **Altro** > **Esegui come amministratore**.
+1. Dal menu di scelta rapida o dal menu di **scelta rapida Visual Studio 2019,** selezionare **Altro** Esegui > **come amministratore**.
 
    All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 
@@ -79,7 +79,7 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 1. In **Esplora file** individuare il **Visual Studio** collegamento per la versione in uso. Fare quindi clic con il pulsante destro del mouse sul collegamento e scegliere **Invia al**  >  **desktop (crea collegamento)**.
 
-1. Nel desktop **Windows** fare clic con  il pulsante destro del mouse sul collegamento Visual Studio e quindi scegliere **Proprietà**.
+1. Sul desktop **Windows** fare clic con il pulsante destro del mouse sul collegamento **Visual Studio** e quindi scegliere **Proprietà**.
 
 1. Selezionare il **pulsante** Avanzate e quindi selezionare la **casella di controllo Esegui** come amministratore.
 

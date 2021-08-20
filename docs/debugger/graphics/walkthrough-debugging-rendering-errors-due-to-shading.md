@@ -1,6 +1,6 @@
 ---
 title: "Procedura dettagliata: Debug degli errori di rendering dovuti all'ombreggiatura | Microsoft Docs"
-description: Seguire un'indagine che trova un bug dello shader. Mostra l'uso di Visual Studio Diagnostica della grafica, inclusa la cronologia dei pixel della grafica e il debugger HLSL.
+description: Seguire un'indagine che trova un bug dello shader. Mostra l'uso di Visual Studio Diagnostica della grafica, tra cui Cronologia pixel della grafica e Debugger HLSL.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b8e62cbf7d1dfb931c96a280c7b9bfcc1f73468f4944c438db6ff3e7d2546f9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f359715bebdab4323bba21637f8a3f4be0f98f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133913"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo
 Questa procedura dettagliata illustra come usare Diagnostica della grafica per analizzare un oggetto colorato in modo non corretto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a causa di un bug dello shader.
@@ -43,9 +43,9 @@ Questa procedura dettagliata illustra come usare Diagnostica della grafica per a
 
 1. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caricare un log di grafica con un frame che mostra il modello mancante. Viene visualizzata una nuova finestra del documento del log grafico in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.
 
-2. In **Elenco frame** selezionare una cornice in cui l'oggetto non abbia l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario, la finestra del documento del log di grafica è simile a questa immagine:
+2. In **Elenco frame** selezionare una cornice in cui l'oggetto non ha l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario, la finestra del documento del log di grafica è simile a questa immagine:
 
-    ![Documento del log di grafica in Visual Studio.](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
+    ![Documento del log di grafica Visual Studio.](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
    Dopo aver selezionato un frame che dimostra il problema, è possibile usare la finestra **Cronologia pixel grafica** per diagnosticarlo. La finestra **Cronologia pixel grafica** mostra le primitive che potrebbero aver avuto un effetto su un pixel specifico, i relativi shader e gli effetti corrispondenti sulla destinazione di rendering, in ordine cronologico.
 
@@ -61,7 +61,7 @@ Questa procedura dettagliata illustra come usare Diagnostica della grafica per a
 
     ![La cronologia pixel mostra un evento DrawIndexed.](media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")
 
-    Si noti che il risultato del pixel shader è completamente nero opaco (0, 0, 0, 1)  e che Output **Merger** ha combinato questo pixel shader con il colore Precedente del pixel in modo che anche **Result** sia completamente opaco.
+    Si noti che il risultato del pixel shader è completamente nero opaco (0, 0, 0, 1) e  che Output **Merger** ha combinato questo pixel shader con il colore Precedente del pixel in modo che anche **Result** sia completamente opaco.
 
    Dopo aver esaminato un pixel colorato in modo errato e aver appurato che il colore dell'output del pixel shader non è quello previsto, è possibile usare il debugger HLSL per esaminare il pixel shader e scoprire cosa è successo al colore dell'oggetto. È possibile usare il debugger HLSL per esaminare lo stato delle variabili HLSL durante l'esecuzione, eseguire il codice HLSL un'istruzione alla volta e impostare i punti di interruzione per facilitare la diagnosi del problema.
 

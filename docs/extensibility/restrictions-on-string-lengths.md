@@ -10,14 +10,15 @@ ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fd0d88a50f64aee1f0bc5c273d7a3cd50c6f53f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 5322ff52097a55994cec569597841202677d7dfd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086391"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrizioni sulle lunghezze delle stringhe
 L'API plug-in del controllo del codice sorgente limita la lunghezza delle stringhe usate in varie funzioni.
@@ -32,7 +33,7 @@ L'API plug-in del controllo del codice sorgente limita la lunghezza delle string
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
-> La lunghezza non include l'oggetto di `null` terminazione. Altre costanti con suffisso "_SIZE" anziché "_LEN" includono lo spazio per l'oggetto di `null` terminazione.
+> La lunghezza non include l'oggetto di `null` terminazione. Altre costanti con suffisso "_SIZE" anziché "_LEN" includono spazio per l'oggetto di `null` terminazione.
 
 |Costante|Valore|
 |--------------|-----------|
@@ -41,5 +42,5 @@ L'API plug-in del controllo del codice sorgente limita la lunghezza delle string
 |SCC_USER_SIZE|32|
 |SCC_PRJPATH_SIZE|301|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

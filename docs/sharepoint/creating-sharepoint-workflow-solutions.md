@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f048132778350a9ffa19cb36833b40fd4a0903b3d0df54264f8bbd873c41902d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ba44e9c128cafec7223e5a90b0aa2d37cab6f8e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409741"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149455"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Creare soluzioni SharePoint flusso di lavoro
 
@@ -63,7 +63,7 @@ Per altre informazioni sui SharePoint, vedere [Prodotti e tecnologie SharePoint 
 > La **proprietà Workflow Type** è di sola lettura e non può essere modificata. Se si desidera modificare il tipo di flusso di lavoro, è necessario creare un altro flusso di lavoro.
 
 ## <a name="design-a-sharepoint-workflow"></a>Progettare un flusso SharePoint lavoro
- Dopo aver definito tutti i passaggi del processo aziendale, utilizzare la finestra di progettazione del flusso di lavoro per progettare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint lavoro. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1.vb in **Esplora soluzioni** oppure aprire il menu di scelta rapida per uno di questi file e quindi scegliere **Apri.**
+ Dopo aver definito tutti i passaggi del processo aziendale, utilizzare la finestra di progettazione del flusso di lavoro per progettare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint lavoro. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1.vb in **Esplora soluzioni** oppure aprire il menu di scelta rapida per uno di questi file e quindi **scegliere Apri.**
 
 ### <a name="activities"></a>Attività
  Per progettare un flusso di lavoro, aggiungere attività **dalla** casella degli strumenti a una pianificazione del flusso *di lavoro* nella finestra di progettazione. Una pianificazione del flusso di lavoro contiene la sequenza di attività nell'ordine in cui devono essere eseguite.
@@ -72,7 +72,7 @@ Per altre informazioni sui SharePoint, vedere [Prodotti e tecnologie SharePoint 
 
 - *Le attività* semplici eseguono una singola unità di lavoro, ad esempio "ritardare di 1 giorno" o "avviare il servizio Web".
 
-- *Le attività composite* contengono altre attività. Ad esempio, un'attività condizionale può contenere due rami.
+- *Le attività composite* contengono altre attività. Ad esempio, un'attività condizionale potrebbe contenere due rami.
 
   Entrambi i tipi di attività sono disponibili nella casella degli **strumenti**.
 
@@ -94,14 +94,14 @@ Per altre informazioni sui SharePoint, vedere [Prodotti e tecnologie SharePoint 
  Le **schede SharePoint flusso di** lavoro contengono attività specializzate da usare in [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] . Queste attività semplificano e semplificano lo sviluppo di flussi di lavoro del ciclo di vita dei documenti. Per altre informazioni sulle attività elencate nella scheda Flusso **SharePoint,** vedere [Workflow Activities for Windows SharePoint Services Overview](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
 #### <a name="windows-workflow-activities"></a>Windows attività del flusso di lavoro
- Le **Windows del flusso** di lavoro contengono attività fornite da [!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)] . È possibile utilizzare queste attività per creare pianificazioni del flusso di lavoro per qualsiasi tipo di Windows flusso di lavoro.
+ Le **Windows del flusso di** lavoro contengono attività fornite da [!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)] . È possibile utilizzare queste attività per creare pianificazioni del flusso di lavoro per qualsiasi tipo di Windows flusso di lavoro.
 
  Per altre informazioni sulle attività elencate nella scheda Flussi **Windows,** vedere Windows [Workflow Foundation Activities](/previous-versions/dotnet/netframework-3.5/ms733615(v=vs.90)). Per altre informazioni su Windows Workflow Foundation, vedere Windows [Workflow Foundation Overview](/previous-versions/dotnet/netframework-3.5/ms734631(v=vs.90)).
 
 ### <a name="work-with-activities-in-the-designer"></a>Usare le attività nella finestra di progettazione
  La pianificazione del flusso di lavoro può contenere una combinazione di attività Windows flusso di lavoro e SharePoint flusso di lavoro.
 
- La finestra di progettazione visualizza segnali visivi che consentono di posizionare e configurare correttamente le attività. Quando si trascina o si copia un'attività nella pianificazione del flusso di lavoro, nella finestra di progettazione vengono visualizzate delle icone con il segno di addizione (+) in verde che indicano le posizioni valide per quell'attività nel flusso di lavoro. Non è possibile posizionare un'attività in una posizione in cui non sarebbe valida. Ad esempio, non è possibile posizionare un'attività Send come prima attività in un ramo di attività Listen. Per altre informazioni, vedere SharePoint [Designer Developer Center.](https://developer.microsoft.com/office/docs)
+ La finestra di progettazione visualizza segnali visivi che consentono di posizionare e configurare correttamente le attività. Quando si trascina o si copia un'attività nella pianificazione del flusso di lavoro, nella finestra di progettazione vengono visualizzate delle icone con il segno di addizione (+) in verde che indicano le posizioni valide per quell'attività nel flusso di lavoro. Non è possibile posizionare un'attività in una posizione in cui non sarebbe valida. Ad esempio, non è possibile posizionare un'attività Send come prima attività in un ramo di attività Listen. Per altre informazioni, vedere [SharePoint Developer Center.](https://developer.microsoft.com/office/docs)
 
 ## <a name="collect-information-during-the-workflow"></a>Raccogliere informazioni durante il flusso di lavoro
  Potrebbe essere necessario raccogliere informazioni dagli utenti in orari predefiniti nel flusso di lavoro. È possibile raccogliere informazioni usando i moduli o le proprietà degli elementi.
@@ -119,7 +119,7 @@ Per altre informazioni sui SharePoint, vedere [Prodotti e tecnologie SharePoint 
 
 - Attività
 
-  Di questi, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include modelli di elemento per i moduli di associazione e avvio. Un esempio di *modulo* di associazione è quello che consente all'amministratore che installa il flusso di lavoro di immettere i parametri correlati al flusso di lavoro, ad esempio un limite di spesa per un flusso di lavoro di spesa. Un esempio di modulo *di avvio è* quello che consente all'utente di un flusso di lavoro di spesa di immettere l'importo speso nel flusso di lavoro. Per altre informazioni su questi tipi di moduli, vedere l'articolo SharePoint [modelli di progetto e di elemento di progetto.](../sharepoint/sharepoint-project-and-project-item-templates.md)
+  Di questi, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include i modelli di elemento per i moduli di associazione e avvio. Un esempio di *modulo* di associazione è quello che consente all'amministratore che installa il flusso di lavoro di immettere parametri correlati al flusso di lavoro, ad esempio un limite di spesa per un flusso di lavoro di spesa. Un esempio di modulo *di avvio è* quello che consente all'utente di un flusso di lavoro di spesa di immettere l'importo speso nel flusso di lavoro. Per altre informazioni su questi tipi di moduli, vedere l'articolo SharePoint [modelli di progetto e di elemento di progetto.](../sharepoint/sharepoint-project-and-project-item-templates.md)
 
 ### <a name="item-properties"></a>Proprietà degli elementi
  È anche possibile raccogliere informazioni dagli utenti usando le proprietà di un elemento nella SharePoint o nell'elenco. Il file di codice principale (Workflow1.cs o Workflow1.vb) dichiara un'istanza di Microsoft. SharePoint. Classe Workflow.SPWorkflowActivationProperties.WorkflowProperties denominata `workflowProperties` . Usare `workflowProperties` l'oggetto per accedere alle proprietà della libreria o dell'elenco nel codice. Per un esempio, vedere [Procedura dettagliata: Creare ed eseguire il debug](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)di una SharePoint flusso di lavoro.
