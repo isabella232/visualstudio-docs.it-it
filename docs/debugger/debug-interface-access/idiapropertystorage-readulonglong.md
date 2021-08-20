@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bae3cc21ae6c54912279bbc283235c25fb47c20cb6b5bc0b58b8f8bf2bf2eb5a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5434587770fb632cc353bc5254902a9fb3614c37
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344932"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161629"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 Legge i `ULONGLONG` valori in un set di proprietà.
@@ -43,10 +43,10 @@ HRESULT ReadULONGLONG (
 [out] Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `ULONGLONG` .
+ In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `ULONGLONG` .
 
 ## <a name="remarks"></a>Commenti
- Un oggetto è definito da Windows come intero senza `ULONGLONG` segno a 64 bit.
+ Un è definito da Windows come intero senza segno `ULONGLONG` a 64 bit.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

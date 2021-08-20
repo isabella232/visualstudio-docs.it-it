@@ -1,6 +1,6 @@
 ---
-title: Avviare spy++ | Microsoft Docs
-description: Informazioni su come avviare lo strumento Spy++ da un Visual Studio o da un prompt dei comandi quando si vuole eseguire il debug di una soluzione.
+title: Avviare Spy++ | Microsoft Docs
+description: Informazioni su come avviare lo strumento Spy++ da Visual Studio o da un prompt dei comandi quando si vuole eseguire il debug di una soluzione.
 ms.custom: SEO-VS-2020
 ms.date: 12/16/2018
 ms.topic: how-to
@@ -13,34 +13,34 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b295246db8429689d0eedad7616ccff2f7c0010dd18c08a78a642a5abf886531
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 470d9676ed2bb908b04f4bbddc905ddede97802d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378749"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128117"
 ---
 # <a name="how-to-start-spy"></a>Procedura: avviare Spy++
 
-È possibile avviare Spy++ da un Visual Studio o da un prompt dei comandi.
+È possibile avviare Spy++ da Visual Studio o da un prompt dei comandi.
 
- Quando si avvia Spy++, se viene visualizzato un messaggio per chiedere l'autorizzazione per apportare modifiche al computer, selezionare **Sì**.
+ Quando si avvia Spy++, se viene visualizzato un messaggio per chiedere l'autorizzazione per apportare modifiche al computer, selezionare **Sì.**
 
 > [!NOTE]
 > È possibile eseguire una sola istanza di Spy++. Se si tenta di avviare una seconda istanza, l'istanza attualmente in esecuzione ottiene lo stato attivo.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Spy++ richiede i componenti seguenti. È possibile selezionare questi componenti dal Programma di installazione di Visual Studio selezionando la **scheda Singoli** componenti e quindi selezionando i componenti seguenti.
+Spy++ richiede i componenti seguenti. È possibile selezionare questi componenti dal Programma di installazione di Visual Studio selezionando la scheda **Singoli** componenti e quindi selezionando i componenti seguenti.
 
-* In Debug e test selezionare **Strumenti di profilatura C++**
-* In Attività di sviluppo selezionare **Funzionalità principali C++**
+* In Debug e test selezionare Strumenti **di profilatura C++**
+* In Attività di sviluppo selezionare **Funzionalità principali di C++**
 
 Se sono state apportate modifiche, seguire le istruzioni per installare questi componenti.
 
 ## <a name="start-spy-from-visual-studio"></a>Avviare Spy++ da Visual Studio
 
-Scegliere  **Spy++ dal** menu Strumenti .
+Scegliere **Spy++** dal menu **Strumenti.**
 
 Poiché Spy++ viene eseguito in modo indipendente, dopo l'avvio è possibile chiudere Visual Studio.
 

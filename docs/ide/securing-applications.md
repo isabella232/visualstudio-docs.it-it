@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6314a1a876b75ca8690df304a49423dba7ad285ab6d6ab87ff7b96f38390d754
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d95b640fc6daae8c9fe6734ab6cec5c73f96cd1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121232185"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123658"
 ---
 # <a name="secure-applications"></a>Proteggere le applicazioni
 

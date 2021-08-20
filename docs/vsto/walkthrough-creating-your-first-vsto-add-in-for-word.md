@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Word'
+title: 'Procedura dettagliata: Creare il primo VSTO per Word'
 description: Creare un componente aggiuntivo a livello di applicazione per Microsoft Word. Questa funzionalità è disponibile per l'applicazione stessa, indipendentemente da quali documenti sono aperti.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -15,16 +15,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fd3509ab674faa220ed7bbea15a9762f52b1a525
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 0c6f06400e1f35af9cce874d601c03f6cf1dc4a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828280"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155460"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Word
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procedura dettagliata: Creare il primo VSTO per Word
   Questa procedura dettagliata introduttiva illustra come creare un componente aggiuntivo VSTO per Microsoft Office Word.  Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente da quali documenti vengano aperti.
 
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]
@@ -71,9 +72,9 @@ ms.locfileid: "107828280"
 ## <a name="write-code-to-add-text-to-the-saved-document"></a>Scrivere codice per aggiungere testo al documento salvato
  Aggiungere quindi codice al file di codice ThisAddIn. Il nuovo codice usa il modello a oggetti di Word per aggiungere testo boilerplate in ogni documento salvato. Per impostazione predefinita, il file di codice ThisAddIn contiene il seguente codice generato:
 
-- Una definizione parziale della classe `ThisAddIn` . Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di Word. Per altre informazioni, vedere [Programmare componenti aggiuntivi VSTO.](../vsto/programming-vsto-add-ins.md) Il resto della classe è definito in un file di codice nascosto `ThisAddIn` che non è necessario modificare.
+- Una definizione parziale della classe `ThisAddIn` . Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di Word. Per altre informazioni, vedere [Programmi VSTO componenti aggiuntivi](../vsto/programming-vsto-add-ins.md). Il resto della classe è definito in un file di codice nascosto `ThisAddIn` che non è necessario modificare.
 
-- I gestori eventi `ThisAddIn_Startup` e `ThisAddIn_Shutdown` . Questi gestori eventi vengono chiamati quando Word carica e scarica il componente aggiuntivo VSTO. Usare questi gestori eventi per inizializzare il componente aggiuntivo VSTO al momento del caricamento e per eseguire la pulizia delle risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Per altre informazioni, vedere [Eventi nei progetti di Office.](../vsto/events-in-office-projects.md)
+- I gestori eventi `ThisAddIn_Startup` e `ThisAddIn_Shutdown` . Questi gestori eventi vengono chiamati quando Word carica e scarica il componente aggiuntivo VSTO. Usare questi gestori eventi per inizializzare il componente aggiuntivo VSTO al momento del caricamento e per eseguire la pulizia delle risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Per altre informazioni, vedere [Eventi nei progetti Office .](../vsto/events-in-office-projects.md)
 
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Per aggiungere un paragrafo di testo nel documento salvato
 
@@ -85,7 +86,7 @@ ms.locfileid: "107828280"
     :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs" id="Snippet1":::
 
    > [!NOTE]
-   > Questo codice usa il valore di indice 1 per accedere al primo paragrafo della raccolta <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Anche se Visual Basic e Visual C# usano matrici in base 0, il limite inferiore di matrice della maggior parte delle raccolte del modello a oggetti di Word è 1. Per altre informazioni, vedere [Scrivere codice nelle soluzioni Office.](../vsto/writing-code-in-office-solutions.md)
+   > Questo codice usa il valore di indice 1 per accedere al primo paragrafo della raccolta <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Anche se Visual Basic e Visual C# usano matrici in base 0, il limite inferiore di matrice della maggior parte delle raccolte del modello a oggetti di Word è 1. Per altre informazioni, vedere [Scrivere codice in Office soluzioni](../vsto/writing-code-in-office-solutions.md).
 
 2. Se si usa C#, aggiungere il seguente codice obbligatorio al gestore eventi `ThisAddIn_Startup` . Tale codice viene usato per connettere il gestore eventi `Application_DocumentBeforeSave` all'evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> .
 
@@ -103,7 +104,7 @@ ms.locfileid: "107828280"
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-     Quando si crea il progetto, il codice viene compilato in un assembly incluso nella cartella di output di compilazione relativa al progetto. Inoltre, Visual Studio crea un set di voci del Registro di sistema che consentono a Word di individuare e caricare il componente aggiuntivo VSTO e di configurare le impostazioni di sicurezza nel computer di sviluppo; in questo modo, si attiva l'esecuzione del componente aggiuntivo VSTO. Per altre informazioni, vedere [Creare soluzioni Office.](../vsto/building-office-solutions.md)
+     Quando si crea il progetto, il codice viene compilato in un assembly incluso nella cartella di output di compilazione relativa al progetto. Inoltre, Visual Studio crea un set di voci del Registro di sistema che consentono a Word di individuare e caricare il componente aggiuntivo VSTO e di configurare le impostazioni di sicurezza nel computer di sviluppo; in questo modo, si attiva l'esecuzione del componente aggiuntivo VSTO. Per altre informazioni, vedere [Compilare Office soluzioni](../vsto/building-office-solutions.md).
 
 2. In Word, salvare il documento attivo.
 
@@ -123,24 +124,24 @@ ms.locfileid: "107828280"
 ## <a name="next-steps"></a>Passaggi successivi
  Ora che è stato creato un componente aggiuntivo VSTO di base per Word, è possibile acquisire altre informazioni sullo sviluppo di componenti aggiuntivi VSTO in questi argomenti:
 
-- Attività di programmazione generali che è possibile eseguire nei componenti aggiuntivi VSTO: [programmare i componenti aggiuntivi VSTO.](../vsto/programming-vsto-add-ins.md)
+- Attività di programmazione generali che è possibile VSTO componenti aggiuntivi: programma VSTO [componenti aggiuntivi](../vsto/programming-vsto-add-ins.md).
 
-- Attività di programmazione specifiche dei componenti aggiuntivi VSTO di Word: [soluzioni Word](../vsto/word-solutions.md).
+- Attività di programmazione specifiche di Word VSTO componenti aggiuntivi: [soluzioni Word](../vsto/word-solutions.md).
 
 - Uso del modello a oggetti di Word: [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md).
 
-- Personalizzazione dell'interfaccia utente di Word, ad esempio aggiungendo una scheda personalizzata alla barra multifunzione o creando un riquadro attività personalizzato: Personalizzazione dell'interfaccia [utente di Office.](../vsto/office-ui-customization.md)
+- Personalizzazione dell'interfaccia utente di Word, ad esempio aggiungendo una scheda personalizzata alla barra multifunzione o creando un riquadro attività personalizzato: Office personalizzazione [dell'interfaccia utente.](../vsto/office-ui-customization.md)
 
-- Compilazione e debug di componenti aggiuntivi VSTO per Word: [compilazione di soluzioni Office.](../vsto/building-office-solutions.md)
+- Compilazione e debug VSTO componenti aggiuntivi per Word: [Compilare Office soluzioni](../vsto/building-office-solutions.md).
 
-- Distribuzione di componenti aggiuntivi VSTO per Word: [distribuire una soluzione Office.](../vsto/deploying-an-office-solution.md)
+- Distribuzione VSTO componenti aggiuntivi per Word: [distribuire una Office soluzione](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Vedi anche
-- [Panoramica dello sviluppo di soluzioni Office &#40;vsto&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Office sullo sviluppo di soluzioni &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Word](../vsto/word-solutions.md)
-- [Programmare componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Programmi VSTO componenti aggiuntivi](../vsto/programming-vsto-add-ins.md)
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
-- [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
-- [Creare soluzioni Office](../vsto/building-office-solutions.md)
-- [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
-- [Panoramica dei modelli di progetto di Office](../vsto/office-project-templates-overview.md)
+- [Office Personalizzazione dell'interfaccia utente](../vsto/office-ui-customization.md)
+- [Creare Office soluzioni](../vsto/building-office-solutions.md)
+- [Distribuire una soluzione Office distribuzione](../vsto/deploying-an-office-solution.md)
+- [Office panoramica dei modelli di progetto](../vsto/office-project-templates-overview.md)

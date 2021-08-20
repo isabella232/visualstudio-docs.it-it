@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner Progettazione flussi di lavoro-if
-description: Informazioni sul modo in cui l'attività If valuta una condizione ed esegue un'attività in base ai risultati della valutazione.
+title: Progettazione flussi di lavoro- ActivityDesigner If
+description: Informazioni su come l'attività If valuta una condizione ed esegue un'attività a seconda dei risultati di tale valutazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f36a3c2b587718fe6889688baa50224f663c1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6abacbe5f5212a062c9f23cdc7cfab3e27d7cb6b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155161"
 ---
 # <a name="if-activity-designer"></a>ActivityDesigner If
 
@@ -29,9 +30,9 @@ Nella tabella seguente sono elencate le proprietà più utili dell'attività <xr
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|Vero|La condizione che determina l'attività figlio da eseguire. Per impostare <xref:System.Activities.Statements.If.Condition%2A> , digitare un'espressione Visual Basic nella casella **condizione** nell'ActivityDesigner **if** o nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.If.Else%2A>|Falso|Attività da eseguire se <xref:System.Activities.Statements.If.Condition%2A> è **false**. Per aggiungere un'attività che viene eseguita dal <xref:System.Activities.Statements.If.Else%2A> Branch, rilasciare un'attività dalla **casella degli strumenti** nella casella **else** nell'ActivityDesigner **if** con il testo di suggerimento "drop Activity here".|
-|<xref:System.Activities.Statements.If.Then%2A>|Falso|Attività da eseguire se <xref:System.Activities.Statements.If.Condition%2A> è **true**. Per aggiungere un'attività che viene eseguita dal <xref:System.Activities.Statements.If.Then%2A> Branch, rilasciare un'attività dalla **casella degli strumenti** nella casella **then** nell'ActivityDesigner **if** con il testo di suggerimento "drop Activity here".|
+|<xref:System.Activities.Statements.If.Condition%2A>|Vero|La condizione che determina l'attività figlio da eseguire. Per impostare <xref:System.Activities.Statements.If.Condition%2A> , digitare un'Visual Basic nella casella **Condizione** dell'ActivityDesigner **If** o nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.If.Else%2A>|Falso|Attività da eseguire se è <xref:System.Activities.Statements.If.Condition%2A> **false.** Per aggiungere un'attività eseguita dal ramo , rilasciare un'attività dalla casella degli strumenti nella casella Else dell'ActivityDesigner If con il testo del suggerimento <xref:System.Activities.Statements.If.Else%2A> "Drop Activity  Here".  |
+|<xref:System.Activities.Statements.If.Then%2A>|Falso|Attività da eseguire se è <xref:System.Activities.Statements.If.Condition%2A> **true.** Per aggiungere un'attività eseguita dal ramo , rilasciare un'attività dalla casella degli strumenti nella casella Then dell'ActivityDesigner If con il testo del suggerimento <xref:System.Activities.Statements.If.Then%2A> "Drop Activity  Here".  |
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -11,14 +11,15 @@ ms.assetid: 63b67a93-2910-4fff-aa70-6b2eaa08e5c8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 529d617b833a6dc3013a71f5c132ca5654c89d08
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8ccfd95048ea60f5a15d49a201ac5ecbf15f2541
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102148269"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161730"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 Determina se la ricerca di informazioni di debug è consentita dai file con estensione dbg.

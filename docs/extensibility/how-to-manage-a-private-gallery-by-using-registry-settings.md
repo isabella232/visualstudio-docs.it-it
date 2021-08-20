@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1048f5af6457d8429694c73f37e82f5b420bc66f08abd198016388441346f40
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 38cc90f557bb901f2ef9710bc1cd129e471a3781
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414701"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124934"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: Gestire una raccolta privata usando le impostazioni del Registro di sistema
 Gli amministratori o gli sviluppatori di un'estensione Isolated Shell possono controllare l'accesso a controlli, modelli e strumenti nella raccolta Visual Studio, nella raccolta di esempi o nelle raccolte private. Per rendere disponibile o non disponibile una raccolta, creare un file *con estensione pkgdef* che descriva le chiavi del Registro di sistema modificate e i relativi valori.

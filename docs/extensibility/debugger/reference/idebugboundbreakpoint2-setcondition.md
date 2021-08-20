@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5491dd67851c645762512736eac3ed6b1db820f53b2eb1299d7c1199d9ae29bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6c419b081c756af9ec0dd4eafc1c7400af339c96
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360638"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111684"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Imposta o modifica la condizione associata a questo punto di interruzione associato.
@@ -47,7 +47,7 @@ int SetCondition(
 [in] Valore [dell'enumerazione BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) che descrive la condizione.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell BP_STATE enumere). [](../../../extensibility/debugger/reference/bp-state.md)
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell BP_STATE enumerazione ). [](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Commenti
  Qualsiasi condizione precedentemente associata a questo punto di interruzione viene persa.

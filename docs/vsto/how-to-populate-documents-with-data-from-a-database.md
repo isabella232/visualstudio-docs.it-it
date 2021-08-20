@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ef324d108a8b8014c2c45671435ff2de811db6a72c5ca5e287013b4668949ae7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a2c49f7f40d7b73ed0db14e227ac97f8aacc7fca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424086"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148207"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Procedura: Popolare documenti con dati da un database
 
@@ -41,7 +41,7 @@ Nell'esempio seguente viene mostrato come aggiungere controlli con associazione 
 
 1. Aprire un progetto a livello di documento Word in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], con il documento aperto nella finestra di progettazione.
 
-2. Aprire la **finestra Origini** dati e creare un'origine dati da un database. Per altre informazioni, vedere [Aggiungere nuove connessioni.](../data-tools/add-new-connections.md)
+2. Aprire la **finestra Origini dati** e creare un'origine dati da un database. Per altre informazioni, vedere [Aggiungere nuove connessioni.](../data-tools/add-new-connections.md)
 
 3. Trascinare il campo desiderato dalla **finestra Origini** dati al documento.
 

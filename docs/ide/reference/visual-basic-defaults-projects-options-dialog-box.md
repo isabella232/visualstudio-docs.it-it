@@ -1,6 +1,6 @@
 ---
 title: Impostazioni predefinite di Visual Basic, Progetti, finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina impostazioni predefinite Visual Basic nella sezione progetti e soluzioni per specificare le impostazioni predefinite per le opzioni del progetto Visual Basic.
+description: Informazioni su come usare la Visual Basic impostazioni predefinite nella sezione Progetti e soluzioni per specificare le impostazioni predefinite per Visual Basic di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de415f99dbb9a91f2fa0e30ffc5e40727d10303
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8252581f7255e8fd04ee6e01bfed7fb7e7fe08c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889746"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123710"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Impostazioni predefinite di Visual Basic, Progetti, finestra di dialogo Opzioni
 Specifica le impostazioni predefinite per le opzioni dei progetti Visual Basic. Alla creazione di un nuovo progetto, le istruzioni specificate per le opzioni verranno aggiunte all'intestazione del progetto nell'editor di codice. Le opzioni si applicano a tutti i progetti Visual Basic.
@@ -38,7 +39,7 @@ Imposta il valore predefinito del compilatore in modo da richiedere le conversio
 
  **Option Compare**
 
-Imposta il valore predefinito del compilatore per i confronti tra stringhe: binario (maiuscole/minuscole) o testo (senza distinzione tra maiuscole e minuscole). Per impostazione predefinita, **Option Compare** è impostato su **Binary**. Per altre informazioni, vedere [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Imposta il valore predefinito del compilatore per i confronti tra stringhe: binario (con distinzione tra maiuscole e minuscole) o testo (senza distinzione tra maiuscole e minuscole). Per impostazione predefinita, **Option Compare** è impostato su **Binary.** Per altre informazioni, vedere [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Option Infer**
 

@@ -12,12 +12,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ccd684d00f16f81a071e3e83b87c1ed82cb62fbcd622a28435d52e53c9f992d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd7c9b667e2c355267a22212684141a40bca9f7c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148428"
 ---
 # <a name="test-generation"></a>Generazione di test
 

@@ -11,14 +11,15 @@ ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03a3ad588b0a2e0f3aa6f04ddeb742ab66064bc9
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 91011c021c429c5f09556f749e305572097a8de6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160361"
 ---
 # <a name="modules"></a>Moduli
 In termini di architettura del debugger, un *modulo*:
@@ -29,6 +30,6 @@ In termini di architettura del debugger, un *modulo*:
 
 - È rappresentato da [un'interfaccia IDebugModule2,](../../extensibility/debugger/reference/idebugmodule2.md) creata da un motore di debug per descrivere il modulo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

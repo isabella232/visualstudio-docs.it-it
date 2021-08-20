@@ -1,5 +1,5 @@
 ---
-description: Ottiene il nome visualizzabile del documento che contiene questo contesto del documento.
+description: Ottiene il nome visualizzabile del documento che contiene il contesto del documento.
 title: IDebugDocumentContext2::GetName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a5318276276afd9bc6939a44cbed876447fbe3de26625e252c2fdfffde42d43
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c84bb0d1ad5f04bde3b2c060a8f8c0d820c6aca2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121238957"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089238"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
-Ottiene il nome visualizzabile del documento che contiene questo contesto del documento.
+Ottiene il nome visualizzabile del documento che contiene il contesto del documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ int GetName(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Questo metodo inoltra in genere la chiamata al [metodo GetName,](../../../extensibility/debugger/reference/idebugdocument2-getname.md) a meno che non venga scritto il contesto del documento per archiviare il nome del documento stesso (come illustrato nell'esempio).
+Questo metodo in genere inoltra la chiamata al metodo [GetName,](../../../extensibility/debugger/reference/idebugdocument2-getname.md) a meno che non venga scritto il contesto del documento per archiviare il nome del documento stesso (come illustrato nell'esempio).
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugContext` semplice che espone [l'interfaccia IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

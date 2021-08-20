@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0bd654abca7f13ab212c804a11cbcf9064aed65d475f3bd93f106662309d465
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 96f5ab7a9c07f8a4999c82374bdaace5ea5b8466
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389332"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095647"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 Restituisce il successivo set di elementi dall'enumerazione.

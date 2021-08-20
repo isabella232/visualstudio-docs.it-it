@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: db8d6ab713b745e63c2ab419fbb6d134a2e0284b521e9633cdda45185e1e3505
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72ad42572eadff6434677d0a67357ed684758a20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378658"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161154"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Procedura: Visualizzare documenti script (JavaScript)
 
@@ -32,7 +32,7 @@ I file script sul lato server sono visibili in Esplora soluzioni. I file script 
 Per alcuni tipi di applicazione che generano pagine in modo dinamico, è più facile accedere alla modalità di interruzione ed eseguire il debug quando si imposta un punto di interruzione da un documento script caricato nel browser. Analogamente, è possibile aggiungere l'istruzione `debugger` da un documento di script caricato per accedere alla modalità di interruzione. Questo articolo illustra come visualizzare questi documenti.
 
 > [!NOTE]
-> Prima di [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] , i file script sul lato client generati dallo script sul lato server sono stati aperti nella finestra Esplora script.
+> Prima di [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] , i file script sul lato client generati dallo script sul lato server sono stati presenti nella finestra Esplora script.
 
 ### <a name="to-view-a-server-side-script-document"></a>Per visualizzare un documento script sul lato server
 

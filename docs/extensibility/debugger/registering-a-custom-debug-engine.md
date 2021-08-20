@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d1537958b783d35be4d95303ecdd19fe03dababae1b411bd261230ef27ab2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2499e4aef01bd4812a705afd7777cacd7eb2ba14
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377054"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117943"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrare un motore di debug personalizzato
 Il motore di debug deve registrarsi come class factory, seguendo le convenzioni COM e registrarsi con Visual Studio tramite la sottochiave Visual Studio del Registro di sistema.

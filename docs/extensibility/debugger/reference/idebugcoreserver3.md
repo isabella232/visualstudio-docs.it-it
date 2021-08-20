@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ab3323f7377f31e187dbb2642781ca54584b762d8c616ea9cba3eb37f50c3c5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 38e839ef5c653bfe21541371f8320c74cfa4679b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127363"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Questa interfaccia consente di accedere alle informazioni sul server in cui è in esecuzione il processo.

@@ -1,6 +1,6 @@
 ---
-title: Informazioni di riferimento sulle API del Visualizzatore | Microsoft Docs
-description: Un visualizzatore Visualizza un tipo specifico di elemento dati e può consentire anche la modifica. Per crearne uno, usare l'API del Visualizzatore documentata in questa sezione.
+title: Informazioni di riferimento sulle API del visualizzatore | Microsoft Docs
+description: Un visualizzatore visualizza un tipo specifico di elemento dati e può consentire anche la modifica. Per crearne uno, usare l'API del visualizzatore documentata in questa sezione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,14 +17,15 @@ ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b790bcdc11e80b8f01877efe4a8d9497038b260b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7dbf4105320531a21f478ef8947129e0fa754c28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884260"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112220"
 ---
 # <a name="visualizer-api-reference"></a>Informazioni di riferimento sulle API del visualizzatore
 

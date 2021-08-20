@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f261cb9005a9433d8596003585522c5223c7f340adedde237e4944fd894b281c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 744722b40912f67ddee1de0558470a8727a1660c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410814"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123450"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilizzo di Esplora linguaggi specifici di dominio
 Esplora **DSL visualizza** diversi tipi di informazioni in una visualizzazione albero. Per altre informazioni sulla maggior parte degli elementi in DSL Explorer, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).

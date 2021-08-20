@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ab24503e025707b77141cafa272f4db1c9f78ac6d54bda1c486c53c5d4f24b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fa8720b86771cf2dfd0a46213ff493a3319c9a9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103091"
 ---
 # <a name="object_type"></a>Object_Type
 Specifica il tipo di un oggetto dall'analizzatore di espressioni.
@@ -114,7 +114,7 @@ public enum enum_OBJECT_TYPE {
  Indica che l'oggetto è NULL.
 
  `OBJECT_TYPE_CLASS`\
- Indica che l'oggetto è una classe .
+ Indica che l'oggetto è una classe.
 
 ## <a name="remarks"></a>Commenti
  Passato come argomento ai [metodi CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) [e CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 75ae93a5bf1b82d2101643512f2fa80da9d0271a51462181b7260c3652abdeed
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab44e4e54c78f36fe4598771ca43847fc692150d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123346"
 ---
 # <a name="diagnosing-task-failures"></a>Diagnosi degli errori delle attività
 
@@ -62,7 +62,7 @@ Le stesse informazioni sono disponibili nell'Visual Studio degli errori nelle co
 
 Questo errore viene generato quando l'attività non registra un errore specifico. La mancata registrazione di un errore è spesso dovuto al fatto che l'attività non è configurata per comprendere il formato di errore generato dallo strumento chiamato.
 
-Gli strumenti ben comportati in genere generano informazioni contestuali o sugli errori nel flusso di output o di errore standard e le attività acquisiscono e registrano queste informazioni per impostazione predefinita. Per altre informazioni, esaminare le voci di log prima che si sia verificato l'errore. Potrebbe essere necessario rieseguire la compilazione con un livello di log superiore per mantenere queste informazioni.
+Gli strumenti ben comportati in genere generano alcune informazioni contestuali o di errore nel flusso di output o di errore standard e le attività acquisiscono e registrano queste informazioni per impostazione predefinita. Per altre informazioni, esaminare le voci di log prima che si sia verificato l'errore. Potrebbe essere necessario rieseguire la compilazione con un livello di log superiore per mantenere queste informazioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

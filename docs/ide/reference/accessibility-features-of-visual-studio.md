@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c71c28cde3a24aa1cc97a2ffeb7f1fa84eb16ffc1b857f36492cb0facff6f59b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 880863d483845f75d316db0f088ab8bcc6f98972
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372855"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137197"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
 
