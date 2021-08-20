@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f0cf08d06d269b2c03cebd63cbd1618c303896b016c470321d1f4aea9f6c35
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 567440c7395982fb3894c783790eee12c9056abc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435803"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112334"
 ---
 # <a name="source-server-security-alert"></a>Avviso di sicurezza del server di origine
 Quando viene utilizzato il server di origine, utilizzare unicamente file di simboli provenienti da un percorso conosciuto o attendibile.

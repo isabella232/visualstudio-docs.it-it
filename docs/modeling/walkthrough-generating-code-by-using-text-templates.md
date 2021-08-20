@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: generazione di codice tramite modelli di testo'
-description: Si apprenderà che la generazione del codice consente di produrre codice di programma fortemente tipizzato, ma che può essere facilmente modificato quando il modello di origine cambia.
+description: Si apprenderà che la generazione di codice consente di produrre codice di programma fortemente tipizzato, ma che può essere modificato facilmente quando il modello di origine viene modificato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 22940fb86ab0cfd7262a3ca7845521847add2dff
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f01a19b1329c994e8f76a549e7f5dbbf70542adf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388126"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123489"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -30,7 +31,7 @@ Lo spazio dei nomi System. XML fornisce strumenti completi per il caricamento di
 In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.
 
 > [!NOTE]
-> [L'xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), inclusa in Visual Studio, può generare classi fortemente tipche da file XML. Il modello illustrato qui viene fornito come esempio.
+> [L'applicazionexsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), inclusa in Visual Studio, può generare classi fortemente tipstrate da file XML. Il modello illustrato qui viene fornito come esempio.
 
 Ecco il file di esempio:
 
@@ -75,17 +76,17 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-Nella versione fortemente tipizzato, una modifica di XML Schema comporta modifiche alle classi. Il compilatore evidenzia le parti del codice dell'applicazione che devono essere modificate. Tale supporto non è disponibile nella versione non tipizzata che usa il codice XML generico.
+Nella versione fortemente tipizzato, una modifica all'XML Schema comporta modifiche alle classi. Il compilatore evidenzia le parti del codice dell'applicazione che devono essere modificate. Tale supporto non è disponibile nella versione non tipizzata che usa il codice XML generico.
 
 In questo progetto viene usato un singolo file di modello per generare le classi che rendono possibile la versione tipizzata.
 
-## <a name="set-up-the-project"></a>Configurare il progetto
+## <a name="set-up-the-project"></a>Configurare il Project
 
 ### <a name="create-or-open-a-c-project"></a>Creare o aprire un progetto C#
 
 È possibile applicare questa tecnica a qualsiasi progetto di codice. Questa procedura dettagliata usa un progetto C# e ai fini di test si userà un'applicazione console.
 
-1. Scegliere **Nuovo** dal menu File **e** quindi fare clic **su Progetto**.
+1. Scegliere **Nuovo dal** menu File **e** quindi fare clic su **Project**.
 
 2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.
 
@@ -95,7 +96,7 @@ Lo scopo di questo file è fornire esempi dei tipi di nodo XML che l'applicazion
 
 Il file deve far parte del progetto in modo che il modello possa leggerlo, ma non sarà integrato nell'applicazione compilata.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** e quindi Fare clic su **Nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** e quindi fare clic su **Nuovo elemento.**
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
 
@@ -105,7 +106,7 @@ Il file deve far parte del progetto in modo che il modello possa leggerlo, ma no
 
 ### <a name="add-a-test-code-file"></a>Aggiungere un file di codice di test
 
-Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Ad esempio:
+Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Esempio:
 
 ```csharp
 using System;
@@ -131,7 +132,7 @@ Un test più completo potrebbe controllare l'output di questa funzione di test c
 
 ### <a name="add-a-text-template-file"></a>Aggiungere un file di modello di testo
 
-Aggiungere un file modello di testo e impostare l'estensione di output su *.cs*.
+Aggiungere un file di modello di testo e impostare l'estensione di output *su .cs*.
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
 
@@ -142,7 +143,7 @@ Aggiungere un file modello di testo e impostare l'estensione di output su *.cs*.
 
 3. Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.
 
-     Questa modifica consentirà al codice del modello di ottenere l'accesso ai Visual Studio dati.
+     Questa modifica consentirà al codice del modello di ottenere l'accesso ai Visual Studio servizio.
 
 4. Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".
 
@@ -408,7 +409,7 @@ L'applicazione può ora essere scritta in stile fortemente tipizzato, usando le 
 
 Quando lo schema XML cambia, è possibile generare facilmente nuove classi. Il compilatore indicherà allo sviluppatore dove il codice dell'applicazione deve essere aggiornato.
 
-Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic **su** Trasforma tutti i modelli nella barra Esplora soluzioni barra **degli** strumenti.
+Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic **su** Trasforma tutti i modelli nella barra **Esplora soluzioni** strumenti.
 
 ## <a name="conclusion"></a>Conclusione
 

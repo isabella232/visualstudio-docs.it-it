@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bf60445e153d307d877a83026eeac8db3dacdbee095857ed63bf23aac35415e8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 567f23ea4997a9497b3ef2160f86b3a46beaf432
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368754"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150391"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 
@@ -45,7 +45,7 @@ Per avviare lo strumento Utilizzo GPU:
 
 2. Nell'hub **Prestazioni e diagnostica** selezionare la casella accanto a Utilizzo **GPU**. Facoltativamente, selezionare le caselle accanto agli altri strumenti a cui si è interessati. È possibile eseguire contemporaneamente diversi strumenti di diagnostica e prestazioni per ottenere un quadro più completo delle prestazioni dell'app.
 
-    ![Screenshot dell'Profiler prestazioni, con l'opzione Utilizzo GPU selezionata](media/gpuusageselected.png "Utilizzo GPU selezionato")
+    ![Screenshot del Profiler prestazioni, con l'opzione Utilizzo GPU selezionata](media/gpuusageselected.png "Utilizzo GPU selezionato")
 
    > [!NOTE]
    > Non tutti gli strumenti di diagnostica e prestazioni possono essere usati contemporaneamente.
@@ -54,7 +54,7 @@ Per avviare lo strumento Utilizzo GPU:
 
 Le informazioni di alto livello visualizzate in tempo reale includono intervallo di fotogrammi, frequenza dei fotogrammi e utilizzo della GPU. Ognuna di queste informazioni viene tracciata in modo indipendente, ma tutte usano una scala temporale comune in modo da poter comprendere facilmente le relazioni.
 
-I grafici Frame **time (ms)** e **Frames per second (FPS)** hanno ognuno due linee orizzontali rosse che mostrano obiettivi di prestazioni di 60 e 30 fotogrammi al secondo. Nel grafico Durata frame l'app supera la destinazione di prestazioni se il grafico si trova sotto la linea e non raggiunge la destinazione se il grafico si trova sopra la linea. Per il grafico Frame al secondo, è l'opposto: l'app supera la destinazione delle prestazioni quando il grafo si trova sopra la linea e non raggiunge la destinazione quando il grafico si trova sotto la linea. Questi grafici vengono utilizzati principalmente per ottenere un'idea generale delle prestazioni dell'app e per identificare i rallentamenti che è possibile analizzare. Ad esempio, un'ulteriore analisi potrebbe essere giustificata se si verifica un improvviso calo della frequenza dei fotogrammi o un picco nell'utilizzo della GPU.
+I grafici Frame **time (ms)** e **Frames per second (FPS)** hanno ognuno due linee orizzontali rosse che mostrano obiettivi di prestazioni di 60 e 30 fotogrammi al secondo. Nel grafico Durata frame l'app supera la destinazione di prestazioni se il grafico si trova sotto la linea e non raggiunge la destinazione se il grafico si trova sopra la linea. Per il grafico Frame al secondo, è l'opposto: l'app supera la destinazione delle prestazioni quando il grafo si trova sopra la linea e non raggiunge la destinazione quando il grafo si trova sotto la linea. Questi grafici vengono utilizzati principalmente per ottenere un'idea generale delle prestazioni dell'app e per identificare i rallentamenti che è possibile analizzare. Ad esempio, un'ulteriore analisi potrebbe essere giustificata se si verifica un improvviso calo della frequenza dei fotogrammi o un picco nell'utilizzo della GPU.
 
 Mentre l'app viene eseguita con lo strumento Utilizzo GPU, la sessione di diagnostica raccoglie anche informazioni dettagliate sugli eventi grafici eseguiti nella GPU. Queste informazioni vengono usate per generare un report più dettagliato sul modo in cui l'app usa l'hardware. Poiché la generazione del report a partire dalle informazioni raccolte richiede del tempo, il report è disponibile solo al termine della raccolta delle informazioni nella sessione di diagnostica.
 
@@ -118,7 +118,7 @@ L'elenco degli eventi nella parte inferiore del report Utilizzo GPU mostra i det
 |**Thread ID**|ID del thread da cui proviene l'evento.|
 
 > [!IMPORTANT]
-> Se la GPU o il driver non supporta le funzionalità di strumentazione necessarie, tutti gli eventi verranno visualizzati come senza *attributi.* Se si verifica questo problema, aggiornare il driver GPU e riprovare. Per altre informazioni, vedere [Supporto di hardware](#hwsupport) e driver alla fine di questo documento.
+> Se la GPU o il driver non supporta le funzionalità di strumentazione necessarie, tutti gli eventi verranno visualizzati *come senza attributi.* Se si verifica questo problema, aggiornare il driver GPU e riprovare. Per altre informazioni, vedere [Supporto di hardware e driver](#hwsupport) alla fine di questo documento.
 
 ## <a name="gpu-usage-settings"></a>Impostazioni di Utilizzo GPU
 
@@ -126,9 +126,9 @@ Si può configurare lo strumento Utilizzo GPU in modo da posticipare la raccolta
 
 Per posticipare la profilatura rispetto all'avvio dell'app:
 
-1. Nel menu principale scegliere **Debug** prestazioni e diagnostica  >   oppure premere ALT+F2 sulla tastiera.
+1. Nel menu principale scegliere **Debug** Performance and Diagnostics (Prestazioni e diagnostica di  >   debug) oppure premere ALT+F2 sulla tastiera.
 
-2. Nell'hub **Prestazioni e diagnostica,** accanto a **Utilizzo GPU,** selezionare il **collegamento alle** impostazioni.
+2. Nell'hub **Prestazioni e diagnostica** selezionare il collegamento **Impostazioni** accanto a **Utilizzo GPU.**
 
 3. In **Configurazione profilatura GPU** deselezionare la casella di controllo Inizia profilatura all'avvio dell'app nella pagina delle proprietà Generale per posticipare la profilatura.  
 
@@ -143,10 +143,10 @@ Dopo aver eseguito l'app nello strumento Utilizzo GPU, nella parte inferiore del
 
 Di seguito è riportato un elenco delle GPU e dei driver supportati:
 
-|Vendor|Descrizione GPU|Versione del driver richiesta|
+|Vendor|Descrizione DELLA GPU|Versione del driver richiesta|
 |------------|---------------------|-----------------------------|
 |Intel®|Processori Intel® Core di quarta generazione (Haswell)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|(usare i driver più recenti)|
-|AMD®|Più dalla serie AMD Radeon™ HD serie 7000 (esclude AMD Radeon™ HD 7350-7670)<br /><br /> Radeon AMD™ GPU, GPU AMD FirePro™ e acceleratori GPU AMD FirePro con architettura Graphics Core Next (GCN)<br /><br /> APU (Accelerated Processing Unit) AMD® E-Series e AMD A-series con architettura Graphics Core Next (GCN) (Kaveri, Kabini, Temash, Beema, Mullins)|14.7 RC3 o versione successiva|
-|NVIDIA®|Più dalla serie NVIDIA® GeForce® serie 400<br /><br /> NVIDIA® GeForce® GPU, GPU NVIDIA Quadro® GPU e NVIDIA® Tesla™ con architettura Fermi™, Kepler™ o Maxwell™|343.37 o versione successiva|
+|AMD®|La maggior parte a partire da AMD Radeon™ HD serie 7000 (esclude AMD Radeon™ HD 7350-7670)<br /><br /> Radeon AMD™ GPU, GPU AMD FirePro™ e acceleratori GPU AMD FirePro con architettura Graphics Core Next (GCN)<br /><br /> APU (Accelerated Processing Unit) AMD® E-Series e AMD A-series con architettura Graphics Core Next (GCN) (Kaveri, Kabini, Temash, Beema, Mullins)|14.7 RC3 o versione successiva|
+|NVIDIA®|La maggior parte dai tempi di NVIDIA® GeForce® serie 400<br /><br /> GPU NVIDIA® GeForce®, NVIDIA Quadro® GPU e acceleratori GPU NVIDIA® Tesla™ con architettura Avana™, Kepler™ o Maxwell™|343.37 o versione successiva|
 
- Le configurazioni multi-GPU, ad esempio NVIDIA® SLI™ e AMD Crossfire™, non sono attualmente supportate. Sono supportate configurazioni di grafica ibrida, ad esempio NVIDIA® Optimus™ e AMD Enduro™.
+ Le configurazioni multi-GPU, ad esempio NVIDIA® SLI™ e AMD Crossfire™, non sono attualmente supportate. Sono supportate configurazioni di grafica ibride, ad esempio NVIDIA® Optimus™ e AMD Enduro™.

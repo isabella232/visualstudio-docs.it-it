@@ -1,21 +1,22 @@
 ---
 title: WinCounter | Microsoft Docs
-description: Informazioni sull'opzione WinCounter, in particolare che specifica un contatore delle prestazioni di Windows o dell'applicazione da raccogliere a intervalli prestabiliti durante l'esecuzione del profilo.
+description: Informazioni sull'opzione WinCounter, in particolare sul fatto che specifica un contatore delle prestazioni Windows o dell'applicazione da raccogliere a intervalli impostati durante l'esecuzione del profilo.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa5482ba1bad297fd1cfdf20810ad985b050c25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b5f22674f1b66b31a03b2c30ed0e58a7b9f89e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915943"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156708"
 ---
 # <a name="wincounter"></a>WinCounter
 L'opzione **WinCounter** specifica un contatore delle prestazioni di Windows o di un'applicazione per la raccolta di dati a intervalli prestabiliti durante l'esecuzione della profilatura. I contatori delle prestazioni di Windows e dell'applicazione sono elencati come contrassegni nel file di dati di profilatura. È possibile specificare più contatori delle prestazioni da raccogliere in opzioni separate.
@@ -38,12 +39,12 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **WinCounter** può essere usata solo con l'opzione **Start**.
 
- **Inizio:** `Method` L'opzione **Start** Inizializza il profiler sul metodo di profilatura specificato.
+ **Avviare:** `Method` **L'opzione Start** inizializza il profiler sul metodo di profilatura specificato.
 
 ## <a name="exclusive-options"></a>Opzioni esclusive
  L'opzione **AutoMark** può essere usata solo con l'opzione **WinCounter**.
 
- **Contrassegno automark:** `Milliseconds` Specifica il numero di millisecondi tra la raccolta di dati del contatore delle prestazioni di Windows.
+ **AutoMark:** `Milliseconds` Specifica il numero di millisecondi tra la raccolta Windows dati del contatore delle prestazioni.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene impostata la raccolta dei dati di due contatori delle prestazioni di Windows a intervalli di 1000 millisecondi.

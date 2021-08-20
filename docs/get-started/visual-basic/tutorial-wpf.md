@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e757dc25fe094b1ffa745cd43ad251abbc9448a7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 5d03f461a65e6fdb8bc11df6672b2c0069a2fc1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157813"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: Creare un'applicazione semplice con Visual Basic
 
@@ -69,7 +69,7 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 ::: moniker range="vs-2017"
 
-1. Creare un nuovo progetto. Nella barra dei menu selezionare **File** New Project  >  **(File nuovo**  >  **progetto).**
+1. Creare un nuovo progetto. Nella barra dei menu selezionare **File**  >  **Nuovo**  >  **Project**.
 
      ![Nella barra dei menu scegliere File, Nuovo, Progetto](../media/exploreide-filenewproject.png)
 
@@ -106,7 +106,7 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro *del mouse su MainWindow.xaml* e **scegliere Rinomina.** Rinominare il file in *Greetings.xaml.*
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni** fare clic con il pulsante destro del mouse *su MainWindow.xaml* e **scegliere Rinomina.** Rinominare il file in *Greetings.xaml.*
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
@@ -122,7 +122,7 @@ Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:Sys
 
      ![Casella degli strumenti con il controllo TextBlock evidenziato](../media/exploreide-textblocktoolbox.png)
 
-3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive è possibile usare le linee guida rosse per centrare il controllo.
+3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive, è possibile usare le linee guida rosse per centrare il controllo.
 
 La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
@@ -234,7 +234,7 @@ Verrà quindi eseguito il debug dell'applicazione per rilevare eventuali errori 
 
 ### <a name="find-and-fix-errors"></a>Trovare e correggere errori
 
-In questo passaggio si troverà l'errore causato in precedenza modificando il nome del file *MainWindow.xaml.*
+In questo passaggio si troverà l'errore che è stato causato in precedenza modificando il nome del file *MainWindow.xaml.*
 
 #### <a name="start-debugging-and-find-the-error"></a>Avviare il debug e trovare l'errore
 

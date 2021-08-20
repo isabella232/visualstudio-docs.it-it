@@ -1,6 +1,6 @@
 ---
 title: Specificare il file binario da avviare | Microsoft Docs
-description: Informazioni su come immettere informazioni nella finestra di dialogo Pagine <Target> delle proprietà per profilare i file binari, ad esempio DLL.
+description: Informazioni su come immettere informazioni nella finestra <Target> di dialogo Pagine delle proprietà per profilare i file binari, ad esempio le DLL.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ec3a2355f6539472a2079bb0988bed1508c858303d9aee2c40e86b0f49e6531b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d7b024434b93607d1f104b37a1f168565b05f4f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150014"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Procedura: Specificare l'avvio del file binario
 

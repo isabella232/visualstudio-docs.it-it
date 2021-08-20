@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c9edcb96b8fa1383abc6e00bc1573cf0dc112afc14abb8465c469d2c7153db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ee2333e73e6fbc22e25f12da49c7e6586885215d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121353955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140557"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 

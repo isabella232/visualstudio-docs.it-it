@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b7d9d5b63bad3d94accc8a87bbbdbcf1c49dbccdbde9b84fb21cd34362b6a8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ecffb2bb8a6cf616b75386cac5823763534bb30
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435829"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112477"
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 
@@ -39,25 +39,25 @@ Per visualizzare questa finestra di dialogo, aprire la finestra di dialogo **Con
 
 **Determinare automaticamente il tipo di codice di cui eseguire il debug** Il debugger appropriato verrà selezionato in base al tipo di codice in esecuzione.
 
-**Eseguire il debug di questi tipi di codice:** Nell'elenco fornito scegliere i tipi di codice di cui si vuole eseguire il debug. Ciò può essere utile durante la [risoluzione dei problemi relativi a un errore di collegamento di](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Questa opzione limita il rilevamento solo ai tipi di codice di cui si vuole eseguire il debug.
+**Eseguire il debug di questi tipi di codice:** Nell'elenco fornito scegliere i tipi di codice di cui si vuole eseguire il debug. Questa operazione può essere utile per [la risoluzione dei problemi relativi a un errore di collegamento di](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Questa opzione limita il rilevamento solo ai tipi di codice di cui si vuole eseguire il debug.
 
 ::: moniker range=">=vs-2019"
 - Blazor WebAssembly - Lato client Blazor WebAssembly
 - GPU - Software Emulator - Codice C++ in esecuzione in un emulatore software GPU
 - JavaScript (Chrome) - JavaScript in esecuzione in Chrome
-- JavaScript (Microsoft Edge - Chromium) - JavaScript in esecuzione in Chromium basata Microsoft Edge per Windows 10
-- Debugger CDP JavaScript (V3) - Chrome DevTools Protocol versione 3, usato per il debug in un client CDP
+- JavaScript (Microsoft Edge - Chromium) - JavaScript in esecuzione in Chromium basato su Microsoft Edge per Windows 10
+- Debugger CDP (V3) JavaScript - Chrome DevTools Protocol versione 3, usato per il debug in un client CDP
 - Managed (CoreCLR) - .NET Core
 - Gestito (compilazione nativa) - Codice C++/CLR
-- Gestito (v3.5, v3.0, v2.0): codice .NET Framework per .NET Framework 2.0 e versioni successive (fino alla versione 3.5)
-- Gestito (v.4.6, v4.5, v4.0) - codice .NET Framework per .NET Framework 4.0 e versioni successive
+- Gestito (v3.5, v3.0, v2.0): codice .NET Framework per .NET Framework 2.0 e versioni successive (fino a 3.5)
+- Gestito (v.4.6, v4.5, v4.0): codice .NET Framework per .NET Framework 4.0 e versioni successive
 - Nativo - C/C++
-- Node.js debug - Codice ospitato dal runtime Node.js
+- Node.js debug: codice ospitato dal runtime di Node.js
 - Python - Python 
 - Script: specifica il debugger di script generale per JavaScript. Usare opzioni più restrittive se si applicano allo scenario, ad esempio JavaScript (Chrome).
 - T-SQL - Transact-SQL
 - Unity - Unity
-- Modalità di compatibilità gestita: specifica il debugger legacy per il codice gestito, da usare in genere nel debug in modalità mista con codice C++/CLR (abilita Modifica e continuazione per la modalità mista) o per supportare le estensioni destinate al debugger legacy. Nella maggior parte degli scenari di debug in modalità mista selezionare **Nativo** e i **tipi** di codice gestito appropriati invece della modalità di compatibilità gestita.
+- Modalità di compatibilità gestita: specifica il debugger legacy per il codice gestito, da usare in genere nel debug in modalità mista con codice C++/CLR (abilita Modifica e continuazione per la modalità mista) o per supportare le estensioni destinate al debugger legacy. Nella maggior parte degli scenari di debug in modalità mista selezionare **Nativo** e i tipi **di** codice gestito appropriati invece della modalità di compatibilità gestita.
 ::: moniker-end
 
 Per la maggior parte degli scenari, il collegamento di più debugger nella stessa sessione di debug non è supportato. È possibile eseguire questa operazione usando una seconda istanza di Visual Studio.

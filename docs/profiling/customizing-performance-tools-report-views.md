@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: da930d7cf55bad216331e87178889b0e730458a9f3a7f64a22fab2c3e7a618bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 46d91c15fb43a735856e537fe09c94ba33aa439a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121396760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136326"
 ---
 # <a name="customize-performance-tools-report-views"></a>Personalizzare le visualizzazioni dei report sugli strumenti per le prestazioni
 In questa sezione viene descritto come personalizzare i report generati con gli strumenti di profilatura [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

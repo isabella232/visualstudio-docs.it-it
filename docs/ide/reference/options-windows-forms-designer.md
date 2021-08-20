@@ -13,12 +13,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: e263976523b85d5705bd9bbe324fa7e58c406c74381ead10c395ca935b9f7e9b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df8b064277d57ab0696ad48fa7a5778654701009
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447402"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143716"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>Finestra di dialogo Opzioni: Windows Progettazione Form
 

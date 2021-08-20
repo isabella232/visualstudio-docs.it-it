@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302ec482e15b837a8287520170c40e2765f0d09b5693028a132f6af063c8030e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e7cb031b55a83dbc2694b8532c91b013a343ffa3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359741"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124789"
 ---
 # <a name="checklist-create-new-project-types"></a>Elenco di controllo: Creare nuovi tipi di progetto
 È necessario completare diverse attività per creare un nuovo tipo di progetto. L'elenco di controllo seguente fornisce una guida a queste attività:

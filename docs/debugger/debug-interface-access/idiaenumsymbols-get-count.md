@@ -11,14 +11,15 @@ ms.assetid: fdaae6d7-e67b-4262-84c9-fbae381e8297
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b3859524adce48fb504c09c4b0bcacf8ac97a875
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9f9b279ded2b73debc27126cda0a50a88b3f7198
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159132"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129351"
 ---
 # <a name="idiaenumsymbolsget_count"></a>IDiaEnumSymbols::get_Count
 Recupera il numero di simboli.
@@ -34,7 +35,7 @@ HRESULT get_Count (
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-out Restituisce il numero di simboli.
+[out] Restituisce il numero di simboli.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

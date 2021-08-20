@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d5db11e983107b6e0a86822676753afab89f6c097cff49570bdd69d18f6153a1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 90bafdeddef52679a515444eb625d94eaa37ef5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405066"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161573"
 ---
 # <a name="idiasectioncontribget_code"></a>IDiaSectionContrib::get_code
 Recupera un flag che indica se la sezione contiene codice eseguibile.

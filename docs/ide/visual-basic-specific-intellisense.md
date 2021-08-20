@@ -1,6 +1,6 @@
 ---
 title: IntelliSense per Visual Basic
-description: Informazioni su come usare le funzionalità di IntelliSense offerte dall'editor del codice sorgente Visual Basic.
+description: Informazioni su come usare le funzionalità intelliSense offerte dall'editor Visual Basic codice sorgente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1420165c8ca574c74efe6911bb9c5635e729a260
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44b6e8eb5b44089f0aa87c579ea98f6be947bdb9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955554"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150807"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense per i file di codice di Visual Basic
 
@@ -41,7 +42,7 @@ I suggerimenti per la sintassi visualizzano la sintassi dell'istruzione che si s
 
 Il completamento può essere disattivato per impostazione predefinita deselezionando **Elenco membri automatico** dalla pagina **Generale** delle proprietà nella cartella **Visual Basic**.
 
-È possibile richiamare manualmente il completamento richiamando Elenca membri, completa parola o **ALT** + **freccia destra**. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
+È possibile richiamare manualmente il completamento richiamando Elenca membri, Completa parola o **ALT** + **freccia DESTRA.** Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense sensibile all'area
 

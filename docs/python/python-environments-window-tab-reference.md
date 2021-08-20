@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1ff8a09c70fd352d96df85189aa8cc13bb9f093150077f77ed4e44c9071f0e5b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ec08fbc30f6a03929e778361c08b03281d997d1b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121353701"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140375"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -51,7 +51,7 @@ Include informazioni di base e comandi per l'ambiente:
 | **Visita il sito Web del server di distribuzione** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
 | **Apri finestra interattiva** | Apre la [finestra (REPL) interattiva](python-interactive-repl-in-visual-studio.md) per questo ambiente all'interno di Visual Studio, applicando qualunque [script di avvio (vedere sotto)](#startup-scripts). |
 | **Esplora gli script interattivi** | Vedere [Script di avvio](#startup-scripts). |
-| **Usa la modalità interattiva IPython** | Se impostata, apre la **finestra** interattiva con IPython per impostazione predefinita. Vengono abilitati i tracciati inline e la sintassi IPython estesa, come `name?` per visualizzare la Guida e `!command` per i comandi della shell. Questa opzione è consigliata quando si usa una distribuzione Anaconda, perché richiede pacchetti aggiuntivi. Per altre informazioni, vedere [Usare IPython nella finestra interattiva](interactive-repl-ipython.md). |
+| **Usa la modalità interattiva IPython** | Se impostata, apre la **finestra** Interattiva con IPython per impostazione predefinita. Vengono abilitati i tracciati inline e la sintassi IPython estesa, come `name?` per visualizzare la Guida e `!command` per i comandi della shell. Questa opzione è consigliata quando si usa una distribuzione Anaconda, perché richiede pacchetti aggiuntivi. Per altre informazioni, vedere [Usare IPython nella finestra interattiva](interactive-repl-ipython.md). |
 | **Apri in PowerShell** | Avvia l'interprete in una finestra di comando di PowerShell. |
 | (Collegamenti alla cartella e ai programmi) | Consente di accedere rapidamente alla cartella di installazione dell'ambiente, all'interprete *python.exe* e all'interprete *pythonw.exe* sistema. Il primo apre Esplora risorse, gli ultimi due aprono una finestra della console. |
 
@@ -59,7 +59,7 @@ Include informazioni di base e comandi per l'ambiente:
 
 Quando si usano le finestre interattive nel proprio flusso di lavoro quotidiano, è probabile sviluppare funzioni helper da usare regolarmente. Ad esempio, è possibile creare una funzione che apre un dataframe in Excel e quindi salvare il codice come script di avvio in modo che sia sempre disponibile nella **finestra** Interattiva.
 
-Gli script di avvio contengono codice caricato **ed** eseguito automaticamente dalla finestra interattiva, incluse le importazioni, le definizioni di funzione e qualsiasi altro elemento. Tali script sono referenziati in due modi:
+Gli script di avvio contengono codice caricato **ed** eseguito automaticamente dalla finestra interattiva, incluse importazioni, definizioni di funzioni e qualsiasi altro elemento. Tali script sono referenziati in due modi:
 
 1. Quando si installa un ambiente, Visual Studio crea una cartella *Documents\Visual Studio \<version> \Python Scripts \\ \<environment>* dove version è la versione di Visual Studio (ad esempio &lt; &gt; 2017 o 2019) e environment corrisponde al nome &lt; dell'ambiente. &gt; È possibile passare alla cartella specifica dell'ambiente con il comando **Esplora gli script interattivi**. Quando si avvia la finestra **Interattiva** per tale ambiente, vengono caricati ed eseguiti tutti i file con estensione *py* disponibili qui in ordine alfabetico.
 
@@ -132,7 +132,7 @@ Durante l'installazione di pacchetti in un ambiente che si trova in un'area prot
 
 ![Richiesta di elevazione dei privilegi per l'installazione del pacchetto](media/environments/environments-pip-elevate.png)
 
-**Eleva ora** concede privilegi di amministratore per pip per un'unica operazione, subordinatamente anche a qualunque richiesta di permessi del sistema operativo. Selezionando Continua **senza** privilegi di amministratore si tenta di installare il pacchetto, ma pip ha esito negativo quando si tenta di creare cartelle con output come errore: impossibile creare **'C:\Programmi\Anaconda3\Lib\site-packages\png.py':** Autorizzazione negata.
+**Eleva ora** concede privilegi di amministratore per pip per un'unica operazione, subordinatamente anche a qualunque richiesta di permessi del sistema operativo. Se  si seleziona Continua senza privilegi di amministratore si tenta di installare il pacchetto, ma pip ha esito negativo quando si tenta di creare cartelle con output come errore: impossibile creare **'C:\Programmi\Anaconda3\Lib\site-packages\png.py':** Autorizzazione negata.
 
 Selezionando **Eleva sempre quando si installano o rimuovono pacchetti** si impedisce la visualizzazione della finestra di dialogo per l'ambiente in questione. Per visualizzare di nuovo la finestra di dialogo, passare **a** Strumenti Opzioni Python Generale e selezionare il pulsante Reimposta tutte le finestre di dialogo  >    >    >   **nascoste in modo permanente.**
 
@@ -144,7 +144,7 @@ Quando si usa Python 2.6, 3.1 e 3.2, Visual Studio visualizza il messaggio di av
 
 ![Messaggio sulle restrizioni di installazione pip con una versione precedente di Python](media/environments/environments-old-version-restriction.png)
 
-Il motivo dell'avviso è che con queste versioni precedenti di Python, non contiene il supporto per `pip install` Transport Security Layer (TLS) 1.2, necessario per il download di pacchetti dall'origine del pacchetto, pypi.org. Le compilazioni Python personalizzate possono supportare TLS 1.2 nel qual caso `pip install` potrebbe funzionare.
+Il motivo dell'avviso è che con queste versioni precedenti di Python, non contiene il supporto per `pip install` Transport Security Layer (TLS) 1.2, necessario per scaricare i pacchetti dall'origine del pacchetto, pypi.org. Le compilazioni Python personalizzate possono supportare TLS 1.2 nel qual caso `pip install` potrebbe funzionare.
 
 È possibile scaricare la versione appropriata di *get-pip.py* per un pacchetto da [bootstrap.pypa.io](https://bootstrap.pypa.io/), scaricare manualmente un pacchetto da [pypi.org](https://pypi.org/) e quindi installarlo dalla copia locale.
 

@@ -2,7 +2,7 @@
 title: 'Esercitazione: Introduzione a Visual Basic'
 description: Informazioni dettagliate su come creare un'app console Visual Basic in Visual Studio.
 ms.custom: vs-acquisition,  get-started
-ms.date: 02/10/2021
+ms.date: 08/13/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d8236a1448e61e451e30a7a3c77c6c327ebe03ee195bdf34acb642702dd0ec
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b9b652e792c6fd1623676c50eb8737e5877b68e3
+ms.sourcegitcommit: 4cf966e03cdce4c520f6d4bde0b2711c099e0edd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121273149"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122188729"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: introduzione a Visual Basic in Visual Studio
 
@@ -73,7 +73,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Annullare dalla finestra **di dialogo Nuovo Project** e dalla  barra dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
+1. Annullare dalla finestra **di dialogo Nuovo Project** e dalla barra  dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità**.
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
@@ -99,8 +99,8 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
    > [!NOTE]
    > Se il modello Applicazione **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
-   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
    >
    > ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
@@ -212,11 +212,11 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
     ![Finestra della console che illustra l'app CalculateThis con le azioni possibili.](media/vb-console-calculate-this.png)
 
-::: moniker-end 
+::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto**. 
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
 1. Nella finestra **Crea un nuovo progetto** scegliere Visual Basic dall'elenco Lingua.  Scegliere quindi **Windows** dall'elenco Piattaforma e **Console dall'elenco** dei tipi di progetto.
 
@@ -253,6 +253,8 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
 ::: moniker-end
 
+[!INCLUDE[../includes/git-source-control.md](../includes/git-source-control.md)]
+
 ## <a name="quick-answers-faq"></a>Domande frequenti con risposta rapida
 
 Ecco una rapida serie di domande frequenti per evidenziare alcuni concetti chiave.
@@ -267,7 +269,7 @@ Visual Studio è una suite integrata per lo sviluppo di strumenti di produttivit
 
 ### <a name="what-is-a-console-app"></a>Che cos'è un'app console?
 
-Un'app console accetta input e visualizza l'output in una finestra della riga di comando, nota anche come console.
+Un'app console accetta l'input e visualizza l'output in una finestra della riga di comando, nota anche come console.
 
 ### <a name="what-is-net-core"></a>Informazioni su .NET Core
 

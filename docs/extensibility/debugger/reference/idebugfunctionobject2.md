@@ -1,6 +1,6 @@
 ---
 description: Rappresenta una funzione e migliora l'interfaccia IDebugFunctionObject.
-title: Interfaccia IDebugFunctionObject2 | Microsoft Docs
+title: IDebugFunctionObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bc2ebc0422dcffeb682f7ac9eb02216d5adf6505b1799d6f33c22e192aa184c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 110c2cde3a65c5e9aa9f06c08e384c8cc604f5ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389774"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138211"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
-> In Visual Studio 2015 questa modalità di implementazione degli analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere [Clr Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Rappresenta una funzione e migliora [l'interfaccia IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
@@ -35,7 +35,7 @@ IDebugFunctionObject2 : IUnknown
  Un analizzatore di espressioni (edizione Enterprise) implementa questa interfaccia per rappresentare una funzione.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- I metodi di questa interfaccia rinviano **quelli di IDebugFunctionObject** nei modi seguenti:
+ I metodi di questa interfaccia rimandano quelli **di IDebugFunctionObject** nei modi seguenti:
 
 - Il **metodo IDebugEvaluate** accetta flag.
 
@@ -48,7 +48,7 @@ IDebugFunctionObject2 : IUnknown
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crea un oggetto che utilizza un costruttore in base alle impostazioni del flag di valutazione e a un valore di timeout.|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crea un oggetto che usa un costruttore in base alle impostazioni del flag di valutazione e a un valore di timeout.|
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Crea un oggetto stringa con la lunghezza specificata.|
 |[Valuta](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Chiama la funzione e restituisce il valore risultante come oggetto .|
 

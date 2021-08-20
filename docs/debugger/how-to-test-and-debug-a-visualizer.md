@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 139c0c0b2cce08d211e3d318d8ab90d0dd5a368f08004133f1ef31b3f58a257a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: acaf60f9fdabc5f85f7811e2b38ed7b8903c2e10
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453386"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128078"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procedura: testare un visualizzatore ed eseguirne il debug
 Dopo avere scritto un visualizzatore, è necessario testarlo ed eseguirne il debug.
@@ -35,7 +35,7 @@ Una possibile soluzione per testare un visualizzatore consiste nell'installarlo 
 Una soluzione più semplice per il debug di un visualizzatore consiste nell'eseguire il visualizzatore da un driver di test. Utilizzando le API del visualizzatore è possibile creare con facilità un driver di questo tipo, che viene definito *host di sviluppo del visualizzatore*.
 
 >[!NOTE]
-> Attualmente, il driver di test è supportato solo quando si chiama il visualizzatore da un'.NET Framework applicazione.
+> Attualmente, il driver di test è supportato solo quando si chiama il visualizzatore da un.NET Framework app.
 
 ### <a name="to-create-a-visualizer-development-host"></a>Per creare un host di sviluppo del visualizzatore
 
@@ -60,6 +60,6 @@ Una soluzione più semplice per il debug di un visualizzatore consiste nell'eseg
     Per un esempio più completo, vedere [Procedura dettagliata: Scrittura di un visualizzatore in C#.](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Procedura dettagliata: Scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

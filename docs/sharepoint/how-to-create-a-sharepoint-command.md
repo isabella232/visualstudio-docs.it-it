@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 7973cd0c3a52ae4433c85b9b0fa71cecc085827c4d33d542232229b7034d9f63
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: caaca2226b80a1e1aef4246094a01c158b8e2951
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228688"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136053"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Procedura: Creare un comando SharePoint comando
   Se si vuole usare il modello a oggetti del server in un'estensione degli strumenti SharePoint, è necessario creare un comando SharePoint *personalizzato* per chiamare l'API. Si definisce il SharePoint comando in un assembly che può chiamare direttamente nel modello a oggetti del server.

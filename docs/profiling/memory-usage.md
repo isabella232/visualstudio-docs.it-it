@@ -7,23 +7,24 @@ ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2ddd4011f807099c6bc82447f888b56f151e72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70fc947cc707fa397088f6dbc75542884de5696a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969412"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141727"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Misurare l'utilizzo della memoria in Visual Studio
 
-È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo per comprendere meglio l'impatto sull'utilizzo della memoria dei tipi di oggetti. È anche possibile analizzare l'utilizzo della memoria senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo per comprendere meglio l'impatto sull'utilizzo della memoria dei tipi di oggetti. È anche possibile analizzare l'utilizzo della memoria senza un debugger collegato o selezionando come destinazione un'app in esecuzione. Per altre informazioni, vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Anche se è possibile raccogliere snapshot di memoria in qualsiasi momento nello strumento **Utilizzo memoria** è possibile usare il debugger di Visual Studio per controllare la modalità di esecuzione dell'applicazione durante l'analisi dei problemi di prestazioni. L'impostazione dei punti di interruzione, l'esecuzione di istruzioni, l'azione Interrompi tutto e altre azioni del debugger consentono di concentrare l'analisi delle prestazioni sui percorsi del codice più rilevanti. L'esecuzione di tali azioni durante l'esecuzione dell'app può eliminare il rumore dal codice che non interessa l'utente e può ridurre notevolmente la quantità di tempo necessaria per la diagnosi di un problema.
 
 > [!Important]
-> Gli strumenti di diagnostica integrati nel debugger sono supportati per lo sviluppo .NET in Visual Studio, tra cui ASP.NET, ASP.NET Core, lo sviluppo nativo/C++ e le app in modalità mista (.NET e native). Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
+> Gli strumenti di diagnostica integrati nel debugger sono supportati per lo sviluppo .NET in Visual Studio, tra cui app ASP.NET, ASP.NET Core, sviluppo nativo/C++ e app in modalità mista (.NET e native). Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
 In questa esercitazione si apprenderà come:
 
@@ -31,10 +32,10 @@ In questa esercitazione si apprenderà come:
 > * Creare snapshot della memoria
 > * Analizzare i dati di utilizzo della memoria
 
-Se l' **utilizzo della memoria** non fornisce i dati necessari, gli altri strumenti di profilatura nel [Profiler delle prestazioni](../profiling/profiling-feature-tour.md#post_mortem) forniscono tipi diversi di informazioni che potrebbero essere utili. In molti casi, il collo di bottiglia delle prestazioni dell'applicazione può essere causato da un valore diverso dalla memoria, ad esempio CPU, rendering dell'interfaccia utente o tempo richiesta di rete.
+Se **l'utilizzo** della memoria non fornisce i dati necessari, altri strumenti di profilatura nel Profiler prestazioni forniscono diversi tipi di informazioni che potrebbero essere utili per l'utente. [](../profiling/profiling-feature-tour.md#post_mortem) In molti casi, il collo di bottiglia delle prestazioni dell'applicazione può essere causato da un elemento diverso dalla memoria, ad esempio CPU, interfaccia utente di rendering o tempo di richiesta di rete.
 
 > [!NOTE]
-> **Supporto per allocatori personalizzati** Il profiler della memoria nativa funziona raccogliendo i dati degli eventi [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) di allocazione generati in fase di esecuzione.  Gli allocatori in CRT e Windows SDK sono stati annotati a livello di origine in modo che sia possibile acquisirne i dati di allocazione. Nella scrittura degli allocatori, fare in modo che qualsiasi funzione che restituisce un puntatore alla memoria heap appena allocata possa essere decorata con [__declspec](/cpp/cpp/declspec)(allocator), come illustrato in questo esempio per myMalloc:
+> **Supporto allocatore personalizzato** Il profiler di memoria nativa funziona raccogliendo i dati [degli eventi ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) di allocazione generati durante la fase di esecuzione.  Gli allocatori in CRT e Windows SDK sono stati annotati a livello di origine in modo che sia possibile acquisirne i dati di allocazione. Nella scrittura degli allocatori, fare in modo che qualsiasi funzione che restituisce un puntatore alla memoria heap appena allocata possa essere decorata con [__declspec](/cpp/cpp/declspec)(allocator), come illustrato in questo esempio per myMalloc:
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
@@ -49,7 +50,7 @@ Se l' **utilizzo della memoria** non fornisce i dati necessari, gli altri strume
 
 2. Impostare un secondo punto di interruzione alla fine della funzione o dell'area di codice da analizzare o dopo un problema di utilizzo sospetto della memoria.
 
-3. La finestra **strumenti di diagnostica** viene visualizzata automaticamente a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **debug**  >  **Windows**  >  **Mostra strumenti di diagnostica**.
+3. La **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su  >  **Debug Windows** Mostra  >  **Strumenti di diagnostica**.
 
 4. Scegliere **Utilizzo memoria** con l'impostazione **Seleziona strumenti** sulla barra degli strumenti.
 
@@ -59,18 +60,18 @@ Se l' **utilizzo della memoria** non fornisce i dati necessari, gli altri strume
 
      Al termine del caricamento dell'applicazione viene visualizzato il riepilogo degli strumenti di diagnostica.
 
-     ![Scheda Riepilogo degli strumenti di diagnostica](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ![Scheda Riepilogo strumenti di diagnostica](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     > Poiché la raccolta di dati può influire sulle prestazioni di debug delle app native o in modalità mista, gli snapshot di memoria sono disattivati per impostazione predefinita. Per abilitare gli snapshot in app native o in modalità mista, avviare una sessione di debug (tasto di scelta rapida: **F5**). Quando viene visualizzata la finestra **strumenti di diagnostica** , scegliere la scheda **utilizzo memoria** e quindi scegliere **profilatura heap**.
+     > Poiché la raccolta di dati può influire sulle prestazioni di debug delle app native o in modalità mista, gli snapshot di memoria sono disattivati per impostazione predefinita. Per abilitare gli snapshot in app native o in modalità mista, avviare una sessione di debug (tasto di scelta rapida: **F5**). Quando viene **visualizzata Strumenti di diagnostica** finestra di dialogo, scegliere la scheda **Utilizzo** memoria e quindi scegliere **Profilatura heap**.
      >
      >  ![Abilitare gli snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  Arrestare (tasto di scelta rapida: **MAIUSC** + **F5**) e riavviare il debug.
+     >  Arrestare (tasto di scelta rapida: + **MAIUSC F5)** e riavviare il debug.
 
 6. Per creare uno snapshot all'inizio della sessione di debug, scegliere **Crea snapshot** sulla barra degli strumenti di riepilogo **Utilizzo memoria**. Può essere utile impostare anche qui un punto di interruzione.
 
-    ![Creazione Snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+    ![Creare uno snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      > Per creare una linea di base per i confronti di memoria, si consiglia di creare uno snapshot all'inizio di una sessione di debug.
@@ -88,7 +89,7 @@ Se l' **utilizzo della memoria** non fornisce i dati necessari, gli altri strume
 ## <a name="analyze-memory-usage-data"></a>Analizzare i dati di utilizzo della memoria
 Nelle righe della tabella di riepilogo Utilizzo memoria sono elencati gli snapshot creati durante la sessione di debug e sono disponibili collegamenti a visualizzazioni più dettagliate.
 
-![Tabella di riepilogo memoria](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Tabella di riepilogo della memoria](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  Il nome delle colonne dipende dalla modalità di debug selezionata nelle proprietà del progetto: .NET, nativa o mista (nativa e .NET).
 
@@ -100,7 +101,7 @@ Quando si eseguono più snapshot, le celle della tabella di riepilogo includono 
 
 Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che consente di visualizzare un report dettagliato dell'utilizzo della memoria:
 
-- Per visualizzare i dettagli della differenza tra lo snapshot corrente e quello precedente, scegliere il collegamento di modifica a sinistra della freccia (aumento dell'![utilizzo della memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento utilizzo memoria")). Una freccia rossa indica un aumento nell'utilizzo della memoria, mentre una freccia verde indica una riduzione.
+- Per visualizzare i dettagli della differenza tra lo snapshot corrente e quello precedente, scegliere il collegamento di modifica a sinistra della freccia ( Aumento utilizzo![memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento dell'utilizzo della memoria")). Una freccia rossa indica un aumento nell'utilizzo della memoria, mentre una freccia verde indica una riduzione.
 
 > [!TIP]
 > Per identificare i problemi di memoria più rapidamente, i report diff vengono ordinati in base ai tipi di oggetto che sono aumentati maggiormente in termini di numero (fare clic sul collegamento di modifica nella colonna **Oggetti (diff)**) o di dimensioni complessive dell'heap (fare clic sul collegamento di modifica nella colonna **Dimensioni heap (diff)**).
@@ -112,21 +113,21 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 ### <a name="managed-types-reports"></a>Report di tipi gestiti
  Scegliere il collegamento corrente di una cella **Oggetti (diff)** o **Allocazioni (diff)** nella tabella di riepilogo Utilizzo memoria.
 
- ![Report di tipo gestito del debugger &#45; percorsi della radice](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ![Report sul tipo gestito del debugger &#45; percorsi alla radice](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
  Il riquadro superiore mostra il numero e la dimensione dei tipi dello snapshot, inclusa la dimensione di tutti gli oggetti cui fa riferimento il tipo (**Dimensione inclusiva**).
 
- L'albero **Percorsi della radice** del riquadro inferiore mostra gli oggetti che fanno riferimento al tipo selezionato nel riquadro superiore. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando è stato rilasciato l'ultimo tipo a cui fa riferimento.
+ L'albero **Percorsi della radice** del riquadro inferiore mostra gli oggetti che fanno riferimento al tipo selezionato nel riquadro superiore. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando è stato rilasciato l'ultimo tipo che fa riferimento a tale oggetto.
 
- Nell'albero **oggetti a cui si fa riferimento** vengono visualizzati i riferimenti che sono conservati dal tipo selezionato nel riquadro superiore.
+ **Nell'albero Oggetti** a cui si fa riferimento vengono visualizzati i riferimenti contenuti nel tipo selezionato nel riquadro superiore.
 
- ![Visualizzazione report degli oggetti a cui si fa riferimento gestiti](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Visualizzazione report degli oggetti a cui viene fatto riferimento gestito](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- Per visualizzare le istanze di un tipo selezionato nel riquadro superiore, scegliere l'icona dell' ![icona dell'istanza](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") .
+ Per visualizzare le istanze di un tipo selezionato nel riquadro superiore, scegliere ![l'icona dell'icona](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") Istanza.
 
- ![Screenshot della visualizzazione istanze nello strumento utilizzo memoria di Visual Studio, che mostra il riquadro istanze e il riquadro percorsi della radice e oggetti a cui si fa riferimento.](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Screenshot della visualizzazione Istanze nello strumento Visual Studio Utilizzo memoria, che mostra il riquadro Istanze e il riquadro Percorsi a oggetti radice e a cui si fa riferimento.](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
- La visualizzazione **Istanze** mostra le istanze dell'oggetto selezionato nello snapshot nel riquadro superiore. I riquadri **Percorsi della radice** e **Oggetti a cui si fa riferimento** mostrano gli oggetti che fanno riferimento all'istanza selezionata e i tipi a cui fa riferimento l'istanza selezionata. Quando il debugger viene interrotto nel punto in cui è stato effettuato lo snapshot, è possibile passare il puntatore del mouse sulla cella del **valore** per visualizzare i valori dell'oggetto in una descrizione comandi.
+ La visualizzazione **Istanze** mostra le istanze dell'oggetto selezionato nello snapshot nel riquadro superiore. I riquadri **Percorsi della radice** e **Oggetti a cui si fa riferimento** mostrano gli oggetti che fanno riferimento all'istanza selezionata e i tipi a cui fa riferimento l'istanza selezionata. Quando il debugger viene arrestato nel punto in cui è stato creato lo snapshot, è possibile passare il mouse sulla cella **Valore** per visualizzare i valori dell'oggetto in una descrizione comando.
 
 ### <a name="native-type-reports"></a>Report di tipo nativo
  Scegliere il collegamento corrente di una cella **Allocazioni (diff)** o **Dimensioni heap (diff)** della tabella di riepilogo Utilizzo memoria della finestra **Strumenti di diagnostica** .
@@ -135,11 +136,11 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
  La **Visualizzazione Tipi** mostra il numero e la dimensione dei tipi dello snapshot.
 
-- Scegliere l'icona delle istanze (![icona dell'istanza nella colonna tipo di oggetto](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) di un tipo selezionato per visualizzare le informazioni sugli oggetti del tipo selezionato nello snapshot.
+- Scegliere l'icona delle istanze ( Icona dell'istanza nella colonna![Tipo](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")di oggetto ) di un tipo selezionato per visualizzare le informazioni sugli oggetti del tipo selezionato nello snapshot.
 
      La visualizzazione **Istanze** mostra ogni istanza del tipo selezionato. La selezione di un'istanza consente di visualizzare lo stack di chiamate che ha comportato la creazione dell'istanza nel riquadro **Stack di chiamate allocazione** .
 
-     ![Screenshot della visualizzazione istanze nello strumento utilizzo memoria di Visual Studio, che mostra il riquadro istanze e il riquadro stack di chiamate allocazione.](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Screenshot della visualizzazione Istanze nello strumento Visual Studio Utilizzo memoria, che mostra il riquadro Istanze e il riquadro Stack di chiamate di allocazione.](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Scegliere **Visualizzazione stack** dall'elenco **Modalità di visualizzazione** per visualizzare lo stack di allocazione per il tipo selezionato.
 
@@ -157,13 +158,13 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
 Il report di modifica aggiunge colonne (contrassegnate con **(Diff)**) al report di base che mostra la differenza tra il valore di snapshot di base e lo snapshot di confronto. Ecco un esempio di come potrebbe apparire un report delle differenze di visualizzazione del tipo nativo:
 
-![Visualizzazione diff di tipi nativi](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Visualizzazione delle diff dei tipi nativi](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Blog e video
 
 [Analizzare CPU e memoria in fase di debug](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Blog di Visual C++: profilatura della memoria in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Visual C++ Blog: Profiling della memoria in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

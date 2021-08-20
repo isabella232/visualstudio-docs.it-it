@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 688a438934f1b5a522e2fec211a4b134af143bcc40de4244f5538c5e084409b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e1c616b366e18cc6bba0bb9eb2906193022a6289
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414187"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158619"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Disinstallazione di un pacchetto VSPackage con Windows Installer
 Per la maggior parte, Windows programma di installazione può disinstallare il pacchetto VSPackage semplicemente "annullando" le operazioni che ha fatto per installare il pacchetto VSPackage. Le azioni personalizzate descritte in [Comandi che devono essere eseguiti dopo l'installazione](../../extensibility/internals/commands-that-must-be-run-after-installation.md) devono essere eseguite anche dopo una disinstallazione. Poiché le chiamate a devenv.exe si verificano subito prima dell'azione standard InstallFinalize sia per l'installazione che per la disinstallazione, le voci della tabella CustomAction e InstallExecuteSequence servono entrambi i casi.

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f399ee3d0c5243f5bc9451ff7d6b3f264ca5814a818153301b72d68d14e3684
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a1f3a073caa56dba1bc680a1e2205a7be0448f44
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410242"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157281"
 ---
 # <a name="spanspan-constructor"></a>Costruttore span::span
 

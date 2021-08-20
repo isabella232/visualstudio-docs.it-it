@@ -1,6 +1,6 @@
 ---
 title: Generare override dei metodi Equals e GetHashCode C#
-description: Informazioni su come usare il menu Azioni rapide e refactoring per generare i metodi Equals e GetHashCode.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per generare metodi Equals e GetHashCode.
 ms.custom: SEO-VS-2020
 ms.date: 03/08/2021
 ms.topic: reference
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: c89c5296ced84b887c7acc5d190030cb9710305b5f066dea7bee008e6f6245b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 36f26e9ecbbd77cac7967f09d241f19ae158a36f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143937"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generare override dei metodi Equals e GetHashCode in Visual Studio
 
@@ -60,9 +60,9 @@ Questa generazione di codice si applica a:
 
    - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
 
-   - Fare clic sull'icona ![Screenshot dell'icona a forma di cacciavite azioni rapide in Visual Studio](../media/screwdriver-icon.png) che viene visualizzato nel margine sinistro.
+   - Fare clic sull'icona ![Screenshot dell'icona del cacciavite azioni rapide in Visual Studio](../media/screwdriver-icon.png) che viene visualizzato nel margine sinistro.
 
-1. Nel menu a discesa selezionare **Generate Equals(object) (Genera equals(oggetto)** o **Generate Equals and GetHashCode (Genera equals e GetHashCode).**
+1. Nel menu a discesa selezionare **Genera Equals(oggetto)** o **Genera equals e GetHashCode**.
 
    ![Screenshot del menu a discesa Genera sostituzioni](media/overrides-preview-cs.png)
 
@@ -106,5 +106,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Generazione del codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

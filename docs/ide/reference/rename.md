@@ -1,6 +1,6 @@
 ---
 title: Refactoring con ridenominazione
-description: Informazioni su come usare la funzionalità Di ridenominazione del refactoring per rinominare gli identificatori per i simboli di codice, ad esempio campi, variabili locali, metodi, spazi dei nomi, proprietà e tipi.
+description: Informazioni su come usare la funzionalità Refactoring Rinomina per rinominare gli identificatori per i simboli di codice, ad esempio campi, variabili locali, metodi, spazi dei nomi, proprietà e tipi.
 ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62642e469259ca84ea4d2be15f0219d2fe7ef6e84d829448858332081ee9da8c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f71587d86bc1b4fc722abeee31a0e8e7ce8ae7cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447123"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123840"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring con ridenominazione di un simbolo di codice
 
@@ -81,7 +81,7 @@ Questo refactoring si applica a:
 
    ![Conflitto di ridenominazione](media/rename-conflict-cs.png)
 
-- Un altro modo per rinominare un simbolo consiste nel modificare il nome nell'editor. Quindi, con il cursore nel nome del simbolo, premere **CTRL** + **.** o semplicemente espandere il menu dell'icona a forma di lampadina visualizzato e scegliere **Rinomina \<old name> in \<new name>**.
+- Un altro modo per rinominare un simbolo consiste nel modificare il nome nell'editor. Quindi, con il cursore nel nome del simbolo, premere **CTRL** + **.** o semplicemente espandere il menu icona a forma di lampadina visualizzato e scegliere **Rinomina \<old name> in \<new name>**.
 
    ![Rinominare nell'editor](media/rename-with-editor-cs.png)
 

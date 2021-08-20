@@ -1,6 +1,6 @@
 ---
 title: Espressioni nel debugger | Microsoft Docs
-description: Informazioni sulle espressioni di linguaggio non supportate dagli analizzatori di espressioni nel debugger di Visual Studio.
+description: Informazioni sulle espressioni del linguaggio non supportate dagli analizzatori di espressioni nel debugger Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
@@ -19,19 +19,20 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cc17892697e16c24e3bb1fae5aa956123ee4e7bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33a7e5eedf849f576a89df73f6e0b23bbcc27bbf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154330"
 ---
-# <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger di Visual Studio
+# <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger Visual Studio
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.
 
-Le sezioni seguenti illustrano le limitazioni della valutazione delle espressioni per le lingue supportate da Visual Studio.
+Le sezioni seguenti descrivono le limitazioni della valutazione delle espressioni per i linguaggi supportati da Visual Studio.
 
 ## <a name="f-expressions-are-not-supported"></a>Le espressioni F# non sono supportate
 Le espressioni F# non sono riconosciute. Se si esegue il debug del codice F#, è necessario tradurre le espressioni nella sintassi C# prima di immetterle in una finestra o finestra di dialogo del debugger. Quando si traducono espressioni da F# a C#, tenere presente che C# usa l'operatore `==` per verificare l'uguaglianza, mentre F# usa il segno `=`singolo.
@@ -86,7 +87,7 @@ int main()
 
 ```
 
-### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Uso delle funzioni intrinseche del debugger per mantenere lo stato
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Uso di funzioni intrinseche del debugger per mantenere lo stato
 Le funzioni intrinseche del debugger consentono di chiamare alcune funzioni C/C++ nelle espressioni senza modificare lo stato dell'applicazione.
 
 Funzioni intrinseche del debugger:
@@ -101,12 +102,12 @@ Funzioni intrinseche del debugger:
 
 |Area|Funzioni intrinseche|
 |----------|-------------------------|
-|**Lunghezza delle stringhe**|[strlen, wcslen](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**Lunghezza delle stringhe**|[strlen, wcslen,](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l) [strnlen, wcsnlen](/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
 |**Confronto di stringhe**|[strcmp, wcscmp](/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
-|**Ricerca di stringhe**|[strchr, wcschr](/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
-|**Win32**|[CoDecodeProxy](/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](/previous-versions/bb432242(v=vs.85)), [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**Windows 8**|[RoInspectCapturedStackBackTrace](/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Queste funzioni richiedono che il processo sottoposto a debug sia eseguito in Windows 8. Il debug dei file dump generati da un dispositivo Windows 8 richiede inoltre che nel computer Visual Studio sia eseguito Windows 8. Tuttavia, se si esegue il debug di un dispositivo Windows 8 in modalità remota, nel computer Visual Studio può essere eseguito Windows 7.|
-|**Varie**|__log2//restituisce il logaritmo in base 2 di un intero specificato, arrotondato all'intero più basso più vicino.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: Array<>:: operator [index<>] e operator (index<>)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: Array<>:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: Array<>:: operator [tiled_index<>] e operator (tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view<>:: operator [index<>] e operator (index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view<>:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view<>:: operator [tiled_index<>] e operator (tiled_index<>)<br /><br />TreeTraverse_Init//Inizializza un nuovo attraversamento dell'albero<br /><br />TreeTraverse_Next//restituisce i nodi in un albero<br /><br />TreeTraverse_Skip//ignora i nodi in un attraversamento dell'albero in sospeso '|
+|**Ricerca di stringhe**|[strchr, wcschr,](/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l) [memchr, wmemchr,](/cpp/c-runtime-library/reference/memchr-wmemchr) [strstr, wcsstr](/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy,](/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy) [DecodePointer,](/previous-versions/bb432242(v=vs.85)) [GetLastError,](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) [TlsGetValue](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace,](/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace) [WindowsCompareStringOrdinal,](/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal) [WindowsGetStringLen,](/windows/win32/api/winstring/nf-winstring-windowsgetstringlen) [WindowsGetStringRawBuffer](/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Queste funzioni richiedono che il processo sottoposto a debug sia eseguito in Windows 8. Il debug dei file dump generati da un dispositivo Windows 8 richiede inoltre che nel computer Visual Studio sia eseguito Windows 8. Tuttavia, se si esegue il debug di un dispositivo Windows 8 in modalità remota, nel computer Visual Studio può essere eseguito Windows 7.|
+|**Varie**|__log2 // Restituisce il log in base 2 di un numero intero specificato, arrotondato all'intero inferiore più vicino.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] e operator(index<>)<br /><br />ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)<br /><br />ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] e operator(tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] e operator(index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] e operator(tiled_index<>)<br /><br />TreeTraverse_Init // Inizializza un nuovo attraversamento dell'albero<br /><br />TreeTraverse_Next // Restituisce i nodi in un albero<br /><br />TreeTraverse_Skip // Ignora i nodi in un attraversamento albero in sospeso'|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - Espressioni non supportate
 
@@ -123,7 +124,7 @@ Funzioni intrinseche del debugger:
 ## <a name="c---unsupported-expressions"></a>C# - Espressioni non supportate
 
 ### <a name="dynamic-objects"></a>Oggetti dinamici
-Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che implementano <xref:System.Dynamic.IDynamicMetaObjectProvider> vengono valutati nella finestra espressioni di controllo, viene aggiunto un nodo Visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.
+Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che <xref:System.Dynamic.IDynamicMetaObjectProvider> implementano vengono valutati nel finestra Espressioni di controllo, viene aggiunto un nodo di visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.
 
 Le funzionalità seguenti degli oggetti dinamici non sono supportate:
 
@@ -208,6 +209,6 @@ Non è possibile dichiarare nuove variabili esplicite nelle finestre del debugge
 
 ## <a name="see-also"></a>Vedi anche
 - [Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)
-- [Operatore di contesto (C++)](../debugger/context-operator-cpp.md)
+- [Operatore Context (C++)](../debugger/context-operator-cpp.md)
 - [Identificatori di formato in C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudo variabili](../debugger/pseudovariables.md)

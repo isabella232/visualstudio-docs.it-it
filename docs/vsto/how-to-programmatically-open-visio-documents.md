@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Aprire documenti di Visio a livello di codice'
-description: Informazioni su come usare le Visual Studio per aprire un documento Visio a livello di codice con i metodi Open o OpenEx.
+title: 'Procedura: Aprire documenti Visio a livello di codice'
+description: Informazioni su come usare Visual Studio per aprire un documento Visio a livello di codice con i metodi Open o OpenEx.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,19 +16,19 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d44b5d4f7880317705a1b30427359f891d1451eb4dc1610a36636b35ee594c27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1c3126f3f5ac73632996079a070c426afc20d656
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121296814"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155824"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>Procedura: Aprire documenti di Visio a livello di codice
-  Esistono due metodi per aprire i documenti Microsoft Office Visio esistenti: Open e OpenEx. Il metodo OpenEx è identico al metodo Open, ad eccezione del fatto che fornisce argomenti in cui il chiamante può specificare la modalità di apertura del documento.
+# <a name="how-to-programmatically-open-visio-documents"></a>Procedura: Aprire documenti Visio a livello di codice
+  Esistono due metodi per aprire documenti Microsoft Office Visio esistenti: Open e OpenEx. Il metodo OpenEx è identico al metodo Open, ad eccezione del fatto che fornisce argomenti in cui il chiamante può specificare la modalità di apertura del documento.
 
  Per informazioni dettagliate sul modello a oggetti, vedere la documentazione di riferimento di VBA relativa ai metodi [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) e [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) .
 
-## <a name="open-a-visio-document"></a>Aprire un documento Visio
+## <a name="open-a-visio-document"></a>Aprire un Visio documento
 
 ### <a name="to-open-a-visio-document"></a>Per aprire un documento di Visio
 
@@ -37,7 +37,7 @@ ms.locfileid: "121296814"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet5":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet5":::
 
-## <a name="open-a-visio-document-with-specified-arguments"></a>Aprire un documento Visio con gli argomenti specificati
+## <a name="open-a-visio-document-with-specified-arguments"></a>Aprire un Visio documento con gli argomenti specificati
 
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>Per aprire un documento di Visio di sola lettura e come ancorato
 
@@ -54,7 +54,7 @@ ms.locfileid: "121296814"
 ## <a name="see-also"></a>Vedi anche
 - [Visio soluzioni](../vsto/visio-solutions.md)
 - [Visio panoramica del modello a oggetti](../vsto/visio-object-model-overview.md)
-- [Procedura: Creare nuovi documenti di Visio a livello di codice](../vsto/how-to-programmatically-create-new-visio-documents.md)
-- [Procedura: Chiudere documenti di Visio a livello di codice](../vsto/how-to-programmatically-close-visio-documents.md)
-- [Procedura: Salvare documenti di Visio a livello di codice](../vsto/how-to-programmatically-save-visio-documents.md)
-- [Procedura: Stampare documenti di Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)
+- [Procedura: Creare nuovi documenti Visio codice](../vsto/how-to-programmatically-create-new-visio-documents.md)
+- [Procedura: Chiudere documenti Visio a livello di codice](../vsto/how-to-programmatically-close-visio-documents.md)
+- [Procedura: Salvare documenti Visio codice](../vsto/how-to-programmatically-save-visio-documents.md)
+- [Procedura: Stampare documenti Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)

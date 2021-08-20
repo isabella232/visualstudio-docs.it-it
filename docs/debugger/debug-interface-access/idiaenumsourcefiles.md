@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c0f4594a8a937bcaafe92daa28d5a61a541b86a9dc443bb46bb9bb1ee98ec2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: be3b2016b076fd9b2276e2bc64dfe3764b4e962e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392432"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129463"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Enumera i vari file di origine contenuti nell'origine dati.
@@ -49,7 +49,7 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaEnumSourceFiles` .
 Ottenere questa interfaccia chiamando il `QueryInterface` metodo su un oggetto [IDiaTable.](../../debugger/debug-interface-access/idiatable.md) Per informazioni dettagliate, vedere l'esempio.
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come ottenere `IDiaEnumSourceFiles` l'interfaccia dall'elenco di tabelle in un oggetto sessione DIA. Per un esempio di accesso alle informazioni sul file di origine, vedere [l'interfaccia IDiaSourceFile.](../../debugger/debug-interface-access/idiasourcefile.md)
+In questo esempio viene illustrato come ottenere `IDiaEnumSourceFiles` l'interfaccia dall'elenco di tabelle in un oggetto sessione DIA. Per un esempio di accesso alle informazioni sul file di origine, vedere [l'interfaccia IDiaSourceFile.](../../debugger/debug-interface-access/idiasourcefile.md)
 
 ```C++
 

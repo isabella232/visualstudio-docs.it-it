@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende Execute fornendo informazioni sul thread.
-title: IDebugProgram3 | Microsoft Docs
+title: Interfaccia IDebugProgram3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e1de2b61e7a942853cd0bae0d5526820030a4701921482a4aeb979cbfe96a2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 14a7641542bb5392c4e8eba1196059b5b8136948
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338826"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159737"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornendo informazioni sul thread.
@@ -29,7 +29,7 @@ IDebugProgram3 : IDebugProgram3
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug (DE) e un fornitore di porte personalizzato implementano questa interfaccia per rappresentare un programma in un processo. La gestione del debug di sessione (SDM) implementa anche questa interfaccia per fornire informazioni per [associare](../../../extensibility/debugger/reference/idebugprogram2-attach.md).
+ Il motore di debug (DE) e un fornitore di porte personalizzato implementano questa interfaccia per rappresentare un programma in un processo. La gestione del debug di sessione (SDM) implementa anche questa interfaccia per fornire informazioni a [Attach.](../../../extensibility/debugger/reference/idebugprogram2-attach.md)
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  [L'evento IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) restituisce questa interfaccia per un nuovo programma. Questa interfaccia viene usata anche come parametro per molti metodi in più interfacce.

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Aggiornare un grafico in un documento usando i pulsanti di opzione'
-description: Informazioni su come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Word per offrire agli utenti la possibilità di selezionare gli stili del grafico nel documento.
+description: Informazioni su come usare i pulsanti di opzione in una personalizzazione a livello di documento Microsoft Word per consentire agli utenti di selezionare gli stili del grafico nel documento.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4d6689d82051ef5f8c887c19ec91cbb6d513b8b8
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d95ab38581945c61000b3cfcca26ed1ba3fd2c5d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828202"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155408"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: Aggiornare un grafico in un documento usando i pulsanti di opzione
   Questa procedura dettagliata illustra come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Office Word, per consentire agli utenti di selezionare stili del grafico nel documento.
@@ -36,7 +37,7 @@ ms.locfileid: "107828202"
 
 - Modifica dello stile del grafico quando si seleziona un'opzione.
 
-  Per visualizzare il risultato come esempio completato, vedere l'esempio di controlli Word in Esempi e procedure dettagliate per lo sviluppo [di Office.](../vsto/office-development-samples-and-walkthroughs.md)
+  Per visualizzare il risultato come esempio completato, vedere l'esempio di controlli Word Office esempi di [sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -52,7 +53,7 @@ ms.locfileid: "107828202"
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto Documento di Word con il nome **My Chart Options**. Nella procedura guidata selezionare **Crea un nuovo documento**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto Documento di Word con il nome **My Chart Options**. Nella procedura guidata selezionare **Crea un nuovo documento**. Per altre informazioni, vedere [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **progetto My Chart Options** a **Esplora soluzioni**.
 
@@ -66,7 +67,7 @@ ms.locfileid: "107828202"
 
      Verrà **visualizzata la finestra** di dialogo Oggetto .
 
-3. **Nell'elenco Tipo di** oggetto della scheda **Crea** nuovo selezionare **Microsoft Graph grafico** e quindi fare clic su **OK.**
+3. **Nell'elenco Tipo di** oggetto della scheda **Crea** nuovo selezionare Microsoft **Graph Chart** e quindi fare clic su **OK.**
 
      Un grafico viene aggiunto al documento nel punto di inserimento e la **finestra Foglio** dati viene visualizzata con alcuni dati predefiniti.
 
@@ -74,7 +75,7 @@ ms.locfileid: "107828202"
 
 5. Fare clic con il pulsante destro del mouse sul grafico e **quindi scegliere Formato oggetto**.
 
-6. Nella scheda **Layout** della finestra di **dialogo Formato oggetto** selezionare **Quadrato** e fare clic su **OK.**
+6. Nella scheda **Layout** della finestra di dialogo **Formato oggetto** selezionare **Quadrato** e fare clic su **OK.**
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
  I pulsanti di opzione in un documento non si escludono a vicenda per impostazione predefinita. È possibile farli funzionare correttamente aggiungendoli a un controllo utente e quindi scrivendo il codice per controllare la selezione.
@@ -91,28 +92,28 @@ ms.locfileid: "107828202"
 
 1. Se il controllo utente non è visibile nella finestra di progettazione, fare doppio clic **su ChartOptions** in **Esplora soluzioni**.
 
-2. Dalla scheda **Controlli comuni** della casella **degli strumenti** trascinare il primo controllo **Pulsante** di opzione nel controllo utente e modificare le proprietà seguenti.
+2. Dalla scheda **Controlli comuni** della Casella **degli** strumenti trascinare il primo controllo **Pulsante** di opzione nel controllo utente e modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**columnChart**|
     |**Text**|**Istogramma**|
 
-3. Aggiungere un secondo **pulsante di** opzione al controllo utente e modificare le proprietà seguenti.
+3. Aggiungere un secondo **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**barChart**|
     |**Text**|**Grafico a barre**|
 
-4. Aggiungere un terzo **pulsante di** opzione al controllo utente e modificare le proprietà seguenti.
+4. Aggiungere un terzo **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**lineChart**|
     |**Text**|**Grafico a linee**|
 
-5. Aggiungere un quarto **pulsante di** opzione al controllo utente e modificare le proprietà seguenti.
+5. Aggiungere un quarto **pulsante di opzione** al controllo utente e modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
@@ -120,7 +121,7 @@ ms.locfileid: "107828202"
     |**Text**|**Grafico ad area**|
 
 ## <a name="add-references"></a>Aggiungere riferimenti
- Per accedere al grafico dal controllo utente in un documento, è necessario disporre di un riferimento `Microsoft.Office.Interop.Graph` all'assembly nel progetto.
+ Per accedere al grafico dal controllo utente in un documento, è necessario avere un riferimento `Microsoft.Office.Interop.Graph` all'assembly nel progetto.
 
 ### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>Per aggiungere un riferimento all'assembly Microsoft.Office.Interop.Graph
 
@@ -128,14 +129,14 @@ ms.locfileid: "107828202"
 
      Verrà visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
-2. Nella scheda **.NET** selezionare **Microsoft.Office.Interop.Graph** e fare clic su **OK.** Selezionare la versione 14.0.0.0 dell'assembly.
+2. Nella scheda **.NET** selezionare **Microsoft.Office. Interoperabilità. Graph** e fare clic **su OK.** Selezionare la versione 14.0.0.0 dell'assembly.
 
 ## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>Modificare lo stile del grafico quando viene selezionato un pulsante di opzione
  Per far funzionare i pulsanti correttamente, creare un evento pubblico nel controllo utente, aggiungere una proprietà per impostare il tipo di selezione e creare una routine per l'evento `CheckedChanged` di ogni pulsante di opzione.
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Per creare un evento e una proprietà in un controllo utente
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul controllo utente e quindi **scegliere Visualizza codice.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul controllo utente e quindi scegliere **Visualizza codice**.
 
 2. Aggiungere il codice per creare un evento `SelectionChanged` e la proprietà `Selection` nella classe `ChartOptions`.
 
@@ -164,12 +165,12 @@ ms.locfileid: "107828202"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet13":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb" id="Snippet13":::
 
-5. In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni sulla creazione di gestori eventi, [vedere Procedura: Creare gestori eventi nei progetti di Office.](../vsto/how-to-create-event-handlers-in-office-projects.md)
+5. In C# è necessario aggiungere gestori eventi per i pulsanti di opzione. È possibile aggiungere questo codice al costruttore `ChartOptions` dopo la chiamata a `InitializeComponent`. Per informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori eventi in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet14":::
 
-## <a name="add-the-user-control-to-the-document"></a>Aggiungere il controllo User al documento
- Quando si compila la soluzione, il nuovo controllo utente viene aggiunto automaticamente alla casella degli **strumenti**. È quindi possibile trascinare il controllo dalla **Casella degli** strumenti al documento.
+## <a name="add-the-user-control-to-the-document"></a>Aggiungere il controllo Utente al documento
+ Quando si compila la soluzione, il nuovo controllo utente viene aggiunto automaticamente alla casella **degli strumenti**. È quindi possibile trascinare il controllo dalla **Casella degli** strumenti al documento.
 
 ### <a name="to-add-the-user-control-your-document"></a>Per aggiungere il controllo utente al documento
 
@@ -177,11 +178,11 @@ ms.locfileid: "107828202"
 
      Il **controllo utente ChartOptions** viene aggiunto alla casella **degli strumenti**.
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisDocument.vb** **o ThisDocument.cs** e **quindi scegliere Progettazione visualizzazioni**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisDocument.vb** o **ThisDocument.cs** e **quindi scegliere Progettazione visualizzazioni**.
 
-3. Trascinare `ChartOptions` il controllo dalla Casella **degli** strumenti al documento.
+3. Trascinare `ChartOptions` il controllo dalla Casella degli **strumenti** al documento.
 
-     Nella **finestra Proprietà** assegnare al controllo il nome appena aggiunto al documento  `ChartOptions1` .
+     Nella finestra **Proprietà** assegnare al controllo il nome appena aggiunto al  `ChartOptions1` documento.
 
 ## <a name="change-the-chart-type"></a>Modificare il tipo di grafico
  Creare un gestore eventi per modificare il tipo di grafico in base all'opzione selezionata nel controllo utente.
@@ -217,5 +218,5 @@ ms.locfileid: "107828202"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
-- [Esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md)
-- [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office esempi di sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md)
+- [Limitazioni dei controlli Windows Form nei Office documenti](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

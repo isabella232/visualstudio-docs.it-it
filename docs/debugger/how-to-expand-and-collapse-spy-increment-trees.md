@@ -1,6 +1,6 @@
 ---
-title: Espandere e comprimere alberi di Spy + + | Microsoft Docs
-description: Vengono illustrati due metodi per espandere e comprimere le visualizzazioni Windows, processi e thread. È possibile fare clic sulle icone nella finestra o usare il menu albero.
+title: Espandere e comprimere alberi spy++ | Microsoft Docs
+description: Informazioni su due metodi per espandere e comprimere le Windows, Processi e Thread. È possibile fare clic sulle icone nella finestra o usare il menu Albero.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,35 +10,36 @@ ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 852eaf8dad8160566656d20189ada99378b63a0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90f939e62783cb2b3189cb04783f84fd3dcffa41
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128377"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: espandere e comprimere strutture ad albero di Spy++
-È possibile espandere e comprimere le visualizzazioni finestre, processi e thread utilizzando due metodi: facendo clic sulle icone nella finestra o utilizzando il menu **albero** . Le icone + e-nell'albero agiscono come nella finestra del progetto C++.
+È possibile espandere e comprimere le visualizzazioni Windows, Processi e Thread usando due metodi: facendo clic sulle icone nella finestra o usando il menu **Albero.** Le icone + e - nell'albero agiscono come nella finestra del progetto C++.
 
- Il menu **albero** contiene quattro comandi:
+ Il menu **Albero** contiene quattro comandi:
 
 |Comando di menu|Descrizione|
 |------------------|-----------------|
 |**Espandi un livello**|Espande l'elemento attualmente selezionato al livello successivo.|
-|**Espandi ramo**|Espande completamente l'elemento attualmente selezionato.|
+|**Espandere Ramo**|Espande completamente l'elemento attualmente selezionato.|
 |**Espandi tutto**|Espande completamente tutti gli elementi nella finestra.|
 |**Collapse**|Comprime completamente l'elemento attualmente selezionato.|
 
 > [!TIP]
-> Se si espande un processo, vengono visualizzati tutti i thread di proprietà del processo. Se si espande un thread, viene visualizzato un elenco di tutte le finestre di cui è proprietario.
+> Se si espande un processo, vengono visualizzati tutti i thread di cui è proprietario. Se si espande un thread, viene visualizzato un elenco di tutte le finestre di cui è proprietario.
 
-### <a name="to-expand-or-collapse-spy-trees"></a>Per espandere o comprimere alberi di Spy + +
+### <a name="to-expand-or-collapse-spy-trees"></a>Per espandere o comprimere alberi di Spy++
 
-1. Evidenziare uno degli elementi nella visualizzazione finestre, processi o thread.
+1. Evidenziare uno degli elementi nella visualizzazione Windows, Processi o Thread.
 
-2. Scegliere uno dei comandi Espandi o Comprimi dal menu **albero** .
+2. Scegliere uno **dei** comandi espandi o comprimi dal menu Albero.
 
 ## <a name="see-also"></a>Vedi anche
 - [Utilizzo di Spy++](../debugger/using-spy-increment.md)

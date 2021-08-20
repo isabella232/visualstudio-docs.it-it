@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6bb36fd6b29ce94c79e9e173c00257473c6ab2449592ae658eda47153d256c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 99fdbae8612de92c178ebb502e63e4c974224da4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121354040"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156749"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 
@@ -44,7 +44,7 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
 
 - [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
 
-- [Procedura: Fare riferimento alle Windows simboli](../profiling/how-to-reference-windows-symbol-information.md)
+- [Procedura: Fare riferimento Windows informazioni sui simboli](../profiling/how-to-reference-windows-symbol-information.md)
 
  Per impostazione predefinita, quando viene avviato, il profiler raccoglie i dati a livello globale. Il codice seguente all'inizio del programma disabilita la profilatura globale.
 
@@ -54,7 +54,7 @@ ProfileLevel.Global,
 DataCollection.CurrentId);
 ```
 
- È possibile disabilitare la raccolta dei dati nella riga di comando senza usare una chiamata API. Questa procedura presuppone che l'ambiente di compilazione avviata tramite riga di comando sia configurato per eseguire gli strumenti di profilatura e come strumenti di sviluppo. Include le impostazioni necessarie per VSInstr e VSPerfCmd. Vedere [Strumenti di profilatura della riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md).
+ È possibile disabilitare la raccolta dei dati nella riga di comando senza usare una chiamata API. Questa procedura presuppone che l'ambiente di compilazione avviata tramite riga di comando sia configurato per eseguire gli strumenti di profilatura e come strumenti di sviluppo. Include le impostazioni necessarie per VSInstr e VSPerfCmd. Vedere [Strumenti di profilatura da riga di comando.](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 ## <a name="limit-data-collection-using-profiler-apis"></a>Limitare la raccolta dei dati usando le API del profiler
 
@@ -126,7 +126,7 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Per raccogliere e visualizzare i dati nell'IDE di Visual Studio
 
-1. Aprire l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Profiler** dal menu **Analizza** e quindi **selezionare Nuova sessione di prestazioni.**
+1. Aprire l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Profiler** **dal** menu Analizza e quindi selezionare **Nuova sessione di prestazioni.**
 
 2. Aggiungere il file binario compilato per l'elenco **Destinazioni** nella finestra **Esplora prestazioni**. Fare clic con il pulsante destro del mouse su **Destinazioni** e selezionare **Aggiungi binario di destinazione**. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il file binario e fare clic su **Apri**.
 
@@ -156,7 +156,7 @@ DataCollection.CurrentId);
 
 3. Digitare il comando seguente: **VSInstr \<filename>.exe**
 
-4. Digitare il comando seguente: **VSPerfCmd /start:trace /output: \<filename> vsp**
+4. Digitare il comando seguente: **VSPerfCmd /start:trace /output: \<filename> .vsp**
 
 5. Digitare il comando seguente: **VSPerfCmd /globaloff**
 
@@ -171,6 +171,6 @@ DataCollection.CurrentId);
 ## <a name="see-also"></a>Vedi anche
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
-- [Visual Studio riferimento all'API del profiler (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio informazioni di riferimento sulle API del profiler (native)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Introduzione](../profiling/getting-started-with-performance-tools.md)
 - [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -14,15 +14,15 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: ea974e4ff65ccf027a28db9ceb35664a6d62a64559789c0bf3d865986d0831fb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 36afa727498c71892130a352f1c8eac35c84760f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121320206"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144262"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creare un SDK usando C# o Visual Basic
-In questa procedura dettagliata si apprenderà come creare un SDK libreria matematica semplice usando Visual C# e quindi creare un pacchetto dell'SDK come estensione Visual Studio (VSIX). Verranno completate le procedure seguenti:
+In questa procedura dettagliata si apprenderà come creare un sdk semplice della libreria matematica usando Visual C# e quindi creare un pacchetto dell'SDK come estensione Visual Studio (VSIX). Verranno completate le procedure seguenti:
 
 - [Per creare il componente SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
@@ -40,7 +40,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK libreria matem
 
 3. Nella casella **Nome** specificare **SimpleMath** e quindi fare clic sul **pulsante OK.**
 
-4. In **Esplora soluzioni** aprire il menu di scelta rapida per il **nodo di progetto SimpleMath** e quindi scegliere **Proprietà**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **SimpleMath** e quindi scegliere **Proprietà**.
 
 5. Rinominare **Class1.cs** in **Arithmetic.cs** e aggiornarlo in modo che corrisponda al codice seguente:
 
@@ -58,13 +58,13 @@ In questa procedura dettagliata si apprenderà come creare un SDK libreria matem
    > [!IMPORTANT]
    > L'SDK per il componente SimpleMath include una sola configurazione. Questa configurazione deve essere la build di rilascio oppure le app che usano il componente non supereranno la certificazione per [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] .
 
-9. In **Esplora soluzioni** aprire il menu di scelta rapida per il **nodo di progetto SimpleMath** e quindi scegliere **Compila**.
+9. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **SimpleMath** e quindi scegliere **Compila**.
 
 ## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> Per creare il progetto di estensione SimpleMathVSIX
 
 1. Nel menu di scelta rapida per il **nodo "SimpleMath" della** soluzione scegliere **Aggiungi**  >  **nuovo Project**.
 
-2. Nell'elenco dei modelli espandere **Visual C#** o **Visual Basic**, scegliere il nodo **Extensibility** e quindi scegliere il **modello vsix Project.**
+2. Nell'elenco dei modelli espandere **Visual C#** o **Visual Basic**, scegliere il nodo **Extensibility** e quindi scegliere il modello **di Project VSIX.**
 
 3. Nella casella **Nome** specificare **SimpleMathVSIX** e quindi scegliere **OK.**
 
@@ -104,7 +104,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK libreria matem
 
 10. Nella casella **Nome** specificare `SDKManifest.xml` e quindi scegliere il **pulsante** Aggiungi.
 
-11. In **Esplora soluzioni** aprire il menu di scelta rapida per , scegliere Proprietà e quindi impostare il valore della proprietà Includi `SDKManifest.xml` in **VSIX** su **True**. 
+11. In **Esplora soluzioni** aprire il menu di scelta rapida per , scegliere Proprietà e quindi impostare il valore della proprietà Includi `SDKManifest.xml` in **VSIX** su **True.** 
 
 12. Sostituisci il contenuto del file con il codice XML riportato di seguito:
 
@@ -134,7 +134,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK libreria matem
     </FileList>
     ```
 
-13. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto SimpleMathVSIX,** scegliere Aggiungi **e** quindi **Nuova cartella.**
+13. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto SimpleMathVSIX,** scegliere **Aggiungi** e quindi **Nuova cartella.**
 
 14. Rinominare la cartella in `references` .
 
@@ -151,13 +151,13 @@ In questa procedura dettagliata si apprenderà come creare un SDK libreria matem
     redist\commonconfiguration\neutral
     ```
 
-18. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto SimpleMath** e quindi scegliere Apri cartella **in** Esplora file .
+18. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **SimpleMath** e quindi scegliere **Apri cartella in** Esplora file .
 
 19. In **Esplora file** passare alla cartella *bin\Release,* aprire il menu di scelta rapida per il file **SimpleMath.winmd** e quindi scegliere **Copia**.
 
 20. In **Esplora soluzioni** incollare il file nella cartella *references\commonconfiguration\neutral* nel **progetto SimpleMathVSIX.**
 
-21. Ripetere il passaggio precedente incollando il file **SimpleMath.pri** nella cartella *redist\commonconfiguration\neutral* nel **progetto SimpleMathVSIX.**
+21. Ripetere il passaggio precedente, incollando il file **SimpleMath.pri** nella cartella *redist\commonconfiguration*\neutral nel **progetto SimpleMathVSIX.**
 
 22. In **Esplora soluzioni** scegliere **SimpleMath.winmd**.
 
@@ -189,7 +189,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK libreria matem
 
 5. Nell'elenco dei tipi riferimento espandere **Windows** e quindi scegliere **Estensioni**.
 
-6. Nel riquadro dei dettagli scegliere **l'estensione Libreria matematica WinRT.**
+6. Nel riquadro dei dettagli scegliere **l'estensione WinRT Math Library.**
 
     Vengono visualizzate altre informazioni sull'SDK. È possibile scegliere il **collegamento Altre** informazioni per aprire , come specificato nel file SDKManifest.xml https://msdn.microsoft.com/ in precedenza in questa procedura dettagliata.
 
@@ -201,7 +201,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK libreria matem
 
      È ora possibile esplorare gli elementi dell'SDK.
 
-10. In **Esplora soluzioni** aprire **MainPage.xaml** e sostituirlo con il codice XAML seguente:
+10. In **Esplora soluzioni** aprire **MainPage.xaml** e sostituire il contenuto con il codice XAML seguente:
 
     **C#**
 

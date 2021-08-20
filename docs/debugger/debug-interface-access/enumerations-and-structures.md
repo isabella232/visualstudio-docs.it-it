@@ -1,5 +1,5 @@
 ---
-description: Queste sono le enumerazioni e le strutture usate dal DIA SDK.
+description: Si tratta delle enumerazioni e delle strutture usate dal DIA SDK.
 title: Enumerazioni e strutture | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,18 +14,19 @@ ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: aa7fa04080596a5d54297557c33238826450830e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3380ab7db034649bacb05d6b9908ce5c6461c774
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151249"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154719"
 ---
 # <a name="enumerations-and-structures"></a>Enumerazioni e strutture
 
-Queste sono le enumerazioni e le strutture usate dal DIA SDK.
+Si tratta delle enumerazioni e delle strutture usate dal DIA SDK.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -37,7 +38,7 @@ Queste sono le enumerazioni e le strutture usate dal DIA SDK.
 
 - [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 
- Specifica l'ambito di visibilità (livello di accesso) delle variabili e delle funzioni membro.
+ Specifica l'ambito di visibilità (livello di accesso) delle funzioni membro e delle variabili.
 
 - [Enumerazione CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)
 
@@ -69,11 +70,11 @@ Queste sono le enumerazioni e le strutture usate dal DIA SDK.
 
 - [Enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)
 
- Specifica le opzioni di ricerca per i nomi di simboli e file.
+ Specifica le opzioni di ricerca per i nomi di file e simboli.
 
 - [Enumerazione StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)
 
- Specifica il tipo di stack frame.
+ Specifica il tipo stack frame dati.
 
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 
@@ -81,11 +82,11 @@ Queste sono le enumerazioni e le strutture usate dal DIA SDK.
 
 - [Enumerazione THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)
 
- Designa i tipi di thunk.
+ Definisce i tipi thunk.
 
 - [Enumerazione UdtKind](../../debugger/debug-interface-access/udtkind.md)
 
- Descrive la varietà di tipi definiti dall'utente (UDT).
+ Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
 
 ### <a name="structures"></a>Strutture
 
@@ -101,7 +102,7 @@ Specifica le interfacce fornite dal DIA SDK.
 
 [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-Specifica le costanti disponibili nell'DIA SDK.
+Specifica le costanti disponibili nel DIA SDK.
 
 ## <a name="see-also"></a>Vedi anche
 

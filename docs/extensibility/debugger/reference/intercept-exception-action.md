@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b704e8f6379312eee25be7106f4d4db6c64bf626aee4e0dfe0b899a735fe9a7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0fddfa37457a4783066a2319b081bf4372e7e06d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125387"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
 Specifica le azioni da intraprendere durante l'intercettazione delle eccezioni.

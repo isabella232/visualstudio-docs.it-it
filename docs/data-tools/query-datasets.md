@@ -14,18 +14,18 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3e9b05dc4687744a73958c05ff2aa4fd1c987e92964fcd11792141659dfe7e73
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2f047f38327f0773f7b370ba721b7e88afed2b90
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121328176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154862"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 Per cercare record specifici in un set di dati, usare il metodo nella `FindBy` datatable, scrivere un'istruzione foreach per eseguire un ciclo sulla raccolta Rows della tabella [o](/dotnet/framework/data/adonet/linq-to-dataset)usare LINQ to DataSet .
 
 ## <a name="dataset-case-sensitivity"></a>Distinzione tra maiuscole e minuscole del set di dati
-All'interno di un set di dati, per impostazione predefinita i nomi di tabelle e colonne non fa distinzione tra maiuscole e minuscole, ovvero una tabella in un set di dati denominata "Customers" può anche essere definita "clienti". Corrisponde alle convenzioni di denominazione in molti database, tra cui SQL Server. In SQL Server, il comportamento predefinito è che i nomi degli elementi di dati non possono essere distinti solo in base alla distinzione tra maiuscole e minuscole.
+Per impostazione predefinita, all'interno di un set di dati i nomi di tabelle e colonne non fa distinzione tra maiuscole e minuscole, ovvero una tabella in un set di dati denominata "Customers" può anche essere definita "clienti". Corrisponde alle convenzioni di denominazione in molti database, tra cui SQL Server. In SQL Server, il comportamento predefinito è che i nomi degli elementi di dati non possono essere distinti solo in base alla distinzione tra maiuscole e minuscole.
 
 > [!NOTE]
 > A differenza dei set di dati, nei documenti XML viene fatto distinzione tra maiuscole e minuscole, quindi i nomi degli elementi di dati definiti negli schemi sono distinzione tra maiuscole e minuscole. Ad esempio, il protocollo dello schema consente allo schema di definire una tabella denominata "Customers" e una tabella diversa denominata "customers". Ciò può causare conflitti di nomi quando per generare una classe del set di dati viene usato uno schema che contiene elementi che differiscono solo in base alla distinzione tra maiuscole e minuscole.
@@ -58,7 +58,7 @@ La distinzione tra maiuscole e minuscole può tuttavia essere un fattore di inte
 
 - Le tabelle dati vengono create con il metodo , che restituisce una matrice di oggetti in base <xref:System.Data.DataTable.Select%2A> <xref:System.Data.DataRow> all'espressione passata al <xref:System.Data.DataTable.Select%2A> metodo . Per altre informazioni sulla creazione di espressioni valide, vedere la sezione "Sintassi delle espressioni" della pagina relativa alla <xref:System.Data.DataColumn.Expression%2A> proprietà .
 
-     Nell'esempio seguente viene illustrato come usare il <xref:System.Data.DataTable.Select%2A> metodo di per individuare righe <xref:System.Data.DataTable> specifiche.
+     Nell'esempio seguente viene illustrato come usare <xref:System.Data.DataTable.Select%2A> il metodo di per individuare righe <xref:System.Data.DataTable> specifiche.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet20":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet20":::
@@ -71,9 +71,9 @@ Quando le tabelle di un set di dati sono correlate, un <xref:System.Data.DataRel
 In questa pagina vengono forniti esempi di utilizzo di set di dati tipizzati. Per informazioni sull'esplorazione delle relazioni nei set di dati non tipizzati, vedere [Esplorazione di datarelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
-> Se si usa un'applicazione Windows Forms e si usano le funzionalità di associazione dati per visualizzare i dati, il form generato dalla finestra di progettazione potrebbe fornire funzionalità sufficienti per l'applicazione. Per altre informazioni, vedere [Associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). In particolare, vedere [Relazioni nei set di dati](relationships-in-datasets.md).
+> Se si lavora in un'applicazione Windows Forms e si usano le funzionalità di associazione dati per visualizzare i dati, il form generato dalla finestra di progettazione potrebbe fornire funzionalità sufficienti per l'applicazione. Per altre informazioni, vedere [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). In particolare, vedere [Relazioni nei set di dati](relationships-in-datasets.md).
 
-Gli esempi di codice seguenti illustrano come spostarsi tra le relazioni verso l'alto e verso il basso nei set di dati tipizzati. Negli esempi di codice vengono utilizzati i metodi tipizzati ( ) e i metodi <xref:System.Data.DataRow> `NorthwindDataSet.OrdersRow` FindBy *PrimaryKey* ( ) generati per individuare una riga desiderata `FindByCustomerID` e restituire i record correlati. Gli esempi vengono compilati ed eseguiti correttamente solo se si dispone di:
+Gli esempi di codice seguenti illustrano come spostarsi tra relazioni verso l'alto e verso il basso nei set di dati tipizzati. Negli esempi di codice vengono utilizzati i metodi tipizzati ( ) e i metodi <xref:System.Data.DataRow> `NorthwindDataSet.OrdersRow` FindBy *PrimaryKey* ( ) generati per individuare una riga desiderata `FindByCustomerID` e restituire i record correlati. Gli esempi vengono compilati ed eseguiti correttamente solo se si dispone di:
 
 - Istanza di un set di dati denominato `NorthwindDataSet` con una `Customers` tabella.
 
@@ -81,7 +81,7 @@ Gli esempi di codice seguenti illustrano come spostarsi tra le relazioni verso l
 
 - Relazione denominata `FK_Orders_Customers` relativa alle due tabelle.
 
-Inoltre, entrambe le tabelle devono essere riempite con i dati per restituire tutti i record.
+Inoltre, entrambe le tabelle devono essere riempite con dati per la restituire tutti i record.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Per restituire i record figlio di un record padre selezionato
 

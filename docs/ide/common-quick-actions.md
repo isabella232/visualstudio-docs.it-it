@@ -1,22 +1,23 @@
 ---
 title: Azioni rapide comuni
-description: Azioni rapide più diffuse per C# e Visual Basic, inclusa la correzione di parole chiave o simboli non digitati, la risoluzione di conflitti di merge, la rimozione delle importazioni necessarie, la generazione di tipi, l'introduzione di variabili locali
+description: Più diffusi azioni rapide per C# e Visual Basic incluse la correzione di parole chiave o simboli con errori di ortografia, la risoluzione dei conflitti di unione, la rimozione delle importazioni necessarie, la generazione di tipi, l'introduzione di variabili locali e così via.
 ms.date: 03/28/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d24b03bc79c32c32c570d26b7607d1ba36c1c1df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fcf1ab1fdb5565cd4ba76c6eaa5c6b5a8fd74d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124100"
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -30,7 +31,7 @@ Le Azioni rapide in questa sezione consentono di correggere gli errori nel codic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi verranno visualizzati nel menu lampadina come "modifica" in " **\<misspelled word> \<correct word> "**. Ad esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi verranno visualizzati nel menu della lampadina come **"Cambia ' \<misspelled word> ' in ' \<correct word> '".** Esempio:
 
 ```csharp
 // Before
@@ -90,13 +91,13 @@ private void MyMethod()
 
 | ID errore | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| CS8300, BC37284 | C# e Visual Basic | Visual Studio 2017 versione 15,3 e successive |
+| CS8300, BC37284 | C# e Visual Basic | Visual Studio 2017 versione 15.3 e successive |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Azioni per la rimozione di codice non necessario
 
 ### <a name="remove-unnecessary-usingsimports"></a>Rimuovere istruzioni using/Imports non necessarie
 
-L'azione rapida **Rimuovi using superflue/Imports** rimuove tutte le direttive inutilizzate `using` `Import` per il file corrente. Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
+**L'azione rapida Remove Unnecessary Usings/Imports** rimuove tutte le direttive e non utilizzate per il file `using` `Import` corrente. Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
 
 | Linguaggi applicabili | Versione supportata |
 | - | - |
@@ -155,7 +156,7 @@ public MyMethod()
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| CS0219, BC42024 | C# e Visual Basic | Visual Studio 2017 versione 15,3 e successive |
+| CS0219, BC42024 | C# e Visual Basic | Visual Studio 2017 versione 15.3 e successive |
 
 ### <a name="remove-type-from-default-value-expression"></a>Rimuovere il tipo dall'espressione con valore predefinito
 
@@ -173,7 +174,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1+ | Visual Studio 2017 versione 15,3 e successive |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 versione 15.3 e successive |
 
 ## <a name="actions-that-add-missing-code"></a>Azioni per l'aggiunta di codice mancante
 
@@ -184,7 +185,7 @@ Se si usano tipi situati in altri progetti della soluzione, l'azione rapida vien
 - Suggerisci le direttive using/import per i tipi in assembly di riferimento
 - Suggerisci le direttive using/import per i tipi in pacchetti NuGet
 
-Se abilitata, se si usa un tipo in uno spazio dei nomi che non è attualmente importato ma esistente in un assembly di riferimento o in un pacchetto NuGet, viene creata la direttiva using o Import.
+Se abilitata, se si usa un tipo in uno spazio dei nomi attualmente non importato ma presente in un assembly di riferimento o in un pacchetto NuGet, viene creata la direttiva using o import.
 
 ```csharp
 // Before
@@ -281,7 +282,7 @@ End Select
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0010 | C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
+| IDE0010 | C# e Visual Basic| Visual Studio 2017 versione 15.3 e successive |
 
 ### <a name="add-null-checks-for-parameters"></a>Aggiungere controlli null per i parametri
 
@@ -315,7 +316,7 @@ class MyClass
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
+| C# e Visual Basic| Visual Studio 2017 versione 15.3 e successive |
 
 ### <a name="add-argument-name"></a>Aggiungi il nome di argomento
 
@@ -331,7 +332,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
+| C# e Visual Basic| Visual Studio 2017 versione 15.3 e successive |
 
 ### <a name="add-braces"></a>Aggiungi parentesi graffe
 
@@ -445,7 +446,7 @@ End Select
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
+| C# e Visual Basic| Visual Studio 2017 versione 15.3 e successive |
 
 ### <a name="convert-to-interpolated-string"></a>Convertire in una stringa interpolata
 
@@ -757,7 +758,7 @@ Dim countdown As Integer = &H200000
 
 | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15,3 e successive |
+| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15.3 e successive |
 
 ### <a name="insert-digit-separators-into-literals"></a>Inserire separatori di cifre in valori letterali
 
@@ -785,7 +786,7 @@ Dim countdown As Integer = 1_000_000
 
 | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15,3 e successive |
+| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15.3 e successive |
 
 ### <a name="use-explicit-tuple-names"></a>Usare nomi di tupla espliciti
 

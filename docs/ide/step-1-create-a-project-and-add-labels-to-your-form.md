@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 80af3a97a70a176db0257055185240690c5f27691eb29cb75eefa8809d16614f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cb535463f2f7213923e6c7964d5663dcad5dc2a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150937"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
 
@@ -48,7 +48,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop nell'elenco** **Project tipo di** dati.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere Quindi **Desktop nell'elenco** **Project tipo di** connessione.
 
    Dopo aver applicato il filtro **Project** tipo, scegliere il modello Windows **Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
 
@@ -131,7 +131,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 8. Scegliere **l'etichetta plusLeftLabel** e quindi premere **CTRL** C o +  **Copia** dal menu **Modifica.**
 
-9. Incollare l'etichetta tre volte scegliendo **CTRL** + **V** o **Incolla** dal menu Modifica. 
+9. Incollare l'etichetta tre volte scegliendo **i tasti CTRL** + **V** o **Incolla** dal menu Modifica. 
 
 10. Disporre le tre nuove etichette in modo che risultino in fila a destra dell'etichetta **plusLeftLabel**.
 
@@ -197,7 +197,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 6. Impostare il valore della proprietà **TabIndex** per il controllo **startButton** su **1**.
 
     > [!NOTE]
-    > La **proprietà TabIndex** imposta l'ordine dei controlli quando l'emittente del quiz sceglie **tab.** Per visualizzare il funzionamento, aprire una qualsiasi finestra di dialogo( ad esempio, sulla barra dei menu scegliere **Apri** file ), quindi premere  >   **TAB** più volte. Osservare come il cursore si sposta dal controllo per controllare ogni volta che si sceglie **tab.** Un programmatore ha deciso l'ordine quando ha creato il modulo.
+    > La **proprietà TabIndex** imposta l'ordine dei controlli quando l'emittente del quiz sceglie **tab.** Per visualizzare il funzionamento, aprire una qualsiasi finestra di dialogo, ad esempio sulla barra dei menu, scegliere **Apri** file e quindi premere  >   **TAB** più volte. Osservare come il cursore si sposta dal controllo per controllare ogni volta che si sceglie **tab.** Un programmatore ha deciso l'ordine quando ha creato il modulo.
 
 7. Impostare il valore della proprietà **TabIndex** per il controllo somma NumericUpDown su **2**, per il controllo differenza su **3**, per il controllo prodotto su **4** e per il controllo quoziente su **5**.
 
