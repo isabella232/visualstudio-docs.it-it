@@ -1,6 +1,6 @@
 ---
 title: Attività Touch | Microsoft Docs
-description: Informazioni sui parametri e sull'uso dell'MSBuild Touch, che imposta i tempi di accesso e di modifica dei file.
+description: Informazioni sui parametri e sull'utilizzo dell'MSBuild Touch, che imposta i tempi di accesso e di modifica dei file.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4440e949920d291d58de48b863a5e96a23ba51d3acd938782b864fb7bfea5ac8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5d67ea85f396baa45e1a8da2f2cf6898d02b4e01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369709"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108187"
 ---
 # <a name="touch-task"></a>Touch (attività)
 
@@ -46,7 +46,7 @@ Imposta l'ora di accesso e di modifica dei file.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension.](../msbuild/taskextension-base-class.md)
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 

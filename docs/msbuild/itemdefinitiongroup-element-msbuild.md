@@ -1,6 +1,6 @@
 ---
 title: Elemento ItemDefinitionGroup (MSBuild) | Microsoft Docs
-description: Informazioni su come MSBuild utilizza l'elemento ItemDefinitionGroup per definire un set di definizioni di elementi, i valori dei metadati applicati a tutti gli elementi del progetto.
+description: Informazioni su MSBuild usa l'elemento ItemDefinitionGroup per definire un set di definizioni di elementi e valori di metadati applicati a tutti gli elementi nel progetto.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -18,18 +18,19 @@ ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 466c753f986eeda233a7ff32bd51fa3e42b3f796
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3eeea6faf2456dadb1083658d8403a7d2501aa0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913897"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093756"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
 
-L'elemento `ItemDefinitionGroup` consente di definire un set di definizioni di elementi, ovvero valori di metadati applicati a tutti gli elementi nel progetto per impostazione predefinita. ItemDefinitionGroup ovvia alla necessità di usare l'[attività CreateItem](../msbuild/createitem-task.md) e l'[attività CreateProperty](../msbuild/createproperty-task.md). Per altre informazioni, vedere [definizioni di elementi](../msbuild/item-definitions.md).
+L'elemento `ItemDefinitionGroup` consente di definire un set di definizioni di elementi, ovvero valori di metadati applicati a tutti gli elementi nel progetto per impostazione predefinita. ItemDefinitionGroup ovvia alla necessità di usare l'[attività CreateItem](../msbuild/createitem-task.md) e l'[attività CreateProperty](../msbuild/createproperty-task.md). Per altre informazioni, vedere [Definizioni degli elementi.](../msbuild/item-definitions.md)
 
 \<Project>
 \<ItemDefinitionGroup>
@@ -63,7 +64,7 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
 
 ## <a name="example"></a>Esempio
 
@@ -89,5 +90,5 @@ L'esempio di codice seguente definisce due elementi di metadati, m e n, in un It
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)

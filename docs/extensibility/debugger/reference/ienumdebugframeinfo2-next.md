@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42964fde86e4ef68371da014f97be67a2c1b39328bb9dcd5ab94235198aaca6c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f0b49f6a08955e386fcc1477cf8b2c63c8b9004a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377516"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095439"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 Restituisce il successivo set di elementi dall'enumerazione.
@@ -56,7 +56,7 @@ int Next(
 [out] Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di elementi richiesto. In `S_FALSE` caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di `S_FALSE` elementi richiesto; in caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

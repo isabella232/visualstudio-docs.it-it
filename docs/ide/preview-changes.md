@@ -12,12 +12,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a87c3131e5d10863d9f6391c2d015fefc27efff903ff42ce80d5aabddbc336
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 463778da41f7091981434203900f078efe848a2d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412784"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151964"
 ---
 # <a name="preview-changes-window"></a>Finestra Anteprima modifiche
 

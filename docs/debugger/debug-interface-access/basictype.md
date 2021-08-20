@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 033ab7c7d2c77470393425b0862cfbed24f7b06a1c6d6e11f364f5337c4487e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9c59e66b73767b5ee5c6787fe0155ad1a2345161
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345689"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129519"
 ---
 # <a name="basictype"></a>BasicType
 Specifica il tipo di base del simbolo.
@@ -65,7 +65,7 @@ btInt Basic type è `signed int` (tipo C/C++).
 
 btUInt Il tipo basic è `unsigned int` (tipo C/C++).
 
-btFloat Basic è un numero a virgola mobile ( `FLOAT` ).
+btFloat Il tipo Basic è un numero a virgola mobile ( `FLOAT` ).
 
 Il tipo btBCD Basic è un decimale a codifica binaria ( `BCD` ).
 

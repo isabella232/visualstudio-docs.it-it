@@ -1,7 +1,7 @@
 ---
 title: Set di regole minime native
 ms.date: 11/04/2016
-description: Informazioni sul set di regole native per le regole minime in Visual Studio. Vedere le descrizioni delle regole per la sicurezza, l'affidabilità e altri problemi critici nel codice nativo.
+description: Informazioni sul set di regole native minimum rules in Visual Studio. Vedere le descrizioni delle regole per sicurezza, affidabilità e altri problemi critici nel codice nativo.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: de4d23633de1c511e75d55b41e7b5f7f0d2568f187619227c4dd6479232783ab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 844e69e990d3abc9398d32f7d969572ff0a0db66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121348572"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114017"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 

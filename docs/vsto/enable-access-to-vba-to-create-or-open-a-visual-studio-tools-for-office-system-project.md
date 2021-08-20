@@ -20,16 +20,16 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e76aa3b3035a3c713c07ef56f67de393b6411cbac7d69bced415581eb0e2bd3d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c6e7d980301c0ad426c54e5f5838d64a11ca0bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121314732"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106380"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Strumenti di Visual Studio per il Microsoft Office di sistema
 
-È necessario abilitare in modo esplicito l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office prima di poter creare o aprire un Strumenti di Visual Studio per il progetto Microsoft Office di sistema.
+È necessario abilitare in modo esplicito l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office prima di poter creare o aprire un Strumenti di Visual Studio per il Microsoft Office di sistema.
 
  Microsoft Office progetti di sviluppo richiedono l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office Word e Microsoft Office Excel, anche se i progetti non usano Visual Basic, Applications Edition. Il supporto in fase di progettazione dei controlli sia nei progetti di Visual Basic che in quelli di Visual C# dipende infatti dal sistema di progetto di Visual Basic, Applications Edition.
 
@@ -40,7 +40,7 @@ ms.locfileid: "121314732"
 
  È importante notare che la disabilitazione dell'accesso al sistema di progetto di Visual Basic, Applications Edition non comporta da sola la protezione dai virus, ma consente semplicemente di interrompere la diffusione di alcuni virus ad altri documenti se il computer viene infettato da un virus macro. Per impostazione predefinita, l'opzione è disabilitata per fornire un ulteriore livello di sicurezza per il computer, ma la sua abilitazione non rende il computer maggiormente soggetto ai virus se si seguono le procedure di sicurezza consigliate.
 
- La protezione ottimale contro i virus macro di Office è l'esecuzione di Office a livello di sicurezza alto o molto alto, per considerare attendibili solo le macro provenienti da origini verificate e note e rimanere aggiornati con le patch di sicurezza e i programmi antivirus.
+ La protezione ottimale da virus macro Office è l'esecuzione di Office a livello di sicurezza alto o molto alto, per considerare attendibili solo le macro provenienti da origini verificate e note e per rimanere aggiornati con patch di sicurezza e virus scanner.
 
  È possibile abilitare o disabilitare l'opzione **Considera attendibile l'accesso Visual Basic Project** manualmente.
 

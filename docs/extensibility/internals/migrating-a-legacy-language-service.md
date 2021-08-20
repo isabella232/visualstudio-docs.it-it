@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8530cb857310b20b8bcc83a654232df65d703fa23c61ee77913bf25f2f28740f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e31f3d39e5a05a0d2ea22b1bdc520682c05d6eef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117878"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrazione di un servizio di linguaggio legacy
 È possibile eseguire la migrazione di un servizio di linguaggio legacy a una versione successiva di Visual Studio aggiornando il progetto e aggiungendo un file source.extension.vsixmanifest al progetto. Il servizio di linguaggio stesso continuerà a funzionare come in precedenza, perché l Visual Studio editor lo adatta.
@@ -40,7 +40,7 @@ ms.locfileid: "121321233"
 
 #### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Per eseguire la migrazione Visual Studio servizio di linguaggio di Visual Studio 2008 a una versione successiva
 
-1. Installare le versioni più recenti di Visual Studio e Visual Studio SDK. Per altre informazioni su come installare l'SDK, vedere [Installing the Visual Studio SDK (Installazione di Visual Studio SDK).](../../extensibility/installing-the-visual-studio-sdk.md)
+1. Installare le versioni più recenti di Visual Studio e Visual Studio SDK. Per altre informazioni su come installare l'SDK, vedere [Installazione di Visual Studio SDK.](../../extensibility/installing-the-visual-studio-sdk.md)
 
 2. Modificare il file RegExLangServ.csproj (senza caricarlo in Visual Studio.
 
@@ -56,11 +56,11 @@ ms.locfileid: "121321233"
 
 5. Viene **visualizzata la finestra Di aggiornamento unidiredato.** Fare clic su **OK**.
 
-6. Aggiornare le proprietà del progetto. Aprire la finestra **Project proprietà** selezionando il nodo del progetto **nell'Esplora soluzioni**, facendo clic con il pulsante destro del mouse e scegliendo **Proprietà**.
+6. Aggiornare le proprietà del progetto. Aprire la **finestra Project proprietà** selezionando il nodo del progetto nel Esplora soluzioni , facendo clic con il pulsante destro del mouse e scegliendo **Proprietà.** 
 
     - Nella scheda **Applicazione** impostare **Framework di destinazione** su **4.6.1.**
 
-    - Nella casella **Avvia** programma esterno **della** scheda Debug digitare **\<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
+    - Nella casella Avvia programma esterno **della** scheda **Debug** **\<Visual Studio installation path> digitare\Common7\IDE\devenv.exe.**.
 
          Nella casella **Argomenti della riga di** comando digitare /**rootsuffix Exp**.
 
@@ -86,7 +86,7 @@ ms.locfileid: "121321233"
 
 10. È necessario aggiungere un file source.extension.vsixmanifest.
 
-    - Copiare questo file da un'estensione esistente nella directory del progetto. Un modo per ottenere questo file è creare un progetto VSIX (in **File** fare clic su Nuovo **,** quindi fare clic su **Project**. In Visual Basic o C# fare clic su **Estendibilità**, quindi selezionare **VSIX Project**.
+    - Copiare questo file da un'estensione esistente nella directory del progetto. Un modo per ottenere questo file è creare un progetto VSIX (in **File** fare clic su Nuovo **,** quindi fare clic su **Project**. In Visual Basic o C# fare clic su **Estendibilità**, quindi selezionare **VSIX Project**.)
 
     - Aggiungere il file al progetto.
 

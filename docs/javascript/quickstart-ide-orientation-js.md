@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-javascript
 ms.workload:
 - multiple
-ms.openlocfilehash: 0801f2748a94aac09faa56148340796baf19e30e99706ea5faf007d13aef9401
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 724c6bb1a106fad6d6ceac0cae6f6e7968175447
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398934"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085845"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
 

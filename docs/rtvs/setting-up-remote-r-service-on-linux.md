@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 94e6a4cf733590fb2bf57c0e0f0490e6453f86539611bfa8d1d66e88c8095a6c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: badd4cda94055a4c3d50a1a82a1dce6e52a3365c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060492"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service per Linux
 

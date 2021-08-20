@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87c7ed2bc53dcd793cb0c7c85ae3070f9236289e67d418c6b1ef3df9edd4e7d5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 581a805ad525f2cbcda95911b1620e7ccd773dfa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132860"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Aggiunge una porta.

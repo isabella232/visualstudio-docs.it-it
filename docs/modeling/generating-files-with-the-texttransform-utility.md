@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d230256d988c16d86e01fc04e363d40473b1ac1a35e1c9bdc45faa3de3c43b25
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 82a0a5ec91b532e96c795ad65910061b0d5f946e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085611"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generare file con l'utilità TextTransform
 

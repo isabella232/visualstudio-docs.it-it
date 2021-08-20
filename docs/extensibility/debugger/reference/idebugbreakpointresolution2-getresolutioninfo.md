@@ -1,6 +1,6 @@
 ---
-description: Ottiene le informazioni di risoluzione del punto di interruzione che descrivono questo punto di interruzione.
-title: 'IDebugBreakpointResolution2:: GetResolutionInfo | Microsoft Docs'
+description: Ottiene le informazioni sulla risoluzione del punto di interruzione che descrivono questo punto di interruzione.
+title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4e0f042cc619fcd5016cf493f32ba661af4a449
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4e7ab8cd36ac17ba0f85e5f2e1924e813c7d3d20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145263"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Ottiene le informazioni di risoluzione del punto di interruzione che descrivono questo punto di interruzione.
+Ottiene le informazioni sulla risoluzione del punto di interruzione che descrivono questo punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +45,16 @@ int GetResolutionInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-in Combinazione di flag dell'enumerazione [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) che determinano i campi del `pBPResolutionInfo` parametro da compilare.
+[in] Combinazione di flag [dell'BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) che determinano quali campi del parametro `pBPResolutionInfo` devono essere compilati.
 
 `pBPResolutionInfo`\
-out Struttura di [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) da compilare con le informazioni su questo punto di interruzione.
+[out] Struttura [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) da riempire con informazioni su questo punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene implementato questo metodo per un `CDebugBreakpointResolution` oggetto semplice che espone l'interfaccia [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
+ L'esempio seguente implementa questo metodo per un oggetto `CDebugBreakpointResolution` semplice che espone [l'interfaccia IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 
 ```
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(

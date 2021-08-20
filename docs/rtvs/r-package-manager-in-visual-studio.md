@@ -10,16 +10,16 @@ manager: jmartens
 ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 3c59ce8a9bc615983eeee33f7fe7e3c7b62f25281894c55dc84637bf2df74397
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 70423ab665c9fe07d41ad7c8fe9a0653909d440a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121353245"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060635"
 ---
 # <a name="package-manager"></a>Strumento di gestione pacchetti
 
-Gestione pacchetti di R Tools per Visual Studio (RTVS) è un'interfaccia utente per la gestione dei pacchetti R. Per aprirlo, selezionare **R Tools**  >  **Windows**  >  **Pacchetti** o premere **CTRL** + **7.**
+Gestione pacchetti di R Tools per Visual Studio (RTVS) è un'interfaccia utente per la gestione dei pacchetti R. Per aprirlo, selezionare **R Tools**  >  **Windows**  >  **pacchetti** o premere **CTRL** + **7.**
 
 Gestione pacchetti contiene tre schede. Ogni scheda visualizza a sinistra un elenco di pacchetti pertinenti e a destra i dettagli specifici del pacchetto selezionato, ad esempio la versione, la descrizione, la licenza, il percorso di installazione, nonché collegamenti ad altre informazioni pertinenti. La casella di ricerca in alto a destra consente di filtrare l'elenco.
 

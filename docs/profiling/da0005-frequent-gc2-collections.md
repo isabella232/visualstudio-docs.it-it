@@ -1,6 +1,6 @@
 ---
 description: Viene recuperato un numero elevato di oggetti di memoria .NET in Garbage Collection di generazione 2.
-title: DA0005-Raccolte GC2 frequenti | Microsoft Docs
+title: DA0005 - Raccolte GC2 frequenti | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,15 +12,16 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 73b24eba94791a9a24b80898fb7333665ed13caf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b2e98e7212a1ed5441b2c1ccc779f9e5afff20ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221028"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093281"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Raccolte GC2 frequenti
 
@@ -43,6 +44,6 @@ ms.locfileid: "102221028"
  Questa regola viene attivata quando si sono verificate proporzionalmente troppe operazioni di Garbage Collection di generazione 2. Se troppi oggetti di durata relativamente breve vengono mantenuti dopo una raccolta di generazione 1, ma possono essere raccolti in una generazione 2 completa, il costo di gestione della memoria può diventare eccessivo. Per altre informazioni, vedere il post [Mid-life crisis](/archive/blogs/ricom/mid-life-crisis) (Crisi di mezza età) in Rico Mariani's Performance Tidbits (Curiosità sulle prestazioni di Rico Mariani) sul sito Web MSDN.
 
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
- Esaminare i report delle [visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md) per comprendere il modello di allocazione di memoria dell'applicazione. Usare la [visualizzazione Durata oggetti](../profiling/object-lifetime-view.md) per determinare quali oggetti dati del programma sono presenti nella generazione 2 e quindi recuperarli. Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.
+ Esaminare i [report sulle visualizzazioni dati di memoria .NET](../profiling/dotnet-memory-data-views.md) per comprendere il modello di allocazione di memoria dell'applicazione. Usare la [visualizzazione Durata oggetti](../profiling/object-lifetime-view.md) per determinare quali oggetti dati del programma sono in fase di sopravvivenza alla generazione 2 e quindi vengono recuperati da questa finestra. Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.
 
  Per informazioni su come migliorare le prestazioni di Garbage Collection, vedere [Garbage Collector Basics and Performance Hints](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) (Nozioni fondamentali su Garbage Collection e suggerimenti sulle prestazioni) sul sito Web Microsoft. Per informazioni sul sovraccarico della procedura di Garbage Collection automatica, vedere [Large Object Heap Uncovered](/archive/msdn-magazine/2008/june/clr-inside-out-large-object-heap-uncovered) (Heap di oggetti grandi).

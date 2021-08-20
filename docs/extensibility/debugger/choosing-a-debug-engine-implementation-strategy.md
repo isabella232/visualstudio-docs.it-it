@@ -10,28 +10,29 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6126df3e4adb1e0d942669b561801be4449036df
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 22077acd9e669f82d274a11a2b983c01afd1f746
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111788"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Scegliere una strategia di implementazione del motore di debug
-Utilizzare l'architettura di run-time per determinare la strategia di implementazione del motore di debug. È possibile creare il motore di debug in-process per il programma di cui si esegue il debug. Creare il motore di debug in-process per Visual Studio Session Debug Manager (SDM). In alternativa, creare il motore di debug out-of-process in entrambi. Le linee guida seguenti consentono di scegliere tra queste tre strategie.
+Usare l'architettura di runtime per determinare la strategia di implementazione del motore di debug. È possibile creare il motore di debug in-process per il programma di cui si esegue il debug. Creare il motore di debug in-process Visual Studio gestione del debug di sessione (SDM). In caso contrario, creare il motore di debug out-of-process per entrambi. Le linee guida seguenti consentono di scegliere tra queste tre strategie.
 
 ## <a name="guidelines"></a>Indicazioni
- Sebbene sia possibile che il DE sia out-of-process sia per SDM che per il programma di cui si sta eseguendo il debug, in genere non esiste alcun motivo. Le chiamate tra i limiti del processo sono relativamente lente.
+ Anche se è possibile che il de sia out-of-process sia per SDM che per il programma di cui si esegue il debug, in genere non c'è alcun motivo per farlo. Le chiamate attraverso i limiti del processo sono relativamente lente.
 
- I motori di debug sono già disponibili per l'ambiente di runtime Win32 nativo e per l'ambiente Common Language Runtime. Se è necessario sostituire il valore DE per uno dei due ambienti, è necessario creare il DE in-process con SDM.
+ I motori di debug sono già disponibili per l'ambiente di runtime nativo Win32 e per l'ambiente di runtime del linguaggio comune. Se è necessario sostituire de per entrambi gli ambienti, è necessario creare il de-process con SDM.
 
- In caso contrario, è possibile creare il DE in-process per SDM o in-process nel programma di cui si esegue il debug. È necessario considerare se l'analizzatore di espressioni di DE richiede l'accesso frequente all'archivio simboli del programma. In alternativa, se l'archivio simboli può essere caricato in memoria per l'accesso rapido. Considerare anche gli approcci seguenti:
+ In caso contrario, si crea il de-process in-process in SDM o in-process nel programma di cui si esegue il debug. È necessario valutare se l'analizzatore di espressioni del de richiede l'accesso frequente all'archivio simboli del programma. In caso contrario, se l'archivio simboli può essere caricato in memoria per un accesso rapido. Si considerino anche gli approcci seguenti:
 
-- Se non sono presenti molte chiamate tra l'analizzatore di espressioni e l'archivio simboli oppure se l'archivio simboli può essere letto nello spazio di memoria SDM, creare il processo di Dein-Process per SDM. È necessario restituire il CLSID del motore di debug a SDM quando si connette al programma. SDM utilizza questo CLSID per creare un'istanza in-process del DE.
+- Se non sono presenti molte chiamate tra l'analizzatore di espressioni e l'archivio simboli o se l'archivio simboli può essere letto nello spazio di memoria SDM, creare il de-process in SDM. È necessario restituire il CLSID del motore di debug a SDM quando si collega al programma. SDM usa questo CLSID per creare un'istanza in-process del de.
 
-- Se il DE deve chiamare il programma per accedere all'archivio dei simboli, creare il DE in-process con il programma. In questo caso, il programma crea l'istanza del DE.
+- Se il de deve chiamare il programma per accedere all'archivio simboli, creare il de-process con il programma. In questo caso, il programma crea l'istanza del de.
 
 ## <a name="see-also"></a>Vedi anche
-- [Estensibilità del debugger di Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [Visual Studio estendibilità del debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

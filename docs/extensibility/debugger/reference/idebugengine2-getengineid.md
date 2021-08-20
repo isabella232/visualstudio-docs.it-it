@@ -1,6 +1,6 @@
 ---
-description: Ottiene il GUID del motore di debug (DE).
-title: 'IDebugEngine2:: GetEngineID | Microsoft Docs'
+description: Ottiene il GUID del motore di debug.
+title: IDebugEngine2::GetEngineID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d7a483517f89c91005f465c539d2af4b9d442a8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 079e3b0316bb06edb383dc74ed0e71f157d29a00
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088029"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064331"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-Ottiene il GUID del motore di debug (DE).
+Ottiene il GUID del motore di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int GetEngineID(
 
 ## <a name="parameters"></a>Parametri
 `pguidEngine`\
-out Restituisce il GUID dell'oggetto DE.
+[out] Restituisce il GUID del de.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
@@ -51,7 +52,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 Alcuni esempi di GUID tipici sono `guidScriptEng` , `guidNativeEng` o `guidSQLEng` . I nuovi motori di debug creeranno il proprio GUID per l'identificazione.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CEngine` oggetto semplice che implementa l'interfaccia [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CEngine` semplice che implementa [l'interfaccia IDebugEngine2.](../../../extensibility/debugger/reference/idebugengine2.md)
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {

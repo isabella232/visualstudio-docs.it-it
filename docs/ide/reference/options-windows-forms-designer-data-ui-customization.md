@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Progettazione Windows Form, Personalizzazione dell'interfaccia utente dati
-description: Informazioni su come utilizzare la pagina di personalizzazione dell'interfaccia utente dati per definire quali controlli vengono visualizzati nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati.
+description: Informazioni su come usare la pagina Personalizzazione dell'interfaccia utente dati per definire i controlli da visualizzare nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati.
 ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
@@ -12,20 +12,21 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 46834dea30f41ebf0eb8629fe4dde0525288e82d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 6e419f144b44076e1108988cf1123a6a87b410ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151184"
 ---
-# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Finestra di dialogo Opzioni: Progettazione Windows Form > personalizzazione dell'interfaccia utente dei dati
+# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Finestra di dialogo Opzioni: Finestra Windows Form > personalizzazione dell'interfaccia utente dati
 
-Questa finestra di dialogo consente di definire i controlli che vengono visualizzati nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati. Per aprirlo, selezionare **strumenti**  >  **Opzioni** e quindi selezionare **Progettazione Windows Form**  >  **personalizzazione dell'interfaccia utente dati**.
+Questa finestra di dialogo consente di definire i controlli che vengono visualizzati nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati. Per aprirlo, selezionare **Opzioni** strumenti e quindi selezionare Windows personalizzazione dell'interfaccia utente dati  >  di   >  **Progettazione Form.**
 
 È possibile selezionare un controllo da un elemento nella finestra Origini dati prima di trascinarlo nel form in un'app Windows Form. I controlli disponibili sono determinati dal tipo di dati dell'elemento. Ogni tipo di dati ha un elenco di controlli associati validi, come definito in questa finestra di dialogo, incluso un controllo predefinito. Quando si trascina un elemento dalla finestra Origini dati in un form senza selezionare un controllo, il controllo predefinito per il tipo di dati dell'elemento selezionato viene aggiunto al form.
 
-Personalizzare l'elenco dei controlli associati selezionando e deselezionando le caselle di controllo dei controlli disponibili per ogni tipo di dati. Per aggiungere un controllo all'elenco, aggiungere un controllo che implementi l'attributo di associazione dati <xref:System.ComponentModel.DefaultBindingPropertyAttribute> o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> alla casella degli strumenti. Il controllo verrà quindi visualizzato nell'elenco dei controlli per il tipo di dati. Per altre informazioni, vedere [procedura: aggiungere controlli personalizzati alla finestra Origini dati](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
+Personalizzare l'elenco dei controlli associati selezionando e deselezionando le caselle di controllo dei controlli disponibili per ogni tipo di dati. Per aggiungere un controllo all'elenco, aggiungere un controllo che implementi l'attributo di associazione dati <xref:System.ComponentModel.DefaultBindingPropertyAttribute> o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> alla casella degli strumenti. Il controllo verrà quindi visualizzato nell'elenco dei controlli per il tipo di dati. Per altre informazioni, [vedere Procedura: Aggiungere controlli personalizzati alla finestra Origini dati](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="data-type"></a>Tipo di dati
 

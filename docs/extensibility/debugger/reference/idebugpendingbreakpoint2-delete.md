@@ -1,6 +1,6 @@
 ---
-description: Elimina il punto di interruzione in sospeso e tutti i punti di interruzione associati.
-title: IDebugPendingBreakpoint2::D Elimina | Microsoft Docs
+description: Elimina questo punto di interruzione in sospeso e tutti i punti di interruzione associati.
+title: IDebugPendingBreakpoint2::D elete | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25152c5a49ccef84f44d8c3fde3217367c0e334b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c67d624182cdc040c71676b4f99e5dadf8ad90d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087769"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160127"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-Elimina il punto di interruzione in sospeso e tutti i punti di interruzione associati.
+Elimina questo punto di interruzione in sospeso e tutti i punti di interruzione associati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +44,7 @@ int Delete();
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un `CPendingBreakpoint` oggetto semplice che implementa l'interfaccia [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CPendingBreakpoint` semplice che implementa [l'interfaccia IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::Delete(void)

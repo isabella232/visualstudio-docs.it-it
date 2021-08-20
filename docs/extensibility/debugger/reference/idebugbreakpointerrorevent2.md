@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia indica al gestore di debug della sessione (SDM) che non è stato possibile associare un punto di interruzione in sospeso a un programma caricato, a causa di un avviso o di un errore.
+description: Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione in sospeso non può essere associato a un programma caricato, a causa di un avviso o di un errore.
 title: IDebugBreakpointErrorEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ebfa6b5d1cc2a0fe1a03c9e70952c5cec1a74e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8bc96cd6220f1c5e385eca134130c7f0e223b6cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054530"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064656"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
-Questa interfaccia indica al gestore di debug della sessione (SDM) che non è stato possibile associare un punto di interruzione in sospeso a un programma caricato, a causa di un avviso o di un errore.
+Questa interfaccia indica al gestore di debug della sessione (SDM) che un punto di interruzione in sospeso non può essere associato a un programma caricato, a causa di un avviso o di un errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,27 +31,27 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il DE implementa questa interfaccia come parte del supporto per i punti di interruzione. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (il SDM USA [QueryInterface](/cpp/atl/queryinterface) per accedere all' `IDebugEvent2` interfaccia).
+ Il de implementa questa interfaccia come parte del supporto per i punti di interruzione. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia). `IDebugEvent2`
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE crea e invia questo oggetto evento quando un punto di interruzione in sospeso non può essere associato al programma di cui è in corso il debug. L'evento viene inviato utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.
+ Il de crea e invia questo oggetto evento quando un punto di interruzione in sospeso non può essere associato al programma in fase di debug. L'evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- La tabella seguente illustra i metodi di `IDebugBreakpointErrorEvent2` .
+ Nella tabella seguente vengono illustrati i metodi di `IDebugBreakpointErrorEvent2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Ottiene l'interfaccia [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) che descrive l'avviso o l'errore.|
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Ottiene [l'interfaccia IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) che descrive l'avviso o l'errore.|
 
 ## <a name="remarks"></a>Commenti
- Ogni volta che viene associato un punto di interruzione, viene inviato un evento all'SDM. Se non è possibile associare il punto di interruzione, `IDebugBreakpointErrorEvent2` viene inviato un oggetto; in caso contrario, viene inviato un [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .
+ Ogni volta che viene associato un punto di interruzione, viene inviato un evento a SDM. Se il punto di interruzione non può essere associato, viene inviato un oggetto . In caso contrario, viene inviato `IDebugBreakpointErrorEvent2` [un oggetto IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
 
- Ad esempio, quando la condizione associata al punto di interruzione in sospeso non riesce ad analizzare o valutare, viene inviato un avviso che attualmente non è possibile associare al punto di interruzione in sospeso. Questo problema può verificarsi se il codice per il punto di interruzione non è ancora stato caricato.
+ Ad esempio, quando la condizione associata al punto di interruzione in sospeso non viene analizzata o valutata, viene inviato un avviso che indica che non è possibile associare il punto di interruzione in sospeso in questo momento. Questo problema può verificarsi se il codice per il punto di interruzione non è ancora stato caricato.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

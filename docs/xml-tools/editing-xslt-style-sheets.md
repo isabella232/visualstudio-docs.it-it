@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 75f2b4c0300ebbf437a989003626e0ee796853aa88f4b725a94f0f6e0d848a78
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 636d681080239dc80a210d590407e77c062bdc20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351018"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130234"
 ---
 # <a name="edit-xslt-style-sheets"></a>Modifica dei fogli di stile XSLT
 

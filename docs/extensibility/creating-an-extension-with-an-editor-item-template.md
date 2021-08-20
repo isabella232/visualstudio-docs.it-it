@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c75d0a86d92c88c850e3b8250e3ac3551a1b75b475db9032f282355711f74db2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 120497d5329122dd5dfb4f8afd659cd518eba9f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262997"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111957"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Creare un'estensione con un modello di elemento dell'editor
 È possibile usare i modelli di elemento inclusi in Visual Studio SDK per creare estensioni dell'editor di base che aggiungono classificatori, aree di controllo e margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti Visual C# o Visual Basic VSIX.

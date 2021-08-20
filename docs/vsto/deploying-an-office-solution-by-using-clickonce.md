@@ -16,15 +16,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 84c3740a1fd51863c782942a12d9863d3bf448c85379f89b82268a01847f0b44
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eb23c3254d80847298fa12485c8f6df607506138
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121297048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148350"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una Office di distribuzione usando ClickOnce
-  L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è consigliabile usare Windows Installer (*.msi*) se più utenti eseguiranno la soluzione nello stesso computer.
+  L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è consigliabile usare Windows installer (*.msi*) se più utenti eseguiranno la soluzione nello stesso computer.
 
 ## <a name="in-this-topic"></a>Contenuto dell'argomento
 
@@ -132,7 +132,7 @@ ms.locfileid: "121297048"
       ![Struttura di cartelle di pubblicazione](../vsto/media/publishfolderstructure.png "Struttura della cartella di pubblicazione")
 
     > [!NOTE]
-    > ClickOnce aggiunge l'estensione *deploy* agli assembly in modo che un'installazione protetta di Internet Information Services (IIS) non blocchi i file a causa di un'estensione non sicura. Quando l'utente installa la soluzione, ClickOnce rimuove *l'estensione deploy.*
+    > ClickOnce aggiunge l'estensione *deploy* agli assembly in modo che un'installazione protetta di Internet Information Services (IIS) non blocchi i file a causa di un'estensione non sicura. Quando l'utente installa la soluzione, ClickOnce *l'estensione deploy.*
 
 14. Copiare i file della soluzione nel percorso di installazione specificato precedentemente in questa procedura.
 
@@ -167,15 +167,15 @@ ms.locfileid: "121297048"
 6. Nella finestra **Tipo MIME** immettere **.vsto** come estensione, immettere **application/x-ms-vsto** come tipo MIME e quindi applicare le nuove impostazioni.
 
     > [!NOTE]
-    > Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È quindi necessario scaricare la cache del disco del browser e quindi provare ad aprire di nuovo il file *vsto.*
+    > Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È quindi necessario scaricare la cache del disco del browser e quindi provare ad aprire di nuovo il file *con estensione vsto.*
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Per aggiungere il tipo MIME .vsto a IIS 7.0
 
-1. Nel server che esegue IIS 7.0 scegliere **Avvia**  >  **tutti i programmi**  >  **Accessori**.
+1. Nel server che esegue IIS 7.0 scegliere **Start**  >  **All Programs**  >  **Accessories**.
 
-2. Aprire il menu di scelta rapida **per Prompt dei comandi** e quindi scegliere Esegui come  **amministratore.**
+2. Aprire il menu di scelta **rapida per prompt dei** comandi e quindi scegliere Esegui come  **amministratore.**
 
-3. Nella casella **Apri** immettere il percorso seguente e quindi scegliere **OK.**
+3. Nella casella **Apri** immettere il percorso seguente e quindi scegliere **il pulsante OK.**
 
     ```cmd
     %windir%\system32\inetsrv
@@ -188,10 +188,10 @@ ms.locfileid: "121297048"
     ```
 
     > [!NOTE]
-    > Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È quindi necessario scaricare la cache del disco del browser e quindi provare ad aprire di nuovo il file *vsto.*
+    > Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È quindi necessario scaricare la cache del disco del browser e quindi provare ad aprire di nuovo il file *con estensione vsto.*
 
 ## <a name="put-the-document-of-a-solution-onto-the-end-users-computer-document-level-customizations-only"></a><a name="Put"></a> Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)
- È possibile copiare il documento della soluzione nel computer dell'utente finale creando un'azione post-distribuzione. In questo modo, l'utente non deve copiare manualmente il documento dal percorso di installazione al computer dopo aver installato la soluzione. Sarà necessario creare una classe che definisce l'azione post-distribuzione, compilare e pubblicare la soluzione, modificare il manifesto dell'applicazione e firmare nuovamente l'applicazione e il manifesto della distribuzione.
+ È possibile copiare il documento della soluzione nel computer dell'utente finale creando un'azione post-distribuzione. In questo modo, l'utente non deve copiare manualmente il documento dal percorso di installazione nel computer dopo aver installato la soluzione. Sarà necessario creare una classe che definisce l'azione post-distribuzione, compilare e pubblicare la soluzione, modificare il manifesto dell'applicazione e firmare nuovamente l'applicazione e il manifesto della distribuzione.
 
  Le procedure seguenti presuppongono che il nome del progetto sia **ExcelWorkbook** e che la soluzione sia pubblicata in una cartella creata **denominata C:\publish** nel computer.
 
@@ -199,15 +199,15 @@ ms.locfileid: "121297048"
 
 1. Sulla barra dei menu scegliere **File**  >  **Aggiungi**  >  **nuovo Project**.
 
-2. Nel riquadro **Modelli installati Project** finestra di  dialogo Aggiungi nuovo Windows **cartella.**
+2. Nel riquadro **Modelli installati della** finestra di  dialogo Aggiungi nuovo Project scegliere la **cartella** Windows.
 
-3. Nel riquadro **Modelli** scegliere il **modello Libreria di** classi.
+3. Nel riquadro **Modelli** scegliere il modello **Libreria di** classi.
 
-4. Nel campo **Nome** immettere **FileCopyPDA** e quindi scegliere **OK.**
+4. Nel **campo Nome** immettere **FileCopyPDA** e quindi scegliere **il pulsante OK.**
 
 5. In **Esplora soluzioni** scegliere il **progetto FileCopyPDA.**
 
-6. Sulla barra dei menu scegliere **Project**  >  **Aggiungi riferimento**.
+6. Nella barra dei menu scegliere **Project**  >  **Aggiungi riferimento.**
 
 7. Nella scheda **.NET** aggiungere riferimenti a `Microsoft.VisualStudio.Tools.Applications.Runtime` e `Microsoft.VisualStudio.Tools.Applications.ServerDocument` .
 
@@ -215,7 +215,7 @@ ms.locfileid: "121297048"
 
    - Copia del documento sul desktop dell'utente.
 
-   - Modifica la _AssemblyLocation da un percorso relativo a un percorso completo per il manifesto della distribuzione.
+   - Modifica la _AssemblyLocation proprietà da un percorso relativo a un percorso completo per il manifesto della distribuzione.
 
    - Eliminazione del file se l'utente disinstalla la soluzione.
 
@@ -224,31 +224,31 @@ ms.locfileid: "121297048"
 
 ### <a name="build-and-publish-the-solution"></a>Compilare e pubblicare la soluzione
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto FileCopyPDA** e quindi scegliere **Compila**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il **progetto FileCopyPDA** e quindi scegliere **Compila.**
 
-2. Aprire il menu di scelta rapida per **il progetto ExcelWorkbook** e quindi scegliere **Compila**.
+2. Aprire il menu di scelta rapida **per il progetto ExcelWorkbook** e quindi scegliere **Compila.**
 
-3. Aprire il menu di scelta rapida per **il progetto ExcelWorkbook** e quindi scegliere **Aggiungi riferimento**.
+3. Aprire il menu di scelta rapida **per il progetto ExcelWorkbook** e quindi scegliere **Aggiungi riferimento.**
 
-4. Nella finestra **di dialogo** Aggiungi riferimento scegliere la **scheda Progetti** , scegliere **FileCopyPDA** e quindi fare clic sul **pulsante OK.**
+4. Nella finestra **di dialogo** Aggiungi riferimento scegliere la **scheda Progetti,** **scegliere FileCopiaPDA** e quindi scegliere **il pulsante OK.**
 
 5. In **Esplora soluzioni** scegliere il **progetto ExcelWorkbook.**
 
-6. Sulla barra dei menu scegliere **Project**  >  **Nuova cartella**.
+6. Nella barra dei menu scegliere **Project**  >  **Nuova cartella.**
 
-7. Immettere **Dati** e quindi premere **INVIO.**
+7. Immettere **Dati** e quindi **premere** INVIO.
 
 8. In **Esplora soluzioni** scegliere la **cartella** Dati.
 
 9. Sulla barra dei menu scegliere **Project**  >  **Aggiungi elemento esistente**.
 
-10. Nella finestra **di dialogo Aggiungi elemento** esistente passare alla directory di output per il progetto **ExcelWorkbook,** scegliere il file **ExcelWorkbook.xlsx** e quindi scegliere il **pulsante** Aggiungi.
+10. Nella finestra **di dialogo Aggiungi** elemento esistente passare alla directory di output per il progetto **ExcelWorkbook,** scegliere il file **ExcelWorkbook.xlsx** e quindi scegliere il **pulsante** Aggiungi.
 
-11. In **Esplora soluzioni** scegliere il file **ExcelWorkbook.xlsx** file.
+11. In **Esplora soluzioni** il file **ExcelWorkbook.xlsx.**
 
-12. Nella finestra **Proprietà** impostare la proprietà Azione **di** compilazione su **Contenuto** e la proprietà Copia nella directory **di output** su Copia se **più recente.**
+12. Nella finestra **Proprietà** modificare la proprietà **Azione di** compilazione in **Contenuto** e la proprietà Copia nella directory **di output** in Copia se **più recente.**
 
-     Dopo aver completato questi passaggi, il progetto sarà simile alla figura seguente.
+     Dopo aver completato questi passaggi, il progetto sarà simile all'illustrazione seguente.
 
      ![Struttura progetto dell'azione post-distribuzione.](../vsto/media/vsto-postdeployment.png "Struttura progetto dell'azione post-distribuzione.")
 
@@ -256,13 +256,13 @@ ms.locfileid: "121297048"
 
 ### <a name="modify-the-application-manifest"></a>Modificare il manifesto dell'applicazione
 
-1. Aprire la directory della soluzione, **c:\publish**, **usando** Esplora file .
+1. Aprire la directory della **soluzione, c:\publish,** **usando Esplora file**.
 
-2. Aprire la **cartella File** dell'applicazione e quindi la cartella corrispondente alla versione pubblicata più recente della soluzione.
+2. Aprire la **cartella File** applicazione e quindi la cartella corrispondente alla versione pubblicata più recente della soluzione.
 
-3. Aprire il **fileExcelWorkbook.dll.manifest** in un editor di testo, ad esempio Blocco note.
+3. Aprire il file **ExcelWorkbook.dll.manifest** in un editor di testo, ad esempio Blocco note.
 
-4. Dopo l'elemento `</vstav3:update>` aggiungere il codice seguente. Per l'attributo class `<vstav3:entryPoint>` dell'elemento usare la sintassi seguente: *NamespaceName.ClassName*. Nell'esempio riportato di seguito il nome dello spazio dei nomi è uguale a quello della classe. Pertanto, il nome del punto di ingresso risultante è `FileCopyPDA.FileCopyPDA`.
+4. Dopo l'elemento `</vstav3:update>` aggiungere il codice seguente. Per l'attributo class `<vstav3:entryPoint>` dell'elemento , usare la sintassi seguente: *NamespaceName.ClassName*. Nell'esempio riportato di seguito il nome dello spazio dei nomi è uguale a quello della classe. Pertanto, il nome del punto di ingresso risultante è `FileCopyPDA.FileCopyPDA`.
 
     ```xml
     <vstav3:postActions>
@@ -285,7 +285,7 @@ ms.locfileid: "121297048"
 
 1. Nella cartella **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** copiare il file di certificato **ExcelWorkbook_TemporaryKey.pfx** e incollarlo nella cartella *PublishFolder* **\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion._
 
-2. Aprire il prompt dei comandi Visual Studio e quindi passare alla cartella **c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_ ( ad **esempio, c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).
+2. Aprire il prompt dei comandi Visual Studio e quindi passare alla cartella **c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_ , ad esempio **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**.
 
 3. Firmare il manifesto dell'applicazione modificato usando il comando seguente:
 
@@ -295,7 +295,7 @@ ms.locfileid: "121297048"
 
      Verrà visualizzato il messaggio "ExcelWorkbook.dll.manifest firmato correttamente".
 
-4. Passare alla cartella **c:\publish** e quindi aggiornare e firmare il manifesto della distribuzione eseguendo il comando seguente:
+4. Passare alla cartella **c:\publish,** quindi aggiornare e firmare il manifesto della distribuzione eseguendo il comando seguente:
 
     ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex
@@ -303,7 +303,7 @@ ms.locfileid: "121297048"
     ```
 
     > [!NOTE]
-    > Nell'esempio precedente sostituire MostRecentVersionNumber con il numero di versione dell'ultima versione pubblicata della soluzione , ad esempio **1_0_0_4**.
+    > Nell'esempio precedente sostituire MostRecentVersionNumber con il numero di versione dell'ultima versione pubblicata della soluzione, ad esempio **1_0_0_4.**
 
      Verrà visualizzato il messaggio "ExcelWorkbook.vsto firmato correttamente".
 
@@ -320,7 +320,7 @@ ms.locfileid: "121297048"
 
     - Usare lo strumento di configurazione di Office per aggiungere il server in cui è eseguito SharePoint al Centro protezione in Word o Excel in tutti i computer degli utenti.
 
-         Vedere [Criteri di sicurezza e impostazioni in Office 2010.](/previous-versions/office/office-2010/cc178946(v=office.14))
+         Vedere [Criteri e impostazioni di sicurezza in Office 2010.](/previous-versions/office/office-2010/cc178946(v=office.14))
 
     - Assicurarsi che ogni utente esegua i passaggi indicati di seguito.
 
@@ -328,24 +328,24 @@ ms.locfileid: "121297048"
 
         2. Nella finestra **di dialogo Centro** protezione scegliere il pulsante **Percorsi** attendibili .
 
-        3. Selezionare la casella di controllo Consenti percorsi attendibili in rete (scelta non **consigliata)** e quindi scegliere il **pulsante Aggiungi nuovo** percorso.
+        3. Selezionare la casella di controllo Consenti percorsi attendibili **in rete (scelta** non consigliata) e quindi scegliere il **pulsante Aggiungi nuovo** percorso.
 
-        4. Nella casella **Percorso** immettere l'URL della raccolta documenti SharePoint che contiene il documento caricato, ad esempio *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName* .
+        4. Nella **casella Percorso** immettere l'URL della raccolta SharePoint che contiene il documento caricato, ad esempio *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName* .
 
              Non aggiungere il nome della pagina Web predefinita, ad esempio *default.aspx* o *AllItems.aspx.*
 
-        5. Selezionare la casella di controllo Anche le **sottocartelle** di questo percorso sono attendibili e quindi scegliere **OK.**
+        5. Selezionare la **casella di controllo Anche le sottocartelle** di questo percorso sono attendibili e quindi scegliere il pulsante **OK.**
 
              Nel momento in cui gli utenti aprono il documento dal sito di SharePoint, il documento viene aperto e la personalizzazione viene installata. Gli utenti possono copiare il documento sul proprio desktop. L'esecuzione della personalizzazione continuerà perché le proprietà nel documento puntano al percorso di rete del documento.
 
 ## <a name="create-a-custom-installer"></a><a name="Custom"></a> Creare un programma di installazione personalizzato
- È possibile creare un programma di installazione personalizzato per la soluzione Office, anziché usare il programma di installazione creato automaticamente quando si pubblica la soluzione. È ad esempio possibile usare uno script di accesso per avviare l'installazione oppure un file batch per installare la soluzione senza interazione dell'utente. Questi scenari offrono i risultati migliori se i prerequisiti sono già installati nei computer degli utenti finali.
+ È possibile creare un programma di installazione personalizzato per la soluzione Office, anziché usare il programma di installazione creato automaticamente quando si pubblica la soluzione. Ad esempio, è possibile usare uno script di accesso per avviare l'installazione oppure un file batch per installare la soluzione senza interazione dell'utente. Questi scenari offrono i risultati migliori se i prerequisiti sono già installati nei computer degli utenti finali.
 
  Come parte del processo di installazione personalizzato, chiamare lo strumento di installazione per le soluzioni Office (*VSTOInstaller.exe*), che viene installato nel percorso seguente per impostazione predefinita:
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- Se lo strumento non si trova in  tale percorso, è possibile usare la chiaveHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPatho **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** del Registro di sistema per trovare il percorso di tale strumento.
+ Se lo strumento non si trova in  tale percorso, è possibile usare la chiaveHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPatho **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** del Registro di sistema per trovare il percorso dello strumento.
 
  È possibile usare i parametri seguenti con *VSTOinstaller.exe*.
 
@@ -361,7 +361,7 @@ ms.locfileid: "121297048"
 |Codice di errore|Definizione|
 |----------------|----------------|
 |0|La soluzione è stata installata o disinstallata correttamente oppure è stata visualizzata la Guida di VSTOInstaller.|
-|-100|Una o più opzioni della riga di comando non sono valide o sono impostate più volte. Per altre informazioni, immettere "vstoinstaller /?" o vedere [Creare un programma di installazione personalizzato per una ClickOnce Office personalizzata.](/previous-versions/bb772078(v=vs.110))|
+|-100|Una o più opzioni della riga di comando non sono valide o sono impostate più volte. Per altre informazioni, immettere "vstoinstaller /?" o vedere [Creare un programma di installazione personalizzato per una ClickOnce Office soluzione](/previous-versions/bb772078(v=vs.110)).|
 |-101|Una o più opzioni della riga di comando non sono valide. Per altre informazioni, immettere "vstoinstaller /?".|
 |-200|L'URI del manifesto della distribuzione non è valido. Per altre informazioni, immettere "vstoinstaller /?".|
 |-201|Non è stato possibile installare la soluzione perché il manifesto della distribuzione non è valido. Vedere [Manifesti di distribuzione per Office soluzioni](../vsto/deployment-manifests-for-office-solutions.md).|
@@ -373,7 +373,7 @@ ms.locfileid: "121297048"
 |-500|L'operazione è stata annullata perché non è stato possibile installare o disinstallare la soluzione o scaricare il manifesto di distribuzione.|
 
 ## <a name="publish-an-update"></a><a name="Update"></a> Pubblicare un aggiornamento
- Per aggiornare una soluzione, pubblicarla di nuovo usando **Project Designer** o **la Pubblicazione** guidata e quindi copiare la soluzione aggiornata nel percorso di installazione. Quando si copiano i file nel percorso di installazione, assicurarsi di sovrascrivere i file precedenti.
+ Per aggiornare una soluzione, pubblicarla di nuovo usando  **Project Designer** o la Pubblicazione guidata e quindi copiare la soluzione aggiornata nel percorso di installazione. Quando si copiano i file nel percorso di installazione, assicurarsi di sovrascrivere i file precedenti.
 
  La volta successiva che la soluzione verifica la presenza di un aggiornamento, trova e carica automaticamente la nuova versione.
 
@@ -448,7 +448,7 @@ ms.locfileid: "121297048"
 
 4. Copiare il manifesto di distribuzione da tale sottocartella alla cartella di pubblicazione di primo livello.
 
-     Ad esempio, per eseguire il rollback di una soluzione denominata **OutlookAddIn1** dalla versione 1.0.0.1 alla versione 1.0.0.0, copiare il file **OutlookAddIn1.vsto** dalla **cartella OutlookAddIn1_1_0_0_0.** Incollare il file nella cartella di pubblicazione di primo livello, sovrascrivendo il manifesto di distribuzione specifico **della versione** per OutlookAddIn1_1_0_0_1 che era già presente.
+     Ad esempio, per eseguire il rollback di una soluzione denominata **OutlookAddIn1** dalla versione 1.0.0.1 alla versione 1.0.0.0, copiare il file **OutlookAddIn1.vsto** dalla **cartella OutlookAddIn1_1_0_0_0.** Incollare il file nella cartella di pubblicazione di primo livello, sovrascrivendo il manifesto di distribuzione specifico della versione per OutlookAddIn1_1_0_0_1 **che** era già presente.
 
      Nell'illustrazione seguente viene mostrata la struttura della cartella di pubblicazione di questo esempio.
 

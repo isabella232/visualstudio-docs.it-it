@@ -1,7 +1,7 @@
 ---
-title: Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio
+title: Eseguire il debug di un'app che non fa parte di una Visual Studio soluzione
 titleSuffix: ''
-description: Informazioni su come eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio. Potrebbe essere possibile aggiungere il debugger di Visual Studio.
+description: Informazioni su come eseguire il debug di un'app che non fa parte di una Visual Studio soluzione. Potrebbe essere possibile collegare il debugger Visual Studio remoto.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2020
 ms.topic: how-to
@@ -19,57 +19,58 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f201121eb65f7c045ac42783ac71b2d49fafd802
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7d93a34e0599495672437f086790bee1f02ccabe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155003"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120972"
 ---
-# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio (C++, C#, Visual Basic, F #)
+# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Eseguire il debug di un'app che non fa parte di una soluzione Visual Studio (C++, C#, Visual Basic, F#)
 
-Potrebbe essere necessario eseguire il debug di un'app (file con *estensione exe* ) che non fa parte di una soluzione di Visual Studio. Potrebbe trattarsi di un progetto di [cartella aperta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) oppure è possibile che l'app sia stata creata all'esterno di Visual Studio oppure che l'app sia stata creata da un'altra posizione.
+È possibile eseguire il debug di un'app *(.exe* file) che non fa parte di una Visual Studio soluzione. Potrebbe trattarsi di [un progetto di](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) cartella aperta oppure è possibile che l'app sia stata creata da un altro utente all'esterno di Visual Studio oppure che l'app sia stata creata da un'altra posizione.
 
-- Per un progetto di cartella aperta in Visual Studio (che non include alcun file di progetto o di soluzione), vedere [eseguire ed eseguire il debug del codice](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md#run-and-debug-your-code) oppure, per C++, [configurare i parametri di debug con launch.vs.json](/cpp/build/open-folder-projects-cpp#configure-debugging-parameters-with-launchvsjson).
+- Per un progetto di cartella aperta in Visual Studio (senza file di progetto o soluzione), vedere Eseguire ed eseguire il [debug](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md#run-and-debug-your-code) del codice o, per C++, Configurare i parametri di debug con launch.vs.js[in](/cpp/build/open-folder-projects-cpp#configure-debugging-parameters-with-launchvsjson).
 
-- Per un'app che non esiste in Visual Studio, il modo consueto per eseguire il debug è avviare l'app all'esterno di Visual Studio e quindi collegarla usando **Connetti a processo** nel debugger di Visual Studio. Per ulteriori informazioni, vedere [Connetti a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- Per un'app che non esiste in Visual Studio, il modo consueto per eseguire il debug è avviare l'app all'esterno di Visual Studio e quindi connettersi usando Collega a processo nel debugger di Visual Studio.  Per altre informazioni, vedere [Connettersi ai processi in esecuzione.](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
-   Per la connessione a un'app sono necessari passaggi manuali che richiedono alcuni secondi. A causa di questo ritardo, la connessione non consentirà di eseguire il debug di un problema di avvio o di un'app che non attende l'input dell'utente e termina rapidamente.
+   Il collegamento a un'app richiede passaggi manuali che richiedono alcuni secondi. A causa di questo ritardo, il collegamento non consente di eseguire il debug di un problema di avvio o di un'app che non attende l'input dell'utente e termina rapidamente.
 
-   In queste situazioni, è possibile creare un progetto EXE di Visual Studio per l'app oppure importarlo in una soluzione C#, Visual Basic o C++ esistente. I progetti EXE non sono supportati da tutti i linguaggi di programmazione.
+   In queste situazioni è possibile creare un progetto EXE Visual Studio per l'app o importarlo in una soluzione C#, Visual Basic o C++esistente. I progetti EXE non sono supportati da tutti i linguaggi di programmazione.
 
 >[!IMPORTANT]
->Le funzionalità di debug per un'app che non è stata compilata in Visual Studio sono limitate, indipendentemente dal fatto che ci si colleghi all'app o la si aggiunga a una soluzione di Visual Studio.
+>Le funzionalità di debug per un'app non Visual Studio sono limitate, indipendentemente dal fatto che si allegare all'app o aggiungerla a una Visual Studio soluzione.
 >
->Se si dispone del codice sorgente, l'approccio migliore consiste nell'importare il codice in un progetto di Visual Studio. Eseguire quindi una build di debug dell'app.
+>Se si ha il codice sorgente, l'approccio migliore consiste nell'importare il codice in un Visual Studio progetto. Eseguire quindi una build di debug dell'app.
 >
->Se non si dispone del codice sorgente e l'app non dispone di [informazioni di debug](../debugger/how-to-set-debug-and-release-configurations.md) in un formato compatibile, le funzionalità di debug disponibili sono pochissime.
+>Se non si ha il codice sorgente e l'app non dispone di informazioni di [debug](../debugger/how-to-set-debug-and-release-configurations.md) in un formato compatibile, le funzionalità di debug disponibili sono molto poche.
 
 ### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>Per creare un nuovo progetto EXE per un'app esistente
 
-1. In Visual Studio selezionare **file**  >  **Apri**  >  **progetto**.
+1. In Visual Studio selezionare **Apri file**  >  **Project**  >  .
 
-1. Nella finestra di dialogo **Apri progetto** selezionare **tutti i file di progetto**, se non è già selezionato, nell'elenco a discesa accanto a **nome file**.
+1. Nella finestra **di dialogo Apri** Project selezionare Tutti Project **file**, se non è già selezionato, nell'elenco a discesa accanto a **Nome file**.
 
-1. Passare al file con *estensione exe* , selezionarlo e selezionare **Apri**.
+1. Passare al file *.exe,* selezionarlo e selezionare **Apri**.
 
-   Il file viene visualizzato in una nuova soluzione temporanea di Visual Studio.
+   Il file viene visualizzato in una nuova soluzione Visual Studio temporanea.
 
-1. Avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dal menu **debug** .
+1. Avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dal menu **Debug.**
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Per importare un'app in una soluzione Visual Studio esistente
 
-1. Con una soluzione C++, C# o Visual Basic aperta in Visual Studio, selezionare **file**  >  **Aggiungi**  >  **progetto esistente**.
+1. Con una soluzione C++, C# o Visual Basic aperta in Visual Studio selezionare **Aggiungi** file esistente  >    >  **Project**.
 
-1. Nella finestra di dialogo **Apri progetto** selezionare **tutti i file di progetto**, se non è già selezionato, nell'elenco a discesa accanto a **nome file**.
+1. Nella finestra **di dialogo Apri** Project selezionare Tutti Project **file**, se non è già selezionato, nell'elenco a discesa accanto a **Nome file**.
 
-1. Passare al file con *estensione exe* , selezionarlo e selezionare **Apri**.
+1. Passare al file *.exe,* selezionarlo e selezionare **Apri**.
 
    Il file viene visualizzato come nuovo progetto nella soluzione corrente.
 
-1. Con il nuovo file selezionato, avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dal menu **debug** .
+1. Con il nuovo file selezionato, avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dal menu **Debug.**
 
 ### <a name="see-also"></a>Vedi anche
 - [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)

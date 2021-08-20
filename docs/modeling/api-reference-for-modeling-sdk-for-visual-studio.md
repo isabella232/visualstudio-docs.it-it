@@ -10,16 +10,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 5674486ec330dc804fa43836f64dcc439e0fc4a169244db217a41fe4cecd193c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 644b31985d6e187ef757ec1c0cb37827776ac022
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121316916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157592"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Riferimento API per SDK di modellazione per Visual Studio
 
-L Visual Studio Sdk di visualizzazione e modellazione fornisce la piattaforma su cui vengono compilati gli strumenti DSL (Domain Specific Languages).
+L Visual Studio Visualization and Modeling SDK fornisce la piattaforma in cui vengono compilati gli strumenti DSL (Domain Specific Languages).
 
 Questa sezione contiene materiale di riferimento per gli spazi dei nomi con nomi che iniziano con "Microsoft.VisualStudio.Modeling".
 
@@ -43,7 +43,7 @@ Questa sezione contiene materiale di riferimento per gli spazi dei nomi con nomi
 |[Microsoft.VisualStudio.Modeling.Integration.Shell.Picker](/previous-versions/ee886769(v=vs.140))|Finestra di dialogo Selezione che consente agli utenti di passare a modelli ed elementi per creare riferimenti modelbus.|
 |<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Interfaccia tra DSLs e Visual Studio.|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Consente di definire i comandi di menu di scelta rapida.|
-|<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Consente di definire vincoli di convalida.|
+|<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Consente di definire i vincoli di convalida.|
 
 ## <a name="see-also"></a>Vedi anche
 

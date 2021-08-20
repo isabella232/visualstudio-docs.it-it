@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se la funzione è stata contrassegnata come mai restituita con l'attributo noreturn.
+description: Recupera un flag che specifica se la funzione è stata contrassegnata come mai restituita con l'attributo noreturn).
 title: IDiaSymbol::get_noReturn | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 704c1cc0-5b84-4334-a02a-70f43aff39d5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3d140afd80855be7afeeef11481d5df20c057b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2acc5f7e725d31c0b2afe3e47ed09c641199df63
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113435"
 ---
 # <a name="idiasymbolget_noreturn"></a>IDiaSymbol::get_noReturn
-Recupera un flag che specifica se la funzione è stata contrassegnata come mai restituita con l'attributo [noreturn](/cpp/cpp/noreturn) .
+Recupera un flag che specifica se la funzione è stata contrassegnata come non restituita mai con [l'attributo noreturn.](/cpp/cpp/noreturn)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +35,19 @@ HRESULT get_noReturn(
 #### <a name="parameters"></a>Parametri
  pFlag
 
-out Restituisce `TRUE` se la funzione è stata dichiarata come mai restituita con l' `noreturn` attributo; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se la funzione è stata dichiarata come mai restituita con l'attributo ; in caso `noreturn` contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
 |Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|dia2. h|
+|Intestazione:|dia2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedi anche

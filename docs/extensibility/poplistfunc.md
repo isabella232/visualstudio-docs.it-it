@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd7a8fea7725d9152036bbf0b23d351d62596692118c2ef7f904c5ec886e35b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dbed07b0ae1e12e6b449e9fccf30e1a2ec27293b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121336720"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158515"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Questo callback viene fornito a [SccPopulateList](../extensibility/sccpopulatelist-function.md) dall'IDE e viene usato dal plug-in del controllo del codice sorgente per aggiornare un elenco di file o directory (fornito anche alla `SccPopulateList` funzione ).
 
- Quando un utente sceglie il **comando Get** nell'IDE, l'IDE visualizza una casella di riepilogo di tutti i file che l'utente può ottenere. Sfortunatamente, l'IDE non conosce l'elenco esatto di tutti i file che l'utente potrebbe ottenere; solo il plug-in ha questo elenco. Se altri utenti hanno aggiunto file al progetto di controllo del codice sorgente, questi file dovrebbero essere visualizzati nell'elenco, ma l'IDE non li conosce. L'IDE compila un elenco dei file che l'utente può ottenere. Prima di visualizzare questo elenco all'utente, chiama [SccPopulateList](../extensibility/sccpopulatelist-function.md) offrendo al plug-in del controllo del codice sorgente la possibilità di aggiungere ed eliminare file `,` dall'elenco.
+ Quando un utente sceglie il **comando Get nell'IDE,** l'IDE visualizza una casella di riepilogo di tutti i file che l'utente può ottenere. Sfortunatamente, l'IDE non conosce l'elenco esatto di tutti i file che l'utente potrebbe ottenere; solo il plug-in ha questo elenco. Se altri utenti hanno aggiunto file al progetto di controllo del codice sorgente, questi file dovrebbero essere visualizzati nell'elenco, ma l'IDE non li conosce. L'IDE compila un elenco dei file che l'utente può ottenere. Prima di visualizzare questo elenco all'utente, chiama [SccPopulateList,](../extensibility/sccpopulatelist-function.md) offrendo al plug-in del controllo del codice sorgente la possibilità di aggiungere ed eliminare file `,` dall'elenco.
 
 ## <a name="signature"></a>Firma
  Il plug-in del controllo del codice sorgente modifica l'elenco chiamando una funzione implementata dall'IDE con il prototipo seguente:
@@ -40,11 +40,11 @@ typedef BOOL (*POPLISTFUNC) (
 ```
 
 ## <a name="parameters"></a>Parametri
- pvCallerData Parametro `pvCallerData` passato dal chiamante (IDE) a [SccPopulateList](../extensibility/sccpopulatelist-function.md). Il plug-in del controllo del codice sorgente non deve presupporre nulla sul contenuto di questo parametro.
+ pvCallerData Parametro `pvCallerData` passato dal chiamante (IDE) a [SccPopulateList.](../extensibility/sccpopulatelist-function.md) Il plug-in del controllo del codice sorgente non deve presupporre nulla sul contenuto di questo parametro.
 
  fAddRemove Se `TRUE` , è un file che deve essere aggiunto `lpFileName` all'elenco di file. Se `FALSE` , è un file che deve essere eliminato `lpFileName` dall'elenco di file.
 
- nStatus Status di `lpFileName` (una combinazione dei bit; per informazioni dettagliate, vedere `SCC_STATUS` Codice di [stato](../extensibility/file-status-code-enumerator.md) del file).
+ nStatus Status di `lpFileName` (una combinazione dei bit. Per `SCC_STATUS` informazioni dettagliate, vedere [Codice di stato](../extensibility/file-status-code-enumerator.md) del file).
 
  lpFileName Percorso completo della directory del nome file da aggiungere o eliminare dall'elenco.
 
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
 |`FALSE`|Si è verificato un problema sul lato IDE, ad esempio una situazione di memoria insufficiente. Il plug-in deve arrestare l'operazione.|
 
 ## <a name="remarks"></a>Commenti
- Per ogni file che il plug-in del controllo del codice sorgente vuole aggiungere o eliminare dall'elenco di file, chiama questa funzione, passando `lpFileName` . Il `fAddRemove` flag indica un nuovo file da aggiungere all'elenco o un file precedente da eliminare. Il `nStatus` parametro fornisce lo stato del file. Quando il plug-in SCC ha completato l'aggiunta e l'eliminazione di file, viene restituito dalla [chiamata SccPopulateList.](../extensibility/sccpopulatelist-function.md)
+ Per ogni file che il plug-in del controllo del codice sorgente vuole aggiungere o eliminare dall'elenco di file, chiama questa funzione, passando `lpFileName` . Il `fAddRemove` flag indica un nuovo file da aggiungere all'elenco o un file precedente da eliminare. Il `nStatus` parametro indica lo stato del file. Quando il plug-in SCC ha terminato l'aggiunta e l'eliminazione di file, viene restituito dalla [chiamata SccPopulateList.](../extensibility/sccpopulatelist-function.md)
 
 > [!NOTE]
 > Il `SCC_CAP_POPULATELIST` bit di funzionalità è necessario per Visual Studio.

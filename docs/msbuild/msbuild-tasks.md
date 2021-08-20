@@ -1,6 +1,6 @@
 ---
 title: Attività di MSBuild | Microsoft Docs
-description: Informazioni su MSBuild le attività, o unità di codice eseguibile che eseguono operazioni di compilazione atomiche, durante il processo di compilazione.
+description: Informazioni su MSBuild usa attività o unità di codice eseguibile che eseguono operazioni di compilazione atomiche durante il processo di compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c32c693e7bbcede9764a7d186607c98a3951668918dc9e2063ecd208f78ca74
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 949429136da49e562f6c7f24cb78391a0ceb021e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397397"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108616"
 ---
 # <a name="msbuild-tasks"></a>MSBuild (attività)
 

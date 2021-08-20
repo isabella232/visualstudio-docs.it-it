@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 329fc7413aca459b85b1a821584f1f381bb3dcbe26a3d572227f297567d26d33
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 11bbd85dd18631b54228495990a2a38cac03303e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121430356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094269"
 ---
 # <a name="convert-dialog-box"></a>Converti (finestra di dialogo)
 

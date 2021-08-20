@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 761d499c01fdc2fda0a7f8e539377a9ce2bb50edb8e33429cf799265ac59c494
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b89b5407d8f45d6f08a41f97337d754e4405136
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121270510"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069013"
 ---
 # <a name="move-task"></a>Move (attività)
 

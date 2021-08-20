@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 339af0d541ff4493d6066cbd15b98bf4b6725dae158212530e6cf8334c536a81
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b1103345c189e81089b7dce85c7eadbfe26454e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308993"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112308"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger cosa visualizzare usando l'attributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 
@@ -30,7 +30,7 @@ L'attributo `DebuggerDisplay` presenta un solo argomento, costituito da una stri
 
 Se una classe dispone di un metodo `ToString()` sottoposto a override, il debugger usa il metodo sottoposto a override anziché il valore `{<typeName>}`predefinito. Pertanto, se è stato eseguito l'override del metodo `ToString()` , il debugger usa il metodo sottoposto a override anziché il valore`{<typeName>}`predefinito e non è necessario usare `DebuggerDisplay`. Se si usano entrambi, l'attributo `DebuggerDisplay` avrà la precedenza sul metodo `ToString()` sottoposto a override. `DebuggerDisplay`L'attributo ha anche la precedenza sul metodo sottoposto a override in una `ToString()` sottoclasse.
 
-La valutazione di questa chiamata implicita da parte del debugger dipende da un'impostazione dell'utente nella finestra di dialogo `ToString()` **Strumenti/Opzioni/Debug.**
+La valutazione di questa chiamata implicita da parte del debugger dipende da `ToString()` un'impostazione utente nella finestra di dialogo **Strumenti/Opzioni/Debug.**
 
 > [!IMPORTANT]
 > Se la **casella di controllo Mostra** struttura non elaborata di oggetti nelle finestre delle variabili è selezionata nella finestra di dialogo **Strumenti/Opzioni/Debug** , l'attributo `DebuggerDisplay` viene ignorato.
@@ -94,7 +94,7 @@ public sealed class MyClass
 }
 ```
 
-Il suffisso ",nq" indica all'analizzatore di espressioni di rimuovere le virgolette quando visualizza il valore finale (nq = nessuna virgoletta).
+Il suffisso ",nq" indica all'analizzatore di espressioni di rimuovere le virgolette quando viene visualizzato il valore finale (nq = nessuna virgoletta).
 
 ## <a name="example"></a>Esempio
 Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`, insieme a `DebuggerBrowsable` e `DebuggerTypeProxy`. Quando è visualizzato in una finestra delle variabili del debugger, come la finestra **Espressioni di controllo** , produce un'espansione analoga alla seguente:

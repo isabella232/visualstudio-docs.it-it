@@ -1,6 +1,6 @@
 ---
 title: Impossibile connettersi al processo | Microsoft Docs
-description: Informazioni sul significato di "Impossibile connettersi al processo", sui due scenari che lo causano e sulle soluzioni.
+description: Informazioni sul significato di "Impossibile connettersi al processo", i due scenari che lo causano e le soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1509e5a24bf1f61f164c9dae6864072ce415b57e14314dfdb0f16971d9315456
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 26698cc8655c269cdbac69d4c54aac2fc3c3193a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435725"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112290"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossibile connettersi al processo
 Impossibile connettersi al processo. Accesso negato per il componente del debugger che si trova sul server durante la connessione a questo computer.
@@ -35,7 +35,7 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 
  L'utente 1 avvia una sessione Terminal Server (sessione 1) sul computer B e avvia un'applicazione gestita da tale sessione.
 
- L'utente 2, che è amministratore in entrambi i computer, è connesso al computer A. Da qui, tenta di connettersi a un'applicazione in esecuzione nella sessione 1 nel computer B.
+ L'utente 2, amministratore di entrambi i computer, è connesso al computer A. Da qui, tenta di connettersi a un'applicazione in esecuzione nella sessione 1 nel computer B.
 
  **Scenario 2:** un utente è connesso a due computer, A e B, appartenenti allo stesso gruppo di lavoro e usa la stessa password per entrambi i computer. Il debugger è in esecuzione nel computer A e tenta di connettersi a un'applicazione gestita in esecuzione nel computer B. Il computer A ha accesso alla **rete:** Modello di condivisione e sicurezza per gli account locali impostato su **Guest.**
 
@@ -58,9 +58,9 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 6. Nella finestra di dialogo **Accesso di rete: modello di condivisione e sicurezza per gli account locali** impostare la sicurezza locale su **Classico**, quindi scegliere **OK**.
 
     > [!CAUTION]
-    >   L'impostazione del modello di sicurezza su Classico può determinare l'accesso imprevisto a file condivisi e componenti DCOM. In questo caso, un utente remoto può eseguire l'autenticazione con l'account utente locale anziché come Guest. Se un utente remoto corrisponde al nome utente e alla password, potrà accedere a qualsiasi cartella o oggetto DCOM condiviso. Se si usa questo modello di sicurezza, assicurarsi che tutti gli account utente nel computer abbiano password complesse o configurare un'isola di rete isolata per i computer di debug e di debug per impedire accessi non autorizzati.
+    >   L'impostazione del modello di sicurezza su Classico può determinare l'accesso imprevisto a file condivisi e componenti DCOM. In questo caso, un utente remoto può eseguire l'autenticazione con l'account utente locale anziché come Guest. Se un utente remoto corrisponde al nome utente e alla password, potrà accedere a qualsiasi cartella o oggetto DCOM condiviso. Se si usa questo modello di sicurezza, assicurarsi che tutti gli account utente nel computer abbiano password complesse o configurare un'isola di rete isolata per i computer di debug e di debug per impedire l'accesso non autorizzato.
 
 7. Chiudere tutte le finestre.
 
 ## <a name="see-also"></a>Vedi anche
-- [Attività Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
+- [Preparazione e Impostazioni debugger](../debugger/debugger-settings-and-preparation.md)
