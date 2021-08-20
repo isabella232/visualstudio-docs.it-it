@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea4678d0719a7643e2d13e02c4c7801d7cb7a23cb159e973f39074c159821c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 69368bf24161834bcc7a92737291c5da36434a9e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128903"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Rappresenta un file di origine.

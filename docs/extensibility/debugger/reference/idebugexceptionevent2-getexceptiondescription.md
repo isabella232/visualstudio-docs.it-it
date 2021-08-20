@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e46db96798583cfa81b01cb11d08c6bca2097f5c4baa277c819e6cf243527cd9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d11eda708a196a02481d951d24a442185b54575d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433944"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127142"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 Ottiene una descrizione visualizzabile dell'eccezione.

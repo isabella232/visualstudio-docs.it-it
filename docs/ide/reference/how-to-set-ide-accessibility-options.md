@@ -8,17 +8,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7cc99747571feb5b443f10355d867da7c22f44
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4963066cfd2347bff219845c74522915652ef28f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952915"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151522"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedura: Impostare le opzioni di accessibilità IDE
 
@@ -38,7 +38,7 @@ Visual Studio supporta anche i layout di tastiera Dvorak, che consentono di acce
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editor, finestre di dialogo e finestre degli strumenti
 
-Per impostazione predefinita, le finestre di dialogo e le finestre degli strumenti in Visual Studio usano le stesse dimensioni di carattere e gli stessi colori del sistema operativo. Le impostazioni relative ai colori per il frame dell'IDE, le finestre di dialogo, le barre degli strumenti e le finestre degli strumenti si basano su una combinazione di colori: chiara o scura. È possibile modificare il tema colori corrente nella finestra di [dialogo Opzioni: ambiente > generale](../../ide/reference/general-environment-options-dialog-box.md).
+Per impostazione predefinita, le finestre di dialogo e le finestre degli strumenti in Visual Studio usano le stesse dimensioni di carattere e gli stessi colori del sistema operativo. Le impostazioni relative ai colori per il frame dell'IDE, le finestre di dialogo, le barre degli strumenti e le finestre degli strumenti si basano su una combinazione di colori: chiara o scura. È possibile modificare il tema colori corrente nella [finestra di dialogo Opzioni: Ambiente > Generale](../../ide/reference/general-environment-options-dialog-box.md).
 
 È anche possibile visualizzare finestre popup nella visualizzazione Codice dell'editor. Queste finestre possono indicare i membri disponibili per l'oggetto corrente e i parametri necessari per completare una funzione o un'istruzione e possono essere utili se l'utente ha difficoltà di digitazione, ma interferiscono con lo stato attivo nell'editor del codice, creando problemi per alcuni utenti.
 
@@ -46,7 +46,7 @@ Di seguito viene descritto come disattivare le finestre popup:
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-1. Scegliere **editor di testo**  >  **tutti i linguaggi**  >  **generale**.
+1. Scegliere **Editor di testo** Tutti i  >  **linguaggi**  >  **Generale**.
 
 1. Deselezionare le caselle di controllo **Elenco membri automatico** e **Informazioni parametri**.
 
@@ -62,7 +62,7 @@ Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-1. Scegliere   >  **tipi di carattere e colori** dell'ambiente.
+1. Scegliere **Tipi di** carattere e colori  >  **dell'ambiente.**
 
 1. Selezionare un'opzione nel menu a discesa **Mostra impostazioni per**.
 
@@ -102,7 +102,7 @@ Quando si seleziona **[Tutte le finestre degli strumenti di testo]** nell'elenco
 1. Scegliere **OK**.
 
 > [!TIP]
-> Per usare i colori a contrasto elevato per tutte le finestre dell'applicazione nel sistema operativo, fare clic su **Left ALT** + **Left Shift** + **Stamp**. Se Visual Studio è aperto, chiuderlo e riaprirlo per implementare correttamente i colori a contrasto elevato.
+> Per usare i colori a contrasto elevato per tutte le finestre dell'applicazione nel sistema operativo, premere **ALT di** sinistra + **MAIUSC sinistro** + **PRTSCN.** Se Visual Studio è aperto, chiuderlo e riaprirlo per implementare correttamente i colori a contrasto elevato.
 
 ## <a name="toolbars"></a>Barre degli strumenti
 

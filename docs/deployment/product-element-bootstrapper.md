@@ -1,5 +1,5 @@
 ---
-title: '&lt;&gt;Elemento Product (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;Elemento &gt; Product (bootstrapper) | Microsoft Docs'
 description: L'elemento Product è l'elemento XML di primo livello all'interno di un file di prodotto. L'elemento Product è obbligatorio in un file di prodotto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,17 +15,18 @@ ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 6424c2280f3f5eaaedadc6a2f1afebfd1109f1c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba4096c9e0a3f4f949d8d8705c012b4867567b0a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127857"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (programma di avvio automatico)
-L' `Product` elemento è l'elemento XML di primo livello all'interno di un file di prodotto.
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Elemento &gt; Product (programma di avvio automatico)
+`Product`L'elemento è l'elemento XML di primo livello all'interno di un file di prodotto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -140,11 +141,11 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- L' `Product` elemento è obbligatorio in un file di prodotto. Ha l'attributo seguente.
+ `Product`L'elemento è obbligatorio in un file di prodotto. Ha l'attributo seguente.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`ProductCode`|Identificatore univoco per il prodotto.|
+|`ProductCode`|Identificatore univoco del prodotto.|
 
 ## <a name="example"></a>Esempio
  Nell'esempio di codice seguente viene illustrato un file di prodotto completo per l'installazione del .NET Framework.
@@ -252,4 +253,4 @@ ProductCode
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)
+- [Informazioni di riferimento sullo schema di prodotti e pacchetti](../deployment/product-and-package-schema-reference.md)

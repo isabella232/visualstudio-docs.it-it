@@ -1,6 +1,6 @@
 ---
 title: Comando Sostituisci nei file
-description: Informazioni sul comando Sostituisci nei file e su come sostituisce il testo nei file usando alcune opzioni disponibili nella scheda Sostituisci nei file della finestra Trova e Sostituisci.
+description: Informazioni sul comando Sostituisci nei file e su come sostituisce il testo nei file usando alcune delle opzioni disponibili nella scheda Sostituisci nei file della finestra Trova e sostituisci.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 32980161281cf36c54ad15d536870a96694a461a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4c71b73ccfd26a0b2e890bbd5014bcbcf932b7b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958011"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151093"
 ---
 # <a name="replace-in-files-command"></a>Comando Sostituisci nei file
 Sostituisce il testo nei file usando un subset delle opzioni disponibili nella scheda **Sostituisci nei file** della finestra **Trova e sostituisci**.
@@ -112,6 +113,6 @@ In questo esempio `btnCancel` viene cercato e sostituito con `btnReset` in tutti
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
 - [Sostituisci nei file](../../ide/replace-in-files.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/comando](../../ide/find-command-box.md)
-- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

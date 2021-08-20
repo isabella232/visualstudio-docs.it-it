@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 09421e68e727378be4a9bce20652b9aab9e5706544f84c103967192b59a9061b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f599463d31d79b6c4080fad032a86ba579c44e4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420747"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128735"
 ---
 # <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 Recupera un flag che specifica se la funzione ha una convenzione di chiamata personalizzata.

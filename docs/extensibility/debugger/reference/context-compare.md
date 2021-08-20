@@ -1,5 +1,5 @@
 ---
-description: Specifica i criteri per il confronto di due contesti di memoria.
+description: Specifica i criteri per confrontare due contesti di memoria.
 title: CONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd74516c3f687f05b2d5fb33dc2b94455114bbc6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 49c8975a93d54d9138cbdcf510e7ee18d5bc55d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094445"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145614"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
-Specifica i criteri per il confronto di due contesti di memoria.
+Specifica i criteri per confrontare due contesti di memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,19 +60,19 @@ public enum enum_CONTEXT_COMPARE {
 
 ## <a name="fields"></a>Campi
 `CONTEXT_EQUAL`\
-Trovare il primo contesto di memoria nell'elenco uguale al contesto della memoria di destinazione.
+Trovare nell'elenco il primo contesto di memoria uguale al contesto di memoria di destinazione.
 
 `CONTEXT_LESS_THAN`\
-Trovare il primo contesto di memoria nell'elenco minore del contesto di memoria di destinazione.
+Trovare nell'elenco il primo contesto di memoria minore del contesto di memoria di destinazione.
 
 `CONTEXT_GREATER_THAN`\
-Trovare il primo contesto di memoria nell'elenco maggiore del contesto di memoria di destinazione.
+Trovare nell'elenco il primo contesto di memoria maggiore del contesto di memoria di destinazione.
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-Trovare il primo contesto di memoria nell'elenco minore o uguale al contesto della memoria di destinazione.
+Trovare nell'elenco il primo contesto di memoria minore o uguale al contesto di memoria di destinazione.
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
-Trovare il primo contesto di memoria nell'elenco maggiore o uguale al contesto della memoria di destinazione.
+Trovare il primo contesto di memoria nell'elenco maggiore o uguale al contesto di memoria di destinazione.
 
 `CONTEXT_SAME_SCOPE`\
 Trovare il primo contesto di memoria nell'elenco che si trova nello stesso ambito del contesto di memoria di destinazione.
@@ -86,14 +87,14 @@ Trovare il primo contesto di memoria nell'elenco che si trova nello stesso modul
 Trovare il primo contesto di memoria nell'elenco che si trova nello stesso processo del contesto di memoria di destinazione.
 
 ## <a name="remarks"></a>Commenti
-Passato come argomento al metodo [compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) .
+Passato come argomento al [metodo Compare.](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
 
-Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificati. A un contesto di memoria viene assegnato un elenco di contesti di memoria da confrontare con il `IDebugMemoryContext2::Compare` metodo. Viene quindi restituito il primo contesto di memoria nell'elenco per il quale viene restituito l'operatore di confronto `true` .
+Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificati. A un contesto di memoria viene fornito un elenco di contesti di memoria con cui confrontarsi tramite il `IDebugMemoryContext2::Compare` metodo . Viene quindi restituito il primo contesto di memoria nell'elenco per il quale viene restituito `true` l'operatore di confronto.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

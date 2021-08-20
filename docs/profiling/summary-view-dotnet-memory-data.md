@@ -13,18 +13,18 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41607d18aeae9d0b1abbf9999b839c12100f099ed13b292c56c045fc28a4c5fa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b5c63a0133e8883d4626e78805b86299cfbee3f2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141220"
 ---
 # <a name="summary-view---net-memory-data"></a>Visualizzazione Riepilogo: dati di memoria .NET
-La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET che hanno allocato la quantità di memoria maggiore e sui tipi che sono stati creati più frequentemente in un'esecuzione della profilatura. Per altre informazioni, inclusa una descrizione dei collegamenti di notifica e degli elenchi di report, vedere [Visualizzazione Riepilogo.](../profiling/summary-view.md)
+La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET che hanno allocato la quantità di memoria maggiore e sui tipi che sono stati creati più frequentemente in un'esecuzione della profilatura. Per altre informazioni, inclusa una descrizione degli elenchi Di collegamenti di notifica e Report, vedere [Visualizzazione Riepilogo](../profiling/summary-view.md).
 
 ## <a name="timeline-graph"></a>Grafico della sequenza temporale
- Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra l'utilizzo del processore (CPU) per l'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo.](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
+ Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra l'utilizzo del processore (CPU) per l'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [Procedura: Filtrare le visualizzazioni del report dalla sequenza temporale di riepilogo.](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
 
 ## <a name="functions-allocating-most-memory"></a>Funzioni che allocano molta memoria
  Elenca le funzioni che hanno allocato il maggior numero di byte di memoria nell'esecuzione della profilatura.
@@ -51,5 +51,5 @@ La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET
 |**% istanze**|Percentuale del numero totale di oggetti .NET creati nell'esecuzione della profilatura corrispondenti a istanze di questo tipo.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Visualizzazione Riepilogo: dati di campionamento](../profiling/summary-view-sampling-data.md)
-- [Visualizzazione Riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)
+- [Visualizzazione riepilogo: dati di campionamento](../profiling/summary-view-sampling-data.md)
+- [Visualizzazione riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)

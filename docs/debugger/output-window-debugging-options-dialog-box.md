@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb83f7cc6115773ad9450bbf1df6fe293f872907308d024a761976b01c2d25b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1bc89e41e6a54d5d03c8583403a0318fa6d05c76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121391226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112490"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Finestra di output, Debug, finestra di dialogo Opzioni
 È possibile specificare quali tipi di informazioni di debug vengono visualizzati nella finestra **Output**. Per visualizzare queste opzioni aprire il menu **Strumenti**, fare clic su **Opzioni**, espandere il nodo **Debug** e fare clic su **Finestra di output**.

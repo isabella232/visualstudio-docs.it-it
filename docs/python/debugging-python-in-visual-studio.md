@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6663998a4b986c477167b852c8741fa6e8b549a90f2f8b021e32fdeafbde316c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3ef8fc7ef3de032d4c4fba25e0e3b64a47b76ac1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121426046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156630"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -127,7 +127,7 @@ Per configurare un'eccezione che non compare nell'elenco, fare clic sul pulsante
 
 ## <a name="project-debugging-options"></a>Opzioni di debug del progetto
 
-Per impostazione predefinita, il debugger avvia il programma con l'utilità di avvio standard di Python, senza argomenti della riga di comando e altri percorsi o condizioni speciali. Le opzioni di avvio vengono modificate tramite le proprietà di debug del progetto a cui si accede facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni**, scegliendo Proprietà **e** selezionando la scheda **Debug** .
+Per impostazione predefinita, il debugger avvia il programma con l'utilità di avvio standard di Python, senza argomenti della riga di comando e altri percorsi o condizioni speciali. Le opzioni di avvio vengono modificate tramite le proprietà di debug del progetto a cui si accede facendo clic con il pulsante destro del mouse sul progetto **in** Esplora soluzioni , scegliendo Proprietà **e** selezionando la **scheda Debug** .
 
 ![Proprietà di debug del progetto nel debugger di Visual Studio](media/debugging-project-properties.png)
 
@@ -144,11 +144,11 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 | Opzione | Descrizione |
 | --- | --- |
-| **Percorsi di ricerca** | Questi valori corrispondono a quanto visualizzato nel nodo Percorsi di ricerca **del** progetto in **Esplora soluzioni**. È possibile modificare qui questo valore, ma è più facile usare **Esplora soluzioni** che consente di sfogliare le cartelle e converte automaticamente i percorsi nel formato relativo. |
+| **Percorsi di ricerca** | Questi valori corrispondono a quanto visualizzato  nel nodo Percorsi di ricerca del progetto in **Esplora soluzioni**. È possibile modificare qui questo valore, ma è più facile usare **Esplora soluzioni** che consente di sfogliare le cartelle e converte automaticamente i percorsi nel formato relativo. |
 | **Argomenti script** | Questi argomenti vengono aggiunti al comando usato per avviare lo script e vengono visualizzati dopo il nome del file di script. Il primo elemento definito qui risulta disponibile per lo script come `sys.argv[1]`, il secondo come `sys.argv[2]`e così via. |
 | **Argomenti dell'interprete** | Questi argomenti vengono aggiunti alla riga di comando dell'utilità di avvio prima del nome dello script. Qui gli argomenti comuni sono `-W ...` per controllare gli avvisi, `-O` per ottimizzare leggermente il programma e `-u` per usare I/O non memorizzato nel buffer. È probabile che gli utenti di IronPython usino questo campo per passare le opzioni di `-X`, ad esempio `-X:Frames` o `-X:MTA`. |
 | **Percorso dell'interprete** | Esegue l'override del percorso associato all'ambiente corrente. Il valore può essere utile per avviare lo script con un interprete non standard. |
-| **Variabili di ambiente** | In questa casella di testo a più righe aggiungere voci nel formato \<NAME> = \<VALUE> . Poiché questa impostazione viene applicata per ultima, oltre a tutte le variabili di ambiente globali esistenti e dopo che è stata impostata in base all'impostazione Percorsi di ricerca, può essere usata per eseguire manualmente l'override di qualsiasi altra `PYTHONPATH` variabile.  |
+| **Variabili di ambiente** | In questa casella di testo a più righe aggiungere voci nel formato \<NAME> = \<VALUE> . Poiché questa impostazione viene applicata per ultima, oltre a qualsiasi variabile di ambiente globale esistente e dopo viene impostata in base all'impostazione Percorsi di ricerca, può essere usata per eseguire manualmente l'override di qualsiasi altra `PYTHONPATH` variabile.  |
 
 ## <a name="immediate-and-interactive-windows"></a>Finestra interattiva e finestra di controllo immediato
 
@@ -156,7 +156,7 @@ Durante una sessione di debug è possibile usare due finestre interattive: la fi
 
 La finestra **Controllo immediato** (**Debug** > **Finestre** > **Controllo immediato**) viene usata per una rapida valutazione delle espressioni di Python e per il controllo o l'assegnazione di variabili all'interno del programma in esecuzione. Per informazioni dettagliate, vedere l'articolo generale [Controllo immediato (finestra)](../ide/reference/immediate-window.md).
 
-La finestra **Debug interattivo Python** (**Debug** > **Finestre** > **Debug interattivo Python**) è più completa perché consente di accedere a tutte le funzionalità dell'esperienza [REPL interattivo](python-interactive-repl-in-visual-studio.md) durante il debug, inclusa la scrittura e l'esecuzione di codice. Si connette automaticamente a qualsiasi processo avviato nel debugger usando l'utilità di avvio Python standard (inclusi i processi collegati tramite **Debug**  >  **Connetti a processo).** Non è però disponibile quando si usa il debug C/C++ in modalità mista.
+La finestra **Debug interattivo Python** (**Debug** > **Finestre** > **Debug interattivo Python**) è più completa perché consente di accedere a tutte le funzionalità dell'esperienza [REPL interattivo](python-interactive-repl-in-visual-studio.md) durante il debug, inclusa la scrittura e l'esecuzione di codice. Si connette automaticamente a qualsiasi processo avviato nel debugger usando l'utilità di avvio Python Standard (inclusi i processi collegati tramite **Debug**  >  **Connetti a processo**). Non è però disponibile quando si usa il debug C/C++ in modalità mista.
 
 ![Finestra Debug interattivo Python](media/debugging-interactive.png)
 
@@ -187,11 +187,11 @@ Si noti che le finestre standard del debugger, ad esempio **Processi**, **Thread
 
 ## <a name="use-the-legacy-debugger"></a>Usare il debugger legacy
 
-La versione 15.8 e successive di Visual Studio 2017 usano un debugger basato sulla versione ptvsd 4.1 +. Visual Studio 2019 versione 16.5 e successive usano un debugger basato su debugpy. Queste versioni del debugger sono compatibili con Python 2.7 e Python 3.5+. Se si usa Python 2.6, dalla versione 3.1 a 3.4 o IronPython, Visual Studio mostra l'errore **Il debugger non supporta questo ambiente Python**:
+La versione 15.8 e successive di Visual Studio 2017 usano un debugger basato sulla versione ptvsd 4.1 +. Visual Studio 2019 versione 16.5 e successive usa un debugger basato su debugpy. Queste versioni del debugger sono compatibili con Python 2.7 e Python 3.5+. Se si usa Python 2.6, dalla versione 3.1 a 3.4 o IronPython, Visual Studio mostra l'errore **Il debugger non supporta questo ambiente Python**:
 
 ![Errore Il debugger non supporta questo ambiente Python quando si usa il debugger](media/debugging-experimental-incompatible-error.png)
 
-In questi casi è necessario usare il debugger precedente, ovvero quello predefinito in Visual Studio 2017 versioni 15.7 e precedenti. Selezionare il **comando di** menu  >  **Strumenti** Opzioni, passare a **Debug Python** e selezionare  >   **l'opzione Usa debugger legacy.**
+In questi casi è necessario usare il debugger precedente, ovvero quello predefinito in Visual Studio 2017 versioni 15.7 e precedenti. Selezionare il **comando di** menu  >  **Opzioni** strumenti, passare a **Debug Python** e  >  selezionare **l'opzione Usa debugger** legacy.
 
 Se nell'ambiente corrente è stata installata una versione precedente di ptvsd, ad esempio una versione 4.0.x o una versione 3.x precedente necessaria per il debug remoto, Visual Studio potrebbe mostrare un errore o un avviso.
 
@@ -223,7 +223,7 @@ Per gestire l'installazione di ptvsd:
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 ### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Per Visual Studio 2019 (versione 16.4 e precedenti) aggiornare ptvsd
-Se si verificano problemi con il debugger, aggiornare prima di tutto la versione del debugger come indicato di seguito:
+In caso di problemi con il debugger, aggiornare prima la versione del debugger come indicato di seguito:
 
 1. Passare alla scheda **Pacchetti** nella finestra **Ambienti Python**.
 
@@ -234,7 +234,7 @@ Se si verificano problemi con il debugger, aggiornare prima di tutto la versione
    Se i problemi persistono, segnalare il problema nel [repository GitHub di PTVS](https://github.com/Microsoft/ptvs/issues).
 
    > [!NOTE]
-   > Per Visual Studio 2019 versione 16.5 e successive, debugpy fa parte del carico di lavoro python di Visual Studio e viene aggiornato insieme Visual Studio.
+   > Per Visual Studio 2019 versione 16.5 e successive, debugpy fa parte del carico di lavoro python di Visual Studio e viene aggiornato insieme a Visual Studio.
 
 ### <a name="enable-debugger-logging"></a>Abilitare la registrazione del debugger
 
@@ -242,7 +242,7 @@ Durante l'analisi di un problema del debugger, Microsoft potrebbe chiedere di ab
 
 La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 
-1. Aprire una finestra di comando in Visual Studio il **comando di** menu  >  **Visualizza Windows**  >  **di** comando.
+1. Aprire una finestra di comando in Visual Studio **usando** il comando di menu  >  **Visualizza Windows**  >  **finestra di comando.**
 
 1. Immettere il comando seguente:
 
@@ -254,7 +254,7 @@ La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 
     ![Output di registrazione del debugger nella finestra Output](media/debugger-logging-output.png)
 
-1. Se Visual Studio risponde o non si è in grado di accedere alla finestra **Output,** riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
+1. Se Visual Studio risponde o in caso contrario non è possibile accedere alla finestra **di output,** riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
 
     ```ps
     DebugAdapterHost.Logging /On

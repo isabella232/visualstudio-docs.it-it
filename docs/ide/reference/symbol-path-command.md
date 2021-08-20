@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e13204ae754375d5844c04cf783e6a7fa4ebb1ae7ce739254f85686e6e08f9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 96258c0318098f7a7bb5abb5481192cc7808c7ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121289075"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151002"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.

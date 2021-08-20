@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ae0785d7c146c1fe9ca1765165540ae6243f50c5c760c77e0598b32eddd0425
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b0de358f2f207da7586c09be094ec14f6dadfbf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321532"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095790"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 Restituisce il numero di byte contenuti in questo oggetto .

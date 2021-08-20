@@ -1,20 +1,21 @@
 ---
 title: Generare un campo, una proprietà, una variabile locale
-description: Informazioni su come usare il menu azioni rapide e refactoring per generare il codice per un campo, una proprietà o un'operazione locale precedentemente non dichiarata.
+description: Informazioni su come usare il menu Azioni rapide e refactoring per generare il codice per un campo, una proprietà o un oggetto locale non dichiarato in precedenza.
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57e6490b9375e3f59e0d214ae3f5300f2276964d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e9ffbf7e58478bcbee7ce7b5ac86aa5dfb272c05
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143924"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generare un campo, una proprietà o una variabile locale in Visual Studio
 
@@ -45,7 +46,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
@@ -70,5 +71,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Generazione del codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

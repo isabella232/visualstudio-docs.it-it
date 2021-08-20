@@ -14,17 +14,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d7d93f4cd805db5bd161517c0af9a862457edb47aff912e6eab0afa7de0dbf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 429c408fb54d77e9eb8705302f24880e27e84080
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448351"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159360"
 ---
 # <a name="extend-projects"></a>Estendere i progetti
-I progetti e le soluzioni sono il modo in cui Visual Studio i file di codice e di risorse in unità di compilazione e distribuzione. Altre informazioni sui progetti sono disponibili in [Progetti (Visual Studio SDK).](../extensibility/extending-projects.md)
+I progetti e le soluzioni sono il modo in cui Visual Studio il codice e i file di risorse in unità di compilazione e distribuzione. Altre informazioni sui progetti sono disponibili in [Progetti (Visual Studio SDK).](../extensibility/extending-projects.md)
 
- È possibile creare tipi di progetto personalizzati con Visual Studio SDK e Managed Package Framework for Projects, che è possibile scaricare in [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Per comprendere come vengono implementati i progetti personalizzati, vedere New [project generation: Under the hood,](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) part one e [New project generation: Under the hood, part two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
+ È possibile creare tipi di progetto personalizzati con Visual Studio SDK e Managed Package Framework for Projects, scaricabili in [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Per comprendere come vengono implementati i progetti personalizzati, vedere New [project generation: Under the hood,](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) part one e [New project generation: Under the hood, part two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
 
  Negli argomenti di questa sezione viene descritto come creare progetti personalizzati e come gestire diversi tipi di Visual Studio soluzione.
 

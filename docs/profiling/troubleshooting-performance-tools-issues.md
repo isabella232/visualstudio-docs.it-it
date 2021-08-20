@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2339ee7638fa6e3a4b1776abd61196cbe814cf075228b5d0eee651d89e70cc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 93be734d0f7abc6c1e839ba5940575455c6e6847
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121230976"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141064"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Risolvere i problemi relativi agli strumenti per le prestazioni
 Quando si usano gli strumenti di profilatura, potrebbe verificarsi uno dei seguenti problemi:

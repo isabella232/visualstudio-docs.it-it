@@ -1,6 +1,6 @@
 ---
 description: Questo metodo ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.
-title: IDebugBinder::Bind | Microsoft Docs
+title: Interfaccia IDebugBinder::Bind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6efe8d946721c11a664c89aefdb21fd4c8b513dd6d99c6f8680970a80e692ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de3cbb35245fad317014136177a4a410edfb25b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104391"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 Questo metodo ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.

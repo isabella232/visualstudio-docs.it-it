@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 41cf1d018e38723551010c3762ab2bb281e0d36043c74dfca46324bda5ecdd48
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aceae51fac51e3bc6ff2838024d958f536b0f4f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312212"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154679"
 ---
 # <a name="idiaenumdebugstreamdataget__newenum"></a>IDiaEnumDebugStreamData::get__NewEnum
 Recupera la versione <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> di questo enumeratore.
@@ -35,7 +35,7 @@ HRESULT get__NewEnum (
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-[out] Restituisce `IUnknown` l'interfaccia che rappresenta la <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versione di questo enumeratore.
+[out] Restituisce `IUnknown` l'interfaccia che rappresenta <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> la versione di questo enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

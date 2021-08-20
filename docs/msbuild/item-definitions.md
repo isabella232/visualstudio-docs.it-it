@@ -1,6 +1,6 @@
 ---
 title: Definizioni degli elementi | Microsoft Docs
-description: Informazioni su come MSBuild USA ItemGroup e ItemDefinitionGroup per dichiarare i metadati per gli elementi nei file di progetto.
+description: Informazioni su MSBuild usa ItemGroup e ItemDefinitionGroup per dichiarare i metadati per gli elementi nei file di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,18 +10,19 @@ ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 754080defd50bc10af501fdbaf509bafe549dcbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f56772bec8d0e4e62a58976b5c084f99c1e6f6e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913969"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136898"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 
-MSBuild 2,0 Abilita la dichiarazione statica degli elementi nei file di progetto usando l'elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md) . I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da MSBuild 3,5, un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) viene sottoposto a questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.
+MSBuild 2.0 abilita la dichiarazione statica degli elementi nei file di progetto usando [l'elemento ItemGroup.](../msbuild/itemgroup-element-msbuild.md) I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da MSBuild 3.5, un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) supera questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.
 
 L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemento [Project](../msbuild/project-element-msbuild.md) nel file di progetto. Le definizioni degli elementi offrono le funzionalità seguenti:
 
@@ -29,7 +30,7 @@ L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemen
 
 - I tipi di elemento possono presentare più definizioni. Quando al tipo vengono aggiunte altre specifiche di metadati, l'ultima ha la precedenza. \(I metadati seguono lo stesso ordine di importazione delle proprietà.\)
 
-- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio: `MT;STD_CALL;DEBUG;UNICODE`.
+- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio, `MT;STD_CALL;DEBUG;UNICODE`.
 
 - I metadati possono essere rimossi.
 
@@ -42,7 +43,7 @@ I metadati degli elementi definiti in un ItemDefinitionGroup sono solo una dichi
 > [!NOTE]
 > In molti degli esempi riportati in questo argomento viene illustrato un elemento ItemDefinitionGroup, ma la definizione di ItemGroup corrispondente viene omessa per chiarezza.
 
-I metadati definiti in modo esplicito in un ItemGroup hanno la precedenza su quelli presenti in ItemDefinitionGroup. I metadati presenti in ItemDefinitionGroup vengono applicati solo per i metadati non definiti in un ItemGroup. Ad esempio:
+I metadati definiti in modo esplicito in un ItemGroup hanno la precedenza su quelli presenti in ItemDefinitionGroup. I metadati presenti in ItemDefinitionGroup vengono applicati solo per i metadati non definiti in un ItemGroup. Esempio:
 
 ```xml
 <ItemDefinitionGroup>
@@ -76,7 +77,7 @@ I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da 
 
 - Variabile di ambiente
 
-- Proprietà globale (dalla riga di comando *MSBuild.exe* )
+- Proprietà globale (dalla riga *MSBuild.exe* comando)
 
 - Proprietà riservata
 
@@ -95,7 +96,7 @@ Quando si aggiungono definizioni o si usano più ItemDefinitionGroup, tenere pre
 
 - L'ultima specifica ha la precedenza.
 
-In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i metadati alla definizione precedente. Ad esempio:
+In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i metadati alla definizione precedente. Esempio:
 
 ```xml
 <ItemDefinitionGroup>
@@ -113,7 +114,7 @@ In presenza di più ItemDefinitionGroup, ogni specifica successiva aggiunge i me
 
 In questo esempio il metadato "o" viene aggiunto a "m" e "n".
 
-È anche possibile aggiungere i valori dei metadati definiti in precedenza. Ad esempio:
+È anche possibile aggiungere i valori dei metadati definiti in precedenza. Esempio:
 
 ```xml
 <ItemDefinitionGroup>
@@ -150,7 +151,7 @@ Quando si esegue l'override dei metadati definiti in precedenza, l'ultima specif
 
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Usare condizioni in un ItemDefinitionGroup
 
-È possibile usare condizioni in un ItemDefinitionGroup per controllare l'inclusione dei metadati. Ad esempio:
+È possibile usare condizioni in un ItemDefinitionGroup per controllare l'inclusione dei metadati. Esempio:
 
 ```xml
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
@@ -165,7 +166,7 @@ In questo caso, il metadato predefinito "m1" dell'elemento "i" viene incluso sol
 > [!NOTE]
 > Nelle condizioni sono supportati solo i riferimenti ai metadati locali.
 
-I riferimenti ai metadati definiti in un ItemDefinitionGroup precedente sono locali per l'elemento, non per il gruppo di definizione. In altre parole, l'ambito dei riferimenti è specifico dell'elemento. Ad esempio:
+I riferimenti ai metadati definiti in un ItemDefinitionGroup precedente sono locali per l'elemento, non per il gruppo di definizione. In altre parole, l'ambito dei riferimenti è specifico dell'elemento. Esempio:
 
 ```xml
 <ItemDefinitionGroup>
@@ -197,7 +198,7 @@ Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condiz
 
 ## <a name="override-and-delete-metadata"></a>Eseguire l'override dei metadati ed eliminarli
 
-I metadati definiti in un elemento ItemDefinitionGroup possono essere sottoposti a override in un elemento ItemDefinitionGroup successivo impostando il valore dei metadati su un altro valore. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Ad esempio:
+I metadati definiti in un elemento ItemDefinitionGroup possono essere sottoposti a override in un elemento ItemDefinitionGroup successivo impostando il valore dei metadati su un altro valore. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Esempio:
 
 ```xml
 <ItemDefinitionGroup>
@@ -249,7 +250,7 @@ Quanto segue, tuttavia, non è valido:
 </ItemDefinitionGroup>
 ```
 
-A partire da MSBuild 3,5, ItemGroup può anche essere autoreferenziale. Ad esempio:
+A partire MSBuild 3.5, ItemGroups può anche essere autoreferenziale. Ad esempio:
 
 ```xml
 <ItemGroup>

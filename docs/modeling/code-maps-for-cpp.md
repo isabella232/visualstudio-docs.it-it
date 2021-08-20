@@ -7,14 +7,15 @@ author: mgoertz-msft
 ms.author: mgoertz
 ms.custom: SEO-VS-2020
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ac1f7364e23ef9ed2b44ecd1c536a7ab2b3d40
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 572f0daff0d4ca114f3c718f0334eeced32e42fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389670"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157566"
 ---
 # <a name="code-maps-for-c-projects"></a>Mappe codice per progetti C++
 
@@ -22,7 +23,7 @@ Per creare mappe più complete per i progetti C++, impostare l'opzione del compi
 
 Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento del database di IntelliSense potrebbe richiedere del tempo. Durante questo periodo, potrebbe non essere possibile creare mappe codice per i file di intestazione ( con estensione *h* o ) fino al completamento dell'aggiornamento `#include` del database IntelliSense. È possibile monitorare lo stato di avanzamento dell'aggiornamento nella barra di stato di Visual Studio.
 
-- Per visualizzare le dipendenze tra tutti i file di origine e i file di intestazione nella soluzione, selezionare **Architettura**  >  **Genera grafico dei file di inclusione**.
+- Per visualizzare le dipendenze tra tutti i file di origine e i file di intestazione nella soluzione, selezionare **Architettura** Genera Graph  >  **file di inclusione**.
 
    ![Grafico delle dipendenze per il codice nativo](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -44,7 +45,7 @@ Questi problemi possono verificarsi quando si creano mappe codice per il codice 
 |-|-|-|
 |Non è stato possibile generare la mappa codice.|Nessun progetto nella soluzione è stato compilato correttamente.|Correggere gli errori di compilazione che si sono verificati, quindi rigenerare la mappa.|
 |Visual Studio non risponde quando si tenta di generare una mappa codice **dal** menu Architettura.|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|
-|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella Visual Studio **opzioni** avanzate.|Attivare le impostazioni per abilitarle.<br /><br /> Vedere [Opzioni, Editor di testo, C/C++, Avanzate.](../ide/reference/options-text-editor-c-cpp-advanced.md)|
+|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella Visual Studio **finestra di dialogo** Opzioni.|Attivare le impostazioni per abilitarle.<br /><br /> Vedere [Opzioni, Editor di testo, C/C++, Avanzate.](../ide/reference/options-text-editor-c-cpp-advanced.md)|
 |Il messaggio **Metodi sconosciuti** viene visualizzato su un nodo di metodo.<br /><br /> Questo problema si verifica perché non è possibile risolvere il nome del metodo.|Il file binario potrebbe non disporre di una tabella di rilocazione di base.|Attivare l'opzione **/FIXED:NO** nel linker.|
 ||Il file di database del programma (con estensione pdb) potrebbe non essere compilato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Attivare l'opzione **/DEBUG** nel linker.|
 ||Non è possibile aprire o trovare il file pdb nei percorsi previsti.|Verificare che il file pdb esista nei percorsi previsti.|

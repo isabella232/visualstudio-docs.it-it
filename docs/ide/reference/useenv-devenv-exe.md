@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a8c4cd8b54ab7127fb9503cc461281bd176d15aff4320424eb5641eb4929d6ff
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a8a2b8e0ed2c02a4d912eacd93c82236332e72c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400075"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123749"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 

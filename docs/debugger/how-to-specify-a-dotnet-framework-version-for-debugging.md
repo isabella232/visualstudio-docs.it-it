@@ -1,6 +1,6 @@
 ---
 title: Specificare una versione .NET Framework per il debug | Microsoft Docs
-description: Specificare una versione precedente .NET Framework per il debug. Il debugger Visual Studio supporta il debug di versioni precedenti .NET Framework e della versione corrente.
+description: Specificare una versione .NET Framework precedente per il debug. Il debugger Visual Studio supporta il debug di versioni precedenti .NET Framework e della versione corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,18 +16,19 @@ ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83b30067530b9a48769879f3a222fee2afa725c0
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: b434116a835f5e86e1e579a2e6fb4d4c9be1452e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128143"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Specificare una versione .NET Framework precedente per il debug (C#, Visual Basic, F#)
 
-Il debugger Visual Studio supporta il debug di versioni precedenti di Microsoft .NET Framework e della versione corrente. Se si avvia un'applicazione da Visual Studio, il debugger può sempre identificare la versione corretta del .NET Framework per l'applicazione di cui si esegue il debug. Tuttavia, se l'applicazione è già in esecuzione e si avvia il debug usando Collega a **,** il debugger potrebbe non essere sempre in grado di identificare una versione precedente del .NET Framework. In questo caso, verrà visualizzato un messaggio di errore simile al seguente:
+Il debugger Visual Studio supporta il debug di versioni precedenti di Microsoft .NET Framework nonché la versione corrente. Se si avvia un'applicazione da Visual Studio, il debugger può sempre identificare la versione corretta del .NET Framework per l'applicazione di cui si esegue il debug. Tuttavia, se l'applicazione è già in esecuzione e si avvia il debug usando Collega a **,** il debugger potrebbe non essere sempre in grado di identificare una versione precedente del .NET Framework. In questo caso, verrà visualizzato un messaggio di errore simile al seguente:
 
 ``` cmd
 The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
@@ -66,4 +67,4 @@ Nei rari casi in cui viene visualizzato questo errore, è possibile impostare un
      Se all'avvio del debug viene di nuovo visualizzato un messaggio di errore, verificare di avere immesso il numero di versione corretto nel Registro di sistema. Verificare anche che sia in uso una versione del .NET Framework supportata da Visual Studio. Il debugger è compatibile con la versione di .NET Framework corrente e le versioni precedenti, ma potrebbe non essere compatibile con le versioni future.
 
 ## <a name="see-also"></a>Vedi anche
-- [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Attività Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)

@@ -1,6 +1,6 @@
 ---
 description: Restituisce una copia dell'enumerazione DEBUG_PROPERTY_INFO corrente come oggetto separato.
-title: 'IEnumDebugPropertyInfo2:: Clone | Microsoft Docs'
+title: IEnumDebugPropertyInfo2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79f5ffd45799b8c2c2ed1642004c26889b26c172
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 808f46dd245883c0b77ac20b72f4902261356400
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082920"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144834"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
 Restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -48,7 +49,7 @@ int Clone(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
+ La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata a questo metodo. Tuttavia, gli stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

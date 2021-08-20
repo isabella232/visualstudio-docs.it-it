@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 879ea5283ad429678a91b159691d3fed5d353e732dddd7119e20c214637cff1b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 28e38dd649f8fb3b1fa8ccf4c09f4a99d19a678b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358675"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124373"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per Gestione contenuto della Guida
 

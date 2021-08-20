@@ -13,18 +13,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cdb6869435acf3a9e059b66492479b12135ad16671a38d9c0c4d7dcf76ff63b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b43f222d9ccd3a57d4a3962f2b4f540074b8ec4e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388123"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158138"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Supporto di EditorConfig per il servizio di linguaggio
 
 [I file EditorConfig](https://editorconfig.org/) consentono di descrivere le opzioni comuni dell'editor di testo, ad esempio le dimensioni del rientro, in base al progetto. Per altre informazioni sul Visual Studio per i file EditorConfig, vedere Creare impostazioni dell'editor portabile [usando EditorConfig](../ide/create-portable-custom-editor-options.md).
 
-Nella maggior parte dei casi, quando si implementa un servizio di linguaggio di Visual Studio, non è necessario alcun intervento aggiuntivo per supportare le proprietà universali di EditorConfig. L'editor principale individua e legge automaticamente il file con estensione editorconfig quando gli utenti aprono i file e imposta le opzioni appropriate per buffer di testo e visualizzazione. Tuttavia, per le modifiche, ad esempio tabulazioni e spazi, alcuni servizi linguistici scelgono di usare un'opzione di visualizzazione del testo contestuale appropriata anziché usare le impostazioni globali. In questi casi il servizio di linguaggio deve essere aggiornato in modo da supportare i file EditorConfig.
+Nella maggior parte dei casi, quando si implementa un servizio di linguaggio di Visual Studio, non è necessario alcun intervento aggiuntivo per supportare le proprietà universali di EditorConfig. L'editor principale individua e legge automaticamente il file con estensione editorconfig quando gli utenti aprono i file e imposta le opzioni appropriate per buffer di testo e visualizzazione. Tuttavia, per le modifiche, ad esempio tabulazioni e spazi, alcuni servizi linguistici scelgono di usare un'opzione di visualizzazione del testo contestuale appropriata invece di usare le impostazioni globali. In questi casi il servizio di linguaggio deve essere aggiornato in modo da supportare i file EditorConfig.
 
 Di seguito sono riportate le modifiche necessarie per aggiornare un servizio di  linguaggio per supportare i file EditorConfig, sostituendo un'opzione globale specifica del linguaggio con un'opzione _contestuale:_
 
