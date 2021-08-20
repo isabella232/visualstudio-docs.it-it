@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: 49a207b1a2234b12cebb95e9019fe15da28846ca6e4e7666fb5bf57c86ff1aff
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f2185bf025bc880a7461a9e1618953f734a7083a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121363426"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155057"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: Creare un'app a più contenitori con Docker Compose
 

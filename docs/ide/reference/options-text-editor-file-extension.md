@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, Estensione file
-description: Informazioni su come usare la pagina Estensione file per specificare come tutti i file con determinate estensioni di file verranno gestiti dall Visual Studio IDE.
+description: Informazioni su come usare la pagina Estensione file per specificare come tutti i file con determinate estensioni verranno gestiti dall'IDE Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf271d0bb5c0d5b7ba7d0f251ec0bb087748990661b45f11738299ec207ba60
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 03c34393805343f7ebe70bcfc75bfdd5b285dd98
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447415"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143690"
 ---
 # <a name="options-text-editor-file-extension"></a>Opzioni, Editor di testo, Estensione file
 

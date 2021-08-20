@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3329c805ab1e5f6f45f82a2789fdec242c83931f18e525a50fd883f3601c63da
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 766f745a88e178a82627ed24da761dec4560989e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360820"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104638"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 Specifica i criteri per confrontare due contesti di documento.
@@ -50,10 +50,10 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>Campi
 `DOCCONTEXT_EQUAL`\
-Trovare nell'elenco il primo contesto del documento uguale al contesto del documento di destinazione.
+Trovare il primo contesto del documento nell'elenco uguale al contesto del documento di destinazione.
 
 `DOCCONTEXT_LESS_THAN`\
-Trovare nell'elenco il primo contesto del documento minore del contesto del documento di destinazione.
+Trovare il primo contesto del documento nell'elenco minore del contesto del documento di destinazione.
 
 `DOCCONTEXT_GREATER_THAN`\
 Trovare il primo contesto del documento nell'elenco maggiore del contesto del documento di destinazione.
@@ -64,7 +64,7 @@ Trovare il primo contesto del documento nell'elenco che si trova nello stesso do
 ## <a name="remarks"></a>Commenti
 Passato come argomento al [metodo Compare.](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
 
-Questi valori vengono usati per specificare criteri di confronto per trovare il primo contesto di documento in un elenco. A un contesto di documento viene fornito un elenco di contesti di documento con cui confrontarsi tramite il `IDebugDocumentContext2::Compare` metodo . Viene quindi restituito il primo contesto del documento nell'elenco per il quale viene restituito `true` l'operatore di confronto.
+Questi valori vengono usati per specificare criteri di confronto per trovare il primo contesto del documento in un elenco. A un contesto di documento viene assegnato un elenco di contesti di documento con cui confrontarsi tramite il `IDebugDocumentContext2::Compare` metodo . Primo contesto del documento nell'elenco per il quale viene quindi restituito l'operatore `true` di confronto.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

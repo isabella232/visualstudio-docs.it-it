@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a2bc92ad4686c30db46ae62f38b10ac837535fa14bf56a2c9dadc22936d13dfa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6de57ce80e15087b7c66986e0c44a3d7a1e3868e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420170"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154482"
 ---
 # <a name="error-rpc-requires-authentication"></a>Errore: RPC richiede autenticazione
 Il debugger di Visual Studio non può connettersi al computer remoto. I criteri RPC abilitati sul computer locale impediscono il debug remoto.
@@ -34,4 +34,4 @@ Il debugger di Visual Studio non può connettersi al computer remoto. I criteri 
 
 3. Riavviare il computer per rendere effettiva la modifica del Registro di sistema.
 
-4. Se il problema persiste, contattare l'amministratore di dominio per informazioni sull'impostazione dei criteri di gruppo > Modelli amministrativi > **System > Remote Procedure Call > Restrictions for Unauthenticated RPC clients** (Restrizioni per i client RPC non autenticati).
+4. Se il problema persiste, contattare l'amministratore di dominio per l'impostazione dei criteri di gruppo Configurazione computer **> Modelli amministrativi > System > Remote Procedure Call > Restrictions for Unauthenticated RPC clients** (Restrizioni per i client RPC non autenticati).

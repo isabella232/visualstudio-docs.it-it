@@ -1,23 +1,24 @@
 ---
 title: Convertire una query LINQ in un'istruzione foreach
 ms.custom: SEO-VS-2020
-description: Effettuare il refactoring del codice per convertire qualsiasi query LINQ scritta nella sintassi di query in un'istruzione foreach.
+description: Eseguire il refactoring del codice per convertire qualsiasi query LINQ scritta nella sintassi di query in un'istruzione foreach.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d29df994ef6e4f2d96a5dcae53642ec33739c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ef812f37ec4d13d2270ebf7e5471ec82d9efbe4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971128"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144067"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refactoring per convertire LINQ in un'istruzione foreach
 
@@ -36,14 +37,14 @@ Questo refactoring si applica a:
    > [!NOTE]
    > Questo refactoring può essere usato solo per convertire query LINQ espresse con la sintassi di query e non con la sintassi dei metodi.
 
-1. Premere **CTRL** + **.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
+1. Premere  + **CTRL.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
 
    ![Menu delle azioni rapide per convertire LINQ in foreach](media/convert-linq-to-foreach.png)
 
 1. Selezionare **Converti in foreach**. In alternativa, selezionare **Anteprima modifiche** per aprire la finestra di dialogo [Anteprima modifiche](../../ide/preview-changes.md) e quindi selezionare **Applica**.
 
 > [!NOTE]
-> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per la variabile di iterazione del ciclo `foreach`. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  **\' var ' preferenze** o a livello di soluzione in un file [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
+> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per la variabile di iterazione del ciclo `foreach`. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste particolari impostazioni di stile del codice vengono configurate a livello di computer in Strumenti Opzioni Editor di testo  >    >    >  **C#** Code  >  **Style**  >  **General**  >  **\' var' preferences** [](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) o a livello di soluzione in un file EditorConfig. Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
 
 ## <a name="see-also"></a>Vedi anche
 

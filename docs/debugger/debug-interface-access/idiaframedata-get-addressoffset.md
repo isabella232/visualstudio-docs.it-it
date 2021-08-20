@@ -1,5 +1,5 @@
 ---
-description: Recupera la parte offset dell'indirizzo del codice per il frame.
+description: Recupera la parte di offset dell'indirizzo del codice per il frame.
 title: IDiaFrameData::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6013b4b50001393c071dbf0cfa38faebe9d729dc305b2963cdece4cc5ec5ed57
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fca93e47227cd6e1578a9cbb88a13237835650fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345052"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154583"
 ---
 # <a name="idiaframedataget_addressoffset"></a>IDiaFrameData::get_addressOffset
-Recupera la parte offset dell'indirizzo del codice per il frame.
+Recupera la parte di offset dell'indirizzo del codice per il frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ HRESULT get_addressOffset (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce la parte offset dell'indirizzo del codice per il frame.
+[out] Restituisce la parte di offset dell'indirizzo del codice per il frame.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

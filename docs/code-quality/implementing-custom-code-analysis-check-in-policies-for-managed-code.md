@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: d460c6f8e683254d8d7e709d1ab2eedb3dbc144acd12a7f25839b1ae562fca40
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 07c393bd9ff0a16bf2c2692a2b92425138af5554
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455309"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114030"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito
 

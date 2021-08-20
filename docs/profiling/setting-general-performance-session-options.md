@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f8d40d583d293529acfc8b3ff8065efd48bd2c948c55bcfd019cd8a6523fdd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5a42998a30856765dcd7c3eaea32a67bcb13f59e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121315746"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141519"
 ---
 # <a name="set-general-performance-session-options"></a>Impostare le opzioni generali della sessione di prestazioni
 

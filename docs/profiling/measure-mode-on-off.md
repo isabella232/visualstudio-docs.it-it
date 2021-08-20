@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e41f07b306e2fe2763f9185d9eb49d3da37fc7064759c41ecaa57fb7566c52
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cbeb49f0924af8fd4da1364831ad89a18fc81b8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121368175"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141766"
 ---
 # <a name="measure-mode-onoff"></a>Modalità misurazione attiva/non attiva
 Tramite questo strumento è possibile misurare con precisione un periodo di tempo nella sequenza temporale. Per abilitare la modalità misurazione, fare clic sul pulsante di misurazione (con un'icona a forma di righello) e quindi trascinare nella sequenza temporale. Durante il trascinamento, si noti che l'area sotto il puntatore viene evidenziata in giallo e il tempo misurato viene visualizzato sulla barra degli strumenti a destra del pulsante. Questo valore viene calcolato in modo dinamico durante il trascinamento in modo da poter determinare immediatamente il tempo richiesto per un particolare evento. Quando si rilascia il pulsante del mouse, il valore rimane visibile.

@@ -1,6 +1,6 @@
 ---
-description: Richiede che tutti i programmi sottoposti a debug da questo motore di debug (DE) interrompano l'esecuzione la volta successiva che uno dei thread tenta di eseguire.
-title: 'IDebugEngine2:: CauseBreak | Microsoft Docs'
+description: Richiede che tutti i programmi di cui è in corso il debug da parte di questo motore di debug arrestino l'esecuzione al successivo tentativo di esecuzione di uno dei relativi thread.
+title: IDebugEngine2::CauseBreak | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 74a320cbe9f2414de754b5844aa645bffb857568
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ed068e3f0a5e1a595b9f93fec5d19de8b30690fd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105093899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111229"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-Richiede che tutti i programmi sottoposti a debug da questo motore di debug (DE) interrompano l'esecuzione la volta successiva che uno dei thread tenta di eseguire.
+Richiede che tutti i programmi di cui è in corso il debug da parte di questo motore di debug arrestino l'esecuzione al successivo tentativo di esecuzione di uno dei relativi thread.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +43,7 @@ int CauseBreak();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo è asincrono: viene inviato un evento [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) quando il programma tenta di eseguire successiva dopo la chiamata a questo metodo.
+ Questo metodo è asincrono: un [evento IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) viene inviato al successivo tentativo di esecuzione del programma dopo la chiamata di questo metodo.
 
 ## <a name="see-also"></a>Vedi anche
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

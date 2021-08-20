@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5210da636a32ecdbd67e16260db63853451c774c3004b02035b966d98e5ceff
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f61eedca093e0fa9f86eb6e78dccca4aabd21827
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087132"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introduzione a Analizzatori Roslyn
 

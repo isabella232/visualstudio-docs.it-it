@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b2c5b4927a07bcb05c0ada97d4aed9f6c6da8c6cc65e21aa65fc3e40af1996c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3da9d8da2a5ebeac580a66844ff08cb5a6010715
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361054"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160595"
 ---
 # <a name="m_action-field"></a>m_action campo
 Delegato che rappresenta il codice da eseguire <xref:System.Threading.Tasks.Task> nell'oggetto .
@@ -35,7 +35,7 @@ Delegato che rappresenta il codice da eseguire <xref:System.Threading.Tasks.Task
 ```
 
 ## <a name="remarks"></a>Osservazioni
- Questo è il `action` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore.
+ Si tratta del `action` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore.
 
 ## <a name="see-also"></a>Vedi anche
-- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione Thread nel visualizzatore di concorrenza | Microsoft Docs
-description: Si apprenderà che nella visualizzazione thread è possibile identificare i thread che eseguono il codice durante un segmento di esecuzione.
+description: Nella visualizzazione Thread è possibile identificare i thread che eseguono codice durante un segmento di esecuzione.
 ms.date: 11/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 77655e2e040b6a14a5c82151dac451e8373ea674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c715267fe002b136ee07e2a925b979437fe97b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876979"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141116"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Visualizzazione Thread nel visualizzatore di concorrenza
 
@@ -48,13 +49,13 @@ La visualizzazione **Thread** illustra anche le dipendenze tra thread. Ad esempi
 
 ## <a name="use-threads-view"></a>Usare la visualizzazione Thread
 
-Per avviare il Visualizzatore di concorrenza, selezionare **analizza**  >  **Visualizzatore di concorrenza**, quindi selezionare un'opzione, ad esempio **Avvia nuovo processo**.
+Per avviare il visualizzatore di concorrenza, selezionare **Analizza**  >  **visualizzatore** di concorrenza e quindi selezionare un'opzione, ad esempio **Avvia nuovo processo**.
 
 Il visualizzatore di concorrenza avvia l'app e raccoglie una traccia finché non si seleziona **Arresta raccolta**. Il visualizzatore quindi analizza la traccia e visualizza i risultati nella pagina del report di traccia.
 
 Selezionare la scheda **Thread** in alto a sinistra nel report per aprire la visualizzazione **Thread**.
 
-![Visualizzazione thread](../profiling/media/threadsviewnarrowing.png "visualizzazione thread")
+![Visualizzazione Thread](../profiling/media/threadsviewnarrowing.png "visualizzazione thread")
 
 Selezionare gli intervalli di tempo e i thread per avviare un'analisi delle prestazioni.
 

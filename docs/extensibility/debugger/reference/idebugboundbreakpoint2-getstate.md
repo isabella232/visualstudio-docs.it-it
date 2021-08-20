@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ac9066b0b7719cf6cfe248b2faddb0d7fbc4e2d8d96d88a176729700678a916
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c651e539e58b7e642074b718f96f074c00024b13
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262412"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111723"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Ottiene lo stato di questo punto di interruzione associato.

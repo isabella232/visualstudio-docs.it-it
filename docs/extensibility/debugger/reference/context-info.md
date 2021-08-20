@@ -11,17 +11,18 @@ ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58b524de5d2d230e240ae7338190568ccfe6fb2a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1f0e47ae5651f928894d42e2e06c015315fa037a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096486"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145549"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 Questa struttura descrive un contesto di memoria o un contesto di codice.
@@ -54,7 +55,7 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Members
 `dwFields`\
-Combinazione di flag di [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumerazione che specifica i campi che vengono compilati<strong>.</strong>
+Combinazione di flag [dell'CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) che specifica quali campi vengono<strong>compilati.</strong>
 
 `bstrModuleUrl`\
 Nome del modulo in cui si trova il contesto.
@@ -63,7 +64,7 @@ Nome del modulo in cui si trova il contesto.
 Nome della funzione in cui si trova il contesto.
 
 `posFunctionOffset`\
-Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che identifica l'offset di riga e di colonna della funzione associata al contesto del codice.
+Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che identifica l'offset di riga e colonna della funzione associata al contesto del codice.
 
 `bstrAddress`\
 Indirizzo nel codice in cui si trova il contesto specificato.
@@ -75,14 +76,14 @@ Offset dell'indirizzo nel codice in cui si trova il contesto specificato.
 Indirizzo assoluto in memoria in cui si trova il contesto specificato.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura viene restituita da una chiamata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) .
+Questa struttura viene restituita da una chiamata al [metodo GetInfo.](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 
-Un uso tipico di questa struttura è il supporto di una finestra di debug della **memoria** .
+Un uso tipico di questa struttura è il supporto di una **finestra di** debug della memoria.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg. h
+Intestazione: msdbg.h
 
-Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

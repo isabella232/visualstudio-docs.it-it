@@ -1,6 +1,6 @@
 ---
-description: Recupera i flag per il parametro generico.
-title: 'IDebugGenericParamField:: GetFlags | Microsoft Docs'
+description: Recupera i flag per questo parametro generico.
+title: IDebugGenericParamField::GetFlags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8dc6360819c1a8ec49a58896a2042d35884ed4a0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f77a97c3c558055bb2f92f7c98112c0e8b483a17
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063305"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127103"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
-Recupera i flag per il parametro generico.
+Recupera i flag per questo parametro generico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +42,16 @@ int GetFlags(
 
 ## <a name="parameters"></a>Parametri
 `pdwFlags`\
-out Restituisce i flag per il parametro generico.
+[out] Restituisce i flag per questo parametro generico.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Questi flag contengono informazioni su vari vincoli speciali.
+Questi flag contengono informazioni sui vari vincoli speciali.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugGenericParamFieldType** che espone l'interfaccia [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
+L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugGenericParamFieldType** che espone [l'interfaccia IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)

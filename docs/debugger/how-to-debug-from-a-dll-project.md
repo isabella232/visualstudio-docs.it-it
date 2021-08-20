@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e84986c683c378de901271aa0086d2c3ebad95d635ab8cfde401087f1db556a2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 61599a878d73ab188ee8e05bf7f1cf5c314ac42f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120959"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedura: Eseguire il debug da un progetto DLL in Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -70,7 +70,7 @@ I progetti DLL nativi e gestiti hanno impostazioni diverse per specificare le ap
 
 1. Aggiungere eventuali argomenti della riga di comando necessari nel campo **Argomenti della** riga di comando o **Argomenti applicazione.**
 
-   ![Debug di C# Finestra Proprietà](../debugger/media/dbg-debugging-properties-dll-csharp.png "Debug in C# Finestra Proprietà")
+   ![Debug di C# Finestra Proprietà](../debugger/media/dbg-debugging-properties-dll-csharp.png "Debug di C# Finestra Proprietà")
 
 1. Usare **File**  >  **Save Selected Items (Salva elementi selezionati)** o **CTRL** + **S** per salvare le modifiche.
 

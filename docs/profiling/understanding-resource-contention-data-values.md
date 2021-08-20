@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b397a3171cc03822271224679e2792da6d5e3f5a821f58cb5ec19707288bc202
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 80e525b078fb5743d9181361d26230faf740c01a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121230950"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140798"
 ---
 # <a name="understand-resource-contention-data-values"></a>Informazioni sui valori dei dati su conflitti di risorse
 

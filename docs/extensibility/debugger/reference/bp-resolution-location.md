@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4854b04848e99e605fbb26587c8b4a1abafe4741ec74b6d84568cf2b729232a0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b433f7b58753408c916074539d9d0b6275d1ce17
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390443"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145822"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Specifica la struttura della posizione di risoluzione del punto di interruzione.
@@ -76,9 +76,9 @@ Valore [dell'enumerazione BP_TYPE](../../../extensibility/debugger/reference/bp-
 [Solo C#] Vedere Osservazioni su come interpretare.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura è un membro delle [strutture BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-resolution-info.md)
+Questa struttura è un membro delle [strutture](../../../extensibility/debugger/reference/bp-error-resolution-info.md) BP_ERROR_RESOLUTION_INFO e [BP_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-resolution-info.md)
 
- [Solo C#] I `unionmemberX` membri vengono interpretati in base alla tabella seguente. Cercare il valore nella colonna sinistra e quindi in per `bpType` determinare ciò che ogni `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio per un modo per interpretare questa struttura in C#.
+ [Solo C#] I `unionmemberX` membri vengono interpretati in base alla tabella seguente. Cercare il valore nella colonna sinistra per determinare ciò che ogni membro rappresenta ed effettuare `bpType` `unionmemberX` il marshalling di `unionmemberX` conseguenza. Vedere l'esempio per un modo per interpretare questa struttura in C#.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|

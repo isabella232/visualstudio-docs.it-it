@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ab46216ac2955e6629d5a577659f938e9aa741659309a12c2ee98b527d5915
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1cd049a8e2aea94e6dc3b581c5b6ca8ccf3ab4e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121348507"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122162019"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Criteri di archiviazione relativi alla compatibilità delle versioni per l'analisi del codice
 

@@ -1,6 +1,6 @@
 ---
-description: Ignora il numero specificato di elementi nell'enumerazione processes.
-title: 'IEnumDebugProcesses2:: Skip | Microsoft Docs'
+description: Ignora il numero specificato di elementi nell'enumerazione dei processi.
+title: IEnumDebugProcesses2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 359f37896592a13a395c0e71c6346ce3db8c7975
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cc4db9db05b9c1609a5b8c4ca55cc9b5259f0dd4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095283"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 Ignora il numero di elementi specificato.
@@ -45,10 +46,10 @@ int Skip(
 [in]Numero di elementi da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è maggiore del numero di elementi `celt` rimanenti; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione viene impostata sulla fine e `S_FALSE` viene restituito.
+ Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione viene impostata sulla fine e viene `S_FALSE` restituito .
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

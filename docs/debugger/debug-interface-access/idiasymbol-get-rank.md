@@ -1,5 +1,5 @@
 ---
-description: Recupera il rango (numero di dimensioni) di una matrice multidimensionale FORTRAN.
+description: Recupera la classificazione (numero di dimensioni) di una matrice multidimensionale RANKRAN.
 title: IDiaSymbol::get_rank | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 14cc9c4b-a5ec-414a-b01f-4a142c17b7cc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da2bb7dc41d06e113e0bd278ef08917771cfb2e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 03c61eea4e46f1e9223ee296f8728e8f4284bf31
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161914"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105433"
 ---
 # <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
-Recupera il rango (numero di dimensioni) di una matrice multidimensionale FORTRAN.
+Recupera la classificazione (numero di dimensioni) di una matrice multidimensionale RANKRAN.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,16 +35,16 @@ HRESULT get_rank (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-out Restituisce il numero di dimensioni in una matrice multidimensionale FORTRAN.
+[out] Restituisce il numero di dimensioni in una matrice multidimensionale DIRRAN.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Rank indica il numero di dimensioni in una matrice in cui la matrice viene dichiarata come `myarray[1,2,3]` . Questo esempio ha un rango di 3 e 3 dimensioni. Rank non si applica a C++ che usa il concetto di matrice di matrici per ogni dimensione (ovvero `myarray[1][2][3]` ).
+ Rank si riferisce al numero di dimensioni in una matrice in cui la matrice è dichiarata come `myarray[1,2,3]` . Questo esempio ha una classificazione di 3 e 3 dimensioni. La classificazione non si applica a C++ che usa il concetto di matrice di matrici per ogni dimensione ,ovvero `myarray[1][2][3]` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

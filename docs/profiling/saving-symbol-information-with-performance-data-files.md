@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 341807e78a43b716c09fc063d0dadbc6ad1450851e1b0cb339d9b5efcc96e712
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1b37a56776d70127f52c17224ba3366e79439e3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410415"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157371"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvataggio delle informazioni sui simboli con i file di dati di prestazioni
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 122e1f83542e276a931390e5155dcaed4692e0eb47311d996c59eaebd7a920ee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d12d191c67a295672fd75f1c73c0a1af8a19196f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154671"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Recupera un flusso di debug tramite un indice o un nome.
@@ -36,7 +36,7 @@ HRESULT Item (
 #### <a name="parameters"></a>Parametri
 index
 
-[in] Indice o nome del flusso di debug da recuperare. Se viene usata una variante integer, deve essere compreso nell'intervallo da 0 a -1, dove viene restituito dal metodo `count` `count` [IDiaEnumDebugStreams::get_Count.](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)
+[in] Indice o nome del flusso di debug da recuperare. Se viene usata una variante integer, deve essere compreso nell'intervallo da 0 a -1, dove è restituito dal metodo `count` `count` [IDiaEnumDebugStreams::get_Count.](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)
 
 flusso
 

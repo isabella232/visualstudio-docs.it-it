@@ -1,5 +1,5 @@
 ---
-description: Recupera l'indirizzo virtuale relativo (RVA) del blocco.
+description: Recupera l'indirizzo RVA (Relative Virtual Address) del blocco.
 title: IDiaLineNumber::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f9d3842d048e02a07496516e950b13c03760f635fd916854691e9bd4ea4759c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bfe4edae88944fc8b31b6f28fbf2d7ae8be52108
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392168"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139319"
 ---
 # <a name="idialinenumberget_relativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
-Recupera l'indirizzo virtuale relativo (RVA) del blocco.
+Recupera l'indirizzo RVA (Relative Virtual Address) del blocco.
 
 ## <a name="syntax"></a>Sintassi
 

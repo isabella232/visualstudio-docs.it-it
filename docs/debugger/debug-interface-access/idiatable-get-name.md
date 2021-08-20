@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ed12ba66e34e624c5161e80fc4127d31f862f8f96643fbb75080934d8405de
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a54db09dced33aed000466be5cb6f75c13ca7f4c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121379649"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121225"
 ---
 # <a name="idiatableget_name"></a>IDiaTable::get_name
 Recupera il nome della tabella.

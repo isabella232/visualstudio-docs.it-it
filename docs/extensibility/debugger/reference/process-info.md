@@ -11,17 +11,18 @@ ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b6fe223d67b876dca1604b2617a33a888ec8180c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e2fc29833c8d3f6b64e5bbc683ad6f5fc82231ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079643"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118099"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 Contiene informazioni su un processo.
@@ -58,39 +59,39 @@ public struct PROCESS_INFO {
 
 ## <a name="members"></a>Members
  `Fields`\
- Combinazione di flag dell'enumerazione [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) che specificano i campi da compilare.
+ Combinazione di flag [dell'enumerazione PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) che specificano quali campi vengono compilati.
 
  `bstrFileName`\
- Nome del percorso completo del processo. Equivale a chiamare il metodo [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) con il parametro `GN_FILENAME` .
+ Nome completo del percorso del processo. Equivale a chiamare il [metodo GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) con il parametro `GN_FILENAME` .
 
  `bstrBaseName`\
- Il nome file e l'estensione del processo. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_BASENAME` .
+ Nome file ed estensione del processo. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_BASENAME` .
 
  `bstrTitle`\
- Titolo del processo, se ne esiste uno. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_TITLE` .
+ Titolo del processo, se esistente. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_TITLE` .
 
  `ProcessId`\
- Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che identifica il processo. Equivale a chiamare il metodo [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) .
+ Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che identifica il processo. Equivale a chiamare il [metodo GetPhysicalProcessId.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
  `dwSessionId`\
- Identificatore della sessione di debug in cui è in esecuzione il processo.
+ Identificatore della sessione di debug in cui è in esecuzione questo processo.
 
  `bstrAttachedSessionName`\
- Nome della sessione associata. Equivale a chiamare il metodo [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) .
+ Nome della sessione associata. Equivale a chiamare il [metodo GetAttachedSessionName.](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
 
  `CreationTime`\
  Ora di creazione del processo.
 
  `Flags`\
- Combinazione di flag dell'enumerazione [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) che specificano le proprietà del processo.
+ Combinazione di flag [dell'enumerazione PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) che specificano le proprietà del processo.
 
 ## <a name="remarks"></a>Commenti
- Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) dove viene compilata.
+ Questa struttura viene passata [al metodo GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) in cui viene compilata.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg. h
+ Intestazione: msdbg.h
 
- Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

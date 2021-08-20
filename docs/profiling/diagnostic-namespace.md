@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 93da07b215e9fd8e7fb3fcaf88fcc31ea123bc792efca351faf3bf40d86fa2e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9e9d976983b534081926795ff1754fe7047f2f42
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121254357"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142065"
 ---
 # <a name="diagnostic-namespace"></a>Spazio dei nomi diagnostic
 Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.

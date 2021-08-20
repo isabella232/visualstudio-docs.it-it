@@ -1,6 +1,6 @@
 ---
 title: Filtro delle visualizzazioni report | Microsoft Docs
-description: In Visual Studio applicare filtri ai file di dati di profilatura per limitare i dati di profilatura visualizzati nelle visualizzazioni report di prestazioni ed esportati in file di report.
+description: In Visual Studio applicare filtri ai file di dati di profilatura per limitare i dati di profilatura visualizzati nelle visualizzazioni dei report di prestazioni ed esportati in file di report.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bb0144a9c45ca3f5f68521b870e4e9afa06cfdb595923f42d98504256f4afce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 22ec32af90a67d40c4f753bf3c1aea3f3f0010b8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121301304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150378"
 ---
 # <a name="filter-report-views"></a>Filtrare le visualizzazioni report
 È possibile applicare filtri ai file di dati di profilatura per limitare i dati di profilatura che appaiono nelle visualizzazioni report Prestazioni e vengono esportati nei file di report. È possibile ridurre un report ai dati tra due valori di timestamp e ridurre i dati a processi e thread specifici. È possibile salvare i filtri in un file e quindi creare un filtro per un altro file di dati di profilatura importando il filtro salvato.

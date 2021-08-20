@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c15d8da2aa2deebb3150c984bf77ca8b9dc4ec00891313e0b6841d04f75394
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 124245b4fb0a711fcf680d53b7fc75bc46cbbaaf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395824"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140362"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 

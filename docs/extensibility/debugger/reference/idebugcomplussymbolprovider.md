@@ -1,6 +1,6 @@
 ---
 description: Rappresenta un provider di simboli COM+ con metodi specifici del codice gestito.
-title: IDebugComPlusSymbolProvider | Microsoft Docs
+title: Interfaccia IDebugComPlusSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 524663723537dd84233a9570104a779cbc3411921640768f1bcdc6a9d89e1ee2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: da8d6c4ebd64c4dd4f3a4610e2f4753b86aa0ef5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308051"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145042"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 Rappresenta un provider di simboli COM+ con metodi specifici del codice gestito.
@@ -56,7 +56,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbols.md)|Carica i simboli di debug specificati in memoria.|
 |[LoadSymbolsFromStream](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbolsfromstream.md)|Carica i simboli di debug in base al flusso di dati.|
 |[ReplaceSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-replacesymbols.md)|Sostituisce i simboli di debug correnti con quelli nel flusso di dati specificato.|
-|[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|Scarica i simboli di debug per il modulo specificato dalla memoria.|
+|[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|Scarica dalla memoria i simboli di debug per il modulo specificato.|
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|Aggiorna i simboli di debug in memoria con quelli del flusso di dati specificato.|
 
 ## <a name="requirements"></a>Requisiti

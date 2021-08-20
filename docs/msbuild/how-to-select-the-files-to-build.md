@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: ada7ffb7b5f73dc320d124b88dd4a571ba255abad55b6dc72c40feaab1b55681
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0fac27ec9996d115381ae42a7c88ddcf6549ba86
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370229"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136924"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 
@@ -30,7 +30,7 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
 
 Gli elementi rappresentano gli input di una compilazione. Per altre informazioni sugli elementi, vedere [Elementi](../msbuild/msbuild-items.md).
 
-Per includere i file per una compilazione, è necessario che siano inclusi in un elenco di elementi nel file MSBuild di progetto. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
+Per includere i file per una compilazione, è necessario che siano inclusi in un elenco di elementi nel file MSBuild progetto. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
 
 #### <a name="to-declare-items-individually"></a>Per dichiarare gli elementi uno alla volta
 
@@ -104,7 +104,7 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. non è possibile specificare gli input usando l'attributo `Sources` in MSBuild attività quali [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
+> È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. Non è possibile specificare gli input usando `Sources` l'attributo in MSBuild attività quali [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

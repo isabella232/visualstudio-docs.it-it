@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 831841ef34b19f659ba4e21e52f3c07476381643018cb4bf19a461b4ca3dd85b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d9025a51e06158448cf273a60f95ac40b8f99a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121362906"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105425"
 ---
 # <a name="idiasymbolget_type"></a>IDiaSymbol::get_type
 Recupera il simbolo che rappresenta il tipo per questo simbolo.
@@ -41,7 +41,7 @@ HRESULT get_type (
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
 Per determinare il tipo di un simbolo, è necessario chiamare questo metodo ed esaminare [l'oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) risultante. Si noti che è possibile che un simbolo non abbia un tipo . Ad esempio, il nome di una struttura non ha alcun tipo, ma potrebbe avere simboli figlio (usare il metodo [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) per esaminare tali elementi figlio).

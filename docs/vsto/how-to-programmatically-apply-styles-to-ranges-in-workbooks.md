@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 25ae70edc79c648fd908b8d357469cc1ebe2af95050cf14292eb4ebc5deaa465
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 32ba588545d401a7c25f56d5a5f7042d62116a25
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268118"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122735"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Procedura: Applicare stili agli intervalli nelle cartelle di lavoro a livello di codice
   È possibile applicare stili denominati alle aree nelle cartelle di lavoro. Excel fornisce alcuni stili predefiniti:

@@ -11,12 +11,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c690567092f5cd7532e4430dab8d05812e8a4ad08480e62241fd26c76e715b9c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b95493e94da7a64603ae8330b742b35b8ffeb276
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140609"
 ---
 # <a name="vsperf"></a>VSPerf
 Usare lo strumento della riga di comando **VsPerf** per:

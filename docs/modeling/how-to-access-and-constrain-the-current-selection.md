@@ -9,18 +9,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d0f99743535965b3cf203d461fac5d0193607c
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 692e730135bd1f62ef98c83669d133da552d6b3e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150560"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Procedura: accedere e vincolare la selezione corrente
 
-Quando si scrive un gestore comandi o movimenti per il linguaggio specifico di dominio, è possibile determinare l'elemento su cui l'utente ha fatto clic con il pulsante destro del mouse. È anche possibile impedire la selezione di alcune forme o campi. Ad esempio, è possibile disporre che quando l'utente fa clic su un elemento Decorator icona, viene invece selezionata la forma che lo contiene. Vincolando la selezione in questo modo si riduce il numero di gestori che è necessario scrivere. Rende anche più semplice per l'utente, che può fare clic in un punto qualsiasi della forma senza dover evitare l'elemento Decorator.
+Quando si scrive un gestore comandi o movimenti per il linguaggio specifico di dominio, è possibile determinare l'elemento su cui l'utente ha fatto clic con il pulsante destro del mouse. È anche possibile impedire la selezione di alcune forme o campi. Ad esempio, è possibile disporre che quando l'utente fa clic su un elemento Decorator di icona, viene invece selezionata la forma che lo contiene. Vincolando la selezione in questo modo si riduce il numero di gestori che è necessario scrivere. Rende anche più semplice per l'utente, che può fare clic in un punto qualsiasi della forma senza dover evitare l'elemento Decorator.
 
 ## <a name="access-the-current-selection-from-a-command-handler"></a>Accedere alla selezione corrente da un gestore comandi
 
@@ -40,7 +41,7 @@ A seconda del comando, il gestore dei comandi potrebbe richiedere la selezione i
     |Metodo <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Restituisce `true` se nella finestra attiva è selezionato esattamente un elemento; in caso contrario, `false` .|
     |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Ottiene una raccolta di sola lettura degli elementi selezionati in Progettazione modelli.|
     |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Ottiene una raccolta di sola lettura degli elementi selezionati nella finestra attiva.|
-    |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Ottiene l'elemento primario della selezione in Progettazione modelli.|
+    |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Ottiene l'elemento principale della selezione in Progettazione modelli.|
     |Proprietà<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Ottiene l'elemento primario della selezione nella finestra attiva.|
 
 2. La <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> proprietà della classe fornisce l'accesso all'oggetto che rappresenta la finestra di Progettazione modelli e fornisce accesso aggiuntivo agli <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> elementi selezionati in Progettazione <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> modelli.

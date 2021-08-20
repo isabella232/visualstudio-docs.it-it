@@ -1,5 +1,5 @@
 ---
-title: Riga di comando del profiler - Ottenere i dati di intervallo per un servizio
+title: 'Riga di comando del profiler: ottenere i dati di intervallo per un servizio'
 description: Informazioni su come usare il metodo di strumentazione dalla riga di comando per raccogliere dati dettagliati sulle prestazioni per Windows servizi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e0f484ad7f7ada48ba167189a55945d1feec23af6a6c8ada47a71edab187a58d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06681216ce1cccfa9f73abbb1e975582bb7324f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121369007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142338"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per i servizi usando il metodo di strumentazione dalla riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i servizi Windows tramite il metodo di strumentazione dalla riga di comando.
@@ -27,7 +27,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
 |Attività|Contenuto correlato|
 |----------|---------------------|
 |**Profilare un servizio .NET**|-   [Procedura: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
-|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere i dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 |**Profilare un servizio C/C++**|-   [Procedura: Instrumentare un servizio nativo e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate

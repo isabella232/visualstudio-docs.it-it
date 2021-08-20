@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f21ff098132d934d94cace2f4c43dc9ad3a392bda6f7b273a1b58ef6822e05b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e884e92ad5ad6669746cee28adc3dccf60d2c468
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121280287"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161389"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Errore: autenticazione Kerberos non riuscita
 Quando si tenta di eseguire il debug remoto, è possibile che venga visualizzato il messaggio di errore seguente:
@@ -48,7 +48,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 1. Nel computer di destinazione, aprire il menu **Start**, scegliere **Accessori**, quindi fare clic su **Prompt dei comandi**.
 
-2. Nella finestra **del prompt** dei comandi digitare:
+2. Nella finestra **del prompt dei** comandi digitare:
 
     ```cmd
     ping <debugger_host_computer_name>

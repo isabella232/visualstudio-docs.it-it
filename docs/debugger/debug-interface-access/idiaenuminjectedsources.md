@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: eb012beb12b81b39afd61c155f2b5799f837dfdbb460532dcfd5adad529af51f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ea46cf39774e41e128a163c1a649bafb16c4b524
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392528"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154663"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Enumerare le varie origini inserite contenute nell'origine dati.

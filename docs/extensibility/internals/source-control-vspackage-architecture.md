@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02507ef3044e89948b9f852c25f662cb3ad330cd0c94d5fbe3985ff295e28d36
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 35bf749c20af958350a92159844583e007e09fd6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432144"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159035"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architettura dei pacchetti VSPackage di controllo del codice sorgente
 Un pacchetto di controllo del codice sorgente è un VSPackage che usa i servizi forniti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dall'IDE. In cambio, un pacchetto di controllo del codice sorgente fornisce la relativa funzionalità come servizio di controllo del codice sorgente. Inoltre, un pacchetto di controllo del codice sorgente è un'alternativa più versatile rispetto a un plug-in di controllo del codice sorgente per l'integrazione del controllo del codice sorgente in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -46,7 +46,7 @@ Un pacchetto di controllo del codice sorgente è un VSPackage che usa i servizi 
 
   Per un pacchetto di controllo del codice sorgente, non fornisce codice di controllo del codice [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sorgente o un'API per l'integrazione. A differenza dell'approccio descritto in Creazione di un plug-in di controllo del codice sorgente in cui il [plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md) del controllo del codice sorgente deve implementare un set rigido di funzioni e callback.
 
-  Come qualsiasi vspackage, un pacchetto di controllo del codice sorgente è un oggetto COM che può essere creato usando `CoCreateInstance` . Il pacchetto VSPackage si rende disponibile per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'IDE implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> . Dopo la creazione di un'istanza, un vspackage riceve un puntatore al sito e un'interfaccia che fornisce al pacchetto VSPackage l'accesso ai servizi e alle interfacce disponibili <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> nell'IDE.
+  Come qualsiasi VSPackage, un pacchetto di controllo del codice sorgente è un oggetto COM che può essere creato usando `CoCreateInstance` . Il pacchetto VSPackage si rende disponibile per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'IDE implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> . Dopo la creazione di un'istanza, un vspackage riceve un puntatore al sito e un'interfaccia che fornisce al pacchetto VSPackage l'accesso ai servizi e alle interfacce disponibili <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> nell'IDE.
 
   La scrittura di un pacchetto di controllo del codice sorgente basato su VSPackage richiede competenze di programmazione più avanzate rispetto alla scrittura di un plug-in basato su API del controllo del codice sorgente.
 

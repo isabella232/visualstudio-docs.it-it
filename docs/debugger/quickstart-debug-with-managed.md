@@ -10,14 +10,15 @@ ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: b6b1bf99c7961c2ca8a9d162e2de173a9dd0a41c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683011"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112581"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Avvio rapido: eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
 
@@ -28,20 +29,20 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Se la finestra di avvio non è aperta, scegliere  >  **finestra di avvio** file. Nella finestra Start scegliere **Crea un nuovo progetto**.
+    Se la finestra iniziale non è aperta, scegliere **Finestra**  >  **iniziale file**. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
     Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
 
-    Dopo aver applicato la lingua e i filtri della piattaforma, scegliere il modello **applicazione console** per .NET Core, quindi scegliere **Avanti**.
+    Dopo aver applicato il linguaggio e i filtri della piattaforma, scegliere il modello **App console** per .NET Core e quindi **scegliere Avanti.**
 
-    Scegliere il Framework di destinazione consigliato (.NET Core 3,1) o .NET 5, quindi scegliere **Crea**.
+    Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
 
-    Se non viene visualizzato il modello di progetto di **app console** per .NET Core, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro **sviluppo multipiattaforma .NET Core** , quindi scegliere **modifica**.
+    Se il modello di progetto **App** console per .NET Core non è visualizzato, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **.NET Core** e quindi nel riquadro centrale scegliere **App console (.NET Core)**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
+    Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **.NET Core** e quindi nel riquadro centrale scegliere **App console (.NET Core)**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
 
-    Se il modello di progetto **App console (.NET Core)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione Visual Studio. Scegliere il carico di lavoro **sviluppo multipiattaforma .NET Core** , quindi scegliere **modifica**.
+    Se il modello di progetto **App console (.NET Core)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione Visual Studio. Scegliere il **carico di lavoro sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica**.
     ::: moniker-end
 
     Visual Studio crea il progetto.
@@ -140,7 +141,7 @@ Un *punto di interruzione* è un indicatore che segnala il punto in cui Visual S
 
 1. Per impostare il punto di interruzione, fare clic nella barra di navigazione a sinistra della chiamata di funzione `doWork` o selezionare la riga di codice e premere **F9**.
 
-    ![Imposta un punto di interruzione](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Imposta punto di interruzione")
+    ![Impostare un punto di interruzione](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Imposta punto di interruzione")
 
 2. Premere **F5** o scegliere **Debug > Avvia debug**.
 
@@ -157,7 +158,7 @@ Sono disponibili diversi comandi per indicare al debugger di continuare. Viene i
 
 Mentre l'elaborazione è ferma al punto di interruzione, passare il mouse sopra l'istruzione `c1.AddLast(20)` finché appare il pulsante verde **Esegui fino alla riga selezionata**![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click.png "RunToClick") quindi premere il pulsante **Esegui fino alla riga selezionata**.
 
-![Esegui fino al clic](../debugger/media/dbg-qs-run-to-click-csharp.png "Esegui fino alla riga selezionata")
+![Esegui per fare clic su](../debugger/media/dbg-qs-run-to-click-csharp.png "Esegui fino alla riga selezionata")
 
 L'app riprende l'esecuzione, esegue la chiamata a `doWork` e si blocca sulla riga di codice in cui si è fatto clic.
 
@@ -165,15 +166,15 @@ I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F1
 
 ## <a name="inspect-variables-in-a-data-tip"></a>Esaminare le variabili in un suggerimento dati
 
-1. Nella riga di codice corrente (contrassegnata dal puntatore di esecuzione giallo) passare il puntatore sull' `c1` oggetto con il mouse per visualizzare un suggerimento dati.
+1. Nella riga di codice corrente (contrassegnata dal puntatore di esecuzione giallo) passare il puntatore sull'oggetto con il `c1` mouse per visualizzare una descrizione comandi.
 
     ![Visualizzare un suggerimento dati](../debugger/media/dbg-qs-data-tip-csharp.png "Visualizzare un suggerimento dati")
 
-    Il suggerimento dati Mostra il valore corrente della `c1` variabile e consente di controllarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.
+    Il suggerimento dati mostra il valore corrente della `c1` variabile e consente di esaminarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.
 
-2. Espandere il suggerimento dati per esaminare i valori correnti della proprietà dell' `c1` oggetto.
+2. Espandere il suggerimento dati per esaminare i valori correnti delle proprietà `c1` dell'oggetto .
 
-3. Se si vuole aggiungere il suggerimento dati in modo che sia possibile continuare a visualizzare il valore di `c1` durante l'esecuzione del codice, fare clic sull'icona del piccolo pin. È possibile spostare il suggerimento sui dati aggiunti in un percorso appropriato.
+3. Se si vuole aggiungere la descrizione comando dati in modo da poter continuare a visualizzare il valore di durante l'esecuzione del `c1` codice, fare clic sull'icona a forma di puntina piccola. È possibile spostare il suggerimento dati aggiunto in una posizione comoda.
 
 ## <a name="edit-code-and-continue-debugging"></a>Modificare il codice e continuare il debug
 

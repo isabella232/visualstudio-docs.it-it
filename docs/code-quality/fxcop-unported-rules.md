@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 345edfd27db70e9581951428b0a76067256e0afe5021e91e8cd336d278c1c6f4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ebfcd80440ca7cf9ea318c117681e5b2deef9f01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240913"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114003"
 ---
 # <a name="unported-rules"></a>Regole non trasferite
 

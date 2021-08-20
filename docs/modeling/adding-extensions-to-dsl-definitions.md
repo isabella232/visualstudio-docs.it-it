@@ -7,30 +7,31 @@ ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d9f1c92ebb879517d497af41fe98cec4492bd95
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0f463ae8a71ac3c06e4efbcc7396dbe8b1483dba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384889"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157631"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Aggiungere estensioni alle definizioni DSL
 
-L'estensione DSL Definition consente di creare un pacchetto di estensioni per un linguaggio specifico di dominio (DSL). L'estensione DSL, contenuta in un'estensione VSIX (Visual Studio Integration Extension), può essere installata nel computer di un utente allo stesso modo di un DSL. Le funzionalità aggiuntive possono essere abilitate e disabilitate dinamicamente in fase di esecuzione. Le DSL non devono essere progettate in modo esplicito per l'estensione e le estensioni possono essere progettate in un secondo momento o da terze parti, senza modificare il linguaggio DSL esteso.
+L'estensione DSL Definition consente di creare un pacchetto di estensioni per un linguaggio specifico di dominio (DSL). L'estensione DSL, contenuta in Visual Studio Integration Extension (VSIX), può essere installata nel computer di un utente nello stesso modo di un DSL. Le funzionalità aggiuntive possono essere abilitate e disabilitate in modo dinamico in fase di esecuzione. Le DSL non devono essere progettate in modo esplicito per l'estensione e le estensioni possono essere progettate in un secondo momento o da terze parti, senza modificare il linguaggio DSL esteso.
 
 Le estensioni DSL possono includere le funzionalità seguenti:
 
 - Proprietà per gli elementi del modello e della presentazione
 
-- Elementi Decorator per forme e connettori
+- Decorator per forme e connettori
 
 - Classi, relazioni, forme e connettori
 
 - Vincoli di convalida
 
-- Schede e elementi della casella degli strumenti
+- Elementi e schede della casella degli strumenti
 
 Un utente di un DSL esteso può creare e salvare un modello che contiene istanze delle funzionalità aggiuntive. Il modello può essere letto da altri utenti che hanno installato l'estensione appropriata. Gli utenti che non hanno installato l'estensione non possono usare le funzionalità aggiuntive, ma possono aggiornare e salvare un modello senza perdere le funzionalità aggiuntive.
 

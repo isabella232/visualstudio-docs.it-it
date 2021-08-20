@@ -1,6 +1,6 @@
 ---
-description: Riceve i callback dalla procedura di individuazione dei simboli DIA, consentendo in tal modo a un'interfaccia utente di segnalare lo stato di avanzamento del tentativo del percorso.
-title: IDiaLoadCallback | Microsoft Docs
+description: Riceve callback dalla procedura di individuazione dei simboli DIA, consentendo così a un'interfaccia utente di segnalare lo stato di avanzamento del tentativo di posizione.
+title: Interfaccia IDiaLoadCallback | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,18 @@ ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a283a40ae39c53a4a96f80adb633b92ba68f637
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9b5ef4523aa2b8acd098f8a9e46d5aa0009f9b37
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102157469"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139195"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
-Riceve i callback dalla procedura di individuazione dei simboli DIA, consentendo in tal modo a un'interfaccia utente di segnalare lo stato di avanzamento del tentativo del percorso.
+Riceve callback dalla procedura di individuazione dei simboli DIA, consentendo così a un'interfaccia utente di segnalare lo stato di avanzamento del tentativo di posizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,25 +31,25 @@ IDiaLoadCallback : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Questa interfaccia espone i metodi seguenti:
+ I metodi seguenti vengono esposti da questa interfaccia:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Chiamato quando viene trovata una directory di debug nel file con estensione exe.|
-|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Chiamato quando è stato aperto un file. dbg candidato.|
-|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Chiamato quando è stato aperto un file con estensione PDB candidato.|
-|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Determina se è possibile utilizzare le query del registro di sistema per individuare i percorsi di ricerca dei simboli.|
-|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Determina se è consentito l'accesso a un server di simboli per la risoluzione dei simboli.|
+|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Chiamato quando è stata trovata una directory di debug nel file .exe file.|
+|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Chiamato quando viene aperto un file con estensione dbg candidato.|
+|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Chiamato quando viene aperto un file con estensione pdb candidato.|
+|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Determina se le query del Registro di sistema possono essere usate per individuare i percorsi di ricerca dei simboli.|
+|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Determina se è consentito l'accesso a un server di simboli per risolvere i simboli.|
 
 ## <a name="remarks"></a>Commenti
- L'applicazione client implementa questa interfaccia e fornisce un riferimento a tale interfaccia nella chiamata al metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
+ L'applicazione client implementa questa interfaccia e vi fornisce un riferimento nella chiamata al metodo [IDiaDataSource::loadDataForExe.](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 
- Per ulteriori restrizioni che possono essere imposte in un processo di caricamento, vedere l'interfaccia [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) .
+ Per altre restrizioni che possono essere imposte a un processo di caricamento, vedere [l'interfaccia IDiaLoadCallback2.](../../debugger/debug-interface-access/idialoadcallback2.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: dia2. h
+ Intestazione: Dia2.h
 
- Libreria: diaguids. lib
+ Libreria: diaguids.lib
 
  DLL: msdia80.dll
 

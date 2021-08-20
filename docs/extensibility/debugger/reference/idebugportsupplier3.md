@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84dc23cf1c750d539d043b1993490a523c70ebaaacf04cc44c8702d8383278ad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 56d4d0dd0f7ddef677c8e32696deaea41678a621
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416755"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159997"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Questa interfaccia consente a un chiamante di determinare se un fornitore di porte può mantenere le porte (scrivendole su disco) tra le chiamate del debugger e quindi ottenere un elenco di tali porte mantenute.

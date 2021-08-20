@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34a432be96d0511128a5466c2fd771f0682129bb3ddf4087a129831ace8be491
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 78719dbd33ea20e03fefd44f00cba3dd8b7f28e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088978"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Recupera un oggetto servizio in base al relativo identificatore univoco.
