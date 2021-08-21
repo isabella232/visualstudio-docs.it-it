@@ -1,6 +1,6 @@
 ### YamlMime:Hub
-title: Visual Studio di sviluppo di giochi
-summary: 'Informazioni su come creare giochi usando Visual Studio, Visual Studio per Mac e gli strumenti principali che integrano con come Unity, Unreal Engine e altro ancora.'
+title: Visual Studio sullo sviluppo di giochi
+summary: 'Informazioni su come creare giochi usando Visual Studio, Visual Studio per Mac e gli strumenti principali con cui si integrano, ad esempio Unity, Unreal Engine e altro ancora.'
 brand: visual-studio
 metadata:
   title: Visual Studio documentazione sullo sviluppo di giochi | Microsoft Docs
@@ -9,6 +9,7 @@ metadata:
   ms.author: johmil
   ms.date: 08/05/2020
   ms.topic: hub-page
+  ms.prod: visual-studio
 highlightedContent:
   items:
     - title: Sviluppo di giochi con Visual Studio
@@ -34,7 +35,7 @@ productDirectory:
       imageSrc: unity/media/unity-logo.png
       links:
         - url: unity/get-started/visual-studio-tools-for-unity.md
-          text: Tour Visual Studio Tools per Unity
+          text: Presentazione Visual Studio Tools per Unity
         - url: unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
           text: Introduzione a Visual Studio e Unity
         - url: unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
@@ -52,13 +53,13 @@ productDirectory:
       imageSrc: unreal/media/unreal-engine-logo.png
       links:
         - url: 'https://www.unrealengine.com/features'
-          text: Panoramica del motore Unreal
+          text: Panoramica di Unreal Engine
         - url: 'https://docs.unrealengine.com/GettingStarted/index.html'
-          text: Introduzione al motore Unreal
+          text: Introduzione a Unreal Engine
         - url: 'https://docs.unrealengine.com/Programming/Development/VisualStudioSetup/index.html'
           text: Configurazione di Visual Studio per Unreal Engine
 conceptualContent:
-  title: Alzare di livello con Visual Studio
+  title: Livello superiore con Visual Studio
   summary: 'Altre informazioni su modifica del codice, debug, compilazione e altro ancora con Visual Studio.'
   items:
     - title: Informazioni su come usare Visual Studio
