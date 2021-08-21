@@ -1,7 +1,7 @@
 ---
 title: Eseguire unit test con Esplora test
 description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare le esecuzioni test automatiche dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco di test, creare playlist e usare i collegamenti ai test.
-ms.date: 07/14/2020
+ms.date: 01/11/2021
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
@@ -9,16 +9,16 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9f31d17a4a1453020f5e18b4877beb7344d50d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 97dd55ecfc5f66abc4df8becbecbe608d93a7dfb
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100504"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603632"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
-Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare Esplora test per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È anche possibile analizzare i code coverage ed [eseguire il debug di unit test](../test/debug-unit-tests-with-test-explorer.md).
+Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare Esplora test per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È anche possibile usare Esplora test per [eseguire il debug di unit](../test/debug-unit-tests-with-test-explorer.md) test e, in Visual Studio Enterprise, per analizzare code coverage . [](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 
 **Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++.
 
@@ -33,7 +33,7 @@ Visual Studio include i framework di unit test Microsoft sia per il codice gesti
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
-Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non  è visibile, scegliere Test dal menu Visual Studio, scegliere **Windows** e quindi scegliere **Esplora** test (o premere **CTRL**  +  **E**, **T**).
+Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non  è visibile, scegliere Test dal menu Visual Studio, scegliere Windows **e** quindi scegliere **Esplora** test (oppure premere **CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
@@ -69,7 +69,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 
 - Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui** test selezionati oppure premere **CTRL** + **R**, **T**.
 
-- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore Esecuzione test in parallelo sulla barra degli strumenti Visual Studio Esplora test. Quando questo pulsante è selezionato, i test verranno eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore Esecuzione test in parallelo sulla barra Visual Studio Esplora test. Quando questo pulsante è selezionato, i test verranno eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 ::: moniker-end
@@ -129,7 +129,7 @@ Se il test non viene superato, il riquadro dei dettagli mostra anche le informaz
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Visualizzare il codice sorgente di un metodo di test
 
-Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere Apri test dal menu di scelta rapida (o premere **F12).** 
+Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere Apri **test** dal menu di scelta rapida (o premere **F12).**
 
 ## <a name="group-and-filter-the-test-list"></a>Raggruppare e filtrare l'elenco dei test
 
@@ -206,7 +206,7 @@ Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-
 
 Per aprire una  **playlist,** scegliere Prova playlist dal menu Visual Studio e scegliere dall'elenco di playlist usate di recente oppure scegliere Apri playlist per specificare il nome e il percorso della >  playlist. 
 
-Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore Esecuzione test in parallelo sulla barra degli strumenti Visual Studio Esplora test.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore Esecuzione test in parallelo sulla barra Visual Studio Esplora test.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test nell'elenco vengono visualizzati in una nuova scheda Esplora test. È possibile aggiungere un test a più playlist.
@@ -229,7 +229,7 @@ A partire Visual Studio 2019 versione 16.7, è possibile scegliere il **pulsante
 
 ![Pulsante Modifica playlist](../test/media/vs-2019/test-explorer-playlist-edit-16-7.png)
 
-È anche possibile selezionare o deselezionare le caselle dei gruppi padre nella gerarchia. Questa azione crea una playlist dinamica che aggiorna sempre la playlist in base ai test presenti in tale gruppo. Ad esempio, se si posiziona un segno di spunta accanto a una classe, qualsiasi test aggiunto da tale classe diventa parte di questa playlist. Se si elimina un test da tale classe, questo viene rimosso dalla playlist. Per altre informazioni sulle regole, salvare la playlist con il pulsante Salva sulla barra degli strumenti e aprire il file con estensione *playlist* creato sul disco. Questo file elenca tutte le regole e i singoli test che costituiscono una playlist.
+È anche possibile selezionare o deselezionare le caselle dei gruppi padre nella gerarchia. Questa azione crea una playlist dinamica che aggiorna sempre la playlist in base ai test presenti in tale gruppo. Ad esempio, se si posiziona un segno di spunta accanto a una classe, qualsiasi test aggiunto da tale classe diventa parte di questa playlist. Se si elimina un test da tale classe, viene rimosso dalla playlist. Per altre informazioni sulle regole, salvare la playlist con il pulsante Salva sulla barra degli strumenti e aprire il file con estensione *playlist* creato sul disco. Questo file elenca tutte le regole e i singoli test che costituiscono una playlist.
 
 ![File XML della playlist](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
@@ -354,7 +354,7 @@ Per eseguire il code coverage per i metodi di test in una soluzione:
 
 ::: moniker range=">=vs-2019"
 
-* Fare clic con il pulsante destro del mouse in Esplora test e **scegliere Analizza code coverage per test selezionati**
+* Fare clic con il pulsante destro del mouse in Esplora test e **scegliere Analizza code coverage per i test selezionati**
 
 ::: moniker-end
 
@@ -364,7 +364,7 @@ Per altre informazioni, vedere [Usare la funzionalità code coverage per determi
 
 ## <a name="test-shortcuts"></a>Tasti di scelta rapida per i test
 
-I **test** possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e scegliendo Esegui test o usando i tasti di scelta rapida predefiniti di Esplora test [in](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono o eseguono [il debug dei test](../test/debug-unit-tests-with-test-explorer.md) in base alla posizione in cui si trova il cursore nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
+I test possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e scegliendo Esegui **test** o usando i tasti di scelta rapida predefiniti [di](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) Esplora test in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono o eseguono [il debug dei test](../test/debug-unit-tests-with-test-explorer.md) in base alla posizione del cursore nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
 
 |Comandi frequenti| Tasti di scelta rapida|
 |-|------------------------|
@@ -378,12 +378,12 @@ I **test** possono essere eseguiti da Esplora test facendo clic con il pulsante 
 
 ::: moniker range=">=vs-2019"
 ## <a name="test-audio-cue"></a>Testare il segnale audio
-Esplora test può riprodurre un suono al termine dell'esecuzione di un test. Sono presenti due suoni: un suono per indicare che l'esecuzione del test è riuscita con tutti i test superati e un secondo suono per indicare che l'esecuzione del test è stata completata con almeno un test non superato. È possibile configurare questi suoni nella finestra di dialogo predefinita Windows 10 audio. Questa funzionalità è disponibile a partire Visual Studio 2019 Update 16.9 Preview 3.
+Esplora test può riprodurre un suono al termine di un'esecuzione dei test. Esistono due suoni: un suono per indicare che l'esecuzione del test ha avuto esito positivo con tutti i test superati e un secondo suono per indicare che l'esecuzione del test è stata completata con almeno un test non superato. È possibile configurare questi suoni nella finestra di dialogo predefinita Windows 10 audio. Questa funzionalità è disponibile a partire da Visual Studio 2019 Update 16.9 Preview 3.
 
-1. Aprire la finestra di dialogo Windows 10 audio predefinita.
+1. Aprire la finestra di dialogo Windows 10 audio predefinito.
 2. Passare alla **scheda Suoni.**
-3. Trovare la **Microsoft Visual Studio** categorie. Scegliere **i suoni Esecuzione test completata** o Esecuzione **test** non riuscita per selezionare i suoni preimpostati o selezionare il file audio.  
-![Windows 10 di dialogo audio](../test/media/default-windows-10-sound-dialog.png)
+3. Trovare la **Microsoft Visual Studio** predefinita. Scegliere **i suoni Esecuzione test completata** o Esecuzione **test** non riuscita per selezionare i suoni preimpostati o passare al proprio file audio.  
+![Windows 10 dialogo audio](../test/media/default-windows-10-sound-dialog.png)
 
 ::: moniker-end
 ## <a name="see-also"></a>Vedi anche

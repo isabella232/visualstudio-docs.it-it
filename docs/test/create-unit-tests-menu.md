@@ -2,7 +2,7 @@
 title: Creare stub di metodo di unit test
 description: Informazioni su come usare il comando Crea unit test, che consente di configurare facilmente un progetto di test, la classe di test e lo stub del metodo di test al suo interno.
 ms.custom: SEO-VS-2020
-ms.date: 07/26/2021
+ms.date: 08/19/2021
 ms.topic: how-to
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: b32cdf6da48b1becc9aed825f6e14127e31ee30b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 35eb729b08e969ded00bb2f6eb428ccdfece1032
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135819"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603580"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>Creare unit test stub di metodo dal codice
 
@@ -29,7 +29,7 @@ Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Il comando di menu **Crea unit** test è disponibile solo per il codice C#.
+> Il comando di menu **Crea unit** test è disponibile solo per il codice C#. Per usare questo metodo con .NET Core o .NET Standard, è Visual Studio 2019.
 ::: moniker-end
 
 Il comando di menu **Crea unit test** è estendibile e può essere usato per generare test per MSTest, MSTest V2, NUnit e xUnit.

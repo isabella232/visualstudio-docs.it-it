@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 378590e6041688c3d083594e95f31dfcaf05f64fa6f5dda9f6ed5902146ff5b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 42db2efef077fcb95590ea061e47cd1b52bb6311
+ms.sourcegitcommit: 7c06c7e4f0a69d90b21dcf4d5c5b5caa17464bf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121421751"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122464820"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Accesso a Visual Studio per Mac
 
@@ -40,11 +40,14 @@ Per accedere a Visual Studio per Mac al primo avvio, seguire questa procedura:
 
     ![Finestra di dialogo delle credenziali Microsoft](media/signing-in-image13.png)
 
-4. Dopo aver eseguito l'accesso, verrà visualizzata un'opzione per selezionare i tasti di scelta rapida. Selezionare l'opzione che si vuole usare e **continuare.** Verrà quindi visualizzata la finestra di avvio Visual Studio 2019 per Mac. Da qui è possibile aprire un progetto esistente o crearne uno nuovo:
+4. Dopo aver eseguito l'accesso, verrà visualizzata un'opzione per selezionare i tasti di scelta rapida. Selezionare l'opzione che si vuole usare e **continuare.** Verrà quindi visualizzata la finestra iniziale di Visual Studio 2019 per Mac. Da qui è possibile aprire un progetto esistente o crearne uno nuovo:
 
     ![Accesso eseguito correttamente](media/signing-in-image14.png)
 
 In alternativa, è possibile usare la voce di menu **Visual Studio > Accedi…** per accedere e disconnettersi in qualsiasi momento.
+
+> [!TIP]
+> Se si verificano problemi di accesso, provare l'opzione Accedi con **il Web browser** nel menu a discesa Non è possibile accedere? nella parte inferiore della finestra Accedi **all'account.**  Questa operazione può essere necessaria se il Mac è un dispositivo gestito che usa l'accesso condizionale.
 
 ## <a name="adding-multiple-user-accounts"></a>Aggiunta di più account utente
 
