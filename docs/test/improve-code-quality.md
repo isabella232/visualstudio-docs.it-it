@@ -1,8 +1,8 @@
 ---
-title: Strumenti di test
-description: Informazioni su Visual Studio strumenti di test per aiutare l'utente e il team a sviluppare e sostenere standard elevati di eccellenza del codice.
+title: Strumenti di unit test
+description: Informazioni su Visual Studio strumenti di test personalizzati che consentono all'utente e al team di sviluppare e sostenere standard elevati di eccellenza del codice.
 ms.custom: SEO-VS-2020
-ms.date: 03/16/2018
+ms.date: 08/19/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -13,12 +13,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7cfb71071efab7e119c04d32f3362e00add4bdc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 987c9928fecb3ad752656c065bd369b9844da864
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148519"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603593"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Prima di tutto, esaminare gli strumenti di test in Visual Studio
 
@@ -40,6 +40,7 @@ La finestra **Esplora test** consente agli sviluppatori di creare, gestire ed es
 ::: moniker-end
 
 * [Introduzione agli unit test](unit-test-your-code.md)
+* [Nozioni di base sugli unit test](unit-test-basics.md)
 * [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md)
 * [Domande frequenti su Esplora test](test-explorer-faq.md)
 * [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md)
@@ -53,7 +54,7 @@ Visual Studio è anche estendibile e consente l'uso di adattatori di unit test d
 [Live Unit Testing](../test/live-unit-testing.md) consente di eseguire automaticamente unit test in background e di visualizzare graficamente i risultati di code coverage e test nell'editor del codice di Visual Studio.
 
 > [!NOTE]
-> Gli unit test live sono disponibili solo Enterprise edizione ed è supportato solo per il codice .NET.
+> Live Unit Testing è disponibile solo Enterprise edizione ed è supportato solo per il codice .NET.
 
 ## <a name="intellitest"></a>IntelliTest
 
@@ -73,7 +74,7 @@ IntelliTest genera automaticamente unit test e dati di test per il codice gestit
 [Code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) determina la percentuale di codice del progetto che viene effettivamente testata dai test codificati come ad esempio gli unit test. Per una protezione efficace dai bug, i test devono analizzare o "coprire" gran parte del codice.
 
 > [!NOTE]
-> Il code coverage è disponibile solo in Enterprise edizione.
+> Il code coverage è disponibile solo Enterprise edizione.
 
 L'analisi di code coverage può essere applicata sia al codice gestito che a quello non gestito (nativo).
 

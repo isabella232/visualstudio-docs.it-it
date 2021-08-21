@@ -1,6 +1,6 @@
 ---
 title: Introduzione agli unit test
-description: Usare Visual Studio per definire ed eseguire unit test per mantenere l'integrità del codice e per individuare errori ed errori prima che i clienti esengano questa operazione.
+description: Usare Visual Studio definire ed eseguire unit test per mantenere l'integrità del codice e individuare errori ed errori prima che i clienti lo facciano.
 ms.custom: SEO-VS-2020
 ms.date: 08/10/2021
 ms.topic: tutorial
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 9141a94d1c100d798b90eeb7d0ce90d15d137b9ddefbbbd92c44a98cf356a5d7
-ms.sourcegitcommit: 29a893fb8639ee1d64922e99bf424e10ecce30d5
+ms.openlocfilehash: 2465deef6d8b4c93b9e72d38bf548a001373f9e3
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121465122"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603606"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -57,14 +57,21 @@ In questa sezione viene descritto come creare un unit test progetto.
    ```
    ---
 
-1. Selezionare il nodo della soluzione in **Esplora soluzioni**. Quindi, nella barra dei menu superiore selezionare **File**  >  **Aggiungi**  >  **nuovo Project**.
+1. Selezionare il nodo della soluzione in **Esplora soluzioni**. Nella barra dei menu superiore selezionare **Quindi** Aggiungi nuovo file Project  >    >  .
 
-1. Nella finestra di dialogo nuovo progetto trovare un modello di progetto unit test per il framework di test che si vuole usare, ad esempio MSTest (C#) o il progetto **Native Unit Test** (C++) e selezionarlo.
+1. Nella finestra di dialogo Nuovo progetto individuare il unit test da usare.
 
-   A partire Visual Studio 2017 versione 14.8, i linguaggi .NET includono modelli predefiniti per NUnit e xUnit. Per C++, in questo esempio selezionare il **progetto Native Unit Test,** che usa Microsoft Native Unit Test Framework. Per usare un framework di test C++ diverso, vedere [Scrittura di unit test per C/C++.](../test/writing-unit-tests-for-c-cpp.md) Per Python, vedere [Configurare unit test nel codice Python](../python/unit-testing-python-in-visual-studio.md) per configurare il progetto di test.
+   ::: moniker range=">=vs-2019"
+   Digitare **test** nella casella di ricerca per trovare un modello di progetto unit test per il framework di test che si vuole usare, ad esempio MSTest (C#) o il progetto **di unit test** nativo (C++) e selezionarlo.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Espandere il **nodo** Installato, scegliere il linguaggio che si vuole usare per il progetto di test e quindi scegliere **Test**.
+   ::: moniker-end
+
+   A partire Visual Studio 2017 versione 14.8, i linguaggi .NET includono modelli predefiniti per NUnit e xUnit. Per C++, in questo esempio selezionare il **progetto di unit test** nativo, che usa il framework di unit test nativo Microsoft. Per usare un framework di test C++ diverso, vedere [Scrittura di unit test per C/C++.](../test/writing-unit-tests-for-c-cpp.md) Per Python, vedere [Configurare unit test nel codice Python per](../python/unit-testing-python-in-visual-studio.md) configurare il progetto di test.
 
    > [!TIP]
-   > Solo per C#, è possibile creare progetti unit test dal codice usando un metodo più veloce. Per altre informazioni, vedere [Creare unit test e metodi di test.](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods) Per usare questo metodo con .NET Core o .NET Standard, è Visual Studio 2019.
+   > Solo per C#, è possibile creare progetti unit test dal codice usando un metodo più veloce. Per altre informazioni, vedere [Creare progetti unit test e metodi di test.](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods-c) Per usare questo metodo con .NET Core o .NET Standard, è Visual Studio 2019.
 
    La figura seguente mostra un unit test MSTest, supportato in .NET.
 
@@ -80,7 +87,7 @@ In questa sezione viene descritto come creare un unit test progetto.
 
    ![Modello di progetto di unit test in Visual Studio 2019](media/mstest-test-project-template.png)
 
-   Scegliere un nome per il progetto di test, ad esempio HelloWorldTests, e quindi fare clic su **OK.**
+   Scegliere un nome per il progetto di test, ad esempio HelloWorldTests, quindi fare clic su **OK.**
 
    ::: moniker-end
 
@@ -88,7 +95,7 @@ In questa sezione viene descritto come creare un unit test progetto.
 
    ![Progetto di unit test in Esplora soluzioni](media/vs-2019/solution-explorer.png)
 
-1. Nel progetto di unit test aggiungere un riferimento al progetto da testare facendo clic con il pulsante destro del mouse su **Riferimenti** o su **Dipendenze** e quindi scegliendo **Aggiungi riferimento**.
+1. Nel progetto unit test aggiungere un riferimento al progetto che si vuole testare  facendo clic con  il pulsante destro del mouse su Riferimenti o dipendenze e quindi scegliendo Aggiungi riferimento o Aggiungi riferimento **Project progetto.** 
 
 1. Selezionare il progetto che contiene il codice da testare e fare clic su **OK**.
 
@@ -96,7 +103,7 @@ In questa sezione viene descritto come creare un unit test progetto.
 
 1. Aggiungere codice al metodo di unit test.
 
-   Ad esempio, è possibile usare il codice seguente selezionando la scheda della documentazione corretta corrispondente al framework di test: MSTest, NUnit o xUnit (supportato solo in .NET) o Microsoft Unit Testing Framework C++.
+   Ad esempio, è possibile usare il codice seguente selezionando la scheda della documentazione corretta corrispondente al framework di test: MSTest, NUnit o xUnit (supportato solo in .NET) o C++ Microsoft Native Unit Test Framework.
 
    ### <a name="mstest"></a>[MSTest](#tab/mstest)
 
@@ -188,7 +195,7 @@ In questa sezione viene descritto come creare un unit test progetto.
     }
     ```
 
-    ### <a name="microsoft-native-unit-test-framework"></a>[Framework di unit test nativo di Microsoft](#tab/msunittest)
+    ### <a name="microsoft-native-unit-test-framework"></a>[Framework di unit test nativo Microsoft](#tab/msunittest)
 
     ```cpp
     #include "pch.h"
@@ -233,13 +240,13 @@ In questa sezione viene descritto come creare un unit test progetto.
 1. Aprire [Esplora test](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Per aprire Esplora test, scegliere **Esplora test** dalla barra dei menu superiore oppure premere >  **CTRL** + **E**, **T**.
+   Per aprire Esplora test, scegliere **Esplora** > **test dalla** barra dei menu superiore oppure premere **CTRL** + **E**, **T**.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Per aprire Esplora test, scegliere **Test** > **Windows** > **Esplora test** dalla barra dei menu superiore.
+   Per aprire Esplora  test, scegliere > **Test Windows** Esplora > **test** dalla barra dei menu superiore.
    ::: moniker-end
 
-1. Eseguire gli unit test facendo clic **su Esegui tutto** oppure premere **CTRL**  +  **R**, **V**.
+1. Eseguire gli unit test facendo clic **su Esegui tutto** (o premere **CTRL**  +  **R**, **V**).
 
    ![Eseguire unit test in Esplora test](media/vs-2019/test-explorer-run-all.png)
 
@@ -287,9 +294,9 @@ Per altre informazioni su Live Unit Testing, vedere [Live Unit Testing](../test/
 
 - Usare **Gestione pacchetti NuGet** per installare il pacchetto NuGet per il framework di propria scelta.
 
-- (.NET) A partire Visual Studio 2017 versione 14.6, Visual Studio include modelli di progetto di test preconfigurato per framework di test NUnit e xUnit. I modelli includono anche i pacchetti NuGet necessari per abilitare il supporto.
+- (.NET) A partire Visual Studio 2017 versione 14.6, Visual Studio include modelli di progetto di test preconfigurato per i framework di test NUnit e xUnit. I modelli includono anche i pacchetti di NuGet necessari per abilitare il supporto.
 
-- (C++) In Visual Studio 2017 e versioni successive, alcuni framework come Google C++ Testing Framework sono già inclusi. Per altre informazioni, vedere [Scrivere unit test per C/C++ in Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
+- (C++) In Visual Studio 2017 e versioni successive sono già inclusi alcuni framework come Google C++ Testing Framework. Per altre informazioni, vedere [Scrivere unit test per C/C++ in Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
 
 Per aggiungere un unit test progetto:
 
@@ -297,7 +304,7 @@ Per aggiungere un unit test progetto:
 
 2. Fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**.
 
-3. Selezionare un modello unit test progetto.
+3. Selezionare un modello unit test progetto di distribuzione.
 
    In questo esempio selezionare [NUnit](https://nunit.org/)
 
@@ -327,7 +334,7 @@ Per aggiungere un unit test progetto:
 
    ![Aggiungere codice al file di codice dello unit test](media/vs-2019/unit-test-method.png)
 
-6. Eseguire il test da **Esplora test** o facendo clic con il pulsante destro del mouse sul codice del test e scegliendo Esegui test **(o** **CTRL**  +  **R**, **T**).
+6. Eseguire il test da **Esplora test o** facendo clic con il pulsante destro del mouse sul codice di test e scegliendo Esegui test (o **CTRL**   +  **R**, **T**).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

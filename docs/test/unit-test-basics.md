@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 3611dbdbb0bc6104a9375a5b2f77dc7249df1f24
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: da403ab2aec782d65bf5699963848ce918afdf0e
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032953"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603619"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -83,7 +83,7 @@ public void Withdraw(double amount)
 
 Ora che è disponibile codice, è possibile passare al test.
 
-## <a name="create-unit-test-projects-and-test-methods"></a>Creare progetti di unit test e metodi di test
+## <a name="create-unit-test-projects-and-test-methods-c"></a>Creare unit test progetti e metodi di test (C#)
 
 Per C#, spesso è più veloce generare il progetto unit test e unit test stub dal codice. In alternativa, è possibile creare il progetto di unit test e i test manualmente, in base alle esigenze. Per creare unit test dal codice con un framework di terze parti, è necessario che sia installata una di queste estensioni: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) [o xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). Se non si usa C#, ignorare questa sezione e passare a Creare manualmente il [progetto unit test e gli unit test.](#create-the-unit-test-project-and-unit-tests-manually)
 
@@ -101,7 +101,7 @@ Per C#, spesso è più veloce generare il progetto unit test e unit test stub da
    ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > Il comando di menu **Crea unit** test è disponibile solo per il codice C#.
+   > Il comando di menu **Crea unit** test è disponibile solo per il codice C#. Per usare questo metodo con .NET Core o .NET Standard, è Visual Studio 2019.
    ::: moniker-end
 
 2. Fare clic su **OK** per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
@@ -117,7 +117,7 @@ Per C#, spesso è più veloce generare il progetto unit test e unit test stub da
    ![Vengono creati gli unit test](../test/media/vs-2019/basics-test-stub.png)
    ::: moniker-end
 
-4. Passare quindi alle informazioni seguenti per apprendere come [aggiungere codice ai metodi di unit test](#write-your-tests) per rendere significativo lo unit test ed eventuali unit test aggiuntivi che è possibile aggiungere per testare accuratamente il codice.
+4. A questo punto è [](#write-your-tests) possibile apprendere come scrivere i test per rendere il unit test significativo ed eventuali unit test aggiuntivi da aggiungere per testare accuratamente il codice.
 
 ### <a name="create-the-unit-test-project-and-unit-tests-manually"></a>Creare il progetto di unit test e gli unit test manualmente
 
@@ -125,11 +125,11 @@ Un progetto unit test rispecchia in genere la struttura di un progetto a codice 
 
 **Per aggiungere un progetto unit test a una soluzione:**
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi**  >  **nuovo** **Project**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere Aggiungi  >  **nuovo** **Project**.
 
 ::: moniker range="vs-2017"
 
-2. Nella finestra **di Project** nuova applicazione  espandere il nodo Installato , scegliere il linguaggio che si vuole usare per il progetto di test e quindi **scegliere Test**.
+2. Nella finestra **di Project** nuovo progetto  di test espandere il nodo Installato , scegliere il linguaggio che si vuole usare per il progetto di test e quindi **scegliere Test**.
 
 3. Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Per testare il progetto `Accounts` dell'esempio, assegnare al progetto il nome `AccountsTests`.
 
@@ -140,7 +140,7 @@ Un progetto unit test rispecchia in genere la struttura di un progetto a codice 
 
 ::: moniker range=">=vs-2019"
 
-2. Usare la casella di ricerca dei modelli di progetto per trovare un progetto unit test per il framework di test che si vuole usare.
+2. Digitare **test** nella casella di ricerca del modello di progetto per trovare unit test modello di progetto per il framework di test che si vuole usare. Negli esempi di questo argomento viene utilizzato MSTest.
 
 3. Nella pagina successiva assegnare un nome al progetto. Per testare il progetto `Accounts` dell'esempio, è possibile assegnare al progetto il nome `AccountsTests`.
 
@@ -149,12 +149,10 @@ Un progetto unit test rispecchia in genere la struttura di un progetto a codice 
 4. Nel progetto unit test aggiungere un riferimento al progetto di codice da testare, che nell'esempio corrisponde al progetto Accounts.
 
    Per creare il riferimento al progetto di codice:
+   
+   1. Nel progetto unit test in Esplora soluzioni fare clic con il  pulsante  destro del mouse sul nodo Riferimenti o dipendenze e quindi scegliere Aggiungi riferimento Project o Aggiungi riferimento **,** **a** seconda di quale sia disponibile.
 
-   1. Selezionare il progetto in **Esplora soluzioni**.
-
-   2. Nel menu **Project** scegliere **Aggiungi riferimento.**
-
-   3. Nella finestra di dialogo **Gestione riferimenti** aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto di codice e chiudere la finestra di dialogo.
+   2. Nella finestra di dialogo **Gestione riferimenti** aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto di codice e chiudere la finestra di dialogo.
 
 Ogni progetto unit test contiene classi che rispecchiano i nomi delle classe del progetto di codice. Nell'esempio il progetto `AccountsTests` contiene le classi seguenti:
 
@@ -172,9 +170,9 @@ Lo schema AAA (Arrange, Act, Assert) è un modo comune per scrivere unit test pe
 
 - La sezione **Act** richiama il metodo da testare con i parametri definiti.
 
-- La sezione **Assert** verifica che l'azione del metodo da testare si comporti come previsto.
+- La sezione **Assert** verifica che l'azione del metodo da testare si comporti come previsto. Per .NET, i metodi nella <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> classe vengono spesso usati per la verifica.
 
-Per testare il metodo `CheckingAccount.Withdraw` dell'esempio, si possono scrivere due test: un test che verifica il comportamento standard del metodo e un test che verifica che un prelievo superiore al saldo del conto avrà esito negativo. Nella classe `CheckingAccountTests` vengono aggiunti i metodi seguenti:
+Per testare il metodo dell'esempio, è possibile scrivere due test: uno che verifica il comportamento standard del metodo e uno che verifica che un prelievo di più del saldo avrà esito negativo (il codice seguente mostra un `CheckingAccount.Withdraw` unit test MSTest, supportato in .NET). Nella classe `CheckingAccountTests` vengono aggiunti i metodi seguenti:
 
 ```csharp
 [TestMethod]
@@ -236,7 +234,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
-Quando si compila il progetto di test, i test vengono visualizzati in **Esplora test**. Se **Esplora test** non  è visibile, scegliere Test dal menu Visual Studio, scegliere **Windows** e quindi scegliere **Esplora** test (o premere **CTRL**  +  **E**, **T**).
+Quando si compila il progetto di test, i test vengono visualizzati in **Esplora test**. Se **Esplora test** non  è visibile, scegliere Test dal menu Visual Studio, scegliere Windows **,** quindi scegliere **Esplora** test (o premere **CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,11 +258,11 @@ La barra degli strumenti di **Esplora test** consente di individuare, organizzar
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure premere **CTRL** R , V oppure scegliere Esegui per scegliere un subset di  +  test da eseguire ( **CTRL**   +  **R**, **T**). Selezionare un test per visualizzarne i dettagli nel riquadro dei dettagli del test. Scegliere **Apri test** dal menu di scelta rapida (Tastiera: **F12)** per visualizzare il codice sorgente per il test selezionato.
+È possibile scegliere **Esegui tutto** per eseguire tutti i test (o premere **CTRL**  +  **R**, **V**) oppure scegliere Esegui per scegliere un subset di test da eseguire (  **CTRL**  +  **R**, **T**). Selezionare un test per visualizzarne i dettagli nel riquadro dei dettagli del test. Scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12)** per visualizzare il codice sorgente per il test selezionato.
 
 ::: moniker range="vs-2017"
 
-Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore Esecuzione test in parallelo sulla barra degli strumenti Visual Studio Esplora test.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore Esecuzione test in parallelo sulla barra Visual Studio esplora test.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ::: moniker-end
 
@@ -338,7 +336,7 @@ Altre informazioni dettagliate sul [debug di unit test](../debugger/debugger-fea
 
 **D: È possibile creare unit test che accettano più set di dati come input per eseguire il test?**
 
-**R:** Sì. I *metodi di test basati sui dati* permettono di testare un intervallo di valori con un singolo metodo di unit test. Usare un attributo `DataSource` per il metodo di test che specifica l'origine dati e la tabella contenente i valori variabili da testare.  Nel corpo del metodo si assegnano i valori di riga alle variabili usando `TestContext.DataRow[` *l'indicizzatore ColumnName.* `]`
+**R:** Sì. I *metodi di test basati sui dati* permettono di testare un intervallo di valori con un singolo metodo di unit test. Usare un attributo `DataSource` per il metodo di test che specifica l'origine dati e la tabella contenente i valori variabili da testare.  Nel corpo del metodo assegnare i valori di riga alle variabili usando `TestContext.DataRow[` *l'indicizzatore ColumnName.* `]`
 
 > [!NOTE]
 > Queste procedure sono applicabili soli ai metodi di test scritti usando il framework per unit test Microsoft per codice gestito. Se si usa un framework diverso, per informazioni sulla funzionalità equivalente vedere la documentazione del framework in uso.
@@ -374,7 +372,7 @@ Altre informazioni sugli [unit test basati sui dati](../test/how-to-create-a-dat
 
 È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione. La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 
-Per eseguire code coverage metodi di test in una soluzione, scegliere **Test**  >  **Analizza code coverage per tutti i test**.
+Per eseguire code coverage metodi di test in una soluzione, scegliere **Test**  >  **Analizza code coverage per tutti i test.**
 
 I risultati del code coverage vengono visualizzati nella finestra **Risultati code coverage**.
 
