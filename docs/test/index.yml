@@ -9,13 +9,13 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
-  ms.date: 03/23/2020
-  ms.openlocfilehash: 1c9922a773faed5eb3fb05c6b8926409256d3a087ac3abb257f5758cca185e27
-  ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+  ms.date: 08/19/2021
+  ms.openlocfilehash: a3eddd7c6373023f3e678e66cc66a12b77247653
+  ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/12/2021
-  ms.locfileid: "121409020"
+  ms.lasthandoff: 08/20/2021
+  ms.locfileid: "122603554"
 landingContent:
 - title: Informazioni sugli strumenti di test
   linkLists:
@@ -25,6 +25,8 @@ landingContent:
       url: improve-code-quality.md
     - text: Strumenti di unit test & attività
       url: unit-test-your-code.md
+    - text: Nozioni di base sugli unit test
+      url: unit-test-basics.md
     - text: Live Unit Testing panoramica (.NET)
       url: live-unit-testing-intro.md
 - title: Introduzione
@@ -37,8 +39,6 @@ landingContent:
       url: run-unit-tests-with-test-explorer.md
   - linkListType: how-to-guide
     links:
-    - text: Nozioni di base sugli unit test
-      url: unit-test-basics.md
     - text: Code coverage - Determinare la quantità di codice testato
       url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
 - title: Unit test .NET

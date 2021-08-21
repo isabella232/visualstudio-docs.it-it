@@ -1,7 +1,7 @@
 ---
 title: Impostare il tema Visual Studio scuro e modificare i colori del testo
-description: Informazioni su come modificare l'impostazione Visual Studio tema colori in modalità scura e modificare i colori dei caratteri nell'editor di codice.
-ms.date: 08/20/2020
+description: Informazioni su come modificare l'impostazione predefinita Visual Studio tema colori in modalità scura e modificare i colori dei caratteri nell'editor di codice.
+ms.date: 08/19/2021
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 author: TerryGLee
@@ -10,16 +10,19 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 945a2e1c7650e43afa9d9e0562371545ca09746d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8dd4e56ececf68b9bd53b5530f8ccfe0c906a975
+ms.sourcegitcommit: 7c06c7e4f0a69d90b21dcf4d5c5b5caa17464bf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137223"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122464833"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Procedura: Personalizzare l'IDE Visual Studio e l'editor
 
 In questo articolo di procedura verrà personalizzato il tema Visual Studio dal tema blu predefinito al tema scuro. Verranno quindi personalizzati i colori per due diversi tipi di testo nell'editor di codice.
+
+> [!NOTE]
+> In [Visual Studio 2022 Preview](/visualstudio/releases/2022/release-notes-preview)è stata rinnovata la funzionalità dei temi colori per creare una mesh con le impostazioni Windows personalizzate. Per altre informazioni, vedere il post di blog [**Flexible theming capabilities for Visual Studio**](https://devblogs.microsoft.com/visualstudio/flexible-theming-visual-studio/) (Funzionalità dei Visual Studio flessibili).
 
 ::: moniker range="vs-2017"
 
@@ -65,7 +68,7 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> È possibile creare temi personalizzati installando la finestra Visual Studio **Color Theme Designer (Progettazione** temi colori) [Visual Studio Marketplace.](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)
+> È possibile creare temi personalizzati installando la finestra Visual Studio **color theme designer** da Visual Studio [Marketplace.](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)
 
 ::: moniker-end
 
