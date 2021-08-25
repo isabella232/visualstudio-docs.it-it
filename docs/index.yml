@@ -7,12 +7,12 @@ metadata:
   description: 'Esplorare la documentazione per la famiglia di prodotti di Visual Studio, inclusi gli IDE di Visual Studio per Windows e Mac, Visual Studio Code, Visual Studio App Center, GitHub Codespaces e Sottoscrizioni di Visual Studio.'
   ms.topic: hub-page
   ms.custom: 'contperf-fy21q1, contperf-fy21q3'
-  ms.date: 03/23/2021
+  ms.date: 08/23/2021
   searchScope: []
   titleSuffix: ''
   ms.author: ghogen
   author: ghogen
-  ms.manager: jillfra
+  ms.manager: jmartens
   monikerRange: '>=vs-2017'
   hide_bc: true
 productDirectory:
@@ -20,6 +20,8 @@ productDirectory:
     - title: Visual Studio
       imageSrc: ./media/vs-ide-2019.svg
       links:
+        - url: ./windows/index.yml?view=vs-2022&preserve-view=true
+          text: Visual Studio 2022 (anteprima)
         - url: ./windows/index.yml?view=vs-2019&preserve-view=true
           text: Visual Studio 2019 (versione corrente)
         - url: ./windows/index.yml?view=vs-2017&preserve-view=true

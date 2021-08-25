@@ -5,27 +5,27 @@ ms.date: 02/08/2021
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4adc65b8e9e3bdd9587c11df83fe86d20c2eff27ad8f05cc6a510e539eddd920
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f5a39cf0740c5952e8e084e6c3b4f4a929feee58
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239449"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785710"
 ---
 # <a name="winget-install"></a>winget-install
 
 > [!IMPORTANT]
 > A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo `winget-install` strumento viene usato per installare i pacchetti [winget](https://docs.microsoft.com/windows/package-manager/winget/).
+Lo `winget-install` strumento viene usato per installare i pacchetti [winget](/windows/package-manager/winget/).
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe `input` le proprietà e vengono `additionalOptions` omesse o vuote, lo strumento restituirà un errore.
 
@@ -41,15 +41,15 @@ La proprietà di input viene usata per specificare `Id` o del pacchetto da `Name
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-È possibile passare opzioni di configurazione aggiuntive come valore di additionalOptions. Questi argomenti sono pass-through diretto agli argomenti usati da `winget install` e sono definiti nella `winget install` [documentazione](https://docs.microsoft.com/windows/package-manager/winget/install)di .
+È possibile passare opzioni di configurazione aggiuntive come valore di additionalOptions. Questi argomenti sono pass-through diretto agli argomenti usati da `winget install` e sono definiti nella `winget install` [documentazione](/windows/package-manager/winget/install)di .
 
 #### <a name="manifests"></a>Manifesti
 
-Un elemento facoltativo `winget` aggiuntivo che supporta è la possibilità di fornire un file [manifesto](https://docs.microsoft.com/windows/package-manager/winget/install#local-install) per specificare in dettaglio il pacchetto da installare. Per usare questa funzionalità con devinit, il parametro deve essere vuoto e la proprietà deve includere l'opzione seguita dal percorso `input` del manifesto , ad esempio `additionalOptions` `--manifest` `--manifest path.to.manifest.yml` .
+Un elemento facoltativo `winget` aggiuntivo che supporta è la possibilità di fornire un file [manifesto](/windows/package-manager/winget/install#local-install) per specificare in dettaglio il pacchetto da installare. Per usare questa funzionalità con devinit, il parametro deve essere vuoto e la proprietà deve includere l'opzione seguita dal percorso `input` del manifesto , ad esempio `additionalOptions` `--manifest` `--manifest path.to.manifest.yml` .
 
 ### <a name="built-in-options"></a>Opzioni predefinite
 
-Lo strumento winget-install imposta una serie di argomenti della riga di comando winget per garantire che winget possa essere eseguito senza testa. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella `winget install` [documentazione](https://docs.microsoft.com/windows/package-manager/winget/install)di .
+Lo strumento winget-install imposta una serie di argomenti della riga di comando winget per garantire che winget possa essere eseguito senza testa. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella `winget install` [documentazione](/windows/package-manager/winget/install)di .
 
 | Nome     | Descrizione                                                                                                                       |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------|
