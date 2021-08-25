@@ -1,6 +1,6 @@
 ---
 title: Installare versioni di Visual Studio side-by-side
-description: Informazioni su come installare Visual Studio in un computer in cui è già installata una versione precedente o Visual Studio versione successiva di .
+description: Informazioni su come installare Visual Studio in un computer in cui è già installata una versione precedente Visual Studio versione successiva.
 ms.custom: SEO-VS-2020
 ms.date: 03/29/2021
 ms.prod: visual-studio-windows
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
 - install multiple versions of Visual Studio
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.openlocfilehash: c8d1da5f8cb5c237fe02a41197825d5086fc6471
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 80771228d89ae1632b2903151e0badae68040479
+ms.sourcegitcommit: 7510ddb64569af60fe4ccc563dea335a87c73cad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307021"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122836022"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare versioni di Visual Studio side-by-side
 
@@ -50,7 +50,7 @@ Prima di installare le versioni side-by-side, verificare le condizioni seguenti:
 
 * Se si usa Visual Studio 2022 per aprire una soluzione creata in Visual Studio 2017 o Visual Studio 2019, è possibile aprire e modificare di nuovo la soluzione nella versione precedente, purché non siano state implementate funzionalità specifiche di Visual Studio 2022.
 
-* Se si tenta di usare Visual Studio 2022 per aprire una soluzione creata in Visual Studio 2019 o in una versione precedente, potrebbe essere necessario modificare i progetti e i file in modo che siano compatibili con Visual Studio 2022. Per altre informazioni vedere la pagina [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+* Se si tenta di usare Visual Studio 2022 per aprire una soluzione creata in Visual Studio 2019 o una versione precedente, potrebbe essere necessario modificare i progetti e i file in modo che siano compatibili con Visual Studio 2022. Per altre informazioni vedere la pagina [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ::: moniker-end
 
@@ -58,15 +58,15 @@ Prima di installare le versioni side-by-side, verificare le condizioni seguenti:
 
 * Visual Studio non aggiorna automaticamente le estensioni, perché non tutte le estensioni sono compatibili. È necessario reinstallare le estensioni da [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o dall'autore del software.
 
-## <a name="install-minor-visual-studio-versions-side-by-side"></a>Installare versioni Visual Studio secondarie side-by-side
+## <a name="install-minor-visual-studio-versions-side-by-side"></a>Installare le Visual Studio secondarie side-by-side
 
-Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla successiva, il programma di installazione di Visual Studio aggiornerà per impostazione predefinita l'installazione corrente alla versione più recente in tale canale. Si supponga, ad esempio, che sia stata appena rilasciata la versione 16.9.4. Il programma di installazione tenterà di sostituire l'installazione corrente della versione 16.9.3 (o inferiore) con la versione 16.9.4, poiché entrambe le versioni fanno parte del canale di rilascio [di Visual Studio 2019](/visualstudio/productinfo/release-rhythm). La sostituzione della versione precedente con la versione più recente durante l'aggiornamento garantisce che le versioni precedenti Visual Studio non occupano spazio nel computer. Tuttavia, in alcuni casi specifici, può essere utile installare versioni secondarie diverse di Visual Studio side-by-side. Ad esempio, è possibile avere sia 16.9.3 che 16.9.4 nello stesso computer.
+Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla versione successiva, il programma di installazione di Visual Studio aggiornerà l'installazione corrente alla versione più recente in tale canale. Si supponga, ad esempio, che la versione 16.9.4 sia stata appena rilasciata. Il programma di installazione tenterà di sostituire l'installazione corrente della versione 16.9.3 (o successiva) con la versione 16.9.4, poiché entrambe le versioni fanno parte del canale di versione [Visual Studio 2019](/visualstudio/productinfo/release-rhythm). La sostituzione della versione precedente con la versione più recente durante l'aggiornamento consente di garantire che le versioni precedenti Visual Studio non occupano spazio nel computer. Tuttavia, in alcuni casi specifici può essere utile installare versioni secondarie diverse Visual Studio side-by-side. Ad esempio, potrebbe essere necessario avere sia 16.9.3 che 16.9.4 nello stesso computer.
 
 ::: moniker range="vs-2017"
 
 1. Scaricare il programma di avvio automatico più recente per Visual Studio 2017 versione 15.9 dalla pagina delle versioni precedenti di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per la versione che si vuole installare side-by-side con la versione esistente di Visual Studio.
 
-1. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore.** Nel prompt dei comandi passare alla cartella in cui si trova il Visual Studio del programma di avvio automatico.
+1. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il Windows menu Start, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore**. Al prompt dei comandi modificare la directory nella cartella in cui si trova Visual Studio file del programma di avvio automatico.
 
 1. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file .exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il .exe file deve corrispondere o essere simile a uno dei file seguenti:
 
@@ -81,7 +81,7 @@ Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio all
 
 1. Scaricare il file del programma di avvio automatico di Visual Studio 2019 dalla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) o dalla pagina delle versioni di [Visual Studio 2019](/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione secondaria che si vuole installare side-by-side con la versione esistente di Visual Studio.
 
-1. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore.** Nel prompt dei comandi passare alla cartella in cui si trova il Visual Studio del programma di avvio automatico.
+1. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il Windows menu Start, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore**. Al prompt dei comandi modificare la directory nella cartella in cui si trova Visual Studio file del programma di avvio automatico.
 
 1. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file .exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il .exe file deve corrispondere o essere simile a uno dei file seguenti:
 
@@ -90,7 +90,7 @@ Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio all
    * vs_community.exe per Visual Studio Community
 
    ```shell
-   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<AddNewPath>"
+   vs_Enterprise.exe --installPath "C:\Program Files\Microsoft Visual Studio\<AddNewPath>"
    ```
 
 1. Seguire le finestre di dialogo del programma di installazione per selezionare i componenti necessari per l'installazione. Per altre informazioni, vedere [Installare Visual Studio](install-visual-studio.md#step-4---choose-workloads).
@@ -99,9 +99,9 @@ Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio all
 
 ::: moniker range=">=vs-2022"
 
-1. Scaricare il file del programma di avvio automatico di Visual Studio 2022 dalla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) o dalla pagina delle versioni di [Visual Studio 2022](/visualstudio/releases/2022/history) per la versione secondaria che si vuole installare side-by-side con la versione esistente di Visual Studio.
+1. Scaricare il file del programma di avvio automatico [di Visual Studio](https://visualstudio.microsoft.com/downloads) 2022 dalla pagina di download di Visual Studio o dalla pagina delle versioni [di Visual Studio 2022](/visualstudio/releases/2022/history) per la versione secondaria che si vuole installare side-by-side con la versione esistente di Visual Studio.
 
-1. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore.** Nel prompt dei comandi passare alla cartella in cui si trova il Visual Studio del programma di avvio automatico.
+1. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il Windows menu Start, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore**. Al prompt dei comandi modificare la directory nella cartella in cui si trova Visual Studio file del programma di avvio automatico.
 
 1. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file .exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il .exe file deve corrispondere o essere simile a uno dei file seguenti:
 
@@ -127,7 +127,7 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 ::: moniker range="vs-2017"
 
-| Lingua     | Argomento                                                                                                                                                   |
+| Linguaggio     | Argomento                                                                                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
 | Visual C#    | [Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true)                 |
@@ -146,7 +146,7 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 ::: moniker range=">= vs-2019"
 
-| Lingua     | Argomento                                                                                                                           |
+| Linguaggio     | Argomento                                                                                                                           |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)         |
 | Visual C#    | [Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)                         |
