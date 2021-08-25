@@ -2,7 +2,7 @@
 title: Rimuovere Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate su Visual Studio rimuovere completamente i dati dal computer.
-ms.date: 08/17/2021
+ms.date: 08/24/2021
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -22,28 +22,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 82545d775d03b13ce87ea11682124f43e70856cf
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 4662eb0470811e3cf4047e1d51106734369ddf34
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334700"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785728"
 ---
 # <a name="remove-visual-studio"></a>Rimuovere Visual Studio
 
 Se si verifica un errore irreversibile e non è possibile ripristinare o disinstallare Visual Studio, è possibile eseguire lo strumento per rimuovere i file di installazione e le informazioni sul prodotto per tutte le istanze installate di `InstallCleanup.exe` Visual Studio 2017, Visual Studio 2019 o Visual Studio 2022.
 
 > [!WARNING]
-> Usare lo strumento InstallCleanup solo **come ultima** risorsa se il ripristino o la disinstallazione non riesce. Questo strumento potrebbe disinstallare le funzionalità Visual Studio altre installazioni o altri prodotti, che potrebbero anche essere necessari per il ripristino o la reinstallazione.
+> Usare lo strumento InstallCleanup solo **come ultima** risorsa se il ripristino o la disinstallazione non riesce. Questo strumento potrebbe disinstallare le funzionalità Visual Studio altre installazioni o altri prodotti, che potrebbe anche essere necessario ripristinare o reinstallare.
 
 ## <a name="run-installcleanupexe"></a>Eseguire InstallCleanup.exe
 
 Con lo strumento è possibile usare una delle opzioni della riga di `InstallCleanup.exe` comando seguenti:
 
-| Commutatore | Comportamento                                                                                                                                                                                                                                                                                                                 |
-|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `-i`   | Questa opzione è l'impostazione predefinita se non viene passata nessun'altra opzione. Rimuove solo la directory di installazione principale e le informazioni sul prodotto. Usare questa opzione se si intende reinstallare la stessa versione di Visual Studio dopo l'esecuzione dello `InstallCleanup.exe` strumento.                                                              |
-| `-f`   | Questa opzione rimuove la directory di installazione principale, le informazioni sul prodotto e la maggior parte delle altre funzionalità installate all'esterno della directory di installazione, che potrebbero essere condivise anche con altre installazioni Visual Studio o altri prodotti. Usare questa opzione se si prevede di rimuovere Visual Studio senza reinstallarla in un secondo momento. |
+| Commutatore | Comportamento |
+|-----------------|--------------------|
+|  `-i [version]`   | Questa opzione è l'impostazione predefinita se non viene passata nessun'altra opzione. Rimuove solo la directory di installazione principale e le informazioni sul prodotto. Usare questa opzione se si intende reinstallare la stessa versione di Visual Studio dopo l'esecuzione dello `InstallCleanup.exe` strumento. Se viene specificato un valore , verranno rimossi solo i prodotti con una versione che inizia con `[version]` questo valore stringa. |
+|   `-f`           | Questa opzione rimuove la directory di installazione principale, le informazioni sul prodotto e la maggior parte delle altre funzionalità installate all'esterno della directory di installazione, che potrebbero essere condivise anche con altre installazioni di Visual Studio o altri prodotti. Usare questa opzione se si prevede di rimuovere Visual Studio senza reinstallarla in un secondo momento. |
 
 Ecco come eseguire lo `InstallCleanup.exe` strumento:
 
