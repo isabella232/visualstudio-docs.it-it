@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 18f7da8bf8c3e2bd115891a5fb6a49f5381aacff
-ms.sourcegitcommit: 27cf209a0f9bb8579fee2066ef46d03a74f18dd7
+ms.openlocfilehash: caf09654a3e1efa6e0743641c87bfea455acb649
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "122233793"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981060"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -37,7 +37,7 @@ Nella tabella seguente sono elencati i numeri di build e le date di Visual Studi
 | 17.0.0 | Preview 1 | 17 giugno 2021 | 17.0.31410.414 |
 
 > [!NOTE]
-> Per visualizzare i dati per la versione precedente, vedere Visual Studio numeri di [build 2019 e date di versione](visual-studio-build-numbers-and-release-dates.md?view=vs-2019&preserve-view=true).
+> Per visualizzare i dati per la versione precedente, vedere Visual Studio numeri di build [2019 e date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2019&preserve-view=true)
 
 ::: moniker-end
 
@@ -49,6 +49,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Channel** | **Data di rilascio** | **Versione della build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.11.2 | Versione | 25 agosto 2021 | 16.11.31624.102 |
 | 16.11.1 | Versione | 16 agosto 2021 | 16.11.31613.86 |
 | 16.11.0 | Versione | 10 agosto 2021 | 16.11.31605.320 |
 | 16.9.10 | Versione | 10 agosto 2021 | 16.9.31529.145|
@@ -258,9 +259,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.0.0 | Preview 1 | 4 dicembre 2018 | 16.0.28329.73 |
 
 > [!NOTE]
-> Per visualizzare i dati per la *versione* precedente, vedere Visual Studio numeri di [build 2017 e date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
+> Per visualizzare i dati per la *versione precedente,* vedere i numeri di build [Visual Studio 2017 e le date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
 >
->Per visualizzare i dati per la *versione* successiva, vedere Visual Studio numeri di [build 2022 e date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true)
+>Per visualizzare i dati per la *versione* successiva, vedere i [numeri di build Visual Studio 2022 e le date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true)
 
 ::: moniker-end
 
@@ -270,7 +271,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**      | **Channel** | **Data di rilascio**   | **Versione della build** |
+| **Version**      | **Channel** | **Data di rilascio**   | **Versione build** |
 |------------------|-------------|--------------------|-------------------|
 | 15.9.38          | Versione     | 10 agosto 2021    | 15.9.28307.1622   |
 | 15.9.37          | Versione     | 13 luglio 2021      | 15.9.28307.1585   |
@@ -455,7 +456,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.0           | Versione     | 7 marzo 2017      | 15.0.26228.4      |
 
 > [!NOTE]
-> Per visualizzare i dati per le versioni più recenti, vedere Visual Studio [2019 build numbers and release dates](?preserve-view=true&view=vs-2019) o Visual Studio [2022 build numbers and release dates](?preserve-view=true&view=vs-2022).
+> Per visualizzare i dati per le versioni più recenti, vedere Visual Studio [2019 build numbers and release dates](?preserve-view=true&view=vs-2019) (Numeri di build 2019 e date di rilascio) o Visual Studio 2022 build numbers and release dates (Numeri di build [2022](?preserve-view=true&view=vs-2022)e date di rilascio).
 
 ::: moniker-end
 

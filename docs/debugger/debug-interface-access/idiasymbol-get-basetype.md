@@ -1,5 +1,6 @@
 ---
-title: IDiaSymbol::get_baseType | Microsoft Docs
+title: IDiaSymbol::get_baseType
+description: Recupera il tipo di base per questo simbolo
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: eb60845afddae32351cef3bdbb8ca302bc02a886
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f3fe85f37d75db8a86f544908e23a0a229992e89
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036239"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980485"
 ---
 # <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
-Recupera il tipo di base per questo<em>simbolo.</em>
+Recupera il tipo di base per questo simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +41,7 @@ HRESULT get_baseType (
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
 Il tipo di base per un simbolo può essere determinato ottenendo prima il tipo del simbolo e quindi interrogando il tipo restituito per il tipo di base. Si noti che alcuni simboli potrebbero non avere un tipo di base, ad esempio un nome di struttura.

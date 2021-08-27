@@ -1,6 +1,6 @@
 ---
 title: Creare un pacchetto del programma di avvio automatico localizzato | Microsoft Docs
-description: Informazioni su come creare versioni localizzate del pacchetto del programma di avvio automatico in ClickOnce creando altri due file per ogni impostazione locale.
+description: Informazioni su come creare versioni localizzate del pacchetto del programma di ClickOnce creando altri due file per ogni impostazione locale.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,19 +15,19 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 95b1d4e68f6508751d79fab2970d79cb74577e55
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e508781cfad49a81751c2ab1f828cc5ce74a303d
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090005"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980662"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto localizzato del programma di avvio automatico
-Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto creando altri due file per ogni impostazione locale: un file delle condizioni di licenza software (ad esempio *eula.rtf)* e un manifesto del pacchetto *(package.xml*).
+Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto del programma di avvio automatico creando altri due file per ogni impostazione locale: un file delle condizioni di licenza software (ad esempio *eula.rtf)* e un manifesto del pacchetto (*package.xml*).
 
  Per impostazione predefinita, Visual Studio 2010 include i pacchetti localizzati del programma di avvio automatico solo per .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. È possibile creare pacchetti localizzati per altri programmi di avvio automatico completando tre passaggi.
 
-1. Creare una cartella denominata in base al nome delle impostazioni locali in *\Programmi (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName>*.
+1. Creare una cartella denominata in base al nome delle impostazioni locali in *\Programmi (x86)\Microsoft SDK\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName>*.
 
 2. Creare un file contenente le condizioni di licenza software per il pacchetto del programma di avvio automatico e inserirlo nella nuova cartella.
 
@@ -42,9 +42,9 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 
 1. Creare una cartella denominata in base al nome delle impostazioni locali.
 
-     Nei computer a 32 bit creare la cartella nella cartella *\Programmi\Microsoft SDKs\ClickOnce Bootstrapper\Packages. \\ \<BootstrapperPackageName> \\*
+     Nei computer a 32 bit creare la cartella nella cartella *\Programmi\Microsoft SDK\ClickOnce \\ \<BootstrapperPackageName> \\ Bootstrapper\Packages.*
 
-     Nei computer a 64 bit creare la cartella nella cartella *\Programmi (x86)\Microsoft SDKs\ClickOnce \\ \<BootstrapperPackageName> \\ Bootstrapper\Packages.*
+     Nei computer a 64 bit creare la cartella nella cartella *\Programmi (x86)\Microsoft SDK\ClickOnce Bootstrapper\Packages. \\ \<BootstrapperPackageName> \\*
 
      La tabella seguente illustra i nomi di cartella che è possibile usare in base alle impostazioni locali.
 
@@ -67,34 +67,34 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 
 2. Creare un file contenente le condizioni di licenza software per il pacchetto del programma di avvio automatico e inserirlo nella nuova cartella.
 
-3. Creare un manifesto del pacchetto *package.xml* e inserire il manifesto nella nuova cartella. Per altre informazioni, vedere [Procedura: Creare un manifesto del pacchetto.](../deployment/how-to-create-a-package-manifest.md)
+3. Creare un manifesto del *pacchettopackage.xml* e metterlo nella nuova cartella. Per altre informazioni, vedere [Procedura: Creare un manifesto del pacchetto.](../deployment/how-to-create-a-package-manifest.md)
 
 4. Aggiornare la sezione `<Strings>` del manifesto di pacchetto in modo che le stringhe siano nella lingua appropriata per le impostazioni locali.
 
 5. Cambiare il valore di `<String Name="Culture">` in modo che corrisponda al nome della cartella.
 
-6. Salvare il file *package.xml.*
+6. Salvare il *package.xml* file.
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>Per creare un pacchetto del programma di avvio automatico per .NET Framework 3.5 Service Pack 1 localizzato in francese
 
 1. Creare una cartella denominata *fr*. Il nome della cartella deve corrispondere al nome delle impostazioni locali.
 
-     Nei computer a 32 bit creare la cartella nella cartella *\Programmi\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1. \\*
+     Nei computer a 32 bit creare la cartella nella cartella *\Programmi\Microsoft SDK\ClickOnce Bootstrapper\Packages\DotNetFX35SP1. \\*
 
-     Nei computer a 64 bit creare la cartella nella cartella *\Programmi (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1. \\*
+     Nei computer a 64 bit creare la cartella nella cartella *\Programmi (x86)\Microsoft SDK\ClickOnce Bootstrapper\Packages\DotNetFX35SP1. \\*
 
 2. Inserire una versione localizzata delle condizioni di licenza software nella cartella *fr*.
 
-3. Copiare il file *\Programmi (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* nella cartella *fr* e aprire il file in Progettazione XML.
+3. Copiare il file *\Programmi (x86)\Microsoft SDK\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* nella cartella *fr* e aprire il file in Progettazione XML.
 
 4. Aggiornare la sezione `<Strings>` del manifesto di pacchetto in modo che le stringhe di errore siano in francese.
 
 5. Cambiare il valore di `<String Name="Culture">` in *fr*.
 
-6. Salvare il file *package.xml.*
+6. Salvare il *package.xml* file.
 
 >[!NOTE]
-> A partire dalla versione Visual Studio 2019 Update 7, i pacchetti del programma di avvio automatico verranno individuati anche nel percorso *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages.*
+> A partire dalla versione Visual Studio 2019 Update 7, i pacchetti del programma di avvio automatico verranno individuati anche nel percorso {PERCORSO DI INSTALLAZIONE *VS}\MSBuild\Microsoft\VisualStudio\BootstrapperPackages.*
 
 ## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti del programma di avvio automatico personalizzati](../deployment/creating-bootstrapper-packages.md)

@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5490a0d4bdc6a0b980fdf19a1f63259a22b8a572
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e744ef4ed6888673e6e412a197f6f941c0d0ae80
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028358"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981047"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -50,7 +50,7 @@ In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual St
 
 1. Aggiornare Visual Studio: se è già stato installato Visual Studio, assicurarsi di eseguire la versione più recente. Per altre informazioni su come aggiornare l'installazione, vedere la [pagina Aggiornamento Visual Studio alla versione più](../../install/update-visual-studio.md) recente.
 
-1. Scegliere il tema (facoltativo): questa esercitazione include screenshot che usano il tema scuro. È possibile [personalizzare l'IDE Visual Studio e la pagina Editor](../../ide/quickstart-personalize-the-ide.md) per altre informazioni.
+1. Scegliere il tema (facoltativo): questa esercitazione include screenshot che usano il tema scuro. Per altre [informazioni, è possibile Visual Studio l'IDE e la pagina Editor.](../../ide/quickstart-personalize-the-ide.md)
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -111,12 +111,12 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows** dall'elenco Piattaforma e **Web** dall'elenco dei tipi di progetto.
 
-      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il modello app Web ASP.NET Core** e quindi scegliere **Avanti.**
+      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il modello ASP.NET Core App Web** e quindi scegliere **Avanti.**
 
    :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Scegliere il modello C# per l'ASP.NET Core Web":::
 
    > [!NOTE]
-   > Se il modello app Web **ASP.NET Core** non è visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se il modello app  Web ASP.NET Core non è visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -188,7 +188,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      ![Selezionare il pulsante IIS Express in Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Se viene visualizzato il messaggio di errore Impossibile connettersi al server Web **'IIS Express',** chiudere Visual Studio  e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
+     > Se viene visualizzato un messaggio di errore che indica Impossibile connettersi al **server Web 'IIS Express',** chiudere Visual Studio e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida.  Eseguire quindi di nuovo l'applicazione.
      >
      > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento.
 
@@ -246,7 +246,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
    ![Visualizzare la pagina About aggiornata che include le modifiche apportate](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
-1. Chiudere il Web browser, premere + **MAIUSC F5** per arrestare la modalità debug e quindi chiudere Visual Studio.
+1. Chiudere il Web browser, premere + **MAIUSC F5** per arrestare la modalità di debug e quindi chiudere Visual Studio.
 
 ::: moniker-end
 
@@ -258,7 +258,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
     ![Esplora soluzioni di ASP.NET in Visual Studio per la soluzione Razor Pages denominata MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. Espandere la **cartella** Pagine.
+ 1. Espandere la **cartella** Pages.
 
      ![Cartella Pages in Esplora soluzioni](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
 
@@ -291,11 +291,11 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      ![Selezionare il pulsante IIS Express in Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Se viene visualizzato il messaggio di errore Impossibile connettersi al server Web **'IIS Express',** chiudere Visual Studio  e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
+     > Se viene visualizzato un messaggio di errore che indica Impossibile connettersi al **server Web 'IIS Express',** chiudere Visual Studio e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida.  Eseguire quindi di nuovo l'applicazione.
      >
      > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento.
 
-1. Visual Studio apre una finestra del browser. Nella barra dei menu dovrebbero essere quindi presenti **le pagine** **Home** e Privacy.
+1. Visual Studio apre una finestra del browser. Nella barra dei menu  dovrebbero essere quindi presenti le pagine **Home** e Privacy.
 
 1. Scegliere **Privacy** dalla barra dei menu.
 
@@ -305,17 +305,17 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
 1. Tornare a Visual Studio e quindi premere **MAIUSC+F5** per interrompere la modalità di debug. Verrà anche chiuso il progetto nella finestra del browser.
 
-1. In Visual Studio aprire **Privacy.cshtml per** la modifica. Eliminare quindi le parole Use this page to _detail your site's privacy policy_ (Usare questa pagina per dettagliare l'informativa sulla privacy del sito) e al suo posto aggiungere le parole This page is under construction as of ["TimeStamp"] (Questa pagina è in costruzione a _@ViewData ["TimeStamp"]_).
+1. In Visual Studio aprire **Privacy.cshtml per** la modifica. Eliminare quindi le parole Use _this page to detail your site's privacy policy_ (Usa questa pagina) per visualizzare in dettaglio l'informativa sulla privacy del sito e, al suo posto, aggiungere le parole This page is under construction as of _@ViewData ["TimeStamp"]_.
 
     ![Modificare il testo nel file Privacy.cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
-1. A questo punto, apportare una modifica al codice. Scegliere **Privacy.cshtml.cs.** Eliminare poi le direttive `using` all'inizio del file usando il metodo veloce seguente:
+1. A questo punto, apportare una modifica al codice. Scegliere **Privacy.cshtml.cs**. Eliminare poi le direttive `using` all'inizio del file usando il metodo veloce seguente:
 
-   Scegliere una qualsiasi delle direttive `using` disattivate e una lampadina [Azioni rapide](../../ide/quick-actions.md) verrà visualizzata sotto il punto di inserimento o nel margine sinistro. Scegliere la lampadina e quindi passare il mouse su **Rimuovi using non necessari.**
+   Scegliere una qualsiasi delle direttive `using` disattivate e una lampadina [Azioni rapide](../../ide/quick-actions.md) verrà visualizzata sotto il punto di inserimento o nel margine sinistro. Scegliere la lampadina e quindi passare il puntatore **del mouse su Rimuovi le operazioni non necessarie.**
 
-   ![Rimuovere le using non necessarie nel file Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![Rimuovere gli utilizzi non necessari nel file Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
-   Scegliere ora **Anteprima modifiche** per vedere cosa cambierà.
+   A questo punto **scegliere Anteprima modifiche** per vedere cosa cambierà.
 
    ![Anteprima modifiche](media/vs-2019/csharp-aspnet-preview-changes.png)
 
@@ -331,7 +331,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      }
     ```
 
-1. Si noti che in DateTime vengono visualizzate due sottolineature **ondulate.** Vengono visualizzate sottolineature ondulate perché questi tipi non sono nell'ambito.
+1. Si noti che in DateTime vengono visualizzate due sottolineature **ondulate.** Le sottolineature ondulate vengono visualizzate perché questo tipo non è in ambito.
 
    ![Errori contrassegnati con sottolineature ondulate nel metodo OnGet](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
 
@@ -358,7 +358,7 @@ Ecco una rapida serie di domande frequenti per evidenziare alcuni concetti chiav
 
 ### <a name="what-is-c"></a>Che cos'è C#?
 
-[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/) è un linguaggio di programmazione indipendente dai tipi e orientato agli oggetti progettato per garantire solidità e facilità di apprendimento.
+[C#](/dotnet/csharp/tour-of-csharp/) è un linguaggio di programmazione indipendente dai tipi e orientato agli oggetti progettato per garantire solidità e facilità di apprendimento.
 
 ### <a name="what-is-aspnet-core"></a>Che cos'è ASP.NET Core?
 

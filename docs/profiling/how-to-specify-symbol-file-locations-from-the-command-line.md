@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf5c7a87dd2fd5a7e9e3b7884865961df0d98e2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5f1978ba849840ffe8177c51e054b43a3978514d
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150066"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980675"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare percorsi dei file di simboli tramite la riga di comando
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione *pdb*) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:
@@ -49,9 +49,9 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
 
 2. Usare la sintassi seguente per impostare la variabile di ambiente **_NT_SYMBOL_PATH** o l'opzione /SymbolPath di VSPerfReport:
 
-    `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
+    `srv*{LocalStore}*https://msdl.microsoft.com/download/symbols`
 
-    dove *<LocalStore>* è il percorso della directory locale creata.
+    dove *{LocalStore}* è il percorso della directory locale creata.
 
 ## <a name="specify-component-symbol-files"></a>Specificare i file di simboli dei componenti
  Gli strumenti di profilatura eseguono la ricerca di file con estensione *pdb* dei componenti da profilare nei rispettivi percorsi originali archiviati nei componenti o nella cartella contenente il file di dati di profilatura. È possibile specificare altri percorsi per la ricerca aggiungendo uno o più percorsi a **_NT_SYMBOL_PATH** o all'opzione **/SymbolPath**. Separare i percorsi con punti e virgola.

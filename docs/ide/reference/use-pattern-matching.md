@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93b5541ace035fb9606355865974657faf83ec32
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: fb989c2ba3567e161f3576a6a654f0f27f9b55a3
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116864"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980917"
 ---
 # <a name="use-pattern-matching"></a>Usa i criteri di ricerca
 
@@ -26,7 +26,7 @@ Questo refactoring si applica a:
 
 **Cosa:** Usare i criteri di ricerca.
 
-**Quando:** Si vogliono usare le nuove funzionalità di criteri [di ricerca C#.](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-9#pattern-matching-enhancements)
+**Quando:** Si vogliono usare le nuove funzionalità di criteri di ricerca [C#.](/dotnet/csharp/whats-new/csharp-9#pattern-matching-enhancements)
 
 **Perché:** Questo refactoring rende il codice più chiaro e conciso.
 

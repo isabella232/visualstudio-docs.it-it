@@ -1,5 +1,5 @@
 ---
-description: Restituisce il numero di tag del puntatore del tasto di scelta rapida in una C++ AMP stub.
+description: Dato un valore tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub.
 title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 31dbdad20ec5d00ee08e817cfd0beebd3e02a994
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b5ccf90584cfc948fc4ecb886dd20ada5cbf6036
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097803"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980699"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Restituisce il numero di tag del puntatore del tasto di scelta rapida in una C++ AMP stub.
+
+Dato un valore tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub.
 
 ## <a name="syntax"></a>Sintassi
 

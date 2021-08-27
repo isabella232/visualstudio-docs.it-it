@@ -11,21 +11,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0be1f06d15c3309d8e67cab50a444228d99241fcde9c8648cc24431d27260f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 608cbc78cd344ab2dd05bc1c7c993a4b69818715
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345868"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980904"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurare Windows firewall per il debug remoto
 
-In una rete protetta da Windows, il firewall deve essere configurato per consentire il debug remoto. Visual Studio e gli strumenti di debug remoto tentano di aprire le porte del firewall corrette durante l'installazione o l'avvio, ma potrebbe anche essere necessario aprire le porte o consentire le app manualmente.
+In una rete protetta da Windows, il firewall deve essere configurato per consentire il debug remoto. Visual Studio e gli strumenti di debug remoto provano ad aprire le porte del firewall corrette durante l'installazione o l'avvio, ma potrebbe anche essere necessario aprire le porte o consentire le app manualmente.
 
-Questo argomento descrive come configurare il firewall Windows per abilitare il debug remoto in Windows 10, 8/8.1 e 7; e Windows Server 2012 computer R2, 2012 e 2008 R2. Il Visual Studio e il computer remoto non devono eseguire lo stesso sistema operativo. Ad esempio, il computer di Visual Studio può eseguire Windows 10 e il computer remoto può eseguire Windows Server 2012 R2.
+Questo argomento descrive come configurare il firewall Windows per abilitare il debug remoto in Windows 10, 8/8.1 e 7; e Windows Server 2012 computer R2, 2012 e 2008 R2. Non Visual Studio computer remoto e il computer remoto devono eseguire lo stesso sistema operativo. Ad esempio, il computer di Visual Studio può eseguire Windows 10 e il computer remoto può eseguire Windows Server 2012 R2.
 
 >[!NOTE]
->Le istruzioni per la configurazione del firewall Windows sono leggermente diverse nei diversi sistemi operativi e nelle versioni precedenti di Windows. Windows 8/8.1, Windows 10 e Windows Server 2012 usano la parola *app*, mentre Windows 7 e Windows Server 2008 usano la parola *programma*.
+>Le istruzioni per la configurazione del firewall Windows sono leggermente diverse in sistemi operativi diversi e per le versioni precedenti di Windows. Windows 8/8.1, Windows 10 e Windows Server 2012 usano la parola *app*, mentre Windows 7 e Windows Server 2008 usano la parola *programma*.
 
 ## <a name="configure-ports-for-remote-debugging"></a>Configurare le porte per il debug remoto
 
@@ -33,7 +33,7 @@ Visual Studio e il debugger remoto tentano di aprire le porte corrette durante l
 
 **Per aprire una porta:**
 
-1. Nel menu **Windows Start** cercare e aprire Windows Firewall con **sicurezza avanzata.** In Windows 10, questo è **Windows Defender firewall con sicurezza avanzata.**
+1. Nel menu **Windows Start** cercare e aprire Windows Firewall con **sicurezza avanzata**. In Windows 10, questo è **Windows Defender firewall con sicurezza avanzata.**
 
 1. Per una nuova porta in ingresso, selezionare **Regole in ingresso e** quindi nuova **regola.** Per una regola in uscita, selezionare **invece Regole in** uscita.
 
@@ -47,13 +47,13 @@ Visual Studio e il debugger remoto tentano di aprire le porte corrette durante l
 
 1. Selezionare uno o più tipi di rete da abilitare, incluso il tipo di rete per la connessione remota, quindi selezionare **Avanti.**
 
-1. Aggiungere un nome per la regola , ad esempio **msvsmon**, **IIS** **o Distribuzione Web**, quindi selezionare **Fine**.
+1. Aggiungere un nome per la regola , ad esempio **msvsmon**, **IIS** **o Distribuzione Web**, quindi selezionare **Fine.**
 
-   La nuova regola verrà visualizzata e selezionata **nell'elenco Regole in ingresso** o Regole **in** uscita .
+   La nuova regola dovrebbe essere visualizzata ed essere selezionata **nell'elenco Regole in ingresso** o Regole **in** uscita .
 
 **Per aprire una porta tramite PowerShell:**
 
-Per Windows firewall, è possibile usare i comandi di PowerShell, ad [esempio New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps).
+Per Windows firewall, è possibile usare i comandi di PowerShell, ad [esempio New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule).
 
 Nell'esempio seguente viene aperta la porta 4024 per il debugger remoto nel computer remoto. Il percorso da usare potrebbe essere diverso.
 
@@ -69,7 +69,7 @@ Per il debug remoto, nel computer remoto devono essere aperte le porte seguenti:
 
 |**Ports**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|
 |-|-|-|-|
-|4022|In arrivo|TCP|Per Visual Studio 2017. Il numero di porta incrementa di 2 per ogni Visual Studio versione. Per altre informazioni, vedere Visual Studio [porte del debugger remoto.](../debugger/remote-debugger-port-assignments.md)|
+|4022|In arrivo|TCP|Per Visual Studio 2017. Il numero di porta incrementa di 2 per ogni Visual Studio versione. Per altre informazioni, vedere [l'Visual Studio delle porte del debugger remoto.](../debugger/remote-debugger-port-assignments.md)|
 |4023|In arrivo|TCP|Per Visual Studio 2017. Il numero di porta incrementa di 2 per ogni Visual Studio versione. Questa porta viene usata solo per eseguire il debug remoto di un processo a 32 bit da una versione a 64 bit del debugger remoto. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|In uscita|UDP|(Facoltativo) Obbligatorio per l'individuazione del debugger remoto.|
 
@@ -79,7 +79,7 @@ Per il debug remoto, nel computer remoto devono essere aperte le porte seguenti:
 
 |**Ports**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|
 |-|-|-|-|
-|4024|In arrivo|TCP|Per Visual Studio 2019. Il numero di porta incrementa di 2 per ogni Visual Studio versione. Per altre informazioni, vedere Visual Studio [porte del debugger remoto.](../debugger/remote-debugger-port-assignments.md)|
+|4024|In arrivo|TCP|Per Visual Studio 2019. Il numero di porta incrementa di 2 per ogni Visual Studio versione. Per altre informazioni, vedere [l'Visual Studio delle porte del debugger remoto.](../debugger/remote-debugger-port-assignments.md)|
 |4025|In arrivo|TCP|Per Visual Studio 2019. Il numero di porta incrementa di 2 per ogni Visual Studio versione. Questa porta viene usata solo per eseguire il debug remoto di un processo a 32 bit da una versione a 64 bit del debugger remoto. Per altre informazioni, vedere [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|In uscita|UDP|(Facoltativo) Obbligatorio per l'individuazione del debugger remoto.|
 
@@ -92,7 +92,7 @@ Se si seleziona Usa **modalità di compatibilità gestita** in **Strumenti**  > 
 |135, 139, 445|In uscita|TCP|Obbligatorio.|
 |137, 138|In uscita|UDP|Obbligatorio.|
 
-Se i criteri di dominio richiedono che la comunicazione di rete sia eseguita tramite IPSec, è necessario aprire porte aggiuntive sia nel Visual Studio che nei computer remoti. Per eseguire il debug in un server Web IIS remoto, aprire la porta 80 nel computer remoto.
+Se i criteri di dominio richiedono che la comunicazione di rete sia eseguita tramite IPSec, è necessario aprire porte aggiuntive nei computer Visual Studio e remoti. Per eseguire il debug in un server Web IIS remoto, aprire la porta 80 nel computer remoto.
 
 |**Ports**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|
 |-|-|-|-|
@@ -111,11 +111,11 @@ In un computer remoto gli strumenti di debug remoto sono disponibili in:
 
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>Consentire e configurare il debugger remoto tramite Windows firewall
 
-1. Windows Nel menu **Start cercare** e aprire Windows **Firewall** o **Windows Defender Firewall.**
+1. Nel menu **Windows Start** cercare e aprire Windows **Firewall** o **Windows Defender Firewall**.
 
-1. Selezionare **Allow an app through Windows Firewall (Consenti un'app Windows Firewall).**
+1. Selezionare **Allow an app through Windows Firewall (Consenti un'app Windows firewall).**
 
-1. Se **debugger remoto** o **Visual Studio Remote Debugger** non viene visualizzato **in** App e funzionalità consentite, selezionare Cambia impostazioni **e** quindi selezionare **Consenti un'altra app.**
+1. Se **debugger remoto** o **Visual Studio Remote Debugger** non viene visualizzato **in** App e funzionalità consentite, selezionare Modifica impostazioni **e** quindi selezionare **Consenti un'altra app.**
 
 1. Se l'app del debugger remoto non è ancora elencata nella finestra di dialogo Aggiungi **un'app,** selezionare Sfoglia e passare a * Debugger remoto IDE Common7, a seconda dell'architettura appropriata per \<Visual Studio installation directory\> \\ \\ \\ \\ \<x86*, *x64*, or *Appx*\> l'app. Selezionare *msvsmon.exe* e quindi **aggiungi**.
 

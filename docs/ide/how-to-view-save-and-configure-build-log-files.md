@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bca2ae08037a63cfbf8647808c7b1c7329ad2aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3316bf26f660b04c4f003b02523be3f9c408e73f
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914918"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980930"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
 
@@ -24,7 +24,7 @@ Dopo aver compilato un progetto nell'IDE di Visual Studio, è possibile visualiz
 
 - Per i progetti C++, è anche possibile visualizzare le stesse informazioni in un file di log creato e salvato quando si compila un progetto. 
 
-- Per i progetti di codice gestito, è possibile fare clic nella finestra output di compilazione e premere **CTRL** + **S**. Visual Studio richiede un percorso in cui salvare le informazioni dalla finestra di **output** in un file di log.
+- Per i progetti di codice gestito, è possibile fare clic nella finestra di output di compilazione e premere **CTRL** + **S**. Visual Studio richiede un percorso per salvare le informazioni dalla finestra **Output** in un file di log.
 
 È anche possibile usare l'IDE per specificare i tipi di informazioni da visualizzare per ogni compilazione.
 
@@ -32,15 +32,15 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Per visualizzare il file di log di compilazione per un progetto C++
 
-1. In Esplora **risorse** o **Esplora file** aprire il file seguente (relativo alla cartella radice del progetto): *versione* \\ <ProjectName> \> . Log * o *Debug \\<NomeProgetto \> . log*
+1. In **Windows Explorer** o **Esplora file** aprire il file seguente (relativo alla cartella radice del progetto): *Versione* \\ {ProjectName}. Log* o *Debug \\ {ProjectName}.log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Per creare un file di log di compilazione per un progetto di codice gestito
 
-1. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
+1. Sulla barra dei menu scegliere **Compila**  >  **soluzione**.
 
 2. Nella finestra **Output** fare clic in un punto qualsiasi nel testo.
 
-3. Premere **CTRL** + **S**.
+3. Premere  + **CTRL+S.**
 
    Visual Studio richiede di specificare il percorso in cui salvare l'output di compilazione.
 
@@ -48,7 +48,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Per modificare la quantità di informazioni inclusa nel log di compilazione
 
-1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni**.
+1. Sulla barra dei menu scegliere **Opzioni**  >  **strumenti**.
 
 2. Nella pagina **Progetti e soluzioni** scegliere la pagina **Compila ed esegui**.
 
@@ -69,7 +69,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 ## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Usare i log binari per semplificare la ricerca di file di log di grandi dimensioni
 
-I log binari sono una funzionalità facoltativa per i progetti .NET che consente di ottenere un'esperienza di ricerca dei log più completa, con la quale sarebbe possibile trovare facilmente informazioni nei log di grandi dimensioni. Per usare i log binari, installare gli [strumenti dei sistemi di progetto](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Per ulteriori informazioni, vedere [https://msbuildlog.com](https://msbuildlog.com) e [log binario](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
+I log binari sono una funzionalità facoltativa per i progetti .NET che consente di ottenere un'esperienza di ricerca dei log più completa, con la quale sarebbe possibile trovare facilmente informazioni nei log di grandi dimensioni. Per usare i log binari, installare gli [strumenti dei sistemi di progetto](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Per altre informazioni, vedere [https://msbuildlog.com](https://msbuildlog.com) e [Log binario](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
 ## <a name="see-also"></a>Vedi anche
 

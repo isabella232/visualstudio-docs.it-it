@@ -1,6 +1,6 @@
 ---
 title: Compilare e compilare codice TypeScript usando NuGet
-description: Informazioni su come aggiungere il supporto Typescript ai progetti Visual Studio usando il pacchetto NuGet.
+description: Informazioni su come aggiungere il supporto typescript ai progetti Visual Studio usando il pacchetto NuGet.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -11,28 +11,28 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8e50a88b53683ba98a2633e9fa4adbab7111d2ca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b18f7503dd090856b48b6b6fa17af7af34886706
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077855"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980735"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compilare codice TypeScript (ASP.NET Core)
 
 È possibile aggiungere il supporto TypeScript ai progetti usando il TypeScript SDK, disponibile per impostazione predefinita nel programma di installazione di Visual Studio o usando il pacchetto NuGet. Per i progetti sviluppati Visual Studio 2019, si consiglia di usare typeScript NuGet per una maggiore portabilità tra piattaforme e ambienti diversi.
 
-Per ASP.NET Core, un utilizzo comune per il pacchetto NuGet è la compilazione di TypeScript usando il interfaccia della riga di comando di .NET Core. A meno che il file di progetto non venga modificato manualmente per importare destinazioni di compilazione da un'installazione di TypeScript SDK, il pacchetto NuGet è l'unico modo per abilitare la compilazione TypeScript usando comandi di interfaccia della riga di comando di .NET Core come `dotnet build` e `dotnet publish` . Inoltre, per [MSBuild'integrazione](https://www.staging-typescript.org/docs/handbook/compiler-options-in-msbuild.html) con ASP.NET Core e TypeScript, scegliere il pacchetto NuGet più il pacchetto npm.
+Per ASP.NET Core, un utilizzo comune per il pacchetto NuGet è la compilazione di TypeScript usando il interfaccia della riga di comando di .NET Core. A meno che il file di progetto non venga modificato manualmente per importare destinazioni di compilazione da un'installazione di TypeScript SDK, il pacchetto NuGet è l'unico modo per abilitare la compilazione TypeScript usando comandi interfaccia della riga di comando di .NET Core come `dotnet build` e `dotnet publish` . Inoltre, per [MSBuild'integrazione](https://www.staging-typescript.org/docs/handbook/compiler-options-in-msbuild.html) con ASP.NET Core e TypeScript, scegliere il pacchetto NuGet pacchetto rispetto al pacchetto npm.
 
 ## <a name="add-typescript-support-with-nuget"></a>Aggiungere il supporto di TypeScript con NuGet
 
 [Il pacchetto di NuGet TypeScript aggiunge](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild) il supporto TypeScript. Quando si installa il pacchetto NuGet per TypeScript 3.2 o versione successiva nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
 
-Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelevato dal Visual Studio. Se non è installata una Node.js, è consigliabile installare la versione LTS dal sito [WebNode.js.](https://nodejs.org/en/download/)
+Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelevato Visual Studio. Se non è installato Node.js, è consigliabile installare la versione LTS dal sito [WebNode.js.](https://nodejs.org/en/download/)
 
 1. Aprire il progetto ASP.NET Core in Visual Studio.
 
-1. In Esplora soluzioni (riquadro destro). Fare clic con il pulsante destro del mouse sul nodo **del progetto e scegliere Gestisci NuGet pacchetti**. Nella scheda **Sfoglia** cercare **Microsoft.TypeScript.MSBuild** e quindi fare  clic su Installa a destra per installare il pacchetto.
+1. In Esplora soluzioni (riquadro destro). Fare clic con il pulsante destro del mouse sul nodo **del progetto e scegliere Gestisci NuGet pacchetti**. Nella scheda **Sfoglia** cercare **Microsoft.TypeScript.MSBuild** e quindi  fare clic su Installa a destra per installare il pacchetto.
 
    ![Aggiungere NuGet pacchetto](../javascript/media/aspnet-core-ts-nuget.png)
 
@@ -105,9 +105,9 @@ Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelev
    }
    ```
 
-Per un esempio dell'uso di gulp con Task Runner per compilare l'app, vedere ASP.NET Core [e TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+Per un esempio dell'uso di gulp con Task Runner per compilare l'app, [vedere ASP.NET Core e TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 
-Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso da quello previsto, potrebbe essere necessario impostare il percorso per l'uso di Visual Studio. Scegliere **Strumenti**  >  **Opzioni**. In **Progetti e soluzioni** scegliere Web **Gestione pacchetti** Strumenti  >  **Web esterni.**
+Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso da quello previsto, potrebbe essere necessario impostare il percorso per Visual Studio da usare. Scegliere **Strumenti**  >  **Opzioni**. In **Progetti e soluzioni** scegliere Web **Gestione pacchetti** Strumenti  >  **Web esterni.**
 
 ### <a name="run-the-application"></a>Eseguire l'applicazione
 
@@ -124,7 +124,7 @@ Per istruzioni su come eseguire l'app dopo la compilazione, vedere [Creare la pr
 
     1. *Microsoft.TypeScript. MSBuild.targets*
 
-        Questo file imposta le variabili che specificano la piattaforma di run-time, ad esempio un percorso *diTypeScript.Tasks.dll*, prima di importare *Microsoft.TypeScript.targets* dalla *cartella tools.*
+        Questo file imposta le variabili che specificano la piattaforma *di* run-time, ad esempio un percorsoTypeScript.Tasks.dll, prima di *importare Microsoft.TypeScript.targets* dalla *cartella tools.*
 
     2. *Microsoft.TypeScript. MSBuild.props*
 
@@ -145,20 +145,20 @@ Per istruzioni su come eseguire l'app dopo la compilazione, vedere [Creare la pr
 
     2. *netstandard1.3*
 
-        Questa cartella contiene un'altra versione di , che viene usata durante la compilazione di progetti in `TypeScript.Tasks.dll` un computer non Windows distribuzione.
+        Questa cartella contiene un'altra versione di , che viene usata durante la compilazione di progetti in un computer `TypeScript.Tasks.dll` non Windows distribuzione.
 
     3. *Tsc*
 
         Questa cartella contiene `tsc.js` e tutti i file di dipendenza necessari per `tsserver.js` eseguirli come script del nodo.
 
         > [!NOTE]
-        > Se Visual Studio installato, ilnode.exe *in* bundle verrà prelevato automaticamente. In Node.js necessario installare nel computer.
+        > Se Visual Studio installato, ilnode.exe *in* bundle verrà prelevato automaticamente. In Node.js deve essere installato nel computer.
 
         Le versioni precedenti alla 3.1 contenevano un `tsc.exe` eseguibile per eseguire la compilazione. Nella versione 3.1 questa funzionalità è stata rimossa a favore dell'uso di `node.exe` .
 
 ### <a name="remove-default-imports"></a>Rimuovere le importazioni predefinite
 
-Nei progetti ASP.NET Core che usano [il](https://docs.microsoft.com/nuget/resources/check-project-format)formato non di tipo SDK , potrebbe essere necessario rimuovere alcuni elementi del file di progetto.
+Nei progetti ASP.NET Core che usano [il formato non di tipo SDK](/nuget/resources/check-project-format), potrebbe essere necessario rimuovere alcuni elementi del file di progetto.
 
 Se si usa il pacchetto NuGet per MSBuild per un progetto, il file di progetto non deve `Microsoft.TypeScript.Default.props` importare o `Microsoft.TypeScript.targets` . I file vengono importati dal pacchetto NuGet, quindi includerli separatamente può causare un comportamento imprevisto.
 
