@@ -17,21 +17,22 @@
         - name: App multi-contenitore con Docker Compose
           href: tutorial-multicontainer.md
     - name: Procedura
+      expanded: true
       items:
         - name: Debug delle applicazioni in un contenitore Docker locale
           href: edit-and-refresh.md
+        - name: Usare la finestra Contenitori
+          href: view-and-diagnose-containers.md
+        - name: Avviare un subset di servizi Compose
+          href: launch-profiles.md
+        - name: Configurare gli strumenti contenitore
+          href: container-tools-configure.md
         - name: Eseguire la distribuzione nel registro contenitori
           href: hosting-web-apps-in-docker.md
         - name: Distribuire nel Servizio app di Azure
           href: deploy-app-service.md
         - name: Distribuire in Docker Hub
           href: deploy-docker-hub.md
-        - name: Gestire i profili di avvio
-          href: launch-profiles.md
-        - name: Visualizzare e diagnosticare contenitori e immagini
-          href: view-and-diagnose-containers.md
-        - name: Configurare gli strumenti contenitore
-          href: container-tools-configure.md
     - name: Concetti
       items:
         - name: Modalità di compilazione delle app aggiunte a contenitori in Visual Studio

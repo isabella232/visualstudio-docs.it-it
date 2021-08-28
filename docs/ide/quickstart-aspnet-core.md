@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e610f58fad678f297afffa5796f33e76de6b2224
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 974f6bf70d6866893a61a14f9e2999ba265fb166
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062485"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123097018"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
@@ -30,13 +30,13 @@ In questa introduzione di 5-10 minuti che spiega come usare Visual Studio viene 
 
 ::: moniker range="vs-2017"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -99,7 +99,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
    :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Scegliere il modello C# per l'ASP.NET Core Web":::
 
    > [!NOTE]
-   > Se il modello di app **Web ASP.NET Core** non è visualizzato, è possibile installarlo dalla finestra Crea **un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se il modello di app **ASP.NET Core Web** non è visualizzato, è possibile installarlo dalla finestra Crea **un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -119,7 +119,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
     - Microsoft Identity Platform: questa opzione usa Active Directory, Azure AD o Microsoft 365 per l'autenticazione.
     - Windows: adatto per le applicazioni Intranet.
     
-    Lasciare **deselezionata la casella Abilita Docker** e selezionare **Nessuno per** Tipo di autenticazione. Scegliere quindi **Create** (Crea).
+    Lasciare **deselezionata la** casella Abilita Docker e selezionare **Nessuno per** Tipo di autenticazione. Scegliere quindi **Create** (Crea).
 
    :::image type="content" source="../get-started/csharp/media/vs-2019/aspnet-core-additional-information.png" alt-text="nella finestra &quot;Informazioni aggiuntive&quot; assicurarsi che sia selezionato .NET Core 3.1 e lasciare tutte le impostazioni predefinite":::
 
@@ -198,7 +198,7 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 1. Modificare il testo "Welcome" (Benvenuto) in "**Hello World!**".
 
-   ![Nell'editor Visual Studio modificare il codice HTML predefinito che indica il Hello World invece](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+   ![Nell'editor Visual Studio, modificare il codice HTML predefinito che indica benvenuto per Hello World invece](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
 1. Scegliere **IIS Express** o premere **CTRL**+**F5** per eseguire l'app e aprirla in un Web browser.
 
@@ -217,10 +217,15 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni, passare all'esercitazione successiva:
+Per altre informazioni sulla creazione di ASP.NET web, continuare con l'esercitazione seguente:
 
 > [!div class="nextstepaction"]
 > [Introduzione a C# e ad ASP.NET Core in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
+
+In caso contrario, informazioni su come contenitorizzare l'app Web con Docker:
+
+> [!div class="nextstepaction"]
+> [Strumenti contenitore in Visual Studio](../containers/overview.md)
 
 ## <a name="see-also"></a>Vedi anche
 

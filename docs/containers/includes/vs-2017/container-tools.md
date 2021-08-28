@@ -1,17 +1,17 @@
 ---
-title: Strumenti contenitore di Visual Studio con ASP.NET Core
+title: Visual Studio Strumenti contenitore per Docker con ASP.NET in Windows
 author: ghogen
 description: Informazioni su come usare gli strumenti di Visual Studio 2017 e Docker per Windows
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-container-tools
 ms.topic: include
-ms.openlocfilehash: cc9df8638e72e2175aa55b5b8ab819d4b476d5dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d403572e60d29c3af5197cc3bb647fa47bf8c0aa
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147375"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123122143"
 ---
 Con Visual Studio, è possibile compilare, eseguire il debug ed eseguire facilmente app ASP.NET Core ASP.NET Core in contenitori e pubblicarle in Registro Azure Container, Docker Hub, Servizio app di Azure o nel registro contenitori. In questo articolo verrà pubblicata in Registro Contenitori.
 

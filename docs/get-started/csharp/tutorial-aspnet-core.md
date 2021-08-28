@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e744ef4ed6888673e6e412a197f6f941c0d0ae80
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.openlocfilehash: 1a42e1d1d083a383715db72b018b695fc4a9829c
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122981047"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123097031"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -116,7 +116,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
    :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Scegliere il modello C# per l'ASP.NET Core Web":::
 
    > [!NOTE]
-   > Se il modello app  Web ASP.NET Core non è visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se il modello app **Web ASP.NET Core** non è visualizzato, è possibile installarlo dalla finestra Crea un **nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -130,9 +130,9 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
    :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="nella finestra &quot;Configura il nuovo progetto&quot;, denominare il progetto &quot;MyCoreApp&quot;":::
 
-1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa in alto. Si noti che è possibile scegliere di abilitare il supporto di Docker selezionando la casella. È anche possibile aggiungere il supporto per l'autenticazione facendo clic sul pulsante Cambia autenticazione. Da qui è possibile scegliere tra:
+1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa in alto. Si noti che è possibile scegliere di abilitare il supporto di Docker selezionando la casella. È anche possibile aggiungere il supporto per l'autenticazione facendo clic sul pulsante Modifica autenticazione. Da qui è possibile scegliere tra:
     - Nessuna: nessuna autenticazione.
-    - Singoli account: vengono archiviati in un database locale o basato su Azure.
+    - Account singoli: vengono archiviati in un database locale o basato su Azure.
     - Microsoft Identity Platform: questa opzione usa Active Directory, Azure AD o Microsoft 365 per l'autenticazione.
     - Windows: adatto per le applicazioni Intranet.
     
@@ -311,7 +311,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
 1. A questo punto, apportare una modifica al codice. Scegliere **Privacy.cshtml.cs**. Eliminare poi le direttive `using` all'inizio del file usando il metodo veloce seguente:
 
-   Scegliere una qualsiasi delle direttive `using` disattivate e una lampadina [Azioni rapide](../../ide/quick-actions.md) verrà visualizzata sotto il punto di inserimento o nel margine sinistro. Scegliere la lampadina e quindi passare il puntatore **del mouse su Rimuovi le operazioni non necessarie.**
+   Scegliere una qualsiasi delle direttive `using` disattivate e una lampadina [Azioni rapide](../../ide/quick-actions.md) verrà visualizzata sotto il punto di inserimento o nel margine sinistro. Scegliere la lampadina e quindi passare il puntatore **del mouse su Rimuovi le operazioni non necessarie tramite**.
 
    ![Rimuovere gli utilizzi non necessari nel file Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
@@ -370,10 +370,15 @@ Visual Studio è una suite integrata per lo sviluppo di strumenti di produttivit
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C#, ASP.NET Core e dell'IDE di Visual Studio. Per altre informazioni sulla creazione di un'app Web o di un sito Web con C# e ASP.NET, continuare con le esercitazioni seguenti:
+L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C#, ASP.NET Core e dell'IDE di Visual Studio. Per altre informazioni sulla creazione di un'app Web o di un sito Web con C# e ASP.NET, continuare con l'esercitazione seguente:
 
 > [!div class="nextstepaction"]
 > [Creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
+
+In altre informazioni su come creare contenitori per l'app Web con Docker:
+
+> [!div class="nextstepaction"]
+> [Strumenti contenitore in Visual Studio](../../containers/overview.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-container-tools
 ms.topic: conceptual
-ms.openlocfilehash: 60b6381ca90c4313fbd407eed9a709e7d49f1fc1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 80b7cbbb70cea593d770017bb50f8a69eeb13c38
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052993"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123097005"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Modalità di compilazione delle app aggiunte a contenitori in Visual Studio
 
@@ -46,7 +46,7 @@ WORKDIR "/src/WebApplication43"
 RUN dotnet build "WebApplication43.csproj" -c Release -o /app/build
 ```
 
-È possibile vedere che la fase inizia da un'immagine originale diversa dal registro ( anziché ) anziché `build` `sdk` continuare dalla `aspnet` base.  L'immagine include tutti gli strumenti di compilazione e per questo motivo è molto più grande dell'immagine aspnet, che contiene solo `sdk` componenti di runtime. Il motivo per cui si usa un'immagine separata diventa chiaro quando si osserva il resto del Dockerfile:
+È possibile vedere che la fase inizia da un'immagine originale diversa dal registro ( anziché ) anziché `build` `sdk` continuare dalla `aspnet` base.  L'immagine include tutti gli strumenti di compilazione e per questo motivo è molto più grande `sdk` dell'immagine aspnet, che contiene solo componenti di runtime. Il motivo per cui si usa un'immagine separata diventa chiaro quando si osserva il resto del Dockerfile:
 
 ```
 FROM build AS publish
@@ -74,15 +74,15 @@ docker build -f Dockerfile ..
 
 ### <a name="msbuild"></a>MSBuild
 
-I Dockerfile creati da Visual Studio per i progetti .NET Framework (e per i progetti .NET Core creati con versioni di Visual Studio precedenti Visual Studio 2017 Update 4) non sono Dockerfile multistage.  I passaggi in questi Dockerfile non compilano il codice.  Al contrario, quando Visual Studio compila un .NET Framework Dockerfile, compila prima il progetto usando MSBuild.  Quando l'operazione ha Visual Studio, compila il Dockerfile, che copia semplicemente l'output di compilazione MSBuild nell'immagine Docker risultante.  Poiché i passaggi per compilare il codice non sono inclusi nel Dockerfile, non è possibile compilare .NET Framework Dockerfile usando dalla `docker build` riga di comando. È consigliabile usare MSBuild per compilare questi progetti.
+I Dockerfile creati da Visual Studio per i progetti .NET Framework (e per i progetti .NET Core creati con versioni di Visual Studio precedenti Visual Studio 2017 Update 4) non sono Dockerfile multistage.  I passaggi in questi Dockerfile non compilano il codice.  Al contrario, Visual Studio compila un dockerfile .NET Framework, compila prima il progetto usando MSBuild.  Quando l'operazione ha Visual Studio, compila il Dockerfile, che copia semplicemente l'output di compilazione MSBuild nell'immagine Docker risultante.  Poiché i passaggi per compilare il codice non sono inclusi nel Dockerfile, non è possibile compilare .NET Framework Dockerfile usando dalla `docker build` riga di comando. È consigliabile usare MSBuild per compilare questi progetti.
 
-Per compilare un'immagine per un singolo progetto contenitore Docker, è possibile usare MSBuild con `/t:ContainerBuild` l'opzione di comando . Esempio:
+Per compilare un'immagine per un singolo progetto di contenitore Docker, è possibile usare MSBuild con `/t:ContainerBuild` l'opzione di comando . Ad esempio:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-L'output sarà simile a quello visualizzato nella finestra **Output** quando si compila la soluzione dall'IDE Visual Studio. Usare sempre , poiché nei casi in cui Visual Studio usa l'ottimizzazione della compilazione multi-fase, i risultati durante la compilazione della configurazione di debug potrebbero `/p:Configuration=Release` non essere come previsto.  Vedere [Debug.](#debugging)
+L'output sarà simile a quello visualizzato nella finestra **Output** quando si compila la soluzione dall'IDE Visual Studio. Usare sempre , poiché nei casi in cui Visual Studio usa l'ottimizzazione della compilazione multistage, i risultati durante la compilazione della configurazione di debug potrebbero `/p:Configuration=Release` non essere come previsto.  Vedere [Debug.](#debugging)
 
 Se si usa un progetto Docker Compose, usare questo comando per compilare le immagini:
 
@@ -101,9 +101,11 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 Il riscaldamento verrà eseguito solo in **modalità rapida,** quindi il contenitore in esecuzione avrà la cartella dell'app montata sul volume. Ciò significa che qualsiasi modifica apportata all'app non invalida il contenitore. Ciò consente di migliorare notevolmente le prestazioni di debug e di ridurre il tempo di attesa per le attività a esecuzione lunga, ad esempio il pull di immagini di grandi dimensioni.
 
-## <a name="volume-mapping"></a>Mapping del volume
+## <a name="volume-mapping"></a>Mapping dei volumi
 
-Per il funzionamento del debug nei contenitori, Visual Studio il mapping del volume per eseguire il mapping del debugger e NuGet cartelle dal computer host. Il mapping dei volumi è descritto nella documentazione di Docker [qui](https://docs.docker.com/storage/volumes/). Ecco i volumi montati nel contenitore:
+Per il funzionamento del debug nei contenitori, Visual Studio il mapping del volume per eseguire il mapping del debugger e NuGet cartelle dal computer host. Il mapping dei volumi è descritto nella documentazione di Docker [qui](https://docs.docker.com/storage/volumes/). È possibile visualizzare i mapping dei volumi per un contenitore usando la [finestra Contenitori in Visual Studio](view-and-diagnose-containers.md).
+
+Ecco i volumi montati nel contenitore:
 
 |Volume|Descrizione|
 |-|-|
@@ -116,7 +118,7 @@ Per ASP.NET app Web di base, potrebbero essere presenti due cartelle aggiuntive 
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>App ASP.NET Core SSL
 
-Gli strumenti contenitore in Visual Studio supportano il debug di un'app di base ASP.NET abilitata per SSL con un certificato di sviluppo, come ci si aspetterebbe che funzioni senza contenitori. A tale fine, Visual Studio altri passaggi per esportare il certificato e renderlo disponibile per il contenitore. Ecco il flusso che Visual Studio gestisce automaticamente durante il debug nel contenitore:
+Gli strumenti contenitore in Visual Studio supportano il debug di un'app di base ASP.NET abilitata per SSL con un certificato di sviluppo, come ci si aspetterebbe che funzioni senza contenitori. A tale fine, Visual Studio altri due passaggi per esportare il certificato e renderlo disponibile per il contenitore. Ecco il flusso che Visual Studio gestisce automaticamente durante il debug nel contenitore:
 
 1. Verifica che il certificato di sviluppo locale sia presente e attendibile nel computer host tramite lo `dev-certs` strumento .
 2. Esporta il certificato in %APPDATA%\ASP.NET\Https con una password sicura archiviata nell'archivio dei segreti utente per questa particolare app.
@@ -142,13 +144,13 @@ ASP.NET Core cerca un certificato corrispondente al nome dell'assembly nella car
 
 Se la configurazione supporta compilazioni sia in contenitori che non in contenitori, è necessario usare le variabili di ambiente , perché i percorsi sono specifici dell'ambiente del contenitore.
 
-Per altre informazioni sull'uso di SSL con ASP.NET Core nei contenitori, vedere [Hosting ASP.NET Core immagini con Docker su HTTPS).](/aspnet/core/security/docker-https)
+Per altre informazioni sull'uso di SSL ASP.NET Core app nei contenitori, vedere Hosting di ASP.NET Core [immagini con Docker su HTTPS).](/aspnet/core/security/docker-https)
 
 ## <a name="debugging"></a>Debug
 
 Durante la compilazione nella **configurazione di debug,** esistono diverse ottimizzazioni Visual Studio che consentono di migliorare le prestazioni del processo di compilazione per i progetti in contenitori. Il processo di compilazione per le app in contenitori non è semplice come seguire semplicemente i passaggi descritti nel Dockerfile. La compilazione in un contenitore è molto più lenta rispetto alla compilazione nel computer locale.  Pertanto, quando si  esegue la compilazione nella configurazione di debug, Visual Studio effettivamente compila i progetti nel computer locale e quindi condivide la cartella di output nel contenitore usando il montaggio del volume. Una compilazione con questa ottimizzazione abilitata è detta *compilazione in* modalità rapida.
 
-In **modalità** rapida, Visual Studio chiamate `docker build` con un argomento che indica a Docker di compilare solo la `base` fase.  Visual Studio gestisce il resto del processo indipendentemente dal contenuto del Dockerfile. Pertanto, quando si modifica il Dockerfile, ad esempio per personalizzare l'ambiente del contenitore o installare dipendenze aggiuntive, è necessario inserire le modifiche nella prima fase.  Tutti i passaggi personalizzati inseriti nelle fasi , o del Dockerfile `build` `publish` non verranno `final` eseguiti.
+In **modalità** rapida è Visual Studio chiamate con un argomento che indica `docker build` a Docker di compilare solo la `base` fase.  Visual Studio gestisce il resto del processo indipendentemente dal contenuto del Dockerfile. Pertanto, quando si modifica il Dockerfile, ad esempio per personalizzare l'ambiente del contenitore o installare dipendenze aggiuntive, è necessario inserire le modifiche nella prima fase.  Tutti i passaggi personalizzati inseriti nelle fasi , o del Dockerfile `build` `publish` non verranno `final` eseguiti.
 
 Questa ottimizzazione delle prestazioni si verifica solo quando si esegue la compilazione nella **configurazione di** debug. Nella configurazione **Release** la compilazione viene eseguita nel contenitore come specificato nel Dockerfile.
 
@@ -162,17 +164,17 @@ Se si vuole disabilitare l'ottimizzazione delle prestazioni e la compilazione co
 
 Per ripristinare l'ottimizzazione delle prestazioni, rimuovere la proprietà dal file di progetto.
 
- Quando si avvia il debug **(F5),** viene riutilizzato un contenitore avviato in precedenza, se possibile. Se non si vuole riutilizzare il contenitore  precedente, è possibile usare i comandi Ricompila o Pulisci in Visual Studio per forzare Visual Studio usare un nuovo contenitore. 
+ Quando si avvia il debug **(F5),** viene riutilizzato un contenitore avviato in precedenza, se possibile. Se non si vuole riutilizzare il contenitore precedente, è possibile usare i comandi **Ricompila** o Pulisci in Visual Studio per forzare Visual Studio usare un nuovo contenitore. 
 
 Il processo di esecuzione del debugger dipende dal tipo di sistema operativo del progetto e del contenitore:
 
 |Scenario|Processo del debugger|
 |-|-|
-| **App .NET Core (contenitori Linux)**| Visual Studio scaricarlo e mapparlo al contenitore, quindi viene chiamato con il programma e gli argomenti (ovvero ), quindi il debugger si `vsdbg` `dotnet webapp.dll` connette al processo. |
-| **App .NET Core (Windows contenitori)**| Visual Studio usa ed esegue il mapping al contenitore, lo esegue come punto di ingresso e quindi Visual Studio si connette al contenitore e si collega `onecoremsvsmon` al programma. Questo è simile al modo in cui normalmente si configura il debug remoto in un altro computer o macchina virtuale.|
-| **.NET Framework app** | Visual Studio usa ed esegue il mapping al contenitore, lo esegue come parte del punto di ingresso in cui Visual Studio può connettersi al contenitore e si collega `msvsmon` al programma.|
+| **App .NET Core (contenitori Linux)**| Visual Studio scarica ed esegue il mapping al contenitore, viene chiamato con il programma e gli argomenti (ovvero ), quindi il debugger si `vsdbg` `dotnet webapp.dll` connette al processo. |
+| **App .NET Core (Windows contenitori)**| Visual Studio usa ed esegue il mapping al contenitore, lo esegue come punto di ingresso e quindi Visual Studio si connette al contenitore e lo collega `onecoremsvsmon` al programma. Questo è simile al modo in cui normalmente si configura il debug remoto in un altro computer o macchina virtuale.|
+| **.NET Framework app** | Visual Studio usa ed esegue il mapping al contenitore, lo esegue come parte del punto di ingresso a cui Visual Studio può connettersi e si collega `msvsmon` al programma.|
 
-Per informazioni su `vsdbg.exe` , vedere Debug offroad di .NET Core in Linux e [OSX da Visual Studio](https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio).
+Per informazioni su `vsdbg.exe` , vedere [Debug offroad di .NET Core in Linux e OSX da Visual Studio](https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio).
 
 ## <a name="container-entry-point"></a>Punto di ingresso del contenitore
 
@@ -180,14 +182,14 @@ Visual Studio usa un punto di ingresso del contenitore personalizzato a seconda 
 
 |Tipo di contenitore|Punto di ingresso|
 |-|-|
-| **Contenitori Linux** | Il punto di ingresso è `tail -f /dev/null` , ovvero un'attesa infinita per mantenere in esecuzione il contenitore. Quando l'app viene avviata tramite il debugger, è il debugger responsabile dell'esecuzione dell'app , ovvero `dotnet webapp.dll` . Se avviati senza debug, gli strumenti eseguono un per `docker exec -i {containerId} dotnet webapp.dll` eseguire l'app.|
-| **Contenitori Windows**| Il punto di ingresso è simile a `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` quello che esegue il debugger, quindi è in ascolto delle connessioni. Lo stesso vale per il fatto che il debugger esegue l'app e un `docker exec` comando quando viene avviato senza debug. Per .NET Framework web, il punto di ingresso è leggermente diverso in cui `ServiceMonitor` viene aggiunto al comando.|
+| **Contenitori Linux** | Il punto di ingresso è `tail -f /dev/null` , ovvero un'attesa infinita per mantenere il contenitore in esecuzione. Quando l'app viene avviata tramite il debugger, è il debugger responsabile dell'esecuzione dell'app , ovvero `dotnet webapp.dll` . Se vengono avviati senza debug, gli strumenti eseguono per `docker exec -i {containerId} dotnet webapp.dll` eseguire l'app.|
+| **Contenitori Windows**| Il punto di ingresso è simile a `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` che esegue il debugger, quindi è in ascolto delle connessioni. Lo stesso vale per il debugger che esegue l'app e un `docker exec` comando quando viene avviato senza debug. Per .NET Framework app Web, il punto di ingresso è leggermente diverso in cui `ServiceMonitor` viene aggiunto al comando .|
 
 Il punto di ingresso del contenitore può essere modificato solo nei progetti docker-compose, non nei progetti a contenitore singolo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Informazioni su come personalizzare ulteriormente le compilazioni impostando proprietà aggiuntive MSBuild nei file di progetto. Vedere [MSBuild proprietà per i progetti contenitore.](container-msbuild-properties.md)
+Informazioni su come personalizzare ulteriormente le compilazioni impostando proprietà MSBuild nei file di progetto. Vedere [MSBuild proprietà per i progetti contenitore.](container-msbuild-properties.md)
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -9,12 +9,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: c18b3dc5d645ad264952a23192e89be55613d1fc
-  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+  ms.openlocfilehash: d5a3f01af79b41ec219fd0ff959933e2798f1cfd
+  ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "122105631"
+  ms.lasthandoff: 08/27/2021
+  ms.locfileid: "123096759"
 landingContent:
 - title: Strumenti per contenitori
   linkLists:
@@ -54,11 +54,13 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: "Procedura: Configurare l'ambiente di compilazione e debug"
-      url: container-build.md
-    - text: 'Procedura: Visualizzare e diagnosticare i contenitori'
+    - text: Usare la finestra Contenitori
       url: view-and-diagnose-containers.md
-    - text: 'Procedura: Risolvere i problemi degli strumenti di sviluppo per contenitori'
+    - text: Avviare un subset dei servizi Compose
+      url: launch-profiles.md
+    - text: Configurare l'ambiente di compilazione e debug
+      url: container-build.md
+    - text: Risolvere i problemi degli strumenti di sviluppo per contenitori
       url: troubleshooting-docker-errors.md
 - title: Impostazioni degli strumenti per contenitori
   linkLists:

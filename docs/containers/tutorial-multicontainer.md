@@ -7,23 +7,23 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: f2185bf025bc880a7461a9e1618953f734a7083a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 437663a4c3f1af07d5137aacb32e26e6021597ed
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155057"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096981"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: Creare un'app a più contenitori con Docker Compose
 
-In questa esercitazione si apprenderà come gestire più contenitori e comunicare tra di essi quando si usano gli strumenti contenitore in Visual Studio.  La gestione di più contenitori richiede *l'orchestrazione* dei contenitori e un agente di orchestrazione, ad esempio Docker Compose, Kubernetes o Service Fabric. In questo caso si userà Docker Compose. Docker Compose è ideale per il debug e i test locali nel corso del ciclo di sviluppo.
+In questa esercitazione si apprenderà come gestire più contenitori e comunicare tra di essi quando si usano gli strumenti contenitore in Visual Studio.  La gestione di più contenitori richiede *l'orchestrazione* dei contenitori e richiede un agente di orchestrazione, ad esempio Docker Compose, Kubernetes o Service Fabric. In questo caso, si userà Docker Compose. Docker Compose è ideale per il debug e i test locali nel corso del ciclo di sviluppo.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 ::: moniker range="vs-2017"
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2017 con il carico](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) di lavoro Sviluppo **Web,** Strumenti di **Azure** o **Sviluppo multipiattaforma .NET Core** installato
+* [Visual Studio 2017 con il](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) carico di lavoro Sviluppo **Web,** Strumenti di **Azure** o **sviluppo multipiattaforma .NET Core** installato
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -31,24 +31,24 @@ In questa esercitazione si apprenderà come gestire più contenitori e comunicar
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
 * [Strumenti di sviluppo per .NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) per lo sviluppo con .NET Core 2.2
-* [Strumenti di sviluppo .NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.1) per lo sviluppo con .NET Core 3.1.
+* [Strumenti di sviluppo .NET Core 3 per](https://dotnet.microsoft.com/download/dotnet-core/3.1) lo sviluppo con .NET Core 3.1.
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) con il carico di lavoro Sviluppo **Web,** Strumenti di **Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
-* [Strumenti di sviluppo .NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.1) per lo sviluppo con .NET Core 3.1.
-* [.NET 5 Development Toos](https://dotnet.microsoft.com/download/dotnet-core/5.0) for development with .NET 5 (Toos per lo sviluppo con .NET 5).
+* [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) con il carico di lavoro Sviluppo **Web,** Strumenti di **Azure** e/o **sviluppo multipiattaforma .NET Core** installato
+* [Strumenti di sviluppo .NET Core 3 per](https://dotnet.microsoft.com/download/dotnet-core/3.1) lo sviluppo con .NET Core 3.1.
+* [.NET 5 Development Toos per](https://dotnet.microsoft.com/download/dotnet-core/5.0) lo sviluppo con .NET 5.
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Creare un progetto di applicazione Web
 
-In Visual Studio creare un progetto **di app Web ASP.NET Core,** denominato , per creare `WebFrontEnd` un'applicazione Web con pagine Razor.
+In Visual Studio creare un progetto **di app Web** ASP.NET Core denominato , per creare `WebFrontEnd` un'applicazione Web con pagine Razor.
   
 ::: moniker range="vs-2017"
 
-Non selezionare **Abilita supporto Docker**. Il supporto di Docker verrà aggiunto in un secondo momento.
+Non selezionare **Abilita supporto Docker**. Il supporto docker verrà aggiunto in un secondo momento.
 
 ![Screenshot della creazione del progetto Web](./media/tutorial-multicontainer/docker-tutorial-enable-docker-support.png)
 
@@ -56,9 +56,9 @@ Non selezionare **Abilita supporto Docker**. Il supporto di Docker verrà aggiun
 
 ::: moniker range=">=vs-2019"
 
-![Creare ASP.NET Core progetto app Web](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
+![Creare ASP.NET Core progetto di app Web](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
-Non selezionare **Abilita supporto Docker**. Il supporto di Docker verrà aggiunto in un secondo momento.
+Non selezionare **Abilita supporto Docker**. Il supporto docker verrà aggiunto in un secondo momento.
 
 ![Screenshot della schermata Informazioni aggiuntive durante la creazione di un progetto Web. L'opzione Abilita supporto Docker non è selezionata.](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
@@ -66,7 +66,7 @@ Non selezionare **Abilita supporto Docker**. Il supporto di Docker verrà aggiun
 
 ## <a name="create-a-web-api-project"></a>Creare un progetto API Web
 
-Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare **API** come tipo di progetto e deselezionare la casella di controllo **Configura per HTTPS.** In questa progettazione viene utilizzato solo SSL per la comunicazione con il client, non per la comunicazione tra contenitori nella stessa applicazione Web. È necessario solo HTTPS e il codice negli esempi presuppone che la casella di controllo `WebFrontEnd` sia stata deselezionata. In generale, i certificati per sviluppatori .NET usati da Visual Studio sono supportati solo per le richieste da esterno a contenitore, non per le richieste da contenitore a contenitore.
+Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare **API** come tipo di progetto e deselezionare la casella di controllo **Configura per HTTPS**. In questa progettazione viene utilizzato solo SSL per la comunicazione con il client, non per la comunicazione tra contenitori nella stessa applicazione Web. È necessario solo HTTPS e il codice negli esempi presuppone che la casella di controllo `WebFrontEnd` sia stata deselezionata. In generale, i certificati per sviluppatori .NET usati da Visual Studio sono supportati solo per le richieste da esterno a contenitore, non per le richieste da contenitore a contenitore.
 
 ::: moniker range="vs-2017"
    ![Screenshot della creazione del progetto API Web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -117,7 +117,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
       </div>
       ```
 
-1. (ASP.NET solo 2.x) Nel progetto API Web aggiungere ora il codice al controller Values per personalizzare il messaggio restituito dall'API per la chiamata aggiunta da *webfrontend.*
+1. (ASP.NET solo 2.x) Nel progetto API Web aggiungere ora il codice al controller Valori per personalizzare il messaggio restituito dall'API per la chiamata aggiunta da *webfrontend*.
     
       ```csharp
         // GET api/values/5
@@ -128,13 +128,13 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
         }
       ```
 
-    Con .NET Core 3.1 non è necessario perché è possibile usare l'API WeatherForecast già presente. Tuttavia, è necessario impostare come commento la chiamata a nel metodo in Startup.cs , perché questo codice usa <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` HTTP, non HTTPS, per chiamare l'API Web. 
+    Con .NET Core 3.1 non è necessario, perché è possibile usare l'API WeatherForecast già presente. Tuttavia, è necessario impostare come commento la chiamata a nel metodo in Startup.cs , perché questo codice usa <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> `Configure` HTTP, non HTTPS, per chiamare l'API Web. 
 
     ```csharp
                 //app.UseHttpsRedirection();
     ```
 
-1. Nel progetto `WebFrontEnd` scegliere Add > Container **Orchestrator Support**. Verrà **visualizzata la finestra di dialogo Docker Support Options (Opzioni** di supporto Docker).
+1. Nel progetto `WebFrontEnd` scegliere Aggiungi > supporto di Container **Orchestrator**. Verrà visualizzata la finestra di dialogo Opzioni di supporto di **Docker.**
 
 1. Scegliere **Docker Compose**.
 
@@ -146,7 +146,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
 
    ![Screenshot della Esplora soluzioni con il progetto docker-compose aggiunto](media/tutorial-multicontainer/multicontainer-solution-explorer.png)
 
-   Il *file docker-compose.yml* viene visualizzato come segue:
+   *Docker-compose.yml* viene visualizzato come segue:
 
    ```yaml
    version: '3.4'
@@ -159,16 +159,16 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
           dockerfile: WebFrontEnd/Dockerfile
    ```
 
-   Il file *con estensione dockerignore* contiene i tipi di file e le estensioni che docker non deve includere nel contenitore. Questi file sono in genere associati all'ambiente di sviluppo e al controllo del codice sorgente, non all'app o al servizio che si sta sviluppando.
+   Il file *con estensione dockerignore* contiene i tipi di file e le estensioni che non si vuole includere nel contenitore. Questi file sono in genere associati all'ambiente di sviluppo e al controllo del codice sorgente, non all'app o al servizio in fase di sviluppo.
 
-   Per informazioni **dettagliate sui comandi in** esecuzione, vedere la sezione Strumenti contenitore del riquadro di output.  È possibile vedere che lo strumento da riga di comando docker-compose viene usato per configurare e creare i contenitori di runtime.
+   Esaminare la sezione **Strumenti contenitore** del riquadro di output per informazioni dettagliate sui comandi in esecuzione.  È possibile visualizzare lo strumento da riga di comando docker-compose usato per configurare e creare i contenitori di runtime.
 
-1. Nel progetto API Web fare di nuovo clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Add**  >  Container Orchestrator Support (Aggiungi **supporto agente di orchestrazione contenitori).** Scegliere **Docker Compose** e quindi selezionare lo stesso sistema operativo di destinazione.  
+1. Nel progetto API Web fare di nuovo clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** supporto  >  **di Container Orchestrator**. Scegliere **Docker Compose** e quindi selezionare lo stesso sistema operativo di destinazione.  
 
     > [!NOTE]
-    > In questo passaggio verrà Visual Studio creare un Dockerfile. Se si fa questo in un progetto che dispone già del supporto per Docker, viene chiesto se si vuole sovrascrivere il Dockerfile esistente. Se sono state apportate modifiche al Dockerfile che si vuole mantenere, scegliere No.
+    > In questo passaggio verrà Visual Studio creare un Dockerfile. Se si fa questo in un progetto che ha già il supporto di Docker, viene richiesto se si vuole sovrascrivere il Dockerfile esistente. Se sono state apportate modifiche al Dockerfile che si vuole mantenere, scegliere No.
 
-    Visual Studio apporta alcune modifiche al file docker compose YML. A questo punto sono inclusi entrambi i servizi.
+    Visual Studio apportare alcune modifiche al file docker compose YML. Entrambi i servizi sono ora inclusi.
 
     ```yaml
     version: '3.4'
@@ -187,15 +187,15 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. Eseguire ora il sito in locale (F5 o CTRL+F5) per verificare che funzioni come previsto. Se tutti gli elementi sono configurati correttamente con la versione .NET Core 2.x, viene visualizzato il messaggio "Hello from webfrontend and webapi (with value 1)".  Con .NET Core 3 vengono visualizzati i dati delle previsioni meteo.
+1. Eseguire il sito in locale (F5 o CTRL+F5) per verificare che funzioni come previsto. Se tutto è configurato correttamente con la versione .NET Core 2.x, viene visualizzato il messaggio "Hello from webfrontend and webapi (with value 1)."  Con .NET Core 3 vengono visualizzati i dati delle previsioni meteo.
 
-   Il primo progetto utilizzato quando si aggiunge l'orchestrazione del contenitore viene configurato per l'avvio quando si esegue o si esegue il debug. È possibile configurare l'azione di avvio **Project proprietà per** il progetto docker-compose.  Nel nodo del progetto docker-compose fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida e quindi scegliere Proprietà **oppure** premere ALT+INVIO.  Lo screenshot seguente mostra le proprietà desiderate per la soluzione usata qui.  Ad esempio, è possibile modificare la pagina caricata personalizzando la **proprietà URL servizio.**
+   Il primo progetto utilizzato quando si aggiunge l'orchestrazione del contenitore viene configurato per l'avvio quando si esegue o si esegue il debug. È possibile configurare l'azione di avvio **nel Project proprietà per** il progetto docker-compose.  Nel nodo del progetto docker-compose fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida, quindi scegliere **Proprietà** oppure premere ALT+INVIO.  Lo screenshot seguente mostra le proprietà desiderate per la soluzione usata qui.  Ad esempio, è possibile modificare la pagina caricata personalizzando la **proprietà URL** servizio.
 
    ![Screenshot delle proprietà del progetto docker-compose](media/tutorial-multicontainer/launch-action.png)
 
-   Ecco cosa viene visualizzato all'avvio (versione .NET Core 2.x):
+   Ecco cosa si vede all'avvio (versione .NET Core 2.x):
 
-   ![Screenshot dell'app Web in esecuzione](media/tutorial-multicontainer/webfrontend.png)
+   ![Screenshot dell'esecuzione dell'app Web](media/tutorial-multicontainer/webfrontend.png)
 
    L'app Web per .NET 3.1 mostra i dati meteo in formato JSON.
 
@@ -203,7 +203,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI.* Selezionare
 
 Esaminare le opzioni per la distribuzione dei [contenitori in Azure.](/azure/containers)
 
-Per un maggiore controllo sui servizi avviati durante una sessione di debug, vedere come usare i profili di avvio Docker Compose per configurare i servizi eseguiti durante il debug. Vedere [Gestire i profili di avvio per Docker Compose](launch-profiles.md)
+Se si usa un numero elevato di microservizi, molti dei quali non sono necessari per ogni attività di debug, è possibile usare i profili di avvio di Docker Compose per un maggiore controllo sui servizi avviati durante una sessione di debug. Vedere [Gestire i profili di avvio per Docker Compose](launch-profiles.md).
 
 ## <a name="see-also"></a>Vedi anche
   

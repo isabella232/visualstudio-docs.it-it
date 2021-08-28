@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: how-to
 ms.date: 03/20/2019
 ms.technology: vs-container-tools
-ms.openlocfilehash: 29d1753e8d0c03391d60a4985a922bfb796dc3e8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 91ed17af9900c068af7e81ce3902e68063814d82
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045073"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096919"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Come configurare Visual Studio Container Tools
 
@@ -32,7 +32,7 @@ Impostazioni **generali** di Strumenti contenitore:
 
 ![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Installare Docker Desktop, se necessario, e Considerare attendibile ASP.NET Core certificato SSL.](./media/configure-container-tools/tools-options-1.png)
 
-Impostazioni **Project** Docker Compose contenitori di **Strumenti contenitori:**
+Impostazioni **Project** contenitore **Docker Compose** contenitori:
 
 ![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Uccidi contenitori alla chiusura del progetto, Esegui il pull delle immagini Docker necessarie all'apertura del progetto e Esegui contenitori all'apertura del progetto.](./media/configure-container-tools/tools-options-2.png)
 ::: moniker-end
@@ -54,16 +54,32 @@ Nella tabella seguente vengono descritte **le impostazioni** generali:
 
 | Nome | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
-| Installare Docker Desktop, se necessario | Richiedi conferma | Single Project, Docker Compose | Scegliere se si vuole che venga richiesto se Docker Desktop non è installato. |
+| Installare Docker Desktop, se necessario | Richiedi conferma | Singolo Project, Docker Compose | Scegliere se si vuole che venga richiesto se Docker Desktop non è installato. |
 | Considerare attendibile ASP.NET Core certificato SSL | Richiedi conferma | ASP.NET Core Progetti 2.x | Se l'opzione **è impostata** su Richiedi conferma, se il certificato SSL localhost non è attendibile, Visual Studio ogni volta che si esegue il progetto. |
 
 Nella tabella seguente vengono descritte **le Project** e **Docker Compose** seguenti:
 
 | Nome | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
-| Eseguire il pull delle immagini Docker necessarie all'apertura del progetto | Vero | Single Project, Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si caricano solo progetti e si esplora il codice, è possibile impostare su **False** per evitare il download di immagini del contenitore non necessarie. |
-| Eseguire contenitori all'apertura del progetto | Vero | Single Project, Docker Compose | Anche in questo caso, Visual Studio un contenitore in anticipo in modo che sia pronto per la compilazione e l'esecuzione del contenitore. Se si vuole controllare quando viene creato il contenitore, impostare su **False**. |
-| Arrestare i contenitori alla chiusura del progetto | Vero | Single Project e Docker Compose | Impostare su **False** se si desidera che i contenitori per la soluzione continuino a essere eseguiti dopo la chiusura della soluzione o la Visual Studio. |
+| Eseguire il pull delle immagini Docker necessarie all'apertura del progetto | Vero | Singolo Project, Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si caricano solo progetti e si esplora il codice, è possibile impostare su **False** per evitare il download di immagini del contenitore non necessarie. |
+| Eseguire il pull di immagini Docker aggiornate all'apertura del progetto | Progetti .NET Core | Singolo Project, Docker Compose | Quando si apre un progetto, verificare la disponibilità di aggiornamenti per le immagini e scaricarli, se disponibili. |
+| Eseguire contenitori all'apertura del progetto | Vero | Singolo Project, Docker Compose | Anche in questo caso, Visual Studio un contenitore in anticipo in modo che sia pronto per la compilazione e l'esecuzione del contenitore. Se si vuole controllare quando viene creato il contenitore, impostare su **False**. |
+| Rimuovere contenitori alla chiusura del progetto | Vero | Singolo Project, Docker Compose | Impostare su **False** se si desidera che i contenitori per la soluzione siano conservati dopo la chiusura della soluzione o la Visual Studio. |
+
+Le **impostazioni della finestra degli strumenti** Contenitori controllano le impostazioni che si applicano alla finestra degli strumenti Contenitori, che mostra informazioni sui contenitori e sulle immagini Docker.  Vedere [Usare la finestra Contenitori](view-and-diagnose-containers.md)
+
+![Visual Studio Opzioni di Strumenti contenitore, che mostra le impostazioni disponibili per la finestra degli strumenti Contenitori](media/configure-container-tools/tools-options-3.png)
+
+La tabella seguente descrive le impostazioni **della finestra** Contenitori:
+
+
+| NOME | Impostazione predefinita | Descrizione |
+| -----|:---------------:| ----------- |
+| Confermare prima di eliminare i contenitori | Always | Controlla se viene richiesto di eliminare i contenitori inutilizzati. |
+| Confermare prima di eliminare le immagini | Always | Controlla se viene richiesto di eliminare le immagini inutilizzate. |
+| Confermare prima di rimuovere un contenitore | Always | Controlla se viene richiesto quando si rimuove un contenitore. |
+| Confermare prima di rimuovere un'immagine | Always | Controlla se viene richiesto quando si rimuove un'immagine. |
+| Confermare prima di eseguire un numero elevato di immagini | Always | Controlla se viene richiesto prima di avviare i contenitori da più di 10 immagini alla volta. |
 
 ::: moniker-end
 > [!WARNING]
