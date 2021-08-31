@@ -1,8 +1,8 @@
 ---
 title: Trovare e installare le estensioni
-description: Informazioni sulle estensioni Visual Studio e su come gestirle in modo da avere i controlli, gli esempi, i modelli, gli strumenti e altri componenti necessari.
+description: Informazioni sulle estensioni in Visual Studio e su come gestirle in modo da avere i controlli, gli esempi, i modelli, gli strumenti e altri componenti necessari.
 ms.custom: SEO-VS-2020
-ms.date: 09/18/2019
+ms.date: 08/30/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -17,16 +17,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b41f54d6e0b5750f32a4062d0915cbde1fe92cff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 891db6e62d33220494d6c19fe08e17f52dd810cb
+ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109227"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123230333"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gestire le estensioni per Visual Studio
 
-Le estensioni sono pacchetti di codice che vengono eseguiti Visual Studio e forniscono funzionalità nuove o migliorate. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a [Visual Studio,](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs) ad esempio Live Share o [Visual Studio IntelliCode.](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode)
+Le estensioni sono pacchetti di codice che vengono eseguiti Visual Studio e forniscono funzionalità nuove o migliorate. Le estensioni possono essere [controlli,](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs) esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio, ad esempio Live Share o [Visual Studio IntelliCode.](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode)
 
 Per informazioni sulla creazione di Visual Studio, vedere [Visual Studio SDK.](../extensibility/visual-studio-sdk.md) Per informazioni sull'uso delle estensioni, vedere la pagina delle singole [estensioni Visual Studio Marketplace.](https://marketplace.visualstudio.com)
 
@@ -36,6 +36,8 @@ Per informazioni sulla creazione di Visual Studio, vedere [Visual Studio SDK.](.
 
 Usare la finestra di dialogo **Estensioni e aggiornamenti** per installare e gestire le estensioni di Visual Studio. Per aprire la finestra di dialogo **Estensioni e aggiornamenti**, scegliere **Strumenti** > **Estensioni e aggiornamenti**, oppure digitare **Estensioni** nella casella di ricerca **Avvio veloce**.
 
+![Finestra Estensioni in Visual Studio](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -44,9 +46,9 @@ Usare la finestra di dialogo **Estensioni e aggiornamenti** per installare e ges
 
 Usare la finestra di dialogo **Gestisci estensioni** per installare e gestire le estensioni di Visual Studio. Per aprire la finestra di dialogo **Gestisci estensioni**, scegliere **Estensioni** > **Gestisci estensioni**. In alternativa, digitare **Estensioni** nella casella di ricerca e scegliere **Gestisci estensioni**.
 
-::: moniker-end
+:::image type="content" source="media/finding-using-visual-studio-extensions/vs-2022/extensions-and-updates.png" alt-text="Screenshot della finestra Gestisci estensioni in Visual Studio":::
 
-![Finestra Estensioni in Visual Studio](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
+::: moniker-end
 
 Il riquadro a sinistra suddivide le estensioni in categorie in base a quelle installate, quelle disponibili in Visual Studio Marketplace (**Online**) e quelle che hanno aggiornamenti disponibili. In **Gestione roaming estensioni** sono elencate tutte le estensioni di Visual Studio installate in tutti i computer o istanze di Visual Studio. Questa opzione è studiata per poter trovare più facilmente le estensioni preferite.
 
@@ -54,7 +56,7 @@ Il riquadro a sinistra suddivide le estensioni in categorie in base a quelle ins
 
 ::: moniker range="vs-2017"
 
-È possibile installare le estensioni [da Visual Studio Marketplace](https://marketplace.visualstudio.com) o dalla finestra di dialogo Estensioni e aggiornamenti in Visual Studio.
+È possibile installare estensioni da [Visual Studio Marketplace](https://marketplace.visualstudio.com) o dalla finestra di dialogo Estensioni e aggiornamenti in Visual Studio.
 
 Per installare le estensioni dall'interno Visual Studio:
 
@@ -166,14 +168,14 @@ Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica 
 - Scegliere **Non visualizzare più questo messaggio**.
 
   - Se la notifica riguarda un arresto anomalo in una sessione precedente, Visual Studio non visualizza più una notifica quando si verifica un arresto anomalo associato a questa estensione. Visual Studio visualizzerà comunque le notifiche in caso di blocco associabile all'estensione o per arresti anomali o blocchi che possono essere associati ad altre estensioni.
-  - Se la notifica riguarda la non risposta, l'ambiente di sviluppo integrato (IDE) non visualizza più una notifica quando questa estensione è associata alla non risposta. Visual Studio verranno comunque mostrate le notifiche relative all'arresto anomalo del sistema per questa estensione e le notifiche relative all'arresto anomalo e al blocco per altre estensioni.
+  - Se la notifica riguarda la non risposta, l'ambiente di sviluppo integrato (IDE) non visualizza più una notifica quando questa estensione è associata a un'estensione che non risponde. Visual Studio verranno comunque mostrate le notifiche relative all'arresto anomalo del sistema per questa estensione e le notifiche relative all'arresto anomalo e al blocco per altre estensioni.
 
 - Scegliere **Altre informazioni** per passare a questa pagina.
 
 - Scegliere il pulsante **X** al termine della notifica per ignorarla. Verrà visualizzata una nuova notifica per le istanze future dell'estensione associata a un arresto anomalo o al blocco dell'interfaccia utente.
 
 > [!NOTE]
-> Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione chiami codice che fa parte di Visual Studio, che a sua volta ha comportato un arresto anomalo o un'interfaccia utente non risponde. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività.
+> Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione chiami il codice che fa parte di Visual Studio, che a sua volta ha comportato un arresto anomalo o un'interfaccia utente non risponde. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività.
 
 ## <a name="samples"></a>Esempi
 
@@ -210,4 +212,4 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 ## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com)
-- [Visual Studio Sdk](../extensibility/visual-studio-sdk.md)
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

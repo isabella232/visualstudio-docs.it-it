@@ -1,18 +1,18 @@
 ---
 title: Disabilitare la compatibilità con DPI in Visual Studio
 description: Vengono illustrate le limitazioni di Progettazione Windows Form per i monitor HDPI e viene illustrato come eseguire Visual Studio come processo incompatibile con DPI.
-ms.date: 09/28/2020
+ms.date: 08/30/2021
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
 ms.topic: conceptual
-ms.openlocfilehash: 3b4ae4cd215546744172ab64890254c488823e92
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d56a3650f2dd8df2b314bd80b27b321a68a92a2e
+ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089784"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123230378"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Disabilitare la compatibilità con DPI in Visual Studio
 
@@ -102,3 +102,4 @@ Se la transizione per la compatibilità con DPI non funziona come previsto in Vi
 ## <a name="see-also"></a>Vedi anche
 
 - [Ridimensionamento automatico in Windows Form](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)
+- [Un'esperienza multi-monitor migliore con Visual Studio](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)
