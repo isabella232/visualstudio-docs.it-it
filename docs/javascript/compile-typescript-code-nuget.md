@@ -1,6 +1,6 @@
 ---
 title: Compilare e compilare codice TypeScript usando NuGet
-description: Informazioni su come aggiungere il supporto typescript ai progetti Visual Studio usando il pacchetto NuGet.
+description: Informazioni su come aggiungere il supporto TypeScript ai progetti Visual Studio usando il pacchetto NuGet.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b18f7503dd090856b48b6b6fa17af7af34886706
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.openlocfilehash: 1bf1deb271d7a20527f53260813e35e0de9daa19
+ms.sourcegitcommit: 409a750a944a72c5931f6094deb4dc9a2635a984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980735"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123262075"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compilare codice TypeScript (ASP.NET Core)
 
@@ -28,7 +28,7 @@ Per ASP.NET Core, un utilizzo comune per il pacchetto NuGet è la compilazione d
 
 [Il pacchetto di NuGet TypeScript aggiunge](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild) il supporto TypeScript. Quando si installa il pacchetto NuGet per TypeScript 3.2 o versione successiva nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
 
-Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelevato Visual Studio. Se non è installato Node.js, è consigliabile installare la versione LTS dal sito [WebNode.js.](https://nodejs.org/en/download/)
+Se Visual Studio installato, il node.exe in bundle verrà prelevato automaticamente dal Visual Studio. Se non è installato un Node.js, è consigliabile installare la versione LTS dal sito [WebNode.js.](https://nodejs.org/en/download/)
 
 1. Aprire il progetto ASP.NET Core in Visual Studio.
 
@@ -51,7 +51,7 @@ Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelev
 
 1. Aprire *tsconfig.jse* aggiornare per impostare le opzioni del compilatore desiderate.
 
-   Di seguito è riportato un esempio di una *semplicetsconfig.jssu* file.
+   Di seguito è riportato un esempio di una semplice *tsconfig.jssu* file.
 
    ```json
    {
@@ -87,7 +87,7 @@ Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelev
 
 1. Se si usa un progetto di tipo non SDK precedente, seguire le istruzioni in [Rimuovere le importazioni predefinite](#remove-default-imports) prima della compilazione.
 
-1. Scegliere **Compila > Compila soluzione**.
+1. Scegliere **Compila > Compila soluzione.**
 
    Anche se l'app viene compilata automaticamente quando viene eseguita, è necessario esaminare un evento che si verifica durante il processo di compilazione:
 
@@ -105,7 +105,7 @@ Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelev
    }
    ```
 
-Per un esempio dell'uso di gulp con Task Runner per compilare l'app, [vedere ASP.NET Core e TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+Per un esempio dell'uso di gulp con Task Runner per compilare l'app, [ASP.NET Core e TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 
 Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso da quello previsto, potrebbe essere necessario impostare il percorso per Visual Studio da usare. Scegliere **Strumenti**  >  **Opzioni**. In **Progetti e soluzioni** scegliere Web **Gestione pacchetti** Strumenti  >  **Web esterni.**
 
@@ -145,22 +145,22 @@ Per istruzioni su come eseguire l'app dopo la compilazione, vedere [Creare la pr
 
     2. *netstandard1.3*
 
-        Questa cartella contiene un'altra versione di , che viene usata durante la compilazione di progetti in un computer `TypeScript.Tasks.dll` non Windows distribuzione.
+        Questa cartella contiene un'altra versione di , che viene usata durante la compilazione di progetti in `TypeScript.Tasks.dll` un computer non Windows distribuzione.
 
     3. *Tsc*
 
         Questa cartella contiene `tsc.js` e tutti i file di dipendenza necessari per `tsserver.js` eseguirli come script del nodo.
 
         > [!NOTE]
-        > Se Visual Studio installato, ilnode.exe *in* bundle verrà prelevato automaticamente. In Node.js deve essere installato nel computer.
+        > Se Visual Studio installato, ilnode.exe *in* bundle verrà prelevato automaticamente. In Node.js necessario installare nel computer.
 
         Le versioni precedenti alla 3.1 contenevano un `tsc.exe` eseguibile per eseguire la compilazione. Nella versione 3.1 questa funzionalità è stata rimossa a favore dell'uso di `node.exe` .
 
 ### <a name="remove-default-imports"></a>Rimuovere le importazioni predefinite
 
-Nei progetti ASP.NET Core che usano [il formato non di tipo SDK](/nuget/resources/check-project-format), potrebbe essere necessario rimuovere alcuni elementi del file di progetto.
+Nei progetti ASP.NET Core che usano [il](/nuget/resources/check-project-format)formato non di tipo SDK , potrebbe essere necessario rimuovere alcuni elementi del file di progetto.
 
-Se si usa il pacchetto NuGet per MSBuild per un progetto, il file di progetto non deve `Microsoft.TypeScript.Default.props` importare o `Microsoft.TypeScript.targets` . I file vengono importati dal pacchetto NuGet, quindi includerli separatamente può causare un comportamento imprevisto.
+Se si usa il pacchetto NuGet per MSBuild per un progetto, il file di progetto non deve importare `Microsoft.TypeScript.Default.props` o `Microsoft.TypeScript.targets` . I file vengono importati dal pacchetto NuGet, quindi includerli separatamente può causare un comportamento imprevisto.
 
 1. Fare clic con il pulsante destro del mouse sul progetto **e scegliere Scarica Project**.
 
