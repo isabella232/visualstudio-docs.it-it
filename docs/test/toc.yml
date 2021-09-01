@@ -402,3 +402,5 @@
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: Installare agenti di test e test controller
       href: lab-management/install-configure-test-agents.md
+- name: Test remoti in Visual Studio
+  href: remote-testing.md
