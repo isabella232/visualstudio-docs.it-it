@@ -2,7 +2,7 @@
 title: Gestire le proprietà di progetti e soluzioni
 description: Informazioni su come gestire sia le proprietà del progetto che le proprietà della soluzione in Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 09/01/2021
+ms.date: 09/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,21 +10,21 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fa70c86c768ed37150e70454c12c5889aa820523
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: 3e65917302d877c3b21d5f380d5dcdcc0a622732
+ms.sourcegitcommit: 9a340611faaaa143946b3ede66ee84ec19108b09
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398429"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "123419851"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gestire le proprietà di progetti e soluzioni
 
 Le proprietà dei progetti governano molti aspetti della compilazione, del debug, del test e della distribuzione. Alcune proprietà sono comuni tra tutti i tipi di progetto e altre sono univoche di piattaforme o linguaggi specifici.
 
 > [!TIP]
-> In [Visual Studio 2022 Preview](/visualstudio/releases/2022/release-notes-preview)sono state aggiunte nuove funzionalità alle proprietà del progetto e ne è stata aggiornata l'interfaccia utente. Per altre informazioni, vedere il post di blog [**Revamped Project Properties UI**](https://devblogs.microsoft.com/visualstudio/flexible-theming-visual-studio/) (Interfaccia utente delle proprietà di Project rinnovata).
+> In [Visual Studio 2022 Preview](/visualstudio/releases/2022/release-notes-preview)sono state aggiunte nuove funzionalità alle proprietà del progetto e ne è stata aggiornata l'interfaccia utente. Per altre informazioni, vedere il post di blog [**Revamped Project Properties UI**](https://devblogs.microsoft.com/visualstudio/revamped-project-properties-ui/) (Interfaccia utente delle proprietà di Project rinnovata).
 
-Per accedere alle proprietà del **progetto,** fare clic con il pulsante  destro del mouse sul nodo  del progetto in Esplora soluzioni e scegliere Proprietà oppure digitare le proprietà nella casella di ricerca sulla barra dei menu e scegliere Finestra Proprietà dai risultati. 
+Per accedere alle proprietà del progetto, fare clic con il pulsante  destro del mouse sul nodo del  progetto **in Esplora soluzioni** e scegliere Proprietà oppure digitare le proprietà nella casella di ricerca sulla barra dei menu e scegliere Finestra Proprietà dai risultati.
 
 ![Menu di scelta rapida del progetto](../ide/media/vs2015_proj_prop_menu.gif)
 
