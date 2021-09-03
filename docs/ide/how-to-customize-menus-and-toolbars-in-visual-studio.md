@@ -2,7 +2,7 @@
 title: Personalizzare menu e barre degli strumenti
 description: Informazioni su come personalizzare Visual Studio menu e barre degli strumenti e su come personalizzare i comandi inclusi nei menu e nelle barre degli strumenti.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 09/01/2021
 ms.topic: how-to
 f1_keywords:
 - vs.renametoolbar
@@ -30,19 +30,19 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd720eac25f6f3cc7baedc3119e38d2fe9953a5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8223dfb14ab626e6509cf0df32cba05526fc707f
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028163"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397338"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: personalizzare menu e barre degli strumenti in Visual Studio
 
 È possibile personalizzare Visual Studio non solo aggiungendo e rimuovendo barre degli strumenti e menu nella barra dei menu, ma anche aggiungendo e rimuovendo comandi in una barra degli strumenti o menu specifico.
 
-> [!WARNING]
-> Dopo aver personalizzato una barra degli strumenti o un menu, verificare che la relativa casella di controllo rimanga selezionata nella finestra di dialogo **Personalizza**. In caso contrario, le modifiche non verranno mantenute dopo aver chiuso e riaperto Visual Studio.
+> [!TIP]
+> Per altre informazioni su come personalizzare la barra degli strumenti in modo da renderla personalizzata, vedere il recente post di blog [**Optimizing toolbars for your workflow**](https://devblogs.microsoft.com/visualstudio/optimizing-toolbars-for-your-workflow/)(Ottimizzazione delle barre degli strumenti per il flusso di lavoro).
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Aggiungere, rimuovere o spostare un menu nella barra dei menu
 
@@ -85,6 +85,9 @@ ms.locfileid: "122028163"
         > Per altre informazioni su come migliorare l'uso e l'accessibilità delle barre degli strumenti, vedere [Procedura: Impostare le opzioni di accessibilità IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name=""></a><a name="customizing_menu">Personalizzare un menu o di una barra degli strumenti</a>
+
+> [!WARNING]
+> Dopo aver personalizzato una barra degli strumenti o un menu, verificare che la relativa casella di controllo rimanga selezionata nella finestra di dialogo **Personalizza**. In caso contrario, le modifiche non verranno mantenute dopo aver chiuso e riaperto Visual Studio.
 
 1. Sulla barra dei menu scegliere Strumenti  >  **Personalizza.**
 

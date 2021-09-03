@@ -1,6 +1,6 @@
 ---
 title: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown
-description: Aggiungere i gestori eventi Enter per i controlli NumericUpDown nell'esercitazione creare un quiz matematico a tempo.
+description: Aggiungere i gestori dell'evento Enter per i controlli NumericUpDown nell'esercitazione creare un quiz matematico a tempo.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: tutorial
@@ -8,18 +8,18 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2032ae8db33600a232b30c144ae0919d748eec31
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3be562e6af78101a86dca5e2567e4b0eb85033cc
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078142"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397811"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown
 
@@ -63,7 +63,7 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori dell'event
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     Sebbene il codice possa sembrare complesso, è facile da capire se lo si analizza passaggio per passaggio. Innanzitutto, osservare l'inizio del metodo: `object sender` in C# o `sender As System.Object` in Visual Basic. Questo parametro fa riferimento all'oggetto di cui viene generato l'evento, noto come mittente. In questo caso l'oggetto mittente è il controllo NumericUpDown. Pertanto, nella prima riga del metodo si specifica che il mittente non è un oggetto generico, ma è in maniera specifica un controllo NumericUpDown. Ogni controllo NumericUpDown è un oggetto, ma non tutti gli oggetti sono un controllo NumericUpDown. Il controllo NumericUpDown è denominato **answerBox** in questo metodo, perché verrà usato per tutti i controlli NumericUpDown nel form, non solo per il controllo NumericUpDown somma. Poiché si dichiara la variabile answerBox in questo metodo, il relativo ambito è applicabile solo a questo metodo. In altre parole, è possibile utilizzare la variabile solo all'interno del metodo.
+     Sebbene il codice possa sembrare complesso, è facile da capire se lo si analizza passaggio per passaggio. Innanzitutto, osservare l'inizio del metodo: `object sender` in C# o `sender As System.Object` in Visual Basic. Questo parametro fa riferimento all'oggetto di cui viene generato l'evento, noto come mittente. In questo caso l'oggetto mittente è il controllo NumericUpDown. Pertanto, nella prima riga del metodo si specifica che il mittente non è un oggetto generico, ma è in maniera specifica un controllo NumericUpDown. Ogni controllo NumericUpDown è un oggetto , ma non tutti gli oggetti sono controlli NumericUpDown. Il controllo NumericUpDown è denominato **answerBox** in questo metodo, perché verrà usato per tutti i controlli NumericUpDown nel form, non solo per il controllo NumericUpDown somma. Poiché si dichiara la variabile answerBox in questo metodo, il relativo ambito è applicabile solo a questo metodo. In altre parole, è possibile utilizzare la variabile solo all'interno del metodo.
 
      La riga successiva verifica se answerBox è stato convertito (cast) correttamente da un oggetto in un controllo NumericUpDown. Se la conversione ha esito negativo, la variabile avrebbe un valore pari a `null` (C#) o `Nothing` (Visual Basic). La terza riga ottiene la lunghezza della risposta visualizzata nel controllo NumericUpDown, mentre la quarta riga seleziona il valore corrente nel controllo in base a tale lunghezza. A questo punto, quando l'esecutore del quiz sceglie il controllo, Visual Studio genera l'evento che determina la selezione della risposta corrente. Non appena l'esecutore del quiz inizia a immettere un'altra risposta, la risposta precedente viene cancellata e sostituita con la nuova.
 
@@ -79,6 +79,6 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori dell'event
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 6: Aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md)**.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 6: Aggiungere un problema di sottrazione.](../ide/step-6-add-a-subtraction-problem.md)**
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 4: Aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

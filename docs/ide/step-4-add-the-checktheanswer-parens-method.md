@@ -8,25 +8,25 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fd4ded15646f4d1387749edbfa9e174fa18322
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e5f8d7a0c4856a9ff65d99512cf686ad80113d9b
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048596"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398626"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Passaggio 4: Aggiungere il metodo CheckTheAnswer()
 
-Nella quarta parte di questa esercitazione si scriverà un metodo, `CheckTheAnswer()`, che verifica se le risposte ai problemi di matematica sono corrette. Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
+Nella quarta parte di questa esercitazione si scriverà un metodo, `CheckTheAnswer()`, che verifica se le risposte ai problemi di matematica sono corrette. Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico](../ide/tutorial-2-create-a-timed-math-quiz.md)a tempo.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico](../ide/tutorial-2-create-a-timed-math-quiz.md)a tempo.
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Per verificare se le risposte sono corrette
 
@@ -60,6 +60,6 @@ Nella quarta parte di questa esercitazione si scriverà un metodo, `CheckTheAnsw
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere Passaggio 5: Aggiungere gestori eventi **[Enter per i controlli NumericUpDown.](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**
+- Per andare al passaggio successivo dell'esercitazione, vedere Passaggio 5: Aggiungere gestori eventi **[Enter per i controlli NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: aggiungere un timer per il conto alla rovescia](../ide/step-3-add-a-countdown-timer.md).

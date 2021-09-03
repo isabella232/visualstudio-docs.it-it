@@ -5,22 +5,22 @@ ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 808b5635764a49f67788825f5524662145ac5d77
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 50b9477b8b9b50207be2e2ccaebe72f60422e405
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116890"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397946"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Passaggio 2: Eseguire l'app visualizzatore di immagini
 
-Quando si crea un progetto Windows'app Forms, si compila effettivamente un programma che viene eseguito. In questa esercitazione l'app visualizzatore di immagini non fa ancora &mdash; molto, anche se lo farà. Per il momento, viene visualizzata una finestra vuota che mostra **Form1** nella barra del titolo.
+Quando si crea un progetto Windows Forms App, si compila effettivamente un programma che viene eseguito. In questa esercitazione l'app visualizzatore di immagini non fa ancora &mdash; molto, anche se lo farà. Per il momento, viene visualizzata una finestra vuota che mostra **Form1** nella barra del titolo.
 
 Ecco come eseguire l'app. 
 
@@ -62,7 +62,7 @@ Ecco come eseguire l'app.
 
 * Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 3: Impostare le proprietà del modulo.](../ide/step-3-set-your-form-properties.md)**
 
-* Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto app Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+* Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di app Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
 
 ## <a name="see-also"></a>Vedi anche
 

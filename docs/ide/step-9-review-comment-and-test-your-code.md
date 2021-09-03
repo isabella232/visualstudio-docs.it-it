@@ -8,18 +8,18 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 - VB
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f285893e32d1067c67ec8d76fe41c5958f9766
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 70db7188d16d3a878ecec50f734946cdb93d8f3c
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116910"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397351"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 
@@ -74,7 +74,7 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br>
 ***Salva tutto** _ _button*
 
-     In alternativa, per salvare l'app, scegliere **Salva** tutto dalla barra  >   dei menu o premere **CTRL** + **MAIUSC** + **S.** Una procedura consigliata consiste nel salvare presto e spesso.
+     In alternativa, per salvare l'app, scegliere **Salva** tutto  >   dalla barra dei menu o premere **CTRL** + **MAIUSC** + **S.** Una procedura consigliata consiste nel salvare presto e spesso.
 
      Quando è in esecuzione, il programma dovrebbe essere simile all'immagine seguente.
 

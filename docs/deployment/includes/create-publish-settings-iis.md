@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e9650a10a193947f11172d717481f8221a66ccf
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85292126"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397869"
 ---
 
 1. Chiudere e riaprire la Console di gestione IIS per visualizzare le opzioni di configurazione aggiornate nell'interfaccia utente.
@@ -13,11 +13,11 @@ ms.locfileid: "85292126"
 
     ![Impostare la configurazione Distribuzione Web](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-   Se il menu **Distribuisci** non viene visualizzato, vedere la sezione precedente per verificare che distribuzione Web sia in esecuzione.
+   Se il **menu** Distribuisci non è visualizzato, vedere la sezione precedente per verificare che Distribuzione Web sia in esecuzione.
 
 3. Nella finestra di dialogo **Abilita pubblicazione Distribuzione Web** esaminare le impostazioni.
 
-4. Fare clic su **Setup**.
+4. Fare clic su **Configura**.
 
     Nel riquadro **Risultati** l'output indica che i diritti di accesso vengono concessi all'utente specificato e che è stato generato un file con estensione *publishsettings* nella posizione indicata nella finestra di dialogo.
 
@@ -41,9 +41,9 @@ ms.locfileid: "85292126"
    * Il file *msdeploy.axd* al quale si fa riferimento nell'attributo `publishUrl` è un file gestore HTTP generato dinamicamente per Distribuzione Web. Ai fini dei test, in genere è possibile usare anche `http://myhostname:8172`.
    * La porta `publishUrl` è impostata sulla porta 8172, il valore predefinito per Distribuzione Web.
    * La porta `destinationAppUrl` è impostata sulla porta 80, il valore predefinito per IIS.
-   * Se non si riesce a connettersi all'host remoto in Visual Studio usando il nome host (nei passaggi successivi), provare con l'indirizzo IP al posto del nome host.
+   * Se, nei passaggi successivi, non è possibile connettersi all'host remoto da Visual Studio usando il nome host, testare l'indirizzo IP del server al posto del nome host.
 
      > [!NOTE]
-     > Se si esegue la pubblicazione in IIS in esecuzione in una VM di Azure, è necessario aprire le porte Distribuzione Web e IIS nel gruppo Sicurezza di rete. Per informazioni dettagliate, vedere [Install and run IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server) (Installare ed eseguire IIS).
+     > Se si esegue la pubblicazione in IIS in esecuzione in una macchina virtuale di Azure, è necessario aprire una porta in ingresso per Distribuzione Web e IIS nel gruppo Sicurezza di rete. Per informazioni dettagliate, vedere [Aprire porte a una macchina virtuale.](/azure/virtual-machines/windows/nsg-quickstart-portal)
 
 5. Copiare questo file nel computer in cui si esegue Visual Studio.

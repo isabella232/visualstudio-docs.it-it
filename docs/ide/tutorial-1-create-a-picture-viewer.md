@@ -5,22 +5,22 @@ ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb876a9b242c5984cda2cfb6c813bde6a6059f6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e19a66adaf2123879e07f784bfbc6b953956001d
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150833"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397694"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un visualizzatore di immagini
 
-In questa esercitazione si compila un'app che carica un'immagine da un file e la visualizza in una finestra. Si apprenderà come usare **Windows Forms Designer** per trascinare controlli come pulsanti e caselle immagine nel form, impostarne le proprietà e usare i contenitori per ridimensionare il form senza problemi. Si inizia inoltre a scrivere il codice.
+In questa esercitazione si compila un'app che carica un'immagine da un file e la visualizza in una finestra. Si apprenderà come usare progettazione form **di Windows** per trascinare controlli come pulsanti e caselle immagine nel form, impostarne le proprietà e usare i contenitori per ridimensionare il form senza problemi. Si inizia inoltre a scrivere il codice.
 
 > [!NOTE]
 > Questa esercitazione illustra sia C# che Visual Basic, quindi concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.

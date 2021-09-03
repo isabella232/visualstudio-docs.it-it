@@ -5,23 +5,23 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d35a2ee77341ab97209a41084751a0093b37a818
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 6f542c2fe86b642a1d8cf53d9fe1bff4af611c9e
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061732"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397668"
 ---
 # <a name="step-9-try-other-features"></a>Passaggio 9: Provare altre funzionalità
 Per acquisire maggiore dimestichezza, provare a modificare icone e colori oppure aggiungere un timer di gioco o suoni. Per rendere più impegnativo il gioco, provare a ingrandire la lavagna e a regolare il timer.
 
-Per scaricare una versione completa dell'esempio, vedere Completare [l'esempio di esercitazione sul gioco di abbinamenti.](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)
+Per scaricare una versione completa dell'esempio, vedere l'esempio di esercitazione [completa sul gioco di abbinamenti.](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)
 
 ## <a name="to-try-other-features"></a>Per provare altre funzionalità
 

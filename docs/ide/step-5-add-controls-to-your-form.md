@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a8653bdc5b16e244247c15755d3e018ecb9b6b5114b6242661648f219fb58de5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 638d7e32a522523cf53213fee1194c7a1a1bbc4e
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447057"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398416"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Passaggio 5: Aggiungere controlli al modulo
 
@@ -49,7 +49,7 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 1. Scegliere **TableLayoutPanel** nel form e quindi  passare al gruppo Contenitori nella casella degli strumenti **(in** cui è stato ottenuto il controllo TableLayoutPanel) e fare doppio clic sull'elemento **FlowLayoutPanel** per aggiungere un nuovo controllo all'ultima cella (in basso a destra). Ancorare quindi FlowLayoutPanel in TableLayoutPanel. A tale scopo, scegliere **Ancora** nel contenitore padre nell'elenco attività triangolo nero di FlowLayoutPanel o impostando la proprietà **Dock** di FlowLayoutPanel su **Fill**.
 
     > [!NOTE]
-    > È <xref:System.Windows.Forms.FlowLayoutPanel> un contenitore che dispone altri controlli in una riga, uno dopo l'altro. Quando si ridimensiona flowLayoutPanel, tutti i relativi controlli vengono disloquisiti in una singola riga, se ha spazio a tale scopo. In caso contrario, vengono disposti su più righe, uno sopra l'altro. <br/><br/>In questo caso, si userà flowLayoutPanel per contenere quattro pulsanti. Se i pulsanti ne dispongono uno sopra l'altro quando vengono aggiunti, assicurarsi di selezionare FlowLayoutPanel prima di aggiungere i pulsanti. <br/><br/>In genere, ogni cella contiene un solo controllo. In questo esempio la cella inferiore destra di TableLayoutPanel contiene quattro controlli pulsante. Perché?  Poiché FlowLayoutPanel è un controllo contenitore, ovvero un controllo in una cella che contiene altri controlli.
+    > È <xref:System.Windows.Forms.FlowLayoutPanel> un contenitore che dispone altri controlli in una riga, uno dopo l'altro. Quando si ridimensiona flowLayoutPanel, tutti i relativi controlli vengono disloquisiti in una singola riga, se ha spazio a tale scopo. In caso contrario, vengono disposti su più righe, uno sopra l'altro. <br/><br/>In questo caso, si userà flowLayoutPanel per contenere quattro pulsanti. Se i pulsanti ne dispongono uno sopra l'altro quando vengono aggiunti, assicurarsi di selezionare FlowLayoutPanel prima di aggiungere i pulsanti. <br/><br/>In genere, ogni cella contiene un solo controllo. In questo esempio la cella in basso a destra di TableLayoutPanel contiene quattro controlli pulsante. Perché?  Poiché FlowLayoutPanel è un controllo contenitore, ovvero un controllo in una cella che contiene altri controlli.
 
 ## <a name="to-add-buttons"></a>Per aggiungere pulsanti
 

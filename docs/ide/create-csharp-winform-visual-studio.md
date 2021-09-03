@@ -4,34 +4,34 @@ description: Informazioni su come creare un'app Windows Forms in Visual Studio C
 ms.date: 09/26/2019
 ms.topic: tutorial
 ms.devlang: CSharp
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 464a75441a0f32ba3ca1196c9a6ed43b3bc0940f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 446bb42b73e1848d295eec60e3ce81aef412490b
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124061"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398600"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creare un'app Windows Forms in Visual Studio con C\#
 
-In questa breve introduzione all'ambiente Visual Studio di sviluppo integrato (IDE) si creerà una semplice applicazione C# con un'interfaccia utente basata su Windows.
+In questa breve introduzione all'ambiente Visual Studio sviluppo integrato (IDE) si creerà una semplice applicazione C# con un'interfaccia utente basata su Windows.
 
 ::: moniker range="vs-2017"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 > [!NOTE]
 > Alcune delle schermate contenute in questa esercitazione usano il tema scuro. Per passare al tema scuro, qualora questo non fosse già in uso, vedere le informazioni disponibili nella pagina [Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md).
@@ -57,7 +57,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
 
 1. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
-1. Nella finestra **di dialogo Nuovo Project** nel riquadro sinistro espandere Visual **C#** e quindi scegliere Windows **Desktop**. Nel riquadro centrale scegliere il modello **App Windows Forms (.NET Framework)**. Assegnare al file il nome `HelloWorld`.
+1. Nella finestra **di dialogo Nuovo** Project nel riquadro sinistro espandere Visual **C#** e quindi scegliere **Windows Desktop**. Nel riquadro centrale scegliere il modello **App Windows Forms (.NET Framework)**. Assegnare al file il nome `HelloWorld`.
 
      Se non viene visualizzato il modello del progetto **App Windows Forms (.NET Framework)**, chiudere la finestra di dialogo **Nuovo progetto** e nella barra dei menu superiore scegliere **Strumenti** > **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
@@ -100,7 +100,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
 
 ## <a name="create-the-application"></a>Creare l'applicazione
 
-Dopo aver selezionato il modello di progetto C# e aver Visual Studio il file, viene aperto automaticamente un modulo. Un modulo è un'interfaccia utente di Windows. Si creerà un'applicazione "Hello World" aggiungendo controlli al form e quindi si eseguirà l'app.
+Dopo aver selezionato il modello di progetto C# e aver assegnare un nome al file, Visual Studio un modulo. Un modulo è un'interfaccia utente di Windows. Si creerà un'applicazione "Hello World" aggiungendo controlli al form e quindi si eseguirà l'app.
 
 ### <a name="add-a-button-to-the-form"></a>Aggiungere un pulsante al modulo
 
@@ -108,13 +108,13 @@ Dopo aver selezionato il modello di progetto C# e aver Visual Studio il file, vi
 
      ![Scegliere la casella degli strumenti per aprire la finestra Casella degli strumenti](../ide/media/csharp-toolbox-toolwindow.png)
 
-     Se l'opzione a  comparsa Casella degli strumenti non è visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, visualizzare **la casella degli**  >  **strumenti**. In caso contrario, **premere** + **CTRL** + **ALT+X.**
+     Se l'opzione a  comparsa Casella degli strumenti non è visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, visualizzare **casella**  >  **degli strumenti**. In caso contrario, **premere** + **CTRL** + **ALT+X.**
 
 1. Scegliere **l'icona Aggiungi** per ancorare la **finestra casella degli** strumenti.
 
-     ![Scegliere l'icona Aggiungi per aggiungere la finestra Casella degli strumenti all'IDE](../ide/media/vb-pin-the-toolbox-window.png)
+     ![Scegliere l'icona Aggiungi per aggiungere la finestra casella degli strumenti all'IDE](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. Scegliere il **controllo Pulsante** e trascinarlo nel form.
+1. Scegliere il **controllo** Pulsante e trascinarlo nel form.
 
      ![Aggiungere un pulsante al modulo](../ide/media/csharp-add-button-form1.png)
 

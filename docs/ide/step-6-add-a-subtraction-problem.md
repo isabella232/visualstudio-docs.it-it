@@ -8,18 +8,18 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe427595ec883c3607a769ae837952e092cf1e6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e959a1ef4e813510a7a5963c144022748a4b85c9
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061831"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398242"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Passaggio 6: Aggiungere un problema di sottrazione
 Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazione e si apprenderà come eseguire le attività seguenti:
@@ -33,7 +33,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 - Aggiornare il gestore dell'evento <xref:System.Windows.Forms.Timer.Tick> del timer in modo che inserisca la risposta corretta quando il tempo scade.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico](../ide/tutorial-2-create-a-timed-math-quiz.md)a tempo.
 
 ## <a name="to-add-a-subtraction-problem"></a>Per aggiungere un problema di sottrazione
 

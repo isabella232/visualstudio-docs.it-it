@@ -5,18 +5,18 @@ ms.date: 08/30/2019
 ms.custom: SEO-VS-2020
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ae56bace1620971563914b2c2c1e7291404242
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: aa997d001fb2e6400516acea39e299ea39dc19ef
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056082"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397798"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel
 
@@ -31,7 +31,7 @@ In questo passaggio si aggiunge un controllo <xref:System.Windows.Forms.TableLay
      ![Gruppo Contenitori](../ide/media/express_toolbox.png)<br>
 ***Contenitori** _ _group*
 
-1. È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo TableLayoutPanel nella **casella degli strumenti**. In caso contrario, è possibile trascinare il controllo dalla casella degli strumenti al form. Quando si esegue questa operazione, l'IDE aggiunge un controllo TableLayoutPanel al form, come illustrato nello screenshot seguente.
+1. È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo TableLayoutPanel nella **casella degli strumenti**. In caso contrario, è possibile trascinare il controllo dalla casella degli strumenti nel form. Quando si esegue questa operazione, l'IDE aggiunge un controllo TableLayoutPanel al form, come illustrato nello screenshot seguente.
 
      ![Controllo TableLayoutPanel](../ide/media/express_formtablelayout.png)<br>
 ***TableLayoutPanel** _ _control*
@@ -39,7 +39,7 @@ In questo passaggio si aggiunge un controllo <xref:System.Windows.Forms.TableLay
     > [!NOTE]
     > Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic in qualsiasi punto all'interno del form per chiuderla. Altre informazioni su questa finestra verranno apprese più avanti nell'esercitazione.
 
-     Si noti che la **casella degli strumenti** si espande per coprire il modulo quando si fa clic sulla relativa scheda e si chiude quando si fa clic in un punto esterno. Questa è la funzionalità Nascondi automaticamente nell'IDE. È possibile attivarla o disattivarla per qualsiasi finestra scegliendo l'icona a forma di puntina da disegno nell'angolo superiore destro della finestra per attivare o disattivare Nascondi automaticamente e bloccarla sul posto. L'icona a forma di puntina da disegno ha l'aspetto seguente.
+     Si noti che la **casella degli strumenti** si espande per coprire il modulo quando si fa clic sulla relativa scheda e si chiude quando si fa clic in un punto esterno. Questa è la funzionalità Nascondi automaticamente nell'IDE. È possibile attivarla o disattivarla per una delle finestre scegliendo l'icona della puntina da disegno nell'angolo superiore destro della finestra per attivare o disattivare Nascondi automaticamente e bloccarla sul posto. L'icona a forma di puntina da disegno ha l'aspetto seguente.
 
      ![Icona della puntina da disegno](../ide/media/express_pushpintoolbox.png)<br>
 ***Puntina** da disegno _ _icon*
@@ -53,7 +53,7 @@ In questo passaggio si aggiunge un controllo <xref:System.Windows.Forms.TableLay
 
 1. Il selettore dei controlli è un elenco a discesa che si trova nella parte superiore della finestra **Proprietà**. In questo esempio è selezionato un controllo denominato `tableLayoutPanel1`. È possibile selezionare i controlli scegliendo un'area in **Progettazione Windows Form** o selezionandoli dal selettore dei controlli.
 
-   Dopo aver selezionato TableLayoutPanel, individuare la relativa proprietà **Dock** e scegliere **Dock**, il cui valore dovrebbe essere impostato su **Nessuno**. Si noti che viene visualizzata una freccia a discesa accanto al valore. Scegliere la freccia e quindi selezionare il **pulsante Riempimento** (il pulsante grande al centro), come illustrato nello screenshot seguente.
+   Dopo aver selezionato TableLayoutPanel, individuare la relativa proprietà **Dock** e scegliere **Dock**, il cui valore dovrebbe essere impostato su **Nessuno**. Si noti che viene visualizzata una freccia a discesa accanto al valore. Scegliere la freccia e quindi selezionare il pulsante **Riempimento** (il pulsante grande al centro), come illustrato nello screenshot seguente.
 
      ![Finestra Proprietà con Riempimento selezionato](../ide/media/express_docktable.png)<br>
 ***Proprietà** _ _finestra con* ***Riempimento**_ _selected*

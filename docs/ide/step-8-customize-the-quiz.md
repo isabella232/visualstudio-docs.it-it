@@ -8,25 +8,25 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 028bf80fc32bac728463f3f1fdc7748914a45666
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 55868a7b5d2bcd39f9e82ee41711d50bcdebba76
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048492"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398390"
 ---
 # <a name="step-8-customize-the-quiz"></a>Passaggio 8: Personalizzare il quiz
 
 Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per personalizzare il quiz ed espandere ciò che è stato appreso. Ad esempio, si consideri la modalità mediante la quale tramite il programma vengono creati problemi di divisione casuali per cui la risposta non è mai una frazione. Per esercitarsi ulteriormente, modificare il colore del controllo `timeLabel` e offrire un suggerimento all'utente.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico](../ide/tutorial-2-create-a-timed-math-quiz.md)a tempo.
 
 ## <a name="to-customize-the-quiz"></a>Per personalizzare il quiz
 
@@ -50,4 +50,4 @@ Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per person
 
 - Per passare all'esercitazione successiva, vedere **[Esercitazione 3: Creare un gioco corrispondente.](../ide/tutorial-3-create-a-matching-game.md)**
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Aggiungere problemi di moltiplicazione e divisione.](../ide/step-7-add-multiplication-and-division-problems.md)

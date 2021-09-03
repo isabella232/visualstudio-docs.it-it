@@ -8,18 +8,18 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 964f49c6a149ccf0f5af46456005ff0e1f82826b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5a38a368297662a5204fd52948f9736c39e1311a
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078050"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398364"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
@@ -36,7 +36,7 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
 
 2. Scegliere l'icona **Timer1** per selezionare il timer. Nella finestra **Proprietà** passare dalla visualizzazione degli eventi a quella delle proprietà. Impostare quindi la proprietà **Interval** del timer su **750**, ma lasciare la proprietà **Enabled** impostata su **False**. La proprietà **Interval** indica al timer il tempo di attesa tra eventi *tick* o il momento in cui viene attivato l'evento <xref:System.Windows.Forms.Timer.Tick>. Il valore 750 indica al timer di attendere tre quarti di secondo (750 millisecondi) prima di generare il relativo evento Tick. Il metodo <xref:System.Windows.Forms.Timer.Start> per avviare il timer verrà chiamato solo dopo che il giocatore avrà scelto la seconda etichetta.
 
-3. Scegliere l'icona del controllo **timer in Progettazione**  Windows Form e quindi premere INVIO oppure fare doppio clic sul timer per aggiungere un gestore eventi Tick vuoto. Sostituire il codice con quello indicato di seguito oppure immettere manualmente il codice seguente nel gestore eventi.
+3. Scegliere l'icona del controllo timer in Progettazione  Windows **Form** e quindi premere INVIO oppure fare doppio clic sul timer per aggiungere un gestore eventi Tick vuoto. Sostituire il codice con quello indicato di seguito oppure immettere manualmente il codice seguente nel gestore eventi.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet7":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet7":::

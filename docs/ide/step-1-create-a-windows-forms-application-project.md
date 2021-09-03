@@ -5,22 +5,22 @@ ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc64996386c4755017005e27beb0eba8bcfcc7d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 441b91ce3fe78b0e79be55db8d312b0b90740d97
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078193"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398112"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: Creare un progetto di app Windows Forms
 
-Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel creare un progetto di app Windows Forms.
+Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel creare un progetto app Windows Forms.
 
 ::: moniker range="vs-2017"
 
@@ -28,7 +28,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Nella barra dei menu scegliere **File**  >  **nuovo**  >  **Project**. La finestra di dialogo avrà un aspetto simile allo screenshot seguente.
 
-     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>***Nuovo progetto** __dialog box*
+     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>***Nuovo progetto** _ _dialog box*
 
 2. Sul lato sinistro della finestra di dialogo **Nuovo Project** scegliere **Visual C#** o **Visual Basic** e quindi scegliere Windows **Desktop**.
 
@@ -47,9 +47,9 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere Quindi **Desktop nell'elenco** **Project tipo di** connessione.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop dall'elenco** **Project tipo di** connessione.
 
-   Dopo aver applicato il filtro **Project** tipo, scegliere il modello Windows **Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
+   Dopo aver applicato il filtro **Project** tipo, scegliere il modello **Windows Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
 
    ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
@@ -70,13 +70,13 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore per tutti i progetti e i file necessari per l'app. Questi termini verranno spiegati dettagliatamente più avanti in questa esercitazione.
 
-## <a name="about-the-windows-forms-app-project"></a>Informazioni sul progetto Windows Forms App
+## <a name="about-the-windows-forms-app-project"></a>Informazioni sul progetto app Windows Forms
 
 1. L'ambiente di sviluppo include tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
 
      Se una di queste finestre non è presente, è possibile ripristinare il layout predefinito della finestra. Sulla barra dei menu scegliere **Reimposta**  >  **layout finestra**.
 
-     È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza**  >  **finestra Proprietà o** **Esplora soluzioni**.
+     È inoltre possibile visualizzare le finestre tramite i comandi di menu. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà o** **Esplora soluzioni**.
 
      Se sono aperte altre finestre, chiuderle scegliendo il pulsante **Chiudi** (x) negli angoli in alto a destra.
 
@@ -94,7 +94,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
 
     * **Esplora soluzioni finestra** In questa finestra è possibile visualizzare e passare a tutti gli elementi della soluzione.
 
-    Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con *cs* in C# e *vb* in Visual Basic), viene visualizzato il file di codice o una finestra di progettazione per il file di codice. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per Visual Studio form, la finestra di progettazione è denominata Windows **Progettazione form.**
+    Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con *cs* in C# e *vb* in Visual Basic), viene visualizzato il file di codice o una finestra di progettazione per il file di codice. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per Visual Studio form, la finestra di progettazione è denominata **Windows Progettazione form.**
 
     * **Finestra Proprietà** In questa finestra è possibile modificare le proprietà degli elementi selezionati nelle altre finestre. Ad esempio, se si sceglie Form1, è possibile modificarne il titolo impostando la proprietà **Text** e il colore di sfondo impostando la proprietà **Backcolor**.
 

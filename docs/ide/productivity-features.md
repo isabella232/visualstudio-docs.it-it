@@ -4,18 +4,18 @@ description: Informazioni sui tasti di scelta rapida e sulle funzionalità di pr
 ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
-author: j-martens
-ms.author: jmartens
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 42316256751a61b468198eb09472fe4c8c24f280
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ab3f07f0b9ec86ad1ec854ba5960099a084fb234
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062459"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398442"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guida alla produttività per Visual Studio
 
@@ -25,17 +25,17 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 ## <a name="get-started"></a>Introduzione
 
-È possibile risparmiare tempo cercando rapidamente qualsiasi elemento necessario, inclusi comandi, impostazioni, documentazione e opzioni di installazione. Vedere i tasti di scelta rapida per i comandi nei risultati della Visual Studio per memorizzarli più facilmente. 
+È possibile risparmiare tempo cercando rapidamente qualsiasi elemento necessario, inclusi comandi, impostazioni, documentazione e opzioni di installazione. Vedere i tasti di scelta rapida per i comandi all'interno dei risultati Visual Studio in modo da poterli memorizzare più facilmente. 
 
-- **Creare una simulazione del codice usando l'elenco attività**. Se non si hanno requisiti sufficienti per completare una parte di codice, usare Elenco attività per tenere traccia dei commenti del codice che usano token come e o token personalizzati e per gestire i collegamenti che si consegnino direttamente a una posizione predefinita nel `TODO` `HACK` codice. Per altre informazioni, vedere [Usare il Elenco attività](../ide/using-the-task-list.md).
+- **Eseguire la simulazione del codice usando l'elenco attività**. Se non si dispone di requisiti sufficienti per completare una parte di codice, usare Elenco attività per tenere traccia dei commenti del codice che usano token come e o token personalizzati e per gestire i collegamenti che si consegnino direttamente a una posizione predefinita nel `TODO` `HACK` codice. Per altre informazioni, vedere [Usare il Elenco attività](../ide/using-the-task-list.md).
 
-- **Usare Esplora soluzioni tasti di scelta rapida.** Se non si ha Visual Studio, questi tasti di scelta rapida saranno utili e risparmieranno tempo mentre si sta per arrivare a una nuova codebase. Per l'elenco completo dei tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
+- **Usare Esplora soluzioni tasti di scelta rapida.** Se non si ha la Visual Studio, questi tasti di scelta rapida saranno utili e risparmieranno tempo durante la creazione di una nuova codebase. Per l'elenco completo dei tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
 
 - **[Identificare e personalizzare i tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)**. È possibile identificare i tasti di scelta rapida per i comandi di Visual Studio, personalizzarli ed esportarli per consentirne l'utilizzo ad altri utenti. È sempre possibile trovare e modificare un tasto di scelta rapida nella finestra di dialogo Opzioni.
 
 - **Rendere Visual Studio più accessibile.** Visual Studio dispone di funzionalità di accessibilità integrate compatibili con utilità per la lettura dello schermo e altri tipi di Assistive Technology Program. Per [l'elenco](../ide/reference/accessibility-tips-and-tricks.md) completo delle funzionalità disponibili, Visual Studio suggerimenti e consigli per l'accessibilità. 
 
-- **Vedere l'articolo Visual Studio ciclo di vita e manutenzione del prodotto.** Per informazioni su come ottenere gli aggiornamenti per Visual Studio, le opzioni di supporto per i clienti Enterprise e Professional, il supporto per le versioni precedenti di Visual Studio e i componenti non coperti dalla manutenzione di [Visual Studio,](/visualstudio/releases/2019/servicing)vedere ciclo di vita e manutenzione del prodotto Visual Studio . 
+- **Vedere l'articolo Visual Studio ciclo di vita e manutenzione del prodotto.** Per informazioni su come ottenere gli aggiornamenti per Visual Studio, le opzioni di supporto per i clienti Enterprise e Professional, il supporto per le versioni precedenti di Visual Studio e i componenti non coperti dalla manutenzione di Visual Studio, vedere ciclo di vita e manutenzione del prodotto [Visual Studio](/visualstudio/releases/2019/servicing). 
 
 - **Installare e gestire NuGet pacchetti in Visual Studio**. L'interfaccia utente di Gestione pacchetti NuGet in Visual Studio in Windows consente di installare, disinstallare e aggiornare facilmente i pacchetti NuGet in progetti e soluzioni. Per altre informazioni, vedere [Installare e gestire pacchetti in Visual Studio usando NuGet Gestione pacchetti](/nuget/consume-packages/install-use-packages-visual-studio).
 
@@ -49,7 +49,7 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 - **Modifica dell'inserimento automatico delle opzioni IntelliSense durante l'immissione del codice**. Se si attiva la modalità di suggerimento di IntelliSense, è possibile specificare che le opzioni IntelliSense vengano inserite solo se si scelgono in modo esplicito.
 
-     Per abilitare la modalità di suggerimento, premere **CTRL** ALT+BARRA SPAZIATRICE oppure, sulla barra dei menu, scegliere Modifica +  +    >  **IntelliSense**  >  **Attiva/Disattiva modalità di completamento.**
+     Per abilitare la modalità di suggerimento, premere **CTRL** ALT BARRA SPAZIATRICE oppure, sulla barra dei menu, scegliere Modifica Modalità di completamento +  +  Attiva/Disattiva   >  **IntelliSense.**  >  
 
 - **Usare frammenti di codice**. È possibile usare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
 
@@ -59,13 +59,13 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 - **Visualizzazione e modifica della definizione di un elemento di codice**. È possibile visualizzare e modificare rapidamente il modulo in cui viene definito un elemento di codice, ad esempio un membro, una variabile o un elemento locale.
 
-    Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere + **ALT F12** oppure aprire il menu di scelta rapida per l'elemento e quindi scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
+    Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi scegliere **ALT** + **F12** oppure aprire il menu di scelta rapida per l'elemento e quindi scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
 
 - **Uso di applicazioni di esempio**. È possibile velocizzare lo sviluppo di applicazioni scaricando e installando applicazioni di esempio da [Microsoft Developer Network](https://code.msdn.microsoft.com/). È inoltre possibile capire un particolare concetto di programmazione o tecnologico, scaricando e esplorando un Pacchetto di esempi di un'area.
 
-- **Modificare la formattazione delle parentesi graffe con Formattazione/Nuove righe**. Usare la **pagina Opzioni**  di formattazione per impostare le opzioni per la formattazione del codice nell'editor di codice, incluse le nuove righe. Per altre informazioni su come usare questa impostazione in C#, vedere Finestra di dialogo Opzioni: Editor di [testo > C#](../ide/reference/options-text-editor-csharp-formatting.md)> Stile codice > Formattazione . Per C++, vedere Impostare le preferenze di [codifica C++ in Visual Studio](/cpp/ide/how-to-set-preferences). Per Python, vedere [Formattare il codice Python](../python/formatting-python-code.md).
+- **Modificare la formattazione delle parentesi graffe con Formattazione/Nuove righe**. Usare la **pagina Opzioni**  di formattazione per impostare le opzioni per la formattazione del codice nell'editor di codice, incluse le nuove righe. Per altre informazioni su come usare questa impostazione in C#, vedere Finestra di dialogo Opzioni: Editor di [testo > C#](../ide/reference/options-text-editor-csharp-formatting.md)> Stile codice > Formattazione . Per C++, vedere Impostare le preferenze di codifica [C++ in Visual Studio](/cpp/ide/how-to-set-preferences). Per Python, vedere [Formattare il codice Python](../python/formatting-python-code.md).
 
-- **Modificare il rientro con Tabulazioni**. Usare impostazioni dell'editor personalizzate, personalizzate per ogni codebase, per applicare stili di codifica coerenti per più sviluppatori che lavorano allo stesso progetto in editor e ID diversi. Assicurarsi che l'intero team segua le stesse convenzioni, convenzioni di denominazione e regole di formattazione del linguaggio. Poiché queste impostazioni personalizzate sono portabili e viaggiano con il codice, è possibile applicare stili di codifica anche al di fuori Visual Studio. Per altre informazioni, vedere [Opzioni, Editor di testo, Tutti i linguaggi, Tabulazioni.](../ide/reference/options-text-editor-all-languages-tabs.md#tabs)
+- **Modificare il rientro con Tabulazioni**. Usare impostazioni dell'editor personalizzate, personalizzate per ogni codebase, per applicare stili di codifica coerenti per più sviluppatori che lavorano allo stesso progetto in editor e ID diversi. Assicurarsi che l'intero team segua le stesse convenzioni, convenzioni di denominazione e regole di formattazione del linguaggio. Poiché queste impostazioni personalizzate sono portabili e viaggiano con il codice, è possibile applicare stili di codifica anche al di fuori del Visual Studio. Per altre informazioni, vedere [Opzioni, Editor di testo, Tutti i linguaggi, Tabulazioni.](../ide/reference/options-text-editor-all-languages-tabs.md#tabs)
 
 ## <a name="navigate-within-your-code-and-the-ide"></a>Spostarsi all'interno del codice e dell'IDE
 
@@ -145,7 +145,7 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
 - **Usare Live Share per eseguire il debug in tempo reale con altri**. Live Share consente di modificare ed eseguire il debug in collaborazione con altri utenti in tempo reale, indipendentemente dal linguaggio di programmazione usato o dai tipi di app da creare. Per altre informazioni, vedere [Informazioni Visual Studio Live Share?](/visualstudio/liveshare/)
 
-- **Usare la finestra interattiva per scrivere e testare codice di piccole dimensioni.** Visual Studio fornisce una finestra interattiva REPL (Read-Evaluate-Print-Loop) che consente di immettere codice arbitrario e visualizzare risultati immediati. Questo modo di scrivere codice consente di apprendere e sperimentare le API e le librerie e di sviluppare in modo interattivo codice funzionante da includere nei progetti. Per Python, vedere [Usare python finestra interattiva](../python/python-interactive-repl-in-visual-studio.md). La funzionalità Finestra interattiva è disponibile anche per C#. 
+- **Usare la finestra interattiva per scrivere e testare codice di piccole dimensioni.** Visual Studio fornisce una finestra INTERATTIVA REPL (Read-Evaluate-Print-Loop) che consente di immettere codice arbitrario e visualizzare risultati immediati. Questo modo di scrivere codice consente di apprendere e sperimentare le API e le librerie e di sviluppare in modo interattivo codice funzionante da includere nei progetti. Per Python, vedere [Usare python finestra interattiva](../python/python-interactive-repl-in-visual-studio.md). La funzionalità Finestra interattiva è disponibile anche per C#. 
 
 ## <a name="access-visual-studio-tools"></a>Accesso agli strumenti di Visual Studio
 
@@ -171,7 +171,7 @@ In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che si
 
 - **Blocco della visualizzazione dei file usati di frequente nell'editor**. È possibile aggiungere file sul lato sinistro della scheda in modo che rimangano visibili indipendentemente dal numero di file aperti nell'editor.
 
-   Per aggiungere un file, scegliere la scheda del file e quindi scegliere il pulsante **Attiva/Disattiva stato puntina.**
+   Per aggiungere un file, scegliere la scheda del file e quindi scegliere il pulsante **Attiva/Disattiva stato** puntina.
 
 - **Spostamento di documenti e finestre in altri monitor**. Se si utilizza più di un monitor durante lo sviluppo delle applicazioni, è possibile gestire più facilmente le parti dell'applicazione spostando i file aperti nell'editor in un altro monitor. È anche possibile spostare le finestre degli strumenti, ad esempio le finestre del debugger, in un altro monitor e ancorare le finestre degli strumenti e dei documenti per creare raggruppamenti. Per altre informazioni, vedere [Personalizzazione del layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 

@@ -8,22 +8,22 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 - VB
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 468ed364b6ee36c4ae4f015ca1db8e471eef4835
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4f20676310953eebdc3980305e17f2783fc15459
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040785"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398455"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine
 
-In questo passaggio si fa in modo che **il pulsante Mostra un'immagine** funzioni come segue:
+In questo passaggio si fa in modo che il pulsante Mostra **un'immagine** funzioni come segue:
 
 - Quando un utente sceglie tale pulsante, l'app apre una <xref:System.Windows.Forms.OpenFileDialog> casella.
 
@@ -72,7 +72,7 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
     > [!NOTE]
     > I metodi sono una parte importante di qualsiasi app e questa esercitazione ha illustrato diversi modi per usare i metodi. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare in modo che l'app eserviti operazioni, ad esempio quella che si sta creando, denominata metodo , che apre una finestra di dialogo e un'immagine quando un utente sceglie `showButton_Click()` un pulsante.
 
- 1. Per C#, aggiungere uno spazio e quindi aggiungere due segni di uguale ( `==` ). Per Visual Basic, aggiungere uno spazio e quindi usare un solo segno di uguale (`=`). (C# e Visual Basic usano operatori di uguaglianza diversi.
+ 1. Per C#, aggiungere uno spazio e quindi aggiungere due segni di uguale ( `==` ). Per Visual Basic, aggiungere uno spazio e quindi usare un solo segno di uguale (`=`). C# e Visual Basic usano operatori di uguaglianza diversi.
 
  1. Aggiungere un altro spazio. Viene immediatamente visualizzata un'altra finestra di **IntelliSense**. Iniziare a digitare `DialogResult` e premere **TAB** per aggiungerlo.
 

@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f87a6d9e9b601e0226614eb82b8a689d4a6f47
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e3a9082f645a30bc47c755b50c332d8e3dc47d1c
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040983"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397785"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -26,7 +26,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ::: moniker range="vs-2017"
 
-1. Sulla barra dei menu scegliere **File** > **nuovo** > **Project**.
+1. Sulla barra dei menu scegliere **File** > **Nuovo** > **Project**.
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
@@ -41,13 +41,13 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ::: moniker range=">=vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere Quindi **Desktop nell'elenco** **Project tipo di** connessione.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop dall'elenco** **Project tipo di** connessione.
 
-   Dopo aver applicato il filtro **Project** tipo, scegliere il modello **Windows Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
+   Dopo aver applicato **il filtro Project,** scegliere il modello **Windows Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
 
    ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
@@ -62,7 +62,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Scegliere quindi **Crea**.
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Scegliere quindi **Crea.**
 
 ::: moniker-end
 
@@ -118,12 +118,12 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
        > [!NOTE]
        > Il tipo di carattere Webdings include una serie di icone ed è fornito con il sistema operativo Windows. Nel gioco delle coppie, il giocatore deve riuscire ad accoppiare le icone, per cui si utilizza questo tipo di carattere per visualizzare le icone da accoppiare. Anziché inserire **c** nella proprietà **Text**, provare a immettere lettere diverse per vedere quali icone vengono visualizzate. Il punto esclamativo equivale a un ragno, la N maiuscola a un occhio e la virgola a un peperoncino.
 
-5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. (Scegliere **CTRL** + **Tasti C** oppure sulla barra dei menu scegliere  >  **Modifica copia.** Incollarlo quindi. (Scegliere **CTRL** + **Tasti V** oppure sulla barra dei menu scegliere **Modifica**  >  **Incolla.** Nella seconda cella di TableLayoutPanel viene visualizzata una copia della prima etichetta. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
+5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. (Premere **CTRL** + **C** oppure sulla barra dei menu scegliere  >  **Modifica copia.** Quindi incollarlo. (Premere **CTRL** + **Tasti V** oppure sulla barra dei menu scegliere  >  **Modifica Incolla.** Una copia della prima etichetta viene visualizzata nella seconda cella di TableLayoutPanel. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
 
    > [!NOTE]
-   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL** Z oppure scegliere Modifica Annulla sulla +  barra dei   >  menu.
+   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL** Z oppure scegliere Modifica Annulla sulla barra +    >  **dei** menu.
 
-    A questo punto il modulo è strutturato. Dovrebbe essere simile all'immagine seguente.
+    A questo punto il modulo è disposto. Dovrebbe essere simile all'immagine seguente.
 
     ![Form iniziale del gioco di abbinamenti](../ide/media/express_tut4step1.png)<br/>*Form iniziale del gioco di abbinamenti*
 

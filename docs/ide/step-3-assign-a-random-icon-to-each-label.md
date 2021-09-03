@@ -8,18 +8,18 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd824bcfe1fad320f42c8240530c0d480975c12
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f3713fd439017c9577120402f649d40a9b44bef0
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132067"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397933"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Passaggio 3: Assegnare un'icona casuale a ogni etichetta
 
@@ -37,7 +37,7 @@ Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stess
 
 2. Aggiungere il metodo `AssignIconsToSquares()` come illustrato nel passaggio precedente. È possibile inserirlo immediatamente dopo il codice aggiunto in [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-     Come accennato in precedenza, nel metodo è presente qualcosa di `AssignIconsToSquares()` nuovo: un `foreach` ciclo in C# `For Each` e in Visual Basic. È possibile utilizzare un ciclo `For Each` ogni qualvolta si desidera eseguire la stessa azione ripetutamente. In questo caso, si vuole eseguire le stesse istruzioni per ogni etichetta in <xref:System.Windows.Forms.TableLayoutPanel>, come spiegato nel codice seguente. Nella prima riga viene creata una variabile denominata `control` in cui viene archiviato ogni controllo, uno alla volta, mentre sul controllo vengono eseguite le istruzioni incluse nel ciclo.
+     Come accennato in precedenza, nel metodo è presente qualcosa di nuovo: un `AssignIconsToSquares()` `foreach` ciclo in C# e in `For Each` Visual Basic. È possibile utilizzare un ciclo `For Each` ogni qualvolta si desidera eseguire la stessa azione ripetutamente. In questo caso, si vuole eseguire le stesse istruzioni per ogni etichetta in <xref:System.Windows.Forms.TableLayoutPanel>, come spiegato nel codice seguente. Nella prima riga viene creata una variabile denominata `control` in cui viene archiviato ogni controllo, uno alla volta, mentre sul controllo vengono eseguite le istruzioni incluse nel ciclo.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs" id="Snippet14":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb" id="Snippet14":::
@@ -86,6 +86,6 @@ Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stess
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 4: Aggiungere un](../ide/step-4-add-a-click-event-handler-to-each-label.md)** gestore eventi click a ogni etichetta.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta.](../ide/step-4-add-a-click-event-handler-to-each-label.md)**
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
