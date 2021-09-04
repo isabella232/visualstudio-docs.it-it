@@ -1,7 +1,7 @@
 ---
 title: Informazioni sulla finestra Esplora soluzioni strumenti
 description: Informazioni su come usare la finestra Esplora soluzioni strumenti in Visual Studio per creare & file, progetti e soluzioni.
-ms.date: 08/31/2021
+ms.date: 09/02/2021
 ms.topic: conceptual
 ms.custom: contperf-fy22q1
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6ef5bed4c462818861aba09d8c2e3bd2ef3353
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: 6fa982d290abcc852c93369003abeed0e6363291
+ms.sourcegitcommit: f71a0db01bd4f24521cee5da926b9db3571ddecd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398155"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "123459135"
 ---
 # <a name="how-to-use-solution-explorer"></a>Come usare Esplora soluzioni
 
@@ -43,7 +43,7 @@ La finestra degli strumenti contiene gli elementi dell'interfaccia utente seguen
 - **Project nodo**, in cui è possibile gestire i progetti
 - **Nodo Dipendenze**, in cui è possibile gestire la soluzione & dipendenze del progetto
 - **Nodo programma**, in cui è possibile visualizzare, modificare e gestire il programma o l'applicazione (app)
-- **[Scheda Modifiche Git](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)**, in cui è possibile usare Git & GitHub all'interno Visual Studio per collaborare ai progetti con il team
+- **[Scheda Modifiche git](../version-control/git-with-visual-studio.md?view=vs-2019&preserve-view=true#git-changes-window)**, in cui è possibile usare Git & GitHub all'interno Visual Studio per collaborare ai progetti con il team
 
 > [!TIP]
 > Se la finestra degli strumenti Esplora soluzioni non è visualizzata, è possibile aprirla dalla barra dei menu di Visual Studio usando Visualizza Esplora soluzioni oppure premendo  >   **CTRL** + **ALT** + **L**.
@@ -70,15 +70,15 @@ La barra dei menu contiene gli elementi dell'interfaccia utente seguenti, da sin
 
 ## <a name="solution-explorer-context-menu"></a>Esplora soluzioni menu di scelta rapida
 
-In Esplora soluzioni sono disponibili diverse opzioni con cui è possibile interagire usando il menu di scelta rapida. Lo screenshot seguente mostra le opzioni del menu di scelta rapida visualizzate quando si fa clic con il pulsante destro del mouse sul **nodo Soluzione.**
+In Esplora soluzioni sono disponibili diverse opzioni con cui è possibile interagire usando il menu di scelta rapida. Lo screenshot seguente per un'app C# mostra le opzioni del menu di scelta rapida visualizzate quando si fa clic con il pulsante destro del mouse sul **nodo Soluzione.**
 
 :::image type="content" source="media/solution-explorer-context-menu.png" alt-text="Screenshot del menu di scelta rapida in Esplora soluzioni.":::
 
-Anche ciò che viene visualizzato nel menu di scelta rapida dal nodo **Soluzione** dipende dalla soluzione. Lo screenshot seguente evidenzia le opzioni aggiuntive **seguenti:** Project dipendenze, **Project** ordine di compilazione, **Imposta** progetti di avvio e un menu a comparsa **Git.** Queste opzioni aggiuntive vengono visualizzate quando si aggiunge un altro progetto alla soluzione e quindi si aggiunge la soluzione a un repo.
+Ciò che viene visualizzato nel menu di scelta rapida dal nodo **Soluzione** dipende anche dal tipo di progetto, dal linguaggio di programmazione o dalla piattaforma. Lo screenshot seguente evidenzia le opzioni aggiuntive seguenti per un'app C#: **Project Dependencies**, **Project Build Order**, Set Startup **Projects** e un menu a comparsa **Git.** Queste opzioni aggiuntive vengono in genere visualizzate quando si aggiunge un altro progetto a una soluzione e quindi lo si aggiunge a un repo.
 
-:::image type="content" source="media/solution-explorer-context-menu-added-items.png" alt-text="Screenshot del menu di scelta rapida in Esplora soluzioni con opzioni aggiuntive.":::
+:::image type="content" source="media/solution-explorer-context-menu-extra-items.png" alt-text="Screenshot del menu di scelta rapida in Esplora soluzioni con opzioni aggiuntive.":::
 
-## <a name="add-menu"></a>Menu Aggiungi
+## <a name="the-add-menu"></a>Menu Aggiungi
 
 Nel menu Esplora soluzioni di scelta rapida, una delle opzioni più utili è **il** menu a comparsa Aggiungi. Da questa soluzione è possibile [aggiungere un altro](../get-started/csharp/tutorial-console-part-2.md#add-another-project) progetto a una soluzione. È anche possibile [aggiungere un elemento](reference/add-new-item-command.md) a un progetto e altro ancora.
 
