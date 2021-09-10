@@ -7,16 +7,16 @@ ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 6c1c045cef4c4368f7bcb0c5c1beb552ab6674bbda9509151338fbb43a79b601
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2e921ac1e9c85216bebf1626e1454b9fb764f129
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423435"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961811"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
- Visual Studio per Mac semplifica lo sviluppo del servizio dell'app con il supporto per la piattaforma di sviluppo Web ASP.NET Core più recente. Il funzionamento di ASP.NET Core si basa su .NET Core, l'evoluzione più recente di .NET Framework e del runtime. È stato ottimizzato per prestazioni veloci, è stato eseguito il factored per piccole dimensioni di installazione e riepilonato per l'esecuzione in Linux e macOS, oltre che in Windows.
+ Visual Studio per Mac semplifica lo sviluppo del servizio dell'app con il supporto per la ASP.NET Core di sviluppo Web più recente. Il funzionamento di ASP.NET Core si basa su .NET Core, l'evoluzione più recente di .NET Framework e del runtime. È stato ottimizzato per prestazioni veloci, fattorizzate per piccole dimensioni di installazione e ri-immaginati per l'esecuzione in Linux e macOS, nonché per Windows.
 
 ## <a name="installing-net-core"></a>Installazione di .NET Core
 
@@ -65,7 +65,7 @@ public static void Main(string[] args)
 }
 ```
 
-Un ASP.NET Core app crea un server Web nel metodo main configurando e avviando un host tramite un'istanza di [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
+Un ASP.NET Core app crea un server Web nel metodo principale configurando e avviando un host tramite un'istanza di [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
 
 * `UseKestrel`: specifica il server Kestrel che verrà usato dall'app
 * `UseContentRoot(Directory.GetCurrentDirectory())`: usa la cartella radice del progetto Web come radice del contenuto dell'app quando quest'ultima viene avviata da questa cartella
@@ -235,7 +235,7 @@ Per installare correttamente .NET Core, assicurarsi che tutti i quattro passaggi
 
 Questa guida offre un'introduzione ad ASP.NET Core. Descrive che cos'è e quando usarlo e fornisce informazioni per l'uso in Visual Studio per Mac.
 Per altre informazioni sui passaggi successivi, fare riferimento alle guide seguenti:
-- [ASP.NET Core](/aspnet/core/) documenti.
+- [ASP.NET Core](/aspnet/core/) docs.
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
 - [ASP.NET Core hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) (Esercitazione pratica su ASP.NET Core).
 

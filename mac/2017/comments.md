@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.topic: how-to
 ms.openlocfilehash: 44eee75b4803b4317bb7d3cd02cb19b55f41a067
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85949985"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961824"
 ---
 # <a name="comments"></a>Commenti
 
@@ -49,6 +49,6 @@ I commenti sono utili anche per la documentazione di codice per gli sviluppatori
 *)
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Codice di impostazione come commento (Visual Studio in Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

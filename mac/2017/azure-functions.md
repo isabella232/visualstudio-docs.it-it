@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727463"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961827"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
@@ -26,7 +26,7 @@ Per creare e distribuire funzioni è necessaria anche una sottoscrizione di Azur
 
 ## <a name="creating-your-first-azure-functions-project"></a>Creazione del primo progetto di Funzioni di Azure
 
-1. In Visual Studio per Mac selezionare **File > nuova soluzione**.
+1. In Visual Studio per Mac selezionare **File > Nuova soluzione**.
 2. Nella finestra di dialogo Nuovo progetto, selezionare il modello Funzioni di Azure in **Cloud > Generale** e fare clic su **Avanti**:
 
     ![Finestra Nuovo progetto con l'opzione Funzioni di Azure](media/azure-functions-image1.png)
@@ -87,14 +87,14 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
     Nella sezione [Modelli di funzione disponibili](#available-function-templates) è disponibile un elenco dei modelli di Funzioni di Azure.
 
-È possibile usare la procedura descritta in precedenza per aggiungere altre funzioni al progetto di app per le funzioni. Ogni funzione nel progetto può avere un trigger diverso, ma una funzione deve avere esattamente un trigger. Per altre informazioni, vedere [concetti relativi a trigger e associazioni di funzioni di Azure](/azure/azure-functions/functions-triggers-bindings).
+È possibile usare la procedura descritta in precedenza per aggiungere altre funzioni al progetto di app per le funzioni. Ogni funzione nel progetto può avere un trigger diverso, ma una funzione deve avere esattamente un trigger. Per altre informazioni, vedere Funzioni di Azure concetti relativi [a trigger e associazioni.](/azure/azure-functions/functions-triggers-bindings)
 
-## <a name="publish-to-azure"></a>Pubblicazione in Azure
+## <a name="publish-to-azure"></a>Eseguire la pubblicazione in Azure
 
-1. Fare clic con il pulsante destro del mouse sul nome del progetto e selezionare **pubblica > pubblica in Azure**:  ![ screenshot da funzioni di Azure, che mostra il progetto AF-httptrigger selezionato e i comandi pubblica e pubblica in Azure evidenziati nel menu di scelta rapida.](media/azure-functions-image5.png)
+1. Fare clic con il pulsante destro del mouse sul nome del progetto e scegliere Pubblica > Pubblica in **Azure**: Screenshot da Funzioni di Azure, che mostra il progetto AF-httptrigger selezionato e i comandi Pubblica e pubblica in Azure evidenziati nel menu di scelta  ![ rapida.](media/azure-functions-image5.png)
 2. Se l'account di Azure è già stato connesso a Visual Studio per Mac, viene visualizzato un elenco dei servizi app disponibili. Se non è stato ancora effettuato l'accesso, verrà richiesto di farlo.
 3. Nella finestra di dialogo **Pubblica in Servizi app di Azure** è possibile selezionare un servizio app esistente o crearne uno nuovo facendo clic **Nuovo**.
-4. Nella finestra di dialogo **Crea nuovo servizio app** immettere le impostazioni:  ![ screenshot della finestra del nuovo servizio app in funzioni di Azure, mostrando le impostazioni per la creazione di un nuovo servizio app in Azure.](media/azure-functions-image7.png)
+4. Nella finestra **di dialogo Crea** nuovo servizio app immettere le impostazioni: Screenshot della finestra Nuovo servizio app in Funzioni di Azure, che mostra le impostazioni per la creazione di un nuovo servizio app in  ![ Azure.](media/azure-functions-image7.png)
 
     |Impostazione  |Descrizione  |
     |---------|---------|
@@ -108,13 +108,13 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
 5. Fare clic su **Avanti** per creare un account di archiviazione. L'account di archiviazione di Azure è necessario per il runtime di Funzioni. Fare clic su **Personalizzato** per creare un account di archiviazione per utilizzo generico oppure usarne uno esistente:
 
-    ![Screenshot della schermata di configurazione dell'account di archiviazione in funzioni di Azure. Custom è selezionato per l'account di archiviazione e il nome dell'account e il tipo di account sono compilati.](media/azure-functions-image8.png)
+    ![Screenshot della schermata Configura Archiviazione account in Funzioni di Azure. Personalizzato è selezionato per Archiviazione Account e vengono compilati il nome e il tipo di account.](media/azure-functions-image8.png)
 
 6. Fare clic su **Crea** per creare un'app per le funzioni e le relative risorse in Azure con queste impostazioni e distribuire il codice di progetto della funzione.
 
-7. Potrebbe essere visualizzata una finestra di dialogo durante la pubblicazione con la richiesta "Aggiorna versione di Funzioni in Azure". Fare clic su **Sì**:
+7. Potrebbe essere visualizzata una finestra di dialogo durante la pubblicazione con la richiesta "Aggiorna versione di Funzioni in Azure". Fare clic **su Sì:**
 
-    ![Schermata della finestra di dialogo Aggiorna la versione di funzioni in Azure, in cui viene chiesto di aggiornare le impostazioni dell'applicazione Azure in modo che corrispondano alle versioni di funzioni locali.](media/azure-functions-image12.png)
+    ![Screenshot del prompt della finestra di dialogo Aggiorna versione funzioni in Azure che chiede di "Aggiornare le impostazioni dell'applicazione Azure in modo che corrispondano alle versioni locali di Funzioni".](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > È presente un bug nella versione 7.6 di Visual Studio per Mac a causa del quale `FUNCTIONS_EXTENSION_VERSION` non è impostato correttamente su "beta" e ciò significa che la funzione potrebbe non essere eseguita correttamente. Per risolvere questo problema, passare a [Impostazioni dell'app per le funzioni](#function-app-settings) e modificare l'impostazione di `FUNCTIONS_EXTENSION_VERSION` da "-1" a "beta".
@@ -161,4 +161,4 @@ Un'altra impostazione importante che potrebbe essere necessario impostare è `FU
 
 - **Image Resizer**: questa funzione crea immagini ridimensionate ogni volta che un BLOB viene aggiunto a un contenitore. Il modello accetta un percorso e una stringa di connessione per il trigger, un output immagine di piccole dimensioni e un output immagine di medie dimensioni.
 
-- **Token SAS**: funzione che genera un token di firma di accesso condiviso per un nome BLOB e un contenitore di archiviazione di Azure specificato. Oltre al nome della funzione, questo modello accetta proprietà Path e Connection. La proprietà Path è il percorso dell'account di archiviazione che verrà monitorato dal trigger. L'account di connessione è il nome dell'impostazione dell'app contenente la stringa di connessione dell'account di archiviazione. È necessario impostare anche i **diritti di accesso**. Il livello di autorizzazione controlla se la funzione richiede una chiave API e la chiave da usare. La funzione usa un tasto funzione; L'amministratore usa la chiave di accesso dell'account. Per altre informazioni, vedere l'esempio [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (Funzione di Azure C# per generare token SAS).
+- **Token SAS**: funzione che genera un token di firma di accesso condiviso per un nome BLOB e un contenitore di archiviazione di Azure specificato. Oltre al nome della funzione, questo modello accetta proprietà Path e Connection. La proprietà Path è il percorso dell'account di archiviazione che verrà monitorato dal trigger. L'account di connessione è il nome dell'impostazione dell'app contenente la stringa di connessione dell'account di archiviazione. È necessario impostare anche i **diritti di accesso**. Il livello di autorizzazione controlla se la funzione richiede una chiave API e quale chiave usare. La funzione usa un tasto funzione; L'amministratore usa la chiave di accesso dell'account. Per altre informazioni, vedere l'esempio [C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/) (Funzione di Azure C# per generare token SAS).

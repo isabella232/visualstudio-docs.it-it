@@ -6,12 +6,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 3db5236e4d07c2e50ccbc9763c96ec45ed7eaedcf94ce0ba5d0ee7f189cd3bf6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121242340"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964698"
 ---
 # <a name="troubleshooting"></a>Risoluzione dei problemi
 

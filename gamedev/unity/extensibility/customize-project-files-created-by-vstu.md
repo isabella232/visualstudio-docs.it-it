@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ac8c88423af7d994b4e9ba29a4dede791312d12e2cdf441c990096190858a084
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a4a5973863877db2d071f9be8d4689928b21a689
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423514"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961583"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizzare i file di progetto creati con VSTU
 Unity fornisce callback durante la generazione del file di progetto. Implementare i metodi e usando un oggetto per modificare il file di progetto o di soluzione ogni volta che `OnGeneratedSlnSolution` `OnGeneratedCSProject` viene [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) rigenerato.

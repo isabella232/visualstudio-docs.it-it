@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
 ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985262"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961961"
 ---
 # <a name="managing-project-and-solution-properties"></a>Gestione delle proprietà di progetti e soluzioni
 
@@ -46,6 +46,6 @@ Le opzioni della soluzione sono come le opzioni del progetto, ma riguardano l'in
 
 ![Opzioni della soluzione](media/projects-and-solutions-image7.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Gestione delle proprietà di progetti e soluzioni (Visual Studio in Windows)](/visualstudio/ide/managing-project-and-solution-properties)

@@ -1,6 +1,6 @@
 ---
 title: Progettazione flussi di lavoro - ActivityDesigner Compensate
-description: Informazioni sull'ActivityDesigner Compensate e su come è possibile usare l'ActivityDesigner Compensate per creare e configurare un'attività Compensate.
+description: Informazioni sull'ActivityDesigner Compensate e su come usare l'ActivityDesigner Compensate per creare e configurare un'attività Compensate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: ca9c66d68913e0791daea6736c7bb5aeeead4df2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068103"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963367"
 ---
 # <a name="compensate-activity-designer"></a>ActivityDesigner Compensate
 
@@ -34,7 +34,7 @@ L'oggetto <xref:System.Activities.Statements.CompensationToken> specificato da <
 
 **L'ActivityDesigner Compensate** è disponibile nella **categoria Transazione** della Casella **degli strumenti**. Per aprire **La casella degli** strumenti , selezionare la scheda Casella degli strumenti sul lato sinistro del Progettazione flussi di lavoro.  In alternativa, scegliere **Casella degli** strumenti **dal** menu Visualizza o premere **CTRL** + **ALT** + **X.**
 
-**L'ActivityDesigner Compensate** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione dell'ActivityDesigner crea <xref:System.Activities.Statements.Compensate> un'attività con <xref:System.Activities.Activity.DisplayName%2A> l'impostazione predefinita Compensate. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **Compensate** o nella casella **DisplayName** della griglia delle proprietà.
+**L'ActivityDesigner Compensate** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione dell'ActivityDesigner crea <xref:System.Activities.Statements.Compensate> un'attività con <xref:System.Activities.Activity.DisplayName%2A> l'impostazione predefinita Compensate. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **Compensate** o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-compensate-properties"></a>Proprietà di Compensate
 

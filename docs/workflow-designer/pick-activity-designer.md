@@ -1,5 +1,5 @@
 ---
-title: Progettazione flussi di lavoro - Selezionare ActivityDesigner
+title: Progettazione flussi di lavoro - ActivityDesigner Pick
 description: Informazioni su come l'attività Pick fornisce un flusso di controllo basato su eventi ed esegue uno dei diversi rami in risposta a un evento di attivazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: e871e38cb9f675e1a76edae0410cbd5ac45aee10
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092033"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963621"
 ---
 # <a name="pick-activity-designer"></a>ActivityDesigner Pick
 
@@ -30,9 +30,9 @@ Un'attività <xref:System.Activities.Statements.Pick> contiene una raccolta di o
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Modalità di utilizzo dell'ActivityDesigner Pick
 
-Accedere **all'ActivityDesigner** Di selezione nella **categoria Controllo Flow** della Casella degli **strumenti**. L'ActivityDesigner Pick può essere  trascinato dalla casella degli strumenti e rilasciato nell'area Progettazione flussi di lavoro in cui gli ActivityDesigner vengono normalmente posizionati, ad esempio all'interno di un ActivityDesigner **Sequence.**  Dopo averle Progettazione flussi di lavoro, crea un'attività, che per impostazione predefinita contiene due attività vuote come elementi con nomi visualizzati <xref:System.Activities.Statements.Pick> <xref:System.Activities.Statements.PickBranch> di Branch1 e Branch2. Questi rispettivi <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valori di proprietà possono essere modificati nell'intestazione **dell'ActivityDesigner PickBranch** o all'interno della **finestra** Proprietà per ogni ramo.
+Accedere **all'ActivityDesigner Pick** nella **categoria Controllo Flow** della Casella degli **strumenti.** L'ActivityDesigner **Pick** può essere  trascinato dalla casella degli strumenti e rilasciato nell'area Progettazione flussi di lavoro ogni volta che gli ActivityDesigner sono normalmente posizionati, ad esempio all'interno di un ActivityDesigner **Sequence.** Dopo il rilascio in Progettazione flussi di lavoro, viene creata un'attività che per impostazione predefinita contiene due attività vuote come elementi con nomi visualizzati <xref:System.Activities.Statements.Pick> <xref:System.Activities.Statements.PickBranch> Branch1 e Branch2. Questi rispettivi <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valori di proprietà possono essere modificati nell'intestazione dell'ActivityDesigner **PickBranch** o all'interno della **finestra** Proprietà per ogni ramo.
 
-Esistono due modi per aggiungere attività alla raccolta di un oggetto: trascinando e rilasciando la finestra di progettazione <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> **PickBranch**  dalla Casella degli strumenti o usando il menu di scelta rapida dall'area di progettazione **Seleziona.** Per informazioni dettagliate, vedere [l'argomento PickBranch.](../workflow-designer/pickbranch-activity-designer.md) Si noti che l'unico elemento che può essere inserito all'interno di un ActivityDesigner **Pick** è un **ActivityDesigner PickBranch.**
+Esistono due modi per aggiungere attività alla raccolta di un oggetto: trascinando e rilasciando la finestra di progettazione <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> **PickBranch**   dalla Casella degli strumenti o usando il menu di scelta rapida dall'area di progettazione Seleziona. Per informazioni dettagliate, vedere [l'argomento PickBranch.](../workflow-designer/pickbranch-activity-designer.md) Si noti che l'unico elemento che può essere inserito all'interno di un ActivityDesigner **Pick** è un **ActivityDesigner PickBranch.**
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività di prelievo in Progettazione flussi di lavoro
 

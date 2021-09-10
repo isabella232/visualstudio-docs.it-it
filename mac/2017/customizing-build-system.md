@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983444"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961851"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 
@@ -80,7 +80,7 @@ Il codice XML del PropertyGroup per una semplice applicazione console, ad esempi
 
 #### <a name="items"></a>Items
 
-Gli elementi consentono di gestire l'input nel sistema di compilazione sotto forma di elenchi o set e in genere rappresentano file. Ogni elemento ha un *tipo*, una *specifica*e *metadati* arbitrari facoltativi. Si noti che MSBuild non opera su elementi singoli, ma su tutti gli elementi di un tipo specifico, ovvero su un *set* di elementi.
+Gli elementi consentono di gestire l'input nel sistema di compilazione sotto forma di elenchi o set e in genere rappresentano file. Ogni elemento ha un *tipo*, una *specifica* e *metadati* arbitrari facoltativi. Si noti che MSBuild non opera su elementi singoli, ma su tutti gli elementi di un tipo specifico, ovvero su un *set* di elementi.
 
 Gli elementi vengono creati tramite la dichiarazione di un `ItemGroup`. Può esistere un numero qualsiasi di ItemGroup, e questi possono contenere un numero qualsiasi di elementi.
 
@@ -103,5 +103,5 @@ Il frammento di codice seguente, ad esempio, crea le schermate di avvio di iOS. 
 
 Per approfondire le proprie conoscenze di MSBuild, è possibile usare le risorse seguenti:
 
-* [Panoramica di MSBuild](/visualstudio/msbuild/msbuild)
-* [Concetti relativi a MSBuild](/visualstudio/msbuild/msbuild-concepts)
+* [MSBuild Panoramica](/visualstudio/msbuild/msbuild)
+* [MSBuild Concetti](/visualstudio/msbuild/msbuild-concepts)

@@ -7,17 +7,17 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/18/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio CAST Highlight disponibile nelle sottoscrizioni di Visual Studio selezionate
-ms.openlocfilehash: d37a02c54d2d0c7a9fa7831f30bd709c86b9c439d15b9ac1149ee0df0154f291
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e8f218db14340171cc056075699dd80d3fb7ef55
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121406824"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965700"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio
 Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software durante la migrazione al cloud. Con CAST Highlight, i sottoscrittori Visual Studio possono analizzare rapidamente il codice sorgente dell'applicazione per identificare la conformità cloud delle applicazioni per la migrazione ad Azure e monitorare lo stato di avanzamento dell'app sia durante che dopo una migrazione.
 
-- Visual Studio Enterprise sottoscrittori possono ottenere una sottoscrizione gratuita completa di tre mesi a CAST Highlight che consente agli utenti di valutare fino a cinque app.
+- Visual Studio Enterprise sottoscrittori possono ottenere una sottoscrizione gratuita e completa di tre mesi a CAST Highlight che consente agli utenti di valutare fino a cinque app.
 - Visual Studio Professional sottoscrittori possono ottenere una sottoscrizione simile che consente di valutare un'app per tre mesi.
 
 ## <a name="activation-steps"></a>Passaggi di attivazione
@@ -26,7 +26,7 @@ Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software
 2. Individuare il riquadro del vantaggio CAST Highlight nella categoria "Strumenti" e fare clic su **Ottieni il codice**.
 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Fare clic su "Get Code" (Ottieni codice) nel riquadro del vantaggio CAST Highlight per iniziare.")
+   > ![Riquadro del vantaggio CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Fare clic su &quot;Ottieni codice&quot; nel riquadro del vantaggio CAST Highlight per iniziare.")
 
 0. Verrà visualizzato un messaggio che informa che il codice è stato recuperato correttamente.  Fare clic su **Attiva**. Se non si sceglie di attivare subito il vantaggio, si può sempre tornare al riquadro di CAST Highlight nel portale delle sottoscrizioni.  Il collegamento "Ottieni il codice" verrà modificato in "Attiva" e facendo clic su di esso si riprenderà il processo di attivazione.
 
@@ -46,7 +46,7 @@ Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software
 
    > *Grazie per aver richiesto di attivare l'accesso di 30 giorni a CAST Highlight, un'offerta esclusiva riservata ai clienti di Microsoft Visual Studio Enterprise!*
    >
-   > *È in corso la revisione della richiesta di attivazione e accesso a CAST Highlight. Non più di 48 ore.*
+   > *È in corso l'esame della richiesta di attivazione e accesso a CAST Highlight. Non più di 48 ore.*
    >
    > *Migliore,* 
    >  *Greg*
@@ -78,9 +78,9 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Valutare 5 app per tre mesi|  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Enterprise sottoscrizione con GitHub Enterprise  | Vl | Valutare 5 app per tre mesi|  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Enterprise sottoscrizione con GitHub Enterprise  | VL | Valutare 5 app per tre mesi|  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Valutare 1 app per tre mesi                                                             |  No.  Disponibile solo per i nuovi sottoscrittori                  |
-| Visual Studio Professional sottoscrizione con GitHub Enterprise | Vl                                       | Valutare 1 app per tre mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori                  |
+| Visual Studio Professional sottoscrizione con GitHub Enterprise | VL                                       | Valutare 1 app per tre mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori                  |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/A           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/A |
@@ -89,7 +89,7 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
 <sup>1</sup>*Include: Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine, NFR Basic*  
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per acquistare Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per l'acquisto di Visual Studio.
 
 Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
@@ -108,6 +108,6 @@ Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Se il vantaggio di credito singolo Azure DevTest fornito con la sottoscrizione non è ancora stato attivato, visitare e fare clic sul riquadro Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) di Azure DevTest.
+Se il vantaggio di credito individuale azure DevTest fornito con la sottoscrizione non è ancora stato attivato, visitare e fare clic sul riquadro di Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) di Azure DevTest.
 
 Non dimenticare di seguire la demo, il manuale dell'utente e le esercitazioni video indicati nel messaggio di posta elettronica ricevuto.

@@ -7,15 +7,15 @@ ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: 02db332e85e9b55391a356a8d47f2dff89b93e50f088793d554e88a023e42b94
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 29aaa3d2268d5fc0ae99a1a400238d633e9026a5
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364498"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965532"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usare la funzionalità di utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
-Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia del numero di sottoscrizioni acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnato, sia nell'anno precedente che per tutta la durata del contratto. 
+Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia del numero di sottoscrizioni acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnato, sia nell'anno precedente che per tutta la durata dei contratti. 
 
 ## <a name="maximum-usage-overview"></a>Panoramica dell'utilizzo massimo
 Guardare il video o leggere per informazioni su come usare la funzionalità di utilizzo massimo. 

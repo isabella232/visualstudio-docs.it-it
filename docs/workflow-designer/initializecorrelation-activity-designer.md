@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 71756f4ed01253607efae47193ea8ddaa6b52a75
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130442"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963222"
 ---
 # <a name="initializecorrelation-activity-designer"></a>ActivityDesigner InitializeCorrelation
 
@@ -32,15 +32,15 @@ Un'attività <xref:System.ServiceModel.Activities.InitializeCorrelation> viene u
 
 Accedere **all'ActivityDesigner InitializeCorrelation** nella **categoria Messaggistica** della casella **degli strumenti**.
 
-**L'ActivityDesigner InitializeCorrelation** può essere trascinato dalla **casella** degli strumenti e rilasciato nell Progettazione flussi di lavoro surface. L'eliminazione dell'ActivityDesigner crea <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività con il <xref:System.Activities.Activity.DisplayName%2A> valore predefinito InitializeCorrelation. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione dell'ActivityDesigner **InitializeCorrelation** o nella casella **DisplayName** della **finestra** Proprietà.
+**L'ActivityDesigner InitializeCorrelation** può essere  trascinato dalla casella degli strumenti e rilasciato nell Progettazione flussi di lavoro area. L'eliminazione dell'ActivityDesigner crea <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività con il <xref:System.Activities.Activity.DisplayName%2A> valore predefinito InitializeCorrelation. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione dell'ActivityDesigner **InitializeCorrelation** o nella casella **DisplayName** della **finestra** Proprietà.
 
 È <xref:System.ServiceModel.Activities.CorrelationHandle> possibile specificare nel campo  **Correlazione** della finestra Proprietà nell'area dell'ActivityDesigner **InitializeCorrelation.**
 
-Per visualizzare  la finestra di dialogo Inizializza correlazione in cui è possibile specificare l'handle di correlazione e le coppie  chiave-valore usate per inizializzarlo, selezionare il pulsante con i puntini di sospensione accanto al **campo CorrelationData** nella finestra Proprietà. In caso contrario, selezionare "Visualizza..." Testo del suggerimento **nell'area dell'ActivityDesigner InitializeCorrelation.** Per altre informazioni sull'uso di questa finestra di dialogo, vedere [l'articolo Finestra di dialogo Editor raccolta tipi.](../workflow-designer/type-collection-editor-dialog-box.md)
+Per visualizzare  la finestra di dialogo Inizializza correlazione in cui è possibile specificare l'handle di correlazione e le coppie chiave-valore usate per inizializzarlo, selezionare il pulsante con i puntini di sospensione accanto al **campo CorrelationData** nella finestra **Proprietà.** In caso contrario, selezionare "Visualizza..." Testo del suggerimento **nell'area dell'ActivityDesigner InitializeCorrelation.** Per altre informazioni sull'uso di questa finestra di dialogo, vedere [l'articolo Finestra di dialogo Editor raccolta tipi.](../workflow-designer/type-collection-editor-dialog-box.md)
 
 ### <a name="the-initializecorrelation-properties"></a>Proprietà di InitializeCorrelation
 
-La tabella seguente illustra le <xref:System.ServiceModel.Activities.InitializeCorrelation> proprietà e ne descrive l'uso nella finestra di progettazione. Queste proprietà possono essere modificate nella **finestra Proprietà** o in Progettazione flussi di lavoro superficie.
+La tabella seguente illustra le <xref:System.ServiceModel.Activities.InitializeCorrelation> proprietà e ne descrive l'uso nella finestra di progettazione. Queste proprietà possono essere modificate nella **finestra Proprietà** o nella Progettazione flussi di lavoro superficie.
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|

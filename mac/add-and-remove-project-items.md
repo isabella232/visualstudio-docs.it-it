@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 11/06/2020
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.topic: how-to
-ms.openlocfilehash: e69a57d4e3146122d64791d76f2ad9dabb1c428eb34cbca505d1faad402f1cb2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6df6fbf9d36f06c4cdeb1908b50173e2ffee136a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121438673"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964252"
 ---
 # <a name="adding-and-removing-project-items"></a>Aggiunta e rimozione di elementi di progetto
 

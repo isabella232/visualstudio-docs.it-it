@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190252"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961835"
 ---
 # <a name="customizing-the-ide"></a>Personalizzazione dell'IDE
 
@@ -132,6 +132,6 @@ Per tornare a un solo editor aperto, selezionare **Vista > Colonne editor > Una 
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'IDE di Visual Studio (in Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

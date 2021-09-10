@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
 ms.openlocfilehash: ae67bdd9a9dac8daed268105d830064fa6ef4cae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950425"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961934"
 ---
 # <a name="set-up-a-subversion-repository"></a>Impostare un repository Subversion
 
@@ -57,6 +57,6 @@ Dopo aver installato Subversion nel computer, usare la procedura seguente per pu
 
 8. Tutti i comandi di controllo della versione disponibili verranno visualizzati nel menu del controllo della versione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Uso di Subversion](working-with-subversion.md)

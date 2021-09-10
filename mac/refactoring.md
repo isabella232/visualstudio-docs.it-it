@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 77f3c2195e78e3658bd436064f10bc864788421b91488456285a13994f79efe6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121242600"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964516"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -47,7 +47,7 @@ Le azioni rapide possono essere applicate usando l'icona lampadina lampadina o i
 È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio si illumineranno in base a tali regole.
 
 ### <a name="quick-action-icons"></a>Icone azione rapida
-L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. *L'icona a* forma di cacciavite icona a forma di cacciavite indica solo che sono disponibili azioni per modificare il codice, ma non è ![ necessario ](media/quick-actions-screwdriver-icon.png) usarle necessariamente. *L'icona lampadina* gialla icona lampadina indica che sono disponibili azioni da ![ eseguire per migliorare il ](media/quick-actions-light-bulb-icon.png) codice.  *L'icona a forma di* lampadina di errore icona lampadina indica che è disponibile ![ un'azione che corregge ](media/quick-actions-error-light-bulb-icon.png) un errore nel codice.
+L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. *L'icona a* forma di cacciavite icona a forma di cacciavite indica solo che sono disponibili azioni per modificare il codice, ma non è ![ necessario ](media/quick-actions-screwdriver-icon.png) usarle necessariamente. *L'icona lampadina* gialla icona lampadina indica che sono disponibili azioni da ![ eseguire per migliorare il ](media/quick-actions-light-bulb-icon.png) codice.  *L'icona a forma di* lampadina di errore icona lampadina indica che è disponibile ![ ](media/quick-actions-error-light-bulb-icon.png) un'azione che corregge un errore nel codice.
 
 ### <a name="to-see-a-light-bulb-or-screwdriver"></a>Per visualizzare una lampadina o un cacciavite
 
@@ -57,7 +57,7 @@ L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di co
 
 - Le lampadine e i cacciavite vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di selezione in una riga di codice per cui è disponibile un'azione rapida o un refactoring.
 
-- Premere **Opzione (⌥)** Invio in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e +  refactoring disponibili.
+- Premere **Opzione (⌥)** Invio in un punto qualsiasi di una riga per visualizzare un elenco delle azioni rapide e +  dei refactoring disponibili.
 
 ![Visualizzare le voci di contesto](media/refactoring-context-action.png)
 

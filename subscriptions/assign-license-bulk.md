@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità Aggiunta in blocco o Microsoft Azure Active Directory gruppi
-ms.openlocfilehash: 8b12103aa06cb6a5161ba92ee79d7b5d30c3211598dcf6598a6c4b62559a13ee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9cb4df67fd29ba54d2576068f8a38fc6bf081b47
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364707"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965500"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -28,9 +28,9 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile usare la funz
 
 1. Per aggiungere più sottoscrittori contemporaneamente, passare alla **scheda Gestisci sottoscrittori.** Scegliere la **scheda** Aggiungi, quindi **scegliere Aggiungi** in blocco nell'elenco a discesa.  
 
-1. L'aggiunta in blocco usa un modello Microsoft Excel per caricare le informazioni del Sottoscrittore. Nella finestra Upload più Sottoscrittori selezionare **Scarica** per scaricare il modello.
+1. L'aggiunta in blocco usa un modello Microsoft Excel per caricare le informazioni del sottoscrittore. Nella finestra Upload più Sottoscrittori selezionare **Scarica** per scaricare il modello.
    > [!div class="mx-imgBorder"]
-   > ![Scaricare il modello di Excel per caricare più sottoscrittori](media/download-template-upload-subscribers.png "Scaricare il modello di Excel vuoto per iniziare il processo di assegnazione in blocco.")
+   > ![Scaricare il modello di Excel per caricare più sottoscrittori](media/download-template-upload-subscribers.png "Scaricare il modello di Excel vuoto per avviare il processo di assegnazione in blocco.")
    >
    > [!NOTE]
    > Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
@@ -50,11 +50,11 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile usare la funz
 
 1. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio. Nella finestra **Upload più Sottoscrittori** selezionare **Sfoglia**.
    > [!div class="mx-imgBorder"]
-   > ![Passare al modello salvato per caricare più sottoscrittori](media/bulk-add-browse-saved-template.png "È possibile passare al percorso del file o trascinarlo e rilasciarlo in questa finestra di dialogo.")
+   > ![Passare al modello salvato per caricare più sottoscrittori](media/bulk-add-browse-saved-template.png "È possibile passare al percorso del file o trascinarlo in questa finestra di dialogo.")
 
 1. Passare al file Excel salvato e quindi selezionare **OK.**
    > [!div class="mx-imgBorder"]
-   > ![Caricare il modello di Excel per caricare più sottoscrittori](media/bulk-upload-subscribers.png "Il modello con i dati verrà visualizzato qui.  Selezionare OK per iniziare il caricamento.")
+   > ![Caricare il modello di Excel per caricare più sottoscrittori](media/bulk-upload-subscribers.png "Il modello con i dati verrà visualizzato qui.  Selezionare OK per avviare il caricamento.")
 
     Viene visualizzata una finestra di dialogo di avanzamento del caricamento.
 
@@ -76,7 +76,7 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile usare la funz
    > ![Messaggio di conferma se il caricamento di più sottoscrittori ha esito positivo](_img/assign-license-bulk/bulk-add-upload-success.png "Al termine del caricamento, si riceverà un messaggio di conferma.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Usare Azure Active Directory gruppi per assegnare sottoscrizioni 
-L'uso di questa funzionalità semplifica la gestione delle assegnazioni delle sottoscrizioni. È possibile aggiungere Azure Active Directory di sicurezza nel portale di amministrazione delle sottoscrizioni per assicurarsi che a tutti i singoli utenti del gruppo sia assegnata una sottoscrizione. Per semplificare, quando i singoli utenti lasciano l'organizzazione e vengono rimossi dal Azure Active Directory, viene rimosso anche l'accesso alle sottoscrizioni. 
+L'uso di questa funzionalità semplifica la gestione delle assegnazioni delle sottoscrizioni. È possibile aggiungere Azure Active Directory di sicurezza nel portale di amministrazione delle sottoscrizioni per assicurarsi che a tutti gli utenti del gruppo sia assegnata una sottoscrizione. Per semplificare, quando i singoli utenti lasciano l'organizzazione e vengono rimossi dal Azure Active Directory, viene rimosso anche l'accesso alle sottoscrizioni. 
 
 
 > [!IMPORTANT]
@@ -101,9 +101,9 @@ Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscr
 3. Scegliere la **scheda** Aggiungi, quindi selezionare **Azure Active Directory gruppo** nell'elenco a discesa.  
 
    > [!div class="mx-imgBorder"]
-   > ![Scegliere l'aggiunta in blocco usando Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Scegliere la funzionalità Aggiungi in blocco Azure AD per eseguire il pull dei sottoscrittori dal gruppo Azure Active Directory sottoscrizione.")
+   > ![Scegliere l'aggiunta in blocco usando Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Scegliere l'aggiunta in blocco usando Azure AD per eseguire il pull dei sottoscrittori dal Azure Active Directory gruppo.")
 
-4. Iniziare a immettere il nome del Azure AD che si desidera aggiungere nel campo del modulo. In questo modo verranno cercati i gruppi Azure AD all'interno dell'organizzazione. 
+4. Iniziare a immettere il nome del Azure AD che si desidera aggiungere nel campo del modulo. In questo modo verranno cercati i gruppi Azure AD disponibili all'interno dell'organizzazione. 
 
 5. Quando si seleziona il gruppo, il campo verrà popolato automaticamente con il nome del gruppo. Sarà possibile visualizzare gli utenti in tale gruppo prima di aggiungerli. È quindi possibile scegliere il livello di sottoscrizione, i diritti di download e le preferenze di comunicazione per il gruppo. Se si desidera, è possibile aggiungere dettagli nel campo di riferimento. 
 
@@ -117,23 +117,23 @@ Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscr
 8. Selezionare **Visualizza sottoscrittori** per visualizzare i membri del gruppo. È possibile visualizzare i dettagli sui sottoscrittori nel gruppo, ma non è possibile apportare modifiche ai sottoscrittori o alle sottoscrizioni assegnate.    
 
 > [!NOTE]
-> Se sono già state assegnate sottoscrizioni singolarmente agli utenti aggiunti successivamente come parte di un gruppo Azure AD, queste verranno aggiunte come parte del gruppo e non verranno più elencate singolarmente. Tuttavia, se la singola sottoscrizione è per un livello di sottoscrizione diverso, avrà due sottoscrizioni.  Esempio: se un utente ha una singola sottoscrizione Visual Studio Professional e è membro di un gruppo a cui si assegnano Visual Studio Enterprise sottoscrizioni, avrà entrambe le opzioni.  
+> Se le sottoscrizioni sono già state assegnate singolarmente agli utenti aggiunti successivamente come parte di un gruppo Azure AD, verranno aggiunte come parte del gruppo e non verranno più elencate singolarmente. Tuttavia, se la singola sottoscrizione è per un livello di sottoscrizione diverso, avrà due sottoscrizioni.  Esempio: se un utente ha una singola sottoscrizione Visual Studio Professional e è membro di un gruppo a cui si assegnano Visual Studio Enterprise sottoscrizioni, avrà entrambe le opzioni.  
 >
 > Se si rimuove un sottoscrittore da un gruppo Azure Active Directory a cui sono state assegnate sottoscrizioni, l'aggiornamento potrebbe richiedere fino a 24 ore prima che l'aggiornamento venga visualizzato nel portale di amministrazione. 
 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>D: Perché non è possibile visualizzare l'opzione per usare Azure Active Directory per aggiungere sottoscrittori?
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>D: Perché non è possibile visualizzare l'opzione per usare Azure Active Directory gruppi per aggiungere sottoscrittori?
 A: La funzionalità è attualmente disponibile solo per le organizzazioni con contratti attendibili.  Selezionare il **pulsante Dettagli** per visualizzare le informazioni sull'accordo.
 
    > [!div class="mx-imgBorder"]
    > ![Fare clic sul pulsante Dettagli](_img/assign-license-bulk/bulk-add-agreement.png "Fare clic sul pulsante Dettagli per visualizzare il tipo di contratto")
 
 ### <a name="q-i-added-users-to-my-azure-active-directory-group-but-they-dont-have-subscriptions-yet-why"></a>D: Gli utenti sono stati aggiunti al gruppo Azure Active Directory, ma non hanno ancora sottoscrizioni. Perché? 
-A: Se le modifiche sono state apportate direttamente Azure Active Directory le sottoscrizioni devono essere assegnate molto rapidamente, tuttavia se le modifiche sono state apportate in un'istanza locale di Active Directory, sarà prima necessario sincronizzarla con Azure Active Directory. A seconda della configurazione di Active Directory locale, le modifiche potrebbero richiedere fino a 24 ore. Se sono più di 24 ore, il team di [supporto può risolvere eventuali problemi.](https://aka.ms/vsadminhelp) 
+A: Se le modifiche sono state apportate direttamente Azure Active Directory le sottoscrizioni devono essere assegnate molto rapidamente, tuttavia se le modifiche sono state apportate in un'istanza locale di Active Directory, sarà prima necessario sincronizzarla con Azure Active Directory. A seconda della configurazione di Active Directory locale, le modifiche potrebbero richiedere fino a 24 ore. Se sono state più di 24 ore, il [team di supporto può risolvere eventuali problemi.](https://aka.ms/vsadminhelp) 
 
-### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-active-directory-group"></a>D: È possibile scegliere più livelli di sottoscrizione da assegnare all'interno di Azure Active Directory gruppo?
+### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-active-directory-group"></a>D: È possibile scegliere più livelli di sottoscrizione da assegnare all'interno di un Azure Active Directory gruppo?
 A: No: tutti gli utenti del gruppo ricevono lo stesso livello di sottoscrizione.
 
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-active-directory-group"></a>D: È possibile modificare i dettagli dei sottoscrittori delle persone aggiunte in un Azure Active Directory gruppo?

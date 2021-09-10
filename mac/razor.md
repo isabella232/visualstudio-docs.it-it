@@ -7,16 +7,16 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 96be41d910fa70fd60199c188b785b8271f36424eb131017b6037559e6256a78
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121381790"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964626"
 ---
 # <a name="create-razor-web-apps"></a>Creare app Web Razor
 
-Questa guida offre un'introduzione alla creazione della prima app Web Razor. Per indicazioni più dettagliate, vedere [Introduction to Razor Pages in ASP.NET Core](/aspnet/core/razor-pages/index).
+Questa guida offre un'introduzione alla creazione della prima app Web Razor. Per indicazioni più dettagliate, vedere [Introduzione alle Razor Pages in ASP.NET Core](/aspnet/core/razor-pages/index).
 
 Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evidenziazione della sintassi nei file con estensione *cshtml*. Una novità di Visual Studio 2019 per Mac 8.3+ è la possibilità di avere IntelliSense con supporto del contesto all'interno di un file Razor, in modo da ricevere IntelliSense che corrisponde alla lingua attualmente in fase di modifica all'interno di un documento.
 
@@ -27,10 +27,10 @@ Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evide
 1. Nella schermata iniziale selezionare **Nuovo per** creare un nuovo progetto:
 
    ![Nuovo progetto di Visual Studio per Mac](media/razor-new.png)
-1. Nella finestra **di dialogo Project** nuova applicazione passare ad Applicazione Web app **.NET Core**  >    >  **e** selezionare **Avanti:**
+1. Nella finestra **di Project** nuova applicazione passare ad Applicazione Web **app .NET Core**  >    >  **e** selezionare **Avanti:**
 
    ![Modello di progetto Razor](media/razor-new-project1.png)
-1. Selezionare il framework di destinazione .NET Core (è consigliabile usare la versione 2.2 o successiva) e quindi **selezionare Avanti.** Scegliere un nome per il progetto e aggiungere il supporto Git, se necessario. Selezionare **Crea** per creare il progetto.
+1. Selezionare il framework di destinazione .NET Core (è consigliabile usare la versione 2.2 o successiva) e quindi **selezionare Avanti.** Scegliere un nome per il progetto e aggiungere il supporto git, se necessario. Selezionare **Crea** per creare il progetto.
 
    ![Nome del progetto Razor](media/razor-new-project2.png)
 
@@ -55,7 +55,7 @@ I nomi dei file di supporto iniziano con un carattere di sottolineatura. Ad esem
 
 ### <a name="launch-settings"></a>Impostazioni di avvio
 
-Il *launchSettings.jsfile* contiene le impostazioni IIS, l'URL dell'applicazione e altre impostazioni correlate.
+Il *launchSettings.jsfile contiene* le impostazioni IIS, l'URL dell'applicazione e altre impostazioni correlate.
 
 ### <a name="app-settings"></a>Impostazioni app
 

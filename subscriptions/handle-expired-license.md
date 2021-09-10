@@ -7,12 +7,12 @@ ms.assetid: 2b8a4ad5-e5b3-48a3-bb65-23a5cd3f22e9
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono gestire le sottoscrizioni Visual Studio scadute
-ms.openlocfilehash: 056414fb144d05458972304af5d63b623612f3dbba31d7226a7c074d027f90a9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a91096e4dd278e0e53fcd31145dc5cca0653ed72
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364512"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965492"
 ---
 # <a name="expired-subscriptions"></a>Sottoscrizioni scadute
 Quando la sottoscrizione di un utente è scaduta, verrà visualizzata una barra rossa accanto al nome nell'elenco dei sottoscrittori. Per fare in modo che tali sottoscrittori continuino a utilizzare i vantaggi della sottoscrizione a Visual Studio, è necessario rinnovare le loro licenze.
@@ -30,5 +30,5 @@ Il rivenditore o il venditore Microsoft guiderà l'utente nel processo di rinnov
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- Per informazioni sull'uso del portale di amministrazione, contattare [il supporto Visual Studio amministrazione e sottoscrizioni](https://aka.ms/vsadminhelp)
+- Per informazioni sull'uso del portale di amministrazione, contattare il supporto Visual Studio [amministrazione e sottoscrizioni](https://aka.ms/vsadminhelp)
 - Trovare un [provider di soluzioni Microsoft](https://www.microsoft.com/solution-providers/home)

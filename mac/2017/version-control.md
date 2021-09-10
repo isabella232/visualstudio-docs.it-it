@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
 ms.topic: overview
-ms.openlocfilehash: 4edd6f95aab897d31ea441db42e582d4285b135a02cc47d8ebfd6bdfa10ac73b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 33fdfe3ef6d292dded34a3b468ed9d60d0f6c318
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364847"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961924"
 ---
 # <a name="version-control"></a>Controllo della versione
 

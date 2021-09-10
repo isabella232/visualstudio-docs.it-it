@@ -1,5 +1,5 @@
 ---
-title: Gestire le sottoscrizioni di Visual Studio da Microsoft Partner Network | Microsoft Docs
+title: Gestire Visual Studio sottoscrizioni da Microsoft Partner Network | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -8,20 +8,20 @@ ms.date: 10/28/2020
 ms.topic: how-to
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
 ms.openlocfilehash: b578ed417d2d4ac03dd7472a9cb94958b8d3c7a3
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904116"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965703"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestire le sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
 
-Per informazioni dettagliate, vedere la pagina relativa alle sottoscrizioni di Visual Studio offerte ai partner del [Microsoft Partner Network (MPN)](program-mpn.md) .
+Per Visual Studio dettagliate, vedere le Microsoft Partner Network offerte ai partner nel [Microsoft Partner Network (MPN).](program-mpn.md)
 
 ## <a name="microsoft-action-pack-subscribers"></a>Sottoscrittori di Microsoft Action Pack
 Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
-1. L'amministratore del programma effettuerà l'accesso al partner Membership Center
+1. L'amministratore del programma accederà Partner Membership Center
 2. Associare utenti tramite **Requirements and Assets** (Requisiti e risorse)
 3. Individuare i singoli utenti e **assegnare i ruoli**
 4. Selezionare il primo, secondo e terzo **contatto tecnico** e **salvare**
@@ -31,7 +31,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 8. Selezionare il **singolo** desiderato
 9. Selezionare **Invia**
 10. L'utente riceverà un messaggio di posta elettronica
-11. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per accedere
+11. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per l'accesso
 12. Potrebbe essere visualizzata una pagina del profilo di Visual Studio che include:
     - Nome
     - Cognome
@@ -45,7 +45,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 4. Individuare il **singolo** desiderato
 5. Selezionare **Invia**
 6. L'utente riceverà un messaggio di posta elettronica
-7. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per accedere
+7. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per l'accesso
 8. Potrebbe essere visualizzata una pagina del profilo di Visual Studio
     - Nome
     - Cognome
@@ -60,11 +60,11 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
   > Il ruolo di contatto tecnico è obbligatorio per le sottoscrizioni di Visual Studio
   - Pagina 8: Assigning Visual Studio subscriptions for Competency Partners (Assegnazione delle sottoscrizioni di Visual Studio per i partner con competenze)
 
-## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](/visualstudio/)
+## <a name="see-also"></a>Vedi anche
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-I sottoscrittori e gli amministratori del programma dovrebbero collaborare direttamente con il team di supporto di Microsoft Partner Network per risolvere eventuali problemi relativi ai Sottoscrittori che accedono alle sottoscrizioni. Per assistenza, visitare la pagina del [supporto per i partner](https://partner.microsoft.com/support). (Verranno richieste le credenziali di accesso di MPN.)
+I sottoscrittori e gli amministratori del programma devono collaborare direttamente con il team Microsoft Partner Network per risolvere eventuali problemi con i sottoscrittori che accedono alle sottoscrizioni. Per assistenza, visitare la pagina del [supporto per i partner](https://partner.microsoft.com/support). (Verranno richieste le credenziali di accesso di MPN.)

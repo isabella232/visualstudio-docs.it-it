@@ -14,15 +14,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 391ff86b47b766b01066913b492d4f963361d49c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155174"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963199"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Finestra di dialogo Inizializza correlazione
 
-La **finestra di dialogo** Inizializza correlazione viene usata in Progettazione flussi di lavoro per modificare la proprietà di <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività. Per altre informazioni, vedere [InitializeCorrelation.](../workflow-designer/initializecorrelation-activity-designer.md)
+La **finestra di dialogo** Inizializza correlazione viene usata Progettazione flussi di lavoro per modificare la proprietà di <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> <xref:System.ServiceModel.Activities.InitializeCorrelation> un'attività. Per altre informazioni, vedere [InitializeCorrelation.](../workflow-designer/initializecorrelation-activity-designer.md)
 
 Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra **di dialogo Inizializza** correlazione:
 

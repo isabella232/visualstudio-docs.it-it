@@ -15,11 +15,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: adb28a3ffd44e1cfcd744ab603d9c7e8555cafc3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155226"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963414"
 ---
 # <a name="workflow-project-templates"></a>Modelli di progetto del flusso di lavoro
 
@@ -65,7 +65,7 @@ Se si sceglie il **modello Libreria di** attività, Visual Studio una definizion
 
 ## <a name="activity-designer-library"></a>Libreria di ActivityDesigner
 
-Se si sceglie il **modello Libreria di ActivityDesigner,** Visual Studio crea una definizione di ActivityDesigner in XAML e un file di implementazione code-behind. Verrà Progettazione flussi di lavoro visualizzato l'area di disegno per l'ActivityDesigner. Trascinare Windows Presentation Foundation (WPF) dalla **Casella degli** strumenti all'area di progettazione per usarli nell'ActivityDesigner personalizzato.
+Se si sceglie il **modello Libreria di Activity Designer,** Visual Studio crea una definizione di ActivityDesigner in XAML e un file di implementazione code-behind. Verrà Progettazione flussi di lavoro visualizzato l'area di disegno per l'ActivityDesigner. Trascinare Windows Presentation Foundation (WPF) dalla **Casella degli** strumenti all'area di progettazione per usarli nell'ActivityDesigner personalizzato.
 
 Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [Procedura: Creare un ActivityDesigner personalizzato.](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)
 

@@ -7,15 +7,15 @@ ms.assetid: 34eaceda-f5db-41d6-bc23-ecf55fe1768e
 ms.date: 04/22/2021
 ms.topic: conceptual
 description: Informazioni su cosa accade quando l'amministratore rimuove la Visual Studio sottoscrizione.
-ms.openlocfilehash: 3f8110cb5696fae785d6780472b8b01f9dd0c211b962f1df46dc4ec41848a3ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e0f33470092cacc096102cd7b671ddc89c9b0859
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121241482"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965721"
 ---
 # <a name="what-happens-when-an-admin-removes-my-subscription"></a>Cosa accade quando un amministratore rimuove la sottoscrizione?
-Se la sottoscrizione Visual Studio è stata assegnata da un amministratore dell'organizzazione dell'azienda o dell'istituto di istruzione, a un certo punto potrebbe rimuoverla.  I motivi possono includere modifiche ai ruoli di lavoro o ai piani di acquisto dell'organizzazione.  Questo articolo descrive cosa aspettarsi se un amministratore rimuove la sottoscrizione.  
+Se la Visual Studio è stata assegnata dall'amministratore dell'organizzazione dell'azienda o dell'istituto di istruzione, a un certo punto potrebbe rimuoverla.  I motivi possono includere modifiche ai ruoli di lavoro o ai piani di acquisto dell'organizzazione.  Questo articolo descrive cosa aspettarsi se un amministratore rimuove la sottoscrizione.  
 
 > [!TIP]
 > Se l'amministratore rimuove la sottoscrizione, potrebbe pianificare l'emissione di una sottoscrizione diversa.  Se si riceve una notifica che indica che la sottoscrizione è stata rimossa, è possibile contattare l'amministratore per verificare se è disponibile un'altra sottoscrizione.  
@@ -46,10 +46,10 @@ L'accesso Azure DevOps richiede una licenza e andrà perso.
 Gli effetti della rimozione di una sottoscrizione variano.  
 - Vantaggi a lunghezza fissa: molti dei vantaggi offerti dai partner sono offerte a lunghezza fissa.  Se sono stati attivati prima della rimozione della sottoscrizione, molti di essi non saranno interessati e rimarranno disponibili fino alla fine del periodo normale.  Se si accede a questi vantaggi tramite il portale per i sottoscrittori, è necessario accedervi direttamente nel sito partner.  Ad esempio, se è stata attivata una sottoscrizione Pluralsight per una sottoscrizione di Visual Studio e la sottoscrizione di Visual Studio viene rimossa, il tempo rimanente per la sottoscrizione di training sarà ancora disponibile, ma sarà necessario accedere direttamente al sito Web di Pluralsight. 
 - Vantaggi che richiedono l'autenticazione: se si usa un vantaggio autenticato ogni volta che si accede a Visual Studio, tali vantaggi non saranno disponibili se la sottoscrizione viene rimossa.  
-- Vantaggi non attivati in precedenza: dopo la rimozione della sottoscrizione, si perderà la possibilità di attivare eventuali vantaggi aggiuntivi.  
+- Vantaggi non attivati in precedenza: dopo la rimozione della sottoscrizione, si perderà la possibilità di attivare altri vantaggi.  
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto [Visual Studio sottoscrizioni.](https://my.visualstudio.com/gethelp)
 - Per domande sull'IDE di Visual Studio, Azure DevOps o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche

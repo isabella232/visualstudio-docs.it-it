@@ -7,12 +7,12 @@ ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
-ms.openlocfilehash: 8963baa8a6ae0e93a1454b9542da4f5f3255af2ca457253b1f340b8d028942dc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121422641"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964420"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debug con Visual Studio per Mac
 
@@ -22,11 +22,11 @@ Visual Studio per Mac usa il [*debugger Mono Soft*](https://www.mono-project.com
 
 ## <a name="the-debugger"></a>Debugger
 
-Visual Studio per Mac usa il debugger Mono Soft per eseguire il debug di codice gestito (C# r F#) in tutte le applicazioni Xamarin. Il debugger Mono Soft è diverso dai normali debugger in quanto è un debugger cooperativo integrato nel runtime di Mono; Il codice generato e i runtime di Mono collaborano con l'IDE per offrire un'esperienza di debug. Il runtime di Mono espone la funzionalità di debug tramite un protocollo di rete, su cui è possibile leggere altre informazioni nella [documentazione di Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio per Mac usa il debugger Mono Soft per eseguire il debug di codice gestito (C# r F#) in tutte le applicazioni Xamarin. Il debugger Mono Soft è diverso dai debugger normali in quanto è un debugger cooperativo integrato nel runtime di Mono; Il codice generato e il runtime di Mono cooperano con l'IDE per offrire un'esperienza di debug. Il runtime di Mono espone la funzionalità di debug tramite un protocollo di rete, su cui è possibile leggere altre informazioni nella [documentazione di Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 I debugger di tipo hard, come [LLDB]( http://lldb.llvm.org/index.html) o [GDB]( https://www.gnu.org/software/gdb/), controllano un programma in modo invisibile e senza la cooperazione del programma stesso, ma possono essere utili per il debug di applicazioni Xamarin quando è necessario eseguire il debug di codice iOS o Android nativo.
 
-Per le applicazioni .NET Core e ASP.NET Core, Visual Studio per Mac usa il debugger di .NET Core. Questo debugger è anche un debugger cooperativo e funziona con il runtime .NET.
+Per le applicazioni .NET Core e ASP.NET Core, Visual Studio per Mac il debugger .NET Core. Questo debugger è anche un debugger cooperativo e funziona con il runtime .NET.
 
 ## <a name="using-the-debugger"></a>Uso del debugger
 
@@ -67,9 +67,9 @@ A questo punto, è possibile usare strumenti di debug, come quello usato per esa
 
  ![Menu di scelta rapida Punto di interruzione](media/debugging-image4.png)
 
-* Per aggiungere una condizione a un punto di interruzione esistente, fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere Proprietà punto di interruzione oppure, nella finestra Punti di interruzione **,** selezionare il pulsante Modifica punto di interruzione illustrato di seguito: 
+* Per aggiungere una condizione a un punto di interruzione esistente, fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere Proprietà punto di interruzione oppure nella finestra Punti di interruzione **selezionare** il pulsante Modifica punto di interruzione illustrato di seguito: 
 
- ![Modifica punto di interruzione esistente nella finestra Punti di interruzione](media/debugging-image5.png)
+ ![Modificare un punto di interruzione esistente nella finestra Punti di interruzione](media/debugging-image5.png)
 
 È quindi possibile immettere la condizione in base alla quale deve essere aggiunto il punto di interruzione:
 
@@ -84,18 +84,18 @@ Quando viene raggiunto un punto di interruzione, lo strumento di debug permette 
 Ecco i quattro pulsanti:
 
 * **Esegui**: avvia l'esecuzione del codice, fino al punto di interruzione successivo.
-* **Esegui istruzione/indietro:** verrà eseguita la riga di codice successiva. Se la riga successiva è una chiamata di funzione, Esegui istruzione/comando eseguirà la funzione e si arresterà alla riga di codice successiva *dopo* la funzione.
+* **Esegui istruzione/esecuzione:** verrà eseguita la riga di codice successiva. Se la riga successiva è una chiamata di funzione, eseguirà la funzione e si arresterà alla riga di codice successiva *dopo* la funzione.
 * **Esegui istruzione:** verrà eseguita anche la riga di codice successiva. Se la riga successiva è una chiamata di funzione, il pulsante si ferma alla prima riga della funzione, permettendo di continuare a eseguire il debug della funzione riga per riga. Se la riga successiva non è una funzione, il pulsante si comporta come il pulsante Esegui istruzione/routine.
-* **Uscire da** istruzione/uscita: verrà restituita la riga in cui è stata chiamata la funzione corrente.
+* **Istruzione/uscita:** verrà restituita la riga in cui è stata chiamata la funzione corrente.
 
-## <a name="change-which-statement-is-executed-next"></a>Modificare l'istruzione da eseguire successivamente
+## <a name="change-which-statement-is-executed-next"></a>Modificare l'istruzione eseguita successivamente
 
-Mentre il debugger è sospeso, una freccia nel margine indica la riga di codice successiva che verrà eseguita. È possibile fare clic e trascinare la freccia su una riga di codice diversa per modificare l'istruzione che verrà eseguita. È possibile ottenere lo stesso risultato anche facendo clic con il pulsante destro del mouse su una riga di codice e scegliendo Imposta istruzione **successiva** dal menu di scelta rapida.
+Mentre il debugger è sospeso, una freccia nel margine indica la riga di codice successiva che verrà eseguita. È possibile fare clic e trascinare la freccia su una riga di codice diversa per modificare l'istruzione che verrà eseguita. È possibile ottenere lo stesso risultato facendo clic con il pulsante destro del mouse su una riga di codice e scegliendo Imposta istruzione **successiva** dal menu di scelta rapida.
 
 ![Trascinare e rilasciare la freccia per impostare l'istruzione successiva](media/debugger-drag-setnextstatement.gif)
 
 > [!CAUTION]
-> La modifica della riga di esecuzione corrente può causare un comportamento imprevisto in un'applicazione. Esistono anche alcune condizioni in cui non è possibile modificare l'istruzione successiva da eseguire. Ad esempio, il trascinamento della freccia da un metodo a un altro metodo non funzionerà. In questi casi non supportati, Visual Studio per Mac verrà visualizzata una finestra di dialogo che consente di sapere che non è stato possibile modificare la riga di esecuzione corrente. 
+> La modifica della riga di esecuzione corrente può causare un comportamento imprevisto in un'applicazione. Esistono anche alcune condizioni in cui non è possibile modificare l'istruzione successiva da eseguire. Ad esempio, il trascinamento della freccia da un metodo a un altro non funzionerà. In questi casi non supportati, Visual Studio per Mac verrà visualizzata una finestra di dialogo che consente di sapere che non è stato possibile modificare la riga di esecuzione corrente. 
 
 ## <a name="debugging-monos-class-libraries"></a>Debug di librerie di classi di Mono
 
@@ -103,7 +103,7 @@ I prodotti Xamarin vengono forniti con il codice sorgente per le librerie di cla
 
 Poiché questa funzionalità usa più memoria durante il debug, è disattivata per impostazione predefinita.
 
-Per abilitare questa funzionalità, passare Visual Studio per Mac > **Preferenze > Debugger** e verificare che l'opzione "Istruzione nel codice esterno" sia selezionata, come illustrato di seguito: 
+Per abilitare questa funzionalità, passare Visual Studio per Mac > **Preferenze > Debugger** e assicurarsi che sia selezionata l'opzione " Istruzione nel codice esterno ", come illustrato di seguito: 
 
 ![Opzione Per eseguire un'istruzione nel codice esterno](media/debugging-image8.png)
 

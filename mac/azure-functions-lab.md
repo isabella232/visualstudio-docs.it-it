@@ -7,12 +7,12 @@ ms.date: 11/06/2020
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
-ms.openlocfilehash: 2bb80c08b2d2fab16f3fd926d9a806898eeb68bbcd3b3632ffb3af478b34453c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393734"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964299"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
 
@@ -299,7 +299,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![URL per le funzioni Http](media/azure-functions-lab-image31.png)
 
-1. Restituire la finestra del browser e passare a **http://localhost:7071/api/Adder/3/5** .
+1. Tornare alla finestra del browser e passare a **http://localhost:7071/api/Adder/3/5** .
 
 1. Ora il metodo funziona di nuovo ed estrae parametri dal percorso, quindi produce una somma.
 

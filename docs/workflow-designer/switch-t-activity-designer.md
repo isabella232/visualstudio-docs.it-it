@@ -15,17 +15,17 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fc06eaaa7bd54ff42a087016dae30e674de4023
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025355"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963668"
 ---
 # <a name="switcht-activity-designer"></a>Activity Designer\<T> Switch
 
 L'attività <xref:System.Activities.Statements.Switch%601> valuta un'espressione specificata e viene eseguita da una raccolta di attività la cui chiave associata corrisponde al valore ottenuto dalla valutazione.
 
-Switch **<ActivityDesigner \> viene** usato per creare e configurare un'attività <xref:System.Activities.Statements.Switch%601> nel Progettazione flussi di lavoro.
+Switch **<ActivityDesigner \> T** viene usato per creare e configurare un'attività <xref:System.Activities.Statements.Switch%601> nel Progettazione flussi di lavoro.
 
 ## <a name="the-switchtactivity"></a>Attività \<T> Switch
 

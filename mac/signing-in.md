@@ -7,17 +7,17 @@ ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
 ms.openlocfilehash: 42db2efef077fcb95590ea061e47cd1b52bb6311
-ms.sourcegitcommit: 7c06c7e4f0a69d90b21dcf4d5c5b5caa17464bf5
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122464820"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964475"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Accesso a Visual Studio per Mac
 
 L'accesso a Visual Studio per Mac è la modalità di [attivazione della sottoscrizione](enable-subscription.md). Quando si scarica Visual Studio per Mac, per impostazione predefinita si otterrà sempre l'edizione Community. Se si ha una [licenza Professional o Enterprise](https://visualstudio.microsoft.com/vs/compare/), è consigliabile eseguire l'accesso alla prima esecuzione per sbloccare eventuali funzionalità aggiuntive. Si ottengono inoltre i vantaggi seguenti:
 
-* **Accesso al programma Visual Studio Dev Essentials:** questo programma include offerte di software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
+* **Accesso al programma Visual Studio Dev Essentials:** questo programma include offerte di software gratuito, training, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
 * **Collegarsi automaticamente ad Azure** nell'IDE senza richiedere di nuovo le credenziali per lo stesso account.
 
@@ -40,14 +40,14 @@ Per accedere a Visual Studio per Mac al primo avvio, seguire questa procedura:
 
     ![Finestra di dialogo delle credenziali Microsoft](media/signing-in-image13.png)
 
-4. Dopo aver eseguito l'accesso, verrà visualizzata un'opzione per selezionare i tasti di scelta rapida. Selezionare l'opzione che si vuole usare e **continuare.** Verrà quindi visualizzata la finestra iniziale di Visual Studio 2019 per Mac. Da qui è possibile aprire un progetto esistente o crearne uno nuovo:
+4. Dopo aver eseguito l'accesso, verrà visualizzata un'opzione per selezionare i tasti di scelta rapida. Selezionare l'opzione che si vuole usare e **continuare**. Verrà quindi visualizzata la finestra di avvio Visual Studio 2019 per Mac. Da qui è possibile aprire un progetto esistente o crearne uno nuovo:
 
     ![Accesso eseguito correttamente](media/signing-in-image14.png)
 
 In alternativa, è possibile usare la voce di menu **Visual Studio > Accedi…** per accedere e disconnettersi in qualsiasi momento.
 
 > [!TIP]
-> Se si verificano problemi di accesso, provare l'opzione Accedi con **il Web browser** nel menu a discesa Non è possibile accedere? nella parte inferiore della finestra Accedi **all'account.**  Questa operazione può essere necessaria se il Mac è un dispositivo gestito che usa l'accesso condizionale.
+> Se si verificano problemi di accesso, provare l'opzione Accedi con **Web browser** nel menu a discesa Non è possibile accedere? nella parte inferiore della finestra Accedi **all'account.**  Questa operazione può essere necessaria se il Mac è un dispositivo gestito che usa l'accesso condizionale.
 
 ## <a name="adding-multiple-user-accounts"></a>Aggiunta di più account utente
 

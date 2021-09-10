@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni su come attivare la sottoscrizione Parasoft Virtualize/SOA Test Professional inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: b7291203d2c6f1a3282671dcba676d36f22310cc05d5165b1fd7fb76439d3a61
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f7a7cacab798bdb4959b755be39d7322f9b1d1c
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380948"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965806"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Vantaggio Parasoft Virtualize/SOAtest Professional Desktop nelle sottoscrizioni di Visual Studio
 
@@ -39,7 +39,7 @@ ms.locfileid: "121380948"
 
 6. Fare clic sul collegamento corrispondente al sistema operativo in uso.
    > [!div class="mx-imgBorder"]
-   > ![Messaggio di benvenuto del vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-email.png "Scegliere il collegamento di download corrispondente al sistema operativo in uso.")
+   > ![Messaggio di benvenuto del vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-email.png "Scegliere il collegamento di download corrispondente al sistema operativo.")
 
 7. A seconda del browser usato, la finestra di dialogo di esecuzione del programma di installazione può avere un aspetto diverso.  In Internet Explorer, ad esempio, viene visualizzato l'elenco dei download recenti con parasoft_soavirt_9.10.2_win32_x86_64.exe nella parte superiore dell'elenco. Fare clic su **Esegui** per avviare il programma di installazione.
 
@@ -74,25 +74,25 @@ ms.locfileid: "121380948"
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1 selezionato</sup> | 6 mesi       |  Sì       |
-| Visual Studio Enterprise sottoscrizione con GitHub Enterprise | Vl | 6 mesi       |  Sì       |
+| Visual Studio Enterprise sottoscrizione con GitHub Enterprise | VL | 6 mesi       |  Sì       |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
-| Visual Studio Professional sottoscrizione con GitHub Enterprise | Vl                                      | Non disponibile                                                           |N/D         |
+| Visual Studio Professional sottoscrizione con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
-<sup>1</sup>*Include: Microsoft Partner Network (Enterprise). Esclude: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services, NFR Basic*  
+<sup>1</sup>*Include: Microsoft Partner Network (Enterprise). Esclusi: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services, NFR Basic*  
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per l'acquisto di Visual Studio.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con i prodotti Parasoft?  vedere le risorse seguenti:
   - Supporto tecnico:  https://www.parasoft.com/support/
   - Centro Risorse Parasoft:  https://www.parasoft.com/resources/
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni.](https://my.visualstudio.com/gethelp)
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio supporto tecnico](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)
@@ -101,4 +101,4 @@ ms.locfileid: "121380948"
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Sfruttare i vantaggi della propria sandbox di sviluppo attivando il credito [individuale di Azure DevTest.](vs-azure.md)
+Sfruttare la propria sandbox di sviluppo attivando il credito individuale [di Azure DevTest.](vs-azure.md)

@@ -6,12 +6,12 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.topic: how-to
-ms.openlocfilehash: 0207c616069fdec1e0fdca0e9efcc1a7bf99a2e5dd60e6b13a24b1515be0cc6b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a0aa3de91f1a2c75d73409d89f3cbc8894faacab
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121407192"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964348"
 ---
 # <a name="comments"></a>Commenti
 

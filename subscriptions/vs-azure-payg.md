@@ -1,5 +1,5 @@
 ---
-title: Vantaggio Azure PAYG nelle sottoscrizioni di Visual Studio
+title: Vantaggio Con pagamento in base al Visual Studio azure
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -8,21 +8,21 @@ ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
 ms.openlocfilehash: 3668302778532f1413f240308faa503c9c58837a
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473270"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965663"
 ---
-# <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Sottoscrizioni con pagamento in base al consumo di Azure DevTest
+# <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Sottoscrizioni con pagamento in base al go di Azure DevTest
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
 
 ## <a name="set-up-a-subscription"></a>Configurare una sottoscrizione
-1. Per usare il vantaggio della sottoscrizione con pagamento in base al consumo di Azure, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul collegamento **attiva** nella parte inferiore del riquadro del vantaggio.
+1. Per usare il vantaggio della sottoscrizione con pagamento in base al go di Azure, accedere a e fare clic sul collegamento Attiva nella parte inferiore [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) del riquadro del vantaggio. 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-tile.png "Per iniziare, fare clic su "attiva" nel riquadro sottoscrizione con pagamento in base al consumo di DevTest.")
+   > ![Riquadro del pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-tile.png "Fare clic su &quot;Attiva&quot; nel riquadro della sottoscrizione DevTest con pagamento in base al go per iniziare.")
 
-2. Se è già stato attivato un account Azure come parte dei vantaggi della sottoscrizione (ad esempio, se si dispone di una sottoscrizione Enterprise e si attiva il credito individuale Azure DevTest mensile $150), andare al passaggio 5.
+2. Se è già stato attivato un account Azure come parte dei vantaggi della sottoscrizione(ad esempio, se si ha una sottoscrizione Enterprise e si è attivato il credito singolo azure DevTest mensile di $ 150), andare al passaggio 5.
 
 3. Nella pagina Iscrizione di Microsoft Azure è possibile configurare l'offerta Sviluppo/test con pagamento in base al consumo oppure eseguire l'aggiornamento all'offerta Visual Studio Enterprise.  Fare clic su **Continua con l'offerta corrente (Sviluppo/test con pagamento in base al consumo)** se non si vuole eseguire l'aggiornamento.
 
@@ -37,23 +37,23 @@ ms.locfileid: "102473270"
 8. Se si sceglie di iniziare a usare la sottoscrizione, viene visualizzato il [portale di Microsoft Azure](https://portal.azure.com) e, se si tratta della prima visita, viene offerta una breve panoramica di alcune funzionalità.  Dopo aver completato la panoramica o dopo aver scelto di non seguirla, viene visualizzato il dashboard.  È tutto pronto per iniziare a usare Azure.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>D: cosa accade se si desidera apportare modifiche a questa sottoscrizione?
-R: per apportare modifiche alle sottoscrizioni di Azure:
+### <a name="q--what-if-i-want-to-make-changes-to-this-subscription"></a>D: Cosa succede se si vogliono apportare modifiche a questa sottoscrizione?
+A: Per apportare modifiche a una delle sottoscrizioni di Azure:
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Nell'elenco nel riquadro sinistro selezionare **Gestione dei costi e fatturazione**.
 3. Si vedrà un elenco delle proprie sottoscrizioni nella casella **Sottoscrizioni personali**. Fare clic sulla sottoscrizione desiderata.
 4. Verranno visualizzate le opzioni per gestire o annullare la sottoscrizione, rinominarla, cambiare la directory o trasferire la proprietà della fatturazione.
 
 ## <a name="resources"></a>Risorse
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Molte sottoscrizioni includono ulteriori vantaggi correlati ad Azure, ad esempio Azure DevOps e Azure DevTest individual Credit.  Per altre informazioni su questi vantaggi, vedere:
+Molte sottoscrizioni includono vantaggi aggiuntivi correlati ad Azure, ad esempio Azure DevOps credito individuale di Azure DevTest.  Per altre informazioni su questi vantaggi, vedere:
 - [Azure DevOps](vs-azure-devops.md)
 - [Credito individuale per Azure DevTest](vs-azure.md)

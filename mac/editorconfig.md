@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
 ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493062"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964432"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Creazione e modifica di un file EditorConfig personalizzato
 
@@ -41,15 +41,15 @@ EditorConfig supporta anche [convenzioni per la scrittura di codice](/visualstud
 
 1. Aprire il progetto in Visual Studio per Mac. Selezionare il nodo della soluzione o del progetto a cui si desidera aggiungere il file EditorConfig. L'aggiunta del file alla directory della soluzione consente di applicare le impostazioni di editorconfig a tutti i progetti nella soluzione.
 
-2. Fare clic con il pulsante destro del mouse sul nodo e scegliere **Aggiungi > Nuovo file** per aprire la finestra di dialogo **Nuovo file** :
+2. Fare clic con il pulsante destro del mouse sul nodo e scegliere **Aggiungi > Nuovo file** per aprire la finestra di dialogo **Nuovo file**:
 
     ![Voci di menu del contenuto](media/editorconfig-image0.png)
 
-3. Scegliere **Varie > File di testo vuoto** e assegnare a questo il **nome** `.editorconfig`. Premere **Nuovo** per creare il file e aprirlo nell'editor:
+3. Scegliere **> file di testo vuoto** e assegnargli il **nome** `.editorconfig` . Premere **Nuovo** per creare il file e aprirlo nell'editor:
 
     ![Finestra di dialogo Nuovo file](media/editorconfig-image1.png)
 
-    Aggiungere automaticamente l'elemento a livello di soluzione consente di crearlo e annidarlo in una cartella **Elementi di soluzione** :
+    Aggiungere automaticamente l'elemento a livello di soluzione consente di crearlo e annidarlo in una cartella **Elementi di soluzione**:
 
     ![Elemento della soluzione visualizzato nella finestra della soluzione](media/editorconfig-image1a.png)
 
@@ -80,17 +80,17 @@ Se si sta lavorando a un progetto o a una soluzione contenente già un file `.ed
 
 Nel progetto è consigliabile riusare un file `.editorconfig` esistente. Per aggiungere un file esistente, eseguire le operazioni seguenti:
 
-1. Fare clic con il pulsante destro del mouse sulla cartella a cui si desidera aggiungerla e scegliere **aggiungi > Aggiungi file**.
+1. Fare clic con il pulsante destro del mouse sulla cartella a cui si vuole aggiungerla e **> Aggiungi file**.
 
 2. Passare alla directory del file richiesto.
 
 3. I file che iniziano con `.` (ad esempio `.editorconfig`) sono file nascosti in macOS, quindi premere **Comando + Maiuscole +.** per rendere il file `.editorconfig` visibile.
 
-4. Selezionare il `.editorconfig` file e fare clic su **Apri** :
+4. Selezionare il `.editorconfig` file e fare clic su **Apri:**
 
     ![Finestra per l'aggiunta di un nuovo file](media/editorconfig-image3b.png)
 
-5. Quando viene visualizzata la finestra di dialogo seguente, selezionare l'opzione **Copia file nella directory** e selezionare **OK** :
+5. Quando viene visualizzata la finestra di dialogo seguente, selezionare l'opzione **Copia file nella directory** e selezionare **OK**:
 
     ![Opzioni della finestra di dialogo per aggiungere un file a una cartella](media/editorconfig-image3.png)
 
@@ -123,15 +123,15 @@ csharp_new_line_before_open_brace = none
 
 Se si imposta `root` su `true`, il file viene contrassegnato come file di livello più alto della codebase e qualsiasi altro file `.editorconfig` di livello superiore nel progetto viene ignorato, come spiegato nella sezione [Eseguire l'override delle impostazioni di EditorConfig](#override-editorconfig-settings).
 
-Ogni sezione, identificata da parentesi quadre ( **[ ]** ), specifica le informazioni sui tipi di file interessati dalle proprietà che seguono.
+Ogni sezione, identificata da parentesi quadre (**[ ]**), specifica le informazioni sui tipi di file interessati dalle proprietà che seguono.
 
 Nell'esempio precedente, alcune impostazioni vengono applicate a tutti i file del progetto e altre vengono aggiunte solo ai file C#. Gli screenshot riportati di seguito illustrano la situazione prima e dopo l'applicazione delle impostazioni di `.editorconfig`:
 
-**Prima** :
+**Prima di**:
 
 ![Prima dell'applicazione delle impostazioni del file editorconfig](media/editorconfig-image4.png)
 
-**Dopo** :
+**Dopo**:
 
 ![Dopo l'applicazione delle impostazioni del file editorconfig](media/editorconfig-image5.png)
 
@@ -148,6 +148,6 @@ Per assicurarsi che _nessuna_ impostazione di alcun file `.editorconfig` di live
 root = true
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare impostazioni personalizzate per l'editor con EditorConfig (Visual Studio in Windows)](/visualstudio/ide/create-portable-custom-editor-options)

@@ -7,12 +7,12 @@ ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
 ms.date: 03/17/2021
 ms.topic: conceptual
 description: Informazioni sul vantaggio di supporto del forum microsoft tech Community incluso nelle sottoscrizioni Visual Studio selezionate.
-ms.openlocfilehash: d2c77501d6b27e9b8fbefbda00a9f3edf38e4220b79fb967c09a29ec11dbdebe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f1078204d69b9249b1691f9c96496ba1975fffd6
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121406661"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965781"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Supporto del forum Community Microsoft Tech Visual Studio sottoscrizioni
 Connessione e interagire con altri utenti ed esperti tecnici Microsoft sulle procedure consigliate, sull'architettura di progettazione e sugli aggiornamenti più recenti.
@@ -36,7 +36,7 @@ Accedere al forum della community è semplice.
 0. Per **Passaggio 3: Codice di** comportamento, leggere il Codice di comportamento e quindi fare clic sulla casella di controllo per indicare l'accettazione del Codice di comportamento e delle Condizioni d'utilizzo.
 0. Fare **clic su** Registra per completare la configurazione del profilo.
 
-Tutto qui.  A questo punto è possibile usare il portale della community.  Il home page ha notizie sulla community.  Per visualizzare il contenuto specifico delle community a cui si è aggiunti, fare clic sull'elenco a discesa **hub Community** nella parte superiore della pagina e scegliere una community dall'elenco.  È sempre possibile aggiungere community all'elenco facendo clic su Browse **All Community Hubs** (Esplora tutti gli hub di Community) facendo clic sull'hub di propria scelta e quindi **sul pulsante Join (Aggiungi).** 
+Tutto qui.  A questo punto è possibile usare il portale della community.  Il home page ha notizie sulla community.  Per visualizzare il contenuto specifico delle community a cui si è aggiunti, fare clic sull'elenco a discesa **hub Community** nella parte superiore della pagina e scegliere una community dall'elenco.  È sempre possibile aggiungere community all'elenco facendo clic su Browse **All Community Hubs** (Esplora tutti gli hub di Community) facendo clic sull'hub desiderato e quindi sul **pulsante Join (Aggiungi).** 
 
 ## <a name="eligibility"></a>Idoneità
 La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione come mostrato di seguito:
@@ -56,7 +56,7 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connessione a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  Contattare [il supporto Visual Studio sottoscrizioni di](https://my.visualstudio.com/gethelp).

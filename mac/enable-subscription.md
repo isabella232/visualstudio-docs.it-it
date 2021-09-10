@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 9c90f9a6bcf82c3b04f28ef1fe1cc1c37e56eea578272cb98112bb9a6540a87c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121438574"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964433"
 ---
 # <a name="enable-subscription"></a>Abilitare la sottoscrizione
 

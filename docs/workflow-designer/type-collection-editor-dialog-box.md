@@ -1,6 +1,6 @@
 ---
 title: Progettazione flussi di lavoro finestra di dialogo Editor raccolta tipi
-description: Informazioni su come usare la finestra di dialogo Editor raccolta tipi per aggiungere tipi noti alle attività Send e Receive.
+description: Informazioni su come usare la finestra di dialogo Editor raccolta tipi per aggiungere tipi noti alle attività Di invio e ricezione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: bfcd57fb13eebaec38bf5f478182e54af108b0c0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045749"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963295"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Finestra di dialogo Editor raccolta di tipi
 
-La **finestra di dialogo Editor** raccolta tipi consente di aggiungere tipi noti alle attività **Send** **e Receive.** Questa finestra di dialogo viene usata anche per aggiungere argomenti di tipo generico **all'attività InvokeMethod.** Se usata per le **attività Send** e **Receive** per aggiungere tipi noti, la finestra di dialogo **Editor** raccolta tipi richiede che le aggiunte di tipo siano univoche. Se viene aggiunto un tipo duplicato e viene eseguito il commit della modifica facendo clic su **OK,** viene restituito un messaggio di errore. Se usata per **l'attività InvokeMethod** per aggiungere argomenti di tipo generico, la finestra di dialogo **Editor raccolta** tipi consente l'aggiunta di tipi duplicati.
+La **finestra di dialogo Editor** raccolta tipi consente di aggiungere tipi noti alle attività Di **invio** **e** ricezione. Questa finestra di dialogo viene usata anche per aggiungere argomenti di tipo generico **all'attività InvokeMethod.** Se usata per le **attività Send** e **Receive** per aggiungere tipi noti, la finestra di dialogo **Editor** raccolta tipi richiede che le aggiunte di tipo siano univoche. Se viene aggiunto un tipo duplicato e viene eseguito il commit della modifica facendo clic su **OK,** viene restituito un messaggio di errore. Se usata per **l'attività InvokeMethod** per aggiungere argomenti di tipo generico, la finestra di dialogo **Editor raccolta** tipi consente l'aggiunta di tipi duplicati.
 
 Per altre informazioni, vedere [Tipi noti del contratto dati](/dotnet/framework/wcf/feature-details/data-contract-known-types).
 

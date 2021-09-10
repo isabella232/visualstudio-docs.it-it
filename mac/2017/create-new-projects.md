@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 1a3c18575ed53a47c38b4ee0df9a2a30ac4aedef9742791b868880fa18b04ebb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121383343"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961803"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creazione di nuovi progetti e soluzioni
 

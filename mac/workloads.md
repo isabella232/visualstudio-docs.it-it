@@ -6,12 +6,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: d9178d520a41c0d5ff49c5effa23c860be8135d32f4a84f8e4d471f85aed7e7e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121381454"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964461"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Carichi di lavoro di Visual Studio per Mac
 

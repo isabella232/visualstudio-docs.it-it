@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d4fe0b77c91b36440cbb760b3e192af453c4f58
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025407"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963391"
 ---
 # <a name="terminateworkflow-activity-designer"></a>ActivityDesigner TerminateWorkflow
 
@@ -30,9 +30,9 @@ L'attività <xref:System.Activities.Statements.TerminateWorkflow> termina l'esec
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Utilizzo dell'ActivityDesigner TerminateWorkflow
 
-L'ActivityDesigner **TerminateWorkflow** è disponibile nella categoria **Runtime** della Casella  degli strumenti **,** a  cui si accede facendo clic sulla scheda Casella degli strumenti .In alternativa, selezionare Casella degli strumenti dal **menu** Visualizza o CTRL+ALT+X.
+L'ActivityDesigner **TerminateWorkflow** è disponibile nella categoria **Runtime** della Casella degli strumenti **,** a  cui si accede facendo clic sulla scheda **Casella** degli strumenti . In alternativa, scegliere Casella degli strumenti dal **menu** Visualizza o CTRL+ALT+X.
 
-L'ActivityDesigner **TerminateWorkflow** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di <xref:System.Activities.Statements.Sequence> un oggetto . Verrà creata <xref:System.Activities.Statements.TerminateWorkflow> un'attività con **displayName predefinito** di TerminateWorkflow. Può <xref:System.Activities.Activity.DisplayName%2A> essere modificato nell'intestazione dell'ActivityDesigner **TerminateWorkflow** o nella **casella DisplayName** della griglia delle proprietà.
+**L'ActivityDesigner TerminateWorkflow** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Verrà creata <xref:System.Activities.Statements.TerminateWorkflow> un'attività con un **valore DisplayName predefinito** di TerminateWorkflow. Può <xref:System.Activities.Activity.DisplayName%2A> essere modificato nell'intestazione **dell'ActivityDesigner TerminateWorkflow** o nella casella **DisplayName** della griglia delle proprietà.
 
 ### <a name="the-terminateworkflow-properties"></a>Proprietà di TerminateWorkflow
 

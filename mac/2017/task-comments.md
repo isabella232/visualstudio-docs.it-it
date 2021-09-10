@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 6966a83ececf747271e2135508864de0be1a77a81eff584cab64dcde52c75f24
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4f7f3d1567972c3841af6deb37677a7e01cdb825
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121439627"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961994"
 ---
 # <a name="task-comments"></a>Commenti dell'attività
 
@@ -18,7 +18,7 @@ Quando si scrive codice, è prassi standard commentare esplicitamente il codice 
 
 ![Preferenze dell'elenco attività](media/source-editor-image10.png)
 
-Quando si aggiunge un nuovo commento di attività, includere la parola chiave dell'attività. Esempio:
+Quando si aggiunge un nuovo commento di attività, includere la parola chiave dell'attività. Ad esempio:
 
 ```csharp
 //TODO: Finish this for all properties.

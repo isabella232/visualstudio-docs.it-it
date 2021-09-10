@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: e473746ce129352950a0e36ae25e44065facf5b780f45598c1366fdab9b39e9b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121350555"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123962034"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
@@ -21,7 +21,7 @@ ms.locfileid: "121350555"
 >
 > Se è stata usata in precedenza la versione di anteprima dell'estensione TFVC per Visual Studio per Mac, non è più supportata in caso di aggiornamento a Visual Studio 2019 per Mac.
 
-Azure Repos fornisce due modelli di controllo della versione: [Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), un sistema di controllo della versione distribuito [e controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), un sistema di controllo della versione centralizzato.
+Azure Repos due modelli di controllo della versione: [Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), un sistema di controllo della versione distribuito e [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), un sistema di controllo della versione centralizzato.
 
 Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa il controllo della versione di Team Foundation, ecco alcune soluzioni che è possibile adottare per accedere al codice sorgente ospitato nel controllo della versione di Team Foundation:
 

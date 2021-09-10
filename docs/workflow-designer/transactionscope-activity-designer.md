@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: d3d84514690c4f2a00caea3b88946ffbd4da7cbc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114511"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963390"
 ---
 # <a name="transactionscope-activity-designer"></a>ActivityDesigner TransactionScope
 
@@ -30,7 +30,7 @@ L'attività <xref:System.Activities.Statements.TransactionScope> esegue in un'un
 
 ### <a name="using-the-transactionscope-activity-designer"></a>Utilizzo dell'ActivityDesigner TransactionScope
 
-Accedere **all'ActivityDesigner TransactionScope** nella **categoria Transazione** della Casella **degli strumenti**. **L'ActivityDesigner TransactionScope** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di <xref:System.Activities.Statements.Sequence> un oggetto . In questo modo viene creata un'attività <xref:System.Activities.Statements.TransactionScope> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito TransactionScope. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **TransactionScope** o nella **casella DisplayName** della griglia delle proprietà.
+Accedere **all'ActivityDesigner TransactionScope** nella **categoria Transazione** della casella **degli strumenti**. **L'ActivityDesigner TransactionScope** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che in genere si trovano attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . In questo modo viene creata un'attività <xref:System.Activities.Statements.TransactionScope> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito TransactionScope. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **TransactionScope** o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-transactionscope-properties"></a>Proprietà di TransactionScope
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.TransactionScope>. Il valore predefinito è TransactionScope. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Vero|Consente di specificare l'attività da eseguire in un'unica transazione. Per aggiungere l'attività, rilasciare un'attività dalla casella degli strumenti nella casella Corpo dell'ActivityDesigner TransactionScope con il testo del suggerimento <xref:System.Activities.Statements.TransactionScope.Body%2A> "Drop activity  here".  |
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Vero|Consente di specificare l'attività da eseguire in un'unica transazione. Per aggiungere <xref:System.Activities.Statements.TransactionScope.Body%2A> l'attività, rilasciare un'attività dalla casella degli strumenti nella casella **Corpo** dell'ActivityDesigner **TransactionScope** con il testo del suggerimento "Drop activity here". |
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Vero|Consente di specificare la proprietà <xref:System.Transactions.IsolationLevel> per questa attività <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Falso|Consente di specificare l'intervallo di tempo (nel formato 00:00:00, che indica ore:minuti:secondi) disponibile per il completamento della transazione. Il valore predefinito è 1 minuto (00:01:00).|
 |<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Vero|Specifica il valore che indica se il flusso di lavoro deve essere interrotto se la transazione si interrompe.|

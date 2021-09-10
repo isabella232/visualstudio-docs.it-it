@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: c9545b701dc3041fa57dacf5288fe8ab29cd9ea49b89afba1645505d185399f8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121349821"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964408"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 
 Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. In questo momento, tuttavia, xbuild è stato gradualmente sfasato a favore dell'uso di MSBuild in tutti i sistemi operativi.
 
-**MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio file eseguibili. tramite la chiamata a strumenti quali il compilatore.
+**MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio eseguibili. tramite la chiamata a strumenti quali il compilatore.
 
 ## <a name="msbuild-file"></a>File di MSBuild
 
@@ -76,7 +76,7 @@ Il codice XML del PropertyGroup per una semplice applicazione console, ad esempi
 
 È possibile fare riferimento alle proprietà da espressioni che usano la sintassi `$()`. L'espressione `$(Foo)`, ad esempio, verrà valutata come valore della proprietà `Foo`. Se la proprietà non è stata impostata, verrà valutata come stringa vuota, senza alcun errore.
 
-#### <a name="items"></a>Elementi
+#### <a name="items"></a>Items
 
 Gli elementi consentono di gestire l'input nel sistema di compilazione sotto forma di elenchi o set e in genere rappresentano file. Ogni elemento ha un *tipo*, una *specifica* e *metadati* arbitrari facoltativi. Si noti che MSBuild non opera su elementi singoli, ma su tutti gli elementi di un tipo specifico, ovvero su un *set* di elementi.
 

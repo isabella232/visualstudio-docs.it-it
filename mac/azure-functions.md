@@ -1,6 +1,6 @@
 ---
-title: Funzioni di Azure in MacO
-description: Introduzione all'Funzioni di Azure in Visual Studio per Mac.
+title: Funzioni di Azure nei MacO
+description: Introduzione a Funzioni di Azure in Visual Studio per Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 04/02/2021
@@ -8,32 +8,32 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: a91c40d0b6fe09aa88c0f3d72d21abde10621b5e
-ms.sourcegitcommit: 879b11112c775a1c1dd9ebd4e59a3d0caec84220
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "114397187"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964312"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
-Funzioni di Azure è un modo per creare ed eseguire frammenti di codice (funzioni) guidati da eventi nel cloud, senza dover effettuare il provisioning o gestire l'infrastruttura in modo esplicito. Per altre informazioni sulle funzioni di Azure, vedere la [documentazione di Funzioni di Azure](/azure/azure-functions/).
+Funzioni di Azure è un modo per creare ed eseguire frammenti di codice (funzioni) guidati da eventi nel cloud, senza dover effettuare il provisioning o gestire in modo esplicito l'infrastruttura. Per altre informazioni sulle funzioni di Azure, vedere la [documentazione di Funzioni di Azure](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Requisiti
 
 Gli strumenti per le funzioni di Azure sono inclusi in **Visual Studio per Mac 7.5** e versioni successive.
 
-Per creare e distribuire funzioni è necessaria anche una sottoscrizione di Azure. Se non si ha un account Azure, è possibile iscriversi gratuitamente e ricevere 12 mesi di servizi popolari gratuiti, 200 dollari di credito gratuito e oltre 25 servizi sempre gratuiti - > [https://azure.com/free](https://azure.com/free/dotnet) .
+Per creare e distribuire funzioni è necessaria anche una sottoscrizione di Azure. Se non si ha un account Azure, è possibile iscriversi oggi gratuitamente e ricevere 12 mesi di servizi popolari gratuiti, 200 dollari di credito gratuito e 25+ servizi sempre gratuiti - > [https://azure.com/free](https://azure.com/free/dotnet) .
 
 ## <a name="creating-your-first-azure-functions-project"></a>Creazione del primo progetto di Funzioni di Azure
 
-1. In Visual Studio per Mac selezionare **File > Nuova soluzione.**
+1. In Visual Studio per Mac selezionare **File > Nuova soluzione**.
 2. Nella finestra di dialogo Nuovo progetto, selezionare il modello Funzioni di Azure in **Cloud > Generale** e fare clic su **Avanti**:
 
-    ![Finestra di Project nuova finestra di dialogo che Funzioni di Azure opzione](media/azure-functions-image1.png)
+    ![Nuova Project finestra di dialogo che mostra Funzioni di Azure'opzione](media/azure-functions-image1.png)
 
 3. Selezionare il modello iniziale di Funzioni di Azure che si desidera usare, immettere il nome della funzione e fare clic su **Avanti**.
 
-    ![Nuova Project di dialogo che mostra Funzioni di Azure modelli](media/azure-functions-image2.png)
+    ![Nuova Project finestra di dialogo che mostra Funzioni di Azure modelli](media/azure-functions-image2.png)
 
     > [!TIP]
     > Anche se si cerca di mantenere il più possibile aggiornati il runtime e i modelli di Funzioni di Azure (interfaccia della riga di comando) in bundle, è inevitabile che diventino obsoleti. Quando si crea un nuovo progetto Funzioni, Visual Studio per Mac controlla la disponibilità di aggiornamenti per l'interfaccia della riga di comando e invia una notifica come illustrato nell'immagine seguente. È sufficiente fare clic sul pulsante per scaricare i modelli aggiornati.
@@ -95,10 +95,10 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
 ## <a name="publish-to-azure"></a>Eseguire la pubblicazione in Azure
 
-1. Fare clic con il pulsante destro del mouse sul nome del progetto e scegliere Pubblica > pubblica in **Azure:** menu di scelta rapida con Pubblica >  ![ pubblica in Azure... opzione evidenziata](media/azure-functions-image5.png)
+1. Fare clic con il pulsante destro del mouse sul nome del progetto e scegliere Pubblica > pubblica in **Azure**: menu di scelta rapida con >  ![ pubblica in Azure... opzione evidenziata](media/azure-functions-image5.png)
 2. Se l'account di Azure è già stato connesso a Visual Studio per Mac, viene visualizzato un elenco dei servizi app disponibili. Se non è stato ancora effettuato l'accesso, verrà richiesto di farlo.
 3. Nella finestra di dialogo **Pubblica in Servizi app di Azure** è possibile selezionare un servizio app esistente o crearne uno nuovo facendo clic **Nuovo**.
-4. Nella finestra **di dialogo Crea** nuovo servizio app immettere le impostazioni nella finestra di dialogo Nuovo servizio app, con i campi relativi a nome del servizio, sottoscrizione, gruppo di risorse e impostazioni del piano di  ![ servizio.](media/azure-functions-image7.png)
+4. Nella finestra **di dialogo Crea** nuovo servizio app immettere le impostazioni nella finestra di dialogo Nuovo servizio app, con i campi per il nome del servizio, la sottoscrizione, il gruppo di risorse e le impostazioni del piano di  ![ servizio.](media/azure-functions-image7.png)
 
     |Impostazione  |Descrizione  |
     |---------|---------|
@@ -109,19 +109,19 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
 5. Fare clic su **Avanti** per creare un account di archiviazione. L'account di archiviazione di Azure è necessario per il runtime di Funzioni. Fare clic su **Personalizzato** per creare un account di archiviazione per utilizzo generico oppure usarne uno esistente:
 
-    ![Nuova finestra di dialogo del servizio app con la richiesta del nome dell'account di archiviazione.](media/azure-functions-image8.png)
+    ![Nuova finestra di dialogo del servizio app con la richiesta di specificare il nome dell'account di archiviazione.](media/azure-functions-image8.png)
 
 6. Fare clic su **Crea** per creare un'app per le funzioni e le relative risorse in Azure con queste impostazioni e distribuire il codice di progetto della funzione.
 
 7. Potrebbe essere visualizzata una finestra di dialogo durante la pubblicazione con la richiesta "Aggiorna versione di Funzioni in Azure". Fare clic **su Sì:**
 
-    ![Prompt che chiede di aggiornare le impostazioni dell'applicazione Azure in modo che corrispondano alla versione locale di Funzioni? con le opzioni Sì e No.](media/azure-functions-image12.png)
+    ![Chiedere di aggiornare le impostazioni dell'applicazione Azure in modo che corrispondano alla versione locale di Funzioni? con le opzioni Sì e No.](media/azure-functions-image12.png)
 
 ## <a name="function-app-settings"></a>Impostazioni dell'app per le funzioni
 
 Le impostazioni aggiunte nel file local.settings.json devono essere aggiunte anche all'app per le funzioni in Azure. Queste impostazioni non vengono caricate automaticamente quando si pubblica il progetto.
 
-Per accedere alle impostazioni dell'app, passare al portale di Azure all'indirizzo [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . In **App per le funzioni** selezionare **App per le funzioni** ed evidenziare il nome della funzione:
+Per accedere alle impostazioni dell'app, passare alla portale di Azure all'indirizzo [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . In **App per le funzioni** selezionare **App per le funzioni** ed evidenziare il nome della funzione:
 
 ![Menu di Funzioni di Azure](media/azure-functions-image9.png)
 
@@ -151,7 +151,7 @@ Un'altra impostazione importante che potrebbe essere necessario impostare è `FU
 
 - **Trigger Queue**: funzione che risponde ai messaggi quando raggiungono la coda di Archiviazione di Azure. Oltre al nome della funzione, questo modello accetta una proprietà **Path** (nome della coda dalla quale verrà letto il messaggio) e una proprietà **Connection** dell'account di archiviazione (nome dell'impostazione dell'app che contiene la stringa di connessione dell'account di archiviazione). Per altre informazioni, vedere [l'articolo Funzioni di Azure code Archiviazione](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Trigger BLOB**: elabora i BLOB di Archiviazione di Azure quando vengono aggiunti a un contenitore. Oltre al nome della funzione, questo modello accetta proprietà Path e Connection. La proprietà Path è il percorso dell'account di archiviazione che verrà monitorato dal trigger. L'account di connessione è il nome dell'impostazione dell'app contenente la stringa di connessione dell'account di archiviazione. Per altre informazioni, vedere [l'articolo Funzioni di Azure BLOB Archiviazione .](/azure/azure-functions/functions-create-storage-blob-triggered-function)
+- **Trigger BLOB**: elabora i BLOB di Archiviazione di Azure quando vengono aggiunti a un contenitore. Oltre al nome della funzione, questo modello accetta proprietà Path e Connection. La proprietà Path è il percorso dell'account di archiviazione che verrà monitorato dal trigger. L'account di connessione è il nome dell'impostazione dell'app contenente la stringa di connessione dell'account di archiviazione. Per altre informazioni, vedere [l'articolo Funzioni di Azure BLOB Archiviazione](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
 - **WebHook generico**: funzione semplice che viene eseguita ogni volta che riceve una richiesta da un servizio che supporta i webhook. Per altre informazioni, vedere [l'Funzioni di Azure sui webhook generici.](/azure/azure-functions/functions-create-generic-webhook-triggered-function)
 

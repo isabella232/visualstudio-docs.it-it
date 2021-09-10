@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 1319dcbdbbefe6639fe6d52b4dfb5c5d5015ad22
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045801"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963223"
 ---
 # <a name="receive-activity-designer"></a>ActivityDesigner Receive
 
@@ -30,7 +30,7 @@ L'attività <xref:System.ServiceModel.Activities.Receive> può ricevere un solo 
 
 ### <a name="using-the-receive-activity-designer"></a>Utilizzo dell'ActivityDesigner Receive
 
-Accedere **all'ActivityDesigner** di ricezione nella **categoria Messaggistica** della Casella **degli strumenti**. **L'ActivityDesigner** di ricezione può  essere trascinato dalla casella degli strumenti e rilasciato nell'area Progettazione flussi di lavoro in cui vengono in genere posizionate le attività. In questo modo viene creata un'attività <xref:System.ServiceModel.Activities.Receive> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Receive. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato  nell'intestazione dell'ActivityDesigner di ricezione o nella **casella DisplayName** della griglia delle proprietà.
+Accedere **all'ActivityDesigner** di ricezione nella **categoria Messaggistica** della Casella **degli strumenti**. **L'ActivityDesigner** di ricezione può  essere trascinato dalla casella degli strumenti e rilasciato nella Progettazione flussi di lavoro in cui vengono in genere posizionate le attività. In questo modo viene creata un'attività <xref:System.ServiceModel.Activities.Receive> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Receive. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato  nell'intestazione dell'ActivityDesigner di ricezione o nella **casella DisplayName** della griglia delle proprietà.
 
 Per creare un'attività e associarla all'attività selezionata, fare clic con il pulsante destro del mouse sull'ActivityDesigner di ricezione, scegliere l'elemento Create SendReply nel menu di scelta rapida e la finestra di progettazione <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.Receive> **SendReplyToReceive**    viene visualizzata sotto la finestra di progettazione ricezione. L'attività <xref:System.ServiceModel.Activities.SendReply> è un'attività che invia il messaggio di risposta come parte di un modello di scambio di messaggi di richiesta/risposta nel servizio. Può essere configurato con la finestra **di progettazione SendReplyToReceive.**
 
@@ -53,7 +53,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | Falso | Specifica una raccolta di tipi noti per l'operazione del servizio implementata da questa attività <xref:System.ServiceModel.Activities.Receive>. Questa proprietà deve essere usata insieme alla proprietà <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> impostata su <xref:System.Runtime.Serialization.DataContractSerializer>. Viene ignorata se viene usato <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Selezionare il pulsante con i puntini di sospensione accanto al campo **KnownTypes** nella griglia delle proprietà per visualizzare la finestra di dialogo **Editor** raccolta tipi con cui è possibile aggiungere tipi pertinenti. Per altre informazioni sull'uso di questa casella, vedere l'argomento [Finestra di dialogo Editor raccolta tipi](../workflow-designer/type-collection-editor-dialog-box.md) . |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | Falso | Specifica il tipo di <xref:System.Net.Security.ProtectionLevel> applicato al messaggio.<br /><br /> 1.  <xref:System.Net.Security.ProtectionLevel> indica solo l'autenticazione.<br />2.  <xref:System.Net.Security.ProtectionLevel> significa firmare i dati per garantire l'integrità dei dati trasmessi.<br />3.  <xref:System.Net.Security.ProtectionLevel> significa crittografare e firmare i dati per garantire la riservatezza e l'integrità dei dati trasmessi. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | Falso | Specifica il tipo di serializzatore da usare per l'operazione del servizio implementata dall'attività <xref:System.ServiceModel.Activities.Receive>. Il valore predefinito è <xref:System.Runtime.Serialization.DataContractSerializer>, che serializza e deserializza un'istanza di un tipo in un documento o un flusso XML che usa un contratto dati fornito. È inoltre possibile usare <xref:System.Xml.Serialization.XmlSerializer> se è richiesto un maggiore controllo sul codice XML. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | Falso | Specifica l'intestazione Action del messaggio. Se non è impostato in modo esplicito, il relativo valore predefinito è: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` . |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | Falso | Specifica l'intestazione Action del messaggio. Se non è impostato in modo esplicito, il valore predefinito è: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` . |
 
 ## <a name="see-also"></a>Vedi anche
 

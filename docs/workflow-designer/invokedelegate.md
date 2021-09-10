@@ -12,12 +12,12 @@ author: TerryGLee
 ms.author: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 12fd42bd51a252470c2b7d4fbae23581847ddf0f6d3dede60f6e2659215d80fd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a482f23b1df1587e9a1c7e3023bfb0d1737f1fae
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393510"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963620"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -29,7 +29,7 @@ L'oggetto <xref:System.Activities.Statements.InvokeDelegate> chiama un delegato 
 
 ### <a name="use-the-invokedelegate-activity-designer"></a>Usare l'ActivityDesigner InvokeDelegate
 
-Accedere **all'ActivityDesigner InvokeDelegate** nella **categoria Primitive** della casella degli **strumenti.** **L'ActivityDesigner InvokeDelegate** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro in cui vengono in genere inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione dell'ActivityDesigner <xref:System.Activities.Statements.InvokeDelegate> crea un'attività con il <xref:System.Activities.Activity.DisplayName%2A> valore predefinito InvokeDelegate. Può <xref:System.Activities.Activity.DisplayName%2A> essere modificato nell'intestazione **dell'ActivityDesigner InvokeDelegate** o nella casella **DisplayName** della griglia delle proprietà.
+Accedere **all'ActivityDesigner InvokeDelegate** nella **categoria Primitive** della casella **degli strumenti.** **L'ActivityDesigner InvokeDelegate** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro in cui vengono in genere inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione dell'ActivityDesigner <xref:System.Activities.Statements.InvokeDelegate> crea un'attività con il <xref:System.Activities.Activity.DisplayName%2A> valore predefinito InvokeDelegate. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione dell'ActivityDesigner **InvokeDelegate** o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-invokedelegate-properties"></a>Proprietà InvokeDelegate
 

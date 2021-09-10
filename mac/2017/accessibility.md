@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: 889003b822026ac5418e482a0817cc0b9c09d453100dd713e0efd512ce97932d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a2f151cbf593d2b8e26be7ac60eaf8ff3c687499
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423255"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961784"
 ---
 # <a name="accessibility"></a>Accessibilità
 

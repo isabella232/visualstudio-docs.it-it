@@ -7,21 +7,21 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/18/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio CODE Magazine incluso nella sottoscrizione Visual Studio sottoscrizione.
-ms.openlocfilehash: 1c9a8374e7c3e56ede2c3e7d017dc50b9366ee61ba0553fb61660c59c67a5025
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121406854"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965786"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine incluso nelle sottoscrizioni Visual Studio
 
-CODE Magazine è una rivista leader per sviluppatori di software indipendenti che si occupa di tecnologie di sviluppo in tutte le piattaforme.  Le Visual Studio selezionate sono idonee per ricevere una sottoscrizione di un anno alle edizioni stampate o digitali della rivista.
+CODE Magazine è una rivista leader per sviluppatori di software indipendenti che tratta le tecnologie di sviluppo in tutte le piattaforme.  Le Visual Studio selezionate sono idonee per ricevere una sottoscrizione di un anno alle edizioni stampate o digitali della rivista.
 
 ## <a name="activation-steps"></a>Passaggi di attivazione
 La procedura per configurare la sottoscrizione di CODE Magazine è semplice.  È sufficiente seguire questa procedura:
 
-1. visita [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Visita [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2. Individuare il riquadro CODE Magazine nella sezione Professional Development or Education del portale e fare clic **su Get Code (Ottieni codice).**
    > [!div class="mx-imgBorder"]
    > ![Riquadro CODE Magazine](_img/vs-code-magazine/vs-code-magazine-tile.png "Riquadro CODE Magazine")
@@ -50,9 +50,9 @@ Dopo aver completato l'ordine di sottoscrizione, verrà visualizzata una pagina 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponibile       |  No          |
-| Visual Studio Enterprise sottoscrizione con GitHub Enterprise   | Vl| Disponibile       |  No          |
+| Visual Studio Enterprise sottoscrizione con GitHub Enterprise   | VL| Disponibile       |  No          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponibile                                                            |  No          |
-| Visual Studio Professional sottoscrizione con GitHub Enterprise | Vl                                      | Disponibile                                                            |  No          |
+| Visual Studio Professional sottoscrizione con GitHub Enterprise | VL                                      | Disponibile                                                            |  No          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  No          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile                                              |  No          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/A |
@@ -63,19 +63,19 @@ Dopo aver completato l'ordine di sottoscrizione, verrà visualizzata una pagina 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connessione a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-if-the-subscription-is-free-why-am-i-being-asked-for-a-credit-card"></a>D: Se la sottoscrizione è gratuita, perché viene richiesta una carta di credito?  
-A: L'invio di copie stampate gratuite in tutto il mondo è un'inibizione dei costi.  Ai sottoscrittori che scelgono l'edizione stampata della rivista CODE e risiedono al di fuori del Stati Uniti verrà addebitata una tariffa per la spedizione. Per evitare addebiti per la spedizione, scegliere la versione digitale della rivista. 
+A: L'invio di copie stampate gratuite a livello internazionale è un'inibizione dei costi.  Ai sottoscrittori che scelgono l'edizione stampata della rivista CODE e risiedono al di fuori del Stati Uniti verrà addebitata una tariffa per la spedizione. Per evitare addebiti per la spedizione, scegliere la versione digitale della rivista. 
 
 ### <a name="q-why-do-i-need-to-provide-a-delivery-address-for-a-digital-subscription"></a>D: Perché è necessario specificare un indirizzo di recapito per una sottoscrizione digitale?
-A: CODE Magazine raccoglie l'indirizzo, indipendentemente dal fatto che la sottoscrizione sia per una sottoscrizione stampata o digitale per supportare i processi di adempimenti, selezione dell'offerta e accesso digitale.  Per altre informazioni sulle attività di CODE Magazine con i dati, vedere l'Informativa [sulla privacy.](https://www.codemag.com/Home/Privacy)
+A: CODE Magazine raccoglie l'indirizzo, indipendentemente dal fatto che la sottoscrizione sia per una sottoscrizione stampata o digitale per supportare i processi di adempimenti, selezione dell'offerta e accesso digitale.  Per altre informazioni sulle attività di CODE Magazine sui dati, vedere l'Informativa [sulla privacy.](https://www.codemag.com/Home/Privacy)
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Per domande sull'abbonamento a CODE Magazine,  Contattare [CODE Magazine tramite](https://www.codemag.com/contact) posta elettronica o telefono oppure inviare una richiesta di supporto online.
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni.](https://my.visualstudio.com/gethelp)
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto [Visual Studio sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

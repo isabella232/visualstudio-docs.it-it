@@ -1,5 +1,5 @@
 ---
-title: Power BI Pro vantaggio in Visual Studio sottoscrizioni | Microsoft Docs
+title: Power BI Pro vantaggio nelle sottoscrizioni Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
@@ -8,11 +8,11 @@ ms.date: 08/26/2021
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: 92a276deaebd7f0d008caca6dc1fad24b4e9542e
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980652"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965811"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -111,7 +111,7 @@ R: No.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pu
   - Problemi durante l'iscrizione?  Vedere [Iscrizione a Power BI come utente singolo](/power-bi/service-self-service-signup-for-power-bi)
   - Esplorare i problemi principali, ottenere assistenza dalla community o inviare un ticket di supporto nella [pagina del supporto tecnico](https://powerbi.microsoft.com/support/).
 - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni](https://my.visualstudio.com/gethelp)
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio supporto tecnico](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

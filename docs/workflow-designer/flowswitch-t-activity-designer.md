@@ -1,5 +1,5 @@
 ---
-title: Progettazione flussi di lavoro - &lt; ActivityDesigner T FlowSwitch &gt;
+title: Progettazione flussi di lavoro - ActivityDesigner &lt; FlowSwitch T &gt;
 description: Informazioni su come l'attività FlowSwitch è un nodo condizionale che fornisce la diramazione per <T> il flusso di controllo in base al criterio di corrispondenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -17,11 +17,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: b5e3a400509668c7cab2310fcd4c67316f35b8ac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025383"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963481"
 ---
 # <a name="flowswitcht-activity-designer"></a>Activity Designer\<T> FlowSwitch
 
@@ -35,9 +35,9 @@ L'attività <xref:System.Activities.Statements.FlowSwitch%601> è un nodo condiz
 
 **L'ActivityDesigner \<T> FlowSwitch** è disponibile nella categoria **Diagramma** di flusso della Casella degli strumenti **,** a cui si accede facendo clic sulla scheda **Casella** degli strumenti sul lato sinistro del Progettazione flussi di lavoro. In alternativa, scegliere **Casella degli** strumenti **dal** menu Visualizza o premere **CTRL** + **ALT** + **X.**
 
-**L'ActivityDesigner \<T> FlowSwitch** può essere  trascinato dalla casella degli strumenti e rilasciato nell'area Progettazione flussi di lavoro all'interno di un ActivityDesigner **Diagramma** di flusso. Usare la **finestra Seleziona** tipi visualizzata per specificare il tipo (associato nel codice all'oggetto dal relativo parametro generico) ottenuto dalla <xref:System.Activities.Statements.FlowSwitch%601> valutazione di <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . Questa procedura crea <xref:System.Activities.Statements.FlowSwitch%601> un'attività con etichetta Switch **all'interno** <xref:System.Activities.Statements.Flowchart> dell'attività. È possibile digitare nella casella Espressione della finestra Proprietà facendo clic nel punto in cui il testo del suggerimento indica <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> "Immettere  un'VB'espressione". 
+**L'ActivityDesigner \<T> FlowSwitch** può essere  trascinato dalla casella degli strumenti e rilasciato nell'area Progettazione flussi di lavoro all'interno di un ActivityDesigner **Diagramma** di flusso. Usare la **finestra Seleziona** tipi visualizzata per specificare il tipo (associato nel codice all'oggetto dal relativo parametro generico) ottenuto dalla <xref:System.Activities.Statements.FlowSwitch%601> valutazione di <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . Questa procedura crea <xref:System.Activities.Statements.FlowSwitch%601> un'attività con etichetta Switch **all'interno** <xref:System.Activities.Statements.Flowchart> dell'attività. È possibile digitare nella casella Espressione della finestra Proprietà facendo clic nel punto in cui il testo del suggerimento indica <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> "Immettere un'VB espressione".  
 
-Posizionare il puntatore del mouse sull'ActivityDesigner **FlowSwitch \<T>** per fare in modo che gli handle quadrati utilizzati per il collegamento vengano visualizzati <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> intorno ai bordi. Dopo aver trascinato l'ActivityDesigner **FlowSwitch<T \>** e altri ActivityDesigner nel diagramma di flusso , gli oggetti che rappresentano sono pronti per essere collegati tra loro per specificare l'ordine di  <xref:System.Activities.Activity> esecuzione. Per creare uno degli oggetti associati all'oggetto , fare clic su uno degli handle quadrati del case sul perimetro di <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> <xref:System.Activities.Statements.FlowSwitch%601> **FlowSwitch<T \>** e trascinarlo (tenendo premuto il pulsante del mouse) su uno degli handle visualizzati in modo simile intorno all'attività di destinazione quando il puntatore del mouse viene posizionato sulla relativa finestra di progettazione. Rilasciare il pulsante del mouse e viene visualizzata una freccia dal<**flusso alla \>** finestra di progettazione di destinazione che rappresenta questo caso. Il valore predefinito per questo caso viene visualizzato sulla freccia e può essere modificato nella **casella Case** della **finestra** Proprietà.
+Posizionare il puntatore del mouse sull'ActivityDesigner **FlowSwitch \<T>** per fare in modo che gli handle quadrati utilizzati per il collegamento vengano visualizzati <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> intorno ai bordi. Dopo aver trascinato l'ActivityDesigner **FlowSwitch<T \>** e altri ActivityDesigner nel diagramma di flusso , gli oggetti che rappresentano sono pronti per essere collegati tra loro per specificare l'ordine di  <xref:System.Activities.Activity> esecuzione. Per creare uno degli oggetti associati all'oggetto , fare clic su uno dei quadratini di ridimensionamento del case sul perimetro di <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> <xref:System.Activities.Statements.FlowSwitch%601> **FlowSwitch<T \>** e trascinarlo (tenendo premuto il pulsante del mouse) su uno degli handle visualizzati in modo simile intorno all'attività di destinazione quando il puntatore del mouse viene posizionato sulla relativa finestra di progettazione. Rilasciare il pulsante del mouse e viene visualizzata una freccia dal<**flusso alla \>** finestra di progettazione di destinazione che rappresenta questo caso. Il valore predefinito per questo caso viene visualizzato sulla freccia e può essere modificato nella **casella Case** della **finestra** Proprietà.
 
 ### <a name="the-flowswitcht-properties"></a>Proprietà di \<T> FlowSwitch
 

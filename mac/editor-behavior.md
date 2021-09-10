@@ -6,11 +6,11 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
 ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67823168"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964419"
 ---
 # <a name="editor-behavior"></a>Comportamento dell'editor
 
@@ -29,6 +29,6 @@ ms.locfileid: "67823168"
 
 È anche possibile impostare regole di formattazione per XML, CSS, HTML e JSON.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Preferenze di stile per il codice (Visual Studio in Windows)](/visualstudio/ide/code-styles-and-quick-actions)

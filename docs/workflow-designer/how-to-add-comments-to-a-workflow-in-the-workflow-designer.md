@@ -1,6 +1,6 @@
 ---
 title: 'Progettazione flussi di lavoro - Procedura: Aggiungere commenti a un flusso di lavoro'
-description: Informazioni su .NET Framework 4.5 consente allo sviluppatore di aggiungere annotazioni a determinati tipi di elementi nella finestra di progettazione, ad esempio gli elementi Activity, State e Transition.
+description: Informazioni su .NET Framework 4.5 consente allo sviluppatore di aggiungere annotazioni a determinati tipi di elementi nella finestra di progettazione, ad esempio elementi Activity, State e Transition.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 81de5a8b27626066fb8c85b5d13da2f387bae8c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114758"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963537"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedura: aggiungere commenti a un flusso di lavoro in Progettazione del flusso di lavoro
 
@@ -50,7 +50,7 @@ Per facilitare la creazione di flussi di lavoro più grandi e più complessi, .N
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Visualizzazione di un'annotazione della finestra di progettazione dell'attività
 
-1. Con un ActivityDesigner con un'annotazione visualizzata all'esterno dell'attività, fare clic sull'icona **Aggiungi** nello strumento decorativo dell'annotazione.
+1. Con un ActivityDesigner con un'annotazione visualizzata  all'esterno dell'attività, fare clic sull'icona Aggiungi nello strumento decorativo dell'annotazione.
 
    L'annotazione viene visualizzata nella finestra di progettazione dell'attività. Nella schermata riportata di seguito, l'annotazione "inizia attività nel flusso di lavoro" viene visualizzata nella finestra di progettazione dell'attività.
 
@@ -72,7 +72,7 @@ Per facilitare la creazione di flussi di lavoro più grandi e più complessi, .N
 
 1. Fare clic con il pulsante destro del mouse su un'attività che dispone di un'annotazione.
 
-1. Selezionare **Annotazioni**, **Modifica annotazione** o **Elimina annotazione**.
+1. Selezionare **Annotazioni**, Modifica **annotazione o** **Elimina annotazione**.
 
    L'annotazione viene aperta per la modifica o l'eliminazione.
 

@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 3ce0967d4a0293ca5a0f41998c1e8363a4a91d74d01c05cc0770ea129edabca1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121437566"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964554"
 ---
 # <a name="working-with-git"></a>Uso di Git
 
@@ -59,9 +59,9 @@ Queste schede consentono le azioni seguenti:
 
 ## <a name="switching-branches"></a>Cambio di rami
 
-Per impostazione predefinita, il primo ramo creato in un repository è noto come **ramo** principale. Tecnicamente non c'è nulla di diverso tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che viene spesso pensato nei team di sviluppo come ramo "live" o "di produzione".
+Per impostazione predefinita, il primo ramo creato in un repository è noto come **ramo** principale. Tecnicamente non c'è nulla di diverso tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che viene più spesso pensato nei team di sviluppo come ramo "live" o "di produzione".
 
-È possibile creare una linea di sviluppo indipendente diramando main (o qualsiasi altro ramo). In questo modo viene fornita una nuova versione del ramo principale in un punto nel tempo, consentendo lo sviluppo indipendentemente da ciò che è "live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
+È possibile creare una linea di sviluppo indipendente diramando main (o qualsiasi altro ramo). In questo modo viene fornita una nuova versione del ramo principale in un momento nel tempo, consentendo lo sviluppo indipendentemente da ciò che è "live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 
@@ -91,7 +91,7 @@ Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Contro
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file nel repository remoto, premere **Commit**, immettere un messaggio di commit e confermare con il pulsante Commit:
+Per eseguire il commit di un file nel repository remoto, premere **Commit,** immettere un messaggio di commit e confermare con il pulsante Commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 

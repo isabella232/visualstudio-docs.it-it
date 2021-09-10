@@ -1,5 +1,5 @@
 ---
-title: "Progettazione flussi di lavoro - Procedura: Usare l'Editor espressioni"
+title: "Progettazione flussi di lavoro - Procedura: Usare l'editor espressioni"
 description: Informazioni su come l'Editor espressioni è un Progettazione flussi di lavoro controllo che è possibile usare in molte attività del flusso di lavoro per immettere e valutare espressioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cba7dfc832eca703991b110254a60edc3bae054
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130455"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963270"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedura: utilizzare l'editor espressioni
 
@@ -35,11 +35,11 @@ Le espressioni sono valori letterali o codice Visual Basic associati ad argoment
 - Se si imposta lo stato attivo sull'editor espressioni in un oggetto progettazione flussi di lavoro riallocato, si comporta come oggetto TextBox. Quando nell'oggetto progettazione flussi di lavoro riallocato si perde lo stato attivo, l'editor espressioni si presenta nuovamente come un normale oggetto TextBlock.
 
 > [!NOTE]
-> IntelliSense per l'editor di espressioni è disponibile solo all'interno di Visual Studio. In entrambi gli scenari Visual Studio e rihosting, il compilatore convalida l'espressione dopo l'immissione e l'editor di espressioni visualizza un'icona di errore se l'espressione non è valida.
+> IntelliSense per l'Editor espressioni è disponibile solo all'interno di Visual Studio. In entrambi gli scenari Visual Studio e rihosting, il compilatore convalida l'espressione dopo l'immissione e l'editor di espressioni visualizza un'icona di errore se l'espressione non è valida.
 
 ## <a name="use-the-expression-editor"></a>Usare l'editor espressioni
 
-1. In Visual Studio aprire un progetto flusso di lavoro nuovo o esistente.
+1. In Visual Studio aprire un progetto di flusso di lavoro nuovo o esistente.
 
 2. Aggiungere, ad esempio, l'attività <xref:System.Activities.Statements.Assign> al flusso di lavoro.
 
@@ -48,7 +48,7 @@ Le espressioni sono valori letterali o codice Visual Basic associati ad argoment
 
 3. Fare clic sull'editor espressioni sinistro nell'ActivityDesigner per l'attività <xref:System.Activities.Statements.Assign>.
 
-     Le stringhe del limite **\<To>** grigio e sono le stringhe di testo predefinite per gli editor di espressioni **\<Enter a VB Expression>** <xref:System.Activities.Statements.Assign> nell'attività .
+     Le stringhe con filigrana **\<To>** grigia **\<Enter a VB Expression>** e sono le stringhe di testo predefinite per gli editor di espressioni nell'attività <xref:System.Activities.Statements.Assign> .
 
 4. Immettere l'espressione. Se si immette una stringa, assicurarsi di inserire la stringa tra virgolette. Se si sceglie di associare l'argomento dell'espressione a una variabile, non usare le virgolette.
 

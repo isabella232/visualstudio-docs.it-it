@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 02/19/2021
 ms.topic: how-to
 description: Elenco di download del software inclusi nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 9d88c1c22c912c1036d9c09d943917a33b0fa5f3053c39f154b0a65f958c0585
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121421539"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965652"
 ---
 # <a name="what-software-is-available-for-download"></a>Software disponibile per il download
 
@@ -23,7 +23,7 @@ Se è già disponibile una sottoscrizione di Visual Studio:
 2. Accedere alla sottoscrizione. Altre informazioni sull'accesso con l'[account Microsoft](sign-in-msa.md), con l'[account aziendale o dell'istituto di istruzione](sign-in-work.md) o con le [credenziali GitHub](sign-in-github.md).
 3. Dopo aver completato l'accesso sarà possibile cercare i download desiderati.  È anche possibile visualizzare un elenco di download popolari, che possono essere ordinati in base a vari criteri.
 
-Per trovare rapidamente i prodotti, usare le funzioni "Cerca" nella parte superiore della pagina o selezionare i diversi tipi di prodotti a sinistra.
+Per trovare rapidamente i prodotti, usare le funzioni "Cerca" nella parte superiore della pagina o selezionare i diversi tipi di prodotto a sinistra.
 
 > [!TIP]
 > Se si stanno cercando i codici Product Key, selezionare la **scheda Codici Product Key** nella parte superiore della pagina.

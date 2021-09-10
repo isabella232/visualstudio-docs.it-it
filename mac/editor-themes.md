@@ -6,12 +6,12 @@ ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
 ms.topic: how-to
-ms.openlocfilehash: a58f476fe7adce12981148f7ddabbf8785d79c514d08e8600c11780ceeebcbcc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 490ec4f5763ba7ba5be6bf9099dcd608a3712fa1
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121407229"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964446"
 ---
 # <a name="editor-themes"></a>Temi dell'editor
 

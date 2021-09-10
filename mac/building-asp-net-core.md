@@ -1,17 +1,17 @@
 ---
 title: Creazione di applicazioni ASP.NET Core
-description: Questo articolo illustra la creazione e l'esplorazione di ASP.NET Core applicazioni con Visual Studio per Mac.
+description: Questo articolo illustra come creare ed esplorare ASP.NET Core applicazioni con Visual Studio per Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: ac3e11fd849cc26949f6286fbe91b64719a4206ec0037370962afe65d6a9b15c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408372"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964360"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Creazione di applicazioni ASP.NET Core in Visual Studio per Mac
 
@@ -46,7 +46,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 4. Immettere **"CoreLab"** come nome e fare clic su **Crea** per creare il progetto. Il completamento dell'operazione potrebbe richiedere qualche istante.
 
-    ![Screenshot della configurazione dell'applicazione Web, con l'aggiunta Project nome.](media/netcore-image2.png)
+    ![Screenshot della configurazione dell'applicazione Web, aggiunta di un Project nome.](media/netcore-image2.png)
 
 ## <a name="task-2-touring-the-solution"></a>Attività 2: Presentazione della soluzione
 
@@ -62,23 +62,23 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![Screenshot di una classe C# denominata HomeController.](media/netcore-image5.png)
 
-4. Il progetto include anche una **cartella Views** che contiene altre cartelle mappate a ogni controller e una per **le visualizzazioni** condivise. Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso **/Home/About** si troverebbe in **Visualizzazioni/Home/About.cshtml**. Aprire il file.
+4. Il progetto include anche una **cartella Views** che contiene altre cartelle mappate a ogni controller , nonché una per **le visualizzazioni** condivise. Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso **/Home/About** si troverebbe in **Visualizzazioni/Home/About.cshtml**. Aprire il file.
 
-    ![Screenshot del progetto della soluzione con il file C S H T M L denominato About selezionato.](media/netcore-image6.png)
+    ![Screenshot del progetto di soluzione con il file C S H T M L denominato Informazioni su selezionato.](media/netcore-image6.png)
 
 5. Questo file CSHTML usa la sintassi Razor per eseguire il rendering HTML in base a una combinazione di tag standard e C# inline. Per altre informazioni su questo modello, vedere la [documentazione online](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
-    ![Screenshot di parte di un file C S H T M L che mostra sintassi Razor.](media/netcore-image7.png)
+    ![Screenshot di una parte di un file C S H T M L che mostra sintassi Razor.](media/netcore-image7.png)
 
 6. La soluzione contiene anche una cartella **wwwroot** che sarà la radice per il sito Web. È possibile inserire contenuto statico del sito, ad esempio fogli di stile CSS, immagini e librerie JavaScript, direttamente nei percorsi ad essi destinati al momento della distribuzione del sito stesso.
 
     ![Screenshot della soluzione con la cartella radice w w selezionata.](media/netcore-image8.png)
 
-7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. Annidati sotto la appsettings.jsnel file è il **appsettings.Development.jsnel** file. In questo caso, è possibile eseguire l'override di alcune o tutte queste impostazioni in base all'ambiente. Visual Studio per Mac anniderà i file in questo modo usando la stessa logica di Visual Studio per Windows, in modo che i file a cui è necessario accedere più spesso siano all'avanguardia. 
+7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. Annidato sotto il appsettings.jsnel file è il **appsettings.Development.jssul** file. In questo caso, è possibile eseguire l'override di alcune o tutte queste impostazioni in base all'ambiente. Visual Studio per Mac anniderà i file in questo modo usando la stessa logica di Visual Studio per Windows, in modo che i file a cui è necessario accedere più spesso siano all'avanguardia. 
 
     ![Screenshot che mostra una visualizzazione dettagli con un file JSON selezionato.](media/netcore-build-nested.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: Informazioni su come è ospitata l'applicazione
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: Informazioni sulla modalità di hosting dell'applicazione
 
 1. In **Esplora soluzioni** aprire **Program.cs**. Questo è il programma di bootstrap che eseguirà l'applicazione.
 
@@ -86,9 +86,9 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 2. Anche se sono presenti solo due righe di codice, la loro importanza è fondamentale. Si esamineranno ora in dettaglio queste righe. Prima di tutto, viene creato un nuovo **WebHostBuilder**. Le app ASP.NET Core richiedono un host per l'esecuzione. L'host deve implementare l'interfaccia **IWebHost**, che espone raccolte di funzionalità e servizi, e un metodo **Start**. L'host viene in genere creato tramite un'istanza di **WebHostBuilder**, che crea e restituisce un'istanza di **WebHost**. L'istanza di **WebHost** fa riferimento al server che gestirà le richieste.
 
-    ![Screenshot del metodo Main C# con un'istruzione che inizializza una variabile denominata host di tipo WebHostBuilder.](media/netcore-image11.png)
+    ![Screenshot del metodo Main C# con un'istruzione che inizializza una variabile denominata host con tipo WebHostBuilder.](media/netcore-image11.png)
 
-3. Anche se **WebHostBuilder è** responsabile della creazione dell'host che bootstraprà il server per l'app, è necessario fornire un server che implementa **`IServer`** . Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
+3. Anche se **WebHostBuilder è** responsabile della creazione dell'host che consente di avviare il server per l'app, è necessario fornire un server che implementa **`IServer`** . Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
 
     ![Screenshot del metodo Main C# che evidenzia la variabile host che imposta il server con il metodo UseKestrel.](media/netcore-image12.png)
 
@@ -110,21 +110,21 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 8. Anche se le classi **IWebHost** sono necessarie per implementare il metodo **Start** non bloccante, i progetti ASP.NET Core dispongono di un metodo di estensione denominato **Run** che esegue il wrapping di **Start** con codice bloccante, evitando così di dover impedire manualmente la chiusura immediata del metodo.
 
-    ![Screenshot del metodo Main C# che evidenzia l'istruzione host dot Run.](media/netcore-image17.png)
+    ![Screenshot del metodo Main C# che evidenzia l'host dell'istruzione dot Run.](media/netcore-image17.png)
 
 ## <a name="task-4-running-and-debugging-the-application"></a>Attività 4: Esecuzione e debug dell'applicazione
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto **CoreLab** e scegliere **Opzioni**.
 
-    ![Screenshot che mostra il menu di scelta rapida per la soluzione CoreLab, con le opzioni evidenziate.](media/netcore-image18.png)
+    ![Screenshot che mostra il menu di scelta rapida per la soluzione CoreLab, evidenziando Opzioni.](media/netcore-image18.png)
 
 2. La finestra di dialogo **Opzioni progetto** include tutto il necessario per regolare la modalità di compilazione ed esecuzione dell'applicazione. Selezionare il nodo **Esegui > Configurazioni > Predefinite** nel pannello di sinistra.
 
-3. Selezionare **Esegui in console esterna** e deselezionare **Sospendi output della console**. In genere l'applicazione self-hosted non ha la console visibile, ma registra i risultati nella **finestra Output.** Ai fini di questo lab, la console verrà visualizzata in una finestra separata, anche se questo non è necessario durante le normali attività di sviluppo.
+3. Selezionare **Esegui in console esterna** e deselezionare **Sospendi output della console**. In genere, l'applicazione self-hosted non avrebbe la console visibile, ma avrebbe invece registrare i risultati nella **finestra Output.** Ai fini di questo lab, la console verrà visualizzata in una finestra separata, anche se questo non è necessario durante le normali attività di sviluppo.
 
 4. Fare clic su **OK**.
 
-    ![Screenshot che mostra la scheda Generale della configurazione di esecuzione, con l'opzione Esegui nella console esterna selezionata e l'opzione Sospendi output console non selezionata.](media/netcore-image19.png)
+    ![Screenshot che mostra la scheda Run Configuration General (Esegui configurazione generale), con l'opzione Esegui nella console esterna selezionata e l'opzione Sospendi output console non selezionata.](media/netcore-image19.png)
 
 5. Premere **F5** per compilare ed eseguire l'applicazione. In alternativa, è possibile selezionare **Esegui > Avvia debug**.
 

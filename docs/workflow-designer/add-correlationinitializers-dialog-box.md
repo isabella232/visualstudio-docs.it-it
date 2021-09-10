@@ -14,15 +14,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 4085d8536c9d8f15e8928e010bb2744551a7747c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099308"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963211"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Finestra di dialogo Aggiungi inizializzatori di correlazione
 
-La **finestra di dialogo Aggiungi** inizializzatori di correlazione viene usata Progettazione flussi di lavoro per configurare le proprietà **CorrelationInitializers** delle attività , , e <xref:System.ServiceModel.Activities.Send> <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.ReceiveReply> . Per altre informazioni sugli ActivityDesigner che usano questa casella, vedere gli argomenti [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) .
+La **finestra di dialogo Aggiungi** inizializzatori di correlazione viene usata Progettazione flussi di lavoro per configurare le proprietà **CorrelationInitializers** delle <xref:System.ServiceModel.Activities.Send> attività , , e <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.ReceiveReply> . Per altre informazioni sugli ActivityDesigner che usano questa casella, vedere gli argomenti [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) .
 
 Gli inizializzatori di correlazione nella raccolta specificata con questa finestra di dialogo possono inizializzare le correlazioni seguenti tra le attività di messaggistica:
 

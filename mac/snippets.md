@@ -6,15 +6,15 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493452"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964709"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
-I frammenti di codice, a volte indicati come _modelli di codice_ , sono utili per una programmazione efficiente poiché consentono di inserire e modificare blocchi di testo scritti in precedenza. L'uso di frammenti di codice può essere comodo per aggiungere rapidamente modelli comuni o anche per apprendere nuovi modelli, nel caso lo sviluppatore non sia sicuro della sintassi. Sono disponibili modelli per C#, F#, HTML, XML, Python e Razor.
+I frammenti di codice, a volte indicati come _modelli di codice_, sono utili per una programmazione efficiente poiché consentono di inserire e modificare blocchi di testo scritti in precedenza. L'uso di frammenti di codice può essere comodo per aggiungere rapidamente modelli comuni o anche per apprendere nuovi modelli, nel caso lo sviluppatore non sia sicuro della sintassi. Sono disponibili modelli per C#, F#, HTML, XML, Python e Razor.
 
 Questa sezione illustra come creare, inserire e usare frammenti nel codice.
 
@@ -22,21 +22,21 @@ Questa sezione illustra come creare, inserire e usare frammenti nel codice.
 
 Vi sono diversi modi per aggiungere frammenti di codice, alcuni dei quali sono descritti di seguito:
 
-- **Espansione tramite TAB** &ndash; Iniziare a digitare il nome del modello, selezionarlo nell'elenco e quindi premere **TAB** , **TAB** per aggiungerlo:
+- **Espansione tramite TAB** &ndash; Iniziare a digitare il nome del modello, selezionarlo nell'elenco e quindi premere **TAB**, **TAB** per aggiungerlo:
 
   ![Espansione tramite TAB nel codice](media/source-editor-image13.png)
 
-- **Casella degli strumenti** &ndash; Utilizzare la finestra casella degli strumenti per visualizzare un elenco di tutti i frammenti di codice. Trascinare il modello desiderato dalla casella degli strumenti nella posizione corretta nel codice sorgente:
+- **Casella degli strumenti** &ndash; Usare la finestra Casella degli strumenti per visualizzare un elenco di tutti i frammenti di codice. Trascinare il modello desiderato dalla casella degli strumenti nella posizione corretta nel codice sorgente:
 
   [![Frammenti di codice nella casella degli strumenti](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Comando di inserimento modelli** &ndash; Attualmente non è presente un tasto di scelta rapida predefinito per inserire un modello. Per crearne uno, spostarsi su **Visual Studio > Preferenze > Tasti di scelta rapida** e cercare `template`. In questo modo è possibile aggiungere il tasto di scelta rapida desiderato nel campo Modifica tasto di scelta rapida e quindi fare clic su **Applica** :
+- **Comando di inserimento modelli** &ndash; Attualmente non è presente un tasto di scelta rapida predefinito per inserire un modello. Per crearne uno, spostarsi su **Visual Studio > Preferenze > Tasti di scelta rapida** e cercare `template`. In questo modo è possibile aggiungere il tasto di scelta rapida desiderato nel campo Modifica tasto di scelta rapida e quindi fare clic su **Applica**:
 
   ![Comando di inserimento modello](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Creazione di un nuovo modello
 
-Sebbene vi siano molti modelli esistenti in una vasta gamma di linguaggi che è possibile usare e modificare, è anche possibile aggiungere nuovi modelli da **Visual Studio > Preferenze > Editor di testo > Frammenti di codice** :
+Sebbene vi siano molti modelli esistenti in una vasta gamma di linguaggi che è possibile usare e modificare, è anche possibile aggiungere nuovi modelli da **Visual Studio > Preferenze > Editor di testo > Frammenti di codice**:
 
 ![Inserire un nuovo modello](media/source-editor-image12.png)
 
@@ -46,7 +46,7 @@ Premere i pulsanti **Aggiungi** o **Modifica** per creare o modificare frammenti
 
 Dopo aver inserito un frammento di codice nell'editor, tutte le parole chiave definite vengono evidenziate e possono essere modificate spostandosi tra di esse con TAB. Le parole chiave si comportano come una "variabile" nel frammento di codice e vengono definite aggiungendo un segno di dollaro `$` prima e dopo il nome della parola chiave. 
 
-La finestra **Modifica modello** è illustrata di seguito e rappresenta la modifica del frammento predefinito `prop`. Il frammento contiene due parole chiave &ndash; `$type$` e `$name$` &ndash; per le quali è possibile impostare altre proprietà, ad esempio un valore predefinito e una descrizione comando, sul lato destro della finestra:
+La finestra **Modifica modello** è illustrata di seguito e rappresenta la modifica del frammento predefinito `prop`. Il frammento contiene due parole chiave e può avere altre proprietà impostate (ad esempio un valore predefinito e una &ndash; `$type$` `$name$` &ndash; descrizione comando) sul lato destro della finestra:
 
 ![Finestra Modifica modello](media/source-editor-image12z.png)
 
@@ -82,10 +82,10 @@ Quando viene usato nell'editor, il tasto **TAB** consentirà di spostarsi tra il
 Sono disponibili due parole chiave riservate che è possibile usare in un frammento di codice:
 
 - `$selected$` &ndash; Se per il frammento di codice è selezionata l'opzione **Is surround with template** (Racchiudi tra con modello), questa parola chiave verrà sostituita dal testo che era evidenziato nell'editor quando è stato scelto il frammento di codice.
-- `$end$`&ndash;Quando l'utente ha terminato di modificare le parole chiave in un frammento, il cursore verrà posizionato nella posizione della `$end$` parola chiave.
+- `$end$`Quando l'utente ha terminato di modificare le parole chiave in un frammento di codice, il cursore verrà posizionato &ndash; nella posizione della parola `$end$` chiave.
 
 Il frammento di codice `for` nella sezione precedente è un esempio di entrambe queste parole chiave riservate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice (Visual Studio in Windows)](/visualstudio/ide/code-snippets)

@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: 0a334cde66d77af8867e3673773f6545fe5117a2b22ad4f387f82b00debb4bed
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df702b5d49e5204e65675c1c57d222e490a33824
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121349592"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964590"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 

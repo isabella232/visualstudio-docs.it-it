@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
-ms.openlocfilehash: 8fcbde4a94c8df2dd1559128fa7495e6011a11ff24feb31f1531ccb3e782cdc2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 01f3cac1ac985f79e576e709b030c881a07a801d
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121407173"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964287"
 ---
 # <a name="install-a-preview-version-of-visual-studio-for-mac"></a>Installare una versione di anteprima di Visual Studio per Mac
 

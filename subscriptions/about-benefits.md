@@ -1,5 +1,5 @@
 ---
-title: Comprendere i vantaggi delle sottoscrizioni di Visual Studio | Microsoft Docs
+title: Informazioni sui vantaggi Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -8,22 +8,22 @@ ms.date: 03/19/2021
 ms.topic: how-to
 description: Informazioni sui vantaggi inclusi nelle sottoscrizioni e su come attivarli.
 ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757633"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965476"
 ---
-# <a name="about-your-subscription-benefits"></a>Vantaggi della sottoscrizione
-I sottoscrittori di Visual Studio possono accedere a diversi vantaggi a seconda del livello di abbonamento. Esistono diversi aspetti importanti da considerare sui vantaggi.
+# <a name="about-your-subscription-benefits"></a>Informazioni sui vantaggi della sottoscrizione
+Come sottoscrittore Visual Studio, è possibile accedere a un'ampia gamma di vantaggi a seconda del livello di sottoscrizione. Esistono diversi aspetti importanti da notare sui vantaggi.
 
 ## <a name="benefits-that-vary-based-on-your-subscription"></a>Vantaggi che variano in base alla sottoscrizione 
-I vantaggi inclusi nella sottoscrizione variano in base al tipo di sottoscrizione disponibile. Per scoprire quali vantaggi sono inclusi in diverse sottoscrizioni, visita la [pagina relativa ai vantaggi della sottoscrizione di Visual Studio](https://visualstudio.microsoft.com/vs/benefits/). Puoi filtrare la visualizzazione in base al livello di sottoscrizione e alla categoria dei vantaggi per ottenere le informazioni specifiche che ti servono. 
+I vantaggi inclusi nella sottoscrizione variano in base al tipo di sottoscrizione. Per vedere quali vantaggi sono inclusi in varie sottoscrizioni, visitare la pagina dei [Visual Studio vantaggi della sottoscrizione.](https://visualstudio.microsoft.com/vs/benefits/) È possibile filtrare la visualizzazione in base al livello di sottoscrizione e alla categoria di benefit per ottenere le informazioni specifiche necessarie. 
 
-È anche possibile usare gli articoli di questo sito per determinare se un vantaggio specifico è incluso nella sottoscrizione. Ogni articolo che copre un vantaggio include una sezione di idoneità che mostra le sottoscrizioni che lo includono.
+È anche possibile usare gli articoli in questo sito per determinare se un vantaggio specifico è incluso nella sottoscrizione. Ogni articolo che illustra un vantaggio include una sezione "Idoneità" che mostra le sottoscrizioni che lo includono.
 
 ## <a name="use-categories-to-help-find-benefits"></a>Usare le categorie per trovare i vantaggi
-Per semplificare l'individuazione dei vantaggi più interessanti, sono stati raggruppati in tre categorie: 
+Per semplificare l'individuazione dei vantaggi più interessati, sono stati raggruppati in tre categorie: 
 - Strumenti
 - Sviluppo professionale
 - Supporto
@@ -34,24 +34,24 @@ Per impostazione predefinita, tutti i vantaggi vengono visualizzati quando si vi
    > ![Filtrare l'elenco dei vantaggi per categoria](_img/about-benefits/categories.png "Scegliere una categoria per filtrare l'elenco dei vantaggi disponibili.")
 
 ## <a name="benefits-and-offers-provided-by-partners"></a>Vantaggi e offerte offerti dai partner
-Alcuni dei vantaggi offerti con le sottoscrizioni di Visual Studio, inclusi alcuni vantaggi più diffusi, come formazione e strumenti, sono forniti dai partner. I dettagli di tali offerte sono determinati dai partner. Ad esempio:
-- La durata del vantaggio potrebbe non corrispondere alla durata della sottoscrizione di Visual Studio. Ad esempio, è possibile che si disponga di una sottoscrizione di Visual Studio di 12 mesi, mentre molti dei vantaggi offerti dai partner possono durare per un periodo di tempo più breve, ad esempio tre o sei mesi.
-- Qualsiasi supporto disponibile per questi vantaggi o offerte viene fornito anche dai partner.
-- Alcuni vantaggi si rinnovano al rinnovo della sottoscrizione di Visual Studio. In altri casi, l'offerta del partner è "una volta in una durata" e non viene rinnovata. Per ulteriori informazioni sui singoli vantaggi, consultare l'articolo corrispondente nel sommario.
-- I partner possono scegliere di sospendere le offerte. 
+Alcuni dei vantaggi inclusi nelle sottoscrizioni Visual Studio, tra cui alcuni vantaggi diffusi come il training e gli strumenti, sono offerti dai partner. I dettagli di tali offerte sono determinati dai partner. Ad esempio:
+- La durata del vantaggio potrebbe non corrispondere alla durata della sottoscrizione Visual Studio sottoscrizione. Ad esempio, è possibile avere una sottoscrizione Visual Studio di 12 mesi, mentre molti dei vantaggi offerti dai partner possono durare per un periodo più breve, ad esempio tre o sei mesi.
+- Qualsiasi supporto disponibile per tali vantaggi o offerte viene fornito anche dai partner.
+- Alcuni vantaggi vengono rinnovati quando viene rinnovata Visual Studio sottoscrizione. In altri casi, l'offerta partner è "una volta nella vita" e non viene rinnovata. Per altre informazioni sui singoli vantaggi, vedere l'articolo corrispondente nel sommario.
+- I partner possono scegliere di interrompere le offerte. 
 
 ## <a name="benefits-that-become-temporarily-unavailable"></a>Vantaggi che diventano temporaneamente non disponibili
-Sebbene sia raro, a volte i problemi tecnici possono rendere non disponibile un vantaggio per un breve periodo di tempo. In questi casi, si modificherà il riquadro del vantaggio nel [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/benefits) per indicare che il vantaggio è "temporaneamente non disponibile" fino a quando il problema non viene risolto, a quel punto il riquadro verrà ripristinato e il vantaggio sarà nuovamente disponibile.
+Anche se è raro, a volte i problemi tecnici possono rendere un vantaggio non disponibile per un breve periodo di tempo. In questi casi, il riquadro del vantaggio verrà modificato nel portale [di Sottoscrizioni di Visual Studio per](https://my.visualstudio.com/benefits) indicare che il vantaggio è "Temporaneamente non disponibile" fino a quando il problema non viene risolto e il riquadro verrà ripristinato e il vantaggio sarà nuovamente disponibile.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://aka.ms/vssubscriberhelp).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- Se si sta pensando di acquistare una sottoscrizione, consultare la pagina dei prezzi per un elenco dettagliato dei vantaggi inclusi in ogni sottoscrizione. È anche possibile usare la [pagina dei vantaggi della sottoscrizione di Visual Studio](https://visualstudio.microsoft.com/vs/benefits/) per visualizzare informazioni più dettagliate.
-- Si dispone già di una sottoscrizione?  Consultare gli articoli della documentazione per ogni vantaggio per visualizzare le informazioni fornite, su come attivarlo e su come ottenere assistenza se si verificano problemi. 
+- Se si sta pensando di acquistare una sottoscrizione, vedere la pagina dei prezzi per un elenco dettagliato dei vantaggi inclusi in ogni sottoscrizione. È anche possibile usare la [pagina Visual Studio vantaggi della sottoscrizione per](https://visualstudio.microsoft.com/vs/benefits/) visualizzare informazioni più dettagliate.
+- È già presente una sottoscrizione?  Vedere gli articoli nella documentazione per ogni vantaggio per vedere cosa viene fornito, come attivarlo e come ottenere assistenza in caso di problemi. 

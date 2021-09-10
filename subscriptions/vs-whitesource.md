@@ -7,12 +7,12 @@ ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
 ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: e09c1a17625f2151b0a0cead8d69d06460cd4b970a65b697dc8c96222e5caae9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: def7e206fee75dcc76212df2163e41a8b1a96a83
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364221"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965816"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
@@ -43,9 +43,9 @@ ms.locfileid: "121364221"
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1 selezionato</sup> | 6 mesi       |  Sì       |
-| Visual Studio Enterprise sottoscrizione con GitHub Enterprise | Vl | 6 mesi       |  Sì       |
+| Visual Studio Enterprise sottoscrizione con GitHub Enterprise | VL | 6 mesi       |  Sì       |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
-| Visual Studio Professional sottoscrizione con GitHub Enterprise | Vl                                      | Non disponibile                                                           |N/D         |
+| Visual Studio Professional sottoscrizione con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|

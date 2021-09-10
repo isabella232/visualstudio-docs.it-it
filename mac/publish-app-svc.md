@@ -13,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 89ef1be831db8383a960d480ac8dceffa7e8f1460708c37e4764d9533876c2d9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121349412"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964323"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Pubblicare un'app Web in Servizio app di Azure usando Visual Studio per Mac
 
@@ -32,7 +32,7 @@ ms.locfileid: "121349412"
 
 ## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 
- 1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
+ 1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica.**
 
     ![Menu di scelta rapida per la pubblicazione](media/publish-context-menu.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Uso del portale sottoscrittore nelle Visual Studio sottoscrizione| Microsoft Docs
+title: Uso del portale sottoscrittore Visual Studio sottoscrizioni| Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,16 +7,16 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 02/19/2021
 ms.topic: overview
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: e5e3033c6fbc30627086f1ab04aa702d26b69f4deb24a97b1f3e9ef47ee8234c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121421473"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965660"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
-Il Sottoscrizioni di Visual Studio, , è la risorsa all-in-one per sfruttare l'intera gamma di vantaggi offerti tramite la sottoscrizione [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) Visual Studio sottoscrizione.
+Il Sottoscrizioni di Visual Studio portal, , è la risorsa all-in-one per sfruttare l'intera gamma di vantaggi offerti tramite la sottoscrizione [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) Visual Studio aziendale.
 
 Per usare il portale, è necessario accedere con l'identità associata alla sottoscrizione.  Può trattarsi dell'account Microsoft o di un indirizzo di posta elettronica fornito da un'organizzazione, ad esempio il datore di lavoro o l'istituto di istruzione.  Informazioni sull'[accesso](./index.yml).
 

@@ -6,16 +6,16 @@ manager: cabuschl
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono specificare il GUID della sottoscrizione per i sottoscrittori
-ms.openlocfilehash: db8373f6b0b8da9b6586c18a8d1fe0dd8c5515335375b4c73f84c839139044ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121421571"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965484"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare sottoscrizioni specifiche nel portale Sottoscrizioni di Visual Studio administration
 
-Gli amministratori possono ora usare il Sottoscrizioni di Visual Studio di amministrazione per assegnare sottoscrizioni specifiche ai singoli sottoscrittori.  Ciò può essere utile in situazioni in cui l'organizzazione dispone di personale temporaneo o fornitori che necessitano dell'accesso a una sottoscrizione per un breve periodo di tempo.  Gli amministratori possono assegnare una sottoscrizione che è già stata usata parzialmente, lasciando le nuove sottoscrizioni per un uso a lungo termine.  
+Gli amministratori possono ora usare il Sottoscrizioni di Visual Studio di amministrazione per assegnare sottoscrizioni specifiche ai singoli sottoscrittori.  Ciò può essere utile nelle situazioni in cui l'organizzazione dispone di personale temporaneo o fornitori che devono accedere a una sottoscrizione per un breve periodo di tempo.  Gli amministratori possono assegnare una sottoscrizione che è già stata usata parzialmente, lasciando le nuove sottoscrizioni per un uso a lungo termine.  
 
 Guardare il video o leggere per informazioni su come assegnare GUID di sottoscrizioni specifiche agli utenti. 
 
@@ -53,7 +53,7 @@ Il passaggio finale consiste nel scaricare **il** modello di aggiunta in blocco,
 > Per assicurarsi che il caricamento sia stato completato correttamente, verificare che:
 > - Si sta usando il modello collegato nella finestra di dialogo quando si seleziona **Aggiungi in blocco**.  Non usare una copia archiviata in locale del modello, perché potrebbe non contenere tutti i campi obbligatori.  L'uso di un modello precedente causerà l'esito negativo del caricamento. 
 > - Tutti i campi visualizzati come **Obbligatorio** nel modello sono completi.
-> - Nella colonna Messaggio di errore non sono **elencati** errori.
+> - Nella colonna Messaggio di errore non **sono elencati** errori.
 > - Ogni GUID viene usato una sola volta nel modello. 
 > - Il livello di sottoscrizione nel modello corrisponde alla sottoscrizione del GUID nell'elenco esportato. 
 > - Il GUID non è già assegnato a un altro utente nell'elenco esportato. 

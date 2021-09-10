@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
 ms.topic: how-to
-ms.openlocfilehash: e03a4271ee81213ac387b58603acdb5053a50a524a741a4c60b50990ce0cd2f1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6796ab12716d1d2f3ec2570c32b410c8360b8a81
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121349997"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964251"
 ---
 # <a name="accessibility-features-of-macos"></a>Funzionalità di accessibilità di macOS
 

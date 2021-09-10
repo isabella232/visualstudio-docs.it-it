@@ -7,19 +7,19 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.openlocfilehash: 25a4597c8d523b63e7ceb0cf8b5eff71af58071a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800411"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964460"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
 
 Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un server proxy, è possibile che vi siano domini da aggiungere a un elenco di indirizzi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio per Mac e dei servizi di Azure.
 
-- [**Installare Visual Studio per Mac**](#install-visual-studio-for-mac): queste tabelle includono i domini che devono consentire la connettività, in modo da poter accedere a tutte le funzionalità e i carichi di lavoro di Visual Studio per Mac.
+- [**Install Visual Studio per Mac**](#install-visual-studio-for-mac): queste tabelle includono i domini che devono consentire la connettività in modo da poter accedere a tutte le funzionalità e i carichi di lavoro Visual Studio per Mac.
 
-- [**Usare Visual Studio per Mac**](#use-visual-studio-for-mac): queste tabelle includono domini che devono consentire la connettività, in modo da poter accedere alle funzionalità correlate.
+- [**Usare Visual Studio per Mac**](#use-visual-studio-for-mac): queste tabelle includono i domini che devono consentire la connettività in modo da poter accedere alle funzionalità correlate.
 
 ## <a name="install-visual-studio-for-mac"></a>Installare Visual Studio per Mac
 
@@ -89,7 +89,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 | connectivitycheck.gstatic.com | Connettività per l'emulatore Android|
 | cloudconfig.googleapis.com| API per l'emulatore Android|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Risolvere problemi simili in Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

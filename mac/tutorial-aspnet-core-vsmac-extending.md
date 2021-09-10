@@ -7,16 +7,16 @@ ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.topic: tutorial
-ms.openlocfilehash: a49ac7de11c51ad69221cea0cc8218e026c1e4132e97984530269d978dcb813f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d2813f70a497df9057f312f561504639b4e1afcd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121349263"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964662"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>Esercitazione: Estensione di un'applicazione Web ASP.NET Core esistente
 
-In queste esercitazioni verrà utilizzata l'app di riferimento [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb). Ogni passaggio è costituito da un video e da un documento dell'esercitazione.
+In queste esercitazioni verrà utilizzata l'app di riferimento [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb). Ogni passaggio è costituito da un video e da un documento di esercitazione.
 
 ## <a name="step-1-getting-started-with-eshoponweb"></a>Passaggio 1: Introduzione a eShopOnWeb
 
@@ -34,9 +34,9 @@ Si apprenderà come usare la soluzione eShopOnWeb in Visual Studio per Mac.
 
 > [!VIDEO https://www.youtube.com/embed/PXTJCzCwvE4]
 
-## <a name="step-3-adding-docker-and-running-it-locally"></a>Passaggio 3: Aggiunta di Docker ed esecuzione locale
+## <a name="step-3-adding-docker-and-running-it-locally"></a>Passaggio 3: Aggiunta di Docker ed esecuzione in locale
 
-Si apprenderà come aggiungere contenitori Docker all'applicazione eShopOnWeb e come eseguire ed eseguire il debug dell'applicazione dockerized.
+Si apprenderà come aggiungere contenitori Docker all'applicazione eShopOnWeb e come eseguire l'applicazione dockerizzata ed eseguirne il debug.
 
 [Procedura dettagliata](https://github.com/dotnet-architecture/eShopOnWeb/wiki/03b.-Running-Locally-on-a-Linux-Container-from-Visual-Studio-for-Mac)
 
@@ -44,7 +44,7 @@ Si apprenderà come aggiungere contenitori Docker all'applicazione eShopOnWeb e 
 
 ## <a name="step-4-deploying-to-azure-app-services"></a>Passaggio 4: Distribuzione in app Azure Services
 
-Si apprenderà come distribuire l'applicazione eShopOnWeb [app Azure Services](https://azure.microsoft.com/services/app-service/).
+Si apprenderà come distribuire l'applicazione eShopOnWeb [in app Azure Services.](https://azure.microsoft.com/services/app-service/)
 
 [Procedura dettagliata](https://github.com/dotnet-architecture/eShopOnWeb/wiki/01b.-Deploying-to-Azure-App-Service-from-Visual-Studio-for-Mac)
 

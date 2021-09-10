@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: f655a80fd25d7cf8e1f9fefdf329f62319cbc842
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130364"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963681"
 ---
 # <a name="workflow-designer-shell-features"></a>Caratteristiche della shell di Progettazione flussi di lavoro
 
@@ -31,7 +31,7 @@ Progettazione flussi di lavoro è costituito da tre aree principali dell'interfa
  Nella carta panoramica viene visualizzata una versione ridotta dell'intera attività alla radice della barra di navigazione corrente, inclusi tutti i relativi figli e figli espansi. Un riquadro di visualizzazione, ovvero un rettangolo con un bordo arancione, evidenzia la parte dell'attività attualmente visualizzata nell'editor. Trascinando il rettangolo attorno alla carta panoramica è possibile scorrere la finestra di progettazione del flusso di lavoro e modificare la visualizzazione dell'editor.
 
 > [!NOTE]
-> L Progettazione flussi di lavoro'interfaccia utente è virtualizzata. Gli ActivityDesigner sono sottoposti a rendering solo se necessario. Se una parte del flusso di lavoro non è stata mai disegnata nell'area della finestra di progettazione, viene visualizzata come bianca sulla carta panoramica. Il flusso di lavoro viene disegnato scorrendo su tutta la carta panoramica.
+> La Progettazione flussi di lavoro utente è virtualizzata. Gli ActivityDesigner sono sottoposti a rendering solo se necessario. Se una parte del flusso di lavoro non è stata mai disegnata nell'area della finestra di progettazione, viene visualizzata come bianca sulla carta panoramica. Il flusso di lavoro viene disegnato scorrendo su tutta la carta panoramica.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Copia o salvataggio dei flussi di lavoro come immagini
  I flussi di lavoro possono essere copiati in formato bitmap o salvati in formato bitmap o vettoriale. La copia o il salvataggio di un'immagine consente di esportare in un altro programma una visualizzazione dell'intera attività alla radice della barra di navigazione corrente, inclusi tutti i relativi figli e figli espansi.
@@ -40,4 +40,4 @@ Progettazione flussi di lavoro è costituito da tre aree principali dell'interfa
 
 ## <a name="fonts-and-colors"></a>Tipi di carattere e colori
 
-I tipi di carattere usati in Progettazione flussi di lavoro all'interno Visual Studio sono controllati dal tipo di carattere dell'ambiente. I colori visualizzati in Progettazione flussi di lavoro cambiano se si usa una combinazione di colori a contrasto elevato per il tema del sistema operativo. È necessario riavviare Visual Studio dopo aver apportato una modifica alle impostazioni del tipo di carattere o del colore prima che le modifiche appartino Progettazione flussi di lavoro.
+I tipi di carattere usati in Progettazione flussi di lavoro all'interno Visual Studio sono controllati dal tipo di carattere dell'ambiente. I colori visualizzati in Progettazione flussi di lavoro cambiano se si usa una combinazione di colori a contrasto elevato per il tema del sistema operativo. È necessario riavviare Visual Studio dopo aver apportato una modifica alle impostazioni del tipo di carattere o del colore prima che le modifiche Progettazione flussi di lavoro.

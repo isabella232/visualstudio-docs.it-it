@@ -6,16 +6,16 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: 75e96e4132427cecce6d9b0293535df1e87e5c79be10ae4a36c417abb6edee66
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1da1fc5145e5fd4a2f271b30ac42204c2aa611e5
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121438535"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964275"
 ---
 # <a name="accessibility"></a>Accessibilità
 
-Sono disponibili diversi strumenti e funzionalità di accessibilità incorporati direttamente in macOS per facilitare l'uso di Visual Studio per Mac.  Oltre a queste, Visual Studio per Mac include anche le funzionalità seguenti per renderlo più accessibile per persone con diverse capacità:
+Sono disponibili diversi strumenti e funzionalità di accessibilità incorporati direttamente in macOS per facilitare l'uso di Visual Studio per Mac.  Oltre a queste, Visual Studio per Mac offre anche le funzionalità seguenti per renderlo più accessibile per persone con diverse capacità:
 
 * Ingrandimento del testo dell'editor
 * Ingrandimento del testo della finestra degli strumenti
@@ -24,7 +24,7 @@ Sono disponibili diversi strumenti e funzionalità di accessibilità incorporati
 * Spostamento tramite tastiera
 
 > [!NOTE]
-> Questa guida si riferisce Visual Studio per Mac. Per Visual Studio su Windows, vedere Funzionalità di accessibilità [di Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio).
+> Questa guida si riferisce Visual Studio per Mac. Per Visual Studio su Windows, vedere [Funzionalità di](/visualstudio/ide/reference/accessibility-features-of-visual-studio)accessibilità di Visual Studio .
 
 Per altre informazioni, vedere i seguenti argomenti:
 

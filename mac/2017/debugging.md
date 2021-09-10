@@ -8,11 +8,11 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
 ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938790"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961867"
 ---
 # <a name="debugging-with-xamarin"></a>Debug con Xamarin
 
@@ -38,7 +38,7 @@ Per impostare un punto di interruzione nell'IDE, fare clic sull'area del margine
 
 ![Impostazione di un punto di interruzione nel margine](media/debugging-image0.png)
 
-È possibile visualizzare tutti i punti di interruzione impostati nel codice passando al riquadro punti di  **interruzione**:
+È possibile visualizzare tutti i punti di interruzione impostati nel codice selezionando il blocco Punti  **di interruzione**:
 
 ![Elenco dei punti di interruzione](media/debugging-image0a.png)
 
@@ -81,9 +81,9 @@ Quando viene raggiunto un punto di interruzione, lo strumento di debug permette 
 Ecco i quattro pulsanti:
 
 * **Esegui**: avvia l'esecuzione del codice, fino al punto di interruzione successivo.
-* Esegui **istruzione** /routine: verrà eseguita la riga di codice successiva. Se la riga successiva è una chiamata di funzione, Esegui istruzione/routine eseguirà la funzione e si arresterà alla successiva riga di codice *dopo* la funzione.
-* Esegui **istruzione** : verrà eseguita anche la riga di codice successiva. Se la riga successiva è una chiamata di funzione, il pulsante si ferma alla prima riga della funzione, permettendo di continuare a eseguire il debug della funzione riga per riga. Se la riga successiva non è una funzione, il pulsante si comporta come il pulsante Esegui istruzione/routine.
-* Esci da **istruzione** /output: verrà restituito alla riga in cui è stata chiamata la funzione corrente.
+* **Esegui istruzione/indietro:** verrà eseguita la riga di codice successiva. Se la riga successiva è una chiamata di funzione, eseguirà la funzione e si arresterà alla riga di codice successiva *dopo* la funzione.
+* **Esegui istruzione:** verrà eseguita anche la riga di codice successiva. Se la riga successiva è una chiamata di funzione, il pulsante si ferma alla prima riga della funzione, permettendo di continuare a eseguire il debug della funzione riga per riga. Se la riga successiva non è una funzione, il pulsante si comporta come il pulsante Esegui istruzione/routine.
+* **Uscire da** istruzione/uscita: verrà restituita la riga in cui è stata chiamata la funzione corrente.
 
 ## <a name="debugging-monos-class-libraries"></a>Debug di librerie di classi di Mono
 
@@ -95,6 +95,6 @@ Per abilitare questa funzionalità, passare a **Visual Studio per Mac > Preferen
 
 ![Opzione Esegui solo il debug del codice del progetto senza eseguire l'istruzione nel codice del framework](media/debugging-image8.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug in Visual Studio (in Windows)](/visualstudio/debugger/)

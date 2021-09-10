@@ -20,11 +20,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: d470de397cc67b96e2e75b9d6cdd637b4958bd8c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082582"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963355"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Sviluppare app con Progettazione flussi di lavoro
 

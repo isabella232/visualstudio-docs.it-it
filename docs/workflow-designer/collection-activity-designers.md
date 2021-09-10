@@ -1,6 +1,6 @@
 ---
-title: Progettazione flussi di lavoro - ActivityDesigner di raccolta
-description: Informazioni su come usare gli ActivityDesigner della raccolta per creare e configurare le attività usate per gestire le raccolte.
+title: Progettazione flussi di lavoro - ActivityDesigner Collection
+description: Informazioni su come usare gli ActivityDesigner Collection per creare e configurare le attività usate per gestire le raccolte.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 46ed9eecee1a2cec83fbcdef73937dcc0eb1f85d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082556"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963175"
 ---
 # <a name="collection-activity-designers"></a>ActivityDesigner Raccolta
 
-Gli ActivityDesigner della raccolta vengono usati per creare e configurare le attività usate per gestire le raccolte. Gli argomenti contenuti in questa sezione e elencati nella tabella seguente forniscono indicazioni su come usare Progettazione flussi di lavoroattività e finestre di progettazione modelli.
+Gli ActivityDesigner Collection vengono usati per creare e configurare le attività usate per gestire le raccolte Gli argomenti contenuti in questa sezione e elencati nella tabella seguente forniscono indicazioni su come usare Progettazione flussi di lavoroactivity e le finestre di progettazione modelli.

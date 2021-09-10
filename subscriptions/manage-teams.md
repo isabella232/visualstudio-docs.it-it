@@ -7,15 +7,15 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori di gestire le sottoscrizioni per team di grandi dimensioni e terzisti esterni.
-ms.openlocfilehash: c81e05517758cad6a918aabe1933d5d8c6e53a86a8e2df0a2992f362d850f5e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b54dc7a6a90556e73e1bebdd918435e9ce56a596
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121241562"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965559"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
-Visual Studio gli amministratori delle sottoscrizioni sono responsabili di garantire che ogni utente che interagisce con il software con licenza Visual Studio sia concesso in licenza in modo appropriato con la propria sottoscrizione Visual Studio sottoscrizione.
+Visual Studio gli amministratori delle sottoscrizioni sono responsabili di garantire che ogni utente che interagisce con un software con licenza Visual Studio sia concesso in licenza in modo appropriato con la propria sottoscrizione Visual Studio licenza.
 
 ## <a name="internal-teams"></a>Team interni
 In genere, le organizzazioni moderne che si occupano di sviluppo software includono stakeholder da più gruppi. Identificare i contatti per ogni gruppo che possono collaborare al monitoraggio dell'inventario degli utenti e delle relative modifiche.
@@ -41,7 +41,7 @@ I collaboratori esterni possono disporre di licenze per interagire con l'ambient
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Altre informazioni sulle responsabilità degli amministratori:
+Altre informazioni sulle responsabilità per gli amministratori:
 - [Responsabilità dell'amministratore](admin-responsibilities.md)
 - [Inventario dell'ambiente di preproduzione](admin-inventory.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)

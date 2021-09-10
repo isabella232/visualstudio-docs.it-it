@@ -1,5 +1,5 @@
 ---
-title: Accedere alle sottoscrizioni di Visual Studio con un account Microsoft | Microsoft Docs
+title: Accedere a Sottoscrizioni di Visual Studio con un account Microsoft | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -8,11 +8,11 @@ ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come accedere alla sottoscrizione di Visual Studio con l'account Microsoft (MSA)
 ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607158"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965639"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Accesso alle sottoscrizioni di Visual Studio con l'account Microsoft (MSA)
 
@@ -32,22 +32,22 @@ Questo articolo illustra la procedura per l'accesso con l'account Microsoft (MSA
 5. A questo punto, dovrebbe essere visualizzata la pagina "Vantaggi".
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--im-unable-to-sign-in-using-my-msa"></a>D: non è possibile accedere con il servizio MSA.  
-R: la ragione più comune dei problemi di accesso è il tentativo di accedere con un account del servizio gestito diverso da quello associato alla sottoscrizione.  Se si usano diversi indirizzi di posta elettronica, è possibile che si stia tentando di accedere con l'indirizzo errato.  Provare ad accedere con un altro indirizzo.  In caso di esito negativo, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
+### <a name="q--im-unable-to-sign-in-using-my-msa"></a>D: Non è possibile accedere usando l'msa.  
+A: La causa più comune dei problemi di accesso è il tentativo di accedere con un account del servizio msa diverso da quello associato alla sottoscrizione.  Se si usano diversi indirizzi di posta elettronica, è possibile che si stia tentando di accedere con l'indirizzo errato.  Provare ad accedere con un altro indirizzo.  In caso di esito negativo, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
 
-### <a name="q--i-cant-see-my-subscription-where-is-it"></a>D: non è possibile visualizzare la sottoscrizione. Dove sono?
-R: molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al portale delle sottoscrizioni all'indirizzo https://my.visualstudio.com ma non è possibile visualizzare la propria sottoscrizione, il problema può essere dovuto a due cause comuni:
+### <a name="q--i-cant-see-my-subscription-where-is-it"></a>D: Non è possibile visualizzare la sottoscrizione. Dove sono?
+A: Molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al portale delle sottoscrizioni all'indirizzo https://my.visualstudio.com ma non è possibile visualizzare la propria sottoscrizione, il problema può essere dovuto a due cause comuni:
 - L'accesso è stato eseguito con un account Microsoft diverso.  È possibile che si abbiano più sottoscrizioni, ad esempio una sottoscrizione Professional o Enterprise e si sia membri di Visual Studio Dev Essentials, e che le sottoscrizioni siano associate a indirizzi di posta elettronica diversi. Per visualizzare le altre sottoscrizioni, disconnettersi ed eseguire di nuovo l'accesso usando un altro account Microsoft (MSA).
 - Si hanno più sottoscrizioni associate allo stesso account Microsoft (MSA).  Per visualizzare tutte le sottoscrizioni associate al proprio account Microsoft (MSA), visitare https://my.visualstudio.com/subscriptions e scegliere la sottoscrizione che si vuole usare. 
 
 ## <a name="resources"></a>Risorse 
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, vedere [supporto delle sottoscrizioni](https://aka.ms/vssubscriberhelp)di Visual Studio.
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
-- [Documentazione di Visual Studio](/visualstudio/)
+- [Visual Studio documentazione](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
-- [Documentazione di Microsoft 365](/microsoft-365/)
+- [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina relativa ai vantaggi https://my.visualstudio.com/benefits ed esplorare gli eccezionali strumenti, servizi e offerte disponibili.
+Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina Vantaggi in ed esplorare gli strumenti, i servizi e le offerte https://my.visualstudio.com/benefits disponibili.

@@ -7,11 +7,11 @@ ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: overview
 ms.openlocfilehash: 41b26eb75454299aed86a3cdb3905d6c66efb098
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473348"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964474"
 ---
 # <a name="xamarin-mobile-app-development"></a>Sviluppo di app per dispositivi mobili Xamarin
 
@@ -19,11 +19,11 @@ Grazie a un eccellente supporto per [Xamarin](/xamarin) è possibile sviluppare 
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-Il ricaricamento a caldo di XAML per Novell. Forms è integrato in Visual Studio per Mac nella versione 8,3 e successive. Con questa funzionalità le modifiche abilitate vengono immediatamente riflesse nell'app in esecuzione ogni volta che si salva il file.
+Ricaricamento rapido XAML per Xamarin.Forms è integrato in Visual Studio per Mac versione 8.3 e successive. Con questa funzionalità abilitata, le modifiche vengono riflesse immediatamente nell'app in esecuzione ogni volta che si salva il file.
 
-È possibile abilitare il ricaricamento a caldo di XAML selezionando la casella di controllo **Abilita ricaricamento a caldo di Novell** in **Visual Studio > preferenze > progetti > ricaricamento a caldo di Novell**.
+Ricaricamento rapido XAML abilitata selezionando la casella di controllo Enable Xamarin Ricaricamento rapido (Abilita **Xamarin Ricaricamento rapido)** in Visual Studio > **Preferences > Projects > Xamarin Ricaricamento rapido**.
 
-Per ulteriori informazioni sul ricaricamento a caldo, vedere la guida relativa al [ricaricamento a caldo di XAML per Novell. Forms](/xamarin/xamarin-forms/xaml/hot-reload) nella documentazione di.
+Per altre informazioni sui Ricaricamento rapido, vedere la guida [Ricaricamento rapido XAML per Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload) all'interno della documentazione.
 
 ## <a name="android"></a>Android
 

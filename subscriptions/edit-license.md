@@ -6,13 +6,13 @@ manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/21/2021
 ms.topic: how-to
-description: Informazioni su come gli amministratori possono modificare le assegnazioni di sottoscrizione.
-ms.openlocfilehash: 0a732737e129374433754890928141b6b3c81c57aa87764b4af17e996af39726
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+description: Informazioni su come gli amministratori possono modificare le assegnazioni delle sottoscrizioni.
+ms.openlocfilehash: b1779b80cc295e680ff1856181be42a6390fe25b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364599"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965511"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
 L'amministratore della sottoscrizione può apportare modifiche alle sottoscrizioni assegnate a singoli utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
@@ -41,11 +41,11 @@ Guardare questo video o leggere per informazioni su come modificare più sottosc
 > [!NOTE]
 > Non modificare i GUID della sottoscrizione nel modello. Vedere l'articolo [sull'assegnazione di GUID di sottoscrizione specifici.](assign-guid.md)
 
-1. Per modificare più sottoscrittori contemporaneamente, passare alla scheda Sottoscrittori. Nella barra multifunzione nella parte superiore fare clic su **Modifica in blocco**.
+1. Per modificare più sottoscrittori contemporaneamente, passare alla scheda Sottoscrittori . Nella barra multifunzione in alto fare clic su **Modifica in blocco.**
 
 2. La procedura di Modifiche di massa usa un modello di Excel per apportare modifiche a informazioni relative al sottoscrittore. Nella casella Modifiche di massa, fare clic su **Esporta in Excel** per scaricare l'elenco corrente di sottoscrittori, incluse tutte le relative informazioni.
    > [!div class="mx-imgBorder"]
-   > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png "Fare clic su Esporta excel per creare un elenco delle sottoscrizioni correnti.")
+   > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png "Fare clic su Esporta questo excel per creare un elenco delle sottoscrizioni correnti.")
 
 3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. 
 

@@ -7,12 +7,12 @@ ms.date: 12/14/2020
 ms.technology: vs-ide-general
 ms.assetid: 5DA76197-7859-421f-AC45-401F22F5D794
 ms.topic: troubleshooting
-ms.openlocfilehash: 921d61da140baa5b4dc36b79de18b0c260b1dd733e0b3089b0a4ff38f300f7ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 862ae404571da44d9ca28db2c94d2ebeb39ce79f
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121381581"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964566"
 ---
 # <a name="troubleshooting-how-do-i-release-a-new-version-of-my-existing-extension"></a>Risoluzione dei problemi: Come rilasciare una nuova versione dell'estensione esistente?
 
@@ -22,8 +22,8 @@ ms.locfileid: "121381581"
 Il Visual Studio per Mac repository delle estensioni verrà spostata il 15 gennaio 2021. Questo spostamento non inciderà sugli utenti che hanno già scaricato l'estensione, ma modificherà la modalità di pubblicazione delle nuove versioni dell'estensione dopo questa data.
 
 In quanto autore di un'estensione esistente, è necessario seguire un flusso di lavoro diverso per rilasciare altri aggiornamenti. Questo processo è costituito da:
-- Configurazione di un repository GitHub pubblico per ogni estensione
-- Condivisione dell'URL del repository con il team Visual Studio per Mac tramite la lista di distribuzione di pubblicazione [dell'estensione](mailto:vsmextpub@microsoft.com)
+- Configurazione di un repository di GitHub pubblico per ogni estensione
+- Condivisione dell'URL del repository con il team Visual Studio per Mac tramite la lista di distribuzione di [pubblicazione dell'estensione](mailto:vsmextpub@microsoft.com)
 - Aggiornamento dell'estensione tramite la funzionalità versioni in GitHub
 
 
@@ -37,7 +37,7 @@ Per continuare a pubblicare gli aggiornamenti per le estensioni, è necessario c
 
 ## <a name="share-the-location-of-your-repository"></a>Condividere il percorso del repository
 
-Dopo aver configurato il repository, inviare un messaggio di posta elettronica alla lista di distribuzione di pubblicazione [dell'estensione](mailto:vsmextpub@microsoft.com) con l'URL.
+Dopo aver configurato il repository, inviare un messaggio di posta elettronica all'estensione che pubblica la lista di [distribuzione](mailto:vsmextpub@microsoft.com) con l'URL.
 
 
 ## <a name="release-a-new-version"></a>Rilasciare una nuova versione
@@ -60,7 +60,7 @@ Si userà il collegamento "Crea una nuova versione" nella pagina principale del 
 
 Visual Studio per Mac verrà visualizzata la versione più recente dell'estensione compatibile con l'installazione Visual Studio per Mac usata per accedere al repository delle estensioni.
 
-Se il repository di GitHub è stato registrato con il team Visual Studio per Mac, la versione dell'estensione verrà prelevata entro Visual Studio per Mac 24 ore.
+Se è stato registrato il repository GitHub con il team di Visual Studio per Mac, la versione dell'estensione verrà prelevata entro Visual Studio per Mac 24 ore.
 
 ## <a name="additional-information"></a>Informazioni aggiuntive
 

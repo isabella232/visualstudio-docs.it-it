@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 416906adf21beee8849d2aae38489d8d212f2f3bfd9982a2c6f11dae94cad064
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dca21119a73c03b63a273f7b4c22d70ecdb2a583
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121313744"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961859"
 ---
 # <a name="editor-behavior"></a>Comportamento dell'editor
 

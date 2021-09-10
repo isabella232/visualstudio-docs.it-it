@@ -1,21 +1,21 @@
 ---
 title: Personalizzazione dell'IDE
-description: È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. Questo articolo illustra i diversi modi in cui Visual Studio per Mac adattabili in base alle esigenze.
+description: È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. Questo articolo illustra l'ampia gamma di modi Visual Studio per Mac adattabili in base alle proprie esigenze.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/06/2020
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: 710f4f9b941719deecbc516ba4d14a1976f3fcfb312b341fd915b0f5c4acb1c7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 05fd1091a279a085c2a727eb36cbc56fcb201057
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121439381"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964228"
 ---
 # <a name="customizing-the-ide"></a>Personalizzazione dell'IDE
 
-Visual Studio per Mac possono essere personalizzate, consentendo agli utenti di sviluppare app in un ambiente che soddisfi le proprie esigenze di efficienza ed etica. Questo articolo esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
+Visual Studio per Mac può essere personalizzato, consentendo agli utenti di sviluppare app in un ambiente che soddisfi le proprie esigenze sia per l'efficienza che per l'aspetto estetico. Questo articolo esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
 
 ## <a name="dark-theme"></a>Tema scuro
 
@@ -58,11 +58,11 @@ Queste informazioni vengono usate per popolare le intestazioni standard dei file
 
 ![Opzioni per le intestazioni standard](media/customizing-the-ide-image8a.png)
 
-I campi **Nome** e **Posta elettronica** vengono usati in tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono stati popolati, Visual Studio per Mac verrà richiesto di farlo quando si tenta di usare il controllo della versione.
+I campi **Nome** e **Posta elettronica** vengono usati in tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono stati popolati, Visual Studio per Mac quando si tenta di usare il controllo della versione.
 
 ## <a name="key-bindings"></a>Associazioni di chiave
 
-I tasti di scelta rapida, o tasti di scelta rapida, consentono di adattare l'ambiente di sviluppo in modo che sia possibile spostarsi in modo più efficiente in Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (in Windows), ReSharper, Visual Studio Code e Xcode.
+Le associazioni di tasti o i tasti di scelta rapida consentono di adattare l'ambiente di sviluppo in modo che sia possibile spostarsi in modo più efficiente in Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (in Windows), ReSharper, Visual Studio Code e Xcode.
 
 Per impostare tasti di scelta rapida, passare a **Visual Studio > Preferenze > Ambiente > Tasti di scelta rapida**, come illustrato nell'immagine seguente:
 
@@ -70,13 +70,13 @@ Per impostare tasti di scelta rapida, passare a **Visual Studio > Preferenze > A
 
 Da qui è possibile cercare combinazioni di tasti di scelta rapida, visualizzare tasti di scelta rapida in conflitto, aggiungere nuovi tasti di scelta rapida e modificare quelli esistenti.
 
-Queste associazioni possono essere impostate anche durante la configurazione iniziale Visual Studio per Mac, tramite la schermata **Selezione tastiera:**
+Queste associazioni possono essere impostate anche durante la configurazione iniziale di Visual Studio per Mac, tramite la **schermata Selezione tastiera:**
 
-![Impostare i tasti di scelta, prima esecuzione](media/ide-tour-2019-keyboard-shortcut.png)
+![Impostare le associazioni di chiave, prima esecuzione](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Layout area di lavoro
 
-L'area di lavoro di Visual Studio per Mac è costituita da un'area del documento principale  (in genere l'editor, l'area di progettazione o il file di opzioni), racchiusa tra finestre degli strumenti complementari che contengono informazioni utili per l'accesso e la gestione dei file dell'applicazione, il test e il debug.
+L'area di lavoro di Visual Studio per Mac è costituita da un'area documento principale (in  genere l'editor, l'area di progettazione o il file di opzioni), racchiusa da finestre degli strumenti complementari che contengono informazioni utili per l'accesso e la gestione dei file dell'applicazione, il test e il debug.
 
  ![Layout area di lavoro](media/customizing-the-ide-image1a.png)
 
@@ -86,31 +86,31 @@ Quando si apre una nuova soluzione o un nuovo  file in Visual Studio per Mac, si
 
 ![Finestra degli strumenti](media/customizing-the-ide-image2a.png)
 
-Visual Studio per Mac offre finestre degli strumenti contenenti informazioni aggiuntive, strumenti e strumenti di navigazione, a cui è possibile accedere esplorando la voce di **menu** Visualizza e selezionando una finestra degli strumenti per aggiungerla:
+Visual Studio per Mac fornisce finestre degli strumenti contenenti informazioni aggiuntive, strumenti e strumenti di navigazione, a cui è possibile accedere esplorando la voce di **menu** Visualizza e selezionando una finestra degli strumenti per aggiungerla:
 
 ![Selezionare una nuova finestra degli strumenti](media/customizing-the-ide-image3a.png)
 
-Le Windows possono anche essere aperte automaticamente da vari comandi, ad esempio il comando Cerca **nei** file (MAIUSC+CMD+F), che apre una finestra disconnessa dei risultati della ricerca.
+Gli Windows possono anche essere aperti automaticamente da  vari comandi, ad esempio il comando Trova nei file (MAIUSC+CMD +F), che apre una finestra scollegata dei risultati della ricerca.
 
-Gli Windows possono essere spostati e disposti in tutto il flusso di lavoro nel modo più utile possibile. Ad esempio, possono essere ancorati su qualsiasi lato dell'editor di documenti, accanto a un'altra finestra degli strumenti, sopra o sotto un'altra finestra o come un set di finestre a schede che consentono di passare rapidamente da una finestra all'altra.
+Gli Windows possono essere spostati e disposti in tutto il flusso di lavoro in qualsiasi modo sia più utile per l'utente. Ad esempio, possono essere ancorati su qualsiasi lato dell'editor di documenti, accanto a un'altra finestra degli strumenti, sopra o sotto un'altra finestra o come un set di finestre a schede che consentono di passare rapidamente da una finestra all'altra.
 
 Per le finestre degli strumenti usate di frequente, è anche possibile scollegarle completamente dalla finestra Visual Studio per Mac e nella nuova finestra.
 
-I Windows possono essere aggiunti e chiusi dai controlli nell'angolo superiore destro di ogni finestra:
+Gli Windows possono essere aggiunti e chiusi dai controlli nell'angolo superiore destro di ogni finestra:
 
 :::image type="content" source="media/customizing-the-ide-image5a.png" alt-text="Uso dei controlli per bloccare o chiudere le finestre degli strumenti":::
 
-Le finestre bloccate sono ancorate ai lati dell'area di lavoro e rimangono aperte per un accesso più rapido quando necessario. Le finestre non bloccate sono ancorate, ma non vengono visualizzate fino a quando non si passa il mouse sulla scheda della finestra con il mouse o lo stato attivo con la tastiera; possono essere nascosti quando lo stato attivo del mouse e della tastiera li lascia.
+Le finestre aggiunte vengono ancorate ai lati dell'area di lavoro e rimangono aperte per un accesso più rapido quando sono necessarie. Le finestre non bloccate vengono ancorate, ma non vengono visualizzate fino a quando non si passa il puntatore del mouse sulla scheda della finestra con il mouse o lo stato attivo con la tastiera. possono essere nascosti quando lo stato attivo del mouse e della tastiera li lascia.
 
 ### <a name="organizing-layouts"></a>Organizzazione dei layout
 
-Le finestre degli strumenti visualizzate in qualsiasi momento dipendono dal contesto corrente. Ad esempio, quando si usa la finestra di progettazione visiva, le finestre della casella degli strumenti e della griglia delle proprietà sono più importanti. Durante il debug, è utile disporre delle finestre del debugger per visualizzare lo stack e le variabili locali.
+Le finestre degli strumenti visualizzate in qualsiasi momento dipendono dal contesto corrente. Ad esempio, quando si usa la finestra di progettazione visiva, le finestre della casella degli strumenti e della griglia delle proprietà sono più importanti; Durante il debug, è utile disporre delle finestre del debugger per la visualizzazione dello stack e delle variabili locali.
 
-Lo stato delle finestre degli strumenti aperte è rappresentato da un *layout*. I layout possono essere alternati manualmente tramite il menu Visualizza, come illustrato nell'immagine seguente, oppure automaticamente quando si esegue un'azione, ad esempio il debug o l'apertura di uno storyboard:
+Lo stato delle finestre degli strumenti aperte è rappresentato da un *layout*. I layout possono essere commutati manualmente tramite il menu Visualizza, come illustrato nell'immagine seguente, oppure vengono commutati automaticamente quando si esegue un'azione, ad esempio il debug o l'apertura di uno storyboard:
 
 ![Selezione di nuovi layout](media/customizing-the-ide-image6b.png)
 
-È possibile creare un nuovo layout usando la voce di menu **> Layout** > Salva layout corrente. Questo comando aggiungerà il layout corrente al menu in modo che sia possibile selezionarlo in qualsiasi momento:
+È possibile creare un nuovo layout usando la voce di menu Visualizza > **layout > Salva layout** corrente. Questo comando aggiungerà il layout corrente al menu in modo che sia possibile selezionarlo in qualsiasi momento:
 
 ![Salva layout corrente](media/customizing-the-ide-image6a.png)
 
@@ -118,7 +118,7 @@ Lo stato delle finestre degli strumenti aperte è rappresentato da un *layout*. 
 
 Visual Studio per Mac consente di affiancare diversi editor di testo aperti o di visualizzare un editor in una finestra mobile scollegata.
 
-La modalità a due colonne può essere abilitata tramite la voce di menu Visualizza selezionando Visualizza colonne dell'editor **> > 2** colonne oppure trascinando una scheda dell'editor su uno dei bordi dell'area dell'editor:
+La modalità a due colonne può essere abilitata tramite la voce di menu Visualizza selezionando Visualizza colonne **dell'editor > > 2** colonne oppure trascinando una scheda dell'editor su uno dei bordi dell'area dell'editor:
 
 ![Modalità due colonne affiancate](media/customizing-the-ide-sbs.png)
 

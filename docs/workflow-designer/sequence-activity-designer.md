@@ -1,5 +1,5 @@
 ---
-title: Progettazione flussi di lavoro - ActivityDesigner Sequenza
+title: Progettazione flussi di lavoro - ActivityDesigner Sequence
 description: Informazioni su come l'attività Sequence contiene una raccolta ordinata di attività figlio eseguite in ordine.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 7980e01f23dab3ddb927af207e4e2ce67ab515a7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098996"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963510"
 ---
 # <a name="sequence-activity-designer"></a>ActivityDesigner Sequence
 
@@ -28,7 +28,7 @@ Un altro sistema per eseguire un set delle attività nell'ordine consiste nell'u
 
 ## <a name="using-the-sequence-activity-designer"></a>Utilizzo dell'ActivityDesigner Sequence
 
-Per aggiungere <xref:System.Activities.Statements.Sequence> un'attività, trascinare **l'ActivityDesigner Sequence** dalla Casella **degli** strumenti e rilasciarlo nell'area Progettazione flussi di lavoro sequenza. Per aggiungere un'attività figlio a questa attività, trascinare un'altra attività dalla Casella degli strumenti e rilasciarla sul triangolo nella casella con il testo del suggerimento <xref:System.Activities.Statements.Sequence> "Drop activity  here".
+Per aggiungere <xref:System.Activities.Statements.Sequence> un'attività, trascinare **l'ActivityDesigner Sequence** dalla Casella **degli** strumenti e rilasciarlo nell'area Progettazione flussi di lavoro sequenza. Per aggiungere un'attività figlio a questa attività, trascinare un'altra attività dalla casella degli strumenti e rilasciarla sul triangolo nella casella con il testo del suggerimento <xref:System.Activities.Statements.Sequence> "Drop activity  here".
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività della sequenza in Progettazione flussi di lavoro 
 

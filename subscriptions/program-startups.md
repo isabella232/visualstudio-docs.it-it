@@ -7,12 +7,12 @@ ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 02/19/2021
 ms.topic: conceptual
 description: Dettagli sulle sottoscrizioni offerte tramite il programma Microsoft for Startups.
-ms.openlocfilehash: 238363370e3920c599f1df0b8af11f5c428ec8cda05405a089fdb3cdb60628b0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4b8d3e92f55df660dd8990c95ba72b872e3cded7
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121265463"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965761"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Sottoscrizioni di Visual Studio offerte alle startup
 Le startup qualificate che aderiscono al programma Microsoft for Startups possono ottenere 5 Visual Studio Enterprise [sottoscrizioni cloud mensili.](https://visualstudio.microsoft.com/vs/pricing/) 
@@ -38,7 +38,7 @@ R: quando si annulla una sottoscrizione cloud di Visual Studio, si annulla il ri
 
 Con le sottoscrizioni cloud mensili, gli annullamenti diventano effettivi a partire dal primo giorno del mese successivo. Se si annullano solo alcune delle sottoscrizioni cloud mensili, assicurarsi di rimuovere gli utenti il primo del mese successivo per assicurarsi che le sottoscrizioni attive vengano assegnate agli utenti corretti.
 
-Per le sottoscrizioni cloud annuali, l ha effetto il primo giorno del mese successivo a 12 mesi dall'acquisto originale o 12 mesi dall'ultimo addebito di rinnovo annuale. Ad esempio, se si acquista una sottoscrizione cloud annuale di Visual Studio Professional il 3 gennaio 2018, questa rimane attiva fino al 1° febbraio 2019, quando viene rinnovata automaticamente per un altro anno. Se si annulla la sottoscrizione in qualsiasi momento tra tale data e il 1 febbraio 2020, la scadenza sarà il 1 febbraio 2020. Non è previsto alcuno sconto in caso di annullamento di sottoscrizioni cloud annuali prima del termine dell'anno di validità.
+Per le sottoscrizioni cloud annuali, l ha effetto il primo giorno del mese dopo 12 mesi dall'acquisto originale o 12 mesi dall'ultimo addebito per il rinnovo annuale. Ad esempio, se si acquista una sottoscrizione cloud annuale di Visual Studio Professional il 3 gennaio 2018, questa rimane attiva fino al 1° febbraio 2019, quando viene rinnovata automaticamente per un altro anno. Se si annulla la sottoscrizione in qualsiasi momento tra tale data e il 1 febbraio 2020, la scadenza sarà il 1 febbraio 2020. Non è previsto alcuno sconto in caso di annullamento di sottoscrizioni cloud annuali prima del termine dell'anno di validità.
 
 ## <a name="resources"></a>Risorse
 - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).

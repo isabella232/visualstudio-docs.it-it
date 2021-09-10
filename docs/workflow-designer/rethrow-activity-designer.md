@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 5508555d2e4347a96e1eaf7319270cf3f95f3177
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130429"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963633"
 ---
 # <a name="rethrow-activity-designer"></a>ActivityDesigner Rethrow
 

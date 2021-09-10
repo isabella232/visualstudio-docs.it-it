@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 1576a4b5215fa7731295580f6a0ae8f2abdfa7881c6444c22aaaba74329b67b4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121265869"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964517"
 ---
 # <a name="source-editor"></a>Editor standard
 
@@ -52,7 +52,7 @@ Il ritorno a capo automatico consente di gestire lo spazio quando si lavora su l
 
 Il ritorno a capo automatico è disabilitato per impostazione predefinita, ma può essere abilitato tramite **Preferenze** in Visual Studio per Mac. 
 
-Per abilitare il ritorno a capo automatico, passare a Visual Studio > Preferenze > editor di **testo > a capo automatico:**
+Per abilitare il ritorno a capo automatico, passare **a Visual Studio > Preferenze > Editor di testo > a capo automatico:**
 
 ![Opzioni di ritorno a capo automatico](media/source-neweditor-wordwrap1.png)
 

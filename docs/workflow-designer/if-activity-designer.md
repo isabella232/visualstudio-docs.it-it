@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 6abacbe5f5212a062c9f23cdc7cfab3e27d7cb6b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155161"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963594"
 ---
 # <a name="if-activity-designer"></a>ActivityDesigner If
 
@@ -30,7 +30,7 @@ Nella tabella seguente sono elencate le proprietà più utili dell'attività <xr
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|Vero|La condizione che determina l'attività figlio da eseguire. Per impostare <xref:System.Activities.Statements.If.Condition%2A> , digitare un'Visual Basic nella casella **Condizione** dell'ActivityDesigner **If** o nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.If.Condition%2A>|Vero|La condizione che determina l'attività figlio da eseguire. Per impostare , digitare un'Visual Basic nella casella Condizione <xref:System.Activities.Statements.If.Condition%2A> dell'ActivityDesigner **If** o nella griglia delle proprietà. |
 |<xref:System.Activities.Statements.If.Else%2A>|Falso|Attività da eseguire se è <xref:System.Activities.Statements.If.Condition%2A> **false.** Per aggiungere un'attività eseguita dal ramo , rilasciare un'attività dalla casella degli strumenti nella casella Else dell'ActivityDesigner If con il testo del suggerimento <xref:System.Activities.Statements.If.Else%2A> "Drop Activity  Here".  |
 |<xref:System.Activities.Statements.If.Then%2A>|Falso|Attività da eseguire se è <xref:System.Activities.Statements.If.Condition%2A> **true.** Per aggiungere un'attività eseguita dal ramo , rilasciare un'attività dalla casella degli strumenti nella casella Then dell'ActivityDesigner If con il testo del suggerimento <xref:System.Activities.Statements.If.Then%2A> "Drop Activity  Here".  |
 

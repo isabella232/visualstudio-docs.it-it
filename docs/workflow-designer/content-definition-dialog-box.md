@@ -14,15 +14,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: b3432853ce9e6aaf4f37c4a0c363099f4a61d988
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099243"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963210"
 ---
 # <a name="content-definition-dialog-box"></a>Finestra di dialogo Definizione contenuto
 
-La **finestra di dialogo** Definizione contenuto viene Progettazione flussi di lavoro per configurare le proprietà **Content** delle attività , , <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.ReceiveReply> . Per altre informazioni sugli ActivityDesigner che usano questa casella, vedere gli argomenti [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply.](../workflow-designer/sendandreceivereply-template-designer.md)
+La **finestra di dialogo** Definizione contenuto viene usata Progettazione flussi di lavoro per configurare le proprietà **Content** delle attività , , <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> <xref:System.ServiceModel.Activities.ReceiveReply> . Per altre informazioni sugli ActivityDesigner che usano questa casella, vedere gli argomenti [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)e [SendAndReceiveReply.](../workflow-designer/sendandreceivereply-template-designer.md)
 
 La tabella seguente descrive gli elementi dell'interfaccia utente della finestra di dialogo **Inizializza** correlazione:
 
@@ -33,9 +33,9 @@ La tabella seguente descrive gli elementi dell'interfaccia utente della finestra
 
 La **finestra di** dialogo Definizione contenuto viene utilizzata dalle finestre di progettazione **Send**, **Receive**, **ReceiveAndSendReply** e **SendAndReceiveReply** . La procedura di accesso è simile per tutte le finestre. In questo esempio verrà usata la finestra di progettazione Receive.
 
-**L'ActivityDesigner** di ricezione può  essere trascinato dalla casella degli strumenti e rilasciato nella Progettazione flussi di lavoro superficie in cui si trovano in genere le attività. In questo modo viene creata un'attività <xref:System.ServiceModel.Activities.Receive> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Receive. Selezionare **l'ActivityDesigner** ricezione e fare clic sul pulsante con i puntini di sospensione  accanto al testo (Contenuto) per la proprietà **Content** nella griglia delle proprietà per visualizzare la finestra di dialogo Definizione contenuto.
+**L'ActivityDesigner** di ricezione può  essere trascinato dalla casella degli strumenti e rilasciato nella Progettazione flussi di lavoro in cui vengono in genere posizionate le attività. In questo modo viene creata un'attività <xref:System.ServiceModel.Activities.Receive> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Receive. Selezionare **l'ActivityDesigner** di ricezione e fare clic sul pulsante con i puntini di  sospensione accanto al testo (Contenuto) per la proprietà **Content** nella griglia delle proprietà per visualizzare la finestra di dialogo Definizione contenuto.
 
-Il contenuto può essere specificato all'interno **della sezione Message** per un'attività o nella sezione <xref:System.ServiceModel.Activities.ReceiveMessageContent> **Parameter** per <xref:System.ServiceModel.Activities.ReceiveParametersContent> un'attività.
+Il contenuto può essere specificato all'interno **della sezione Message** per un'attività o <xref:System.ServiceModel.Activities.ReceiveMessageContent> all'interno **della sezione Parameter** per un'attività. <xref:System.ServiceModel.Activities.ReceiveParametersContent>
 
 ## <a name="see-also"></a>Vedi anche
 

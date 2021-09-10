@@ -7,11 +7,11 @@ ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.topic: overview
 ms.openlocfilehash: fa298e97c2db05ee3be526e5e1b3cc7a7affed99
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950368"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961891"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Carichi di lavoro di Visual Studio per Mac
 

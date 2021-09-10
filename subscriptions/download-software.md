@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 02/18/2021
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: c1267f431f54effc9de6b6b9e99fbab9790e5890d430411be7066112b32b9a03
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c53429f7fe7d88c1c75642d9f820c8a6fa444eb9
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121421621"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965623"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 
@@ -41,7 +41,7 @@ Se ad esempio si sceglie **Visual Studio 2019** dall'elenco Strumenti di svilupp
 ### <a name="displaying-download-details"></a>Visualizzazione dei dettagli del download
 Selezionando il nome del prodotto o sul **collegamento Info** verranno visualizzati i dettagli per tale download e verrà fornito l'accesso alle note sulla versione per il prodotto.
 > [!div class="mx-imgBorder"]
-> ![Dettagli del download di Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png "La scheda Info visualizza informazioni sul download e fornisce l'accesso alle note sulla versione.")
+> ![Dettagli del download di Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png "Nella scheda Info vengono visualizzate informazioni sul download e viene fornito l'accesso alle note sulla versione.")
 
 Nel riquadro dei dettagli è anche possibile selezionare la **scheda Chiavi** per controllare lo stato dei codici Product Key.
 > [!div class="mx-imgBorder"]

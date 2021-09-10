@@ -1,6 +1,6 @@
 ---
 title: Progettazione flussi di lavoro - ActivityDesigner di migrazione
-description: Informazioni su come usare gli ActivityDesigner di migrazione per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro destinato a .NET Framework 4 o versione successiva.
+description: Informazioni su come usare gli ActivityDesigner migration per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro destinato a .NET Framework 4 o versione successiva.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,17 +12,17 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 2984ac045160a94d79e1399bea9b625e2267eb1c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092085"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963608"
 ---
 # <a name="migration-activity-designers"></a>ActivityDesigner Migrazione
 
 Gli ActivityDesigner Migration vengono usati per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro destinato a .NET Framework 4 o versione successiva.
 
-Gli argomenti contenuti in questa sezione forniscono indicazioni su come usare gli ActivityDesigner Progettazione flussi di lavoro.
+Negli argomenti contenuti in questa sezione vengono fornite indicazioni su come usare gli ActivityDesigner Progettazione flussi di lavoro.
 
 ## <a name="related-sections"></a>Sezioni correlate
 

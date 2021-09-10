@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: bcf44bbb8db921307137b2d953ecbc085b666e3d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135334"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963331"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>Activity Designer\<T> RemoveFromCollection
 
@@ -31,11 +31,11 @@ L'attività <xref:System.Activities.Statements.RemoveFromCollection%601> rimuove
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Uso \<T> dell'ActivityDesigner RemoveFromCollection
 
 Accedere **all'ActivityDesigner RemoveFromCollection \<T>** nella **categoria Raccolta** della casella degli **strumenti**.
-**L'ActivityDesigner \<T> RemoveFromCollection** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di <xref:System.Activities.Statements.Sequence> un oggetto . Verrà creata <xref:System.Activities.Statements.RemoveFromCollection%601> un'attività con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito RemoveFromCollection<Int32 \> . Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'activitydesigner **RemoveFromCollection<T \>** o nella casella **DisplayName** della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+**L'ActivityDesigner \<T> RemoveFromCollection** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di <xref:System.Activities.Statements.Sequence> un oggetto . Verrà creata <xref:System.Activities.Statements.RemoveFromCollection%601> un'attività con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito RemoveFromCollection<Int32 \> . Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'activitydesigner **RemoveFromCollection<\> T** o nella casella **DisplayName** della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
 
 ### <a name="the-removefromcollectiont-properties"></a>Proprietà removeFromCollection<\> T
 
-La tabella seguente illustra <xref:System.Activities.Statements.RemoveFromCollection%601> le proprietà e descrive come vengono usate nella finestra di progettazione:
+La tabella seguente illustra le proprietà e descrive come <xref:System.Activities.Statements.RemoveFromCollection%601> vengono usate nella finestra di progettazione:
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|

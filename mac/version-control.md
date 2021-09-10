@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: f4d5b64e6deeb7952e0d38fce836084399fa2df47153bc3db020db87efa820af
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9206ab892ef125706ab16f9a739fe88a52f5c242
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121437449"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964530"
 ---
 # <a name="version-control"></a>Controllo della versione
 

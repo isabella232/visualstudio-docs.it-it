@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: c5c26c45ae7deeefef1ae0d639ecb821c41bf6800eee2ed63c238f9a6209efa7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5e6346b640415b7888826669427512a75427f0cc
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364298"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965655"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -54,7 +54,7 @@ Per fatturare gli acquisti, è necessaria una [sottoscrizione di Azure](https://
 > [!div class="mx-imgBorder"]
 > ![Passare al portale per i sottoscrittori di Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png "Nel portale Visual Studio sottoscrizioni è possibile esplorare la sottoscrizione e usare i vantaggi disponibili.")
 
-Se sono state acquistate più sottoscrizioni, passare Sottoscrizioni di Visual Studio portale di [amministrazione per](https://manage.visualstudio.com) assegnare sottoscrizioni ad altri utenti.  Potrebbe essere necessario [aggiungere le nuove sottoscrizioni](add-monthly-subs.md) al portale di amministrazione se è la prima volta che vengono acquistate.
+Se sono state acquistate più sottoscrizioni, passare al portale di amministrazione [Sottoscrizioni di Visual Studio per](https://manage.visualstudio.com) assegnare sottoscrizioni ad altri utenti.  Potrebbe essere necessario [aggiungere le nuove sottoscrizioni](add-monthly-subs.md) al portale di amministrazione se è la prima volta che vengono acquistate.
 
 > [!div class="mx-imgBorder"]
 > ![Assegnare sottoscrizioni ad altri](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "Fare clic su &quot;Assegna agli utenti&quot; per fornire sottoscrizioni agli utenti.")
@@ -104,12 +104,12 @@ A: le sottoscrizioni annuali acquistate durante un determinato mese vengono adde
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>D: Cosa succede se si vuole ridurre il numero di sottoscrizioni per i clienti?
 A: L'amministratore può comunque ridurre il numero di sottoscrizioni visitando e seguendo le istruzioni riportate in questo articolo per ridurre il numero https://manage.visualstudio.com di sottoscrizioni. Il sistema *non* genererà un credito ripartito. Per ottenere un rimborso è necessario contattare il team di fatturazione di Azure.
 
-#### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>D: Se si annulla la sottoscrizione, sarà possibile acquistare un'altra sottoscrizione annual cloud in un secondo momento?
-A: Anche se non sarà possibile acquistare un'altra sottoscrizione annuale cloud, sono disponibili molte opzioni per l'Sottoscrizioni di Visual Studio.  Per altre informazioni, vedere [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) .
+#### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>D: Se si annulla la sottoscrizione, sarà possibile acquistare un'altra sottoscrizione cloud annuale in un secondo momento?
+A: Anche se non sarà possibile acquistare un'altra sottoscrizione annuale cloud, sono disponibili molte opzioni per l'Sottoscrizioni di Visual Studio.  Per altre informazioni, vedere [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ### <a name="for-cloud-solution-providers-csp"></a>Per i Cloud Solution Provider (CSP)
 #### <a name="q-how-will-this-change-impact-my-customers"></a>D: In che modo questa modifica influisce sui clienti?
-A: I clienti non saranno in grado di acquistare nuove sottoscrizioni Visual Studio cloud annuali.
+A: I clienti non saranno in grado di acquistare nuove sottoscrizioni Visual Studio cloud annuale.
 
 #### <a name="q-do-my-customers-need-to-do-anything-because-of-these-changes"></a>D: I clienti devono eseguire qualsiasi operazione a causa di queste modifiche?
 A: I clienti esistenti non saranno influenzati. I nuovi clienti dovranno decidere se acquistare sottoscrizioni mensili di Visual Studio o passare a un altro canale, ad esempio i contratti multilicenza, per acquistare sottoscrizioni di Visual Studio.
@@ -121,13 +121,13 @@ A: le sottoscrizioni annuali acquistate in un determinato mese vengono addebitat
 A: L'amministratore può comunque ridurre il numero di sottoscrizioni visitando e seguendo le istruzioni riportate in questo articolo per ridurre il numero [https://manage.visualstudio.com](https://manage.visualstudio.com) di sottoscrizioni. Il sistema **non** genererà un credito ripartito. Per ottenere un rimborso è necessario contattare il team di fatturazione di Azure.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>D: Se i clienti annullano le sottoscrizioni, potranno acquistare altre sottoscrizioni cloud annuali in un secondo momento?
-A: Anche se non saranno in grado di acquistare un'altra sottoscrizione annuale cloud, sono disponibili molte opzioni per l'Sottoscrizioni di Visual Studio.  Per altre informazioni, vedere [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) .
+A: Anche se non saranno in grado di acquistare un'altra sottoscrizione annuale cloud, sono disponibili molte opzioni per l'Sottoscrizioni di Visual Studio.  Per altre informazioni, vedere [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ## <a name="related-resources"></a>Risorse correlate
 - [Sottoscrizioni di Visual Studio Portale di amministrazione](https://manage.visualstudio.com/)
 - [Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio](vscloud-billing-faq.yml)
 - [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)
-- - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
+- - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, Visual Studio [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

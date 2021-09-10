@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984753"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961856"
 ---
 # <a name="data-visualizations"></a>Visualizzazioni di dati
 
@@ -28,12 +28,12 @@ Un oggetto Point/PointF o CGPoint in iOS e Mac viene visualizzato come tupla che
 
 ![Visualizzazione dei punti](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Dimensioni
+## <a name="size"></a>Dimensione
 Un oggetto Size/SizeF CGSize in iOS e Mac viene visualizzato come rettangolo. L'oggetto viene disegnato in modo da ridimensionarsi fino a 250 px e da questo momento in poi il rettangolo viene ridimensionato in base al valore massimo di 250px:
 
 [Visualizzazione delle dimensioni](media/data-visualizations-image11.png)
 
-## <a name="rectangle"></a>Rectangle
+## <a name="rectangle"></a>Rettangolo
 Un oggetto Rectangle/RectangleF o CGRect in iOS e Mac mostra le dimensioni e l'origine. Come per gli oggetti Size, l'oggetto viene disegnato in modo da ridimensionarsi, fino a 250 px:
 
 ![Visualizzazione dei rettangoli](media/data-visualizations-image12.png)
@@ -88,7 +88,7 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
 ![Altre visualizzazioni](media/data-visualizations-image23.png)
 
-* **Primitive**
+* **Primitives**
   * Visualizza il valore non elaborato del tipo primitivo.
 * **Enumerazione**
   * Visualizza il valore del campo senza il qualificatore di tipo enum.
@@ -101,7 +101,7 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 * **IntPtr**
   * Visualizza una rappresentazione esadecimale di un oggetto IntPtr.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esaminare le variabili nelle finestre Variabili locali e Auto](/visualstudio/debugger/autos-and-locals-windows)
 - [Visualizzare le stringhe in un visualizzatore (Visual Studio in Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

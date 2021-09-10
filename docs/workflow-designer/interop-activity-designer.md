@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 785fa491d78c0286404918f01149752af2f0dc69
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045853"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963607"
 ---
 # <a name="interop-activity-designer"></a>ActivityDesigner Interop
 
@@ -34,9 +34,9 @@ L'ActivityDesigner Interoperabilità è disponibile nella **categoria Migrazione
 
 La [categoria Migrazione](../workflow-designer/migration-activity-designers.md) che contiene l'attività viene visualizzata nella casella degli strumenti solo se il progetto è destinato .NET Framework <xref:System.Activities.Statements.Interop> 4 (completo) o versione successiva.  Se necessario, è possibile modificare la versione del framework di destinazione del progetto.
 
-**L'ActivityDesigner** Interop può  essere trascinato dalla casella degli strumenti e rilasciato nella Progettazione flussi di lavoro in cui in genere vengono inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione **dell'ActivityDesigner** Interop crea <xref:System.Activities.Statements.Interop> un'attività con **un valore DisplayName predefinito** di Interop. È possibile modificare <xref:System.Activities.Activity.DisplayName%2A> nell'intestazione dell'ActivityDesigner **Interop** o nella **casella DisplayName** della griglia delle proprietà.
+**L'ActivityDesigner** Interop può  essere trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro in cui in genere vengono inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione **dell'ActivityDesigner** Interop crea <xref:System.Activities.Statements.Interop> un'attività con **un valore DisplayName predefinito** di Interop. È possibile modificare <xref:System.Activities.Activity.DisplayName%2A> nell'intestazione dell'ActivityDesigner **Interop** o nella **casella DisplayName** della griglia delle proprietà.
 
-Fare clic **su** Fare clic per visualizzare il testo nella casella **ActivityType** , nell'ActivityDesigner **Interop**  o nella griglia delle proprietà, per aprire la finestra di dialogo Sfoglia e seleziona un **tipo .NET** . Vengono visualizzati solo i tipi per le attività del flusso di lavoro 3.0 o del flusso di lavoro 3.5. Ciò significa che vengono visualizzati solo i <xref:System.Workflow.ComponentModel.Activity> tipi derivati da . Per altre informazioni sull'uso di questa casella per specificare un tipo, vedere Finestra di dialogo Sfoglia e seleziona un tipo [.NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
+Fare clic **su** Fare clic per visualizzare il testo nella casella **ActivityType** , nell'ActivityDesigner **Interop**  o nella griglia delle proprietà, per aprire la finestra di dialogo Sfoglia e seleziona un **tipo .NET** . Vengono visualizzati solo i tipi per le attività del flusso di lavoro 3.0 o del flusso di lavoro 3.5. Ciò significa che vengono visualizzati solo i <xref:System.Workflow.ComponentModel.Activity> tipi derivati da . Per altre informazioni sull'uso di questa casella per specificare un tipo, vedere Finestra di dialogo Sfoglia e seleziona un [tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
 
 ### <a name="the-interop-properties"></a>Proprietà di Interop
 

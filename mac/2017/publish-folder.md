@@ -10,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 89adbc2c3b6ddef502fa615d9b01146016451c672d6dab9e3f8deeaa84a9a21f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2d1b0bb67c30daf13503196546f3280ceb7a635
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121382628"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123962021"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare un'app Web in una cartella usando Visual Studio per Mac
 

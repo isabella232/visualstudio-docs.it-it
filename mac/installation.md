@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: a8d1d17e78a0141530f984442eec07205e106857708744cd0e55e1ea033be4f7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121407584"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964488"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installare Visual Studio 2019 per Mac
 
@@ -28,8 +28,8 @@ Per iniziare a sviluppare app .NET native e multipiattaforma in macOS, installar
 
 Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
-- Un Mac compatibile con la versione più recente di Xcode. Vedere la documentazione dei [requisiti minimi di Apple](https://developer.apple.com/support/xcode/)
-- La versione più recente di [Xcode.](https://developer.apple.com/xcode) Se il Mac non è compatibile con la versione più recente, potrebbe essere possibile usare una versione precedente di [Xcode.](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode)
+- Mac compatibile con la versione più recente di Xcode. Vedere la documentazione dei [requisiti minimi di Apple](https://developer.apple.com/support/xcode/)
+- Versione più recente di [Xcode.](https://developer.apple.com/xcode) Potrebbe essere possibile usare [una versione precedente di Xcode](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode) se il Mac non è compatibile con la versione più recente.
 - ID Apple. Se non si ha ancora un ID Apple, è possibile crearne uno nuovo all'indirizzo https://appleid.apple.com. L'ID Apple è necessario per installare Xcode e accedervi.
 
 ## <a name="installation-instructions"></a>Istruzioni per l'installazione
@@ -50,27 +50,27 @@ Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
 6. Verrà visualizzato l'elenco dei carichi di lavoro disponibili. Selezionare i componenti da usare:
 
-    [![Screenshot della schermata "Cosa si vuole installare?" nel programma di installazione di Visual Studio Mac, che mostra un elenco di componenti disponibili per l'installazione.](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Screenshot della schermata "Cosa si vuole installare?" nel programma di installazione Visual Studio Mac, che mostra un elenco di componenti disponibili per l'installazione.](media/install-selection.png)](media/install-selection.png#lightbox)
 
    Se non si desidera installare tutte le piattaforme, usare la guida seguente per decidere quali piattaforme installare:
 
    |Tipo di app  |Destinazione  |Selezione  |Note  |
    |---------|---------|---------|---------|
-   |**App che usano Xamarin**| Xamarin.Forms|Selezionare **le piattaforme Android** e **iOS** |È necessario installare [ **Xcode**](https://developer.apple.com/xcode/) |
+   |**App con Xamarin**| Xamarin.Forms|Selezionare **le piattaforme Android** e **iOS** |È necessario installare [ **Xcode**](https://developer.apple.com/xcode/) |
    ||Solo iOS|Selezionare **la piattaforma iOS**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
    ||Solo Android|Selezionare **la piattaforma Android**|Si noti che è necessario selezionare anche le dipendenze pertinenti|
    ||Solo Mac|Selezionare **la piattaforma macOS (Cocoa)**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
-   |**Applicazioni .NET Core**|         |Selezionare **Piattaforma .NET Core.**|         |
-   |**Applicazioni Web ASP.NET Core**|         |Selezionare **Piattaforma .NET Core.**|         |
-   |**Funzioni di Azure**|         |Selezionare **Piattaforma .NET Core.**|         |
-   |**Sviluppo di giochi Unity multipiattaforma**|         |Non è necessario installare piattaforme aggiuntive oltre Visual Studio per Mac.| Fare riferimento alla [guida all'installazione di Unity](./setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.|
+   |**Applicazioni .NET Core**|         |Selezionare **la piattaforma .NET Core.**|         |
+   |**Applicazioni Web ASP.NET Core**|         |Selezionare **la piattaforma .NET Core.**|         |
+   |**Funzioni di Azure**|         |Selezionare **la piattaforma .NET Core.**|         |
+   |**Sviluppo di giochi Unity multipiattaforma**|         |Non è necessario installare altre piattaforme oltre Visual Studio per Mac.| Fare riferimento alla [guida all'installazione di Unity](./setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.|
 
 7. Dopo aver effettuato le selezioni, premere il pulsante **Installa**.
 8. Il programma di installazione visualizzerà lo stato di avanzamento del download e dell'installazione di Visual Studio per Mac e dei carichi di lavoro selezionati. Verrà richiesto di immettere la password per concedere i privilegi necessari per l'installazione:
 
-    [![Screenshot del programma di installazione Visual Studio Mac che mostra una schermata di stato dell'installazione per .NET Developer Toolkit per Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Screenshot del programma di Visual Studio Mac Installer che mostra una schermata di stato dell'installazione per Il toolkit per sviluppatori .NET per Mac.](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
-9. Dopo l'Visual Studio per Mac, verrà richiesto di personalizzare l'installazione accedendo e selezionando i tasti di scelta che si desidera usare:
+9. Dopo l'Visual Studio per Mac verrà richiesto di personalizzare l'installazione accedendo e selezionando le associazioni di chiavi che si desidera usare:
 
     [![Accedere all'IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
 

@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: fa26f068b723c4c67c09017eab5a5a5e7ca210fd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114706"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963354"
 ---
 # <a name="invokemethod-activity-designer"></a>ActivityDesigner InvokeMethod
 
@@ -46,7 +46,7 @@ La tabella seguente illustra le <xref:System.Activities.Statements.InvokeMethod>
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Falso|Oggetto contenente il metodo da chiamare. È possibile modificare questa proprietà nell'area della finestra di progettazione.<br /><br /> È necessario impostare <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> o <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Falso|Tipo di <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. È possibile modificare questa proprietà nell'area della finestra di progettazione. È necessario impostare questa proprietà solo se il metodo chiamato è statico.|
 
-Per passare parametri come parametro **out** in C#, ad esempio `Method1(out myParam))` , usare **OutArgument** anziché **InOutArgument**
+Per passare i parametri come parametro **out** di C#, ad esempio `Method1(out myParam))` , usare **OutArgument** anziché **InOutArgument**
 
 I metodi con argomenti **denominati TargetObject** o **Result** non possono essere richiamati usando l'attività <xref:System.Activities.Statements.InvokeMethod> . Il motivo di ciò è che l'attività <xref:System.Activities.Statements.InvokeMethod> registra <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> e <xref:System.Activities.Statements.InvokeMethod.Result%2A> in <xref:System.Activities.Activity.CacheMetadata%2A>.
 

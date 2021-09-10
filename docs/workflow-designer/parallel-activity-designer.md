@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: d4b1c5315933e2e29e29774b94804846d5317723
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114693"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963496"
 ---
 # <a name="parallel-activity-designer"></a>ActivityDesigner Parallel
 
@@ -32,9 +32,9 @@ L'attività <xref:System.Activities.Statements.Parallel> archivia le relative at
 
 ### <a name="using-the-parallel-activity-designer"></a>Utilizzo dell'ActivityDesigner Parallel
 
-Accedere **all'ActivityDesigner** parallelo nella **categoria Controllo Flow** della Casella degli **strumenti**.
+Accedere **all'ActivityDesigner** parallelo nella **categoria Controllo Flow** della casella degli **strumenti**.
 
-L'ActivityDesigner parallelo può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che gli ActivityDesigner vengono normalmente posizionati, ad esempio all'interno di un ActivityDesigner **Sequence.**  Dopo l'eliminazione nel Progettazione flussi di lavoro, crea un'attività, che per impostazione <xref:System.Activities.Statements.Parallel> predefinita contiene un oggetto <xref:System.Activities.Activity.DisplayName%2A> **parallel**
+L'ActivityDesigner parallelo può essere  trascinato dalla casella degli strumenti e rilasciato sull'area Progettazione flussi di lavoro ogni volta  che gli ActivityDesigner vengono normalmente posizionati, ad esempio all'interno di un ActivityDesigner sequence.  Dopo l'eliminazione nel Progettazione flussi di lavoro, crea un'attività, che per impostazione <xref:System.Activities.Statements.Parallel> predefinita contiene un oggetto <xref:System.Activities.Activity.DisplayName%2A> **parallel**
 
 Per aggiungere un'attività alla raccolta dell'attività parallela, trascinare un altro ActivityDesigner dalla Casella degli strumenti e rilasciarlo sul triangolo all'interno <xref:System.Activities.Statements.Parallel.Branches%2A> dell'ActivityDesigner  parallelo.  I triangoli si trovano di fianco alle attività contenute nei rami. È possibile aggiungere ulteriori attività ripetendo questa procedura. Le attività possono essere riordinate trascinandole  all'interno dell'ActivityDesigner parallelo.
 

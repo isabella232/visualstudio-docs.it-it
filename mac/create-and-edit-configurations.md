@@ -7,18 +7,18 @@ ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 07fa7721b1154ede493cdc4eac1bd23de5814e339c40a68e4bea3d3ef30f5db4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eb3ceed624e3bbba67564bb8f7c359841c0e496d
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121381868"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964384"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Creazione e modifica di configurazioni della build
 
 Le configurazioni di compilazione offrono un controllo preciso su una compilazione che consente di creare configurazioni per soddisfare diverse situazioni di test e distribuzione. È possibile creare configurazioni di compilazione per singoli progetti o a livello di soluzione.
 
-È possibile creare nuove configurazioni e modificare quelle esistenti per progetti e soluzioni usando la finestra Project Opzioni.
+È possibile creare nuove configurazioni e modificare quelle esistenti per progetti e soluzioni usando la finestra di Project Opzioni.
 
 >[!NOTE]
 >Questo argomento si applica a Visual Studio per Mac. Per Visual Studio su Windows, vedere [Procedura: Creare e modificare configurazioni.](/visualstudio/ide/how-to-create-and-edit-configurations)
@@ -57,7 +57,7 @@ Dopo aver creato la configurazione, è  possibile usare la sezione Compilazione 
 
 ## <a name="renaming-a-build-configuration"></a>Ridenominazione di una configurazione di compilazione
 
-Per rinominare una configurazione, selezionarla dall'elenco Configurazione passando a Build **> Configurations** (Configurazioni di compilazione) nel Project o in Solution Options (Opzioni soluzione):
+Per rinominare una configurazione, selezionarla dall'elenco Configurazione passando a Build **> Configurations** (Configurazioni di compilazione) Project o Solution Options (Opzioni soluzione):
 
 ![Elenco delle configurazioni](media/create-and-edit-configurations-image4.png)
 

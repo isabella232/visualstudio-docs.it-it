@@ -5,18 +5,18 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/14/2020
 ms.assetid: EFD53CE9-8174-4FE4-8863-2984D22FD921
-ms.openlocfilehash: 0dd93498967139083ed8828ee6d6757db52584874b9c93855604d06b8c6eacd0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f91c2b1c3f06f8f1fbe54e32fde70b9fe88c5f5d
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121407348"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123964553"
 ---
 # <a name="integrated-terminal"></a>Terminale integrato
 In Visual Studio per Mac è possibile aprire una finestra del terminale integrato, inizialmente a partire dalla radice della soluzione. Il terminale può essere utile per diversi tipi di situazioni: esecuzione di attività front-end (ad esempio npm, ng o vue), gestione di contenitori, esecuzione di comandi Git avanzati, esecuzione di comandi Entity Framework, visualizzazione dell'output dell'interfaccia della riga di comando dotnet, aggiunta di pacchetti NuGet e altro ancora. 
 
 Per aprire il terminale:
-- Usare i **tasti di scelta rapida CTRL+'** per visualizzare o nascondere la finestra del terminale.
+- Usare i tasti di scelta **rapida CTRL+'** per visualizzare o nascondere la finestra del terminale.
 - Usare  il menu \> **Visualizza terminale.**
 - Usare il **comando terminale** dalla barra di ricerca.
 
@@ -32,7 +32,7 @@ Per impostazione predefinita, all'avvio del terminale:
 ![*Esperienza di ricerca nel Visual Studio per Mac terminale integrato*](media/integrated-terminal-search.png)
 
 ## <a name="terminal-keyboard-shortcuts"></a>Tasti di scelta rapida del terminale
-|Comandi|Scelte rapide da tastiera|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Mostra/Nascondi la finestra del terminale|**CTRL+ '**|
 |Creare una nuova istanza del terminale|**CTRL+'**|

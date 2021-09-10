@@ -1,6 +1,6 @@
 ---
 title: Progettazione flussi di lavoro - ActivityDesigner diagramma di flusso
-description: Informazioni sugli ActivityDesigner dei diagrammi di flusso, che contengono attività fornite dal sistema che è possibile usare per gestire i diagrammi di flusso all'interno di un flusso di lavoro.
+description: Informazioni sugli ActivityDesigner Diagramma di flusso, che contengono attività fornite dal sistema che è possibile usare per gestire i diagrammi di flusso all'interno di un flusso di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 369d1ba066fb1a87a13c9204bd0bb45a897153d8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099074"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963235"
 ---
 # <a name="flowchart-activity-designers"></a>ActivityDesigner Diagramma di flusso
 
