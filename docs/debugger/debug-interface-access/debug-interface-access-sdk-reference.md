@@ -1,6 +1,6 @@
 ---
-description: Riferimento completo a tutte le interfacce e alle enumerazioni e alle strutture di supporto nel DIA SDK.
-title: Debug Interface Access SDK riferimento | Microsoft Docs
+description: Riferimento completo a tutte le interfacce e alle enumerazioni e strutture di supporto nel DIA SDK.
+title: Debug Interface Access SDK di riferimento | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,15 +17,15 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d3a06891aa68b8cacbb64e6d65830de86ee3bbda
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630642"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Riferimenti di Debug Interface Access SDK
 
-Riferimento completo a tutte le interfacce e alle enumerazioni e alle strutture di supporto nel DIA SDK.
+Riferimento completo a tutte le interfacce e alle enumerazioni e strutture di supporto nel DIA SDK.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -35,7 +35,7 @@ Riferimento completo a tutte le interfacce fornite dal DIA SDK.
 
 [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
-Riferimento completo a tutte le enumerazioni e le strutture richieste dalle interfacce.
+Riferimento completo a tutte le enumerazioni e strutture richieste dalle interfacce.
 
 [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 

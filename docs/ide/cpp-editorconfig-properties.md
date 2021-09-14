@@ -15,15 +15,15 @@ ms.workload:
 - cplusplus
 monikerRange: vs-2019
 ms.openlocfilehash: b7554e2038f0be8d72b96e8b53280faca498e772
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628824"
 ---
 # <a name="c-editorconfig-formatting-conventions"></a>Convenzioni di formattazione EditorConfig in C++
 
-Il Visual Studio formattatore C++ include un set di impostazioni configurabili che possono essere applicate a livello globale. Per impostare le impostazioni di formattazione C++ per un'area di lavoro specifica, usare [clangformat](https://clang.llvm.org/docs/ClangFormat.html) o [EditorConfig.](https://editorconfig.org/) Sia Visual Studio che Visual Studio Code hanno il supporto predefinito di EditorConfig per ognuna delle impostazioni di formattazione C++ globali di Visual Studio, con le impostazioni di EditorConfig che hanno la precedenza. Ciò significa che è possibile aggiungere file EditorConfig all'area di lavoro per configurare la formattazione C++ a un livello più granulare e applicare uno stile di codice coerente per tutti gli utenti che contribuiscono al progetto.
+Il Visual Studio formattatore C++ include un set di impostazioni configurabili che possono essere applicate a livello globale. Per impostare le impostazioni di formattazione C++ per un'area di lavoro specifica, usare [clangformat](https://clang.llvm.org/docs/ClangFormat.html) o [EditorConfig.](https://editorconfig.org/) Sia Visual Studio che Visual Studio Code hanno il supporto predefinito di EditorConfig per ognuna delle impostazioni di formattazione C++ di Visual Studio globale, con le impostazioni di EditorConfig che hanno la precedenza. Ciò significa che è possibile aggiungere file EditorConfig all'area di lavoro per configurare la formattazione C++ a un livello più granulare e applicare uno stile di codice coerente per tutti gli utenti che contribuiscono al progetto.
 
 ## <a name="c-formatting-conventions"></a>Convenzioni di formattazione C++
 
@@ -202,7 +202,7 @@ Nella parte restante di questo documento sono elencate tutte le impostazioni di 
 
 - Valori `cpp_space_within_parameter_list_parentheses` dei nomi: `true` , `false`
 
-**Inserire spazio tra parentesi quando l'elenco di argomenti è vuoto**
+**Inserire uno spazio tra parentesi quando l'elenco di argomenti è vuoto**
 
 - Nome: `cpp_space_between_empty_parameter_list_parentheses`
 - Valori: `true` , `false`

@@ -17,11 +17,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 38d43074275db57180938e20fc242ff0a1524711
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075047"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631181"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 
@@ -50,7 +50,7 @@ In questo contesto, il *termine* oggetto fa riferimento a un oggetto business pe
 
     L'elenco dei controlli disponibili dipende dalla finestra di progettazione aperta, dalla versione di .NET di destinazione del progetto e dal fatto che siano stati aggiunti controlli personalizzati che supportano data binding alla casella **degli strumenti**. Se il controllo da creare non è presente nell'elenco dei controlli disponibili, è possibile aggiungere il controllo all'elenco. Per altre informazioni, vedere [Aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-    Per informazioni su come creare un controllo Windows Forms personalizzato che può essere aggiunto  all'elenco di controlli per tabelle o oggetti dati nella finestra Origini dati, vedere Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)che supporta oggetti data binding .
+    Per informazioni su come creare un controllo form Windows personalizzato che può essere aggiunto  all'elenco di controlli per tabelle o oggetti dati nella finestra Origini dati, vedere Creare un controllo utente [Windows Forms](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)che supporti oggetti data binding .
 
 ## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Impostare i controlli da creare per le colonne di dati o le proprietà
 

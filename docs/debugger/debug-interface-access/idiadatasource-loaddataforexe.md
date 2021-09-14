@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e11a6d85e8a33803b7cbf8b912d3db834996753
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630491"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Apre e prepara i dati di debug associati al file .exe/.dll.
@@ -60,9 +60,9 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
 ## <a name="remarks"></a>Commenti
-L'intestazione di debug del file .exe/.dll il percorso dei dati di debug associato.
+L'intestazione di debug del .exe/.dll il percorso dei dati di debug associato.
 
-Se si caricano dati di debug da un server di simboli, *symsrv.dll* deve essere presente nella stessa directory in cui è installata l'applicazione dell'utente o *msdia140.dll* oppure deve essere presente nella directory di sistema.
+Se si caricano dati di debug da un server di simboli,symsrv.dlldeve essere presente nella stessa directory *in* cui è installata l'applicazione dell'utente o *msdia140.dll* oppure deve essere presente nella directory di sistema.
 
 Questo metodo legge l'intestazione di debug e quindi cerca e prepara i dati di debug. Facoltativamente, lo stato di avanzamento della ricerca può essere segnalato e controllato tramite callback. Ad esempio, [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) viene richiamato quando il metodo trova `IDiaDataSource::loadDataForExe` ed elabora una directory di debug.
 

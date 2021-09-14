@@ -7,17 +7,17 @@ ms.date: 06/06/2019
 ms.technology: vs-container-tools
 ms.topic: reference
 ms.openlocfilehash: b284296e4f7bc0f2d641e3094717f95161aef2d7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045021"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631764"
 ---
 # <a name="container-tools-build-properties"></a>Proprietà di compilazione di Strumenti contenitore
 
-È possibile personalizzare la Visual Studio compilazione dei progetti contenitore impostando le proprietà MSBuild per compilare il progetto. Ad esempio, è possibile modificare il nome del Dockerfile, specificare tag ed etichette per le immagini, fornire argomenti aggiuntivi passati ai comandi di Docker e controllare se Visual Studio esegue determinate ottimizzazioni delle prestazioni, ad esempio la compilazione all'esterno dell'ambiente contenitore. È anche possibile impostare le proprietà di debug, ad esempio il nome del file eseguibile da avviare e gli argomenti della riga di comando da fornire.
+È possibile personalizzare la Visual Studio compila i progetti contenitore impostando le proprietà MSBuild per compilare il progetto. Ad esempio, è possibile modificare il nome del Dockerfile, specificare tag ed etichette per le immagini, fornire argomenti aggiuntivi passati ai comandi Docker e controllare se Visual Studio esegue determinate ottimizzazioni delle prestazioni, ad esempio la compilazione all'esterno dell'ambiente contenitore. È anche possibile impostare le proprietà di debug, ad esempio il nome del file eseguibile da avviare e gli argomenti della riga di comando da fornire.
 
-Per impostare il valore di una proprietà, modificare il file di progetto. Si supponga, ad esempio, che il Dockerfile sia *denominato MyDockerfile*. È possibile impostare la `DockerfileFile` proprietà nel file di progetto come indicato di seguito.
+Per impostare il valore di una proprietà, modificare il file di progetto. Si supponga, ad esempio, che il dockerfile sia *denominato MyDockerfile*. È possibile impostare la `DockerfileFile` proprietà nel file di progetto come indicato di seguito.
 
 ```xml
 <PropertyGroup>
@@ -25,28 +25,28 @@ Per impostare il valore di una proprietà, modificare il file di progetto. Si su
 </PropertyGroup>
 ```
 
-È possibile aggiungere l'impostazione della proprietà a un elemento esistente oppure, se non è `PropertyGroup` presente, creare un nuovo `PropertyGroup` elemento.
+È possibile aggiungere l'impostazione della proprietà a un elemento esistente oppure, se non ce `PropertyGroup` n'è uno, creare un nuovo `PropertyGroup` elemento.
 
 La tabella seguente illustra le proprietà MSBuild disponibili per i progetti contenitore. La NuGet del pacchetto si applica a [Microsoft.VisualStudio.Azure.Containers.Tools.Targets.](https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/)
 
 | Nome proprietà | Descrizione | Valore predefinito  | Versione del pacchetto NuGet|
 |---------------|-------------|----------------|----------------------|
-| ContainerDevelopmentMode | Controlla se l'ottimizzazione "compilazione in host" ("debug in modalità rapida") è abilitata.  I valori consentiti **sono Fast** e **Regular.** | Veloce |1.0.1872750 o versione più recente|
+| ContainerDevelopmentMode | Controlla se l'ottimizzazione "build-on-host" ("debug in modalità rapida") è abilitata.  I valori consentiti **sono Fast** e **Regular.** | Veloce |1.0.1872750 o versione più recente|
 | ContainerVsDbgPath | Percorso del debugger VSDBG. | `%USERPROFILE%\vsdbg\vs2017u5` |1.0.1985401 o versione più recente|
 | DockerDebuggeeArguments | Durante il debug, al debugger viene richiesto di passare questi argomenti all'eseguibile avviato. | Non applicabile ai ASP.NET .NET Framework progetto |1.7.8 o versione più recente|
-| DockerDebuggeeProgram | Durante il debug, al debugger viene richiesto di avviare il file eseguibile. | Per i progetti .NET Core: dotnet, ASP.NET .NET Framework: Non applicabile (viene sempre usato IIS) |1.7.8 o versione più recente|
+| DockerDebuggeeProgram | Durante il debug, al debugger viene richiesto di avviare questo eseguibile. | Per i progetti .NET Core: dotnet, ASP.NET .NET Framework progetti: Non applicabile (IIS viene sempre usato) |1.7.8 o versione più recente|
 | DockerDebuggeeKillProgram | Questo comando viene usato per elaborare il processo in esecuzione in un contenitore. | Non applicabile ai ASP.NET .NET Framework progetto |1.7.8 o versione più recente|
 | DockerDebuggeeWorkingDirectory | Durante il debug, al debugger viene richiesto di usare questo percorso come directory di lavoro. | C:\app (Windows) o /app (Linux) |1.7.8 o versione più recente|
-| DockerDefaultTargetOS | Sistema operativo di destinazione predefinito usato durante la compilazione dell'immagine Docker. | Impostata in base Visual Studio. |1.0.1985401 o versione più recente|
+| DockerDefaultTargetOS | Sistema operativo di destinazione predefinito usato durante la compilazione dell'immagine Docker. | Impostare in base Visual Studio. |1.0.1985401 o versione più recente|
 | DockerImageLabels | Set predefinito di etichette applicate all'immagine Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 o versione più recente|
-| DockerFastModeProjectMountDirectory|In **modalità rapida** questa proprietà controlla la posizione in cui la directory di output del progetto è montata su volume nel contenitore in esecuzione.|C:\app (Windows) o /app (Linux)|1.9.2 o versione più recente|
-| DockerfileBuildArguments | Argomenti aggiuntivi passati al [comando di compilazione docker.](https://docs.docker.com/engine/reference/commandline/build/) | Non applicabile. |1.0.1872750 o versione più recente|
-| DockerfileContext | Contesto predefinito usato durante la compilazione dell'immagine Docker, come percorso relativo al Dockerfile. | Impostata in base Visual Studio. |1.0.1872750 o versione più recente|
+| DockerFastModeProjectMountDirectory|In **modalità veloce** questa proprietà controlla dove la directory di output del progetto è montata su volume nel contenitore in esecuzione.|C:\app (Windows) o /app (Linux)|1.9.2 o versione più recente|
+| DockerfileBuildArguments | Argomenti aggiuntivi passati al [comando di compilazione Docker.](https://docs.docker.com/engine/reference/commandline/build/) | Non applicabile. |1.0.1872750 o versione più recente|
+| DockerfileContext | Contesto predefinito usato durante la compilazione dell'immagine Docker, come percorso relativo a Dockerfile. | Impostare in base Visual Studio. |1.0.1872750 o versione più recente|
 | DockerfileFastModeStage | Fase Dockerfile (ovvero destinazione) da usare quando si compila l'immagine in modalità di debug. | Prima fase trovata nel Dockerfile (base) |
-| DockerfileFile | Descrive il Dockerfile predefinito che verrà usato per compilare/eseguire il contenitore per il progetto. Può anche trattarsi di un percorso. | Dockerfile |1.0.1872750 o versione più recente|
+| DockerfileFile | Descrive il Dockerfile predefinito che verrà usato per compilare/eseguire il contenitore per il progetto. Può trattarsi anche di un percorso. | Dockerfile |1.0.1872750 o versione più recente|
 | DockerfileRunArguments | Argomenti aggiuntivi passati al [comando docker run.](https://docs.docker.com/engine/reference/commandline/run/) | Non applicabile. |1.0.1872750 o versione più recente|
 | DockerfileRunEnvironmentFiles | Elenco delimitato da punto e virgola dei file di ambiente applicati durante l'esecuzione di Docker. | Non applicabile. |1.0.1872750 o versione più recente|
-| DockerfileTag | Tag che verrà usato durante la compilazione dell'immagine Docker. Durante il debug, al tag :d". | Nome dell'assembly dopo la pulizia dei caratteri non alfanumerici con le regole seguenti: <br/> Se il tag risultante è tutto numerico, "image" viene inserito come prefisso (ad esempio, image2314) <br/> Se il tag risultante è una stringa vuota, come tag viene usato "image". |1.0.1872750 o versione più recente|
+| DockerfileTag | Tag che verrà usato durante la compilazione dell'immagine Docker. Nel debug viene aggiunto un :d ev al tag . | Nome dell'assembly dopo l'stripping di caratteri non alfanumerici con le regole seguenti: <br/> Se il tag risultante è tutto numerico, "image" viene inserito come prefisso (ad esempio, image2314) <br/> Se il tag risultante è una stringa vuota, come tag viene usato "image". |1.0.1872750 o versione più recente|
 
 ## <a name="example"></a>Esempio
 
@@ -78,7 +78,7 @@ Il file di progetto seguente mostra esempi di alcune di queste impostazioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per informazioni sulle proprietà MSBuild in genere, [vedere MSBuild proprietà](../msbuild/msbuild-properties.md).
+Per informazioni sulle proprietà MSBuild in generale, vedere MSBuild [proprietà](../msbuild/msbuild-properties.md).
 
 ## <a name="see-also"></a>Vedi anche
 

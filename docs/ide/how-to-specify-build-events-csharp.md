@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Specificare gli eventi di compilazione (C#)'
-description: Informazioni su come usare gli eventi di compilazione per specificare i comandi da eseguire prima dell'avvio della compilazione o al termine della compilazione.
+description: Informazioni su come usare gli eventi di compilazione per specificare i comandi che vengono eseguiti prima dell'inizio o al termine della compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
@@ -18,11 +18,11 @@ manager: jmartens
 ms.workload:
 - dotnet
 ms.openlocfilehash: e1ea031391b93d571b9f34ad820f1a6957dab242
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628781"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
 
@@ -178,7 +178,7 @@ Richiamare quindi questo comando in un evento di post-compilazione per modificar
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Pagina eventi di compilazione, Progettazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
-- [Finestra di dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Pagina Eventi di compilazione, Project progettazione (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
+- [Finestra di dialogo riga di comando evento pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

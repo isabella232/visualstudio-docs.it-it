@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: bc32c0ce666f51b42002eada314c7d8b6c5c0eba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629880"
 ---
 # <a name="idiaframedataget_cplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 Recupera un flag che indica se la gestione delle eccezioni C++ è in vigore.
@@ -41,7 +41,7 @@ HRESULT get_cplusplusExceptionHandling (
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Per determinare se la gestione strutturata delle eccezioni è in vigore (che è molto diversa dalla gestione delle eccezioni C++), chiamare il metodo [IDiaFrameData::get_systemExceptionHandling.](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)
+ Per determinare se la gestione delle eccezioni strutturata è in vigore (che è molto diversa dalla gestione delle eccezioni C++), chiamare il metodo [IDiaFrameData::get_systemExceptionHandling.](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

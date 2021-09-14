@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d1dfb73749774e5ae9409b7f00a78bd59008d271
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628763"
 ---
 # <a name="invert-if-statement"></a>Istruzione Invert if
 
@@ -39,7 +39,7 @@ Questo refactoring si applica a:
 
     ![Invert if else](media/invert-if.png)
 
-2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
 
     ![Correzione del codice Invert if else](media/invert-if-codefix.png)
 

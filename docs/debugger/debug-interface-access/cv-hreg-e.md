@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: e2e35a4dd170d78aeda22200d4634300bdb8a184
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154800"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630660"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 Specifica un registro di destinazione.
@@ -422,9 +422,9 @@ CV_ALPHA_* Registri usati dal processore della serie Alpha AXP di Digital Equipm
 
 CV_PPC_* Registri usati dal processore PowerPC Motorola/IBM.
 
-CV_SH3_* e CV_SH_ registri \* usati dal processore Hitachi SH3 e Hitachi SH series.
+CV_SH3_* e CV_SH_ \* registri usati dal processore hitachi SH3 e hitachi sh serie.
 
-CV_ARM_* Registri usati dai processori RISC Machine (ARM) avanzati.
+CV_ARM_* Registri usati da processori RISC Machine (ARM) avanzati.
 
 CV_IA64_* Registri usati dai processori Intel serie IA64.
 
@@ -435,7 +435,7 @@ CV_AM33_* Registri usati da Matsushita/Panasonic AM33 e dai processori correlati
 CV_M32R_* Registri usati dal processore Mitsubishi M32R.
 
 ## <a name="remarks"></a>Commenti
-Ogni tipo di processore usa un proprio set univoco di registri.
+Ogni tipo di processore usa il proprio set univoco di registri.
 
 I valori di questa enumerazione vengono passati ai metodi seguenti:
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ce245c8c9797aaff8ed65759b8b06e4334567df5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629675"
 ---
 # <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Recupera il numero di riga di origine in base uno in cui termina l'istruzione o l'espressione.
@@ -35,7 +35,7 @@ HRESULT get_lineNumberEnd (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di riga in cui termina l'istruzione o l'espressione. Se il valore è zero, le informazioni sulla fine non sono presenti.
+[out] Restituisce il numero di riga in cui termina l'istruzione o l'espressione. Se il valore è zero, le informazioni finali non sono presenti.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

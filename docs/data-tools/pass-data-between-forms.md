@@ -1,6 +1,6 @@
 ---
 title: Passare dati da un form all'altro
-description: In questa Windows procedura dettagliata sui controlli Form vengono fornite istruzioni dettagliate per il passaggio di dati da un form a un altro.
+description: In questa Windows procedura dettagliata per i controlli Form, ottenere istruzioni dettagliate per il passaggio di dati da un form a un altro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -21,26 +21,26 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 030fe8a72637e82bc317c5fb457f4e8861223c52
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045047"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631242"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 
 Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio dei dati da un form a un altro. Usando le tabelle customers e orders di Northwind, un modulo consente agli utenti di selezionare un cliente e un secondo modulo visualizza gli ordini del cliente selezionato. Questa procedura dettagliata illustra come creare un metodo nel secondo form che riceve i dati dal primo form.
 
 > [!NOTE]
-> Questa procedura dettagliata illustra solo un modo per passare dati tra i form. Sono disponibili altre opzioni per il passaggio di dati a un form, tra cui la creazione di un secondo costruttore per ricevere dati o la creazione di una proprietà pubblica che può essere impostata con i dati del primo form.
+> Questa procedura dettagliata illustra solo un modo per passare dati tra i form. Esistono altre opzioni per passare dati a un form, tra cui la creazione di un secondo costruttore per ricevere dati o la creazione di una proprietà pubblica che può essere impostata con i dati del primo form.
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
-- Creazione di un nuovo **Windows di applicazione Form.**
+- Creazione di un nuovo **progetto Windows'applicazione Forms.**
 
 - Creazione e configurazione di un set di dati con la [Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
-- Selezione del controllo da creare nel form durante il trascinamento di elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [Impostare il controllo da creare quando si trascina dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Selezione del controllo da creare nel form durante il trascinamento di elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Creazione del controllo associato a dati mediante il trascinamento degli elementi dalla finestra **Origini dati** nel form.
 
@@ -54,27 +54,27 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nell'Programma di installazione di Visual Studio, SQL Server Express Local DB può essere installato come parte del  carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina di [download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express oppure tramite il Programma di installazione di Visual Studio **.** Nel Programma di installazione di Visual Studio, SQL Server Express Local DB può essere installato come parte  del carico di lavoro Archiviazione ed elaborazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
+    1. In Visual Studio aprire la **finestra** SQL Server Esplora oggetti. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse Local DB'istanza di query e **scegliere Nuova query**.
 
        Verrà visualizzata una finestra dell'editor di query.
 
-    2. Copiare [lo script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
+    2. Copiare [lo script Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) Northwind negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con dati.
 
     3. Incollare lo script T-SQL nell'editor di query e quindi scegliere **il pulsante** Esegui.
 
-       Dopo un breve periodo di tempo, l'esecuzione della query termina e viene creato il database Northwind.
+       Dopo un breve periodo di tempo, l'esecuzione della query viene completata e viene creato il database Northwind.
 
 ## <a name="create-the-windows-forms-app-project"></a>Creare il progetto Windows'app Forms
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop**.
 
-3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
+3. Nel riquadro centrale selezionare il tipo di **progetto Windows'app Forms.**
 
 4. Assegnare al **progetto il nome PassingDataBetweenForms** e quindi scegliere **OK.**
 
@@ -82,7 +82,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
-1. Per aprire la **finestra Origini** dati , **scegliere** Mostra origini dati dal menu **Dati**.
+1. Per aprire la **finestra Origini** dati, **scegliere** Mostra origini dati dal menu **Dati**.
 
 2. Nella finestra **Origini dati** selezionare Aggiungi nuova **origine dati** per avviare la Configurazione **guidata origine** dati.
 
@@ -118,7 +118,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 ## <a name="create-the-second-form"></a>Creare il secondo modulo
 
-Creare un secondo modulo a cui passare i dati.
+Creare un secondo form a cui passare i dati.
 
 1. Scegliere **Aggiungi Windows Form** dal menu **Progetto**.
 
@@ -157,7 +157,7 @@ Aggiungere una query TableAdapter a Form2 per caricare gli ordini per il cliente
 
 6. Fare clic su **Avanti**.
 
-7. Per il **campo Fill a DataTableMethod Name (Compila nome metodo DataTable)** digitare `FillByCustomerID` .
+7. Per **l'elemento Fill a DataTableMethod Name** digitare `FillByCustomerID` .
 
 8. Deselezionare l'opzione **Restituisci una DataTable**, quindi scegliere **Avanti**.
 
@@ -172,7 +172,7 @@ Aggiungere una query TableAdapter a Form2 per caricare gli ordini per il cliente
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb" id="Snippet1":::
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs" id="Snippet1":::
 
-## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Creare un metodo in Form1 per passare i dati e visualizzare Form2
+## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Creare un metodo in Form1 per passare dati e visualizzare Form2
 
 1. In **Form1** fare clic con il pulsante destro del mouse sulla griglia dati del cliente, quindi scegliere **Proprietà**.
 
@@ -199,7 +199,7 @@ A seconda dei requisiti dell'applicazione, si potranno eseguire diverse operazio
 
 - Modifica del set di dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).
 
-- Aggiunta di funzionalità per il salvataggio dei dati nel database. Per altre informazioni, vedere [Salvare di nuovo i dati nel database.](../data-tools/save-data-back-to-the-database.md)
+- Aggiunta di funzionalità per il salvataggio dei dati nel database. Per altre informazioni, vedere [Salvare i dati nel database](../data-tools/save-data-back-to-the-database.md).
 
 ## <a name="see-also"></a>Vedi anche
 

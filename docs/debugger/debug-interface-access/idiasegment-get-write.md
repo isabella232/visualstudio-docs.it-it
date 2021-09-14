@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: e6d718c187c862febe20d94182b858e993599306
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629280"
 ---
 # <a name="idiasegmentget_write"></a>IDiaSegment::get_write
 Recupera un flag che indica se il segmento può essere modificato.

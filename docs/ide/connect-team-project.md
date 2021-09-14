@@ -9,11 +9,11 @@ author: TerryGLee
 ms.manager: jmartens
 monikerRange: <=vs-2019
 ms.openlocfilehash: fd95da37fc0f6dcf5d7c735bc1e8b1afe050b9f8
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628835"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Connettersi a progetti in Team Explorer
 
@@ -25,7 +25,7 @@ Usare le finestra degli strumenti di **Team Explorer** per coordinare le attivit
 
 ::: moniker range="vs-2019"
 
-Team Explorer connette Visual Studio ai repository del controllo della versione di Team Foundation (TFVC) e ai progetti ospitati [in Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) o in un [Azure DevOps Server locale](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true) (in precedenza noto come TFS). È possibile gestire codice sorgente, elementi di lavoro e compilazioni.
+Team Explorer connette Visual Studio ai repository del controllo della versione di Team Foundation (TFVC) e ai progetti ospitati [in Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) o in un [Azure DevOps Server locale](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true) (precedentemente noto come TFS). È possibile gestire codice sorgente, elementi di lavoro e compilazioni.
 
 > [!IMPORTANT]
 > Con il rilascio di Visual Studio 2019 [**versione 16.8,**](/visualstudio/releases/2019/release-notes-history)l'esperienza di controllo della versione di Git è disponibile per impostazione predefinita. Per altre informazioni sul confronto con Team Explorer, vedere la pagina Confronto [**side-by-side**](../version-control/git-team-explorer-feature-comparison.md) tra Git e Team Explorer.
@@ -44,7 +44,7 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
 
 1. Nella sezione **Sfoglia un repository** selezionare Azure DevOps . 
 
-    ![Screenshot della sezione "Sfoglia un repository" della finestra di dialogo "Connessione a un Project" in Visual Studio 2019 versione 16.8 e successive](../ide/media/vs-2019/browse-repository-azure-devops.png)
+    ![Screenshot della sezione "Sfoglia un repository" della finestra di dialogo "Da Connessione a un Project" in Visual Studio 2019 versione 16.8 e successive](../ide/media/vs-2019/browse-repository-azure-devops.png)
 
 1. Se viene visualizzata una finestra di accesso, accedere al proprio account.
 
@@ -65,7 +65,7 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
 
 1. Aprire Visual Studio 2019.
 
-1. Nella finestra iniziale selezionare **Clona o estrai il codice**.
+1. Nella finestra iniziale selezionare **Clona o estrai codice**.
 
    ![Screenshot della finestra "Crea un nuovo progetto" in Visual Studio 2019 versione 16.7 e precedenti](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
@@ -77,7 +77,7 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
 
 1. Nella finestra **Connessione a un Project** scegliere il repo a cui connettersi e quindi selezionare **Clona**.
 
-      ![Screenshot della finestra di dialogo "Connessione a un Project" generata da Visual Studio 2019 versione 16.7 e precedenti](../get-started/media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Screenshot della finestra di dialogo "Connessione a Project" generata da Visual Studio 2019 versione 16.7 e precedenti](../get-started/media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > Ciò che compare nella casella di riepilogo dipende dai repository Azure DevOps ai quali si ha accesso.
@@ -88,7 +88,7 @@ La modalità Team Explorer per connettersi a un progetto dipende dalla versione 
 
 1. Per visualizzare le cartelle e i file, selezionare il **collegamento Mostra visualizzazione** cartelle.
 
-     ![Screenshot della sezione Soluzioni della finestra Team Explorer in Visual Studio 2019 versione 16.7 e precedenti, dopo il completamento del clone](../get-started/media/vs-2019/show-folder-view-azure-devops.png)
+     ![Screenshot della sezione Soluzioni della finestra Team Explorer in Visual Studio 2019 versione 16.7 e precedenti, al termine della clonazione](../get-started/media/vs-2019/show-folder-view-azure-devops.png)
 
      Visual Studio apre **Esplora soluzioni**.
 
@@ -119,7 +119,7 @@ Per connettersi a un progetto:
 
    ![Pulsante Gestione connessioni in Team Explorer](media/team-explorer/manage-connections.png "Pulsante Team Explorer - Gestisci connessioni in Visual Studio.")
 
-1. Nella pagina **Connessione** scegliere **Gestisci connessioni Connessione** a > **un progetto**.
+1. Nella pagina **Connessione** scegliere **Gestisci** connessioni Connessione a > **un progetto**.
 
    ![Connettersi a un progetto in Team Explorer](media/team-explorer/connect-project.png "L Team Explorer- Connessione a un'Project in Visual Studio.")
 

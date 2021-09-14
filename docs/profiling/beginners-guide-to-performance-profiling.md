@@ -19,11 +19,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 349d4c076c820c6f75291b8048617216cc73717c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084870"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628397"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU
 
@@ -93,7 +93,7 @@ Se **l'utilizzo** della CPU non fornisce i dati necessari, altri strumenti di pr
      A questo punto, è possibile iniziare ad analizzare i dati.
 
      > [!TIP]
-     >  Quando si tenta di identificare i problemi di prestazioni, eseguire più misurazioni. Le prestazioni variano naturalmente da esecuzione a esecuzione e i percorsi di codice vengono in genere eseguiti più lentamente la prima volta che vengono eseguiti a causa di operazioni di inizializzazione una sola volta, ad esempio il caricamento di DLL, i metodi di compilazione JIT e l'inizializzazione delle cache. Prendendo più misurazioni, si ottiene un'idea migliore dell'intervallo e della mediana della metrica visualizzata, che consente di confrontare la prima volta rispetto alle prestazioni dello stato stabile di un'area di codice.
+     >  Quando si tenta di identificare i problemi di prestazioni, eseguire più misurazioni. Le prestazioni variano naturalmente da esecuzione a esecuzione e i percorsi di codice vengono in genere eseguiti più lentamente la prima volta che vengono eseguiti a causa di operazioni di inizializzazione una sola volta, ad esempio il caricamento di DLL, i metodi di compilazione JIT e l'inizializzazione delle cache. Prendendo più misurazioni, si ottiene un'idea migliore dell'intervallo e della mediana della metrica visualizzata, che consentono di confrontare la prima volta rispetto alle prestazioni dello stato stabile di un'area di codice.
 
 ## <a name="step-2-analyze-cpu-usage-data"></a>Passaggio 2: Analizzare i dati di utilizzo della CPU
 

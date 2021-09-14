@@ -22,11 +22,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: ac64e951c5307d0fe940e6ec92c2e35a727e3811
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631367"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
@@ -42,7 +42,7 @@ Questa procedura dettagliata illustra il processo seguente:
 
 4. Compilare un set di dati con i dati della tabella Customers del database Northwind.
 
-5. Usare la **funzionalità Mostra dati** tabella in **Esplora server** accedere ai dati della tabella Customers e modificare un record.
+5. Usare la **funzionalità Mostra dati** **tabella** Esplora server per accedere ai dati della tabella Customers e modificare un record.
 
 6. Modificare lo stesso record con un valore diverso, aggiornare il set di dati e tentare di scrivere le modifiche nel database, determinando la creazione di un errore di concorrenza.
 
@@ -52,11 +52,11 @@ Questa procedura dettagliata illustra il processo seguente:
 
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** **Nell'Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nel **Programma di installazione di Visual Studio**, è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
+    1. In Visual Studio aprire la **SQL Server Esplora oggetti** predefinita. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -105,7 +105,7 @@ Creare quindi un set di dati **denominato NorthwindDataSet:**
 
 ## <a name="create-a-data-bound-datagridview-control"></a>Creare un controllo DataGridView associato a dati
 
-In questa sezione viene creato un oggetto trascinando l'elemento Customers dalla finestra Origini <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> dati nel form Windows dati.  
+In questa sezione viene creato un <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> oggetto  trascinando **l'elemento Customers** dalla finestra Origini dati nel form Windows dati.
 
 1. Per aprire la **finestra Origini** dati, **scegliere** Mostra origini dati dal menu **Dati**.
 
@@ -203,9 +203,9 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 6. Nel primo record (**ALFKI**) modificare **ContactName** in **Maria Anders2**.
 
     > [!NOTE]
-    > Passare a un'altra riga per eseguire il commit della modifica.
+    > Passare a una riga diversa per eseguire il commit della modifica.
 
-7. Passare al modulo in esecuzione di ConcurrencyWalkthrough.
+7. Passare al form in esecuzione di ConcurrencyWalkthrough.
 
 8. Nel primo record del modulo (**ALFKI**) modificare **ContactName** in **Maria Anders1**.
 

@@ -16,23 +16,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6f93279bd67a8e293d3883e573ad6dbb8aee8ccc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631067"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procedura dettagliata: Creare un oggetto DataTable nel Progettazione DataSet
 
-In questa procedura dettagliata viene illustrato come creare <xref:System.Data.DataTable> un oggetto (senza un TableAdapter) usando il **Progettazione DataSet**. Per informazioni sulla creazione di tabelle di dati che includono TableAdapter, vedere [Creare e configurare oggetti TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
+Questa procedura dettagliata illustra come creare un <xref:System.Data.DataTable> oggetto (senza un TableAdapter) usando il **Progettazione DataSet**. Per informazioni sulla creazione di tabelle di dati che includono TableAdapter, vedere [Creare e configurare oggetti TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
 
 ## <a name="create-a-new-windows-forms-application"></a>Creare una nuova applicazione Windows Forms Application
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
+2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi **selezionare Windows Desktop.**
 
-3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
+3. Nel riquadro centrale selezionare il tipo di **Windows di progetto App** Forms.
 
 4. Assegnare al **progetto il nome DataTableWalkthrough** e quindi scegliere **OK.**
 
@@ -52,7 +52,7 @@ In questa procedura dettagliata viene illustrato come creare <xref:System.Data.D
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>Aggiungere un nuovo oggetto DataTable al set di dati
 
-1. Trascinare **un oggetto DataTable** dalla **scheda DataSet** della casella **degli** strumenti **nel Progettazione DataSet**.
+1. Trascinare **un oggetto DataTable** dalla **scheda DataSet** della Casella **degli** strumenti **nel Progettazione DataSet**.
 
      Una tabella denominata **DataTable1** viene aggiunta al set di dati.
 
@@ -60,7 +60,7 @@ In questa procedura dettagliata viene illustrato come creare <xref:System.Data.D
 
 ## <a name="add-columns-to-the-datatable"></a>Aggiungere colonne all'oggetto DataTable
 
-1. Fare clic con il pulsante destro **del mouse Musica** tabella. Scegliere **Aggiungi**, quindi fare clic su **Colonna**.
+1. Fare clic con il pulsante destro **del Musica** tabella. Scegliere **Aggiungi**, quindi fare clic su **Colonna**.
 
 2. Assegnare alla colonna il nome `SongID` .
 

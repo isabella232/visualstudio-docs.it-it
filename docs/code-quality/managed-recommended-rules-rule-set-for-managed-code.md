@@ -1,7 +1,7 @@
 ---
 title: Set di regole consigliate gestite per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole consigliate gestite in Visual Studio. Vedere le descrizioni delle regole incentrate su sicurezza, affidabilità e altri problemi critici.
+description: Informazioni sul set di regole regole consigliate gestite in Visual Studio. Vedere le descrizioni delle regole incentrate su sicurezza, affidabilità e altri problemi critici.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
@@ -12,15 +12,15 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2fb85b6106ed57dc891fe5bc7c99d0ecfd48dcd7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113991"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631878"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Set di regole consigliate gestite per codice gestito
 
-Usare il set di regole consigliate gestite da Microsoft per concentrarsi sui problemi più critici nel codice gestito, inclusi potenziali problemi di sicurezza, arresti anomali delle applicazioni e altri errori di logica e progettazione importanti. Questo set di regole include tutte le regole nel set [di regole minime](managed-minimum-rules-rule-set-for-managed-code.md) gestite.
+Usare il set di regole microsoft managed recommended rules per concentrarsi sui problemi più critici nel codice gestito, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. Questo set di regole include tutte le regole nel set [di regole regole minime](managed-minimum-rules-rule-set-for-managed-code.md) gestite.
 
 Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti.
 

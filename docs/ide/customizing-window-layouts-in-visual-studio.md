@@ -27,11 +27,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d01ffd478c2ddaf95b46cf3d0ceb2a29fbb1aca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628782"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizzare il layout delle finestre in Visual Studio
 
@@ -41,9 +41,9 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 ## <a name="tool-and-document-windows"></a>Finestre dei documenti e degli strumenti
 
-L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli **strumenti Esplora soluzioni**, **Esplora server**, **Finestra di output** **,** Elenco errori , le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre del documento possono essere trascinate dalla relativa scheda. Fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni nella finestra.
+L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli **strumenti Esplora soluzioni**, **Esplora server**, **Finestra di output**, **Elenco** errori , le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre del documento possono essere trascinate dalla relativa scheda. Fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni nella finestra.
 
-Il menu **Finestra** mostra le opzioni per ancorare, mobile e nascondere le finestre nell'IDE. Fare clic con il pulsante destro del mouse sulla barra del titolo o sulla scheda di una finestra per visualizzare opzioni aggiuntive per tale specifica finestra. È possibile visualizzare più istanze di determinate finestre degli strumenti per volta. Ad esempio, è possibile visualizzare più finestre di un browser Web, nonché creare ulteriori istanze di alcune finestre degli strumenti selezionando **Nuova finestra** nel menu **Finestra** .
+Il menu **Finestra** mostra le opzioni per l'ancoraggio, la virgola mobile e la visualizzazione di finestre nell'IDE. Fare clic con il pulsante destro del mouse sulla barra del titolo o sulla scheda di una finestra per visualizzare opzioni aggiuntive per tale specifica finestra. È possibile visualizzare più istanze di determinate finestre degli strumenti per volta. Ad esempio, è possibile visualizzare più finestre di un browser Web, nonché creare ulteriori istanze di alcune finestre degli strumenti selezionando **Nuova finestra** nel menu **Finestra** .
 
 ### <a name="split-windows"></a>Finestre divise
 
@@ -61,7 +61,7 @@ Nella scheda **Anteprima** è possibile visualizzare i file nell'editor senza ap
 
 #### <a name="vertical-document-tabs"></a>Schede di documenti verticali
 
-**[Novità della versione 16.4:](/visualstudio/releases/2019/release-notes-v16.4/)** è stata aggiunta una delle principali richieste di [funzionalità,](https://developercommunity.visualstudio.com/idea/467369/vertical-group-tab.html)schede documento verticale, nella versione Visual Studio 2019 versione 16.4. A questo punto, è possibile gestire le schede dei documenti in un elenco verticale sul lato sinistro o destro dell'editor.
+Novità della **[versione 16.4:](/visualstudio/releases/2019/release-notes-v16.4/)** è stata aggiunta una delle principali richieste di [funzionalità,](https://developercommunity.visualstudio.com/idea/467369/vertical-group-tab.html)schede documento verticale, nella versione Visual Studio 2019 versione 16.4. A questo punto, è possibile gestire le schede dei documenti in un elenco verticale sul lato sinistro o destro dell'editor.
 
 È possibile applicare le schede dei documenti verticali nei modi seguenti:
 
@@ -85,7 +85,7 @@ I gruppi di schede estendono la possibilità di gestire un'area di lavoro limita
 
 Una finestra del documento o una finestra degli strumenti può essere *ancorata,* in modo che abbia una posizione e dimensioni all'interno della cornice della finestra IDE. È anche possibile posizionarlo come finestra mobile separata all'esterno dell'IDE.
 
-È possibile ancorare una finestra degli strumenti in qualsiasi punto all'interno del frame IDE. È anche possibile ancorare alcune finestre degli strumenti come finestre a schede nel frame dell'editor. È anche possibile ancorare le finestre dei documenti all'interno della cornice dell'editor e bloccarle alla posizione corrente nell'ordine di tabulazione.
+È possibile ancorare una finestra degli strumenti in un punto qualsiasi all'interno del frame IDE. È anche possibile ancorare alcune finestre degli strumenti come finestre a schede nella cornice dell'editor. È anche possibile ancorare le finestre dei documenti all'interno della cornice dell'editor e bloccarle alla posizione corrente nell'ordine di tabulazione.
 
 È anche possibile ancorare più  finestre per essere mobili in una zattera sopra o all'esterno dell'IDE. Le finestre degli strumenti possono anche essere nascoste o ridotte a icona.
 
@@ -129,7 +129,7 @@ La figura seguente illustra la finestra **Esplora soluzioni** mentre viene ancor
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Chiudere e nascondere automaticamente le finestre degli strumenti
 
-È possibile chiudere una finestra degli strumenti facendo clic sulla **X** in alto a destra della barra del titolo. Per riaprire la finestra, usare i tasti di scelta rapida o il comando di menu corrispondente. Le finestre degli strumenti supportano una funzionalità denominata *nascondi* automaticamente , che fa sì che una finestra slitta fuori strada quando si usa una finestra diversa. Quando una finestra viene nascosta automaticamente, il suo nome viene visualizzato in una scheda sul bordo dell'IDE. Per utilizzare nuovamente la finestra, posizionare il mouse sulla scheda affinché sia possibile visualizzare di nuovo la finestra.
+È possibile chiudere una finestra degli strumenti facendo clic sulla **X** in alto a destra della barra del titolo. Per riaprire la finestra, usare i tasti di scelta rapida o il comando di menu corrispondente. Le finestre degli strumenti supportano una funzionalità denominata *nascondi* automaticamente , che fa sì che una finestra slitta quando si usa un'altra finestra. Quando una finestra viene nascosta automaticamente, il suo nome viene visualizzato in una scheda sul bordo dell'IDE. Per utilizzare nuovamente la finestra, posizionare il mouse sulla scheda affinché sia possibile visualizzare di nuovo la finestra.
 
 ![Nascondi automaticamente](../ide/media/vs2015_auto_hide.png)
 
@@ -144,7 +144,7 @@ La figura seguente illustra la finestra **Esplora soluzioni** mentre viene ancor
 Se si dispone di un secondo monitor, supportato dal sistema operativo, è possibile scegliere in quale monitor visualizzare una finestra. È anche possibile raggruppare più finestre in *zattere* su altri monitor.
 
 > [!TIP]
-> È possibile creare più istanze di **Esplora soluzioni** e spostarle in un altro monitor. Fare clic con il pulsante destro del mouse sulla finestra e scegliere **Nuova visualizzazione Esplora soluzioni**. È possibile ripristinare tutte le finestre nel monitor originale facendo doppio clic mentre si sceglie **CTRL.**
+> È possibile creare più istanze di **Esplora soluzioni** e spostarle in un altro monitor. Fare clic con il pulsante destro del mouse sulla finestra e scegliere **Nuova visualizzazione Esplora soluzioni**. È possibile ripristinare tutte le finestre nel monitoraggio originale facendo doppio clic mentre si sceglie **CTRL.**
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Reimpostare, nominare e passare da un layout di finestra all'altro
 
@@ -172,19 +172,19 @@ Creare prima di tutto una soluzione di test che include due progetti, ognuno con
 
 ::: moniker range=">=vs-2019"
 
-1. Creare un nuovo progetto di applicazione **WPF** C#. Si immagini di sviluppare un'interfaccia utente in questo progetto. Si vuole aumentare al massimo lo spazio per la finestra di progettazione e spostare le altre finestra degli strumenti in modo che non diano fastidio.
+1. Creare un nuovo progetto applicazione **WPF** C#. Si immagini di sviluppare un'interfaccia utente in questo progetto. Si vuole aumentare al massimo lo spazio per la finestra di progettazione e spostare le altre finestra degli strumenti in modo che non diano fastidio.
 
 ::: moniker-end
 
-2. Se sono presenti più monitor, eseguire il pull della **Esplora soluzioni** e della **finestra** Proprietà sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
+2. Se si dispone di più  monitor, eseguire il pull della finestra Esplora soluzioni e **della** finestra Proprietà nel secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
 
 3. Premere **CTRL** + **ALT** + **X per** visualizzare la finestra Casella **degli** strumenti. Se la finestra è ancorata, trascinarla in modo da spostarla nel punto in cui si vuole posizionarla.
 
-4. Premere **F5 per** impostare Visual Studio modalità di debug. Modificare la posizione delle **finestre di debug Auto,** **Stack** di chiamate e **Output** nel modo desiderato. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
+4. Premere **F5** per impostare Visual Studio modalità di debug. Modificare la posizione delle **finestre Auto,** **Stack di chiamate** e **Debug** output nel modo desiderato. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
 
-5. Quando i layout in modalità di debug e modalità di modifica sono la modalità desiderata, scegliere **Window** Save Window Layout (Salva  >  **layout finestra).** Assegnare a questo layout il nome "Finestra di progettazione".
+5. Quando i layout sono in modalità di debug e modalità di modifica, scegliere **Finestra**  >  **Salva layout finestra**. Assegnare a questo layout il nome "Finestra di progettazione".
 
-     Si noti che al nuovo layout viene assegnato il tasto di scelta rapida successivo dall'elenco riservato **di** + **CTRL ALT** + **1...0.**
+     Si noti che al nuovo layout viene assegnato il tasto di scelta rapida successivo dall'elenco riservato **di** + **CTRL ALT** + **1...0**.
 
 #### <a name="create-a-database-project-and-layout"></a>Creare un layout e un progetto di database
 
@@ -192,7 +192,7 @@ Creare prima di tutto una soluzione di test che include due progetti, ognuno con
 
 2. Fare clic con il pulsante destro del mouse sul **nuovo progetto** Esplora soluzioni e scegliere Visualizza **in Esplora oggetti**. Verrà visualizzata la finestra **Esplora oggetti di SQL Server** che consente di accedere a tabelle, viste e altri oggetti nel database. È possibile impostare la finestra come mobile o lasciarla ancorata. Regolare le altre finestre degli strumenti nel modo desiderato. Per maggior realismo è possibile aggiungere un database effettivo, ma questa operazione non è necessaria ai fini di questa procedura dettagliata.
 
-3. Quando il layout è quello desiderato, scegliere Window  >  **Save Window Layout (Salva layout finestra) dal** menu principale. Assegnare a questo layout il nome "Progetto di database". Per questo progetto non è necessario creare anche un layout per la modalità di debug.
+3. Quando il layout è quello desiderato, scegliere Window Save Window Layout (Salva layout finestra) dal menu  >  **principale.** Assegnare a questo layout il nome "Progetto di database". Per questo progetto non è necessario creare anche un layout per la modalità di debug.
 
 #### <a name="switch-between-the-layouts"></a>Passare da un layout a un altro
 
@@ -205,15 +205,15 @@ Dopo l'applicazione del layout dell'interfaccia utente, notare che questo viene 
 Se in ufficio si usa una configurazione a più monitor e a casa una laptop con un solo monitor, è possibile creare layout ottimizzati per ogni computer.
 
 > [!NOTE]
-> Se si applica un layout a più monitor in un sistema a monitor singolo, le finestre mobili posizionate sul secondo monitor risulteranno nascoste dietro la finestra di Visual Studio. È possibile portare queste finestre in primo piano premendo **ALT+TAB.** Se in seguito Visual Studio con più monitor, è possibile ripristinare le finestre nelle posizioni specificate applicando nuovamente il layout.
+> Se si applica un layout a più monitor in un sistema a monitor singolo, le finestre mobili posizionate sul secondo monitor risulteranno nascoste dietro la finestra di Visual Studio. È possibile portare queste finestre in primo piano premendo **ALT+TAB.** Se in un secondo momento Visual Studio con più monitor, è possibile ripristinare le finestre nelle posizioni specificate applicando nuovamente il layout.
 
 #### <a name="manage-and-roam-your-layouts"></a>Gestire o effettuare il roaming dei layout
 
-È possibile rimuovere, rinominare o riordinare il layout personalizzato scegliendo **Gestione** layout  >  **finestra.** Se si sposta un layout, l'associazione principale viene adattata automaticamente alla nuova posizione nell'elenco. I binding non possono essere modificati in altro modo ed è quindi possibile archiviare un massimo di 10 layout alla volta.
+È possibile rimuovere, rinominare o riordinare il layout personalizzato scegliendo **Gestione** layout  >  **finestra**. Se si sposta un layout, l'associazione principale viene adattata automaticamente alla nuova posizione nell'elenco. Le associazioni non possono essere altrimenti modificate e pertanto è possibile archiviare un massimo di 10 layout alla volta.
 
 ![Gestire i layout delle finestre](../ide/media/managewindowlayouts.png)
 
-Per ricordare quale tasto di scelta rapida è assegnato a quale layout, scegliere **Finestra**  >  **Applica layout finestra.**
+Per ricordare a se stessi quale tasto di scelta rapida è assegnato al layout, scegliere **Finestra**  >  **Applica layout finestra**.
 
 Il roaming di questi layout verrà effettuato automaticamente tra le edizioni di Visual Studio, oltre che tra le istanze di Blend in computer diversi e da una qualsiasi edizione Express a una qualsiasi altra organizzazione Express. Tuttavia, il roaming dei layout non viene Visual Studio, Blend ed Express.
 

@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 816228f0eb5d52e037192f9ed29c64638ce13876
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630588"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 Se una funzione ha un punto definito in cui deve iniziare il debug, tale punto viene identificato da un simbolo con un `SymTagFuncDebugStart` tag .
@@ -40,7 +40,7 @@ Se una funzione ha un punto definito in cui deve iniziare il debug, tale punto v
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo padre lessicale.|
 |[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|I punti di partenza hanno posizioni statiche; Per informazioni dettagliate, vedere [Posizioni dei simboli](../../debugger/debug-interface-access/symbol-locations.md).|
 |[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|`BOOL`|`TRUE` se la funzione è stata specificata con [l'attributo noinline](/cpp/cpp/noinline) (solo in DIA SDK versione 8.0 o successiva).|
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE` se la funzione è stata specificata con l'attributo [noreturn](/cpp/cpp/noreturn) (solo in DIA SDK versione 8.0 o successiva).|
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE` se la funzione è stata specificata con l'attributo [noreturn](/cpp/cpp/noreturn) (solo DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|`BOOL`|`TRUE` se la funzione non viene mai chiamata (solo in DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|`LONG`|Offset del simbolo in memoria. Per informazioni dettagliate, vedere [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md), `LocIsRegRel` .|
 |[IDiaSymbol::get_optimizedCodeDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-optimizedcodedebuginfo.md)|`BOOL`|`TRUE` se il codice contiene informazioni di debug per il codice ottimizzato (solo in DIA SDK versione 8.0 o successiva).|

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 957cee1c9694f31f0fecd2123d7b4d7fdf104df5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630485"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Apre e prepara un file di database di programma (con estensione pdb) come origine dati di debug.
@@ -38,12 +38,12 @@ pdbPath
 [in] Percorso del file con estensione pdb.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati i valori restituiti possibili per questo metodo.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati i possibili valori restituiti per questo metodo.
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|Impossibile aprire il file o determinare che il formato del file non è valido.|
-|E_PDB_FORMAT|Si è tentato di accedere a un file con un formato obsoleto.|
+|E_PDB_NOT_FOUND|Impossibile aprire il file o è stato determinato che il formato del file non è valido.|
+|E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 

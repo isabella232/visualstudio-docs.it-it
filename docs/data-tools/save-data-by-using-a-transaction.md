@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Salvare dati usando una transazione'
-description: Esaminare come salvare i dati usando una transazione con gli strumenti dataset in Visual Studio. Per salvare i dati in una transazione, usare lo spazio dei nomi System.Transactions.
+description: Esaminare come salvare i dati usando una transazione con gli strumenti di DataSet in Visual Studio. Per salvare i dati in una transazione, usare lo spazio dei nomi System.Transactions.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 238c5e82a35db0f2fbc6627bd0bb09d3af8f070b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091188"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631224"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedura: Salvare dati usando una transazione
 

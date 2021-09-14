@@ -1,6 +1,6 @@
 ---
-title: Requisiti di sistema per l'emulatore VS per Android
-description: Informazioni sui requisiti di sistema per l'emulatore di Visual Studio per Android per l'esecuzione come macchina virtuale in Hyper-V.
+title: Requisiti di sistema per Visual Studio Emulator per Android
+description: Informazioni sui requisiti di sistema per Visual Studio Emulator per Android da eseguire come macchina virtuale in Hyper-V.
 ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8568670e43f21227db7e3ef88d41b2c7c0fc63c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631662"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
 
@@ -122,7 +122,7 @@ Se le impostazioni del computer e del BIOS sono già configurate per supportare 
 > [!IMPORTANT]
 > Dopo aver partecipato al gruppo, disconnettersi o riavviare il computer per rendere effettiva la modifica.
 
- ![Aggiunta al gruppo di sicurezza Amministratori Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Aggiunta del gruppo di sicurezza Hyper&#45;V Administrators](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Per aggiungersi manualmente a un gruppo, aprire lo snap-in Utenti e gruppi locali.
 

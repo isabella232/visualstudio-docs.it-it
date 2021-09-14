@@ -1,6 +1,6 @@
 ---
 title: LINQ to SQL classi con ereditarietà a tabella singola
-description: In questa procedura dettagliata creare LINQ to SQL classi personalizzate usando l'ereditarietà a tabella singola nel Visual Studio Object Relational Designer (Progettazione O/R).
+description: In questa procedura dettagliata vengono LINQ to SQL classi usando l'ereditarietà a tabella singola nel Visual Studio Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9d88bd7c28ae5d9d7aa078eb5e0006f233765514
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631037"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare LINQ to SQL classi con ereditarietà a tabella singola (O/R Designer)
-Gli [LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola, in quanto viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata si espande in base ai passaggi generici forniti nell'argomento Procedura: Configurare l'ereditarietà tramite Progettazione [O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare LINQ to SQL con ereditarietà a tabella singola (O/R Designer)
+Gli [LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola, in quanto viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici descritti nell'argomento [Procedura:](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) Configurare l'ereditarietà tramite Progettazione oggetti e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
 
 Durante questa procedura dettagliata vengono eseguite le attività seguenti:
 
@@ -69,9 +69,9 @@ Allo scopo di verificare che l'ereditarietà sia configurata correttamente, è n
 
 ### <a name="to-add-data-to-the-table"></a>Per aggiungere dati alla tabella
 
-1. Aprire la tabella nella visualizzazione dati Fare clic con il pulsante destro **del mouse sulla** tabella Person Esplora server o **Esplora database** fare clic su Mostra **dati tabella**. 
+1. Aprire la tabella nella visualizzazione dati Fare clic con il pulsante destro **del mouse sulla** **tabella** Person Esplora server o **Esplora database** fare clic su Mostra **dati tabella.**
 
-2. Copiare i dati riportati di seguito nella tabella È possibile copiarlo e incollarlo nella tabella selezionando l'intera riga nel **riquadro risultati.**
+2. Copiare i dati riportati di seguito nella tabella È possibile copiarlo e incollarlo nella tabella selezionando l'intera riga nel **riquadro** Risultati.
 
     |**ID**|**Tipo**|**FirstName**|**LastName**|**Responsabile**|
     |-|-|-|-|-|
@@ -95,9 +95,9 @@ Una volta creata la tabella, creare un nuovo progetto per illustrare la configur
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
 
-3. Nel riquadro centrale selezionare il tipo di progetto **Windows'app Forms.**
+3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
 
 4. Assegnare al progetto **il nome InheritanceWalkthrough** e quindi scegliere **OK.**
 
@@ -111,24 +111,24 @@ Una volta creata la tabella, creare un nuovo progetto per illustrare la configur
 
 2. Fare clic sul modello **Classi LINQ to SQL** e quindi fare clic su **Aggiungi**.
 
-     Il file *con estensione dbml* viene aggiunto al progetto e viene aperto **O/R Designer.**
+     Il file *con estensione dbml* viene aggiunto al progetto e viene **aperto O/R Designer.**
 
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>Creare l'ereditarietà usando Object Relational Designer
 Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casella degli strumenti** nell'area di progettazione.
 
 ### <a name="to-create-the-inheritance"></a>Per creare l'ereditarietà
 
-1. In **Esplora server** **o Esplora database** passare alla tabella **Person** creata in precedenza.
+1. In **Esplora server** o **Esplora database** passare alla tabella **Person** creata in precedenza.
 
-2. Trascinare la **tabella Person** nell'area di progettazione **di O/R Designer.**
+2. Trascinare **la tabella Person** nell'area di progettazione di **O/R** Designer.
 
-3. Trascinare una **seconda tabella Person** in **O/R Designer** e modificarne il nome in **Employee**.
+3. Trascinare una **seconda tabella Person** in **O/R Designer** e modificarne il nome in **Employee.**
 
 4. Eliminare la proprietà **Manager** dall'oggetto **Person**.
 
 5. Eliminare le proprietà **Type**, **ID**, **FirstName** e **LastName** dall'oggetto **Employee** (in altre parole, eliminare tutte le proprietà ad eccezione di **Manager**).
 
-6. Dalla scheda **Object Relational Designer** della **Casella degli strumenti**, creare un oggetto **Inheritance** tra gli oggetti **Person** ed **Employee**. Per eseguire questa operazione, fare clic sull'elemento **Inheritance** nella **Casella degli strumenti** e rilasciare il pulsante del mouse. Fare quindi clic **sull'oggetto Employee** e quindi **sull'oggetto Person** in **O/R Designer.** La freccia sulla linea di ereditarietà punta quindi **all'oggetto Person.**
+6. Dalla scheda **Object Relational Designer** della **Casella degli strumenti**, creare un oggetto **Inheritance** tra gli oggetti **Person** ed **Employee**. Per eseguire questa operazione, fare clic sull'elemento **Inheritance** nella **Casella degli strumenti** e rilasciare il pulsante del mouse. Fare quindi clic **sull'oggetto Employee** e quindi **sull'oggetto Person** in **Object Object Designer.** La freccia sulla linea di ereditarietà punta quindi **all'oggetto** Person.
 
 7. Fare clic sulla linea **Ereditarietà** nell'area di progettazione.
 
@@ -143,7 +143,7 @@ Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casel
 12. Compilare il progetto.
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Eseguire una query sulla classe ereditata e visualizzare i dati nel form
-A questo punto si aggiunge codice al modulo che esegue query per una classe specifica nel modello a oggetti.
+È ora possibile aggiungere codice al modulo che esegue una query per una classe specifica nel modello a oggetti.
 
 ### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>Per creare una query LINQ e visualizzare i risultati nel form
 
@@ -185,7 +185,7 @@ Eseguire l'applicazione e verificare che i record visualizzati nella casella di 
 
 2. Verificare che nella colonna **Tipo** siano visualizzati solo i record con valore 2.
 
-3. Chiudere il form. Scegliere **Arresta debug** dal menu **Debug**.
+3. Chiudere il form. Scegliere **Arresta debug** dal menu **Debug.**
 
 ## <a name="see-also"></a>Vedi anche
 

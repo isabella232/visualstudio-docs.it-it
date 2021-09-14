@@ -19,11 +19,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 96e296be3bb5e591f3da9699fe15371659dddfc0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631200"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvare dati da un oggetto in un database
 
@@ -34,7 +34,7 @@ Per salvare i dati da una raccolta di oggetti, scorrere la raccolta di oggetti (
 Per impostazione predefinita, `DBDirect` i metodi vengono creati in un oggetto TableAdapter che può essere eseguito direttamente sul database. Questi metodi possono essere chiamati direttamente e non richiedono oggetti o per riconciliare le modifiche <xref:System.Data.DataSet> <xref:System.Data.DataTable> per inviare aggiornamenti a un database.
 
 > [!NOTE]
-> Quando si configura un oggetto TableAdapter, la query principale deve fornire informazioni sufficienti per `DBDirect` la creazione dei metodi. Ad esempio, se un oggetto TableAdapter è configurato per eseguire query sui dati di una tabella in cui non è definita una colonna chiave primaria, non genera `DBDirect` metodi.
+> Quando si configura un oggetto TableAdapter, la query principale deve fornire informazioni sufficienti per `DBDirect` la creazione dei metodi. Ad esempio, se un oggetto TableAdapter è configurato per eseguire query sui dati di una tabella che non dispone di una colonna di chiave primaria definita, non genera `DBDirect` metodi.
 
 |Metodo DBDirect di TableAdapter|Descrizione|
 | - |-----------------|
@@ -42,7 +42,7 @@ Per impostazione predefinita, `DBDirect` i metodi vengono creati in un oggetto T
 |`TableAdapter.Update`|Aggiorna i record esistenti in un database. Il `Update` metodo accetta i valori di colonna originali e nuovi come parametri del metodo . I valori originali vengono usati per individuare il record originale e i nuovi valori vengono usati per aggiornare il record.<br /><br /> Il metodo viene usato anche per riconciliare le modifiche di un set di dati nel database tramite l'uso di , , o una matrice di `TableAdapter.Update` s come parametri del <xref:System.Data.DataSet> <xref:System.Data.DataTable> <xref:System.Data.DataRow> <xref:System.Data.DataRow> metodo.|
 |`TableAdapter.Delete`|Elimina i record esistenti dal database in base ai valori di colonna originali passati come parametri del metodo .|
 
-## <a name="to-save-new-records-from-an-object-to-a-database"></a>Per salvare nuovi record da un oggetto a un database
+## <a name="to-save-new-records-from-an-object-to-a-database"></a>Per salvare nuovi record da un oggetto in un database
 
 - Creare i record passando i valori al `TableAdapter.Insert` metodo .
 
@@ -56,7 +56,7 @@ Per impostazione predefinita, `DBDirect` i metodi vengono creati in un oggetto T
 - Modificare i record chiamando il metodo , passando i nuovi valori per aggiornare il record e passando i `TableAdapter.Update` valori originali per individuare il record.
 
     > [!NOTE]
-    > L'oggetto deve mantenere i valori originali per passarli al `Update` metodo . In questo esempio vengono utilizzate le proprietà con `orig` un prefisso per archiviare i valori originali.
+    > L'oggetto deve mantenere i valori originali per passarli al `Update` metodo . In questo esempio vengono utilizzate proprietà con `orig` un prefisso per archiviare i valori originali.
 
      Nell'esempio seguente viene aggiornato un record esistente nella tabella passando i valori nuovi `Customers` e originali `Customer` nell'oggetto al metodo `TableAdapter.Update` .
 
@@ -68,7 +68,7 @@ Per impostazione predefinita, `DBDirect` i metodi vengono creati in un oggetto T
 - Eliminare i record chiamando il `TableAdapter.Delete` metodo e passando i valori originali per individuare il record.
 
     > [!NOTE]
-    > L'oggetto deve mantenere i valori originali per passarli al `Delete` metodo . In questo esempio vengono utilizzate le proprietà con `orig` un prefisso per archiviare i valori originali.
+    > L'oggetto deve mantenere i valori originali per passarli al `Delete` metodo . In questo esempio vengono utilizzate proprietà con `orig` un prefisso per archiviare i valori originali.
 
      Nell'esempio seguente viene eliminato un record `Customers` dalla tabella passando i valori originali nell'oggetto al metodo `Customer` `TableAdapter.Delete` .
 

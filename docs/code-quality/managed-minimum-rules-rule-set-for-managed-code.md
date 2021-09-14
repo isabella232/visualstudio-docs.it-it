@@ -1,7 +1,7 @@
 ---
 title: Set di regole minime gestite per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole regole minime gestite in Visual Studio, incentrata su sicurezza, affidabilità e altri problemi critici. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole regole minime gestite in Visual Studio, in particolare sicurezza, affidabilità e altri problemi critici. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
@@ -12,15 +12,15 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 35cc4d2abc0c99afd3d9add98178aea54e5f2367
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091227"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631901"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Set di regole minime gestite per codice gestito
 
-Le regole minime gestite sono incentrate sui problemi più critici nel codice, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri importanti errori di logica e progettazione. Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti.
+Le regole minime gestite sono incentrate sui problemi più critici nel codice, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti.
 
 |Regola|Descrizione|
 |----------|-----------------|

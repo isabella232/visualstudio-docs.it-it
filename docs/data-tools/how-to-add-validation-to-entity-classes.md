@@ -15,11 +15,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8103dc746d09f63fadeb536fea552db7b4baf7f0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052759"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631356"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.
@@ -36,7 +36,7 @@ In questa procedura viene mostrato come convalidare i dati quando viene modifica
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Per convalidare i dati durante la modifica del valore di una colonna
 
-1. Aprire o creare un nuovo file classes LINQ to SQL (file **con estensione dbml)** in **O/R Designer.** (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file LINQ to SQL classes (file **con estensione dbml)** in **O/R Designer.** (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
 2. In **Object Relational Designer** fare clic con il pulsante destro del mouse sulla classe per cui si vuole aggiungere la convalida e quindi scegliere **Visualizza codice**.
 
@@ -82,7 +82,7 @@ Oltre a controllare i valori durante le modifiche, è anche possibile convalidar
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Per convalidare i dati durante un aggiornamento a una classe di entità
 
-1. Aprire o creare un nuovo file classes LINQ to SQL (file **con estensione dbml)** in **O/R Designer.** (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file LINQ to SQL classes (file **con estensione dbml)** in **O/R Designer.** (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
 2. Fare clic con il pulsante destro del mouse su un'area vuota in **Object Relational Designer** e quindi scegliere **Visualizza codice**.
 

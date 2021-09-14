@@ -14,11 +14,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: aa270fae00a66f1ca295949855c7b7ad1a56254b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077166"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628446"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 
@@ -47,9 +47,9 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 
 Se `AfterBuild` viene eseguito, visualizza solo "Seconda occorrenza", perché la seconda definizione di `AfterBuild` nasconde la prima.
 
-MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione diventa l'ultima definizione usata. Se si tenta di ridefinire una destinazione, questa non avrà effetto se la destinazione predefinita viene definita in un secondo momento. Nel caso di progetti che usano un SDK, l'ordine di definizione non è necessariamente ovvio, perché le importazioni per le destinazioni vengono aggiunte in modo implicito dopo la fine del file di progetto.
+MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione diventa l'ultima definizione usata. Se si tenta di ridefinire una destinazione, questa non avrà effetto se la destinazione predefinita viene definita in un secondo momento. Nel caso di progetti che usano un SDK, l'ordine di definizione non è necessariamente ovvio, poiché le importazioni per le destinazioni vengono aggiunte in modo implicito dopo la fine del file di progetto.
 
-Pertanto, per estendere il comportamento di una destinazione esistente, creare una nuova destinazione e specificare (o in base `BeforeTargets` `AfterTargets` alle esigenze) come indicato di seguito:
+Pertanto, per estendere il comportamento di una destinazione esistente, creare una nuova destinazione e specificare `BeforeTargets` (o `AfterTargets` in base alle esigenze) come indicato di seguito:
 
 ```xml
 <Target Name="MessageBeforePublish" BeforeTargets="BeforePublish">
@@ -57,7 +57,7 @@ Pertanto, per estendere il comportamento di una destinazione esistente, creare u
 </Target>
 ```
 
-Assegnare alla destinazione un nome descrittivo, come si assegna un nome a una funzione nel codice.
+Assegnare alla destinazione un nome descrittivo, come si farebbe per assegnare un nome a una funzione nel codice.
 
 ## <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 
@@ -77,7 +77,7 @@ Assegnare alla destinazione un nome descrittivo, come si assegna un nome a una f
 
 Una destinazione non viene mai eseguita due volte durante una compilazione, anche se da essa dipende una destinazione successiva nella compilazione. Il contributo della destinazione alla compilazione termina dopo che è stata eseguita.
 
-Per informazioni dettagliate e altre informazioni sull'ordine di compilazione di destinazione, vedere [Ordine di compilazione di destinazione.](../msbuild/target-build-order.md)
+Per informazioni dettagliate e altre informazioni sull'ordine di compilazione di destinazione, vedere [Ordine di compilazione di destinazione](../msbuild/target-build-order.md).
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
 
@@ -115,7 +115,7 @@ Reference: 4.0
 
  Le compilazioni incrementali sono compilazioni ottimizzate in modo da non eseguire le destinazioni con file di output aggiornati rispetto ai file di input corrispondenti. Un elemento di destinazione può avere entrambi gli attributi `Inputs` e `Outputs` per indicare quali elementi la destinazione accetta come input e quali elementi genera come output.
 
- Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione e questo migliora notevolmente la velocità di compilazione. Questa operazione è definita compilazione incrementale della destinazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione senza gli elementi aggiornati. Questa operazione è definita compilazione incrementale parziale della destinazione. Per altre informazioni, vedere [Compilazioni incrementali.](../msbuild/incremental-builds.md)
+ Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione e questo migliora notevolmente la velocità di compilazione. Questa operazione è definita compilazione incrementale della destinazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione senza gli elementi aggiornati. Questa operazione è definita compilazione incrementale parziale della destinazione. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Destinazioni di compilazione predefinite
 

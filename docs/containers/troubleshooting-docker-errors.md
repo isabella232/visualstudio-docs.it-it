@@ -12,11 +12,11 @@ ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
 ms.openlocfilehash: 760fd0c4d3a9593dbfcc4f78e3279a1ba7e2570f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097982"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631697"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Risolvere i problemi di sviluppo di Visual Studio con Docker
 
@@ -32,7 +32,7 @@ La condivisione file deve essere gestita solo se si usa Hyper-V con Docker. Se s
     :::image type="content" source="media//troubleshooting-docker-errors/docker-settings-image.png" alt-text="Unità condivise":::
 
 > [!TIP]
-> Visual Studio versioni successive a Visual Studio 2017 versione 15.6  verrà richiesto quando le unità condivise non sono configurate.
+> Visual Studio versioni successive a Visual Studio 2017 versione 15.6 verrà  richiesto quando le unità condivise non sono configurate.
 
 ## <a name="unable-to-start-debugging"></a>Impossibile avviare il debug
 
@@ -51,7 +51,7 @@ Quando si usa Docker per macOs, potrebbe verificarsi un errore durante il riferi
 
 ## <a name="docker-users-group"></a>Gruppo di utenti Docker
 
-Quando si lavora con i contenitori, Visual Studio possibile riscontrare l'errore seguente:
+Quando si lavora con i contenitori, Visual Studio possibile che si verifichi l'errore seguente:
 
 ```
 The current user must be in the 'docker-users' group to use Docker Desktop. 
@@ -88,17 +88,17 @@ Per impostazione predefinita, Docker archivia le immagini nella cartella *%Progr
 
 :::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Screenshot della condivisione di file Docker":::
 
-Fare clic **su Applica & Riavvia**. Questi passaggi modificano il file di configurazione *in %ProgramData%\docker\config\daemon.jsin*. Le immagini compilate in precedenza non vengono spostate.
+Fare clic **su Applica & Riavvia**. Questi passaggi modificano il file di configurazione *in %ProgramData%\docker\config\daemon.json.* Le immagini compilate in precedenza non vengono spostate.
 
 ## <a name="container-type-mismatch"></a>Mancata corrispondenza del tipo di contenitore
 
 Quando si aggiunge il supporto di Docker a un progetto, scegliere un contenitore Windows o Linux. Se l'host del server Docker non è configurato per eseguire lo stesso tipo di contenitore della destinazione del progetto, probabilmente verrà visualizzato un errore simile a quello riportato di seguito:
 
-:::image type="content" source="media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png" alt-text="Screenshot dell'host Docker Project mancata corrispondenza":::
+:::image type="content" source="media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png" alt-text="Screenshot dell'host Docker e Project non corrispondente":::
 
 Per risolvere il problema:
 
-- Fare clic con il pulsante destro del mouse sull'icona docker per Windows nell'area di notifica e scegliere Passa **Windows contenitori...** o Passa a **contenitori Linux...**.
+- Fare clic con il pulsante destro del mouse sull'icona docker per Windows nell'area di notifica e scegliere Passa Windows **contenitori...** o Passa a **contenitori Linux...**.
 
 ## <a name="microsoftdockertools-github-repo"></a>Repository GitHub Microsoft/DockerTools
 

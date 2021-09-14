@@ -1,6 +1,6 @@
 ---
 title: Gerarchia di classi dei tipi di simboli | Microsoft Docs
-description: Esaminare un elenco di tipi di simboli nella gerarchia di classi dell'SDK di Visual Studio di accesso all'interfaccia di debug.
+description: Esaminare un elenco di tipi di simboli nella gerarchia di classi dell'SDK Visual Studio di accesso all'interfaccia di debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e46e0f5c9b8b4afc3757875996dfc74bb86df33
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121696"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630726"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Gerarchia di classi dei tipi di simboli
 Nella tabella seguente vengono descritti i tipi di simboli nella gerarchia di classi.

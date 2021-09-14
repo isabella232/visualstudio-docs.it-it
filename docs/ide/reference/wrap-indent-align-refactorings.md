@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 951bc8fa65991daaad2661744efd6bcbd17bdcd4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628542"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Impostare il ritorno a capo automatico, il rientro e l'allineamento dei refactoring
 
@@ -53,7 +53,7 @@ Questo refactoring si applica a:
 
 **Cosa:** Consente di eseguire il wrapping, impostare un rientro e allineare parametri o argomenti.
 
-**Quando:** Si dispone di una dichiarazione di metodo o di una chiamata con più parametri o argomenti.
+**Quando:** Si dispone di una dichiarazione di metodo o di una chiamata che dispone di più parametri o argomenti.
 
 **Perché:** La lettura di un lungo elenco di parametri o argomenti è più semplice quando viene eseguito il wrapping o il rientro in base alle preferenze dell'utente.
 
@@ -86,7 +86,7 @@ Questo refactoring si applica a:
 2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **Wrap expression (Incapsula** espressione) per accettare il refactoring.
 
-   ![Immagine del menu Azioni rapide e refactoring in Visual Studio con l'espressione Warap selezionata e le modifiche al codice C# visualizzate.](media/wrap-binary-expression.png)
+   ![Snapshot del menu Azioni rapide e refactoring in Visual Studio con l'espressione Warap selezionata e le modifiche al codice C# visualizzate.](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>Vedi anche
 

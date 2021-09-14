@@ -25,11 +25,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 17ad04ea4e87a99d1f9e98cef197d986b5e31dc1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630893"
 ---
 # <a name="com-server-and-container-debugging"></a>Debug dei server e dei contenitori COM
 Le applicazioni COM eseguono alcune attività che non sono sotto il controllo diretto del programmatore. Le comunicazioni tra le DLL, il conteggio di utilizzo degli oggetti e le operazioni relative agli Appunti rappresentano solo alcune delle aree nelle quali potrebbero verificarsi comportamenti non prevedibili. In questi casi il primo passo consiste nel tracciare il codice sorgente.

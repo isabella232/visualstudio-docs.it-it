@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 81c69a92f9ecdd363cd75160e855d3b48d86355f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081589"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629718"
 ---
 # <a name="idialinenumberget_addresssection"></a>IDiaLineNumber::get_addressSection
 Recupera la parte di sezione dell'indirizzo di memoria in cui inizia un blocco.

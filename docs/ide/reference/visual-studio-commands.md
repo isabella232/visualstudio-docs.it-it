@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 180852e2895318f1ffc2fbf411c3945373b5ab4c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628565"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 
@@ -34,7 +34,7 @@ A molti comandi sono associati alias. Per un elenco di alias dei comandi, vedere
 
 ## <a name="escape-character"></a>Carattere di escape
 
-Il carattere di escape per i comandi di Visual Studio è l'accento circonflesso (^). Il carattere di escape indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Esempio:
+Il carattere di escape per i comandi di Visual Studio è l'accento circonflesso (^). Il carattere di escape indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex

@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 921a79c78dbec3df58a78d7dd41011a60d825fd1961ee7a3233e28c5bafec122
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f4491d0a5e9c9d3a2554bd32211fd1fa8f7be2d2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628398"
 ---
 # <a name="parallelcustombuild-task"></a>Attività ParallelCustomBuild
 

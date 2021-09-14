@@ -1,6 +1,6 @@
 ---
 title: Gestire i profili di avvio per Docker Compose progetto
-description: Informazioni su come usare Docker Compose di avvio e controllare quali servizi vengono avviati quando si Docker Compose in Visual Studio.
+description: Informazioni su come usare i Docker Compose di avvio e controllare quali servizi vengono avviati quando si Docker Compose in Visual Studio.
 author: ghogen
 manager: jmartens
 ms.technology: vs-container-tools
@@ -10,17 +10,17 @@ ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: 3b7872707c450c393c5bbeb654d65c0dbee60052
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123096953"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631704"
 ---
 # <a name="launch-a-subset-of-compose-services"></a>Avviare un subset di servizi Compose
 
-Se si dispone di un'applicazione costituita da più servizi e usa Docker Compose, è possibile configurare quali servizi vengono eseguiti ed eseguono il debug creando o modificando un profilo di avvio esistente nelle impostazioni di avvio Docker Compose di avvio. I profili di avvio consentono di eseguire dinamicamente solo i servizi importanti per lo scenario corrente. È possibile creare e selezionare tra i profili di avvio per personalizzare l'esperienza di debug e impostare azioni di avvio specifiche, ad esempio `Browser Launch URL` . Sarà anche possibile scegliere ogni servizio singolarmente o scegliendo un profilo Docker Compose, che esamina anche il file Compose per determinare il gruppo di servizi da eseguire.
+Se si dispone di un'applicazione costituita da più servizi e usa Docker Compose, è possibile configurare i servizi eseguiti ed eseguire il debug creando o modificando un profilo di avvio esistente nelle impostazioni di avvio Docker Compose avvio. I profili di avvio consentono di eseguire dinamicamente solo i servizi importanti per lo scenario corrente. È possibile creare e selezionare tra i profili di avvio per personalizzare l'esperienza di debug e impostare azioni di avvio specifiche, ad esempio `Browser Launch URL` . Sarà anche possibile scegliere ogni servizio singolarmente o scegliendo un profilo Docker Compose, che esamina anche il file Compose per determinare il gruppo di servizi da eseguire.
 
-Per informazioni sui Docker Compose, vedere [Uso dei profili con Compose.](https://docs.docker.com/compose/profiles/)
+Per informazioni sui profili Docker Compose, vedere [Uso dei profili con Compose.](https://docs.docker.com/compose/profiles/)
  
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -65,7 +65,7 @@ services:
 ```
 
 Sono disponibili alcune opzioni per aprire la finestra di dialogo Docker Compose impostazioni di avvio:
-- In Visual Studio scegliere **Debug** Gestisci Docker Compose  >  **avvio Impostazioni**:
+- In Visual Studio scegliere **Debug** Gestisci Docker Compose  >  **avvia Impostazioni**:
 
     ![Screenshot della voce di menu Debug Manage Compose Impostazioni menu](media/launch-settings/debug-dropdown-manage-compose.png)
 
@@ -73,7 +73,7 @@ Sono disponibili alcune opzioni per aprire la finestra di dialogo Docker Compose
 
     ![Screenshot della voce del menu di scelta rapida](media/launch-settings/launch-settings-context-menu.png)
 
-- Usare il Avvio veloce (**CTRL** Q ) e cercare Docker Compose per trovare il comando di cui in + questo esempio. 
+- Usare il Avvio veloce (**CTRL** Q ) e cercare Docker Compose per trovare il comando di cui si + è fatto parte. 
 
 Nell'esempio seguente è selezionato il profilo Compose, che filtra l'elenco Servizi solo ai tre dei `web1` cinque inclusi in tale profilo: 
 
@@ -85,7 +85,7 @@ Nell'esempio seguente viene illustrata la selezione tra i singoli servizi anzich
 
 ![Screenshot della finestra di dialogo delle impostazioni di avvio con alcuni servizi deselezionati](media/launch-settings/launch-settings-selected.png)
 
-E queste informazioni verranno salvate inlaunchSettings.js *come* illustrato di seguito
+Queste informazioni verranno salvate in *launchSettings.json,* come illustrato di seguito
 
 ```json
 {
@@ -112,14 +112,14 @@ E queste informazioni verranno salvate inlaunchSettings.js *come* illustrato di 
 
 È anche possibile personalizzare ulteriormente i comportamenti di avvio creando Visual Studio di avvio che usano i profili Compose.
 
-Per creare un altro profilo che usi il profilo Compose, selezionare **Usa Docker Compose e** scegliere `web1` . Il profilo di avvio include ora tre servizi , che appartengono a entrambi i profili e `webapplication1` `web` `web1` `external1` Compose, e `external2` . Per impostazione predefinita, i servizi senza codice sorgente, ad esempio `external1` e hanno  `external2` l'azione predefinita **Avvia senza eseguire il debug** di . Per impostazione predefinita, le applicazioni .NET con codice sorgente **avviano il debug.**
+Per creare un altro profilo che usi il profilo Compose, selezionare Usa Docker Compose **e** scegliere `web1` . Il profilo di avvio include ora tre servizi , che appartengono a entrambi i profili e `webapplication1` `web` `web1` `external1` Compose, e `external2` . Per impostazione predefinita, i servizi senza codice sorgente, ad esempio `external1` e hanno  `external2` l'azione predefinita **Avvia senza eseguire il debug** di . Per impostazione predefinita, le applicazioni .NET con codice sorgente **avviano il debug.**
 
 > [!IMPORTANT]
 > Se un servizio non specifica un profilo Compose, verrà incluso in tutti i profili Compose in modo implicito.
 
 ![Screenshot della finestra di dialogo delle impostazioni di avvio con un altro profilo creato](media/launch-settings/launch-settings-create-profile.png)
 
-Queste informazioni verranno salvate come illustrato nel codice seguente. La configurazione per il servizio e l'azione predefinita non vengono salvate a meno che non si modifica l'azione predefinita.
+Queste informazioni verranno salvate come illustrato nel codice seguente. La configurazione per il servizio e la relativa azione predefinita non vengono salvate a meno che non si modifica l'azione predefinita.
 
 ```json
 {
@@ -137,7 +137,7 @@ Queste informazioni verranno salvate come illustrato nel codice seguente. La con
 }
 ```
 
-È anche possibile modificare l'azione di webapplication1 in **Avvia senza eseguire il debug** di . Le impostazioni in *launchSettings.jsquindi* sono simili al codice seguente:
+È anche possibile modificare l'azione di webapplication1 in **Avvia senza eseguire il debug** di . Le impostazioni in *launchSettings.json* sono simili al codice seguente:
 
 ```json
 {
@@ -160,7 +160,7 @@ Queste informazioni verranno salvate come illustrato nel codice seguente. La con
 
 ## <a name="properties"></a>Proprietà
 
-Ecco una descrizione di ogni proprietà nellalaunchSettings.js *in*:
+Ecco una descrizione di ogni proprietà nel *file launchSettings.json:*
 
 |Proprietà| Descrizione|
 | - | - |

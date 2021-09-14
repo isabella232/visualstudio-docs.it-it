@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f6f03339758ac3496f961313593c0b663fab30f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122066212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629063"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 Recupera un simbolo in base al relativo identificatore univoco.
@@ -46,12 +46,12 @@ HRESULT symbolById (
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-L'identificatore specificato è un valore univoco utilizzato internamente dal DIA SDK per rendere univoci tutti i simboli.
+L'identificatore specificato è un valore univoco usato internamente dal DIA SDK per rendere univoci tutti i simboli.
 
 Questo metodo può essere usato, ad esempio, per recuperare il simbolo che rappresenta il tipo di un altro simbolo (vedere l'esempio).
 
 ## <a name="example"></a>Esempio
-Questo esempio recupera un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il tipo di un altro simbolo. In questo esempio viene illustrato come utilizzare `symbolById` il metodo nella sessione . Un approccio più semplice consiste nel chiamare il [metodo IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) per recuperare direttamente il simbolo del tipo.
+In questo esempio viene recuperato [un oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il tipo di un altro simbolo. In questo esempio viene illustrato come usare `symbolById` il metodo nella sessione. Un approccio più semplice consiste nel chiamare il [metodo IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) per recuperare direttamente il simbolo del tipo.
 
 ```C++
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d6377b8ee02a48878228e89ad277e4bc78b969c0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113704"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630179"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Recupera un numero specificato di contributi di sezione nella sequenza di enumerazione.
@@ -41,7 +41,7 @@ HRESULT Next(
 
  Rgelt
 
-[out] Matrice che deve essere riempita con gli oggetti [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) che rappresentano i contributi di sezione desiderati.
+[out] Matrice da riempire con gli oggetti [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) che rappresentano i contributi di sezione desiderati.
 
  pceltFetched
 

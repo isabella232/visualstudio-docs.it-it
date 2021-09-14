@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8270d73f031e44e3c458cf8956b4bf6aa924e430ad3950214455f78275b640e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334380"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628656"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo Opzioni: Editor \> di testo JavaScript/TypeScript \> Linting
 

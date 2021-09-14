@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: fb43d88fbe4bb607daaf6ed7e5b3c8641bbcf713
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629885"
 ---
 # <a name="idiaframedataget_allocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 Recupera un flag che indica se il puntatore di base è allocato per il codice in questo intervallo di indirizzi. Questo metodo è deprecato.

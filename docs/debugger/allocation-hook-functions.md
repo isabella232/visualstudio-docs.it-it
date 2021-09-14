@@ -1,6 +1,6 @@
 ---
 title: Funzioni hook di allocazione | Microsoft Docs
-description: Informazioni su come usare le funzioni hook di allocazione, che vengono installate con _CrtSetAllocHook, quando è necessario eseguire il debug in fase di esecuzione C (CRT) in Visual Studio.
+description: Informazioni su come usare le funzioni hook di allocazione, che vengono installate usando _CrtSetAllocHook, quando è necessario eseguire il debug in fase di esecuzione C (CRT) in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,11 +26,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: eada0362b399489bea9bae93863c44e8172abf3c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630984"
 ---
 # <a name="allocation-hook-functions"></a>Funzioni hook di allocazione
 Una funzione hook di allocazione, [installata _CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), viene chiamata ogni volta che la memoria viene allocata, riallocata o liberata. È possibile usare questo tipo di hook per molti scopi diversi. Usarlo per testare il modo in cui un'applicazione gestisce situazioni di memoria insufficiente, ad esempio per esaminare i modelli di allocazione o registrare informazioni sull'allocazione per analisi successive.

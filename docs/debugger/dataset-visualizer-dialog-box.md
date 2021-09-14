@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3c862c52e815b2ac03cb774ae5d709975e9e62eb35f0f5390e738e5c5b7d16
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 32c7867f0d392937c90d47ed17352e747b1fd3e7
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345816"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630816"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>finestra di dialogo Visualizzatore DataSet
 Il Visualizzatore DataSet consente di visualizzare il contenuto di un oggetto DataSet, DataTable, DataView o DataViewManager. È possibile accedere a tale visualizzatore facendo clic sull'icona della lente di ingrandimento accanto al valore di uno degli oggetti in una finestra delle variabili del debugger o in un suggerimento dati.

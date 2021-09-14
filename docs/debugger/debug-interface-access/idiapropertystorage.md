@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 250eb9de245cb4577fdcb797b91419936a90596909c6010363d9b27f243f11bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 670c669f80661128b9255456c410c784f0e1f65e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629519"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Consente di leggere le proprietà persistenti di un set di proprietà DIA.

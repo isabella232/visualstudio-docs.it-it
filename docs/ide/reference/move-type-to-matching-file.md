@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: aab621ab68d90b44e1132ddbafeb69db57af209b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117332"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628710"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactoring con spostamento di un tipo in un file corrispondente
 
@@ -35,7 +35,7 @@ Questo refactoring si applica a:
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Esempio:
+1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Ad esempio:
 
    ```csharp
    class Person
@@ -47,7 +47,7 @@ Questo refactoring si applica a:
 
 2. Eseguire quindi una delle operazioni seguenti:
 
-   - Premere  + **CTRL+ .**
+   - Premere  + **CTRL.**
    - Fare clic con il pulsante destro del mouse e scegliere **Azioni rapide e refactoring**
 
 1. Scegliere **Sposta il tipo in *TypeName*.cs** dal menu, dove *TypeName* è il nome del tipo selezionato.

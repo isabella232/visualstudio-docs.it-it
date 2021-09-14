@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: c5cf789d120249ca283d655f59f5058a7b28f207
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631416"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Visualizzare dati correlati in applicazioni WPF
 
@@ -52,7 +52,7 @@ In alcune applicazioni può essere necessario usare dati provenienti da più tab
 
 7. Trascinare il nodo figlio (o i singoli  elementi nel nodo figlio) dalla finestra Origini dati in una destinazione di rilascio valida nella finestra di progettazione.
 
-     Visual Studio genera XAML che crea nuovi controlli associati a dati per ognuno degli elementi trascinati. Il codice XAML aggiunge anche un nuovo <xref:System.Windows.Data.CollectionViewSource> oggetto o tabella figlio alle risorse della destinazione di rilascio. Questo nuovo oggetto è associato alla proprietà della tabella o dell'oggetto <xref:System.Windows.Data.CollectionViewSource> padre appena trascinato nella finestra di progettazione. Per alcune origini dati, Visual Studio anche il codice per caricare i dati nella tabella o nell'oggetto figlio.
+     Visual Studio genera XAML che crea nuovi controlli associati a dati per ognuno degli elementi trascinati. Il codice XAML aggiunge anche un nuovo <xref:System.Windows.Data.CollectionViewSource> oggetto o tabella figlio alle risorse della destinazione di rilascio. Questo nuovo oggetto è associato alla proprietà della tabella o dell'oggetto padre appena <xref:System.Windows.Data.CollectionViewSource> trascinato nella finestra di progettazione. Per alcune origini dati, Visual Studio anche il codice per caricare i dati nella tabella o nell'oggetto figlio.
 
      Nella figura seguente viene illustrata **la tabella Orders** correlata della tabella **Customers** in un set di dati nella **finestra Origini** dati .
 

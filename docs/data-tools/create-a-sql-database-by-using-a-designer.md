@@ -15,30 +15,30 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: cecf47d023b98ce8ad3cf67799e4bdfff66f45fa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631511"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 
-È possibile usare Visual Studio per creare e aggiornare un file di database locale in SQL Server Express Local DB. È anche possibile creare un database eseguendo istruzioni Transact-SQL nella finestra SQL Server Esplora oggetti strumenti di Visual Studio.  In questo argomento si creerà un file con estensione *mdf* e si aggiungeranno tabelle e chiavi usando il Progettazione tabelle.
+È possibile usare Visual Studio per creare e aggiornare un file di database locale in SQL Server Express Local DB. È anche possibile creare un database eseguendo istruzioni Transact-SQL nella finestra degli **strumenti** SQL Server Esplora oggetti in Visual Studio. In questo argomento si creerà un file con estensione *mdf* e si aggiungeranno tabelle e chiavi usando il Progettazione tabelle.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per completare questa procedura dettagliata, sono necessari  i carichi di lavoro Sviluppo per **desktop .NET** e Archiviazione ed elaborazione dati installati in Visual Studio. Per installarli, **aprire Programma di installazione di Visual Studio** e **scegliere** Modifica (o Altro modifica) accanto alla versione Visual Studio che si vuole   >  modificare.
+Per completare questa procedura dettagliata, sono necessari  i carichi di lavoro **sviluppo desktop .NET** e archiviazione ed elaborazione dati installati in Visual Studio. Per installarli, aprire **Programma di installazione di Visual Studio** e **scegliere** Modifica (o Altro) accanto alla versione Visual Studio   >  da modificare.
 
 > [!NOTE]
-> Le procedure descritte in questo articolo si applicano solo .NET Framework Windows progetti Forms, non ai progetti .NET Core Windows Forms.
+> Le procedure descritte in questo articolo si applicano solo ai .NET Framework Windows Forms e non ai progetti .NET Core Windows Forms.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Creare un progetto e un file di database locale
 
-1. Creare un nuovo **progetto Windows Forms App (.NET Framework)** e deno assegnare al progetto il nome **SampleDatabaseWalkthrough.**
+1. Creare un nuovo **progetto Windows Forms App (.NET Framework)** e assegnare il nome **SampleDatabaseWalkthrough**.
 
 2. Nella barra dei menu selezionare **Project**  >  **Aggiungi nuovo elemento**.
 
-3. Nell'elenco dei modelli di elemento scorrere verso il basso e selezionare **Database basato su servizio.**
+3. Nell'elenco dei modelli di elemento scorrere verso il basso e selezionare **Database basato su servizio**.
 
    ![Finestra di dialogo Modelli di elemento](../data-tools/media/raddata-vsitemtemplates.png)
 
@@ -46,7 +46,7 @@ Per completare questa procedura dettagliata, sono necessari  i carichi di lavoro
 
 ### <a name="add-a-data-source"></a>Aggiungere un'origine dati
 
-1. Se la **finestra Origini** dati non è aperta, aprirla premendo MAIUSC ALT D o selezionando Visualizza altre Windows dati sulla +  +  barra   >    >   dei menu.
+1. Se la **finestra Origini** dati non è aperta, aprirla premendo MAIUSC ALT D o selezionando Visualizza Windows origini dati sulla +  +  barra   >    >   dei menu.
 
 1. Nella finestra **Origini dati** selezionare Aggiungi nuova **origine dati**.
 
@@ -54,38 +54,38 @@ Per completare questa procedura dettagliata, sono necessari  i carichi di lavoro
 
    Verrà **visualizzata la Configurazione guidata origine** dati.
 
-1. Nella pagina **Scegliere un tipo di origine dati** scegliere **Database** e quindi scegliere **Avanti.**
+1. Nella pagina **Scegliere un tipo di origine dati** scegliere **Database** e quindi **Scegliere Avanti**.
 
-1. Nella pagina **Scegliere un modello di database** scegliere Avanti **per** accettare il valore predefinito (Set di dati).
+1. Nella pagina **Scegliere un modello di database** scegliere **Avanti** per accettare il valore predefinito (Set di dati).
 
 1. Nella pagina **Scegli connessione dati** selezionare il file **SampleDatabase.mdf** nell'elenco a discesa e quindi scegliere **Avanti.**
 
-1. Nella pagina **Salva la stringa di connessione nel file di configurazione dell'applicazione** scegliere **Avanti.**
+1. Nella pagina **Salva la stringa di connessione nel file di configurazione** dell'applicazione scegliere **Avanti**.
 
-1. Nella pagina **Scegliere gli oggetti di** database verrà visualizzato un messaggio che indica che il database non contiene oggetti. Scegliere **Fine**.
+1. Nella pagina **Scegliere gli oggetti di database** verrà visualizzato un messaggio che indica che il database non contiene oggetti. Scegliere **Fine**.
 
 ### <a name="view-properties-of-the-data-connection"></a>Visualizzare le proprietà della connessione dati
 
 È possibile visualizzare la stringa di connessione per il file *SampleDatabase.mdf* aprendo il Finestra Proprietà della connessione dati:
 
-- Selezionare **Visualizza**  >  **SQL Server Esplora oggetti** per aprire la **SQL Server Esplora oggetti** predefinita. Espandere **(localdb)\MSSQLLocalDB** Databases , quindi fare clic con il pulsante destro del mouse  >   *su SampleDatabase.mdf* e **scegliere Proprietà**.
+- Selezionare **Visualizza**  >  **SQL Server Esplora oggetti** per aprire la finestra **SQL Server Esplora oggetti.** Espandere **(localdb)\MSSQLLocalDB** Databases , quindi fare clic con il pulsante destro del mouse  >   *su SampleDatabase.mdf* e scegliere **Proprietà**.
 
-- In alternativa, è possibile **selezionare**  >  **Visualizza Esplora server**, se la finestra non è già aperta. Aprire il Finestra Proprietà espandere il nodo **Connessioni** dati, fare clic con il pulsante destro del mouse su *SampleDatabase.mdf* e quindi **scegliere Proprietà.**
+- In alternativa, è possibile **selezionare**  >  **Visualizza Esplora server**, se la finestra non è già aperta. Aprire il Finestra Proprietà espandere il nodo **Connessioni** dati, fare clic con il pulsante destro del mouse *su SampleDatabase.mdf* e quindi scegliere **Proprietà**.
 
   > [!TIP]
-  > Se non è possibile espandere il nodo Connessioni dati o se la connessione SampleDatabase.mdf non è elencata, selezionare il pulsante Connessione **al** database nella barra degli strumenti Esplora server dati. Nella finestra **di dialogo** Aggiungi connessione verificare che sia selezionato Microsoft SQL Server File di **database** in Origine dati **e** quindi individuare e selezionare il file SampleDatabase.mdf. Completare l'aggiunta della connessione selezionando **OK.**
+  > Se non è possibile espandere il nodo Connessioni dati o la connessione SampleDatabase.mdf non è elencata, selezionare il pulsante Connessione **al** database nella barra degli strumenti Esplora server dati. Nella finestra **di dialogo** Aggiungi connessione verificare che sia selezionato Microsoft SQL Server File di **database** in Origine dati **e** quindi individuare e selezionare il file SampleDatabase.mdf. Completare l'aggiunta della connessione selezionando **OK.**
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Creare tabelle e chiavi usando Progettazione tabelle
 
-In questa sezione verranno create due tabelle, una chiave primaria in ogni tabella e alcune righe di dati di esempio. Si creerà anche una chiave esterna per specificare il modo in cui i record in una tabella corrispondono ai record nell'altra tabella.
+In questa sezione verranno create due tabelle, una chiave primaria in ogni tabella e alcune righe di dati di esempio. Si creerà anche una chiave esterna per specificare in che modo i record di una tabella corrispondono ai record nell'altra tabella.
 
 ### <a name="create-the-customers-table"></a>Creare la tabella Customers
 
-1. In **Esplora server** espandere il **nodo Connessioni dati** e quindi espandere il nodo **SampleDatabase.mdf.**
+1. In **Esplora server** espandere il nodo **Connessioni dati** e quindi espandere il nodo **SampleDatabase.mdf.**
 
-   Se non è possibile espandere il nodo Connessioni dati o se la connessione SampleDatabase.mdf non è elencata, selezionare il pulsante Connessione **al** database nella barra degli strumenti Esplora server dati. Nella finestra **di dialogo** Aggiungi connessione verificare che sia selezionato Microsoft SQL Server File di **database** in Origine dati **e** quindi individuare e selezionare il file SampleDatabase.mdf. Completare l'aggiunta della connessione selezionando **OK.**
+   Se non è possibile espandere il nodo Connessioni dati o la connessione SampleDatabase.mdf non è elencata, selezionare il pulsante Connessione **al** database nella barra degli strumenti Esplora server dati. Nella finestra **di dialogo** Aggiungi connessione verificare che sia selezionato Microsoft SQL Server File di **database** in Origine dati **e** quindi individuare e selezionare il file SampleDatabase.mdf. Completare l'aggiunta della connessione selezionando **OK.**
 
-2. Fare clic con il pulsante destro **del mouse su** Tabelle e scegliere Aggiungi nuova **tabella.**
+2. Fare clic con il pulsante destro **del mouse su Tabelle** e scegliere Aggiungi nuova **tabella**.
 
    Verrà aperta Progettazione tabelle e verrà visualizzata una griglia con una riga predefinita, che rappresenta una singola colonna della tabella che si sta creando. Aggiungendo righe alla griglia, vengono aggiunte colonne alla tabella.
 
@@ -100,7 +100,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
 4. Fare clic con il pulsante destro `CustomerID` del mouse sulla riga e quindi scegliere Imposta chiave **primaria**.
 
-5. Fare clic con il pulsante destro del mouse sulla riga predefinita ( `Id` ) e quindi scegliere **Elimina.**
+5. Fare clic con il pulsante destro del mouse sulla riga predefinita ( `Id` ), quindi scegliere **Elimina**.
 
 6. Denominare la tabella Customers aggiornando la prima riga nel riquadro dello script in modo che corrisponda all'esempio seguente:
 
@@ -112,7 +112,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
    ![Progettazione tabelle](../data-tools/media/table-designer.png)
 
-7. Nell'angolo superiore sinistro della **Progettazione tabelle** selezionare **Aggiorna.**
+7. Nell'angolo superiore sinistro della **Progettazione tabelle** selezionare **Aggiorna**.
 
 8. Nella finestra **di dialogo Anteprima aggiornamenti** database selezionare Aggiorna **database**.
 
@@ -137,7 +137,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. Nell'angolo superiore sinistro del **Progettazione tabelle** selezionare **Aggiorna.**
+4. Nell'angolo superiore sinistro del **Progettazione tabelle** selezionare **Aggiorna**.
 
 5. Nella finestra **di dialogo Anteprima aggiornamenti** database selezionare Aggiorna **database**.
 
@@ -147,7 +147,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
 ### <a name="create-a-foreign-key"></a>Creare una chiave esterna
 
-1. Nel riquadro contestuale sul lato destro della griglia Progettazione tabelle per la tabella Orders fare clic con il pulsante destro del mouse su **Chiavi** esterne e scegliere **Aggiungi nuova chiave esterna.**
+1. Nel riquadro di contesto sul lato destro della griglia Progettazione tabelle per la tabella Orders fare clic con il pulsante destro del mouse su **Chiavi** esterne e scegliere **Aggiungi nuova chiave esterna**.
 
    ![Aggiungere una chiave esterna in Progettazione tabelle in Visual Studio](../data-tools/media/add-foreign-key.png)
 
@@ -159,17 +159,17 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
    ```
 
-4. Nell'angolo superiore sinistro del **Progettazione tabelle** selezionare **Aggiorna.**
+4. Nell'angolo superiore sinistro del **Progettazione tabelle** selezionare **Aggiorna**.
 
 5. Nella finestra **di dialogo Anteprima aggiornamenti** database selezionare Aggiorna **database**.
 
-   Viene creata la chiave esterna.
+   La chiave esterna viene creata.
 
-## <a name="populate-the-tables-with-data"></a>Popolare le tabelle con i dati
+## <a name="populate-the-tables-with-data"></a>Popolare le tabelle con dati
 
 1. In **Esplora server** o **SQL Server Esplora oggetti** espandere il nodo per il database di esempio.
 
-2. Aprire il menu di scelta rapida **per il nodo** Tabelle , selezionare **Aggiorna**, quindi espandere il **nodo** Tabelle .
+2. Aprire il menu di scelta rapida per **il nodo** Tabelle, **selezionare Aggiorna** e quindi espandere il **nodo** Tabelle.
 
 3. Aprire il menu di scelta rapida per la tabella Customers e quindi **selezionare Mostra dati tabella**.
 
@@ -184,7 +184,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
     > [!IMPORTANT]
     > Assicurarsi che tutti gli ID ordine e le quantità degli ordini siano numeri interi e che ogni ID cliente corrisponda a un valore specificato nella **colonna CustomerID** della tabella Customers.
 
-7. Sulla barra dei menu selezionare **File**  >  **Salva tutto.**
+7. Nella barra dei menu selezionare **File**  >  **Salva tutto**.
 
 ## <a name="see-also"></a>Vedi anche
 

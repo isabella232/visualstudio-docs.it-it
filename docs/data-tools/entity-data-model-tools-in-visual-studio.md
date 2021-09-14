@@ -1,6 +1,6 @@
 ---
 title: Strumenti di Entity Framework
-description: Informazioni Entity Framework Tools in Visual Studio. Entity Framework Tools sono progettate per facilitare la compilazione di Entity Framework (EF).
+description: Informazioni Entity Framework Tools in Visual Studio. Entity Framework Tools sono progettati per facilitare la compilazione di Entity Framework (EF).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 28a703518405bfedd4a786a583e8688dcb7db134
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161962"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631403"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools in Visual Studio
 
 Entity Framework è una tecnologia di mapping relazionale a oggetti che consente agli sviluppatori .NET di usare dati relazionali usando oggetti specifici di dominio. Elimina la necessità di gran parte del codice di accesso ai dati che in genere gli sviluppatori devono scrivere. Entity Framework è la tecnologia di modellazione ORM (Object-Relational Mapping) consigliata per le nuove applicazioni .NET.
 
-Entity Framework Tools sono progettate per facilitare la compilazione di Entity Framework (EF). La documentazione completa per Entity Framework è disponibile qui: [Panoramica - EF 6.](/ef/ef6/)
+Entity Framework Tools sono progettati per facilitare la compilazione di Entity Framework (EF). La documentazione completa per Entity Framework è disponibile qui: [Panoramica - EF 6.](/ef/ef6/)
 
   > [!NOTE]
   > Le Entity Framework Tools descritte in questa pagina vengono usate per generare file con estensione *edmx,* che non sono supportati in EF Core. Per generare un modello EF Core da un database esistente, vedere [Reverse Engineering - EF Core](/ef/core/managing-schemas/scaffolding). Per altre informazioni sulle differenze tra EF 6 e EF Core, vedere [Confrontare EF 6 e EF Core](/ef/efcore-and-ef6/).
@@ -42,7 +42,7 @@ Questi sono gli strumenti specifici che costituiscono Entity Framework strumenti
 - È possibile usare **l'Aggiornamento guidato modelli** per aggiornare il modello concettuale, il modello di archiviazione e i mapping quando sono state apportate modifiche al database sottostante.
 
   > [!NOTE]
-  > A partire Visual Studio 2010, gli Entity Framework non supportano [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)] .
+  > A partire Visual Studio 2010, Entity Framework non supportano [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)] .
 
 Gli strumenti generano o modificano un file *con estensione edmx.* Questo file *con estensione edmx* contiene informazioni che descrivono il modello concettuale, il modello di archiviazione e i mapping tra di essi. Per altre informazioni, vedere [EDMX.](/ef/ef6/)
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c49a688fe1ecf9892ec5943934749694e8a839b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629525"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 Recupera i nomi di stringa corrispondenti per gli identificatori di proprietà specificati.
@@ -45,13 +45,13 @@ HRESULT ReadPropertyNames (
 
  `rglpwstrName`
 
-[in, out] Matrice di nomi di proprietà per gli ID di proprietà specificati. La matrice deve essere preallocazione per contenere il numero richiesto di nomi di proprietà e deve essere in grado di contenere almeno `cpropid``BSTR` stringhe.
+[in, out] Matrice di nomi di proprietà per gli ID di proprietà specificati. La matrice deve essere preallocato per contenere il numero richiesto di nomi di proprietà e deve essere in grado di contenere almeno `cpropid``BSTR` stringhe.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- I nomi delle proprietà restituite devono essere liberati (chiamando la funzione ) quando `SysFreeString` non sono più necessari.
+ I nomi delle proprietà restituite devono essere liberati (chiamando la `SysFreeString` funzione ) quando non sono più necessari.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

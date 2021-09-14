@@ -26,15 +26,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: c0b371f4aceef5baadd7a00738d885974b88c584
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628464"
 ---
 # <a name="msbuild-conditional-constructs"></a>Costrutti condizionali di MSBuild
 
-MSBuild un meccanismo per l'elaborazione con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [Otherwise.](../msbuild/otherwise-element-msbuild.md)
+MSBuild fornisce un meccanismo per l'elaborazione con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [Otherwise.](../msbuild/otherwise-element-msbuild.md)
 
 ## <a name="use-the-choose-element"></a>Usare l'elemento Choose
 
@@ -96,7 +96,7 @@ In questo esempio viene usata una condizione per una costante `DEFINED_CONSTANT`
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Scegliere l'elemento (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)
 - [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

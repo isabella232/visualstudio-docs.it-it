@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 61c57e489df355e399bc970549f0725a9c495f72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116656"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628475"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -36,17 +36,17 @@ Visual Studio riaprire automaticamente i documenti lasciati aperti nella session
 
 Tramite una barra gialla, Visual Studio indica se il ripristino automatico dei documenti sta rallentando considerevolmente il caricamento di una soluzione. È possibile disabilitare la riapertura automatica dei file seguendo questa procedura:
 
-1. Selezionare **Opzioni**  >  **strumenti** per aprire la **finestra di dialogo** Opzioni.
+1. Selezionare **Opzioni**  >  **strumenti** per aprire la **finestra di** dialogo Opzioni.
 
-1. Nella pagina **Progetti e soluzioni**  >  **Generali** deselezionare Riapri **documenti al caricamento della soluzione**.
+1. Nella pagina **Progetti e soluzioni** Generale  >  **deselezionare** Riapri documenti al caricamento della **soluzione.**
 
 Se si disabilita il ripristino automatico dei file, è possibile accedere velocemente ai file da aprire usando il comando [Vai a](../ide/go-to.md):
 
 - Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere **CTRL**+**T**.
 
-- Passare all'ultima posizione di modifica in una **soluzione** usando Modifica Vai all'ultima modifica oppure premendo  >    >   **CTRL** +  + **MAIUSC+BACKSPACE**.
+- Passare all'ultima posizione di modifica in una soluzione usando Modifica Vai a vai alla posizione dell'ultima modifica oppure  >    >  premendo **CTRL** +  + **MAIUSC+BACKSPACE.**
 
-- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Modifica**  >  **Vai a** file  >  **recente** oppure premere **CTRL** + **1**, **CTRL** + **R**.
+- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Modifica**  >  **Vai a** vai al file  >  **recente** oppure premere **CTRL** + **1**,  + **CTRL+R.**
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
 
@@ -62,7 +62,7 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     Per il debug nativo, il caricamento dei file di simboli (con estensione *pdb*) è dispendioso in termini di risorse di memoria. È possibile configurare le impostazioni dei simboli del debugger per risparmiare memoria. In genere, si configura la soluzione per caricare solo i moduli del proprio progetto.
 
-    Per specificare il caricamento dei simboli, scegliere **Strumenti**  >  **Opzioni**  >  **Simboli di**  >  **debug**.
+    Per specificare il caricamento dei simboli, scegliere **Strumenti**  >  **Opzioni Simboli**  >  **di**  >  **debug**.
 
     Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli Per aprire la finestra durante il debug, scegliere **Debug**  >  **Windows**  >  **Moduli**.)
 
@@ -72,7 +72,7 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     È consigliabile disabilitare la profilatura della CPU dopo l'uso. Questa funzionalità può utilizzare grandi quantità di risorse. Dopo aver abilitato la profilatura della CPU, questo stato viene mantenuto per le sessioni di debug successive, perciò è preferibile disattivarla al termine. È possibile risparmiare risorse disabilitando gli strumenti di diagnostica durante il debug se la funzionalità offerte non sono necessarie.
 
-    Per disabilitare la **Strumenti di diagnostica**, avviare una sessione di debug, selezionare Opzioni strumenti Debug generale e quindi deselezionare l'opzione Abilita Strumenti di diagnostica  >    >    >   **durante il** debug.
+    Per disabilitare la **Strumenti di diagnostica**, avviare una sessione di debug, selezionare Strumenti  >  **Opzioni**  >  **Debug**  >  **Generale**,  quindi deselezionare l'opzione Strumenti di diagnostica durante il debug .
 
     Per altre informazioni, vedere [Strumenti di profilatura](../profiling/profiling-feature-tour.md).
 
@@ -110,13 +110,13 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
    ::: moniker range="vs-2017"
 
-    Per disabilitare le estensioni, passare **a Estensioni** e aggiornamenti degli strumenti e > disabilitare una determinata estensione.
+    Per disabilitare le estensioni, passare **a Strumenti** Estensioni > **e aggiornamenti** e disabilitare un'estensione specifica.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Per disabilitare le estensioni, passare **a Estensioni** > **Gestione estensioni** e disabilitare una determinata estensione.
+    Per disabilitare le estensioni, passare **a Estensioni** > **Gestisci estensioni** e disabilitare una determinata estensione.
 
    ::: moniker-end
 
@@ -124,15 +124,15 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     [**La modalità mappa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) visualizza le righe di codice, in miniatura, sulla barra di scorrimento. La modalità mappa è abilitata per impostazione predefinita.
 
-    Per disabilitare la modalità mappa, passare a Strumenti Opzioni Editor di testo Tutte le barre di scorrimento lingue e nella sezione Comportamento deselezionare l'opzione Usa modalità mappa per barra  >    >    >    >   **di scorrimento** verticale. 
+    Per disabilitare la modalità mappa, passare a Strumenti Opzioni Editor di testo Barre di scorrimento Tutti i linguaggi e nella sezione Comportamento deselezionare l'opzione Usa modalità mappa per barra  >    >    >    >   **di scorrimento** verticale. 
 
 - **Disabilitare il ritorno a capo automatico**
 
-    [**Il ritorno a**](./reference/how-to-manage-word-wrap-in-the-editor.md) capo automatico visualizza la parte di una lunga riga di codice che si estende oltre la larghezza corrente della finestra dell'editor di codice. Il ritorno a capo automatico è on per impostazione predefinita.
+    [**A capo automatico**](./reference/how-to-manage-word-wrap-in-the-editor.md) visualizza la parte di una lunga riga di codice che si estende oltre la larghezza corrente della finestra dell'editor di codice. Il ritorno a capo automatico è on per impostazione predefinita.
 
-    Per disabilitare il ritorno a capo automatico per un progetto su cui si sta lavorando, passare a **Modifica**  >  **ritorno a capo** automatico  >  **avanzato.** È possibile attivare o disattivare questa impostazione usando gli stessi comandi di menu.
+    Per disabilitare il ritorno a capo automatico per un progetto su cui si sta lavorando, passare a **Modifica ritorno a**  >  **capo**  >  **automatico avanzato.** È possibile attivare o disattivare questa impostazione usando gli stessi comandi di menu.
 
-    Per disabilitare il ritorno a capo automatico per tutti i progetti, passare a Opzioni strumenti Editor di testo generale Tutti i linguaggi Generale e nella sezione Impostazioni deselezionare l'opzione  >    >    >    >    >  Ritorno **a capo** automatico. 
+    Per disabilitare il ritorno a capo automatico per tutti i progetti, passare a Opzioni strumenti Generale Editor di testo Tutti i linguaggi Generale e nella sezione Impostazioni  >    >    >    >    >  deselezionare   l'opzione A capo automatico.
 
 - **Disabilitare la finestra di progettazione XAML**
 
@@ -146,7 +146,7 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
 - **Aggiungere file non tracciati al file con estensione gitignore locale**
 
-    Visual Studio il comando Git con file non tracciati per offrire un'esperienza facile quando `git status` si aggiungono nuovi file a un repository. Quando è presente un numero elevato di file non tracciati, `git status` può utilizzare memoria aggiuntiva. Per ignorare questi file e migliorare le prestazioni di , è possibile aggiungere questi file o cartelle `git status` al file gitignore locale. Per accedere al file, passare a **Git**  >  **Impostazioni**  >  **Git Repository Impostazioni**. Nella sezione **File Git** fare  clic su Aggiungi per creare un  file con estensione gitignore oppure fare clic su Modifica se ne è già presente uno.
+    Visual Studio esegue il comando Git con file non tracciati per offrire un'esperienza uniforme quando `git status` si aggiungono nuovi file a un repository. Quando è presente un numero elevato di file non tracciati, può `git status` utilizzare memoria aggiuntiva. Per ignorare questi file e migliorare le prestazioni di , è possibile aggiungere questi file o cartelle `git status` al file con estensione gitignore locale. Per accedere al file, passare a **Git**  >  **Impostazioni**  >  **Git Repository Impostazioni**. Quindi, nella **sezione File Git** fare clic su Aggiungi per creare  un file con estensione gitignore oppure fare clic su Modifica se ne è già presente uno. 
 
 ## <a name="force-a-garbage-collection"></a>Imporre una Garbage Collection
 

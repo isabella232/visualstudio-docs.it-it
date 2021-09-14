@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3641137248b46e43ac1c5c11b1bcc0998e78d384
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105600"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630456"
 ---
 # <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 Recupera il nome di un flusso di dati di debug.

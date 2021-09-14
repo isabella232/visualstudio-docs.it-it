@@ -25,11 +25,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: a9f714b4e66f14e313fa53466db80c99dfbef50f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631085"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di verifica che i valori immessi negli oggetti dati siano conformi ai vincoli all'interno dello schema di un set di dati. Il processo di convalida conferma anche che questi valori stanno seguendo le regole stabilite per l'applicazione. È consigliabile convalidare i dati prima di inviare aggiornamenti al database sottostante. In questo modo si riducono gli errori e il numero potenziale di round trip tra un'applicazione e il database.
@@ -144,17 +144,17 @@ La convalida può essere eseguita anche durante <xref:System.Data.DataTable.RowC
 Ogni riga in una tabella dati ha una proprietà che tiene traccia dello stato corrente della riga usando <xref:System.Data.DataRow.RowState%2A> i valori <xref:System.Data.DataRowState> nell'enumerazione . È possibile restituire le righe modificate da un set di dati o da una tabella dati chiamando il `GetChanges` metodo di un oggetto o <xref:System.Data.DataSet> <xref:System.Data.DataTable> . È possibile verificare che le modifiche esistano prima di chiamare `GetChanges` chiamando il metodo di un set di <xref:System.Data.DataSet.HasChanges%2A> dati.
 
 > [!NOTE]
-> Dopo aver eseguito il commit delle modifiche a un set di dati o a una tabella di dati (chiamando il metodo <xref:System.Data.DataSet.AcceptChanges%2A> ), il metodo non restituisce `GetChanges` dati. Se l'applicazione deve elaborare le righe modificate, è necessario elaborare le modifiche prima di chiamare il `AcceptChanges` metodo .
+> Dopo aver eseguito il commit delle modifiche a un set di dati o a una tabella dati (chiamando il metodo ), il <xref:System.Data.DataSet.AcceptChanges%2A> `GetChanges` metodo non restituisce dati. Se l'applicazione deve elaborare le righe modificate, è necessario elaborare le modifiche prima di chiamare il `AcceptChanges` metodo .
 
-La chiamata al metodo di un set di dati o di una tabella di dati restituisce un nuovo set di dati o una nuova tabella di dati che contiene solo <xref:System.Data.DataSet.GetChanges%2A> i record modificati. Se si desidera ottenere record specifici, ad esempio solo nuovi record o solo record modificati, è possibile passare un valore dell'enumerazione come parametro <xref:System.Data.DataRowState> al `GetChanges` metodo .
+La chiamata al metodo di un set di dati o di una tabella di dati restituisce un nuovo set di dati o una nuova tabella di dati contenente <xref:System.Data.DataSet.GetChanges%2A> solo i record che sono stati modificati. Se si desidera ottenere record specifici, ad esempio solo nuovi record o solo record modificati, è possibile passare un valore dall'enumerazione <xref:System.Data.DataRowState> come parametro al metodo `GetChanges` .
 
-Utilizzare l'enumerazione per accedere alle diverse versioni di una riga, ad esempio i valori originali che si trovavano in una riga <xref:System.Data.DataRowVersion> prima dell'elaborazione.
+Utilizzare l'enumerazione per accedere alle diverse versioni di una riga, ad esempio i valori originali presenti in una riga <xref:System.Data.DataRowVersion> prima dell'elaborazione.
 
 ### <a name="to-get-all-changed-records-from-a-dataset"></a>Per ottenere tutti i record modificati da un set di dati
 
 - Chiamare il <xref:System.Data.DataSet.GetChanges%2A> metodo di un set di dati.
 
-     L'esempio seguente crea un nuovo set di dati denominato e lo popola con tutti i `changedRecords` record modificati di un altro set di dati denominato `dataSet1` .
+     Nell'esempio seguente viene creato un nuovo set di dati denominato e viene popolato con tutti i `changedRecords` record modificati di un altro set di dati denominato `dataSet1` .
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet14":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet14":::
@@ -163,7 +163,7 @@ Utilizzare l'enumerazione per accedere alle diverse versioni di una riga, ad ese
 
 - Chiamare il <xref:System.Data.DataTable.GetChanges%2A> metodo di un oggetto DataTable.
 
-     Nell'esempio seguente viene creata una nuova tabella dati denominata e viene popolata con tutti i `changedRecordsTable` record modificati di un'altra tabella dati denominata `dataTable1` .
+     L'esempio seguente crea una nuova tabella dati denominata e la popola con tutti i record modificati `changedRecordsTable` di un'altra tabella di dati denominata `dataTable1` .
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet15":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet15":::
@@ -172,29 +172,29 @@ Utilizzare l'enumerazione per accedere alle diverse versioni di una riga, ad ese
 
 - Chiamare il `GetChanges` metodo di un set di dati o di una tabella dati e passare un valore di enumerazione come <xref:System.Data.DataRowState> argomento.
 
-     Nell'esempio seguente viene illustrato come creare un nuovo set di dati denominato e popolarlo solo con i record `addedRecords` aggiunti al set di `dataSet1` dati.
+     L'esempio seguente illustra come creare un nuovo set di dati denominato e popolarlo solo con i record `addedRecords` aggiunti al set di `dataSet1` dati.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet16":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet16":::
 
-     Nell'esempio seguente viene illustrato come restituire tutti i record aggiunti di recente alla `Customers` tabella :
+     L'esempio seguente illustra come restituire tutti i record aggiunti di recente alla `Customers` tabella :
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet17":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet17":::
 
-## <a name="access-the-original-version-of-a-datarow"></a>Accedere alla versione originale di un oggetto DataRow
-Quando vengono apportate modifiche alle righe di dati, il set di dati mantiene sia la versione originale ( ) che la nuova <xref:System.Data.DataRowVersion.Original> versione ( ) della <xref:System.Data.DataRowVersion.Current> riga. Ad esempio, prima di chiamare il metodo , l'applicazione può accedere alle diverse versioni di un record (come definito nell'enumerazione ) ed elaborare `AcceptChanges` <xref:System.Data.DataRowVersion> le modifiche di conseguenza.
+## <a name="access-the-original-version-of-a-datarow"></a>Accedere alla versione originale di un DataRow
+Quando vengono apportate modifiche alle righe di dati, il set di dati mantiene le versioni originali ( ) e <xref:System.Data.DataRowVersion.Original> nuove ( ) della <xref:System.Data.DataRowVersion.Current> riga. Ad esempio, prima di chiamare il metodo , l'applicazione può accedere alle diverse versioni di un record (come definito nell'enumerazione ) ed elaborare `AcceptChanges` <xref:System.Data.DataRowVersion> le modifiche di conseguenza.
 
 > [!NOTE]
-> Esistono versioni diverse di una riga solo dopo che è stata modificata e prima che `AcceptChanges` sia stato chiamato il metodo . Dopo la `AcceptChanges` chiamata al metodo , le versioni corrente e originale sono le stesse.
+> Versioni diverse di una riga esistono solo dopo che è stata modificata e prima che sia stato `AcceptChanges` chiamato il metodo . Dopo la `AcceptChanges` chiamata al metodo , le versioni correnti e originali sono le stesse.
 
-Passando il valore insieme all'indice di colonna (o al nome della colonna come stringa) viene restituito il valore dalla versione di riga specifica <xref:System.Data.DataRowVersion> della colonna. La colonna modificata viene identificata durante gli <xref:System.Data.DataTable.ColumnChanging> eventi <xref:System.Data.DataTable.ColumnChanged> e . Si tratta di un buon momento per esaminare le diverse versioni di riga ai fini della convalida. Tuttavia, se sono stati temporaneamente sospesi vincoli, tali eventi non verranno generati e sarà necessario identificare a livello di codice quali colonne sono state modificate. A tale scopo, scorrere la raccolta e <xref:System.Data.DataTable.Columns%2A> confrontare i diversi <xref:System.Data.DataRowVersion> valori.
+Passando il valore insieme all'indice di colonna (o al nome della colonna come stringa) viene restituito il valore dalla versione di riga <xref:System.Data.DataRowVersion> specifica della colonna. La colonna modificata viene identificata durante gli <xref:System.Data.DataTable.ColumnChanging> eventi e <xref:System.Data.DataTable.ColumnChanged> . Si tratta di un buon momento per esaminare le diverse versioni di riga ai fini della convalida. Tuttavia, se sono stati sospesi temporaneamente i vincoli, questi eventi non verranno generati e sarà necessario identificare a livello di codice le colonne modificate. A tale scopo, scorrere la raccolta e <xref:System.Data.DataTable.Columns%2A> confrontare i diversi <xref:System.Data.DataRowVersion> valori.
 
 ### <a name="to-get-the-original-version-of-a-record"></a>Per ottenere la versione originale di un record
 
-- Accedere al valore di una colonna passando <xref:System.Data.DataRowVersion> l'oggetto della riga che si desidera restituire.
+- Accedere al valore di una colonna passando <xref:System.Data.DataRowVersion> l'oggetto della riga da restituire.
 
-     Nell'esempio seguente viene illustrato come utilizzare un <xref:System.Data.DataRowVersion> valore per ottenere il valore originale di un campo in un oggetto `CompanyName` <xref:System.Data.DataRow> :
+     Nell'esempio seguente viene illustrato come usare un <xref:System.Data.DataRowVersion> valore per ottenere il valore originale di un campo in un oggetto `CompanyName` <xref:System.Data.DataRow> :
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet21":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet21":::
@@ -203,9 +203,9 @@ Passando il valore insieme all'indice di colonna (o al nome della colonna come s
 
 ### <a name="to-get-the-current-version-of-a-record"></a>Per ottenere la versione corrente di un record
 
-- Accedere al valore di una colonna e quindi aggiungere all'indice un parametro che indica la versione di una riga da restituire.
+- Accedere al valore di una colonna e quindi aggiungere un parametro all'indice che indica la versione di una riga da restituire.
 
-     Nell'esempio seguente viene illustrato come utilizzare un <xref:System.Data.DataRowVersion> valore per ottenere il valore corrente di un campo in un oggetto `CompanyName` <xref:System.Data.DataRow> :
+     Nell'esempio seguente viene illustrato come usare un <xref:System.Data.DataRowVersion> valore per ottenere il valore corrente di un campo in un oggetto `CompanyName` <xref:System.Data.DataRow> :
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet22":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet22":::

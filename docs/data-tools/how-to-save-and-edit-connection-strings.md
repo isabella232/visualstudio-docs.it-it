@@ -12,11 +12,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: d6ff3b07d05430ebb8ce26d4003f8ce74ab8ac4d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631301"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Procedura: Salvare e modificare stringhe di connessione
 Le stringhe di connessione Visual Studio applicazioni vengono salvate nel file di configurazione dell'applicazione (definite anche impostazioni dell'applicazione) o hard coded direttamente nell'applicazione. Il salvataggio delle stringhe di connessione nel file di configurazione dell'applicazione semplifica la gestione dell'applicazione. Se la stringa di connessione richiede modifiche, infatti, è possibile aggiornarla all'interno di tale file invece di modificarla nel codice sorgente e poi ricompilare l'applicazione.

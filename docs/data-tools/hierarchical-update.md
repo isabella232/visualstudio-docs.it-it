@@ -25,19 +25,19 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 74e96bf3644d57235aff82fb2b0393c1506dd653
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631374"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 
 *L'aggiornamento* gerarchico si riferisce al processo di salvataggio dei dati aggiornati (da un set di dati con due o più tabelle correlate) in un database mantenendo al tempo stesso le regole di integrità referenziale. *L'integrità* referenziale si riferisce alle regole di coerenza fornite dai vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione di record correlati. Ad esempio, è l'integrità referenziale che impone la creazione di un record cliente prima di consentire la creazione di ordini per tale cliente.  Per altre informazioni sulle relazioni nei set di dati, vedere [Relazioni nei set di dati](../data-tools/relationships-in-datasets.md).
 
-La funzionalità di aggiornamento gerarchico usa `TableAdapterManager` un oggetto per gestire gli oggetti in un set di dati `TableAdapter` tipizzato. Il `TableAdapterManager` componente è una Visual Studio generata dall'utente, non un tipo .NET. Quando si trascina una  tabella dalla finestra Origini dati a un form Windows o a una pagina WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o alla pagina e viene visualizzata nella finestra di progettazione nella barra dei componenti. Per informazioni dettagliate sulla `TableAdapterManager` classe , vedere la sezione TableAdapterManager Reference di [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+La funzionalità di aggiornamento gerarchico usa `TableAdapterManager` un oggetto per gestire gli oggetti in un set di dati `TableAdapter` tipizzato. Il `TableAdapterManager` componente è una Visual Studio generata dall'utente, non un tipo .NET. Quando si trascina una  tabella dalla finestra Origini dati a un form Windows o a una pagina WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o alla pagina e la si visualizza nella finestra di progettazione nella barra dei componenti. Per informazioni dettagliate sulla `TableAdapterManager` classe , vedere la sezione TableAdapterManager Reference di [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-Per impostazione predefinita, un set di dati considera le tabelle correlate come "solo relazioni", ovvero non applica vincoli di chiave esterna. È possibile modificare tale impostazione in fase di progettazione usando il Progettazione DataSet **.** Selezionare la linea di relazione tra due tabelle per visualizzare la **finestra di dialogo** Relazione . Le modifiche apportate in questo caso determineranno il comportamento dell'oggetto quando invia le modifiche nelle tabelle `TableAdapterManager` correlate al database.
+Per impostazione predefinita, un set di dati considera le tabelle correlate come "solo relazioni", ovvero non applica vincoli di chiave esterna. È possibile modificare tale impostazione in fase di progettazione usando **l'Progettazione DataSet**. Selezionare la linea di relazione tra due tabelle per visualizzare la **finestra di dialogo** Relazione . Le modifiche apportate in questo caso determineranno il comportamento dell'oggetto quando invia le modifiche nelle tabelle `TableAdapterManager` correlate al database.
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Abilitare l'aggiornamento gerarchico in un set di dati
 
@@ -47,7 +47,7 @@ Per impostazione predefinita, l'aggiornamento gerarchico è abilitato per tutti 
 
 ## <a name="create-a-new-relation-between-tables"></a>Creare una nuova relazione tra tabelle
 
-Per creare una nuova relazione tra due tabelle, nell'Progettazione DataSet selezionare la barra del titolo di ogni tabella, quindi fare clic con il pulsante destro del mouse e scegliere **Aggiungi relazione**.
+Per creare una nuova relazione tra due tabelle, nel Progettazione DataSet selezionare la barra del titolo di ogni tabella, quindi fare clic con il pulsante destro del mouse e scegliere **Aggiungi relazione**.
 
 ![Menu Aggiungi relazione aggiornamento gerarchico](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
@@ -86,7 +86,7 @@ Dopo avere rilasciato gli elementi dalla finestra **Origini dati**, il codice vi
 Il codice di salvataggio generato contiene anche una riga di codice che chiama il metodo `CustomersBindingSource.EndEdit`. In particolare, chiama <xref:System.Windows.Forms.BindingSource.EndEdit%2A> il metodo della prima classe aggiunta al <xref:System.Windows.Forms.BindingSource> form. In altre parole, questo codice viene generato solo per la prima tabella trascinata dalla finestra Origini **dati** nel form. La chiamata al metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> esegue il commit di tutte le modifiche in corso nei controlli associati a dati che si stanno modificando. Pertanto, se un controllo associato a dati ha lo stato attivo e si fa clic sul pulsante **Salva**, prima del salvataggio effettivo verrà eseguito il commit di tutte le modifiche in sospeso nel controllo (metodo `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
-> Il **Progettazione DataSet** aggiunge solo il `BindingSource.EndEdit` codice per la prima tabella rilasciata nel form. Pertanto, è necessario aggiungere una riga di codice per chiamare il metodo `BindingSource.EndEdit` per ogni tabella correlata nel form. Per questa procedura dettagliata, è necessario quindi aggiungere una chiamata al metodo `OrdersBindingSource.EndEdit`.
+> Il **Progettazione DataSet** aggiunge solo il codice per la prima tabella `BindingSource.EndEdit` rilasciata nel form. Pertanto, è necessario aggiungere una riga di codice per chiamare il metodo `BindingSource.EndEdit` per ogni tabella correlata nel form. Per questa procedura dettagliata, è necessario quindi aggiungere una chiamata al metodo `OrdersBindingSource.EndEdit`.
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Per aggiornare il codice in modo da eseguire il commit delle modifiche apportate alle tabelle correlate prima del salvataggio
 
@@ -115,7 +115,7 @@ Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correl
 
 ## <a name="tableadaptermanager-reference"></a>Informazioni di riferimento su TableAdapterManager
 
-Per impostazione predefinita, `TableAdapterManager` viene generata una classe quando si crea un set di dati contenente tabelle correlate. Per impedire la generazione della classe, modificare il valore della proprietà `Hierarchical Update` del set di dati su false. Quando si trascina una tabella con una relazione nell'area di progettazione di Windows Form o WPF, Visual Studio dichiara una variabile membro della classe. Se non si usa il databinding, è necessario dichiarare manualmente la variabile.
+Per impostazione predefinita, `TableAdapterManager` viene generata una classe quando si crea un set di dati contenente tabelle correlate. Per impedire la generazione della classe, modificare il valore della proprietà `Hierarchical Update` del set di dati su false. Quando si trascina una tabella con una relazione nell'area di progettazione di un form Windows o di una pagina WPF, Visual Studio dichiara una variabile membro della classe. Se non si usa il databinding, è necessario dichiarare manualmente la variabile.
 
 La `TableAdapterManager` classe non è un tipo .NET. Pertanto, non è possibile cercarlo nella documentazione. Viene creato in fase di progettazione come parte del processo di creazione del set di dati.
 

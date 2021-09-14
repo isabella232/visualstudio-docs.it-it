@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: da6a492b30121a429b4c1ae5f5048b41cc9dcd8921e24a312dcc056371c8d211
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1594d7137ec6c34c794f588f7a126bdb1392462b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629544"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 Legge le proprietà specificate dal set di proprietà corrente.
@@ -37,11 +37,11 @@ HRESULT ReadMultiple(
 #### <a name="parameters"></a>Parametri
  `cpspec`
 
-[in] Numero di proprietà specificate nella `rgpspec` matrice. Se zero, il metodo non restituisce proprietà, ma restituisce `S_OK` come codice di esito positivo.
+[in] Conteggio delle proprietà specificate nella `rgpspec` matrice. Se zero, il metodo non restituisce proprietà ma restituisce `S_OK` come codice di esito positivo.
 
  `rgpspec`
 
-[in] Matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID proprietà o da un nome di stringa facoltativo. Non è necessario specificare le proprietà in un ordine specifico nella matrice. La matrice può contenere proprietà duplicate, con conseguente valori di proprietà duplicati al ritorno per le proprietà semplici. Le proprietà non semplici devono restituire l'accesso negato al tentativo di aprirle una seconda volta. La matrice può contenere una combinazione di ID proprietà e ID stringa. Questa matrice deve avere almeno `cpspec` un numero di valori di proprietà.
+[in] Matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID proprietà o da un nome di stringa facoltativo. Non è necessario specificare le proprietà in un ordine particolare nella matrice. La matrice può contenere proprietà duplicate, determinando la restituzione di valori di proprietà duplicati per le proprietà semplici. Le proprietà non semplici devono restituire l'accesso negato quando si tenta di aprirle una seconda volta. La matrice può contenere una combinazione di ID proprietà e ID stringa. Questa matrice deve avere almeno un `cpspec` numero di valori di proprietà.
 
  `rgvar`
 

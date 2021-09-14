@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d5985411fe58852a004d6f74d0015f07732d3de243895642492282a50367df
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 724d5c541d90eedc335aaf840eea389510b6d8dd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631794"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor del set di regole di analisi del codice
 
@@ -39,7 +39,7 @@ L'editor visualizza le regole in una struttura ad albero che raggruppa le regole
 - Selezionare o deselezionare la casella di controllo del nodo del gruppo per aggiungere o rimuovere tutte le regole nel gruppo. Quando si seleziona un gruppo, tutte le regole vengono impostate **sull'azione Avviso.**
 
    > [!TIP]
-   > È possibile modificare la modalità di raggruppamento delle regole **nell'elenco a** discesa Raggruppa per.
+   > È possibile modificare la modalità di raggruppamento delle regole nell'elenco **a** discesa Raggruppa per.
 
 - Fare clic **sul campo** Azione di un gruppo e specificare l'azione da applicare a tutte le regole del gruppo.
 
@@ -58,7 +58,7 @@ Nella tabella seguente vengono descritti i controlli sulla barra degli strumenti
 |**Raggruppa per**|Specifica il campo in base al quale vengono raggruppate le regole. Fare **\<None>** clic per visualizzare le regole senza gruppi.|
 |**Opzioni colonne**|Specifica i campi della regola da visualizzare.|
 |**Nascondere le regole che non si applicano alla soluzione corrente**|Mostra o nasconde le regole che non sono dello stesso tipo di destinazione della soluzione.|
-|**Visualizzare le regole che possono generare Code Analysis errori**|Mostra o nasconde le regole a cui è assegnata l'azione Errore.|
+|**Mostra regole che possono generare Code Analysis errori**|Mostra o nasconde le regole a cui è assegnata l'azione Errore.|
 |**Visualizzare le regole che possono generare Code Analysis avvisi**|Mostra o nasconde le regole a cui è assegnata l'azione Avviso.|
 |**Mostra regole non abilitate**|Mostra o nasconde le regole a cui è assegnata l'azione Nessuna.|
 |**Aggiungere o rimuovere set di regole figlio**|Aggiunge o rimuove le regole nei set di regole selezionati.|

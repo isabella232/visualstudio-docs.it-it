@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8294b245f2bb71d1cf46abcfd555db23b3ceebe9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629555"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Legge i `BSTR` valori in un set di proprietà.
@@ -43,7 +43,7 @@ HRESULT ReadBSTR (
 [out] Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BSTR` .
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BSTR` .
 
 ## <a name="remarks"></a>Commenti
  Un oggetto è definito da Windows come stringa di caratteri `BSTR` wide con terminazione zero.

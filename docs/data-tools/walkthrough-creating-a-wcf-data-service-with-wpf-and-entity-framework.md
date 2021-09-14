@@ -1,6 +1,6 @@
 ---
 title: Creare WCF Data Service con WPF & Entity Framework
-description: Creare un servizio dati WCF con WPF e Entity Framework ospitato in un'applicazione Web ASP.NET e quindi accedervi da un'applicazione Windows Forms.
+description: Creare un servizio dati WCF con WPF e Entity Framework ospitato in un'applicazione Web ASP.NET e quindi accedervi da un'applicazione Windows Form.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: ca3912539d8c651fd65fbcd87c809597748654cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036759"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631055"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
 Questa procedura dettagliata illustra come creare un semplice servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] incluso in un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e come accedervi da un'applicazione Windows Forms.
@@ -46,11 +46,11 @@ In questa procedura dettagliata:
 ## <a name="prerequisites"></a>Prerequisiti
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** **Nell'Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nel **Programma di installazione di Visual Studio**, è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (**SQL Server Esplora oggetti** viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza e **scegliere Nuova query.**
+    1. In Visual Studio aprire la **SQL Server Esplora oggetti** predefinita. (**SQL Server Esplora oggetti** viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -107,7 +107,7 @@ Nel passaggio successivo si creerà un [!INCLUDE[adonet_edm](../data-tools/inclu
 7. Nella pagina **Scegli versione elemento** scegliere il pulsante di opzione **Entity Framework 5.0** e quindi fare clic su **Avanti**.
 
     > [!NOTE]
-    > Per usare l'ultima versione di Entity Framework 6 con i servizi WCF è necessario installare il pacchetto NuGet WCF Data Services Entity Framework Provider. Vedere [Using WCF Data Services 5.6.0 with Entity Framework 6+ (Uso di WCF Data Services 5.6.0 con Entity Framework 6+](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/)).
+    > Per usare l'ultima versione di Entity Framework 6 con i servizi WCF è necessario installare il pacchetto NuGet WCF Data Services Entity Framework Provider. Vedere [Using WCF Data Services 5.6.0 with Entity Framework 6+ (Uso di WCF Data Services 5.6.0 con Entity Framework 6+](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. Nella pagina **Seleziona oggetti di database** espandere il nodo **Tabelle**, selezionare la casella di controllo **Clienti**, quindi scegliere **Fine**.
 

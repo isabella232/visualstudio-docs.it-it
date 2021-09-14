@@ -15,11 +15,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3ce12fd272297429ba62c4e947025ada7c350d26
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631104"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Set di dati tipizzati e non tipizzati
 Un set di dati tipizzato è un set di dati derivato prima dalla classe di base e quindi usa le informazioni di Progettazione DataSet , archiviate in un file xsd, per generare una nuova classe dataset fortemente <xref:System.Data.DataSet> tipizzato.  Le informazioni dello schema (tabelle, colonne e così via) vengono generate e compilate in questa nuova classe di set di dati come set di proprietà e oggetti di prima classe. Poiché un set di dati tipizzato eredita dalla classe di base, la classe tipizzato presuppone tutte le funzionalità della classe e può essere usata con metodi che accettano un'istanza di una classe <xref:System.Data.DataSet> <xref:System.Data.DataSet> come <xref:System.Data.DataSet> parametro.

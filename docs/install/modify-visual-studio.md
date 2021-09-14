@@ -11,19 +11,19 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 435ee6ad72141453e89aadcfd4ac3310bde0d538
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4bcffc00a5907912846365c9213a285513bc87db
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112391075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628476"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modificare Visual Studio carichi di lavoro, componenti e Language Pack
 
@@ -117,7 +117,7 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
 
 1. Scegliere **Modifica**.
 
-1. Se lo si desidera, scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
+1. Se necessario, scegliere la **scheda Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
 1. Dopo aver installato i nuovi carichi di lavoro, **scegliere** Avvia dal Programma di installazione di Visual Studio per aprire Visual Studio.
 
@@ -128,7 +128,7 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
  I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
 
  > [!TIP]
->Per altre informazioni sui bundle di strumenti e componenti necessari per lo sviluppo, vedere Visual Studio [carichi di lavoro.](https://visualstudio.microsoft.com/vs/#workloads)
+>Per altre informazioni sui bundle di strumenti e componenti necessari per lo sviluppo, vedere Visual Studio [carichi di lavoro](https://visualstudio.microsoft.com/vs/#workloads).
 
 1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
@@ -147,7 +147,7 @@ Per apportare modifiche all'installazione, è necessario avviare il Visual Studi
 ::: moniker-end
 
 >[!TIP]
-> Per informazioni sul componente SQL Server Data Tools (SSDT), vedere Scaricare e installare [SSDT per](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)Visual Studio .
+> Per informazioni sul componente SQL Server Data Tools (SSDT), vedere Scaricare e installare [SSDT per Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true).
 
 ## <a name="modify-language-packs"></a>Modificare i Language Pack
 

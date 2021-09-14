@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: fca9006f0b7a556be022eaac9682aa58b9e70228
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629165"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 Recupera le informazioni sul numero di riga per le righe contenute in un intervallo di indirizzi virtuali (VA) specificato.
@@ -37,7 +37,7 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Parametri
 `va`
 
-[in] Specifica l'indirizzo come va va.
+[in] Specifica l'indirizzo come va.
 
 `length`
 
@@ -48,7 +48,7 @@ HRESULT findLinesByVA (
 [out] Restituisce un [oggetto IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco di tutti i numeri di riga che coprono l'intervallo di indirizzi specificato.
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra una funzione che ottiene tutti i numeri di riga contenuti in una funzione usando l'indirizzo virtuale e la lunghezza della funzione.
+Questo esempio mostra una funzione che ottiene tutti i numeri di riga contenuti in una funzione usando l'indirizzo virtuale e la lunghezza della funzione.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

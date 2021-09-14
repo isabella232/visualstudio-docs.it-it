@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 68e3b20d2a51a048cc1b9a3988ac0b0a02d85d76
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630210"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.

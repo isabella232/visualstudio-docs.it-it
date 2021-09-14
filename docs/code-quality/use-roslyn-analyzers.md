@@ -15,11 +15,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: b99c219e3ca4da798b6e685f7ae5ae0ad2906ba8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122162136"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631806"
 ---
 # <a name="overview"></a>Panoramica
 
@@ -35,7 +35,7 @@ A partire da Visual Studio 2019 versione 16.3, è possibile configurare la gravi
 
 ::: moniker range="vs-2017"
 
-È possibile configurare la gravità delle regole [](../code-quality/install-roslyn-analyzers.md) dell'analizzatore, o *diagnostica,* se si installano gli analizzatori come NuGet pacchetto. È possibile modificare la gravità di una regola da [Esplora soluzioni](#set-rule-severity-from-solution-explorer) [o in un file del set di regole](#set-rule-severity-in-the-rule-set-file).
+È possibile configurare la gravità delle regole [](../code-quality/install-roslyn-analyzers.md) dell'analizzatore, o *diagnostica,* se si installano gli analizzatori come NuGet pacchetto. È possibile modificare la gravità di una [regola](#set-rule-severity-from-solution-explorer) da Esplora soluzioni [o in un file del set di regole](#set-rule-severity-in-the-rule-set-file).
 
 ::: moniker-end
 
@@ -157,7 +157,7 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 
 2. Scegliere Imposta gravità dal menu **di scelta rapida.**
 
-   ![Configurare la gravità della regola dall'elenco errori in Visual Studio](media/configure-rule-severity-error-list.png)
+   ![Configurare la gravità della regola dall'elenco degli errori Visual Studio](media/configure-rule-severity-error-list.png)
 
 3. Da qui scegliere una delle opzioni di gravità.
 
@@ -168,25 +168,25 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 
 ::: moniker-end
 
-### <a name="set-rule-severity-from-solution-explorer"></a>Impostare la gravità della regola Esplora soluzioni
+### <a name="set-rule-severity-from-solution-explorer"></a>Impostare la gravità della regola da Esplora soluzioni
 
-È possibile eseguire gran parte della personalizzazione della diagnostica dell'analizzatore **da Esplora soluzioni**. Se si [installano analizzatori](../code-quality/install-roslyn-analyzers.md) come pacchetto  NuGet, viene  visualizzato  un nodo Analizzatori nel nodo Riferimenti o **Dipendenze** in Esplora soluzioni . Se si espande **Analizzatori** e quindi si espande uno degli assembly dell'analizzatore, vengono visualizzati tutti i dati di diagnostica nell'assembly.
+È possibile eseguire gran parte della personalizzazione della diagnostica dell'analizzatore **da Esplora soluzioni**. Se si [installano gli](../code-quality/install-roslyn-analyzers.md) analizzatori come pacchetto NuGet, viene  visualizzato  un nodo Analizzatori nel nodo Riferimenti o  **Dipendenze** in Esplora soluzioni . Se si espande **Analizzatori** e quindi si espande uno degli assembly dell'analizzatore, vengono visualizzati tutti i dati di diagnostica nell'assembly.
 
 ![Nodo Analizzatori in Esplora soluzioni](media/analyzers-expanded-in-solution-explorer.png)
 
-È possibile visualizzare le proprietà di una diagnostica, inclusa la descrizione e la gravità predefinita, nella **finestra** Proprietà. Per visualizzare le proprietà, fare clic con il pulsante destro del mouse sulla regola e scegliere **Proprietà** oppure selezionare la regola e quindi **premere ALT** + **INVIO.**
+È possibile visualizzare le proprietà di una diagnostica, incluse la descrizione e la gravità predefinita, nella **finestra** Proprietà. Per visualizzare le proprietà, fare clic con il pulsante destro del mouse sulla regola e scegliere Proprietà **oppure** selezionare la regola e quindi premere **ALT** + **INVIO.**
 
 ![Proprietà di diagnostica in Finestra Proprietà](media/analyzer-diagnostic-properties.png)
 
 Per visualizzare la documentazione online per una diagnostica, fare clic con il pulsante destro del mouse sulla diagnostica e **scegliere Visualizza Guida.**
 
-Le icone accanto a ogni diagnostica **Esplora soluzioni** corrispondono alle icone visualizzate nel set di regole quando viene aperto nell'editor:
+Le icone accanto a ogni diagnostica **Esplora soluzioni** corrispondono alle icone visualizzate nel set di regole quando lo si apre nell'editor:
 
-- la "x" in un cerchio indica una [gravità di](#configure-severity-levels) **Errore**
+- la "x" in un cerchio indica una [gravità dell'errore](#configure-severity-levels) 
 - "!" in un triangolo indica una [gravità di](#configure-severity-levels) **avviso**
 - la "i" in un cerchio indica una [gravità di](#configure-severity-levels) **Info**
-- la "i" in un cerchio su uno sfondo di colore chiaro indica una [gravità](#configure-severity-levels) **nascosta**
-- la freccia rivolta verso il basso in un cerchio indica che la diagnostica viene eliminata
+- la "i" in un cerchio su uno sfondo di  colore chiaro indica una [gravità nascosta](#configure-severity-levels)
+- La freccia rivolta verso il basso in un cerchio indica che la diagnostica viene soppressa
 
 ![Icone di diagnostica in Esplora soluzioni](media/diagnostics-icons-solution-explorer.png)
 
@@ -194,31 +194,31 @@ Le icone accanto a ogni diagnostica **Esplora soluzioni** corrispondono alle ico
 
 #### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>Convertire un file del set di regole esistente in un file EditorConfig
 
-A partire Visual Studio 2019 versione 16.5, i file del set di regole sono deprecati a favore del file EditorConfig per la configurazione dell'analizzatore per il codice gestito. La maggior parte degli strumenti Visual Studio per la configurazione della gravità delle regole dell'analizzatore è stata aggiornata per funzionare sui file EditorConfig anziché sui file del set di regole. I file EditorConfig consentono di configurare sia i livelli di gravità delle regole dell'analizzatore che le opzioni dell'analizzatore, Visual Studio di stile del codice IDE. È consigliabile convertire il file del set di regole esistente in un file EditorConfig. È anche consigliabile salvare il file EditorConfig nella radice del repo o nella cartella della soluzione. Usando la radice del repo o della cartella della soluzione, assicurarsi che le impostazioni di gravità di questo file siano applicate automaticamente rispettivamente all'intero repo o soluzione.
+A partire Visual Studio 2019 versione 16.5, i file del set di regole sono deprecati a favore del file EditorConfig per la configurazione dell'analizzatore per il codice gestito. La maggior parte degli strumenti Visual Studio per la configurazione della gravità delle regole dell'analizzatore è stata aggiornata per funzionare sui file EditorConfig anziché sui file del set di regole. I file EditorConfig consentono di configurare sia i livelli di gravità delle regole dell'analizzatore che le opzioni dell'analizzatore, incluse Visual Studio di stile del codice IDE. È consigliabile convertire il file del set di regole esistente in un file EditorConfig. È anche consigliabile salvare il file EditorConfig nella radice del proprio repo o nella cartella della soluzione. Usando la radice della cartella del repo o della soluzione, assicurarsi che le impostazioni di gravità di questo file siano applicate automaticamente rispettivamente all'intero repo o soluzione.
 
 Esistono due modi per convertire un file del set di regole esistente in un file EditorConfig:
 
-- Nell'editor del set di regole Visual Studio (richiede Visual Studio 2019 16.5 o versione successiva). Se il progetto usa già un file del set di regole specifico come , è possibile convertirlo in un file EditorConfig equivalente dall'editor del set di regole all'interno `CodeAnalysisRuleSet` Visual Studio.
+- Dall'editor del set di Visual Studio (richiede Visual Studio 2019 16.5 o versione successiva). Se il progetto usa già un file del set di regole specifico come , è possibile convertirlo in un file EditorConfig equivalente dall'editor del set di regole all'interno `CodeAnalysisRuleSet` Visual Studio.
 
-    1. Fare doppio clic sul file del set di regole in Esplora soluzioni.
+    1. Fare doppio clic sul file del set di regole Esplora soluzioni.
 
-       Il file del set di regole dovrebbe essere aperto nell'editor del set di regole. Nella parte superiore dell'editor **del** set di regole dovrebbe essere visualizzata una barra informazioni selezionabile.
+       Il file del set di regole dovrebbe essere aperto nell'editor del set di regole. Verrà visualizzata una barra informazioni **selezionabile nella** parte superiore dell'editor del set di regole.
 
        ![Convertire un set di regole in un file EditorConfig nell'editor del set di regole](media/convert-ruleset-to-editorconfig-file-ruleset-editor.png)
 
     2. Selezionare il **collegamento alla barra** informazioni.
 
-       Verrà visualizzata una **finestra di dialogo** Salva con nome che consente di selezionare la directory in cui si vuole generare il file EditorConfig.
+       Verrà visualizzata una **finestra di dialogo Salva** con nome che consente di selezionare la directory in cui si vuole generare il file EditorConfig.
 
-    3. Selezionare il **pulsante** Salva per generare il file EditorConfig.
+    3. Selezionare il **pulsante Salva** per generare il file EditorConfig.
 
-       EditorConfig generato deve essere aperto nell'editor. Inoltre, la proprietà MSBuild viene aggiornata nel file di progetto in modo che non faccia `CodeAnalysisRuleSet` più riferimento al file del set di regole originale.
+       L'editorConfig generato dovrebbe essere aperto nell'editor. Inoltre, la proprietà MSBuild viene aggiornata nel file di progetto in modo che non faccia `CodeAnalysisRuleSet` più riferimento al file del set di regole originale.
 
 - Dalla riga di comando:
 
-    1. Installare il NuGet [microsoft.CodeAnalysis.RulesetToEditorconfigConverter](https://www.nuget.org/packages/Microsoft.CodeAnalysis.RulesetToEditorconfigConverter).
+    1. Installare il pacchetto NuGet [Microsoft.CodeAnalysis.RulesetToEditorconfigConverter](https://www.nuget.org/packages/Microsoft.CodeAnalysis.RulesetToEditorconfigConverter).
 
-    2. Eseguire dal pacchetto installato, con i percorsi del file del set di `RulesetToEditorconfigConverter.exe` regole e del file EditorConfig come argomenti della riga di comando.
+    2. Eseguire `RulesetToEditorconfigConverter.exe` dal pacchetto installato, con i percorsi del file del set di regole e del file EditorConfig come argomenti della riga di comando.
 
    ```
    Usage: RulesetToEditorconfigConverter.exe <%ruleset_file%> [<%path_to_editorconfig%>]
@@ -260,19 +260,19 @@ dotnet_diagnostic.CA2231.severity = warning
 ```
 ::: moniker-end
 
-### <a name="set-rule-severity-from-solution-explorer"></a>Impostare la gravità della regola Esplora soluzioni
+### <a name="set-rule-severity-from-solution-explorer"></a>Impostare la gravità della regola da Esplora soluzioni
 
 1. In Esplora soluzioni espandere **Analizzatori**  >  **riferimenti** (o **Analizzatori**  >  **dipendenze per** i progetti .NET Core).
 
 2. Espandere l'assembly che contiene la regola per cui si vuole impostare la gravità.
 
 ::: moniker range=">=vs-2019"
-3. Fare clic con il pulsante destro del mouse sulla regola e **scegliere Imposta gravità**. Nel menu di scelta rapida scegliere una delle opzioni di gravità.
+3. Fare clic con il pulsante destro del mouse sulla regola e **scegliere Imposta gravità.** Nel menu di scelta rapida scegliere una delle opzioni di gravità.
 
-   Visual Studio aggiunge una voce al file EditorConfig per configurare la regola al livello richiesto. Se il progetto usa un file del set di regole anziché un file EditorConfig, la voce di gravità viene aggiunta al file del set di regole.
+   Visual Studio aggiunge una voce al file EditorConfig per configurare la regola al livello richiesto. Se il progetto usa un file del set di regole anziché un file EditorConfig, la voce relativa alla gravità viene aggiunta al file del set di regole.
 
    > [!TIP]
-   > Se nel progetto non è già presente un file EditorConfig o un file del set di regole, Visual Studio un nuovo file EditorConfig.
+   > Se nel progetto non è già presente un file EditorConfig o un file del set di regole, Visual Studio crea automaticamente un nuovo file EditorConfig.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -287,15 +287,15 @@ dotnet_diagnostic.CA2231.severity = warning
 
 1. Aprire il file del set di regole attivo in uno dei modi seguenti:
 
-- In **Esplora soluzioni** fare doppio clic sul file, fare clic con il pulsante destro del mouse sul nodo **Analizzatori** riferimenti e scegliere  >   Apri set di regole **attivo**.
-- Nella pagina **Code Analysis** proprietà del progetto selezionare **Apri** .
+- In **Esplora soluzioni** fare doppio clic sul file, fare clic con il pulsante destro del mouse sul nodo **References** Analyzers (Analizzatori riferimenti) e  >   scegliere Open Active Rule Set **(Apri set di regole attivo).**
+- Nella pagina **Code Analysis** proprietà del progetto selezionare **Apri.**
 
-  Se questa è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, lo nome con estensione *\<projectname> ruleset* e lo aggiunge al progetto. Questo set di regole personalizzato diventa anche il set di regole attivo per il progetto.
+  Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, lo aggiunge al progetto con il nome *\<projectname> .ruleset.* Questo set di regole personalizzate diventa anche il set di regole attivo per il progetto.
 
    > [!NOTE]
-   > I progetti .NET Core e .NET Standard non supportano i comandi di menu per i set di regole in **Esplora soluzioni**, ad esempio Open **Active Rule Set**. Per specificare un set di regole non predefinito per un progetto .NET Core o .NET Standard, aggiungere manualmente la proprietà [ **CodeAnalysisRuleSet**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno del set di regole nell'interfaccia Visual Studio'editor del set di regole.
+   > I progetti .NET Core e .NET Standard non supportano i comandi di menu per i set di regole in **Esplora soluzioni**, ad esempio **Open Active Rule Set**. Per specificare un set di regole non predefinito per un progetto .NET Core o .NET Standard, aggiungere manualmente la proprietà [ **CodeAnalysisRuleSet**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno del set di regole nell'interfaccia Visual Studio'editor del set di regole.
 
-1. Passare alla regola espandendo l'assembly contenitore.
+1. Passare alla regola espandendo il relativo assembly contenitore.
 
 1. Nella colonna **Azione** selezionare il valore per aprire un elenco a discesa e scegliere la gravità desiderata dall'elenco.
 
@@ -305,15 +305,15 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ## <a name="configure-generated-code"></a>Configurare il codice generato
 
-Gli analizzatori vengono eseguiti in tutti i file di origine in un progetto e segnalano violazioni su di essi. Tuttavia, queste violazioni non sono utili nei file di codice generati, ad esempio i file di codice generati dalla finestra di progettazione, i file di origine temporanei generati dal sistema di compilazione e così via. Gli utenti non possono modificare manualmente questi file e/o non sono interessati a correggere le violazioni in questo tipo di file generati dagli strumenti.
+Gli analizzatori vengono eseguiti in tutti i file di origine in un progetto e segnalano violazioni su di essi. Tuttavia, queste violazioni non sono utili per i file di codice generati, ad esempio i file di codice generati dalla finestra di progettazione, i file di origine temporanei generati dal sistema di compilazione e così via. Gli utenti non possono modificare manualmente questi file e/o non sono interessati a correggere le violazioni in questo tipo di file generati dagli strumenti.
 
-Per impostazione predefinita, gli analizzatori che eseguono il driver dell'analizzatore trattano i file con un nome, un'estensione di file o un'intestazione di file generata automaticamente come file di codice generati. Ad esempio, un nome di file che termina con `.designer.cs` o viene considerato codice `.generated.cs` generato. Tuttavia, queste euristiche potrebbero non essere in grado di identificare tutti i file di codice generati personalizzati nel codice sorgente dell'utente.
+Per impostazione predefinita, il driver dell'analizzatore che esegue gli analizzatori considera i file con determinati nomi, estensioni di file o intestazione di file generati automaticamente come file di codice generati. Ad esempio, un nome di file che termina `.designer.cs` con o viene considerato codice `.generated.cs` generato. Tuttavia, queste regole euristiche potrebbero non essere in grado di identificare tutti i file di codice generati personalizzati nel codice sorgente dell'utente.
 
-A partire da Visual Studio 2019 16.5, gli utenti finali possono configurare file e/o cartelle specifici da trattare come codice generato in un [file EditorConfig](https://editorconfig.org/). Per aggiungere una configurazione di questo tipo, seguire questa procedura:
+A partire Visual Studio 2019 16.5, gli utenti finali possono configurare cartelle e/o file specifici da trattare come codice generato in un [file EditorConfig](https://editorconfig.org/). Seguire questa procedura per aggiungere tale configurazione:
 
-1. Se non si ha già un file EditorConfig per il progetto, [aggiungerne uno.](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)
+1. Se non si ha già un file EditorConfig per il progetto, [aggiungere un file](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Aggiungere la `generated_code = true | false` voce per file e/o cartelle specifici. Ad esempio, per considerare tutti i file il cui nome termina con come codice `.MyGenerated.cs` generato, la voce sarà la seguente:
+2. Aggiungere la `generated_code = true | false` voce per cartelle e/o file specifici. Ad esempio, per trattare tutti i file il cui nome termina con `.MyGenerated.cs` come codice generato, la voce sarà la seguente:
 
    ```ini
    [*.MyGenerated.cs]
@@ -332,30 +332,30 @@ Quando si compila il progetto dalla riga di comando, le violazioni delle regole 
 
 - Gli analizzatori vengono installati con .NET SDK o come pacchetto NuGet e non come estensione VSIX.
 
-  Per gli analizzatori installati con .NET SDK, potrebbe essere necessario [abilitare gli analizzatori](../code-quality/install-net-analyzers.md). Per gli stili di codice, è anche possibile applicare gli stili [di codice](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) alla compilazione impostando una MSBuild proprietà .
+  Per gli analizzatori installati con .NET SDK, potrebbe essere necessario [abilitare gli analizzatori](../code-quality/install-net-analyzers.md). Per gli stili di codice, è anche possibile [applicare stili di codice](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) alla compilazione impostando una MSBuild proprietà .
 
 - Una o più regole vengono violate nel codice del progetto.
 
-- La [gravità di](#configure-severity-levels) una regola violata è impostata su **avviso**, nel qual caso le violazioni non causano un errore di compilazione o errore **,** nel qual caso le violazioni causano l'esito negativo della compilazione.
+- La [gravità di](#configure-severity-levels) una regola violata è impostata sull'avviso **,** nel qual caso le violazioni non causano l'esito negativo della compilazione o sull'errore **,** nel qual caso le violazioni causano l'esito negativo della compilazione.
 
-Il livello di dettaglio dell'output di compilazione non influisce sul fatto che le violazioni delle regole siano visualizzate. Anche con **un livello** di dettaglio non dettagliato, le violazioni delle regole vengono visualizzate nell'output di compilazione.
+Il livello di dettaglio dell'output di compilazione non influisce sul fatto che le violazioni delle regole siano visualizzate. Anche con **il livello** di dettaglio non interattiva, le violazioni delle regole vengono visualizzate nell'output di compilazione.
 
 > [!TIP]
 > Se si è abituati a eseguire l'analisi legacy dalla riga di comando, *conFxCopCmd.exe* o tramite msbuild con il flag **RunCodeAnalysis,** ecco come eseguire questa operazione con gli analizzatori del codice.
 
-Per visualizzare le violazioni dell'analizzatore dalla riga di comando quando si compila il progetto con msbuild, eseguire un comando simile al seguente:
+Per visualizzare le violazioni dell'analizzatore nella riga di comando quando si compila il progetto usando msbuild, eseguire un comando simile al seguente:
 
 ```cmd
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-L'immagine seguente mostra l'output di compilazione della riga di comando dalla compilazione di un progetto che contiene una violazione della regola dell'analizzatore:
+L'immagine seguente mostra l'output di compilazione della riga di comando della compilazione di un progetto che contiene una violazione della regola dell'analizzatore:
 
 ![Output MSBuild con violazione della regola](media/command-line-build-analyzers.png)
 
 ## <a name="dependent-projects"></a>Progetti dipendenti
 
-In un progetto .NET Core, se si aggiunge un riferimento a un progetto con analizzatori NuGet, anche questi vengono aggiunti automaticamente al progetto dipendente. Per disabilitare questo comportamento, ad esempio se il progetto dipendente è un progetto unit test, contrassegnare il pacchetto NuGet come privato nel file con estensione *csproj* o *vbproj* del progetto a cui si fa riferimento impostando l'attributo **PrivateAssets:**
+In un progetto .NET Core, se si aggiunge un riferimento a un progetto con analizzatori NuGet, anche tali analizzatori vengono aggiunti automaticamente al progetto dipendente. Per disabilitare questo comportamento, ad esempio se il progetto dipendente è un progetto unit test, contrassegnare il pacchetto NuGet come privato nel file con estensione *csproj* o *vbproj* del progetto a cui si fa riferimento impostando l'attributo **PrivateAssets:**
 
 ```xml
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />

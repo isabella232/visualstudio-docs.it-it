@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 monikerRange: vs-2019
 ms.openlocfilehash: fb5fd401af95e9cbf3d2dbb320acfe51ed015713
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628709"
 ---
 # <a name="move-type-to-namespace"></a>Spostare un tipo in uno spazio dei nomi
 
@@ -30,7 +30,7 @@ Questo refactoring si applica a:
 
 **Quando:** Si vuole spostare un tipo in uno spazio dei nomi o in una cartella diversa. 
 
-**Perché:** Si vuole eseguire il refactoring di parti della soluzione e avere un modo rapido per spostare un tipo in uno spazio dei nomi o in una cartella diversa. 
+**Perché:** Si vuole eseguire il refactoring di parti della soluzione e si ha un modo rapido per spostare un tipo in uno spazio dei nomi o in una cartella diversa. 
 
 ## <a name="how-to"></a>Procedure
 

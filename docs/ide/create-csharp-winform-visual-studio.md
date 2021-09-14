@@ -12,26 +12,26 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 446bb42b73e1848d295eec60e3ce81aef412490b
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: 0a274ab647ea420c60ae4e62fb0939c44ec212fd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398600"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628823"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Creare un'app Windows Forms in Visual Studio con C\#
 
-In questa breve introduzione all'ambiente Visual Studio sviluppo integrato (IDE) si creerà una semplice applicazione C# con un'interfaccia utente basata su Windows.
+In questa breve introduzione all'ambiente Visual Studio sviluppo integrato (IDE) verrà creata una semplice applicazione C# con un'interfaccia utente basata su Windows.
 
 ::: moniker range="vs-2017"
 
-Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 > [!NOTE]
 > Alcune delle schermate contenute in questa esercitazione usano il tema scuro. Per passare al tema scuro, qualora questo non fosse già in uso, vedere le informazioni disponibili nella pagina [Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md).
@@ -40,7 +40,7 @@ Se non è già stato installato Visual Studio, passare alla pagina [Visual Studi
 
 ::: moniker range="vs-2022"
 
-Se non è già stato installato Visual Studio, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
 
 > [!NOTE]
 > Alcune delle schermate contenute in questa esercitazione usano il tema scuro. Per passare al tema scuro, qualora questo non fosse già in uso, vedere le informazioni disponibili nella pagina [Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md).
@@ -57,7 +57,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
 
 1. Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
-1. Nella finestra **di dialogo Nuovo** Project nel riquadro sinistro espandere Visual **C#** e quindi scegliere **Windows Desktop**. Nel riquadro centrale scegliere il modello **App Windows Forms (.NET Framework)**. Assegnare al file il nome `HelloWorld`.
+1. Nella finestra **di dialogo Nuovo Project** nel riquadro sinistro espandere Visual **C#** e quindi scegliere **Windows Desktop**. Nel riquadro centrale scegliere il modello **App Windows Forms (.NET Framework)**. Assegnare al file il nome `HelloWorld`.
 
      Se non viene visualizzato il modello del progetto **App Windows Forms (.NET Framework)**, chiudere la finestra di dialogo **Nuovo progetto** e nella barra dei menu superiore scegliere **Strumenti** > **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
@@ -84,7 +84,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Scegliere quindi il carico di lavoro **Sviluppo per desktop .NET** nel programma di installazione di Visual Studio.
+   > Nella finestra di dialogo Programma di installazione di Visual Studio scegliere il carico di **lavoro Sviluppo di desktop .NET.**
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
@@ -112,7 +112,7 @@ Dopo aver selezionato il modello di progetto C# e aver assegnare un nome al file
 
 1. Scegliere **l'icona Aggiungi** per ancorare la **finestra casella degli** strumenti.
 
-     ![Scegliere l'icona Aggiungi per aggiungere la finestra casella degli strumenti all'IDE](../ide/media/vb-pin-the-toolbox-window.png)
+     ![Scegliere l'icona Aggiungi per aggiungere la finestra Casella degli strumenti all'IDE](../ide/media/vb-pin-the-toolbox-window.png)
 
 1. Scegliere il **controllo** Pulsante e trascinarlo nel form.
 

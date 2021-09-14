@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f0af1f96f3f9ee468c18b89a1fd15f291ce2de0c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147287"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629826"
 ---
 # <a name="idiaframedataget_maxstack"></a>IDiaFrameData::get_maxStack
 Recupera il numero massimo di byte inseriti nello stack nel frame.

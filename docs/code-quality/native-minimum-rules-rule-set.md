@@ -12,11 +12,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 844e69e990d3abc9398d32f7d969572ff0a0db66
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114017"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631854"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 
@@ -95,7 +95,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28182](/cpp/code-quality/c28182)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
 |[C28202](/cpp/code-quality/c28202)|Riferimento non valido a membro non statico|
 |[C28203](/cpp/code-quality/c28203)|Riferimento ambiguo al membro di classe.|
-|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore usato in un contesto non \_ \_ \_ valido|
+|[C28205](/cpp/code-quality/c28205)|\_Esito \_ positivo o In caso di errore utilizzato in un contesto non \_ \_ \_ valido|
 |[C28206](/cpp/code-quality/c28206)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](/cpp/code-quality/c28207)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28210](/cpp/code-quality/c28210)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|

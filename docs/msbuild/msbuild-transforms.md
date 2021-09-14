@@ -15,15 +15,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 1428019cad4c057c41721f30c9375a60c3cbc55f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108499"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628440"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 
-Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento illustra le trasformazioni e il modo in cui MSBuild per compilare progetti in modo più efficiente.
+Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento illustra le trasformazioni e il modo in cui vengono MSBuild per compilare progetti in modo più efficiente.
 
 ## <a name="transform-modifiers"></a>Modificatori di comandi
 
@@ -72,7 +72,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ### <a name="description"></a>Descrizione
 
- L'esempio seguente mostra un MSBuild di progetto che usa le trasformazioni. Questo esempio presuppone che nella directory *c:\sub0\sub1\sub2\sub3* sia presente un solo file *xsd* e che la directory di lavoro sia *c:\sub0*.
+ L'esempio seguente illustra MSBuild file di progetto che usa le trasformazioni. Questo esempio presuppone che nella directory *c:\sub0\sub1\sub2\sub3* sia presente un solo file *xsd* e che la directory di lavoro sia *c:\sub0*.
 
 ### <a name="code"></a>Codice
 

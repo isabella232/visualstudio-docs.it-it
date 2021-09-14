@@ -17,11 +17,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: d502812179b0449c2dca6be800f69c30d211a28b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631068"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: Creare un set di dati con il Progettazione DataSet
 
@@ -31,11 +31,11 @@ In questa procedura dettagliata viene creato un set di dati usando **Progettazio
 
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nell'Programma di installazione di Visual Studio, SQL Server Express Local DB può essere installato come parte del  carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina [di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il Programma di installazione di Visual Studio .  Nell'Programma di installazione di Visual Studio, SQL Server Express Local DB può essere installato come parte  del carico di lavoro Elaborazione ed archiviazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la finestra **SQL Server Esplora oggetti** dati. (SQL Server Esplora oggetti viene installato come parte del carico **di** lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
+    1. In Visual Studio aprire la **SQL Server Esplora oggetti** predefinita. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Elaborazione ed archiviazione dati nel Programma di installazione di Visual Studio. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse sull Local DB e **scegliere Nuova query.**
 
        Verrà visualizzata una finestra dell'editor di query.
 
@@ -49,9 +49,9 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop.**
+2. Espandere **Visual C#** **o Visual Basic** nel riquadro a sinistra, quindi **selezionare Windows Desktop.**
 
-3. Nel riquadro centrale selezionare il tipo di **progetto Windows app Forms.**
+3. Nel riquadro centrale selezionare il tipo di **Windows di progetto App** Forms.
 
 4. Assegnare al progetto **il nome DatasetDesignerWalkthrough** e quindi scegliere **OK.**
 
@@ -67,7 +67,7 @@ Questa procedura dettagliata usa SQL Server Express Local DB e il database di es
 
 3. Assegnare al set **di dati il nome NorthwindDataset** e quindi scegliere **Aggiungi.**
 
-     Visual Studio aggiunge un file **denominato NorthwindDataset.xsd** al progetto e lo apre nel **Progettazione DataSet**.
+     Visual Studio aggiunge un file denominato **NorthwindDataset.xsd** al progetto e lo apre nel **Progettazione DataSet**.
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Creare una connessione dati in Esplora server
 
@@ -85,7 +85,7 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 
 1. Espandere la connessione dati creata in **Esplora server**, quindi espandere il **nodo** Tabelle .
 
-2. Trascinare **la tabella Customers** da **Esplora server** **nella** Progettazione DataSet .
+2. Trascinare **la tabella Customers** **Esplora server** **nella** Progettazione DataSet .
 
      Una **tabella dati Customers** e **customersTableAdapter** vengono aggiunte al set di dati.
 
@@ -97,7 +97,7 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 
 ### <a name="to-create-the-orderdetails-table"></a>Per creare la tabella OrderDetails
 
-- Trascinare **la tabella Dettagli** ordine **Esplora server** **nella** Progettazione DataSet .
+- Trascinare **la tabella Dettagli** ordine Esplora server **nella** Progettazione DataSet . 
 
      Al **set di dati** vengono aggiunte una tabella di dati Order **Details, OrderDetailsTableAdapter,** e una relazione dati tra le tabelle **Orders** e **OrderDetails.**
 

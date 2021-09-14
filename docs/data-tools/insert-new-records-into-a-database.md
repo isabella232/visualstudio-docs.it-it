@@ -1,6 +1,6 @@
 ---
 title: Inserire nuovi record in un database
-description: Inserire nuovi record in un database usando il metodo TableAdapter.Update, uno dei metodi DBDirect del TableAdapter o gli oggetti comando.
+description: Inserire nuovi record in un database usando il metodo TableAdapter.Update, uno dei metodi DBDirect del TableAdapter o oggetti comando.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -21,11 +21,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7b3fbea039c82210c135b26c918ca18c757816b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631290"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 
@@ -37,7 +37,7 @@ Se l'applicazione usa set di dati per archiviare i dati, usare il `TableAdapter.
 
 Se l'applicazione usa oggetti per archiviare i dati o se si vuole un controllo più fine sulla creazione di nuovi record nel database, usare il `TableAdapter.Insert` metodo .
 
-Se l'oggetto TableAdapter non dispone di un metodo, significa che l'oggetto TableAdapter è configurato per l'uso di stored procedure o che la relativa proprietà `Insert` `GenerateDBDirectMethods` è impostata su `false` . Provare a impostare la proprietà del TableAdapter `GenerateDBDirectMethods` su `true` **dall'Progettazione DataSet** e quindi salvare il set di dati. Verrà rigenerato l'oggetto TableAdapter. Se l'oggetto TableAdapter non dispone ancora di un metodo , è probabile che la tabella non fornirà informazioni di schema sufficienti per distinguere le singole righe(ad esempio, potrebbe non essere impostata alcuna chiave primaria `Insert` nella tabella).
+Se l'oggetto TableAdapter non dispone di un metodo, significa che l'oggetto TableAdapter è configurato per l'uso di stored procedure o che la relativa proprietà `Insert` `GenerateDBDirectMethods` è impostata su `false` . Provare a impostare la proprietà del TableAdapter `GenerateDBDirectMethods` su `true` dall'Progettazione DataSet e quindi salvare il set di dati.  Verrà rigenerato l'oggetto TableAdapter. Se l'oggetto TableAdapter non dispone ancora di un metodo , è probabile che la tabella non fornirà informazioni di schema sufficienti per distinguere le singole righe(ad esempio, potrebbe non essere impostata alcuna chiave primaria `Insert` nella tabella).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Inserire nuovi record tramite TableAdapter
 
@@ -65,7 +65,7 @@ Se l'applicazione usa oggetti per archiviare i dati, è possibile usare il metod
 Nella procedura seguente viene illustrato l'uso `TableAdapter.Insert` del metodo per inserire righe. In questo esempio vengono inseriti dati `Region` nella tabella del database Northwind.
 
 > [!NOTE]
-> Se non è disponibile un'istanza di , creare un'istanza del TableAdapter da usare.
+> Se non è disponibile un'istanza di , creare un'istanza del TableAdapter che si vuole usare.
 
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet15":::
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet15":::

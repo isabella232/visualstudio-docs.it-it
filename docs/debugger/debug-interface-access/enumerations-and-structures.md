@@ -18,11 +18,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3380ab7db034649bacb05d6b9908ce5c6461c774
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630606"
 ---
 # <a name="enumerations-and-structures"></a>Enumerazioni e strutture
 
@@ -70,11 +70,11 @@ Si tratta delle enumerazioni e delle strutture usate dal DIA SDK.
 
 - [Enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)
 
- Specifica le opzioni di ricerca per i nomi di file e simboli.
+ Specifica le opzioni di ricerca per i nomi di simboli e file.
 
 - [Enumerazione StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)
 
- Specifica il tipo stack frame dati.
+ Specifica il tipo stack frame di dati.
 
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 
@@ -82,11 +82,11 @@ Si tratta delle enumerazioni e delle strutture usate dal DIA SDK.
 
 - [Enumerazione THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)
 
- Definisce i tipi thunk.
+ Designa i tipi thunk.
 
 - [Enumerazione UdtKind](../../debugger/debug-interface-access/udtkind.md)
 
- Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
+ Descrive l'ampia gamma di tipi definiti dall'utente (UDT).
 
 ### <a name="structures"></a>Strutture
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a1ed6cb63f2d0a8fed11d995d7cbc748461edf70
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629123"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 Recupera un tipo di simbolo specificato che contiene o è più vicino a un indirizzo virtuale e a un offset specificati.
@@ -38,11 +38,11 @@ HRESULT findSymbolByVAEx (
 #### <a name="parameters"></a>Parametri
  `va`
 
-[in] Specifica l'va.
+[in] Specifica l'va va.
 
  `symtag`
 
-[in] Tipo di simbolo da trovare. I valori vengono presi [dall'enumerazione SymTagEnum.](../../debugger/debug-interface-access/symtagenum.md)
+[in] Tipo di simbolo da trovare. I valori vengono prelevati [dall'enumerazione SymTagEnum.](../../debugger/debug-interface-access/symtagenum.md)
 
  `ppSymbol`
 

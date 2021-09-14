@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 13d052402196126c53f327fd1cc2033f99da548b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069029"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628458"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Attività MergeLocalizationDirectives
 
@@ -41,7 +41,7 @@ L'attività unisce gli attributi di localizzazione e i commenti di uno o più fi
 
 ## <a name="remarks"></a>Commenti
 
-È possibile aggiungere attributi e commenti di localizzazione al contenuto XAML. Con Windows Presentation Foundation di localizzazione di Windows Presentation Foundation (WPF), è possibile rimuovere gli attributi e i commenti di localizzazione e inserire i commenti in un file *loc* separato dall'assembly generato. È possibile eseguire questa operazione mediante l'attributo **LocalizationPropertyStorage**. Per altre informazioni sui commenti e gli attributi di localizzazione e su **LocalizationPropertyStorage**, vedere [Attributi e commenti di localizzazione](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+È possibile aggiungere attributi e commenti di localizzazione al contenuto XAML. Con Windows Presentation Foundation di localizzazione di Windows Presentation Foundation (WPF), è possibile rimuovere gli attributi e i commenti di localizzazione e inserire i commenti in un file con estensione *loc* separato dall'assembly generato. È possibile eseguire questa operazione mediante l'attributo **LocalizationPropertyStorage**. Per altre informazioni sui commenti e gli attributi di localizzazione e su **LocalizationPropertyStorage**, vedere [Attributi e commenti di localizzazione](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Esempio
 

@@ -15,11 +15,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4d8bfc94d98c56d525d0d2d1c7f16f98cffbc7d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631469"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 
@@ -31,7 +31,7 @@ Si consideri, ad esempio, una tabella `Orders` di in un database di vendita. Ogn
 
 ## <a name="to-databind-a-lookup-control"></a>Per eseguire l'associazione dati di un controllo di ricerca
 
-1. Con il progetto aperto, aprire la **finestra Origini** dati **scegliendo** Visualizza altre origini  >  **Windows**  >  **dati**.
+1. Con il progetto aperto, aprire **la finestra Origini** dati scegliendo Visualizza altre origini   >  **Windows**  >  **dati**.
 
     > [!NOTE]
     > Per le tabelle di ricerca è necessario che nella finestra Origini dati siano disponibili **due tabelle o oggetti** correlati. Per altre informazioni, vedere [Relazioni nei set di dati.](relationships-in-datasets.md)

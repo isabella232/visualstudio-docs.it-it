@@ -16,14 +16,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 815e6083370dd5a1153fa03076b10506c07702d1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630623"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enum (Debug Interface Access SDK)
-Le enumerazioni sono identificate dai `SymTagEnum` simboli. Ogni valore di enumerazione viene visualizzato come elemento figlio della classe con un `SymTagConstant` tag .
+Le enumerazioni sono identificate da `SymTagEnum` simboli. Ogni valore di enumerazione viene visualizzato come elemento figlio della classe con un `SymTagConstant` tag .
 
 ## <a name="properties"></a>Proprietà
  La tabella seguente illustra altre proprietà valide per questo tipo di simbolo.
@@ -33,7 +33,7 @@ Le enumerazioni sono identificate dai `SymTagEnum` simboli. Ogni valore di enume
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Uno dei valori [di Enumerazione BasicType.](../../debugger/debug-interface-access/basictype.md)|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Classe padre di questa enumerazione, se presente.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID del simbolo padre della classe.|
-|[IDiaSymbol::get_constructor](../../debugger/debug-interface-access/idiasymbol-get-constructor.md)|`BOOL`|`TRUE` se l'enumerazione dispone di un costruttore.|
+|[IDiaSymbol::get_constructor](../../debugger/debug-interface-access/idiasymbol-get-constructor.md)|`BOOL`|`TRUE` se l'enumerazione ha un costruttore .|
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` se l'enumerazione è contrassegnata come const.|
 |[IDiaSymbol::get_hasAssignmentOperator](../../debugger/debug-interface-access/idiasymbol-get-hasassignmentoperator.md)|`BOOL`|`TRUE` se l'enumerazione dispone di un operatore di assegnazione.|
 |[IDiaSymbol::get_hasCastOperator](../../debugger/debug-interface-access/idiasymbol-get-hascastoperator.md)|`BOOL`|`TRUE` se l'enumerazione dispone di un operatore cast.|
@@ -43,7 +43,7 @@ Le enumerazioni sono identificate dai `SymTagEnum` simboli. Ogni valore di enume
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo padre lessicale.|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome del tipo enumerato.|
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|`BOOL`|`TRUE` se l'enumerazione è annidata.|
-|[IDiaSymbol::get_overloadedOperator](../../debugger/debug-interface-access/idiasymbol-get-overloadedoperator.md)|`BOOL`|`TRUE` se l'enumerazione dispone di operatori di overload.|
+|[IDiaSymbol::get_overloadedOperator](../../debugger/debug-interface-access/idiasymbol-get-overloadedoperator.md)|`BOOL`|`TRUE` se l'enumerazione include operatori di overload.|
 |[IDiaSymbol::get_packed](../../debugger/debug-interface-access/idiasymbol-get-packed.md)|`BOOL`|`TRUE` se l'enumerazione è imballata.|
 |[IDiaSymbol::get_scoped](../../debugger/debug-interface-access/idiasymbol-get-scoped.md)|`BOOL`|`TRUE` se l'enumerazione viene visualizzata in un ambito lessicale non globale.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indice del simbolo.|

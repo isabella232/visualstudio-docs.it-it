@@ -24,11 +24,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 36140f928450cbb8ef498ae1edb490b4c2a32eae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631229"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -38,7 +38,7 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 
 - Chiamando uno dei `DBDirect` metodi del TableAdapter
 
-- Chiamando il `UpdateAll` metodo sull'oggetto TableAdapterManager che Visual Studio genera automaticamente quando il set di dati contiene tabelle correlate ad altre tabelle nel set di dati
+- Chiamando il metodo sull'oggetto TableAdapterManager che Visual Studio genera automaticamente quando il set di dati contiene tabelle correlate ad altre `UpdateAll` tabelle nel set di dati
 
 Quando si associano dati alle tabelle del set di dati ai controlli in un form Windows o in una pagina XAML, l'architettura data binding esegue automaticamente tutte le operazioni.
 
@@ -51,7 +51,7 @@ Se si ha familiarità con gli oggetti TableAdapter, è possibile passare diretta
 |[Aggiornamento gerarchico](../data-tools/hierarchical-update.md)|Come eseguire aggiornamenti da un set di dati con due o più tabelle correlate|
 |[Gestire un'eccezione di concorrenza](../data-tools/handle-a-concurrency-exception.md)|Come gestire le eccezioni quando due utenti tentano di modificare contemporaneamente gli stessi dati in un database|
 |[Procedura: Salvare dati tramite una transazione](../data-tools/save-data-by-using-a-transaction.md)|Come salvare i dati in una transazione usando il sistema. Spazio dei nomi Transactions e oggetto TransactionScope|
-|[Salvare i dati in una transazione](../data-tools/save-data-in-a-transaction.md)|Procedura dettagliata che crea un'Windows Forms per illustrare il salvataggio di dati in un database all'interno di una transazione|
+|[Salvare i dati in una transazione](../data-tools/save-data-in-a-transaction.md)|Procedura dettagliata che crea un'applicazione Windows Forms per illustrare il salvataggio di dati in un database all'interno di una transazione|
 |[Salvare dati in un database (a più tabelle)](../data-tools/save-data-to-a-database-multiple-tables.md)|Come modificare i record e salvare le modifiche in più tabelle nel database|
 |[Salvare dati da un oggetto in un database](../data-tools/save-data-from-an-object-to-a-database.md)|Come passare dati da un oggetto che non si trova in un set di dati a un database usando un metodo DbDirect di TableAdapter|
 |[Salvare dati con i metodi DBDirect di TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Come usare il TableAdapter per inviare SQL query direttamente al database|
@@ -61,7 +61,7 @@ Se si ha familiarità con gli oggetti TableAdapter, è possibile passare diretta
 
 L'aggiornamento di un'origine dati è un processo in due passaggi. Il primo passaggio consiste nell'aggiornare il set di dati con nuovi record, record modificati o record eliminati. Se l'applicazione non invia mai tali modifiche all'origine dati, l'aggiornamento è terminato.
 
-Se si inviano le modifiche al database, è necessario un secondo passaggio. Se non si usano controlli associati a dati, è necessario chiamare manualmente il metodo dello stesso TableAdapter (o adattatore dati) usato per popolare `Update` il set di dati. Tuttavia, è anche possibile usare adattatori diversi, ad esempio per spostare i dati da un'origine dati a un'altra o per aggiornare più origini dati. Se non si usa data binding e si salvano le modifiche per le tabelle correlate, è necessario creare manualmente un'istanza di una variabile della classe generata automaticamente e quindi chiamarne `TableAdapterManager` il `UpdateAll` metodo .
+Se si inviano le modifiche al database, è necessario un secondo passaggio. Se non si usano controlli associati a dati, è necessario chiamare manualmente il metodo dello stesso TableAdapter (o adattatore dati) usato per popolare il `Update` set di dati. Tuttavia, è anche possibile usare adattatori diversi, ad esempio per spostare i dati da un'origine dati a un'altra o per aggiornare più origini dati. Se non si usa data binding e si salvano le modifiche per le tabelle correlate, è necessario creare manualmente un'istanza di una variabile della classe generata automaticamente e quindi chiamarne `TableAdapterManager` il `UpdateAll` metodo .
 
 ![Diagramma concettuale degli aggiornamenti dei set di dati](../data-tools/media/vbdatasetupdates.gif)
 
@@ -69,7 +69,7 @@ Un set di dati contiene raccolte di tabelle, che contengono raccolte di righe. S
 
 ## <a name="merge-datasets"></a>Unire set di dati
 
-È possibile aggiornare il contenuto di un set di dati *unerlo* a un altro set di dati. Ciò comporta la copia del contenuto di un set *di dati* di origine nel set di dati chiamante (detto set di *dati di* destinazione). Quando si uniscono set di dati, nuovi record nel set di dati di origine vengono aggiunti al set di dati di destinazione. Inoltre, al set di dati di destinazione vengono aggiunte colonne aggiuntive nel set di dati di origine. L'unione dei set di dati è utile quando si dispone di un set di dati locale e si ottiene un secondo set di dati da un'altra applicazione. È utile anche quando si ottiene un secondo set di dati da un componente, ad esempio un servizio Web XML, o quando è necessario integrare i dati da più set di dati.
+È possibile aggiornare il contenuto di un set di dati *unerlo* a un altro set di dati. Ciò comporta la copia del contenuto di un set *di dati* di origine nel set di dati chiamante (detto set di *dati di* destinazione). Quando si uniscono set di dati, i nuovi record nel set di dati di origine vengono aggiunti al set di dati di destinazione. Inoltre, al set di dati di destinazione vengono aggiunte colonne aggiuntive nel set di dati di origine. L'unione dei set di dati è utile quando si dispone di un set di dati locale e si ottiene un secondo set di dati da un'altra applicazione. È utile anche quando si ottiene un secondo set di dati da un componente, ad esempio un servizio Web XML, o quando è necessario integrare i dati da più set di dati.
 
 Quando si uniscono set di dati, è possibile passare un argomento booleano ( ) che indica al metodo se mantenere le `preserveChanges` modifiche esistenti nel set di dati di <xref:System.Data.DataSet.Merge%2A> destinazione. Poiché i set di dati mantengono più versioni dei record, è importante tenere presente che è in corso il merge di più versioni dei record. La tabella seguente illustra come viene unito un record in due set di dati:
 
@@ -78,7 +78,7 @@ Quando si uniscono set di dati, è possibile passare un argomento booleano ( ) c
 |Originale|James Wilson|James C. Wilson|
 |Corrente|Jim Wilson|James C. Wilson|
 
-Chiamando il <xref:System.Data.DataSet.Merge%2A> metodo nella tabella precedente con i risultati nei dati `preserveChanges=false targetDataset.Merge(sourceDataset)` seguenti:
+La chiamata <xref:System.Data.DataSet.Merge%2A> del metodo sulla tabella precedente con i risultati nei dati `preserveChanges=false targetDataset.Merge(sourceDataset)` seguenti:
 
 |DataRowVersion|DataSet di destinazione|Set di dati di origine|
 | - | - | - |
@@ -249,7 +249,7 @@ L'applicazione modifica lo stato di Nancy Buchanan in "Preferred". In seguito a 
 (Modified)     c400         Nancy Buchanan    Preferred
 ```
 
-Tramite l'applicazione in uso viene ora chiamato il metodo `Update` per trasmettere il dataset al database. Il metodo controlla ogni riga a turno. Per la prima riga, il metodo non trasmette alcuna istruzione SQL al database perché tale riga non è stata modificata dal momento in cui è stata originariamente recuperata dal database.
+Tramite l'applicazione in uso viene ora chiamato il metodo `Update` per trasmettere il dataset al database. Il metodo controlla ogni riga a turno. Per la prima riga, il metodo non trasmette alcuna istruzione SQL al database perché tale riga non è stata modificata da quando è stata originariamente recuperata dal database.
 
 Per la seconda riga, tuttavia, il metodo richiama automaticamente il comando dati corretto e `Update` lo trasmette al database. La sintassi specifica dell'istruzione SQL dipende dal dialetto SQL supportato dall'archivio dati sottostante. Tuttavia, i tratti generali seguenti dell'istruzione SQL trasmessa sono degni di nota:
 
@@ -260,7 +260,7 @@ Per la seconda riga, tuttavia, il metodo richiama automaticamente il comando dat
 - L'istruzione SQL include la clausola SET per impostare i nuovi valori delle colonne modificate.
 
    > [!NOTE]
-   > Se la proprietà dell'oggetto TableAdapter è stata impostata sul nome di un stored procedure, l'adapter non costruisce `UpdateCommand` un'istruzione SQL. Al contrario, richiama il stored procedure con i parametri appropriati passati.
+   > Se la proprietà dell'oggetto TableAdapter è stata impostata sul nome di un stored procedure, l'adapter non costruisce `UpdateCommand` un'istruzione SQL tabella. Al contrario, richiama il stored procedure con i parametri appropriati passati.
 
 ## <a name="pass-parameters"></a>Passare parametri
 

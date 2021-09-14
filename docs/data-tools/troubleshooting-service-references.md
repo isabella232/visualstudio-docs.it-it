@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 649204a074980c547fc238ba0c7db923c7ff199b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631122"
 ---
 # <a name="troubleshoot-service-references"></a>Risolvere i problemi relativi ai riferimenti al servizio
 
@@ -85,15 +85,15 @@ Per correggere l'errore, è necessario ricompilare manualmente il progetto di se
 
 4. Caricare il progetto di servizio WCF.
 
-5. Nella finestra **Gestione configurazione** finestra di dialogo, impostare **Configurazione soluzione attiva** su **Debug**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
+5. Nella finestra **Gestione configurazione** finestra di dialogo, impostare Configurazione **soluzione attiva** su **Debug**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 
-6. Nella **Esplora soluzioni** selezionare il progetto di servizio WCF.
+6. In **Esplora soluzioni** selezionare il progetto di servizio WCF.
 
 7. Scegliere **Ricompila** dal menu Compila **per** ricompilare il progetto di servizio WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services non vengono visualizzati nel browser
 
-Quando tenta di visualizzare una rappresentazione XML dei dati in un oggetto , è Internet Explorer i dati potrebbero essere interpretati erroneamente [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] come feed RSS. Assicurarsi che l'opzione per visualizzare i feed RSS sia disabilitata.
+Quando tenta di visualizzare una rappresentazione XML dei dati in un oggetto , Internet Explorer possibile che i dati non vengono interpretati in modo inteso [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] come feed RSS. Assicurarsi che l'opzione per visualizzare i feed RSS sia disabilitata.
 
 Per correggere l'errore, disabilitare i feed RSS:
 

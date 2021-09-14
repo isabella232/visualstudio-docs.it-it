@@ -10,11 +10,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: b6e6dabf79cdd3c1774f016991098a1bde337568
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628769"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introdurre una variabile locale in Visual Studiio
 
@@ -45,7 +45,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Fare clic sull'icona ![Screenshot dell'icona del cacciavite visualizzata nel margine sinistro del menu Azioni rapide e refactoring.](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.

@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e74262594e23af3819851bcf23d69692fd7d64c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630569"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Introduzione (Debug Interface Access SDK)
 Debug Interface Access (DIA) SDK fornisce la documentazione di istruzioni e un esempio che illustra come usare l'API DIA. Usare le interfacce e i metodi nel DIA SDK per sviluppare applicazioni personalizzate che aprono i file con estensione pdb e dbg e ricercano nel contenuto simboli, valori, attributi, indirizzi e altre informazioni di debug. Questo SDK fornisce anche tabelle di riferimento per le proprietà associate ai simboli presenti nelle applicazioni C++.
@@ -33,7 +33,7 @@ Debug Interface Access (DIA) SDK fornisce la documentazione di istruzioni e un e
 
 - Visual Studio ide (Integrated Development Environment) per la compilazione degli esempi
 
-  Il DIA SDK viene in genere installato con Visual Studio e il percorso predefinito è *[unità]* \Programmi\Microsoft Visual Studio 9.0\DIA SDK. Come parte dell'installazione, il msdia90.dll, che implementa il DIA SDK, viene registrato automaticamente, quindi è necessario solo includerlo nel programma e collegarsi a `dia2.h` `diaguids.lib` .
+  Il DIA SDK viene in genere installato con Visual Studio e il percorso predefinito è *[unità]* \Programmi\Microsoft Visual Studio 9.0\DIA SDK. Come parte dell'installazione, il msdia90.dll, che implementa il DIA SDK, viene registrato automaticamente, quindi è necessario solo includerlo nel programma e `dia2.h` collegarsi a `diaguids.lib` .
 
   Intestazione: include\dia2.h
 

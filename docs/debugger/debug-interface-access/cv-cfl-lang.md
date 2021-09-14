@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bb3192316bf3dbdda7ee06f9bfa9a159ab8d982
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630683"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 Specifica il linguaggio del codice sorgente dell'applicazione o del modulo collegato.
@@ -54,15 +54,15 @@ CV_CFL_C linguaggio dell'applicazione è C.
 
 CV_CFL_CXX linguaggio applicativo è C++.
 
-CV_CFL_FORTRAN linguaggio dell'applicazione è FORTRAN.
+CV_CFL_FORTRAN linguaggio applicativo èRAN.
 
-CV_CFL_MASM linguaggio applicativo è Microsoft Macro Assembler.
+CV_CFL_MASM linguaggio dell'applicazione è Microsoft Macro Assembler.
 
 CV_CFL_PASCAL linguaggio dell'applicazione è Pascal.
 
 CV_CFL_BASIC linguaggio applicativo è BASIC.
 
-CV_CFL_COBOL linguaggio applicativo è COBOL.
+CV_CFL_COBOL linguaggio dell'applicazione è COBOL.
 
 CV_CFL_LINK'applicazione è un modulo generato dal linker.
 
@@ -85,7 +85,7 @@ CV_CFL_MSIL linguaggio applicativo è un linguaggio MSIL (Microsoft Intermediate
 CV_CFL_HLSL linguaggio dell'applicazione è il linguaggio shader di alto livello.
 
 ## <a name="remarks"></a>Commenti
-I valori in questa enumerazione vengono restituiti da una chiamata al [metodo IDiaSymbol::get_language.](../../debugger/debug-interface-access/idiasymbol-get-language.md)
+I valori di questa enumerazione vengono restituiti da una chiamata al [metodo IDiaSymbol::get_language.](../../debugger/debug-interface-access/idiasymbol-get-language.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst.h

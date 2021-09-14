@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f6e8d8a803f471d6e856da987ea70a1f121bfae5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036620"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630516"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 Fornisce il controllo sul modo in cui DIA SDK gli indirizzi virtuali virtuali e relativi per gli oggetti di debug.
@@ -41,11 +41,11 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Consente al client di abilitare o disabilitare il calcolo degli indirizzi virtuali relativi.|
 |[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Recupera l'allineamento dell'immagine corrente.|
 |[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Imposta l'allineamento dell'immagine.|
-|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Imposta le intestazioni delle immagini per abilitare la conversione di indirizzi virtuali relativi.|
+|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Imposta le intestazioni dell'immagine per abilitare la conversione di indirizzi virtuali relativi.|
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fornisce una mappa indirizzi per supportare le traduzioni del layout delle immagini.|
 
 ## <a name="remarks"></a>Commenti
- Il controllo fornito da questa interfaccia è incapsulato in due set di dati forniti: intestazioni di immagine e mappe indirizzi. La maggior parte dei client usa il metodo [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) per trovare le informazioni di debug appropriate per un'immagine e il metodo può in genere individuare tutte le intestazioni necessarie e mappare i dati stessi. Tuttavia, alcuni client implementano l'elaborazione specializzata e la ricerca di dati. Tali client usano i metodi dell'interfaccia per fornire il DIA SDK `IDiaAddressMap` con i risultati della ricerca.
+ Il controllo fornito da questa interfaccia è incapsulato in due set di dati forniti: intestazioni di immagine e mappe indirizzi. La maggior parte dei client usa il metodo [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) per trovare le informazioni di debug appropriate per un'immagine e il metodo può in genere individuare tutte le intestazioni necessarie e mappare i dati stessi. Tuttavia, alcuni client implementano l'elaborazione specializzata e la ricerca di dati. Tali client usano i metodi dell'interfaccia per fornire al DIA SDK `IDiaAddressMap` i risultati della ricerca.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Questa interfaccia è disponibile dall'oggetto sessione DIA. Il client chiama il `QueryInterface` metodo sull'interfaccia dell'oggetto sessione DIA, in genere [IDiaSession](../../debugger/debug-interface-access/idiasession.md), per recuperare l'interfaccia. `IDiaAddressMap`

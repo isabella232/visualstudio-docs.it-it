@@ -1,5 +1,5 @@
 ---
-description: Enumera in base all'indirizzo dei vari simboli contenuti nell'origine dati.
+description: Enumera in base all'indirizzo i vari simboli contenuti nell'origine dati.
 title: IDiaEnumSymbolsByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 274fecb6e87e221360c2f97086155237d30a7148
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629963"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
-Enumera in base all'indirizzo dei vari simboli contenuti nell'origine dati.
+Enumera in base all'indirizzo i vari simboli contenuti nell'origine dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,14 +36,14 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaEnumSymbolsByAddr` .
 |Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Posiziona l'enumeratore eseguendo una ricerca in base alla sezione e all'offset.|
-|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (Relative Virtual Address).|
-|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale.|
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Recupera i simboli successivi in base all'indirizzo. Aggiorna la posizione dell'enumeratore in base al numero di elementi recuperati.|
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale relativo.|
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale .|
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Recupera i simboli successivi in ordine in base all'indirizzo. Aggiorna la posizione dell'enumeratore in base al numero di elementi recuperati.|
 |[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Recupera i simboli precedenti in base all'indirizzo. Aggiorna la posizione dell'enumeratore in base al numero di elementi recuperati.|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Crea una copia di un oggetto .|
 
 ## <a name="remarks"></a>Commenti
-Questa interfaccia fornisce simboli raggruppati per indirizzo. Per usare simboli raggruppati per tipo, ad esempio (tipo definito dall'utente) o `SymTagUDT` `SymTagBaseClass` , usare [l'interfaccia IDiaEnumSymbols.](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Questa interfaccia fornisce simboli raggruppati in base all'indirizzo. Per usare simboli raggruppati per tipo, ad esempio (tipo definito dall'utente) o `SymTagUDT` `SymTagBaseClass` , usare [l'interfaccia IDiaEnumSymbols.](../../debugger/debug-interface-access/idiaenumsymbols.md)
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando il [metodo IDiaSession::getSymbolsByAddr.](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)

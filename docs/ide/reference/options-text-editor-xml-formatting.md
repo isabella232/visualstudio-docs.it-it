@@ -12,15 +12,15 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 4d870026d55cb092b005b0148f392cf29181380e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117137"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628632"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opzioni, Editor di testo, XML, Formattazione
 
-Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, **scegliere** Strumenti  >  **Opzioni** Editor  >  **di testo**  >  **XML,** quindi scegliere **Formattazione.**
+Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, **scegliere** Strumenti  >  **Opzioni** Editor  >  **di testo**  >  **XML** e quindi Scegliere **Formattazione**.
 
 ## <a name="attributes"></a>Attributi
 

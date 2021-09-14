@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 699ad3a289ff790c414a4c3e8a552436a22ab633
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629784"
 ---
 # <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 Recupera la posizione di memoria in cui deve essere basata l'immagine.
@@ -41,7 +41,7 @@ HRESULT get_imageBase (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- A causa di conflitti di base delle immagini, un'immagine può essere riasstratta automaticamente in una posizione di memoria inutilizzata quando viene caricata. Questo metodo restituisce l'hint di base (posizione di memoria suggerita) archiviato nel modulo in fase di compilazione.
+ A causa di conflitti di base delle immagini, un'immagine può essere riastratta automaticamente in una posizione di memoria inutilizzata quando viene caricata. Questo metodo restituisce l'hint di base (posizione di memoria suggerita) archiviato nel modulo in fase di compilazione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

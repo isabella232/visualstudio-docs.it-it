@@ -1,6 +1,6 @@
 ---
 title: Regole di prestazioni relative a memoria e paging | Microsoft Docs
-description: Informazioni su come le regole per le prestazioni nella categoria memoria e paging identificano l'attività di paging in un'esecuzione della profilatura che può influire sulle prestazioni e sulla velocità di risposta dell'applicazione.
+description: Informazioni su come le regole delle prestazioni nella categoria memoria e paging identificano l'attività di paging in un'esecuzione della profilatura che può influire sulle prestazioni e sulla velocità di risposta dell'applicazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e8606ea4d44d374a6d0c8b59905038b352aceaa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628349"
 ---
 # <a name="memory-and-paging-performance-rules"></a>Regole di prestazioni relative a memoria e paging
 Le regole di prestazioni nelle categoria memoria e paging identificano l'attività di paging in un'esecuzione di profilatura che può influire sulla velocità di risposta e le prestazioni dell'applicazione.

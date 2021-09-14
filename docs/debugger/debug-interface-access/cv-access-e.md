@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f784380e1c96a28c200ee2f7ab70cfd21c40a343
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121763"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630696"
 ---
 # <a name="cv_access_e"></a>CV_access_e
 Specifica l'ambito di visibilità (livello di accesso) delle funzioni membro e delle variabili.

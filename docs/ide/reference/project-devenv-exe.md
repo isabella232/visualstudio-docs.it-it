@@ -1,6 +1,6 @@
 ---
 title: -Project (devenv.exe)
-description: Informazioni su come usare l Project della riga di comando devenv per identificare un singolo progetto all'interno della configurazione di soluzione specificata per compilare, pulire, ricompilare o distribuire il progetto.
+description: Informazioni su come usare l'opzione della riga di comando devenv Project per identificare un singolo progetto all'interno della configurazione di soluzione specificata per compilare, pulire, ricompilare o distribuire il progetto.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -20,11 +20,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 5be70c47759831c452e513ab2a4d4432840c1022
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123827"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628577"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 

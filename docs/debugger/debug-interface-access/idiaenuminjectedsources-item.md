@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d28eb5cc69d3cdeb8ca5da95b91d79ed9c5f46ec042d53fb0704f3b77f3ea5dc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b77564566d1f45ca860483867bc407de1e5040c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455199"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630282"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 Recupera un'origine inserita tramite un indice.

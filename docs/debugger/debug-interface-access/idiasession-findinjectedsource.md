@@ -1,5 +1,5 @@
 ---
-description: Recupera un elenco di origini inserite nell'archivio dei simboli dai provider di attributi o da altri componenti del processo di compilazione.
+description: Recupera un elenco di origini inserite nell'archivio simboli dai provider di attributi o da altri componenti del processo di compilazione.
 title: IDiaSession::findInjectedSource | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e7e6aeec300aaf8941fa0d3ac28ddce7ace8de4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044310"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629250"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-Recupera un elenco di origini inserite nell'archivio dei simboli dai provider di attributi o da altri componenti del processo di compilazione.
+Recupera un elenco di origini inserite nell'archivio simboli dai provider di attributi o da altri componenti del processo di compilazione.
 
 ## <a name="syntax"></a>Sintassi
 

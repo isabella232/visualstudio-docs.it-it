@@ -1,6 +1,6 @@
 ---
 title: Avviare Visual Studio tramite DTE
-description: Informazioni su come avviare Visual Studio DTE per supportare installazioni side-by-side di versioni principali. Questo articolo include un esempio di codice.
+description: Informazioni su come avviare Visual Studio DTE per supportare le installazioni side-by-side delle versioni principali. Questo articolo include un esempio di codice.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
@@ -12,31 +12,31 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1cea6b082a5cdb51f0de2053bbc7912cd32ce500
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628896"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Avviare Visual Studio tramite DTE
 
-A partire Visual Studio 2017, il meccanismo per avviare Visual Studio tramite DTE è diverso dall'avvio delle versioni precedenti di Visual Studio. Questa modifica è necessaria perché Visual Studio 2017 e versioni successive supportano installazioni side-by-side delle versioni principali (ad esempio, è possibile avere un'anteprima e una versione di rilascio installate side-by-side).
+A partire da Visual Studio 2017, il meccanismo per avviare Visual Studio DTE è diverso dall'avvio delle versioni precedenti di Visual Studio. Questa modifica è necessaria perché Visual Studio 2017 e versioni successive supportano le installazioni side-by-side delle versioni principali(ad esempio, è possibile avere un'anteprima e una versione di versione installata side-by-side).
 
-Nella parte restante di questo articolo viene illustrato il codice che è possibile usare per avviare Visual Studio 2019 usando DTE.
+Il resto di questo articolo illustra il codice che è possibile usare per avviare Visual Studio 2019 usando DTE.
 
 ## <a name="set-up-the-project"></a>Configurare il progetto
 
-Per vedere il codice di avvio in azione, creare un progetto seguendo questa procedura.
+Per visualizzare il codice di avvio in azione, creare un progetto seguendo questa procedura.
 
 1. Creare un nuovo **progetto app console** per il .NET Framework.
 
-2. Installare [lMicrosoft.VisualStudio.Setup.Configuration. Interoperabilità](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet pacchetto e aggiungere un riferimento all'assembly.
+2. Installare il [pacchetto NuGet Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) e aggiungere un riferimento all'assembly.
 
 3. Aggiungere un riferimento a EnvDTE.
 
 4. Incollare [il codice di](#example-code) esempio seguente nel file *Program.cs.*
 
-5. Premere **F5** per eseguire il programma. Dovrebbe essere visualizzato Visual Studio 2019 aperto prima della chiusura del programma.
+5. Premere **F5** per eseguire il programma. Verrà visualizzato Visual Studio 2019 aperto prima della chiusura del programma.
 
 ## <a name="example-code"></a>Codice di esempio
 

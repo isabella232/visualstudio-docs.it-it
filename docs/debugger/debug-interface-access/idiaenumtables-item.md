@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 30e224b7edb621cb31d4124ac092e39e53f801fd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629934"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 Recupera una tabella tramite un indice o un nome.
@@ -36,7 +36,7 @@ HRESULT Item (
 #### <a name="parameters"></a>Parametri
  `index`
 
-[in] Indice o nome [dell'oggetto IDiaTable](../../debugger/debug-interface-access/idiatable.md) da recuperare. Se viene usata una variante integer, deve essere compreso nell'intervallo da 0 a -1, dove è come restituito dal metodo `count` `count` [IDiaEnumTables::get_Count.](../../debugger/debug-interface-access/idiaenumtables-get-count.md)
+[in] Indice o nome [dell'oggetto IDiaTable](../../debugger/debug-interface-access/idiatable.md) da recuperare. Se si usa una variante integer, deve essere compreso nell'intervallo da 0 a -1, dove è restituito dal metodo `count` `count` [IDiaEnumTables::get_Count.](../../debugger/debug-interface-access/idiaenumtables-get-count.md)
 
  `table`
 
@@ -46,7 +46,7 @@ HRESULT Item (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Se viene specificata una variante di stringa, la stringa specifica un nome per una determinata tabella. Il nome deve essere uno dei nomi di tabella definiti in Costanti [(Debug Interface Access SDK).](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+ Se viene specificata una variante di stringa, la stringa nomi di una tabella specifica. Il nome deve essere uno dei nomi di tabella definiti in [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
 
 ## <a name="example"></a>Esempio
 

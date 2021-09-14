@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 908c645931a88874f4cd4214a44d295886b4e364
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629801"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Espone i dettagli di un stack frame.
@@ -55,7 +55,7 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaFrameData` .
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Esegue la rimozione dello stack e restituisce lo stato corrente dei registri in un'interfaccia stack walk frame.|
 
 ## <a name="remarks"></a>Commenti
- I dettagli disponibili per un frame sono per i punti di esecuzione all'interno dell'intervallo di indirizzi indicato dall'indirizzo e dalla lunghezza del blocco.
+ I dettagli disponibili per un frame sono relativi ai punti di esecuzione all'interno dell'intervallo di indirizzi indicato dall'indirizzo e dalla lunghezza del blocco.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Ottenere questa interfaccia chiamando i [metodi IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) o [IDiaEnumFrameData::Item.](../../debugger/debug-interface-access/idiaenumframedata-item.md) Per informazioni [dettagliate, vedere l'interfaccia IDiaEnumFrameData.](../../debugger/debug-interface-access/idiaenumframedata.md)

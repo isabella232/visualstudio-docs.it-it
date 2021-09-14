@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: connettersi ai dati di un servizio'
-description: Connessione'app ai dati restituiti da un servizio eseguendo la Configurazione guidata origine dati e selezionando Servizio nella pagina Scegliere un tipo di origine dati.
+description: Connessione l'app ai dati restituiti da un servizio eseguendo la Configurazione guidata origine dati e selezionando Servizio nella pagina Scegliere un tipo di origine dati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6854b1cd7647f6bc4ac7ca92c920f7454b7ab1fe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052746"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631343"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedura: Connettersi ai dati di un servizio
 

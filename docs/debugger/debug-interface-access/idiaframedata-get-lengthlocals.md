@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 923a648b9c45458866c7b40764770238dd3b823b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629867"
 ---
 # <a name="idiaframedataget_lengthlocals"></a>IDiaFrameData::get_lengthLocals
 Recupera il numero di byte di variabili locali inseriti nello stack.

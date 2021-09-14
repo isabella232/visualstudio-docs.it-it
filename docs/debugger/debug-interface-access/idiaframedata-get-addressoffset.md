@@ -1,5 +1,5 @@
 ---
-description: Recupera la parte di offset dell'indirizzo del codice per il frame.
+description: Recupera la parte offset dell'indirizzo del codice per il frame.
 title: IDiaFrameData::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: fca93e47227cd6e1578a9cbb88a13237835650fb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629903"
 ---
 # <a name="idiaframedataget_addressoffset"></a>IDiaFrameData::get_addressOffset
-Recupera la parte di offset dell'indirizzo del codice per il frame.
+Recupera la parte offset dell'indirizzo del codice per il frame.
 
 ## <a name="syntax"></a>Sintassi
 

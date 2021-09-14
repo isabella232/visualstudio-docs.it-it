@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 41711344f3047667b722d929b361eb4ac0c3b21e9abdb199b53425dcde1c180e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ca3261998ae754b637c8adb412850676cb93532f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121344892"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629489"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 Consente a un'applicazione client di fornire byte di un file eseguibile come specificato da un indirizzo virtuale relativo.
@@ -35,10 +35,10 @@ IDiaReadExeAtRVACallback : IUnknown
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Legge il numero specificato di byte a partire dall'indirizzo virtuale relativo specificato dal file eseguibile.|
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Legge il numero specificato di byte a partire dall'indirizzo RVA (Relative Virtual Address) specificato dal file eseguibile.|
 
 ## <a name="remarks"></a>Commenti
- L'applicazione client implementa questa interfaccia per fornire i byte del file eseguibile usando un indirizzo virtuale relativo nel file del file eseguibile. Per usare un offset di file assoluto, implementare [l'interfaccia IDiaReadExeAtOffsetCallback.](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+ L'applicazione client implementa questa interfaccia per fornire i byte del file eseguibile usando un indirizzo virtuale relativo nel file dell'eseguibile. Per usare un offset di file assoluto, implementare [l'interfaccia IDiaReadExeAtOffsetCallback.](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Questo metodo viene implementato dall'applicazione client e passato al metodo [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) come metodo alternativo per la lettura del file.

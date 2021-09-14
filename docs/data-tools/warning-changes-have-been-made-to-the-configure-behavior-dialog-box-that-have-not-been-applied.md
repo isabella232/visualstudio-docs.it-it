@@ -12,21 +12,21 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 52e4a35e066e1672bef225f7aafa2a5f7703e1a5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122066913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631026"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avviso: le modifiche apportate alla finestra di dialogo Configura comportamento non sono state applicate
 
 Avviso. Nella finestra di dialogo Configura comportamento ci sono modifiche non applicate. Applicarle?
 
-La **finestra di dialogo** Configura comportamento consente di configurare il comportamento di , e per tutte le classi `Insert` `Update` `Delete` disponibili. Questo messaggio viene visualizzato quando si seleziona una nuova combinazione di **Classe** e **Comportamento** e la modifica precedente non è stata ancora applicata.
+La **finestra di dialogo** Configura comportamento consente di configurare , e il comportamento per tutte le classi `Insert` `Update` `Delete` disponibili. Questo messaggio viene visualizzato quando si seleziona una nuova combinazione di **Classe** e **Comportamento** e la modifica precedente non è stata ancora applicata.
 
 ## <a name="change-options"></a>Opzioni di modifica
 
-- Per applicare la modifica e continuare, fare clic su **Sì.** La modifica viene applicata alla classe **e al** **comportamento selezionati.**
+- Per applicare la modifica e continuare, fare clic su **Sì.** La modifica viene applicata alla classe **e** al **comportamento selezionati.**
 
 - Per annullare la modifica precedente e continuare, fare clic su **No.**
 

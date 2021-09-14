@@ -15,11 +15,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 335f6d1ab4a7dba28609a267e6a6ce950cb607ff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631176"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separare set di dati e TableAdapter in progetti diversi
 I set di dati tipizzati sono stati migliorati in modo che le [classi TableAdapter e](create-and-configure-tableadapters.md) dataset possano essere generate in progetti separati. In questo modo è possibile separare rapidamente i livelli dell'applicazione e generare applicazioni dati a più livelli.
@@ -38,15 +38,15 @@ Quando si separa il codice del set di dati dal codice TableAdapter, il progetto 
     > [!NOTE]
     > Se la soluzione non contiene il progetto in cui si vuole separare il codice del set di dati, creare il progetto o aggiungere un progetto esistente alla soluzione.
 
-2. Fare doppio clic su un file di set di dati tipizzato (un *file* xsd) in **Esplora soluzioni** per aprire il set di dati **nel Progettazione DataSet**.
+2. Fare doppio clic su un file di set di dati tipizzato (un file con estensione *xsd)* in **Esplora soluzioni** per aprire il set di **dati nel Progettazione DataSet**.
 
 3. Selezionare un'area vuota del **Progettazione DataSet**.
 
-4. Nella finestra **Proprietà** individuare il **dataset Project** nodo .
+4. Nella finestra **Proprietà** individuare il nodo **dataset Project** dati.
 
-5. **Nell'elenco Project** set di dati selezionare il nome del progetto in cui si vuole generare il codice del set di dati.
+5. **Nell'elenco Project** dati selezionare il nome del progetto in cui si vuole generare il codice del set di dati.
 
-     Dopo aver selezionato il progetto in cui si vuole generare il codice del set di dati, la proprietà **File dataSet** viene popolata con un nome file predefinito. Se necessario, è possibile modificare questo nome. Inoltre, se si vuole generare il codice del set di dati in una directory **specifica,** è possibile impostare la proprietà Project Cartella sul nome di una cartella.
+     Dopo aver selezionato il progetto in cui si vuole generare il codice del set di dati, la proprietà **File dataSet** viene popolata con un nome file predefinito. Se necessario, è possibile modificare questo nome. Inoltre, se si vuole generare il codice del set di dati in una directory specifica, è possibile impostare la proprietà Project **Cartella** sul nome di una cartella.
 
     > [!NOTE]
     > Quando si separano i set di dati e gli oggetti TableAdapter (impostando la proprietà **Project DataSet),** le classi di set di dati parziali esistenti nel progetto non verranno spostate automaticamente. Le classi di set di dati parziali esistenti devono essere spostate manualmente nel progetto di set di dati.
@@ -55,10 +55,10 @@ Quando si separa il codice del set di dati dal codice TableAdapter, il progetto 
 
      Il codice del set di dati viene generato nel progetto selezionato nella proprietà **dataset Project** e il codice **TableAdapter** viene generato nel progetto corrente.
 
-Per impostazione predefinita, dopo aver separato il set di dati e il codice TableAdapter, il risultato è un file di classe discreto in ogni progetto. Il progetto originale ha un file denominato *DatasetName.Designer.vb* (o *DatasetName.Designer.cs)* che contiene il codice TableAdapter. Il progetto designato nella proprietà **Dataset Project** contiene un file denominato *DatasetName.DataSet.Designer.vb* (o *DatasetName.DataSet.Designer.cs)* che contiene il codice del set di dati.
+Per impostazione predefinita, dopo aver separato il set di dati e il codice TableAdapter, il risultato è un file di classe discreto in ogni progetto. Il progetto originale ha un file denominato *DatasetName.Designer.vb* (o *DatasetName.Designer.cs)* che contiene il codice TableAdapter. Il progetto designato nella proprietà **dataset Project** contiene un file denominato *DatasetName.DataSet.Designer.vb* (o *DatasetName.DataSet.Designer.cs)* che contiene il codice del set di dati.
 
 > [!NOTE]
-> Per visualizzare il file di classe generato, selezionare il set di dati o il progetto TableAdapter. Quindi, in **Esplora soluzioni** selezionare **Mostra tutti i file**.
+> Per visualizzare il file di classe generato, selezionare il set di dati o il progetto TableAdapter. Quindi, in **Esplora soluzioni** selezionare **Mostra tutti i file.**
 
 ## <a name="see-also"></a>Vedi anche
 

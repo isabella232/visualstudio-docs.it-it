@@ -1,5 +1,5 @@
 ---
-description: Recupera l'indirizzo virtuale (VA) del codice per il frame.
+description: Recupera l'indirizzo virtuale del codice per il frame.
 title: IDiaFrameData::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 003975e7eaf17783fc036da15c4653cf48d7c7ce
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629802"
 ---
 # <a name="idiaframedataget_virtualaddress"></a>IDiaFrameData::get_virtualAddress
-Recupera l'indirizzo virtuale (VA) del codice per il frame.
+Recupera l'indirizzo virtuale del codice per il frame.
 
 ## <a name="syntax"></a>Sintassi
 

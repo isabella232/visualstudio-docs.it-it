@@ -1,6 +1,6 @@
 ---
 title: Ordine di compilazione delle destinazioni | Microsoft Docs
-description: Informazioni su come specificare l'ordine di esecuzione MSBuild destinazioni, se l'input in una destinazione dipende dall'output di un'altra destinazione.
+description: Informazioni su come specificare l'ordine di esecuzione MSBuild destinazioni, se l'input per una destinazione dipende dall'output di un'altra destinazione.
 ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: e7f2f1cdbaefb282e43bf1c42bdf5855778549f7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628410"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 
@@ -26,7 +26,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 - `InitialTargets`. Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.
 
-- `DefaultTargets`. Questo `Project` attributo specifica le destinazioni da eseguire se una destinazione non viene specificata in modo esplicito nella riga di comando.
+- `DefaultTargets`. Questo `Project` attributo specifica quali destinazioni vengono eseguite se una destinazione non viene specificata in modo esplicito nella riga di comando.
 
 - `DependsOnTargets`. Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.
 
@@ -34,7 +34,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 Una destinazione non viene mai eseguita due volte durante una compilazione, anche se ne dipende una destinazione successiva nella compilazione. Dopo che una destinazione è stata eseguita, il contributo alla compilazione è completo.
 
-Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).
+Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per altre informazioni sulle condizioni, vedere [Condizioni.](../msbuild/msbuild-conditions.md)
 
 ## <a name="initial-targets"></a>Destinazioni iniziali
 

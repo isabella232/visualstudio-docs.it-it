@@ -1,6 +1,6 @@
 ---
 title: Notifiche, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina Notifiche nella sezione Ambiente per interrompere l'ignorare le notifiche che in precedenza si è scelto di ignorare tramite la finestra di dialogo Notifiche.
+description: Informazioni su come usare la pagina Notifiche nella sezione Ambiente per non ignorare le notifiche che in precedenza si è scelto di ignorare tramite la finestra di dialogo Notifiche.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: d2ebffb8f4fbd22660cc2f96969172ddabc6dc49
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143742"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628692"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notifiche, Ambiente, finestra di dialogo Opzioni
 
-Usare questa opzione per interrompere l'ignorare le notifiche che in precedenza si è scelto di ignorare tramite la **finestra di dialogo** Notifiche. Per altre informazioni vedere [Aggiornare Visual Studio](../../install/update-visual-studio.md).
+Usare questa opzione per non ignorare le notifiche che in precedenza si è scelto di ignorare tramite la **finestra di dialogo** Notifiche. Per altre informazioni vedere [Aggiornare Visual Studio](../../install/update-visual-studio.md).

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione delle parentesi graffe corrispondenti | Microsoft Docs'
-description: Informazioni su come definire parentesi graffe nel contesto di un linguaggio, applicando tag di corrispondenza delle parentesi graffe al tipo di contenuto di testo usando questa procedura dettagliata.
+description: Informazioni su come definire le parentesi graffe nel contesto di un linguaggio, applicando tag corrispondenti alle parentesi graffe al tipo di contenuto di testo usando questa procedura dettagliata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,14 +14,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: dacf3ffff56580e445f2eeda851d30082ba90f45
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049142"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628841"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procedura dettagliata: Visualizzare le parentesi graffe corrispondenti
-Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza delle parentesi graffe definendo le parentesi graffe di cui si vuole trovare la corrispondenza e aggiungendo un tag marcatore di testo alle parentesi graffe corrispondenti quando il punto di inserimento si trova su una delle parentesi graffe. È possibile definire parentesi graffe nel contesto di un linguaggio, definire l'estensione e il tipo di contenuto del nome file e applicare i tag solo a tale tipo o applicare i tag a un tipo di contenuto esistente, ad esempio "text". La procedura dettagliata seguente illustra come applicare tag corrispondenti alle parentesi graffe al tipo di contenuto "text".
+Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza delle parentesi graffe definendo le parentesi graffe di cui si vuole trovare la corrispondenza e aggiungendo un tag indicatore di testo alle parentesi graffe corrispondenti quando il punto di inserimento si trova su una delle parentesi graffe. È possibile definire le parentesi graffe nel contesto di un linguaggio, definire l'estensione e il tipo di contenuto del nome file e applicare i tag solo a quel tipo o applicare i tag a un tipo di contenuto esistente,ad esempio "text". La procedura dettagliata seguente illustra come applicare tag corrispondenti alle parentesi graffe al tipo di contenuto "text".
 
 ## <a name="prerequisites"></a>Prerequisiti
  A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
@@ -32,16 +32,16 @@ Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza d
 
 1. Creare un progetto di classificatore editor. Assegnare alla soluzione il nome `BraceMatchingTest`.
 
-2. Aggiungere un modello di elemento Editor Classifier al progetto. Per altre informazioni, vedere [Creare un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Aggiungere un modello di elemento Editor Classifier al progetto. Per altre informazioni, vedere Creare [un'estensione con un modello di elemento dell'editor.](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
 3. Eliminare i file di classe esistenti.
 
 ## <a name="implement-a-brace-matching-tagger"></a>Implementare un tagger corrispondente alle parentesi graffe
- Per ottenere un effetto di evidenziazione delle parentesi graffe simile a quello usato in Visual Studio, è possibile implementare un tagger di tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> . Il codice seguente illustra come definire il tagger per le coppie di parentesi graffe a qualsiasi livello di annidamento. In questo esempio le coppie di parentesi graffe di [] e sono definite nel costruttore del tagger, ma in un'implementazione completa del linguaggio le coppie di parentesi graffe pertinenti vengono definite nella specifica del {} linguaggio.
+ Per ottenere un effetto di evidenziazione della parentesi graffa simile a quello usato in Visual Studio, è possibile implementare un tagger di tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> . Il codice seguente illustra come definire il tagger per le coppie di parentesi graffe a qualsiasi livello di annidamento. In questo esempio le coppie di parentesi graffe di [] e sono definite nel costruttore del tagger, ma in un'implementazione completa del linguaggio le coppie di parentesi graffe pertinenti vengono definite nella specifica del {} linguaggio.
 
 ### <a name="to-implement-a-brace-matching-tagger"></a>Per implementare un tagger corrispondente alle parentesi graffe
 
-1. Aggiungere un file di classe e assegnare il nome BraceMatching.
+1. Aggiungere un file di classe e assegnare al file il nome BraceMatching.
 
 2. Importare gli spazi dei nomi seguenti.
 
@@ -58,7 +58,7 @@ Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza d
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet3":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet3":::
 
-5. Nel costruttore del tagger impostare le proprietà e sottoscrivere gli eventi di modifica della visualizzazione <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> . In questo esempio, a scopo illustrativo, nel costruttore vengono definite anche le coppie corrispondenti.
+5. Nel costruttore del tagger impostare le proprietà e sottoscrivere gli eventi di modifica della visualizzazione <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> . In questo esempio, a scopo illustrativo, anche le coppie corrispondenti vengono definite nel costruttore .
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet4":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet4":::
@@ -88,17 +88,17 @@ Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza d
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet9":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet9":::
 
-## <a name="implement-a-brace-matching-tagger-provider"></a>Implementare un provider di tag corrispondenti alle parentesi graffe
- Oltre a implementare un tagger, è necessario implementare ed esportare un provider di tagger. In questo caso, il tipo di contenuto del provider è "text". La corrispondenza delle parentesi graffe verrà quindi visualizzata in tutti i tipi di file di testo, ma un'implementazione più completa applica la corrispondenza delle parentesi graffe solo a un tipo di contenuto specifico.
+## <a name="implement-a-brace-matching-tagger-provider"></a>Implementare un provider di tagger corrispondente alle parentesi graffe
+ Oltre a implementare un tagger, è necessario implementare ed esportare un provider di tagger. In questo caso, il tipo di contenuto del provider è "text". Pertanto, la corrispondenza delle parentesi graffe verrà visualizzata in tutti i tipi di file di testo, ma un'implementazione più completa applica la corrispondenza delle parentesi graffe solo a un tipo di contenuto specifico.
 
-### <a name="to-implement-a-brace-matching-tagger-provider"></a>Per implementare un provider di tag corrispondenti alle parentesi graffe
+### <a name="to-implement-a-brace-matching-tagger-provider"></a>Per implementare un provider di tagger corrispondente alle parentesi graffe
 
-1. Dichiarare un provider di tagger che eredita da , denognarlo BraceMatchingTaggerProvider ed esportarlo con un valore <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> di "text" e <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> un di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> .
+1. Dichiarare un provider di tagger che eredita da , assegnare al provider il nome BraceMatchingTaggerProvider ed esportarlo con <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" e <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> con <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> .
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet10":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet10":::
 
-2. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metodo per creare un'istanza di braceMatchingTagger.
+2. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metodo per creare un'istanza di BraceMatchingTagger.
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs" id="Snippet11":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb" id="Snippet11":::
@@ -110,7 +110,7 @@ Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza d
 
 1. Compilare la soluzione.
 
-2. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
+2. Quando si esegue questo progetto nel debugger, viene avviata una seconda Visual Studio di .
 
 3. Creare un file di testo e digitare testo che includa parentesi graffe corrispondenti.
 
@@ -123,7 +123,7 @@ Implementare funzionalità basate sul linguaggio, ad esempio la corrispondenza d
     {hello}
     ```
 
-4. Quando si posiziona il cursore prima di una parentesi graffa aperta, devono essere evidenziate sia la parentesi graffa che la parentesi graffa di chiusura corrispondente. Quando si posiziona il cursore subito dopo la parentesi graffa di chiusura, devono essere evidenziate sia la parentesi graffa aperta che la parentesi graffa aperta corrispondente.
+4. Quando si posiziona il cursore prima di una parentesi graffa aperta, sia la parentesi graffa che la parentesi graffa di chiusura corrispondente devono essere evidenziate. Quando si posiziona il cursore subito dopo la parentesi graffa di chiusura, sia la parentesi graffa aperta che la parentesi graffa aperta corrispondente devono essere evidenziate.
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

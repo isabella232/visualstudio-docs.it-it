@@ -12,11 +12,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: dc732273719484b7f2f3eaf26a39a8ff518ee3dc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067007"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631139"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Impossibile eliminare la proprietà &lt;nome proprietà&gt; perché partecipa all'associazione &lt;nome associazione&gt;
 
@@ -26,7 +26,7 @@ Impostare **Proprietà associazione** su una diversa proprietà della classe di 
 
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
 
-1. Selezionare la riga di associazione in **Progettazione O/R** che connette le classi di dati indicate nel messaggio di errore.
+1. Selezionare la riga di associazione in **Progettazione O/R che** connette le classi di dati indicate nel messaggio di errore.
 
 2. Fare doppio clic sulla linea per aprire la finestra di dialogo **Editor di associazione**.
 

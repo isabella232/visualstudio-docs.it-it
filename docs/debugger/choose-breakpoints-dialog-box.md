@@ -25,11 +25,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ce2e0f4d53147e635adc7281a1d5118636daad4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630912"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Finestra di dialogo Seleziona punti di interruzione
 La **finestra di dialogo Scegli punti** di interruzione viene visualizzata quando si tenta di impostare un punto di interruzione da un input ambiguo nella finestra di **dialogo** Nuovo punto di interruzione . Un esempio comune di input ambiguo è un nome di funzione in overload.

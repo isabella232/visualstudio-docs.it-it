@@ -22,15 +22,15 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: dcdb605421c1e18b6a27e5d93999dc6e3d2320f8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630924"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Impossibile modificare il valore (finestra di dialogo)
 ## <a name="error"></a>Errore
- `The value of this variable cannot be changed` &#124; nome `The name` *&#124;* `does not exist in the current context` altri *messaggi*
+ `The value of this variable cannot be changed` &#124; `The name` *nome* `does not exist in the current context` &#124; altri *messaggi*
 
  Questa finestra di messaggio viene visualizzata quando si tenta di modificare il contenuto di una variabile in un valore non consentito in una finestra del debugger (finestre Auto, Espressioni di controllo o Variabili locali) o nella finestra di dialogo Controllo immediato. Se, ad esempio, si tenta di impostare il valore di una variabile Integer in una stringa di caratteri, viene visualizzata questa finestra di messaggio.
 

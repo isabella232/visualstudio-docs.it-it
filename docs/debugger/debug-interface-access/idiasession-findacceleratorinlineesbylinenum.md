@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a6c819ea1fe69c31f86165f9ce4e72111c48b651
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044342"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629279"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 Restituisce un'enumerazione di simboli per i frame inline che corrispondono alla posizione di origine specificata.
@@ -37,7 +37,7 @@ HRESULT findAcceleratorInlineeLinesByName (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-[in] Oggetto `IDiaSymbol` che corrisponde alla funzione stub accelerator che deve essere cercata.
+[in] Oggetto `IDiaSymbol` che corrisponde alla funzione stub Accelerator in cui è necessario eseguire la ricerca.
 
  `file`
 
@@ -49,7 +49,7 @@ HRESULT findAcceleratorInlineeLinesByName (
 
  `colnum`
 
-[in] Numero di colonna del percorso di origine.
+[in] Numero di colonna della posizione di origine.
 
  `ppResult`
 

@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Progettazione Windows Form, Personalizzazione dell'interfaccia utente dati
-description: Informazioni su come usare la pagina Personalizzazione dell'interfaccia utente dati per definire i controlli da visualizzare nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati.
+description: Informazioni su come usare la pagina Personalizzazione interfaccia utente dati per definire i controlli da visualizzare nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati.
 ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
@@ -14,15 +14,15 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 6e419f144b44076e1108988cf1123a6a87b410ea
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628625"
 ---
-# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Finestra di dialogo Opzioni: Finestra Windows Form > personalizzazione dell'interfaccia utente dati
+# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Finestra di dialogo Opzioni: finestra Windows Form > personalizzazione dell'interfaccia utente dei dati
 
-Questa finestra di dialogo consente di definire i controlli che vengono visualizzati nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati. Per aprirlo, selezionare **Opzioni** strumenti e quindi selezionare Windows personalizzazione dell'interfaccia utente dati  >  di   >  **Progettazione Form.**
+Questa finestra di dialogo consente di definire i controlli che vengono visualizzati nell'elenco dei controlli disponibili per gli elementi nella finestra Origini dati. Per aprirlo, selezionare **Opzioni** strumenti e quindi selezionare Windows  >   **personalizzazione** dell'interfaccia utente dei dati di Progettazione  >  **form**.
 
 È possibile selezionare un controllo da un elemento nella finestra Origini dati prima di trascinarlo nel form in un'app Windows Form. I controlli disponibili sono determinati dal tipo di dati dell'elemento. Ogni tipo di dati ha un elenco di controlli associati validi, come definito in questa finestra di dialogo, incluso un controllo predefinito. Quando si trascina un elemento dalla finestra Origini dati in un form senza selezionare un controllo, il controllo predefinito per il tipo di dati dell'elemento selezionato viene aggiunto al form.
 

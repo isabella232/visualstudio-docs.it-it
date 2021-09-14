@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c734fb46b759160e4424da97cb00dd6a97bd559e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628926"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato.
@@ -35,7 +35,7 @@ HRESULT findInlineeLinesByVA (
 #### <a name="parameters"></a>Parametri
  `va`
 
-[in] Specifica l'indirizzo come va va.
+[in] Specifica l'indirizzo come va.
 
  `length`
 

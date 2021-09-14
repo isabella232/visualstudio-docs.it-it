@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ea37d29745ede74e5f882b416c5a3f004587396
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630473"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Apre una sessione per l'esecuzione di query sui simboli.
@@ -38,7 +38,7 @@ ppSession
 [out] Restituisce un [oggetto IDiaSession](../../debugger/debug-interface-access/idiasession.md) che rappresenta la sessione aperta.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati i valori restituiti possibili per questo metodo.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati i possibili valori restituiti per questo metodo.
 
 |Valore|Descrizione|
 |-----------|-----------------|
@@ -49,7 +49,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 ## <a name="remarks"></a>Commenti
 Questo metodo apre un [oggetto IDiaSession](../../debugger/debug-interface-access/idiasession.md) per un'origine dati.
 
-`IDiaSession` Gli oggetti implementano query nell'origine dati. Una sessione gestisce uno spazio indirizzi per ogni set di simboli di debug. Se il file .exe o .dll descritto dai simboli dell'origine dati è attivo in più intervalli di indirizzi (ad esempio, perché è caricato da più processi), è necessario usare una sessione per ogni intervallo di indirizzi.
+`IDiaSession` Gli oggetti implementano query nell'origine dati. Una sessione gestisce uno spazio indirizzi per ogni set di simboli di debug. Se il file .exe o .dll descritto dai simboli dell'origine dati è attivo in più intervalli di indirizzi ( ad esempio, perché è stato caricato da più processi), deve essere usata una sessione per ogni intervallo di indirizzi.
 
 ## <a name="example"></a>Esempio
 

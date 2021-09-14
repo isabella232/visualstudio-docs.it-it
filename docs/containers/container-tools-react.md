@@ -9,11 +9,11 @@ ms.date: 02/21/2021
 ms.technology: vs-container-tools
 ms.topic: quickstart
 ms.openlocfilehash: 4c1bc184b2244de0babfd368e22de3bda3af808a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631763"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: Usare Docker con un React app a pagina singola in Visual Studio
 
@@ -256,16 +256,16 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
 1. Selezionare **Versione** nell'elenco a discesa della configurazione ed eseguire l'app.
 1. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Pubblica**.
-1. Nella finestra di dialogo publish target (Destinazione pubblicazione) selezionare **Docker Container Registry (Registro contenitori Docker).**
+1. Nella finestra di dialogo publish target (Destinazione di pubblicazione) **selezionare Docker Container Registry (Registro Contenitori Docker).**
 
-   ![Scegliere Registro Contenitori Docker](media/container-tools-react/vs-2019/publish-dialog1.png)
+   ![Scegliere Docker Container Registry (Registro Contenitori Docker)](media/container-tools-react/vs-2019/publish-dialog1.png)
 
 1. Scegliere quindi **Registro Azure Container**.
 
    ![Scegliere Registro Azure Container](media/container-tools-react/vs-2019/publish-dialog-acr.png)
 
-1. Scegliere **Crea una nuova Registro Azure Container**.
-1. Immettere i valori desiderati nella schermata **Create new Registro Azure Container (Crea Registro Azure Container** pagina).
+1. Scegliere **Crea un nuovo Registro Azure Container**.
+1. Immettere i valori desiderati nella **schermata Create new Registro Azure Container (Crea Registro Azure Container** dati).
 
     | Impostazione      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
@@ -281,11 +281,11 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
    ![Selezionare o creare un nuovo ACR](media/container-tools-react/vs-2019/publish-dialog2.png)
 
-   Al termine del processo di pubblicazione, è possibile esaminare le impostazioni di pubblicazione e modificarle, se necessario, oppure pubblicare nuovamente l'immagine usando il **pulsante Pubblica.**
+   Al termine del processo di pubblicazione, è possibile esaminare le impostazioni di pubblicazione e modificarle, quando necessario, oppure pubblicare di nuovo l'immagine usando **il pulsante Pubblica.**
 
    ![Screenshot che indica l'esito positivo della pubblicazione](media/container-tools-react/vs-2019/publish-finished.png)
 
-   Per iniziare di nuovo a usare la finestra  **di** dialogo Pubblica, eliminare il profilo di pubblicazione usando il collegamento Elimina in questa pagina e quindi scegliere **di nuovo Pubblica.**
+   Per iniziare di nuovo usando la **finestra** di dialogo Pubblica, eliminare il profilo di pubblicazione usando il **collegamento** Elimina in questa pagina e quindi scegliere **di nuovo Pubblica.**
 :::moniker-end
 
 ## <a name="next-steps"></a>Passaggi successivi

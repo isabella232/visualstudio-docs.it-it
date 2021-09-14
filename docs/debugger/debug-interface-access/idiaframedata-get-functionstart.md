@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b33b08a00d62c89228346e5171219a801b0ad2a9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629873"
 ---
 # <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
 Recupera un flag che indica se il blocco contiene il punto di ingresso di una funzione.

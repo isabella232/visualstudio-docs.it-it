@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: e765d97ef7a3cde84857d91b1a02c05a122614c1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122066156"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629028"
 ---
 # <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 Recupera un valore di chiave integer semplice univoco per questa immagine.
@@ -41,7 +41,7 @@ HRESULT get_uniqueId (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Il confronto delle chiavi anziché delle stringhe può accelerare l'elaborazione del numero di riga.
+ Il confronto delle chiavi anziché delle stringhe può accelerare l'elaborazione dei numeri di riga.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

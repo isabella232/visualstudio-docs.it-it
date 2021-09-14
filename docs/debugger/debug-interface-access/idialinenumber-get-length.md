@@ -1,5 +1,5 @@
 ---
-description: Recupera il numero di byte in un blocco.
+description: Recupera il numero di byte in un blocco .
 title: IDiaLineNumber::get_length | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 699e508d0952e275f8122dbbbd91132de8679c9d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129127"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629687"
 ---
 # <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
-Recupera il numero di byte in un blocco.
+Recupera il numero di byte in un blocco .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ HRESULT get_length (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di byte in un blocco.
+[out] Restituisce il numero di byte in un blocco .
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

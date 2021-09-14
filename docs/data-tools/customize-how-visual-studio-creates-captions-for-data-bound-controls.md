@@ -17,11 +17,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3a5979fda1e2fcbe8664df7171b1053acebb0506
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631445"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
@@ -29,13 +29,13 @@ Quando si trascinano [](add-new-data-sources.md#data-sources-window) elementi da
 
 ::: moniker range="vs-2017"
 
-È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiaveHKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designersregistro di **sistema.**
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiaveHKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designersregistro di sistema. 
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiaveHKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designersregistro di **sistema.**
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiaveHKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designersregistro di sistema. 
 
 ::: moniker-end
 

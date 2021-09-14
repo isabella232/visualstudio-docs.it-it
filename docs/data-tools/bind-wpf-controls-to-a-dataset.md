@@ -19,11 +19,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: c0913e3d4f54f312e7d706ec6ab9771732e7b85c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631589"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 
@@ -47,11 +47,11 @@ Per completare questa procedura dettagliata, è necessario disporre dei componen
 
 - Visual Studio
 
-- Accesso a un'istanza in esecuzione SQL Server o SQL Server Express a cui è collegato il database di esempio AdventureWorks Light (AdventureWorksLT). È possibile scaricare il database AdventureWorksLT [dall'archivio CodePlex](https://archive.codeplex.com/?p=awlt2008dbscript).
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express a cui è collegato il database di esempio AdventureWorks Light (AdventureWorksLT). È possibile scaricare il database AdventureWorksLT [dall'archivio CodePlex](https://archive.codeplex.com/?p=awlt2008dbscript).
 
 Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
-- Set di dati e oggetti TableAdapter. Per altre informazioni, vedere [Strumenti set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) e [TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
+- Set di dati e oggetti TableAdapter. Per altre informazioni, vedere [Strumenti per set di dati Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) e [TableAdapter.](../data-tools/create-and-configure-tableadapters.md)
 
 - Data binding WPF. Per altre informazioni, vedere [Cenni preliminari sul data binding.](/dotnet/desktop-wpf/data/data-binding-overview)
 
@@ -186,7 +186,7 @@ Creare controlli che visualizzano i record dei clienti trascinando `Product` la 
 
 5. Dalla finestra **Origini dati** trascinare il nodo **Product** nella riga della griglia sotto la riga contenente i pulsanti.
 
-     Visual Studio genera il codice XAML che definisce un set di controlli associati a dati nella tabella **Products**. Genera inoltre il codice che carica i dati. Per altre informazioni sul codice e sul codice XAML generato, vedere [Associare i controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Visual Studio genera il codice XAML che definisce un set di controlli associati a dati nella tabella **Products**. Genera inoltre il codice che carica i dati. Per altre informazioni sul codice e sul codice XAML generato, vedere [Associare i controlli WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)ai dati in Visual Studio .
 
 6. Nella finestra di progettazione fare clic sulla casella di testo accanto all'etichetta **Product ID**.
 
@@ -231,7 +231,7 @@ Aggiungere il codice che consente agli utenti di salvare le modifiche ai record 
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet4":::
 
     > [!NOTE]
-    > Questo esempio usa il metodo `Save` di `TableAdapter` per salvare le modifiche. Tale approccio è appropriato a questa procedura dettagliata, in quanto viene modificata una sola tabella dati. Se è necessario salvare modifiche a più tabelle dati, è possibile usare in alternativa il metodo `UpdateAll` di `TableAdapterManager` generato da Visual Studio con il set di dati. Per altre informazioni, vedere [Oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+    > Questo esempio usa il metodo `Save` di `TableAdapter` per salvare le modifiche. Tale approccio è appropriato a questa procedura dettagliata, in quanto viene modificata una sola tabella dati. Se è necessario salvare modifiche a più tabelle dati, è possibile usare in alternativa il metodo `UpdateAll` di `TableAdapterManager` generato da Visual Studio con il set di dati. Per altre informazioni, vedere [TableAdapters.](../data-tools/create-and-configure-tableadapters.md)
 
 ## <a name="test-the-application"></a>Testare l'applicazione
 
@@ -243,7 +243,7 @@ Compilare ed eseguire l'applicazione. Verificare che sia possibile visualizzare 
 
     - Nelle caselle di testo vengono visualizzati i dati del primo record di prodotto contenente una foto. L'ID prodotto è 713, mentre il nome è **Long-Sleeve Logo Jersey, S**.
 
-    - È possibile fare clic sui **>** pulsanti o per spostarsi tra altri record del **<** prodotto.
+    - È possibile fare clic sui **>** pulsanti o per spostarsi tra altri record di **<** prodotto.
 
 2. In uno dei record di prodotto modificare il valore **Dimensione**, quindi fare clic su **Salva modifiche**.
 

@@ -1,5 +1,5 @@
 ---
-title: Caricamento di VSPackage | Microsoft Docs
+title: Caricamento di vspackage | Microsoft Docs
 description: Informazioni sul caricamento di VSPackage in Visual Studio, incluso il caricamento ritardato, che viene usato quando possibile per migliorare le prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d56192fed9138e6edd8f18753893b195c174c5b9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628895"
 ---
 # <a name="load-vspackages"></a>Caricare VSPackage
 I pacchetti VSPackage vengono caricati in Visual Studio solo quando è necessaria la relativa funzionalità. Ad esempio, un VSPackage viene caricato quando Visual Studio una factory di progetto o un servizio implementato da VSPackage. Questa funzionalità è detta caricamento ritardato, che viene usata quando possibile per migliorare le prestazioni.
@@ -29,7 +29,7 @@ I pacchetti VSPackage vengono caricati in Visual Studio solo quando è necessari
 
  I pacchetti VSPackage possono essere impostati per il caricamento automatico in un particolare contesto dell'interfaccia utente, ad esempio quando una soluzione è aperta. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>L'attributo imposta questo contesto.
 
-### <a name="autoload-a-vspackage-in-a-specific-context"></a>Caricare automaticamente un VSPackage in un contesto specifico
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>Caricare automaticamente un vspackage in un contesto specifico
 
 - Aggiungere `ProvideAutoLoad` l'attributo agli attributi VSPackage:
 
@@ -42,7 +42,7 @@ I pacchetti VSPackage vengono caricati in Visual Studio solo quando è necessari
     {. . .}
     ```
 
-     Per un elenco dei contesti dell'interfaccia utente e dei relativi valori GUID, vedere i campi <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> enumerati di .
+     Per un elenco dei contesti dell'interfaccia utente e dei relativi valori GUID, vedere <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> i campi enumerati di .
 
 - Impostare un punto di interruzione nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo .
 

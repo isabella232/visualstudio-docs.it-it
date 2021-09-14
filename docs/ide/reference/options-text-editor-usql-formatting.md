@@ -1,6 +1,6 @@
 ---
 title: Opzioni di formattazione dell'editor U-SQL
-description: Informazioni su come usare la pagina opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in U-SQL.
+description: Informazioni su come usare la pagina Opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in U-SQL.
 ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e13ef80bae3e59901a8fb0ae67a837a2f344b551
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628650"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opzioni, Editor di testo, U-SQL, Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di formattazione del codice nell'editor del codice. Per accedere a questa pagina di opzioni, scegliere **Strumenti**  >  **Opzioni**. Nella finestra di dialogo **Opzioni** scegliere **Editor di testo** > **U-SQL** > **Formattazione**.
+Usare la pagina di opzioni **Formattazione** per impostare le opzioni di formattazione del codice nell'editor del codice. Per accedere a questa pagina delle opzioni, scegliere **Opzioni**  >  **strumenti**. Nella finestra di dialogo **Opzioni** scegliere **Editor di testo** > **U-SQL** > **Formattazione**.
 
 ## <a name="general-page"></a>Pagina Generale
 
@@ -47,7 +47,7 @@ Ognuna delle pagine secondarie **Rientro**, **Nuove righe** e **Spaziatura** vis
 
 ### <a name="indentation-remarks"></a>Osservazioni sul rientro
 
-Le opzioni di rientro nelle pagine **Tabulazioni** per ogni linguaggio determinano solo il punto in cui l'editor di codice posiziona il cursore quando si preme **INVIO** alla fine di una riga. Le opzioni di rientro in **Formattazione** si applicano quando il codice viene formattato automaticamente, ad esempio:
+Le opzioni di rientro nelle pagine **Tabulazioni** per ogni linguaggio determinano solo dove l'editor di codice posiziona il cursore quando si preme **INVIO** alla fine di una riga. Le opzioni di rientro in **Formattazione** si applicano quando il codice viene formattato automaticamente, ad esempio:
 
 - Quando si incolla codice nel file quando è selezionata l'opzione **Formatta automaticamente dopo operazione Incolla**
 - Quando il blocco da formattare viene digitato manualmente

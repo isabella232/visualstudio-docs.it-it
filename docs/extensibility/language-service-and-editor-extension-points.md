@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3a97b75f1df66d8353c06acf74f8d69b26a6e8c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628902"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione del servizio di linguaggio e dell'editor
 L'editor fornisce punti di estensione che è possibile estendere come Managed Extensibility Framework (MEF), incluse la maggior parte delle funzionalità del servizio di linguaggio. Queste sono le categorie principali dei punti di estensione:
@@ -92,7 +92,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
 - CSS
 
-- Enc
+- ENC
 
 - FindResults
 
@@ -118,7 +118,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 > [!NOTE]
 > In Visual Studio, le estensioni di file vengono registrate usando in <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> un pacchetto del servizio di linguaggio. Associa <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> un tipo di contenuto MEF a un'estensione di file registrata in questo modo.
 
- Per esportare l'estensione del nome file nella definizione del tipo di contenuto, è necessario includere gli attributi seguenti:
+ Per esportare l'estensione di file nella definizione del tipo di contenuto, è necessario includere gli attributi seguenti:
 
 - <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: specifica l'estensione di file.
 
@@ -194,13 +194,13 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
 
 - <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: nome visualizzato del formato.
 
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: specifica se il formato viene visualizzato nella pagina Tipi di carattere **e** colori della **finestra di dialogo** Opzioni .
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: specifica se il formato viene visualizzato nella pagina **Tipi di** carattere e colori della finestra **di dialogo** Opzioni .
 
 - <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: priorità del formato. I valori validi sono di <xref:Microsoft.VisualStudio.Text.Classification.Priority> .
 
 - <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: nome del tipo di classificazione a cui viene eseguito il mapping di questo formato.
 
-  L'esempio seguente illustra gli attributi di esportazione in una definizione di formato di classificazione.
+  L'esempio seguente illustra gli attributi di esportazione in una definizione del formato di classificazione.
 
 ```
 [Export(typeof(EditorFormatDefinition))]
@@ -220,31 +220,31 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
 ## <a name="extend-margins-and-scrollbars"></a>Estendere margini e barre di scorrimento
- Margini e barre di scorrimento sono gli elementi principali della visualizzazione dell'editor oltre alla visualizzazione testo stessa. Oltre ai margini standard visualizzati intorno alla visualizzazione testo, è possibile specificare un numero qualsiasi di margini.
+ I margini e le barre di scorrimento sono gli elementi principali dell'editor oltre alla visualizzazione testo stessa. È possibile specificare un numero qualsiasi di margini oltre ai margini standard visualizzati intorno alla visualizzazione di testo.
 
- Implementare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> un'interfaccia per definire un margine. È inoltre necessario implementare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> l'interfaccia per creare il margine.
+ Implementare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin> un'interfaccia per definire un margine. È anche necessario implementare <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> l'interfaccia per creare il margine.
 
- Per registrare il provider margin con l'editor, è necessario esportare il provider insieme agli attributi seguenti:
+ Per registrare il provider margin con l'editor, è necessario esportare il provider con gli attributi seguenti:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: nome del margine.
 
 - <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui viene visualizzato il margine rispetto agli altri margini.
 
-   I margini predefiniti sono i seguenti:
+   Questi sono i margini predefiniti:
 
-  - "Barra di scorrimento orizzontale wpf"
+  - "Barra di scorrimento orizzontale Wpf"
 
   - "Barra di scorrimento verticale Wpf"
 
   - "Margine numero di riga Wpf"
 
-    I margini orizzontali con un attributo order di vengono visualizzati sotto il margine incorporato e i margini orizzontali con un attributo order di vengono visualizzati sopra il `After="Wpf Horizontal Scrollbar"` `Before ="Wpf Horizontal Scrollbar"` margine incorporato. I margini verticali a destra con un attributo order di `After="Wpf Vertical Scrollbar"` vengono visualizzati a destra della barra di scorrimento. I margini verticali a sinistra con un attributo order di vengono visualizzati a sinistra del margine del numero di riga `After="Wpf Line Number Margin"` (se visibile).
+    I margini orizzontali con un attributo order di vengono visualizzati sotto il margine incorporato e i margini orizzontali con un attributo order di vengono visualizzati sopra il `After="Wpf Horizontal Scrollbar"` `Before ="Wpf Horizontal Scrollbar"` margine incorporato. I margini verticali a destra con un attributo order di vengono `After="Wpf Vertical Scrollbar"` visualizzati a destra della barra di scorrimento. I margini verticali a sinistra con un attributo order di vengono visualizzati a sinistra del margine del numero di riga `After="Wpf Line Number Margin"` (se visibile).
 
-- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: tipo di margine (sinistro, destro, superiore o inferiore).
+- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: tipo di margine (a sinistra, a destra, in alto o in basso).
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") per il quale il margine è valido.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per cui il margine è valido.
 
-  L'esempio seguente illustra gli attributi di esportazione in un provider di margini per un margine visualizzato a destra del margine del numero di riga.
+  Nell'esempio seguente vengono illustrati gli attributi di esportazione in un provider di margini per un margine visualizzato a destra del margine del numero di riga.
 
 ```
 [Export(typeof(IWpfTextViewMarginProvider))]
@@ -255,9 +255,9 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ```
 
 ## <a name="extend-tags"></a>Estendere i tag
- I tag sono un modo per associare i dati a diversi tipi di testo. In molti casi, i dati associati vengono visualizzati come effetto visivo, ma non tutti i tag hanno una presentazione visiva. È possibile definire un tipo di tag personalizzato implementando <xref:Microsoft.VisualStudio.Text.Tagging.ITag> . È inoltre necessario <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementare per fornire i tag per un determinato set di intervalli di testo e per <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> fornire il tagger. È necessario esportare il provider di tagger insieme agli attributi seguenti:
+ I tag sono un modo per associare i dati a diversi tipi di testo. In molti casi, i dati associati vengono visualizzati come effetto visivo, ma non tutti i tag hanno una presentazione visiva. È possibile definire un tipo di tag personalizzato implementando <xref:Microsoft.VisualStudio.Text.Tagging.ITag> . È anche necessario implementare per fornire i tag per un determinato set di intervalli di testo <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> e per fornire il <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> tagger. È necessario esportare il provider di tag con gli attributi seguenti:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per il quale il tag è valido.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per cui il tag è valido.
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: tipo di tag.
 
@@ -272,15 +272,15 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associato a un'area di controllo.
 
   > [!NOTE]
-  > Per un esempio di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> , vedere la definizione HighlightWordTag in Procedura [dettagliata: Evidenziazione del testo.](../extensibility/walkthrough-highlighting-text.md)
+  > Per un esempio di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> , vedere la definizione HighlightWordTag in Procedura [dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associato ad aree che possono essere espanse o compresse nella struttura.
 
-- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: definisce lo spazio che un'area di controllo occupa in una visualizzazione testo. Per altre informazioni sulle aree di controllo per la negoziazione dello spazio, vedere la sezione seguente.
+- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: definisce lo spazio che un'area di controllo occupa in una visualizzazione di testo. Per altre informazioni sulle aree di controllo di negoziazione dello spazio, vedere la sezione seguente.
 
 - <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: fornisce spaziatura e ridimensionamento automatici per l'area di controllo.
 
-  Per trovare e usare tag per buffer e visualizzazioni, importare o , che forniscono <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> un oggetto del tipo <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService> <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> richiesto. Il codice seguente importa questo servizio come proprietà.
+  Per trovare e usare tag per buffer e viste, importare o , che forniscono <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> un oggetto del tipo <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService> <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> richiesto. Il codice seguente importa questo servizio come proprietà.
 
 ```
 [Import]
@@ -318,18 +318,18 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Per applicare questa definizione di formato a un tag, fare riferimento al nome impostato nell'attributo name della classe (non al nome visualizzato).
 
 > [!NOTE]
-> Per un esempio di <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> , vedere la classe HighlightWordFormatDefinition in Procedura [dettagliata: Evidenziazione del testo.](../extensibility/walkthrough-highlighting-text.md)
+> Per un esempio di <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> , vedere la classe HighlightWordFormatDefinition in Procedura [dettagliata: Evidenziazione di testo](../extensibility/walkthrough-highlighting-text.md).
 
 ## <a name="extend-adornments"></a>Estendere le aree di controllo
- Le aree di controllo definiscono gli effetti visivi che possono essere aggiunti al testo visualizzato in una visualizzazione testo o alla visualizzazione testo stessa. È possibile definire un'area di controllo come qualsiasi tipo di <xref:System.Windows.UIElement> .
+ Le aree di controllo definiscono gli effetti visivi che possono essere aggiunti al testo visualizzato in una visualizzazione di testo o alla visualizzazione testo stessa. È possibile definire un'area di controllo come qualsiasi tipo di <xref:System.Windows.UIElement> .
 
  Nella classe dell'area di controllo è necessario dichiarare un oggetto <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> . Per registrare il livello di area di controllo, esportarlo con gli attributi seguenti:
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: nome dell'area di controllo.
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: ordinamento dell'area di controllo rispetto ad altri livelli dell'area di controllo. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definisce quattro livelli predefiniti: Selection, Outlining, Caret e Text.
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: ordinamento dell'area di controllo rispetto ad altri livelli dell'area di controllo. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definisce quattro livelli predefiniti: Selezione, Struttura, Punti di selezione e Testo.
 
-  L'esempio seguente mostra gli attributi di esportazione in una definizione di livello di area di controllo.
+  L'esempio seguente illustra gli attributi di esportazione in una definizione del livello di area di controllo.
 
 ```
 [Export]
@@ -338,13 +338,13 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 internal AdornmentLayerDefinition testLayerDefinition;
 ```
 
- È necessario creare una seconda classe che implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> e gestisce il relativo evento creando <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> un'istanza dell'area di controllo. È necessario esportare questa classe con gli attributi seguenti:
+ È necessario creare una seconda classe che implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> e gestisce <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> l'evento creando un'istanza dell'area di controllo. È necessario esportare questa classe con gli attributi seguenti:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per il quale l'area di controllo è valida.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per cui l'area di controllo è valida.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: tipo di visualizzazione testo per cui questa area di controllo è valida. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> include il set di ruoli di visualizzazione testo predefiniti. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene usato principalmente per le visualizzazioni di testo dei file. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> viene usato per le visualizzazioni di testo che un utente può modificare o navigare usando un mouse e una tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> visualizzazioni sono la visualizzazione testo dell'editor e la **finestra Output.**
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: tipo di visualizzazione di testo per cui l'area di controllo è valida. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> ha il set di ruoli di visualizzazione testo predefiniti. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene usato principalmente per le visualizzazioni di testo dei file. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> viene usato per le visualizzazioni di testo che un utente può modificare o navigare usando un mouse e una tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> visualizzazioni sono la visualizzazione testo dell'editor e la **finestra Output.**
 
-  L'esempio seguente mostra gli attributi di esportazione nel provider dell'area di controllo.
+  Nell'esempio seguente vengono illustrati gli attributi di esportazione nel provider dell'area di controllo.
 
 ```
 [Export(typeof(IWpfTextViewCreationListener))]
@@ -353,9 +353,9 @@ internal AdornmentLayerDefinition testLayerDefinition;
 internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 ```
 
- Un'area di controllo che negozia lo spazio occupa spazio allo stesso livello del testo. Per creare questo tipo di area di controllo, è necessario definire una classe di tag che eredita da , che definisce la quantità di spazio occupata <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> dall'area di controllo.
+ Un'area di controllo di negoziazione dello spazio occupa spazio allo stesso livello del testo. Per creare questo tipo di area di controllo, è necessario definire una classe tag che eredita da , che definisce la quantità di spazio occupata <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> dall'area di controllo.
 
- Come per tutte le aree di controllo, è necessario esportare la definizione del livello dell'area di controllo.
+ Come per tutte le aree di controllo, è necessario esportare la definizione del livello di area di controllo.
 
 ```
 [Export]
@@ -364,17 +364,17 @@ internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 internal AdornmentLayerDefinition testAdornmentLayer;
 ```
 
- Per creare un'istanza dell'area di controllo per la negoziazione dello spazio, è necessario creare una classe che implementa , oltre alla classe che implementa (come con altri <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> tipi di aree di <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> controllo).
+ Per creare un'istanza dell'area di controllo di negoziazione dello spazio, è necessario creare una classe che implementa , oltre alla classe che implementa (come con altri <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> tipi di aree di <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> controllo).
 
- Per registrare il provider di tagger, è necessario esportarlo insieme agli attributi seguenti:
+ Per registrare il provider di tagger, è necessario esportarlo con gli attributi seguenti:
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per il quale l'area di controllo è valida.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: tipo di contenuto (ad esempio, "text" o "code") per cui l'area di controllo è valida.
 
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: tipo di visualizzazione di testo per cui questo tag o area di controllo è valido. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> include il set di ruoli di visualizzazione testo predefiniti. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene usato principalmente per le visualizzazioni di testo dei file. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> viene usato per le visualizzazioni di testo che un utente può modificare o navigare usando un mouse e una tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> visualizzazioni sono la visualizzazione testo dell'editor e la **finestra Output.**
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: tipo di visualizzazione di testo per cui il tag o l'area di controllo è valido. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> ha il set di ruoli di visualizzazione testo predefiniti. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene usato principalmente per le visualizzazioni di testo dei file. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> viene usato per le visualizzazioni di testo che un utente può modificare o navigare usando un mouse e una tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> visualizzazioni sono la visualizzazione testo dell'editor e la **finestra Output.**
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: tipo di tag o area di controllo definita. È necessario aggiungere un secondo <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> per <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> .
 
-  L'esempio seguente mostra gli attributi di esportazione nel provider di tag per un tag di area di controllo che negozia lo spazio.
+  Nell'esempio seguente vengono illustrati gli attributi di esportazione nel provider di tag per un tag di area di controllo per la negoziazione dello spazio.
 
 ```
 [Export(typeof(ITaggerProvider))]
@@ -386,9 +386,9 @@ internal sealed class TestTaggerProvider : ITaggerProvider
 ```
 
 ## <a name="extending-mouse-processors"></a>Estensione dei processori del mouse
- È possibile aggiungere una gestione speciale per l'input del mouse. Creare una classe che eredita da ed eseguire <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> l'override degli eventi del mouse per l'input che si desidera gestire. È inoltre necessario implementare in una seconda classe ed esportarlo insieme a che specifica il tipo di contenuto <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> (ad esempio, "text" o "code") per il quale il gestore <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> del mouse è valido.
+ È possibile aggiungere una gestione speciale per l'input del mouse. Creare una classe che eredita da ed <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> eseguire l'override degli eventi del mouse per l'input da gestire. È anche necessario implementare in una seconda classe ed esportarlo insieme a che specifica il tipo di contenuto <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> (ad esempio, "text" o "code") per cui il gestore <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> del mouse è valido.
 
- Nell'esempio seguente vengono illustrati gli attributi di esportazione in un provider del processore del mouse.
+ L'esempio seguente illustra gli attributi di esportazione in un provider del processore del mouse.
 
 ```
 [Export(typeof(IMouseProcessorProvider))]
@@ -399,7 +399,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 ```
 
 ## <a name="extend-drop-handlers"></a>Estendere i gestori di rilascio
- È possibile personalizzare il comportamento dei gestori di rilascio per tipi specifici di testo creando una classe che implementa e una seconda classe che implementa per <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> creare il gestore di <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> rilascio. È necessario esportare il gestore di rilascio con gli attributi seguenti:
+ È possibile personalizzare il comportamento dei gestori di rilascio per tipi specifici di testo creando una classe che implementa e una seconda classe che implementa <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> per creare il gestore di <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> rilascio. È necessario esportare il gestore di rilascio con gli attributi seguenti:
 
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: formato di testo per il quale questo gestore di rilascio è valido. I formati seguenti vengono gestiti in ordine di priorità dal più alto al più basso:
 

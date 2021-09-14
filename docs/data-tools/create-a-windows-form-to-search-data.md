@@ -18,11 +18,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4d045dcddd1cdebb4308e35bf9060b013216a670
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631500"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
 
@@ -30,7 +30,7 @@ Uno scenario applicativo comune prevede la visualizzazione dei dati selezionati 
 
 L'uso di query con parametri rende più efficiente il funzionamento dell'applicazione, consentendo al database di eseguire in modo ottimale le operazioni di filtro rapido dei record. La richiesta invece di un'intera tabella del database, il relativo trasferimento in rete e l'uso della logica dell'applicazione per trovare i record desiderati possono comportare una riduzione della velocità e dell'efficienza dell'applicazione.
 
-È possibile aggiungere query con parametri a qualsiasi TableAdapter (e controlli per accettare i valori dei parametri ed eseguire la query) usando la finestra di dialogo **Generatore** criteri di ricerca . Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
+È possibile aggiungere query con parametri a qualsiasi Oggetto TableAdapter (e controlli per accettare i valori dei parametri ed eseguire la query) usando **la** finestra di dialogo Generatore criteri di ricerca . Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
@@ -55,11 +55,11 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 Questa procedura dettagliata usa SQL Server Express Local DB e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina di [download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express o tramite il Programma di installazione di Visual Studio **.** Nel **Programma di installazione di Visual Studio**, è possibile installare SQL Server Express Local DB come parte  del carico di lavoro Archiviazione ed elaborazione dati o come singolo componente.
+1. Se non si dispone di SQL Server Express Local DB, installarlo dalla pagina di [download](https://www.microsoft.com/sql-server/sql-server-editions-express)SQL Server Express oppure tramite il Programma di installazione di Visual Studio **.** Nel **Programma di installazione di Visual Studio** è possibile installare SQL Server Express Local DB come parte del  carico di lavoro Archiviazione ed elaborazione dati o come singolo componente.
 
 2. Installare il database di esempio Northwind seguendo questa procedura:
 
-    1. In Visual Studio aprire la **finestra** SQL Server Esplora oggetti dati. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati nel **Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo . Fare clic con il pulsante destro del mouse Local DB'istanza di query e **scegliere Nuova query**.
+    1. In Visual Studio aprire la **finestra** SQL Server Esplora oggetti. (SQL Server Esplora oggetti viene installato come parte  del carico di lavoro Archiviazione ed elaborazione dati **nel Programma di installazione di Visual Studio**. Espandere il **SQL Server** nodo. Fare clic con il pulsante destro del mouse Local DB'istanza di query e **scegliere Nuova query**.
 
        Verrà visualizzata una finestra dell'editor di query.
 

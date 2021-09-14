@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 884f47cfaaf5db679b1d49ce925fe5267c8f1513
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630077"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 Ignora un numero specificato di file di origine in una sequenza di enumerazione.
@@ -38,7 +38,7 @@ HRESULT Skip (
 [in] Numero di file di origine nella sequenza di enumerazione da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce ; in caso contrario, restituisce se non sono `S_OK` presenti altri file di origine da `S_FALSE` ignorare.
+ In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce se non sono presenti altri file di origine da `S_FALSE` ignorare.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

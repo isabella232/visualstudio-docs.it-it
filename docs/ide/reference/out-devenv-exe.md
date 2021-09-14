@@ -1,6 +1,6 @@
 ---
 title: -Out (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando Out devenv per specificare un file in cui archiviare e visualizzare gli errori durante l'esecuzione, l'esecuzione e la chiusura, l'aggiornamento, la compilazione, la ricompilazione, la pulizia o la distribuzione di una soluzione.
+description: Informazioni su come usare l'opzione della riga di comando Out devenv per specificare un file in cui archiviare e visualizzare gli errori durante l'esecuzione, l'esecuzione e l'uscita, l'aggiornamento, la compilazione, la ricompilazione, la pulizia o la distribuzione di una soluzione.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -22,11 +22,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: fbbb33f942bbfbafd2cc720ca436e9e951306249
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628595"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 

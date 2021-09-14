@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c59e66b73767b5ee5c6787fe0155ad1a2345161
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630750"
 ---
 # <a name="basictype"></a>BasicType
 Specifica il tipo di base del simbolo.
@@ -55,42 +55,42 @@ enum BasicType {
 ## <a name="elements"></a>Elementi
 btNoType Non è specificato alcun tipo di base.
 
-btVoid Basic type is a `void` .
+btVoid Basic è un tipo `void` .
 
-btChar Basic type è a `char` (tipo C/C++).
+btChar Basic è un `char` tipo (tipo C/C++).
 
 btWChar Basic è un carattere wide (Unicode) ( `WCHAR` ).
 
 btInt Basic type è `signed int` (tipo C/C++).
 
-btUInt Il tipo basic è `unsigned int` (tipo C/C++).
+btUInt Il tipo Basic è `unsigned int` (tipo C/C++).
 
-btFloat Il tipo Basic è un numero a virgola mobile ( `FLOAT` ).
+btFloat Basic è un numero a virgola mobile ( `FLOAT` ).
 
-Il tipo btBCD Basic è un decimale a codifica binaria ( `BCD` ).
+btBCD Basic è un decimale in codice binario ( `BCD` ).
 
-btBool Basic type è un valore booleano ( `BOOL` ).
+btBool Basic è un tipo booleano ( `BOOL` ).
 
-btLong Basic type è un `long int` (tipo C/C++).
+btLong Basic è un `long int` tipo (tipo C/C++).
 
-btULong Basic type è un `unsigned long int` (tipo C/C++).
+btULong Basic è un `unsigned long int` tipo (tipo C/C++).
 
 btCurrency Basic type is currency.
 
-btDate Basic type is date/time ( `DATE` ).
+btDate Il tipo Basic è data/ora ( `DATE` ).
 
-btVariant Basic type è una struttura di tipo variabile ( `VARIANT` ).
+btVariant Basic è una struttura di tipo variabile ( `VARIANT` ).
 
 btComplex Basic è un numero complesso.
 
-Il tipo btBit Basic è un bit.
+btBit Basic è un bit.
 
-btBSTR Tipo basic è una stringa di base o binaria ( `BSTR` ).
+btBSTR Basic è una stringa di base o binaria ( `BSTR` ).
 
-btHresult Il tipo di base è `HRESULT` .
+btHresult Il tipo Basic è `HRESULT` .
 
 ## <a name="remarks"></a>Commenti
-I valori di questa enumerazione vengono restituiti dal [metodo IDiaSymbol::get_baseType.](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+I valori in questa enumerazione vengono restituiti dal [metodo IDiaSymbol::get_baseType.](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst.h

@@ -1,6 +1,6 @@
 ---
 title: Creare un'applicazione dati semplice tramite ADO.NET
-description: Informazioni su come creare una semplice applicazione da form a dati usando Windows Form ADO.NET in Visual Studio.
+description: Informazioni su come creare una semplice applicazione da form a dati usando Windows Forms e ADO.NET in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -15,17 +15,17 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 506983ffacf846969f6e74fd503344d90180ca91
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631518"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
-Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di una semplice applicazione "forms over data" di Windows Forms usando Visual C# o Visual Basic e ADO.NET.  Tutte le tecnologie dati .NET, inclusi set di dati, LINQ to SQL e Entity Framework, eseguono infine passaggi molto simili a quelli illustrati in questo articolo.
+Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di una semplice applicazione Windows Forms "forms over data" usando Visual C# o Visual Basic e ADO.NET.  Tutte le tecnologie dati .NET, inclusi set di dati, LINQ to SQL e Entity Framework, eseguono infine passaggi molto simili a quelli illustrati in questo articolo.
 
-Questo articolo illustra un modo semplice per ottenere i dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplici e aggiornare il database, è consigliabile usare Entity Framework e data binding per sincronizzare automaticamente i controlli dell'interfaccia utente con le modifiche nei dati sottostanti.
+Questo articolo illustra un modo semplice per ottenere dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplici e aggiornare il database, è consigliabile usare Entity Framework e data binding per sincronizzare automaticamente i controlli dell'interfaccia utente con le modifiche nei dati sottostanti.
 
 > [!IMPORTANT]
 > Per semplificare il codice, non include la gestione delle eccezioni dell'ambiente di produzione.
@@ -36,33 +36,33 @@ Per creare l'applicazione, è necessario disporre di:
 
 - Visual Studio.
 
-- LocalDB di SQL Server Express. Se non si dispone di SQL Server Express Local DB, è possibile installarlo dalla pagina [SQL Server Express download](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- LocalDB di SQL Server Express. Se non si dispone di SQL Server Express Local DB, è possibile installarlo dalla pagina [di SQL Server Express download](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Questo argomento presuppone che si abbia familiarità con le funzionalità di base dell'IDE di Visual Studio e che sia possibile creare un'applicazione form Windows, aggiungere moduli al progetto, inserire pulsanti e altri controlli nei form, impostare le proprietà dei controlli ed eseguire il codice di eventi semplici. Se non si ha familiarità con queste attività, è consigliabile completare l'argomento Introduzione a [Visual C# e Visual Basic](../ide/quickstart-visual-basic-console.md) prima di iniziare questa procedura dettagliata.
+Questo argomento presuppone che si abbia familiarità con le funzionalità di base dell'IDE di Visual Studio e che sia possibile creare un'applicazione form Windows, aggiungere form al progetto, inserire pulsanti e altri controlli nei form, impostare le proprietà dei controlli ed eventi semplici del codice. Se non si ha familiarità con queste attività, è consigliabile completare l'argomento Introduzione a [Visual C# e Visual Basic](../ide/quickstart-visual-basic-console.md) prima di iniziare questa procedura dettagliata.
 
 ## <a name="set-up-the-sample-database"></a>Impostare il database di esempio
 
 Creare il database di esempio seguendo questa procedura:
 
-1. In Visual Studio aprire la **Esplora server** predefinita.
+1. In Visual Studio aprire la **finestra** Esplora server dati.
 
-2. Fare clic con il pulsante **destro del mouse su Connessioni** dati e scegliere Crea SQL Server **database**.
+2. Fare clic con il pulsante destro **del mouse** su Connessioni dati e scegliere Crea nuovo **SQL Server database**.
 
-3. Nella casella **di testo** Nome server immettere **(localdb)\mssqllocaldb**.
+3. Nella casella **di testo Nome** server immettere **(localdb)\mssqllocaldb**.
 
-4. Nella casella di testo New database name (Nome nuovo **database)** **immettere Sales** e quindi scegliere **OK.**
+4. Nella casella **di testo New database name** (Nuovo nome database) immettere **Sales** e quindi scegliere **OK.**
 
      Il database **Sales** vuoto viene creato e aggiunto al nodo Connessioni dati in Esplora server.
 
-5. Fare clic con il pulsante destro **del mouse sulla** connessione dati Sales e scegliere Nuova **query.**
+5. Fare clic con il pulsante destro **del mouse sulla connessione** dati Sales e scegliere Nuova **query**.
 
      Verrà visualizzata una finestra dell'editor di query.
 
-6. Copiare [lo script Sales Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) negli Appunti.
+6. Copiare [lo script Transact-SQL Sales](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) negli Appunti.
 
 7. Incollare lo script T-SQL nell'editor di query e quindi scegliere **il pulsante** Esegui.
 
-     Dopo un breve periodo di tempo, l'esecuzione della query termina e vengono creati gli oggetti di database. Il database contiene due tabelle: Customer e Orders. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere dati quando si esegue l'applicazione che verrà creata. Il database contiene anche quattro stored procedure semplici.
+     Dopo un breve periodo di tempo, l'esecuzione della query viene completata e vengono creati gli oggetti di database. Il database contiene due tabelle: Customer e Orders. Queste tabelle inizialmente non contengono dati, ma è possibile aggiungere dati quando si esegue l'applicazione che si creerà. Il database contiene anche quattro stored procedure semplici.
 
 ## <a name="create-the-forms-and-add-controls"></a>Creare i form e aggiungere i controlli
 
@@ -125,16 +125,16 @@ Creare il database di esempio seguendo questa procedura:
 ## <a name="store-the-connection-string"></a>Archiviare la stringa di connessione
 Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere manualmente la stringa in ogni form, archiviare la stringa nel file *App.config* nel progetto e creare un metodo che restituisca la stringa quando il metodo viene chiamato da qualsiasi form nell'applicazione.
 
-È possibile trovare la stringa di  connessione facendo clic con il pulsante destro del mouse sulla connessione dati Sales **Esplora server** e **scegliendo Proprietà**. Individuare la **proprietà ConnectionString,** quindi usare **CTRL** A , CTRL C per + selezionare  +  e copiare la stringa negli Appunti.
+È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **Sales** in **Esplora server** e scegliendo **Proprietà**. Individuare la **proprietà ConnectionString,** quindi usare **CTRL** A , CTRL C per + selezionare  +  e copiare la stringa negli Appunti.
 
 1. Se si usa C#, in **Esplora soluzioni** espandere  il nodo Proprietà nel progetto e quindi aprire il file **Impostazioni.settings.**
-    Se si usa Visual Basic, in **Esplora soluzioni** fare clic su Mostra tutti i file **,** espandere il nodo My **Project** e quindi aprire il file **Impostazioni.settings.**
+    Se si usa Visual Basic, in **Esplora soluzioni** fare clic su Mostra tutti i file **,** espandere il nodo **Project** e quindi aprire il file **Impostazioni.settings.**
 
 2. Nella **colonna Nome** immettere `connString` .
 
 3. **Nell'elenco Tipo** selezionare **(Stringa di connessione).**
 
-4. **Nell'elenco Ambito** selezionare **Applicazione.**
+4. **Nell'elenco** Ambito selezionare **Applicazione**.
 
 5. Nella colonna **Valore** immettere la stringa di connessione (senza virgolette esterne) e quindi salvare le modifiche.
 
@@ -153,7 +153,7 @@ Quando si esegue l'applicazione, verrà visualizzato il form Navigazione. Il pul
 
 Se si usa C#, in **Esplora soluzioni** aprire **Program.cs** e modificare la riga `Application.Run` nel seguente modo: `Application.Run(new Navigation());`
 
-Se si usa Visual Basic, in **Esplora soluzioni** aprire la  finestra Proprietà,  selezionare la scheda Applicazione e quindi **selezionare SimpleDataApp.Navigation** nell'elenco **Modulo** di avvio.
+Se si usa Visual Basic, in **Esplora soluzioni** aprire la finestra  Proprietà, selezionare  la scheda Applicazione e quindi **selezionare SimpleDataApp.Navigation** nell'elenco Modulo di **avvio.**
 
 #### <a name="create-auto-generated-event-handlers"></a>Creare gestori eventi generati automaticamente
 

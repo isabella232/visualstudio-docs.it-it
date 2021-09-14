@@ -14,29 +14,29 @@ ms.technology: vs-ide-debug
 ms.workload:
 - azure
 ms.openlocfilehash: d28bf31d5a7f7fe6a2bd095a0f96c76cccc35152
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031346"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630804"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Eseguire il debug dei servizi di Azure in Visual Studio
 
-È possibile usare le Visual Studio per eseguire il debug dei servizi di Azure in scenari diversi:
+È possibile usare Visual Studio per eseguire il debug dei servizi di Azure in scenari diversi:
 
 Per eseguire il debug di un'app di produzione ospitata in:
 
-- Servizio app di Azure, usando Visual Studio Enterprise, vedere Eseguire il [debug di app live ASP.NET usando il Snapshot Debugger](../debugger/debug-live-azure-applications.md).
+- Servizio app di Azure, usando Visual Studio Enterprise, vedere Eseguire il debug di app [live ASP.NET usando il Snapshot Debugger](../debugger/debug-live-azure-applications.md).
 
 - Servizio app di Azure o Service Fabric, usando Application Insights, vedere Eseguire il debug di snapshot sulle eccezioni [nelle app .NET.](/azure/application-insights/app-insights-snapshot-debugger)
 
 - Macchina virtuale di Azure o set di scalabilità di macchine virtuali di Azure. Vedere Eseguire il debug in tempo reale ASP.NET di macchine virtuali di Azure e set di scalabilità di macchine virtuali di [Azure Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md).
 
-- servizio Azure Kubernetes, vedere [Eseguire il debug live ASP.NET servizi Azure Kubernetes usando il Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md).
+- servizio Azure Kubernetes, vedere [Eseguire il debug live ASP.NET servizi Azure Kubernetes usando Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md).
 
 Per eseguire il debug remoto:
 
-- ASP.NET in IIS (Servizio app di Azure una macchina virtuale di Azure), vedere [Debug remoto ASP.NET in Azure.](remote-debugging-azure.md)
+- ASP.NET in IIS (Servizio app di Azure o una macchina virtuale di Azure), vedere Remote Debugging ASP.NET on Azure (Debug [remoto in Azure).](remote-debugging-azure.md)
 
 - ASP.NET in Azure Service Fabric, vedere [Eseguire il debug di un'applicazione Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 

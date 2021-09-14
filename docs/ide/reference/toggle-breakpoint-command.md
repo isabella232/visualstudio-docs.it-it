@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 73fb9926e5472e3c27e43c9eef1f0d74b949e06b24f5ddb89e53f877f85558f2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0404840f5aa1859c058391c7398f7c2d1fcd86fd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121356751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628566"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Imposta/Rimuovi punto di interruzione
 Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file.
@@ -49,5 +49,5 @@ Nell'esempio seguente il punto di interruzione corrente viene impostato/rimosso.
 
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

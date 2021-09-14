@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: d05ffcc5140edcf04dd03b591df100831304fc6b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628811"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
 
@@ -39,7 +39,7 @@ Personalizzare la codebase senza progetto con i seguenti file *json*:
 Questi file *json* si trovano in una cartella nascosta denominata *.vs* nella cartella radice della codebase. I file *tasks.vs.json* e *launch.vs.json* vengono creati da Visual Studio all'occorrenza, quando di sceglie il comando **Configura attività** o **Impostazioni per debug e avvio** per un file o una cartella in **Esplora soluzioni**. Questi file *json* sono nascosti in quanto la maggior parte degli utenti preferisce in genere non archiviarli nel controllo del codice sorgente. Tuttavia, se si vuole avere la possibilità di archiviarli nel controllo del codice sorgente, trascinare i file nella radice della codebase, dove sono visibili.
 
 > [!TIP]
-> Per visualizzare i file nascosti in Visual Studio, scegliere il **pulsante Mostra** tutti i file sulla barra Esplora soluzioni barra **degli strumenti.**
+> Per visualizzare i file nascosti in Visual Studio, scegliere **il pulsante Mostra** tutti i file sulla barra Esplora soluzioni barra **degli** strumenti.
 
 ## <a name="define-tasks-with-tasksvsjson"></a>Definire le attività con tasks.vs.json
 
@@ -49,13 +49,13 @@ Questi file *json* si trovano in una cartella nascosta denominata *.vs* nella ca
 
 Viene così creato (o aperto) il file *tasks.vs.json* nella cartella *.vs*. È possibile definire un'attività di compilazione o un'attività arbitraria in questo file, quindi richiamarla usando il nome specificato dal menu di scelta rapida di **Esplora soluzioni**.
 
-Le attività personalizzate possono essere aggiunte a singoli file o a tutti i file di un tipo specifico. Ad esempio, NuGet file di pacchetto possono essere configurati per avere un'attività "Ripristina pacchetti" oppure tutti i file di origine possono essere configurati per avere un'attività di analisi statica, ad esempio un linter per tutti i.js *file.*
+Le attività personalizzate possono essere aggiunte a singoli file o a tutti i file di un tipo specifico. Ad esempio, NuGet file di pacchetto possono essere configurati per avere un'attività *"Ripristina* pacchetti" oppure tutti i file di origine possono essere configurati per avere un'attività di analisi statica, ad esempio un linter per tutti i.jsfile.
 
 ### <a name="define-custom-build-tasks"></a>Definire attività di compilazione personalizzate
 
-Se la codebase usa strumenti di compilazione personalizzati che Visual Studio non riconosce, non è possibile eseguire il codice né eseguirne il debug in Visual Studio se non dopo aver completato alcuni passaggi di configurazione. Visual Studio include *attività di compilazione* in cui è possibile indicare a Visual Studio come compilare, ricompilare e pulire il codice. Il *tasks.vs.jsnel* file dell'attività di compilazione Visual Studio ciclo di sviluppo interno agli strumenti di compilazione personalizzati usati dalla codebase.
+Se la codebase usa strumenti di compilazione personalizzati che Visual Studio non riconosce, non è possibile eseguire il codice né eseguirne il debug in Visual Studio se non dopo aver completato alcuni passaggi di configurazione. Visual Studio include *attività di compilazione* in cui è possibile indicare a Visual Studio come compilare, ricompilare e pulire il codice. Il file di attività di compilazione *tasks.vs.json* Visual Studio ciclo di sviluppo interno agli strumenti di compilazione personalizzati usati dalla codebase.
 
-Si consideri una codebase costituita da un singolo file C# denominato *hello.cs*. Il *makefile per* una codebase di questo tipo potrebbe essere simile al seguente:
+Si consideri una codebase costituita da un singolo file C# denominato *hello.cs*. Il *makefile per* tale codebase potrebbe essere simile al seguente:
 
 <!-- markdownlint-disable MD010 -->
 ```makefile
@@ -76,7 +76,7 @@ bin:
 ```
 <!-- markdownlint-enable MD010 -->
 
-Per un *makefile di questo tipo* che contiene destinazioni di compilazione, pulizia e *ricompilazione,* è possibile definire letasks.vs.jsnel file. Il file contiene tre attività di compilazione per la compilazione, la ricompilazione e la pulizia della codebase, usando NMAKE come strumento di compilazione.
+Per un *makefile di questo tipo* che contiene destinazioni di compilazione, pulizia e ricompilazione, è possibile definire il file *tasks.vs.json* seguente. Il file contiene tre attività di compilazione per la compilazione, la ricompilazione e la pulizia della codebase, usando NMAKE come strumento di compilazione.
 
 ```json
 {
@@ -133,7 +133,7 @@ Quando si seleziona una di queste opzioni, l'attività viene eseguita. L'output 
 
 È possibile definire attività arbitrarie nel file *tasks.vs.json* file, per eseguire qualsiasi operazione desiderata. Ad esempio, è possibile definire un'attività per visualizzare il nome del file attualmente selezionato nella finestra **Output** o per elencare i file in una directory specificata.
 
-L'esempio seguente illustra *tasks.vs.jsfile* che definisce una singola attività. Quando viene richiamata, l'attività visualizza il nome del file con estensione *.js* attualmente selezionato.
+L'esempio seguente illustra un file *tasks.vs.json* che definisce una singola attività. Quando viene richiamata, l'attività visualizza il nome del file con estensione *.js* attualmente selezionato.
 
 ```json
 {
@@ -218,17 +218,17 @@ Questa sezione descrive alcune delle proprietà che è possibile specificare in 
 
 |Macro|Descrizione|
 |-|-|
-|`${env.<VARIABLE>}`| Specifica qualsiasi variabile di ambiente (ad esempio, ${env.PATH}, ${env.COMSPEC} e così via) impostata per il prompt dei comandi per gli sviluppatori. Per altre informazioni, vedere [Prompt dei comandi per gli sviluppatori e PowerShell per sviluppatori.](../ide/reference/command-prompt-powershell.md)|
+|`${env.<VARIABLE>}`| Specifica qualsiasi variabile di ambiente (ad esempio, ${env.PATH}, ${env.COMSPEC} e così via) impostata per il prompt dei comandi per gli sviluppatori. Per altre informazioni, vedere Prompt dei comandi per gli sviluppatori [e PowerShell per sviluppatori.](../ide/reference/command-prompt-powershell.md)|
 |`${workspaceRoot}`| Percorso completo della cartella dell'area di lavoro, ad esempio *C:\sources\hello*|
 |`${file}`| Percorso completo del file o della cartella selezionata per eseguire questa attività, ad esempio *C:\sources\hello\src\hello.js*)|
-|`${relativeFile}`| Percorso relativo del file o della cartella ( ad esempio, *src\hello.js*)|
-|`${fileBasename}`| Nome del file senza percorso o estensione ( ad esempio, *hello*)|
-|`${fileDirname}`| Percorso completo del file, escluso il nome file ( ad *esempio, C:\sources\hello\src*)|
-|`${fileExtname}`| Estensione del file selezionato, ad esempio.js *)*|
+|`${relativeFile}`| Percorso relativo del file o della cartella (ad esempio, *src\hello.js*)|
+|`${fileBasename}`| Nome del file senza percorso o estensione (ad esempio, *hello*)|
+|`${fileDirname}`| Percorso completo del file, escluso il nome file (ad esempio, *C:\sources\hello\src*)|
+|`${fileExtname}`| Estensione del file selezionato (ad esempio,  *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configurare il debug con launch.vs.json
 
-Per configurare i progetti CMake per il debug, vedere [Configurare le sessioni di debug CMake](/cpp/build/configure-cmake-debugging-sessions).
+Per configurare i progetti CMake per il debug, vedere [Configurare le sessioni di debug di CMake.](/cpp/build/configure-cmake-debugging-sessions)
 
 1. Per configurare la codebase per il debug, in **Esplora soluzioni** scegliere il comando **Impostazioni per debug e avvio** dal menu di scelta rapida del file eseguibile.
 
@@ -263,7 +263,7 @@ Per configurare i progetti CMake per il debug, vedere [Configurare le sessioni d
    Quando si sceglie **F5**, il debugger viene avviato e si interrompe in corrispondenza di qualsiasi punto di interruzione già impostato. Tutte le finestre di debug già note sono disponibili e funzionanti.
 
    > [!IMPORTANT]
-   > Per altri dettagli sulle attività di compilazione e debug personalizzate nei progetti di cartelle aperte C++, vedere Supporto open folder per sistemi di compilazione [C++ in Visual Studio](/cpp/build/open-folder-projects-cpp).
+   > Per altri dettagli sulle attività di compilazione e debug personalizzate nei progetti di apri cartella C++, vedere Supporto di Apri cartella per sistemi di compilazione [C++ in Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Specificare gli argomenti per il debug
 
@@ -294,7 +294,7 @@ Quando si salva questo file, il nome della nuova configurazione viene visualizza
 ![Elenco a discesa delle configurazioni di debug](media/customize-debug-configurations.png)
 
 > [!NOTE]
-> La proprietà array inlaunch.vs.jsviene letta da due percorsi di file la directory radice per `configurations`  la &mdash; codebase e la directory con estensione *vs.* In caso di conflitto viene data priorità al valore in *.vs\launch.vs.json*.
+> La `configurations` proprietà array in *launch.vs.json* viene letta da due percorsi di file, la directory radice per la &mdash; codebase e la directory *.vs.* In caso di conflitto viene data priorità al valore in *.vs\launch.vs.json*.
 
 ## <a name="additional-settings-files"></a>File di impostazioni aggiuntivi
 

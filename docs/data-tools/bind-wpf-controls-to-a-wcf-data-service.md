@@ -19,11 +19,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 214975aa03da6181108e2d10046610d1afa20580
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067166"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631571"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 
@@ -63,7 +63,7 @@ Per completare la procedura dettagliata è inoltre consigliabile conoscere già 
 
 ## <a name="create-the-service-project"></a>Creare il progetto di servizio
 
-1. Iniziare questa procedura dettagliata creando un progetto di applicazione Web C# **o Visual Basic ASP.NET web.** Assegnare al progetto **il nome AdventureWorksService**.
+1. Iniziare questa procedura dettagliata creando un progetto di applicazione Web C# o **Visual Basic ASP.NET web.** Assegnare al progetto **il nome AdventureWorksService**.
 
 2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Default.aspx** e scegliere **Elimina**. Questo file non è necessario per la procedura dettagliata.
 
@@ -114,7 +114,7 @@ Creare un servizio dati WCF per esporre i dati nel Entity Data Model a un'applic
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs" id="Snippet1":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb" id="Snippet1":::
 
-     Questo codice aggiorna la **classe AdventureWorksService,** in modo che derivi da un oggetto che opera sulla classe del contesto dell'oggetto <xref:System.Data.Services.DataService%601> nel `AdventureWorksLTEntities` Entity Data Model. Aggiorna inoltre il metodo `InitializeService` per consentire ai client del servizio l'accesso completo in lettura/scrittura all'entità `SalesOrderHeader`.
+     Questo codice aggiorna la **classe AdventureWorksService,** in modo che derivi da un oggetto che opera sulla classe del contesto dell'oggetto nel <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` Entity Data Model. Aggiorna inoltre il metodo `InitializeService` per consentire ai client del servizio l'accesso completo in lettura/scrittura all'entità `SalesOrderHeader`.
 
 2. Compilare il progetto e verificare che non siano presenti errori.
 
@@ -229,7 +229,7 @@ Usare l'oggetto proxy del servizio per caricare i dati di vendita dal servizio. 
 
 ## <a name="navigate-sales-records"></a>Esplorare i record di vendita
 
-Aggiungere codice che consente agli utenti di scorrere i record di vendita usando i **\<** and **>** pulsanti.
+Aggiungere il codice che consente agli utenti di scorrere i record di vendita usando i **\<** and **>** pulsanti .
 
 1. Nella finestra di progettazione fare doppio clic sul **<** pulsante nell'area della finestra.
 
@@ -249,7 +249,7 @@ Aggiungere codice che consente agli utenti di scorrere i record di vendita usand
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet4":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet4":::
 
-## <a name="save-changes-to-sales-records"></a>Salvare le modifiche ai record di vendita
+## <a name="save-changes-to-sales-records"></a>Salvare le modifiche ai record delle vendite
 
 Aggiungere il codice che consente agli utenti di visualizzare e salvare le modifiche ai record delle vendite usando il pulsante **Salva modifiche**:
 
@@ -268,19 +268,19 @@ Compilare ed eseguire l'applicazione per verificare che sia possibile visualizza
 
 1. Scegliere **Compila** soluzione dal menu **Compila**. Verificare che la soluzione venga compilata senza errori.
 
-2. Premere **CTRL** + **F5**.
+2. Premere **CTRL** + **F5.**
 
      Visual Studio avvia il progetto **AdventureWorksService** senza eseguirne il debug.
 
 3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **AdventureWorksSalesEditor**.
 
-4. Nel menu di scelta rapida fare clic con il pulsante destro del mouse in **Debug** e **scegliere Avvia nuova istanza.**
+4. Nel menu di scelta rapida in **Debug** fare clic su **Avvia nuova istanza**.
 
      Verrà eseguita l'applicazione. Verificare gli elementi seguenti:
 
     - Nelle caselle di testo vengono visualizzati campi di dati diversi dal primo record di vendite il cui ID ordine vendite è **71774**.
 
-    - È possibile fare clic sui **>** pulsanti o per spostarsi tra gli altri record di **<** vendita.
+    - È possibile fare clic sui **>** pulsanti o per spostarsi tra altri record di **<** vendita.
 
 5. In uno dei record delle vendite digitare del testo nella casella **Commento**, quindi fare clic su **Salva modifiche**.
 
@@ -294,7 +294,7 @@ Compilare ed eseguire l'applicazione per verificare che sia possibile visualizza
 
 Dopo avere completato questa procedura dettagliata, è possibile eseguire le attività correlate seguenti:
 
-- Imparare a usare la finestra **Origini dati** in Visual Studio per associare i controlli WPF ad altri tipi di origini dati. Per altre informazioni, vedere [Associare controlli WPF a un set di dati.](../data-tools/bind-wpf-controls-to-a-dataset.md)
+- Imparare a usare la finestra **Origini dati** in Visual Studio per associare i controlli WPF ad altri tipi di origini dati. Per altre informazioni, vedere [Associare controlli WPF a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
 - Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per altre informazioni, vedere [Procedura dettagliata: Visualizzazione di dati correlati in un'applicazione WPF.](../data-tools/display-related-data-in-wpf-applications.md)
 

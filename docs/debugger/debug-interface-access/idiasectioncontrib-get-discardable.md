@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f3439d6238231f4afa219fdc07311d7ba19e42d1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139171"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629447"
 ---
 # <a name="idiasectioncontribget_discardable"></a>IDiaSectionContrib::get_discardable
 Recupera un flag che indica se la sezione può essere eliminata.

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Specificare gli eventi di compilazione (Visual Basic)'
-description: Informazioni su come gli eventi di Visual Basic possono essere usati per eseguire script, macro o altre azioni come parte del processo di compilazione.
+description: Informazioni su come usare gli eventi di Visual Basic per eseguire script, macro o altre azioni come parte del processo di compilazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 272fa3bd66f863744986ed5dace44cf8327c08b02dd2e767ebff9e939cc19e65
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121318733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628776"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
 
@@ -118,7 +118,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
    End Sub
    ```
 
-   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto, in genere *\<ProjectName> .publish.* Il secondo argomento è la nuova versione del sistema operativo.
+   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto, in genere *\<ProjectName> .publish*. Il secondo argomento è la nuova versione del sistema operativo.
 
 5. Nel menu **Compila** scegliere **Compila soluzione**.
 
@@ -167,7 +167,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Pagina Compilazione, progettazione Project (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Pagina Pubblica, progettazione Project](../ide/reference/publish-page-project-designer.md)
-- [Finestra di dialogo riga di comando evento pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Pagina Compila, Project Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Pagina Pubblica, Project Designer](../ide/reference/publish-page-project-designer.md)
+- [Finestra di dialogo Riga di comando evento pre-compilazione/Post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md)

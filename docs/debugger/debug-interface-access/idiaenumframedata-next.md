@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 57324a0ec9b82ff0b32f16ebf32f8d3ee9e19fb5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630324"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 Recupera un numero specificato di elementi dati del frame nella sequenza di enumerazione.
@@ -41,7 +41,7 @@ HRESULT Next (
 
  Rgelt
 
-[out] Matrice di oggetti [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) da riempire con gli elementi dati del frame richiesti.
+[out] Matrice di [oggetti IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) da riempire con gli elementi di dati del frame richiesti.
 
  pceltFetched
 

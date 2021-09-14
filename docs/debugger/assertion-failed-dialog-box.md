@@ -24,11 +24,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 58e1e631cef943f28705aa40604303cae8f6a426
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031432"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630959"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
 Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia valore True in un dato punto del programma. Se questa condizione non restituisce True, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata questa finestra di dialogo.

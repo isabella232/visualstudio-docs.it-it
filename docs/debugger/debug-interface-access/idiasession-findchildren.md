@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 13a1bcf4a4d5fed816ef467cdc15c5c6fb974f18
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139147"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629273"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 Recupera tutti gli elementi figlio di un identificatore padre specificato che corrispondono al nome e al tipo di simbolo.
@@ -39,7 +39,7 @@ HRESULT findChildren (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-[in] Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta l'elemento padre. Se questo simbolo padre è una funzione, un modulo o un blocco, i relativi elementi figlio lessicali vengono restituiti in `ppResult` . Se il simbolo padre è un tipo , vengono restituiti i relativi elementi figlio della classe. Se questo parametro è `NULL` , deve essere impostato su o , che restituisce `symtag` `SymTagExe` `SymTagNull` l'ambito globale (.exe file).
+[in] Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta l'elemento padre. Se questo simbolo padre è una funzione, un modulo o un blocco, i relativi elementi figlio lessicali vengono restituiti in `ppResult` . Se il simbolo padre è un tipo , vengono restituiti i relativi elementi figlio della classe. Se questo parametro è , deve essere impostato su o , che `NULL` `symtag` restituisce `SymTagExe` `SymTagNull` l'ambito globale (.exe file).
 
  `symtag`
 

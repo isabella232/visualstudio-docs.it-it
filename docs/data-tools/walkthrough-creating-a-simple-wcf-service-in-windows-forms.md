@@ -1,5 +1,5 @@
 ---
-title: Creare un semplice servizio WCF in Windows Form
+title: Creare un servizio WCF semplice in Windows Form
 description: In questa procedura dettagliata, creare un servizio Windows Communication Foundation (WCF) in Visual Studio, testarlo e quindi accedervi da un'applicazione Windows Forms.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7ccb7f38e3d459a445b7bb7712e705d1af6f3ada
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122066968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631056"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procedura dettagliata: Creare un semplice servizio WCF in Windows Form
 
@@ -54,10 +54,10 @@ Questa procedura dettagliata illustra come creare un semplice servizio Windows C
 
 3. Digitare **wcf service library** nella casella di ricerca della pagina Crea un **nuovo** progetto. Selezionare il modello C# o Visual Basic libreria di **servizi WCF** e quindi fare clic su **Avanti.**
 
-   ![Creare un nuovo progetto libreria di servizi WCF Visual Studio 2019](media/vs-2019/create-new-wcf-service-library.png)
+   ![Creare un nuovo progetto libreria di servizi WCF in Visual Studio 2019](media/vs-2019/create-new-wcf-service-library.png)
 
    > [!TIP]
-   > Se non viene visualizzato alcun modello, potrebbe essere necessario installare il componente **Windows Communication Foundation** di Visual Studio. Scegliere **Installa altri strumenti e funzionalità per** aprire Programma di installazione di Visual Studio. Scegliere la **scheda Singoli** componenti, scorrere verso il basso fino ad **Attività di** sviluppo e quindi selezionare Windows **Communication Foundation.** Fare clic su **Modifica**.
+   > Se non viene visualizzato alcun modello, potrebbe essere necessario installare il **componente Windows Communication Foundation** di Visual Studio. Scegliere **Installa altri strumenti e funzionalità per** aprire Programma di installazione di Visual Studio. Scegliere la **scheda Singoli componenti,** scorrere verso il basso fino ad **Attività di** sviluppo e quindi selezionare Windows **Communication Foundation.** Fare clic su **Modifica**.
 
 4. Nella pagina **Configura il nuovo progetto** fare clic su **Crea.**
 

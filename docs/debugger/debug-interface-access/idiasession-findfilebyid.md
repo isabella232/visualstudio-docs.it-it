@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e34d25ea59b20eebc986106123070dd1d23b9dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122066400"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629256"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 Recupera un file di origine in base all'identificatore del file di origine.

@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di codice di esempio HTML e CSS | Microsoft Docs
-description: Trovare il codice di esempio HTML e CSS usato con un articolo di avvio rapido sul debug. Gli errori presenti in base alla progettazione nella guida introduttiva sono corretti in questo articolo.
+description: Trovare il codice di esempio HTML e CSS usato con un articolo di avvio rapido sul debug. Gli errori presenti per progettazione nella guida introduttiva sono stati risolti in questo articolo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,19 +17,19 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 00dca00e6e90d879a2804fb039aa78d684a31174bc3c8c2599cdd8be941be23d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6bfe174e5f68d86247c5007882eebec855057069
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345679"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630780"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Eseguire il debug del codice di esempio HTML e CSS
 
-Il codice in questo argomento è il file di esempio per [Avvio rapido: Eseguire il debug di HTML e CSS.](../debugger/quickstart-debug-html-and-css.md) Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.
+Il codice in questo argomento è il file di esempio [per Guida introduttiva: Eseguire il debug di HTML e CSS.](../debugger/quickstart-debug-html-and-css.md) Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.
 
 ## <a name="sample-code"></a>Codice di esempio
-Il codice HTML seguente viene usato nel \<body> tag nella guida introduttiva.
+Il codice HTML seguente viene usato nel \<body> tag nella Guida introduttiva.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"

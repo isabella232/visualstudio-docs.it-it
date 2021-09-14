@@ -21,19 +21,19 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 1299810fa015f9e54d418209e13d366ff47bfb33
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628470"
 ---
 # <a name="use-visual-studio-search"></a>Usare Visual Studio ricerca
 
-L Visual Studio ide (Integrated Development Environment) include molti menu, opzioni e funzionalità, che possono essere difficili da ricordare. La Visual Studio di ricerca è un'unica casella di ricerca che consente agli sviluppatori di trovare menu e opzioni IDE, eseguendo anche ricerche nel codice. Se non si ha esperienza con Visual Studio o uno sviluppatore esperto, questa funzionalità offre un modo rapido per eseguire ricerche tra le funzionalità ide e il codice.
+L Visual Studio ide (Integrated Development Environment) include molti menu, opzioni e funzionalità, che possono essere difficili da ricordare. La Visual Studio di ricerca è un'unica casella di ricerca che consente agli sviluppatori di trovare menu e opzioni IDE, eseguendo anche ricerche nel codice. Se non si ha esperienza con Visual Studio o uno sviluppatore esperto, questa funzionalità offre un modo rapido per eseguire ricerche tra le funzionalità dell'IDE e il codice.
 
-Usare il **tasto di** scelta rapida CTRL Q per accedere alla casella di ricerca o fare clic sulla casella di input Visual Studio Cerca, che si trova accanto alla +  barra dei menu per impostazione predefinita:
+Usare il **tasto di** scelta rapida CTRL Q per accedere alla casella di ricerca o fare clic sulla casella di input Visual Studio Cerca, che si trova accanto alla barra dei menu per +  impostazione predefinita:
 
-:::image type="content" source="media/visual-studio-search-cropped.png" alt-text="Visual Studio di ricerca" lightbox="media/visual-studio-search.png":::
+:::image type="content" source="media/visual-studio-search-cropped.png" alt-text="Visual Studio casella di ricerca" lightbox="media/visual-studio-search.png":::
 
 > [!NOTE]
 > Il comando eseguito da Visual Studio ricerca è ed è possibile che questa funzionalità venga definita ricerca rapida o `Window.QuickLaunch` avvio rapido.
@@ -51,7 +51,7 @@ A differenza di altre funzionalità di ricerca, ad esempio Trova nei file o Cerc
 
 È possibile usare la casella Visual Studio ricerca per trovare voci di menu e comandi. Ad esempio, cercare *sol pulito per* trovare ed eseguire rapidamente il comando Pulisci soluzione. I risultati della ricerca offrono anche un promemoria della posizione in cui trovare questo comando nei menu, come illustrato nello screenshot seguente:
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Cercare Visual Studio di menu e comandi":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Cercare Visual Studio comandi e voci di menu":::
 
 Infine, è possibile cercare finestre o pannelli che potrebbero essere stati chiusi accidentalmente. Ad esempio, cercare *test per* trovare e aprire la finestra Esplora test:
 

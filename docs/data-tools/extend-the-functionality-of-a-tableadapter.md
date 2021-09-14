@@ -19,11 +19,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 29c7d9924d822cabdb28c9d3048e457cd7b88d64
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631398"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estendere la funzionalità di un TableAdapter
 
@@ -41,7 +41,7 @@ Nell'esempio seguente si presuppone che un oggetto TableAdapter denominato `Cust
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Per creare una classe parziale per un oggetto TableAdapter
 
-1. Aggiungere una nuova classe al progetto scegliendo Aggiungi classe dal menu **Project** e **selezionando Aggiungi classe**.
+1. Aggiungere una nuova classe al progetto dal **menu** Project e selezionando **Aggiungi classe**.
 
 2. Denominare la classe `CustomersTableAdapterExtended`.
 

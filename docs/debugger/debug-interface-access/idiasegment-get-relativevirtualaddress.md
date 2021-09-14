@@ -1,5 +1,5 @@
 ---
-description: Recupera l'indirizzo virtuale relativo (RVA) dell'inizio della sezione.
+description: Recupera l'indirizzo RVA (Relative Virtual Address) dell'inizio della sezione.
 title: IDiaSegment::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a00183c422de17dcf46ec1bec763c7dedb0c0524
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081437"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629297"
 ---
 # <a name="idiasegmentget_relativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
-Recupera l'indirizzo virtuale relativo (RVA) dell'inizio della sezione.
+Recupera l'indirizzo RVA (Relative Virtual Address) dell'inizio della sezione.
 
 ## <a name="syntax"></a>Sintassi
 

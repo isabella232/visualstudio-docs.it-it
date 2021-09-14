@@ -18,24 +18,24 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 55b6a64953944bacd8fcda73a9edeab00a99afc5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631632"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Aggiungere il codice nei TableAdapter di applicazioni a più livelli
-È possibile estendere la funzionalità di un TableAdapter creando un file di classe parziale per l'oggetto TableAdapter e aggiungendo codice al tableadapter invece di aggiungere codice al file *DatasetName.DataSet.Designer.* Le classi parziali consentono di dividere il codice per una classe specifica tra più file fisici. Per altre informazioni, vedere [Parziale](/dotnet/visual-basic/language-reference/modifiers/partial) o [parziale (tipo).](/dotnet/csharp/language-reference/keywords/partial-type)
+È possibile estendere la funzionalità di un oggetto TableAdapter creando un file di classe parziale per il TableAdapter e aggiungendo il codice (anziché aggiungere codice al file *DatasetName.DataSet.Designer).* Le classi parziali consentono di dividere il codice per una classe specifica tra più file fisici. Per altre informazioni, vedere [Parziale](/dotnet/visual-basic/language-reference/modifiers/partial) o [parziale (tipo).](/dotnet/csharp/language-reference/keywords/partial-type)
 
-Il codice che definisce un TableAdapter viene generato ogni volta che vengono apportate modifiche all'oggetto TableAdapter nel set di dati. Questo codice viene generato anche quando vengono apportate modifiche durante l'esecuzione di una procedura guidata che modifica la configurazione dell'oggetto TableAdapter. Per impedire l'eliminazione del codice durante la rigenerazione di un TableAdapter, aggiungere codice al file di classe parziale dell'oggetto TableAdapter.
+Il codice che definisce un TableAdapter viene generato ogni volta che vengono apportate modifiche al TableAdapter nel set di dati. Questo codice viene generato anche quando vengono apportate modifiche durante l'esecuzione di qualsiasi procedura guidata che modifica la configurazione del TableAdapter. Per impedire l'eliminazione del codice durante la rigenerazione di un oggetto TableAdapter, aggiungere codice al file di classe parziale del TableAdapter.
 
-Per impostazione predefinita, dopo aver separato il set di dati e il codice TableAdapter, il risultato è un file di classe discreto in ogni progetto. Il progetto originale ha un file denominato *DatasetName.Designer.vb* (o *DatasetName.Designer.cs)* che contiene il codice TableAdapter. Il progetto designato nella proprietà **Dataset Project** contiene un file denominato *DatasetName.DataSet.Designer.vb* (o *DatasetName.DataSet.Designer.cs)* che contiene il codice del set di dati.
+Per impostazione predefinita, dopo aver separato il codice del set di dati e del TableAdapter, il risultato è un file di classe discreto in ogni progetto. Il progetto originale ha un file denominato *DatasetName.Designer.vb* (o *DatasetName.Designer.cs)* che contiene il codice TableAdapter. Il progetto designato nella proprietà **Dataset Project** contiene un file denominato *DatasetName.DataSet.Designer.vb* (o *DatasetName.DataSet.Designer.cs)* che contiene il codice del set di dati.
 
 > [!NOTE]
 > Quando si separano i dataset e gli oggetti TableAdapter (impostando la proprietà **Progetto DataSet**), le classi parziali del dataset presenti nel progetto non vengono spostate automaticamente. Le classi di set di dati parziali esistenti devono essere spostate manualmente nel progetto di set di dati.
 
 > [!NOTE]
-> Il set di dati fornisce funzionalità per la generazione <xref:System.Data.DataTable.ColumnChanging> di gestori eventi e quando è necessaria la <xref:System.Data.DataTable.RowChanging> convalida. Per altre informazioni, vedere [Aggiungere la convalida a un set di dati a più livelli.](../data-tools/add-validation-to-an-n-tier-dataset.md)
+> Il set di dati fornisce funzionalità per la generazione <xref:System.Data.DataTable.ColumnChanging> e i gestori eventi quando è necessaria la <xref:System.Data.DataTable.RowChanging> convalida. Per altre informazioni, vedere [Aggiungere la convalida a un set di dati a più livelli.](../data-tools/add-validation-to-an-n-tier-dataset.md)
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -45,13 +45,13 @@ Per impostazione predefinita, dopo aver separato il set di dati e il codice Tabl
 
 2. Fare doppio clic sul file *xsd* per aprire il **Progettazione DataSet**.
 
-3. Fare clic con il pulsante destro del mouse sull'oggetto TableAdapter a cui si vuole aggiungere il codice e **quindi scegliere Visualizza codice.**
+3. Fare clic con il pulsante destro del mouse sul TableAdapter a cui si vuole aggiungere il codice e quindi **scegliere Visualizza codice**.
 
      Viene creata una classe parziale che viene aperta nell'editor di codice.
 
 4. Aggiungere codice all'interno della dichiarazione di classe parziale.
 
-5. Nell'esempio seguente viene illustrato dove aggiungere codice a `CustomersTableAdapter` in `NorthwindDataSet` :
+5. Nell'esempio seguente viene illustrato dove aggiungere il codice `CustomersTableAdapter` a in `NorthwindDataSet` :
 
     ```vb
     Partial Public Class CustomersTableAdapter

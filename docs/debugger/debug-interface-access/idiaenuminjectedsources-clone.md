@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 605a3cbd6e3721ad08b319521b8081c557fce2c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630305"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -35,7 +35,7 @@ HRESULT Clone (
 #### <a name="parameters"></a>Parametri
  `ppenum`
 
-[out] Restituisce un [oggetto IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) che contiene un duplicato dell'enumeratore. Le origini inserite non vengono duplicate, ma solo l'enumeratore.
+[out] Restituisce un [oggetto IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) che contiene un duplicato dell'enumeratore. Le origini iniettate non vengono duplicate, ma solo l'enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6d42cbd379550d8abb739aafacca5698f164048f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151509"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628764"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Invertire le espressioni condizionali e gli operatori AND/OR condizionali
 
@@ -41,7 +41,7 @@ Questo refactoring si applica a:
 
     ![Screenshot dell'opzione condizionale Inverti.](media/invert-conditional.png)
 
-    ![Screenshot della finestra di dialogo && con || Opzione.](media/invert-logical-operator.png)
+    ![Screenshot del comando Sostituisci && con || Opzione.](media/invert-logical-operator.png)
 
 ## <a name="see-also"></a>Vedi anche
 

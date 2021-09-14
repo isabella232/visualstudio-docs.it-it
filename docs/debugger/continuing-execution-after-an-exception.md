@@ -29,14 +29,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: baed5da414077ee5d81482f092e697ddb608e420
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121726"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630864"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
-Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostazione predefinita verrà visualizzato **l'helper** eccezioni . Se l'helper  eccezioni  è stato disabilitato nella finestra di dialogo Opzioni , verrà  visualizzato l'Assistente eccezioni **(C#** o Visual Basic) o la finestra di dialogo Eccezione (C++).
+Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostazione predefinita verrà visualizzato **l'helper** eccezioni . Se l'helper  eccezioni  è stato disabilitato nella finestra di dialogo Opzioni, verrà visualizzato  l'Assistente eccezioni **(C#** o Visual Basic) o la finestra di dialogo Eccezione (C++).
 
  Quando viene **visualizzato l'helper** eccezioni, è possibile provare a risolvere il problema che ha causato l'eccezione.
 

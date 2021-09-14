@@ -1,7 +1,7 @@
 ---
 title: Set di regole di sicurezza per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole di sicurezza per l'Visual Studio di codice legacy. Vedere le descrizioni delle regole incentrate sui potenziali problemi di sicurezza.
+description: Informazioni sul set di regole di sicurezza per Visual Studio'analisi del codice legacy. Vedere le descrizioni delle regole incentrate sui potenziali problemi di sicurezza.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
@@ -12,11 +12,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 26aaec700d308e73249401e215fc1b1b93a87735
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122162045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631823"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Set di regole di sicurezza per codice gestito
 

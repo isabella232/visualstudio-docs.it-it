@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: da217ac40830700bf48968a9ed29821f88f190ec
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074820"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629771"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Espone i dettagli della posizione di base e degli offset di memoria del modulo o dell'immagine.
@@ -46,7 +46,7 @@ Alcuni flussi di debug (XDATA, PDATA) contengono copie dei dati archiviati anche
 Ottenere questa interfaccia chiamando `QueryInterface` su un [oggetto IDiaEnumDebugStreamData.](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) Si noti che non tutti i flussi di debug supportano `IDiaImageData` l'interfaccia . Ad esempio, attualmente solo i flussi XDATA e PDATA supportano `IDiaImageData` l'interfaccia .
 
 ## <a name="example"></a>Esempio
-Questo esempio cerca in tutti i flussi di debug qualsiasi flusso che supporta `IDiaImageData` l'interfaccia . Se viene trovato un flusso di questo tipo, vengono visualizzate alcune informazioni su tale flusso.
+In questo esempio viene eseguita la ricerca in tutti i flussi di debug di qualsiasi flusso che supporta `IDiaImageData` l'interfaccia . Se viene trovato un flusso di questo tipo, vengono visualizzate alcune informazioni sul flusso.
 
 ```C++
 void ShowImageData(IDiaSession *pSession)

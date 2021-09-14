@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 69368bf24161834bcc7a92737291c5da36434a9e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629034"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Rappresenta un file di origine.
@@ -38,13 +38,13 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaSourceFile` .
 |[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Recupera un valore di chiave integer semplice univoco per questa immagine.|
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Recupera il nome del file di origine.|
 |[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Recupera il tipo di checksum.|
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumeratore dei compilazioni con numeri di riga che fanno riferimento a questo file.|
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumeratore dei compilandi con numeri di riga che fanno riferimento a questo file.|
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Recupera i byte di checksum.|
 
 ## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia chiamando i [metodi IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) o [IDiaEnumSourceFiles::Next.](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) Per informazioni dettagliate, vedere l'esempio.
+Ottenere questa interfaccia chiamando i metodi [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) o [IDiaEnumSourceFiles::Next.](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) Per informazioni dettagliate, vedere l'esempio.
 
 ## <a name="example"></a>Esempio
 Questa funzione visualizza i nomi di tutti i file di origine che contribuiscono alla tabella specificata.

@@ -18,11 +18,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 5f08a8c6d441a8b38f367ecfbdab95e1eabc113a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631475"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 
@@ -48,7 +48,7 @@ Eseguire la **Configurazione guidata TableAdapter** per creare o modificare ogge
 
 ![Configurazione guidata adattatore tabella raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
-Se si trascina un nuovo TableAdapter dalla Casella degli strumenti quando il **Progettazione DataSet** è attivo, viene avviata la procedura guidata e viene richiesto di specificare l'origine dati a cui deve connettersi l'oggetto TableAdapter. Nella pagina successiva la procedura guidata chiede quale tipo di comandi deve usare per comunicare con il database, SQL istruzioni o stored procedure. Questa operazione non verrà visualizzata se si sta configurando un TableAdapter già associato a un'origine dati.
+Se si trascina un nuovo TableAdapter dalla Casella degli strumenti quando il **Progettazione DataSet** è attivo, viene avviata la procedura guidata e viene richiesto di specificare l'origine dati a cui deve connettersi l'oggetto TableAdapter. Nella pagina successiva, la procedura guidata chiede quale tipo di comandi deve usare per comunicare con il database, SQL istruzioni o stored procedure. Questa operazione non verrà visualizzata se si sta configurando un TableAdapter già associato a un'origine dati.
 
 - È possibile creare una nuova stored procedure nel database sottostante se si dispone delle autorizzazioni corrette per il database. Se non si dispone di queste autorizzazioni, questa non sarà un'opzione.
 
@@ -94,7 +94,7 @@ Nell'esempio seguente viene illustrato come chiamare una query aggiuntiva denomi
 
 4. Nella schermata **Scegliere un tipo di** comando selezionare uno dei metodi seguenti per recuperare i dati dal database:
 
-    - **Usare SQL istruzioni consente** di digitare un'istruzione SQL per selezionare i dati dal database.
+    - **Usare SQL istruzioni** consente di digitare un'istruzione SQL per selezionare i dati dal database.
 
     - **Crea nuovo stored procedure** consente di fare in modo che la procedura guidata crei un nuovo stored procedure (nel database) in base all'istruzione SELECT specificata.
 
@@ -116,7 +116,7 @@ Nell'esempio seguente viene illustrato come chiamare una query aggiuntiva denomi
 - Specificare una query che esegua l'attività desiderata, ad esempio `SELECT COUNT(*) AS CustomerCount FROM Customers` .
 
     > [!NOTE]
-    > Il **trascinamento di** un oggetto Query **direttamente Progettazione DataSet** crea un metodo che restituisce solo un valore scalare (singolo). Mentre la query o stored procedure selezionata potrebbe restituire più di un singolo valore, il metodo creato dalla procedura guidata restituisce un solo valore. Ad esempio, la query potrebbe restituire la prima colonna della prima riga dei dati restituiti.
+    > Il **trascinamento di** un oggetto Query **direttamente Progettazione DataSet** crea un metodo che restituisce solo un valore scalare (singolo). Mentre la query o stored procedure selezionata potrebbe restituire più di un singolo valore, il metodo creato dalla procedura guidata restituisce solo un singolo valore. Ad esempio, la query potrebbe restituire la prima colonna della prima riga dei dati restituiti.
 
 ## <a name="see-also"></a>Vedi anche
 

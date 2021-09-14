@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bacfab75a01ae0923c4fce7c696eabdfbfd572622678d3436baf41cfd0974e71
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f8afda829cadbaaea693ebd12b30d6dd3bb7c91c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345356"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630551"
 ---
 # <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
 Recupera l'allineamento dell'immagine corrente.

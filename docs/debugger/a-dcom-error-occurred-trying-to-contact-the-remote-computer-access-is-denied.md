@@ -25,16 +25,16 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 53d8bbb4a4d053e4120cacfb1d44ca14295a3d22
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052486"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630996"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
 Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nelle situazioni seguenti:
 
-- Il debugger è impostato sulla  **modalità di compatibilità nativa** o la modalità di compatibilità gestita è selezionata nella pagina Strumenti > opzioni **> debug**
+- Il debugger è impostato sulla **modalità di compatibilità nativa** o la modalità **di** compatibilità gestita è selezionata nella pagina Strumenti > opzioni **> debug**
 
 - Si esegue il debug di codice C++ (C++ /CLI) gestito.
 

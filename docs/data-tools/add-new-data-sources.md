@@ -17,11 +17,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: a0d93a2c80afe7863490f0af5578684d699a5980
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067179"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631614"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 
@@ -45,7 +45,7 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *data source
 > [!NOTE]
 > Se non si usano funzionalità di data binding, set di dati, Entity Framework, LINQ to SQL, WCF o SharePoint, il concetto di "origine dati" non è applicabile. È sufficiente connettersi direttamente al database usando gli oggetti SQLCommand e comunicare direttamente con il database.
 
-È possibile creare e modificare origini dati usando la **Configurazione** guidata origine dati in un'applicazione Windows Form o Windows Presentation Foundation dati. Per Entity Framework, creare prima le classi di entità e quindi avviare la procedura guidata selezionando Project Aggiungi nuova origine dati (descritta più dettagliatamente  >   più avanti in questo articolo).
+È possibile creare e modificare le origini dati usando la **Configurazione** guidata origine dati in un'applicazione Windows Form o Windows Presentation Foundation dati. Per Entity Framework, creare prima le classi di entità e quindi avviare la procedura guidata selezionando **Project** Aggiungi nuova origine dati (descritta più dettagliatamente più  >   avanti in questo articolo).
 
 ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -88,7 +88,7 @@ Per creare un modello Entity Framework come origine dati:
 
 ## <a name="data-source-for-a-service"></a>Origine dati per un servizio
 
-Per creare un'origine dati da un servizio, eseguire la **Configurazione** guidata origine dati e scegliere il **tipo di** origine dati Servizio. Si tratta solo di  un collegamento alla Aggiungi riferimento al servizio, a cui è possibile accedere anche facendo clic con il pulsante destro del mouse sul progetto **in** Esplora soluzioni e selezionando Aggiungi riferimento **al servizio**.
+Per creare un'origine dati da un servizio, eseguire la **Configurazione** guidata origine dati e scegliere il **tipo di** origine dati Servizio. Si tratta solo di un collegamento alla **finestra** di dialogo Aggiungi riferimento al servizio, a cui è possibile accedere anche facendo clic con il pulsante destro del mouse sul progetto **in** Esplora soluzioni e selezionando Aggiungi riferimento al **servizio**.
 
 Quando si crea un'origine dati da un servizio, Visual Studio un riferimento al servizio al progetto. Visual Studio crea anche oggetti proxy che corrispondono agli oggetti restituiti dal servizio. Ad esempio, un servizio che restituisce un set di dati è rappresentato nel progetto come set di dati. un servizio che restituisce un tipo specifico è rappresentato nel progetto come tipo restituito.
 
@@ -105,7 +105,7 @@ Quando si crea un'origine dati da un servizio, Visual Studio un riferimento al s
 
 ## <a name="data-source-for-an-object"></a>Origine dati per un oggetto
 
-È possibile creare un'origine dati da qualsiasi oggetto che  espone una o più proprietà pubbliche eseguendo la Configurazione guidata origine dati e quindi selezionando il **tipo** di origine dati Oggetto. Tutte le proprietà pubbliche di un oggetto vengono visualizzate nei **Data source** finestra. Se si usa Entity Framework e si è generato un modello, qui si trovano le classi di entità che sono le origini dati per l'applicazione.
+È possibile creare un'origine dati da qualsiasi oggetto che  espone una o più proprietà pubbliche eseguendo la Configurazione guidata origine dati e quindi selezionando il **tipo** di origine dati Oggetto. Tutte le proprietà pubbliche di un oggetto vengono visualizzate nei **Data source** finestra. Se si usa Entity Framework e si è generato un modello, qui sono disponibili le classi di entità che sono le origini dati per l'applicazione.
 
 Nella pagina **Seleziona oggetti dati** espandere i nodi nella visualizzazione albero per individuare gli oggetti a cui si vuole eseguire l'associazione. La visualizzazione albero contiene nodi per il progetto e per gli assembly e altri progetti a cui fa riferimento il progetto.
 
@@ -117,9 +117,9 @@ Se si desidera eseguire l'associazione a un oggetto in un assembly  o in un prog
 > [!NOTE]
 > Per supportare il trascinamento della data binding, gli oggetti che implementano <xref:System.ComponentModel.ITypedList> l'interfaccia o devono avere un costruttore <xref:System.ComponentModel.IListSource> predefinito. In caso contrario, Visual Studio non è possibile creare un'istanza dell'oggetto origine dati e viene visualizzato un errore quando si trascina l'elemento nell'area di progettazione.
 
-## <a name="data-source-for-a-sharepoint-list"></a>Origine dati per un SharePoint dati
+## <a name="data-source-for-a-sharepoint-list"></a>Origine dati per un elenco SharePoint dati
 
-È possibile creare un'origine dati da un  SharePoint di dati eseguendo la Configurazione guidata origine dati e selezionando SharePoint **tipo** di origine dati. SharePoint espone i dati tramite WCF Data Services, quindi la creazione di un'origine SharePoint dati è uguale alla creazione di un'origine dati da un servizio. Se si **seleziona l'elemento** SharePoint nella Configurazione guidata origine dati, viene visualizzata la finestra di dialogo **Aggiungi riferimento al servizio in** cui ci si connette al servizio dati SharePoint puntando al server SharePoint dati.  Questa operazione richiede SharePoint SDK.
+È possibile creare un'origine dati da un  SharePoint di dati eseguendo la Configurazione guidata origine dati e selezionando SharePoint **tipo** di origine dati. SharePoint espone i dati tramite WCF Data Services, quindi la creazione di un'origine SharePoint dati è uguale alla creazione di un'origine dati da un servizio. Selezionando **l'SharePoint** elemento nella  Configurazione guidata origine dati viene aperta la finestra di dialogo **Aggiungi riferimento al servizio, in** cui ci si connette al servizio dati SharePoint puntando al server SharePoint dati. Questa operazione richiede SharePoint SDK.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6fa1e2690fe14463bb0e86770221c9cb7fcfb6b6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629856"
 ---
 # <a name="idiaframedataget_lengthparams"></a>IDiaFrameData::get_lengthParams
-Recupera il numero di byte di parametri inseriti nello stack.
+Recupera il numero di byte dei parametri inseriti nello stack.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ HRESULT get_lengthParams (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di byte di parametri.
+[out] Restituisce il numero di byte dei parametri.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

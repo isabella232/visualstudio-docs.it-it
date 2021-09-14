@@ -1,6 +1,6 @@
 ---
 title: 'ASP.NET Debug: requisiti di sistema | Microsoft Docs'
-description: Esaminare i requisiti software e di sicurezza ASP.NET debug locale, in cui Visual Studio e l'app Web vengono eseguiti nello stesso computer, e il debug remoto.
+description: Esaminare i requisiti software e di sicurezza ASP.NET debug locale, in cui Visual Studio e l'app Web vengono eseguiti nello stesso computer e il debug remoto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 ms.openlocfilehash: 6de11302ea67e27e46348638701172abc5e0964b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630965"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Requisiti di sistema per il debug di ASP.NET
 In questo argomento vengono descritti i requisiti software e di sicurezza per gli scenari di debug di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :
@@ -43,7 +43,7 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
  Per eseguire il [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] debug del processo di lavoro (ospitato da un pool di applicazioni), è necessario disporre dell'autorizzazione per eseguire il debug di tale processo. Per impostazione predefinita, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le applicazioni precedenti a IIS 6.0 vengono eseguite come utente **ASPNET.** In IIS 6.0 e IIS 7.0 l'account **NETWORK SERVICE** è l'impostazione predefinita. Se il processo di lavoro è in esecuzione come **ASPNET** o come **SERVIZIO DI RETE**, per eseguirne il debug è necessario disporre dei privilegi di amministratore.
 
  > [!IMPORTANT]
- > A partire Windows Server 2008 R2, è consigliabile usare [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
+ > A partire da Windows Server 2008 R2, è consigliabile usare [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
 
  Il nome del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [Procedura: individuare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
 

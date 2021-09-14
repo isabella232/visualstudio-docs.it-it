@@ -10,13 +10,13 @@ ms.topic: how-to
 ms.date: 02/21/2021
 ms.author: ghogen
 ms.openlocfilehash: 6dd3a1bf0dd7b40f101f95e74c18dee071b4cfc6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122162032"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631740"
 ---
-# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Distribuire un ASP.NET Core contenitore in Servizio app di Azure usando Visual Studio
+# <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Distribuire un contenitore ASP.NET Core in Servizio app di Azure usando Visual Studio
 
 Questa esercitazione illustra l'uso di Visual Studio pubblicare l'applicazione Web ASP.NET Core contenitore in un [Servizio app di Azure](/azure/app-service). Servizio app di Azure è un servizio appropriato per un'app Web a contenitore singolo ospitata in Azure.
 
@@ -45,7 +45,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 4. Assegnare un nome alla nuova applicazione (o accettare quello predefinito), quindi selezionare **OK**.
 5. Selezionare **Applicazione Web.**
 6. Spuntare la casella di controllo **Abilita Supporto Docker**.
-7. Selezionare il tipo **di contenitore Linux** e fare clic su **OK.** Windows contenitori non sono supportati per la distribuzione Servizio app di Azure come contenitore.
+7. Selezionare il tipo **di contenitore Linux** e fare clic su **OK.** Windows contenitori non sono supportati per la distribuzione in Servizio app di Azure come contenitore.
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. Nella finestra iniziale di Visual Studio scegliere **Crea un nuovo progetto**.
@@ -67,7 +67,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
    ![Screenshot della finestra di dialogo di pubblicazione](media/deploy-app-service/publish-app-service-linux-1.png)
 
-   Per pubblicare solo in un Servizio app di Azure senza usare Registro Azure Container, scegliere Crea **nuovo** e fare clic su **Pubblica.**
+   Per pubblicare solo in un Servizio app di Azure senza usare Registro Azure Container, scegliere **Crea nuovo** e fare clic su **Pubblica.**
 
 1. Verificare di aver eseguito l'accesso con l'account associato alla sottoscrizione di Azure e scegliere un nome univoco, una sottoscrizione, un gruppo di risorse, un piano di hosting e un registro contenitori (se applicabile) oppure accettare le impostazioni predefinite.
 
@@ -83,7 +83,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
 1. Il profilo di pubblicazione viene salvato con tutti i dettagli selezionati, ad esempio il gruppo di risorse e il registro contenitori.
 
-1. Per eseguire nuovamente la distribuzione con  lo stesso  profilo di  pubblicazione, usare il pulsante Pubblica, il pulsante Pubblica  nella finestra Attività di pubblicazione Web oppure fare clic con il pulsante destro del mouse sul progetto **in Esplora soluzioni** e scegliere l'elemento Pubblica nel menu di scelta rapida.
+1. Per eseguire nuovamente la distribuzione con  lo stesso profilo di pubblicazione, usare il pulsante Pubblica, il pulsante Pubblica nella  finestra Attività di pubblicazione Web oppure fare clic con il pulsante destro del mouse sul progetto **in Esplora soluzioni** e scegliere l'elemento Pubblica dal menu di scelta rapida.  
 :::moniker-end
 :::moniker range=">=vs-2019"
 1. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Pubblica**.
@@ -95,7 +95,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
    ![Screenshot della scheda Destinazione specifica della pubblicazione guidata](media/deploy-app-service/publish-app-service-windows.png)
 
-1. Se non è stato eseguito l'accesso all'account Azure giusto con la sottoscrizione che si vuole usare, accedere usando il pulsante in alto a sinistra nella **finestra Pubblica.**
+1. Se non si è connessi all'account Azure giusto con la sottoscrizione che si vuole usare, accedere usando il pulsante in alto a sinistra nella **finestra Pubblica.**
 
 1. È possibile usare un servizio app esistente o crearne uno nuovo facendo clic sul collegamento **Create new Servizio app di Azure (Crea nuovo** servizio). Trovare il servizio app esistente nella visualizzazione albero espandendo  il gruppo di risorse oppure modificare l'impostazione Visualizza in **Tipo** di risorsa per ordinare in base al tipo.
 
@@ -121,7 +121,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
 1. Il profilo di pubblicazione viene salvato con tutti i dettagli selezionati, ad esempio il gruppo di risorse e il servizio app.
 
-1. Per eseguire nuovamente la distribuzione con  lo stesso  profilo di  pubblicazione, usare il pulsante Pubblica, il pulsante Pubblica  nella finestra Attività di pubblicazione Web oppure fare clic con il pulsante destro del mouse sul progetto **in Esplora soluzioni** e scegliere l'elemento Pubblica nel menu di scelta rapida.
+1. Per eseguire nuovamente la distribuzione con  lo stesso profilo di pubblicazione, usare il pulsante Pubblica, il pulsante Pubblica nella  finestra Attività di pubblicazione Web oppure fare clic con il pulsante destro del mouse sul progetto **in Esplora soluzioni** e scegliere l'elemento Pubblica dal menu di scelta rapida.  
 :::moniker-end
 
 ## <a name="view-container-settings"></a>Visualizzare le impostazioni del contenitore
@@ -134,11 +134,11 @@ Nel [portale di Azure](https://portal.azure.com)è possibile aprire il servizio 
 
 Da qui è possibile visualizzare le informazioni sul contenitore, visualizzare o scaricare i log o configurare la distribuzione continua. Vedere [Servizio app di Azure Ci/CD per la distribuzione continua.](/azure/app-service/containers/app-service-linux-ci-cd)
 
-## <a name="clean-up-resources"></a>Eseguire la pulizia delle risorse
+## <a name="clean-up-resources"></a>Pulire le risorse
 
-Per rimuovere tutte le risorse di Azure associate a questa esercitazione, eliminare il gruppo di risorse usando il [portale di Azure](https://portal.azure.com). Per trovare il gruppo di risorse associato a un'applicazione Web pubblicata, scegliere Visualizza altro Windows'attività pubblicazione Web e quindi  >    >  scegliere l'icona a forma di ingranaggio. Verrà **visualizzata** la scheda Pubblica, che contiene il gruppo di risorse.
+Per rimuovere tutte le risorse di Azure associate a questa esercitazione, eliminare il gruppo di risorse usando il [portale di Azure](https://portal.azure.com). Per trovare il gruppo di risorse associato a un'applicazione Web pubblicata, scegliere Visualizza altro Windows'attività di pubblicazione Web e quindi  >    >  scegliere l'icona a forma di ingranaggio. Verrà **visualizzata** la scheda Pubblica, che contiene il gruppo di risorse.
 
-Nel riquadro portale di Azure scegliere **Gruppi di risorse** e selezionare il gruppo di risorse per aprire la relativa pagina dei dettagli. Verificare che si tratta del gruppo di risorse corretto, quindi scegliere **Rimuovi gruppo di risorse,** digitare il nome e scegliere **Elimina.**
+Nella finestra portale di Azure scegliere **Gruppi di risorse** e selezionare il gruppo di risorse per aprire la relativa pagina dei dettagli. Verificare che si tratta del gruppo di risorse corretto, quindi scegliere **Rimuovi gruppo di risorse,** digitare il nome e scegliere **Elimina.**
 
 ## <a name="next-steps"></a>Passaggi successivi
 

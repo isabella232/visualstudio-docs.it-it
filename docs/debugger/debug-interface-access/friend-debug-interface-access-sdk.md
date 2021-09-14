@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bf377f4a7e8602f037f35de15bf330484f869be
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630594"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (Debug Interface Access SDK)
 Le classi Friend e le funzioni Friend sono identificate da `SymTagFriend` simboli. Sono elementi figlio dei tipi definiti dall'utente padre e hanno una proprietà [IDiaSymbol::get_classParent.](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)

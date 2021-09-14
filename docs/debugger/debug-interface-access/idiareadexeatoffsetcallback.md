@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d8ca962425742304a215512abd10b7aed755feb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134297"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629502"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Consente a un'applicazione client di fornire byte di un file eseguibile come specificato dalla posizione del file.
@@ -38,7 +38,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Legge il numero specificato di byte a partire dall'offset specificato da un file eseguibile.|
 
 ## <a name="remarks"></a>Commenti
- L'applicazione client implementa questa interfaccia per fornire i byte del file eseguibile usando un offset assoluto nel file dell'eseguibile. Per usare un indirizzo virtuale relativo, implementare [l'interfaccia IDiaReadExeAtRVACallback.](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+ L'applicazione client implementa questa interfaccia per fornire i byte del file eseguibile usando un offset assoluto nel file eseguibile. Per usare un indirizzo virtuale relativo, implementare [l'interfaccia IDiaReadExeAtRVACallback.](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Questo metodo viene implementato dall'applicazione client e passato al metodo [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) come metodo alternativo per la lettura del file.

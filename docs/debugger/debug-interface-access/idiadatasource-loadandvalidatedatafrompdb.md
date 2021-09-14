@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a3d09b96f835b84399742a461b404bc4b75ddc0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630498"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Apre e verifica che il file di database di programma (con estensione pdb) corrisponda alle informazioni sulla firma fornite e prepara il file con estensione pdb come origine dati di debug.
@@ -50,15 +50,15 @@ HRESULT loadAndValidateDataFromPdb (
 
 `age`
 
-[in] Valore di età da verificare. L'età non corrisponde necessariamente a un valore di ora noto, ma viene usata per determinare se un file con estensione pdb non è sincronizzato con un file .exe corrispondente.
+[in] Valore di età da verificare. L'età non corrisponde necessariamente ad alcun valore di ora noto, ma viene usata per determinare se un file con estensione pdb non è sincronizzato con un file .exe corrispondente.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati i possibili valori restituiti per questo metodo.
+In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati i valori restituiti possibili per questo metodo.
 
 |Valore|Descrizione|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Impossibile aprire il file o il formato del file non è valido.|
-|E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
+|E_PDB_FORMAT|Si è tentato di accedere a un file con un formato obsoleto.|
 |E_PDB_INVALID_SIG|La firma non corrisponde.|
 |E_PDB_INVALID_AGE|L'età non corrisponde.|
 |E_INVALIDARG|Parametro non valido.|
@@ -69,7 +69,7 @@ Un file con estensione pdb contiene sia i valori di firma che i valori di età. 
 
 Per caricare un file con estensione pdb senza convalida, usare il [metodo IDiaDataSource::loadDataFromPdb.](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
 
-Per accedere al processo di caricamento dei dati (tramite un meccanismo di callback), usare il metodo [IDiaDataSource::loadDataForExe.](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+Per ottenere l'accesso al processo di caricamento dei dati (tramite un meccanismo di callback), usare il [metodo IDiaDataSource::loadDataForExe.](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 
 Per caricare un file con estensione pdb direttamente dalla memoria, usare il [metodo IDiaDataSource::loadDataFromIStream.](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
 

@@ -19,11 +19,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 40a964f6b5d21f2e5a601cd81d33fafbdd030189
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052694"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631235"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra set di dati
 I set di dati che contengono tabelle di dati correlate utilizzano oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire record correlati l'uno <xref:System.Data.DataRelation> dall'altro. L'aggiunta di tabelle correlate ai set di dati tramite la Configurazione guidata origine dati o la **Progettazione DataSet**, crea e configura automaticamente <xref:System.Data.DataRelation> l'oggetto .

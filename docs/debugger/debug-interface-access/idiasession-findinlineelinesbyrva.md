@@ -1,5 +1,5 @@
 ---
-description: IDiaSession::findInlineeLinesByRVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e contenute nell'indirizzo virtuale relativo specificato.
+description: IDiaSession::findInlineeLinesByRVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e contenute nell'indirizzo RVA (Relative Virtual Address) specificato.
 title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 1bb42c5d1ffed49c8bff3a6bc23f20f3cb9c86d5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629219"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
-Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni che sono inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'indirizzo virtuale relativo (RVA) specificato.
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e contenute all'interno dell'indirizzo RVA (Relative Virtual Address) specificato.
 
 ## <a name="syntax"></a>Sintassi
 

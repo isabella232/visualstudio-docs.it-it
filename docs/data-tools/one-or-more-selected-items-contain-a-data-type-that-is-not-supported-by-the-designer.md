@@ -12,15 +12,15 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 55402288d52f6f4b5eeac41efbb15d9f164ff5cd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075151"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631248"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
 
-Uno o più elementi trascinati da **Esplora server** o **Esplora database in** **O/R Designer** contengono un tipo di dati non supportato da Progettazione **O/R,** ad esempio i tipi [CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types)definiti dall'utente.
+Uno o più elementi trascinati da **Esplora server** o **Esplora database in** **O/R Designer** contengono un tipo di dati non supportato da **O/R Designer,** ad esempio i tipi [CLR](/dotnet/framework/data/adonet/sql/clr-user-defined-types)definiti dall'utente .
 
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
 

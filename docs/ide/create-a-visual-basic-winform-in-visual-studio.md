@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ba22da795a0a94033d252f82a48989b3c24f22e8
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: 85318331f7359400c1428af9047791e6c5f3079f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398639"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628830"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creare un'app Windows Forms in Visual Studio con Visual Basic
 
@@ -73,7 +73,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** scegliere il modello Windows Forms App **(.NET Framework)** per Visual Basic.
+1. Nella finestra **Create a new project (Crea un** nuovo progetto) scegliere il modello Windows Forms App **(.NET Framework) per** Visual Basic.
 
    Se si preferisce, è possibile perfezionare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Forms App* nella casella di ricerca. Scegliere quindi **Visual Basic** dall'elenco Lingua e quindi **scegliere** Windows dall'elenco Piattaforma.  
 
@@ -84,7 +84,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Scegliere quindi il carico di lavoro **Sviluppo per desktop .NET** nel programma di installazione di Visual Studio.
+   > Successivamente, nel Programma di installazione di Visual Studio scegliere il carico di **lavoro Sviluppo per desktop .NET.**
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >

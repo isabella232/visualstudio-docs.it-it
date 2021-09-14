@@ -1,5 +1,5 @@
 ---
-description: Recupera il controllo di ridondanza ciclico (CRC) delle informazioni di rilocazione per la sezione .
+description: Recupera il controllo di ridondanza ciclico (CRC) delle informazioni di rilocazione per la sezione.
 title: IDiaSectionContrib::get_relocationsCrc | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 79a2f719b5994a7ffa0718b03723414ced19fd1a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122044470"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629382"
 ---
 # <a name="idiasectioncontribget_relocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
-Recupera il controllo di ridondanza ciclico (CRC) delle informazioni di rilocazione per la sezione .
+Recupera il controllo di ridondanza ciclico (CRC) delle informazioni di rilocazione per la sezione.
 
 ## <a name="syntax"></a>Sintassi
 

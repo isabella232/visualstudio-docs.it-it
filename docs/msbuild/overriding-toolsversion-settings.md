@@ -1,6 +1,6 @@
 ---
 title: Override delle impostazioni ToolsVersion | Microsoft Docs
-description: Informazioni su diversi modi in cui è possibile modificare o eseguire l'override del valore del set MSBuild strumenti per progetti e soluzioni.
+description: Informazioni su diversi modi in cui è possibile modificare o sostituire il valore del set MSBuild strumenti per progetti e soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,11 +15,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bcb1307714b33e87a886cef18dd97e3d6000e0c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108422"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628416"
 ---
 # <a name="override-toolsversion-settings"></a>Override delle impostazioni ToolsVersion
 
@@ -33,13 +33,13 @@ ms.locfileid: "122108422"
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Eseguire l'override delle impostazioni di ToolsVersion di progetti e soluzioni nelle compilazioni da riga di comando
 
- Anche se i progetti Visual Studio vengono in genere compilati con la versione di ToolsVersion specificata nel file di progetto, è possibile usare l'opzione `-ToolsVersion` (o `-tv`) della riga di comando per eseguire l'override del valore e compilare tutti i progetti e le dipendenze tra progetti con un set di strumenti diverso. Esempio:
+ Anche se i progetti Visual Studio vengono in genere compilati con la versione di ToolsVersion specificata nel file di progetto, è possibile usare l'opzione `-ToolsVersion` (o `-tv`) della riga di comando per eseguire l'override del valore e compilare tutti i progetti e le dipendenze tra progetti con un set di strumenti diverso. Ad esempio:
 
 ```cmd
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ```
 
- Nell'esempio seguente tutti i progetti vengono compilati usando ToolsVersion 12.0. Vedere tuttavia la sezione [Ordine di precedenza](#order-of-precedence) più avanti in questo argomento.
+ Nell'esempio seguente tutti i progetti vengono compilati usando ToolsVersion 12.0. Vedere tuttavia la sezione Ordine [di precedenza](#order-of-precedence) più avanti in questo argomento.
 
  Quando si usa l'opzione `-tv` della riga di comando, è possibile usare facoltativamente la proprietà `$(ProjectToolsVersion)` nei progetti singoli per compilarli con un valore ToolsVersion diverso dagli altri progetti della soluzione.
 
@@ -118,7 +118,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     2. Versione predefinita degli strumenti del file *MSBuild.exe.config*.
 
-    3. Versione predefinita degli strumenti nel Registro di sistema. Per altre informazioni, vedere [Configurazioni del set di strumenti standard e personalizzate](../msbuild/standard-and-custom-toolset-configurations.md).
+    3. Versione predefinita degli strumenti nel Registro di sistema. Per altre informazioni, vedere [Configurazioni standard e personalizzate del set di strumenti.](../msbuild/standard-and-custom-toolset-configurations.md)
 
 6. Se la variabile di ambiente `MSBUILDLEGACYDEFAULTTOOLSVERSION` non è impostata, vengono usati i passaggi seguenti:
 
@@ -135,4 +135,4 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-- [Configurazioni del set di strumenti standard e personalizzate](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)

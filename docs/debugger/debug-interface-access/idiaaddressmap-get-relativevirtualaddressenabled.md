@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a6c43531706fe1de3163d0bb69c56c66f8133fb9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630545"
 ---
 # <a name="idiaaddressmapget_relativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Indica se il calcolo e l'uso di indirizzi virtuali relativi (RVA) sono abilitati.
@@ -43,7 +43,7 @@ HRESULT get_relativeVirtualAddressEnabled (
 ## <a name="remarks"></a>Commenti
  Gli RVA sono abilitati se i segmenti sono stati caricati inizialmente da un file PDB. L'uso di RVA può essere temporaneamente disabilitato chiamando il metodo [IDiaAddressMap::p ut_relativeVirtualAddressEnabled.](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)
 
- È anche possibile stabilire nuove intestazioni di immagine chiamando il metodo [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) seguito da una chiamata al metodo per consentire l'uso degli RVA usando le nuove intestazioni di `put_relativeVirtualAddressEnabled` immagine.
+ È anche possibile stabilire nuove intestazioni di immagine chiamando il metodo [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) seguito da una chiamata al metodo per abilitare l'uso degli RVA usando le nuove intestazioni di `put_relativeVirtualAddressEnabled` immagine.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

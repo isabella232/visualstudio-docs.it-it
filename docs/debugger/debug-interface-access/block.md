@@ -18,11 +18,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c0fd63382495e87925df8f6f19f9824aad250f5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129510"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630755"
 ---
 # <a name="block"></a>Blocca
 Ogni blocco di codice è identificato da un `SymTagBlock` simbolo. I simboli di blocco vengono usati per identificare gli ambiti annidati all'interno delle funzioni.

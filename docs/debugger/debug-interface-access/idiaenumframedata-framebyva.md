@@ -1,5 +1,5 @@
 ---
-description: Restituisce un frame in base all'indirizzo virtuale.
+description: Restituisce un frame in base all'indirizzo virtuale (VA).
 title: IDiaEnumFrameData::frameByVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c713ea86baad9529b9dbca4ee2e07f2dd5d2b7e3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113736"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630353"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
-Restituisce un frame in base all'indirizzo virtuale.
+Restituisce un frame in base all'indirizzo virtuale (VA).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ HRESULT frameByVA(
 
  frame
 
-[out] Restituisce un [oggetto IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta il frame contenente l'indirizzo fornito.
+[out] Restituisce un [oggetto IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta il frame che contiene l'indirizzo fornito.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se nessun dato del frame corrisponde all'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.

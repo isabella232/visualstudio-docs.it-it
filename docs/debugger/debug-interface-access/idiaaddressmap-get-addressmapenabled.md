@@ -1,5 +1,5 @@
 ---
-description: Indica se è stata stabilita una mappa indirizzi per una sessione specifica.
+description: Indica se è stata stabilita una mappa degli indirizzi per una sessione specifica.
 title: IDiaAddressMap::get_addressMapEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 592beea4cd85ad14b878886e0cbd8c94ad4d88eb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081690"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630557"
 ---
 # <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
-Indica se è stata stabilita una mappa indirizzi per una sessione specifica.
+Indica se è stata stabilita una mappa degli indirizzi per una sessione specifica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,9 +41,9 @@ HRESULT get_addressMapEnabled (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- I postprocessori eseguibili a volte aggiornano il file eseguibile. DIA contiene un meccanismo per supportare la conversione dei simboli nel nuovo layout.
+ I postprocessori eseguibili talvolta aggiornano il file eseguibile. DIA contiene un meccanismo per supportare la conversione dei simboli nel nuovo layout.
 
- Le applicazioni client possono impostare la mappa indirizzi per una sessione specifica ottenendo l'interfaccia [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) dall'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) e chiamando il metodo [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) seguito da una chiamata al metodo [IDiaAddressMap::p ut_addressMapEnabled.](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) Il `get_addressMapEnabled` metodo restituisce i risultati della chiamata al metodo `put_addressMapEnabled` .
+ Le applicazioni client possono impostare la mappa degli indirizzi per una determinata sessione ottenendo l'interfaccia [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) dall'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) e chiamando il metodo [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) seguito da una chiamata al metodo [IDiaAddressMap::p ut_addressMapEnabled.](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) Il `get_addressMapEnabled` metodo restituisce i risultati della chiamata al metodo `put_addressMapEnabled` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

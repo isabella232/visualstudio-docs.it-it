@@ -1,5 +1,5 @@
 ---
-description: Recupera un enumeratore di compilazioni con numeri di riga che fanno riferimento a questo file.
+description: Recupera un enumeratore di compilandi con numeri di riga che fanno riferimento a questo file.
 title: IDiaSourceFile::get_compilands | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 88afe3bbaaa9fb7f07822ffd8690c4f040bcd896
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629039"
 ---
 # <a name="idiasourcefileget_compilands"></a>IDiaSourceFile::get_compilands
-Recupera un enumeratore di compilazioni con numeri di riga che fanno riferimento a questo file.
+Recupera un enumeratore di compilandi con numeri di riga che fanno riferimento a questo file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ HRESULT get_compilands (
 #### <a name="parameters"></a>Parametri
  `ppRetVal`
 
-[out] Restituisce un [oggetto IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) che contiene un elenco di tutti i compilazioni con numeri di riga che fanno riferimento a questo file.
+[out] Restituisce un [oggetto IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) che contiene un elenco di tutti i compilandi con numeri di riga che fanno riferimento a questo file.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

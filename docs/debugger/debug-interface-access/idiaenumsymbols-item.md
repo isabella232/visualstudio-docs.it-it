@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: db097b023bacfb6719355b246622f9bccda1e595457dd24386803e5fe00f7e9e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: edeccffd92749ac7f00ea6f866a37e933eb499c6
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455087"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630029"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 Recupera un simbolo tramite un indice.

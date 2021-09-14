@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a47a77766489bbc99441cfdb95a25e4473cbcc8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630095"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
 Recupera un file di origine tramite un indice.
@@ -36,7 +36,7 @@ HRESULT Item (
 #### <a name="parameters"></a>Parametri
  index
 
-[in] Indice [dell'oggetto IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) da recuperare. L'indice è compreso nell'intervallo da 0 a -1, dove viene restituito dal `count` `count` metodo [IDiaEnumSourceFiles::get_Count.](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)
+[in] Indice [dell'oggetto IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) da recuperare. L'indice è compreso nell'intervallo da 0 a -1, dove viene restituito dal metodo `count` `count` [IDiaEnumSourceFiles::get_Count.](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)
 
  sourceFile
 

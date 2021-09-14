@@ -15,17 +15,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 917919fbb4fc81b00f7f7e9f5600ab8017a5623a
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398377"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628518"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi
 
 Ora si è pronti per completare gli altri quattro metodi. È possibile copiare e incollare questo codice, ma se si desidera ottenere il massimo vantaggio da questa esercitazione, digitare il codice e utilizzare IntelliSense.
 
-Con questo codice si aggiungono funzionalità ai pulsanti aggiunti in precedenza. Senza questo codice i pulsanti non eseguono alcuna operazione. I pulsanti utilizzano il codice nei relativi eventi <xref:System.Windows.Forms.Control.Click> (la casella di controllo utilizza l'evento <xref:System.Windows.Forms.CheckBox.CheckedChanged>) per eseguire operazioni diverse quando si attivano i controlli. Ad esempio, l'evento (o ), che si attiva quando si sceglie il pulsante Cancella l'immagine, cancella l'immagine corrente impostandone la proprietà `clearButton_Click` `ClearButton_Click` **Image** su **Null** (o, **niente).**  Ogni evento nel codice include commenti che spiegano l'azione eseguita dal codice.
+Con questo codice si aggiungono funzionalità ai pulsanti aggiunti in precedenza. Senza questo codice i pulsanti non eseguono alcuna operazione. I pulsanti utilizzano il codice nei relativi eventi <xref:System.Windows.Forms.Control.Click> (la casella di controllo utilizza l'evento <xref:System.Windows.Forms.CheckBox.CheckedChanged>) per eseguire operazioni diverse quando si attivano i controlli. Ad esempio, l'evento (o ), che si attiva quando si sceglie il pulsante Cancella immagine, cancella l'immagine corrente impostandone la proprietà `clearButton_Click` `ClearButton_Click` **Image** su **Null** (o, **niente).**  Ogni evento nel codice include commenti che spiegano l'azione eseguita dal codice.
 
 > [!TIP]
 > Come procedura consigliata, commentare sempre il codice. I commenti contengono informazioni destinate a una persona ed è consigliabile aggiungerli per rendere comprensibile il codice. Tutto ciò che si trova in una riga di commento viene ignorato dall'app. In C# si commenta una riga digitando due barre all'inizio (//) e in Visual Basic si commenta una riga iniziando con una virgoletta singola (').

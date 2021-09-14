@@ -18,15 +18,15 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 894583846c5e9a8843fbf9abeaa449b7b548abb2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631536"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 
-La **finestra di dialogo Configura** riferimento al servizio consente di configurare il comportamento Windows servizi WCF (Communication Foundation).
+La **finestra di dialogo Configura** riferimento al servizio consente di configurare il comportamento dei Windows Communication Foundation (WCF).
 
 Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare clic con il pulsante destro del mouse su un riferimento al servizio in **Esplora soluzioni** e scegliere **Configura riferimento a servizio**. È anche possibile accedere alla finestra di dialogo facendo clic sul pulsante **Avanzate** nella **finestra di dialogo Aggiungi riferimento al servizio**.
 
@@ -48,7 +48,7 @@ Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare
 
 **Indirizzo**
 
-Aggiorna l'indirizzo Web in cui un riferimento al servizio cerca un servizio. Durante lo sviluppo, ad esempio, il servizio può essere ospitato in un server di sviluppo e successivamente spostato in un server di produzione, richiedendo una modifica dell'indirizzo.
+Aggiorna l'indirizzo Web in cui un riferimento al servizio cerca un servizio. Ad esempio, durante lo sviluppo, il servizio può essere ospitato in un server di sviluppo e successivamente spostato in un server di produzione, richiedendo una modifica dell'indirizzo.
 
 > [!NOTE]
 > L'elemento Address non è disponibile quando viene visualizzata la finestra di dialogo **Configura riferimento a servizio** dalla **finestra di dialogo Aggiungi riferimento al servizio**.
@@ -66,7 +66,7 @@ Determina se i metodi del servizio WCF vengono chiamati in modo sincrono (impost
 
 **Genera operazioni basate su attività**
 
-Quando si scrive codice asincrono, questa opzione consente di sfruttare i vantaggi della Task Parallel Library (TPL) introdotta con .NET 4. Vedere [Task Parallel Library (TPL).](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
+Quando si scrive codice asincrono, questa opzione consente di sfruttare il Task Parallel Library (TPL) introdotto con .NET 4. Vedere [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
 
 **Genera sempre contratti di messaggio**
 
@@ -82,19 +82,19 @@ Specifica il tipo di raccolta dizionario per un client WCF. Il tipo predefinito 
 
 **Riutilizza tipi in assembly di riferimento**
 
-Determina se un client WCF tenta di riutilizzare ciò che esiste già negli assembly di riferimento anziché generare nuovi tipi quando un servizio viene aggiunto o aggiornato. Per impostazione predefinita, questa opzione è selezionata.
+Determina se un client WCF tenta di riutilizzare ciò che esiste già negli assembly a cui si fa riferimento invece di generare nuovi tipi quando un servizio viene aggiunto o aggiornato. Per impostazione predefinita, questa opzione è selezionata.
 
 **Riutilizza tipi in tutti gli assembly di riferimento**
 
-Se questa opzione è selezionata, tutti i tipi **nell'elenco Assembly a cui si fa riferimento** vengono riutilizzati, se possibile. Questa opzione è selezionata per impostazione predefinita.
+Quando questa opzione è selezionata, tutti i tipi nell'elenco **Assembly a cui si fa** riferimento vengono riutilizzati, se possibile. Questa opzione è selezionata per impostazione predefinita.
 
 **Riutilizza tipi negli assembly di riferimento specificati**
 
-Se questa opzione è selezionata, vengono riutilizzati solo i tipi selezionati **nell'elenco** Assembly a cui si fa riferimento .
+Quando questa opzione è selezionata, vengono riutilizzati solo i tipi selezionati **nell'elenco Assembly a** cui si fa riferimento.
 
 **Elenco Assembly di riferimento**
 
-Contiene un elenco di assembly a cui si fa riferimento per il progetto o il sito Web. Quando si seleziona **Riutilizza tipi negli assembly a cui si fa riferimento specificati**, è possibile selezionare o deselezionare singoli assembly.
+Contiene un elenco di assembly a cui si fa riferimento per il progetto o il sito Web. Quando si seleziona **Riutilizza tipi negli assembly a cui si fa riferimento specificati,** è possibile selezionare o cancellare singoli assembly.
 
 **Aggiungi riferimento Web**
 
@@ -104,7 +104,7 @@ Visualizza la **finestra di dialogo Aggiungi riferimento Web**.
 > Questa opzione deve essere usata solo per i progetti che hanno come destinazione la versione 2.0 del .NET Framework.
 >
 > [!NOTE]
-> Il **pulsante Aggiungi riferimento Web** è disponibile solo quando la finestra **di** dialogo Configura riferimento al servizio viene visualizzata dalla finestra Aggiungi riferimento al servizio **di dialogo.**
+> Il **pulsante Aggiungi riferimento Web** è disponibile solo quando la **finestra** di dialogo Configura riferimento al servizio viene visualizzata dalla finestra di dialogo Aggiungi riferimento al servizio **.**
 
 ## <a name="see-also"></a>Vedi anche
 

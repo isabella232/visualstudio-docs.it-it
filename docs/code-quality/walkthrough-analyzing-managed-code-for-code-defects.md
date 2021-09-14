@@ -14,11 +14,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: b93e0cb2a3b74fe26b60094eb74d010e0b1f77ad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122162006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631799"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procedura dettagliata: Usare l'analisi statica del codice per trovare i difetti del codice
 
@@ -28,7 +28,7 @@ Questo articolo illustra il processo di uso dell'analisi legacy per analizzare g
 
 ## <a name="create-a-class-library"></a>Creare una libreria di classi
 
-1. Aprire Visual Studio e creare un nuovo progetto dal modello **Libreria di classi (.NET Framework).**
+1. Aprire Visual Studio e creare un nuovo progetto dal modello Libreria **di classi (.NET Framework).**
 
 1. Assegnare al progetto **il nome CodeAnalysisManagedDemo**.
 

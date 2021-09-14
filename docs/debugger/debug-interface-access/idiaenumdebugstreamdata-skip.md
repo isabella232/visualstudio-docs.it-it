@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6275c370e7eb7569555fd72af25a6244ba87af7f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074979"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630420"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 Ignora un numero specificato di record in una sequenza enumerata.
@@ -38,7 +38,7 @@ HRESULT Skip (
 [in] Numero di record da ignorare nella sequenza enumerata.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce ; in caso contrario, restituisce se non sono `S_OK` presenti altri record da `S_FALSE` ignorare.
+ In caso di esito positivo, restituisce ; in caso contrario, restituisce se `S_OK` non sono presenti altri record da `S_FALSE` ignorare.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

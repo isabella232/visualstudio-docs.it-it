@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a52467ce6436703387df6055ae8d65daca56181f2dbad8c7f47929e35020b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9619796bad01d9aba51026166819e5668743e02d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121345729"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630690"
 ---
 # <a name="cv_call_e"></a>CV_call_e
 Specifica la convenzione di chiamata per una funzione.
@@ -44,13 +44,13 @@ typedef enum CV_call_e {
 ## <a name="elements"></a>Elementi
 CV_CALL_NEAR_C specifica una convenzione di chiamata di funzione usando un push da destra a sinistra. La funzione chiamante cancella lo stack.
 
-CV_CALL_NEAR_FAST specifica una convenzione di chiamata di funzione usando un push quasi da sinistra a destra con registri. La funzione chiamata usa la somma dei byte dei parametri per cancellare lo stack.
+CV_CALL_NEAR_FAST specifica una convenzione di chiamata di funzione che usa un push da sinistra a destra con registri. La funzione chiamata usa la somma dei byte dei parametri per cancellare lo stack.
 
-CV_CALL_NEAR_STD specifica una convenzione di chiamata di funzione usando una chiamata quasi standard (push da destra a sinistra).
+CV_CALL_NEAR_STD specifica una convenzione di chiamata di funzione usando una chiamata standard vicina (push da destra a sinistra).
 
-CV_CALL_NEAR_SYS specifica una convenzione di chiamata di funzione che usa una chiamata di sistema vicina.
+CV_CALL_NEAR_SYS specifica una convenzione di chiamata di funzione usando una chiamata di sistema vicina.
 
-CV_CALL_THISCALL specifica una convenzione di chiamata di funzione usando `this` call ( `this` puntatore passato nel registro).
+CV_CALL_THISCALL specifica una convenzione di chiamata di funzione usando `this` la chiamata ( `this` puntatore passato nel registro).
 
 CV_CALL_CLRCALL specifica una convenzione di chiamata di funzione usata da Common Language Runtime (CLR) (nota anche come convenzione di chiamata di codice gestito).
 

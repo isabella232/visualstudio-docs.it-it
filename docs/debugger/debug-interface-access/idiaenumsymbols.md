@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f8578ca439d32dbaae13356b0f76fb890d2d5ff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113611"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629999"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Enumera i vari simboli contenuti nell'origine dati.
@@ -56,10 +56,10 @@ Ottenere questa interfaccia chiamando i metodi seguenti:
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)
 
 ## <a name="example"></a>Esempio
-In questo esempio viene illustrato come ottenere l'interfaccia e quindi utilizzare tale enumerazione per elencare i tipi `IDiaEnumSymbols` definiti dall'utente (UDT).
+In questo esempio viene illustrato come ottenere l'interfaccia e quindi usare tale enumerazione per elencare i tipi `IDiaEnumSymbols` definiti dall'utente.
 
 > [!NOTE]
-> `CDiaBSTR` è una classe che esegue il wrapping di un oggetto e gestisce automaticamente la liberatura della stringa quando la creazione di istanze `BSTR` esce dall'ambito.
+> `CDiaBSTR` è una classe che esegue il wrapping di un oggetto e gestisce automaticamente la liberatura della stringa quando la creazione di `BSTR` un'istanza esce dall'ambito.
 
 ```C++
 void ShowUDTs(IDiaSymbol *pGlobals)

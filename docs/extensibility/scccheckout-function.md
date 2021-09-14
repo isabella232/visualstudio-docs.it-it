@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6168b2683f0201be2a4b140428b10fa9946bccf3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144509"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628878"
 ---
 # <a name="scccheckout-function"></a>Funzione SccCheckout
 Dato un elenco di nomi di file completi, questa funzione li estrazione nell'unità locale. Il commento si applica a tutti i file estratti. L'argomento comment può essere una `null` stringa.
@@ -72,7 +72,7 @@ SCCRTN SccCheckout (
 
 |Valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|L'estrazione ha avuto esito positivo.|
+|SCC_OK|L'estrazione è riuscita.|
 |SCC_E_FILENOTCONTROLLED|Il file selezionato non è sotto il controllo del codice sorgente.|
 |SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di problemi di connessione. È consigliabile eseguire un nuovo tentativo.|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|

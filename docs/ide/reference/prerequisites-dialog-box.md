@@ -15,11 +15,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 78d5f4f00a81fccf573e69797b9d528ee61ffdc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628583"
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisiti (finestra di dialogo)
 
@@ -48,7 +48,7 @@ I componenti dei prerequisiti che sono visualizzati nella finestra di dialogo **
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Con questo pacchetto vengono installati gli elementi seguenti:<br /><br /> -   .NET Framework versioni 2.0, 3.0 e 3.5.<br />-   Supporto per tutte le versioni di .NET Framework nei sistemi operativi a 32 bit (x86) e a 64 bit (x64).<br />-   Language Pack per ciascuna versione di .NET Framework installata con il pacchetto.<br />-   Service Pack per .NET Framework 2.0 e 3.0.<br /><br /> .NET Framework 3.0 è incluso in Windows Vista e .NET Framework 3.5 è incluso in Visual Studio. .NET Framework 3.5 è necessario per tutti i progetti Visual Basic e C# che vengono compilati per i sistemi operativi a 32 bit e per i quali il framework di destinazione è impostato su **.NET Framework 3.5**, oltre che per i progetti Visual Basic e C# compilati per i sistemi operativi a 64 bit. IA64 non è supportato. Si noti che per impostazione predefinita, i progetti Visual Basic e C# vengono compilati per qualsiasi architettura della CPU. Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di destinazione](../../ide/visual-studio-multi-targeting-overview.md) e [Distribuire i prerequisiti per le applicazioni a 64 bit](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Con questo pacchetto vengono installati gli elementi seguenti:<br /><br /> -   .NET Framework versioni 2.0, 3.0 e 3.5.<br />-   Supporto per tutte le versioni di .NET Framework nei sistemi operativi a 32 bit (x86) e a 64 bit (x64).<br />-   Language Pack per ciascuna versione di .NET Framework installata con il pacchetto.<br />-   Service Pack per .NET Framework 2.0 e 3.0.<br /><br /> .NET Framework 3.0 è incluso in Windows Vista e .NET Framework 3.5 è incluso in Visual Studio. .NET Framework 3.5 è necessario per tutti i progetti Visual Basic e C# che vengono compilati per i sistemi operativi a 32 bit e per i quali il framework di destinazione è impostato su **.NET Framework 3.5**, oltre che per i progetti Visual Basic e C# compilati per i sistemi operativi a 64 bit. IA64 non è supportato. Si noti che Visual Basic progetti C# vengono compilati per qualsiasi architettura della CPU per impostazione predefinita. Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di destinazione](../../ide/visual-studio-multi-targeting-overview.md) e [Distribuire i prerequisiti per le applicazioni a 64 bit](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Con questo pacchetto viene installato .NET Framework 4.x per le piattaforme x86 e x64.|
 |**Microsoft System CLR Types per SQL Server 2014 (x64 e x86)**|Questo pacchetto installa Microsoft System CLR Types per SQL Server 2014 per la piattaforma x64 o x86.|
 |**SQL Server 2008 R2 Express**|Questo pacchetto installa Microsoft SQL Server 2008 R2 Express, un'edizione gratuita di Microsoft SQL Server 2008 R2, che è un database ideale per piccole applicazioni Web, server o desktop. Può essere utilizzato gratuitamente per lo sviluppo e la produzione.|
@@ -61,6 +61,6 @@ I componenti dei prerequisiti che sono visualizzati nella finestra di dialogo **
 ## <a name="see-also"></a>Vedi anche
 
 - [Pagina Pubblica, Progettazione progetti](../../ide/reference/publish-page-project-designer.md)
-- [Prerequisiti per la distribuzione dell'applicazione](../../deployment/application-deployment-prerequisites.md)
+- [Prerequisiti per la distribuzione di applicazioni](../../deployment/application-deployment-prerequisites.md)
 - [Prerequisiti per la distribuzione di applicazioni a 64 bit](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
 - [Panoramica sull'impostazione dei framework di destinazione](../../ide/visual-studio-multi-targeting-overview.md)

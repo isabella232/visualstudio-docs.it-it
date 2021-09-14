@@ -1,5 +1,5 @@
 ---
-description: Determina i numeri di riga del compilando in cui si trova il numero di riga specificato in un file di origine all'interno o vicino.
+description: Determina i numeri di riga del compilando in cui si trova il numero di riga specificato in un file di origine o vicino.
 title: IDiaSession::findLinesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 54a5d74e65879873db3d6a9394b9f7a74e6d0a64
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105489"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629160"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Determina i numeri di riga del compilando in cui si trova il numero di riga specificato in un file di origine all'interno o vicino.
+Determina i numeri di riga del compilando in cui si trova il numero di riga specificato in un file di origine o vicino.
 
 ## <a name="syntax"></a>Sintassi
 

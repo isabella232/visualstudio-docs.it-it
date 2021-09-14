@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: e5f4f6d622497ee5ac149a74d3b35b0f7d0a6911
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161457"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629009"
 ---
 # <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 Recupera un flag che indica se la gestione delle eccezioni C++ è in vigore.
@@ -43,7 +43,7 @@ HRESULT get_cplusplusExceptionHandling (
 ## <a name="remarks"></a>Commenti
  La gestione delle eccezioni C++ non è uguale alla gestione strutturata o delle eccezioni di sistema.
 
- Per determinare se la gestione strutturata delle eccezioni è in vigore, chiamare il [metodo IDiaStackFrame::get_systemExceptionHandling.](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)
+ Per determinare se la gestione strutturata delle eccezioni è in vigore, chiamare il metodo [IDiaStackFrame::get_systemExceptionHandling.](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

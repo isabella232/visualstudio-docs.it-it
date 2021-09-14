@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c114955909619ffba09b44c3f8bf2380530dc79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126630227"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 Recupera un numero specificato di numeri di riga nella sequenza di enumerazione.
@@ -45,7 +45,7 @@ HRESULT Next (
 
  pceltFetched
 
-[out] Restituisce il numero di righe nell'enumeratore recuperato.
+[out] Restituisce il numero di numeri di riga nell'enumeratore recuperato.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri numeri di riga. In caso contrario, verrà restituito un codice di errore.

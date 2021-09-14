@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fa9be28eea10f5732b3c36b10da795ba30f0dbe038aae867085462de6cc70e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a6af9474c0350512243c4076a3ed31d4bc08bef2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121404986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628961"
 ---
 # <a name="idiastackframeget_localsbase"></a>IDiaStackFrame::get_localsBase
 Recupera l'indirizzo di base delle variabili locali per il frame.

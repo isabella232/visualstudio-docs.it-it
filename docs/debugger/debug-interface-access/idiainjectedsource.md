@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b58eae372af82a03dc2629b4b92a5e472342fdd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139309"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629729"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Accede al codice sorgente inserito archiviato nell'origine dati DIA.

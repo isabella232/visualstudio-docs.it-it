@@ -1,6 +1,6 @@
 ---
 title: Proprietà elencata due volte
-description: "Impossibile creare un'associazione: proprietà elencata due volte. Visualizzare informazioni su questo Visual Studio Object Relational Designer (O/R Designer)."
+description: Impossibile creare un'associazione. La proprietà è elencata due volte. Visualizzare informazioni su questo Visual Studio Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -12,15 +12,15 @@ manager: jmartens
 ms.workload:
 - data-storage
 ms.openlocfilehash: ed577ac9c0ca5263e651433da9cfea1f8bf613ab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631553"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. La stessa proprietà è elencata più volte
 
-Impossibile creare un'associazione \<association name> . La stessa proprietà è elencata più di una volta: \<property name> .
+Impossibile creare un'associazione \<association name> . La stessa proprietà è elencata più volte: \<property name> .
 
 Le associazioni vengono definite dalle **Proprietà associazione** selezionate nella finestra di dialogo **Editor di associazione**. Le proprietà possono essere elencate una sola volta per ogni classe nell'associazione.
 

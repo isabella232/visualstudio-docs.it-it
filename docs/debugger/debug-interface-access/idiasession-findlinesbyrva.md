@@ -1,5 +1,5 @@
 ---
-description: Recupera le righe in un compilando specificato che contengono un indirizzo RVA (Relative Virtual Address) specificato.
+description: Recupera le righe in un compilando specificato che contengono un indirizzo virtuale relativo (RVA) specificato.
 title: IDiaSession::findLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 89731647fa1de03d5ad3ae94b0357555d525de9c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629171"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
-Recupera le righe in un compilando specificato che contengono un indirizzo RVA (Relative Virtual Address) specificato.
+Recupera le righe in un compilando specificato che contengono un indirizzo virtuale relativo (RVA) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ HRESULT findLinesByRVA (
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra una funzione che ottiene tutti i numeri di riga contenuti nella funzione specificata usando l'indirizzo virtuale e la lunghezza relativi della funzione.
+Questo esempio mostra una funzione che ottiene tutti i numeri di riga contenuti nella funzione specificata usando l'indirizzo virtuale e la lunghezza relativi della funzione.
 
 ```C++
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 0758563bafa74b8a9b43ae6f299566acc0b8fcb5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129031"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629352"
 ---
 # <a name="idiasectioncontribget_virtualaddress"></a>IDiaSectionContrib::get_virtualAddress
 Recupera l'indirizzo virtuale del contributo.

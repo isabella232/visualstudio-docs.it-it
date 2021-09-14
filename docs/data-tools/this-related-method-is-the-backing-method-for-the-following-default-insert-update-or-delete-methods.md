@@ -12,25 +12,25 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8dcf07340584a3103a854dae3ffa7787cabee448
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631134"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Questo metodo correlato è il metodo sottostante per i seguenti metodi predefiniti di inserimento, aggiornamento o eliminazione
 
-Questo metodo correlato è il metodo di supporto per i metodi `Insert` `Update` , o predefiniti `Delete` seguenti. Se viene eliminato, verranno eliminati anche questi metodi. Continuare?
+Questo metodo correlato è il metodo di supporto per i seguenti metodi `Insert` `Update` predefiniti , o `Delete` . Se viene eliminato, verranno eliminati anche questi metodi. Continuare?
 
-Il metodo selezionato viene attualmente usato come uno dei metodi , o per una delle classi di `DataContext` `Insert` entità in `Update` `Delete` **O/R Designer.** Se si elimina il metodo selezionato, la classe di entità che usa questo metodo ripristina il comportamento di run-time predefinito per l'esecuzione dell'inserimento, dell'aggiornamento o dell'eliminazione durante un aggiornamento.
+Il metodo selezionato è attualmente utilizzato come uno dei metodi , o per una delle classi di `DataContext` `Insert` entità in `Update` `Delete` **O/R Designer.** Se si elimina il metodo selezionato, la classe di entità che usa questo metodo ripristina il comportamento di run-time predefinito per l'esecuzione dell'inserimento, dell'aggiornamento o dell'eliminazione durante un aggiornamento.
 
 ## <a name="selected-method-options"></a>Opzioni del metodo selezionate
 
-- Per eliminare il metodo selezionato, facendo in modo che la classe di entità usi gli aggiornamenti di runtime, fare clic su **Sì**.
+- Per eliminare il metodo selezionato, facendo in modo che la classe di entità usi gli aggiornamenti di runtime, fare clic **su Sì.**
 
-   Il metodo selezionato viene eliminato e tutte le classi che hanno usato questo metodo per eseguire l'override del comportamento di aggiornamento vengono ripristinate usando il comportamento LINQ to SQL in fase di esecuzione.
+   Il metodo selezionato viene eliminato e tutte le classi che hanno usato questo metodo per eseguire l'override del comportamento di aggiornamento vengono ripristinate all'uso del comportamento LINQ to SQL in fase di esecuzione.
 
-- Per chiudere la finestra di messaggio, lasciando invariato il metodo selezionato, fare clic su **No**.
+- Per chiudere la finestra di messaggio, lasciando invariato il metodo selezionato, fare clic su **No.**
 
    La finestra di messaggio viene chiusa e non vengono apportate modifiche.
 

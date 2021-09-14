@@ -1,5 +1,5 @@
 ---
-description: Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione stub Accelerator padre.
+description: Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione stub dell'acceleratore padre.
 title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: e508ef56dd6b3a52e8c65431a263d3bda9a47caf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629112"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione stub Accelerator padre.
+Restituisce un'enumerazione di simboli per la variabile a cui corrisponde il valore del tag specificato nella funzione stub dell'acceleratore padre.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ HRESULT findSymbolsForAcceleratorPointerTag (
 #### <a name="parameters"></a>Parametri
  `parent`
 
-[in] Oggetto IDiaSymbol che corrisponde alla funzione stub Accelerator in cui eseguire la ricerca.
+[in] Oggetto IDiaSymbol che corrisponde alla funzione stub dell'acceleratore in cui eseguire la ricerca.
 
  `tagValue`
 

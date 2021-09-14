@@ -1,19 +1,19 @@
 ---
 title: Configurare Visual Studio Container Tools
-description: Configurare gli strumenti disponibili in Visual Studio per l'uso dei contenitori Docker.
+description: Configurare gli strumenti disponibili in Visual Studio per l'uso di contenitori Docker.
 author: ghogen
 ms.author: ghogen
 ms.topic: how-to
 ms.date: 03/20/2019
 ms.technology: vs-container-tools
 ms.openlocfilehash: 91ed17af9900c068af7e81ce3902e68063814d82
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123096919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631758"
 ---
-# <a name="how-to-configure-visual-studio-container-tools"></a>Come configurare Visual Studio Container Tools
+# <a name="how-to-configure-visual-studio-container-tools"></a>Come configurare gli strumenti Visual Studio Container
 
 Usando Visual Studio, è possibile controllare alcuni aspetti del funzionamento di Visual Studio con i contenitori Docker, incluse le impostazioni che influiscono sulle prestazioni e sull'utilizzo delle risorse quando si usano i contenitori Docker.
 
@@ -23,18 +23,18 @@ Dal menu principale scegliere **Strumenti > Opzioni** ed espandere **Strumenti c
 
 ::: moniker range="vs-2017"
 
-![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Eseguire automaticamente il pull delle immagini Docker necessarie al caricamento del progetto, Avviare automaticamente i contenitori in background, Uccidi automaticamente i contenitori alla chiusura della soluzione e Non richiedere l'attendibilità del certificato SSL.](./media/overview/visual-studio-docker-tools-options.png)
+![Visual Studio Opzioni di Strumenti contenitore, che mostrano: estrai automaticamente le immagini Docker necessarie al caricamento del progetto, Avvia automaticamente i contenitori in background, Kill automatically containers on solution close (Chiudi automaticamente i contenitori alla chiusura della soluzione) e Non richiedere l'attendibilità del certificato SSL.](./media/overview/visual-studio-docker-tools-options.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Impostazioni **generali** di Strumenti contenitore:
+Impostazioni generali di Strumenti **contenitore:**
 
-![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Installare Docker Desktop, se necessario, e Considerare attendibile ASP.NET Core certificato SSL.](./media/configure-container-tools/tools-options-1.png)
+![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Installare Docker Desktop se necessario e Considerare attendibile ASP.NET Core certificato SSL.](./media/configure-container-tools/tools-options-1.png)
 
-Impostazioni **Project** contenitore **Docker Compose** contenitori:
+Impostazioni di single **Project** e Docker Compose strumenti **contenitore:**
 
-![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Uccidi contenitori alla chiusura del progetto, Esegui il pull delle immagini Docker necessarie all'apertura del progetto e Esegui contenitori all'apertura del progetto.](./media/configure-container-tools/tools-options-2.png)
+![Visual Studio Opzioni di Strumenti contenitore, che mostrano: Kill containers on project close (Chiudi contenitori alla chiusura del progetto), Pull required Docker images on project open (Esegui il pull delle immagini Docker necessarie all'apertura del progetto) e Run containers on project open (Esegui contenitori al progetto aperto).](./media/configure-container-tools/tools-options-2.png)
 ::: moniker-end
 
 La tabella seguente può essere utile per decidere come impostare queste opzioni.
@@ -54,29 +54,29 @@ Nella tabella seguente vengono descritte **le impostazioni** generali:
 
 | Nome | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
-| Installare Docker Desktop, se necessario | Richiedi conferma | Singolo Project, Docker Compose | Scegliere se si vuole che venga richiesto se Docker Desktop non è installato. |
-| Considerare attendibile ASP.NET Core certificato SSL | Richiedi conferma | ASP.NET Core Progetti 2.x | Se l'opzione **è impostata** su Richiedi conferma, se il certificato SSL localhost non è attendibile, Visual Studio ogni volta che si esegue il progetto. |
+| Installare Docker Desktop, se necessario | Richiedi conferma | Single Project, Docker Compose | Scegliere se si vuole che venga richiesto se Docker Desktop non è installato. |
+| Considerare attendibile ASP.NET Core certificato SSL | Richiedi conferma | ASP.NET Core Progetti 2.x | Se **l'opzione è impostata** su Richiedi conferma, se il certificato SSL localhost non è attendibile, Visual Studio verrà richiesto ogni volta che si esegue il progetto. |
 
-Nella tabella seguente vengono descritte **le Project** e **Docker Compose** seguenti:
+Nella tabella seguente vengono descritte **le impostazioni Project** e **Docker Compose** single-Docker Compose:
 
 | Nome | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
-| Eseguire il pull delle immagini Docker necessarie all'apertura del progetto | Vero | Singolo Project, Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si caricano solo progetti e si esplora il codice, è possibile impostare su **False** per evitare il download di immagini del contenitore non necessarie. |
-| Eseguire il pull di immagini Docker aggiornate all'apertura del progetto | Progetti .NET Core | Singolo Project, Docker Compose | Quando si apre un progetto, verificare la disponibilità di aggiornamenti per le immagini e scaricarli, se disponibili. |
-| Eseguire contenitori all'apertura del progetto | Vero | Singolo Project, Docker Compose | Anche in questo caso, Visual Studio un contenitore in anticipo in modo che sia pronto per la compilazione e l'esecuzione del contenitore. Se si vuole controllare quando viene creato il contenitore, impostare su **False**. |
-| Rimuovere contenitori alla chiusura del progetto | Vero | Singolo Project, Docker Compose | Impostare su **False** se si desidera che i contenitori per la soluzione siano conservati dopo la chiusura della soluzione o la Visual Studio. |
+| Eseguire il pull delle immagini Docker necessarie all'apertura del progetto | Vero | Single Project, Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si stanno semplicemente caricando progetti ed esplorando il codice, è possibile impostare su **False** per evitare di scaricare le immagini del contenitore non necessarie. |
+| Eseguire il pull delle immagini Docker aggiornate all'apertura del progetto | Progetti .NET Core | Single Project, Docker Compose | Quando si apre un progetto, verificare la disponibilità di aggiornamenti per le immagini e scaricarli, se disponibili. |
+| Eseguire contenitori all'apertura del progetto | Vero | Single Project, Docker Compose | Anche in questo caso, Visual Studio crea un contenitore in anticipo in modo che sia pronto per la compilazione e l'esecuzione del contenitore. Se si vuole controllare quando viene creato il contenitore, impostare su **False.** |
+| Rimuovere i contenitori alla chiusura del progetto | Vero | Single Project, Docker Compose | Impostare su **False** se si vuole che i contenitori della soluzione siano mantenuti dopo la chiusura della soluzione o la chiusura Visual Studio. |
 
-Le **impostazioni della finestra degli strumenti** Contenitori controllano le impostazioni che si applicano alla finestra degli strumenti Contenitori, che mostra informazioni sui contenitori e sulle immagini Docker.  Vedere [Usare la finestra Contenitori](view-and-diagnose-containers.md)
+Le **impostazioni della finestra degli strumenti** Contenitori controllano le impostazioni che si applicano alla finestra degli strumenti Contenitori, che mostra informazioni sui contenitori e le immagini Docker.  Vedere [Usare la finestra Contenitori](view-and-diagnose-containers.md)
 
 ![Visual Studio Opzioni di Strumenti contenitore, che mostra le impostazioni disponibili per la finestra degli strumenti Contenitori](media/configure-container-tools/tools-options-3.png)
 
-La tabella seguente descrive le impostazioni **della finestra** Contenitori:
+La tabella seguente descrive le impostazioni **della finestra Contenitori:**
 
 
-| NOME | Impostazione predefinita | Descrizione |
+| Nome | Impostazione predefinita | Descrizione |
 | -----|:---------------:| ----------- |
-| Confermare prima di eliminare i contenitori | Always | Controlla se viene richiesto di eliminare i contenitori inutilizzati. |
-| Confermare prima di eliminare le immagini | Always | Controlla se viene richiesto di eliminare le immagini inutilizzate. |
+| Confermare prima di eliminare i contenitori | Always | Controlla se viene richiesto quando si esegue l'eliminazione di contenitori inutilizzati. |
+| Confermare prima di eliminare le immagini | Always | Controlla se viene richiesto quando si esegue l'eliminazione di immagini inutilizzate. |
 | Confermare prima di rimuovere un contenitore | Always | Controlla se viene richiesto quando si rimuove un contenitore. |
 | Confermare prima di rimuovere un'immagine | Always | Controlla se viene richiesto quando si rimuove un'immagine. |
 | Confermare prima di eseguire un numero elevato di immagini | Always | Controlla se viene richiesto prima di avviare i contenitori da più di 10 immagini alla volta. |
@@ -87,4 +87,4 @@ La tabella seguente descrive le impostazioni **della finestra** Contenitori:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Altre informazioni sull'uso dei contenitori in Visual Studio in questa [panoramica.](overview.md)
+Per altre informazioni sull'uso dei contenitori in Visual Studio in questa [panoramica.](overview.md)

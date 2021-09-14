@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, XAML, Formattazione
-description: Informazioni su come usare la pagina Opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in XAML.
+description: Informazioni su come usare la pagina delle opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in XAML.
 ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
@@ -33,11 +33,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - uwp
 ms.openlocfilehash: 47311af7eee476ac4beea2c73bfa5ab00ed19ea6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069389"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628643"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
 

@@ -20,23 +20,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: e491fcb8e7dad813eeb5594f6e8cbb9d64ade6ed
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631566"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dei dati ai controlli [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Per creare questi controlli associati a dati, è possibile trascinare elementi dalla **finestra Origini** dati in [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] in Visual Studio. In questo argomento vengono descritte alcune delle più comuni attività, strumenti e classi che è possibile utilizzare per creare applicazioni [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] associate a dati.
 
-Per informazioni generali su come creare controlli associati a dati in Visual Studio, vedere Associare controlli ai dati [in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Per altre informazioni sul data binding di [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)], vedere [Panoramica sul data binding](/dotnet/desktop-wpf/data/data-binding-overview).
+Per informazioni generali su come creare controlli associati a dati in Visual Studio, vedere [Associare](../data-tools/bind-controls-to-data-in-visual-studio.md)controlli ai dati in Visual Studio . Per altre informazioni sul data binding di [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)], vedere [Panoramica sul data binding](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Attività coinvolte nell'associazione di controlli WPF a dati
 
 Nella tabella seguente vengono elencate le attività che possono essere eseguite trascinando gli elementi dalla finestra **Origini dati** a [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
-|Attività|Altre informazioni|
+|Attività|Ulteriori informazioni|
 |----------| - |
 |Creare nuovi controlli associati a dati.<br /><br /> Associare controlli esistenti a dati.|[Associare controlli WPF a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Creare controlli che visualizzano i dati correlati in una relazione padre-figlio: quando l'utente seleziona un record di dati padre in un controllo, un altro controllo visualizza i dati figlio correlati per il record selezionato.|[Visualizzare dati correlati in applicazioni WPF](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -49,7 +49,7 @@ Nella tabella seguente vengono elencate le attività che possono essere eseguite
 
 ## <a name="generated-xaml-and-code"></a>Codice e XAML generati
 
-Quando si trascina un  elemento dalla finestra Origini dati a , Visual Studio genera che definisce un nuovo controllo associato a dati (o associa un controllo [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] esistente [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] all'origine dati). Per alcune origini dati, Visual Studio genera anche codice nel file code-behind che inserisce dati nell'origine dati.
+Quando si trascina un  elemento dalla finestra Origini dati a , Visual Studio genera che definisce un nuovo controllo associato a dati (o associa un controllo [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] esistente [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] all'origine dati). Per alcune origini dati, Visual Studio genera anche codice nel file code-behind che riempie l'origine dati con dati.
 
 Nella tabella seguente sono [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] elencati il codice e Visual Studio generati per ogni tipo di origine dati nella **finestra Origini** dati .
 
@@ -62,7 +62,7 @@ Nella tabella seguente sono [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/
 
 ### <a name="datasets"></a>Set di dati
 
-Quando si trascina una tabella o una colonna dalla **finestra** Origini dati alla finestra di progettazione, Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] genera un'operazione che esegue le operazioni seguenti:
+Quando si trascina una tabella o una colonna dalla **finestra** Origini dati alla finestra di progettazione, Visual Studio [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] che esegue le operazioni seguenti:
 
 - Aggiunge il dataset e un nuovo oggetto <xref:System.Windows.Data.CollectionViewSource> alle risorse del contenitore in cui è stato trascinato l'elemento. <xref:System.Windows.Data.CollectionViewSource> è un oggetto che può essere utilizzato per esplorare e visualizzare i dati nel dataset.
 

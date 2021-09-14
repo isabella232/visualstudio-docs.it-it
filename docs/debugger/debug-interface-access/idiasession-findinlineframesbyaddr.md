@@ -13,14 +13,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 553557797aafcf9cb8d0802e33ba0b34656e6aa5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134249"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126629207"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo specificato.
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.
 
 ## <a name="syntax"></a>Sintassi
 
