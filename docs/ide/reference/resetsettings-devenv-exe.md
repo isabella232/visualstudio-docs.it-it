@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc3b329b4a525a525823169d63ebbda2770727e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062147"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627173"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -42,7 +42,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  facoltativo. Percorso completo e nome del `.vssettings` file da applicare al Visual Studio.
+  facoltativo. Percorso completo e nome del `.vssettings` file da applicare alla Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
@@ -69,7 +69,7 @@ Il primo esempio applica le impostazioni archiviate nel file `MySettings.vssetti
 
 Il secondo esempio ripristina il profilo predefinito di Visual C#.
 
-Il terzo esempio chiuderà anche Visual Studio dopo aver applicato le impostazioni. È possibile aggiungere `/Command "File.Exit"` .
+Il terzo esempio chiuderà anche Visual Studio dopo l'applicazione delle impostazioni. È possibile aggiungere `/Command "File.Exit"` .
 
 ```shell
 devenv /ResetSettings "%USERPROFILE%\MySettings.vssettings"

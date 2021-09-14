@@ -1,5 +1,5 @@
 ---
-title: Controllo programma | Microsoft Docs
+title: Controllo del programma | Microsoft Docs
 description: Informazioni sulle routine in Visual Studio debug che si verificano a livello di programma, ad esempio l'esecuzione, l'esecuzione di istruzioni, la continuazione e la sospensione/ripresa di thread.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,22 +14,22 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6039cff32588296e861a83126fc3541bc49c43f7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627642"
 ---
 # <a name="program-control"></a>Controllo del programma
 Nel Visual Studio debug, tutte le routine di esecuzione e continuazione seguenti si verificano a livello di programma:
 
-- Impostazione dell'istruzione successiva, cio, impostazione del computer sull'istruzione successiva da eseguire in un ambiente frame specifico
+- Impostazione dell'istruzione successiva, ad esempio l'impostazione del computer sull'istruzione successiva da eseguire in un particolare ambiente frame
 
-- L'esecuzione, cio' continuando a uscire dalla modalità di esecuzione delle istruzioni
+- Esecuzione in corso, che continua a uscire dalla modalità di esecuzione delle istruzioni
 
 - Passaggio all'istruzione successiva
 
-- Continuare con la modalità di esecuzione dei passaggi corrente
+- Continua con la modalità di esecuzione istruzione/passaggio corrente
 
 - Sospensione dei thread contenuti nel programma
 
@@ -50,4 +50,4 @@ Nel Visual Studio debug, tutte le routine di esecuzione e continuazione seguenti
  Per i programmi multithreading, è necessario implementare anche il metodo [IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) e tutti i metodi [dell'interfaccia IEnumDebugThreads2.](../../extensibility/debugger/reference/ienumdebugthreads2.md)
 
 ## <a name="see-also"></a>Vedi anche
-- [Controllo di esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+- [Controllo dell'esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)

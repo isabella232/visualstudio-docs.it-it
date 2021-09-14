@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c2267173539401f9b673a6cf760abe9070279970
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626819"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Restituisce il blocco di dati PDATA associato all'indirizzo virtuale.
@@ -53,12 +53,12 @@ HRESULT pdataForVA(
 [in, out] Buffer compilato con i dati richiesti. Non può essere `NULL`.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esiste alcun PDATA per l'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non è presente alcun PDATA per l'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Il file PDATA (la sezione denominata ".pdata") di un compilando contiene informazioni sulla gestione delle eccezioni per le funzioni.
+ PDATA (la sezione denominata ".pdata") di un compilando contiene informazioni sulla gestione delle eccezioni per le funzioni.
 
- Il chiamante sa quanti dati devono essere restituiti in modo che il chiamante non abbia la necessità di chiedere la quantità di dati disponibile. Pertanto, è accettabile che un'implementazione di questo metodo restituirà un errore se il `pbData` parametro è `NULL` .
+ Il chiamante sa quanti dati devono essere restituiti in modo che il chiamante non abbia bisogno di chiedere la quantità di dati disponibili. Pertanto, è accettabile che un'implementazione di questo metodo restituirà un errore se il `pbData` parametro è `NULL` .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

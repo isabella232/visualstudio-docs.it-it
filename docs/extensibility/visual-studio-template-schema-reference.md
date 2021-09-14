@@ -1,6 +1,6 @@
 ---
-title: Riferimento allo schema di modello di Visual Studio | Microsoft Docs
-description: Per informazioni sullo schema dei modelli di Visual Studio, esplorare gli elementi XML nei file con estensione vstemplate.
+title: Visual Studio Informazioni di riferimento sullo schema del modello | Microsoft Docs
+description: Informazioni sullo schema Visual Studio modello esplorando gli elementi XML nei file con estensione vstemplate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,20 +16,20 @@ manager: jmartens
 ms.workload:
 - vssdk
 ms.openlocfilehash: 423e92eef6f9b712bd7705acbf9d95d5a01f44f4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062447"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627251"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Riferimento allo schema di modello di Visual Studio
-In questa sezione vengono fornite informazioni sugli elementi XML nei file con *estensione vstemplate* , ovvero i file che archiviano i metadati per i modelli di progetto, i modelli di elemento e gli starter kit.
+# <a name="visual-studio-template-schema-reference"></a>Visual Studio sullo schema del modello
+Questa sezione contiene informazioni sugli elementi XML nei file con estensione *vstemplate,* ovvero file che archiviano metadati per modelli di progetto, modelli di elemento e Starter Kit.
 
- È possibile utilizzare *vstemplate. xsd* per convalidare i file con *estensione vstemplate* personalizzati. Questo file è disponibile all'indirizzo *. \\ \<Visual Studio installation folder> \Xml\Schemas\1033\vstemplate.xsd*.
+ È possibile usare *vstemplate.xsd per* convalidare i *file con estensione vstemplate* personalizzati. Questo file è disponibile *all'indirizzo . \\ \<Visual Studio installation folder> \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Elemento|Elementi figlio|Attributi|
 |-------------|--------------------|----------------|
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|nessuno|nessuno|
+|[Appliesto](../extensibility/appliesto-element-visual-studio-templates.md)|Nessuno|Nessuno|
 |[Assembly (modello)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly (estensione della Creazione guidata modelli)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
@@ -77,7 +77,7 @@ In questa sezione vengono fornite informazioni sugli elementi XML nei file con *
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Project<br /><br /> Riferimenti<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Nome<br /><br /> Descrizione<br /><br /> Icona<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Nascosto<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|
-|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|
+|[Templateid](../extensibility/templateid-element-visual-studio-templates.md)|--|--|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|Tipo<br /><br /> Versione|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|Nome|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Assembly<br /><br /> FullClassName|--|

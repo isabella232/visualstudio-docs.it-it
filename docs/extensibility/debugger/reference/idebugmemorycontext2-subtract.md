@@ -19,11 +19,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b25e58fed406863009b72220fad4ba04b0d3b1e0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118671"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627372"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Sottrae il valore specificato dal contesto corrente e restituisce un nuovo contesto.
@@ -57,7 +57,7 @@ int Subtract(
 ## <a name="remarks"></a>Commenti
  Un contesto di memoria è un indirizzo, quindi la sottrazione di un valore da un indirizzo produce un nuovo indirizzo che richiede una nuova interfaccia di contesto.
 
- Questo metodo deve sempre produrre un nuovo contesto, anche se l'indirizzo risultante non è compreso nello spazio di memoria associato a questo contesto. L'unica eccezione è se non è possibile allocare memoria per il nuovo contesto o se è `ppMemCxt` un valore Null (che è un errore).
+ Questo metodo deve sempre produrre un nuovo contesto, anche se l'indirizzo risultante non è compreso nello spazio di memoria associato a questo contesto. L'unica eccezione è se non è possibile allocare memoria per il nuovo contesto o se è `ppMemCxt` un valore Null (si tratta di un errore).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

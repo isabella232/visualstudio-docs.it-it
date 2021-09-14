@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: df3fcddf2f31282d27e6f9a5744f2cf8592d2a1e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626754"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
 Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo.

@@ -26,11 +26,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6790cd24bb6b4f927029ab7749e35acd1d756c24
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627779"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 Un Windows form è una delle applicazioni gestite più comuni. Un form Windows crea un'applicazione Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, C# o C++.
@@ -52,7 +52,7 @@ Un Windows form è una delle applicazioni gestite più comuni. Un form Windows c
 
 2. Nel riquadro Project tipi aprire il **Visual Basic**, **Visual C#** **o Visual C++,** quindi
 
-    1. Per Visual Basic o Visual C#, selezionare **Windows Desktop**  >  **Windows Form App**.
+    1. Per Visual Basic o Visual C#, selezionare **Windows Desktop** Windows  >  **Form App**.
 
     2. Per Visual C++, selezionare **Windows Desktop.**
 
@@ -60,7 +60,7 @@ Un Windows form è una delle applicazioni gestite più comuni. Un form Windows c
 
 4. Fare clic su **OK**.
 
-     Visual Studio crea un nuovo progetto e visualizza un nuovo form nella finestra di progettazione Windows Form. Per altre informazioni, vedere Windows [Forms Designer](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
+     Visual Studio crea un nuovo progetto e visualizza un nuovo form nella finestra di progettazione Windows Form. Per altre informazioni, vedere [l'Windows Progettazione Form.](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\))
 
 5. Scegliere **Casella degli** **strumenti** dal menu Visualizza .
 
@@ -124,7 +124,7 @@ Un Windows form è una delle applicazioni gestite più comuni. Un form Windows c
 
      In Visual Studio viene visualizzata la riga in cui è stato impostato il punto di interruzione nella tabella codici. Tale riga dovrebbe essere evidenziata in giallo. A questo punto è possibile visualizzare le variabili dell'applicazione e controllarne l'esecuzione. L'esecuzione dell'applicazione è stata interrotta, in attesa di un'azione da parte dell'utente.
 
-4. Nel menu **Debug** scegliere Windows **,** quindi Espressioni di **controllo** e fare clic su Espressioni **di controllo1**.
+4. Nel menu **Debug** scegliere Windows **,** quindi Espressioni di **controllo** e fare clic **su Watch1**.
 
 5. Nella finestra **Espressioni di controllo1** fare clic su una riga vuota. Nella **colonna Nome** digitare (se si usa Visual Basic o Visual C#) o (se si usa `textBox1.Text` `textBox1->Text` C++), quindi premere INVIO.
 
@@ -183,7 +183,7 @@ Un Windows form è una delle applicazioni gestite più comuni. Un form Windows c
 
 6. Nel modulo Windows fare clic sull'unico pulsante.
 
-     Il debugger interrompe l'esecuzione del form Windows in corrispondenza del punto di interruzione.
+     Il debugger interrompe l'esecuzione del Windows form in corrispondenza del punto di interruzione.
 
 ## <a name="see-also"></a>Vedi anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)

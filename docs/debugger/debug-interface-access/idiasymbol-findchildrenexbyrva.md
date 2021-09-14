@@ -1,5 +1,5 @@
 ---
-description: Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo RVA (Relative Virtual Address) specificato.
+description: Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo virtuale relativo specificato.
 title: IDiaSymbol::findChildrenExByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c51a5ded5af919bd38cf5e83c2e86dd78246da31
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626765"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
-Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo RVA (Relative Virtual Address) specificato.
+Recupera gli elementi figlio del simbolo validi in corrispondenza di un indirizzo virtuale relativo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ HRESULT findChildrenExByRVA (
 [out] Restituisce un [oggetto IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) che contiene un elenco dei simboli figlio recuperati.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce se è stato trovato almeno un elemento figlio del simbolo oppure restituisce se non sono stati trovati elementi figlio; in caso `S_OK` `S_FALSE` contrario, restituisce un codice di errore.
+ Restituisce se è stato trovato almeno un elemento figlio del simbolo oppure restituisce se non sono stati trovati elementi figlio. In caso `S_OK` `S_FALSE` contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
  I simboli locali restituiti includono informazioni sull'intervallo live.

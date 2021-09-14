@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: de3cbb35245fad317014136177a4a410edfb25b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627509"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 Questo metodo ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.

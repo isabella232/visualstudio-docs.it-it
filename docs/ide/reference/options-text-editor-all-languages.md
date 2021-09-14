@@ -46,11 +46,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: f581f48efb9fbba97aa65b9826f7114f7377e951
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627192"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Finestra di dialogo Opzioni: Editor di testo \> Tutti i linguaggi
 

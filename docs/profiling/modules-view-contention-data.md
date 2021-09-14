@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati sui conflitti | Microsoft Docs'
-description: Informazioni sul modo in cui la visualizzazione Moduli dei dati sui contenuti visualizza i dati di concorrenza raggruppati in base ai moduli campionati nei dati di profilatura.
+description: Informazioni su come la visualizzazione Moduli dei dati di concorrenza visualizza i dati di concorrenza raggruppati in base ai moduli campionati nei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 556e7becfd87cd9ffd9a47737cee1330d93413b9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626879"
 ---
 # <a name="modules-view---contention-data"></a>Visualizzazione Moduli: dati sui conflitti
 Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati sulla concorrenza raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo in cui si sono verificati gli eventi di conflitto sono elencate nel nodo del modulo.

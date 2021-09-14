@@ -1,6 +1,6 @@
 ---
 title: Opzioni, editor di testo, di base (Visual Basic), avanzato
-description: Informazioni su come usare la pagina Avanzate nella sezione Basic per modificare le impostazioni predefinite delle proprietà Analisi, Direttive di importazione ed Evidenziazione.
+description: Informazioni su come usare la pagina Avanzate nella sezione Di base per modificare le impostazioni predefinite delle proprietà Analisi, Direttive di importazione ed Evidenziazione.
 ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
@@ -22,20 +22,20 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: abe1a46305ad656dca843fbb217f34eacca86410
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151262"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627186"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opzioni, editor di testo, di base (Visual Basic), avanzato
 La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della cartella **Editor di testo** della finestra di dialogo **Opzioni** (menu **Strumenti**) include le proprietà seguenti:
 
 ## <a name="analysis"></a>Analisi
 
-- Analisi del codice live o ambito di analisi in background
+- Analisi del codice in tempo reale o ambito di analisi in background
 
-   Configurare l'ambito di analisi in background per il codice gestito. Per altre informazioni, vedere [Procedura: Configurare l'ambito di](../../code-quality/configure-live-code-analysis-scope-managed-code.md)analisi del codice in tempo reale per il codice gestito.
+   Configurare l'ambito di analisi in background per il codice gestito. Per altre informazioni, vedere [Procedura: Configurare l'ambito di analisi del codice in tempo reale per il codice gestito.](../../code-quality/configure-live-code-analysis-scope-managed-code.md)
 
 ## <a name="using-directives"></a>Direttive using
 
@@ -58,7 +58,7 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
 
  **Abilita evidenziazione di riferimenti e parole chiave**
 
-L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola, ad esempio `If..Then`, `While...End While` o `Try...Catch...Finally`. È possibile spostarsi tra le parole chiave o i riferimenti evidenziati premendo **CTRL** MAIUSC freccia GIÙ  +    +   o **CTRL**  +  **MAIUSC FRECCIA**  +  **SU.**
+L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola, ad esempio `If..Then`, `While...End While` o `Try...Catch...Finally`. È possibile spostarsi tra parole chiave o riferimenti evidenziati premendo **CTRL MAIUSC** freccia GIÙ  +    +   o **CTRL**  +  **MAIUSC+freccia**  +  **SU.**
 
 ## <a name="outlining"></a>struttura
 
@@ -83,10 +83,10 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 ## <a name="editor-help"></a>Guida Editor
 
 ::: moniker range=">=vs-2019"
-**Hint per i nomi dei parametri inline**    
-Quando questa opzione è selezionata, inserisce hint per i nomi dei parametri per valori letterali, valori letterali di cui è stato eseguito il cast e istanze di oggetti prima di ogni argomento nelle chiamate di funzione.  
+**Hint per i nomi di parametro inline**    
+Se questa opzione è selezionata, inserisce hint per i nomi di parametro per valori letterali, valori letterali di cui è stato eseguito il cast e istanze di oggetti prima di ogni argomento nelle chiamate di funzione.  
 
-![Hint per il nome del parametro inline per Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
+![Hint per i nomi di parametro inline per Visual Basic](media/inline-parameter-name-hints-visualbasic.png)
 ::: moniker-end
 
 **Riformatta il listato di codice** Nell'editor di testo viene riformattato il codice nel modo appropriato. Quando questa opzione è selezionata, l'editor del codice:
@@ -107,7 +107,7 @@ Quando questa opzione è selezionata, inserisce hint per i nomi dei parametri pe
 
 **Inserimento automatico di costrutti End**
 
-Quando si digita, ad esempio la prima riga di una dichiarazione di routine, e si preme INVIO, l'editor di testo `Sub Main` aggiunge una riga  `End Sub` corrispondente. Analogamente, se si aggiunge un ciclo [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.
+Quando si digita, ad esempio, la prima riga di una dichiarazione di routine, e si preme `Sub Main` **INVIO,** l'editor di testo aggiunge una riga `End Sub` corrispondente. Analogamente, se si aggiunge un ciclo [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.
 
 **Inserimento automatico di membri Interface e MustOverride**
 

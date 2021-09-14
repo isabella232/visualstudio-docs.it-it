@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 785766a8fb0de87b967ecebdae391a5167bca466
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626850"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Mantiene il contesto dello stack tra le chiamate del [metodo IDiaFrameData::execute.](../../debugger/debug-interface-access/idiaframedata-execute.md)

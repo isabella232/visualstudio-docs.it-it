@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aae9f64fd3bd5d48646b2e186753b1bf9830a8cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145510"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627605"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Ottiene il numero di elementi nella matrice.

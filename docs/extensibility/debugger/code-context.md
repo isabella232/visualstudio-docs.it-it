@@ -1,6 +1,6 @@
 ---
 title: Contesto del codice | Microsoft Docs
-description: Informazioni sul contesto del codice Visual Studio debug, che descrive una posizione nel codice esistente quando un programma è stato arrestato in corrispondenza di un punto di interruzione.
+description: Informazioni sul contesto del codice in Visual Studio debug, che descrive una posizione nel codice che esiste quando un programma si è arrestato in corrispondenza di un punto di interruzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,22 +14,22 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 774daabac461c00998048455f4e23bd2ab7bd379
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627677"
 ---
 # <a name="code-context"></a>Contesto del codice
-Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, un **contesto di codice**:
+Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, un **contesto del codice:**
 
-- Fornisce un'astrazione di una posizione nel codice nota al motore di debug . Per la maggior parte delle architetture di run-time attualmente, un contesto di codice può essere pensato come un indirizzo nel flusso di istruzioni di un programma. Per i linguaggi non differenziali, in cui il codice potrebbe non essere rappresentato da istruzioni, un contesto di codice può essere rappresentato con altri mezzi.
+- Fornisce un'astrazione di una posizione nel codice nota al motore di debug. Per la maggior parte delle architetture di run-time di oggi, un contesto di codice può essere pensato come un indirizzo nel flusso di istruzioni di un programma. Per i linguaggi non differenziali, in cui il codice potrebbe non essere rappresentato da istruzioni, un contesto di codice può essere rappresentato con altri mezzi.
 
 - Descrive la posizione corrente nel flusso di esecuzione del programma di cui si esegue il debug.
 
 - Esiste solo quando un programma è stato arrestato in corrispondenza di un punto di interruzione.
 
-- Ha un contesto di documento associato.
+- Dispone di un contesto di documento associato.
 
 - Viene implementato da [un'interfaccia IDebugCodeContext2.](../../extensibility/debugger/reference/idebugcodecontext2.md)
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a93a21b10f6793cd75c6999998bc21b923ce69d7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626814"
 ---
 # <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 Imposta il valore di un registro.

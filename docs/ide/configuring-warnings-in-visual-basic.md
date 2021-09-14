@@ -1,6 +1,6 @@
 ---
 title: Configurazione degli avvisi in Visual Basic
-description: Informazioni su come configurare gli avvisi in Visual Basic che, a loro volta, consentono di scrivere codice più pulito, più veloce e migliore con meno bug.
+description: Informazioni su come configurare gli avvisi in Visual Basic che, a sua volta, consentono di scrivere codice più pulito, più veloce e migliore con meno bug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 426891ebbd01a4bd51dc61c6f575fec5042767d7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124087"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627234"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
 
@@ -126,5 +126,5 @@ ID: 42029, 42031
 - [Provare... Prendere... Istruzione Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [Pagina Compila, Project Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Pagina Compilazione, progettazione Project (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Avvisi del compilatore disattivati per impostazione predefinita](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: e637f1139de8ee6caebea92cc5ca1fe494c206e6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627570"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Ottiene le dimensioni della matrice.

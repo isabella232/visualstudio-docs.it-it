@@ -1,6 +1,6 @@
 ---
-description: Recupera una CONTEXT_INFO che descrive il contesto.
-title: IDebugMemoryContext2::GetInfo | Microsoft Docs
+description: Recupera una CONTEXT_INFO struttura che descrive il contesto.
+title: Interfaccia IDebugMemoryContext2::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,15 +18,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2e8c0e1f8171a83fcbbe3358476edcb10b6f1f0b2f2c1657a794e92c0283706
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 799d161c82a0d84b524256c00788e1664e1a0d7a
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433827"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627384"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-Recupera una [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) che descrive il contesto.
+Recupera una [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struttura che descrive il contesto.
 
 ## <a name="syntax"></a>Sintassi
 

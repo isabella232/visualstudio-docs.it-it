@@ -19,17 +19,17 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 360bdb1ac3d3dfce56a60f1e1c33e97d76885c6a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090200"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627767"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Debug in fase di progettazione in Visual Studio (C#, C++/CLI, Visual Basic, F#)
 
 Per eseguire il debug del codice in fase di progettazione anziché durante l'esecuzione di un'app, è possibile usare la finestra **Controllo** immediato.
 
-Per eseguire il debug di codice XAML dietro un'app dalla finestra di progettazione XAML, ad esempio scenari di data binding dichiarativi, è possibile usare **Debug**  >  **Attach to Process**.
+Per eseguire il debug del codice XAML dietro un'app dalla finestra di progettazione XAML, ad esempio scenari di data binding dichiarativi, è possibile usare **Debug**  >  **Attach to Process**.
 
 ## <a name="use-the-immediate-window"></a>Usare la finestra Controllo immediato
 
@@ -89,7 +89,7 @@ L'esempio seguente è in Visual Basic. È anche possibile usare la finestra **Co
 
 1. Aprire una seconda istanza di Visual Studio. Non aprire una soluzione o un progetto nella seconda istanza.
 
-1. Nella seconda istanza di Visual Studio aprire il menu **Debug** e scegliere **Associa a processo.**
+1. Nella seconda istanza di Visual Studio aprire il menu **Debug** e scegliere **Collega a processo.**
 
 1. A seconda del tipo di progetto (vedere i passaggi precedenti), selezionare ilUwpSurface.exe *,* *WpfSurface.exe* o il processo *XDesProc.exe* dall'elenco dei processi disponibili.
 
@@ -97,7 +97,7 @@ L'esempio seguente è in Visual Basic. È anche possibile usare la finestra **Co
 
    Se il controllo personalizzato è stato scritto in un linguaggio .NET, scegliere il tipo di codice .NET appropriato, ad esempio **Managed (CoreCLR).** Se il controllo personalizzato è stato scritto in C++, scegliere **Nativo.**
 
-1. Collegare la seconda istanza di Visual Studio clic sul **pulsante Associa.**
+1. Collegare la seconda istanza di Visual Studio clic sul **pulsante** Associa.
 
 1. Nella seconda istanza di Visual Studio aprire i file di codice associati al controllo personalizzato di cui si vuole eseguire il debug. Assicurarsi di aprire solo i file, non l'intera soluzione o progetto.
 

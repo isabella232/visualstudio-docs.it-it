@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e3cd48bef3c23e69208f1741cacb8adad907ede
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127571"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627522"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 Il motore di debug (DE) invia questa interfaccia al gestore di debug sessione (SDM) per impostare il messaggio della barra di stato durante il caricamento dei simboli.
@@ -29,7 +29,7 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il de implementa questa interfaccia quando deve impostare il messaggio della barra di stato durante il caricamento del simbolo. Questa interfaccia viene implementata solo dai motori di debug che funzionano con o fanno parte degli interpreti di script. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa **QueryInterface** per accedere **all'interfaccia IDebugEvent2).**
+ Il de implementa questa interfaccia quando deve impostare il messaggio della barra di stato durante il caricamento del simbolo. Questa interfaccia viene implementata solo dai motori di debug che funzionano con o fanno parte degli interpreti di script. [L'interfaccia IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (SDM usa **QueryInterface** per accedere all'interfaccia **IDebugEvent2).**
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Il de crea e invia questo oggetto evento quando deve impostare il messaggio della barra di stato durante il caricamento del simbolo. L'evento viene inviato usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegato al programma in fase di debug.

@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c181aa99ce1005bf3909cf7f5c9a59a409b15990
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076711"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627000"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Numero elevato di campioni del kernel
 

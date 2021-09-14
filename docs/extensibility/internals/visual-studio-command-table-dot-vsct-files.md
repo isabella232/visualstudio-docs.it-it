@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8eb8c98586300644b3aef8be8a68c9ae1fd8196e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132262"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627276"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>File Visual Studio Command Table (con estensione vsct)
 Un file di configurazione della tabella dei comandi è un file di testo che descrive il set di comandi contenuti in un VSPackage. Il compilatore della tabella dei comandi (VSCT) compila i file di configurazione basati su XML (file con estensione vsct) in file di output della tabella dei comandi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] binari (con estensione cto). I file CTO risultanti sono gli stessi creati usando il compilatore della tabella dei comandi (CTC) per compilare i file di configurazione con estensione ctc. Tuttavia, i file con estensione vsct basati su XML presentano alcuni vantaggi, ad esempio un editor XML e IntelliSense XML.

@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a000a365863ddb56e0d5896392b15c92a00822876e66fe18dba09551e22e0e7a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 584b0f39bd9f50b68f928cdfb2b93e6e9ea0af28
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627552"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 Recupera gli indici di base (limiti inferiori) per ogni indice in base al numero di dimensioni nella matrice.

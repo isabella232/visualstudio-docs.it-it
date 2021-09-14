@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d12c5308513f015b7fcc99b8073e138092d43ffc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081109"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626693"
 ---
 # <a name="idiasymbolget_subtypeid"></a>IDiaSymbol::get_subTypeId
 Recupera l'ID del sottotipo.

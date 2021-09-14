@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa6691a4606b6724eacd6386a569af02ceb2cddd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627462"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 Questa interfaccia rappresenta una classe come tipo.
@@ -34,7 +34,7 @@ IDebugClassField : IDebugContainerField
  Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa [l'interfaccia IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md) Questa interfaccia è una specializzazione che rappresenta un tipo di classe.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Una serie di interfacce dispone di metodi che possono restituire questa interfaccia, tra cui [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)e [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md). È anche possibile usare [QueryInterface](/cpp/atl/queryinterface) per ottenere questa interfaccia [dall'interfaccia IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) se il [metodo GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce il flag `FIELD_TYPE_CLASS` .
+ Per una serie di interfacce sono disponibili metodi che possono restituire questa interfaccia, tra cui [IDebugSymbolProvider,](../../../extensibility/debugger/reference/idebugsymbolprovider.md) [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)e [IDebugCustomAttribute.](../../../extensibility/debugger/reference/idebugcustomattribute.md) È anche possibile usare [QueryInterface per](/cpp/atl/queryinterface) ottenere questa interfaccia dall'interfaccia [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) se il [metodo GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce il flag `FIELD_TYPE_CLASS` .
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Oltre ai metodi nelle interfacce [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e [IDebugContainerField,](../../../extensibility/debugger/reference/idebugcontainerfield.md) questa interfaccia implementa quanto segue:

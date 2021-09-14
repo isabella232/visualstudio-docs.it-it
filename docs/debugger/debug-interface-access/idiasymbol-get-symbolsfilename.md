@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d151c1ca21b1407f6edcacd7cc2bc3a7d44185c2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147102"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626682"
 ---
 # <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 Recupera il nome del file da cui sono stati caricati i simboli.
@@ -41,10 +41,10 @@ HRESULT get_symbolsFileName (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Questa proprietà è valida solo per i simboli con un [valore di enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) `SymTagExe` di con ambito globale.
+ Questa proprietà è valida solo per i simboli con un valore di enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagExe` con ambito globale.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

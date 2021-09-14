@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: c4c71b73ccfd26a0b2e890bbd5014bcbcf932b7b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627179"
 ---
 # <a name="replace-in-files-command"></a>Comando Sostituisci nei file
 Sostituisce il testo nei file usando un subset delle opzioni disponibili nella scheda **Sostituisci nei file** della finestra **Trova e sostituisci**.
@@ -113,6 +113,6 @@ In questo esempio `btnCancel` viene cercato e sostituito con `btnReset` in tutti
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
 - [Sostituisci nei file](../../ide/replace-in-files.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

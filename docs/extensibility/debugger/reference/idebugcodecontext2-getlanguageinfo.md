@@ -1,5 +1,5 @@
 ---
-description: Ottiene le informazioni sulla lingua per questo contesto di codice.
+description: Ottiene le informazioni sulla lingua per questo contesto del codice.
 title: Interfaccia IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1f3c2ac4eb0a41e94415ab83605f978e691311d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627444"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
-Ottiene le informazioni sulla lingua per questo contesto di codice.
+Ottiene le informazioni sulla lingua per questo contesto del codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ int GetLanguageInfo(
 
 ## <a name="parameters"></a>Parametri
 `pbstrLanguage`\
-[in, out] Restituisce una stringa contenente il nome del linguaggio, ad esempio "C++".
+[in, out] Restituisce una stringa che contiene il nome del linguaggio, ad esempio "C++".
 
 `pguidLanguage`\
 [in, out] Restituisce il GUID per il linguaggio del contesto del codice, ad esempio `guidCPPLang` .

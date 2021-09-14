@@ -16,19 +16,19 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e9839812175d3e74b3e2d42ad04c3a32f7caa09
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117722"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627305"
 ---
 # <a name="using-msbuild"></a>Uso di MSBuild
-MSBuild fornisce un formato XML ben definito ed estendibile per la creazione di file di progetto che descrivono completamente gli elementi di progetto da compilare, le attività di compilazione e le configurazioni di compilazione.
+MSBuild un formato XML ben definito ed estendibile per la creazione di file di progetto che descrivono completamente gli elementi di progetto da compilare, le attività di compilazione e le configurazioni di compilazione.
 
 ## <a name="general-msbuild-considerations"></a>Considerazioni MSBuild generali
- MSBuild file di progetto, ad esempio file con estensione csproj e vbproj, contengono dati usati in fase di compilazione, ma possono anche contenere dati usati in fase [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] di progettazione. I dati in fase di compilazione vengono archiviati usando MSBuild primitive, tra cui [l'elemento Item (MSBuild)](../../msbuild/item-element-msbuild.md) e [l'elemento Property (MSBuild).](../../msbuild/property-element-msbuild.md) I dati in fase di progettazione, che sono dati specifici del tipo di progetto e di eventuali sottotipi di progetto correlati, vengono archiviati in codice XML in formato libero riservato.
+ MSBuild file di progetto, ad esempio file con estensione csproj e vbproj, contengono dati usati in fase di compilazione, ma possono anche contenere dati usati in fase [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] di progettazione. I dati in fase di compilazione vengono archiviati usando MSBuild primitive, tra cui [l'elemento Item (MSBuild)](../../msbuild/item-element-msbuild.md) e [l'elemento Property (MSBuild).](../../msbuild/property-element-msbuild.md) I dati in fase di progettazione, che sono dati specifici del tipo di progetto ed eventuali sottotipi di progetto correlati, vengono archiviati in xml in formato libero riservato.
 
- MSBuild non dispone del supporto nativo per gli oggetti di configurazione, ma fornisce attributi condizionali per specificare dati specifici della configurazione. Esempio:
+ MSBuild non dispone del supporto nativo per gli oggetti di configurazione, ma fornisce attributi condizionali per specificare dati specifici della configurazione. Ad esempio:
 
 ```xml
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>
@@ -53,7 +53,7 @@ MSBuild fornisce un formato XML ben definito ed estendibile per la creazione di 
 
  `Microsoft.VisualStudio.Package.ProjectElement`class è un wrapper per MSBuild elementi.
 
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>Generatori di file singolo e attività MSBuild file
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>Generatori di file singolo e MSBuild attività
  I generatori di file singoli sono accessibili solo in fase di progettazione, ma MSBuild attività possono essere usate in fase di progettazione e di compilazione. Per la massima flessibilità, usare quindi MSBuild attività per trasformare e generare codice. Per altre informazioni, vedere [Strumenti personalizzati](../../extensibility/internals/custom-tools.md).
 
 ## <a name="see-also"></a>Vedi anche

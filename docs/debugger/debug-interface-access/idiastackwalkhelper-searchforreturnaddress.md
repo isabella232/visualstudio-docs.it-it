@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: fe47a750625698f2fc930ed51ca9d8cedcec103b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626807"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
-Cerca l'indirizzo stack frame specificato per l'indirizzo restituito della funzione più vicino.
+Cerca l'indirizzo restituito stack frame funzione più vicino nell'elenco specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ HRESULT searchForReturnAddress(
 
  `returnAddress`
 
-[out] Restituisce l'indirizzo restituito della funzione più vicina.
+[out] Restituisce l'indirizzo mittente della funzione più vicino.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

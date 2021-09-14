@@ -1,6 +1,6 @@
 ---
 title: Panoramica del multitargeting di MSBuild | Microsoft Docs
-description: Informazioni su come usare MSBuild compilare un'applicazione da eseguire in una delle diverse versioni del .NET Framework e in una delle diverse piattaforme di sistema.
+description: Informazioni su come usare MSBuild per compilare un'applicazione da eseguire in una delle diverse versioni del .NET Framework e in una qualsiasi delle diverse piattaforme di sistema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: a71c3c774e512d012b1f1bbd99a8e00aa1304cda
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627059"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Panoramica del multitargeting di MSBuild
 
@@ -39,11 +39,11 @@ Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualun
 
 ## <a name="target-framework-and-platform"></a>Framework e piattaforma di destinazione
 
- Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  È ad esempio possibile scegliere come destinazione un'applicazione .NET Framework 2.0 per l'esecuzione in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  Ad esempio, è possibile scegliere come destinazione un'applicazione .NET Framework 2.0 per l'esecuzione in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Set di strumenti (ToolsVersion)
 
- Un set di strumenti comprende strumenti, attività e destinazioni usati per creare l'applicazione. Un set di strumenti include compilatori come *csc.exe* *evbc.exe*, il file di destinazioni comuni (*microsoft.common.targets*) e il file delle attività comuni (*microsoft.common.tasks*). Il Set di strumenti 4.5 può essere usato per definire le destinazioni di .NET Framework versioni 2.0, 3.0, 3.5, 4 e 4.5. Tuttavia, il Set di strumenti 2.0 consente soltanto di scegliere come destinazione .NET Framework versione 2.0. Per altre informazioni, vedere [Set di strumenti MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Un set di strumenti comprende strumenti, attività e destinazioni usati per creare l'applicazione. Un set di strumenti include compilatori come *csc.exe* e *vbc.exe*, il file di destinazioni comuni (*microsoft.common.targets*) e il file delle attività comuni (*microsoft.common.tasks*). Il Set di strumenti 4.5 può essere usato per definire le destinazioni di .NET Framework versioni 2.0, 3.0, 3.5, 4 e 4.5. Tuttavia, il Set di strumenti 2.0 consente soltanto di scegliere come destinazione .NET Framework versione 2.0. Per altre informazioni, vedere [Set di strumenti MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assembly di riferimento
 

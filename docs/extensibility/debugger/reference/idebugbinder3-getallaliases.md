@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9ab2624e21723b635d6e7db6551cb370308d43d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145367"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627491"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Questo metodo recupera un elenco di alias dal programma.

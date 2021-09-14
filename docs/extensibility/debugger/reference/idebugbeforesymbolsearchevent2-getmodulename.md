@@ -17,11 +17,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d0959cc854a45b14d2c021ea0564d6275e89af72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627534"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Recupera il nome del modulo attualmente in fase di debug.

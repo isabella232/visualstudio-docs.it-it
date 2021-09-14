@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7486f1328aea816e4442def2d7df7133149f3a68
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122043635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627665"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties : membri interni
 Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto .

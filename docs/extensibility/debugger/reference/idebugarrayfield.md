@@ -1,5 +1,5 @@
 ---
-description: Questa interfaccia descrive un tipo o un simbolo di matrice.
+description: Questa interfaccia descrive un simbolo o un tipo di matrice.
 title: Interfaccia IDebugArrayField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6a14c4379abff21d97c5936914937f897942e010
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627593"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
-Questa interfaccia descrive un tipo o un simbolo di matrice.
+Questa interfaccia descrive un simbolo o un tipo di matrice.
 
 ## <a name="syntax"></a>Sintassi
 

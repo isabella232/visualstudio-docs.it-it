@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f02c554c9df8a71fd6ae8b7a045d1ae4e3cc0917
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626927"
 ---
 # <a name="marker_series-class"></a>Classe marker_series
 Rappresenta un canale seriale di eventi generati da un singolo provider.
@@ -36,17 +36,17 @@ class marker_series;
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[costruttore marker_series::marker_series](../profiling/marker-series-marker-series-constructor.md)|Inizializza una nuova istanza della classe `marker_series`.|
-|[distruttore marker_series::~marker_series](../profiling/marker-series-tilde-marker-series-destructor.md)|Elimina l'oggetto marker_series e rilascia tutte le risorse allocate.|
+|[marker_series::marker_series costruttore](../profiling/marker-series-marker-series-constructor.md)|Inizializza una nuova istanza della classe `marker_series`.|
+|[marker_series::~marker_series distruttore](../profiling/marker-series-tilde-marker-series-destructor.md)|Elimina l'oggetto marker_series e rilascia tutte le risorse allocate.|
 
 ### <a name="public-methods"></a>Metodi pubblici
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[marker_series::is_enabled](../profiling/marker-series-is-enabled-method.md)|Determina se il provider è stato abilitato da una sessione.|
-|[marker_series::write_alert](../profiling/marker-series-write-alert-method.md)|Scrive un avviso nel file di traccia del visualizzatore di concorrenza.|
+|[marker_series::is_enabled metodo](../profiling/marker-series-is-enabled-method.md)|Determina se il provider è stato abilitato da una sessione.|
+|[marker_series::write_alert metodo](../profiling/marker-series-write-alert-method.md)|Scrive un avviso nel file di traccia del visualizzatore di concorrenza.|
 |[marker_series::write_flag](../profiling/marker-series-write-flag-method.md)|Scrive un flag nel file di traccia del visualizzatore di concorrenza.|
-|[marker_series::write_message](../profiling/marker-series-write-message-method.md)|Scrive un messaggio nel file di traccia del visualizzatore di concorrenza.|
+|[marker_series::write_message metodo](../profiling/marker-series-write-message-method.md)|Scrive un messaggio nel file di traccia del visualizzatore di concorrenza.|
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
  `marker_series`
@@ -57,4 +57,4 @@ class marker_series;
  **Spazio dei nomi:** Concurrency::diagnostic
 
 ## <a name="see-also"></a>Vedi anche
-- [spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)
+- [spazio dei nomi di diagnostica](../profiling/diagnostic-namespace.md)

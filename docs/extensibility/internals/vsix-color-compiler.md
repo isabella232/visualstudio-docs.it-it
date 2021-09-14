@@ -1,6 +1,6 @@
 ---
 title: Compilatore colori VSIX | Microsoft Docs
-description: Informazioni sullo strumento Visual Studio compilatore colori estensioni, ovvero un'applicazione console che copre i colori Visual Studio temi in un file con estensione pkgdef.
+description: Informazioni sullo strumento compilatore colori Visual Studio estensione, ovvero un'applicazione console che copre i colori Visual Studio temi in un file con estensione pkgdef.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,11 +12,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c724dae82bb8f7f05c83c96d1c331d72eac0abd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627263"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 Lo strumento Visual Studio Extension Color Compiler è un'applicazione console che accetta un file .xml che rappresenta i colori per i temi Visual Studio esistenti e lo copre in un file con estensione pkgdef in modo che tali colori possano essere usati in Visual Studio. Poiché è facile confrontare le differenze tra i file .xml, questo strumento è utile per la gestione dei colori personalizzati nel controllo del codice sorgente. Può anche essere collegato in ambienti di compilazione in modo che l'output della compilazione sia un file con estensione pkgdef valido.
@@ -111,7 +111,7 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
 |Tipo|[Obbligatorio] Tipo di colore. I possibili valori sono i seguenti:<br /><br /> *CT_INVALID:* Il colore non è valido o non è impostato.<br /><br /> *CT_RAW:* Valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Colore Windows di sistema di SysColor.<br /><br /> *CT_VSCOLOR:* Colore Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|
 |Source (Sorgente)|[Obbligatorio] Valore del colore rappresentato in formato esadecimale|
 
- Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati dallo schema nell'attributo Type. Tuttavia, è consigliabile usare solo CT_RAW e CT_SYSCOLOR.
+ Tutti i valori supportati dall__VSCOLORTYPE enumere sono supportati dallo schema nell'attributo Type. Tuttavia, è consigliabile usare solo CT_RAW e CT_SYSCOLOR.
 
  **Tutti insieme**
 
@@ -152,9 +152,9 @@ Lo strumento Visual Studio Extension Color Compiler è un'applicazione console c
 
 ## <a name="notes"></a>Note
 
-- Questo strumento richiede l'installazione della versione più recente VC++ runtime.
+- Questo strumento richiede l'installazione della versione più recente VC++ runtime di .
 
-- Sono supportati solo singoli file. La conversione bulk tramite percorsi di cartella non è supportata.
+- Sono supportati solo singoli file. La conversione in blocco tramite percorsi di cartella non è supportata.
 
 - Lo strumento è disponibile in `<VS Install Path>\VSSDK\VisualStudioIntegration\Tools\Bin\`
 

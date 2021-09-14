@@ -14,17 +14,17 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4811bcd95b7d99ed78544e68394887d67e8a0c9d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627815"
 ---
 # <a name="using-spy"></a>Utilizzo di Spy++
 Spy++ (SPYXX.EXE) è un'utilità basata su Win32 che offre una visualizzazione grafica dei processi, dei thread, delle finestre e dei messaggi di finestra del sistema. Questa sezione della Guida di Spy++ include gli argomenti della Guida seguenti:
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Introduzione a Spy++](../debugger/introducing-spy-increment.md) Illustra i tipi di informazioni che è possibile visualizzare con lo strumento Spy++.
+ [Introduzione a Spy++](../debugger/introducing-spy-increment.md) Vengono illustrati i tipi di informazioni che è possibile visualizzare con lo strumento Spy++.
 
  [Procedura: Avviare Spy++](../debugger/how-to-start-spy-increment.md) Viene illustrato come avviare Spy++ dal menu Strumenti.
 

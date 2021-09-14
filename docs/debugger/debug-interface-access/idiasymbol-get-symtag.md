@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ad31fc4290daeec60f57c510c7a48cd41343d954
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626675"
 ---
 # <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 Recupera il classificatore del tipo di simbolo.
@@ -35,13 +35,13 @@ HRESULT get_symTag (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un valore [dell'enumerazione SymTagEnum che](../../debugger/debug-interface-access/symtagenum.md) specifica il classificatore del tipo di simbolo.
+[out] Restituisce un valore [dell'enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) che specifica il classificatore del tipo di simbolo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="example"></a>Esempio
 

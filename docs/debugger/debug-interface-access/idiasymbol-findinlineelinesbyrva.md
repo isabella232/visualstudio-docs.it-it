@@ -1,5 +1,5 @@
 ---
-description: IDiaSymbol::findInlineeLinesByRVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo RVA (Relative Virtual Address) specificato.
+description: IDiaSymbol::findInlineeLinesByRVA recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale relativo (RVA) specificato.
 title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,14 +13,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d0d1d7b83dd8e643dc5d25d71d43b50c039a8b25
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626747"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo RVA (Relative Virtual Address) specificato.
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale relativo (RVA) specificato.
 
 ## <a name="syntax"></a>Sintassi
 

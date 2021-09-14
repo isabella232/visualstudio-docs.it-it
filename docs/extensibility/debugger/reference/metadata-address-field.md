@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9757f42022cf5b590385151fc1346ad75ce8cdd3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627365"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
@@ -45,13 +45,13 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>Members
 
 `tokField`\
-ID del token del campo.
+ID del token di campo.
 
 [C++] `_mdToken` è un `typedef` oggetto per un oggetto a 32 `int` bit.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_FIELD` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) tabella).
+Questa struttura fa parte dell'unione nella struttura DEBUG_ADDRESS_UNION [quando](../../../extensibility/debugger/reference/debug-address-union.md) il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_FIELD` struttura). [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>Requisiti
 

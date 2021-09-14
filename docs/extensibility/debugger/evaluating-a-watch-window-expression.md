@@ -16,17 +16,17 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbd9ad916b034158f21f909d9895629db74e0718
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627648"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Valutare un'espressione della finestra Espressioni di controllo
 > [!IMPORTANT]
 > In Visual Studio 2015 questa modalità di implementazione degli analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni [CLR,](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) vedere Analizzatori di espressioni CLR e Esempio di [analizzatore di espressioni gestite.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
- Quando l'esecuzione viene sospesa, Visual Studio chiama il motore di debug per determinare il valore corrente di ogni espressione nel relativo elenco di controllo. De valuta ogni espressione usando un analizzatore di espressioni (edizione Enterprise) e Visual Studio il relativo valore nella **finestra Espressioni di** controllo.
+ Quando l'esecuzione viene sospesa, Visual Studio chiama il motore di debug per determinare il valore corrente di ogni espressione nell'elenco di controllo. De valuta ogni espressione usando un analizzatore di espressioni (edizione Enterprise) e Visual Studio il relativo valore nella **finestra Espressioni di** controllo.
 
  Di seguito è riportata una panoramica della modalità di valutazione di un'espressione di elenco di controllo:
 
@@ -48,7 +48,7 @@ ms.locfileid: "122096661"
  Poiché l'analisi di un'espressione complessa può richiedere molto più tempo rispetto alla valutazione, il processo di valutazione di un'espressione viene suddiviso in due passaggi: 1) analizzare l'espressione e 2) valutare l'espressione analizzata. In questo modo, la valutazione può verificarsi più volte, ma l'espressione deve essere analizzata una sola volta. L'espressione analizzata intermedia viene restituita dal edizione Enterprise in un oggetto [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) incapsulato e restituito da DE come oggetto [IDebugExpression2.](../../extensibility/debugger/reference/idebugexpression2.md) `IDebugExpression`L'oggetto rinvia tutte le valutazioni all'oggetto `IDebugParsedExpression` .
 
 > [!NOTE]
-> Non è necessario che un edizione Enterprise aderi a questo processo in due passaggi anche se Visual Studio presuppone questo; Il edizione Enterprise può analizzare e valutare nello stesso passaggio quando viene chiamato [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (ad esempio, il funzionamento dell'esempio MyCEE). Se il linguaggio può formare espressioni complesse, è possibile separare il passaggio di analisi dal passaggio di valutazione. Ciò può migliorare le prestazioni nel debugger Visual Studio quando vengono visualizzate molte espressioni di controllo.
+> Non è necessario che un edizione Enterprise aderisca a questo processo in due passaggi anche se Visual Studio presuppone questo; Il edizione Enterprise può analizzare e valutare nello stesso passaggio quando viene chiamato [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (ad esempio, il funzionamento dell'esempio MyCEE). Se il linguaggio può formare espressioni complesse, è possibile separare il passaggio di analisi dal passaggio di valutazione. Ciò può migliorare le prestazioni nel debugger Visual Studio quando vengono visualizzate molte espressioni di controllo.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Implementazione di esempio della valutazione delle espressioni](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) Usa l'esempio MyCEE per eseguire il processo di valutazione delle espressioni.

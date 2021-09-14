@@ -9,19 +9,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 33ee25da51d5243daa67be53f68c50ede76219b2
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: fda4d25c164a91614c35b6cb3f2622235bbbb02a
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925228"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627066"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importare o esportare configurazioni di installazione
 
@@ -89,7 +89,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Creare un'installazione di rete di Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)

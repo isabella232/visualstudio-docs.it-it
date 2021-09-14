@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6d229919bf496822a7b5499881af5fd7957a623
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627294"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Uso del framework di pacchetto gestito per implementare un tipo di progetto (C#)
 Managed Package Framework (MPF) fornisce classi C# che è possibile usare o ereditare da per implementare tipi di progetto personalizzati. MPF implementa molte delle interfacce Visual Studio prevede che un tipo di progetto fornirà, lasciando libero di concentrarsi sull'implementazione delle specifiche del tipo di progetto.
@@ -94,8 +94,8 @@ Managed Package Framework (MPF) fornisce classi C# che è possibile usare o ered
 |`Microsoft.VisualStudio.Package.DocumentManager`|
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|
 
-## <a name="configuration-and-output-classes"></a>Classi di configurazione e di output
- Nella tabella seguente sono elencate le classi in MPF che consentono ai tipi di progetto di supportare più configurazioni, ad esempio debug e versione, e raccolte di output del progetto. Per altre informazioni, vedere [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).
+## <a name="configuration-and-output-classes"></a>Classi di configurazione e output
+ Nella tabella seguente sono elencate le classi in MPF che consentono ai tipi di progetto di supportare più configurazioni, ad esempio debug e rilascio, e raccolte di output del progetto. Per altre informazioni, vedere [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).
 
 |Nome di classe|
 |----------------|

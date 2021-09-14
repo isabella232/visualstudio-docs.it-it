@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 346ca568371d1ea0dfe04d6f6854e13bb8c23ab6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627611"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Ottiene il tipo di elemento nella matrice.

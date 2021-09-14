@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f4a06eed799b06a3d2809b4e10dc09090a92f9c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626628"
 ---
 # <a name="thunk"></a>Thunk
 Ognuna `thunk` è identificata da un `SymTagThunk` tag .
@@ -30,14 +30,14 @@ Ognuna `thunk` è identificata da un `SymTagThunk` tag .
 
 |Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Attributo modificatore di accesso, uno [dei CV_access_e di](../../debugger/debug-interface-access/cv-access-e.md) enumerazione (solo in DIA SDK versione 8.0 o successiva).|
+|[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Attributo modificatore di accesso, uno dei [CV_access_e di](../../debugger/debug-interface-access/cv-access-e.md) enumerazione (solo in DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Offset della parte della posizione; Per informazioni dettagliate, vedere [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|Parte della sezione della posizione; Per informazioni dettagliate, vedere [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Inclusione dell'elemento padre della classe, se presente (solo DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID del simbolo padre della classe contenitore (solo in DIA SDK V8.0 o versione successiva).|
-|[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|TRUE se il thunk è contrassegnato come costante (solo in DIA SDK versione 8.0 o successiva).|
+|[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|TRUE se il thunk è contrassegnato come costante (solo in DIA SDK V8.0 o versione successiva).|
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|TRUE se il thunk è un'introduzione a una funzione virtuale (solo in DIA SDK versione 8.0 o successiva)|
-|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|TRUE se il thunk è considerato statico (solo in DIA SDK V8.0 o versione successiva).|
+|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|TRUE se il thunk è considerato statico (solo in DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Numero di byte di codice nel thunk.|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo per il compilatore, il blocco o la funzione che lo contiene.|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo padre lessicale.|
@@ -54,7 +54,7 @@ Ognuna `thunk` è identificata da un `SymTagThunk` tag .
 |[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Tipo thunk, come definito [dall'enumerazione THUNK_ORDINAL .](../../debugger/debug-interface-access/thunk-ordinal.md)|
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Tipo di questo thunk (solo in DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID del simbolo di tipo (solo in DIA SDK versione 8.0 o successiva).|
-|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` se il thunk non è allineato (solo in DIA SDK versione 8.0 o successiva),|
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` se il thunk non è allineato (solo in DIA SDK V8.0 o versione successiva),|
 |[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE` se il thunk è virtuale (solo in DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posizione di questo thunk all'interno dell'immagine eseguibile.|
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Offset nella tabella virtuale a questo thunk (solo in DIA SDK V8.0 o versione successiva).|

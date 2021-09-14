@@ -1,5 +1,5 @@
 ---
-description: Descrive l'ampia gamma di tipi definiti dall'utente (UDT).
+description: Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
 title: UdtKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a8f9a065ceb5fce06f01c1e64c6d5acf48959539
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626610"
 ---
 # <a name="udtkind"></a>UdtKind
-Descrive l'ampia gamma di tipi definiti dall'utente (UDT).
+Viene descritta l'ampia gamma di tipi definiti dall'utente (UDT).
 
 ## <a name="syntax"></a>Sintassi
 

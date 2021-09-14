@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 70576204c655725ea68908424b6caad145cf21f0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627684"
 ---
 # <a name="attach-to-the-program"></a>Collegarsi al programma
 Dopo aver registrato i programmi con la porta appropriata, è necessario collegare il debugger al programma di cui si vuole eseguire il debug.
@@ -28,13 +28,13 @@ Dopo aver registrato i programmi con la porta appropriata, è necessario collega
 
 1. Per i programmi avviati dal motore di debug tramite il metodo [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (tipico dei linguaggi interpretati, ad esempio), SDM ottiene l'interfaccia [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) dall'oggetto [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) associato al programma a cui viene collegato. Se SDM può ottenere `IDebugProgramNodeAttach2` l'interfaccia, SDM chiama quindi il [metodo OnAttach.](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Il metodo restituisce per indicare che non è stato collegato al programma e che è possibile eseguire altri tentativi di `IDebugProgramNodeAttach2::OnAttach` `S_OK` connessione al programma.
 
-2. Se SDM può ottenere [l'interfaccia IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) dal programma a cui viene collegato, SDM chiama il [metodo Attach.](../../extensibility/debugger/reference/idebugprogramex2-attach.md) Questo approccio è tipico per i programmi avviati in remoto dal fornitore della porta.
+2. Se SDM può ottenere [l'interfaccia IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) dal programma a cui viene collegato, SDM chiama il [metodo Attach.](../../extensibility/debugger/reference/idebugprogramex2-attach.md) Questo approccio è tipico per i programmi avviati in remoto dal fornitore di porte.
 
 3. Se il programma non può essere collegato tramite i metodi `IDebugProgramNodeAttach2::OnAttach` o , SDM carica il motore di debug (se non è già caricato) chiamando la funzione e quindi chiama il `IDebugProgramEx2::Attach` `CoCreateInstance` metodo [Attach.](../../extensibility/debugger/reference/idebugengine2-attach.md) Questo approccio è tipico per i programmi avviati in locale da un fornitore di porte.
 
     È anche possibile che un fornitore di porte personalizzato chiami il metodo nell'implementazione del metodo del fornitore `IDebugEngine2::Attach` di porte `IDebugProgramEx2::Attach` personalizzato. In genere, in questo caso, il fornitore di porte personalizzato avvia il motore di debug nel computer remoto.
 
-   L'allegato viene ottenuto quando il gestore di debug della sessione (SDM) chiama il [metodo Attach.](../../extensibility/debugger/reference/idebugengine2-attach.md)
+   L'allegato viene ottenuto quando il gestore di debug della sessione (SDM) chiama [il metodo Attach.](../../extensibility/debugger/reference/idebugengine2-attach.md)
 
    Se si esegue la dea nello stesso processo dell'applicazione di cui eseguire il debug, è necessario implementare i metodi seguenti di [IDebugProgramNode2:](../../extensibility/debugger/reference/idebugprogramnode2.md)
 

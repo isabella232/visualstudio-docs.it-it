@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Domande frequenti sul debug di snapshot | Microsoft Docs
-  description: Esaminare un elenco di domande frequenti che potrebbero essere disponibili durante il debug di applicazioni Azure in tempo reale usando Snapshot Debugger in Visual Studio.
+  description: Esaminare un elenco di domande frequenti che potrebbero verificarsi durante il debug di applicazioni Azure in tempo reale Snapshot Debugger in Visual Studio.
   ms.custom: SEO-VS-2020
   ms.date: 11/07/2017
   ms.topic: reference
@@ -13,12 +13,12 @@ metadata:
   manager: jmartens
   ms.workload:
   - multiple
-  ms.openlocfilehash: 0a9de49d4022d4c73c2a24d77c1d1a759d47ab9a329e383472dc0cebcfd7f134
-  ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+  ms.openlocfilehash: 530719aafeaf617aa92b09388768a46e2ccd5bf5
+  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/12/2021
-  ms.locfileid: "121454471"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126626573"
 title: Domande frequenti per il debug di snapshot in Visual Studio
 summary: Ecco un elenco di domande che potrebbero sorgere durante il debug di applicazioni di Azure attive con Snapshot Debugger.
 sections:
@@ -54,7 +54,7 @@ sections:
       È possibile disinstallare l'estensione del sito Snapshot Debugger nel servizio app seguendo questa procedura:
 
 
-      1. Disattivare il servizio app tramite il Cloud Explorer in Visual Studio o portale di Azure.
+      1. Disattivare il servizio app tramite il Cloud Explorer in Visual Studio o il portale di Azure.
 
       1. Passare al sito di Kudu del servizio app (ovvero, servizioapp.**scm**.azurewebsites.net) e passare a **Estensioni del sito**.
 
@@ -64,15 +64,15 @@ sections:
     answer: >
       Snapshot Debugger deve aprire un set di porte per eseguire il debug degli snapshot creati in Azure. Si tratta delle stesse porte necessarie per il debug remoto. [È possibile trovare l'elenco delle porte qui](../debugger/remote-debugger-port-assignments.md).
   - question: >
-      Ricerca per categorie l'estensione Debugger remoto?
+      Ricerca per categorie disabilitare l'estensione Debugger remoto?
     answer: >
       Per Servizi app:
 
-      1. Disabilitare l'estensione del debugger remoto tramite portale di Azure per il servizio app.
+      1. Disabilitare l'estensione Debugger remoto tramite portale di Azure per il servizio app.
 
-      2. portale di Azure > pannello delle risorse del servizio applicazione *>'applicazione Impostazioni*
+      2. portale di Azure > pannello della risorsa del servizio *>'applicazione Impostazioni*
 
-      3. Passare alla sezione *Debug* e fare clic sul *pulsante Disattivato* per *Debug remoto*.
+      3. Passare alla sezione *Debug e* fare clic sul *pulsante Disattivato* per Debug *remoto*.
 
 
       Per il server del supporto di AKS:
@@ -82,16 +82,16 @@ sections:
       2. Ricompilare e ridistribuire l'immagine Docker modificata.
 
 
-      Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'estensione Remote Debugger, Certificati, KeyVault e pool NAT in ingresso come indicato di seguito:
+      Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'estensione Debugger remoto, i certificati, gli insiemi di chiavi e i pool NAT in ingresso come indicato di seguito:
 
 
-      1. Rimuovere l'estensione debugger remoto
+      1. Rimuovere l'estensione Debugger remoto
 
          Esistono diversi modi per disabilitare il debugger remoto per le macchine virtuali e i set di scalabilità di macchine virtuali:
 
             - Disabilitare il debugger remoto tramite Cloud Explorer
 
-               - Cloud Explorer > la risorsa macchina virtuale > disabilitazione del debug (la disabilitazione del debug non esiste per il set di scalabilità di macchine virtuali Cloud Explorer).
+               - Cloud Explorer > la risorsa macchina virtuale > disabilita il debug (la disabilitazione del debug non esiste per il set di scalabilità di macchine virtuali in Cloud Explorer).
 
             - Disabilitare il debugger remoto con script/cmdlet di PowerShell
 
@@ -110,7 +110,7 @@ sections:
                ```
 
             - Disabilitare il debugger remoto tramite il portale di Azure
-               - portale di Azure > pannello delle risorse della macchina virtuale/set di scalabilità di macchine virtuali > estensioni
+               - portale di Azure > della risorsa macchina virtuale/set di scalabilità di macchine virtuali > estensioni
                - Disinstallare l'estensione Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
 
                > [!NOTE]
@@ -118,7 +118,7 @@ sections:
 
       2. Rimuovere certificati e Azure KeyVault
 
-         Quando si installa l'estensione Debugger remoto per i set di scalabilità di macchine virtuali o macchine virtuali, vengono creati certificati client e server per autenticare il client Visual Studio con le risorse dei set di scalabilità di macchine virtuali o macchine virtuali di Azure.
+         Quando si installa l'estensione Debugger remoto per la macchina virtuale o i set di scalabilità di macchine virtuali, vengono creati certificati client e server per autenticare il client Visual Studio con le risorse della macchina virtuale o dei set di scalabilità di macchine virtuali di Azure.
 
          - Certificato client
 
@@ -139,8 +139,8 @@ sections:
             ```
 
          - Certificato del server
-            - L'identificazione personale del certificato server corrispondente viene distribuita come segreto in Azure KeyVault. Visual Studio tenterà di trovare o creare un KeyVault con il prefisso MSVSAZ* nell'area corrispondente alla risorsa della macchina virtuale o dei set di scalabilità di macchine virtuali. Tutte le risorse di macchine virtuali o set di scalabilità di macchine virtuali distribuite in tale area condivideranno quindi lo stesso KeyVault.
-            - Per eliminare il segreto di identificazione personale del certificato server, passare al portale di Azure e trovare MSVSAZ* KeyVault nella stessa area che ospita la risorsa. Eliminare il segreto che deve essere etichettato `remotedebugcert<<ResourceName>>`
+            - L'identificazione personale del certificato del server corrispondente viene distribuita come segreto in Azure KeyVault. Visual Studio tenterà di trovare o creare un keyvault con prefisso MSVSAZ* nell'area corrispondente alla risorsa macchina virtuale o set di scalabilità di macchine virtuali. Tutte le risorse della macchina virtuale o dei set di scalabilità di macchine virtuali distribuite in tale area condivideranno quindi lo stesso insieme di controllo delle chiavi.
+            - Per eliminare il segreto di identificazione personale del certificato del server, passare al portale di Azure e trovare l'oggetto KeyVault MSVSAZ* nella stessa area che ospita la risorsa. Eliminare il segreto che deve essere etichettato `remotedebugcert<<ResourceName>>`
             - Sarà anche necessario eliminare il segreto del server dalla risorsa tramite PowerShell.
 
             Per le macchine virtuali:
@@ -159,7 +159,7 @@ sections:
 
       3. Rimuovere tutti i pool NAT in ingresso DebuggerListener (solo set di scalabilità di macchine virtuali)
 
-         Il debugger remoto introduce i pool NAT in associazione DebuggerListener applicati al servizio di bilanciamento del carico del set di scalabilità.
+         Il debugger remoto introduce i pool NAT associati di DebuggerListener applicati al servizio di bilanciamento del carico del set di scalabilità.
 
          ```powershell
          $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
@@ -179,14 +179,14 @@ sections:
 
       1. Disabilitare Snapshot Debugger tramite il portale di Azure per il servizio app.
 
-      2. portale di Azure > pannello delle risorse del servizio applicazione *>'applicazione Impostazioni*
+      2. portale di Azure > pannello della risorsa del servizio *>'applicazione Impostazioni*
 
       3. Eliminare le impostazioni dell'app seguenti nel portale di Azure e salvare le modifiche.
          - INSTRUMENTATIONENGINE_EXTENSION_VERSION
          - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
          > [!WARNING]
-         > Qualsiasi modifica apportata a Application Impostazioni avvierà un riavvio dell'app. Per altre informazioni sull'applicazione Impostazioni, vedere [Configurare un'app del](/azure/app-service/web-sites-configure)servizio app nella portale di Azure .
+         > Qualsiasi modifica apportata a Application Impostazioni avvierà un riavvio dell'app. Per altre informazioni su Application Impostazioni, vedere [Configurare un'app del servizio app nel portale di Azure](/azure/app-service/web-sites-configure).
 
       Per il server del supporto di AKS:
 
@@ -195,7 +195,7 @@ sections:
       2. Ricompilare e ridistribuire l'immagine Docker modificata.
 
 
-      Per i set di scalabilità di macchine virtuali/macchine virtuali:
+      Per i set di scalabilità di macchine virtuali/ macchine virtuali:
 
 
       Esistono diversi modi per disabilitare il Snapshot Debugger:
@@ -203,7 +203,7 @@ sections:
       - Cloud Explorer > la risorsa macchina virtuale/set di scalabilità di macchine virtuali > Disabilita diagnostica
 
 
-      - portale di Azure > pannello delle risorse della macchina virtuale o del set di scalabilità di macchine virtuali > estensioni > Disinstallare Microsoft. Insights. Estensione VMDiagnosticsSettings
+      - portale di Azure > pannello della risorsa macchina virtuale/set di scalabilità di macchine virtuali > estensioni > Disinstalla Microsoft. Insights. Estensione VMDiagnosticsSettings
 
 
       - Cmdlet di PowerShell da [Az PowerShell](/powershell/azure/overview)

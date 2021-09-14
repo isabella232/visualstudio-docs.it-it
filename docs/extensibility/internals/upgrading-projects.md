@@ -1,6 +1,6 @@
 ---
 title: Aggiornamento dei progetti | Microsoft Docs
-description: Informazioni sulle interfacce fornite dall'SDK Visual Studio per implementare il supporto dell'aggiornamento nei progetti.
+description: Informazioni sulle interfacce fornite da Visual Studio SDK per implementare il supporto dell'aggiornamento nei progetti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,15 +16,15 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 426fb7499e9c6ce9fa5fc5c9e212f30b6a73a0f4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122158606"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627306"
 ---
 # <a name="upgrading-projects"></a>Aggiornamento dei progetti
 
-Le modifiche al modello di progetto da una Visual Studio alla successiva possono richiedere l'aggiornamento di progetti e soluzioni in modo che possano essere eseguiti nella versione più recente. fornisce [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfacce che possono essere usate per implementare il supporto dell'aggiornamento nei propri progetti.
+Le modifiche al modello di progetto da una Visual Studio alla successiva potrebbero richiedere l'aggiornamento di progetti e soluzioni in modo che possano essere eseguiti nella versione più recente. fornisce [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfacce che possono essere usate per implementare il supporto dell'aggiornamento nei propri progetti.
 
 ## <a name="upgrade-strategies"></a>Strategie di aggiornamento
 
@@ -57,7 +57,7 @@ Dopo aver aggiornato tutti i file globali rilevanti, ogni factory del progetto p
 
 Usare il servizio per verificare se è possibile modificare un file prima di modificarlo e <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> salvarlo prima di salvarlo. Ciò consente alle implementazioni di backup e aggiornamento di gestire i file di progetto nel controllo del codice sorgente, i file con autorizzazioni insufficienti e così via.
 
-Usare il servizio durante tutte le fasi di backup e aggiornamento per fornire informazioni <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> sull'esito positivo o negativo del processo di aggiornamento.
+Usare il servizio durante tutte le fasi di backup e aggiornamento per fornire informazioni sull'esito positivo o negativo <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> del processo di aggiornamento.
 
 Per altre informazioni sul backup e sull'aggiornamento di progetti, vedere i commenti per IVsProjectUpgrade in vsshell2.idl.
 
@@ -101,7 +101,7 @@ Con gli aggiornamenti di progetti si verificano i seguenti scenari:
 
 ### <a name="ivsprojectupgrade-implementation"></a>Implementazione di IVsProjectUpgrade
 
-Se il sistema del progetto implementa solo , non può partecipare alla <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> **Visual Studio guidata**. Tuttavia, anche se si implementa l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, è comunque possibile delegare l'aggiornamento dei file all'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
+Se il sistema del progetto implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> solo , non può partecipare alla Visual Studio **conversione guidata**. Tuttavia, anche se si implementa l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, è comunque possibile delegare l'aggiornamento dei file all'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
 
 #### <a name="to-implement-ivsprojectupgrade"></a>Per implementare IVsProjectUpgrade
 
@@ -143,7 +143,7 @@ Questa chiamata può causare l'estrazione di una nuova copia del file di progett
 
 - Se si gestisce autonomamente il ricaricamento del progetto, l'ambiente chiama l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT). Quando si riceve questa chiamata, ricaricare la prima istanza del progetto (Project1) e continuare l'aggiornamento del file di progetto. L'ambiente è consapevole del fatto che si gestisce autonomamente il ricaricamento del progetto se si restituisce `true` per <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>).
 
-- Se non si gestisce autonomamente il ricaricamento del progetto, si restituisce `false` per <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>). In questo caso, prima che (QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) venga restituito, l'ambiente crea un'altra nuova istanza del progetto, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> Project2, come indicato di seguito:
+- Se non si gestisce autonomamente il ricaricamento del progetto, si restituisce `false` per <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>). In questo caso, prima che (QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) venga restituita, l'ambiente crea un'altra nuova istanza del progetto, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> Project2, come indicato di seguito:
 
     1. L'ambiente chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> sul primo oggetto di progetto, Project1, impostando così questo oggetto nello stato inattivo.
 
@@ -164,23 +164,23 @@ Se non è possibile eseguire l'aggiornamento, restituire <xref:Microsoft.VisualS
 
 ## <a name="upgrading-project-items"></a>Aggiornamento degli elementi di progetto
 
-Se si aggiungono o si gestiscono elementi all'interno di sistemi di progetto non implementati, potrebbe essere necessario partecipare al processo di aggiornamento del progetto. Il report Disampli è un esempio di elemento che può essere aggiunto al sistema del progetto.
+Se si aggiungono o gestiscono elementi all'interno di sistemi di progetto non implementati, potrebbe essere necessario partecipare al processo di aggiornamento del progetto. Crystal Reports è un esempio di un elemento che può essere aggiunto al sistema del progetto.
 
-In genere, gli implementatori di elementi di progetto desiderano sfruttare un progetto già completamente creato e aggiornato perché devono conoscere quali sono i riferimenti al progetto e quali altre proprietà del progetto sono disponibili per prendere una decisione di aggiornamento.
+In genere, gli implementatori di elementi di progetto vogliono sfruttare un progetto già completamente creato e aggiornato perché devono conoscere quali sono i riferimenti al progetto e quali altre proprietà del progetto sono disponibili per prendere una decisione di aggiornamento.
 
 ### <a name="to-get-the-project-upgrade-notification"></a>Per ottenere la notifica di aggiornamento del progetto
 
-1. Impostare il <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> flag (definito in vsshell80.idl) nell'implementazione dell'elemento di progetto. In questo modo il pacchetto VSPackage dell'elemento di progetto viene caricato automaticamente quando la shell Visual Studio determina che è in corso l'aggiornamento di un sistema di progetto.
+1. Impostare il <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> flag (definito in vsshell80.idl) nell'implementazione dell'elemento di progetto. In questo modo, il pacchetto VSPackage dell'elemento di progetto viene caricato automaticamente quando Visual Studio shell determina che è in corso l'aggiornamento di un sistema di progetto.
 
-2. Consigliare <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> l'interfaccia tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> il metodo .
+2. Consigliare <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> l'interfaccia tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> metodo .
 
-3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>L'interfaccia viene generato dopo che l'implementazione del sistema del progetto ha completato le operazioni di aggiornamento e dopo la creazione del nuovo progetto aggiornato. A seconda dello scenario, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> l'interfaccia viene generato dopo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> i metodi , o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> .
+3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>L'interfaccia viene attivato dopo che l'implementazione del sistema del progetto ha completato le operazioni di aggiornamento e viene creato il nuovo progetto aggiornato. A seconda dello scenario, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> l'interfaccia viene generato dopo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> i metodi , o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> .
 
 ### <a name="to-upgrade-the-project-item-files"></a>Per aggiornare i file degli elementi di progetto
 
-1. È necessario gestire con attenzione il processo di backup dei file nell'implementazione dell'elemento di progetto. Questo vale in particolare per un backup side-by-side, in cui il parametro del metodo è impostato su , dove i file di cui è stato eseguito il backup vengono posizionati insieme ai file affiancati designati `fUpgradeFlag` <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> come <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> ".old". I file di cui è stato eseguito il backup precedenti all'ora di sistema in cui è stato aggiornato il progetto possono essere designati come non aggiornati. Inoltre, potrebbero essere sovrascritti a meno che non si eservino passaggi specifici per evitare questo problema.
+1. È necessario gestire con attenzione il processo di backup dei file nell'implementazione dell'elemento di progetto. Questo vale in particolare per un backup side-by-side, in cui il parametro del metodo è impostato su , dove i file di cui è stato eseguito il backup vengono posizionati lungo i file laterali designati `fUpgradeFlag` <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> come <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> ".old". I file di cui è stato eseguito il backup precedenti all'ora di sistema in cui è stato aggiornato il progetto possono essere designati come non aggiornati. Inoltre, potrebbero essere sovrascritti a meno che non si eservino passaggi specifici per evitare questo problema.
 
-2. Nel momento in cui l'elemento di progetto riceve una notifica dell'aggiornamento del progetto, viene comunque visualizzata Visual Studio **conversione** guidata. Pertanto, è consigliabile usare i metodi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> dell'interfaccia per fornire messaggi di aggiornamento all'interfaccia utente della procedura guidata.
+2. Quando l'elemento di progetto riceve una notifica dell'aggiornamento del progetto, viene visualizzata Visual Studio **conversione** guidata. È pertanto consigliabile usare i metodi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> dell'interfaccia per fornire messaggi di aggiornamento all'interfaccia utente della procedura guidata.
 
 ## <a name="see-also"></a>Vedi anche
 

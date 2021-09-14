@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 1bac4730717257954144569c9a557c416178000f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627185"
 ---
 # <a name="replace-command"></a>Comando Sostituisci
 Sostituisce il testo nei file usando un subset delle opzioni disponibili nella scheda **Sostituisci nei file** della finestra **Trova e sostituisci**.
@@ -107,6 +107,6 @@ In questo esempio `btnSend` con `btnSubmit` tutti i documenti aperti.
 
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

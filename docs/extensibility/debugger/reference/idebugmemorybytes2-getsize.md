@@ -19,11 +19,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0ee829df9f3a08decff9969d3b862cfade61b5a4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127116"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627419"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 Recupera le dimensioni, in byte, della memoria rappresentata da questo [oggetto IDebugMemoryBytes2.](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

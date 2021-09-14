@@ -1,5 +1,5 @@
 ---
-title: DA0008 - Pochi campioni raccolti | Microsoft Docs
+title: DA0008 - Pochi esempi raccolti | Microsoft Docs
 description: Durante l'esecuzione della profilatura sono stati raccolti solo alcuni campioni.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b12813f7e0da051a0b6d96ac907638acf04517f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626975"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Numero ridotto di campioni raccolti
 

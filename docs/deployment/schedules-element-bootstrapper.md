@@ -1,5 +1,5 @@
 ---
-title: '&lt;Elemento &gt; Schedules (bootstrapper) | Microsoft Docs'
+title: '&lt;Elemento &gt; Schedules (programma di avvio automatico) | Microsoft Docs'
 description: L'elemento Schedules contiene gli elementi Schedule, che definiscono orari specifici in cui devono essere eseguiti i comandi definiti dall'elemento Command.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -19,14 +19,14 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f9430dd814ba76f0a8e688d6a198c8715fc4d99
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120712"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627744"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Elemento Schedules &gt; (programma di avvio automatico)
-L'elemento contiene elementi che definiscono orari specifici in cui devono essere eseguiti i comandi definiti `Schedules` `Schedule` `Command` dall'elemento .
+`Schedules`L'elemento contiene elementi che definiscono orari specifici in cui devono essere eseguiti i comandi definiti `Schedule` `Command` dall'elemento .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ L'elemento contiene elementi che definiscono orari specifici in cui devono esser
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- `Schedules`L'elemento è un elemento figlio dell'elemento `Product` . Ogni `Product` elemento può avere al massimo un `Schedules` elemento. L'elemento `Schedules` non ha attributi.
+ `Schedules`L'elemento è figlio `Product` dell'elemento . Ogni `Product` elemento può avere al massimo un elemento `Schedules` . L'elemento `Schedules` non ha attributi.
 
 ## <a name="schedule"></a>Pianifica
- `Schedule`L'elemento è un elemento figlio dell'elemento `Schedules` . Un `Schedules` elemento deve avere almeno un elemento `Schedule` .
+ `Schedule`L'elemento è figlio `Schedules` dell'elemento . Un `Schedules` elemento deve avere almeno un elemento `Schedule` .
 
  `Schedule` ha l'attributo seguente.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Name`|Obbligatorio. Nome dell'elemento di pianificazione. Corrisponde alla proprietà `ScheduleName` `Command` dell'elemento . Quando un oggetto fa riferimento alla pianificazione denominata, verrà eseguito solo al momento `Command` indicato da tale `Schedule` elemento. Le pianificazioni possono anche essere associate agli elementi e , che limitano l'esecuzione di questi `FailIf` `BypassIf` test condizionali in base alla pianificazione specificata. Per altre informazioni, vedere [ \<Commands> Elemento](../deployment/commands-element-bootstrapper.md).|
+|`Name`|Obbligatorio. Nome dell'elemento di pianificazione. Corrisponde alla proprietà `ScheduleName` `Command` dell'elemento . Quando un `Command` oggetto fa riferimento alla pianificazione denominata, verrà eseguita solo all'ora indicata dall'elemento. `Schedule` Le pianificazioni possono anche essere associate agli elementi e , che limitano questi `FailIf` `BypassIf` test condizionali all'esecuzione in base alla pianificazione specificata. Per altre informazioni, vedere [ \<Commands> Elemento](../deployment/commands-element-bootstrapper.md).|
 
  Un determinato `Schedule` elemento può avere esattamente uno degli elementi figlio seguenti.
 

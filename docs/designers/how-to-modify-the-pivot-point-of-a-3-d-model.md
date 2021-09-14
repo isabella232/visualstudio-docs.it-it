@@ -12,11 +12,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: 17c02f56d29fbda871cbe74cf156deffbb1908e1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627743"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procedura: Modificare il punto pivot di un modello 3D
 

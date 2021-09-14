@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d09add9aa4362483014fac1e1349591c471f74ec
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626627"
 ---
 # <a name="idiasymbolget_timestamp"></a>IDiaSymbol::get_timeStamp
 Recupera il timestamp del file eseguibile sottostante.

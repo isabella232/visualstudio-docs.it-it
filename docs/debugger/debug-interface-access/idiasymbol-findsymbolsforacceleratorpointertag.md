@@ -1,5 +1,5 @@
 ---
-description: Dato un valore tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub.
+description: Dato un valore di tag corrispondente, questo metodo restituisce un'enumerazione dei simboli contenuti in questa funzione stub.
 title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,15 +13,15 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b5ccf90584cfc948fc4ecb886dd20ada5cbf6036
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626712"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
 
-Dato un valore tag corrispondente, questo metodo restituisce un'enumerazione di simboli contenuti in questa funzione stub.
+Dato un valore di tag corrispondente, questo metodo restituisce un'enumerazione dei simboli contenuti in questa funzione stub.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +34,7 @@ HRESULT findSymbolsForAccleratorPointerTag (
 #### <a name="parameters"></a>Parametri
  `tagValue`
 
-[in] Valore del tag del puntatore per il quale vengono trovati i record del simbolo del puntato.
+[in] Valore del tag del puntatore per il quale vengono trovati i record dei simboli del puntato.
 
  `ppResult`
 

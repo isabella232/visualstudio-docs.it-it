@@ -1,6 +1,6 @@
 ---
 title: Azioni rapide comuni
-description: Più diffusi azioni rapide per C# e Visual Basic incluse la correzione di parole chiave o simboli con errori di ortografia, la risoluzione dei conflitti di unione, la rimozione delle importazioni necessarie, la generazione di tipi, l'introduzione di variabili locali e così via.
+description: Più diffusi azioni rapide per C# e Visual Basic incluse la correzione di parole chiave o simboli con errori di ortografia, la risoluzione dei conflitti di merge, la rimozione delle importazioni necessarie, la generazione di tipi, l'introduzione di variabili locali e così via.
 ms.date: 03/28/2018
 ms.topic: reference
 author: TerryGLee
@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6fcf1ab1fdb5565cd4ba76c6eaa5c6b5a8fd74d6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124100"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627245"
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -31,7 +31,7 @@ Le Azioni rapide in questa sezione consentono di correggere gli errori nel codic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi verranno visualizzati nel menu della lampadina come **"Cambia ' \<misspelled word> ' in ' \<correct word> '".** Esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi verranno visualizzati nel menu lampadina come **"Cambia ' \<misspelled word> ' in ' \<correct word> '".** Ad esempio:
 
 ```csharp
 // Before
@@ -97,7 +97,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Rimuovere istruzioni using/Imports non necessarie
 
-**L'azione rapida Remove Unnecessary Usings/Imports** rimuove tutte le direttive e non utilizzate per il file `using` `Import` corrente. Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
+L'azione rapida Rimuovi istruzioni **Using/Importazioni non** necessarie rimuove tutte le direttive `using` e `Import` inutilizzate per il file corrente. Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
 
 | Linguaggi applicabili | Versione supportata |
 | - | - |

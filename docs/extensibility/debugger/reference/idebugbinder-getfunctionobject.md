@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ecdff1d78326dd55f0b666b77611e3034e653014
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627510"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 Questo metodo ottiene un [oggetto IDebugFunctionObject usato](../../../extensibility/debugger/reference/idebugfunctionobject.md) per creare i parametri della funzione.

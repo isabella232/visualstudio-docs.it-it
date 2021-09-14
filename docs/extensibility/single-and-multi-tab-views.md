@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d03563fe84d8985ab1fd1b746a05cd0c8d43e485
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144418"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627252"
 ---
 # <a name="single-and-multi-tab-views"></a>Visualizzazioni a schede singole e multiple
 Un editor può creare tipi diversi di visualizzazioni. Un esempio è una finestra dell'editor di codice, un'altra è una finestra di progettazione di form.
@@ -55,10 +55,10 @@ Un editor può creare tipi diversi di visualizzazioni. Un esempio è una finestr
 
  Anche se i GUID di visualizzazione logica sono estendibili, è possibile usare solo i GUID di visualizzazione logica definiti nel pacchetto VSPackage.
 
- All'arresto, Visual Studio mantiene il GUID della factory dell'editor e le stringhe di visualizzazione fisica associate alla finestra del documento in modo che possa essere usato per riaperre le finestre del documento quando la soluzione viene riaperta. Solo le finestre aperte quando una soluzione viene chiusa vengono salvate in modo permanente nel file della soluzione (con estensione suo). Questi valori corrispondono ai `VSFPROPID_guidEditorType` valori e passati nel parametro nel metodo `VSFPROPID_pszPhysicalView` `propid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> .
+ All'arresto, Visual Studio mantiene il GUID della factory dell'editor e le stringhe di visualizzazione fisica associate alla finestra del documento in modo che possa essere usato per riaperre le finestre del documento quando la soluzione viene riaperta. Solo le finestre aperte quando una soluzione viene chiusa vengono mantenute nel file della soluzione (con estensione suo). Questi valori corrispondono ai `VSFPROPID_guidEditorType` valori e passati nel parametro nel metodo `VSFPROPID_pszPhysicalView` `propid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> .
 
 ## <a name="example"></a>Esempio
- Questo frammento di codice illustra come <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> viene usato l'oggetto per accedere a una vista che implementa `IVsCodeWindow` . In questo caso, il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> servizio viene usato per chiamare e richiedere , che ottiene un <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> `LOGVIEWID_TextView` puntatore a una cornice di finestra. Un puntatore all'oggetto visualizzazione documento viene ottenuto chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> e specificando il valore `VSFPROPID_DocView` . Dall'oggetto di visualizzazione del `QueryInterface` documento viene chiamato per `IVsCodeWindow` . L'aspettativa in questo caso è che viene restituito un editor di testo e quindi l'oggetto visualizzazione documento restituito nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodo è una finestra del codice.
+ Questo frammento di codice illustra come <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> viene usato l'oggetto per accedere a una vista che implementa `IVsCodeWindow` . In questo caso, il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> servizio viene usato per chiamare e richiedere , che ottiene un <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> `LOGVIEWID_TextView` puntatore a una cornice di finestra. Un puntatore all'oggetto visualizzazione documento viene ottenuto chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> e specificando il valore `VSFPROPID_DocView` . Dall'oggetto di visualizzazione del documento `QueryInterface` viene chiamato per `IVsCodeWindow` . L'aspettativa in questo caso è che viene restituito un editor di testo e quindi l'oggetto visualizzazione documento restituito nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> metodo è una finestra del codice.
 
 ```cpp
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)

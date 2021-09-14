@@ -1,6 +1,6 @@
 ---
-title: Finestra di dialogo Opzioni, progetti e soluzioni, compila ed Esegui
-description: Specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione in Visual Studio.
+title: Finestra di dialogo Opzioni, Progetti e soluzioni, Compilazione ed esecuzione
+description: Specificare il numero massimo di progetti C++ o C# che è possibile compilare contemporaneamente, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione in Visual Studio.
 '\ms.custom': SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
@@ -18,15 +18,15 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: f3b6d98e715d0c86af6948f2fcc502e94dfde56a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627227"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> Compila ed Esegui
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo Opzioni: Compilazione ed esecuzione di \> progetti e soluzioni
 
-In questa finestra di dialogo è possibile specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione. Per accedere a queste opzioni, selezionare **strumenti**  >  **Opzioni** espandere **progetti e soluzioni**, quindi selezionare **Compila ed Esegui**.
+In questa finestra di dialogo è possibile specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione. Per accedere a queste opzioni, selezionare **Opzioni**  >  **strumenti** espandere **Progetti e soluzioni** e quindi selezionare Compila ed **esegui.**
 
 **Numero massimo di compilazioni di progetto parallele**
 
@@ -60,7 +60,7 @@ Determina la quantità di informazioni del processo di compilazione che viene vi
 
 *Si applica solo ai progetti C++.*
 
-Determina la quantità di informazioni scritte nel file di log di compilazione, disponibile in *\\ \<ProjectName> \Debug \\ \<ProjectName> . log*.
+Determina la quantità di informazioni scritte nel file di log di compilazione, disponibile in *\\ \<ProjectName> \Debug \\ \<ProjectName> .log.*
 
 ## <a name="see-also"></a>Vedi anche
 

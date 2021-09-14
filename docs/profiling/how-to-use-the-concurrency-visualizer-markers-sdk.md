@@ -1,6 +1,6 @@
 ---
 title: Usare l'SDK degli indicatori del visualizzatore di concorrenza | Microsoft Docs
-description: Informazioni su come usare l'SDK dei marcatori del visualizzatore di concorrenza in Visual Studio per creare intervalli e scrivere flag, messaggi e avvisi.
+description: Informazioni su come usare l'SDK marcatori del visualizzatore di concorrenza in Visual Studio creare intervalli e scrivere flag, messaggi e avvisi.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -11,11 +11,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 89d0f933d340075c6faf5cba96b7dc185552ab37
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626928"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procedura: Usare l'SDK degli indicatori del visualizzatore di concorrenza
 Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per creare intervalli e scrivere flag, messaggi e avvisi.

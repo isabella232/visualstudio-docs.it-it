@@ -19,11 +19,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 65da75976642997f626de1aeeab52b4d88a948fa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627210"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Finestra di dialogo Opzioni (Visual Studio)
 

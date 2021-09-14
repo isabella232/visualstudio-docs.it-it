@@ -19,17 +19,17 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a5814c8d331ae1671c40d2f245f117f432e3a9b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065828"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626615"
 ---
 # <a name="udt"></a>UDT
 Ogni classe, struttura e unione è identificata da un `SymTagUDT` simbolo. Ogni membro, funzione, dati o tipo annidato e ogni classe di base viene visualizzato come elemento figlio della classe del tipo definito dall'utente (UDT).
 
 ## <a name="properties"></a>Proprietà
- La tabella seguente illustra proprietà valide aggiuntive per questo tipo di simbolo.
+ La tabella seguente illustra altre proprietà valide per questo tipo di simbolo.
 
 |Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
@@ -39,18 +39,18 @@ Ogni classe, struttura e unione è identificata da un `SymTagUDT` simbolo. Ogni 
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` se il tipo definito dall'utente è contrassegnato come costante.|
 |[IDiaSymbol::get_hasAssignmentOperator](../../debugger/debug-interface-access/idiasymbol-get-hasassignmentoperator.md)|`BOOL`|`TRUE` se per il tipo definito dall'utente sono definiti operatori di assegnazione.|
 |[IDiaSymbol::get_hasCastOperator](../../debugger/debug-interface-access/idiasymbol-get-hascastoperator.md)|`BOOL`|`TRUE` se per il tipo definito dall'utente sono definiti operatori cast.|
-|[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|`BOOL`|`TRUE` se il tipo definito dall'utente dispone di definizioni di tipi annidati.|
+|[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|`BOOL`|`TRUE` se il tipo definito dall'utente ha definizioni di tipo annidato.|
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`LONGLONG`|Dimensione, in byte, del tipo definito dall'utente.|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo dell'oggetto [Compiland che lo racchiude.](../../debugger/debug-interface-access/compiland.md)|
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo dell'oggetto [Compiland che lo contiene.](../../debugger/debug-interface-access/compiland.md)|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo padre lessicale.|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome del tipo definito dall'utente.|
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|`BOOL`|`TRUE` se il tipo definito dall'utente è annidato.|
 |[IDiaSymbol::get_overloadedOperator](../../debugger/debug-interface-access/idiasymbol-get-overloadedoperator.md)|`BOOL`|`TRUE` se gli operatori di overload sono definiti per il tipo definito dall'utente.|
-|[IDiaSymbol::get_packed](../../debugger/debug-interface-access/idiasymbol-get-packed.md)|`BOOL`|`TRUE` se il tipo definito dall'utente è di tipo pack.|
+|[IDiaSymbol::get_packed](../../debugger/debug-interface-access/idiasymbol-get-packed.md)|`BOOL`|`TRUE` se il tipo definito dall'utente è in pacchetto.|
 |[IDiaSymbol::get_scoped](../../debugger/debug-interface-access/idiasymbol-get-scoped.md)|`BOOL`|`TRUE` se il tipo definito dall'utente viene visualizzato in un ambito lessicale non globale.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indice del simbolo.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagUDT` (uno dei [valori dell'enumerazione SymTagEnum).](../../debugger/debug-interface-access/symtagenum.md)|
-|[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|`DWORD`|Indica se si tratta di una struttura, una classe o un'unione. Per informazioni dettagliate, vedere [Enumerazione UdtKind.](../../debugger/debug-interface-access/udtkind.md)|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagUDT` (uno dei valori [dell'enumerazione SymTagEnum).](../../debugger/debug-interface-access/symtagenum.md)|
+|[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|`DWORD`|Indica se si tratta di una struttura, una classe o un'unione. Per informazioni dettagliate, vedere [Enumerazione UdtKind](../../debugger/debug-interface-access/udtkind.md).|
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` se il tipo definito dall'utente non è allineato.|
 |[IDiaSymbol::get_virtualTableShape](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshape.md)|`IDiaSymbol*`|Tipo della tabella virtuale.|
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|ID del simbolo della forma della tabella virtuale.|

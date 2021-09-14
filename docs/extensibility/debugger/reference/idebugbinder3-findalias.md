@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8138d702fb8507cfb1da24f28995b2bc4d21341f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119906"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627492"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Questo metodo individua un alias, dato un nome. In questo modo verranno cercati tutti gli alias nel programma.

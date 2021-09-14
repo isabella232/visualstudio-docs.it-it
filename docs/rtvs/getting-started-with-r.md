@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 26a7c3ed6db4ceda5128bee93c607e45a0db3ef0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626867"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introduzione a R Tools per Visual Studio
 
@@ -64,7 +64,7 @@ Dopo aver installato R Tools per Visual Studio (RTVS), da [How to install R Tool
 
 1. Alcuni comandi, ad esempio `plot(1:100)`, aprono una nuova finestra in Visual Studio quando non è possibile visualizzare l'output direttamente nella finestra interattiva:
 
-    ![Screenshot di una Visual Studio R Plot che visualizza l'output del grafico grafico function plot(1:100).](media/getting-started-07-plot-window.png)
+    ![Screenshot di una finestra Visual Studio R Plot che visualizza l'output del grafico grafico function plot(1:100).](media/getting-started-07-plot-window.png)
 
 La finestra interattiva consente anche di rivedere la cronologia, caricare e salvare le aree di lavoro, collegarsi a un debugger e interagire con i file di codice sorgente anziché usare operazioni di copia e incolla. Per altri dettagli, vedere [Uso della finestra R interattivo](interactive-repl-for-r-in-visual-studio.md).
 
@@ -127,7 +127,7 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
     lines(density(samp.means))
     ```
 
-1. **CTRL+FRECCIA DESTRA** + **A** e **CTRL** + **INVIO di** nuovo per visualizzare il risultato:
+1. **CTRL** + **A** e **CTRL** + **INVIO di** nuovo per visualizzare il risultato:
 
     ![Doppio tracciato aggiornato in Visual Studio, ridimensionato correttamente](media/getting-started-10-plot3.png)
 
@@ -151,7 +151,7 @@ Uno dei principali vantaggi di Visual Studio è l'interfaccia utente di debug. R
 
     ![Barra degli strumenti Debug in Visual Studio](media/getting-started-13-debug3.png)
 
-1. Quando l'esecuzione si arresta in corrispondenza del punto di interruzione, è possibile esaminare i valori delle variabili. Individuare la finestra **Auto** in Visual Studio e selezionare la scheda nella parte inferiore denominata **Variabili locali**. La finestra **Variabili locali** visualizza le variabili locali nel punto corrente all'interno del programma. Se il programma è stato interrotto in corrispondenza del punto di interruzione impostato in precedenza, si nota che la variabile `pop` non è ancora definita. A questo punto usare **il comando**  >  **Debug passaggio** su (**F10**) e viene visualizzato il valore per `pop` :
+1. Quando l'esecuzione si arresta in corrispondenza del punto di interruzione, è possibile esaminare i valori delle variabili. Individuare la finestra **Auto** in Visual Studio e selezionare la scheda nella parte inferiore denominata **Variabili locali**. La finestra **Variabili locali** visualizza le variabili locali nel punto corrente all'interno del programma. Se il programma è stato interrotto in corrispondenza del punto di interruzione impostato in precedenza, si nota che la variabile `pop` non è ancora definita. A questo punto usare **il comando Debug**  >  **passaggio** su (**F10**) e viene visualizzato il valore per `pop` :
 
     ![Finestra Variabili locali in Visual Studio](media/getting-started-14-debug4.png)
 

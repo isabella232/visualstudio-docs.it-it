@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: e8d9577bb9dc04dd8d226303ff149f2a40fe37c8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074516"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626742"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un determinato indirizzo.

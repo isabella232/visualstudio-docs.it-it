@@ -19,11 +19,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3d3926b151cc078dc879ebbe44ba3b902919bca3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127038"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627395"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 Aggiunge il valore specificato al contesto corrente e restituisce un nuovo contesto.
@@ -55,9 +55,9 @@ int Add(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Un contesto di memoria è un indirizzo, pertanto l'aggiunta di un valore a un indirizzo produce un nuovo indirizzo che richiede una nuova interfaccia di contesto.
+ Un contesto di memoria è un indirizzo, quindi l'aggiunta di un valore a un indirizzo produce un nuovo indirizzo che richiede una nuova interfaccia di contesto.
 
- Questo metodo deve sempre produrre un nuovo contesto, anche se l'indirizzo risultante non è compreso nello spazio di memoria associato a questo contesto. L'unica eccezione è se non è possibile allocare memoria per il nuovo contesto o se è `ppMemCxt` un valore Null (che è un errore).
+ Questo metodo deve sempre produrre un nuovo contesto, anche se l'indirizzo risultante è esterno allo spazio di memoria associato a questo contesto. L'unica eccezione è se non è possibile allocare memoria per il nuovo contesto o se è un valore `ppMemCxt` Null (che è un errore).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

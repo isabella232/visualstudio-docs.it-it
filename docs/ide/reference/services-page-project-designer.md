@@ -1,6 +1,6 @@
 ---
 title: Pagina Servizi, Progettazione progetti
-description: Informazioni su come usare la pagina Servizi di Progettazione Project per abilitare e configurare i servizi delle applicazioni client per il progetto.
+description: Informazioni su come usare la pagina Servizi di Progettazione Project per abilitare e configurare i servizi dell'applicazione client per il progetto.
 ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: bc765f09966a9dbd5aed7ab31b4c2829e6c490dc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627131"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
 

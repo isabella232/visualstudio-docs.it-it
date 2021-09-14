@@ -27,11 +27,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cb6232fc642030a1e276a06b865e3112380b387
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627797"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualizzare i thread nel debugger Visual Studio usando la finestra Thread (C#, Visual Basic, C++)
 Nella finestra **Thread** è possibile esaminare e usare i thread nell'applicazione di cui si esegue il debug. Per istruzioni dettagliate su come usare la finestra **Thread,** vedere [Procedura dettagliata: Eseguire](../debugger/how-to-use-the-threads-window.md)il debug tramite la finestra Thread .

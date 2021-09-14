@@ -1,5 +1,5 @@
 ---
-description: Cerca l'indirizzo stack frame specificato in corrispondenza o vicino all'indirizzo specificato.
+description: Cerca nell'indirizzo stack frame specificato un indirizzo mittente in corrispondenza o vicino all'indirizzo specificato.
 title: IDiaStackWalkFrame::searchForReturnAddressStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bbb837fe55405b9f66dd55913a8773b5b82ad7a50f132710e2398c60776a5a9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd8070890752e08e265ee2f526964a871e848f76
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121454839"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626855"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Cerca l'indirizzo stack frame specificato in corrispondenza o vicino all'indirizzo specificato.
+Cerca nell'indirizzo stack frame specificato un indirizzo mittente in corrispondenza o vicino all'indirizzo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ HRESULT searchForReturnAddressStart (
 
  `returnAddress`
 
-[out] Restituisce l'indirizzo restituito della funzione più vicina a `startAddress` .
+[out] Restituisce l'indirizzo restituito della funzione più vicino a `startAddress` .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

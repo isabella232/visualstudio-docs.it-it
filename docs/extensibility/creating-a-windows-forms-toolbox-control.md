@@ -15,15 +15,15 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: f7937c3e78a9f9d113fa3394a7d7be948a22059e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627702"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella Windows Form
 
-Il modello di elemento Windows Forms Toolbox Control incluso negli strumenti di estendibilità  di Visual Studio (VS SDK) consente di creare un controllo della casella degli strumenti che viene aggiunto automaticamente quando viene installata l'estensione. Questa procedura dettagliata illustra come usare il modello per creare un semplice controllo contatore che è possibile distribuire ad altri utenti.
+Il modello di elemento Windows Forms Toolbox Control incluso negli strumenti di estendibilità di  Visual Studio (VS SDK) consente di creare un controllo della casella degli strumenti che viene aggiunto automaticamente quando viene installata l'estensione. Questa procedura dettagliata illustra come usare il modello per creare un semplice controllo contatore che è possibile distribuire ad altri utenti.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -37,7 +37,7 @@ Il modello Windows Form Toolbox Control crea un controllo utente non definito e 
 
 1. Creare un progetto VSIX denominato `MyWinFormsControl` . È possibile trovare il modello di progetto VSIX nella finestra **di dialogo Nuovo Project,** cercando "vsix".
 
-2. Quando si apre il progetto, aggiungere un modello di **elemento Windows Form Toolbox Control** denominato `Counter` . Nella finestra **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento**. Nella finestra **di dialogo Aggiungi nuovo elemento** passare a **Estendibilità di Visual C#** e selezionare Windows  >   Controllo casella degli **strumenti Form**
+2. Quando si apre il progetto, aggiungere un modello di **elemento Windows Form Toolbox Control** denominato `Counter` . Nella finestra **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e **scegliere Aggiungi**  >  **nuovo elemento**. Nella finestra **di dialogo Aggiungi nuovo elemento** passare a Estendibilità di **Visual C#** e selezionare Windows  >   Controllo casella degli strumenti **Form**
 
 3. Vengono aggiunti un controllo utente, un oggetto per inserire il controllo nella casella degli strumenti e una voce `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **asset Microsoft.VisualStudio.ToolboxControl** nel manifesto VSIX per la distribuzione.
 
@@ -154,7 +154,7 @@ Il controllo esporrà un metodo per incrementare il contatore, un evento da gene
 
 ### <a name="test-the-control"></a>Testare il controllo
 
- Per testare un **controllo della casella** degli strumenti, testarlo prima nell'ambiente di sviluppo e quindi testarlo in un'applicazione compilata.
+ Per testare **un controllo della casella** degli strumenti, testarlo prima nell'ambiente di sviluppo e quindi testarlo in un'applicazione compilata.
 
 #### <a name="to-test-the-control"></a>Per testare il controllo
 
@@ -162,7 +162,7 @@ Il controllo esporrà un metodo per incrementare il contatore, un evento da gene
 
     Questo comando compila il progetto e apre una seconda istanza sperimentale di Visual Studio in cui è installato il controllo .
 
-2. Nell'istanza sperimentale di Visual Studio creare un **progetto Windows'applicazione Form.**
+2. Nell'istanza sperimentale di Visual Studio creare un **progetto applicazione Windows Forms.**
 
 3. In **Esplora soluzioni** fare doppio clic su *Form1.cs* per aprirlo nella finestra di progettazione, se non è già aperto.
 
@@ -199,7 +199,7 @@ Il controllo esporrà un metodo per incrementare il contatore, un evento da gene
 
 14. Selezionare **Test**.
 
-    Il contatore incrementa e Visual Studio viene visualizzata una finestra di messaggio.
+    Il contatore incrementa e Visual Studio visualizza una finestra di messaggio.
 
 15. Chiudere la finestra di messaggio.
 
@@ -215,7 +215,7 @@ Il controllo esporrà un metodo per incrementare il contatore, un evento da gene
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Quando si compila **un** controllo della casella Visual Studio crea un file denominato *ProjectName.vsix* nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il file *vsix* in una rete o in un sito Web. Quando un utente apre il file *vsix,* il controllo viene installato e aggiunto alla casella degli strumenti Visual Studio **nel** computer dell'utente. In alternativa, è possibile caricare il file *vsix* [in Visual Studio Marketplace](https://marketplace.visualstudio.com/) in modo che gli utenti possano trovarlo esplorando la finestra di dialogo Estensioni e  >  **aggiornamenti degli** strumenti.
+Quando si compila **un** controllo della casella degli strumenti, Visual Studio crea un file denominato *ProjectName.vsix* nella cartella \bin\debug\ del progetto. È possibile distribuire il controllo caricando il file *vsix* in una rete o in un sito Web. Quando un utente apre il file *vsix,* il controllo viene installato e aggiunto alla casella degli strumenti Visual Studio **nel** computer dell'utente. In alternativa, è possibile caricare il file *vsix* [in Visual Studio Marketplace](https://marketplace.visualstudio.com/) in modo che gli utenti possano trovarlo esplorando la finestra di dialogo Estensioni e  >  **aggiornamenti degli** strumenti.
 
 ## <a name="see-also"></a>Vedi anche
 

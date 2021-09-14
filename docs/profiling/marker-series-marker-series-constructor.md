@@ -1,5 +1,5 @@
 ---
-description: Inizializza una nuova istanza della classe marker_series.
+description: Inizializza una nuova istanza della classe marker_series classe .
 title: Costruttore marker_series::marker_series | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 16e766bc5c22cc6c9efb257c22326a4addf4bf0f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626915"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>Costruttore marker_series::marker_series
 Inizializza una nuova istanza della classe `marker_series`.

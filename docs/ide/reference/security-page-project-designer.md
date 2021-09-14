@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2dc1c9ba1e4bd31c8dda2fd83cdc7aa71f1fd730f8b4b2baacce5737ba8e91d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 426179eb20fcb71ac02039c3b2be20dab6f685b3
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121357050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627132"
 ---
 # <a name="security-page-project-designer"></a>Pagina Sicurezza, Progettazione progetti
 
@@ -80,7 +80,7 @@ Apre la [finestra di dialogo Impostazioni di sicurezza avanzate](../../ide/refer
 - <xref:System.Security.Permissions.MediaPermission>
 - [Sicurezza dall'accesso di codice per ClickOnce applicazioni](../../deployment/code-access-security-for-clickonce-applications.md)
 - [Procedura: Abilitare ClickOnce sicurezza Impostazioni](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [Procedura: Impostare un'area di sicurezza per un'ClickOnce sicurezza](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Procedura: Impostare un'area di sicurezza per un ClickOnce app ClickOnce sicurezza](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Procedura: Impostare autorizzazioni personalizzate per un'ClickOnce personalizzata](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Proteggere ClickOnce app](../../deployment/securing-clickonce-applications.md)
 - [ClickOnce Sicurezza e distribuzione](../../deployment/clickonce-security-and-deployment.md)

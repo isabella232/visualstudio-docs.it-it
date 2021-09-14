@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3def27cc4960852bce00fdc65f575231c9be871f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627804"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:
@@ -90,7 +90,7 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
-- [Procedura dettagliata: Scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)

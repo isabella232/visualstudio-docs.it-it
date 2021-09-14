@@ -1,6 +1,6 @@
 ---
 title: Funzione CvWriteMessage | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione CVWriteMessage (libreria C) dell'SDK del visualizzatore di concorrenza.
+description: Vedere le informazioni di riferimento per la funzione CvWriteMessage (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -30,11 +30,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 67e6b88c34520f805bffb7af5d12465d4f2ee427
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084441"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627017"
 ---
 # <a name="cvwritemessage-function"></a>Funzione CvWriteMessage
 Scrive un messaggio nel file di traccia del visualizzatore di concorrenza.

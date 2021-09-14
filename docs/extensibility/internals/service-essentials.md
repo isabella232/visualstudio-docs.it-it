@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 66b5689c2212104608361ccc07a799051e4627eb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627335"
 ---
 # <a name="service-essentials"></a>Nozioni fondamentali sui servizi
 Un servizio è un contratto tra due VSPackage. Un VSPackage fornisce un set specifico di interfacce che un altro VSPackage può usare. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è di per sé una raccolta di VSPackage che fornisce servizi ad altri VSPackage.
@@ -37,7 +37,7 @@ Un servizio è un contratto tra due VSPackage. Un VSPackage fornisce un set spec
 
 - I servizi che sostituiscono i servizi predefiniti o i servizi forniti da altri pacchetti sono detti override del servizio.
 
-- I servizi, o override del servizio, vengono caricati su richiesta, cio' il provider di servizi viene caricato quando il servizio fornito viene richiesto da un altro VSPackage.
+- I servizi o le sostituzioni del servizio vengono caricati su richiesta, cio' il provider di servizi viene caricato quando il servizio fornito viene richiesto da un altro VSPackage.
 
 - Per supportare il caricamento su richiesta, un provider di servizi registra i servizi globali con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Per altre informazioni, vedere [Procedura: Fornire un servizio](../../extensibility/how-to-provide-a-service.md).
 

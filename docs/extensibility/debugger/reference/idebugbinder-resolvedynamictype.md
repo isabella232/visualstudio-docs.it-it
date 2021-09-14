@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 52dcd07e20ee00ed96ef918dda75773ab5ad8cff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627503"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 Questo metodo restituisce il tipo esatto di una variabile.
@@ -45,7 +45,7 @@ int ResolveDynamicType(
 
 ## <a name="parameters"></a>Parametri
 `pDynamic`\
-[in] Oggetto [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) che rappresenta un tipo di variabile.
+[in] Oggetto [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) che rappresenta un tipo di una variabile.
 
 `ppResolved`\
 [out] Restituisce un [oggetto IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che contiene informazioni specifiche sul tipo della variabile.

@@ -1,6 +1,6 @@
 ---
 title: Informazioni di riferimento sulle API del visualizzatore | Microsoft Docs
-description: Un visualizzatore visualizza un tipo specifico di elemento dati e può consentire anche la modifica. Per crearne uno, usare l'API del visualizzatore documentata in questa sezione.
+description: Un visualizzatore visualizza un tipo specifico di elemento dati e può consentire anche la modifica. Per crearne uno, usare l'API Visualizzatore documentata in questa sezione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7dbf4105320531a21f478ef8947129e0fa754c28
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627810"
 ---
 # <a name="visualizer-api-reference"></a>Informazioni di riferimento sulle API del visualizzatore
 
@@ -45,6 +45,6 @@ Le API del visualizzatore vengono fornite per gli utenti che desiderano scrivere
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Procedura dettagliata: Scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

@@ -19,11 +19,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 69596b635be5a878448316b61ed846ad8e116420
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127051"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627378"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 Recupera il nome visualizzabile dall'utente per questo contesto.

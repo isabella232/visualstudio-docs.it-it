@@ -28,11 +28,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 784a4d7e0f4df220573b9a93e68c62336f15cea3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627036"
 ---
 # <a name="cventerspan-function"></a>Funzione CvEnterSpan
 Segna l'inizio di una nuova sezione.

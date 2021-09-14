@@ -1,5 +1,5 @@
 ---
-description: Recupera gli elementi figlio del simbolo. I simboli locali restituiti includono informazioni sull'intervallo dinamico, se il programma viene compilato con l'ottimizzazione.
+description: Recupera gli elementi figlio del simbolo. I simboli locali restituiti includono informazioni sull'intervallo live, se il programma viene compilato con ottimizzazione.
 title: IDiaSymbol::findChildrenEx | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c23788815590f5122191cc3db7190cfb9581e1c8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091128"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626783"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
-Recupera gli elementi figlio del simbolo. I simboli locali restituiti includono informazioni sull'intervallo dinamico, se il programma viene compilato con l'ottimizzazione.
+Recupera gli elementi figlio del simbolo. I simboli locali restituiti includono informazioni sull'intervallo live, se il programma viene compilato con ottimizzazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,10 +53,10 @@ HRESULT findChildrenEx (
 [out] Restituisce un [oggetto IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) che contiene un elenco dei simboli figlio recuperati.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce se è stato trovato almeno un elemento figlio del simbolo oppure restituisce se non sono stati trovati elementi figlio. In caso `S_OK` `S_FALSE` contrario, restituisce un codice di errore.
+ Restituisce se è stato trovato almeno un elemento figlio del simbolo oppure restituisce se non sono stati trovati elementi figlio; in caso `S_OK` `S_FALSE` contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo è la versione estesa di [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).
+ Questo metodo è la versione estesa di [IDiaSymbol::findChildren.](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: Dia2.h

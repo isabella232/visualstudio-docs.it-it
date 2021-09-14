@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cccc39371ce07d0b3ee93ec422d29ee4381602e27e17ba690167a18d7bb9cb3a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f693391cea9ccb17a5e5427d7508424c05c3d457
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121356972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627107"
 ---
 # <a name="set-radix-command"></a>Comando Imposta radice
 Imposta o restituisce la base numerica usata per visualizzare i valori integer.
