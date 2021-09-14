@@ -1,6 +1,6 @@
 ---
 title: Registrazione di singoli generatori di file | Microsoft Docs
-description: Informazioni su come registrare uno strumento personalizzato in Visual Studio crearne un'istanza e associarlo a un particolare tipo di progetto.
+description: Informazioni su come registrare uno strumento personalizzato Visual Studio crearne un'istanza e associarlo a un particolare tipo di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad56731f0e0432dea2eb583d23dcf4285801e2f6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709510"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di file singoli
 Per rendere disponibile uno strumento personalizzato in , è necessario registrarlo in modo da poterne creare un'istanza e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] associarlo a un particolare tipo di progetto.

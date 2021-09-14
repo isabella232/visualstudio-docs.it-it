@@ -9,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccf64a52ec4a832fc6e73290fe1deaff3ed4db0de4cf442d2d6da3ecb65e5746
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 815cfb9e17fed38b519719010acd997f7fdc5242
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400452"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709441"
 ---
 # <a name="workspaces-and-language-services"></a>Aree di lavoro e servizi linguistici
 
@@ -22,17 +22,17 @@ I servizi di linguaggio possono fornire agli utenti [di Open Folder](../ide/deve
 
 ## <a name="initialization"></a>Inizializzazione
 
-In [un'area](workspaces.md)di lavoro i servizi di linguaggio vengono inizializzati da un punto di estensione specializzato solo in tale servizio di linguaggio e non conosce la creazione <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> della compilazione. In questo modo, il proprietario di un servizio di linguaggio può mantenere una singola estensione Open Folder indipendentemente dal numero di modelli presenti all'interno di cartelle e file per l'esecuzione del compilatore durante una compilazione ,ad esempio MSBuild, makefile e così via. Quando i file da cui è stato creato un contesto di file vengono modificati su disco e il contesto del file viene aggiornato, il provider del servizio di linguaggio viene informato del set aggiornato di contesti di file. Il provider di servizi di linguaggio può quindi aggiornare il modello.
+In [un'area](workspaces.md)di lavoro i servizi di linguaggio vengono inizializzati da un punto di estensione specializzato solo in tale servizio di linguaggio e non conosce la creazione <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> della compilazione. In questo modo, un proprietario del servizio di linguaggio può mantenere una singola estensione Open Folder indipendentemente dal numero di modelli presenti all'interno di cartelle e file per l'esecuzione del compilatore durante una compilazione (ad esempio MSBuild, makefile e così via). Quando i file da cui è stato creato un contesto di file vengono modificati su disco e il contesto di file viene aggiornato, il provider del servizio di linguaggio viene informato del set aggiornato di contesti di file. Il provider di servizi di linguaggio può quindi aggiornare il modello.
 
 Quando un documento viene aperto nell'editor, Visual Studio solo i provider di servizi di linguaggio che richiedono tipi di contesto di file per cui è possibile trovare un provider di contesto file corrispondente. Passa quindi i contesti di file dai provider corrispondenti al provider del servizio di linguaggio selezionato tramite `ILanguageServiceProvider.InitializeAsync` . Ciò che il provider di servizi di linguaggio esegue con i dati del contesto di file è un dettaglio di implementazione del provider di servizi di linguaggio, ma l'esperienza utente prevista è un servizio di linguaggio più ricco per il documento aperto.
 
 ## <a name="using-ilanguageserviceprovider"></a>Uso di ILanguageServiceProvider
 
-Il servizio di linguaggio riceverà una notifica quando viene creato un contesto di file con un oggetto che corrisponde a uno dei valori dell'attributo `ContextType` di esportazione del server di `SupportedContextTypes` lingua.
+Il servizio di linguaggio riceverà una notifica quando viene creato un contesto di file con un oggetto che corrisponde a uno dei `ContextType` valori dell'attributo di esportazione del server di `SupportedContextTypes` lingua.
 
 Per supportare un servizio di linguaggio, un'estensione dovrà:
 
-- Oggetto `Guid` univoco. Verrà usato per gli argomenti `SupportedContextTypes` dell'attributo e in un `FileContext` oggetto .
+- Oggetto `Guid` univoco. Verrà usato per gli `SupportedContextTypes` argomenti dell'attributo e in un `FileContext` oggetto .
 - Contesto del file di lingua
   - Factory del provider
     - `ExportFileContextProviderAttribute` attributo con l'elemento precedente generato `Guid` in modo univoco in `SupportedContextTypes`

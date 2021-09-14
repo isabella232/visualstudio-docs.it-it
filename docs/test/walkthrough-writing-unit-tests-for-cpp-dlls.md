@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Scrivere unit test per DLL C/C++'
-description: Informazioni su come sviluppare una DLL C++ nativa usando la metodologia test-first. Iniziare creando un progetto di test nativo.
+description: Informazioni su come sviluppare una DLL C++ nativa usando la metodologia test-first. Per iniziare, creare un progetto di test nativo.
 ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 9c18bec4b6e25148c23a0e44cff95438322ea20c0cdd6f7aa57079f0cce6d268
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cfdc580b94760cb0c5160918210ba6c3dd8fa2f6
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121226797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635476"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
@@ -41,7 +41,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
 
      **Visual Studio 2017 e versioni precedenti:** espandere **Modelli**  >  **installati**  >  **Visual C++**  >  **Test**.
-     **Visual Studio 2019:** impostare **Linguaggio** su C++ e digitare "test" nella casella di ricerca.
+     **Visual Studio 2019:** impostare **Language** su C++ e digitare "test" nella casella di ricerca.
 
      Scegliere il modello **Progetto unit test nativo** o scegliere un qualsiasi altro framework installato. Se si sceglie un altro modello, ad esempio Google Test o Boost.Test, i principi di base sono gli stessi, cambiano però alcuni dettagli.
 
@@ -90,7 +90,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 La procedura seguente illustra come creare un progetto DLL in Visual Studio 2019.
 
-1. Creare un progetto C++ usando la Creazione guidata Windows **Desktop:** fare clic con il pulsante destro del mouse sul nome della **soluzione** in Esplora soluzioni scegliere Aggiungi  >  **nuovo Project**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
+1. Creare un progetto C++ usando la Creazione guidata Windows **Desktop:** fare clic con il pulsante destro del mouse sul nome della soluzione in **Esplora soluzioni** e scegliere  >  **Aggiungi nuovo Project**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati.
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
@@ -190,13 +190,13 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
     Il nuovo test viene visualizzato in **Esplora test**.
 
-5. In **Esplora test** scegliere Esegui **tutto.**
+5. In **Esplora test** scegliere Esegui **tutto**.
 
     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
 
    È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentare i test in modo iterativo e renderli superati
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentare in modo iterativo i test e renderli superati
 
 1. Aggiungere un nuovo test:
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Estendibilità del debugger | Microsoft Docs
+title: Visual Studio Debugger Extensibility | Microsoft Docs
 description: Questo articolo descrive l Visual Studio estendibilità del debugger e fornisce collegamenti ad articoli Visual Studio debug.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 153b5006db591ca12cf4e27e6715ccb8cd0fcb37
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042647"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626333"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio estendibilità del debugger
 Visual Studio include un debugger del codice sorgente completamente interattivo, che offre uno strumento potente e facile da usare per tenere traccia dei bug nel programma. Il debugger include il supporto completo per Visual Basic, C#, C/C++ e JavaScript. Tuttavia, con , disponibile nell'Area download Microsoft, altri linguaggi di programmazione possono essere supportati nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] debugger con le stesse funzionalità avanzate. [](https://www.microsoft.com/download/details.aspx?id=21835)
@@ -35,7 +35,7 @@ Visual Studio include un debugger del codice sorgente completamente interattivo,
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Introduzione](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) Descrive le funzionalità [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] offerte dal debug e come installare l'SDK.
 
- [Creare un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md) Documenta il processo DE personalizzato, dalla preparazione del programma per un de alla disconnessione del de.
+ [Creare un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md) Documenta il processo DE personalizzato, dalla preparazione del programma per un DE alla disconnessione del de.
 
  [Scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) Spiega se è necessario scrivere un analizzatore di espressioni.
 
@@ -43,4 +43,4 @@ Visual Studio include un debugger del codice sorgente completamente interattivo,
 
  [Informazioni di riferimento](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md) Documenta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'API di debug.
 
- [Esempi](../../extensibility/debugger/visual-studio-debugging-samples.md) Contiene collegamenti a un esempio di analizzatore di espressioni di Common Language Runtime e a un esempio di motore di debug.
+ [Esempi](../../extensibility/debugger/visual-studio-debugging-samples.md) Contiene collegamenti a un esempio dell'analizzatore di espressioni di Common Language Runtime e a un esempio di motore di debug.

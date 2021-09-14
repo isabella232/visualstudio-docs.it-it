@@ -1,6 +1,6 @@
 ---
 title: Eseguire un'istruzione nei servizi WCF | Microsoft Docs
-description: Eseguire un'istruzione in un Windows Communication Foundation (WCF). Se si trova nella stessa soluzione Visual Studio del client, premere punti di interruzione all'interno del servizio WCF.
+description: Eseguire un'istruzione in un Windows Communication Foundation (WCF). Se si trova nella stessa soluzione Visual Studio client, è possibile fare clic sui punti di interruzione all'interno del servizio WCF.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 22889b6024dc4201b7bd4618c6fe95ae9ed11f5f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635291"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Procedura: eseguire istruzioni nei servizi WCF
 In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], è possibile eseguire istruzioni in un servizio WCF. Se il servizio WCF si trova nella stessa soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] del client, è possibile raggiungere punti di interruzione nel servizio WCF.

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 49c8975a93d54d9138cbdcf510e7ee18d5bc55d2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709802"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 Specifica i criteri per confrontare due contesti di memoria.
@@ -66,10 +66,10 @@ Trovare nell'elenco il primo contesto di memoria uguale al contesto di memoria d
 Trovare nell'elenco il primo contesto di memoria minore del contesto di memoria di destinazione.
 
 `CONTEXT_GREATER_THAN`\
-Trovare nell'elenco il primo contesto di memoria maggiore del contesto di memoria di destinazione.
+Trovare il primo contesto di memoria nell'elenco maggiore del contesto di memoria di destinazione.
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-Trovare nell'elenco il primo contesto di memoria minore o uguale al contesto di memoria di destinazione.
+Trovare il primo contesto di memoria nell'elenco minore o uguale al contesto di memoria di destinazione.
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
 Trovare il primo contesto di memoria nell'elenco maggiore o uguale al contesto di memoria di destinazione.
@@ -89,7 +89,7 @@ Trovare il primo contesto di memoria nell'elenco che si trova nello stesso proce
 ## <a name="remarks"></a>Commenti
 Passato come argomento al [metodo Compare.](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
 
-Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificati. A un contesto di memoria viene fornito un elenco di contesti di memoria con cui confrontarsi tramite il `IDebugMemoryContext2::Compare` metodo . Viene quindi restituito il primo contesto di memoria nell'elenco per il quale viene restituito `true` l'operatore di confronto.
+Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificati. A un contesto di memoria viene assegnato un elenco di contesti di memoria con cui confrontarsi tramite il `IDebugMemoryContext2::Compare` metodo . Primo contesto di memoria nell'elenco per il quale viene quindi restituito l'operatore `true` di confronto.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

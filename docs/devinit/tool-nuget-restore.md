@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b7675b46697900382917cceaf83922968b800a7885f02e0046477c06a2188ad8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4fe78f33533931f91e97c61ec093602ee0071895
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709849"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
@@ -50,7 +50,7 @@ Il comportamento predefinito dello `nuget-restore` strumento è `NuGet restore` 
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito è riportato un esempio di come eseguire `nuget-restore` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>.devinit.jssu che ripristina le dipendenze e gli strumenti di un progetto:
+#### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>.devinit.json che ripristina le dipendenze e gli strumenti di un progetto:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

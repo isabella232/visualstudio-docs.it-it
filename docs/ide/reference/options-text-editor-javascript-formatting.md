@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bced8357242ebcfd3156234d9a9e163ec3608b738a1bf2cb95673a82a10f9e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 27b2c5765f041252e62defd15a3c7b6d7b460b43
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121412205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709387"
 ---
-# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo Opzioni: \> Formattazione JavaScript dell'editor di \> testo
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo Opzioni: Formattazione \> JavaScript dell'editor di \> testo
 
-Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Editor di  >     >  **testo JavaScript/Formattazione TypeScript**  >  .
+Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Editor di testo  >     >  **JavaScript/TypeScript Formatting ( Formattazione JavaScript/TypeScript).**  >  
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

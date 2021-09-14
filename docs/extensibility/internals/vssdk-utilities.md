@@ -14,14 +14,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f36d0914f55f9ca16c8856106d332af6be79b4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137600"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709484"
 ---
 # <a name="vssdk-utilities"></a>Utilità VSSDK
-Negli argomenti di questa sezione vengono descritti gli strumenti forniti con VSSDK.
+Gli argomenti di questa sezione descrivono gli strumenti forniti con VSSDK.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

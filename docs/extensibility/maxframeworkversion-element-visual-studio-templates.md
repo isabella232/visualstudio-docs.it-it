@@ -1,6 +1,6 @@
 ---
-title: Elemento MaxFrameworkVersion (modelli di Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento MaxFrameworkVersion e sul modo in cui specifica la versione massima del .NET Framework richiesta dal modello.
+title: Elemento MaxFrameworkVersion (modelli Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento MaxFrameworkVersion e su come specifica la versione massima del .NET Framework richiesta dal modello.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -15,18 +15,18 @@ manager: jmartens
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05d61e298c666d22df1af8d426cb0671feb8b9c5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090616"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709451"
 ---
-# <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (modelli di Visual Studio)
+# <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (Visual Studio modelli)
 
-Specifica la versione massima del .NET Framework richiesta dal modello. Determina il valore più alto disponibile nell'elenco a discesa **versione Framework di destinazione** della finestra di dialogo **nuovo progetto** . Affinché gli utenti possano selezionare una versione del Framework, è necessario specificare anche [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) come versione minima .NET Framework per il modello.
+Specifica la versione massima del .NET Framework richiesta dal modello. Determina il valore più alto disponibile nell'elenco a discesa **Versione framework** di destinazione della finestra di Project finestra **di** dialogo. Per consentire agli utenti di selezionare una versione del framework, è necessario specificare [anche RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) come versione .NET Framework minima per il modello.
 
 > [!IMPORTANT]
-> A partire da Visual Studio 2017 versione 15,6, l'elenco a discesa **versione Framework di destinazione** non è più un filtro per i modelli visualizzati nella sezione **modelli** della finestra di dialogo **nuovo progetto** . Al contrario, l'elenco a discesa **versione Framework di destinazione** funziona come selezione Framework per il modello selezionato.
+> A partire da Visual Studio 2017 versione 15.6, l'elenco a discesa Versione  **framework** di destinazione non è più un filtro per i modelli visualizzati nella sezione Modelli della finestra di dialogo Nuovo **Project.** L'elenco a discesa **Versione framework di** destinazione funziona invece come selezione framework per il modello selezionato.
 
  \<VSTemplate> \<TemplateData>
  \<MaxFrameworkVersion>
@@ -41,16 +41,16 @@ Specifica la versione massima del .NET Framework richiesta dal modello. Determin
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuna.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuna.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Categorizza il modello e ne definisce la modalità di visualizzazione nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Categorizza il modello e definisce come viene visualizzato nella finestra di dialogo Nuovo **Project** o Aggiungi **nuovo** elemento.|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
@@ -59,11 +59,11 @@ Specifica la versione massima del .NET Framework richiesta dal modello. Determin
 
 ## <a name="remarks"></a>Commenti
 
-`MaxFrameworkVersion` è un elemento facoltativo. L' `MaxFrameworkVersion` elemento deve essere omesso a meno che non sia necessario, in modo da non limitare inavvertitamente l'intervallo supportato di versioni .NET Framework per il modello. Deve inoltre essere omesso se .NET Framework non è applicabile al modello.
+`MaxFrameworkVersion` è un elemento facoltativo. L'elemento deve essere omesso a meno che non sia obbligatorio, in modo da non limitare inavvertitamente l'intervallo supportato di versioni .NET Framework `MaxFrameworkVersion` per il modello. Deve inoltre essere omesso se .NET Framework non è applicabile al modello.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono illustrati i metadati per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modello di classe standard.
+Nell'esempio seguente vengono illustrati i metadati per un modello [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] di classe standard.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -83,9 +83,9 @@ Nell'esempio seguente vengono illustrati i metadati per un [!INCLUDE[csprcs](../
 </VSTemplate>
 ```
 
-In questo esempio, la versione massima del .NET Framework richiesta dal modello, rappresentata da `MaxFrameworkVersion` , è 4.7.1. Un progetto creato con questo modello può avere come destinazione .NET Framework versioni fino a 4.7.1.
+In questo esempio la versione massima del .NET Framework richiesta dal modello, rappresentata da `MaxFrameworkVersion` , è 4.7.1. Un progetto creato con questo modello può essere .NET Framework versioni fino alla 4.7.1.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)

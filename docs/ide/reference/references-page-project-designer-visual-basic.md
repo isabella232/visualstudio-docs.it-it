@@ -1,6 +1,6 @@
 ---
 title: Riferimenti (pagina), Creazione progetti (Visual Basic)
-description: Informazioni su come usare la pagina Riferimenti di progettazione Project per gestire i riferimenti, i riferimenti Web e gli spazi dei nomi importati del progetto.
+description: Informazioni su come usare la pagina Riferimenti di Progettazione Project per gestire i riferimenti, i riferimenti Web e gli spazi dei nomi importati del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
@@ -19,11 +19,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c56614d835da1f03c4ef44f01be8ec0493dd6b1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117150"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625824"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 
@@ -71,7 +71,7 @@ Selezionare un riferimento Web nell'elenco **Riferimenti** e fare clic su questo
 
 È possibile digitare il proprio spazio dei nomi in questa casella e fare clic su **Aggiungi importazione utente** per aggiungerlo all'elenco degli spazi dei nomi.
 
-È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato spazio dei *nomi alias* = . Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato *alias* = *namespace*. Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Aggiungi importazione utente**
 

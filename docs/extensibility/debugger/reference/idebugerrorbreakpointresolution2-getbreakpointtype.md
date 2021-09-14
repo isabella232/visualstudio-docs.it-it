@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 44991f03a59e53fcdcee9d7fd163ac13635e51d5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634908"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 Ottiene il tipo di punto di interruzione.
@@ -49,10 +49,10 @@ int GetBreakpointType(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Questo metodo restituisce il tipo del punto di interruzione che non è stato possibile associare, richiedendo quindi un evento di interruzione di errore.
+Questo metodo restituisce il tipo del punto di interruzione che non è stato possibile associare, richiedendo quindi un evento del punto di interruzione di errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugErrorBreakpointResolution` semplice che espone [l'interfaccia IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto semplice che `CDebugErrorBreakpointResolution` espone [l'interfaccia IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

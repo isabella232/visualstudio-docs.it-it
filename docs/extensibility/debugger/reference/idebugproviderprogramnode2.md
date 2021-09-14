@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43a66e927d2a1d2e1afc84688bb3a36451fffecc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122070992"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709662"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Questa interfaccia esegue il marshalling delle interfacce correlate al programma tra i limiti del processo.
@@ -44,7 +44,7 @@ IDebugProviderProgramNode2 : IUnknown
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ottiene un'interfaccia specificata tra i limiti del processo.|
 
 ## <a name="remarks"></a>Commenti
- Questa interfaccia viene implementata quando il de viene eseguito in uno spazio di processo separato dal programma di cui viene eseguito il debug, ad esempio quando il de viene eseguito nello spazio del processo Visual Studio anziché nello spazio di processo del programma di cui viene eseguito il debug.
+ Questa interfaccia viene implementata quando il de viene eseguito in uno spazio di processo separato dal programma di cui viene eseguito il debug, ad esempio quando il de viene eseguito nello spazio del processo Visual Studio anziché nello spazio del processo del programma di cui viene eseguito il debug.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

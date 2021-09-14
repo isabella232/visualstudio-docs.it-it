@@ -9,16 +9,16 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92658912e6910f21c6e79f779dff66b6c8b85a04b55f138a0971903789d4c8a2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 271b05d78123136d47cb618e8ed38cea64b7beac
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121374585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709442"
 ---
 # <a name="workspace-file-contexts"></a>Contesti di file dell'area di lavoro
 
-Tutte le informazioni dettagliate [sulle aree di lavoro](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Apri cartella vengono prodotte dai "provider di contesto file" che implementano l'interfaccia <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> . Queste estensioni possono cercare modelli in cartelle o file, leggere file MSBuild e makefile, rilevare le dipendenze dei pacchetti e così via per accumulare le informazioni dettagliate necessarie per definire un contesto di file. Un contesto di file di per sé non esegue alcuna azione, ma fornisce invece dati su cui un'altra estensione può quindi agire.
+Tutte le informazioni dettagliate [sulle aree di lavoro](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) Apri cartella vengono prodotte da "provider di contesto di file" che implementano l'interfaccia <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> . Queste estensioni possono cercare modelli in cartelle o file, leggere file MSBuild e makefile, rilevare le dipendenze dei pacchetti e così via per accumulare le informazioni dettagliate necessarie per definire un contesto di file. Un contesto di file di per sé non esegue alcuna azione, ma fornisce invece dati su cui un'altra estensione può quindi agire.
 
 A <xref:Microsoft.VisualStudio.Workspace.FileContext> ogni oggetto è associato un oggetto che identifica il tipo di dati che `Guid` contiene. Un'area di lavoro usa questa funzionalità in un secondo momento per `Guid` associarla alle estensioni che utilizzano i dati tramite la <xref:Microsoft.VisualStudio.Workspace.FileContext.Context> proprietà . Un provider di contesto di file viene esportato con metadati che identificano il contesto di file per cui `Guid` può produrre dati.
 
@@ -30,7 +30,7 @@ Gli scenari più comuni per i contesti di file sono correlati ai servizi di comp
 
 I cicli di vita `FileContext` per un sono non deterministici. In qualsiasi momento, un componente può richiedere in modo asincrono alcuni set di tipi di contesto. Verranno sottoposti a query i provider che supportano alcuni subset dei tipi di contesto della richiesta. `IWorkspace`L'istanza funge da intermediario tra il consumer e i provider tramite il <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> metodo . I consumer possono richiedere un contesto ed eseguire un'azione a breve termine in base al contesto, mentre altri potrebbero richiedere un contesto e mantenere un riferimento di lunga durata.
 
-È possibile che si apportare modifiche ai file che causano l'obsoleto di un contesto di file. Il provider può genera un evento su per `FileContext` notificare agli utenti gli aggiornamenti. Ad esempio, se viene fornito un contesto di compilazione per un file ma una modifica su disco invalida tale contesto, il producer originale può richiamare l'evento . Tutti i consumer che fanno ancora riferimento a `FileContext` che possono quindi rieseguire query per un nuovo `FileContext` oggetto .
+È possibile che si apportare modifiche ai file che causano l'obsoleto di un contesto di file. Il provider può eseguire un evento su per `FileContext` notificare agli utenti gli aggiornamenti. Ad esempio, se viene fornito un contesto di compilazione per un file ma una modifica su disco invalida tale contesto, il producer originale può richiamare l'evento . Tutti i consumer che fanno ancora riferimento a `FileContext` che possono quindi rieseguire query per un nuovo `FileContext` oggetto .
 
 >[!NOTE]
 >Non esiste alcun modello push per i consumer. I consumer non verranno informati del nuovo provider dopo `FileContext` la richiesta.
@@ -40,7 +40,7 @@ I cicli di vita `FileContext` per un sono non deterministici. In qualsiasi momen
 La lettura del contenuto dei file dal disco può risultare costosa, soprattutto quando un provider deve risolvere la relazione tra i file. Ad esempio, è possibile eseguire query su un provider per il contesto del file di origine, ma il contesto del file dipende dai metadati di un file di progetto. L'analisi del file di progetto o la valutazione con MSBuild è costosa. L'estensione può invece esportare un oggetto per `IFileScanner` creare dati durante l'indicizzazione `FileDataValue` dell'area di lavoro. A questo punto, quando viene richiesto per i contesti di file, `IFileContextProvider` è possibile eseguire rapidamente una query per i dati indicizzati. Per altre informazioni sull'indicizzazione, vedere l'argomento [Indicizzazione dell'area di](workspace-indexing.md) lavoro.
 
 >[!WARNING]
->Fare attenzione ad altri modi in `FileContext` cui l'utente potrebbe essere costoso da calcolare. Alcune interazioni dell'interfaccia utente sono sincrone e si basano su un volume elevato di `FileContext` richieste. Alcuni esempi includono l'apertura di una scheda dell'editor e Esplora soluzioni menu **di scelta** rapida. Queste azioni effettuano molte richieste di tipo di contesto di compilazione.
+>Fare attenzione ad altri modi in `FileContext` cui l'utente potrebbe essere costoso da calcolare. Alcune interazioni dell'interfaccia utente sono sincrone e si basano su un volume elevato di `FileContext` richieste. Alcuni esempi includono l'apertura di una scheda dell'editor Esplora soluzioni menu **di scelta** rapida. Queste azioni effettuano molte richieste di tipo di contesto di compilazione.
 
 ## <a name="file-context-related-apis"></a>API correlate al contesto di file
 
@@ -52,11 +52,11 @@ La lettura del contenuto dei file dal disco può risultare costosa, soprattutto 
 
 ## <a name="file-context-actions"></a>Azioni del contesto di file
 
-Anche se un oggetto è solo dati su alcuni file, un è un modo per esprimere e `FileContext` <xref:Microsoft.VisualStudio.Workspace.IFileContextAction> agire su tale dati. `IFileContextAction` è flessibile nell'utilizzo. Due dei casi più comuni sono la compilazione e il debug.
+Mentre un oggetto è solo dati relativi ad alcuni file, un è un modo per esprimere e `FileContext` <xref:Microsoft.VisualStudio.Workspace.IFileContextAction> agire su tale dati. `IFileContextAction` è flessibile nell'utilizzo. Due dei casi più comuni sono la compilazione e il debug.
 
 ## <a name="reporting-progress"></a>Segnalazione dello stato
 
-Il <xref:Microsoft.VisualStudio.Workspace.IFileContextActionBase.ExecuteAsync%2A> metodo viene passato , ma `IProgress<IFileContextActionProgressUpdate>` l'argomento non deve essere usato come tipo. `IFileContextActionProgressUpdate` è un'interfaccia vuota e la chiamata potrebbe `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` generare `NotImplementedException` . Deve invece `IFileContextAction` eseguire il cast dell'argomento a un altro tipo in base alle esigenze per lo scenario.
+Il <xref:Microsoft.VisualStudio.Workspace.IFileContextActionBase.ExecuteAsync%2A> metodo viene passato , ma `IProgress<IFileContextActionProgressUpdate>` l'argomento non deve essere usato come tale tipo. `IFileContextActionProgressUpdate` è un'interfaccia vuota e la chiamata potrebbe `IProgress<IFileContextActionProgressUpdate>.Report(IFileContextActionProgressUpdate)` generare `NotImplementedException` . Deve invece `IFileContextAction` eseguire il cast dell'argomento a un altro tipo in base alle esigenze per lo scenario.
 
 Per informazioni sui tipi forniti da Visual Studio, vedere la documentazione del rispettivo scenario.
 
@@ -76,4 +76,4 @@ Un'area di lavoro è in ascolto delle notifiche di modifica dei file e fornisce 
 ## <a name="next-steps"></a>Passaggi successivi
 
 * [Indicizzazione: l'indicizzazione](workspace-indexing.md) dell'area di lavoro raccoglie e rende persistenti le informazioni sull'area di lavoro.
-* [Aree di lavoro: esaminare](workspaces.md) i concetti e le impostazioni dell'archiviazione dell'area di lavoro.
+* [Aree di lavoro: esaminare](workspaces.md) i concetti e l'archiviazione delle impostazioni dell'area di lavoro.

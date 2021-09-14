@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 02897900a9117eee3d9a917b2e86580d21980345
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626370"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - Membri interni
 Questo articolo descrive i membri interni della classe che consentono <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere <xref:System.Threading.Tasks.TaskScheduler> l'articolo di riferimento.

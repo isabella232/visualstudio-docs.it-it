@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (Visual Studio Templates) | Microsoft Docs
+title: Elemento Assembly (modelli Visual Studio) | Microsoft Docs
 titleSuffix: ''
 description: Informazioni sull'elemento Assembly e su come specifica le informazioni su un assembly, che il modello usa per aggiungere un riferimento di tale assembly ai progetti.
 ms.custom: SEO-VS-2020
@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49137804fd73c2ba66ad68e20d6ea0423e0b3b29f64d2295026e3bcd9fdf59ba
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54fc5cfccde99776136f0cb904d02bf6a4971045
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709821"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (Visual Studio)
 Specifica informazioni su un assembly, utilizzate dal modello per aggiungere un riferimento di tale assembly ai progetti.
@@ -58,7 +58,7 @@ Specifica informazioni su un assembly, utilizzate dal modello per aggiungere un 
 
  Questo testo specifica l'assembly da aggiungere a un progetto quando viene creata un'istanza del modello di elemento. Questo nome di assembly deve essere specificato in uno dei modi seguenti:
 
-- Come nome completo dell'assembly. Esempio:
+- Come nome completo dell'assembly. Ad esempio:
 
     ```
     <Assembly>

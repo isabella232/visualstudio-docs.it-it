@@ -15,21 +15,21 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 49f26713bcda948220fabdefaa62032e10fde8a2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152588"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626400"
 ---
 # <a name="symbol-provider"></a>Provider di simboli
-Un'implementazione dell'analizzatore di espressioni deve accedere alle informazioni di debug simboliche generate dal compilatore di linguaggio per valutare variabili ed espressioni. A tale scopo, utilizza le interfacce di un provider di simboli ,denominato anche gestore di simboli.
+Un'implementazione dell'analizzatore di espressioni deve accedere alle informazioni di debug simboliche generate dal compilatore di linguaggio per valutare variabili ed espressioni. A tale scopo, utilizza le interfacce di un provider di simboli, chiamato anche gestore di simboli.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce gli SP per il codice gestito e il codice nativo usando il formato di file di simboli Program DataBase (PDB). A meno che non sia necessario che il programma usi simboli archiviati in un formato personalizzato, è consigliabile usare i provider di servizi forniti da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce i provider di servizi per il codice gestito e il codice nativo usando il formato di file di simboli Program DataBase (PDB). A meno che il programma non necessiti di usare simboli archiviati in un formato personalizzato, è consigliabile usare i provider di servizi forniti da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="implementation-notes"></a>Note sull'implementazione
- I [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motori di debug prevedono di parlare con gli SP usando le interfacce CLR (Common Language Runtime). Di conseguenza, un SP che funziona con i motori Visual Studio di debug deve supportare CLR. Un elenco completo di tutte le interfacce di debug CLR è disponibile in debugref.doc, che fa parte di [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] .
+ I motori di debug prevedono di usare le interfacce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] CLR (Common Language Runtime). Di conseguenza, un SP che verrà utilizzato con i motori Visual Studio di debug deve supportare CLR. Un elenco completo di tutte le interfacce di debug CLR è disponibile in debugref.doc, che fa parte di [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] .
 
- Se sp funziona solo con il motore di debug personalizzato, è possibile implementare sp come si può vedere in base alle esigenze del motore di debug.
+ Se sp funziona solo con il motore di debug personalizzato, è possibile implementare sp come si desidera, a seconda delle esigenze del motore di debug.
 
 ## <a name="see-also"></a>Vedi anche
 - [Componenti del debugger](../../extensibility/debugger/debugger-components.md)

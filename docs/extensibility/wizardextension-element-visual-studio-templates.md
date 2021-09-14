@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41e17f80d2d0fb2de71a2187f42032a756aee2a21dc5a224579092344f0b234f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c32f9f2050e04741a2612de30e2718f45c0603de
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334952"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709443"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelli di Visual Studio)
 Contiene gli elementi di registrazione per la personalizzazione della creazione guidata modello.
@@ -60,7 +60,7 @@ Contiene gli elementi di registrazione per la personalizzazione della creazione 
  `WizardExtension` è un elemento figlio facoltativo di `VSTemplate`.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra i metadati per il modello di progetto standard per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'Windows applicazione.
+ L'esempio seguente illustra i metadati per il modello di progetto standard per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un Windows applizione.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"

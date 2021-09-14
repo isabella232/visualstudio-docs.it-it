@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d75640372839c4fddf83ec098879e9eb0479eb4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049480"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625991"
 ---
 # <a name="sccgetparentprojectpath-function"></a>Funzione SccGetParentProjectPath
 Questa funzione determina il percorso del progetto padre di un progetto specificato. Questa funzione viene chiamata quando l'utente aggiunge un progetto Visual Studio al controllo del codice sorgente.
@@ -96,7 +96,7 @@ SCCRTN SccGetParentProjectPath(
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**
 
- Se questa voce del Registro di sistema non esiste o è impostata su dword:00000000, Visual Studio tenta di usare le nuove funzioni `SccCreateSubProject` e `SccGetParentProjectPath` .
+ Se questa voce del Registro di sistema non esiste o è impostata su dword:00000000, Visual Studio di utilizzare le nuove funzioni `SccCreateSubProject` e `SccGetParentProjectPath` .
 
  Se la voce del Registro di sistema è impostata su dword:00000001, Visual Studio non tenta di usare queste nuove funzioni e le operazioni di aggiunta al controllo del codice sorgente funzionano come nelle versioni precedenti di Visual Studio.
 

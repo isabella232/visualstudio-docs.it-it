@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a2e31caf8efecaed258ff26e1536e3b6d2cd754
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: 5c7fce7a5063ef27c70ae263affe60a7baafe98c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709881"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione in IIS importando le impostazioni di pubblicazione in Visual Studio
 
@@ -43,25 +43,29 @@ Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da u
 
 * È necessario aver installato Visual Studio 2019 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * È necessario aver installato Visual Studio 2017 e il carico di lavoro **Sviluppo ASP.NET e Web**.
 
-    Se non è già stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 ::: moniker-end
 
-* Nel server è necessario eseguire Windows Server 2012, Windows Server 2016 o Windows Server 2019 ed è necessario che il ruolo [Server Web IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) sia installato correttamente (necessario per generare il file delle impostazioni di pubblicazione (*\* .publishsettings*)). Nel server deve essere installato anche ASP.NET 4.5 o ASP.NET Core. Per configurare ASP.NET 4.5, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 e ASP.NET 4.5). Per configurare ASP.NET Core, vedere [Host ASP.NET Core in Windows con IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Per ASP.NET Core, assicurarsi di configurare il pool di applicazioni per l'uso di Nessun **codice** gestito, come descritto nell'articolo.
+* Nel server è necessario che sia in esecuzione Windows Server 2012, Windows Server 2016 o Windows Server 2019 e che il ruolo [Server Web IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45#solution) sia installato correttamente (necessario per generare il file delle impostazioni di pubblicazione (*\* .publishsettings*)). Nel server deve essere installato anche ASP.NET 4.5 o ASP.NET Core.
+
+  * Per configurare ASP.NET 4.5, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 e ASP.NET 4.5).
+
+  * Per configurare ASP.NET Core, vedere [Host ASP.NET Core in Windows con IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Per ASP.NET Core, assicurarsi di configurare il pool di applicazioni per l'uso di **Nessun codice gestito,** come descritto nell'articolo.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Creare un nuovo progetto ASP.NET in Visual Studio
 
 1. Creare un nuovo progetto nel computer che esegue Visual Studio.
 
-    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET App web (.NET Framework)** o (solo per C#) **ASP.NET Core App web** e quindi selezionare **OK.**
+    Scegliere il modello corretto. In questo esempio scegliere ASP.NET **Web Application (.NET Framework)** o (solo per C#) **ASP.NET Core Web Application** e quindi selezionare **OK.**
 
-    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Nuovo Project** progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro ASP.NET sviluppo Web e** web.
+    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Nuovo Project** progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro ASP.NET sviluppo Web** e web.
 
     Il modello di progetto selezionato (ASP.NET o ASP.NET Core) deve corrispondere alla versione di ASP.NET installata nel server Web.
 
@@ -92,7 +96,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente.
 - Se non è possibile connettersi all'host usando il nome host, provare l'indirizzo IP.
 - Assicurarsi che le porte necessarie siano aperte nel server remoto.
 - Per ASP.NET Core, è necessario assicurarsi che il campo Pool di applicazioni per **DefaultAppPool** sia impostato su **Nessun codice gestito**.
-- Verificare che la versione ASP.NET usata nell'app sia la stessa della versione installata nel server. Per l'app, è possibile visualizzare e impostare la versione nella **pagina** Proprietà. Per impostare l'app su una versione diversa, è necessario installare tale versione.
+- Verificare che la versione di ASP.NET usata nell'app sia la stessa della versione installata nel server. Per l'app, è possibile visualizzare e impostare la versione nella **pagina** Proprietà. Per impostare l'app su una versione diversa, è necessario installare tale versione.
 - Se l'app ha provato ad aprire, ma viene visualizzato un avviso relativo al certificato, scegliere di considerare attendibile il sito. Se l'avviso è già stato chiuso, è possibile modificare il file *.pubxml nel progetto e aggiungere l'elemento seguente (solo per test): `<AllowUntrustedCertificate>true</AllowUntrustedCertificate>`
 - Se l'app non viene avviata Visual Studio, avviare l'app in IIS per verificare che sia stata distribuita correttamente.
 - Controllare la finestra Output in Visual Studio informazioni sullo stato e controllare i messaggi di errore.

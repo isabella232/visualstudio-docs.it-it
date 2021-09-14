@@ -13,11 +13,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 54054e39a9211bf63d6c187a250a47dcb1ed751c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625920"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -45,7 +45,7 @@ Vedere dove e come vengono usate le singole parti di codice nella soluzione:
 
 ![CodeLens - Contattare il team](../ide/media/codelens-contact-info.png)
 
-Per scegliere gli indicatori da visualizzare o per disattivare CodeLens e attivarlo, passare a Strumenti Opzioni Editor di testo Editor di testo Tutti i  >    >    >    >  **linguaggi CodeLens**.
+Per scegliere gli indicatori da visualizzare o per disattivare e attivare CodeLens, passare a Strumenti Opzioni Editor di testo Tutti i  >    >    >    >  **linguaggi CodeLens**.
 
 ## <a name="find-references-to-your-code"></a>Individuare i riferimenti del codice
 
@@ -159,7 +159,7 @@ Per sapere quando il codice è stato sottoposto a branching, passare al codice n
 
 È possibile vedere quando sono state unite le modifiche, in modo da poter determinare quali modifiche sono incluse nel branch:
 
-![CodeLens- Trovare quando le modifiche sono state unite](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens - Trovare quando le modifiche sono state unite](../ide/media/codelensbranchmergedconceptual.png)
 
 Ad esempio, il codice nel branch principale include ora la correzione di bug del branch di sviluppo ("Dev"):
 
@@ -222,7 +222,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 2. Se non se ne ha già uno, compilare l'applicazione per caricare gli indicatori test di CodeLens.
 
-3. Esaminare i test per il codice premendo **ALT** + **3.**
+3. Esaminare i test per il codice premendo + **ALT+3.**
 
      ![CodeLens - Scegliere lo stato del test nell'editor del codice](../ide/media/codelens-choose-test-indicator.png)
 
@@ -234,13 +234,13 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
      ![CodeLens - Passare alla definizione di unit test](../ide/media/codelens-unit-test-definition.png)
 
-6. Per esaminare i risultati del test, scegliere l'indicatore di stato del test ( icona test non superato o icona test superato ![ ](../ide/media/codelenstestfailedicon.png) ) oppure premere ![ ](../ide/media/codelenstestpassedicon.png) **ALT** + **1.**
+6. Per esaminare i risultati del test, scegliere l'indicatore di stato del test ( icona test non superato o icona ![ test superato ) oppure premere ](../ide/media/codelenstestfailedicon.png) ![ ](../ide/media/codelenstestpassedicon.png) **ALT** + **1.**
 
      ![CodeLens - Visualizzare il risultato dello unit test](../ide/media/codelens-unit-test-result.png)
 
 7. Per vedere quante persone hanno modificato il test, gli autori delle modifiche o il numero di modifiche apportate al test, [individuare la cronologia del codice](#find-changes-in-your-code) e gli elementi collegati.
 
-## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
+## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
 
 Per usare la tastiera per selezionare gli indicatori, premere e tenere premuto il tasto **ALT** per visualizzare i tasti numerici correlati, quindi premere il numero che corrisponde all'indicatore da selezionare.
 
@@ -251,9 +251,9 @@ Per usare la tastiera per selezionare gli indicatori, premere e tenere premuto i
 
 ## <a name="q--a"></a>Domande e risposte
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>D: Ricerca per categorie disattivare o attivare CodeLens o scegliere quali indicatori visualizzare?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>D: Ricerca per categorie disattivare o attivare CodeLens o scegliere gli indicatori da visualizzare?
 
-**R:**  È possibile attivare o disattivare tutti gli indicatori, ad eccezione di Riferimenti. Passare a **Strumenti Opzioni**  >  **Editor di**  >  **testo** Tutti  >  **i linguaggi**  >  **CodeLens.**
+**R:**  È possibile attivare o disattivare tutti gli indicatori, ad eccezione di Riferimenti. Passare a **Strumenti Opzioni**  >  **Editor di** testo  >  **Tutti** i  >  **linguaggi**  >  **CodeLens**.
 
 Quando gli indicatori sono attivati, è possibile anche aprire le opzioni CodeLens dagli indicatori.
 
@@ -267,18 +267,18 @@ Attivare gli indicatori CodeLens a livello di file e disattivare l’utilizzo de
 
 **R:** CodeLens viene visualizzato nel codice C# e Visual Basic a livello di metodo, classe, indicizzatore e proprietà. CodeLens viene visualizzato a livello di file per tutti gli altri tipi di file.
 
-- Assicurarsi che CodeLens sia attivato. Passare a **Strumenti Opzioni**  >  **Editor di**  >  **testo** Tutti  >  **i linguaggi**  >  **CodeLens.**
+- Assicurarsi che CodeLens sia attivato. Passare a **Strumenti Opzioni**  >  **Editor di** testo  >  **Tutti** i  >  **linguaggi**  >  **CodeLens**.
 
 - Se il codice è archiviato in TFS, assicurarsi che l'indicizzazione del codice sia attivata usando il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- Gli indicatori DevOps vengono visualizzati solo quando gli elementi di lavoro sono collegati al codice e quando l'utente è autorizzato ad aprire gli elementi di lavoro collegati. Verificare di disporre delle autorizzazioni [per i membri del team](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true).
+- Gli indicatori DevOps vengono visualizzati solo quando gli elementi di lavoro sono collegati al codice e quando l'utente è autorizzato ad aprire gli elementi di lavoro collegati. Verificare di disporre delle [autorizzazioni per i membri del team.](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true)
 
-- Gli indicatori di unit test non vengono visualizzati quando il codice dell'applicazione non contiene unit test. Gli indicatori di stato del test vengono visualizzati automaticamente nei progetti di test. Se si sa che il codice dell'applicazione include unit test, ma gli indicatori di test non vengono visualizzati, provare a compilare la soluzione (**CTRL** + **MAIUSC** + **B).**
+- Gli indicatori di unit test non vengono visualizzati quando il codice dell'applicazione non contiene unit test. Gli indicatori di stato del test vengono visualizzati automaticamente nei progetti di test. Se si sa che il codice dell'applicazione include unit test, ma gli indicatori di test non vengono visualizzati, provare a compilare la soluzione (**CTRL** + **MAIUSC** + **B**).
 
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> CodeLens è disponibile in Visual Studio Community edition, ma gli *indicatori* del controllo del codice sorgente non sono disponibili in questa edizione.
+> CodeLens è disponibile nella versione Visual Studio Community, ma gli *indicatori* di controllo del codice sorgente non sono disponibili in questa edizione.
 
 ::: moniker-end
 
@@ -315,13 +315,13 @@ CodeLens non supporta l'installazione di versioni di Lync o Skype diverse. Potre
 
 Per usare la tastiera:
 
-1. Premere  + **ALT+O** +  per aprire la **finestra di** dialogo Opzioni.
+1. Premere  + **ALT+O** +  per aprire la finestra di **dialogo** Opzioni.
 
 2. Premere **Freccia SU** o **Freccia GIÙ** per passare al nodo **Ambiente** , quindi premere **Freccia SINISTRA** per espandere il nodo.
 
 3. Premere **Freccia GIÙ** da passare a **Tipi di carattere e colori**.
 
-4. Premere **TAB** per passare all'elenco **Mostra impostazioni** per e quindi premere **Freccia** GIÙ per **selezionare CodeLens.**
+4. Premere **TAB** per passare all'elenco **Mostra impostazioni** per e quindi premere freccia GIÙ per selezionare **CodeLens.** 
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>D: È possibile spostare l'heads-up display CodeLens?
 

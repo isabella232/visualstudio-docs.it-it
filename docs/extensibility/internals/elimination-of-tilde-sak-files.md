@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 02dfc179add2d138df5b8ab876329da2fc1f0f1d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094841"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709571"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminazione di ~file SAK
 Nell'API plug-in del controllo del codice sorgente 1.2 i *file ~SAK* sono stati sostituiti da flag di funzionalità e nuove funzioni che rilevano se un plug-in di controllo del codice sorgente supporta il file *MSSCCPRJ* e le estrazioni condivise.

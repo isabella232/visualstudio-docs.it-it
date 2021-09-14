@@ -1,6 +1,6 @@
 ---
-description: Ottiene una descrizione dell'stack frame.
-title: IDebugStackFrame2::GetInfo | Microsoft Docs
+description: Ottiene una descrizione del stack frame.
+title: Interfaccia IDebugStackFrame2::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d03223e4571a6792dacf0de413a4caaced08ba3c7c53266dfbe004f5434bbfc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e543a603029c529841bb1d10e48109538255eafa
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448936"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709624"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
-Ottiene una descrizione dell'stack frame.
+Ottiene una descrizione del stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ int GetInfo (
 
 ## <a name="parameters"></a>Parametri
 `dwFieldSpec`\
-[in] Combinazione di flag [dell'FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica i campi del `pFrameInfo` parametro da determinare.
+[in] Combinazione di flag [dell'FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica quali campi del parametro `pFrameInfo` devono essere compilati.
 
 `nRadix`\
 [in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.

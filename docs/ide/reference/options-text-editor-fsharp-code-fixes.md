@@ -13,13 +13,13 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2f63076cdccf2324ab85602054babecb27628ec5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709404"
 ---
-# <a name="options-text-editor--f--code-fixes"></a>Opzioni: Correzioni del codice > F# > dell'editor di testo
+# <a name="options-text-editor--f--code-fixes"></a>Opzioni: Editor di testo > correzioni del codice > F#
 
 Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina delle opzioni, scegliere **Opzioni** degli strumenti e quindi correzioni di  >  codice F# dell'editor   >    >  **di testo.**
 

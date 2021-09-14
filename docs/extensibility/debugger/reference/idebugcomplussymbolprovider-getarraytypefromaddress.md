@@ -1,5 +1,5 @@
 ---
-description: Recupera informazioni sul tipo sulla matrice specificata in base al relativo indirizzo di debug.
+description: Recupera informazioni sul tipo relative alla matrice specificata in base al relativo indirizzo di debug.
 title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6d0bd72e385542df0ae1f763f993ea41156a7d9e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635084"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Recupera informazioni sul tipo sulla matrice specificata in base al relativo indirizzo di debug.
+Recupera informazioni sul tipo relative alla matrice specificata in base al relativo indirizzo di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,13 +57,13 @@ int GetArrayTypeFromAddress(
 [in] Lunghezza in byte della `pSig` matrice.
 
 `ppField`\
-[out] Restituisce il tipo di matrice rappresentato da [un'interfaccia IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
+[out] Restituisce il tipo di matrice come rappresentato da [un'interfaccia IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(

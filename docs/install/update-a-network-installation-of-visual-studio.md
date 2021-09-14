@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a362a26dd920b736459b36d0bdb47f6d3431397ddfa09a80173196310b5ed5c8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d831210d2943a4247f43818eca637ab5b0b5635b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121371178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625818"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "121371178"
 
 Per aggiornare la condivisione di installazione di rete in modo che includa gli aggiornamenti più recenti, eseguire il programma di avvio automatico usando il parametro `--layout` per scaricare i pacchetti aggiornati.
 
-Se è stato selezionato un layout parziale al momento della [creazione del layout di rete,](create-a-network-installation-of-visual-studio.md)tali impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate.
+Se è stato selezionato un layout parziale quando è [stato creato il layout di rete](create-a-network-installation-of-visual-studio.md)per la prima volta, tali impostazioni vengono salvate. Gli eventuali comandi relativi al layout future usano le opzioni precedenti più eventuali nuove opzioni specificate.
 
 Se si ospita un layout in una condivisione file, è necessario aggiornare una copia privata del layout (ad esempio, c:\VSLayout) e quindi, dopo aver scaricato tutto il contenuto aggiornato, copiarlo nella condivisione file (ad \\ esempio, server\products\VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
 
@@ -68,7 +68,7 @@ Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout
     >
     > Per installare questi nuovi componenti nel computer client, assicurarsi di eseguire questi tre passaggi. Prima di tutto, verificare che il layout contenga i nuovi componenti come descritto in precedenza. Aggiornare quindi il client ai bit più recenti nel layout.  Infine, sempre nel client, eseguire un'operazione di modifica che installerà i nuovi componenti (aggiunti al layout) nel computer client.
 
-* E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico di *lavoro ASP.NET sviluppo Web.*  In questo layout sono ora inclusi i carichi di lavoro Sviluppo Web ASP.NET &, Azure e Managed Desktop. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
+* E infine, ecco come aggiungere un carico di lavoro aggiuntivo e la lingua localizzata senza aggiornare la versione. Questo comando aggiunge il carico di *lavoro ASP.NET sviluppo Web.*  In questo layout sono ora inclusi i carichi di lavoro ASP.NET & Desktop gestito, Azure e Sviluppo Web. Sono incluse per tutti questi carichi di lavoro anche le risorse di lingua per inglese, tedesco e francese.  Tuttavia, il layout non è stato aggiornato all'ultima versione disponibile durante l'esecuzione di questo comando. Rimane alla versione esistente.
 
   ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
@@ -123,7 +123,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 È possibile richiamare il vs_enterprise.exe all'interno di layoutDir.
 
 > [!NOTE]
-> Alcuni file di metadati importanti che sono necessari per l’opzione `--verify` devono essere nella cache offline del layout. Se tali file di metadati non sono presenti, non è possibile eseguire "--verify" e il programma di installazione restituisce un errore. Se si verifica questo errore, ricreare un nuovo layout offline in una cartella diversa (o nella stessa cartella della cache offline). Pertanto, scopo, eseguire il medesimo comando relativo al layout utilizzato per creare il layout iniziale offline. Ad esempio, `vs_enterprise.exe --layout <layoutDir>`.
+> Alcuni file di metadati importanti che sono necessari per l’opzione `--verify` devono essere nella cache offline del layout. Se tali file di metadati non sono presenti, non è possibile eseguire "--verify" e il programma di installazione restituisce un errore. Se si verifica questo errore, ricreare un nuovo layout offline in una cartella diversa (o nella stessa cartella della cache offline). Pertanto, scopo, eseguire il medesimo comando relativo al layout utilizzato per creare il layout iniziale offline. Ad esempio: `vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft offre periodicamente aggiornamenti per Visual Studio, di conseguenza la versione del nuovo layout creato potrebbe non essere la stessa del layout iniziale.
 

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a9082f645a30bc47c755b50c332d8e3dc47d1c
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: cd389f11b5d243c3391d9de7df7ae3f1abeccb9c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123397785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709370"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -56,7 +56,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Scegliere quindi il carico di lavoro **Sviluppo per desktop .NET** nel programma di installazione di Visual Studio.
+   > Successivamente, nel Programma di installazione di Visual Studio scegliere il carico di **lavoro Sviluppo per desktop .NET.**
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
@@ -118,7 +118,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
        > [!NOTE]
        > Il tipo di carattere Webdings include una serie di icone ed è fornito con il sistema operativo Windows. Nel gioco delle coppie, il giocatore deve riuscire ad accoppiare le icone, per cui si utilizza questo tipo di carattere per visualizzare le icone da accoppiare. Anziché inserire **c** nella proprietà **Text**, provare a immettere lettere diverse per vedere quali icone vengono visualizzate. Il punto esclamativo equivale a un ragno, la N maiuscola a un occhio e la virgola a un peperoncino.
 
-5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. (Premere **CTRL** + **C** oppure sulla barra dei menu scegliere  >  **Modifica copia.** Quindi incollarlo. (Premere **CTRL** + **Tasti V** oppure sulla barra dei menu scegliere  >  **Modifica Incolla.** Una copia della prima etichetta viene visualizzata nella seconda cella di TableLayoutPanel. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
+5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. (Premere **CTRL** + **C** oppure sulla barra dei menu scegliere  >  **Modifica copia.** Quindi incollarlo. (Premere **CTRL** + **Tasti V** oppure sulla barra dei menu scegliere  >  **Modifica Incolla.** Nella seconda cella di TableLayoutPanel viene visualizzata una copia della prima etichetta. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
 
    > [!NOTE]
    > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL** Z oppure scegliere Modifica Annulla sulla barra +    >  **dei** menu.

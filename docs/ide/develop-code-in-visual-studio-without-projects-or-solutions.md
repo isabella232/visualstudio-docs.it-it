@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: e23ffa2cef27dc2607e238aa8674e91ff71efbd1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078427"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625950"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -31,15 +31,15 @@ Dopo aver aperto i file di codice in Visual Studio, **Esplora soluzioni** consen
 
 È possibile aprire il codice in Visual Studio nei modi seguenti:
 
-- Nella barra Visual Studio menu scegliere **Apri** cartella file e quindi  >    >  passare al percorso del codice.
+- Nella barra Visual Studio menu file scegliere **Apri** cartella  >    >  e quindi passare al percorso del codice.
 
 - Nel menu di scelta rapida (pulsante destro del mouse) di una cartella contenente codice scegliere il comando **Apri in Visual Studio**.
 
 ::: moniker range="vs-2017"
-- Scegliere il **collegamento Apri cartella** nella pagina Visual Studio **iniziale**.
+- Scegliere il **collegamento Apri** cartella nella pagina Visual Studio **pagina iniziale**.
 
     > [!IMPORTANT]
-    > Non tutto il codice può essere aperto usando il **collegamento** Apri cartella Visual Studio **pagina iniziale**. Ad esempio, se il file di codice è stato salvato come parte di una soluzione in altre parole, in un file sln è necessario usare una delle altre opzioni elencate di seguito per aprire &mdash; &mdash; il codice.
+    > Non è possibile aprire tutto il codice usando **il collegamento** Apri cartella Visual Studio **pagina iniziale**. Ad esempio, se il file di codice è stato salvato come parte di una soluzione in altre parole, in un file con estensione sln è necessario usare una delle altre opzioni elencate di seguito per aprire &mdash; &mdash; il codice.
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Dopo aver aperto i file di codice in Visual Studio, **Esplora soluzioni** consen
 - Scegliere il collegamento **Apri cartella** nella finestra iniziale.
 
     > [!IMPORTANT]
-    > Non tutto il codice può essere aperto usando il **collegamento** Apri cartella dalla Visual Studio di avvio. Ad esempio, se il file di codice è stato salvato come parte di una soluzione in altre parole, in un file sln è necessario usare una delle altre opzioni elencate di seguito per aprire &mdash; &mdash; il codice.
+    > Non tutto il codice può essere aperto usando **il collegamento** Apri cartella dalla Visual Studio iniziale. Ad esempio, se il file di codice è stato salvato come parte di una soluzione in altre parole, in un file con estensione sln è necessario usare una delle altre opzioni elencate di seguito per aprire &mdash; &mdash; il codice.
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
    ![Pulsante per clonare in GitHub](./media/VSIDE_Code_Clone.png)
 
-1. In Visual Studio scegliere la **scheda** Team Explorer per **aprire** Team Explorer . Se la scheda non è visualizzata, aprirla da  >  **Visualizza Team Explorer**.
+1. In Visual Studio scegliere la scheda **Team Explorer** per aprire **Team Explorer**. Se la scheda non è visualizzata, aprirla da  >  **Visualizza Team Explorer**.
 
 1. In Team Explorer, nella sezione **Repository Git locali**, scegliere il comando **Clona** e quindi incollare l'URL della pagina GitHub nella casella di testo.
 
@@ -73,7 +73,7 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
 1. Scegliere il pulsante **Clona** per clonare i file del progetto in un repository Git locale. L'operazione potrebbe richiedere diversi minuti a seconda delle dimensioni del repository.
 
-1. Dopo che il repo è stato clonato nel sistema,  **in** Team Explorer scegliere il comando Apri nel menu di scelta rapida (clic con il pulsante destro del mouse) del nuovo repo clonato.
+1. Dopo che il repo è stato clonato nel sistema,  **in Team Explorer** scegliere il comando Apri nel menu di scelta rapida (clic con il pulsante destro del mouse) del nuovo repo clonato.
 
    ![Repository clonato](./media/VSIDE_Code_Clone3.png)
 

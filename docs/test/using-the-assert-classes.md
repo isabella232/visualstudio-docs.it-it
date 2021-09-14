@@ -1,6 +1,6 @@
 ---
 title: Classi e metodi Assert MSTest
-description: Informazioni su come usare le istruzioni Assert per verificare la correttezza del comportamento del codice durante una unit test del codice dell'applicazione.
+description: Informazioni su come usare le istruzioni Assert per testare la correttezza del comportamento del codice durante una unit test del codice dell'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 06/07/2018
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 09edc60284a8ff4d26a670123427cbf3a3ae1385
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038357"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635467"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Usare classi Assert per il testing unità
 

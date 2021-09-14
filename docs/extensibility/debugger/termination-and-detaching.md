@@ -15,19 +15,19 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 40a559a110792e5c010d37164ab1db96277ca544
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122087236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626364"
 ---
 # <a name="termination-and-detaching"></a>Terminazione e disconnessione
 La sezione seguente descrive la terminazione normale.
 
 ## <a name="discussion"></a>Discussione
- Dopo che [l'interfaccia IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) o [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) continua, se non sono presenti punti di interruzione, eccezioni, errori di runtime o cicli infiniti nell'applicazione di cui eseguire il debug, il programma in fase di debug viene eseguito fino al completamento. Questo processo è la terminazione normale.
+ Dopo che [l'interfaccia IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) o [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) continua, se non sono presenti punti di interruzione, eccezioni, errori di runtime o cicli infiniti nell'applicazione di cui eseguire il debug, il programma in fase di debug viene eseguito fino al completamento. Si tratta di un processo di terminazione normale.
 
- È necessario inviare [un IDebugProgramDestroyEvent2 per](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) implementare la terminazione normale. La terminazione normale richiede l'esecuzione del metodo [IDebugProgramDestroyEvent2::GetExitCode.](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)
+ È necessario inviare [un oggetto IDebugProgramDestroyEvent2 per](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) implementare la terminazione normale. La terminazione normale richiede l'esecuzione [del metodo IDebugProgramDestroyEvent2::GetExitCode.](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)

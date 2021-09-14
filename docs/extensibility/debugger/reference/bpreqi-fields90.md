@@ -16,11 +16,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 859da0750f3522ae8a889612ae13db43816aa4d1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635172"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 Enumera i valori validi che specificano le informazioni da recuperare su una richiesta di punto di interruzione. Questa enumerazione estende [l'BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) di dati.
@@ -80,7 +80,7 @@ public enum enum_BPREQI_FIELDS90
 
 ## <a name="fields"></a>Campi
 `BPREQI90_BPLOCATION`\
-Inizializzare o usare il campo (posizione del punto di interruzione) della `bpLocation` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura .
+Inizializzare o usare il campo (posizione del punto di `bpLocation` interruzione) della [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura .
 
 `BPREQI90_LANGUAGE`\
 Inizializzare o usare `guidLanguage` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
@@ -101,7 +101,7 @@ Inizializzare o usare `bstrThreadName` il campo della struttura o `BP_REQUEST_IN
 Inizializzare o usare `bpPassCount` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI90_CONDITION`\
-Inizializzare o usare il `bpCondition` campo (condizione del punto di interruzione) della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare o usare il campo (condizione del punto di `bpCondition` interruzione) della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
 
 `BPREQI90_FLAGS`\
 Inizializzare o usare `dwFlags` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .

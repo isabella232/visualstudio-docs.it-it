@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b917bc14728ee1f8dd37f28bbec42e395455ee35
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122126206"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709632"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crea un enumeratore per le proprietà associate al stack frame, ad esempio le variabili locali.
@@ -53,16 +53,16 @@ int EnumProperties (
 
 ## <a name="parameters"></a>Parametri
 `dwFieldSpec`\
-[in] Combinazione di flag dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi [](../../../extensibility/debugger/reference/debug-property-info.md) nelle strutture DEBUG_PROPERTY_INFO valori enumerati.
+[in] Combinazione di flag [dell'enumerazione DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi [](../../../extensibility/debugger/reference/debug-property-info.md) nella struttura DEBUG_PROPERTY_INFO da determinare.
 
 `nRadix`\
-[in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
+[in] Radice da utilizzare nella formattazione di qualsiasi informazione numerica.
 
 `refiid`\
 [in] GUID di un filtro utilizzato per selezionare [le](../../../extensibility/debugger/reference/debug-property-info.md) DEBUG_PROPERTY_INFO da enumerare, ad esempio `guidFilterLocals` .
 
 `dwTimeout`\
-[in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere a tempo indeterminato.
+[in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo indefinito.
 
 `pcelt`\
 [out] Restituisce il numero di proprietà enumerate. Questo è lo stesso della chiamata [al metodo GetCount.](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)

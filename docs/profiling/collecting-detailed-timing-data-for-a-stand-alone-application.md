@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: aea82023781bb98fcc64f80f088c6ab4e4f91e09
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635812"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i componenti client autonomi tramite il metodo di strumentazione dalla riga di comando.
@@ -31,7 +31,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
 |----------|---------------------|
 |**Sottoporre a profilatura un'applicazione .NET Framework tramite la strumentazione**|-   [Procedura: Instrumentare un componente .NET e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
 |**Sottoporre a profilatura un'applicazione C/C++ tramite la strumentazione**|-   [Procedura: Instrumentare un componente nativo e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
-|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere i dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate
 

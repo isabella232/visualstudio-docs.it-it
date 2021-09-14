@@ -1,6 +1,6 @@
 ---
 title: Elemento Include | Microsoft Docs
-description: L'elemento Include specifica un file che può essere posizionato nel percorso di inclusione fornito per l'inserimento nel file corrente.
+description: L'elemento Include specifica un file che può essere individuato nel percorso di inclusione fornito per l'inserimento nel file corrente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,14 +17,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: adec3a58853768a6ca4225fde58870ac66f73242
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709591"
 ---
-# <a name="include-element"></a>Elemento Include
-L'elemento Include specifica un file che può essere posizionato nel percorso di inclusione fornito per l'inserimento nel file corrente.  Tutti i simboli e i tipi definiti diventeranno parte del risultato compilato.
+# <a name="include-element"></a>Include - elemento
+L'elemento Include specifica un file che può essere individuato nel percorso di inclusione fornito per l'inserimento nel file corrente.  Tutti i simboli e i tipi definiti diventeranno parte del risultato compilato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ L'elemento Include specifica un file che può essere posizionato nel percorso di
 |Attributo|Descrizione|
 |---------------|-----------------|
 |href|Obbligatorio. Percorso del file di intestazione:<br /><br /> href="stdidcmd.h"|
-|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -52,7 +52,7 @@ L'elemento Include specifica un file che può essere posizionato nel percorso di
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano comandi, ovvero voci di menu, menu, barre degli strumenti e caselle combinate, forniti da un vspackage all'IDE.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano comandi, ovvero voci di menu, menu, barre degli strumenti e caselle combinate, forniti da un VSPackage all'IDE.|
 
 ## <a name="example"></a>Esempio
 

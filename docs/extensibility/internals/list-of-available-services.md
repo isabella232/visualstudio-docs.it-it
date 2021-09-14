@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 06bb1c6c7b5e41f3c948abbbd633ba5e516a640c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626111"
 ---
 # <a name="list-of-available-services"></a>Elenco di servizi disponibili
 
@@ -51,11 +51,11 @@ Usare i GUID del servizio elencati qui o ottenuti da un'altra origine (ad esempi
 | <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostCommandDispatcher> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> | Sì | Sì | Consente a un VSPackage di partecipare alla catena del gestore comandi e gestire i comandi per conto dell'ambiente di sviluppo integrato (IDE) o di se stesso. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostLocale> | <xref:Microsoft.VisualStudio.Shell.Interop.IUIHostLocale> | Sì | Sì | Fornisce l'accesso alle informazioni sulle impostazioni locali dell'interfaccia utente dell'host. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> | No | Sì | Consente a un PACCHETTO VSPackage di registrare messaggi di alto livello quando la registrazione è attivata. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg> | Sì | Sì | Fornisce l'accesso alla **finestra Project aggiungi elemento,** consentendo ai pacchetti VSPackage di implementare la propria **opzione di** menu Aggiungi elemento. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg> | Sì | Sì | Fornisce l'accesso alla **finestra Project aggiungi elemento,** consentendo ai pacchetti VSPackage di implementare la propria opzione di menu **Aggiungi** elemento. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg> | Sì | Sì | Consente di visualizzare **la finestra di dialogo** Aggiungi riferimento . |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> | Sì | Sì | Consente a un VSPackage di determinare se è stata specificata un'opzione della riga di comando per devenv.exe. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCallBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCallBrowser> | No | Sì | Consente a un VSPackage di creare un nuovo **Visualizzatore chiamate** usato nel debug. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | Sì | Sì | Consente a un VSPackage di sincronizzare i **Visualizzazione classi** con un oggetto specifico. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | Sì | Sì | Consente a un VSPackage di sincronizzare il **Visualizzazione classi** con un oggetto specifico. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | Sì | Sì | Fornisce il supporto per il mapping dei nomi dei comandi ai GUID e per determinare i nomi di tutti i comandi e i nomi disponibili. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | No | Sì | Consente a un VSPackage di modificare la **visualizzazione definizione del codice.** |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Sì | Sì | Servizio interno. Non usare. |
@@ -132,11 +132,11 @@ Usare i GUID del servizio elencati qui o ottenuti da un'altra origine (ad esempi
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Sì | Sì | In alternativa, utilizzare il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Sì | Sì | Consente a un VSPackage di archiviare e recuperare informazioni dal file con estensione sln della soluzione corrente. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | No | Sì | Offre la possibilità di aggiungere e aggiornare riferimenti negli assembly di codice gestito. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | No | Sì | Fornisce l'accesso al Visual Studio di download della pagina iniziale di Visual Studio 2017 per avviare e arrestare il servizio di download in un thread in background. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | No | Sì | Fornisce l'accesso al Visual Studio download della pagina iniziale di 2017 per avviare e arrestare il servizio di download in un thread in background. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Sì | Sì | Fornisce l'accesso alla barra di stato dell'IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | No | Sì | Fornisce l'accesso ai metodi per la creazione di nomi di chiave sicuri e file di chiave con password utilizzate per la firma di assembly di codice gestito. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Sì | Sì | Consente a un VSPackage di fornire supporto per il salvataggio dei dati in più formati. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> | Sì | Sì | Fornisce l'accesso alla finestra Elenco attività IDE. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> | Sì | Sì | Consente di accedere alla finestra di Elenco attività IDE. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextImageUtilities> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextImageUtilities> | No | Sì | Fornisce utilità per il caricamento e il salvataggio di file di testo. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> | Sì | Sì | Fornisce l'accesso a tutti i buffer di testo, nonché alle sessioni di testo nascosto (per le aree nascoste) disponibili nell'IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTextOut> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTextOut> | Sì | Sì | Fornisce una versione della funzione Win32 per la scrittura di testo in un `TextOut` contesto di dispositivo (richiede un handle del controller di dominio). |
@@ -158,7 +158,7 @@ Usare i GUID del servizio elencati qui o ottenuti da un'altra origine (ad esempi
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebFavorites> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebFavorites> | Sì | Sì | Consente a un VSPackage di aggiungere all'elenco **Preferiti dell'utente.** |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebPreview> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebPreview> | Sì | Sì | Consente a un VSPackage di visualizzare in anteprima una pagina Web, in genere in una finestra figlio. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Sì | Sì | Consente a un VSPackage di aggiungere un URL all'elenco di URL usati più di recente e di ottenere un elenco di tutti gli URL nell'elenco MRU. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sì | Sì | Consente a un VSPackage di ottenere la cornice della finestra in cui potrebbe essere posizionato il pacchetto o una parte del pacchetto. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Sì | Sì | Consente a un VSPackage di ottenere la cornice della finestra in cui potrebbe essere posizionato il pacchetto o parte del pacchetto. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Sì | Sì | Fornisce l'accesso ai file di documentazione in formato XML associati a un particolare file di metadati. |
 
 ## <a name="see-also"></a>Vedi anche

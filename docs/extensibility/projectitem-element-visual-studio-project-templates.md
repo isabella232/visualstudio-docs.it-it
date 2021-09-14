@@ -16,18 +16,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d72272da255d51e5ef3423806744ef7c95e00193e6895daa9d96e702b48ef206
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bb7513a37f73bfd4dfc1cb8060c772d375a57329
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626004"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (Visual Studio di progetto)
 Specifica un file incluso nel modello di progetto.
 
 > [!NOTE]
-> `ProjectItem`L'elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. In questo argomento viene illustrato `ProjectItem` l'elemento per i modelli di progetto. Per una spiegazione `ProjectItem` dell'elemento per i modelli di elemento, vedere Elemento [ProjectItem (Visual Studio Item Templates).](../extensibility/projectitem-element-visual-studio-item-templates.md)
+> `ProjectItem`L'elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. In questo argomento viene illustrato `ProjectItem` l'elemento per i modelli di progetto. Per una spiegazione dell'elemento per i modelli di elemento, vedere `ProjectItem` Elemento [ProjectItem (Visual Studio item templates)](../extensibility/projectitem-element-visual-studio-item-templates.md).
 
  \<VSTemplate> \<TemplateContent>
  \<Project>
@@ -73,12 +73,12 @@ Specifica un file incluso nel modello di progetto.
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Oggetto che rappresenta il nome o il percorso di un file nel modello `string` *.zip* file.
+ Oggetto `string` che rappresenta il nome o il percorso di un file nel modello *.zip* file.
 
 ## <a name="remarks"></a>Commenti
  `ProjectItem` è un elemento figlio facoltativo di `Project` .
 
- L'attributo può essere usato per creare una struttura di directory diversa dalla struttura di directory nel `TargetFileName` file *.zip* modello. Ad esempio, se il file *MyFile.vb* esiste nella radice del file *.zip* del modello, ma si vuole che il file sia inserito in una directory denominata *CustomFiles* in tutti i progetti creati dal modello, usare il codice XML seguente:
+ L'attributo può essere usato per creare una struttura di directory diversa dalla struttura di directory nel `TargetFileName` file *.zip* modello. Ad esempio, se il file *MyFile.vb* è presente nella radice del file *.zip* modello, ma si vuole che il file sia inserito in una directory denominata *CustomFiles* in tutti i progetti creati dal modello, usare il codice XML seguente:
 
 ```xml
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>
@@ -86,7 +86,7 @@ Specifica un file incluso nel modello di progetto.
 
  `TargetFileName`L'attributo può essere usato anche per rinominare i file che contengono caratteri internazionali nei relativi nomi file. Ad esempio, un file *.zip* modello non può contenere nomi di file con caratteri Unicode, quindi il file deve essere rinominato prima di poter essere compresso in un file *.zip.* `TargetFileName`L'attributo può essere usato per impostare nuovamente il nome del file sul nome del file Unicode originale.
 
- `TargetFileName`L'attributo può essere usato anche per rinominare i file con parametri. La procedura seguente illustra come rinominare il file *MyFile.vb,* presente nella directory radice del file.zipmodello, *in* un nome di file basato sul nome del progetto.
+ `TargetFileName`L'attributo può essere usato anche per rinominare i file con parametri. La procedura seguente illustra come rinominare il file *MyFile.vb,* presente nella directory radice del file *.zip* modello, in un nome di file basato sul nome del progetto.
 
 ### <a name="to-rename-files-with-parameters"></a>Per rinominare i file con parametri
 
@@ -110,7 +110,7 @@ Specifica un file incluso nel modello di progetto.
    <Compile Include="$safeprojectname$.vb">
    ```
 
-    Quando viene creato un progetto da questo modello, il nome del file sarà basato sul nome immesso dall'utente nella finestra di dialogo Nuovo **Project,** con tutti gli spazi e i caratteri non sicuri rimossi. Per altre informazioni, vedere [Parametri del modello.](../ide/template-parameters.md)
+    Quando si crea un progetto da questo modello, il nome del file sarà basato sul nome immesso dall'utente nella finestra di dialogo Nuovo **Project,** con tutti gli spazi e i caratteri non sicuri rimossi. Per altre informazioni, vedere [Parametri del modello.](../ide/template-parameters.md)
 
 ## <a name="example"></a>Esempio
  L'esempio seguente mostra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.

@@ -1,5 +1,5 @@
 ---
-description: Caricare i simboli di debug da un flusso di dati dato l'oggetto ICorDebugModule.
+description: Caricare i simboli di debug da un flusso di dati in base all'oggetto ICorDebugModule.
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -19,14 +19,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cfc9296451d4f5fc29575b8b3bea454b00a63202
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079610"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709764"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Caricare i simboli di debug da un flusso di dati dato **l'oggetto ICorDebugModule.**
+Caricare i simboli di debug da un flusso di dati in base **all'oggetto ICorDebugModule.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,13 +69,13 @@ int LoadSymbolsFromStreamWithCorModule(
 [in] Oggetto che implementa [l'interfaccia ICorDebugModule.](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)
 
 `pStream`\
-[in] Flusso di dati che contiene i simboli di debug da caricare.
+[in] Flusso di dati contenente i simboli di debug da caricare.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(

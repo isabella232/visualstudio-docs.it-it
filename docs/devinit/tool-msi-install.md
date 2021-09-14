@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 90f77253dacceca26691ebdac8882a1574e2eaf0877672ee04974cd58a8f5726
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d2da7f26501cfa686cd0703f7dbbbef4053f761b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709859"
 ---
 # <a name="msi-install"></a>msi-install
 
@@ -37,7 +37,7 @@ Se viene `input` omesso o vuoto, lo strumento restituirà un errore.
 
 ### <a name="input"></a>Input
 
-La proprietà di input viene usata per specificare un percorso o un URL di `.msi` un file che verrà installato. Se il percorso di non è corretto o l'URL non punta direttamente a , si noterà che il pacchetto di `.msi` installazione non può essere `.msi` `msi-install` aperto.
+La proprietà di input viene usata per specificare un percorso o un URL di un `.msi` file che verrà installato. Se il percorso di non è corretto o l'URL non punta direttamente a , si noterà che il pacchetto di `.msi` installazione non può essere `.msi` `msi-install` aperto.
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
@@ -63,7 +63,7 @@ Il comportamento predefinito dello `msi-install` strumento è l'errore perché l
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito è riportato un esempio di come eseguire `msi-install` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.jsin che installerà l'msi con 7 zip:
+#### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.json che installerà l'msi 7-Zip:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-4.0",

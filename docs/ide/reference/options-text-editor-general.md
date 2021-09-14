@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, Generale
-description: Informazioni su come usare la pagina Generale per modificare le impostazioni globali per il Visual Studio e l'editor di testo.
+description: Informazioni su come usare la pagina Generale per modificare le impostazioni globali per il Visual Studio codice e l'editor di testo.
 ms.custom: SEO-VS-2020
 ms.date: 01/18/2019
 ms.topic: reference
@@ -38,13 +38,13 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 7cfd0ef18f85511d23825468f1b208c34bc7e209
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709390"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: Editor di \> testo Generale
+# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: Generale dell'editor \> di testo
 
 Questa finestra di dialogo consente di modificare le impostazioni globali di Visual Studio Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, selezionare **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi selezionare **Generale**.
 
@@ -100,7 +100,7 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 
 ### <a name="show-file-health-indicator"></a>Mostra indicatore di integrità file
 
-Quando questa opzione è selezionata, nell'angolo inferiore sinistro dell'editor verrà visualizzata una barra di stato dell'indicatore di integrità dei file (errori, avvisi) con le opzioni di pulizia del codice.
+Se questa opzione è selezionata, nell'angolo inferiore sinistro dell'editor verrà visualizzata una barra degli indicatori di integrità dei file (errori, avvisi) con opzioni di pulizia del codice.
 
 ## <a name="see-also"></a>Vedi anche
 

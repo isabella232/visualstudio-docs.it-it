@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 34a12b0e86b5805e97a563374506962618bf7853
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145770"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635187"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 Specifica le informazioni da recuperare su una risoluzione non riuscita di un punto di interruzione.

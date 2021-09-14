@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: b79b8d9399e4294a4e22cbc36f11bccbf703e215
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086976"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626298"
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 `GuidSymbol`L'elemento contiene il GUID della coppia GUID:ID che rappresenta un menu, un gruppo o un comando. L'ID proviene da `IDSymbol` un elemento `GuidSymbol` nell'elemento . `GuidSymbol`L'elemento ha un attributo che fornisce un nome `name` descrittivo per il GUID, contenuto `value` nell'attributo .

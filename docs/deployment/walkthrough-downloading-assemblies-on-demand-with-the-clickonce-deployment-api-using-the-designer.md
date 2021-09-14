@@ -21,11 +21,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b55cb3ce52864d8649008cd5f4f187c170c5813
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709869"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: Scaricare assembly su richiesta con l'API ClickOnce di distribuzione tramite la finestra di progettazione
 Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vengono scaricati alla prima esecuzione dell'applicazione. Alcune parti dell'applicazione possono tuttavia essere usate da un set limitato di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime.
@@ -86,7 +86,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Per contrassegnare gli assembly come facoltativi nell'applicazione ClickOnce mediante lo Strumento per la generazione e la modifica di manifesti - Client grafico (MageUI.exe)
 
-1. Creare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti come descritto in [Procedura dettagliata: Distribuire manualmente un ClickOnce app.](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+1. Creare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti come descritto in [Procedura dettagliata: Distribuire manualmente un'ClickOnce app.](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 
 2. Prima di chiudere MageUI.exe, selezionare la scheda contenente il manifesto dell'applicazione di distribuzione e all'interno della scheda selezionare la scheda **File** .
 

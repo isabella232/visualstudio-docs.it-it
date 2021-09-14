@@ -1,5 +1,5 @@
 ---
-title: DA0030- Raccogliere le misurazioni di interazione tra livelli per i progetti di database | Microsoft Docs
+title: DA0030 - Raccogliere misurazioni di interazione tra livelli per i progetti di database | Microsoft Docs
 description: Le chiamate ai metodi System.Data sono una percentuale significativa dei dati di profilatura e non sono stati raccolti dati di interazione tra livelli nell'esecuzione della profilatura. È consigliabile ripetere la profilatura e aggiungere dati di interazione tra livelli.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: de0de156ecd959671394679a30912f24a5aaaaf5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084298"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635787"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database
 

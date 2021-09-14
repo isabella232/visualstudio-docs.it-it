@@ -17,11 +17,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17e561a155e13b7857573894041e79e4d6ca90c1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626160"
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
 Accetta un file .dll per un'estensione Visual Studio come parametro e crea un file con estensione *pkgdef* per accompagnare il file *.dll.* Il file *con estensione pkgdef* contiene tutte le informazioni che verrebbero altrimenti scritte nel Registro di sistema quando viene installata l'estensione.
@@ -59,7 +59,7 @@ I *file con estensione pkgdef* devono essere installati in uno dei percorsi segu
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Se la cartella di installazione è *%localappdata%\Microsoft\Visual Studio\16.0\Extensions, \\* l'estensione viene riconosciuta da Visual Studio ma è disabilitata per impostazione predefinita. L'utente può abilitare l'estensione usando **Gestisci estensioni**.
+Se la cartella di installazione è *%localappdata%\Microsoft\Visual Studio\16.0\Extensions \\*, l'estensione viene riconosciuta da Visual Studio ma è disabilitata per impostazione predefinita. L'utente può abilitare l'estensione usando **Gestisci estensioni**.
 
 Se la cartella di installazione è *%vsinstalldir%\Common7\IDE\Extensions, \\* l'estensione è abilitata per impostazione predefinita.
 

@@ -15,15 +15,15 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 535dfe4126bd1dbeeca69a89f1bd4df86df7ea98
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086937"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626202"
 ---
 # <a name="ide-guids"></a>GUID dell'IDE
 
-La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo <xref:Microsoft.VisualStudio.VSConstants> integrato (IDE) come elencato nella tabella seguente.
+La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo integrato <xref:Microsoft.VisualStudio.VSConstants> (IDE), come elencato nella tabella seguente.
 
 ## <a name="core-systems"></a>Sistemi di base
 
@@ -38,7 +38,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo <xref:Micros
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>Componenti visibili su vasta gamma
+## <a name="broadly-visible-components"></a>Componenti a livello generale
 
 |Costante|GUID|
 |--------------|----------|
@@ -94,7 +94,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo <xref:Micros
 
 |Costante|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-0000000046|
 
 ## <a name="task-list-guids"></a>GUID dell'elenco attività
 
@@ -112,7 +112,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo <xref:Micros
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>GUID della pagina del selettore di componente
+## <a name="component-selector-page-guids"></a>GUID della pagina del selettore di componenti
 
 |Costanti|GUID|
 |---------------|----------|
@@ -120,7 +120,7 @@ La classe pubblica i GUID di alcune parti dell'ambiente di sviluppo <xref:Micros
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>GUID vari della shell
+## <a name="miscellaneous-shell-guids"></a>GUID della shell vari
 
 |Costanti|GUID|
 |---------------|----------|

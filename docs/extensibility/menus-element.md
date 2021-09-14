@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fd8f65c0994ceb500ab389b3437cca85d8030a4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626016"
 ---
 # <a name="menus-element"></a>Elemento Menus
 Definisce tutti i menu e le barre degli strumenti implementati da un VSPackage.
@@ -40,7 +40,7 @@ Definisce tutti i menu e le barre degli strumenti implementati da un VSPackage.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condition|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 

@@ -14,23 +14,23 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d129e02dec3770a1a2288c68ff99d6b6ac2cf0a4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042270"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709547"
 ---
 # <a name="legacy-language-service-overview"></a>Panoramica dei servizi di linguaggio legacy
-Un servizio di linguaggio fornisce il supporto dell'editor che consente di implementare determinate [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio di linguaggio Managed Package Framework (MPF) forniscono il supporto completo per le funzionalità usate di frequente e il supporto parziale per altre funzionalità.
+Un servizio di linguaggio fornisce il supporto dell'editor che consente di implementare determinate [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio di linguaggio Managed Package Framework (MPF) offrono supporto completo per le funzionalità usate di frequente e supporto parziale per altre funzionalità.
 
 ## <a name="fully-supported-features-in-the-mpf"></a>Funzionalità completamente supportate in MPF
- Le classi di servizio del linguaggio MPF supportano le funzionalità seguenti:
+ Le classi del servizio di linguaggio MPF supportano le funzionalità seguenti:
 
 - Evidenziazione della sintassi
 
 - struttura
 
-- Aggiungere commenti a blocchi di codice
+- Aggiungere commenti ai blocchi di codice
 
 - Corrispondenza parentesi graffe
 
@@ -40,14 +40,14 @@ Un servizio di linguaggio fornisce il supporto dell'editor che consente di imple
 
 - Informazioni sui parametri di IntelliSense
 
-- Informazioni rapide su IntelliSense
+- Informazioni rapide di IntelliSense
 
 - Completamento dei membri IntelliSense
 
-- Completamento di parole IntelliSense
+- Completamento delle parole di IntelliSense
 
 ## <a name="partially-supported-features-in-the-mpf"></a>Funzionalità parzialmente supportate in MPF
- MPF fornisce solo il supporto parziale per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi chiamati da MPF.
+ MPF fornisce solo supporto parziale per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi chiamati da MPF.
 
 - Riformattazione del codice. Specificare il codice che implementa la riformattazione.
 
@@ -55,7 +55,7 @@ Un servizio di linguaggio fornisce il supporto dell'editor che consente di imple
 
 - Supporto della finestra **Auto del** debugger per la visualizzazione delle variabili. Specificare il codice che determina cosa visualizzare nella finestra.
 
-- Supporto della barra **di spostamento per** lo spostamento rapido tra tipi e membri. Implementare e restituire una classe helper che popola gli elenchi nelle caselle combinate della **barra** di spostamento.
+- Supporto della barra **di spostamento per** la navigazione rapida tra tipi e membri. Implementare e restituire una classe helper che popola gli elenchi nelle caselle **combinate della barra** di spostamento.
 
 ## <a name="implementation"></a>Implementazione
  È necessario completare diversi passaggi per implementare il servizio di linguaggio stesso e le funzionalità del servizio di linguaggio che si desidera supportare per il linguaggio. Questi passaggi sono descritti negli argomenti seguenti:

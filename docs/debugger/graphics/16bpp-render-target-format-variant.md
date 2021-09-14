@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a1713dba828af71b1a6a23cc7de0f46fd28bab70
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626484"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Variante di formato di destinazione di rendering a 16 bpp
 Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazioni di rendering e i buffer nascosti.
@@ -46,7 +46,7 @@ Le applicazioni che fanno parte di una catena di scambio hanno un formato di buf
 
    Se questa strategia consente di risparmiare più larghezza di banda di quella utilizzata copiando la destinazione di rendering nel backbuffer della catena di scambio, le prestazioni di rendering sono migliorate.
 
-   Le architetture GPU che usano tecniche di rendering affiancato possono vedere vantaggi significativi in termini di prestazioni usando un formato di buffer di frame a 16 bpp. Questo miglioramento è dovuto al fatto che una parte più grande del buffer dei frame può essere inserita nella cache del buffer frame locale di ogni riquadro. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.
+   Le architetture GPU che usano tecniche di rendering affiancato possono visualizzare vantaggi significativi in termini di prestazioni usando un formato di buffer di frame a 16 bpp. Questo miglioramento è dovuto al fatto che una parte più grande del buffer dei frame può essere inserita nella cache del buffer di frame locale di ogni riquadro. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.
 
 ## <a name="remarks"></a>Commenti
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 63ea33101bbd0062ebab9dc74925ac98d7d206984d3ffdb256644618afbb86da
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bcd2288ef9399f27f53565ea7ea971579cad7858
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390669"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709864"
 ---
 # <a name="choco-upgrade"></a>choco-upgrade
 
@@ -37,7 +37,7 @@ Se `input` entrambe le `additionalOptions` proprietà e vengono omesse o vuote, 
 
 ### <a name="input"></a>Input
 
-La proprietà viene utilizzata per specificare il nome del pacchetto da aggiornare ,ad esempio 'mongodb', o il percorso di un file di configurazione dei formati `input` _seguentipackages.config_, _nuspec_ e _nupkg_. Il valore di verrà aggiunto a un comando (ad esempio ) insieme agli argomenti specifici in e alle opzioni predefinite `input` `choco upgrade` `choco upgrade mongodb` [`additionalOptions`](#additional-options) `choco` (definite di [seguito).](#built-in-options) I pacchetti sono disponibili nella [raccolta di pacchetti Chocolatey.](https://chocolatey.org/packages) Quando si usa un file di configurazione, è possibile passare il percorso di tale file nella `input` proprietà , ad esempio: `"input":"packages.config"` .
+La proprietà viene utilizzata per specificare il nome del pacchetto da aggiornare (ad esempio 'mongodb') o il percorso di un file di configurazione dei formati `input` _packages.config_, _nuspec_ e _nupkg_. Il valore di verrà aggiunto a un comando (ad esempio ) insieme agli argomenti specifici in e alle opzioni predefinite `input` `choco upgrade` `choco upgrade mongodb` [`additionalOptions`](#additional-options) `choco` (definite di [seguito).](#built-in-options) I pacchetti sono disponibili nella [raccolta di pacchetti Chocolatey.](https://chocolatey.org/packages) Quando si usa un file di configurazione, è possibile passare il percorso di tale file nella `input` proprietà , ad esempio: `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
@@ -60,7 +60,7 @@ Il comportamento predefinito dello `choco-upgrade` strumento è l'errore perché
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito sono riportati esempi di come eseguire `choco-upgrade` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-update-packages-listed-in-packagesconfig"></a>.devinit.jssu che aggiornerà i pacchetti elencati in packages.config:
+#### <a name="devinitjson-that-will-update-packages-listed-in-packagesconfig"></a>.devinit.json che aggiornerà i pacchetti elencati in packages.config:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -73,7 +73,7 @@ Di seguito sono riportati esempi di come eseguire `choco-upgrade` usando `.devin
 }
 ```
 
-#### <a name="devinitjson-that-will-upgrade-mongodb"></a>.devinit.jssu che a upgraderà MongoDB:
+#### <a name="devinitjson-that-will-upgrade-mongodb"></a>.devinit.json che a upgraderà MongoDB:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -86,7 +86,7 @@ Di seguito sono riportati esempi di come eseguire `choco-upgrade` usando `.devin
 }
 ```
 
-#### <a name="devinitjson-that-will-upgrade-to-a-specific-version-of-mongodb"></a>.devinit.jssu verrà eseguito l'aggiornamento a una versione specifica di MongoDB:
+#### <a name="devinitjson-that-will-upgrade-to-a-specific-version-of-mongodb"></a>.devinit.json che verrà aggiornato a una versione specifica di MongoDB:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

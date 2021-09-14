@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 05b73832544256ecbba81f4dc3554e28327dc76f7834b54ed3bcdfa160c80697
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 64b215912c21a405c2b2c3a0feb3720a4ab16c44
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452678"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709866"
 ---
 # <a name="azurecli-login"></a>azurecli-login
 
@@ -50,7 +50,7 @@ Il comportamento predefinito dello strumento è installare la versione più rece
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito è riportato un esempio di come eseguire `azurecli-login` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-trigger-azure-login"></a>.devinit.jsche attiverà l'accesso ad Azure:
+#### <a name="devinitjson-that-will-trigger-azure-login"></a>.devinit.json che attiverà l'accesso ad Azure:
 
 ```json
 {

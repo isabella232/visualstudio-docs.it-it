@@ -1,6 +1,6 @@
 ---
 description: Sposta il contesto del documento di un determinato numero di istruzioni o righe.
-title: Interfaccia IDebugDocumentContext2::Seek | Microsoft Docs
+title: IDebugDocumentContext2::Seek | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d18e00071d23e22ed2cbd99f9b88f95c13aee253
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119490"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635004"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 Sposta il contesto del documento di un determinato numero di istruzioni o righe.
@@ -45,7 +45,7 @@ int Seek(
 
 ## <a name="parameters"></a>Parametri
 `nCount`\
-[in] Numero di istruzioni o righe da spostare, a seconda del contesto del documento.
+[in] Numero di istruzioni o righe da spostare in avanti, a seconda del contesto del documento.
 
 `ppDocContext`\
 [out] Restituisce un nuovo [oggetto IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) con la nuova posizione.

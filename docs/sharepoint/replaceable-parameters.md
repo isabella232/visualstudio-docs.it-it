@@ -18,17 +18,17 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload: office
 ms.openlocfilehash: e36edf6d8482fcb48a6a77695a6631aed1868203
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635579"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   I parametri sostituibili, o *token,* possono essere usati all'interno dei file di progetto per fornire valori per SharePoint elementi della soluzione i cui valori effettivi non sono noti in fase di progettazione. Sono simili in funzione ai [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token di modello standard. Per altre informazioni, vedere [Parametri del modello.](../ide/template-parameters.md)
 
 ## <a name="token-format"></a>Formato del token
- I token iniziano e terminano con un simbolo di dollaro ($). Durante la distribuzione, tutti i token usati vengono sostituiti con i valori effettivi quando un progetto viene inserito in un pacchetto SharePoint soluzione (file *con estensione wsp).* Ad esempio, il token **$SharePoint. Package.Name$** potrebbe risolversi nella stringa "Test SharePoint Package".
+ I token iniziano e terminano con un simbolo di dollaro ($). In fase di distribuzione, tutti i token usati vengono sostituiti con i valori effettivi quando un progetto viene in pacchetto SharePoint pacchetto della soluzione (file *con estensione wsp).* Ad esempio, il token **$SharePoint. Package.Name$** potrebbe risolversi nella stringa "Test SharePoint Package".
 
 ## <a name="token-rules"></a>Regole dei token
  Ai token si applicano le regole seguenti:
@@ -82,9 +82,9 @@ ms.locfileid: "122092943"
 
 - Webpart
 
-- Dwp
+- DWP
 
-  Queste estensioni sono definite `<TokenReplacementFileExtensions>` dall'elemento nel file Microsoft.VisualStudio.SharePoint.targets, che si trova in ... \\<cartella programmi \> \MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools.
+  Queste estensioni sono definite `<TokenReplacementFileExtensions>` dall'elemento nel file Microsoft.VisualStudio.SharePoint.targets, che si trova nel ... \\<cartella \> \MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools.
 
   È tuttavia possibile aggiungere altre estensioni di file all'elenco. Aggiungere un elemento a qualsiasi PropertyGroup nel file SharePoint progetto definito prima di `<TokenReplacementFileExtensions>` \<Import> del file SharePoint targets.
 

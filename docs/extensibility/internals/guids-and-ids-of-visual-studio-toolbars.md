@@ -1,5 +1,5 @@
 ---
-title: GUID e ID delle barre degli Visual Studio di | Microsoft Docs
+title: GUID e ID delle Visual Studio barre degli strumenti | Microsoft Docs
 description: Visualizzare un elenco di valori GUID e ID per le barre degli strumenti e i gruppi che contengono, inclusi nell Visual Studio ide (Integrated Development Environment).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -20,26 +20,26 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ec564b6b4da3f9ee6cd706d1c6ab3796c03494f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050000"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709564"
 ---
-# <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID delle barre Visual Studio strumenti
-In questo argomento vengono enumerati i valori GUID e ID delle barre degli strumenti incluse nell'ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti in file con estensione *vsct* installati come parte di Visual Studio SDK. Per altre informazioni, vedere Comandi, menu e gruppi definiti [dall'IDE.](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID delle barre Visual Studio barre degli strumenti
+Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse nell'ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti nei *file con estensione vsct* installati come parte di Visual Studio SDK. Per altre informazioni, vedere Comandi, menu e gruppi definiti [dall'IDE.](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 
 > [!NOTE]
-> Molte delle barre degli strumenti disponibili Visual Studio non sono definite da Visual Studio e i relativi valori GUID e ID non sono pubblici. Questo argomento elenca solo le barre degli strumenti definite nei file Visual Studio SDK *con estensione vsct.*
+> Molte delle barre degli strumenti disponibili Visual Studio non sono definite da Visual Studio e i relativi valori GUID e ID non sono pubblici. In questo argomento vengono elencate solo le barre degli strumenti definite in Visual Studio file con estensione *vsct* dell'SDK.
 
- Per altre informazioni su come usare gli oggetti IDE definiti nei file con estensione *vsct,* vedere [Estendere menu e comandi.](../../extensibility/extending-menus-and-commands.md)
+ Per altre informazioni sull'utilizzo di oggetti IDE definiti nei file con estensione *vsct,* vedere [Estendere menu e comandi](../../extensibility/extending-menus-and-commands.md).
 
- Le barre degli strumenti predefinite fornite dall'IDE Visual Studio usano il GUID , se non diversamente `guidSHLMainMenu` specificato tramite la `GUID:ID` sintassi .
+ Le barre degli strumenti predefinite fornite dall'IDE Visual Studio usano il GUID , tranne se diversamente specificato `guidSHLMainMenu` tramite la `GUID:ID` sintassi .
 
 ## <a name="ide-toolbars"></a>Barre degli strumenti dell'IDE
  Le barre degli strumenti seguenti vengono fornite dall'IDE Visual Studio. Le barre degli strumenti possono essere visualizzate selezionandole **nel** sottomenu Barre degli strumenti **del** menu Strumenti. Le barre degli strumenti nelle finestre degli strumenti non sono incluse in questa sezione.
 
- Solo i gruppi possono discendere direttamente dalle barre degli strumenti. Per aggiungere un gruppo, impostarne il padre sul GUID e sull'ID della barra degli strumenti. Per aggiungere un pulsante a una barra degli strumenti, impostarne l'elemento padre su un gruppo sulla barra degli strumenti.
+ Solo i gruppi possono scendere direttamente dalle barre degli strumenti. Per aggiungere un gruppo, impostarne l'elemento padre sul GUID e sull'ID della barra degli strumenti. Per aggiungere un pulsante a una barra degli strumenti, impostarne il padre su un gruppo sulla barra degli strumenti.
 
 |Barra degli strumenti|ID|
 |-------------|--------|
@@ -60,7 +60,7 @@ In questo argomento vengono enumerati i valori GUID e ID delle barre degli strum
 |Dati XML|IDM_VS_TOOL_DATA|
 
 ## <a name="groups-on-the-ide-toolbars"></a>Gruppi sulle barre degli strumenti dell'IDE
- Per aggiungere un pulsante a una barra degli strumenti standard, impostare uno dei gruppi seguenti come padre. I gruppi sono ordinati in base alla barra degli strumenti padre.
+ Per aggiungere un pulsante a una barra degli strumenti standard, impostare uno dei gruppi seguenti come padre. I gruppi vengono ordinati in base alla barra degli strumenti padre.
 
 ### <a name="standard-toolbar-groups"></a>Gruppi di barre degli strumenti standard
 
@@ -92,7 +92,7 @@ In questo argomento vengono enumerati i valori GUID e ID delle barre degli strum
 |Commento|IDG_VS_EDITTOOLBAR_COMMENT|
 |Segnalibri|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
-### <a name="debug-toolbar-groups"></a>Gruppi di barre degli strumenti di debug
+### <a name="debug-toolbar-groups"></a>Eseguire il debug di gruppi di barre degli strumenti
 
 |Nome|ID|
 |----------|--------|
@@ -108,10 +108,10 @@ In questo argomento vengono enumerati i valori GUID e ID delle barre degli strum
 |Percorso di debug|IDG_DEBUG_CONTEXT_TOOLBAR|
 
 ## <a name="tool-window-toolbars"></a>Barre degli strumenti della finestra degli strumenti
- Le barre degli strumenti possono essere visualizzate direttamente nell'IDE o nelle finestre degli strumenti, ad esempio **Esplora soluzioni**. Poiché le finestre degli strumenti non sono definite nei file con estensione *vsct,* le barre degli strumenti delle finestre degli strumenti non hanno elementi padre definiti. Vengono invece inseriti nel codice. La tabella seguente illustra le barre degli strumenti visualizzate nelle finestre degli strumenti nell'IDE e i gruppi di comandi che contengono.
+ Le barre degli strumenti possono essere visualizzate direttamente nell'IDE o nelle finestre degli strumenti, ad esempio **Esplora soluzioni**. Poiché le finestre degli strumenti non sono definite nei file *con estensione vsct,* le barre degli strumenti delle finestre degli strumenti non hanno elementi padre definiti. Vengono invece inseriti nel codice. La tabella seguente illustra le barre degli strumenti visualizzate nelle finestre degli strumenti nell'IDE e i gruppi di comandi che contengono.
 
 > [!NOTE]
-> Le barre degli strumenti e i gruppi usano il GUID `guidSHLMainMenu` , tranne quando diversamente specificato tramite la sintassi GUID:ID. Quando viene specificato un GUID per una barra degli strumenti, si applica anche ai gruppi che scendono da tale barra degli strumenti.
+> Le barre degli strumenti e i gruppi usano il GUID , tranne se diversamente `guidSHLMainMenu` specificato tramite la sintassi GUID:ID. Se viene specificato un GUID per una barra degli strumenti, si applica anche ai gruppi che discendono da tale barra degli strumenti.
 
 |Finestra degli strumenti|Barra degli strumenti|Gruppi|
 |-----------------|-------------|------------|
@@ -124,7 +124,7 @@ In questo argomento vengono enumerati i valori GUID e ID delle barre degli strum
 |Visualizzatore oggetti|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|
 |Output|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
 |Trova e sostituisci|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|
-|Risultati ricerca 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
+|Risultati della ricerca 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
 |Risultati di ricerca 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|
 |Frammento di codice|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|
 |Segnalibri|IDM_VS_TOOL_BOOKMARKWIND|IDG_VS_BWNEWFOLDER<br /><br /> IDG_VS_BWNEXTBM<br /><br /> IDG_VS_BWNEXTBMF<br /><br /> IDG_VS_BWENABLE<br /><br /> IDG_VS_BWDELETE|

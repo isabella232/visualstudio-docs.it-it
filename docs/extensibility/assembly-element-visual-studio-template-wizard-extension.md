@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e469eb19e9b1a48ca9ef0cf5348360dc0171d01f9315515665b176cbb038fa4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1be9c72c01746b716b0202843b86ed2d5d52d44b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709822"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (estensione Visual Studio modello)
 Specifica il nome o il nome sicuro dell'assembly che implementa `IWizard` l'interfaccia .
@@ -50,7 +50,7 @@ Specifica il nome o il nome sicuro dell'assembly che implementa `IWizard` l'inte
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la personalizzazione della procedura guidata del modello.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la personalizzazione della creazione guidata modello.|
 
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
@@ -93,6 +93,6 @@ Specifica il nome o il nome sicuro dell'assembly che implementa `IWizard` l'inte
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)
-- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Procedura: Usare le procedure guidate con i modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d33ce0af87df2e3d6506fef48aeb91f1b9ebdeef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709521"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrazione di un servizio di linguaggio legacy 2
 Le sezioni seguenti forniscono elenchi di voci del Registro di sistema per le varie opzioni del servizio di linguaggio disponibili in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -28,7 +28,7 @@ Le sezioni seguenti forniscono elenchi di voci del Registro di sistema per le va
  Nell'elenco seguente delle voci del Registro di sistema, *VS Reg Root* è uguale HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X.Y*, dove *X.Y* è il numero [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di versione.
 
 ## <a name="registry-entries-for-language-service-options"></a>Voci del Registro di sistema per le opzioni del servizio di linguaggio
- La *chiave VS Reg Root*\Languages\Language Services Language \\ *Name* può contenere i valori seguenti.
+ La *chiave radice vs reg*\Languages\Language Services Language \\ *Name* può contenere i valori seguenti.
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
@@ -40,14 +40,14 @@ Le sezioni seguenti forniscono elenchi di voci del Registro di sistema per le va
 |RequestStockColors|REG_DWORD|0-1|Specifica se i colori personalizzati o predefiniti vengono usati per colorare le parole chiave.|
 |ShowHotURLs|REG_DWORD|0-1|Specifica se l'utente può fare clic su URL.|
 |Impostazione predefinita su URL non hot|REG_DWORD|0-1|Specifica l'impostazione iniziale per l'opzione **Abilita navigazione URL** a singolo clic nella finestra di **dialogo** Opzioni .|
-|DefaultToInsertSpaces|REG_DWORD|0-1|Specifica se il servizio di linguaggio dispone di "spazi di inserimento" come opzione di tabulazione predefinita.|
+|DefaultToInsertSpaces|REG_DWORD|0-1|Specifica se il servizio di linguaggio ha "inserisci spazi" come opzione di tabulazione predefinita.|
 |ShowDropdownBarOption|REG_DWORD|0-1|Abilita o disabilita **l'opzione Barra di** spostamento nella finestra **di** dialogo Opzioni che mostra o nasconde la barra **di spostamento**.|
 |Solo finestra del codice singolo|REG_DWORD|0-1|Abilita o disabilita la scelta **Nuova finestra** nel menu **Finestra** per un servizio di linguaggio.|
 |EnableAdvancedMembersOption|REG_DWORD|0-1|Abilita o disabilita **un'impostazione della finestra** di dialogo Opzioni per Nascondi membri **avanzati**.|
 |Supporto CF_HTML|REG_DWORD|0-1|Specifica se l'editor consente di copiare e incollare dati HTML.|
 |EnableLineNumbersOption|REG_DWORD|0-1|Specifica se le opzioni **Numeri di** riga nella finestra di **dialogo Opzioni** sono abilitate per un servizio di linguaggio.|
 |HideAdvancedMembersByDefault|REG_DWORD|0-1|Specifica se i membri avanzati, ad esempio i campi privati, sono nascosti negli elenchi di completamento.|
-|ShowBraceCompletion|REG_DWORD|0-1|Specifica se **l'opzione Completamento parentesi graffe** nella **finestra di** dialogo Opzioni è abilitata.|
+|ShowBraceCompletion|REG_DWORD|0-1|Specifica se **l'opzione Completamento parentesi graffe** nella **finestra di dialogo** Opzioni è abilitata.|
 
 ### <a name="example"></a>Esempio
 
@@ -65,7 +65,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-debugger-languages-options"></a>Voci del Registro di sistema per le opzioni dei linguaggi del debugger
- La *chiave RADICE DI VISUAL STUDIO Reg*\Languages\Language Services Language \\ *Name*\Debugger Languages \\ *GUID*\ può includere i valori seguenti.
+ La chiave RADICE \Languages\Language Services Language Name \Debugger Languages GUID \ di VISUAL Studio *Reg* \\ può includere i \\ valori seguenti.
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
@@ -90,7 +90,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ|Resid|Nome visualizzato localizzato di questa pagina delle opzioni. Il nome può essere un testo letterale o # , dove è un ID risorsa stringa nella `nnn` DLL satellite del pacchetto `nnn` VSPackage specificato.|
 |Pacchetto|REG_SZ|*GUID*|GUID del pacchetto VSPackage che implementa questa pagina di opzioni.|
-|Pagina|REG_SZ|*GUID*|GUID della pagina delle proprietà da richiedere dal pacchetto VSPackage chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metodo . Se questa voce del Registro di sistema non è presente, la chiave del Registro di sistema descrive un nodo, non una pagina.|
+|Pagina|REG_SZ|*GUID*|GUID della pagina delle proprietà da richiedere al pacchetto VSPackage chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metodo . Se questa voce del Registro di sistema non è presente, la chiave del Registro di sistema descrive un nodo, non una pagina.|
 
 ### <a name="example"></a>Esempio
 
@@ -117,7 +117,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
               Page      = reg_sz:{607D8062-68D1-41E4-9A35-B5E7F14D0481}
 ```
 
-## <a name="registry-entries-for-file-name-extension-options"></a>Voci del Registro di sistema per le opzioni dell'estensione file
+## <a name="registry-entries-for-file-name-extension-options"></a>Voci del Registro di sistema per le opzioni di estensione del nome file
  La voce per l'estensione di file deve includere il punto iniziale, ad esempio ".myext".
 
 |Nome|Tipo|Intervallo|Descrizione|
@@ -135,16 +135,16 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-options"></a>Voci del Registro di sistema per le opzioni dell'editor
- La *chiave \Editors radice* di VS Reg può contenere i valori seguenti:
+ La *chiave \Editors radice* reg di Visual Studio può contenere i valori seguenti:
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ|""|Non usato; È possibile inserire il proprio nome qui per la documentazione.|
-|DefaultToolboxTab|REG_SZ|""|Nome della scheda della casella degli strumenti da impostare come predefinito quando l'editor è attivo.|
+|DefaultToolboxTab|REG_SZ|""|Nome della scheda della casella degli strumenti da impostare come predefinita quando l'editor è attivo.|
 |DisplayName|REG_SZ|Resid|Nome da visualizzare nella **finestra di dialogo** Apri con . Il nome è l'ID risorsa stringa o un nome in formato standard.|
 |ExcludeDefTextEditor|REG_DWORD|0-1|Usato per il **comando di** menu Apri con. Se non si vuole elencare l'editor di testo predefinito nell'elenco degli editor disponibili per un tipo di file specifico, impostare questo valore su 1.|
-|LinkedEditorGUID|REG_SZ|*\<GUID>*|Usato per qualsiasi servizio di linguaggio in grado di aprire un file con il supporto della tabella codici. Ad esempio, quando si apre un file  .txt usando il comando Apri con , vengono fornite opzioni per l'uso dell'editor del codice sorgente con e senza codifica.<br /><br /> Il GUID specificato nel nome della sottochiave è per la factory dell'editor della tabella codici. il GUID collegato specificato in questa voce del Registro di sistema specifica è per la normale factory dell'editor. Lo scopo di questa voce è che se l'IDE non apre un file usando l'editor predefinito, l'IDE tenterà di usare l'editor successivo nell'elenco. Questo editor successivo non deve essere la factory dell'editor della tabella codici perché questa factory dell'editor è fondamentalmente la stessa della factory dell'editor che ha avuto esito negativo.|
-|Pacchetto|REG_SZ|*\<GUID>*|GUID del pacchetto VSPackage per il ResID del nome visualizzato.|
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|Usato per qualsiasi servizio di linguaggio in grado di aprire un file con il supporto della tabella codici. Ad esempio, quando si apre un file  .txt usando il comando Apri con , vengono fornite opzioni per l'uso dell'editor del codice sorgente con e senza codifica.<br /><br /> Il GUID specificato nel nome della sottochiave è per la factory dell'editor della tabella codici; Il GUID collegato specificato in questa voce del Registro di sistema specifica è relativo alla normale factory dell'editor. Lo scopo di questa voce è che se l'IDE non apre un file usando l'editor predefinito, l'IDE tenterà di usare l'editor successivo nell'elenco. L'editor successivo non deve essere la factory dell'editor della tabella codici perché questa factory dell'editor è fondamentalmente la stessa della factory dell'editor che ha avuto esito negativo.|
+|Pacchetto|REG_SZ|*\<GUID>*|GUID vspackage per il ResID del nome visualizzato.|
 
 ### <a name="example"></a>Esempio
 
@@ -160,12 +160,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-logical-view-options"></a>Voci del Registro di sistema per le opzioni di visualizzazione logica
- *L'interfaccia utente* grafica dell'editor di Visual Studio Reg \\ *Root \Editors>* \LogicalViews può contenere i valori seguenti.
+ *L'interfaccia utente grafica* di Visual Studio Reg Root \\ *\Editors Editor>* \LogicalViews può contenere i valori seguenti.
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ||Non utilizzato.|
-|*\<GUID>*|REG_SZ|""|Chiave per le viste logiche supportate. È possibile avere tutti questi elementi necessari. Il nome della voce del Registro di sistema è importante, non il valore, che è sempre una stringa vuota.|
+|*\<GUID>*|REG_SZ|""|Chiave per le viste logiche supportate. È possibile avere tutti questi elementi necessari. Il nome della voce del Registro di sistema è importante, non il valore , che è sempre una stringa vuota.|
 
 ### <a name="example"></a>Esempio
 
@@ -182,7 +182,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-extension-options"></a>Voci del Registro di sistema per le opzioni di estensione dell'editor
- La *chiave VS Reg Root*\Editors Editor \\ *GUID*\Extensions può contenere i valori seguenti. L'estensione del nome file non include il punto iniziale.
+ La *chiave \Extensions \GUID* editor editor reg di Visual Studio \\ può contenere i valori seguenti. L'estensione del nome file non include il punto iniziale.
 
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
@@ -213,17 +213,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 |Nome|Tipo|Intervallo|Descrizione|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Supporto per le operazioni IntelliSense.|
-|MatchBraces|REG_DWORD|0-1|Supporto per la corrispondenza di coppie di linguaggi, ad esempio parentesi graffe, parentesi e parentesi quadre.|
+|MatchBraces|REG_DWORD|0-1|Supporto per le coppie di linguaggio corrispondenti, ad esempio parentesi graffe, parentesi e parentesi quadre.|
 |Informazioni rapide|REG_DWORD|0-1|Supporto per l'operazione informazioni rapide di IntelliSense.|
 |ShowMatchingBrace|REG_DWORD|0-1|Supporto per la visualizzazione della coppia di lingue corrispondente nella barra di stato.|
-|MatchBracesAtCaret|REG_DWORD|0-1|Supporto per la visualizzazione di coppie di lingue corrispondenti, in genere tramite l'evidenziazione dei due elementi.|
-|MaxErrorMessages|REG_DWORD|0-n|Numero massimo di errori che possono essere visualizzati nella **finestra Elenco** errori.|
-|CodeSenseDelay|REG_DWORD|0-n|Numero di millisecondi di ritardo prima dell'avvio di qualsiasi analisi in background per un'operazione IntelliSense.|
+|MatchBracesAtCaret|REG_DWORD|0-1|Supporto per la visualizzazione di coppie di linguaggi corrispondenti, in genere tramite l'evidenziazione dei due elementi.|
+|MaxErrorMessages|REG_DWORD|0-n|Numero massimo di errori che possono essere visualizzati nella finestra **Elenco** errori.|
+|CodeSenseDelay|REG_DWORD|0-n|Numero di millisecondi da ritardare prima di avviare qualsiasi analisi in background per un'operazione IntelliSense.|
 |EnableAsyncCompletion|REG_DWORD|0-1|Supporto per l'analisi in background.|
-|EnableCommenting|REG_DWORD|0-1|Il supporto per impostare come commento i blocchi di testo selezionati e implica anche il supporto per rimuovere il commento del testo selezionato.|
-|EnableFormatSelection|REG_DWORD|0-1|Supporto per la formattazione del testo, ad esempio il rientro automatico o la modifica della posizione delle parentesi graffe.|
+|EnableCommenting|REG_DWORD|0-1|Il supporto per impostare come commento i blocchi di testo selezionati e implica anche il supporto per rimuovere il commento dal testo selezionato.|
+|EnableFormatSelection|REG_DWORD|0-1|Supporto per la formattazione del testo, ad esempio il rientro automatico o la regolazione della posizione delle parentesi graffe.|
 |Strutturazione automatica|REG_DWORD|0-1|Supporto per la struttura (aree che possono essere compresse).|
-|MaxRegions|REG_DWORD|0-n|Numero massimo di aree nascoste per file.|
+|MaxRegions|REG_DWORD|0-n|Numero massimo di aree nascoste per ogni file.|
 
 ```
 ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\

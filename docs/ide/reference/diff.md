@@ -1,6 +1,6 @@
 ---
 title: -Diff (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando Devenv Diff per confrontare due file.
+description: Informazioni su come usare l'opzione della riga di comando devenv di Diff per confrontare due file.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: b3db029bc530cf90f48fd92901c7c55a7a0e9ae1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094087"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625890"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -38,7 +38,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   Obbligatorio. Percorso completo e nome del primo file da confrontare.
 
-- *TargetFile*
+- *File di destinazione*
 
   Obbligatorio. Percorso completo e nome del secondo file da confrontare.
 

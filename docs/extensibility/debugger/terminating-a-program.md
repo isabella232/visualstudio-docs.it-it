@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: ccc94c0466f02c402271952b76f8b1e42a265983
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626369"
 ---
 # <a name="terminating-a-program"></a>Terminazione di un programma
 La sezione seguente descrive la terminazione di un singolo programma con un thread.

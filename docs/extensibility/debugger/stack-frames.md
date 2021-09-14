@@ -16,20 +16,20 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6c10f00f12d1ee8df9918530a3b04d6ba5ef4e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626430"
 ---
 # <a name="stack-frames"></a>Stack frame
 Nell'architettura del debugger, un *stack frame*:
 
-- Astrazione di uno stack che fornisce il contesto di esecuzione di un thread. Un thread viene sempre eseguito all'interno di una funzione. Un stack frame contiene le variabili locali della funzione e gli argomenti a essa. Per eseguire il debug con Visual Studio, il linguaggio o l'ambiente in fase di debug deve supportare stack frame.
+- Astrazione di uno stack che fornisce il contesto di esecuzione di un thread. Un thread viene sempre eseguito all'interno di una funzione. Un stack frame contiene le variabili locali della funzione e gli argomenti a essa correlati. Per eseguire il debug con Visual Studio, il linguaggio o l'ambiente in fase di debug deve supportare stack frame.
 
-- Può identificare e descrivere se stesso e può restituire il thread associato. Un stack frame può anche restituire il contesto del codice che rappresenta il puntatore all'istruzione corrente e i contesti di valutazione della documentazione e dell'espressione associati.
+- Può identificare e descrivere se stesso e può restituire il thread associato. Un stack frame può anche restituire il contesto del codice che rappresenta il puntatore all'istruzione corrente e i contesti di valutazione dell'espressione e della documentazione associati.
 
-- Dispone di proprietà che descrivono il nome, il tipo e il valore delle variabili e degli argomenti locali e che vengono visualizzate in diverse finestre di debug IDE.
+- Dispone di proprietà che descrivono il nome, il tipo e il valore di variabili e argomenti locali e che vengono visualizzate in diverse finestre di debug dell'IDE.
 
 - È rappresentato da [un'interfaccia IDebugStackFrame2,](../../extensibility/debugger/reference/idebugstackframe2.md) in genere creata da un motore di debug (DE) o da una macchina virtuale come conseguenza dell'esecuzione di un thread.
 

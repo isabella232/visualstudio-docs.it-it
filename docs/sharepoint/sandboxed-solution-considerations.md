@@ -1,5 +1,5 @@
 ---
-title: Considerazioni sulle soluzioni in modalità sandbox | Microsoft Docs
+title: Considerazioni sulle soluzioni sandbox | Microsoft Docs
 description: Esplorare le soluzioni in modalità sandbox, una funzionalità di Microsoft SharePoint che consente agli utenti della raccolta siti di caricare soluzioni di codice personalizzate.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -22,11 +22,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 156ebc7fa17d53fd56cb8b069698f0bdf4b9a43c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635556"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerazioni sulle soluzioni in modalità sandbox
   *Le soluzioni sandbox* sono una funzionalità di Microsoft SharePoint 2010 che consente agli utenti della raccolta siti di caricare soluzioni di codice personalizzate. Una soluzione comune in modalità sandbox è che gli utenti caricano i propri Web part.
@@ -34,7 +34,7 @@ ms.locfileid: "122092813"
  Un'applicazione SharePoint sandbox viene eseguita in un processo protetto e monitorato che ha accesso a una parte limitata del Web farm. Microsoft SharePoint 2010 usa una combinazione di funzionalità, raccolte di soluzioni, monitoraggio delle soluzioni e un framework di convalida per abilitare soluzioni sandbox.
 
 ## <a name="specify-project-trust-level"></a>Specificare il livello di attendibilità del progetto
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]supporta soluzioni sandbox tramite una proprietà di progetto booleana denominata *Soluzione sandbox.* Questa proprietà può essere impostata in qualsiasi momento nel progetto oppure può essere specificata quando si crea il progetto nella SharePoint **personalizzazione guidata**.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]supporta soluzioni sandbox tramite una proprietà di progetto booleana denominata *Soluzione sandbox.* Questa proprietà può essere impostata in qualsiasi momento nel progetto oppure può essere specificata quando si crea il progetto nella SharePoint **personalizzazione guidata .**
 
 > [!NOTE]
 > La modifica *della proprietà Soluzione sandbox* di un progetto dopo la creazione può causare errori di convalida.
@@ -72,22 +72,22 @@ ms.locfileid: "122092813"
  In WSS 3.0 le soluzioni possono essere distribuite solo a livello di farm. Ciò significa che è possibile distribuire soluzioni potenzialmente dannose o destabilizzanti che hanno interessato l'intero Web farm e tutte le altre raccolte siti e tutte le altre applicazioni eseguite in esso. Tuttavia, usando soluzioni sandbox, è possibile distribuire le soluzioni in un'area secondaria della farm, una raccolta siti specifica. Per fornire protezione aggiuntiva, l'assembly della soluzione non viene caricato nel processo [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] principale (*w3wp.exe*). Viene invece caricato in un processo separato (*SPUCWorkerProcess.exe*). Questo processo viene monitorato e implementa quote e limitazioni per proteggere la farm da soluzioni sandbox che eseguono attività dannose, ad esempio l'esecuzione di cicli rigidi che utilizzano cicli della CPU.
 
 ## <a name="site-collection-solution-gallery"></a>Raccolta soluzioni raccolta siti
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 dispone di una funzionalità nota come "raccolta di soluzioni della raccolta siti". È possibile accedere a questa funzionalità dalla pagina Amministrazione centrale di SharePoint 2010 o aprendo il **menu**  Azioni sito, scegliendo **Impostazioni** sito e quindi scegliendo il collegamento Soluzioni in **Raccolte** nel sito di SharePoint. Le raccolte soluzioni sono repository di soluzioni che consentono agli amministratori delle raccolte siti di gestire le soluzioni nelle raccolte siti.
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 dispone di una funzionalità nota come "raccolta di soluzioni della raccolta siti". È possibile accedere a questa funzionalità dalla pagina Amministrazione centrale di SharePoint 2010 o aprendo il **menu** Azioni sito, scegliendo  **Impostazioni** sito e quindi scegliendo il collegamento Soluzioni in **Raccolte** nel sito di SharePoint. Le raccolte soluzioni sono repository di soluzioni che consentono agli amministratori delle raccolte siti di gestire le soluzioni nelle raccolte siti.
 
- La raccolta di soluzioni è una raccolta documenti archiviata nel Web radice del SharePoint sito. La raccolta di soluzioni sostituisce i modelli di sito e supporta i pacchetti della soluzione. Quando viene caricato SharePoint file del pacchetto della soluzione (con estensione *wsp),* questo viene elaborato come soluzione in modalità sandbox.
+ La raccolta di soluzioni è una raccolta documenti archiviata nel Web radice del SharePoint sito. La raccolta di soluzioni sostituisce i modelli di sito e supporta i pacchetti della soluzione. Quando viene SharePoint un file del pacchetto della soluzione (con estensione *wsp),* viene elaborato come soluzione in modalità sandbox.
 
 ## <a name="sandboxed-solution-limitations"></a>Limitazioni delle soluzioni in modalità sandbox
  Quando viene distribuita una soluzione in modalità sandbox, la gamma di funzionalità SharePoint disponibili è limitata per ridurre eventuali vulnerabilità di sicurezza. Di seguito sono riportate alcune di queste limitazioni:
 
 - Le soluzioni sandbox hanno a disposizione un subset limitato di elementi di soluzioni distribuibili. I modelli di SharePoint, ad esempio le definizioni del sito e i flussi di lavoro, non sono disponibili.
 
-- SharePoint esegue il codice della soluzione sandbox in un processo (*SPUCWorkerProcess.exe*) separato dal processo del pool di applicazioni principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] (*w3wp.exe*).
+- SharePoint esegue il codice della soluzione in modalità sandbox in un processo (*SPUCWorkerProcess.exe*) separato dal processo del pool di applicazioni principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] (*w3wp.exe*).
 
 - Le cartelle mappate non possono essere aggiunte al progetto.
 
 - Tipi [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] nell'assembly Microsoft.Office. Il server non può essere usato nelle soluzioni sandbox. Inoltre, solo i tipi [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] nell'assembly Microsoft.SharePoint possono essere usati nelle soluzioni sandbox.
 
-  È importante notare che la specifica di una soluzione SharePoint come soluzione sandbox non ha alcun effetto sul server SharePoint; determina solo il modo in cui SharePoint progetto viene distribuito in SharePoint da e gli assembly a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cui viene associato. Non influisce sul file con estensione *wsp* generato e il file con estensione *wsp* non contiene dati direttamente correlati alla proprietà *Sandboxed Solution.*
+  È importante notare che la specifica di una soluzione SharePoint come soluzione sandbox non ha alcun effetto SharePoint server; determina solo il modo in cui SharePoint progetto viene distribuito SharePoint da e gli assembly a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cui viene associato. Non influisce sul file con estensione *wsp* generato e il file con estensione *wsp* non contiene dati direttamente correlati alla proprietà *Sandboxed Solution.*
 
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funzionalità ed elementi nelle soluzioni sandbox
  Le soluzioni sandbox supportano le funzionalità e gli elementi seguenti:

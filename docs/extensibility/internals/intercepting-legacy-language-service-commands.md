@@ -1,5 +1,5 @@
 ---
-title: Intercettazione dei comandi legacy del servizio di linguaggio | Microsoft Docs
+title: Intercettazione dei comandi del servizio di linguaggio legacy | Microsoft Docs
 description: Informazioni su come usare i filtri comandi in Visual Studio intercettare i comandi del servizio di linguaggio legacy e aggiungere un comportamento specifico del linguaggio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6f82e3cb15b39359c78f28a42e62d65665f34dba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626129"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Intercettazione dei comandi dei servizi di linguaggio legacy
 Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è possibile fare in modo che il servizio di linguaggio intercetti i comandi che altrimenti verrebbero gestiti dalla visualizzazione testo. Ciò è utile per il comportamento specifico della lingua che la visualizzazione testo non gestisce. È possibile intercettare questi comandi aggiungendo uno o più filtri di comando alla visualizzazione testo dal servizio di linguaggio.

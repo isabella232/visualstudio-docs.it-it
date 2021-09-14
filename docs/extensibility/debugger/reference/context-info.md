@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f0e47ae5651f928894d42e2e06c015315fa037a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145549"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709800"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 Questa struttura descrive un contesto di memoria o un contesto di codice.
@@ -55,7 +55,7 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Members
 `dwFields`\
-Combinazione di flag [dell'CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) che specifica quali campi vengono<strong>compilati.</strong>
+Combinazione di flag [dell'CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) che specifica i campi<strong>compilati.</strong>
 
 `bstrModuleUrl`\
 Nome del modulo in cui si trova il contesto.

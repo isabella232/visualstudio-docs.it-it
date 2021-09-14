@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - uwp
 ms.openlocfilehash: 01832b96a9505a9883896cc60027e2029d6b3b45
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709382"
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
 
@@ -39,7 +39,7 @@ Usare questa impostazione per verificare se la visualizzazione Progettazione app
 
 |Nome|Descrizione|
 |-|-|
-|**Vista origine**|Specifica se viene visualizzata solo l'origine XAML nella visualizzazione XAML. L'impostazione è utile quando si caricano documenti di grandi dimensioni.|
+|**Visualizzazione origine**|Specifica se viene visualizzata solo l'origine XAML nella visualizzazione XAML. L'impostazione è utile quando si caricano documenti di grandi dimensioni.|
 |**Visualizzazione Progettazione**|Specifica se deve apparire solo una finestra di progettazione XAML visiva nella visualizzazione XAML.|
 |**Doppia visualizzazione**|Specifica se sia la finestra di progettazione XAML visiva che l'origine XAML devono apparire l'una accanto all'altra nella visualizzazione XAML (percorso basato sull'impostazione **Orientamento divisione**).|
 
@@ -60,8 +60,8 @@ Usare questa impostazione per determinare il funzionamento dello zoom quando si 
 |Nome|Descrizione|
 |-|-|
 |**Rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML usando lo scorrimento della rotellina del mouse.|
-|**CTRL + rotellina del mouse**|Fare zoom avanti finestra di progettazione XAML clic premendo **CTRL** mentre si scorre la rotellina del mouse.|
-|**ALT + rotellina del mouse**|Fare zoom avanti finestra di progettazione XAML clic premendo **ALT** mentre si scorre la rotellina del mouse.|
+|**CTRL + rotellina del mouse**|Fare zoom avanti finestra di progettazione XAML premendo CTRL **mentre** si scorre la rotellina del mouse.|
+|**ALT + rotellina del mouse**|Fare zoom avanti finestra di progettazione XAML premendo **ALT** mentre si scorre la rotellina del mouse.|
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
 
@@ -71,7 +71,7 @@ Usare questa impostazione per determinare il valore di zoom predefinito per la v
 
 |Nome|Descrizione|
 |-|-|
-|**Ultimo utilizzo**|Per impostazione predefinita, usa l'ultimo valore di zoom usato per tutti i documenti XAML. Quando un documento XAML viene aperto per la prima volta, userà l'impostazione "Adatta tutto" solo per la prima volta.|
+|**Ultimo utilizzo**|Usare l'ultimo valore di zoom usato per tutti i documenti XAML per impostazione predefinita. Quando un documento XAML viene aperto per la prima volta, userà l'impostazione "Adatta tutto" solo per la prima volta.|
 |**Adatta tutto**|Usare questa opzione per impostare il valore di zoom su "Adatta tutto" per la finestra di progettazione XAML. Quando un documento XAML viene chiuso e riaperto, l'ultimo valore impostato verrà mantenuto per la sessione, ma per le diverse sessioni verrà usato "Adatta tutto" per impostazione predefinita.|
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.

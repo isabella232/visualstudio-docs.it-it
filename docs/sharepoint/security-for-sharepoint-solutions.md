@@ -1,6 +1,6 @@
 ---
 title: Sicurezza per SharePoint soluzioni | Microsoft Docs
-description: Scoprire le funzionalità Visual Studio incorporate per migliorare la sicurezza delle SharePoint applicazioni.
+description: Scoprire le funzionalità Visual Studio incorporate per migliorare la sicurezza delle applicazioni SharePoint applicazioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: d287552b07f67c7415688fefd87f876242b230f4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635563"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicurezza per SharePoint soluzioni
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]incorpora le funzionalità seguenti per migliorare la sicurezza delle SharePoint applicazioni.
@@ -34,10 +34,10 @@ ms.locfileid: "122084064"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>attributo AllowPartiallyTrustedCallers
  Per impostazione predefinita, solo le applicazioni completamente attendibili dal sistema di sicurezza dall'accesso di codice di runtime possono accedere a un assembly di codice gestito condiviso. Contrassegnare un assembly completamente attendibile con l'attributo AllowPartiallyTrustedCallers consente agli assembly parzialmente attendibili di accedervi.
 
- L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi SharePoint soluzione non distribuita nella Global Assembly Cache di sistema ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ). Sono incluse soluzioni in modalità sandbox o soluzioni distribuite nella directory bin SharePoint dell'applicazione. Per altre informazioni, vedere Modifiche alla [sicurezza della versione 1](/previous-versions/msp-n-p/ff921345(v=pandp.10)) per Microsoft .NET Framework e Distribuzione di Web part [in SharePoint Foundation.](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14))
+ L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi SharePoint soluzione non distribuita nella Global Assembly Cache di sistema ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ). Sono incluse soluzioni in modalità sandbox o soluzioni distribuite nella SharePoint bin dell'applicazione. Per altre informazioni, vedere Modifiche alla [sicurezza della versione 1](/previous-versions/msp-n-p/ff921345(v=pandp.10)) per Microsoft .NET Framework e Distribuzione di Web part [in SharePoint Foundation.](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14))
 
 ## <a name="safe-against-script-property"></a>Cassaforte sulla proprietà script
- *L'inserimento* di script injection è l'inserimento di codice potenzialmente dannoso in controlli o pagine Web. Per proteggere i SharePoint 2010 dall'inserimento di script, i collaboratori non possono visualizzare o modificare le web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo SafeControl denominato SafeAgainstScript. In impostare questo attributo nella sottoproprietà Voci di controllo Cassaforte di un elemento di [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto Cassaforte su  **script**. Per altre informazioni, vedere [Fornire informazioni sul pacchetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e sulla distribuzione negli elementi del progetto e [Procedura: Contrassegnare i controlli come controlli sicuri.](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+ *L'inserimento* di script injection è l'inserimento di codice potenzialmente dannoso in controlli o pagine Web. Per proteggere i SharePoint 2010 da script injection, i collaboratori non possono visualizzare o modificare le web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo SafeControl denominato SafeAgainstScript. In impostare questo attributo nella sottoproprietà Voci di controllo Cassaforte di un elemento di progetto Cassaforte [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Su script**.  Per altre informazioni, vedere [Fornire informazioni sul pacchetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e sulla distribuzione negli elementi del progetto e [Procedura: Contrassegnare i controlli come controlli sicuri.](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Controllo dell'account utente di Vista e Windows 7
  [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporano una funzionalità di sicurezza nota come Controllo dell'account utente. Per sviluppare SharePoint soluzioni nei sistemi e , il controllo dell'account utente richiede [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] l'esecuzione [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] come amministratore di sistema. Dal menu **Start** aprire il menu di scelta rapida per [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quindi scegliere Esegui come **amministratore**.
@@ -47,7 +47,7 @@ ms.locfileid: "122084064"
  Per altre informazioni, vedere [Informazioni e configurazione del controllo dell'account utente in Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10)). e [Windows 7 Controllo dell'account utente](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
 
 ## <a name="sharepoint-permissions-considerations"></a>SharePoint sulle autorizzazioni
- Per sviluppare SharePoint, è necessario disporre di autorizzazioni sufficienti per eseguire ed eseguire il debug SharePoint soluzioni. Prima di testare una soluzione SharePoint, seguire questa procedura per assicurarsi di disporre delle autorizzazioni necessarie:
+ Per sviluppare SharePoint soluzioni, è necessario disporre di autorizzazioni sufficienti per eseguire ed eseguire il debug SharePoint soluzioni. Prima di testare una soluzione SharePoint, seguire questa procedura per assicurarsi di disporre delle autorizzazioni necessarie:
 
 1. Aggiungere l'account utente come amministratore nel sistema.
 

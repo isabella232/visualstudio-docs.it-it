@@ -13,11 +13,11 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.openlocfilehash: 52851b97716d6b32cc4087f19f87d060e1c608c0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709427"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare modelli di progetto e modelli di elementi
 
@@ -39,9 +39,9 @@ Per impostazione predefinita, i modelli installati con Visual Studio si trovano 
 
 ::: moniker range="vs-2017"
 
-- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\ \> \\<Language<Locale ID\>*
+- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\<Language \> \\<Locale ID\>*
 
-- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \Common7\IDE\ItemTemplates \\ \> \\<Language<Locale ID\>*
+- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2017 \\ \<edition> \Common7\IDE\ItemTemplates<\\ Language \> \\<Locale ID\>*
 
 Ad esempio, la directory seguente contiene i modelli di elementi di Visual Basic per la lingua inglese (LCID 1033):
 
@@ -51,7 +51,7 @@ Ad esempio, la directory seguente contiene i modelli di elementi di Visual Basic
 
 ::: moniker range=">=vs-2019"
 
-- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\ \> \\<Language<Locale ID\>*
+- *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \\ Common7\IDE\ProjectTemplates \\ \><Language \\<Locale ID\>*
 
 - *%ProgramFiles(x86)% \\ Microsoft Visual Studio \\ 2019 \\ \<edition> \Common7\IDE\ItemTemplates<\\ Language<Locale \> \\ ID\>*
 

@@ -1,5 +1,5 @@
 ---
-title: Registrare le estensioni dei nomi di file per GLID side-by-side
+title: Registrare le estensioni dei nomi file per gli ID side-by-side
 description: Informazioni sulla registrazione delle estensioni di file per le distribuzioni side-by-side, che consente agli utenti di aprire i file nella versione appropriata di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: be7c5c2a45d42840c41b5860596cc4fd8c883bf0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057122"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626009"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Registrare le estensioni di file per le distribuzioni side-by-side
 Per i pacchetti VSPackage distribuiti in un ambiente side-by-side, è necessario registrare le estensioni di file per associare i file alla versione corretta di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . A meno che non si usi un'estensione di file specifica della versione, la registrazione consente agli utenti di aprire i file di progetto e di elemento di progetto nella versione appropriata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

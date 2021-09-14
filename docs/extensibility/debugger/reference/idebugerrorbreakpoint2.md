@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: b7b4b4760b6d7388a9b1179b27322b8aa4a0b13b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634899"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Questa interfaccia rappresenta un punto di interruzione di errore o avviso, ad esempio una posizione non valida, un'espressione non valida o i motivi per cui il punto di interruzione in sospeso non è associato (codice non ancora caricato e così via).

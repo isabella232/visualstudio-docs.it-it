@@ -1,6 +1,6 @@
 ---
 title: Rapporto delle operazioni su disco (visualizzazione thread) | Microsoft Docs
-description: Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O eseguite nei canali del disco. Vedere le informazioni segnalate per ogni accesso al disco.
+description: Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O eseguite nei canali del disco. Vedere quali informazioni vengono segnalate per ogni accesso al disco.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ff9790ab1178ecae056c4af0fcea673e8e94ead7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635731"
 ---
 # <a name="disk-operations-report-threads-view"></a>Report delle operazioni su disco (visualizzazione Thread)
 Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O eseguite nei canali del disco.

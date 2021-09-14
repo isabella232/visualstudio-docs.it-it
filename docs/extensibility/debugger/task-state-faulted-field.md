@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a603ace4218acfeb412fc50389c8484cdcdb3a6ce79eacb347e9c8957590a53
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4d7010bfa6dc23b514f760cac055670d6de41d4f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626381"
 ---
 # <a name="task_state_faulted-field"></a>TASK_STATE_FAULTED campo
 L'attività è stata completata a causa di un'eccezione non gestita.

@@ -1,5 +1,5 @@
 ---
-description: Ottiene il nome file del file di origine che contiene la posizione del documento.
+description: Ottiene il nome del file di origine che contiene la posizione del documento.
 title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 93588dec17efc3ef2384ccd8d0df95d1fe8260b4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634988"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-Ottiene il nome file del file di origine che contiene la posizione del documento.
+Ottiene il nome del file di origine che contiene la posizione del documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +43,13 @@ int GetFileName(
 
 ## <a name="parameters"></a>Parametri
 `pbstrFileName`\
-[out] Restituisce il nome file del file di origine.
+[out] Restituisce il nome del file di origine.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Un file di origine potrebbe non avere sempre un nome di file ( ad esempio, il file di origine potrebbe non esistere su disco).
+ Un file di origine potrebbe non avere sempre un nome file( ad esempio, il file di origine potrebbe non esistere su disco).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 84b6506f2aa9c284a97521bf865572773f61908b2def3ef17644cc20234ac037
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 799f1f8153d132f8490bc4fe99c17a256893a6be
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390557"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709846"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
@@ -50,7 +50,7 @@ Il comportamento predefinito dello strumento è installare la versione più rece
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito è riportato un esempio di come eseguire `require-azurecli` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-azure-cli"></a>.devinit.jsin che installerà l'interfaccia della riga di comando di Azure:
+#### <a name="devinitjson-that-will-install-the-azure-cli"></a>.devinit.json che installerà l'interfaccia della riga di comando di Azure:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

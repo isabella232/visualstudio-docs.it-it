@@ -1,6 +1,6 @@
 ---
-description: Estende l'interfaccia IDebugCodeContext2 per consentire il recupero di interfacce di modulo e di processo.
-title: IDebugCodeContext3 | Microsoft Docs
+description: Estende l'interfaccia IDebugCodeContext2 per consentire il recupero delle interfacce del modulo e del processo.
+title: Oggetto IDebugCodeContext3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9aa54f6832734709f8fdabd1d3428c4b54e5741972b651eb9ab2cdf3209cf95
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 502867256f90574c2a75791b447b76b56af3a638
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452290"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635132"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
-Estende [l'interfaccia IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) per consentire il recupero di interfacce di modulo e di processo.
+Estende [l'interfaccia IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) per consentire il recupero delle interfacce del modulo e del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ IDebugCodeContext3 : IDebugCodeContext2
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Implementato dai motori di debug e utilizzato dal [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pacchetto di debug.
+ Implementato dai motori di debug e utilizzato dal pacchetto [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] di debug.
 
 ## <a name="methods"></a>Metodi
- Oltre ai metodi nell'interfaccia `IDebugCodeContext2` , questa interfaccia implementa i metodi seguenti:
+ Oltre ai metodi sull'interfaccia `IDebugCodeContext2` , questa interfaccia implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|

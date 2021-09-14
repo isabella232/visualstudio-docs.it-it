@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: f3b46aa13e492017f54e452e37eca025ecab842b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125517"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709608"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Questa interfaccia enumera i processi in esecuzione su una porta di debug.
@@ -34,7 +34,7 @@ IEnumDebugProcesses : IUnknown
  Un fornitore di porte personalizzato implementa questa interfaccia per fornire un elenco di processi in esecuzione su una porta.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Visual Studio chiama [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) per ottenere questa interfaccia.
+ Visual Studio chiama [EnumProcesses per](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) ottenere questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IEnumDebugProcesses2` .
@@ -48,7 +48,7 @@ IEnumDebugProcesses : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Ottiene il numero di processi in un enumeratore.|
 
 ## <a name="remarks"></a>Commenti
- Visual Studio usa questa interfaccia per popolare la **finestra** Processi.
+ Visual Studio questa interfaccia per popolare la **finestra** Processi.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 54888223ec789babd4af15c6b675a138bdb81520
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042010"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709481"
 ---
 # <a name="web-project-essentials"></a>Nozioni fondamentali sui progetti Web
 I progetti Web creano applicazioni Web. È possibile usare un progetto Web per creare un'applicazione Web con pagine Web intelligenti. Una pagina Web intelligente include codice lato server che esegue il rendering della pagina Web su richiesta.
@@ -38,11 +38,11 @@ I progetti Web creano applicazioni Web. È possibile usare un progetto Web per c
 - Il file di soluzione per un progetto Web si trova separatamente dal sito Web stesso. Per impostazione predefinita, i file della soluzione si trovano in \Documents e Impostazioni \\ *YourAccount*\Documenti \\ *\<Visual Studio ####>* \Projects \\ *YourWebSite*.
 
   > [!NOTE]
-  > Se si vuole mantenere il file della soluzione con il sito Web, è sufficiente spostarlo e riaprirlo.
+  > Se si vuole mantenere il file di soluzione con il sito Web, è sufficiente spostarlo e riaprirlo.
 
 - Se si apre un sito Web senza file di soluzione Visual Studio, viene generato automaticamente un nuovo file di soluzione.
 
-- I progetti Web non hanno file di progetto. Project le informazioni vengono archiviate nel file di soluzione, nel file web.config e altrove.
+- I progetti Web non dispongono di file di progetto. Project le informazioni vengono archiviate nel file di soluzione, nel file web.config e altrove.
 
 - L'aggiunta di proprietà globali a un progetto Web crea automaticamente un file di archiviazione nella cartella della soluzione del progetto Web.
 

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c72b0a3494018f8dc2bda518507d4b13da9cfe74
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634972"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Determina se la posizione del documento è contenuta nel documento specificato.
@@ -49,7 +49,7 @@ int IsPositionInDocument(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo viene usato principalmente per impostare punti di interruzione nelle [interfacce IDebugDocument2.](../../../extensibility/debugger/reference/idebugdocument2.md) Durante il caricamento dei documenti, viene chiamata la posizione del punto di interruzione per determinare se il documento contiene questa posizione.
+ Questo metodo viene usato principalmente nell'impostazione di punti di interruzione nelle [interfacce IDebugDocument2.](../../../extensibility/debugger/reference/idebugdocument2.md) Durante il caricamento dei documenti, viene chiamata la posizione del punto di interruzione per determinare se il documento contiene questa posizione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

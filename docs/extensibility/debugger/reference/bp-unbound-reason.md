@@ -1,5 +1,5 @@
 ---
-description: Indica il motivo per cui un punto di interruzione è stato non associato.
+description: Indica il motivo per cui un punto di interruzione è stato scollegato.
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96492dbc68869ab63b1da14c6a1c7d8b08cc7a66
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635195"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Indica il motivo per cui un punto di interruzione è stato non associato.
+Indica il motivo per cui un punto di interruzione è stato scollegato.
 
 ## <a name="syntax"></a>Sintassi
 

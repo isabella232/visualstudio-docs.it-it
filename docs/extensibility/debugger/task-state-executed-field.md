@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7617d0b54c2fe2532eb92b54810e7e9d8a28d7c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626387"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED campo
 L'attività è in esecuzione ma non è ancora stata completata.
@@ -38,4 +38,4 @@ L'attività è in esecuzione ma non è ancora stata completata.
  Se il [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contiene questo valore, la <xref:System.Threading.Tasks.Task.Status%2A> proprietà restituisce <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Vedi anche
-- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)

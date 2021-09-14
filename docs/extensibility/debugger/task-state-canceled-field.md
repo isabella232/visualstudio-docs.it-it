@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ea74eb264f6706fb02b03304e50baa4ee86207f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626393"
 ---
 # <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED campo
 L'attività è stata annullata prima di raggiungere lo stato di esecuzione oppure ne ha confermato l'annullamento e l'operazione è stata completata senza eccezioni.

@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3af597ef953f98b850638cb9ad0dabe721e5692951dd961f14cc977f47214414
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eecdc2a020117b7345682068cb27509df805ff9b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709863"
 ---
 # <a name="enable-iis"></a>enable-iis
 
 > [!IMPORTANT]
 > A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo strumento viene usato per abilitare le funzionalità di IIS e `enable-iis` installare il modulo ASP.NET Core [per](/aspnet/core/host-and-deploy/aspnet-core-module) lo ASP.NET sviluppo con IIS.
+Lo strumento viene usato per abilitare le funzionalità di IIS e `enable-iis` installare il modulo ASP.NET Core [per](/aspnet/core/host-and-deploy/aspnet-core-module) ASP.NET sviluppo con IIS.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -50,7 +50,7 @@ Il comportamento predefinito dello strumento prevede l'abilitazione delle funzio
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito è riportato un esempio di come eseguire `enable-iis` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-enable-iis-development"></a>.devinit.jsin che consentirà lo sviluppo iis:
+#### <a name="devinitjson-that-will-enable-iis-development"></a>.devinit.json che abiliterà lo sviluppo IIS:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0.json",

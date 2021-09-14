@@ -6,8 +6,8 @@ ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
-author: anandmeg
-ms.author: meghaanand
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 dev_langs:
 - CSharp
@@ -15,19 +15,19 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6b69a138689c7351b51e5674b587911a41eb61c7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5543a568f7246d9600ba375d9a1cf19af4cbd2d4
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625973"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Esercitazione: Aprire un progetto da un Visual Studio 2017
 
 In questa esercitazione si userà Visual Studio 2017 per connettersi a un repository per la prima volta e quindi aprire un progetto da esso.
 
 > [!TIP]
-> Esiste un nuovo modo completamente integrato per connettersi a un GitHub di lavoro in [Visual Studio 2019.](https://visualstudio.microsoft.com/downloads) Per altre informazioni, vedere la [**pagina Nuova esperienza Git Visual Studio 2019.**](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+> Esiste un nuovo modo completamente integrato per connettersi a un GitHub di lavoro in [Visual Studio 2019.](https://visualstudio.microsoft.com/downloads) Per altre informazioni, vedere la pagina Nuova esperienza [**Git Visual Studio 2019.**](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
 
 ## <a name="open-a-project-from-a-github-repo-by-using-visual-studio-2017"></a>Aprire un progetto da un GitHub 2017 usando Visual Studio 2017
 
@@ -101,7 +101,7 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se si è pronti a creare codice con Visual Studio 2017, approfondire una delle esercitazioni seguenti specifiche del linguaggio:
+Se si è pronti per creare codice con Visual Studio 2017, approfondire una delle esercitazioni seguenti specifiche del linguaggio:
 
 - [Visual Studio esercitazioni | **C#**](./csharp/index.yml)
 - [Esercitazioni di Visual Studio | **Visual Basic**](./visual-basic/index.yml)

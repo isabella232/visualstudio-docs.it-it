@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb8cb02d178a9efcb9b3d03423b722a4950c6511
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127207"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634915"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Questa interfaccia rappresenta un tipo di enumerazione.
@@ -37,7 +37,7 @@ IDebugEnumField : IDebugContainerField
  Usare [QueryInterface](/cpp/atl/queryinterface) per ottenere questa interfaccia [dall'interfaccia IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_ENUM` .
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine VTable
- Oltre ai metodi nelle interfacce e , questa interfaccia `IDebugField` `IDebugContainerField` implementa i metodi seguenti:
+ Oltre ai metodi sulle interfacce e , questa interfaccia `IDebugField` `IDebugContainerField` implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|

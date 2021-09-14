@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di file di origine/pagine delle proprietà della soluzione
-description: Accedere alla pagina delle proprietà Debug file di origine Visual Studio facendo clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliendo Proprietà > Proprietà comuni.
+description: Accedere alla pagina delle proprietà Debug file di origine Visual Studio facendo clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliendo Proprietà > proprietà comuni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -26,11 +26,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f7e6b894d891004ca275fa4bead1de48ff421f3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134129"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626543"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Esegui debug dei file di origine, Proprietà comuni, finestra di dialogo Pagine delle proprietà di soluzione
 In questa pagina delle proprietà è specificato il punto in cui il debugger cerca i file di origine durante il debug della soluzione.

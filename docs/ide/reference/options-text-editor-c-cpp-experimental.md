@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C/C++, Sperimentale
-description: Informazioni su come usare la pagina sperimentale nella sezione C/C++ per modificare i comportamenti sperimentali correlati a IntelliSense e al database di esplorazione.
+description: Informazioni su come usare la pagina Sperimentale nella sezione C/C++ per modificare i comportamenti sperimentali correlati a IntelliSense e al database di esplorazione.
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
@@ -14,11 +14,11 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709417"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
 
@@ -30,7 +30,7 @@ In questo articolo vengono descritte le opzioni di Visual Studio 2017. Per Visua
 
 ::: moniker-end
 
-Per accedere a questa pagina delle proprietà, premere **CTRL** + **Q** per attivare la casella di ricerca e quindi digitare **Experimental**. La ricerca trova la pagina dopo le prime lettere. È anche possibile accedervi scegliendo **strumenti**  >  **Opzioni** ed espandendo **editor di testo**, **C/C++** e quindi scegliendo **sperimentale**.
+Per accedere a questa pagina delle proprietà, premere **CTRL** + **Q** per attivare la casella di ricerca e quindi digitare **sperimentale**. La ricerca trova la pagina dopo le prime lettere. È anche possibile ottenerlo scegliendo Opzioni strumenti ed espandendo Editor di testo  >   , **quindi C/C++** e quindi scegliendo **Sperimentale.** 
 
 In un'installazione di Visual Studio sono disponibili queste funzionalità.
 
@@ -65,8 +65,8 @@ Questa opzione consente a Visual Studio di memorizzare nella cache i dati di pro
 
 - E altro ancora
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Impostazione delle opzioni dell'editor Language-Specific](../../ide/reference/setting-language-specific-editor-options.md)
+- [Impostazione delle Language-Specific dell'editor](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )

@@ -1,5 +1,5 @@
 ---
-title: Avviare e arrestare la visualizzazione del log dei messaggi | Microsoft Docs
+title: Avviare e arrestare la visualizzazione del log messaggi | Microsoft Docs
 description: Informazioni su come avviare e arrestare la visualizzazione del log dei messaggi durante il debug con lo strumento Spy++ e Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,19 +16,19 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ebaae16da706724f2d0813073ea57039fd7c4095
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635308"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Procedura: avviare e arrestare la visualizzazione del log dei messaggi
-Quando una [finestra](../debugger/messages-view.md) Visualizzazione messaggi  è  attiva, nel **menu** Messaggi di Spy++  viene visualizzata  l'opzione Avvia registrazione o Arresta registrazione e il pulsante corrispondente della barra degli strumenti Avvia registrazione o Arresta registrazione diventa attivo.
+Quando una [finestra Visualizzazione](../debugger/messages-view.md) messaggi  è  attiva, nel **menu** Messaggi di Spy++  viene visualizzata  la scelta Avvia registrazione o Arresta registrazione e il pulsante corrispondente della barra degli strumenti Avvia registrazione o Arresta registrazione diventa attivo.
 
 ### <a name="to-start-the-message-log-display"></a>Per avviare la visualizzazione del log dei messaggi
 
-1. Scegliere **Avvia** registrazione dal menu **Messaggi.**
+1. Scegliere **Avvia** registrazione dal menu **Messaggi**.
 
 ### <a name="to-stop-the-message-log-display"></a>Per arrestare la visualizzazione del log dei messaggi
 
-1. Scegliere **Arresta** registrazione dal menu **Messaggi.**
+1. Scegliere **Arresta** registrazione dal menu **Messaggi**.

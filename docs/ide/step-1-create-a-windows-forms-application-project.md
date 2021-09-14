@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 441b91ce3fe78b0e79be55db8d312b0b90740d97
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: d3f3bacb4c0a08e6a9bd2948fcc9a70637706111
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398112"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709368"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: Creare un progetto di app Windows Forms
 
@@ -26,7 +26,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 ## <a name="open-visual-studio-2017"></a>Aprire Visual Studio 2017
 
-1. Nella barra dei menu scegliere **File**  >  **nuovo**  >  **Project**. La finestra di dialogo avrà un aspetto simile allo screenshot seguente.
+1. Sulla barra dei menu scegliere **File**  >  **nuovo**  >  **Project**. La finestra di dialogo avrà un aspetto simile allo screenshot seguente.
 
      ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>***Nuovo progetto** _ _dialog box*
 
@@ -47,7 +47,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop dall'elenco** **Project tipo di** connessione.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop dall'elenco** **Project tipo di** dati.
 
    Dopo aver applicato il filtro **Project** tipo, scegliere il modello **Windows Forms App (.NET Framework)** per C# o Visual Basic e quindi scegliere **Avanti.**
 
@@ -58,7 +58,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Scegliere quindi il carico di lavoro **Sviluppo per desktop .NET** nel programma di installazione di Visual Studio.
+   > Nella finestra di dialogo Programma di installazione di Visual Studio quindi scegliere il carico di **lavoro Sviluppo desktop .NET.**
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
@@ -70,7 +70,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore per tutti i progetti e i file necessari per l'app. Questi termini verranno spiegati dettagliatamente più avanti in questa esercitazione.
 
-## <a name="about-the-windows-forms-app-project"></a>Informazioni sul progetto app Windows Forms
+## <a name="about-the-windows-forms-app-project"></a>Informazioni sul progetto Windows'app Forms
 
 1. L'ambiente di sviluppo include tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
 
@@ -92,7 +92,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
 
     ::: moniker-end
 
-    * **Esplora soluzioni finestra** In questa finestra è possibile visualizzare e passare a tutti gli elementi della soluzione.
+    * **Esplora soluzioni finestra** In questa finestra è possibile visualizzare e passare a tutti gli elementi nella soluzione.
 
     Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con *cs* in C# e *vb* in Visual Basic), viene visualizzato il file di codice o una finestra di progettazione per il file di codice. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per Visual Studio form, la finestra di progettazione è denominata **Windows Progettazione form.**
 

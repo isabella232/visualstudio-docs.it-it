@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: e7f8f49af391bafaa94745fa82c286e762dd2b91
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096128"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709681"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug sessione (SDM) quando il de ha completato la gestione di un evento intercettato.

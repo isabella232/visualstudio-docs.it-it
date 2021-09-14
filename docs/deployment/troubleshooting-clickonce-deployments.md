@@ -22,11 +22,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 78789574a07568aeed1b5f4990bc0d1d0f9bf6cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089849"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709885"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Risoluzione dei problemi relativi alle distribuzioni ClickOnce
 Questo argomento consente di diagnosticare e risolvere i problemi più comuni relativi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] alle distribuzioni.
@@ -39,7 +39,7 @@ Questo argomento consente di diagnosticare e risolvere i problemi più comuni re
 
  Descrive come reindirizzare tutti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gli errori di attivazione in un computer a un singolo file di log.
 
- [Procedura: Specificare file di log dettagliati per le distribuzioni ClickOnce dettagliate](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
+ [Procedura: Specificare file di log dettagliati per ClickOnce distribuzione dettagliate](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
 
  Viene descritto come aumentare i dettagli di scrittura [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nei file di log.
 

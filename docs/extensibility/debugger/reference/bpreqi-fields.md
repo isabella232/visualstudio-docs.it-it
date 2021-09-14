@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 88288b6d3c57e65f5f59f580468bde3180f877c4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635179"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
 Specifica le informazioni da recuperare su una richiesta di punto di interruzione.
@@ -70,7 +70,7 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>Campi
 `BPREQI_BPLOCATION`\
-Inizializzare/usare il campo (posizione del punto di `bpLocation` interruzione) della [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura .
+Inizializzare/usare il campo (posizione del punto di `bpLocation` interruzione) della [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura.
 
 `BPREQI_LANGUAGE`\
 Inizializzare/usare `guidLanguage` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
@@ -91,7 +91,7 @@ Inizializzare/usare `bstrThreadName` il campo della struttura o `BP_REQUEST_INFO
 Inizializzare/usare `bpPassCount` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .
 
 `BPREQI_CONDITION`\
-Inizializzare/usare il campo (condizione del punto di `bpCondition` interruzione) della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
+Inizializzare/usare il `bpCondition` campo (condizione del punto di interruzione) della `BP_REQUEST_INFO` struttura o `BP_REQUEST_INFO2` .
 
 `BPREQI_FLAGS`\
 Inizializzare/usare `dwFlags` il campo della struttura o `BP_REQUEST_INFO` `BP_REQUEST_INFO2` .

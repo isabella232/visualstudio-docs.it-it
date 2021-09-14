@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a1d9ddd3ac533e486b757b77014776d1c9657b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124152"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625961"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -368,7 +368,7 @@ Specifica una parola chiave personalizzata per il frammento di codice. Le parole
 
 |Elemento padre|Descrizione|
 | - |-----------------|
-|[Keywords - elemento](../ide/code-snippets-schema-reference.md#keywords-element)|Raggruppa singoli elementi `Keyword`.|
+|[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords-element)|Raggruppa singoli elementi `Keyword`.|
 
 È necessario specificare un valore di testo. Parola chiave per il frammento di codice.
 
@@ -412,7 +412,7 @@ I valori letterali e gli oggetti non possono contenere un elemento **ID** con va
 
 |Elemento figlio|Descrizione|
 |-------------------|-----------------|
-|[Elemento Default](../ide/code-snippets-schema-reference.md#default-element)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
+|[Elemento predefinito](../ide/code-snippets-schema-reference.md#default-element)|Elemento obbligatorio. Specifica il valore predefinito del valore letterale al momento dell'inserimento del frammento di codice. In un elemento `Default` deve essere presente esattamente un elemento `Literal`.|
 |[Elemento Function](../ide/code-snippets-schema-reference.md#function-element)|Elemento facoltativo. Specifica una funzione da eseguire quando il valore letterale riceve lo stato attivo in Visual Studio. In un elemento `Function` possono essere presenti zero elementi `Literal` oppure uno.|
 |[Elemento ID](../ide/code-snippets-schema-reference.md#id-element)|Elemento obbligatorio. Specifica un identificatore univoco per il valore letterale. In un elemento `ID` deve essere presente esattamente un elemento `Literal`.|
 |[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Elemento facoltativo. Descrive l'utilizzo e il valore previsti del valore letterale. Possono essere presenti zero o un elemento **Tooltip** in un elemento `Literal`.|
@@ -636,7 +636,7 @@ Specifica il tipo di oggetto. L'elemento `Object` viene usato per identificare u
 | - |-----------------|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
-È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto. Esempio:
+È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto. Ad esempio:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>

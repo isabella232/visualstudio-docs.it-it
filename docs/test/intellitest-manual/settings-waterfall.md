@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 88d8ed6df537c46f810f765c3b7d1b23eab9a3e4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139920"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635499"
 ---
 # <a name="settings-waterfall"></a>Impostazioni a cascata
 

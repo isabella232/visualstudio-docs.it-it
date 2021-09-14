@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85cc7d58eccae8a76f13f7d5be1a9a0530b8045ffe5209f57d3e97feef3fc99c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bd0fa59cec59e27949bf9d8d209bc66221d3505d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626327"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizzazione e visualizzazione dei dati
 I visualizzatori di tipi e i visualizzatori personalizzati presentano i dati in modo rapidamente significativo per uno sviluppatore. L'analizzatore di espressioni (edizione Enterprise) può supportare visualizzatori di tipi di terze parti e fornire visualizzatori personalizzati.
@@ -27,7 +27,7 @@ I visualizzatori di tipi e i visualizzatori personalizzati presentano i dati in 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]determina quanti visualizzatori di tipi e visualizzatori personalizzati sono associati al tipo dell'oggetto chiamando il [metodo GetCustomViewerCount.](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) Se è disponibile almeno un visualizzatore di tipi o un visualizzatore personalizzato, Visual Studio chiama il metodo [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) per recuperare un elenco di tali visualizzatori e visualizzatori (in realtà, un elenco di che implementa i visualizzatori e i visualizzatori) e li presenta all'utente.
 
 ## <a name="supporting-type-visualizers"></a>Supporto dei visualizzatori di tipi
- Esistono una serie di interfacce che l'edizione Enterprise implementare per supportare i visualizzatori di tipi. Queste interfacce possono essere suddivise in due ampie categorie: interfacce che elencano i visualizzatori di tipi e interfacce che accedono ai dati delle proprietà.
+ Esistono una serie di interfacce che il edizione Enterprise implementare per supportare i visualizzatori di tipi. Queste interfacce possono essere suddivise in due ampie categorie: interfacce che elencano i visualizzatori di tipi e interfacce che accedono ai dati delle proprietà.
 
 ### <a name="listing-type-visualizers"></a>Visualizzatori di tipi di elenco
  Il edizione Enterprise supporta l'elenco dei visualizzatori di tipi nell'implementazione di `IDebugProperty3::GetCustomViewerCount` e `IDebugProperty3::GetCustomViewerList` . Questi metodi passano la chiamata ai metodi [GetCustomViewerCount](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) e [GetCustomViewerList corrispondenti.](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
@@ -40,14 +40,14 @@ I visualizzatori di tipi e i visualizzatori personalizzati presentano i dati in 
  Tutti i dati passati all'interno e all'uscita `IPropertyProxyEESide` dall'interfaccia vengono incapsulati nell'interfaccia [IEEDataStorage.](../../extensibility/debugger/reference/ieedatastorage.md) Questa interfaccia rappresenta una matrice di byte e viene implementata sia da Visual Studio che dal edizione Enterprise. Quando i dati di una proprietà devono essere modificati, Visual Studio crea un oggetto che contiene i nuovi dati e chiama `IEEDataStorage` [CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) con tale oggetto dati per ottenere un nuovo oggetto che, a sua volta, viene passato a `IEEDataStorage` [InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md) per aggiornare i dati della proprietà. `IPropertyProxyEESide::CreateReplacementObject`consente al edizione Enterprise di creare un'istanza della propria classe che implementa `IEEDataStorage` l'interfaccia .
 
 ## <a name="supporting-custom-viewers"></a>Supporto di visualizzatori personalizzati
- Il flag viene impostato nel campo della struttura DEBUG_PROPERTY_INFO (restituita da una chiamata `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` `dwAttrib` a [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) [](../../extensibility/debugger/reference/debug-property-info.md) per indicare che all'oggetto è associato un visualizzatore personalizzato. Quando questo flag è impostato, Visual Studio ottiene l'interfaccia [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) [dall'interfaccia IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) usando [QueryInterface.](/cpp/atl/queryinterface)
+ Il flag viene impostato nel campo della struttura DEBUG_PROPERTY_INFO (restituito da una chiamata `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` `dwAttrib` a [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) [](../../extensibility/debugger/reference/debug-property-info.md) per indicare che all'oggetto è associato un visualizzatore personalizzato. Quando questo flag è impostato, Visual Studio ottiene [l'interfaccia IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) dall'interfaccia [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) usando [QueryInterface.](/cpp/atl/queryinterface)
 
- Se l'utente seleziona un visualizzatore personalizzato, Visual Studio crea un'istanza del visualizzatore personalizzato usando l'oggetto del visualizzatore `CLSID` fornito dal `IDebugProperty3::GetCustomViewerList` metodo . Visual Studio quindi chiama [DisplayValue](../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) per mostrare il valore all'utente.
+ Se l'utente seleziona un visualizzatore personalizzato, Visual Studio crea un'istanza del visualizzatore personalizzato usando il visualizzatore `CLSID` fornito dal `IDebugProperty3::GetCustomViewerList` metodo . Visual Studio quindi chiama [DisplayValue](../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) per mostrare il valore all'utente.
 
  In `IDebugCustomViewer::DisplayValue` genere, presenta una visualizzazione di sola lettura dei dati. Per consentire modifiche ai dati, il edizione Enterprise deve implementare un'interfaccia personalizzata che supporti la modifica dei dati in un oggetto proprietà. Il `IDebugCustomViewer::DisplayValue` metodo usa questa interfaccia personalizzata per supportare la modifica dei dati. Il metodo cerca l'interfaccia personalizzata `IDebugProperty2` nell'interfaccia passata come `pDebugProperty` argomento.
 
 ## <a name="supporting-both-type-visualizers-and-custom-viewers"></a>Supporto di visualizzatori di tipi e visualizzatori personalizzati
- Un edizione Enterprise può supportare visualizzatori di tipi e visualizzatori personalizzati nei [metodi GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) e [GetCustomViewerList.](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) In primo luogo, edizione Enterprise aggiunge il numero di visualizzatori personalizzati forniti al valore restituito dal [metodo GetCustomViewerCount.](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) In secondo edizione Enterprise aggiunge gli oggetti dei propri visualizzatori personalizzati all'elenco `CLSID` restituito dal [metodo GetCustomViewerList.](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+ Un edizione Enterprise può supportare sia visualizzatori di tipi che visualizzatori personalizzati nei [metodi GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) [e GetCustomViewerList.](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) In primo luogo, edizione Enterprise aggiunge il numero di visualizzatori personalizzati forniti al valore restituito dal [metodo GetCustomViewerCount.](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) In secondo edizione Enterprise aggiunge gli oggetti dei propri visualizzatori personalizzati all'elenco `CLSID` restituito dal [metodo GetCustomViewerList.](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

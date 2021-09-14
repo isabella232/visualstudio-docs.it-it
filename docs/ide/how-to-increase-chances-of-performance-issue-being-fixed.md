@@ -9,19 +9,19 @@ ms.technology: vs-ide-general
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.openlocfilehash: d51c04cc579433f3f6e72c55a60529088d724237
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086092"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709428"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
-Lo strumento["Segnala un problema"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)è ampiamente usato Visual Studio utenti per segnalare una serie di problemi. Il team Visual Studio individuare le tendenze di arresto anomalo e lentezza nei commenti e suggerimenti degli utenti e risolvere i problemi che influiscono su un'ampia gamma di utenti. Maggiore è l'azione di un ticket di feedback specifico, maggiore è la probabilità che il ticket sia diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o di lentezza per renderli più utilizzabili.
+Lo strumento["Segnala un problema"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)è ampiamente usato Visual Studio utenti per segnalare una serie di problemi. Il team Visual Studio individuare tendenze di arresto anomalo e lentezza nei commenti degli utenti e risolvere i problemi che influiscono su un'ampia gamma di utenti. Maggiore è l'azione di un ticket di feedback specifico, maggiore è la probabilità che il ticket sia diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o di lentezza per renderli più utilizzabili.
 
 ## <a name="general-best-practices"></a>Procedure consigliate generali
 
-Visual Studio è una piattaforma complessa e di grandi dimensioni che supporta una vasta gamma di linguaggi, tipi di progetto, piattaforme e altro ancora. Il funzionamento è una funzione dei componenti installati e attivi in una sessione, delle estensioni installate, delle impostazioni Visual Studio, della configurazione del computer e infine della forma del codice in corso di modifica. Dato il numero di variabili, è difficile stabilire se la segnalazione di problemi da un utente presenta lo stesso problema sottostante di un report di problema di un altro utente, anche se il sintomo visibile è lo stesso. Di seguito sono fornite alcune procedure consigliate per garantire che la segnalazione di problemi specifica abbia una maggiore probabilità di essere diagnosticata.
+Visual Studio è una piattaforma complessa e di grandi dimensioni che supporta una vasta gamma di linguaggi, tipi di progetto, piattaforme e altro ancora. Le prestazioni sono una funzione dei componenti installati e attivi in una sessione, delle estensioni installate, delle impostazioni Visual Studio, della configurazione del computer e infine della forma del codice in corso di modifica. Dato il numero di variabili, è difficile stabilire se la segnalazione di problemi da un utente presenta lo stesso problema sottostante di un report di problema di un altro utente, anche se il sintomo visibile è lo stesso. Di seguito sono fornite alcune procedure consigliate per garantire che la segnalazione di problemi specifica abbia una maggiore probabilità di essere diagnosticata.
 
 **Specificare il titolo più specifico possibile**
 
@@ -29,7 +29,7 @@ Cercare firme distinte per il problema segnalato e includere il più possibile n
 
 **In caso di dubbi, registrare un nuovo report di problema**
 
-Molti problemi potrebbero non avere alcuna firma distintiva o passaggi da riprodurre. In questi casi, un nuovo report è migliore di un upvote o di un commento su un altro report, che segnala un sintomo esterno *simile.* A seconda del tipo di report, includere file di diagnostica aggiuntivi per il report, come descritto più avanti in questo documento.
+Molti problemi potrebbero non avere alcuna firma distintiva o passaggi da riprodurre. In questi casi, un nuovo report è migliore di un upvote o di un commento su un altro report, che segnala un sintomo esterno *simile.* A seconda del tipo di report, includere altri file di diagnostica per il report, come descritto più avanti in questo documento.
 
 **Procedure consigliate specifiche del problema**
 
@@ -37,7 +37,7 @@ Di seguito sono descritti i problemi difficili da diagnosticare senza file di di
 
 - [Arresti anomali:](#crashes) Un arresto anomalo si verifica quando il processo (Visual Studio) termina in modo imprevisto.
 
-- [Non risponde:](#unresponsiveness) Vs non risponde per un periodo di tempo prolungato.
+- [Non risponde:](#unresponsiveness) Vs non risponde per un lungo periodo di tempo.
 
 - [Problemi di lentezza:](#slowness-and-high-cpu-issues) Qualsiasi azione specifica in Visual Studio è più lenta del desiderato
 
@@ -73,7 +73,7 @@ Per questi problemi, seguire la procedura descritta in "[Come segnalare un probl
 
 **Arresti anomali sconosciuti**
 
-Se non si è certi di quale sia la causa degli arresti anomali o sembrano casuali, è possibile acquisire i dump in locale ogni volta che si Visual Studio si arresta in modo anomalo e associarli a elementi di feedback separati. Per salvare i dump in locale quando Visual Studio si arresta in modo anomalo, eseguire i comandi seguenti in una finestra di comando dell'amministratore:
+Se non si è certi di ciò che causa gli arresti anomali o sembrano casuali, è possibile acquisire i dump in locale ogni volta che si Visual Studio si arresta in modo anomalo e associarli a elementi di feedback separati. Per salvare i dump in locale quando Visual Studio si arresta in modo anomalo, eseguire i comandi seguenti in una finestra di comando dell'amministratore:
 
 ```
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\devenv.exe" /v DumpType /t REG_DWORD /d 2
@@ -92,14 +92,14 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting\L
 Personalizzare il numero di dump e la cartella dump in base alle esigenze. Altre informazioni su queste impostazioni sono [disponibili qui.](/windows/win32/wer/collecting-user-mode-dumps)
 
 > [!NOTE]
-> I dump acquisiti usando Gestione attività sono probabilmente di un bitness errato, il che li rende meno utilizzabili. La procedura descritta in precedenza è la modalità preferita per l'acquisizione di un dump dell'heap. Se si vuole usare Gestione attività, chiudere quello attualmente in esecuzione, avviare il Gestione attività a 32 bit (%windir% syswow64taskmgr.exe) e raccogliere un \\ \\ dump dell'heap.
+> I dump acquisiti usando Gestione attività sono probabilmente di un bitness errato, il che li rende meno utilizzabili. La procedura descritta in precedenza è il modo preferito per l'acquisizione di un dump dell'heap. Se si vuole usare Gestione attività, chiudere quello attualmente in esecuzione, avviare il Gestione attività a 32 bit (%windir% syswow64taskmgr.exe) e raccogliere un \\ \\ dump dell'heap.
 
 > [!NOTE]
 > Ogni file di dump prodotto da questo metodo avrà dimensioni massime di 4 GB. Assicurarsi di impostare DumpFolder su un percorso con spazio su disco adeguato o modificare DumpCount in modo appropriato.
 
 Ogni volta Visual Studio si arresta in modo anomalo, verrà creato un file **di dumpdevenv.exe.[ number].dmp** nel percorso configurato.
 
-Usare quindi Visual Studio "Segnala un problema..." Funzionalità. Consentirà di collegare il dump appropriato.
+Usare quindi il Visual Studio "Segnala un problema..." Funzionalità. Consentirà di collegare il dump appropriato.
 
 1. Individuare il file dump per l'arresto anomalo del sistema segnalato (cercare un file con l'ora di creazione corretta)
 
@@ -111,7 +111,7 @@ Usare quindi Visual Studio "Segnala un problema..." Funzionalità. Consentirà d
 > **Feedback più prezioso:** In questo caso, il feedback più utile è il dump dell'heap acquisito al momento dell'arresto anomalo.
 
 ## <a name="unresponsiveness"></a>Apatia
-Vs non risponde per un lungo periodo di tempo.
+Vs non risponde per un periodo di tempo prolungato.
 
 **Unresponsiveness riproducibile direttamente**
 
@@ -145,7 +145,7 @@ Per ottenere risultati ottimali nell'acquisizione delle prestazioni, seguire que
 
 2. Avviare una seconda copia del Visual Studio *senza soluzione aperta*
 
-3. Nella nuova copia di Visual Studio aprire lo strumento **Segnala** un problema
+3. Nella nuova copia di Visual Studio aprire lo **strumento Segnala** un problema
 
 4. Seguire la procedura descritta in [Come segnalare un problema](./how-to-report-a-problem-with-visual-studio.md) fino a raggiungere il passaggio "Fornire un dump di traccia e heap (facoltativo)".
 
@@ -167,7 +167,7 @@ Per ottenere risultati ottimali nell'acquisizione delle prestazioni, seguire que
 
 Durante la registrazione di una traccia delle prestazioni, se l'operazione lenta o la CPU elevata segnalata termina, arrestare immediatamente la registrazione. Se vengono raccolte troppe informazioni, le informazioni meno recenti vengono sovrascritte. Se la traccia non viene arrestata subito (entro pochi secondi) dopo l'operazione interessante, i dati di traccia utili verranno sovrascritti.
 
-Non collegare direttamente le tracce delle prestazioni agli elementi di feedback esistenti nel sito Web di Developer Community. Richiedere/fornire informazioni aggiuntive è un flusso di lavoro supportato Visual Studio strumento predefinito Segnala un problema. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento di feedback verrà impostato su "Need More Info", a cui è possibile rispondere allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la [sezione "Informazioni necessarie"](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) nel documento dello strumento Segnala un problema.
+Non collegare direttamente tracce delle prestazioni agli elementi di feedback esistenti nel sito Web Community developer. Richiedere/fornire informazioni aggiuntive è un flusso di lavoro supportato Visual Studio strumento predefinito Segnala un problema. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento di feedback verrà impostato su "Need More Info", che può essere risposto allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la [sezione "Need More Info"](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) nel documento dello strumento Segnala un problema.
 
 > [!NOTE]
 > **Feedback più prezioso:** Per quasi tutti i problemi di lentezza/utilizzo elevato della CPU, il feedback più utile è una descrizione di alto livello delle operazioni che si stava tentando di eseguire, insieme alla traccia delle prestazioni (.etl.zip) che acquisisce il comportamento durante tale \* periodo.
@@ -179,7 +179,7 @@ Le funzionalità di raccolta di tracce nello strumento Report-a-problem sono suf
 ## <a name="out-of-process-issues"></a>Problemi out-of-process
 
 > [!NOTE]
-> A partire Visual Studio 2019 versione 16.3, i log out-of-process vengono collegati automaticamente ai commenti e suggerimenti inviati tramite lo strumento Segnala un problema.
+> A partire da Visual Studio 2019 versione 16.3, i log out-of-process vengono collegati automaticamente ai commenti e suggerimenti inviati tramite lo strumento Segnala un problema.
 Tuttavia, se il problema è direttamente riproducibile, la procedura seguente potrebbe comunque aiutare ad aggiungere altre informazioni per una migliore diagnosi del problema.
 
 Esistono diversi processi satellite che vengono eseguiti in parallelo Visual Studio e forniscono varie funzionalità dall'esterno del processo di Visual Studio principale. Se si verifica un errore in uno di questi processi satellite, viene in genere visualizzato sul lato Visual Studio come 'StreamJsonRpc.RemoteInvocationException' o 'StreamJsonRpc.ConnectionLostException'.
@@ -199,5 +199,5 @@ Ciò che rende questi tipi di problemi più gestibili è fornire log aggiuntivi 
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Segnalare un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)
 * [Segnalare un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio Strumenti Community](https://aka.ms/feedback/suggest?space=8)
+* [Visual Studio Strumenti di Community](https://aka.ms/feedback/suggest?space=8)
 * [Privacy dei dati della community degli sviluppatori](developer-community-privacy.md)

@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6b83ef69d118f902d8c3d1acb1eff47384007a5c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709541"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e pagine di opzioni
 Se **si fa** clic su Opzioni **nel** menu Strumenti , viene visualizzata **la finestra** di dialogo Opzioni . Le opzioni in questa finestra di dialogo vengono collettivamente definite pagine di opzioni. Il controllo struttura ad albero nel riquadro di spostamento include categorie di opzioni e ogni categoria include pagine di opzioni. Quando si seleziona una pagina, le relative opzioni vengono visualizzate nel riquadro destro. Queste pagine consentono di modificare i valori delle opzioni che determinano lo stato di un VSPackage.
@@ -40,7 +40,7 @@ Se **si fa** clic su Opzioni **nel** menu Strumenti , viene visualizzata **la fi
  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet1":::
  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet1":::
 
- Se è HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, le coppie nome/valore della proprietà <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> sono sottochiavi di HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral.
+ Se è HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, le coppie nome/valore della proprietà sono sottochiavi <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> di HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral.
 
  Il percorso del Registro di sistema della pagina delle opzioni stessa è determinato dalla combinazione di , la parola ToolsOptionsPages e la categoria e il nome della pagina <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> delle opzioni. Ad esempio, se la pagina Opzioni personalizzate ha la categoria My Option Pages e è HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la pagina delle opzioni include la chiave del Registro di <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> sistema, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\ToolsOptionsPages\My Option Pages\Custom.
 
@@ -84,7 +84,7 @@ Se **si fa** clic su Opzioni **nel** menu Strumenti , viene visualizzata **la fi
 
  Quando l'attributo registra una pagina di opzioni, la pagina viene registrata nella chiave <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> AutomationProperties se `SupportsAutomation` l'argomento dell'attributo è `true` . Automazione esamina questa voce del Registro di sistema per trovare il VSPackage associato e quindi accede alla proprietà tramite la pagina delle opzioni ospitata, in questo caso My Grid Page.
 
- Il percorso del Registro di sistema della proprietà di automazione è determinato dalla combinazione di , la parola AutomationProperties e la categoria e il nome <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> della pagina delle opzioni. Ad esempio, se la pagina delle opzioni ha la categoria My Category, il nome My Grid Page e , HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la proprietà di automazione ha la chiave del Registro di <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> sistema, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid Page.
+ Il percorso del Registro di sistema della proprietà di automazione è determinato dalla combinazione di , la parola AutomationProperties e la categoria e il nome <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> della pagina delle opzioni. Ad esempio, se la pagina delle opzioni ha la categoria My Category, il nome my grid page e , HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la proprietà di automazione ha la chiave del Registro di <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> sistema, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My Grid Page.
 
 > [!NOTE]
 > Il nome canonico, My Category.My Grid Page, è il valore della sottochiave Name di questa chiave.

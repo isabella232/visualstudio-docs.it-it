@@ -1,6 +1,6 @@
 ---
 title: Risorse nei pacchetti VSPackage | Microsoft Docs
-description: Informazioni sui tipi di risorse localizzate che possono essere incorporati nei pacchetti VSPackage. È anche possibile incorporare le risorse nelle DLL native dell'interfaccia utente satellite o nelle DLL satellite gestite.
+description: Informazioni sui tipi di risorse localizzate che è possibile incorporare in VSPackage. È anche possibile incorporare risorse in DLL dell'interfaccia utente satellite native o DLL satellite gestite.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,22 +16,22 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 87ebfb777aed483fefbf5d4c3caeee8587c41b03
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709501"
 ---
 # <a name="resources-in-vspackages"></a>Risorse nei pacchetti VSPackage
-È possibile incorporare le risorse localizzate in DLL dell'interfaccia utente satellite native, DLL satellite gestite o in un VSPackage gestito.
+È possibile incorporare risorse localizzate in DLL dell'interfaccia utente satellite native, DLL satellite gestite o in un VSPackage gestito.
 
- Alcune risorse non possono essere incorporate nei pacchetti VSPackage. È possibile incorporare i tipi gestiti seguenti:
+ Alcune risorse non possono essere incorporate in VSPackage. È possibile incorporare i tipi gestiti seguenti:
 
 - Stringhe
 
 - Chiavi di caricamento del pacchetto (che sono anche stringhe)
 
-- Icone delle finestre degli strumenti
+- Icone della finestra degli strumenti
 
 - File CTO (Command Table Output) compilati
 
@@ -41,14 +41,14 @@ ms.locfileid: "122049649"
 
 - Informazioni sui dati della finestra di dialogo
 
-  Le risorse in un pacchetto gestito vengono selezionate in base all'ID risorsa. Un'eccezione è il file CTO, che deve essere denominato CTMENU. Il file CTO deve essere visualizzato nella tabella delle risorse come `byte[]` . Tutti gli altri elementi della risorsa sono identificati in base al tipo.
+  Le risorse in un pacchetto gestito vengono selezionate in base all'ID risorsa. Un'eccezione è il file CTO, che deve essere denominato CTMENU. Il file CTO deve essere visualizzato nella tabella delle risorse come `byte[]` . Tutti gli altri elementi della risorsa sono identificati dal tipo.
 
   È possibile usare <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> l'attributo per indicare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che le risorse gestite sono disponibili.
 
   :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs" id="Snippet1":::
   :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb" id="Snippet1":::
 
-  L'impostazione di in questo modo indica che deve ignorare le DLL satellite non gestite durante la ricerca di risorse, ad esempio <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rileva due o più risorse con lo stesso ID risorsa, usa la prima risorsa trovata.
+  L'impostazione in questo modo indica che le DLL satellite non gestite devono essere ignorate durante la ricerca di risorse, ad esempio <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rileva due o più risorse con lo stesso ID risorsa, usa la prima risorsa trovata.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente è una rappresentazione gestita di un'icona della finestra degli strumenti.
@@ -67,7 +67,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- Nell'esempio seguente viene illustrato come incorporare la matrice di byte CTO, che deve essere denominata CTMENU.
+ L'esempio seguente illustra come incorporare la matrice di byte CTO, che deve essere denominata CTMENU.
 
 ```
 <data name="CTMENU"
@@ -84,7 +84,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>Note sull'implementazione
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ritarda il caricamento dei pacchetti VSPackage quando possibile. Una conseguenza dell'incorporamento di un file CTO in un VSPackage è che deve caricare tutti questi VSPackage in memoria durante l'installazione, ovvero quando compila una tabella dei comandi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unita. Le risorse possono essere estratte da un pacchetto VSPackage esaminando i metadati senza eseguire codice nel pacchetto VSPackage. Il pacchetto VSPackage non è inizializzato in questo momento, quindi la perdita di prestazioni è minima.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ritarda il caricamento di VSPackage quando possibile. Una conseguenza dell'incorporamento di un file CTO in un VSPackage è che deve caricare tutti questi VSPackage in memoria durante l'installazione, ovvero quando compila una tabella dei comandi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unita. Le risorse possono essere estratte da un pacchetto VSPackage esaminando i metadati senza eseguire codice nel pacchetto VSPackage. Il pacchetto VSPackage non viene inizializzato in questo momento, quindi la perdita di prestazioni è minima.
 
  Quando richiede una risorsa da un pacchetto VSPackage dopo l'installazione, è probabile che il pacchetto sia già caricato e inizializzato, quindi la perdita di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prestazioni è minima.
 

@@ -17,11 +17,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
 ms.openlocfilehash: 796e87d0e9c575b2514576bc675eff171cd6fbed
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028128"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625799"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Elenco dei componenti di Visual Studio Test Controller
 

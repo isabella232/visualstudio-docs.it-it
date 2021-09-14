@@ -1,6 +1,6 @@
 ---
-description: Ottiene un contesto di valutazione per la valutazione dell'espressione all'interno del contesto corrente di un stack frame e thread.
-title: IDebugStackFrame2::GetExpressionContext | Microsoft Docs
+description: Ottiene un contesto di valutazione per la valutazione dell'espressione all'interno del contesto corrente di un stack frame thread.
+title: Interfaccia IDebugStackFrame2::GetExpressionContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d95af977f77bc48a112d584d613877d3259bdb90
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122095933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709625"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
-Ottiene un contesto di valutazione per la valutazione dell'espressione all'interno del contesto corrente di un stack frame e thread.
+Ottiene un contesto di valutazione per la valutazione dell'espressione all'interno del contesto corrente di un stack frame thread.
 
 ## <a name="syntax"></a>Sintassi
 

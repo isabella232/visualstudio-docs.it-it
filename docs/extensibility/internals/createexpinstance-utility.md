@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee0c1daa8c56f759c39f4affb175b3894cbf9039
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626171"
 ---
 # <a name="createexpinstance-utility"></a>Utilità CreateExpInstance
 Usare **l'utilità CreateExpInstance** per creare, reimpostare o eliminare un'istanza sperimentale di Visual Studio. È possibile usare l'istanza sperimentale per eseguire il debug e il test Visual Studio estensioni senza modificare il prodotto sottostante.
@@ -45,7 +45,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  **/RootSuffix** Suffisso da aggiungere al nome della directory dell'istanza sperimentale.
 
 ## <a name="remarks"></a>Commenti
- Quando si lavora a un'estensione Visual Studio, è possibile premere F5 per aprire l'istanza sperimentale predefinita e installare l'estensione corrente. Se non è disponibile alcuna istanza sperimentale, Visual Studio crearne una con le impostazioni predefinite.
+ Quando si lavora a un'estensione Visual Studio, è possibile premere F5 per aprire l'istanza sperimentale predefinita e installare l'estensione corrente. Se non è disponibile alcuna istanza sperimentale, Visual Studio ne crea una con le impostazioni predefinite.
 
  Il percorso predefinito dell'istanza sperimentale dipende dal numero Visual Studio versione. Ad esempio, per Visual Studio 2015, il percorso è *%localappdata%\Microsoft\VisualStudio\14.0Exp. \\* Tutti i file nel percorso della directory vengono considerati parte di tale istanza. Eventuali istanze sperimentali aggiuntive non verranno caricate da Visual Studio a meno che il nome della directory non venga modificato nel percorso predefinito.
 

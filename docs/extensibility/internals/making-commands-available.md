@@ -1,6 +1,6 @@
 ---
 title: Rendere disponibili i comandi | Microsoft Docs
-description: Informazioni su come controllare la disponibilità dei comandi aggiunti all'IDE di Visual Studio nei pacchetti VSPackage, usando il caricamento ritardato, il contesto e la visibilità.
+description: Informazioni su come controllare la disponibilità dei comandi aggiunti all'IDE di Visual Studio nei pacchetti VSPackage usando il caricamento ritardato, il contesto e la visibilità.
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
@@ -17,11 +17,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c92d9b34c669f5de4df8b9bd42cfb9e9e53996e2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626100"
 ---
 # <a name="making-commands-available"></a>Rendere disponibili i comandi
 
@@ -60,7 +60,7 @@ Si noti che il caricamento ritardato può anche migliorare le prestazioni di avv
 
 | Tipo di contesto | Descrizione |
 |-------------------------| - |
-| Tipo Project attivo | Per la maggior parte dei tipi di progetto, questo valore `GUID` corrisponde al GUID del pacchetto VSPackage che implementa il progetto. Tuttavia, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] i progetti usano Project type come `GUID` valore. |
+| Tipo Project attivo | Per la maggior parte dei tipi di progetto, questo valore `GUID` corrisponde al GUID del pacchetto VSPackage che implementa il progetto. Tuttavia, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] i progetti usano Project tipo come `GUID` valore. |
 | Finestra attiva | In genere, questa è l'ultima finestra del documento attiva che stabilisce il contesto dell'interfaccia utente corrente per i tasti di scelta rapida. Tuttavia, potrebbe anche essere una finestra degli strumenti con una tabella di associazione di tasti simile alla tabella Web browser. Per le finestre dei documenti a schede diverse, ad esempio l'editor HTML, ogni scheda ha un contesto di comando `GUID` diverso. |
 | Active Language Service | Servizio di linguaggio associato al file attualmente visualizzato in un editor di testo. |
 | Finestra degli strumenti attiva | Finestra degli strumenti aperta con lo stato attivo. |

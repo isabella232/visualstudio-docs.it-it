@@ -34,11 +34,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: f12d801fc54088c79d22a3c69cd27206a8b667e8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625907"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -88,7 +88,7 @@ Quando si sceglie **Find All** (Trova tutti), si apre una finestra **Risultati r
 
 ### <a name="create-custom-search-folder-sets"></a>Creare set personalizzati di cartelle di ricerca
 
-È possibile definire un ambito  di ricerca scegliendo il pulsante Scegli cartelle di ricerca (simile a **...**) accanto alla casella Cerca **in.** Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
+È possibile definire un ambito di ricerca scegliendo il pulsante **Scegli** cartelle di ricerca (simile a **...**) accanto alla casella Cerca **in.** Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
 
 > [!TIP]
 > Se è stato eseguito il mapping dell'unità di un computer remoto nel computer locale, è possibile specificare cartelle in cui eseguire la ricerca nel computer remoto.

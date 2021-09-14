@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5458ec92e121fcfe954e03a660370ec207d3ba55
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709661"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Ottiene un'interfaccia del motore di debug personalizzato.
@@ -43,7 +43,7 @@ int GetEngineInterface(
 
 ## <a name="parameters"></a>Parametri
 `ppUnk`\
-[out] Restituisce un oggetto che rappresenta il motore di debug (DE) e su cui è possibile eseguire query per qualsiasi altra interfaccia valida associata a un de , ad esempio `IUnknown` [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) o [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md).
+[out] Restituisce un oggetto che rappresenta il motore di debug (DE) e su cui è possibile eseguire query per qualsiasi altra interfaccia valida associata a un de, ad esempio `IUnknown` [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) o [IDebugEngineLaunch2.](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

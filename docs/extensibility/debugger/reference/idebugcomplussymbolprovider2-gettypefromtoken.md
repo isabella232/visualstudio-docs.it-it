@@ -1,5 +1,5 @@
 ---
-description: IDebugComPlusSymbolProvider2::GetTypeFromToken recupera un tipo dato il relativo token.
+description: IDebugComPlusSymbolProvider2::GetTypeFromToken recupera un tipo in base al token.
 title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9a35d245840632405f946e356169a44f17521b1c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144990"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709767"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-Recupera un tipo dato il relativo token.
+Recupera un tipo in base al token.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,13 +57,13 @@ int GetTypeFromToken(
 [in] Token del tipo da recuperare.
 
 `ppField`\
-[out] Restituisce il tipo rappresentato da [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+[out] Restituisce il tipo rappresentato da [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone [l'interfaccia IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(

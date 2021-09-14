@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6a7142b7d15a83ded610ead8403a0fbfa5425664
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118944"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634931"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Questo metodo restituisce il valore associato al nome di una costante di enumerazione.
@@ -54,7 +54,7 @@ int GetValueFromString(
  Se ha esito positivo, restituisce ; in caso contrario, restituisce , se il nome non fa parte dell'enumerazione `S_OK` o un codice di `S_FALSE` errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo fa distinzione tra maiuscole e minuscole. Se è necessaria una ricerca senza distinzione tra maiuscole e minuscole, ad esempio in un linguaggio come Visual Basic in cui per i nomi non viene fatto distinzione tra maiuscole e minuscole, usare [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
+ Questo metodo fa distinzione tra maiuscole e minuscole. Se è necessaria una ricerca senza distinzione tra maiuscole e minuscole, ad esempio in un linguaggio come Visual Basic in cui i nomi non usano la distinzione tra maiuscole e minuscole, usare [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

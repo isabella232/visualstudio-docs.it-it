@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3ff57a503094e018e65bdf9913c48cb3abc9f9c1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034800"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709600"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Questa interfaccia enumera i programmi in esecuzione nella sessione di debug corrente.
@@ -31,7 +31,7 @@ IEnumDebugPrograms2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug implementa questa interfaccia per fornire un elenco di programmi di cui DE esegue il debug.
+ Il motore di debug implementa questa interfaccia per fornire un elenco di programmi in fase di debug da parte del de.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Visual Studio chiama [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) per ottenere questa interfaccia. [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) non viene usato da Visual Studio.
@@ -52,11 +52,11 @@ IEnumDebugPrograms2 : IUnknown
 
 - Popolare la finestra **Moduli** chiamando [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) e quindi [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) in ogni programma.
 
-- Popolare **l'elenco Associa** a processo chiamando e quindi chiamando QueryInterface su ogni interfaccia `IDebugProcess2::EnumPrograms` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) per ottenere [un'interfaccia IDebugEngineProgram2.](../../../extensibility/debugger/reference/idebugengineprogram2.md) [](/cpp/atl/queryinterface)
+- Popolare **l'elenco Associa** a processo chiamando e quindi chiamando QueryInterface su ogni `IDebugProcess2::EnumPrograms` interfaccia [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) per ottenere [un'interfaccia IDebugEngineProgram2.](../../../extensibility/debugger/reference/idebugengineprogram2.md) [](/cpp/atl/queryinterface)
 
-- Generare un elenco di DE in grado di eseguire il debug di ogni programma nel processo [(usando GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).
+- Generare un elenco di DE in grado di eseguire il debug di ogni programma nel processo (usando [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).
 
-- Applicare gli aggiornamenti di Modifica e continuazione (ENC) a ogni programma (chiamando IDebugProcess2::EnumPrograms e quindi [chiamando GetENCUpdate).](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)
+- Applicare gli aggiornamenti di Modifica e continuazione (ENC) a ogni programma chiamando IDebugProcess2::EnumPrograms e quindi [chiamando GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

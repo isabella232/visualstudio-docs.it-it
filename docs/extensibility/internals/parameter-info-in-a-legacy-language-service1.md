@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8c3a0cdec47be7ce5d29ff5b43ac6cd7e05cc07
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709530"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-1"></a>Informazioni sui parametri in un servizio di linguaggio legacy 1
 La descrizione comando IntelliSense Parameter Info fornisce agli utenti suggerimenti sulla posizione in cui si trova in un costrutto di linguaggio.
@@ -33,7 +33,7 @@ La descrizione comando IntelliSense Parameter Info fornisce agli utenti suggerim
 > È consigliabile iniziare a usare la nuova API dell'editor appena possibile. In questo modo si miglioreranno le prestazioni del servizio di linguaggio e si potranno sfruttare le nuove funzionalità dell'editor.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Funzionamento delle descrizioni comando per le informazioni sui parametri
- Quando si digita un'istruzione nell'editor, il pacchetto VSPackage visualizza una piccola finestra della descrizione comando contenente la definizione dell'istruzione da digitare. Ad esempio, se si digita un'istruzione Microsoft Foundation Classes (MFC), ad esempio , e si preme la parentesi di apertura per iniziare a elencare i parametri, viene visualizzata una descrizione comando che visualizza la definizione del `pMainFrame ->UpdateWindow` `UpdateWindow` metodo.
+ Quando si digita un'istruzione nell'editor, il pacchetto VSPackage visualizza una piccola finestra della descrizione comando contenente la definizione dell'istruzione da digitare. Ad esempio, se si digita un'istruzione Microsoft Foundation Classes (MFC), ad esempio , e si preme la parentesi di apertura per iniziare a elencare i parametri, viene visualizzata una descrizione del metodo che visualizza la definizione del `pMainFrame ->UpdateWindow` `UpdateWindow` metodo.
 
  Le descrizioni comando relative alle informazioni sui parametri vengono in genere usate insieme al completamento dell'istruzione. Sono particolarmente utili per i linguaggi con parametri o altre informazioni formattate dopo il nome o la parola chiave del metodo.
 
@@ -42,7 +42,7 @@ La descrizione comando IntelliSense Parameter Info fornisce agli utenti suggerim
  Quando si digita una parola chiave per cui il servizio di linguaggio può fornire suggerimenti, il servizio di linguaggio crea un oggetto e chiama il metodo nell'interfaccia per notificare all'IDE di visualizzare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> suggerimento. Creare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> l'oggetto `VSLocalCreateInstance` usando e specificando la coclasse `CLSID_VsMethodTipWindow` . `VsLocalCreateInstance` è una funzione definita nel file di intestazione vsdoc.h che chiama per il Registro di sistema locale e chiama su questo `QueryService` `CreateInstance` oggetto per `CLSID_VsMethodTipWindow` .
 
 ## <a name="providing-a-method-tip"></a>Fornire una descrizione comando per il metodo
- Per fornire un suggerimento per il metodo, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> chiamare il metodo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> nell'interfaccia , passando l'implementazione <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> dell'interfaccia .
+ Per fornire una descrizione del metodo, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> il metodo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> nell'interfaccia , passando l'implementazione <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> dell'interfaccia .
 
  Quando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> classe viene richiamata, i relativi metodi vengono chiamati nell'ordine seguente:
 

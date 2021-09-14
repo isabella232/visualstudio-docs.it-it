@@ -1,6 +1,6 @@
 ---
-description: Ottiene l'intervallo di istruzioni file del contesto del documento.
-title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
+description: Ottiene l'intervallo di istruzioni del file del contesto del documento.
+title: Interfaccia IDebugDocumentContext2::GetStatementRange | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 74078c5b3adf4a202e4169b060a5076955c4e51a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064396"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635020"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-Ottiene l'intervallo di istruzioni file del contesto del documento.
+Ottiene l'intervallo di istruzioni del file del contesto del documento.
 
 ## <a name="syntax"></a>Sintassi
 

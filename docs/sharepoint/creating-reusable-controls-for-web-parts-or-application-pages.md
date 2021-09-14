@@ -1,5 +1,5 @@
 ---
-title: Creazione di controlli riutilizzabili per Web part pagine applicazione | Microsoft Docs
+title: Creazione di controlli riutilizzabili per Web part pagine dell'applicazione | Microsoft Docs
 titleSuffix: ''
 description: Creare controlli personalizzati e riutilizzabili (controlli utente) in Visual Studio che possono essere utilizzati dalle pagine dell'applicazione e dalle web part eseguite in SharePoint.
 ms.custom: SEO-VS-2020
@@ -18,17 +18,17 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: a60b33e73991a1ce5ec75937e07d3f108b6abf61
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149507"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635659"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Creare controlli riutilizzabili per web part o pagine dell'applicazione
-  In Visual Studio è possibile creare controlli riutilizzabili personalizzati che possono essere utilizzati dalle pagine applicazione e dalle Web part eseguite in SharePoint. Questi controlli sono detti controlli utente. Un controllo utente è un tipo di controllo composito che funziona in modo molto simile a una pagina Web ASP.NET. È possibile aggiungere controlli server Web e markup esistenti a un controllo utente e definire proprietà e metodi per il controllo. È quindi possibile incorporarli nelle ASP.NET Web, in cui fungono da unità.
+  In Visual Studio è possibile creare controlli riutilizzabili personalizzati che possono essere utilizzati dalle pagine applicazione e dalle Web part eseguite in SharePoint. Questi controlli sono detti controlli utente. Un controllo utente è un tipo di controllo composito che funziona in modo molto simile a una pagina Web ASP.NET: è possibile aggiungere controlli server Web e markup esistenti a un controllo utente e definire proprietà e metodi per il controllo. È quindi possibile incorporarli nelle ASP.NET Web, in cui fungono da unità.
 
 ## <a name="create-a-user-control"></a>Creare un controllo utente
- Per creare un controllo utente, aggiungere un **controllo utente** a un controllo SharePoint Project **.** Per altre informazioni, vedere Procedura: Creare un controllo utente per una SharePoint [di applicazione o web part.](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)
+ Per creare un controllo utente, aggiungere un **controllo utente** a un controllo SharePoint Project **.** Per altre informazioni, vedere Procedura: Creare un controllo utente per una SharePoint [o una web part dell'applicazione.](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)
 
  Quando si aggiunge un **elemento Controllo** utente, Visual Studio crea una cartella nel progetto e quindi aggiunge diversi file alla cartella. La tabella seguente descrive ogni file.
 
@@ -44,7 +44,7 @@ ms.locfileid: "122149507"
 ## <a name="consume-the-user-control"></a>Utilizzare il controllo utente
  I controlli utente non vengono visualizzati SharePoint fino a quando non vengono inclusi in una pagina dell'applicazione o in una web part.
 
- Per includere un controllo utente in una pagina dell'applicazione, aprire la pagina Web a cui si vuole aggiungere il controllo ASP.NET utente. Passare alla visualizzazione Progettazione, quindi selezionare il file del controllo utente personalizzato Esplora soluzioni e trascinarlo nella pagina. Il ASP.NET utente viene aggiunto alla pagina e la finestra di progettazione crea la direttiva @ Register, necessaria per il riconoscimento del controllo utente da parte della pagina. È ora possibile usare le proprietà e i metodi pubblici del controllo.
+ Per includere un controllo utente in una pagina dell'applicazione, aprire la pagina Web a cui si vuole aggiungere il controllo ASP.NET utente. Passare alla visualizzazione Progettazione, selezionare il file del controllo utente personalizzato Esplora soluzioni e trascinarlo nella pagina. Il ASP.NET utente viene aggiunto alla pagina e la finestra di progettazione crea la direttiva @ Register, necessaria per il riconoscimento del controllo utente da parte della pagina. È ora possibile usare le proprietà e i metodi pubblici del controllo.
 
  Per includere un controllo utente in una web part, aggiungere il controllo utente alla raccolta web part <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> nel file di codice della web part. Nell'esempio seguente viene aggiunto un controllo utente <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> alla raccolta di una web part.
 

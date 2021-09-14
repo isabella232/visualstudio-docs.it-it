@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a254663eab843e35e733f1c380f93c2a33ebc74
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635364"
 ---
 # <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 Recupera il tipo di un puntatore di tabella di base virtuale.
@@ -42,10 +42,10 @@ HRESULT get_virtualBaseTableType(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Un puntatore di tabella di base virtuale ( ) è un `vbtptr` puntatore nascosto in una tabella vtable che [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] gestisce l'ereditarietà dalle classi base virtuali. Un `vbtptr` oggetto può avere dimensioni diverse a seconda delle classi ereditate.
+ Un puntatore di tabella di base virtuale ( `vbtptr` ) è un puntatore nascosto in una tabella vtable che gestisce [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] l'ereditarietà dalle classi di base virtuali. Un `vbtptr` può avere dimensioni diverse a seconda delle classi ereditate.
 
  Questo metodo restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che può essere usato per determinare le dimensioni di vbtptr.
 

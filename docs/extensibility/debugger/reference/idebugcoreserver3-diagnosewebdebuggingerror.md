@@ -1,5 +1,5 @@
 ---
-description: Tentativi di determinare il motivo per cui un collegamento automatico non è riuscito.
+description: Tenta di determinare il motivo per cui un collegamento automatico non è riuscito.
 title: IDebugCoreServer3::D iagnoseWebDebuggingError | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a9745c3027ef9e6d86f831f4a1773c27268d90fb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127376"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709744"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-Tentativi di determinare il motivo per cui un collegamento automatico non è riuscito.
+Tenta di determinare il motivo per cui un collegamento automatico non è riuscito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ int DiagnoseWebDebuggingError(
 
 ## <a name="parameters"></a>Parametri
 `pszUrl`\
-[in] Non attualmente in uso. deve essere sempre impostato su un valore Null.
+[in] Non attualmente in uso; deve essere sempre impostato su un valore Null.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Di seguito sono riportati altri codici restituiti tipici:
@@ -52,7 +52,7 @@ int DiagnoseWebDebuggingError(
 |----------|-----------------|
 |`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Impossibile determinare il motivo per cui il server remoto non è riuscito ad avviare il debug.|
 |`S_WEBDBG_DEBUG_VERB_BLOCKED`|Impossibile eseguire il debug nel server remoto, probabilmente a causa di autorizzazioni insufficienti o perché il verbo DEBUG non è abilitato.|
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Il server Web è stato bloccato e blocca il verbo DEBUG, necessario per abilitare il debug.|
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Il server Web è stato bloccato e sta bloccando il verbo DEBUG, necessario per abilitare il debug.|
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6a999635c8e59d8cac2969fe8fd80a98425cdfdf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151782"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709423"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -52,7 +52,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+V**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Rimuovi parametri**.
       - Selezionare **Modifica > Refactoring > Riordina parametri**.
@@ -76,7 +76,7 @@ Questo refactoring si applica a:
 
     ![Finestra di dialogo Aggiungi parametro - C #](media/add-parameter-dialog.png)
 
-5. Al termine dell'aggiunta di un parametro, premere **OK per** visualizzare in anteprima le modifiche.
+5. Al termine dell'aggiunta di un parametro, premere **OK** per visualizzare in anteprima le modifiche.
 
     ![Finestra di dialogo Cambia firma](media/change-signature.png)
 

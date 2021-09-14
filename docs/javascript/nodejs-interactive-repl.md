@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 8dc3cbe7fef2c5940a8e87c2f085e52cdd7b2659
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048141"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625787"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Usare la finestra interattiva Node.js
 
@@ -29,7 +29,7 @@ Per aprire la finestra interattiva, fare clic con il pulsante destro del mouse s
 
 ![Finestra interattiva Node.js nel menu di scelta rapida Progetto](../javascript/media/interactivewindow-open-from-project.png)
 
-I tasti di scelta rapida predefiniti per aprire Node.js finestra interattiva sono **[CTRL] + K, N**. In caso contrario, è possibile aprire la finestra dalla barra degli strumenti  >  **scegliendo Visualizza Windows** Node.js finestra  >  **interattiva**.
+I tasti di scelta rapida predefiniti per aprire la Node.js interattiva sono **[CTRL] + K, N**. In caso contrario, è possibile aprire la finestra dalla barra degli strumenti scegliendo Visualizza Windows  >    >  **Node.js finestra interattiva**.
 
 ## <a name="use-the-repl"></a>Usare REPL
 

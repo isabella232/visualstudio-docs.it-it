@@ -1,6 +1,6 @@
 ---
-description: Ottiene un'interfaccia specificata attraverso i limiti del processo.
-title: Interfaccia IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs
+description: Ottiene un'interfaccia specificata tra i limiti del processo.
+title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a17ef182c3b480ce2fa2809c2258a7509d30b14b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122071058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709663"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Ottiene un'interfaccia specificata attraverso i limiti del processo.
+Ottiene un'interfaccia specificata tra i limiti del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ int UnmarshalDebuggeeInterface(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo viene utilizzato quando il motore di debug è in esecuzione nello spazio del processo e il programma di cui viene eseguito il debug è [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] in esecuzione nel proprio spazio di elaborazione.
+ Questo metodo viene usato quando il motore di debug è in esecuzione nello spazio del processo e il programma di cui viene eseguito il debug è [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] in esecuzione nel proprio spazio di elaborazione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

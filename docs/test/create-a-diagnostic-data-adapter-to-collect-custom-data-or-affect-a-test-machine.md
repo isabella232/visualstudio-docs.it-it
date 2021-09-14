@@ -1,6 +1,6 @@
 ---
 title: Creare un adattatore dati di diagnostica per i test
-description: Informazioni su come scrivere codice per eseguire attività in punti specifici dell'esecuzione dei test usando le API fornite all'interno di Visual Studio Enterprise.
+description: Informazioni su come scrivere codice per eseguire attività in punti specifici dell'esecuzione dei test usando le API fornite all'interno Visual Studio Enterprise.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 80fdb3453ec3f33ac00ea678f89b2b6d542e3895
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635539"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Creare un adattatore dati di diagnostica per raccogliere dati personalizzati o influire su un computer di test
 
@@ -31,7 +31,7 @@ ms.locfileid: "122148649"
 È possibile fornire input predefinito all'adattatore dati di diagnostica personalizzato tramite un file delle impostazioni di configurazione. È possibile, ad esempio, fornire informazioni sulla posizione del file che si desidera raccogliere e allegare ai risultati del test o su quanto spazio su disco si desidera lasciare nel sistema. È possibile configurare questi dati per ciascuna impostazione di test creata. È possibile creare un controllo utente personalizzato da usare come editor. Qualsiasi modifica apportata alla configurazione dell'adattatore nell'editor viene archiviata con le impostazioni di test.
 ::: moniker-end
 
-Se i test vengono eseguiti da Visual Studio, è necessario impostare come attive queste impostazioni di test. Per altre informazioni sulle impostazioni di test, vedere [Raccogliere informazioni di diagnostica usando le impostazioni di test.](../test/collect-diagnostic-information-using-test-settings.md)
+Se i test vengono eseguiti da Visual Studio, è necessario impostare come attive queste impostazioni di test. Per altre informazioni sulle impostazioni test, vedere [Raccogliere informazioni di diagnostica usando le impostazioni test.](../test/collect-diagnostic-information-using-test-settings.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

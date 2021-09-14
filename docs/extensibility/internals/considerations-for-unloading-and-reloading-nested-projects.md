@@ -1,6 +1,6 @@
 ---
 title: Scaricamento e ricaricamento di progetti annidati
-description: Informazioni sui passaggi aggiuntivi che devono essere eseguiti durante lo scaricamento e il ricaricamento di progetti annidati in Visual Studio.
+description: Informazioni sui passaggi aggiuntivi da eseguire durante lo scaricamento e il ricaricamento di progetti annidati in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4b320829afd749a6aac82c71155bfed9e5766eba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626195"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Considerazioni per lo scaricamento e il ricaricamento di progetti annidati
 

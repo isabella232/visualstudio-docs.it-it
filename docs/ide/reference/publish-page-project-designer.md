@@ -1,6 +1,6 @@
 ---
 title: Pagina Pubblica, Progettazione progetti
-description: La pagina pubblica di creazione progetti viene usata per configurare le proprietà per la distribuzione ClickOnce.
+description: La pagina Pubblica di Project Designer viene usata per configurare le proprietà per la ClickOnce distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,11 +16,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 32bbd09b087639c362fbb5d6a137241c1aab85af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625866"
 ---
 # <a name="publish-page-project-designer"></a>Pagina Pubblica, Progettazione progetti
 
@@ -85,17 +85,17 @@ Pubblica l'applicazione usando le impostazioni correnti. Equivale al pulsante **
 
 - [Pubblicazione di applicazioni ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Procedura: specificare la posizione in cui vengono copiati i file in Visual Studio](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Procedura: specificare il percorso da cui gli utenti finali installeranno](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [Procedura: specificare un collegamento per il supporto tecnico](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Procedura: specificare la modalità di installazione online o offline di ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [Procedura: abilitare l'avvio automatico per le installazioni di CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Procedura: impostare la versione di pubblicazione ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [Procedura: incrementare automaticamente la versione di pubblicazione ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
-- [Procedura: specificare quali file vengono pubblicati da ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Procedura: modifica della lingua di pubblicazione per un'applicazione ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [Procedura: specificare il nome di un menu Start per un'applicazione ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
-- [Procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
-- [Sicurezza e distribuzione di ClickOnce](../../deployment/clickonce-security-and-deployment.md)
+- [Procedura: Specificare dove Visual Studio copia i file](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Procedura: Specificare il percorso da cui verranno installati gli utenti finali](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Procedura: Specificare un collegamento per il supporto tecnico](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [Procedura: Specificare la modalità di ClickOnce offline o online](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Procedura: Abilitare l'avvio automatico per le installazioni da CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [Procedura: Impostare la versione ClickOnce pubblicazione](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Procedura: Incrementare automaticamente la versione ClickOnce pubblicazione](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [Procedura: Specificare quali file vengono pubblicati da ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
+- [Procedura: Installare i prerequisiti con un'ClickOnce applicazione](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Procedura: Gestire gli aggiornamenti per un'ClickOnce applicazione](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Procedura: Modificare la lingua di pubblicazione per un'ClickOnce applicazione](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Procedura: Specificare un nome di menu Start per un'ClickOnce applicazione](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [Procedura: Specificare una pagina di pubblicazione per un'ClickOnce applicazione](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [ClickOnce Sicurezza e distribuzione](../../deployment/clickonce-security-and-deployment.md)

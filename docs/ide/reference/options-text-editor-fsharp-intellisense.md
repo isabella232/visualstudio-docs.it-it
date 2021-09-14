@@ -13,11 +13,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: cffc3b941bdecf6c7ff814be2c7cbef0be7e8ec7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062251"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709397"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opzioni, Editor di testo, F#, IntelliSense
 

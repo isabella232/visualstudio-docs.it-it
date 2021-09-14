@@ -12,11 +12,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bc6cdae2ac2fca16467bdbeee2333e7d7189ee9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102298"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709463"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Procedura: Gestire più thread nel codice gestito
 Se si dispone di un'estensione VSPackage gestita che chiama metodi asincroni o dispone di operazioni che vengono eseguite su thread diversi dal thread dell'interfaccia utente di Visual Studio, è necessario seguire le linee guida riportate di seguito. È possibile mantenere reattivo il thread dell'interfaccia utente perché non è necessario attendere il completamento del lavoro in un altro thread. È possibile rendere il codice più efficiente, perché non sono disponibili thread aggiuntivi che prendono spazio nello stack ed è possibile renderlo più affidabile e più facile da sottoporsi a debug perché si evitano deadlock e codice che non risponde.

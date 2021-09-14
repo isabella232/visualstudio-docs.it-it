@@ -1,6 +1,6 @@
 ---
 title: Comando Watch
-description: Informazioni sul comando Watch e su come crea e apre un'istanza specificata di un finestra Espressioni di controllo.
+description: Informazioni sul comando Espressioni di controllo e su come crea e apre un'istanza specificata di un finestra Espressioni di controllo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 2258c704e8a91b2b00942a8dcae5ca5215da028d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709384"
 ---
 # <a name="watch-command"></a>Comando Watch
 Crea e apre un'istanza specificata di una finestra **Espressione di controllo** . È possibile usare una finestra **Espressioni di controllo** per calcolare i valori di variabili, espressioni e registri, modificare i valori e salvare i risultati.
@@ -53,5 +53,5 @@ Obbligatorio. Il numero di istanza della finestra Espressioni di controllo.
 - [Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio](../../debugger/watch-and-quickwatch-windows.md) (Impostare un'espressione di controllo per le variabili con le finestre Espressione di controllo e Controllo immediato in Visual Studio)
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella di ricerca/comando](../../ide/find-command-box.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

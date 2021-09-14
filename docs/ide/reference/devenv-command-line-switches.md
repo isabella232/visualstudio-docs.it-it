@@ -1,6 +1,6 @@
 ---
 title: Opzioni della riga di comando devenv
-description: Informazioni sulle opzioni della riga di comando devenv e su come usarle per impostare le opzioni IDE e anche compilare, eseguire il debug e distribuire progetti, il tutto dalla riga di comando.
+description: Informazioni sulle opzioni della riga di comando devenv e su come usarle per impostare le opzioni IDE e anche per compilare, eseguire il debug e distribuire progetti dalla riga di comando.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: fbad39c210c5cefd45dfbdfa9bec8f6cafe432cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034318"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625896"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -55,7 +55,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili alle regole per altre 
   > [!NOTE]
   > Nella cartella padre deve trovarsi un solo e unico file che faccia riferimento a questo progetto. Se la cartella padre non contiene alcun file di soluzione che fa riferimento a questo progetto, o se la cartella padre contiene due o più file di soluzione che vi fanno riferimento, viene creato un file di soluzione temporaneo.
 
-- Quando i percorsi e i nomi dei file contengono spazi, è necessario racchiuderli tra virgolette (""). Ad esempio, `"c:\project a\"`.
+- Quando i percorsi e i nomi dei file contengono spazi, è necessario racchiuderli tra virgolette (""). Ad esempio: `"c:\project a\"`.
 
 - Inserire uno spazio tra le opzioni e gli argomenti sulla stessa riga. Ad esempio, il comando `devenv /log output.txt` apre l'IDE e restituisce tutte le informazioni di log per la sessione in output.txt.
 

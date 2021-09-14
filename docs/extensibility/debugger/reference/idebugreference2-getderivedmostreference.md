@@ -1,6 +1,6 @@
 ---
 description: Ottiene il riferimento più derivato di un riferimento.
-title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
+title: Interfaccia IDebugReference2::GetDerivedMostReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e2980792572a6ac9c2d833a0fef62350db968d00
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132587"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709650"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Ottiene il riferimento più derivato di un riferimento. Riservato per utilizzi futuri.
@@ -49,7 +49,7 @@ int GetDerivedMostReference(
  Restituisce sempre `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Commenti
- Ad esempio, se questa proprietà descrive un oggetto che implementa ma che è effettivamente una creazione di un'istanza di derivato da , questo metodo restituisce un `ClassRoot` `ClassDerived` oggetto `ClassRoot` [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che rappresenta un riferimento all'oggetto `ClassDerived` .
+ Ad esempio, se questa proprietà descrive un oggetto che implementa ma che è effettivamente una creazione di un'istanza di derivata da , questo metodo restituisce un oggetto `ClassRoot` `ClassDerived` `ClassRoot` [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che rappresenta un riferimento `ClassDerived` all'oggetto.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

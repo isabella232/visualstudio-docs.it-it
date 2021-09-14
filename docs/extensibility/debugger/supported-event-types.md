@@ -1,6 +1,6 @@
 ---
 title: Tipi di evento supportati | Microsoft Docs
-description: Informazioni sui tipi di evento supportati Visual Studio debug, inclusi gli eventi asincroni, gli eventi sincroni e gli eventi di arresto.
+description: Informazioni sui tipi di evento supportati Visual Studio debug, inclusi eventi asincroni, eventi sincroni ed eventi di arresto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,24 +14,24 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce77f01c2cae0e1f56b9a55b41f291dc7814a2b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626424"
 ---
 # <a name="supported-event-types"></a>Tipi di evento supportati
 Visual Studio debug supporta attualmente i tipi di evento seguenti:
 
 - Eventi asincroni
 
-   Notificare al gestore di debug della sessione (SDM) e all'IDE che lo stato dell'applicazione in fase di debug sta cambiando. Questi eventi vengono elaborati nel tempo libero di SDM e dell'IDE. Non viene inviata alcuna risposta al motore di debug dopo l'elaborazione dell'evento. Le [interfacce IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) e [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) sono esempi di eventi asincroni.
+   Notificare a Gestione debug sessione (SDM) e all'IDE che lo stato dell'applicazione in fase di debug sta cambiando. Questi eventi vengono elaborati a livello di SDM e dell'IDE. Non viene inviata alcuna risposta al motore di debug dopo l'elaborazione dell'evento. Le [interfacce IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) e [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) sono esempi di eventi asincroni.
 
 - Eventi sincroni
 
-   Notificare a SDM e IDE che lo stato dell'applicazione in fase di debug sta cambiando. L'unica differenza tra questi eventi ed eventi asincroni è che una risposta viene inviata tramite il [metodo ContinueFromSynchronousEvent.](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
+   Notificare a SDM e IDE che lo stato dell'applicazione in fase di debug sta cambiando. L'unica differenza tra questi eventi e gli eventi asincroni è che una risposta viene inviata tramite il [metodo ContinueFromSynchronousEvent.](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
 
-   L'invio di un evento sincrono è utile se è necessario che l'IDE continui l'elaborazione dopo la ricezione e l'elaborazione dell'evento da parte dell'IDE.
+   L'invio di un evento sincrono è utile se è necessario che DE continui l'elaborazione dopo che l'IDE riceve ed elabora l'evento.
 
 - Eventi di arresto sincrono o eventi di arresto
 
@@ -49,14 +49,14 @@ Visual Studio debug supporta attualmente i tipi di evento seguenti:
   > Gli eventi di arresto asincroni non sono supportati. È un errore inviare un evento di arresto asincrono.
 
 ## <a name="discussion"></a>Discussione
- L'implementazione effettiva degli eventi dipende dalla progettazione del de. Il tipo di ogni evento inviato è determinato dai relativi attributi, che vengono impostati quando si progetta il de. Ad esempio, un DE può inviare [un IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) come evento asincrono, mentre un altro può inviarlo come evento di arresto.
+ L'implementazione effettiva degli eventi dipende dalla progettazione di DE. Il tipo di ogni evento inviato è determinato dai relativi attributi, che vengono impostati durante la progettazione di DE. Ad esempio, un derec può inviare [un oggetto IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) come evento asincrono, mentre un altro può inviarlo come evento di arresto.
 
- Nella tabella seguente vengono specificati i parametri del programma e del thread necessari per gli eventi e i tipi di evento. Qualsiasi evento può essere sincrono. Nessun evento deve essere sincrono.
+ Nella tabella seguente vengono specificati i parametri del programma e del thread necessari per gli eventi, nonché i tipi di evento. Qualsiasi evento può essere sincrono. Nessun evento deve essere sincrono.
 
 > [!NOTE]
 > [L'interfaccia IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) è necessaria per tutti gli eventi.
 
-|Event|IDebugProgram2|IDebugThread2|Arresto di eventi|
+|Evento|IDebugProgram2|IDebugThread2|Arresto di eventi|
 |-----------|--------------------|-------------------|---------------------|
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Consentito, ma non obbligatorio|Consentito, ma non obbligatorio|No|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Obbligatoria|Obbligatoria|Sì|

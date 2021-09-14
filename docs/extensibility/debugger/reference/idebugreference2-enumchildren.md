@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bab404519695b71c84c82216606b59529b1d4386
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029840"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709649"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 Ottiene un elenco di elementi figlio selezionati di un riferimento. Riservato per utilizzi futuri.
@@ -53,13 +53,13 @@ int EnumChildren (
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag dell'enumerazione [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica i [](../../../extensibility/debugger/reference/debug-reference-info.md) campi nelle strutture DEBUG_REFERENCE_INFO valori enumerati.
+[in] Combinazione di flag dell'DEBUGREF_INFO_FLAGS che specifica i campi nelle [](../../../extensibility/debugger/reference/debug-reference-info.md) strutture DEBUG_REFERENCE_INFO valori enumerati. [](../../../extensibility/debugger/reference/debugref-info-flags.md)
 
 `dwRadix`\
-[in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
+[in] Radice da utilizzare nella formattazione di qualsiasi informazione numerica.
 
 `dwAttribFilter`\
-[in] Combinazione di flag [dell'enumerazione DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) utilizzata come filtro in combinazione con il parametro per selezionare le strutture `pszNameFilter` da enumerare.
+[in] Combinazione di flag [dell'enumerazione DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) utilizzata come filtro in combinazione con il parametro per selezionare le strutture da `pszNameFilter` enumerare.
 
 `pszNameFilter`\
 [in] Stringa che specifica un filtro, ad esempio "MyX", usata in combinazione con il parametro per selezionare `dwAttribFilter` le strutture da enumerare.

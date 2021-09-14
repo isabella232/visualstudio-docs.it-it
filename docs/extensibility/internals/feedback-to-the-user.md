@@ -17,11 +17,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: be19f6bb9b1879746542d73e67f6b77b0d28d792
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626135"
 ---
 # <a name="feedback-to-the-user"></a>Commenti e suggerimenti per l'utente
 Nell'ambiente di sviluppo integrato (IDE) il feedback visivo relativo alle funzionalità disponibili si basa sulla selezione corrente dell'utente e sul contesto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di selezione globale. Nella tabella seguente sono elencate le funzionalità disponibili in contesti di selezione diversi.
@@ -50,7 +50,7 @@ Nell'ambiente di sviluppo integrato (IDE) il feedback visivo relativo alle funzi
 
 - I menu, le barre degli strumenti e la barra del titolo dell'applicazione devono riflettere la finestra del client dell'interfaccia a documenti multipli (MDI) in primo piano.
 
-  Ad esempio, quando viene aperta la visualizzazione HTML di un **Web Form** all'interno di un progetto applicazione Web Visual Basic e l'utente seleziona un tag, i commenti vengono forniti nel `<td>` modo seguente:
+  Ad esempio, quando viene aperta la visualizzazione HTML di un **Web Form** all'interno di un progetto di applicazione Web Visual Basic e l'utente seleziona un tag, il feedback viene fornito nel `<td>` modo seguente:
 
 - La selezione è indicata nella finestra attiva e riflessa nella **finestra** Proprietà.
 
@@ -58,7 +58,7 @@ Nell'ambiente di sviluppo integrato (IDE) il feedback visivo relativo alle funzi
 
 - Vengono **visualizzati la** barra degli **strumenti** Editor e il menu Tabella e la barra del titolo viene aggiornata per riflettere la finestra Web Form.
 
-- La finestra della gerarchia attiva, in genere **Esplora soluzioni**, e la relativa barra del titolo vengono aggiornate per riflettere il contesto corrente e i comandi di menu di **Project** sensibili al contesto si applicano ora al progetto applicazione Web attivo.
+- La finestra della gerarchia attiva, in genere **Esplora soluzioni**, e la relativa barra del titolo vengono aggiornate in modo da riflettere il contesto corrente e i comandi di menu **di Project** sensibili al contesto si applicano ora al progetto applicazione Web attivo.
 
 ## <a name="see-also"></a>Vedi anche
 - [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

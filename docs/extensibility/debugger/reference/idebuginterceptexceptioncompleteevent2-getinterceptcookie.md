@@ -1,5 +1,5 @@
 ---
-description: Chiamato al completamento dell'elaborazione di un'eccezione intercettata.
+description: Chiamato al termine dell'elaborazione di un'eccezione intercettata.
 title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -19,14 +19,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9892137ae9855097729fcd8482c2b1b3460152a2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709682"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
-Chiamato al completamento dell'elaborazione di un'eccezione intercettata.
+Chiamato al termine dell'elaborazione di un'eccezione intercettata.
 
 ## <a name="syntax"></a>Sintassi
 

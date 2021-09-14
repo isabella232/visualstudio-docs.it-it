@@ -14,16 +14,16 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f631e09287c6d28aa61ea7832d3f4d5241548e1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709565"
 ---
 # <a name="extend-properties"></a>Estendere le proprietà
 La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **finestra Proprietà** è un visualizzatore proprietà universale per i componenti COM e COM+ e supporta tutti i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. La **finestra Proprietà** funziona con informazioni sul tipo e metadati COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in qualsiasi altra finestra nell'ambiente di sviluppo integrato `ITypeInfo` (IDE).
 
- La **finestra** Proprietà, che può essere aperta premendo **F4** sulla tastiera o scegliendo Finestra Proprietà dal **menu** Visualizza, consente di visualizzare e modificare proprietà ed eventi di oggetti selezionati indipendenti dalla configurazione e in fase di progettazione.  Le proprietà dipendenti dalla configurazione, associate a soluzioni e progetti, vengono visualizzate nelle [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per altre informazioni, vedere [Gestire le opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).
+ La  finestra Proprietà, che può essere aperta premendo **F4** sulla tastiera o selezionando Finestra Proprietà dal **menu** Visualizza, consente di visualizzare e modificare proprietà ed eventi indipendenti dalla configurazione e in fase di progettazione degli oggetti selezionati.  Le proprietà dipendenti dalla configurazione, associate a soluzioni e progetti, vengono visualizzate nelle [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per altre informazioni, vedere [Gestire le opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).
 
  ![Finestra Proprietà panoramica](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow") Finestra Proprietà
 

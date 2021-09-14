@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia viene usata per rappresentare e ottenere informazioni da un server in un computer in rete.
-title: Interfaccia IDebugCoreServer2 | Microsoft Docs
+title: Interfaccia | IDebugCoreServer2 Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: ebee42f829a3824477fa5c5e84870ad9a16462bf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119672"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709745"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Questa interfaccia viene usata per rappresentare e ottenere informazioni da un server in un computer in rete.
@@ -45,14 +45,14 @@ IDebugCoreServer2 : IUknown
 |------------|-----------------|
 |[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|Ottiene il nome e gli attributi di un computer.|
 |[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|Ottiene il nome di un computer.|
-|[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)|Ottiene un fornitore di porte presente in un computer.|
+|[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)|Ottiene un fornitore di porte esistente in un computer.|
 |[GetPort](../../../extensibility/debugger/reference/idebugcoreserver2-getport.md)|Ottiene una porta già esistente in un computer.|
 |[EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)|Crea un enumeratore per tutte le porte in un computer.|
 |[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)|Crea un enumeratore per tutti i fornitori di porte in un computer.|
 |[GetMachineUtilities_V7](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineutilities-v7.md)|Ottiene le utilità del computer per un computer.|
 
 ## <a name="remarks"></a>Commenti
- Questa interfaccia viene usata anche da Visual Studio per esplorare i processi in esecuzione nei computer in rete.
+ Questa interfaccia viene usata anche dal Visual Studio per esplorare i processi in esecuzione nei computer in rete.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

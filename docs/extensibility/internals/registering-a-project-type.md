@@ -1,6 +1,6 @@
 ---
 title: Registrazione di un Project di | Microsoft Docs
-description: Informazioni sulla creazione di voci del Registro di sistema che Visual Studio riconoscere e usare il nuovo tipo di progetto.
+description: Informazioni sulla creazione di voci del Registro di sistema che consentono Visual Studio riconoscere e usare il nuovo tipo di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,21 +16,21 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b3966b807f87fd6767727e66b6f5b035cfc1510
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042166"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709517"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
-Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro di sistema che consentono di riconoscere e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usare il tipo di progetto. Queste voci del Registro di sistema vengono in genere create usando un file di script del Registro di sistema (con estensione rgs).
+Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro di sistema che consentono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di riconoscere e usare il tipo di progetto. Queste voci del Registro di sistema vengono in genere create usando un file di script del Registro di sistema (con estensione rgs).
 
- Nell'esempio seguente le istruzioni del Registro di sistema forniscono percorsi e dati predefiniti, se applicabile, seguiti da una tabella contenente voci dello script del Registro di sistema per ogni istruzione. Le tabelle forniscono le voci di script e informazioni aggiuntive sulle istruzioni .
+ Nell'esempio seguente le istruzioni del Registro di sistema forniscono percorsi e dati predefiniti, dove applicabile, seguiti da una tabella che contiene le voci dello script del Registro di sistema per ogni istruzione. Le tabelle forniscono le voci di script e informazioni aggiuntive sulle istruzioni .
 
 > [!NOTE]
-> Le informazioni del Registro di sistema seguenti sono destinate a essere un esempio del tipo e degli scopi delle voci negli script del Registro di sistema che verranno scritti per registrare il tipo di progetto. Le voci effettive e il relativo utilizzo possono variare in base ai requisiti specifici del tipo di progetto. Esaminare gli esempi disponibili per trovarne uno simile al tipo di progetto che si sta sviluppando e quindi esaminare lo script del Registro di sistema per tale esempio.
+> Le informazioni del Registro di sistema seguenti sono un esempio del tipo e degli scopi delle voci negli script del Registro di sistema che verranno scritti per registrare il tipo di progetto. Le voci effettive e i relativi usi possono variare in base ai requisiti specifici del tipo di progetto. Esaminare gli esempi disponibili per trovarne uno simile al tipo di progetto che si sta sviluppando e quindi esaminare lo script del Registro di sistema per tale esempio.
 
- Gli esempi seguenti sono di HKEY_CLASSES_ROOT.
+ Gli esempi seguenti derivano da HKEY_CLASSES_ROOT.
 
 ## <a name="example-1"></a>Esempio 1
 
@@ -87,16 +87,16 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
 |`@` (impostazione predefinita)|REG_SZ|`FigPrj Project VSPackage`|Nome localizzabile di questo VSPackage registrato (tipo di progetto).|
 |`InprocServer32`|REG_SZ|`%MODULE%`|Percorso della DLL del tipo di progetto. L'IDE carica questa DLL e passa il CLSID VSPackage a `DllGetClassObject` per ottenere per costruire <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> l'oggetto.|
 |`CompanyName`|REG_SZ|`Microsoft`|Nome della società che ha sviluppato il tipo di progetto.|
-|`ProductName`|REG_SZ|`Figure Project Sample`|Nome per il tipo di progetto.|
+|`ProductName`|REG_SZ|`Figure Project Sample`|Nome del tipo di progetto.|
 |`ProductVersion`|REG_SZ|`9.0`|Numero di versione della versione del tipo di progetto.|
 |`MinEdition`|REG_SZ|`professional`|Edizione del pacchetto VSPackage da registrare.|
-|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Chiave di caricamento del pacchetto per il progetto VSPackage. La chiave viene convalidata quando un progetto viene caricato dopo l'avvio dell'ambiente.|
+|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Chiave di caricamento del pacchetto per il pacchetto VSPackage del progetto. La chiave viene convalidata quando un progetto viene caricato dopo l'avvio dell'ambiente.|
 |`DllName`|REG_SZ|`%RESOURCE_DLL%`|Nome file della DLL satellite che contiene le risorse localizzate per il tipo di progetto.|
 |`Path`|REG_SZ|`%RESOURCE_PATH%`|Percorso della DLL satellite.|
 |`FigProjectsEvents`|REG_SZ|Vedere l'istruzione per value.|Determina la stringa di testo restituita per questo evento di automazione.|
 |`FigProjectItemsEvents`|REG_SZ|Vedere l'istruzione per value.|Determina la stringa di testo restituita per questo evento di automazione.|
 
- Tutti gli esempi seguenti si trovano nel Registro di sistema nella chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
+ Tutti gli esempi seguenti si trovano nel Registro di sistema sotto la chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
 ## <a name="example-3"></a>Esempio 3
 
@@ -138,21 +138,21 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
 |`@`|REG_SZ|`FigPrj Project`|Nome predefinito dei progetti di questo tipo.|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID risorsa del nome da recuperare dalla DLL satellite registrata in Pacchetti.|
 |`Package`|REG_SZ|`%CLSID_Package%`|ID di classe del pacchetto VSPackage registrato in Pacchetti.|
-|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito dei Project modello. Si tratta dei file visualizzati dal modello New Project.|
+|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito dei Project modello. Questi sono i file visualizzati dal modello Project nuovo.|
 |`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Percorso predefinito dei file Project modello di elemento. Questi sono i file visualizzati dal modello Aggiungi nuovo elemento.|
 |`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Consente all'IDE di implementare la **finestra di** dialogo Apri.|
-|`PossibleProjectExtensions`|REG_SZ|`figp`|Usato dall'IDE per determinare se il progetto aperto viene gestito da questo tipo di progetto (factory del progetto). Il formato per più voci è un elenco delimitato da punti e virgola. Ad esempio, "vdproj;vdp".|
+|`PossibleProjectExtensions`|REG_SZ|`figp`|Usato dall'IDE per determinare se il progetto aperto viene gestito da questo tipo di progetto (factory del progetto). Il formato di più voci è un elenco delimitato da punto e virgola. ad esempio "vdproj;vdp".|
 |`DefaultProjectExtension`|REG_SZ|`.figp`|Usato dall'IDE come estensione di file predefinita per l'operazione Salva con nome.|
-|`Filter Settings`|REG_DWORD|Nella tabella seguente sono riportate diverse istruzioni e commenti.|Queste impostazioni vengono usate per impostare i vari filtri per la visualizzazione dei file nelle finestre di dialogo dell'interfaccia utente.|
+|`Filter Settings`|REG_DWORD|Nella tabella seguente sono disponibili varie istruzioni e commenti.|Queste impostazioni vengono usate per impostare i vari filtri per la visualizzazione di file nelle finestre di dialogo dell'interfaccia utente.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|ID risorsa per i modelli Aggiungi elemento.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Percorso degli elementi di progetto visualizzati nella finestra di dialogo per il **modello Aggiungi nuovo** elemento.|
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Determina l'ordinamento nel nodo della struttura ad albero dei file visualizzati nella finestra **di** dialogo Aggiungi nuovo elemento .|
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Determina l'ordinamento nel nodo della struttura ad albero dei file visualizzato nella finestra **di dialogo** Aggiungi nuovo elemento .|
 
  La tabella seguente illustra le opzioni filtri disponibili nel segmento di codice precedente.
 
 |Opzione di filtro|Descrizione|
 |-------------------|-----------------|
-|`CommonFindFilesFilter`|Indica che il filtro è uno dei filtri comuni nella finestra **di** dialogo Trova nei file . I filtri comuni sono elencati nell'elenco dei filtri prima dei filtri non contrassegnati come comuni.|
+|`CommonFindFilesFilter`|Indica che il filtro è uno dei filtri comuni nella finestra **di dialogo** Cerca nei file . I filtri comuni sono elencati nell'elenco dei filtri prima dei filtri non contrassegnati come comuni.|
 |`CommonOpenFilesFilter`|Indica che il filtro è uno dei filtri comuni nella finestra **di dialogo Apri** file. I filtri comuni sono elencati nell'elenco dei filtri prima dei filtri non contrassegnati come comuni.|
 |`FindInFilesFilter`|Indica che il filtro sarà uno dei  filtri nella finestra di dialogo Cerca nei file e verrà elencato dopo i filtri comuni.|
 |`NotOpenFileFilter`|Indica che il filtro non verrà utilizzato nella finestra **di dialogo Apri** file.|
@@ -178,7 +178,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID risorsa per i nuovi Project personalizzati.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito per i progetti del tipo di progetto registrato.|
 |`SortPriority`|REG_DWORD|`41 (x29)`|Imposta l'ordinamento dei progetti visualizzati nella finestra di dialogo Creazione guidata nuovi progetti.|
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 indica che i progetti di questo tipo vengono visualizzati solo nella finestra di dialogo Project nuovo progetto.|
+|`NewProjectDialogOnly`|REG_DWORD|`0`|0 indica che i progetti di questo tipo vengono visualizzati solo nella finestra di dialogo Project nuova versione.|
 
  Tutti gli esempi seguenti si trovano nel Registro di sistema sotto la chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
@@ -201,7 +201,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Percorso predefinito degli elementi che verranno visualizzati nella finestra **di dialogo** Aggiungi nuovo elemento .|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Stabilisce l'ordinamento per la visualizzazione nel nodo della struttura ad albero della **finestra di dialogo** Aggiungi nuovo elemento .|
 
- L'esempio seguente si trova nel Registro di sistema sotto la chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus].
+ L'esempio seguente si trova nel Registro di sistema nella chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus].
 
 ## <a name="example-6"></a>Esempio 6
 
@@ -240,11 +240,11 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
 |Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valore dell'ID risorsa per i Project nuovi Project figure.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito della directory Nuovi progetti. Gli elementi in questa directory verranno visualizzati nella finestra **di dialogo Project procedura** guidata.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito della directory Nuovi progetti. Gli elementi in questa directory verranno visualizzati nella finestra **di dialogo Project guidata** nuova directory.|
 |`SortPriority`|REG_DWORD|`41 (x29)`|Stabilisce l'ordine in cui i progetti verranno visualizzati nel nodo della struttura ad albero della finestra **di dialogo Project** nuova finestra di dialogo.|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|0 indica che i progetti di questo tipo vengono visualizzati solo nella finestra **di dialogo Project** nuova versione.|
 
- L'esempio seguente si trova nel Registro di sistema sotto la chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts].
+ L'esempio seguente si trova nel Registro di sistema nella chiave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts].
 
 ```
 \FiguresProductSample
@@ -257,7 +257,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
 |`Package`|REG_SZ|`%CLSID_Package%`|ID di classe del pacchetto VSPackage registrato.|
 |`UseInterface`|REG_DWORD|`1`|1 indica che l'interfaccia utente verrà usata per interagire con questo progetto. 0 indica che non è presente alcuna interfaccia utente.|
 
- I file con estensione vsz che controllano i nuovi tipi di progetto contengono spesso una RELATIVE_PATH voce. Questo percorso è relativo al percorso specificato nella voce \ProductDir del tipo di progetto nella chiave di installazione seguente:
+ I file con estensione vsz che controllano i nuovi tipi di progetto contengono spesso RELATIVE_PATH voce. Questo percorso è relativo al percorso specificato nella voce \ProductDir del tipo di progetto nella chiave di installazione seguente:
 
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
 

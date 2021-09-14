@@ -1,5 +1,5 @@
 ---
-title: Esposizione di tipi alle finestre di progettazione visiva | Microsoft Docs
+title: Esposizione di tipi alle finestre di progettazione | Microsoft Docs
 description: Informazioni su come esporre le definizioni di classi e tipi, incluse quelle negli strumenti personalizzati, in modo Visual Studio renderle disponibili alle finestre di progettazione visiva.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffee5f17192cc14346f9da52ce32551dea6daded
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709567"
 ---
 # <a name="expose-types-to-visual-designers"></a>Esporre i tipi alle finestre di progettazione visiva
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve avere accesso alle definizioni di classi e tipi in fase di progettazione per visualizzare una finestra di progettazione visiva. Le classi vengono caricate da un set predefinito di assembly che includono il set di dipendenze completo del progetto corrente (riferimenti e relative dipendenze). Può anche essere necessario per le finestre di progettazione visive accedere a classi e tipi definiti nei file generati da strumenti personalizzati.
@@ -38,7 +38,7 @@ ms.locfileid: "122094854"
 
      Senza questa impostazione non viene eseguito alcun file eseguibile del programma.
 
-- Il codice generato deve essere nella stessa lingua dell'impostazione globale del progetto.
+- Il codice generato deve essere nello stesso linguaggio dell'impostazione globale del progetto.
 
      Il file PE temporaneo viene compilato indipendentemente da ciò che lo strumento personalizzato segnala come estensione richiesta in , purché <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> **GeneratesDesignTimeSource** sia impostato su 1 nel Registro di sistema. Non è necessario che l'estensione sia *vb*, *cs* o *jsl*. può essere qualsiasi estensione.
 

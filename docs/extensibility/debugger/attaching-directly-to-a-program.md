@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189a5e56e189240b014249e7e4b980bf3e8cce034c3647b59711d7a6ae2e84e1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6645b02a5ab842309b54a6c1d4a7f36519b018a8
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709813"
 ---
 # <a name="attach-directly-to-a-program"></a>Collegarsi direttamente a un programma
 Gli utenti che vogliono eseguire il debug di programmi in un processo già in esecuzione seguono in genere questo processo:
@@ -27,7 +27,7 @@ Gli utenti che vogliono eseguire il debug di programmi in un processo già in es
 
     Verrà visualizzata la finestra di dialogo **Processi**.
 
-2. Scegliere un processo e fare clic sul **pulsante** Allega.
+2. Scegliere un processo e fare clic **sul pulsante** Allega.
 
     Verrà **visualizzata la finestra di** dialogo Collega a processo in cui sono elencati tutti i motori di debug (DE) installati nel computer.
 
@@ -39,7 +39,7 @@ Gli utenti che vogliono eseguire il debug di programmi in un processo già in es
 
    Da questo momento in poi, ogni motore di debug viene collegato a un programma esattamente come descritto [in](../../extensibility/debugger/attaching-after-a-launch.md)Collegamento dopo un avvio , con due eccezioni.
 
-   Per migliorare l'efficienza, le unità DE implementate per condividere uno spazio indirizzi con SDM vengono raggruppate in modo che ogni DE abbia un set di programmi a cui verrà collegato. In questo caso, [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) chiama [IDebugEngine2::Attach e](../../extensibility/debugger/reference/idebugengine2-attach.md) le passa una matrice di programmi a cui connettersi.
+   Per migliorare l'efficienza, le unità DE implementate per condividere uno spazio indirizzi con SDM vengono raggruppate in modo che ogni DE abbia un set di programmi a cui verrà collegato. In questo caso, [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) chiama [IDebugEngine2::Attach e](../../extensibility/debugger/reference/idebugengine2-attach.md) passa una matrice di programmi a cui connettersi.
 
    La seconda eccezione è che gli eventi di avvio inviati da un de collegarsi a un programma già in esecuzione non includono in genere l'evento del punto di ingresso.
 

@@ -1,6 +1,6 @@
 ---
 title: Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app UWP | Microsoft Docs
-description: Informazioni su come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per Universal Windows Apps.
+description: Informazioni su come isolare i problemi di prestazioni nelle app usando il profiler di velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per app Windows universali.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: ff601ac5c2ff72cf1f309c42671c0a0802e3e796
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107628"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635707"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.
@@ -78,11 +78,11 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
 1. Apri l'app in Visual Studio.
 
-2. Esegui i test dell'app per i problemi di velocità di risposta dell'interfaccia utente. (Premere **CTRL** + **F5 per** avviare l'app senza eseguire il debug.
+2. Esegui i test dell'app per i problemi di velocità di risposta dell'interfaccia utente. (Premere **CTRL** + **F5** per avviare l'app senza eseguire il debug.
 
      Se rilevi un problema, continua ad eseguire i test per tentare di restringere l'intervallo di tempo in cui il problema si verifica o per tentare di identificare i trigger che causano il comportamento.
 
-3. Passare a Visual Studio (premere **ALT** + **TAB)** e arrestare l'app (**MAIUSC** + **F5).**
+3. Passare a Visual Studio (premere **ALT** + **TAB)** e arrestare l'app (**MAIUSC** + **F5**).
 
 4. Facoltativamente, puoi aggiungere contrassegni utente al codice usando [Contrassegnare il codice per l'analisi](#ProfileMark).
 
@@ -313,7 +313,7 @@ if (performance.mark && performance.measure) {
 
 - **Scripting.** Indica il tempo impiegato per l'analisi e l'esecuzione di JavaScript. Include eventi DOM, timer, valutazione script e il lavoro dei frame di animazione. Include sia il codice utente che il codice di libreria.
 
-- **Gc.** Indica il tempo impiegato nell'operazione di Garbage Collection.
+- **GC.** Indica il tempo impiegato nell'operazione di Garbage Collection.
 
 - **Styling.** Indica il tempo impiegato per l'analisi di CSS e il calcolo del layout e della presentazione dell'elemento.
 
@@ -327,7 +327,7 @@ if (performance.mark && performance.measure) {
 
   Questa tabella mostra gli eventi e le relative descrizioni:
 
-|Event|Categoria evento|Ambito|
+|Evento|Categoria evento|Ambito|
 |-----------|--------------------|-----------------|
 |Analisi CSS|Caricamento|È stato rilevato nuovo contenuto CSS e ne è stata tentata l'analisi.|
 |Analisi HTML|Caricamento|È stato rilevato nuovo contenuto HTML ed è stata tentata l'analisi del contenuto nei nodi e l'inserimento del contenuto nell'albero DOM.|

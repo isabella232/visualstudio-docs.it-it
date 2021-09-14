@@ -15,14 +15,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99923825e2faaba211921eefc45096e65c5ee1908f5a5c07032c1522d683906e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4f673e7efe7f118f32056f02ef51bbbe7cf402a
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626279"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelli Visual Studio)
 
 Specifica se il modello viene visualizzato nelle finestre di dialogo Nuovo progetto o **Aggiungi** nuovo elemento.
 

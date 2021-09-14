@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: eeb3ede6be31cf705c81a010ec2be11a9e2bca7c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634891"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Ottiene le informazioni sulla risoluzione degli errori del punto di interruzione.
@@ -45,10 +45,10 @@ int GetResolutionInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag [dell'enumerazione BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) che determinano quali `pErrorResolutionInfo` campi di devono essere compilati.
+[in] Combinazione di flag [dell'BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) che determinano quali campi di `pErrorResolutionInfo` devono essere compilati.
 
 `pErrorResolutionInfo`\
-[in, out] Struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) che viene compilata con la descrizione della risoluzione del punto di interruzione.
+[in, out] Struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) compilata con la descrizione della risoluzione del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

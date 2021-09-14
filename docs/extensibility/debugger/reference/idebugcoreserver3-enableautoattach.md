@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f72f0586d2d393d265aac0220b7c0c1faa64d49
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064500"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709743"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Abilita il collegamento automatico per i motori di debug specificati.
@@ -64,7 +64,7 @@ int EnableAutoAttach(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore. Un codice di errore è , che indica che il collegamento automatico class factory `E_AUTO_ATTACH_NOT_REGISTERED` non è stato registrato.
 
 ## <a name="remarks"></a>Commenti
- Quando viene avviato un programma associato all'URL specificato, i motori di debug specificati vengono automaticamente avviati e collegati.
+ Quando viene avviato un programma associato all'URL specificato, i motori di debug specificati vengono avviati e collegati automaticamente.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

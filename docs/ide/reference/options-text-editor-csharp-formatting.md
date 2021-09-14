@@ -1,6 +1,6 @@
 ---
 title: Opzioni di formattazione dell'editor C#
-description: Informazioni su come usare la pagina Opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in C#.
+description: Informazioni su come usare la pagina opzioni di formattazione e le relative pagine secondarie per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in C#.
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: reference
@@ -22,17 +22,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: 13c8ca9dd8c71cf091868f1ddd00847209cf3bb1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709407"
 ---
-# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Finestra di dialogo Opzioni: Formattazione dello \> stile del codice C# dell'editor \> di \> testo
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Finestra di dialogo Opzioni: Editor di testo \> Formattazione dello stile del codice \> \> C#
 
 Usare la pagina di opzioni **Formattazione** e le relative pagine secondarie ([**Rientro**](#indentation-page), **Nuove righe**, **Spaziatura** e **Ritorno a capo**) per impostare le opzioni di formattazione del codice nell'editor del codice.
 
-Per accedere a questa pagina delle opzioni, scegliere  >  **Opzioni strumenti** dalla barra dei menu. Nella finestra di dialogo **Opzioni** scegliere **Editor di testo** > **C#** > **Stile codice** > **Formattazione**.
+Per accedere a questa pagina di opzioni, **scegliere**  >  **Opzioni strumenti** dalla barra dei menu. Nella finestra di dialogo **Opzioni** scegliere **Editor di testo** > **C#** > **Stile codice** > **Formattazione**.
 
 > [!TIP]
 > Ognuna delle pagine secondarie **Rientro**, **Nuove righe**, **Spaziatura** e **Ritorno a capo** visualizza una finestra di anteprima nella parte inferiore che mostra l'effetto dell'applicazione di ogni opzione. Per usare la finestra di anteprima, selezionare un'opzione di formattazione. La finestra di anteprima illustra un esempio dell'opzione selezionata. Quando si modifica un'impostazione selezionando un pulsante di opzione o una casella di controllo, la finestra di anteprima viene aggiornata per mostrare l'effetto della nuova impostazione.
@@ -65,22 +65,22 @@ Queste impostazioni configurano il comando **Formatta documento** per eseguire u
 
 |Etichetta|Descrizione|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
 |-----------|-----------------|-----------------|-----------------|
-|**Applica tutte le regole di formattazione di C# (rientro, ritorno a capo, spaziatura)**|Il comando **Formatta documento** corregge sempre i problemi di formattazione. Questa impostazione non può essere modificata.| [Opzioni di base di EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opzioni di formattazione di EditorConfig .NET](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Formattazione** > [**rientro** o **nuove righe** o **spaziatura** o **ritorno a capo**]|
+|**Applica tutte le regole di formattazione di C# (rientro, ritorno a capo, spaziatura)**|Il comando **Formatta documento** corregge sempre i problemi di formattazione. Questa impostazione non può essere modificata.| [Opzioni di base di EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opzioni di formattazione di EditorConfig .NET](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Formattazione** > [**Rientro o** **Nuove righe** o **Spaziatura** o **Ritorno a capo**]|
 |**Esegui la pulizia aggiuntiva del codice durante la formattazione**|Se selezionata, applica le correzioni alle regole specificate di seguito nel comando **Edit.FormatDocument**.| N/A |
-|**Rimuovere gli utilizzi non necessari**|Se selezionata, consente di rimuovere le direttive `using` inutili quando **Edit.FormatDocument** viene attivato.| N/A |
-|**Usare l'ordinamento**|Se selezionata, consente di ordinare le direttive `using` quando **Edit.FormatDocument** viene attivato.| dotnet_sort_system_directives_first<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Inserire prima le direttive 'System' quando si esegue l'ordinamento tramite** |
-|**Aggiungi/rimuovi le parentesi graffe per le istruzioni di controllo a riga singola**|Se selezionata, aggiunge o rimuove le parentesi graffe da istruzioni di controllo a riga singola quando **Edit.FormatDocument** viene attivato.| csharp_prefer_braces<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile codice**  >  **Preferenze del blocco di codice**  >  **Preferire le parentesi graffe** |
+|**Rimuovere le using non necessarie**|Se selezionata, consente di rimuovere le direttive `using` inutili quando **Edit.FormatDocument** viene attivato.| N/A |
+|**Ordina using**|Se selezionata, consente di ordinare le direttive `using` quando **Edit.FormatDocument** viene attivato.| dotnet_sort_system_directives_first<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Inserire prima le direttive 'System' durante l'ordinamento delle direttive using** |
+|**Aggiungi/rimuovi le parentesi graffe per le istruzioni di controllo a riga singola**|Se selezionata, aggiunge o rimuove le parentesi graffe da istruzioni di controllo a riga singola quando **Edit.FormatDocument** viene attivato.| csharp_prefer_braces<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze del blocco di codice**  >  **Preferire le parentesi graffe** |
 |**Aggiungi i modificatori di accessibilità**|Se selezionata, aggiunge i modificatori di accessibilità mancanti quando **Edit.FormatDocument** viene attivato.| dotnet_style_require_accessibility_modifiers |
 |**Ordina i modificatori di accessibilità**|Se selezionata, ordina i modificatori di accessibilità quando **Edit.FormatDocument** viene attivato.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Applica le preferenze relative al corpo di espressioni/blocchi**|Se selezionata, converte i membri con corpo di espressione per bloccare i corpi, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per il membro con corpo di espressione](/dotnet/fundamentals/code-analysis/style-rules/language-rules#expression-bodied-members)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze delle espressioni**  >  **Usare il corpo dell'espressione per metodi, costruttori e così via.** |
-|**Applica le preferenze relative al tipo implicito/esplicito**|Se selezionata, consente di convertire `var` al tipo esplicito, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di base di EditorConfig per il tipo esplicito](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile codice**  >  **Preferenze di 'var'** |
-|**Applica le preferenze relative alle variabili 'out' inline**|Se selezionata, ordina inline le variabili `out` dove possibile quando **Edit.FormatDocument** viene attivato.| csharp_style_inlined_variable_declaration<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile codice**  >  **Preferenze delle variabili**  >  **Preferire la dichiarazione di variabile inline** |
-|**Applica le preferenze relative al tipo di linguaggio/framework**|Se selezionata, consente di convertire i tipi di linguaggio ai tipi framework, o viceversa, quando **Edit.FormatDocument** viene attivato.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile codice**  >  **preferenze di tipo predefinite** |
-|**Applica le preferenze di inizializzazione di oggetti/raccolte**|Se selezionata, usa inizializzatori di insieme e oggetto laddove possibile quando **Edit.FormatDocument** viene attivato.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze delle espressioni**  >  **Preferire l'inizializzatore di oggetto** **o preferire l'inizializzatore di raccolta** |
-|**Applica le preferenze relative alla qualificazione 'this.'**|Se selezionata, consente di applicare le preferenze `this.` quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per la qualificazione this.](/dotnet/fundamentals/code-analysis/style-rules/language-rules#this-and-me)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze di "this".** |
-|**Imposta i campi privati come di sola lettura quando possibile**|Se selezionata, rende privati i campi `readonly` dove possibile quando **Edit.FormatDocument** viene attivato.| dotnet_style_readonly_field<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile codice**  >  **Preferenze dei campi**  >  **Preferire readonly** |
+|**Applica le preferenze relative al corpo di espressioni/blocchi**|Se selezionata, converte i membri con corpo di espressione per bloccare i corpi, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per il membro con corpo di espressione](/dotnet/fundamentals/code-analysis/style-rules/language-rules#expression-bodied-members)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze per le espressioni**  >  **Usare il corpo dell'espressione per metodi, costruttori e così via.** |
+|**Applica le preferenze relative al tipo implicito/esplicito**|Se selezionata, consente di convertire `var` al tipo esplicito, o viceversa, quando **Edit.FormatDocument** viene attivato.| [Opzioni di base di EditorConfig per il tipo esplicito](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze 'var'** |
+|**Applica le preferenze relative alle variabili 'out' inline**|Se selezionata, ordina inline le variabili `out` dove possibile quando **Edit.FormatDocument** viene attivato.| csharp_style_inlined_variable_declaration<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze variabili**  >  **Preferisce la dichiarazione di variabile inline** |
+|**Applica le preferenze relative al tipo di linguaggio/framework**|Se selezionata, consente di convertire i tipi di linguaggio ai tipi framework, o viceversa, quando **Edit.FormatDocument** viene attivato.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **preferenze per i tipi predefiniti** |
+|**Applica le preferenze di inizializzazione di oggetti/raccolte**|Se selezionata, usa inizializzatori di insieme e oggetto laddove possibile quando **Edit.FormatDocument** viene attivato.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze per le espressioni**  >  **Preferire l'inizializzatore di oggetto** o **preferire l'inizializzatore di raccolta** |
+|**Applica le preferenze relative alla qualificazione 'this.'**|Se selezionata, consente di applicare le preferenze `this.` quando **Edit.FormatDocument** viene attivato.| [Opzioni di EditorConfig per la qualificazione this.](/dotnet/fundamentals/code-analysis/style-rules/language-rules#this-and-me)<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze "this."** |
+|**Imposta i campi privati come di sola lettura quando possibile**|Se selezionata, rende privati i campi `readonly` dove possibile quando **Edit.FormatDocument** viene attivato.| dotnet_style_readonly_field<br/><br/>**Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Stile del codice**  >  **Preferenze per i campi**  >  **Preferisci readonly** |
 |**Rimuovi cast non necessari**|Se selezionata, consente di rimuovere i cast inutili quando **Edit.FormatDocument** viene attivato.| N/A |
-|**Rimuovere le variabili non utilizzate**|Se selezionata, consente di rimuovere le variabili non usate quando **Edit.FormatDocument** viene attivato.| N/A |
+|**Rimuovere le variabili inutilizzate**|Se selezionata, consente di rimuovere le variabili non usate quando **Edit.FormatDocument** viene attivato.| N/A |
 
 ![Impostazioni di pulizia del codice per C# in Visual Studio](media/format-document-settings.png)
 
@@ -93,7 +93,7 @@ Le opzioni di rientro di questa pagina sono applicate quando il codice viene for
 ![Opzioni di rientro dell'editor di testo C# in Visual Studio](media/csharp-indentation-options.png)
 
 > [!TIP]
-> Sono disponibili anche opzioni di rientro nella pagina delle opzioni Tabulazioni C# **dell'editor**  >    >   di testo. Le opzioni determinano solo il punto in cui l'editor del codice posiziona il cursore quando si preme **INVIO** alla fine di una riga.
+> Sono disponibili anche opzioni di rientro nella pagina **delle opzioni Tabulazioni**  >  **C# dell'editor** di  >   testo. Le opzioni determinano solo il punto in cui l'editor del codice posiziona il cursore quando si preme **INVIO** alla fine di una riga.
 >
 > ![Opzioni di tabulazione dell'editor di testo C# in Visual Studio](media/csharp-tabs-options.png)
 

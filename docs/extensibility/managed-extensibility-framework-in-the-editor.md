@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 52492e48ed9b5e2150f31c18ac07f66e45486054
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102311"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709464"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework nell'editor
 L'editor viene compilato usando Managed Extensibility Framework (MEF). È possibile compilare componenti MEF personalizzati per estendere l'editor e il codice può utilizzare anche i componenti dell'editor.
@@ -26,9 +26,9 @@ L'editor viene compilato usando Managed Extensibility Framework (MEF). È possib
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Panoramica del Managed Extensibility Framework
  MEF è una libreria .NET che consente di aggiungere e modificare le funzionalità di un'applicazione o di un componente che segue il modello di programmazione MEF. L Visual Studio editor può fornire e utilizzare parti del componente MEF.
 
- Il file MEF è contenuto nell'.NET Framework versione 4 *System.ComponentModel.Composition.dll* assembly.
+ Il file MEF è contenuto nell'assembly .NET Framework versione 4 *System.ComponentModel.Composition.dll* assembly.
 
- Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF).](/dotnet/framework/mef/index)
+ Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="component-parts-and-composition-containers"></a>Parti componenti e contenitori di composizione
  Una parte del componente è una classe o un membro di una classe che può eseguire una o entrambe le operazioni seguenti:

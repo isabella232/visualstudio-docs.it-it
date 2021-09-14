@@ -1,6 +1,6 @@
 ---
 description: Questa interfaccia viene usata dal motore di debug (DE) per inviare eventi di debug alla gestione del debug di sessione (SDM).
-title: Interfaccia IDebugEventCallback2 | Microsoft Docs
+title: IDebugEventCallback2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e769f4c960d49cb66f92a72f4a402c81c8f54b7f25f041251680138c84f4f07b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a4d75583b2c936b82e167618356a9ae0547f337e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292637"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709723"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Questa interfaccia viene usata dal motore di debug (DE) per inviare eventi di debug alla gestione del debug di sessione (SDM).

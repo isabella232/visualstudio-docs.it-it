@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c9a4906b500d7c073f3f17d06e04b656f27be1fb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049792"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709531"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio legacy
 La struttura consente di comprimere un programma complesso in una panoramica o in una struttura. In C#, ad esempio, tutti i metodi possono essere compressi in una singola riga, visualizzando solo la firma del metodo. Inoltre, le strutture e le classi possono essere compresse per visualizzare solo i nomi delle strutture e delle classi. All'interno di un singolo metodo è possibile comprimere la logica complessa per visualizzare il flusso complessivo visualizzando solo la prima riga di istruzioni, ad esempio `foreach` `if` , e `while` .
@@ -44,7 +44,7 @@ La struttura consente di comprimere un programma complesso in una panoramica o i
 
  Il parser del servizio di linguaggio usa il metodo per aggiungere una nuova area nascosta con il comportamento predefinito per le aree nascoste, mentre il metodo consente di personalizzare l'aspetto e il <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> comportamento della struttura. Dopo aver assegnato aree nascoste alla sessione dell'area nascosta, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le aree nascoste per il servizio di linguaggio.
 
- Se è necessario determinare quando la sessione dell'area nascosta viene distrutta, un'area nascosta viene modificata o è necessario assicurarsi che una particolare area nascosta sia visibile. è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.Source> classe ed eseguire l'override dei metodi appropriati, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> rispettivamente , e <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> .
+ Se è necessario determinare quando la sessione dell'area nascosta viene distrutta, un'area nascosta viene modificata o è necessario assicurarsi che una determinata area nascosta sia visibile. è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.Source> classe ed eseguire l'override dei metodi appropriati, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A> <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> rispettivamente , e <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> .
 
 ### <a name="example"></a>Esempio
  Ecco un esempio semplificato di creazione di aree nascoste per tutte le coppie di parentesi graffe. Si presuppone che il linguaggio includa la corrispondenza delle parentesi graffe e che le parentesi graffe da trovare includano almeno le parentesi graffe ({ e }). Questo approccio è solo a scopo illustrativo. Un'implementazione completa avrebbe una gestione completa dei case in <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> . Questo esempio mostra anche come impostare temporaneamente <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> la `true` preferenza su . In alternativa, specificare il `AutoOutlining` parametro denominato `ProvideLanguageServiceAttribute` nell'attributo nel pacchetto del linguaggio.

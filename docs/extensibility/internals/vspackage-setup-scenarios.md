@@ -1,5 +1,5 @@
 ---
-title: Scenari di installazione di VSPackage | Microsoft Docs
+title: Scenari di installazione vspackage | Microsoft Docs
 description: Informazioni sulle procedure consigliate per il supporto di installazioni side-by-side di Visual Studio con installazioni condivise o side-by-side del pacchetto VSPackage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,11 +13,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: e75851e8a2775fda80a4bcb6ffefa93558c4f786
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709490"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenari di installazione di pacchetti VSPackage
 
@@ -31,7 +31,7 @@ Gli scenari illustrati in questo argomento non sono le uniche opzioni disponibil
 
 ### <a name="make-your-components-independent"></a>Rendere indipendenti i componenti
 
-Dopo aver identificato e popolato un componente, assegnato e distribuito il componente, non è possibile `GUID` modificarne la composizione. Se si modifica la composizione di un componente, il componente risultante deve essere un nuovo componente con un nuovo `GUID` . Alla base di questi fatti, la massima flessibilità di controllo delle versioni è assicurata rendendo ogni componente indipendente, unità autonoma. Per altre informazioni sulle regole che regolano i componenti, vedere [Modifica del](/windows/desktop/Msi/changing-the-component-code) codice del componente e Cosa accade se le regole dei componenti vengono [interrotte?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
+Dopo aver identificato e popolato un componente, assegnato a e distribuito il componente, non è possibile `GUID` modificarne la composizione. Se si modifica la composizione di un componente, il componente risultante deve essere un nuovo componente con un nuovo `GUID` . Alla base di questi fatti, la massima flessibilità di controllo delle versioni è assicurata rendendo ogni componente indipendente, unità autonoma. Per altre informazioni sulle regole che regolano i componenti, vedere [Modifica del](/windows/desktop/Msi/changing-the-component-code) codice del componente e Cosa accade se le regole dei componenti vengono [interrotte?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Non combinare risorse condivise e private in un componente
 
@@ -52,18 +52,18 @@ Come illustrato nella figura, i componenti condivisi fanno parte della funzional
 
 ## <a name="scenario-2-shared-vspackage-update"></a>Scenario 2: Aggiornamento VSPackage condiviso
 
-In questo scenario viene fornita una versione aggiornata del programma di installazione di VSPackage nello scenario 1. Per motivi di discussione, l'aggiornamento aggiunge il supporto per Visual Studio, ma potrebbe anche essere un Service Pack per la correzione di bug o una patch di sicurezza più semplice. Windows Le regole del programma di installazione per l'installazione di componenti più nuovi richiedono che i componenti invariati già presenti nel sistema non siano ricopiati. In questo caso, un sistema con la versione 1.0 già presente sovrascriverà il Comp_MyVSPackage.dll del componente aggiornato e consente agli utenti di scegliere di aggiungere la nuova funzionalità Feat_VS2005 con il Comp_VS2005_Reg.
+In questo scenario viene fornita una versione aggiornata del programma di installazione vspackage nello scenario 1. Per motivi di discussione, l'aggiornamento aggiunge il supporto per Visual Studio, ma potrebbe anche essere un Service Pack per la correzione di bug o una patch di sicurezza più semplice. Windows Le regole del programma di installazione per l'installazione di componenti più nuovi richiedono che i componenti invariati già presenti nel sistema non siano ricopiati. In questo caso, un sistema con la versione 1.0 già presente sovrascriverà il Comp_MyVSPackage.dll del componente aggiornato e consente agli utenti di scegliere di aggiungere la nuova funzionalità Feat_VS2005 con il Comp_VS2005_Reg.
 
 > [!CAUTION]
 > Ogni volta che un VSPackage viene condiviso tra più versioni di , è essenziale che le versioni successive del pacchetto VSPackage mantengano la compatibilità con le versioni precedenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Visual Studio. Se non è possibile mantenere la compatibilità con le versioni precedenti, è necessario usare VSPackage privati side-by-side. Per altre informazioni, vedere [Supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 ![Programma di installazione dell'aggiornamento del pacchetto VS Condiviso di Visual Studio](../../extensibility/internals/media/vs_sharedpackageupdate.gif "VS_SharedPackageUpdate")
 
-Questo scenario presenta un nuovo programma di installazione vspackage, sfruttando Windows del programma di installazione per gli aggiornamenti secondari. Gli utenti installano semplicemente la versione 1.1 e aggiornano la versione 1.0. Tuttavia, non è necessario avere la versione 1.0 nel sistema. Lo stesso programma di installazione installerà la versione 1.1 in un sistema senza la versione 1.0. Il vantaggio di fornire aggiornamenti secondari in questo modo è che non è necessario eseguire il lavoro di sviluppo di un programma di installazione dell'aggiornamento e di un programma di installazione completo del prodotto. Un programma di installazione esegue entrambi i processi. Una correzione di sicurezza o un Service Pack potrebbe invece sfruttare Windows del programma di installazione. Per altre informazioni, vedere [Applicazione di patch e aggiornamenti.](/windows/desktop/Msi/patching-and-upgrades)
+Questo scenario presenta un nuovo programma di installazione VSPackage, sfruttando Windows del programma di installazione per gli aggiornamenti secondari. Gli utenti installano semplicemente la versione 1.1 e aggiornano la versione 1.0. Tuttavia, non è necessario avere la versione 1.0 nel sistema. Lo stesso programma di installazione installerà la versione 1.1 in un sistema senza la versione 1.0. Il vantaggio di fornire aggiornamenti secondari in questo modo è che non è necessario eseguire il lavoro di sviluppo di un programma di installazione dell'aggiornamento e di un programma di installazione completo del prodotto. Un programma di installazione esegue entrambi i processi. Una correzione di sicurezza o un Service Pack potrebbe invece sfruttare Windows del programma di installazione. Per altre informazioni, vedere [Applicazione di patch e aggiornamenti.](/windows/desktop/Msi/patching-and-upgrades)
 
 ## <a name="scenario-3-side-by-side-vspackage"></a>Scenario 3: Side-by-Side VSPackage
 
-Questo scenario presenta due programmi di installazione VSPackage, uno per ogni versione Visual Studio .NET 2003 e Visual Studio. Ogni programma di installazione installa un pacchetto VSPackage side-by-side o privato( uno creato e installato in modo specifico per una particolare versione di Visual Studio). Ogni VSPackage si trova nel proprio componente. Di conseguenza, ognuno può essere utilizzato singolarmente con patch o versioni di manutenzione. Poiché la DLL VSPackage è ora specifica della versione, è possibile includere le informazioni di registrazione nello stesso componente della DLL.
+Questo scenario presenta due programmi di installazione VSPackage, uno per ogni versione di Visual Studio .NET 2003 e Visual Studio. Ogni programma di installazione installa un pacchetto VSPackage side-by-side o privato( uno creato e installato in modo specifico per una determinata versione di Visual Studio). Ogni VSPackage si trova nel proprio componente. Di conseguenza, ognuno può essere utilizzato singolarmente con patch o versioni di manutenzione. Poiché la DLL VSPackage è ora specifica della versione, è possibile includere le informazioni di registrazione nello stesso componente della DLL.
 
 ![Programma di installazione del pacchetto VS side-by-side](../../extensibility/internals/media/vs_sbys_package.gif "VS_SbyS_Package")
 
@@ -71,7 +71,7 @@ Ogni programma di installazione include anche il codice condiviso tra i due prog
 
 ## <a name="scenario-4-side-by-side-vspackage-update"></a>Scenario 4: Aggiornamento side-by-side del pacchetto VSPackage
 
-In questo scenario, il vspackage per Visual Studio ha subito una vulnerabilità di sicurezza ed è necessario eseguire un aggiornamento. Come nello scenario 2, è possibile creare un nuovo file .msi che aggiorna un'installazione esistente per includere la correzione di sicurezza, nonché distribuire nuove installazioni con la correzione di sicurezza già in atto.
+In questo scenario, il pacchetto VSPackage per Visual Studio ha subito una vulnerabilità di sicurezza ed è necessario eseguire un aggiornamento. Come nello scenario 2, è possibile creare un nuovo file .msi che aggiorna un'installazione esistente per includere la correzione di sicurezza, nonché distribuire nuove installazioni con la correzione di sicurezza già in atto.
 
 In questo caso, il pacchetto VSPackage è un VSPackage gestito installato nella Global Assembly Cache (GAC). Quando si ricompila per includere la correzione di sicurezza, è necessario modificare la parte relativa al numero di revisione del numero di versione dell'assembly. Le informazioni di registrazione per il nuovo numero di versione dell'assembly sovrascrivono la versione precedente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] causando il caricamento dell'assembly fisso.
 

@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6f943127371fc881b06390eb25b6833325b3a457
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709522"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>Registrazione di un servizio di linguaggio legacy 1
 Nel framework del pacchetto gestito (MPF), il servizio di linguaggio viene profferito da un vspackage (vedere [VSPackage )](../../extensibility/internals/vspackages.md)e viene registrato con aggiungendo chiavi e voci del Registro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di sistema. Questo processo di registrazione viene eseguito in parte durante l'installazione e in parte in fase di esecuzione.
@@ -163,7 +163,7 @@ namespace TestLanguagePackage
 ```
 
 ## <a name="proffer-the-language-service-at-run-time"></a>Proffer del servizio di linguaggio in fase di esecuzione
- Quando viene caricato il pacchetto di linguaggio, è necessario indicare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che il servizio di linguaggio è pronto. A tale scopo, proffering del servizio. Questa operazione viene eseguita nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo . Inoltre, è necessario avviare un timer che chiama il servizio di linguaggio durante i periodi di inattività per poter eseguire l'analisi in background. Questo timer di inattività viene usato anche per aggiornare le proprietà del documento se sono state implementate tramite la <xref:Microsoft.VisualStudio.Package.DocumentProperties> classe . Per supportare un timer, il pacchetto deve implementare l'interfaccia (solo il metodo deve essere completamente implementato; i metodi rimanenti <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> possono restituire valori predefiniti).
+ Quando viene caricato il pacchetto di linguaggio, è necessario indicare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che il servizio di linguaggio è pronto. A tale scopo, profferire il servizio. Questa operazione viene eseguita nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metodo . Inoltre, è necessario avviare un timer che chiama il servizio di linguaggio durante i periodi di inattività per poter eseguire l'analisi in background. Questo timer di inattività viene usato anche per aggiornare le proprietà del documento se sono state implementate tramite la <xref:Microsoft.VisualStudio.Package.DocumentProperties> classe . Per supportare un timer, il pacchetto deve implementare l'interfaccia (solo il metodo deve essere completamente implementato; i metodi rimanenti <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> possono restituire valori predefiniti).
 
 ### <a name="example"></a>Esempio
  Questo esempio illustra un approccio tipico alla distribuzione di un servizio e alla fornitura di un timer di inattività.

@@ -16,15 +16,15 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 9d63d7267002577f72a03980eceed0b857e13157
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051352"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709826"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Aggiungere Visual Studio comandi a una pagina iniziale
 
-Quando si crea una pagina iniziale personalizzata, è possibile aggiungervi Visual Studio comandi personalizzati. Questo documento illustra i diversi modi per associare Visual Studio comandi xaml agli oggetti XAML in una pagina iniziale.
+Quando si crea una pagina iniziale personalizzata, è possibile aggiungervi Visual Studio comandi personalizzati. Questo documento illustra i diversi modi per associare Visual Studio comandi a oggetti XAML in una pagina iniziale.
 
 Per altre informazioni sui comandi in XAML, vedere [Panoramica dei comandi](/dotnet/framework/wpf/advanced/commanding-overview)
 
@@ -43,7 +43,7 @@ Aggiungere un altro spazio dei nomi per Microsoft.VisualStudio.Shell dall'assemb
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
 ```
 
-È possibile usare l'alias per associare Visual Studio comandi ai controlli XAML nella pagina impostando la proprietà `vscom:` <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> del controllo su `vscom:VSCommands.ExecuteCommand` . È quindi possibile impostare <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> la proprietà sul nome del comando da eseguire, come illustrato nell'esempio seguente.
+È possibile usare l'alias per associare Visual Studio comandi ai controlli XAML nella pagina impostando `vscom:` la proprietà del controllo su <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> `vscom:VSCommands.ExecuteCommand` . È quindi possibile impostare <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> la proprietà sul nome del comando da eseguire, come illustrato nell'esempio seguente.
 
 ```xml
 <Button Name="btnNewProj" Content="New Project"
@@ -66,7 +66,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 ### <a name="call-extensions-from-the-command-well"></a>Chiamare le estensioni dall'well del comando
- È possibile chiamare comandi da VSPackage registrati usando la stessa sintassi usata per chiamare altri Visual Studio comandi. Ad esempio, se un VSPackage installato aggiunge un **comando Home Page** al menu **Visualizza,** è possibile chiamare tale comando impostando `CommandParameter` su `View.HomePage` .
+ È possibile chiamare comandi da VSPackage registrati usando la stessa sintassi usata per chiamare altri comandi Visual Studio registrazione. Ad esempio, se un VSPackage installato aggiunge un **comando Home Page** al menu **Visualizza,** è possibile chiamare tale comando impostando `CommandParameter` su `View.HomePage` .
 
 > [!NOTE]
 > Se si chiama un comando associato a un VSPackage, il pacchetto deve essere caricato quando viene richiamato il comando.
@@ -98,7 +98,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="add-commands-with-the-dte-object"></a>Aggiungere comandi con l'oggetto DTE
  È possibile accedere all'oggetto DTE da una pagina iniziale, sia nel markup che nel codice.
 
- Nel markup è possibile accedervi usando la sintassi [dell'estensione di markup](/dotnet/framework/wpf/advanced/binding-markup-extension) di associazione per chiamare l'oggetto <xref:EnvDTE.DTE> . È possibile usare questo approccio per eseguire l'associazione a proprietà semplici, ad esempio quelle che restituiscono raccolte, ma non a metodi o servizi. Nell'esempio seguente viene illustrato un controllo associato alla proprietà e un controllo che enumera le proprietà dell'insieme <xref:System.Windows.Controls.TextBlock> <xref:EnvDTE._DTE.Name%2A> <xref:System.Windows.Controls.ListBox> <xref:EnvDTE.Window.Caption%2A> restituito dalla <xref:EnvDTE._DTE.Windows%2A> proprietà .
+ Nel markup è possibile accedervi usando la sintassi dell'estensione [di markup](/dotnet/framework/wpf/advanced/binding-markup-extension) di associazione per chiamare l'oggetto <xref:EnvDTE.DTE> . È possibile usare questo approccio per eseguire l'associazione a proprietà semplici, ad esempio quelle che restituiscono raccolte, ma non a metodi o servizi. Nell'esempio seguente viene illustrato un controllo associato alla proprietà e un controllo che enumera le proprietà dell'insieme <xref:System.Windows.Controls.TextBlock> <xref:EnvDTE._DTE.Name%2A> <xref:System.Windows.Controls.ListBox> <xref:EnvDTE.Window.Caption%2A> restituito dalla <xref:EnvDTE._DTE.Windows%2A> proprietà .
 
 ```xml
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>

@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d41475bef1a4da3a0eff1583a81c8e4953a3832
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042036"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709482"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)
 Un frammento di codice è una parte di codice che può essere inserita nel buffer di origine con un comando di menu (che consente di scegliere tra un elenco di frammenti di codice installati) o selezionando un collegamento a un frammento di codice da un elenco di completamento IntelliSense.
@@ -134,7 +134,7 @@ class TestLanguageService : LanguageService
 
      Il metodo compila un elenco di dichiarazioni che verrà successivamente `AddDeclaration` visualizzato in un elenco di completamento.
 
-     La classe contiene tutte le informazioni che possono essere visualizzate in un elenco `TestDeclaration` di completamento, nonché il tipo di dichiarazione.
+     La `TestDeclaration` classe contiene tutte le informazioni che possono essere visualizzate in un elenco di completamento, nonché il tipo di dichiarazione.
 
     ```csharp
     class TestAuthoringScope : AuthoringScope

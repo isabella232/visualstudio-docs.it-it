@@ -1,6 +1,6 @@
 ---
 title: Gestire configurazioni della build applicando le impostazioni di Visual Basic Developer
-description: Informazioni sulle opzioni di configurazione della build avanzate nascoste quando vengono applicate Visual Basic impostazioni dello sviluppatore e come abilitare manualmente queste impostazioni di compilazione.
+description: Informazioni sulle opzioni di configurazione della build avanzate nascoste quando Visual Basic vengono applicate le impostazioni per sviluppatori e su come abilitare manualmente queste impostazioni di compilazione.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
@@ -18,11 +18,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 5912603331ff6681cd6cc98cbb1afd88246ea695
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709426"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
 

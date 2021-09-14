@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4760b69d7ea1b9b39bc6d1dfb0b3d4a8be77ded30382473383fb921d2357fd7a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c3241457fc23a0df369c1ebc78546a5045e89975
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448260"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626231"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Elemento Icon (Visual Studio personalizzati)
-Specifica il percorso e il nome del file di immagine che funge da icona,  visualizzato nella finestra di **dialogo Nuovo Project** o Aggiungi nuovo elemento per il modello.
+# <a name="icon-element-visual-studio-templates"></a>Elemento Icon (Visual Studio modelli)
+Specifica il percorso e il nome file del file di immagine che funge da icona, visualizzato nella finestra di dialogo Nuovo **Project** o Aggiungi nuovo elemento per il modello. 
 
  \<VSTemplate> \<TemplateData>
  \<Icon>
@@ -68,7 +68,7 @@ Specifica il percorso e il nome del file di immagine che funge da icona,  visual
  `Icon` è un elemento figlio obbligatorio di `TemplateData`.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -95,5 +95,5 @@ Specifica il percorso e il nome del file di immagine che funge da icona,  visual
 ```
 
 ## <a name="see-also"></a>Vedi anche
-- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

@@ -1,6 +1,6 @@
 ---
 title: Riga di comando del profiler - Ottenere ASP.NET di concorrenza
-description: Vedere le informazioni di riferimento sul metodo di concorrenza di Visual Studio Strumenti di profilatura, che consente di raccogliere i dati sui contenuti delle risorse.
+description: Vedere le informazioni di riferimento sul metodo di concorrenza di Visual Studio Strumenti di profilatura, che consente di raccogliere dati sui contenuti delle risorse.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: f11ff21ad7e33008f85262ed489ea7e82ea59100
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635843"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Raccogliere dati di concorrenza per un'applicazione Web ASP.NET tramite la riga di comando del profiler
 Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di raccogliere i dati relativi ai conflitti di risorse.

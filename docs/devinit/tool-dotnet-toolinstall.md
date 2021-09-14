@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 609add9096932296e657f7b065f4fae33d470bc9c67a2e3ab4394246c6d0e74d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4daa3722abd169c03656adec39aafc29d5e7e435
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343199"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709861"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -52,7 +52,7 @@ Il comportamento predefinito dello `dotnet-toolinstall` strumento è l'errore co
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito sono riportati esempi di come eseguire `dotnet-toolinstall` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.jsin verrà installato lo strumento dotnet-trace:
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.json che installerà lo strumento dotnet-trace:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -65,7 +65,7 @@ Di seguito sono riportati esempi di come eseguire `dotnet-toolinstall` usando `.
 }
 ```
 
-#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool-as-a-global-tool"></a>.devinit.jsin verrà installato lo strumento dotnet-trace come strumento globale:
+#### <a name="devinitjson-that-will-install-the-dotnet-trace-tool-as-a-global-tool"></a>.devinit.json che installerà lo strumento dotnet-trace come strumento globale:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

@@ -1,6 +1,6 @@
 ---
 title: vcpkg-install
-description: Devinit tool vcpkg-install.
+description: devinit tool vcpkg-install.
 ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 290b18af11dfdefc496777dbacfee962446a18b85a94d1013e489bdcdf2985c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8a4cbe6bd1da12985da87d2f872dc74f988ef213
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308567"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709840"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
@@ -50,7 +50,7 @@ Il comportamento predefinito dello `vcpkg-install` strumento è l'errore come `i
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito sono riportati esempi di come eseguire `vcpkg-install` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.jssu che installerà la porta sdl2:
+#### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.json che installerà la porta sdl2:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -63,7 +63,7 @@ Di seguito sono riportati esempi di come eseguire `vcpkg-install` usando `.devin
 }
 ```
 
-#### <a name="devinitjson-that-will-install-multiple-ports"></a>.devinit.jssu che installerà più porte:
+#### <a name="devinitjson-that-will-install-multiple-ports"></a>.devinit.json che installerà più porte:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

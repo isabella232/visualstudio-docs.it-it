@@ -18,18 +18,18 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c5f17eace2b46458f11b2277d44a2db3da8539bb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709498"
 ---
 # <a name="solution-user-options-suo-file"></a>File delle opzioni utente della soluzione (con estensione suo)
 Il file delle opzioni utente della soluzione (con estensione suo) contiene le opzioni della soluzione per utente. Questo file non deve essere archiviato nel controllo del codice sorgente.
 
  Il file delle opzioni utente della soluzione (con estensione suo) è un file di archiviazione strutturata, o composto, archiviato in formato binario. Le informazioni utente vengono salvate in flussi con il nome del flusso che corrisponde alla chiave che verrà usata per identificare le informazioni nel file con estensione suo. Il file delle opzioni utente della soluzione viene usato per archiviare le impostazioni delle preferenze utente e viene creato automaticamente Visual Studio salva una soluzione.
 
- Quando l'ambiente apre un file con estensione suo, enumera tutti i pacchetti VSPackage attualmente caricati. Se un VSPackage implementa l'interfaccia , l'ambiente chiama il metodo sul pacchetto VSPackage per chiedere di caricare tutti i dati <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> dal file con estensione <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> suo.
+ Quando l'ambiente apre un file con estensione suo, enumera tutti i pacchetti VSPackage attualmente caricati. Se un pacchetto VSPackage implementa l'interfaccia , l'ambiente chiama il metodo sul pacchetto VSPackage per chiedere di caricare tutti i dati dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> file con estensione suo.
 
  È responsabilità del VSPackage conoscere i flussi che potrebbe aver scritto nel file con estensione suo. Per ogni flusso scritto, il pacchetto VSPackage richiama l'ambiente tramite per caricare un flusso specifico identificato dalla chiave, ovvero il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> nome del flusso. L'ambiente chiama quindi il vspackage per leggere il flusso specifico passando il nome del flusso e un `IStream` puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> metodo .
 

@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 22e4d986204645e136709efad87e27b5b97289ec0d6042d8bc03cbfbcd9fb9ee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd8d7e6bd81e32858f990c70bbcdf0bf00049867
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709389"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opzioni, Editor di testo, HTML (Web Form), Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti , quindi espandere Html editor di testo  >     >  **(Web Forms)**  >  **Formattazione**.
+Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere Opzioni strumenti e quindi espandere Formattazione  >  HTML **dell'editor** di  >  **testo (Web Forms).**  >  
 
 ## <a name="capitalization"></a>Uso delle maiuscole
 
@@ -64,7 +64,7 @@ Tramite queste opzioni viene determinata l'aggiunta o la rimozione delle interru
 
 - **Inserisci virgolette per valori attributi durante la digitazione**
 
-   Quando questa opzione è selezionata, l'editor inserisce automaticamente le virgolette intorno agli attributi durante la digitazione(ad esempio: ID="Select1"). Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
+   Quando questa opzione è selezionata, l'editor inserisce automaticamente le virgolette intorno agli attributi durante la digitazione (ad esempio: ID="Select1"). Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute: le virgolette non vengono mai rimosse.
@@ -78,7 +78,7 @@ Tramite queste opzioni viene determinata l'aggiunta o la rimozione delle interru
 
 - **Inserisci automaticamente tag di chiusura**
 
-   Quando questa opzione è selezionata, l'editor crea automaticamente un tag di chiusura ,ad esempio , quando **\</b>** si chiude il tag di apertura.
+   Quando questa opzione è selezionata, l'editor crea automaticamente un tag di chiusura ,ad esempio **\</b>** , quando si chiude il tag di apertura.
 
 ## <a name="tag-wrapping"></a>Ritorno a capo dei tag
 

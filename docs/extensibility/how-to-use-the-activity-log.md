@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7687d9174b9275cce791f39c05d41450e1687df7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050260"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626243"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedura: Usare il log attività
 I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzionalità è particolarmente utile per il debug di VSPackage negli ambienti di vendita al dettaglio.
@@ -47,7 +47,7 @@ I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzio
 
 ## <a name="to-examine-the-activity-log"></a>Per esaminare il log attività
 
-1. Eseguire Visual Studio con l'opzione della riga [di comando /Log](../ide/reference/log-devenv-exe.md) per ActivityLog.xml su disco durante la sessione.
+1. Eseguire Visual Studio con l'opzione della riga di comando [/Log](../ide/reference/log-devenv-exe.md) per ActivityLog.xml su disco durante la sessione.
 
 2. Dopo aver Visual Studio, trovare il log attività nella sottocartella per Visual Studio dati:
 

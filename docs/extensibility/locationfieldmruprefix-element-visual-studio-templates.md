@@ -17,16 +17,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2625781da6fb344cf9d3938920a1774391e502094297665515ec033d9eea4d6b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 189c7d0979d125b18db0ee8c467fd9538493a266
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709467"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (Visual Studio modelli)
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelli Visual Studio)
 
-Specifica i percorsi usati più di recente nella finestra di dialogo Nuovo **Project** **e** Aggiungi nuovo elemento.
+Specifica i percorsi usati più di recente nella finestra di **dialogo** Project **e** Aggiungi nuovo elemento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,5 +58,5 @@ Specifica i percorsi usati più di recente nella finestra di dialogo Nuovo **Pro
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)
+- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)

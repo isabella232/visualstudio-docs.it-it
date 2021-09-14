@@ -15,18 +15,18 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 58eed8c14faebfa60f2c87846ceefb7d93ac3a79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626339"
 ---
 # <a name="threads"></a>Thread
 Nell'architettura del debugger, *un thread*:
 
-- Unità di calcolo fondamentale. Un thread esegue in sequenza le istruzioni all'interno del contesto di un singolo stack di chiamate, passando da un contesto di codice a quello successivo.
+- Unità fondamentale di calcolo. Un thread esegue in sequenza le istruzioni all'interno del contesto di un singolo stack di chiamate, passando da un contesto di codice a quello successivo.
 
-- Può identificare se stesso e il programma in cui è in esecuzione. I thread possono essere denominati, sospesi e ripresi. Un thread può anche enumerare gli stack frame associati e, in alcune condizioni, può essere spostato in un altro stack frame. Dato il contesto di un stack frame, un thread può restituire il thread logico associato, se presente. Un thread ha proprietà, ad esempio un conteggio di sospensione, che possono essere visualizzate nella **finestra Thread** dell'IDE.
+- È in grado di identificare se stesso e il programma in cui è in esecuzione. I thread possono essere denominati, sospesi e ripresi. Un thread può anche enumerare gli stack frame associati e, in alcune condizioni, può essere spostato in un altro stack frame. Dato il contesto di un stack frame, un thread può restituire il thread logico associato, se presente. Un thread ha proprietà, ad esempio un conteggio di sospensione, che possono essere visualizzate nella **finestra Thread** dell'IDE.
 
 - È rappresentato da [un'interfaccia IDebugThread2,](../../extensibility/debugger/reference/idebugthread2.md) in genere creata da un motore di debug (DE) o da una macchina virtuale come conseguenza dell'esecuzione di un programma.
 

@@ -1,6 +1,6 @@
 ---
 title: Elemento AppliesTo (modelli Visual Studio) | Microsoft Docs
-description: Informazioni sull'elemento AppliesTo e su come specifica un'espressione facoltativa che corrisponde a una o più funzionalità.
+description: Informazioni sull'elemento AppliesTo e su come specifica un'espressione facoltativa in modo che corrisponda a una o più funzionalità.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 575a1a428c4d3e2816fcb275f6b1609ebf97bab7d4c56e51be3ad24e7f44d27a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 340ac4db04b62abade9c6572335e28c9fb27b495
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709823"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (Visual Studio personalizzati)
+# <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (Visual Studio modelli)
 
 Specifica un'espressione facoltativa che corrisponde a una o più funzionalità (vedere <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher> ). Le funzionalità vengono esposte dai tipi di progetto tramite la gerarchia come proprietà [__VSHPROPID5. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). In questo modo, il modello può essere condiviso da molteplici tipi di progetto che dispongono di funzionalità applicabili comuni.
 
 Questo elemento è facoltativo. Può essere presente massimo una istanza in un file modello. Questo elemento consente di includere come applicabile solo un modello di elemento, in base alle funzionalità del progetto attivo correntemente selezionato. Non può essere usato per rendere un modello di elemento non applicabile. Se `AppliesTo` è assente o l'espressione non è inclusa correttamente, viene usato `TemplateID` o `TemplateGroupID` per rendere il modello applicabile, come con le versioni precedenti del prodotto.
 
-Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione corretta, vedere [Referencing assemblies delivered in the Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120))( Riferimento agli assembly recapitati in Visual Studio 2013 SDK Update 2).
+Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione corretta, vedere [Referencing assemblies delivered in the Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120)).
 
 ```xml
 <VSTemplate>
@@ -74,11 +74,11 @@ La sintassi valida dell'espressione è definita come segue:
 
 - Un valore null o un'espressione vuota viene valutata come una corrispondenza.
 
-- Project funzionalità possono essere qualsiasi carattere ad eccezione di questi caratteri riservati: "'':;,+-*/ \\ !~&#124;&%$@^()= {} []<>? \t\b\n\r
+- Project le funzionalità possono essere qualsiasi carattere ad eccezione di questi caratteri riservati: "':;,+-*/ \\ !~&#124;&%$@^()= {} []<>? \t\b\n\r
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1` si applica a tutti i tipi di progetto C# o a qualsiasi altro tipo di progetto che supporta la `WindowsAppContainer` funzionalità. `Template2` si applica a tutti i progetti C# di qualsiasi tipo. `Template3` si applica a tutti i progetti C# che non sono progetti `WindowsAppContainer`.
+Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1` si applica a tutti i tipi di progetto C# o a qualsiasi altro tipo di progetto che supporta la `WindowsAppContainer` funzionalità . `Template2` si applica a tutti i progetti C# di qualsiasi tipo. `Template3` si applica a tutti i progetti C# che non sono progetti `WindowsAppContainer`.
 
 ```xml
 <!--  Template 1 -->
@@ -108,5 +108,5 @@ Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1` si appli
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Visual Studio sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

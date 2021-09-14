@@ -20,15 +20,15 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9dbb48c2d629ec4afef7a56218bf6af785540d73
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709406"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opzioni, Editor di testo, C#, IntelliSense
 
-Usare la pagina delle opzioni **IntelliSense** per modificare le impostazioni che hanno effetto sul comportamento di IntelliSense per C#. Per accedere a questa pagina delle opzioni, **scegliere** Opzioni strumenti e quindi Editor di testo  >     >  **C#**  >  **IntelliSense**.
+Usare la pagina delle opzioni **IntelliSense** per modificare le impostazioni che hanno effetto sul comportamento di IntelliSense per C#. Per accedere a questa pagina di opzioni, **scegliere**  >  **Opzioni strumenti** e quindi scegliere **Editor di** testo  >  **C#**  >  **IntelliSense.**
 
 La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
@@ -56,7 +56,7 @@ La pagina delle opzioni **IntelliSense** include le opzioni seguenti:
 
 - Includi i frammenti quando si digita ?+TAB dopo un identificatore
 
-   Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice C# all'elenco di completamento quando **?** + **La tabulazione** viene premuta dopo un identificatore
+   Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice C# all'elenco di completamento quando **?** + **Tab** viene premuto dopo un identificatore
 
 ## <a name="enter-key-behavior"></a>Comportamento del tasto INVIO
 

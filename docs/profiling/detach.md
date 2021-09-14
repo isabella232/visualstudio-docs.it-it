@@ -1,6 +1,6 @@
 ---
 title: Detach | Microsoft Docs
-description: Usare l'opzione Scollega VSPerfCmd.exe per disconnettere il profiler dal processo specificato o da tutti i processi se non ne viene specificato nessuno.
+description: Usare l'opzione Detach VSPerfCmd.exe per disconnettere il profiler dal processo specificato o da tutti i processi se non ne viene specificato nessuno.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fc615b144bf11287055060368743782d47d88c4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142078"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635732"
 ---
 # <a name="detach"></a>Detach
 L'opzione **Detach** di VSPerfCmd.exe disconnette il profiler dai processi specificati o da tutti i processi se non ne vengono specificati. La profilatura deve essere inizializzata usando il metodo di campionamento.
@@ -36,7 +36,7 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 ```
 
 #### <a name="parameters"></a>Parametri
- `PIDs|ProcessNames``PID`: identificatore di sistema numerico di uno o più processi.
+ `PIDs|ProcessNames``PID`: identificatore numerico del sistema di uno o più processi.
 
  `ProcessNames` - Nome del processo. Se si eseguono più istanze del processo denominato, i risultati sono imprevedibili.
 

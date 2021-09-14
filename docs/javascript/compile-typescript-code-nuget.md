@@ -12,15 +12,15 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 1bf1deb271d7a20527f53260813e35e0de9daa19
-ms.sourcegitcommit: 409a750a944a72c5931f6094deb4dc9a2635a984
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "123262075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625794"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compilare codice TypeScript (ASP.NET Core)
 
-È possibile aggiungere il supporto TypeScript ai progetti usando il TypeScript SDK, disponibile per impostazione predefinita nel programma di installazione di Visual Studio o usando il pacchetto NuGet. Per i progetti sviluppati Visual Studio 2019, si consiglia di usare typeScript NuGet per una maggiore portabilità tra piattaforme e ambienti diversi.
+È possibile aggiungere il supporto TypeScript ai progetti usando il TypeScript SDK, disponibile per impostazione predefinita nel programma di installazione di Visual Studio o usando il NuGet. Per i progetti sviluppati Visual Studio 2019, si consiglia di usare l'NuGet TypeScript per una maggiore portabilità tra piattaforme e ambienti diversi.
 
 Per ASP.NET Core, un utilizzo comune per il pacchetto NuGet è la compilazione di TypeScript usando il interfaccia della riga di comando di .NET Core. A meno che il file di progetto non venga modificato manualmente per importare destinazioni di compilazione da un'installazione di TypeScript SDK, il pacchetto NuGet è l'unico modo per abilitare la compilazione TypeScript usando comandi interfaccia della riga di comando di .NET Core come `dotnet build` e `dotnet publish` . Inoltre, per [MSBuild'integrazione](https://www.staging-typescript.org/docs/handbook/compiler-options-in-msbuild.html) con ASP.NET Core e TypeScript, scegliere il pacchetto NuGet pacchetto rispetto al pacchetto npm.
 
@@ -28,7 +28,7 @@ Per ASP.NET Core, un utilizzo comune per il pacchetto NuGet è la compilazione d
 
 [Il pacchetto di NuGet TypeScript aggiunge](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild) il supporto TypeScript. Quando si installa il pacchetto NuGet per TypeScript 3.2 o versione successiva nel progetto, la versione corrispondente del servizio di linguaggio TypeScript viene caricata nell'editor.
 
-Se Visual Studio installato, il node.exe in bundle verrà prelevato automaticamente dal Visual Studio. Se non è installato un Node.js, è consigliabile installare la versione LTS dal sito [WebNode.js.](https://nodejs.org/en/download/)
+Se Visual Studio installato, il node.exe in bundle verrà automaticamente prelevato dal Visual Studio. Se non è installata una Node.js, è consigliabile installare la versione LTS dal sito [WebNode.js.](https://nodejs.org/en/download/)
 
 1. Aprire il progetto ASP.NET Core in Visual Studio.
 
@@ -47,11 +47,11 @@ Se Visual Studio installato, il node.exe in bundle verrà prelevato automaticame
 
 1. Fare clic con il pulsante destro del mouse sul nodo **del progetto e scegliere > Nuovo elemento**. Scegliere il **file di configurazione JSON TypeScript** e quindi fare clic su **Aggiungi.**
 
-   Visual Studio aggiunge il *tsconfig.jsnel* file alla radice del progetto. È possibile usare questo file per [configurare le opzioni per](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) il compilatore TypeScript.
+   Visual Studio aggiunge il file *tsconfig.json* alla radice del progetto. È possibile usare questo file per [configurare le opzioni per](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) il compilatore TypeScript.
 
-1. Aprire *tsconfig.jse* aggiornare per impostare le opzioni del compilatore desiderate.
+1. Aprire *tsconfig.json e* aggiornare per impostare le opzioni del compilatore desiderate.
 
-   Di seguito è riportato un esempio di una semplice *tsconfig.jssu* file.
+   Di seguito è riportato un esempio di un semplice file *tsconfig.json.*
 
    ```json
    {
@@ -74,7 +74,7 @@ Se Visual Studio installato, il node.exe in bundle verrà prelevato automaticame
    - *L'opzione outDir* specifica la cartella di output per i file JavaScript semplici che vengono transpiled dal compilatore TypeScript.
    - *L'opzione sourceMap* indica se il compilatore genera *file sourceMap.*
 
-   La configurazione precedente fornisce solo un'introduzione di base alla configurazione di TypeScript. Per informazioni su altre opzioni, vedere [tsconfig.jssu](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+   La configurazione precedente fornisce solo un'introduzione di base alla configurazione di TypeScript. Per informazioni su altre opzioni, vedere [tsconfig.json.](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 
 ### <a name="build-the-application"></a>Compilare l'applicazione
 
@@ -105,9 +105,9 @@ Se Visual Studio installato, il node.exe in bundle verrà prelevato automaticame
    }
    ```
 
-Per un esempio dell'uso di gulp con Task Runner per compilare l'app, [ASP.NET Core e TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+Per un esempio dell'uso di gulp con Task Runner per compilare l'app, vedere ASP.NET Core [e TypeScript.](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
 
-Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso da quello previsto, potrebbe essere necessario impostare il percorso per Visual Studio da usare. Scegliere **Strumenti**  >  **Opzioni**. In **Progetti e soluzioni** scegliere Web **Gestione pacchetti** Strumenti  >  **Web esterni.**
+Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso da quello previsto, potrebbe essere necessario impostare il percorso per l'uso di Visual Studio. Scegliere **Strumenti**  >  **Opzioni**. In **Progetti e soluzioni** scegliere Web **Gestione pacchetti** Strumenti  >  **Web esterni.**
 
 ### <a name="run-the-application"></a>Eseguire l'applicazione
 
@@ -145,22 +145,22 @@ Per istruzioni su come eseguire l'app dopo la compilazione, vedere [Creare la pr
 
     2. *netstandard1.3*
 
-        Questa cartella contiene un'altra versione di , che viene usata durante la compilazione di progetti in `TypeScript.Tasks.dll` un computer non Windows distribuzione.
+        Questa cartella contiene un'altra versione di , che viene usata durante la compilazione di progetti in un `TypeScript.Tasks.dll` computer non Windows distribuzione.
 
     3. *Tsc*
 
         Questa cartella contiene `tsc.js` e tutti i file di dipendenza necessari per `tsserver.js` eseguirli come script del nodo.
 
         > [!NOTE]
-        > Se Visual Studio installato, ilnode.exe *in* bundle verrà prelevato automaticamente. In Node.js necessario installare nel computer.
+        > Se Visual Studio installato, ilnode.exe *in* bundle verrà prelevato automaticamente. In Node.js deve essere installato nel computer.
 
         Le versioni precedenti alla 3.1 contenevano un `tsc.exe` eseguibile per eseguire la compilazione. Nella versione 3.1 questa funzionalità è stata rimossa a favore dell'uso di `node.exe` .
 
 ### <a name="remove-default-imports"></a>Rimuovere le importazioni predefinite
 
-Nei progetti ASP.NET Core che usano [il](/nuget/resources/check-project-format)formato non di tipo SDK , potrebbe essere necessario rimuovere alcuni elementi del file di progetto.
+Nei progetti ASP.NET Core che usano [il formato non di tipo SDK](/nuget/resources/check-project-format), potrebbe essere necessario rimuovere alcuni elementi del file di progetto.
 
-Se si usa il pacchetto NuGet per MSBuild per un progetto, il file di progetto non deve importare `Microsoft.TypeScript.Default.props` o `Microsoft.TypeScript.targets` . I file vengono importati dal pacchetto NuGet, quindi includerli separatamente può causare un comportamento imprevisto.
+Se si usa il pacchetto NuGet per MSBuild per un progetto, il file di progetto non deve `Microsoft.TypeScript.Default.props` importare o `Microsoft.TypeScript.targets` . I file vengono importati dal pacchetto NuGet, quindi includerli separatamente può causare un comportamento imprevisto.
 
 1. Fare clic con il pulsante destro del mouse sul progetto **e scegliere Scarica Project**.
 

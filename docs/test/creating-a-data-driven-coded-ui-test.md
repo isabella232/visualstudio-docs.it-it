@@ -13,11 +13,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 38c1a5dc40dde5805ec9d233287b95233585f480
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140102"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635524"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -41,7 +41,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
     ![Creare un progetto di test codificato dell'interfaccia utente](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Se il modello test  codificato dell'interfaccia utente non Project, è necessario installare il componente di test codificato dell'interfaccia [utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se il modello test codificato dell'interfaccia utente **non Project,** è necessario installare il componente di test codificato dell'interfaccia [utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Scegliere di **registrare le azioni**.
 
@@ -67,7 +67,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL** + **R**,**T**).
+5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Scelta rapida da tastiera: **CTRL** + **R**,**T**).
 
     Nella finestra **Esplora test** viene visualizzato il risultato del test che mostra se il test è stato superato o meno. Per aprire la finestra Esplora test, scegliere **Finestre** dal menu **Test** e quindi **Esplora test**.
 
@@ -95,7 +95,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL** + **R**,**T**).
+9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Scelta rapida da tastiera: **CTRL** + **R**,**T**).
 
      A questo punto, tutti i valori dei parametri sono definiti nei relativi metodi come costanti. Ora verrà creato un set di dati in modo che il test sia basato sui dati.
 
@@ -206,7 +206,7 @@ Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usan
 
 ### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Quali sono gli attributi di origine dati per altri tipi di origine dati, ad esempio SQL Express o XML?
 
-**A:** È possibile usare le stringhe di origine dati di esempio nella tabella seguente copiandole nel codice ed effettuando le personalizzazioni necessarie.
+**A:** È possibile usare le stringhe dell'origine dati di esempio nella tabella seguente copiandole nel codice ed effettuando le personalizzazioni necessarie.
 
 **Tipi di origini dati e attributi**
 

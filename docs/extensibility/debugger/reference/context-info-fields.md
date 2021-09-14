@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 36adf58598248bb6e59045e80b185dd2684b64b7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709801"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 Specifica le informazioni da recuperare su un contesto di memoria.
@@ -74,11 +74,11 @@ Inizializzare/usare `bstrAddressOffset` il campo della struttura `CONTEXT_INFO` 
 Inizializzare/usare tutti i campi della `CONTEXT_INFO` struttura .
 
 ## <a name="remarks"></a>Commenti
-A questi valori viene passato un parametro al [metodo GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) per indicare quali campi della [struttura](../../../extensibility/debugger/reference/context-info.md) CONTEXT_INFO devono essere inizializzati.
+A questi valori viene passato un parametro al metodo [](../../../extensibility/debugger/reference/context-info.md) [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) per indicare quali campi della struttura CONTEXT_INFO devono essere inizializzati.
 
-Questi flag vengono usati anche per indicare quali campi della struttura vengono usati e `CONTEXT_INFO` validi quando viene restituita la struttura.
+Questi flag vengono usati anche per indicare quali campi della struttura vengono usati e `CONTEXT_INFO` validi quando viene restituita la struttura .
 
-Questi valori possono essere combinati con un OR bit per bit.
+Questi valori possono essere combinati con un'operazione OR bit per bit.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: msdbg.h

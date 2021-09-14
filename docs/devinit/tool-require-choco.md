@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: fdd0df32661b573cc07d6fc76d488e769cc22bfda158f5b22ee86e6d949c7593
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ffd726133128e551ba9bec8c9288d43b7c9a5b6
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390549"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709845"
 ---
 # <a name="require-choco"></a>require-choco
 
@@ -50,7 +50,7 @@ Il comportamento predefinito dello `require-choco` strumento è installare choco
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito è riportato un esempio di come eseguire `require-choco` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-chocolatey"></a>.devinit.jsin verrà installato chocolatey:
+#### <a name="devinitjson-that-will-install-chocolatey"></a>.devinit.json che installerà chocolatey:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

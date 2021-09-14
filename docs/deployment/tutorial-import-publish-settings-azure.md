@@ -12,11 +12,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d2807480741ff40df82156eea563843bec07712
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709882"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
@@ -58,9 +58,9 @@ Un file di impostazioni di pubblicazione (*\* .publishsettings*) è diverso da u
 
 1. Creare un nuovo progetto nel computer che esegue Visual Studio.
 
-    Scegliere il modello corretto. In questo esempio scegliere ASP.NET **Web Application (.NET Framework) o (solo** per C#) **ASP.NET Core Web Application** e quindi selezionare **OK.**
+    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET'applicazione Web (.NET Framework)** o (solo per C#) ASP.NET Core **Web Application (Applicazione Web)** e quindi **selezionare OK.**
 
-    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di **dialogo Project** nuovo progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **ASP.NET e sviluppo** Web.
+    Se i modelli di progetto specificati non vengono visualizzati, passare al collegamento **Apri** Programma di installazione di Visual Studio nel riquadro sinistro della finestra di **dialogo Project** nuovo progetto. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **ASP.NET e sviluppo** Web.
 
     Il modello di progetto selezionato (ASP.NET o ASP.NET Core) deve corrispondere alla versione di ASP.NET installata nel server Web.
 

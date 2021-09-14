@@ -1,5 +1,5 @@
 ---
-description: Descrive il risultato dell'associazione di un punto di interruzione dei dati.
+description: Descrive il risultato dell'associazione di un punto di interruzione dati.
 title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e82ede309d0483dfc406dc54444975ae4cc8afa9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635235"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
-Descrive il risultato dell'associazione di un punto di interruzione dei dati.
+Descrive il risultato dell'associazione di un punto di interruzione dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,13 +52,13 @@ public struct BP_RESOLUTION_DATA {
 Espressione di dati associata.
 
 `bstrFunc`\
-Nome della funzione a cui è associato il punto di interruzione dei dati (se presente).
+Nome della funzione a cui è associato il punto di interruzione dati (se presente).
 
 `bstrImage`\
-Nome del modulo (ad esempio MyModule.dll) a cui è associato il punto di interruzione dei dati.
+Nome del modulo (ad esempio MyModule.dll) a cui è associato il punto di interruzione dati.
 
 `dwFlags`\
-Valore dell'enumerazione [BP_RES_DATA_FLAGS,](../../../extensibility/debugger/reference/bp-res-data-flags.md) che descrive la modalità di implementazione del punto di interruzione dei dati.
+Valore dell'enumerazione [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) che descrive come viene implementato il punto di interruzione dei dati.
 
 ## <a name="remarks"></a>Commenti
 Questa struttura è un membro della [struttura BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) che a sua volta è un membro della struttura BP_RESOLUTION_INFO [restituita](../../../extensibility/debugger/reference/bp-resolution-info.md) dal [metodo GetResolutionInfo.](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

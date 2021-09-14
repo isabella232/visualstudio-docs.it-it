@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1a6f915bf6047e6517768ec498eeb15044abe945
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127402"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709747"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Questa interfaccia rappresenta un simbolo o un tipo che è un contenitore per altri simboli o tipi.
@@ -31,10 +31,10 @@ IDebugContainerField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa [l'interfaccia IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Questa interfaccia è anche la classe di base per tutte le interfacce che rappresentano i contenitori.
+ Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa [l'interfaccia IDebugField.](../../../extensibility/debugger/reference/idebugfield.md) Questa interfaccia è anche la classe di base per tutte le interfacce che rappresentano contenitori.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Molti metodi in molte interfacce restituiscono questa interfaccia. Poiché si tratta di una classe di base per tutti i contenitori, è possibile ottenere interfacce più specializzate da questa interfaccia usando [QueryInterface.](/cpp/atl/queryinterface) Tali interfacce includono [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)e [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
+ Molti metodi su molte interfacce restituiscono questa interfaccia. Poiché si tratta di una classe di base per tutti i contenitori, è possibile ottenere interfacce più specializzate da questa interfaccia usando [QueryInterface](/cpp/atl/queryinterface). Tali interfacce includono [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)e [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Oltre ai metodi [nell'interfaccia IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) questa interfaccia implementa il metodo seguente:

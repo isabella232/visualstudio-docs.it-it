@@ -13,11 +13,11 @@ manager: jmartens
 ms.technology: vs-ide-general
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 52c06a218c14fa09a6c879fa90805ddc48b22d8d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625925"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluzioni filtrate in Visual Studio
 
@@ -62,7 +62,7 @@ Per aprire una soluzione senza caricare uno dei relativi progetti dalla finestra
 
 (Novità di Visual Studio 2019 versione 16.1)
 
-Per aprire una soluzione senza caricare i progetti dalla riga di comando, usare [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) l'opzione come illustrato nell'esempio seguente:
+Per aprire una soluzione senza caricare alcun progetto dalla riga di comando, usare [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) l'opzione come illustrato nell'esempio seguente:
 
 ```cmd
 devenv /donotloadprojects MySln.sln

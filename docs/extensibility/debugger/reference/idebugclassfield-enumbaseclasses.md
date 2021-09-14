@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7bd7f742e057107e02d05934d62bab4747417588
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709788"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Crea un enumeratore per le classi di base di questa classe.
@@ -44,10 +44,10 @@ int EnumBaseClasses(
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
 
-[out] Restituisce un [oggetto IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco di classi di base. Restituisce un valore Null se non sono presenti classi di base.
+[out] Restituisce un [oggetto IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco delle classi di base. Restituisce un valore Null se non sono presenti classi di base.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK, restituisce S_SH_NO_BASE_CLASSES se non sono presenti classi di base (e il parametro è impostato su un valore Null); in caso contrario, restituisce un codice `ppEnum` di errore.
+ Se ha esito positivo, restituisce S_OK, restituisce S_SH_NO_BASE_CLASSES se non sono presenti classi di base (e il parametro è impostato su un valore Null); in caso contrario, restituisce un `ppEnum` codice di errore.
 
 ## <a name="remarks"></a>Commenti
  Le classi di base nell'oggetto enumeratore vengono specificate nell'ordine della classe di base più immediata (o più derivata) alla classe di base più remota. Ad esempio, date le classi C++:

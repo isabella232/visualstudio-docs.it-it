@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9aecdbfc113f21c719a210b86e6df64f7da725c274f7741414561a6ebbdb530f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 75690f85fb627140226242b476d70bfc4dac6ed2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343210"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709842"
 ---
 # <a name="require-nodejs"></a>require-nodejs
 
 > [!IMPORTANT]
 > A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Lo strumento viene usato per installare ilNode.jstramite un'applicazione del servizio msi `require-nodejs` distribuita dall'organizzazione [](https://nodejs.org/) Node.js servizio.
+Lo strumento viene usato per installare ilNode.jstramite un'istanza `require-nodejs` di MSI distribuita dall'organizzazione Node.js [](https://nodejs.org/) servizio.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -50,7 +50,7 @@ Il comportamento predefinito dello strumento è l'installazione della versione L
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito sono riportati esempi di come eseguire `require-nodejs` usando `.devinit.json` un oggetto . 
 
-#### <a name="devinitjson-that-will-install-the-lts-of-nodejs"></a>.devinit.jsin verrà installato l'LTS di Node.js:
+#### <a name="devinitjson-that-will-install-the-lts-of-nodejs"></a>.devinit.json che installerà il file LTS di Node.js:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -62,7 +62,7 @@ Di seguito sono riportati esempi di come eseguire `require-nodejs` usando `.devi
 }
 ```
 
-#### <a name="devinitjson-that-will-install-a-specific-version-of-nodejs"></a>.devinit.jsin verrà installata una versione specifica di Node.js:
+#### <a name="devinitjson-that-will-install-a-specific-version-of-nodejs"></a>.devinit.json che installerà una versione specifica di Node.js:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

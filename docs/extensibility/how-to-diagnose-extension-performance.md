@@ -12,11 +12,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - bertaygu
 ms.openlocfilehash: e875075b4f2a060011746e9058ecec448efdbe58
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626256"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurazione dell'impatto dell'estensione all'avvio
 
@@ -31,7 +31,7 @@ Per aiutare gli utenti a comprendere questo impatto, è stata aggiunta una nuova
 Questo documento ha lo scopo di aiutare gli sviluppatori di estensioni descrivendo come viene calcolato l'impatto dell'estensione. Questo documento descrive anche come l'impatto sulle estensioni può essere analizzato in locale. L'analisi locale dell'impatto dell'estensione determinerà se un'estensione può essere visualizzata come un'estensione che influisce sulle prestazioni.
 
 > [!NOTE]
-> Questo documento è in particolare sull'impatto delle estensioni sull'avvio e sul caricamento della soluzione. Le estensioni influiscono Visual Studio prestazioni quando causano il fatto che l'interfaccia utente non risponde. Per altre informazioni su questo argomento, vedere [Procedura: Diagnosticare i ritardi dell'interfaccia utente causati dalle estensioni.](how-to-diagnose-ui-delays-caused-by-extensions.md)
+> Questo documento è in particolare sull'impatto delle estensioni sull'avvio e sul caricamento della soluzione. Le estensioni influiscono Visual Studio sulle prestazioni quando causano il fatto che l'interfaccia utente non risponde. Per altre informazioni su questo argomento, vedere [Procedura: Diagnosticare i ritardi dell'interfaccia utente causati dalle estensioni.](how-to-diagnose-ui-delays-caused-by-extensions.md)
 
 ## <a name="how-extensions-can-impact-startup"></a>Come le estensioni possono influire sull'avvio
 
@@ -81,13 +81,13 @@ Per i servizi globali forniti da un pacchetto, è possibile usare metodi che acc
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Misurazione dell'impatto delle estensioni caricate automaticamente tramite il log attività
 
-A partire Visual Studio 2017 Update 3, il log attività Visual Studio conterrà voci per l'impatto sulle prestazioni dei pacchetti durante l'avvio e il caricamento della soluzione. Per visualizzare queste misurazioni, è necessario aprire il Visual Studio con l'opzione /log e *aprire* ActivityLog.xmlfile.
+A partire Visual Studio 2017 Update 3, Visual Studio log attività conterrà voci per l'impatto sulle prestazioni dei pacchetti durante l'avvio e il caricamento della soluzione. Per visualizzare queste misurazioni, è necessario aprire il Visual Studio con l'opzione /log e *aprire* ActivityLog.xmlfile.
 
-Nel log attività le voci saranno nell'origine "Manage Visual Studio Performance" e saranno simili all'esempio seguente:
+Nel log attività le voci saranno nell'origine "Gestisci prestazioni Visual Studio" e saranno simili all'esempio seguente:
 
 ```Component: 3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c, Inclusive Cost: 2008.9381, Exclusive Cost: 2008.9381, Top Level Inclusive Cost: 2008.9381```
 
-Questo esempio mostra che un pacchetto con GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" ha dedicato 2008 ms all'avvio di Visual Studio. Si noti Visual Studio considera il costo di primo livello come numero principale quando si calcola l'impatto di un pacchetto, come sarebbe il risparmio che gli utenti vedono quando disabilitano l'estensione per tale pacchetto.
+Questo esempio mostra che un pacchetto con GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" ha impiegato 2008 ms all'avvio di Visual Studio. Si noti Visual Studio considera il costo di primo livello come numero principale quando si calcola l'impatto di un pacchetto, come sarebbe il risparmio che gli utenti vedono quando disabilitano l'estensione per tale pacchetto.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>Misurazione dell'impatto delle estensioni caricate automaticamente con PerfView
 
@@ -165,20 +165,20 @@ PerfView include indicazioni dettagliate su come leggere gli stack di tempo dei 
 
 Ora la visualizzazione mostrerà solo il costo associato agli assembly correlati all'estensione. In questa visualizzazione, qualsiasi momento elencato nella colonna **Inc (costo inclusivo)** del thread di avvio è correlato all'estensione filtrata e avrà un impatto sull'avvio.
 
-Per l'esempio precedente alcuni stack di chiamate interessanti sono:
+Per l'esempio precedente, alcuni stack di chiamate interessanti sono:
 
-1. I/O che usano la classe : anche se il costo inclusivo di questi fotogrammi potrebbe non essere troppo costoso nella traccia, è una potenziale causa di un problema perché la velocità di I/O del file varia da computer `System.IO` a computer.
+1. I/O tramite la classe : anche se il costo inclusivo di questi frame potrebbe non essere troppo costoso nella traccia, sono una causa potenziale di un problema perché la velocità di I/O del file varia da computer `System.IO` a computer.
 
-   ![frame di i/o di sistema](media/perfview-system-io-frames.png)
+   ![frame di I/O di sistema](media/perfview-system-io-frames.png)
 
 2. Blocco delle chiamate in attesa di altre operazioni asincrone: in questo caso, il tempo inclusivo rappresenta il tempo in cui il thread principale viene bloccato al completamento del lavoro asincrono.
 
-   ![blocco dei frame di chiamata](media/perfview-blocking-call-frames.png)
+   ![frame di chiamata di blocco](media/perfview-blocking-call-frames.png)
 
-Una delle altre visualizzazioni nella traccia che saranno utili per determinare l'impatto saranno gli **stack di caricamento delle immagini**. È possibile applicare gli stessi filtri applicati alla visualizzazione **Stack** tempo di thread e individuare tutti gli assembly caricati a causa del codice eseguito dal pacchetto caricato automaticamente.
+Una delle altre visualizzazioni nella traccia che sarà utile per determinare l'impatto sarà stack **di caricamento delle immagini.** È possibile applicare gli stessi filtri applicati alla visualizzazione **Stack** di tempo dei thread e individuare tutti gli assembly caricati a causa del codice eseguito dal pacchetto caricato automaticamente.
 
 È importante ridurre al minimo il numero di assembly caricati all'interno di una routine di inizializzazione del pacchetto perché ogni assembly aggiuntivo comporterà operazioni di I/O su disco aggiuntive che possono rallentare notevolmente l'avvio nei computer più lenti.
 
 ## <a name="summary"></a>Riepilogo
 
-L'Visual Studio è stata una delle aree su cui si continua a ricevere commenti e suggerimenti. L'obiettivo indicato in precedenza è che tutti gli utenti hanno un'esperienza di avvio coerente indipendentemente dai componenti e dalle estensioni installati. Microsoft vuole collaborare con i proprietari delle estensioni per aiutarci a raggiungere questo obiettivo. Le linee guida precedenti devono essere utili per comprendere l'impatto delle estensioni sull'avvio ed evitare la necessità di caricarlo automaticamente o caricarlo in modo asincrono per ridurre al minimo l'impatto sulla produttività degli utenti.
+L'Visual Studio è stata una delle aree su cui si continua a ricevere commenti e suggerimenti. Come indicato in precedenza, l'obiettivo è quello di consentire a tutti gli utenti di avere un'esperienza di avvio coerente indipendentemente dai componenti e dalle estensioni installati. Microsoft vuole collaborare con i proprietari delle estensioni per contribuire a raggiungere tale obiettivo. Le linee guida precedenti dovrebbero essere utili per comprendere un impatto sulle estensioni all'avvio ed evitare la necessità di caricarlo automaticamente o caricarlo in modo asincrono per ridurre al minimo l'impatto sulla produttività degli utenti.

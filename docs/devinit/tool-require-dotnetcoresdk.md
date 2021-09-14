@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d3c73ed7b7c463226e49dcf29bc80a7ffec9e677d017442e501cb13620f2baa7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1963ad8dfe1bd31eb3f98ec6fdf57524a274cfb6
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709844"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -48,12 +48,12 @@ La `input` proprietà viene usata per specificare la versione .NET Core SDK da i
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello strumento è installare la versione del .NET Core SDK specificata in un `require-dotnetcoresdk` file `global.json` [(documentazione)](/dotnet/core/tools/global-json?tabs=netcore3x) nella directory di lavoro corrente. Se non viene trovato alcun file, verrà installata la versione corrente più recente del runtime .NET Core SDK `global.json` `require-dotnetcoresdk` e condiviso.
+Il comportamento predefinito dello strumento è installare la versione del .NET Core SDK specificata in un `require-dotnetcoresdk` file `global.json` [(documentazione)](/dotnet/core/tools/global-json?tabs=netcore3x) nella directory di lavoro corrente. Se non viene trovato alcun file, verrà installata la versione corrente più recente del .NET Core SDK `global.json` `require-dotnetcoresdk` e del runtime condiviso.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
 Di seguito sono riportati esempi di come eseguire `require-dotnetcoresdk` usando `.devinit.json` un oggetto .
 
-#### <a name="devinitjson-that-will-install-the-latest-version-of-net-core"></a>.devinit.jsin verrà installata la versione più recente di .NET Core:
+#### <a name="devinitjson-that-will-install-the-latest-version-of-net-core"></a>.devinit.json che installerà la versione più recente di .NET Core:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -65,7 +65,7 @@ Di seguito sono riportati esempi di come eseguire `require-dotnetcoresdk` usando
 }
 ```
 
-#### <a name="devinitjson-that-will-install-a-specific-version-of-net-core"></a>.devinit.jsin verrà installata una versione specifica di .NET Core:
+#### <a name="devinitjson-that-will-install-a-specific-version-of-net-core"></a>.devinit.json che installerà una versione specifica di .NET Core:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -78,7 +78,7 @@ Di seguito sono riportati esempi di come eseguire `require-dotnetcoresdk` usando
 }
 ```
 
-#### <a name="devinitjson-that-will-install-a-specific-version-of-net-core-and-aspnet-core"></a>.devinit.jsin verrà installata una versione specifica di .NET Core e ASP.NET Core:
+#### <a name="devinitjson-that-will-install-a-specific-version-of-net-core-and-aspnet-core"></a>.devinit.json che installerà una versione specifica di .NET Core e ASP.NET Core:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
@@ -92,7 +92,7 @@ Di seguito sono riportati esempi di come eseguire `require-dotnetcoresdk` usando
 }
 ```
 
-#### <a name="devinitjson-that-will-install-net-core-in-a-specific-directory"></a>.devinit.jsin che installerà .NET Core in una directory specifica:
+#### <a name="devinitjson-that-will-install-net-core-in-a-specific-directory"></a>.devinit.json che installerà .NET Core in una directory specifica:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",

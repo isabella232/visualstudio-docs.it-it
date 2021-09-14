@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: d4e0780f43953bdf7afb10e2d038ce46b794d3dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122071097"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709664"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Questa interfaccia fornisce le funzioni che consentono di ottenere e impostare una proprietà.

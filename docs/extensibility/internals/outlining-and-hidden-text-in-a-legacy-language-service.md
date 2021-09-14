@@ -13,25 +13,25 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeb87cdc225210dbe839a4a4cacc9ae0b44243b0bd1accde0ae4668c73694222
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2b1315e072ca9d6bff6734df5b6030bd19059a0
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709538"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Definizione della struttura e testo nascosto in un servizio di linguaggio legacy
-La struttura consente di comprimere una sequenza di righe di testo in un'unica riga. In C++, ad esempio, tutti i metodi possono essere compressi in una singola riga, visualizzando solo la firma del metodo. Il testo nascosto è la sequenza di righe di testo che possono essere visualizzate o nascoste.
+La struttura consente di comprimere una sequenza di righe di testo in una singola riga. In C++, ad esempio, tutti i metodi possono essere compressi in una singola riga, visualizzando solo la firma del metodo. Il testo nascosto è la sequenza di righe di testo che possono essere visualizzate o nascoste.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Procedura: Fornire il supporto per la struttura in un servizio di linguaggio legacy](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)
 
- Illustra come implementare
+ Viene illustrato come implementare
 
 - [Procedura: Fornire il supporto per il testo nascosto in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 
- Viene illustrato lo scopo di un'area di testo nascosto e vengono fornite istruzioni su come implementare un'area di testo nascosto.
+ Illustra lo scopo di un'area di testo nascosto e fornisce istruzioni su come implementare un'area di testo nascosto.
 
 - [Procedura: Fornire il supporto per la struttura espansa in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Vengono illustrate le due opzioni che estendono il supporto della struttura per il linguaggio oltre al supporto del *comando Comprimi in* definizioni.
+ Vengono illustrate le due opzioni che estendono il supporto della struttura per il linguaggio oltre a supportare il *comando Comprimi in* definizioni.

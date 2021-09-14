@@ -20,11 +20,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: e142922aa91fee7b5fc3d3f816652b6c1dca2bb9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709465"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 

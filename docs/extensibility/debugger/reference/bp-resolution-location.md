@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b433f7b58753408c916074539d9d0b6275d1ce17
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635227"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Specifica la struttura della posizione di risoluzione del punto di interruzione.
@@ -52,7 +52,7 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="members"></a>Members
 `bpType`\
-Valore [dell'enumerazione BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) che specifica come interpretare l'unione `bpResLocation` o i `unionmemberX` membri.
+Valore dell'enumerazione [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) che specifica come interpretare `bpResLocation` l'unione o i `unionmemberX` membri.
 
 `bpResLocation.bpresCode`\
 [Solo C++] Contiene la [struttura BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) se `bpType`  =  `BPT_CODE` .
@@ -76,14 +76,14 @@ Valore [dell'enumerazione BP_TYPE](../../../extensibility/debugger/reference/bp-
 [Solo C#] Vedere Osservazioni su come interpretare.
 
 ## <a name="remarks"></a>Commenti
-Questa struttura è un membro delle [strutture](../../../extensibility/debugger/reference/bp-error-resolution-info.md) BP_ERROR_RESOLUTION_INFO e [BP_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-resolution-info.md)
+Questa struttura è un membro delle [strutture BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-resolution-info.md)
 
- [Solo C#] I `unionmemberX` membri vengono interpretati in base alla tabella seguente. Cercare il valore nella colonna sinistra per determinare ciò che ogni membro rappresenta ed effettuare `bpType` `unionmemberX` il marshalling di `unionmemberX` conseguenza. Vedere l'esempio per un modo per interpretare questa struttura in C#.
+ [Solo C#] I `unionmemberX` membri vengono interpretati in base alla tabella seguente. Cercare il valore nella colonna sinistra e quindi in per `bpType` determinare ciò che ogni `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio per un modo per interpretare questa struttura in C#.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|
-|`BPT_DATA`|`string` (espressione dati)|`string` (nome funzione)|`string` (nome immagine)|`enum_BP_RES_DATA_FLAGS`|
+|`BPT_DATA`|`string` (espressione dati)|`string` (nome della funzione)|`string` (nome immagine)|`enum_BP_RES_DATA_FLAGS`|
 
 ## <a name="example"></a>Esempio
 Questo esempio illustra come interpretare la `BP_RESOLUTION_LOCATION` struttura in C#.

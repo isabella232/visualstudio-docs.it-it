@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8406499b96e20e97577069f1b52819e6f7b148a738042553051bf02c03f220a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 193b7cc73b87bee1a5332bd1b46a38276f0fb4b0
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709408"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
-Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina delle opzioni, scegliere **Opzioni** strumenti e quindi Editor  >   **di testo**  >  **C#**  >  **Avanzate**.
+Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina delle opzioni, scegliere **Opzioni** strumenti e quindi Editor di  >   **testo**  >  **C#**  >  **Avanzate**.
 
 > [!NOTE]
 > È possibile che non tutte le opzioni siano elencate.
@@ -91,7 +91,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    ```
 
 ::: moniker range=">=vs-2019"                                              
-- Suggerire l'uso di per i tipi .NET Framework assembly
+- Suggerire l'uso di per i .NET Framework assembly
 ::: moniker-end
                                          
 ::: moniker range="vs-2017"                                                

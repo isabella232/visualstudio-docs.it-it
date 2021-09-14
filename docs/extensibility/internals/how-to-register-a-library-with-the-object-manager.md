@@ -18,28 +18,28 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c70a59cd6510b761ce1cf44bc3d6d66d5766efe5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709552"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Procedura: Registrare una libreria con il gestore di oggetti
-Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi** **,** Visualizzatore oggetti , **Visualizzatore chiamate** e Risultati ricerca simboli **,** consentono di visualizzare i simboli nel progetto o nei componenti esterni. I simboli includono spazi dei nomi, classi, interfacce, metodi e altri elementi del linguaggio. Le librerie tiene traccia di questi simboli ed esporli al gestore di oggetti che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] popola gli strumenti con i dati.
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Procedura: Registrare una libreria con gestione oggetti
+Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi** **,** Visualizzatore oggetti , **Visualizzatore chiamate** e Risultati ricerca **simboli**, consentono di visualizzare i simboli nel progetto o nei componenti esterni. I simboli includono spazi dei nomi, classi, interfacce, metodi e altri elementi del linguaggio. Le librerie rilevano questi simboli ed esporli al gestore oggetti che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] popola gli strumenti con i dati.
 
- Il gestore oggetti tiene traccia di tutte le librerie disponibili. Ogni libreria deve registrarsi con il gestore di oggetti prima di fornire i simboli per gli strumenti di esplorazione dei simboli.
+ Gestione oggetti tiene traccia di tutte le librerie disponibili. Ogni libreria deve registrarsi con object manager prima di fornire simboli per gli strumenti di esplorazione dei simboli.
 
- In genere, si registra una libreria quando viene caricato un VSPackage. Tuttavia, può essere eseguita in un altro momento in base alle esigenze. La registrazione della libreria viene annullata all'arresto del pacchetto VSPackage.
+ In genere, si registra una libreria quando viene caricato un vspackage. Tuttavia, può essere eseguita in un altro momento in base alle esigenze. La registrazione della libreria viene annullata all'arresto del pacchetto VSPackage.
 
  Per registrare una libreria, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> metodo . Per una libreria di codice gestito, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metodo .
 
  Per annullare la registrazione di una libreria, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> metodo .
 
- Per ottenere un riferimento alla gestione oggetti, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> , passare <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> l'ID servizio al metodo `GetService` .
+ Per ottenere un riferimento al gestore oggetti, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> passare <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> l'ID servizio al metodo `GetService` .
 
-## <a name="register-and-unregister-a-library-with-the-object-manager"></a>Registrare e annullare la registrazione di una libreria con il gestore di oggetti
+## <a name="register-and-unregister-a-library-with-the-object-manager"></a>Registrare e annullare la registrazione di una libreria con object manager
 
-### <a name="to-register-a-library-with-the-object-manager"></a>Per registrare una libreria con il gestore di oggetti
+### <a name="to-register-a-library-with-the-object-manager"></a>Per registrare una libreria con gestione oggetti
 
 1. Creare una libreria.
 
@@ -112,7 +112,7 @@ Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi**
 
     ```
 
-### <a name="to-unregister-a-library-with-the-object-manager"></a>Per annullare la registrazione di una libreria con il gestore di oggetti
+### <a name="to-unregister-a-library-with-the-object-manager"></a>Per annullare la registrazione di una libreria con gestione oggetti
 
 1. Ottenere un riferimento a un oggetto del <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> tipo e chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> .
 
@@ -170,4 +170,4 @@ Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi**
 ## <a name="see-also"></a>Vedi anche
 - [Estendibilità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [Supporto degli strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [Procedura: Esporre gli elenchi di simboli forniti dalla libreria al gestore di oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [Procedura: Esporre gli elenchi di simboli forniti dalla libreria al gestore oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

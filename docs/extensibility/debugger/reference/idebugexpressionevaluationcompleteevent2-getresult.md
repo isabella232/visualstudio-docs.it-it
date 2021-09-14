@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e6ea08deee948b9675d73748a0285fb3af27965
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709724"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 Ottiene il risultato della valutazione dell'espressione.
@@ -48,7 +48,7 @@ int GetResult(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- [L'oggetto IDebugProperty2 restituito](../../../extensibility/debugger/reference/idebugproperty2.md) contiene il valore dell'espressione valutata. Si noti che questo valore può essere complesso, ad esempio una matrice, ma il risultato finale deve essere un valore numerico o stringa visualizzato all'utente.
+ [L'oggetto IDebugProperty2 restituito](../../../extensibility/debugger/reference/idebugproperty2.md) contiene il valore dell'espressione valutata. Si noti che questo valore può essere un valore complesso, ad esempio una matrice, ma il risultato finale deve essere un valore numerico o stringa visualizzato all'utente.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6d4136444a1d48a5ba70a9ed138897a008bbc036
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635211"
 ---
 # <a name="bp_state"></a>BP_STATE
 Specifica l'esistenza di un punto di interruzione associato e specifica anche se è abilitato.

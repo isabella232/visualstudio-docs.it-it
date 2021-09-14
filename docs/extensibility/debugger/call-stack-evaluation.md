@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: a196560a3b0ee2fc10733b112540b1f9ff619e67
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145991"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709808"
 ---
 # <a name="call-stack-evaluation"></a>Valutazione dello stack di chiamate
 Per visualizzare gli stack frame dello stack di chiamate durante la modalità di interruzione, è necessario implementare il [metodo EnumFrameInfo.](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)

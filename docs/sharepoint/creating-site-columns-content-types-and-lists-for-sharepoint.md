@@ -1,7 +1,7 @@
 ---
 title: Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint | Microsoft Docs
 titleSuffix: ''
-description: Creare colonne del sito, tipi di contenuto ed elenchi per SharePoint. Visual Studio fornisce modelli di elemento di progetto per questi tipi di SharePoint elementi.
+description: Creare colonne del sito, tipi di contenuto ed elenchi per SharePoint. Visual Studio fornisce modelli di elementi di progetto per questi tipi di SharePoint elementi.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -23,14 +23,14 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 40ca1ca19e15e0e25e4decf6a3b932a3bcbf78b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149442"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635635"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Creare colonne del sito, tipi di contenuto ed elenchi per SharePoint
-  Visual Studio fornisce modelli di elemento di progetto per molti elementi  SharePoint fondamentali diversi, inclusi elenchi e tipi di *contenuto,* entrambi in grado di incorporare colonne del sito (o *campi*). Grazie alle nuove finestre di progettazione per i tipi di contenuto e gli elenchi, la creazione di questi elementi non è mai stata più facile.
+  Visual Studio fornisce modelli di elementi di progetto per molti elementi  SharePoint fondamentali diversi, inclusi elenchi e tipi di contenuto *,* entrambi in grado di incorporare colonne del sito (o *campi*). Grazie alle nuove finestre di progettazione per i tipi di contenuto e gli elenchi, la creazione di questi elementi non è mai stata più facile.
 
 ## <a name="site-columns"></a>Colonne del sito
  Le colonne del sito sono uno degli elementi più semplici che si possono aggiungere a un progetto di SharePoint. Una colonna del sito rappresenta un tipo di dati, ad esempio un numero di telefono, un commento o il nome della città di un contatto in un elenco di contatti.

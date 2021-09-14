@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9485aeba7d531c0a05f33ad759688e9fd05a29f9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709824"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia di un pacchetto VSIX
 Un pacchetto VSIX è un file *vsix* che contiene una o più estensioni Visual Studio, insieme ai metadati Visual Studio per classificare e installare le estensioni. I metadati sono contenuti nel manifesto VSIX e *nel file [Content_Types].xml.* Un pacchetto VSIX può anche contenere uno o più file *Extension.vsixlangpack* per fornire il testo di installazione localizzato e può contenere pacchetti VSIX aggiuntivi per installare le dipendenze.

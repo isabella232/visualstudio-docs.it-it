@@ -20,18 +20,18 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: b534d18deeb63cad6cb0df967915e4fde968c688
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635283"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Procedura: Abilitare le impostazioni di sicurezza ClickOnce
 La sicurezza dall'accesso di ClickOnce deve essere abilitata per pubblicare l'applicazione. Questa operazione viene eseguita automaticamente quando si pubblica un'applicazione tramite la pubblicazione guidata.
 
  In alcuni casi, l'abilitazione della sicurezza dall'accesso di codice può influire sulle prestazioni durante la compilazione o il debug dell'applicazione. In questi casi, è possibile disabilitare temporaneamente le impostazioni di sicurezza.
 
- ClickOnce le impostazioni di sicurezza possono essere  abilitate o disabilitate nella pagina Sicurezza di **Project Designer**.
+ ClickOnce le impostazioni di sicurezza possono  essere abilitate o disabilitate nella pagina Sicurezza di **Project Designer**.
 
 ### <a name="to-enable-clickonce-security-settings"></a>Per abilitare le ClickOnce di sicurezza
 

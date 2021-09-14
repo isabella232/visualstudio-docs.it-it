@@ -14,18 +14,18 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56e1fa13846525221ec96dca3a8b744590e1dc8d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126626076"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generazione nuovo progetto: Dietro le quinte, seconda parte
 
-In New Project Generation: Under the Hood, Part One è stato illustrato come viene popolata la finestra di dialogo New Project.In [New Project Generation: Under the Hood, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) we saw how the New **Project** dialog Box is populated. Si supponga di aver selezionato un'applicazione **Visual C# Windows,**  compilato le caselle di testo Nome e **Posizione** e aver fatto clic su OK.
+In [New Project Generation: Under the Hood, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) è stato illustrato come viene popolata la finestra di dialogo New **Project** .... Si supponga di aver selezionato un'applicazione **Visual C# Windows,**  compilato le caselle di testo Nome e **Posizione** e aver fatto clic su OK.
 
 ## <a name="generating-the-solution-files"></a>Generazione dei file di soluzione
- La scelta di un modello di applicazione indica di decomprimere e aprire il file con estensione vstemplate corrispondente e di avviare un modello per interpretare i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comandi XML in questo file. Questi comandi creano progetti ed elementi di progetto nella soluzione nuova o esistente.
+ La scelta di un modello di applicazione consente di decomprimere e aprire il file con estensione vstemplate corrispondente e di avviare un modello per interpretare i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comandi XML in questo file. Questi comandi creano progetti ed elementi di progetto nella soluzione nuova o esistente.
 
  Il modello decomprime i file di origine, denominati modelli di elemento, dalla stessa .zip che contiene il file con estensione vstemplate. Il modello copia questi file nel nuovo progetto, personalizzandoli di conseguenza.
 
@@ -48,7 +48,7 @@ namespace $safeprojectname$
 }
 ```
 
-Se si crea un nuovo Windows di applicazione denominato Simple, il modello sostituisce il parametro `$safeprojectname$` con il nome del progetto.
+Se si crea un nuovo Windows di applicazione denominato Simple, il modello sostituisce il parametro con `$safeprojectname$` il nome del progetto.
 
 ```csharp
 using System;
@@ -78,7 +78,7 @@ namespace Simple
 </VSTemplate>
 ```
 
- È stata osservata \<TemplateData> la sezione in New Project [Generation: Under the Hood, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). I tag in questa sezione vengono usati per controllare l'aspetto della finestra **di Project** di dialogo.
+ È stata osservata \<TemplateData> la sezione in New Project [Generation: Under the Hood, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). I tag in questa sezione vengono usati per controllare l'aspetto della finestra di **Project** finestra di dialogo.
 
  I tag nella sezione \<TemplateContent> controllano la generazione di nuovi progetti ed elementi di progetto. Ecco la sezione \<TemplateContent> del file cswindowsapplication.vstemplate nella cartella \Programmi\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
@@ -116,7 +116,7 @@ namespace Simple
 
  Il \<Project> tag controlla la generazione di un progetto e il tag controlla la generazione di un elemento di \<ProjectItem> progetto. Se il parametro ReplaceParameters è true, il modello personalizza tutti i parametri del modello nel file o nell'elemento di progetto. In questo caso, tutti gli elementi del progetto vengono personalizzati, ad eccezione di Impostazioni.settings.
 
- Il parametro TargetFileName specifica il nome e il percorso relativo del file di progetto o dell'elemento risultante. In questo modo è possibile creare una struttura di cartelle per il progetto. Se non si specifica questo argomento, l'elemento di progetto avrà lo stesso nome del modello di elemento di progetto.
+ Il parametro TargetFileName specifica il nome e il percorso relativo del file o dell'elemento di progetto risultante. In questo modo è possibile creare una struttura di cartelle per il progetto. Se non si specifica questo argomento, l'elemento di progetto avrà lo stesso nome del modello di elemento di progetto.
 
  La struttura Windows cartella dell'applicazione risultante è simile alla seguente:
 
