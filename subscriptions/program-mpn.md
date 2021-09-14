@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
 ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965726"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710430"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 
@@ -44,7 +44,7 @@ Indipendentemente dal numero di competenze che un partner può ottenere, il nume
 
 | Vantaggio massimo per i partner con solo competenze Silver                   | Vantaggio massimo per i partner con almeno una competenza Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 25 Visual Studio Enterprise per paese/area geografica; 75 in tutto il mondo          | 50 Visual Studio Enterprise per paese/area geografica; 150 in tutto il mondo         |
+| 25 Visual Studio Enterprise sottoscrizioni per paese/area geografica; 75 in tutto il mondo          | 50 Visual Studio Enterprise per paese/area geografica; 150 in tutto il mondo         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Sottoscrizioni per i partner che acquistano Action Pack
 
@@ -58,7 +58,7 @@ Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professio
 
 I sottoscrittori di Visual Studio Professional (MPN) possono anche scaricare e usare software per lo sviluppo, incluso SQL Server Developer Edition.
 
-La sottoscrizione Visual Studio Professional (MPN) non include i vantaggi Azure DevOps Services, il credito individuale di Azure DevTest, il supporto tecnico, il training o altri vantaggi per i sottoscrittori disponibili con sottoscrizioni Visual Studio offerte commercialmente.
+La sottoscrizione Visual Studio Professional (MPN) non include i vantaggi di Azure DevOps Services, credito individuale di Azure DevTest, supporto tecnico, training o altri vantaggi per i sottoscrittori disponibili con sottoscrizioni Visual Studio offerte commercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrizione per il solo uso interno
 
@@ -68,13 +68,13 @@ Questa restrizione per il solo uso interno significa fondamentalmente che i part
 
 ## <a name="sign-in-required-with-visual-studio"></a>Accesso richiesto con Visual Studio
 
-Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza deve accedere a Visual Studio usando la stessa identità o lo stesso account di accesso usato per attivare la sottoscrizione di Visual Studio. I codici Product Key non sono offerti per sbloccare il prodotto. l'accesso è l'unica opzione per l'esecuzione Visual Studio. Il sottoscrittore di Visual Studio può lavorare offline per un massimo di 30 giorni prima che Visual Studio smetta di funzionare. Durante l'uso online, Visual Studio aggiorna in modo invisibile all'utente lo stato della licenza periodicamente per verificare che la sottoscrizione sia ancora valida.
+Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza deve accedere a Visual Studio usando la stessa identità o lo stesso account di accesso usato per attivare la sottoscrizione di Visual Studio. I codici Product Key non sono offerti per sbloccare il prodotto. L'accesso è l'unica opzione per l'esecuzione Visual Studio. Il sottoscrittore di Visual Studio può lavorare offline per un massimo di 30 giorni prima che Visual Studio smetta di funzionare. Durante l'uso online, Visual Studio aggiorna in modo invisibile all'utente lo stato della licenza periodicamente per verificare che la sottoscrizione sia ancora valida.
 
 ## <a name="resources"></a>Risorse
 - [guida Microsoft Partner Network programmi](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Gestione delle sottoscrizioni di Visual Studio incluse nelle appartenenze Microsoft Partner Network (MPN)](manage-mpn-subscriptions.md)
 - [Condizioni di licenza](https://www.microsoft.com/useterms/) -Le sottoscrizioni di Visual Studio offerte tramite MPN sono soggette al contratto di licenza con l'utente finale per le sottoscrizioni di Visual Studio non destinate alla rivendita.
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vssubscriberhelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni.](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

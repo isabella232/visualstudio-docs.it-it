@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: f82d6ca09e67cd2911a0dc9803e65f14b85cca6c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123307"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711399"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo personalizzato di SharePoint elemento di progetto e associato a un modello di progetto in Visual Studio, è anche possibile fornire una procedura guidata per il modello. È possibile usare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per creare un nuovo progetto che contiene l'elemento di progetto. Le informazioni raccolte possono essere usate per inizializzare l'elemento di progetto.
@@ -29,15 +29,15 @@ ms.locfileid: "122123307"
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
-- Creazione di una procedura guidata per un SharePoint di elemento di progetto personalizzato associato a un modello di progetto.
+- Creazione di una procedura guidata per un SharePoint tipo di elemento di progetto associato a un modello di progetto.
 
 - Definizione di un'interfaccia utente personalizzata della procedura guidata simile alle procedure guidate incorporate per SharePoint progetti in Visual Studio.
 
-- Creazione di *SharePoint comandi personalizzati* usati per chiamare nel sito SharePoint locale durante l'esecuzione della procedura guidata. SharePoint sono metodi che possono essere usati dalle estensioni Visual Studio per chiamare le API nel modello a oggetti SharePoint server. Per altre informazioni, vedere [Chiamata nei modelli SharePoint a oggetti.](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- Creazione di *SharePoint comandi* personalizzati usati per chiamare nel sito SharePoint locale durante l'esecuzione della procedura guidata. SharePoint sono metodi che possono essere usati dalle estensioni Visual Studio per chiamare le API nel modello a oggetti SharePoint server. Per altre informazioni, vedere [Chiamata nei modelli SharePoint a oggetti](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 - Uso di parametri sostituibili per SharePoint file di progetto con i dati raccolti nella procedura guidata.
 
-- Creazione di un nuovo file SNK in ogni nuova istanza del progetto Colonna del sito. Questo file viene usato per firmare l'output del progetto in modo che l SharePoint assembly della soluzione possa essere distribuito nella Global Assembly Cache.
+- Creazione di un nuovo file con estensione snk in ogni nuova istanza del progetto Colonna del sito. Questo file viene usato per firmare l'output del progetto in modo che l SharePoint assembly della soluzione possa essere distribuito nella Global Assembly Cache.
 
 - Debug e test della procedura guidata.
 
@@ -45,7 +45,7 @@ ms.locfileid: "122123307"
 > Per una serie di flussi di lavoro di esempio, vedere SharePoint [di flusso di lavoro.](/sharepoint/dev/general-development/sharepoint-workflow-samples)
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per eseguire questa procedura dettagliata, è innanzitutto necessario creare la soluzione SiteColumnProjectItem completando Procedura dettagliata: Creazione di una colonna del sito Project Item con un modello [di Project, parte 1.](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
+ Per eseguire questa procedura dettagliata, è innanzitutto necessario creare la soluzione SiteColumnProjectItem completando Procedura dettagliata: Creazione di una colonna del sito Project item con un modello [di Project, parte 1.](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 
  Per completare questa procedura dettagliata, sono necessari anche i componenti seguenti nel computer di sviluppo:
 
@@ -64,11 +64,11 @@ ms.locfileid: "122123307"
 
 |Componente|Descrizione|
 |---------------|-----------------|
-|Implementazione della procedura guidata|Si tratta di una classe, denominata `SiteColumnProjectWizard` , che implementa <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> l'interfaccia . Questa interfaccia definisce i metodi che Visual Studio quando la procedura guidata viene avviata e completata e in determinati momenti durante l'esecuzione della procedura guidata.|
+|Implementazione della procedura guidata|Si tratta di una classe, denominata `SiteColumnProjectWizard` , che implementa <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> l'interfaccia . Questa interfaccia definisce i metodi che Visual Studio chiama all'avvio e al termine della procedura guidata e in determinati momenti durante l'esecuzione della procedura guidata.|
 |Interfaccia utente della procedura guidata|Si tratta di una finestra basata su WPF, denominata `WizardWindow` . Questa finestra include due controlli utente, denominati `Page1` e `Page2` . Questi controlli utente rappresentano le due pagine della procedura guidata.<br /><br /> In questa procedura dettagliata, il metodo <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> dell'implementazione della procedura guidata visualizza l'interfaccia utente della procedura guidata.|
 |Modello di dati della procedura guidata|Si tratta di una classe intermedia, denominata , che fornisce un livello tra l'interfaccia utente della procedura guidata e `SiteColumnWizardModel` l'implementazione della procedura guidata. Questo esempio usa questa classe per astrarre l'implementazione della procedura guidata e l'interfaccia utente della procedura guidata l'una dall'altra; Questa classe non è un componente obbligatorio di tutte le procedure guidate.<br /><br /> In questa procedura dettagliata l'implementazione della procedura guidata passa un oggetto alla finestra della `SiteColumnWizardModel` procedura guidata quando visualizza l'interfaccia utente della procedura guidata. L'interfaccia utente della procedura guidata usa i metodi di questo oggetto per salvare i valori dei controlli nell'interfaccia utente ed eseguire attività come la verifica della validità dell'URL del sito di input. Al termine della procedura guidata, l'implementazione della procedura guidata usa l'oggetto per `SiteColumnWizardModel` determinare lo stato finale dell'interfaccia utente.|
 |Project di firma|Si tratta di una classe helper, denominata , usata dall'implementazione della procedura guidata per creare un nuovo `ProjectSigningManager` file key.snk in ogni nuova istanza del progetto.|
-|SharePoint (comandi)|Si tratta di metodi utilizzati dal modello di dati della procedura guidata per chiamare nel sito di SharePoint locale durante l'esecuzione della procedura guidata. Poiché SharePoint comandi devono avere come destinazione .NET Framework 3.5, questi comandi vengono implementati in un assembly diverso rispetto al resto del codice della procedura guidata.|
+|SharePoint (comandi)|Si tratta di metodi utilizzati dal modello di dati della procedura guidata per chiamare nel sito SharePoint locale mentre la procedura guidata è in esecuzione. Poiché SharePoint comandi devono avere come destinazione .NET Framework 3.5, questi comandi vengono implementati in un assembly diverso rispetto al resto del codice della procedura guidata.|
 
 ## <a name="create-the-projects"></a>Creare i progetti
  Per completare questa procedura dettagliata, è necessario aggiungere diversi progetti alla soluzione SiteColumnProjectItem creata in Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di [progetto, parte 1:](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
@@ -83,9 +83,9 @@ ms.locfileid: "122123307"
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire la soluzione SiteColumnProjectItem.
 
-2. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione **SiteColumnProjectItem,** scegliere Aggiungi **e** quindi scegliere **Nuovo Project**.
+2. In Esplora soluzioni aprire il menu di scelta rapida per il nodo della soluzione **SiteColumnProjectItem,** scegliere **Aggiungi** **e** quindi scegliere **Nuovo Project**.
 
-3. Nella parte superiore della finestra di dialogo Aggiungi nuovo **Project** verificare che nell'elenco delle versioni del .NET Framework **4.5** sia selezionato .NET Framework.
+3. Nella parte superiore della finestra di **dialogo Aggiungi** nuovo Project verificare che nell'elenco delle versioni del .NET Framework **4.5** sia selezionata l'opzione .NET Framework.
 
 4. Espandere il **nodo Visual C#** o **il nodo Visual Basic** e scegliere il **Windows** nodo.
 
@@ -97,7 +97,7 @@ ms.locfileid: "122123307"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Per creare il progetto SharePoint comandi
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione SiteColumnProjectItem, scegliere Aggiungi **e** quindi scegliere **Nuovo Project**.
+1. In Esplora soluzioni aprire il menu di scelta rapida per il nodo della soluzione SiteColumnProjectItem, scegliere **Aggiungi** **e** quindi nuovo **Project**.
 
 2. Nella parte superiore della finestra **di dialogo Project** nuova versione scegliere .NET Framework **3.5** nell'elenco delle versioni del .NET Framework.
 
@@ -116,9 +116,9 @@ ms.locfileid: "122123307"
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **ProjectTemplateWizard** e quindi scegliere **Proprietà.**
 
-2. In Progettazione **Project scegliere** la  scheda Applicazione per un progetto  Visual C# o la scheda Compila per un Visual Basic progetto.
+2. In Progettazione **Project scegliere** la  scheda Applicazione per un progetto Visual C# o la scheda **Compila** per un Visual Basic progetto.
 
-3. Assicurarsi che il framework di destinazione sia impostato sul .NET Framework 4.5, non sul profilo client .NET Framework 4.5.
+3. Assicurarsi che il framework di destinazione sia impostato sul .NET Framework 4.5, non sul profilo .NET Framework 4.5.
 
      Per altre informazioni, vedere [Procedura: Impostare come destinazione una versione del .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -158,11 +158,11 @@ ms.locfileid: "122123307"
 
 10. Scegliere il **pulsante OK** per aggiungere gli assembly al progetto.
 
-11. In **Esplora soluzioni**, nella cartella **Riferimenti** per il **progetto ProjectTemplateWizard** scegliere **EnvDTE**.
+11. In **Esplora soluzioni**, nella cartella **Riferimenti** per il **progetto ProjectTemplateWizard** scegliere **EnvDTE.**
 
 12. Nella finestra **Proprietà** modificare il valore della proprietà Incorpora tipi **di** interoperabilità in **False.**
 
-13. Se si sta sviluppando un progetto Visual Basic, importare lo spazio dei nomi ProjectTemplateWizard nel progetto usando Project **Designer.**
+13. Se si sta sviluppando un progetto Visual Basic, importare lo spazio dei nomi ProjectTemplateWizard nel progetto usando progettazione **Project .**
 
      Per altre informazioni, [vedere Procedura: Aggiungere o rimuovere spazi dei ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)nomi importati &#40;Visual Basic&#41;.
 
@@ -170,7 +170,7 @@ ms.locfileid: "122123307"
 
 1. In **Esplora soluzioni** scegliere il **nodo del progetto SharePointCommands.**
 
-2. Nella barra dei menu scegliere **Project**, Aggiungi **elemento esistente**.
+2. Sulla barra dei menu scegliere **Project**, Aggiungi **elemento esistente**.
 
 3. Nella finestra **di dialogo Aggiungi** elemento esistente passare alla cartella che contiene i file di codice per il progetto ProjectTemplateWizard e quindi scegliere il file di codice **CommandIds.**
 
@@ -180,7 +180,7 @@ ms.locfileid: "122123307"
 
 5. Nel **progetto SharePointCommands** aggiungere un altro file di codice denominato Commands.
 
-6. Scegliere il progetto SharePointCommands e quindi nella barra dei menu **scegliere** Project  >  **Aggiungi riferimento.**
+6. Scegliere il progetto SharePointCommands e quindi nella barra dei menu scegliere **Project**  >  **Aggiungi riferimento.**
 
 7. Espandere il **nodo Assembly,** scegliere il **nodo Estensioni** e quindi selezionare le caselle di controllo accanto agli assembly seguenti:
 
@@ -260,7 +260,7 @@ ms.locfileid: "122123307"
 
      :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml" id="Snippet11":::
 
-3. Se si sviluppa un progetto Visual Basic, rimuovere lo spazio dei nomi dal nome della classe `ProjectTemplateWizard` `Page1` `x:Class` nell'attributo `UserControl` dell'elemento . Si trova nella prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile alla seguente.
+3. Se si sviluppa un progetto Visual Basic, rimuovere lo spazio dei nomi `ProjectTemplateWizard` dal nome della classe `Page1` `x:Class` nell'attributo `UserControl` dell'elemento . Si trova nella prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile alla seguente.
 
     ```xml
     <UserControl x:Class="Page1"
@@ -281,7 +281,7 @@ ms.locfileid: "122123307"
 
      :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml" id="Snippet12":::
 
-3. Se si sviluppa un progetto Visual Basic, rimuovere lo spazio dei nomi dal nome della classe `ProjectTemplateWizard` `Page2` `x:Class` nell'attributo `UserControl` dell'elemento . Si trova nella prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile alla seguente.
+3. Se si sviluppa un progetto Visual Basic, rimuovere lo spazio dei nomi `ProjectTemplateWizard` dal nome della classe `Page2` `x:Class` nell'attributo `UserControl` dell'elemento . Si trova nella prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile alla seguente.
 
     ```xml
     <UserControl x:Class="Page2"
@@ -293,7 +293,7 @@ ms.locfileid: "122123307"
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs" id="Snippet3":::
 
 ## <a name="implement-the-wizard"></a>Implementare la procedura guidata
- Definire la funzionalità principale della procedura guidata implementando <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> l'interfaccia . Questa interfaccia definisce i metodi che Visual Studio quando la procedura guidata viene avviata e completata e in determinati momenti durante l'esecuzione della procedura guidata.
+ Definire la funzionalità principale della procedura guidata implementando <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> l'interfaccia . Questa interfaccia definisce i metodi che Visual Studio chiama all'avvio e al termine della procedura guidata e in determinati momenti durante l'esecuzione della procedura guidata.
 
 #### <a name="to-implement-the-wizard"></a>Per implementare la procedura guidata
 
@@ -364,7 +364,7 @@ ms.locfileid: "122123307"
 
 2. Ottenere il token di chiave pubblica per l'assembly della procedura guidata.
 
-3. Aggiungere un riferimento all'assembly della procedura guidata nel file con estensione vstemplate per il modello **di progetto Colonna** sito.
+3. Aggiungere un riferimento all'assembly della procedura guidata nel file con estensione vstemplate per il **modello di progetto Colonna** sito.
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>Per firmare l'assembly della procedura guidata con un nome sicuro
 
@@ -376,11 +376,11 @@ ms.locfileid: "122123307"
 
 4. Nella finestra **di dialogo** Crea chiave con nome sicuro immettere un nome per il nuovo file di chiave, deselezionare la casella di controllo Proteggi il file di chiave con **una password** e quindi scegliere **OK.**
 
-5. Aprire il menu di scelta rapida **per il progetto ProjectTemplateWizard** e quindi scegliere **Compila** per creare il file ProjectTemplateWizard.dll progetto.
+5. Aprire il menu di scelta rapida per **il progetto ProjectTemplateWizard** e quindi scegliere **Compila** per creare il file ProjectTemplateWizard.dll progetto.
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Per ottenere il token di chiave pubblica per l'assembly della procedura guidata
 
-1. Nel **menu Start scegliere** Tutti **i** programmi, scegliere **Microsoft Visual Studio**, scegliere **Strumenti di Visual Studio** e quindi scegliere **Prompt dei comandi per gli sviluppatori**.
+1. Nel **menu Start scegliere** Tutti **i** programmi, **scegliere** Microsoft Visual Studio, scegliere **Strumenti di Visual Studio** e quindi scegliere **Prompt dei comandi per gli sviluppatori**.
 
      Verrà Visual Studio finestra del prompt dei comandi.
 
@@ -396,7 +396,7 @@ ms.locfileid: "122123307"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Per aggiungere un riferimento all'assembly della procedura guidata nel file con estensione vstemplate
 
-1. In **Esplora soluzioni** espandere il nodo di progetto **SiteColumnProjectTemplate** e aprire il file SiteColumnProjectTemplate.vstemplate.
+1. In **Esplora soluzioni** espandere il **nodo di progetto SiteColumnProjectTemplate** e aprire il file SiteColumnProjectTemplate.vstemplate.
 
 2. Alla fine del file aggiungere l'elemento `WizardExtension` seguente tra i tag e `</TemplateContent>` `</VSTemplate>` . Sostituire il *valore del token* dell'attributo con il token di chiave pubblica ottenuto nella procedura `PublicKeyToken` precedente.
 
@@ -412,9 +412,9 @@ ms.locfileid: "122123307"
 3. Salvare e chiudere il file.
 
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>Aggiungere parametri sostituibili al file Elements.xml nel modello di progetto
- Aggiungere diversi parametri sostituibili al file *Elements.xml* nel progetto SiteColumnProjectTemplate. Questi parametri vengono inizializzati nel `RunStarted` metodo nella classe definita in `SiteColumnProjectWizard` precedenza. Quando un utente crea un progetto Colonna del sito, Visual Studio sostituisce automaticamente questi parametri nel file *Elements.xml* nel nuovo progetto con i valori specificati nella procedura guidata.
+ Aggiungere diversi parametri sostituibili al file *Elements.xml* nel progetto SiteColumnProjectTemplate. Questi parametri vengono inizializzati nel `RunStarted` metodo nella classe definita in `SiteColumnProjectWizard` precedenza. Quando un utente crea un progetto colonna del sito, Visual Studio sostituisce automaticamente questi parametri nel file *Elements.xml* nel nuovo progetto con i valori specificati nella procedura guidata.
 
- Un parametro sostituibile è un token che inizia e termina con il simbolo del dollaro ($). Oltre a definire i propri parametri sostituibili, è possibile usare parametri predefiniti definiti e inizializzati dal sistema SharePoint progetto. Per altre informazioni, vedere [Parametri sostituibili.](../sharepoint/replaceable-parameters.md)
+ Un parametro sostituibile è un token che inizia e termina con il simbolo del dollaro ($). Oltre a definire parametri sostituibili personalizzati, è possibile usare parametri predefiniti definiti e inizializzati dal sistema di SharePoint progetto. Per altre informazioni, vedere [Parametri sostituibili.](../sharepoint/replaceable-parameters.md)
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Per aggiungere parametri sostituibili al file Elements.xml file
 
@@ -463,12 +463,12 @@ ms.locfileid: "122123307"
 
 8. **Nell'elenco Origine** scegliere **Un progetto nella soluzione corrente**.
 
-9. **Nell'Project** selezionare il progetto **SharePointCommands** e quindi fare clic sul **pulsante OK.**
+9. **Nell'Project** selezionare il **progetto SharePointCommands** e quindi fare clic sul **pulsante OK.**
 
 10. Sulla barra dei menu scegliere **Compila** soluzione e quindi assicurarsi che la  >  soluzione sia compilata senza errori.
 
 ## <a name="test-the-wizard"></a>Testare la procedura guidata
- A questo punto è possibile testare la procedura guidata. Avviare prima di tutto il debug della soluzione SiteColumnProjectItem nell'istanza sperimentale di Visual Studio. Testare quindi la procedura guidata per il progetto Colonna sito nell'istanza sperimentale di Visual Studio. Infine, compilare ed eseguire il progetto per verificare che la colonna del sito funzioni come previsto.
+ A questo punto è possibile testare la procedura guidata. Avviare prima di tutto il debug della soluzione SiteColumnProjectItem nell'istanza sperimentale di Visual Studio. Testare quindi la procedura guidata per il progetto Site Column nell'istanza sperimentale di Visual Studio. Infine, compilare ed eseguire il progetto per verificare che la colonna del sito funzioni come previsto.
 
 #### <a name="to-start-debugging-the-solution"></a>Per avviare il debug della soluzione
 
@@ -478,7 +478,7 @@ ms.locfileid: "122123307"
 
 3. Sulla barra dei menu scegliere **Debug**  >  **eccezioni**.
 
-4. Nella finestra **di** dialogo Eccezioni  assicurarsi che  le caselle di controllo Generato e Non gestito dall'utente per Eccezioni **Common Language Runtime** siano deselezionate e quindi scegliere **OK.**
+4. Nella finestra **di** dialogo Eccezioni  assicurarsi che  le caselle di controllo Generata e Non gestite dall'utente per Eccezioni **Common Language Runtime** siano deselezionate e quindi scegliere **OK.**
 
 5. Avviare il debug scegliendo **il tasto F5** o, sulla barra dei menu, scegliendo **Debug**  >  **Avvia debug**.
 
@@ -486,9 +486,9 @@ ms.locfileid: "122123307"
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Per testare la procedura guidata in Visual Studio
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **File**  >    >  **nuovo Project**.
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **File**  >  **nuovo**  >  **Project**.
 
-2. Espandere il nodo **Visual C#** o il nodo **Visual Basic** (a seconda del linguaggio che supporta il modello di progetto), espandere il nodo **SharePoint** e quindi scegliere il **nodo 2010.**
+2. Espandere il nodo **Visual C#** o il nodo **Visual Basic (a** seconda del linguaggio che supporta il modello di progetto), espandere il nodo **SharePoint** e quindi scegliere il **nodo 2010.**
 
 3. Nell'elenco dei modelli di progetto scegliere **Colonna** del sito, assegnare al progetto il nome **SiteColumnWizardTest** e quindi scegliere **OK.**
 
@@ -496,13 +496,13 @@ ms.locfileid: "122123307"
 
 5. Continuare a eseguire il debug del progetto scegliendo **il tasto F5** o, sulla barra dei menu, scegliendo **Debug**  >  **Continua**.
 
-6. Nella **Personalizzazione SharePoint guidata** immettere l'URL del sito da usare per il debug, quindi scegliere **il pulsante** Avanti.
+6. Nella **Personalizzazione SharePoint guidata** immettere l'URL del sito che si vuole usare per il debug e quindi scegliere **il pulsante** Avanti.
 
 7. Nella seconda pagina della **Personalizzazione guidata SharePoint**, effettuare le selezioni seguenti:
 
    - **Nell'elenco Tipo** scegliere **Boolean**.
 
-   - **Nell'elenco Gruppo** scegliere **Colonne Sì/No personalizzate**.
+   - **Nell'elenco Gruppo** scegliere **Colonne sì/no personalizzate**.
 
    - Nella casella **Nome** immettere **Colonna Sì/No** e quindi scegliere il **pulsante** Fine.
 
@@ -514,14 +514,14 @@ ms.locfileid: "122123307"
 
 1. Nell'istanza sperimentale di Visual Studio premere **F5.**
 
-     La colonna del sito viene in pacchetto e distribuita nel SharePoint specificato dalla proprietà **URL** sito del progetto. Il Web browser viene aperto nella pagina predefinita di questo sito.
+     La colonna del sito viene in pacchetto e distribuita nel SharePoint specificato dalla proprietà **URL** sito del progetto. Il Web browser si apre alla pagina predefinita di questo sito.
 
     > [!NOTE]
     > Se viene **visualizzata la finestra di** dialogo Debug script disabilitato , scegliere il **pulsante** Sì per continuare a eseguire il debug del progetto.
 
 2. Nel menu **Azioni sito** scegliere Sito **Impostazioni**.
 
-3. Nella pagina Impostazioni sito, in **Raccolte,** scegliere il **collegamento Colonne del** sito.
+3. Nella pagina Impostazioni, in **Raccolte,** scegliere il **collegamento Colonne del** sito.
 
 4. Nell'elenco delle colonne del sito verificare che un gruppo Colonne **Sì/No** personalizzato contenga una colonna denominata Colonna **Sì/No** personale e quindi chiudere il Web browser.
 

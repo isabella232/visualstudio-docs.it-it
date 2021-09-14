@@ -1,5 +1,5 @@
 ---
-description: Recupera il valore di età di un file con estensione pdb.
+description: Recupera il valore age di un file con estensione pdb.
 title: IDiaSymbol::get_age | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d99303e34e1e1249cad9af81cd7c42a62b197a8c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709966"
 ---
 # <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
-Recupera il valore di età di un file con estensione pdb.
+Recupera il valore age di un file con estensione pdb.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,16 +35,16 @@ HRESULT get_age (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il valore di età di un file con estensione pdb.
+[out] Restituisce il valore relativo all'età di un file con estensione pdb.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o codice `S_FALSE` di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- L'età non corrisponde necessariamente ad alcun valore di ora noto. viene in genere usato per determinare se un file con estensione pdb non è sincronizzato con un file .exe corrispondente.
+ L'età non corrisponde necessariamente ad alcun valore di ora noto; viene in genere usato per determinare se un file con estensione pdb non è sincronizzato con un file .exe corrispondente.
 
 ## <a name="requirements"></a>Requisiti
 

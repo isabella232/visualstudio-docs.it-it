@@ -1,16 +1,16 @@
 ---
 title: Visual Studio per Mac per Windows utenti
-description: Introduzione al Visual Studio per Mac per gli sviluppatori che hanno familiarità con l'uso Visual Studio nel Windows operativo.
+description: Introduzione al Visual Studio per Mac per gli sviluppatori che hanno familiarità con l'Visual Studio nel Windows operativo.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
 ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710443"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio per Mac per Windows utenti
 
@@ -24,7 +24,7 @@ La prima volta che si esegue Visual Studio per Mac verrà visualizzata la finest
 
 Se si vogliono modificare i tasti di scelta in un secondo momento, è possibile trovare l'impostazione nelle preferenze: ![ Preferenze dei tasti di scelta](media/customizing-the-ide-image10a.png)
 
-È importante notare che macOS usa tasti di scelta rapida diversi a livello di sistema per Windows. La modifica delle preferenze di tasti di scelta rapida consentirà di usare i tasti di scelta Windows in Visual Studio per Mac. Tuttavia, in altre aree di macOS è necessario avere familiarità con i tasti di scelta rapida di macOS.
+È importante notare che macOS usa diversi collegamenti a livello di sistema per Windows. La modifica delle preferenze di tasti di scelta rapida consentirà di usare i tasti di scelta Windows in Visual Studio per Mac. Tuttavia, in altre aree di macOS è necessario avere familiarità con i tasti di scelta rapida di macOS.
 
 Il tasto di modifica comando macOS (⌘) può in genere sostituire il tasto CTRL in Windows. Ecco alcuni esempi e altri tasti di scelta rapida di uso comune:
 
@@ -35,7 +35,7 @@ Il tasto di modifica comando macOS (⌘) può in genere sostituire il tasto CTRL
 |Taglia                    |`Ctrl + X`               |`⌘ + X`             |
 |Annulla                   |`Ctrl + Z`               |`⌘ + Z`             |
 |Ripeti                   |`Ctrl + Shift + Z`       |`⌘ + Shift + Z`     |
-|Eliminare a destra del cursore |`Delete`                 |`fn + Backspace`    |
+|Elimina a destra del cursore |`Delete`                 |`fn + Backspace`    |
 |Eliminare una parola            |`Ctrl + Delete`          |`fn + ⌥ + Backspace`|
 
 > [!TIP]
@@ -48,10 +48,10 @@ I menu in macOS sono organizzati in modo diverso rispetto ai menu in Windows. Vi
 |Attività                   |Visual Studio (Windows)                                              |Visual Studio per Mac                |
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |Preferenze (opzioni)  |Strumenti > opzioni...                                                   |Visual Studio > preferenze...       |
-|Estensioni             |Estensioni > gestione estensioni                                       |Visual Studio > estensioni...        |
+|Estensioni             |Estensioni > gestione estensioni                                       |Visual Studio >...        |
 |Layout                |Finestra > Applica layout finestra > [Seleziona layout]                       |Visualizzare > layout > [Selezionare il layout]               |
 |Aggiornamenti                |Guida > verificare la disponibilità di aggiornamenti                                             |Visual Studio > verificare la disponibilità di aggiornamenti... |
-|Gestione pacchetti NuGet  |Strumenti > NuGet Gestione pacchetti > gestione NuGet pacchetti o soluzione... |Project > Gestire NuGet pacchetti...   |
+|Gestione pacchetti NuGet  |Strumenti > NuGet Gestione pacchetti > gestione NuGet pacchetti o soluzione... |Project > gestire NuGet pacchetti...   |
 |Trovare gli strumenti             |Modifica > trova e sostituisci > [strumento Seleziona]                              |Cerca > [strumento Seleziona]               |
 |Informazioni su Visual Studio    |Guida > informazioni Microsoft Visual Studio                                 |Visual Studio > informazioni Visual Studio  
 

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b2860214acc534b43c4c47ea837e74c18eb6fbe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122103052"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711834"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 Contiene una matrice di oggetti che descrivono i programmi di interesse.

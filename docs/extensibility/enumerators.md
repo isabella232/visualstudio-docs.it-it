@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4451735a5fa5127614a385be3010f1ea4bf9ad01
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122070342"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711774"
 ---
 # <a name="enumerators"></a>Enumerators
 Questa sezione elenca i tipi di dati dell'enumeratore nell'API plug-in del controllo del codice sorgente che il plug-in del controllo del codice sorgente deve conoscere.
@@ -37,7 +37,7 @@ Questa sezione elenca i tipi di dati dell'enumeratore nell'API plug-in del contr
 
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) Richiede all'utente le opzioni avanzate per il comando specificato.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Esamina l'elenco dei file per il relativo stato corrente. Usa inoltre la funzione per inviare una notifica al chiamante quando `pfnPopulate` un file non corrisponde ai criteri per `nCommand` .
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Esamina l'elenco dei file per verificare lo stato corrente. Usa inoltre la funzione `pfnPopulate` per notificare al chiamante quando un file non corrisponde ai criteri per `nCommand` .
 
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Descrive la funzione di callback utilizzata da [SccOpenProject](../extensibility/sccopenproject-function.md) per visualizzare i messaggi dal plug-in del controllo del codice sorgente tramite l'IDE.
 

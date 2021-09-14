@@ -180,6 +180,8 @@
               href: assign-license-bulk.md
             - name: Assegnare sottoscrizioni specifiche
               href: assign-guid.md
+        - name: Spostare le sottoscrizioni in nuovi contratti
+          href: migrate-subscriptions.md
         - name: Modificare sottoscrizioni
           href: edit-license.md
         - name: Eliminare sottoscrizioni

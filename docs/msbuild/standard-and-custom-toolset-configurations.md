@@ -15,11 +15,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a4bb47a8519839ab33344764a5bbdcfb03e5f4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625506"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurazioni standard e personalizzate del set di strumenti
 
@@ -79,7 +79,7 @@ Visual Studio 2017 e versioni successive non usano una chiave del Registro di si
 
  Se un set di strumenti standard non soddisfa i requisiti di compilazione, è possibile creare un set di strumenti personalizzato. Ad esempio, potrebbe essere presente uno scenario del lab di compilazione in cui è necessario disporre di un sistema separato per la compilazione di progetti C++. Usando un set di strumenti personalizzato, è possibile assegnare valori personalizzati all'attributo quando si creano progetti o si `ToolsVersion` *MSBuild.exe*. In questo modo, è anche possibile usare la proprietà per importare file con estensione targets da tale directory, nonché definire proprietà personalizzate del set di strumenti che possono essere usate per qualsiasi progetto che usa tale set `$(MSBuildToolsPath)` di strumenti. 
 
- Specificare un set di strumenti personalizzato nel file di configurazione per *MSBuild.exe* (o per lo strumento personalizzato che ospita il motore MSBuild, se in uso). Ad esempio, il file di configurazione per *MSBuild.exe* può includere la definizione di set di strumenti seguente se si vuole definire un set di strumenti denominato *MyCustomToolset*.
+ Specificare un set di strumenti personalizzato nel file di configurazione per *MSBuild.exe* (o per lo strumento personalizzato che ospita il motore di MSBuild, se in uso). Ad esempio, il file di configurazione per *MSBuild.exe* può includere la definizione di set di strumenti seguente se si vuole definire un set di strumenti denominato *MyCustomToolset*.
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">

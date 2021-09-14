@@ -1,6 +1,6 @@
 ---
 title: VSPerfReport | Microsoft Docs
-description: Si apprenderà che lo strumento da riga di comando VSPerfReport viene usato per creare report usando Visual Studio Strumenti di profilatura file di dati di profilatura.
+description: Informazioni su come usare lo strumento da riga di comando VSPerfReport per creare report usando Visual Studio Strumenti di profilatura di dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ef7d9f356cd0babe78e1364aacb3657f762f31ef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710143"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file con estensione *csv*.

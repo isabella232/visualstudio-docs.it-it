@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a93abff7aa65e61830065c3217fb0fb4b37bd93a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637019"
 ---
 # <a name="debug-python-and-c-together"></a>Debug contemporaneo di codice Python e C++
 
@@ -37,7 +37,7 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
 
 ![Debug in modalità mista per Python in Visual Studio](media/mixed-mode-debugging.png)
 
-![icona della fotocamera del film per il video](../install/media/video-icon.png "Guardare un video") Per un'introduzione alla compilazione, al test e al debug di moduli C nativi con Visual Studio, vedere [Approfondimento:](https://youtu.be/D9RlT06a1EI) Creare moduli nativi (youtube.com, 9m 09s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017.
+![icona della fotocamera del film per il video](../install/media/video-icon.png "Guardare un video") Per un'introduzione alla compilazione, al test e al debug di moduli C nativi con Visual Studio, vedere [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: Creare moduli nativi youtube.com, 9m 09s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017.
 
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Abilitare il debug in modalità mista in un progetto Python
@@ -65,7 +65,7 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
 
 Visual Studio (2017 versione 15.5 e successive) supporta il debug in modalità mista da un progetto C/C++, ad esempio quando si [incorpora codice Python in un'altra applicazione come descritto in python.org](https://docs.python.org/3/extending/embedding.html). Per abilitare il debug in modalità mista, configurare il progetto C/C++ per avviare il **Debug Python/nativo**:
 
-1. Fare clic con il pulsante destro del mouse sul progetto C/C++ in **Esplora soluzioni** selezionare **Proprietà**.
+1. Fare clic con il pulsante destro del mouse sul progetto C/C++ in **Esplora soluzioni** e scegliere **Proprietà**.
 1. Selezionare la scheda **Debug**, selezionare **Debug Python/nativo** in **Debugger da avviare** e selezionare **OK**.
 
     ![Selezione del debugger Python/nativo in un progetto C/C++](media/mixed-mode-debugging-select-cpp-debugger.png)
@@ -80,7 +80,7 @@ Quando si usa questo metodo, tenere presente che non è possibile eseguire il de
 Per tutte le versioni precedenti di Visual Studio, il debug in modalità mista diretto viene abilitato solo quando si avvia un progetto Python in Visual Studio, perché i progetti C/C++ usano solo il debugger nativo. È comunque possibile collegare il debugger separatamente:
 
 1. Avviare il progetto C++ senza eseguire il debug (**Avvia** debug  >  **senza debug** o **CTRL** + **F5**).
-1. Selezionare **Debug**  >  **collegamento a processo**. Nella finestra di dialogo visualizzata selezionare il processo appropriato, quindi usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice** in cui è possibile selezionare **Python**:
+1. Selezionare **Esegui debug** connessione a  >  **processo**. Nella finestra di dialogo visualizzata selezionare il processo appropriato, quindi usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice** in cui è possibile selezionare **Python**:
 
     ![Selezione di Python come tipo di debug quando si allega un debugger](media/mixed-mode-debugging-attach-type.png)
 
@@ -96,7 +96,7 @@ Per tutte le versioni precedenti di Visual Studio, il debug in modalità mista d
 
 ### <a name="combined-call-stack"></a>Stack di chiamate combinato
 
-La **finestra Stack di** chiamate mostra gli stack frame nativi e Python interfoliati, con transizioni contrassegnate tra i due elementi:
+La **finestra Stack di** chiamate mostra gli stack frame nativi e Python interleaved, con transizioni contrassegnate tra i due elementi:
 
 ![Stack di chiamate combinato con debug in modalità mista](media/mixed-mode-debugging-call-stack.png)
 
@@ -151,7 +151,7 @@ Il nodo **[Visualizzazione C++]** offre una rappresentazione della struttura C/C
 
 ![Visualizzazione C++ nella finestra Variabili locali](media/mixed-mode-debugging-cpp-view.png)
 
-Se un campo figlio di un oggetto è di tipo o uno degli altri tipi supportati, ha un nodo di rappresentazione `PyObject` **[visualizzazione Python]** (se tali rappresentazioni sono abilitate), rendendo possibile spostarsi tra gli oggetti grafici in cui i collegamenti non sono esposti direttamente a Python.
+Se un campo figlio di un oggetto è di tipo o uno degli altri tipi supportati, ha un nodo di rappresentazione `PyObject` **[visualizzazione Python]** (se queste rappresentazioni sono abilitate), rendendo possibile esplorare gli oggetti grafici in cui i collegamenti non sono esposti direttamente a Python.
 
 A **differenza dei nodi [visualizzazione Python],** che usano i metadati dell'oggetto Python per determinare il tipo di oggetto, non esiste un meccanismo affidabile simile per **[visualizzazione C++]**. In termini generali, dato un valore Python, ovvero un riferimento a `PyObject`, non è possibile determinare in modo affidabile la struttura C/C++ sottostante. Il debugger in modalità mista tenta di dedurre il tipo esaminando i vari campi del tipo dell'oggetto (ad esempio `PyTypeObject` a cui fa riferimento il campo `ob_type` corrispondente) che hanno tipi di puntatore a funzione. Se uno di questi puntatori a funzione fa riferimento a una funzione che può essere risolta e tale funzione ha un parametro `self` con un tipo più specifico di `PyObject*`, si presuppone che tale tipo sia il tipo sottostante. Ad esempio, se `ob_type->tp_init` di un oggetto specificato fa riferimento alla funzione seguente:
 

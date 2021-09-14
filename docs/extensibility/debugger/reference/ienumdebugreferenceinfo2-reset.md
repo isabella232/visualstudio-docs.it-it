@@ -1,5 +1,5 @@
 ---
-description: Reimposta l'enumerazione sul primo DEBUG_REFERENCE_INFO elemento .
+description: Reimposta l'enumerazione sul primo DEBUG_REFERENCE_INFO elemento.
 title: IEnumDebugReferenceInfo2::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0deb4eecec8923d1974a5a1c6e694ce7e0dd3ed9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110839"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636284"
 ---
 # <a name="ienumdebugreferenceinfo2reset"></a>IEnumDebugReferenceInfo2::Reset
 Reimposta l'enumerazione sul primo elemento.

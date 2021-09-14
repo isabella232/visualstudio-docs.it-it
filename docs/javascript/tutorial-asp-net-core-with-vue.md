@@ -1,5 +1,5 @@
 ---
-title: Creare un ASP.NET Core app con Vue
+title: Creare un'app ASP.NET Core con Vue
 description: In questa esercitazione si crea un'app usando ASP.NET Core e Vue
 ms.date: 08/09/2021
 ms.topic: tutorial
@@ -14,17 +14,17 @@ ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
 ms.openlocfilehash: 50ee00867e6729c269753edeb0cdfa44f3215c3f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027912"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625757"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>Esercitazione: Creare un'app ASP.NET Core con Vue in Visual Studio
 
-Questo articolo illustra come compilare un progetto ASP.NET Core per fungere da back-end dell'API e come progetto Vue come interfaccia utente.
+Questo articolo illustra come compilare un progetto ASP.NET Core per fungere da back-end api e come progetto Vue come interfaccia utente.
 
-Attualmente, Visual Studio modelli ASP.NET Core applicazione a pagina singola che supportano Angular, React e Vue. I modelli forniscono una cartella predefinita dell'app client nei progetti ASP.NET Core che contiene i file e le cartelle di base di ogni framework.
+Attualmente, Visual Studio include ASP.NET Core di applicazione a pagina singola che supportano Angular, React e Vue. I modelli forniscono una cartella app client predefinita nei progetti ASP.NET Core che contiene i file e le cartelle di base di ogni framework.
 
 A partire Visual Studio 2022 Preview 2, è possibile usare il metodo descritto in questo articolo per creare ASP.NET Core a pagina singola che:
 
@@ -36,7 +36,7 @@ A partire Visual Studio 2022 Preview 2, è possibile usare il metodo descritto i
 Assicurarsi di avere installato quanto segue:
 
 - Visual Studio 2022 Preview 2 o versione successiva con il carico di **lavoro ASP.NET sviluppo** Web e web installato. Passare alla pagina [Visual Studio download per](https://visualstudio.microsoft.com/downloads/) installarlo gratuitamente.
-  Se è necessario installare il carico di lavoro e si dispone già di Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
+  Se è necessario installare il carico di lavoro ed è già Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 - npm ( [https://www.npmjs.com/](https://www.npmjs.com/) ) 
 - Interfaccia della riga di comando di Vue ( [https://cli.vuejs.org/](https://cli.vuejs.org/) )  
 
@@ -50,20 +50,20 @@ Assicurarsi di avere installato quanto segue:
 
    :::image type="content" source="media/vs-2022/vue-choose-template.png" alt-text="Scelta di un modello":::
 
-1. Assegnare un nome al progetto e alla soluzione. Quando si arriva alla **finestra Informazioni** aggiuntive, assicurarsi di selezionare l'opzione Aggiungi integrazione **per** API Web ASP.NET Project vuota. Questa opzione aggiunge file al modello Vue in modo che possa essere collegato in un secondo momento con il ASP.NET Core progetto.
+1. Assegnare un nome al progetto e alla soluzione. Quando si arriva alla **finestra Informazioni** aggiuntive, assicurarsi di selezionare l'opzione Aggiungi integrazione **per** API Web ASP.NET Project vuoto. Questa opzione aggiunge file al modello Vue in modo che possa essere collegato in un secondo momento con il ASP.NET Core progetto.
 
    :::image type="content" source="media/vs-2022/asp-net-core-vue-additional-info.png" alt-text="Informazioni aggiuntive":::
 
 Dopo aver creato il progetto, vengono visualizzati alcuni file nuovi e modificati:
 
 - aspnetcore-https.js
-- vue.config.jssu (modificato)
+- vue.config.json (modificato)
 - HelloWorld.vue (modificato)
-- package.jssu (modificato)
+- package.json (modificato)
 
 ## <a name="create-the-backend-app"></a>Creare l'app back-end
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nome della soluzione, passare il mouse su Aggiungi **e** **quindi selezionare Nuovo Project**. 
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nome della soluzione, passare il puntatore del mouse su Aggiungi **e** **quindi scegliere Nuovo Project**. 
 
    :::image type="content" source="media/vs-2022/asp-net-core-add-project.png" alt-text="Aggiungere un nuovo progetto":::
 
@@ -75,7 +75,7 @@ Dopo aver creato il progetto, vengono visualizzati alcuni file nuovi e modificat
 
    Dopo aver creato il progetto, Esplora soluzioni dovrebbe essere simile al seguente:
 
-   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-solution-explorer.png" alt-text="Esaminare le Esplora soluzioni":::
+   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-solution-explorer.png" alt-text="Esaminare i Esplora soluzioni":::
 
 ## <a name="set-the-project-properties"></a>Impostare le proprietà del progetto
 
@@ -87,9 +87,9 @@ Dopo aver creato il progetto, vengono visualizzati alcuni file nuovi e modificat
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-vue-deselect-launch-browser.png" alt-text="Aprire l'interfaccia utente dei profili di avvio di debug"::: 
 
-1. Fare quindi clic con il pulsante destro del mouse sul progetto Vue e **scegliere** il menu Proprietà e passare alla **sezione** Debug. Modificare debugger per avviare l'opzione **launch.jsattivata.**
+1. Fare quindi clic con il pulsante destro del mouse sul progetto Vue e **scegliere** il menu Proprietà e passare alla **sezione** Debug. Modificare debugger per avviare l'opzione **launch.json.**
  
-   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-choose-debugger.png" alt-text="Scegliere il debugger (launch.jssu)":::
+   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-choose-debugger.png" alt-text="Scegliere il debugger (launch.json)":::
 
 ## <a name="set-the-startup-project"></a>Impostare il progetto di avvio
 
@@ -116,4 +116,4 @@ Può essere visualizzato l'errore seguente:
 [HPM] Error occurred while trying to proxy request /weatherforecast from localhost:4200 to https://localhost:5001 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
 ```
 
-Se si verifica questo problema, molto probabilmente il front-end è stato avviato prima del back-end. Dopo aver visualizzato il prompt dei comandi back-end in esecuzione, è sufficiente aggiornare l'app Vue nel browser.
+Se viene visualizzato questo problema, molto probabilmente il front-end è stato avviato prima del back-end. Dopo aver visualizzato il prompt dei comandi back-end in esecuzione, è sufficiente aggiornare l'app Vue nel browser.

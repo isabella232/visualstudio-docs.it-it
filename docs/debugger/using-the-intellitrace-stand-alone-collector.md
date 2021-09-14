@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f91f9692ab0cd6c9b8cc4cbaf9cdc44cd4d12ad5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146589"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710374"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Uso dell'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
 
@@ -83,7 +83,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1. Nel server dell'app creare la directory dell'agente di raccolta, ad esempio **C:\IntelliTraceCollector**
 
-2. Ottenere l'agente di raccolta [dall'Area](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)download [Microsoft, my.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)o dalla Visual Studio 2013 di installazione di Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):
+2. Ottenere l'agente di raccolta [dall'Area](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)download [Microsoft, my.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)o dalla cartella Visual Studio 2013 di installazione di Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):
 
    - **Area download Microsoft** **o my.visualstudio.com**:
 
@@ -124,7 +124,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1. Nel server dell'app aprire una finestra del prompt dei comandi come amministratore.
 
-2. Usare il comando di Windows **icacls** per concedere all'amministratore del server le autorizzazioni complete per la directory dell'agente di raccolta. Esempio:
+2. Usare il comando di Windows **icacls** per concedere all'amministratore del server le autorizzazioni complete per la directory dell'agente di raccolta. Ad esempio:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -132,13 +132,13 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
     1. Concedere alla persona che esegue i cmdlet PowerShell di IntelliTrace le autorizzazioni complete per la directory dell'agente di raccolta.
 
-         Esempio:
+         Ad esempio:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Concedere al pool di applicazioni per l'app Web o l'applicazione SharePoint le autorizzazioni di lettura ed esecuzione per la directory dell'agente di raccolta.
 
-         Esempio:
+         Ad esempio:
 
         - Per un'app Web nel pool **di applicazioni DefaultAppPool:**
 
@@ -168,7 +168,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
     2. Nella finestra di comando PowerShell, usare il comando **Import-Module** per importare **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
-         Esempio:
+         Ad esempio:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -186,7 +186,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 2. Per un'app Web o un'applicazione SharePoint, concedere al pool di applicazioni le autorizzazioni complete per la directory di file .iTrace. È possibile usare il comando Windows **icacls** oppure Esplora risorse (o Esplora file).
 
-    Esempio:
+    Ad esempio:
 
    - Per configurare le autorizzazioni con il comando Windows **icacls** :
 

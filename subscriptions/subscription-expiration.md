@@ -8,11 +8,11 @@ ms.date: 06/10/2021
 ms.topic: conceptual
 description: Informazioni su cosa accade alla scadenza Visual Studio sottoscrizione
 ms.openlocfilehash: 576be11954a406947d71a60945b7209f7ef6b688
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965716"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710428"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>Cosa accade alla scadenza della sottoscrizione
 Visual Studio le sottoscrizioni hanno durate specifiche e, a meno che non vengano rinnovate, scadranno.  Quando una sottoscrizione scade, i vantaggi offerti dalla sottoscrizione sono influenzati in modi diversi.  Questo articolo illustra in che modo la scadenza influisce sui vari aspetti di una Visual Studio sottoscrizione. 
@@ -26,22 +26,22 @@ La pagina di download del prodotto, , sarà ancora disponibile per poter scarica
 La pagina dei codici Product <https://my.visualstudio.com/productkeys> Key, , non è più disponibile.  Tutti i codici Product Key rivendicati in precedenza funzioneranno comunque come di consueto.  Tutti i limiti di installazione rimangono invariati.  Per esportare i codici Product Key rivendicati dopo la scadenza della sottoscrizione, visitare e fare <https://my.visualstudio.com/subscriptions> clic sul pulsante Esporta tutte **le** chiavi.  Non è possibile richiedere nuovi codici Product Key dopo la scadenza della sottoscrizione.
 
 ## <a name="benefits"></a>Vantaggi 
-Non tutti i vantaggi vengono influenzati nello stesso modo alla scadenza di una sottoscrizione.  Non è possibile attivare alcun vantaggio dopo la scadenza della sottoscrizione.  I vantaggi attivati in precedenza potrebbero essere ancora disponibili.  
+Non tutti i vantaggi sono influenzati nello stesso modo alla scadenza di una sottoscrizione.  Non è possibile attivare alcun vantaggio dopo la scadenza della sottoscrizione.  I vantaggi attivati in precedenza potrebbero essere ancora disponibili.  
 
 ### <a name="visual-studio-ide"></a>IDE di Visual Studio
-La maggior parte delle sottoscrizioni fornisce licenze perpetue per l Visual Studio IDE. Scaricare il white paper Visual Studio [licensing per](https://aka.ms/vslicensing) determinare se la sottoscrizione è idonea per i diritti di utilizzo perpetuo.  Se la sottoscrizione è idonea, si  continuerà ad accedere alla versione corrente dell'IDE, ma non si riceveranno aggiornamenti alle versioni future. Per continuare a usare l'IDE dopo la scadenza, è necessario passare alla pagina del codice [Product Key](https://my.visualstudio.com/productkeys) e scaricare il codice Product Key prima della scadenza **della sottoscrizione.**  Dopo aver attestato la chiave, è necessario immetterla per [attivare](https://docs.microsoft.com/visualstudio/ide/how-to-unlock-visual-studio?view=vs-2019#enter-a-product-key) l'installazione dell'IDE.  
+La maggior parte delle sottoscrizioni fornisce licenze perpetue per l Visual Studio IDE. Scaricare il white paper Visual Studio [licensing per](https://aka.ms/vslicensing) determinare se la sottoscrizione è idonea per i diritti di utilizzo perpetuo.  Se la sottoscrizione è idonea, si  continuerà ad avere accesso alla versione corrente dell'IDE, ma non si riceveranno aggiornamenti alle versioni future. Per continuare a usare l'IDE dopo la scadenza, è necessario passare alla pagina del codice [Product Key](https://my.visualstudio.com/productkeys) e scaricare il codice Product Key prima della scadenza **della sottoscrizione.**  Dopo aver attestato la chiave, è necessario immetterla per [attivare](https://docs.microsoft.com/visualstudio/ide/how-to-unlock-visual-studio?view=vs-2019#enter-a-product-key) l'installazione dell'IDE.  
 
 ### <a name="azure-devops"></a>Azure DevOps
 Azure DevOps acquisiti tramite una sottoscrizione Visual Studio non sarà disponibile.  
 
 ### <a name="azure-credits"></a>Crediti Azure
-I crediti mensili di Azure continueranno per un periodo di tempo limitato dopo la scadenza della sottoscrizione.  I crediti inutilizzati già applicati alla sottoscrizione di Azure nel mese corrente saranno ancora disponibili per l'uso.  Se si desidera continuare a usare le risorse di Azure di [](/azure/azure-resource-manager/management/move-resource-group-and-subscription) tale sottoscrizione dopo aver esaurito i crediti, è possibile trasferire tali risorse in un'altra sottoscrizione di Azure o convertire la sottoscrizione esistente in con pagamento in base al [consumo.](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)
+I crediti mensili di Azure continueranno per un periodo di tempo limitato dopo la scadenza della sottoscrizione.  I crediti inutilizzati già applicati alla sottoscrizione di Azure nel mese corrente saranno ancora disponibili per l'uso.  Se si vogliono continuare a usare le risorse di Azure da [](/azure/azure-resource-manager/management/move-resource-group-and-subscription) tale sottoscrizione dopo aver esaurito i crediti, è possibile trasferire tali risorse in un'altra sottoscrizione di Azure o convertire la sottoscrizione esistente in con pagamento in base al [consumo.](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)
 
 ### <a name="other-benefits"></a>Altri vantaggi 
-Molti dei vantaggi inclusi nelle sottoscrizioni Visual Studio hanno durate specifiche.  I vantaggi offerti dai partner Microsoft, ad esempio Pluralsight, DataCamp o WhiteSource, hanno limiti di tempo dopo l'attivazione.  I vantaggi attivati in precedenza continueranno a essere disponibili per il resto delle condizioni.  Ad esempio, se è stata attivata una sottoscrizione linkedin Learning di sei mesi e sono ancora rimasti quattro mesi alla scadenza della sottoscrizione di Visual Studio, si avrà comunque quattro mesi di accesso alla sottoscrizione di LinkedIn Learning.  
+Molti dei vantaggi inclusi nelle sottoscrizioni Visual Studio hanno durate specifiche.  I vantaggi offerti dai partner Microsoft, ad esempio Pluralsight, DataCamp o WhiteSource, hanno limiti di tempo dopo l'attivazione.  I vantaggi attivati in precedenza continueranno a essere disponibili per il resto delle condizioni.  Ad esempio, se è stata attivata una sottoscrizione LinkedIn Learning di sei mesi e sono ancora rimasti quattro mesi alla scadenza della sottoscrizione Visual Studio, si avrà comunque quattro mesi di accesso alla sottoscrizione di LinkedIn Learning.  
 
 ## <a name="resources"></a>Risorse
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere Visual Studio [Subscriptions support](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

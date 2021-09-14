@@ -1,5 +1,5 @@
 ---
-description: Fornisce metodi per eseguire una procedura di analisi dello stack usando le informazioni contenute nel file con estensione pdb.
+description: Fornisce metodi per eseguire una procedura di analisi dello stack usando le informazioni nel file con estensione pdb.
 title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c27a18923ae5b305702994e4d76be7dd291eb8c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113563"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636795"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-Fornisce metodi per eseguire una procedura di analisi dello stack usando le informazioni contenute nel file con estensione pdb.
+Fornisce metodi per eseguire una procedura di analisi dello stack usando le informazioni nel file con estensione pdb.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ Nella tabella seguente vengono illustrati i metodi di `IDiaStackWalker` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Recupera un enumeratore stack frame per piattaforme x86.|
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Recupera un enumeratore stack frame per le piattaforme x86.|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Recupera un enumeratore stack frame per un tipo di piattaforma specifico.|
 
 ## <a name="remarks"></a>Commenti

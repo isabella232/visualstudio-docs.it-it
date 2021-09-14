@@ -13,17 +13,17 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 54eeb75a623a7c20d0fad3f5f66e30c0b4617558
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069418"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710213"
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 
 A differenza di un linguaggio per utilizzo generico, ad esempio C# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere istruzioni in un particolare spazio di problemi o dominio.
 
-Le DSL note includono espressioni regolari e SQL. Ogni linguaggio DSL è molto migliore di un linguaggio generico per la descrizione delle operazioni su stringhe di testo o un database, ma molto di più per descrivere idee che non sono nel proprio ambito. Anche i singoli settori hanno dSL propri. Nel settore delle telecomunicazioni, ad esempio, le lingue di descrizione delle chiamate sono ampiamente usate per specificare la sequenza di stati in una chiamata telefonica e nel settore dei viaggi aerei viene usato un linguaggio DSL standard per descrivere le prenotazioni di voli.
+Le DSL note includono espressioni regolari e SQL. Ogni linguaggio DSL è molto migliore di un linguaggio generico per la descrizione delle operazioni su stringhe di testo o un database, ma molto di più per la descrizione di idee esterne al proprio ambito. I singoli settori hanno anche dSL propri. Nel settore delle telecomunicazioni, ad esempio, i linguaggi di descrizione delle chiamate sono ampiamente usati per specificare la sequenza di stati in una chiamata telefonica e nel settore dei viaggi aerei viene usato un linguaggio DSL standard per descrivere le prenotazioni di voli.
 
 L'azienda e il progetto si occupano anche di set speciali di concetti che possono essere descritti con un DSL. Ad esempio, è possibile definire un DSL per una di queste applicazioni:
 
@@ -35,7 +35,7 @@ L'azienda e il progetto si occupano anche di set speciali di concetti che posson
 
 Quando si progetta un DSL, si definisce una classe di dominio per ognuno dei concetti importanti del dominio, ad esempio una pagina Web, una lampadina o un banco check-in dell'aeroporto.  Per collegare *i concetti,* è possibile definire relazioni di dominio, ad esempio collegamento ipertestuale, cavo o nastro trasportatore.
 
-Gli utenti del DSL creano *modelli.* I modelli *sono* istanze del DSL. Ad esempio, descrivono un sito Web specifico, il cablaggio di un particolare dispositivo o il sistema di gestione dei bagagli in un determinato aeroporto.
+Gli utenti del DSL creano *modelli.* I modelli *sono istanze* del DSL. Ad esempio, descrivono un sito Web specifico, il cablaggio di un particolare dispositivo o il sistema di gestione dei bagagli in un determinato aeroporto.
 
 Gli utenti possono visualizzare un modello come diagramma o come Windows modulo. I modelli possono anche essere visualizzati come XML, ovvero come vengono archiviati. Quando si definisce un DSL, si definisce la modalità di visualizzazione delle istanze di ogni classe di dominio e relazione sullo schermo dell'utente. Un DSL tipico viene visualizzato come una raccolta di icone o rettangoli connessi tramite frecce.
 
@@ -81,7 +81,7 @@ Un linguaggio specifico di dominio deve avere un set ragionevolmente ridotto di 
 
 ### <a name="domain-model"></a>Modello di dominio
 
-Un linguaggio specifico di dominio deve combinare il set di elementi e le relazioni tra di essi in una grammatica coerente. Deve anche definire se le combinazioni di elementi e relazioni sono valide. Ad esempio, i linguaggi di programmazione impediscono in genere l'ereditarietà circolare, in cui una classe è derivata da una seconda classe e la seconda classe è derivata dalla prima classe. I vincoli possono essere usati anche per esprimere la logica di business, ad esempio una persona non può dipendere da se stesso. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa i vincoli per esprimere i tipi di restrizioni richiesti dalla maggior parte dei linguaggi specifici di dominio.
+Un linguaggio specifico di dominio deve combinare il set di elementi e le relazioni tra di essi in una grammatica coerente. Deve anche definire se le combinazioni di elementi e relazioni sono valide. Ad esempio, i linguaggi di programmazione impediscono in genere l'ereditarietà circolare, in cui una classe è derivata da una seconda classe e la seconda classe è derivata dalla prima classe. I vincoli possono essere usati anche per esprimere la logica di business, ad esempio una persona non può dipendere da se stesso. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa vincoli per esprimere i tipi di restrizioni richiesti dalla maggior parte dei linguaggi specifici di dominio.
 
 ### <a name="artifact-generation"></a>Generazione di artefatti
 
@@ -101,9 +101,9 @@ Poiché è ospitato in Visual Studio, estende molte finestre Visual Studio [!INC
 
 Un linguaggio specifico di dominio può offrire i vantaggi seguenti:
 
-- Contiene costrutti che si adattano esattamente allo spazio del problema.
+- Contiene costrutti che si adattano esattamente allo spazio problematico.
 
-     A differenza dei linguaggi per utilizzo generico, un linguaggio specifico di dominio è costituito da elementi e relazioni che rappresentano direttamente la logica dello spazio dei problemi. Ad esempio, un'applicazione di polizza assicurativa deve includere elementi per le polizze e i sinistri. Un linguaggio specifico di dominio semplifica la progettazione dell'applicazione e la ricerca e la correzione di errori di logica.
+     A differenza dei linguaggi per utilizzo generico, un linguaggio specifico di dominio è costituito da elementi e relazioni che rappresentano direttamente la logica dello spazio problematico. Ad esempio, un'applicazione di polizza assicurativa deve includere elementi per le polizze e i sinistri. Un linguaggio specifico di dominio semplifica la progettazione dell'applicazione e la ricerca e la correzione di errori di logica.
 
 - Consente a non sviluppatori e utenti che non conoscono il dominio di comprendere la progettazione complessiva.
 
@@ -113,7 +113,7 @@ Un linguaggio specifico di dominio può offrire i vantaggi seguenti:
 
      Gli sviluppatori possono usare il codice generato dal modello per creare un'applicazione prototipo che può essere mostrata ai client.
 
-## <a name="the-process-of-domain-specific-development"></a>Processo di sviluppo Domain-Specific
+## <a name="the-process-of-domain-specific-development"></a>Processo di Domain-Specific sviluppo
 
 La maggior parte dei team di sviluppo software che usano linguaggi specifici del dominio segue questa procedura per creare e usare i modelli:
 

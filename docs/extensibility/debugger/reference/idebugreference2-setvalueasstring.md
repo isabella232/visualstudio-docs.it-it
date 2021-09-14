@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6f582cc79b3feb2eb8a5be431431c405774d1409
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711907"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Imposta il valore di un riferimento da una stringa. Riservato per utilizzi futuri.
@@ -50,7 +50,7 @@ int SetValueAsString (
 [in] Valore come stringa.
 
 `dwRadix`\
-[in] Radice da utilizzare per la formattazione di qualsiasi informazione numerica.
+[in] Radice da utilizzare nella formattazione di qualsiasi informazione numerica.
 
 `dwTimeout`\
 [in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per attendere per un periodo indefinito.

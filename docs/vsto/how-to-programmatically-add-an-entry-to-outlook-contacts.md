@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 1f5ea3b9eb70a8b58dce76c214bea2625536873b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710079"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Procedura: Aggiungere a livello di codice una voce Outlook contatti
   In questo esempio viene creato un nuovo contatto e vengono immessi i dati nel nuovo contatto.

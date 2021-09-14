@@ -14,27 +14,27 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0ccbc7dd098112706fb26d19a35e7d961fd89842
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710267"
 ---
 # <a name="walkthrough-highlight-text"></a>Procedura dettagliata: Evidenziare il testo
-È possibile aggiungere diversi effetti visivi all'editor creando Managed Extensibility Framework componenti (MEF). Questa procedura dettagliata illustra come evidenziare ogni occorrenza della parola corrente in un file di testo. Se una parola si verifica più volte in un file di testo e si posiziona il cursore in un'occorrenza, ogni occorrenza viene evidenziata.
+È possibile aggiungere diversi effetti visivi all'editor creando Managed Extensibility Framework componenti mef (MeF). Questa procedura dettagliata illustra come evidenziare ogni occorrenza della parola corrente in un file di testo. Se una parola si trova più di una volta in un file di testo e si posiziona il cursore in un'occorrenza, ogni occorrenza viene evidenziata.
 
 ## <a name="prerequisites"></a>Prerequisiti
  A partire Visual Studio 2015, non si installa Visual Studio SDK dall'Area download. È incluso come funzionalità facoltativa nella configurazione Visual Studio configurazione. È anche possibile installare VS SDK in un secondo momento. Per altre informazioni, vedere [Installare Visual Studio SDK.](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-a-mef-project"></a>Creare un progetto MEF
 
-1. Creare un progetto VSIX C#. Nella finestra **di dialogo Nuovo Project** selezionare Visual **C# /Extensibility** e quindi **VSIX Project**. Assegnare alla soluzione il nome `HighlightWordTest` .
+1. Creare un progetto VSIX C#. Nella finestra **di dialogo Project** nuovo progetto selezionare Visual **C# /Extensibility**, quindi **VSIX Project**. Assegnare alla soluzione il nome `HighlightWordTest` .
 
-2. Aggiungere un modello di elemento Editor Classifier al progetto. Per altre informazioni, vedere [Creare un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Aggiungere un modello di elemento Editor Classifier al progetto. Per altre informazioni, vedere Creare [un'estensione con un modello di elemento dell'editor.](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
 3. Eliminare i file di classe esistenti.
 
-## <a name="define-a-textmarkertag"></a>Definire un oggetto TextMarkerTag
+## <a name="define-a-textmarkertag"></a>Definire un TextMarkerTag
  Il primo passaggio per evidenziare il testo consiste nel sottoclassare <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> e definirne l'aspetto.
 
 ### <a name="to-define-a-textmarkertag-and-a-markerformatdefinition"></a>Per definire textMarkerTag e MarkerFormatDefinition
@@ -125,7 +125,7 @@ ms.locfileid: "122028384"
 
 ### <a name="to-implement-a-tagger"></a>Per implementare un tagger
 
-1. Creare una classe che implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> di tipo e assegnare alla classe `HighlightWordTag` il nome `HighlightWordTagger` .
+1. Creare una classe che implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> di tipo `HighlightWordTag` e assegnare alla classe il nome `HighlightWordTagger` .
 
     ```csharp
     internal class HighlightWordTagger : ITagger<HighlightWordTag>
@@ -136,11 +136,11 @@ ms.locfileid: "122028384"
 
 2. Aggiungere i campi privati e le proprietà seguenti alla classe :
 
-    - Oggetto <xref:Microsoft.VisualStudio.Text.Editor.ITextView> che corrisponde alla visualizzazione di testo corrente.
+    - Oggetto <xref:Microsoft.VisualStudio.Text.Editor.ITextView> che corrisponde alla visualizzazione testo corrente.
 
-    - Oggetto <xref:Microsoft.VisualStudio.Text.ITextBuffer> che corrisponde al buffer di testo alla base della visualizzazione di testo.
+    - Oggetto <xref:Microsoft.VisualStudio.Text.ITextBuffer> che corrisponde al buffer di testo alla base della visualizzazione testo.
 
-    - Oggetto <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> utilizzato per trovare testo.
+    - Oggetto <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> utilizzato per trovare il testo.
 
     - Oggetto <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> che dispone di metodi per spostarsi all'interno di intervalli di testo.
 
@@ -164,7 +164,7 @@ ms.locfileid: "122028384"
 
     ```
 
-3. Aggiungere un costruttore che inizializza le proprietà elencate in precedenza e aggiunge <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> gestori <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> eventi e .
+3. Aggiungere un costruttore che inizializza le proprietà elencate in precedenza e aggiunge <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> i gestori eventi e <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> .
 
     ```csharp
     public HighlightWordTagger(ITextView view, ITextBuffer sourceBuffer, ITextSearchService textSearchService,
@@ -182,7 +182,7 @@ ms.locfileid: "122028384"
 
     ```
 
-4. Entrambi i gestori eventi chiamano il `UpdateAtCaretPosition` metodo .
+4. I gestori eventi chiamano entrambi il `UpdateAtCaretPosition` metodo .
 
     ```csharp
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
@@ -200,13 +200,13 @@ ms.locfileid: "122028384"
     }
     ```
 
-5. È anche necessario aggiungere `TagsChanged` un evento chiamato dal metodo update.
+5. È inoltre necessario aggiungere `TagsChanged` un evento chiamato dal metodo update.
 
     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkhighlightwordtest/cs/highlightwordtag.cs" id="Snippet10":::
     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhighlightwordtest/vb/highlightwordtag.vb" id="Snippet10":::
 
 
-6. Il metodo trova ogni parola nel buffer di testo identica alla parola in cui è posizionato il cursore e costruisce un elenco di oggetti che corrispondono alle occorrenze `UpdateAtCaretPosition()` <xref:Microsoft.VisualStudio.Text.SnapshotSpan> della parola. Chiama quindi `SynchronousUpdate` , che genera l'evento `TagsChanged` .
+6. Il metodo trova ogni parola nel buffer di testo identica alla parola in cui è posizionato il cursore e costruisce un elenco di oggetti che corrispondono alle `UpdateAtCaretPosition()` <xref:Microsoft.VisualStudio.Text.SnapshotSpan> occorrenze della parola. Chiama quindi `SynchronousUpdate` , che genera l'evento `TagsChanged` .
 
     ```csharp
     void UpdateAtCaretPosition(CaretPosition caretPosition)
@@ -288,7 +288,7 @@ ms.locfileid: "122028384"
 
     ```
 
-7. Esegue un aggiornamento sincrono sulle `SynchronousUpdate` proprietà e genera `WordSpans` `CurrentWord` `TagsChanged` l'evento .
+7. esegue `SynchronousUpdate` un aggiornamento sincrono delle proprietà e e `WordSpans` genera `CurrentWord` `TagsChanged` l'evento .
 
     ```csharp
     void SynchronousUpdate(SnapshotPoint currentRequest, NormalizedSnapshotSpanCollection newSpans, SnapshotSpan? newCurrentWord)
@@ -312,7 +312,7 @@ ms.locfileid: "122028384"
 
      In C# implementare questo metodo come iteratore yield, che consente la valutazione differita (ovvero la valutazione del set solo quando si accede a singoli elementi) dei tag. In Visual Basic aggiungere i tag a un elenco e restituire l'elenco.
 
-     In questo caso il metodo restituisce <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> un oggetto con un "blu" che fornisce uno sfondo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> blu.
+     In questo caso il metodo restituisce <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> un oggetto con un oggetto "blu" che fornisce uno sfondo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> blu.
 
     ```csharp
     public IEnumerable<ITagSpan<HighlightWordTag>> GetTags(NormalizedSnapshotSpanCollection spans)
@@ -359,7 +359,7 @@ ms.locfileid: "122028384"
 
 ### <a name="to-create-a-tagger-provider"></a>Per creare un provider di tagger
 
-1. Creare una classe `HighlightWordTaggerProvider` denominata che implementa ed <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> esportarla con un valore di <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" e <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> un di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> .
+1. Creare una classe `HighlightWordTaggerProvider` denominata che implementa ed <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> esportarla con un oggetto di tipo <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" e <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> un oggetto di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> .
 
     ```csharp
     [Export(typeof(IViewTaggerProvider))]
@@ -369,7 +369,7 @@ ms.locfileid: "122028384"
     { }
     ```
 
-2. Per creare un'istanza del tagger, è necessario importare due servizi <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> dell'editor, e <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> .
+2. È necessario importare due servizi editor, e <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> , per <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> creare un'istanza del tagger.
 
     ```csharp
     [Import]
@@ -403,7 +403,7 @@ ms.locfileid: "122028384"
 
 1. Compilare la soluzione.
 
-2. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
+2. Quando si esegue questo progetto nel debugger, viene avviata una seconda Visual Studio di .
 
 3. Creare un file di testo e digitare un testo in cui le parole vengono ripetute, ad esempio "hello hello hello".
 

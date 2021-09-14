@@ -1,6 +1,6 @@
 ---
 title: Dati privati per segnalazioni di problemi
-description: Informazioni su come mantenere i dati privati più sicuri quando si creano report sui problemi che gli sviluppatori Community esaminare.
+description: Informazioni su come mantenere i dati privati più sicuri quando si creano segnalazioni di problemi che gli sviluppatori Community esaminare.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ecfcbb6cf6e7681bfd68375f1e4b447c23fac83
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048999"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711675"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -43,7 +43,7 @@ Se si è preoccupati per la privacy dei dati, non inserire informazioni che si v
 3. Aggiungere la descrizione ed eventuali altre informazioni, immagini e allegati di file necessari per la procedura di riproduzione. Scegliere il pulsante **Invia** per inviare queste informazioni privatamente.
 
    > [!NOTE]
-   > Nel sito Community developer è previsto un limite di 2 GB per i file allegati e un massimo di 10 file. Se è necessario caricare un file di dimensioni maggiori, è possibile inviare una nuova segnalazione del problema o richiedere un URL di caricamento da un dipendente Microsoft in un commento privato.
+   > Nel sito Web Community developer è previsto un limite di 2 GB per i file allegati e un massimo di 10 file. Se è necessario caricare un file di dimensioni maggiori, è possibile inviare una nuova segnalazione del problema o richiedere un URL di caricamento da un dipendente Microsoft in un commento privato.
    > Quando si chiude un problema, gli allegati associati verranno eliminati dopo 90 giorni.
 
 Per garantire la privacy e assicurarsi che le informazioni riservate non siano visualizzabili pubblicamente, gestire sempre le interazioni con Microsoft in modo da rispondere usando un commento con visibilità limitata. Le risposte ad altri commenti potrebbero accidentalmente divulgare informazioni riservate.
@@ -72,9 +72,9 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
 - Log Python, se esistenti
 
-- Log dell'editor Razor LSP, se presenti
+- Log dell'editor LSP Razor, se esistenti
 
-- Windows Log dei moduli, se presenti
+- Windows Log dei moduli, se esistenti
 
 - Uno screenshot, se si sceglie di includerlo
 
@@ -87,7 +87,7 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
   - File dump
 
 > [!NOTE]
-> I file di log, gli screenshot e la registrazione dei dati inviati possono aumentare significativamente la capacità di Microsoft di comprendere e rispondere al problema.  È quindi consigliabile includerli. Per proteggere la privacy, tutti i file di log allegati, gli screenshot e i dati di registrazione vengono inviati solo a Microsoft quando si fornisce l'autorizzazione inviando la segnalazione del problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "Segnala un problema" prima di inviare il report. È possibile escludere i file di log di sistema dal report deselezionando "Collega log di sistema" nel passaggio "Riepilogo". Per informazioni di riferimento, vedere lo screenshot seguente. 
+> I file di log, gli screenshot e la registrazione dei dati inviati possono aumentare significativamente la capacità di Microsoft di comprendere e rispondere al problema.  È quindi consigliabile includerli. Per proteggere la privacy dell'utente, tutti i file di log allegati, gli screenshot e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando la segnalazione del problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "Segnala un problema" prima di inviare il report. È possibile escludere i file di log di sistema dal report deselezionando "Collega log di sistema" nel passaggio "Riepilogo". Per informazioni di riferimento, vedere lo screenshot seguente. 
   > ![Segnalare un problema - Riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
 
 

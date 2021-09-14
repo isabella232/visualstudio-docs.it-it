@@ -1,6 +1,6 @@
 ---
 title: "Visualizzazione Puntatore all'istruzione: dati sui conflitti | Microsoft Docs"
-description: Informazioni su come la visualizzazione DEGLI INDIRIZZI IP dei dati relativi ai dati relativi ai contenuti contiene i dati relativi alle istruzioni dell'assembly a cui è stata bloccata l'esecuzione nell'esecuzione della profilatura.
+description: Informazioni su come la visualizzazione DEGLI INDIRIZZI IP dei dati sui contenuti elenca i dati per le istruzioni dell'assembly che sono state bloccate durante l'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 251e0ab0f4c9ad21e1f9fd0bc10db8f3395f47f3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076516"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637092"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Visualizzazione dei puntatori all'istruzione: dati sui conflitti
 Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elencati i dati per le istruzioni dell'assembly di cui è stata impedita l'esecuzione durante la profilatura.
@@ -48,5 +48,5 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)
-- [Visualizzazione Puntatori all'istruzione -campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione puntatori all'istruzione : campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)

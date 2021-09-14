@@ -1,6 +1,6 @@
 ---
 title: Project Tipi | Microsoft Docs
-description: Visual Studio include diversi tipi di progetto per linguaggi come Visual C# e Visual Basic. Visual Studio consente anche di creare tipi di progetto personalizzati.
+description: Visual Studio include diversi tipi di progetto per linguaggi quali Visual C# e Visual Basic. Visual Studio consente anche di creare tipi di progetto personalizzati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a218fba88620245c73cf16eb594c91e21db69b3a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042179"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636147"
 ---
 # <a name="project-types"></a>Tipi di progetto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] include diversi tipi di progetto per linguaggi quali [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente anche di creare tipi di progetto personalizzati.
@@ -39,7 +39,7 @@ ms.locfileid: "122042179"
 
 - [Aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Viene illustrato come aggiungere modelli ai tipi di progetto in modo che gli utenti possano creare nuovi progetti ed elementi di progetto in base a un modello.
+ Viene illustrato come aggiungere modelli ai tipi di progetto in modo che gli utenti possano creare nuovi progetti ed elementi di progetto in base a un criterio.
 
 - [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)
 
@@ -47,15 +47,15 @@ ms.locfileid: "122042179"
 
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
 
- Viene illustrato come i tipi di progetto possono supportare opzioni di configurazione come Debug e Versione che controllano la modalità di creazione, debug e così via dei progetti.
+ Viene illustrato in che modo i tipi di progetto possono supportare opzioni di configurazione come Debug e Release che controllano la modalità di creazione, debug e così via dei progetti.
 
 - [Supporto del controllo del codice sorgente](../../extensibility/internals/supporting-source-control.md)
 
- Vengono fornite informazioni su come aggiungere il supporto per i sistemi di controllo del codice sorgente ai tipi di progetto.
+ Fornisce informazioni su come aggiungere il supporto per i sistemi di controllo del codice sorgente ai tipi di progetto.
 
 - [Annidamento dei progetti](../../extensibility/internals/nesting-projects.md)
 
- Viene illustrato come i tipi di progetto possono supportare l'annidamento di , in modo che i progetti possano essere raggruppati **in** Esplora soluzioni . 
+ Viene illustrato come i tipi di progetto possono supportare *l'annidamento* di , in modo che i progetti possano essere raggruppati in **Esplora soluzioni**.
 
 - [Aggiornamento dei progetti](../../extensibility/internals/upgrading-projects.md)
 
@@ -68,12 +68,12 @@ ms.locfileid: "122042179"
 ## <a name="related-sections"></a>Sezioni correlate
 - [Gerarchie e selezione](../../extensibility/internals/hierarchies-and-selection.md)
 
- Fornisce una panoramica del modo in cui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'ambiente di sviluppo integrato (IDE) visualizza un progetto come gerarchia.
+ Viene fornita una panoramica del modo in cui l'ambiente di sviluppo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrato (IDE) visualizza un progetto come gerarchia.
 
 - [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)
 
- Vengono forniti collegamenti agli argomenti relativi ai sottotipi di progetto. Project sottotipi consentono l'estensione della maggior parte dei tipi di progetto, incluso il proprio.
+ Vengono forniti collegamenti ad argomenti relativi ai sottotipi di progetto. Project sottotipi consentono l'estensione della maggior parte dei tipi di progetto, incluso il proprio.
 
 - [Progetti](../../extensibility/internals/projects.md)
 
- Viene descritto come estendere il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sistema del progetto.
+ Viene descritto come estendere il sistema [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] del progetto.

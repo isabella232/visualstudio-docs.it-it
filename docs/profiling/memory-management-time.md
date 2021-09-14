@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ed5483c89e9435d5bd0712ef562e80fde2c73e26
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637083"
 ---
 # <a name="memory-management-time"></a>Tempo di gestione della memoria
 Questi segmenti nella sequenza temporale sono associati a tempi di blocco categorizzati come gestione della memoria. Questo scenario implica che un thread è bloccato da un evento associato a un'operazione di gestione della memoria quale il paging. Durante questo periodo, un thread è stato bloccato in un'API o in uno stato del kernel che il visualizzatore di concorrenza calcola come gestione della memoria. Si tratta di eventi come il paging e l'allocazione di memoria.

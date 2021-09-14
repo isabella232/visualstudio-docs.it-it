@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 71cc4ceceb2ef9b09ccc72102f0a38f5f98eeee2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710164"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usare i metodi di profilatura per raccogliere dati sulle prestazioni dalla riga di comando
 La scelta degli strumenti e delle opzioni della riga di comando per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dipende da fattori come il tipo di applicazione sottoposta a profilatura, il metodo di profilatura da usare e il fatto che l'applicazione di destinazione sia scritta in codice nativo o .NET Framework.
@@ -44,7 +44,7 @@ La scelta degli strumenti e delle opzioni della riga di comando per gli strument
 
 - [Componenti autonomi nativi](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
-- [Compilazione statica di ASP.NET Web](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [Compilate in modo statico ASP.NET web](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
 - [Applicazioni Web ASP.NET compilate in modo dinamico](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 

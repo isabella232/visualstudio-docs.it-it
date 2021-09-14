@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: f99b4e8a4f883d752d217bb1859822c65af07116
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102792"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711759"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo di routing dei comandi
 In Visual Studio comandi vengono gestiti da diversi componenti. I comandi vengono indirizzati dal contesto più interno, basato sulla selezione corrente, al contesto più esterno (noto anche come globale). Per altre informazioni, vedere [Disponibilità dei comandi](../../extensibility/internals/command-availability.md).
@@ -39,7 +39,7 @@ In Visual Studio comandi vengono gestiti da diversi componenti. I comandi vengon
 
 6. Finestra del documento: se il comando ha il flag impostato nel file con estensione vsct, Visual Studio cerca una destinazione comando nell'oggetto visualizzazione documento, ovvero un'istanza di un'interfaccia o un'istanza di un oggetto documento (in genere un'interfaccia o `RouteToDocs`  <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> un'interfaccia). Se l'oggetto visualizzazione documento non supporta il comando , Visual Studio il comando viene instradato <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> all'interfaccia restituita. Si tratta di un'interfaccia facoltativa per gli oggetti dati del documento.
 
-7. Gerarchia corrente: la gerarchia corrente può essere il progetto proprietario della finestra del documento attivo o della gerarchia selezionata in **Esplora soluzioni**. Visual Studio cerca <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia implementata nella gerarchia corrente o attiva. La gerarchia deve supportare comandi validi ogni volta che la gerarchia è attiva, anche se una finestra del documento di un elemento di progetto ha lo stato attivo. Tuttavia, i comandi che si applicano **solo quando Esplora soluzioni** ha lo stato attivo devono essere supportati usando l'interfaccia e i relativi metodi e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
+7. Gerarchia corrente: la gerarchia corrente può essere il progetto proprietario della finestra del documento attivo o della gerarchia selezionata **in** Esplora soluzioni . Visual Studio cerca <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia implementata nella gerarchia corrente o attiva. La gerarchia deve supportare comandi validi ogni volta che la gerarchia è attiva, anche se una finestra del documento di un elemento di progetto ha lo stato attivo. Tuttavia, i comandi che si applicano **solo quando Esplora soluzioni** ha lo stato attivo devono essere supportati usando l'interfaccia e i relativi metodi e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
 
      **I comandi Taglia**, **Copia** **,** **Incolla**, Elimina , **Rinomina**, **Invio** e **DoubleClick** richiedono una gestione speciale. Per informazioni su come gestire i **comandi Delete** **e Remove** nelle gerarchie, vedere l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> .
 

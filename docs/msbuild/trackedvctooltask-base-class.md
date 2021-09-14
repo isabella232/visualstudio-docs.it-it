@@ -13,12 +13,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd173bf92fbb5efea20efee3e4a0dc35501d16bf14f17fc4980142148984b0a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 01b55e0ad88cb520078479217306bac948e6cd60
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443116"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625488"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe di base TrackedVCToolTask
 

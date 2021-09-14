@@ -1,7 +1,7 @@
 ---
 title: 'Progettazione pacchetti: aggiungere & funzionalità ed elementi al pacchetto'
 titleSuffix: ''
-description: Vedere come aggiungere e rimuovere funzionalità ed elementi in un pacchetto SharePoint usando Progettazione pacchetti in Visual Studio.
+description: Esaminare come aggiungere e rimuovere funzionalità ed elementi in un pacchetto SharePoint usando Progettazione pacchetti in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,14 +19,14 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 946b3fca7e99bf2aaf1395d63f13626f5e5e5859
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625134"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedura: Aggiungere e rimuovere funzionalità ed elementi a un pacchetto tramite Progettazione pacchetti
-  Quando si crea una SharePoint, Visual Studio le funzionalità SharePoint predefinite al pacchetto nella soluzione. Prima della distribuzione finale, è possibile aggiungere e rimuovere SharePoint di progetto e funzionalità per modificare il SharePoint pacchetto.
+  Quando si crea una soluzione SharePoint, Visual Studio le funzionalità SharePoint predefinite al pacchetto nella soluzione. Prima della distribuzione finale, è possibile aggiungere e rimuovere SharePoint di progetto e funzionalità per modificare il SharePoint pacchetto.
 
  In alternativa, è possibile usare Packaging Explorer per aggiungere e rimuovere SharePoint di progetto. È anche possibile visualizzare e modificare la gerarchia SharePoint elementi di progetto e funzionalità che vengono inseriti nel pacchetto (con estensione wsp). Per altre informazioni, vedere Procedura: Aggiungere e rimuovere funzionalità ed elementi a un pacchetto [tramite Packaging Explorer.](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)
 

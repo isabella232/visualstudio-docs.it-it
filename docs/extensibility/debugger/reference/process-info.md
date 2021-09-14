@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e2fc29833c8d3f6b64e5bbc683ad6f5fc82231ef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118099"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711838"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 Contiene informazioni su un processo.
@@ -68,7 +68,7 @@ public struct PROCESS_INFO {
  Nome file ed estensione del processo. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_BASENAME` .
 
  `bstrTitle`\
- Titolo del processo, se esistente. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_TITLE` .
+ Titolo del processo, se presente. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_TITLE` .
 
  `ProcessId`\
  Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che identifica il processo. Equivale a chiamare il [metodo GetPhysicalProcessId.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)

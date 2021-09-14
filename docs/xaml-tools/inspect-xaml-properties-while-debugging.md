@@ -12,11 +12,11 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - uwp
 ms.openlocfilehash: 0ecf5a1c11c9f942a3c89510ecaab050abfa9df3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710542"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 
@@ -37,7 +37,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 ::: moniker range=">=vs-2019"
 
-1. Creare una nuova applicazione WPF C#**(file** Nuovo Project, digitare "WPF C#", scegliere il modello di progetto Applicazione WPF, assegnare al progetto il nome TestXAML e quindi verificare che >  >  **.NET Core 3.1**  sia visualizzato nell'elenco a discesa **Framework** di destinazione.
+1. Creare una nuova applicazione WPF C# (**File** Nuovo Project , digitare "WPF C#", scegliere il modello di progetto Applicazione WPF, assegnare al progetto il nome TestXAML e quindi verificare che >  >   **.NET Core 3.1** sia visualizzato nell'elenco a discesa **Framework** di destinazione.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
    ![Finestra principale dell'app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
    ::: moniker-end
 
-1. A questo punto, fare **clic sul pulsante** Aggiungi elemento alcune volte per aggiungere nuovi elementi nell'elenco.
+1. A questo punto, fare **clic sul pulsante** Aggiungi elemento alcune volte per aggiungere nuovi elementi all'elenco.
 
 ### <a name="inspect-xaml-properties"></a>Esaminare le proprietà XAML
 
@@ -132,7 +132,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
    La struttura effettiva del codice XAML include numerosi elementi a cui probabilmente non si è direttamente interessati e se non si conosce bene il codice potrebbe risultare difficile esplorare l'albero per trovare ciò che si sta cercando. Lo strumento **Struttura ad albero visuale attiva** offre alcuni modi per usare l'interfaccia utente dell'applicazione per individuare l'elemento che si vuole esaminare.
 
    ::: moniker range=">= vs-2019"
-   **Selezionare l'elemento nell'applicazione in esecuzione.** È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva**. Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive**) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà. A partire da Visual Studio 2019 versione 16.4, è possibile configurare il [comportamento della selezione degli elementi](../debugger/general-debugging-options-dialog-box.md).
+   **Selezionare l'elemento nell'applicazione in esecuzione.** È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva**. Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive**) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà. A partire Visual Studio 2019 versione 16.4, è possibile configurare il [comportamento della selezione degli elementi](../debugger/general-debugging-options-dialog-box.md).
 
    **Visualizza gli Adorner layout nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare **sia Select element (Seleziona elemento)** che **Display layout (Layout** di visualizzazione) e selezionare **il blocco di** testo Add Item (Aggiungi elemento) nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive**, nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.
 

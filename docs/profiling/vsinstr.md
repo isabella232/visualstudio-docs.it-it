@@ -21,11 +21,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: dfa8e4fda1200a9e364ef689c8eef32d2771baf7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710147"
 ---
 # <a name="vsinstr"></a>VSInstr
 Lo strumento VSInstr viene usato per instrumentare i file binari. Viene richiamato tramite la sintassi seguente:

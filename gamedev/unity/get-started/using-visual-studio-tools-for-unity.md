@@ -1,6 +1,6 @@
 ---
 title: Uso di Strumenti di Visual Studio Tools per Unity | Microsoft Docs
-description: Informazioni su come usare Visual Studio Tools per Unity funzionalità di integrazione e produttività di Visual Studio Tools per Unity. Usare anche il debugger Visual Studio per lo sviluppo di Unity.
+description: Informazioni su come usare Visual Studio Tools per Unity funzionalità di integrazione e produttività di Visual Studio Tools per Unity. Usare anche il debugger Visual Studio per lo sviluppo unity.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 6fa58bb6050c1d2dbd33b429c2cda6597b3e8e22c3f7dc48b1acc39a1746993a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a89f83ecaa4545eb6151c7a92e76a08708c3855
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351219"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710000"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usare Visual Studio Tools per Unity
 
@@ -43,12 +43,12 @@ In alternativa, è possibile aprire Visual Studio senza script aperto nell'edito
 
 :::zone pivot="windows"
 - In Visual Studio evidenziare o posizionare il cursore sull'API Unity di cui si vuole ottenere informazioni, quindi premere **CTRL** +  + **ALT+M,**  + **CTRL+H**
-- È anche possibile usare il **menu Guida > riferimento all'API Unity** anziché il tasto di scelta rapida.
+- È anche possibile usare il menu **Guida > riferimento all'API Unity** anziché il tasto di scelta rapida.
 ![Menu Informazioni di riferimento sull'API Unity in Visual Studio](../media/vs/help-unity-documentation.png)
 :::zone-end
 :::zone pivot="macos"
 - In Visual Studio per Mac evidenziare o posizionare il cursore sull'API Unity di cui si vuole ottenere informazioni, quindi premere **Cmd** + **'**
-- È anche possibile usare il **menu Guida > riferimento all'API Unity** anziché il tasto di scelta rapida.
+- È anche possibile usare il menu **Guida > riferimento all'API Unity** anziché il tasto di scelta rapida.
 ![Menu di riferimento dell'API Unity in Visual Studio per Mac](../media/vsm/help-unity-documentation.png)
 :::zone-end
 
@@ -96,7 +96,7 @@ Ciò semplifica l'implementazione di messaggi dell'API Unity negli script MonoBe
 
 Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata MonoBehaviour:
 
-1. In Visual Studio posizionare il cursore nel punto in cui inserire i metodi, quindi premere **CTRL** + **MAIUSC** + **M** per avviare la procedura guidata MonoBehavior. In Visual Studio per Mac premere **CMD** + **MAIUSC** + **M**.
+1. In Visual Studio posizionare il cursore nel punto in cui si desidera inserire i metodi, quindi premere **CTRL** + **MAIUSC** + **M** per avviare la procedura guidata MonoBehavior. In Visual Studio per Mac premere **CMD** + **MAIUSC** + **M**.
 
 2. Nella finestra **Create script methods** (Crea metodi script) selezionare la casella di controllo accanto al nome dei singoli metodi da aggiungere.
 
@@ -190,11 +190,11 @@ Il pulsante per il gioco acquisisce l'etichetta **Collega a Unity e gioca**. Far
 :::zone pivot="macos"
 È possibile avviare il debug e riprodurre l'editor di Unity in un unico passaggio direttamente da Visual Studio per Mac scegliendo la configurazione **Collega a Unity e gioca**.
 
-![Selezionare Collega a Unity e riproduci in Visual Studio per Mac](../media/vsm/using-vsmac-tools-unity-image8.png)
+![Selezionare Collega a Unity e Riproduci in Visual Studio per Mac](../media/vsm/using-vsmac-tools-unity-image8.png)
 :::zone-end
 
 > [!NOTE]
-> Se è stato avviato il debug usando la configurazione Collega a **Unity e Play,** anche il pulsante **Arresta** arresta arresta l'editor di Unity.
+> Se è stato avviato il debug usando la configurazione Collega **a Unity e Play,** anche il pulsante **Arresta** arresta arresta l'editor di Unity.
 
 ### <a name="debug-unity-player-builds"></a>Eseguire il debug di compilazioni del lettore Unity
 
@@ -230,14 +230,14 @@ Il pulsante per il gioco acquisisce l'etichetta **Collega a Unity e gioca**. Far
    **Porta** Numero di porta del socket UDP usata da questa istanza di Unity per comunicare.
 
 > [!IMPORTANT]
-> Poiché Visual Studio Tools per Unity e l'istanza di Unity comunicano tramite un socket di rete UDP, potrebbe essere necessaria una regola per consentire il firewall. Se necessario, potrebbe essere visualizzato un prompt, sarà necessario autorizzare la connessione in modo che VSTU e Unity possano comunicare.
+> Poiché Visual Studio Tools per Unity e l'istanza di Unity comunicano tramite un socket di rete UDP, è possibile che il firewall necessiti di una regola per consentirlo. Se necessario, potrebbe essere visualizzato un prompt, sarà necessario autorizzare la connessione in modo che VSTU e Unity possano comunicare.
 
 :::zone-end
 :::zone pivot="macos"
 
-- Nel Visual Studio per Mac menu superiore scegliere Esegui > **a processo**. 
-- Nella finestra **di dialogo Collega a** processo selezionare **l'opzione Debugger Unity** nel menu a discesa Debugger nella parte inferiore.
-- Selezionare un'istanza di Unity dall'elenco e fare clic sul **pulsante Allega.**
+- Nel Visual Studio per Mac menu in alto scegliere Esegui > **associa a processo**. 
+- Nella finestra **di dialogo Attach to Process** (Collega a processo) selezionare **l'opzione Unity Debugger (Debugger Unity)** nel menu a discesa Debugger nella parte inferiore.
+- Selezionare un'istanza di Unity dall'elenco e fare clic sul **pulsante Attach (Collega).**
 
 :::zone-end
 
@@ -277,7 +277,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
 4. Eseguire il debug del codice. È ora possibile eseguire il debug del codice sorgente della DLL con il codice sorgente del progetto Unity e usare tutte le funzionalità di debug a cui si è abituati, ad esempio punti di interruzione ed esecuzione del codice un'istruzione alla volta.
 
-## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
+## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
 
 Per accedere rapidamente alle funzionalità degli strumenti Unity per Visual Studio, è possibile usare i tasti di scelta rapida elencati di seguito.
 
@@ -285,10 +285,10 @@ Per accedere rapidamente alle funzionalità degli strumenti Unity per Visual Stu
 
 |Comando|Tasto di scelta rapida|Nome del comando associato al tasto di scelta rapida|
 |-------------|--------------|---------------------------|
-|Apri procedura guidata MonoBehaviour|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Apri procedura guidata MonoBehaviour|**CTRL** + **MAIUSC** + **M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Apri Esplora progetti Unity|**ALT** + **MAIUSC** + **E**|**View.UnityProjectExplorer**|
-|Accedi alla documentazione di Unity|**CTRL+FRECCIA DESTRA** + **ALT** + **M, CTRL** + **H**|**Help.UnityAPIReference**|
-|Connetti al debugger Unity (lettore o editor)|**_nessuna impostazione predefinita_**|**Debug.AttachUnityDebugger**|
+|Accedi alla documentazione di Unity|**CTRL** + **ALT** + **M, CTRL** + **H**|**Help.UnityAPIReference**|
+|Connetti al debugger Unity (lettore o editor)|**_nessun valore predefinito_**|**Debug.AttachUnityDebugger**|
 
 Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarle, vedere [Identificare e personalizzare i tasti di scelta rapida in Visual Studio](/docs/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
@@ -300,6 +300,6 @@ Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di
 |Apri procedura guidata MonoBehaviour|**Cmd** + **MAIUSC** + **M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Accedi alla documentazione di Unity|**Cmd+'**|**Help.UnityAPIReference**|
 
-Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarlo, vedere [Personalizzazione dell'IDE](/mac/customizing-the-ide#key-bingings).
+Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarlo, vedere [Personalizzazione dell'IDE.](/mac/customizing-the-ide#key-bingings)
 
 :::zone-end

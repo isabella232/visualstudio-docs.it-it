@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: 75b68bfc81cf2a305baa889baf726d6905b7afab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710402"
 ---
 # <a name="idiasymbolget_managed"></a>IDiaSymbol::get_managed
 Recupera un flag che specifica se il simbolo fa riferimento al codice gestito.

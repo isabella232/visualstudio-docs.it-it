@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7c06855b7ec216ec90d77fc0c0b9968d8da1be1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710342"
 ---
 # <a name="debugger-contexts"></a>Contesti del debugger
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, il motore di debug (DE) opera contemporaneamente all'interno di diversi contesti distinti, come indicato di seguito:
@@ -30,7 +30,7 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, il motor
 - Contesto di valutazione dell'espressione, che descrive il contesto in cui verrà valutata l'espressione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Contesto del codice](../../extensibility/debugger/code-context.md) Il contesto del codice viene illustrato come indirizzo nel flusso di istruzioni di un programma nelle architetture di run-time attuali rispetto ai linguaggi non differenziali, in cui il codice potrebbe non essere rappresentato da istruzioni, ma da altri mezzi.
+ [Contesto del codice](../../extensibility/debugger/code-context.md) Illustra il contesto del codice come indirizzo nel flusso di istruzioni di un programma nelle architetture di run-time attuali rispetto ai linguaggi non differenziali, in cui il codice potrebbe non essere rappresentato da istruzioni, ma da altri mezzi.
 
  [Posizione del documento](../../extensibility/debugger/document-position.md) Definisce la posizione del documento Visual Studio debug tramite un'astrazione di una posizione in un file di origine nota all'IDE.
 

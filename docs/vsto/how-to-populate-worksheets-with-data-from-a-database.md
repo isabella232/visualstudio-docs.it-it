@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Popolare i fogli di lavoro con i dati di un database'
-description: Informazioni su come usare i dati di un oggetto nella soluzione e su come usare i controlli form Windows per visualizzare i dati in un foglio di lavoro.
+description: Informazioni su come usare i dati di un oggetto nella soluzione e su come usare i Windows Form per visualizzare i dati in un foglio di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,11 +18,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: cd48feecfd100fc54748511107094bf1351c8c4d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046776"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710080"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procedura: Popolare i fogli di lavoro con i dati di un database
 
@@ -54,7 +54,7 @@ Nel foglio di lavoro viene creato uno dei controlli seguenti:
 
 Oltre al controllo, gli oggetti relativi ai dati seguenti vengono aggiunti automaticamente al progetto:
 
-- Un set di dati tipizzato che incapsula le tabelle dati a cui ci si è connessi nel database. Per altre informazioni, vedere [Strumenti del set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un set di dati tipizzato che incapsula le tabelle dati a cui ci si è connessi nel database. Per altre informazioni, vedere [Strumenti per set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 - Un oggetto <xref:System.Windows.Forms.BindingSource> che connette il controllo al set di dati tipizzato. Per altre informazioni, vedere [Panoramica del componente BindingSource.](/dotnet/framework/winforms/controls/bindingsource-component-overview)
 

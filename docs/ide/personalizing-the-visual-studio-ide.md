@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 58c1e114e8562e678adf3ab93aa548d1951c014e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636043"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
@@ -47,7 +47,7 @@ Per modificare le opzioni di colorazione nell'editor, digitare **environment** n
 
 ### <a name="main-menu-casing"></a>Utilizzo di maiuscole e minuscole nel menu principale
 
-È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **ambiente** nella casella di ricerca, selezionare **Ambiente > Generale** e quindi modificare l'opzione Applica stile per maiuscole/minuscole alla barra dei **menu.**
+È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **environment** nella casella di ricerca, selezionare **Ambiente > Generale** e quindi modificare l'opzione Applica lo stile del titolo alla barra dei **menu.**
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizzare menu e barre degli strumenti
 

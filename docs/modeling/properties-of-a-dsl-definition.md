@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: cd32788e6b423b5ceb1ceafa54ad72cd3a885b15
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637604"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Le proprietà DslDefinition definiscono *proprietà di definizione del linguaggio specifiche* del dominio, ad esempio la numerazione delle versioni. Le proprietà DslDefinition vengono visualizzate nella **finestra Proprietà** quando si fa clic su un'area aperta del diagramma nel *Finestra di progettazione Domain-Specific Language*.
@@ -29,7 +29,7 @@ Le proprietà DslDefinition definiscono *proprietà di definizione del linguaggi
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
 |Modificatore di accesso|Determina se il modificatore di accesso per la classe di dominio è pubblico o interno.|public|
-|Attributi personalizzati|Attributi definiti personalizzati per la classe di dominio.<br /><br /> **Nota:** Usare il pulsante Sfoglia per aggiungere un attributo.|\<none>|
+|Attributi personalizzati|Attributi definiti personalizzati per la classe di dominio.<br /><br /> **Nota** Usare il pulsante Sfoglia per aggiungere un attributo.|\<none>|
 |Nome società|Nome della società corrente nel Registro di sistema.|Nome società corrente|
 |Nome|Nome di questa classe di dominio.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questa classe di dominio.|Spazio dei nomi corrente|
@@ -43,7 +43,7 @@ Le proprietà DslDefinition definiscono *proprietà di definizione del linguaggi
 |Compilazione|Numero di build incrementale per questa definizione del linguaggio specifica del dominio.|0|
 |Versione principale|Numero di build principale incrementale per questa definizione del linguaggio specifico di dominio.|1|
 |Versione secondaria|Numero di build secondario incrementale per questa definizione del linguaggio specifico di dominio.|0|
-|Revisione|Numero di build della revisione incrementale per questa definizione del linguaggio specifica del dominio.|0|
+|Revisione|Numero di build della revisione incrementale per questa definizione del linguaggio specifico di dominio.|0|
 
 ## <a name="see-also"></a>Vedere anche
 

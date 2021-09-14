@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 497348f4df25a3c26ce20617f00ac3f79e806e27
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637196"
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
 
@@ -64,7 +64,7 @@ Questa libreria può essere usata facilmente in C e C++.
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Aggiungere l'elemento Decorator `__declspec(allocator)` a qualsiasi funzione di gestione dell'heap personalizzato che restituisca un puntatore alla memoria heap appena allocata.  Questo elemento Decorator consente allo strumento di identificare correttamente il tipo di memoria da restituire.  Esempio:
+1. Aggiungere l'elemento Decorator `__declspec(allocator)` a qualsiasi funzione di gestione dell'heap personalizzato che restituisca un puntatore alla memoria heap appena allocata.  Questo elemento Decorator consente allo strumento di identificare correttamente il tipo di memoria da restituire.  Ad esempio:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);

@@ -1,6 +1,6 @@
 ---
 title: Elemento EnableLocationBrowseButton (modelli di Visual Studio)
-description: Informazioni sull'elemento EnableLocationBrowseButton e su come specifica se il pulsante Sfoglia è disponibile nella finestra di dialogo Project nuova pagina.
+description: Informazioni sull'elemento EnableLocationBrowseButton e su come specifica se il pulsante Sfoglia è disponibile nella finestra di dialogo Nuovo Project.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6f25154015790919577d7fc32daffe21c0e69d90c10675c98dd2ad5d1314eed
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5bf5ec98fc71158d9ebe3b95ec9e3d49526cb491
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388721"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711782"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (Visual Studio personalizzati)
 Specifica se il **pulsante Sfoglia** è disponibile nella finestra di dialogo Nuovo **Project,** in modo che gli utenti possano modificare facilmente la directory predefinita in cui viene salvato un nuovo progetto.
@@ -53,15 +53,15 @@ Specifica se il **pulsante Sfoglia** è disponibile nella finestra di dialogo Nu
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve essere o , che indica se visualizzare o meno il pulsante Sfoglia nella finestra Project `true` `false` nuova finestra di dialogo.  
+ Il testo deve essere o , che indica se visualizzare o meno il pulsante Sfoglia nella finestra di `true` dialogo Project nuova finestra di `false` dialogo.  
 
 ## <a name="remarks"></a>Commenti
  `EnableLocationBrowseButton` è un elemento facoltativo. Il valore predefinito è `true` , che visualizza il **pulsante** Sfoglia nella finestra **di Project** finestra di dialogo.
 
- Nella finestra **di dialogo Project,** la casella di testo **Percorso** specifica la directory in cui viene salvato un nuovo progetto. Il pulsante **Sfoglia** consente di modificare questa directory visualizzando la finestra di dialogo Percorso Project , che consente di passare facilmente **a un'altra** directory disponibile nel computer e quindi di sceglierla come directory in cui viene salvato il nuovo progetto.
+ Nella finestra **di dialogo Project,** la casella di testo **Percorso** specifica la directory in cui viene salvato un nuovo progetto. Il **pulsante** Sfoglia consente di modificare questa directory visualizzando la finestra di dialogo Percorso Project , che consente di passare **facilmente a** un'altra directory disponibile nel computer e quindi di sceglierla come directory in cui viene salvato il nuovo progetto.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra i metadati per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'Windows applicazione.
+ Nell'esempio seguente vengono illustrati i metadati per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'Windows applicazione.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

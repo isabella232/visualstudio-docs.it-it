@@ -1,7 +1,7 @@
 ---
 title: Estensione del nodo SharePoint connessioni in Esplora server | Microsoft Docs
 titleSuffix: ''
-description: Estendere il nodo SharePoint connessioni nella finestra Esplora server in Visual Studio. Aggiungere proprietà personalizzate ai nodi. Ottenere i dati per i nodi predefiniti.
+description: Estendere il SharePoint connessioni nella finestra Esplora server in Visual Studio. Aggiungere proprietà personalizzate ai nodi. Ottenere i dati per i nodi predefiniti.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,28 +19,28 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: c6ae20393f60ffe0e17cee9baf85c1572cea32ac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625265"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estendere il nodo SharePoint connessioni in Esplora server
-  In Visual Studio, è possibile connettersi ai siti SharePoint locali nel computer  di sviluppo usando il nodo Connessioni SharePoint nella finestra **Esplora server.** Questo nodo visualizza molti dei componenti dei siti SharePoint in una visualizzazione albero gerarchica. Ad esempio, è possibile visualizzare gli elenchi, le raccolte documenti e i tipi di contenuto nei siti locali. Per altre informazioni **sull'Esplora server** per connettersi ai siti SharePoint locali, vedere Esplorare SharePoint [connessioni tramite Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
+  In Visual Studio, è possibile connettersi ai siti SharePoint locali nel computer  di sviluppo usando il nodo Connessioni SharePoint nella finestra **Esplora server.** Questo nodo visualizza molti dei componenti dei siti SharePoint in una visualizzazione ad albero gerarchica. Ad esempio, è possibile visualizzare gli elenchi, le raccolte documenti e i tipi di contenuto nei siti locali. Per altre informazioni **sull'uso Esplora server** connettersi ai siti SharePoint locali, vedere Esplorare SharePoint connessioni tramite [Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
 
- È possibile estendere **il nodo SharePoint connections** creando estensioni per i nodi esistenti oppure creando un tipo di nodo personalizzato e aggiungendolo alla gerarchia dei nodi.
+ È possibile estendere **il SharePoint Connections** creando estensioni per i nodi esistenti oppure creando un tipo di nodo personalizzato e aggiungendolo alla gerarchia dei nodi.
 
 ## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Attività per l'estensione del nodo SharePoint connessioni
- Per estendere un nodo esistente, creare un'estensione Visual Studio che implementa <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> l'interfaccia . Quando si estende un nodo, è possibile aggiungere funzionalità al nodo, ad esempio voci di menu di scelta rapida personalizzate o proprietà personalizzate. Per altre informazioni, vedere [Procedura: Estendere un](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)nodo SharePoint in Esplora server .
+ Per estendere un nodo esistente, creare un'Visual Studio che implementa <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> l'interfaccia . Quando si estende un nodo, è possibile aggiungere funzionalità al nodo, ad esempio voci di menu di scelta rapida personalizzate o proprietà personalizzate. Per altre informazioni, vedere [Procedura: Estendere un](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)nodo SharePoint in Esplora server .
 
- Per creare un tipo di nodo personalizzato, creare un'Visual Studio che implementa <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> l'interfaccia . Creare un nodo personalizzato se si vogliono visualizzare i componenti SharePoint siti che non vengono visualizzati **Esplora server** per impostazione predefinita. Ad esempio, **Esplora server** la raccolta web part di un sito SharePoint per impostazione predefinita, ma è possibile aggiungere un nodo personalizzato che esegue questa operazione. Per altre informazioni, vedere [Procedura: Aggiungere](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) un nodo SharePoint personalizzato a Esplora server e [Procedura dettagliata:](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)Estendere Esplora server per visualizzare Web part .
+ Per creare un tipo di nodo personalizzato, creare un'estensione Visual Studio che implementa <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> l'interfaccia . Creare un nodo personalizzato se si vogliono visualizzare i componenti SharePoint siti che non vengono visualizzati **Esplora server** per impostazione predefinita. Ad esempio, **Esplora server** la raccolta web part di un sito SharePoint per impostazione predefinita, ma è possibile aggiungere un nodo personalizzato che esegue questa operazione. Per altre informazioni, vedere [Procedura:](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) Aggiungere un nodo SharePoint personalizzato a Esplora server e [Procedura dettagliata:](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)Estendere Esplora server per visualizzare Web part .
 
 ## <a name="add-custom-properties-to-nodes"></a>Aggiungere proprietà personalizzate ai nodi
  Quando si estende un nodo o si crea un tipo di nodo personalizzato, è possibile aggiungere proprietà personalizzate al nodo. Le proprietà vengono visualizzate nella **finestra Proprietà** quando il nodo viene selezionato.
 
  Esistono due tipi di proprietà personalizzate che è possibile aggiungere a un nodo:
 
-- Proprietà che visualizzano un set di dati di sola lettura dal SharePoint sito. I dati descrivono SharePoint componente che rappresenta il nodo. Per una procedura dettagliata che illustra come eseguire questa operazione, vedere [Procedura dettagliata: estendere Esplora server per visualizzare web part.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- Proprietà che visualizzano un set di dati di sola lettura dal SharePoint sito. I dati descrivono SharePoint componente che rappresenta il nodo. Per una procedura dettagliata che illustra come eseguire questa operazione, vedere Procedura dettagliata: estendere Esplora server [per visualizzare web part.](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
 - Proprietà che visualizzano dati di lettura/scrittura personalizzati. Per un esempio di codice che illustra come eseguire questa operazione, vedere [Procedura:](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)Estendere un nodo SharePoint in Esplora server .
 

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Configurare un computer per sviluppare Office soluzioni'
-description: Informazioni su come configurare un computer di sviluppo in modo da poter usare Microsoft Office strumenti di sviluppo in Visual Studio.
+description: Informazioni su come configurare un computer di sviluppo in modo da poter usare gli Microsoft Office di sviluppo in Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,11 +18,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: d5868a8a7e8eca8bf75436eed3c2bd17c4238b29
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026226"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710085"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Procedura: Configurare un computer per sviluppare Office soluzioni
   Per configurare un computer di sviluppo in modo tale da poter utilizzare gli strumenti di sviluppo di Microsoft Office in Visual Studio, seguire le istruzioni in questo argomento. Per seguire la procedura, è necessario disporre dei privilegi amministrativi sul computer di sviluppo.
@@ -35,7 +35,7 @@ ms.locfileid: "122026226"
 
      Assicurarsi inoltre di installare gli assembly di interoperabilità primari per la versione di Office installata. Per impostazione predefinita, gli assembly di interoperabilità primari vengono installati con Office. Se si modifica Office configurazione, assicurarsi che la funzionalità Supporto programmabilità **.NET** sia selezionata per le applicazioni di destinazione.
 
-3. Se si ha una versione inglese di Visual Studio ma si usano impostazioni non in lingua inglese per Windows, è possibile installare il language pack per visualizzare i messaggi nella stessa lingua del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Windows. Le versioni non in lingua inglese di Visual Studio installano automaticamente il language pack. Il language pack è disponibile [nell'Area download Microsoft.](https://www.microsoft.com/download/details.aspx?id=54246)
+3. Se si ha una versione inglese di Visual Studio ma si usano impostazioni diverse dall'inglese per Windows, è possibile installare il language pack per visualizzare i messaggi nella stessa lingua del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Windows. Le versioni non in lingua inglese di Visual Studio installano automaticamente il language pack. Il language pack disponibile nell'Area [download Microsoft.](https://www.microsoft.com/download/details.aspx?id=54246)
 
 ## <a name="see-also"></a>Vedi anche
 

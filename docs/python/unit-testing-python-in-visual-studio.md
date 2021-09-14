@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c35563a44bdcba5de9df820cb363def7818cb5ad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711451"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configurare gli unit test per il codice Python
 

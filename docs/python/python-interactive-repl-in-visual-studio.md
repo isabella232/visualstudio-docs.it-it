@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: db046648d78caeb1ec779ae556709806d72dc55c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711490"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
@@ -35,21 +35,21 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
 Questo articolo descrive le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Usare la finestra REPL in modalità IPython](interactive-repl-ipython.md).
 
-Per una procedura dettagliata con esempi, incluse le interazioni con l'editor, ad esempio **CTRL** + **INVIO,** vedere Tutorial [Step 3: Use the Interactive REPL window](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Per una procedura dettagliata con esempi, incluse le interazioni con l'editor, ad esempio **CTRL** + **INVIO,** vedere Esercitazione [Passaggio 3: Usare la finestra INTERACTIVE REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Aprire una finestra interattiva
 
 È possibile aprire la finestra **interattiva** per un ambiente in diversi modi.
 
-Per prima cosa, passare alla finestra Ambienti Python **(Visualizza** altri ambienti Python Windows o  >    >   **CTRL** + **CTRL)**  >   + **`**  e selezionare il comando o il pulsante Apri finestra interattiva per un ambiente scelto.
+Passare prima di tutto alla finestra Ambienti Python **(Visualizza** altri ambienti Python Windows o  >    >   **CTRL** + **CTRL K)**  >   + **`**  e selezionare il comando o il pulsante Apri finestra interattiva per un ambiente scelto.
 
 ![Collegamento Finestra interattiva nella finestra Ambienti Python](media/interactive-window-opening.png)
 
-In secondo momento, nella parte inferiore del menu Visualizza altro Windows è presente un comando Finestra interattiva Python per  >   l'ambiente  predefinito, oltre a un comando per passare alla finestra Ambienti: 
+In secondo piano, nella parte inferiore del menu Visualizza altro Windows è presente un comando Finestra interattiva Python per  >   l'ambiente  predefinito, nonché un comando per passare alla finestra Ambienti: 
 
 ![Voci di menu relative alla finestra interattiva in Visualizza > Altre finestre](media/interactive-window-menu.png)
 
-In terzo momento,  è possibile aprire una finestra interattiva nel file di avvio del progetto o per un file autonomo selezionando il comando di menu **Debug** Esegui in  >  **\<Project | File> Python interattivo** (**MAIUSC** + **ALT** + **F5**):
+In terzo piano,  è possibile aprire una finestra interattiva nel file di avvio del progetto o per un file autonomo selezionando il comando di menu **Debug** Esegui  >  **in Python \<Project | File> Interactive** **(MAIUSC** + **ALT** + **F5**):
 
 ![Menu Esegui progetto in Python interattivo](media/interactive-execute-project.png)
 
@@ -63,14 +63,14 @@ In terzo momento,  è possibile aprire una finestra interattiva nel file di avvi
 
 ## <a name="use-the-interactive-window"></a>Usare la finestra Interattiva
 
-Quando la **finestra** Interattiva è aperta, è possibile iniziare a immettere il codice riga per riga al **\>\>\>** prompt. La **finestra** Interattiva esegue ogni riga al momento dell'immissione, che include l'importazione di moduli, la definizione di variabili e così via:
+Una volta **aperta** la finestra Interattiva, è possibile iniziare a immettere il codice riga per riga al **\>\>\>** prompt. La **finestra Interattiva** esegue ogni riga durante l'immissione, che include l'importazione di moduli, la definizione di variabili e così via:
 
 ![Finestra interattiva di Python](media/interactive-window.png)
 
 L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per creare un'istruzione completa, ad esempio quando un'istruzione `for` termina con i due punti, come illustrato in precedenza. In questi casi, il prompt della riga diventa **...**, per indicare che è necessario immettere altre righe per il blocco, come illustrato nella quarta e nella quinta riga della figura precedente. Quando si preme **INVIO** in una riga vuota, la finestra **interattiva** chiude il blocco e lo esegue nell'interprete.
 
 > [!Tip]
-> La **finestra Interattiva** migliora la consueta esperienza REPL della riga di comando di Python tramite il rientro automatico delle istruzioni che appartengono a un ambito circostante. La relativa cronologia (richiamata con la freccia su) visualizza inoltre elementi su più righe, mentre la riga di comando REPL visualizza solo singole righe.
+> La **finestra Interattiva** migliora la consueta esperienza REPL della riga di comando Python rientrando automaticamente le istruzioni che appartengono a un ambito circostante. La relativa cronologia (richiamata con la freccia su) visualizza inoltre elementi su più righe, mentre la riga di comando REPL visualizza solo singole righe.
 
 <a name="meta-commands"></a> La finestra **interattiva** supporta anche diversi metacomandi. Tutti i metacomandi iniziano con `$` ed è possibile digitare `$help` per ottenere un elenco dei metacomandi oppure `$help <command>` per ottenere i dettagli relativi all'utilizzo di un comando specifico.
 
@@ -123,10 +123,10 @@ Oltre a lavorare direttamente nella finestra **interattiva**, è possibile selez
 
 ![Comando di menu Invia a finestra interattiva](media/interactive-send-to.png)
 
-Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui il test del codice durante lo sviluppo. Ad esempio, dopo aver inviato un frammento di codice alla finestra interattiva e averne visualizzato l'output, è possibile premere la freccia su per visualizzare di nuovo il codice, modificarlo e testarlo rapidamente premendo CTRL   + **INVIO.** Premendo **INVIO** alla fine dell'input viene eseguito, ma premendo **INVIO** al centro dell'input viene inserita una nuova riga. Dopo aver creato il codice desiderato, è possibile copiarlo facilmente nel file di progetto.
+Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui il test del codice durante lo sviluppo. Ad esempio, dopo aver inviato un frammento di codice alla finestra interattiva e averne visualizzato l'output, è possibile premere la freccia SU per visualizzare di nuovo il codice, modificarlo e testarlo rapidamente premendo CTRL   + **INVIO.** Premendo **INVIO** alla fine dell'input viene eseguito, ma premendo **INVIO** al centro dell'input viene inserita una nuova riga. Dopo aver creato il codice desiderato, è possibile copiarlo facilmente nel file di progetto.
 
 > [!Tip]
-> Per impostazione predefinita, Visual Studio rimuove **>>>** e **...** REPL richiede quando si incolla il codice dalla **finestra** Interattiva nell'editor. È possibile modificare questo comportamento nella **scheda** Strumenti Opzioni Editor di testo Python Avanzate usando l'opzione Incolla rimuove le richieste  >    >    >    >   **REPL.** Vedere [Opzioni - Opzioni varie.](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)
+> Per impostazione predefinita, Visual Studio **>>>** e **...** REPL richiede quando si incolla il codice dalla **finestra Interattiva** nell'editor. È possibile modificare questo comportamento nella **scheda** Avanzate python dell'editor di testo Opzioni degli strumenti usando l'opzione Incolla rimuove le richieste  >    >    >    >   **REPL.** Vedere [Opzioni - Opzioni varie](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 

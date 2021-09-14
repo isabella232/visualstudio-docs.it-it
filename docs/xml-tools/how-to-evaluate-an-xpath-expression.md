@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: a5d229bc035edcb3460ca57050ddfd1988d94587
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710534"
 ---
 # <a name="evaluate-xpath-expressions"></a>Valutare le espressioni XPath
 
@@ -33,21 +33,21 @@ Quando si valuta un'espressione XPath:
 
 ## <a name="evaluate-an-xpath-expression"></a>Valutare un'espressione XPath
 
-La procedura seguente usa i file *below-average.xsl* *ebooks.xml* dalla pagina Procedura dettagliata: Eseguire il debug di un foglio di [stile XSLT.](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)
+La procedura seguente usa i *file below-average.xsl* *ebooks.xml* dalla pagina Procedura dettagliata: Eseguire il debug di un foglio di stile [XSLT.](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)
 
 1. Inserire un punto di interruzione in corrispondenza del tag di inizio `xsl:if`.
 
-2. Per avviare il debug, scegliere **AVVIA** DEBUG XSLT XML sulla barra  >   dei menu oppure premere **ALT** + **F5.**
+2. Per avviare il debug, **scegliere XML** Avvia  >  **debug XSLT** sulla barra dei menu (oppure premere **ALT** + **F5).**
 
    Il debugger viene avviato e interrotto sul tag `xsl:if`.
 
-3. Fare clic con il pulsante destro del mouse e **scegliere Controllo immediato**.
+3. Fare clic con il pulsante destro del mouse **e scegliere Controllo immediato.**
 
    Verrà **visualizzata la finestra** Controllo immediato.
 
-4. Immettere nel campo Espressione della finestra di dialogo `./price/text()` **Controllo** immediato e quindi scegliere **Rivaluta**. 
+4. Immettere `./price/text()` nel campo **Espressione** della finestra **di dialogo** Controllo immediato e quindi scegliere **Rivaluta**.
 
-   Il prezzo del nodo libro corrente viene visualizzato nella **casella** Valore.
+   Il prezzo del nodo libro corrente viene visualizzato nella **casella** Valore .
 
    ![Valutare un'espressione XPath nella finestra Controllo immediato](media/quickwatch-price.png)
 

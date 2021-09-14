@@ -14,11 +14,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 7be4be6b08c5ea9b0813e4782a0ac1a77cec2890
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711315"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Chiamato quando viene caricato un componente aggiuntivo VSTO gestito.

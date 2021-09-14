@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 4085d8536c9d8f15e8928e010bb2744551a7747c
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710574"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Finestra di dialogo Aggiungi inizializzatori di correlazione
 
@@ -43,7 +43,7 @@ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente de
 
  La **finestra di dialogo Aggiungi** inizializzatori di correlazione viene usata dalle finestre di progettazione **Send**, **Receive**, **ReceiveAndSendReply** e **SendAndReceiveReply** . L'accesso è simile in ogni caso e  il caso che interessa la finestra di progettazione ricezione viene usato qui per illustrare la procedura.
 
- L'ActivityDesigner **Receive** può essere trascinato dalla **casella** degli strumenti e rilasciato nella Progettazione flussi di lavoro in cui sono posizionate le attività. L'eliminazione **dell'ActivityDesigner Receive** crea <xref:System.ServiceModel.Activities.Receive> un'attività con il <xref:System.Activities.Activity.DisplayName%2A> valore predefinito Receive. Selezionare l'ActivityDesigner **Receive** e fare clic sul pulsante con i puntini di sospensione accanto  al testo (Raccolta) per la proprietà **CorrelationInitializers** nella griglia delle proprietà per visualizzare la finestra di dialogo Aggiungi inizializzatori di correlazione.
+ L'ActivityDesigner **Receive** può essere  trascinato dalla casella degli strumenti e rilasciato nella Progettazione flussi di lavoro in cui sono posizionate le attività. L'eliminazione **dell'ActivityDesigner Receive** crea <xref:System.ServiceModel.Activities.Receive> un'attività con il <xref:System.Activities.Activity.DisplayName%2A> valore predefinito Receive. Selezionare l'ActivityDesigner **Receive** e fare clic sul pulsante con i puntini di sospensione accanto  al testo (Raccolta) per la proprietà **CorrelationInitializers** nella griglia delle proprietà per visualizzare la finestra di dialogo Aggiungi inizializzatori di correlazione.
 
 ## <a name="see-also"></a>Vedi anche
 

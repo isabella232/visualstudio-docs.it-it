@@ -24,11 +24,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: f97d5cdce15d5bc46256db709421bf83ab48ac9c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710375"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedura: Pubblicare un progetto dotato di impostazioni locali specifiche
 Accade spesso che un'applicazione contenga componenti con impostazioni locali diverse. In questi casi si crea una soluzione con più progetti, che vengono poi pubblicati con impostazioni locali differenti. Questa procedura illustra come usare una macro per pubblicare il primo progetto in una soluzione con le impostazioni locali 'en'. Se si vuole provare la procedura con impostazioni locali diverse da 'en', impostare `localeString` nella macro in modo che corrisponda alle impostazioni locali in uso (ad esempio, 'de' o 'de-DE').
@@ -156,7 +156,7 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
 
      Chiudere la pagina Web di pubblicazione non appena viene visualizzata. In questa fase non è necessario installare il progetto, ma solo pubblicarlo
 
-5. Pubblicare *di nuovo PublishLocales* richiamando la macro nella finestra Visual Studio prompt dei comandi. Per visualizzare la finestra del prompt dei comandi, scegliere Altro dal  **menu** Visualizza **Windows** quindi fare clic su Finestra di comando oppure **premere** + **CTRL ALT** + **A.** Nella finestra del prompt dei comandi digitare `macros` . Il completamento automatico fornirà un elenco delle macro disponibili. Selezionare la macro seguente e premere INVIO:
+5. Pubblicare *di nuovo PublishLocales* richiamando la macro nella finestra Visual Studio prompt dei comandi. Per visualizzare la finestra del prompt dei comandi, scegliere Altro dal  **menu** **Visualizza Windows** quindi fare clic su Finestra di comando oppure premere **CTRL** + **ALT** + **A.** Nella finestra del prompt dei comandi digitare `macros` . Il completamento automatico fornirà un elenco delle macro disponibili. Selezionare la macro seguente e premere INVIO:
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 

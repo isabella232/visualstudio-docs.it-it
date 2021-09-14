@@ -1,6 +1,6 @@
 ---
 title: Project Impostazioni per una configurazione VB di debug | Microsoft Docs
-description: Informazioni su come modificare le impostazioni del progetto per Visual Basic di debug nella finestra Pagine delle proprietà di Visual Studio.
+description: Informazioni su come modificare le impostazioni del progetto per una configurazione Visual Basic di debug nella finestra Pagine delle proprietà di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -26,11 +26,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 02308189eac86a453f764cc3a73d4898ca0eb8d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105132"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709902"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug Visual Basic
 È possibile modificare le impostazioni di progetto per una configurazione di debug [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nella finestra di dialogo **Pagine delle proprietà**, come descritto in [Configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
@@ -46,7 +46,7 @@ ms.locfileid: "122105132"
 | **Azione di avvio** | Questo gruppo di controlli specifica l'azione che verrà eseguita quando si sceglie Avvia dal menu Debug.<br /><br /> -   **Avvia progetto** è l'impostazione predefinita e avvia il progetto di avvio per il debug. <br />-   **Avvia programma esterno** consente di avviare un programma che non fa parte di un progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e di stabilire una connessione al programma. Per altre informazioni, vedere [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Avvia browser con URL** consente di eseguire il debug di un'applicazione Web. |
 | **Argomenti della riga di comando** | Specifica gli argomenti della riga di comando per il programma da sottoporre a debug. Il nome del comando è il nome del programma specificato in Avvia programma esterno. Se l'opzione Azione di avvio è impostata su Avvia URL, gli argomenti della riga di comando verranno ignorati. |
 | **Directory di lavoro** | Specifica la cartella di lavoro del programma sottoposto a debug. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] la cartella di lavoro è la cartella dalla quale viene avviata l'applicazione. La cartella di lavoro predefinita è \bin\Debug or \bin\Release, a seconda della configurazione corrente. |
-| **Usare il computer remoto** | Quando la casella di controllo è selezionata, il debug remoto è attivato. Nella casella di testo è possibile digitare il nome di un computer remoto in cui verrà eseguita l'applicazione ai fini del debug oppure un [nome di server Msvsmon](../debugger/remote-debugging.md). Il percorso del file EXE nel computer remoto viene specificato dalla proprietà Percorso di output nella scheda Compilazione. Il percorso deve essere una directory condivisibile nel computer remoto. |
+| **Usare un computer remoto** | Quando la casella di controllo è selezionata, il debug remoto è attivato. Nella casella di testo è possibile digitare il nome di un computer remoto in cui verrà eseguita l'applicazione ai fini del debug oppure un [nome di server Msvsmon](../debugger/remote-debugging.md). Il percorso del file EXE nel computer remoto viene specificato dalla proprietà Percorso di output nella scheda Compilazione. Il percorso deve essere una directory condivisibile nel computer remoto. |
 | **Debug codice non gestito** | Consente di eseguire il debug delle chiamate al codice Win32 nativo (non gestito) dall'applicazione gestita in uso. Ha lo stesso effetto della selezione di Misto per Tipo debugger in un progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. |
 | **Debug SQL Server** | Consente di eseguire il debug di oggetti di database di SQL Server. |
 
@@ -57,7 +57,7 @@ ms.locfileid: "122105132"
 | **Abilita ottimizzazioni** | Si consiglia di non selezionare questa opzione. L'ottimizzazione rende più difficile il debug perché il codice effettivamente eseguito è diverso dal codice sorgente visualizzato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Se il codice è ottimizzato, non caricare i simboli per impostazione predefinita quando si esegue il debug con Just My Code. |
 | **Genera informazioni di debug** | Questa impostazione, predefinita in entrambe le versioni di debug e di rilascio ed equivalente all'opzione del compilatore /debug, determina la creazione delle informazioni di debug in fase di compilazione. Il debugger utilizza tali informazioni per mostrare i nomi delle variabili e altri dati in un formato utile quando si esegue il debug. Se il programma viene compilato senza specificarle, la funzionalità del debugger risulterà limitata. Per altre informazioni, vedere [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug). |
 | **Definire la costante DEBUG** | La definizione di questo simbolo attiva la compilazione condizionale delle funzioni di output della [classe Debug](/dotnet/api/system.diagnostics.debug). Quando è definito, i metodi della classe Debug generano l'output per la [finestra Output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output. Questo simbolo deve essere definito nella versione di debug e non nella versione di rilascio. La relativa definizione in una versione di rilascio determina la creazione di codice non necessario che rallenta l'esecuzione del programma. |
-| **Definire la costante TRACE** | La definizione di questo simbolo attiva la compilazione condizionale delle funzioni di output della [classe Trace](/dotnet/api/system.diagnostics.trace). Quando è definito, i metodi della classe Trace generano l'output per la [finestra Output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output. Questo simbolo è definito per impostazione predefinita in entrambe le versioni di debug e di rilascio. |
+| **Definire una costante TRACE** | La definizione di questo simbolo attiva la compilazione condizionale delle funzioni di output della [classe Trace](/dotnet/api/system.diagnostics.trace). Quando è definito, i metodi della classe Trace generano l'output per la [finestra Output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output. Questo simbolo è definito per impostazione predefinita in entrambe le versioni di debug e di rilascio. |
 
 ## <a name="see-also"></a>Vedi anche
 - [Preparazione e Impostazioni debugger](../debugger/debugger-settings-and-preparation.md)

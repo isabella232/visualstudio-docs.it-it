@@ -7,11 +7,11 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: 47913ee02aa1708f1c8baa4037b2ecfbcfc1b2e4
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961921"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710004"
 ---
 # <a name="razor-support"></a>Supporto Razor
 

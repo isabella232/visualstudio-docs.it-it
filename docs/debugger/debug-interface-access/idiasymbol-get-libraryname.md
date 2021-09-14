@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a1c5c5071d7ce36e058422d5eecfe3b8e275c30f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161407"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709943"
 ---
 # <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
 Recupera il nome file della libreria o del file oggetto da cui è stato caricato l'oggetto.
@@ -41,7 +41,7 @@ HRESULT get_libraryName (
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

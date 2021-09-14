@@ -17,11 +17,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: c65edab726fb0def889364f37f2eed41778bcfe6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636851"
 ---
 # <a name="how-to-localize-code"></a>Procedura: Localizzare il codice
   Il codice non localizzato usa valori stringa hard-coded. Per localizzare le stringhe di codice, sostituirle con chiamate a , ovvero <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> un metodo che fa riferimento alle risorse localizzate.
@@ -41,11 +41,11 @@ ms.locfileid: "122084233"
 
 3. Ripetere i passaggi 1 e 2 per aggiungere file di risorse separati all'elemento di progetto SharePoint, uno per ogni lingua localizzata.
 
-     Usare lo stesso nome di base per ogni file di risorse localizzato, ma aggiungere l'ID impostazioni cultura. Ad esempio, denomere una risorsa localizzata *MyAppResources.de-DE.resx*.
+     Usare lo stesso nome di base per ogni file di risorse localizzato, ma aggiungere l'ID impostazioni cultura. Ad esempio, assegnare un nome a una risorsa localizzata *MyAppResources.de-DE.resx*.
 
 4. Aprire ogni file di risorse e aggiungere stringhe localizzate. Utilizzare gli stessi ID di stringa in ogni file.
 
-5. Modificare il valore della **proprietà Tipo** di distribuzione di ogni file di risorse in **AppGlobalResource** per fare in modo che ogni file sia distribuito nella cartella App_GlobalResources server.
+5. Modificare il valore della **proprietà Tipo** di distribuzione di ogni file di risorse in **AppGlobalResource** per fare in modo che ogni file sia distribuito nella cartella App_GlobalResources del server.
 
 6. Lasciare il valore della **proprietà Azione di** compilazione di ogni file come Risorsa **incorporata**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "122084233"
 
 8. In **Progettazione pacchetti scegliere** la **scheda Avanzate** e quindi aggiungere l'assembly satellite.
 
-9. Nella casella **Percorso** anteporre una cartella ID impostazioni cultura al percorso percorso, ad esempio *de-DE \\ \<Project Item Name>.resources.dll*.
+9. Nella casella **Percorso** anteporre una cartella ID impostazioni cultura al percorso percorso, ad esempio *de-DE \\ \<Project Item Name> .resources.dll*.
 
 10. Se la soluzione non fa già riferimento all'assembly System.Web, aggiungere un riferimento all'assembly e aggiungere una direttiva nel codice a <xref:System.Web> .
 
@@ -67,9 +67,9 @@ ms.locfileid: "122084233"
 
 12. Scegliere il **tasto F5** per compilare ed eseguire l'applicazione.
 
-13. In SharePoint modificare la lingua di visualizzazione rispetto all'impostazione predefinita.
+13. In SharePoint modificare la lingua di visualizzazione dall'impostazione predefinita.
 
-     Le stringhe localizzate vengono visualizzate nell'applicazione. Per visualizzare le risorse localizzate, nel server SharePoint deve essere installato un language pack corrispondente alle impostazioni cultura del file di risorse.
+     Le stringhe localizzate vengono visualizzate nell'applicazione. Per visualizzare le risorse localizzate, SharePoint server deve essere installato un language pack corrispondente alle impostazioni cultura del file di risorse.
 
 ## <a name="see-also"></a>Vedi anche
 - [Localizzare SharePoint soluzioni](../sharepoint/localizing-sharepoint-solutions.md)

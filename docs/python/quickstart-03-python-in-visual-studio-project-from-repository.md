@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6ec913b78094ac9ad6649e019548e3785b939ba8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711483"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida introduttiva: Clonare un repository di codice Python in Visual Studio
 
@@ -45,23 +45,23 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 
     ![Finestra Team Explorer, creazione di un nuovo progetto da un clone](media/team-explorer-new-project.png)
 
-1. Nella finestra di dialogo Nuovo **Project** visualizzata passare al linguaggio **Python** (o cercare in "Python"), selezionare From Existing Python Code (Da codice **Python** esistente), specificare un nome per il progetto, impostare **Location** (Percorso) sulla stessa cartella del repository e selezionare **OK**. Nella procedura guidata visualizzata, selezionare **Fine**.
+1. Nella finestra di **dialogo New Project** (Nuovo Project) visualizzata passare al linguaggio **Python** (o cercare "Python"), selezionare From Existing Python Code (Da codice **Python** esistente), specificare un nome per il progetto, impostare **Location** (Percorso) sulla stessa cartella del repository e selezionare **OK.** Nella procedura guidata visualizzata, selezionare **Fine**.
 
-1. Selezionare   >  **Visualizza Esplora soluzioni** dal menu.
+1. Scegliere   >  **Visualizza Esplora soluzioni** dal menu.
 
 1. In **Esplora soluzioni** espandere il nodo **python3**, fare clic con il pulsante destro del mouse su **contemplate_koans.py** e scegliere **Imposta come file di avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
 
-1. Selezionare **Project** Proprietà Koans dal menu, selezionare la scheda Generale e impostare Directory di lavoro  >   su "python3".   Questo passaggio è necessario perché, per impostazione predefinita, Visual Studio imposta la directory di lavoro sulla radice del progetto anziché sul percorso del file di avvio (*python3\contemplate_koans.py*, che è possibile visualizzare nelle proprietà del progetto). Il codice del programma cerca un file *koans.txt* nella cartella di lavoro, di conseguenza, se non si modifica questo valore viene visualizzato un errore di runtime.
+1. Selezionare **Project** Proprietà koans dal menu, selezionare la scheda Generale e impostare Directory di lavoro  >   su "python3".   Questo passaggio è necessario perché, per impostazione predefinita, Visual Studio imposta la directory di lavoro sulla radice del progetto anziché sul percorso del file di avvio (*python3\contemplate_koans.py*, che è possibile visualizzare nelle proprietà del progetto). Il codice del programma cerca un file *koans.txt* nella cartella di lavoro, di conseguenza, se non si modifica questo valore viene visualizzato un errore di runtime.
 
     ![Impostazione della cartella di lavoro per un progetto di Python](media/projects-set-working-directory.png)
 
-1. Premere **CTRL** + **F5 o** selezionare Avvia **debug** senza eseguire  >  **debug** per eseguire il programma. Se viene visualizzato un errore **FileNotFoundError** per il file *koans.txt*, controllare l'impostazione della directory di lavoro come descritto nel passaggio precedente.
+1. Premere **CTRL** + **F5 o** selezionare **Debug** Avvia senza  >  **eseguire debug** per eseguire il programma. Se viene visualizzato un errore **FileNotFoundError** per il file *koans.txt*, controllare l'impostazione della directory di lavoro come descritto nel passaggio precedente.
 
 1. Quando il programma viene eseguito correttamente, viene visualizzato un errore di asserzione alla riga 17 del file *python3/koans/about_asserts.py*. È intenzionale: il programma è progettato per fare in modo che gli errori intenzionali siano corretti. (Per altri dettagli, vedere [Ruby Koans](https://rubykoans.com/) da cui è stato ideato Python Koans.)
 
     ![Primo output del programma di Python koans](media/koans-output.png)
 
-1. Aprire *python3/koans/about_asserts.py* da **Esplora soluzioni** e fare doppio clic sul file. Si noti che i numeri di riga non vengono visualizzati nell'editor per impostazione predefinita. Per modificare questa impostazione, selezionare Opzioni strumenti, selezionare Mostra tutte le impostazioni nella parte inferiore della finestra di dialogo, quindi passare a Editor di testo  >      >  **Python**  >  **Generale** e selezionare **Numeri di riga:**
+1. Aprire *python3/koans/about_asserts.py* da **Esplora soluzioni** e fare doppio clic sul file. Si noti che i numeri di riga non vengono visualizzati nell'editor per impostazione predefinita. Per modificare questa impostazione, **selezionare** Opzioni strumenti, selezionare Mostra tutte le impostazioni nella parte inferiore della finestra di dialogo, quindi passare a Editor di testo Python Generale e  >  selezionare Numeri  di   >    >   **riga:**
 
     ![Accensione del numero di riga per i file di Python](media/options-general-line-numbers.png)
 

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 08ee68932b0bff150f57debb05a5e3b2c866d5d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636228"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 Restituisce il successivo set di elementi dall'enumerazione.
@@ -56,7 +56,7 @@ int Next(
 [out] Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di `S_FALSE` elementi richiesto. In caso contrario, restituisce un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce se è possibile restituire un numero inferiore al numero di elementi richiesto. In `S_FALSE` caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedi anche
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

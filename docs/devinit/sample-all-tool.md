@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 32f8fee439bad53145e31d98f437df8805547220f79c459486288ccebb8e710b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e3d429cbbc1b9fa25bf52c1d02ea5b669b784c9e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121418019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710360"
 ---
 # <a name="all-tools"></a>Tutti gli strumenti
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Come parte di questo `devinit` e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
+> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Questo esempio include un oggetto `devinit.json` , che installa tutti gli strumenti devinit disponibili.
+Questo esempio include un `devinit.json` oggetto , che installa tutti gli strumenti devinit disponibili.
 
 ## <a name="devinitjson"></a>.devinit.json
 
@@ -184,9 +184,9 @@ Questo esempio include un oggetto `devinit.json` , che installa tutti gli strume
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.jssu
+## <a name="devcontainerjson"></a>.devcontainer.json
 
-Contenuto del _.devcontainer.jsnel_ file nella radice del repo.
+Contenuto del file _.devcontainer.json_ nella radice del repo.
 
 ```json
 {

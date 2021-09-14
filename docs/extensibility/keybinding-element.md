@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: be359809e973d8fbb0e1fe0b964d04bc3e41b5d8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152302"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711718"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 L'elemento KeyBinding specifica i tasti di scelta rapida per i comandi.
@@ -47,7 +47,7 @@ L'elemento KeyBinding specifica i tasti di scelta rapida per i comandi.
 |key2|facoltativo. I valori validi includono tutti i caratteri alfanumerici tipizzabili e i valori esadecimali a due cifre preceduti da 0x [e VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
 |mod2|facoltativo. Qualsiasi combinazione **di CTRL,** **ALT** **e MAIUSC** separati da spazio.|
 |emulatore|facoltativo.|
-|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

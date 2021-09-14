@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3759bb07c7dc4ec0548b8178ee561190c410180e34e531463c472a82cf67f3e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 65da62970b798e2a6f608a72199f5c05d2179175
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351876"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710081"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procedura: Gestire il layout dei controlli nei riquadri azioni
   Un riquadro azioni è ancorato a destra di un documento o di un foglio di lavoro per impostazione predefinita. tuttavia, può essere ancorato a sinistra, in alto o in basso. Se si usano più controlli utente, è possibile scrivere codice per impilare correttamente i controlli utente nel riquadro azioni. Per altre informazioni, vedere [Panoramica del riquadro Azioni](../vsto/actions-pane-overview.md).
@@ -39,16 +39,16 @@ ms.locfileid: "121351876"
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Per impostare l'ordine dello stack dei controlli del riquadro azioni
 
-1. Aprire un progetto a livello di documento per Microsoft Office Word che include un riquadro azioni con più controlli utente o controlli riquadro azioni annidati. Per altre informazioni, vedere Procedura: Aggiungere un riquadro azioni a documenti di [Word o Excel cartelle di lavoro.](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+1. Aprire un progetto a livello di documento per Microsoft Office Word che include un riquadro azioni con più controlli utente o controlli riquadro azioni annidati. Per altre informazioni, vedere Procedura: Aggiungere un riquadro azioni a documenti [di Word o Excel cartelle di lavoro.](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 
-2. Fare clic con il pulsante destro del mouse su **ThisDocument.cs** **o ThisDocument.vb** **in** Esplora soluzioni quindi scegliere **Visualizza codice**.
+2. Fare clic con il pulsante destro del mouse su **ThisDocument.cs** **o ThisDocument.vb** in **Esplora soluzioni** quindi scegliere **Visualizza codice**.
 
 3. Nel gestore eventi del riquadro azioni verificare se l'orientamento del riquadro azioni <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> è orizzontale.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet30":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet30":::
 
-4. Se l'orientamento è orizzontale, impilare i controlli del riquadro azioni da sinistra; In caso contrario, impilarli dall'alto.
+4. Se l'orientamento è orizzontale, impilare i controlli del riquadro azioni da sinistra; in caso contrario, impilarli dall'alto.
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet31":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet31":::

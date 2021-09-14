@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 09a7f32a36077d6bb80907ff81243d3d1a189257
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091024"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710423"
 ---
 # <a name="idiasymbolget_backendmajor"></a>IDiaSymbol::get_backEndMajor
 Recupera il numero di versione principale back-end del compilatore.
@@ -44,7 +44,7 @@ HRESULT get_backEndMajor (
 > Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
- Un compilatore è in genere costituito da due elementi primari: il front-end (parser), che gestisce l'analisi del codice sorgente in una forma intermedia, e un back-end (generatore di codice), che converte il modulo intermedio in assembly. Non è insolito che il front-end abbia una versione diversa rispetto al back-end.
+ Un compilatore è in genere costituito da due elementi primari: il front-end (parser), che gestisce l'analisi del codice sorgente in un formato intermedio, e un back-end (generatore di codice), che converte il formato intermedio in assembly. Non è insolito che il front-end abbia una versione diversa rispetto al back-end.
 
  Un numero di versione front-end o back-end è costituito da tre parti: . . , dove è il numero di versione principale, è il numero di versione secondaria e \<major> è il numero di \<minor> \<build> \<major> \<minor> \<build> build. Ad esempio, 13.10.3077.
 

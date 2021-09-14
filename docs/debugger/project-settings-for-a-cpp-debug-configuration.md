@@ -115,21 +115,21 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 44285acc479fc9fb60caa1f9f82e12796f609012
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709900"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
-È possibile modificare le impostazioni di progetto per una  configurazione di debug C o C++ nella finestra di dialogo Pagine delle proprietà, come descritto in Procedura: Impostare le configurazioni [di debug e rilascio.](../debugger/how-to-set-debug-and-release-configurations.md) Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
+È possibile modificare le impostazioni del progetto per una  configurazione di debug C o C++ nella finestra di dialogo Pagine delle proprietà, come descritto in [Procedura: Impostare le](../debugger/how-to-set-debug-and-release-configurations.md)configurazioni di debug e versione . Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
 
 > [!NOTE]
-> Le impostazioni del progetto di debug nella categoria Proprietà di **configurazione/Debug** sono diverse per le app UWP e per i componenti scritti in C++. Vedere [Avviare una sessione di debug (VB, C#, C++ e XAML).](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Le impostazioni del progetto di debug nella categoria **Proprietà di configurazione/Debug** sono diverse per le app UWP e per i componenti scritti in C++. Vedere [Avviare una sessione di debug (VB, C#, C++ e XAML).](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
- Ogni impostazione della proprietà di debug viene scritta e salvata automaticamente nel file "per utente" (con estensione vcxproj.user) per la soluzione quando si salva la soluzione.
+ Ogni impostazione della proprietà di debug viene scritta e salvata automaticamente nel file "per utente" (vcxproj.user) per la soluzione quando si salva la soluzione.
 
- Specificare il debugger da usare nella casella **di riepilogo Debugger da** avviare , come descritto nella tabella seguente. Le proprietà visualizzate variano in funzione del debugger selezionato.
+ Specificare il debugger da usare nella casella **di riepilogo Debugger da** avviare, come descritto nella tabella seguente. Le proprietà visualizzate variano in funzione del debugger selezionato.
 
 ## <a name="configuration-properties-folder-debugging-category"></a>Cartella Proprietà di configurazione (categoria Debug)
 
@@ -144,7 +144,7 @@ ms.locfileid: "122146784"
 | **Nome server remoto** (debugger Windows remoto) | Specifica il nome di un computer (diverso dal computer in uso) nel quale si desidera eseguire il debug di un'applicazione.<br /><br /> La macro di compilazione RemoteMachine viene impostata sul valore di questa proprietà. Per altre informazioni, vedere [Macro per comandi e proprietà di compilazione](/cpp/build/reference/common-macros-for-build-commands-and-properties). |
 | **Connessione** (debugger Windows remoto) | Consente di passare tra tipi di connessione standard e senza autenticazione per il debug remoto. Specificare il nome di un computer remoto nella casella **Nome server remoto**. I tipi di connessione includono:<br /><br /> -   **Remoto con autenticazione di Windows**<br />-   **Remoto senza autenticazione**<br /><br /> **Nota** Il debug remoto senza autenticazione può rendere vulnerabile il computer remoto alle violazioni della sicurezza. La modalità di autenticazione Windows garantisce un maggiore livello di sicurezza.<br /><br /> Per altre informazioni, vedere [Configurazione del debug remoto](../debugger/remote-debugging.md). |
 | **URL HTTP** (debugger servizi Web e debugger Web browser) | Specifica l'URL in cui si trova il progetto di cui si esegue il debug. |
-| **Tipo di debugger** | Specifica il tipo di debugger da usare: **Solo nativo**, **Solo gestito**, **Solo GPU**, **Misto**, **Automatico** (impostazione predefinita) o **Script**.<br /><br /> -   **Solo nativo** è destinato a codice C++ non gestito.<br />-   **Solo gestito** è destinato a codice eseguibile in Common Language Runtime (codice gestito).<br />-   **Misto** richiama debugger sia per codice gestito che per codice non gestito.<br />-   **Automatico** determina il tipo di debugger in base alle informazioni del compilatore e del file EXE.<br />-   **Script** richiama un debugger per gli script.<br />-   **Solo GPU** è destinato al codice AMP C++ eseguibile in un dispositivo GPU o nell'unità di rasterizzazione dei riferimenti DirectX. Vedere [Debug del codice GPU.](../debugger/debugging-gpu-code.md) |
+| **Tipo di debugger** | Specifica il tipo di debugger da usare: **Solo nativo**, **Solo gestito**, **Solo GPU**, **Misto**, **Automatico** (impostazione predefinita) o **Script**.<br /><br /> -   **Solo nativo** è destinato a codice C++ non gestito.<br />-   **Solo gestito** è destinato a codice eseguibile in Common Language Runtime (codice gestito).<br />-   **Misto** richiama debugger sia per codice gestito che per codice non gestito.<br />-   **Automatico** determina il tipo di debugger in base alle informazioni del compilatore e del file EXE.<br />-   **Script** richiama un debugger per gli script.<br />-   **Solo GPU** è destinato al codice AMP C++ eseguibile in un dispositivo GPU o nell'unità di rasterizzazione dei riferimenti DirectX. Vedere [Debug del codice GPU](../debugger/debugging-gpu-code.md). |
 | **Ambiente** (debugger Windows locale e debugger Windows remoto) | Specifica le variabili di ambiente per il programma di cui si esegue il debug. Usare la sintassi delle variabili di ambiente standard , ad esempio `PATH="%SystemRoot%\..."` . Queste variabili eseguono l'override dell'ambiente di sistema oppure ne viene eseguito il merge con l'ambiente di sistema in base all'impostazione **Esegui merge ambiente**. Quando si fa clic con il pulsante sinistro del mouse nella colonna delle impostazioni, viene visualizzato il messaggio "Modifica...". Selezionare il collegamento per modificare le variabili di ambiente. |
 | **Esegui merge ambiente** (debugger Windows locale) | Determina se verrà eseguito il merge delle variabili specificate nella casella **Ambiente** con l'ambiente definito dal sistema operativo. L'impostazione predefinita è Sì. |
 | **Debug SQL** (tutti ad eccezione del debugger cluster MPI) | Attiva il debug delle procedure SQL dall'applicazione [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. L'impostazione predefinita è No. |
@@ -185,7 +185,7 @@ ms.locfileid: "122146784"
 
 Per eseguire il debug di tipi di progetto, ad esempio librerie statiche e DLL, il Visual Studio deve essere in grado di trovare i file corretti. Quando il codice sorgente è disponibile, è possibile aggiungere librerie statiche e DLL come progetti separati alla stessa soluzione, per semplificare il debug. Per informazioni sulla creazione di questi tipi di progetto, vedere Creazione e uso di una libreria [a collegamento dinamico (DLL)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp) e [Creazione di una libreria statica](/cpp/windows/walkthrough-creating-and-using-a-static-library-cpp). Con il codice sorgente disponibile, è anche possibile creare un nuovo Visual Studio progetto scegliendo **File** nuovo  >    >  **Project da codice esistente**.
 
-Per eseguire il debug di DLL esterne al progetto, vedere [Debug di progetti DLL](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal). Se è necessario eseguire il debug del proprio progetto DLL, ma non si ha accesso al progetto per l'applicazione chiamante, vedere Come eseguire [il debug da un progetto DLL.](../debugger/how-to-debug-from-a-dll-project.md)
+Per eseguire il debug di DLL esterne al progetto, vedere [Debug di progetti DLL](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal). Se è necessario eseguire il debug del progetto DLL, ma non si ha accesso al progetto per l'applicazione chiamante, vedere Come eseguire il debug da [un progetto DLL.](../debugger/how-to-debug-from-a-dll-project.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Debug di codice nativo](../debugger/debugging-native-code.md)

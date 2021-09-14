@@ -1,6 +1,6 @@
 ---
 title: Uso del Microsoft Monitoring Agent | Microsoft Docs
-description: Usare Microsoft Monitoring Agent per monitorare ASP.NET app Web e SharePoint 2010 e 2013 per gli errori, i problemi di prestazioni e altri problemi.
+description: Usare Microsoft Monitoring Agent per monitorare ASP.NET app Web e SharePoint 2010 e 2013 per errori, problemi di prestazioni e altri problemi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 759020b393568147bc4d74273b2c302ae0762e47
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161102"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636531"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Uso del Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -80,7 +80,7 @@ ms.locfileid: "122161102"
 3. [Visitare TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) per ottenere il contenuto della Guida più recente.
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> D: Ricerca per categorie le autorizzazioni per il pool di applicazioni?
- **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Esempio:
+ **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Ad esempio:
 
 - Per configurare le autorizzazioni con il comando Windows **icacls** :
 
@@ -121,7 +121,7 @@ ms.locfileid: "122161102"
 
      Di seguito è riportata la sintassi breve:
 
-     **Start-WebApplicationMonitoring** *" " \<appName> "* " " *\<monitoringMode>* *\<outputPath> "* *\<UInt32>* *\<collectionPlanPathAndFileName> "*
+     **Start-WebApplicationMonitoring** *" " \<appName> "* " " *\<monitoringMode>* *\<outputPath> "* " *\<UInt32>* *\<collectionPlanPathAndFileName> "*
 
      Di seguito è riportato un esempio che usa solo il nome dell'applicazione Web e la modalità **Monitor** semplice:
 
@@ -137,8 +137,8 @@ ms.locfileid: "122161102"
 
     |Nome|Descrizione|
     |-|-|
-    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -oppure-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Questo percorso è disponibile in Gestione IIS. Esempio:<br /><br /> ![Percorso dell'app Web e del sito Web IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> È anche possibile usare i comandi [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) e [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) .|
-    |*\<monitoringMode>*|Specificare la modalità di monitoraggio:<br /><br /> <ul><li>**Monitor**: registra dettagli minimi sugli eventi relativi a eccezioni e prestazioni. Questa modalità usa il piano di raccolta predefinito.</li><li>**Trace**: registra dettagli a livello di funzione o monitora le applicazioni SharePoint 2010 e SharePoint 2013 usando il piano di raccolta specificato. In questa modalità l'esecuzione dell'applicazione potrebbe essere più lenta.<br /><br /> <ul><li>[D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)</li><li>[D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing)</li></ul><br />     Questo esempio registra gli eventi per un'applicazione SharePoint ospitata in un sito SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Programmi\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: registra i dettagli personalizzati usando un piano di raccolta personalizzato specificato. Sarà necessario riavviare il monitoraggio se si modifica il piano di raccolta dopo l'avvio del monitoraggio.</li></ul>|
+    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -oppure-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Questo percorso è disponibile in Gestione IIS. Ad esempio:<br /><br /> ![Percorso dell'app Web e del sito Web IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> È anche possibile usare i comandi [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) e [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) .|
+    |*\<monitoringMode>*|Specificare la modalità di monitoraggio:<br /><br /> <ul><li>**Monitor**: registra dettagli minimi sugli eventi relativi a eccezioni e prestazioni. Questa modalità usa il piano di raccolta predefinito.</li><li>**Trace**: registra dettagli a livello di funzione o monitora le applicazioni SharePoint 2010 e SharePoint 2013 usando il piano di raccolta specificato. In questa modalità l'esecuzione dell'applicazione potrebbe essere più lenta.<br /><br /> <ul><li>[D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)</li><li>[D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing)</li></ul><br />     Questo esempio registra gli eventi per un'applicazione SharePoint ospitata in un sito SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Traccia "C:\Programmi\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: registra i dettagli personalizzati usando un piano di raccolta personalizzato specificato. Sarà necessario riavviare il monitoraggio se si modifica il piano di raccolta dopo l'avvio del monitoraggio.</li></ul>|
     |*"\<outputPath>"*|Specificare il percorso completo della directory per archiviare i log IntelliTrace. Assicurarsi di creare questa directory prima di iniziare il monitoraggio.|
     |*\<UInt32>*|Specificare la dimensione massima per il log IntelliTrace. La dimensione massima predefinita del log IntelliTrace è 250 MB.<br /><br /> Quando viene raggiunto il limite, le voci immesse per prime vengono sovrascritte dall'agente per fare spazio ad altre voci. Per modificare questo limite, usare l'opzione **-MaximumFileSizeInMegabytes** o modificare l'attributo `MaximumLogFileSize` nel piano di raccolta.|
     |*"\<collectionPlanPathAndFileName>"*|Specificare il percorso completo o relativo e il nome file del piano di raccolta. Questo piano è un file con estensione xml con cui vengono configurate le impostazioni dell'agente.<br /><br /> Questi piani vengono inclusi con l'agente e funzionano con le applicazioni Web e SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Raccoglie solo gli eventi, come eccezioni, eventi di prestazioni, chiamate a database e richieste del server Web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Raccoglie le chiamate a livello di funzione e tutti i dati presenti nel piano di raccolta predefinito. Questo piano è ideale per l'analisi dettagliata, ma l'applicazione potrebbe risultare rallentata.<br /><br /> Nelle sottocartelle dell'agente sono disponibili le versioni localizzate di questi piani. È anche possibile [personalizzare questi piani o crearne di propri](https://devblogs.microsoft.com/devops/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector/) per evitare di rallentare l'applicazione. Inserire tutti i piani personalizzati nella stessa posizione sicura dell'agente.<br /><br /> [D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing)|
@@ -149,12 +149,12 @@ ms.locfileid: "122161102"
 
 ### <a name="q--a"></a>Domande e risposte
 
-#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> D: Ricerca per categorie ottenere la maggior parte dei dati senza rallentare l'app?
+#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> D: Ricerca per categorie ottenere il maggior numero di dati senza rallentare l'app?
  **R:** con Microsoft Monitoring Agent è possibile raccogliere moltissimi dati e l'impatto sulle prestazioni dell'applicazione dipende dai dati che si sceglie di raccogliere e da come avviene la raccolta. Esistono dei metodi per ottenere la maggior quantità di dati possibile senza rallentare l'app:
 
 - Per le applicazioni Web e SharePoint, l'agente registra i dati per ogni applicazione in cui è condiviso il pool di applicazioni specificato. Ciò potrebbe rallentare qualsiasi applicazione in cui è condiviso lo stesso pool di applicazioni, anche se è possibile limitare la raccolta ai moduli per una singola applicazione. Per evitare di rallentare le altre applicazioni, inserire ogni applicazione nel proprio pool di applicazioni.
 
-- Rivedere gli eventi per i quali l'agente raccoglie i dati nel piano di raccolta. Modificare il piano di raccolta per disabilitare gli eventi non rilevanti o interessanti. Ciò può migliorare le prestazioni di avvio e di esecuzione.
+- Rivedere gli eventi per i quali l'agente raccoglie i dati nel piano di raccolta. Modificare il piano di raccolta per disabilitare gli eventi non rilevanti o interessanti. Ciò può migliorare le prestazioni di avvio e le prestazioni in fase di esecuzione.
 
    Per disabilitare un evento, impostare l'attributo `enabled` per l'elemento `<DiagnosticEventSpecification>` su `false`:
 
@@ -162,7 +162,7 @@ ms.locfileid: "122161102"
 
    Se l'attributo `enabled` non esiste, l'evento è abilitato.
 
-   Esempio:
+   Ad esempio:
 
   - Disabilitare gli eventi di Windows Workflow per le applicazioni che non usano Windows Workflow.
 
@@ -247,7 +247,7 @@ L'agente registra valori per `id`, `Employee.Id`, `Employee.Name` e per l'oggett
 
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName \> \\<IISWebAppName \> "*
 
-    Esempio:
+    Ad esempio:
 
     **PS C: \\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
 
@@ -262,7 +262,7 @@ L'agente registra valori per `id`, `Employee.Id`, `Employee.Name` e per l'oggett
    > [!IMPORTANT]
    > Prestare attenzione quando si condividono i log IntelliTrace perché potrebbero contenere dati personali e sensibili. Assicurarsi che chiunque possa accedere a questi log abbia le autorizzazioni necessarie per esaminare questi dati. Controllare i criteri aziendali sulla privacy.
 
-   **Successiva: Diagnosticare** [gli eventi registrati in Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
+   **Passaggio successivo:** [Diagnosticare gli eventi registrati in Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Salvataggio degli eventi registrati e arresto del monitoraggio
  Seguire questa procedura se si vogliono ottenere informazioni diagnostiche durante la riproduzione di un problema specifico. In questo modo verranno riavviate tutte le applicazioni Web nel server Web.
@@ -281,7 +281,7 @@ L'agente registra valori per `id`, `Employee.Id`, `Employee.Name` e per l'oggett
 
     **Stop-WebApplicationMonitoring -All**
 
-    Esempio:
+    Ad esempio:
 
     **PS C: \\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**
 

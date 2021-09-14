@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Distribuzione di una Project Elenco attività di | Microsoft Docs'
-description: In questa procedura dettagliata usare Visual Studio creare, personalizzare, eseguire il debug e distribuire un SharePoint per tenere traccia delle attività del progetto.
+description: In questa procedura dettagliata, usare Visual Studio per creare, personalizzare, eseguire il debug e distribuire un SharePoint per tenere traccia delle attività del progetto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 88b4be482cc0ad99829a065b8bc423258b69de49
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711378"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procedura dettagliata: Distribuire una definizione dell'elenco attività di progetto
 
@@ -38,7 +38,7 @@ In questa procedura guidata viene illustrato come utilizzare [!INCLUDE[vs_dev11_
 
 Creare un progetto di elenco di SharePoint e associare la definizione dell'elenco alle attività.
 
-1. Aprire la **finestra di dialogo** Project, espandere il nodo SharePoint e quindi scegliere il nodo **2010.** 
+1. Aprire la **finestra di dialogo** Nuovo  Project, espandere il nodo SharePoint e quindi scegliere il **nodo 2010.**
 
 2. Nel riquadro **Modelli** scegliere il modello SharePoint **2010 Project,** assegnare al progetto il nome **ProjectTaskList** e quindi scegliere **OK.**
 
@@ -64,7 +64,7 @@ Nell'elenco attività è possibile aggiungere un ricevitore di eventi tramite cu
 
 1. Aprire il menu di scelta rapida per il nodo del progetto, **scegliere Aggiungi** e quindi **Nuovo elemento.**
 
-2. Nell'elenco dei SharePoint modelli scegliere il modello **Ricevitore** di eventi e quindi denomarlo **ProjectTaskListEventReceiver.**
+2. Nell'elenco di SharePoint modelli scegliere il modello **Ricevitore** di eventi e quindi denomarlo **ProjectTaskListEventReceiver**.
 
      Verrà **visualizzata SharePoint personalizzazione** guidata.
 
@@ -99,7 +99,7 @@ Quando si crea una soluzione SharePoint, Visual Studio automaticamente le funzio
 
 Quando si crea un SharePoint, Visual Studio automaticamente le funzionalità che contengono gli elementi di progetto predefiniti al pacchetto. È possibile personalizzare le impostazioni dell'elenco attività SharePoint progetto usando Progettazione pacchetti.
 
-1. In **SolutionExplorer** aprire il menu di scelta rapida **per Pacchetto** e quindi scegliere **Progettazione visualizzazioni**.
+1. In **SolutionExplorer** aprire il menu di scelta rapida per **Pacchetto** e quindi scegliere **Progettazione visualizzazioni**.
 
 2. Nella casella **Nome** immettere **ProjectTaskListPackage**.
 
@@ -117,7 +117,7 @@ Quando si esegue il progetto, viene aperto SharePoint sito web. Tuttavia, è nec
 
 3. Nella barra laterale sinistra scegliere il **Project Elenco attività** collegamento.
 
-     Viene Project Elenco attività pagina dei dati.
+     Viene visualizzata Project Elenco attività pagina.
 
 4. Nella scheda **Strumenti elenco** scegliere la **scheda** Elementi.
 
@@ -159,17 +159,17 @@ Visual Studio ricicla il pool di applicazioni IIS, ritira tutte le versioni esis
 
 5. Usare il comando PowerShell `Add-SPUserSolution` per installare il pacchetto nell'installazione SharePoint remota. Per le soluzioni farm, usare il `Add-SPSolution` comando .
 
-     Ad esempio, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Ad esempio: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
 6. Usare il comando PowerShell `Install-SPUserSolution` per distribuire la soluzione. Per le soluzioni farm, usare il `Install-SPSolution` comando .
 
-     Ad esempio, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Ad esempio: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Per altre informazioni sulla distribuzione remota, vedere [Uso](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) di soluzioni e Aggiunta e distribuzione di soluzioni [con PowerShell in SharePoint 2010.](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni su come personalizzare e distribuire soluzioni SharePoint, vedere gli argomenti seguenti:
+Per altre informazioni su come personalizzare e distribuire SharePoint soluzioni, vedere gli argomenti seguenti:
 
 - [Procedura dettagliata: Creare una colonna del sito, un tipo di contenuto ed un elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
@@ -178,4 +178,4 @@ Per altre informazioni su come personalizzare e distribuire soluzioni SharePoint
 - [Windows PowerShell per SharePoint Server 2010](/powershell/module/sharepoint-server)
 
 ## <a name="see-also"></a>Vedi anche
-[Creare un pacchetto e distribuire SharePoint soluzioni](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+[Creare pacchetti e distribuire SharePoint soluzioni](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento VSTemplate (modelli Visual Studio) | Microsoft Docs
+title: Elemento VSTemplate (Visual Studio modelli) | Microsoft Docs
 description: Informazioni sull'elemento VSTemplate e su come contiene tutti i metadati relativi al modello di progetto, al modello di elemento o starter kit.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b57965d7b59ca921c0b3831c24413709f85f0ff5ee8a394f357629ea66992357
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7509614613ac80bc4f697f7f93358819eb9ecde4
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711687"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (Visual Studio modelli)
 Contiene tutti i metadati relativi al modello di progetto, al modello di elemento o starter kit.
@@ -61,7 +61,7 @@ Contiene tutti i metadati relativi al modello di progetto, al modello di element
  `VSTemplate`L'elemento è l'elemento radice dei *file con estensione vstemplate.*
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] un'applicazione.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

@@ -1,6 +1,6 @@
 ---
 title: Risoluzione di assembly in fase di progettazione | Microsoft Docs
-description: Informazioni su MSBuild i riferimenti agli assembly in fase di progettazione usando gli assembly di riferimento nel targeting pack.
+description: Informazioni su MSBuild risolvere i riferimenti agli assembly in fase di progettazione usando gli assembly di riferimento nel Targeting Pack.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 7033a842c9de61feb392cf145576cb27dacdf6fa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077027"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625559"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Risoluzione di assembly in fase di progettazione
 
@@ -26,7 +26,7 @@ Quando si aggiunge un riferimento a un assembly tramite la scheda **.NET** della
 
 ## <a name="multi-targeting"></a>Multitargeting
 
- Visual Studio consente di specificare come destinazione le versioni .NET Framework che vengono eseguite in più versioni del .NET Framework. Quando viene rilasciata una nuova versione di .NET Framework, Il framework può essere installato usando un Targeting Pack e verrà automaticamente visualizzato come destinazione in Visual Studio.
+ Visual Studio consente di specificare come destinazione le versioni .NET Framework che vengono eseguite in più versioni del .NET Framework. Quando viene rilasciata una nuova versione .NET Framework, Il framework può essere installato usando un Targeting Pack e verrà automaticamente visualizzato come destinazione in Visual Studio.
 
 ## <a name="how-type-resolution-works"></a>Funzionamento della risoluzione dei tipi
 

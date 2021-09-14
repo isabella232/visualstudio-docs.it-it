@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3ef8fc7ef3de032d4c4fba25e0e3b64a47b76ac1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156630"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636980"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
-Visual Studio offre un'esperienza di debug completa per Python, inclusa la connessione  a  processi in esecuzione, la valutazione di espressioni nelle finestre Espressioni di controllo e Controllo immediato, il controllo di variabili locali, punti di interruzione, istruzioni di esecuzione/uscita/uscita da istruzioni, **impostazione** dell'istruzione successiva e altro ancora.
+Visual Studio offre un'esperienza di debug completa per Python, tra cui il collegamento a  processi in esecuzione, la valutazione delle espressioni nelle finestre **Espressioni** di controllo e Controllo immediato, l'analisi di variabili locali, punti di interruzione, istruzioni step-in/out/over, **Set Next Statement** e altro ancora.
 
 Vedere anche gli articoli seguenti sul debug nei vari scenari:
 
@@ -31,7 +31,7 @@ Vedere anche gli articoli seguenti sul debug nei vari scenari:
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python in Visual Studio supporta il debug senza un progetto. Con un file Python autonomo aperto, fare clic con il pulsante destro del mouse nell'editor, scegliere Avvia debug e Visual Studio avvia lo script con l'ambiente predefinito globale (vedere Ambienti [Python)](managing-python-environments-in-visual-studio.md)e nessun argomento. Da questo momento però sono disponibili tutte le opzioni di debug.
+> Python in Visual Studio supporta il debug senza un progetto. Con un file Python autonomo aperto, fare clic con il pulsante destro del mouse nell'editor, scegliere Avvia con debug e Visual Studio avvia lo script con l'ambiente predefinito globale (vedere [Ambienti Python)](managing-python-environments-in-visual-studio.md)e nessun argomento. Da questo momento però sono disponibili tutte le opzioni di debug.
 >
 > Per controllare l'ambiente e gli argomenti, creare un progetto per il codice. Questa operazione viene eseguita facilmente con il modello di progetto [Da codice Python esistente](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files).
 
@@ -41,18 +41,18 @@ Vedere anche gli articoli seguenti sul debug nei vari scenari:
 
 Il flusso di lavoro del debug di base include l'impostazione dei punti di interruzione, l'esecuzione di codice istruzione per istruzione, il controllo dei valori e la gestione delle eccezioni, come descritto nelle sezioni seguenti.
 
-Una sessione di debug viene avviata con il **comando** Debug Avvia debug, il pulsante Avvia sulla barra degli strumenti  >   o il tasto **F5.**  Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in **Esplora soluzioni**) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in **Proprietà progetto** (vedere [Opzioni di debug del progetto](#project-debugging-options)). In Visual Studio 2017 versione 15.6 e versioni successive viene generato un avviso se non è impostato un file di avvio. Nelle versioni precedenti è possibile che venga visualizzata una finestra di output con l'interprete Python in esecuzione o che la finestra di output venga visualizzata brevemente e poi scompaia. In qualsiasi caso, fare clic con il pulsante destro del mouse sul file appropriato e scegliere **Imposta come file di avvio**.
+Una sessione di debug viene avviata con il **comando Debug** Avvia debug, il pulsante Avvia sulla barra degli strumenti o il tasto  >   **F5.**  Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in **Esplora soluzioni**) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in **Proprietà progetto** (vedere [Opzioni di debug del progetto](#project-debugging-options)). In Visual Studio 2017 versione 15.6 e versioni successive viene generato un avviso se non è impostato un file di avvio. Nelle versioni precedenti è possibile che venga visualizzata una finestra di output con l'interprete Python in esecuzione o che la finestra di output venga visualizzata brevemente e poi scompaia. In qualsiasi caso, fare clic con il pulsante destro del mouse sul file appropriato e scegliere **Imposta come file di avvio**.
 
 > [!Note]
 > Il debugger viene sempre avviato con l'ambiente Python attivo per il progetto. Per cambiare ambiente, attivarne uno diverso come descritto in [Selezionare un ambiente Python per un progetto](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Punti di interruzione
 
-Con i punti di interruzione l'esecuzione del codice viene arrestata in corrispondenza di un punto contrassegnato per consentire il controllo dello stato del programma. Impostare i punti di interruzione facendo clic sul margine sinistro dell'editor di codice oppure facendo clic con il pulsante destro del mouse su una riga di codice e scegliendo Punto di interruzione Inserisci punto  >  **di interruzione**. Accanto a ogni riga con un punto di interruzione verrà visualizzato un punto rosso.
+Con i punti di interruzione l'esecuzione del codice viene arrestata in corrispondenza di un punto contrassegnato per consentire il controllo dello stato del programma. Impostare i punti di interruzione facendo clic sul margine sinistro dell'editor di codice oppure facendo clic con il pulsante destro del mouse su una riga di codice e scegliendo **Punto** di  >  **interruzione Inserisci punto di interruzione**. Accanto a ogni riga con un punto di interruzione verrà visualizzato un punto rosso.
 
 ![Punti di interruzione visualizzati in Visual Studio](media/debugging-breakpoints.png)
 
-Se si fa clic sul punto rosso o si fa clic con il pulsante destro del mouse sulla riga di codice e si **seleziona** Punto di  >  **interruzione Elimina punto** di interruzione, il punto di interruzione viene rimosso. È anche possibile disabilitarlo senza rimuoverlo usando il comando Punto di interruzione  >  **Disabilita punto di** interruzione .
+Facendo clic sul punto rosso o facendo clic con il pulsante destro del mouse sulla riga di codice e scegliendo **Punto** di interruzione Elimina punto di  >  **interruzione** viene rimosso il punto di interruzione. È anche possibile disabilitarlo senza rimuoverlo usando il comando **Punto** di interruzione  >  **Disabilita punto di** interruzione.
 
 > [!Note]
 > Alcuni punti di interruzione in Python possono risultare sorprendenti per gli sviluppatori che hanno lavorato con altri linguaggi di programmazione. In Python l'intero file è codice eseguibile, di conseguenza Python esegue il file quando viene caricato per elaborare tutte le definizioni di classe o di funzione di primo livello. Se è stato impostato un punto di interruzione, è possibile che l'esecuzione del debugger si interrompa durante una dichiarazione di classe. Questo comportamento è corretto, anche se è a volte sorprendente.
@@ -75,7 +75,7 @@ Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di 
 | **Esci da istruzione/routine** | **MAIUSC** + **F11** | Esegue il codice fino alla fine della funzione corrente, quindi passa all'istruzione di chiamata.  Questo comando è utile quando non è necessario eseguire il debug della parte restante della funzione corrente. |
 | **Esegui fino al cursore** | **CTRL** + **F10** | Esegue il codice fino alla posizione del punto di inserimento nell'editor. Questo comando consente di ignorare facilmente un segmento di codice di cui non è necessario eseguire il debug. |
 | **Imposta istruzione successiva** | **CTRL** + **MAIUSC** + **F10** | Imposta il punto di esecuzione corrente nel codice in corrispondenza della posizione del punto di inserimento. Questo comando consente di evitare l'esecuzione di un segmento di codice, ad esempio quando si sa già che contiene errori o produce effetti collaterali indesiderati. |
-| **Mostra istruzione successiva** | **ALT** + **Numero** **&#42;**| Riporta alla successiva istruzione da eseguire. Questo comando è utile per individuare all'interno del codice il punto in cui il debugger è stato arrestato. |
+| **Mostra istruzione successiva** | **ALT** + **Num** **&#42;**| Riporta alla successiva istruzione da eseguire. Questo comando è utile per individuare all'interno del codice il punto in cui il debugger è stato arrestato. |
 
 ### <a name="inspect-and-modify-values"></a>Esaminare e modificare i valori
 
@@ -115,7 +115,7 @@ Se si verifica un errore nel programma durante il debug e non si dispone di un g
 
 A questo punto è possibile controllare lo stato del programma, incluso lo stack di chiamate. Se tuttavia si prova a eseguire il codice istruzione per istruzione, l'eccezione continua a essere generata fino a quando non viene gestita o il programma non viene chiuso.
 
-Il **comando** Windows di Impostazioni debug genera una finestra in cui è  >    >   possibile espandere **Eccezioni Python:**
+Il **comando** di menu Windows eccezioni Impostazioni visualizza una finestra in cui è  >    >   possibile espandere **Eccezioni Python:**
 
 ![Finestra delle eccezioni nel debugger di Visual Studio](media/debugging-exception-settings.png)
 
@@ -127,7 +127,7 @@ Per configurare un'eccezione che non compare nell'elenco, fare clic sul pulsante
 
 ## <a name="project-debugging-options"></a>Opzioni di debug del progetto
 
-Per impostazione predefinita, il debugger avvia il programma con l'utilità di avvio standard di Python, senza argomenti della riga di comando e altri percorsi o condizioni speciali. Le opzioni di avvio vengono modificate tramite le proprietà di debug del progetto a cui si accede facendo clic con il pulsante destro del mouse sul progetto **in** Esplora soluzioni , scegliendo Proprietà **e** selezionando la **scheda Debug** .
+Per impostazione predefinita, il debugger avvia il programma con l'utilità di avvio standard di Python, senza argomenti della riga di comando e altri percorsi o condizioni speciali. Le opzioni di avvio vengono modificate tramite le proprietà di debug del progetto a cui si accede facendo clic **con** il pulsante destro del mouse sul progetto in Esplora soluzioni , scegliendo **Proprietà** e selezionando la **scheda Debug** .
 
 ![Proprietà di debug del progetto nel debugger di Visual Studio](media/debugging-project-properties.png)
 
@@ -223,7 +223,7 @@ Per gestire l'installazione di ptvsd:
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 ### <a name="for-visual-studio-2019-version-164-and-earlier-upgrade-ptvsd"></a>Per Visual Studio 2019 (versione 16.4 e precedenti) aggiornare ptvsd
-In caso di problemi con il debugger, aggiornare prima la versione del debugger come indicato di seguito:
+Se si verificano problemi con il debugger, aggiornare prima di tutto la versione del debugger come indicato di seguito:
 
 1. Passare alla scheda **Pacchetti** nella finestra **Ambienti Python**.
 
@@ -234,7 +234,7 @@ In caso di problemi con il debugger, aggiornare prima la versione del debugger c
    Se i problemi persistono, segnalare il problema nel [repository GitHub di PTVS](https://github.com/Microsoft/ptvs/issues).
 
    > [!NOTE]
-   > Per Visual Studio 2019 versione 16.5 e successive, debugpy fa parte del carico di lavoro python di Visual Studio e viene aggiornato insieme a Visual Studio.
+   > Per Visual Studio 2019 versione 16.5 e successive, debugpy fa parte del carico di lavoro python di Visual Studio e viene aggiornato insieme Visual Studio.
 
 ### <a name="enable-debugger-logging"></a>Abilitare la registrazione del debugger
 
@@ -242,7 +242,7 @@ Durante l'analisi di un problema del debugger, Microsoft potrebbe chiedere di ab
 
 La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 
-1. Aprire una finestra di comando in Visual Studio **usando** il comando di menu  >  **Visualizza Windows**  >  **finestra di comando.**
+1. Aprire una finestra di comando in Visual Studio il **comando di** menu  >  **Visualizza Windows** di  >  **comando.**
 
 1. Immettere il comando seguente:
 
@@ -254,7 +254,7 @@ La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 
     ![Output di registrazione del debugger nella finestra Output](media/debugger-logging-output.png)
 
-1. Se Visual Studio risponde o in caso contrario non è possibile accedere alla finestra **di output,** riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
+1. Se Visual Studio smette di rispondere o non si è in grado di accedere alla finestra **Output,** riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
 
     ```ps
     DebugAdapterHost.Logging /On

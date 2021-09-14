@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0b6ca27eccae7b76a6a33fbb5158448d8a160e166603eb8d7605c398dc49befd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dfcaa045710a28eb0caec144cb922c9a5506f6ba
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710344"
 ---
 # <a name="private-beta"></a>Beta privata
 
@@ -27,7 +27,7 @@ Questo esempio illustra come personalizzare uno spazio di codice per Visual Stud
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve essere nella stessa cartella di _.devcontainer.jsin_.
+Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve essere nella stessa cartella di _.devcontainer.json._
 
 ```json
 {
@@ -71,9 +71,9 @@ Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve essere n
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.jssu
+## <a name="devcontainerjson"></a>.devcontainer.json
 
-Contenuto del.devcontainer.js _nel_ file nella radice del repo.
+Contenuto del file _.devcontainer.json_ nella radice del repo.
 
 ```json
 {

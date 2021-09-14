@@ -11,13 +11,13 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: b0a2c2e532258594834d73c091314451f8b2cd3f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710220"
 ---
-# <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Generare operatori di confronto per tipi che implementano IComparable
+# <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Generare operatori di confronto per i tipi che implementano IComparable
 
 Questa generazione di codice si applica a:
 
@@ -25,7 +25,7 @@ Questa generazione di codice si applica a:
 
 **Cosa:** Consente di generare operatori **di** confronto per i tipi che implementano IComparable.
 
-**Quando:** Si dispone di un tipo che implementa IComparable e verranno aggiunti automaticamente gli operatori di confronto.
+**Quando:** Si dispone di un tipo che implementa IComparable che aggiungerà automaticamente gli operatori di confronto.
 
 **Perché:** Se si implementa un tipo valore, è consigliabile eseguire l'override del metodo **Equals** per migliorare le prestazioni rispetto all'implementazione predefinita del metodo Equals in ValueType.
 
@@ -43,9 +43,9 @@ Questa generazione di codice si applica a:
 
    ![Generare gli operatori di confronto](media/generate-comparison-operators.png)
 
-3. Selezionare **Generate Equals(object) (Genera equals(oggetto)** dal menu a discesa.
+3. Selezionare **Genera equals(oggetto)** dal menu a discesa.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Generazione di codice](../code-generation-in-visual-studio.md)
+- [Generazione del codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

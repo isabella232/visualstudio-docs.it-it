@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 17e2db139df6ffd09efb43edb2cdb4e358231a1c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625578"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 
@@ -95,7 +95,7 @@ Se si tenta di eseguire un progetto che usa l'attività dai comandi dell'interfa
 MSB4803: The task "ResolveComReference" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild.
 ```
 
-Questa attività non è supportata nella versione .NET Core di MSBuild, che è ciò che viene usato quando si esegue il comando `dotnet build` dalla riga di comando. Provare a compilare il progetto richiamando [MSBuild.exe](msbuild-command-line-reference.md) dal Visual Studio Prompt dei comandi per gli sviluppatori, perché usa la .NET Framework di MSBuild.
+Questa attività non è supportata nella versione .NET Core di MSBuild, che è ciò che viene usato quando si esegue il comando `dotnet build` dalla riga di comando. Provare a compilare il [progetto richiamandoMSBuild.exe](msbuild-command-line-reference.md) dal Visual Studio Prompt dei comandi per gli sviluppatori, perché usa la .NET Framework di MSBuild.
 
 ## <a name="see-also"></a>Vedi anche
 

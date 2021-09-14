@@ -1,6 +1,6 @@
 ---
 title: Visualizzazioni di Spy++ | Microsoft Docs
-description: Informazioni sulle visualizzazioni nello strumento di debug di Spy++. Spy ++ visualizza le visualizzazioni albero delle finestre, dei messaggi, dei processi e dei thread disponibili nel computer.
+description: Informazioni sulle visualizzazioni nello strumento di debug Spy++. Spy ++ visualizza le visualizzazioni albero delle finestre, dei messaggi, dei processi e dei thread disponibili nel computer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,21 +15,21 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c670cbb34da33d4745a4480cce28934ceebd6e79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636571"
 ---
 # <a name="spy-views"></a>Visualizzazioni di Spy++
 Spy ++ visualizza le visualizzazioni albero delle finestre, dei messaggi, dei processi e dei thread disponibili nel computer.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Windows dati](../debugger/windows-view.md) Visualizza una visualizzazione albero delle finestre e dei controlli disponibili.
+ [Windows visualizzazione](../debugger/windows-view.md) Visualizza una visualizzazione albero delle finestre e dei controlli disponibili.
 
  [Visualizzazione Messaggi](../debugger/messages-view.md) Visualizza il flusso di messaggi associato a una finestra, un processo o un thread.
 
- [Visualizzazione Processi](../debugger/processes-view.md) Visualizza una visualizzazione albero dei processi attivi.
+ [Visualizzazione processi](../debugger/processes-view.md) Visualizza una visualizzazione albero dei processi attivi.
 
  [Visualizzazione Thread](../debugger/threads-view.md) Visualizza una visualizzazione albero dei thread attivi.
 

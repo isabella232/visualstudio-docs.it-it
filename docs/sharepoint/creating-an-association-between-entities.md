@@ -25,34 +25,34 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: dcae4af6cb6ef0592f587718afe995a364686351
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149546"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625308"
 ---
 # <a name="create-an-association-between-entities"></a>Creare un'associazione tra entità
   È possibile definire relazioni tra entità nel modello BDC (Business Data Connectivity) creando associazioni. Visual Studio genera metodi che forniscono ai consumer del modello informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
 
 ## <a name="create-an-association"></a>Creare un'associazione
- Creare un'associazione  scegliendo il controllo Associazione nella casella degli strumenti Visual Studio **,** scegliendo la prima entità (denominata entità di origine) e quindi scegliendo la seconda entità (denominata entità di destinazione). È possibile definire i dettagli dell'associazione in **Association Editor**. Per altre informazioni, [vedere Procedura: Creare un'associazione tra entità.](../sharepoint/how-to-create-an-association-between-entities.md)
+ Creare un'associazione  scegliendo il controllo Associazione nella casella degli strumenti Visual Studio **,** scegliendo la prima entità (denominata entità di origine) e quindi scegliendo la seconda entità (denominata entità di destinazione). È possibile definire i dettagli dell'associazione in **Editor associazioni**. Per altre informazioni, vedere [Procedura: Creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md).
 
 ## <a name="association-methods"></a>Metodi di associazione
- Le applicazioni come SharePoint web part di dati business utilizzano le associazioni chiamando metodi nella classe di servizio di un'entità. È possibile aggiungere metodi alla classe di servizio di un'entità selezionandoli **nell'Editor associazioni**.
+ Le applicazioni come SharePoint web part di dati aziendali utilizzano le associazioni chiamando metodi nella classe di servizio di un'entità. È possibile aggiungere metodi alla classe di servizio di un'entità selezionandoli **nell'Editor associazioni**.
 
- Per impostazione predefinita, **l'editor di** associazione aggiunge un metodo association navigation alle entità di origine e di destinazione. Un metodo association navigation nell'entità di origine consente ai consumer di recuperare un elenco di entità di destinazione. Un metodo Association Navigation nell'entità di destinazione consente ai consumer di recuperare l'entità di origine correlata a un'entità di destinazione.
+ Per impostazione predefinita, **l'editor di associazione** aggiunge un metodo di navigazione associazione alle entità di origine e di destinazione. Un metodo di navigazione associazione nell'entità di origine consente ai consumer di recuperare un elenco di entità di destinazione. Un metodo di navigazione associazione nell'entità di destinazione consente ai consumer di recuperare l'entità di origine correlata a un'entità di destinazione.
 
- È necessario aggiungere il codice a ognuno di questi metodi per restituire le informazioni appropriate. È anche possibile aggiungere altri tipi di metodi per supportare scenari più avanzati. Per altre informazioni su ognuno di questi metodi, vedere [Operazioni supportate.](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14))
+ È necessario aggiungere il codice a ognuno di questi metodi per restituire le informazioni appropriate. È anche possibile aggiungere altri tipi di metodi per supportare scenari più avanzati. Per altre informazioni su ognuno di questi metodi, vedere [Operazioni supportate](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14)).
 
 ## <a name="types-of-associations"></a>Tipi di associazioni
- È possibile creare due tipi di associazioni in Progettazione BDC: associazioni basate su chiave esterna e associazioni senza chiave esterna.
+ È possibile creare due tipi di associazioni nella finestra di progettazione del data center BDC: associazioni basate su chiave esterna e associazioni senza chiave esterna.
 
 ### <a name="foreign-key-based-association"></a>Associazione basata su chiave esterna
- È possibile creare un'associazione basata su chiave esterna facendo in modo che un identificatore nell'entità di origine sia associato ai descrittori di tipo definiti nell'entità di destinazione. Questa relazione consente ai consumer del modello di fornire un'interfaccia utente avanzata per gli utenti. Ad esempio, un modulo in Outlook che consente a un utente di creare un ordine di vendita in grado di visualizzare i clienti in un elenco a discesa; o un elenco di ordini di vendita in SharePoint che consente agli utenti di aprire una pagina del profilo per un cliente.
+ È possibile creare un'associazione basata su chiave esterna, relazionando un identificatore nell'entità di origine ai descrittori di tipo definiti nell'entità di destinazione. Questa relazione consente ai consumer del modello di fornire un'interfaccia utente avanzata per gli utenti. Ad esempio, un modulo in Outlook che consente a un utente di creare un ordine di vendita in grado di visualizzare i clienti in un elenco a discesa; o un elenco di ordini di vendita in SharePoint che consente agli utenti di aprire una pagina del profilo per un cliente.
 
- Per creare un'associazione basata su chiave esterna, correlare gli identificatori e i descrittori di tipo che condividono lo stesso nome e tipo. Ad esempio, è possibile creare un'associazione basata su chiave esterna tra `Contact` un'entità e `SalesOrder` un'entità . `SalesOrder`L'entità restituisce un `ContactID` descrittore di tipo come parte del parametro restituito dei metodi Finder o Finder specifici. Entrambi i descrittori di tipo vengono visualizzati in **Association Editor**. Per creare una relazione basata su chiave esterna tra l'entità e l'entità, scegliere `Contact` l'identificatore accanto a ognuno di questi `SalesOrder` `ContactID` campi.
+ Per creare un'associazione basata su chiave esterna, correlare gli identificatori e i descrittori di tipo che condividono lo stesso nome e tipo. Ad esempio, è possibile creare un'associazione basata su chiave esterna tra `Contact` un'entità e `SalesOrder` un'entità. `SalesOrder`L'entità restituisce un `ContactID` descrittore di tipo come parte del parametro restituito dei metodi Finder o Finder specifici. Entrambi i descrittori di tipo vengono visualizzati **nell'Editor associazioni**. Per creare una relazione basata su chiave esterna tra l'entità e l'entità, `Contact` scegliere l'identificatore accanto a ognuno di questi `SalesOrder` `ContactID` campi.
 
- Aggiungere codice al metodo Association Navigator dell'entità di origine che restituisce una raccolta di entità di destinazione. Nell'esempio seguente vengono restituiti gli ordini di vendita per un contatto.
+ Aggiungere il codice al metodo Association Navigator dell'entità di origine che restituisce una raccolta di entità di destinazione. Nell'esempio seguente vengono restituiti gli ordini di vendita per un contatto.
 
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet7":::
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet7":::
@@ -63,13 +63,13 @@ ms.locfileid: "122149546"
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb" id="Snippet8":::
 
 ### <a name="foreign-keyless-association"></a>Associazione senza chiave esterna
- È possibile creare un'associazione senza eseguire il mapping degli identificatori ai descrittori dei tipi di campo. Creare questo tipo di associazione quando l'entità di origine non ha una relazione diretta con l'entità di destinazione. Ad esempio, una `SalesOrderDetail` tabella non dispone di una chiave esterna mappata a una chiave primaria in una `Contact` tabella.
+ È possibile creare un'associazione senza eseguire il mapping degli identificatori ai descrittori dei tipi di campo. Creare questo tipo di associazione quando l'entità di origine non ha una relazione diretta con l'entità di destinazione. Ad esempio, una tabella non dispone di una chiave esterna che esegue il `SalesOrderDetail` mapping a una chiave primaria in una `Contact` tabella.
 
- Se si desidera visualizzare informazioni nella tabella correlata a un oggetto , è possibile creare un'associazione senza chiave esterna `SalesOrderDetail` `Contact` tra `Contact` l'entità e `SalesOrderDetail` l'entità.
+ Se si desidera visualizzare informazioni nella tabella correlate a , è possibile creare un'associazione senza chiave esterna `SalesOrderDetail` tra l'entità `Contact` e `Contact` `SalesOrderDetail` l'entità.
 
- Nel metodo Association Navigation dell'entità restituire le entità unendo le tabelle o chiamando un metodo `Contact` `SalesOrderDetail` stored procedure.
+ Nel metodo di navigazione associazione dell'entità, restituire le entità unendo le tabelle o chiamando un `Contact` `SalesOrderDetail` stored procedure.
 
- Nell'esempio seguente vengono restituiti i dettagli di tutti gli ordini di vendita mediante l'unione di tabelle.
+ Nell'esempio seguente vengono restituiti i dettagli di tutti gli ordini di vendita tramite join di tabelle.
 
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet9":::
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet9":::

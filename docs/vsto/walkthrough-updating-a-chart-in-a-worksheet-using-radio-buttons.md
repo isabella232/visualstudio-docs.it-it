@@ -1,6 +1,6 @@
 ---
 title: Aggiornare un grafico nel foglio di lavoro usando i pulsanti di opzione
-description: Informazioni di base sull'uso dei pulsanti di opzione in un Microsoft Excel di lavoro per offrire all'utente un modo per passare rapidamente da un'opzione all'altro.
+description: Informazioni di base sull'uso dei pulsanti di opzione in Microsoft Excel foglio di lavoro per offrire all'utente un modo per passare rapidamente da un'opzione all'altro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,18 +18,18 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 4edf0813fcbcd9b7013b85bcf251da9a47beb78a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710027"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: aggiornamento di un grafico in un foglio di lavoro mediante i pulsanti di opzione
   Questa procedura dettagliata illustra le nozioni di base sull'uso dei pulsanti di opzione in un Microsoft Office Excel di lavoro per offrire all'utente un modo per passare rapidamente da un'opzione all'altro. In questo caso, le opzioni modificano lo stile di un grafico.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Per visualizzare il risultato come esempio completo, vedere l'esempio Excel controlli di esempio in Office di sviluppo [e procedure dettagliate.](../vsto/office-development-samples-and-walkthroughs.md)
+ Per visualizzare il risultato come esempio completo, vedere l'esempio Excel controls in Office di sviluppo [e procedure dettagliate.](../vsto/office-development-samples-and-walkthroughs.md)
 
  Vengono illustrate le attività seguenti:
 
@@ -90,7 +90,7 @@ ms.locfileid: "122155382"
 9. Uscire da Excel.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
- In questo passaggio verrà creato un progetto cartella Excel cartella di lavoro basata sulla cartella **di lavoro ExcelChart.**
+ In questo passaggio si creerà un progetto Excel cartella di lavoro basata sulla cartella **di lavoro ExcelChart.**
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
@@ -105,7 +105,7 @@ ms.locfileid: "122155382"
      Visual Studio apre la nuova cartella Excel cartella di lavoro nella finestra di progettazione e aggiunge il progetto My **Excel Chart** **a Esplora soluzioni**.
 
 ## <a name="set-properties-of-the-chart"></a>Impostare le proprietà del grafico
- Quando si crea un nuovo progetto Excel workbook che usa una cartella di lavoro esistente, i controlli host vengono creati automaticamente per tutti gli intervalli denominati, gli oggetti elenco e i grafici nella cartella di lavoro. È possibile modificare il nome del <xref:Microsoft.Office.Tools.Excel.Chart> controllo usando la **finestra** Proprietà.
+ Quando si crea un nuovo progetto Excel Workbook che usa una cartella di lavoro esistente, i controlli host vengono creati automaticamente per tutti gli intervalli denominati, gli oggetti elenco e i grafici nella cartella di lavoro. È possibile modificare il nome del <xref:Microsoft.Office.Tools.Excel.Chart> controllo usando la **finestra** Proprietà.
 
 ### <a name="to-change-the-name-of-the-chart-control"></a>Per modificare il nome del controllo Chart
 
@@ -216,7 +216,7 @@ ms.locfileid: "122155382"
 
      Al progetto `my_Excel_Chart_ChartOptions1` viene aggiunto un nuovo controllo denominato .
 
-4. Modificare il nome del controllo in **ChartOptions1.**
+4. Modificare il nome del controllo in **ChartOptions1**.
 
 ## <a name="change-the-chart-type"></a>Modificare il tipo di grafico
  Per modificare il tipo di grafico, creare un gestore eventi che imposta lo stile in base all'opzione selezionata nel controllo utente.

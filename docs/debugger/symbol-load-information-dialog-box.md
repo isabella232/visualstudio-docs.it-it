@@ -19,17 +19,17 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e954e25413152746ae70b009a03374d39dbca2a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112288"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710380"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Finestra di dialogo Informazioni sul caricamento simboli
 La finestra di dialogo **Informazioni sul caricamento simboli** viene visualizzata quando si fa clic con il pulsante destro del mouse nella finestra **Moduli** e si sceglie **Informazioni sul caricamento simboli**.
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
- **Informazioni** Mostra le directory in cui vengono cercati i file di simboli (file PDB) in base Visual Studio le impostazioni di installazione e le modifiche apportate alle impostazioni dei simboli nella **finestra di** dialogo Opzioni .
+ **Informazioni** Mostra le directory in cui vengono cercati i file di simboli (file PDB) in base Visual Studio impostazioni di installazione e modifiche apportate alle impostazioni dei simboli nella finestra **di** dialogo Opzioni .
 
  **Simbolo Impostazioni** Fare clic su questo pulsante per modificare le impostazioni dei simboli nella **finestra di** dialogo Opzioni **(categoria Debug,** **pagina** Simboli). In questa pagina è possibile aggiungere o rimuovere percorsi di simboli, specificare un percorso di cache locale se si utilizza un server di simboli e controllare quando vengono eseguite ricerche in tali percorsi.
 

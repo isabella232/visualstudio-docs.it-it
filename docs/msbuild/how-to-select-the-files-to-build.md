@@ -16,11 +16,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fac27ec9996d115381ae42a7c88ddcf6549ba86
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625692"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 
@@ -30,7 +30,7 @@ Quando si compila un progetto che contiene molti file, è possibile elencare sep
 
 Gli elementi rappresentano gli input di una compilazione. Per altre informazioni sugli elementi, vedere [Elementi](../msbuild/msbuild-items.md).
 
-Per includere i file per una compilazione, è necessario che siano inclusi in un elenco di elementi nel file MSBuild progetto. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
+Per includere i file per una compilazione, devono essere inclusi in un elenco di elementi nel MSBuild file di progetto. È possibile aggiungere più file agli elenchi di elementi includendoli uno alla volta o usando i caratteri jolly per includere molti file allo stesso tempo.
 
 #### <a name="to-declare-items-individually"></a>Per dichiarare gli elementi uno alla volta
 
@@ -104,7 +104,7 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. Non è possibile specificare gli input usando `Sources` l'attributo in MSBuild attività quali [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
+> È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. non è possibile specificare gli input usando `Sources` l'attributo in MSBuild attività quali [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

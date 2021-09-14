@@ -1,5 +1,5 @@
 ---
-title: Attività iniziali (SharePoint sviluppo in Visual Studio) | Microsoft Docs
+title: Attività iniziali (SharePoint development in Visual Studio) | Microsoft Docs
 titleSuffix: ''
 description: Introduzione allo sviluppo SharePoint in Visual Studio. SharePoint offre una piattaforma di collaborazione basata sul Web.
 ms.custom: SEO-VS-2020
@@ -19,17 +19,17 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 5576a9871e4ca1a8476b89298d84431e69042915
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060167"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625211"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Introduzione (SharePoint sviluppo in Visual Studio)
 
   Questa sezione permette di iniziare a usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per sviluppare soluzioni SharePoint in grado di sfruttare i vantaggi offerti da [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- Per informazioni SharePoint componenti aggiuntivi, vedere Compilare SharePoint [componenti aggiuntivi](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Per informazioni SharePoint componenti aggiuntivi, vedere Compilare SharePoint [componenti aggiuntivi.](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)
 
  SharePoint offre una piattaforma di collaborazione basata sul Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce molti modelli di progetto per la creazione di siti e contenuti di SharePoint, inclusi definizioni di elenco, flussi di lavoro, modelli di connettività dei dati aziendali e definizioni di sito. È anche possibile creare estensioni per i progetti e gli strumenti di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
@@ -37,7 +37,7 @@ ms.locfileid: "122060167"
 
 |Argomento|Descrizione|
 |-----------|-----------------|
-|[Informazioni aggiuntive per gli errori SharePoint errore](../sharepoint/additional-information-for-sharepoint-errors.md)|Descrive dove trovare supporto durante lo sviluppo e la risoluzione dei problemi per SharePoint.|
+|[Informazioni aggiuntive per gli SharePoint errore](../sharepoint/additional-information-for-sharepoint-errors.md)|Descrive dove trovare supporto durante lo sviluppo e la risoluzione dei problemi per SharePoint.|
 
 ## <a name="related-sections"></a>Sezioni correlate
 
@@ -54,7 +54,7 @@ ms.locfileid: "122060167"
 |[Esplorare SharePoint connessioni usando Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Descrive come spostarsi tra i componenti di un sito di SharePoint in una finestra degli strumenti di Visual Studio.|
 |[Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Viene descritto come compilare ed eseguire il debug SharePoint soluzioni.|
 |[Creare pacchetti e distribuire SharePoint soluzioni](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Viene descritto come creare un pacchetto e distribuire SharePoint soluzioni.|
-|[Estendere gli SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Descrive come estendere gli strumenti di SharePoint per creare le funzionalità necessarie.|
+|[Estendere gli strumenti SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Descrive come estendere gli strumenti di SharePoint per creare le funzionalità necessarie.|
 
 ## <a name="see-also"></a>Vedi anche
 

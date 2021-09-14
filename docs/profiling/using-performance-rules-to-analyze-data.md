@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1366d4e73499c1ff3cd7e6424197b5ebb7005b99
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710165"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Usare le regole per le prestazioni per analizzare dati
 Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] segnalano i problemi che possono rallentare l'esecuzione di un'applicazione sottoposta a profilatura. Gli avvisi possono anche indicare che potrebbe essere necessario modificare i metodi di raccolta per raccogliere dati più utili. Gli avvisi di prestazioni sono generati automaticamente in una sessione di profilatura. Gli avvisi vengono visualizzati nella finestra **Elenco errori** quando viene aperto un file di dati di profilatura in Visual Studio. Dalla finestra **Elenco errori** è possibile individuare il codice sorgente del problema e visualizzare informazioni dettagliate sull'errore, ad esempio informazioni su come risolvere il problema. È inoltre possibile disabilitare gli avvisi a cui non si è interessati.

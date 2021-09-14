@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad634ddce8f42c8bf5e183ebdf8f75389553dba5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636491"
 ---
 # <a name="breakpoint-related-methods"></a>Metodi correlati ai punti di interruzione
 Un motore di debug deve supportare l'impostazione dei punti di interruzione. Visual Studio debug supporta i tipi di punti di interruzione seguenti:
@@ -35,7 +35,7 @@ Un motore di debug deve supportare l'impostazione dei punti di interruzione. Vis
 ## <a name="discussion"></a>Discussione
  Ad esempio, un punto di interruzione in sospeso si verifica quando le istruzioni non sono ancora caricate. Quando il codice viene caricato, i punti di interruzione in sospeso tentano di eseguire l'associazione al codice nella posizione specificata, ad esempio per inserire istruzioni di interruzione nel codice. Gli eventi vengono inviati alla gestione del debug di sessione (SDM) per indicare l'associazione riuscita o per notificare la presenza di errori di associazione.
 
- Un punto di interruzione in sospeso gestisce anche il proprio elenco interno di punti di interruzione associati corrispondenti. Un punto di interruzione in sospeso può causare l'inserimento di molti punti di interruzione nel codice. L'interfaccia Visual Studio di debug mostra una visualizzazione albero dei punti di interruzione in sospeso e dei punti di interruzione associati corrispondenti.
+ Un punto di interruzione in sospeso gestisce anche il proprio elenco interno di punti di interruzione associati corrispondenti. Un punto di interruzione in sospeso può causare l'inserimento di molti punti di interruzione nel codice. L'Visual Studio di debug mostra una visualizzazione albero dei punti di interruzione in sospeso e dei punti di interruzione associati corrispondenti.
 
  La creazione e l'uso di punti di interruzione in sospeso richiedono l'implementazione del metodo [IDebugEngine2::CreatePendingBreakpoint,](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) nonché i metodi seguenti delle [interfacce IDebugPendingBreakpoint2.](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 

@@ -22,15 +22,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ca05a0f96a159d354c09d9542327cfa73ff76e8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711610"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 
-Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni `Property` elemento usato in un progetto MSBuild deve essere figlio di un elemento `PropertyGroup` .
+Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni `Property` elemento usato in un MSBuild deve essere figlio di un elemento `PropertyGroup` .
 
  \<Project> \<PropertyGroup>
 
@@ -51,7 +51,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condition|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
+|Condizione|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -63,7 +63,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
 | Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file MSBuild progetto. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un MSBuild di progetto. |
 
 ## <a name="example"></a>Esempio
 

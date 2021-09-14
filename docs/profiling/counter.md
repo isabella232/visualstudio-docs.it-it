@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b1d49ac97d783457634a82705033ac7a2d043d84
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039280"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711599"
 ---
 # <a name="counter"></a>Contatore
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).
@@ -50,7 +50,7 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 
  **Avvio:** `Trace` Inizializza il profiler per usare il metodo di strumentazione.
 
- **Avviare:** `AppName` Avvia l'applicazione e il profiler specificati. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
+ **Avvia:** `AppName` Avvia l'applicazione e il profiler specificati. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 
  **Collega:** `PID` Avvia il profiler e lo collega al processo specificato dall'ID processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.
 

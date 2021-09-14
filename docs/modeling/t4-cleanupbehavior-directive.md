@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c5d91e64f69b9f1075fa7bcfaa57db5bd843382
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637388"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>Direttiva T4 CleanUpBehavior
 

@@ -18,11 +18,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: ab1fa5de20975b3c08d95906cef1288ebe8f4ec5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711319"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procedura: Firmare Office soluzioni
   Se si firma una soluzione, è possibile concedere l'attendibilità alla soluzione usando il certificato come evidenza. È possibile usare lo stesso certificato per più soluzioni e tutte le soluzioni saranno attendibili senza aggiornamenti dei criteri di sicurezza aggiuntivi.
@@ -38,7 +38,7 @@ ms.locfileid: "122025963"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Per firmare una Office usando un certificato
 
-1. Nel menu **Project** scegliere _Proprietà NomeSoprogetto_.
+1. Nel menu **Project** fare clic su _Proprietà NomeSo soluzioni_**.**
 
 2. Fare clic sulla scheda **Firma** .
 
@@ -50,6 +50,6 @@ ms.locfileid: "122025963"
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Soluzioni Office sicurezza](../vsto/securing-office-solutions.md)
+- [Proteggere Office soluzioni](../vsto/securing-office-solutions.md)
 - [Concedere l'attendibilità Office soluzioni](../vsto/granting-trust-to-office-solutions.md)
 - [Pagina Firma, Progettazione progetti](../ide/reference/signing-page-project-designer.md)

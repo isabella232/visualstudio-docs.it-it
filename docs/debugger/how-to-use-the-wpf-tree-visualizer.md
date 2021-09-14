@@ -1,6 +1,6 @@
 ---
 title: Usare il visualizzatore albero WPF | Microsoft Docs
-description: Usare il Windows Presentation Foundation (WPF) per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF in Visual Studio.
+description: Usare il Windows Presentation Foundation (WPF) per esplorare la struttura ad albero visuale di un oggetto WPF e per visualizzare le proprietà di dipendenza WPF in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 76a32b8fb6f6c61c27f673b150ec75541ce244f0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709910"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: utilizzare il visualizzatore della struttura ad albero di WPF
 È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per altre informazioni sugli alberi visivi, vedere [Alberi in WPF.](/dotnet/framework/wpf/advanced/trees-in-wpf) Per altre informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview).

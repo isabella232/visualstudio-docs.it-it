@@ -1,6 +1,6 @@
 ---
 title: Metodo NotifyDebuggerOfWaitCompletion | Microsoft Docs
-description: Informazioni sul metodo NotifyDebuggerOfWaitCompletion, un segnaposto usato come destinazione del punto di interruzione dal debugger.
+description: Informazioni sul metodo NotifyDebuggerOfWaitCompletion, che è un segnaposto usato come destinazione del punto di interruzione dal debugger.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: f4ba75017e277f12c6d3727ddc3d14a7dfd3483a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710332"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Metodo NotifyDebuggerOfWaitCompletion
-Metodo segnaposto usato come destinazione del punto di interruzione dal debugger. Questo metodo non deve essere inline o ottimizzato.
+Metodo segnaposto utilizzato come destinazione del punto di interruzione dal debugger. Questo metodo non deve essere inline o ottimizzato.
 
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
@@ -34,9 +34,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```
 
 ## <a name="remarks"></a>Osservazioni
- Tutte le operazioni di join con un'attività devono chiamare questo metodo se il bit di notifica del debugger è impostato.
+ Tutte le operazioni di join con un'attività devono chiamare questo metodo se è impostato il bit di notifica del debugger.
 
 ## <a name="requirements"></a>Requisiti
 
 ## <a name="see-also"></a>Vedi anche
-- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)
+- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -18,11 +18,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: d95ab38581945c61000b3cfcca26ed1ba3fd2c5d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710037"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: Aggiornare un grafico in un documento usando i pulsanti di opzione
   Questa procedura dettagliata illustra come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Office Word, per consentire agli utenti di selezionare stili del grafico nel documento.
@@ -75,7 +75,7 @@ ms.locfileid: "122155408"
 
 5. Fare clic con il pulsante destro del mouse sul grafico e **quindi scegliere Formato oggetto**.
 
-6. Nella scheda **Layout** della finestra di dialogo **Formato oggetto** selezionare **Quadrato** e fare clic su **OK.**
+6. Nella scheda **Layout** della finestra di **dialogo Formato oggetto** selezionare **Quadrato** e fare clic su **OK.**
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
  I pulsanti di opzione in un documento non si escludono a vicenda per impostazione predefinita. È possibile farli funzionare correttamente aggiungendoli a un controllo utente e quindi scrivendo il codice per controllare la selezione.
@@ -218,5 +218,5 @@ ms.locfileid: "122155408"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
-- [Office esempi di sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md)
+- [Office di sviluppo e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md)
 - [Limitazioni dei controlli Windows Form nei Office documenti](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

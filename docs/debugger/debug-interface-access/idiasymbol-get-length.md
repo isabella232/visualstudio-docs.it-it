@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: a02dc44d8ac2af51a1feb2791ef289cb0a7ff7aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709944"
 ---
 # <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
 Recupera il numero di bit o byte di memoria utilizzati dall'oggetto rappresentato da questo simbolo.

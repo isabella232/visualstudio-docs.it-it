@@ -21,11 +21,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 8a6b5ca7d884fbece6795f63d668aa04a8ba6f80
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710593"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procedura dettagliata: Programmare in base agli eventi di un controllo NamedRange
   Questa procedura dettagliata illustra come aggiungere un controllo a un foglio di lavoro di Microsoft Office Excel e programmare in base ai relativi eventi usando Office <xref:Microsoft.Office.Tools.Excel.NamedRange> di sviluppo in Visual Studio.
@@ -51,7 +51,7 @@ ms.locfileid: "122068478"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Creare il progetto
- In questo passaggio verrà creato un progetto di cartella Excel cartella di lavoro usando Visual Studio.
+ In questo passaggio si creerà un progetto di cartella Excel cartella di lavoro usando Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
@@ -60,7 +60,7 @@ ms.locfileid: "122068478"
      Visual Studio apre la nuova cartella Excel cartella di lavoro nella finestra di progettazione e aggiunge il progetto **My Named Range Events** a **Esplora soluzioni**.
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Aggiungere testo e intervalli denominati al foglio di lavoro
- Poiché i controlli host Office oggetti , è possibile aggiungerli al documento nello stesso modo in cui si aggiunge l'oggetto nativo. Ad esempio, è possibile aggiungere un controllo Excel a un foglio di lavoro aprendo il menu Inserisci, scegliendo Nome <xref:Microsoft.Office.Tools.Excel.NamedRange> e scegliendo **Definisci**.   È anche possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo trascinandolo dalla Casella **degli strumenti** nel foglio di lavoro.
+ Poiché i controlli host Office oggetti , è possibile aggiungerli al documento nello stesso modo in cui si aggiunge l'oggetto nativo. Ad esempio, è possibile aggiungere un controllo Excel a un foglio di lavoro aprendo il menu Inserisci, scegliendo Nome <xref:Microsoft.Office.Tools.Excel.NamedRange> e scegliendo **Definisci**.   È anche possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo trascinandolo dalla Casella degli **strumenti** nel foglio di lavoro.
 
  In questo passaggio si aggiungeranno due controlli intervallo denominato al foglio di lavoro usando la casella degli strumenti **e** quindi si aggiungerà testo al foglio di lavoro.
 
@@ -76,11 +76,11 @@ ms.locfileid: "122068478"
 
 4. Fare clic su **OK**.
 
-     La **cella A1** diventa un intervallo denominato `namedRange1` . Non è presente alcuna indicazione visibile nel foglio di lavoro, ma viene visualizzata nella casella Nome (che si trova sopra il foglio di lavoro sul lato sinistro) quando `namedRange1` si seleziona la cella **A1.** 
+     La **cella A1** diventa un intervallo denominato `namedRange1` . Non è presente alcuna indicazione visibile nel foglio di lavoro, ma viene visualizzata nella casella Nome (sopra il foglio di lavoro a sinistra) quando si seleziona `namedRange1` la cella **A1.** 
 
 5. Aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> altro controllo alla cella **B3.**
 
-6. Verificare che **$B$ 3** venga visualizzato nella casella di testo modificabile e che la cella **B3** sia selezionata. In caso contrario, fare clic sulla **cella B3** per selezionarla.
+6. Verificare che **$B $ 3** venga visualizzato nella casella di testo modificabile e che la cella **B3** sia selezionata. In caso contrario, fare clic sulla **cella B3** per selezionarla.
 
 7. Fare clic su **OK**.
 
@@ -109,7 +109,7 @@ ms.locfileid: "122068478"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet24":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet24":::
 
-3. In C# è necessario aggiungere gestori eventi per l'intervallo denominato, come illustrato <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> nell'evento seguente. Per informazioni sulla creazione di gestori eventi, [vedere Procedura: Creare gestori eventi in Office progetti](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. In C# è necessario aggiungere gestori eventi per l'intervallo denominato, come illustrato <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> nell'evento seguente. Per informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori eventi in Office progetti](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet25":::
 
@@ -129,13 +129,13 @@ ms.locfileid: "122068478"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>Per inserire testo in namedRange2 in base all'evento SelectionChange
 
-1. Aggiungere il codice in modo **che NamedRange1_SelectionChange** gestore eventi sia simile al seguente:
+1. Aggiungere il codice in modo **NamedRange1_SelectionChange** gestore eventi sia simile al seguente:
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet27":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet27":::
 
     > [!NOTE]
-    > Poiché se si fa doppio clic su una cella in un Excel di dati, la selezione viene spostata nell'intervallo, si verifica un evento prima che si <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> verifichi <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> l'evento .
+    > Poiché se si fa doppio clic su una cella in un intervallo Excel, la selezione viene spostata nell'intervallo, si verifica un evento prima che si <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> verifichi <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> l'evento .
 
 ## <a name="test-the-application"></a>Testare l'applicazione
  È ora possibile testare la cartella di lavoro per verificare che il testo che descrive gli eventi di un controllo sia inserito in un altro intervallo denominato <xref:Microsoft.Office.Tools.Excel.NamedRange> quando vengono generati gli eventi.

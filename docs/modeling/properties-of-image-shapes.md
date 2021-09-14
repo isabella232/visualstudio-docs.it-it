@@ -16,15 +16,15 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: bf8e185030f459e758a578c38ede44e14588326a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637531"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 
-È possibile usare forme immagine per specificare la modalità di visualizzazione delle classi di dominio in una finestra di progettazione generata. Definire una forma immagine impostando `Image` la proprietà della classe su un file di immagine predefinito. Sono supportati i formati seguenti:
+È possibile usare forme immagine per specificare la modalità di visualizzazione delle classi di dominio in una finestra di progettazione generata. Definire una forma immagine impostando la `Image` proprietà della classe su un file di immagine predefinito. Sono supportati i formati seguenti:
 
 - gif
 
@@ -42,7 +42,7 @@ ms.locfileid: "122116604"
 
 Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nella **cartella Resources** del **progetto Dsl.**
 
-Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [Personalizzazione](../modeling/customizing-and-extending-a-domain-specific-language.md)ed estensione di un Domain-Specific language .
+Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 Le forme immagine hanno le proprietà elencate nella tabella seguente.
 
@@ -67,7 +67,7 @@ Le forme immagine hanno le proprietà elencate nella tabella seguente.
 |Note|Note informali associate a questa forma.|\<none>|
 |Altezza iniziale|Altezza iniziale della forma, in pollici.|1|
 |Larghezza iniziale|Larghezza iniziale della forma, espressa in pollici.|1.5|
-|Proprietà Exposed Fill Color As<br /><br /> Modalità sfumatura di riempimento esposta<br /><br /> Proprietà Exposed Outline Color As<br /><br /> Proprietà Exposed Outline Dash Style As<br /><br /> Proprietà Exposed Outline Thickness As<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà specificata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposto**.|Falso|
+|Proprietà Exposed Fill Color As<br /><br /> Modalità sfumatura di riempimento esposta<br /><br /> Proprietà Exposed Outline Color As<br /><br /> Proprietà Exposed Outline Dash Style As<br /><br /> Proprietà Exposed Outline Thickness As<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà specificata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e **scegliere Aggiungi esposto**.|Falso|
 |Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
 |Correzione del testo della descrizione comando|Testo utilizzato per una descrizione comando fissa.|\<none>|

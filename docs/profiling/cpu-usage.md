@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e8db1683fa44ffa75ba6e0ac6aa1a5101c812c8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039306"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711578"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analizzare l'utilizzo della CPU senza eseguire il debug nel Profiler prestazioni
 
@@ -49,7 +49,7 @@ In genere il computer locale replica in modo ottimale l'esecuzione dell'app inst
 
    Lo strumento Utilizzo CPU analizza i dati e visualizza il report.
 
-   ![Report utilizzo CPU](../profiling/media/cpu_use_wt_report.png "Report utilizzo CPU")
+   ![Report utilizzo CPU](../profiling/media/cpu_use_wt_report.png "Report Utilizzo CPU")
 
 ## <a name="analyze-the-cpu-usage-report"></a>Analizzare il report di Utilizzo CPU
 

@@ -1,6 +1,6 @@
 ---
 title: Attività MultiToolTask | Microsoft Docs
-description: Accedere a una tabella che descrive i parametri obbligatori e facoltativi dell'MSBuild MultiToolTask.
+description: Accedere a una tabella che descrive i parametri obbligatori e facoltativi dell MSBuild attività MultiToolTask.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
@@ -19,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8fc1a20a1019981a1412344bdf3f6bdf0ad2d2f799ee811cd15ad7e422d126
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d76aa3762b254ee35ada1e4e81fe857f509a4e5
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121397332"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710199"
 ---
 # <a name="multitooltask-task"></a>Attività MultiToolTask
 
@@ -37,13 +37,13 @@ Nella tabella seguente vengono descritti i parametri dell'attività **MultiToolT
 |Parametro|Descrizione|
 |---------------|-----------------|
 |**EnvironmentVariablesToSet**|Parametro **string[]** facoltativo.|
-|**SemaphoreProcCount**|Parametro **di stringa** facoltativo.|
-|**SchedulerFunction**|Parametro **di stringa** facoltativo.|
+|**SemaphoreProcCount**|Parametro **stringa facoltativo.**|
+|**SchedulerFunction**|Parametro **stringa facoltativo.**|
 |**SchedulerVerbose**|Parametro **bool** facoltativo.|
 |**recenti**|Parametro **ITaskItem[]** obbligatorio.|
-|**TaskAssemblyName**|Parametro **di stringa** facoltativo.|
-|**TaskName**|Parametro **di stringa** obbligatorio.|
-|**TrackerLogDirectory**|Parametro **di stringa** obbligatorio.|
+|**TaskAssemblyName**|Parametro **stringa facoltativo.**|
+|**TaskName**|Parametro **stringa** obbligatorio.|
+|**TrackerLogDirectory**|Parametro **stringa** obbligatorio.|
 
 ## <a name="see-also"></a>Vedi anche
 

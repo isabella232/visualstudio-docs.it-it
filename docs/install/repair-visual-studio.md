@@ -5,34 +5,34 @@ description: Informazioni su come riparare un'installazione di Visual Studio 201
 ms.date: 10/12/2020
 ms.custom: vs-acquisition
 ms.topic: how-to
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 55ebb7c44b44a14154cc54f54885455821f9ee68
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 98a7448bc3e257bb8a6f8047bf0e4a878aa41307
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386787"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635916"
 ---
 # <a name="repair-visual-studio"></a>Ripristinare Visual Studio
 
 In alcuni casi l'installazione di Visual Studio può risultare danneggiata Un ripristino è utile per risolvere i problemi in fase di installazione in tutte le operazioni di installazione, inclusi gli aggiornamenti.
 
 ## <a name="when-to-use-repair"></a>Quando usare il ripristino
-* Se si verificano problemi di payload dell'installazione. Questo problema può verificarsi quando la scrittura del file su disco non riesce e non può essere corretta eliminando il file danneggiato. Il ripristino può acquisire nuovamente i file necessari. 
-* Se si verificano problemi di download sul lato client. Supponendo di aver risolto eventuali problemi di connessione o proxy, il ripristino può essere utile. 
-* Se si verificano problemi durante l'aggiornamento Visual Studio. La correzione corregge molti problemi comuni relativi all'aggiornamento. 
+* Se si verificano problemi di payload di installazione. Ciò può verificarsi quando la scrittura del file su disco non riesce e non può essere corretta eliminando il file danneggiato. Il ripristino può acquisire nuovamente i file necessari. 
+* Se si verificano problemi di download sul lato client. Supponendo che siano stati risolti problemi di connessione o proxy, il ripristino può essere utile. 
+* Se si verificano problemi durante l'aggiornamento Visual Studio. Correzione corregge molti problemi di aggiornamento comuni. 
 
 > [!TIP] 
-> Se il problema di installazione è causato da un problema in un servizio Di Windows sottostante, ad esempio Windows Installer, il ripristino può verificarsi nello stesso problema. I problemi di sistema possono includere una connessione Internet Windows Installer o instabile. Per verificare la presenza di un problema di sistema, usare la segnalazione errori generata dall'operazione di installazione.
+> Se il problema di installazione è causato da un problema in un servizio Windows sottostante, ad esempio Windows Installer, il ripristino potrebbe verificarsi nello stesso problema. I problemi sistemici possono includere un programma di installazione Windows o una connessione Internet instabile. Per verificare la presenza di un problema di sistema, usare la segnalazione errori generata dall'operazione di installazione.
 
 > [!NOTE] 
-> Il ripristino Visual Studio reimposta le impostazioni utente e installa nuovamente gli assembly già disponibili. Se si verifica un problema del prodotto, creare un ticket Visual Studio [feedback,](https://aka.ms/feedback/suggest?space=8)perché il ripristino potrebbe non risolvere il problema.
+> Il ripristino Visual Studio reimposta le impostazioni utente e ri installa gli assembly già presenti. Se si verifica un problema del prodotto, creare un ticket Visual Studio [feedback,](https://aka.ms/feedback/suggest?space=8)perché la riparazione potrebbe non risolvere il problema.
 
 ## <a name="how-to-repair"></a>Come eseguire il ripristino
 ::: moniker range="vs-2017"

@@ -11,17 +11,17 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: b5b8bae97dbed7afbcae7611bd9787979b8ab882
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637380"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 
-In Visual Studio di testo, la direttiva viene usata per definire l'estensione e la codifica del `output` nome file del file trasformato.
+Nei Visual Studio di testo, la direttiva viene usata per definire l'estensione del nome file e `output` la codifica del file trasformato.
 
- Ad esempio, se il Visual Studio progetto include un file modello **denominato MyTemplate.tt** che contiene la direttiva seguente:
+ Ad esempio, se il progetto Visual Studio include un file modello denominato **MyTemplate.tt** che contiene la direttiva seguente:
 
  `<#@output extension=".cs"#>`
 
@@ -53,7 +53,7 @@ In Visual Studio di testo, la direttiva viene usata per definire l'estensione e 
  Valori accettabili: qualsiasi estensione di file valida.
 
 ## <a name="encoding-attribute"></a>attributo di codifica
- Specifica la codifica da usare quando viene generato il file di output. Esempio:
+ Specifica la codifica da usare quando viene generato il file di output. Ad esempio:
 
  `<#@ output encoding="utf-8"#>`
 

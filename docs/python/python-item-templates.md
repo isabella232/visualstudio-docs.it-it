@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e637e935e860b27337a829fc9f736e53c4428acf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060739"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711487"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
-I modelli di elemento sono disponibili nei progetti Python tramite il comando di menu **Project** Aggiungi nuovo elemento o il comando Aggiungi nuovo elemento nel menu di scelta rapida  >     >   in **Esplora soluzioni**.
+I modelli di elemento sono disponibili nei progetti Python tramite il comando di menu **Project** Aggiungi nuovo elemento o il comando Aggiungi nuovo elemento nel menu di scelta  >   rapida in   >   **Esplora soluzioni**.
 
 ![Finestra di dialogo Aggiungi nuovo elemento](media/project-item-templates.png)
 
@@ -32,7 +32,7 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 | --- | --- |
 | **File Python vuoto** | File vuoto con estensione *.py*. |
 | **Classe Python** | File *.py* contenente una singola definizione di classe Python vuota. |
-| **Pacchetto Python** | Cartella che contiene un file *\_ \_ con estensione \_ \_ py init.* |
+| **Pacchetto Python** | Cartella che contiene un file *\_ \_ init \_ \_ con estensione py.* |
 | **Unit test Python** | File *.py* con un singolo unit test basato sul framework `unittest`, insieme a una chiamata a `unittest.main()` per eseguire i test nel file. |
 | **Pagina HTML** | File *.html* con una struttura di pagina semplice composta da un elemento `<head>` e un elemento `<body>`. |
 | **JavaScript** | File *.js* vuoto. |

@@ -1,5 +1,5 @@
 ---
-description: Recupera un elenco di tutti i programmi di cui è in corso il debug da parte di un motore di debug.
+description: Recupera un elenco di tutti i programmi di cui è in corso il debug da parte di un motore di debug .
 title: IDebugEngine2::EnumPrograms | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f2e213ebb630cd87f9f9f336fd8f3092d24fca74
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711923"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
-Recupera un elenco di tutti i programmi di cui è in corso il debug da parte di un motore di debug.
+Recupera un elenco di tutti i programmi di cui è in corso il debug da parte di un motore di debug .
 
 ## <a name="syntax"></a>Sintassi
 

@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d6ed5ce8863cef32c787d86a5d78c423d78fef4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057200"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636132"
 ---
 # <a name="properties-display-grid"></a>Griglia di visualizzazione delle proprietà
 
@@ -32,11 +32,11 @@ L'elenco a due colonne mostra le proprietà indipendenti dalla configurazione ch
 
 2. Impostare il `pfHide` parametro in <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> su `TRUE` .
 
-Per eseguire il push delle informazioni **nella finestra** Proprietà, l'IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene chiamato dai pacchetti VSPackage per ogni finestra che contiene oggetti selezionabili con proprietà correlate da visualizzare nella **finestra** Proprietà. **Esplora soluzioni'implementazione** delle <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> chiamate di `GetProperty` tramite [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) nella gerarchia del progetto per acquisire gli oggetti esplorabili nella gerarchia.
+Per eseguire il push delle informazioni **nella finestra** Proprietà, l'IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene chiamato dai pacchetti VSPackage per ogni finestra che contiene oggetti selezionabili con proprietà correlate da visualizzare nella **finestra** Proprietà. **Esplora soluzioni'implementazione** delle <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> chiamate di tramite `GetProperty` [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) nella gerarchia del progetto per acquisire gli oggetti esplorabili nella gerarchia.
 
 Se il pacchetto VSPackage non supporta [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), l'IDE tenta di <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> usare usando il valore per [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) che l'elemento o gli elementi della gerarchia forniscono.
 
-Il pacchetto VSPackage del progetto non deve essere creato perché il pacchetto di finestra fornito dall'IDE che lo implementa (ad esempio, Esplora soluzioni ) costruisce per <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> suo  <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> conto.
+Il pacchetto VSPackage del progetto non deve essere creato perché il pacchetto di finestra fornito dall'IDE che lo implementa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> **(ad** esempio, Esplora soluzioni ) costruisce per <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> suo conto.
 
 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> è costituito da tre metodi chiamati dall'IDE:
 

@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
 ms.openlocfilehash: df94b32dfcc5e2672282c0d18859cba42b490437
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625020"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
 Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e altre informazioni.
@@ -44,4 +44,4 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Ora che si è appreso come trovare un sottoscrittore, vedere come [modificare](edit-license.md) la sottoscrizione.
-- Sono necessarie informazioni per l'uso del portale di amministrazione?  Contattare [Visual Studio supporto per amministrazione e sottoscrizioni.](https://aka.ms/vsadminhelp)
+- Sono necessarie informazioni per l'uso del portale di amministrazione?  Contattare [Visual Studio supporto per l'amministrazione e le sottoscrizioni.](https://aka.ms/vsadminhelp)

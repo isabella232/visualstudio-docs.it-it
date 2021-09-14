@@ -16,18 +16,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cf6376ca9ef5442e4f71588a6de7d3a4a33886ba8520f18914f03d7522fa463
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bb628f967f9d56f954c2c639951f9317fa8efed9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625745"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Richiamare la trasformazione del testo nel processo di compilazione
 
-[La trasformazione](../modeling/code-generation-and-t4-text-templates.md) del testo può essere richiamata come parte del processo [di compilazione](/azure/devops/pipelines/index) di una Visual Studio soluzione. Esistono attività di compilazione che sono specializzate nella trasformazione del testo. Le attività di compilazione di T4 eseguono modelli di testo della fase di progettazione e compilano anche modelli di testo (pre-elaborati) della fase di esecuzione.
+[La trasformazione](../modeling/code-generation-and-t4-text-templates.md) del testo può essere richiamata come parte del [processo di compilazione](/azure/devops/pipelines/index) di una Visual Studio soluzione. Esistono attività di compilazione che sono specializzate nella trasformazione del testo. Le attività di compilazione di T4 eseguono modelli di testo della fase di progettazione e compilano anche modelli di testo (pre-elaborati) della fase di esecuzione.
 
-Esistono alcune differenze in ciò che le attività di compilazione possono fare, a seconda del motore di compilazione utilizzato. Quando si compila la soluzione in Visual Studio, un modello di testo può accedere all'API Visual Studio (EnvDTE) se è impostato l'attributo [hostspecific="true".](../modeling/t4-template-directive.md) Ma questo non è vero quando si compila la soluzione dalla riga di comando o quando si avvia una compilazione del server tramite Visual Studio. In questi casi, la compilazione viene eseguita da MSBuild e viene utilizzato un diverso host T4. Ciò significa che non è possibile accedere ad elementi come i nomi di file di progetto nello stesso modo quando si compila un modello di testo usando MSBuild. Tuttavia, è possibile [passare le informazioni sull'ambiente nei modelli di testo e nei processori di direttiva usando i parametri di compilazione](#parameters).
+Esistono alcune differenze in ciò che le attività di compilazione possono fare, a seconda del motore di compilazione utilizzato. Quando si compila la soluzione in Visual Studio, un modello di testo può accedere all'API Visual Studio (EnvDTE) se è impostato l'attributo [hostspecific="true".](../modeling/t4-template-directive.md) Questo tuttavia non vale quando si compila la soluzione dalla riga di comando o quando si avvia una compilazione del server tramite Visual Studio. In questi casi, la compilazione viene eseguita da MSBuild e viene utilizzato un diverso host T4. Ciò significa che non è possibile accedere ad elementi come i nomi dei file di progetto nello stesso modo quando si compila un modello di testo usando MSBuild. Tuttavia, è possibile passare [le informazioni sull'ambiente nei modelli di testo e nei processori di direttiva usando i parametri di compilazione](#parameters).
 
 ## <a name="configure-your-machines"></a><a name="buildserver"></a> Configurare i computer
 
@@ -54,13 +54,13 @@ Se [il server di](/azure/devops/pipelines/agents/agents) compilazione viene eseg
   - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> Se si ottiene un oggetto per un metodo Microsoft.CodeAnalysis quando si esegue TextTemplating build targets in un server di compilazione, assicurarsi che gli assembly Roslyn siano in una directory denominata `MissingMethodException` *Roslyn* nella stessa directory del file eseguibile di compilazione , ad esempio *msbuild.exe*.
+> Se si ottiene un oggetto per un metodo Microsoft.CodeAnalysis quando si esegue TextTemplating delle destinazioni di compilazione in un server di compilazione, assicurarsi che gli assembly Roslyn siano in una directory denominata `MissingMethodException` *Roslyn* nella stessa directory del file eseguibile di compilazione , ad esempio *msbuild.exe*.
 
 ## <a name="edit-the-project-file"></a>Modificare il file di progetto
 
-Modificare il file di progetto per configurare alcune delle funzionalità di MSBuild, ad esempio l'importazione delle destinazioni di trasformazione del testo.
+Modificare il file di progetto per configurare alcune funzionalità di MSBuild, ad esempio l'importazione delle destinazioni di trasformazione del testo.
 
-In **Esplora soluzioni** scegliere **Scarica dal** menu di scelta rapida del progetto. Ciò consente di modificare il file con estensione csproj o vbproj nell'editor XML. Al termine della modifica, scegliere **Ricarica**.
+In **Esplora soluzioni** scegliere **Scarica dal** menu di scelta rapida del progetto. Ciò consente di modificare il file con estensione csproj o vbproj nell'editor XML. Al termine della modifica, scegliere **Ricarica.**
 
 ## <a name="import-the-text-transformation-targets"></a>Importare le destinazioni di trasformazione del testo
 
@@ -102,7 +102,7 @@ Esistono alcune proprietà che è possibile inserire all'interno del file di pro
     </PropertyGroup>
     ```
 
-- Sovrascrivere i file di sola lettura, ad esempio perché non sono estratti:
+- Sovrascrivere i file di sola lettura, ad esempio, perché non sono estratti:
 
     ```xml
     <PropertyGroup>
@@ -118,7 +118,7 @@ Esistono alcune proprietà che è possibile inserire all'interno del file di pro
     </PropertyGroup>
     ```
 
-     Per impostazione predefinita, l'attività T4 MSBuild rigenera un file di output se è precedente a:
+     Per impostazione predefinita, l'attività MSBuild T4 rigenera un file di output se è precedente a:
 
      - file modello
      - tutti i file inclusi
@@ -140,13 +140,13 @@ Per trasformare un modello di testo specifico:
 
 ## <a name="source-control"></a>Controllo del codice sorgente
 
-Non esiste un'integrazione incorporata specifica con un sistema di controllo del codice sorgente. È tuttavia possibile aggiungere estensioni personalizzate, ad esempio per estrarre e archiviare un file generato. Per impostazione predefinita, l'attività di trasformazione del testo evita la sovrascrittura di un file contrassegnato come di sola lettura. Quando viene rilevato un file di questo tipo, viene registrato un errore nell'elenco Visual Studio errori e l'attività ha esito negativo.
+Non esiste un'integrazione incorporata specifica con un sistema di controllo del codice sorgente. Tuttavia, è possibile aggiungere estensioni personalizzate, ad esempio, per estrarre e archiviare un file generato. Per impostazione predefinita, l'attività di trasformazione del testo evita la sovrascrittura di un file contrassegnato come di sola lettura. Quando viene rilevato un file di questo tipo, viene registrato un errore nell'elenco Visual Studio errori e l'attività ha esito negativo.
 
 Per specificare che i file di sola lettura devono essere sovrascritti, inserire questa proprietà:
 
 `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
-A meno che non si personalizza il passaggio di post-elaborazione, quando un file viene sovrascritto verrà registrato un avviso nell'Elenco errori.
+A meno che non si personalizza il passaggio di post-elaborazione, verrà registrato un avviso nell'Elenco errori quando un file viene sovrascritto.
 
 ## <a name="customize-the-build-process"></a>Personalizzare il processo di compilazione
 
@@ -187,7 +187,7 @@ Queste proprietà sono utilizzate solo da MSBuild. Non influiscono sulla generaz
 </ItemGroup>
 ```
 
-Una cartella utile a cui reindirizzare è `$(IntermediateOutputPath)` .
+Una cartella utile a cui eseguire il reindirizzamento è `$(IntermediateOutputPath)` .
 
 Se si specifica un nome file di output, ha la precedenza sull'estensione specificata nella direttiva di output nei modelli.
 
@@ -201,7 +201,7 @@ Se si specifica un nome file di output, ha la precedenza sull'estensione specifi
 </ItemGroup>
 ```
 
-Non è consigliabile specificare OutputFileName o OutputFilePath se si trasformano anche modelli all'interno di Visual Studio usando **Transform All** o eseguendo il generatore di file singolo. Si finirà con percorsi di file diversi a seconda di come è stata attivata la trasformazione. Questa operazione può risultare poco chiara.
+Non è consigliabile specificare OutputFileName o OutputFilePath se si stanno trasformando anche modelli all'interno di Visual Studio usando **Trasforma** tutto o eseguendo il generatore di file singolo. Si finirà con percorsi di file diversi a seconda di come è stata attivata la trasformazione. Questa operazione può risultare poco chiara.
 
 ## <a name="add-reference-and-include-paths"></a>Aggiungere percorsi di riferimento e di inclusione
 
@@ -225,7 +225,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 
 ## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Passare i dati del contesto di compilazione nei modelli
 
-È possibile impostare i valori dei parametri nel file di progetto. Ad esempio, è possibile passare le [proprietà di compilazione](../msbuild/msbuild-properties.md) e le variabili di [ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
+È possibile impostare i valori dei parametri nel file di progetto. Ad esempio, è possibile passare le [proprietà di](../msbuild/msbuild-properties.md) compilazione e le variabili [di ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
 ```xml
 <ItemGroup>
@@ -257,11 +257,11 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue`ottiene i dati `T4ParameterValues` da solo quando si usa MSBuild. Quando si trasforma il modello usando Visual Studio, i parametri hanno valori predefiniti.
 
-## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Usare le proprietà del progetto nell'assembly e includere le direttive
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Usare le proprietà del progetto nell'assembly e le direttive include
 
 Visual Studio macro come **$(SolutionDir)** non funzionano in MSBuild. È possibile utilizzare le proprietà del progetto.
 
-Modificare il *file con estensione csproj* o *vbproj* per definire una proprietà del progetto. In questo esempio viene definita una proprietà **denominata myLibFolder**:
+Modificare il *file con estensione csproj* o *vbproj* per definire una proprietà del progetto. Questo esempio definisce una proprietà denominata **myLibFolder**:
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -288,15 +288,15 @@ Queste direttive ottengono valori da T4parameterValues in MSBuild e negli host d
 
 ## <a name="q--a"></a>Domande e risposte
 
-**Perché è necessario trasformare i modelli nel server di compilazione? I modelli sono già stati trasformati in Visual Studio prima di archiviare il codice.**
+**Perché è necessario trasformare i modelli nel server di compilazione? I modelli sono già stati trasformati Visual Studio prima di archiviare il codice.**
 
 Se si aggiorna un file incluso o un altro file letto dal modello, Visual Studio il file non viene trasformato automaticamente. La trasformazione dei modelli come parte della compilazione garantisce che tutto sia aggiornato.
 
 **Quali altre opzioni ci sono per trasformare i modelli di testo?**
 
-- [L'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) può essere usata negli script di comando. Nella maggior parte dei casi, è più semplice usare MSBuild.
+- [L'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) può essere usata negli script di comando. Nella maggior parte dei casi, è più facile usare MSBuild.
 
-- [Richiamare la trasformazione testo in un'estensione Visual Studio testo](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+- [Richiamare la trasformazione testo in un'estensione Visual Studio.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
 - [I modelli di testo in fase di](../modeling/design-time-code-generation-by-using-t4-text-templates.md) progettazione vengono trasformati Visual Studio.
 

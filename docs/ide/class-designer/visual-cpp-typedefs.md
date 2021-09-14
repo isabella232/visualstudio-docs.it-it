@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9e00588b8ba0367be6f28873ec0f8940f92f04a9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711682"
 ---
 # <a name="c-typedefs-in-class-designer"></a>Typedef C++ in Progettazione classi
 
@@ -71,7 +71,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>Typedef senza nome
 
-Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non usa il nome del tag specificato. **Progettazione classi** usa il nome generato da **Visualizzazione classi**. Ad esempio, la dichiarazione seguente è valida, ma viene visualizzata **in** Visualizzazione classi e **Progettazione classi** come oggetto **denominato __unnamed**:
+Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non usa il nome del tag specificato. **Progettazione classi** usa il nome generato da **Visualizzazione classi**. Ad esempio, la dichiarazione seguente è valida, ma viene visualizzata **in** Visualizzazione classi e **Progettazione classi** come oggetto denominato **__unnamed**:
 
 ```cpp
 typedef class coord

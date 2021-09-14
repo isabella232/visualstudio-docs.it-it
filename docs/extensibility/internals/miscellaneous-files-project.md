@@ -1,6 +1,6 @@
 ---
 title: File esterni Project | Microsoft Docs
-description: Informazioni sui due tipi di editor che possono essere usati per aprire file in un progetto Visual Studio e sul ruolo del progetto per determinare quale editor usare.
+description: Informazioni sui due tipi di editor che possono essere usati per aprire file in un progetto Visual Studio e sul ruolo del progetto per determinare l'editor da usare.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,11 +17,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff3643d3a1f2d48b0fac071f57738d73055529e7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636195"
 ---
 # <a name="miscellaneous-files-project"></a>Progetto di file esterni
 Quando un utente apre elementi di progetto, l'IDE assegna al progetto File esterni tutti gli elementi che non sono membri di progetti in una soluzione.
@@ -36,7 +36,7 @@ Quando un utente apre elementi di progetto, l'IDE assegna al progetto File ester
 
  Questo progetto speciale consente l'apertura di un file all'esterno del contesto di un progetto. Durante l'elaborazione del metodo , il progetto File esterni risponde sempre <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> con una priorità molto bassa. Di conseguenza, il progetto File esterni cede sempre a qualsiasi progetto con priorità più alta in grado di aprire file.
 
- Il progetto File esterni non richiede all'utente di crearlo in modo esplicito con la finestra **di dialogo Project** nuova cartella. Inoltre, il progetto File esterni non gestisce in modo permanente un elenco di membri del progetto. Usa una funzionalità facoltativa per registrare un elenco dei file usati più di recente per ogni utente.
+ Il progetto File esterni non richiede all'utente di crearlo in modo esplicito con la finestra di **dialogo Project** nuova cartella. Inoltre, il progetto File esterni non gestisce in modo permanente un elenco di membri del progetto. Usa una funzionalità facoltativa per registrare un elenco dei file usati più di recente per ogni utente.
 
 ## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>

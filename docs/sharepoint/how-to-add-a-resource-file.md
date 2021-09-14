@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Aggiungere un file di risorse | Microsoft Docs'
-description: Aggiungere un file di risorse in Visual Studio, usando i comandi del menu di scelta rapida del nodo della soluzione e dei nodi di funzionalità in Esplora soluzioni.
+description: Aggiungere un file di risorse in Visual Studio, usando i comandi del menu di scelta rapida del nodo della soluzione e dei nodi delle funzionalità in Esplora soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,16 +17,16 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: b11fdbdda72f1929afc1f5d2726332246b312d07
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625145"
 ---
 # <a name="how-to-add-a-resource-file"></a>Procedura: Aggiungere un file di risorse
   I comandi per l'aggiunta di file di risorse sono disponibili nel menu di scelta rapida del nodo della soluzione e dei nodi di funzionalità in Esplora soluzioni. Per altre informazioni, vedere [Localizzazione di SharePoint soluzioni](../sharepoint/localizing-sharepoint-solutions.md).
 
-### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Per aggiungere un file di risorse globali a una soluzione SharePoint globale
+### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Per aggiungere un file di risorse globale a una soluzione SharePoint globale
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire una soluzione SharePoint predefinita.
 
@@ -43,9 +43,9 @@ ms.locfileid: "122149039"
 
 5. Quando si **apre l'Editor** risorse in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , aggiungere risorse al file di risorse.
 
-### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Per aggiungere un file di risorse di funzionalità a una SharePoint funzionalità
+### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Per aggiungere un file di risorse della funzionalità a una SharePoint funzionalità
 
-1. Se la SharePoint soluzione non è già aperta in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , aprire la soluzione.
+1. Se la SharePoint non è già aperta in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , aprire la soluzione.
 
 2. In **Esplora soluzioni** aprire il menu di scelta rapida per  il nome di una funzionalità nel nodo Funzionalità e quindi scegliere **Aggiungi risorsa funzionalità**.
 

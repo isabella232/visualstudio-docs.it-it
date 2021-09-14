@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Rimuovere la protezione dai fogli di lavoro a livello di codice'
-description: Informazioni su come usare Visual Studio per rimuovere la protezione a livello di codice da un Microsoft Excel foglio di lavoro.
+description: Informazioni su come usare Visual Studio per rimuovere la protezione a livello di codice da un foglio Microsoft Excel foglio di lavoro.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: af5fb0cab5501b6a5bbe19025be6f963728ee477
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710619"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Procedura: Rimuovere la protezione dai fogli di lavoro a livello di codice
   È possibile rimuovere la protezione a livello di codice da un foglio di lavoro di Microsoft Office Excel.

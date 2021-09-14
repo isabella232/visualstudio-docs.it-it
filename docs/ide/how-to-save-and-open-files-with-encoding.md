@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: a3769689f28f1a14c39942c6cdcb0103e01bb8a4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710262"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Procedura: salvare e aprire file con codifica
 
@@ -42,7 +42,7 @@ ms.locfileid: "122137379"
      Se si vuole usare un file che viene codificato in un modo specifico, è possibile indicare a Visual Studio di usare tale codifica all'apertura del file. Il metodo usato dipende se il file fa parte del progetto.
 
 > [!NOTE]
-> Se si vuole salvare il file di progetto con codifica, l'opzione Salva **file** con nome non è abilitata fino a quando non si scarica il progetto.
+> Se si vuole salvare il file di progetto con codifica, l'opzione **Salva file** con nome non è abilitata fino a quando non si scarica il progetto.
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Per aprire un file codificato che fa parte di un progetto
 

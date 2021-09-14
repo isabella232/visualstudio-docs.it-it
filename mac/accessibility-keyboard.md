@@ -7,19 +7,19 @@ ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
 ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710496"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navigazione da tastiera in Visual Studio per Mac
 
-Visual Studio per Mac è accessibile dagli utenti della tastiera che usano i tasti di scelta rapida macOS più comuni, oltre a molti che sono specifici di Visual Studio per Mac. In questa unità sono disponibili informazioni su alcuni comandi della tastiera di base per entrambi e su come configurare Visual Studio per Mac tasti di scelta rapida.
+Visual Studio per Mac è accessibile dagli utenti della tastiera che usano i tasti di scelta rapida macOS più comuni, oltre a molti che sono specifici per Visual Studio per Mac. In questa unità si apprenderanno alcuni comandi della tastiera di base per entrambi e si apprenderà come configurare Visual Studio per Mac tasti di scelta rapida.
 
 ## <a name="use-keyboard-navigation"></a>Usare la navigazione tramite tastiera
 
-Il supporto per la navigazione tramite tastiera è integrato direttamente in macOS. Per un'esperienza più completa, impostare macOS per spostare lo stato attivo della tastiera tra **tutti i controlli**. In questo modo è possibile spostarsi tra tutti i controlli di una finestra o di una finestra di dialogo.
+Il supporto per la navigazione tramite tastiera è integrato direttamente in macOS. Per un'esperienza più completa, impostare macOS per spostare lo stato attivo della tastiera tra **tutti i controlli**. In questo modo è possibile spostarsi tra tutti i controlli in una finestra o in una finestra di dialogo.
 
 ![Screenshot delle opzioni della tastiera, con tutti i controlli selezionati](media/accessibility-preferences-keyboard.png)
 

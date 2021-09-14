@@ -1,5 +1,5 @@
 ---
-title: Fornire automazione per code | Microsoft Docs
+title: Fornire l'automazione per l'| Microsoft Docs
 description: Informazioni sull'implementazione di un modello di codice, che richiede l'implementazione di interfacce determinate dalla struttura dei dati interna.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 705fa036bdb0d76d02e9d4fcd540c3f3450c4f06
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636083"
 ---
 # <a name="providing-automation-for-code"></a>Automazione per il codice
 La creazione di un modello di automazione per il codice non è necessaria. Environment SDK non fornisce un esempio per questa operazione. Per informazioni dettagliate sui modelli di codice, vedere <xref:EnvDTE.CodeModel> l'oggetto .

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91011c021c429c5f09556f749e305572097a8de6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160361"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710333"
 ---
 # <a name="modules"></a>Moduli
 In termini di architettura del debugger, un *modulo*:

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c2f4ceddc70126d1f749831caa5b3816f8f688268cd5245819eae1982e45e0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 68563b8a62cfd1786d791b324c4db834f6a98dc2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121336785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711731"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Novità&#39;'API plug-in del controllo del codice sorgente versione 1.2
 In questa sezione vengono evidenziate le funzionalità avanzate di controllo del codice sorgente nell'API plug-in del controllo del codice sorgente versione 1.2. Di seguito sono elencate le nuove funzionalità della versione 1.2:
@@ -29,7 +29,7 @@ In questa sezione vengono evidenziate le funzionalità avanzate di controllo del
 
 - [Applicazione di Impostazioni tra più Project connessioni](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md) Illustra come un plug-in del controllo del codice sorgente può usare un'operazione batch per eseguire la stessa operazione di controllo del codice sorgente in più progetti o più contesti di connessione.
 
-- [Creazione di cartelle contenitore padre per le soluzioni](../../extensibility/internals/creating-parent-container-folders-for-solutions.md) Viene illustrato come l'API plug-in del controllo del codice sorgente versione 1.2 consente a un utente di specificare una singola destinazione del controllo del codice sorgente radice per tutti i progetti Web all'interno della soluzione.
+- [Creazione di cartelle contenitore padre per le soluzioni](../../extensibility/internals/creating-parent-container-folders-for-solutions.md) Illustra come l'API plug-in del controllo del codice sorgente versione 1.2 consente a un utente di specificare una singola destinazione del controllo del codice sorgente radice per tutti i progetti Web all'interno della soluzione.
 
 - [Confronto facoltativo tra la cartella Project locale e l'archivio del controllo del codice sorgente](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md) Viene illustrato come l'API plug-in del controllo del codice sorgente 1.2 confronta le versioni dei file.
 

@@ -14,15 +14,15 @@ ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
 ms.openlocfilehash: 4d6fefdda40e550a62616a82734a84037c0c10b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077920"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710212"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>Esercitazione: Creare un'app ASP.NET Core con React in Visual Studio
 
-In questo articolo si apprenderà come compilare un progetto di ASP.NET Core da fungere da back-end api e un progetto di React da fungere da interfaccia utente.
+In questo articolo si apprenderà come compilare un progetto di ASP.NET Core che funge da back-end API e un progetto di React da fungere da interfaccia utente.
 
 Attualmente, Visual Studio include ASP.NET Core di applicazione a pagina singola che supportano Angular e React. I modelli forniscono una cartella app client predefinita nei progetti ASP.NET Core che contiene i file e le cartelle di base di ogni framework.
 
@@ -88,9 +88,9 @@ Assicurarsi che siano installati gli elementi seguenti:
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-react-deselect-launch-browser.png" alt-text="Aprire l'interfaccia utente dei profili di avvio del debug"::: 
 
-1. Fare quindi clic con il pulsante destro del React progetto, scegliere **Proprietà** e passare alla **sezione** Debug. Modificare debugger per avviare l'opzione **launch.jsattivata.**
+1. Fare quindi clic con il pulsante destro del React progetto, **scegliere** Proprietà e passare alla **sezione** Debug. Modificare debugger per l'avvio con **l'opzione launch.json.**
  
-   :::image type="content" source="media/vs-2022/asp-net-core-with-react-choose-debugger.png" alt-text="Scegliere il debugger (launch.jssì)":::
+   :::image type="content" source="media/vs-2022/asp-net-core-with-react-choose-debugger.png" alt-text="Scegliere il debugger (launch.json)":::
 
 ## <a name="set-the-startup-project"></a>Impostare il progetto di avvio
 
@@ -107,7 +107,7 @@ Premere **F5** o selezionare il **pulsante Avvia** nella parte superiore della f
 - Progetto API ASP.NET Core in esecuzione
 - npm che esegue il comando react-scripts start
 
-Dovrebbe essere visualizzata una React app, popolata tramite l'API.
+Verrà visualizzata una React app, popolata tramite l'API.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

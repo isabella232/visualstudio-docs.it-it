@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 965a1e015a4a5889cb1624ebfb25dbfb213a4f86
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636588"
 ---
 # <a name="spy-help"></a>Guida di Spy++
 La documentazione per l'utilità Spy++ include due gruppi di argomenti generali sull'uso di Spy++ e sulle visualizzazioni di Spy++. Questi sono seguiti dalla guida di riferimento di Spy++, che fornisce altri dettagli su ogni comando di menu e finestra di dialogo disponibili.
@@ -45,4 +45,4 @@ La documentazione per l'utilità Spy++ include due gruppi di argomenti generali 
 
  [Finestra di dialogo Proprietà thread](../debugger/thread-properties-dialog-box.md) Consente di visualizzare le proprietà di un thread selezionato nella visualizzazione Thread.
 
- [Altre finestre di dialogo](../debugger/other-dialog-boxes.md) Usato per visualizzare informazioni sul programma Spy++.
+ [Altre finestre di dialogo](../debugger/other-dialog-boxes.md) Consente di visualizzare informazioni sul programma Spy++.

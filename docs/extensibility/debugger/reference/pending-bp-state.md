@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 191d73dcf5b4e1f7b0e3b10842d9a6806a95e9c2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711847"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
 Specifica lo stato di un punto di interruzione in sospeso (un punto di interruzione che non è ancora stato associato).
@@ -62,7 +62,7 @@ public enum enum_PENDING_BP_STATE {
  Indica che il punto di interruzione in sospeso è abilitato.
 
 ## <a name="remarks"></a>Commenti
- Usare come `state` membro della [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura .
+ Usare come `state` membro della struttura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura .
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aprire documenti Visio a livello di codice'
+title: 'Procedura: Aprire documenti Visio codice'
 description: Informazioni su come usare Visual Studio per aprire un documento Visio a livello di codice con i metodi Open o OpenEx.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -17,14 +17,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 1c3126f3f5ac73632996079a070c426afc20d656
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710060"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>Procedura: Aprire documenti Visio a livello di codice
-  Esistono due metodi per aprire documenti Microsoft Office Visio esistenti: Open e OpenEx. Il metodo OpenEx è identico al metodo Open, ad eccezione del fatto che fornisce argomenti in cui il chiamante può specificare la modalità di apertura del documento.
+# <a name="how-to-programmatically-open-visio-documents"></a>Procedura: Aprire documenti Visio codice
+  Esistono due metodi per aprire documenti Microsoft Office Visio esistenti: Open e OpenEx. Il metodo OpenEx è identico al metodo Open, con la differenza che fornisce argomenti in cui il chiamante può specificare la modalità di apertura del documento.
 
  Per informazioni dettagliate sul modello a oggetti, vedere la documentazione di riferimento di VBA relativa ai metodi [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) e [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) .
 

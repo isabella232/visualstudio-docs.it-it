@@ -1,6 +1,6 @@
 ---
 title: "Procedura: Spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice"
-description: Informazioni su come modificare a livello di codice la posizione dei fogli di lavoro rispetto ad altri fogli di lavoro in una cartella Microsoft Excel lavoro.
+description: Informazioni su come modificare a livello di codice la posizione dei fogli di lavoro rispetto ad altri fogli di lavoro in una cartella Microsoft Excel cartella di lavoro.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,11 +18,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: aeef102362d5471aa3be34e154cd73d8341ff834
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710063"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Procedura: Spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice
   A livello di codice è possibile modificare la posizione dei fogli di lavoro rispetto ad altri fogli in una cartella di lavoro. Se non si specifica una posizione per il foglio spostato, Excel crea una nuova cartella di lavoro per contenerlo.
@@ -48,4 +48,4 @@ ms.locfileid: "122155889"
 - [Procedura: Nascondere fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md)
 - [Procedura: Eliminare fogli di lavoro da cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
 - [Procedura: Proteggere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-protect-worksheets.md)
-- [Accesso globale agli oggetti nei Office progetto](../vsto/global-access-to-objects-in-office-projects.md)
+- [Accesso globale agli oggetti nei progetti Office globali](../vsto/global-access-to-objects-in-office-projects.md)

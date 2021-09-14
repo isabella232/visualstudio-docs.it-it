@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 608bb21c2fb9d8335cd2ba212a6b7501392087d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637292"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 
@@ -65,7 +65,7 @@ Premere **F5 e** sperimentare se non si ha familiarità con questo modello di so
 
  Schema per i file contenenti le istanze del linguaggio DSL. Questo file viene copiato nella directory di compilazione (**bin**). Quando si installa il linguaggio DSL, è possibile copiare questo file **in \Programmi\Microsoft Visual Studio 11.0\Xml\Schemas** in modo che i file del modello possano essere convalidati. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
- Se si personalizza la serializzazione impostando le opzioni in Esplora DSL, lo schema cambierà di conseguenza. Se, tuttavia, si scrive il proprio codice di serializzazione, questo file potrebbe non rappresentare più lo schema effettivo. Per altre informazioni, vedere [Personalizzazione di file Archiviazione e serializzazione XML.](../modeling/customizing-file-storage-and-xml-serialization.md)
+ Se si personalizza la serializzazione impostando le opzioni in Esplora DSL, lo schema cambierà di conseguenza. Se, tuttavia, si scrive il proprio codice di serializzazione, questo file potrebbe non rappresentare più lo schema effettivo. Per altre informazioni, vedere [Personalizzazione dei file Archiviazione serializzazione XML.](../modeling/customizing-file-storage-and-xml-serialization.md)
 
  `ConnectionBuilders.cs`
 
@@ -73,7 +73,7 @@ Premere **F5 e** sperimentare se non si ha familiarità con questo modello di so
 
  Nell'esempio di soluzione componente, uno dei generatori di connessione si chiama ConnectionBuilder, ma è una coincidenza, perché la relazione di dominio è denominata Connection.
 
- La relazione viene creata nel *metodo Relationship.* `Builder.Connect()` La versione predefinita verifica che gli elementi modello di origine e di destinazione siano accettabili e quindi crea l'istanza della relazione. Esempio:
+ La relazione viene creata nel *metodo Relationship.* `Builder.Connect()` La versione predefinita verifica che gli elementi modello di origine e di destinazione siano accettabili e quindi crea l'istanza della relazione. Ad esempio:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -203,7 +203,7 @@ Premere **F5 e** sperimentare se non si ha familiarità con questo modello di so
 
  `DocData.cs`
 
- *YourDsl* `DocData` gestisce il caricamento e il salvataggio di un modello in un file e crea l'istanza store.
+ *YourDsl* `DocData` gestisce il caricamento e il salvataggio di un modello in un file e crea l'istanza di Store.
 
  Se, ad esempio, si vuole salvare il linguaggio DSL in un database invece che in un file, è possibile eseguire l'override dei metodi `Load` e `Save`.
 
@@ -352,4 +352,4 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)
 - [Personalizzazione ed estensione di un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Scrittura di codice per personalizzare un linguaggio Domain-Specific personalizzato](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Scrittura di codice per personalizzare un Domain-Specific linguaggio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -1,6 +1,6 @@
 ---
-description: Questo metodo ottiene le informazioni sulla richiesta del punto di interruzione che descrivono la richiesta del punto di interruzione.
-title: Oggetto IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft Docs
+description: Questo metodo ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta del punto di interruzione.
+title: IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8c889b73f231b2e31bc60be7bc5d1700b3a891ba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072561"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636444"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
-Questo metodo ottiene le informazioni sulla richiesta del punto di interruzione che descrivono la richiesta del punto di interruzione.
+Questo metodo ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta del punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ int GetRequestInfo2(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag [dell'enumerazione BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) che determinano quali campi `pBPRequestInfo` di devono essere compilati.
+[in] Combinazione di flag [dell'BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) che determinano quali campi di devono `pBPRequestInfo` essere compilati.
 
 `bBPRequestInfo`\
-[out] Struttura [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) da completare.
+[out] Struttura [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) da riempita.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Commenti
- Questa richiesta contiene più informazioni di quelle restituite dal [metodo GetRequestInfo.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
+ In questa richiesta sono presenti più informazioni di quelle restituite dal [metodo GetRequestInfo.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)

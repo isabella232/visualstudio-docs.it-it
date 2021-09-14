@@ -14,21 +14,21 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bdd0439b51f0dc1a636eafb5732223316bc1226
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063551"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711767"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Linee guida aggiuntive per il controllo del codice sorgente per progetti ed editor
-Esistono alcune linee guida a cui devono attenersi i progetti e gli editor per supportare il controllo del codice sorgente.
+Esistono alcune linee guida a cui devono attenersi progetti ed editor per supportare il controllo del codice sorgente.
 
 ## <a name="guidelines"></a>Indicazioni
  Il progetto o l'editor deve anche eseguire le operazioni seguenti per supportare il controllo del codice sorgente:
 
 |Area|Project|Editor|Dettagli|
 |----------|-------------|------------|-------------|
-|Copie private dei file|X||L'ambiente supporta copie private di file. In altri modo, ogni persona integrata nel progetto ha la propria copia privata dei file in tale progetto.|
+|Copie private dei file|X||L'ambiente supporta copie private di file. In altri, ogni persona integrata nel progetto ha la propria copia privata dei file in tale progetto.|
 |Persistenza ANSI/Unicode|X|X|Se si scrive il codice di persistenza, rendere persistenti i file nel formato ANSI perché la maggior parte dei programmi di controllo del codice sorgente non supporta attualmente Unicode.|
 |Enumerare i file|X||Il progetto deve contenere un elenco specifico di tutti i file al suo interno e deve essere in grado di enumerare l'elenco di file usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling). Il progetto deve anche esporre i nomi degli elementi tramite l'implementazione e supportare la ricerca dei nomi (inclusi i file <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> speciali) tramite la relativa <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> implementazione.|
 |Formato testo|X|X|Quando possibile, i file devono essere in formato testo per supportare l'unione di versioni diverse. I file non in formato testo non possono essere uniti ad altre versioni del file in un secondo momento. Il formato di testo preferito è XML.|

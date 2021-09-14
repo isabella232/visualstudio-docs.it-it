@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: b2ddbc24bcd567ce56326a4b96d9c97f1e50061c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106289"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710076"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Procedura: Aggiungere intestazioni e piè di pagina ai documenti a livello di codice
   È possibile aggiungere testo alle intestazioni e ai piè di pagina del documento usando la proprietà <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> e la proprietà <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> di <xref:Microsoft.Office.Interop.Word.Section>. Ogni sezione di un documento contiene tre intestazioni e piè di pagina:

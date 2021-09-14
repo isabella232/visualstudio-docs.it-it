@@ -13,14 +13,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4dffc4946f0476bb9b93f39392d310ced5c8e824
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637220"
 ---
 # <a name="crosssession"></a>CrossSession
-LVSPerfCmd.exe **CrossSession** consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.
+ **LVSPerfCmd.exe'opzione CrossSession** consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.
 
  È possibile usare l'abbreviazione **CS** al posto di **CrossSession**.
 

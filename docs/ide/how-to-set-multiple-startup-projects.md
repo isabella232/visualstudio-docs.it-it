@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Impostare più progetti di avvio'
-description: Informazioni su come Visual Studio consente di specificare la modalità di esecuzione di più di un progetto all'avvio del debugger.
+description: Informazioni su Visual Studio consente di specificare la modalità di esecuzione di più progetti all'avvio del debugger.
 ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
@@ -14,11 +14,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: f51ae283f94703b7d7572ae51308da660784e80e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710260"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedura: Impostare più progetti di avvio
 

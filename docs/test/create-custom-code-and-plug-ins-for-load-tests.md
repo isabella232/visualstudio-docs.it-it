@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: b32cf0afed7d9a87babe34b0ebfeb781788f4504
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115291"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710123"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Creare codice personalizzato e plug-in per test di carico
 
@@ -32,7 +32,7 @@ Un plug-in personalizzato usa codice scritto e collegato a un test di carico o a
 |Attività|Argomenti correlati|
 |-|-----------------------|
 |**Creare un plug-in personalizzato per il test di carico**: è possibile usare l'API del test di carico per creare un plug-in personalizzato che consenta di aggiungere altre funzionalità di test al test di carico.|-   [Procedura: Usare l'API del test di carico](../test/how-to-use-the-load-test-api.md)<br />-   [Procedura: Creare un plug-in di test di carico](../test/how-to-create-a-load-test-plug-in.md)|
-|**Creare un plug-in personalizzato per il test delle prestazioni Web:** È possibile usare l'API test prestazioni Web per creare un plug-in personalizzato per aggiungere altre funzionalità di test al test delle prestazioni Web, incluso a livello di richiesta. È anche possibile creare un test del servizio Web.<br /><br /> Inoltre, è possibile creare un plug-in di registrazione Web con il quale è possibile modificare un test delle prestazioni Web dopo che viene registrato, ma prima che venga visualizzato nel Visualizzatore risultati test prestazioni Web.|-   [Procedura: Usare l'API test delle prestazioni Web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Procedura: Creare un test del servizio Web](../test/how-to-create-a-web-service-test.md)<br />-   [Procedura: Creare un plug-in del registratore](../test/how-to-create-a-recorder-plug-in.md)|
+|**Creare un plug-in personalizzato per il test delle prestazioni Web:** È possibile usare l'API test prestazioni Web per creare un plug-in personalizzato per aggiungere altre funzionalità di test al test delle prestazioni Web, incluso a livello di richiesta. È anche possibile creare un test del servizio Web.<br /><br /> Inoltre, è possibile creare un plug-in di registrazione Web con il quale è possibile modificare un test delle prestazioni Web dopo che viene registrato, ma prima che venga visualizzato nel Visualizzatore risultati test prestazioni Web.|-   [Procedura: Usare l'API test prestazioni Web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Procedura: Creare un test del servizio Web](../test/how-to-create-a-web-service-test.md)<br />-   [Procedura: Creare un plug-in del registratore](../test/how-to-create-a-recorder-plug-in.md)|
 |**Aggiungere funzionalità dell'interfaccia utente al Visualizzatore risultati test prestazioni Web:** è possibile aggiungere altre funzionalità dell'interfaccia utente al Visualizzatore risultati test prestazioni Web usando un componente aggiuntivo di Visual Studio.|-   [Procedura: Creare un componente Visual Studio componente aggiuntivo per il visualizzatore risultati test prestazioni Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
 |**Creare un editor del corpo HTTP personalizzato:** è possibile creare un editor personalizzato per modificare le risposte XML HTTP stringa o binario di un servizio Web.|-   [Procedura: Creare un editor del corpo HTTP personalizzato per l'editor test prestazioni Web](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 

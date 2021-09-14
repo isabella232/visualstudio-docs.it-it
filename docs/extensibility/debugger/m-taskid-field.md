@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 46ad2b7bc2fad41821b60c7c7aa428b75fe25d49
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710339"
 ---
 # <a name="m_taskid-field"></a>m_taskId campo
 Campo di supporto per la <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> proprietà.

@@ -15,15 +15,15 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2954d551b1a35c2de5e951111e746227aa9987a5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711807"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inizializzazione della finestra di progettazione e configurazione dei metadati
 
-La manipolazione dei metadati e degli attributi di filtro associati a una finestra di progettazione o a un componente della finestra di progettazione fornisce un meccanismo per le applicazioni per definire quali strumenti vengono usati da una determinata finestra di progettazione per gestire oggetti diversi (ad esempio strutture di dati, classi o entità grafiche), quando la finestra di progettazione è disponibile e come l'IDE di Visual Studio è configurato per supportare la finestra di progettazione ,ad esempio la categoria o la scheda della casella degli strumenti <xref:System.Type> disponibile. 
+La manipolazione dei metadati e degli attributi di filtro associati a una finestra di progettazione o a un componente della finestra di progettazione fornisce un meccanismo per le applicazioni per definire quali strumenti vengono usati da una determinata finestra di progettazione per gestire oggetti diversi (ad esempio strutture di dati, classi o entità grafiche), quando la finestra di progettazione è disponibile e come l'IDE di Visual Studio è configurato per supportare la finestra di progettazione , ad esempio la categoria o la scheda della casella degli strumenti <xref:System.Type> disponibile. 
 
 Fornisce diversi meccanismi per facilitare il controllo dell'inizializzazione di una finestra di progettazione o di un componente di progettazione e la manipolazione dei relativi metadati da parte di [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] un VSPackage.
 
@@ -38,7 +38,7 @@ La personalizzazione di una finestra di progettazione, di un componente o di un'
 
     Questa operazione viene in genere eseguita tramite <xref:System.Drawing.Design.UITypeEditor> <xref:System.ComponentModel.TypeConverter> i meccanismi o .
 
-    Ad esempio, quando le finestre di progettazione basate su vengono inizializzate, l'ambiente Visual Studio modifica l'oggetto per gli oggetti usati con la finestra di progettazione in modo da usare gestione risorse per ottenere <xref:System.Windows.Forms> bitmap anziché l'file system. <xref:System.Drawing.Design.UITypeEditor> <xref:System.Web.UI.WebControls.Image>
+    Ad esempio, quando le finestre di progettazione basate su vengono inizializzate, l'ambiente Visual Studio modifica per gli oggetti usati con la finestra di progettazione per usare gestione risorse per ottenere <xref:System.Windows.Forms> bitmap anziché l'file system. <xref:System.Drawing.Design.UITypeEditor> <xref:System.Web.UI.WebControls.Image>
 
 2. Integrazione con l'ambiente, ad esempio, sottoscrivendo eventi o ottenendo informazioni di configurazione del progetto. È possibile ottenere informazioni di configurazione del progetto e sottoscrivere gli eventi ottenendo <xref:System.ComponentModel.Design.ITypeResolutionService> l'interfaccia .
 
@@ -55,7 +55,7 @@ Un VSPackage deve gestire l'inizializzazione della finestra di progettazione tra
 
 2. Registrazione della classe che implementa come supporto per le estensioni della finestra di progettazione <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> del pacchetto VSPackage. Registrare la classe applicando istanze di , e alla classe che fornisce  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> l'implementazione di VSPackage di <xref:Microsoft.VisualStudio.Shell.Package> .
 
-Ogni volta che viene creata una finestra di progettazione o un componente della finestra di progettazione, l'Visual Studio seguente:
+Ogni volta che viene creato un componente della finestra di progettazione o della finestra di progettazione, Visual Studio ambiente:
 
 - Accede a ogni provider di estensioni dell'area di progettazione registrato.
 
@@ -85,7 +85,7 @@ Le modifiche fornite da un'istanza di applicata all'implementazione di un <xref:
 
 La `IsGlobal` proprietà <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> dell'istanza applicata all'implementazione di un VSPackage di <xref:Microsoft.VisualStudio.Shell.Package> determina questo ambito.
 
-L'applicazione dell'attributo a <xref:Microsoft.VisualStudio.Shell.Package> <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> un'implementazione di con la proprietà dell'oggetto impostata su , come indicato di seguito, modifica il browser per `true` l'intero Visual Studio ambiente:
+L'applicazione dell'attributo a <xref:Microsoft.VisualStudio.Shell.Package> un'implementazione di con la proprietà dell'oggetto impostata su , come illustrato di seguito, modifica il browser per l'intero <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> Visual Studio `true` ambiente:
 
 `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`
 
@@ -98,7 +98,7 @@ Se il flag globale è stato impostato su , la modifica dei metadati è locale ri
 `internal class MyPackage : Package {}`
 
 > [!NOTE]
-> L'area di progettazione supporta solo la creazione di componenti e pertanto solo i componenti possono avere metadati locali. Nell'esempio precedente si è tentato di modificare una proprietà, ad esempio `Color` la proprietà di un oggetto . Se fosse stato passato per il flag globale, non verrebbe mai visualizzato perché la finestra di progettazione non `false` `CustomBrowser` crea mai effettivamente un'istanza di `Color` . L'impostazione del flag globale su è utile per i componenti, ad `false` esempio controlli, timer e finestre di dialogo.
+> L'area di progettazione supporta solo la creazione di componenti e pertanto solo i componenti possono avere metadati locali. Nell'esempio precedente si è tentato di modificare una proprietà, ad esempio `Color` la proprietà di un oggetto . Se fosse stato passato per il flag globale, non verrebbe mai visualizzato perché la finestra di progettazione `false` non crea mai effettivamente `CustomBrowser` un'istanza di `Color` . L'impostazione del flag globale su è utile per i componenti, ad `false` esempio controlli, timer e finestre di dialogo.
 
 ## <a name="see-also"></a>Vedi anche
 

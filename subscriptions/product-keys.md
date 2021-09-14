@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come ottenere e gestire i codici Product Key in sottoscrizioni di Visual Studio.
 ms.openlocfilehash: ad9672d089c6e50aa879b38841c468f235347963
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965647"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625032"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -23,7 +23,7 @@ Le sottoscrizioni di Visual Studio solitamente comprendono cinque codici Product
 In più, la maggior parte dei codici Product Key consentono più attivazioni del prodotto per ogni codice.  Molti prodotti consentono anche di installare e usare il prodotto senza attivazione per un minimo di 30 giorni.  Per la maggior parte dei sottoscrittori, questo si traduce in un numero più che sufficiente di attivazioni per soddisfare le proprie esigenze.  Se tuttavia si sono esaurite le attivazioni disponibili per un prodotto, è possibile inviare una richiesta di codici Product Key aggiuntivi tramite il [servizio clienti per le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 
 > [!NOTE]
-> Se la sottoscrizione viene fornita dall'utente dall'istituto di istruzione o dall'istituto di istruzione, l'amministratore della sottoscrizione controlla se si ha accesso ai download del software.  Se l'accesso ai download è disabilitato per la sottoscrizione, viene disabilitato anche l'accesso ai codici Product Key.  Se sono necessari download e/o codici Product Key, [contattare l'amministratore.](contact-my-admin.md)
+> Se la sottoscrizione viene fornita dall'istituto di istruzione o dall'istituto di istruzione, l'amministratore della sottoscrizione controlla se si ha accesso ai download software.  Se l'accesso ai download è disabilitato per la sottoscrizione, viene disabilitato anche l'accesso ai codici Product Key.  Se sono necessari download e/o codici Product Key, [contattare l'amministratore.](contact-my-admin.md)
 
 ## <a name="activating-a-product"></a>Attivazione di un prodotto
 Per determinati prodotti è necessaria l'attivazione.  In genere in Visual Studio questa condizione è limitata alle applicazioni client Windows, Windows Server, Microsoft Office, nonché a Expression Studio. Se è necessaria l'attivazione, molti prodotti, inclusi Windows e Office, consentono di installare e usare il prodotto senza attivazione per un minimo di 30 giorni. Se si effettua frequentemente il re-imaging dei propri computer (ad esempio, ogni 30 giorni), è preferibile NON eseguire l'attivazione. I codici Product Key offerti come parte della sottoscrizione di Visual Studio non consentono un numero illimitato di attivazioni di un prodotto.
@@ -33,7 +33,7 @@ Se sono stati richiesti tutti i codici Product Key aggiuntivi disponibili e sono
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versioni di prodotti per attivazione singola e per contratti multilicenza
 Le sottoscrizioni di Visual Studio offrono una selezione di versioni di prodotti Microsoft per attivazione singola o per contratti multilicenza. Determinati prodotti vengono resi disponibili in Download solo nella versione per attivazione singola o solo nella versione per contratti multilicenza. Alcuni di essi, tuttavia, sono disponibili in entrambe le versioni. I prodotti che richiedono attivazione, come Windows, Windows Server e i prodotti client di Office, vengono generalmente offerti solo nella versione per attivazione singola tramite Download.
 
-I clienti con contratti multilicenza possono anche scaricare prodotti software dal Volume Licensing Service Center per ottenere versioni di prodotti con contratti multilicenza e i relativi codici Product Key.  L'accesso a VLSC è gestito dagli amministratori designati all'interno dell'organizzazione del cliente.
+I clienti con contratti multilicenza possono anche scaricare prodotti software dal Volume Licensing Service Center per ottenere versioni di prodotti con contratti multilicenza e i relativi codici Product Key.  L'accesso alla VLSC è gestito da amministratori designati all'interno dell'organizzazione del cliente.
 
 ## <a name="daily-product-key-claim-limits"></a>Limiti giornalieri per le richieste di codici Product Key
 Microsoft si impegna a proteggere l'integrità del programma di sottoscrizione di Visual Studio, nonché il valore del software e dei vantaggi che i sottoscrittori legittimi del programma ricevono dopo l'acquisto. Per supportare tale impegno, Microsoft ha implementato limiti giornalieri per le richieste di codici per le sottoscrizioni di Visual Studio. I limiti giornalieri impongono restrizioni al numero di codici che è possibile richiedere in un giorno per singola sottoscrizione.
@@ -80,7 +80,7 @@ Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product
 È possibile richiedere una chiave dalla pagina di download per il prodotto oppure cercare la chiave necessaria nella pagina [Codici "Product Key"](https://my.visualstudio.com/productkeys).
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vssubscriberhelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

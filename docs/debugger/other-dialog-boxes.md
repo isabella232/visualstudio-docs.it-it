@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 36362c04ef2fe72035ba41afe122c07ad0819e51
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030672"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710385"
 ---
 # <a name="other-dialog-boxes"></a>Altre finestre di dialogo
 Queste finestre di dialogo visualizzano informazioni sul programma Spy++.

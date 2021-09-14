@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 47fc4a77e1b71b337c79c7e3e39fa2fa4c8ec1a6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636308"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 Controlla l'esecuzione (o interrompe il controllo dell'esecuzione) nel thread specificato.
@@ -58,7 +58,7 @@ int WatchForThreadStep(
 [in] Diverso da zero ( ) significa avviare il controllo dell'esecuzione sul thread identificato da ; in caso contrario, zero ( ) significa interrompere il controllo `TRUE` `dwTid` `FALSE` dell'esecuzione in `dwTid` .
 
 `dwFrame`\
-[in] Specifica un indice di frame che controlla il tipo di passaggio. Quando il valore è zero (0), il tipo di passaggio è "esegui istruzione" e il programma deve arrestarsi ogni volta che viene eseguito il thread `dwTid` identificato da . Quando è diverso da zero, il tipo di passaggio è "step over" e il programma deve essere interrotta solo se il thread identificato da è in esecuzione in un frame il cui indice è uguale o superiore nello stack rispetto `dwFrame` `dwTid` a `dwFrame` .
+[in] Specifica un indice di frame che controlla il tipo di passaggio. Quando il valore è zero (0), il tipo di passaggio è "Esegui istruzione" e il programma deve arrestarsi ogni volta che viene eseguito il thread `dwTid` identificato da . Quando è diverso da zero, il tipo di passaggio è "step over" e il programma deve essere interrotta solo se il thread identificato da è in esecuzione in un frame il cui indice è uguale o superiore nello stack rispetto `dwFrame` `dwTid` a `dwFrame` .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

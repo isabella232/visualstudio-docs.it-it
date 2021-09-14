@@ -1,6 +1,6 @@
 ---
 title: libreria di immagini
-description: Informazioni sulla raccolta Visual Studio immagini che contiene le immagini dell'applicazione visualizzate in Visual Studio, Windows, Office e altro software Microsoft.
+description: Informazioni sulla libreria Visual Studio immagini che contiene le immagini dell'applicazione visualizzate in Visual Studio, Windows, Office e altro software Microsoft.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,11 +20,11 @@ ms.technology: vs-ide-designers
 ms.workload:
 - multiple
 ms.openlocfilehash: 7142b77d3823bdc7d95a792d3c90e53e95e38b6d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710362"
 ---
 # <a name="the-visual-studio-image-library"></a>Libreria di immagini di Visual Studio
 

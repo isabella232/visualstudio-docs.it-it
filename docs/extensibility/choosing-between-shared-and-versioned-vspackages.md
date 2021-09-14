@@ -16,20 +16,20 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 284dd28af7fb635767f00096420e0142661e4e88
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146147"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636468"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Scegliere tra vspackage condivisi e con controllo delle versioni
 Diverse versioni di Visual Studio possono coesistere nello stesso computer. I pacchetti VSPackage possono supportare qualsiasi combinazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versioni.
 
- È possibile abilitare le installazioni side-by-side di VSPackage tramite una delle due strategie, la strategia condivisa o la strategia con controllo delle versioni. Entrambi supportano la presenza di più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e delle versioni associate del .NET Framework.
+ È possibile abilitare le installazioni side-by-side di VSPackage tramite una delle due strategie, la strategia condivisa o la strategia con controllo delle versioni. Entrambi supportano la presenza di più versioni [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di e delle versioni associate del .NET Framework.
 
  Nella strategia condivisa, un VSPackage viene registrato per l'uso in più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Nella strategia con controllo delle versioni vengono installate più DLL VSPackage, una per ogni versione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di supportata.
 
-## <a name="shared-vspackages"></a>VSPackage condivisi
+## <a name="shared-vspackages"></a>VsPackage condivisi
  L'uso di un VSPackage condiviso è appropriato quando si usa lo stesso VSPackage in più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Per implementare un VSPackage condiviso, è necessario seguire questa procedura:
 
 - Rendere il pacchetto VSPackage compatibile con più versioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Sono disponibili due modi per eseguire questa operazione:
@@ -38,7 +38,7 @@ Diverse versioni di Visual Studio possono coesistere nello stesso computer. I pa
 
   - Programmare il pacchetto VSPackage per adattarlo alla versione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di in cui è in esecuzione. Quindi, se le query per i servizi più recenti hanno esito negativo, il pacchetto VSPackage può offrire altri servizi supportati nelle versioni precedenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Registrare il pacchetto VSPackage in modo appropriato. Per altre informazioni, vedere [Registrazione vspackage e](../extensibility/internals/vspackage-registration.md) [Registrazione VSPackage gestita.](/previous-versions/bb166783(v=vs.100))
+- Registrare il pacchetto VSPackage in modo appropriato. Per altre informazioni, vedere [Registrazione vspackage e](../extensibility/internals/vspackage-registration.md) [Registrazione VSPackage gestita](/previous-versions/bb166783(v=vs.100)).
 
 - Registrare le estensioni di file in modo appropriato. Per altre informazioni, vedere Registrazione di estensioni di file per distribuzioni [side-by-side.](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 

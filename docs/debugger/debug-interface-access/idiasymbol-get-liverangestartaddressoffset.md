@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7bf2779897b339ca4ff77cb23656fdf0e2340f10
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709942"
 ---
 # <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 Restituisce la parte offset dell'indirizzo iniziale dell'intervallo in cui il simbolo locale è valido.

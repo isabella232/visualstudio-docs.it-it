@@ -1,6 +1,6 @@
 ---
 title: Registrazione in MSBuild | Microsoft Docs
-description: Informazioni su come MSBuild di compilazione consente di monitorare lo stato di avanzamento della compilazione acquisendo eventi di compilazione, messaggi, avvisi ed errori in un file di log.
+description: Informazioni su come MSBuild registrazione consente di monitorare lo stato di avanzamento della compilazione acquisendo eventi di compilazione, messaggi, avvisi ed errori in un file di log.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 673a46cb6727adcc1b9625187b5d7949cb07ea5a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625649"
 ---
 # <a name="logging-in-msbuild"></a>Registrazione a MSBuild
 

@@ -20,11 +20,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 2eb3189afe60dbd2f797846afcd404fe487d6fb9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711679"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -36,7 +36,7 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
 |![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Proprietà|
 |![Simbolo struttura](../ide/media/vxstruct_icon.gif)|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif)|Campo o variabile|
-|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
+|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Evento|
 |![Simbolo di enumerazione](../ide/media/vxenum_icon.gif)|Enumerazione|![Icona Costante](../ide/media/vxconstant_icon.gif)|Costante|
 |![Simbolo definizione dei tipi](../ide/media/vxtypedef_icon.gif)|TypeDef|![Simbolo di enumerazione elementi](../ide/media/vxenumitem_icon.gif)|Elemento di enumerazione|
 |![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Modulo|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|

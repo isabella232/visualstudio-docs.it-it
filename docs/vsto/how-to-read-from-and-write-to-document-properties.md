@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Leggere e scrivere nelle proprietà del documento'
-description: Informazioni su come usare le Visual Studio per ottenere o impostare le proprietà dei documenti in Microsoft Excel e Microsoft Word.
+description: Informazioni su come usare Visual Studio per ottenere o impostare le proprietà dei documenti Microsoft Excel e Microsoft Word.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 981f9da1138034dd108a438a69683f4107358ee4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710615"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: Leggere e scrivere nelle proprietà del documento
   È possibile archiviare le proprietà del documento insieme a un documento. Le applicazioni di Office offrono svariate proprietà predefinite, ad esempio autore, titolo e oggetto. Questo argomento illustra come impostare le proprietà dei documenti in Microsoft Office Excel e Microsoft Office Word.
@@ -82,6 +82,6 @@ ms.locfileid: "122032719"
  Anche se si usano Word ed Excel e i rispettivi oggetti, Microsoft Office fornisce l'elenco di proprietà predefinite disponibili per i documenti. Il tentativo di accesso a una proprietà non definita provocherà un'eccezione.
 
 ## <a name="see-also"></a>Vedi anche
-- [Componenti VSTO programma](../vsto/programming-vsto-add-ins.md)
+- [Programmi VSTO componenti aggiuntivi](../vsto/programming-vsto-add-ins.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 - [Procedura: Creare e modificare proprietà di documenti personalizzati](../vsto/how-to-create-and-modify-custom-document-properties.md)

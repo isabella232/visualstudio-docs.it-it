@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 896059b2272470af2f0deb9bbfd55602bd6b7d62
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711863"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 Specifica i flag di stato del punto di interruzione in sospeso.

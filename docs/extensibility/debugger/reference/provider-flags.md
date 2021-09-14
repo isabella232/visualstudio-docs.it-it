@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 116943ce1fd85b9f4dee2dc0f1512301a900fa74
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711822"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
 Specifica le proprietà desiderate da ottenere da un provider di programmi.
@@ -59,13 +59,13 @@ public enum enum_PROVIDER_FLAGS {
  Nessun flag specificato.
 
  `PFLAG_REMOTE_PORT`\
- Il chiamante vuole un elenco di programmi in un computer diverso da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
+ Il chiamante desidera un elenco di programmi in un computer diverso da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_DEBUGGEE`\
  Il processo è attualmente in fase di debug da questa istanza di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] è collegato al programma di cui è in corso il debug ma non lo ha avviato.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] è collegato al programma di cui è in corso il debug, ma non lo ha avviato.
 
  `PFLAG_REASON_WATCH`\
  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] sta controllando gli eventi.
@@ -74,7 +74,7 @@ public enum enum_PROVIDER_FLAGS {
  Il chiamante `ProgramNodes` vuole il campo della [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura .
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- Il chiamante `fIsTheDebuggerPresent` vuole il campo della struttura `PROVIDER_PROCESS_DATA` .
+ Il chiamante `fIsTheDebuggerPresent` desidera il campo della struttura `PROVIDER_PROCESS_DATA` .
 
 ## <a name="remarks"></a>Commenti
  Questi flag vengono passati ai metodi seguenti:
@@ -85,7 +85,7 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Questi valori possono essere combinati con un oggetto bit per `OR` bit.
+  Questi valori possono essere combinati con un bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

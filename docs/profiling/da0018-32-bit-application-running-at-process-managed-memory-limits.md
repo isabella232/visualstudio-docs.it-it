@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: e407b4273bceb7d8df7478fb518bf952bf5d822c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637140"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 

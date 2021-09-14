@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9eecf9c3f0797aad8f0431233c6adfb12dcac242
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122138380"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636324"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Questo metodo ottiene le dimensioni di un campo, in byte.

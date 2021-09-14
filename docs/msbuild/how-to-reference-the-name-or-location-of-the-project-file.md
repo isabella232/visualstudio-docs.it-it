@@ -20,23 +20,23 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 06ff5cb50453557eff20b2b1ec287d4b03012abf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625697"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedura: Fare riferimento al nome o al percorso del file di progetto
 
-È possibile usare il nome o il percorso del progetto nel file di progetto senza dover creare una proprietà. MSBuild proprietà riservate che fanno riferimento al nome del file di progetto e ad altre proprietà correlate al progetto. Per altre informazioni sulle proprietà riservate, vedere [Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md).
+È possibile usare il nome o il percorso del progetto nel file di progetto senza dover creare una proprietà. MSBuild fornisce proprietà riservate che fanno riferimento al nome del file di progetto e ad altre proprietà correlate al progetto. Per altre informazioni sulle proprietà riservate, vedere [Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Usare le proprietà del progetto
 
- MSBuild alcune proprietà riservate che è possibile usare nei file di progetto senza definirle ogni volta. La proprietà riservata `MSBuildProjectName`, ad esempio, fornisce un riferimento al nome file di progetto. La proprietà riservata `MSBuildProjectDirectory` specifica un riferimento al percorso del file di progetto.
+ MSBuild fornisce alcune proprietà riservate che è possibile usare nei file di progetto senza definirle ogni volta. La proprietà riservata `MSBuildProjectName`, ad esempio, fornisce un riferimento al nome file di progetto. La proprietà riservata `MSBuildProjectDirectory` specifica un riferimento al percorso del file di progetto.
 
 #### <a name="to-use-the-project-properties"></a>Per usare le proprietà di progetto
 
-- Fare riferimento alla proprietà nel file di progetto con la notazione $(), come per qualsiasi altra proprietà. Esempio:
+- Fare riferimento alla proprietà nel file di progetto con la notazione $(), come per qualsiasi altra proprietà. Ad esempio:
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -94,7 +94,7 @@ ms.locfileid: "122085039"
 </Project>
 ```
 
-Nell'esempio viene [utilizzata la sintassi](property-functions.md) della funzione Property per chiamare il metodo .NET Framework statico <xref:System.IO.Path.Combine*?displayProperty=fullName> .
+Nell'esempio viene utilizzata [la sintassi](property-functions.md) della funzione Property per chiamare il metodo .NET Framework statico <xref:System.IO.Path.Combine*?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Vedi anche
 

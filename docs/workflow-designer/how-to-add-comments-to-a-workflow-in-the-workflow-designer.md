@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 81de5a8b27626066fb8c85b5d13da2f387bae8c9
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963537"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710023"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedura: aggiungere commenti a un flusso di lavoro in Progettazione del flusso di lavoro
 

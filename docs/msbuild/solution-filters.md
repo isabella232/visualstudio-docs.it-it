@@ -12,11 +12,11 @@ manager: jmartens
 ms.technology: msbuild
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: a21916045c3a06dba224d4db632bc9332ac6d83b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625511"
 ---
 # <a name="solution-filters-in-msbuild"></a>Filtri della soluzione in MSBuild
 
@@ -33,7 +33,7 @@ La compilazione di un file di filtro della soluzione dalla riga di comando usa e
 msbuild [options] solutionFilterFile.slnf
 ```
 
-È anche possibile aggiungere opzioni e proprietà aggiuntive come di consueto. Vedere [MSBuild della riga di comando.](msbuild-command-line-reference.md) Questo comando compila i progetti filtrati e gli eventuali progetti da cui dipendono. Quando si compila un filtro della soluzione dalla riga di comando, MSBuild automaticamente le dipendenze. Compila un progetto se è specificato nel filtro o a cui fa riferimento un progetto compilato.
+È anche possibile aggiungere opzioni e proprietà aggiuntive come di consueto. Vedere [MSBuild riferimento alla riga di comando.](msbuild-command-line-reference.md) Questo comando compila i progetti filtrati e tutti i progetti da cui dipendono. Quando si compila un filtro della soluzione dalla riga di comando, MSBuild automaticamente le dipendenze. Compila un progetto se è specificato nel filtro o a cui fa riferimento un progetto compilato.
 
 ## <a name="solution-filter-files"></a>File di filtro della soluzione
 
@@ -76,7 +76,7 @@ Di seguito è riportato il file di filtro della soluzione Visual Studio generato
 }
 ```
 
-In questo esempio, quando si compila con il filtro abilitato (usando il comando ), MSBuild compila MyApplication e ProjectA perché sono elencati in modo esplicito nel file di filtro `MSBuild [options] MyFilter.slnf` della soluzione. Come parte della compilazione di ProjectA, MSBuild classlibrary1 perché ProjectA dipende da esso.  Il progettoB non viene compilato. Questa discussione presuppone una compilazione pulita. Se i progetti sono stati compilati in precedenza, le regole consuete si applicano per ignorare i progetti già aggiornati.
+In questo esempio, quando si compila con il filtro abilitato (usando il comando ), MSBuild compila MyApplication e ProjectA perché sono elencati in modo esplicito nel file di filtro `MSBuild [options] MyFilter.slnf` della soluzione. Come parte della compilazione di ProjectA, MSBuild classlibrary1 perché ProjectA dipende da esso.  ProjectB non viene compilato. Questa discussione presuppone una compilazione pulita. Se i progetti sono stati compilati in precedenza, le regole consuete si applicano per ignorare i progetti già aggiornati.
 
 ## <a name="see-also"></a>Vedi anche
 

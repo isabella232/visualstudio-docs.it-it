@@ -7,11 +7,11 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964288"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710453"
 ---
 # <a name="update-visual-studio-for-mac"></a>Aggiornare Visual Studio per Mac
 
@@ -26,7 +26,7 @@ Visual Studio per Mac offre due canali per ottenere le versioni più recenti:
 
 È possibile usare il riquadro dello **strumento di aggiornamento di Visual Studio** per verificare la presenza di nuovi aggiornamenti, modificare i canali e per scaricare e installare gli aggiornamenti.
 
-Per aprire lo **Visual Studio updater,** passare Visual Studio > **Verifica disponibilità aggiornamenti**:
+Per aprire il **Visual Studio Updater,** passare Visual Studio > **controlla aggiornamenti**:
 
 ![Opzione Controlla aggiornamenti](media/update-image1.png)
 

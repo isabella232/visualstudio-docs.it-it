@@ -17,11 +17,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 ms.openlocfilehash: e48422f3e73802a56a24db3febf8128dad78efe3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112516"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636668"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Eseguire il debug di app UWP in computer remoti da Visual Studio
 
@@ -44,11 +44,11 @@ Per eseguire il debug di un'app UWP in un dispositivo remoto da Visual Studio:
 > [!CAUTION]
 > Per impostazione predefinita, la pagina delle proprietà imposta **Universal (Unencrypted Protocol)** come **tipo di** autenticazione per Windows 10 remote. Potrebbe essere necessario impostare **Nessuna autenticazione** per connettersi al debugger remoto. **I protocolli Universal (Unencrypted Protocol)** e **No Authentication** non hanno sicurezza di rete, quindi i dati passati tra i computer di sviluppo e remoti sono vulnerabili. Scegliere questi tipi di autenticazione solo per le reti attendibili che non sono a rischio di traffico dannoso o ostile.
 >
->Se si sceglie **Windows autenticazione** per **Tipo** di autenticazione , sarà necessario accedere al computer remoto durante il debug. Il debugger remoto deve essere in esecuzione anche in modalità Windows **autenticazione,** con lo stesso account utente del computer Visual Studio remoto.
+>Se si sceglie **Windows autenticazione** per **Tipo** di autenticazione , sarà necessario accedere al computer remoto durante il debug. Il debugger remoto deve essere in esecuzione anche **Windows di** autenticazione, con lo stesso account utente del computer Visual Studio remoto.
 
 ### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Configurare un progetto C# o Visual Basic per il debug remoto
 
-1. Selezionare il progetto C# o Visual Basic in Visual Studio **Esplora soluzioni** e selezionare  l'icona Proprietà, premere **ALT** INVIO oppure fare clic con il pulsante destro del mouse e scegliere +  **Proprietà**.
+1. Selezionare il progetto C# o Visual Basic in Visual Studio **Esplora soluzioni** e  selezionare l'icona Proprietà, premere **ALT INVIO** oppure fare clic con il pulsante destro del mouse e scegliere +  **Proprietà**.
 
 1. Selezionare la scheda **Debug**.
 
@@ -60,7 +60,7 @@ Per eseguire il debug di un'app UWP in un dispositivo remoto da Visual Studio:
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurare un progetto C++ per il debug remoto
 
-1. Selezionare il progetto C++ in Visual Studio **Esplora soluzioni** e  selezionare l'icona Proprietà, premere **ALT** INVIO oppure fare clic con il pulsante destro del mouse + e scegliere **Proprietà**.
+1. Selezionare il progetto C++ in Visual Studio **Esplora soluzioni** e  selezionare l'icona Proprietà, premere **ALT** INVIO oppure fare clic con il pulsante destro del mouse e + scegliere **Proprietà**.
 
 1. Selezionare la **scheda** Debug.
 
@@ -84,7 +84,7 @@ Nella finestra **di dialogo** Connessioni remote è possibile cercare un nome di
 Per Visual Studio eseguire il debug delle app in un computer remoto, il computer remoto deve eseguire il Remote Tools per Visual Studio.
 
 - Windows I dispositivi Mobili 10 non richiedono o supportano gli strumenti remoti.
-- Windows 10 I PC che eseguono Creator's Update (versione 1703) e versioni successive, i dispositivi Windows 10 Xbox, IoT e HoloLens installano automaticamente gli strumenti remoti quando si distribuisce l'app.
+- Windows 10 I PC che eseguono Creator's Update (versione 1703) e versioni successive Windows 10 dispositivi Xbox, IoT e HoloLens installano automaticamente gli strumenti remoti quando si distribuisce l'app.
 - Nei PC di aggiornamento Windows 10 pre-Creator è necessario scaricare, installare ed eseguire manualmente gli strumenti remoti nel computer remoto prima di avviare il debug.
 
 **Per scaricare e installare gli strumenti remoti:**
@@ -99,7 +99,7 @@ Per Visual Studio eseguire il debug delle app in un computer remoto, il computer
 
 Il debug remoto funziona come il debug locale.
 
-1. Nelle versioni di aggiornamento di pre-creator di Windows 10 assicurarsi che il Remote Debugging Monitor (*msvsmon.exe*) sia in esecuzione nel dispositivo remoto.
+1. Nelle versioni di pre-Creator's Update Windows 10 assicurarsi che il Remote Debugging Monitor (*msvsmon.exe*) sia in esecuzione nel dispositivo remoto.
 
 1. Nel computer Visual Studio verificare che accanto alla freccia verde sulla barra degli strumenti sia visualizzata la destinazione di debug corretta **(** Computer remoto o Dispositivo ).
 

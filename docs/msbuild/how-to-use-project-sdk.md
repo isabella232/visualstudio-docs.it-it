@@ -13,15 +13,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: b26c8704be6770954849a440f15683be68ce82aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625679"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Procedura: Usare SDK di progetto MSBuild
 
-MSBuild 15.0 ha introdotto il concetto di "SDK del progetto", che semplifica l'uso di software development kit che richiedono l'importazione di proprietà e destinazioni.
+MSBuild 15.0 ha introdotto il concetto di "SDK di progetto", che semplifica l'uso di software development kit che richiedono l'importazione di proprietà e destinazioni.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -101,7 +101,7 @@ Esistono tre modi per fare riferimento a un SDK di progetto:
 
 ## <a name="how-project-sdks-are-resolved"></a>Come vengono risolti gli SDK di progetto
 
-Quando si valuta l'importazione, MSBuild risolve dinamicamente il percorso dell'SDK del progetto in base al nome e alla versione specificati.  MSBuild include anche un elenco di resolver SDK registrati, ovvero plug-in che individuano gli SDK di progetto nel computer. Questi plug-in includono:
+Quando si valuta l'importazione, MSBuild risolve dinamicamente il percorso dell'SDK del progetto in base al nome e alla versione specificati.  MSBuild include anche un elenco di resolver SDK registrati, che sono plug-in che individuano gli SDK di progetto nel computer. Questi plug-in includono:
 
 - Un resolver basato su NuGet che recupera i feed di pacchetto configurati per i pacchetti NuGet corrispondenti all'ID e alla versione dell'SDK specificati.
 
@@ -113,7 +113,7 @@ Quando si valuta l'importazione, MSBuild risolve dinamicamente il percorso dell'
    
 - Un resolver predefinito che risolve gli SDK che sono stati installati con MSBuild.
 
-Il sistema NuGet SDK basato su NuGet supporta la specifica di una versione nel [global.js](/dotnet/core/tools/global-json) su file, che consente di controllare la versione dell'SDK del progetto in un'unica posizione anziché in ogni singolo progetto:
+Il NuGet SDK basato su NuGet supporta la specifica di una versione nel file [global.json,](/dotnet/core/tools/global-json) che consente di controllare la versione dell'SDK del progetto in un'unica posizione anziché in ogni singolo progetto:
 
 ```json
 {
@@ -124,7 +124,7 @@ Il sistema NuGet SDK basato su NuGet supporta la specifica di una versione nel [
 }
 ```
 
-Durante una compilazione, è possibile usare una sola versione di ogni SDK di progetto. Se si fa riferimento a due versioni diverse dello stesso SDK del progetto, MSBuild genera un avviso. È consigliabile **non specificare** una versione nei progetti se viene specificata una versione nelglobal.js *file.*
+Durante una compilazione, è possibile usare una sola versione di ogni SDK di progetto. Se si fa riferimento a due versioni diverse dello stesso SDK del progetto, MSBuild genera un avviso. È consigliabile **non specificare** una versione nei progetti se viene specificata una versione nel file *global.json.*
 
 ## <a name="see-also"></a>Vedi anche
 

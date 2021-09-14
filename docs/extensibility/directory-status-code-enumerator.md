@@ -1,5 +1,5 @@
 ---
-title: Enumeratore directory Status Code | Microsoft Docs
+title: Enumeratore del codice di stato della directory | Microsoft Docs
 description: L'enumeratore SccDirStatus contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente e viene usato da SccDirQueryInfo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,14 +15,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81f7e81ded2b45b560350c065e13ef69455468d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711802"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumeratore del codice di stato della directory
-`SccDirStatus`L'enumeratore contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccDirQueryInfo.](../extensibility/sccdirqueryinfo-function.md) Questa funzionalità è stata introdotta nella versione 1.2 dell'API plug-in del controllo del codice sorgente.
+`SccDirStatus`L'enumeratore contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questa funzionalità è stata introdotta nella versione 1.2 dell'API plug-in del controllo del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,11 +36,11 @@ enum SccDirStatus {
 ```
 
 ## <a name="members"></a>Members
- SCC_DIRSTATUS_INVALID impossibile ottenere lo stato. non si basano su di esso.
+ SCC_DIRSTATUS_INVALID stato non è stato ottenuto. non si basano su di esso.
 
- SCC_DIRSTATUS_NOTCONTROLLED Directory non è sotto il controllo del codice sorgente.
+ SCC_DIRSTATUS_NOTCONTROLLED Directory non è sotto controllo del codice sorgente.
 
- SCC_DIRSTATUS_CONTROLLED Directory è sotto il controllo del codice sorgente.
+ SCC_DIRSTATUS_CONTROLLED Directory è sotto controllo del codice sorgente.
 
  SCC_DIRSTATUS_EMPTYPROJ Project corrispondente a questa directory è vuoto.
 

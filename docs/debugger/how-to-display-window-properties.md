@@ -1,6 +1,6 @@
 ---
 title: Visualizzare le proprietà della finestra | Microsoft Docs
-description: Windows Visualizza un albero di tutte le finestre attive nel sistema. Informazioni su come visualizzare le proprietà di una finestra visualizzata Windows visualizzazione.
+description: Windows Visualizza un albero di tutte le finestre attive nel sistema. Informazioni su come visualizzare le proprietà di una finestra visualizzata in Windows visualizzazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,14 +14,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f64b4f6183b6878eb934c0125fe85ada86b697c0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128507"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636708"
 ---
 # <a name="how-to-display-window-properties"></a>Procedura: visualizzare le proprietà della finestra
-Per altre informazioni su una finestra elencata in [Visualizzazione Windows](../debugger/windows-view.md), usare la finestra di dialogo [Proprietà finestra](../debugger/window-properties-dialog-box.md).
+Per altre informazioni su una finestra elencata in [Windows ,](../debugger/windows-view.md)usare la finestra di dialogo [Proprietà finestra](../debugger/window-properties-dialog-box.md).
 
 ### <a name="to-open-the-window-properties-dialog-box"></a>Per aprire la finestra di dialogo Proprietà finestra
 

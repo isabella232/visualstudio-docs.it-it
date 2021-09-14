@@ -8,11 +8,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jmartens
 ms.openlocfilehash: 85d007ae7aec5bb56b85e4b1861845f81687dd68
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635948"
 ---
 # <a name="team-explorer-reference"></a>Informazioni di riferimento su Team Explorer
 
@@ -104,9 +104,9 @@ Vedere:
 
 La pagina **Impostazioni** consente di configurare le funzionalità amministrative per un progetto o una raccolta di progetti. Vedere gli articoli seguenti:
 
-| Project | Raccolta di progetti | Altri |
+| Project | Raccolta di progetti | Altro |
 | - | - | - |
-| [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sicurezza, Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Aree elementi di lavoro](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterazioni elementi di lavoro](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Impostazioni del portale](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Avvisi di progetto](/azure/devops/notifications/howto-manage-team-notifications) | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestione modelli di processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Impostazioni globali GIT](/azure/devops/repos/git/git-config)<br/>[Impostazioni del repository GIT](/azure/devops/repos/git/git-config) |
+| [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sicurezza, Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Aree elementi di lavoro](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterazioni elementi di lavoro](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Portale Impostazioni](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Avvisi di progetto](/azure/devops/notifications/howto-manage-team-notifications) | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestione modelli di processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Impostazioni globali GIT](/azure/devops/repos/git/git-config)<br/>[Impostazioni del repository GIT](/azure/devops/repos/git/git-config) |
 
 ## <a name="see-also"></a>Vedi anche
 

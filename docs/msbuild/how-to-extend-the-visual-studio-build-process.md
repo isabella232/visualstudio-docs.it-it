@@ -17,17 +17,17 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: db2b813937c4966dd4acd37b6e053cbe533e993c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136937"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625703"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: Estendere il processo di compilazione di Visual Studio
 
 Il Visual Studio di compilazione è definito da una serie di MSBuild con estensione *targets* importati nel file di progetto. Uno di questi file importati, *Microsoft.Common.targets,* può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo articolo illustra due metodi che è possibile usare per estendere il Visual Studio di compilazione:
 
-- Override di destinazioni predefinite specifiche definite nelle destinazioni comuni (*Microsoft.Common.targets* o nei file importati).
+- Override di destinazioni predefinite specifiche definite nelle destinazioni comuni (*Microsoft.Common.targets* o file importati).
 
 - Override delle proprietà "DependsOn" definite nelle destinazioni comuni.
 
@@ -42,7 +42,7 @@ Le destinazioni comuni contengono un set di destinazioni vuote predefinite chiam
 
 1. Identificare una destinazione predefinita nelle destinazioni comuni di cui si vuole eseguire l'override. Nella tabella seguente è riportato l'elenco completo delle destinazioni di cui è possibile eseguire l'override in totale sicurezza.
 
-2. Definire le destinazioni alla fine del file di progetto, immediatamente prima del tag `</Project>`. Esempio:
+2. Definire le destinazioni alla fine del file di progetto, immediatamente prima del tag `</Project>`. Ad esempio:
 
     ```xml
     <Project>
@@ -72,7 +72,7 @@ La tabella seguente illustra tutte le destinazioni nelle destinazioni comuni di 
 
 ## <a name="example-aftertargets-and-beforetargets"></a>Esempio: AfterTargets e BeforeTargets
 
-Nell'esempio seguente viene illustrato come usare `AfterTargets` l'attributo per aggiungere una destinazione personalizzata che esegue un'azione con i file di output. In questo caso, copia i file di output in una nuova cartella *CustomOutput*.  L'esempio illustra anche come pulire i file creati dall'operazione di compilazione personalizzata con una destinazione usando un attributo e specificando che l'operazione di pulizia personalizzata viene eseguita `CustomClean` `BeforeTargets` prima della `CoreClean` destinazione.
+Nell'esempio seguente viene illustrato come usare l'attributo per aggiungere una destinazione `AfterTargets` personalizzata che esegue un'azione con i file di output. In questo caso, copia i file di output in una nuova cartella *CustomOutput*.  L'esempio illustra anche come pulire i file creati dall'operazione di compilazione personalizzata con una destinazione usando un attributo e specificando che l'operazione di pulizia personalizzata viene eseguita `CustomClean` `BeforeTargets` prima della `CoreClean` destinazione.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -131,7 +131,7 @@ Questa parte di codice XML indica che la destinazione `Build` può essere esegui
 </PropertyGroup>
 ```
 
-È possibile eseguire l'override di questo valore di proprietà dichiarando un'altra proprietà denominata `BuildDependsOn` alla fine del file di progetto. L'inclusione della proprietà `BuildDependsOn` precedente nella nuova proprietà consente di aggiungere nuove destinazioni all'inizio e alla fine dell'elenco di destinazioni. Esempio:
+È possibile eseguire l'override di questo valore di proprietà dichiarando un'altra proprietà denominata `BuildDependsOn` alla fine del file di progetto. L'inclusione della proprietà `BuildDependsOn` precedente nella nuova proprietà consente di aggiungere nuove destinazioni all'inizio e alla fine dell'elenco di destinazioni. Ad esempio:
 
 ```xml
 <PropertyGroup>
@@ -174,7 +174,7 @@ I progetti che importano i file di progetto possono eseguire l'override di quest
 
 L'esempio seguente è simile `BeforeTargets` all'esempio e , ma mostra come ottenere funzionalità `AfterTargets` simili. Estende la compilazione usando per aggiungere un'attività personalizzata che copia i file di output dopo la compilazione e aggiunge anche l'attività `BuildDependsOn` `CustomAfterBuild` corrispondente usando `CustomClean` `CleanDependsOn` .  
 
-In questo esempio si tratta di un progetto di tipo SDK. Come accennato nella nota sui progetti di tipo SDK in precedenza in questo articolo, è necessario usare il metodo di importazione manuale anziché l'attributo che Visual Studio usa quando genera i file `Sdk` di progetto.
+In questo esempio si tratta di un progetto di tipo SDK. Come accennato nella nota sui progetti di tipo SDK in precedenza in questo articolo, è necessario usare il metodo di importazione manuale anziché l'attributo che Visual Studio quando genera i file `Sdk` di progetto.
 
 ```xml
 <Project>
@@ -225,6 +225,6 @@ L'ordine degli elementi è importante. Gli `BuildDependsOn` elementi e devono es
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Visual Studio'integrazione](../msbuild/visual-studio-integration-msbuild.md)
+- [Visual Studio integrazione](../msbuild/visual-studio-integration-msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [File con estensione targets](../msbuild/msbuild-dot-targets-files.md)

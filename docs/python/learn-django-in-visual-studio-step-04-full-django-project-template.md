@@ -13,11 +13,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b95f4dec53abb1e4a02790b2434f6b8577115ec2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038526"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625391"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Passaggio 4: Usare il modello di progetto Web Django completo
 
@@ -38,13 +38,13 @@ Il modello offre anche l'autenticazione di base, come descritto nel passaggio 5.
 
 1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningDjango** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **File**  >  **Nuovo**  >  **Project** invece.
 
-1. Nella finestra di dialogo nuovo progetto cercare e selezionare il modello **Django Web Project,** chiamare il progetto "DjangoWeb" e selezionare **OK.**
+1. Nella finestra di dialogo del nuovo progetto cercare e selezionare il modello **Django Web Project,** chiamare il progetto "DjangoWeb" e selezionare **OK.**
 
 1. Poiché il modello include di nuovo un file *requirements.txt*, Visual Studio chiede dove installare queste dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite.
 
-1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, seguire le istruzioni nel file *readme.html* visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il Visual Studio destro del mouse sul progetto e selezionare il comando **Python**  >  **Django Create Superuser (Crea superuser Python Django),** quindi seguire le istruzioni. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
+1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, seguire le istruzioni nel file *readme.html* visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il Visual Studio progetto e selezionare il comando **Python**  >  **Django Create Superuser (Crea superutente Python Django),** quindi seguire le istruzioni visualizzate. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
 
-1. Impostare il **progetto DjangoWeb** come predefinito per la soluzione Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliendo Imposta come avvio **Project**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
+1. Impostare il **progetto DjangoWeb** come predefinito per la soluzione Visual Studio facendo clic con il pulsante destro del mouse sul progetto **in** Esplora soluzioni e selezionando Imposta come avvio **Project**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
     ![Progetto DjangoWeb mostrato in Esplora soluzioni come progetto di avvio](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -74,7 +74,7 @@ Al livello più ampio il modello "Progetto Web Django" crea la struttura seguent
   - *requirements.txt*, che contiene una dipendenza da Django 1.x.
   - *readme.html*, un file visualizzato in Visual Studio dopo la creazione del progetto. Come indicato nella sezione precedente, seguire le istruzioni riportate qui per creare un account utente con privilegi avanzati (amministratore) per l'app.
 - La cartella *app* contiene tutti i file dell'app, tra cui le visualizzazioni, i modelli, i test, i moduli, e i file statici (vedere il passaggio 4-2). È in genere opportuno rinominare questa cartella per usare un nome di app più distintivo.
-- La *cartella DjangoWeb* (progetto Django) contiene i file di progetto Django tipici: *\_ \_ init \_ \_ .py*, *settings.py*, *urls.py* e *wsgi.py*. Tramite il modello di progetto, *settings.py* è già configurato per l'app e il file di database, mentre *urls.py* è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
+- La *cartella DjangoWeb* (progetto Django) contiene i file di progetto Django tipici: *\_ \_ init \_ \_ .py,* *settings.py,* *urls.py* e *wsgi.py*. Tramite il modello di progetto, *settings.py* è già configurato per l'app e il file di database, mentre *urls.py* è già configurato con route a tutte le pagine dell'app, incluso il modulo di accesso.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Domanda: È possibile condividere un ambiente virtuale tra progetti di Visual Studio?
 

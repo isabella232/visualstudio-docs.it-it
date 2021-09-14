@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ac3b809bd77624cceccd476d6d025ed72454de6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036207"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710408"
 ---
 # <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
-Recupera la posizione in bit della posizione. Utilizzato quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsBitField` .
+Recupera la posizione in bit della posizione. Usato quando [l'enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsBitField` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,10 +38,10 @@ HRESULT get_bitPosition (
 [out] Restituisce la posizione in bit della posizione.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o codice `S_FALSE` di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 

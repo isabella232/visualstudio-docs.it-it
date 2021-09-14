@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: baaa03b01e7f211bfc6822e7fcf017d1a49ad324
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122158099"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711695"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informazioni di riferimento sullo schema dell'estensione VSIX 2.0
 Un file manifesto della distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato di file è regolato da uno schema. La versione 2.0 di questo schema supporta l'aggiunta di tipi e attributi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore del manifesto ignora gli elementi e gli attributi XML che non è in conoscenza.
@@ -64,13 +64,13 @@ Un file manifesto della distribuzione VSIX descrive il contenuto di un pacchetto
 
 - `<License>` - Questo elemento facoltativo è un percorso relativo di un file di licenza (.txt, RTF) contenuto nel pacchetto.
 
-- `<ReleaseNotes>` - Questo elemento facoltativo è un percorso relativo di un file delle note sulla versione contenuto nel pacchetto (.txt, RTF) o un URL di un sito Web che visualizza le note sulla versione.
+- `<ReleaseNotes>` - Questo elemento facoltativo è un percorso relativo di un file delle note sulla versione contenuto nel pacchetto (.txt, RTF) oppure un URL di un sito Web che visualizza le note sulla versione.
 
 - `<Icon>` - Questo elemento facoltativo è un percorso relativo di un file di immagine (png, bmp, jpeg, ico) contenuto nel pacchetto. L'immagine dell'icona deve essere di 32x32 pixel (o verrà ridotta a tale dimensione) e verrà visualizzata nell'interfaccia utente della visualizzazione elenco. Se non viene `Icon` specificato alcun elemento, l'interfaccia utente usa un valore predefinito.
 
 - `<PreviewImage>` - Questo elemento facoltativo è un percorso relativo di un file di immagine (png, bmp, jpeg) contenuto nel pacchetto. L'immagine di anteprima deve essere di 200x200 pixel e visualizzata nell'interfaccia utente dei dettagli. Se non viene `PreviewImage` specificato alcun elemento, l'interfaccia utente usa un valore predefinito.
 
-- `<Tags>` - Questo elemento facoltativo elenca i tag di testo aggiuntivi delimitati da punto e virgola usati per i suggerimenti per la ricerca. `Tags`L'elemento è limitato a 100 caratteri.
+- `<Tags>` - Questo elemento facoltativo elenca i tag di testo aggiuntivi delimitati da punto e virgola usati per i suggerimenti di ricerca. `Tags`L'elemento è limitato a 100 caratteri.
 
 - `<GettingStartedGuide>` - Questo elemento facoltativo è un percorso relativo di un file HTML o un URL di un sito Web che contiene informazioni su come usare l'estensione o il contenuto all'interno di questo pacchetto. Questa guida viene avviata come parte di un'installazione.
 
@@ -89,7 +89,7 @@ Un file manifesto della distribuzione VSIX descrive il contenuto di un pacchetto
 
 - `AllUsers` - Questo attributo facoltativo specifica se il pacchetto verrà installato per tutti gli utenti. Per impostazione predefinita, questo attributo è false, che specifica che il pacchetto è per utente. Quando si imposta questo valore su true, l'utente che esegue l'installazione deve elevare al livello di privilegi amministrativi per installare il file VSIX risultante.
 
-- `InstalledByMsi` : questo attributo facoltativo specifica se il pacchetto viene installato da un'applicazione msi. I pacchetti installati da un file MSI vengono installati e gestiti da MSI (Programmi e funzionalità) e non da Visual Studio Extension Manager.  Per impostazione predefinita, questo attributo è false, che specifica che il pacchetto non è installato da un file MSI.
+- `InstalledByMsi` : questo attributo facoltativo specifica se il pacchetto viene installato da un'applicazione msi. I pacchetti installati da un file MSI vengono installati e gestiti da MSI (Programmi e funzionalità) e non Visual Studio Gestione estensioni.  Per impostazione predefinita, questo attributo è false, che specifica che il pacchetto non è installato da un file MSI.
 
 - `SystemComponent` - Questo attributo facoltativo specifica se questo pacchetto deve essere considerato un componente di sistema. I componenti di sistema non vengono visualizzati nell'interfaccia utente di Gestione estensioni e non possono essere aggiornati. Per impostazione predefinita, questo attributo è false, che specifica che il pacchetto non è un componente di sistema.
 
@@ -130,16 +130,16 @@ Un file manifesto della distribuzione VSIX descrive il contenuto di un pacchetto
     - Versione singola # : solo la versione specificata.
 
     > [!IMPORTANT]
-    > La versione 2.0 dello schema VSIX è stata introdotta Visual Studio 2012. Per usare questo schema è necessario Visual Studio 2012 o versione successiva nel computer e usare il VSIXInstaller.exe che fa parte di tale prodotto. È possibile usare come destinazione le versioni precedenti di Visual Studio con un Visual Studio 2012 o versione successiva di VSIXInstaller, ma solo usando le versioni successive del programma di installazione.
+    > La versione 2.0 dello schema VSIX è stata introdotta Visual Studio 2012. Per usare questo schema è necessario Visual Studio 2012 o versione successiva nel computer e usare il VSIXInstaller.exe che fa parte del prodotto. È possibile specificare come destinazione versioni precedenti di Visual Studio con un Visual Studio 2012 o versioni successive di VSIXInstaller, ma solo usando le versioni successive del programma di installazione.
 
-    Visual Studio numeri di versione 2017 sono disponibili in Visual Studio numeri di [build e date di rilascio.](../install/visual-studio-build-numbers-and-release-dates.md)
+    Visual Studio numeri di versione 2017 sono disponibili in numeri Visual Studio [build e date di rilascio.](../install/visual-studio-build-numbers-and-release-dates.md)
 
-    Quando si esprime la versione per Visual Studio 2017, la versione secondaria deve sempre **essere 0.** Ad esempio, Visual Studio 2017 versione 15.3.26730.0 deve essere espresso come [15.0.26730.0,16.0). Questa operazione è necessaria solo per i Visual Studio 2017 e versioni successive.
+    Quando si esprime la versione per Visual Studio 2017, la versione secondaria deve essere sempre **0.** Ad esempio, Visual Studio 2017 versione 15.3.26730.0 deve essere espresso come [15.0.26730.0,16.0). Questa operazione è necessaria solo per i Visual Studio 2017 e versioni successive.
 
-  - `AnyAttribute*` - L'elemento consente un set aperto di attributi esposti in fase di esecuzione `<InstallationTarget>` come dizionario di coppia nome-valore.
+  - `AnyAttribute*` - L'elemento consente un set aperto di attributi esposti in fase di esecuzione `<InstallationTarget>` come dizionario di coppie nome-valore.
 
-### <a name="dependencies-element"></a>Elemento Dependencies
- Questo elemento contiene un elenco di dipendenze dichiarate da questo pacchetto. Se vengono specificate dipendenze, tali pacchetti (identificati dalla relativa `Id` ) devono essere stati installati in precedenza.
+### <a name="dependencies-element"></a>Dependencies - elemento
+ Questo elemento contiene un elenco di dipendenze dichiarate da questo pacchetto. Se vengono specificate dipendenze, tali pacchetti (identificati da `Id` ) devono essere stati installati in precedenza.
 
 - `<Dependency>` element : questo elemento figlio ha gli attributi seguenti:
 
@@ -157,18 +157,18 @@ Un file manifesto della distribuzione VSIX descrive il contenuto di un pacchetto
 
     - Versione singola # : solo la versione specificata.
 
-  - `DisplayName` - Questo attributo è il nome visualizzato del pacchetto dipendente, usato negli elementi dell'interfaccia utente, ad esempio finestre di dialogo e messaggi di errore. L'attributo è facoltativo, a meno che il pacchetto dipendente non sia installato dal servizio di installazione del servizio app.
+  - `DisplayName` - Questo attributo è il nome visualizzato del pacchetto dipendente, usato negli elementi dell'interfaccia utente, ad esempio finestre di dialogo e messaggi di errore. L'attributo è facoltativo, a meno che il pacchetto dipendente non sia installato dall'msi.
 
-  - `Location` - Questo attributo facoltativo specifica il percorso relativo all'interno di questo vsix a un pacchetto VSIX annidato o un URL al percorso di download per la dipendenza. Questo attributo viene usato per consentire all'utente di individuare il pacchetto dei prerequisiti.
+  - `Location` - Questo attributo facoltativo specifica il percorso relativo all'interno di questo pacchetto VSIX a un pacchetto VSIX annidato o un URL del percorso di download per la dipendenza. Questo attributo viene usato per consentire all'utente di individuare il pacchetto dei prerequisiti.
 
-  - `AnyAttribute*` - L'elemento accetta un set aperto di attributi che verranno esposti in fase di esecuzione come dizionario `Dependency` di coppia nome-valore.
+  - `AnyAttribute*` - L'elemento accetta un set aperto di attributi che verranno esposti in fase di esecuzione `Dependency` come dizionario di coppie nome-valore.
 
 ### <a name="assets-element"></a>Elemento Assets
- Questo elemento contiene un elenco di tag per ogni estensione o elemento di contenuto `<Asset>` visualizzato da questo pacchetto.
+ Questo elemento contiene un elenco di `<Asset>` tag per ogni estensione o elemento di contenuto visualizzato da questo pacchetto.
 
 - `<Asset>` - Questo elemento contiene gli attributi e gli elementi seguenti:
 
-  - `Type` - Tipo di estensione o contenuto rappresentato da questo elemento. Ogni `<Asset>` elemento deve avere un singolo , ma più elementi possono avere lo stesso `Type` `<Asset>` `Type` . Questo attributo deve essere rappresentato come nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:
+  - `Type` : tipo di estensione o contenuto rappresentato da questo elemento. Ogni `<Asset>` elemento deve avere un singolo , ma più elementi possono avere lo stesso `Type` `<Asset>` `Type` . Questo attributo deve essere rappresentato come nome completo, in base alle convenzioni dello spazio dei nomi. I tipi noti sono:
 
     1. Microsoft.VisualStudio.VsPackage
 
@@ -184,13 +184,13 @@ Un file manifesto della distribuzione VSIX descrive il contenuto di un pacchetto
 
     7. Microsoft.VisualStudio.Assembly
 
-       È possibile creare tipi personalizzati e assegnare loro nomi univoci. In fase di esecuzione all'interno Visual Studio, il codice può enumerare e accedere a questi tipi personalizzati tramite l'API di Gestione estensioni.
+       È possibile creare tipi personalizzati e assegnare loro nomi univoci. In fase di esecuzione all'Visual Studio, il codice può enumerare e accedere a questi tipi personalizzati tramite l'API di Gestione estensioni.
 
   - `Path` : percorso relativo del file o della cartella all'interno del pacchetto che contiene l'asset.
 
   - `TargetVersion` : intervallo di versioni a cui si applica l'asset specificato. Usato per la spedizione di più versioni di asset a versioni diverse di Visual Studio. Richiede Visual Studio 2017.3 o versione più recente per avere effetto.
 
-  - `AnyAttribute*` : set aperto di attributi esposti in fase di esecuzione come dizionario di coppia nome-valore.
+  - `AnyAttribute*` : set aperto di attributi esposti in fase di esecuzione come dizionario di coppie nome-valore.
 
     `<AnyElement>*` - Qualsiasi contenuto strutturato è consentito tra un `<Asset>` tag di inizio e un tag di fine. Tutti gli elementi vengono esposti come elenco di oggetti XmlElement. Le estensioni VSIX possono definire metadati specifici del tipo strutturato nel file manifesto ed enumerarli in fase di esecuzione.
 

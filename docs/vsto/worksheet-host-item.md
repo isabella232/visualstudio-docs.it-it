@@ -24,11 +24,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 9f9f27f9946e7a9e1c66d497c17332c1e194df70
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710021"
 ---
 # <a name="worksheet-host-item"></a>Elemento host Foglio di lavoro
   L'elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> è un tipo che estende il tipo <xref:Microsoft.Office.Interop.Excel.Worksheet> dall'assembly di interoperabilità primario per Excel. L'elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> offre tutte le stesse proprietà, gli stessi metodi ed eventi di un oggetto <xref:Microsoft.Office.Interop.Excel.Worksheet> , ma espone anche eventi aggiuntivi e funge da contenitore per i controlli host e quelli Windows Form.
@@ -59,7 +59,7 @@ ms.locfileid: "122114823"
 
 ## <a name="see-also"></a>Vedi anche
 - [Office e procedure dettagliate per lo sviluppo di applicazioni](../vsto/office-development-samples-and-walkthroughs.md)
-- [Estendere documenti di Word Excel cartelle di lavoro di VSTO componenti aggiuntivi in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estendere documenti di Word Excel cartelle di lavoro VSTO componenti aggiuntivi in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controlli su Office documenti](../vsto/controls-on-office-documents.md)
 - [Aggiungere controlli ai Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Panoramica degli elementi host e dei controlli host](../vsto/host-items-and-host-controls-overview.md)

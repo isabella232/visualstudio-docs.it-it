@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: f997a177164c66ac116db407db6e3edfcc571b0a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710301"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 Rappresenta un singolo motore di debug che controlla il debug di uno o più moduli.
@@ -31,7 +31,7 @@ IDebugEngine3 : IDebugEngine2
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata da un ded personalizzato (se supporta i simboli) per abilitare lo stato JustMyCode. Questa interfaccia deve essere implementata da DE se supporta i simboli e JustMyCode.
+ Questa interfaccia viene implementata da un DE personalizzato (se supporta i simboli) per abilitare lo stato JustMyCode. Questa interfaccia deve essere implementata da DE se supporta i simboli e JustMyCode.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
  Questa interfaccia viene chiamata da Gestione debug sessione (SDM) per passare le opzioni utente per i percorsi da cui caricare i simboli. Viene chiamato anche per impostare il GUID del motore quando viene creata un'istanza di tale GUID (questo GUID è basato sulle metriche dal momento della registrazione del motore). SDM chiama anche questa interfaccia per impostare lo stato JustMyCode e per impostare tutte le eccezioni note dal debugger su uno stato specificato.

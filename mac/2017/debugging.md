@@ -8,11 +8,11 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
 ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710513"
 ---
 # <a name="debugging-with-xamarin"></a>Debug con Xamarin
 
@@ -38,7 +38,7 @@ Per impostare un punto di interruzione nell'IDE, fare clic sull'area del margine
 
 ![Impostazione di un punto di interruzione nel margine](media/debugging-image0.png)
 
-È possibile visualizzare tutti i punti di interruzione impostati nel codice selezionando il blocco Punti  **di interruzione**:
+È possibile visualizzare tutti i punti di interruzione impostati nel codice nel blocco  **Punti di interruzione**:
 
 ![Elenco dei punti di interruzione](media/debugging-image0a.png)
 
@@ -81,9 +81,9 @@ Quando viene raggiunto un punto di interruzione, lo strumento di debug permette 
 Ecco i quattro pulsanti:
 
 * **Esegui**: avvia l'esecuzione del codice, fino al punto di interruzione successivo.
-* **Esegui istruzione/indietro:** verrà eseguita la riga di codice successiva. Se la riga successiva è una chiamata di funzione, eseguirà la funzione e si arresterà alla riga di codice successiva *dopo* la funzione.
+* **Esegui istruzione/esecuzione:** verrà eseguita la riga di codice successiva. Se la riga successiva è una chiamata di funzione, eseguirà la funzione e si arresterà alla riga di codice successiva *dopo* la funzione.
 * **Esegui istruzione:** verrà eseguita anche la riga di codice successiva. Se la riga successiva è una chiamata di funzione, il pulsante si ferma alla prima riga della funzione, permettendo di continuare a eseguire il debug della funzione riga per riga. Se la riga successiva non è una funzione, il pulsante si comporta come il pulsante Esegui istruzione/routine.
-* **Uscire da** istruzione/uscita: verrà restituita la riga in cui è stata chiamata la funzione corrente.
+* **Istruzione/uscita:** verrà restituita la riga in cui è stata chiamata la funzione corrente.
 
 ## <a name="debugging-monos-class-libraries"></a>Debug di librerie di classi di Mono
 

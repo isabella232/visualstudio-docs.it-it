@@ -23,11 +23,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: c760e22842a3063036d0e4f8c2945ddefc312900
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136664"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625554"
 ---
 # <a name="setenv-task"></a>Attività SetEnv
 

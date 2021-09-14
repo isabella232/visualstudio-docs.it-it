@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3690bdcfd80593599d792c2091583e95fdc513b6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144002"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710247"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 
@@ -42,7 +42,7 @@ La finestra **Elenco errori** consente di eseguire le attività seguenti:
 
 - Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
 
-Per visualizzare **l'Elenco errori**, scegliere **Visualizza**  >  **elenco errori** oppure premere **CTRL** + **\\** + **E**.
+Per visualizzare **l'Elenco errori**, scegliere **Visualizza**  >  **elenco** errori o premere **CTRL** + **\\** + **E**.
 
 È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.
 

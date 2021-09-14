@@ -1,6 +1,6 @@
 ---
 title: Panoramiche (strumenti di prestazioni) | Microsoft Docs
-description: Informazioni sui concetti e sulla terminologia per Visual Studio Strumenti di profilatura. Usare le informazioni per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.
+description: Concetti e terminologia per Visual Studio Strumenti di profilatura. Usare le informazioni per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e015195077c925bfb214ca9dd5f3f0ea9509c36
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710182"
 ---
 # <a name="overviews-performance-tools"></a>Panoramiche (strumenti per le prestazioni)
 Questa sezione fornisce una panoramica dei concetti e della terminologia per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilizzabili per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.

@@ -1,6 +1,6 @@
 ---
 title: Aggiungere comandi e movimenti ai diagrammi delle dipendenze
-description: Informazioni su come definire i comandi del menu di scelta rapida e i gestori movimenti nei diagrammi delle dipendenze in Visual Studio.
+description: Informazioni su come definire i comandi di menu di scelta rapida e i gestori movimenti nei diagrammi delle dipendenze in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,11 +14,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 0441e3711b3f8ff7ef8f6aa57cb9632e5cb96346
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710204"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 
@@ -43,7 +43,7 @@ Il modo più rapido per creare un'estensione è usare il modello di progetto. In
 
 2. Per testare l'estensione, **premere** + **CTRL F5** o **F5.**
 
-    Viene avviata un'istanza sperimentale Visual Studio. In questo caso, creare un diagramma delle dipendenze. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.
+    Viene avviata un'istanza Visual Studio sperimentale. In questo caso, creare un diagramma delle dipendenze. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.
 
 3. Chiudere l'istanza sperimentale e modificare il codice di esempio.
 
@@ -249,7 +249,7 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
 
      **OnDragDrop** : viene chiamato quando l'utente rilascia un elemento nel diagramma.
 
-- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Esempio:
+- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

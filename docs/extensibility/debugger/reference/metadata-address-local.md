@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 71b8b4ef578646a63ec64fbbde506dd71984fe35
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042816"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711879"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -54,17 +54,17 @@ ID del metodo o della funzione di cui fa parte la variabile locale.
 [C++] `_mdToken` è un `typedef` oggetto per un oggetto a 32 `int` bit.
 
 `pLocal`\
-Token di cui rappresenta l'indirizzo rappresentato da questa struttura.
+Token di cui rappresenta l'indirizzo rappresentato da questa struttura .
 
 `dwIndex`\
-Può essere l'indice di questa variabile locale nel metodo o nella funzione o un altro valore (specifico del linguaggio).
+Può essere l'indice di questa variabile locale nel metodo o nella funzione o un altro valore (specifico della lingua).
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_LOCAL` dati). [](../../../extensibility/debugger/reference/address-kind.md)
+Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_LOCAL` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) dati).
 
 > [!WARNING]
-> [Solo C++] Se non è Null, è necessario chiamare sul puntatore del token ( è un campo `pLocal` nella `Release` `addr` [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura):
+> [Solo C++] Se non è Null, è necessario chiamare `pLocal` sul `Release` puntatore del token ( è un `addr` campo nella [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura ):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)

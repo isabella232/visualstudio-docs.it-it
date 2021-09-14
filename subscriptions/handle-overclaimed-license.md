@@ -1,5 +1,5 @@
 ---
-title: Gestire le licenze sovraallocato in Visual Studio sottoscrizioni | Microsoft Docs
+title: Gestire le licenze sovra allocate in Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -8,11 +8,11 @@ ms.date: 05/18/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono risolvere le sottoscrizioni sovra allocate
 ms.openlocfilehash: 533ce71e8795e89bcb21fd437da6bea91db291f4
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710437"
 ---
 # <a name="over-allocated-subscriptions"></a>Sottoscrizioni sovraallocato
 Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questa operazione è detta "sovraallocazione".  
@@ -48,4 +48,4 @@ Se l'organizzazione dispone di un contratto Enterprise Agreement (EA), gli ammin
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Altre informazioni sulla gestione delle [Visual Studio con GitHub Enterprise](assign-github.md).
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vsadminhelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [Supporto sottoscrizioni](https://aka.ms/vsadminhelp).

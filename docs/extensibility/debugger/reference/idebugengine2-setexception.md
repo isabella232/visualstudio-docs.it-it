@@ -1,5 +1,5 @@
 ---
-description: Specifica in che modo il motore di debug deve gestire una determinata eccezione.
+description: Specifica il modo in cui il motore di debug deve gestire una determinata eccezione.
 title: IDebugEngine2::SetException | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf8dea7fb30d51140b6445642865d71af08d78de
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636315"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Specifica in che modo il motore di debug deve gestire una determinata eccezione.
+Specifica il modo in cui il motore di debug deve gestire una determinata eccezione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ int SetException(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- A un de può essere richiesto di arrestare il programma che genera un'eccezione alla prima probabilità, alla seconda possibilità o a non generare alcuna eccezione.
+ È possibile indicare a DE di arrestare il programma generando un'eccezione alla prima probabilità, alla seconda probabilità o non generando affatto un'eccezione.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -1,5 +1,5 @@
 ---
-title: Finestre di dialogo & Aggiungi argomenti
+title: Finestra di dialogo & aggiungi argomenti
 description: Informazioni su come gli elementi dell'interfaccia utente della finestra di dialogo Aggiungi parametri vengono usati dalla finestra di progettazione InvokeMethod in Progettazione flussi di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,15 +14,15 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 0e15403680d5b18075d450a7e54218c2c7bc0f94
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963307"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710573"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Aggiungere parametri e argomenti alle finestre di dialogo
 
-La tabella seguente descrive gli elementi dell'interfaccia utente della **finestra** di dialogo Aggiungi parametri usata dalla finestra di <xref:System.Activities.Statements.InvokeMethod> progettazione:
+Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della **finestra** di dialogo Aggiungi parametri utilizzata dalla finestra di <xref:System.Activities.Statements.InvokeMethod> progettazione:
 
 |Nome|Valore|
 |-|-|
@@ -30,7 +30,7 @@ La tabella seguente descrive gli elementi dell'interfaccia utente della **finest
 |**Tipo**|Nome tipo del nuovo parametro.|
 |**Valore**|Espressione Visual Basic usata per assegnare un valore predefinito al nuovo parametro|
 
-La tabella seguente descrive gli elementi dell'interfaccia utente della **finestra** di dialogo Aggiungi argomenti usata dalla finestra di <xref:System.Activities.Statements.InvokeDelegate> progettazione:
+Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della **finestra** di dialogo Aggiungi argomenti utilizzata dalla finestra di <xref:System.Activities.Statements.InvokeDelegate> progettazione:
 
 |Nome|Valore|
 |-|-|

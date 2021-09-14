@@ -18,11 +18,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b0b60cc9a86f0eafce8378865b6161ef1c56a407
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636635"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Avviso di sicurezza: La connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo
 
@@ -34,7 +34,7 @@ Per eliminare questo avviso durante il debug di uno scenario legittimo:
 
 1. Chiudere Visual Studio.
 
-1. Impostare il valore della chiave `DisableAttachSecurityWarning` del Registro di sistema su 1.
+1. Impostare il valore della chiave del `DisableAttachSecurityWarning` Registro di sistema su 1.
 
    Trovare o creare la chiave in `HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\<version>\Debugger` e impostarla su 1.
 
@@ -52,7 +52,7 @@ Tra gli utenti attendibili sono inclusi quello che esegue il debug e un set di u
 
  Utente corrente
 
- Allega Premere per continuare a eseguire il debug collegando
+ Collega Premere per continuare a eseguire il debug collegando
 
  Non collegare Non connettersi al processo
 

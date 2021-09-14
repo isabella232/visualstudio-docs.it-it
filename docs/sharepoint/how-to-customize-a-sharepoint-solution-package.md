@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 909bb9952ce788418a5372955e1df56ec719ce633685728fc7951188dac6ba87
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ca3341b252f94a4415904744840f24cb05b56b56
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636899"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedura: Personalizzare un pacchetto SharePoint soluzione
   È possibile usare Progettazione pacchetti per creare e personalizzare un pacchetto (*.wsp*). Ad esempio, è possibile aggiungere SharePoint di progetto e funzionalità, specificare se il server Web viene reimpostato quando viene distribuita la soluzione e impostare il tipo di server di distribuzione.
@@ -47,13 +47,13 @@ ms.locfileid: "121352929"
 
 1. In **Esplora soluzioni** scegliere **Mostra tutti i file**.
 
-2. Espandere Pacchetto, espandere Package.package e quindi aprire il file *Package.Template.xml.*
+2. Espandere Pacchetto, espandere Package.package e quindi aprire il file *Package.Template.xml* file.
 
     > [!NOTE]
     > Quando si apre il file XML del manifesto per il modello di pacchetto, i file vengono convalidati automaticamente ed è possibile ignorare gli avvisi visualizzati nella finestra Elenco errori .
 
 ## <a name="change-the-manifest-template"></a>Modificare il modello di manifesto
- È possibile modificare il codice XML per il file manifesto in pacchetto nell'editor XML Visual Studio o nel riquadro Modello di manifesto. Tutte le modifiche apportate al codice XML vengono unite nel file manifesto del pacchetto.
+ È possibile modificare il codice XML per il file manifesto in pacchetto nell'editor XML Visual Studio o nel riquadro Modello manifesto . Tutte le modifiche apportate al codice XML vengono unite nel file manifesto del pacchetto.
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Per modificare il modello di manifesto tramite l'editor XML
 

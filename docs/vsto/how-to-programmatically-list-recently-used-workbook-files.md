@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Elencare a livello di codice i file delle cartelle di lavoro usati di recente'
-description: Informazioni su come elencare i file della cartella di lavoro usati di Microsoft Excel a livello di codice usando Visual Studio.
+description: Informazioni su come elencare i file delle cartelle di lavoro usati di Microsoft Excel a livello di codice usando Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: e9652a60149a068643a4a8d0b06728534a4ac521
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099776"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710065"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Procedura: Elencare a livello di codice i file delle cartelle di lavoro usati di recente
   La proprietà restituisce una raccolta che contiene i nomi di tutti i file visualizzati nell'elenco Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> di file usati di recente. La lunghezza dell'elenco varia a seconda del numero di file che l'utente ha selezionato per la conservazione. È possibile visualizzare i risultati in un intervallo.

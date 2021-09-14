@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 9c2e9595b3ff10c1769aa1546637fd6743b27358
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711335"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;Elemento customHostSpecified &gt; (Office sviluppo in Visual Studio)
   `customHostSpecified`L'elemento indica che questa soluzione non è un'applicazione autonoma. Office soluzioni contengono componenti ospitati all'interno Microsoft Office applicazioni.
@@ -37,7 +37,7 @@ ms.locfileid: "122148324"
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  `customHostSpecified`L'elemento è obbligatorio per Office soluzioni. Questo elemento si trova nello spazio dei nomi e specifica che questa distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non `co.v1` è un'applicazione autonoma.
 
- Questo elemento è un elemento figlio del primo `<entrypoint>` elemento nel manifesto dell'applicazione. Non possono essere presenti altri elementi figlio in tale elemento `<entrypoint>` o verrà generato un errore di convalida durante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] l'installazione.
+ Questo elemento è un elemento figlio del primo `<entrypoint>` elemento nel manifesto dell'applicazione. Non possono essere presenti altri elementi figlio in tale elemento o `<entrypoint>` verrà generato un errore di convalida durante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] l'installazione.
 
  Questo elemento non ha attributi e nessun elemento figlio.
 

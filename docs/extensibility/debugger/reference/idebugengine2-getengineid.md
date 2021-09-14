@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 079e3b0316bb06edb383dc74ed0e71f157d29a00
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064331"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711922"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 Ottiene il GUID del motore di debug.
@@ -43,13 +43,13 @@ int GetEngineID(
 
 ## <a name="parameters"></a>Parametri
 `pguidEngine`\
-[out] Restituisce il GUID del de.
+[out] Restituisce il GUID di DE.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-Alcuni esempi di GUID tipici sono `guidScriptEng` , `guidNativeEng` o `guidSQLEng` . I nuovi motori di debug creeranno il proprio GUID per l'identificazione.
+Alcuni esempi di GUID tipici sono `guidScriptEng` `guidNativeEng` , o `guidSQLEng` . I nuovi motori di debug creeranno il proprio GUID per l'identificazione.
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CEngine` semplice che implementa [l'interfaccia IDebugEngine2.](../../../extensibility/debugger/reference/idebugengine2.md)

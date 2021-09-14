@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 286bc3b1eba71f3c875e3cdf519a01464b19c6aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637324"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 I blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output. Esistono tre tipi di blocchi di controllo, distinguibili dalla parentesi di apertura:
@@ -120,7 +120,7 @@ Some text.
 > [!NOTE]
 > Un blocco di controllo della funzionalità di classe non deve essere seguito da blocchi di controllo standard nello stesso file modello. Questa restrizione, tuttavia, non si applica al risultato dell'uso di direttive `<#@include#>`. Ogni file incluso può contenere blocchi standard seguiti da blocchi della funzionalità di classe.
 
- È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Esempio:
+ È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Ad esempio:
 
 ```
 <#+

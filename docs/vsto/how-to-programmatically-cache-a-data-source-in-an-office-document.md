@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 2737cd7ff10ffff4623fa50a2382d8887293b6ab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148090"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710069"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Procedura: Memorizzare nella cache un'origine dati in un documento Office codice
   È possibile aggiungere a livello di codice un oggetto dati alla cache dei dati in un documento chiamando il metodo di un elemento host, ad esempio `StartCaching` <xref:Microsoft.Office.Tools.Word.Document> , o <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> . Rimuovere un oggetto dati dalla cache dei dati chiamando il `StopCaching` metodo di un elemento host.

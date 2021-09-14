@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab13c75cb0860ccf0c54d7a7fdc42d4c03e8006e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096356"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710309"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
-Questo metodo imposta l'oggetto (DE) del motore di `GUID` debug.
+Questo metodo imposta il motore di debug (DE) `GUID` .
 
 ## <a name="syntax"></a>Sintassi
 

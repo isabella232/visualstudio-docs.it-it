@@ -12,18 +12,18 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec08fbc30f6a03929e778361c08b03281d997d1b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711491"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
 Per aprire la finestra **Ambienti Python**:
 
-- Selezionare il **comando di** menu  >  **Visualizza Windows** ambienti  >  **Python.**
-- Fare clic con il pulsante **destro del mouse** sul nodo Ambienti Python per un progetto in **Esplora soluzioni** e selezionare Visualizza tutti gli **ambienti Python.**
+- Selezionare il **comando di** menu View  >  **Other Windows** Python Environments  >  **(Visualizza altri ambienti Python).**
+- Fare clic con il pulsante **destro del mouse** sul nodo Ambienti Python per un progetto in **Esplora soluzioni** selezionare Visualizza tutti gli **ambienti Python.**
 
 Se si espande la **finestra Ambienti Python** in modo sufficientemente ampio, queste opzioni vengono visualizzate come schede, che possono risultare più utili da usare. Per maggiore chiarezza, le schede in questo articolo sono visualizzate nella modalità espansa.
 
@@ -51,7 +51,7 @@ Include informazioni di base e comandi per l'ambiente:
 | **Visita il sito Web del server di distribuzione** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
 | **Apri finestra interattiva** | Apre la [finestra (REPL) interattiva](python-interactive-repl-in-visual-studio.md) per questo ambiente all'interno di Visual Studio, applicando qualunque [script di avvio (vedere sotto)](#startup-scripts). |
 | **Esplora gli script interattivi** | Vedere [Script di avvio](#startup-scripts). |
-| **Usa la modalità interattiva IPython** | Se impostata, apre la **finestra** Interattiva con IPython per impostazione predefinita. Vengono abilitati i tracciati inline e la sintassi IPython estesa, come `name?` per visualizzare la Guida e `!command` per i comandi della shell. Questa opzione è consigliata quando si usa una distribuzione Anaconda, perché richiede pacchetti aggiuntivi. Per altre informazioni, vedere [Usare IPython nella finestra interattiva](interactive-repl-ipython.md). |
+| **Usa la modalità interattiva IPython** | Se impostata, apre la **finestra** interattiva con IPython per impostazione predefinita. Vengono abilitati i tracciati inline e la sintassi IPython estesa, come `name?` per visualizzare la Guida e `!command` per i comandi della shell. Questa opzione è consigliata quando si usa una distribuzione Anaconda, perché richiede pacchetti aggiuntivi. Per altre informazioni, vedere [Usare IPython nella finestra interattiva](interactive-repl-ipython.md). |
 | **Apri in PowerShell** | Avvia l'interprete in una finestra di comando di PowerShell. |
 | (Collegamenti alla cartella e ai programmi) | Consente di accedere rapidamente alla cartella di installazione dell'ambiente, all'interprete *python.exe* e all'interprete *pythonw.exe* sistema. Il primo apre Esplora risorse, gli ultimi due aprono una finestra della console. |
 
@@ -59,7 +59,7 @@ Include informazioni di base e comandi per l'ambiente:
 
 Quando si usano le finestre interattive nel proprio flusso di lavoro quotidiano, è probabile sviluppare funzioni helper da usare regolarmente. Ad esempio, è possibile creare una funzione che apre un dataframe in Excel e quindi salvare il codice come script di avvio in modo che sia sempre disponibile nella **finestra** Interattiva.
 
-Gli script di avvio contengono codice caricato **ed** eseguito automaticamente dalla finestra interattiva, incluse importazioni, definizioni di funzioni e qualsiasi altro elemento. Tali script sono referenziati in due modi:
+Gli script di avvio contengono codice caricato **ed** eseguito automaticamente dalla finestra interattiva, incluse le importazioni, le definizioni di funzione e qualsiasi altro elemento. Tali script sono referenziati in due modi:
 
 1. Quando si installa un ambiente, Visual Studio crea una cartella *Documents\Visual Studio \<version> \Python Scripts \\ \<environment>* dove version è la versione di Visual Studio (ad esempio &lt; &gt; 2017 o 2019) e environment corrisponde al nome &lt; dell'ambiente. &gt; È possibile passare alla cartella specifica dell'ambiente con il comando **Esplora gli script interattivi**. Quando si avvia la finestra **Interattiva** per tale ambiente, vengono caricati ed eseguiti tutti i file con estensione *py* disponibili qui in ordine alfabetico.
 
@@ -128,7 +128,7 @@ L'installazione di un pacchetto crea sottocartelle all'interno della cartella *L
 
 ### <a name="grant-administrator-privileges-for-package-install"></a>Concedere i privilegi di amministratore per l'installazione dei pacchetti
 
-Durante l'installazione di pacchetti in un ambiente che si trova in un'area protetta del file system, ad esempio *c:\Programmi\Anaconda3\Lib*, Visual Studio deve eseguire `pip install` con privilegi elevati per consentire la creazione di sottocartelle di pacchetto. Quando è necessaria l'elevazione dei Visual Studio viene visualizzata la richiesta, potrebbero essere necessari privilegi di amministratore per installare, aggiornare o rimuovere pacchetti **per questo ambiente:**
+Durante l'installazione di pacchetti in un ambiente che si trova in un'area protetta del file system, ad esempio *c:\Programmi\Anaconda3\Lib*, Visual Studio deve eseguire `pip install` con privilegi elevati per consentire la creazione di sottocartelle di pacchetto. Quando è necessaria l'elevazione dei Visual Studio viene visualizzato il prompt , potrebbero essere necessari privilegi di amministratore per installare, aggiornare o rimuovere pacchetti **per questo ambiente:**
 
 ![Richiesta di elevazione dei privilegi per l'installazione del pacchetto](media/environments/environments-pip-elevate.png)
 

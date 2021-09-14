@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: cc11872aa238ee1b3b72a171193de6b7d0ee972b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711370"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificare i tempi di interazione utente per simulare i ritardi di interazione umana con i siti Web in scenari di test di carico
 

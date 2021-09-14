@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: a943688945ab7134742ff85ec63e7fad5a4f11c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710083"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procedura: Esporre codice a VBA in un progetto Visual Basic codice
   È possibile esporre il codice in un progetto Visual Basic, Applications Edition (VBA) se si vuole che i due tipi di codice [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] interagiscano tra loro.
@@ -66,7 +66,7 @@ ms.locfileid: "122122813"
      Dopo aver impostato questa proprietà, Visual Studio imposta automaticamente la **proprietà ReferenceAssemblyFromVbaProject** su **True.**
 
     > [!NOTE]
-    > Se la cartella di lavoro o il documento non contiene già codice VBA o se il codice VBA nel documento non è attendibile per l'esecuzione, verrà visualizzato un messaggio di errore quando si imposta la proprietà **EnableVbaCallers** su **True**. Ciò avviene perché in questa situazione, in Visual Studio non è possibile modificare il progetto VBA nel documento.
+    > Se la cartella di lavoro o il documento non contiene già codice VBA o se il codice VBA nel documento non è attendibile per l'esecuzione, verrà visualizzato un messaggio di errore quando si imposta la proprietà **EnableVbaCallers** su **True.** Ciò avviene perché in questa situazione, in Visual Studio non è possibile modificare il progetto VBA nel documento.
 
 5. Fare clic su **OK** nel messaggio visualizzato. Questo messaggio ricorda che se si aggiunge codice VBA alla cartella di lavoro o al documento mentre si esegue il progetto da , il codice VBA andrà perso alla successiva compilazione [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del progetto. Questo perché il documento nella cartella dell'output di compilazione viene sovrascritto ogni volta che si compila il progetto.
 
@@ -75,7 +75,7 @@ ms.locfileid: "122122813"
 6. Compilare il progetto.
 
 ## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> Esporre il codice che non si trova in una classe di elemento host
- Per consentire al codice VBA di Visual Basic codice non in una classe di elemento host, modificare il codice in modo che sia visibile a VBA.
+ Per consentire al codice VBA di Visual Basic codice che non si trova in una classe di elemento host, modificare il codice in modo che sia visibile a VBA.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Per esporre il codice che non si trova in una classe di elemento host a VBA
 
@@ -120,7 +120,7 @@ ms.locfileid: "122122813"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)
+- [Progettare e creare Office personalizzate](../vsto/designing-and-creating-office-solutions.md)
 - [Combinare le personalizzazioni VBA e a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Procedura dettagliata: Chiamare codice da VBA in un progetto Visual Basic codice](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)
 - [Procedura: Esporre codice a VBA in un progetto Visual C&#35; codice](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)

@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei SharePoint soluzioni | Microsoft Docs
-description: Visualizzare i problemi o gli avvisi che possono verificarsi quando si esegue il debug SharePoint soluzioni usando il debugger Visual Studio remoto.
+description: Vedere quali problemi o avvisi possono verificarsi quando si esegue il debug di SharePoint soluzioni usando il debugger Visual Studio remoto.
 ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
@@ -20,11 +20,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: f4c69d5464d23fdeacbb77fb5af7b178a70d2fa5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636812"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i SharePoint soluzioni
   Quando si esegue il debug di soluzioni SharePoint tramite il debugger, possono verificarsi i problemi o gli avvisi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] seguenti. Per altre informazioni, vedere [Debugging SharePoint 2007 Workflow Solutions](/previous-versions/bb386166(v=vs.100)).
@@ -87,7 +87,7 @@ ms.locfileid: "122156234"
 </Field>.
 ```
 
- Come illustrato nell'esempio seguente, è necessario definire un riferimento a un campo in un tipo di contenuto usando il formato di elemento vuoto ( ), non usando elementi di \<FieldRef /> inizio/fine ( \<FieldRef> \</FieldRef> ):
+ Come illustrato nell'esempio seguente, è necessario definire un riferimento di campo in un tipo di contenuto usando il formato di elemento vuoto ( ), non usando elementi di \<FieldRef /> inizio/fine ( \<FieldRef> \</FieldRef> ):
 
 ```xml
 <FieldRef ID="{5744d18c-305e-4632-8bd1-09d134f4830d}"
@@ -105,16 +105,16 @@ ms.locfileid: "122156234"
  Nessuno.
 
 ### <a name="resolution"></a>Risoluzione
- Questo problema si verifica a causa di un valore non corretto nella proprietà **Path** per il file di configurazione della definizione del sito webtemp, ad esempio *webtemp_SiteDefinitionProject1.xml*. Nella proprietà **Path** per il file webtemp, che si trova in **Percorso di** distribuzione, modificare 1033 con le impostazioni locali [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] appropriate. Ad esempio, per usare le impostazioni locali giapponesi, modificare il valore in 1041. Per altre informazioni, vedere [ID delle impostazioni locali assegnati da Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
+ Questo problema si verifica a causa di un valore non corretto nella proprietà **Path** per il file di configurazione della definizione del sito webtemp, ad esempio *webtemp_SiteDefinitionProject1.xml*. Nella proprietà **Path** per il file webtemp, che si trova in **Percorso distribuzione**, modificare 1033 con le impostazioni locali [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] appropriate. Ad esempio, per usare le impostazioni locali giapponesi, modificare il valore in 1041. Per altre informazioni, vedere [ID delle impostazioni locali assegnati da Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
 
-## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>L'errore viene visualizzato quando un progetto del flusso di lavoro viene distribuito in un sistema pulito
+## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Viene visualizzato un errore quando un progetto del flusso di lavoro viene distribuito in un sistema pulito
  Questo problema si verifica se si distribuisce un progetto flusso di lavoro in un computer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con un sistema pulito. Un sistema pulito è un computer in cui è presente una nuova installazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e di SharePoint, ma non sono presenti progetti flusso di lavoro distribuiti.
 
 ### <a name="error-message"></a>Messaggio di errore
- Impossibile trovare l'elenco SharePoint: Cronologia flusso di lavoro.
+ Impossibile trovare l'SharePoint seguente: Cronologia flusso di lavoro.
 
 ### <a name="resolution"></a>Risoluzione
- Questo errore si verifica a causa di un elenco cronologia del flusso di lavoro mancante. Poiché l'ambiente di sviluppo è un sistema pulito, non vengono distribuiti flussi di lavoro e l'elenco Cronologia flusso di lavoro non esiste ancora. Per risolvere questo problema, riaprire la procedura guidata del flusso di lavoro, che determina la creazione dell'elenco Cronologia flusso di lavoro.
+ Questo errore si verifica a causa di un elenco cronologia del flusso di lavoro mancante. Poiché l'ambiente di sviluppo è un sistema pulito, non viene distribuito alcun flusso di lavoro e l'elenco Cronologia flusso di lavoro non esiste ancora. Per risolvere questo problema, riaprire la procedura guidata del flusso di lavoro, che determina la creazione dell'elenco Cronologia flusso di lavoro.
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Per eseguire di nuovo la procedura guidata del flusso di lavoro
 
@@ -126,7 +126,7 @@ ms.locfileid: "122156234"
  Se si esegue il debug di una soluzione SharePoint che contiene una pagina dell'applicazione con un controllo che visualizza un'immagine, ad esempio un controllo Immagine, è necessario aggiornare la pagina nel browser per visualizzare le modifiche apportate [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] all'immagine.
 
 ## <a name="error-the-site-location-is-not-valid"></a>Errore: Il percorso del sito non è valido
- Questo problema può verificarsi se [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] non è installato. Può verificarsi anche se non si ha accesso come amministratore al sito Web SharePoint specificato nella **Personalizzazione** guidata SharePoint .
+ Questo problema può verificarsi se [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] non è installato. Può verificarsi anche se non si ha accesso come amministratore al sito Web SharePoint specificato nella Personalizzazione guidata SharePoint **.**
 
 ### <a name="error-message"></a>Messaggio di errore
 
@@ -215,15 +215,15 @@ ms.locfileid: "122156234"
  Questo problema si verifica se si rinomina un'istanza di elenco importata e quindi la si esegue in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 ### <a name="error-message"></a>Messaggio di errore
- Errore di compilazione: Si è verificato un errore nel passaggio di distribuzione 'Attiva funzionalità': il file Template\Features \\ [*import project*<em>feature</em>*name*]\Files\Lists [ \\ *old*<em>list name</em>]\Schema.xml does not exist.
+ Errore di compilazione: si è verificato un errore nel passaggio di distribuzione 'Attiva funzionalità': il file Template\Features \\ [*import project*<em>feature</em>*name*]\Files\Lists [ \\ *old*<em>list name</em>]\Schema.xml does not exist.
 
 ### <a name="resolution"></a>Risoluzione
- Quando si importa un'istanza di elenco, viene aggiunto un attributo denominato CustomSchema al file Elements.xml dell'istanza di elenco. Elements.xml include il percorso di un schema.xml personalizzato per l'istanza di elenco. Quando si rinomina l'istanza di elenco in , il percorso di distribuzione per il schema.xml personalizzato cambia, ma il valore del percorso [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dell'attributo CustomSchema non viene aggiornato. Di conseguenza, l'istanza dell'elenco non riesce *a* trovare il fileschema.xmlnel percorso precedente specificato dall'attributo CustomSchema quando la funzionalità viene attivata.
+ Quando si importa un'istanza di elenco, viene aggiunto un attributo denominato CustomSchema al file Elements.xml dell'istanza dell'elenco. Elements.xml include il percorso di un schema.xml personalizzato per l'istanza di elenco. Quando si rinomina l'istanza di elenco in , il percorso di distribuzione per il schema.xml personalizzato cambia, ma il valore del percorso [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dell'attributo CustomSchema non viene aggiornato. Di conseguenza, l'istanza dell'elenco non riesce *a* trovare il fileschema.xmlnel percorso precedente specificato dall'attributo CustomSchema quando la funzionalità viene attivata.
 
  Per risolvere questo problema, aggiornare il percorso di distribuzione del file *schema.xml* nell'attributo CustomSchema.
 
 ## <a name="sharepoint-debugging-session-terminated-by-iis"></a>SharePoint sessione di debug terminata da IIS
- Questo problema si verifica se si imposta un punto di interruzione in una soluzione SharePoint, si sceglie F5 per eseguirlo e quindi si rimane a un punto di interruzione più lungo di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 90  secondi.
+ Questo problema si verifica se si imposta un punto di interruzione in una soluzione SharePoint, si sceglie il tasto F5 per eseguirlo e quindi si rimane a un punto di interruzione più lungo di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 90  secondi.
 
 ### <a name="error-message"></a>Messaggio di errore
  Il processo del server Web di cui è in corso il debug è stato terminato da Internet Information Services (IIS). Il problema può essere risolto configurando le impostazioni ping del pool di applicazioni in IIS. Per altri dettagli, vedere la Guida.
@@ -248,7 +248,7 @@ ms.locfileid: "122156234"
 
 1. Creare una definizione di elenco con un'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-2. Scegliere **il tasto F5** per eseguire la soluzione.
+2. Scegliere il **tasto F5** per eseguire la soluzione.
 
 3. Arrestare il debug o chiudere il SharePoint sito.
 
@@ -258,12 +258,12 @@ ms.locfileid: "122156234"
  Errore del server nell'applicazione '/'.
 
 ### <a name="resolution"></a>Risoluzione
- Ciò si verifica perché dopo la chiusura di una sessione di debug di una soluzione SharePoint, la funzionalità di ritiro automatico ritrae la soluzione. La ritrazione elimina la definizione dell'elenco SharePoint ma non elimina l'istanza dell'elenco. La definizione dell'elenco sottostante è richiesta dall'istanza di elenco.
+ Ciò si verifica perché dopo la chiusura di una sessione di debug di una soluzione SharePoint, la funzionalità di ritiro automatico ritira la soluzione. La ritrazione elimina la definizione dell'elenco SharePoint ma non elimina l'istanza dell'elenco. La definizione dell'elenco sottostante è richiesta dall'istanza di elenco.
 
  Per risolvere questo problema, distribuire la soluzione scegliendo Compila distribuisci dalla barra dei  >  menu. Non eseguire il debug della soluzione scegliendo **il tasto F5.** Eliminare quindi l'istanza di elenco in SharePoint.
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>La SharePoint originale viene sostituita da una versione esportata
- Se si esporta una soluzione SharePoint, importare la soluzione in e quindi ridistribuirla nello stesso sito da cui è stata esportata, la soluzione SharePoint originale [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] viene sostituita. Questo problema non si verifica se si distribuisce la soluzione in un server in cui non è attivata la soluzione originale.
+ Se si esporta una soluzione SharePoint, importarla in e quindi ridistribuirla nello stesso sito da cui è stata esportata, la soluzione originale SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] viene sostituita. Questo problema non si verifica se si distribuisce la soluzione in un server in cui non è attivata la soluzione originale.
 
 ### <a name="error-message"></a>Messaggio di errore
  Nessuno.

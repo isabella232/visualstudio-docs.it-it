@@ -1,6 +1,6 @@
 ---
 title: Funzione CvLeaveSpan | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione CvLeaveSpan (libreria C) dell'SDK del visualizzatore di concorrenza.
+description: Vedere le informazioni di riferimento per la funzione CVLeaveSpan (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: b5e2e7e275128a46a8f2792cddbbc0c2e6b326c2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637164"
 ---
 # <a name="cvleavespan-function"></a>Funzione CvLeaveSpan
 Contrassegna la fine della sezione.

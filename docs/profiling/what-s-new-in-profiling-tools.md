@@ -16,11 +16,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: ae501119b74300dea4397ccaaadbf13da99bbf6e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637052"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>Novità negli strumenti di profilatura di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

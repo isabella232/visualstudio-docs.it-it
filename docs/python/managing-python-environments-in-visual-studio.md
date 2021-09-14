@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e75f433c3949ecb623dbe14ee7289060f7cc463b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625368"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -71,7 +71,7 @@ In entrambi i casi, la finestra **Ambienti Python** viene visualizzata accanto a
 
 Visual Studio cerca gli ambienti globali installati usando il Registro di sistema (in base a [PEP 514](https://www.python.org/dev/peps/pep-0514/)), oltre agli ambienti virtuali e agli ambienti Conda (vedere [Tipi di ambienti](#types-of-environments)). Se l'elenco non include un ambiente previsto, vedere [Identificare manualmente un ambiente esistente](#manually-identify-an-existing-environment).
 
-Quando si seleziona un ambiente nell'elenco, Visual Studio visualizza varie proprietà e comandi per tale ambiente nella **scheda** Panoramica. È ad esempio possibile vedere nell'immagine precedente che la posizione dell'interprete è *C:\Python36-32*. Ognuno dei quattro comandi nella parte inferiore della scheda **Panoramica** apre un prompt dei comandi con l'interprete in esecuzione. Per altre informazioni, vedere [Informazioni di riferimento sulle schede della finestra Ambienti Python - Panoramica](python-environments-window-tab-reference.md#overview-tab).
+Quando si seleziona un ambiente nell'elenco, Visual Studio visualizza varie proprietà e comandi per tale ambiente nella **scheda** Panoramica. Ad esempio, è possibile vedere nell'immagine precedente che la posizione dell'interprete è *C:\Python36-32*. Ognuno dei quattro comandi nella parte inferiore della scheda **Panoramica** apre un prompt dei comandi con l'interprete in esecuzione. Per altre informazioni, vedere [Informazioni di riferimento sulle schede della finestra Ambienti Python - Panoramica](python-environments-window-tab-reference.md#overview-tab).
 
 Usare l'elenco a discesa disponibile sotto l'elenco degli ambienti per spostarsi tra le diverse schede, ad esempio **Pacchetti** e **IntelliSense**. Queste schede sono descritte anche in [Informazioni di riferimento sulle schede della finestra Ambienti Python](python-environments-window-tab-reference.md).
 
@@ -152,7 +152,7 @@ Un ambiente Conda è un ambiente creato usando lo strumento `conda` o con la ges
 
 ::: moniker range=">=vs-2019"
 
-1. Selezionare **Aggiungi ambiente...** nella finestra **Ambienti Python** (o sulla barra degli strumenti Python), che apre la finestra di **dialogo** Aggiungi ambiente. Nella finestra di dialogo selezionare la scheda **Ambiente Conda**:
+1. Selezionare **Aggiungi ambiente...** nella finestra **Ambienti Python** (o dalla barra degli strumenti Python), che apre la finestra di **dialogo** Aggiungi ambiente. Nella finestra di dialogo selezionare la scheda **Ambiente Conda**:
 
     ![Scheda Ambiente Conda nella finestra di dialogo Aggiungi ambiente](media/environments/environments-conda-1-2019.png)
 
@@ -226,13 +226,13 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
 1. Quando i campi contengono i valori desiderati, selezionare **Applica** per salvare la configurazione. È ora possibile usare l'ambiente come qualsiasi altro all'interno di Visual Studio.
 
-1. Se è necessario rimuovere un ambiente identificato manualmente, selezionare il **comando Rimuovi** nella **scheda** Configura. Gli ambienti rilevati automaticamente non forniscono questa opzione. Per altre informazioni, vedere [Scheda Configura](python-environments-window-tab-reference.md#configure-tab).
+1. Se è necessario rimuovere un ambiente identificato manualmente, selezionare il **comando** Rimuovi nella **scheda** Configura. Gli ambienti rilevati automaticamente non forniscono questa opzione. Per altre informazioni, vedere [Scheda Configura](python-environments-window-tab-reference.md#configure-tab).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Selezionare **Aggiungi ambiente...** nella finestra **Ambienti Python** (o sulla barra degli strumenti Python), che apre la finestra di **dialogo** Aggiungi ambiente. Nella finestra di dialogo selezionare la scheda **Ambiente esistente**:
+1. Selezionare **Aggiungi ambiente...** nella finestra **Ambienti Python** (o dalla barra degli strumenti Python) per aprire la finestra di **dialogo** Aggiungi ambiente. Nella finestra di dialogo selezionare la scheda **Ambiente esistente**:
 
     ![Scheda Ambiente esistente nella finestra di dialogo Aggiungi ambiente](media/environments/environments-custom-1-2019.png)
 
@@ -249,7 +249,7 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
 ## <a name="fix-or-delete-invalid-environments"></a>Correggere o eliminare gli ambienti non validi
 
-Se Visual Studio le voci del Registro di sistema per un ambiente, ma il percorso dell'interprete non è valido, nella finestra Ambienti **Python** viene visualizzato il nome con un carattere barrato:
+Se Visual Studio le voci del Registro di sistema per un ambiente, ma il percorso dell'interprete non è valido, la finestra **Ambienti Python** mostra il nome con un carattere barrato:
 
 ::: moniker range="vs-2017"
 ![Finestra Ambienti Python con ambiente non valido visualizzato](media/environments/environments-invalid-entry.png)
@@ -260,7 +260,7 @@ Se Visual Studio le voci del Registro di sistema per un ambiente, ma il percorso
 
 Per correggere un ambiente che si vuole mantenere, provare prima a usare il processo di **riparazione** del programma di installazione. Ad esempio, i programmi di installazione per la versione Python 3.x standard includono tale opzione.
 
-Per correggere un ambiente che non dispone di un'opzione di riparazione o per rimuovere un ambiente non valido, usare la procedura seguente per modificare direttamente il Registro di sistema. Visual Studio automaticamente la **finestra Ambienti Python** quando si apportano modifiche al Registro di sistema.
+Per correggere un ambiente che non dispone di un'opzione di riparazione o per rimuovere un ambiente non valido, usare la procedura seguente per modificare direttamente il Registro di sistema. Visual Studio aggiorna automaticamente la **finestra Ambienti Python** quando si apportano modifiche al Registro di sistema.
 
 1. Eseguire *regedit.exe*.
 1. Passare a **HKEY_LOCAL_MACHINE\SOFTWARE\Python** o **HKEY_CURRENT_USER\SOFTWARE\Python**. Per IronPython, cercare invece **IronPython**.
@@ -271,7 +271,7 @@ Per correggere un ambiente che non dispone di un'opzione di riparazione o per ri
 
     - Se l'ambiente è ancora presente nel computer, modificare il valore di **ExecutablePath** nella posizione corretta. Correggere anche i valori **(Predefinito)** e **WindowedExecutablePath** in base alle esigenze.
     - Se l'ambiente non è più presente nel computer e si vuole rimuoverlo dalla finestra **Ambienti Python**, eliminare il nodo padre di **InstallPath**, ad esempio **3.6** nell'immagine precedente.
-    - Le impostazioni non valide **HKEY_CURRENT_USER\SOFTWARE\Python** eseguire l'override delle impostazioni in **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
+    - Le impostazioni non valide **HKEY_CURRENT_USER\SOFTWARE\Python** sostituire le impostazioni in **HKEY_LOCAL_MACHINE\SOFTWARE\Python**
 
 ## <a name="see-also"></a>Vedi anche
 

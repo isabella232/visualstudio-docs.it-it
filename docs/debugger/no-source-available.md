@@ -20,19 +20,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 24b8d8fe232c3b5096a8057677bec2a26f7e06ab757281e1a57977bbd9704b2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1ef2f84547a99906caf07ebce0d41f7b7a9a5655
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710390"
 ---
 # <a name="no-source-available"></a>Nessuna origine disponibile
 Il progetto non contiene codice sorgente per il codice che si tenta di visualizzare. Questa condizione si verifica, di solito, quando si fa doppio clic su un modulo per il quale non è disponibile codice sorgente nella finestra **Stack di chiamate** o **Thread**. È possibile continuare il debug, ma non è possibile utilizzare la finestra di origine per impostare i punti di interruzione ed eseguire altre operazioni in questa posizione. Per impostare un punto di interruzione, utilizzare invece la finestra **Disassembly**.
 
  Nelle pagine delle proprietà della soluzione è possibile modificare le directory in cui il debugger cerca i file di origine e indicare al debugger di ignorare determinati file di origine. Vedere [Debug di file di origine, Proprietà comuni, finestra di dialogo Pagine delle proprietà della soluzione](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).
 
- **Individuare il codice sorgente** Fare clic su questo collegamento per aprire una finestra di dialogo in cui è possibile cercare il codice sorgente.
+ **Cercare il codice sorgente** Fare clic su questo collegamento per aprire una finestra di dialogo in cui è possibile cercare il codice sorgente.
 
  **Mostra disassembly** Avvia la finestra **Disassembly**.
 

@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: f317ea59fd7f3318669a71d4480c5b53a182b327
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710533"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordinamento, filtro e raggruppamento (ESPLORA XML Schema)
 
@@ -34,7 +34,7 @@ Sono disponibili le seguenti opzioni del filtro. Per impostazione predefinita, l
 
 ## <a name="sorting-options"></a>Opzioni di ordinamento
 
-Sono disponibili le seguenti opzioni di ordinamento. Il valore predefinito è **Ordina per tipo**. **Le opzioni Ordina** per non si applicano a file e spazi dei nomi.
+Sono disponibili le seguenti opzioni di ordinamento. Il valore predefinito è **Ordina per tipo**. **Le opzioni Ordina per** non si applicano a file e spazi dei nomi.
 
 - **Ordina per tipo**.
 

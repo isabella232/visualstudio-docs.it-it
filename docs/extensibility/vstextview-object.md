@@ -17,15 +17,15 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ef751a635d31bc43b2ae4eb32dae9917120a7b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711686"
 ---
 # <a name="vstextview-object"></a>Oggetto VSTextView
 
-La visualizzazione testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In sostanza, la visualizzazione è ciò a cui la maggior parte degli utenti fa riferimento come editor. Poiché la visualizzazione è separata dal buffer da vari livelli di testo (ritorno a capo automatico, struttura del testo e così via), non è garantito che la visualizzazione sia una rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione testo, vedere [Accesso alla visualizzazione Testo tramite l'API legacy](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
+La visualizzazione testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In sostanza, la visualizzazione è ciò a cui la maggior parte degli utenti fa riferimento come editor. Poiché la visualizzazione è separata dal buffer da vari livelli di testo (ritorno a capo automatico, struttura del testo e così via), non è garantito che la visualizzazione sia una rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione testo, vedere [Accesso alla visualizzazione Testo tramite l'API legacy.](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api?preserve-view=true&view=vs-2015)
 
 Nella tabella seguente vengono illustrate le interfacce <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> nell'oggetto .
 

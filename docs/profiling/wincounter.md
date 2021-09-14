@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b5f22674f1b66b31a03b2c30ed0e58a7b9f89e5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637028"
 ---
 # <a name="wincounter"></a>WinCounter
 L'opzione **WinCounter** specifica un contatore delle prestazioni di Windows o di un'applicazione per la raccolta di dati a intervalli prestabiliti durante l'esecuzione della profilatura. I contatori delle prestazioni di Windows e dell'applicazione sono elencati come contrassegni nel file di dati di profilatura. È possibile specificare più contatori delle prestazioni da raccogliere in opzioni separate.
@@ -39,7 +39,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **WinCounter** può essere usata solo con l'opzione **Start**.
 
- **Avviare:** `Method` **L'opzione Start** inizializza il profiler sul metodo di profilatura specificato.
+ **Avvio:** `Method` **L'opzione Start** inizializza il profiler sul metodo di profilatura specificato.
 
 ## <a name="exclusive-options"></a>Opzioni esclusive
  L'opzione **AutoMark** può essere usata solo con l'opzione **WinCounter**.

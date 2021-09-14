@@ -1,5 +1,5 @@
 ---
-description: Recupera un flag che specifica se la funzione contiene la gestione asincrona (strutturata) delle eccezioni.
+description: Recupera un flag che specifica se la funzione contiene la gestione delle eccezioni asincrona (strutturata).
 title: IDiaSymbol::get_hasEHa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 68428b7a9f9736d1e849eff83446e84795333e63
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097700"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709965"
 ---
 # <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
-Recupera un flag che specifica se la funzione contiene la gestione asincrona (strutturata) delle eccezioni.
+Recupera un flag che specifica se la funzione contiene la gestione delle eccezioni asincrona (strutturata).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,13 +35,13 @@ HRESULT get_hasEHa(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[out] Restituisce `TRUE` se la funzione ha una gestione asincrona delle eccezioni; in caso contrario, restituisce `FALSE` .
+[out] Restituisce `TRUE` se la funzione ha una gestione delle eccezioni asincrona; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  È possibile combinare la gestione delle eccezioni asincrona o strutturata con la gestione delle eccezioni di tipo C++, ma per abilitarla è necessaria un'opzione del compilatore specifica, /EHa.

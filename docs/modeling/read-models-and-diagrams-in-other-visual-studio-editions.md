@@ -14,17 +14,17 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 4adcdb442e31a0de834a05a06ea96981b761ea73
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100777"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637500"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 
 Quando si apre un modello in una versione di Visual Studio che non supporta la creazione di modelli, il modello viene aperto in modalità di sola lettura. In questa modalità è possibile modificare il layout dei diagrammi, ma non modificare il modello.
 
-Per informazioni su quali versioni di Visual Studio la creazione di modelli, vedere Supporto delle versioni per gli strumenti di [architettura e modellazione.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
+Per visualizzare le versioni di Visual Studio la creazione di modelli, vedere Supporto delle versioni per gli strumenti di [architettura e modellazione.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Accesso a un modello e ai diagrammi
 

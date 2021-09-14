@@ -21,11 +21,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 866f4880caf90977e3da809e63def40932c8f024
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635931"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 
@@ -99,7 +99,7 @@ Il codice XML seguente illustra il modello di frammento di base:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets*  
+   *%USERPROFILE%\Documents\Visual Studio 2017\Frammenti di codice\Visual C#\My Code Snippets*  
    *%USERPROFILE%\Documenti\Visual Studio 2017\Frammenti di codice\Visual Basic\Frammenti di codice*
 
    ::: moniker-end

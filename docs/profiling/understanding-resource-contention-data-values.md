@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui valori dei dati su conflitti di risorse | Microsoft Docs
-description: Informazioni sul modo in cui la profilatura dei contenuti delle risorse raccoglie informazioni dettagliate quando i thread concorrenti in un'applicazione sono costretti ad attendere l'accesso a una risorsa condivisa.
+description: Informazioni su come la profilatura dei contenuti delle risorse raccoglie informazioni dettagliate quando i thread concorrenti in un'applicazione sono obbligati ad attendere l'accesso a una risorsa condivisa.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 80e525b078fb5743d9181361d26230faf740c01a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140798"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710174"
 ---
 # <a name="understand-resource-contention-data-values"></a>Informazioni sui valori dei dati su conflitti di risorse
 
@@ -34,6 +34,6 @@ Le visualizzazioni dei report sui conflitti di risorse includono anche grafici d
 
 - [Visualizzazione dettagli thread](../profiling/thread-details-view-contention-data.md)
 
-- [Visualizzazione dettagli risorsa](../profiling/resource-details-view-contention-data.md)
+- [Visualizzazione Dettagli risorsa](../profiling/resource-details-view-contention-data.md)
 
 Per altre informazioni sulla seconda modalità di profilatura della concorrenza, vedere [Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md).

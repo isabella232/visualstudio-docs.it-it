@@ -21,11 +21,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: dba71fed7c4cc248e3e7648f264e3ccd531af5e0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093736"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625638"
 ---
 # <a name="markupcompilepass1-task"></a>Attività MarkupCompilePass1
 
@@ -39,7 +39,7 @@ L'attività converte i file di progetto XAML non localizzabili <xref:Microsoft.B
 | `AlwaysCompileMarkupFilesInSeparateDomain` | Parametro **booleano** facoltativo.<br /><br /> Specifica se eseguire l'attività in un <xref:System.AppDomain> separato. Se questo parametro restituisce **false,** l'attività viene eseguita nello stesso MSBuild <xref:System.AppDomain> e viene eseguita più velocemente. Se il parametro restituisce **true,** l'attività viene eseguita in un secondo isolato dal MSBuild <xref:System.AppDomain> viene eseguito più lentamente. |
 | `ApplicationMarkup` | Parametro **ITaskItem[]** facoltativo.<br /><br /> Specifica il nome del file XAML di definizione dell'applicazione. |
 | `AssembliesGeneratedDuringBuild` | Parametro **String[]** facoltativo.<br /><br /> Specifica i riferimenti ad assembly che vengono modificati durante il processo di compilazione. Ad esempio, una soluzione Visual Studio può contenere un progetto che fa riferimento all'output compilato di un altro progetto. In questo caso, l'output compilato del secondo progetto può essere aggiunto al parametro **AssembliesGeneratedDuringBuild**.<br /><br /> Nota: il parametro **AssembliesGeneratedDuringBuild** deve contenere riferimenti all'insieme completo di assembly generati da una soluzione di compilazione. |
-| `AssemblyName` | Parametro **stringa** obbligatorio.<br /><br /> Specifica il nome breve dell'assembly generato per un progetto. Ad esempio, se un progetto genera un file eseguibile Windows il cui nome èWinExeAssembly.exe *,* il **parametro AssemblyName** ha il valore **WinExeAssembly**. |
+| `AssemblyName` | Parametro **stringa** obbligatorio.<br /><br /> Specifica il nome breve dell'assembly generato per un progetto. Ad esempio, se un progetto genera un file eseguibile Windows il cui nome è *WinExeAssembly.exe*, il parametro **AssemblyName** ha il valore **WinExeAssembly**. |
 | `AssemblyPublicKeyToken` | Parametro **String** facoltativo.<br /><br /> Specifica il token di chiave pubblica per l'assembly. |
 | `AssemblyVersion` | Parametro **String** facoltativo.<br /><br /> Specifica il numero di versione dell'assembly. |
 | `ContentFiles` | Parametro **ITaskItem[]** facoltativo.<br /><br /> Specifica l'elenco dei file di contenuto separati. |
@@ -51,7 +51,7 @@ L'attività converte i file di progetto XAML non localizzabili <xref:Microsoft.B
 | `HostInBrowser` | Parametro **String** facoltativo.<br /><br /> Specifica se l'assembly generato è un'applicazione browser XAML (XBAP). Le opzioni valide sono **true** e **false**. Se **true**, verrà generato codice per supportare l'hosting del browser. |
 | `KnownReferencePaths` | Parametro **String[]** facoltativo.<br /><br /> Specifica i riferimenti ad assembly che non vengono modificati durante il processo di compilazione. Include gli assembly che si trovano nella Global Assembly Cache (GAC), in una directory di installazione di .NET e così via. |
 | `Language` | Parametro **String** obbligatorio.<br /><br /> Specifica il linguaggio gestito supportato dal compilatore. Le opzioni valide sono **C#**, **VB**, **JScript** e **C++**. |
-| `LanguageSourceExtension` | Parametro **String** facoltativo.<br /><br /> Specifica l'estensione aggiunta all'estensione del file di codice gestito generato:<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Se il **parametro LanguageSourceExtension** non è impostato con un valore specifico, viene usata l'estensione di file di origine predefinita per un linguaggio: *vb* per Visual Basic, *.csharp* per C#. |
+| `LanguageSourceExtension` | Parametro **String** facoltativo.<br /><br /> Specifica l'estensione aggiunta all'estensione del file di codice gestito generato:<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> Se il **parametro LanguageSourceExtension** non è impostato con un valore specifico, viene usata l'estensione di file di origine predefinita per un linguaggio: *vb* per Visual Basic, *csharp* per C#. |
 | `LocalizationDirectivesToLocFile` | Parametro **String** facoltativo.<br /><br /> Specifica come generare informazioni di localizzazione per ogni file XAML di origine. Le opzioni valide sono **None**, **CommentsOnly** e **All**. |
 | `OutputPath` | Parametro **String** obbligatorio.<br /><br /> Specifica la directory in cui vengono generati i file di codice gestito generati e i file di formato binario XAML. |
 | `OutputType` | Parametro **String** obbligatorio.<br /><br /> Specifica il tipo di assembly generato da un progetto. Le opzioni valide sono **winexe**, **exe**, **library** e **netmodule**. |

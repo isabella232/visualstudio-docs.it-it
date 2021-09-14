@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: ec317073601f766dab2042ab6c77542914e87b59
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115746"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625254"
 ---
 # <a name="extensiondata-element"></a>ExtensionData (elemento)
   Rappresenta una raccolta di elementi di dati personalizzati associati all'SharePoint di progetto.
@@ -52,7 +52,7 @@ ms.locfileid: "122115746"
 |[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un SharePoint di progetto. Questo elemento è l'elemento radice obbligatorio del `.spdata` file.|
 
 ## <a name="remarks"></a>Commenti
- Quando si associano dati personalizzati a un elemento di progetto SharePoint usando la proprietà di un oggetto , Visual Studio salva i dati nell'elemento ExtensionData nel file per l'elemento <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> di  `.spdata` progetto. Per altre informazioni, vedere [Salvare i dati nelle estensioni del SharePoint di progetto.](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
+ Quando si associano dati personalizzati a un elemento di progetto SharePoint usando la proprietà di un oggetto, Visual Studio salva i dati nell'elemento ExtensionData nel file per l'elemento <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> di  `.spdata` progetto. Per altre informazioni, vedere [Salvare i dati nelle estensioni del SharePoint di progetto.](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 

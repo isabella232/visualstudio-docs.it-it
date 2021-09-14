@@ -21,11 +21,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 66b62a619b64534f56039e6213b01d4d12bb941a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636924"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Procedura: Creare un ricevitore di eventi
   Creando *ricevitori di eventi*, è possibile rispondere quando un utente interagisce con SharePoint elementi, ad esempio elenchi o elementi di elenco. Ad esempio, il codice in un ricevitore di eventi può essere attivato quando un utente modifica il calendario o elimina un nome da un elenco contatti. Seguendo questo argomento, è possibile apprendere come aggiungere un ricevitore di eventi a un'istanza di elenco.
@@ -43,7 +43,7 @@ ms.locfileid: "122148948"
 
 3. Nella barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento**.
 
-4. In **Visual C#** o **Visual Basic** espandere  il nodo SharePoint e quindi scegliere l'elemento **2010.**
+4. In **Visual C#** o **Visual Basic** espandere  il SharePoint e quindi scegliere **l'elemento 2010.**
 
 5. Nel riquadro **Modelli** scegliere **Ricevitore di eventi,** assegnare il nome **TestEventReceiver1** e quindi scegliere **il pulsante OK.**
 
@@ -62,7 +62,7 @@ ms.locfileid: "122148948"
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs" id="Snippet1":::
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb" id="Snippet1":::
 
-     Il codice viene eseguito e il SharePoint viene visualizzato nel Web browser.
+     Il codice viene eseguito e il SharePoint visualizzato nel Web browser.
 
 10. Sulla barra Avvio rapido scegliere il collegamento **Patients** e quindi scegliere il **collegamento Aggiungi nuovo** elemento.
 

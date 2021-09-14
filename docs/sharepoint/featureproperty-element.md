@@ -1,6 +1,6 @@
 ---
 title: Elemento FeatureProperty | Microsoft Docs
-description: Visualizzare informazioni di riferimento sull'elemento FeatureProperty, che è un elemento nello SharePoint schema dell'elemento di progetto.
+description: Visualizzare le informazioni di riferimento sull'elemento FeatureProperty, che è un elemento nello schema SharePoint dell'elemento di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,14 +16,14 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 01536094bdb9fd084b32ce56429d085f5f377f8f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625217"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
-  Rappresenta una proprietà personalizzata inclusa in una funzionalità quando viene distribuita in SharePoint. Dopo aver distribuito una funzionalità, è possibile accedere alla proprietà nel codice.
+  Rappresenta una proprietà personalizzata inclusa in un oggetto Feature quando viene distribuita in SharePoint. Dopo aver distribuito una funzionalità, è possibile accedere alla proprietà nel codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ ms.locfileid: "122149221"
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Proprietà delle funzionalità](../sharepoint/featureproperties-element.md)|Rappresenta una raccolta di valori di proprietà inclusi in una funzionalità quando viene distribuita in SharePoint.|
+|[Proprietà funzionalità](../sharepoint/featureproperties-element.md)|Rappresenta una raccolta di valori di proprietà inclusi in un oggetto Feature quando viene distribuito in SharePoint.|
 
 ## <a name="remarks"></a>Commenti
  Per altre informazioni sulle proprietà delle funzionalità, vedere [Fornire informazioni sul pacchetto e sulla distribuzione negli elementi del progetto.](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
@@ -64,5 +64,5 @@ ms.locfileid: "122149221"
 |**Può essere vuoto**|No|
 
 ## <a name="see-also"></a>Vedere anche
-- [SharePoint riferimento allo schema dell'elemento di progetto](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [SharePoint sullo schema dell'elemento di progetto](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi del progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

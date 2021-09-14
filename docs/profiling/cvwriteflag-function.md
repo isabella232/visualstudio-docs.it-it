@@ -1,6 +1,6 @@
 ---
 title: Funzione CvWriteFlag | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione CVWriteFlag (libreria C) dell'SDK del visualizzatore di concorrenza.
+description: Vedere le informazioni di riferimento per la funzione CvWriteFlag (libreria C) dell'SDK del visualizzatore di concorrenza.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,11 +22,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 4722a70c1a298ce16e801a902648f810bb559cd6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625428"
 ---
 # <a name="cvwriteflag-function"></a>Funzione CvWriteFlag
 Scrive un flag nel file di traccia del visualizzatore di concorrenza.

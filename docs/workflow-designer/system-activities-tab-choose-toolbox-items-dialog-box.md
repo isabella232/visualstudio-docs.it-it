@@ -15,20 +15,20 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 29074e32fb232af7e89581368a6067b9db668da1
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963669"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710570"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Scheda System.Activities, finestra di dialogo Scegli elementi della casella degli strumenti
 
-Questa scheda della finestra **di** dialogo Scegli elementi della casella degli strumenti visualizza un elenco di attività, modelli ed elementi di Windows Workflow Foundation (WF) disponibili. Per visualizzare questo  elenco, scegliere Scegli elementi della casella  degli strumenti  dal **menu**  Strumenti oppure fare clic con il pulsante destro del mouse sulla casella degli strumenti e scegliere Scegli elementi per visualizzare la finestra di dialogo Scegli elementi della casella degli strumenti e quindi selezionare la scheda **System.Activities.** L'elenco contiene le attività del flusso di lavoro degli assembly System.Activities, System.ServiceModel.Activities e System.Activities.Core.Presentation. Tuttavia, per impostazione predefinita vengono controllate solo le attività fornite  dal sistema e le attività aggiunte tramite altri assembly visualizzati nella casella degli strumenti. Le attività aggiunte di recente vengono automaticamente selezionate e visualizzate nella casella **degli** strumenti quando si fa clic **su OK** nella finestra di dialogo. Inoltre, questi elementi vengono visualizzati nella **casella** degli strumenti in una nuova categoria che corrisponde allo spazio dei nomi in cui risiede l'attività/elemento/modello.
+Questa scheda della finestra **di** dialogo Scegli elementi della casella degli strumenti visualizza un elenco di attività, modelli ed elementi di Windows Workflow Foundation (WF) disponibili. Per visualizzare questo  elenco, scegliere Scegli elementi della casella  degli strumenti  dal **menu**  Strumenti oppure fare clic con il pulsante destro del mouse sulla casella degli strumenti e scegliere Scegli elementi per visualizzare la finestra di dialogo Scegli elementi della casella degli strumenti e quindi selezionare la scheda **System.Activities.** L'elenco contiene le attività del flusso di lavoro degli assembly System.Activities, System.ServiceModel.Activities e System.Activities.Core.Presentation. Tuttavia, per impostazione predefinita vengono controllate solo le attività fornite  dal sistema e le attività aggiunte tramite altri assembly visualizzati nella casella degli strumenti. Le attività aggiunte di recente vengono automaticamente selezionate e visualizzate nella casella **degli** strumenti quando si fa clic **su OK** nella finestra di dialogo. Inoltre, questi elementi vengono visualizzati nella **casella** degli strumenti in una nuova categoria che corrisponde allo spazio dei nomi in cui si trova l'attività/elemento/modello.
 
 > [!WARNING]
 > Se si prova ad aggiungere un assembly che non contiene attività del flusso di lavoro, viene visualizzata una finestra di errore in cui si segnala che l'assembly non contiene attività.
 
-Questa finestra di dialogo è indipendente dal progetto e quindi la scheda **System.Activities** continua a essere visualizzata in XAML autonomo o in un tipo di progetto non flusso di lavoro.
+Questa finestra di dialogo è indipendente dal progetto e quindi la scheda **System.Activities** continua a essere visualizzata in XAML autonomo o in un tipo di progetto non del flusso di lavoro.
 
 Il filtro viene eseguito in ogni scheda e non è possibile aggiungere attività del flusso di lavoro tramite la scheda **Componente .NET.** Aggiungerli tramite la **scheda System.Activities** stessa.
 

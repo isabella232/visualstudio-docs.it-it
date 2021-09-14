@@ -15,11 +15,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 27df14cad337fcb1ce1dffaeab1d501a6ff549e3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123580"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637499"
 ---
 # <a name="properties-of-swimlanes"></a>Proprietà delle corsie
 È possibile aggiungere corsie a un diagramma. Le corsie dividono un diagramma in aree verticali o orizzontali. È possibile definire altre forme da visualizzare all'interno delle corsie. Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -30,7 +30,7 @@ ms.locfileid: "122123580"
 |-|-|-|
 |Colore riempimento corpo|Colore di riempimento per il corpo della corsia.|White|
 |Colore riempimento intestazione|Colore di riempimento per l'intestazione della corsia.|grigio scuro|
-|Colore separatore|Colore della linea di separazione.|Lightgray|
+|Colore separatore|Colore della linea separatore.|Lightgray|
 |Stile linea separatore|Stile della riga separatore ( `Solid` , , , , o `Dash` `Dot` `DashDot` `DashDotDot` `Custom` ).|`Dash`|
 |Spessore separatore|Spessore della linea separatore in pollici.|0.03125|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa corsia.|Nero|

@@ -13,11 +13,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 528471301c1de6d44d5de6464fa24c81f13b8b36
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054509"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625380"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -44,7 +44,7 @@ In questa esercitazione verranno illustrate le procedure per:
 - Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli (passaggio 3)
 - Usare il modello Progetto Web Flask per creare un'app con più pagine e una progettazione reattiva (passaggio 4)
 
-Nel corso di questi passaggi viene creata una singola soluzione Visual Studio che contiene due progetti separati. Il progetto viene creato usando diversi modelli di progetto Flask inclusi in Visual Studio. Mantenendo i progetti nella stessa soluzione, è possibile spostarsi facilmente tra i diversi file per confrontarli.
+Nel corso di questi passaggi viene creata una singola Visual Studio che contiene due progetti separati. Il progetto viene creato usando diversi modelli di progetto Flask inclusi in Visual Studio. Mantenendo i progetti nella stessa soluzione, è possibile spostarsi facilmente tra i diversi file per confrontarli.
 ::: moniker-end
 
 > [!Note]
@@ -62,7 +62,7 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Passaggio 1-1: Creare un progetto e una soluzione di Visual Studio
 
-1. In Visual Studio selezionare **File** Nuovo Project, cercare "Flask" e selezionare il modello Blank  >    >   **Flask Web Project (Project** Web Flask vuoto). Il modello è disponibile anche in **Python**  >  **Web** nell'elenco a sinistra.
+1. In Visual Studio file nuovo   >    >  **Project,** cercare "Flask" e selezionare il modello Di configurazione **Web Flask** vuota Project. Il modello è disponibile anche in **Python**  >  **Web** nell'elenco a sinistra.
 
     ![Finestra di dialogo Nuovo progetto in Visual Studio per il modello Progetto Web Flask vuoto](media/flask/step01-new-blank-project.png)
 
@@ -74,7 +74,7 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
     - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
     - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
-1. Dopo qualche istante, Visual Studio viene visualizzata una finestra di dialogo che indica Che il **progetto richiede pacchetti esterni** (illustrato di seguito). Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
+1. Dopo qualche istante, Visual Studio verrà visualizzata una finestra di dialogo con il messaggio **This project requires external packages** (Questo progetto richiede pacchetti esterni), come illustrato di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
     ![Messaggio che indica che il progetto richiede pacchetti esterni](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
@@ -97,7 +97,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
     ![Finestra di Team Explorer, pagina Modifiche](media/flask/step01-team-explorer-changes.png)
 
-1. Sulla barra Visual Studio stato selezionare il pulsante commit di cui non è stato eseguito il  commit di cui è stato eseguito il commit (la freccia in su con **2**) per aprire la pagina Sincronizzazione in **Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
+1. Sulla barra Visual Studio stato selezionare il pulsante commit di cui non è stato eseguito il  commit di cui è stato eseguito il commit (la freccia in su con **2**) per aprire la pagina Sincronizzazione **in Team Explorer**. Poiché è presente solo un repository locale, la pagina fornisce semplici opzioni per pubblicare il repository in diversi repository remoti.
 
     ![Finestra di Team Explorer che mostra le opzioni relative ai repository Git per il controllo del codice sorgente](media/flask/step01-team-explorer.png)
 
@@ -112,7 +112,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 1. Durante lo svolgimento di questa esercitazione, abituarsi a usare periodicamente i controlli in Visual Studio per il commit e il push delle modifiche. Questa esercitazione ricorda di eseguire queste operazioni nei momenti appropriati.
 
 > [!Tip]
-> Per spostarsi rapidamente **all'interno Team Explorer**, selezionare  l'intestazione (che legge Modifiche o **Push** nelle immagini precedenti) per visualizzare un menu a comparsa delle pagine disponibili.
+> Per spostarsi rapidamente **all'interno Team Explorer**, selezionare l'intestazione (che legge  **Modifiche** o Push nelle immagini precedenti) per visualizzare un menu a comparsa delle pagine disponibili.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Domanda: Quali sono alcuni dei vantaggi dell'uso del controllo del codice sorgente sin dall'inizio di un progetto?
 
@@ -132,7 +132,7 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
     ![Comando Aggiungi ambiente virtuale in Esplora soluzioni](media/flask/step01-add-virtual-environment-command.png)
 
-1. Viene **visualizzata la finestra di dialogo** Aggiungi ambiente virtuale con un messaggio che indica Che è stato trovato requirements.txt **file.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
+1. Viene **visualizzata la finestra di dialogo** Aggiungi ambiente virtuale con un messaggio che indica Che è stato trovato un file requirements.txt **virtuale.** Il messaggio indica che Visual Studio usa questo file per configurare l'ambiente virtuale.
 
     ![Finestra di dialogo Aggiungi ambiente virtuale con il messaggio sul file requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -240,7 +240,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
 ## <a name="step-1-5-run-the-project"></a>Passaggio 1-5: Eseguire il progetto
 
-1. In Visual Studio Debug Avvia debug (  >   **F5**) o usare il pulsante Server **Web** sulla barra degli strumenti (il browser visualizzato può variare):
+1. In Visual Studio Debug   >  **Avvia** debug (**F5**) o usare il pulsante **Server Web** sulla barra degli strumenti (il browser visualizzato può variare):
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 

@@ -11,15 +11,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: aaf6fd34544714444afef5d4a9bea8d4aa827afd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636979"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installare i simboli di debug per interpreti Python
 
-Per offrire un'esperienza di debug completa, il [debugger in modalità mista di Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) in Visual Studio ha bisogno dei simboli di debug per l'interprete Python in uso per analizzare numerose strutture dei dati interne. Ad *python27.dll*, ad esempio, il file di simboli corrispondente *è python27.pdb*; per *python36.dll*, il file di simboli *è python36.pdb.* Per ogni versione dell'interprete sono disponibili anche i file di simboli per un'ampia gamma di moduli.
+Per offrire un'esperienza di debug completa, il [debugger in modalità mista di Python](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) in Visual Studio ha bisogno dei simboli di debug per l'interprete Python in uso per analizzare numerose strutture dei dati interne. Ad *python27.dll*, ad esempio, il file di simboli corrispondente è *python27.pdb*; per *python36.dll*, il file di simboli *è python36.pdb*. Per ogni versione dell'interprete sono disponibili anche i file di simboli per un'ampia gamma di moduli.
 
 Con Visual Studio 2017 e versioni successive gli interpreti Python 3 e Anaconda 3 installano automaticamente i rispettivi simboli, che Visual Studio trova automaticamente. Per Visual Studio 2015 e versioni precedenti o quando si usano altri interpreti, è necessario scaricare i simboli separatamente e quindi puntare Visual Studio tramite la finestra di dialogo Opzioni degli strumenti nella scheda Simboli di  >     >   debug. Questi passaggi sono descritti in dettaglio nelle sezioni seguenti.
 
@@ -38,7 +38,7 @@ Con Visual Studio 2017 e versioni successive gli interpreti Python 3 e Anaconda 
 
     I file di simboli (con estensione *pdb*) sono nella cartella radice di installazione. Anche i file di simboli per i singoli moduli sono nella cartella *DLLs*. Per questo motivo, Visual Studio li trova automaticamente e non sono necessari altri passaggi.
 
-- Python 3.4.x e versioni precedenti:  i simboli sono [](#official-distributions) disponibili come file.zipscaricabili dalle distribuzioni ufficiali o [da Enthought Canopy](#enthought-canopy). Dopo il download, estrarre i file in una cartella locale per continuare, ad esempio una cartella *Symbols* nella cartella di Python.
+- Python 3.4.x e versioni precedenti:  i simboli sono disponibili [](#official-distributions) come file.zipscaricabili dalle distribuzioni ufficiali o [da Enthought Canopy](#enthought-canopy). Dopo il download, estrarre i file in una cartella locale per continuare, ad esempio una cartella *Symbols* nella cartella di Python.
 
     > [!Important]
     > I simboli sono diversi tra le diverse build secondarie di Python, nonché tra la build a 32 bit e quella a 64 bit, quindi è importante che le versioni corrispondano esattamente. Per controllare l'interprete in uso, espandere il **nodo Ambienti Python**  nel progetto **in** Esplora soluzioni prendere nota del nome dell'ambiente. Passare quindi alla finestra **Ambienti Python** *e* prendere nota del percorso di installazione. Aprire quindi una finestra di comando nel percorso e avviare *python.exe* che visualizza la versione esatta e indica se è una versione a 32 o a 64 bit.

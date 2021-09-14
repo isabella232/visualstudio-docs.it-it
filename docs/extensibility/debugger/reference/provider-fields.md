@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 80d00d1f9c385fc4ab568c0c8051801772f0d0bd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711831"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
 Specifica le proprietà associate a un provider di programmi.
@@ -54,7 +54,7 @@ public enum enum_PROVIDER_FIELDS {
 ## <a name="remarks"></a>Commenti
  Questi valori vengono restituiti nel membro della struttura PROVIDER_PROCESS_DATA per indicare quali campi della struttura sono stati compilati `Fields` in modo [](../../../extensibility/debugger/reference/provider-process-data.md) esplicito.
 
- Questi valori possono essere combinati con un bit per `OR` bit.
+ Questi valori possono essere combinati con un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

@@ -14,16 +14,16 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a43d1feb2dde67d6eae291490476db4b98850870
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636163"
 ---
 # <a name="model-for-source-control-packages"></a>Modello per i pacchetti del controllo del codice sorgente
 Il modello seguente rappresenta un esempio di implementazione di un controllo del codice sorgente. Nel modello vengono visualizzati le interfacce che è necessario implementare e i servizi di ambiente che è necessario chiamare. Come tutti i servizi, in realtà si chiamano i metodi di una particolare interfaccia che si ottiene tramite il servizio. I nomi delle classi vengono identificati per semplificare la visualizzazione del controllo del codice sorgente.
 
- ![Esempi di TUP&#95;SCC](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") Esempio di controllo del codice sorgente Project
+ ![Esempi di SCC&#95;TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") Esempio di controllo del codice sorgente Project
 
 ## <a name="interfaces"></a>Interfacce
  È possibile implementare il controllo del codice sorgente per i nuovi tipi di progetto Visual Studio usando l'elenco di interfacce illustrato nella tabella seguente.

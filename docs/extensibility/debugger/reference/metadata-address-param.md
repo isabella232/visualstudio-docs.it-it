@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2a160789b4b5e19ffd6e9eb1974f85396b2d8f4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122103117"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636220"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 Questa struttura rappresenta un parametro di un metodo o di una funzione.
@@ -56,7 +56,7 @@ public struct METADATA_ADDRESS_PARAM {
  Indice del parametro in un elenco di parametri.
 
 ## <a name="remarks"></a>Commenti
- Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_PARAM` dati). [](../../../extensibility/debugger/reference/address-kind.md)
+ Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_PARAM` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) dati).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h

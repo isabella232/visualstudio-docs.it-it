@@ -13,11 +13,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d4ec2aacb6ba0eb06e6603928da623c7b5bb9d7c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027292"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636939"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: Eseguire il codice nel debugger
 
@@ -71,7 +71,7 @@ Oltre a gestire i progetti, offrendo un'esperienza di modifica completa e la fin
     - **Interrompi tutto** **(CTRL** +  + **ALT+INTERR)** sospende un programma a esecuzione lunga.
     - **Arresta debug** (**MAIUSC** + **F5**) arresta il programma ovunque si trova e chiude il debugger.
     - **Restart** (**CTRL** MAIUSC F5 ) arresta il programma ovunque si trova e +  + lo riavvia dall'inizio nel debugger.
-    - **Mostra istruzione successiva**  + **(ALT+&#42;** ****) passa alla riga di codice successiva da eseguire. Questo è particolarmente utile per spostarsi all'interno del codice durante una sessione di debug e tornare rapidamente al punto in cui il debugger si è interrotto.
+    - **Show Next Statement** (**ALT** + **NUM** **&#42;**) passa alla riga di codice successiva da eseguire. Questo è particolarmente utile per spostarsi all'interno del codice durante una sessione di debug e tornare rapidamente al punto in cui il debugger si è interrotto.
     - **Istruzione (** **F11**) esegue la riga di codice successiva, immettendo nelle funzioni chiamate.
     - **Esegui istruzione/routine** (**F10**) esegue la riga successiva del codice, senza inserirsi nelle funzioni chiamate.
     - **Esci da istruzione/routine** (**MAIUSC**+**F11**) esegue la parte restante della funzione corrente e le pause nel codice chiamante.

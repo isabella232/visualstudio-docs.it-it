@@ -13,11 +13,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7eadad8efebfa673a7e6c12e7dc67fb8b601f884
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637235"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Creare file dei dati di profilatura portabili dalla riga di comando
 Per semplificare la condivisione dei dati di profilatura, è possibile usare lo strumento da riga di comando [VSPerfReport](../profiling/vsperfreport.md) per incorporare i simboli di un'esecuzione della profilatura nel file con estensione *vsp*.
@@ -35,7 +35,7 @@ Per semplificare la condivisione dei dati di profilatura, è possibile usare lo 
 
 - In una finestra del prompt dei comandi, digitare il comando seguente:
 
-   \<Path><strong>VsPerfReport \<</strong> VsP File> **/PackSymbols**
+   \<Path><strong>VsPerfReport \<</strong> VSP File> **/PackSymbols**
 
    Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: bcba9f17e47a4b3fd62415fde3e9365d4a253054
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710157"
 ---
 # <a name="visible-timeline-profile"></a>Profilo cronologia visibile
 Il profilo cronologia visibile per la visualizzazione dei blocchi dei thread fornisce informazioni statistiche e collegamenti ai report. Quando si esegue lo zoom avanti o indietro oppure si nascondono o si visualizzano canali, i numeri nella legenda attiva cambiano per riflettere gli elementi presenti nella visualizzazione. Per visualizzare un report su un elemento nella legenda, fare clic sull'elemento.

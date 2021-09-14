@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b181e91bf06538b09a12a394404926e30e00ca91
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710302"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 Ottiene una descrizione dettagliata dell'eccezione che ha generato questo evento.
@@ -50,7 +50,7 @@ int GetException(
 
 ## <a name="remarks"></a>Commenti
 
- [Solo C++] Il chiamante è responsabile del rilascio delle stringhe nella [struttura EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) e del rilascio dell'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) nella struttura .
+ [Solo C++] Il chiamante è responsabile della liberatura di qualsiasi stringa nella struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) e del rilascio dell'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) nella struttura .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -1,6 +1,6 @@
 ---
 title: EvaluateStatement
-description: Informazioni sul comando Valuta istruzione e su come valuta e visualizza l'istruzione specificata.
+description: Informazioni sul comando Evaluate Statement e su come valuta e visualizza l'istruzione specificata.
 ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f9f87bfc745770b6df728ac33d24e36d364052
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710245"
 ---
 # <a name="evaluate-statement-command"></a>Valuta istruzione (comando)
 
@@ -50,5 +50,5 @@ Obbligatorio. Istruzione da valutare.
 - [Comando Stampa](../../ide/reference/print-command.md)
 - [Visual Studio Comandi](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella di ricerca/comando](../../ide/find-command-box.md)
 - [Visual Studio Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md)

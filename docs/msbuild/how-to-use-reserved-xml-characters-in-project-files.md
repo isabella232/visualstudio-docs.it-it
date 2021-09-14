@@ -15,11 +15,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: f307143c89f36c62e45a08a98c78a7c9ba03d1ae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625674"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedura: Usare caratteri XML riservati nei file di progetto
 

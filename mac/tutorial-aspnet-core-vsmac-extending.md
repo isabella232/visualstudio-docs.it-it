@@ -8,11 +8,11 @@ ms.date: 10/18/2019
 ms.assetid: 047f5e36-f38e-4bf6-a1c5-3fde32978b7d
 ms.topic: tutorial
 ms.openlocfilehash: d2813f70a497df9057f312f561504639b4e1afcd
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964662"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710456"
 ---
 # <a name="tutorial-extending-an-existing-aspnet-core-web-application"></a>Esercitazione: Estensione di un'applicazione Web ASP.NET Core esistente
 
@@ -36,7 +36,7 @@ Si apprenderà come usare la soluzione eShopOnWeb in Visual Studio per Mac.
 
 ## <a name="step-3-adding-docker-and-running-it-locally"></a>Passaggio 3: Aggiunta di Docker ed esecuzione in locale
 
-Si apprenderà come aggiungere contenitori Docker all'applicazione eShopOnWeb e come eseguire l'applicazione dockerizzata ed eseguirne il debug.
+Si apprenderà come aggiungere contenitori Docker all'applicazione eShopOnWeb, nonché come eseguire l'applicazione dockerizzata ed eseguirne il debug.
 
 [Procedura dettagliata](https://github.com/dotnet-architecture/eShopOnWeb/wiki/03b.-Running-Locally-on-a-Linux-Container-from-Visual-Studio-for-Mac)
 

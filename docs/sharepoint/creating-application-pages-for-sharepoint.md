@@ -1,6 +1,6 @@
 ---
 title: Creazione di pagine applicazione per SharePoint | Microsoft Docs
-description: Creare pagine dell'applicazione SharePoint. Una pagina applicazione è una ASP.NET Web progettata per l'uso in un SharePoint web.
+description: Creare pagine dell'applicazione per SharePoint. Una pagina applicazione è una ASP.NET Web progettata per l'uso in un SharePoint web.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,11 +20,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 035c3b952fd16dd8aa4adf3ffb95542fe39464ff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711450"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Creare pagine dell'applicazione per SharePoint
   Una *pagina dell'applicazione* è una ASP.NET Web che è progettata per l'uso in un SharePoint Web. Le pagine dell'applicazione sono un tipo specializzato di ASP.NET pagina. La differenza principale tra una pagina dell'applicazione e una pagina ASP.NET standard è che una pagina dell'applicazione contiene contenuto unito a una SharePoint master. Una pagina master consente alle pagine dell'applicazione di condividere lo stesso aspetto e lo stesso comportamento delle altre pagine di un sito.
@@ -32,7 +32,7 @@ ms.locfileid: "122149520"
  Visual Studio consente di progettare pagine dell'applicazione usando una finestra di progettazione. La finestra di progettazione visualizza un'area di contenuto per ogni segnaposto di contenuto definito in una pagina master. È possibile progettare la pagina dell'applicazione trascinando i controlli in queste aree di contenuto.
 
 ## <a name="application-pages"></a>Pagine dell'applicazione
- Le pagine dell'applicazione vengono condivise tra tutti i siti del server, mentre una pagina del sito è specifica di un sito. Per altre informazioni, vedere [SharePoint Page Types](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14)).
+ Le pagine dell'applicazione vengono condivise tra tutti i siti del server, mentre una pagina del sito è specifica di un sito. Per altre informazioni, [vedere SharePoint di pagina](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14)).
 
  Per impostazione predefinita, la maggior parte delle pagine visualizzate quando si crea un SharePoint sito sono pagine del sito. È possibile aggiungere una pagina del sito a una SharePoint raccolta pagine. Gli utenti possono personalizzare una pagina del sito usando strumenti come SharePoint Designer. Una pagina del sito può ospitare anche funzionalità quali la Web part dinamica e le zone web part.
 
@@ -54,20 +54,20 @@ ms.locfileid: "122149520"
 |File|Descrizione|
 |----------|-----------------|
 |ASP.NET file di pagina (*aspx*)|Contiene il markup XML che definisce la pagina.|
-|File di codice della pagina dell'applicazione|Contiene il codice dietro la pagina dell'applicazione. Aggiungere il codice che gestisce gli eventi a questo file.|
+|File di codice della pagina dell'applicazione|Contiene il codice alla base della pagina dell'applicazione. Aggiungere il codice che gestisce gli eventi a questo file.|
 |File di codice della finestra di progettazione della pagina dell'applicazione|Contiene il codice generato dalla finestra di progettazione. Non modificare direttamente questo file.|
 
 ## <a name="design-and-debug-an-application-page"></a>Progettare ed eseguire il debug di una pagina dell'applicazione
- Progettare il contenuto di una pagina dell'applicazione usando la visualizzazione progettazione in Visual Studio. Questa finestra di progettazione viene visualizzata quando si apre la pagina dell'applicazione nel progetto (facendo doppio clic su di essa o aprendo il relativo menu di scelta rapida e scegliendo Apri **)** e quindi scegliendo il **pulsante** Progettazione nella parte inferiore dell'editor.
+ Progettare il contenuto di una pagina dell'applicazione usando la visualizzazione progettazione in Visual Studio. Questa finestra di progettazione viene visualizzata quando si apre la pagina dell'applicazione nel progetto (facendo doppio clic su di essa o aprendo il menu di scelta rapida e scegliendo Apri **)** e quindi scegliendo il **pulsante Progettazione** nella parte inferiore dell'editor.
 
 > [!NOTE]
 > È possibile progettare la pagina solo nella **visualizzazione Origine** della finestra di progettazione. La **visualizzazione Progettazione** della finestra di progettazione è disabilitata per le pagine dell'applicazione.
 
- È possibile eseguire il debug di una pagina dell'applicazione esattamente come si farebbe per altri SharePoint di progetto in Visual Studio. Quando si avvia il debugger Visual Studio, Visual Studio apre il SharePoint sito.
+ È possibile eseguire il debug di una pagina dell'applicazione esattamente come si esegue il debug di altri SharePoint di progetto in Visual Studio. Quando si avvia il debugger Visual Studio, Visual Studio apre il SharePoint sito.
 
  Per visualizzare la pagina dell'applicazione, è necessario passare manualmente al percorso della pagina dell'applicazione, ad esempio http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx.
 
- Per altre informazioni su come eseguire il debug di SharePoint progetti, vedere [Risolvere i SharePoint soluzioni](../sharepoint/troubleshooting-sharepoint-solutions.md).
+ Per altre informazioni su come eseguire il debug di SharePoint progetti, vedere Risolvere i [SharePoint soluzioni](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 ## <a name="choose-a-master-page"></a>Scegliere una pagina master
  Per impostazione predefinita, un **elemento Pagina applicazione** fa riferimento alla pagina master del sito in uso per eseguire il debug del progetto. Tale pagina è denominata v4.master ed è disponibile nella raccolta pagine **master** del SharePoint sito.

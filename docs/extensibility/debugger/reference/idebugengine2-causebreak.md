@@ -1,5 +1,5 @@
 ---
-description: Richiede che tutti i programmi di cui è in corso il debug da parte di questo motore di debug arrestino l'esecuzione al successivo tentativo di esecuzione di uno dei relativi thread.
+description: Richiede a tutti i programmi di cui viene eseguito il debug da questo motore di debug (DE) di arrestare l'esecuzione al successivo tentativo di esecuzione di uno dei thread.
 title: IDebugEngine2::CauseBreak | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ed068e3f0a5e1a595b9f93fec5d19de8b30690fd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711950"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-Richiede che tutti i programmi di cui è in corso il debug da parte di questo motore di debug arrestino l'esecuzione al successivo tentativo di esecuzione di uno dei relativi thread.
+Richiede a tutti i programmi di cui viene eseguito il debug da questo motore di debug (DE) di arrestare l'esecuzione al successivo tentativo di esecuzione di uno dei thread.
 
 ## <a name="syntax"></a>Sintassi
 

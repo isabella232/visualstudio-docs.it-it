@@ -22,11 +22,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: fb32bc23de2335a912d1f2f6d3047af140961404
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710043"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Panoramica di Information Rights Management e delle estensioni di codice gestito
   Microsoft Office Word e Microsoft Office Excel forniscono Information Rights Management (IRM), una funzionalità che consente di impedire a utenti non autorizzati di visualizzare o modificare informazioni riservate. Per informazioni dettagliate sul funzionamento di Information Rights Management, vedere la Guida nell'applicazione Office specifica.
@@ -45,7 +45,7 @@ ms.locfileid: "122147899"
 
 ## <a name="see-also"></a>Vedi anche
 - [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
-- [Protezione della password nei Office dati](../vsto/password-protection-on-office-documents.md)
+- [Protezione della password nei Office documenti](../vsto/password-protection-on-office-documents.md)
 - [Proteggere Office soluzioni](../vsto/securing-office-solutions.md)
-- [Distribuire una Office distribuzione](../vsto/deploying-an-office-solution.md)
+- [Distribuire una soluzione Office distribuzione](../vsto/deploying-an-office-solution.md)
 - [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)

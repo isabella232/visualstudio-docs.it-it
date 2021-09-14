@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f667821a9940603f887850a9b26fc1d8ca2f073
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637268"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aggiornare forme e connettori per riflettere il modello
 
@@ -40,7 +40,7 @@ La forma ha ora una proprietà di dominio che è possibile impostare nel codice 
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Se si vuole rendere la variabile di proprietà solo sotto il controllo del programma e non dall'utente, selezionare la nuova proprietà di dominio, ad esempio **Colore** riempimento nel diagramma di definizione DSL. Nella finestra di Finestra Proprietà impostare **Is Browsable** su `false` o Impostare Is UI **Readonly** su `true` .
+Se si vuole rendere la variabile di proprietà solo sotto il controllo del programma e non dall'utente, selezionare la nuova proprietà di dominio, ad esempio **Colore** riempimento nel diagramma di definizione DSL. Nella finestra di Finestra Proprietà impostare **Is Browsable** su `false` o Is UI **Readonly** su `true` .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definire le regole di modifica per fare in modo che colore, stile o posizione dipersi dalle proprietà degli elementi del modello
  È possibile definire regole che aggiornano l'aspetto della forma in base ad altre parti del modello. Ad esempio, è possibile definire una regola di modifica su un elemento del modello che aggiorna il colore della forma in base alle proprietà dell'elemento del modello. Per altre informazioni sulle regole di modifica, vedere [Regole di propagazione delle modifiche all'interno del modello.](../modeling/rules-propagate-changes-within-the-model.md)
@@ -87,7 +87,7 @@ Se si vuole rendere la variabile di proprietà solo sotto il controllo del progr
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Usare OnChildConfigured per inizializzare le proprietà di una forma
 
-Per impostare le proprietà di una forma quando viene creata per la prima volta, eseguire l'override `OnChildConfigured()` in una definizione parziale della classe diagramma. La classe diagramma viene specificata nella definizione DSL e il codice generato si trova in **Dsl\Generated Code\Diagram.cs.** Esempio:
+Per impostare le proprietà di una forma quando viene creata per la prima volta, eseguire l'override `OnChildConfigured()` in una definizione parziale della classe diagramma. La classe diagramma viene specificata nella definizione DSL e il codice generato si trova in **Dsl\Generated Code\Diagram.cs.** Ad esempio:
 
 ```csharp
 partial class MyLanguageDiagram

@@ -1,6 +1,6 @@
 ---
 title: Aggiunta di icone ai comandi di menu | Microsoft Docs
-description: Informazioni su come aggiungere icone ai comandi che possono essere visualizzati sia nei menu che nelle barre degli strumenti nell'ambiente Visual Studio di sviluppo integrato (IDE).
+description: Informazioni su come aggiungere icone ai comandi che possono essere visualizzati nei menu e nelle barre degli strumenti nell Visual Studio di sviluppo integrato (IDE).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c6ffca49ee3b3c89293be9d9bbc18ebf3f1bb0fe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035306"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636475"
 ---
 # <a name="add-icons-to-menu-commands"></a>Aggiungere icone ai comandi di menu
 I comandi possono essere visualizzati sia nei menu che nelle barre degli strumenti. Nelle barre degli strumenti è comune che un comando venga visualizzato con solo un'icona (per risparmiare spazio) mentre nei menu viene in genere visualizzato un comando con un'icona e un testo.
@@ -47,7 +47,7 @@ I comandi possono essere visualizzati sia nei menu che nelle barre degli strumen
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">
     ```
 
-5. Aggiungere un `<IDSymbol>` oggetto per l'icona. `name`L'attributo è l'ID dell'icona e indica la posizione sulla `value` striscia, se presente. Se è presente una sola icona, aggiungere 1. Il risultato dovrebbe essere simile al seguente:
+5. Aggiungere un `<IDSymbol>` oggetto per l'icona. `name`L'attributo è l'ID dell'icona e indica la relativa posizione sulla `value` striscia, se presente. Se è presente una sola icona, aggiungere 1. Il risultato dovrebbe essere simile al seguente:
 
     ```xml
     <!-- Create your own GUID -->
@@ -60,7 +60,7 @@ I comandi possono essere visualizzati sia nei menu che nelle barre degli strumen
 
     - Impostare il `guid` valore sul nome `<GuidSymbol>` dell'elemento creato nel passaggio precedente.
 
-    - Impostare il `href` valore sul percorso relativo del file bitmap (in questo caso Risorse<nome file **\\ dell'icona \>**.
+    - Impostare il `href` valore sul percorso relativo del file bitmap (in questo caso Resources<icon file **\\ name \>**.
 
     - Impostare il `usedList` valore su IDSymbol creato in precedenza. Questo attributo specifica un elenco delimitato da virgole delle icone da usare nel pacchetto VSPackage. Le icone non presenti nell'elenco vengono escluse dalla compilazione del modulo.
 

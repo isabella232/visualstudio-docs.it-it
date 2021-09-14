@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 749eb1e8d922ef7bc6e1b0f8f953b42fdde2fa08
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709931"
 ---
 # <a name="idiasymbolget_virtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 Recupera l'interfaccia dei simboli del tipo della tabella virtuale per un tipo definito dall'utente.
@@ -38,10 +38,10 @@ HRESULT get_virtualTableShape (
 [out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta la tabella virtuale per un tipo definito dall'utente.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o codice `S_FALSE` di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,6 +1,6 @@
 ---
 title: Elemento ProjectItemFolder | Microsoft Docs
-description: Ottenere informazioni di riferimento sull'elemento ProjectItemFolder, che rappresenta una cartella mappata nel riferimento XML Schema SharePoint elemento di progetto.
+description: Ottenere informazioni di riferimento sull'elemento ProjectItemFolder, che rappresenta una cartella mappata nel SharePoint xml schema dell'elemento di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 3873a4cbf50d216f3574c2ef8ce90255d3eb5d7b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084129"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710127"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder (elemento)
   Rappresenta una cartella mappata.
@@ -42,7 +42,7 @@ ms.locfileid: "122084129"
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|**Destinazione**|Obbligatorio **xs: attributo** stringa.<br /><br /> Percorso della cartella nel SharePoint a cui corrisponde la cartella mappata, relativa alla cartella radice della distribuzione. La cartella radice della distribuzione è determinata dal tipo di distribuzione specificato **dall'attributo Type.**<br /><br /> Per altre informazioni, vedere le  descrizioni  per le proprietà Percorso di distribuzione e Radice di distribuzione SharePoint di progetto in Sviluppare [SharePoint soluzioni](../sharepoint/developing-sharepoint-solutions.md).|
+|**Destinazione**|Obbligatorio **xs: attributo** stringa.<br /><br /> Percorso della cartella nell'installazione SharePoint cui corrisponde la cartella mappata, relativa alla cartella radice della distribuzione. La cartella radice della distribuzione è determinata dal tipo di distribuzione specificato **dall'attributo Type.**<br /><br /> Per altre informazioni, vedere le  descrizioni  per le proprietà Percorso di distribuzione e Radice distribuzione SharePoint progetto in Sviluppare [SharePoint soluzioni](../sharepoint/developing-sharepoint-solutions.md).|
 |**Tipo**|Attributo **xs:string** obbligatorio.<br /><br /> Tipo di distribuzione per la cartella mappata. Per altre informazioni sui valori possibili, vedere la descrizione per la proprietà **Tipo** di distribuzione SharePoint di progetto in Sviluppare [SharePoint soluzioni](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -52,7 +52,7 @@ ms.locfileid: "122084129"
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un SharePoint di progetto. Questo elemento è l'elemento radice obbligatorio del file *spdata.*|
+|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un SharePoint di progetto. Questo elemento è l'elemento radice obbligatorio del file *con estensione spdata.*|
 
 ## <a name="remarks"></a>Commenti
  Per altre informazioni sulle cartelle mappate, vedere [Procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).

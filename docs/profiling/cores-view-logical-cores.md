@@ -1,6 +1,6 @@
 ---
 title: Core logici nella visualizzazione Core | Microsoft Docs
-description: Nella visualizzazione Core ogni riga della sequenza temporale rappresenta un core logico e le righe sono denominate Core logico 0, Core logico 1 e così via.
+description: Nella visualizzazione Core ogni riga nella sequenza temporale rappresenta un core logico e le righe sono denominate Logical Core 0, Logical Core 1 e così via.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: dce9842df236afcbc3b060a42248fd8d9eb7c59c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710196"
 ---
 # <a name="cores-view-logical-cores"></a>Core logici nella visualizzazione Core
 Ogni nome di canale rappresenta uno dei core logici che esistono nel sistema profilato. Per la denominazione il conteggio viene eseguito da 0 fino al numero totale di core logici. Ad esempio, un sistema di quattro core esegue il conteggio dal core logico 0 al core logico 3.

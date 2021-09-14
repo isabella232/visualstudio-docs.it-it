@@ -17,24 +17,24 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 4694ca84475aa569b047e8de818613fe30d04c29
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710087"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedura: Aggiungere comandi ai menu di scelta rapida
-  In questo argomento viene illustrato come aggiungere comandi a un menu di scelta rapida in un'applicazione Office utilizzando un VSTO componente aggiuntivo.
+  Questo argomento illustra come aggiungere comandi a un menu di scelta rapida in un'applicazione Office usando un VSTO componente aggiuntivo.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Per aggiungere comandi al menu di scelta rapida in Office
 
-1. Aggiungere un elemento **Barra multifunzione (XML)** in un progetto di componente aggiuntivo VSTO o a livello di documento. Per altre informazioni, vedere [Procedura: Iniziare a personalizzare la barra multifunzione.](../vsto/how-to-get-started-customizing-the-ribbon.md) In
+1. Aggiungere un elemento **Barra multifunzione (XML)** in un progetto di componente aggiuntivo VSTO o a livello di documento. Per altre informazioni, vedere [Procedura: Introduzione alla personalizzazione della barra multifunzione.](../vsto/how-to-get-started-customizing-the-ribbon.md) In
 
 2. **Esplora soluzioni** selezionare **ThisAddin.cs** o **ThisAddin.vb**.
 
-3. Sulla barra dei menu scegliere **Visualizza**  >  **codice.**
+3. Sulla barra dei menu scegliere **Visualizza**  >  **codice**.
 
      Il file di classe **ThisAddin** viene aperto nell'editor di codice.
 
@@ -45,13 +45,13 @@ ms.locfileid: "122100257"
 
 5. In **Esplora soluzioni** selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è *denominatoRibbon1.xml*.
 
-6. Sulla barra dei menu scegliere **Visualizza**  >  **codice.**
+6. Sulla barra dei menu scegliere **Visualizza**  >  **codice**.
 
      Il file XML della barra multifunzione viene aperto nell'editor di codice.
 
 7. Nell'editor di codice aggiungere codice XML che descriva il menu di scelta rapida e il controllo da aggiungere al menu di scelta rapida.
 
-     Nell'esempio seguente viene aggiunto un pulsante, un controllo e un controllo della raccolta al menu di scelta rapida per un documento di Word. L'ID del controllo di questo menu di scelta rapida è ContextMenuText. Per un elenco completo degli ID di controllo Office 2010, vedere file della Guida di [Office 2010:](https://www.microsoft.com/download/details.aspx?id=6627)Office di controllo dell'interfaccia utente Fluent.
+     Nell'esempio seguente viene aggiunto un pulsante, un controllo e un controllo della raccolta al menu di scelta rapida per un documento di Word. L'ID del controllo di questo menu di scelta rapida è ContextMenuText. Per un elenco completo degli ID Office controllo di collegamento 2010, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=6627).
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -85,5 +85,5 @@ ms.locfileid: "122100257"
 ## <a name="see-also"></a>Vedi anche
 - [Office Personalizzazione dell'interfaccia utente](../vsto/office-ui-customization.md)
 - [Procedura dettagliata: Creare menu di scelta rapida per i segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Personalizzare i menu di scelta rapida in Office 2010](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

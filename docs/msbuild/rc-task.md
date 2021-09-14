@@ -26,11 +26,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 393e34bf68745df58f7f3e7dc4d45afb308c6c80
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711607"
 ---
 # <a name="rc-task"></a>RC (attività)
 
@@ -42,12 +42,12 @@ Esegue il wrapping dello strumento Compilatore di risorse di Microsoft Windows, 
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Parametro **Facoltativo String[].**<br /><br /> Aggiunge una directory all'elenco delle directory in cui vengono cercati i file di inclusione.<br /><br /> Per altre informazioni, vedere l'opzione **/I** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
-|**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Elenco di opzioni della riga di comando. ad esempio/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività **RC**.<br /><br /> Per altre informazioni, vedere le opzioni in [ Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
-|**culture**|Parametro **String** facoltativo.<br /><br /> Specifica un ID impostazioni locali che rappresenta le impostazioni cultura usate nelle risorse.<br /><br /> Per altre informazioni, vedere l'opzione **/l** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)).|
+|**AdditionalIncludeDirectories**|Parametro **String[]** facoltativo.<br /><br /> Aggiunge una directory all'elenco delle directory in cui vengono cercati i file di inclusione.<br /><br /> Per altre informazioni, vedere l'opzione **/I** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
+|**Opzioni aggiuntive**|Parametro **String** facoltativo.<br /><br /> Elenco di opzioni della riga di comando. ad esempio / \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività **RC**.<br /><br /> Per altre informazioni, vedere le opzioni in [ Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
+|**Impostazioni cultura**|Parametro **String** facoltativo.<br /><br /> Specifica un ID impostazioni locali che rappresenta le impostazioni cultura usate nelle risorse.<br /><br /> Per altre informazioni, vedere l'opzione **/l** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)).|
 |**IgnoreStandardIncludePath**|Parametro **booleano** facoltativo.<br /><br /> Se `true`, impedisce al compilatore di risorse di verificare la variabile di ambiente INCLUDE durante la ricerca di file di intestazione o file di risorse.<br /><br /> Per altre informazioni, vedere l'opzione **/x** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)).|
 |**NullTerminateStrings**|Parametro **booleano** facoltativo.<br /><br /> Se `true`, fa terminare con Null tutte le stringhe nella tabella di stringhe.<br /><br /> Per altre informazioni, vedere l'opzione **/n** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)).|
-|**PreprocessorDefinitions**|Parametro **Facoltativo String[].**<br /><br /> Definire uno o più simboli del preprocessore per il compilatore di risorse. Specificare un elenco di simboli di macro.<br /><br /> Per altre informazioni, vedere l'opzione **/d** in [ Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)). Vedere anche **UndefinePreprocessorDefinitions** in questa tabella.|
+|**PreprocessorDefinitions**|Parametro **String[]** facoltativo.<br /><br /> Definire uno o più simboli del preprocessore per il compilatore di risorse. Specificare un elenco di simboli di macro.<br /><br /> Per altre informazioni, vedere l'opzione **/d** in [ Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)). Vedere anche **UndefinePreprocessorDefinitions** in questa tabella.|
 |**ResourceOutputFileName**|Parametro **String** facoltativo.<br /><br /> Specifica il nome del file di risorse. Specificare un nome di file di risorse.<br /><br /> Per altre informazioni, vedere l'opzione **/fo** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)).|
 |**ShowProgress**|Parametro **booleano** facoltativo.<br /><br /> Se `true`, visualizza messaggi che segnalano lo stato di avanzamento del compilatore.<br /><br /> Per altre informazioni, vedere l'opzione **/v** in [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-) (Uso di RC (riga di comando RC)).|
 |**Origine**|Parametro `ITaskItem[]` obbligatorio.<br /><br /> Definisce una matrice di elementi del file di origine MSBuild che può essere usata ed emessa dalle attività.|

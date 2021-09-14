@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27987f582606f1978c90ff09f36c6e75714040ea
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111216"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636331"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 Rimuove l'eccezione specificata in modo che non sia più gestita dal motore di debug.
@@ -49,7 +49,7 @@ int RemoveSetException(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- L'eccezione rimossa deve essere stata impostata in precedenza da una chiamata precedente al [metodo SetException.](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
+ L'eccezione da rimuovere deve essere stata impostata in precedenza da una chiamata precedente al [metodo SetException.](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 
  Per rimuovere tutte le eccezioni impostate contemporaneamente, chiamare il [metodo RemoveAllSetExceptions.](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)
 

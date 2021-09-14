@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6aa20a2329416a16fb33776ad6b20db951b58da9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636484"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Punti di interruzione (Visual Studio SDK)
 Esistono tre tipi di punti di interruzione: in sospeso, associato ed errore.
@@ -31,7 +31,7 @@ Esistono tre tipi di punti di interruzione: in sospeso, associato ed errore.
 
 - È rappresentato da [un'interfaccia IDebugPendingBreakpoint2.](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
-  **Punto di interruzione associato:**
+  **Un punto di interruzione associato:**
 
 - Astrazione per un punto di interruzione associato o associato a un singolo contesto del codice. Ogni punto di interruzione associato viene generato in risposta a un punto di interruzione in sospeso. Un punto di interruzione in sospeso può tuttavia generare più di un punto di interruzione associato.
 
@@ -41,7 +41,7 @@ Esistono tre tipi di punti di interruzione: in sospeso, associato ed errore.
 
   **Punto di interruzione dell'errore:**
 
-- Astrazione per descrivere un errore durante il tentativo di associare un punto di interruzione in sospeso a un contesto del codice. Un punto di interruzione di errore descrive un errore nella posizione o nell'espressione del punto di interruzione stessa. Per altre informazioni, vedere [Associazione di punti di interruzione](../../extensibility/debugger/binding-breakpoints.md).
+- Astrazione per descrivere un errore nel tentativo di associare un punto di interruzione in sospeso a un contesto del codice. Un punto di interruzione di errore descrive un errore nella posizione o nell'espressione del punto di interruzione stessa. Per altre informazioni, vedere Associazione [di punti di interruzione.](../../extensibility/debugger/binding-breakpoints.md)
 
    L'errore del punto di interruzione può essere un errore o un avviso.
 

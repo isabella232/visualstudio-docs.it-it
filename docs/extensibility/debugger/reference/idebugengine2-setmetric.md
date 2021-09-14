@@ -1,6 +1,6 @@
 ---
 description: Questo metodo imposta un valore del Registro di sistema noto come metrica.
-title: Interfaccia IDebugEngine2::SetMetric | Microsoft Docs
+title: IDebugEngine2::SetMetric | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6af1b13fb48f29140ccb5a76f944c48909246a34
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636323"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 Questo metodo imposta un valore del Registro di sistema noto come metrica.

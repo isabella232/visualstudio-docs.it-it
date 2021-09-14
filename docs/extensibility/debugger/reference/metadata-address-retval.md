@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a95ac1b17cfec2a2b78b74233ad5f4c5addafdd0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122103104"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711874"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 Questa struttura rappresenta un valore restituito da un metodo o una funzione.
@@ -61,7 +61,7 @@ public struct METADATA_ADDRESS_RETVAL {
  Matrice di byte che forma la firma del valore restituito.
 
 ## <a name="remarks"></a>Commenti
- Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_RETVAL` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) tabella).
+ Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_RETVAL` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) dati).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h

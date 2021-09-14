@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
 ms.openlocfilehash: dca21119a73c03b63a273f7b4c22d70ecdb2a583
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710511"
 ---
 # <a name="editor-behavior"></a>Comportamento dell'editor
 

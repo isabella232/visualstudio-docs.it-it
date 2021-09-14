@@ -1,5 +1,5 @@
 ---
-description: Recupera un simbolo che rappresenta il limite superiore di una dimensione di matrice FORTRAN.
+description: Recupera un simbolo che rappresenta il limite superiore di una dimensione di matrice ARRAYRAN.
 title: IDiaSymbol::get_upperBound | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 939f19c7126ae027fbc31704a250e6e84a6c2187
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113259"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710396"
 ---
 # <a name="idiasymbolget_upperbound"></a>IDiaSymbol::get_upperBound
-Recupera un simbolo che rappresenta il limite superiore di una dimensione di matrice FORTRAN.
+Recupera un simbolo che rappresenta il limite superiore di una dimensione di matrice ARRAYRAN.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,13 +35,13 @@ HRESULT get_upperBound (
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il limite superiore di una dimensione di matrice FORTRAN.
+[out] Restituisce un [oggetto IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il limite superiore di una dimensione di matrice PODRAN.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

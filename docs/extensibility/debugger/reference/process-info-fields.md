@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cdcf987151af31e9f8921bfca3f758b20b818e32
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711846"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 È stato specificato il tipo di informazioni da recuperare per un processo.
@@ -87,11 +87,11 @@ public enum enum_PROCESS_INFO_FIELDS {
  Compila tutti i campi.
 
 ## <a name="remarks"></a>Commenti
- Passato al [metodo GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) per indicare quali campi della [struttura](../../../extensibility/debugger/reference/process-info.md) PROCESS_INFO devono essere inizializzati.
+ Passato al [metodo GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) per indicare quali campi della [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) devono essere inizializzati.
 
- Usato anche `Fields` nel campo della struttura per indicare quali campi vengono usati e `PROCESS_INFO` validi.
+ Usato anche nel `Fields` campo della struttura per indicare quali campi vengono usati e `PROCESS_INFO` validi.
 
- Questi flag possono essere combinati con un oggetto bit per `OR` bit.
+ Questi flag possono essere combinati con un bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

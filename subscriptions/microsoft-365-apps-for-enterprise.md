@@ -8,19 +8,19 @@ ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come installare e Microsoft 365 per le aziende
 ms.openlocfilehash: e1d629aae2d3c9e5d906a5593c287bd0b3250446
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709979"
 ---
-# <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 app aziendali nelle sottoscrizioni Visual Studio
+# <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 per le app aziendali nelle Visual Studio aziendali
 Microsoft 365 app aziendali (in precedenza Office 365 Pro Plus) è disponibile nelle sottoscrizioni Visual Studio selezionate. 
 
 Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Microsoft 365 apps for enterprise è una sottoscrizione fornita con app Premium come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo nel PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
 
 > [!NOTE]
-> Se incluso nella sottoscrizione Visual Studio, si ha la licenza per l'uso di Microsoft 365 per le aziende per l'uso in produzione.  
+> Se incluso nella sottoscrizione Visual Studio, si ha la licenza per l'uso Microsoft 365 per le app aziendali per l'uso in produzione.  
 
 ## <a name="activation-steps"></a>Passaggi di attivazione
 Il processo per attivare la sottoscrizione Microsoft 365 per le app aziendali è semplice.  Seguire questa procedura per attivare la sottoscrizione e installare le applicazioni:
@@ -44,7 +44,7 @@ Il processo per attivare la sottoscrizione Microsoft 365 per le app aziendali è
 
 1. Al termine della creazione dell'account, verrà visualizzata una finestra di dialogo con la pagina di accesso per il portale di Office e il nuovo ID utente.  Prendere nota di queste informazioni per usarle in seguito e selezionare **Avvia** installazione per iniziare a installare le Microsoft 365 app.
    > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 app aziendali Salvare queste informazioni](_img/microsoft-365-apps-for-enterprise/save-this-info.png "Salvare il nuovo ID utente e il collegamento al portale Office utenti.")
+   > ![Microsoft 365 app aziendali Salvare queste informazioni](_img/microsoft-365-apps-for-enterprise/save-this-info.png "Salvare il nuovo ID utente e il collegamento al Office utenti.")
 
 1. Si verrà automaticamente connessi al portale Office e si è ora pronti per installare le applicazioni.  Selezionare il **pulsante** Installa per iniziare.
    > [!div class="mx-imgBorder"]
@@ -73,7 +73,7 @@ Il processo per attivare la sottoscrizione Microsoft 365 per le app aziendali è
 Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per il supporto tecnico con qualsiasi componente delle Microsoft 365 per le aziende, visitare https://support.microsoft.com/allproducts e selezionare il prodotto.
+- Per il supporto tecnico con qualsiasi componente Microsoft 365 per le app aziendali, visitare https://support.microsoft.com/allproducts e selezionare il prodotto.
 - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vssubscriberhelp)
 - Per domande sull'IDE di Visual Studio, su Azure DevOps o su altri prodotti o servizi di Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
 
@@ -87,4 +87,4 @@ Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visual
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Credito individuale di Azure DevTest](vs-azure.md) Se si prevede di sviluppare applicazioni per Office, è necessario attivare la sottoscrizione [Office developer](./vs-m365.md)
+- [Credito individuale di Azure DevTest](vs-azure.md) Se si prevede di sviluppare applicazioni per Office, è necessario attivare la sottoscrizione Office [developer](./vs-m365.md)

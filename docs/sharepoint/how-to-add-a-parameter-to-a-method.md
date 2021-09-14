@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 1023044ebcd765a411aa6edfb358f5f6191ed7028d5e8559fe020e27f7d57ade
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5868dfe761030ed46d71b45cbe646959f8824ece
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332339"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625188"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Procedura: Aggiungere un parametro a un metodo
   Usare un parametro per passare informazioni nel metodo o per restituire informazioni da un metodo. Tutti i metodi devono avere almeno un parametro. Per altre informazioni su come progettare un parametro per supportare il tipo di metodo che si desidera creare, vedere Progettazione di un modello di [connettività dei dati di business.](../sharepoint/designing-a-business-data-connectivity-model.md)
@@ -36,7 +36,7 @@ ms.locfileid: "121332339"
 
 1. Aggiungere un metodo a un'entità.
 
-2. Sulla barra dei menu scegliere **Visualizza altri dettagli**  >  **Windows**  >  **metodo BDC**.
+2. Sulla barra dei menu scegliere **Visualizza altri**  >  **Windows**  >  **dettagli metodo BDC**.
 
      Verrà **visualizzata la finestra BDC Method Details (Dettagli metodo BDC).** Per altre informazioni, vedere [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md).
 

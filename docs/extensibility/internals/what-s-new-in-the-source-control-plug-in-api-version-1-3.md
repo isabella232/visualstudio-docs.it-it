@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1b3ee614a0f754307c37e5d48dfb3d9f461ec432
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041802"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711730"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Novità&#39;'API del plug-in del controllo del codice sorgente versione 1.3
 L'API plug-in del controllo del codice sorgente versione 1.3 introduce le nuove funzioni seguenti per fornire un controllo più avanzato.

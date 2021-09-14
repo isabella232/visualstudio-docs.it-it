@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 488d39d0126ca150f440c2eae3a95de9177c5f4d323b4b0f471be6d2840158d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c3f2ca8799b0816ffe5c33d954d362183f330f25
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711787"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (Visual Studio personalizzati)
 Specifica se l'utente può modificare il campo della posizione.
@@ -51,7 +51,7 @@ Specifica se l'utente può modificare il campo della posizione.
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve essere o , che indica se l'utente può modificare o meno la casella di testo Posizione nella finestra di `true` `false` dialogo **Project** nuova posizione. 
+ Il testo deve essere o , che indica se l'utente può modificare o meno la casella di testo Percorso nella finestra di `true` `false` dialogo **Project** nuova posizione. 
 
 ## <a name="remarks"></a>Commenti
  `EnableEditOfLocationField` è un elemento facoltativo. Il valore predefinito è , che consente all'utente di modificare il valore nella casella di testo Percorso della finestra `true` **di dialogo Project** nuova posizione. 

@@ -18,11 +18,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: c69cd284a6268d132b90242b8c2a461b51718874
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093060"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625133"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procedura: Aggiungere e rimuovere elementi in SharePoint funzionalità
   Quando si crea una soluzione SharePoint, Visual Studio aggiunge gli elementi SharePoint progetto predefiniti alla funzionalità. Prima della distribuzione, è possibile aggiungere e rimuovere SharePoint di progetto per modificare la SharePoint funzionalità.
@@ -47,13 +47,13 @@ ms.locfileid: "122093060"
 
 ## <a name="remove-sharepoint-project-items-from-a-feature"></a>Rimuovere SharePoint di progetto da una funzionalità
 
-#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Per rimuovere SharePoint elementi con Feature Designer
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Per rimuovere SharePoint elementi con Progettazione funzionalità
 
 1. Scegliere uno o più elementi **nell'elenco Elementi nell'elenco** Funzionalità.
 
 2. Scegliere il **pulsante** Rimuovi (<) per rimuovere un elemento alla  volta oppure scegliere il pulsante Rimuovi tutto (<<) per rimuovere tutti gli elementi.
 
-     Gli SharePoint Project vengono visualizzati **nell'elenco Elementi nell'elenco** Soluzione .
+     Gli SharePoint Project vengono visualizzati **nell'elenco Elementi della** soluzione .
 
 ## <a name="see-also"></a>Vedi anche
 - [Creare SharePoint funzionalità](../sharepoint/creating-sharepoint-features.md)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: f3fe85f37d75db8a86f544908e23a0a229992e89
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710410"
 ---
 # <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
 Recupera il tipo di base per questo simbolo.

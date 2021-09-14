@@ -14,12 +14,12 @@ ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a2640cafaa265436def7a49e9089fe65bcfe98046610a906f690fd65ae707aab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7e5eadf964f8809c10a4a7b6654397b7ebb9b4f1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637611"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
 Quando si apre per la prima volta una soluzione Domain-Specific Language Tools (DSL Tools) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f38d004deab394abff83fd24d8a871c8e40b9f5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636779"
 ---
 # <a name="idiasymbolget_hfadouble"></a>IDiaSymbol::get_hfaDouble
 Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene dati di aggregazione a virgola mobile (HFA) omogenei di tipo double.
@@ -41,7 +41,7 @@ HRESULT get_hfaDouble(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Osservazioni
 

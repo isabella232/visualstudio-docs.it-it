@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 910aa4d25325ac6498e941bbba3a1a6d7ee2f957
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637252"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 
@@ -134,7 +134,7 @@ Diversi tipi di diagramma sono utili per descrivere la progettazione a diversi l
 
 |**Categoria**|**Collegamenti**|
 |-|-|
-|**Video**|![collegamento al video ](../data-tools/media/playvideo.gif) [MSDN How Do I Videos: How to Create and Use UML Models and Diagrams (How Do I Videos: How to Create and Use UML Models and Diagrams(](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100)) Come creare e usare diagrammi e modelli UML Visual Studio 2010 Ultimate)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Video**|![collegamento al video ](../data-tools/media/playvideo.gif) [video How Do I Videos: How to Create and Use UML Models and Diagrams (How Do I Videos: How to Create and Use UML Models and Diagrams(](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100)) Come creare e usare diagrammi e modelli UML Visual Studio 2010 Ultimate)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![collegamento al video ](../data-tools/media/playvideo.gif) [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**Forum**|- [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blog**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](/previous-versions/dn630665(v=msdn.10))|

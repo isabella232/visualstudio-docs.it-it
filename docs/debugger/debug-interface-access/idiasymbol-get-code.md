@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 33e44a4722de1c827d0590199481daa770c67fb6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052277"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710404"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Recupera un flag che specifica se il simbolo fa riferimento a un indirizzo di codice.

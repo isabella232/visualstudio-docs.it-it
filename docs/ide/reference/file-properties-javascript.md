@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aae0df927b4544afe275b8cdf056cc45741a3aa3998182cbcf809b3c2b1f6005
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c54ce24025f9ec15bc03d02825e961f9a03f3715
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121258915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710233"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
 
@@ -69,7 +69,7 @@ Visualizza il percorso completo del file come valore di sola lettura. Per modifi
 ## <a name="reference-file-properties"></a>Proprietà File di riferimento
 In questa sezione vengono descritte le proprietà comuni ai file cui fa riferimento un'app UWP sviluppata con JavaScript. Quando si seleziona un riferimento come un file con estensione .winmd, un riferimento SDK, un riferimento da progetto a progetto o un riferimento ad assembly in Esplora soluzioni, le altre proprietà possono essere visualizzate nella finestra Proprietà, in base al tipo di file.
 
-### <a name="culture"></a>culture
+### <a name="culture"></a>Impostazioni cultura
 Visualizza la lingua associata al riferimento.
 
 ### <a name="file-type"></a>Tipo di file

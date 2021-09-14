@@ -1,6 +1,6 @@
 ---
 title: Riferimenti per le API del profiler di Visual Studio (native)
-description: Informazioni su come le VISUAL STUDIO del profiler consentono di controllare a livello di codice la quantità di dati raccolti e di inserire timestamp e contrassegni del profilo durante la profilatura.
+description: Informazioni su come le API Visual Studio profiler consentono di controllare a livello di codice la quantità di dati raccolti e di inserire timestamp e contrassegni del profilo durante la profilatura.
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -17,14 +17,14 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e782ced3a2760af780f70f586fb79329da68394c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140700"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710155"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Riferimenti per le API del profiler di Visual Studio (native)
-Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, includere il file di intestazione *VSPerf.h* e aggiungere *VSPerf.lib* nel progetto.
+Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, includere il file di intestazione *VSPerf.h* e aggiungere *vsPerf.lib* nel progetto.
 
 > [!NOTE]
 > Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).

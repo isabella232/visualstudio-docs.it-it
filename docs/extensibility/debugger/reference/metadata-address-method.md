@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b462e63ec64fec9de292ee7f497f8b62333dd7ba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122103130"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711882"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 Questa struttura rappresenta l'indirizzo di un metodo di una classe.
@@ -58,7 +58,7 @@ public struct METADATA_ADDRESS_METHOD {
  Versione del metodo (questo valore è univoco per il provider di simboli).
 
 ## <a name="remarks"></a>Commenti
- Questa struttura fa parte dell'unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore dell'enumerazione ADDRESS_KIND `dwKind` di `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_METHOD` dati). [](../../../extensibility/debugger/reference/address-kind.md)
+ Questa struttura fa parte dell'unione nella [struttura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il campo della struttura è impostato su (un valore `dwKind` dell'enumerazione `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_METHOD` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) dati).
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: sh.h

@@ -1,6 +1,6 @@
 ---
 title: Runtime di .NET Core
-description: Personalizzazione di esempio con devinit per il repo dotnet/runtime.
+description: Esempio di personalizzazione con devinit per il repo dotnet/runtime.
 ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
@@ -11,23 +11,23 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3c8ba55338a957239732f7a45a46acbcb3d9c95bf980efc5e49af4e898cbfac1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d703e71b6f8ab57ab07c4143fdd5435585c6004c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452859"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710352"
 ---
 # <a name="net-core-runtime"></a>Runtime di .NET Core
 
 > [!IMPORTANT]
-> A partire dal 12 aprile 2021, la connessione a GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è rivolta alle esperienze in continua evoluzione per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di carichi di lavoro Visual Studio cloud. Nell'ambito di `devinit` questo e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community degli sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
+> A partire dal 12 aprile 2021, la connessione GitHub Codespaces da Visual Studio 2019 non sarà più supportata e questa anteprima privata è stata conclusa. L'attenzione è incentrata sull'evoluzione delle esperienze per un ciclo interno basato sul cloud e soluzioni VDI ottimizzate per un'ampia gamma di Visual Studio di lavoro. Come parte di questo `devinit` e degli strumenti associati non saranno più disponibili. Si consiglia di partecipare al forum della community per sviluppatori per Visual Studio informazioni sulle anteprime future e informazioni sulla roadmap.
 
-Questo esempio illustra come personalizzare il runtime di .NET Core [dotnet/runtime](https://github.com/dotnet/runtime) per il provisioning automatico [GitHub Codespaces.](https://github.com/features/codespaces)
+Questo esempio illustra come personalizzare il runtime [dotnet/runtime](https://github.com/dotnet/runtime) di .NET Core per il provisioning automatico con GitHub [Codespace.](https://github.com/features/codespaces)
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-Questo script viene chiamato da _PostCloneSetup.ps1_ e può anche essere eseguito in locale per configurare il repository. Questo file deve essere nella stessa cartella di _.devcontainer.jsin_.
+Questo script viene chiamato da _PostCloneSetup.ps1_ e può essere eseguito anche in locale per configurare il repository. Questo file deve essere nella stessa cartella _di .devcontainer.json._
 
 ```console
 devinit init
@@ -36,7 +36,7 @@ git config --system core.longpaths true
 
 ## <a name="packagesconfig"></a>packages.config
 
-Il _packages.config_ è un file [Chocolatey](https://chocolatey.org/) che definisce l'elenco di pacchetti Chocolatey da installare. Questo file deve essere nella stessa cartella di _.devcontainer.jsin_.
+Il _packages.config_ file è un file [Chocolatey](https://chocolatey.org/) che definisce l'elenco di pacchetti Chocolatey da installare. Questo file deve essere nella stessa cartella _di .devcontainer.json._
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +48,7 @@ Il _packages.config_ è un file [Chocolatey](https://chocolatey.org/) che defini
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve essere nella stessa cartella in cui si.devcontainer.js _file._
+Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve essere nella stessa cartella del file _con estensione devcontainer.json._
 
 ```json
 {
@@ -67,9 +67,9 @@ Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve essere n
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.jssu
+## <a name="devcontainerjson"></a>.devcontainer.json
 
-Contenuto del.devcontainer.js _nel_ file nella radice del repo.
+Contenuto del file _devcontainer.json_ nella radice del repo.
 
 ```json
 {

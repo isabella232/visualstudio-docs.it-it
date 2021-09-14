@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: b0e96a74b56226818c96e049df93dba8b1fa721a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085546"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637436"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Impostazione di un'immagine di sfondo in un diagramma
 In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagine di sfondo per una finestra di progettazione generata usando codice personalizzato.
@@ -26,7 +26,7 @@ In Visual Studio Visualization and Modeling SDK è possibile impostare l'immagin
 
 1. Copiare il file di immagine da usare come sfondo per il diagramma nella directory Dsl\Resources del progetto corrente.
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella Dsl\Resources, scegliere **Aggiungi** e quindi fare clic su **Elemento esistente**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella Dsl\Resources, scegliere Aggiungi **e** quindi fare clic su **Elemento esistente**.
 
 3. Nella finestra **di dialogo Aggiungi elemento** esistente passare alla cartella Dsl\Resources.
 

@@ -14,11 +14,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 69b675f19060cf57d8c9dca03414709de5545199
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625385"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Passaggio 6: Usare il modello Progetto Web Django di sondaggi
 
@@ -185,7 +185,7 @@ Per vedere l'effetto della modifica di un modello, seguire questa procedura:
     ```
 
 1. Salvare il file, fare clic con il pulsante destro del mouse sul progetto **DjangoPolls** in **Esplora soluzioni** e quindi selezionare **Python** > **Creazione migrazioni Django**.
-1. Selezionare il **Project** comando Mostra tutti i file per visualizzare lo script appena generato nella cartella  >   **migrations** il cui nome inizia **con 002_auto_**. Fare clic con il pulsante destro del mouse sul file e scegliere **Includi nel progetto**. È quindi possibile **selezionare** Project mostra tutti i  >  **file** per ripristinare la visualizzazione originale. Per informazioni dettagliate su questo passaggio, vedere la seconda domanda di seguito.
+1. Selezionare il **Project** mostra tutti i file per visualizzare lo script appena generato nella cartella  >   **migrations,** il cui nome inizia **con 002_auto_**. Fare clic con il pulsante destro del mouse sul file e scegliere **Includi nel progetto**. È quindi possibile selezionare **Project**  >  **mostra tutti i file** per ripristinare la visualizzazione originale. Per informazioni dettagliate su questo passaggio, vedere la seconda domanda di seguito.
 1. Se lo si desidera, aprire il file per esaminare come sono cambiati gli script Django dallo stato del modello precedente al nuovo stato.
 1. Fare di nuovo clic con il Visual Studio progetto e selezionare **Python**  >  **Django Migrate** per applicare le modifiche al database.
 1. Se si desidera, aprire il database in un visualizzatore appropriato per verificare la modifica.
@@ -200,7 +200,7 @@ Risposta: Se i modelli non corrispondono a quanto contenuto nel database, Django
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Domanda: Perché Esplora soluzioni non mostra gli script appena generati dopo l'esecuzione del comando Creazione migrazioni Django?
 
-Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Migrazione Django**, non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderli visibili, selezionare prima il Project di menu Mostra tutti i file o il pulsante della barra degli strumenti illustrato  >   nell'immagine seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
+Risposta: Anche se gli script appena generati sono presenti nella cartella *app/migrations* e vengono applicati quando si esegue il comando **Migrazione Django**, non vengono visualizzati automaticamente in **Esplora soluzioni** perché non sono stati aggiunti al progetto di Visual Studio. Per renderli visibili, selezionare prima il Project di menu Mostra tutti i file o il pulsante della barra degli strumenti  >   illustrato nell'immagine seguente. Questo comando determina la visualizzazione in **Esplora soluzioni** di tutti i file nella cartella di progetto, con un'icona con contorno punteggiato per gli elementi che non sono stati aggiunti al progetto. Fare clic con il pulsante destro del mouse sui file da aggiungere e scegliere **Includi nel progetto** per includerli anche nel controllo del codice sorgente al successivo commit.
 
 ![Comando Includi nel progetto in Esplora soluzioni](media/django/step06-include-migrations-script-in-project.png)
 

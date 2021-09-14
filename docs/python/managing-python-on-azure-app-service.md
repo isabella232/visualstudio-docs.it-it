@@ -13,11 +13,11 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 7d571a490d93e57084a9b372b385eb406a592208
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106887"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625338"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Come configurare un ambiente Python in Servizio app di Azure (Windows)
 
@@ -47,7 +47,7 @@ Il supporto di Python personalizzabile per il servizio app di Azure viene offert
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Scegliere una versione di Python tramite Azure Resource Manager
 
-Se si distribuisce un servizio app con un modello di Azure Resource Manager, aggiungere l'estensione del sito come risorsa. In particolare, l'estensione viene visualizzata come risorsa annidata (un `resources` oggetto in ) con il tipo `resources` `siteextensions` .
+Se si distribuisce un servizio app con un modello di Azure Resource Manager, aggiungere l'estensione del sito come risorsa. In particolare, l'estensione viene visualizzata come risorsa annidata `resources` (un oggetto in `resources` ) con il tipo `siteextensions` .
 
 Ad esempio, dopo l'aggiunta di un riferimento a `python361x64` (Python 3.6.1 x64), il modello potrebbe essere simile al seguente (alcune proprietà sono state omesse):
 
@@ -95,7 +95,7 @@ Questa azione apre la pagina di descrizione dell'estensione contenente il percor
 
 In caso di difficoltà a visualizzare il percorso per l'estensione, è possibile trovarlo manualmente tramite la console:
 
-1. Nella pagina Servizio app selezionare La console **degli strumenti di**  >  **sviluppo**.
+1. Nella pagina Del servizio app selezionare Console **degli strumenti di**  >  **sviluppo.**
 1. Immettere il comando `ls ../home` o `dir ..\home` per visualizzare le cartelle delle estensioni di primo livello, ad esempio *Python361x64*.
 1. Immettere un comando come `ls ../home/python361x64` o `dir ..\home\python361x64` per verificare che contenga *python.exe* e altri file di interprete.
 
@@ -174,11 +174,11 @@ Per installare i pacchetti direttamente nell'ambiente server, usare uno dei meto
 
 La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l'accesso diretto da riga di comando con privilegi elevati al server del servizio app e al relativo file system. Oltre a essere un utile strumento di debug, supporta operazioni CLI, come l'installazione dei pacchetti.
 
-1. Aprire Kudu dalla pagina Del servizio app portale di Azure strumenti avanzati degli strumenti di sviluppo e quindi  >   **selezionare Vai.** Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
+1. Aprire Kudu dalla pagina del servizio app nel portale di Azure **strumenti** di sviluppo  >  **e** quindi selezionare **Vai.** Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
 
     ![Console Kudu per il servizio app di Azure](media/python-on-azure-console01.png)
 
-1. Selezionare **Debug console** CMD per aprire la console, in cui è possibile passare all'installazione di Python e vedere quali  >   librerie sono già presenti.
+1. Selezionare **Debug console** CMD (CMD console di debug) per aprire la console, in cui è possibile passare all'installazione di Python e visualizzare le  >   librerie già presenti.
 
 1. Per installare un singolo pacchetto:
 

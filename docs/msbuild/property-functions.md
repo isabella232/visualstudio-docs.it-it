@@ -1,6 +1,6 @@
 ---
 title: Funzioni di proprietà | Microsoft Docs
-description: Informazioni su come usare le funzioni di proprietà, che sono chiamate .NET Framework metodi visualizzati nelle definizioni MSBuild proprietà.
+description: Informazioni su come usare le funzioni di proprietà, ovvero chiamate .NET Framework metodi visualizzati nelle definizioni MSBuild proprietà.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
@@ -14,15 +14,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a6274a4648dc204bf451aaa68dbc2e47b1ce25e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711611"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
-Le funzioni di proprietà sono chiamate .NET Framework metodi che vengono visualizzati nelle definizioni MSBuild proprietà. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.
+Le funzioni di proprietà sono chiamate .NET Framework metodi visualizzati nelle definizioni MSBuild proprietà. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.
 
 Senza usare le attività MSBuild, è possibile leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni nello script di compilazione. MSBuild tenterà di convertire le stringhe in numeri e i numeri in stringhe nonché di eseguire altre conversioni secondo le esigenze.
 
@@ -347,7 +347,7 @@ Output:
 
 ## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild Funzioni TargetFramework e TargetPlatform
 
-MSBuild 16.7 e versioni successive definiscono diverse funzioni per la gestione delle proprietà [TargetFramework e TargetPlatform](msbuild-target-framework-and-target-platform.md).
+MSBuild 16.7 e versioni successive definiscono diverse funzioni per la gestione [delle proprietà TargetFramework e TargetPlatform](msbuild-target-framework-and-target-platform.md).
 
 |Firma della funzione|Descrizione|
 |------------------------|-----------------|
@@ -393,7 +393,7 @@ Value5 = True
 MSBuild 16.5 e versioni successive definiscono diverse funzioni per confrontare stringhe che rappresentano le versioni.
 
 > [!Note]
-> Gli operatori di confronto nelle [condizioni possono confrontare stringhe che possono essere analizzate come oggetti `System.Version` ](msbuild-conditions.md#comparing-versions), ma il confronto può produrre risultati imprevisti. Preferire le funzioni di proprietà.
+> Gli operatori di confronto nelle [condizioni possono confrontare stringhe che possono essere analizzate come `System.Version` oggetti](msbuild-conditions.md#comparing-versions), ma il confronto può produrre risultati imprevisti. Preferire le funzioni di proprietà.
 
 |Firma della funzione|Descrizione|
 |------------------------|-----------------|
@@ -408,9 +408,9 @@ In questi metodi le versioni vengono analizzate come <xref:System.Version?displa
 
 * `v` `V` L'interlinea o viene ignorata, che consente il confronto con `$(TargetFrameworkVersion)` .
 
-* Tutti gli elementi dalla prima '-' o '+' alla fine della stringa di versione vengono ignorati. In questo modo è possibile passare versioni semantiche (semver), anche se l'ordine non è uguale a semver. Gli identificatori di versione preliminare e i metadati di compilazione non hanno invece alcun peso di ordinamento. Può essere utile, ad esempio, per attivare una funzionalità per e `>= x.y` attivarla. `x.y.z-pre`
+* Tutti gli elementi dalla prima '-' o '+' alla fine della stringa di versione vengono ignorati. In questo modo è possibile passare versioni semantiche (semver), anche se l'ordine non è uguale a semver. Al contrario, gli identificatori di versione non definitiva e i metadati di compilazione non hanno alcuno spessore di ordinamento. Ciò può essere utile, ad esempio, per attivare una funzionalità per `>= x.y` e attivarla in `x.y.z-pre` .
 
-* Le parti non specifiche sono uguali a zero parti di valore. (`x == x.0 == x.0.0 == x.0.0.0`).
+* Le parti non specifiche sono uguali a parti con valore zero. (`x == x.0 == x.0.0 == x.0.0.0`).
 
 * Lo spazio vuoto non è consentito nei componenti integer.
 
@@ -419,7 +419,7 @@ In questi metodi le versioni vengono analizzate come <xref:System.Version?displa
 * `+` non è consentito come segno positivo nei componenti integer (viene considerato come metadati semver e ignorato)
 
 > [!TIP]
-> I confronti delle [proprietà TargetFramework](msbuild-target-framework-and-target-platform.md) devono in genere usare [IsTargetFrameworkCompatible](#TargetFramework) invece di estrarre e confrontare le versioni. In questo modo è `TargetFramework` possibile confrontare i valori di che variano sia in che in `TargetFrameworkIdentifier` versione.
+> I confronti delle [proprietà TargetFramework devono](msbuild-target-framework-and-target-platform.md) in genere usare [IsTargetFrameworkCompatible](#TargetFramework) anziché estrarre e confrontare le versioni. Ciò consente il `TargetFramework` confronto di che variano sia in che in `TargetFrameworkIdentifier` versione.
 
 ## <a name="msbuild-condition-functions"></a>MSBuild di condizione
 

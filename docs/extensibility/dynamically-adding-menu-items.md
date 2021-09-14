@@ -16,16 +16,16 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: e7875b939748ff5140d65a1b17ffe30c6ecfac88
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711798"
 ---
 # <a name="dynamically-add-menu-items"></a>Aggiungere dinamicamente voci di menu
 È possibile aggiungere voci di menu in fase di esecuzione specificando il flag di comando sulla definizione di un pulsante segnaposto nel file della tabella dei comandi `DynamicItemStart` di Visual Studio *(vsct),* quindi definendo (nel codice) il numero di voci di menu da visualizzare e gestendo i comandi. Quando il pacchetto VSPackage viene caricato, il segnaposto viene sostituito con le voci di menu dinamico.
 
- Visual Studio usa gli elenchi dinamici  nell'elenco Più recenti , che visualizza i nomi dei documenti aperti di recente, e l'elenco **Windows,** che visualizza i nomi delle finestre attualmente aperte.   Il `DynamicItemStart` flag in una definizione di comando specifica che il comando è un segnaposto fino all'apertura del pacchetto VSPackage. Quando il pacchetto VSPackage viene aperto, il segnaposto viene sostituito con 0 o più comandi creati in fase di esecuzione e aggiunti all'elenco dinamico. Potrebbe non essere possibile visualizzare la posizione nel menu in cui viene visualizzato l'elenco dinamico fino all'apertura del pacchetto VSPackage.  Per popolare l'elenco dinamico, Visual Studio al VSPackage di cercare un comando con un ID i cui primi caratteri sono uguali all'ID del segnaposto. Quando Visual Studio trova un comando corrispondente, aggiunge il nome del comando all'elenco dinamico. Incrementa quindi l'ID e cerca un altro comando corrispondente da aggiungere all'elenco dinamico finché non sono presenti altri comandi dinamici.
+ Visual Studio usa elenchi dinamici  nell'elenco Più recenti usati (MRU), che visualizza i nomi dei documenti aperti di recente, e l'elenco **Windows,** che visualizza i nomi delle finestre attualmente aperte.   Il `DynamicItemStart` flag in una definizione di comando specifica che il comando è un segnaposto fino all'apertura del pacchetto VSPackage. Quando il pacchetto VSPackage viene aperto, il segnaposto viene sostituito con 0 o più comandi creati in fase di esecuzione e aggiunti all'elenco dinamico. Potrebbe non essere possibile visualizzare la posizione nel menu in cui viene visualizzato l'elenco dinamico finché non viene aperto il pacchetto VSPackage.  Per popolare l'elenco dinamico, Visual Studio al VSPackage di cercare un comando con un ID i cui primi caratteri sono uguali all'ID del segnaposto. Quando Visual Studio trova un comando corrispondente, aggiunge il nome del comando all'elenco dinamico. Incrementa quindi l'ID e cerca un altro comando corrispondente da aggiungere all'elenco dinamico finché non sono presenti altri comandi dinamici.
 
  Questa procedura dettagliata illustra come impostare il progetto di avvio in una soluzione Visual Studio con un comando sulla barra **Esplora soluzioni** strumenti. Usa un controller di menu con un elenco a discesa dinamico dei progetti nella soluzione attiva. Per evitare che questo comando venga visualizzato quando non è aperta alcuna soluzione o quando la soluzione aperta ha un solo progetto, il pacchetto VSPackage viene caricato solo quando una soluzione include più progetti.
 
@@ -266,7 +266,7 @@ ms.locfileid: "122159426"
 ## <a name="implement-the-handlers"></a>Implementare i gestori
  Per implementare voci di menu dinamico in un controller di menu, è necessario gestire il comando quando si fa clic su un elemento dinamico. È anche necessario implementare la logica che imposta lo stato della voce di menu. Aggiungere i gestori alla `DynamicMenu` classe .
 
-1. Per implementare **il comando Set Startup Project,** aggiungere il gestore dell'evento **OnInvokedDynamicItem.** Cerca il progetto il cui nome corrisponde al testo del comando richiamato e lo imposta come progetto di avvio impostandone il percorso assoluto nella <xref:EnvDTE.SolutionBuild.StartupProjects%2A> proprietà .
+1. Per implementare **il comando Set Startup Project,** aggiungere il gestore eventi **OnInvokedDynamicItem.** Cerca il progetto il cui nome è uguale al testo del comando richiamato e lo imposta come progetto di avvio impostandone il percorso assoluto nella <xref:EnvDTE.SolutionBuild.StartupProjects%2A> proprietà .
 
     ```csharp
     private void OnInvokedDynamicItem(object sender, EventArgs args)
@@ -353,7 +353,7 @@ public sealed class DynamicMenuItemsPackage : Package
 
 2. Nell'istanza sperimentale aprire una soluzione con più di un progetto.
 
-     Dovrebbe essere visualizzata l'icona a forma di freccia Esplora soluzioni barra **degli** strumenti. Quando lo si espande, vengono visualizzate le voci di menu che rappresentano i diversi progetti nella soluzione.
+     Verrà visualizzata l'icona a forma di freccia Esplora soluzioni barra **degli** strumenti. Quando lo si espande, vengono visualizzate le voci di menu che rappresentano i diversi progetti nella soluzione.
 
 3. Quando si controlla uno dei progetti, diventa il progetto di avvio.
 

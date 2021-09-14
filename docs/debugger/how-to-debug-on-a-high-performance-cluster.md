@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug in High-Performance cluster | Microsoft Docs
-description: Informazioni sul debug di un programma multielaborazione in un cluster ad alte prestazioni. Due finestre sono particolarmente utili e sono disponibili tecniche speciali.
+description: Informazioni sulle caratteristiche particolari del debug di un programma multiprocessing in un cluster ad alte prestazioni. Due finestre sono particolarmente utili e sono disponibili tecniche speciali.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,15 +20,15 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c4e6bffa006fac3408bc3b5459cdeee92c9a636f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052057"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710394"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: Eseguire il debug in un cluster High-Performance (C#, Visual Basic, C++)
 
-Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per i requisiti generali relativi all'installazione remota, vedere [Debug remoto.](../debugger/remote-debugging.md)
+Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per i requisiti generali per l'installazione remota, vedere [Debug remoto](../debugger/remote-debugging.md).
 
  Quando si esegue il debug in un cluster ad alte prestazioni, è possibile usare tutte le tecniche e le finestre di debug di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] disponibili per il debug remoto. Poiché, tuttavia, il debug viene eseguito in remoto, la finestra della console esterna non è disponibile.
 
@@ -105,4 +105,4 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 - [Procedura: Usare la finestra Processi](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Informazioni di base Debug di app multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Thread e processi](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
-- [Utilizzo dei punti di interruzione](../debugger/using-breakpoints.md)
+- [Uso di punti di interruzione](../debugger/using-breakpoints.md)

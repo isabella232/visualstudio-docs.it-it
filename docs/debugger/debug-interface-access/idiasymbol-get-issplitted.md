@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c025460f04cbd2d9eb5546f434ff990584fa7e26
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709952"
 ---
 # <a name="idiasymbolget_issplitted"></a>IDiaSymbol::get_isSplitted
 Recupera un flag che specifica se il simbolo di dati è stato suddiviso in un'aggregazione o in una raccolta di altri simboli. il compilatore considera i simboli come entità separate, anche se fanno effettivamente parte di un simbolo più grande.
@@ -38,10 +38,10 @@ HRESULT get_isSplitted(
 [out] Restituisce `TRUE` se il simbolo è stato suddiviso in un'aggregazione di simboli; in caso contrario, restituisce `FALSE` .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o il `S_FALSE` codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o codice `S_FALSE` di errore.
 
 > [!NOTE]
-> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
+> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  Il [metodo IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) restituisce per tutti i simboli `TRUE` che fanno parte di un simbolo di divisione.

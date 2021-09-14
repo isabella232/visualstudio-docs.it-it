@@ -1,6 +1,6 @@
 ---
-title: Visualizzazione messaggi | Microsoft Docs
-description: A ogni finestra, thread e processo è associato un flusso di messaggi che può essere visualizzato in una finestra visualizzazione messaggi. Informazioni su come aprire e controllare una visualizzazione messaggi.
+title: Visualizzazione Messaggi | Microsoft Docs
+description: A ogni finestra, thread e processo è associato un flusso di messaggi che può essere visualizzato in una finestra di visualizzazione messaggi. Informazioni su come aprire e controllare una visualizzazione messaggi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,46 +15,46 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 064ddc1bf410f6b64025c9d2045ca6cd86f05282b5d94a52fefbcabeb5399549
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 858620450452080dbbdf6c9aa5da8ed7c44c13e2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121453139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636659"
 ---
 # <a name="messages-view"></a>Visualizzazione messaggi
-A ogni finestra è associato un flusso di messaggi. Questo flusso di messaggi viene visualizzato in una finestra di visualizzazione Messaggi. Vengono visualizzati l'handle della finestra, il codice del messaggio e il messaggio. È anche possibile creare una visualizzazione Messaggi per un thread o un processo. In questo modo è possibile visualizzare i messaggi inviati a tutte le finestre di proprietà di un processo o thread specifico, particolarmente utile per l'acquisizione dei messaggi di inizializzazione della finestra.
+A ogni finestra è associato un flusso di messaggi. Nella finestra di visualizzazione Messaggi viene visualizzato questo flusso di messaggi. Vengono visualizzati l'handle della finestra, il codice del messaggio e il messaggio. È possibile creare una visualizzazione Messaggi anche per un thread o un processo. In questo modo è possibile visualizzare i messaggi inviati a tutte le finestre appartenenti a un processo o un thread specifico, particolarmente utile per l'acquisizione di messaggi di inizializzazione della finestra.
 
- Di seguito viene visualizzata una tipica finestra di visualizzazione Messaggi. Si noti che la prima colonna contiene l'handle della finestra e la seconda colonna contiene un codice messaggio (illustrato in [Codici messaggio](../debugger/message-codes.md)). I parametri del messaggio decodificato e i valori restituiti sono a destra.
+ Di seguito viene visualizzata una tipica finestra di visualizzazione Messaggi. Si noti che la prima colonna contiene l'handle della finestra e la seconda contiene un codice messaggio (illustrato in [Codici messaggio](../debugger/message-codes.md)). I parametri del messaggio decodificato e i valori restituiti sono a destra.
 
- ![Visualizzazione messaggi&#43;&#43; Spy](../debugger/media/spy--_messagesview.png "Spy++_MessagesView") Visualizzazione messaggi di Spy++
+ ![Visualizzazione messaggi&#43;&#43; spy](../debugger/media/spy--_messagesview.png "Spy++_MessagesView") Visualizzazione messaggi di Spy++
 
 ## <a name="procedures"></a>Procedure
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Per aprire una visualizzazione Messaggi per una finestra, un processo o un thread
 
-1. Spostare lo stato attivo su [una Windows,](../debugger/windows-view.md) [visualizzazione Processi](../debugger/processes-view.md)o [Visualizzazione](../debugger/threads-view.md) thread.
+1. Spostare lo stato attivo su [una Windows](../debugger/windows-view.md)Visualizzazione processi, [Visualizzazione](../debugger/processes-view.md)processi o [Visualizzazione thread.](../debugger/threads-view.md)
 
 2. Trovare il nodo per l'elemento di cui si vogliono esaminare i messaggi e selezionarlo.
 
-3. Scegliere Log Messages **(Registra messaggi) dal** menu **Spy.**
+3. Scegliere **Log** Messages **(Log Messages) dal** menu Spy .
 
      Verrà [visualizzata la finestra di dialogo Opzioni](../debugger/message-options-dialog-box.md) messaggio .
 
-4. Selezionare le opzioni per il messaggio che si desidera visualizzare.
+4. Selezionare le opzioni per il messaggio da visualizzare.
 
 5. Premere **OK per** avviare la registrazione dei messaggi.
 
-     Viene visualizzata una finestra di visualizzazione Messaggi e viene **aggiunto un** menu Messaggi alla barra degli strumenti di Spy++. A seconda delle opzioni selezionate, i messaggi iniziano a trasmettere nella finestra di visualizzazione Messaggi attiva.
+     Viene visualizzata una finestra di visualizzazione Messaggi e viene aggiunto **un** menu Messaggi alla barra degli strumenti di Spy++. A seconda delle opzioni selezionate, i messaggi iniziano a trasmettere nella finestra di visualizzazione Messaggi attiva.
 
 6. Quando i messaggi sono sufficienti, scegliere **Arresta** registrazione **dal** menu Messaggi.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Controllo della visualizzazione messaggi](../debugger/how-to-control-messages-view.md) Viene illustrato come gestire la visualizzazione Messaggi.
 
- [Apertura della visualizzazione messaggi dalla finestra Trova](../debugger/how-to-open-messages-view-from-find-window.md) Viene illustrato come aprire la visualizzazione Messaggi dalla finestra di dialogo Trova finestra.
+ [Apertura della visualizzazione Messaggi dalla finestra Trova](../debugger/how-to-open-messages-view-from-find-window.md) Viene illustrato come aprire la visualizzazione Messaggi dalla finestra di dialogo Trova finestra.
 
- [Ricerca di un messaggio nella visualizzazione messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md) Viene illustrato come trovare un messaggio specifico nella visualizzazione Messaggi.
+ [Ricerca di un messaggio nella visualizzazione Messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md) Viene illustrato come trovare un messaggio specifico nella visualizzazione Messaggi.
 
  [Avvio e arresto della visualizzazione del log dei messaggi](../debugger/how-to-start-and-stop-the-message-log-display.md) Viene illustrato come avviare e arrestare la registrazione dei messaggi.
 

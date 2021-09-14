@@ -8,11 +8,11 @@ ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
 ms.openlocfilehash: 09c905d113920a0bb55aed8851d3fb62c92a39bf
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965636"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709978"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
@@ -37,7 +37,7 @@ Chiunque disponga dell'[accesso come Proprietario o Collaboratore](https://na01.
 0. Scegliere **Gestione dei servizi**.
 0. Scegliere **Visual Studio Marketplace**.
 0. Assicurarsi che sia visualizzato il nome del cliente nell'angolo in alto a destra.
-0. Scegliere **Sottoscrizioni**.
+0. Scegliere **Sottoscrizioni.**
 0. Scegliere Enterprise o Professional per Visual Studio.
 0. Scegliere **Acquista**.
 0. Scegliere la sottoscrizione di Azure per la fatturazione dell'acquisto.
@@ -107,7 +107,7 @@ R: no, i prezzi per le sottoscrizioni di Visual Studio sono fissi. Lo stesso pre
  R: attualmente non è possibile. I clienti possono sfruttare i [Prezzi di Azure per sviluppo/test](https://azure.microsoft.com/pricing/dev-test/), ma non è disponibile alcuna offerta specifica per i CSP.
 
 ## <a name="resources"></a>Risorse
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere Supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

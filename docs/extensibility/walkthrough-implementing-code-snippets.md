@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: b2a9bcd6a24edafc139cee4560fc36bfcc1b0a7f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710266"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Procedura dettagliata: Implementare frammenti di codice
 È possibile creare frammenti di codice e includerli in un'estensione dell'editor in modo che gli utenti dell'estensione possano aggiungerli al proprio codice.
@@ -52,7 +52,7 @@ ms.locfileid: "122041542"
 
     dove *%InstallDir% è* la Visual Studio di installazione. Anche se questo percorso viene in genere usato per installare frammenti di codice, è possibile specificare qualsiasi percorso.
 
-2. Nella cartella \1033\ creare un file *.xml* e denomerlo **TestSnippets.xml**. Anche se questo nome viene in genere usato per un file di indice del frammento di codice, è possibile specificare qualsiasi nome purché abbia *un'.xml* di file. Aggiungere il testo seguente, quindi eliminare il GUID segnaposto e aggiungere il proprio.
+2. Nella cartella \1033\ creare un file *.xml* e denomerlo **TestSnippets.xml**. Anche se questo nome viene in genere usato per un file di indice del frammento di codice, è possibile specificare qualsiasi nome purché abbia *un'estensione*.xmlfile. Aggiungere il testo seguente, quindi eliminare il GUID segnaposto e aggiungere il proprio.
 
    ```xml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -127,7 +127,7 @@ ms.locfileid: "122041542"
 
 3. Nel progetto aprire il file **source.extension.vsixmanifest.**
 
-4. Assicurarsi che la **scheda Asset contenga** un tipo di contenuto **VsPackage** e che Project **sia** impostato sul nome del progetto.
+4. Assicurarsi che la **scheda Asset contenga** un tipo di contenuto **VsPackage** **e** che Project sia impostato sul nome del progetto.
 
 5. Selezionare il progetto CompletionTest e nella Finestra Proprietà impostare Generate Pkgdef File (Genera **file Pkgdef)** su **true.** Salvare il progetto.
 
@@ -229,7 +229,7 @@ ms.locfileid: "122041542"
 ## <a name="build-and-test-code-snippet-expansion"></a>Espansione del frammento di codice di compilazione e test
  È possibile verificare se l'espansione del frammento di codice funziona nel progetto.
 
-1. Compilare la soluzione. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
+1. Compilare la soluzione. Quando si esegue questo progetto nel debugger, viene avviata una seconda Visual Studio di .
 
 2. Aprire un file di testo e digitare del testo.
 

@@ -15,14 +15,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a496c0ab434ed115e28d88874e4fdbc64931f89
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156773"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710142"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
-Lo strumento da riga di comando **VSPerfASPNetCmd.exe** consente di profilare i siti Web ASP.Net senza la necessità di impostare le variabili di ambiente o di riavviare il computer. Usare **VSPerfASPNetCmd.exe** anziché [VSPerfCmd](../profiling/vsperfcmd.md) quando si esegue la profilatura dei siti Web ASP.NET e non è necessaria la funzionalità aggiuntiva fornita da **VSPerfCmd**. Per altre informazioni su **VSPerfASPNetCmd,** vedere Profilatura rapida del sito [Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** è lo strumento da riga di comando preferito da usare quando si usa il profiler autonomo per profilare un sito Web ASP.NET.
+Lo strumento da riga di comando **VSPerfASPNetCmd.exe** consente di profilare i siti Web ASP.Net senza la necessità di impostare le variabili di ambiente o di riavviare il computer. Usare **VSPerfASPNetCmd.exe** anziché [VSPerfCmd](../profiling/vsperfcmd.md) quando si esegue la profilatura dei siti Web ASP.NET e non è necessaria la funzionalità aggiuntiva fornita da **VSPerfCmd**. Per altre informazioni su **VSPerfASPNetCmd,** vedere Profilatura rapida di siti [Web con VSPerfASPNETCmd.](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) **VSPerfASPNetCmd** è lo strumento da riga di comando preferito da usare quando si usa il profiler autonomo per profilare un sito Web ASP.NET.
 
 ## <a name="syntax"></a>Sintassi
  **vsperfaspnetcmd** [*/Options*] *Website*
@@ -42,5 +42,5 @@ Lo strumento da riga di comando **VSPerfASPNetCmd.exe** consente di profilare i 
 |`Website`|L'url del sito Web da profilare.|
 
 ## <a name="see-also"></a>Vedi anche
-- [Profilatura rapida del sito Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
+- [Profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

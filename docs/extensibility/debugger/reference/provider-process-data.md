@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0b96cd79035dcb6643cec2aefcbe84da52ef8a7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711814"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 Questa struttura fornisce informazioni sui processi in esecuzione in un computer.
@@ -56,7 +56,7 @@ public struct PROVIDER_PROCESS_DATA {
  Diverso da zero ( `TRUE` ) se il debugger è in [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] esecuzione, zero ( ) in caso `FALSE` contrario.
 
 ## <a name="remarks"></a>Commenti
- Questa struttura viene passata [al metodo GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) in cui viene compilata.
+ Questa struttura viene passata [al metodo GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) dove viene compilata.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

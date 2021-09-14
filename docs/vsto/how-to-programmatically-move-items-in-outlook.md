@@ -16,11 +16,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: c6d67712ca09fa99cd1fef00740acfda2fe34cac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083180"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710064"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Procedura: Spostare elementi in un'Outlook
   Questo esempio sposta i messaggi di posta elettronica non letti **dalla** posta in arrivo in una cartella denominata **Test**. L'esempio sposta solo i messaggi con la parola **Test** nel `Subject` campo .

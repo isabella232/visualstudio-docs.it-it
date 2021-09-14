@@ -1,6 +1,6 @@
 ---
 title: App Node.js
-description: Repository di esempio che usa devinit per installare pacchetti npm per un Node.js Express.
+description: Repository di esempio che usa devinit per installare i pacchetti npm per un Node.js Express.
 ms.date: 11/04/2020
 ms.topic: reference
 author: andysterland
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 76800cc5bd9ec3fccc59bce28311e820a508ffde43f273741ea96fa4f21f3c87
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 61e58109d98417e7b8b57a6c0fd23c64106413d7
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710351"
 ---
 # <a name="nodejs-app"></a>App Node.js
 
@@ -27,7 +27,7 @@ Vedere il repository [devinit-example-nodejs](https://github.com/microsoft/devin
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del _.devinit.jsnel_ file nella radice del repo.
+Contenuto del file _.devinit.json_ nella radice del repo.
 
 ```json
 {
@@ -68,9 +68,9 @@ Contenuto del _.devinit.jsnel_ file nella radice del repo.
 
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.jssu
+## <a name="devcontainerjson"></a>.devcontainer.json
 
-Contenuto del _.devcontainer.jsnel_ file nella radice del repo.
+Contenuto del file _.devcontainer.json_ nella radice del repo.
 
 ```json
 {

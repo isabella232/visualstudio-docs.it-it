@@ -17,11 +17,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2708f2cdf4d2bb9150eaf1b5f235ddecc4164e3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711842"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 

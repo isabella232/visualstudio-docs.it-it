@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: d986c13a4c575fa70dd4496c0b87073baa1615f7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080377"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636500"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Elemento PackageFiles &gt; (programma di avvio automatico)
 `PackageFiles`L'elemento contiene elementi che definiscono i pacchetti di installazione `PackageFile` eseguiti come risultato `Command` dell'elemento .
@@ -65,7 +65,7 @@ ms.locfileid: "122080377"
 | `Hash` | facoltativo. Hash SHA1 del file del pacchetto. Viene usato per verificare l'integrità del file in fase di installazione. Se non è possibile calcolare l'hash identico dal file del pacchetto, il pacchetto non verrà installato. |
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente vengono definiti i pacchetti per .NET Framework ridistribuibile e le relative dipendenze, ad esempio il programma di Windows.
+ Nell'esempio di codice seguente vengono definiti i pacchetti per il .NET Framework ridistribuibile e le relative dipendenze, ad esempio il programma di Windows.
 
 ```xml
 <PackageFiles>

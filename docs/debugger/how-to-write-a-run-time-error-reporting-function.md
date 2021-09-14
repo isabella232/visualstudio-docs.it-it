@@ -1,6 +1,6 @@
 ---
 title: Scrivere una funzione di segnalazione degli errori di | Microsoft Docs
-description: Vedere esempi di scrittura di una funzione di segnalazione degli errori di run-time personalizzata in Visual Studio. Deve avere la stessa dichiarazione di _CrtDbgReportW e restituire il valore 1.
+description: Vedere gli esempi di scrittura di una funzione di segnalazione degli errori di run-time personalizzata in Visual Studio. Deve avere la stessa dichiarazione di _CrtDbgReportW e restituire il valore 1.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -21,11 +21,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f4131f5bea3f3c1a2c880c64302fd44ab5a3535
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146849"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709905"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Procedura: Scrivere una funzione per la segnalazione degli errori di runtime (C++)
 Una funzione personalizzata per la segnalazione degli errori di runtime deve avere la stessa dichiarazione di `_CrtDbgReportW` e deve restituire al debugger il valore 1.

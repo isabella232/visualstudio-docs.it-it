@@ -1,6 +1,6 @@
 ---
-title: Eseguire ClickOnce debug di app che usano System.Deployment.Application
-description: Informazioni su come usare e personalizzare le funzionalità ClickOnce di distribuzione tramite l'accesso al modello a oggetti di distribuzione fornito da System.Deployment.Application.
+title: Eseguire il debug ClickOnce app che usano System.Deployment.Application
+description: Informazioni su come usare e personalizzare le funzionalità di ClickOnce di distribuzione tramite l'accesso al modello a oggetti di distribuzione fornito da System.Deployment.Application.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -21,11 +21,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: d91b59b6f4eb86c905fcddd28dc5298b1a18f761
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710372"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debug di applicazioni ClickOnce in cui si usa System.Deployment.Application
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] la distribuzione consente di configurare la modalità di aggiornamento di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un'applicazione. Tuttavia, se è necessario usare e personalizzare le funzionalità di distribuzione avanzate, sarà necessario accedere al modello a oggetti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] di distribuzione fornito da <xref:System.Deployment.Application> . È possibile usare <xref:System.Deployment.Application> le API per attività avanzate, ad esempio:
@@ -38,7 +38,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 - Garantire che l'applicazione client sia sempre aggiornata
 
-  Poiché le API funzionano solo quando un'applicazione viene distribuita con la tecnologia , l'unico modo per eseguirne il debug è distribuire l'applicazione usando , collegarsi ad essa e quindi <xref:System.Deployment.Application> [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eseguirne il debug. Può essere difficile collegare il debugger abbastanza presto, perché questo codice viene spesso eseguito all'avvio dell'applicazione e viene eseguito prima di poter collegare il debugger. Una soluzione consiste nell'inserire interruzioni (o arresti, per i progetti Visual Basic) prima del codice di controllo dell'aggiornamento o del codice su richiesta.
+  Poiché le API funzionano solo quando un'applicazione viene distribuita con la tecnologia , l'unico modo per eseguirne il debug è distribuire l'applicazione usando , collegarsi ad essa e quindi <xref:System.Deployment.Application> [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eseguirne il debug. Può essere difficile collegare il debugger abbastanza presto, perché questo codice viene spesso eseguito all'avvio dell'applicazione e viene eseguito prima di poter collegare il debugger. Una soluzione consiste nell'inserire interruzioni (o arresti, per Visual Basic) prima del codice di controllo dell'aggiornamento o del codice su richiesta.
 
   La tecnica di debug consigliata è la seguente:
 
@@ -48,9 +48,9 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 3. Creare una nuova soluzione vuota. Scegliere **Nuovo** dal menu **File**, quindi **Progetto**. Nella finestra **di dialogo Project** nuova applicazione aprire il nodo Altri **Project** e quindi selezionare la cartella **Visual Studio soluzioni.** Nel riquadro **Modelli** selezionare **Soluzione vuota.**
 
-4. Aggiungere il percorso di origine archiviato alle proprietà per questa nuova soluzione. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione e quindi **scegliere Proprietà.** Nella finestra **di dialogo** Pagine delle proprietà selezionare Esegui debug dei file **di origine** e quindi aggiungere la directory del codice sorgente archiviato. In caso contrario, il debugger troverà i file di origine non aggiornati, poiché i percorsi dei file di origine vengono registrati nel file con estensione pdb. Se il debugger usa file di origine non aggiornati, viene visualizzato un messaggio che informa che l'origine non corrisponde.
+4. Aggiungere il percorso di origine archiviato alle proprietà per questa nuova soluzione. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione e quindi **scegliere Proprietà.** Nella finestra **di dialogo** Pagine delle proprietà selezionare Esegui debug dei file **di origine**, quindi aggiungere la directory del codice sorgente archiviato. In caso contrario, il debugger troverà i file di origine non aggiornati, poiché i percorsi dei file di origine vengono registrati nel file con estensione pdb. Se il debugger usa file di origine non aggiornati, viene visualizzato un messaggio che informa che l'origine non corrisponde.
 
-5. Assicurarsi che il debugger sia in grado di *trovare i file con estensione pdb.* Se sono stati distribuiti con l'applicazione, il debugger li trova automaticamente. Prima viene sempre cercata accanto all'assembly in questione. In caso contrario, sarà necessario aggiungere il percorso di archivio ai percorsi del file di simboli (con estensione  **pdb).** Per accedere a questa opzione, scegliere Opzioni dal **menu** Strumenti **,** quindi aprire il nodo Debug e fare clic su **Simboli**.
+5. Assicurarsi che il debugger sia in grado di *trovare i file con estensione pdb.* Se sono stati distribuiti con l'applicazione, il debugger li trova automaticamente. Viene sempre cercata prima accanto all'assembly in questione. In caso contrario, sarà necessario aggiungere il percorso di archivio ai percorsi del file di simboli (con estensione  **pdb).** Per accedere a questa opzione, scegliere Opzioni dal **menu** Strumenti **,** quindi aprire il nodo Debug e fare clic su **Simboli**.
 
 6. Eseguire il debug di ciò che accade `CheckForUpdate` tra le chiamate al metodo e `Download` / `Update` .
 

@@ -1,6 +1,6 @@
 ---
-description: Ottiene il contesto del documento che descrive il percorso di questo evento.
-title: IDebugCanStopEvent2::GetDocumentContext | Microsoft Docs
+description: Ottiene il contesto del documento che descrive la posizione di questo evento.
+title: Interfaccia IDebugCanStopEvent2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 24c7bb7d2dbbc5b9f1bd6c27980a755a5202a840
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119737"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636364"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-Ottiene il contesto del documento che descrive il percorso di questo evento.
+Ottiene il contesto del documento che descrive la posizione di questo evento.
 
 ## <a name="syntax"></a>Sintassi
 

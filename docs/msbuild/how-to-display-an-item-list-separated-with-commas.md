@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Visualizzare un elenco di elementi separati da virgole | Microsoft Docs'
-description: Informazioni su come usare MSBuild per visualizzare un elenco di elementi separati da virgole o specificare altre stringhe separatori per un elenco di elementi.
+description: Informazioni su come usare MSBuild per visualizzare un elenco di elementi separato da virgole o specificare altre stringhe separatori per un elenco di elementi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,23 +15,23 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 87fc8cb1870d2c99a7e654b8f9fa3ecc31773be3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625734"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: Visualizzare un elenco di elementi separati da virgole
 
-Quando si lavora con gli elenchi di elementi in Microsoft Build Engine (MSBuild), a volte è utile visualizzare il contenuto di tali elenchi di elementi in modo facile da leggere. In alternativa, si potrebbe usare un attività che accetta un elenco di elementi separati da una stringa di separazione speciale. In entrambi i casi, è possibile specificare una stringa di separazione per un elenco di elementi.
+Quando si lavora con gli elenchi di elementi in Microsoft Build Engine (MSBuild), talvolta è utile visualizzare il contenuto di tali elenchi di elementi in modo facile da leggere. In alternativa, si potrebbe usare un attività che accetta un elenco di elementi separati da una stringa di separazione speciale. In entrambi i casi, è possibile specificare una stringa di separazione per un elenco di elementi.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Separare gli elementi in un elenco con virgole
 
-Per impostazione predefinita, MSBuild usa il punto e virgola per separare gli elementi in un elenco. Si consideri ad esempio un elemento `Message` con il valore seguente:
+Per impostazione predefinita, MSBuild punto e virgola per separare gli elementi in un elenco. Si consideri ad esempio un elemento `Message` con il valore seguente:
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Quando `@(TXTFile)` l'elenco di elementi *contiene gliApp1.txt*, *App2.txt* e *App3.txt*, il messaggio è:
+Quando `@(TXTFile)` l'elenco di elementi *contiene* App1.txt, *App2.txt* e *App3.txt*, il messaggio è:
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 

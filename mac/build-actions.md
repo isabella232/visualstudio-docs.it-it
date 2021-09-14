@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
 ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710483"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
@@ -21,7 +21,7 @@ Tutti i file di un progetto Visual Studio per Mac possiedono un'azione di compil
 
 ## <a name="set-a-build-action"></a>Impostare un'azione di compilazione
 
-Per impostare un'azione di compilazione per un file in Visual Studio per Mac, è possibile fare clic con il pulsante destro del mouse su qualsiasi file e scegliere Azione di compilazione **,** come illustrato di seguito:
+Per impostare un'azione di compilazione per un file in Visual Studio per Mac, è possibile fare clic con il pulsante destro del mouse su qualsiasi file e scegliere **Azione** di compilazione , come illustrato di seguito:
 
 ![Selezione dell'azione di compilazione da Esplora soluzioni](media/projects-and-solutions-image1.png)
 

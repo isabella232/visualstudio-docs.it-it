@@ -21,11 +21,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: adec17c0a381edb3587da50d3d9e3e8aedbc6cdd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625200"
 ---
 # <a name="how-to-add-a-creator-method"></a>Procedura: Aggiungere un metodo Creator
   Un metodo Creator aggiunge nuovi dati all'origine dati di un'entità. Il servizio BDC (Business Data Connectivity) chiama  questo metodo  quando gli utenti scelgono il pulsante Nuovo elemento sulla barra multifunzione di un elenco basato sul modello. Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
@@ -34,7 +34,7 @@ ms.locfileid: "122106817"
 
 1. In Progettazione **integrazione applicativa dei** dati scegliere un'entità.
 
-2. Sulla barra dei menu scegliere **Visualizza altri dettagli**  >  **Windows**  > **metodo BDC**.
+2. Sulla barra dei menu scegliere **Visualizza altri**  >  **Windows**  > **dettagli metodo BDC**.
 
     Verrà **visualizzata la finestra BDC Method Details (Dettagli metodo BDC).** Per altre informazioni su tale finestra, vedere Panoramica [degli strumenti di progettazione del modello BDC.](../sharepoint/bdc-model-design-tools-overview.md)
 

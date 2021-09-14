@@ -7,23 +7,23 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 964fbbf2f46e2495184b01c47cba888a93f24ea8
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710476"
 ---
 # <a name="show-import-items"></a>Mostra elementi di importazione
 
-Visual Studio per Mac possibile visualizzare tutti i tipi disponibili, anche se non vengono importati nel progetto, nell'elenco di completamento IntelliSense. Selezionando un elemento che non viene importato, `using` l'istruzione corretta verrà aggiunta al file di origine.
+Visual Studio per Mac possibile visualizzare tutti i tipi disponibili, anche se non vengono importati nel progetto, nell'elenco di completamento IntelliSense. Selezionando un elemento che non viene importato, al file di origine verrà aggiunta `using` l'istruzione corretta.
 
 ![show import items overview](media/importitems-overview.gif)
 
 ## <a name="how-to-enable"></a>Abilitazione
 
-Per abilitare questa funzionalità, aprire **Preferenze** **tramite** Visual Studio preferenze  >  **e** passare a Editor **di testo**  >  **IntelliSense.** Selezionare la casella **Mostra elementi di importazione** per abilitare elementi aggiuntivi in IntelliSense.
+Per abilitare questa funzionalità, aprire **Preferenze** **tramite** Visual Studio  >  **preferenze** e passare a **Editor di testo**  >  **IntelliSense.** Selezionare la casella **Mostra elementi di importazione** per abilitare elementi aggiuntivi in IntelliSense.
 
-![Opzione show import items](media/show-import-items.png)
+![opzione show import items](media/show-import-items.png)
 
 ## <a name="usage"></a>Utilizzo
 

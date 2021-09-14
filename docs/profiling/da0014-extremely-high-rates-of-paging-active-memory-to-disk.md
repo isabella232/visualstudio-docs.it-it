@@ -1,5 +1,5 @@
 ---
-title: DA0014- Frequenze estremamente elevate di paging della memoria attiva su disco | Microsoft Docs
+title: DA0014 - Frequenze estremamente elevate di paging della memoria attiva su disco | Microsoft Docs
 description: I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata una frequenza estremamente elevata di paging di memoria attiva da e su disco durante la profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,11 +17,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ea42e94eab6c5da65e5e1d59e93f71680dea1500
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637139"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frequenze molto elevate di paging di memoria attiva su disco
 

@@ -18,14 +18,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9daeac1804940eb80331461b12b2cda51e9fef55
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636140"
 ---
 # <a name="projects"></a>Progetti
-In Visual Studio i progetti sono i contenitori che gli sviluppatori usano per organizzare i file di codice sorgente e altre risorse visualizzate in **Esplora soluzioni**. In genere, i progetti sono file (ad esempio, un file con estensione csproj per un progetto C#) che archiviano riferimenti a file di codice sorgente e risorse come i file bitmap. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente, i riferimenti a database e servizi Web e altre risorse. I pacchetti VSPackage possono estendere il Visual Studio di progetto in tre modi *principali:* tipi di progetto, *sottotipi* di progetto e *strumenti personalizzati.*
+In Visual Studio, i progetti sono i contenitori che gli sviluppatori usano per organizzare i file di codice sorgente e altre risorse visualizzate in **Esplora soluzioni**. In genere, i progetti sono file (ad esempio, un file con estensione csproj per un progetto C#) che archiviano riferimenti a file di codice sorgente e risorse come i file bitmap. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente, i riferimenti a database e servizi Web e altre risorse. I pacchetti VSPackage possono estendere il Visual Studio di progetto in tre modi *principali:* tipi di progetto, *sottotipi* di progetto e *strumenti personalizzati.*
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Project Types](../../extensibility/internals/project-types.md) (Tipi di progetto)

@@ -1,6 +1,6 @@
 ---
 title: StartTrackingContext | Microsoft Docs
-description: Informazioni su parametri, requisiti e valore restituito per MSBuild StartTrackingContext, che avvia un contesto di rilevamento.
+description: Informazioni sui parametri, i requisiti e il valore restituito per MSBuild StartTrackingContext, che avvia un contesto di rilevamento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: afd46ac5ed538f4773e35c7c727f1cf5fdbcc69a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625500"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 
@@ -47,7 +47,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 
 ## <a name="return-value"></a>Valore restituito
 
- HRESULT **con** il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato creato.
+ HRESULT **con** il bit **SUCCEEDED** impostato se è stato creato il contesto di rilevamento.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3522bdfc122cdb684a95f2407dd1f373ce3b1f9c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072537"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636436"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 Questa interfaccia rappresenta le informazioni necessarie per creare e associare qualsiasi tipo di punto di interruzione. Si tratta di [un'estensione di IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
@@ -44,7 +44,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 |[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Ottiene le informazioni sulla richiesta del punto di interruzione che descrivono la richiesta del punto di interruzione.|
 
 ## <a name="remarks"></a>Commenti
- Questa interfaccia viene usata per fornire informazioni aggiuntive a DE tramite la [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura . Queste informazioni aggiuntive includono l'ID fornitore di DE (sotto forma di GUID), il nome di un punto di analisi e il nome di un vincolo del punto di interruzione.
+ Questa interfaccia viene utilizzata per fornire informazioni aggiuntive a DE tramite la [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struttura . Queste informazioni aggiuntive includono l'ID fornitore di DE (sotto forma di GUID), il nome di un punto di analisi e il nome di un vincolo del punto di interruzione.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

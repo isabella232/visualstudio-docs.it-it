@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 63660d52f6b5707d4e667da07e5d4ccfa38dae7d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636091"
 ---
 # <a name="property-pages"></a>Pagine delle proprietà
 Gli utenti possono visualizzare e modificare le proprietà dipendenti dalla configurazione del progetto e indipendenti tramite le pagine delle proprietà. Un **pulsante Pagine delle**  proprietà è abilitato nella finestra Proprietà o nella barra Esplora soluzioni per gli oggetti che forniscono una visualizzazione della pagina delle proprietà dell'oggetto selezionato. Le pagine delle proprietà vengono create dall'ambiente e sono disponibili per soluzioni e progetti. Possono tuttavia essere resi disponibili anche per gli elementi di progetto che usano proprietà dipendenti dalla configurazione. Questa funzionalità può essere usata quando i file all'interno di un progetto richiedono impostazioni diverse dell'opzione del compilatore per la compilazione corretta.
@@ -36,15 +36,15 @@ Gli utenti possono visualizzare e modificare le proprietà dipendenti dalla conf
 
  ![Visual Basic pagine delle proprietà Project](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages") finestra di dialogo Pagine delle proprietà con il formato del campo e la struttura ad albero
 
- La struttura ad albero nella finestra di dialogo Pagine delle proprietà non viene compilata usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . L'ambiente, in base al nome del livello passato dalle interfacce e , lo <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> compila.
+ La struttura ad albero nella finestra di dialogo Pagine delle proprietà non viene compilata usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . L'ambiente, in base al nome del livello passato dalle interfacce <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> , lo compila.
 
  Nelle pagine delle proprietà sono disponibili solo due [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] categorie di primo livello:
 
 - Proprietà comuni, che visualizza informazioni indipendenti dalla configurazione per l'oggetto o gli oggetti selezionati. Di conseguenza, quando si seleziona una delle sottocategorie Proprietà comuni, le opzioni Configurazione, Piattaforma e Gestione configurazione nella parte superiore della finestra di dialogo non sono disponibili.
 
-- Proprietà di configurazione, che contiene informazioni dipendenti dalla configurazione relative ai parametri di debug, ottimizzazione e compilazione per la soluzione o il progetto.
+- Proprietà di configurazione, che contiene informazioni dipendenti dalla configurazione relative ai parametri debug, ottimizzazione e compilazione per la soluzione o il progetto.
 
-  Non è possibile creare altre categorie di primo livello, ma è possibile scegliere di non visualizzare una o l'altra nell'implementazione di `IVsPropertyPage` . Se, ad esempio, non sono disponibili proprietà indipendenti dalla configurazione da visualizzare per un oggetto, è possibile scegliere di non visualizzare la categoria Proprietà comuni. Vengono visualizzate le proprietà comuni se viene implementata dall'oggetto Browse dell'elemento e le proprietà Di configurazione quando si implementa nell'oggetto di configurazione (l'oggetto che implementa `ISpecifyPropertyPages` , e le interfacce `ISpecifyPropertyPages` `IVsCfg` `IVsProjectCfg` correlate).
+  Non è possibile creare altre categorie di primo livello, ma è possibile scegliere di non visualizzare una o l'altra nell'implementazione di `IVsPropertyPage` . Se, ad esempio, non sono disponibili proprietà indipendenti dalla configurazione da visualizzare per un oggetto, è possibile scegliere di non visualizzare la categoria Proprietà comuni. Vengono visualizzate le proprietà comuni se implementate dall'oggetto Browse dell'elemento e le proprietà Di configurazione quando si implementa nell'oggetto di configurazione (l'oggetto che implementa `ISpecifyPropertyPages` , e le interfacce `ISpecifyPropertyPages` `IVsCfg` `IVsProjectCfg` correlate).
 
   Ogni categoria visualizzata in una categoria di primo livello rappresenta una pagina delle proprietà separata. Le voci di categoria e sottocategoria disponibili nella finestra di dialogo sono determinate dall'implementazione di `ISpecifyPropertyPages` e `IVsPropertyPage` .
 
@@ -68,13 +68,13 @@ Gli utenti possono visualizzare e modificare le proprietà dipendenti dalla conf
 
 - Progetto di avvio
 
-   È possibile specificare uno o più progetti dalla pagina delle proprietà della soluzione che verrà avviata quando l'utente preme F5 o sceglie Esegui dal menu Compila. Questa operazione funziona in modo simile al progetto attivo precedente, nel senso che il nome viene visualizzato in Esplora soluzioni con carattere in grassetto.
+   È possibile specificare uno o più progetti dalla pagina delle proprietà della soluzione che verrà avviata quando l'utente preme F5 o sceglie Esegui dal menu Compila. Questo funziona in modo simile al progetto attivo precedente, nel senso che il nome viene visualizzato in Esplora soluzioni con carattere in grassetto.
 
-   È possibile recuperare il progetto di avvio come proprietà nel modello di automazione chiamando `DTE.Solution.SolutionBuild.StartupProjects` . In un VSPackage si chiamano i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metodi o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> . `IVsSolutionBuildManager` è disponibile come servizio da `QueryService` in SID_SVsSolutionBuildManager. Per altre informazioni, vedere [l'oggetto Project e](../../extensibility/internals/project-configuration-object.md) La configurazione della [soluzione](../../extensibility/internals/solution-configuration.md).
+   È possibile recuperare il progetto di avvio come proprietà nel modello di automazione chiamando `DTE.Solution.SolutionBuild.StartupProjects` . In un VSPackage si chiamano i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metodi o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> . `IVsSolutionBuildManager` è disponibile come servizio da `QueryService` in SID_SVsSolutionBuildManager. Per altre informazioni, vedere [l'Project e](../../extensibility/internals/project-configuration-object.md) [La configurazione della soluzione](../../extensibility/internals/solution-configuration.md).
 
 - Configurazione della build della soluzione attiva
 
-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ha una configurazione della soluzione attiva, disponibile nel modello di automazione implementando `DTE.Solution.SolutionBuild.ActiveConfiguration` . Una configurazione della soluzione è una raccolta che contiene una configurazione di progetto per ogni progetto nella soluzione (ogni progetto può avere più configurazioni, su più piattaforme, con nomi diversi). Per altre informazioni sulle pagine delle proprietà della soluzione, vedere [Configurazione della soluzione](../../extensibility/internals/solution-configuration.md).
+   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ha una configurazione della soluzione attiva, disponibile nel modello di automazione implementando `DTE.Solution.SolutionBuild.ActiveConfiguration` . Una configurazione della soluzione è una raccolta che contiene una configurazione di progetto per ogni progetto nella soluzione (ogni progetto può avere più configurazioni, su più piattaforme, con nomi diversi). Per altre informazioni relative alle pagine delle proprietà della soluzione, vedere [Configurazione della soluzione](../../extensibility/internals/solution-configuration.md).
 
 - Project attualmente selezionato
 

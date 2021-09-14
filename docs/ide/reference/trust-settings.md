@@ -1,5 +1,5 @@
 ---
-title: Attendibilità Impostazioni per file e cartelle
+title: Attendibilità Impostazioni file e cartelle
 description: Informazioni su come modificare le impostazioni di attendibilità per file e cartelle in modo da mantenere protetto Visual Studio.
 author: TerryGLee
 ms.author: tglee
@@ -16,21 +16,21 @@ helpviewer_keywords:
 - trusted files
 - trusted folders
 ms.openlocfilehash: 47cfd8c689699367336a3b4dafb9d72771e8b9b9
-ms.sourcegitcommit: 0ac22f45b3240081c4a219fc96f9d630e5de59a4
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122423550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711642"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurare le impostazioni di attendibilità per file e cartelle
 
 ::: moniker range=">=vs-2022"
 
-In Visual Studio 2022 (anteprima 2) è stata rinnovata la funzionalità Trust Impostazioni per visualizzare un avviso ogni volta che nell'IDE sta per essere aperto codice non attendibile in file, cartelle, progetti e soluzioni.
+In Visual Studio 2022 (anteprima 2) è stata rinnovata la funzionalità Trust Impostazioni per visualizzare un avviso ogni volta che il codice non attendibile in file, cartelle, progetti e soluzioni sta per essere aperto nell'IDE.
 
-:::image type="content" source="media/vs-2022/trusted-settings-warning-message.png" alt-text="Screenshot del messaggio di avviso Impostazioni trust":::
+:::image type="content" source="media/vs-2022/trusted-settings-warning-message.png" alt-text="Screenshot del messaggio di avviso Impostazioni attendibilità":::
 
-Si aggiungeranno altre informazioni a questa pagina mentre si continua ad aggiornare la funzionalità. Nel frattempo, per le ultime notizie, esaminare il post di blog più recente, Miglioramento della sicurezza degli sviluppatori con Visual Studio [2022.](https://devblogs.microsoft.com/visualstudio/improving-developer-security-with-visual-studio-2022/)
+Si aggiungeranno altre informazioni a questa pagina mentre si continua ad aggiornare la funzionalità. Nel frattempo, per le ultime novità, vedere il post di blog improving developer security with Visual Studio 2022 (Miglioramento della sicurezza degli sviluppatori [con Visual Studio 2022).](https://devblogs.microsoft.com/visualstudio/improving-developer-security-with-visual-studio-2022/)
 
 ::: moniker-end
 
@@ -42,13 +42,13 @@ Visual Studio richiede l'approvazione dell'utente prima di aprire i progetti con
 > È comunque necessario assicurarsi che il file, la cartella o la soluzione provenga da una persona o un percorso attendibile prima di approvarli.
 
 > [!NOTE]
-> In Visual Studio 2022 (anteprima) è stata rinnovata la funzionalità Trust Impostazioni per visualizzare un avviso ogni volta che nell'IDE sta per essere aperto codice non attendibile in file, cartelle, progetti e soluzioni. Per altre informazioni, vedere la sezione "Percorsi attendibili" delle note sulla versione di [Visual Studio 2022 Preview](/visualstudio/releases/2022/release-notes-preview#trustedlocations-170P2)e il recente post di blog Improving developer security with Visual Studio 2022 ( Miglioramento della sicurezza degli sviluppatori con Visual Studio [2022).](https://devblogs.microsoft.com/visualstudio/improving-developer-security-with-visual-studio-2022/)
+> In Visual Studio 2022 (anteprima) è stata rinnovata la funzionalità Trust Impostazioni per visualizzare un avviso ogni volta che nell'IDE sta per essere aperto codice non attendibile in file, cartelle, progetti e soluzioni. Per altre informazioni, vedere la sezione "Percorsi attendibili" delle note sulla versione di anteprima di [Visual Studio 2022](/visualstudio/releases/2022/release-notes-preview#trustedlocations-170P2)e il recente post di blog Improving developer security with Visual Studio 2022 (Miglioramento della sicurezza per gli sviluppatori [con Visual Studio 2022).](https://devblogs.microsoft.com/visualstudio/improving-developer-security-with-visual-studio-2022/)
 
 ## <a name="configure-trust-settings"></a>Configurare le impostazioni di attendibilità
 
 Per modificare le impostazioni di attendibilità, seguire questa procedura:
 
-1. Aprire **Strumenti Opzioni** Impostazioni e selezionare il collegamento Configura Impostazioni trust nel riquadro a >  >  destra. 
+1. Aprire **Strumenti** > **Opzioni** > **Impostazioni** attendibilità e selezionare il collegamento Configura **Impostazioni** attendibilità nel riquadro di destra.
 
 2. Scegliere il livello di controllo per i file e le cartelle. Si possono usare controlli diversi per ognuno di essi. Le opzioni sono:
 
@@ -64,7 +64,7 @@ Per modificare le impostazioni di attendibilità, seguire questa procedura:
 
 Per aggiungere percorsi attendibili, attenersi a questa procedura:
 
-1. Aprire **Strumenti Opzioni** Impostazioni e selezionare il collegamento Configura Impostazioni trust nel riquadro a >  >  destra. 
+1. Aprire **Strumenti** > **Opzioni** > **Impostazioni** attendibilità e selezionare il collegamento Configura **Impostazioni** attendibilità nel riquadro di destra.
 
 2. Fare clic su **Aggiungi** nella finestra di dialogo **Impostazioni di attendibilità** e quindi selezionare **File** o **Cartella**.
 
@@ -78,7 +78,7 @@ Per aggiungere percorsi attendibili, attenersi a questa procedura:
 
 Per rimuovere percorsi attendibili, attenersi a questa procedura:
 
-1. Aprire **Strumenti Opzioni** Impostazioni e selezionare il collegamento Configura Impostazioni trust nel riquadro a >  >  destra. 
+1. Aprire **Strumenti** > **Opzioni** > **Impostazioni** attendibilità e selezionare il collegamento Configura **Impostazioni** attendibilità nel riquadro di destra.
 
 2. Selezionare il percorso da rimuovere nell'elenco dei **percorsi attendibili** e quindi fare clic su **Rimuovi**.
 

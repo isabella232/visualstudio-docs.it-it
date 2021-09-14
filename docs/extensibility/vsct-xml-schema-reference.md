@@ -15,22 +15,22 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6f6564d563894dfb48d0fea1a008ffffb65ba280
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711702"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informazioni di riferimento sullo schema XML VSCT
 Fornisce una tabella di elementi dello schema del compilatore di tabelle comandi, con gli elementi figlio e gli attributi consentiti per ognuno.
 
- Un file di configurazione della tabella dei comandi basato su XML (con estensione vsct) definisce gli elementi di comando forniti da un pacchetto VSPackage all'ambiente di sviluppo integrato (IDE). Questi elementi includono voci di menu, menu, barre degli strumenti e caselle combinate.
+ Un file di configurazione della tabella dei comandi basato su XML (con estensione vsct) definisce gli elementi di comando forniti da un vspackage all'ambiente di sviluppo integrato (IDE). Questi elementi includono voci di menu, menu, barre degli strumenti e caselle combinate.
 
 > [!NOTE]
 > Il compilatore VSCT può eseguire un preprocessore nel file con estensione vsct. Poiché si tratta in genere del preprocessore C++, è possibile definire le macro includes e con la stessa sintassi usata nei file C++. Esempi di questo tipo vengono forniti nel file con estensione vsct creato dalla procedura guidata **Project** per un progetto VSPackage.
 
 ## <a name="optional-elements"></a>Elementi facoltativi
- Alcuni elementi VSCT sono facoltativi. Se non `Parent` viene specificato un argomento, Group_Undefined:0 sarà implicito. Se non `Icon` viene specificato un argomento, guidOfficeIcon:msotcidNoIcon verrà implicito. Quando viene definito un tasto di scelta rapida, l'emulazione, in genere inutilizzata, è facoltativa.
+ Alcuni elementi VSCT sono facoltativi. Se non `Parent` viene specificato un argomento, Group_Undefined:0 verrà implicito. Se non `Icon` viene specificato un argomento, guidOfficeIcon:msotcidNoIcon verrà implicito. Quando viene definito un tasto di scelta rapida, l'emulazione, in genere inutilizzata, è facoltativa.
 
  Gli elementi bitmap possono essere incorporati in fase di compilazione specificando il percorso della striscia bitmap `href` nell'argomento . La striscia bitmap viene copiata durante l'unione anziché estratta dalle risorse della DLL. Quando viene `href` fornito un argomento, l'argomento diventa facoltativo e tutti gli slot nella striscia `usedList` bitmap vengono considerati usati.
 

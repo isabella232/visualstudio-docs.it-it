@@ -1,5 +1,5 @@
 ---
-title: '&lt;Elemento Package &gt; (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;Elemento &gt; Package (bootstrapper) | Microsoft Docs'
 description: L'elemento Package è l'elemento XML di primo livello all'interno di un file di pacchetto. L'elemento Package è obbligatorio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -19,13 +19,13 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: d2979fa8b1027184999925437adbb3c49b73ff51
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080429"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636516"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Elemento Package &gt; (programma di avvio automatico)
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Elemento &gt; Package (programma di avvio automatico)
 `Package`L'elemento è l'elemento XML di primo livello all'interno di un file di pacchetto.
 
 ## <a name="syntax"></a>Sintassi
@@ -148,9 +148,9 @@ ms.locfileid: "122080429"
 
 | Attributo | Descrizione |
 |--------------------| - |
-| `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determinano la lingua da utilizzare. Questo attributo è una chiave nell'elemento , che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi `Strings` di errore durante l'installazione. |
-| `Name` | Obbligatorio. Nome del pacchetto visualizzato dallo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Questo attributo è una chiave nell'elemento , che deve contenere un elemento con le proprietà e impostate in modo che `Strings` `String` `Name` `Culture` corrispondano `Name` alle proprietà e `Culture` di `Package` . |
-| `LicenseAgreement` | facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto End-User licenza.  Questo file può essere testo normale (*.txt*) o rich text format. (*RTF*) |
+| `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina la lingua da usare. Questo attributo è una chiave nell'elemento , che elenca stringhe specifiche delle impostazioni cultura per i `Strings` nomi dei prodotti e i messaggi di errore durante l'installazione. |
+| `Name` | Obbligatorio. Nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Questo attributo è una chiave nell'elemento , che deve contenere un elemento con le proprietà e impostate in modo che corrispondano alle `Strings` `String` proprietà e di `Name` `Culture` `Name` `Culture` `Package` . |
+| `LicenseAgreement` | facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto End-User licenza .  Questo file può essere testo normale (*.txt*) o RICH Text Format. (*.rtf*) |
 
 ## <a name="example"></a>Esempio
  Nell'esempio di codice seguente viene illustrato un file di pacchetto completo per la .NET Framework 2.0.

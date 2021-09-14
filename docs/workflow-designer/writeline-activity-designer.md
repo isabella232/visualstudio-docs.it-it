@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: daa88d858af5b99beda41631c6c139be9aff425d
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710560"
 ---
 # <a name="writeline-activity-designer"></a>ActivityDesigner WriteLine
 
@@ -30,7 +30,7 @@ L'attività <xref:System.Activities.Statements.WriteLine> scrive il testo in un 
 
 ### <a name="using-the-writeline-activity-designer"></a>Utilizzo dell'ActivityDesigner WriteLine
 
-Accedere **all'ActivityDesigner WriteLine** nella **categoria Primitive** della casella **degli strumenti**. **L'ActivityDesigner WriteLine** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di <xref:System.Activities.Statements.Sequence> un oggetto . In questo modo viene creata un'attività <xref:System.Activities.Statements.WriteLine> con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito WriteLine. Può <xref:System.Activities.Activity.DisplayName%2A> essere modificato nell'intestazione dell'ActivityDesigner **WriteLine** o nella **casella DisplayName** della griglia delle proprietà.
+Accedere **all'ActivityDesigner WriteLine** nella **categoria Primitive** della casella **degli strumenti**. **L'ActivityDesigner WriteLine** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . In questo modo viene creata un'attività <xref:System.Activities.Statements.WriteLine> con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito WriteLine. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione dell'ActivityDesigner **WriteLine** o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-writeline-properties"></a>Proprietà di WriteLine
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.WriteLine>. Il valore predefinito è WriteLine. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|Falso|Testo da scrivere. Per impostare la proprietà, digitare un'Visual Basic nella casella **Testo** dell'ActivityDesigner **WriteLine** o nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|Falso|Testo da scrivere. Per impostare la proprietà, digitare un Visual Basic  nella casella Testo dell'ActivityDesigner **WriteLine** o nella griglia delle proprietà.|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|Falso|Oggetto <xref:System.IO.TextWriter> nel quale <xref:System.Activities.Statements.WriteLine> scrive <xref:System.Activities.Statements.WriteLine.Text%2A>. Il valore predefinito corrisponde alla console.|
 
 ## <a name="see-also"></a>Vedi anche

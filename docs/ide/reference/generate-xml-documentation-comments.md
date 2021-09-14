@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0319b511ddc55e0a6aa0297c924fbfbe14c6c34
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711650"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procedura: Inserire commenti XML per la generazione di documentazione
 
@@ -41,7 +41,7 @@ Il file XML generato dal compilatore può essere distribuito insieme agli assemb
 
    - Dal menu di scelta rapida o dal menu di scelta rapida nell'elemento di codice o sopra l'elemento di codice scegliere **Inserisci**  >  **commento frammento**
 
-   Il modello XML viene generato subito sopra l'elemento di codice. Ad esempio, quando si imposta come commento un metodo, vengono generati l'elemento , un elemento per ogni parametro e un elemento per **\<summary\>** **\<param\>** **\<returns\>** documentare il valore restituito.
+   Il modello XML viene generato subito sopra l'elemento di codice. Ad esempio, quando si imposta un metodo come commento, vengono generati l'elemento , un elemento per ogni parametro e un elemento per **\<summary\>** **\<param\>** **\<returns\>** documentare il valore restituito.
 
    ![Modello di commento XML - C#](media/doc-preview-cs.png)
 
@@ -56,7 +56,7 @@ Il file XML generato dal compilatore può essere distribuito insieme agli assemb
    ![Screenshot che mostra il commento completato con tag di stile per corsivo, grassetto, punti elenco e un collegamento selezionabile.](media/doc-style-cs.png) 
 
 > [!NOTE]
-> È disponibile un'[opzione](../../ide/reference/options-text-editor-csharp-advanced.md) per attivare/disattivare i commenti in formato documentazione XML dopo aver digitato `///` in C# o `'''` in Visual Basic. Dalla barra dei menu scegliere Opzioni  >  **strumenti per** aprire la finestra di **dialogo** Opzioni. Passare quindi a Editor **di testo**  >  **C#** o Avanzate **di**  >  **base.** Nella sezione **Guida editor** cercare l'opzione **Genera commenti relativi alla documentazione XML**.
+> È disponibile un'[opzione](../../ide/reference/options-text-editor-csharp-advanced.md) per attivare/disattivare i commenti in formato documentazione XML dopo aver digitato `///` in C# o `'''` in Visual Basic. Dalla barra dei menu scegliere **Opzioni**  >  **strumenti per** aprire la **finestra di dialogo** Opzioni. Passare quindi a Editor **di testo**  >  **C#** o Avanzate **di**  >  **base.** Nella sezione **Guida editor** cercare l'opzione **Genera commenti relativi alla documentazione XML**.
 
 ## <a name="see-also"></a>Vedi anche
 

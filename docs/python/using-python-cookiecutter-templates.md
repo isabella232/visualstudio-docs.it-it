@@ -12,19 +12,19 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 920822cca275f0285f922fc49a60af3a3b152d6b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140310"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625332"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) offre un'interfaccia utente grafica per individuare modelli, opzioni del modello di input e creare progetti e file. Questa estensione è inclusa in Visual Studio 2017 e versioni successive e può essere installata separatamente nelle versioni precedenti di Visual Studio.
 
-Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python Visual Studio in esecuzione, selezionare il pulsante **Home** sulla barra degli strumenti Cookiecutter per rilevare l'interprete appena installato. Per altre informazioni sugli ambienti in generale, vedere Ambienti [Python.](managing-python-environments-in-visual-studio.md)
+Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python mentre Visual Studio è in esecuzione, selezionare il pulsante **Home** sulla barra degli strumenti di Cookiecutter per rilevare l'interprete appena installato. Per altre informazioni sugli ambienti in generale, vedere Ambienti [Python.](managing-python-environments-in-visual-studio.md)
 
-Dopo l'installazione, **selezionare Visualizza**  >  **Cookiecutter Explorer** per aprire la relativa finestra:
+Dopo l'installazione, **selezionare**  >  **Visualizza Cookiecutter Explorer** per aprire la relativa finestra:
 
 ![Finestra principale di Cookiecutter](media/cookiecutter-overview.png)
 
@@ -49,7 +49,7 @@ Quando si seleziona un modello e si fa clic su **Next** (Avanti), Cookiecutter c
 
 Se si seleziona un modello dai gruppi **Recommended** (Consigliati) o **GitHub** oppure si immette un URL personalizzato nella casella di ricerca e si seleziona tale modello, questo viene clonato e installato nel computer locale. Se tale modello è stato installato in una sessione precedente di Visual Studio, questo verrà eliminato automaticamente e verrà clonata la versione più recente.
 
-Se si seleziona un  modello dal gruppo Installato o si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio tale modello senza clonarlo.
+Se si seleziona un  modello dal gruppo Installato o si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio il modello senza clonazione.
 
 > [!Important]
 > I modelli di Cookiecutter vengono clonati in un'unica cartella *~/.cookiecutter*. Il nome di ogni sottocartella viene definito in base al nome del repository GIT, che non include il nome utente di GitHub. Possono verificarsi conflitti se si clonano modelli diversi con lo stesso nome provenienti da autori diversi. In questo caso, Cookiecutter impedisce di sovrascrivere il modello esistente con un modello diverso con lo stesso nome. Per installare il nuovo modello, è prima necessario eliminare quello esistente.
@@ -76,13 +76,13 @@ Dopo aver creato correttamente i file, Cookiecutter offre un'opzione per aprire 
 
 ## <a name="cookiecutter-options"></a>Opzioni di Cookiecutter
 
-Le opzioni cookiecutter sono disponibili tramite  >    >  **Cookiecutter** di Opzioni degli strumenti :
+Le opzioni di Cookiecutter sono disponibili tramite **Strumenti**  >  **Opzioni**  >  **Cookiecutter:**
 
 ![Opzioni di Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Opzione | Descrizione |
 | --- | --- |
-| **URL del feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
+| **URL feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Ottimizzare i modelli di Cookiecutter per Visual Studio
@@ -171,7 +171,7 @@ Se non è necessario passare un argomento, lasciare una stringa vuota oppure ome
 ]
 ```
 
-Usare una matrice per più argomenti. Per le opzioni, suddividere l'opzione e il relativo valore in argomenti separati, usando correttamente le virgolette. Esempio:
+Usare una matrice per più argomenti. Per le opzioni, suddividere l'opzione e il relativo valore in argomenti separati, usando correttamente le virgolette. Ad esempio:
 
 ```json
 "_visual_studio_post_cmds": [

@@ -1,5 +1,5 @@
 ---
-title: Quali download di software sono disponibili nelle sottoscrizioni Visual Studio? | Microsoft Docs
+title: Quali download software sono disponibili nelle sottoscrizioni Visual Studio software? | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -8,15 +8,15 @@ ms.date: 02/19/2021
 ms.topic: how-to
 description: Elenco di download del software inclusi nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710429"
 ---
 # <a name="what-software-is-available-for-download"></a>Software disponibile per il download
 
-L'[elenco di download del software](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) disponibili dipende dalla sottoscrizione in uso.  Se è disponibile più di una sottoscrizione associata allo stesso indirizzo di accesso, verranno visualizzati i download inclusi nella sottoscrizione di livello più alto, indipendentemente dalla sottoscrizione visualizzata.  Ad esempio, se si dispone di una sottoscrizione Visual Studio Enterprise Standard e di una sottoscrizione Visual Studio Professional, verrà visualizzato l'elenco completo dei download disponibili con la sottoscrizione Enterprise sottoscrizione.  Per visualizzare l'elenco delle sottoscrizioni, visitare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) .
+L'[elenco di download del software](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) disponibili dipende dalla sottoscrizione in uso.  Se è disponibile più di una sottoscrizione associata allo stesso indirizzo di accesso, verranno visualizzati i download inclusi nella sottoscrizione di livello più alto, indipendentemente dalla sottoscrizione visualizzata.  Ad esempio, se si ha una sottoscrizione standard Visual Studio Enterprise e una sottoscrizione Visual Studio Professional, verrà visualizzato l'elenco completo dei download disponibili con la sottoscrizione Enterprise.  Per visualizzare l'elenco delle sottoscrizioni, visitare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) .
 
 Se è già disponibile una sottoscrizione di Visual Studio:
 1. Passare a [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
@@ -26,12 +26,12 @@ Se è già disponibile una sottoscrizione di Visual Studio:
 Per trovare rapidamente i prodotti, usare le funzioni "Cerca" nella parte superiore della pagina o selezionare i diversi tipi di prodotto a sinistra.
 
 > [!TIP]
-> Se si stanno cercando i codici Product Key, selezionare la **scheda Codici Product Key** nella parte superiore della pagina.
+> Se si stanno cercando i codici Product Key, selezionare la scheda **Codici Product Key** nella parte superiore della pagina.
 
 È anche possibile scaricare un foglio di calcolo di Excel contenente un elenco completo dei [titoli software disponibili](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) per ogni tipo di sottoscrizione.
 
 ## <a name="resources"></a>Risorse 
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp). 
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere Visual Studio [Subscriptions support](https://aka.ms/vssubscriberhelp). 
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

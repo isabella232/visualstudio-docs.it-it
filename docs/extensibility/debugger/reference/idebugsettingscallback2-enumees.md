@@ -16,11 +16,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 06a2c2572c1c4109cee4bdda5f5483be58a52f0f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710287"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Enumera gli analizzatori di espressioni disponibili in base alla lingua e all'identificatore del fornitore.
@@ -50,7 +50,7 @@ public int EnumEEs(
 [in] Numero di elementi nel `pceltEEs` buffer.
 
 `rgguidLang`\
-[in, out] Identificatore univoco del linguaggio di programmazione.
+[in, out] Identificatore univoco per il linguaggio di programmazione.
 
 `rgguidVendor`\
 [in, out] Identificatore univoco del fornitore.

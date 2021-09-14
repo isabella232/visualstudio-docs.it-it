@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.author: jomatthi
 author: jmatthiesen
 ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710469"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Strumenti di test in Visual Studio per Mac
 
 Visual Studio per Mac strumenti di test possono aiutare l'utente e il team a sviluppare e sostenere standard elevati di eccellenza del codice. Gli unit test possono essere scritti ed eseguiti usando Microsoft unit test Framework (MSTest), xUnit o NUnit.
 
 ## <a name="creating-tests"></a>Creazione di test
-Per iniziare a testare, è possibile creare un nuovo progetto di test nella soluzione facendo clic con il pulsante destro del mouse sulla soluzione e scegliendo il menu Aggiungi > **Nuovo Project...** . Scegliere quindi una delle categorie Test sul lato sinistro della finestra di dialogo, ad esempio la categoria Test web e console > **test.** Selezionare il tipo di progetto di test da creare e fare clic su Avanti. Seguire le istruzioni nelle finestre di dialogo visualizzate e quindi verrà aggiunto un nuovo progetto di test alla soluzione.
+Per iniziare a testare, è possibile creare un nuovo progetto di test nella soluzione facendo clic con il pulsante destro del mouse sulla soluzione e scegliendo il menu Aggiungi > **Nuovo Project...** . Scegliere quindi una delle categorie Test sul lato sinistro della finestra di dialogo, ad esempio la categoria Test **> Web e** Console. Selezionare il tipo di progetto di test da creare e fare clic su Avanti. Seguire le istruzioni nelle finestre di dialogo visualizzate e quindi verrà aggiunto un nuovo progetto di test alla soluzione.
 
-![Finestra di dialogo Nuovo progetto con la sezione Test > Web e console selezionata, che mostra i progetti xUnit, MSTest e NUnit](media/create-new-test-project.PNG)
+![Finestra di dialogo Nuovo progetto con la sezione Test > web e console selezionata, che mostra i progetti xUnit, MSTest e NUnit](media/create-new-test-project.PNG)
 
 > [!NOTE]
 > Per altre informazioni sugli unit test delle applicazioni .NET Core e sulla selezione di framework unit test, vedere la documentazione unit [test in .NET Core e .NET Standard.](/dotnet/core/testing/?pivots=xunit)
@@ -36,7 +36,7 @@ Quando si modifica una classe C# che contiene unit test, è possibile eseguire i
 
 ![Menu di scelta rapida dell'editor con le opzioni Esegui ed esegui debug test](media/run-tests-context-menu.PNG)
 
-Durante l'esecuzione dei test viene **visualizzata Risultati test** finestra di dialogo in modo da poter esaminare i test riusciti o non superati e l'output dell'esecuzione di tali test.
+Durante l'esecuzione dei test, **viene visualizzata Risultati test** finestra di dialogo per esaminare i test riusciti o non superati e l'output dell'esecuzione di tali test.
 
 ![Finestra risultati test che mostra un test non superato e un conteggio di 21 test superati e 1 test non superato.](media/test-results-window.PNG)
 

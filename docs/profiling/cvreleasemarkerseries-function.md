@@ -1,6 +1,6 @@
 ---
 title: Funzione CvReleaseMarkerSeries | Microsoft Docs
-description: Vedere le informazioni di riferimento per la funzione Concurrency Visualizer SDK CvReleaseMarkerSeries (libreria C).
+description: Vedere le informazioni di riferimento per la funzione SDK del visualizzatore di concorrenza CvReleaseMarkerSeries (libreria C).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 20619133d217dff7e8992387a9fdc94a19f419d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084493"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637163"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Funzione CvReleaseMarkerSeries
 Rilascia una serie di marcatori. Dopo il rilascio, non usare l'oggetto serie di marcatori o l'applicazione potrebbe arrestarsi in modo anomalo. Il mancato rilascio della serie di marcatori causa una perdita di memoria.

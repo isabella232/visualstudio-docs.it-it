@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d85d43fe69969f61af2082d49c8f0b35a5462b08
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156669"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637020"
 ---
 # <a name="zoom-control-utilization-view"></a>Controllo zoom (visualizzazione Utilizzo)
 Il controllo zoom consente di ingrandire il grafico Utilizzo CPU, in modo da potersi concentrare sulle aree di particolare interesse. Questo controllo esegue uno zoom avanti al centro della visualizzazione. È pertanto consigliabile centrare l'area di interesse prima di procedere.

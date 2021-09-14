@@ -1,6 +1,6 @@
 ---
 title: Elemento ExtensionDataItem | Microsoft Docs
-description: Visualizzare informazioni di riferimento sull'elemento ExtensionDataItem, che è un elemento nello SharePoint schema dell'elemento di progetto.
+description: Visualizzare le informazioni di riferimento sull'elemento ExtensionDataItem, che è un elemento nello schema SharePoint dell'elemento di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: b99d9a267b8fb18ec8e238191382d71f558fc3d3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625253"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem (elemento)
   Elemento di dati personalizzato associato all'elemento SharePoint progetto, in formato chiave/valore. Sia la chiave che il valore devono essere stringhe.
@@ -52,7 +52,7 @@ ms.locfileid: "122115603"
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Rappresenta una raccolta di elementi di dati personalizzati associati all'SharePoint di progetto.|
 
 ## <a name="remarks"></a>Commenti
- Quando si associano dati personalizzati a un elemento di progetto SharePoint usando la proprietà di un oggetto , Visual Studio salva i dati in un nuovo elemento <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> **ExtensionDataItem** nel file per l'elemento `.spdata` di progetto. Per altre informazioni, vedere [Salvare i dati nelle estensioni del sistema SharePoint progetto](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+ Quando si associano dati personalizzati a un elemento di progetto SharePoint usando la proprietà di un oggetto, Visual Studio salva i dati in un nuovo <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> elemento **ExtensionDataItem** nel file per l'elemento di `.spdata` progetto. Per altre informazioni, vedere [Salvare i dati nelle estensioni del SharePoint di progetto.](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
@@ -64,4 +64,4 @@ ms.locfileid: "122115603"
 |**Può essere vuoto**|No|
 
 ## <a name="see-also"></a>Vedere anche
-- [SharePoint riferimento allo schema dell'elemento di progetto](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [SharePoint sullo schema dell'elemento di progetto](../sharepoint/sharepoint-project-item-schema-reference.md)

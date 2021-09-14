@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8200b5426e37ed4e6129b3e0cab16b6820ea2950c1a7d0f8d42683ba16328557
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0d2e5d8f9fc435740d536c4bcd33c270763c0be8
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636316"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 Imposta la radice del Registro di sistema per il motore di debug (DE).
@@ -49,7 +49,7 @@ int SetRegistryRoot(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Questo metodo consente di specificare una radice del Registro di sistema alternativa che il de deve usare per ottenere le impostazioni del Registro di sistema, ad esempio [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp".
+ Questo metodo consente di specificare una radice del Registro di sistema alternativa che il DE deve usare per ottenere le impostazioni del Registro di sistema, ad esempio [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp".
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

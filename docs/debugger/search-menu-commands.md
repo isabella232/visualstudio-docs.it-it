@@ -14,16 +14,16 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 256f506fa2355edcd93fce59c20a91995ddd0d18
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636644"
 ---
 # <a name="search-menu-commands"></a>comandi del menu Cerca
 Il menu **Cerca** fornisce comandi per la ricerca di finestre specifiche.
 
- **Trova finestra/processo/thread/messaggio** Apre la **finestra di** / **dialogo** /  / **MessageSearch** thread processo finestra, in cui è possibile usare **finderTool** o specificare i criteri di ricerca.
+ **Trova finestra/processo/thread/messaggio** Apre la **finestra di** dialogo / **MessageSearch** thread processo /  /  finestra, in cui è possibile usare **finderTool** o specificare i criteri di ricerca.
 
  **Trova successivo** Cerca nella visualizzazione corrente la finestra, il processo, il thread o il messaggio corrispondenti successivi. Questa voce di menu (e il pulsante della barra degli strumenti correlato) è disponibile solo quando è presente un risultato di ricerca valido non univoco.
 

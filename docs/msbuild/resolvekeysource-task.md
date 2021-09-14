@@ -1,6 +1,6 @@
 ---
 title: Attività ResolveKeySource | Microsoft Docs
-description: Informazioni sui parametri dell'attività MSBuild ResolveKeySource, che determina l'origine della chiave con nome sicuro.
+description: Informazioni sui parametri dell'attività ResolveKeySource MSBuild, che determina l'origine della chiave con nome sicuro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 91e2c10ca95004154bf91e11906d440b57e4ca72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625572"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource (attività)
 

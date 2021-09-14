@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: dc3ad57702b7063edd0c03f305a8ffc3722eebd6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130949"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711414"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Procedura: Impostare i comandi SharePoint distribuzione
   È possibile personalizzare il processo di distribuzione impostando i comandi di pre-distribuzione e post-distribuzione. Questi comandi vengono eseguiti prima e dopo altre azioni di distribuzione quando si esegue il debug SharePoint soluzioni da Visual Studio.
@@ -31,7 +31,7 @@ ms.locfileid: "122130949"
 
 2. Scegliere la **SharePoint** dati.
 
-3. Nella casella **di testo Riga di comando** pre-distribuzione immettere MS-DOS o MSBuild comandi per personalizzare questo passaggio.
+3. Nella casella **di testo Riga di comando** pre-distribuzione immettere MS-DOS o MSBuild per personalizzare questo passaggio.
 
      Ad esempio, per elencare il contenuto della directory prima del completamento della distribuzione, immettere **dir**.
 

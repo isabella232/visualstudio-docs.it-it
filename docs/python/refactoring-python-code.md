@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 15782ae1a10eebd39f6c7b15748d6b050c6a4707
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711466"
 ---
 # <a name="refactor-python-code"></a>Effettuare il refactoring del codice Python
 
@@ -43,7 +43,7 @@ Visual Studio offre diversi comandi per la trasformazione e la pulizia automatic
 ## <a name="extract-method"></a>Estrai metodo
 
 1. Selezionare le righe di codice o l'espressione da estrarre in un metodo separato.
-2. Selezionare il **comando di** menu Edit Refactor Extract method (Modifica  >  **refactoring)** o digitare  >   **CTRL** + **R**  >  **M**.
+2. Selezionare il **comando di** menu Modifica  >  **refactoring**  >  **Estrai** metodo o digitare **CTRL** + **R**  >  **M.**
 3. Nella finestra di dialogo visualizzata immettere un nuovo nome di metodo, indicare la posizione in cui estrarlo e selezionare eventuali variabili di chiusura. Le variabili non selezionate per la chiusura vengono trasformate in argomenti del metodo:
 
    ![Finestra di dialogo Estrai metodo](media/code-refactor-extract-method-1.png)
@@ -72,7 +72,7 @@ Infine, Visual Studio esclude l'importazione se un elemento viene normalmente es
 
 Durante la scrittura del codice è facile ritrovarsi con istruzioni `import` per moduli che non vengono usati affatto. Dato che Visual Studio analizza il codice, può determinare automaticamente se un'istruzione `import` è necessaria verificando se il nome importato viene usato nell'ambito dell'istruzione.
 
-Fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor e scegliere Rimuovi importazioni **,** che offre le opzioni da rimuovere da **Tutti** gli ambiti o solo dall'ambito **corrente:**
+Fare clic con il pulsante destro del mouse in un  punto qualsiasi dell'editor e scegliere Rimuovi importazioni **,** che offre le opzioni per la rimozione da Tutti gli ambiti o solo **dall'ambito corrente:**
 
 ![Menu Rimuovi importazioni](media/code-refactor-remove-imports-1.png)
 

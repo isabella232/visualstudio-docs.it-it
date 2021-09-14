@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
 ms.openlocfilehash: bcf84506f44e6aab30e0d5ce10e19f05a4a87c09
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711602"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novità di MSBuild 15
 
@@ -35,7 +35,7 @@ MSBuild è ora incluso in [.NET Core SDK](https://www.microsoft.com/net/download
 
 - Il valore di `MSBuildToolsVersion` per questa versione degli strumenti è 15.0. La versione dell'assembly è la 15.1.0.0.
 
-- Il percorso di `MSBuildToolsPath` non è più fisso. Per impostazione predefinita, si trova nella cartella *MSBuild\15.0\Bin* relativa al percorso di installazione di Visual Studio, ma il percorso di installazione di Visual Studio può essere modificato in fase di installazione.
+- Il percorso di `MSBuildToolsPath` non è più fisso. Per impostazione predefinita, si trova nella *cartella MSBuild\15.0\Bin* relativa al percorso di installazione di Visual Studio, ma il percorso di installazione di Visual Studio può essere modificato in fase di installazione.
 
 - I valori di `ToolsVersion` non vengono più impostato nel Registro di sistema.
 
@@ -43,10 +43,10 @@ MSBuild è ora incluso in [.NET Core SDK](https://www.microsoft.com/net/download
 
 ## <a name="updates"></a>Aggiornamenti
 
-- [Project elemento](../msbuild/project-element-msbuild.md) ha un nuovo `SDK` attributo . L'attributo `Xmlns` è ora facoltativo. Per altre informazioni sull'attributo `SDK`, vedere [Procedura: Usare SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacchetti, metapacchetti e framework](/dotnet/core/packages) e [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
-- [L'elemento Item](../msbuild/item-element-msbuild.md) all'esterno delle destinazioni ha un nuovo `Update` attributo . È stata inoltre eliminata la restrizione relativa all'attributo `Remove`.
-- *Directory.Build.props* è un file definito dall'utente che fornisce personalizzazioni ai progetti in una directory. Questo file viene importato automaticamente da *Microsoft.Common.props,* a meno che la proprietà `ImportDirectoryBuildTargets` non sia impostata su **false.** *Directory.Build.targets* viene importato da *Microsoft.Common.targets*.
-- Eventuali metadati il cui nome non è in conflitto con l'elenco di attributi corrente possono essere espressi come un attributo. Per altre informazioni, vedere [Elemento Item.](../msbuild/item-element-msbuild.md)
+- [Project elemento include](../msbuild/project-element-msbuild.md) un nuovo `SDK` attributo. L'attributo `Xmlns` è ora facoltativo. Per altre informazioni sull'attributo `SDK`, vedere [Procedura: Usare SDK di progetto MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacchetti, metapacchetti e framework](/dotnet/core/packages) e [Aggiunte al formato csproj per .NET Core](/dotnet/core/tools/csproj).
+- [L'elemento Item](../msbuild/item-element-msbuild.md) all'esterno delle destinazioni ha un nuovo `Update` attributo. È stata inoltre eliminata la restrizione relativa all'attributo `Remove`.
+- *Directory.Build.props* è un file definito dall'utente che fornisce personalizzazioni ai progetti in una directory. Questo file viene importato automaticamente da *Microsoft.Common.props* a meno che la proprietà `ImportDirectoryBuildTargets` non sia impostata su **false.** *Directory.Build.targets* viene importato da *Microsoft.Common.targets*.
+- Eventuali metadati il cui nome non è in conflitto con l'elenco di attributi corrente possono essere espressi come un attributo. Per altre informazioni, vedere [Elemento Item](../msbuild/item-element-msbuild.md).
 
 ## <a name="new-property-functions"></a>Nuove funzioni di proprietà
 

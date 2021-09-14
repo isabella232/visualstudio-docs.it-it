@@ -1,5 +1,5 @@
 ---
-title: Come usare un file di risorse in un SharePoint progetto | Microsoft Docs
+title: Come usare un file di risorse in un progetto di SharePoint | Microsoft Docs
 titleSuffix: ''
 description: Utilizzare un file di risorse in un progetto SharePoint in modo che sia possibile specificare nomi localizzati, definire proprietà e applicare autorizzazioni per gli oggetti definiti in un modello BDC.
 ms.custom: SEO-VS-2020
@@ -24,11 +24,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: a909462908c26e6ed1af7fbf6458a54b57e901f1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711410"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>Come usare un file di risorse in un SharePoint progetto
 

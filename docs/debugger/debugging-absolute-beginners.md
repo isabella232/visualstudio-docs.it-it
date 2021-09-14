@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d7285648ad1cb9f93dd11f5374f1eb2cf8ecbfdd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065780"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709926"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -65,7 +65,7 @@ Quando si esegue un'app normalmente, errori e risultati non corretti sono visibi
 
 L'esecuzione di un'app all'interno di un debugger, o in *modalità di debug*, consente al debugger di monitorare attivamente tutto ciò che accade durante l'esecuzione del programma. Consente anche di sospendere l'app in un punto qualsiasi per esaminarne lo stato e di eseguire quindi il codice riga per riga per controllare ogni dettaglio durante l'esecuzione.
 
-In Visual Studio si attiva la modalità di debug usando  **F5** (o il comando di menu Debug Avvia debug o il pulsante Avvia debug Avvia debug sulla barra  >   degli strumenti Debug).  ![](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
+In Visual Studio, si entra in modalità di debug usando **F5** (o il comando di menu Debug Avvia debug o il pulsante Avvia debug Avvia debug nella barra degli  >   strumenti  Debug). ![](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 Se non è stata restituita un'eccezione, probabilmente si ha già un'idea di dove cercare il problema nel codice. In questi casi si usano i *punti di interruzione* con il debugger per avere l'opportunità di esaminare il codice più attentamente. I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio deve sospendere il codice in esecuzione in modo da consentire di esaminare i valori delle variabili, il comportamento della memoria o la sequenza di esecuzione del codice.
 
@@ -290,7 +290,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 ### <a name="run-the-app"></a>Eseguire l'app
 
-1. Premere **F5 o** il **pulsante Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug, sopra l'editor di codice.
+1. Premere **F5 o** il **pulsante Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug nella barra degli strumenti Debug, sopra l'editor di codice.
 
     L'app viene avviata e il debugger non visualizza alcuna eccezione. Tuttavia, l'output visualizzato nella finestra della console è diverso da quanto ci si aspetta. Ecco l'output previsto:
 
@@ -342,7 +342,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     Poiché si è riscontrato un problema nell'output, il debug verrà avviato esaminando il codice precedente che imposta l'output nel debugger.
 
-1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug (**CTRL**  +  **MAIUSC**  +  **F5**).
+1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug ( CTRL  +  **MAIUSC**  +  **F5**).
 
     L'app verrà sospesa in corrispondenza del punto di interruzione impostato. L'evidenziazione di colore giallo indica il punto in cui il debugger viene sospeso (la riga di codice gialla non è ancora stata eseguita).
 
@@ -352,12 +352,12 @@ Verrà creata un'applicazione con alcuni bug.
 
     "Spiral" è effettivamente il valore corretto che ci si aspettava di stampare nella console. La possibilità di accedere a questo valore nel codice durante l'esecuzione dell'app è pertanto un buon punto di partenza. In questo scenario viene usata l'API non corretta. Si vedrà come risolvere questo problema durante l'esecuzione del codice nel debugger.
 
-1. Nello stesso codice, durante il debug, posizionare il cursore alla fine di `theGalaxy.GalaxyType` e modificarlo in `theGalaxy.GalaxyType.MyGType`. Anche se questa modifica è consentita, l'editor del codice visualizza un errore che indica l'impossibilità di compilare il codice. (In Visual Basic, l'errore non verrà visualizzato e questa sezione del codice funziona)
+1. Nello stesso codice, durante il debug, posizionare il cursore alla fine di `theGalaxy.GalaxyType` e modificarlo in `theGalaxy.GalaxyType.MyGType`. Anche se questa modifica è consentita, l'editor del codice visualizza un errore che indica l'impossibilità di compilare il codice. (In Visual Basic, l'errore non verrà visualizzato e questa sezione di codice funziona)
 
     ![Screenshot del debugger Visual Studio con una riga di codice evidenziata in rosso e una finestra di messaggio Modifica e continuazione con il pulsante Modifica selezionato.](../debugger/media/beginners-edit.png)
 
    > [!NOTE]
-   > Per eseguire il debug Visual Basic codice di esempio, ignorare i passaggi successivi fino a quando non viene richiesto di fare clic sul pulsante **Riavvia** ![l'app.](../debugger/media/dbg-tour-restart.png "RestartApp")
+   > Per il debug Visual Basic codice di esempio, ignorare i passaggi successivi fino a quando non viene richiesto di fare clic sul pulsante **Riavvia** ![l'app.](../debugger/media/dbg-tour-restart.png "RestartApp")
 
 1. Fare clic su **Modifica** nella finestra di messaggio **Modifica e continuazione**. Un messaggio di errore viene ora visualizzato nella finestra **Elenco errori**. L'errore indica che `'object'` non contiene una definizione per `MyGType`.
 
@@ -377,11 +377,11 @@ Verrà creata un'applicazione con alcuni bug.
     public GType GalaxyType { get; set; }
     ```
 
-1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti di debug (**CTRL** MAIUSC F5 ) per  +    +  ricompilare il codice e riavviarlo.
+1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti di debug (**CTRL**  +  **MAIUSC**  +  **F5**) per ricompilare il codice e riavviarlo.
 
     Ora, quando il debugger viene sospeso in corrispondenza di `Console.WriteLine`, passando il puntatore su `theGalaxy.GalaxyType.MyGType` si noterà che il valore è impostato correttamente.
 
-1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro oppure fare clic con il pulsante destro del mouse e scegliere Punto di interruzione Elimina punto di interruzione , quindi  >   **premere F5** per continuare.
+1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro (oppure fare clic con il pulsante destro del mouse e scegliere Punto di interruzione Elimina punto di interruzione ), quindi  >  premere **F5** per continuare.
 
     L'app viene eseguita e visualizza l'output. Ora sembra tutto corretto, ma si nota qualcosa. Ci si aspettava che la galassia "Small Magellanic Cloud" venisse indicata nell'output della console come galassia di tipo "Irregular", ma il tipo di galassia non viene indicato affatto.
 
@@ -412,7 +412,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     Il tipo di galassia viene impostato in questo codice. Esaminarlo quindi in dettaglio.
 
-1. Fare clic sul **pulsante Riavvia** ![riavvia l'app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti di debug (**CTRL**  +  **MAIUSC**  +  **F5**) per riavviare.
+1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti di debug ( CTRL  +  **MAIUSC**  +  **F5**) per riavviare.
 
     Il debugger viene sospeso sulla riga di codice in cui è stato impostato il punto di interruzione.
 
@@ -420,13 +420,13 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. Premere **F5** e passare di nuovo il puntatore sulla variabile `type`. Ripetere questo passaggio finché non si vedrà il valore `I` nella variabile `type`.
 
-    ![Screenshot del debugger Visual Studio con una riga di codice in giallo e una piccola finestra che mostra il valore della variabile di tipo 73 "I".](../debugger/media/beginners-inspecting-data.png)
+    ![Screenshot del debugger Visual Studio con una riga di codice in giallo e una piccola finestra che mostra il valore della variabile di tipo come 73 "I".](../debugger/media/beginners-inspecting-data.png)
 
 1. Premere ora **F11** (**Debug** > **Esegui istruzione** o il pulsante **Esegui istruzione** nella barra degli strumenti di debug).
 
     **F11** fa avanzare il debugger (ed esegue il codice) un'istruzione alla volta. **F10** (**Esegui istruzione/routine**) è un comando simile ed entrambi sono estremamente utili quando si impara a usare il debugger.
 
-1. Premere **F11** fino a quando non si arresta la riga di codice nell'istruzione per il valore `switch` 'I' ( `Select` istruzione per Visual Basic). Qui si noterà un evidente problema derivante da un errore di digitazione. Si prevede che il codice passi al punto in cui viene impostato come tipo di galaxy irregolare, ma il debugger ignora il codice completamente e viene sospeso nella sezione dell'istruzione ( istruzione `MyGType` `default` in `switch` `Else` Visual Basic).
+1. Premere **F11** fino a quando non si arresta la riga di codice nell'istruzione per il valore `switch` 'I' `Select` (istruzione per Visual Basic). Qui si noterà un evidente problema derivante da un errore di digitazione. Si prevede che il codice passi al punto in cui viene impostato come tipo di galaxy irregolare, ma il debugger ignora completamente questo codice e si sospende nella sezione dell'istruzione ( istruzione `MyGType` `default` in `switch` `Else` Visual Basic).
 
     ![Individuare un errore di digitazione](../debugger/media/beginners-typo.png)
 

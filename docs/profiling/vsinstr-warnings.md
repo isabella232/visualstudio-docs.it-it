@@ -18,11 +18,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: accc9ab98ede9c691b8f81d75f80fdeb07546159
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710148"
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
 La tabella seguente elenca gli avvisi generati dallo strumento *VSInstr.exe*. Per impedire la visualizzazione dei messaggi, è possibile usare l'opzione NOWARN insieme al numero di avviso appropriato.

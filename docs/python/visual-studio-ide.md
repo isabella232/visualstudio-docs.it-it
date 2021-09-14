@@ -14,11 +14,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a81616e50cc4f7a3aab5fc4ccfa52d378eeb34d5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625326"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
@@ -32,7 +32,7 @@ Questa immagine presenta Visual Studio con un progetto Python aperto e varie fin
   - Oltre a **Esplora soluzioni** è disponibile [**Ambienti Python**](managing-python-environments-in-visual-studio.md), in cui è possibile gestire i diversi interpreti Python installati nel computer.
 
   ::: moniker range=">=vs-2019"
-  - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md).
+  - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire codice Python in una cartella.](quickstart-05-python-visual-studio-open-folder.md)
   ::: moniker-end
 
 - La [finestra dell'editor](../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più usati, visualizza il contenuto dei file. In questa finestra è possibile [modificare il codice Python](editing-python-code-in-visual-studio.md), spostarsi nella struttura del codice e impostare punti di interruzione durante le sessioni di debug. Con Python è anche possibile selezionare codice e premere CTRL+INVIO per eseguire il codice selezionato in una [finestra REPL interattiva](python-interactive-repl-in-visual-studio.md).
@@ -46,7 +46,7 @@ Questa immagine presenta Visual Studio con un progetto Python aperto e varie fin
 
 Visual Studio è disponibile per Windows e Mac, ma il supporto di Python è disponibile solo in Visual Studio per Windows.
 
-Sono disponibili tre edizioni di Visual Studio Windows: Community, Professional e Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio in Windows: Community, Professional e Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
 
 ## <a name="popular-productivity-features"></a>Funzionalità di produttività più note
 
@@ -108,7 +108,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
 - [Debug](debugging-python-in-visual-studio.md)
 
-    Visual Studio offre un'esperienza di debug completa per Python, inclusa la connessione ai  processi in esecuzione, la valutazione delle espressioni nelle finestre **Espressioni** di controllo e Controllo immediato, l'ispezione di variabili locali, punti di interruzione, istruzioni di esecuzione/uscita/uscita/over, **l'istruzione Set Next** e altro ancora. È anche possibile eseguire il debug di codice Python remoto in esecuzione su computer Linux.
+    Visual Studio offre un'esperienza di debug completa per Python, inclusa la connessione  a  processi in esecuzione, la valutazione di espressioni nelle finestre Espressioni di controllo e Controllo immediato, il controllo di variabili locali, punti di interruzione, istruzioni di esecuzione/uscita/uscita da istruzioni, **impostazione** dell'istruzione successiva e altro ancora. È anche possibile eseguire il debug di codice Python remoto in esecuzione su computer Linux.
 
     ![Debug di Python in Visual Studio](media/remote-debugging-breakpoint-hit.png)
 

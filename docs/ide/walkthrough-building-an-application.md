@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a1e3ffeab11b8e1fd88800e854febe10d93da6ce6c30ce55512fddb3efaff0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121371495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635939"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Creare un'applicazione
 
@@ -37,15 +37,15 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
    ![Menu Compila, comando Gestione configurazione](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. **Nell'elenco Configurazione soluzione** attiva scegliere **\<New...\>** .
+1. **Nell'elenco Configurazione soluzione attiva** scegliere **\<New...\>** .
 
 1. Nella finestra di dialogo **Nuova configurazione soluzione** assegnare il nome `Test` alla nuova configurazione, copiare le impostazioni dalla configurazione **Debug** esistente e quindi scegliere **OK**.
 
    ![Finestra di dialogo Nuova configurazione soluzione](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. **Nell'elenco Piattaforma soluzione** attiva scegliere **\<New...\>** .
+1. **Nell'elenco Piattaforma soluzione attiva** scegliere **\<New...\>** .
 
-1. Nella finestra **di dialogo** Nuova piattaforma soluzione scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.
+1. Nella finestra **di dialogo Nuova** piattaforma soluzione scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.
 
    ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -67,7 +67,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 ### <a name="build-the-solution"></a>Compilare la soluzione
 
-- Sulla barra dei menu scegliere **Compila**  >  **soluzione o** premere **CTRL** + **MAIUSC** + **B.**
+- Sulla barra dei menu scegliere **Compila**  >  **soluzione oppure** premere CTRL  + **MAIUSC** + **B.**
 
     Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata.
 
@@ -95,7 +95,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-1. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà.**
+1. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
@@ -115,7 +115,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-2. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà.**
+2. Sulla barra dei menu scegliere **Visualizza pagine**  >  **delle proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
@@ -150,7 +150,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi **OK**.
 
-1. Nella barra dei menu scegliere **Compila**  >  **soluzione pulita.**
+1. Sulla barra dei menu scegliere **Compila**  >  **soluzione pulita**.
 
 1. Compilare la soluzione e quindi esaminare le informazioni nella finestra **Output**.
 
@@ -158,7 +158,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
      Nella compilazione C#, ad esempio, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso **0168** specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
 
-     Nella compilazione Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, quindi non viene visualizzato alcun avviso.
+     Nella compilazione [Visual Basic,/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, quindi non viene visualizzato alcun avviso.
 
     > [!TIP]
     > È possibile cercare il contenuto della finestra **Output** se si visualizza la finestra di dialogo **Trova** scegliendo i tasti **CTRL**+**F**.

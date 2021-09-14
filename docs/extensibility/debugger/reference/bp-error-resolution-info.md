@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3e678d3089032d93eb2974123d9a5c2153c97e95
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710320"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
 Descrive la risoluzione di un punto di interruzione dell'errore, inclusi posizione, programma e thread.

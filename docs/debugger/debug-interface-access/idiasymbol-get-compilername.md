@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: c388e51ca6ded38d9db6fc64f244568d1660425b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710403"
 ---
 # <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
 Restituisce il nome del compilatore utilizzato per generare [compilando](../../debugger/debug-interface-access/compiland.md).

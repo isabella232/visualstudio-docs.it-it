@@ -1,6 +1,6 @@
 ---
 title: -Upgrade (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando Upgrade devenv per aggiornare il file di soluzione e tutti i relativi file di progetto o il file di progetto specificato ai formati Visual Studio correnti per questi file.
+description: Informazioni su come usare l'opzione della riga di comando Devenv upgrade per aggiornare il file di soluzione e tutti i relativi file di progetto o il file di progetto specificato ai formati Visual Studio correnti per questi file.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: b82eb2d9be21464b0f160a114972ab6ae7df4d0b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711643"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 

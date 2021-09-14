@@ -1,5 +1,5 @@
 ---
-title: DA0017- Frequenze elevate di paging della memoria attiva su disco | Microsoft Docs
+title: DA0017 - Frequenze elevate di paging della memoria attiva su disco | Microsoft Docs
 description: I dati relativi alle prestazioni di sistema raccolti nell'esecuzione della profilatura indicano che si è verificata una frequenza elevata di paging di memoria attiva da e su disco durante la profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,11 +16,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c55c58cbe214b3411ab22e8543763c7f0310776
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093268"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637132"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Frequenze elevate di paging di memoria attiva su disco
 

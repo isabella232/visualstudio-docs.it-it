@@ -13,11 +13,11 @@ ms.author: ghogen
 manager: jmartens
 ms.technology: msbuild
 ms.openlocfilehash: 1e63d6e35714947010243d06c2b0e8ba7e4237c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108746"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625704"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedura: Ignorare gli errori nelle attività
 
@@ -41,7 +41,7 @@ Il valore predefinito di `ContinueOnError` è `ErrorAndStop`. Se si imposta l'at
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Per ignorare un errore in un'attività
 
-Usare l'attributo `ContinueOnError` dell'attività. Esempio:
+Usare l'attributo `ContinueOnError` dell'attività. Ad esempio:
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>

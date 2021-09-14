@@ -1,5 +1,5 @@
 ---
-description: Ottiene il tipo di posizione del punto di interruzione di questa richiesta del punto di interruzione.
+description: Ottiene il tipo di posizione del punto di interruzione di questa richiesta di punto di interruzione.
 title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7f2a496c7c4d2414ea793c12f16d9b5ebdb2057c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636452"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-Ottiene il tipo di posizione del punto di interruzione di questa richiesta del punto di interruzione.
+Ottiene il tipo di posizione del punto di interruzione di questa richiesta di punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +43,13 @@ int GetLocationType(
 
 ## <a name="parameters"></a>Parametri
 `pBPLocationType`\
-[out] Restituisce un valore dall'enumerazione [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) che descrive il percorso della richiesta del punto di interruzione.
+[out] Restituisce un valore dall'enumerazione [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) che descrive la posizione di questa richiesta del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_FAIL` se il campo nella struttura BP_REQUEST_INFO non è `bpLocation` valido. [](../../../extensibility/debugger/reference/bp-request-info.md)
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugBreakpointRequest` semplice che espone[l'interfaccia IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto `CDebugBreakpointRequest` semplice che espone[l'interfaccia IDebugBreakpointRequest2.](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)

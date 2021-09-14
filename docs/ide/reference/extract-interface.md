@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 980a6634bf1be60e36f267bf54d1b03f227281dc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094100"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710242"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
 
@@ -32,7 +32,7 @@ Questo refactoring si applica a:
 
 **Cosa:** Consente di creare un'interfaccia usando membri esistenti da una classe, uno struct o un'interfaccia.
 
-**Quando:** In una classe, uno struct o un'interfaccia sono presenti membri che possono essere ereditati da altre classi, struct o interfacce.
+**Quando:** Si dispone di membri in una classe, uno struct o un'interfaccia che possono essere ereditati da altre classi, struct o interfacce.
 
 **Perché:** le interfacce sono costrutti ideali per le progettazioni orientate agli oggetti. Si supponga di avere classi per vari animali (Cane, Gatto, Uccello) che potrebbero contenere tutte metodi comuni, come Mangiare, Bere, Dormire. L'uso di un'interfaccia come IAnimali consentirebbe alle classi Cane, Gatto e Uccello di avere una "firma" comune per questi metodi.
 

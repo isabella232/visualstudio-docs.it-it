@@ -6,11 +6,11 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: 02eacb312931d941b716ee65f91cd478eac8bb8a
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964697"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710470"
 ---
 # <a name="task-comments"></a>Commenti dell'attività
 
@@ -24,9 +24,9 @@ Quando si aggiunge un nuovo commento di attività, includere la parola chiave de
 //TODO: Finish this for all properties.
 ```
 
-Visual Studio per Mac attenzione a questi marcatori evidenziandoli nella finestra  Elenco attività, che può essere visualizzata usando il menu **Visualizza** > attività:
+Visual Studio per Mac richiama l'attenzione su questi marcatori evidenziandoli nella finestra **Elenco attività,** che può essere visualizzata usando il menu Visualizza > **attività:**
 
-![Finestra Elenco attività che mostra un singolo elemento TODO](media/source-editor-image11.png)
+![Finestra Elenco attività, che mostra un singolo elemento TODO](media/source-editor-image11.png)
 
 ## <a name="see-also"></a>Vedi anche
 

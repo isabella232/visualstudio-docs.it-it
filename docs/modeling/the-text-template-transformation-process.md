@@ -13,14 +13,14 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 37bac2bc17e75dfb9c51bd5611706346c5cca154
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150547"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637300"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
-Il processo di trasformazione del modello di testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare modelli di testo per generare Visual Basic codice C# o oppure è possibile generare un report HTML.
+Il processo di trasformazione del modello di testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare modelli di testo per generare Visual Basic o C# oppure è possibile generare un report HTML.
 
  In questo processo fanno parte tre componenti: il motore, l'host e i processori di direttiva. Il motore controlla il processo. interagisce con l'host e il processore di direttiva per produrre il file di output. L'host fornisce qualsiasi interazione con l'ambiente, ad esempio l'individuazione di file e assembly. Il processore di direttiva aggiunge funzionalità, ad esempio la lettura di dati da un file XML o da un database.
 
@@ -44,7 +44,7 @@ Il processo di trasformazione del modello di testo accetta un file di modello di
 
 - Elenco di assembly standard e spazi dei nomi utilizzati dal motore per creare la classe di trasformazione generata.
 
-- Fornire il dominio dell'applicazione utilizzato quando il motore compila ed esegue la classe di trasformazione generata. Viene usato un dominio applicazione separato per proteggere l'applicazione host da errori nel codice del modello.
+- Fornire il dominio dell'applicazione utilizzato quando il motore compila ed esegue la classe di trasformazione generata. Viene usato un dominio applicazione separato per proteggere l'applicazione host dagli errori nel codice del modello.
 
 - Scrittura del file di output generato.
 
@@ -54,7 +54,7 @@ Il processo di trasformazione del modello di testo accetta un file di modello di
 
 - Specifica di un valore di parametro obbligatorio se un utente ha chiamato una direttiva senza fornire un valore. Il processore di direttiva può specificare il nome della direttiva e il parametro e chiedere all'host di specificare un valore predefinito, se presente.
 
-## <a name="directives-and-directive-processors"></a>Direttive e processori di direttive
+## <a name="directives-and-directive-processors"></a>Direttive e processori di direttiva
  Una direttiva è un comando nel modello di testo. Fornisce parametri al processo di generazione. In genere le direttive definiscono l'origine e il tipo del modello o di un altro input e l'estensione del nome file del file di output.
 
  Un processore di direttiva può elaborare una o più direttive . Quando si trasforma un modello, è necessario aver installato un processore di direttiva in grado di gestire le direttive nel modello.

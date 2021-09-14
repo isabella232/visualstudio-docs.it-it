@@ -13,16 +13,16 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: ada7d2c78b818c18c9fdf21618ce66595eb9acfd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637603"
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 I connettori rappresentano le relazioni di dominio in una finestra di progettazione generata.
 
- Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione di [un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ Per altre informazioni, vedere [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere Personalizzazione ed estensione [di un Domain-Specific linguaggio.](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  I connettori hanno le proprietà elencate nella tabella seguente.
 

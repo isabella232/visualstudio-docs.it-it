@@ -13,11 +13,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6be7781323dcff005f85ab17c492570d1f7ce705
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076204"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625374"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>Passaggio 3: Gestire file statici, aggiungere pagine e usare l'ereditarietà dei modelli con l'app Flask
 

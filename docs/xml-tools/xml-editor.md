@@ -11,11 +11,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9411d77b8bdece857a4c63bc96fa04727ceb67
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710531"
 ---
 # <a name="xml-editor"></a>Editor XML
 
@@ -43,7 +43,7 @@ L'editor XML include le funzionalità seguenti:
 
 - Integrazione con [XML Schema Explorer.](../xml-tools/xml-schema-explorer.md) In questo modo viene fornita una visualizzazione gerarchia di XML Schema.
 
-L'editor XML viene richiamato per estensioni di file note, ad esempio *.xml*, *xsd,* *xsl* *e.config*. Viene inoltre richiamato su qualsiasi estensione di file sconosciuta se il file sembra contenere XML.
+L'editor XML viene richiamato per estensioni di file note, ad esempio *.xml*, *xsd*, *xsl* *e.config*. Viene inoltre richiamato su qualsiasi estensione di file sconosciuta se il file sembra contenere XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 

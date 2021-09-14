@@ -1,6 +1,6 @@
 ---
-title: Creare una web part per SharePoint tramite la finestra di progettazione
-description: In questa procedura dettagliata, creare una web part visivamente usando il modello di progetto SharePoint visual web part in Visual Studio.
+title: Creare una web part per SharePoint progettazione
+description: In questa procedura dettagliata creare una web part visivamente usando il modello di progetto SharePoint visual web part in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,11 +18,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 2a00ea5c8720c02b9dbdbd8a6fad7fa7657efeb5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711398"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: Creare una web part per SharePoint usando una finestra di progettazione
 
@@ -52,14 +52,14 @@ Creare prima di tutto un progetto web part usando il **modello di progetto Web p
 
 1. Iniziare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usando **l'opzione Esegui come** amministratore.
 
-2. Sulla barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
+2. Nella barra dei menu scegliere **File**  >  **nuovo**  >  **Project**.
 ::: moniker range="=vs-2017"
 
 3. Nella finestra **di dialogo Nuovo Project,** in **Visual C#** o **Visual Basic** espandere **Office/SharePoint** e quindi scegliere la categoria SharePoint **Soluzioni.**
 
 4. Nell'elenco dei modelli scegliere il **modello SharePoint 2013 - Web part** visiva e quindi scegliere **OK.**
 
-     Verrà **SharePoint personalizzazione guidata.** Tramite questa procedura guidata è possibile specificare il sito che verrà utilizzato per eseguire il debug del progetto e il livello di attendibilità della soluzione.
+     Verrà **visualizzata SharePoint personalizzazione** guidata. Tramite questa procedura guidata è possibile specificare il sito che verrà utilizzato per eseguire il debug del progetto e il livello di attendibilità della soluzione.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. Nella finestra **di dialogo Create a New Project** selezionare SharePoint Empty *Project** per la versione specifica di SharePoint installata. Ad esempio, se è stata SharePoint 2019, selezionare il modello SharePoint **2019 - Vuoto Project 2019.**
@@ -104,7 +104,7 @@ Aggiungere il codice che consente all'utente di aggiungere calendari alla visual
 
    - Nella finestra di progettazione fare doppio clic sul **pulsante** Aggiorna.
 
-   - Nella finestra **Proprietà** per il **pulsante Aggiorna** scegliere il **pulsante** Eventi. Nella proprietà **Clic** **immettere** Button1_Click e quindi premere INVIO.
+   - Nella finestra **Proprietà** per il **pulsante Aggiorna** scegliere il **pulsante** Eventi. Nella proprietà **Clic** immettere **Button1_Click** e quindi premere INVIO.
 
      Il file di codice del controllo utente viene aperto nell'editor di codice e viene visualizzato `Button1_Click` il gestore eventi. Successivamente, si aggiungerà il codice a questo gestore eventi.
 

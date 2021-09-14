@@ -1,6 +1,6 @@
 ---
 title: "Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato"
-description: Creare un riquadro attività personalizzato che automatizza Microsoft PowerPoint inserendo date in una diapositiva quando l'utente fa clic su un controllo MonthCalendar nel riquadro attività personalizzato.
+description: Creare un riquadro attività personalizzato che automatizza Microsoft PowerPoint inserendo le date in una diapositiva quando l'utente fa clic su un controllo MonthCalendar nel riquadro attività personalizzato.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -22,11 +22,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: e31147694042309c77801d3058ea42fcdf6b8828
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155499"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710041"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato
   Questa procedura dettagliata mostra come creare un riquadro attività personalizzato che consente di automatizzare PowerPoint. Il riquadro attività personalizzato inserisce le date in una diapositiva quando l'utente fa clic su un controllo <xref:System.Windows.Forms.MonthCalendar> che si trova nel riquadro attività personalizzato.

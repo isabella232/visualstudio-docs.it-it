@@ -16,14 +16,14 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: c825c10b6adf3a64972fa0f9c17d2e7f4c5dc381
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625080"
 ---
 # <a name="sharepoint-development-samples"></a>SharePoint di sviluppo
-  È possibile usare Visual Studio per scaricare e installare esempi di SharePoint applicazioni da [MSDN Code Gallery.](https://code.msdn.microsoft.com/)
+  È possibile usare Visual Studio per scaricare e installare esempi di applicazioni SharePoint da [MSDN Code Gallery.](https://code.msdn.microsoft.com/)
 
  È possibile scaricare ogni esempio singolarmente. È anche possibile scaricare un Pacchetto di esempio, che include esempi correlati che condividono una tecnologia o un articolo. Si riceverà una notifica al momento della pubblicazione delle modifiche apportate al codice sorgente per ogni esempio scaricato.
 

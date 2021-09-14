@@ -12,11 +12,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: b231fc6635b5c974898ee2cc85ce8a4a64318039
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710367"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
 
@@ -66,10 +66,10 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
          Vengono visualizzate le pagine delle proprietà per il progetto WPF.
 
-    2. Nella scheda **Applicazione** prendere nota del nome visualizzato nel campo manifesto. Nome del manifesto associato al progetto.
+    2. Nella scheda **Applicazione** prendere nota del nome visualizzato nel campo manifesto. Si tratta del nome del manifesto associato al progetto.
 
         > [!NOTE]
-        > Se **nel campo Manifesto viene** visualizzato Incorpora manifesto con impostazioni predefinite o Crea applicazione senza **manifesto,** gli stili di visualizzazione non sono abilitati. Se il nome di un file manifesto viene visualizzato nel campo manifesto, procedere con il passaggio successivo di questa procedura.
+        > Se **nel campo Manifesto viene** visualizzato Incorpora manifesto con impostazioni predefinite o Crea applicazione senza **manifesto,** gli stili di visualizzazione non sono abilitati. Se il nome di un file manifesto viene visualizzato nel campo manifesto, procedere al passaggio successivo di questa procedura.
 
     3. In **Esplora soluzioni** scegliere **Mostra tutti i file**.
 
@@ -113,7 +113,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
 1. Aprire **Prompt dei comandi per gli sviluppatori per Visual Studio**.
 
-    Per altre informazioni su come aprire Prompt dei comandi per gli sviluppatori per Visual Studio, vedere [Prompt dei comandi per gli sviluppatori e PowerShell per sviluppatori.](../ide/reference/command-prompt-powershell.md)
+    Per altre informazioni su come aprire Prompt dei comandi per gli sviluppatori per Visual Studio, vedere [Prompt dei comandi per gli sviluppatori e Developer PowerShell](../ide/reference/command-prompt-powershell.md).
 
    > [!NOTE]
    > I passaggi rimanenti fanno i presupposti seguenti sulla soluzione:

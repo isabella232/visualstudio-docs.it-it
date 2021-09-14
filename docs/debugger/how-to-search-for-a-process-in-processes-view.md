@@ -15,18 +15,18 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f5ff80257a3f3708d2de517e38fbc6abf6a77f9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709919"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Procedura: cercare un processo nella visualizzazione processi
-È possibile cercare un processo specifico nella visualizzazione Processi usando l'ID processo o la stringa del modulo come criteri di ricerca. È anche possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo visualizzano gli attributi del processo selezionato nell'albero dei processi.
+È possibile cercare un processo specifico nella visualizzazione Processi usando l'ID processo o la stringa del modulo come criteri di ricerca. È anche possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo mostreranno gli attributi del processo selezionato nell'albero dei processi.
 
 ### <a name="to-search-for-a-process-in-processes-view"></a>Per cercare un processo nella visualizzazione Processi
 
-1. Disporre le finestre in modo che Spy++ e una [finestra visualizzazione processi](../debugger/processes-view.md) attiva siano visibili.
+1. Disporre le finestre in modo che Spy++ e una [finestra di visualizzazione processi attiva](../debugger/processes-view.md) siano visibili.
 
 2. Scegliere **Trova** processo dal menu **Cerca**
 
@@ -37,7 +37,7 @@ ms.locfileid: "122128169"
 4. Deselezionare tutti i campi per i quali non si desidera specificare valori.
 
    > [!TIP]
-   > Per trovare tutti i processi di proprietà di un modulo, deselezionare **la casella Processo** e digitare il nome del modulo nella **casella** Modulo . Usare quindi **Trova successivo** per continuare a cercare i processi.
+   > Per trovare tutti i processi di proprietà di un modulo, deselezionare **la casella Processo** e digitare il nome del modulo nella **casella** Modulo. Usare quindi **Trova successivo** per continuare la ricerca dei processi.
 
 5. Scegliere **Su** **o Giù** per la direzione iniziale della ricerca.
 

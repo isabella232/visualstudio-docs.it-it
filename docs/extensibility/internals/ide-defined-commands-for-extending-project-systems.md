@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: abd80c03c829e33985001cb17589369111b1aba2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137711"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710283"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandi definiti dall'IDE per l'estensione dei sistemi di progetto
 Per estendere i sistemi di progetto, è possibile usare i comandi e i gruppi di comandi forniti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dall'IDE.
@@ -43,8 +43,8 @@ Per estendere i sistemi di progetto, è possibile usare i comandi e i gruppi di 
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Si applica quando si seleziona un file.|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|Si applica quando si seleziona una cartella.|
 |IDM_VS_CTXT_WEBREFFOLDER|Si applica quando è selezionata la cartella Riferimento Web.|
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Si applica quando è selezionato il nodo radice dei riferimenti denominato "Riferimenti".|
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Si applica quando sono selezionati nodi di riferimento. questi includono solo riferimenti ad assembly, COM e progetti. Non include riferimenti Web.|
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Si applica quando il nodo radice dei riferimenti denominato "Riferimenti" è selezionato.|
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Si applica quando sono selezionati nodi di riferimento. tra cui assembly, COM e riferimenti al progetto. Non include riferimenti Web.|
 
  La tabella seguente illustra i menu di scelta rapida che si applicano quando la selezione nel Esplora soluzioni **si** estende su più gerarchie,
 

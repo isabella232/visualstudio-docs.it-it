@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 692d5fd16912be8645e99fd2b54a8fbb4871b007
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035098"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711918"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 Questo metodo ottiene il nome della costante di enumerazione in base al relativo valore.
@@ -51,10 +51,10 @@ int GetStringFromValue(
 [out] Restituisce il nome della costante di enumerazione.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce ; in caso contrario, restituisce se al valore non è associato `S_OK` alcun nome oppure restituisce un codice di `S_FALSE` errore.
+ Se ha esito positivo, restituisce ; in caso contrario, restituisce se al valore non è associato alcun `S_OK` nome oppure restituisce un codice di `S_FALSE` errore.
 
 ## <a name="remarks"></a>Commenti
- Se è presente più di un nome associato allo stesso valore, verrà restituito il nome definito nell'enumerazione .
+ Se allo stesso valore sono associati più nomi, verrà restituito il nome definito nell'enumerazione .
 
 ## <a name="see-also"></a>Vedi anche
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

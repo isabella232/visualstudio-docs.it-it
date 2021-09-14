@@ -1,6 +1,6 @@
 ---
 title: Estensioni interne parallele per .NET Framework | Microsoft Docs
-description: Queste risorse descrivono i tipi, i metodi e i campi interni delle classi usate per implementare un debugger personalizzato per le estensioni parallele al .NET Framework.
+description: Queste risorse descrivono i tipi interni, i metodi e i campi delle classi usati per implementare un debugger personalizzato per le estensioni parallele al .NET Framework.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 12588d5c9fb3957ce83202afa856a08436facb48
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080260"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710325"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Estensioni interne parallele per l'.NET Framework
 In questa sezione vengono descritti i tipi interni, i metodi e i campi delle classi che consentono di implementare un debugger personalizzato per le estensioni parallele al .NET Framework.

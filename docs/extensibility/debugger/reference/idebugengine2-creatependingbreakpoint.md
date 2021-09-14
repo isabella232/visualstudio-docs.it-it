@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 31a138104cbaeea8eb0a2313956f5d1bba34db28
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035286"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711934"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Crea un punto di interruzione in sospeso nel motore di debug.
@@ -48,7 +48,7 @@ int CreatePendingBreakpoint(
 [in] Oggetto [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) che descrive il punto di interruzione in sospeso da creare.
 
 `ppPendingBP`\
-[out] Restituisce un [oggetto IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il punto di interruzione in sospeso.
+[out] Restituisce un oggetto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il punto di interruzione in sospeso.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. In genere `E_FAIL` restituisce se il parametro non corrisponde ad alcun linguaggio supportato da DE di se il parametro non è valido o `pBPRequest` `pBPRequest` incompleto.

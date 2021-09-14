@@ -13,11 +13,11 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 6553ffcc80dbe650b3b1775292599bc20d67cbfd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711475"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Guida introduttiva: Aprire ed eseguire codice Python in una cartella
 
@@ -28,7 +28,7 @@ Dopo aver [installato il supporto Python in Visual Studio 2019](installing-pytho
 
 1. Per questa procedura dettagliata, è possibile usare qualsiasi cartella con codice Python. Per seguire la procedura con l'esempio riportato di seguito, clonare il repository di GitHub gregmalcolm/python_koans nel computer locale usando il comando `git clone https://github.com/gregmalcolm/python_koans` in una cartella appropriata.
 
-1. Avviare Visual Studio 2019 e nella schermata iniziale selezionare **Apri** nella parte inferiore della colonna **Per iniziare**. In alternativa, se è già in Visual Studio, selezionare invece il **comando Apri**  >    >   cartella.
+1. Avviare Visual Studio 2019 e nella schermata iniziale selezionare **Apri** nella parte inferiore della colonna **Per iniziare**. In alternativa, se è già stato Visual Studio, selezionare invece il **comando Apri**  >    >   cartella.
 
     ![Schermata iniziale di Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 
@@ -78,7 +78,7 @@ In questi casi, è anche necessario aggiungere una riga al file JSON di configur
     ![Screenshot della finestra di dialogo Seleziona un debugger con il debugger predefinito selezionato e il pulsante Seleziona selezionato.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > Se l'opzione  Predefinita non è visualizzata, assicurarsi di aver scelto un file python con estensione *py* quando si selezionano i comandi **Debug e Impostazioni** avvio. Visual Studio usa il tipo di file per determinare le opzioni del debugger da visualizzare.
+    > Se l'opzione  Predefinita non è visualizzata, assicurarsi di aver scelto un file python con estensione *py* quando si selezionano i comandi **Debug Impostazioni.** Visual Studio usa il tipo di file per determinare le opzioni del debugger da visualizzare.
 
 1. Visual Studio apre un file denominato *launch.vs.json*, che si trova nella cartella nascosta *.vs*. Questo file descrive il contesto di debug per il progetto. Per specificare una directory di lavoro, aggiungere un valore per `"workingDirectory"`, come in `"workingDirectory": "python3"` per l'esempio python koans:
 

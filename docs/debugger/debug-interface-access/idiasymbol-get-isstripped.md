@@ -1,5 +1,5 @@
 ---
-description: Recupera il flag che indica se i simboli privati sono stati spogliati dal file di simboli.
+description: Recupera il flag che indica se i simboli privati sono stati rimosso dal file di simboli.
 title: IDiaSymbol::get_isStripped | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 58dd3f07fc3c706d82cdf5e4f2f8c2c99b5bbbad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122066031"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709948"
 ---
 # <a name="idiasymbolget_isstripped"></a>IDiaSymbol::get_isStripped
-Recupera il flag che indica se i simboli privati sono stati spogliati dal file di simboli.
+Recupera il flag che indica se i simboli privati sono stati rimosso dal file di simboli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT get_isStripped(
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce o un `S_FALSE` codice di errore.
 
 > [!NOTE]
-> Un valore restituito `S_FALSE` di indica che la proprietà non è disponibile per il simbolo.
+> Il valore restituito `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Commenti
  Questa proprietà è disponibile dal tipo `SymTagExe` di simbolo (vedere [Exe](../../debugger/debug-interface-access/exe.md)).

@@ -1,6 +1,6 @@
 ---
 title: Direttiva import T4
-description: Si noti che in un Visual Studio di testo T4, la direttiva import consente di fare riferimento a elementi in un altro spazio dei nomi senza specificare un nome completo.
+description: Si noti che in un Visual Studio di testo T4, la direttiva import consente di fare riferimento agli elementi in un altro spazio dei nomi senza specificare un nome completo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,17 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f8f34f45e18000de9cea09c8c58a6e021b52134
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034006"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637387"
 ---
 # <a name="t4-import-directive"></a>Direttiva import T4
 
 Nei blocchi di codice di un Visual Studio di testo T4, la direttiva consente di fare riferimento a elementi in un altro spazio dei nomi senza specificare `import` un nome completo. È l'equivalente di `using` in C# o di `imports` in [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
-Per una panoramica generale della scrittura di modelli di testo T4, vedere [Scrittura di un modello di testo T4.](../modeling/writing-a-t4-text-template.md)
+Per una panoramica generale della scrittura di modelli di testo T4, vedere [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-import-directive"></a>Utilizzo della direttiva Import
 

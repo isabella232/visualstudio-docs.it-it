@@ -1,6 +1,6 @@
 ---
 title: Estensioni, Ambiente, finestra di dialogo Opzioni
-description: Informazioni su come usare la pagina Estensioni nella sezione Ambiente per impostare le opzioni per Visual Studio aggiornamenti e come vengono aggiornate e individuate le estensioni.
+description: Informazioni su come usare la pagina Estensioni nella sezione Ambiente per impostare le opzioni relative al modo in cui Visual Studio e come vengono aggiornate e individuate le estensioni.
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -13,11 +13,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: baa8f005322fb2cdef764ee450e49da2c0b9437f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710244"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>Finestra di dialogo Opzioni: Estensioni \> dell'ambiente
 

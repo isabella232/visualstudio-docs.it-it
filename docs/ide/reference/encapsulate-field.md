@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3c60840fcbf0953c308bec174c49058e7f94163e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062342"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710248"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring Incapsula campo
 
@@ -52,7 +52,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+E**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
+      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Incapsula campo**.
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
@@ -65,7 +65,7 @@ Questo refactoring si applica a:
    La proprietà viene creata e vengono aggiornati i riferimenti al campo, se selezionato.
 
    > [!TIP]
-   > Usare il **collegamento Anteprima modifiche** nella finestra popup per visualizzare il risultato [prima](../../ide/preview-changes.md) di eseguire il commit.
+   > Usare il **collegamento Anteprima modifiche** nella finestra popup per visualizzare [il](../../ide/preview-changes.md) risultato prima di eseguire il commit.
 
    - C#:
 

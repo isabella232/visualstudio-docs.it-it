@@ -1,6 +1,6 @@
 ---
 title: Elemento Project (MSBuild) | Microsoft Docs
-description: Informazioni sull'elemento MSBuild Project, che è l'elemento radice obbligatorio di un file MSBuild progetto.
+description: Informazioni sull'MSBuild Project, che è l'elemento radice obbligatorio di un MSBuild di progetto.
 ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
@@ -23,15 +23,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: ef40e3e42fed7eb9b981defabdd073e4ab9c8c9e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625625"
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
 
-Elemento radice obbligatorio di un file MSBuild progetto.
+Elemento radice obbligatorio di un MSBuild di progetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,7 +80,7 @@ Elemento radice obbligatorio di un file MSBuild progetto.
 | [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Elemento facoltativo.<br /><br /> Consente di rendere persistenti le informazioni non MSBuild in un file MSBuild progetto. Possono esistere zero o un elemento `ProjectExtensions` in un progetto. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Elemento facoltativo.<br /><br /> Elemento di raggruppamento per singole proprietà. Le proprietà vengono specificate usando l'elemento [Property](../msbuild/property-element-msbuild.md). Possono esistere zero o più elementi `PropertyGroup` in un progetto. |
 | [Sdk](../msbuild/sdk-element-msbuild.md) | Elemento facoltativo.<br /><br /> Fa riferimento a un SDK MSBuild progetto.  Questo elemento può essere usato come alternativa all'attributo Sdk. |
-| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento facoltativo.<br /><br /> Contiene un set di attività che MSBuild eseguire in sequenza. Le attività vengono specificate usando l'elemento [Task](../msbuild/task-element-msbuild.md). Possono esistere zero o più elementi `Target` in un progetto. |
+| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento facoltativo.<br /><br /> Contiene un set di attività da MSBuild eseguire in sequenza. Le attività vengono specificate usando l'elemento [Task](../msbuild/task-element-msbuild.md). Possono esistere zero o più elementi `Target` in un progetto. |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Elemento facoltativo.<br /><br /> Consente di registrare le attività in MSBuild. Possono esistere zero o più elementi `UsingTask` in un progetto. |
 
 ### <a name="parent-elements"></a>Elementi padre
@@ -91,5 +91,5 @@ Elemento radice obbligatorio di un file MSBuild progetto.
 
 - [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md)
 - [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)
-- [Project riferimento allo schema del file](../msbuild/msbuild-project-file-schema-reference.md)
+- [Project riferimento allo schema di file](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

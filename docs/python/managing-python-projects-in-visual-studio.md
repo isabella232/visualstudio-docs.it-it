@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 97caa4f5677ec9357db1a0756f96cd37476ef66c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054444"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625337"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -40,7 +40,7 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 >
 > Creare un progetto di Visual Studio da codice esistente è davvero semplicissimo, come descritto in [Creare un progetto da file esistenti](#create-project-from-existing-files).
 
-![Icona della fotocamera del film per il video](../install/media/video-icon.png "Guardare un video") Deep [Dive: Usare il](https://youtu.be/Aq8eqApnugM) controllo del codice sorgente con progetti Python (youtube.com, 8m 55s).
+![Icona della fotocamera del film per video](../install/media/video-icon.png "Guardare un video") Deep [Dive: Usare il](https://youtu.be/Aq8eqApnugM) controllo del codice sorgente con progetti Python (youtube.com, 8m 55s).
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Aggiungere file, assegnare un file di avvio e impostare gli ambienti
 
@@ -70,7 +70,7 @@ Per cambiare l'ambiente attivo, fare clic con il pulsante destro del mouse sull'
 
 ## <a name="project-templates"></a>Modelli di progetto
 
-In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu File Nuovo Project o fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere Aggiungi nuovo Project , che visualizzano entrambe la finestra di dialogo Nuovo Project riportata di  >    >      >  seguito.  Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il **nodo**  >  **Python** installato:
+In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu File Nuovo Project o fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere Aggiungi nuovo Project , che visualizza la finestra di dialogo Nuovo Project riportata di  >    >      >   **seguito.** Per visualizzare i modelli specifici di Python, cercare "Python" o selezionare il **nodo**  >  **Python** installato:
 
 ![Finestra di dialogo Nuovo progetto con modelli Python](media/projects-new-project-dialog.png)
 
@@ -124,7 +124,7 @@ La tabella seguente riepiloga i modelli disponibili in Visual Studio 2019 (non t
 
 Per file collegati si intendono i file importati in un progetto, ma che in genere si trovano all'esterno delle cartelle di progetto dell'applicazione. Tali file vengono visualizzati in **Esplora soluzioni** come file normali contraddistinti da un'icona di collegamento sovrapposta: ![icona file collegati](media/projects-linked-file-icon.png)
 
-Questi file collegati vengono specificati nel file con estensione *pyproj* usando l'elemento `<Compile Include="...">`. I file collegati sono impliciti se usano un percorso relativo all'esterno della struttura di directory o espliciti se usano percorsi all'interno di **Esplora soluzioni**:
+Questi file collegati vengono specificati nel file con estensione *pyproj* usando l'elemento `<Compile Include="...">`. I file collegati sono impliciti se usano un percorso relativo all'esterno della struttura di directory o espliciti se usano percorsi all'interno **Esplora soluzioni**:
 
 ```xml
 <Compile Include="..\test2.py">
@@ -141,9 +141,9 @@ In presenza delle condizioni seguenti i file collegati vengono ignorati:
 
 ### <a name="work-with-linked-files"></a>Usare file collegati
 
-Per aggiungere un elemento esistente come collegamento, fare clic con il pulsante destro del mouse sulla cartella nel progetto in cui si vuole aggiungere il file, quindi scegliere **Aggiungi**  >  **elemento esistente**. Nella finestra di dialogo visualizzata, selezionare un file e scegliere **Aggiungi come collegamento** nell'elenco a discesa del pulsante **Aggiungi**. Questo comando crea un collegamento nella cartella selezionata, purché non siano presenti file in conflitto. Il collegamento non verrà aggiunto se però è già presente un file con lo stesso nome o nel progetto esiste già un collegamento a tale file.
+Per aggiungere un elemento esistente come collegamento, fare clic con il pulsante destro del mouse sulla cartella nel progetto in cui si vuole aggiungere il file, quindi **scegliere Aggiungi**  >  **elemento esistente.** Nella finestra di dialogo visualizzata, selezionare un file e scegliere **Aggiungi come collegamento** nell'elenco a discesa del pulsante **Aggiungi**. Questo comando crea un collegamento nella cartella selezionata, purché non siano presenti file in conflitto. Il collegamento non verrà aggiunto se però è già presente un file con lo stesso nome o nel progetto esiste già un collegamento a tale file.
 
-Se si prova a collegare un file già esistente nelle cartelle di progetto, questo viene aggiunto come un file normale e non come collegamento. Per convertire un file in un collegamento, selezionare **Salva** con nome per salvare il file in un percorso esterno  >   alla gerarchia del progetto. Visual Studio lo converte automaticamente in un collegamento. Analogamente, un collegamento può essere convertito nuovamente usando Salva con nome **per** salvare il file in un punto  >   qualsiasi all'interno della gerarchia del progetto.
+Se si prova a collegare un file già esistente nelle cartelle di progetto, questo viene aggiunto come un file normale e non come collegamento. Per convertire un file in un collegamento, selezionare **Salva file** con nome per salvare il file in un percorso esterno alla  >   gerarchia del progetto. Visual Studio lo converte automaticamente in un collegamento. Analogamente, un collegamento può essere convertito nuovamente usando Salva file con nome per salvare il file in un punto qualsiasi all'interno  >   della gerarchia del progetto.
 
 Se si sposta un file collegato in **Esplora soluzioni**, viene spostato solo il collegamento, mentre il file effettivo rimane nella posizione originale. Analogamente, l'eliminazione di un collegamento implica solo la rimozione del collegamento e non del file.
 
@@ -161,7 +161,7 @@ I riferimenti alle estensioni indicano in genere le dipendenze tra progetti e ve
 
 Un riferimento a un file con estensione *pyd* consente di abilitare la funzionalità IntelliSense per il modulo generato. Visual Studio carica il file con estensione *pyd* nell'interprete Python e ne esamina tipi e funzioni. Prova inoltre ad analizzare le stringhe di documento relative alle funzioni per offrire il supporto per la firma.
 
-Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non ha effetto sul comportamento in fase di esecuzione, ma alcuni completamenti non sono disponibili fino al completamento dell'analisi.
+Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non ha alcun effetto sul comportamento in fase di esecuzione, ma alcuni completamenti non sono disponibili fino al completamento dell'analisi.
 
 Potrebbe anche essere necessario aggiungere un [percorso di ricerca](search-paths.md) per la cartella che contiene il modulo.
 

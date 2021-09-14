@@ -21,11 +21,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 2aec6648b1a432166f4ba9205fb07beef91f5ebf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147557"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710594"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procedura dettagliata: Creare una scheda personalizzata usando xml della barra multifunzione
   Questa procedura dettagliata illustra come creare una scheda personalizzata della barra multifunzione usando **l'elemento Barra multifunzione (XML).**
@@ -86,7 +86,7 @@ ms.locfileid: "122147557"
 
 ### <a name="to-add-buttons-to-the-add-ins-tab"></a>Per aggiungere pulsanti alla scheda Componenti aggiuntivi
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse **MyRibbon.xml** quindi scegliere **Apri.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del **mouseMyRibbon.xml** e quindi scegliere **Apri.**
 
 2. Sostituire il contenuto **dell'elemento tab** con il codice XML seguente. Questo codice XML modifica l'etichetta del gruppo di controlli predefinito in **Content** e aggiunge due nuovi pulsanti con le etichette **Insert Text (Inserisci** testo) **e Insert Table (Inserisci tabella).**
 
@@ -108,7 +108,7 @@ ms.locfileid: "122147557"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>Per aggiungere i metodi di callback per i pulsanti
 
-1. In **Esplora soluzioni** fare clic con il pulsante **destro del mouse su MyRibbon.cs** **o MyRibbon.vb** e quindi scegliere **Apri.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyRibbon.cs** **o MyRibbon.vb** e quindi scegliere **Apri.**
 
 2. Aggiungere il codice seguente all'inizio del file **MyRibbon.cs** **o MyRibbon.vb.** Tramite questo codice viene creato un alias per lo spazio dei nomi <xref:Microsoft.Office.Interop.Word>.
 

@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: ddc4f42be5c1b9a6fb439cdb097480b8d7a60e76
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710042"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in VSTO componente aggiuntivo
   È possibile aggiungere controlli a qualsiasi Microsoft Office documento di Word aperto usando VSTO componente aggiuntivo. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti di aggiungere un <xref:Microsoft.Office.Tools.Word.Controls.Button> oggetto o a un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> documento.
@@ -84,14 +84,14 @@ ms.locfileid: "122025654"
    | Proprietà | Valore |
    |-----------|-----------------------|
    | **Nome** | **addButtonCheckBox** |
-   | **Etichetta** | **Pulsante Aggiungi** |
+   | **Label** | **Pulsante Aggiungi** |
 
 9. Aggiungere una seconda casella di controllo a **group1** e quindi modificare le proprietà seguenti.
 
    | Proprietà | Valore |
    |-----------|---------------------------|
    | **Nome** | **addRichTextCheckBox** |
-   | **Etichetta** | **Add Rich Text Control** |
+   | **Label** | **Add Rich Text Control** |
 
 10. Nella finestra di progettazione della barra multifunzione fare doppio clic su **Aggiungi pulsante**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "122025654"
     Più avanti in questa procedura dettagliata si aggiungerà codice a questi gestori eventi per aggiungere e rimuovere i controlli nel documento attivo.
 
 ## <a name="add-and-remove-controls-on-the-active-document"></a>Aggiungere e rimuovere controlli nel documento attivo
- Nel codice del componente aggiuntivo VSTO è necessario convertire il documento attivo in un <xref:Microsoft.Office.Tools.Word.Document>*elemento host* prima di poter aggiungere un controllo. Nelle soluzioni Office si possono aggiungere controlli gestiti solo agli elementi host, che agiscono da contenitori per i controlli. Nei VSTO di componente aggiuntivo, gli elementi host possono essere creati in fase di esecuzione usando il `GetVstoObject` metodo .
+ Nel codice del componente aggiuntivo VSTO è necessario convertire il documento attivo in un <xref:Microsoft.Office.Tools.Word.Document>*elemento host* prima di poter aggiungere un controllo. Nelle soluzioni Office si possono aggiungere controlli gestiti solo agli elementi host, che agiscono da contenitori per i controlli. In VSTO progetti di componente aggiuntivo, gli elementi host possono essere creati in fase di esecuzione usando il `GetVstoObject` metodo .
 
  Aggiungere metodi alla classe `ThisAddIn` che possono essere chiamati per aggiungere o rimuovere un oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> o <xref:Microsoft.Office.Tools.Word.RichTextContentControl> nel documento attivo. Più avanti in questa procedura dettagliata si chiameranno tali metodi dai gestori eventi <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> delle caselle di controllo sulla barra multifunzione.
 
@@ -128,7 +128,7 @@ ms.locfileid: "122025654"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs" id="Snippet3":::
 
 ## <a name="remove-the-button-control-when-the-document-is-saved"></a>Rimuovere il controllo Button quando il documento viene salvato
- I controlli Windows Form non vengono mantenuti quando il documento viene salvato e quindi chiuso. Nel documento, però, rimane un wrapper ActiveX per ogni controllo e il bordo di questo wrapper è visibile agli utenti finali quando il documento viene riaperto. Esistono diversi modi per pulire i controlli form creati Windows dinamicamente nei VSTO componenti aggiuntivi. In questa procedura dettagliata il controllo viene rimosso a livello <xref:Microsoft.Office.Tools.Word.Controls.Button> di codice quando il documento viene salvato.
+ I controlli Windows Form non vengono mantenuti quando il documento viene salvato e quindi chiuso. Nel documento, però, rimane un wrapper ActiveX per ogni controllo e il bordo di questo wrapper è visibile agli utenti finali quando il documento viene riaperto. Esistono diversi modi per pulire i controlli form creati Windows in modo dinamico VSTO componenti aggiuntivi. In questa procedura dettagliata il controllo viene rimosso a livello <xref:Microsoft.Office.Tools.Word.Controls.Button> di codice quando il documento viene salvato.
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>Per rimuovere il controllo Button quando il documento viene salvato
 

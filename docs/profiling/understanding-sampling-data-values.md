@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui valori dei dati di campionamento | Microsoft Docs
-description: Informazioni su come il metodo di profilatura del campionamento Visual Studio Strumenti di profilatura interrompe il processore del computer a intervalli impostati e raccoglie lo stack di chiamate di funzione.
+description: Informazioni su come il metodo di profilatura di campionamento Visual Studio Strumenti di profilatura interrompe il processore del computer a intervalli impostati e raccoglie lo stack di chiamate di funzione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 04ff212cce0de1faa07cd31e115346de98e44f0e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710173"
 ---
 # <a name="understand-sampling-data-values"></a>Informazioni sui valori dei dati di campionamento
 

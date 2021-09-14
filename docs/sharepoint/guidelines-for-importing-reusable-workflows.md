@@ -19,11 +19,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: a65af6481b9cffbff268553f93acd7105066aa1c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149559"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625206"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Linee guida per l'importazione di flussi di lavoro riutilizzabili
   Per importare flussi di lavoro riutilizzabili creati in SharePoint Designer, utilizzare il modello di progetto Importa flusso di lavoro riutilizzabile di SharePoint 2010 in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Questo modello importa un *flusso di lavoro*  dichiarativo (solo ) e lo converte in un flusso di lavoro del codice , ovvero un flusso di lavoro che è possibile migliorare con il codice [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] o  [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Procedura dettagliata: Importare un flusso di lavoro riutilizzabile SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -33,8 +33,8 @@ ms.locfileid: "122149559"
 ## <a name="import-reusable-workflows-by-using-the-import-reusable-workflow-template"></a>Importare flussi di lavoro riutilizzabili usando il modello Importa flusso di lavoro riutilizzabile
  Se si importa un flusso di lavoro riutilizzabile tramite il modello Importa flusso di lavoro riutilizzabile di SharePoint 2010, sarà possibile eseguire o modificare la soluzione proprio come con qualsiasi altra soluzione di SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], tuttavia potrebbe essere necessario correggere manualmente alcuni elementi.
 
-### <a name="import-task-forms"></a>Importare moduli di attività
- Con il modello di progetto Importa flusso di lavoro riutilizzabile di SharePoint 2010 vengono importati tutti i form di avvio e associazione, ma viene importato un solo form di attività poiché lo schema del flusso di lavoro di codice consente la presenza di un solo form di questo tipo. Eventuali moduli attività aggiuntivi della soluzione del flusso di lavoro originale vengono inseriti nella cartella Altri **file importati** in **Esplora soluzioni**.
+### <a name="import-task-forms"></a>Importare moduli attività
+ Con il modello di progetto Importa flusso di lavoro riutilizzabile di SharePoint 2010 vengono importati tutti i form di avvio e associazione, ma viene importato un solo form di attività poiché lo schema del flusso di lavoro di codice consente la presenza di un solo form di questo tipo. Eventuali moduli attività aggiuntivi della soluzione del flusso di lavoro originale vengono inseriti nella cartella Altri **file** importati in **Esplora soluzioni**.
 
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>Importare flussi di lavoro riutilizzabili usando il modello Importa SharePoint pacchetto della soluzione 2010
  Se si importa un flusso di lavoro riutilizzabile tramite il modello Importa pacchetto di soluzione SharePoint 2010, è necessario considerare i problemi riportati di seguito.

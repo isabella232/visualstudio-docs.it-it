@@ -11,17 +11,17 @@ no-loc:
 - Blazor WebAssembly
 ms.topic: how-to
 ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710489"
 ---
 # <a name="create-blazor-web-apps"></a>Creare Blazor app Web
 
 Questa guida offre un'introduzione alla creazione della prima Blazor app Web. Per indicazioni più approfondite, vedere [Introduzione Blazor ASP.NET Core ](/aspnet/core/blazor/index).
 
-BlazorASP.NET Core supporta due diverse opzioni di hosting; Blazor WebAssembly(WASM) o Blazor Server. Visual Studio per Mac supporta entrambi i modelli di hosting. Visual Studio per Mac 8.4+ supporta Blazor Server e Visual Studio per Mac 8.6+ supporta entrambi. Per altre informazioni sui modelli di hosting, ASP.NET Core Blazor modelli [di Blazor hosting. ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1&preserve-view=true) Il supporto per il debug di progetti in Visual Studio per Mac è disponibile nella versione di anteprima della Blazor WebAssembly versione 8.8 (disponibile tramite il canale di aggiornamento anteprima nel menu Visual Studio > Verifica aggiornamenti). 
+BlazorASP.NET Core supporta due diverse opzioni di hosting; Blazor WebAssembly(WASM) o Blazor Server. Visual Studio per Mac supporta entrambi i modelli di hosting. Visual Studio per Mac 8.4+ supporta Blazor Server e Visual Studio per Mac 8.6+ supporta entrambi. Per altre informazioni sui modelli Blazor di hosting, [ASP.NET Core modelli Blazor di hosting. ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1&preserve-view=true) Il supporto per il debug di progetti in Visual Studio per Mac è disponibile nella versione di anteprima della Blazor WebAssembly versione 8.8 (disponibile tramite il canale di aggiornamento anteprima nel menu Visual Studio > Verifica aggiornamenti). 
 
 Che cos'è Blazor? Blazor è un framework per la creazione di un'interfaccia utente Web sul lato client interattiva con .NET, che offre i vantaggi seguenti agli sviluppatori Web:
 
@@ -85,7 +85,7 @@ Visual Studio per Mac include il supporto per la modifica di file razor, la magg
 ![Visual Studio per Mac finestra dell'editor che mostra Intellisense per Blazor](media/blazor-intellisense.png)
 
 ### <a name="publishing-blazor-applications-to-azure-app-service"></a>Pubblicazione Blazor di applicazioni in Servizio app di Azure
-È anche possibile Blazor pubblicare le applicazioni direttamente Servizio app di Azure. Se non si ha un account Azure per eseguire l'app in Azure, è sempre possibile iscriversi per un account gratuito qui che include anche 12 mesi di servizi popolari Blazor gratuiti, $ [](https://azure.microsoft.com/free) 200 in crediti gratuiti di Azure e oltre 25 servizi sempre gratuiti.
+È anche possibile Blazor pubblicare le applicazioni direttamente in Servizio app di Azure. Se non si ha un account Azure per eseguire l'app in Azure, è sempre possibile iscriversi per un account gratuito qui che include anche 12 mesi di servizi popolari Blazor gratuiti, $ [](https://azure.microsoft.com/free) 200 in crediti gratuiti di Azure e oltre 25 servizi sempre gratuiti.
 
 ![Visual Studio per Mac'esperienza di pubblicazione di Azure](media/blazor-azure-publish.png)
 
@@ -103,9 +103,9 @@ Questa cartella include componenti condivisi, usando anche *l'estensione razor.*
 
 ### <a name="app-settings"></a>Impostazioni app
 
-La *appSettings.jsnel* file contiene dati di configurazione, ad esempio stringhe di connessione.
+Il file *appSettings.json* contiene dati di configurazione, ad esempio stringhe di connessione.
 
-Per altre informazioni sulla configurazione, vedere [configuration in ASP.NET guide](/aspnet/core/fundamentals/configuration/index).
+Per altre informazioni sulla configurazione, vedere la [Guida alla configurazione in ASP.NET .](/aspnet/core/fundamentals/configuration/index)
 
 ### <a name="wwwroot-folder"></a>Cartella wwwroot
 
@@ -118,16 +118,16 @@ Questo file contiene il punto di ingresso per il programma. Per altre informazio
 ### <a name="blazor-server-app-specific-files"></a>Blazor File specifici dell'app server
 #### <a name="app-settings"></a>Impostazioni app
 
-La *appSettings.jsnel* file contiene dati di configurazione, ad esempio stringhe di connessione.
+Il file *appSettings.json* contiene dati di configurazione, ad esempio stringhe di connessione.
 
-Per altre informazioni sulla configurazione, vedere [configuration in ASP.NET guide](/aspnet/core/fundamentals/configuration/index).
+Per altre informazioni sulla configurazione, vedere la [Guida alla configurazione in ASP.NET .](/aspnet/core/fundamentals/configuration/index)
 
 #### <a name="startupcs"></a>Startup.cs
 
 Questo file contiene codice che configura il comportamento dell'app, ad esempio se l'app richiede il consenso per i cookie. Per altre informazioni, vedere [Avvio delle app in ASP.NET Core](/aspnet/core/fundamentals/startup).
 
 ## <a name="summary"></a>Riepilogo
-In questa esercitazione è stato illustrato come creare una nuova app server o un'app in Visual Studio per Mac e sono stati appresi alcune delle funzionalità offerte da Visual Studio per Mac per la creazione di Blazor Blazor WebAssembly Blazor applicazioni.
+In questa esercitazione è stato illustrato come creare una nuova app server o app in Visual Studio per Mac e sono stati appresi alcune delle funzionalità offerte da Visual Studio per Mac per la creazione Blazor Blazor WebAssembly di Blazor applicazioni.
 
 ## <a name="see-also"></a>Vedi anche
 

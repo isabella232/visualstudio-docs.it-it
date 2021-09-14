@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: bb598f45d2437c23c74a015cd647741ef796fe3c64e585dc613ca2aec3a3cbb9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1634aa8a669fa03f217fedf04b5dd8620b95829c
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711606"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (attività)
 

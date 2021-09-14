@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 4937ad4322d7aed06890c138d70c66a577540153
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637404"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 
@@ -75,7 +75,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Usare un pacchetto separato per ogni livello
 
-1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi **e** quindi fare clic su **Project**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
+1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi **e** quindi fare clic **su** Project . A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
 
 2. Nel modello condiviso creare un pacchetto per ogni livello: in **Esplora soluzioni** selezionare il progetto di modellazione. In **Esplora modelli UML fare** clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi** e quindi fare clic su **Pacchetto.**
 
@@ -89,7 +89,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 ## <a name="create-architecture-templates"></a>Creare modelli di architettura
 
-In pratica, non si creano tutte le soluzioni Visual Studio contemporaneamente, ma si aggiungono durante l'avanzamento del progetto. Probabilmente si userà anche la stessa struttura della soluzione nei progetti futuri. Per velocizzare la creazione di nuove soluzioni, è possibile creare un modello di soluzione o di progetto. È possibile acquisire il modello in un'estensione VSIX ( Visual Studio Integration Extension) per facilitarne la distribuzione e l'installazione in altri computer.
+In pratica, non si creano tutte le soluzioni Visual Studio contemporaneamente, ma le si aggiunge con l'avanzamento del progetto. Probabilmente si userà anche la stessa struttura della soluzione nei progetti futuri. Per velocizzare la creazione di nuove soluzioni, è possibile creare un modello di soluzione o di progetto. È possibile acquisire il modello in un'estensione VSIX ( Visual Studio Integration Extension) per facilitarne la distribuzione e l'installazione in altri computer.
 
 Ad esempio, se si usano spesso soluzioni con livelli presentazione, aziendale e dati, è possibile configurare un modello per creare nuove soluzioni con la medesima struttura.
 

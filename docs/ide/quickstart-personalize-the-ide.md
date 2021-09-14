@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dd4e56ececf68b9bd53b5530f8ccfe0c906a975
-ms.sourcegitcommit: 7c06c7e4f0a69d90b21dcf4d5c5b5caa17464bf5
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122464833"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635964"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Procedura: Personalizzare l'IDE Visual Studio e l'editor
 
@@ -68,7 +68,7 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> È possibile creare temi personalizzati installando la finestra Visual Studio **color theme designer** da Visual Studio [Marketplace.](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)
+> È possibile creare temi personalizzati installando la finestra Visual Studio **Color Theme Designer** da Visual Studio [Marketplace.](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner)
 
 ::: moniker-end
 

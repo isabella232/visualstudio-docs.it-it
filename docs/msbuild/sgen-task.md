@@ -1,6 +1,6 @@
 ---
 title: Attività SGen | Microsoft Docs
-description: Informazioni su MSBuild'attività SGen per creare un assembly di serializzazione XML per i tipi, tramite il wrapping dello strumento Generatore di serializzatori XML Sgen.exe.
+description: Informazioni su MSBuild'attività SGen per creare un assembly di serializzazione XML per i tipi, tramite il wrapping dello strumento generatore di serializzatori XML Sgen.exe.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,15 +22,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: c90e98ae3164c6f975ba5c960c7eb9e6e03e350b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136651"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625548"
 ---
 # <a name="sgen-task"></a>SGen (attività)
 
-Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specificato. Questa attività esegue il wrapping dello strumento generatore di *serializzatori* XML (Sgen.exe). Per altre informazioni, vedere [Strumento generatore di serializzatori XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specificato. Questa attività esegue il wrapping dello strumento generatore di serializzatori XML (*Sgen.exe*). Per altre informazioni, vedere Strumento generatore di serializzatori [XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 ## <a name="parameters"></a>Parametri
 

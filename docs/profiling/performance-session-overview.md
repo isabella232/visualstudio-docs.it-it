@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 877fff149234b091792035ade25cb18da7980fd1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711530"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
 In questa panoramica vengono illustrate le nozioni di base della profilatura. Gli sviluppatori non esperti di prestazioni potranno notare come gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] possano contribuire ad accrescere rapidamente la produttività e a migliorare le prestazioni del codice. Gli sviluppatori con esperienza nella profilatura possono trovare informazioni su specifici processi e funzionalità degli strumenti di profilatura.

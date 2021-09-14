@@ -12,15 +12,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 846fbcae4cde785234048696d43466251a663f57
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963566"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710019"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procedura: utilizzare la ricerca in Progettazione del flusso di lavoro
 
-Per semplificare la creazione di flussi di lavoro più grandi e complessi, è possibile eseguire ricerche all'interno Progettazione flussi di lavoro per trovare gli elementi in base alla parola chiave. Notare che la finestra di progettazione non supporta la sostituzione.
+Per semplificare la creazione di flussi di lavoro più grandi e complessi, è possibile cercare all'interno del Progettazione flussi di lavoro per trovare gli elementi in base alla parola chiave. Notare che la finestra di progettazione non supporta la sostituzione.
 
 ## <a name="quick-find"></a>Ricerca veloce
 

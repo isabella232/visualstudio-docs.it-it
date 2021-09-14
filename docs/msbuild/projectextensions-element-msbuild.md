@@ -22,15 +22,15 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fbf7760af7275172bc57ce0aac097e70182b4f5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077101"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625620"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 
-Consente MSBuild file di progetto di contenere informazioni non MSBuild progetto. Qualsiasi elemento all'interno `ProjectExtensions` di un elemento verrà ignorato MSBuild.
+Consente MSBuild file di progetto di contenere informazioni non MSBuild progetto. Qualsiasi elemento `ProjectExtensions` all'interno di un elemento verrà ignorato da MSBuild.
 
  \<Project> \<ProjectExtensions>
 
@@ -62,7 +62,7 @@ Consente MSBuild file di progetto di contenere informazioni non MSBuild progetto
 
 ## <a name="remarks"></a>Commenti
 
- È possibile `ProjectExtensions` usare un solo elemento in un MSBuild progetto.
+ In un `ProjectExtensions` progetto MSBuild un solo elemento.
 
 ## <a name="example"></a>Esempio
 

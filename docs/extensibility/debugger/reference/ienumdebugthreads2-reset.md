@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9fc6b0f2e4dd25657d08ac1c5d814097c885c392
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122103234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636235"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
 Reimposta l'enumerazione sul primo elemento.

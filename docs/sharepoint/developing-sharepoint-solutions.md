@@ -19,15 +19,15 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 1998cad37c5fa5f8eecb6a1a7ea34154105662b3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060219"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625313"
 ---
 # <a name="develop-sharepoint-solutions"></a>Sviluppare soluzioni SharePoint
 
-  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili diversi modelli di tipi di progetto SharePoint per la creazione di siti ed elementi dei siti SharePoint. Per un elenco dei tipi di progetto disponibili, vedere modelli SharePoint [progetto e elemento di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md). Di seguito è riportata una descrizione degli elementi e delle proprietà di un progetto SharePoint.
+  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili diversi modelli di tipi di progetto SharePoint per la creazione di siti ed elementi dei siti SharePoint. Per un elenco dei tipi di progetto disponibili, vedere SharePoint [di progetto e di elemento di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md). Di seguito è riportata una descrizione degli elementi e delle proprietà di un progetto SharePoint.
 
  Per informazioni SharePoint componenti aggiuntivi, vedere Compilare SharePoint [componenti aggiuntivi](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
@@ -75,7 +75,7 @@ ms.locfileid: "122060219"
 |Configurazione distribuzione attiva|Specifica la serie di passaggi eseguiti durante la distribuzione. Per altre informazioni, vedere [Procedura: Modificare una configurazione di SharePoint distribuzione .](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)|
 |Destinazione distribuzione assembly|Determina dove si trovano gli *assembly di applicazione di SharePoint* . I valori validi per la posizione degli assembly sono *GlobalAssemblyCache* (valore predefinito) o *WebApplication*.<br /><br /> Se la proprietà *Sandboxed Solution* è impostata su **true**, questa proprietà è disabilitata.|
 |Ritrazione automatica dopo il debug|Specifica se la soluzione distribuita viene ritratta automaticamente da SharePoint dopo l'esecuzione dell'applicazione in modalità di debug in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Quando la proprietà è selezionata, la soluzione viene ritratta quando l'IDE ritorna alla visualizzazione Progettazione dopo il debug. Quando non è selezionata, la soluzione non viene ritratta. Per altre informazioni, vedere [Ritrazione di una soluzione](/previous-versions/office/developer/sharepoint-2010/aa543958(v=office.14)).|
-|Modifica configurazioni|Specifica la configurazione di distribuzione da usare per il progetto. Per altre informazioni, vedere [Procedura: Modificare](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) una configurazione SharePoint distribuzione e [Distribuire,](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)pubblicare e aggiornare SharePoint pacchetti della soluzione .|
+|Modifica configurazioni|Specifica la configurazione di distribuzione da usare per il progetto. Per altre informazioni, vedere [Procedura: Modificare una](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) configurazione SharePoint distribuzione e [Distribuire,](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)pubblicare e aggiornare SharePoint pacchetti della soluzione .|
 |Abilita debug Silverlight (anziché il debug degli script)|Quando la proprietà è selezionata, il debugger di Silverlight si connette al processo di debug. Quando non è selezionata, il debugger di script si connette al processo di debug. Per altre informazioni, vedere [Cenni preliminari sul debug di Silverlight](/previous-versions/windows/).|
 |Includi assembly in pacchetto|Specifica se l'assembly del progetto viene incluso o meno in un pacchetto in fase di compilazione.|
 |Riga di comando post-distribuzione|Specifica i comandi da eseguire dopo avere distribuito la soluzione SharePoint. Questa riga supporta qualsiasi comando batch, nonché la risoluzione delle variabili MSBuild. Per altre informazioni, vedere [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
@@ -99,7 +99,7 @@ ms.locfileid: "122060219"
 |Riferimenti all'output del progetto|Specifica una dipendenza, ad esempio un assembly, che l'elemento di progetto deve eseguire. Per altre informazioni, vedere [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |Voci di controllo sicure|Specifica i controlli che gli utenti non attendibili possono modificare senza problemi per la sicurezza. Per altre informazioni, vedere [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 
-### <a name="project-item-file-properties"></a>Project proprietà del file dell'elemento
+### <a name="project-item-file-properties"></a>Project file dell'elemento
 
 |Nome proprietà|Descrizione|
 |-------------------|-----------------|
@@ -108,7 +108,7 @@ ms.locfileid: "122060219"
 |Strumento personalizzato|Specifica il nome di uno strumento, se presente, che trasforma il file in fase di progettazione e inserisce l'output della trasformazione in un altro file. Ad esempio, un file di set di dati (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) ha uno strumento personalizzato predefinito. Per altre informazioni, vedere [Proprietà file](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Spazio dei nomi dello strumento personalizzato|Spazio dei nomi in cui viene copiato l'output dello strumento personalizzato. Per altre informazioni, vedere [Proprietà file](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Percorso di distribuzione|Percorso completo del file nel server SharePoint. Questo percorso è composto dalle sottoproprietà Radice distribuzione e Percorso distribuzione|
-|Percorso distribuzione|Percorso relativo del file nel file SharePoint Server, ad esempio Workflow1 \\ . Il percorso completo per il file viene creato concatenando il valore *Deployment Path* alla fine del valore *Deployment Root* .<br /><br /> Se si seleziona il valore *RootFile* per la proprietà *Tipo* di distribuzione, la proprietà *Radice* distribuzione viene modificata in , con un percorso completo \<SharePointRoot> \\ di \<SharePointRoot> \Workflow1. \\ Per altre informazioni, vedere [Creazione di pacchetti e distribuzione di SharePoint soluzioni](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
+|Percorso distribuzione|Percorso relativo del file nel file SharePoint Server, ad esempio Workflow1 \\ . Il percorso completo per il file viene creato concatenando il valore *Deployment Path* alla fine del valore *Deployment Root* .<br /><br /> Se si seleziona il valore *RootFile*  per la proprietà *Tipo* di distribuzione , la proprietà Radice distribuzione viene modificata in , con un percorso completo \<SharePointRoot> \\ \<SharePointRoot> \Workflow1. \\ Per altre informazioni, vedere [Creazione di pacchetti e distribuzione SharePoint soluzioni](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Deployment Root|Stringa. Cartella radice in cui viene distribuito il file nel server SharePoint. Ad esempio, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> Il valore della proprietà *Deployment Root* è determinato dall'impostazione di *Deployment Type* .|
 |Tipo di distribuzione|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . I possibili valori sono i seguenti:<br /><br /> NoDeployment: *\<no value>*<br /><br /> ElementManifest: *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> ElementFile: *\<SharePointRoot> \Template\Features \\ \<FeatureName> \\*<br /><br /> TemplateFile: *\<SharePointRoot> \Template \\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |File Name|Nome del file o della cartella per il file dell'elemento.|
@@ -121,7 +121,7 @@ ms.locfileid: "122060219"
 |[Modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Descrive i modelli di progetto e di elementi di progetto SharePoint disponibili in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Procedura: Aggiungere elementi a un progetto SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Descrive come aggiungere elementi nuovi o esistenti a un progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Procedura dettagliata: Creare una colonna del sito, un tipo di contenuto ed un elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Illustra la procedura dettagliata per creare un campo personalizzato, un tipo di contenuto, una definizione di elenco e un'istanza di elenco.|
-|[Procedura: Creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)|Viene descritto come aggiungere un ricevitore di eventi per il progetto creato in [Procedura dettagliata:](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)Creare una colonna del sito, un tipo di contenuto ed un elenco per SharePoint .|
+|[Procedura: Creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)|Viene descritto come aggiungere un ricevitore di eventi per il progetto creato in Procedura dettagliata: Creare una colonna [del sito,](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)un tipo di contenuto ed un elenco per SharePoint .|
 |[Creare soluzioni SharePoint flusso di lavoro](../sharepoint/creating-sharepoint-workflow-solutions.md)|Descrive come creare progetti flusso di lavoro che includono form di associazione del flusso di lavoro e form di avvio del flusso di lavoro.|
 |[Creare pagine per SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Descrive come creare pagine come pagine dell'applicazione, pagine del sito, pagine master e layout di pagina per SharePoint.|
 |[Creare web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Descrive come aggiungere controlli che consentono agli utenti di modificare direttamente il contenuto, l'aspetto e il comportamento delle pagine del sito SharePoint tramite un browser.|
@@ -130,10 +130,10 @@ ms.locfileid: "122060219"
 |[Creare definizioni di sito per SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Descrive come creare definizioni di sito, ovvero modelli usati per creare i siti SharePoint.|
 |[Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Descrive come importare elementi, come moduli e tipi di contenuto, da un sito SharePoint esistente in un progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Utilizzo di moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Descrive come usare i moduli per la distribuzione di file dal progetto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] al sito SharePoint.|
-|[Esplorare SharePoint connessioni con Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Descrive come trovare siti SharePoint locali tramite Esplora Server.|
+|[Esplorare SharePoint connessioni usando Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Descrive come trovare siti SharePoint locali tramite Esplora Server.|
 |[Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi del progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Descrive come usare le proprietà dell'elemento di progetto per fornire informazioni sulla creazione di pacchetti e sulla distribuzione per i progetti, ad esempio voci di controllo sicure, riferimenti all'output del progetto e proprietà delle funzionalità.|
 |[Procedura: Aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Descrive in che modo le cartelle mappate possono essere aggiunte al progetto per semplificare l'accesso alle risorse di SharePoint.|
-|[Considerazioni sulla soluzione in modalità sandbox](../sharepoint/sandboxed-solution-considerations.md)|Descrive i problemi associati alle soluzioni in modalità sandbox.|
+|[Considerazioni sulle soluzioni in modalità sandbox](../sharepoint/sandboxed-solution-considerations.md)|Descrive i problemi associati alle soluzioni in modalità sandbox.|
 |[Sicurezza per le soluzioni SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Descrive le considerazioni sulla sicurezza relative allo sviluppo di soluzioni SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Finestra di dialogo selezione URL &#40;SharePoint sviluppo in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Descrive una finestra di dialogo che è possibile usare per aggiungere riferimenti di percorso alle risorse nel progetto o nel server SharePoint locale.|
 

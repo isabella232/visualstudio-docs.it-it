@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Creare elementi cartella personalizzati a livello di codice'
-description: Informazioni su come creare a livello di codice elementi di cartelle personalizzati in Microsoft Outlook usando Visual Studio.
+title: 'Procedura: Creare elementi di cartelle personalizzati a livello di codice'
+description: Informazioni su come creare elementi di cartelle personalizzati in Microsoft Outlook a livello di codice usando Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,15 +14,15 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: 6bbf68656c2fbabccc2479dd87e3e0394c9ddafbc6fc12a534fa714e64673855
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ac0e3bf3268029efffdd0800cf7fe133eb1553e8
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440760"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710067"
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>Procedura: Creare elementi cartella personalizzati a livello di codice
-  Questo esempio crea una nuova cartella in Microsoft Office Outlook. Per il nome della cartella viene utilizzato il nome dell'utente connesso.
+# <a name="how-to-programmatically-create-custom-folder-items"></a>Procedura: Creare elementi di cartelle personalizzati a livello di codice
+  Questo esempio crea una nuova cartella in Microsoft Office Outlook. Per il nome della cartella viene usato il nome dell'utente connesso.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,5 +31,5 @@ ms.locfileid: "121440760"
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare le cartelle](../vsto/working-with-folders.md)
-- [Procedura: Aggiungere una voce a un Outlook a livello di codice](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Procedura: Aggiungere a livello di codice una voce Outlook contatti](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Procedura: Creare appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)

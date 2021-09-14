@@ -1,6 +1,6 @@
 ---
 title: Legenda della visualizzazione Core | Microsoft Docs
-description: Informazioni sulla legenda Visualizzazione core, che fornisce i dati del cambio di contesto tabulare e la selezione dei thread. Informazioni anche sui commutatori di contesto e sulle prestazioni.
+description: Informazioni sulla legenda della visualizzazione Core, che fornisce i dati del cambio di contesto tabulare e la selezione dei thread. Informazioni anche sui commutatori di contesto e sulle prestazioni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 21d753fdcd1076a79cb2fcde8698430cb5de31e5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710200"
 ---
 # <a name="cores-view-legend"></a>Legenda della visualizzazione Core
 La legenda della visualizzazione Core identifica ogni thread in base al colore e al nome. Include colonne che visualizzano il conteggio degli scambi di contesto tra core diversi, gli scambi di contesto totali e la percentuale di scambi di contesto tra core diversi. Le righe della legenda sono ordinate in base al numero di scambi di contesto tra core, in ordine decrescente.

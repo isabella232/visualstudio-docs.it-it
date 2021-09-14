@@ -16,15 +16,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 04f0dfba96ac09ff9cc87627f111f814f71d51b5554826ea524360c2af5323f3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 21723deada493dd5e3d6ab6a16c6dc6366829bbb
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710114"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Accedere ai dati nei documenti nel server
-  È possibile programmare in base ai dati in una personalizzazione a livello di documento senza dover usare il modello a oggetti di Microsoft Office Word o Microsoft Office Excel. Ciò significa che è possibile accedere ai dati contenuti in un documento in un server in cui non è installato Word Excel. Ad esempio, il codice in un server (ad esempio, in una pagina) può personalizzare i dati in un documento e inviare il documento personalizzato a [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] un utente finale. Quando l'utente finale apre il documento, data binding codice nell'assembly della soluzione associa i dati personalizzati al documento. Ciò è possibile perché i dati nel documento sono separati dall'interfaccia utente. Per altre informazioni, vedere [Dati memorizzati nella cache nelle personalizzazioni a livello di documento.](../vsto/cached-data-in-document-level-customizations.md)
+  È possibile programmare in base ai dati in una personalizzazione a livello di documento senza dover usare il modello a oggetti di Microsoft Office Word o Microsoft Office Excel. Ciò significa che è possibile accedere ai dati contenuti in un documento in un server in cui non è installato Word o Excel. Ad esempio, il codice in un server (ad esempio, in una pagina) può personalizzare i dati in un documento e inviare il documento personalizzato a [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] un utente finale. Quando l'utente finale apre il documento, data binding nell'assembly della soluzione associa i dati personalizzati al documento. Ciò è possibile perché i dati nel documento sono separati dall'interfaccia utente. Per altre informazioni, vedere [Dati memorizzati nella cache nelle personalizzazioni a livello di documento.](../vsto/cached-data-in-document-level-customizations.md)
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "121440929"
  Il codice lato server può modificare qualsiasi oggetto dati nella cache dei dati. I controlli associati a istanze di dati memorizzati nella cache vengono sincronizzati con l'interfaccia utente, in modo che tutte le modifiche sul lato server apportate ai dati vengono automaticamente mostrate all'apertura del documento nel client.
 
 ## <a name="access-data-in-the-cache"></a>Accedere ai dati nella cache
- È possibile accedere ai dati nella cache da applicazioni esterne Office, ad esempio da un'applicazione console, da un'applicazione Windows Forms o da una pagina Web. L'applicazione che accede ai dati memorizzati nella cache deve avere attendibilità totale. Un'applicazione Web con attendibilità parziale non può inserire, recuperare o modificare i dati memorizzati nella cache in un Office documento.
+ È possibile accedere ai dati nella cache da applicazioni esterne a Office, ad esempio da un'applicazione console, da un'Windows Forms o da una pagina Web. L'applicazione che accede ai dati memorizzati nella cache deve avere attendibilità totale. Un'applicazione Web con attendibilità parziale non può inserire, recuperare o modificare i dati memorizzati nella cache in un documento di Office.
 
  La cache dei dati è accessibile tramite una gerarchia di raccolte esposte dalla <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> proprietà della <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe :
 
@@ -44,7 +44,7 @@ ms.locfileid: "121440929"
 
 - Ogni raccolta <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> include uno o più oggetti <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>. Un <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> oggetto rappresenta un singolo oggetto dati memorizzato nella cache.
 
-  Nell'esempio di codice seguente viene illustrato come accedere a una stringa memorizzata nella cache nella classe di un `Sheet1` progetto Excel cartella di lavoro. Questo esempio fa parte di un esempio più ampio fornito per il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metodo .
+  Nell'esempio di codice seguente viene illustrato come accedere a una stringa memorizzata nella cache nella `Sheet1` classe di un progetto di cartella di lavoro di Excel. Questo esempio fa parte di un esempio più ampio fornito per il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metodo .
 
   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet12":::
   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet12":::
@@ -65,7 +65,7 @@ ms.locfileid: "121440929"
 ### <a name="modify-data-without-deserializing-the-current-value"></a>Modificare i dati senza deserializzare il valore corrente
  In alcuni casi, potrebbe essere necessario modificare il valore dell'oggetto memorizzato nella cache senza prima deserializzare il valore corrente. Ad esempio, è possibile eseguire questa operazione se si modifica il valore di un oggetto con un tipo semplice, ad esempio una stringa o un numero intero, o se si sta inizializzando un oggetto memorizzato nella cache in un documento in un <xref:System.Data.DataSet> server. In questi casi, è possibile usare il <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> metodo senza prima deserializzare il valore corrente dell'oggetto memorizzato nella cache.
 
- Nell'esempio di codice seguente viene illustrato come modificare il valore di una stringa memorizzata nella cache nella classe di un `Sheet1` progetto Excel cartella di lavoro. Questo esempio fa parte di un esempio più ampio fornito per il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metodo .
+ Nell'esempio di codice seguente viene illustrato come modificare il valore di una stringa memorizzata nella cache nella classe di un progetto di `Sheet1` cartella di lavoro di Excel. Questo esempio fa parte di un esempio più ampio fornito per il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> metodo .
 
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet11":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet11":::

@@ -12,11 +12,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e4da8eb39af573201ce4a7c88ec85d5775e48bf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625739"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedura: Configurare destinazioni e attività
 

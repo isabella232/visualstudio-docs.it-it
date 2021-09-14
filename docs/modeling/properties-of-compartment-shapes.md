@@ -15,11 +15,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 745101605ac4136cbb9823262367bb5bc2e2baf3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637595"
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
 Le forme raggruppamento sono una delle forme che è possibile usare per visualizzare una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.

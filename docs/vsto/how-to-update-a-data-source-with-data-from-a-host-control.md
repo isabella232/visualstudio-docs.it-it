@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: d389e4f3e2b8bdf4348508760b6894c0eeaf1ec7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710044"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: Aggiornare un'origine dati con i dati di un controllo host
   È possibile associare un controllo host a un'origine dati e aggiornare l'origine dati con le modifiche apportate ai dati nel controllo. Questo processo prevede due passaggi principali:
@@ -33,7 +33,7 @@ ms.locfileid: "122026005"
 
 2. Aggiornare il database con i dati modificati nell'origine dati in memoria. Ciò è possibile solo se l'origine dati è connessa a un database back-end, ad esempio un database SQL Server o Microsoft Office Access.
 
-   Per altre informazioni sui controlli host e data binding, vedere Panoramica degli elementi host e dei controlli [host](../vsto/host-items-and-host-controls-overview.md) e Associare dati ai controlli [in Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
+   Per altre informazioni sui controlli host e data binding, vedere Panoramica degli elementi host e dei controlli [host](../vsto/host-items-and-host-controls-overview.md) e Associare dati ai controlli in [Office soluzioni](../vsto/binding-data-to-controls-in-office-solutions.md).
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -100,7 +100,7 @@ ms.locfileid: "122026005"
 
 1. Chiamare il metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per il controllo <xref:System.Windows.Forms.BindingSource> .
 
-     L'oggetto <xref:System.Windows.Forms.BindingSource> viene generato automaticamente quando un controllo associato a dati viene aggiunto a un documento o a una cartella di lavoro in fase di progettazione. L'oggetto <xref:System.Windows.Forms.BindingSource> connette il controllo al set di dati tipizzato nel progetto. Per altre informazioni, vedere [Panoramica del componente BindingSource.](/dotnet/framework/winforms/controls/bindingsource-component-overview)
+     L'oggetto <xref:System.Windows.Forms.BindingSource> viene generato automaticamente quando un controllo associato a dati viene aggiunto a un documento o a una cartella di lavoro in fase di progettazione. L'oggetto <xref:System.Windows.Forms.BindingSource> connette il controllo al set di dati tipizzato nel progetto. Per altre informazioni, vedere [Panoramica del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
      L'esempio di codice seguente presuppone che il progetto contenga un oggetto <xref:System.Windows.Forms.BindingSource> denominato `customersBindingSource`.
 
@@ -109,7 +109,7 @@ ms.locfileid: "122026005"
 
 2. Chiamare il `Update` metodo dell'oggetto TableAdapter generato nel progetto.
 
-     L'oggetto TableAdapter viene generato automaticamente quando si aggiunge un controllo con associazione a dati a un documento o a una cartella di lavoro in fase di progettazione. Il TableAdapter connette il set di dati tipizzato nel progetto al database. Per altre informazioni, vedere [Panoramica di TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
+     L'oggetto TableAdapter viene generato automaticamente quando si aggiunge un controllo con associazione a dati a un documento o a una cartella di lavoro in fase di progettazione. Il TableAdapter connette al database il set di dati tipizzato nel progetto. Per altre informazioni, vedere [Panoramica di TableAdapter.](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)
 
      Nell'esempio di codice seguente si presuppone che sia presente una connessione alla tabella Customers nel database Northwind e che il progetto contenga un oggetto TableAdapter denominato e un set di dati `customersTableAdapter` tipizzato denominato `northwindDataSet` .
 

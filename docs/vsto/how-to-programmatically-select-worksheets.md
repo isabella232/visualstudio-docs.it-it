@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 82d74fff713741208981278474b295c17975a639
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032732"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711323"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Procedura: Selezionare fogli di lavoro a livello di codice
   Il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> seleziona l'oggetto specificato e questa operazione sposta la selezione dell'utente al nuovo oggetto. Usare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> se si vuole applicare lo stato attivo all'oggetto senza modificare la selezione dell'utente.

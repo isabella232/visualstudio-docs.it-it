@@ -1,6 +1,6 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati sui conflitti | Microsoft Docs'
-description: Esaminare la visualizzazione Albero delle chiamate, che mostra i dati sui dati relativi ai percorsi di esecuzione delle funzioni attraversati nell'applicazione profilata.
+description: Esaminare la visualizzazione Albero delle chiamate, che mostra i dati sui contenuti per i percorsi di esecuzione della funzione attraversati nell'applicazione profilata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 28cd7b22e64afbfb4c7c4100bd44c28e6dec6bb6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625439"
 ---
 # <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati sui conflitti
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Ogni nodo della funzione elenca tutte le funzioni che ha chiamato, il numero di volte per cui la funzione è stata bloccata e il tempo per il quale la funzione è stata bloccata perché in conflitto per una risorsa con altri thread o processi.
@@ -59,7 +59,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)
-- [Visualizzazione Albero delle chiamate - Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
 - [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)

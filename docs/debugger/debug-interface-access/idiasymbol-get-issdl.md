@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ec3c7d1986797534e168e6fc7be9864098c3f20
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709960"
 ---
 # <a name="idiasymbolget_issdl"></a>IDiaSymbol::get_isSdl
 Specifica se il modulo viene compilato con l'opzione /SDL.

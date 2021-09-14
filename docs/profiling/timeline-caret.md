@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fe002ad7e29b29f516d147c605d8808e7fe10b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637076"
 ---
 # <a name="timeline-caret"></a>Indicatore della sequenza temporale
 Quando si seleziona un punto nella sequenza temporale di un segmento di thread in esecuzione, sopra di esso viene visualizzato un indicatore di posizione nella sequenza temporale. Lo stack di chiamate visualizzato nella scheda dello stack corrente è quello più vicino nel tempo al punto in cui è stato fatto clic sul segmento. L'indicatore viene usato per associare lo stack di chiamate, visualizzato nella scheda **Corrente**, alle informazioni sul momento in cui è stato effettuato il campionamento. L'indicatore mostra la posizione esatta dello stack di chiamate, che rappresenta lo stack di chiamate più vicino alla posizione selezionata dall'utente.

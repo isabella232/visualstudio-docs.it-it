@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: a504db1716eaad4fbf66c34985067310fada1fa1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710323"
 ---
 # <a name="ports"></a>Porte
 Nell'architettura del debugger, una *porta*:
@@ -32,7 +32,7 @@ Nell'architettura del debugger, una *porta*:
 
 - È rappresentato da [un'interfaccia IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) creata passando un [argomento IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) ad [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce una porta predefinita che gestisce tutti i processi Windows, sia nativi che gestiti. È necessario configurare una porta personalizzata per le connessioni con dispositivi esterni che non Windows basati su dispositivi. Per fornire tali porte personalizzate, è necessario configurare anche un fornitore di porte personalizzato.
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce una porta predefinita che gestisce tutti Windows processi basati su processi, nativi e gestiti. Una porta personalizzata deve essere impostata per le connessioni con dispositivi esterni che non Windows basati su dispositivi. Per fornire tali porte personalizzate, è necessario configurare anche un fornitore di porte personalizzato.
 
 ## <a name="see-also"></a>Vedi anche
 - [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)

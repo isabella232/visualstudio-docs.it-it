@@ -1,6 +1,6 @@
 ---
 title: 'Esercitazione: Funzioni di Azure'
-description: Procedura dettagliata per l'uso di Funzioni di Azure in Visual Studio per Mac.
+description: Procedura dettagliata sull'uso di Funzioni di Azure in Visual Studio per Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/06/2020
@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
 ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964299"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710493"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
 
@@ -51,11 +51,11 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     Aprire **local.settings.json**. Per impostazione predefinita il file include due impostazioni stringa di connessione vuote.
 
-    ![Finestra della soluzione che local.settings.jsnel file](media/azure-functions-lab-image3.png)
+    ![finestra della soluzione che visualizza il file local.settings.json](media/azure-functions-lab-image3.png)
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Esercizio 2: Creazione di un account di archiviazione di Azure
 
-1. Accedere al proprio account Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
+1. Accedere all'account Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 
 1. Nella sezione **Preferiti** sul lato sinistro dello schermo, selezionare **Account di archiviazione**:
 
@@ -89,7 +89,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Esempio 3: Creazione e debug di una funzione di Azure
 
-1. Ora è possibile iniziare ad aggiungere codice. Quando si usa una libreria di classi .NET le funzioni di Azure vengono aggiunte come metodi statici. Nella finestra **della soluzione fare** clic con il pulsante destro del mouse sul nodo del progetto **AzureFunctions** e **> Aggiungi funzione:**
+1. Ora è possibile iniziare ad aggiungere codice. Quando si usa una libreria di classi .NET le funzioni di Azure vengono aggiunte come metodi statici. Nella finestra **della soluzione fare** clic con il pulsante destro del mouse sul nodo del progetto **AzureFunctions** **e scegliere Aggiungi**> Aggiungi funzione :
 
     ![Opzione Aggiungi funzione](media/azure-functions-lab-image11.png)
 
@@ -127,7 +127,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Nuovo metodo run con l'attributo FunctionName evidenziato](media/azure-functions-lab-image13.png)
 
-1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noterà anche che il valore restituito è un **int**. Se non diversamente specificato usando gli attributi del metodo, qualsiasi valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
+1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noterà anche che il valore restituito è **int**. Se non diversamente specificato usando gli attributi del metodo, qualsiasi valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
 
     ![Nuovo metodo run con l'inizializzazione del metodo evidenziata](media/azure-functions-lab-image14.png)
 

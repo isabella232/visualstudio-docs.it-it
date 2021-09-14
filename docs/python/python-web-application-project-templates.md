@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e587682bd8e4257d14c0c6602cf45255effeede
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636948"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -28,19 +28,19 @@ Per informazioni sulla distribuzione di un'app Web Python in Azure, vedere [Eseg
 
 ## <a name="use-a-project-template"></a>Usare un modello di progetto
 
-Per creare un progetto da un modello, usare **File**  >    >  **nuovo Project**. Per visualizzare i modelli per i progetti Web, selezionare **Web Python** sul lato sinistro della finestra  >   di dialogo. Quindi, selezionare un modello a scelta, specificare il nome del progetto e della soluzione, impostare le opzioni per una directory soluzione e un repository Git e selezionare **OK**.
+Per creare un progetto da un modello, usare **Nuovo file**  >    >  **Project**. Per visualizzare i modelli per i progetti **Web,** selezionare Web Python  >   sul lato sinistro della finestra di dialogo. Quindi, selezionare un modello a scelta, specificare il nome del progetto e della soluzione, impostare le opzioni per una directory soluzione e un repository Git e selezionare **OK**.
 
 ![Finestra di dialogo Nuovo progetto per app Web](media/projects-new-project-dialog-web.png)
 
 ::: moniker range="<=vs-2017"
 
-Il modello **di Project** Web generico, menzionato in precedenza, fornisce solo un progetto Visual Studio vuoto senza codice e senza presupposti diversi dal fatto di essere un progetto Python.
+Il modello **di Project** Web generico, citato in precedenza, fornisce solo un progetto Visual Studio vuoto senza codice e senza presupposti oltre a essere un progetto Python.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Il modello **di Project** Web generico, menzionato in precedenza, fornisce solo un progetto Visual Studio vuoto senza codice e senza presupposti diversi dal fatto di essere un progetto Python.
+Il modello **di Project** Web generico, citato in precedenza, fornisce solo un progetto Visual Studio vuoto senza codice e senza presupposti oltre a essere un progetto Python.
 
 ::: moniker-end
 
@@ -48,7 +48,7 @@ Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e ri
 
 ### <a name="blank-group"></a>Gruppo vuoto
 
-Tutti **i \<framework> modelli Project** Web vuoto creano un progetto con codice boilerplate più o meno minimo e le dipendenze necessarie dichiarate in un file *requirements.txt* file.
+Tutti **i modelli di \<framework> Project** Web vuoto creano un progetto con codice boilerplate più o meno minimo e le dipendenze necessarie dichiarate in un file *requirements.txt.*
 
 | Modello | Descrizione |
 | --- | --- |
@@ -58,7 +58,7 @@ Tutti **i \<framework> modelli Project** Web vuoto creano un progetto con codice
 
 ### <a name="web-group"></a>Gruppo Web
 
-Tutti **\<Framework> i modelli Project** web creano un'app Web iniziale con una progettazione identica indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
+Tutti **\<Framework> i modelli Project** Web creano un'app Web iniziale con una progettazione identica indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
 
 | Modello | Descrizione |
 | --- | --- |
@@ -69,13 +69,13 @@ Tutti **\<Framework> i modelli Project** web creano un'app Web iniziale con una 
 ::: moniker range="vs-2017"
 ### <a name="polls-group"></a>Gruppo di sondaggi
 
-I modelli di Project Web sondaggi creano un'app Web iniziale tramite la quale gli utenti possono votare su domande di sondaggio diverse. **\<framework>** Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
+I **modelli di Project \<framework>** web di sondaggi creano un'app Web iniziale tramite la quale gli utenti possono votare domande di sondaggio diverse. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
 
 | Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle di sondaggi** | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli di dati e il codice dell'archivio dati sono contenuti nella cartella *models* e il file *settings.py* contiene codice per determinare l'archivio dati usato. |
 | **Progetto Web Django di sondaggi** | Genera un progetto Django e un'app Django con tre pagine e un database SQLite. Include le personalizzazioni per l'interfaccia amministrativa Django che consentono a un amministratore autenticato di creare e gestire i sondaggi. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 6 dell'esercitazione su Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| **Progetto Web Flask/Jade di sondaggi** | Genera la stessa app del modello Project **Web Flask polls,** ma usando l'estensione Jade per il motore di templating Jinja. |
+| **Progetto Web Flask/Jade di sondaggi** | Genera la stessa app del modello Web **Project Polls Flask,** ma usando l'estensione Jade per il motore di modello Jinja. |
 ::: moniker-end
 
 ## <a name="install-project-requirements"></a>Installare i requisiti di progetto
@@ -104,10 +104,10 @@ Le proprietà nei gruppi **Comando esegui server** e **Comando debug server** (q
 
 - **Comando**: può essere uno script Python (file *\*.py*), un nome di modulo (come in `python.exe -m module_name`) o una singola riga di codice (come in `python.exe -c "code"`). Il valore nell'elenco a discesa indica il tipo da usare.
 - **Argomenti**: questi argomenti vengono passati nella riga di comando dopo il comando.
-- **Ambiente:** elenco di coppie separate da nuova riga \<NAME> = \<VALUE> che specificano variabili di ambiente. Queste variabili vengono impostate dopo tutte le proprietà che possono comportare la modifica dell'ambiente, ad esempio il numero di porta e i percorsi di ricerca, di conseguenza possono sovrascrivere tali valori.
+- **Ambiente:** elenco di coppie separate da nuova riga \<NAME> = \<VALUE> che specificano le variabili di ambiente. Queste variabili vengono impostate dopo tutte le proprietà che possono comportare la modifica dell'ambiente, ad esempio il numero di porta e i percorsi di ricerca, di conseguenza possono sovrascrivere tali valori.
 
 Per specificare qualsiasi proprietà di progetto o variabile di ambiente, è possibile usare la sintassi MSBuild, ad esempio: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` è il percorso relativo del file di avvio, mentre `{StartupModule}` è il nome importabile del file di avvio. `$(SERVER_HOST)`e sono variabili di ambiente normali impostate dalle proprietà URL di avvio e Numero di porta, automaticamente `$(SERVER_PORT)` o dalla **proprietà** Ambiente.  
+`$(StartupFile)` è il percorso relativo del file di avvio, mentre `{StartupModule}` è il nome importabile del file di avvio. `$(SERVER_HOST)`e sono variabili di ambiente normali impostate dalle proprietà URL di avvio e Numero di porta, automaticamente `$(SERVER_PORT)` o dalla **proprietà** Ambiente .  
 
 > [!Note]
 > I valori in **Comando esegui server** vengono usati con il comando **Debug** > **Avvia server** oppure quando si preme **CTRL**+**F5**. I valori nel gruppo **Comando debug server** vengono usati con il comando **Debug** > **Avvia il server di debug** oppure quando si preme **F5**.

@@ -1,6 +1,6 @@
 ---
 description: Imposta il valore di un riferimento da un altro riferimento.
-title: IDebugReference2::SetValueAsReference | Microsoft Docs
+title: Interfaccia IDebugReference2::SetValueAsReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 48030e2314764767b049502ce081a2711a00111b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711911"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Imposta il valore di un riferimento da un altro riferimento. Riservato per utilizzi futuri.

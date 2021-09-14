@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 384aab56a17faa4ada1ff99fc43f13032d18db3d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709930"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 Recupera un riferimento alla voce specificata nella tabella.
@@ -46,9 +46,9 @@ HRESULT Item (
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
- Una tabella rappresenta una raccolta di oggetti . A seconda di questi oggetti, è possibile eseguire il cast del parametro dell'elemento all'interfaccia appropriata. Ad esempio, se una tabella contiene [oggetti IDiaSegment,](../../debugger/debug-interface-access/idiasegment.md) è possibile eseguire il cast del parametro dell'elemento all'interfaccia `IDiaSegment` .
+ Una tabella rappresenta una raccolta di oggetti . A seconda di tali oggetti, è possibile eseguire il cast del parametro dell'elemento all'interfaccia appropriata. Ad esempio, se una tabella contiene [oggetti IDiaSegment,](../../debugger/debug-interface-access/idiasegment.md) è possibile eseguire il cast del parametro dell'elemento all'interfaccia `IDiaSegment` .
 
- È un approccio più comune chiamare il metodo `QueryInterface` nell'interfaccia [IDiaTable](../../debugger/debug-interface-access/idiatable.md) per l'interfaccia dell'enumeratore appropriata e usare i metodi specifici dell'enumeratore per accedere al contenuto della tabella. Per un [esempio, vedere l'interfaccia IDiaEnumInjectedSources.](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+ È un approccio più comune chiamare il metodo `QueryInterface` nell'interfaccia [IDiaTable](../../debugger/debug-interface-access/idiatable.md) per l'interfaccia dell'enumeratore appropriato e usare i metodi specifici dell'enumeratore per accedere al contenuto della tabella. Per un esempio, vedere l'interfaccia [IDiaEnumInjectedSources.](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

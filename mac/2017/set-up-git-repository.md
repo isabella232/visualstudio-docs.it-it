@@ -7,11 +7,11 @@ ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
 ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123961944"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710509"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -55,7 +55,7 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
 3. Scegliere la scheda **Repository registrati** e premere i pulsante **Aggiungi**:
 
-    ![Nella scheda Repository registrati della finestra di dialogo Seleziona repository sono disponibili i pulsanti Aggiungi, Rimuovi e Modifica e le caselle Nome modulo e Messaggio.](media/version-control-git5.png)
+    ![La scheda Repository registrati della finestra di dialogo Seleziona repository contiene i pulsanti Aggiungi, Rimuovi e Modifica e le caselle Nome modulo e Messaggio.](media/version-control-git5.png)
 
 4. Inserire il nome del repository che si desidera visualizzare localmente e incollare l'URL del passaggio 3. La finestra di dialogo Configurazione repository sarà analoga alla seguente. Premere OK:
 
@@ -132,7 +132,7 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
 È probabile che sarà necessario usare un repository di GitHub che esiste solo in remoto e non nel computer locale. Visual Studio per Mac consente di estrarre rapidamente il repository. Seguire questa procedura per clonarlo nel computer in uso:
 
-1. Nella barra dei menu selezionare Controllo della versione **> checkout**:
+1. Nella barra dei menu selezionare Controllo **della versione > estrazione:**
 
 2. Verrà visualizzata la scheda **Connetti al repository**:
 
@@ -142,7 +142,7 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
     ![URL di GitHub visualizzato](media/version-control-git14.png)
 
-4. Sostituire tutto il testo nel campo **di immissione URL** nella scheda Connessione **al repository.** La maggior parte degli altri campi di questa scheda verrà popolata automaticamente, come illustrato nell'immagine nel passaggio #2.
+4. Sostituire tutto il testo nel campo **di immissione dell'URL** nella **Connessione alla scheda** Repository. La maggior parte degli altri campi di questa scheda verrà popolata automaticamente, come illustrato nell'immagine nel passaggio #2.
 
 5. Immettere la directory in cui si vuole clonare il repository e premere **Estrai**.
 

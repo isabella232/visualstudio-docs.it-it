@@ -1,6 +1,6 @@
 ---
 title: Attività UidManager | Microsoft Docs
-description: Informazioni su come MSBuild'attività UidManager controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi XAML nei file XAML di origine.
+description: Informazioni su come MSBuild'attività UidManager controlla, aggiorna o rimuove identificatori univoci (UID) per localizzare tutti gli elementi XAML nei file XAML di origine.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,11 +23,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: 323756067e8c553eb13729e305cb76677ccf3a3b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625457"
 ---
 # <a name="uidmanager-task"></a>Attività UidManager
 

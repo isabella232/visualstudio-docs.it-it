@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 28595d4ed837249385a18b4a60cd12f1713b5640
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101427"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710234"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring con estrazione di un metodo
 
@@ -51,7 +51,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+M**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai metodo** dal popup della finestra di anteprima.
+      - Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai metodo** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring - Estrai metodo**.
       - Fare clic con il pulsante destro del mouse sul codice e scegliere **Refactoring > Estrai > Estrai metodo**.

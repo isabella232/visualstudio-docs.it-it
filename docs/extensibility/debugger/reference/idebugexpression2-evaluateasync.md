@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad7d4c41aae0b1d48502fdb19865e737004696ae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118879"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710290"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Questo metodo valuta l'espressione in modo asincrono.
@@ -51,14 +51,14 @@ int EvaluateAsync(
 [in] Questo parametro è sempre un valore Null.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Un codice di errore tipico è:
+In caso di esito positivo, `S_OK` restituisce ; in caso contrario, restituisce un codice di errore. Un codice di errore tipico è:
 
 |Errore|Descrizione|
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|È in corso la valutazione di un'altra espressione e la valutazione simultanea delle espressioni non è supportata.|
 
 ## <a name="remarks"></a>Commenti
-Questo metodo deve restituire immediatamente dopo l'avvio della valutazione dell'espressione. Quando l'espressione viene valutata correttamente, è necessario inviare un [oggetto IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) al callback dell'evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) come specificato tramite [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).
+Questo metodo deve restituire immediatamente dopo l'avvio della valutazione dell'espressione. Quando l'espressione viene valutata correttamente, è necessario inviare un [oggetto IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) al callback dell'evento [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) come specificato tramite [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CExpression` semplice che implementa [l'interfaccia IDebugExpression2.](../../../extensibility/debugger/reference/idebugexpression2.md)

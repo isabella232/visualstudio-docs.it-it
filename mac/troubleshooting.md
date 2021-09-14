@@ -7,11 +7,11 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
 ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710461"
 ---
 # <a name="troubleshooting"></a>Risoluzione dei problemi
 

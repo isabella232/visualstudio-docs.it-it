@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fb9846958700e89ea4bc7cf12815ccf6335e39c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107147"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711527"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
 
@@ -100,7 +100,7 @@ Per altre informazioni, vedere:
 
 Questa opzione consente di raccogliere i dati dai contatori di Windows Performance Monitor. Per raccogliere questi dati, selezionare la casella di controllo **Raccogliere contatori Windows**. L'intervallo di raccolta può essere impostato nella casella **Intervallo di raccolta**. Potrebbero essere inoltre disponibili le opzioni **Categoria contatori** e **Istanza**. Sono disponibili alcuni contatori predefiniti di Windows Performance Monitor.
 
- Per altre informazioni, vedere [Procedura: Raccogliere i dati Windows contatore.](../profiling/how-to-collect-windows-counter-data.md)
+ Per altre informazioni, vedere [Procedura: Raccogliere dati Windows contatore.](../profiling/how-to-collect-windows-counter-data.md)
 
 ## <a name="advanced"></a>Avanzato
 

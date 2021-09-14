@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 35762badb0c3c3bd86e84d2414d99a70d53b896e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625319"
 ---
 # <a name="debug-r-in-visual-studio"></a>Eseguire il debug di R in Visual Studio
 
@@ -37,7 +37,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 Si noti che come origine dello script viene usata la funzione `rtvs::debug_source`. Questa funzione è obbligatoria, perché RTVS deve modificare il codice in preparazione al debug. Quando si usa un comando di sourcing RTVS e un debugger è collegato, Visual Studio usa automaticamente `rtvs::debug_source`.
 
-È anche possibile collegare manualmente il debugger dalla finestra interattiva direttamente usando il comando Debugger di collegamento sessione di **R Tools,** il comando Collega a R interattivo o il comando Collega debugger sulla barra degli strumenti della finestra  >    >     >   interattiva.  Dopo avere eseguito questa operazione, è responsabilità dell'utente eseguire il sourcing dei file di cui vuole eseguire il debug. Se si vuole eseguire manualmente il sourcing dei file, assicurarsi di usare `rtvs::debug_source` e non il comando `source` normale in R.
+È anche possibile collegare manualmente il debugger direttamente dalla finestra interattiva usando il comando Debugger di collegamento sessione di **R Tools,** il comando Esegui debug della connessione a R interattivo o il comando Collega debugger sulla barra degli strumenti della finestra  >    >     >   interattiva.  Dopo avere eseguito questa operazione, è responsabilità dell'utente eseguire il sourcing dei file di cui vuole eseguire il debug. Se si vuole eseguire manualmente il sourcing dei file, assicurarsi di usare `rtvs::debug_source` e non il comando `source` normale in R.
 
 Questa connessione tra il debugger e la finestra interattiva semplifica alcune operazioni, come ad esempio la chiamata e il debugging di una funzione con valori di parametro diversi. Ad esempio, si supponga di avere la funzione seguente in un file originato, ovvero caricato nella sessione:
 

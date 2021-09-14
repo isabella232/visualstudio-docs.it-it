@@ -23,11 +23,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: b4c42d5020ff78a2d2e66715edb913fe8cea127e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625199"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Procedura: Aggiungere un metodo Deleter
   È possibile consentire a un utente finale di eliminare un record di dati da un elenco esterno in un sito SharePoint aggiungendo un metodo Deleter al modello. Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
@@ -36,7 +36,7 @@ ms.locfileid: "122149234"
 
 1. In Progettazione **integrazione applicativa dei** dati scegliere un'entità.
 
-2. Sulla barra dei menu scegliere **Visualizza altri dettagli**  >  **Windows**  >  **metodo BDC**.
+2. Sulla barra dei menu scegliere **Visualizza altri**  >  **Windows**  >  **dettagli metodo BDC**.
 
     Verrà **visualizzata la finestra BDC Method Details (Dettagli metodo BDC).** Per altre informazioni su questa finestra, vedere Panoramica [degli strumenti di progettazione del modello BDC.](../sharepoint/bdc-model-design-tools-overview.md)
 

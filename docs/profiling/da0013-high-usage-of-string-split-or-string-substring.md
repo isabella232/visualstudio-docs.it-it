@@ -1,5 +1,5 @@
 ---
-title: DA0013- Utilizzo elevato di String.Split o String.Substring | Microsoft Docs
+title: DA0013 - Utilizzo elevato di String.Split o String.Substring | Microsoft Docs
 description: Le chiamate ai metodi System.String.Split o System.String.Substring rappresentano una percentuale significativa dei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2502e5021eb0e4e3f3954d068e80819b3034e473
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122142286"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126637156"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Utilizzo elevato di String.Split o String.Substring
 

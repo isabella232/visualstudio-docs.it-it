@@ -1,6 +1,6 @@
 ---
 title: Diagnosticare i problemi dopo la distribuzione | Microsoft Docs
-description: Diagnosticare i problemi dopo la distribuzione usando IntelliTrace in Visual Studio. Includere le informazioni sulla build con la versione. Rilasciare e monitorare l'app per individuare il problema.
+description: Diagnosticare i problemi dopo la distribuzione usando IntelliTrace in Visual Studio. Includere le informazioni di compilazione con la versione. Rilasciare e monitorare l'app per individuare il problema.
 ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 192389c32a8ff5193b545a1a4159441bab298a8b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126709925"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnosticare i problemi dopo la distribuzione usando IntelliTrace (C#, Visual Basic)
 
@@ -58,7 +58,7 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 
 2. Scegliere il modello predefinito (TfvcTemplate.12.xaml) o il proprio modello personalizzato.
 
-     ![Scegliere il modello di processo &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
+     ![Scegliere il modello di processo di &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
 
 3. Specificare dove salvare il file dei simboli (PDB) in modo da indicizzare automaticamente l'origine.
 
@@ -170,7 +170,7 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 
 1. Aprire il log IntelliTrace (file .iTrace) da Visual Studio Enterprise. In alternativa, fare doppio clic sul file se nello stesso computer è presente Visual Studio Enterprise.
 
-2. Scegliere **Apri soluzione** per fare in modo che Visual Studio apra automaticamente la soluzione o il progetto corrispondente, se il progetto non è stato compilato come parte di una soluzione. [D: Nel log IntelliTrace mancano le informazioni sull'app distribuita. Perché si è verificata questa operazione? Cosa si fa?](#InvalidConfigFile)
+2. Scegliere **Apri soluzione** per fare in modo che Visual Studio apra automaticamente la soluzione o il progetto corrispondente, se il progetto non è stato compilato come parte di una soluzione. [D: Nel log IntelliTrace mancano informazioni sull'app distribuita. Perché si è verificata questa operazione? Cosa si fa?](#InvalidConfigFile)
 
      Visual Studio esegue automaticamente lo shelving di qualsiasi modifica in sospeso all'apertura della soluzione o del progetto corrispondente. Per ottenere ulteriori dettagli su questo shelveset, aprire la finestra **Output** o **Team Explorer**.
 
@@ -266,7 +266,7 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 
 - **Nome progetto**
 
-   Il nome del progetto in Visual Studio. Esempio:
+   Il nome del progetto in Visual Studio. Ad esempio:
 
   ```xml
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
@@ -284,7 +284,7 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 
     - **ProjectVersionSpec**: versione del progetto
 
-      Esempio:
+      Ad esempio:
 
     ```xml
     <SourceControl type="TFS">
@@ -306,7 +306,7 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 
     - **CommitId:** ID del commit
 
-      Esempio:
+      Ad esempio:
 
     ```xml
     <SourceControl type="Git">
@@ -332,7 +332,7 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 
   - **BuiltSolution**: percorso del file di soluzione usato da Visual Studio per trovare e aprire la soluzione corrispondente. Si tratta del contenuto della proprietà **SolutionPath** MsBuild.
 
-    Esempio:
+    Ad esempio:
 
   - **TFS**
 
@@ -373,13 +373,13 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 
 - In Visual Studio non è stata trovata la soluzione o il progetto nella raccolta del team corrente.
 
-     Quando il file manifesto di compilazione (.BuildInfo.config) non specifica dove Visual Studio può trovare l'origine corrispondente, Visual Studio usa il file TFS attualmente connesso per trovare la soluzione o il progetto \<*ProjectName*> corrispondente. Se la raccolta del team corrente non dispone dell'origine corrispondente, in Visual Studio viene richiesto di connettersi a una raccolta del team diversa.
+     Quando il file manifesto di compilazione (con estensione BuildInfo.config) non specifica dove Visual Studio può trovare l'origine corrispondente, Visual Studio usa il file TFS attualmente connesso per trovare la soluzione o il progetto \<*ProjectName*> corrispondente. Se la raccolta del team corrente non dispone dell'origine corrispondente, in Visual Studio viene richiesto di connettersi a una raccolta del team diversa.
 
-- Visual Studio non ha trovato la soluzione o il progetto nella raccolta specificata dal file manifesto di compilazione ( \<*ProjectName*>.BuildInfo.config).
+- Visual Studio non ha trovato la soluzione o il progetto nella raccolta specificata dal file manifesto di compilazione \<*ProjectName*> (con estensione BuildInfo.config).
 
      È possibile che il TFS specificato non disponga più dell'origine corrispondente o non esista più, probabilmente perché è stata eseguita la migrazione a un nuovo TFS. Se il TFS specificato non esiste, è possibile che si verifichi il timeout di Visual Studio dopo circa un minuto e viene quindi richiesto di connettersi a una raccolta diversa. Per continuare, connettersi al server TFS corretto.
 
-     ![Apertura dal controllo del codice sorgente &#45; migrazione](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
+     ![Aprire dal controllo del codice sorgente &#45; migrazione](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> D: Che cos'è un'area di lavoro?
  **R:**[L'area di lavoro consente di archiviare una copia dell'origine](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true) per consentire di svilupparla prima di archiviare il lavoro. Se non è già presente un'area di lavoro mappata specificatamente alla soluzione o al progetto trovato, in Visual Studio viene richiesto di scegliere un'area di lavoro disponibile oppure di crearne una nuova con il nome del computer in uso come nome predefinito dell'area di lavoro.
@@ -387,4 +387,4 @@ Visual Studio 2017 e versioni successive non includono il file *BuildInfo.config
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> D: Perché viene visualizzato questo messaggio sui simboli non attendibili?
  ![Debug con percorso simboli non attendibili?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **A:** Questo messaggio viene visualizzato quando il percorso dei simboli nel file manifesto di compilazione (.BuildInfo.config) non è \<*ProjectName*> incluso nell'elenco dei percorsi dei simboli attendibili. È possibile aggiungere il percorso dell'elenco di percorsi di simboli nelle opzioni del debugger.
+ **A:** Questo messaggio viene visualizzato quando il percorso dei simboli nel file manifesto di compilazione (BuildInfo.config) non è \<*ProjectName*> incluso nell'elenco dei percorsi dei simboli attendibili. È possibile aggiungere il percorso dell'elenco di percorsi di simboli nelle opzioni del debugger.

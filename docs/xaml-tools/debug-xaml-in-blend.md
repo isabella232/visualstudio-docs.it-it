@@ -12,15 +12,15 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - uwp
 ms.openlocfilehash: 5cd32b2eab82cd148bec4f21fa7a6f5e1f95c5b9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710554"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 
-È possibile usare gli strumenti in Blend per Visual Studio eseguire il debug del codice XAML nell'app. Quando compili un progetto, eventuali errori vengono visualizzati nel pannello **Risultati**. Fai doppio clic su un errore per trovare il markup correlato all'errore. Se è necessario più spazio per lavorare, è possibile nascondere **il** pannello Risultati premendo **F12.**
+È possibile usare gli strumenti in Blend per Visual Studio eseguire il debug del codice XAML nell'app. Quando compili un progetto, eventuali errori vengono visualizzati nel pannello **Risultati**. Fai doppio clic su un errore per trovare il markup correlato all'errore. Se è necessario più spazio per lavorare, è possibile nascondere il **pannello** Risultati premendo **F12.**
 
 ## <a name="syntax-errors"></a>Errori di sintassi
 
@@ -53,9 +53,9 @@ L'esempio seguente illustra una semplice sessione di debug XAML in Blend.
 
     Nella finestra di dialogo **Nuovo progetto** viene visualizzato un elenco di tipi di progetto sul lato sinistro. Quando fai clic su un tipo di progetto, i modelli di progetto a esso associati vengono visualizzati a destra.
 
-2. Nell'elenco dei tipi di progetto fare clic **Windows universale.**
+2. Nell'elenco dei tipi di progetto fare clic su **Windows universale.**
 
-3. Nell'elenco dei modelli di progetto fare clic **su App vuota (universal Windows)**.
+3. Nell'elenco dei modelli di progetto fare clic **su App vuota (Universal Windows).**
 
 4. Nella casella **di** testo Nome digitare `DebuggingSample` .
 
@@ -91,7 +91,7 @@ L'esempio seguente illustra una semplice sessione di debug XAML in Blend.
     </Grid>
     ```
 
-10. Premere **CTRL** + **MAIUSC** + **B per** compilare il progetto.
+10. Premere **CTRL** + **MAIUSC** + **B** per compilare il progetto.
 
     Un messaggio di errore ti avvisa che il progetto non può essere compilato e nella parte superiore dell'app appare il pannello **Risultati**, che elenca gli errori.
 
@@ -105,7 +105,7 @@ Quando vengono rilevati errori XAML, nell'area di progettazione viene visualizza
 
 1. Fai doppio clic sul primo errore nell'elenco. La descrizione è "Il valore '<' non è valido in un attributo". Quando fai doppio clic sull'errore, il puntatore trova la posizione corrispondente nel codice. Il valore `<` che precede `Button` è valido e non è un attributo come suggerito nel messaggio di errore. Se osservi la riga di codice precedente, noterai che le virgolette di chiusura per l'attributo `Top` sono mancanti. Digita le virgolette di chiusura. L'elenco degli errori presente nel pannello **Risultati** si aggiorna automaticamente per riflettere le modifiche.
 
-2. Fare doppio clic sulla descrizione "'0' non è valido all'inizio di un nome". `Margin="0,149,0,0"` sembra essere ben formato. Nota che la codifica colori di `Margin` non corrisponde alle altre istanze di `Margin` nel codice. Poiché le virgolette di chiusura mancano nella coppia nome/valore precedente (`VerticalAlignment="Top`), `Margin="` viene letto come parte del valore dell'attributo precedente e 0 viene letto come carattere iniziale di una coppia nome/valore. Digita le virgolette di chiusura per `Top`. L'elenco degli errori presente nel pannello **Risultati** si aggiorna automaticamente per riflettere le modifiche.
+2. Fare doppio clic sulla descrizione "'0' non è valida all'inizio di un nome". `Margin="0,149,0,0"` sembra essere ben formato. Nota che la codifica colori di `Margin` non corrisponde alle altre istanze di `Margin` nel codice. Poiché le virgolette di chiusura mancano nella coppia nome/valore precedente (`VerticalAlignment="Top`), `Margin="` viene letto come parte del valore dell'attributo precedente e 0 viene letto come carattere iniziale di una coppia nome/valore. Digita le virgolette di chiusura per `Top`. L'elenco degli errori presente nel pannello **Risultati** si aggiorna automaticamente per riflettere le modifiche.
 
 3. Fai doppio clic sull'errore rimanente, "Tag XML di chiusura 'Button' non corrispondente". Il puntatore si trova in corrispondenza del tag **Grid** di chiusura (`</Grid>`), suggerendo che l'errore si trova all'interno dell'oggetto `Grid`. Nota che il secondo oggetto `Button` è privo del tag di chiusura. Dopo aver aggiunto il tag `/` di chiusura, l'elenco del pannello **Risultati** viene aggiornato. Ora che questi errori iniziali sono stati risolti, ne vengono identificati altri due.
 
@@ -115,13 +115,13 @@ Quando vengono rilevati errori XAML, nell'area di progettazione viene visualizza
 
     ![Debug di XAML in Blend per Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    Premere **CTRL** + **MAIUSC** + **B** per compilare il progetto e verificare che non siano presenti errori rimanenti.
+    Premere  + **CTRL+MAIUSC** + **B** per compilare il progetto e verificare che non siano presenti errori rimanenti.
 
 ## <a name="debug-in-visual-studio"></a>Eseguire il debug in Visual Studio
 
-È possibile aprire progetti Blend in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto Blend in Visual Studio, fare  clic con il pulsante destro del mouse sul progetto nel pannello Progetti e quindi scegliere **Modifica in** Visual Studio . Al termine della sessione di debug in Visual Studio, premere CTRL+MAIUSC+S per salvare tutte le modifiche e quindi tornare a Blend. Ti verrà chiesto di ricaricare il progetto. Fare **clic su Sì per tutti** per continuare a lavorare in Blend.
+È possibile aprire progetti Blend in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto Blend in Visual Studio, fare clic  con il pulsante destro del mouse sul progetto nel pannello Progetti e quindi scegliere **Modifica in Visual Studio**. Dopo aver completato la sessione di debug in Visual Studio, premere CTRL+MAIUSC+S per salvare tutte le modifiche e quindi tornare a Blend. Ti verrà chiesto di ricaricare il progetto. Fare **clic su Sì per tutti** per continuare a lavorare in Blend.
 
-Per altre informazioni sul debug dell'app, vedere [Eseguire il debug di app UWP in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
+Per altre informazioni sul debug dell'app, vedi [Eseguire il debug di app UWP in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="get-help"></a>Ottieni supporto
 

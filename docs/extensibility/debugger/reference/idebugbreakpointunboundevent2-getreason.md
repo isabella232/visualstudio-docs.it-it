@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bcb3d8918c73bdf738cb7bcc8fe21c7799593f4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636380"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 Ottiene il motivo per cui il punto di interruzione è stato scollegato.
@@ -49,10 +49,10 @@ int GetReason(
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Commenti
-I motivi includono la riasserzione di un punto di interruzione in un percorso diverso dopo un'operazione di modifica e continuazione o la determinazione che un punto di interruzione è stato associato in errore.
+I motivi includono la riasserzione di un punto di interruzione in una posizione diversa dopo un'operazione di modifica e continuazione o la determinazione del fatto che un punto di interruzione è stato associato in errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente illustra come implementare questo metodo per un **oggetto CBreakpointUnboundDebugEventBase** che espone l'interfaccia [IDebugBreakpointUnboundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
+L'esempio seguente illustra come implementare questo metodo per un oggetto **CBreakpointUnboundDebugEventBase** che espone [l'interfaccia IDebugBreakpointUnboundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(

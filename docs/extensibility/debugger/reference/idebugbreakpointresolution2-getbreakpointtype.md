@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7f2213a2f112bf84817532210c457da534c8d86c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636411"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Ottiene il tipo del punto di interruzione rappresentato da questa risoluzione.
@@ -43,13 +43,13 @@ int GetBreakpointType(
 
 ## <a name="parameters"></a>Parametri
 `pBPType`\
-[out] Restituisce un valore [dall'enumerazione BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) che specifica il tipo di punto di interruzione.
+[out] Restituisce un valore dall'enumerazione [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) che specifica il tipo di punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
-In caso di esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se `bpResLocation` il campo [](../../../extensibility/debugger/reference/bp-resolution-info.md) nella struttura BP_RESOLUTION_INFO non è valido.
+Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se `bpResLocation` il campo nella [](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura BP_RESOLUTION_INFO non è valido.
 
 ## <a name="remarks"></a>Commenti
-Il punto di interruzione può essere ad esempio un codice o un punto di interruzione dati.
+Il punto di interruzione può essere un codice o un punto di interruzione dei dati, ad esempio .
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto `CDebugBreakpointResolution` semplice che espone [l'interfaccia IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)

@@ -10,11 +10,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a945a3c8fe06fee411c5c19c84281540c2b2f85
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126635995"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Suggerimenti relativi alle scelte rapide per Visual Studio
 
@@ -82,21 +82,21 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Visualizzare informazioni rapide|**CTRL** + **K**,**I**|
 |Passa a|**CTRL** + **,**|
 |Esplorare i riferimenti evidenziati|**CTRL** + **MAIUSC** + **Su** (precedente)<br />**CTRL** + **MAIUSC** + **Down** (Avanti)|
-|Zoom dell'editor|**CTRL** +  + MAIUSC **>** (In)<br />**CTRL** +  + MAIUSC **<** (Out)|
+|Zoom dell'editor|**CTRL** +  + MAIUSC **>** (In)<br />**CTRL+FRECCIA DESTRA** +  + MAIUSC **<** (Out)|
 |Selezione blocco|Tenere premuto **ALT** e trascinare il mouse<br />**MAIUSC** + **ALT** + **Tasti di direzione**|
-|Spostare una riga su/giù|**ALT** + **Freccia SU**  /  **ALT** + **Freccia GIÙ**|
+|Spostare una riga su/giù|**ALT** + **Freccia su**  /  **ALT** + **Freccia giù**|
 |Duplicare una riga|**CTRL** + **E**,**V**|
 |Espandere la selezione|**MAIUSC** + **ALT**+**=**|
 |Comprimere la selezione|**MAIUSC** + **ALT**+**-**|
 |Vai a definizione|**F12**|
 |Visualizza definizione|**ALT** + **F12**|
-|Stack Vai a definizione|**CTRL** + **MAIUSC** + **8** (Indietro)<br />**CTRL** + **MAIUSC** + **7** (Avanti)|
+|Stack Vai a definizione|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **8** (Indietro)<br />**CTRL** + **MAIUSC** + **7** (Inoltra)|
 |Chiudere la finestra Visualizza definizione|**ESC**|
-|Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**CTRL** + **ALT** + **Home page**|
+|Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**CTRL+FRECCIA DESTRA** + **ALT** + **Home**|
 |Spostarsi tra più finestre Visualizza definizione|**CTRL** +  + ALT **-** e **CTRL** + **ALT**+**=**|
 |Spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
-|Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**MAIUSC** + **ESC**|
-|Passare al blocco di inclusione|**CTRL** + **ALT** + **Freccia SU**|
+|Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**MAIUSC** + **Esc**|
+|Passare al blocco di inclusione|**CTRL** + **ALT** + **Freccia su**|
 |Passare al problema successivo/precedente|**ALT** + **PgUp**  /  **ALT** + **PgDn**|
 |Menu di navigazione contestuale|**Alt**+**`**|
 
@@ -106,7 +106,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |-|-|
 |Aggiungere i pulsanti|Selezionare il pulsante di overflow della barra degli strumenti|
 |Casella combinata Trova nella barra degli strumenti standard|**CTRL** + **D**|
-|Modalità comando casella di testo Trova|digitare **>**|
+|Modalità comando casella di testo Trova|Digitare **>**|
 |Creare nuovi alias|Digitare **\<new alias> \<command> l'alias** nella **finestra di** comando|
 
 ## <a name="debugging"></a>Debug
@@ -120,11 +120,11 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Eseguire l'istruzione|**F11**|
 |Uscire dall'istruzione/routine|**MAIUSC** + **F11**|
 |Esecuzione fino al cursore|**CTRL** + **F10**|
-|Impostare l'istruzione successiva|**CTRL** + **MAIUSC** + **F10**|
+|Impostare l'istruzione successiva|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **F10**|
 |Impostare e attivare/disattivare il punto di interruzione|**F9**|
-|Disabilitare il punto di interruzione|**CTRL** + **F9**|
-|Controllo immediato (finestra)|**CTRL** + **ALT** + **I**|
-|Modalità di comando Finestra di controllo immediato|digitare **>**|
+|Disabilitare il punto di interruzione|**CTRL+FRECCIA DESTRA** + **F9**|
+|Controllo immediato (finestra)|**CTRL+FRECCIA DESTRA** + **ALT** + **I**|
+|Modalità di comando Finestra di controllo immediato|Digitare **>**|
 |Finestra di controllo immediato - Cancellare il buffer|Digitare **cls**|
 |Finestra di controllo immediato - Stampare il valore|Digitare **?varname**|
 

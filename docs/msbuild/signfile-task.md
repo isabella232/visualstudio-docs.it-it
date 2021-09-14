@@ -22,11 +22,11 @@ ms.technology: msbuild
 ms.workload:
 - multiple
 ms.openlocfilehash: d65187b74dc17c9211a6b3ac8b750606c1c4ae3d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625517"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
 
@@ -50,7 +50,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 
 ## <a name="remarks"></a>Commenti
 
- Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base Task.](../msbuild/task-base-class.md)
+ Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe di base attività](../msbuild/task-base-class.md).
 
 ## <a name="example"></a>Esempio
 

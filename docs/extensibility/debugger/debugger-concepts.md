@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d407418d158adbd06dd64f998a1c6831b9f7cd1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710343"
 ---
 # <a name="debugger-concepts"></a>Concetti relativi al debugger
 Per eseguire la compilazione Visual Studio pacchetto di debug, è necessario avere familiarità con i concetti relativi all'architettura usati nella progettazione del pacchetto.
@@ -40,7 +40,7 @@ Per eseguire la compilazione Visual Studio pacchetto di debug, è necessario ave
 
  [Thread](../../extensibility/debugger/threads.md) Definisce le caratteristiche dei thread in termini di architettura di debug.
 
- [Stack frame](../../extensibility/debugger/stack-frames.md) Definisce un stack frame in termini di architettura di debug. Un stack frame è un'astrazione di uno stack che fornisce il contesto di esecuzione di un thread.
+ [Stack frame](../../extensibility/debugger/stack-frames.md) Definisce un'stack frame in termini di architettura di debug. Un stack frame è un'astrazione di uno stack che fornisce il contesto di esecuzione di un thread.
 
  [Moduli](../../extensibility/debugger/modules.md) Definisce un modulo, in termini di architettura di debug, come contenitore fisico di codice, ad esempio un file eseguibile o una DLL.
 

@@ -13,11 +13,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 17a6ee7cbf622eb90debd961ba36f159bf7fbc6c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156526"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126625386"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Passaggio 5: Autenticare gli utenti in Django
 

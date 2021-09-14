@@ -1,5 +1,5 @@
 ---
-title: Progettazione flussi di lavoro - ActivityDesigner di runtime
+title: Progettazione flussi di lavoro - ActivityDesigner runtime
 description: Informazioni su come usare ActivityDesigner runtime per rendere persistenti e terminare le attività del flusso di lavoro nel Progettazione flussi di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -12,11 +12,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fc1c434c867f919861631666892f22d12e7979b
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710011"
 ---
 # <a name="runtime-activity-designers"></a>ActivityDesigner Runtime
 Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e terminare le attività del flusso di lavoro. Gli argomenti contenuti in questa sezione forniscono indicazioni su come usare gli ActivityDesigner Progettazione flussi di lavoro.

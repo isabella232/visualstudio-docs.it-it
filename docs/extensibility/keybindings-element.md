@@ -17,11 +17,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ba02fee1d647dfd1813fdc0cf33588c553b5bce
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711715"
 ---
 # <a name="keybindings-element"></a>Elemento KeyBindings
 L'elemento KeyBindings raggruppa gli elementi KeyBinding e altri raggruppamenti KeyBindings.
@@ -42,14 +42,14 @@ L'elemento KeyBindings raggruppa gli elementi KeyBinding e altri raggruppamenti 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condition|facoltativo. Vedere [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
 |[Elemento KeyBinding](../extensibility/keybinding-element.md)|Specifica i tasti di scelta rapida per i comandi.|
-|[KeyBindings](../extensibility/keybindings-element.md)|Raggruppa gli elementi KeyBinding e altri raggruppamenti KeyBindings.|
+|[Tasti di scelta](../extensibility/keybindings-element.md)|Raggruppa gli elementi KeyBinding e altri raggruppamenti KeyBindings.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

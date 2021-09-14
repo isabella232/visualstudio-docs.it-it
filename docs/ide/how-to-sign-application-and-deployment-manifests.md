@@ -1,6 +1,6 @@
 ---
 title: "Procedura: firmare manifesti dell'applicazione e di distribuzione"
-description: Informazioni sui requisiti per la firma per la pubblicazione ClickOnce manifesti dell'applicazione e della distribuzione. La firma è facoltativa per le .exe basate su client.
+description: Informazioni sui requisiti per la firma per la pubblicazione ClickOnce manifesti dell'applicazione e della distribuzione. La firma è facoltativa per .exe basate su certificati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 561c378d36ede0c8c0130bdf633e3cd699c5dbbeffb62c633c3ae157d37cdf2f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5568961cc8b527ecd724ab9a1d26ab4a641696b6
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121372874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710257"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: firmare manifesti dell'applicazione e di distribuzione
 
@@ -73,7 +73,7 @@ Per altre informazioni sulla creazione di file di chiave, vedere [Procedura: Cre
 4. Immettere la password per accedere al file di chiave e quindi premere **INVIO**.
 
 > [!NOTE]
-> Il file *pfx* non può includere informazioni di concatenamento dei certificati. In caso contrario, si verificherà l'errore di importazione seguente: Impossibile trovare il certificato e la **chiave privata per la decrittografia.** Per rimuovere le informazioni di concatenamento dei certificati, [](/previous-versions/aa730868(v=vs.80)) è possibile usare *Certmgr.msc* e disabilitare l'opzione **Includi** tutti i certificati durante l'esportazione del file *.pfx.
+> Il file *pfx* non può includere informazioni di concatenamento dei certificati. In caso contrario, si verificherà l'errore di importazione seguente: Impossibile trovare il certificato e **la chiave privata per la decrittografia di**. Per rimuovere le informazioni di concatenamento dei certificati, [](/previous-versions/aa730868(v=vs.80)) è possibile  usare *Certmgr.msc* e disabilitare l'opzione Includi tutti i certificati durante l'esportazione del file *.pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Firmare con un certificato di prova
 
@@ -116,6 +116,6 @@ Per impostazione predefinita, ClickOnce genera automaticamente manifesti firmati
 ## <a name="see-also"></a>Vedi anche
 
 - [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Procedura: Creare una coppia di chiavi pubblica-privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
-- [Pagina Firma, Project Designer](../ide/reference/signing-page-project-designer.md)
+- [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Pagina Firma, progettazione Project](../ide/reference/signing-page-project-designer.md)
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2c1455d92501ee50bca84e655b83ca98435e2d47
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711626"
 ---
 # <a name="use-new"></a>Utilizzare `new()`.
 
@@ -32,11 +32,11 @@ Si applica a:
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il punto di caret sulla dichiarazione di campo.
+1. Posizionare il punto di controllo sulla dichiarazione di campo.
 
-2. Premere  + **CTRL+ .** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere  + **CTRL.** per attivare il menu **Azioni rapide e refactoring**.
 
-3. Selezionare **Usa 'new(...)'**:
+3. Selezionare **Usa 'nuovo(...)':**
 
     ![Usare 'new(...)'](media/use-new.png)
 

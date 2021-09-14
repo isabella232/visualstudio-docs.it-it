@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: b6982a3875bc09e95b6f33dd30010adf029b3a91
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710569"
 ---
 # <a name="statemachine-activity-designer"></a>ActivityDesigner StateMachine
 
@@ -27,7 +27,7 @@ L'attività <xref:System.Activities.Statements.StateMachine> contiene una raccol
 
 ## <a name="using-the-statemachine-activity-designer"></a>Utilizzo dell'ActivityDesigner StateMachine
 
-Per aggiungere <xref:System.Activities.Statements.StateMachine> un'attività, trascinare l'ActivityDesigner **StateMachine** dalla sezione **Macchina** a stati della casella degli strumenti e rilasciarla  nell'Progettazione flussi di lavoro lavoro. Per aggiungere uno stato figlio a questa attività, trascinare un oggetto o dalla Casella degli strumenti e <xref:System.Activities.Statements.StateMachine> <xref:System.Activities.Statements.State> <xref:System.Activities.Core.Presentation.FinalState> rilasciarlo in **StateMachine.** 
+Per aggiungere <xref:System.Activities.Statements.StateMachine> un'attività, trascinare l'ActivityDesigner **StateMachine** dalla sezione **Macchina** a stati della casella degli strumenti e rilasciarla  nell'area Progettazione flussi di lavoro stato. Per aggiungere uno stato figlio a questa attività, trascinare un oggetto o dalla Casella degli strumenti e <xref:System.Activities.Statements.StateMachine> <xref:System.Activities.Statements.State> <xref:System.Activities.Core.Presentation.FinalState> rilasciarlo in **StateMachine.** 
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività StateMachine in Progettazione flussi di lavoro
 

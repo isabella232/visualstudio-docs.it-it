@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1fb8883374a84a25d27370fbe43e41ebe31025d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126636403"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Questa interfaccia rappresenta le informazioni che descrivono un punto di interruzione associato.
@@ -31,10 +31,10 @@ IDebugBreakpointResolution2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia fornisce una descrizione di un punto di interruzione associato utilizzato dal gestore di debug della sessione quando un utente visualizza le proprietà di un punto di interruzione.
+ Il motore di debug implementa questa interfaccia come parte del supporto per i punti di interruzione. Questa interfaccia fornisce una descrizione di un punto di interruzione associato utilizzato dalla gestione del debug della sessione quando un utente visualizza le proprietà di un punto di interruzione.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Una chiamata a [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) restituisce questa interfaccia.
+ Una chiamata a [GetBreakpointResolution restituisce](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) questa interfaccia.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Nella tabella seguente vengono illustrati i metodi di `IDebugBreakpointResolution2` .

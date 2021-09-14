@@ -1,6 +1,6 @@
 ---
 title: Personalizzare una barra multifunzione per Outlook
-description: Si apprenderà che quando si personalizza la barra multifunzione in Microsoft Office Outlook, è necessario prendere in considerazione la posizione in cui verrà visualizzata la barra multifunzione personalizzata nell'applicazione.
+description: Quando si personalizza la barra multifunzione in Microsoft Office Outlook, è necessario considerare la posizione in cui verrà visualizzata la barra multifunzione personalizzata nell'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 3c3b200a63ed17afbf4068475ae1509f1bf0da80
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047101"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710102"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personalizzare una barra multifunzione per Outlook
   Quando si personalizza la barra multifunzione in Microsoft Office Outlook, è necessario considerare la posizione in cui la barra multifunzione personalizzata verrà visualizzata nell'applicazione. Outlook visualizza la barra multifunzione nell'interfaccia utente principale dell'applicazione e nelle finestre aperte quando gli utenti eseguono determinate attività, ad esempio la creazione di messaggi di posta elettronica. Queste finestre dell'applicazione sono denominate controlli.
@@ -32,19 +32,19 @@ ms.locfileid: "122047101"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-a-custom-ribbon-to-the-main-application-ui"></a>Aggiungere una barra multifunzione personalizzata all'interfaccia utente principale dell'applicazione
- L'interfaccia utente principale in Outlook è denominata Explorer. Se si usa l'elemento Barra **multifunzione (finestra** di progettazione visiva), è possibile aggiungere una  barra multifunzione a Esplora risorse facendo clic sulla **proprietà RibbonType** della barra multifunzione nella finestra Proprietà e quindi selezionando **Microsoft.Outlook. Esplora risorse**.
+ L'interfaccia utente principale in Outlook è denominata Explorer. Se si usa l'elemento Barra multifunzione (finestra di progettazione **visiva),** è possibile aggiungere una  barra multifunzione a Esplora risorse facendo clic sulla proprietà **RibbonType** della barra multifunzione nella finestra Proprietà e quindi selezionando **Microsoft.Outlook. Esplora risorse**.
 
 ## <a name="assign-a-ribbon-to-an-inspector"></a>Assegnare una barra multifunzione a un controllo
  Per identificare il controllo che si vuole personalizzare, specificare il tipo di barra multifunzione corrispondente alla classe messaggio per il controllo.
 
- Se si usa l'elemento **Barra multifunzione (finestra** di progettazione visiva), fare clic sulla proprietà **RibbonType** della barra multifunzione nella finestra Proprietà e quindi selezionare uno o più ID della barra multifunzione dall'elenco di valori. 
+ Se si usa l'elemento Barra multifunzione **(finestra** di progettazione visiva), fare clic sulla proprietà **RibbonType** della barra multifunzione nella finestra Proprietà e quindi selezionare uno o più ID della barra multifunzione dall'elenco di valori. 
 
  È possibile aggiungere più barre multifunzione a un progetto. Se più barre multifunzione condividono uno stesso ID, eseguire l'override del metodo `CreateRibbonExtensibilityObject` nella classe `ThisAddin` del progetto per specificare la barra multifunzione da visualizzare in fase di esecuzione. Per altre informazioni, vedere Panoramica [della barra multifunzione.](../vsto/ribbon-overview.md) Per altre informazioni su ogni tipo di barra multifunzione, vedere l'articolo tecnico Personalizzare la barra [multifunzione in Outlook 2007.](/previous-versions/office/developer/office-2007/bb226712(v=office.12))
 
-## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Specificare il tipo di barra multifunzione usando il codice XML della barra multifunzione
- Se si usa l'elemento **Ribbon (XML),** controllare il valore del *parametro ribbonID* nel metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> e restituire la barra multifunzione appropriata.
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Specificare il tipo di barra multifunzione usando l'XML della barra multifunzione
+ Se si usa **l'elemento Barra multifunzione (XML),** controllare il valore del parametro *ribbonID* nel metodo e <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> restituire la barra multifunzione appropriata.
 
- Il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> viene generato automaticamente da Visual Studio nel file di codice della barra multifunzione. Il *parametro ribbonID* è una stringa che identifica Esplora risorse o un tipo specifico di controllo. Per un elenco completo dei valori possibili del parametro *ribbonID,* vedere l'articolo tecnico Personalizzare la barra multifunzione in Outlook [2007.](/previous-versions/office/developer/office-2007/bb226712(v=office.12))
+ Il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> viene generato automaticamente da Visual Studio nel file di codice della barra multifunzione. Il *parametro ribbonID* è una stringa che identifica explorer o un tipo specifico di controllo. Per un elenco completo dei valori possibili del parametro *ribbonID,* vedere l'articolo tecnico Personalizzare la barra [multifunzione in Outlook 2007.](/previous-versions/office/developer/office-2007/bb226712(v=office.12))
 
  L'esempio di codice seguente illustra come visualizzare una barra multifunzione personalizzata solo nel controllo `Microsoft.Outlook.Mail.Compose`. Questo controllo viene visualizzato quando un utente crea un nuovo messaggio di posta elettronica. La barra multifunzione da visualizzare viene specificata nel `GetResourceText()` metodo , generato nella classe **Ribbon.** Per altre informazioni sulla classe **Ribbon,** vedere [Xml della barra multifunzione.](../vsto/ribbon-xml.md)
 

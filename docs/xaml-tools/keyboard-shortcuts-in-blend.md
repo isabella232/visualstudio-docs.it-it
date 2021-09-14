@@ -1,5 +1,5 @@
 ---
-title: Scelte rapide da tastiera
+title: Tasti di scelta rapida
 titleSuffix: Blend for Visual Studio
 description: Informazioni sui tasti di scelta rapida Blend per Visual Studio comandi per l'uso di progetti, documenti, oggetti, visualizzazioni e aree di lavoro.
 ms.custom: SEO-VS-2020
@@ -13,11 +13,11 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 6611ffbcf7ac3ccf98cfc91d8423458ebe314ea3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091929"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710536"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Scelte rapide da tastiera in Blend per Visual Studio
 
@@ -79,45 +79,45 @@ ms.locfileid: "122091929"
 |Portare in primo piano l'oggetto selezionato|**CTRL** + **MAIUSC** + **]**|
 |Portare avanti|**CTRL** + **]**|
 |Portare in secondo piano l'oggetto selezionato|**CTRL** + **MAIUSC** + **[**|
-|Portare indietro|**CTRL+FRECCIA DESTRA** + **[**|
+|Portare indietro|**CTRL** + **[**|
 |Creare un controllo utente dagli oggetti selezionati (WPF)|**F8**|
 |Vincolare le proporzioni degli oggetti|Tenere premuto **Maiusc** e trascinare l'oggetto|
 |Ruotare un oggetto in incrementi di 15-gradi|Tenere premuto **Maiusc** e ruotare l'oggetto|
-|Creare un tracciato di ritaglio|**CTRL+FRECCIA DESTRA** + **7**|
-|Rilasciare un tracciato di ritaglio|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **7**|
-|Creare un tracciato composto|**CTRL+FRECCIA DESTRA** + **8**|
-|Rilasciare un tracciato composto|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **8**|
-|Bloccare la selezione|**CTRL+FRECCIA DESTRA** + **L**|
-|Sbloccare tutti gli oggetti|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **L**|
-|Mostrare la selezione|**CTRL+FRECCIA DESTRA** + **T**|
-|Nascondere la selezione|**CTRL+FRECCIA DESTRA** + **3**|
-|Selezionare tutti gli oggetti|**CTRL+FRECCIA DESTRA** + **Oggetto**|
-|Annullare la selezione di tutti gli oggetti|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **Oggetto**|
+|Creare un tracciato di ritaglio|**CTRL** + **7**|
+|Rilasciare un tracciato di ritaglio|**CTRL** + **MAIUSC** + **7**|
+|Creare un tracciato composto|**CTRL** + **8**|
+|Rilasciare un tracciato composto|**CTRL** + **MAIUSC** + **8**|
+|Bloccare la selezione|**CTRL** + **L**|
+|Sbloccare tutti gli oggetti|**CTRL** + **MAIUSC** + **L**|
+|Mostrare la selezione|**CTRL** + **T**|
+|Nascondere la selezione|**CTRL** + **3**|
+|Selezionare tutti gli oggetti|**CTRL** + **Oggetto**|
+|Annullare la selezione di tutti gli oggetti|**CTRL** + **MAIUSC** + **Oggetto**|
 
 ## <a name="view-shortcuts"></a>Tasti di scelta rapida per le visualizzazioni
 
 |Per|Procedere nel modo seguente|
 |----------------|-------------|
 |Spostarsi tra le visualizzazioni **Progettazione**, **Codice** e **Doppia visualizzazione**|**F11**|
-|Ingrandire la tavola da disegno|**CTRL+FRECCIA DESTRA** + **Segno di uguale** ( **=** )|
-|Ridurre la visualizzazione della tavola da disegno|**CTRL+FRECCIA DESTRA** + **Segno meno** ( **-** )|
+|Ingrandire la tavola da disegno|**CTRL** + **Segno di uguale** ( **=** )|
+|Ridurre la visualizzazione della tavola da disegno|**CTRL** + **Segno meno** ( **-** )|
 |Eseguire uno zoom avanti o indietro della tavola da disegno|Ruotare la rotellina del mouse|
 |Spostare la tavola da disegno verso sinistra o destra|**Maiusc** e ruotare la rotellina del mouse|
 |Spostare la tavola da disegno verso l'alto o il basso|**Ctrl** e ruotare la rotellina del mouse|
-|Adattare la selezione alle dimensioni dello schermo|**CTRL+FRECCIA DESTRA** + **0**|
-|Visualizzare la tavola da disegno con le dimensioni effettive|**CTRL+FRECCIA DESTRA** + **1**|
+|Adattare la selezione alle dimensioni dello schermo|**CTRL** + **0**|
+|Visualizzare la tavola da disegno con le dimensioni effettive|**CTRL** + **1**|
 |Mostrare o nascondere i punti di controllo|**F9**|
-|Mostrare o nascondere i limiti degli oggetti|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **H**|
+|Mostrare o nascondere i limiti degli oggetti|**CTRL** + **MAIUSC** + **H**|
 |Spostarsi tra le visualizzazioni **Progettazione**, **XAML** e **Doppia visualizzazione**|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Tasti di scelta rapida per l'area di lavoro
 
 |Per|Procedere nel modo seguente|
 |----------------|-------------|
-|Spostarsi tra le aree di lavoro **Animazione** e **Progettazione**|**CTRL+FRECCIA DESTRA** + **F11**|
-|Visualizzare o nascondere il pannello **Asset**|**CTRL+FRECCIA DESTRA** + **Periodo**|
+|Spostarsi tra le aree di lavoro **Animazione** e **Progettazione**|**CTRL** + **F11**|
+|Visualizzare o nascondere il pannello **Asset**|**CTRL** + **Periodo**|
 |Visualizzare o nascondere il pannello **Risultati**|**F12**|
 |Mostrare o nascondere tutti i pannelli|**F4**|
-|Reimpostare il layout area di lavoro attiva|**CTRL+FRECCIA DESTRA** + **MAIUSC** + **R**|
+|Reimpostare il layout area di lavoro attiva|**CTRL** + **MAIUSC** + **R**|
 |Scorrere l'area di lavoro|Tenere premuta la **barra spaziatrice**|
 |Usare temporaneamente lo strumento **Seleziona** (mentre è selezionato un altro strumento)|Tenere premuto **CTRL**|

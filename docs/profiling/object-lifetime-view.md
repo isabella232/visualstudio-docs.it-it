@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8adebbbcbf3bbafab6d3b2a53ceae140bc085802
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126710186"
 ---
 # <a name="object-lifetime-view"></a>Visualizzazione Durata oggetti
 La visualizzazione Durata oggetti è disponibile quando è selezionata l'opzione Raccogliere anche i dati sulla durata degli oggetti **.NET** nelle **pagine delle proprietà Sessione** di prestazioni.

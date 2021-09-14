@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ebc75b92886ea4d6938a2dd517418a3fac41e8f4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143833"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126711646"
 ---
 # <a name="go-to-command"></a>Comando Vai a
 Sposta il cursore sulla riga specificata.
