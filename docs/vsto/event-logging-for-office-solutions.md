@@ -1,6 +1,6 @@
 ---
 title: Registrazione di eventi per Office soluzioni
-description: Informazioni su come usare il visualizzatore eventi in Windows per visualizzare i messaggi di eccezione acquisiti dal runtime Visual Studio Tools per Office runtime.
+description: Informazioni su come usare il visualizzatore eventi in Windows per visualizzare i messaggi di eccezione acquisiti dal runtime Visual Studio Tools per Office eventi.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 9dedf882fcd149c2eecc04d712df19af980b5c48
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634092"
 ---
 # <a name="event-logging-for-office-solutions"></a>Registrazione di eventi per Office soluzioni
   È possibile usare il Visualizzatore eventi di Windows per visualizzare i messaggi di eccezione acquisiti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quando si installano o disinstallano soluzioni Office. Questi messaggi del registratore eventi possono essere usati per risolvere i problemi di installazione e di distribuzione.
@@ -77,7 +77,7 @@ ms.locfileid: "122047088"
 
   Dopo la disinstallazione di una soluzione Office, i messaggi di eccezione rimangono nel registro eventi.
 
-  Per visualizzare o registrare messaggi di eccezione quando una soluzione Office è in esecuzione, vedere Eseguire il [debug di](../vsto/debugging-office-projects.md) Office progetti e Eseguire il debug [Office progetti](../vsto/debugging-office-projects.md).
+  Per visualizzare o registrare i messaggi di eccezione Office una soluzione di Office, vedere [Debug](../vsto/debugging-office-projects.md) di Office progetti e Debug Office [progetti](../vsto/debugging-office-projects.md).
 
 ### <a name="localization"></a>Localizzazione
  Il linguaggio del messaggio di eccezione viene determinato dal linguaggio di runtime di Visual Studio Tools per Office. Ad esempio, se nel computer dell'utente finale è installato il language pack giapponese, il messaggio di eccezione viene scritto nel registro eventi in giapponese.
@@ -101,4 +101,4 @@ ms.locfileid: "122047088"
 
 ## <a name="see-also"></a>Vedi anche
 - [Distribuire una soluzione Office distribuzione](../vsto/deploying-an-office-solution.md)
-- [Risolvere i problemi Office distribuzione della soluzione](../vsto/troubleshooting-office-solution-deployment.md)
+- [Risolvere i Office distribuzione della soluzione](../vsto/troubleshooting-office-solution-deployment.md)

@@ -12,19 +12,19 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: ea01858239cff0c189149598abf96fd5024ca2f1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053266"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632981"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
 
-È possibile usare il set di regole Microsoft Basic Design Guideline Rules per semplificare la comprensione e l'uso del codice. È necessario includere questo set di regole se il progetto include il codice della libreria o se si vogliono applicare procedure consigliate per il codice facile da gestire.
+È possibile usare il set di regole Microsoft Basic Design Guideline Rules per concentrarsi su come semplificare la comprensione e l'uso del codice. È consigliabile includere questo set di regole se il progetto include codice di libreria o se si vogliono applicare procedure consigliate per il codice facile da gestire.
 
-Le regole delle linee guida di progettazione di base includono tutte le regole nel set di regole [regole consigliate](managed-recommended-rules-rule-set-for-managed-code.md) gestite.
+Le regole delle linee guida di progettazione di base includono tutte le regole nel set [di regole gestite consigliate.](managed-recommended-rules-rule-set-for-managed-code.md)
 
-Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Basic Design Guideline Rules.
+Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Basic Design Guideline Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|

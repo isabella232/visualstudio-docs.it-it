@@ -1,7 +1,7 @@
 ---
 title: Set di regole base di correttezza per codice gestito
 ms.date: 11/04/2016
-description: Informazioni sul set di regole regole di correttezza di base in Visual Studio, incentrati sugli errori logici e sugli errori comuni dell'API del framework. Vedere le descrizioni delle regole.
+description: Informazioni sul set di regole di base delle regole di correttezza in Visual Studio, in particolare sugli errori logici e sugli errori comuni delle API del framework. Vedere le descrizioni delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
@@ -12,17 +12,17 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 02c7b660c6aba7f25e631a14146582f08c3d5117
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632982"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 
-Il set di regole Regole di correttezza di base si concentra sugli errori logici e sugli errori comuni nell'utilizzo delle API del framework. Le regole di correttezza di base includono le regole nel set [di regole regole consigliate](managed-recommended-rules-rule-set-for-managed-code.md) gestite.
+Il set di regole Basic Correctness Rules (Regole di correttezza di base) è in particolare in particolare sugli errori logici e sugli errori comuni nell'utilizzo delle API del framework. Le regole di correttezza di base includono le regole nel set [di regole gestite consigliate.](managed-recommended-rules-rule-set-for-managed-code.md)
 
-Nella tabella seguente vengono descritte tutte le regole nel set di regole Microsoft Basic Correctness Rules.
+Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Basic Correctness Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|

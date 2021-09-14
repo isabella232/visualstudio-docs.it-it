@@ -1,5 +1,5 @@
 ---
-title: Risolvere gli errori nelle Office soluzioni
+title: Risolvere gli errori nelle Office seguenti
 description: Informazioni su come risolvere gli errori che possono verificarsi durante lo sviluppo Microsoft Office soluzioni in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -24,13 +24,13 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: d5959df0d24db2807bead8331d04befb7f769ae8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099490"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633795"
 ---
-# <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle Office soluzioni
+# <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle Office seguenti
   Questi problemi possono verificarsi quando si eseguono le attività seguenti durante lo sviluppo di soluzioni Office in Visual Studio:
 
 - [Creare, aggiornare e aprire progetti](#creating)
@@ -46,7 +46,7 @@ ms.locfileid: "122099490"
 ## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Creare, aggiornare e aprire progetti
  Gli errori seguenti possono verificarsi quando si creano o si aprono progetti di Office.
 
-### <a name="the-project-cannot-be-created"></a>Non è possibile creare il progetto
+### <a name="the-project-cannot-be-created"></a>Impossibile creare il progetto
  Si è verificato un errore durante un tentativo di creare o aprire un progetto di Office, ma Visual Studio non dispone di informazioni sufficienti per determinare la causa. Provare a chiudere il progetto, uscire da Visual Studio e avviarlo di nuovo.
 
  Se si sta cercando di creare un progetto a livello di documento, è possibile che un altro documento con lo stesso nome di quello nel nuovo progetto sia già aperto in Excel o Word. Assicurarsi che tutte le altre istanze di Excel o Word siano chiuse.
@@ -54,7 +54,7 @@ ms.locfileid: "122099490"
 ### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>Le proprietà del controllo vengono perse quando si crea un nuovo progetto basato su un documento da un progetto esistente
  Se si crea un nuovo progetto di Office basato su un documento da un progetto esistente, le proprietà dei controlli presenti nel documento non vengono copiate nel nuovo progetto. È necessario reimpostare manualmente le proprietà per tutti i controlli preesistenti. In alternativa, è possibile mantenere le proprietà dei controlli creando una copia del progetto esistente anziché creare un nuovo progetto oppure caricando il progetto esistente nella nuova soluzione (nella finestra di progettazione) e copiando e incollando i controlli dal documento esistente al nuovo documento.
 
-### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Errori quando si crea un progetto Excel cartella di lavoro basata su una cartella di lavoro esistente
+### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Errori durante la creazione di un progetto Excel cartella di lavoro basata su una cartella di lavoro esistente
  Se si crea un nuovo progetto Excel cartella di lavoro basata su una cartella di lavoro esistente, è possibile che venga visualizzata una combinazione degli errori seguenti.
 
  Da Excel: "Avviso per la privacy: questo documento contiene macro, controlli ActiveX, informazioni del pacchetto di espansione XML o componenti Web. Potrebbero essere presenti informazioni personali che non possono essere rimosse tramite Controllo documento."
@@ -67,7 +67,7 @@ ms.locfileid: "122099490"
 
 2. In Excel aprire il Centro protezione.
 
-3. Nella scheda **Opzioni privacy deselezionare** la casella di controllo **Rimuovi informazioni personali dalle proprietà** del file al salvataggio .
+3. Nella scheda **Opzioni privacy** deselezionare la casella di controllo Rimuovi informazioni personali dalle proprietà **del file** al salvataggio.
 
 4. Salvare la cartella di lavoro e chiudere Excel.
 
@@ -82,7 +82,7 @@ ms.locfileid: "122099490"
 
  In alternativa, assicurarsi che i progetti migrati vengano aperti solo nei computer di sviluppo in cui è già installato Microsoft Office 2010.
 
-### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Errori nei progetti Office 2003 a livello di documento contenenti Windows form
+### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>Errori nei progetti a Office 2003 a livello di documento che contengono Windows Form
  Se si aggiorna un progetto Microsoft Office 2003 a livello di documento e il documento contiene controlli form Windows, il progetto aggiornato potrebbe avere errori di compilazione o di runtime. Per evitare questo problema, installare Visual Studio 2005 Tools per Office Second Edition Runtime nel computer di sviluppo prima di aggiornare il progetto. Questa versione del runtime è disponibile come pacchetto ridistribuibile dall'Area download Microsoft in [Microsoft Visual Studio 2005 Tools per Office Second Edition Runtime (VSTO 2005 SE) (x86)](https://www.microsoft.com/download/details.aspx?id=2392).
 
  Dopo aver completato l'aggiornamento del progetto, è possibile disinstallare Visual Studio 2005 Tools per Office Second Edition Runtime dal computer di sviluppo se non viene usato da altre soluzioni Office.
@@ -90,7 +90,7 @@ ms.locfileid: "122099490"
 ## <a name="use-the-designers"></a><a name="designers"></a> Usare le finestre di progettazione
  Gli errori seguenti possono verificarsi quando si lavora con la finestra di progettazione di documenti, cartelle di lavoro o fogli di lavoro nei progetti a livello di documento.
 
-### <a name="designer-failed-to-load-correctly"></a>La finestra di progettazione non è stata caricata correttamente
+### <a name="designer-failed-to-load-correctly"></a>Impossibile caricare correttamente la finestra di progettazione
  Visual Studio non può aprire la finestra di progettazione nei casi seguenti:
 
 - Excel o Word è già aperto ed è visualizzata una finestra di dialogo modale. Per aprire la finestra di progettazione, verificare se in Excel o in Word è aperta una finestra di dialogo modale e chiudere eventuali finestre di dialogo modali aperte. Se non ci sono finestre di dialogo modali aperte, potrebbe essere necessario eseguire altre azioni affinché Excel o Word risponda.
@@ -103,28 +103,28 @@ ms.locfileid: "122099490"
  Se si raggruppano i controlli in un documento o in un foglio di lavoro, Visual Studio non li riconosce più. I controlli raggruppati non sono accessibili nella **finestra** Proprietà e vengono visualizzati come rettangoli neri nel documento o nel foglio di lavoro. Per ripristinare le relative funzionalità, è necessario separare i controlli.
 
 ### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>I controlli in un modello di Word non sono visibili in Visual Studio
- Se si apre un modello di Word nella finestra di progettazione di Visual Studio, i controlli del modello che non sono in linea con il testo potrebbero non essere visibili. Questo perché Visual Studio i modelli di Word nella **visualizzazione** normale. Per visualizzare i controlli, fare **clic** sul menu Visualizza , scegliere **Microsoft Office Word View** e quindi fare clic su Layout di **stampa**.
+ Se si apre un modello di Word nella finestra di progettazione di Visual Studio, i controlli del modello che non sono in linea con il testo potrebbero non essere visibili. Questo perché Visual Studio i modelli di Word nella **visualizzazione** normale. Per visualizzare i controlli, fare **clic** sul menu Visualizza, scegliere **Microsoft Office Word View** e quindi fare clic su Layout di **stampa**.
 
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Il comando Inserisci ClipArt non esegue alcuna operazione nella finestra Visual Studio progettazione
- Quando Excel o Word è aperto nella finestra di progettazione di Visual Studio,  facendo clic sul pulsante **ClipArt** nella scheda Illustrazioni della barra multifunzione non viene aperto il riquadro **attività ClipArt.** Per aggiungere ClipArt, è necessario aprire la copia della cartella di lavoro o del documento che si trova nella cartella principale del progetto (non nella cartella *\bin)* all'esterno di Visual Studio, aggiungere la ClipArt e quindi salvare la cartella di lavoro o il documento.
+ Quando Excel o Word è aperto nella finestra di progettazione Visual Studio,  facendo clic sul pulsante **ClipArt** nella scheda Illustrazioni della barra multifunzione non viene aperto il riquadro attività **ClipArt.** Per aggiungere clipart, è necessario aprire la copia della cartella di lavoro o del documento presente nella cartella del progetto principale (non la copia presente nella cartella *\bin)* all'esterno di Visual Studio, aggiungere la ClipArt e quindi salvare la cartella di lavoro o il documento.
 
 ## <a name="write-code"></a><a name="code"></a> Scrivere codice
  Gli errori seguenti possono verificarsi quando si scrive codice nei progetti di Office.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alcuni eventi di Office oggetti non sono accessibili quando si usa C\#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alcuni eventi di oggetti Office non sono accessibili quando si usa C\#
  In alcuni casi, potrebbe venire visualizzato un errore del compilatore simile al seguente quando si tenta di accedere a un evento specifico di un'istanza di un tipo di assembly di interoperabilità primario di Office in un progetto Visual C#.
 
  "Ambiguità tra 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' e 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"
 
  Questo errore indica che si sta tentando di accedere a un evento che ha lo stesso nome di un'altra proprietà o un altro metodo dell'oggetto. Per accedere all'evento, è necessario eseguire il cast dell'oggetto alla relativa *interfaccia eventi*.
 
- I tipi di assembly di interoperabilità primari di Office che dispongono di eventi implementano due interfacce: un'interfaccia principale con tutte le proprietà e i metodi e un'interfaccia eventi che contiene gli eventi esposti dall'oggetto. Queste interfacce di evento usano la convenzione di *denominazione objectname* Events *n _Event,* ad esempio <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Se non è possibile accedere a un evento che si prevede di trovare in un oggetto, eseguire il cast dell'oggetto alla relativa interfaccia eventi.
+ I tipi di assembly di interoperabilità primari di Office che dispongono di eventi implementano due interfacce: un'interfaccia principale con tutte le proprietà e i metodi e un'interfaccia eventi che contiene gli eventi esposti dall'oggetto. Queste interfacce eventi usano la convenzione di denominazione *objectname* Events *n _Event,* ad esempio <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . Se non è possibile accedere a un evento che si prevede di trovare in un oggetto, eseguire il cast dell'oggetto alla relativa interfaccia eventi.
 
  Ad esempio, gli oggetti <xref:Microsoft.Office.Interop.Excel.Application> dispongono di un evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> e una proprietà <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Per gestire l'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>, eseguire il cast di <xref:Microsoft.Office.Interop.Excel.Application> all'interfaccia <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. L'esempio di codice seguente illustra come eseguire questa operazione in un progetto a livello di documento per Excel.
 
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs" id="Snippet1":::
 
- Per altre informazioni sulle interfacce evento negli assembly di interoperabilità Office, vedere Panoramica di classi e interfacce nel Office assembly di [interoperabilità primari.](/previous-versions/office/office-12//ms247299(v=office.12))
+ Per altre informazioni sulle interfacce eventi nelle Office, vedere Panoramica delle classi e delle interfacce negli Office assembly di [interoperabilità primari.](/previous-versions/office/office-12//ms247299(v=office.12))
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Non è possibile Office classi PIA nei progetti che hanno come destinazione [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] il codice che fa riferimento a una classe definita in un assembly di interoperabilità primario di Office non verrà compilato per impostazione predefinita. Le classi negli pias usano la convenzione di denominazione *objectname* Class, ad esempio <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Ad esempio, il codice seguente di un progetto di componente aggiuntivo VSTO di Word non verrà compilato.
@@ -141,7 +141,7 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
 
 - Visual Basic: "Il riferimento alla classe 'DocumentClass' non è consentito quando il relativo assembly è collegato usando la modalità No-PIA".
 
-- Visual C#: "Il tipo di interoperabilità 'Microsoft.Office.Interop.Word.DocumentClass' non può essere incorporato. Utilizzare l'interfaccia applicabile."
+- Visual C#: "Tipo di interoperabilità 'Microsoft. Office. Impossibile incorporare Interop.Word.DocumentClass'. Utilizzare l'interfaccia applicabile."
 
   Per risolvere l'errore, modificare il codice in modo che faccia riferimento all'interfaccia corrispondente. Ad esempio, anziché fare riferimento a un oggetto <xref:Microsoft.Office.Interop.Word.DocumentClass>, fare riferimento a un'istanza dell'interfaccia <xref:Microsoft.Office.Interop.Word.Document>.
 
@@ -153,10 +153,10 @@ Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument
 Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ```
 
- I progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] incorporano automaticamente per impostazione predefinita tutti i tipi di interoperabilità dagli assembly di interoperabilità primari di Office. Questo errore di compilazione si verifica perché la funzionalità dei tipi di interoperabilità incorporati funziona solo con le interfacce e non con le classi. Per altre informazioni sulle interfacce e le classi negli assembly di interoperabilità Office, vedere Panoramica di classi e interfacce nel Office assembly di [interoperabilità primari.](/previous-versions/office/office-12/ms247299(v=office.12)) Per altre informazioni sulla funzionalità dei tipi di interoperabilità incorporati nei Office, vedere Progettare e [creare Office di interoperabilità.](../vsto/designing-and-creating-office-solutions.md)
+ I progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] incorporano automaticamente per impostazione predefinita tutti i tipi di interoperabilità dagli assembly di interoperabilità primari di Office. Questo errore di compilazione si verifica perché la funzionalità dei tipi di interoperabilità incorporati funziona solo con le interfacce e non con le classi. Per altre informazioni sulle interfacce e sulle classi negli assembly di interoperabilità primari Office, vedere Panoramica delle classi e delle interfacce negli Office assembly di [interoperabilità primari.](/previous-versions/office/office-12/ms247299(v=office.12)) Per altre informazioni sulla funzionalità dei tipi di interoperabilità incorporati nei Office, vedere [Progettare](../vsto/designing-and-creating-office-solutions.md)e creare Office soluzioni .
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>I riferimenti Office classi non vengono riconosciuti
- Alcuni nomi di classe, ad esempio Application, sono in più spazi dei nomi, ad esempio <xref:Microsoft.Office.Interop.Word> e <xref:System.Windows.Forms> . Per questo motivo, **l'istruzione imports** using all'inizio dei modelli di progetto include una costante di qualifica abbreviata, /  ad esempio:
+ Alcuni nomi di classe, ad esempio Application, sono presenti in più spazi dei nomi, ad <xref:Microsoft.Office.Interop.Word> esempio e <xref:System.Windows.Forms> . Per questo motivo, **l'istruzione imports** using all'inizio dei modelli di progetto include una costante di qualifica abbreviata, /  ad esempio:
 
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet2":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet2":::
@@ -217,7 +217,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Se si fa **clic su Sì** o **No** nella finestra di dialogo, Visual Studio termina il Excel o il processo di Word e arresta il debugger. Per interrompere il debug del progetto senza visualizzare questa finestra di dialogo, uscire da Excel o Word direttamente anziché arrestare il debugger in Visual Studio.
 
 ## <a name="see-also"></a>Vedi anche
-- [Risolvere i problemi Office soluzioni](../vsto/troubleshooting-office-solutions.md)
+- [Risolvere i Office soluzioni](../vsto/troubleshooting-office-solutions.md)
 - [Risolvere i Office della soluzione](../vsto/troubleshooting-office-solution-security.md)
 - [Risolvere i problemi Office distribuzione della soluzione](../vsto/troubleshooting-office-solution-deployment.md)
 - [Visual Studio risoluzione dei problemi](/troubleshoot/visualstudio/welcome-visual-studio/)

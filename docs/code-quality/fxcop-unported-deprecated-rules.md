@@ -13,15 +13,15 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7804d8dc3baa9df631ae721ea3a2c89328293642
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045190"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632015"
 ---
 # <a name="deprecated-rules"></a>Regole deprecate
 
-Le regole di analisi legacy FxCop seguenti sono deprecate e non verranno implementate come analizzatori. Per altre informazioni, è possibile eseguire la ricerca in base all'ID regola (ad esempio, **CA1009)** nella pagina dei problemi GitHub [roslyn-analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Le regole di analisi legacy FxCop seguenti sono deprecate e non verranno implementate come analizzatori. Per altre informazioni, è possibile eseguire la ricerca in base all'ID regola ( ad **esempio, CA1009**) nella pagina [roslyn-analyzers GitHub issues](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1006](ca1006.md)
 - [CA1009](ca1009.md)

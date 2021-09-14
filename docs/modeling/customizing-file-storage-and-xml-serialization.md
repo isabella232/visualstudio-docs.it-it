@@ -15,11 +15,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: cf3f80c51866f278f4cf9a72876963d60ab17e4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061311"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634411"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizzare l'archiviazione dei file e la serializzazione XML
 
@@ -36,7 +36,7 @@ Quando l'utente salva un'istanza, o modello *,* di un linguaggio specifico di do
 
 Ogni modello viene in genere salvato in due file:
 
-- Il file di modello ha un nome, ad esempio **Model1.mydsl.** Archivia gli elementi del modello e le relazioni e le relative proprietà. L'estensione di file, ad esempio **mydsl,** è determinata dalla proprietà **FileExtension** del nodo **Editor** nella definizione DSL.
+- Il file di modello ha un nome, ad esempio **Model1.mydsl.** Archivia gli elementi e le relazioni del modello e le relative proprietà. L'estensione di file, ad esempio **mydsl,** è determinata dalla proprietà **FileExtension** del nodo **Editor** nella definizione DSL.
 
 - Il file di diagramma ha un nome, ad esempio **Model1.mydsl.diagram.** Archivia le forme, i connettori e le relative posizioni, colori, spessori di linea e altri dettagli dell'aspetto del diagramma. Se l'utente elimina un file **con estensione diagram,** le informazioni essenziali nel modello non vengono perse. Viene perso solo il layout del diagramma. Quando il file di modello viene aperto, verrà creato un set predefinito di forme e connettori.
 
@@ -44,7 +44,7 @@ Ogni modello viene in genere salvato in due file:
 
 1. Aprire la definizione DSL. In Esplora DSL fare clic sul nodo Editor.
 
-2. Nel Finestra Proprietà modificare la **proprietà FileExtension.** Non includere l'iniziale "." dell'estensione di file.
+2. Nella finestra Finestra Proprietà modificare la **proprietà FileExtension.** Non includere l'iniziale "." dell'estensione di file.
 
 3. In Esplora soluzioni modificare il nome dei due file modello di elemento in **DslPackage\ProjectItemTemplates**. Questi file hanno nomi che seguono questo formato:
 
@@ -56,7 +56,7 @@ Ogni modello viene in genere salvato in due file:
 
 Per creare un esempio per questo argomento, è stata usata la definizione DSL seguente.
 
-![Diagramma di definizione DSL &#45; albero genealogico](../modeling/media/familyt_person.png)
+![Diagramma delle definizioni DSL &#45; albero genealogico](../modeling/media/familyt_person.png)
 
 Questo DSL è stato usato per creare un modello con l'aspetto seguente sullo schermo.
 
@@ -104,7 +104,7 @@ Si notino i punti seguenti sul modello serializzato:
 
 I moniker vengono usati per rappresentare i riferimenti incrociati tra le diverse parti del modello e i file di diagramma. Vengono inoltre usati nel `.diagram` file per fare riferimento ai nodi nel file di modello. Esistono due forme di moniker:
 
-- *I moniker ID* virgolette il GUID dell'elemento di destinazione. Esempio:
+- *I moniker ID* virgolette il GUID dell'elemento di destinazione. Ad esempio:
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -112,7 +112,7 @@ I moniker vengono usati per rappresentare i riferimenti incrociati tra le divers
 
 - *I moniker di chiave qualificati* identificano l'elemento di destinazione in base al valore di una proprietà di dominio designata denominata chiave moniker. Il moniker dell'elemento di destinazione è preceduto dal moniker dell'elemento padre nell'albero delle relazioni di incorporamento.
 
-     Gli esempi seguenti sono presi da un DSL in cui è presente una classe di dominio denominata Album, che ha una relazione di incorporamento con una classe di dominio denominata Song:
+     Gli esempi seguenti sono tratto da un DSL in cui è presente una classe di dominio denominata Album, che ha una relazione di incorporamento con una classe di dominio denominata Song:
 
     ```xml
     <albumMoniker title="/My Favorites/Jazz after Teatime" />
@@ -161,15 +161,15 @@ Se si usano moniker di chiave qualificati, è possibile che due elementi nel mod
 
 Esistono diversi metodi che consentono di evitare questa situazione:
 
-- Impostare **è il nome dell'elemento** per la proprietà del dominio della  =  `true` chiave. Selezionare la proprietà domain nel diagramma di definizione DSL e quindi impostare il valore nel Finestra Proprietà.
+- Impostare **è il nome dell'elemento** per la proprietà del dominio  =  `true` chiave. Selezionare la proprietà domain nel diagramma di definizione DSL e quindi impostare il valore nel Finestra Proprietà.
 
      Quando l'utente crea una nuova istanza della classe , questo valore determina l'assegnazione automatica di un valore diverso alla proprietà di dominio. Il comportamento predefinito aggiunge un numero alla fine del nome della classe. Ciò non impedisce all'utente di modificare il nome in un duplicato, ma è utile nel caso in cui l'utente non imposta il valore prima di salvare il modello.
 
 - Abilitare la convalida per il DSL. In Esplora DSL selezionare Editor\Convalida e impostare le proprietà **Usa** su `true` .
 
-     Esiste un metodo di convalida generato automaticamente che verifica la presenza di ambiguità. Il metodo si trova nella `Load` categoria di convalida. In questo modo si garantisce che l'utente venga avvisato che potrebbe non essere possibile aprire nuovamente il file.
+     Esiste un metodo di convalida generato automaticamente che verifica la presenza di ambiguità. Il metodo si trova nella `Load` categoria di convalida. Ciò garantisce che l'utente venga avvisato che potrebbe non essere possibile aprire nuovamente il file.
 
-     Per altre informazioni, vedere [Convalida in un linguaggio Domain-Specific.](../modeling/validation-in-a-domain-specific-language.md)
+     Per altre informazioni, vedere [Convalida in un Domain-Specific linguaggio .](../modeling/validation-in-a-domain-specific-language.md)
 
 ### <a name="moniker-paths-and-qualifiers"></a>Percorsi e qualificatori moniker
 
@@ -276,7 +276,7 @@ Questi elementi sono disponibili in Esplora DSL in **Comportamento di serializza
 |Classe di dominio|Classe di dominio a cui si applica questo nodo dati della classe. Di sola lettura.|
 |Nome dell'elemento|Nome del nodo XML per gli elementi di questa classe. Il valore predefinito è una versione in lettere minuscole del nome della classe di dominio.|
 |Nome attributo moniker|Nome dell'attributo utilizzato negli elementi del moniker per contenere il riferimento. Se vuoto, viene utilizzato il nome o l'ID della proprietà chiave.<br /><br /> In questo esempio è "name":  `<personMoniker name="/Mike Nash"/>`|
-|Nome dell'elemento Moniker|Nome dell'elemento xml utilizzato per i moniker che fanno riferimento agli elementi di questa classe.<br /><br /> Il valore predefinito è una versione minuscola del nome della classe con suffisso "Moniker". Ad esempio, `personMoniker`.|
+|Nome dell'elemento Moniker|Nome dell'elemento xml utilizzato per i moniker che fanno riferimento agli elementi di questa classe.<br /><br /> Il valore predefinito è una versione minuscola del nome della classe con suffisso "Moniker". Ad esempio: `personMoniker`.|
 |Nome del tipo di moniker|Nome del tipo XSD generato per i moniker a elementi di questa classe. Lo schema XSD si trova in **Dsl\Generated Code \\ \* Schema.xsd**|
 |Serialize Id|Se True, il GUID dell'elemento viene incluso nel file. Deve essere true se non è presente alcuna proprietà contrassegnata come **Is Moniker Key** e il DSL definisce relazioni di riferimento a questa classe.|
 |Nome tipo|Nome del tipo XML generato in XSD dalla classe di dominio designata.|
@@ -305,7 +305,7 @@ I nodi dati del ruolo si trovano nei nodi della classe di origine.
 |Relazione di dominio|Specifica la relazione a cui si applicano queste opzioni. Di sola lettura.|
 |Elemento Omit|Se true, il nodo XML che corrisponde al ruolo di origine viene omesso dallo schema.<br /><br /> Se è presente più di una relazione tra le classi di origine e di destinazione, questo nodo del ruolo distingue tra i collegamenti che appartengono alle due relazioni. È pertanto consigliabile non impostare questa opzione in questo caso.|
 |Nome dell'elemento Role|Specifica il nome dell'elemento XML derivato dal ruolo di origine. Il valore predefinito è il nome della proprietà del ruolo.|
-|Usa modulo completo|Se true, ogni elemento o moniker di destinazione è racchiuso in un nodo XML che rappresenta la relazione. Deve essere impostato su true se la relazione ha proprietà di dominio proprie.|
+|Usare il modulo completo|Se true, ogni elemento o moniker di destinazione è racchiuso in un nodo XML che rappresenta la relazione. Deve essere impostato su true se la relazione ha proprietà di dominio proprie.|
 
 ## <a name="see-also"></a>Vedi anche
 

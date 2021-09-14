@@ -16,18 +16,18 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 664d24c2732ee2c63475ac986fa9bbab78831493
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114186"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632052"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Configurare l'analisi del codice in tempo reale per .NET
 
-Visual Studio esegue una serie di analisi del codice in tempo reale, definite anche analisi in *background,* durante la modifica dei file di origine nell'editor. In parte è necessaria un'analisi minima per un'esperienza di modifica dell Visual Studio IDE accettabile. Alcuni di questi sono utili per migliorare la velocità di risposta per le funzionalità dell'IDE. Anche se in parte è necessario abilitare funzionalità IDE aggiuntive, ad esempio la diagnostica e le correzioni del codice dagli analizzatori Roslyn. In base alla funzionalità, queste analisi possono essere raggruppate nel modo seguente:
+Visual Studio esegue una serie di analisi del codice in tempo reale, definite anche analisi in *background,* durante la modifica dei file di origine nell'editor. In parte è necessaria un'analisi minima per un'esperienza di modifica Visual Studio IDE accettabile. Alcuni di questi sono utili per migliorare la velocità di risposta per le funzionalità dell'IDE. Anche se in parte è necessario abilitare funzionalità IDE aggiuntive, ad esempio la diagnostica e le correzioni del codice dagli analizzatori Roslyn. In base alla funzionalità, queste analisi possono essere raggruppate nel modo seguente:
 
 - **Calcolo in background della diagnostica:** analisi per calcolare errori, avvisi e suggerimenti nei file di origine. Queste informazioni di diagnostica vengono mostrate come voci nell'elenco degli errori e con una disarticola nell'editor. Possono essere classificati in due categorie:
-  - Diagnostica del compilatore C# Visual Basic compilazione
+  - Diagnostica del compilatore Visual Basic C# e C#
   - Diagnostica dell'analizzatore Roslyn, che include:
 
     - Analizzatori IDE predefiniti per i suggerimenti di stile del codice
@@ -42,11 +42,11 @@ Visual Studio esegue una serie di analisi del codice in tempo reale, definite an
 
 ## <a name="default-analysis-scope"></a>Ambito di analisi predefinito
 
-Per impostazione predefinita, l'analisi del codice in tempo reale per il calcolo in background della diagnostica viene eseguita per tutti i file aperti _in_ Visual Studio. Alcune delle _altre analisi in background indicate_ in precedenza vengono eseguite per tutti i progetti che hanno almeno un file aperto. Mentre alcune analisi in background vengono eseguite per l'intera soluzione.
+Per impostazione predefinita, l'analisi del codice in tempo reale per il calcolo in background della diagnostica viene eseguita per tutti i file _aperti_ in Visual Studio. Alcune delle _altre analisi in background indicate_ in precedenza vengono eseguite per tutti i progetti che hanno almeno un file aperto. Mentre alcune analisi in background vengono eseguite per l'intera soluzione.
 
 ## <a name="custom-analysis-scope"></a>Ambito di analisi personalizzato
 
-L'ambito predefinito di ogni analisi in background è stato ottimizzato per l'esperienza utente, le funzionalità e le prestazioni ottimali per la maggior parte degli scenari e delle soluzioni dei clienti. In alcuni casi, tuttavia, i clienti possono scegliere di personalizzare questo ambito per ridurre o aumentare l'analisi in background. Esempio:
+L'ambito predefinito di ogni analisi in background è stato ottimizzato per l'esperienza utente, le funzionalità e le prestazioni ottimali per la maggior parte degli scenari e delle soluzioni dei clienti. In alcuni casi, tuttavia, i clienti possono scegliere di personalizzare questo ambito per ridurre o aumentare l'analisi in background. Ad esempio:
 
 - Modalità risparmio energia: se gli utenti sono in esecuzione a batteria del portatile, è possibile che vogliano ridurre al minimo il consumo di energia per una durata maggiore della batteria. In questo scenario è necessario ridurre al minimo l'analisi in background.
 - Analisi del codice su richiesta: se gli utenti preferiscono disattivare l'esecuzione dell'analizzatore in tempo reale ed eseguire manualmente l'analisi del codice su richiesta, è preferibile ridurre al minimo l'analisi in background. Vedere [Procedura: Eseguire manualmente l'analisi del codice su richiesta.](./how-to-run-code-analysis-manually-for-managed-code.md)
@@ -60,7 +60,7 @@ A partire da Visual Studio 2019 versione 16.5, gli utenti possono personalizzare
 
 È possibile scegliere uno degli ambiti di analisi personalizzati precedenti nella finestra di dialogo Opzioni strumenti seguendo questa procedura:
 
-1. Per aprire la **finestra di** dialogo Opzioni, sulla barra dei menu in Visual Studio **Strumenti**  >  **Opzioni**.
+1. Per aprire la **finestra di** dialogo Opzioni, sulla barra dei menu in Visual Studio **strumenti**  >  **Opzioni**.
 
 2. Nella finestra **di dialogo** Opzioni scegliere Editor **di testo**  >  **C#** o Avanzate **di**  >  **base.**
 

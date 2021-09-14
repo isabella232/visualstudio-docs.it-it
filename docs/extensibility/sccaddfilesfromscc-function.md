@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c8d8715f18d68c6e8f3250f25e14a45da48ab8cd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144704"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634523"
 ---
 # <a name="sccaddfilesfromscc-function"></a>Funzione SccAddFilesFromSCC
 Questa funzione aggiunge un elenco di file dal controllo del codice sorgente al progetto attualmente aperto.
@@ -55,11 +55,11 @@ SCCRTN SccAddFilesFromSCC(
 
  lpAuxProjPath
 
-[in, out] Stringa ausiliaria che identifica il progetto (fino a `SCC_PRJPATH_` SIZE, incluso il carattere di terminazione Null).
+[in, out] Stringa ausiliaria che identifica il progetto (fino a `SCC_PRJPATH_` SIZE, incluso il terminatore Null).
 
  cFiles
 
-[in] Numero di file specificato da `lpFilePaths` .
+[in] Numero di file dati da `lpFilePaths` .
 
  lpFilePaths
 
@@ -75,10 +75,10 @@ SCCRTN SccAddFilesFromSCC(
 
  pbResults
 
-[in, out] Matrice di flag impostati per indicare l'esito positivo (diverso da zero o TRUE) o negativo (zero o FALSE) per ogni file (le dimensioni della matrice devono essere almeno `cFiles` lunghe).
+[in, out] Matrice di flag impostati per indicare l'esito positivo (diverso da zero o TRUE) o l'esito negativo (zero o FALSE) per ogni file (le dimensioni della matrice devono essere almeno `cFiles` lunghe).
 
 ## <a name="return-value"></a>Valore restituito
- L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei valori seguenti:
+ È previsto che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituirà uno dei valori seguenti:
 
 |Valore|Descrizione|
 |-----------|-----------------|

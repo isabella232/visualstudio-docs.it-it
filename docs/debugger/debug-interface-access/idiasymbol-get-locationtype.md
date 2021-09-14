@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: fec2412b7b8801f1197bc53963b5166cb2cc950f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628026"
 ---
 # <a name="idiasymbolget_locationtype"></a>IDiaSymbol::get_locationType
 Recupera il tipo di posizione di un simbolo di dati.

@@ -1,6 +1,6 @@
 ---
 title: Aggiungere applicazione Azure Insights usando Servizi connessi | Microsoft Docs
-description: Aggiungere applicazione Azure Insights'app usando il Visual Studio per aggiungere un servizio connesso
+description: Aggiungere applicazione Azure Insights all'app usando il Visual Studio per aggiungere un servizio connesso
 author: AngelosP
 manager: jmartens
 ms.technology: vs-azure
@@ -10,11 +10,11 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: dc5bb07ef70ee5082fded77725205c1d29174ed4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633299"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Aggiungere applicazione Azure Insights usando Visual Studio Servizi connessi
 
@@ -26,7 +26,7 @@ Con Visual Studio, è possibile connettere uno degli elementi seguenti a applica
 - .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App universal Windows platform
+- App universal Windows Platform
 - Xamarin
 - Cordova
 

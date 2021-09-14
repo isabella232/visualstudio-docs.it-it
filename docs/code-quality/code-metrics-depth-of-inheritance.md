@@ -10,11 +10,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: c08a35a622eeb30a51b4dea2ab4914b0105b01cd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632064"
 ---
 # <a name="code-metrics---depth-of-inheritance-dit"></a>Metriche del codice - Profondità dell'ereditarietà (DIT)
 
@@ -38,7 +38,7 @@ La profondità dell'ereditarietà è basata su tre presupposti [fondamentali:](#
 
 3. Le classi più profonde nell'albero hanno un potenziale maggiore per il riutilizzo dei metodi ereditati.
 
-I presupposti 1 e 2 indicano che avere un numero più alto per la profondità non è valido. Se è il punto in cui è terminata, si sarebbe in buona forma; Tuttavia, il presupposto 3 indica che un numero più elevato per la profondità è valido per il potenziale riutilizzo del codice.
+I presupposti 1 e 2 indicano che avere un numero più elevato per la profondità non è valido. Se è il punto in cui è terminata, si sarebbe in buona forma; Tuttavia, il presupposto 3 indica che un numero più elevato per la profondità è valido per il potenziale riutilizzo del codice.
 
 ## <a name="analysis"></a>Analisi
 
@@ -54,7 +54,7 @@ Ecco come si legge la metrica di profondità:
 
 ## <a name="code-analysis"></a>Analisi codice
 
-L'analisi del codice include una categoria di regole di manutenibilità. Per altre informazioni, vedere [Regole di manutenibilità](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings). Quando si usa l'analisi del codice legacy, il set di regole Linee guida per la progettazione estesa contiene un'area di manutenibilità:
+L'analisi del codice include una categoria di regole di manutenibilità. Per altre informazioni, vedere [Regole di manutenibilità](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings). Quando si usa l'analisi del codice legacy, il set di regole Extended Design Guideline contiene un'area di manutenibilità:
 
 ![Set di regole delle linee guida per la progettazione dell'ereditarietà](media/depth-of-inheritance-design-guidelines.png)
 
@@ -66,7 +66,7 @@ Questa regola elava un avviso quando la profondità dell'ereditarietà raggiunge
 
 ## <a name="putting-it-all-together"></a>Mettere tutto insieme
 
-I valori elevati per DIT significano che anche il potenziale di errori è elevato, i valori bassi riducono il potenziale di errori. I valori elevati per DIT indicano un maggiore potenziale di riutilizzo del codice tramite ereditarietà, i valori bassi suggeriscono meno riutilizzo del codice anche se l'ereditarietà da sfruttare. A causa della mancanza di dati sufficienti, non esiste uno standard attualmente accettato per i valori DIT. Anche gli studi effettuati di recente non hanno trovato dati sufficienti per determinare un numero valido che potrebbe essere usato come numero standard per questa metrica [Shatnawi.](#shatnawi) Anche se non esistono prove empiriche per supportarlo, diverse risorse suggeriscono che un DIT di circa 5 o 6 dovrebbe essere un limite massimo. Ad esempio, vedere [http://www.devx.com/architect/Article/45611](http://www.devx.com/architect/Article/45611) .
+I valori elevati per DIT significano che anche il potenziale di errori è elevato, i valori bassi riducono il potenziale di errori. I valori elevati per DIT indicano un maggiore potenziale di riutilizzo del codice tramite ereditarietà, i valori bassi suggeriscono meno riutilizzo del codice anche se l'ereditarietà da sfruttare. A causa della mancanza di dati sufficienti, non esiste uno standard attualmente accettato per i valori DIT. Anche gli studi effettuati di recente non hanno trovato dati sufficienti per determinare un numero valido che potrebbe essere usato come numero standard per questa metrica [Shatnawi.](#shatnawi) Anche se non esistono evidenze empiriche per supportarlo, diverse risorse suggeriscono che un DIT di circa 5 o 6 dovrebbe essere un limite massimo. Ad esempio, vedere [http://www.devx.com/architect/Article/45611](http://www.devx.com/architect/Article/45611) .
 
 ## <a name="citations"></a>Citazioni
 

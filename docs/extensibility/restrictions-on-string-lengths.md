@@ -1,6 +1,6 @@
 ---
 title: Restrizioni sulle lunghezze delle stringhe | Microsoft Docs
-description: Informazioni sui limiti relativi alla lunghezza delle stringhe usate dalle varie funzioni imposte dall'API plug-in del controllo del codice sorgente.
+description: Informazioni sui limiti sulle lunghezze delle stringhe usate dalle varie funzioni imposte dall'API plug-in del controllo del codice sorgente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5322ff52097a55994cec569597841202677d7dfd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634539"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrizioni sulle lunghezze delle stringhe
 L'API plug-in del controllo del codice sorgente limita la lunghezza delle stringhe usate in varie funzioni.
@@ -33,7 +33,7 @@ L'API plug-in del controllo del codice sorgente limita la lunghezza delle string
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
-> La lunghezza non include l'oggetto di `null` terminazione. Altre costanti con suffisso "_SIZE" anziché "_LEN" includono spazio per l'oggetto di `null` terminazione.
+> La lunghezza non include la terminazione `null` di . Altre costanti con un suffisso "_SIZE" anziché "_LEN" includono lo spazio per la terminazione `null` di .
 
 |Costante|Valore|
 |--------------|-----------|

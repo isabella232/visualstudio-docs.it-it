@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: aeaa6bf6230833a350fb2fe8d55178d6c838a5f1d014a5dcdbe959daf6d01838
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121364153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633148"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debug di un servizio cloud o di una macchina virtuale di Azure in Visual Studio
 
@@ -23,11 +23,11 @@ Visual Studio offre diverse opzioni per il debug dei servizi cloud e delle macch
 
 È possibile risparmiare tempo e denaro usando il Calcolo di Azure Emulator per eseguire il debug del servizio cloud in un computer locale. Eseguendo il debug di un servizio in locale prima della distribuzione, è possibile migliorare l'affidabilità e le prestazioni senza pagare per il tempo di calcolo. Tuttavia, potrebbero verificarsi alcuni errori solo quando si esegue un servizio cloud in Azure stesso. È possibile eseguire il debug di questi errori se si abilita il debug remoto quando si pubblica il servizio e poi si collega il debugger a un'istanza del ruolo.
 
-L'emulatore simula il servizio di calcolo di Azure e viene eseguito nell'ambiente locale in modo da poter testare ed eseguire il debug del servizio cloud prima della distribuzione. L'emulatore gestisce il ciclo di vita delle istanze del ruolo e fornisce l'accesso alle risorse simulate, ad esempio l'archiviazione locale. Durante il debug o l’esecuzione del servizio da Visual Studio, esso avvia automaticamente l’emulatore come applicazione in background e il servizio viene distribuito all'emulatore. È possibile usare l'emulatore per visualizzare il servizio quando è in esecuzione nell'ambiente locale. È possibile eseguire la versione completa o la versione express dell'emulatore. A partire da Azure 2.3, la versione rapida dell'emulatore è l'impostazione predefinita. Vedere [Uso di Emulator Express per l'esecuzione e il debug di un servizio cloud in locale.](vs-azure-tools-emulator-express-debug-run.md)
+L'emulatore simula il servizio di calcolo di Azure e viene eseguito nell'ambiente locale in modo da poter testare ed eseguire il debug del servizio cloud prima della distribuzione. L'emulatore gestisce il ciclo di vita delle istanze del ruolo e fornisce l'accesso alle risorse simulate, ad esempio l'archiviazione locale. Durante il debug o l’esecuzione del servizio da Visual Studio, esso avvia automaticamente l’emulatore come applicazione in background e il servizio viene distribuito all'emulatore. È possibile usare l'emulatore per visualizzare il servizio quando è in esecuzione nell'ambiente locale. È possibile eseguire la versione completa o la versione express dell'emulatore. A partire da Azure 2.3, la versione rapida dell'emulatore è l'impostazione predefinita. Vedere [Uso di Emulator Express per eseguire ed eseguire il debug di un servizio cloud in locale.](vs-azure-tools-emulator-express-debug-run.md)
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>Per eseguire il debug del servizio cloud nel computer locale
 
-1. Nella barra dei menu selezionare **Debug**  >  **Avvia debug per** eseguire il progetto di servizio cloud di Azure. In alternativa, è possibile premere F5. Verrà visualizzato un messaggio che indica l'avvio dell'emulatore di calcolo. Quando l'emulatore viene avviato, l'icona della barra delle applicazioni conferma l'operazione.
+1. Sulla barra dei menu selezionare **Debug**  >  **Avvia debug** per eseguire il progetto di servizio cloud di Azure. In alternativa, è possibile premere F5. Verrà visualizzato un messaggio che indica l'avvio dell'emulatore di calcolo. Quando l'emulatore viene avviato, l'icona della barra delle applicazioni conferma l'operazione.
 
     ![Emulatore di Azure nella barra delle applicazioni](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -35,7 +35,7 @@ L'emulatore simula il servizio di calcolo di Azure e viene eseguito nell'ambient
 
     Il riquadro sinistro dell'interfaccia utente mostra i servizi attualmente distribuiti nell'emulatore di calcolo e le istanze del ruolo in esecuzione in ogni servizio. È possibile scegliere il servizio o i ruoli per visualizzare le informazioni di diagnostica, registrazione e ciclo di vita nel riquadro di destra. Se si seleziona il margine superiore di una finestra inclusa, essa si espande per riempire il riquadro destro.
 
-3. Scorrere l'applicazione scegliendo i comandi dal menu Debug e **impostando** i punti di interruzione nel codice. Mentre si esegue l'applicazione un'istruzione alla volta nel debugger, i riquadri vengono aggiornati con lo stato corrente dell'applicazione. Quando si arresta il debug, la distribuzione dell'applicazione viene eliminata. Se l'applicazione include un ruolo Web e la proprietà dell'azione di avvio è stata impostata per l'avvio del Web browser, Visual Studio avvia l'applicazione Web nel browser. Se si modifica il numero di istanze di un ruolo nella configurazione del servizio, è necessario arrestare il servizio cloud e quindi riavviare il debug perché sia possibile eseguire il debug delle nuove istanze del ruolo.
+3. Eseguire l'applicazione scegliendo i comandi dal menu **Debug** e impostando punti di interruzione nel codice. Mentre si esegue l'applicazione un'istruzione alla volta nel debugger, i riquadri vengono aggiornati con lo stato corrente dell'applicazione. Quando si arresta il debug, la distribuzione dell'applicazione viene eliminata. Se l'applicazione include un ruolo Web e la proprietà dell'azione di avvio è stata impostata per l'avvio del Web browser, Visual Studio avvia l'applicazione Web nel browser. Se si modifica il numero di istanze di un ruolo nella configurazione del servizio, è necessario arrestare il servizio cloud e quindi riavviare il debug perché sia possibile eseguire il debug delle nuove istanze del ruolo.
 
     > [!NOTE]
     > quando si arresta l'esecuzione o il debug del servizio, l'emulatore di calcolo locale e l'emulatore di archiviazione non vengono arrestati. È necessario arrestarli in modo esplicito dall'area di notifica.
@@ -77,7 +77,7 @@ Se si abilita il debug remoto per un servizio cloud, esso non produce una riduzi
 
     ![Finestra di dialogo Seleziona tipo di codice](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Per identificare i processi a cui è collegato il debugger, sulla barra dei menu selezionare Debug   >  **Windows**  >  **Processie** aprire la **finestra di dialogo** Processi . (Tastiera: CTRL+ALT+Z) Per disconnettere un processo specifico, aprire il menu di scelta rapida e quindi selezionare **Disconnetti processo**. In alternativa, individuare il nodo dell'istanza in Esplora server, individuare il processo, aprire il relativo menu di scelta rapida e quindi selezionare **Disconnetti processo**.
+4. Per identificare i processi a cui è collegato il debugger, sulla barra dei menu selezionare Debug Windows processi e aprire la  >    >  finestra **di dialogo** Processi . (Tastiera: CTRL+ALT+Z) Per disconnettere un processo specifico, aprire il menu di scelta rapida e quindi selezionare **Disconnetti processo**. In alternativa, individuare il nodo dell'istanza in Esplora server, individuare il processo, aprire il relativo menu di scelta rapida e quindi selezionare **Disconnetti processo**.
 
     ![Debug di processi](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -126,7 +126,7 @@ Da Azure SDK 2.3, il debug remoto presenta le limitazioni seguenti:
 
     ![Finestra di dialogo Seleziona tipo di codice](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Scegliere i processi di cui si vuole eseguire il debug nella macchina virtuale e quindi selezionare **Collega.** Ad esempio, è possibile scegliere il processo w3wp.exe se si desidera eseguire il debug di un'applicazione Web nella macchina virtuale. Per altre informazioni, vedere [Debug di uno o più processi in Visual Studio](../debugger/debug-multiple-processes.md) e [Architettura del ruolo di Azure](/archive/blogs/kwill/windows-azure-role-architecture).
+5. Scegliere i processi di cui si vuole eseguire il debug nella macchina virtuale e quindi selezionare **Collega**. Ad esempio, è possibile scegliere il processo w3wp.exe se si desidera eseguire il debug di un'applicazione Web nella macchina virtuale. Per altre informazioni, vedere [Debug di uno o più processi in Visual Studio](../debugger/debug-multiple-processes.md) e [Architettura del ruolo di Azure](/archive/blogs/kwill/windows-azure-role-architecture).
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Creare un progetto Web e una macchina virtuale per il debug
 
@@ -153,7 +153,7 @@ I progetti ASP.NET di Visual Studio offrono un'opzione per creare una macchina v
 
     ![Finestra di dialogo Crea macchina virtuale di Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746724.png)
 
-    Azure crea la macchina virtuale e quindi effettua il provisioning e la configurazione degli endpoint, ad esempio Desktop remoto e Distribuzione Web.
+    Azure crea la macchina virtuale e quindi effettua il provisioning e configura gli endpoint, ad esempio Desktop remoto e Distribuzione Web.
 
 4. Dopo aver configurato completamente la macchina virtuale, selezionare il relativo nodo in Esplora server.
 

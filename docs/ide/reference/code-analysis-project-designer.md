@@ -1,6 +1,6 @@
 ---
 title: Analisi del codice, Progettazione progetti
-description: Informazioni sul Code Analysis, Project Designer e su come contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice.
+description: Informazioni sul Code Analysis, Project e su come contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ec311a051133ae2c01734f767caa77810860518
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634443"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 

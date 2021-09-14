@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: e82150e613235bca066d80a99ba975c7556d4466
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122087301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634660"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfacce del fornitore di porte necessarie
 Un fornitore di porte deve implementare [l'interfaccia IDebugPortSupplier2.](../../extensibility/debugger/reference/idebugportsupplier2.md) [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -81,7 +81,7 @@ Un fornitore di porte deve implementare [l'interfaccia IDebugPortSupplier2.](../
 
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
 
-  Consente al modello SDM di connettersi a questo programma.
+  Consente a SDM di connettersi a questo programma.
 
 ## <a name="see-also"></a>Vedi anche
 - [Implementazione di un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)

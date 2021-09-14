@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 ms.openlocfilehash: b6b1bf99c7961c2ca8a9d162e2de173a9dd0a41c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627965"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Avvio rapido: eseguire il debug con C# o Visual Basic usando il debugger di Visual Studio
 
@@ -172,7 +172,7 @@ I comandi della tastiera comuni usati per eseguire il codice sono **F10** e **F1
 
     Il suggerimento dati mostra il valore corrente della `c1` variabile e consente di esaminarne le proprietà. Se viene visualizzato un valore non previsto durante il debug, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.
 
-2. Espandere il suggerimento dati per esaminare i valori correnti delle proprietà `c1` dell'oggetto .
+2. Espandere il suggerimento dati per esaminare i valori correnti delle proprietà `c1` dell'oggetto.
 
 3. Se si vuole aggiungere la descrizione comando dati in modo da poter continuare a visualizzare il valore di durante l'esecuzione del `c1` codice, fare clic sull'icona a forma di puntina piccola. È possibile spostare il suggerimento dati aggiunto in una posizione comoda.
 

@@ -13,11 +13,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: dba46c3b111f82bdb6e03eca5442b2f497e8ad3e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634243"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procedura: Generare unit test tramite IntelliTest
 
@@ -63,7 +63,7 @@ Per i test che vengono superati verificare che i risultati indicati nella colonn
 
      ![Selezionare i test, fare clic con il pulsante destro del mouse e scegliere Salva](../test/media/savepextests.png)
 
-     È possibile visualizzare il progetto di test e il unit test con parametri creato. I singoli unit test, corrispondenti a ognuna delle righe, vengono salvati nel file con estensione *g.cs* nel progetto di test e un unit test con parametri viene salvato nel file con estensione *cs* corrispondente. È possibile eseguire gli unit test e visualizzare i risultati da Esplora test come se si trattasse di unit test creati manualmente.
+     È possibile visualizzare il progetto di test e il unit test con parametri creato. I singoli unit test, corrispondenti a ognuna delle righe, vengono salvati nel file con estensione *g.cs* nel progetto di test e un unit test con parametri viene salvato nel file *con estensione cs* corrispondente. È possibile eseguire gli unit test e visualizzare i risultati da Esplora test come se si trattasse di unit test creati manualmente.
 
      ![Aprire il file di classe nel metodo di test per visualizzare unit test](../test/media/testmethodpex.png)
 

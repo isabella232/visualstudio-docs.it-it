@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
 ms.openlocfilehash: 8b371a8132e7de05bef68cc8ff67d0951ce67d8f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105912"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633156"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 
@@ -76,7 +76,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro **del** mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo Servizi connessi **e** scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
     ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
@@ -100,7 +100,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    1. Selezionare **Crea un account di archiviazione** nella parte inferiore della finestra di dialogo.
 
-   1. Compilare la finestra **Archiviazione di Azure: Crea nuovo** e selezionare **Crea**.
+   1. Compilare la **finestra Archiviazione di Azure: Crea nuovo** e selezionare **Crea**.
 
        ![Nuovo account di archiviazione di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
 

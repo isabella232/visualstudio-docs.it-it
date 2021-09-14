@@ -11,11 +11,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: dfbd12f9e4f18da356ed69c10a8e913f492f2c2f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628086"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -182,7 +182,7 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
 
 ### <a name="to-configure-a-test-controller"></a>Per configurare un controller di test
 
-1. Per eseguire lo strumento per riconfigurare il test controller in qualsiasi momento, scegliere **Avvia strumento di** configurazione del controller di  >  **test**.
+1. Per eseguire lo strumento per riconfigurare il test controller in qualsiasi momento, scegliere **Avvia strumento di** configurazione del controller di  >  **test.**
 
      Verrà visualizzata la finestra di dialogo **Configura controller di test**.
 

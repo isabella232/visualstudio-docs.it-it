@@ -1,7 +1,7 @@
 ---
 title: Stato della porta della regola FxCop
 ms.date: 05/21/2019
-description: Informazioni sulle regole di analisi del codice statiche che sono state portate agli analizzatori .NET in Visual Studio. Visualizzare le regole e le risorse di porting sugli aggiornamenti di porting.
+description: Informazioni sulle regole di analisi statica del codice che sono state convertire negli analizzatori .NET in Visual Studio. Visualizzare le regole e le risorse con portabilità per gli aggiornamenti di portabilità.
 ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
@@ -14,21 +14,21 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8445e7fa26fb8beef7452a53b3e4733bcfc43f47
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105691"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632027"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola Fxcop
 
-Se in precedenza è stata usata l'analisi statica del codice Visual Studio, ci si potrebbe chiedere quale di queste regole è disponibile nell'implementazione corrente come [analizzatori .NET.](install-net-analyzers.md) In questa pagina sono elencate le regole che sono state portate. Vedere [Regole non portate](fxcop-unported-rules.md) per quelle che non sono state portate e se sono presenti piani per il port.
+Se in precedenza è stata usata l'analisi statica del codice in Visual Studio, ci si potrebbe chiedere quali di queste regole sono disponibili nell'implementazione corrente come [analizzatori .NET.](install-net-analyzers.md) Questa pagina elenca le regole che sono state portate. Vedere [Regole non portate](fxcop-unported-rules.md) per le regole che non sono state portate e se sono presenti piani per la portabilità.
 
 ## <a name="ported-rules"></a>Regole trasferite
 
-La [pagina della](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) documentazione rigenerata automaticamente nel repo roslyn-analyzers include l'elenco più aggiornato delle regole che sono state portate agli analizzatori Roslyn. Tale pagina contiene anche informazioni aggiuntive, ad esempio se la regola è abilitata per impostazione predefinita e se è associata una correzione *del codice*. Le[correzioni di codice](../ide/quick-actions.md) sono correzioni con un solo clic disponibili nel menu dell'icona della lampadina in Visual Studio.
+La pagina della [documentazione](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) rigenerata automaticamente nel repo roslyn-analyzers contiene l'elenco più aggiornato delle regole che sono state portate negli analizzatori Roslyn. Nella pagina sono inoltre disponibili informazioni aggiuntive, ad esempio se la regola è abilitata per impostazione predefinita e se è associata una correzione *del codice*. Le[correzioni del codice](../ide/quick-actions.md) sono correzioni con un clic disponibili nel menu icona a forma di lampadina in Visual Studio.
 
-Alla data in questa pagina, l'elenco delle regole FxCop che sono state portate agli [analizzatori .NET](install-net-analyzers.md) include:
+Alla data in questa pagina, l'elenco delle regole FxCop che sono state convertire in analizzatori [.NET](install-net-analyzers.md) include:
 
 ID regola | Titolo
 --------|---------
@@ -57,20 +57,20 @@ ID regola | Titolo
 [CA1036](/dotnet/fundamentals/code-analysis/quality-rules/ca1036) | Eseguire l'override di metodi su tipi confrontabili
 [CA1040](/dotnet/fundamentals/code-analysis/quality-rules/ca1040) | Evitare l'uso di interfacce vuote
 [CA1041](/dotnet/fundamentals/code-analysis/quality-rules/ca1041) | Specificare una proprietà ObsoleteAttribute.Message
-[CA1043](/dotnet/fundamentals/code-analysis/quality-rules/ca1043) | Usare un argomento integrale o stringa per gli indicizzatori
+[CA1043](/dotnet/fundamentals/code-analysis/quality-rules/ca1043) | Usare l'argomento integrale o stringa per gli indicizzatori
 [CA1044](/dotnet/fundamentals/code-analysis/quality-rules/ca1044) | Le proprietà non devono essere in sola scrittura
 [CA1045](/dotnet/fundamentals/code-analysis/quality-rules/ca1045) | Non passare i tipi per riferimento
 [CA1046](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) | Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento
 [CA1047](/dotnet/fundamentals/code-analysis/quality-rules/ca1047) | Non dichiarare membri protected nei tipi sealed
 [CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | Dichiarare i tipi negli spazi dei nomi
 [CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | Non dichiarare campi di istanza visibili
-[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | I tipi di titolari statici devono essere statici o NotInheritable
-[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | I tipi di titolari statici non devono avere costruttori (CA1053 fa parte di [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) per analizzatori .NET)
+[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | I tipi detentori statici devono essere statici o NotInheritable
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | I tipi detentori statici non devono avere costruttori (CA1053 fa parte degli [analizzatori CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) per .NET)
 [CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | I parametri URI non devono essere stringhe
-[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | I valori restituiti uri non devono essere stringhe
-[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Le proprietà uri non devono essere stringhe
+[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | I valori restituiti dall'URI non devono essere stringhe
+[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Le proprietà URI non devono essere stringhe
 [CA1058](/dotnet/fundamentals/code-analysis/quality-rules/ca1058) | I tipi non devono estendere tipi di base specifici
-[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | Spostare i pinvoke nella classe di metodi nativi
+[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | Spostare i pinvoke nella classe dei metodi nativi
 [CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061) | Non nascondere i metodi di una classe base
 [CA1062](/dotnet/fundamentals/code-analysis/quality-rules/ca1062) | Convalidare gli argomenti di metodi pubblici
 [CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063) | Implementare correttamente IDisposable
@@ -105,7 +105,7 @@ ID regola | Titolo
 [CA1724](/dotnet/fundamentals/code-analysis/quality-rules/ca1724) | I nomi dei tipi non devono corrispondere a spazi dei nomi
 [CA1725](/dotnet/fundamentals/code-analysis/quality-rules/ca1725) | I nomi dei parametri devono corrispondere alla dichiarazione di base
 [CA1801](/dotnet/fundamentals/code-analysis/quality-rules/ca1801) | Controllare i parametri non usati
-[CA1802](/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | Usare i valori letterali dove appropriato
+[CA1802](/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | Usare valori letterali dove appropriato
 [CA1805](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) | Non inizializzare inutilmente
 [CA1806](/dotnet/fundamentals/code-analysis/quality-rules/ca1806) | Non ignorare i risultati dei metodi
 [CA1810](/dotnet/fundamentals/code-analysis/quality-rules/ca1810) | Inizializzare i campi statici del tipo di riferimento inline

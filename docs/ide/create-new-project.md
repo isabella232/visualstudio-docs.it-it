@@ -15,11 +15,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f885922e5b383d81d1d7c31faff43e569dc6732
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634476"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Creare un nuovo progetto in Visual Studio
 
@@ -29,7 +29,7 @@ Questo articolo illustra come creare rapidamente un nuovo progetto in Visual Stu
 
 ## <a name="open-the-new-project-dialog"></a>Aprire la finestra di dialogo Nuovo progetto
 
-Per creare un nuovo progetto in Visual Studio 2017 esistono più metodi. Nella pagina Iniziale è possibile digitare il nome di  un modello di  progetto nella casella Cerca modelli di progetto oppure selezionare il collegamento Crea nuovo progetto per aprire la finestra di **dialogo Project** nuovo progetto. Oltre alla pagina Iniziale, è anche possibile selezionare File New Project (Nuovo file) sulla barra dei menu o fare clic sul pulsante  >    >   New **Project (Nuovo** Project) sulla barra degli strumenti.
+Per creare un nuovo progetto in Visual Studio 2017 esistono più metodi. Nella pagina Iniziale è possibile digitare il nome di  un modello di  progetto nella casella Cerca modelli di progetto oppure selezionare il collegamento Crea nuovo progetto per aprire la finestra di **dialogo Project** nuovo progetto. Oltre alla pagina Iniziale, è anche possibile selezionare File New Project (Nuovo file) sulla barra dei menu o fare clic sul pulsante  >    >   **New Project (Nuovo** Project) sulla barra degli strumenti.
 
 ![Screenshot della barra dei menu in Visual Studio con le opzioni > Nuovo > Project selezionate.](./media/vside-newproject1.png)
 
@@ -37,7 +37,7 @@ Per creare un nuovo progetto in Visual Studio 2017 esistono più metodi. Nella p
 
 Nella finestra di dialogo **Nuovo progetto** i modelli di progetto disponibili vengono visualizzati in un elenco sotto la categoria **Modelli**. I modelli sono organizzati per linguaggio di programmazione e tipo di progetto, ad esempio Visual C#, JavaScript e Azure Data Lake.
 
-![Screenshot della finestra di dialogo Project nuova versione che mostra un elenco di modelli installati.](./media/vside-newproject-templates-list.png)
+![Screenshot della finestra di dialogo Project che mostra un elenco di modelli installati.](./media/vside-newproject-templates-list.png)
 
 > [!NOTE]
 > L'elenco delle lingue disponibili e i modelli di progetto visualizzati dipendono dalla versione di Visual Studio in esecuzione e dai carichi di lavoro installati. Per informazioni su come installare altri carichi di lavoro, vedere [Modificare Visual Studio aggiungendo o rimuovendo carichi di lavoro e componenti](../install/modify-visual-studio.md).
@@ -64,7 +64,7 @@ Per creare un nuovo progetto in Visual Studio 2019 esistono più metodi. Quando 
 
 :::image type="content" source="media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot della finestra di dialogo &quot;Crea un nuovo progetto&quot; dalla finestra iniziale Visual Studio 2019":::
 
-Se l Visual Studio di sviluppo è già aperto, è possibile creare un nuovo progetto scegliendo  >    >  **Nuovo file Project** sulla barra dei menu. È anche possibile fare clic **sul pulsante Project** sulla barra degli strumenti oppure premere **CTRL** + **MAIUSC** + **N.**
+Se l Visual Studio di sviluppo è già aperto, è possibile creare un nuovo  >    >  **progetto scegliendo File nuovo Project** nella barra dei menu. È anche possibile fare clic **sul pulsante Project** sulla barra degli strumenti oppure premere CTRL  + **MAIUSC** + **N.**
 
 :::image type="content" source="media/vs-2019/new-project-button.png" alt-text="Screenshot del pulsante Project 2019 in Visual Studio 2019.":::
 
@@ -102,7 +102,7 @@ Fare clic su **Crea** per creare il nuovo progetto.
 
 ## <a name="add-additional-projects-to-a-solution"></a>Aggiungere altri progetti a una soluzione
 
-Se si vuole aggiungere un altro progetto a una soluzione, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** quindi  >  **scegliere Aggiungi nuovo Project**.
+Se si vuole aggiungere un altro progetto a una soluzione, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** quindi scegliere  >  **Aggiungi nuovo Project**.
 
 > [!TIP]
 > Per un esempio di progetto e soluzione creati da zero, con istruzioni dettagliate e codice di esempio, vedere Introduzione a [progetti e soluzioni.](../get-started/tutorial-projects-solutions.md)

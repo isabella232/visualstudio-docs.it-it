@@ -13,11 +13,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec5fd5494b7b4f5878947f70aaa1675462e0b7ab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060726"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628278"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Esercitazione: Uso di Python in Visual Studio
 
@@ -41,7 +41,7 @@ Per *progetto* si intende la modalità con cui Visual Studio gestisce tutti i fi
 
 In questa esercitazione si inizia con un semplice progetto che contiene un singolo file di codice vuoto.
 
-1. In Visual Studio selezionare **File**  >  **Nuovo**  >  **Project** (**CTRL** MAIUSC N ), che apre la finestra +  + di **dialogo Project** nuova cartella. Qui è possibile esplorare i modelli tra i diversi linguaggi, quindi selezionarne uno per il progetto e specificare dove inserire i file Visual Studio.
+1. In Visual Studio selezionare **File**  >  **Nuovo**  >  **Project** (**CTRL** MAIUSC N ), che apre la finestra +  + di **dialogo Project** nuovo. Qui è possibile esplorare i modelli tra i diversi linguaggi, quindi selezionarne uno per il progetto e specificare dove inserire i file Visual Studio.
 
 1. Per visualizzare i modelli Python, **selezionare**  >  **Python** installato a sinistra o cercare "Python". La ricerca è un ottimo modo per trovare un modello quando non si ricorda la posizione nell'albero dei linguaggi.
 
@@ -51,7 +51,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene un singo
 
 1. Selezionare il modello **Applicazione Python**, specificare un nome per il progetto e selezionare **OK**.
 
-1. Dopo qualche secondo, Visual Studio visualizza la struttura del progetto nella finestra **Esplora soluzioni** (1). Il file di codice predefinito è aperto nell'editor (2). Viene **visualizzata** anche la finestra Proprietà (3) per visualizzare informazioni aggiuntive per qualsiasi elemento selezionato **in** Esplora soluzioni , inclusa la posizione esatta sul disco.
+1. Dopo qualche secondo, Visual Studio visualizza la struttura del progetto nella finestra **Esplora soluzioni** (1). Il file di codice predefinito è aperto nell'editor (2). Viene **visualizzata** anche la finestra Proprietà (3) per visualizzare informazioni aggiuntive per qualsiasi elemento selezionato in **Esplora soluzioni**, inclusa la posizione esatta sul disco.
 
     ![Esplora soluzioni con un progetto Python](media/vs-getting-started-python-02-windows.png)
 

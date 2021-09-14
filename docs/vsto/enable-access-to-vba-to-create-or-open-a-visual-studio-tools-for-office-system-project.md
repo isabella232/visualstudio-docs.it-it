@@ -1,7 +1,7 @@
 ---
 title: Accesso VBA per creare/aprire un progetto VSTO di sistema
 titleSuffix: ''
-description: Informazioni su come abilitare in modo esplicito l'accesso al Office di progetto VBA prima di poter creare o aprire un progetto Visual Studio Tools per Office di sistema.
+description: Informazioni su come abilitare in modo esplicito l'accesso al Office di progetto VBA prima di poter creare o aprire un Visual Studio Tools per Office di sistema.
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -21,15 +21,15 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 8c6e7d980301c0ad426c54e5f5838d64a11ca0bb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106380"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634099"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Strumenti di Visual Studio per il Microsoft Office di sistema
 
-È necessario abilitare in modo esplicito l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office prima di poter creare o aprire un Strumenti di Visual Studio per il Microsoft Office di sistema.
+È necessario abilitare in modo esplicito l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office prima di poter creare o aprire un Strumenti di Visual Studio per il progetto Microsoft Office di sistema.
 
  Microsoft Office progetti di sviluppo richiedono l'accesso al sistema di progetto Visual Basic, Applications Edition (VBA) in Microsoft Office Word e Microsoft Office Excel, anche se i progetti non usano Visual Basic, Applications Edition. Il supporto in fase di progettazione dei controlli sia nei progetti di Visual Basic che in quelli di Visual C# dipende infatti dal sistema di progetto di Visual Basic, Applications Edition.
 
@@ -40,7 +40,7 @@ ms.locfileid: "122106380"
 
  È importante notare che la disabilitazione dell'accesso al sistema di progetto di Visual Basic, Applications Edition non comporta da sola la protezione dai virus, ma consente semplicemente di interrompere la diffusione di alcuni virus ad altri documenti se il computer viene infettato da un virus macro. Per impostazione predefinita, l'opzione è disabilitata per fornire un ulteriore livello di sicurezza per il computer, ma la sua abilitazione non rende il computer maggiormente soggetto ai virus se si seguono le procedure di sicurezza consigliate.
 
- La protezione ottimale da virus macro Office è l'esecuzione di Office a livello di sicurezza alto o molto alto, per considerare attendibili solo le macro provenienti da origini verificate e note e per rimanere aggiornati con patch di sicurezza e virus scanner.
+ La protezione ottimale contro i virus macro di Office è l'esecuzione di Office a livello di sicurezza alto o molto alto, per considerare attendibili solo le macro provenienti da origini note e verificate e rimanere aggiornati con le patch di sicurezza e i programmi antivirus.
 
  È possibile abilitare o disabilitare l'opzione **Considera attendibile l'accesso Visual Basic Project** manualmente.
 
@@ -58,7 +58,7 @@ ms.locfileid: "122106380"
 
 4. Nel Centro **protezione fare** clic su **Macro Impostazioni**.
 
-5. Selezionare o deselezionare **Considera attendibile l'accesso** al modello a oggetti del progetto VBA per abilitare o disabilitare l'accesso Visual Basic progetti.
+5. Selezionare o deselezionare **Considera attendibile l'accesso al modello** a oggetti del progetto VBA per abilitare o disabilitare l'accesso Visual Basic progetti.
 
 6. Fare clic su **OK**.
 
@@ -66,7 +66,7 @@ ms.locfileid: "122106380"
 
 1. Scegliere **Macro** dal menu Strumenti in Word o Excel **e** quindi fare clic su **Sicurezza**.
 
-2. Nella finestra **di dialogo** Sicurezza fare clic sulla scheda **Autori attendibili** .
+2. Nella finestra **di dialogo** Sicurezza fare clic sulla **scheda Autori** attendibili .
 
 3. Selezionare questa opzione per abilitare o deselezionare l'opzione **Considera attendibile l'accesso Visual Basic Project**.
 
@@ -86,7 +86,7 @@ ms.locfileid: "122106380"
 
 6. Fare clic su **OK**.
 
-### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Per impostare il livello Office sicurezza macro con il sistema di Microsoft Office 2007
+### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Per impostare il livello Office sicurezza macro con il sistema Microsoft Office 2007
 
 1. Scegliere **Macro** dal menu Strumenti in Word o Excel **e** quindi fare clic su **Sicurezza**.
 

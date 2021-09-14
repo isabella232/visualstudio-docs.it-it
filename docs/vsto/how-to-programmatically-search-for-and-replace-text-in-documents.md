@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: efd725b094ac720f954a0075093ed683e965674d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155759"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633915"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Procedura: Cercare e sostituire testo nei documenti a livello di codice
   L'oggetto <xref:Microsoft.Office.Interop.Word.Find> è un membro degli oggetti <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, ognuno dei quali può essere usato per cercare testo in documenti di Microsoft Office Word. Il comando di sostituzione è un'estensione del comando di ricerca.
@@ -61,7 +61,7 @@ ms.locfileid: "122155759"
    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet67":::
 
 ## <a name="use-a-range-object"></a>Usare un oggetto Range
- L'uso di un oggetto <xref:Microsoft.Office.Interop.Word.Range> permette di cercare testo senza alcuna visualizzazione nell'interfaccia utente. L'oggetto restituisce True se viene trovato testo che corrisponde ai criteri di ricerca <xref:Microsoft.Office.Interop.Word.Find> e **False** in caso contrario.  Ridefinisce inoltre l'oggetto <xref:Microsoft.Office.Interop.Word.Range> in modo che corrisponda ai criteri di ricerca se viene trovato testo.
+ L'uso di un oggetto <xref:Microsoft.Office.Interop.Word.Range> permette di cercare testo senza alcuna visualizzazione nell'interfaccia utente. L'oggetto restituisce True se viene trovato testo che corrisponde ai criteri di <xref:Microsoft.Office.Interop.Word.Find> ricerca e **False** in caso contrario.  Ridefinisce inoltre l'oggetto <xref:Microsoft.Office.Interop.Word.Range> in modo che corrisponda ai criteri di ricerca se viene trovato testo.
 
 ### <a name="to-find-text-using-a-range-object"></a>Per trovare testo usando un oggetto Range
 
@@ -77,7 +77,7 @@ ms.locfileid: "122155759"
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet72":::
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet72":::
 
-2. Usando la <xref:Microsoft.Office.Interop.Word.Range.Find%2A> proprietà dell'oggetto , cancellare prima tutte le opzioni di formattazione esistenti e quindi <xref:Microsoft.Office.Interop.Word.Range> cercare la stringa find **me**.
+2. Usando la <xref:Microsoft.Office.Interop.Word.Range.Find%2A> proprietà <xref:Microsoft.Office.Interop.Word.Range> dell'oggetto , cancellare prima le opzioni di formattazione esistenti e quindi cercare la stringa find **me**.
 
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet73":::
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet73":::
@@ -120,7 +120,7 @@ ms.locfileid: "122155759"
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> sostituisce il primo elemento trovato.
 
 ## <a name="see-also"></a>Vedi anche
-- [Procedura: Impostare le opzioni di ricerca a livello di codice in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Procedura: Impostare le opzioni di ricerca in Word a livello di codice](../vsto/how-to-programmatically-set-search-options-in-word.md)
 - [Procedura: Eseguire un ciclo a livello di codice tra gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
 - [Procedura: Definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Procedura: Ripristinare le selezioni a livello di codice dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)

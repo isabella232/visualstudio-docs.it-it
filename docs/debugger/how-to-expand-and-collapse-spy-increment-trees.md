@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 90f939e62783cb2b3189cb04783f84fd3dcffa41
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128377"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627978"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: espandere e comprimere strutture ad albero di Spy++
 È possibile espandere e comprimere le visualizzazioni Windows, Processi e Thread usando due metodi: facendo clic sulle icone nella finestra o usando il menu **Albero.** Le icone + e - nell'albero agiscono come nella finestra del progetto C++.

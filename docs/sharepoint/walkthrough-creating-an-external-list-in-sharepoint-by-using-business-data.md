@@ -23,11 +23,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: a265a80116da0d1d2ffac469f7193c737a65a93a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628230"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: Creare un elenco esterno in SharePoint usando i dati aziendali
 
@@ -69,7 +69,7 @@ Per completare questa procedura dettagliata, è necessario disporre dei componen
 
 6. In **Esplora soluzioni** scegliere il nodo SharePoint progetto.
 
-7. Sulla barra dei menu **scegliere** Project Aggiungi nuovo  >  **elemento**.
+7. Sulla barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento**.
 
      Verrà **visualizzata la finestra di dialogo** Aggiungi nuovo elemento .
 
@@ -77,7 +77,7 @@ Per completare questa procedura dettagliata, è necessario disporre dei componen
 
 ## <a name="add-data-access-classes-to-the-project"></a>Aggiungere classi di accesso ai dati al progetto
 
-1. Sulla barra dei menu scegliere **Strumenti Connessione**  >  **database**.
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Connessione database**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi connessione**.
 
@@ -87,7 +87,7 @@ Per completare questa procedura dettagliata, è necessario disporre dei componen
 
 3. Scegliere il nodo di progetto in **Esplora soluzioni**.
 
-4. Sulla barra dei menu **scegliere** Project Aggiungi nuovo  >  **elemento**.
+4. Sulla barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento**.
 
 5. Nel riquadro **Modelli installati** scegliere il **nodo** Dati.
 
@@ -97,7 +97,7 @@ Per completare questa procedura dettagliata, è necessario disporre dei componen
 
      Verrà aggiunto al progetto un file con estensione dbml e verrà aperto Object Relational Designer (O/R Designer).
 
-8. Sulla barra dei menu scegliere **Visualizza Esplora server**  >  .
+8. Sulla barra dei menu scegliere **Visualizza**  >  **Esplora server**.
 
 9. In **Esplora server** espandere il nodo che rappresenta il database di esempio AdventureWorks e quindi espandere **il nodo** Tabelle.
 
@@ -111,7 +111,7 @@ Il **progetto Modello di connettività dati** business aggiunge un'entità prede
 
 1. In **Esplora soluzioni** espandere il **nodo BdcModel1** e quindi aprire il file *BdcModel1.bdcm.*
 
-2. Il file del modello di integrazione applicativa dei dati viene aperto nella finestra di progettazione del data center BDC.
+2. Il file del modello di connettività dati business viene aperto nella finestra di progettazione del data center BDC.
 
 3. Nella finestra di progettazione aprire il menu di scelta rapida per **Entity1** e quindi scegliere **Elimina.**
 
@@ -196,9 +196,9 @@ Aggiungere un metodo Finder specifico all'entità Contact usando la **finestra D
     |PasswordHash|System.String|
     |PasswordSalt|System.String|
 
-11. Nell'entità Contact della  finestra di progettazione BDC aprire il **metodo ReadItem.**
+11. Nell'entità **Contact** della finestra di progettazione BDC aprire il **metodo ReadItem.**
 
-     Il file di codice del servizio Contatti viene aperto nell'editor del codice.
+     Il file di codice del servizio Contact viene aperto nell'editor di codice.
 
 12. Nella classe `ContactService` sostituire il metodo con il codice `ReadItem` seguente. Il codice esegue queste operazioni:
 
@@ -214,17 +214,17 @@ Aggiungere un metodo Finder specifico all'entità Contact usando la **finestra D
 
 ## <a name="add-a-finder-method"></a>Aggiungere un metodo finder
 
-Per consentire al servizio BDC di visualizzare i contatti in un elenco, è necessario aggiungere un metodo Finder. Aggiungere un metodo Finder all'entità Contact usando la **finestra BDC Method Details (Dettagli metodo BDC).** Per restituire una raccolta di entità al servizio BDC, aggiungere codice al metodo .
+Per consentire al servizio BDC di visualizzare i contatti in un elenco, è necessario aggiungere un metodo Finder. Aggiungere un metodo Finder all'entità Contact usando la **finestra Dettagli metodo BDC.** Per restituire una raccolta di entità al servizio BDC, aggiungere codice al metodo .
 
-1. Nella finestra di progettazione BDC scegliere **l'entità** Contact.
+1. Nella finestra di progettazione del data center BDC scegliere **l'entità** Contatto.
 
-2. Nella finestra **BDC Method Details (Dettagli metodo BDC)** comprimere **il nodo ReadItem.**
+2. Nella finestra **Dettagli metodo BDC** comprimere il **nodo ReadItem.**
 
-3. **Nell'elenco Add a Method (Aggiungi** metodo) nel metodo **ReadList** scegliere **Create Finder Method (Crea metodo Finder).**
+3. **Nell'elenco Aggiungi metodo** sotto il metodo **ReadList** scegliere **Crea metodo Finder**.
 
      Visual Studio aggiunge un metodo, un parametro restituito e un descrittore di tipo.
 
-4. Nell'entità Contact della  finestra di progettazione BDC aprire il **metodo ReadList.**
+4. Nell'entità **Contact** della finestra di progettazione BDC aprire il **metodo ReadList.**
 
      Il file di codice per il servizio di Contact verrà aperto nell'editor di codice.
 
@@ -242,20 +242,20 @@ Per consentire al servizio BDC di visualizzare i contatti in un elenco, è neces
 
 ## <a name="test-the-project"></a>Testare il progetto
 
-Quando si esegue il progetto, viene aperto SharePoint sito di Visual Studio il modello al servizio di connettività dei dati di business. Creare un elenco esterno in SharePoint che fa riferimento all'entità Contact. I dati per i contatti nel database AdventureWorks vengono visualizzati nell'elenco.
+Quando si esegue il progetto, viene aperto SharePoint sito Visual Studio il modello al servizio di integrazione applicativa dei dati. Creare un elenco esterno in SharePoint che fa riferimento all'entità Contact. I dati per i contatti nel database AdventureWorks vengono visualizzati nell'elenco.
 
 > [!NOTE]
-> Potrebbe essere necessario modificare le impostazioni di sicurezza in SharePoint possibile eseguire il debug della soluzione. Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
+> Potrebbe essere necessario modificare le impostazioni di sicurezza in SharePoint prima di poter eseguire il debug della soluzione. Per altre informazioni, vedere [Progettare un modello di connettività dei dati aziendali.](../sharepoint/designing-a-business-data-connectivity-model.md)
 
 1. Premere **F5**.
 
-     Verrà SharePoint il sito di lavoro.
+     Verrà SharePoint sito di lavoro.
 
-2. Nel menu **Azioni sito** scegliere il **comando Altre** opzioni.
+2. Scegliere **il** comando Altre opzioni dal menu **Azioni** sito.
 
-3. Nella pagina **Crea** scegliere il modello **Elenco** esterno e quindi scegliere **il pulsante** Crea.
+3. Nella pagina **Crea** scegliere il **modello Elenco** esterno e quindi scegliere **il pulsante** Crea.
 
-4. Assegnare all'elenco personalizzato il **nome Contacts.**
+4. Assegnare all'elenco personalizzato il **nome Contacts**.
 
 5. Scegliere il pulsante Sfoglia accanto al **campo Tipo di contenuto** esterno.
 
@@ -271,15 +271,15 @@ Quando si esegue il progetto, viene aperto SharePoint sito di Visual Studio il m
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni su come progettare modelli per il servizio BDC in SharePoint da questi argomenti:
+Per altre informazioni su come progettare modelli per il servizio BDC, vedere SharePoint argomenti seguenti:
 
 - [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md).
-- [Procedura: Aggiungere un metodo updater](../sharepoint/how-to-add-an-updater-method.md).
+- [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md).
 - [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Vedi anche
 
 [Progettare un modello di connettività dei dati aziendali](../sharepoint/designing-a-business-data-connectivity-model.md) 
- [Creare un modello di connettività dei dati aziendali](../sharepoint/creating-a-business-data-connectivity-model.md) 
+ [Creare un modello di connettività dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md) 
  [Panoramica degli strumenti di progettazione del modello BDC](../sharepoint/bdc-model-design-tools-overview.md) 
  [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

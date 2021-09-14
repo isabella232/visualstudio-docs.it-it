@@ -1,6 +1,6 @@
 ---
 title: 'File XSD di esempio: relazioni'
-description: Visualizzare il file XSD di esempio per uno schema dell'ordine di acquisto con annotazioni e documentazione, che viene usato in vari esempi nella documentazione di Progettazione schemi XSD.
+description: Visualizzare il file XSD di esempio per uno schema dell'ordine di acquisto con annotazioni e documentazione, utilizzato in vari esempi nella documentazione di Progettazione schemi XSD.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ff00520892dddfaed6813f76732668bac5bd8ca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633587"
 ---
 # <a name="sample-xsd-file-relationships"></a>File XSD di esempio: relazioni
 

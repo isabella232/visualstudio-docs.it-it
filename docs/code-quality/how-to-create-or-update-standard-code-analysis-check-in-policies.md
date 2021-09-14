@@ -15,11 +15,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 70442184ae7a8ce36657ce9c2dbc8887f9d3b9e7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031679"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631968"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -28,7 +28,7 @@ ms.locfileid: "122031679"
 > [!NOTE]
 > Questa funzionalità è disponibile solo se si usa Team Foundation Server .
 
-I criteri di archiviazione dell'analisi codice vengono impostati nelle impostazioni del progetto e si applicano a ogni progetto di codice. Le esecuzioni dell'analisi del codice vengono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Le esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si abilitano i criteri di archiviazione dell'analisi codice, i file in un progetto di codice da archiviare devono essere compilati dopo l'ultima modifica e un'esecuzione dell'analisi del codice che contenga almeno le regole nelle impostazioni del progetto nel computer in cui sono state apportate le modifiche.
+I criteri di archiviazione dell'analisi codice vengono impostati nelle impostazioni del progetto e si applicano a ogni progetto di codice. Le esecuzioni dell'analisi del codice vengono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Le esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si abilitano i criteri di archiviazione dell'analisi codice, i file in un progetto di codice che devono essere archiviati devono essere compilati dopo l'ultima modifica e un'esecuzione dell'analisi del codice che contenga almeno le regole nelle impostazioni del progetto nel computer in cui sono state apportate le modifiche.
 
 - Per il codice gestito, impostare i criteri di archiviazione specificando un set di *regole* che contiene un subset delle regole di analisi del codice.
 
@@ -46,7 +46,7 @@ Dopo aver specificato i criteri di archiviazione per il codice gestito, i membri
 
     - Fare **clic su** Aggiungi per creare un nuovo criterio di archiviazione.
 
-    - Fare doppio clic **sull'elemento Code Analysis** nell'elenco Tipo **di** criterio per modificare i criteri.
+    - Fare doppio clic **sull'elemento Code Analysis** esistente nell'elenco Tipo **di** criterio per modificare i criteri.
 
 ## <a name="to-set-policy-options"></a>Per impostare le opzioni dei criteri
 

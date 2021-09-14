@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ec7fab824160c58d259da2f2f4e5178e7b256ac7bbe310e0544bf3a835b739
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 214c7ca6bd7dcf648060383462fa2dfef24a3618
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121455322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631926"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedura: Eliminare gli avvisi di analisi del codice per il codice generato
 
@@ -33,7 +33,7 @@ La **casella di controllo** Elimina risultati dal codice generato nella pagina d
 
 2. Scegliere la **Code Analysis** impostazioni.
 
-3. Selezionare la **casella di controllo Elimina risultati dal** codice generato .
+3. Selezionare la **casella di controllo Elimina risultati dal** codice generato.
 
 > [!IMPORTANT]
 > È possibile eliminare solo gli avvisi dall'analisi legacy. La pagina delle proprietà con l'impostazione è stata deprecata e verrà rimossa in una versione futura del prodotto. Attualmente non è possibile eliminare gli avvisi di analisi del codice [dagli analizzatori](roslyn-analyzers-overview.md).

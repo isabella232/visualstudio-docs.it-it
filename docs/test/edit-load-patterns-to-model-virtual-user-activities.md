@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: f67e518e5f9701ae011733d796252431ce6c9eda
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634259"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modificare i modelli di carico per definire le attività di utenti virtuali
 
@@ -45,7 +45,7 @@ Un modello di carico costante viene usato per eseguire lo stesso carico utente d
 
 Il modello del test di carico per passaggio viene utilizzato per specificare il carico di un utente che aumenta con il passare del tempo fino a raggiungere il carico utente massimo definito. Nei carichi per passaggio è necessario specificare il **Numero utenti iniziale**, il **Numero massimo utenti**, l'**Intervallo passaggi (secondi)** e il **Numero utenti per passaggio**.
 
-Ad **esempio,** un  carico passaggio con un conteggio utenti iniziale di uno, il numero massimo di utenti di 100, la durata del passaggio **(secondi)** di 10 e il conteggio utenti passaggio di 1 crea un modello di carico utente che inizia da 1, aumenta di 1 ogni 10 secondi fino **a** raggiungere 100 utenti.
+Ad esempio, un  caricamento step con un conteggio utenti iniziale di **uno,** un numero massimo di utenti di 100, una durata del passaggio **(secondi)** di 10 e un conteggio utenti passaggio di 1 crea un modello di carico utente che inizia da 1, aumenta di 1 ogni 10 secondi fino **a** raggiungere 100 utenti.
 
 > [!NOTE]
 > Se la durata totale del test è inferiore al tempo necessario per raggiungere il carico massimo di utenti, il test si interrompe al termine della durata specificata e non raggiunge l'obiettivo del **Numero massimo utenti**.
@@ -58,17 +58,17 @@ In genere è consigliabile eseguire più test con durate e numero di utenti dei 
 
 Un modello di carico passaggio può essere usato per aumentare il carico sul server o sui server durante l'esecuzione dei test di carico, in modo da visualizzare la variazione delle prestazioni mentre aumenta il carico utente. Per verificare, ad esempio, le prestazioni del server o dei server mentre il carico utente aumenta a 2.000 utenti, è possibile eseguire un test di carico di 10 ore utilizzando un modello di carico passaggio con le proprietà seguenti:
 
-- **Numero utenti iniziale:** 100
+- **Conteggio utenti iniziale:** 100
 
 - **Numero massimo utenti:** 2.000
 
 - **Durata passaggio (secondi):** 1.800
 
-- **Tempo di rampa passaggio (secondi)**: 20
+- **Step Ramp Time (seconds)**: 20
 
-- **Numero utenti passaggio:** 100
+- **Numero utenti passaggio**: 100
 
-  Queste impostazioni consentono l'esecuzione del test di carico per 30 minuti (1.800 secondi) a carichi utente di 100, 200, 300, fino a 2.000 utenti. La **proprietà Tempo di** rampa passaggio vale una menzione speciale, perché è l'unica di queste proprietà non disponibile per la selezione nella finestra di dialogo **Creazione guidata test di carico**. Questa proprietà consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti). In questo esempio il carico utente aumenterebbe da 100 a 200 utenti in un intervallo di 20 secondi, ovvero un aumento di 5 utenti al secondo. Per altre informazioni, vedere Procedura: Specificare la proprietà [step ramp time per un modello di carico passaggio.](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+  Queste impostazioni consentono l'esecuzione del test di carico per 30 minuti (1.800 secondi) a carichi utente di 100, 200, 300, fino a 2.000 utenti. La **proprietà Step Ramp Time** vale una menzione speciale, perché è l'unica di queste proprietà che non è disponibile per la selezione in New **Creazione guidata test di carico**. Questa proprietà consente l'aumento graduale, anziché immediato, da un passaggio al successivo (ad esempio da 100 a 200 utenti). In questo esempio il carico utente aumenterebbe da 100 a 200 utenti in un intervallo di 20 secondi, ovvero un aumento di 5 utenti al secondo. Per altre informazioni, vedere Procedura: Specificare la proprietà [step ramp time per un modello di carico passaggio.](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
 
 ### <a name="goal-based"></a>Basato su obiettivo
 

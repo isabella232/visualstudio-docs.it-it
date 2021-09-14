@@ -12,11 +12,11 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f3ff4f40a42cfb7f4e3582abdb760af5dfffde9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633395"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Creare un progetto AI da codice esistente
 
@@ -39,7 +39,7 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile agg
 
 4. Per impostare un file di avvio, individuare il file in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere **Imposta come file di avvio**.
 
-5. Eseguire il programma premendo **CTRL** + **F5** o selezionando Debug > **Avvia senza eseguire debug**.
+5. Eseguire il programma premendo **CTRL** + **F5** o selezionando Debug **> Avvia senza eseguire debug**.
 
 > [!div class="nextstepaction"]
 > [Esercitazione: uso di Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)

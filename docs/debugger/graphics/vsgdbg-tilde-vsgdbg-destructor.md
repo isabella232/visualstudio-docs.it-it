@@ -11,11 +11,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a0331d0919a52ed91cf973a274a01220dc88f2a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627996"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (distruttore)
 Elimina un'istanza della `VsgDbg` classe . Se le informazioni grafiche vengono registrate attivamente, il file di log della grafica viene finalizzato e chiuso e vengono rilasciate le risorse usate durante l'acquisizione attiva delle informazioni grafiche.

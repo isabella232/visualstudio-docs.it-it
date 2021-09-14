@@ -20,11 +20,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 27aaa8d043ffce98e5d3a03a57226478d49a634f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628337"
 ---
 # <a name="process-view"></a>Visualizzazione Processo
 La visualizzazione Processo visualizza i dati di profilatura per i processi e i thread eseguiti durante l'esecuzione della profilatura.
@@ -46,4 +46,4 @@ La visualizzazione Processo visualizza i dati di profilatura per i processi e i 
 ## <a name="see-also"></a>Vedi anche
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)
 - [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
-- [Viste dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
+- [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

@@ -8,11 +8,11 @@ ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
 ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123964661"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633555"
 ---
 # <a name="set-multiple-startup-projects"></a>Impostare più progetti di avvio
 
@@ -20,7 +20,7 @@ Visual Studio per Mac consente di specificare se avviare più di un progetto dur
 
 ## <a name="to-set-multiple-startup-projects"></a>Per impostare più progetti di avvio
 
-1. Nella finestra della soluzione selezionare la soluzione (il nodo principale).
+1. Nella finestra della soluzione selezionare la soluzione (il nodo superiore).
 
 2. Fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Imposta progetti di avvio**:
 
@@ -42,7 +42,7 @@ Visual Studio per Mac consente di specificare se avviare più di un progetto dur
 
    ![Soluzione con più progetti configurati da avviare in fase di debug o esecuzione](media/startup-project-configured.png)
 
-   Ora i due progetti sono configurati per l'avvio, rappresentato da entrambi i progetti visualizzati in **grassetto** nella finestra della soluzione. Nella barra degli strumenti la nuova configurazione di esecuzione è impostata come configurazione di esecuzione della soluzione corrente.
+   I due progetti sono ora configurati per l'avvio, rappresentati da entrambi i progetti visualizzati in **grassetto** nella finestra della soluzione. Nella barra degli strumenti la nuova configurazione di esecuzione è impostata come configurazione di esecuzione della soluzione corrente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

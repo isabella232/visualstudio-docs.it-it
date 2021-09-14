@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: de3734650efc8831a30f6460b32ede93449280fe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634267"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Raccogliere dati di diagnostica usando impostazioni test
 
@@ -47,7 +47,7 @@ Nella tabella seguente è disponibile una panoramica dei diversi modi in cui è 
 |Adattatore dati di diagnostica usato nell'impostazione di test|Test manuali nel computer locale|Test automatizzati|Test manuali: raccolta di dati mediante un set di ruoli e un ambiente|Note|
 |-|-|-|-|-|
 |**Proxy client ASP.NET per IntelliTrace e impatto test:** questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.|Sì|Sì|Sì|- Usare questa soluzione solo se per un ruolo client sono selezionati gli adattatori dati di diagnostica di IntelliTrace o impatto test.|
-|**ASP.NET profiler:** È possibile creare un'impostazione di test che includa ASP.NET profilatura, che raccoglie i dati sulle prestazioni ASP.NET applicazioni Web.|No|Sì (vedere le note)|No|- Questo adattatore dati di diagnostica è supportato solo in caso di esecuzione di test di carico da Visual Studio.|
+|**ASP.NET profiler:** È possibile creare un'impostazione di test che includa ASP.NET di profilatura, che raccoglie i dati sulle prestazioni ASP.NET applicazioni Web.|No|Sì (vedere le note)|No|- Questo adattatore dati di diagnostica è supportato solo in caso di esecuzione di test di carico da Visual Studio.|
 |**Code coverage:** è possibile creare un'impostazione test in cui siano incluse informazioni sul code coverage usate per determinare la quantità di codice analizzata dai test.|No|Sì (vedere le note)|No|- È possibile usare code coverage solo quando si esegue un test automatizzato da Visual Studio *omstest.exe* e solo dal computer che esegue il test. La raccolta di dati in remoto non è supportata.<br />- La raccolta di dati di code coverage non funziona se l'impostazione di test è configurata per raccogliere informazioni di IntelliTrace. **Nota:** questo adattatore dati di diagnostica è applicabile solo alle impostazioni test di Visual Studio. Non viene usato per le impostazioni di test in Microsoft Test Manager (deprecato in Visual Studio 2017). Inoltre, questo adattatore è per la compatibilità con i progetti di test di Visual Studio 2010. **Nota:** per compatibilità, il code coverage viene applicato quando i test automatizzati vengono eseguiti da Microsoft Test Manager o su un agente di test remoto da Visual Studio usando il Runner MSTest legacy.|
 |**Log eventi:** è possibile configurare un'impostazione test per includere la raccolta del log eventi, compresa nei risultati dei test.|Sì|Sì|Sì||
 |**IntelliTrace:** è possibile configurare l'adattatore dati di diagnostica in modo che *IntelliTrace* raccolga informazioni di traccia di diagnostica specifiche per agevolare l'isolamento di bug difficili da riprodurre. In questo modo viene creato un file IntelliTrace contenente queste informazioni. Un file IntelliTrace ha estensione *iTrace*. Quando un test non viene superato, si crea un bug. Il file di IntelliTrace salvato con i risultati del test viene collegato automaticamente a questo bug. I dati raccolti nel file di IntelliTrace consentono di migliorare la produttività del debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Da questo file di IntelliTrace è possibile simulare la sessione locale in un altro computer. Questo riduce il rischio di non riproducibilità di un bug.|Sì|Sì|Sì|- Se si abilita la raccolta di dati di IntelliTrace, la raccolta di dati del code coverage non funziona.<br />- Se si usa IntelliTrace per un ruolo client Web, è necessario anche selezionare l'adattatore dati di diagnostica Proxy client ASP.NET per IntelliTrace e impatto test.<br />- Sono supportate solo le versioni seguenti di IIS: IIS 7.0, IIS 7.5 e IIS 8.0.|

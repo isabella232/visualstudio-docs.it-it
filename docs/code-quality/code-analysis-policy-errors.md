@@ -16,11 +16,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ca28097058c0f9c7722aacd806f00af3ef263a1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632081"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -28,19 +28,19 @@ Se i criteri di analisi del codice non vengono soddisfatti al momento dell'archi
 
 **Le Code Analysis per uno o più progetti non sono compatibili con Code Analysis criteri.**
 
-I requisiti di analisi del codice che archiviano il controllo del codice sorgente del progetto non sono stati soddisfatti per uno o più progetti di codice. Questo errore può essere causato da una o più delle condizioni seguenti:
+I requisiti di analisi del codice per l'archiviazione nel controllo del codice sorgente del progetto non sono stati soddisfatti per uno o più progetti di codice. Questo errore può essere causato da una o più delle condizioni seguenti:
 
-- Code Analysis non è abilitato per la compilazione per tutti i progetti nella soluzione.
+- Code Analysis non è abilitato in fase di compilazione per tutti i progetti nella soluzione.
 
-- Il set di regole locali per il progetto  in Visual Studio ha un'impostazione Azione meno restrittiva rispetto al set di regole del progetto, ad esempio, una regola impostata su Errore azione nel server ha la proprietà Azione impostata su Avviso o Nessuna nel set di regole in esecuzione =  nel Visual Studio).   
+- Il set di regole locali per il progetto  in Visual Studio ha un'impostazione azione meno restrittiva rispetto al set di regole del progetto, ad esempio una regola impostata su Errore azione nel server ha l'azione impostata su Avviso o Nessuna nel set di regole in esecuzione  =  nel Visual Studio).   
 
-- Il set di regole specificato in Visual Studio non contiene tutte le regole specificate nel set di regole specificato nel Code Analysis criteri di archiviazione per il progetto.
+- Il set di regole specificato in Visual Studio non contiene tutte le regole specificate nel set di regole specificato nei criteri di archiviazione Code Analysis per il progetto.
 
-**Il Code Analysis non è riuscito. Si sono verificati errori nel {0} progetto o la compilazione non è aggiornata.**
+**Il criterio Code Analysis non è riuscito. Si sono verificati errori nel {0} progetto o la compilazione non è aggiornata.**
 
 La compilazione contiene errori o gli errori sono stati corretti, ma l'analisi del codice non è stata eseguita dopo la correzione.
 
-**L'archiviazione non è riuscita. I Code Analysis criteri richiedono l'archiviazione tramite Visual Studio con una soluzione aperta.**
+**L'archiviazione non è riuscita. Per Code Analysis criteri è necessario eseguire l'archiviazione tramite Visual Studio con una soluzione aperta.**
 
 I criteri di analisi del codice richiedono che tutti i file archiviati siano nella soluzione attualmente aperta. Per correggere l'errore, aprire la soluzione che contiene il file da archiviare.
 
@@ -50,29 +50,29 @@ I criteri di analisi del codice richiedono che tutti i file archiviati siano nel
 
 **La versione di ' {0} ' non è corretta. Il nome sicuro specificato nei criteri è ' {1} '.**
 
-Questo errore si applica ai progetti .NET. Una regola .dll richiesta dai criteri di analisi del codice esiste nel computer locale, ma la versione/chiave pubblica non corrisponde. Per correggere questo errore, l'autore dei criteri deve aggiornare le DLL nella directory *C:\Programmi\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules \\* nel computer.
+Questo errore si applica ai progetti .NET. Una regola .dll richiesta dai criteri di analisi del codice esiste nel computer locale, ma la versione/chiave pubblica non corrisponde. Per correggere l'errore, l'autore dei criteri deve aggiornare i file DLL nella directory *C:\Programmi\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules \\* nel computer.
 
-**' {0} ' l'assembly specificato nei criteri non esiste.**
+**{0}L'assembly ' specificato nei criteri non esiste.**
 
-Questo errore si applica ai progetti .NET. Una regola richiesta dai criteri di analisi del codice non dispone della DLL corrispondente installata nel computer client. Per correggere questo errore, l'autore dei criteri deve aggiornare la DLL nella directory *C:\Programmi\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules \\* nel computer.
+Questo errore si applica ai progetti .NET. Una regola richiesta dai criteri di analisi del codice non dispone della DLL corrispondente installata nel computer client. Per correggere l'errore, l'autore dei criteri deve aggiornare la DLL nella directory *C:\Programmi\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules \\* nel computer.
 
 **{0}Project Le impostazioni delle regole non sono conformi ai Code Analysis criteri.**
 
-Questo errore si applica ai progetti .NET. Le impostazioni delle regole del codice gestito non sono rigide come richiesto dal criterio. Per correggere questo errore, l'impostazione del client deve essere la stessa o più rigida rispetto ai requisiti dei criteri nel server.
+Questo errore si applica ai progetti .NET. Le impostazioni delle regole del codice gestito non sono restrittive come richiesto dal criterio. Per correggere l'errore, l'impostazione del client deve essere uguale o più restrittiva rispetto ai requisiti dei criteri nel server.
 
-**Code Analysis non è abilitato nella configurazione attiva. Passare alla configurazione {0} e compilare il progetto {1} prima di archiviare.**
+**Code Analysis non è abilitato nella configurazione attiva. Passare alla configurazione {0} e compilare il progetto {1} prima dell'archiviazione.**
 
-In la configurazione attiva non ha l'analisi del codice abilitata, ma è abilitata [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] almeno un'analisi del codice.
+In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la configurazione attiva non ha l'analisi del codice abilitata, ma è abilitata almeno un'analisi del codice.
 
-**È necessario abilitare Code Analysis file binari gestiti nelle proprietà del progetto e {0} compilare prima dell'archiviazione.**
+**È necessario abilitare Code Analysis per i file binari gestiti nelle proprietà del progetto {0} e compilare prima di archiviare.**
 
 Questo errore si applica alle [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] applicazioni .NET. I criteri richiedono l'esecuzione dell'analisi del codice gestito, ma non sono abilitati nel progetto corrente nel client.
 
 **È necessario abilitare Code Analysis nelle proprietà del {0} progetto e compilare prima di archiviare.**
 
-Questo errore è stato applicato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a progetti e progetti Web. I criteri richiedono l'esecuzione dell'analisi del codice gestito, ma non sono abilitati nel progetto corrente nel client.
+Questo errore si è applicato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a progetti e progetti Web. I criteri richiedono l'esecuzione dell'analisi del codice gestito, ma non sono abilitati nel progetto corrente nel client.
 
-**È necessario abilitare la compilazione Code Analysis C/C++ nelle proprietà del progetto {0} e compilare prima dell'archiviazione.**
+**È necessario abilitare C/C++ Code Analysis nelle proprietà del progetto {0} e compilare prima di archiviare.**
 
 Questo errore si applica ai progetti non gestiti. I criteri di analisi del codice Code Analysis per C/C++, ma non sono abilitati nel progetto corrente nel client.
 

@@ -1,7 +1,7 @@
 ---
 title: Rimuovere le violazioni dell'analisi del codice
 ms.date: 05/10/2021
-description: Informazioni su come eliminare le violazioni dell'analisi del codice in Visual Studio. Informazioni su come usare l'attributo SuppressMessageAttribute per l'eliminazione nel codice sorgente.
+description: Informazioni su come eliminare le violazioni dell'analisi del codice Visual Studio. Informazioni su come usare l'attributo SuppressMessageAttribute per l'eliminazione nel codice sorgente.
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 224de248715a75a3291869f4bc588384f662643f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631914"
 ---
 # <a name="suppress-code-analysis-violations"></a>Rimuovere le violazioni dell'analisi del codice
 
@@ -42,7 +42,7 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
 
 - **Dall'editor di codice**
 
-  Posizionare il cursore nella riga di codice con la violazione e premere **CTRL** + **PUNTO (.)** per aprire il menu **Azioni** rapide. Selezionare **Suppress CAXXXX (Elimina CAXXXX)** e quindi **scegliere in Source (Origine)** **o In Source (attribute) (Origine - attributo).**
+  Posizionare il cursore nella riga di codice con la violazione e premere **CTRL** + **PUNTO (.)** per aprire il menu **Azioni** rapide. Selezionare **Suppress CAXXXX (Elimina CAXXXX)** e quindi **scegliere in Origine** o In Origine **(attributo)**.
 
   Se si sceglie **in Origine**, viene visualizzata un'anteprima della direttiva per il preprocessore che verrà aggiunta al codice.
 
@@ -52,7 +52,7 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
   ::: moniker range=">=vs-2019"
   :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor.png" alt-text="Eliminare la diagnostica dal menu Azioni rapide":::
 
-  Se si sceglie **origine (attributo),** viene visualizzata un'anteprima dell'attributo [SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute) che verrà aggiunto al codice.
+  Se si sceglie **in Origine (attributo),** viene visualizzata un'anteprima dell'attributo [SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute) che verrà aggiunto al codice.
 
   :::image type="content" source="media/vs-2019/suppress-diagnostic-from-editor-attribute.png" alt-text="Eliminare la diagnostica dal menu Azioni rapide usando l'attributo":::
   ::: moniker-end
@@ -61,14 +61,14 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
 
   Selezionare le regole da eliminare, quindi fare clic con il pulsante destro del mouse e **scegliere Elimina**  >  **nell'origine.**
 
-  - Se si elimina Nell'origine **,** viene visualizzata la finestra di dialogo Anteprima modifiche [](/dotnet/visual-basic/language-reference/directives/directives) che mostra un'anteprima dell'avviso #pragma C# o della direttiva di avviso  [#Disable](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) Visual Basic aggiunta al codice sorgente.
+  - Se si elimina Nell'origine **,** viene visualizzata la finestra di dialogo Anteprima modifiche che mostra un'anteprima dell'avviso #pragma C# o della direttiva di avviso  [Visual Basic](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) [#Disable](/dotnet/visual-basic/language-reference/directives/directives) aggiunta al codice sorgente.
 
     ![Anteprima dell'aggiunta #pragma avviso nel file di codice](media/pragma-warning-preview.png)
 
   Nella finestra **di dialogo Anteprima** modifiche selezionare **Applica.**
 
   > [!NOTE]
-  > Se non viene visualizzata l'opzione di **menu** **Elimina** in Esplora soluzioni , è probabile che la violazione proviene dalla compilazione e non dall'analisi in tempo reale. **L'Elenco errori** visualizza la diagnostica, o violazioni delle regole, sia dall'analisi del codice in tempo reale che dalla compilazione. Poiché la diagnostica di compilazione può essere obsoleta, ad esempio se è stato modificato il codice per correggere la violazione ma non è stato ricompilato, non è possibile eliminare la diagnostica dall'Elenco **errori**. La diagnostica dall'analisi in tempo reale, o IntelliSense, è sempre aggiornata con le origini correnti e può essere eliminata **dall'Elenco errori**. Per escludere *la diagnostica* di  compilazione dalla selezione, impostare il filtro origine Elenco errori da Compilazione **+ IntelliSense** a Solo **IntelliSense.** Selezionare quindi la diagnostica che si vuole eliminare e procedere come descritto in precedenza.
+  > Se non viene visualizzata l'opzione di **menu** **Elimina** in Esplora soluzioni , è probabile che la violazione proviene dalla compilazione e non dall'analisi in tempo reale. **L'Elenco errori** visualizza la diagnostica, o violazioni delle regole, sia dall'analisi del codice in tempo reale che dalla compilazione. Poiché la diagnostica di compilazione può essere obsoleta, ad esempio, se il codice è stato modificato per correggere la violazione ma non è stato ricompilato, non è possibile eliminare la diagnostica dall'Elenco **errori**. La diagnostica dall'analisi in tempo reale, o IntelliSense, è sempre aggiornata con le origini correnti e può essere eliminata **dall'Elenco errori**. Per escludere *la diagnostica* di  compilazione dalla selezione, impostare il filtro origine Elenco errori da Compilazione **+ IntelliSense** a Solo **IntelliSense.** Selezionare quindi la diagnostica che si vuole eliminare e procedere come descritto in precedenza.
   >
   > ![Filtro di origine elenco errori in Visual Studio](media/error-list-filter.png)
 
@@ -76,7 +76,7 @@ In un **file EditorConfig** impostare la gravità su `none` , ad esempio `dotnet
 
 Il [file di eliminazione globale](#global-level-suppressions) usa l'attributo [SuppressMessage](#in-source-suppression-and-the-suppressmessage-attribute).
 
-- In **Elenco errori selezionare** le regole da eliminare, quindi fare clic con il pulsante destro del mouse e scegliere Elimina in File  >  **di eliminazione**. Verrà **visualizzata la finestra** di dialogo Anteprima modifiche che mostra <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> un'anteprima dell'attributo aggiunto al file delle eliminazioni globali.
+- In **Elenco errori selezionare** le regole da eliminare, quindi fare clic con il pulsante destro del mouse e scegliere Elimina in File  >  **di eliminazione**. Viene **visualizzata la finestra** di dialogo Anteprima modifiche che mostra <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> un'anteprima dell'attributo aggiunto al file delle eliminazioni globali.
 
   ![Anteprima dell'aggiunta dell'attributo SuppressMessage al file di eliminazione](media/preview-changes-in-suppression-file.png)
 
@@ -89,22 +89,22 @@ Il [file di eliminazione globale](#global-level-suppressions) usa l'attributo [S
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-- Dal menu **Analizza** selezionare Analizza Esegui **Code Analysis** elimina problemi attivi sulla barra dei menu per eliminare  >   tutte le violazioni correnti. Questa operazione viene talvolta definita "baselining".
+- Dal menu **Analizza** selezionare Analizza **Esegui** Code Analysis elimina problemi attivi sulla barra dei menu per eliminare tutte le violazioni  >   correnti. Questa operazione viene talvolta definita "baselining".
 ::: moniker-end
 
 ## <a name="suppress-violations-using-project-settings"></a>Eliminare le violazioni usando le impostazioni del progetto
 
-Da **Esplora soluzioni** aprire le proprietà per il progetto **(fare** clic con il pulsante destro del mouse sul progetto e scegliere Proprietà (o **premere ALT+INVIO)** e usare la scheda Code Analysis **per** configurare le opzioni. Ad esempio, è possibile disabilitare l'analisi del codice in tempo reale o disabilitare gli analizzatori .NET.
+Da **Esplora soluzioni** aprire le proprietà per il progetto (fare clic con il pulsante destro del mouse sul progetto e scegliere Proprietà **(o** **premere ALT+INVIO)** e usare la scheda Code Analysis **per** configurare le opzioni. Ad esempio, è possibile disabilitare l'analisi del codice in tempo reale o disabilitare gli analizzatori .NET.
 
 ## <a name="suppress-violations-using-a-rule-set"></a>Eliminare le violazioni usando un set di regole
 
-**Nell'editor del set di** regole deselezionare la casella di controllo accanto al nome o impostare **Azione** **su Nessuno.**
+**Nell'editor del set di regole** deselezionare la casella di controllo accanto al nome o impostare **Azione** **su Nessuno.**
 
 ## <a name="in-source-suppression-and-the-suppressmessage-attribute"></a>Eliminazione nel codice sorgente e attributo SuppressMessage
 
 L'eliminazione nel codice sorgente (ISS) usa <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> l'attributo per eliminare un avviso. L'attributo può essere posizionato vicino al segmento di codice che ha generato l'avviso. È possibile aggiungere l'attributo al file di origine digitandolo oppure usare il menu di scelta rapida in un avviso in Elenco errori <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> per aggiungerlo  automaticamente.
 
-L'attributo è un attributo condizionale, incluso nei metadati IL dell'assembly di codice gestito, solo se il simbolo di compilazione CODE_ANALYSIS è definito <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> in fase di compilazione.
+L'attributo è un attributo condizionale, incluso nei metadati IL dell'assembly di codice gestito, solo se il simbolo di compilazione CODE_ANALYSIS è definito in fase <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> di compilazione.
 
 In C++/CLI usare le macro CA SUPPRESS MESSAGE o CA GLOBAL SUPPRESS_MESSAGE nel file di intestazione \_ \_ per aggiungere \_ \_ l'attributo .
 
@@ -114,7 +114,7 @@ In C++/CLI usare le macro CA SUPPRESS MESSAGE o CA GLOBAL SUPPRESS_MESSAGE nel f
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto Visual Studio 2017, si potrebbero improvvisamente verificare numerosi avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile sopprimerli tutti selezionando Analizza e Code Analysis  >  **elimina problemi attivi.**
+> Se si esegue la migrazione di un progetto Visual Studio 2017, si potrebbero improvvisamente verificare numerosi avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile sopprimerli tutti selezionando Analizza e Code Analysis e quindi Elimina  >  **problemi attivi.**
 >
 > ![Eseguire l'analisi del codice ed eliminare i problemi Visual Studio](media/suppress-active-issues.png)
 
@@ -177,11 +177,11 @@ Quando vengono visualizzati avvisi in Visual Studio, è possibile visualizzare e
 
 Code Analysis avvisi vengono eliminati al livello a cui viene <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> applicato l'attributo. Ad esempio, l'attributo può essere applicato a livello di assembly, modulo, tipo, membro o parametro. Lo scopo di questa operazione è quello di accoppiare strettamente le informazioni di eliminazione al codice in cui si verifica la violazione.
 
-La forma generale di eliminazione include la categoria della regola e un identificatore di regola, che contiene una rappresentazione leggibile facoltativa del nome della regola. Esempio:
+La forma generale di eliminazione include la categoria della regola e un identificatore di regola, che contiene una rappresentazione leggibile facoltativa del nome della regola. Ad esempio:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-Se esistono rigidi motivi di prestazioni per ridurre al minimo i metadati di eliminazione nell'origine, il nome della regola può essere omesso. La categoria di regole e il relativo ID regola insieme costituiscono un identificatore di regola sufficientemente univoco. Esempio:
+Se esistono rigidi motivi di prestazioni per ridurre al minimo i metadati di eliminazione nell'origine, il nome della regola può essere omesso. La categoria di regole e il relativo ID regola insieme costituiscono un identificatore di regola sufficientemente univoco. Ad esempio:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

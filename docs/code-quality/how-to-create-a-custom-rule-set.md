@@ -1,7 +1,7 @@
 ---
 title: Creare un set di regole di analisi del codice personalizzato
 ms.date: 11/02/2018
-description: Informazioni su come personalizzare i set di regole di analisi del codice in Visual Studio. Informazioni su come creare nuovi set da zero o da set esistenti. Informazioni sulla precedenza delle regole.
+description: Informazioni su come personalizzare i set di regole di analisi del codice in Visual Studio. Vedere come creare nuovi set da zero o da set esistenti. Informazioni sulla precedenza delle regole.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
@@ -15,27 +15,27 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 181f94ccc9b83053673e49746d757708afdbf966
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631980"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
-È possibile creare un set di regole personalizzato per soddisfare esigenze specifiche del progetto per l'analisi del codice.
+È possibile creare un set di regole personalizzato per soddisfare specifiche esigenze di progetto per l'analisi del codice.
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Creare un set di regole personalizzato da un set di regole esistente
 
 Per creare un set di regole personalizzato, è possibile aprire un set di regole predefinito **nell'editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola, ad esempio visualizzare un avviso &mdash; o un errore.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e quindi **scegliere Proprietà.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e quindi scegliere **Proprietà**.
 
-2. Nella pagina **Proprietà** selezionare la scheda **Code Analysis** proprietà.
+2. Nella pagina **Proprietà** selezionare la **scheda** Code Analysis predefinita.
 
 ::: moniker range="vs-2017"
 
-3. **Nell'elenco a discesa Run this rule set** (Esegui questo set di regole) eseguire una delle operazioni seguenti:
+3. **Nell'elenco a discesa Esegui questo set** di regole eseguire una delle operazioni seguenti:
 
 ::: moniker-end
 
@@ -49,20 +49,20 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
      \- - oppure -
 
-   - Selezionare **\<Browse>** questa opzione per specificare un set di regole esistente non in elenco.
+   - Selezionare **\<Browse>** questa opzione per specificare un set di regole esistente non presente nell'elenco.
 
 4. Selezionare **Apri** per visualizzare le regole nell'editor del set di regole.
 
 > [!NOTE]
-> Se si ha un progetto .NET Core o .NET Standard, il processo è leggermente diverso perché la scheda **Code Analysis** nelle proprietà del progetto non supporta le stesse opzioni. Seguire i passaggi per copiare un set di regole [predefinito nel progetto e impostarlo come set di regole attivo.](/dotnet/fundamentals/code-analysis/code-quality-rule-options) Dopo aver copiato un set di regole, è possibile modificarlo [nell'editor](working-in-the-code-analysis-rule-set-editor.md) Visual Studio set di regole aprendolo **da Esplora soluzioni**.
+> Se si dispone di un progetto .NET Core o .NET Standard, il processo è leggermente diverso **perché** la scheda Code Analysis nelle proprietà del progetto non supporta le stesse opzioni. Seguire la procedura per [copiare un set di regole predefinito nel progetto e impostarlo come set di regole attivo.](/dotnet/fundamentals/code-analysis/code-quality-rule-options) Dopo aver copiato un set di regole, è possibile modificarlo [nell'editor](working-in-the-code-analysis-rule-set-editor.md) Visual Studio set di regole aprendolo **da Esplora soluzioni**.
 
 ## <a name="create-a-new-rule-set"></a>Creare un nuovo set di regole
 
 È possibile creare un nuovo file del set di regole dalla **finestra di dialogo Nuovo file:**
 
-1. Selezionare **File**  >  **Nuovo**  >  **file** o premere **CTRL** + **N.**
+1. Selezionare **File**  >  **nuovo**  >  **file** o premere  + **CTRL+N.**
 
-2. Nella finestra **di dialogo** Nuovo file selezionare la **categoria Generale** a sinistra e quindi selezionare Code Analysis set **di regole.**
+2. Nella finestra **di dialogo Nuovo file** selezionare la **categoria** Generale a sinistra e quindi selezionare Code Analysis set **di regole**.
 
 3. Selezionare **Open** (Apri).
 
@@ -73,9 +73,9 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 > [!NOTE]
 > La procedura seguente non si applica ai progetti .NET Core o .NET Standard, che non supportano le stesse funzionalità nella scheda Code Analysis **proprietà.**
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e quindi **scegliere Proprietà.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e quindi scegliere **Proprietà**.
 
-2. Nella pagina **Proprietà** selezionare la scheda **Code Analysis** proprietà.
+2. Nella pagina **Proprietà** selezionare la **scheda** Code Analysis predefinita.
 
 ::: moniker range="vs-2017"
 
@@ -85,7 +85,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ::: moniker range=">=vs-2019"
 
-3. Selezionare **\<Choose multiple rule sets>** da **Regole attive.**
+3. Selezionare **\<Choose multiple rule sets>** da Regole **attive**.
 
 ::: moniker-end
 
@@ -93,15 +93,15 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
    ![Finestra di dialogo Aggiungi o rimuovi set di regole](media/add-remove-rule-sets.png)
 
-5. Selezionare **Salva con nome,** immettere un nome per il file con estensione *ruleset* e quindi selezionare **Salva.**
+5. Selezionare **Salva con nome,** immettere un nome per il file *con estensione ruleset* e quindi selezionare **Salva**.
 
-   Il nuovo set di regole viene selezionato **nell'elenco Esegui questo set di** regole .
+   Il nuovo set di regole viene selezionato **nell'elenco Esegui questo set di** regole.
 
 6. Selezionare **Apri** per aprire il nuovo set di regole nell'editor del set di regole.
 
 ## <a name="rule-precedence"></a>Precedenza delle regole
 
-- Se la stessa regola è elencata due o più volte in un set di regole con livelli di gravità diversi, il compilatore genera un errore. Esempio:
+- Se la stessa regola è elencata due o più volte in un set di regole con livelli di gravità diversi, il compilatore genera un errore. Ad esempio:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -112,11 +112,11 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
    </RuleSet>
    ```
 
-- Se la stessa regola è elencata due o  più volte in un set di regole con lo stesso livello di gravità, è possibile che nell'Elenco errori venga visualizzato **l'avviso seguente:**
+- Se la stessa regola è elencata due o  più volte in un set di regole con la stessa gravità, è possibile che nell'Elenco errori venga visualizzato **l'avviso seguente:**
 
-   **CA0063: Non è stato possibile caricare il file del set di regole \[ 'your].ruleset' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
+   **CA0063: Impossibile caricare il file del set di regole \[ 'your].ruleset' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
 
-- Se il set di regole include un set di regole figlio usando un tag **Include** e la regola figlio e la regola padre elencano entrambi la stessa regola ma con livelli di gravità diversi, la gravità nel set di regole padre ha la precedenza. Esempio:
+- Se il set di regole include un set di regole figlio usando un tag **Include** e i set di regole figlio e padre elencano entrambi la stessa regola ma con livelli di gravità diversi, la gravità nel set di regole padre ha la precedenza. Ad esempio:
 
    ```xml
    <!-- Parent rule set -->
@@ -139,11 +139,11 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ## <a name="name-and-description"></a>Nome e descrizione
 
-Per modificare il nome visualizzato di un set di regole  aperto nell'editor, aprire la finestra Proprietà selezionando Visualizza finestra Proprietà   >   sulla barra dei menu. Immettere il nome visualizzato nella **casella** Nome . È anche possibile immettere una descrizione per il set di regole.
+Per modificare il nome visualizzato di un set di regole  aperto nell'editor, aprire la finestra Proprietà selezionando **Visualizza** finestra  >  **Proprietà** sulla barra dei menu. Immettere il nome visualizzato nella **casella** Nome . È anche possibile immettere una descrizione per il set di regole.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Ora che è disponibile un set di regole, il passaggio successivo consiste nel personalizzare le regole aggiungendo o rimuovendo regole o modificando la gravità delle violazioni delle regole.
+Dopo aver creato un set di regole, il passaggio successivo consiste nel personalizzare le regole aggiungendo o rimuovendo regole o modificando la gravità delle violazioni delle regole.
 
 > [!div class="nextstepaction"]
 > [Modificare le regole nell'editor del set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

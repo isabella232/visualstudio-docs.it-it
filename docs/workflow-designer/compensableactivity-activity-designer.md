@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: b3334b2be145dd01bd89fcc0b0d792238e9a684f
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963378"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633715"
 ---
 # <a name="compensableactivity-activity-designer"></a>ActivityDesigner CompensableActivity
 
@@ -40,8 +40,8 @@ ms.locfileid: "123963378"
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.CompensableActivity>. Il valore predefinito è CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Specifica il valore restituito di <xref:System.Activities.Statements.CompensableActivity>. Questa proprietà deve essere modificata nella griglia delle proprietà.|
 |<xref:System.Activities.Statements.CompensableActivity.Body%2A>|Vero|Specifica l'attività per la quale viene fornita la logica di compensazione, di annullamento e di conferma. Per aggiungere <xref:System.Activities.Statements.CompensableActivity.Body%2A> l'attività, rilasciare un'attività dalla **casella** degli strumenti nella **casella Corpo** dell'ActivityDesigner **CompensableActivity.** Aggiungere il testo del suggerimento "Drop activity here".|
-|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|Falso|Specifica l'attività eseguita in caso di annullamento. Per aggiungere l'attività, rilasciare la finestra di progettazione dalla **casella** degli strumenti nella **casella CancellationHandler** dell'ActivityDesigner **CompensableActivity.** Aggiungere il testo del suggerimento "Drop Activity Here".|
-|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|Falso|Specifica l'attività da eseguire quando si esegue la compensazione per l'attività <xref:System.Activities.Statements.CompensableActivity.Body%2A>. È possibile richiamare questo gestore in modo esplicito usando l'attività <xref:System.Activities.Statements.Compensate>.<br /><br /> Per aggiungere l'attività, rilasciare l'ActivityDesigner dalla **casella** degli strumenti nella casella **CompensationHandler** dell'ActivityDesigner **CompensableActivity.** Aggiungere il testo del suggerimento "Drop Activity Here".|
+|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|Falso|Specifica l'attività eseguita in caso di annullamento. Per aggiungere l'attività, rilasciare la finestra **di** progettazione dalla casella degli strumenti nella **casella CancellationHandler** dell'ActivityDesigner **CompensableActivity.** Aggiungere il testo del suggerimento "Drop Activity Here".|
+|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|Falso|Specifica l'attività da eseguire quando si esegue la compensazione per l'attività <xref:System.Activities.Statements.CompensableActivity.Body%2A>. È possibile richiamare questo gestore in modo esplicito usando l'attività <xref:System.Activities.Statements.Compensate>.<br /><br /> Per aggiungere l'attività, rilasciare l'ActivityDesigner **dalla** casella degli strumenti nella casella **CompensationHandler** dell'ActivityDesigner **CompensableActivity.** Aggiungere il testo del suggerimento "Drop Activity Here".|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|Falso|Specifica l'attività da eseguire quando si conferma l'attività <xref:System.Activities.Statements.CompensableActivity.Body%2A>. È possibile richiamare questo gestore in modo esplicito usando l'attività <xref:System.Activities.Statements.Confirm>.<br /><br /> Per aggiungere l'attività, rilasciare l'ActivityDesigner dalla casella degli **strumenti** nella casella **ConfirmationHandler** dell'ActivityDesigner **CompensableActivity.** Aggiungere il testo del suggerimento "Drop Activity Here".|
 
 ## <a name="see-also"></a>Vedi anche

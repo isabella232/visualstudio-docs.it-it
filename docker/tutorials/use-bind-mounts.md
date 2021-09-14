@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 870bc951d9f05c0075140cca22481685dc88ed01
-ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "123230365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633451"
 ---
 # <a name="use-bind-mounts"></a>Usare montanti di binding
 
@@ -52,11 +52,11 @@ Per eseguire il contenitore per supportare un flusso di lavoro di sviluppo, eseg
     docker run -dp 3000:3000 -w /app -v ${PWD}:/app node:12-alpine sh -c "yarn install && yarn run dev"
     ```
 
-    - `-dp 3000:3000` : come in precedenza. Eseguire in modalità scollegata (in background) e creare un mapping delle porte
+    - `-dp 3000:3000` : uguale a prima. Eseguire in modalità scollegata (in background) e creare un mapping delle porte
     - `-w /app` : imposta la "directory di lavoro" o la directory corrente da cui verrà eseguito il comando
     - `-v ${PWD}:/app"` - Associare il montaggio della directory corrente dall'host nel contenitore alla `/app` directory
     - `node:12-alpine` : immagine da usare. Si noti che si tratta dell'immagine di base per l'app dal Dockerfile
-    - `sh -c "yarn install && yarn run dev"` : il comando . Si avvia una shell usando (alpine non ha ) ed è in esecuzione per installare tutte le `sh` `bash` `yarn install` dipendenze e quindi eseguire  `yarn run dev` . Se si osserva in `package.json` , verrà visualizzato che lo script sta `dev` avviando `nodemon` .
+    - `sh -c "yarn install && yarn run dev"` : il comando . Si avvia una shell con (alpine non ha ) ed è in esecuzione per installare tutte le `sh` `bash` `yarn install` dipendenze e quindi eseguire  `yarn run dev` . Se si osserva in `package.json` , verrà visualizzato che lo script sta `dev` avviando `nodemon` .
 
 1. È possibile controllare i log usando `docker logs -f <container-id>` . Si saprà di essere pronti per iniziare quando viene visualizzato questo:
 
@@ -80,13 +80,13 @@ Per eseguire il contenitore per supportare un flusso di lavoro di sviluppo, eseg
     +                         {submitting ? 'Adding...' : 'Add'}
     ```
 
-1. È sufficiente aggiornare la pagina (o aprirla) e la modifica dovrebbe essere riflessa quasi immediatamente nel browser. Il riavvio del server Node potrebbe richiedere alcuni secondi, quindi se si verifica un errore, provare ad eseguire l'aggiornamento dopo alcuni secondi.
+1. È sufficiente aggiornare la pagina (o aprirla) per visualizzare la modifica riflessa quasi immediatamente nel browser. Il riavvio del server Node potrebbe richiedere alcuni secondi, quindi se si verifica un errore, provare ad eseguire l'aggiornamento dopo alcuni secondi.
 
     ![Screenshot dell'etichetta aggiornata per il pulsante Aggiungi](media/updated-add-button.png)
 
 1. È possibile apportare qualsiasi altra modifica che si desidera apportare. Al termine, arrestare il contenitore e compilare la nuova immagine usando `docker build -t getting-started .` .
 
-L'uso di montamenti di binding *è molto* comune per le configurazioni di sviluppo locale. Il vantaggio è che non è necessario che nel computer di sviluppo siano installati tutti gli strumenti e gli ambienti di compilazione. Con un singolo `docker run` comando, l'ambiente di sviluppo viene estratto e pronto per l'uso. Si apprenderà come Docker Compose in un passaggio futuro, in quanto ciò consente di semplificare i comandi (si stanno già ricevendo molti flag).
+L'uso di montamenti di binding *è molto* comune per le configurazioni di sviluppo locale. Il vantaggio è che non è necessario che nel computer di sviluppo siano installati tutti gli strumenti e gli ambienti di compilazione. Con un singolo `docker run` comando, l'ambiente di sviluppo viene estratto e pronto per l'uso. Verranno fornite informazioni sulle Docker Compose in un passaggio futuro, in quanto ciò consente di semplificare i comandi (si stanno già ricevendo molti flag).
 
 ## <a name="recap"></a>Riepilogo
 

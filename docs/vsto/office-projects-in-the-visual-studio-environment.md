@@ -1,6 +1,6 @@
 ---
 title: Office progetti nell'ambiente Visual Studio
-description: Informazioni su come Microsoft Office progetti hanno un'esperienza di sviluppo simile ad altri tipi di progetti in Visual Studio, ad esempio progetti Windows Form.
+description: Informazioni su Microsoft Office progetti con un'esperienza di sviluppo simile ad altri tipi di progetti in Visual Studio, ad esempio i progetti Windows Form.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -45,11 +45,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 1fb601543c6650fc87be15adcd7ffc2e689d575f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633843"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Office progetti nell'ambiente Visual Studio
   L'esperienza di sviluppo relativa ai progetti di Microsoft Office è simile a quella per altri tipi di progetti in Visual Studio, ad esempio progetti Windows Form. Quando si crea o si apre un progetto di Office, gli elementi del progetto vengono visualizzati in **Esplora soluzioni**. Per i progetti a livello di documento, il documento (ossia il documento di Word o la cartella di lavoro di Excel) viene aperto in Visual Studio e funziona come una finestra di progettazione visiva.
@@ -67,9 +67,9 @@ ms.locfileid: "122082855"
 
   In un progetto di componente aggiuntivo VSTO, in **Esplora soluzioni** sono illustrati gli elementi predefiniti seguenti:
 
-- Il nodo dell'applicazione. Questo nodo ha lo stesso nome dell'applicazione host, ad esempio **Word**, **Excel** oppure **Outlook**. Il nodo dell'applicazione contiene il file di codice ThisAddIn. Fornisce anche la proprietà **Spazio dei nomi per elemento host** . Per altre informazioni su questa proprietà, vedere [Proprietà nei Office progetti](../vsto/properties-in-office-projects.md).
+- Il nodo dell'applicazione. Questo nodo ha lo stesso nome dell'applicazione host, ad esempio **Word**, **Excel** oppure **Outlook**. Il nodo dell'applicazione contiene il file di codice ThisAddIn. Fornisce anche la proprietà **Spazio dei nomi per elemento host** . Per altre informazioni su questa proprietà, vedere [Proprietà in Office progetti](../vsto/properties-in-office-projects.md).
 
-- Il file di codice ThisAddIn. Questo file contiene la classe `ThisAddIn` generata per il componente aggiuntivo VSTO. Per altre informazioni su questa classe, vedere [Componenti VSTO componenti aggiuntivi .](../vsto/programming-vsto-add-ins.md)
+- Il file di codice ThisAddIn. Questo file contiene la classe `ThisAddIn` generata per il componente aggiuntivo VSTO. Per altre informazioni su questa classe, [vedere Componenti VSTO componenti aggiuntivi](../vsto/programming-vsto-add-ins.md).
 
 - I file di progetto nascosti per i quali non è prevista la modifica diretta. Per altre informazioni, vedere [File di progetto nascosti](#hiddenfiles).
 
@@ -125,5 +125,5 @@ ms.locfileid: "122082855"
 
 - [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)
 - [Office dei modelli di progetto](../vsto/office-project-templates-overview.md)
-- [Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Procedura: Creare Office progetti in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Proprietà nei Office progetto](../vsto/properties-in-office-projects.md)

@@ -1,6 +1,6 @@
 ---
 title: -DebugExe (devenv.exe)
-description: Informazioni su come usare l'opzione della riga di comando Devenv DebugExe per aprire un file eseguibile specificato di cui eseguire il debug.
+description: Informazioni su come usare l'opzione della riga di comando DebugExe devenv per aprire un file eseguibile specificato di cui eseguire il debug.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c65427c3228697b4d9e0faa07943f6e5ba7cc29
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634420"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 

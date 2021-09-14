@@ -25,11 +25,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 1b378eef2c5bb6d18d60f7680a3a4fbdf64c69fd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634276"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -248,5 +248,5 @@ In visualizzazione tabella è possibile visualizzare fino a quattro tabelle non 
 - [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analizzare i risultati del test di carico nella visualizzazione Grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Gestire i risultati del test di carico nel repository Risultati test carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gestire i risultati del test di carico nel repository di Risultati test carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Cenni preliminari sul riepilogo dei risultati dei test di carico](../test/load-test-results-summary-overview.md)

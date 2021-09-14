@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 ms.openlocfilehash: f8cbf3bf8388be7a9605d394cc351a2cbf6113fc
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123397868"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627935"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
 
@@ -40,7 +40,7 @@ Visual Studio 2019 è necessario per seguire la procedura illustrata in questo a
 Visual Studio 2017 è necessario per seguire la procedura illustrata in questo articolo.
 ::: moniker-end
 
-Queste procedure sono state testate in queste configurazioni server:
+Queste procedure sono state testate in queste configurazioni del server:
 
 * Windows Server 2012 R2 e IIS 8 (per Windows Server 2008 R2, i passaggi del server sono diversi)
 
@@ -57,7 +57,7 @@ Questo articolo include i passaggi per configurare una configurazione di base di
 
 * Se l'app è in esecuzione in IIS e si vuole solo scaricare il debugger remoto e avviare il debug, passare a Scaricare e installare gli strumenti remoti [in Windows Server.](#BKMK_msvsmon)
 
-* Per assicurarsi che l'app sia configurata, distribuita ed eseguita correttamente in IIS in modo da poter eseguire il debug, seguire tutti i passaggi descritti in questo argomento.
+* Per assicurarsi che l'app sia configurata, distribuita ed eseguita correttamente in IIS in modo da poter eseguire il debug, seguire tutti i passaggi di questo argomento.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creare l'ASP.NET 4.5.2 nel computer Visual Studio
 
@@ -67,7 +67,7 @@ Questo articolo include i passaggi per configurare una configurazione di base di
     In Visual Studio 2019 digitare **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere Modelli **,** quindi scegliere Crea nuova applicazione Web **ASP.NET (.NET Framework).** Nella finestra di dialogo visualizzata assegnare al progetto il nome **MyASPApp** e quindi scegliere **Crea.** Selezionare **MVC** e scegliere **Crea.**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    A tale scopo in Visual Studio 2017, scegliere **File > Nuovo > Project**, quindi selezionare Visual **C# > Web > ASP.NET Web Application**. Nella sezione modelli **ASP.NET 4.5.2** selezionare **MVC**. Assicurarsi che **l'opzione Abilita supporto Docker** non sia selezionata e che **l'opzione Autenticazione** sia impostata **su Nessuna autenticazione**. Assegnare al progetto **il nome MyASPApp.**
+    A tale scopo in Visual Studio 2017, scegliere **File > Nuovo > Project**, quindi selezionare Visual **C# > Web > ASP.NET Web Application**. Nella sezione modelli **ASP.NET 4.5.2** selezionare **MVC**. Assicurarsi che **l'opzione Abilita supporto Docker** non sia selezionata e che **Autenticazione** sia impostata **su Nessuna autenticazione**. Assegnare al progetto **il nome MyASPApp.**
     ::: moniker-end
 
 2. Aprire il file  *HomeController.cs* e impostare un punto di interruzione nel `About()` metodo .
@@ -89,7 +89,7 @@ Quando si scarica il software, è possibile che si otterrà una richiesta di con
 
 ## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a>Installare ASP.NET 4.5 in Windows Server
 
-Per informazioni più dettagliate sull'installazione di ASP.NET in IIS, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (IIS 8.0 Con ASP.NET 3.5 e ASP.NET 4.5).](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+Per informazioni più dettagliate sull'installazione di ASP.NET in IIS, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (Iis 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 ( Iis 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 ( Iis 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)).
 
 1. Nel riquadro sinistro di Server Manager selezionare **IIS.** Fare clic con il pulsante destro del mouse sul server **e scegliere Gestione Internet Information Services (IIS).**
 
@@ -155,11 +155,11 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 1. Aprire Windows Explorer e creare una nuova cartella, **C:\Publish,** in cui in seguito si distribuirà ASP.NET progetto.
 
-2. Se non è già aperto, aprire Gestione **Internet Information Services (IIS).** (Nel riquadro sinistro di Server Manager selezionare **IIS.** Fare clic con il pulsante destro del mouse sul server e selezionare **Gestione Internet Information Services (IIS)**.
+2. Se non è già aperto, aprire gestione **Internet Information Services (IIS).** (Nel riquadro sinistro di Server Manager selezionare **IIS.** Fare clic con il pulsante destro del mouse sul server e selezionare **Gestione Internet Information Services (IIS)**.
 
 3. In **Connessioni** nel riquadro sinistro passare a **Siti**.
 
-4. Selezionare il **sito Web predefinito,** scegliere **Impostazioni** di base e impostare **Percorso fisico** su **C:\Publish.**
+4. Selezionare il **sito Web predefinito,** scegliere **Basic Impostazioni** e impostare **Percorso fisico** su **C:\Publish.**
 
 5. Fare clic con il pulsante destro del mouse sul nodo **Sito Web predefinito** e scegliere **Aggiungi applicazione**.
 
@@ -205,15 +205,15 @@ Scaricare la versione degli strumenti remoti corrispondente alla versione di Vis
 
 Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [Eseguire il debugger remoto come servizio.](../debugger/remote-debugging.md#bkmk_configureService)
 
-## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Connettersi all ASP.NET app applicazione dal computer Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Connettersi all ASP.NET appalto dal computer Visual Studio
 
-1. Nel computer Visual Studio aprire la soluzione di cui si sta tentando di eseguire il debug (**MyASPApp** se si stanno seguendo i passaggi descritti in questo articolo).
-2. In Visual Studio fare clic su **Debug > Collega a processo** (CTRL+ALT+P).
+1. Nel computer Visual Studio aprire la soluzione di cui si sta tentando di eseguire il debug (**MyASPApp** se si segue la procedura descritta in questo articolo).
+2. In Visual Studio fare clic su **Debug > collega a processo** (CTRL+ALT+P).
 
     > [!TIP]
-    > In Visual Studio 2017 e versioni successive è possibile ricollegare lo stesso processo a cui è stato precedentemente collegato usando Debug > Ricollegare **a processo...** (MAIUSC+ALT+P).
+    > In Visual Studio 2017 e versioni successive, è possibile ricollegare allo stesso processo precedentemente collegato usando Debug **> Ricollegare a processo...** (MAIUSC+ALT+P).
 
-3. Impostare il campo Qualificatore **\<remote computer name>** su e premere **INVIO.**
+3. Impostare il campo Qualificatore su **\<remote computer name>** e premere **INVIO.**
 
     Verificare che Visual Studio la porta necessaria al nome del computer, che viene visualizzato nel formato: **\<remote computer name> :p ort**
 
@@ -223,7 +223,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [Eseg
     ::: moniker range="vs-2017"
     In Visual Studio 2017 dovrebbe essere visualizzato **\<remote computer name> :4022**
     ::: moniker-end
-    La porta è obbligatoria. Se il numero di porta non è visualizzato, aggiungerlo manualmente.
+    La porta è obbligatoria. Se il numero di porta non viene visualizzato, aggiungerlo manualmente.
 
 4. Fare clic su **Aggiorna**.
     Nella finestra **Processi disponibili** verranno visualizzati alcuni processi.
@@ -232,9 +232,9 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [Eseg
 
 5. Selezionare  **Mostra i processi di tutti gli utenti**.
 
-6. Digitare la prima lettera del nome di un processo per trovare rapidamentew3wp.exe **per** ASP.NET 4.5.
+6. Digitare la prima lettera del nome di un processo per **trovare** rapidamentew3wp.exeper ASP.NET 4.5.
 
-    Se sono presenti più processi che **w3wp.exe,** controllare la **colonna Nome** utente. In alcuni scenari la colonna **Nome utente** mostra il nome del pool di app, ad esempio **IIS APPPOOL\DefaultAppPool**. Se viene visualizzato il pool di app, un modo semplice per identificare il processo corretto è creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug e quindi è possibile trovarlo facilmente nella colonna Nome **utente.**
+    Se sono presenti più processi che **w3wp.exe,** controllare la **colonna Nome** utente. In alcuni scenari la colonna **Nome utente** mostra il nome del pool di app, ad esempio **IIS APPPOOL\DefaultAppPool.** Se viene visualizzato il pool di app, un modo semplice per identificare il processo corretto è creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug e quindi trovarlo facilmente nella colonna **Nome** utente.
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
@@ -243,12 +243,12 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [Eseg
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. Fare clic **su Collega**
+7. Fare clic **su Allega**
 
 8. Aprire il sito Web del computer remoto. In un browser passare a **http:// \<remote computer name>**.
 
     Verrà visualizzata la pagina Web ASP.NET.
-9. Nell'applicazione ASP.NET in esecuzione fare clic sul collegamento alla **pagina** Informazioni su .
+9. Nell'applicazione ASP.NET in esecuzione fare clic sul collegamento alla **pagina** Informazioni su.
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
@@ -256,14 +256,14 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [Eseg
 
 - Se non è possibile connettersi all'host usando il nome host, provare l'indirizzo IP.
 - Assicurarsi che le porte necessarie siano aperte nel server remoto.
-- Verificare che la versione ASP.NET usata nell'app sia uguale a quella installata nel server. Per l'app, è possibile visualizzare e impostare la versione nella **pagina** Proprietà. Per impostare l'app su una versione diversa, è necessario installare tale versione.
-- Se l'app ha tentato di aprire, ma viene visualizzato un avviso relativo al certificato, scegliere di considerare attendibile il sito. Se l'avviso è già stato chiuso, è possibile modificare il profilo di pubblicazione, un file *.pubxml, nel progetto e aggiungere l'elemento seguente (solo per test): `<AllowUntrustedCertificate>true</AllowUntrustedCertificate>`
-- Se l'app non viene avviata da Visual Studio, avviare l'app in IIS per verificare che sia stata distribuita correttamente.
+- Verificare che la versione di ASP.NET usata nell'app sia la stessa della versione installata nel server. Per l'app, è possibile visualizzare e impostare la versione nella **pagina** Proprietà. Per impostare l'app su una versione diversa, è necessario installare tale versione.
+- Se l'app ha provato ad aprire, ma viene visualizzato un avviso relativo al certificato, scegliere di considerare attendibile il sito. Se l'avviso è già stato chiuso, è possibile modificare il profilo di pubblicazione, un file *.pubxml, nel progetto e aggiungere l'elemento seguente (solo per test): `<AllowUntrustedCertificate>true</AllowUntrustedCertificate>`
+- Se l'app non viene avviata Visual Studio, avviare l'app in IIS per verificare che sia stata distribuita correttamente.
 - Controllare la finestra Output in Visual Studio informazioni sullo stato e controllare i messaggi di errore.
 - 
 ## <a name="open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a>Aprire le porte necessarie in Windows Server
 
-Nella maggior parte delle installazioni, le porte necessarie vengono aperte dall'installazione ASP.NET e dal debugger remoto. Tuttavia, potrebbe essere necessario verificare che le porte siano aperte.
+Nella maggior parte delle configurazioni, le porte necessarie vengono aperte dall'installazione di ASP.NET e del debugger remoto. Tuttavia, potrebbe essere necessario verificare che le porte siano aperte.
 
 > [!NOTE]
 > In una macchina virtuale di Azure è necessario aprire le porte tramite il [gruppo di sicurezza di rete](/azure/virtual-machines/windows/nsg-quickstart-portal).
@@ -272,17 +272,17 @@ Porte necessarie:
 
 * 80 - Obbligatorio per IIS
 ::: moniker range=">=vs-2019"
-* 4024 : obbligatorio per il debug remoto da Visual Studio 2019. Per altre informazioni, vedere Assegnazioni delle porte del [debugger](../debugger/remote-debugger-port-assignments.md) remoto.
+* 4024 : obbligatorio per il debug remoto da Visual Studio 2019 (per altre informazioni, vedere [Assegnazioni](../debugger/remote-debugger-port-assignments.md) delle porte del debugger remoto).
 ::: moniker-end
 ::: moniker range="vs-2017"
-* 4022 : obbligatorio per il debug remoto da Visual Studio 2017. Per altre informazioni, vedere Assegnazioni delle porte del [debugger](../debugger/remote-debugger-port-assignments.md) remoto.
+* 4022 : obbligatorio per il debug remoto da Visual Studio 2017 (per altre informazioni, vedere [Assegnazioni](../debugger/remote-debugger-port-assignments.md) di porte del debugger remoto).
 ::: moniker-end
-* UDP 3702 : porta di individuazione  (facoltativa) consente di accedere al pulsante Trova quando ci si connette al debugger remoto in Visual Studio.
+* UDP 3702: la porta di individuazione  (facoltativo) consente di accedere al pulsante Trova quando ci si connette al debugger remoto in Visual Studio.
 
 1. Per aprire una porta in Windows Server, aprire il menu **Start,** cercare Windows **Firewall con sicurezza avanzata**.
 
-2. Scegliere quindi **Regole in ingresso > nuova regola > porta**. Scegliere **Avanti** e in Porte locali specifiche immettere il numero di porta, fare clic su Avanti **,** quindi su Consenti connessione **,** fare clic su Avanti e aggiungere il nome (**IIS**, **Distribuzione Web** o **msvsmon**) per la regola in ingresso.
+2. Quindi scegliere **Regole in ingresso > nuova regola > porta**. Scegliere  Avanti e in Porte locali specifiche immettere il numero di porta, fare clic su Avanti **,** quindi su Consenti connessione **,** fare clic su Avanti e aggiungere il nome (**IIS,** **Distribuzione Web** o **msvsmon**) per la regola in ingresso.
 
-    Per altri dettagli sulla configurazione del firewall Windows, vedere Configurare il firewall Windows [per il debug remoto.](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+    Per altri dettagli sulla configurazione di Windows Firewall, vedere Configurare il firewall Windows [per il debug remoto.](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 
 3. Creare regole aggiuntive per le altre porte necessarie.

@@ -1,5 +1,5 @@
 ---
-description: Specifica il tipo di messaggio e il motivo.
+description: Specifica il tipo e il motivo del messaggio.
 title: MessageTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3172188d878d40d3957ea56ff3c6f57ca561a1be
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634795"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Specifica il tipo di messaggio e il motivo.
+Specifica il tipo e il motivo del messaggio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,7 +66,7 @@ public enum enum_MESSAGETYPE {
  Indica che una finestra di messaggio viene visualizzata come risultato di un'eccezione. Si escludono a vicenda da `MT_REASON_TRACEPOINT` .
 
  `MT_REASON_TRACEPOINT`\
- Indica che una finestra di messaggio viene visualizzata come risultato del raggiungere un punto di analisi. Si escludono a vicenda a `MT_REASON_EXCEPTION` .
+ Indica che una finestra di messaggio viene visualizzata come risultato del clic su un punto di traccia. Si escludono a vicenda con `MT_REASON_EXCEPTION` .
 
  `MT_REASON_MASK`\
  Valore della maschera per isolare il motivo del messaggio visualizzato.
@@ -74,7 +74,7 @@ public enum enum_MESSAGETYPE {
 ## <a name="remarks"></a>Commenti
  Questi valori vengono restituiti dai [metodi GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) [e GetErrorMessage.](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)
 
- Uno dei valori di motivo può essere combinato con uno dei valori di destinazione di output utilizzando un oggetto bit per `OR` bit.
+ Uno dei valori di motivo può essere combinato con uno dei valori di destinazione di output usando un oggetto bit per `OR` bit.
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

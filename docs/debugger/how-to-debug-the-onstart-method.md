@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 995470a5156850bf789a233b2629a41859585440
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065540"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627995"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Procedura: eseguire il debug del metodo OnStart
 È possibile eseguire il debug di un servizio Windows stesso avviando il servizio e connettendo il debugger al processo del servizio. Per altre informazioni, vedere [Procedura: Eseguire il debug di applicazioni di servizio per Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Per eseguire il debug del metodo <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> di un servizio Windows, è tuttavia necessario avviare il debugger all'interno del metodo.
@@ -47,11 +47,11 @@ ms.locfileid: "122065540"
 
     ![Screenshot di una Visual Studio finestra di dialogo Debugger JUST-In-Time che mostra un'eccezione di .NET Framework non gestita che si è verificata WindowsService-Asis.exe.](../debugger/media/onstartdebug.png)
 
-3. Selezionare **Sì, esegui il debug \<service name> di .**
+3. Selezionare **Sì, esegui il \<service name> debug.**
 
 4. Nella finestra Debugger JIT di Visual Studio selezionare la versione di Visual Studio da usare per il debug.
 
-    ![Screenshot di una Visual Studio debugger JUST-In-Time con l'opzione "Nuova istanza di Microsoft Visual Studio 2015" selezionata nell'elenco dei debugger possibili.](../debugger/media/justintimedebugger.png)
+    ![Screenshot di una finestra Visual Studio debugger JUST-In-Time con l'opzione "Nuova istanza di Microsoft Visual Studio 2015" selezionata nell'elenco dei possibili debugger.](../debugger/media/justintimedebugger.png)
 
 5. Viene avviata una nuova istanza di Visual Studio e l'esecuzione viene arrestata in corrispondenza del metodo `Debugger.Launch()` .
 

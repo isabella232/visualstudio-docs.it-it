@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: d75e6debf4fb50be2d144f0843e6c0be6a84a76c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140037"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628163"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare test codificati dell'interfaccia utente per i controlli
 
@@ -185,7 +185,7 @@ Il provider di proprietà e il filtro azioni vengono implementati in un pacchett
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Per eseguire il debug del provider di proprietà o del filtro azioni
 
-1. Compilare la versione di debug del pacchetto di estensione *copiare* i file.dlle *pdb* in *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Compilare la versione di debug del pacchetto di estensione copiare i file *.dll* e *pdb* in *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2. Eseguire l'applicazione (non nel debugger).
 

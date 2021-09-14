@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Creare Office progetti in Visual Studio'
-description: Informazioni su come usare Visual Studio per creare VSTO componenti aggiuntivi e personalizzazioni a livello di documento per Microsoft Office applicazioni.
+title: 'Procedura: Creare progetti Office in Visual Studio'
+description: Informazioni su come usare Visual Studio per creare VSTO e personalizzazioni a livello di documento per Microsoft Office applicazioni.
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
@@ -26,14 +26,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 126f4c88dd13ff9204ce2e29c2a95cf14df5d473
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634060"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: Creare Office progetti in Visual Studio
-  È possibile usare per creare VSTO componenti aggiuntivi e personalizzazioni a livello di documento per Microsoft Office [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] applicazioni. Per altre informazioni su questi tipi di progetti, vedere panoramica Office [sviluppo di ](../vsto/office-solutions-development-overview-vsto.md)soluzioni &#40;VSTO&#41;.
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: Creare progetti Office in Visual Studio
+  È possibile usare per creare VSTO componenti aggiuntivi e personalizzazioni a livello di documento per [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Microsoft Office applicazioni. Per altre informazioni su questi tipi di progetti, vedere panoramica Office [sviluppo di soluzioni &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -41,31 +41,31 @@ ms.locfileid: "122046919"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>Per creare un progetto di componente aggiuntivo VSTO
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'ambiente di sviluppo integrato (IDE) è impostato per l'uso delle impostazioni di sviluppo, scegliere Nuovo dal [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] menu **File**   >  **Project**.
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'ambiente di sviluppo integrato (IDE) è impostato per l'uso delle impostazioni di sviluppo, scegliere Nuovo dal [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] menu File    >  **Project**.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
    > [!NOTE]
-   > Per impostazione predefinita, i progetti di Office hanno come destinazione [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per altre informazioni, vedere .NET Framework [client](/dotnet/framework/deployment/client-profile).
+   > Per impostazione predefinita, i progetti di Office hanno come destinazione [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per altre informazioni, vedere [.NET Framework profilo client.](/dotnet/framework/deployment/client-profile)
 
 2. Nel riquadro dei modelli, sotto il nodo per il linguaggio che si vuole usare, espandere **Office/SharePoint**.
 
 3. Scegliere il **Office componenti aggiuntivi.**
 
-4. Nell'elenco dei modelli di progetto scegliere un modello di progetto del componente aggiuntivo VSTO. Per un elenco dei modelli di VSTO di progetto del componente aggiuntivo, vedere Office [panoramica dei modelli di progetto.](../vsto/office-project-templates-overview.md)
+4. Nell'elenco dei modelli di progetto scegliere un modello di progetto del componente aggiuntivo VSTO. Per un elenco dei modelli di progetto VSTO componenti aggiuntivi disponibili, vedere panoramica Office [dei modelli di progetto.](../vsto/office-project-templates-overview.md)
 
    > [!NOTE]
    > Se i modelli di progetto non sono visibili quando si seleziona il nodo Componenti aggiuntivi **Office,** assicurarsi che nella casella combinata nella parte superiore della finestra di dialogo sia selezionato **.NET Framework 4** o versione successiva. I modelli di progetto di Office sono visibili per entrambe le versioni di .NET Framework.
 
 5. Nella casella **Nome** digitare un nome per il progetto. Per impostazione predefinita, il nome del progetto viene usato anche come nome della soluzione.
 
-6. Nella casella **Percorso** immettere il percorso in cui si vuole creare il progetto. È possibile usare percorsi assoluti e UNC (Universal Naming Convention). Non usare percorsi HTTP, FTP o di altri protocolli.
+6. Nella **casella Percorso** immettere il percorso in cui si vuole creare il progetto. È possibile usare percorsi assoluti e UNC (Universal Naming Convention). Non usare percorsi HTTP, FTP o di altri protocolli.
 
     I percorsi hanno i formati seguenti:
 
    * [*unità*\]\:
 
-   * \\\\*Server* \\ *Condividere*
+   * \\\\*Server* \\ *Condividi*
 
      Non usare i caratteri seguenti nel percorso:
 
@@ -90,13 +90,13 @@ ms.locfileid: "122046919"
    ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > I progetti di componente aggiuntivo vengono sempre salvati al momento della creazione e non possono essere creati come progetti temporanei. Per altre informazioni sui progetti temporanei, vedere [Progetti temporanei](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+   > I progetti di componente aggiuntivo vengono sempre salvati al momento della creazione e non possono essere creati come progetti temporanei. Per altre informazioni sui progetti temporanei, vedere [Progetti temporanei.](../ide/creating-solutions-and-projects.md#create-a-temporary-project)
 
    ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Per creare un progetto di personalizzazione a livello di documento
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'IDE è impostato per l'Visual Basic di sviluppo, scegliere Nuovo dal menu **File**  >  **Project**.
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'IDE è impostato per l'Visual Basic di sviluppo, scegliere Nuovo dal **menu**   >  **File Project**.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -104,7 +104,7 @@ ms.locfileid: "122046919"
 
 3. Selezionare il nodo **Componenti aggiuntivi di Office** .
 
-4. Nell'elenco dei modelli di progetto scegliere un modello di progetto a livello di documento. Per un elenco dei modelli di progetto a livello di documento disponibili, vedere panoramica Office [dei modelli di progetto.](../vsto/office-project-templates-overview.md)
+4. Nell'elenco dei modelli di progetto scegliere un modello di progetto a livello di documento. Per un elenco dei modelli di progetto a livello di documento disponibili, Office [panoramica dei modelli di progetto.](../vsto/office-project-templates-overview.md)
 
    > [!NOTE]
    > Se i modelli di progetto  non sono visibili quando si seleziona il nodo Office componenti aggiuntivi, assicurarsi che sia selezionato .NET Framework **4** o versione successiva.
@@ -118,9 +118,9 @@ ms.locfileid: "122046919"
 
     Viene visualizzata la **Creazione guidata progetto Visual Studio Tools per Office** .
 
-7. Selezionare **Crea un nuovo documento** se si vuole creare un nuovo documento per la soluzione oppure selezionare Copia un documento esistente se si vuole personalizzare un documento esistente. 
+7. Selezionare **Crea un nuovo documento** se si vuole creare un  nuovo documento per la soluzione oppure selezionare Copia un documento esistente se si vuole personalizzare un documento esistente.
 
-    Se si crea un nuovo documento, specificare il nome nella casella **Nome** e selezionare il formato del documento usando la **casella** Formato . Per altre informazioni sui formati disponibili, vedere Architettura delle personalizzazioni a [livello di documento.](../vsto/architecture-of-document-level-customizations.md)
+    Se si crea un nuovo documento, specificare il nome nella casella **Nome** e selezionare il formato del documento usando la **casella** Formato . Per altre informazioni sui formati disponibili, vedere [Architettura delle personalizzazioni a livello di documento.](../vsto/architecture-of-document-level-customizations.md)
 
     Se si usa un documento esistente, specificare il percorso del documento nella **casella Percorso completo del documento** esistente. È possibile usare percorsi assoluti e UNC. Non usare percorsi HTTP, FTP o di altri protocolli per il documento.
 
@@ -128,7 +128,7 @@ ms.locfileid: "122046919"
 
    - [*unità*\]\:
 
-   - \\\\*Server* \\ *Condividere*
+   - \\\\*Server* \\ *Condividi*
 
      Non usare i caratteri seguenti nel percorso:
 
@@ -149,7 +149,7 @@ ms.locfileid: "122046919"
    - Segno di percentuale (%)
 
    > [!NOTE]
-   > Se si usa un documento esistente in un progetto di [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], usare solo i documenti creati o convertiti in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Analogamente, se si usa un documento esistente in un progetto di Word 2010, usare solo i documenti creati o convertiti in Word 2010. Alcune funzionalità verranno disabilitate nel documento se si usa un documento creato in una versione precedente di Word. Se si prova a scrivere codice che usa queste funzionalità, potrebbero verificarsi errori nel progetto. Per convertire un documento, aprirlo in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o In Word 2010, nella scheda **File** della barra multifunzione scegliere **Info**  >  **Converti**.
+   > Se si usa un documento esistente in un progetto di [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], usare solo i documenti creati o convertiti in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Analogamente, se si usa un documento esistente in un progetto di Word 2010, usare solo i documenti creati o convertiti in Word 2010. Alcune funzionalità verranno disabilitate nel documento se si usa un documento creato in una versione precedente di Word. Se si prova a scrivere codice che usa queste funzionalità, potrebbero verificarsi errori nel progetto. Per convertire un documento, aprirlo in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010, nella scheda **File** della barra multifunzione scegliere **Info**  >  **Converti.**
 
 8. Scegliere **Fine**.
 
@@ -157,12 +157,12 @@ ms.locfileid: "122046919"
 
    - Si sta creando un documento di Word basato su un file con estensione *docm* e il documento contiene un progetto VBA o ospita Windows form. Aggiungendo la cartella del progetto all'elenco di percorsi attendibili sarà possibile assicurarsi che il documento funzioni come previsto in fase di progettazione.
 
-   - Si sta creando un progetto modello di Word basato su un file *dotx.* È necessario aggiungere la cartella del progetto all'elenco di percorsi attendibili in modo che sia possibile eseguire il progetto e il relativo debug.
+   - Si sta creando un progetto di modello di Word basato su un file *con estensione dotx.* È necessario aggiungere la cartella del progetto all'elenco di percorsi attendibili in modo che sia possibile eseguire il progetto e il relativo debug.
 
-     Per altre informazioni su come aggiungere un documento ai percorsi attendibili, vedere il sito Web Microsoft Office Online [Creare,](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)rimuovere o modificare un percorso attendibile per i file .
+     Per altre informazioni su come aggiungere un documento ai percorsi attendibili, vedere il sito Web di Microsoft Office Online [Creare,](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)rimuovere o modificare un percorso attendibile per i file .
 
 ## <a name="see-also"></a>Vedi anche
-- [Office dei modelli di progetto](../vsto/office-project-templates-overview.md)
+- [Office panoramica dei modelli di progetto](../vsto/office-project-templates-overview.md)
 - [Sviluppo collaborativo di Office soluzioni](../vsto/collaborative-development-of-office-solutions.md)
 - [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)
 - [Introduzione alla programmazione VSTO componenti aggiuntivi](../vsto/getting-started-programming-vsto-add-ins.md)

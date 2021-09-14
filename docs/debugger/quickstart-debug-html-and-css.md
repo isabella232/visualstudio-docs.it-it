@@ -21,11 +21,11 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 32e12e8646b25adff81c217626de6cacee724600
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122153849"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627971"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle app UWP in Visual Studio
 
@@ -63,7 +63,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
 1. Creare una nuova soluzione in Visual Studio scegliendo **File**  >  **nuovo Project**.
 
-2. Scegliere **JavaScript**  >  **Windows Universale,** quindi **scegliere App WinJS.**
+2. Scegliere **JavaScript**  >  **Windows Universale** e quindi scegliere App **WinJS**.
 
 3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.
 
@@ -148,7 +148,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     ![App FlipView con i risultati previsti](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")
 
-7. Scegliere **Computer locale dall'elenco** a discesa accanto al **pulsante** Avvia debug sulla barra degli **strumenti Debug:**
+7. Scegliere **Computer locale** dall'elenco a discesa accanto al **pulsante** Avvia debug sulla barra degli **strumenti Debug:**
 
     ![Selezionare l'elenco di destinazione del debug](../debugger/media/js_select_target.png "JS_Select_Target")
 
@@ -201,7 +201,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     Le cose sono migliorate. C'è ancora un problema da risolvere. I margini sembrano troppo grandi.
 
-19. Per analizzare, passare a Visual Studio e scegliere la **scheda Layout** per esaminare il modello box dell'elemento.
+19. Per analizzare, passare a Visual Studio e scegliere la **scheda Layout** per esaminare il modello di riquadro dell'elemento.
 
     Nella **scheda Layout** verranno visualizzati gli elementi seguenti:
 

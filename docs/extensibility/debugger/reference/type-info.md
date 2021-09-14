@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0a9c4381492e2909ab79b58ac0e9024bb7237f2a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634723"
 ---
 # <a name="type_info"></a>TYPE_INFO
 Questa struttura specifica vari tipi di informazioni sul tipo di un campo.
@@ -50,7 +50,7 @@ public struct TYPE_INFO {
 
 ## <a name="members"></a>Members
  `dwKind`\
- Valore [dell'enumerazione dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) che determina come interpretare l'unione.
+ Valore dell'enumerazione [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) che determina come interpretare l'unione.
 
  `type.typeMeta`\
  [Solo C++] Contiene una [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struttura se `dwKind` è `TYPE_KIND_METADATA` .

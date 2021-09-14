@@ -15,15 +15,15 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 53fa4543bd56bd85f58b5c4251af19300a12fecf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634484"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicare un'Visual Studio personalizzata
 
-Questa procedura dettagliata illustra come pubblicare un'estensione Visual Studio in Visual Studio Marketplace. Quando si aggiunge l'estensione Visual Studio Marketplace, gli sviluppatori possono usare estensioni e **aggiornamenti** per cercare estensioni nuove e aggiornate.
+Questa procedura dettagliata illustra come pubblicare un'estensione Visual Studio in Visual Studio Marketplace. Quando si aggiunge l'estensione Visual Studio Marketplace, gli sviluppatori possono usare **estensioni** e aggiornamenti per cercare estensioni nuove e aggiornate.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -71,7 +71,7 @@ Questo articolo usa un'estensione VSPackage predefinita, ma i passaggi sono vali
 
 6. Scegliere l'editore da usare per caricare l'estensione. È possibile modificare i server di pubblicazione facendo clic sui nomi degli editori elencati a sinistra. Fare **clic su Nuova** estensione e selezionare **Visual Studio**.
 
-7. In **1: Upload,** è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o semplicemente aggiungere un collegamento al proprio sito Web. In questo esempio viene caricata *l'estensione TestPublish.vsix.* Trascinare e rilasciare l'estensione oppure usare il **collegamento** di clic per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Fare clic su **Continue**.
+7. In **1: Upload** è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o semplicemente aggiungere un collegamento al proprio sito Web. In questo esempio viene caricata *l'estensione TestPublish.vsix.* Trascinare e rilasciare l'estensione oppure usare il **collegamento** di clic per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Fare clic su **Continue**.
 
 8. In **2: Specificare i dettagli dell'estensione**, alcuni campi vengono popolati automaticamente dal file *source.extension.vsixmanifest* dall'estensione. Altre informazioni su ognuno di essi sono riportate di seguito:
 

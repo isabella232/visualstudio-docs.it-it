@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 91eb31444a56d68f062f7909d9fb5de13d3f496d
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633724"
 ---
 # <a name="cancellationscope-activity-designer"></a>ActivityDesigner CancellationScope
 
@@ -32,7 +32,7 @@ L'attività <xref:System.Activities.Statements.CancellationScope> consente di sp
 
 **L'ActivityDesigner CancellationScope** è disponibile nella categoria **Transazione** della Casella **degli strumenti**. Per aprire **casella degli** strumenti , selezionare la **scheda Casella** degli strumenti del Progettazione flussi di lavoro. In alternativa, scegliere **Casella degli** strumenti **dal** menu Visualizza o premere **CTRL** + **ALT** + **X.**
 
-**L'ActivityDesigner CancellationScope** può  essere trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione **dell'ActivityDesigner CancellationScope** crea <xref:System.Activities.Statements.CancellationScope> un'attività con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito CancellationScope. Modificare il <xref:System.Activities.Activity.DisplayName%2A> valore nell'intestazione dell'ActivityDesigner **CancellationScope.** È anche possibile modificarlo nella **casella DisplayName** della griglia delle proprietà.
+**L'ActivityDesigner CancellationScope** può  essere trascinato dalla casella degli strumenti e rilasciato nella Progettazione flussi di lavoro in cui sono posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . L'eliminazione **dell'ActivityDesigner CancellationScope** crea <xref:System.Activities.Statements.CancellationScope> un'attività con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito CancellationScope. Modificare il <xref:System.Activities.Activity.DisplayName%2A> valore nell'intestazione dell'ActivityDesigner **CancellationScope.** È anche possibile modificarlo nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-cancellationscope-properties"></a>Proprietà di CancellationScope
 

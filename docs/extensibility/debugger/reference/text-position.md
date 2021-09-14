@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 497e412b75ee1c37c28da018e3a9f67ec2cab184
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634748"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 Descrive la posizione della riga e della colonna nel testo specificato.

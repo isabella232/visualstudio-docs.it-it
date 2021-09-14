@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65972621980b311dc3a396836c4c85286e10a00e2e93589a9b3aeaffc8627528
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 676ef23c57569819e462e15c1d386c8cd0559933
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634580"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Introduzione ai plug-in del controllo del codice sorgente
 Per creare un plug-in del controllo del codice sorgente, è necessario creare una DLL che implementa le funzioni definite nell'API plug-in del controllo del codice sorgente e quindi registrare la DLL con per renderla disponibile per l'uso nel controllo della versione del codice [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sorgente.

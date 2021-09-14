@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 42b5811169a7138cda0d292793bb1ccbaca7316c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110748"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634747"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Descrive le proprietà di un thread.
@@ -55,7 +55,7 @@ public struct THREADPROPERTIES {
 
 ## <a name="members"></a>Members
  `dwFields`\
- Combinazione di flag [dell'enumerazione THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) che descrive i campi di questa struttura validi.
+ Combinazione di flag [dell'enumerazione THREADPROPERTY_FIELDS,](../../../extensibility/debugger/reference/threadproperty-fields.md) che descrive i campi di questa struttura validi.
 
  `dwThreadId`\
  ID thread.

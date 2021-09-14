@@ -1,6 +1,6 @@
 ---
 title: ProcessOn e ProcessOff | Microsoft Docs
-description: Informazioni su come i VSPerfCmd.exe ProcessOff e ProcessOn sospendono e riprendono la profilatura per il processo specificato in una sessione di profilatura della riga di comando.
+description: Informazioni su come VSPerfCmd.exe i sottocomandi ProcessOff e ProcessOn sospendino e riprendono la profilatura per il processo specificato in una sessione di profilatura della riga di comando.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -12,11 +12,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c61f997d0c006c9cc29850be65555fe5b5dc9d04
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628326"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 I sottocomandi **ProcessOff** e **ProcessOn** di VSPerfCmd.exe sospendono e riprendono la profilatura per il processo specificato in una sessione di profilatura da riga di comando. **ProcessOff** arresta la profilatura del processo e **ProcessOn** avvia la profilatura del processo.
@@ -31,7 +31,7 @@ I sottocomandi **ProcessOff** e **ProcessOn** di VSPerfCmd.exe sospendono e ripr
 
 - **ProcessOn** imposta immediatamente il conteggio Start/Stop per il processo su 1 e riprende quindi la profilatura.
 
-  Per altre informazioni, vedere [Strumenti di profilatura API .](../profiling/profiling-tools-apis.md)
+  Per altre informazioni, [vedere Strumenti di profilatura API .](../profiling/profiling-tools-apis.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ```
 
 #### <a name="parameters"></a>Parametri
- `PID` Identificatore integer del processo da avviare o arrestare. Gli ID processo sono elencati nella **scheda** Processo Windows Gestione attività.
+ `PID` Identificatore integer del processo da avviare o arrestare. Gli ID processo sono elencati nella **scheda** Processo di Windows Gestione attività.
 
 ## <a name="required-subcommands"></a>Sottocomandi obbligatori
  Nessuno
@@ -49,9 +49,9 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ## <a name="valid-subcommands"></a>Sottocomandi validi
  **ProcessOn** e **ProcessOff** possono essere specificati su righe di comando che contengono anche i sottocomandi seguenti.
 
- **Avvio:** `Method` Inizializza la sessione di profilatura della riga di comando e imposta il metodo di profilatura specificato.
+ **Avvio:** `Method` Inizializza la sessione di profilatura dalla riga di comando e imposta il metodo di profilatura specificato.
 
- **Avviare:** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+ **Launch (Avvia):** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
 
  **Collega:** `PID` Avvia la profilatura del processo specificato.
 

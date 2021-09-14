@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 829272d73792e1b9c6d6e61b653ab85c78ca0508
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634203"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Specificare i tipi di rete virtuale in uno scenario di test di carico
 
@@ -98,7 +98,7 @@ Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori per
 > [!WARNING]
 > Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
 
-È anche possibile digitare i valori percentuali direttamente nella colonna **%** anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
+È anche possibile digitare i valori percentuali direttamente nella colonna anziché **%** usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
 > I dispositivi di scorrimento sono disabilitati quando il totale non è al 100% o quando i valori percentuali immessi nella colonna **%** sono decimali.

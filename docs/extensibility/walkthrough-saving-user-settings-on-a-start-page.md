@@ -13,34 +13,34 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 3f312bb9b62ebbcc694a64ad485d19ca628b1e8e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122157943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634483"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Procedura dettagliata: Salvare le impostazioni utente in una pagina iniziale
 
-È possibile rendere persistenti le impostazioni utente per la pagina iniziale. Seguendo questa procedura dettagliata, è possibile creare un controllo che salva un'impostazione nel Registro di sistema quando l'utente fa clic su un pulsante e quindi recupera tale impostazione ogni volta che viene caricata la pagina iniziale. Poiché il modello di progetto della pagina iniziale include un controllo utente personalizzabile e il codice XAML della pagina iniziale predefinito chiama tale controllo, non è necessario modificare la pagina iniziale stessa.
+È possibile rendere persistenti le impostazioni utente per la pagina iniziale. Seguendo questa procedura dettagliata, è possibile creare un controllo che salva un'impostazione nel Registro di sistema quando l'utente fa clic su un pulsante e quindi recupera tale impostazione ogni volta che viene caricata la pagina iniziale. Poiché il modello di progetto Pagina iniziale include un controllo utente personalizzabile e il codice XAML della pagina iniziale predefinito chiama tale controllo, non è necessario modificare la pagina iniziale stessa.
 
-L'archivio delle impostazioni di cui viene creata un'istanza in questa procedura dettagliata è un'istanza dell'interfaccia che legge e scrive nel percorso del Registro di sistema seguente quando viene <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> chiamato: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
+L'archivio impostazioni di cui viene creata un'istanza in questa procedura dettagliata è un'istanza dell'interfaccia che legge e scrive nel percorso del Registro di sistema seguente quando viene <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> chiamato: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
-Quando è in esecuzione nell'istanza sperimentale di Visual Studio, l'archivio delle impostazioni legge e scrive in **HKCU\Software\Microsoft\VisualStudio\14.0Exp. \\ \<CollectionName>**
+Quando è in esecuzione nell'istanza sperimentale di Visual Studio, l'archivio impostazioni legge e scrive in **HKCU\Software\Microsoft\VisualStudio\14.0Exp. \\ \<CollectionName>**
 
-Per altre informazioni su come rendere persistenti le impostazioni, vedere [Extending User Impostazioni and Options](../extensibility/extending-user-settings-and-options.md).
+Per altre informazioni su come rendere persistenti le impostazioni, vedere [Estensione delle impostazioni utente Impostazioni opzioni](../extensibility/extending-user-settings-and-options.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 > [!NOTE]
 > Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK.](../extensibility/visual-studio-sdk.md)
 >
-> È possibile scaricare il modello di progetto della pagina iniziale usando **Gestione estensioni.**
+> È possibile scaricare il modello di progetto Pagina iniziale usando **Gestione estensioni**.
 
 ## <a name="set-up-the-project"></a>Configurare il progetto
 
 1. Creare un progetto di pagina iniziale come descritto in [Creare una pagina iniziale personalizzata.](creating-a-custom-start-page.md) Assegnare al progetto **il nome SaveMySettings**.
 
-2. In **Esplora soluzioni** aggiungere i riferimenti all'assembly seguenti al progetto StartPageControl:
+2. In **Esplora soluzioni** aggiungere i riferimenti agli assembly seguenti al progetto StartPageControl:
 
     - EnvDTE
 
@@ -52,7 +52,7 @@ Per altre informazioni su come rendere persistenti le impostazioni, vedere [Exte
 
 3. Aprire *MyControl.xaml.*
 
-4. Nella definizione dell'elemento di primo livello del riquadro XAML aggiungere la dichiarazione <xref:System.Windows.Controls.UserControl> di evento seguente dopo le dichiarazioni dello spazio dei nomi.
+4. Nella definizione dell'elemento di primo livello del riquadro XAML aggiungere la dichiarazione di <xref:System.Windows.Controls.UserControl> evento seguente dopo le dichiarazioni dello spazio dei nomi.
 
     ```xml
     Loaded="OnLoaded"
@@ -60,7 +60,7 @@ Per altre informazioni su come rendere persistenti le impostazioni, vedere [Exte
 
 5. Nel riquadro di progettazione fare clic sull'area principale del controllo e quindi premere **CANC.**
 
-     Questo passaggio rimuove <xref:System.Windows.Controls.Border> l'elemento e tutti gli elementi in esso presenti e lascia solo l'elemento di primo <xref:System.Windows.Controls.Grid> livello.
+     Questo passaggio rimuove l'elemento e tutti gli elementi in <xref:System.Windows.Controls.Border> esso presenti e lascia solo l'elemento di primo <xref:System.Windows.Controls.Grid> livello.
 
 6. Dalla Casella **degli strumenti** trascinare un controllo <xref:System.Windows.Controls.StackPanel> nella griglia.
 
@@ -80,7 +80,7 @@ Per altre informazioni su come rendere persistenti le impostazioni, vedere [Exte
 
 1. Nel riquadro XAML fare clic con il pulsante destro del mouse sull'attributo dell'elemento e quindi scegliere `Click` Passa al gestore <xref:System.Windows.Controls.Button> **eventi**.
 
-     Questo passaggio apre *MyControl.xaml.cs* e crea un gestore stub per `Button_Click` l'evento .
+     Questo passaggio apre *MyControl.xaml.cs* e crea un gestore stub per `Button_Click` l'evento.
 
 2. Aggiungere le `using` direttive seguenti all'inizio del file.
 
@@ -118,7 +118,7 @@ Per altre informazioni su come rendere persistenti le impostazioni, vedere [Exte
     }
     ```
 
-     Questa proprietà ottiene innanzitutto un riferimento all'interfaccia , che contiene il modello a oggetti di automazione, dall'oggetto del controllo utente e quindi usa la DTE per ottenere un'istanza <xref:EnvDTE80.DTE2> <xref:System.Windows.FrameworkElement.DataContext%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> dell'interfaccia. Usa quindi tale istanza per restituire le impostazioni utente correnti.
+     Questa proprietà ottiene prima un riferimento all'interfaccia , che contiene il modello a oggetti di Automazione, dal controllo utente e quindi usa la DTE per ottenere un'istanza <xref:EnvDTE80.DTE2> <xref:System.Windows.FrameworkElement.DataContext%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> dell'interfaccia. Usa quindi tale istanza per restituire le impostazioni utente correnti.
 
 4. Compilare `Button_Click` l'evento come indicato di seguito.
 
@@ -153,11 +153,11 @@ Per altre informazioni su come rendere persistenti le impostazioni, vedere [Exte
 
 6. Compilare il controllo utente.
 
-7. In **Esplora soluzioni** aprire *source.extension.vsixmanifest.*
+7. In **Esplora soluzioni** aprire *source.extension.vsixmanifest*.
 
-8. Nell'editor manifesto impostare **Product Name su** Save My Impostazioni Start **Page**.
+8. Nell'editor del manifesto impostare **Product Name** su Save My Impostazioni Start Page (Salva il Impostazioni **iniziale).**
 
-     Questa funzionalità imposta il nome della pagina iniziale come verrà visualizzato nell'elenco Personalizza pagina **iniziale** nella **finestra di dialogo** Opzioni.
+     Questa funzionalità imposta il nome della pagina iniziale così come deve essere visualizzata nell'elenco **Personalizza pagina iniziale** nella finestra di **dialogo** Opzioni .
 
 9. Compilare *StartPage.xaml.*
 
@@ -165,29 +165,29 @@ Per altre informazioni su come rendere persistenti le impostazioni, vedere [Exte
 
 1. Premere **F5**.
 
-     Verrà aperta l'istanza Visual Studio sperimentale di .
+     Viene aperta l'istanza sperimentale Visual Studio.
 
-2. Nell'istanza sperimentale scegliere **Opzioni** dal menu **Strumenti**.
+2. Nell'istanza sperimentale scegliere Opzioni **dal** menu **Strumenti**.
 
-3. Nel nodo **Ambiente** fare clic **su** Avvio e quindi nell'elenco Personalizza pagina **iniziale** selezionare **[Estensione installata]** Salva Impostazioni pagina iniziale .
+3. Nel nodo **Ambiente** fare clic su **Avvio** e quindi nell'elenco Personalizza pagina **iniziale** selezionare **[Estensione installata]** Salva Impostazioni pagina iniziale .
 
      Fare clic su **OK**.
 
-4. Chiudere la pagina iniziale, se aperta, quindi scegliere Pagina iniziale dal **menu** **Visualizza.**
+4. Chiudere la pagina iniziale, se aperta, quindi scegliere Pagina **iniziale dal** **menu** Visualizza .
 
 5. Nella pagina iniziale fare clic sulla **scheda MyControl.**
 
-6. Nella casella di testo digitare **Cat** e quindi fare clic **su Save My Setting**.
+6. Nella casella di testo digitare **Cat** e quindi fare clic **su Salva impostazione.**
 
 7. Chiudere la pagina iniziale e quindi aprirla di nuovo.
 
      La parola "Cat" deve essere visualizzata nella casella di testo.
 
-8. Sostituire la parola "Cat" con la parola "Dog". Non fare clic sul pulsante .
+8. Sostituire la parola "Cat" con la parola "Dog". Non fare clic sul pulsante.
 
 9. Chiudere la pagina iniziale e quindi aprirla di nuovo.
 
-     La parola "Cane" deve essere visualizzata nella casella di testo, anche se l'impostazione non è stata salvata perché Visual Studio mantiene le finestre degli strumenti in memoria, anche se sono chiuse, fino alla chiusura del Visual Studio stesso.
+     La parola "Cane" deve essere visualizzata nella casella di testo, anche se l'impostazione non è stata salvata perché Visual Studio mantiene le finestre degli strumenti in memoria, anche se sono chiuse, fino alla chiusura dell'Visual Studio stessa.
 
 10. Chiudere l'istanza sperimentale di Visual Studio.
 
@@ -197,7 +197,7 @@ Per altre informazioni su come rendere persistenti le impostazioni, vedere [Exte
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-È possibile modificare questo controllo utente per salvare e recuperare un numero qualsiasi di impostazioni personalizzate usando valori diversi da gestori eventi diversi per ottenere e impostare la `SettingsStore` proprietà . Se si usa un parametro diverso per ogni chiamata a , i valori non si sovrascrivono `propertyName` <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> reciprocmente nel Registro di sistema.
+È possibile modificare questo controllo utente per salvare e recuperare un numero qualsiasi di impostazioni personalizzate usando valori diversi da gestori eventi diversi per ottenere e impostare la `SettingsStore` proprietà . Se si usa un parametro diverso per ogni chiamata a , i valori non si sovrascrivono `propertyName` <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> l'un l'altro nel Registro di sistema.
 
 ## <a name="see-also"></a>Vedi anche
 

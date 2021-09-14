@@ -16,15 +16,15 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 07c393bd9ff0a16bf2c2692a2b92425138af5554
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114030"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631925"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito
 
-I criteri di archiviazione dell'analisi del codice specificano un set di regole che i membri di un progetto Azure DevOps devono eseguire nel codice sorgente prima di essere archiviati nel controllo della versione. Microsoft fornisce un set di set di regole standard *che raggruppano* le regole di analisi del codice in aree funzionali. *I set di regole dei criteri di archiviazione* personalizzati specificano un set di regole di analisi del codice specifiche di un progetto. Un set di regole viene archiviato in un file con estensione ruleset.
+I criteri di archiviazione dell'analisi codice specificano un set di regole che i membri di un progetto Azure DevOps devono eseguire nel codice sorgente prima di essere archiviati nel controllo della versione. Microsoft offre un set di set di regole standard *che raggruppano* le regole di analisi del codice in aree funzionali. *I set di regole dei criteri di archiviazione* personalizzati specificano un set di regole di analisi del codice specifiche di un progetto. Un set di regole viene archiviato in un file con estensione ruleset.
 
 I criteri di archiviazione vengono impostati a Azure DevOps progetto e specificati dal percorso di un file con estensione ruleset nell'albero del controllo della versione. Non sono presenti restrizioni sulla posizione del controllo della versione del set di regole personalizzate dei criteri del team.
 
@@ -43,7 +43,7 @@ Per creare un set di regole personalizzato per un progetto Azure DevOps, creare 
 
 1. In Team Explorer espandere il nodo del progetto e quindi fare clic su **Controllo del codice sorgente**.
 
-2. Nel riquadro **Cartelle** fare clic con il pulsante destro del mouse sul progetto e quindi scegliere **Nuova cartella**.
+2. Nel riquadro **Cartelle fare** clic con il pulsante destro del mouse sul progetto e quindi scegliere **Nuova cartella**.
 
 3. Nel riquadro principale del controllo del codice sorgente fare clic con il pulsante destro del mouse su **Nuova cartella,** scegliere **Rinomina** e digitare un nome per la cartella del set di regole.
 
@@ -67,7 +67,7 @@ Per creare un set di regole personalizzato per un progetto Azure DevOps, creare 
 
      Il file viene aggiunto al controllo del codice sorgente ed estratto dall'utente.
 
-3. Nella finestra **Esplora controllo codice sorgente** dettagli fare clic con il pulsante destro del mouse sul nome del file e quindi scegliere **Archivia modifiche in sospeso**.
+3. Nella finestra **Esplora controllo codice sorgente** dettagli fare clic con il pulsante destro del mouse sul nome del file e quindi scegliere Archivia **modifiche in sospeso**.
 
 4. Nella finestra **di dialogo Archivia** è possibile aggiungere un commento e quindi fare clic su **Archivia**.
 
@@ -76,7 +76,7 @@ Per creare un set di regole personalizzato per un progetto Azure DevOps, creare 
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Per specificare il file del set di regole come criteri di archiviazione
 
-1. Scegliere Controllo **del** codice **sorgente dal** menu Team Project Impostazioni e quindi fare clic su Controllo del codice **sorgente**.
+1. Nel menu **Team** scegliere Project Impostazioni **e** quindi fare clic su Controllo del codice **sorgente**.
 
 2. Fare **clic su Criteri di archiviazione** e quindi su **Aggiungi**.
 

@@ -17,11 +17,11 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: a3d3591fab5eaed2d1051212dae5c626c0f501e3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065566"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628001"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
 
@@ -45,7 +45,7 @@ In questa esercitazione si apprenderà come:
 - **Sviluppo per desktop con C++**
 - **Sviluppo per desktop .NET** oppure **Sviluppo multipiattaforma .NET Core**, a seconda di quale tipo di app si vuole creare.
 
-Se non si dispone di Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarla gratuitamente.
+Se non si dispone di Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 
 Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, selezionare **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Nel programma di installazione di Visual Studio, selezionare i carichi di lavoro necessari e quindi **Modifica**.
 
@@ -56,7 +56,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL+Q** per aprire la casella di ricerca, digitare **Empty Project**, scegliere **Templates**(Modelli) e quindi empty **Project** for C++( Vuoto per C++). Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL+Q** per aprire la casella di ricerca, digitare **Empty Project**, scegliere **Templates**(Modelli) e quindi empty **Project** for C++. Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e quindi **Progetto vuoto** nel riquadro centrale. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **OK**.
@@ -131,7 +131,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
     Digitare quindi un nome come **Mixed_Mode_Calling_App** e fare clic su **Avanti** o **Crea,** a seconda dell'opzione disponibile.
 
-    Per .NET Core scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
+    Per .NET Core scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**.
@@ -139,7 +139,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto corretto non è visualizzato, passare **a** Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo multipiattaforma .NET Core** o Sviluppo desktop **.NET,** a seconda del framework di destinazione, quindi **scegliere Modifica**.
+    Se il modello di progetto corretto non è visualizzato, passare **a** Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core** o **Sviluppo desktop .NET,** a seconda del framework di destinazione, quindi **scegliere Modifica**.
 
     > [!NOTE]
     > È anche possibile aggiungere il nuovo progetto gestito alla soluzione C++ esistente. Il progetto viene creato in una nuova soluzione per rendere più difficile l'attività di debug in modalità mista.
@@ -218,7 +218,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 1. Premere nuovamente **F11** per fare avanzare il debugger di una riga.
 
-1. Premere **MAIUSC** + **F11 o** selezionare **Debug**  >  **istruzione/uscita** per continuare l'esecuzione e sospendere nuovamente l'esecuzione nell'app gestita.
+1. Premere **MAIUSC** + **F11** o selezionare **Esci** da debug  >  **per** continuare l'esecuzione e sospendere nuovamente l'esecuzione nell'app gestita.
 
 1. Premere **F5** o selezionare la freccia verde per continuare il debug dell'app.
 

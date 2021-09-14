@@ -16,11 +16,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 871eeddd248255924d8fa0787af9dad73b250c7b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062316"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634428"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -48,7 +48,7 @@ Se si usa questa opzione la pagina iniziale non viene visualizzata nell'IDE all'
 
 ::: moniker-end
 
-Se un componente aggiuntivo visualizza un comando, è possibile usare questa opzione per avviare il componente aggiuntivo dalla riga di comando. Per altre informazioni, [vedere Procedura: Controllare i componenti aggiuntivi usando gestione componenti aggiuntivi.](/previous-versions/xwdatdwh(v=vs.140))
+Se un componente aggiuntivo visualizza un comando, è possibile usare questa opzione per avviare il componente aggiuntivo dalla riga di comando. Per altre informazioni, [vedere How to: Control add-ins by using the add-in manager](/previous-versions/xwdatdwh(v=vs.140)).
 
 ## <a name="example"></a>Esempio
 

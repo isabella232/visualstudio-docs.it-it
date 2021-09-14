@@ -1,5 +1,5 @@
 ---
-title: Progettazione flussi di lavoro - Controllo Flow ActivityDesigner
+title: Progettazione flussi di lavoro - Controlli Flow ActivityDesigner
 description: Informazioni sul controllo Flow ActivityDesigner, ovvero attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -12,11 +12,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 80e89e0ec82b8f5eed71845f084ee5700726a68f
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633708"
 ---
 # <a name="control-flow-activity-designers"></a>ActivityDesigner Flusso di controllo
 

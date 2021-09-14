@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 71f9c74e37eafcd8bdaa9e0f9da361a6684c7d4b
-ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122785975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627911"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Eseguire il debug di .NET Core in Linux tramite SSH collegando a un processo
 
@@ -25,7 +25,7 @@ A partire Visual Studio 2017, è possibile connettersi a processi .NET Core in e
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Nel computer Visual Studio è necessario installare il carico di lavoro sviluppo **ASP.NET** e Web o il carico di lavoro **Sviluppo multipiattaforma .NET Core.**
+- Nel computer Visual Studio è necessario installare il carico di lavoro sviluppo **ASP.NET** e Web o il carico di lavoro Sviluppo **multipiattaforma .NET Core.**
 
 - Nel server Linux è necessario installare il server SSH, decomprimerlo e installarlo con curl o wget. Ad esempio, in Ubuntu è possibile eseguire:
 
@@ -43,7 +43,7 @@ A partire Visual Studio 2017, è possibile connettersi a processi .NET Core in e
 
 Per preparare l'applicazione per il debug:
 
-- Quando si compila l'applicazione, è consigliabile usare una configurazione di debug. È molto più difficile eseguire il debug di codice compilato per la vendita al dettaglio (una configurazione di rilascio) rispetto al codice compilato con debug. Se è necessario usare una configurazione di rilascio, disabilitare prima Just My Code. Per disabilitare questa impostazione, scegliere **Strumenti**  >  **Opzioni**  >  **debug**, quindi **deselezionare Abilita** Just My Code .
+- Quando si compila l'applicazione, è consigliabile usare una configurazione di debug. È molto più difficile eseguire il debug di codice compilato per la vendita al dettaglio (una configurazione di rilascio) rispetto al codice compilato con debug. Se è necessario usare una configurazione di rilascio, disabilitare prima Just My Code. Per disabilitare questa impostazione, scegliere **Strumenti**  >  **Opzioni**  >  **debug** e quindi **deselezionare Abilita** Just My Code .
 
 - Verificare che il progetto sia configurato per produrre [file PDB](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) portabili (impostazione predefinita) e assicurarsi che si trova nello stesso percorso della DLL. Per configurarlo in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, quindi **scegliere** Proprietà  >  **Build**  >  **Advanced**  >  **Debugging Information**.
 
@@ -53,7 +53,7 @@ Per preparare l'applicazione per il debug:
 
 - Copiare le origini nel computer di destinazione e ```dotnet build``` compilare con nel computer Linux.
 
-- Compilare l'app Windows e quindi trasferire gli artefatti di compilazione nel computer Linux. Gli artefatti di compilazione sono costituiti dall'applicazione stessa, dai PDB portabili, dalle librerie di runtime da cui potrebbe dipendere e dal.deps.js *nel* file.
+- Compilare l'app Windows e quindi trasferire gli artefatti di compilazione nel computer Linux. Gli artefatti di compilazione sono costituiti dall'applicazione stessa, dai PDB portatili, dalle librerie di runtime da cui potrebbe dipendere e dal file *deps.json.*
 
 Quando l'app viene distribuita, avvia l'applicazione.
 
@@ -83,7 +83,7 @@ Quando l'applicazione è in esecuzione nel computer Linux, è possibile collegar
 
 1. Nella finestra di dialogo visualizzata selezionare il tipo di codice di cui si vuole eseguire il debug. Scegliere **Gestito (.NET Core per Unix).**
 
-1. Usare Visual Studio funzionalità di debug per eseguire il debug dell'app.
+1. Usare Visual Studio di debug per eseguire il debug dell'app.
 
    Nell'esempio seguente viene visualizzato il debugger Visual Studio in corrispondenza di un punto di interruzione nel codice in esecuzione in un computer Linux remoto.
 

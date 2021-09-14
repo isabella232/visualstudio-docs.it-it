@@ -13,11 +13,11 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a73a22397f05660cd0b5e2c90633f6528297848
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037577"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633307"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Eseguire il training di un modello TensorFlow nel cloud
 
@@ -79,7 +79,7 @@ Per visualizzare lo stato e i dettagli dei processi, espandere la macchina virtu
 
 ![Browser processi](media/tensorflow-vm/job-browser.png)
 
-## <a name="clean-up-resources"></a>Eseguire la pulizia delle risorse
+## <a name="clean-up-resources"></a>Pulire le risorse
 
 Arrestare la macchina virtuale se non si prevede di usarla entro breve. Dopo aver completato le operazioni con l'esercitazione, eseguire il comando seguente per pulire le risorse:
 

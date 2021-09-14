@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 8866ef3e78615ab5bc6c90b4b73a1b9a1d6d1a83
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140232"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628187"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificare una regola di estrazione personalizzata per un test delle prestazioni Web
 
@@ -49,7 +49,7 @@ ms.locfileid: "122140232"
 
 6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di estrazione personalizzata.
 
-7. Nel progetto Test aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
+7. Nel progetto test aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
 
 8. Per aggiungere la regola di estrazione personalizzata, fare clic con il pulsante destro del mouse su una richiesta di test delle prestazioni Web e **scegliere Aggiungi regola di estrazione.**
 

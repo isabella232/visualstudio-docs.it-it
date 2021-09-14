@@ -13,17 +13,17 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 749bb5e57770d76dfca69af40913d8d80c006679
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634220"
 ---
 # <a name="upgrade-from--testsettings-to-runsettings"></a>Eseguire  *l'aggiornamento da .testsettings* *a .runsettings*
 
-È possibile aggiornare il file di configurazione di test da *testsettings* a *runsettings* con lo strumento SettingsMigrator che viene installato insieme a Visual Studio. A seconda del percorso Visual Studio di installazione, è possibile trovare lo strumento di migrazione delle impostazioni nel percorso seguente:`C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
+È possibile aggiornare il file di configurazione di test da *.testsettings* a *.runsettings* con lo strumento SettingsMigrator che viene installato insieme a Visual Studio. A seconda del percorso Visual Studio di installazione, è possibile trovare lo strumento di migrazione delle impostazioni nel percorso seguente:`C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
 
-Nel percorso di directory corretto è possibile eseguire lo strumento con il formato seguente:
+Nel percorso corretto della directory è possibile eseguire lo strumento con il formato seguente:
 
 ```console
 SettingsMigrator.exe <Full path to testsettings file to be migrated>
@@ -36,7 +36,7 @@ SettingsMigrator.exe E:\MyTest\MyTestSettings.testsettings
 SettingsMigrator.exe E:\MyTest\MyTestSettings.testsettings E:\MyTest\MyNewRunSettings.runsettings
 ```
 
-Per altre informazioni su come le opzioni *.testsettings* vengono convertite in *.runsettings,* è possibile trovare altri dettagli sull'implementazione nel repository della piattaforma di test di [open source](https://github.com/microsoft/vstest-docs/blob/master/RFCs/0023-TestSettings-Deprecation.md#migration) in GitHub.
+Se si è interessati a leggere altre informazioni su come le opzioni *.testsettings* vengono convertite in *.runsettings,* è possibile trovare altri dettagli di implementazione nel repository della piattaforma di test di [open source](https://github.com/microsoft/vstest-docs/blob/master/RFCs/0023-TestSettings-Deprecation.md#migration) in GitHub.
 
 ## <a name="see-also"></a>Vedi anche
 

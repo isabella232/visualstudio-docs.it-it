@@ -18,14 +18,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: c9c74cd354f89725352c5c8b22557956fcd9624c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083479"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634043"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Procedura: Installare il runtime Visual Studio Tools per Office ridistribuibile
-  Il Visual Studio 2010 Tools for Office Runtime deve essere installato in ogni computer che esegue soluzioni create usando gli strumenti di sviluppo Microsoft Office in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Il runtime viene installato automaticamente all'installazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e di Microsoft Office. Per altre informazioni, vedere scenari di [Visual Studio Tools per Office di runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+  Il runtime di Visual Studio 2010 Tools per Office deve essere installato in ogni computer che esegue soluzioni create usando gli strumenti di sviluppo Microsoft Office in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Il runtime viene installato automaticamente all'installazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e di Microsoft Office. Per altre informazioni, vedere scenari [Visual Studio Tools per Office di installazione di runtime.](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "122083479"
 
     - Per scaricare [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , vedere Microsoft .NET Framework [4 (Programma di installazione Web).](https://www.microsoft.com/download/details.aspx?id=17851)
 
-    - Per scaricare [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] , vedere Profilo client di Microsoft .NET Framework [4 (programma di installazione Web).](https://www.microsoft.com/download/details.aspx?id=17113)
+    - Per scaricare [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] , vedere Microsoft .NET Framework [4 Client Profile (Programma di installazione Web).](https://www.microsoft.com/download/details.aspx?id=17113)
 
     - Per scaricare [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , vedere Microsoft .NET Framework [4.5](https://www.microsoft.com/download/details.aspx?id=30653).
 
@@ -52,7 +52,7 @@ ms.locfileid: "122083479"
 
      È possibile scaricare questi file di installazione [da Visual Studio 2010 Tools for Office runtime](https://www.microsoft.com/download/details.aspx?id=56961). I prerequisiti per [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] corrispondono a quelli per .NET Framework.
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] include i Language Pack. Se l'installazione di Windows è impostata su una lingua diversa dall'inglese, è possibile visualizzare i messaggi di runtime nella stessa lingua utilizzata da Windows. Analogamente, se gli utenti finali installano [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ed eseguono le soluzioni in versioni di Windows impostate su una lingua diversa dall'inglese, verranno visualizzati i messaggi di runtime nella stessa lingua di Windows. In alcuni casi, potrebbe essere necessario installare Language Pack aggiuntivi. Ad esempio, potrebbero essere necessari Language Pack aggiuntivi se la copia di Windows usa più di un'impostazione di lingua oppure si passa a un'altra lingua dopo aver già installato [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . È possibile trovare Language Pack [in Microsoft Visual Studio 2010 Tools for the Microsoft Office system (versione 4.0 runtime) language pack](https://www.microsoft.com/download/details.aspx?id=54246).
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] include i Language Pack. Se l'installazione di Windows è impostata su una lingua diversa dall'inglese, è possibile visualizzare i messaggi di runtime nella stessa lingua utilizzata da Windows. Analogamente, se gli utenti finali installano [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ed eseguono le soluzioni in versioni di Windows impostate su una lingua diversa dall'inglese, verranno visualizzati i messaggi di runtime nella stessa lingua di Windows. In alcuni casi, potrebbe essere necessario installare Language Pack aggiuntivi. Ad esempio, potrebbero essere necessari Language Pack aggiuntivi se la copia di Windows usa più di un'impostazione di lingua o se si passa a un'altra lingua dopo aver già installato [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . I Language Pack sono disponibili [Microsoft Visual Studio 2010 Tools for the Microsoft Office System (version 4.0 runtime) language pack](https://www.microsoft.com/download/details.aspx?id=54246).
 
 ## <a name="see-also"></a>Vedi anche
 - [Introduzione allo &#40;Office sviluppo in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

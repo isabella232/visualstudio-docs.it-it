@@ -37,13 +37,13 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b714de7bd050430eae1a45e36fa877acc7aa2b8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090330"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627846"
 ---
-# <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger Visual Studio
+# <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare punti di interruzione nel debugger Visual Studio
 
 I punti di interruzione sono una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. I punti di interruzione vengono impostati ogni volta che si vuole sospendere l'esecuzione del debugger. Ad esempio, è possibile visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in corrispondenza di un determinato punto di interruzione.  Se si sta tentando di risolvere un avviso o un problema durante l'uso dei punti di interruzione, vedere Risolvere i problemi relativi ai punti di interruzione [nel debugger Visual Studio .](../debugger/troubleshooting-breakpoints.md)
 
@@ -56,7 +56,7 @@ I punti di interruzione sono una delle tecniche di debug più importanti nella c
 
 Per impostare un punto di interruzione nel codice sorgente, fare clic sul margine all'estrema sinistra accanto a una riga di codice. È anche possibile selezionare la riga e premere **F9,** selezionare Debug Attiva/Disattiva punto di interruzione oppure fare clic con il pulsante destro del mouse e scegliere Punto di  >   **interruzione** Inserisci punto  >  **di interruzione**. Il punto di interruzione viene visualizzato come punto rosso nel margine sinistro.
 
-Per la maggior parte dei linguaggi, tra cui C#, i punti di interruzione e le righe di esecuzione correnti vengono evidenziati automaticamente. Per il codice C++, è possibile attivare l'evidenziazione del punto di interruzione e delle righe correnti selezionando Strumenti **(o** **Debug**) > **Opzioni** DebugElimina intera riga di origine per i punti di interruzione e l'istruzione  >    >   **corrente (solo C++).**
+Per la maggior parte dei linguaggi, tra cui C#, i punti di interruzione e le righe di esecuzione correnti vengono evidenziati automaticamente. Per il codice C++, è possibile attivare l'evidenziazione del punto di interruzione e delle righe correnti selezionando Strumenti **(o** **Debug**) > **Opzioni** debug Evidenzia riga di origine intera per i punti di interruzione e l'istruzione corrente  >    >   **(solo C++).**
 
 ![Impostare un punto di interruzione](../debugger/media/basicbreakpoint.png "Punto di interruzione di base")
 
@@ -74,11 +74,11 @@ Di seguito sono riportate alcune istruzioni generali per l'uso dei punti di inte
 
 - Per disabilitare un punto di interruzione senza eliminarlo, passare il puntatore del mouse o fare clic con il pulsante destro del mouse su di esso e **scegliere Disabilita punto di interruzione.** I punti di interruzione disabilitati vengono visualizzati come punti vuoti nel margine sinistro o nella **finestra Punti di** interruzione. Per abilitare nuovamente un punto di interruzione, passare il puntatore del mouse su di esso o fare clic con il pulsante destro del mouse su di esso e **selezionare Abilita punto di interruzione.**
 
-- Impostare condizioni e azioni, aggiungere e modificare etichette oppure esportare un punto di interruzione facendo clic con il pulsante destro del mouse su di esso e selezionando il comando appropriato oppure passando il puntatore del mouse su di esso e selezionando l'icona Impostazioni **punti** di interruzione.
+- Impostare condizioni e azioni, aggiungere e modificare etichette oppure esportare un punto di interruzione facendo clic con il pulsante destro del mouse su di esso e selezionando il comando appropriato oppure passando il puntatore del mouse su **di** esso e selezionando l'icona Impostazioni punti di interruzione.
 
 ## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Azioni e punti di analisi dei punti di interruzione
 
-Un *punto di analisi* è un punto di interruzione che stampa un messaggio nella finestra **Output.** Un punto di analisi può fungere da istruzione di traccia temporanea nel linguaggio di programmazione e non sospende l'esecuzione del codice. Per creare un punto di analisi, impostare un'azione speciale nella finestra Di **interruzione Impostazioni** traccia. Per istruzioni dettagliate, vedere [Usare punti di analisi nel debugger Visual Studio](../debugger/using-tracepoints.md).
+Un *punto di analisi* è un punto di interruzione che stampa un messaggio nella finestra **Output.** Un punto di analisi può fungere da istruzione di traccia temporanea nel linguaggio di programmazione e non sospende l'esecuzione del codice. Per creare un punto di analisi, impostare un'azione speciale nella finestra **Di interruzione Impostazioni** traccia. Per istruzioni dettagliate, vedere [Usare punti di analisi nel debugger Visual Studio .](../debugger/using-tracepoints.md)
 
 ## <a name="breakpoint-conditions"></a>Condizioni punto di interruzione
 
@@ -86,9 +86,9 @@ Un *punto di analisi* è un punto di interruzione che stampa un messaggio nella 
 
 **Per impostare una condizione del punto di interruzione:**
 
-1. Fare clic con il pulsante destro del mouse sul simbolo del punto di interruzione e scegliere **Condizioni** (o **premere ALT**  +  **F9,** **C).** In caso contrario, passare il puntatore del mouse sul simbolo del **punto** di interruzione, selezionare l Impostazioni e quindi **selezionare** Condizioni nella finestra Impostazioni punto **di** interruzione.
+1. Fare clic con il pulsante destro del mouse sul simbolo del punto di interruzione e scegliere **Condizioni** (o **premere ALT**  +  **F9,** **C).** In caso contrario, passare il puntatore del **mouse** sul Impostazioni punto di interruzione, selezionare l'icona Impostazioni e quindi **selezionare** Condizioni nella finestra Impostazioni punto **di** interruzione.
 
-   È anche possibile impostare le condizioni nella **finestra** Punti di interruzione facendo clic con il pulsante destro del mouse su un punto di interruzione, **Impostazioni** e quindi **scegliendo Condizioni.**
+   È anche possibile impostare condizioni nella finestra Punti **di** interruzione facendo clic con il pulsante destro del mouse su un punto di interruzione, **Impostazioni** e quindi **scegliendo Condizioni.**
 
    ![Impostazioni del punto di interruzione](../debugger/media/breakpointsettings.png "Impostazioni punto di interruzione")
 
@@ -125,7 +125,7 @@ Se si imposta una condizione del punto di interruzione con sintassi non valida, 
 
 1. Impostare un punto di interruzione nel codice dopo la creazione dell'oggetto.
 
-2. Avviare il debug e, quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, selezionare Debug Windows Variabili locali (o premere  >    >   **CTRL**  +  **ALT+V,** L) per aprire la  +   **finestra** Variabili locali. 
+2. Avviare il debug e quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, selezionare Debug Windows Variabili locali (o premere  >    >   **CTRL**  +  **ALT+V**, L )  +     per aprire la finestra Variabili locali.
 
    Trovare l'istanza specifica dell'oggetto nella **finestra Variabili** locali, fare clic con il pulsante destro del mouse su di essa e scegliere Make Object **ID (Crea ID oggetto).**
 
@@ -170,9 +170,9 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 **Per impostare un punto di interruzione della funzione:**
 
-1. Selezionare **Debug nuovo** punto di  >    >  **interruzione funzione** punto di interruzione o premere **CTRL**  +  **K**, **B**.
+1. Selezionare **Debug nuovo** punto di  >    >  **interruzione Punto di** interruzione funzione oppure premere **CTRL**  +  **K**, **B**.
 
-   È anche possibile selezionare **Nuovo punto di**  >  **interruzione della** funzione nella finestra Punti **di** interruzione.
+   È anche possibile selezionare Nuovo **punto**  >  **di interruzione della** funzione nella finestra Punti **di** interruzione.
 
 1. Nella finestra **di dialogo Nuovo punto di interruzione** funzione immettere il nome della funzione nella casella **Nome** funzione .
 
@@ -182,7 +182,7 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
      Esempio: `Namespace1.ClassX.MethodA()`
 
-   - Aggiungere i tipi di parametro di una funzione di overload.
+   - Aggiungere i tipi di parametro di una funzione in overload.
 
      Esempio: `MethodA(int, string)`
 
@@ -200,16 +200,16 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 1. Selezionare **OK**.
 
-### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Impostare un punto di interruzione di funzione usando un indirizzo di memoria (solo C++ nativo)
- È possibile usare l'indirizzo di un oggetto per impostare un punto di interruzione di funzione in un metodo chiamato da un'istanza specifica di una classe.  Ad esempio, dato un oggetto indirizzabile di tipo , è possibile impostare un punto di interruzione della `my_class` funzione sul metodo chiamato `my_method` dall'istanza.
+### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>Impostare un punto di interruzione della funzione usando un indirizzo di memoria (solo C++ nativo)
+ È possibile usare l'indirizzo di un oggetto per impostare un punto di interruzione della funzione in un metodo chiamato da un'istanza specifica di una classe.  Ad esempio, dato un oggetto indirizzabile di tipo , è possibile impostare un punto di interruzione `my_class` della funzione sul metodo chiamato `my_method` dall'istanza.
 
-1. Impostare un punto di interruzione in un punto qualsiasi dopo la creazione dell'istanza della classe .
+1. Impostare un punto di interruzione in un punto qualsiasi dopo la creazione di un'istanza della classe .
 
 2. Trovare l'indirizzo dell'istanza di , ad esempio `0xcccccccc` .
 
-3. Selezionare **Debug nuovo** punto di  >    >  **interruzione funzione** punto di interruzione o premere **CTRL**  +  **K**, **B**.
+3. Selezionare **Debug nuovo** punto di  >    >  **interruzione Punto di** interruzione funzione oppure premere **CTRL**  +  **K**, **B**.
 
-4. Aggiungere quanto segue alla **casella Nome funzione** e selezionare **linguaggio C++.**
+4. Aggiungere quanto segue alla casella **Nome funzione** e selezionare **Linguaggio C++.**
 
    ```cpp
    ((my_class *) 0xcccccccc)->my_method
@@ -219,34 +219,34 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 ## <a name="set-data-breakpoints-net-core-30-or-higher"></a><a name="BKMK_set_a_data_breakpoint_managed"></a>Impostare punti di interruzione dei dati (.NET Core 3.0 o versione successiva)
 
-I punti di interruzione dei dati interrompeno l'esecuzione quando cambia la proprietà di un oggetto specifico.
+I punti di interruzione dei dati interrompno l'esecuzione quando viene modificata la proprietà di un oggetto specifico.
 
 **Per impostare un punto di interruzione dei dati**
 
 1. In un progetto .NET Core avviare il debug e attendere fino a quando non viene raggiunto un punto di interruzione.
 
-2. Nella finestra Auto **,**  **Espressioni di controllo** o Variabili locali fare clic con il pulsante destro del mouse su una proprietà e scegliere Interrompi **quando** cambia il valore nel menu di scelta rapida.
+2. Nella finestra **Auto,** Espressioni  **di controllo** o Variabili locali fare clic con il pulsante destro del mouse su una proprietà e scegliere Interrompi **quando** il valore cambia nel menu di scelta rapida.
 
     ![Punto di interruzione dei dati gestiti](../debugger/media/managed-data-breakpoint.png "Punto di interruzione dei dati gestiti")
 
 I punti di interruzione dei dati in .NET Core non funzionano per:
 
-- Proprietà non espandibili nella descrizione comando, Variabili locali, Auto o finestra Espressioni di controllo
+- Proprietà non espandibili nella descrizione comando, variabili locali, auto o finestra Espressioni di controllo
 - Variabili statiche
 - Classi con l'attributo DebuggerTypeProxy
-- Campi all'interno degli struct
+- Campi all'interno di struct
 
 ::: moniker-end
 
 ## <a name="set-data-breakpoints-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Impostare punti di interruzione dei dati (solo C++ nativo)
 
- I punti di interruzione dei dati interrompeno l'esecuzione quando un valore archiviato in corrispondenza di un indirizzo di memoria specificato cambia. Se il valore viene letto ma non modificato, l'esecuzione non viene interrotta.
+ I punti di interruzione dei dati interrompno l'esecuzione quando viene modificato un valore archiviato in corrispondenza di un indirizzo di memoria specificato. Se il valore viene letto ma non modificato, l'esecuzione non viene interrotta.
 
 **Per impostare un punto di interruzione dei dati:**
 
-1. In un progetto C++ avviare il debug e attendere fino a quando non viene raggiunto un punto di interruzione. Scegliere Nuovo punto **di interruzione** punti **di interruzione** dal menu  >  **Debug**.
+1. In un progetto C++ avviare il debug e attendere che sia stato raggiunto un punto di interruzione. Scegliere Nuovo punto **di interruzione** punto **di interruzione** dal menu  >  **Debug**.
 
-    È anche possibile selezionare Nuovo punto di interruzione dati nella finestra Punti di interruzione oppure fare clic con il pulsante destro del mouse su un elemento nella finestra Auto , Espressione di controllo o Variabili locali e scegliere Interrompi quando il valore cambia nel  >   menu di scelta rapida.     
+    È anche possibile selezionare Nuovo punto di interruzione dati nella finestra Punti di interruzione oppure fare clic con il pulsante destro del mouse su un elemento nella finestra Auto , Espressione di controllo o Variabili locali e scegliere Interrompi quando il valore cambia nel menu di scelta   >   rapida.     
 
 2. Nella casella **Indirizzo** digitare un indirizzo di memoria o un'espressione che restituirà un indirizzo di memoria. Ad esempio, digitare `&avar` per eseguire l'interruzione quando viene modificato il contenuto della variabile `avar` .
 
@@ -255,55 +255,55 @@ I punti di interruzione dei dati in .NET Core non funzionano per:
 I punti di interruzione dei dati non funzionano nelle condizioni seguenti:
 - Un processo di cui non viene eseguito il debug scrive nella posizione di memoria.
 - La posizione di memoria è condivisa tra due o più processi.
-- La posizione di memoria viene aggiornata all'interno del kernel. Ad esempio, se la memoria viene passata alla funzione Windows Windows a 32 bit, la memoria verrà aggiornata dalla modalità kernel, in modo che il debugger non si interrompa durante `ReadFile` l'aggiornamento.
-- Dove l'espressione di controllo è maggiore di 4 byte su hardware a 32 bit e 8 byte su hardware a 64 bit. Si tratta di una limitazione dell'architettura x86.
+- La posizione di memoria viene aggiornata all'interno del kernel. Ad esempio, se la memoria viene passata alla funzione Windows a 32 bit, la memoria verrà aggiornata dalla modalità kernel, in modo che il debugger non si interrompa durante `ReadFile` l'aggiornamento.
+- Dove l'espressione di controllo è maggiore di 4 byte nell'hardware a 32 bit e di 8 byte su hardware a 64 bit. Si tratta di una limitazione dell'architettura x86.
 
 > [!NOTE]
 > - I punti di interruzione dei dati dipendono da indirizzi di memoria specifici. L'indirizzo di una variabile cambia da una sessione di debug a quella successiva, quindi i punti di interruzione dei dati vengono disabilitati automaticamente alla fine di ogni sessione di debug.
 >
-> - Se si imposta un punto di interruzione dei dati in una variabile locale, il punto di interruzione resta abilitato quando la funzione termina, ma l'indirizzo di memoria non è più applicabile, pertanto il comportamento del punto di interruzione è imprevedibile. Se si imposta un punto di interruzione dati in una variabile locale, è necessario eliminare o disabilitare il punto di interruzione prima che la funzione termini.
+> - Se si imposta un punto di interruzione dei dati in una variabile locale, il punto di interruzione resta abilitato quando la funzione termina, ma l'indirizzo di memoria non è più applicabile, pertanto il comportamento del punto di interruzione è imprevedibile. Se si imposta un punto di interruzione dei dati in una variabile locale, è necessario eliminare o disabilitare il punto di interruzione prima del termine della funzione.
 
 ## <a name="manage-breakpoints-in-the-breakpoints-window"></a><a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gestire i punti di interruzione nella finestra Punti di interruzione
 
- È possibile usare la **finestra Punti di** interruzione per visualizzare e gestire tutti i punti di interruzione nella soluzione. Questa posizione centralizzata è particolarmente utile in una soluzione di grandi dimensioni o per scenari di debug complessi in cui i punti di interruzione sono critici.
+ È possibile usare la finestra **Punti di** interruzione per visualizzare e gestire tutti i punti di interruzione nella soluzione. Questa posizione centralizzata è particolarmente utile in una soluzione di grandi dimensioni o per scenari di debug complessi in cui i punti di interruzione sono critici.
 
-Nella finestra **Punti di interruzione** è possibile cercare, ordinare, filtrare, abilitare/disabilitare o eliminare punti di interruzione. È anche possibile impostare condizioni e azioni o aggiungere una nuova funzione o un punto di interruzione dati.
+Nella finestra **Punti di interruzione** è possibile cercare, ordinare, filtrare, abilitare/disabilitare o eliminare punti di interruzione. È anche possibile impostare condizioni e azioni oppure aggiungere una nuova funzione o un nuovo punto di interruzione dei dati.
 
-Per aprire la finestra  **Punti di** interruzione, selezionare  >  **Debug Windows** punti di  >  **interruzione** oppure premere **CTRL** +  + **ALT+B.**
+Per aprire la finestra  **Punti di** interruzione, selezionare  >  **Debug Windows** punti di  >  **interruzione** oppure premere **CTRL** + **ALT** + **B.**
 
 ![Finestra Punti di interruzione](../debugger/media/breakpointswindow.png "finestra Punti di interruzione")
 
-Per selezionare le colonne da visualizzare nella finestra **Punti di** interruzione, selezionare **Mostra colonne**. Selezionare un'intestazione di colonna per ordinare l'elenco dei punti di interruzione in base a tale colonna.
+Per selezionare le colonne da visualizzare nella finestra Punti **di** interruzione , selezionare **Mostra colonne**. Selezionare un'intestazione di colonna per ordinare l'elenco dei punti di interruzione in base a tale colonna.
 
 ### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etichette dei punti di interruzione
-È possibile usare le etichette per ordinare e filtrare l'elenco dei punti di interruzione nella **finestra Punti di** interruzione.
+È possibile usare le etichette per ordinare e filtrare l'elenco dei punti di interruzione nella **finestra Punti di** interruzione .
 
-1. Per aggiungere un'etichetta a un punto di interruzione, fare clic con il pulsante destro del mouse sul punto di interruzione nel codice sorgente o nella finestra **Punti** di interruzione e quindi scegliere **Modifica etichette**. Aggiungere una nuova etichetta o sceglierne una esistente e quindi selezionare **OK.**
-2. Ordinare l'elenco dei punti **di** interruzione nella finestra Punti di interruzione selezionando **etichette**, **Condizioni** o altre intestazioni di colonna. È possibile selezionare le colonne da visualizzare selezionando **Mostra** colonne sulla barra degli strumenti.
+1. Per aggiungere un'etichetta a un punto di interruzione, fare clic con il pulsante destro del mouse sul punto di interruzione nel codice sorgente o nella finestra Punti di **interruzione** e quindi **scegliere Modifica etichette.** Aggiungere una nuova etichetta o sceglierne una esistente e quindi selezionare **OK.**
+2. Ordinare l'elenco dei punti **di** interruzione nella finestra Punti di interruzione selezionando **etichette,** **condizioni** o altre intestazioni di colonna. È possibile selezionare le colonne da visualizzare selezionando Mostra colonne **sulla** barra degli strumenti.
 
 ### <a name="export-and-import-breakpoints"></a>Esportare e importare punti di interruzione
  Per salvare o condividere lo stato e il percorso dei punti di interruzione, è possibile esportarli o importarli.
 
-- Per esportare un singolo punto di interruzione in un file XML, fare clic con il pulsante destro del mouse sul punto di interruzione nella finestra Del codice sorgente o **Punti** di interruzione e scegliere Esporta **o** Esporta **selezionato.** Selezionare un percorso di esportazione e quindi selezionare **Salva**. Il percorso predefinito è la cartella della soluzione.
-- Per esportare diversi punti  di interruzione, nella finestra Punti di interruzione selezionare le caselle accanto ai punti di interruzione o immettere i criteri di ricerca nel **campo** Cerca. Selezionare **l'icona Esporta tutti i punti di interruzione** corrispondenti ai criteri di ricerca correnti e salvare il file.
+- Per esportare un singolo punto di interruzione in un  file XML, fare clic con il pulsante destro del mouse sul punto di interruzione nella finestra Codice sorgente o Punti di interruzione e selezionare Esporta **o** **Esporta selezionato.** Selezionare un percorso di esportazione e quindi selezionare **Salva**. Il percorso predefinito è la cartella della soluzione.
+- Per esportare diversi punti  di interruzione, nella finestra Punti di interruzione selezionare le caselle accanto ai punti di interruzione oppure immettere i criteri di ricerca nel **campo** Cerca. Selezionare **l'icona Esporta tutti i punti di interruzione** corrispondenti ai criteri di ricerca correnti e salvare il file.
 - Per esportare tutti i punti di interruzione, deselezionare tutte le caselle e lasciare **vuoto il campo** Cerca. Selezionare **l'icona Esporta tutti i punti di interruzione** corrispondenti ai criteri di ricerca correnti e salvare il file.
 - Per importare punti  di interruzione, nella finestra Punti di interruzione selezionare l'icona Importa punti di interruzione da **un file,** passare al percorso del file XML e selezionare **Apri**.
 
 ## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Impostare punti di interruzione dalle finestre del debugger
 
-È anche possibile impostare punti di interruzione dalle **finestre del** debugger Stack di chiamate e **Disassembly.**
+È anche possibile impostare punti di interruzione dalle **finestre del** debugger Stack di chiamate **e Disassembly.**
 
 ### <a name="set-a-breakpoint-in-the-call-stack-window"></a>Impostare un punto di interruzione nella finestra Stack di chiamate
 
- Per interrompere l'istruzione o la riga restituita da una funzione chiamante, è possibile impostare un punto di interruzione nella **finestra Stack di** chiamate.
+ Per interrompere l'istruzione o la riga a cui viene restituita una funzione chiamante, è possibile impostare un punto di interruzione nella **finestra Stack di** chiamate.
 
 **Per impostare un punto di interruzione nella finestra Stack di chiamate:**
 
-1. Per aprire la **finestra Stack di** chiamate, è necessario essere sospesi durante il debug. Selezionare **Debug**  >  **Windows**  >  **stack di chiamate** o premere **CTRL** +  + **ALT+C**.
+1. Per aprire la finestra **Stack di** chiamate, è necessario essere sospesi durante il debug. Selezionare **Debug**  >  **Windows**  >  **Stack di chiamate** o premere **CTRL** + **ALT** + **C.**
 
-2. Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione chiamante e scegliere **Punto** di  >  **interruzione Inserisci** punto di interruzione oppure premere **F9.**
+2. Nella finestra **Stack di chiamate fare** clic con il pulsante destro del mouse sulla funzione chiamante e scegliere Punto di interruzione Inserisci punto di  >  interruzione oppure **premere F9.**
 
-   Accanto al nome della chiamata di funzione viene visualizzato un simbolo di punto di interruzione nel margine sinistro dello stack di chiamate.
+   Viene visualizzato un simbolo del punto di interruzione accanto al nome della chiamata di funzione nel margine sinistro dello stack di chiamate.
 
 Il punto di interruzione dello stack di chiamate viene visualizzato nella finestra Punti di interruzione come indirizzo, con un percorso di memoria corrispondente all'istruzione eseguibile successiva nella funzione. 
 
@@ -315,9 +315,9 @@ Per tracciare visivamente i punti di interruzione durante l'esecuzione del codic
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Impostare un punto di interruzione nella finestra Disassembly
 
-1. Per aprire la **finestra Disassembly,** è necessario essere sospesi durante il debug. Selezionare **Debug**  >  **Windows**  >  **Disassembly** o premere **CTRL** +  + **ALT+D.**
+1. Per aprire la **finestra Disassembly,** è necessario essere sospesi durante il debug. Selezionare **Debug**  >  **Windows**  >  **Disassembly** oppure premere **CTRL** + **ALT** + **D.**
 
-2. Nella finestra **Disassembly** fare clic sul margine sinistro dell'istruzione in corrispondenza della quale si vuole interrompere l'istruzione. È anche possibile selezionarlo e premere **F9** oppure fare clic con il pulsante destro del mouse e scegliere **Punto di**  >  **interruzione Inserisci punto di interruzione**.
+2. Nella finestra **Disassembly** fare clic sul margine sinistro dell'istruzione in corrispondenza della quale si vuole interrompere l'istruzione. È anche possibile selezionarlo e premere **F9** oppure fare clic con il pulsante destro del mouse e scegliere Punto di   >  **interruzione Inserisci punto di interruzione**.
 
 ## <a name="see-also"></a>Vedi anche
 

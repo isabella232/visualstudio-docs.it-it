@@ -11,11 +11,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a31872097d34a6ad7c8ce052c635c9b48770b5c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628343"
 ---
 # <a name="perftips"></a>PerfTips
 
@@ -31,11 +31,11 @@ Quando il debugger interrompe l'esecuzione in un punto di interruzione o un'oper
 
 ## <a name="diagnostics-tools-window"></a>Finestra Strumenti di diagnostica
 
-I punti di interruzione e i dati di intervallo associati vengono registrati nella **finestra** Strumenti di diagnostica dati.
+I punti di interruzione e i dati di intervallo associati vengono registrati nella **Strumenti di diagnostica** finestra.
 
-La figura seguente mostra la **Strumenti di diagnostica** finestra.
+Nella figura seguente viene illustrata la **Strumenti di diagnostica** di lavoro.
 
-![Screenshot della finestra Strumenti di diagnostica nel debugger Visual Studio, che mostra la sequenza temporale eventi e i grafici per l'utilizzo della memoria e della CPU.](../profiling/media/diagnostictools-update1.png)
+![Screenshot della finestra Strumenti di diagnostica nel debugger Visual Studio eventi, che mostra la sequenza temporale eventi e i grafici per l'utilizzo della memoria e della CPU.](../profiling/media/diagnostictools-update1.png)
 
 - La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
 

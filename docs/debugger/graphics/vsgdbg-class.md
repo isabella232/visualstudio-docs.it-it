@@ -11,11 +11,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: ff1383b8ff7fdf1557415cda2616ecbfd7d2585a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080858"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628008"
 ---
 # <a name="vsgdbg-class"></a>Classe VsgDbg
 Rappresenta un'interfaccia per il controllo a livello di codice del componente in-app della diagnostica grafica.
@@ -50,4 +50,4 @@ class VsgDbg;
 |[UnInit](uninit.md)|Finalizza il file di log di grafica, lo chiude e libera le risorse utilizzate durante la registrazione attiva delle informazioni grafiche da parte dell'applicazione.|
 
 ## <a name="remarks"></a>Commenti
- La `VsgDbg` classe rappresenta un'interfaccia che è possibile usare per controllare le funzionalità di diagnostica della grafica a livello di codice. È possibile usare alcune funzionalità anche quando non si acquisisce e si registrano attivamente informazioni grafiche. include la funzione `AddMessage` membro e la funzione `ToggleHUD` membro. Le altre funzioni membro preparano il componente in-app della diagnostica grafica per avviare o arrestare l'acquisizione attiva delle informazioni grafiche oppure devono essere chiamate mentre l'app acquisisce e registra attivamente le informazioni grafiche in un file di log grafico.
+ La `VsgDbg` classe rappresenta un'interfaccia che è possibile usare per controllare le funzionalità di diagnostica della grafica a livello di codice. È possibile usare alcune funzionalità anche quando non si acquisisce e si registrano attivamente informazioni grafiche. include la funzione `AddMessage` membro e la funzione `ToggleHUD` membro. Le altre funzioni membro preparano il componente in-app della diagnostica grafica per avviare o arrestare l'acquisizione attiva delle informazioni grafiche oppure devono essere chiamate mentre l'app acquisisce e registra attivamente le informazioni grafiche in un file di log di grafica.

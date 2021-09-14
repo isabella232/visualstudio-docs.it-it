@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
 ms.openlocfilehash: d57272582a75ddc183250f0f6978e529263e901c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031861"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633051"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Come gestire le configurazioni e i profili dei servizi
 ## <a name="overview"></a>Panoramica
@@ -95,4 +95,4 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
 5. (Facoltativo) Selezionare **Pubblica** per pubblicare il servizio cloud usando le nuove impostazioni. Se per il momento non si vuole pubblicare il servizio cloud e si chiude la pubblicazione guidata, Visual Studio richiede se si vogliono salvare le modifiche apportate al profilo.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per altre informazioni sulla configurazione di altre parti del progetto di Azure da Visual Studio, vedere Configurazione di un'istanza [di Azure Project](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).
+Per altre informazioni sulla configurazione di altre parti del progetto di Azure da Visual Studio, vedere Configurazione di [un'istanza di Azure Project](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).

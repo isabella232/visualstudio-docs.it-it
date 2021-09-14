@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 55e8812004cb652512eb946218a969679ad399bc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628295"
 ---
 # <a name="format-python-code"></a>Formattare il codice Python
 
@@ -25,7 +25,7 @@ Visual Studio consente di riformattare rapidamente il codice in base a opzioni d
 - Per formattare una selezione, selezionare **Modifica**  >  **selezione formato**  >  **avanzato** o premere **CTRL** + **E**  >  **F**.
 - Per formattare l'intero file, selezionare **Modifica**  >  **documento in** formato  >  **avanzato** o premere  +   >  **CTRL+D.**
 
-Le opzioni vengono impostate tramite **Strumenti Opzioni** Editor di  >    >  **testo**  >  **Formattazione Python**  >   e le relative schede annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
+Le opzioni vengono impostate tramite **Strumenti**  >  **Opzioni Editor** di testo  >  **Formattazione**  >  **Python** e le relative schede  >   annidate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
 
 ![Opzioni di formattazione di Python in Visual Studio](media/options-editor-formatting.png)
 
@@ -112,7 +112,7 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 
 **Modifica**  >  **Avanzate**  >  **Riempi paragrafo commento** (**CTRL** E P ) ridisponi e formatta il testo del commento, combinando le righe brevi e +   >  suddividendo quelle lunghe.
 
-Esempio:
+Ad esempio:
 
 ```python
 # foo

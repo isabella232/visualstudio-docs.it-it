@@ -12,15 +12,15 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 4c55f920d07d2f6230022d78a2a98b77cb86ebd2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633643"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedura: Aggiungere nodi all'area di lavoro da ESPLORA XML Schema
 
-In questo argomento viene illustrato come aggiungere nodi all'area di lavoro [Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) da Xml Schema **Explorer.** A tale scopo, trascinare e rilasciare nodi da **ESPLORA XML Schema** in una visualizzazione Progettazione XSD o tramite il menu di scelta rapida di Esplora XML **Schema.** È anche possibile aggiungere nodi evidenziati come risultato di una ricerca eseguita da **XML Schema Explorer.** Per altre informazioni, vedere Procedura: Aggiungere nodi dei risultati della [ricerca del set di schemi all'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+In questo argomento viene illustrato come aggiungere nodi all'area di lavoro [Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) da Xml Schema **Explorer.** A tale scopo, trascinare e rilasciare nodi da **ESPLORA XML Schema** in una visualizzazione Progettazione XSD o tramite il menu di scelta rapida di Esplora XML **Schema.** È anche possibile aggiungere nodi evidenziati in seguito a una ricerca eseguita da **XML Schema Explorer.** Per altre informazioni, vedere Procedura: Aggiungere nodi dei risultati della [ricerca del set di schemi all'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
 > All'area di lavoro Progettazione XML Schema è possibile aggiungere [solo nodi globali.](../xml-tools/xml-schema-designer-workspace.md)
@@ -35,7 +35,7 @@ In questo argomento viene illustrato come aggiungere nodi all'area di lavoro [Pr
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Per trascinare e rilasciare un nodo su una visualizzazione
 
-1. Fare clic con il pulsante destro `PurchaseOrderType` del mouse sul nodo Graph visualizzazione. Selezionare **Mostra in XML Schema Explorer**.
+1. Fare clic con il pulsante destro `PurchaseOrderType` del mouse sul nodo Graph visualizzazione. Selezionare **Mostra in XML Schema Explorer.**
 
      Il nodo è evidenziato in **XML Schema Explorer.**
 

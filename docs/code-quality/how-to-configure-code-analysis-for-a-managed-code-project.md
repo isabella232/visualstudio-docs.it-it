@@ -22,26 +22,26 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 645441b8961ca84534bd9f4a503189ceb2cb5ab3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122150"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631986"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedura: Configurare l'analisi legacy per il codice gestito
 
-In Visual Studio è possibile scegliere da un elenco di set di regole di analisi del codice [da](../code-quality/rule-set-reference.md) applicare a un progetto di codice gestito. Per impostazione predefinita, il set **di regole Microsoft Minimum Recommended Rules** è selezionato, ma è possibile applicare un set di regole diverso, se lo si desidera. I set di regole possono essere applicati a uno o più progetti in una soluzione.
+In Visual Studio è possibile scegliere da un elenco di set di regole di analisi del codice [da](../code-quality/rule-set-reference.md) applicare a un progetto di codice gestito. Per impostazione predefinita, il set **di regole Microsoft Minimum Recommended Rules** è selezionato, ma è possibile applicare un set di regole diverso, se necessario. I set di regole possono essere applicati a uno o più progetti in una soluzione.
 
 > [!NOTE]
 > Questo articolo si applica all'analisi legacy e [non .NET Compiler Platform analizzatori di codice basati su .](use-roslyn-analyzers.md)
 
-## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurare un set di regole per un progetto .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurare un set di regole per un .NET Framework progetto
 
 1. Aprire la **Code Analysis** nella pagina delle proprietà del progetto. È possibile precedere in uno dei modi seguenti:
 
-   - In **Esplora soluzioni** scegliere il progetto. Sulla barra dei menu selezionare **Analizza**  >  **Configura Code Analysis**  >  **\<projectname> per**.
+   - In **Esplora soluzioni** scegliere il progetto. Nella barra dei menu selezionare **Analizza**  >  **Configura Code Analysis**  >  **\<projectname> per**.
 
-   - Fare clic con il pulsante destro del mouse **Esplora soluzioni** progetto in e **scegliere** Proprietà e quindi selezionare la **Code Analysis** predefinita.
+   - Fare clic con il pulsante destro del mouse **Esplora soluzioni** progetto in e **scegliere Proprietà** e quindi selezionare la **Code Analysis** scheda.
 
 2. Negli elenchi **Configurazione e** **Piattaforma** scegliere la configurazione della build e la piattaforma di destinazione.
 

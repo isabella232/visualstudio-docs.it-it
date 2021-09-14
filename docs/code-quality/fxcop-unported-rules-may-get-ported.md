@@ -1,5 +1,5 @@
 ---
-description: Le regole di analisi legacy FxCop seguenti non sono ancora state implementate come analizzatori, ma possono comunque essere.
+description: Le regole di analisi legacy FxCop seguenti non sono ancora state implementate come analizzatori, ma è comunque possibile che lo siano.
 title: Regole non trasferite che potrebbero essere trasferite
 ms.date: 05/21/2019
 ms.topic: reference
@@ -13,15 +13,15 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: b16f089496721f0291c49c2c7e515b2b3c1ce211
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045138"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632009"
 ---
 # <a name="unported-rules-that-may-be-ported"></a>Regole non trasferite che potrebbero essere trasferite
 
-Le regole di analisi legacy FxCop seguenti non sono ancora state implementate come analizzatori, ma possono comunque essere. Ciò potrebbe essere dovuto a un motivo tecnico di blocco o semplicemente alla priorità inferiore della regola. Per altre informazioni sullo stato di porting di ogni regola, fare clic sul collegamento nella **colonna Problema di** rilevamento.
+Le regole di analisi legacy FxCop seguenti non sono ancora state implementate come analizzatori, ma è comunque possibile che lo siano. Ciò potrebbe essere dovuto a un motivo tecnico di blocco o semplicemente alla priorità più bassa della regola. Per altre informazioni sullo stato di portabilità di ogni regola, fare clic sul collegamento nella **colonna Problema di** rilevamento .
 
 ID regola | Problema di rilevamento
 --- | ---

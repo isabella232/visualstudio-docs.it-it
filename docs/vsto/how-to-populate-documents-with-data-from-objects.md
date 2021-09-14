@@ -17,15 +17,15 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: cba1869353071be287f244c7783964b010fff91d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046789"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634020"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Procedura: Popolare documenti con dati da oggetti
 
-L'accesso ai dati di un oggetto dati è uguale sia nei progetti a livello di documento per Microsoft Office Word, sia nei progetti Windows Form. Per inserire i dati di un oggetto nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile usare i controlli Windows Form. Inoltre, è possibile visualizzare i dati tramite i controlli host. I controlli host sono oggetti nativi di Microsoft Office Word che sono stati migliorati con eventi e funzionalità di data binding. Per altre informazioni, vedere [Panoramica di elementi host e controlli host](../vsto/host-items-and-host-controls-overview.md).
+L'accesso ai dati di un oggetto dati è uguale sia nei progetti a livello di documento per Microsoft Office Word, sia nei progetti Windows Form. Per inserire i dati di un oggetto nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile usare i controlli Windows Form. Inoltre, è possibile visualizzare i dati tramite i controlli host. I controlli host sono oggetti nativi di Microsoft Office Word che sono stati migliorati con eventi e funzionalità di data binding. Per altre informazioni, vedere [Panoramica degli elementi host e dei controlli host.](../vsto/host-items-and-host-controls-overview.md)
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -41,7 +41,7 @@ Per popolare il documento con i dati di un oggetto, è necessario completare tre
 
 Per aggiungere un oggetto dati, aprire la **finestra Origini** dati e creare un'origine dati da un oggetto . Per altre informazioni, vedere [Add new data sources](../data-tools/add-new-data-sources.md) (Aggiungere nuove origini dati).
 
-## <a name="connect-the-data-object-to-the-bindingsource"></a>Connessione'oggetto dati in BindingSource
+## <a name="connect-the-data-object-to-the-bindingsource"></a>Connessione l'oggetto dati a BindingSource
 
 Nei progetti a livello di documento i controlli vengono aggiunti al documento e associati ai dati in fase di progettazione.
 

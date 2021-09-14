@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 7aac266eff662a4270ba9595e03f571524e50b6f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628157"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test in Visual Studio
 
@@ -25,7 +25,7 @@ ms.locfileid: "122083765"
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Questo adattatore dati di diagnostica non può essere usato per i test eseguiti Microsoft Test Manager (deprecato in Visual Studio 2017). È possibile usare l'adattatore di diagnostica del profiler ASP.NET con test di carico usando solo siti Web, che richiedono Visual Studio Enterprise.
+> Questo adattatore dati di diagnostica non può essere usato per i test eseguiti usando Microsoft Test Manager (deprecato in Visual Studio 2017). È possibile usare l'adattatore di diagnostica del profiler ASP.NET con test di carico usando solo siti Web, che richiedono Visual Studio Enterprise.
 
 L'adattatore dati di diagnostica del profiler ASP.NET consente di raccogliere i dati del profiler ASP.NET dal livello applicazione quando si esegue un test di carico. Non è consigliabile eseguire il profiler per test di carico lunghi, ad esempio test di carico eseguiti per più di un'ora, in quanto le dimensioni del file del profiler possono aumentare anche fino a raggiungere centinaia di megabyte. Eseguire, al contrario, i test di carico più brevi tramite il profiler ASP.NET che offrirà comunque il vantaggio di ottenere una diagnosi approfondita dei problemi di prestazioni.
 

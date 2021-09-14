@@ -1,6 +1,6 @@
 ---
 title: Visualizzazione dei processi recenti
-description: Dopo l'invio dei processi, è possibile visualizzare l'elenco dei processi per visualizzarne lo stato, la durata e altro ancora.
+description: Dopo aver inviato i processi, è possibile visualizzare l'elenco dei processi per visualizzarne lo stato, la durata e altro ancora.
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
@@ -12,17 +12,17 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: 6377acf831db6ce7f14a2a3e7605f01777f49496
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045489"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633371"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Visualizzare le prestazioni e i dettagli di processi recenti
 
 Dopo l'invio dei processi è possibile visualizzare l'elenco dei processi per controllare il relativo stato, la durata e altri dettagli.
 
-1. Nella finestra **Esplora server** espandere il contesto di calcolo specifico.
+1. **Nell'Esplora server** espandere il contesto di calcolo specifico.
 2. Fare doppio clic su **Processi**.
 3. Verrà visualizzato l'elenco dei processi inviati a tale contesto di calcolo.
 4. Selezionare un processo **specifico nell'elenco** per visualizzare i dettagli.

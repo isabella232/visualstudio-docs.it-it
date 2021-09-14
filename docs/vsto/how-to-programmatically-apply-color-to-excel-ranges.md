@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: Applicare il colore agli intervalli Excel livello di codice'
-description: Informazioni su come applicare un colore al testo all'interno di un intervallo di celle, usare un controllo NamedRange o un oggetto Excel intervallo nativo.
+title: 'Procedura: Applicare il colore agli intervalli di Excel a livello Excel codice'
+description: Per applicare un colore al testo all'interno di un intervallo di celle, si usa un controllo NamedRange o un oggetto Excel intervallo nativo.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,14 +18,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 2a2a66db404501048a3eeaffafaf4ab0b51ac813
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106276"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634003"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: Applicare il colore agli intervalli Excel livello di codice
-  Per applicare un colore al testo all'interno di un intervallo di celle, usare un controllo o un oggetto Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> intervallo.
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Procedura: Applicare il colore agli intervalli di Excel a livello Excel codice
+  Per applicare un colore al testo all'interno di un intervallo di celle, usare un controllo o un oggetto Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> intervallo nativo.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -59,4 +59,4 @@ ms.locfileid: "122106276"
 - [Procedura: Applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Procedura: Fare riferimento a intervalli di fogli di lavoro nel codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
-- [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Parametri facoltativi nelle Office soluzioni](../vsto/optional-parameters-in-office-solutions.md)

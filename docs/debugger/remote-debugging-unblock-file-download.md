@@ -13,27 +13,27 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ec0b81a6e97faf6a3dae42ea90a66cb62fb57c7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122153797"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627894"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Procedura: Sbloccare il download degli strumenti remoti in Windows Server
 
-Le impostazioni di sicurezza predefinite Internet Explorer in Windows Server possono richiedere molto tempo per scaricare componenti come gli strumenti remoti.
+Le impostazioni di sicurezza predefinite in Internet Explorer in Windows Server possono richiedere molto tempo per scaricare componenti come gli strumenti remoti.
 
-* Configurazione sicurezza avanzata è abilitata in Internet Explorer, che impedisce l'apertura di siti Web e l'accesso alle risorse Web, a meno che il dominio contenente la risorsa non sia esplicitamente consentito (ovvero attendibile). Anche se è possibile disabilitare questa impostazione, non è consigliabile perché può presentare un rischio per la sicurezza.
+* La configurazione della sicurezza avanzata è abilitata in Internet Explorer, che impedisce l'apertura di siti Web e l'accesso alle risorse Web, a meno che il dominio che contiene la risorsa non sia esplicitamente consentito (ovvero attendibile). Anche se è possibile disabilitare questa impostazione, non è consigliabile perché può presentare un rischio per la sicurezza.
 
-* In Windows Server 2016, un'impostazione predefinita in **Opzioni Internet** Sicurezza Download a livello  >    >  **personalizzato Internet**  >    >   disabilita anche i download di file. Se si sceglie di scaricare gli strumenti remoti direttamente in Windows Server, è necessario abilitare il download dei file.
+* In Windows Server 2016, un'impostazione predefinita in **Internet Options**  >  **Security**  >  **Internet**  >  **Custom Level**  >  **Downloads** disabilita anche i download di file. Se si sceglie di scaricare gli strumenti remoti direttamente in Windows Server, è necessario abilitare il download dei file.
 
 Per scaricare gli strumenti in Windows Server, è consigliabile eseguire una delle azioni seguenti:
 
-* Scaricare gli strumenti remoti in un computer diverso, ad esempio quello che esegue Visual Studio, quindi copiare il file *.exe* in Windows Server.
+* Scaricare gli strumenti remoti in un computer diverso, ad esempio quello che esegue Visual Studio, quindi copiare il *file*.exein Windows Server.
 
 * Eseguire il debugger remoto [da una condivisione file](../debugger/remote-debugging.md#fileshare_msvsmon) nel computer Visual Studio remoto.
 
-* Scaricare gli strumenti remoti direttamente in Windows Server e accettare le istruzioni per aggiungere siti attendibili. I siti Web moderni includono spesso molte risorse di terze parti, che possono comportare molte richieste. Inoltre, potrebbe essere necessario aggiungere manualmente tutti i collegamenti reindirizzati. È possibile scegliere di aggiungere alcuni dei siti attendibili prima di iniziare il download. Passare a **Opzioni Internet > sicurezza > siti > siti attendibili** e aggiungere i siti seguenti.
+* Scaricare gli strumenti remoti direttamente in Windows Server e accettare le richieste di aggiunta di siti attendibili. I siti Web moderni includono spesso molte risorse di terze parti, che possono comportare molte richieste. Inoltre, potrebbe essere necessario aggiungere manualmente tutti i collegamenti reindirizzati. È possibile scegliere di aggiungere alcuni siti attendibili prima di iniziare il download. Passare a **Opzioni Internet > sicurezza > siti attendibili > siti** e aggiungere i siti seguenti.
 
   * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
@@ -58,4 +58,4 @@ Per scaricare gli strumenti in Windows Server, è consigliabile eseguire una del
 
     ![Finestra di dialogo Contenuto bloccato](../debugger/media/remotedbg-blocked-content.png)
 
-    Quando si scarica il software, si ottengono più richieste per concedere l'autorizzazione per caricare vari script e risorse del sito Web. In my.visualstudio.com, è consigliabile aggiungere i domini aggiuntivi per assicurarsi che l'accesso sia riuscito.
+    Quando si scarica il software, si ottengono più richieste per concedere l'autorizzazione per caricare vari script e risorse del sito Web. In my.visualstudio.com, è consigliabile aggiungere i domini aggiuntivi per assicurarsi che l'accesso funzioni correttamente.

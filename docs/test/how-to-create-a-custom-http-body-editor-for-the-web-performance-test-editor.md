@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 96b26f60fdc283baf90645e81453cb52fba17303
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628146"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: Creare un editor del corpo HTTP personalizzato per l'Editor test prestazioni Web
 
@@ -267,14 +267,14 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilare e distribuire i plug-in
 
-1. Scegliere **Compila** dal menu **Compila. \<Windows Form Control Library project name>**
+1. Scegliere **Compila** dal menu **Compila \<Windows Form Control Library project name>**.
 
 2. Chiudere tutte le istanze di Visual Studio.
 
    > [!NOTE]
    > La chiusura di Visual Studio consente di assicurarsi che il file con estensione *dll* non sia bloccato prima di provare a copiarlo.
 
-3. Copiare il file *.dll* risultante dalla cartella *bin\debug* del progetto (ad *esempio,MessageEditors.dll*) in *%ProgramFiles%\Microsoft Visual Studio\2017 \\ \<edition> \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Copiare il file *.dll* risultante dalla cartella *bin\debug* del progetto *(ad esempio,MessageEditors.dll*) in *%ProgramFiles%\Microsoft Visual Studio\2017 \\ \<edition> \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Aprire Visual Studio.
 
@@ -288,7 +288,7 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 3. Al termine della registrazione, nel Editor test prestazioni Web espandere la richiesta per il servizio  Web e selezionare un corpo stringa o un **corpo binario.**
 
-4. Nella finestra **Proprietà** selezionare Corpo stringa o Corpo binario e scegliere i puntini di **sospensione (...)**.
+4. Nella finestra **Proprietà** selezionare Corpo stringa o Corpo binario e scegliere i puntini di sospensione **(...)**.
 
    Viene visualizzata la finestra di dialogo **Modifica dati del corpo HTTP**.
 
@@ -311,6 +311,6 @@ Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (C#)](..
 - [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificare una regola di estrazione personalizzata per un test delle prestazioni Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificare una regola di convalida personalizzata per un test delle prestazioni Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md)
+- [Procedura: Creare un plug-in di test di carico](../test/how-to-create-a-load-test-plug-in.md)
 - [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Procedura: Creare un componente Visual Studio per il Visualizzatore prestazioni Web Risultati test](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Procedura: Creare un componente Visual Studio componente aggiuntivo per il Visualizzatore prestazioni Web Risultati test Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

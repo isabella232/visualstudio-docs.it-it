@@ -1,6 +1,6 @@
 ---
 title: Selezione frammento di codice
-description: Informazioni su come usare la selezione frammento di codice per inserire blocchi di codice già pronti nel documento attivo.
+description: Informazioni su come usare la selezione frammento di codice per inserire blocchi di codice predefiniti nel documento attivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ea8ffeb61cd83377e18d2e59a45ed1aa5d57d0e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634435"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 
@@ -45,7 +45,7 @@ La procedura per visualizzare la **Selezione frammento di codice** varia in base
 
 - SQL - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.
 
-Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
+Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere Procedura [dettagliata: Creazione di un frammento di codice.](../../ide/walkthrough-creating-a-code-snippet.md)
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 

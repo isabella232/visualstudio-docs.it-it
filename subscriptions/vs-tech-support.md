@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: 77856cf8a1f3497f66e89110e7b951c768da8c28
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633516"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -44,7 +44,7 @@ Descrizioni a livello di prodotto: espandere **Piani di supporto non disponibili
 ## <a name="how-to-activate-the-benefit"></a>Come attivare il vantaggio
 1. Passare a <https://my.visualstudio.com/Benefits>, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat to activate** (Chatta per attivare).
     > [!div class="mx-imgBorder"]
-    > ![Riquadro del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-tile.png "Fare clic su &quot;Chat per attivare&quot; nel riquadro Del supporto tecnico.")
+    > ![Riquadro del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-tile.png "Fare clic su &quot;Chat per attivare&quot; nel riquadro Supporto tecnico.")
 2. Viene avviata una sessione di chat con un rappresentante che crea un **ID contratto** e un **ID di accesso** e li invia all'utente tramite posta elettronica come promemoria.
 
 3. Per completare il processo, è necessario specificare al rappresentante gli elementi seguenti:
@@ -65,7 +65,7 @@ Descrizioni a livello di prodotto: espandere **Piani di supporto non disponibili
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Come segnalare un evento imprevisto tramite il vantaggio
 Dopo aver configurato **l'ID contratto** e **l'ID** di accesso, è possibile usarlo per inviare un evento imprevisto del supporto tecnico. 
 
-È possibile inviare eventi imprevisti online, al telefono o dal portale di Azure. 
+È possibile inviare eventi imprevisti online, per telefono o dal portale di Azure. 
 
 ### <a name="submit-an-incident-online"></a>Inviare un evento imprevisto online
 Per inviare un evento imprevisto tramite il portale di supporto per le aziende, seguire questa procedura:
@@ -87,7 +87,7 @@ Per inviare un evento imprevisto tramite il portale di supporto per le aziende, 
 0. Indicare la gravità del problema.  L'impostazione predefinita è "Importante". 
 0. Scegliere quando si vuole ricevere supporto. L'opzione "Solo durante l'orario di ufficio" è selezionata per impostazione predefinita. L'opzione "Supporto 24 ore su 24, 7 giorni su 7" è disponibile solo se è stata selezionata l'opzione "Critico" come gravità.
 0. Fare clic su **Avanti** per continuare. 
-0. Per **il passaggio 3,** specificare le informazioni di contatto che l'agente di supporto deve usare per contattare l'utente. 
+0. Per **il passaggio 3** specificare le informazioni di contatto che l'agente di supporto deve usare per contattare l'utente. 
    > [!div class="mx-imgBorder"]
    > ![Verificare le informazioni di contatto](_img/vs-tech-support/vs-tech-support-contact-info.png "Verificare le informazioni di contatto e il metodo di contatto preferito.") 
 0. Nel **passaggio 4** è possibile condividere queste informazioni sulla richiesta di supporto con altri utenti del team.  Immettere gli indirizzi di posta elettronica degli utenti con cui si vuole condividere la richiesta. Fare **clic su** Avanti per passare al passaggio successivo.
@@ -116,14 +116,14 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
-<sup>1</sup> *Include: Imagine Premium, BizSpark. Esclusi: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services. Esclusi: NFR Basic*
+<sup>1</sup> *Include: Imagine Premium, BizSpark. Esclude: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services. Esclude: NFR Basic*
 
 <sup>2</sup> *Include: Imagine Standard.*
 
-Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni.](https://my.visualstudio.com/gethelp)
 - 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

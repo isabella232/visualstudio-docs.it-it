@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Raccogliere dati usando un modulo Windows dati'
+title: 'Procedura dettagliata: Raccogliere dati usando un form Windows dati'
 description: Aprire un modulo Windows da una personalizzazione a livello di documento per Microsoft Excel, raccogliere informazioni dall'utente e scrivere le informazioni in una cella del foglio di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -19,13 +19,13 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 422fe752d75caad04023da2306428a2e26e82afd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099360"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633779"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procedura dettagliata: Raccogliere dati usando un modulo Windows dati
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procedura dettagliata: Raccogliere dati usando un form Windows dati
   Questa procedura dettagliata spiega come aprire un Windows Form da una personalizzazione a livello di documento per Microsoft Office Excel, raccogliere le informazioni dall'utente e scriverle in una cella del foglio di lavoro.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -40,14 +40,14 @@ ms.locfileid: "122099360"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE Visual Studio .](../ide/personalizing-the-visual-studio-ide.md)
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE Visual Studio.](../ide/personalizing-the-visual-studio-ide.md)
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
  Il primo passaggio consiste nella creazione di un progetto Cartella di lavoro di Excel.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto relativo a una cartella di lavoro di Excel denominato **WinFormInput** e selezionare **Crea un nuovo documento** nella procedura guidata. Per altre informazioni, [vedere Procedura: Creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto relativo a una cartella di lavoro di Excel denominato **WinFormInput** e selezionare **Crea un nuovo documento** nella procedura guidata. Per altre informazioni, vedere [Procedura: creare progetti Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      La nuova cartella di lavoro di Excel viene aperta nella finestra di progettazione di Visual Studio e il progetto **WinFormInput** viene aggiunto in **Esplora soluzioni**.
 
@@ -65,7 +65,7 @@ ms.locfileid: "122099360"
 
      Un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> viene aggiunto nella cella **A1**. Sul foglio di lavoro non sono presenti indicazioni visibili, ma nella casella **Nome** (al di sotto del foglio di lavoro sul lato sinistro) e nella finestra **Proprietà** viene visualizzato **formInput** quando la cella **A1** viene selezionata.
 
-## <a name="add-a-windows-form-to-the-project"></a>Aggiungere un form Windows al progetto
+## <a name="add-a-windows-form-to-the-project"></a>Aggiungere un Windows form al progetto
  Creare un controllo Windows Form per richiedere informazioni all'utente.
 
 ### <a name="to-add-a-windows-form"></a>Per aggiungere un controllo Windows Form
@@ -94,7 +94,7 @@ ms.locfileid: "122099360"
 2. Nel gestore dell'evento <xref:Microsoft.Office.Tools.Excel.Workbook.Open> di `ThisWorkbook`, aggiungere il codice riportato di seguito per dichiarare una variabile per il modulo `GetInputString` e visualizzare il modulo.
 
    > [!NOTE]
-   > In C# è necessario aggiungere un gestore dell'evento, come mostrato nell'evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> che segue. Per informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori eventi in Office progetti](../vsto/how-to-create-event-handlers-in-office-projects.md).
+   > In C# è necessario aggiungere un gestore dell'evento, come mostrato nell'evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> che segue. Per informazioni sulla creazione di gestori eventi, vedere [Procedura: Creare gestori](../vsto/how-to-create-event-handlers-in-office-projects.md)eventi in Office progetti .
 
     :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet1":::
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet1":::
@@ -135,14 +135,14 @@ ms.locfileid: "122099360"
 ## <a name="next-steps"></a>Passaggi successivi
  Questa procedura dettagliata fornisce le informazioni di base sulla visualizzazione di un controllo Windows Form e sul passaggio di dati a un foglio di lavoro. Altre attività che è possibile eseguire includono:
 
-- Usare i controlli Windows Form in una cartella di lavoro di Excel o un documento di Word. Per altre informazioni, vedere [l'Windows Dei controlli Form Office panoramica dei documenti.](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- Usare i controlli Windows Form in una cartella di lavoro di Excel o un documento di Word. Per altre informazioni, vedere [la panoramica Windows form](../vsto/windows-forms-controls-on-office-documents-overview.md)Office documenti .
 
-- Modificare l'interfaccia utente di un Microsoft Office appalto da una personalizzazione a livello di documento o VSTO componente aggiuntivo. Per altre informazioni, vedere l'Office [dell'interfaccia utente.](../vsto/office-ui-customization.md)
+- Modificare l'interfaccia utente di Microsoft Office'applicazione da una personalizzazione a livello di documento o VSTO componente aggiuntivo. Per altre informazioni, vedere personalizzazione [Office'interfaccia utente.](../vsto/office-ui-customization.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Sviluppare Office soluzioni](../vsto/developing-office-solutions.md)
 - [Scrivere codice in Office soluzioni](../vsto/writing-code-in-office-solutions.md)
-- [Componenti VSTO programma](../vsto/programming-vsto-add-ins.md)
+- [Componenti aggiuntivi VSTO programma](../vsto/programming-vsto-add-ins.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
-- [Procedure dettagliate che usano Excel](../vsto/walkthroughs-using-excel.md)
+- [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)

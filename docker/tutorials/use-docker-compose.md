@@ -6,15 +6,16 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8e846388320da492ddccd7b2628112a32f0c4145
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1609081f364a2a20f983f8d8acd55181a71de42f
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633435"
 ---
 # <a name="use-docker-compose"></a>Usare Docker Compose
 
@@ -243,7 +244,7 @@ Ora che il file è `docker-compose.yml` disponibile, è possibile avviarlo.
 
 1. Assicurarsi prima di tutto che non siano in esecuzione altre copie dell'app e del database ( `docker ps` e `docker rm -f <ids>` ).
 
-1. Avviare lo stack dell'applicazione usando il `docker-compose up` comando . Aggiungere il `-d` flag per eseguire tutti gli elementi in background. In alternativa, è possibile fare clic con il pulsante destro del mouse sul file Compose e selezionare **l'opzione Compose Up** (Componi su) VS Code barra laterale. 
+1. Avviare lo stack dell'applicazione usando il `docker-compose up` comando . Aggiungere il `-d` flag per eseguire tutti gli elementi in background. In alternativa, è possibile fare clic con il pulsante destro del mouse sul file Compose e selezionare **l'opzione** Componi su per la barra VS Code barra laterale. 
 
     ```bash
     docker-compose up -d
@@ -274,7 +275,7 @@ Ora che il file è `docker-compose.yml` disponibile, è possibile avviarlo.
     Il nome del servizio viene visualizzato all'inizio della riga (spesso colorato) per distinguere i messaggi. Per visualizzare i log per un servizio specifico, è possibile aggiungere il nome del servizio alla fine del comando logs, ad esempio `docker-compose logs -f app` .
 
     > [!TIP]
-    > **Attesa del database prima di avviare l'app** Quando l'app viene avviato, in realtà si trova e attende che MySQL sia operativo e pronto prima di provare a connettersi a it.Docker non ha alcun supporto predefinito per attendere che un altro contenitore sia completamente operativo e pronto prima di avviare un altro contenitore. Per i progetti basati su Node, è possibile usare la [dipendenza della porta di](https://github.com/dwmkerr/wait-port) attesa. Sono disponibili progetti simili per altri linguaggi/framework.
+    > **Attesa del database prima di avviare l'app** Quando l'app si avvia, in realtà si trova e attende che MySQL sia pronto prima di provare a connettersi. Docker non ha alcun supporto predefinito per attendere che un altro contenitore sia completamente operativo e pronto prima di avviare un altro contenitore. Per i progetti basati su Node, è possibile usare la [dipendenza della porta di](https://github.com/dwmkerr/wait-port) attesa. Sono disponibili progetti simili per altri linguaggi/framework.
 
 1. A questo punto, dovrebbe essere possibile aprire l'app e vederla in esecuzione. E hey! È possibile eseguire un singolo comando.
 
@@ -290,7 +291,7 @@ Se si scorre verso il basso la rete, verranno visualizzati i due contenitori def
 
 ## <a name="tear-it-all-down"></a>Disattesa tutto
 
-Quando si è pronti per eliminare tutto, è sufficiente eseguire oppure fare clic con il pulsante destro del mouse sull'applicazione nell'elenco dei contenitori nell'estensione Docker VS Code e scegliere `docker-compose down` Componi.  I contenitori verranno arresti e la rete verrà rimossa.
+Quando si è pronti per eliminare tutto, è sufficiente eseguire oppure fare clic con il pulsante destro del mouse sull'applicazione nell'elenco dei contenitori nell'estensione Docker VS Code e selezionare `docker-compose down` Componi.  I contenitori verranno arresti e la rete verrà rimossa.
 
 > [!WARNING]
 > **Rimozione di volumi** Per impostazione predefinita, i volumi denominati nel file compose NON vengono rimossi quando si esegue `docker-compose down` . Per rimuovere i volumi, è necessario aggiungere il `--volumes` flag .
@@ -299,7 +300,7 @@ Dopo l'eseparazione, è possibile passare a un altro progetto, eseguire ed esser
 
 ## <a name="recap"></a>Riepilogo
 
-In questa sezione sono stati appresi i Docker Compose e come questo consente di semplificare notevolmente la definizione e la condivisione di applicazioni multi-servizio. È stato creato un file Compose traducendo i comandi in uso nel formato di composizione appropriato.
+In questa sezione sono stati appresi i Docker Compose e il modo in cui consente di semplificare notevolmente la definizione e la condivisione di applicazioni multi-servizio. È stato creato un file Compose traducendo i comandi in uso nel formato di composizione appropriato.
 
 A questo punto, si inizia a completare l'esercitazione. Esistono tuttavia alcune procedure consigliate per la creazione di immagini da coprire, in quanto si verifica un problema grave con il Dockerfile in uso. Diamo quindi un'occhiata.
 

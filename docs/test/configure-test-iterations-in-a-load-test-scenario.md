@@ -1,6 +1,6 @@
 ---
 title: Configurazione di iterazioni di test per il test di carico
-description: Informazioni su come configurare le impostazioni di iterazione test, per configurare il numero massimo di iterazioni nello scenario e il tempo di pausa tra di esse.
+description: Informazioni su come configurare le impostazioni di iterazione dei test, configurare il numero massimo di iterazioni nello scenario e il tempo di sospensione tra di esse.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -13,12 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b6a32d49471b0adc3480bcb53455740204e1059b82bcb056f474b6df47c4cbc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ff28077f118af283ba2eac58e84c92dbadac1065
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121395389"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628164"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurare le iterazioni di test in uno scenario di test di carico
 
@@ -33,7 +33,7 @@ Per configurare le impostazioni delle iterazioni di test, modificare uno scenari
 La proprietà **Numero massimo di iterazioni test** controlla il numero massimo di iterazioni di test da eseguire per lo scenario. Analogamente alla proprietà **Iterazioni test** nelle impostazioni di esecuzione del test di carico, si tratta del numero massimo per tutti gli utenti in tutti gli agenti, non di un'impostazione per utente.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario di test di carico.](../test/load-test-scenario-properties.md)
+> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario di test di carico](../test/load-test-scenario-properties.md).
 
 Per una combinazione di test sequenziale, un'iterazione è un passaggio in tutti i test nella combinazione. Per tutte le altre combinazioni di test, ogni esecuzione del test rappresenta un'iterazione. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
@@ -42,7 +42,7 @@ Se il test di carico è basato sulla durata e tale durata scade prima del comple
 Quando viene soddisfatto il conteggio delle iterazioni dello scenario, l'esecuzione dello scenario verrà arrestata ma qualsiasi altro scenario attivo continuerà a essere eseguito.
 
 > [!NOTE]
-> Una proprietà correlata è la proprietà **Unique** in un'origine dati di test Web, che si sposta in sequenza tra i dati, riga per riga, ma una sola volta per ogni record. Per altre informazioni, vedere [Aggiungere un'origine dati a un test prestazioni Web](../test/add-a-data-source-to-a-web-performance-test.md).
+> Una proprietà correlata è la proprietà **Unique** in un'origine dati del test Web, che si sposta in sequenza tra i dati, riga per riga, ma solo una volta per ogni record. Per altre informazioni, vedere [Aggiungere un'origine dati a un test prestazioni Web](../test/add-a-data-source-to-a-web-performance-test.md).
 
 La proprietà **Numero massimo di iterazioni test** è utile in diverse situazioni. Alcuni tester che si occupano di test di carico preferiscono eseguire test basati sulle iterazioni, mentre altri preferiscono i test basati sulla durata.
 
@@ -74,7 +74,7 @@ La proprietà **Tempo interazione utente tra due iterazioni test** viene imposta
 La proprietà **Tempo interazione utente tra due iterazioni test** viene usata per specificare il numero di secondi di attesa prima di avviare un'iterazione test.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario di test di carico.](../test/load-test-scenario-properties.md)
+> Per un elenco completo delle proprietà dello scenario di test di carico e delle relative descrizioni, vedere [Proprietà dello scenario di test di carico](../test/load-test-scenario-properties.md).
 
 ### <a name="to-specify-the-think-time-between-test-iterations"></a>Per specificare il tempo di interazione utente tra iterazioni di test
 

@@ -12,15 +12,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - uwp
 ms.openlocfilehash: 721ee723c6f7d0e28c4d7da376233641a580d21d
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633676"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procedura: debug di XML mediante Progettazione flussi di lavoro
 
-I flussi di lavoro vengono definiti mediante codice XAML. La rappresentazione dell'interfaccia utente del flusso di lavoro si basa sull'albero XAML che definisce il flusso di lavoro. L'esperienza di debug è simile al debug dei flussi di lavoro nel Progettazione flussi di lavoro. Durante il debug di XAML, ad esempio, le finestre variabili locali, espressioni di controllo e thread funzionano allo stesso modo delle finestre Progettazione flussi di lavoro debug. Durante il debug di XAML, inoltre, la visualizzazione degli stack di chiamate si presenta sotto forma di visualizzazione gerarchica basata sulle righe del flusso di esecuzione del flusso di lavoro.
+I flussi di lavoro vengono definiti mediante codice XAML. La rappresentazione dell'interfaccia utente del flusso di lavoro si basa sull'albero XAML che definisce il flusso di lavoro. L'esperienza di debug è simile al debug dei flussi di lavoro nel Progettazione flussi di lavoro. Durante il debug di XAML, ad esempio, le finestre variabili locali, espressioni di controllo e thread funzionano allo stesso modo delle finestre di Progettazione flussi di lavoro debug. Durante il debug di XAML, inoltre, la visualizzazione degli stack di chiamate si presenta sotto forma di visualizzazione gerarchica basata sulle righe del flusso di esecuzione del flusso di lavoro.
 
 > [!NOTE]
 > Se XAML per un flusso di lavoro si trova nello stesso assembly delle attività, la parte dell'assembly dei nomi di classe non è inclusa. Senza questa parte dei nomi di classe (attività), il codice XAML non può essere caricato in fase di esecuzione. Non è consigliabile per definire le attività nello stesso spazio dei nomi del progetto principale; in caso contrario, XAML dovrà essere modificato a mano dopo essere stato modificato nella finestra di progettazione.

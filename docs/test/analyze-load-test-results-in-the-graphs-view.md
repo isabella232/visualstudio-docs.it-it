@@ -1,5 +1,5 @@
 ---
-title: Analizzare i risultati dei test di carico - Visualizzazione Grafici (Analizzatore test di carico)
+title: Analizzare i risultati del test di carico - Visualizzazione Grafici (Analizzatore test di carico)
 description: Informazioni su come visualizzare i risultati dei test come grafici. Ogni grafo viene visualizzato in un pannello con il nome del grafo in un elenco a discesa.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 0a783a64901f0178913b2b90a3052bf7bbc03884
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628223"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -31,7 +31,7 @@ I risultati di un test di carico vengono visualizzati come dati in diversi panne
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Per visualizzare i risultati dei test come grafici, scegliere **Grafici sulla** barra degli strumenti del **test di** carico. Ogni singolo grafico viene visualizzato in un pannello con il nome del grafico riportato all'inizio di un elenco a discesa. Per visualizzare un grafico diverso nel pannello, scegliere dall'elenco il nome di un altro grafico.
+Per visualizzare i risultati del test come grafici, scegliere **Grafici sulla** barra degli strumenti del **test di** carico. Ogni singolo grafico viene visualizzato in un pannello con il nome del grafico riportato all'inizio di un elenco a discesa. Per visualizzare un grafico diverso nel pannello, scegliere dall'elenco il nome di un altro grafico.
 
 È possibile visualizzare fino a quattro pannelli di grafici alla volta. È possibile passare da un layout del pannello all'altro mediante il pulsante della barra degli strumenti per il **layout dei pannelli**.
 
@@ -59,7 +59,7 @@ Le informazioni del contatore vengono visualizzate sia nel grafico che nella leg
 
 ## <a name="counters-displayed-in-graphs"></a>Contatori visualizzati nei grafici
 
-Nei grafici vengono visualizzati *contatori*. che fanno riferimento ai dati raccolti durante un test di carico, ad esempio test al secondo o tempo medio test. Per altre informazioni sui contatori, vedere Specifica degli insiemi di contatori e delle regole [di soglia per i computer in un test di carico.](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+Nei grafici vengono visualizzati *contatori*. che fanno riferimento ai dati raccolti durante un test di carico, ad esempio test al secondo o tempo medio test. Per altre informazioni sui contatori, vedere Specifica degli insiemi di contatori e delle regole di [soglia per i computer in un test di carico.](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 
 La legenda per i contatori visualizzati nei grafici mostra diverse colonne di dati utili sull'esecuzione del test di carico. Per disattivare la visualizzazione dei dati nel grafico, deselezionare la casella di controllo nella riga della legenda.
 
@@ -83,21 +83,21 @@ Nella legenda sono presenti le seguenti colonne:
 |-|-|
 |**Personalizzare i grafici tramite la legenda:** la legenda della visualizzazione Grafici consente di visualizzare informazioni per ciascun contatore delle prestazioni associato a un grafico. È possibile usare la legenda per rimuovere ed evidenziare contatori delle prestazioni nel grafico e personalizzare le opzioni relative ai tracciati.|-   [Uso della legenda della visualizzazione Grafici per analizzare i test di carico](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Visualizzare i contatori nei grafici:** è possibile aggiungere diversi tipi di dati in un grafico dei risultati dei test di carico inserendo contatori nel grafico.|-   [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Fare zoom avanti nei grafici:** al termine di un test di carico, è possibile usare le barre dello zoom per eseguire lo zoom avanti e scorrere un'area del grafico. Lo zoom avanti consente di analizzare i dettagli anche minuti dei dati generati durante l'esecuzione di un test di carico.|-   [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Fare zoom avanti nei grafici:** al termine di un test di carico, è possibile usare le barre dello zoom per eseguire lo zoom avanti e scorrere un'area del grafico. Lo zoom avanti consente di analizzare i dettagli anche minuti dei dati generati durante l'esecuzione di un test di carico.|-   [Procedura: Ingrandire un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Affiancare i grafici:** è possibile disporre i grafici dei risultati dei test di carico secondo diversi modelli. È possibile affiancare fino a quattro grafici.||
 |**Creare grafici personalizzati:** è possibile progettare grafici in cui vengono visualizzate informazioni specifiche sui risultati dei test di carico. Per progettare un grafico personalizzato, specificare i contatori del test di carico che verranno visualizzati sul grafico.|-   [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Esportare i dati dei contatori delle prestazioni nel grafico:** È possibile esportare i dati del grafo in Microsoft Excel usando il pulsante Esporta  dati Graph in **Excel** sulla barra degli strumenti dell'Analizzatore test di carico mentre si è nella **visualizzazione** Grafici.||
+|**Esportare i dati dei contatori delle prestazioni nel grafico:** È possibile esportare i dati del grafo Microsoft Excel usando il pulsante Esporta dati  Graph in **Excel** sulla barra degli strumenti dell'analizzatore test di carico mentre si è nella **visualizzazione** Grafici.||
 
 ## <a name="related-tasks"></a>Attività correlate
 
-[Analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analizzare i risultati e gli errori del test di carico nella vista tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
-[Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
+[Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
 
-[Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizzare i risultati del test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Procedura: Ingrandire un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

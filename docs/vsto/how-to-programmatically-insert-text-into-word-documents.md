@@ -21,11 +21,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: c2acc09b04ba08543faa449788f61f7fa72c8c72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633924"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procedura: Inserire testo nei documenti di Word a livello di codice
   Esistono tre modi principali per inserire il testo nei documenti di Microsoft Office Word:
@@ -124,7 +124,7 @@ ms.locfileid: "122026187"
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet61":::
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet61":::
 
-   È anche possibile usare il metodo dell'oggetto , che simula la funzionalità <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> <xref:Microsoft.Office.Interop.Word.Selection> del tasto **Backspace** sulla tastiera. Tuttavia, per l'inserimento e la modifica del testo, l'oggetto <xref:Microsoft.Office.Interop.Word.Range> offre un maggiore controllo.
+   È anche possibile usare il metodo dell'oggetto , che simula la funzionalità del <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> <xref:Microsoft.Office.Interop.Word.Selection> tasto **Backspace** sulla tastiera. Tuttavia, per l'inserimento e la modifica del testo, l'oggetto <xref:Microsoft.Office.Interop.Word.Range> offre un maggiore controllo.
 
    L'esempio seguente mostra il codice completo. Per usare questo esempio, eseguire il codice dalla classe `ThisDocument` o `ThisAddIn` nel progetto.
 

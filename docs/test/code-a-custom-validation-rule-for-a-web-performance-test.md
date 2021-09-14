@@ -1,5 +1,5 @@
 ---
-title: Creare una regola di convalida personalizzata per un test web perf
+title: Creare una regola di convalida personalizzata per un test delle prestazioni Web
 description: Informazioni su come creare regole di convalida personalizzate, derivate da una classe di regole di convalida, ValidationRule.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 5eb34377ab17bec9a1e8bb51e213eb24b7415e48
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026902"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628169"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificare una regola di convalida personalizzata per un test delle prestazioni Web
 
@@ -51,9 +51,9 @@ ms.locfileid: "122026902"
 
 6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di convalida personalizzata.
 
-7. Nella finestra test Project aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
+7. Nella finestra di Project test aprire un test delle prestazioni Web nel **Editor test prestazioni Web**.
 
-8. Per aggiungere la regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse su una richiesta e **scegliere Aggiungi regola di convalida**.
+8. Per aggiungere la regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse su una richiesta e **scegliere Aggiungi regola di convalida.**
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di convalida**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di convalida personalizzata, quindi scegliere **OK**.
 

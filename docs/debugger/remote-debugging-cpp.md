@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug remoto di un'Project | C++ Microsoft Docs
+title: Eseguire il debug remoto di un Project | C++ Microsoft Docs
 description: Per informazioni su come eseguire il debug Visual Studio'applicazione C++ da un computer remoto, seguire queste istruzioni dettagliate.
 ms.custom: remotedebugging
 ms.date: 08/14/2018
@@ -20,11 +20,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ffaa8d1dde6e1304cda0dec33809a01e36fdd56b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627917"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Debug remoto di un'Project C++ in Visual Studio
 Per eseguire il debug di un'applicazione Visual Studio in un computer diverso, installare ed eseguire gli strumenti remoti nel computer in cui si distribuirà l'app, configurare il progetto per connettersi al computer remoto da Visual Studio e quindi distribuire ed eseguire l'app.
@@ -65,7 +65,7 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non per tel
 
 4. Impostare **Debugger da avviare** su **Debugger Windows remoto**.
 
-    ![Screenshot della scheda Debug in Proprietà Visual Studio Esplora soluzioni debug. La proprietà Debugger da avviare è impostata su Debugger Windows remoto.](../debugger/media/remotedebuggingcplus.png)
+    ![Screenshot della scheda Debug nella finestra Visual Studio Esplora soluzioni proprietà. La proprietà Debugger da avviare è impostata su Debugger Windows remoto.](../debugger/media/remotedebuggingcplus.png)
 
 5. Apportare le seguenti modifiche alle proprietà:
 
@@ -81,7 +81,7 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non per tel
 
     Se si distribuiscono file aggiuntivi (facoltativo), la cartella deve esistere in entrambi i computer.
 
-6. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione e **scegliere Gestione configurazione**.
+6. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione **e scegliere Gestione configurazione**.
 
 7. Per la configurazione **Debug**, selezionare la casella di controllo **Distribuisci**.
 

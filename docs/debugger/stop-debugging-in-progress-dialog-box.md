@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Arresta debug in corso | Microsoft Docs
-description: Esplorare la finestra di dialogo Arresta debug in corso , visualizzata quando il debugger tenta di arrestare una sessione di debug, ma l'arresto della sessione può richiedere tempo.
+description: Esplorare la finestra di dialogo Arresta debug in corso, che viene visualizzata quando il debugger tenta di arrestare una sessione di debug, ma l'arresto della sessione potrebbe richiedere tempo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,11 +23,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: 837218216a198fb11be7c05ea9c93c002f1501b7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161089"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627864"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Terminazione debug in corso (finestra di dialogo)
 Questa finestra di dialogo viene visualizzata quando il debugger tenta di interrompere una sessione di debug, ma questa operazione richiede tempo. L'interruzione di una sessione di debug è in genere un'operazione molto veloce e questa finestra di dialogo non viene visualizzata. Talvolta, tuttavia, è necessario più tempo per la disconnessione da tutti i processi in fase di debug. Se l'interruzione della sessione richiede diversi secondi o si verifica un errore di disconnessione, viene visualizzata questa finestra di dialogo. Se ciò avviene di frequente, è possibile che sia presente un problema interno. Può quindi essere opportuno contattare il Servizio Supporto Tecnico Clienti Microsoft.

@@ -12,11 +12,11 @@ ms.topic: overview
 ms.workload:
 - multiple
 ms.openlocfilehash: 42d22d608426641394423d1ec0478605d4d4e68d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037538"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633316"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Panoramica di Strumenti di Visual Studio per intelligenza artificiale
 
@@ -36,11 +36,11 @@ Informazioni su come creare una soluzione di Deep Learning dall'esercitazione Es
 
 ## <a name="samples"></a>Esempi
 
-Esplorare gli esempi nel [repository Samples](https://github.com/Microsoft/samples-for-ai) e nella raccolta [Machine Learning .](https://gallery.cortanaintelligence.com/projects)
+Esplorare gli esempi nel [repository Samples e](https://github.com/Microsoft/samples-for-ai) nella raccolta Machine Learning [.](https://gallery.cortanaintelligence.com/projects)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni sull'uso Strumenti di Visual Studio ai, inclusi i requisiti di sistema e le opzioni di supporto, vedere la pagina About [Strumenti di Visual Studio for AI](about-ai-tools.md) (Informazioni sui Strumenti di Visual Studio per intelligenza artificiale).
+Per altre informazioni sull'Strumenti di Visual Studio per l'intelligenza artificiale, inclusi i requisiti di sistema e le opzioni di supporto, vedere la pagina Informazioni Strumenti di Visual Studio [per intelligenza](about-ai-tools.md) artificiale.
 
 ## <a name="see-also"></a>Vedi anche
 [Estendibilità in Visual Studio](../extensibility/index.yml?view=vs-2017&preserve-view=true)

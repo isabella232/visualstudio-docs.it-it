@@ -10,15 +10,15 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 16d67b8436368bc4b32f20e714a5c397817a1847
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075606"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633292"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Aggiungere cache di Azure per Redis usando Visual Studio Servizi connessi
 
-Con Visual Studio, è possibile connettere uno degli elementi seguenti a cache di Azure per Redis usando la **Servizi connessi** funzionalità:
+Con Visual Studio, è possibile connettere uno degli elementi seguenti a cache di Azure per Redis usando la Servizi connessi **funzionalità:**
 
 - .NET Framework app console
 - ASP.NET MVC (.NET Framework) 
@@ -26,7 +26,7 @@ Con Visual Studio, è possibile connettere uno degli elementi seguenti a cache d
 - .NET Core (tra cui app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App Windows universali
+- App Windows Universal Platform
 - Xamarin
 - Cordova
 
@@ -43,7 +43,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro **del** mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo Servizi connessi **e** scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
 1. Nella scheda **Servizi connessi** selezionare l'icona + per **Dipendenze servizio**.
 
@@ -63,7 +63,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Per creare una cache Redis di Azure:
 
-   1. Selezionare **Crea una nuova cache Redis di Azure** nella parte inferiore della schermata.
+   1. Selezionare **Crea una nuova cache Redis** di Azure nella parte inferiore della schermata.
 
    1. Compilare la **cache di Azure per Redis: Crea nuova** schermata e selezionare **Crea**.
 
@@ -85,6 +85,6 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 ## <a name="see-also"></a>Vedi anche
 
-- [cache di Azure per Redis pagina del prodotto](https://azure.microsoft.com/services/cache)
+- [cache di Azure per Redis prodotto](https://azure.microsoft.com/services/cache)
 - [cache di Azure per Redis documentazione](/azure/azure-cache-for-redis/)
 - [Servizi connessi (Visual Studio per Mac)](/visualstudio/mac/connected-services)

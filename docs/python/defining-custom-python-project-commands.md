@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 63679d590e341cce8f5ee76d4b359821b3f213b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140440"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628325"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
 
@@ -37,13 +37,13 @@ Ogni comando personalizzato può fare riferimento a un file di Python, un modulo
 > [!Tip]
 > Ogni volta che si apportano modifiche a un file di progetto in un editor di testo, è necessario ricaricare il progetto in Visual Studio per applicare tali modifiche. Ad esempio, è necessario ricaricare un progetto dopo l'aggiunta di definizioni di comandi personalizzati, per visualizzarli nel menu di scelta rapida del progetto.
 >
-> Come è probabilmente noto, Visual Studio fornisce un mezzo per modificare direttamente il file di progetto. Fare prima clic con il pulsante destro del mouse sul file **\<project-name>** di progetto e scegliere Scarica **progetto,** quindi fare di nuovo clic con il pulsante destro del mouse e scegliere Modifica per aprire il progetto nell'editor Visual Studio progetto. È quindi possibile apportare modifiche e salvarle, fare clic con il pulsante destro del mouse sul progetto ancora una volta e scegliere **Ricarica progetto**. Viene anche richiesto di confermare la chiusura del file di progetto nell'editor.
+> Come è probabilmente noto, Visual Studio fornisce un mezzo per modificare direttamente il file di progetto. Fare prima clic con il pulsante destro del mouse sul file **\<project-name>** di progetto e scegliere Scarica progetto **,** quindi fare di nuovo clic con il pulsante destro del mouse e scegliere Modifica per aprire il progetto nell'editor Visual Studio progetto. È quindi possibile apportare modifiche e salvarle, fare clic con il pulsante destro del mouse sul progetto ancora una volta e scegliere **Ricarica progetto**. Viene anche richiesto di confermare la chiusura del file di progetto nell'editor.
 >
-> Durante lo sviluppo di un comando personalizzato, tuttavia, tutti questi clic possono risultare noiosi. Per un flusso di lavoro più efficiente, caricare il progetto in Visual Studio e aprire anche il file con estensione *.yproj* in un editor separato, ad esempio in un'altra istanza di Visual Studio, in Visual Studio Code, nel Blocco note e così via. Quando si salvano le modifiche nell'editor e si passa a Visual Studio, Visual Studio rileva le modifiche e chiede se ricaricare il progetto (il progetto è stato modificato all'esterno **\<name> dell'ambiente).** Selezionare **Ricarica** e le modifiche vengono applicate immediatamente in un unico passaggio.
+> Durante lo sviluppo di un comando personalizzato, tuttavia, tutti questi clic possono risultare noiosi. Per un flusso di lavoro più efficiente, caricare il progetto in Visual Studio e aprire anche il file con estensione *.yproj* in un editor separato, ad esempio in un'altra istanza di Visual Studio, in Visual Studio Code, nel Blocco note e così via. Quando si salvano le modifiche nell'editor e si passa a Visual Studio, Visual Studio rileva le modifiche e chiede se ricaricare il progetto ( il progetto è stato modificato all'esterno **\<name> dell'ambiente).** Selezionare **Ricarica** e le modifiche vengono applicate immediatamente in un unico passaggio.
 
 ## <a name="walkthrough-add-a-command-to-a-project-file"></a>Procedura dettagliata: Aggiungere un comando a un file di progetto
 
-Per acquisire familiarità con i comandi personalizzati, in questa sezione viene illustrato un semplice esempio che esegue il file di avvio di un progetto direttamente usando *python.exe*. (Un comando di questo tipo è in effetti uguale all'uso di **Debug**  >  **Avvia senza eseguire debug.**
+Per acquisire familiarità con i comandi personalizzati, in questa sezione viene illustrato un semplice esempio che esegue il file di avvio di un progetto direttamente usando *python.exe*. Tale comando è in effetti uguale all'uso di **Debug**  >  **Avvia senza eseguire il debug.**
 
 1. Creare un nuovo progetto denominato "Python-CustomCommands" usando il modello **Applicazione Python**. (Se non si conosce già la procedura, vedere [Guida rapida: creare un progetto Python da un modello](quickstart-02-python-in-visual-studio-project-from-template.md) per istruzioni.)
 
@@ -128,21 +128,21 @@ Il formato generale dell'elemento `<Target>` è indicato nel pseudo-codice segue
   </Target>
 ```
 
-Per fare riferimento alle proprietà o alle variabili di ambiente del progetto nei valori di attributo, usare il nome all'interno di un token `$()`, ad esempio `$(StartupFile)` e `$(MSBuildProjectDirectory)`. Per altre informazioni, vedere MSBuild [proprietà](../msbuild/msbuild-properties.md).
+Per fare riferimento alle proprietà o alle variabili di ambiente del progetto nei valori di attributo, usare il nome all'interno di un token `$()`, ad esempio `$(StartupFile)` e `$(MSBuildProjectDirectory)`. Per altre informazioni, vedere MSBuild [proprietà .](../msbuild/msbuild-properties.md)
 
 ### <a name="target-attributes"></a>Attributi Target
 
-| Attributo | Obbligatoria | Descrizione |
+| Attributo | Obbligatorio | Descrizione |
 | --- | --- | --- |
 | Nome | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
-| Etichetta | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
+| Label | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
 | Restituisce | Sì | Deve contenere `@(Commands)`, che identifica la destinazione come comando. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Attributi CreatePythonCommandItem
 
 Per tutti i valori di attributo non viene fatta distinzione tra maiuscole e minuscole.
 
-| Attributo | Obbligatoria | Descrizione |
+| Attributo | Obbligatorio | Descrizione |
 | --- | --- | --- |
 | TargetType | Sì | Specifica il contenuto dell'attributo Target e come viene usato insieme all'attributo Arguments:<ul><li>**executable**: eseguire il file eseguibile denominato in Target, aggiungendo il valore in Arguments, come in caso di immissione diretta nella riga di comando. Il valore deve contenere solo un nome di programma senza argomenti.</li><li>**script**: eseguire *python.exe* con il nome di file in Target seguito dal valore in Arguments.</li><li>**module**: eseguire `python -m` seguito dal nome del modulo in Target seguito dal valore in Arguments.</li><li>**code**: eseguire il codice inline contenuto in Target. Il valore di Arguments viene ignorato.</li><li>**pip**: eseguire `pip` con il comando in Target seguito da Arguments. Se ExecuteIn è impostato su "output", tuttavia, pip presuppone il comando `install` e usa Target come nome del pacchetto.</li></ul> |
 | Destinazione | Sì | Nome del file, nome del modulo, codice o comando pip da usare, a seconda di TargetType. |
@@ -151,7 +151,7 @@ Per tutti i valori di attributo non viene fatta distinzione tra maiuscole e minu
 | WorkingDirectory | Facoltativo | Cartella in cui eseguire il comando. |
 | ErrorRegex<br>WarningRegEx | Facoltativo | Usato solo quando è ExecuteIn è `output`. Entrambi i valori specificano un'espressione regolare con cui Visual Studio analizza l'output del comando per visualizzare errori e avvisi nella relativa finestra **Elenco errori**. Se non specificato, il comando non influisce sulla finestra **Elenco errori**. Per altre informazioni su cosa prevede Visual Studio , vedere [Gruppi Capture denominati](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Facoltativo | Elenco di requisiti del pacchetto per il comando con lo stesso formato di [*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io). Il comando **Esegui PyLint**, ad esempio, specifica `pylint>=1.0.0`. Prima di eseguire il comando, Visual Studio verifica che siano installati tutti i pacchetti nell'elenco. Visual Studio usa pip per installare tutti i pacchetti mancanti. |
-| Ambiente | Facoltativo | Stringa di variabili di ambiente da definire prima di eseguire il comando. Ogni variabile usa il formato \<NAME> = \<VALUE> con più variabili separate da punti e virgola. Una variabile con più valori deve essere racchiusa tra virgolette singole o doppie, come in 'NOME=VALORE1;VALORE2'. |
+| Ambiente | Facoltativo | Stringa di variabili di ambiente da definire prima di eseguire il comando. Ogni variabile usa il formato \<NAME> = \<VALUE> con più variabili separate da punto e virgola. Una variabile con più valori deve essere racchiusa tra virgolette singole o doppie, come in 'NOME=VALORE1;VALORE2'. |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>Gruppi Capture denominati per le espressioni regolari
 
@@ -307,7 +307,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
   </Target>
 ```
 
-*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione .*
 
 ### <a name="generate-windows-installer"></a>Generare un programma di installazione Windows
 
@@ -326,7 +326,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
   </Target>
 ```
 
-*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione .*
 
 ### <a name="generate-wheel-package"></a>Generare un pacchetto wheel
 
@@ -346,7 +346,7 @@ Per esaminare la definizione dei comandi **Avvia il server** e **Avvia il server
 </Target>
 ```
 
-*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con autorizzazione.*
+*Da [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usato con l'autorizzazione .*
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -385,7 +385,7 @@ Indica che il contenuto degli elementi `<Target>` o `<CreatePythonCommandItem>` 
 
 I valori di attributo possono essere vuoti se si fa riferimento a una proprietà non definita. Ad esempio, se si usa il token `$(StartupFile)` ma nel progetto non è stato definito alcun file di avvio, il token viene risolto in una stringa vuota. In questi casi, può essere utile definire un valore predefinito. Ad esempio, l'impostazione predefinita dei comandi **Avvia il server** e **Avvia il debug del server** definiti nei modelli di progetto Bottle, Flask e Django è *manage.py* se non è stato specificato un file di avvio del server in altro modo nelle proprietà del progetto.
 
-### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio smette di rispondere e si arresta in modo anomalo durante l'esecuzione del comando
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio smette di rispondere e si arresta in modo anomalo quando si esegue il comando
 
 Probabilmente si sta tentando di eseguire un comando della console con `ExecuteIn="output"`, nel qual caso potrebbe verificarsi un arresto anomalo di Visual Studio durante il tentativo di analizzare l'output. In alternativa, utilizzare `ExecuteIn="console"`. (Vedere [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 

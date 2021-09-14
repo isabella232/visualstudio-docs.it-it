@@ -15,11 +15,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f185cf57e118c923d8fbdfda6caa30a23059b9d2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634396"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
 
@@ -158,4 +158,4 @@ Per aggiungere l'interazione tra livelli ai dati di profilatura raccolti tramite
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Per altre informazioni su VSPerfASPNETCmd, vedere Profilatura rapida del sito [Web con VSPerfASPNETCmd.](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
+Per altre informazioni su VSPerfASPNETCmd, vedere Profilatura rapida di siti Web [con VSPerfASPNETCmd.](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

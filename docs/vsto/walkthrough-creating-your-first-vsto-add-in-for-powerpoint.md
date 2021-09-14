@@ -20,14 +20,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 39998bb7d60b55405be13493900ef936c05c3032
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633763"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Procedura dettagliata: Creare il primo VSTO componente aggiuntivo per PowerPoint
-  Questa procedura dettagliata illustra come creare un componente VSTO componente aggiuntivo per Microsoft Office PowerPoint. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali presentazioni siano aperte. Per altre informazioni, vedere panoramica [Office sviluppo di soluzioni &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+  Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office PowerPoint. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali presentazioni siano aperte. Per altre informazioni, vedere panoramica [Office sviluppo di soluzioni &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
@@ -86,7 +86,7 @@ ms.locfileid: "122025485"
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb" id="Snippet1":::
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
-2. Se si usa C#, aggiungere il seguente codice al gestore eventi `ThisAddIn_Startup` . Questo codice è necessario per connettere il `Application_PresentationNewSlide` gestore eventi a [Microsoft.Office. Interoperabilità. PowerPoint. EApplication_Event.PresentationNewSlide.](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))
+2. Se si usa C#, aggiungere il seguente codice al gestore eventi `ThisAddIn_Startup` . Questo codice è necessario per connettere il `Application_PresentationNewSlide` gestore eventi con [Microsoft.Office. Interoperabilità. PowerPoint. EApplication_Event.PresentationNewSlide.](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))
 
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
@@ -127,7 +127,7 @@ ms.locfileid: "122025485"
 
 - Uso del modello a oggetti di PowerPoint. Per altre informazioni, vedere PowerPoint [soluzioni](../vsto/powerpoint-solutions.md).
 
-- Personalizzazione dell'interfaccia utente di PowerPoint, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro attività personalizzato. Per altre informazioni, vedere Personalizzare [l'Office dell'interfaccia utente.](../vsto/office-ui-customization.md)
+- Personalizzazione dell'interfaccia utente di PowerPoint, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro attività personalizzato. Per altre informazioni, vedere personalizzazione [Office'interfaccia utente.](../vsto/office-ui-customization.md)
 
 - Compilazione e debug di componenti aggiuntivi VSTO per PowerPoint. Per altre informazioni, vedere [Compilare Office soluzioni](../vsto/building-office-solutions.md).
 

@@ -12,11 +12,11 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: e1a9cbdd4449282076703134862178f3a866851f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633379"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Creare un progetto AI da un modello in Visual Studio
 

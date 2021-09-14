@@ -9,18 +9,18 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: d19d65943745aabd078173d6362ba186fa312959eeaca22b974d98b6718ee09c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633163"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Aggiunta Configurazione app di Azure tramite Visual Studio Servizi connessi
 
-In questa esercitazione si apprenderà come aggiungere facilmente tutto il necessario per iniziare a usare Configurazione app di Azure per gestire la configurazione e i flag di funzionalità per i progetti Web in Visual Studio. Usando la funzionalità Servizi connessi in Visual Studio, è possibile fare in modo che Visual Studio aaggi sia automaticamente tutto il codice, i pacchetti NuGet e le impostazioni di configurazione necessari per connettersi alla risorsa di Configurazione app in Azure. Per usare questa funzionalità, è necessario usare Visual Studio 2019 versione 16.9 o successiva.
+In questa esercitazione si apprenderà come aggiungere facilmente tutto il necessario per iniziare a usare Configurazione app di Azure per gestire la configurazione e i flag di funzionalità per i progetti Web in Visual Studio. Usando la funzionalità Servizi connessi in Visual Studio, è possibile fare in modo che Visual Studio abiliti automaticamente tutto il codice, i pacchetti NuGet e le impostazioni di configurazione necessari per connettersi alla risorsa di Configurazione app in Azure. Per usare questa funzionalità, è necessario usare Visual Studio 2019 versione 16.9 o successiva.
 
-È possibile usare la funzionalità Servizi connessi app in ASP.NET Core, nella console di .NET Core e .NET Framework progetto.
+È possibile usare la funzionalità Configurazione app Servizi connessi in ASP.NET Core, nella console di .NET Core .NET Framework progetti.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Servizi connessi in Visual Studio per Mac](/visualstudio/mac/connected-services).
@@ -64,7 +64,7 @@ In questa esercitazione si apprenderà come aggiungere facilmente tutto il neces
 
    1. Quando viene **Configurazione app di Azure** finestra di dialogo, il nuovo archivio di configurazione viene visualizzato nell'elenco. Selezionare questo nuovo archivio, quindi selezionare **Avanti.**
 
-1. Immettere un nome per la stringa di connessione e scegliere se si vuole archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
+1. Immettere un nome per la stringa di connessione e scegliere se archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
 
    ![Specificare la stringa di connessione](./media/vs-azure-tools-connected-services-app-configuration/connection-string-app-config.png)
 
@@ -76,7 +76,7 @@ In questa esercitazione si apprenderà come aggiungere facilmente tutto il neces
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni Configurazione app di Azure, [vedere Configurazione app di Azure documentazione.](/azure/azure-app-configuration/overview)
+Per altre informazioni Configurazione app di Azure, [vedere Configurazione app di Azure documentazione di](/azure/azure-app-configuration/overview).
 
 ## <a name="see-also"></a>Vedi anche
 

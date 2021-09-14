@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: d7b5629cc50a2a9d08d00daabd2b4579e628a6cb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628170"
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
@@ -30,7 +30,7 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
 ::: moniker range="vs-2017"
 
-2. Nella finestra **di Project** nuovo progetto  di test espandere il nodo Installato , scegliere il linguaggio da usare per il progetto di test e quindi **scegliere Test**.
+2. Nella finestra **di Project** nuovo progetto  di test espandere il nodo Installato , scegliere il linguaggio che si vuole usare per il progetto di test e quindi **scegliere Test**.
 
 3. Selezionare il modello di progetto per il framework di test che si vuole usare, ad esempio **Progetto di test MSTest** o **Progetto di test NUnit**. Assegnare un nome al progetto e quindi scegliere **OK**.
 

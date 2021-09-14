@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7a4aeb23ede17eddc1b9af1fba271566699ad19f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027240"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628289"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Come vengono usati i percorsi di ricerca di Python Visual Studio
 
@@ -30,7 +30,7 @@ Visual Studio ignora tuttavia la variabile di ambiente del percorso di ricerca, 
 
 Visual Studio consente quindi di specificare direttamente i percorsi di ricerca sia negli ambienti che nei progetti. Il codice eseguito o sottoposto a debug in Visual Studio riceve i percorsi di ricerca nel valore di `PYTHONPATH` (e altre variabili equivalenti). Quando si aggiungono percorsi di ricerca, Visual Studio controlla le librerie in questi percorsi e crea i database di IntelliSense corrispondenti all'occorrenza (Visual Studio 2017 versione 15.5 e precedenti; la creazione dei database potrebbe richiedere tempo a seconda del numero di librerie).
 
-Per aggiungere un percorso di ricerca, passare a **Esplora soluzioni,** espandere il nodo del progetto, fare clic con il pulsante destro del mouse su Percorsi **di** ricerca e scegliere Aggiungi cartella **al percorso di ricerca**:
+Per aggiungere un percorso di ricerca, passare a Esplora soluzioni , espandere il nodo **del** progetto, fare clic con il pulsante destro del mouse su Percorsi di ricerca **e** selezionare Aggiungi cartella al percorso **di ricerca:**
 
 ::: moniker range="vs-2017"
 ![Comando Aggiungi cartella al percorso di ricerca in Percorsi di ricerca di Esplora soluzioni](media/search-paths-command.png)

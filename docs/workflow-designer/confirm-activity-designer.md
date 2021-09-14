@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 017a89d2e68e3d466f7625c8dbb2312d450f888c
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633707"
 ---
 # <a name="confirm-activity-designer"></a>ActivityDesigner Confirm
 
@@ -32,10 +32,10 @@ L'ActivityDesigner **Confirm** viene usato per creare e configurare <xref:System
 ### <a name="using-the-confirm-activity-designer"></a>Utilizzo dell'ActivityDesigner Confirm
  L'ActivityDesigner Confirm è  disponibile nella categoria Transazione della Casella degli strumenti **,** a cui si accede facendo clic sulla scheda  **Casella** degli strumenti sul lato sinistro del Progettazione flussi di lavoro. In alternativa, scegliere **Casella degli** strumenti **dal** menu Visualizza o premere **CTRL** + **ALT** + **X.**
 
- L'ActivityDesigner **Confirm** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di <xref:System.Activities.Statements.Sequence> un oggetto . In questo modo viene creata un'attività <xref:System.Activities.Statements.Confirm> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Confirm. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **Confirm** o nella **casella DisplayName** della griglia delle proprietà.
+ L'ActivityDesigner **Confirm** può essere  trascinato dalla casella degli strumenti e rilasciato sulla superficie Progettazione flussi di lavoro ogni volta che vengono in genere inserite attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . In questo modo viene creata un'attività <xref:System.Activities.Statements.Confirm> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Confirm. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **Confirm** o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-confirm-properties"></a>Proprietà di Confirm
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Confirm> e ne viene descritta la modalità di uso nella finestra di progettazione. La proprietà può essere modificata nella griglia delle proprietà o nella Progettazione flussi di lavoro, ma la proprietà deve <xref:System.Activities.Activity.DisplayName%2A> essere modificata nella griglia delle <xref:System.Activities.Statements.Confirm.Target%2A> proprietà.
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Confirm> e ne viene descritta la modalità di uso nella finestra di progettazione. La proprietà può essere modificata nella griglia delle proprietà o Progettazione flussi di lavoro, ma la proprietà deve essere modificata <xref:System.Activities.Activity.DisplayName%2A> <xref:System.Activities.Statements.Confirm.Target%2A> nella griglia delle proprietà.
 
 |Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|

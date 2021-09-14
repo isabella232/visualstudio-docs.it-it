@@ -23,11 +23,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 1556eab077a56bc3b6880cc9a0a413e782f98c2d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633780"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procedura dettagliata: Chiamare codice da VBA in un progetto Visual C#
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Excel da codice Visual Basic, Applications Edition (VBA) contenuto nella cartella di lavoro. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `Sheet1` , esporre il metodo al codice VBA nella cartella di lavoro e quindi chiamare il metodo dal codice VBA contenuto nella cartella di lavoro.
@@ -69,7 +69,7 @@ ms.locfileid: "122046165"
 
 1. Avviare Excel.
 
-2. Salvare il documento attivo come cartella **Excel Macro-Enabled cartella di lavoro \* (xlsm)** con il nome **WorkbookWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
+2. Salvare il documento attivo come Excel Macro-Enabled **cartella di lavoro \* (xlsm)** con il nome **WorkbookWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
 
 3. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 

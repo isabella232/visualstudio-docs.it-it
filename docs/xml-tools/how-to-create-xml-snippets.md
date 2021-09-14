@@ -12,41 +12,41 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: ee6dfe8990cf5e85a35a0d538c2bfbd50c3462e4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045454"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633627"
 ---
-# <a name="how-to-create-xml-snippets"></a>Procedura: Creare frammenti di codice XML
+# <a name="how-to-create-xml-snippets"></a>Procedura: Creare frammenti XML
 
-L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'editor comprende un frammento di codice XML, denominato "Snippet", ovvero un frammento standard per la creazione di nuovi frammenti di codice XML.
+L'editor XML può essere utilizzato per creare nuovi frammenti XML. L'editor comprende un frammento di codice XML, denominato "Snippet", ovvero un frammento standard per la creazione di nuovi frammenti di codice XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Per creare un nuovo frammento di codice XML
 
-Per creare un nuovo frammento di codice XML, creare un nuovo file XML e usare la **funzionalità Inserisci frammento di** codice.
+Per creare un nuovo frammento di codice XML, creare un nuovo file XML e usare la **funzionalità Inserisci frammento** di codice.
 
 1. Scegliere **Nuovo** dal menu File **e** quindi fare clic su **File**.
 
-2. Fare **clic su File XML** e quindi su **Apri**.
+2. Fare **clic su File XML** e quindi su **Apri.**
 
-3. Fare clic con il pulsante destro del mouse nel riquadro dell'editor e **scegliere Inserisci frammento di codice**.
+3. Fare clic con il pulsante destro del mouse nel riquadro dell'editor e **scegliere Inserisci frammento**.
 
-4. Selezionare **Frammento** di codice nell'elenco e premere **INVIO.**
+4. Selezionare **Snippet (Frammento)** nell'elenco e premere **INVIO.**
 
 5. Se necessario, apportare modifiche al nuovo frammento.
 
 6. Scegliere **Salva** dal menu File **XMLFile.xml**.
 
-     Verrà **visualizzata la finestra** di dialogo Salva file con nome .
+     Verrà **visualizzata la finestra di** dialogo Salva file con nome .
 
-7. Immettere il nome per il nuovo frammento di codice e selezionare **File di frammento** di codice nella **finestra** a discesa Salva con nome.
+7. Immettere il nome per il nuovo frammento di codice e selezionare **File di frammento** di codice nella **finestra a** discesa Salva con nome.
 
-8. Usare  l'elenco a discesa Salva in per modificare il percorso del file nella cartella *Documenti\Visual Studio 2005\Code Snippets\XML\My XML Snippets* e quindi premere **Salva**.
+8. Usare l'elenco a discesa Salva **in** per modificare il percorso del file nella cartella *Documenti\Visual Studio 2005\Code Snippets\XML\My XML Snippets* e quindi fare clic su **Salva**.
 
 ## <a name="snippet-description"></a>Descrizione del frammento di codice
 
-Contenuto della sezione vengono descritti alcuni elementi chiave del frammento di codice standard. Per altre informazioni sugli elementi dello schema utilizzati dai frammenti di codice XML, vedere [Informazioni di riferimento sullo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md).
+Contenuto della sezione vengono descritti alcuni elementi chiave del frammento di codice standard. Per altre informazioni sugli elementi dello schema utilizzati dai frammenti di codice XML, vedere [Informazioni di riferimento sullo schema dei frammenti di codice.](../ide/code-snippets-schema-reference.md)
 
 ### <a name="snippettype-element"></a>SnippetType, elemento
 
@@ -59,7 +59,7 @@ L'editor supporta due tipi di frammento di codice:
 </SnippetTypes>
 ```
 
-Il `Expansion` tipo determina se il frammento di codice viene visualizzato quando si richiama il comando Inserisci **frammento** di codice. Il `SurroundsWith` tipo determina se il frammento di codice viene visualizzato quando si richiama il comando **Surrounds With.**
+Il `Expansion` tipo determina se il frammento viene visualizzato quando si richiama il comando Inserisci **frammento** di codice. Il `SurroundsWith` tipo determina se il frammento viene visualizzato quando si richiama il comando **Racchiude** tra.
 
 ### <a name="code-element"></a>Elemento del codice
 
@@ -107,7 +107,7 @@ L'elemento `Literal` viene usato per identificare il testo di sostituzione che �
 </Literal
 ```
 
-I valori formali possono anche fare riferimento a funzioni. L'editor XML include una funzione denominata **LookupPrefix**. La **funzione LookupPrefix** cerca l'URI dello spazio dei nomi specificato dal percorso nel documento XML da cui viene richiamato questo frammento di codice e restituisce il prefisso dello spazio dei nomi definito per tale spazio dei nomi, se presente, e include i due punti (:) in tale nome. Di seguito è riportato un esempio di `Literal` un elemento che usa la funzione **LookupPrefix.**
+I valori formali possono anche fare riferimento a funzioni. L'editor XML include una funzione denominata **LookupPrefix.** La **funzione LookupPrefix** cerca l'URI dello spazio dei nomi specificato dal percorso nel documento XML da cui viene richiamato questo frammento di codice e restituisce il prefisso dello spazio dei nomi definito per tale spazio dei nomi, se presente, e include i due punti (:) in tale nome. Di seguito è riportato un esempio di `Literal` un elemento che usa la funzione **LookupPrefix.**
 
 ```xml
 <Literal Editable="false">
@@ -121,5 +121,5 @@ La variabile $prefix$ può quindi essere usata in altri punti all'interno del fr
 ## <a name="see-also"></a>Vedi anche
 
 - [frammenti XML](../xml-tools/xml-snippets.md)
-- [Procedura: Usare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Procedura: Generare un frammento di codice XML da uno schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Procedura: Usare frammenti XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Procedura: Generare un frammento XML da un XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

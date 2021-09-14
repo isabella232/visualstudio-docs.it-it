@@ -10,11 +10,11 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: d2f90c7b1a5b389243bf91ff46aa6892689bf17c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633276"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Aggiungere Azure SignalR usando Visual Studio Servizi connessi
 
@@ -23,10 +23,10 @@ Con Visual Studio, è possibile connettere uno degli elementi seguenti al serviz
 - .NET Framework app console
 - ASP.NET MVC (.NET Framework) 
 - ASP.NET Core
-- .NET Core (inclusi app console, WPF, Windows Form, libreria di classi)
+- .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App della Windows universali
+- App universal Windows Platform
 - Xamarin
 - Cordova
 
@@ -71,7 +71,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    1. Quando viene **visualizzata la Servizio Azure SignalR** configurazione, la nuova istanza viene visualizzata nell'elenco. Selezionare la nuova istanza nell'elenco e selezionare **Avanti.**
 
-1. Immettere un nome per la stringa di connessione o scegliere il valore predefinito e scegliere se archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
+1. Immettere un nome di stringa di connessione o scegliere il valore predefinito e scegliere se si vuole archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
 
    ![Specificare la stringa di connessione](./media/azure-signalr-add-connected-service/connection-string.png)
 

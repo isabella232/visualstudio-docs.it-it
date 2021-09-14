@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 71d12bb0bd80c10140aaaa6f276cf772397d699f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086612"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634547"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 Un frammento di codice è una parte di codice inserita nel file di origine. Il frammento di codice è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo l'inserimento del frammento di codice e possono avere valori diversi a seconda del contesto in cui viene inserito il frammento di codice. Subito dopo l'inserimento del frammento di codice, il servizio di linguaggio può formattare il frammento di codice.
@@ -32,7 +32,7 @@ Un frammento di codice è una parte di codice inserita nel file di origine. Il f
 > [!NOTE]
 > È consigliabile iniziare a usare la nuova API dell'editor appena possibile. In questo modo si miglioreranno le prestazioni del servizio di linguaggio e si potranno sfruttare le nuove funzionalità dell'editor.
 
-## <a name="managed-package-framework-support-for-code-snippets"></a>Supporto del framework del pacchetto gestito per frammenti di codice
+## <a name="managed-package-framework-support-for-code-snippets"></a>Supporto di Managed Package Framework per frammenti di codice
  Il framework del pacchetto gestito (MPF) supporta la maggior parte delle funzionalità dei frammenti, dalla lettura del modello all'inserimento del frammento di codice e all'abilitazione della modalità di modifica speciale. Il supporto viene gestito tramite la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe .
 
  Quando viene creata un'istanza della classe, viene chiamato il metodo nella classe per ottenere un oggetto . Si noti che la classe base restituisce sempre un nuovo oggetto <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> per ogni <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.Source> oggetto.
@@ -80,9 +80,9 @@ Un frammento di codice è una parte di codice inserita nel file di origine. Il f
 
  Il \<Language> tag specifica l'ID lingua (l'attributo) `Lang` e il GUID del servizio di linguaggio.
 
- In questo esempio si presuppone che il servizio di linguaggio sia stato installato nella Visual Studio di installazione. %LCID% viene sostituito con l'ID impostazioni locali corrente dell'utente. È \<SnippetDir> possibile aggiungere più tag, uno per ogni directory e impostazioni locali diverse. Inoltre, una cartella di frammenti di codice può contenere sottocartelle, ognuna delle quali è identificata nel file di indice con \<SnippetSubDir> il tag incorporato in un \<SnippetDir> tag.
+ In questo esempio si presuppone che il servizio di linguaggio sia stato installato nella Visual Studio di installazione. %LCID% viene sostituito con l'ID impostazioni locali corrente dell'utente. È \<SnippetDir> possibile aggiungere più tag, uno per ogni directory e impostazioni locali diverse. Inoltre, una cartella del frammento di codice può contenere sottocartelle, ognuna delle quali è identificata nel file di indice con \<SnippetSubDir> il tag incorporato in un \<SnippetDir> tag.
 
- Gli utenti possono anche creare frammenti di codice personalizzati per il linguaggio. Questi file vengono in genere archiviati nella cartella delle impostazioni dell'utente, ad esempio *[TestDocs]* \Frammenti di codice \\ *[TestLanguage]* \Frammenti di codice di test, dove *[TestDocs]* è il percorso della cartella delle impostazioni dell'utente per Visual Studio.
+ Gli utenti possono anche creare frammenti di codice personalizzati per il linguaggio. Questi frammenti vengono in genere archiviati nella cartella delle impostazioni dell'utente, ad esempio *[TestDocs]* \Frammenti di codice \\ *[TestLanguage]* \Frammenti di codice di test, dove *[TestDocs]* è il percorso della cartella delle impostazioni dell'utente per Visual Studio.
 
  Gli elementi di sostituzione seguenti possono essere inseriti nel percorso archiviato nel \<DirPath> tag nel file di indice.
 
@@ -92,7 +92,7 @@ Un frammento di codice è una parte di codice inserita nel file di origine. Il f
 |%InstallRoot%|Cartella di installazione radice per Visual Studio, ad esempio C:\Programmi\Microsoft Visual Studio 8.|
 |%ProjDir%|Cartella contenente il progetto corrente.|
 |%ProjItem%|Cartella contenente l'elemento di progetto corrente.|
-|%TestDocs%|Cartella nella cartella delle impostazioni dell'utente, ad esempio C:\Documents e Impostazioni \\ *[nome utente]* \Documenti\Visual Studio\8.|
+|%TestDocs%|Cartella nella cartella delle impostazioni dell'utente, ad esempio C:\Documents and Impostazioni \\ *[username]* \Documenti\Visual Studio\8.|
 
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Abilitazione di frammenti di codice per il servizio di linguaggio
  È possibile abilitare i frammenti di codice per il servizio di linguaggio aggiungendo l'attributo al pacchetto VSPackage . Per informazioni dettagliate, vedere Registrazione di un servizio <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> [di linguaggio](../../extensibility/internals/registering-a-legacy-language-service1.md) legacy. I parametri e sono facoltativi, ma è necessario includere il parametro denominato per informare Gestione frammenti di codice del <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> percorso dei `SearchPaths` frammenti di codice. 
@@ -206,7 +206,7 @@ Un frammento di codice è una parte di codice inserita nel file di origine. Il f
 
     ```
 
-     I metodi seguenti nella <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe vengono chiamati da Visual Studio nell'ordine specificato durante il processo di inserimento del frammento di codice:
+     I metodi seguenti nella classe vengono chiamati da <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Visual Studio nell'ordine specificato durante il processo di inserimento del frammento di codice:
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
@@ -221,13 +221,13 @@ Un frammento di codice è una parte di codice inserita nel file di origine. Il f
      Dopo la chiamata al metodo , il frammento di codice è stato inserito e l'oggetto è in una modalità di modifica speciale usata per modificare un frammento <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> appena inserito.
 
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Inserimento di un frammento di codice tramite un collegamento
- L'implementazione di un collegamento da un elenco di completamento è molto più coinvolta rispetto all'implementazione di un comando di menu. È prima necessario aggiungere collegamenti ai frammenti di codice all'elenco di completamento delle parole intelliSense. È quindi necessario rilevare quando un nome di collegamento del frammento è stato inserito come risultato del completamento. Infine, è necessario ottenere il titolo e il percorso del frammento di codice usando il nome del collegamento e passare queste informazioni al <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodo nel <xref:Microsoft.VisualStudio.Package.ExpansionProvider> metodo .
+ L'implementazione di un collegamento da un elenco di completamento è molto più coinvolta rispetto all'implementazione di un comando di menu. È innanzitutto necessario aggiungere collegamenti ai frammenti di codice all'elenco di completamento parole intelliSense. È quindi necessario rilevare quando un nome di collegamento del frammento è stato inserito come risultato del completamento. Infine, è necessario ottenere il titolo e il percorso del frammento di codice usando il nome del collegamento e passare queste informazioni al <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodo nel <xref:Microsoft.VisualStudio.Package.ExpansionProvider> metodo .
 
  Per aggiungere collegamenti ai frammenti di codice all'elenco di completamento delle parole, aggiungerli <xref:Microsoft.VisualStudio.Package.Declarations> all'oggetto nella <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe . È necessario assicurarsi di poter identificare il collegamento come nome di frammento di codice. Per un esempio, vedere [Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy).](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
  È possibile rilevare l'inserimento del collegamento del frammento di codice nel <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> metodo della <xref:Microsoft.VisualStudio.Package.Declarations> classe . Poiché il nome del frammento di codice è già stato inserito nel file di origine, deve essere rimosso quando viene inserita l'espansione. Il metodo accetta un intervallo che descrive il punto di inserimento per il frammento di codice. Se l'intervallo include l'intero nome del frammento nel file di origine, tale nome viene <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> sostituito dal frammento di codice.
 
- Ecco una versione di una classe che gestisce <xref:Microsoft.VisualStudio.Package.Declarations> l'inserimento di frammenti di codice in base a un nome di collegamento. Altri metodi nella <xref:Microsoft.VisualStudio.Package.Declarations> classe sono stati omessi per maggiore chiarezza. Si noti che il costruttore di questa classe accetta un <xref:Microsoft.VisualStudio.Package.LanguageService> oggetto . Questo può essere passato dalla versione dell'oggetto (ad esempio, l'implementazione della classe potrebbe prendere l'oggetto nel costruttore e passare tale oggetto al costruttore <xref:Microsoft.VisualStudio.Package.AuthoringScope> <xref:Microsoft.VisualStudio.Package.AuthoringScope> della <xref:Microsoft.VisualStudio.Package.LanguageService> `TestDeclarations` classe).
+ Ecco una versione di una classe che gestisce <xref:Microsoft.VisualStudio.Package.Declarations> l'inserimento di frammenti di codice in base a un nome di collegamento. Altri metodi nella <xref:Microsoft.VisualStudio.Package.Declarations> classe sono stati omessi per maggiore chiarezza. Si noti che il costruttore di questa classe accetta un <xref:Microsoft.VisualStudio.Package.LanguageService> oggetto . Può essere passato dalla versione dell'oggetto (ad esempio, l'implementazione della classe potrebbe prendere l'oggetto nel costruttore e passare tale oggetto al costruttore <xref:Microsoft.VisualStudio.Package.AuthoringScope> <xref:Microsoft.VisualStudio.Package.AuthoringScope> della <xref:Microsoft.VisualStudio.Package.LanguageService> `TestDeclarations` classe).
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -328,7 +328,7 @@ namespace TestLanguagePackage
 }
 ```
 
- Quando il servizio di linguaggio ottiene il nome del collegamento, chiama il metodo per ottenere il nome file e il titolo del <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> frammento di codice. Il servizio di linguaggio chiama quindi il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodo nella classe per inserire il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> frammento di codice. I metodi seguenti vengono chiamati da Visual Studio nell'ordine specificato nella classe durante il processo di <xref:Microsoft.VisualStudio.Package.ExpansionProvider> inserimento del frammento di codice:
+ Quando il servizio di linguaggio ottiene il nome del collegamento, chiama il metodo per ottenere il nome file e il titolo del <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> frammento di codice. Il servizio di linguaggio chiama quindi il <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodo nella classe per inserire il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> frammento di codice. I metodi seguenti vengono chiamati da Visual Studio nell'ordine specificato nella classe durante il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> processo di inserimento del frammento di codice:
 
 1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 1ba70337e5ac7ae511fefa609c73b0efba414152
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628320"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
@@ -32,13 +32,13 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Fu
 
 IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Visual Studio 2017 versione 15.7 e versioni successive supporta anche i [suggerimenti relativi al tipo](#type-hints).
 
-Per migliorare le prestazioni, IntelliSense in Visual Studio 2017 versione 15.5 e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato del database viene visualizzato nella finestra **Ambienti Python** (elemento di pari livello di **Esplora soluzioni**) nella scheda **IntelliSense** (vedere Informazioni di riferimento sulla [finestra Ambienti).](python-environments-window-tab-reference.md)
+Per migliorare le prestazioni, IntelliSense in Visual Studio 2017 versione 15.5 e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato del database viene visualizzato nella finestra **Ambienti Python** (un elemento di pari livello **di Esplora soluzioni**) nella scheda **IntelliSense** (vedere Informazioni di riferimento sulla [finestra Ambienti](python-environments-window-tab-reference.md)).
 
 Visual Studio 2017 versione 15.6 e versioni successive usano modi diversi per rendere disponibili i completamenti IntelliSense non dipendenti dal database.
 
 ### <a name="completions"></a>Completamenti
 
-I completamenti vengono visualizzati come istruzioni, identificatori e altre parole che possono essere immessi in modo corretto nella posizione corrente nell'editor. Il contenuto dell'elenco dipende dal contesto e viene filtrato per omettere opzioni non corrette o fonte di distrazione. I completamenti vengono spesso attivati digitando istruzioni e operatori diversi (ad esempio ) e (incluso un punto), ma è possibile fare in modo che vengano visualizzati in qualsiasi momento digitando `import` **CTRL** + **J**  >  **BARRA SPAZIATRICE.**
+I completamenti vengono visualizzati come istruzioni, identificatori e altre parole che possono essere immessi in modo corretto nella posizione corrente nell'editor. Il contenuto dell'elenco dipende dal contesto e viene filtrato per omettere opzioni non corrette o fonte di distrazione. I completamenti vengono spesso attivati digitando istruzioni diverse (ad esempio ) e operatori (incluso un punto), ma è possibile fare in modo che vengano visualizzati in qualsiasi momento digitando `import`  + **CTRL+J.**  >  
 
 ![Completamento dei membri nell'editor di Visual Studio](media/code-editing-completions-simple.png)
 
@@ -73,7 +73,7 @@ Per le istruzioni `raise` e `except` vengono visualizzati gli elenchi di classi 
 ![Completamento di elementi Decorator nell'editor di Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> È possibile configurare il comportamento dei completamenti tramite **Strumenti** Opzioni Editor di  >    >  **testo**  >  **Python**  >  **Avanzate.** Tra **questi,** Filtra elenco in base alla stringa di ricerca applica  il filtro dei suggerimenti di completamento durante la digitazione (l'impostazione predefinita è selezionata) e Completamento membri visualizza l'intersezione dei membri mostra solo i completamenti supportati da tutti i tipi possibili (l'impostazione predefinita è deselezionata). Vedere [Opzioni - Risultati del completamento](python-support-options-and-settings-in-visual-studio.md#completion-results).
+> È possibile configurare il comportamento dei completamenti tramite **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **Python**  >  **Advanced**. Tra **questi,** l'elenco filtri basato sulla stringa di ricerca applica  il filtro dei suggerimenti di completamento durante la digitazione (l'impostazione predefinita è selezionata) e Completamento membri visualizza l'intersezione dei membri che mostra solo i completamenti supportati da tutti i tipi possibili (l'impostazione predefinita è deselezionata). Vedere [Opzioni - Risultati del completamento](python-support-options-and-settings-in-visual-studio.md#completion-results).
 
 ### <a name="type-hints"></a>Suggerimenti relativi al tipo
 
@@ -89,7 +89,7 @@ Nell'esempio seguente è possibile visualizzare il modo in cui gli attributi con
 
 ![Suggerimenti relativi al tipo visualizzati nel completamento di IntelliSense](media/code-editing-type-hints2.png)
 
-È inoltre utile convalidare i suggerimenti relativi al tipo in tutto il progetto, poiché gli errori in genere non vengono visualizzati prima dell'esecuzione. A questo scopo, Visual Studio integra lo strumento MyPy standard del settore tramite il comando del menu di scelta **rapida Python**  >  **Run Mypy** in **Esplora soluzioni**:
+È inoltre utile convalidare i suggerimenti relativi al tipo in tutto il progetto, poiché gli errori in genere non vengono visualizzati prima dell'esecuzione. A questo scopo, Visual Studio lo strumento MyPy standard del settore tramite il comando del menu di scelta rapida **Python**  >  **Run Mypy** in **Esplora soluzioni**:
 
 ![Eseguire il comando MyPy del menu di scelta rapida in Esplora soluzioni](media/code-editing-type-hints-run-mypy.png)
 
@@ -120,19 +120,19 @@ Se si usa il comando **Esegui Mypy** su questo codice, viene generato l'errore s
 > [!Tip]
 > Per le versioni di Python precedenti alla 3.5, Visual Studio visualizza anche i suggerimenti relativi al tipo specificati nei *file stub* (con estensione *pyi*) di Typeshed. I file stub possono essere usati quando non si vuole includere i suggerimenti relativi al tipo direttamente nel codice o quando si vogliono creare suggerimenti relativi al tipo per una libreria che non li usa direttamente. Per altre informazioni, vedere [Creare stub per i moduli Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) nel wiki del progetto mypy.
 >
-> Visual Studio include un set di file Typeshed in bundle per Python 2 e 3, in modo che non siano necessari ulteriori download. Tuttavia, se si vuole usare un set diverso di file, è possibile specificare il percorso nelle opzioni del server di   >    >  **linguaggio Python** opzioni  >   strumenti. Vedere [Opzioni - Server di linguaggio](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+> Visual Studio include un set di file Typeshed in bundle per Python 2 e 3, in modo che non siano necessari ulteriori download. Tuttavia, se si vuole usare un set diverso di file, è possibile specificare il percorso nelle opzioni di Strumenti Opzioni del server di  >    >  **linguaggio Python.**  >   Vedere [Opzioni - Server di linguaggio](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
 > Al momento Visual Studio non supporta i suggerimenti relativi al tipo nei commenti.
 ::: moniker-end
 
 ### <a name="signature-help"></a>Supporto per la firma
 
-Se si scrive codice che chiama una funzione, la guida per la firma digitale appare quando si digita la parentesi di apertura (`(`) e visualizza le informazioni della documentazione e sui parametri disponibili. È anche possibile fare in modo che venga visualizzato con + **CTRL+MAIUSC+BARRA** + **SPAZIATRICE all'interno** di una chiamata di funzione. Le informazioni visualizzate dipendono dalle stringhe di documentazione nel codice sorgente della funzione, ma includono eventuali valori predefiniti.
+Se si scrive codice che chiama una funzione, la guida per la firma digitale appare quando si digita la parentesi di apertura (`(`) e visualizza le informazioni della documentazione e sui parametri disponibili. È anche possibile farlo apparire con **CTRL** +  + **MAIUSC+BARRA SPAZIATRICE all'interno** di una chiamata di funzione. Le informazioni visualizzate dipendono dalle stringhe di documentazione nel codice sorgente della funzione, ma includono eventuali valori predefiniti.
 
 ![Guida per la firma nell'editor di Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Per disabilitare la Guida alla firma, passare **a** Strumenti Opzioni Editor di testo Python Generale e  >    >    >    >   deselezionare Informazioni **sui**  >  parametri di completamento istruzioni .
+> Per disabilitare la Guida per la firma, passare **a** Strumenti Opzioni Editor di  >    >  **testo**  >  **Generale Python**  >   e deselezionare Informazioni sui parametri **di completamento** delle  >  **istruzioni**.
 
 ### <a name="quick-info"></a>Informazioni rapide
 
@@ -146,12 +146,12 @@ La funzionalità di colorazione del codice usa le informazioni dall'analisi del 
 
 ![Colorazione del codice e della sintassi nell'editor di Visual Studio](media/code-editing-code-coloring.png)
 
-Per personalizzare i colori, passare **a** Strumenti Opzioni Ambiente Tipi di carattere e colori e modificare le  >    >    >   **voci di Python** nell'elenco Elementi **visualizzati:**
+Per personalizzare i colori, passare **a** Opzioni strumenti Tipi di carattere e colori dell'ambiente e modificare  >    >    >   le **voci Python** nell'elenco **Elementi** visualizzati:
 
 ![Opzioni di Tipi di carattere e colori in Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Per disabilitare la colorazione del codice, passare a Strumenti Opzioni Editor di testo Python Avanzate e  >    >    >    >   **deselezionare Opzioni**  >  varie Nomi dei colori in base al tipo . Vedere [Opzioni - Opzioni varie.](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)
+> Per disabilitare la colorazione del codice, passare a Strumenti Opzioni Editor di testo Python Advanced e  >    >    >    >   **deselezionare Opzioni**  >  varie Nomi dei colori in base al tipo . Vedere [Opzioni - Opzioni varie](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 ## <a name="code-snippets"></a>Frammenti di codice
 
@@ -195,7 +195,7 @@ Se si scrive un frammento di codice particolarmente utile e si vuole condividerl
 
 ## <a name="navigate-your-code"></a>Esplorare il codice
 
-Il supporto di Python in Visual Studio offre diversi mezzi per spostarsi rapidamente all'interno del codice, incluse [](#navigate-to)le librerie per cui è disponibile codice sorgente: la barra di [spostamento,](#navigation-bar)Vai a [**definizione,**](#go-to-definition)Passa a e Trova tutti i [**riferimenti.**](#find-all-references) È anche possibile usare il Visual Studio [**visualizzatore oggetti**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
+Il supporto di Python in Visual Studio offre diversi modi per spostarsi rapidamente all'interno del codice, incluse [](#navigate-to)le librerie per cui è disponibile il codice sorgente: la barra di [spostamento,](#navigation-bar)Vai a [**definizione,**](#go-to-definition)Passa a e Trova tutti i [**riferimenti.**](#find-all-references) È anche possibile usare il Visual Studio [**visualizzatore oggetti**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
 
 ### <a name="navigation-bar"></a>Barra di navigazione
 

@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 9d49c6b8d52fd047a109f2f470c97adafb457810
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628265"
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -51,7 +51,7 @@ A. La versione 1.0 di RTVS è solo in lingua inglese. La versione 1.1 sarà loca
 
 **D. Mi piace molto le impostazioni Visual Studio, ma voglio provare le nuove impostazioni di data science. Cosa dovrei fare?**
 
-A. Salvare le impostazioni correnti Visual Studio usando Strumenti di importazione ed esportazione Impostazioni , quindi  >  passare alle impostazioni di data science. Per ripristinare le impostazioni salvate, usare di nuovo il comando **Importa/Esporta impostazioni**.
+A. Salvare le impostazioni correnti Visual Studio strumenti importare ed  >  **esportare Impostazioni**, quindi passare alle impostazioni di data science. Per ripristinare le impostazioni salvate, usare di nuovo il comando **Importa/Esporta impostazioni**.
 
 **D. È possibile archiviare il Visual Studio in una condivisione di rete?**
 
@@ -81,7 +81,7 @@ A. Sì, è possibile usare qualsiasi sistema di controllo del codice sorgente in
 
 **D. Quali sono le impostazioni *.gitignore consigliate* per un progetto RTVS?**
 
-A. GitHub un repository di file *con estensione gitignore* consigliati. È possibile visualizzarlo qui: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+A. GitHub mantiene un repository di file *con estensione gitignore* consigliati. È possibile visualizzarlo qui: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Servizi remoti
 
@@ -109,7 +109,7 @@ A. Vedere l'articolo [Execute on remote server](/machine-learning-server/r/how-t
 
 **D. La funzionalità X è mancante, ma RStudio la include.**
 
-A. RStudio è un IDE per R avanzato e maturo il cui sviluppo è in corso da diversi anni. RTVS tenta di offrire tutte le funzionalità critiche necessarie agli utenti. Contribuire a classificare in ordine di priorità le attività future tramite [l'archiviazione di problemi GitHub](https://github.com/Microsoft/RTVS/issues/).
+A. RStudio è un IDE per R avanzato e maturo il cui sviluppo è in corso da diversi anni. RTVS tenta di offrire tutte le funzionalità critiche necessarie agli utenti. Contribuire a classificare in ordine di priorità le attività future tramite [l'archiviazione di GitHub](https://github.com/Microsoft/RTVS/issues/).
 
 **D. È possibile contribuire a RTVS?**
 

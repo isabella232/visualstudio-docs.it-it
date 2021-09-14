@@ -18,15 +18,15 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 5a24e2ca3942d2c122421151a3f9a96b640b2ebb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633995"
 ---
 # <a name="associate-a-web-page-with-an-outlook-folder"></a>Associare una pagina Web a una Outlook web
 
-  In questo esempio viene verificata la presenza di una `HtmlView` cartella denominata in Microsoft Office Outlook. Se la cartella non esiste, il codice crea la cartella e vi assegna una pagina Web. Se la cartella esiste, il codice visualizza il contenuto della cartella.
+  In questo esempio viene verificata la presenza di una cartella `HtmlView` denominata in Microsoft Office Outlook. Se la cartella non esiste, il codice crea la cartella e vi assegna una pagina Web. Se la cartella esiste, il codice visualizza il contenuto della cartella.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -36,4 +36,4 @@ ms.locfileid: "122106185"
 ## <a name="see-also"></a>Vedere anche
 - [Usare le cartelle](../vsto/working-with-folders.md)
 - [Procedura: Recuperare una cartella in base al nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
-- [Procedura: Creare elementi cartella personalizzati a livello di codice](../vsto/how-to-programmatically-create-custom-folder-items.md)
+- [Procedura: Creare elementi di cartelle personalizzati a livello di codice](../vsto/how-to-programmatically-create-custom-folder-items.md)

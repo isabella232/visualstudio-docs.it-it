@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 887c28cdd81f4f3176dcf29804fa9f6ec4b27123
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634083"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;Elemento friendlyName &gt; (Office sviluppo in Visual Studio)
   L'elemento `friendlyName` dello spazio dei nomi `vstov4` archivia il nome visualizzato nell'elenco dei programmi installati.

@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: b29f7b4380233a510fb34c3e72cf2aac9b948ba1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091760"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633212"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Mantenere un indirizzo IP virtuale costante per un servizio cloud di Azure
 Quando si aggiorna un servizio cloud ospitato in Azure, potrebbe essere necessario assicurare che l'indirizzo IP virtuale (indirizzo VIP) del servizio non subisca modifiche. Molti servizi di gestione di dominio usano DNS (Domain Name System) per la registrazione dei nomi di dominio. DNS funziona solo se l'indirizzo VIP rimane invariato. È possibile usare la **Pubblicazione guidata** in Strumenti di Azure per assicurare che l'indirizzo VIP del servizio cloud non cambi in caso di aggiornamento. Per altre informazioni su come usare la gestione dei domini DNS per i servizi cloud, vedere [Configurazione di un nome di dominio personalizzato per un servizio cloud di Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -35,11 +35,11 @@ L'indirizzo VIP di un servizio cloud viene allocato alla prima distribuzione in 
 
     ![Pagina di accesso Pubblica applicazione Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Nella scheda **Impostazioni** comuni verificare che il nome del servizio cloud in cui si esegue la distribuzione, l'ambiente **,** la configurazione della build e la configurazione del servizio **siano** corretti.
+4. Nella **scheda Impostazioni** comuni verificare che il nome del servizio cloud in cui si esegue la distribuzione, l'ambiente **,** la configurazione della compilazione e la configurazione del servizio **siano** tutti corretti.
 
     ![Scheda delle impostazioni comuni di Pubblica applicazione Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Nella scheda **Impostazioni avanzate** verificare che il **Etichetta distribuzione** e **Account di archiviazione** siano corretti. Verificare che la casella di controllo **Elimina distribuzione in caso di errore** sia deselezionata e che sia selezionata la casella di controllo **Aggiornamento distribuzione**. Deselezionando la casella **di controllo Elimina distribuzione** in caso di errore, si garantisce che l'indirizzo VIP non si persa se si verifica un errore durante la distribuzione. Se si seleziona la casella di controllo **Aggiornamento distribuzione**, si assicura che la distribuzione non verrà eliminata e che l'indirizzo VIP non andrà perso quando si ripubblica l'applicazione.
+5. Nella scheda **Impostazioni avanzate** verificare che il **Etichetta distribuzione** e **Account di archiviazione** siano corretti. Verificare che la casella di controllo **Elimina distribuzione in caso di errore** sia deselezionata e che sia selezionata la casella di controllo **Aggiornamento distribuzione**. Deselezionando la casella **di controllo** Elimina distribuzione in caso di errore, si garantisce che l'indirizzo VIP non sia perso se si verifica un errore durante la distribuzione. Se si seleziona la casella di controllo **Aggiornamento distribuzione**, si assicura che la distribuzione non verrà eliminata e che l'indirizzo VIP non andrà perso quando si ripubblica l'applicazione.
 
     ![Scheda delle impostazioni avanzate di Pubblica applicazione Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 

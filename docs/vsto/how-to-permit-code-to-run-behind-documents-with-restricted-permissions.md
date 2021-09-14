@@ -22,14 +22,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 366c8716995f0f5e88707d738957fc4ec0476a50
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634035"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: Consentire l'esecuzione di codice dietro documenti con autorizzazioni limitate
-  È possibile usare la funzionalità Information Rights Management (IRM) di Microsoft Office limitare le autorizzazioni per un documento o una cartella di lavoro. Per impostazione predefinita, non è consentita l'esecuzione del code-behind Microsoft Office un documento di Word o di Microsoft Office Excel cartella di lavoro. È possibile modificare l'impostazione predefinita in modo che le estensioni di codice gestito possano accedere al modello a oggetti e la soluzione funzioni.
+  È possibile usare la funzionalità Information Rights Management (IRM) di Microsoft Office limitare le autorizzazioni per un documento o una cartella di lavoro. Per impostazione predefinita, non è consentita l'esecuzione del code-behind Microsoft Office un documento di Word o Microsoft Office Excel cartella di lavoro. È possibile modificare l'impostazione predefinita in modo che le estensioni di codice gestito possano accedere al modello a oggetti e la soluzione funzioni.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "122083388"
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
-- [Protezione della password nei Office dati](../vsto/password-protection-on-office-documents.md)
+- [Protezione della password nei Office documenti](../vsto/password-protection-on-office-documents.md)
 - [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md)
 - [Proteggere Office soluzioni](../vsto/securing-office-solutions.md)
-- [Distribuire una Office distribuzione](../vsto/deploying-an-office-solution.md)
+- [Distribuire una soluzione Office distribuzione](../vsto/deploying-an-office-solution.md)

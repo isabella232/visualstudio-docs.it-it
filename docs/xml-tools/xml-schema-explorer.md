@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: c731b4d8f6542fd73debe1b1b77ff624c27aa175
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633580"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
@@ -30,7 +30,7 @@ ms.locfileid: "122130143"
 
 - Eseguire ricerche per parola chiave e specifiche dello schema. Per altre informazioni, vedere [Ricerca nel set di schemi.](../xml-tools/searching-the-schema-set.md)
 
-- Aggiungere i risultati della ricerca alla Graph o al modello di contenuto
+- Aggiungere i risultati della ricerca alla visualizzazione Graph o al modello di contenuto
 
 - Ordinare l'albero in base a nome, tipo o ordine dei documenti. Per altre informazioni, vedere [Ordinamento, filtro e raggruppamento.](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)
 
@@ -42,11 +42,11 @@ ms.locfileid: "122130143"
 
 - Se si è nella visualizzazione [iniziale , fare](../xml-tools/start-view.md)clic sul collegamento XML Schema **Explorer** .
 
-- Se si è nella visualizzazione [Graph](../xml-tools/graph-view.md) [](../xml-tools/content-model-view.md) o nella visualizzazione modello di contenuto e si dispone di nodi nell'area di lavoro, usare il menu di scelta rapida (clic con il pulsante destro del mouse) per selezionare **XML Schema Explorer.**
+- Se si è nella visualizzazione [Graph](../xml-tools/graph-view.md) o nella visualizzazione modello di contenuto e si dispone di nodi nell'area di lavoro, usare il menu di scelta rapida (clic con il pulsante destro del mouse) per selezionare **XML Schema Explorer.** [](../xml-tools/content-model-view.md)
 
 - È anche possibile selezionare **XML Schema Explorer** dal menu Visualizza . 
 
-- È possibile accedere a **XML Schema Explorer** da un file con estensione *vb* a cui è associato Visual Basic valore letterale XML associato a un file *xsd.* Per visualizzare il set di schemi in **XML Schema Explorer,** fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o in un'importazione dello spazio dei nomi XML e selezionare il comando Mostra **in Esplora** schemi. Per altre informazioni, vedere [Integrazione di valori letterali XML con XML Schema Explorer.](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)
+- È possibile accedere a **XML Schema Explorer** da un file *vb* a cui è associato Visual Basic valore letterale XML associato a un file *xsd.* Per visualizzare il set di schemi in **XML Schema Explorer,** fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o in un'importazione dello spazio dei nomi XML e selezionare il comando Mostra **in Esplora** schemi. Per altre informazioni, vedere [Integrazione di valori letterali XML con XML Schema Explorer.](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)
 
 ## <a name="tree-view"></a>Visualizzazione ad albero
 XML **Schema Explorer visualizza informazioni** sul set di schemi precompilato in una struttura ad albero. La struttura ad albero è organizzata come segue:
@@ -75,7 +75,7 @@ Per attivare un nodo, fare doppio clic su di esso o premere **INVIO** quando il 
 - L'attivazione di un nodo set di schemi o spazio dei nomi non esegue alcuna operazione.
 
 ## <a name="drag-and-drop-nodes"></a>Trascinare i nodi
-È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è [la visualizzazione iniziale,](../xml-tools/start-view.md)il trascinamento di un nodo nella visualizzazione aprirà la Graph [Visualizzazione](../xml-tools/graph-view.md). Se la visualizzazione corrente è la [visualizzazione](../xml-tools/content-model-view.md) modello di contenuto o Graph, la visualizzazione non verrà cambiata quando si rilascia un nodo su di essa.
+È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è [la visualizzazione iniziale,](../xml-tools/start-view.md)il trascinamento di un nodo nella visualizzazione aprirà la Graph [visualizzazione](../xml-tools/graph-view.md). Se la visualizzazione corrente è la [visualizzazione](../xml-tools/content-model-view.md) modello di contenuto o Graph, la visualizzazione non cambierà quando si rilascia un nodo su di essa.
 
 L'eliminazione di file nella vista aggiungerà tutti i nodi globali nel file all'area [di lavoro progettazione XSD](../xml-tools/xml-schema-designer-workspace.md). Il rilascio degli spazi dei nomi sulla visualizzazione aggiungerà tutti i nodi globali contenuti nello spazio dei nomi all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Proteggere parti di documenti usando i controlli contenuto'
-description: Informazioni su come usare Visual Studio proteggere parti di un documento Microsoft Word usando i controlli contenuto.
+description: Informazioni su come usare i Visual Studio per proteggere parti di un Microsoft Word documento usando i controlli contenuto.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -23,11 +23,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 49988266ebee5821323ee3a9994312d99033c9f3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046490"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633867"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: Proteggere parti di documenti usando i controlli contenuto
   Quando si protegge parte di un documento, si impedisce agli utenti di modificare o eliminare il contenuto in quella parte del documento. È possibile proteggere parti di un documento di Microsoft Office Word usando i controlli contenuto in diversi modi.

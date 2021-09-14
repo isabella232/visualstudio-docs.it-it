@@ -10,21 +10,21 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c9ff474cfdc8c572143145c642bc42e899b6516
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126632070"
 ---
 # <a name="code-metrics---class-coupling"></a>Metriche del codice - Accoppiamento di classi
 
-L'accoppiamento di classi viene anche chiamato Coupling Between Objects (CBO) come originariamente definito [da CK94.](#ck94) In pratica, l'accoppiamento di classi è una misura del numero di classi utilizzate da una singola classe. Un numero elevato non è valido e un numero basso è in genere valido con questa metrica. L'accoppiamento di classi ha dimostrato di essere un predittore accurato degli errori software e recenti studi hanno dimostrato che un valore limite superiore pari a 9 è il valore [S2010 più efficiente.](#s2010)
+L'accoppiamento di classi viene anche chiamato Coupling Between Objects (CBO) come originariamente definito [da CK94.](#ck94) In pratica, l'accoppiamento di classi è una misura del numero di classi utilizzate da una singola classe. Un numero elevato non è valido e un numero basso è in genere valido con questa metrica. L'accoppiamento di classi ha dimostrato di essere un predittore accurato degli errori software e recenti studi hanno dimostrato che un valore limite superiore pari a 9 è il valore [S2010](#s2010)più efficiente.
 
 Secondo la documentazione Microsoft, l'accoppiamento di classi "misura l'accoppiamento a classi univoche tramite parametri, variabili locali, tipi restituiti, chiamate al metodo, istanze generiche o modello, classi di base, implementazioni di interfaccia, campi definiti su tipi esterni e decorazione di attributi. Una buona progettazione software impone che i tipi e i metodi debbano avere un'elevata coerenza e un accoppiamento basso. L'accoppiamento elevato indica una progettazione difficile da riutilizzare e mantenere a causa delle numerose interdipendenze su altri tipi."
 
 I concetti di accoppiamento e di coerenza sono chiaramente correlati. Per mantenere questa discussione sull'argomento, non si apprendono più in profondità con la coerenza se non per fornire una breve definizione di [KKLS2000:](#kkls2000)
 
-"La coerenza dei moduli è stata introdotta da Yourdon e Constantine come "quanto strettamente legati o correlati gli elementi interni di un modulo sono gli uni agli altri" [YC79.](#yc79) Un modulo ha una forte coerenza se rappresenta esattamente un'attività [...], e tutti i relativi elementi contribuiscono a questa singola attività. Descrivono la coerenza come un attributo di progettazione, anziché come codice, e un attributo che può essere usato per stimare la riutilizzabilità, la manutenibilità e la modificabilità."
+"La coerenza dei moduli è stata introdotta da Yourdon e Constantine come "quanto strettamente legati o correlati gli elementi interni di un modulo sono l'uno all'altro" [YC79](#yc79). Un modulo ha una forte coerenza se rappresenta esattamente un'attività [...], e tutti i relativi elementi contribuiscono a questa singola attività. Descrivono la coerenza come un attributo di progettazione, anziché come codice, e un attributo che può essere usato per stimare la riutilizzabilità, la manutenibilità e la modificabilità."
 
 ## <a name="class-coupling-example"></a>Esempio di accoppiamento tra classi
 
@@ -36,7 +36,7 @@ Si noti che l'accoppiamento della classe è 0 perché questa classe non usa altr
 
 ![Esempio di accoppiamento di classi 2](media/class-coupling-example-2.png)
 
-Vedere come sale il valore di accoppiamento della classe? Si noti anche che, indipendentemente dal numero di proprietà impostate, il valore di accoppiamento della classe sale solo di 1 e non di un altro valore. L'accoppiamento di classi misura ogni classe una sola volta per questa metrica, indipendentemente dalla quantità usata. Inoltre, è possibile vedere che `DoSomething()` ha un valore 1, ma il `PersonStuff()` costruttore, , ha 0 per il relativo valore? Attualmente non è presente codice nel costruttore che usa un'altra classe.
+Vedere come sale il valore di accoppiamento della classe? Si noti anche che, indipendentemente dal numero di proprietà impostate, il valore di accoppiamento della classe sale solo di 1 e non di un altro valore. L'accoppiamento di classi misura ogni classe una sola volta per questa metrica, indipendentemente dalla quantità usata. Si può anche vedere che ha `DoSomething()` un valore 1, ma il costruttore, , ha `PersonStuff()` 0 per il relativo valore? Attualmente non è presente codice nel costruttore che usa un'altra classe.
 
 Cosa succede se si mette il codice nel costruttore che usa un'altra classe? Ecco cosa si ottiene:
 
@@ -62,7 +62,7 @@ Come per la complessità ciclomatica, non esiste alcun limite adatto a tutte le 
 
 ## <a name="code-analysis"></a>Analisi codice
 
-L'analisi del codice include una categoria di regole di manutenibilità. Per altre informazioni, vedere [Regole di manutenibilità](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings). Quando si usa l'analisi del codice legacy, il set di regole Linee guida per la progettazione estesa contiene un'area di manutenibilità:
+L'analisi del codice include una categoria di regole di manutenibilità. Per altre informazioni, vedere [Regole di manutenibilità](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings). Quando si usa l'analisi del codice legacy, il set di regole Extended Design Guideline contiene un'area di manutenibilità:
 
 ![Regole della guida alla progettazione estesa per l'accoppiamento di classi](media/class-coupling-extended-design-guideline-rules.png)
 
@@ -84,7 +84,7 @@ Kabaili, H., Keller, R., Lustman, F., e Saint-Denis, G. (2000). Rivisitata la co
 
 ### <a name="sk2003"></a>SK2003
 
-Subramanyam, R. & Krishnan, M. S. (2003). Analisi empirica delle metriche CK per Object-Oriented complessità della progettazione: implicazioni per i difetti software (transazioni IEEE sulla progettazione software, vol. 29, n. 4). Recuperato il 14 maggio 2011 dal sito Web di University of Massachusetts Dartshire [http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf](http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf)
+Subramanyam, R. & Krishnan, M. S. (2003). Analisi empirica delle metriche CK per Object-Oriented complessità della progettazione: implicazioni per i difetti software (transazioni IEEE sulla progettazione software, vol. 29, n. 4). Recuperata il 14 maggio 2011 dal sito Web di University of Massachusetts Dartshire [http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf](http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf)
 
 ### <a name="s2010"></a>S2010
 

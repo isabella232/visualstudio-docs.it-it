@@ -9,11 +9,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.openlocfilehash: c687a8c2fd1293913670af4489dfb5c9663344c1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631967"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Procedura: Abilitare e disabilitare l'analisi del codice binario per il codice gestito
 

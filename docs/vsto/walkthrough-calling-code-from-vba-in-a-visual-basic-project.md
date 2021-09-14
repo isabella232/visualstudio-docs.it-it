@@ -24,11 +24,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 631511ba470b42d07878d175c953bb7047914fc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147648"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633788"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Procedura dettagliata: Chiamare codice da VBA in un progetto Visual Basic codice
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Word da codice Visual Basic, Applications Edition (VBA) contenuto nel documento. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `ThisDocument` , esporre il metodo al codice VBA e quindi chiamare il metodo dal codice VBA contenuto nel documento.
@@ -222,6 +222,6 @@ ms.locfileid: "122147648"
 ## <a name="see-also"></a>Vedi anche
 - [Combinare le personalizzazioni VBA e a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)
 - [Programmare personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
-- [Procedura: Esporre il codice a VBA in un Visual Basic progetto](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [Procedura: Esporre codice a VBA in un progetto Visual C&#35; visuale](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [Procedura: Esporre codice a VBA in un progetto Visual Basic codice](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [Procedura: Esporre il codice a VBA in un progetto Visual C&#35; visual c](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Procedura dettagliata: Chiamare codice da VBA in un progetto visual c&#35; visual c](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)

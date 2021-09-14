@@ -1,7 +1,7 @@
 ---
 title: Sincronizzare i set di regole del progetto con i criteri di archiviazione
 ms.date: 11/04/2016
-description: Informazioni su come sincronizzare un Visual Studio di regole del progetto di codice con un criterio Azure DevOps di archiviazione del progetto.
+description: Informazioni su come sincronizzare un set Visual Studio regole del progetto di codice con Azure DevOps criteri di archiviazione del progetto.
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
@@ -14,11 +14,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 20c4d0c6fc5583686648507be2a36c5183ca70c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126631920"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedura: Sincronizzare il codice Project set di regole con Azure DevOps Project criteri di archiviazione
 

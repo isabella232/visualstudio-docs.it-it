@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 0367ca6b2ab6219ab50030df0b80a6aed213854f
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633459"
 ---
 # <a name="share-your-app"></a>Condividere l'app
 
@@ -65,7 +65,7 @@ Se si osserva sul lato destro della pagina, verrà visualizzata una sezione deno
     docker push <username>/getting-started
     ```
 
-    Invece della riga di comando, è anche possibile fare  clic con il pulsante destro del mouse sul tag dell'immagine nella sezione Immagini della visualizzazione Docker e scegliere **Push...**, quindi scegliere **registro** Connessione e quindi Docker Hub **.**
+    **Invece** della riga di comando, è anche possibile fare  clic con il pulsante destro del mouse sul tag dell'immagine nella sezione Immagini della visualizzazione Docker e scegliere **Push...**, quindi scegliere registro Connessione **e** quindi Docker Hub .
 
 ## <a name="run-the-image-on-a-new-instance"></a>Eseguire l'immagine in una nuova istanza
 

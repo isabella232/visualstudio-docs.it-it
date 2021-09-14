@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: c578007a79991c165ab6a88848c5428fe4e6e5e3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633611"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: Eseguire una trasformazione XSLT dall'editor XML
 
@@ -24,7 +24,7 @@ L'editor XML consente di associare un foglio di stile XSLT a un documento XML, e
 
 La **proprietà Output** specifica il nome file per l'output. Se la **proprietà Output** è vuota, viene generato un nome file nella directory temporanea. L'estensione del file è basata `xsl:output` sull'elemento nel foglio di stile e può essere .*xml*, . *txt* o . *htm*.
 
-Se la **proprietà Output** specifica un nome file con un oggetto . *htm* o . *estensione HTML,* l'output XSLT viene visualizzato in anteprima usando un Web browser. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto Visual Studio. Ad esempio, se l'estensione del file è . *xml*, Visual Studio l'editor XML.
+Se la **proprietà Output** specifica un nome file con un oggetto . *htm* o . *estensione HTML,* l'output XSLT viene visualizzato in anteprima usando un Web browser. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto Visual Studio. Ad esempio, se l'estensione del file è . *xml*, Visual Studio usa l'editor XML.
 
 ## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Eseguire una trasformazione XSLT da un file XML
 

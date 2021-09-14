@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c70e331de05b3288e1105832616acb1d3359b049
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137834"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634732"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 Specifica quali informazioni su un thread devono essere recuperate.

@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 38cc90f557bb901f2ef9710bc1cd129e471a3781
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124934"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634627"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: Gestire una raccolta privata usando le impostazioni del Registro di sistema
 Gli amministratori o gli sviluppatori di un'estensione Isolated Shell possono controllare l'accesso a controlli, modelli e strumenti nella raccolta Visual Studio, nella raccolta di esempi o nelle raccolte private. Per rendere disponibile o non disponibile una raccolta, creare un file *con estensione pkgdef* che descriva le chiavi del Registro di sistema modificate e i relativi valori.
@@ -43,17 +43,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 - Visual Studio Raccolta: 0F45E408-7995-4375-9485-86B8DB553DC9
 
-- Raccolta di esempi: AEB9CB40-D8E6-4615-B52C-27E307F8506C
+- Raccolta di esempi : AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
   Il `Disabled` valore è facoltativo. Per impostazione predefinita, è abilitata una raccolta.
 
   Il `Priority` valore determina l'ordine in cui le raccolte sono elencate nella **finestra di dialogo** Opzioni . Visual Studio La raccolta ha la priorità 10 e la raccolta di esempi ha la priorità 20. Le raccolte private iniziano con la priorità 100. Se più raccolte hanno lo stesso valore di priorità, l'ordine in cui vengono visualizzate è determinato dai valori dei relativi attributi `DisplayName` localizzati.
 
-  Il valore è obbligatorio per le raccolte basate su `Protocol` Atom o SharePoint basate su SharePoint.
+  Il valore è obbligatorio per le raccolte basate SharePoint `Protocol` Atom.
 
   È `DisplayName` necessario specificare , o entrambi e `DisplayNameResourceID` `DisplayNamePackageGuid` . Se vengono specificati tutti, vengono usati `DisplayNameResourceID` `DisplayNamePackageGuid` la coppia e .
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Disabilitare la Visual Studio Gallery usando un file con estensione pkgdef
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Disabilitare Visual Studio Gallery usando un file con estensione pkgdef
  È possibile disabilitare una raccolta in un file *con estensione pkgdef.* La voce seguente disabilita la raccolta Visual Studio dati:
 
 ```

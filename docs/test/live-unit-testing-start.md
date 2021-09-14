@@ -13,11 +13,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2041845ab82ec539ccaec0befd3275aeab7c0493
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148467"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628104"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introduzione a Live Unit Testing
 
@@ -60,7 +60,7 @@ Dopo aver creato la soluzione, si creerà una libreria di classi denominata Stri
    > [!NOTE]
    > Poiché la libreria è .NET Standard anziché una particolare implementazione di .NET, può essere chiamata da qualsiasi implementazione .NET che supporti tale versione di .NET Standard. Per altre informazioni, vedere [.NET Standard](/dotnet/standard/net-standard).
 
-3. Selezionare il **modello Libreria di classi (.NET Standard)** nel riquadro di destra e immettere **StringLibrary** nella casella **di** testo Nome, come illustrato nella figura seguente:
+3. Selezionare il **modello Libreria di classi (.NET Standard)** nel riquadro di destra e immettere **StringLibrary** nella casella di testo **Nome,** come illustrato nella figura seguente:
 
    ![Finestra di dialogo Aggiungi nuovo progetto](./media/lut-start/add-project-cs.png)
 
@@ -127,7 +127,7 @@ Dopo aver creato la soluzione, si creerà una libreria di classi denominata Stri
 
    - `HasEmbeddedSpaces` restituisce `true` se una stringa include uno spazio vuoto; in caso contrario, restituisce `false`.
 
-6. Selezionare **Build**  >  **Build Solution** (Compila soluzione) dal menu Visual Studio di primo livello. La compilazione dovrebbe avere esito positivo.
+6. Selezionare   >  **Build Build Solution (Compila** soluzione) dal menu di Visual Studio di primo livello. La compilazione dovrebbe avere esito positivo.
 
 ## <a name="create-the-test-project"></a>Creare il progetto di test
 
@@ -162,7 +162,7 @@ Il passaggio successivo consiste nel creare il unit test per testare la libreria
 
 3. Assegnare al progetto **il nome StringLibraryTests** e fare clic su **Avanti.**
 
-4. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
+4. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
 
    > [!NOTE]
    > Questa esercitazione introduttiva usa Live Unit Testing con il framework di test MSTest. È possibile usare anche i framework di test xUnit e NUnit.
@@ -237,11 +237,11 @@ Il passaggio successivo consiste nel creare il unit test per testare la libreria
 
    ![Scegliere una codifica di file](media/lut-start/ascii-encoding.png)
 
-9. **Nell'elenco a** discesa Codifica della finestra di dialogo **Opzioni** di salvataggio avanzate scegliere **Unicode (UTF-8 senza firma) - Tabella codici 65001**, come illustrato nella figura seguente:
+9. **Nell'elenco** a discesa Codifica della finestra di dialogo **Opzioni** di salvataggio avanzate scegliere **Unicode (UTF-8 senza firma) - Tabella codici 65001**, come illustrato nella figura seguente:
 
    ![Scelta della codifica UTF-8](media/lut-start/utf8-encoding.png)
 
-10. Compilare unit test progetto selezionando **Compila** ricompila soluzione dal menu Visual Studio  >   livello superiore.
+10. Compilare unit test progetto selezionando **Compila**  >  **ricompila soluzione** dal menu Visual Studio livello superiore.
 
 Sono stati creati una libreria di classi e i relativi unit test. Le operazioni preliminari per usare Live Unit Testing sono state completate.
 
@@ -251,7 +251,7 @@ Finora, anche se sono stati scritti i test per la libreria di classi StringLibra
 
 1. Facoltativamente, selezionare la finestra dell'editor di codice che contiene il codice per StringLibrary. Si tratta di *Class1.cs per* un progetto C# o *Class1.vb* per un Visual Basic progetto. Questo passaggio consente di esaminare visivamente il risultato dei test e l'entità del code coverage dopo aver abilitato Live Unit Testing.
 
-1. Selezionare **Test**  >  **Live Unit Testing**  >  **Start (Avvia)** dal menu Visual Studio di primo livello.
+1. Selezionare **Test**  >  **Live Unit Testing**  >  **start** (Avvia) dal menu di Visual Studio di primo livello.
 
 1. Visual Studio avvia Live Unit Testing, che esegue automaticamente tutti i test.
 
@@ -272,7 +272,7 @@ Al termine dell'esecuzione dei **test,** Live Unit Testing i risultati complessi
 
    ![Code coverage per l'istruzione condizionale "if"](media/lut-start/code-coverage-cs1.png)
 
-1. Fare clic sul segno di spunta verde nella riga che include `return Char.IsUpper(s[0])` nel metodo `StartsWithUpper`. Come illustrato nella figura seguente, Live Unit Testing indica che solo due test coprono tale riga di codice e che tutti sono stati eseguiti correttamente.
+1. Fare clic sul segno di spunta verde nella riga che include `return Char.IsUpper(s[0])` nel metodo `StartsWithUpper`. Come illustrato nella figura seguente, Live Unit Testing che solo due test coprono tale riga di codice e che tutti sono stati eseguiti correttamente.
 
    ![Code coverage per l'istruzione return](media/lut-start/code-coverage-cs2.png)
 
@@ -298,14 +298,14 @@ Per estendere il code coverage al metodo `StartsWithLower`, eseguire le operazio
    ![Esplora test dopo l'espansione del code coverage dei test](media/lut-start/test-dynamic.png)
    ::: moniker-end
    ::: moniker range=">=vs-2019"
-   ![Esplora test in tempo reale dopo l'espansione del code coverage dei test](media/lut-start/vs-2019/test-dynamic.png)
+   ![Esplora test live dopo l'espansione del code coverage dei test](media/lut-start/vs-2019/test-dynamic.png)
    ::: moniker-end
 
 1. Passare alla finestra che contiene il codice sorgente per la classe StringLibrary. In Live Unit Testing ora viene visualizzato il code coverage esteso al metodo `StartsWithLower`.
 
     ![Code coverage per il metodo StartsWithLower](media/lut-start/lut-extended-cs.png)
 
-In alcuni casi, i test superati in **Esplora test** potrebbero essere disattivati. Ciò indica che un test è attualmente in esecuzione o che il test non è stato eseguito di nuovo perché non sono state apportate modifiche al codice che influiscono sul test dall'ultima esecuzione.
+In alcuni casi, i test riusciti in **Esplora test** potrebbero essere disattivati. Ciò indica che un test è attualmente in esecuzione o che il test non è stato eseguito di nuovo perché non sono state apportate modifiche al codice che influiscono sul test dall'ultima esecuzione.
 
 Fino a questo punto, tutti i test hanno avuto esito positivo. Nella sezione successiva esamineremo come gestire l'esito negativo dei test.
 
@@ -317,45 +317,45 @@ In questa sezione verrà illustrato come usare Live Unit Testing per identificar
 
    :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet3":::
 
-1. Quando il test viene eseguito, Live Unit Testing indica che il metodo non è `TestHasEmbeddedSpaces` riuscito, come illustrato nella figura seguente:
+1. Quando il test viene eseguito, Live Unit Testing indica che il metodo ha avuto esito `TestHasEmbeddedSpaces` negativo, come illustrato nella figura seguente:
 
    ::: moniker range="vs-2017"
    ![Esplora test che segnala un test non superato](media/lut-start/test-failure.png)
    ::: moniker-end
    ::: moniker range=">=vs-2019"
-   ![Esplora test in tempo reale che segnala un test non superato](media/lut-start/vs-2019/test-failure.png)
+   ![Esplora test live che segnala un test non superato](media/lut-start/vs-2019/test-failure.png)
    ::: moniker-end
 
 1. Selezionare la finestra in cui viene visualizzato il codice della libreria. Live Unit Testing ha espanso code coverage al `HasEmbeddedSpaces` metodo . Viene segnalato anche il test con esito negativo tramite l'aggiunta di una "🞩" rossa in corrispondenza delle righe per le quali i test non sono stati superati.
 
-1. Passare il mouse sulla riga con la firma del metodo `HasEmbeddedSpaces`. Live Unit Testing viene visualizzata una descrizione comando che segnala che il metodo è coperto da un test, come illustrato nella figura seguente:
+1. Passare il mouse sulla riga con la firma del metodo `HasEmbeddedSpaces`. Live Unit Testing una descrizione comando che segnala che il metodo è coperto da un test, come illustrato nella figura seguente:
 
    ![Live Unit Testing informazioni su un test non superato](media/lut-start/test-failure-info-cs.png)
 
 1. Selezionare il test non riuscito **TestHasEmbeddedSpaces**. Live Unit Testing offre alcune opzioni, ad esempio l'esecuzione di tutti i test e il debug di tutti i test, come illustrato nella figura seguente:
 
    ::: moniker range="vs-2017"
-   ![Live Unit Testing per un test non superato](media/lut-start/test-failure-options.png)
+   ![Live Unit Testing opzioni per un test non superato](media/lut-start/test-failure-options.png)
    ::: moniker-end
    ::: moniker range=">=vs-2019"
-   ![Live Unit Testing per un test non superato](media/lut-start/vs-2019/test-failure-options.png)
+   ![Live Unit Testing opzioni per un test non superato](media/lut-start/vs-2019/test-failure-options.png)
    ::: moniker-end
 
-1. Selezionare **Esegui debug di tutto** per eseguire il debug del test non superato.
+1. Selezionare **Debug tutto per** eseguire il debug del test non superato.
 
 1. Visual Studio esegue il test in modalità di debug.
 
-   Il test assegna ogni stringa in una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces` . L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La finestra di dialogo delle eccezioni generata dal valore imprevisto nella chiamata [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) al metodo è illustrata nella figura seguente.
+   Il test assegna ogni stringa in una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces` . L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La finestra di dialogo dell'eccezione generata dal valore imprevisto nella chiamata [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) al metodo è illustrata nella figura seguente.
 
    ![Live Unit Testing finestra di dialogo delle eccezioni](media/lut-start/exception-dialog-cs.png)
 
-   Inoltre, tutti gli strumenti di debug Visual Studio sono disponibili per risolvere i problemi del test non superato, come illustrato nella figura seguente:
+   Sono inoltre disponibili tutti gli strumenti di debug Visual Studio per risolvere i problemi del test non superato, come illustrato nella figura seguente:
 
    ![Visual Studio di debug](media/lut-start/debugging-tools-cs.png)
 
    Si noti che nella finestra **Auto** il valore della variabile `phrase` è "Name\tDescription", che è il secondo elemento della matrice. Il metodo di test prevede che `HasEmbeddedSpaces` restituisca `true` quando viene passata questa stringa; in questo caso restituisce invece `false`. Evidentemente, non riconosce "\t", il carattere di tabulazione, come uno spazio incorporato.
 
-1. Selezionare **Debug**  >  **Continue (Continua** debug), premere **F5** oppure fare clic sul **pulsante Continue** (Continua) sulla barra degli strumenti per continuare l'esecuzione del programma di test. Dal momento che si è verificata un'eccezione non gestita, il test viene terminato.
+1. Selezionare **Debug** continua , premere F5 o fare clic sul pulsante Continua sulla barra degli strumenti  >  per continuare l'esecuzione del programma di test.   Dal momento che si è verificata un'eccezione non gestita, il test viene terminato.
 In questo modo vengono specificate informazioni sufficienti per un'analisi preliminare del bug. `TestHasEmbeddedSpaces`, la routine di test, ha generato un presupposto errato, oppure `HasEmbeddedSpaces` non riconosce correttamente tutti gli spazi incorporati.
 
 1. Per diagnosticare e correggere il problema, iniziare con il `StringLibrary.HasEmbeddedSpaces` metodo . Esaminare il confronto nel metodo `HasEmbeddedSpaces`. Lo spazio incorporato viene considerato come U+0020. Tuttavia, lo standard Unicode include altri caratteri spazio. Ne consegue che nel codice della libreria è stato eseguito un test per gli spazi vuoti errato.
@@ -366,7 +366,7 @@ In questo modo vengono specificate informazioni sufficienti per un'analisi preli
 
 1. Live Unit Testing riesegui automaticamente il metodo di test non riuscito.
 
-   Live Unit Testing vengono visualizzati i risultati aggiornati, visualizzati anche nella finestra dell'editor del codice.
+   Live Unit Testing vengono visualizzati i risultati aggiornati, visualizzati anche nella finestra dell'editor di codice.
 
 ## <a name="see-also"></a>Vedi anche
 

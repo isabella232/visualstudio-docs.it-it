@@ -23,15 +23,15 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 9beb9a96b64d9ad60e6aba1a407bdddb11f61ee1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627959"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aggiornare un'app UWP in Visual Studio
 
- È possibile apportare modifiche al codice durante il debug e quindi aggiornare un'app UWP usando JavaScript scegliendo il pulsante **Aggiorna** app Windows sulla barra degli **strumenti Debug.** Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per le app UWP.
+ È possibile apportare modifiche al codice durante il debug e quindi aggiornare un'app UWP usando JavaScript scegliendo il pulsante Aggiorna app Windows sulla barra degli **strumenti Debug.**  Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per le app UWP.
 
  L'aggiornamento non mantiene lo stato dell'app né riflette le seguenti modifiche nell'app:
 

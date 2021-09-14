@@ -12,49 +12,49 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a93dee3e00df6b98afe41306af079302e1017bc4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140297"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634316"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creare un'estensione C++ per Python
 
-I moduli scritti in C++ (o C) vengono comunemente usati per estendere le funzionalità di un interprete Python. Vengono usati anche per abilitare l'accesso alle funzionalità del sistema operativo di basso livello. 
+I moduli scritti in C++ (o C) vengono comunemente usati per estendere le funzionalità di un interprete Python. Vengono usati anche per consentire l'accesso alle funzionalità del sistema operativo di basso livello. 
 
 I moduli sono disponibili in tre tipi principali:
 
-- **Moduli acceleratore:** poiché Python è un linguaggio interpretato, è possibile scrivere moduli acceleratore in C++ per prestazioni superiori.
+- **Moduli acceleratore:** poiché Python è un linguaggio interpretato, è possibile scrivere moduli acceleratore in C++ per ottenere prestazioni migliori.
 - **Moduli wrapper:** questi moduli espongono le interfacce C/C++ esistenti al codice Python o espongono un'API più "pythonica" facile da usare da Python.
-- **Moduli di accesso al sistema di** basso livello: è possibile creare questi moduli per accedere alle funzionalità di livello inferiore del runtime, del sistema operativo o `CPython` dell'hardware sottostante.
+- **Moduli di accesso al sistema di basso livello:** è possibile creare questi moduli per accedere alle funzionalità di livello inferiore del runtime, del sistema operativo `CPython` o dell'hardware sottostante.
 
-Questo articolo illustra come compilare un modulo di estensione C++ per calcolare una `CPython` tangente iperbolica e chiamarla dal codice Python. La routine viene implementata prima in Python per illustrare il miglioramento relativo delle prestazioni dell'implementazione della routine stessa in C++.
+Questo articolo illustra come creare un modulo di estensione C++ per che calcola una `CPython` tangente iperbolica e la chiama dal codice Python. La routine viene implementata prima in Python per illustrare il miglioramento relativo delle prestazioni dell'implementazione della routine stessa in C++.
 
 L'articolo illustra anche due modi per rendere disponibile l'estensione C++ per Python:
 
 - Usare le estensioni `CPython` standard, come descritto nella documentazione [di Python.](https://docs.python.org/3/c-api/)
-- Usare [PyBind11,](https://github.com/pybind/pybind11)che è consigliabile per C++11 per motivi di semplicità.
+- Usare [PyBind11,](https://github.com/pybind/pybind11)consigliato per C++11 per motivi di semplicità.
 
-L'esempio completo di questa procedura dettagliata GitHub in [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension).
+L'esempio completo di questa procedura dettagliata è GitHub [python-samples-vs-cpp-extension.](https://github.com/Microsoft/python-sample-vs-cpp-extension)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 - Visual Studio 2017 o versione successiva, con il carico di lavoro Sviluppo Python installato. Il carico di lavoro include gli strumenti di sviluppo nativi Python, che includono il carico di lavoro C++ e i set di strumenti necessari per le estensioni native.
 
-    ![Screenshot di un elenco di opzioni di sviluppo Python, con l'evidenziazione dell'opzione Degli strumenti di sviluppo nativi Python.](media/cpp-install-native.png)
+    ![Screenshot di un elenco di opzioni di sviluppo Python, con l'opzione Strumenti di sviluppo nativi Python evidenziata.](media/cpp-install-native.png)
 
     > [!NOTE]
-    > Quando si installa il **carico di lavoro Analisi scientifica dei** dati e applicazioni analitiche, Python e l'opzione Strumenti di sviluppo nativi **Python** vengono installati per impostazione predefinita.
+    > Quando si installa il **carico di lavoro Applicazioni analitiche** e di analisi scientifica dei dati, Python e l'opzione Strumenti di sviluppo nativi **Python** vengono installati per impostazione predefinita.
 
-Per altre informazioni sulle opzioni di installazione, vedere [Installare il supporto python per Visual Studio](installing-python-support-in-visual-studio.md). Se si installa Python separatamente, assicurarsi di selezionare Scarica simboli **di debug** in **Opzioni avanzate** nel programma di installazione. Questa opzione è necessaria per usare il debug in modalità mista tra il codice Python e il codice nativo.
+Per altre informazioni sulle opzioni di installazione, vedere [Installare il supporto python per Visual Studio](installing-python-support-in-visual-studio.md). Se si installa Python separatamente, assicurarsi di selezionare **Scarica simboli di debug** in Opzioni **avanzate** nel programma di installazione. Questa opzione è necessaria per usare il debug in modalità mista tra il codice Python e il codice nativo.
 
 ## <a name="create-the-python-application"></a>Creare un'applicazione Python
 
-1. Creare un nuovo progetto Python in Visual Studio selezionando **File**  >  **nuovo**  >  **Project**. Cercare **Python,** selezionare il modello **Applicazione Python,** immettere un nome e un percorso e quindi selezionare **OK.**
+1. Creare un nuovo progetto Python in Visual Studio selezionando **File**  >  **Nuovo**  >  **Project**. Cercare **Python,** selezionare il **modello Applicazione Python,** immettere un nome e un percorso e quindi selezionare **OK.**
 
 1. Nel file con estensione *py del* progetto incollare il codice seguente. Per provare alcune delle funzionalità [di modifica di Python,](editing-python-code-in-visual-studio.md)provare a immettere il codice manualmente.  
 
-   Questo codice calcola una tangente iperbolica senza usare la libreria matematica ed è ciò che si accelera con le estensioni native.
+   Questo codice calcola una tangente iperbolica senza usare la libreria matematica ed è ciò che verrà accelerato con le estensioni native.
 
     > [!Tip]
     > Scrivere il codice in Python puro prima di riscriverlo in C++. In questo modo, è possibile verificare più facilmente che il codice nativo sia corretto.
@@ -93,18 +93,18 @@ Per altre informazioni sulle opzioni di installazione, vedere [Installare il sup
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. Per visualizzare i risultati, eseguire il programma selezionando **Avvia** debug senza eseguire debug  >   o premendo CTRL+F5. 
+1. Per visualizzare i risultati, eseguire il programma selezionando **Avvia** debug senza eseguire  >   debug o premendo CTRL+F5. 
 
    È possibile cambiare la variabile `COUNT` per modificare il tempo impiegato per l'esecuzione del benchmark. Ai fini di questa procedura dettagliata, impostare il conteggio in modo che il benchmark impiega circa due secondi.
 
    > [!TIP]
-   > Quando si eseguono benchmark, usare sempre **Avvia debug**  >  **senza eseguire debug**. Ciò consente di evitare l'overhead che si verifica quando si esegue il codice all'interno del debugger Visual Studio di esecuzione.
+   > Quando si eseguono benchmark, usare sempre **Avvia**  >  **debug senza eseguire debug.** Ciò consente di evitare il sovraccarico che si verifica quando si esegue il codice all'interno Visual Studio debugger.
 
 ## <a name="create-the-core-c-projects"></a>Creare i progetti C++ di base
 
-Seguire le istruzioni in questa sezione per creare due progetti C++ identici, *superfastcode* e *superfastcode2.* Successivamente, si userà un approccio separato in ogni progetto per esporre il codice C++ a Python.
+Seguire le istruzioni in questa sezione per creare due progetti C++ identici, *superfastcode* e *superfastcode2.* In seguito si userà un approccio separato in ogni progetto per esporre il codice C++ a Python.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e quindi scegliere **Aggiungi**  >  **nuovo Project**. Una Visual Studio può contenere progetti Python e C++, uno dei vantaggi dell'uso di Visual Studio per Python.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e quindi  >  **scegliere Aggiungi nuovo Project**. Una Visual Studio può contenere progetti Python e C++, uno dei vantaggi dell'uso di Visual Studio per Python.
 
 1. Cercare in **C++,** selezionare **Progetto vuoto,** specificare **superfastcode** per il primo progetto o **superfastcode2** per il secondo progetto e quindi selezionare **OK.**
 
@@ -113,25 +113,25 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici, *s
     > 
     > Questa procedura dettagliata, tuttavia, inizia da un progetto vuoto e illustra la creazione del modulo di estensione in modo dettagliato. Dopo aver compreso il processo, è possibile usare il modello per risparmiare tempo quando si scrivono estensioni personalizzate.
 
-1. Per creare un file C++ nel nuovo progetto, fare clic con il pulsante destro del mouse sul nodo **File di** origine e quindi scegliere **Aggiungi**  >  **nuovo elemento**.
+1. Per creare un file C++ nel nuovo progetto, fare clic con il pulsante destro del mouse sul nodo **File di** origine e quindi **scegliere Aggiungi**  >  **nuovo elemento.**
 
-1. Selezionare **File C++,** assegnare il nome *module.cpp* e quindi **selezionare OK.**
+1. Selezionare **File C++,** assegnare al file *il nome module.cpp* e quindi selezionare **OK.**
 
     > [!Important]
     > Un file con estensione *cpp* è necessario per attivare le pagine delle proprietà C++ nei passaggi che seguono.
 
-1. Sulla barra degli strumenti principale usare il menu a discesa per eseguire una delle operazioni seguenti:
+1. Nella barra degli strumenti principale usare il menu a discesa per eseguire una delle operazioni seguenti:
 
    * Per un runtime Python a 64 bit, attivare la **configurazione x64.** 
    * Per un runtime Python a 32 bit, attivare la **configurazione Win32.**
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto C++, scegliere **Proprietà** e quindi eseguire le operazioni seguenti: 
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto C++, **scegliere Proprietà** e quindi eseguire le operazioni seguenti: 
 
-   a. Per **Configurazione** immettere **Active (Debug)**.  
+   a. Per **Configuration**(Configurazione) immettere **Active (Debug)**.  
    b. Per **Piattaforma** immettere **Active (x64)** o **Active (Win32)**, a seconda della selezione effettuata nel passaggio precedente.
 
     > [!NOTE]
-    > Quando si creano progetti personalizzati, è necessario configurare sia le configurazioni *di debug* che *di* versione. In questa unità si configura solo la configurazione di debug e la si imposta per l'uso di una build di rilascio di CPython. Questa configurazione disabilita alcune funzionalità di debug del runtime C++, incluse le asserzioni. L'uso dei file binari di debug CPython (*python_d.exe*) richiede impostazioni diverse.
+    > Quando si creano progetti personalizzati, è necessario configurare le configurazioni di *debug* *e di* rilascio. In questa unità si configura solo la configurazione di debug e la si imposta per l'uso di una build di rilascio di CPython. Questa configurazione disabilita alcune funzionalità di debug del runtime C++, incluse le asserzioni. L'uso dei file binari di debug di CPython (*python_d.exe*) richiede impostazioni diverse.
 
 1. Impostare le proprietà come descritto nella tabella seguente:
 
@@ -141,12 +141,12 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici, *s
     | --- | --- | --- |
     | **Generale** | **Nome destinazione** | Specificare il nome del modulo a cui fare riferimento da Python nelle `from...import` istruzioni . Lo stesso nome viene utilizzato nel codice C++ quando si definisce il modulo per Python. Per usare il nome del progetto come nome del modulo, lasciare il valore predefinito **$\<ProjectName>** .  Per `python_d.exe` , aggiungere alla fine del `_d` nome. |
     | | **Tipo configurazione** | **Libreria dinamica (.dll)** |
-    | | **Avanzate** > **Estensione di file di destinazione** | **.pyd** |
+    | | **Avanzate** > **Estensione file di destinazione** | **.pyd** |
     | | **Project predefinite** > **Tipo di configurazione** | **Libreria dinamica (.dll)** |
-    | **C/C++** > **Generale** | **Directory di inclusione aggiuntive** | Aggiungere la cartella *python include* in base alle esigenze di installazione (ad esempio, `c:\Python36\include` ).  |
-    | **C/C++** > **Preprocessore** | **Definizioni del preprocessore** | Se è presente, modificare il valore _DEBUG **in** **NDEBUG** in modo che corrisponda alla versione non di debug di CPython. Quando si usa *python_d.exe*, lasciare invariato questo valore. |
-    | **C/C++** > **Generazione del codice** | **Libreria di runtime** | **DLL multi-thread (/MD) in** modo che corrisponda alla versione non di debug di CPython. Quando si usa *python_d.exe*, lasciare questo valore come DLL di **debug multi-thread (/MDd).** |
-    | **Linker** > **Generale** | **Directory librerie aggiuntive** | Aggiungere la cartella Python *libs* che contiene i file con estensione *lib,* in base alle esigenze dell'installazione , ad esempio *c:\Python36\libs*. Assicurarsi di puntare alla cartella *libs* che contiene  i file *lib* e non alla *cartella Lib* che contiene i file con *estensione py.* |
+    | **C/C++** > **Generale** | **Directory di inclusione aggiuntive** | Aggiungere la cartella *include* di Python in base alle esigenze di installazione, ad esempio `c:\Python36\include` .  |
+    | **C/C++** > **Preprocessore** | **Definizioni del preprocessore** | Se è presente, modificare il valore **_DEBUG** in **NDEBUG** in modo che corrisponda alla versione non di debug di CPython. Quando si usa *python_d.exe*, lasciare invariato questo valore. |
+    | **C/C++** > **Generazione di codice** | **Libreria di runtime** | **DLL multi-thread (/MD)** in modo che corrisponda alla versione non di debug di CPython. Quando si usa *python_d.exe*, lasciare questo valore come DLL di **debug multi-thread (/MDd).** |
+    | **Linker** > **Generale** | **Directory librerie aggiuntive** | Aggiungere la cartella *libs* di Python che contiene i file con estensione *lib,* in base alle esigenze di installazione, ad esempio *c:\Python36\libs.* Assicurarsi di puntare alla cartella *libs* che contiene  i file con estensione *lib* e non alla *cartella Lib* che contiene i file con *estensione py.* |
     | | |
 
     ::: moniker-end
@@ -157,9 +157,9 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici, *s
     | --- | --- | --- |
     | **Generale** | **Generale** > **Nome destinazione** | Specificare il nome del modulo a cui fare riferimento da Python nelle `from...import` istruzioni . Lo stesso nome viene utilizzato nel codice C++ quando si definisce il modulo per Python. Per usare il nome del progetto come nome del modulo, lasciare il valore predefinito **$\<ProjectName>** . Per `python_d.exe` , aggiungere alla fine del `_d` nome. |
     | | **Generale** > **Estensione di destinazione** | **.pyd** |
-    | | **Project impostazioni predefinite** > **Tipo di configurazione** | **Libreria dinamica (.dll)** |
+    | | **Project predefinite** > **Tipo di configurazione** | **Libreria dinamica (.dll)** |
     | **C/C++** > **Generale** | **Directory di inclusione aggiuntive** | Aggiungere la cartella *include* di Python, in base alle esigenze di installazione, ad esempio *c:\Python36\include*.  |
-    | **C/C++** > **Preprocessore** | **Definizioni del preprocessore** | Se è presente, modificare il **valore** _DEBUG in **NDEBUG** in modo che corrisponda alla versione non di debug di `CPython` . Quando si usa `python_d.exe` , lasciare invariato questo valore. |
+    | **C/C++** > **Preprocessore** | **Definizioni del preprocessore** | Se è presente, modificare il valore **_DEBUG** in **NDEBUG** in modo che corrisponda alla versione non di debug di `CPython` . Quando si usa `python_d.exe` , lasciare invariato questo valore. |
     | **C/C++** > **Generazione di codice** | **Libreria di runtime** | **DLL multi-thread (/MD) in modo** che corrisponda alla versione non di debug di `CPython` . Quando si usa `python_d.exe` , lasciare invariato questo valore. |
     | **Linker** > **Generale** | **Directory librerie aggiuntive** | Aggiungere la cartella *libs* di Python che contiene i file con estensione *lib,* in base alle esigenze di installazione, ad esempio *c:\Python36\libs.* Assicurarsi di puntare alla cartella *libs* che contiene  i file con estensione *lib* e non alla *cartella Lib* che contiene i file con *estensione py.* |
     | | |
@@ -268,7 +268,7 @@ Per altre informazioni sul codice illustrato in questa sezione, vedere il manual
     }
     ```
 
-1. Compilare di nuovo il progetto C++ per verificare il codice. Se si verificano errori, vedere la [sezione "Risoluzione dei](#troubleshoot-compiling-failures) problemi".
+1. Compilare di nuovo il progetto C++ per verificare il codice. Se si verificano errori, vedere la [sezione "Risoluzione dei problemi".](#troubleshoot-compiling-failures)
 
 ### <a name="use-pybind11"></a>Usare PyBind11
 
@@ -415,7 +415,7 @@ Ora che la libreria è strutturata con le estensioni per Python, è possibile fa
 
 Dopo aver reso disponibile la DLL per Python, come descritto nella sezione precedente, è possibile chiamare le funzioni e dal codice Python e confrontarne le prestazioni con `superfastcode.fast_tanh` `superfastcode2.fast_tanh2` l'implementazione di Python. Per chiamare la DLL, eseguire le operazioni seguenti:
 
-1. Aggiungere le righe seguenti nel file con estensione *py* per chiamare i metodi esportati dalle DLL e visualizzarne gli output:
+1. Aggiungere le righe seguenti nel file *py* per chiamare i metodi esportati dalle DLL e visualizzarne gli output:
 
     ```python
     from superfastcode import fast_tanh
@@ -425,7 +425,7 @@ Dopo aver reso disponibile la DLL per Python, come descritto nella sezione prece
     test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. Eseguire il programma Python selezionando **Avvia debug**  >  **senza eseguire** debug o premendo CTRL+F5.
+1. Eseguire il programma Python selezionando **Avvia debug** senza eseguire debug o premendo  >   CTRL+F5.
 
     > [!NOTE]
     > Se il **comando Avvia** senza eseguire debug è disabilitato, **in** Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto Python e quindi scegliere Imposta come avvio **Project**.  
@@ -468,7 +468,7 @@ Visual Studio supporta il debug di codice Python e C++ insieme. In questa sezion
     > [!Tip]
     > Quando si abilita il debug del codice nativo, la finestra di output di Python potrebbe chiudersi immediatamente dopo il termine del programma senza fornire il consueto premere qualsiasi tasto **per continuare a sospendere.** 
     >
-    > Soluzione: per forzare una sospensione dopo aver abilitato il debug del codice nativo, aggiungere l'opzione al campo Esegui `-i`   >  **argomenti dell'interprete** nella **scheda** Debug. Questo argomento imposta l'interprete Python in modalità interattiva dopo l'esecuzione del codice, a questo punto attende che si seleziona CTRL+Z e quindi INVIO per chiudere la finestra. 
+    > Soluzione: per forzare una sospensione dopo aver abilitato il debug del codice nativo, aggiungere l'opzione al campo Esegui `-i`   >  **argomenti interprete** nella **scheda** Debug . Questo argomento attiva la modalità interattiva dell'interprete Python dopo l'esecuzione del codice, a questo punto attende che sia possibile selezionare CTRL+Z e quindi INVIO per chiudere la finestra. 
     >
     > In alternativa, se non si vuole modificare il codice Python, è possibile aggiungere istruzioni `import os` e alla fine del `os.system("pause")` programma. Questo codice duplica il prompt di sospensione originale.
 

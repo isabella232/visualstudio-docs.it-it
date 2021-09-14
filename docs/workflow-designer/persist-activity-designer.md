@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f0040b4c816ee55e6db7c59c3a74c53cedb51d5
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123963402"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633668"
 ---
 # <a name="persist-activity-designer"></a>ActivityDesigner Persist
 
@@ -32,7 +32,7 @@ L'attività <xref:System.Activities.Statements.Persist> salva un flusso di lavor
 
 L'ActivityDesigner persistente è disponibile nella categoria **Runtime** della Casella  degli strumenti **,**  a cui si accede facendo clic sulla scheda Casella degli strumenti .In alternativa, selezionare Casella degli strumenti dal **menu** Visualizza o CTRL+ALT+X. 
 
-**L'ActivityDesigner** persiste può  essere trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere posizionate attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Verrà creata <xref:System.Activities.Statements.Persist> un'attività con un **valore DisplayName predefinito** di Persist. <xref:System.Activities.Activity.DisplayName%2A>L'oggetto può essere modificato nell'intestazione di **Persist** ActivityDesigner o nella **casella DisplayName** della griglia delle proprietà.
+**L'ActivityDesigner** persiste può  essere trascinato dalla casella degli strumenti e rilasciato sulla superficie di Progettazione flussi di lavoro ogni volta che vengono in genere posizionate attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Verrà creata <xref:System.Activities.Statements.Persist> un'attività con un **valore DisplayName predefinito** di Persist. Può <xref:System.Activities.Activity.DisplayName%2A> essere modificato nell'intestazione di **Persist** ActivityDesigner o nella **casella DisplayName** della griglia delle proprietà.
 
 ### <a name="the-persist-properties"></a>Proprietà di Persist
 

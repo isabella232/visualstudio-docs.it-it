@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: f4e4093edfdc5ff9d2d4ef14bd6cf670c2b9b613
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067692"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126633132"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure da Visual Studio
 
@@ -25,10 +25,10 @@ Per sfruttare i servizi di hosting e scalabilità di Azure, è possibile eseguir
 
 ## <a name="migrate-a-project-to-cloud-services"></a>Migrare un progetto in un servizio cloud
 
-1. Fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi **> Nuovo Project...** e aggiungere un nuovo progetto servizio cloud di **Azure (versione classica)** alla soluzione esistente.
+1. Fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere Aggiungi > **Nuovo Project...** e aggiungere un nuovo progetto servizio cloud di **Azure (versione classica)** alla soluzione esistente.
 1. Nella finestra **di dialogo Microsoft Azure Cloud Service (versione classica)** fare clic su OK senza aggiungere ruoli al progetto.
-1. Fare clic con il pulsante destro del mouse sul nodo ruoli nel progetto servizi cloud appena aggiunto e selezionare Aggiungi **ruolo Web Project nella soluzione...**.
-1. Nella finestra **di dialogo Associa Project** ruolo selezionare il progetto che si vuole associare come ruolo Web.
+1. Fare clic con il pulsante destro del mouse sul nodo ruoli nel progetto Servizi cloud appena aggiunto e scegliere Aggiungi **ruolo Web Project nella soluzione...**.
+1. Nella finestra **di dialogo Associa al ruolo Project** selezionare il progetto da associare come ruolo Web.
 
    > [!Important]
    > Se si dispone di altri assembly o file necessari per l'applicazione Web, è necessario impostare manualmente le proprietà di questi file. Per informazioni su come impostare queste proprietà, vedere [Includere file nel pacchetto del servizio](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).

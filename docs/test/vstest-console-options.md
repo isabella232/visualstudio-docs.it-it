@@ -1,6 +1,6 @@
 ---
 title: Opzioni della riga di comando di VSTest.Console.exe
-description: Informazioni sullo strumento VSTest.Console.exe della riga di comando che esegue i test. Questo articolo include le opzioni della riga di comando Generale.
+description: Informazioni sullo strumento VSTest.Console.exe da riga di comando che esegue i test. Questo articolo include le opzioni della riga di comando Generale.
 ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
 ms.topic: reference
@@ -14,11 +14,11 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 ms.openlocfilehash: 9af275fe53925c2814c1c43a72ec4512d1e2c1b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634196"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -89,15 +89,15 @@ Il comando seguente esegue *vstest.console.exe* con diverse opzioni. Esegue i te
 vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
 ```
 
-Il comando seguente *esegue* vstest.console.execon l'opzione per la libreria di test `/blame` *myTestProject.dll*:
+Il comando seguente esegue *vstest.console.exe* con l'opzione `/blame` per la libreria di test *myTestProject.dll*:
 
 ```cmd
 vstest.console.exe myTestFile.dll /blame
 ```
 
-Se si è verificato un arresto anomalo dell'host di test, *sequence.xml* generato il file di configurazione. Il file contiene nomi completi dei test nella sequenza di esecuzione fino al test specifico in esecuzione al momento dell'arresto anomalo del sistema.
+Se si verifica un arresto anomalo dell'host di test, *sequence.xml* generato il file di configurazione. Il file contiene nomi completi dei test nella sequenza di esecuzione fino al test specifico in esecuzione al momento dell'arresto anomalo del sistema.
 
-Se non si verifica alcun arresto anomalo dell'host di test, il file *sequence.xml* non verrà generato.
+Se non si verifica alcun arresto anomalo dell'host di test, *il* filesequence.xmlnon verrà generato.
 
 Esempio di un file *sequence.xml* generato: 
 

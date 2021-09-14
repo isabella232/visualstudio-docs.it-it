@@ -11,11 +11,11 @@ ms.technology: vs-rtvs
 ms.workload:
 - data-science
 ms.openlocfilehash: 27db2b3b5edfe5fbaed9899927f7e9e866bd7d7a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076100"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126628271"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modificare il codice R in Visual Studio
 
@@ -51,7 +51,7 @@ Quando si digitano chiamate a funzioni con molti parametri, spesso si vuole alli
 
 Per modificare questo comportamento, vedere le [opzioni dell'editor](#editor-options) per il gruppo **Tabulazioni**.
 
-Le aree di codice comprimibili consentono di nascondere temporaneamente parte del codice nell'editor. Visual Studio automaticamente diverse aree, come per le istruzioni su più righe, a meno che l'opzione **Struttura** codice struttura avanzata non sia impostata  >    >   su Off.
+Le aree di codice comprimibili consentono di nascondere temporaneamente parte del codice nell'editor. Visual Studio automaticamente diverse aree, come per le istruzioni su più righe, a meno che l'opzione Struttura codice struttura avanzata non sia impostata  >    >   su Off.
 
 Per creare un'area personalizzata, racchiudere il codice interessato con commenti che terminano con `---`. Il piccolo controllo + /- a sinistra del codice consente di espandere e comprimere le aree:
 
@@ -126,10 +126,10 @@ Le opzioni nella **scheda**  >  **R Avanzate** sono specifiche di RTVS:
 | | Spazio prima di { | On | Inserisce uno spazio prima di una { aperta. |
 | | Spazio prima e dopo = | On | Inserisce spazi prima e dopo un segno di uguale. |
 | IntelliSense | Esegui il commit quando si preme INVIO | Off | Esegue il commit della selezione di completamento automatico **quando si preme** INVIO. |
-| | Esegui il commit quando si preme la BARRA SPAZIATRICE | Off | Esegue il commit della selezione di completamento automatico quando **viene premuto** Spazio.|
-| | Elenco di completamento dopo la digitazione del primo carattere | On | Visualizza l'elenco di completamento dopo aver digitato i primi caratteri. Quando è disattivata, viene visualizzato un elenco di completamento con **Modifica**  >  **membri elenco IntelliSense**(  >   **CTRL** + **J**). |
+| | Esegui il commit quando si preme la BARRA SPAZIATRICE | Off | Esegue il commit della selezione di completamento automatico quando **viene premuto** spazio.|
+| | Elenco di completamento dopo la digitazione del primo carattere | On | Visualizza l'elenco di completamento dopo aver digitato i primi caratteri. Se disattivata, viene visualizzato un elenco di completamento con **Modifica**  >  **membri elenco IntelliSense**(  >   **CTRL** + **J**). |
 | | Elenco di completamento sul **tasto** TAB | Off | Richiama l'elenco di completamento digitando uno o più caratteri e premendo **TAB.** |
-| | Corrispondenza con nomi di argomento parzialmente digitati | Off | Quando si digitano i nomi degli argomenti in una chiamata di funzione, la Guida per la firma mostra una descrizione dell'argomento che rappresenta la corrispondenza migliore. |
+| | Corrispondenza con nomi di argomento parzialmente digitati | Off | Quando si digitano i nomi degli argomenti in una chiamata di funzione, la guida alla firma mostra una descrizione per l'argomento che rappresenta la corrispondenza migliore. |
 | Finestra interattiva | Controllo della sintassi nella console R | Off | Applica il controllo della sintassi nella finestra interattiva. Il controllo della sintassi non funziona correttamente se viene applicato a istruzioni su più righe. |
 | struttura | Struttura del codice | On | Crea automaticamente aree comprimibili in caso di istruzioni su più righe. |
 | Controllo della sintassi | Mostra errori di sintassi | On | Abilita il controllo automatico della sintassi del codice. |

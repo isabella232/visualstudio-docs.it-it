@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: 5497459ba737e48299558046cd17d0cdf4cb99d4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634260"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze
 

@@ -11,11 +11,11 @@ metadata:
   ms.date: 12/05/2019
   ms.author: ghogen
   ms.openlocfilehash: c0edb595d8e03495c43c76cd191dcf3ab01c4341
-  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/24/2021
-  ms.locfileid: "122785634"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126633236"
 landingContent:
 - title: Distribuire nel Servizio app di Azure
   linkLists:
@@ -77,11 +77,11 @@ landingContent:
       url: azure-cache-for-redis-add-connected-service.md
     - text: Azure CosmosDB
       url: azure-cosmosdb-add-connected-service.md
-    - text: Azure Key Vault
+    - text: Insieme di credenziali chiave di Azure
       url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Servizio Azure SignalR
       url: azure-signalr-add-connected-service.md
-    - text: Database SQL di Azure
+    - text: database SQL di Azure
       url: azure-sql-database-add-connected-service.md
     - text: Archiviazione di Azure
       url: vs-azure-tools-connected-services-storage.md

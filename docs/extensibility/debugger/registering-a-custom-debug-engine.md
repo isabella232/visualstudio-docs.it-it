@@ -14,17 +14,17 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2499e4aef01bd4812a705afd7777cacd7eb2ba14
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634683"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrare un motore di debug personalizzato
 Il motore di debug deve registrarsi come class factory, seguendo le convenzioni COM e registrarsi con Visual Studio tramite la sottochiave Visual Studio del Registro di sistema.
 
 > [!NOTE]
-> È possibile trovare un esempio di come registrare un motore di debug nell'esempio TextInterpreter, compilato come parte dell'esercitazione: Compilazione di un motore di debug con [ATL COM](/previous-versions/bb147024(v=vs.90)).
+> È possibile trovare un esempio di come registrare un motore di debug nell'esempio TextInterpreter, compilato come parte dell'esercitazione: Compilazione di un motore di debug tramite [ATL COM.](/previous-versions/bb147024(v=vs.90))
 
 ## <a name="dll-server-process"></a>Processo del server DLL
  Un motore di debug viene in genere configurato nella propria DLL come server COM. Di conseguenza, il motore di debug deve registrare il CLSID del class factory con COM prima Visual Studio possibile accedervi. Quindi, il motore di debug deve registrarsi con Visual Studio per stabilire le proprietà (note anche come metriche) supportate dal motore di debug. La scelta delle metriche scritte nella sottochiave Visual Studio del Registro di sistema dipende dalle funzionalità supportate dal motore di debug.
@@ -35,7 +35,7 @@ Il motore di debug deve registrarsi come class factory, seguendo le convenzioni 
  L'esempio seguente (dall'esempio TextInterpreter) illustra come usare la funzione `SetMetric` (da *dbgmetric.lib*), per registrare un motore di debug con Visual Studio. Le metriche passate sono definite anche in *dbgmetric.lib*.
 
 > [!NOTE]
-> TextInterpreter è un motore di debug di base. non configura e pertanto non registra altre funzionalità. Un motore di debug più completo avrebbe un intero elenco di chiamate o il relativo equivalente, uno `SetMetric` per ogni funzionalità che il motore di debug supporta.
+> TextInterpreter è un motore di debug di base. non configura e pertanto non registra altre funzionalità. Un motore di debug più completo avrebbe un intero elenco di chiamate o il relativo equivalente, uno per ogni funzionalità che il motore `SetMetric` di debug supporta.
 
 ```
 // Define base registry subkey to Visual Studio.

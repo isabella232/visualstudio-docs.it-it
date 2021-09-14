@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e4aa5162259cf1937ef24506a32be9d87fb61327
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634731"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Specifica lo stato del thread.
@@ -55,19 +55,19 @@ public enum enum_THREADSTATE {
  Indica che il thread è in esecuzione.
 
  `THREADSTATE_STOPPED`\
- Indica che il thread è stato arrestato a causa di un punto di interruzione.
+ Indica che il thread viene arrestato a causa di un punto di interruzione.
 
  `THREADSTATE_FRESH`\
  Indica che il thread è stato creato, ma non è ancora in esecuzione codice.
 
  `THREADSTATE_DEAD`\
- Indica che il thread non è attivo.
+ Indica che il thread è in stato di in dead.
 
  `THREADSTATE_FROZEN`\
  Indica che il thread è bloccato (non è possibile eseguire alcuna esecuzione).
 
 ## <a name="remarks"></a>Commenti
- Usato per `dwThreadState` il campo della struttura [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
+ Utilizzato per `dwThreadState` il campo della struttura [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
 
 ## <a name="requirements"></a>Requisiti
  Intestazione: msdbg.h

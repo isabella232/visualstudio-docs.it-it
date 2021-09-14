@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccb48584435debdca17fac31c436a898c70448ad114c7718b30443adc6eeeb0b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 00da6cede11993e0b498978bc9a18ec0e21781b4
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389020"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126634659"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Roadmap per l'estensione del debugger
 Questa documentazione fornisce informazioni di riferimento e guida per l'estensione [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] del debugger con [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .

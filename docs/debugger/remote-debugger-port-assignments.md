@@ -1,5 +1,5 @@
 ---
-title: Assegnazioni delle porte del debugger remoto | Microsoft Docs
+title: Assegnazioni di porte del debugger remoto | Microsoft Docs
 description: Informazioni Visual Studio di porta del debugger remoto in sistemi operativi a 32 bit, sistemi operativi a 64 bit e Azure. Informazioni sulla porta di individuazione.
 ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
@@ -12,11 +12,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 ms.openlocfilehash: d07d84ce2d547a5f2910b8afa7ade652d03028c1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120790"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126627947"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:
