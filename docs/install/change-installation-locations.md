@@ -1,7 +1,7 @@
 ---
 title: Selezionare i percorsi di installazione
 description: Informazioni su come ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema indicando un percorso in unità diverse per Download Cache, componenti condivisi, SDK e strumenti. Ad esempio, spostare alcuni file dall'unità C all'unità D.
-ms.date: 03/30/2019
+ms.date: 09/14/2021
 ms.custom: vs-acquisition
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,23 +9,29 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5ad065a780a16420727d90605d95038cc5f4080a
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: be2c18e531af3a0aa6dd059206ce81db7734ab08
+ms.sourcegitcommit: 559c662b2d60048300b76ea6ed3defaa2a259492
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387567"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127779577"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selezionare i percorsi di installazione in Visual Studio
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+
+È possibile ridurre il footprint di Visual Studio nell'unità di sistema modificando il percorso di alcuni dei relativi file. In particolare, è possibile usare un percorso diverso per la **cache di download** e i componenti **condivisi, gli strumenti e gli SDK.**
+
+::: moniker-end
+
+::: moniker range="vs-2019"
 
 è possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema cambiando il percorso di alcuni file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
 
@@ -33,31 +39,35 @@ ms.locfileid: "112387567"
 
 ::: moniker range="vs-2017"
 
-**Novità della versione 15.7:** è possibile ridurre il footprint di installazione di Visual Studio nell'unità di sistema modificando il percorso di alcuni dei relativi file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
+**Novità della versione 15.7:** è possibile ridurre il footprint di Visual Studio nell'unità di sistema modificando il percorso di alcuni dei relativi file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
 
 ::: moniker-end
+
+::: moniker range=">=vs-2019"
 
    > [!NOTE]
    > Esistono alcuni strumenti e SDK con regole diverse riguardo al percorso di installazione. Questi strumenti e SDK vengono installati nell'unità di sistema anche se si sceglie un altro percorso.
 
-Pronto per iniziare? Ecco come.
+::: moniker-end
+
+Pronti a iniziare? Ecco come.
 
 ::: moniker range="vs-2017"
 
 1. Quando si installa Visual Studio scegliere la scheda **Percorsi di installazione**.
 
-   ![Visual Studio 2017: selezionare il percorso di installazione](media/vs-installation-locations.png "Selezionare il percorso di installazione.")
+   ![Screenshot che mostra la scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations.png "Selezionare il percorso di installazione.")
 
 1. Nella sezione **IDE di Visual Studio** accettare il valore predefinito. Viene installato il prodotto principale e vengono inclusi file specifici per questa versione di Visual Studio.
 
-   ![Visual Studio IDE della scheda Percorsi di installazione](media/vs-installation-locations-ide.png "Accettare il valore predefinito per la Visual Studio IDE della scheda Percorso installazioni.")
+   ![Screenshot della sezione Visual Studio IDE della scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations-ide.png "Accettare il valore predefinito per la Visual Studio IDE della scheda Percorso installazioni.")
 
    > [!TIP]
    > Se l'unità di sistema è un'unità SSD è consigliabile accettare il percorso predefinito nell'unità di sistema. Motivo: quando si sviluppa con Visual Studio, si eseguono operazioni di lettura e scrittura in numerosi file, aumentando così le attività di input/output del disco. È opportuno scegliere l'unità più veloce per gestire il carico.
 
 1. Nella sezione **Download Cache** decidere se si vuole mantenere la Download Cache e quindi scegliere dove archiviare i file corrispondenti.
 
-     ![Sezione Download Cache della scheda Percorsi di installazione](media/vs-installation-locations-cache.png "Scegliere se mantenere la cache di download dopo l'installazione e quindi specificare l'unità in cui archiviare i file.")
+     ![Screenshot della sezione Download cache della scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations-cache.png "Scegliere se mantenere la cache di download dopo l'installazione e quindi specificare l'unità in cui archiviare i file.")
 
     1. Selezionare o deselezionare **Mantieni la Download Cache dopo l'installazione**.
 
@@ -72,15 +82,15 @@ Pronto per iniziare? Ecco come.
 
 1. Nella sezione **Componenti condivisi, strumenti e SDK** specificare l'unità in cui si vogliono archiviare i file condivisi dalle installazioni side-by-side di Visual Studio. Anche i SDK e gli strumenti vengono archiviati in questa directory.
 
-   ![Sezione Componenti condivisi, strumenti e SDK della scheda Percorsi di installazione](media/vs-installation-locations-shared.png "Specificare il percorso in cui archiviare componenti, strumenti e SDK condivisi.")
+   ![Screenshot dei componenti condivisi, degli strumenti e degli SDK della scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations-shared.png "Specificare il percorso in cui archiviare componenti, strumenti e SDK condivisi.")
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. Quando si installa Visual Studio scegliere la scheda **Percorsi di installazione**.
 
-   ![Visual Studio 2019: selezionare il percorso di installazione](media/vs-2019/vs-installer-installation-locations.png "Selezionare il percorso di installazione.")
+   ![Screenshot che mostra la scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-installation-locations.png "Selezionare il percorso di installazione.")
 
 1. Nella sezione **IDE di Visual Studio** accettare il valore predefinito. Viene installato il prodotto principale e vengono inclusi file specifici per questa versione di Visual Studio.
 
@@ -101,6 +111,40 @@ Pronto per iniziare? Ecco come.
        > Il percorso viene impostato con la prima installazione e non può essere modificato in un secondo tempo dall'interfaccia utente del programma di installazione. È invece necessario usare [i parametri della riga di comando](use-command-line-parameters-to-install-visual-studio.md) per spostare la cache di download.
 
 1. Nella sezione **Componenti condivisi, strumenti e SDK** viene usata la stessa unità scelta nella sezione "Download cache". La directory \Microsoft\VisualStudio\Condiviso archivia i file condivisi dalle installazioni side-by-side di Visual Studio. Anche i SDK e gli strumenti vengono archiviati in questa directory.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. Quando si installa Visual Studio scegliere la scheda **Percorsi di installazione**.
+
+   :::image type="content" source="media/vs-2022/vs-installer-installation-locations-cplusplus-workload.png" border="false" alt-text="Screenshot che mostra la scheda Percorsi di installazione del Programma di installazione di Visual Studio.":::
+
+1. Nella sezione **Visual Studio IDE** accettare il percorso predefinito. Visual Studio installa il prodotto principale e include file specifici di questa versione di Visual Studio.
+
+   > [!TIP]
+   > Se l'unità di sistema è un'unità SSD (Solid-State Drive), è consigliabile mantenere il prodotto principale nell'unità di sistema. Motivo: quando si sviluppa con Visual Studio, si eseguono operazioni di lettura e scrittura in numerosi file, aumentando così le attività di input/output del disco. È opportuno scegliere l'unità più veloce per gestire il carico.
+
+   > [!IMPORTANT]
+   > È possibile selezionare un percorso diverso solo quando si installa per la prima volta Visual Studio. Se è già stato installato e si vuole modificare il percorso, è necessario disinstallare Visual Studio e quindi reinstallarlo.
+
+1. Nella sezione **Download cache (Scarica cache)** decidere se si vuole mantenere la cache di download e, in tal caso, dove archiviare i file.
+
+    * Selezionare o deselezionare **Mantieni la Download Cache dopo l'installazione**.
+
+      Se si decide di non mantenere la cache di download, il percorso della cache di download viene usato solo temporaneamente. Questa azione non ha effetto sui file di installazioni precedenti né li elimina.
+
+      Ad esempio, se si seleziona il carico di lavoro "Sviluppo di desktop con C++", le dimensioni temporaneamente richieste per il percorso della cache di download sono 2,11 GB. Al termine dell'installazione, i file della cache scaricati vengono rimossi, lasciando solo i metadati del pacchetto.
+
+    * Specificare il percorso della cartella, inclusa l'unità, in cui archiviare i file di installazione e i manifesti dalla cache di download.
+
+   > [!IMPORTANT]
+   > È possibile selezionare un percorso diverso solo quando si installa per la prima volta Visual Studio. Se è già stato installato e si vuole modificare il percorso, è necessario disinstallare Visual Studio e quindi reinstallarlo.
+
+1. Nella **sezione Componenti condivisi, strumenti** e SDK selezionare la cartella in cui archiviare i file condivisi da installazioni Visual Studio affiancate. Anche i SDK e gli strumenti vengono archiviati in questa directory.
+
+   > [!IMPORTANT]
+   > Se è stato installato Visual Studio nel computer in precedenza, non sarà possibile modificare il percorso Componenti condivisi, strumenti e SDK e verrà visualizzato in grigio.
 
 ::: moniker-end
 
