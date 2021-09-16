@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2022 (anteprima)
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità nella versione di anteprima di Visual Studio 2022.
-ms.date: 08/11/2021
+ms.date: 09/14/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 90e59cb5f09c78df02a166b817e1a3fa5642bda6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9b6a96cd9931a284f3aabe7482abea81a0c79b46
+ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048245"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127890494"
 ---
 # <a name="whats-new-in-visual-studio-2022-preview"></a>Novità di Visual Studio 2022 (anteprima)
 
-**Aggiornamento per la versione 17.0 Preview 3.** Vedere [le note sulla versione completa](/visualstudio/releases/2022/release-notes-preview/) | Visualizzare la [roadmap del prodotto](/visualstudio/productinfo/vs-roadmap/)
+**Aggiornamento per la versione 17.0 Preview 4.** Vedere [le note sulla versione completa](/visualstudio/releases/2022/release-notes-preview/) | Visualizzare la [roadmap del prodotto](/visualstudio/productinfo/vs-roadmap/)
 
 >[!div class="button"]
 >[Scaricare Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022/)
 
-Con Visual Studio, si otterrà sempre gli strumenti e i servizi più avanzati disponibili per qualsiasi sviluppatore, qualsiasi app e qualsiasi piattaforma. Se si usa Visual Studio per la prima volta o lo si usa da anni, la versione più recente, attualmente in anteprima, è molto simile.
+Con Visual Studio, si otterrà sempre gli strumenti e i servizi più avanzati disponibili per qualsiasi sviluppatore, qualsiasi app e qualsiasi piattaforma. Sia che si utilizzi Visual Studio per la prima volta o che lo si utilizzi da anni, è molto simile alla versione più recente, attualmente in anteprima.
 
 ## <a name="visual-studio-2022-is-64-bit"></a>Visual Studio 2022 è a 64 bit
 
@@ -38,13 +38,15 @@ Visual Studio 2022 in Windows è ora un'applicazione a 64 bit. Ciò significa ch
 
 In Visual Studio 2022, la funzionalità [IntelliCode](/visualstudio/intellicode/) può ora completare automaticamente il codice fino a un'intera riga alla volta. Per informazioni dettagliate, vedere il post di blog [**Type less, code more with IntelliCode completions**](https://devblogs.microsoft.com/visualstudio/type-less-code-more-with-intellicode-completions/) (Digitare meno codice con completamento IntelliCode).
 
-## <a name="build-modern-apps-with-improved-tools"></a>Creare app moderne con strumenti migliorati
+## <a name="build-modern-apps-with-net-and-c"></a>Creare app moderne con .NET e C++
 
-[Visual Studio 2022 Preview 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/) include strumenti di sviluppo di app multipiattaforma migliori e la versione più recente degli strumenti di compilazione C++. È anche in corso l'aggiornamento Ricaricamento rapido in modo da poter modificare progetti C++ o .NET mentre l'applicazione è in esecuzione. Per altre informazioni, vedere il post di blog Speed [**up your .NET and C++ development with Ricaricamento rapido in Visual Studio 2022 .NET and C++ development with Visual Studio 2022**](https://devblogs.microsoft.com/visualstudio/speed-up-your-dotnet-and-cplusplus-development-with-hot-reload-in-visual-studio-2022/) (Velocizzare lo sviluppo di .NET e C++ con Ricaricamento rapido in Visual Studio 2022).
+[Visual Studio 2022 Preview 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/) include strumenti di sviluppo di app multipiattaforma migliori e la versione più recente degli strumenti di compilazione C++. È anche in corso l'aggiornamento **Ricaricamento rapido** in modo da poter modificare progetti C++ o .NET mentre l'applicazione è in esecuzione. Per altre informazioni, vedere il post di blog Speed [**up your .NET and C++ development with Ricaricamento rapido in Visual Studio 2022**](https://devblogs.microsoft.com/visualstudio/speed-up-your-dotnet-and-cplusplus-development-with-hot-reload-in-visual-studio-2022/) (Velocizzare lo sviluppo di .NET e C++ con Ricaricamento rapido in Visual Studio 2022).
+
+Inoltre, una novità di [Visual Studio 2022 Preview 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)include un grande aggiornamento per gli editor Blazor e Razor e nuove funzionalità per **Ricaricamento rapido** in ASP.NET Core, incluso Ricaricamento rapido quando si salva un file o quando si applicano modifiche ai file CSS in &mdash; tempo reale. 
 
 ## <a name="multi-repo-support-with-git-in-the-ide"></a>Supporto di più repository con Git nell'IDE
 
-Se sono stati usati progetti ospitati in repository Git diversi, è possibile che si sia usato strumenti esterni o più istanze di Visual Studio per connettersi a essi. A partire da [Visual Studio 2022 Preview 3,](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)è possibile usare una singola soluzione con progetti in più repository e contribuire a tutti da una singola istanza di Visual Studio. Per altre informazioni, vedere il post di blog [**Multi-repo support in Visual Studio**](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/) blog.
+Se sono stati usati progetti ospitati in repository Git diversi, è possibile che si sia usato strumenti esterni o più istanze di Visual Studio per connettersi a essi. A partire [da Visual Studio 2022 Preview 3,](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)è possibile usare una singola soluzione con progetti in più repository e contribuire a tutti da una singola istanza di Visual Studio. Per altre informazioni, vedere il post di blog [**Multi-repo support in Visual Studio**](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/) blog.
 
 ## <a name="personalization-improvements"></a>Miglioramenti della personalizzazione
 
@@ -52,7 +54,7 @@ Una delle principali aree di interesse è rendere l'ambiente Visual Studio più 
 
 ## <a name="whats-next"></a>Passaggi successivi
 
-Per altre informazioni su ciò che è in programma per Visual Studio 2022, Per informazioni [**dettagliate,**](/visualstudio/productinfo/vs-roadmap/) vedere la pagina Roadmap.
+Per altre informazioni su ciò che si prevede per Visual Studio 2022, Per informazioni [**dettagliate,**](/visualstudio/productinfo/vs-roadmap/) vedere la pagina Roadmap.
 
 ## <a name="give-us-feedback"></a>Commenti e suggerimenti
 
@@ -60,11 +62,11 @@ Per altre informazioni su ciò che è in programma per Visual Studio 2022, Per i
 
 * Se si vuole inviare un suggerimento per migliorare Visual Studio, è possibile usare lo strumento [Suggerisci una funzionalità](suggest-a-feature.md).
 
-* Se si verifica un problema a causa del quale Visual Studio smette di rispondere, arresti anomali o altri problemi di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto con Microsoft usando lo strumento Segnala [un](how-to-report-a-problem-with-visual-studio.md) problema.
+* Se si verifica un problema per cui Visual Studio smette di rispondere, arresti anomali o altri problemi di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto con Microsoft usando lo strumento Segnala un [problema.](how-to-report-a-problem-with-visual-studio.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Novità della documentazione di Visual Studio](whats-new-visual-studio-docs.md)
-* [Visual Studio versione 2019](/visualstudio/releases/2019/release-notes/)
-* [Conferenza di Microsoft Build](https://www.microsoft.com/build)
-* [Conferenza Microsoft Ignite](https://www.microsoft.com/ignite)
+* [Visual Studio 2022 Preview 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)
+* [Visual Studio 2022 Preview 3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)
+* [Visual Studio 2022 Preview 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/)
+* [Visual Studio 2022 Preview 1](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)

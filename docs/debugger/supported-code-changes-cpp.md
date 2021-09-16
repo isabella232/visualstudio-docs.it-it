@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2d7d7a4225c3a2711e238f7100054b1342a65eb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: f1a49c46c975d37f2b0b43531029b0ae5a28d4f8
+ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126710383"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127890468"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi di modifiche al codice. Alcune modifiche non possono tuttavia essere applicate durante l'esecuzione del programma. Per applicare tali modifiche, è necessario arrestare l'esecuzione e compilare una versione aggiornata del codice.
@@ -88,7 +88,7 @@ Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi d
 
 - Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, debug di app o componenti UWP. A partire da Visual Studio 2015 Update 1, è possibile usare Modifica e continuazione nelle app C++ UWP e nelle app DirectX, perché ora supporta l'opzione del compilatore con l'opzione `/ZI` `/bigobj` . È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .
 
-- Debug delle app dello Store 8/8.1. Questi progetti usano il set di strumenti VC 120 e l'opzione `/bigobj` C/C++. Modifica e continuazione con è supportato solo nel set di strumenti `/bigobj` vc140.
+- Debug delle app dello Store 8/8.1. Questi progetti usano il set di strumenti VC 120 e l'opzione `/bigobj` C/C++. Modifica e continuazione con è supportato solo nel set di strumenti `/bigobj` di VC 140.
 
 - Debug in Windows 98.
 
@@ -161,8 +161,13 @@ Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi d
 ## <a name="diagnosing-issues"></a><a name="BKMK_Diagnosing_issues"></a> Diagnosi dei problemi
  Se lo scenario non rientra nelle condizioni indicate in precedenza, è possibile raccogliere altri dettagli impostando il valore del Registro di sistema DWORD seguente:
  1. Aprire un Prompt dei comandi per gli sviluppatori.
- 2. Eseguire il comando seguente:  
+ 2. Eseguire il comando seguente: 
+    ::: moniker range=">=vs-2022" 
+     `VsRegEdit.exe set “C:\Program Files\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
+    ::: moniker-end
+    ::: moniker range="vs-2019"
      `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
+    ::: moniker-end
 
  L'impostazione di questo valore all'inizio di una sessione di debug fa sì che i vari componenti di Modifica e continuazione spew registrazione dettagliata nel Finestra di output  >  **Debug.**
 

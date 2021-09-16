@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 4c17c2c28504ee8f1491173b5d72ceba8f430ab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46588091cf91cf352af941c72a81adc059cbbd31
+ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85570160"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127882072"
 ---
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -13,8 +13,12 @@ ms.locfileid: "85570160"
 - Visual Studio 2017 con carico di lavoro di Python installato. Per istruzioni, vedere [Usare Python in Visual Studio - Passaggio 0](../tutorial-working-with-python-in-visual-studio-step-00-installation.md).
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 - Visual Studio 2019 con il carico di lavoro di Python installato. Per istruzioni, vedere [Usare Python in Visual Studio - Passaggio 0](../tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+- Visual Studio 2022 con il carico di lavoro Python installato. Per istruzioni, vedere [Usare Python in Visual Studio - Passaggio 0](../tutorial-working-with-python-in-visual-studio-step-00-installation.md).
 ::: moniker-end
 
 È anche possibile usare una versione precedente di Visual Studio con Python Tools for Visual Studio installato. Vedere [Installare il supporto di Python in Visual Studio](../installing-python-support-in-visual-studio.md).
