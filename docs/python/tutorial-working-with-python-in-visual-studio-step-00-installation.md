@@ -13,11 +13,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 1e712d5df44dd87f07b50b243e8e63ed9e1ad0bf
-ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
+ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127890435"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127920062"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 

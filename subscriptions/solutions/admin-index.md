@@ -1,6 +1,6 @@
 ---
-title: Soluzioni di supporto per l'amministratore delle sottoscrizioni
-description: Elenco dei file INCLUDEs per i Visual Studio del widget di supporto dell'amministratore delle sottoscrizioni
+title: Soluzioni di supporto per gli amministratori delle sottoscrizioni
+description: Elenco di file INCLUDEs per Visual Studio del widget di supporto dell'amministratore delle sottoscrizioni
 ms.topic: conceptual
 ms.assetid: 478648b9-f6f0-4ea3-83b4-5cffa196a496
 robots: noindex, nofollow
@@ -8,13 +8,13 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 08/13/2021
 ms.openlocfilehash: 95a74093477657ec6e550005d8bd5c6a08ea1703
-ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127892618"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127934101"
 ---
-# <a name="visual-studio-subscriptions-admin-support-widget-content-includes-files"></a>Visual Studio di contenuto del widget di supporto dell'amministratore delle sottoscrizioni include i file
+# <a name="visual-studio-subscriptions-admin-support-widget-content-includes-files"></a>Visual Studio sottoscrizioni di amministrazione supportano i file INCLUDE del contenuto del widget
 
 ## <a name="managing-agreements"></a>Gestione dei contratti
 
@@ -22,7 +22,7 @@ ms.locfileid: "127892618"
 
 [!INCLUDE [admin-not-able-to-manage-agreement](managing-agreements/includes/admin-not-able-to-manage-agreement.md)]
 
-## <a name="managing-super-admins-or-admins"></a>Gestione di amministratori con privilegi super o amministratori
+## <a name="managing-super-admins-or-admins"></a>Gestione di amministratori con privilegi di amministratore con privilegi di amministratore
 
 [!INCLUDE [admin-expired-subs-should-be-active](managing-super-admins-or-admins/includes/admin-expired-subs-should-be-active.md)]
 

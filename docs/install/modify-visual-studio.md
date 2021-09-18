@@ -1,5 +1,5 @@
 ---
-title: Modificare Visual Studio, componenti, & Language Pack
+title: Modificare Visual Studio carichi di lavoro, componenti, & Language Pack
 titleSuffix: ''
 description: Informazioni dettagliate su come modificare Visual Studio.
 ms.date: 09/14/2021
@@ -19,11 +19,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 692b1aedf5c55d2162a28e96ae9cdbdadd9529e6
-ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
+ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127890649"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127920167"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modificare Visual Studio carichi di lavoro, componenti e Language Pack
 
@@ -49,7 +49,7 @@ Oltre ad aver semplificato la personalizzazione di Visual Studio in base alle at
 
 ## <a name="launch-the-installer-to-modify-your-installation"></a>Avviare il programma di installazione per modificare l'installazione
 
-Per modificare l Visual Studio installazione, è prima di tutto necessario avviare il Programma di installazione di Visual Studio e quindi selezionare un'Visual Studio di installazione da modificare.
+Per modificare l Visual Studio installazione, è prima di tutto necessario avviare il Programma di installazione di Visual Studio e quindi selezionare un'Visual Studio da modificare.
 
 ::: moniker range="vs-2017"
 
@@ -57,14 +57,14 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
      Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
 
-     ![Screenshot che mostra la Programma di installazione di Visual Studio nella Windows 10 menu Start.](media/locate-the-visual-studio-installer.png "Individuare il programma Microsoft Visual Studio installazione")
+     ![Screenshot che mostra la Programma di installazione di Visual Studio nel Windows 10 menu Start.](media/locate-the-visual-studio-installer.png "Individuare il programma di Microsoft Visual Studio di installazione")
 
      >[!TIP]
      >In alcuni computer il programma di installazione di Visual Studio potrebbe trovarsi sotto la lettera **"M"** come **Microsoft Visual Studio: programma di installazione**.<br/><br/> In alternativa, è possibile trovare il programma di installazione di Visual Studio nel percorso seguente: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 1. Aprire il programma di installazione e quindi scegliere **Modifica**.
 
-     ![Screenshot che mostra il pulsante Modifica nel Programma di installazione di Visual Studio.](media/modify-visual-studio.png "Modificare Visual Studio 2017")
+     ![Screenshot che mostra il pulsante Modifica nell'Programma di installazione di Visual Studio.](media/modify-visual-studio.png "Modificare Visual Studio 2017")
 
      > [!IMPORTANT]
      > Se è presente un aggiornamento in sospeso, il pulsante Modifica si trova in una posizione diversa. In questo modo è possibile modificare Visual Studio senza aggiornarlo, se si preferisce. Fare clic su **Altro** e scegliere **Modifica**.
@@ -103,21 +103,21 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
 1. Esistono molti modi per aprire il Programma di installazione di Visual Studio:
 
-   - Nell'Windows menu Start è possibile cercare "installer" e quindi selezionare Programma di installazione di Visual Studio **dai** risultati.
+   - Nell'Windows menu Start è possibile cercare "programma di installazione" e quindi selezionare Programma di installazione di Visual Studio **dai** risultati.
 
      ![Screenshot che mostra il risultato di una menu Start ricerca del Programma di installazione di Visual Studio.](media/vs-2022/vs-installer.png "Cercare il Programma di installazione di Visual Studio")
 
    - Eseguire il Programma di installazione di Visual Studio eseguibile, che si trova in questo percorso:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-   - Se è stato aperto Visual Studio, **selezionare** Strumenti Ottieni strumenti e funzionalità... , che apre il > Programma di installazione di Visual Studio.
+   - Se è stato aperto Visual Studio, **selezionare** Strumenti Ottieni strumenti > **e funzionalità...**, che apre il Programma di installazione di Visual Studio.
 
-     ![Screenshot che mostra il menu Visual Studio strumenti di 2022.](media/vs-2022/vs-tools-menu.png "Visual Studio menu Strumenti di Visual Studio 2022")
+     ![Screenshot che mostra il menu Visual Studio strumenti di 2022.](media/vs-2022/vs-tools-menu.png "Visual Studio strumenti di 2022")
 
    Potrebbe essere richiesto di aggiornare il Programma di installazione di Visual Studio prima di continuare. In questo caso, seguire i prompt.
 
-1. Nel Programma di installazione di Visual Studio cercare l'installazione Visual Studio da modificare e quindi scegliere **il pulsante** Modifica.
+1. Nel Programma di installazione di Visual Studio cercare l'installazione Visual Studio da modificare e quindi scegliere il **pulsante** Modifica.
 
-     ![Screenshot che mostra un elenco Visual Studio installazioni nel Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-modify.png "Scegliere un Visual Studio installazione da modificare")
+     ![Screenshot che mostra un elenco Visual Studio installazioni nel Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-modify.png "Scegliere un'Visual Studio da modificare")
 
 ::: moniker-end
 
@@ -191,7 +191,7 @@ I carichi di lavoro contengono i componenti necessari per il linguaggio di progr
 
 1. Scegliere **Modifica**.
 
-1. Dopo aver installato i carichi di  lavoro o i componenti modificati, scegliere Avvia dalla Programma di installazione di Visual Studio per aprire Visual Studio 2022 Preview.
+1. Dopo aver installato i carichi di  lavoro o i componenti modificati, scegliere Avvia dal Programma di installazione di Visual Studio per aprire Visual Studio 2022 Preview.
 
 ::: moniker-end
 
