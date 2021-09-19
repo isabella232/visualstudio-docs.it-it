@@ -1,25 +1,25 @@
 ---
 title: Come usare le identità connesse nelle sottoscrizioni Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: lank
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
 ms.date: 02/19/2021
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Informazioni su come usare account Microsoft connessi e Azure Active Directory identità
-ms.openlocfilehash: 9625774cbf5338750034f1f288bd2ada0aa9fc33
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 6c666f50fee33d4277b32cc70ea37db5115dcdf4
+ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965771"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "127964685"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Come usare le identità connesse nelle sottoscrizioni Visual Studio connessione
-Se si riceve una sottoscrizione Visual Studio tramite l'azienda o l'istituto di istruzione e si usa l'account Microsoft (MSA) per accedere, l'amministratore delle sottoscrizioni può connettere l'amministratore delle sottoscrizioni all'identità nel Azure Active Directory (Azure AD) dell'organizzazione.  In questo modo verrà modificato il modo in cui si accede ad alcuni dei vantaggi inclusi nella sottoscrizione. 
+Se si riceve una sottoscrizione Visual Studio tramite l'azienda o l'istituto di istruzione e si usa l'account Microsoft (MSA) per l'accesso, l'amministratore delle sottoscrizioni può connettere l'amministratore delle sottoscrizioni all'identità nel Azure Active Directory (Azure AD) dell'organizzazione.  In questo modo verrà modificato il modo in cui si accede ad alcuni dei vantaggi inclusi nella sottoscrizione. 
 
 ## <a name="overview-of-connected-ids"></a>Panoramica degli ID connessi
-Le organizzazioni stanno passando sempre più Azure AD basate su identità per offrire sicurezza e supporto migliorati per la gestione automatica delle sottoscrizioni.  Se la sottoscrizione usa un account microsoft, ad esempio un indirizzo di posta elettronica o un altro indirizzo di posta elettronica personale, l'amministratore può modificare il messaggio di posta elettronica di accesso con @outlook.com l'Azure AD identità.  Ciò modificherà la modalità di accesso al portale per i sottoscrittori all'indirizzo , ma potrebbe non cambiare il modo in cui https://my.visualstudio.com si accede a tutti i vantaggi.  
+Le organizzazioni stanno passando sempre più Azure AD basate su identità per offrire sicurezza e supporto migliorati per la gestione automatizzata delle sottoscrizioni.  Se la sottoscrizione usa un account microsoft, ad esempio un indirizzo di posta elettronica o un altro indirizzo di posta elettronica personale, l'amministratore può modificare l'indirizzo di posta elettronica di accesso con @outlook.com l'Azure AD identità.  Ciò modificherà la modalità di accesso al portale per i sottoscrittori all'indirizzo , ma potrebbe non cambiare il modo in cui https://my.visualstudio.com si accede a tutti i vantaggi.  
 
 Se l'amministratore connette le identità dell'amministratore di sistema e Azure AD, si riceverà un messaggio di posta elettronica che informa di iniziare ad accedere alla sottoscrizione Visual Studio con l'identità Azure AD anziché con l'account del servizio. 
 
@@ -52,4 +52,4 @@ A: L'implementazione di identità connesse è semplice.  Vedi [questo articolo](
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo che l'amministratore ha connesso gli account Azure AD e MSA, è consigliabile verificare che sia possibile accedere correttamente al portale delle sottoscrizioni e accedere ai vantaggi come Azure DevOps, Visual Studio e il credito individuale di Azure DevTest. [](https://my.visualstudio.com?wt.mc_id=o~msft~docs)
+Dopo che l'amministratore ha connesso gli account Azure AD e MSA, è [](https://my.visualstudio.com?wt.mc_id=o~msft~docs) consigliabile verificare che sia possibile accedere correttamente al portale delle sottoscrizioni e accedere ai vantaggi come Azure DevOps, Visual Studio e il credito individuale di Azure DevTest.

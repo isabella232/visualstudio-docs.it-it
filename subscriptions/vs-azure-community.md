@@ -1,18 +1,18 @@
 ---
 title: Vantaggio Supporto della community di Azure nella sottoscrizione di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni sul vantaggio Supporto della community di Azure in specifiche sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 43633e20bbf10988092a2d98d7d0a5ddd9b08601
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 8b22e9c396e48469de0446f6b11481f0a5bca78e
+ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965668"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "127964721"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum Supporto della community di Azure nelle sottoscrizioni di Visual Studio
 Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.

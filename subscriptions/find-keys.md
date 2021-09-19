@@ -1,18 +1,18 @@
 ---
 title: Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 11478550726aafafd5d2fa2e999e041c76906790
+ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126625092"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "127964712"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
 Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per altre informazioni sull'attivazione di un prodotto con una chiave, versioni di vendita al dettaglio e contratti multilicenza dei codici e limiti giornalieri per le richieste di codici Product Key, vedere la panoramica dei codici [Product Key.](product-keys.md)
@@ -37,7 +37,7 @@ Sono disponibili vari tipi di chiave, a seconda del prodotto.
 |    Codice per attivazione statica    |    I codici per attivazione statica vengono offerti per i prodotti che non richiedono attivazione e possono essere usati per un numero qualsiasi di installazioni.                                                                                                                  |
 |    Codice personalizzato                 |    I codici personalizzati offrono azioni o informazioni speciali per attivare o installare il prodotto.                                                                                                                                                                |
 |    VA 1.0                     |    Più chiavi di attivazione, simili a un codice MAK.                                                                                                                                                                                                 |
-|    Codice OEM                    |    Chiavi originali del produttore dell'apparecchiatura che consentono più attivazioni.                                                                                                                                                                       |
+|    Codice OEM                    |    Chiavi original Equipment Manufacturer che consentono più attivazioni.                                                                                                                                                                       |
 |    Codice per attivazione singola DreamSpark    |    Le chiavi di vendita al dettaglio per DreamSpark consentono un'attivazione. I codici DreamSpark per attivazione singola vengono emessi in batch e sono principalmente destinati agli studenti.                                                                                     |
 |    Codice per laboratorio DreamSpark         |    Il lab usa chiavi per i programmi DreamSpark che consentono più attivazioni. I codici destinati ai laboratori per DreamSpark sono destinati a un uso all'interno dei laboratori informatici delle università.                                                                                       |
 |    Codice MAK per DreamSpark         |    Chiavi MAK per i clienti del programma DreamSpark.                                                                                                                                                                                                  |
@@ -64,7 +64,7 @@ Come si può osservare, sono elencate diverse versioni.  Un codice Product Key �
 > [!IMPORTANT]
 > Se la sottoscrizione scade, non sarà più possibile richiedere nuovi codici o esportare i codici richiesti.
 
-Per esportare le chiavi, selezionare il **collegamento Esporta** tutte le chiavi all'estrema destra della pagina Codici Product Key.  Verrà .xml un file KeysExport.xml ed è possibile scegliere di aprirlo o salvarlo.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.
+Per esportare le chiavi, selezionare il **collegamento Esporta** tutte le chiavi all'estrema destra della pagina Codici Product Key.  Verrà .xml un file KeysExport.xml ed è possibile scegliere di aprire o salvare il file.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.
 
 ## <a name="resources"></a>Risorse
 - [Visual Studio sottoscrizioni](https://aka.ms/vssubscriberhelp)
