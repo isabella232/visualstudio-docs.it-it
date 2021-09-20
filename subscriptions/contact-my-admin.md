@@ -1,21 +1,21 @@
 ---
-title: Contattare l'amministratore della sottoscrizione nel portale per i sottoscrittori | Microsoft Docs
+title: Contattare l'amministratore della sottoscrizione nel portale sottoscrittore | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 05/18/2021
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per assistenza per domande o problemi.
-ms.openlocfilehash: 343cf2eede966e83390c6f2689d0db840507f827
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: acfd0a68cc9bbdf8d19c352747d8607bf5e6b6d6
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965508"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "128002334"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
-Se la sottoscrizione Visual Studio viene fornita dall'istituto di istruzione o dall'istituto di istruzione, è probabile che sia stata assegnata dall'amministratore di una sottoscrizione o da un "amministratore".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
+Se la sottoscrizione Visual Studio viene fornita dall'istituto di istruzione o dall'istituto di istruzione, è probabile che sia stata assegnata all'utente da un amministratore delle sottoscrizioni o da un "amministratore".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
 
 Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe non conoscere l'amministratore e potrebbe quindi essere difficile capire come ottenere assistenza.  È stata aggiunta una nuova funzionalità al portale dei sottoscrittori per contattare in modo più semplice l'amministratore.   
 

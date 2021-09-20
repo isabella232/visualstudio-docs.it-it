@@ -1,18 +1,18 @@
 ---
 title: Demo Internet tramite Servizi terminal nelle sottoscrizioni Visual Studio internet| Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni sull'uso di codici Product Key per supportare dimostrazioni via Internet tramite Servizi terminal e abilitare l'accesso tramite Servizi Desktop remoto
-ms.openlocfilehash: c074dfe12ed7c1fea5ad60f7e0c8019e133a6d1b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 0391de091cd3b836fbe38afce903b52584da4b5a
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126710434"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "128002311"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Dimostrazioni via Internet tramite Servizi terminal
 Con una sottoscrizione di Visual Studio è possibile offrire agli utenti finali l'accesso a dimostrazioni via Internet dei programmi tramite Servizi terminal (Windows Server 2003 o Windows Server 2008) o Servizi Desktop remoto (Windows Server 2008 R2 e versioni successive). In questo modo fino a 200 utenti anonimi potranno accedere contemporaneamente alla dimostrazione. La dimostrazione non deve contenere dati di produzione. I sottoscrittori di Visual Studio saranno autorizzati a illustrare le proprie applicazioni agli utenti finali. Questa dimostrazione via Internet mediante Servizi terminal (TS) e Servizi Desktop remoto (RDS) rappresenta l'unico scenario in cui gli utenti finali sprovvisti di sottoscrizione di Visual Studio potranno interagire con l'applicazione demo, mentre il software è concesso in licenza tramite sottoscrizione di Visual Studio.
@@ -36,7 +36,7 @@ Gli utenti finali possono connettersi per accedere alle applicazioni tramite Ser
 - I codici Product Key per abilitare le connessioni utente devono essere ottenuti da un sottoscrittore di Visual Studio.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vssubscriberhelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Documentazione di Windows Server](/windows-server/)

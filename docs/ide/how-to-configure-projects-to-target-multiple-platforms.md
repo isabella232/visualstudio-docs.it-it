@@ -2,7 +2,7 @@
 title: Configurare progetti per più piattaforme di destinazione
 description: Informazioni su Visual Studio modo che una soluzione sia in grado di avere come destinazione diverse architetture della CPU, o piattaforme, contemporaneamente.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 09/13/2021
 ms.technology: vs-ide-compile
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 151097f9482edb69eb6486e31d1eb9a5cd0740e03586af656ebc1bb01cb83937
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7b9afd184ac7a0859e8a4a9c68a17ba2737e8a71
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387532"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "128002351"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedura: Configurare progetti per più piattaforme di destinazione
 
@@ -68,3 +68,4 @@ Poiché è possibile modificare le impostazioni in base alla combinazione di con
 - [Procedura: Creare e modificare configurazioni](../ide/how-to-create-and-edit-configurations.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Procedura: Compilare più configurazioni contemporaneamente](how-to-build-multiple-configurations-simultaneously.md)

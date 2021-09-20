@@ -1,18 +1,18 @@
 ---
-title: Gestire le licenze sovra allocate in Visual Studio sottoscrizioni | Microsoft Docs
+title: Gestire le licenze sovraallocato in Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 05/18/2021
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono risolvere le sottoscrizioni sovra allocate
-ms.openlocfilehash: 533ce71e8795e89bcb21fd437da6bea91db291f4
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: bb545d6bef8f50e1548e31ad6db73a84e6804f53
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126710437"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "128002320"
 ---
 # <a name="over-allocated-subscriptions"></a>Sottoscrizioni sovraallocato
 Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questa operazione è detta "sovraallocazione".  
@@ -33,7 +33,7 @@ Si noti che la visualizzazione usa una barra con hash per indicare sottoscrizion
 ## <a name="resolve-over-allocated-subscriptions"></a>Risolvere le sottoscrizioni sovraallocato
 Esistono diversi modi per risolvere le sovraallocazione:
 - Contattare il rivenditore per acquistare sottoscrizioni aggiuntive.
-- Attendere fino al periodo di completamento annuale e pagare le sottoscrizioni sovra allocate a quel punto. 
+- Attendere il periodo di completamento annuale e pagare le sottoscrizioni sovra allocate a quel punto. 
 - Modificare alcune assegnazioni di sottoscrizioni.  Questa operazione non eliminerà la necessità di pagare in base al periodo di true-up annuale, in quanto il true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento durante l'anno.
 
 ## <a name="billing-and-true-up"></a>Fatturazione e true-up

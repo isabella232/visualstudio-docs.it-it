@@ -1,18 +1,18 @@
 ---
 title: Acquisto di sottoscrizioni cloud di Visual Studio per i CSP
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
-ms.openlocfilehash: 09c905d113920a0bb55aed8851d3fb62c92a39bf
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 237cd3673ad558df1fc28be205189b27874496b0
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126709978"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "128002306"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
@@ -37,7 +37,7 @@ Chiunque disponga dell'[accesso come Proprietario o Collaboratore](https://na01.
 0. Scegliere **Gestione dei servizi**.
 0. Scegliere **Visual Studio Marketplace**.
 0. Assicurarsi che sia visualizzato il nome del cliente nell'angolo in alto a destra.
-0. Scegliere **Sottoscrizioni.**
+0. Scegliere **Sottoscrizioni**.
 0. Scegliere Enterprise o Professional per Visual Studio.
 0. Scegliere **Acquista**.
 0. Scegliere la sottoscrizione di Azure per la fatturazione dell'acquisto.
@@ -107,7 +107,7 @@ R: no, i prezzi per le sottoscrizioni di Visual Studio sono fissi. Lo stesso pre
  R: attualmente non è possibile. I clienti possono sfruttare i [Prezzi di Azure per sviluppo/test](https://azure.microsoft.com/pricing/dev-test/), ma non è disponibile alcuna offerta specifica per i CSP.
 
 ## <a name="resources"></a>Risorse
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere Supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)
@@ -116,4 +116,4 @@ R: no, i prezzi per le sottoscrizioni di Visual Studio sono fissi. Lo stesso pre
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per le risposte alle domande frequenti sulla fatturazione, vedere le domande frequenti sulla fatturazione nel [cloud.](vscloud-billing-faq.yml)
+Vedere le domande [frequenti sulla fatturazione cloud](vscloud-billing-faq.yml) per risposte alle domande di fatturazione comuni.
