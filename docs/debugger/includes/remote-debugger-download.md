@@ -13,7 +13,7 @@ ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/20/2021
-ms.locfileid: "128004542"
+ms.locfileid: "128006591"
 ---
 Nel dispositivo remoto o nel server in cui si vuole eseguire il debug, anziché nel computer Visual Studio, scaricare e installare la versione corretta degli strumenti remoti dai collegamenti nella tabella seguente.
 
