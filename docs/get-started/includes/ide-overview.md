@@ -7,13 +7,13 @@ ms.author: meghaanand
 manager: jmartens
 ms.topic: include
 ms.openlocfilehash: d98812bdba2807038d23f43d07ea48f6d3d43bc0
-ms.sourcegitcommit: 559c662b2d60048300b76ea6ed3defaa2a259492
+ms.sourcegitcommit: da19ed1e48259b219c61c4cb9e98b006004a5766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127985409"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "128047755"
 ---
-Un *ambiente di sviluppo integrato* (IDE) è un programma ricco di funzionalità che supporta molti aspetti dello sviluppo software. L Visual Studio IDE è un'area di avvio creative che è possibile usare per modificare, eseguire il debug e compilare il codice e quindi pubblicare un'app. Oltre all'editor e al debugger standard forniti dalla maggior parte degli elementi ID, Visual Studio include compilatori, strumenti di completamento del codice, finestre di progettazione grafica e molte altre funzionalità per migliorare il processo di sviluppo software.
+Un *ambiente di sviluppo integrato* (IDE) è un programma ricco di funzionalità che supporta molti aspetti dello sviluppo software. L Visual Studio IDE è un'area di avvio creative che è possibile usare per modificare, eseguire il debug e compilare il codice e quindi pubblicare un'app. Oltre all'editor e al debugger standard forniti dalla maggior parte degli elementi ID, Visual Studio include compilatori, strumenti di completamento del codice, finestre di progettazione grafiche e molte altre funzionalità per migliorare il processo di sviluppo software.
 
 ::: moniker range="vs-2017"
 
@@ -29,7 +29,7 @@ Un *ambiente di sviluppo integrato* (IDE) è un programma ricco di funzionalità
 
 ::: moniker range=">=vs-2022"
 
-[![Screenshot che mostra l Visual Studio IDE di 2022, con callout che indicano la posizione delle funzionalità principali.](../media/vs-2022/ide-overview.png)](../media/vs-2022/ide-overview.png#lightbox)
+[![Screenshot che mostra l Visual Studio IDE 2022, con callout che indicano la posizione delle funzionalità principali.](../media/vs-2022/ide-overview.png)](../media/vs-2022/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -113,7 +113,7 @@ Alcune delle funzionalità più comuni di Visual Studio che migliorano la produt
 
 - [Ricerca di Visual Studio](../../ide/visual-studio-search.md)
 
-   Visual Studio menu, opzioni e proprietà possono sembrare a volte difficili da usare. Visual Studio ricerca, o **CTRL** Q, è un ottimo modo per trovare rapidamente le funzionalità IDE e il codice in + un'unica posizione.
+   Visual Studio, i menu, le opzioni e le proprietà possono sembrare a volte difficili da usare. Visual Studio ricerca, o **CTRL** Q, è un ottimo modo per trovare rapidamente le funzionalità IDE e il codice in + un'unica posizione.
 
    ::: moniker range="vs-2017"
 
@@ -213,7 +213,7 @@ Per iniziare, [scaricare Visual Studio](https://visualstudio.microsoft.com/downl
 
 ::: moniker-end
 
-Quando si apre Visual Studio per la prima [](../../ide/signing-in-to-visual-studio.md) volta, è possibile accedere usando il proprio account account Microsoft o aziendale o dell'istituto di istruzione.
+Quando si apre Visual Studio per la prima [](../../ide/signing-in-to-visual-studio.md) volta, è possibile accedere usando il account Microsoft o l'account aziendale o dell'istituto di istruzione.
 
 ## <a name="create-a-program"></a>Creare un programma
 
@@ -238,9 +238,9 @@ Approfondire e creare un programma semplice.
 
    Visual Studio crea il progetto. È una semplice applicazione "Hello World" che chiama il metodo <xref:System.Console.WriteLine?displayProperty=nameWithType> per visualizzare il valore letterale stringa "Hello World!" nella finestra della console (output del programma).
 
-   A breve verrà visualizzata una schermata simile alla seguente:
+   A breve, verrà visualizzata una schermata simile alla seguente:
 
-   ![Screenshot che mostra l'IDE Visual Studio.](../media/overview-ide-console-app.png)
+   ![Screenshot che mostra l'VISUAL STUDIO IDE.](../media/overview-ide-console-app.png)
 
    Il codice C# per l'applicazione viene visualizzato nella finestra dell'editor che occupa la maggior parte dello spazio. Si noti che il testo viene colorato automaticamente per indicare le diverse parti del codice, ad esempio parole chiave e tipi. Le piccole linee tratteggiate verticali nel codice indicano inoltre le parentesi graffe corrispondenti e i numeri di riga facilitano l'individuazione del codice in un secondo momento. È possibile scegliere i piccoli segni meno racchiusi in un riquadro per comprimere o espandere blocchi di codice. Questa funzionalità per la strutturazione del codice consente di nascondere il codice non necessario, migliorando la leggibilità del contenuto visualizzato sullo schermo. I file del progetto sono elencati sul lato destro in una finestra denominata **Esplora soluzioni**.
 
@@ -254,11 +254,11 @@ Approfondire e creare un programma semplice.
 
    Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-   ![Screenshot della finestra cmd.exe console con l'output "Hello World!". e "Premere un tasto qualsiasi per continuare".](../media/overview-console-window.png)
+   ![Screenshot della finestra cmd.exe console con l'output 'Hello World!' e "Premere un tasto qualsiasi per continuare".](../media/overview-console-window.png)
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
-1. Aggiungere altro codice all'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
+1. Aggiungere un altro codice all'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -273,7 +273,7 @@ Approfondire e creare un programma semplice.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire di nuovo l'app selezionando **Debug** > **Avvia senza eseguire** debug o premendo **CTRL** + **F5.**
+1. Eseguire di nuovo l'app selezionando **Avvia debug** > **senza eseguire** debug o premendo **CTRL** + **F5.**
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -289,9 +289,9 @@ Approfondire e creare un programma semplice.
 
 1. Aprire Visual Studio.
 
-   Viene visualizzata la finestra iniziale con le opzioni per la clonazione di un repo, l'apertura di un progetto recente o la creazione di un nuovo progetto.
+   Viene visualizzata la finestra iniziale con le opzioni per clonarne un repo, aprire un progetto recente o crearne uno nuovo.
 
-1. Scegliere **Crea un nuovo progetto.**
+1. Scegliere **Crea un nuovo progetto**.
 
     :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019.":::
 
@@ -303,19 +303,19 @@ Approfondire e creare un programma semplice.
 
     :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019, in cui si seleziona il modello desiderato.":::
 
-1. Nella **finestra** Configura il nuovo progetto immettere **HelloWorld** nella casella **nome Project,** modificare facoltativamente il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ) e quindi fare clic `C:\Users\<name>\source\repos` su **Avanti.**
+1. Nella finestra **Configura** il nuovo progetto immettere **HelloWorld** nella casella **nome Project , modificare facoltativamente** il percorso della directory per i file di progetto (le impostazioni locali predefinite sono ), quindi fare clic `C:\Users\<name>\source\repos` su **Avanti**.
 
     :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Screenshot della finestra &quot;Configura il nuovo progetto&quot; in Visual Studio 2019, in cui si immette il nome del progetto.":::
 
-1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi fare clic su **Crea.**
+1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi fare clic su **Crea**.
 
     :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Screenshot della finestra &quot;Informazioni aggiuntive&quot; in Visual Studio 2019, in cui si seleziona la versione di .NET Core Framework desiderata.":::
 
    Visual Studio crea il progetto. È una semplice applicazione "Hello World" che chiama il metodo <xref:System.Console.WriteLine?displayProperty=nameWithType> per visualizzare il valore letterale stringa "Hello World!" nella finestra della console (output del programma).
 
-   A breve verrà visualizzata una schermata simile alla seguente:
+   A breve, verrà visualizzata una schermata simile alla seguente:
 
-   ![Screenshot che mostra l'IDE Visual Studio.](../media/vs-2019/overview-ide-console-app.png)
+   ![Screenshot che mostra l'VISUAL STUDIO IDE.](../media/vs-2019/overview-ide-console-app.png)
 
    Il codice C# per l'applicazione viene visualizzato nella finestra dell'editor che occupa la maggior parte dello spazio. Si noti che il testo viene colorato automaticamente per indicare le diverse parti del codice, ad esempio parole chiave e tipi. Le piccole linee tratteggiate verticali nel codice indicano inoltre le parentesi graffe corrispondenti e i numeri di riga facilitano l'individuazione del codice in un secondo momento. È possibile scegliere i piccoli segni meno racchiusi in un riquadro per comprimere o espandere blocchi di codice. Questa funzionalità per la strutturazione del codice consente di nascondere il codice non necessario, migliorando la leggibilità del contenuto visualizzato sullo schermo. I file del progetto sono elencati sul lato destro in una finestra denominata **Esplora soluzioni**.
 
@@ -325,15 +325,15 @@ Approfondire e creare un programma semplice.
 
 1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL** + **F5.**
 
-   ![Screenshot che mostra la voce > menu Avvia senza eseguire debug.](../media/overview-start-without-debugging.png)
+   ![Screenshot che mostra la voce di menu Debug > menu Avvia senza eseguire debug.](../media/overview-start-without-debugging.png)
 
    Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-   ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra l'output "Hello World!". e "Premere un tasto qualsiasi per chiudere questa finestra".](../media/vs-2019/overview-console-window.png)
+   ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra l'output 'Hello World!' e "Premere un tasto qualsiasi per chiudere questa finestra".](../media/vs-2019/overview-console-window.png)
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
-1. Aggiungere altro codice all'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
+1. Aggiungere un altro codice all'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -348,66 +348,66 @@ Approfondire e creare un programma semplice.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire di nuovo l'app selezionando **Debug** > **Avvia senza eseguire** debug o premendo **CTRL** + **F5.**
+1. Eseguire di nuovo l'app selezionando **Avvia debug** > **senza eseguire** debug o premendo **CTRL** + **F5.**
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
 1. Immettere il nome nella finestra della console e premere **INVIO**.
 
-   ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello!'.](../media/vs-2019/overview-console-input.png)
+   ![Screenshot della finestra Microsoft Visual Studio Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette!'.](../media/vs-2019/overview-console-input.png)
 
 1. Premere un tasto qualsiasi per chiudere la finestra della console e arrestare l'esecuzione del programma.
 
 ::: moniker-end
 ::: moniker range=">=vs-2022"
 
-1. Avviare Visual Studio. Viene visualizzata la finestra iniziale con le opzioni per la clonazione di un repo, l'apertura di un progetto recente o la creazione di un nuovo progetto.
+1. Avviare Visual Studio. Viene visualizzata la finestra iniziale con le opzioni per clonarne un repo, aprire un progetto recente o crearne uno nuovo.
 
-1. Scegliere **Crea un nuovo progetto.**
+1. Scegliere **Crea un nuovo progetto**.
 
    ![Screenshot del menu Visual Studio start con l'opzione Crea un nuovo progetto selezionata.](../media/vs-2022/create-new-project.png)
 
    Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file e le impostazioni di base necessari per un determinato tipo di progetto.
 
-1. Per trovare un modello, è possibile digitare o immettere parole chiave nella casella di ricerca. L'elenco dei modelli disponibili filtra in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati  del modello scegliendo **C#** dall'elenco a discesa Tutti i **linguaggi,** Windows dall'elenco Tutte le piattaforme e **Console** dall'elenco Tutti i tipi **di** progetto. 
+1. Per trovare un modello, è possibile digitare o immettere parole chiave nella casella di ricerca. Elenco di filtri di modelli disponibili in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati  del modello scegliendo **C#** dall'elenco a discesa Tutti i linguaggi, **Windows** dall'elenco Tutte le piattaforme e **Console** dall'elenco Tutti i tipi **di** progetto. 
 
     Selezionare il **modello Applicazione** console e quindi selezionare **Avanti.**
 
-   ![Screenshot della finestra Crea un nuovo progetto con applicazione console selezionata.](../media/vs-2022/start-window-create-new-project.png)
+   ![Screenshot della finestra Crea un nuovo progetto con l'opzione Applicazione console selezionata.](../media/vs-2022/start-window-create-new-project.png)
 
-1. Nella finestra **Configura il nuovo progetto** immettere **HelloWorld** nella casella **Project nome.** Facoltativamente, modificare il percorso della directory del progetto dal percorso predefinito C: Repository di *\\ origine \\ \<name> \\ \\ utenti* e quindi selezionare **Avanti.**
+1. Nella finestra **Configura il nuovo progetto** immettere **HelloWorld** nella casella Project **nome.** Facoltativamente, modificare il percorso della directory del progetto dal percorso predefinito C: Repository di *\\ \\ \<name> \\ origine \\* utenti e quindi selezionare **Avanti.**
 
    ![Screenshot della finestra Configura il nuovo progetto con il nome del progetto HelloWorld immesso.](../media/vs-2022/configure-new-project.png)
 
-1. Nella finestra **Informazioni aggiuntive** verificare che **.NET 6.0** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi selezionare **Crea.**
+1. Nella finestra **Informazioni aggiuntive** verificare che **.NET 6.0** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi selezionare **Crea**.
 
    ![Screenshot della finestra Informazioni aggiuntive con .NET 6.0 selezionato.](../media/vs-2022/create-project-additional-info.png)
 
    Visual Studio crea il progetto. Il programma è una semplice applicazione "Hello World" che chiama il metodo per <xref:System.Console.WriteLine?displayProperty=nameWithType> visualizzare la stringa **Hello, World!** in una finestra della console.
 
-   I file di progetto vengono visualizzati sul lato destro dell'IDE Visual Studio, in una finestra denominata Esplora soluzioni **.** Nella finestra **Esplora soluzioni** selezionare il file **Program.cs.** Il codice C# per l'app viene aperto nella finestra centrale dell'editor, che occupa la maggior parte dello spazio.
+   I file di progetto vengono visualizzati sul lato destro dell'IDE Visual Studio, in una finestra denominata **Esplora soluzioni**. Nella finestra **Esplora soluzioni** selezionare il file **Program.cs.** Il codice C# per l'app viene aperto nella finestra centrale dell'editor, che occupa la maggior parte dello spazio.
 
-   ![Screenshot che mostra l'IDE Visual Studio con il codice Program.cs nell'editor.](../media/vs-2022/overview-ide-console-app.png)
+   ![Screenshot che mostra l Visual Studio IDE con il codice Program.cs nell'editor.](../media/vs-2022/overview-ide-console-app.png)
 
    Il codice viene colorato automaticamente per indicare parti diverse, ad esempio parole chiave e tipi. I numeri di riga consentono di individuare il codice.
 
-   Piccole linee tratteggiate verticali nel codice indicano quali parentesi graffe corrispondono tra loro. È anche possibile scegliere piccoli segni meno o più boxed per comprimere o espandere blocchi di codice. Questa funzionalità di struttura del codice consente di nascondere il codice che non è necessario visualizzare, riducendo al minimo il disordine sullo schermo.
+   Piccole linee tratteggiate verticali nel codice indicano quali parentesi graffe corrispondono tra loro. È anche possibile scegliere piccoli segni meno o più boxed per comprimere o espandere blocchi di codice. Questa funzionalità di struttura del codice consente di nascondere il codice che non è necessario visualizzare, riducendo al minimo i disordini sullo schermo.
 
    ![Screenshot che mostra l'IDE Visual Studio con caselle rosse.](../media/vs-2022/overview-ide-console-app-red-boxes.png)
 
    Sono disponibili molti altri menu e finestre degli strumenti.
 
-1. Avviare l'app scegliendo **Debug** Avvia senza eseguire  >   debug dal menu Visual Studio menu in alto. È anche possibile premere **CTRL** + **F5.**
+1. Avviare l'app scegliendo **Debug** Avvia senza eseguire debug dal menu Visual Studio  >   menu superiore. È anche possibile premere **CTRL** + **F5.**
 
-   ![Screenshot che mostra la voce > di menu Avvia senza eseguire debug.](../media/vs-2022/overview-start-without-debugging.png)
+   ![Screenshot che mostra la voce di menu Debug > menu Avvia senza eseguire debug.](../media/vs-2022/overview-start-without-debugging.png)
 
    Visual Studio compila l'app e viene visualizzata una finestra della console con il messaggio **Hello, World!**. Ed ecco un'app in esecuzione.
 
-   ![Screenshot della finestra Console di debug che mostra l'output Hello, World! e Premere un tasto qualsiasi per chiudere questa finestra.](../media/vs-2022/overview-console-window.png)
+   ![Screenshot della finestra Console di debug che mostra l'output Hello, World! e premere un tasto qualsiasi per chiudere questa finestra.](../media/vs-2022/overview-console-window.png)
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
-1. Aggiungere altro codice all'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
+1. Aggiungere un altro codice all'app. Aggiungere il codice C# seguente prima della riga `Console.WriteLine("Hello World!");`:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -422,13 +422,13 @@ Approfondire e creare un programma semplice.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Eseguire di nuovo l'app selezionando **Debug** > **Avvia senza eseguire** debug o premendo **CTRL** + **F5.**
+1. Eseguire di nuovo l'app selezionando **Avvia debug** senza > **eseguire debug** o premendo **CTRL** + **F5.**
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
 1. Digitare il nome nella finestra della console e premere **INVIO.**
 
-   ![Screenshot della finestra Console di debug che mostra la richiesta di un nome, l'input e l'output Hello HelloTte!.](../media/vs-2022/overview-console-input.png)
+   ![Screenshot della finestra Console di debug che mostra la richiesta di un nome, l'input e l'output Hello Georgette!.](../media/vs-2022/overview-console-input.png)
 
 1. Premere un tasto qualsiasi per chiudere la finestra della console e arrestare l'esecuzione del programma.
 
@@ -438,11 +438,11 @@ Approfondire e creare un programma semplice.
 
 Di seguito sono descritti due modi in cui è possibile usare il [refactoring](../../ide/refactoring-in-visual-studio.md) e [IntelliSense](../../ide/using-intellisense.md) per creare codice in modo più efficace.
 
-Rinominare prima di tutto la `name` variabile:
+Per prima cosa, rinominare la `name` variabile:
 
-1. Fare doppio clic sulla `name` variabile e digitare il nuovo nome per la variabile, *nomeutente*.
+1. Fare doppio clic sulla `name` variabile e digitare il nuovo nome per la variabile, *username*.
 
-   Viene visualizzata una casella intorno alla variabile e sul margine viene visualizzata una lampadina.
+   Intorno alla variabile viene visualizzata una casella e sul margine viene visualizzata una lampadina.
 
 1. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'**.
 
@@ -485,11 +485,11 @@ Rinominare prima di tutto la `name` variabile:
    ```
 
    > [!TIP]
-   > <xref:System.Console.Write%2A?displayProperty=nameWithType> è diverso <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> da in perché non aggiunge un terminatore di riga dopo la stampa. Ciò significa che la parte successiva del testo che viene inviata all'output verrà stampata sulla stessa riga. È possibile passare il mouse su ognuno di questi metodi nel codice per visualizzarne le descrizioni.
+   > <xref:System.Console.Write%2A?displayProperty=nameWithType> è diverso da in perché non aggiunge un terminatore di <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> riga dopo la stampa. Ciò significa che la parte successiva del testo che viene inviata all'output verrà stampata sulla stessa riga. È possibile passare il mouse su ognuno di questi metodi nel codice per visualizzarne le descrizioni.
 
-1. Usare quindi di nuovo il refactoring per rendere il codice un po' più conciso. Selezionare la variabile `now` nella riga `DateTime now = DateTime.Now;` . Sul margine della riga viene visualizzata un'icona a forma di cacciavite.
+1. Usare quindi di nuovo il refactoring per rendere il codice un po' più conciso. Selezionare la variabile `now` nella riga `DateTime now = DateTime.Now;` . Nel margine della riga viene visualizzata un'icona a forma di cacciavite.
 
-1. Selezionare l'icona a forma di cacciavite per visualizzare i suggerimenti disponibili Visual Studio. In questo caso viene illustrato il refactoring delle variabili temporanee [inline](../../ide/reference/inline-temporary-variable.md) per rimuovere una riga di codice senza modificare il comportamento complessivo del codice.
+1. Selezionare l'icona del cacciavite per visualizzare i suggerimenti disponibili Visual Studio. In questo caso viene illustrato il refactoring delle variabili temporanee [inline](../../ide/reference/inline-temporary-variable.md) per rimuovere una riga di codice senza modificare il comportamento complessivo del codice.
 
    ::: moniker range="<=vs-2019"
    ![Screenshot che mostra il suggerimento di variabile temporanea inline in Visual Studio.](../media/inline-temporary-variable-refactoring.png)
@@ -503,21 +503,21 @@ Rinominare prima di tutto la `name` variabile:
 1. Eseguire di nuovo il programma premendo **CTRL** + **F5.** L'output è simile al seguente:
 
    ::: moniker range="<=vs-2019"
-   ![Screenshot della finestra Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
+   ![Screenshot della finestra Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
    ::: moniker-end
    ::: moniker range=">=vs-2022"
-   ![Screenshot della finestra Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Hello Hello! Giorno dell'anno: 244'.](../media/vs-2022/overview-console-final.png)
+   ![Screenshot della finestra Console di debug che mostra la richiesta di un nome, l'input e l'output 'Hello Georgette! Giorno dell'anno: 244'.](../media/vs-2022/overview-console-final.png)
    ::: moniker-end
 
 ## <a name="debug-code&quot;></a>Debug del codice
 
-Quando si scrive codice, è necessario eseguirlo e testarlo per verificare la ricerca di bug. Il sistema di debug di Visual Studio consente di esaminare il codice un'istruzione alla volta e controllare le variabili man mano. È possibile impostare punti *di interruzione* che arrestino l'esecuzione del codice in una determinata riga e osservare come cambia il valore della variabile durante l'esecuzione del codice.
+Quando si scrive codice, è necessario eseguirlo e testarlo per verificare la ricerca di bug. Il sistema di debug di Visual Studio consente di esaminare il codice un'istruzione alla volta e controllare le variabili man mano. È possibile impostare *punti di interruzione* che interrompino l'esecuzione del codice in una determinata riga e osservare come cambia il valore della variabile durante l'esecuzione del codice.
 
-Impostare un punto di interruzione per visualizzare il valore `username` della variabile durante l'esecuzione del programma.
+Impostare un punto di interruzione per visualizzare il valore della `username` variabile mentre il programma è in esecuzione.
 
-1. Impostare un punto di interruzione sulla riga di codice facendo clic sul margine all'estrema sinistra, o barra `Console.WriteLine($&quot;\nHello {username}!");` di margine, accanto alla riga. È anche possibile selezionare la riga di codice e quindi premere **F9.**
+1. Impostare un punto di interruzione sulla riga di codice facendo clic sul margine all'estrema sinistra, o barra `Console.WriteLine($&quot;\nHello {username}!");` verticale, accanto alla riga. È anche possibile selezionare la riga di codice e quindi premere **F9.**
 
-   Nella barra di margine viene visualizzato un cerchio rosso e la linea è evidenziata.
+   Nella barra di selezione viene visualizzato un cerchio rosso e la linea è evidenziata.
 
    ::: moniker range="<=vs-2019"
    ![Screenshot che mostra un punto di interruzione in una riga di codice in Visual Studio.](../media/breakpoint.png)
@@ -528,11 +528,11 @@ Impostare un punto di interruzione per visualizzare il valore `username` della v
 
 1. Avviare il debug selezionando **Debug**  >  **Avvia debug** o premendo **F5.**
 
-1. Quando viene visualizzata la finestra della console e viene chiesto di specificare il proprio nome, immettere il proprio nome.
+1. Quando viene visualizzata la finestra della console e viene chiesto il proprio nome, immettere il proprio nome.
 
-   Lo stato attivo torna all'editor Visual Studio codice e la riga di codice con il punto di interruzione è evidenziata in giallo. L'evidenziazione gialla indica che questa riga di codice verrà eseguita successivamente. Il punto di interruzione consente all'app di sospendere l'esecuzione in questa riga.
+   Lo stato attivo torna all'editor Visual Studio codice e la riga di codice con il punto di interruzione è evidenziata in giallo. L'evidenziazione gialla indica che questa riga di codice verrà eseguita successivamente. Il punto di interruzione rende l'app sospesa l'esecuzione in questa riga.
 
-1. Passare il mouse sulla variabile `username` per impostarne il valore. È anche possibile fare clic con il pulsante destro del mouse su e scegliere Aggiungi espressioni di controllo per aggiungere la variabile alla finestra Espressioni di controllo, in cui è anche possibile `username` visualizzarne il  valore. 
+1. Passare il mouse sulla variabile `username` per impostarne il valore. È anche possibile fare clic con il pulsante destro del mouse e scegliere Aggiungi espressioni di controllo per aggiungere la variabile alla finestra Espressioni di controllo, in cui è anche possibile `username` visualizzarne il  valore. 
 
    ::: moniker range="<=vs-2019"
    ![Screenshot che mostra un valore di variabile durante il debug in Visual Studio.](../media/debugging-variable-value.png)
@@ -543,32 +543,32 @@ Impostare un punto di interruzione per visualizzare il valore `username` della v
 
 1. Premere **di nuovo F5** per completare l'esecuzione dell'app.
 
-Per altre informazioni sul debug in Visual Studio, vedere la presentazione [delle funzionalità del debugger.](../../debugger/debugger-feature-tour.md)
+Per altre informazioni sul debug in Visual Studio, vedere la presentazione [delle funzionalità del debugger](../../debugger/debugger-feature-tour.md).
 
 ## <a name="customize-visual-studio"></a>Personalizzare Visual Studio
 
-È possibile personalizzare l'Visual Studio utente, inclusa la modifica del tema colori predefinito. Per modificare il tema colori:
+È possibile personalizzare l'Visual Studio'interfaccia utente, inclusa la modifica del tema dei colori predefinito. Per modificare il tema dei colori:
 
 ::: moniker range="vs-2017"
 
-1. Sulla barra dei menu scegliere **Opzioni** > **strumenti per aprire** la finestra di **dialogo** Opzioni.
+1. Nella barra dei menu scegliere **Opzioni** strumenti > **per** aprire la finestra **di dialogo** Opzioni.
 
-1. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
+1. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 
-   ![Screenshot che mostra le Visual Studio nel tema Scuro.](../media/dark-theme.png)
+   ![Screenshot che mostra le Visual Studio in tema scuro.](../media/dark-theme.png)
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Sulla barra dei menu scegliere **Opzioni** > **strumenti per aprire** la finestra di **dialogo** Opzioni.
+1. Nella barra dei menu scegliere **Opzioni** strumenti > **per** aprire la finestra **di dialogo** Opzioni.
 
-1. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione di **Tema** colori in **Scuro** e quindi scegliere **OK.**
+1. Nella pagina **delle** > **opzioni Generale** ambiente modificare la selezione **tema** colore in **Scuro** e quindi scegliere **OK.**
 
    Viene applicato il tema colori **Scuro** all'intero ambiente IDE.
 
-   ![Screenshot che mostra le Visual Studio nel tema Scuro.](../media/vs-2019/dark-theme.png)
+   ![Screenshot che mostra le Visual Studio in tema scuro.](../media/vs-2019/dark-theme.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
