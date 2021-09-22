@@ -1,22 +1,22 @@
 ---
 title: Vantaggio CODE Magazine nelle sottoscrizioni Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/18/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio CODE Magazine incluso nella sottoscrizione Visual Studio sottoscrizione.
-ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 0d3a8b16ff18ef7166a2034fad5e342d6c198cbe
+ms.sourcegitcommit: da19ed1e48259b219c61c4cb9e98b006004a5766
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965786"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "128078547"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine incluso nelle sottoscrizioni Visual Studio
 
-CODE Magazine è una rivista leader per sviluppatori di software indipendenti che tratta le tecnologie di sviluppo in tutte le piattaforme.  Le Visual Studio selezionate sono idonee per ricevere una sottoscrizione di un anno alle edizioni stampate o digitali della rivista.
+CODE Magazine è una rivista leader per sviluppatori di software indipendenti che si occupa di tecnologie di sviluppo in tutte le piattaforme.  Le Visual Studio selezionate sono idonee per ricevere un abbonamento di un anno alle edizioni stampate o digitali della rivista.
 
 ## <a name="activation-steps"></a>Passaggi di attivazione
 La procedura per configurare la sottoscrizione di CODE Magazine è semplice.  È sufficiente seguire questa procedura:
@@ -58,7 +58,7 @@ Dopo aver completato l'ordine di sottoscrizione, verrà visualizzata una pagina 
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/A |
 | Visual Studio Enterprise NFR<sup>1</sup> | NFR | Non disponibile | N/A |
 
-<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, Imagine, Imagine Premium, Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services Developer, MCT Software & Services.  
+<sup>1</sup> *Include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, Imagine, Imagine Premium, Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services Developer, MCT Software & Servizi.  
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
@@ -67,14 +67,14 @@ Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visual
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-if-the-subscription-is-free-why-am-i-being-asked-for-a-credit-card"></a>D: Se la sottoscrizione è gratuita, perché viene richiesta una carta di credito?  
-A: L'invio di copie stampate gratuite a livello internazionale è un'inibizione dei costi.  Ai sottoscrittori che scelgono l'edizione stampata della rivista CODE e risiedono al di fuori del Stati Uniti verrà addebitata una tariffa per la spedizione. Per evitare addebiti per la spedizione, scegliere la versione digitale della rivista. 
+A: L'invio di copie stampate gratuite in tutto il mondo è un'inibizione dei costi.  Ai sottoscrittori che scelgono l'edizione stampata della rivista CODE e risiedono al di fuori Stati Uniti verrà addebitata una tariffa per la spedizione. Per evitare addebiti per la spedizione, scegliere la versione digitale della rivista. 
 
 ### <a name="q-why-do-i-need-to-provide-a-delivery-address-for-a-digital-subscription"></a>D: Perché è necessario specificare un indirizzo di recapito per una sottoscrizione digitale?
-A: CODE Magazine raccoglie l'indirizzo, indipendentemente dal fatto che la sottoscrizione sia per una sottoscrizione stampata o digitale per supportare i processi di adempimenti, selezione dell'offerta e accesso digitale.  Per altre informazioni sulle attività di CODE Magazine sui dati, vedere l'Informativa [sulla privacy.](https://www.codemag.com/Home/Privacy)
+A: CODE Magazine raccoglie l'indirizzo, indipendentemente dal fatto che la sottoscrizione sia per una sottoscrizione stampata o digitale per supportare i processi di adempimenti, selezione dell'offerta e accesso digitale.  Per altre informazioni sulle attività di CODE Magazine con i dati, vedere l'Informativa [sulla privacy.](https://www.codemag.com/Home/Privacy)
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Per domande sull'abbonamento a CODE Magazine,  Contattare [CODE Magazine tramite](https://www.codemag.com/contact) posta elettronica o telefono oppure inviare una richiesta di supporto online.
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto [Visual Studio sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://my.visualstudio.com/gethelp)
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
