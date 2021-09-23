@@ -1,6 +1,6 @@
 ---
-title: "Guida introduttiva: Panoramica dell'IDE Visual Studio"
-description: Informazioni su alcune finestre, menu e altre funzionalità dell'interfaccia utente di Visual Studio ide (Integrated Development Environment).
+title: "Guida introduttiva: Presentazione dell'IDE Visual Studio"
+description: Informazioni su alcune finestre, menu e altre funzionalità dell'interfaccia utente Visual Studio ide (Integrated Development Environment).
 ms.custom: vs-acquisition
 titleSuffix: ''
 ms.date: 09/14/2021
@@ -12,11 +12,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ff4270fb819c010a31e4dce9e3e3376d41cf205
-ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "127920464"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128307201"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -24,13 +24,13 @@ In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo inte
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -38,7 +38,7 @@ Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Stu
 
 ## <a name="start-page"></a>Pagina iniziale
 
-Il primo elemento visualizzato dopo l'apertura di Visual Studio è molto probabilmente la **Pagina iniziale**. La **pagina iniziale** è progettata come "hub" per consentire di trovare più rapidamente i comandi e i file di progetto necessari. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
+Il primo elemento visualizzato dopo l'apertura di Visual Studio è molto probabilmente la **Pagina iniziale**. La **pagina iniziale** è progettata come "hub" per trovare più rapidamente i comandi e i file di progetto necessari. Nella sezione **Recenti** sono visualizzati i progetti e le cartelle usati di recente. In **Nuovo progetto** è possibile fare clic su un collegamento per visualizzare la finestra di dialogo **Nuovo progetto** o in **Apri** è possibile aprire un progetto o una cartella di codice esistente. Sulla destra è visualizzato un feed di notizie aggiornate per sviluppatori.
 
 ![Screenshot della pagina iniziale in Visual Studio 2017.](media/start-page.png)
 
@@ -54,7 +54,7 @@ Se si chiude la **pagina iniziale** e si vuole visualizzare di nuovo la pagina, 
 
 All'apertura di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Contiene opzioni per clonare o estrarre il codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella contenente alcuni file di codice.
 
-[![Screenshot della finestra Iniziale in Visual Studio 2019.](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
+[![Screenshot della finestra Start in Visual Studio 2019.](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Se è la prima volta che si usa Visual Studio, l'elenco dei progetti recenti sarà vuoto.
 
@@ -68,7 +68,7 @@ L'opzione **Continua senza codice** apre semplicemente l'ambiente di sviluppo di
 
 ## <a name="start-window"></a>Finestra iniziale
 
-All'apertura di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Sono disponibili opzioni per clonare o estrarre il codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella contenente alcuni file di codice.
+All'apertura di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Sono disponibili opzioni per clonare o estrarre codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella con alcuni file di codice.
 
 :::image type="content" source="media/vs-2022/quickstart-start-window-labeled.png" border="true" alt-text="Screenshot con annotazioni che mostra la finestra iniziale in Visual Studio 2022." lightbox="media/vs-2022/quickstart-start-window-labeled.png":::
 
@@ -76,7 +76,7 @@ Se è la prima volta che si usa Visual Studio, l'elenco dei progetti recenti sar
 
 Se si usano codebase che non usano MSBuild, si userà  l'opzione Apri una cartella locale per aprire il codice in Visual Studio. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](develop-code-in-visual-studio-without-projects-or-solutions.md). Oppure è possibile creare un nuovo progetto o clonarne uno da un provider di origine, ad esempio GitHub o Azure DevOps.
 
-**L'opzione Continua senza** codice apre l'Visual Studio di sviluppo senza alcun progetto o codice specifico caricato. Si può scegliere questa opzione per accedere a una sessione di [Live Share](/visualstudio/liveshare/) o connettersi a un processo per il debug. È anche possibile premere **ESC** per chiudere la finestra iniziale e aprire l'IDE.
+**L'opzione Continua** senza codice apre l'Visual Studio di sviluppo senza alcun progetto o codice specifico caricato. Si può scegliere questa opzione per accedere a una sessione di [Live Share](/visualstudio/liveshare/) o connettersi a un processo per il debug. È anche possibile premere **ESC** per chiudere la finestra iniziale e aprire l'IDE.
 
 ::: moniker-end
 
@@ -88,9 +88,9 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
 1. Nella casella di ricerca sotto **Nuovo progetto** della **Pagina iniziale** digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome.
 
-   ![Screenshot che mostra un elenco di modelli di progetto nella pagina iniziale Visual Studio 2017.](media/start-page-search-templates.png)
+   ![Screenshot che mostra un elenco di modelli di progetto nella pagina iniziale di Visual Studio 2017.](media/start-page-search-templates.png)
 
-   Visual Studio mette a disposizione diversi tipi di modelli di progetto che consentono di iniziare a scrivere codice rapidamente. Scegliere un modello di progetto **App console (.NET Core)** C#. In alternativa, gli sviluppatori di Visual Basic, C++, JavaScript o altri linguaggi possono creare un progetto in uno di questi linguaggi. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
+   Visual Studio mette a disposizione diversi tipi di modelli di progetto che consentono di iniziare a scrivere codice rapidamente. Scegliere un modello di progetto **App console (.NET Core)** C#. In alternativa, se si è Visual Basic, C++, JavaScript o altri sviluppatori di linguaggi, è possibile creare un progetto in uno di questi linguaggi. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
 
 1. Nella finestra di dialogo **Nuovo progetto** visualizzata accettare il nome di progetto predefinito e scegliere **OK**.
 
@@ -102,7 +102,7 @@ Il progetto viene creato e nella finestra **Editor** si apre un file denominato 
 
 ::: moniker range="vs-2019"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
     :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019.":::
 
@@ -110,17 +110,17 @@ Il progetto viene creato e nella finestra **Editor** si apre un file denominato 
 
    Nella finestra è possibile cercare, filtrare e selezionare un modello di progetto. La finestra include anche un elenco dei modelli di progetto usati di recente.
 
-1. Nella casella di ricerca in alto digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca selezionando **C#** (o un altro linguaggio di propria scelta) **dall'elenco a** discesa Tutti i linguaggi.
+1. Nella casella di ricerca in alto digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca selezionando **C#** (o un altro linguaggio di propria scelta) dall'elenco a discesa **Tutti** i linguaggi.
 
-    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; Visual Studio 2019, in cui è possibile selezionare il modello desiderato.":::
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2019, in cui si seleziona il modello desiderato.":::
 
-1. Se è stato selezionato C#, Visual Basic o F# come linguaggio, selezionare il modello Applicazione **console** e quindi scegliere **Avanti.** Se è stato selezionato un linguaggio diverso, selezionare qualsiasi modello. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
+1. Se è stato selezionato C#, Visual Basic o F# come linguaggio, selezionare il modello **Applicazione console** e quindi scegliere **Avanti.** Se è stato selezionato un linguaggio diverso, selezionare qualsiasi modello. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
 
 1. Nella finestra **Configura il nuovo progetto** accettare il nome e il percorso predefiniti del progetto e quindi scegliere **Avanti.**
 
     :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Screenshot della finestra &quot;Configura un nuovo progetto&quot; in Visual Studio 2019, in cui si immette il nome del progetto.":::
 
-1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi fare clic su **Crea.**
+1. Nella finestra **Informazioni aggiuntive** verificare che **.NET Core 3.1** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi fare clic su **Crea**.
 
     :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Screenshot della finestra &quot;Informazioni aggiuntive&quot; in Visual Studio 2019, in cui si seleziona la versione di .NET Core Framework desiderata.":::
 
@@ -132,7 +132,7 @@ Il progetto viene creato e nella finestra **Editor** si apre un file denominato 
 
 ::: moniker range=">=vs-2022"
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
     :::image type="content" source="media/vs-2022/start-window-create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2022.":::
 
@@ -142,19 +142,19 @@ Il progetto viene creato e nella finestra **Editor** si apre un file denominato 
 
 1. Nella casella di ricerca in alto digitare *console* per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca selezionando **C#** (o un altro linguaggio di propria scelta) dall'elenco a discesa **Tutti i** linguaggi.
 
-    :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2022, in cui è possibile selezionare il modello desiderato.":::
+    :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="Screenshot della finestra &quot;Crea un nuovo progetto&quot; in Visual Studio 2022, in cui si seleziona il modello desiderato.":::
 
-1. Se è stato selezionato C#, Visual Basic o F# come linguaggio, selezionare il modello Applicazione **console** e quindi scegliere **Avanti.** Se è stata selezionata una lingua diversa, è sufficiente selezionare qualsiasi modello.
+1. Se è stato selezionato C#, Visual Basic o F# come linguaggio, selezionare il modello **Applicazione console** e quindi scegliere **Avanti.** Se è stata selezionata una lingua diversa, è sufficiente selezionare qualsiasi modello.
 
 1. Nella finestra **Configura il nuovo progetto** accettare il nome e il percorso predefiniti del progetto e quindi scegliere **Avanti.**
 
     :::image type="content" source="media/vs-2022/quickstart-configure-new-project-console.png" alt-text="Screenshot della finestra &quot;Configura un nuovo progetto&quot; in Visual Studio 2022, in cui si immette il nome del progetto.":::
 
-1. Nella finestra **Informazioni aggiuntive** verificare che **.NET 6.0 (anteprima)** sia visualizzato nel menu a discesa **Framework** e quindi scegliere **Crea.**
+1. Nella finestra **Informazioni aggiuntive** verificare che **.NET 6.0 (anteprima)** sia visualizzato nel menu a discesa **Framework** e quindi scegliere **Crea**.
 
     :::image type="content" source="media/vs-2022/create-project-additional-info.png" alt-text="Screenshot della finestra &quot;Informazioni aggiuntive&quot; in Visual Studio 2022, in cui si seleziona la versione di .NET desiderata.":::
 
-1. Viene creato il progetto. Selezionare il file di *codice Program.cs* **nella finestra Esplora soluzioni,** che in genere si trova sul lato destro del Visual Studio.
+1. Viene creato il progetto. Selezionare il file di *codice Program.cs* nella finestra **Esplora soluzioni,** che in genere si trova sul lato destro del Visual Studio.
 
     :::image type="content" source="media/vs-2022/quickstart-opened-new-project.png" alt-text="Screenshot del nuovo progetto console C# in Visual Studio 2022.":::
 
@@ -206,9 +206,9 @@ La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in 
 
 ## <a name="error-list"></a>Elenco errori
 
-**L'Elenco** errori mostra errori, avvisi e messaggi sullo stato corrente del codice. Se nel file o in un punto qualsiasi del progetto sono presenti errori, ad esempio una parentesi graffa o un punto e virgola mancanti, questi vengono elencati qui.
+**L'elenco degli** errori mostra gli errori, gli avvisi e i messaggi relativi allo stato corrente del codice. Se sono presenti errori (ad esempio una parentesi graffa mancante o un punto e virgola) nel file o in un punto qualsiasi del progetto, sono elencati qui.
 
-Per aprire la **finestra Elenco** errori, scegliere **il** menu Visualizza e quindi selezionare **Elenco errori**.
+Per aprire la **finestra Elenco errori,** scegliere il menu **Visualizza** e quindi selezionare **Elenco errori**.
 
 ::: moniker range="<=vs-2019"
 
@@ -246,7 +246,7 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
 ::: moniker range="vs-2017"
 
-1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa, premere **CTRL** + **Q** per accedervi.
+1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa, premere **CTRL** + **D** per accedervi.
 
 1. Digitare **livello di dettaglio** nella casella di ricerca. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
 
@@ -258,9 +258,9 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la **finestra Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
+   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
 
-   ![Screenshot di un log di compilazione più dettagliato all'interno della finestra Output Visual Studio 2017.](media/build-output-verbose.png)
+   ![Screenshot di un log di compilazione più dettagliato all'interno della finestra Output in Visual Studio 2017.](media/build-output-verbose.png)
 
 ::: moniker-end
 
@@ -278,9 +278,9 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la **finestra Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
+   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
 
-   ![Screenshot di un log di compilazione più dettagliato all'interno della finestra Output Visual Studio 2019.](media/build-output-verbose.png)
+   ![Screenshot di un log di compilazione più dettagliato nella finestra Output in Visual Studio 2019.](media/build-output-verbose.png)
 
 ::: moniker-end
 
@@ -294,13 +294,13 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
    Si apre la pagina delle opzioni **Compila ed esegui** della finestra di dialogo **Opzioni**.
 
-1. In **MSBuild livello di dettaglio dell'output di** compilazione del progetto scegliere **Normale** e quindi **scegliere OK.**
+1. In **MSBuild livello di dettaglio dell'output** di compilazione del progetto scegliere **Normale** e quindi **scegliere OK.**
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la **finestra Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
+   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
 
-   :::image type="content" source="media/vs-2022/quickstart-build-output-verbose.png" alt-text="Screenshot di un log di compilazione più dettagliato all'interno della finestra Output Visual Studio 2022.":::
+   :::image type="content" source="media/vs-2022/quickstart-build-output-verbose.png" alt-text="Screenshot di un log di compilazione più dettagliato all'interno della finestra Output in Visual Studio 2022.":::
 
 ::: moniker-end
 
@@ -324,9 +324,9 @@ Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerime
 
 ::: moniker range=">=vs-2022"
 
-Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile inviare commenti e suggerimenti. A tale scopo, scegliere il pulsante **Invia commenti** e suggerimenti nell'angolo superiore destro dell'IDE e usare una delle opzioni di feedback nel menu Invia **commenti e** suggerimenti.
+Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile contattarci. A tale scopo, scegliere il pulsante **Invia commenti** e suggerimenti nell'angolo superiore destro dell'IDE e usare una delle opzioni di feedback nel menu Invia **commenti e** suggerimenti.
 
-:::image type="content" source="media/vs-2022/quickstart-ide-send-feedback.png" alt-text="Screenshot del pulsante Invia commenti e suggerimenti e del menu in Visual Studio 2022.":::
+:::image type="content" source="media/vs-2022/quickstart-ide-send-feedback.png" alt-text="Screenshot del pulsante e del menu Invia commenti e suggerimenti in Visual Studio 2022.":::
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti su Esplora test
-description: Fare riferimento a queste domande frequenti su Visual Studio Test Explorer, che includono alcuni problemi comuni.
+description: Fare riferimento a queste domande frequenti su esplora Visual Studio test, che includono alcuni problemi comuni.
 ms.custom: SEO-VS-2020
 ms.date: 06/25/2020
 ms.topic: conceptual
@@ -17,26 +17,26 @@ ms.workload:
 author: kendrahavens
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6b14f78fa1e7e51cc2ea93f30eab8ee29e644949
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: fd53079017ebfce2bb2602754a14d3f2e6e5547a
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060050"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128307093"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
 ## <a name="dynamic-test-discovery"></a>Individuazione dei test dinamici
 
-**Esplora test non individua i test definiti dinamicamente. Ad esempio, teorie, adattatori personalizzati, tratti personalizzati, #ifdefs e così via. Come è possibile individuare questi test?**
+**Esplora test non individua i test definiti in modo dinamico. (ad esempio, teoria, adattatori personalizzati, tratti personalizzati, #ifdefs e così via) Come è possibile individuare questi test?**
 
 ::: moniker range=">=vs-2019"
 Compilare il progetto per eseguire l'individuazione basata su assembly.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Compilare il progetto e assicurarsi che l'individuazione basata su assembly sia attivata in **Strumenti** > **Opzioni** > **Test**.
+Compilare il progetto e verificare che l'individuazione basata su assembly sia attivata in **Strumenti** > **Opzioni** > **Test**.
 ::: moniker-end
-L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) è l'individuazione dei test in base all'origine. Non è in grado di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni e altro ancora perché sono `#ifdef` definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
+L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) è l'individuazione dei test in base all'origine. Non è in grado di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni e altro ancora perché sono definiti in `#ifdef` fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
 
 ## <a name="test-explorer--plus-symbol"></a>'+' (segno più) di Esplora test
 
@@ -49,16 +49,16 @@ Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo 
 ::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Individuazione basata su assembly
 
-**L'individuazione basata su assembly non funziona più per il progetto. Ricerca per categorie riattivarlo?**
+**L'individuazione basata su assembly non funziona più per il progetto. Ricerca per categorie riattivarla?**
 
-Passare a **Strumenti** Opzioni Test e selezionare la casella Individuare anche i test dagli >  >  **assembly compilati dopo le compilazioni.**
+Passare a **Strumenti** Opzioni test e selezionare la casella Individuare anche >  >  i **test dagli assembly compilati dopo le compilazioni.**
 
 ![Opzione basata su assembly](media/testex-toolsoptions.png)
 ::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Individuazione dei test in tempo reale
 
-**I test vengono ora visualizzati in Esplora test durante la digitazione, senza dover compilare il progetto. Cosa è cambiato?**
+**I test vengono ora visualizzati in Esplora test durante la digitazione, senza dover compilare il progetto. Che cosa è cambiato?**
 
 Questa funzionalità è denominata [individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/). Usa un analizzatore Roslyn per trovare i test e popolare Esplora test in tempo reale, senza che sia necessario compilare il progetto. Per altre informazioni sul comportamento dell'individuazione dei test per i test definiti in modo dinamico, ad esempio teorie o tratti personalizzati, vedere [Individuazione dei test dinamici](#dynamic-test-discovery).
 
@@ -72,7 +72,7 @@ L'[individuazione dei test in tempo reale](https://devblogs.microsoft.com/dotnet
 
 **Come è possibile attivare i log per Esplora test?**
 
-Passare a **Strumenti**  >  **Opzioni**  >  **Test** e individuare la sezione Registrazione.
+Passare a **Strumenti**  >  **Opzioni**  >  **Test e** individuare la sezione Registrazione.
 
 ## <a name="uwp-test-discovery"></a>Individuazione dei test UWP
 
@@ -84,7 +84,7 @@ I test UWP usano un runtime diverso come destinazione quando l'app viene distrib
 
 **Come funziona l'ordinamento dei risultati di test nella visualizzazione gerarchia?**
 
-Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anziché in base al risultato. Le impostazioni precedenti raggruppano i risultati dei test in base al risultato e quindi in ordine alfabetico. È comunque possibile abilitare l'ordinamento in base al risultato facendo clic con il pulsante destro del mouse sull'intestazione di colonna in Esplora test, abilitando la colonna Stato e quindi facendo clic sull'intestazione di colonna Stato per applicare l'ordinamento a tale colonna. È possibile fornire commenti e suggerimenti sulla progettazione in questo [GitHub problema](https://github.com/Microsoft/vstest/issues/1425).
+Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anziché in base al risultato. Le impostazioni di raggruppamento precedenti ordinavano i risultati dei test in base al risultato e quindi in ordine alfabetico. È comunque possibile abilitare l'ordinamento in base al risultato facendo clic con il pulsante destro del mouse sull'intestazione di colonna in Esplora test, abilitando la colonna Stato e quindi facendo clic sull'intestazione di colonna Stato per applicare l'ordinamento a tale colonna. È possibile fornire commenti e suggerimenti sulla progettazione in questo [GitHub problema](https://github.com/Microsoft/vstest/issues/1425).
 
 ## <a name="test-explorer-hierarchy-view"></a>Visualizzazione gerarchia in Esplora test
 
@@ -92,7 +92,7 @@ Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anzich
 
 Le icone accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe indicano lo stato dei test all'interno di tale raggruppamento. Vedere la tabella seguente.
 
-![Icone nella gerarchia in Esplora test](media/testex-hierarchyicons.png)
+![Icone nella gerarchia in Esplora test](media/testex-hierarchy-icons.png)
 
 ## <a name="search-by-file-path"></a>Ricerca per percorso file
 
@@ -102,7 +102,7 @@ Il filtro per il percorso file nella casella di ricerca **Esplora test** è stat
 
 ## <a name="remove-undocumented-interfaces"></a>Rimuovere le interfacce non documentate
 
-**Alcune API correlate ai test non sono più presenti in Visual Studio 2019. Cosa è cambiato?**
+**Alcune API correlate ai test non sono più presenti in Visual Studio 2019. Che cosa è cambiato?**
 
 In Visual Studio 2019, verranno rimosse alcune API di finestra di test in precedenza contrassegnate come pubbliche, ma mai documentate ufficialmente. Sono state contrassegnate come "deprecate" in Visual Studio 2017 per avvisare tempestivamente chi gestisce le estensioni. In base a quanto osservato, sono pochissime le estensioni che hanno rilevato queste API e hanno dipendenze dalle stesse. Sono incluse `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se questa modifica interessa l'estensione in uso, segnalare un bug in [Developer Community](https://aka.ms/feedback/suggest?space=8).
 
@@ -118,7 +118,7 @@ Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Se si usa l'adattatore di test NUnit 2 e non è possibile eseguire la migrazione all'adattatore di test NUnit 3, è possibile disattivare questo nuovo comportamento di individuazione in Visual Studio versione 15.8 **in** Strumenti  >  **Opzioni**  >  **Test**.
+> Se si usa l'adattatore di test NUnit 2 e non è possibile eseguire la migrazione all'adattatore di test NUnit 3, è possibile disattivare questo nuovo comportamento di individuazione in Visual Studio versione 15.8 **in** Strumenti Opzioni  >    >  **Test**.
 
 ![Comportamento dell'adattatore nelle opzioni degli strumenti di Esplora test](media/testex-adapterbehavior.png)
 ::: moniker-end
@@ -127,7 +127,7 @@ Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i
 
 **I test UWP non vengono più eseguiti in Visual Studio 2017 versione 15.7 e successive.**
 
-I progetti di test UWP recenti specificano una proprietà di compilazione della piattaforma di test che consente di migliorare le prestazioni durante l'identificazione delle app di test. Se si dispone di un progetto di test UWP inizializzato prima Visual Studio versione 15.7, è possibile che venga visualizzato questo errore in **Test di**  >  **output**:
+I progetti di test UWP recenti specificano una proprietà di compilazione della piattaforma di test che consente di migliorare le prestazioni durante l'identificazione delle app di test. Se si ha un progetto di test UWP inizializzato prima Visual Studio versione 15.7, è possibile che venga visualizzato questo errore in **Test di**  >  **output:**
 
 **System.AggregateException: Si sono verificati uno o più errori. ---> System.InvalidOperationException: Impossibile trovare il seguente oggetto TestContainer {} in Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
@@ -147,9 +147,9 @@ Per correggere l'errore:
 ::: moniker range=">=vs-2019"
 ## <a name="using-preview-features"></a>Uso delle funzionalità di anteprima
 
-In Visual Studio 2019 è possibile acconsentire esplicitamente alle funzionalità di anteprima in Strumenti **> opzioni > ambiente > funzionalità di anteprima**.
+In Visual Studio 2019 è possibile acconsentire esplicitamente alle funzionalità di anteprima in Strumenti **> opzioni > ambiente > funzionalità di anteprima.**
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range="vs-2017"
 ## <a name="using-feature-flags"></a>Uso dei flag di funzionalità
 
 **Come è possibile attivare i flag di funzionalità per provare le nuove funzionalità di test?**
