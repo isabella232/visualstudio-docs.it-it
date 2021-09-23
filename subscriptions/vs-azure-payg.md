@@ -1,18 +1,18 @@
 ---
 title: Vantaggio Con pagamento in base al Visual Studio azure
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
-ms.openlocfilehash: 3668302778532f1413f240308faa503c9c58837a
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: a9b94313a82c075ede602233da00313b851b47a0
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965663"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128312407"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Sottoscrizioni con pagamento in base al go di Azure DevTest
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
@@ -20,9 +20,9 @@ ms.locfileid: "123965663"
 ## <a name="set-up-a-subscription"></a>Configurare una sottoscrizione
 1. Per usare il vantaggio della sottoscrizione con pagamento in base al go di Azure, accedere a e fare clic sul collegamento Attiva nella parte inferiore [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) del riquadro del vantaggio. 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-tile.png "Fare clic su &quot;Attiva&quot; nel riquadro della sottoscrizione DevTest con pagamento in base al go per iniziare.")
+   > ![Riquadro del pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-tile.png "Per iniziare, fare clic su &quot;Attiva&quot; nel riquadro della sottoscrizione DevTest con pagamento in base al prezzo.")
 
-2. Se è già stato attivato un account Azure come parte dei vantaggi della sottoscrizione(ad esempio, se si ha una sottoscrizione Enterprise e si è attivato il credito singolo azure DevTest mensile di $ 150), andare al passaggio 5.
+2. Se è già stato attivato un account Azure come parte dei vantaggi della sottoscrizione(ad esempio, se si ha una sottoscrizione Enterprise e si è attivato il credito singolo Azure DevTest mensile di $ 150), andare al passaggio 5.
 
 3. Nella pagina Iscrizione di Microsoft Azure è possibile configurare l'offerta Sviluppo/test con pagamento in base al consumo oppure eseguire l'aggiornamento all'offerta Visual Studio Enterprise.  Fare clic su **Continua con l'offerta corrente (Sviluppo/test con pagamento in base al consumo)** se non si vuole eseguire l'aggiornamento.
 

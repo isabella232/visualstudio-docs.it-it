@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: bfa26eaeb26df833953430a3514cf77e2e7f3e3d
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127964748"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128307120"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.

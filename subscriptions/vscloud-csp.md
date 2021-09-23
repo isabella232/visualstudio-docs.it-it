@@ -8,11 +8,11 @@ ms.date: 03/18/2021
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
 ms.openlocfilehash: 237cd3673ad558df1fc28be205189b27874496b0
-ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "128002306"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128309525"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.

@@ -5,15 +5,15 @@ ms.custom: ''
 ms.date: 04/01/2020
 ms.topic: conceptual
 author: evanwindom
-ms.author: v-evwin
+ms.author: lank
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: b04a99ffc35a61ecb92ac2401a08669afd84f551
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965671"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128309534"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novità delle sottoscrizioni di Visual Studio
 
@@ -30,15 +30,15 @@ Sono state combinate anche le opzioni per aggiungere sottoscrittori invididual e
    > ![Nuova interfaccia utente per il portale di amministrazione delle sottoscrizioni](_img/whats-new/new-admin-ui.png)
 
 #### <a name="connect-emails"></a>Connessione E-mail
-È stato reso più semplice associare i sottoscrittori che usano account Microsoft (MSA) al proprio Azure Active Directory (Azure AD), in modo da poter collegare rapidamente le due identità.  L'Azure AD delle identità consente di aumentare la sicurezza e semplificare la gestione delle sottoscrizioni.  Per altri [dettagli, vedere](personal-email-sign-ins.md) l'articolo degli account di accesso personali. 
+È stato reso più semplice associare i sottoscrittori che usano account Microsoft (MSA) al proprio Azure Active Directory (Azure AD), in modo da poter collegare rapidamente le due identità.  L'Azure AD delle identità offre maggiore sicurezza e una gestione delle sottoscrizioni più semplice.  Per altri [dettagli, vedere l'articolo](personal-email-sign-ins.md) degli account di accesso personali. 
 
-#### <a name="add-subscribers-using-azure-active-directory-groups"></a>Aggiungere sottoscrittori usando i Azure Active Directory predefiniti
+#### <a name="add-subscribers-using-azure-active-directory-groups"></a>Aggiungere sottoscrittori usando Azure Active Directory gruppi
 Se l'organizzazione usa Azure Active Directory (Azure AD), è ora possibile gestire le sottoscrizioni usando Azure AD gruppi.  L'assegnazione di sottoscrizioni ai gruppi consente di fornire rapidamente sottoscrizioni dello stesso tipo a più utenti.  Quando vengono aggiunti nuovi utenti al gruppo Azure AD, viene assegnata automaticamente una sottoscrizione.  Se un utente viene rimosso dal gruppo Azure AD, viene rimossa anche la sottoscrizione.  Ciò consente all'organizzazione di automatizzare la gestione delle sottoscrizioni, risparmiando tempo e fatica agli amministratori.  Per informazioni [dettagliate, vedere](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) l'articolo Aggiungere più utenti nella documentazione. 
 
 ### <a name="cast-highlight"></a>CAST Highlight
 Siamo lieti di annunciare un'espansione dei vantaggi offerti dal partner, CAST Highlight. 
 - La durata del vantaggio incluso nelle sottoscrizioni Visual Studio Enterprise è stata estesa a sei mesi.  
-- Visual Studio Professional sottoscrittori possono ora ricevere una sottoscrizione che consente loro di valutare una singola applicazione per tre mesi. 
+- Visual Studio Professional i sottoscrittori possono ora ricevere una sottoscrizione che consente loro di valutare una singola applicazione per tre mesi. 
 
 ## <a name="2020-q2-april-june"></a>Secondo trimestre 2020 (aprile-giugno)
 
