@@ -1,21 +1,21 @@
 ---
-title: Supporto di Microsoft Q&A per Visual Studio sottoscrizioni | Microsoft Docs
+title: Supporto di Microsoft Q&A nelle sottoscrizioni Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 16af82df-380a-4864-9f4e-6c3442cc7da2
 ms.date: 03/17/2021
 ms.topic: conceptual
 description: Informazioni sul vantaggio di supporto&forum A di Microsoft Q incluso nelle sottoscrizioni Visual Studio selezionate.
-ms.openlocfilehash: c9900dd914a53911fa95fee662a8fd820e59ff4b
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 4e84e31063d315f43cc7bdc13b478e640dbf7e49
+ms.sourcegitcommit: 022ac348337f77c899996ac81060a969ebfb64bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965766"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "128134034"
 ---
-# <a name="microsoft-qa-forum-support-in-visual-studio-subscriptions"></a>Supporto di Microsoft Q&Forum A nelle sottoscrizioni Visual Studio
-Hai una domanda tecnica sul prodotto? È possibile trovarlo in Microsoft Q&A, la home page per domande tecniche e risposte a Microsoft.
+# <a name="microsoft-qa-forum-support-in-visual-studio-subscriptions"></a>Supporto del forum di Microsoft Q&nelle sottoscrizioni Visual Studio microsoft
+Hai una domanda tecnica sul prodotto? È possibile trovarlo in Microsoft Q&A, la home page per domande tecniche e risposte in Microsoft.
 
 È possibile porre domande e risposte su un'ampia gamma di prodotti supportati, tra cui:
 - .NET
@@ -66,7 +66,7 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  Contattare [il supporto Visual Studio sottoscrizioni .](https://my.visualstudio.com/gethelp)
+- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  Contattare [il supporto Visual Studio sottoscrizioni.](https://my.visualstudio.com/gethelp)
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche

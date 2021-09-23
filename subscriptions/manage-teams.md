@@ -1,21 +1,21 @@
 ---
 title: Gestione di team e terzisti di grandi dimensioni Visual Studio sottoscrizioni | Visual Studio Mercato
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori di gestire le sottoscrizioni per team di grandi dimensioni e terzisti esterni.
-ms.openlocfilehash: b54dc7a6a90556e73e1bebdd918435e9ce56a596
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 5c477ff5954fa6f824f839c21ed1b045294e08c9
+ms.sourcegitcommit: 022ac348337f77c899996ac81060a969ebfb64bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965559"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "128134025"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
-Visual Studio gli amministratori delle sottoscrizioni sono responsabili di garantire che ogni utente che interagisce con un software con licenza Visual Studio sia concesso in licenza in modo appropriato con la propria sottoscrizione Visual Studio licenza.
+Visual Studio gli amministratori delle sottoscrizioni sono responsabili di garantire che ogni utente che interagisce con il software con licenza Visual Studio sia concesso in licenza in modo appropriato con la propria sottoscrizione Visual Studio personale.
 
 ## <a name="internal-teams"></a>Team interni
 In genere, le organizzazioni moderne che si occupano di sviluppo software includono stakeholder da più gruppi. Identificare i contatti per ogni gruppo che possono collaborare al monitoraggio dell'inventario degli utenti e delle relative modifiche.
