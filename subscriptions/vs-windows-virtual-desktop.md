@@ -1,18 +1,18 @@
 ---
 title: Microsoft Windows Virtual Desktop in Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 03/17/2021
 ms.topic: conceptual
 description: Informazioni su come sfruttare i vantaggi di Microsoft Windows Virtual Desktop tramite la sottoscrizione Visual Studio
-ms.openlocfilehash: 2e7aad5d3f8214d39e5671e4bf5c4d5d357cd930
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 926eb94e140fda630439083c39d733c3ff366886
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128375644"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accedere Windows Desktop virtuale nelle sottoscrizioni 
 Visual Studio i sottoscrittori possono ora usare i crediti individuali di sviluppo/test di Azure per i servizi Desktop virtuale Windows Microsoft.  
@@ -23,9 +23,9 @@ Ecco cosa si può fare quando si esegue Desktop virtuale Windows in Azure:
 - Fornire ai desktop virtuali di Windows 7 aggiornamenti della sicurezza estesi gratuiti
 - Portare i desktop e le app esistenti di Servizi Desktop remoto e Windows Server in qualsiasi computer
 - Virtualizzare sia i desktop che le app
-- Gestire Windows 10, Windows Server e Windows 7 desktop e app con un'esperienza di gestione unificata Per altre informazioni sulle attività che è possibile eseguire con Windows Virtual Desktop, guardare il [video introduttivo](/azure/virtual-desktop/overview).
+- Gestire Windows 10, Windows Server e Windows 7 desktop e app con un'esperienza di gestione unificata Per altre informazioni sulle funzionalità di Windows Virtual Desktop, guardare il [video introduttivo](/azure/virtual-desktop/overview).
 
-## <a name="use-windows-virtual-desktop-with-azure"></a>Usare Windows Desktop virtuale con Azure 
+## <a name="use-windows-virtual-desktop-with-azure"></a>Usare Windows desktop virtuale con Azure 
 Visual Studio i sottoscrittori hanno ora diversi modi per usare le sottoscrizioni di Azure per pagare Windows servizi Desktop virtuale:
 - [Crediti singoli di Azure DevTest.](vs-azure.md)  I sottoscrittori che ricevono crediti individuali di Azure DevTest come parte delle sottoscrizioni possono usare tali crediti per pagare Windows servizi Di Desktop virtuale.  L'importo del credito mensile dipende dal livello di sottoscrizione.
 - Sottoscrizioni con pagamento in base al go di [Azure DevTest.](vs-azure-payg.md)  È possibile creare sottoscrizioni di Azure e collegare uno strumento di pagamento per avere un modo semplice per pagare l'Windows di Desktop virtuale. 
@@ -34,14 +34,14 @@ Visual Studio i sottoscrittori hanno ora diversi modi per usare le sottoscrizion
 ## <a name="requirements"></a>Requisiti
 Windows Desktop virtuale richiede un Azure Active Directory (Azure AD) a cui verranno unite le macchine virtuali.  Gli utenti devono essere membri di questa Azure AD.  Esistono due opzioni per implementare il Azure AD:
 - Azure AD servizi directory.  Per la maggior parte degli utenti, questa è l'opzione più semplice da implementare.
-- Una macchina virtuale che esegue un modello di controller di dominio.  Questa opzione richiede più lavoro da configurare, ma offre alla maggior parte degli utenti un costo operativo inferiore.
-Per visualizzare un elenco completo dei prerequisiti per l'Windows desktop virtuale, visitare la pagina Windows panoramica di Desktop [virtuale.](/azure/virtual-desktop/overview#requirements) 
+- Una macchina virtuale che esegue un modello di controller di dominio.  Questa opzione richiede più lavoro per la configurazione, ma offre alla maggior parte degli utenti un costo operativo inferiore.
+Per visualizzare un elenco completo dei prerequisiti per l'Windows desktop virtuale, visitare la pagina Windows panoramica di Desktop [virtuale](/azure/virtual-desktop/overview#requirements). 
 
 ## <a name="get-started"></a>Introduzione 
 Quando tutti i prerequisiti sono soddisfatti, è necessario completare diverse azioni per ottenere l'implementazione.  Per iniziare, vedere queste esercitazioni:
 - [Creare un tenant di Desktop virtuale Windows](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
 - [Creare un pool di host](/azure/virtual-desktop/create-host-pools-azure-marketplace) usando il portale di Azure
-- [Gestire i gruppi di app](/azure/virtual-desktop/manage-app-groups) Windows desktop virtuale
+- [Gestire i gruppi di app](/azure/virtual-desktop/manage-app-groups) Windows Desktop virtuale
 
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
@@ -69,6 +69,6 @@ Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://
 
 ## <a name="next-steps"></a>Passaggi successivi
 -   Se è necessario acquistare Visual Studio sottoscrizioni, vedere:
-     - [Prezzi per gli acquisti al dettaglio](https://visualstudio.microsoft.com/vs/pricing/) tramite Microsoft Store
+     - [Prezzi per gli acquisti al dettaglio](https://visualstudio.microsoft.com/vs/pricing/) tramite il Microsoft Store
      - [Programmi per contratti multilicenza](https://www.microsoft.com/licensing/default)
--   Informazioni su [Windows desktop virtuale](/azure/virtual-desktop/overview)
+-   Informazioni su [Windows Desktop virtuale](/azure/virtual-desktop/overview)

@@ -13,11 +13,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: ca36dbefec8ff61a8ba05286f2dd8aa6593cc13b
-ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127890558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128374564"
 ---
 # <a name="repair-visual-studio"></a>Ripristinare Visual Studio
 
@@ -32,10 +32,10 @@ Usare il ripristino se si verificano problemi con:
 * Aggiornamento Visual Studio. La correzione corregge molti problemi comuni relativi all'aggiornamento.
 
 > [!TIP] 
-> Una connessione Internet instabile o un problema in un servizio Windows, ad esempio Windows Installer, può causare problemi di installazione. In questi scenari può essere interessato anche il ripristino. Per verificare la presenza di problemi sottostanti, esaminare la segnalazione errori generata dal Programma di installazione di Visual Studio.
+> Una connessione Internet instabile o un problema in un servizio Windows, ad esempio Windows Installer, può causare problemi di installazione. In questi scenari può essere interessato anche il ripristino. Per verificare la presenza di problemi sottostanti, esaminare la segnalazione degli errori generata dal Programma di installazione di Visual Studio.
 
 > [!NOTE] 
-> Il ripristino Visual Studio reimposta le impostazioni utente e reinstalla gli assembly esistenti. Se si verifica un problema del prodotto e il ripristino non lo risolve, creare un ticket Visual Studio [feedback.](https://aka.ms/feedback/suggest?space=8) Per altre informazioni, vedere [Come segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md)con Visual Studio o Programma di installazione di Visual Studio .
+> Il ripristino Visual Studio reimposta le impostazioni utente e reinstalla gli assembly esistenti. Se si verifica un problema del prodotto e il ripristino non lo [risolve,](https://aka.ms/feedback/suggest?space=8)creare un ticket Visual Studio Feedback Ticket . Per altre informazioni, vedere [Come segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md)con Visual Studio o Programma di installazione di Visual Studio .
 
 ## <a name="how-to-repair"></a>Come eseguire il ripristino
 ::: moniker range="vs-2017"
@@ -51,7 +51,7 @@ Usare il ripristino se si verificano problemi con:
 
 1. Aprire il programma di installazione, scegliere **Altro** e quindi scegliere **Ripristina**.
 
-    ![Screenshot che mostra l'opzione Ripristina nel menu a discesa Altro del Programma di installazione di Visual Studio.](media/repair-visual-studio.png "Ripristinare Visual Studio dalla Programma di installazione di Visual Studio")
+    ![Screenshot che mostra l'opzione Ripristina nel menu a discesa Altro della Programma di installazione di Visual Studio.](media/repair-visual-studio.png "Ripristinare Visual Studio dalla Programma di installazione di Visual Studio")
 
    > [!NOTE]
    > Con il ripristino di Visual Studio verrà reimpostato l'ambiente. Le personalizzazioni locali verranno rimosse, ad esempio le estensioni per utente installate senza l'elevazione dei privilegi, le impostazioni utente e i profili. Verranno ripristinate le impostazioni sincronizzate, ad esempio temi, colori e tasti di scelta rapida.
@@ -79,7 +79,7 @@ Usare il ripristino se si verificano problemi con:
 
 1. Nel programma di installazione cercare l'edizione di Visual Studio installata. Scegliere quindi **Altro** e **Ripristina**.
 
-     ![Screenshot che mostra l'opzione Ripristina nel menu a discesa Altro del Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-repair.png "Ripristino Visual Studio 2019")
+     ![Screenshot che mostra l'opzione Ripristina nel menu a discesa Altro della Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-repair.png "Ripristino Visual Studio 2019")
 
    > [!NOTE]
    > Il ripristino Visual Studio reimposta l'ambiente. Le personalizzazioni locali verranno rimosse, ad esempio le estensioni per utente installate senza l'elevazione dei privilegi, le impostazioni utente e i profili. Verranno ripristinate le impostazioni sincronizzate, ad esempio temi, colori e tasti di scelta.
@@ -107,7 +107,7 @@ Usare il ripristino se si verificano problemi con:
 
 1. Nel Programma di installazione di Visual Studio cercare l'installazione Visual Studio che si vuole ripristinare. Scegliere quindi **Ripristina dal** menu **a discesa** Altro.
 
-     ![Screenshot che mostra l'opzione Ripristina nel menu a discesa Altro del Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-repair.png "Ripristino Visual Studio 2022")
+     ![Screenshot che mostra l'opzione Ripristina nel menu a discesa Altro della Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-repair.png "Ripristino Visual Studio 2022")
 
    > [!NOTE]
    > Il ripristino Visual Studio reimposta l'ambiente. Le personalizzazioni locali, ad esempio le estensioni per utente installate senza elevazione dei privilegi, le impostazioni utente e i profili verranno rimossi. Verranno ripristinate le impostazioni sincronizzate, ad esempio temi, colori e tasti di scelta.

@@ -1,21 +1,21 @@
 ---
 title: Messaggi di posta elettronica personali per Visual Studio sottoscrizioni in VLSC
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
-ms.openlocfilehash: 99c22d74a9a6fb57e79f699e548de928ef1ebcb6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: fe1f9a293109c168c7cfcadda2ca98db3fa9a942
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126710433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128375702"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio sottoscrizioni: perché vengono visualizzati gli account personali per i sottoscrittori?
-Dopo che le aziende hanno eseguito la migrazione dal Volume Licensing Service Center (VLSC) al nuovo portale di amministrazione delle sottoscrizioni di [Visual Studio,](https://manage.visualstudio.com)gli amministratori si sono trovati disappresi nel scoprire che l'indirizzo di posta elettronica di accesso per alcuni sottoscrittori mostra un indirizzo di posta elettronica personale, ad esempio Hotmail o Outlook.  
+Dopo che le aziende hanno eseguito la migrazione dal Volume Licensing Service Center (VLSC) al nuovo portale di amministrazione delle sottoscrizioni di [Visual Studio,](https://manage.visualstudio.com)gli amministratori si sono trovati disappresi nel vedere che l'indirizzo di posta elettronica di accesso per alcuni sottoscrittori mostra un indirizzo di posta elettronica personale, ad esempio Hotmail o Outlook.  
 
 ## <a name="cause"></a>Causa
 Questa situazione si verifica a causa dei processi di accesso associati all'esperienza legacy degli abbonati a MSDN. La migrazione degli utenti da Volume License Service Center (VLSC) al portale di amministrazione delle sottoscrizioni di Visual Studio è stata completata senza modifiche. Gli amministratori potrebbero non essere a conoscenza del fatto che gli utenti usavano account personali per accedere ai vantaggi della sottoscrizione. Prima delle migrazioni dei sottoscrittori di Visual Studio, completate nel 2016, erano necessarie due azioni per usare correttamente una sottoscrizione di Visual Studio:
@@ -28,7 +28,7 @@ Durante il processo di attivazione del sottoscrittore, veniva richiesto un accou
 > L'esperienza moderna per i sottoscrittori in supporta sia i tipi di identità aziendale/dell'istituto di istruzione che i tipi di [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) identità dell'account Microsoft.
 
 ## <a name="solution"></a>Soluzione
-Per risolvere il problema, è sufficiente selezionare il pulsante Connessione Emails (Messaggi di posta elettronica di **Connessione)** e il sistema tenterà di associare gli account con account microsoft agli utenti esistenti nel Azure Active Directory (Azure AD) dell'organizzazione in base alla corrispondenza del nome e del cognome. Se si verifica un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della corrispondenza.  
+Per risolvere il problema, è sufficiente selezionare il pulsante Connessione Emails (Messaggi di posta elettronica di **Connessione)** e il sistema tenterà di associare gli account con account del servizio gestiti agli utenti esistenti nel Azure Active Directory (Azure AD) dell'organizzazione in base alla corrispondenza del nome e del cognome. Se si verifica un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della corrispondenza.  
 
 Guardare questo video o continuare a leggere per informazioni su come risolvere il problema. 
 
@@ -40,9 +40,9 @@ Guardare questo video o continuare a leggere per informazioni su come risolvere 
 È anche possibile usare la **directory di** ricerca per correggere gli errori o inserire le informazioni mancanti dal Azure AD. Se tutte le corrispondenze sono corrette, è possibile scegliere il pulsante Identità corrente per selezionare tutte le voci corrispondenti anziché selezionarle una alla volta.   
 
 > [!div class="mx-imgBorder"]
-> ![Connessione Riquadro a comparsa dei messaggi di posta elettronica](_img/connect-emails/connect-emails-flyout.png "Selezionare i sottoscrittori che si vuole associare alle rispettive Azure AD e fare clic su Continua.")
+> ![Connessione Riquadro a comparsa dei messaggi di posta elettronica](_img/connect-emails/connect-emails-flyout.png "Selezionare i sottoscrittori che si desidera associare alle rispettive Azure AD e fare clic su Continua.")
 
-Fare quindi **clic su** Continua per visualizzare un elenco delle modifiche da apportare. Se si accetta, fare **clic su Salva** per apportare le modifiche. Il sottoscrittore riceverà anche un messaggio che informa la modifica al successivo accesso alla sottoscrizione.  Si noti che solo i due sottoscrittori corrispondenti nel Azure Active Directory vengono visualizzati in questo elenco.  In questo esempio, poiché Il Padre non aveva un indirizzo corrispondente nel Azure AD, il suo account Microsoft (MSA) non è stato abbinato a un account aziendale. 
+Fare quindi **clic su** Continua per visualizzare un elenco delle modifiche da apportare. Se si accetta, fare **clic su Salva** per apportare le modifiche. Il sottoscrittore riceverà anche un messaggio che informa la modifica al successivo accesso alla sottoscrizione.  Si noti che solo i due sottoscrittori corrispondenti nel Azure Active Directory vengono visualizzati in questo elenco.  In questo esempio, dal momento che Non aveva un indirizzo corrispondente nel Azure AD, il suo account Microsoft (MSA) non è stato abbinato a un account aziendale. 
 
 > [!div class="mx-imgBorder"]
 > ![Connessione Conferma dei messaggi di posta elettronica](_img/connect-emails/connect-emails-confirm.png "Fare clic su Continua per implementare le modifiche proposte, quindi fare clic su Salva.") 

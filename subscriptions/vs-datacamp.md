@@ -1,5 +1,5 @@
 ---
-title: Aumentare data science competenze con DataCamp nelle sottoscrizioni Visual Studio | Microsoft Docs
+title: Aumentare data science competenze con DataCamp in Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: bfa26eaeb26df833953430a3514cf77e2e7f3e3d
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128307120"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128375711"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.
@@ -38,7 +38,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
    > [!div class="mx-imgBorder"]
    > ![Scelta del percorso DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png "Scegliere un percorso di apprendimento di interesse.")
 
-5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegliere un'opzione oppure fare **clic su Non sono sicuro.  Mostra tutti i percorsi di carriera** per creare un percorso più ampio.
+5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegliere un'opzione oppure fare **clic su Non so.  Mostrami tutti i percorsi di carriera** per creare un percorso più ampio.
    > [!div class="mx-imgBorder"]
    > ![Insieme di competenze di data science di DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png "Fare clic su 'I am not sure.  Mostra tutti i percorsi di carriera per visualizzare l'elenco completo.")
 
@@ -46,7 +46,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
    > [!div class="mx-imgBorder"]
    > ![Percorso di carriera di DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png "Fare clic sul pulsante &quot;Registra&quot; nel percorso selezionato per iniziare.")
 
-7. Dopo aver registrato la traccia, verrà aperto il primo corso in tale traccia.  Verrà visualizzata un'esercitazione che spiegherà come interagire con il corso (spostamento ed esecuzione degli esercizi).
+7. Dopo aver seguito la registrazione, verrà aperto il primo corso di tale traccia.  Verrà visualizzata un'esercitazione che spiegherà come interagire con il corso (spostamento ed esecuzione degli esercizi).
 
    > [!div class="mx-imgBorder"]
    > ![Introduzione a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png "Guardare l'esercitazione per informazioni su come esplorare i corsi.")
@@ -68,20 +68,20 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/A |
 
-<sup>1</sup>*Include: Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine.  Esclusi: NFR Basic*  
+<sup>1</sup>*Include: Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine.  Esclude: NFR Basic*  
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) a per esplorare diverse opzioni per l'acquisto Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con DataCamp?  vedere le risorse seguenti:
   - [Community di DataCamp](https://www.datacamp.com/community/tutorials) con forum ed esercitazioni.
   - [Centro assistenza DataCamp](https://support.datacamp.com/hc), in cui cercare negli argomenti di supporto e vedere le domande e le richieste degli utenti.
   - [Inviare una richiesta di supporto.](https://support.datacamp.com/hc/requests/new)
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni](https://my.visualstudio.com/gethelp).
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://my.visualstudio.com/gethelp)
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)
@@ -94,4 +94,4 @@ Esplorare altre opportunità di sviluppo professionale nella propria sottoscrizi
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 
-Se il vantaggio di credito singolo Azure DevTest fornito con la sottoscrizione non è ancora stato attivato, visitare e fare clic sul riquadro di Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) di Azure DevTest.
+Se il vantaggio di credito individuale azure DevTest fornito con la sottoscrizione non è ancora stato attivato, visitare e fare clic sul riquadro di Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) di Azure DevTest.
