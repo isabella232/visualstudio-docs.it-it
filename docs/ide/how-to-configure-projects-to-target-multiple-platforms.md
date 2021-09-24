@@ -1,6 +1,6 @@
 ---
 title: Configurare progetti per più piattaforme di destinazione
-description: Informazioni su Visual Studio modo che una soluzione sia in grado di avere come destinazione diverse architetture della CPU, o piattaforme, contemporaneamente.
+description: Informazioni su Visual Studio modo che una soluzione sia in grado di scegliere contemporaneamente diverse architetture di CPU o piattaforme.
 ms.custom: SEO-VS-2020
 ms.date: 09/13/2021
 ms.technology: vs-ide-compile
@@ -15,11 +15,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b9afd184ac7a0859e8a4a9c68a17ba2737e8a71
-ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "128002351"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128329405"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedura: Configurare progetti per più piattaforme di destinazione
 
@@ -39,7 +39,7 @@ Se una piattaforma non è più necessaria, è possibile rimuoverla usando la fin
 
 1. Scegliere **Configuration Manager** dal menu **Compila**.
 
-2. Nella casella **Piattaforma soluzione attiva** selezionare **\<Edit>** . Viene visualizzata la finestra di dialogo **Modifica piattaforme soluzione**.
+2. Nella casella **Piattaforma soluzione attiva selezionare** **\<Edit>** . Viene visualizzata la finestra di dialogo **Modifica piattaforme soluzione**.
 
 3. Fare clic sulla piattaforma da rimuovere e quindi su **Rimuovi**.
 

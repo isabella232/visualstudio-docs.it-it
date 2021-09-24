@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori di gestire le sottoscrizioni per team di grandi dimensioni e terzisti esterni.
 ms.openlocfilehash: 5c477ff5954fa6f824f839c21ed1b045294e08c9
-ms.sourcegitcommit: 022ac348337f77c899996ac81060a969ebfb64bb
+ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "128134025"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128329386"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
 Visual Studio gli amministratori delle sottoscrizioni sono responsabili di garantire che ogni utente che interagisce con il software con licenza Visual Studio sia concesso in licenza in modo appropriato con la propria sottoscrizione Visual Studio personale.
