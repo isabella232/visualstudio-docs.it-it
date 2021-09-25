@@ -1,18 +1,18 @@
 ---
 title: Quali download software sono disponibili nelle sottoscrizioni Visual Studio software? | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: lank
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 02/19/2021
 ms.topic: how-to
 description: Elenco di download del software inclusi nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 27041dd3a20dd6a1dd4a2dbc488b6a4d2eab012b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126710429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431628"
 ---
 # <a name="what-software-is-available-for-download"></a>Software disponibile per il download
 
@@ -31,7 +31,7 @@ Per trovare rapidamente i prodotti, usare le funzioni "Cerca" nella parte superi
 È anche possibile scaricare un foglio di calcolo di Excel contenente un elenco completo dei [titoli software disponibili](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) per ogni tipo di sottoscrizione.
 
 ## <a name="resources"></a>Risorse 
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere Visual Studio [Subscriptions support](https://aka.ms/vssubscriberhelp). 
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://aka.ms/vssubscriberhelp). 
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

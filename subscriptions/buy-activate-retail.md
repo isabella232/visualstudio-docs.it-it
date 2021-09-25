@@ -1,26 +1,26 @@
 ---
 title: Visual Studio disponibili nel Microsoft Store | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come acquistare Visual Studio sottoscrizioni nel Microsoft Store e attivarle nel portale Visual Studio sottoscrizioni.
-ms.openlocfilehash: 4ed9a46112e6a4f976948375f797cb37c0a52c6e
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 431bef1f52912890d7562164bb0353642f3a873f
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965596"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431639"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio le sottoscrizioni sono disponibili tramite il Microsoft Store
-Visual Studio le sottoscrizioni sono disponibili tramite vari canali. Scegliere tra [Contratti multilicenza,](https://www.microsoft.com/licensing/default)Cloud Solution Provider, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)e Microsoft Store.  Questo articolo illustra l'acquisto e l'attivazione delle sottoscrizioni [tramite Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
+Visual Studio le sottoscrizioni sono disponibili tramite vari canali. Scegliere tra [Contratti multilicenza,](https://www.microsoft.com/licensing/default)Cloud Solution Provider, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)e Microsoft Store.  Questo articolo illustra l'acquisto e l'attivazione delle sottoscrizioni [tramite](https://www.microsoft.com/store/collections/visualstudio)Microsoft Store .  
 
 ## <a name="how-to-buy-subscriptions"></a>Come acquistare sottoscrizioni
 Serve aiuto per decidere quale sottoscrizione è più giusta per l'utente?  Vedere la pagina [dei vantaggi della sottoscrizione](https://visualstudio.microsoft.com/vs/benefits/).  
 
-Visual Studio le sottoscrizioni disponibili tramite Microsoft Store includono:
+Visual Studio disponibili tramite il Microsoft Store includono:
 - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
 - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)

@@ -12,16 +12,22 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 749bb5e57770d76dfca69af40913d8d80c006679
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 348de2d34e30c96449dcd2e4c2ba6eb83ed24c4c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126634220"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429688"
 ---
-# <a name="upgrade-from--testsettings-to-runsettings"></a>Eseguire  *l'aggiornamento da .testsettings* *a .runsettings*
+# <a name="upgrade-from-testsettings-to-runsettings"></a>Eseguire l'aggiornamento da .testsettings a .runsettings
 
-È possibile aggiornare il file di configurazione di test da *.testsettings* a *.runsettings* con lo strumento SettingsMigrator che viene installato insieme a Visual Studio. A seconda del percorso Visual Studio di installazione, è possibile trovare lo strumento di migrazione delle impostazioni nel percorso seguente:`C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
+È possibile aggiornare il file di configurazione di test da *.testsettings* a *.runsettings* con lo strumento SettingsMigrator che viene installato insieme a Visual Studio. A seconda del percorso Visual Studio di installazione, è possibile trovare lo strumento di migrazione delle impostazioni nel percorso seguente:
+::: moniker range=">=vs-2022"
+`C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
+::: moniker-end
+::: moniker range="vs-2019"
+`C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
+::: moniker-end
 
 Nel percorso corretto della directory è possibile eseguire lo strumento con il formato seguente:
 

@@ -21,11 +21,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: e9672bf47f72aed58ec46edddab83fde594a4494
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128329508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429178"
 ---
 # <a name="install-visual-studio"></a>Installare Visual Studio
 
@@ -64,7 +64,7 @@ Per altre informazioni sulle novità in questa versione, vedere le [note sulla v
 
 ::: moniker range=">=vs-2022"
 
-Per altre informazioni sulle altre novità di questa versione di anteprima, vedere le [note sulla versione](/visualstudio/releases/2022/release-notes-preview/) Microsoft.
+Per altre informazioni sulle novità di questa versione di anteprima, vedere le [note sulla versione](/visualstudio/releases/2022/release-notes-preview/) Microsoft.
 
 ::: moniker-end
 
@@ -80,9 +80,9 @@ Prima di iniziare l'installazione di Visual Studio:
 
 1. Applicare gli aggiornamenti più recenti di Windows. Tali aggiornamenti consentono di avere la certezza che nel computer siano presenti sia gli aggiornamenti di sicurezza più recenti sia i componenti di sistema necessari per Visual Studio.
 
-1. Riavviare il computer. Il riavvio garantisce che eventuali installazioni o aggiornamenti in sospeso non ostacolino l'Visual Studio installazione.
+1. Riavviare il computer. Il riavvio garantisce che eventuali installazioni o aggiornamenti in sospeso non impediti Visual Studio'installazione.
 
-1. Liberare spazio. Rimuovere i file e le applicazioni non necessari dall'unità di sistema eseguendo, ad esempio, l'app Pulizia disco.
+1. Liberare spazio. Rimuovere le applicazioni e i file non necessari dall'unità di sistema eseguendo, ad esempio, l'app Pulizia disco.
 
 ::: moniker-end
 
@@ -92,9 +92,9 @@ Prima di iniziare l'installazione di Visual Studio:
 
 1. Applicare gli aggiornamenti più recenti di Windows. Tali aggiornamenti consentono di avere la certezza che nel computer siano presenti sia gli aggiornamenti di sicurezza più recenti sia i componenti di sistema necessari per Visual Studio.
 
-1. Riavviare il computer. Il riavvio garantisce che eventuali installazioni o aggiornamenti in sospeso non ostacolino l'Visual Studio installazione.
+1. Riavviare il computer. Il riavvio garantisce che eventuali installazioni o aggiornamenti in sospeso non impediti Visual Studio'installazione.
 
-1. Liberare spazio. Rimuovere i file e le applicazioni non necessari dall'unità di sistema eseguendo, ad esempio, l'app Pulizia disco.
+1. Liberare spazio. Rimuovere le applicazioni e i file non necessari dall'unità di sistema eseguendo, ad esempio, l'app Pulizia disco.
 
 ::: moniker-end
 
@@ -104,9 +104,9 @@ Prima di iniziare l'installazione di Visual Studio:
 
 1. Applicare gli aggiornamenti più recenti di Windows. Tali aggiornamenti consentono di avere la certezza che nel computer siano presenti sia gli aggiornamenti di sicurezza più recenti sia i componenti di sistema necessari per Visual Studio.
 
-1. Riavviare il computer. Il riavvio garantisce che eventuali installazioni o aggiornamenti in sospeso non ostacolino l'Visual Studio installazione.
+1. Riavviare il computer. Il riavvio garantisce che eventuali installazioni o aggiornamenti in sospeso non impediti Visual Studio'installazione.
 
-1. Liberare spazio. Rimuovere i file e le applicazioni non necessari dall'unità di sistema eseguendo, ad esempio, l'app Pulizia disco.
+1. Liberare spazio. Rimuovere le applicazioni e i file non necessari dall'unità di sistema eseguendo, ad esempio, l'app Pulizia disco.
 
 ::: moniker-end
 
@@ -118,13 +118,13 @@ Per domande sull'esecuzione di Visual Studio 2017 side by side con versioni prec
 
 ::: moniker range="vs-2019"
 
-Per domande sull'esecuzione di versioni precedenti di Visual Studio side-by-side con Visual Studio 2019, vedere Visual Studio [2019 Platform Targeting and Compatibility](/visualstudio/releases/2019/compatibility/).
+Per domande sull'esecuzione di versioni precedenti di Visual Studio side-by-side con Visual Studio 2019, vedere Visual Studio [2019 Platform Targeting and Compatibility](/visualstudio/releases/2019/compatibility/)(Destinazione e compatibilità della piattaforma 2019).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-È possibile installare Visual Studio 2022 side-by-side con le versioni precedenti. Per altre informazioni, vedere Visual Studio [2022 platform targeting and compatibility](/visualstudio/releases/2022/compatibility) (Distribuzione e compatibilità della piattaforma 2022) e Installare Visual Studio [versioni side-by-side.](install-visual-studio-versions-side-by-side.md?view=vs-2022&preserve-view=true)
+È possibile installare Visual Studio 2022 side-by-side con le versioni precedenti. Per altre informazioni, vedere [Visual Studio 2022 platform targeting and compatibility](/visualstudio/releases/2022/compatibility) (Destinazione e compatibilità della piattaforma 2022) e Install Visual Studio versions side-by-side (Installare le versioni di Visual Studio [side-by-side).](install-visual-studio-versions-side-by-side.md?view=vs-2022&preserve-view=true)
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ Scaricare quindi il file del programma di avvio automatico di Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Per ottenere un programma di avvio automatico Visual Studio 2017, vedere la Visual Studio [download](https://visualstudio.microsoft.com/vs/older-downloads/) delle versioni precedenti per informazioni dettagliate su come eseguire questa operazione.
+Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download Visual Studio [versioni](https://visualstudio.microsoft.com/vs/older-downloads/) precedenti per informazioni dettagliate su come eseguire questa operazione.
 
 ::: moniker-end
 
@@ -149,7 +149,7 @@ A tale scopo, fare clic sul pulsante seguente, scegliere l'edizione di Visual St
 
 ::: moniker range=">=vs-2022"
 
-A tale scopo, selezionare il pulsante seguente, scegliere l'edizione Visual Studio desiderata e quindi salvare nella **cartella Download.**
+A tale scopo, selezionare il pulsante seguente, scegliere l'edizione di Visual Studio desiderata e quindi salvare nella **cartella Download.**
 
  > [!div class="button"]
  > [Download di Visual Studio](https://visualstudio.microsoft.com/vs/preview/#download-preview)
@@ -172,13 +172,13 @@ Eseguire il file del programma di avvio automatico per installare il programma d
 
 ::: moniker range="<=vs-2019"
 
-   ![Screenshot che mostra le condizioni di licenza e l'informativa sulla privacy Microsoft.](media/privacy-and-license-terms.png "Condizioni di licenza Microsoft e informativa sulla privacy")
+   ![Screenshot che mostra le condizioni di licenza Microsoft e l'informativa sulla privacy.](media/privacy-and-license-terms.png "Condizioni di licenza Microsoft e informativa sulla privacy")
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-   ![Screenshot che mostra le condizioni di licenza e l'informativa sulla privacy Microsoft.](../install/media/vs-2022/privacy-and-license-terms.png "Condizioni di licenza Microsoft e informativa sulla privacy")
+   ![Screenshot che mostra le condizioni di licenza Microsoft e l'informativa sulla privacy.](../install/media/vs-2022/privacy-and-license-terms.png "Condizioni di licenza Microsoft e informativa sulla privacy")
 
 ::: moniker-end
 
@@ -216,24 +216,24 @@ Dopo aver installato il programma di installazione, è possibile usarlo per pers
 
 ::: moniker range=&quot;>=vs-2022&quot;
 
-1. Selezionare il carico di lavoro desiderato nel **Programma di installazione di Visual Studio**.
+1. Selezionare il carico di lavoro desiderato nella **Programma di installazione di Visual Studio**.
 
-   ![Screenshot che mostra la scheda Carichi di lavoro del Programma di installazione di Visual Studio.](../install/media/vs-2022/vs-installer-workloads.png &quot;Installare i Visual Studio di lavoro")
+   ![Screenshot che mostra la scheda Carichi di lavoro del Programma di installazione di Visual Studio.](../install/media/vs-2022/vs-installer-workloads.png &quot;Installare Visual Studio carichi di lavoro")
 
-     Esaminare i riepiloghi del carico di lavoro per decidere quale carico di lavoro supporta le funzionalità necessarie. Ad esempio, scegliere il carico di lavoro sviluppo **ASP.NET** e Web per modificare pagine Web ASP.NET con Web Live Preview o creare app Web reattive con Blazor oppure scegliere tra carichi di lavoro **Desktop & Mobile** per sviluppare app multipiattaforma con progetti C#o C++ che hanno come destinazione C++20.
+     Esaminare i riepiloghi dei carichi di lavoro per decidere quale carico di lavoro supporta le funzionalità necessarie. Ad esempio,  scegliere il carico di lavoro sviluppo ASP.NET e Web per modificare le pagine Web di ASP.NET con Web Live Preview o creare app Web reattive con Blazor oppure scegliere tra carichi di lavoro **Desktop & Mobile** per sviluppare app multipiattaforma con C# o progetti C++ che hanno come destinazione C++20.
 
-1. Dopo aver scelto i carichi di lavoro desiderati, selezionare **Installa**.
+1. Dopo aver scelto i carichi di lavoro desiderati, selezionare **Installa.**
 
     A questo punto si apriranno diverse schermate di stato in cui sarà visualizzato l'avanzamento dell'installazione di Visual Studio.
 
 ::: moniker-end
 
 > [!TIP]
-> In qualsiasi momento dopo l'installazione, è possibile installare i carichi di lavoro o i componenti che non sono stati installati inizialmente. Se è stato aperto Visual Studio, passare **a** Strumenti Ottieni strumenti e  >  **funzionalità,** che apre il Programma di installazione di Visual Studio. In caso contrario, **aprire Programma di installazione di Visual Studio** dal menu Start. Da qui, è possibile scegliere i carichi di lavoro o i componenti che si vogliono installare. Scegliere quindi **Modifica**.
+> In qualsiasi momento dopo l'installazione, è possibile installare i carichi di lavoro o i componenti che non sono stati installati inizialmente. Se è stata aperta Visual Studio, passare **a** Strumenti Ottieni strumenti e funzionalità per aprire il  >   Programma di installazione di Visual Studio. In caso contrario, **aprire Programma di installazione di Visual Studio** dal menu Start. Da qui, è possibile scegliere i carichi di lavoro o i componenti che si vogliono installare. Scegliere quindi **Modifica**.
 
 ## <a name="step-5---choose-individual-components-optional"></a>Passaggio 5: Scegliere i singoli componenti (facoltativo)
 
-Se non si vuole usare la funzionalità Carichi di lavoro per personalizzare l'installazione di Visual Studio o aggiungere più componenti rispetto alle installazioni di un carico di lavoro, è possibile installare o aggiungere singoli componenti dalla scheda **Singoli** componenti. Scegliere quello che si vuole e quindi seguire le istruzioni.
+Se non si vuole usare la funzionalità Carichi di lavoro per personalizzare l'installazione di Visual Studio o si vogliono aggiungere più componenti di quelli installati da un carico di lavoro, è possibile installare o aggiungere singoli componenti dalla scheda **Singoli** componenti. Scegliere gli elementi desiderati e quindi seguire le istruzioni.
 
 ::: moniker range="vs-2017"
 

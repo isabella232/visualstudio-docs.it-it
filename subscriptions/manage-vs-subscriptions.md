@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
 ms.openlocfilehash: ddd49d1725faaeed5b727d782888f94bbd2d107e
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128329435"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432714"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -33,7 +33,7 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 - Selezionare l'elenco a discesa in alto a destra e scegliere la sottoscrizione dall'elenco
 - Selezionare la scheda Sottoscrizioni e quindi selezionare la sottoscrizione desiderata
   > [!div class="mx-imgBorder"]
-  > ![Passaggio da una sottoscrizione all'altra](_img/manage-vs-subscriptions/change-subscription-resized.png "Selezionare la scheda Sottoscrizioni per visualizzare informazioni dettagliate su tutte le sottoscrizioni e per spostarsi tra di esse.")
+  > ![Passaggio da una sottoscrizione all'altra](_img/manage-vs-subscriptions/change-subscription-resized.png "Selezionare la scheda Sottoscrizioni per visualizzare informazioni dettagliate su tutte le sottoscrizioni e per passare da una sottoscrizione all'altro.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Se la sottoscrizione non è visibile...
 
@@ -57,7 +57,7 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 
 ## <a name="transferring-subscriptions"></a>Trasferimento di sottoscrizioni
 
-Se la sottoscrizione è stata acquistata tramite contratti multilicenza Microsoft ed è necessario assegnarla nuovamente a un altro utente all'interno dell'organizzazione, l'amministratore dovrà eseguire questa operazione automaticamente.
+Se la sottoscrizione è stata acquistata tramite i contratti multilicenza Microsoft ed è necessario assegnarla nuovamente a un altro utente all'interno dell'organizzazione, l'amministratore dovrà eseguire questa operazione automaticamente.
 Le sottoscrizioni vendute al dettaglio possono essere trasferite a terze parti contattando il servizio clienti. Non è possibile trasferire abbonamenti gratuiti o non destinati alla divulgazione.
 
 ## <a name="managing-my-profile"></a>Gestione del profilo personale
@@ -78,7 +78,7 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 Se si vuole ricevere aggiornamenti periodici sulla propria sottoscrizione e i vantaggi disponibili, inclusa la newsletter mensile Sottoscrizioni di Visual Studio, [aggiornare le preferenze](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) selezionando la casella di controllo relativa alle sottoscrizioni di Visual Studio nel profilo personale di Visual Studio. È possibile modificare queste preferenze e annullare la sottoscrizione in qualsiasi momento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png "Selezionare la casella Visual Studio di posta elettronica del programma sottoscrizioni per ricevere gli aggiornamenti.")
+   > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png "Selezionare la casella Visual Studio di posta elettronica del programma per le sottoscrizioni di sottoscrizione per ricevere gli aggiornamenti.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Azure DevOps Services o Azure esistenti
 Se si accede alla propria sottoscrizione tramite un account Microsoft personale (MSA) e si possiede una sottoscrizione che include Azure DevOps Services o Microsoft Azure tramite un account aziendale o dell'istituto di istruzione gestito da Azure, è possibile collegare le due sottoscrizioni. Si tratta di un "account alternativo" che consente di continuare a usare l'account Microsoft per accedere alla sottoscrizione e avere contemporaneamente accesso alle risorse esistenti di Azure, Azure DevOps Services o IDE associate agli account aziendali o dell'istituto di istruzione.
@@ -92,7 +92,7 @@ Per aggiungere un account alternativo:
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
 4. Immettere l'indirizzo di posta elettronica dell'account aziendale/dell'istituto di istruzione e selezionare **Aggiungi**.
 
-Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento selezionando la scheda **Sottoscrizioni** e scegliendo l'opzione appropriata nella **sezione Collegamenti** correlati.
+Dopo aver aggiunto un account alternativo, è possibile aggiornarlo  o rimuoverlo in qualsiasi momento selezionando la scheda Sottoscrizioni e scegliendo l'opzione appropriata nella **sezione Collegamenti** correlati.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -114,7 +114,7 @@ R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per d
 > - Se si hanno sottoscrizioni attive, i dati personali non verranno rimossi totalmente.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare Visual Studio [supporto per le sottoscrizioni](https://aka.ms/vssubscriberhelp).
+- Per assistenza su vendite, sottoscrizioni, account e fatturazione Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

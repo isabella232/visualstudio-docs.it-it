@@ -1,7 +1,7 @@
 ---
 title: Progetti e soluzioni di esercitazione di Visual Studio
 description: Informazioni su come creare una soluzione e un progetto in Visual Studio come Visual Basic sviluppatore.
-ms.date: 12/12/2018
+ms.date: 09/14/2021
 ms.technology: vs-ide-general
 ms.custom:
 - vs-acquisition
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 86f9760806296b8c3906ef70d1557395d225ba23
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 816b72782866bc8c44e88431db3782a182428969
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056589"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128430677"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
 
@@ -33,17 +33,10 @@ Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!TIP]
 > Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
-
-::: moniker-end
-
-::: moniker range="vs-2022"
-
-> [!TIP]
-> Se non è già stato installato Visual Studio Preview, passare alla pagina di download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarla gratuitamente.
 
 ::: moniker-end
 
@@ -58,7 +51,7 @@ Nonostante il nome, una soluzione non è una "risposta". Una soluzione è sempli
 
 ### <a name="create-a-solution"></a>Creare una soluzione
 
-Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza sufficiente di Visual Studio, la creazione di soluzioni vuote verrà probabilmente usata di rado. Quando si crea un nuovo progetto in Visual Studio, viene creata automaticamente una soluzione per ospitare il progetto, nel caso in cui non sia già presente una soluzione aperta.
+Per iniziare si creerà una soluzione vuota. Dopo aver visto Visual Studio, probabilmente non si crei spesso soluzioni vuote. Quando si crea un nuovo progetto in Visual Studio, viene creata automaticamente una soluzione per ospitare il progetto, nel caso in cui non sia già presente una soluzione aperta.
 
 ::: moniker range="vs-2017"
 
@@ -76,7 +69,7 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. Aprire Visual Studio.
 
@@ -84,9 +77,25 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 3. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
 
-   ![Modello Soluzione vuota in Visual Studio 2019](../media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Screenshot che mostra la finestra Crea un nuovo progetto con "soluzione vuota" nella casella di ricerca e il modello di progetto Soluzione vuota selezionato.](../media/vs-2019/tutorial-projects-blank-solution-template.png)
 
 4. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere **Crea**.
+
+   Viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. Aprire Visual Studio.
+
+1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
+
+1. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
+
+   :::image type="content" source="media/vs-2022/tutorial-projects-blank-solution-template.png" alt-text="Screenshot che mostra la finestra Crea un nuovo progetto con &quot;soluzione vuota&quot; nella casella di ricerca e il modello di progetto Soluzione vuota selezionato.":::
+
+1. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere **Crea**.
 
    Viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
 
@@ -98,7 +107,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range="vs-2017"
 
-1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni scegliere **Aggiungi** > **nuovo Project**.
+1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni scegliere **Aggiungi** nuovo Project > .
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
@@ -113,9 +122,9 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
-1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni scegliere **Aggiungi** > **nuovo Project**.
+1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni scegliere **Aggiungi** nuovo Project > .
 
    Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
 
@@ -130,7 +139,28 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    > [!NOTE]
    > Se non viene visualizzato il modello **Progetto vuoto (.NET Framework)**, è necessario installare il *carico di lavoro***Sviluppo per desktop .NET** di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
    >
-   > ![Collegamento al programma di installazione in Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
+   > ![Screenshot che mostra la finestra Crea un nuovo progetto con il collegamento "Installa altri strumenti e funzionalità" evidenziato.](../media/vs-2019/tutorial-projects-open-installer.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. Nel menu di scelta rapida o nel menu di scelta rapida della soluzione **'QuickSolution'** **in** Esplora soluzioni scegliere **Aggiungi** nuovo Project > .
+
+   Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
+
+1. Immettere il **testo vuoto** nella casella di ricerca nella parte superiore e quindi selezionare Visual Basic nell'elenco a discesa **Tutte** le lingue. 
+
+1. Selezionare il modello **Progetto vuoto (.NET Framework)** e quindi scegliere **Avanti**.
+
+1. Assegnare al progetto il nome **QuickDate** e quindi scegliere **Crea**.
+
+   Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
+
+   > [!NOTE]
+   > Se non viene visualizzato il modello **Progetto vuoto (.NET Framework)**, è necessario installare il *carico di lavoro***Sviluppo per desktop .NET** di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   >
+   > :::image type="content" source="media/vs-2022/tutorial-projects-open-installer.png" alt-text="Screenshot che mostra la finestra Crea un nuovo progetto con il collegamento &quot;Installa altri strumenti e funzionalità&quot; evidenziato.":::
 
 ::: moniker-end
 
@@ -142,7 +172,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
 
    Verrà **visualizzata la finestra di dialogo** Aggiungi nuovo elemento .
 
-1. Espandere **Elementi comuni**, quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello dell'elemento **Classe**. Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
+1. Espandere **Elementi comuni**, quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello **di elemento** Classe. Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
 
    Il file *Calendar.vb* viene aggiunto al progetto. Il *vb* finale è l'estensione file assegnata ai file di codice Visual Basic. Il file appare nella gerarchia visuale del progetto in **Esplora soluzioni** e il suo contenuto si apre nell'editor.
 
@@ -170,7 +200,7 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
-::: moniker range="Vs-2017"
+::: moniker range="vs-2017"
 
 2. Nel riquadro sinistro espandere **Visual Basic** e scegliere la categoria **Test**. Nel riquadro centrale scegliere il modello di progetto **Progetto unit test (.NET Framework)**. Assegnare al progetto il nome **QuickTest** e quindi scegliere **OK**.
 
@@ -180,7 +210,7 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 2. Nella finestra di dialogo **Aggiungi un nuovo progetto** immettere il testo **unit test** nella casella di ricerca nella parte superiore e quindi selezionare **Visual Basic** in **Linguaggio**.
 
@@ -192,13 +222,27 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+2. Nella finestra **di** dialogo Aggiungi un nuovo progetto immettere il testo **unit test** nella casella  di ricerca nella  parte superiore e quindi selezionare Visual Basic nell'elenco a discesa Tutte le lingue.
+
+3. Scegliere il modello **Progetto unit test (.NET Framework)** e quindi scegliere **Avanti**.
+
+4. Assegnare al progetto il nome **QuickTest** e quindi scegliere **Crea**.
+
+   Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.vb*.
+
+::: moniker-end
+
 ## <a name="add-a-project-reference"></a>Aggiungere un riferimento al progetto
 
-Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progetto **QuickDate**, pertanto è necessario aggiungere un riferimento a tale progetto. Questa operazione crea una *dipendenza di compilazione*, vale a dire che quando si crea la soluzione, **QuickDate** viene compilato prima di **QuickTest**.
+Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progetto **QuickDate**, pertanto è necessario aggiungere un riferimento a tale progetto. Il riferimento crea una *dipendenza di* compilazione tra i due progetti, ovvero quando si compila la soluzione, **QuickDate** viene compilato prima **di QuickTest**.
+
+::: moniker range="vs-2019"
 
 1. Scegliere il nodo **Riferimenti** nel progetto **QuickTest**, quindi nel menu di scelta rapida o nel menu a comparsa scegliere **Aggiungi riferimento**.
 
-   ![Menu Aggiungi riferimento](media/tutorial-projects-add-reference-vb.png)
+   ![Creenshot che mostra il menu di scelta rapida per il nodo Riferimenti nel progetto QuickTest, con l'opzione "Aggiungi riferimento" selezionata.](media/tutorial-projects-add-reference-vb.png)
 
    Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
 
@@ -206,7 +250,25 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    Viene aggiunto un riferimento al progetto **QuickDate**.
 
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. Scegliere il nodo **Riferimenti** nel progetto **QuickTest**, quindi nel menu di scelta rapida o nel menu a comparsa scegliere **Aggiungi riferimento**.
+
+   :::image type="content" source="media/vs-2022/tutorial-projects-add-reference-vb.png" alt-text="Screenshot che mostra il menu di scelta rapida per il nodo Riferimenti nel progetto QuickTest, con l'opzione 'Aggiungi riferimento' selezionata.":::
+
+   Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
+
+1. Nel riquadro sinistro espandere **Progetti** e scegliere **Soluzione**. Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi scegliere il pulsante **OK**.
+
+   Viene aggiunto un riferimento al progetto **QuickDate**.
+
+::: moniker-end
+
 ## <a name="add-test-code"></a>Aggiungere codice di test
+
+::: moniker range="vs-2019"
 
 1. Ora si aggiungerà codice di test al file di codice di Visual Basic. Sostituire il contenuto di *UnitTest1.vb* con il codice seguente.
 
@@ -232,28 +294,92 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    Il file di codice sarà simile al seguente:
 
-   ![Visual Basic (codice)](media/tutorial-projects-code-vb.png)
+   ![Screenshot che mostra il codice per Calendar.vb nella finestra dell'editor Visual Basic codice, dopo l'aggiunta delle righe di attributo Imports e Assembly.](media/tutorial-projects-code-vb.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. Ora si aggiungerà codice di test al file di codice di Visual Basic. Sostituire il contenuto di *UnitTest1.vb* con il codice seguente.
+
+   ```vb
+   <TestClass()> Public Class UnitTest1
+
+       <TestMethod()> Public Sub TestGetCurrentDate()
+           Assert.AreEqual(Date.Now.Date, QuickDate.Calendar.GetCurrentDate())
+       End Sub
+
+   End Class
+   ```
+
+   Sotto alcune parti del codice viene visualizzata una linea rossa ondulata. Per risolvere l'errore si imposterà il progetto di test come [assembly Friend](/dotnet/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies) del progetto **QuickDate**.
+
+1. Tornare al progetto **QuickDate**, aprire il file *Calendar.vb*, se non è già aperto, e usare la seguente [istruzione Imports](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type) e l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> per risolvere l'errore nel progetto di test.
+
+   ```vb
+   Imports System.Runtime.CompilerServices
+
+   <Assembly: InternalsVisibleTo("QuickTest")>
+   ```
+
+   Il file di codice sarà simile al seguente:
+
+   :::image type="content" source="media/vs-2022/tutorial-projects-code-vb.png" alt-text="Screenshot che mostra il codice per Calendar.vb nella finestra dell'editor Visual Basic codice dopo l'aggiunta delle righe di attributo Imports e Assembly.":::
+
+::: moniker-end
 
 ## <a name="project-properties"></a>Proprietà progetto
+
+::: moniker range="vs-2019"
 
 La riga del file *Calendar.vb* contenente l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> fa riferimento al nome assembly, cioè al nome file, del progetto **QuickTest**. Il nome assembly può non corrispondere al nome del progetto. Per trovare il nome assembly di un progetto, aprire le proprietà del progetto.
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**. È anche possibile fare doppio clic su **Progetto** in **Esplora soluzioni**.
 
-   Le *pagine delle proprietà* per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+   Le *pagine delle* proprietà per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si vuole modificare il nome dell'assembly, è qui che si vuole farlo. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
-   ![Proprietà progetto](../media/tutorial-projects-properties.png)
+   ![Screenshot che mostra la scheda Applicazione delle pagine delle proprietà per il progetto QuickTest. Il campo Nome assembly è evidenziato e il valore è "QuickTest".](../media/tutorial-projects-properties.png)
 
 1. Esplorare le altre schede delle pagine proprietà del progetto, quali **Compilazione** e **Impostazioni**. Queste schede variano a seconda del tipo di progetto.
 
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+La riga nel file *Calendar.vb* che contiene l'attributo fa riferimento al nome <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> dell'assembly (nome file) del **progetto QuickTest.** Il nome assembly può non corrispondere al nome del progetto. Per trovare il nome assembly di un progetto, aprire le proprietà del progetto.
+
+1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**. È anche possibile fare doppio clic su **Progetto** in **Esplora soluzioni**.
+
+   Le *pagine delle* proprietà per il progetto vengono aperte nella **scheda** Applicazione. Le pagine delle proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si vuole modificare il nome dell'assembly, è qui che si vuole farlo. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+
+   :::image type="content" source="media/vs-2022/tutorial-projects-properties.png" alt-text="Screenshot che mostra la scheda Applicazione delle pagine delle proprietà per il progetto QuickTest. Il campo Nome assembly è evidenziato e il valore è &quot;QuickTest&quot;.":::
+
+1. Esplorare le altre schede delle pagine proprietà del progetto, quali **Compilazione** e **Impostazioni**. Queste schede variano a seconda del tipo di progetto.
+
+::: moniker-end
 ## <a name="optional-run-the-test"></a>(Facoltativo) Eseguire il test
 
-Se si vuole verificare che il unit test funzioni, scegliere Test Esegui tutti i test dalla barra dei  >    >   menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+::: moniker range="vs-2019"
 
-![Team Explorer in Visual Studio mostra che il test è stato superato](../media/tutorial-projects-test-explorer.png)
+Se si vuole verificare che il unit test funzioni, scegliere **Test** Esegui tutti i test  >    >   dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+
+![Screenshot di Esplora test in Visual Studio che mostra che il test TestGetCurrentDate è stato superato.](../media/tutorial-projects-test-explorer.png)
 
 > [!TIP]
 > Se **Esplora Test** non si apre automaticamente, aprirlo scegliendo **Test** > **Windows** > **Esplora Test** dalla barra dei menu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Se si vuole verificare che il unit test funzioni, scegliere **Test** Esegui tutti i test  >   dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+
+:::image type="content" source="media/vs-2022/tutorial-projects-test-explorer.png" alt-text="Screenshot di Esplora test in Visual Studio che mostra che il test TestGetCurrentDate è stato superato.":::
+
+> [!TIP]
+> Se **Esplora Test** non si apre automaticamente, aprirlo scegliendo **Test** > **Windows** > **Esplora Test** dalla barra dei menu.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Passaggi successivi
 

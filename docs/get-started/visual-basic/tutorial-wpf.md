@@ -15,11 +15,11 @@ manager: jmartens
 ms.workload:
 - dotnet
 ms.openlocfilehash: b33078255f2a85bc9067e3c9b7a8b4e0412b8fe6
-ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "127920348"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431260"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: Creare un'applicazione semplice con Visual Basic
 
@@ -89,7 +89,7 @@ Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzio
 
 Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni** vengono visualizzati gli elementi indicati di seguito.
 
-![Screenshot che mostra i file nel progetto e nella soluzione HelloWPFApp nel Esplora soluzioni.](../media/vs-2019/exploreide-hellowpfappfiles.png)
+![Screenshot che mostra i file nel progetto e nella soluzione HelloWPFApp nella Esplora soluzioni.](../media/vs-2019/exploreide-hellowpfappfiles.png)
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzio
 
    :::image type="content" source="media/vs-2022/start-window-create-new-project.png" alt-text="Screenshot della finestra iniziale in Visual Studio 2022 con l'opzione &quot;Crea un nuovo progetto&quot; evidenziata.":::
 
-1. Nella schermata **Crea un nuovo progetto** cercare "WPF" e selezionare Visual Basic nell'elenco a discesa Tutti i linguaggi.   Scegliere **App WPF (.NET Framework)** e quindi scegliere **Avanti.**
+1. Nella schermata **Crea un nuovo progetto** cercare "WPF" e  selezionare Visual Basic **nell'elenco** a discesa Tutti i linguaggi. Scegliere **App WPF (.NET Framework)** e quindi scegliere **Avanti.**
 
    :::image type="content" source="media/vs-2022/explore-ide-new-wpf-app-project-vb.png" alt-text="Screenshot della finestra di dialogo &quot;Crea un nuovo progetto&quot; con &quot;WPF&quot; immesso nella casella di ricerca, &quot;Visual Basic&quot; selezionato nell'elenco delle lingue e il modello di progetto &quot;App WPF (.NET Framework)&quot; evidenziato.":::
 
@@ -109,7 +109,7 @@ Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzio
 
 Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni** vengono visualizzati gli elementi indicati di seguito.
 
-:::image type="content" source="media/vs-2022/explore-ide-hello-wpf-app-files.png" alt-text="Screenshot che mostra i file nel progetto e nella soluzione HelloWPFApp nel Esplora soluzioni.":::
+:::image type="content" source="media/vs-2022/explore-ide-hello-wpf-app-files.png" alt-text="Screenshot che mostra i file nel progetto e nella soluzione HelloWPFApp nella Esplora soluzioni.":::
 
 ::: moniker-end
 
@@ -208,7 +208,7 @@ Si aggiungeranno quindi due [controlli RadioButton](/dotnet/framework/wpf/contro
 
 1. Nella finestra **Proprietà** per il controllo RadioButton sinistro modificare la proprietà **Nome** (la proprietà nella parte superiore della finestra **Proprietà** ) in `HelloButton`.
 
-     ![Screenshot che mostra il Esplora soluzioni Finestra Proprietà per il pulsante di opzione "HelloButton".](../media/exploreide-buttonproperties.png)
+     ![Screenshot che mostra la Esplora soluzioni Finestra Proprietà per il pulsante di opzione "HelloButton".](../media/exploreide-buttonproperties.png)
 
 1. Nella finestra **Proprietà** per il controllo RadioButton destro modificare la proprietà **Nome** in `GoodbyeButton`, quindi salvare le modifiche.
 
@@ -230,7 +230,7 @@ Si aggiungeranno quindi due [controlli RadioButton](/dotnet/framework/wpf/contro
 
 1. Nella finestra **Proprietà** per il controllo RadioButton sinistro modificare la proprietà **Nome** (la proprietà nella parte superiore della finestra **Proprietà** ) in `HelloButton`.
 
-     :::image type="content" source="media/vs-2022/explore-ide-button-properties.png" alt-text="Screenshot che mostra il Esplora soluzioni Finestra Proprietà per il pulsante di opzione &quot;HelloButton&quot;.":::
+     :::image type="content" source="media/vs-2022/explore-ide-button-properties.png" alt-text="Screenshot che mostra la Esplora soluzioni Finestra Proprietà per il pulsante di opzione &quot;HelloButton&quot;.":::
 
 1. Nella finestra **Proprietà** per il controllo RadioButton destro modificare la proprietà **Nome** in `GoodbyeButton`, quindi salvare le modifiche.
 
@@ -444,9 +444,9 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
    La riga `MessageBox.Show("Hello.")` viene evidenziata in giallo. Nella parte inferiore dell'IDE, le finestre Auto, Variabili locali ed Espressioni di controllo sono ancorate insieme sul lato sinistro e le finestre Stack di chiamate, Punti di interruzione, Impostazioni eccezione, Comando, Controllo immediato e Output sono ancorate insieme sul lato destro.
 
-   :::image type="content" source="media/vs-2022/explore-ide-debug-breakpoint.png" alt-text="Screenshot che mostra una sessione di debug in Visual Studio codice, diagnostica. Si aprono le finestre Auto e Stack di chiamate. L'esecuzione viene arrestata in corrispondenza di un punto di interruzione in Greetings.xaml.vb.":::
+   :::image type="content" source="media/vs-2022/explore-ide-debug-breakpoint.png" alt-text="Screenshot che mostra una sessione di debug Visual Studio codice, diagnostica. Si aprono le finestre Auto e Stack di chiamate. L'esecuzione viene arrestata in corrispondenza di un punto di interruzione in Greetings.xaml.vb.":::
 
-1. Sulla barra dei menu scegliere **Debug** > **istruzione/uscita**.
+1. Sulla barra dei menu scegliere **Esegui debug** > **istruzione/uscita**.
 
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
 
@@ -476,7 +476,7 @@ Nell'app in esecuzione dovrebbe essere visualizzato un widget nella parte superi
 
 ::: moniker range=">=vs-2022&quot;
 
-:::image type="content" source="media/vs-2022/explore-ide-live-visual-tree.png" alt-text="Screenshot che mostra la finestra Albero visuale live che visualizza un albero contenente tutti gli elementi visivi per HelloWPFApp.exe.":::
+:::image type=&quot;content&quot; source=&quot;media/vs-2022/explore-ide-live-visual-tree.png&quot; alt-text=&quot;Screenshot che mostra la finestra Albero visuale live che visualizza un albero contenente tutti gli elementi visivi per HelloWPFApp.exe.&quot;:::
 
 ::: moniker-end
 ### <a name=&quot;build-a-release-version-of-the-application&quot;></a>Compilare una versione di rilascio dell'applicazione
@@ -485,7 +485,7 @@ Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di 
 
 1. Nel menu principale selezionare **Compila** soluzione pulita per eliminare i file intermedi e i file di  >   output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
-1. Modificare la configurazione della build per HelloWPFApp da **Debug** a **Versione** usando il controllo a discesa sulla barra degli strumenti (attualmente è &quot;Debug").
+1. Modificare la configurazione della build per HelloWPFApp da **Debug** a **Release** usando il controllo a discesa sulla barra degli strumenti (attualmente è &quot;Debug").
 
 1. Compilare la soluzione scegliendo **Compila**  >  **soluzione**.
 

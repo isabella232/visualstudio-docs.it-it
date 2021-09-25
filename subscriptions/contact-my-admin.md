@@ -8,14 +8,14 @@ ms.date: 05/18/2021
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per assistenza su domande o problemi.
 ms.openlocfilehash: acfd0a68cc9bbdf8d19c352747d8607bf5e6b6d6
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128329417"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429678"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
-Se la Visual Studio viene fornita dall'istituto di istruzione o dell'istituto di istruzione, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni o "amministratore".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
+Se la Visual Studio viene fornita dall'istituto di istruzione o dall'istituto di istruzione, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni o "amministratore".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
 
 Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe non conoscere l'amministratore e potrebbe quindi essere difficile capire come ottenere assistenza.  È stata aggiunta una nuova funzionalità al portale dei sottoscrittori per contattare in modo più semplice l'amministratore.   
 
@@ -26,7 +26,7 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
    > [!div class="mx-imgBorder"]
    > ![Contact my Admin (Contatta amministratore)](_img/contact-my-admin/contact-my-admin-button.png "Selezionare il pulsante Contatta l'amministratore, immettere il messaggio e selezionare Invia.")
 4. Immettere il messaggio per l'amministratore.
-5. Se si desidera ricevere una copia del messaggio inviato all'amministratore, scegliere la casella **di controllo Invia una** copia. 
+5. Se si desidera ricevere una copia del messaggio inviato all'amministratore, scegliere la casella di controllo Invia **una** copia. 
 6. Selezionare infine **Invia**.
 
 > [!NOTE]

@@ -2,27 +2,27 @@
 title: Panoramica di Visual Studio
 titleSuffix: ''
 description: Informazioni sull'Visual Studio di sviluppo integrato.
-ms.date: 06/29/2021
+ms.date: 09/14/2021
 ms.technology: vs-ide-general
 ms.topic: overview
 ms.custom:
 - vs-acquisition
 - vs-get-started
 - SEO-VS-2020
-author: anandmeg
+author: TerryGLee
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-ms.author: meghaanand
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c29344f4330c4d81f17b3c99652003fd1c510
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 59c3cab4b51a2eb5b9abc4c74fc96f1d8df6a5f7
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109877"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432754"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Benvenuti all'IDE di Visual Studio
 
@@ -32,9 +32,9 @@ ms.locfileid: "122109877"
 
 Esplorare più approfonditamente Visual Studio seguendo uno di questi articoli introduttivi:
 
-- Acquisire familiarità con l'editor di codice in [Guida introduttiva: usare l'editor del codice](../get-started/tutorial-editor.md)
+- Acquisire familiarità con l'editor di codice in [Learn per usare l'editor di codice](tutorial-editor.md).
 
-- Informazioni su come Visual Studio consente di organizzare il codice [Guida introduttiva: progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
+- Informazioni su Visual Studio il codice in [Informazioni su progetti e soluzioni.](tutorial-projects-solutions.md)
 
 Se l'utente è pronto per approfondire maggiormente le attività di codifica, il passo successivo è seguire una delle guide introduttive seguenti specifiche per lingua:
 
@@ -50,6 +50,6 @@ Se l'utente è pronto per approfondire maggiormente le attività di codifica, il
 
 ## <a name="see-also"></a>Vedi anche
 
-- Scoprire [altre funzionalità di Visual Studio](../ide/advanced-feature-overview.md)
-- Visitare [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Leggere il [Blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- Scoprire [altre Visual Studio funzionalità](../ide/advanced-feature-overview.md).
+- Visitare [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
+- Leggere il [blog Visual Studio .](https://devblogs.microsoft.com/visualstudio/)

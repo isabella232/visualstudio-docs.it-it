@@ -2,7 +2,7 @@
 title: Esplorare il codice con il debugger | Microsoft Docs
 description: "Informazioni su come usare il debugger Visual Studio per risolvere i problemi del codice. Gli argomenti includono: passare alla modalità di interruzione, eseguire il codice un'istruzione alla riga di codice ed eseguire fino a una destinazione."
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2018
+ms.date: 09/23/2021
 ms.topic: how-to
 f1_keywords:
 - vs.debug.execution
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 90272d2adf2e8a68019c3fff67fc4cd2ee4bd608
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: ab1298a0c6721d4044187e2582c2dbdd5e14326f
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126710393"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427278"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il debugger Visual Studio
 
@@ -37,11 +37,11 @@ In *modalità di interruzione* l'esecuzione dell'app viene sospesa mentre funzio
 
 - Per iniziare l'esecuzione del codice, premere **F10** o **F11.** In questo modo è possibile trovare rapidamente il punto di ingresso dell'app, quindi continuare a premere i comandi del passaggio per spostarsi nel codice.
 
-- [Eseguire fino a una posizione o una funzione](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)specifica, ad esempio impostando un punto di [interruzione](using-breakpoints.md) e avviando l'app.
+- [Eseguire fino a una posizione o una funzione](#run-to-a-specific-location-or-function)specifica, ad esempio impostando un punto di [interruzione](using-breakpoints.md) e avviando l'app.
 
    Ad esempio, dall'editor di codice in Visual Studio è possibile usare il comando Esegui fino al **cursore** per avviare l'app, il debugger collegato e passare alla modalità di interruzione, quindi **premere F11** per spostarsi nel codice.
 
-   ![Eseguire fino al cursore ed eseguire un'istruzione nel codice](../debugger/media/navigate-code-code-stepping.gif "Eseguire fino al cursore ed eseguire un'istruzione nel codice")
+   ![Eseguire fino al cursore ed eseguire un'istruzione nel codice](../debugger/media/navigate-code-code-stepping.gif "Eseguire fino al cursore ed eseguire un'istruzione al codice")
 
 In modalità di interruzione è possibile usare un'ampia gamma di comandi per spostarsi all'interno del codice. In modalità di interruzione è possibile esaminare i valori delle variabili per cercare violazioni o bug. Per alcuni tipi di progetto, è anche possibile apportare modifiche all'app in modalità di interruzione.
 
@@ -88,7 +88,7 @@ In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà es
 |**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione, **Step Over** esegue il codice, quindi sospende l'esecuzione in corrispondenza della prima riga di codice dopo la fine della funzione chiamata.|
 |**MAIUSC** + **F11**|**Esci da istruzione/routine**|**L'istruzione/uscita** continua l'esecuzione del codice e sospende l'esecuzione quando la funzione corrente viene restituita. Il debugger ignora la funzione corrente.|
 
-## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Eseguire fino a una posizione o a una funzione specifica
+## <a name="run-to-a-specific-location-or-function"></a>Eseguire fino a una posizione o a una funzione specifica
 
 È preferibile eseguire direttamente in una posizione o una funzione specifica quando si conosce esattamente il codice da esaminare o si sa da dove avviare il debug.
 
@@ -116,7 +116,7 @@ I punti di interruzione in Visual Studio forniscono un'ampia gamma di funzionali
 
 Se la funzione è in overload o in più di uno spazio dei nomi, è possibile scegliere quello desiderato nella finestra Punti **di** interruzione.
 
-![Punti di interruzione delle funzioni in overload](../debugger/media/dbg_execution_overloadedbreakpoints.png "Punti di interruzione delle funzioni in overload")
+![Punti di interruzione delle funzioni in overload](../debugger/media/dbg_execution_overloadedbreakpoints.png "Punti di interruzione di funzione in overload")
 
 **Per selezionare un punto di interruzione della funzione dallo stack di chiamate**
 
@@ -161,34 +161,34 @@ Il contatore del programma passa direttamente alla nuova posizione e le istruzio
 >- Nel codice gestito non è possibile spostare l'istruzione successiva se:
 >   - L'istruzione successiva è inclusa in un metodo diverso da quello dell'istruzione corrente.
 >   - Il debug è stato avviato dal debug JIT.
->   - È in corso la rimozione di uno stack di chiamate.
+>   - Rimozione dello stack di chiamate in corso.
 >   - È stata generata un'eccezione System.StackOverflowException or System.Threading.ThreadAbortException.
 
 ## <a name="debug-non-user-code"></a><a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Eseguire il debug di codice non utente
 
-Per impostazione predefinita, il debugger tenta di eseguire il debug solo del codice dell'app abilitando un'impostazione *denominata Just My Code*. Per altre informazioni sul funzionamento di questa funzionalità per linguaggi e tipi di progetto diversi e su come personalizzarla, [vedere](../debugger/just-my-code.md)Just My Code .
+Per impostazione predefinita, il debugger tenta di eseguire il debug solo del codice dell'app abilitando un'impostazione denominata *Just My Code*. Per altre informazioni sul funzionamento di questa funzionalità per linguaggi e tipi di progetto diversi e su come personalizzarla, [vedere](../debugger/just-my-code.md)Just My Code .
 
-Per esaminare il codice del framework, il codice della libreria di terze parti o le chiamate di sistema durante il debug, è possibile disabilitare Just My Code. In **Strumenti** (o **Debug**) > **Opzioni**  >  **di debug** deselezionare la casella **Just My Code** di controllo. Quando Just My Code è disabilitato, il codice non utente viene visualizzato nelle finestre del debugger e il debugger può eseguire un'istruzione nel codice non utente.
+Per esaminare il codice del framework, il codice della libreria di terze parti o le chiamate di sistema durante il debug, è possibile disabilitare Just My Code. In **Strumenti** (o **Debug**) > **Opzioni**  >  **di** debug deselezionare la casella di controllo **Just My Code** controllo. Quando Just My Code è disabilitato, il codice non utente viene visualizzato nelle finestre del debugger e il debugger può eseguire un'istruzione nel codice non utente.
 
 > [!NOTE]
 > Just My Code non è supportato per progetti per dispositivi.
 
 ### <a name="debug-system-code"></a>Eseguire il debug del codice di sistema
 
-Se sono stati caricati i simboli di debug per il codice di sistema Microsoft e il Just My Code è stato disabilitato, è possibile eseguire una chiamata di sistema come qualsiasi altra chiamata.
+Se sono stati caricati simboli di debug per il codice di sistema Microsoft e Just My Code disabilitato, è possibile eseguire una chiamata di sistema come qualsiasi altra chiamata.
 
-Per caricare i simboli Microsoft, vedere Configurare [i percorsi dei simboli e le opzioni di caricamento.](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-symbol-locations-and-loading-options)
+Per caricare i simboli Microsoft, vedere [Configurare i percorsi dei simboli e le opzioni di caricamento.](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#configure-symbol-locations-and-loading-options)
 
 **Per caricare i simboli per un componente di sistema specifico:**
 
-1. Durante il debug, aprire la **finestra** Moduli selezionando **Debug**  >  **Windows**  >  **Moduli** oppure premendo **CTRL** + **ALT** + **U.**
+1. Durante il debug, aprire la finestra  **Moduli** selezionando Debug Windows moduli oppure premendo  >    >    + **CTRL** + **ALT+U.**
 
-1. Nella finestra **Moduli** è possibile indicare quali moduli hanno simboli caricati nella **colonna Stato** simbolo. Fare clic con il pulsante destro del mouse sul modulo per cui si desidera caricare i simboli e **scegliere Carica simboli.**
+1. Nella finestra **Moduli** è possibile indicare quali moduli hanno simboli caricati nella **colonna Stato** simbolo. Fare clic con il pulsante destro del mouse sul modulo per cui si vogliono caricare i simboli e **scegliere Carica simboli**.
 
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito
- Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di istruzioni nelle proprietà o negli operatori, scegliere **Opzioni di**  >  **debug**. Nella pagina **Generale** debug deselezionare la casella di controllo Esecuzione istruzione/istruzione/esecuzione di proprietà e  >   operatori **(solo** gestito).
+ Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di istruzioni nelle proprietà o negli operatori, scegliere **Opzioni di**  >  **debug**. Nella pagina **Debug**  >  **generale** deselezionare la **casella di controllo Step over properties and operators (Solo gestito).**
 
 ## <a name="see-also"></a>Vedi anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
-- [Prima analisi del debug](../debugger/debugger-feature-tour.md)
+- [Prima di tutto esaminare il debug](../debugger/debugger-feature-tour.md)

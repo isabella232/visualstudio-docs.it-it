@@ -1,5 +1,5 @@
 ---
-title: Modificare Visual Studio carichi di lavoro, componenti, & Language Pack
+title: Modificare Visual Studio carichi di lavoro, componenti e Language Pack &
 titleSuffix: ''
 description: Informazioni dettagliate su come modificare Visual Studio.
 ms.date: 09/14/2021
@@ -19,11 +19,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 692b1aedf5c55d2162a28e96ae9cdbdadd9529e6
-ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "127920167"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128430287"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modificare Visual Studio carichi di lavoro, componenti e Language Pack
 
@@ -49,7 +49,7 @@ Oltre ad aver semplificato la personalizzazione di Visual Studio in base alle at
 
 ## <a name="launch-the-installer-to-modify-your-installation"></a>Avviare il programma di installazione per modificare l'installazione
 
-Per modificare l Visual Studio installazione, è prima di tutto necessario avviare il Programma di installazione di Visual Studio e quindi selezionare un'Visual Studio da modificare.
+Per modificare l Visual Studio installazione, è prima di tutto necessario avviare il Programma di installazione di Visual Studio e quindi selezionare un'Visual Studio di installazione da modificare.
 
 ::: moniker range="vs-2017"
 
@@ -57,7 +57,7 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
      Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
 
-     ![Screenshot che mostra la Programma di installazione di Visual Studio nel Windows 10 menu Start.](media/locate-the-visual-studio-installer.png "Individuare il programma di Microsoft Visual Studio di installazione")
+     ![Screenshot che mostra la Programma di installazione di Visual Studio nella Windows 10 menu Start.](media/locate-the-visual-studio-installer.png "Individuare il programma Microsoft Visual Studio installazione")
 
      >[!TIP]
      >In alcuni computer il programma di installazione di Visual Studio potrebbe trovarsi sotto la lettera **"M"** come **Microsoft Visual Studio: programma di installazione**.<br/><br/> In alternativa, è possibile trovare il programma di installazione di Visual Studio nel percorso seguente: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -90,7 +90,7 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
 1. Nel programma di installazione cercare l'edizione di Visual Studio installata e quindi scegliere **Modifica**.
 
-     ![Screenshot che mostra un elenco Visual Studio installazioni nel Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-modify.png "Scegliere Visual Studio 2019 e quindi modificare")
+     ![Screenshot che mostra un elenco Visual Studio installazioni nel Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-modify.png "Scegliere Visual Studio edizione 2019 e quindi modificare")
 
      > [!IMPORTANT]
      > Se è presente un aggiornamento in sospeso, il pulsante Modifica si trova in una posizione diversa. In questo modo, è possibile Visual Studio senza aggiornarlo, se necessario. Scegliere **Altro** e quindi **Modifica**.
@@ -103,7 +103,7 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
 1. Esistono molti modi per aprire il Programma di installazione di Visual Studio:
 
-   - Nell'Windows menu Start è possibile cercare "programma di installazione" e quindi selezionare Programma di installazione di Visual Studio **dai** risultati.
+   - Nell'Windows menu Start è possibile cercare "installer" e quindi selezionare Programma di installazione di Visual Studio **risultati.**
 
      ![Screenshot che mostra il risultato di una menu Start ricerca del Programma di installazione di Visual Studio.](media/vs-2022/vs-installer.png "Cercare il Programma di installazione di Visual Studio")
 
@@ -111,11 +111,11 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
    - Se è stato aperto Visual Studio, **selezionare** Strumenti Ottieni strumenti > **e funzionalità...**, che apre il Programma di installazione di Visual Studio.
 
-     ![Screenshot che mostra il menu Visual Studio strumenti di 2022.](media/vs-2022/vs-tools-menu.png "Visual Studio strumenti di 2022")
+     ![Screenshot che mostra il menu Visual Studio strumenti di 2022.](media/vs-2022/vs-tools-menu.png "Visual Studio menu degli strumenti di 2022")
 
    Potrebbe essere richiesto di aggiornare il Programma di installazione di Visual Studio prima di continuare. In questo caso, seguire i prompt.
 
-1. Nel Programma di installazione di Visual Studio cercare l'installazione Visual Studio da modificare e quindi scegliere il **pulsante** Modifica.
+1. Nel Programma di installazione di Visual Studio cercare l'installazione Visual Studio da modificare e quindi scegliere **il pulsante** Modifica.
 
      ![Screenshot che mostra un elenco Visual Studio installazioni nel Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-modify.png "Scegliere un'Visual Studio da modificare")
 
@@ -135,7 +135,7 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
 1. Scegliere se accettare l'opzione predefinita **Installa durante il download** o selezionare l'opzione **Scarica tutto, quindi installa**.
 
-    ![Screenshot che mostra le opzioni di download e installazione nel Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di eseguire l'installazione durante il download o di scaricare prima e installare in un secondo momento")
+    ![Screenshot che mostra le opzioni di download e installazione nel Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di installare durante il download o per scaricare prima e installare in un secondo momento")
 
     L'opzione "Scarica tutto, quindi installa" è utile se si preferisce scaricare prima tutto il software e quindi installarlo in un secondo momento.
 
@@ -160,7 +160,7 @@ Per modificare l Visual Studio installazione, è prima di tutto necessario avvia
 
 1. Scegliere se accettare l'opzione predefinita **Installa durante il download** o selezionare l'opzione **Scarica tutto, quindi installa**.
 
-    ![Screenshot che mostra le opzioni di download e installazione nel Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di eseguire l'installazione durante il download o di scaricare prima e installare in un secondo momento")
+    ![Screenshot che mostra le opzioni di download e installazione nel Programma di installazione di Visual Studio.](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di installare durante il download o per scaricare prima e installare in un secondo momento")
 
     L'opzione "Scarica tutto, quindi installa" è utile se si preferisce scaricare prima tutto il software e quindi installarlo in un secondo momento.
 
@@ -179,11 +179,11 @@ I carichi di lavoro contengono i componenti necessari per il linguaggio di progr
 
 1. Nel Programma di installazione di Visual Studio scegliere la scheda **Carichi** di lavoro e quindi selezionare o deselezionare i carichi di lavoro desiderati.
 
-    ![Screenshot che mostra la scheda Carichi di lavoro del Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-modify-workloads.png "Scegliere i carichi di lavoro nella Programma di installazione di Visual Studio")
+    ![Screenshot che mostra la scheda Carichi di lavoro del Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-modify-workloads.png "Scegliere i carichi di lavoro nel Programma di installazione di Visual Studio")
 
 1. Per aggiungere più componenti di quelli installati da un carico di lavoro, scegliere la scheda **Singoli** componenti e quindi selezionare o deselezionare i singoli componenti desiderati.
 
-    ![Screenshot che mostra la scheda Singoli componenti del Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-individual-components.png "Scegliere i singoli componenti nella Programma di installazione di Visual Studio")
+    ![Screenshot che mostra la scheda Singoli componenti del Programma di installazione di Visual Studio.](media/vs-2022/vs-installer-individual-components.png "Scegliere singoli componenti nel Programma di installazione di Visual Studio")
 
 1. Scegliere se si vuole eseguire **l'installazione durante il download** o **scaricare tutto, quindi installare**. L'opzione predefinita Installa **durante il download** consente di risparmiare tempo complessivo avviando l'installazione in precedenza.
 

@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: 8c2f00b20505241a729833c9d59e1404404ebfd7
-ms.sourcegitcommit: 022ac348337f77c899996ac81060a969ebfb64bb
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "128134043"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428178"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
@@ -21,7 +21,7 @@ L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata
 Per usare l'account per sviluppatore di Windows, è necessario configurare un account o accedere con un account esistente.
 
 > [!IMPORTANT]
-> La creazione di un account Windows Developer richiede l'uso di un account Microsoft (MSA).  L'uso Azure Active Directory account non è supportato.  
+> La creazione di un account Windows developer richiede l'uso di un account Microsoft (MSA).  L'uso Azure Active Directory account non è supportato.  
 
 È consigliabile creare una finestra del browser "privata" per questo processo.  Ad esempio, in Google Chrome creare una nuova finestra "in incognito".  In Internet Explorer è possibile creare una nuova finestra di "InPrivate Browsing".
 

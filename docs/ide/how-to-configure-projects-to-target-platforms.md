@@ -2,7 +2,7 @@
 title: 'Procedura: configurare progetti per le piattaforme di destinazione'
 description: Informazioni su Visual Studio consente di configurare le applicazioni per piattaforme diverse, incluse le piattaforme a 64 bit.
 ms.custom: SEO-VS-2020
-ms.date: 08/16/2019
+ms.date: 09/13/2021
 ms.technology: vs-ide-compile
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,16 +20,25 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a298f19f247c45740e87074804755f6ca691ec
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: b74eb7d0220867b80337b89ef70506bac31b7f6a
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126709429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429017"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: configurare progetti per le piattaforme di destinazione
 
-Visual Studio consente di configurare le applicazioni per diverse piattaforme di destinazione, tra cui le piattaforme a 64 bit. Per altre informazioni sul supporto della piattaforma a 64 bit in Visual Studio, vedere [Applicazioni a 64 bit.](/dotnet/framework/64-bit-apps)
+Visual Studio consente di configurare le compilazioni dell'applicazione per piattaforme diverse, incluse le piattaforme a 64 bit. Per altre informazioni sul supporto della piattaforma a 64 bit in Visual Studio, vedere [Applicazioni a 64 bit.](/dotnet/framework/64-bit-apps)
+
+::: moniker range="vs-2022"
+> [!NOTE]
+> Visual Studio 2022 Preview viene eseguito come applicazione a 64 bit. Questo è completamente separato dalle piattaforme che è possibile usare come destinazione per i progetti in Visual Studio. È possibile usare qualsiasi versione di Visual Studio per le piattaforme a 32 bit e a 64 bit.
+::: moniker-end
+::: moniker range="<=vs-2019"
+> [!NOTE]
+> Visual Studio viene eseguito come applicazione a 32 bit. Questo è completamente separato dalle piattaforme che è possibile usare come destinazione per i progetti in Visual Studio. È possibile usare qualsiasi versione di Visual Studio per le piattaforme a 32 bit e a 64 bit.
+::: moniker-end
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Individuazione delle piattaforme di destinazione con Gestione configurazione
 
@@ -37,7 +46,7 @@ La **Gestione configurazione** consente di aggiungere rapidamente una nuova piat
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Per configurare un progetto per una piattaforma a 64 bit
 
-1. Sulla barra dei menu scegliere **Compila** Gestione configurazione  >  .
+1. Sulla barra dei menu **scegliere** Compila Gestione configurazione  >  .
 
 2. Nell'elenco **Piattaforma soluzione attiva** scegliere una piattaforma a 64 bit di destinazione per la soluzione e quindi scegliere il pulsante **Chiudi**.
 
@@ -52,10 +61,10 @@ La **Gestione configurazione** consente di aggiungere rapidamente una nuova piat
 
     3. Se si vuole copiare le impostazioni da una configurazione di piattaforma corrente, selezionarla e quindi fare clic sul pulsante **OK**.
 
-Le proprietà per tutti i progetti destinati alla piattaforma a 64 bit vengono aggiornate e la compilazione successiva del progetto verrà ottimizzata per le piattaforme a 64 bit. 
+Le proprietà per tutti i progetti nella soluzione che hanno come destinazione la piattaforma a 64 bit vengono aggiornate e la build successiva del progetto verrà ottimizzata per le piattaforme a 64 bit.
 
 > [!NOTE]
-> Il **nome della piattaforma Win32** viene usato per i progetti C++ e significa **x86**. Visual Studio considera sia le piattaforme a livello di progetto che le piattaforme a livello di soluzione e le piattaforme di progetto provengono dai sistemi di progetto specifici del linguaggio. I progetti C++ usano **Win32** **e x64,** ma le piattaforme della soluzione usano **x86** **e x64**. Quando si sceglie **x86** come configurazione della soluzione, Visual Studio la piattaforma **Win32** per i progetti C++. Per visualizzare le impostazioni della piattaforma a livello di progetto e della piattaforma a **livello** di soluzione, aprire Gestione configurazione e prendere nota delle due impostazioni della piattaforma. La piattaforma a livello di soluzione è visualizzata nell'elenco a discesa **Piattaforma soluzione** attiva e la tabella mostra la piattaforma a livello di progetto per ogni progetto.
+> Il **nome della piattaforma Win32** viene usato per i progetti C++ e significa **x86**. Visual Studio considera sia le piattaforme a livello di progetto che le piattaforme a livello di soluzione e le piattaforme di progetto provengono dai sistemi di progetto specifici del linguaggio. I progetti C++ usano **Win32** **e x64,** ma le piattaforme della soluzione usano **x86** **e x64**. Quando si sceglie **x86** come configurazione della soluzione, Visual Studio la **piattaforma Win32** per i progetti C++. Per visualizzare le impostazioni della piattaforma a livello di progetto e della piattaforma a livello di soluzione, aprire Gestione configurazione **e** prendere nota delle due impostazioni della piattaforma. La piattaforma a livello di soluzione è visualizzata nell'elenco a discesa **Piattaforma soluzione** attiva e la tabella mostra la piattaforma a livello di progetto per ogni progetto.
 > ![Screenshot che mostra la piattaforma della soluzione e la piattaforma del progetto](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>Individuazione delle piattaforme di destinazione in Progettazione progetti
@@ -64,11 +73,11 @@ Anche **Progettazione progetti** consente di creare diverse piattaforme di desti
 
 L'esecuzione di questa attività varia in base al linguaggio di programmazione usato. Per altre informazioni, vedere i collegamenti seguenti:
 
-- Per i progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], vedere [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- Per Visual Basic, vedere [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
-- Per i progetti [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], vedere [Pagina Compilazione, Creazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Per i progetti C#, vedere [pagina Compilazione, Project Designer (C#).](../ide/reference/build-page-project-designer-csharp.md)
 
-- Per i progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vedere [/clr (Compilazione Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- Per i progetti C++/CLI, vedere [/clr (compilazione Common Language Runtime).](/cpp/build/reference/clr-common-language-runtime-compilation)
 
 ## <a name="manually-editing-the-project-file"></a>Modifica manuale del file di progetto
 

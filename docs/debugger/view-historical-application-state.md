@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c906c7cc88f2426dfe090d7468cce61c076aa8aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 58070781e70c3da977d3d6db5e5e5a6b71f0796b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133861"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426790"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Controllare gli stati precedenti delle app usando la funzionalità per tornare indietro di IntelliTrace in Visual Studio (Visual Studio Enterprise)
 
@@ -113,7 +113,7 @@ L'impatto sulle prestazioni generali dell'esecuzione delle istruzioni dipende da
     1. Installare il componente Set di strumenti VC++ 2015.3 versione 140 per desktop (x86, x64) dal programma di installazione di Visual Studio.
     2. Compilare l'applicazione di destinazione.
     3. Dalla riga di comando usare lo strumento editbin per impostare il flag `Largeaddressaware` per il file eseguibile di destinazione. Ad esempio, si potrebbe usare questo comando (dopo aver aggiornato il percorso): "C:\Programmi (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
-    4. Premere **F5** per avviare il debug. Da questo punto in poi gli snapshot vengono creati in corrispondenza di passaggi e punti di interruzione del debugger.
+    1. Premere **F5** per avviare il debug. Da questo punto in poi gli snapshot vengono creati in corrispondenza di passaggi e punti di interruzione del debugger.
 
        > [!Note]
        > Il flag `Largeaddressaware` deve essere impostato ogni volta che il file eseguibile viene ricompilato con modifiche.

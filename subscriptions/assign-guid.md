@@ -1,17 +1,18 @@
 ---
 title: Assegnare GUID specifici ai Visual Studio sottoscrittori | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.date: 03/19/2021
 ms.topic: conceptual
+ms.assetid: f9c82d7d-55bd-4e41-a170-6077b28ba5af
 description: Informazioni su come gli amministratori possono specificare il GUID della sottoscrizione per i sottoscrittori
-ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 7f451473ccee1f6d1a99d1aaa39f1f1817603aaf
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126709982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428080"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare sottoscrizioni specifiche nel portale Sottoscrizioni di Visual Studio di amministrazione
 
@@ -47,7 +48,7 @@ Se in precedenza è stato usato lo strumento Di esportazione, si noterà che son
 
 ### <a name="upload-your-new-assignments"></a>Upload le nuove assegnazioni
 
-Il passaggio finale consiste nel scaricare **il** modello Di aggiunta in blocco, compilare le informazioni necessarie per le sottoscrizioni da assegnare e caricare il modello.  Per una descrizione completa del processo, vedere [l'articolo Aggiungere più](assign-license-bulk.md) utenti.  
+Il passaggio finale consiste nel scaricare **il** modello Aggiunta in blocco, compilare le informazioni necessarie per le sottoscrizioni da assegnare e caricare il modello.  Per una descrizione completa del processo, vedere [l'articolo Aggiungere più](assign-license-bulk.md) utenti.  
 
 > [!IMPORTANT]
 > Per assicurarsi che il caricamento sia stato completato correttamente, assicurarsi che:

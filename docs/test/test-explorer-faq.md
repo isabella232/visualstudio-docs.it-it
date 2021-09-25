@@ -18,11 +18,11 @@ author: kendrahavens
 manager: jmartens
 ms.technology: vs-ide-test
 ms.openlocfilehash: fd53079017ebfce2bb2602754a14d3f2e6e5547a
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128307093"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429082"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
@@ -112,7 +112,7 @@ In Visual Studio 2019, verranno rimosse alcune API di finestra di test in preced
 
 Tutti i progetti di test devono includere il riferimento NuGet all'adattatore di test .NET nel relativo file csproj. In caso contrario, viene visualizzato l'output di test seguente nel progetto se viene avviata l'individuazione da parte di un'estensione dell'adattatore di test dopo una compilazione o se l'utente tenta di eseguire i test selezionati:
 
-**Il progetto {} di test non fa riferimento ad alcun adattatore NuGet .NET. L'individuazione o l'esecuzione dei test potrebbe non funzionare per questo progetto. È consigliabile fare riferimento NuGet adattatori di test in ogni progetto di test .NET nella soluzione.**
+**Il progetto di test non fa riferimento ad alcun {} adattatore NuGet .NET. L'individuazione o l'esecuzione dei test potrebbe non funzionare per questo progetto. È consigliabile fare riferimento NuGet adattatori di test in ogni progetto di test .NET nella soluzione.**
 
 Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i pacchetti NuGet dell'adattatore di test. Questo requisito migliora notevolmente le prestazioni e causa meno problemi con l'integrazione continua. Altre informazioni sulla deprecazione dell'estensione dell'adattatore di test .NET sono disponibili nelle [note sulla versione](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
@@ -147,7 +147,7 @@ Per correggere l'errore:
 ::: moniker range=">=vs-2019"
 ## <a name="using-preview-features"></a>Uso delle funzionalità di anteprima
 
-In Visual Studio 2019 è possibile acconsentire esplicitamente alle funzionalità di anteprima in Strumenti **> opzioni > ambiente > funzionalità di anteprima.**
+In Visual Studio 2019 è possibile acconsentire esplicitamente alle funzionalità di anteprima in Strumenti > opzioni > **e > funzionalità di anteprima.**
 ::: moniker-end
 ::: moniker range="vs-2017"
 ## <a name="using-feature-flags"></a>Uso dei flag di funzionalità

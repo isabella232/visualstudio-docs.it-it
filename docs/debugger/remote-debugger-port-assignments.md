@@ -1,8 +1,8 @@
 ---
-title: Assegnazioni di porte del debugger remoto | Microsoft Docs
-description: Informazioni Visual Studio di porta del debugger remoto in sistemi operativi a 32 bit, sistemi operativi a 64 bit e Azure. Informazioni sulla porta di individuazione.
+title: Assegnazioni delle porte del debugger remoto | Microsoft Docs
+description: Informazioni Visual Studio delle porte del debugger remoto in sistemi operativi a 32 bit, sistemi operativi a 64 bit e Azure. Informazioni sulla porta di individuazione.
 ms.custom: SEO-VS-2020
-ms.date: 05/18/2018
+ms.date: 09/10/2021
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
@@ -11,16 +11,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d07d84ce2d547a5f2910b8afa7ade652d03028c1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 7b7e446fc0ed9300610ae265ac2aad07039c350a
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126627947"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427213"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+- Visual Studio 2022: 4026
+::: moniker-end
+::: moniker range="vs-2019"
 - Visual Studio 2019: 4024
 ::: moniker-end
 - Visual Studio 2017: 4022
@@ -35,7 +38,10 @@ In altre parole, il numero della porta assegnata al debugger remoto viene increm
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 32 bit
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+ TCP 4026 (in Visual Studio 2022) è la porta principale ed è necessaria per tutti gli scenari. Può essere configurata dalla riga di comando o nella finestra del debugger remoto.
+::: moniker-end
+::: moniker range="vs-2019"
  TCP 4024 (in Visual Studio 2019) è la porta principale ed è necessaria per tutti gli scenari. Può essere configurata dalla riga di comando o nella finestra del debugger remoto.
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -44,12 +50,15 @@ In altre parole, il numero della porta assegnata al debugger remoto viene increm
 
  Nella finestra del debugger remoto fare clic su **Strumenti > opzioni** e impostare il numero di porta TCP/IP.
 
- Nella riga di comando avviare il debugger remoto con l'opzione **/port:** **\<port number> msvsmon /port**.
+ Nella riga di comando avviare il debugger remoto con **l'opzione /port:** **\<port number> msvsmon /port**.
 
  Tutte le opzioni della riga di comando del debugger remoto sono reperibili nella Guida al debug remoto (premere **F1** o fare clic su **Guida > Utilizzo** nella finestra del debugger remoto).
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 64 bit
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+ Quando viene avviata la versione a 64 bit del debugger remoto, usa la porta principale (4026) per impostazione predefinita.  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4025. Se si esegue il debugger remoto a 32 bit, viene usato 4026 e non viene usato 4025.
+::: moniker-end
+::: moniker range="vs-2019"
  Quando viene avviata la versione a 64 bit del debugger remoto, usa la porta principale (4024) per impostazione predefinita.  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4025 (il numero di porta principale incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4024 e non la porta 4025.
 ::: moniker-end
 ::: moniker range="vs-2017"

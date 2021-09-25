@@ -1,23 +1,23 @@
 ---
 title: Download di titoli software nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 02/18/2021
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: c53429f7fe7d88c1c75642d9f820c8a6fa444eb9
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: f1dd44be62a79046d8ce7ccdb10519313352f58c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965623"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427535"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 
 
-Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Ad esempio, se si hanno una sottoscrizione di Visual Studio Enterprise e una sottoscrizione di Visual Studio Professional associate allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione di Enterprise, anche se attualmente si visualizzano i vantaggi della sottoscrizione di Professional.  
+Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Ad esempio, se si dispone di una sottoscrizione di Visual Studio Enterprise e di una sottoscrizione di Visual Studio Professional associata allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione di Enterprise, anche se si sta visualizzando il Professional vantaggi della sottoscrizione.  
 
 Se la sottoscrizione viene fornita dall'istituto di istruzione o dall'istituto di istruzione, l'amministratore delle sottoscrizioni controlla se si ha accesso ai download. La disabilitazione dell'accesso ai download disabilita anche l'accesso ai codici Product Key. Se non si ha accesso ai download e ai codici Product Key e sono necessari, [contattare l'amministratore.](contact-my-admin.md)
 

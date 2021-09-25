@@ -1,7 +1,7 @@
 ---
 title: Testing unità di codice JavaScript e TypeScript
 description: Visual Studio offre supporto per il testing unità di codice JavaScript e TypeScript tramite Node.js Tools for Visual Studio
-ms.date: 03/18/2021
+ms.date: 09/20/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ee04b9e3a49af86780bc9702de5d5c128dae2173
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: ca274240c7482b911997470ddaf042158dbecd9d
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126635868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432730"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testing unità di codice JavaScript e TypeScript in Visual Studio
 
@@ -34,7 +34,7 @@ Per ASP.NET Core e JavaScript o TypeScript, vedere [Scrivere unit test per ASP.N
 
 Se un framework non è supportato, vedere [Aggiungere il supporto per un framework di unit test](#addingFramework) per informazioni sull'aggiunta del supporto.
 
-## <a name="write-unit-tests-in-a-nodejs-project"></a>Scrivere unit test in un progetto Node.js
+## <a name="write-unit-tests-in-a-nodejs-project"></a>Scrivere unit test in un Node.js progetto
 
 Prima di aggiungere unit test al progetto, verificare che il framework che si prevede di usare sia installato localmente nel progetto. La [finestra di installazione del pacchetto npm](npm-package-management.md#npmInstallWindow) semplifica questa operazione.
 
@@ -190,11 +190,11 @@ Test execution time: 1.5731 Seconds
    ```
 
    >[!NOTE]
-   > In alcuni scenari, Esplora soluzioni possibile che il nodo npm non venga visualizzato a causa di un problema noto descritto [qui.](https://github.com/aspnet/Tooling/issues/479) Se è necessario visualizzare il nodo npm, è possibile scaricare il progetto (fare clic con il pulsante destro del mouse sul progetto e scegliere **Scarica Project**) e quindi ricaricare il progetto per visualizzare nuovamente il nodo npm.
+   > In alcuni scenari, Esplora soluzioni potrebbe non visualizzare il nodo npm a causa di un problema noto descritto [qui.](https://github.com/aspnet/Tooling/issues/479) Se è necessario visualizzare il nodo npm, è possibile scaricare il progetto (fare clic con il pulsante destro del mouse sul progetto e scegliere Scarica **Project**) e quindi ricaricare il progetto per visualizzare nuovamente il nodo npm.
 
 1. Aggiungere il codice da testare.
 
-   Se si usa l'esempio descritto in Creare un'app ASP.NET Core con [TypeScript,](tutorial-aspnet-with-typescript.md)aggiungere il codice seguente alla fine del file *library.ts,* che si trova nella cartella *scripts.*
+   Se si usa l'esempio descritto in Creare un'app ASP.NET Core con [TypeScript,](tutorial-aspnet-with-typescript.md)aggiungere il codice seguente alla fine del file *library.ts,* che si trova nella *cartella scripts.*
 
    ```typescript
    function getData(value) {
@@ -263,9 +263,16 @@ Per TypeScript, gli unit test vengono eseguiti sul codice JavaScript generato.
 
 ## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>Aggiungere il supporto per un framework di unit test
 
-È possibile aggiungere il supporto per altri framework di test implementando la logica di individuazione ed esecuzione tramite JavaScript. A questo scopo, aggiungere una cartella con il nome del framework di test in:
+È possibile aggiungere il supporto per altri framework di test implementando la logica di individuazione ed esecuzione tramite JavaScript.
+
+> [!NOTE]
+> Per ASP.NET Core, aggiungere il pacchetto NuGet [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) al progetto per aggiungere il supporto.
+
+A questo scopo, aggiungere una cartella con il nome del framework di test in:
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
+
+Se la cartella non viene visualizzata in un progetto ASP.NET Core, aggiungere il carico Node.js di sviluppo usando il `NodeJsTools` Programma di installazione di Visual Studio. Questo carico di lavoro include il supporto per l'unit test di JavaScript e TypeScript.
 
 Questa cartella deve contenere un file JavaScript con lo stesso nome che esporta le due funzioni seguenti:
 

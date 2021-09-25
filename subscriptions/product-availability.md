@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni sulla disponibilità dei prodotti nei download di software per le sottoscrizioni di Visual Studio
 ms.openlocfilehash: 1f03aec1fdd5f51fe72e72e207532480a6cc55ae
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127964694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429504"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilità dei prodotti per i download di software nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.
@@ -24,7 +24,7 @@ In generale, tutti i prodotti commerciali e consumer di Microsoft utili per prog
 I possibili motivi in seguito ai quali determinati prodotti potrebbero non essere disponibili ai sottoscrittori sono diversi:
 
 - **Il prodotto non è incluso nel programma o nel livello di sottoscrizione.** [Leggere altre informazioni](https://visualstudio.microsoft.com/vs/pricing/) sul software e i vantaggi disponibili con la sottoscrizione o [scaricare l’elenco completo](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) di prodotti disponibili per ogni livello di sottoscrizione. Alcuni programmi, ad esempio [Microsoft Partner Network](https://partner.microsoft.com/), offrono sottoscrizioni di Visual Studio come parte dei relativi vantaggi.  Le sottoscrizioni non comprendono tutti i prodotti inclusi nelle sottoscrizioni di Visual Studio. I sottoscrittori di questi programmi devono indirizzare le proprie domande relative alla disponibilità di download per i prodotti ai team di supporto tecnico dei programmi.
-- **Il prodotto non è incluso nelle sottoscrizioni.** Alcuni prodotti Microsoft non sono contenuti nelle sottoscrizioni a causa di speciali condizioni di licenza, restrizioni tecniche o della rilevanza attribuita dallo sviluppatore. Se si vuole suggerire l'aggiunta di un prodotto alla sottoscrizione, inviare un messaggio di posta elettronica all'Visual Studio [Customer Service Center.](https://visualstudio.microsoft.com/subscriptions/support/)
+- **Il prodotto non è incluso nelle sottoscrizioni.** Alcuni prodotti Microsoft non sono contenuti nelle sottoscrizioni a causa di speciali condizioni di licenza, restrizioni tecniche o della rilevanza attribuita dallo sviluppatore. Se si desidera suggerire l'aggiunta di un prodotto alla sottoscrizione, inviare un messaggio di posta elettronica all'Visual Studio [Customer Service Center.](https://visualstudio.microsoft.com/subscriptions/support/)
 - **Il prodotto è pubblicamente disponibile.** Alcuni strumenti, SDK, DDK e Service Pack sono disponibili pubblicamente nell'[Area download Microsoft](https://www.microsoft.com/download). Alcuni di tali prodotti potrebbero non essere pubblicati nei Download.
 - **Il prodotto non è ancora stato rilasciato.**  Molte versioni non definitive (beta) e le versioni finali candidate sono disponibili nei download. Non tutte le versioni beta possono tuttavia essere incluse poiché alcune richiedono una registrazione speciale o l'idoneità. Per altre informazioni sui programmi beta tecnici aperti, visitare [Microsoft Connect](https://connect.microsoft.com/).
 - **Il prodotto non è disponibile nel proprio paese/area geografica.** Alcuni prodotti Microsoft non sono disponibili a causa di restrizioni regionali.
@@ -36,7 +36,7 @@ Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'a
 > [!NOTE]
 > Se sono presenti più sottoscrizioni associate allo stesso indirizzo di posta elettronica, i titoli dei software disponibili sono determinati dalla sottoscrizione di livello **più elevato** disponibile.  Ad esempio, se si ha una sottoscrizione Visual Studio Enterprise e una sottoscrizione Visual Studio Test Professional, si avrà accesso ai titoli di software inclusi nella sottoscrizione Visual Studio Enterprise, indipendentemente dalla sottoscrizione attualmente in uso nel portale delle sottoscrizioni. 
 
-Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto Visual Studio [sottoscrizioni.](https://aka.ms/vssubscriberhelp)
@@ -48,5 +48,5 @@ Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visual
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- Alcuni download di software potrebbero richiedere un codice Product Key per l'installazione e l'attivazione.  Per informazioni dettagliate [su come](product-keys.md) ottenere e gestire i codici Product Key, vedere l'articolo sui codici Product Key. 
+- Alcuni download di software potrebbero richiedere un codice Product Key per l'installazione e l'attivazione.  Per informazioni [dettagliate su come](product-keys.md) ottenere e gestire i codici Product Key, vedere l'articolo sui codici Product Key. 
 - [Download di titoli software nelle sottoscrizioni di Visual Studio](download-software.md)

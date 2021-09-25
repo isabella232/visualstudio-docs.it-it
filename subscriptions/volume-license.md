@@ -1,18 +1,18 @@
 ---
-title: Accesso al portale di amministrazione per i Visual Studio contratti multilicenza | Microsoft Docs
+title: Accesso al portale di amministrazione per Visual Studio clienti con contratti multilicenza | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
 ms.date: 05/18/2021
 ms.topic: conceptual
-description: Informazioni su come gli amministratori dei contratti multilicenza possono accedere al portale di amministrazione Visual Studio sottoscrizioni
+description: Informazioni su come gli amministratori dei contratti multilicenza possono accedere al portale Visual Studio di amministrazione delle sottoscrizioni
 ms.openlocfilehash: 79eeaf6c51b06da6c255975eba8ade6bcbd92c55
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128312398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426290"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Accesso al portale di amministrazione come amministratore in un contratto multilicenza
 
@@ -21,9 +21,9 @@ Se si è il contatto principale o per le comunicazioni indicato nel contratto de
    > [!div class="mx-imgBorder"]
    > ![Notifica per l'amministratore del contratto multilicenza](_img/volume-license/super-admin-notice-2020.png "I nuovi amministratori ricevono una notifica di benvenuto per accedere al portale.")
 
-Dopo aver eseguito l'accesso, si verrà automaticamente impostati come amministratore con privilegi di amministratore e sarà possibile iniziare a gestire le sottoscrizioni e altri amministratori. Per informazioni sulle differenze tra amministratori con privilegi di amministratore con privilegi di amministratore, vedere l'articolo sui [ruoli di amministratore](admin-roles.md).
+Dopo aver eseguito l'accesso, si verrà automaticamente impostati come amministratore con privilegi super e sarà possibile iniziare a gestire le sottoscrizioni e altri amministratori. Per informazioni sulle differenze tra amministratori con privilegi super e amministratori, vedere l'articolo sui [ruoli di amministratore](admin-roles.md).
 
-Questo vale per tutti i tipi di contratto multilicenza, inclusi, Enterprise, sottoscrizioni Enterprise, Select, Select Plus, Open, Open License, Government. e contratti accademici. 
+Questo vale per tutti i tipi di contratto multilicenza, tra cui: contratti Enterprise, sottoscrizioni Enterprise, Select, Select Plus, Open, Open License, Government. e contratti accademici. 
 
 ## <a name="resources"></a>Risorse
 - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, vedere supporto Visual Studio [sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)

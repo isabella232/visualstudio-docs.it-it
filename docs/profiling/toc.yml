@@ -2,7 +2,7 @@
   href: index.yml
 - name: Panoramica
   items:
-    - name: Presentazione della profilatura
+    - name: Presentazione degli strumenti di profilatura
       href: profiling-feature-tour.md
     - name: Eseguire gli strumenti di profilatura con o senza il debugger
       href: running-profiling-tools-with-or-without-the-debugger.md

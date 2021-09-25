@@ -1,18 +1,18 @@
 ---
-title: Accedere a un account Sottoscrizioni di Visual Studio con account aziendali o dell'istituto di istruzione | Microsoft Docs
+title: Accedere a Sottoscrizioni di Visual Studio account aziendali o dell'istituto di istruzione | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 02/19/2021
 ms.topic: how-to
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione.
-ms.openlocfilehash: effec7889199d4eddc3c149bdd4ded296a50e0b1
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 82ab031d644055148aad2650069a31cd945c55f9
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428971"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione 
 
@@ -79,4 +79,4 @@ A: Molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al p
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina vantaggi all'indirizzo ed esplorare gli strumenti, i servizi e le offerte https://my.visualstudio.com/benefits disponibili.
+Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina Vantaggi in ed esplorare gli strumenti, i servizi e le offerte https://my.visualstudio.com/benefits disponibili.

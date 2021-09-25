@@ -1,18 +1,18 @@
 ---
-title: Impostare le preferenze nel portale di amministrazione Visual Studio sottoscrizioni
+title: Impostare le preferenze nel portale Visual Studio di amministrazione delle sottoscrizioni
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 05/18/2021
 ms.topic: conceptual
 description: Informazioni su come impostare le preferenze per la lingua, i contatti, il livello di sottoscrizione e altre opzioni nel portale di amministrazione
-ms.openlocfilehash: 348febd6b964feec54053cff4a3d50cc02eba3d0
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 09ab16b077ac92fccc2f939a36a31136b11e7e1b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965487"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428998"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-admin-portal"></a>Impostare le preferenze per i contratti nel portale di amministrazione
 Gli amministratori con privilegi super possono impostare determinate preferenze nel portale di amministrazione (portale di amministrazione) che verranno applicate a livello globale per ogni contratto.  Queste preferenze popolano automaticamente i dettagli della sottoscrizione per gli amministratori quando aggiungono sottoscrittori e possono essere modificate solo a livello globale dagli amministratori con privilegi più importanti.  
@@ -24,7 +24,7 @@ Per impostare le preferenze:
 1. Accedere al portale di amministrazione con un ID con privilegi di amministratore con privilegi avanzati.
 2. Fare clic sull'icona dell'impostazione nel riquadro sinistro.
    > [!div class="mx-imgBorder"]
-   > ![Pulsante Admin Preferences (Preferenze amministratore)](_img/admin-preferences/admin-preferences-button.png "Fare clic su Manage Administrators (Gestisci amministratori) e quindi su Agreement Preferences (Preferenze contratto) per visualizzare le preferenze")
+   > ![Pulsante Admin Preferences (Preferenze amministratore)](_img/admin-preferences/admin-preferences-button.png "Fare clic su Gestisci amministratori e quindi su Preferenze contratto per visualizzare le preferenze")
 
 3. Fare clic su **Agreement Preferences** (Preferenze per i contratti).
 Verrà aperto un pannello a sinistra e verranno visualizzate le preferenze disponibili. 
@@ -59,18 +59,18 @@ Questa preferenza consente di decidere se gli amministratori possono aggiungere 
 L'abilitazione di questa impostazione, attivata per impostazione predefinita, consentirà ai sottoscrittori di accedere ai download quando gli amministratori creano nuove sottoscrizioni.  Gli amministratori possono comunque disabilitare i download per singole sottoscrizioni.  La disabilitazione dell'accesso ai download disabilita anche l'accesso ai codici Product Key.  
 
 ### <a name="overallocation-notification"></a>Notifica di sovrallocazione 
-Acconsentire esplicitamente a ricevere un messaggio di posta elettronica quando le assegnazioni nel contratto vengono sovrassegnate. Questa notifica di posta [](admin-preferences.md#contact-email-address)elettronica verrà inviata all'indirizzo di posta elettronica del contatto o a tutti gli amministratori del contratto se non è presente un indirizzo di posta elettronica di contatto. Usare il menu a discesa per configurare la soglia a cui si desidera ricevere una notifica. 
+Acconsentire esplicitamente a ricevere un messaggio di posta elettronica quando le assegnazioni nel contratto vengono sovrassegnate. Questa notifica di posta elettronica verrà inviata all'indirizzo [di](admin-preferences.md#contact-email-address)posta elettronica del contatto o a tutti gli amministratori del contratto se non è presente un indirizzo di posta elettronica di contatto. Usare il menu a discesa per configurare la soglia a cui si desidera ricevere una notifica. 
 
  
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>D: È possibile disabilitare **l'indirizzo di posta elettronica di contatto in** modo che i sottoscrittori non possano contattare gli amministratori?
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>D: È possibile disabilitare l'indirizzo **di posta elettronica di contatto in** modo che i sottoscrittori non possano contattare gli amministratori?
 A: No: anche se è possibile determinare quali amministratori vengono contattati usando un gruppo di sicurezza, un alias di posta elettronica del gruppo o un singolo indirizzo di posta elettronica, la funzionalità non può essere disabilitata.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>D: Se si risponde al messaggio di posta elettronica di un sottoscrittore, l'utente avrà l'indirizzo di posta elettronica?
 A: Poiché la risposta verrà inviata da qualsiasi client di posta elettronica in uso, la risposta ricevuta dal sottoscrittore mostrerà l'indirizzo di posta elettronica in uso.  Se si risponde da un alias di gruppo, il sottoscrittore vedrà l'alias del gruppo  e se si risponde con il proprio indirizzo di posta elettronica, il destinatario vedrà questo indirizzo.  
 
 ### <a name="q-where-can-i-find-out-more-about-the-contact-my-admin-feature-in-the-subscriber-portal"></a>D: Dove è possibile trovare altre informazioni sulla funzionalità Contatta l'amministratore **nel** portale per i sottoscrittori?
-A: Vedere [l'articolo Contattare l'amministratore.](contact-my-admin.md) 
+A: Vedere l'articolo [Contattare l'amministratore.](contact-my-admin.md) 
 
 ### <a name="q-if-we-dont-complete-the-contact-email-address-and-a-subscriber-uses-the-contact-my-admin-feature-who-receives-their-request"></a>D: Se non si completa l'indirizzo di posta elettronica di **contatto** e un sottoscrittore usa la funzionalità **Contatta** l'amministratore, chi riceve la richiesta?
 A: Se nella preferenza Indirizzo  di posta elettronica di contatto non è impostato alcun indirizzo di posta elettronica specifico, tutti gli amministratori del contratto riceveranno la richiesta. 

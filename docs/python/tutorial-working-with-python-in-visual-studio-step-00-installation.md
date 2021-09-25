@@ -13,18 +13,18 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 1e712d5df44dd87f07b50b243e8e63ed9e1ad0bf
-ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "127920062"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429721"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 
 > [!Note]
-> Il supporto di Python è attualmente disponibile solo in Visual Studio per Windows. In Mac e Linux il supporto python è disponibile [tramite Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> Il supporto di Python è attualmente disponibile solo in Visual Studio per Windows. In Mac e Linux il supporto di Python è disponibile [tramite Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. Scaricare ed eseguire il programma di Visual Studio più recente per Windows. Il supporto di Python è presente nella versione 15.2 e successive. Se è già Visual Studio installato, aprire Visual Studio ed eseguire il programma di installazione selezionando Strumenti  >  **Aggiungi strumenti e funzionalità**.
+1. Scaricare ed eseguire il programma di installazione Visual Studio per Windows. Il supporto per Python è presente nella versione 15.2 e successive. Se è già Visual Studio, aprire Visual Studio ed eseguire il programma di installazione selezionando Strumenti  >  **Aggiungi strumenti e funzionalità**.
 
     > [!div class="nextstepaction"]
     > [Installa Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
@@ -34,16 +34,16 @@ ms.locfileid: "127920062"
 
 1. Il programma di installazione offre un elenco di carichi di lavoro, che sono gruppi di opzioni correlate per aree di sviluppo specifico. Per Python, selezionare il carico di lavoro **Sviluppo Python** e selezionare **Installa**:
 
-    ![Screenshot del carico di lavoro sviluppo Python selezionato nel programma di Visual Studio di installazione.](media/installation-python-workload.png)
+    ![Screenshot del carico di lavoro Sviluppo Python selezionato nel programma di Visual Studio installazione.](media/installation-python-workload.png)
 
-1. Per testare rapidamente il supporto python, avviare Visual Studio, premere **ALT** I per aprire +  la finestra **Python Interactive** e immettere `2+2` . Se non viene visualizzato l'output **4**, eseguire nuovamente la procedura.
+1. Per testare rapidamente il supporto python, Visual Studio, premere **ALT** I per aprire +  la finestra Interattiva di **Python** e immettere `2+2` . Se non viene visualizzato l'output **4**, eseguire nuovamente la procedura.
 
     ::: moniker range="<=vs-2019"
     ![Screenshot del test di Python tramite la finestra interattiva.](media/installation-interactive-test.png)
     ::: moniker-end
 
     ::: moniker range=">=vs-2022"
-    ![Screenshot del test di Python tramite la finestra interattiva Visual Studio 2022.](media/vs-2022/python-interactive.png)
+    ![Screenshot del test di Python tramite la Visual Studio 2022 interattiva.](media/vs-2022/python-interactive.png)
     ::: moniker-end
 
 ## <a name="next-step"></a>Passaggio successivo

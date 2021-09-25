@@ -2,7 +2,7 @@
 title: 'Esercitazione: Creare una semplice app console C# '
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
 ms.custom: vs-acquisition, get-started
-ms.date: 08/12/2021
+ms.date: 09/14/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,18 +15,18 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1f7811483001e5cf07f46cf6d8450552e2607b1d
-ms.sourcegitcommit: 00a9b421927ac9de60e96b2ce6618aa0733d88b1
+ms.openlocfilehash: e46b3ed2449972b065ac005ac83f2650cb93d03d
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122773655"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426684"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>Esercitazione: Creare una semplice app console C# in Visual Studio (parte 1 di 2)
 
-In questa esercitazione si userà Visual Studio per creare ed eseguire un'app console C# ed esplorare alcune funzionalità dell'ambiente di sviluppo integrato (IDE) di Visual Studio mentre si esegue questa operazione. Questa esercitazione è la parte 1 di una serie di esercitazioni in due parti.
+In questa esercitazione si userà Visual Studio per creare ed eseguire un'app console C# ed esplorare alcune funzionalità dell'ambiente Visual Studio di sviluppo integrato (IDE). Questa esercitazione è la parte 1 di una serie di esercitazioni in due parti.
 
-In questa esercitazione si apprenderà come:
+In questa esercitazione:
 
 > [!div class="checklist"]
 > * Creare un Visual Studio progetto.
@@ -35,7 +35,7 @@ In questa esercitazione si apprenderà come:
 > * Chiudere l'app.
 > * Esaminare il codice completo.
 
-[Nella parte 2](tutorial-console-part-2.md)si estenderà questa app con progetti aggiuntivi, consigli per il debug e si fa riferimento a pacchetti di terze parti.
+[Nella parte 2](tutorial-console-part-2.md)si estende questa app per aggiungere altri progetti, apprendere i consigli di debug e fare riferimento a pacchetti di terze parti.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -47,21 +47,15 @@ Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Stu
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
-::: moniker range="vs-2022"
-
-Se non è già stato installato Visual Studio 2022 Preview, passare alla pagina dei download di [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022) per installarlo gratuitamente.
-
-::: moniker-end
-
 ## <a name="create-a-project"></a>Creare un progetto
 
-Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto include fin dall'inizio tutti i file modello necessari.
+Per iniziare, creare un progetto di applicazione C#. Il tipo di progetto include tutti i file modello necessari.
 
 ::: moniker range="vs-2017"
 
@@ -72,7 +66,7 @@ Per prima cosa, si creerà un progetto di applicazione C#. Il tipo di progetto i
 
 3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **C#** e scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al file il **_nome Calculator_**.
 
-   ![Modello di progetto Console App (.NET Core) nella finestra di dialogo Nuovo progetto dell'IDE di Visual Studio](./media/new-project-csharp-calculator-console-app.png)
+   ![Screenshot che mostra il modello di progetto App console (.NET Core) nella finestra di dialogo Nuovo Project nell'IDE Visual Studio.](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Aggiungere un carico di lavoro (facoltativo)
 
@@ -82,50 +76,78 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 1. Fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
 
-   ![Fare clic sul collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](./media/csharp-open-visual-studio-installer-generic-dark.png)
+   ![Screenshot che mostra il collegamento Choose the Open Programma di installazione di Visual Studio (Programma di installazione di Visual Studio apri) nella finestra di dialogo Project nuova finestra di dialogo.](./media/csharp-open-visual-studio-installer-generic-dark.png)
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
-   ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   ![Screenshot che mostra il carico di lavoro Sviluppo multipiattaforma .NET Core nella Programma di installazione di Visual Studio.](./media/dot-net-core-xplat-dev-workload.png)
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
 
-1. Annullare dalla finestra **di dialogo Project** e dalla barra  dei menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità.**
+1. Annullare dalla finestra **di dialogo Project** e dalla barra dei  menu superiore scegliere Strumenti Ottieni strumenti > **e funzionalità.**
 
 1. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
-1. Aprire Visual Studio.
+1. Aprire Visual Studio e scegliere **Crea un nuovo progetto** nella finestra Iniziale.
 
-1. Nella finestra iniziale scegliere **Crea un nuovo progetto.**
-
-   ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Screenshot che mostra la finestra Crea un nuovo progetto.](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows** dall'elenco Piattaforma e **Console** dall'elenco dei tipi di progetto.
 
-   Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il modello **Applicazione** console e quindi **scegliere Avanti.**
+   Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il **modello Applicazione** console e quindi selezionare **Avanti.**
 
    > [!NOTE]
-   > Se il modello Applicazione **console** non viene visualizzato, è possibile installarlo dalla **finestra Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se il modello Applicazione **console** non è visualizzato, selezionare **Installa altri strumenti e funzionalità.**
    >
-   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![Screenshot che mostra il collegamento Installa altri strumenti e funzionalità.](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
    >
-   > ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   > ![Screenshot che mostra il carico di lavoro Sviluppo multipiattaforma .NET Core nella Programma di installazione di Visual Studio.](./media/dot-net-core-xplat-dev-workload.png)
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *Calculator* nella casella **Nome del progetto**. Scegliere quindi **Avanti.**
 
-    :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="nella finestra &quot;Configura il nuovo progetto&quot;, denominare il progetto &quot;Calculator&quot;":::
+    :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="Screenshot che mostra il nome del progetto &quot;Calculator&quot; nella finestra &quot;Configure your new project&quot; (Configura il nuovo progetto).":::
 
-1. Nella finestra **Informazioni aggiuntive** dovrebbe essere già **selezionato .NET Core 3.1** per il framework di destinazione. In caso contrario, selezionare **.NET Core 3.1.** Scegliere quindi **Crea.**
+1. Nella finestra **Informazioni aggiuntive** dovrebbe essere già **selezionato .NET Core 3.1** per il framework di destinazione. In caso contrario, **selezionare .NET Core 3.1.** Scegliere quindi **Crea.**
 
-    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="Nella finestra &quot;Informazioni aggiuntive&quot; assicurarsi che sia selezionato .NET Core 3.1":::
+    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="Screenshot che mostra come assicurarsi che .NET Core 3.1 sia selezionato nella finestra &quot;Informazioni aggiuntive&quot;.":::
+
+   Visual Studio aprirà il nuovo progetto che include il codice "Hello World" predefinito.
+
+::: moniker-end
+::: moniker range=">=vs-2022"
+
+1. Aprire Visual Studio e scegliere **Crea un nuovo progetto** nella finestra Iniziale.
+
+   ![Screenshot che mostra la finestra Crea un nuovo progetto.](media/vs-2022/create-new-project.png)
+
+1. Nella finestra **Crea un nuovo progetto** selezionare Tutti i **linguaggi** e quindi scegliere **C#** dall'elenco a discesa. Scegliere **Windows** dall'elenco **Tutte le** piattaforme e scegliere **Console** dall'elenco Tutti i **tipi di** progetto.
+
+   Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, scegliere il **modello Applicazione** console e quindi selezionare **Avanti.**
+
+   > [!NOTE]
+   > Se il modello Applicazione **console** non è visualizzato, selezionare **Installa altri strumenti e funzionalità.**
+   >
+   > ![Screenshot che mostra il collegamento Installa altri strumenti e funzionalità.](media/vs-2022/not-finding-what-looking-for.png)
+   >
+   > Nell'Programma di installazione di Visual Studio scegliere il carico **di lavoro Sviluppo per desktop .NET** e quindi selezionare **Modifica.**
+   >
+   > ![Screenshot che mostra il carico di lavoro Sviluppo di applicazioni desktop .NET nel Programma di installazione di Visual Studio.](media/vs-2022/dot-net-development-workload.png)
+
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *Calculator* nella casella Project **nome** e quindi selezionare **Avanti.**
+
+   ![Screenshot che mostra come assegnare un nome al progetto Calculator nella finestra Configura il nuovo progetto.](media/vs-2022/csharp-name-your-calculator-project.png)
+
+1. Nella finestra **Informazioni aggiuntive** dovrebbe essere già selezionato **.NET 6.0** per il framework di destinazione. Selezionare **Crea**.
+
+   ![Screenshot che mostra .NET 6.0 selezionato nella finestra Informazioni aggiuntive.](media/vs-2022/csharp-target-framework.png)
 
    Visual Studio aprirà il nuovo progetto che include il codice "Hello World" predefinito.
 
@@ -133,15 +155,21 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 ## <a name="create-the-app"></a>Creare l'app
 
-Prima di tutto si esamineranno alcuni calcoli matematici integer di base in C#. Si aggiungerà quindi il codice necessario per creare una calcolatrice di base. In seguito, si procederà al debug dell'app per trovare eventuali errori e correggerli. E infine si perfezionerà il codice per renderlo più efficiente.
+In questa sezione verrà illustrato come:
+
+- Esplorare alcune operazioni matematiche di base su interi in C#.
+- Aggiungere il codice per creare un'app calcolatrice di base.
+- Eseguire il debug dell'app per trovare e correggere gli errori.
+- Perfezionare il codice per renderlo più efficiente.
 
 ### <a name="explore-integer-math"></a>Esplorare le operazioni matematiche su interi
 
-Si inizierà con alcune operazioni matematiche di base su interi in C#.
+Iniziare con alcune operazioni matematiche di base su numeri interi in C#.
 
+::: moniker range="<=vs-2019"
 1. Nell'editor del codice, eliminare il codice "Hello World" predefinito.
 
-    ![Eliminare il codice Hello World predefinito dalla nuova app Calculator](./media/csharp-console-calculator-deletehelloworld.png)
+    ![Screenshot che mostra l'eliminazione del codice Hello World predefinito dalla nuova app calcolatrice.](./media/csharp-console-calculator-deletehelloworld.png)
 
    In particolare, eliminare la riga con la dicitura `Console.WriteLine("Hello World!");`.
 
@@ -160,27 +188,64 @@ Si inizierà con alcune operazioni matematiche di base su interi in C#.
     > [!NOTE]
     > L'animazione seguente non è progettata per duplicare il codice precedente. Lo scopo è mostrare solo il funzionamento della funzionalità di completamento automatico.
 
-    ![Animazione del codice matematico su un intero che illustra la funzionalità di completamento automatico di IntelliSense nell'IDE di Visual Studio](./media/integer-math-intellisense.gif)
+    ![Animazione del codice matematico integer che mostra la funzionalità di completamento automatico IntelliSense nell'IDE Visual Studio.](./media/integer-math-intellisense.gif)
 
 1. Scegliere il pulsante **Start** verde accanto a **Calcolatrice** per compilare ed eseguire il programma oppure premere **F5.**
 
-   ![Scegliere il pulsante Calculator per eseguire l'app dalla barra degli strumenti](./media/csharp-console-calculator-button.png)
+   ![Screenshot che mostra la scelta del pulsante Calcolatrice per eseguire l'app dalla barra degli strumenti.](./media/csharp-console-calculator-button.png)
 
    Si aprirà una finestra della console che visualizza la somma di 42 + 119., vale a dire **161**.
 
-    ![Finestra della console con visualizzati i risultati dell'operazione matematica sull'intero](./media/csharp-console-integer-math.png)
+    ![Screenshot che mostra una finestra della console con i risultati delle operazioni matematiche su numeri interi.](./media/csharp-console-integer-math.png)
 
 1. **(Facoltativo)** È possibile modificare l'operatore per modificare il risultato. Nella riga di codice `int c = a + b;` è ad esempio possibile modificare l'operatore `+` in `-` per la sottrazione, `*` per la moltiplicazione o `/` per la divisione. A questo punto, quando il programma sarà eseguito, il risultato cambierà.
 
 1. Chiudere la finestra della console.
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+1. In **Esplora soluzioni** selezionare **Program.cs** nel riquadro destro per visualizzare il file nell'editor di codice
+
+1. Nell'editor di codice sostituire il codice predefinito "Hello World" che indica `Console.WriteLine("Hello World!");` .
+
+    ![Screenshot che mostra la riga da sostituire nel file di programma.](media/vs-2022/csharp-console-calculator-delete-hello-world.png)
+
+   Sostituire la riga con il codice seguente:
+
+   ```csharp
+       int a = 42;
+       int b = 119;
+       int c = a + b;
+       Console.WriteLine(c);
+       Console.ReadKey();
+   ```
+
+    Se si digita il codice, la Visual Studio IntelliSense offre la possibilità di completare automaticamente la voce.
+
+    > [!NOTE]
+    > L'animazione seguente non ha lo scopo di illustrare il codice precedente, ma solo di mostrare il funzionamento di IntelliSense.
+
+    ![Animazione del codice matematico integer che mostra la funzionalità di completamento automatico intelliSense nell'IDE Visual Studio.](media/integer-math-intellisense.gif)
+
+1. Per compilare ed eseguire l'app, premere **F5** o selezionare la freccia verde accanto al nome **Calculator** nella barra degli strumenti superiore.
+
+   ![Screenshot che mostra la selezione del pulsante Calcolatrice per eseguire l'app dalla barra degli strumenti Debug.](media/vs-2022/csharp-console-calculator-button.png)
+
+   Verrà visualizzata una finestra della console che mostra la somma di 42 + 119, ovvero **161**.
+
+    ![Screenshot di una finestra della console che mostra i risultati di numeri interi matematici.](media/vs-2022/csharp-console-integer-math.png)
+
+1. Chiudere la finestra della console.
+
+1. Facoltativamente, è possibile modificare l'operatore per modificare il risultato. Nella riga di codice `int c = a + b;` è ad esempio possibile modificare l'operatore `+` in `-` per la sottrazione, `*` per la moltiplicazione o `/` per la divisione. Quando si esegue l'app, il risultato cambia di conseguenza.
+
+::: moniker-end
 
 ### <a name="add-code-to-create-a-calculator"></a>Aggiungere codice per creare un'app di calcolo
 
-Si continuerà aggiungendo un set più complesso di codice di calcolo al progetto.
+Continuare aggiungendo un set più complesso di codice calcolatrice al progetto.
 
-1. Eliminare tutto il codice visualizzato nell'editor del codice.
-
-1. Digitare o incollare il codice seguente nell'editor del codice:
+1. Nell'editor di codice sostituire tutto il codice in *program.cs* con il nuovo codice seguente:
 
     ```csharp
     using System;
@@ -238,83 +303,75 @@ Si continuerà aggiungendo un set più complesso di codice di calcolo al progett
     }
     ```
 
-1. Scegliere **Calculator** per eseguire il programma oppure premere **F5**.
-
-   ![Scegliere il pulsante Calculator per eseguire l'app dalla barra degli strumenti](./media/csharp-console-calculator-button.png)
+1. Selezionare il **pulsante Calcolatrice** o premere **F5** per eseguire l'app.
 
    Viene visualizzata una finestra della console.
 
-1. Visualizzare l'app nella finestra della console, quindi seguire il prompt per aggiungere i numeri **42** e **119**.
+1. Nella finestra della console seguire le istruzioni per aggiungere insieme i numeri **42** **e 119.**
 
    L'app avrà un aspetto simile allo screenshot seguente:
 
-    ![Finestra della console che mostra l'app Calculator, che include i prompt sulle azioni da eseguire](./media/csharp-console-calculator.png)
+    ![Screenshot di una finestra della console che mostra l'app Calcolatrice con prompt.](media/csharp-console-calculator.png)
 
-### <a name="add-functionality-to-the-calculator"></a>Aggiungere funzionalità all'app di calcolo
+### <a name="add-decimal-functionality"></a>Aggiungere la funzionalità decimale
 
-A questo punto modificare il codice per aggiungere funzionalità.
+Modificare ora il codice per aggiungere altre funzionalità.
 
-### <a name="add-decimals"></a>Aggiungere i numeri decimali
+L'app calcolatrice corrente accetta e restituisce solo numeri interi. Ad esempio, se si esegue l'app e si divide il numero 42 per il numero 119, il risultato è zero, che non è esatto.
 
-L'app Calculator attualmente accetta e restituisce numeri interi. Sarà tuttavia più precisa se si aggiunge il codice che consente di elaborare numeri decimali.
+![Screenshot di una finestra della console che mostra l'app Calcolatrice che restituisce un numero intero inesatto di conseguenza.](./media/csharp-console-calculator-nodecimal.png)
 
-Come illustrato nello screenshot seguente, se si esegue l'app e si divide il numero 42 per 119, si ottiene come risultato 0, che non è esatto.
+Per correggere il codice per migliorare la precisione gestendo i decimali:
 
-![Finestra della console con l'app Calculator che non restituisce valori numerici decimali nel risultato](./media/csharp-console-calculator-nodecimal.png)
+1. Da *program.cs nell'editor* Visual Studio premere **CTRL** + **H** per aprire il **controllo** Trova e sostituisci.
 
-È necessario correggere il codice in modo che gestisca i numeri decimali.
+1. Digitare *int* nel controllo e tipo *float* nel **campo Replace.**
 
-1. Premere **CTRL**  +  **H** per aprire il controllo Trova **e** sostituisci.
+1. Selezionare le icone **Maiuscole/minuscole** e Trova corrispondenza **per** parola intera nel controllo oppure premere **ALT** + **C** **e** + **ALT+W.**
 
-1. Sostituire ogni istanza della variabile `int` con `float`.
+1. Selezionare **l'icona Sostituisci** tutto o premere **ALT** + **A** per eseguire la ricerca e la sostituzione.
 
-   Assicurarsi di aver attivato/disattivato **Maiuscole/minuscole** (**Alt**+**C**) e **Parola intera** (**Alt**+**W**) nel controllo **Trova e sostituisci**.
+    ![Animazione del controllo Trova e sostituisci che mostra come modificare la variabile int in float.](media/find-replace-control-animation.gif)
 
-    ![Animazione del controllo Trova e sostituisci che illustra come modificare la variabile di tipo int in float](./media/find-replace-control-animation.gif)
+1. Eseguire di nuovo l'app calcolatrice e dividere il **numero 42** per il **numero 119.**
 
-1. Eseguire nuovamente l'app Calculator e dividere il numero **42** per il numero **119**.
+   L'app ora restituisce un numero decimale anziché zero.
 
-   Si noti che l'app ora restituisce un valore numerico decimale invece di zero.
+    ![Screenshot di una finestra della console che mostra l'app Calcolatrice che ora restituisce un numero decimale come risultato.](media/csharp-console-calculator-decimal.png)
 
-    ![Finestra della console con l'app Calculator che restituisce valori numerici decimali nel risultato](./media/csharp-console-calculator-decimal.png)
+Ora l'app può produrre risultati decimali. Apportare altre modifiche al codice in modo che l'app possa calcolare anche i decimali.
 
-Tuttavia, l'app genera solo un risultato decimale. Modificando ancora il codice, è possibile fare in modo che l'app esegua anche calcoli con numeri decimali.
+1. Usare il **controllo Trova e** sostituisci per modificare ogni istanza della variabile in e per impostare ogni istanza del metodo su `float` `double` `Convert.ToInt32` `Convert.ToDouble` .
 
-1. Usare il **controllo Trova e** sostituisci (**CTRL** H ) per modificare ogni istanza della variabile in e per impostare ogni  +  istanza del metodo su `float` `double` `Convert.ToInt32` `Convert.ToDouble` .
+1. Eseguire l'app calcolatrice e dividere il **numero 42,5** per il **numero 119,75.**
 
-1. Eseguire nuovamente l'app Calculator e dividere il numero **42,5** per il numero **119,75**.
+   L'app accetta ora valori decimali e restituisce un numero decimale più lungo come risultato.
 
-   Si noti che l'app ora accetta valori decimali e restituisce un valore numerico decimale più lungo come risultato.
+    ![Screenshot di una finestra della console che mostra l'app Calcolatrice che ora accetta numeri decimali e restituisce un risultato decimale più lungo.](media/csharp-console-calculator-usedecimals.png)
 
-    ![Finestra della console con l'app Calculator che accetta valori decimali e restituisce un valore numerico decimale più lungo come risultato](./media/csharp-console-calculator-usedecimals.png)
-
-    Il numero di posizioni decimali verrà modificato nella sezione [Rivedere il codice](#revise-the-code).
+   Nella sezione [Rivedi il codice](#revise-the-code) si riduce il numero di cifre decimali nei risultati.
 
 ## <a name="debug-the-app"></a>Eseguire il debug dell'app
 
-L'app Calculator di base è stata migliorata, ma non comprende ancora funzioni di sicurezza che consentono di gestire le eccezioni, ad esempio gli errori di input dell'utente.
-
-Ad esempio, se si prova a dividere un numero per zero o si immette un carattere alfa quando l'app prevede un carattere numerico (o viceversa), l'app potrebbe smettere di funzionare, restituire un errore o restituire un risultato non numerico imprevisto.
+L'app calcolatrice di base è stata migliorata, ma l'app non gestisce ancora le eccezioni, ad esempio gli errori di input dell'utente. Ad esempio, se gli utenti provano a dividere per zero o immettere un carattere imprevisto, l'app potrebbe smettere di funzionare, restituire un errore o restituire un risultato non numerico imprevisto.
 
 Verranno ora visualizzati alcuni errori di input utente comuni, individuarli nel debugger, se presenti, e correggerli nel codice.
 
 > [!TIP]
-> Per altre informazioni sul debugger e sul suo funzionamento, vedere la pagina [Presentazione del debugger di Visual Studio](../../debugger/debugger-feature-tour.md).
+> Per altre informazioni sul debugger e sul suo funzionamento, vedere Prima di tutto esaminare il [debugger Visual Studio debugger](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Correggere l'errore di divisione per zero
 
-Quando si tenta di dividere un numero per zero, l'app console potrebbe bloccarsi e quindi mostrare il problema nell'editor di codice.
+Se si tenta di dividere un numero per zero, è possibile che l'app console si blocchi e quindi venga visualizzato il problema nell'editor di codice.
 
    ![Screenshot dell'editor Visual Studio codice che mostra una riga evidenziata in giallo e un errore eccezione non gestita per 'Tentativo di divisione per zero'.](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
-> In alcuni casi, l'app non si blocca e il debugger non visualizza un errore di divisione per zero. L'app potrebbe invece restituire un risultato non numerico imprevisto, ad esempio un simbolo di infinito. La correzione di codice seguente si applica ancora.
+> In alcuni casi l'app non si blocca e il debugger non visualizza un errore di divisione per zero. L'app potrebbe invece restituire un risultato non numerico imprevisto, ad esempio un simbolo di infinito. La correzione di codice seguente si applica ancora.
 
-Ora il codice verrà modificato per gestire questo errore.
+Per modificare il codice per gestire l'errore:
 
-1. Eliminare il codice che viene visualizzato tra `case "d":` e il commento con la dicitura `// Wait for the user to respond before closing`.
-
-1. Sostituirlo con il seguente codice:
+1. In *program.cs* sostituire il codice tra `case "d":` e il commento che indica con il codice `// Wait for the user to respond before closing` seguente:
 
    ```csharp
             // Ask the user to enter a non-zero divisor until they do so.
@@ -328,31 +385,36 @@ Ora il codice verrà modificato per gestire questo errore.
         }
     ```
 
-   Dopo aver aggiunto il codice, la sezione con l'istruzione `switch` avrà un aspetto simile a quello riportato nello screenshot seguente:
+   Dopo aver sostituito il codice, la sezione con `switch` l'istruzione dovrebbe essere simile allo screenshot seguente:
 
-   ![Sezione "switch" aggiornata nell'editor del codice di Visual Studio](./media/csharp-console-calculator-switch-code.png)
+   ![Screenshot che mostra la sezione dell'opzione modificata nell'editor Visual Studio codice.](media/csharp-console-calculator-switch-code.png)
 
-Ora, quando si divide un numero qualsiasi per zero, l'app richiederà un altro numero. Ancora meglio: non smetterà di chiedere fino a quando non si specifica un numero diverso da zero.
+Ora, quando si divide un numero per zero, l'app richiede un altro numero e continua a chiedere fino a quando non si specifica un numero diverso da zero.
 
-   ![Screenshot dell'editor Visual Studio codice che mostra il codice per l'istruzione switch con la verifica della presenza di un divisore diverso da zero aggiunto.](./media/csharp-console-calculator-dividebyzero.png)
+   ![Screenshot di una finestra della console con un prompt ripetuto per specificare un numero diverso da zero.](media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Correggere l'errore di formato
 
-Se si immette un carattere alfabetico quando l'app si aspetta un carattere numerico (o viceversa), l'app console si blocca. Visual Studio mostra quindi qual è il problema nell'editor del codice.
+Se si immette un carattere alfabetico quando l'app prevede un carattere numerico, l'app si blocca. Visual Studio che cosa non va nell'editor di codice.
 
-   ![L'editor del codice di Visual Studio mostra un errore di formato](./media/csharp-console-calculator-format-error.png)
+   ::: moniker range="<=vs-2019"
+   ![Screenshot che mostra un errore di formato non gestito nell'editor Visual Studio codice.](media/csharp-console-calculator-format-error.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![Screenshot che mostra un errore di formato non gestito nell'editor Visual Studio codice.](media/vs-2022/csharp-console-calculator-format-error.png)
+   ::: moniker-end
 
-Per correggere questo errore, è necessario effettuare il refactoring del codice immesso in precedenza.
+Per evitare questa eccezione, è possibile eseguire il refactoring del codice immesso in precedenza.
 
 #### <a name="revise-the-code"></a>Rivedere il codice
 
-Anziché affidare la gestione dell'intero codice alla classe `program`, si dividerà l'app in due classi: `Calculator` e `Program`.
+Anziché affidarsi alla `program` classe per gestire tutto il codice, è possibile dividere l'app in due classi: e `Calculator` `Program` .
 
-La classe `Calculator` si occuperà di gestire la maggior parte del lavoro di calcolo mentre la classe `Program` gestirà l'interfaccia utente e il lavoro di acquisizione degli errori.
+La classe gestisce la maggior parte del lavoro di calcolo e la classe gestisce l'interfaccia utente e il `Calculator` lavoro di gestione degli `Program` errori.
 
 A questo punto, procedere con l'esercitazione.
 
-1. Eliminare tutti gli elementi nello `Calculator` spazio dei nomi tra le parentesi graffe di apertura e chiusura:
+1. In *program.cs* eliminare tutti gli elementi nello spazio dei nomi tra le parentesi graffe di apertura `Calculator` e chiusura:
 
     ```csharp
     using System;
@@ -363,14 +425,14 @@ A questo punto, procedere con l'esercitazione.
     }
     ```
 
-1. Successivamente, aggiungere una nuova classe `Calculator`, come indicato di seguito:
+1. Tra le parentesi graffe aggiungere la nuova `Calculator` classe seguente:
 
     ```csharp
     class Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+            double result = double.NaN; // Default value is "not-a-number" if an operation, such as division, could result in an error.
 
             // Use a switch statement to do the math.
             switch (op)
@@ -401,7 +463,7 @@ A questo punto, procedere con l'esercitazione.
 
     ```
 
-1. Quindi, aggiungere una nuova classe `Program`, come indicato di seguito:
+1. Aggiungere anche una nuova  `Program` classe, come indicato di seguito:
 
     ```csharp
     class Program
@@ -479,29 +541,34 @@ A questo punto, procedere con l'esercitazione.
     }
     ```
 
-1. Scegliere **Calculator** per eseguire il programma oppure premere **F5**.
+1. Selezionare il **pulsante Calcolatrice** o premere **F5** per eseguire l'app.
 
-1. Seguire le istruzioni e dividere il numero **42** per il numero **119**. L'app avrà un aspetto simile allo screenshot seguente:
+1. Seguire le istruzioni e dividere il numero **42** per il numero **119**. I risultati dovrebbero essere simili allo screenshot seguente:
 
-    ![Finestra della console con l'app Calculator sottoposta a refactoring che ora include prompt per le azioni da intraprendere e gestione degli errori per gli input non corretti](./media/csharp-console-calculator-refactored.png)
+   ::: moniker range="<=vs-2019"
+   ![Screenshot che mostra una finestra della console con l'app Calculator con refactoring.](media/csharp-console-calculator-refactored.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2022"
+   ![Screenshot che mostra una finestra della console con l'app Calculator con refactoring.](media/vs-2022/csharp-console-calculator-refactored.png)
+   ::: moniker-end
 
-    Si noti che è disponibile l'opzione per immettere più equazioni fino a quando non si sceglie di chiudere l'app console. Inoltre, è anche stato ridotto il numero di posizioni decimali nel risultato.
+   È ora possibile immettere altre equazioni fino a quando non si sceglie di chiudere l'app console. Nei risultati sono presenti anche meno cifre decimali. Se si immette un carattere non corretto, si ottiene una risposta di errore appropriata.
 
 ## <a name="close-the-app"></a>Chiudere l'app
 
-1. Se non si è già provveduto, chiudere l'app Calculator.
+1. Se non è già stato fatto, chiudere l'app Calcolatrice.
 
 1. Chiudere il riquadro **Output** in Visual Studio.
 
-   ![Chiudere il riquadro Output in Visual Studio](./media/csharp-calculator-close-output-pane.png)
+   ![Screenshot che mostra la chiusura del riquadro Output in Visual Studio.](media/csharp-calculator-close-output-pane.png)
 
 1. In Visual Studio premere **CTRL** + **S** per salvare l'app.
 
 [!INCLUDE[../includes/git-source-control.md](../includes/git-source-control.md)]
 
-## <a name="review-code-complete"></a>Revisione: codice completato
+## <a name="review-code-complete"></a>Revisione: Codice completato
 
-Durante questa esercitazione sono state apportate molte modifiche all'app Calculator. L'app ora gestisce le risorse di calcolo in modo più efficiente e la maggior parte degli errori di input dell'utente.
+In questa esercitazione sono state apportate molte modifiche all'app calcolatrice. L'app ora gestisce le risorse di calcolo in modo più efficiente e gestisce la maggior parte degli errori di input dell'utente.
 
 Ecco il codice completo:
 
@@ -640,5 +707,5 @@ Continuare con altre esercitazioni:
 Continuare con la seconda parte di questa esercitazione:
 
 > [!div class="nextstepaction"]
-> [Esercitazione Parte 2: Uso di più progetti e pacchetti di terze parti](tutorial-console-part-2.md)
+> [Esercitazione Parte 2: Estendere ed eseguire il debug dell'app console C#](tutorial-console-part-2.md)
 :::moniker-end

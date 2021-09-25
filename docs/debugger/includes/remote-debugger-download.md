@@ -9,11 +9,11 @@ ms.date: 09/10/2021
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: fe24fbc1a4b9a5ae4cf78549b614a70db3aa1139
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "128036980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427144"
 ---
 Nel dispositivo remoto o nel server in cui si vuole eseguire il debug, anziché nel computer Visual Studio, scaricare e installare la versione corretta degli strumenti remoti dai collegamenti nella tabella seguente.
 
@@ -59,4 +59,4 @@ Nel dispositivo remoto o nel server in cui si vuole eseguire il debug, anziché 
 
 >[!NOTE]
 >- Per eseguire Windows 10 di app nei dispositivi ARM, usare ARM64, disponibile con la versione più recente degli strumenti remoti.
->- Per eseguire il debug Windows 10 app nei dispositivi Windows RT, usare ARM, disponibile solo nel download degli strumenti remoti di Visual Studio 2015.
+>- Per eseguire il debug Windows 10 app nei dispositivi Windows RT, usare ARM, disponibile solo nel download degli strumenti remoti Visual Studio 2015.

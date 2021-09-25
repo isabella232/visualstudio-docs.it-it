@@ -11,11 +11,11 @@ tags: portal-error
 subscription.type: vl, cloud, retail, partner
 sap.id: 8250612f-7446-20c5-7473-16d089f2280d
 ms.openlocfilehash: 676deca51df888ab6a7c740b689beeb9a066b22b
-ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127882144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427669"
 ---
 ## <a name="were-sorry-to-hear-that-youre-experiencing-an-issue-with-controls-or-buttons-while-using-the-portal"></a>Si è verificato un problema con i controlli o i pulsanti durante l'uso del portale. 
 
@@ -26,4 +26,4 @@ Se i controlli o i pulsanti del portale non funzionano, viene visualizzato un er
 * Apertura del portale in una finestra in incognito o InPrivate 
 * Aggiornamento della pagina  
 
-Se nessuna di queste soluzioni semplici risolve il problema, contattare Sottoscrizioni di Visual Studio supporto tecnico facendo clic sulla "richiesta online" riportata di seguito. 
+Se nessuna di queste soluzioni semplici risolve il problema, contattare Sottoscrizioni di Visual Studio supporto tecnico facendo clic sulla "richiesta online" di seguito. 

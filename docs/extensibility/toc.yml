@@ -9,7 +9,7 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: 'Creare la prima estensione: Hello World'
       href: extensibility-hello-world.md
-    - name: Aggiornare le estensioni per Visual Studio 2022 (anteprima)
+    - name: Aggiornare le estensioni Visual Studio 2022 (anteprima)
       items:
         - name: Aggiornare un'estensione
           href: migration/update-visual-studio-extension.md
@@ -21,7 +21,7 @@
           href: migration/breaking-api-list.md
         - name: Elenco di API rimosse
           href: migration/removed-api-list.md
-        - name: Pia di cui è stata eseguita la migrazione
+        - name: PiA migrato
           href: migration/migrated-assemblies.md
     - name: Novità di Visual Studio 2019 SDK
       items:
@@ -547,6 +547,8 @@
               href: private-galleries.md
             - name: Creare un feed atom per una raccolta privata
               href: how-to-create-an-atom-feed-for-a-private-gallery.md
+            - name: Creare un feed ATOM (VsixFeed) per una raccolta privata con VsixUtil
+              href: how-to-create-vsix-feed-for-private-gallery.md
             - name: Gestire una raccolta privata tramite le impostazioni del Registro di sistema
               href: how-to-manage-a-private-gallery-by-using-registry-settings.md
         - name: Supportare più versioni di Visual Studio

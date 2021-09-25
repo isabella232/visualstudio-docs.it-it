@@ -16,11 +16,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ec48a0075e03a430bad1d7f280f11a476aaea5f
-ms.sourcegitcommit: 022ac348337f77c899996ac81060a969ebfb64bb
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "128133718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432595"
 ---
 # <a name="visual-studio-docs-whats-new-for-august-2021"></a>Visual Studio docs: What's new for August 2021 (Novità di agosto 2021)
 
@@ -48,7 +48,7 @@ Ecco le novità della documentazione Visual Studio agosto 2021. Questo articolo 
 
 **Articoli aggiornati**
 
-- [Pubblicare un'applicazione in IIS importando le impostazioni](../deployment/tutorial-import-publish-settings-iis.md) di pubblicazione in Visual Studio - Aggiornamento per WS 2019 e .NET 5
+- [Pubblicare un'applicazione in IIS importando](../deployment/tutorial-import-publish-settings-iis.md) le impostazioni di pubblicazione in Visual Studio - Aggiornamento per WS 2019 e .NET 5
 
 ## <a name="extensibility"></a>Estendibilità
 
@@ -141,7 +141,7 @@ Le sezioni seguenti forniscono i tre mesi precedenti delle novità della documen
 
 **Articoli aggiornati**
 - [Ricerca nei file](./find-in-files.md) - Aggiunta della sezione Ricerche multiple e aggiornamenti generali
-- [Configurare le impostazioni di attendibilità per file e](./reference/trust-settings.md) cartelle - Aggiunta di informazioni sul nuovo trust Impostazioni in VS2022
+- [Configurare le impostazioni di attendibilità per file e cartelle](./reference/trust-settings.md) - Aggiunta di informazioni sul nuovo trust Impostazioni in VS2022
 - [Tasti di scelta rapida predefiniti in Visual Studio](./default-keyboard-shortcuts-in-visual-studio.md) - Aggiunta di descrizioni ai tasti di scelta rapida
 
 #### <a name="javascript"></a>JavaScript
@@ -197,7 +197,7 @@ Le sezioni seguenti forniscono i tre mesi precedenti delle novità della documen
 **Articoli aggiornati**
 
 - [Gestire le risorse associate agli account Azure in](../azure/vs-azure-tools-resources-managing-with-cloud-explorer.md) Visual Studio Cloud Explorer - Aggiungere la deprecazione Cloud Explorer e Esplora server nodo di Azure
-- [Accesso alle macchine virtuali di Azure da Esplora server-](../azure/vs-azure-tools-virtual-machines-access-from-server-explorer.md) Aggiungere la deprecazione Cloud Explorer e Esplora server nodo di Azure
+- [Accesso alle macchine virtuali di Azure Esplora server-](../azure/vs-azure-tools-virtual-machines-access-from-server-explorer.md) Aggiungere la deprecazione Cloud Explorer e Esplora server nodo di Azure
 
 #### <a name="containers"></a>Contenitori
 
@@ -248,14 +248,14 @@ Le sezioni seguenti forniscono i tre mesi precedenti delle novità della documen
 **Articoli aggiornati**
 
 - [MSBuild destinazioni -](../msbuild/msbuild-targets.md) MSBuild: Chiarire come estendere e personalizzare le destinazioni
-- [Metadati degli elementi nell'invio in batch](../msbuild/item-metadata-in-task-batching.md) di attività - MSBuild: chiarire il comportamento di invio in batch dei metadati identity
+- [Metadati degli elementi nell'invio in batch](../msbuild/item-metadata-in-task-batching.md) delle attività - MSBuild: chiarire il comportamento di invio in batch dei metadati identity
 
 #### <a name="python"></a>Python
 
 **Articoli aggiornati**
 
 - [Progetti Python in Visual Studio](../python/managing-python-projects-in-visual-studio.md) : risolti GitHub problemi nel contenuto Python
-- [Usare l'finestra interattiva Python](../python/python-interactive-repl-in-visual-studio.md) - Risolvere GitHub problemi nel contenuto Python
+- [Usare python finestra interattiva](../python/python-interactive-repl-in-visual-studio.md) - Risoluzione dei GitHub nel contenuto Python
 - [Modelli di progetto di applicazione](../python/python-web-application-project-templates.md) Web Python : risolti GitHub problemi nel contenuto Python
 
 #### <a name="sharepoint"></a>SharePoint
@@ -264,13 +264,13 @@ Le sezioni seguenti forniscono i tre mesi precedenti delle novità della documen
 
 - [Procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md) - Rimuovere sp13
 - [Procedura: Creare un modello BDC](../sharepoint/how-to-create-a-bdc-model.md) - Rimuovere sp13
-- [Procedura: Creare una SharePoint web part usando una finestra](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) di progettazione - Rimuovere sp13
+- [Procedura: Creare una SharePoint web part usando una](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) finestra di progettazione - Rimuovere sp13
 
 #### <a name="vsto"></a>VSTO
 
 **Articoli aggiornati**
 
-- [Visual Studio Tools per Office scenari di installazione di runtime:](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md) il documento è stato aggiornato per includere nuove versioni di Office
+- [Visual Studio Tools per Office di installazione di runtime:](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md) aggiornato il documento per includere nuove versioni di Office
 
 #### <a name="xaml-tools"></a>Strumenti XAML
 
@@ -285,7 +285,7 @@ Le sezioni seguenti forniscono i tre mesi precedenti delle novità della documen
 **Nuovi articoli**
 
 - [Metriche del codice - Complessità ciclomatica](../code-quality/code-metrics-cyclomatic-complexity.md) - Aggiornamenti delle metriche del codice per complessità e profondità dell'ereditarietà ciclomatica
-- [Metriche del codice - Profondità dell'ereditarietà (DIT)](../code-quality/code-metrics-depth-of-inheritance.md) - Aggiornamenti delle metriche del codice per complessità tematica e profondità dell'ereditarietà
+- [Metriche del codice - Profondità dell'ereditarietà (DIT)](../code-quality/code-metrics-depth-of-inheritance.md) - Aggiornamenti delle metriche del codice per complessità complessa e profondità dell'ereditarietà
 - [Domande frequenti sull'analisi](../code-quality/analyzers-faq.yml) del codice: FAQ.md in yml
 - [Domande frequenti sugli analizzatori FxCop](../code-quality/net-analyzers-faq.yml) e .NET legacy: FAQ.md in yml
 
@@ -303,7 +303,7 @@ Le sezioni seguenti forniscono i tre mesi precedenti delle novità della documen
 
 **Nuovi articoli**
 
-- [Domande frequenti sul debug di snapshot in Visual Studio](../debugger/debug-live-azure-apps-faq.yml) - FAQ.md convertito in yml
+- [Domande frequenti sul debug di snapshot in Visual Studio](../debugger/debug-live-azure-apps-faq.yml) - FAQ.md in yml
 - [Domande frequenti- Trovare la funzionalità di](../debugger/find-your-debugging-task.yml) debug necessaria in Visual Studio - FAQ.md convertito in yml
 
 **Articoli aggiornati**
@@ -336,13 +336,13 @@ Le sezioni seguenti forniscono i tre mesi precedenti delle novità della documen
 - [MSB8027: due o più file con il nome filename produrranno output nello stesso percorso.](../msbuild/errors/msb8027.md) - Aggiornare il contenuto MSB8xxx F1
 - [MSB8037: la Windows SDK per le app C++ desktop non è stata trovata.](../msbuild/errors/msb8037.md) - Aggiornare il contenuto MSB8xxx F1
 - [MSB8042: per questo progetto sono necessarie librerie ATL o MFC con mitigazioni spectre.](../msbuild/errors/msb8042.md) - Aggiornare il contenuto MSB8xxx F1
-- [MSB3721: il comando 'command'](../msbuild/errors/msb3721.md) è stato terminato con il codice 'error-code': MSBuild di errore
-- [MSB3821:](../msbuild/errors/msb3821.md) Non è stato possibile elaborare il file 'path' a causa del suo essere in Internet o nell'area con restrizioni o avere il contrassegno del Web nel file - MSBuild pagine di errore
+- [MSB3721: il comando 'command'](../msbuild/errors/msb3721.md) è stato chiuso con il codice 'error-code': MSBuild di errore
+- [MSB3821:](../msbuild/errors/msb3821.md) Non è stato possibile elaborare il file 'path' a causa del suo essere in Internet o nell'area con restrizioni o con il contrassegno del Web nel file - MSBuild pagine di errore
 
 **Articoli aggiornati**
 
 - [MSBuild condizioni:](../msbuild/msbuild-conditions.md) confronto MSBuild versioni
-- [Funzioni di proprietà](../msbuild/property-functions.md) : confronto MSBuild versioni
+- [Funzioni di proprietà:](../msbuild/property-functions.md) confronto MSBuild versioni
 
 #### <a name="python"></a>Python
 

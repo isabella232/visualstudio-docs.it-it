@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 8a7d6b0d29181ea464c8e98325e0c1ade53a45dd
-ms.sourcegitcommit: 022ac348337f77c899996ac81060a969ebfb64bb
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "128134232"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426955"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -44,7 +44,7 @@ In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual St
 
 1. Aggiornare Visual Studio: se è già stato installato Visual Studio, assicurarsi di eseguire la versione più recente. Per altre informazioni su come aggiornare l'installazione, vedere la [pagina Aggiornamento Visual Studio alla versione più](../../install/update-visual-studio.md) recente.
 
-1. Scegliere il tema (facoltativo): questa esercitazione include screenshot che usano il tema scuro. Per altre [informazioni, è possibile Visual Studio l'IDE e la pagina Editor.](../../ide/quickstart-personalize-the-ide.md)
+1. Scegliere il tema (facoltativo): questa esercitazione include screenshot che usano il tema scuro. È possibile [personalizzare l'IDE Visual Studio e la pagina Editor](../../ide/quickstart-personalize-the-ide.md) per altre informazioni.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -105,9 +105,9 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows** dall'elenco Piattaforma e **Web** dall'elenco dei tipi di progetto.
 
-      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il ASP.NET Core app Web** e quindi scegliere **Avanti.**
+      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il modello app Web ASP.NET Core** e quindi scegliere **Avanti.**
 
-   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Screenshot che mostra il ASP.NET Core di progetto app Web evidenziato nella finestra di dialogo Project nuova applicazione.":::
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Screenshot che mostra il ASP.NET Core di progetto app Web evidenziato nella finestra di dialogo Project nuova app.":::
 
    > [!NOTE]
    > Se il modello app **Web ASP.NET Core** non è visualizzato, è possibile installarlo dalla finestra Crea un **nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
@@ -146,9 +146,9 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 1. Nella finestra **Crea un nuovo progetto** scegliere **C#** dall'elenco Linguaggio. Scegliere quindi **Windows** dall'elenco Piattaforma e **Web** dall'elenco dei tipi di progetto.
 
-      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il ASP.NET Core app Web** e quindi scegliere **Avanti.**
+      Dopo aver applicato i filtri del linguaggio, della piattaforma e del tipo di progetto, **scegliere il modello app Web ASP.NET Core** e quindi scegliere **Avanti.**
 
-   :::image type="content" source="media/vs-2022/csharp-create-new-project-aspnet-core.png" alt-text="Screenshot che mostra il ASP.NET Core di progetto app Web evidenziato nella finestra di dialogo Project nuova applicazione.":::
+   :::image type="content" source="media/vs-2022/csharp-create-new-project-aspnet-core.png" alt-text="Screenshot che mostra il ASP.NET Core di progetto app Web evidenziato nella finestra di dialogo Project nuova app.":::
 
    > [!NOTE]
    > Se il modello app **Web ASP.NET Core** non è visualizzato, è possibile installarlo dalla finestra Crea un **nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
@@ -157,7 +157,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
    >
    > A questo punto scegliere il carico di lavoro **Sviluppo ASP.NET e Web** nel programma di installazione di Visual Studio.
    >
-   > :::image type="content" source="media/vs-2022/aspnet-core-web-dev-workload.png" alt-text="Screenshot che mostra il carico ASP.NET di sviluppo Web e web nel Programma di installazione di Visual Studio.":::
+   > :::image type="content" source="media/vs-2022/aspnet-core-web-dev-workload.png" alt-text="Screenshot che mostra il carico ASP.NET di sviluppo Web nel Programma di installazione di Visual Studio.":::
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Se viene chiesto di salvare, procedere. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
@@ -174,7 +174,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
     
     Lasciare **deselezionata la casella Abilita Docker** e selezionare **Nessuno per** Tipo di autenticazione. Scegliere quindi **Create** (Crea).
 
-   :::image type="content" source="media/vs-2022/aspnet-core-additional-information.png" alt-text="Screenshot che mostra le impostazioni predefinite nella finestra &quot;Informazioni aggiuntive&quot;. Il valore di Framework è '.NET 6.0'.":::
+   :::image type="content" source="media/vs-2022/aspnet-core-additional-information.png" alt-text="Screenshot che mostra le impostazioni predefinite nella finestra &quot;Informazioni aggiuntive&quot;. Il valore framework è '.NET 6.0'.":::
 
    Visual Studio aprirà il nuovo progetto.
 
@@ -224,7 +224,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      ![Selezionare il pulsante IIS Express in Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Se viene visualizzato un messaggio di errore che indica Impossibile connettersi al **server Web 'IIS Express',** chiudere Visual Studio e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida.  Eseguire quindi di nuovo l'applicazione.
+     > Se viene visualizzato il messaggio di errore Impossibile connettersi al server Web **'IIS Express',** chiudere  Visual Studio e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
      >
      > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento.
 
@@ -292,11 +292,11 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
  1. Il modello di progetto crea una soluzione con un unico progetto ASP.NET Core denominato _MyCoreApp_. Scegliere la scheda **Esplora soluzioni** per visualizzarne il contenuto.
 
-    ![Screenshot del Esplora soluzioni in Visual Studio che mostra il contenuto del ASP.NET core denominato "MyCoreApp".](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+    ![Screenshot del Esplora soluzioni in Visual Studio il contenuto del progetto ASP.NET core denominato "MyCoreApp".](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. Espandere la **cartella** Pages.
+ 1. Espandere la **cartella** Pagine.
 
-     ![Screenshot del Esplora soluzioni in Visual Studio che mostra il contenuto della cartella Pages per "MyCoreApp".](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+     ![Screenshot del Esplora soluzioni in Visual Studio il contenuto della cartella Pages per "MyCoreApp".](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
 
  1. Visualizzare il file **Index.cshtml** nell'editor di codice.
 
@@ -304,21 +304,21 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
  1. A ogni file con estensione cshtml è associato un file di codice. Per aprire il file di codice nell'editor, espandere il nodo **Index.cshtml** in Esplora soluzioni e scegliere il file **Index.cshtml.cs.**
 
-     ![Screenshot del Esplora soluzioni in Visual Studio che mostra il file Index.cshtml.cs selezionato.](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![Screenshot dell'Esplora soluzioni in Visual Studio che mostra il file Index.cshtml.cs selezionato.](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
  1. Visualizzare il file **Index.cshtml.cs** nell'editor di codice.
 
-     ![Screenshot che mostra il file Index.cshtml.cs aperto nell'editor Visual Studio codice.](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+     ![Screenshot che mostra il file Index.cshtml.cs aperto nell'editor Visual Studio di codice.](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
  1. Il progetto contiene una cartella **wwwroot** che rappresenta la radice del sito Web. Espandere la cartella per visualizzarne il contenuto.
 
-     ![Screenshot del Esplora soluzioni in Visual Studio che mostra il contenuto della cartella "wwwroot".](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+     ![Screenshot dell'Esplora soluzioni nella Visual Studio che mostra il contenuto della cartella "wwwroot".](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
 
     È possibile inserire il contenuto statico del sito &mdash;ad esempio CSS, immagini e librerie JavaScript&mdash; direttamente nei percorsi desiderati.
 
  1. Il progetto contiene anche file di configurazione che gestiscono l'app Web in fase di esecuzione. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione è archiviata in *appsettings.json*. È possibile eseguire comunque l'override di queste impostazioni con *appsettings.Development.json*. Per visualizzare il file **appsettings.Development.json**, espandere il file **appsettings.json**.
 
-     ![Screenshot del Esplora soluzioni in Visual Studio che mostra il file appsettings.json selezionato ed espanso per visualizzare le appsettings. File Development.json.](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+     ![Screenshot del Esplora soluzioni in Visual Studio che mostra il file appsettings.json selezionato ed espanso per visualizzare appsettings. File Development.json.](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
 ## <a name="run-debug-and-make-changes"></a>Esecuzione, debug e modifiche
 
@@ -327,7 +327,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      ![Screenshot che mostra il pulsante IIS Express evidenziato nell'IDE Visual Studio.](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Se viene visualizzato un messaggio di errore che indica Impossibile connettersi al **server Web 'IIS Express',** chiudere Visual Studio e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida.  Eseguire quindi di nuovo l'applicazione.
+     > Se viene visualizzato il messaggio di errore Impossibile connettersi al server Web **'IIS Express',** chiudere  Visual Studio e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
      >
      > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento.
 
@@ -398,7 +398,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
  1. Espandere la **cartella** Pagine.
 
-     :::image type="content" source="media/vs-2022/csharp-aspnet-solution-explorer-pages.png" alt-text="Screenshot del Esplora soluzioni in Visual Studio il contenuto della cartella Pages per &quot;MyCoreApp&quot;.":::
+     :::image type="content" source="media/vs-2022/csharp-aspnet-solution-explorer-pages.png" alt-text="Screenshot del Esplora soluzioni in Visual Studio che mostra il contenuto della cartella Pages per &quot;MyCoreApp&quot;.":::
 
  1. Visualizzare il file **Index.cshtml** nell'editor di codice.
 
@@ -429,7 +429,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      :::image type="content" source="media/vs-2022/csharp-aspnet-razor-iisexpress.png" alt-text="Screenshot che mostra il pulsante IIS Express evidenziato nell'IDE Visual Studio.":::
 
      > [!NOTE]
-     > Se viene visualizzato il messaggio di errore Impossibile connettersi al server Web **'IIS Express',** chiudere  Visual Studio e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
+     > Se viene visualizzato il messaggio di errore Impossibile connettersi al server Web **'IIS Express',** chiudere Visual Studio  e quindi aprirlo usando l'opzione Esegui come amministratore dal menu di scelta rapida o dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
      >
      > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento.
 

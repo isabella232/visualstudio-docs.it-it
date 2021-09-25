@@ -224,9 +224,13 @@
               href: troubleshooting-specific-errors-in-clickonce-deployments.md
             - name: Debug di applicazioni ClickOnce in cui si usa System.Deployment.Application
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
-    - name: Prerequisiti per la distribuzione dell'applicazione
+    - name: Programma di installazione di Visual Studio progetti
       items:
-        - name: Panoramica dei prerequisiti per la distribuzione dell'applicazione
+        - name: Estensione Visual Studio Installer Projects e .NET Core 3.1
+          href: installer-projects-net-core.md
+    - name: Programma di avvio automatico personalizzato
+      items:
+        - name: Prerequisiti per la distribuzione dell'applicazione
           href: application-deployment-prerequisites.md
         - name: Prerequisiti per la distribuzione di applicazioni a 64 bit
           href: deploying-prerequisites-for-64-bit-applications.md
@@ -308,7 +312,3 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: Riferimenti alle API non gestite ClickOnce
           href: clickonce-unmanaged-api-reference.md
-    - name: Informazioni di riferimento su Visual Studio Installer Projects
-      items:
-        - name: Estensione Visual Studio Installer Projects e .NET Core 3.1
-          href: installer-projects-net-core.md

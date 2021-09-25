@@ -12,11 +12,11 @@ ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 1dc2fcbbac33fe19cd50b44675609f7121c1be69
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128307051"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429666"
 ---
 # <a name="xml-document-validation"></a>Convalida di documenti XML
 
@@ -24,7 +24,7 @@ L'editor XML controlla la sintassi XML 1.0 ed esegue anche la convalida dei dati
 
 Gli schemi usati nella convalida vengono individuati confrontando il `targetNamespace` di uno schema compilato con la dichiarazione xmlns dell'elemento. Gli schemi compilati vengono caricati da una delle seguenti posizioni, elencate in ordine di priorità:
 
-- Dal nome file specificato nel **campo Schemi** della finestra **Proprietà del** documento.
+- Dal nome file specificato nel **campo Schemi** della finestra **Proprietà** del documento.
 
 - Schema inline o DTD.
 
@@ -41,15 +41,15 @@ Gli schemi possono essere rilevati anche nelle seguenti posizioni aggiuntive qua
 - Uno schema dalla directory della cache degli schemi.
 
 ## <a name="xslt-files"></a>File XSLT
-Quando si modifica un file XSLT, il file *xslt.xsd* che si trova nella cache dello schema viene utilizzato per la convalida. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Gli errori del compilatore XSLT vengono visualizzati con una sottolineatura ondulata di colore rosso.
+Quando si modifica un file XSLT, il file *xslt.xsd* che si trova nella cache dello schema viene usato per la convalida. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Gli errori del compilatore XSLT vengono visualizzati con una sottolineatura ondulata di colore rosso.
 
-## <a name="xml-schema-xsd-files"></a>File XML Schema (XSD)
-Quando si modifica un file XML Schema, per la convalida viene utilizzato il file *xsdschema.xsd* che si trova nella cache dello schema. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Anche gli errori di compilazione vengono visualizzati con una sottolineatura ondulata di colore rosso.
+## <a name="xml-schema-xsd-files"></a>File DI XML Schema (XSD)
+Quando si modifica un file XML Schema, per la convalida viene usato il file *xsdschema.xsd* che si trova nella cache dello schema. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Anche gli errori di compilazione vengono visualizzati con una sottolineatura ondulata di colore rosso.
 
 ## <a name="entity-reference-limit"></a>Limite dei riferimenti alle entità
-Per impostazione predefinita, l'elaborazione DTD limita il numero di riferimenti a entità a 10.000 riferimenti e può contenere la maggior parte degli schemi XML.  Il messaggio di errore in Visual Studio può essere "Superato il limite di riferimenti alle entità per filename".
+L'elaborazione DTD limita il numero di riferimenti alle entità per impostazione predefinita a 10.000 riferimenti e può contenere la maggior parte degli XML Schema.  Il messaggio di errore in Visual Studio potrebbe essere "Superato il limite di riferimenti all'entità per filename".
 
-Se si verifica questa limitazione nell'elaborazione di un documento XML e si vuole estendere il validator a uno schema più grande, è possibile modificare questa impostazione con la chiave Visual Studio `MaxNumberOfDtdEntityReferences` registro di sistema. Per [altre informazioni su come apportare questa modifica, Visual Studio modifica](../install/tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance) del Registro di sistema per un'istanza di . Si noti che questo vale per tutti i documenti XML aperti dall'utente in tale computer.
+Se si verifica questa limitazione nell'elaborazione di un documento XML e si vuole estendere il validator a uno schema più grande, è possibile modificare questa impostazione con la chiave Visual Studio `MaxNumberOfDtdEntityReferences` del Registro di sistema. Per altre informazioni su come apportare questa modifica, vedere modifica del Registro di sistema per [un'istanza di Visual Studio.](../install/tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance) Si noti che questo si applica a tutti i documenti XML aperti dall'utente in tale computer.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -20,7 +20,7 @@ ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "128374722"
+ms.locfileid: "128426439"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C# tramite Visual Studio
 
@@ -40,7 +40,7 @@ In questa esercitazione si apprenderà come:
 
 ::: moniker range=">=vs-2022"
 
-È necessario aver installato Visual Studio 2022 Preview e il carico di lavoro **sviluppo desktop .NET.**
+È necessario avere installato Visual Studio 2022 Preview e il carico di lavoro **sviluppo desktop .NET.**
 
 ::: moniker-end
 
@@ -117,7 +117,7 @@ In primo luogo, si creerà un progetto di applicazione console .NET Core. Il tip
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *GetStartedDebugging* nella casella Project **nome.** Scegliere quindi **Avanti**.
 
-1. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
+1. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
 
    Visual Studio aprirà il nuovo progetto.
 
@@ -133,7 +133,7 @@ In primo luogo, si creerà un progetto di applicazione console .NET Core. Il tip
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
 
-   Dopo aver applicato i filtri della lingua e della piattaforma, scegliere il modello **Applicazione console** e quindi **scegliere Avanti.**
+   Dopo aver applicato i filtri della lingua e della piattaforma, scegliere il **modello Applicazione console** e quindi scegliere **Avanti.**
 
    :::image type="content" source="media/vs-2022/get-started-create-console-project.png" alt-text="Screenshot del modello &quot;Applicazione console&quot; nella finestra &quot;Crea un nuovo progetto&quot; di Visual Studio 2022.":::
 
@@ -230,7 +230,7 @@ In questo caso si usano principalmente i tasti di scelta rapida, perché è un m
     Hello, fred smith! Count to 10
     ```
 
-1. Per arrestare il debugger, selezionare **MAIUSC+F5** oppure scegliere il pulsante Arresta debug sulla barra degli strumenti Debug oppure scegliere **Debug** Interrompi debug dalla barra dei  >  menu.
+1. Per arrestare il debugger, selezionare **MAIUSC+F5** oppure scegliere il pulsante Arresta debug sulla barra degli strumenti Debug oppure scegliere **Debug** Arresta debug dalla barra dei  >  menu.
 
     :::image type="content" source="media/vs-2022/dbg-tour-stop-debugging.png" alt-text="Screenshot del pulsante &quot;Arresta debug&quot; sulla barra degli strumenti Debug di Visual Studio 2022.":::
 
@@ -272,9 +272,9 @@ In questo caso si usano principalmente i tasti di scelta rapida, perché è un m
 
     :::image type="content" source="media/vs-2022/dbg-tour-breakpoint.png" alt-text="Screenshot di un punto di interruzione in Visual Studio 2022."::: 
 
-    I punti di interruzione sono una funzionalità essenziale del debug affidabile. È possibile impostare punti di interruzione nel punto in cui si vuole che Visual Studio sospende il codice in esecuzione in modo da esaminare i valori delle variabili o il comportamento della memoria o sapere se viene eseguito o meno un ramo di codice.
+    I punti di interruzione sono una funzionalità essenziale del debug affidabile. È possibile impostare punti di interruzione Visual Studio sospendere il codice in esecuzione in modo da esaminare i valori delle variabili o il comportamento della memoria o sapere se un ramo di codice viene eseguito.
 
-1. Per avviare il debug, premere  **F5** oppure scegliere il pulsante  Destinazione di debug sulla barra degli strumenti Standard oppure scegliere il pulsante Avvia debug sulla barra degli strumenti Debug oppure scegliere **Debug** Avvia debug dalla barra  >   dei menu. L'app viene avviata e il debugger viene eseguito fino alla riga di codice in cui è stato impostato il punto di interruzione.
+1. Per avviare il debug, selezionare  **F5** oppure scegliere il pulsante  Destinazione di debug sulla barra degli strumenti Standard oppure scegliere il pulsante Avvia debug sulla barra degli strumenti Debug oppure scegliere **Debug** Avvia debug dalla barra  >   dei menu. L'app viene avviata e il debugger viene eseguito sulla riga di codice in cui è stato impostato il punto di interruzione.
 
     :::image type="content" source="media/vs-2022/get-started-set-breakpoint.png" alt-text="Screenshot che mostra un punto di interruzione nell'editor di codice Visual Studio 2022, con l'esecuzione del codice sospesa in corrispondenza del punto di interruzione.":::
 
@@ -282,7 +282,7 @@ In questo caso si usano principalmente i tasti di scelta rapida, perché è un m
 
     Quando l'app non è in esecuzione, **F5** avvia il debugger, che eseguirà l'app fino a raggiungere il primo punto di interruzione. Se l'app viene sospesa in corrispondenza di un punto di interruzione, **F5** continuerà a eseguire l'app fino a raggiungere il punto di interruzione successivo.
 
-    I punti di interruzione sono una funzionalità utile quando si conosce in dettaglio la riga o la sezione di codice che si vuole esaminare. Per altre informazioni sui diversi tipi di punti di interruzione che è possibile impostare, ad esempio i punti di interruzione condizionali, vedere [Uso dei punti di interruzione.](../../debugger/using-breakpoints.md)
+    I punti di interruzione sono una funzionalità utile quando si conosce la riga o la sezione di codice che si vuole esaminare in dettaglio. Per altre informazioni sui diversi tipi di punti di interruzione che è possibile impostare, ad esempio i punti di interruzione condizionali, vedere [Uso dei punti di interruzione](../../debugger/using-breakpoints.md).
 
 ::: moniker-end
 
@@ -292,7 +292,7 @@ In questo caso si usano principalmente i tasti di scelta rapida, perché è un m
 
 In questa esercitazione nella maggior parte dei casi vengono usati tasti di scelta rapida che rappresentano un modo rapido per eseguire l'app nel debugger (i comandi equivalenti, ad esempio i comandi di menu, sono indicati tra parentesi).
 
-1. Mentre è in pausa nell'istruzione, passare il puntatore sulla variabile per visualizzare il valore predefinito, il valore del primo `name += letters[i]` `letters` elemento nella matrice, `char[10]` .
+1. Durante la sospensione dell'istruzione, passare il puntatore del mouse sulla variabile e viene visualizzato il valore predefinito, il valore del primo `name += letters[i]` `letters` elemento della matrice, `char[10]` .
 
      Le funzionalità che consentono di esaminare le variabili sono tra le funzionalità più utili del debugger e sono disponibili diversi modi per eseguire questa operazione. Spesso quando si tenta di eseguire il debug di un problema, si tenta di determinare se le variabili includono i valori previsti in un determinato momento.
 
@@ -300,21 +300,21 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
      ![Screenshot del debugger sospeso in corrispondenza dell'istruzione 'name+= letters[I]'.](../csharp/media/get-started-view-data-tip.png)
 
-1. Passare quindi il puntatore `name` sulla variabile per visualizzarne il valore corrente, una stringa vuota.
+1. Passare quindi il puntatore del mouse sulla variabile e `name` visualizzare il relativo valore corrente, una stringa vuota.
 
-1. Premere **F10** (o scegliere **Debug >** Esegui istruzione/comando ) due volte per passare alla chiamata al metodo e quindi premere `SendMessage` **F10** ancora una volta.
+1. Premere **F10** (o scegliere Debug > **esegui** istruzione/istruzione ) due volte per passare alla chiamata al metodo e quindi premere `SendMessage` **F10** ancora una volta.
 
-     F10 fa avanzare il debugger all'istruzione successiva senza eseguire istruzioni in funzioni o metodi nel codice dell'app (il codice viene comunque eseguito). Premendo F10 nella chiamata al metodo, è stato ignorato il codice di implementazione per (che potrebbe non essere interessato al `SendMessage` `SendMessage` momento).
+     F10 fa avanzare il debugger all'istruzione successiva senza eseguire istruzioni in funzioni o metodi nel codice dell'app (il codice viene comunque eseguito). Premendo F10 nella chiamata al metodo, è stato ignorato il codice di implementazione per (che potrebbe non essere `SendMessage` `SendMessage` interessato al momento).
 
-1. Premere **F10** (o **Esegui** debug istruzione/istruzione ) alcune volte per eseguire l'iterazione più volte nel ciclo, sospendere di nuovo in corrispondenza del punto di interruzione e passare ogni volta il puntatore del mouse sulla variabile per controllarne il >  `for` `name` valore.
+1. Premere **F10** (o **Esegui** debug istruzione) più volte per scorrere più volte il ciclo, sospendere nuovamente il punto di interruzione e passare il puntatore del mouse sulla variabile ogni volta per verificarne il >  `for` `name` valore.
 
-     ![Screenshot animato del debugger Visual Studio che mostra l'effetto della pressione di F10 per eseguire l'istruzione/esecuzione ed eseguire l'iterazione di un ciclo durante il debug.](../csharp/media/get-started-data-tip.gif)
+     ![Screenshot animato del debugger Visual Studio che mostra l'effetto della pressione di F10 per eseguire un'istruzione/esecuzione e scorrere un ciclo durante il debug.](../csharp/media/get-started-data-tip.gif)
 
-     Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i valori `for` di , quindi , e così `f` `fr` `fre` via. Per far avanzare il debugger attraverso il ciclo più velocemente in questo scenario, è possibile premere **F5** (o scegliere **Debug** continua) invece di passare al punto di interruzione anziché  >  all'istruzione successiva.
+     Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i `for` valori di , quindi , e così `f` `fr` `fre` via. Per far avanzare il debugger nel ciclo più velocemente in questo scenario, è possibile premere **F5** (o scegliere **Debug** continua ) invece di passare al punto di interruzione anziché  >  all'istruzione successiva.
 
      Spesso, durante il debug, è necessario controllare rapidamente i valori delle proprietà sulle variabili, per vedere se si stanno archiviando i valori previsti, e i suggerimenti dati costituiscono un valido strumento per questa operazione.
 
-1. Mentre è ancora in pausa nel ciclo nel metodo , premere `for` `Main` **F11** (o scegliere Debug > Esegui istruzione ) fino a quando non si sospende la chiamata `SendMessage` al metodo.
+1. Mentre è ancora in pausa nel ciclo nel metodo, premere `for` `Main` **F11** (o scegliere Debug > Esegui istruzione ) fino a quando non si sospende la chiamata `SendMessage` al metodo.
 
      Si dovrebbe essere in questa riga di codice:
 
@@ -324,64 +324,64 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
      Il puntatore giallo avanza nel `SendMessage` metodo .
 
-     ![Screenshot del puntatore di esecuzione nel metodo 'SendMessage'.](../csharp/media/get-started-f11.png "F10 Step Into")
+     ![Screenshot del puntatore di esecuzione nel metodo 'SendMessage'.](../csharp/media/get-started-f11.png "Istruzione F10")
 
      F11 corrisponde al comando **Esegui istruzione** e consente di eseguire l'app un'istruzione alla volta. F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. Per impostazione predefinita, il debugger ignora il codice non utente (per informazioni dettagliate, vedere [Just My Code](../../debugger/just-my-code.md)).
 
      Si immagini di aver esaminato il metodo e di voler uscire dal metodo ma rimanere `SendMessage` nel debugger. Questa operazione può essere eseguita usando il comando **Esci da istruzione/routine**.
 
-1. Premere  + **MAIUSC+F11** (o **Esegui debug > esci da istruzione/uscita**).
+1. Premere **MAIUSC** + **F11** (o **Eseguire il debug > istruzione/uscita**).
 
-     Questo comando riprende l'esecuzione dell'app (e fa avanzare il debugger) fino alla fine del metodo o della funzione corrente.
+     Questo comando riprende l'esecuzione dell'app (e fa avanzare il debugger) finché non viene restituito il metodo o la funzione corrente.
 
-     Si dovrebbe tornare al `for` ciclo nel metodo , sospeso in corrispondenza della chiamata al metodo `Main` `SendMessage` . Per altre informazioni sui diversi modi per spostarsi nel codice, vedere [Esplorare il codice nel debugger.](../../debugger/navigating-through-code-with-the-debugger.md)
+     È necessario tornare nel `for` ciclo nel metodo , sospeso alla chiamata al metodo `Main` `SendMessage` . Per altre informazioni sui diversi modi per spostarsi nel codice, vedere [Esplorare il codice nel debugger](../../debugger/navigating-through-code-with-the-debugger.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-1. Mentre è in pausa nell'istruzione , passare il mouse sulla variabile per visualizzare un suggerimento dati che mostra le dimensioni della matrice `name += letters[i]` e il tipo di `letters` elemento, `char[10]` .
+1. Durante la sospensione dell'istruzione, passare il puntatore del mouse sulla variabile per visualizzare una descrizione dei dati che mostra le dimensioni della matrice `name += letters[i]` e il tipo di `letters` elemento, `char[10]` .
 
     > [!NOTE]
-    > Una delle funzionalità più utili del debugger è la possibilità di esaminare una variabile. Spesso, quando si tenta di eseguire il debug di un problema, si tenta di determinare se le variabili hanno valori previsti in un determinato momento. La visualizzazione dei suggerimenti dati è un buon metodo per verifica ciò.
+    > Una delle funzionalità più utili del debugger è la possibilità di esaminare una variabile. Spesso, quando si tenta di eseguire il debug di un problema, si sta tentando di determinare se le variabili hanno valori previsti in un determinato momento. La visualizzazione di suggerimenti sui dati è un buon modo per verifica ciò.
 
 1. Espandere la `letters` variabile per visualizzare tutti gli elementi della matrice e i relativi valori.
 
     :::image type="content" source="media/vs-2022/get-started-view-data-tip.png" alt-text="Screenshot di un suggerimento dati del debugger in Visual Studio 2022 che mostra i valori degli elementi per la variabile di matrice 'letters'.":::
 
-1. Passare il mouse `name` sulla variabile per visualizzarne il valore corrente, ovvero una stringa vuota.
+1. Passare il `name` puntatore del mouse sulla variabile per visualizzarne il valore corrente, ovvero una stringa vuota.
 
-1. Per far avanzare il debugger all'istruzione successiva,  premere **F10** oppure scegliere il pulsante Esegui istruzione/istruzione/istruzione sulla barra degli strumenti Debug oppure scegliere **Esegui** debug istruzione/istruzione/istruzione  >   dalla barra dei menu. Premere **F10 due** volte per passare oltre la chiamata `SendMessage` al metodo. 
+1. Per far avanzare il debugger all'istruzione successiva,  selezionare **F10** oppure scegliere il pulsante Esegui istruzione/esecuzione istruzione sulla barra degli strumenti Debug oppure scegliere **Esegui** debug istruzione/indietro  >   dalla barra dei menu. Selezionare **F10 due** volte per passare oltre la `SendMessage` chiamata al metodo. 
 
-    **F10 fa** avanzare il debugger senza eseguire un'istruzione alla funzione o ai metodi, anche se il codice è ancora in esecuzione. In questo modo, è stato ignorato il debug del codice nel metodo , a cui non si è `SendMessage` interessati al momento.
+    **F10** fa avanzare il debugger senza eseguire un'istruzione alla funzione o ai metodi, anche se il codice viene ancora eseguito. In questo modo, è stato ignorato il debug del codice nel metodo , a cui non si è `SendMessage` interessati al momento.
 
-1. Per scorrere il ciclo `for` più volte, premere **ripetutamente F10.** Durante ogni iterazione del ciclo, sospendere in corrispondenza del punto di interruzione e quindi passare il mouse sulla `name` variabile per controllarne il valore nel suggerimento dati.
+1. Per scorrere il ciclo `for` più volte, selezionare **ripetutamente F10.** Durante ogni iterazione del ciclo, sospendere in corrispondenza del punto di interruzione e quindi passare il puntatore del mouse sulla variabile per `name` verificarne il valore nella descrizione comando dati.
 
     :::image type="content" source="media/vs-2022/get-started-data-tip.png" alt-text="Screenshot di un suggerimento dati del debugger in Visual Studio 2022 che mostra il valore stringa per la variabile 'name'.":::
 
-    Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i valori `for` di , quindi , e così `f` `fr` `fre` via. Per far avanzare il debugger nel ciclo più velocemente, premere **F5,** che consente di passare al punto di interruzione anziché all'istruzione successiva.
+    Il valore della variabile cambia a ogni iterazione del ciclo, visualizzando i `for` valori di , quindi , e così `f` `fr` `fre` via. Per far avanzare il debugger nel ciclo più velocemente, selezionare **invece F5,** che passa al punto di interruzione anziché all'istruzione successiva.
 
-1. Mentre è in pausa nel ciclo del metodo, premere `for` `Main` **F11**   oppure scegliere il >  pulsante Esegui istruzione dalla barra degli strumenti Debug oppure scegliere Esegui debug istruzione dalla barra dei menu fino a raggiungere la chiamata al `SendMessage` metodo.
+1. Durante la sospensione nel ciclo del metodo, selezionare `for` `Main` **F11**   >  oppure scegliere il pulsante Esegui istruzione dalla barra degli strumenti Debug oppure scegliere Esegui debug istruzione dalla barra dei menu fino a raggiungere la chiamata al `SendMessage` metodo.
 
-     Il debugger deve essere sospeso in corrispondenza di questa riga di codice:
+     Il debugger deve essere sospeso in questa riga di codice:
 
      `SendMessage(name, a[i]);`
 
-1. Per eseguire `SendMessage` un'istruzione nel metodo, premere **di nuovo F11.**
+1. Per eseguire il `SendMessage` metodo, selezionare **di nuovo F11.**
 
      Il puntatore giallo avanza nel `SendMessage` metodo .
 
      :::image type="content" source="media/vs-2022/get-started-f11.png" alt-text="Screenshot che mostra il puntatore di esecuzione del debugger all'interno del metodo 'SendMessage'.":::
 
-     **F11** consente di esaminare il flusso di esecuzione del codice in modo più approfondito. Per eseguire un'istruzione in un metodo da una chiamata al metodo, **premere F11.** Per impostazione predefinita, il debugger ignora l'esecuzione di istruzioni in metodi non utente. Per informazioni sul debug di codice non utente, [vedere Just My Code](../../debugger/just-my-code.md).
+     **F11** consente di esaminare il flusso di esecuzione del codice in modo più approfondito. Per eseguire un'istruzione in un metodo da una chiamata al metodo, selezionare **F11.** Per impostazione predefinita, il debugger ignora l'esecuzione di istruzioni nei metodi non utente. Per informazioni sul debug di codice non utente, [vedere](../../debugger/just-my-code.md)Just My Code .
 
-     Dopo aver completato il debug del metodo, si è pronti per tornare `SendMessage` al ciclo del metodo `for` `main` .
+     Dopo aver completato il debug del metodo, si è pronti per tornare `SendMessage` al `for` ciclo del `main` metodo.
 
-1. Per uscire dal metodo, premere `SendMessage` **MAIUSC+F11**  oppure scegliere il pulsante  Uscita dalla barra degli strumenti Debug oppure scegliere Esegui debug istruzione/uscita >  dalla barra dei menu.
+1. Per uscire dal metodo, selezionare `SendMessage` **MAIUSC+F11**  oppure scegliere il pulsante Esegui istruzione/uscita sulla barra degli strumenti Debug oppure scegliere **Esegui** debug istruzione/uscita > dalla barra dei menu. 
 
-     **Esce dall'istruzione/uscita** riprende l'esecuzione dell'app e fa avanzare il debugger fino a quando il metodo o la funzione corrente non viene restituita.
+     **L'istruzione/uscita** riprende l'esecuzione dell'app e fa avanzare il debugger fino a quando non viene restituito il metodo o la funzione corrente.
 
-     Verrà visualizzato il puntatore giallo nel ciclo del metodo, sospeso `for` alla chiamata al `Main` `SendMessage` metodo. Per altre informazioni sui diversi modi per spostarsi nel codice, vedere [Esplorare il codice nel debugger.](../../debugger/navigating-through-code-with-the-debugger.md)
+     Verrà visualizzato il puntatore giallo nel `for` ciclo del `Main` metodo, sospeso alla chiamata al `SendMessage` metodo. Per altre informazioni sui diversi modi per spostarsi nel codice, vedere [Esplorare il codice nel debugger](../../debugger/navigating-through-code-with-the-debugger.md).
 
 ::: moniker-end
 
@@ -389,16 +389,16 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ::: moniker range="<=vs-2019"
 
-1. Premere **F5 per** passare di nuovo al punto di interruzione.
+1. Selezionare **F5 per** passare di nuovo al punto di interruzione.
 
-1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul metodo nel metodo fino al pulsante verde Esegui fino al clic Immagine del pulsante "Esegui fino al `Console.WriteLine` `SendMessage` ![clic".](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")  a sinistra. La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
+1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul metodo nel metodo fino a quando non viene visualizzata l'immagine verde del pulsante Esegui su `Console.WriteLine` `SendMessage` ![clic.](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")  viene visualizzato a sinistra. La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
 
-     ![Screenshot del pulsante "Esegui fino al clic".](../csharp/media/get-started-run-to-click.png "Esegui fino alla riga selezionata")
+     ![Screenshot del pulsante "Esegui su clic".](../csharp/media/get-started-run-to-click.png "Esegui fino alla riga selezionata")
 
    > [!NOTE]
    > Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è una nuova funzionalità di [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. Se il pulsante freccia verde non è visualizzato, usare **F11** in questo esempio per far avanzare il debugger nella posizione giusta.
 
-1. Fare clic **sul pulsante Esegui fino alla** selezione Immagine del pulsante !["Esegui fino a fare clic".](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Fare clic **sul pulsante Esegui per fare** clic ![sull'immagine del pulsante "Esegui a clic".](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")
 
     Il debugger passa al `Console.WriteLine` metodo .
 
@@ -408,17 +408,17 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ::: moniker range=">=vs-2022"
 
-1. Premere **F5 per** passare di nuovo al punto di interruzione.
+1. Selezionare **F5 per** passare di nuovo al punto di interruzione.
 
-1. Nell'editor di codice passare il puntatore del mouse sulla chiamata al metodo nel metodo fino a quando non viene visualizzato il pulsante Esegui fino al clic `Console.WriteLine` `SendMessage` a sinistra.  La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
+1. Nell'editor di codice passare il puntatore del mouse sulla chiamata al metodo nel metodo fino a quando non viene visualizzato il pulsante Esegui su a `Console.WriteLine` `SendMessage` sinistra.  La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
 
-    :::image type="content" source="media/vs-2022/get-started-run-to-click.png" alt-text="Screenshot che mostra il pulsante &quot;Esegui fino al clic&quot; Visual Studio 2022.":::
+    :::image type="content" source="media/vs-2022/get-started-run-to-click.png" alt-text="Screenshot che mostra il pulsante &quot;Esegui a clic&quot; in Visual Studio 2022.":::
 
-1. Scegliere il **pulsante Esegui fino a** clic. In alternativa, con il cursore in `Console.WriteLine` corrispondenza dell'istruzione selezionare **CTRL+F10.** In caso contrario, fare clic con il pulsante destro del mouse sulla chiamata al metodo e scegliere `Console.WriteLine` **Esegui fino al cursore** dal menu di scelta rapida.
+1. Scegliere il **pulsante Esegui per fare** clic. In alternativa, con il cursore in corrispondenza `Console.WriteLine` dell'istruzione selezionare **CTRL+F10.** In caso contrario, fare clic con il pulsante destro del mouse sulla chiamata al metodo e `Console.WriteLine` scegliere Esegui fino al **cursore** dal menu di scelta rapida.
 
     Il debugger passa alla chiamata `Console.WriteLine` al metodo .
 
-    **L'uso del pulsante Esegui** fino alla selezione è simile all'impostazione di un punto di interruzione temporaneo ed è utile per spostarsi rapidamente all'interno di un'area visibile del codice dell'app in un file aperto.
+    **L'uso del** pulsante Esegui per fare clic è simile all'impostazione di un punto di interruzione temporaneo ed è utile per spostarsi rapidamente all'interno di un'area visibile del codice dell'app in un file aperto.
 
 ::: moniker-end
 
@@ -426,21 +426,21 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ::: moniker range="<=vs-2019"
 
-Fare clic **sul pulsante Restart** ![Image (Riavvia immagine) del pulsante "Restart App" (Riavvia app).](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**).
+Fare clic **sul pulsante** ![Riavvia immagine del pulsante "Riavvia app".](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug (**CTRL**  +  **MAIUSC**  +  **F5**).
 
 Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
-Il debugger si arresta nuovamente in corrispondenza del punto di interruzione impostato in precedenza all'interno del `for` ciclo.
+Il debugger si arresta nuovamente in corrispondenza del punto di interruzione impostato in precedenza all'interno del `for` ciclo .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-Per rieseguire l'app dall'inizio nel debugger, selezionare **CTRL+MAIUSC+F5** oppure scegliere il pulsante Riavvia sulla barra degli strumenti Debug oppure scegliere **Riavvia** debug dalla barra dei  >  menu.
+Per rieseguire l'app dall'inizio del debugger, premere **CTRL+MAIUSC+F5** oppure scegliere il pulsante Riavvia sulla barra degli strumenti Debug oppure scegliere **Riavvia** debug dalla barra dei  >  menu.
 
 :::image type="content" source="media/vs-2022/dbg-tour-restart-debugging.png" alt-text="Screenshot del pulsante &quot;Riavvia&quot; nella barra degli strumenti Debug di Visual Studio 2022.":::
 
-**Riavvia** arresta il debugger e lo riavvia in un unico passaggio. Quando il debugger viene riavviato, verrà eseguito fino al primo punto di interruzione, ovvero il punto di interruzione impostato in precedenza all'interno del `for` ciclo e quindi sospeso.
+**Riavvia** arresta il debugger e lo riavvia in un unico passaggio. Quando il debugger viene riavviato, viene eseguito fino al primo punto di interruzione, ovvero il punto di interruzione impostato in precedenza all'interno del `for` ciclo, quindi viene sospeso.
 
 ::: moniker-end
 
@@ -450,7 +450,7 @@ Per rieseguire l'app dall'inizio nel debugger, selezionare **CTRL+MAIUSC+F5** op
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-    Se è chiuso, aprirlo mentre è in  pausa nel debugger scegliendo > **Debug Windows** > **auto.**
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug** > **Windows** > **Auto.**
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -466,21 +466,21 @@ Per rieseguire l'app dall'inizio nel debugger, selezionare **CTRL+MAIUSC+F5** op
 
 ::: moniker range=">=vs-2022"
 
-Le **finestre Auto e** Variabili **locali** mostrano i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. La **finestra Auto mostra** le variabili usate nella riga corrente in cui si trova il debugger e la riga precedente. La **finestra Variabili** locali mostra le variabili definite nell'ambito locale, che in genere è la funzione o il metodo corrente.
+Le **finestre Auto e** Variabili **locali** mostrano i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. La **finestra Auto** mostra le variabili usate nella riga corrente in cui si trova il debugger e la riga precedente. La **finestra Variabili** locali mostra le variabili definite nell'ambito locale, che in genere è la funzione o il metodo corrente.
 
-1. Mentre il debugger è sospeso, visualizzare la **finestra Auto nella** parte inferiore dell'editor di codice.
+1. Mentre il debugger è in pausa, visualizzare la **finestra Auto** nella parte inferiore dell'editor di codice.
 
-    Se la **finestra Auto è** chiusa, selezionare **CTRL+D, A** o scegliere Debug Windows  >  > **auto dalla** barra dei menu.
+    Se la **finestra Auto** è chiusa, premere **CTRL+D, A** oppure scegliere Debug Windows  >  > **Auto dalla** barra dei menu.
 
-1. Con il debugger ancora sospeso, visualizzare la **finestra** Variabili locali in una scheda accanto **alla finestra Auto.**
+1. Con il debugger ancora in pausa, visualizzare la **finestra** Variabili locali in una scheda accanto **alla finestra Auto.**
 
-    Se la **finestra Variabili** locali è chiusa, selezionare  **CTRL+D, L** o scegliere > **Debug Windows** variabili > **locali**.
+    Se la **finestra Variabili** locali è chiusa, premere **CTRL+D, L** oppure scegliere Debug  > **Windows** > **Variabili locali**.
 
-1. Nella finestra **Variabili locali** espandere la variabile per visualizzare gli elementi della matrice e i `letters` relativi valori.
+1. Nella finestra **Variabili locali espandere** la variabile per visualizzarne gli elementi della matrice e i relativi `letters` valori.
 
      :::image type="content" source="media/vs-2022/get-started-locals-window.png" alt-text="Screenshot della finestra Variabili locali in Visual Studio 2022, con la variabile di matrice &quot;letters&quot; espansa.":::
 
-Per altre informazioni **sulle finestre Auto e** **Variabili** locali, vedere Esaminare le variabili nelle finestre Auto e [Variabili locali](/visualstudio/debugger/autos-and-locals-windows?view=vs-2022&preserve-view=true).
+Per altre informazioni **sulle finestre Auto** e **Variabili** locali, vedere Esaminare le variabili nelle finestre Auto e [Variabili locali](/visualstudio/debugger/autos-and-locals-windows?view=vs-2022&preserve-view=true).
 
 ::: moniker-end
 
@@ -488,11 +488,11 @@ Per altre informazioni **sulle finestre Auto e** **Variabili** locali, vedere Es
 
 ::: moniker range="<=vs-2019"
 
-1. Nella finestra principale dell'editor di codice fare clic con il pulsante destro del mouse sulla `name` variabile e scegliere Aggiungi espressioni di **controllo**.
+1. Nella finestra principale dell'editor di codice fare clic con il pulsante destro del mouse `name` sulla variabile e scegliere Aggiungi espressioni di **controllo.**
 
     Viene visualizzata la finestra **Espressione di controllo** nella parte inferiore dell'editor di codice. È possibile usare una finestra **Espressione di controllo** per specificare una variabile (o un'espressione) che si vuole controllare.
 
-    A questo punto, è disponibile un controllo impostato sulla variabile ed è possibile visualizzarne la modifica del `name` valore durante lo spostamento nel debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
+    A questo punto, è disponibile un'opzione watch impostata sulla variabile ed è possibile visualizzarne la modifica del valore mentre `name` si passa attraverso il debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
 
 ::: moniker-end
 
@@ -500,15 +500,15 @@ Per altre informazioni **sulle finestre Auto e** **Variabili** locali, vedere Es
 
 È possibile specificare una variabile o un'espressione che si vuole tenere d'occhio durante l'esecuzione del codice aggiungendola &mdash; alla finestra Espressione **di** controllo.
 
-1. Mentre il debugger è sospeso, fare clic con il pulsante destro del mouse sulla `name` variabile e scegliere Aggiungi espressioni di **controllo**.
+1. Mentre il debugger è in pausa, fare clic con il pulsante destro del mouse `name` sulla variabile e scegliere Aggiungi espressioni di **controllo.**
 
     La **finestra Espressioni** di controllo viene aperta per impostazione predefinita nella parte inferiore dell'editor di codice.
 
-1. Ora che è stato impostato un controllo sulla variabile, eseguire il codice un'istruzione alla volta per visualizzare il valore della modifica della variabile `name` `name` con ogni `for` iterazione del ciclo. 
+1. Ora che è stata impostata un'orologio sulla variabile, eseguire il codice un'istruzione alla volta per visualizzare il valore della `name` variabile che cambia con ogni `name` `for` iterazione del ciclo. 
 
-    A differenza delle altre  finestre delle variabili, la finestra Espressioni di controllo mostra sempre le variabili che si stanno osservando, anche se saranno disattivate quando non sono nell'ambito.
+    A differenza delle altre  finestre delle variabili, la finestra Espressioni di controllo mostra sempre le variabili che si stanno controllando, anche se saranno disattivate quando non sono nell'ambito.
 
-Per altre informazioni sulla **finestra Espressioni di** controllo, vedere Variabili watch con le finestre Espressioni di [controllo](/visualstudio/debugger/watch-and-quickwatch-windows?view=vs-2022&preserve-view=true).
+Per altre informazioni sulla finestra **Espressioni di controllo,** vedere [Espressioni di controllo variabili con le finestre Espressioni di controllo](/visualstudio/debugger/watch-and-quickwatch-windows?view=vs-2022&preserve-view=true).
 
 ::: moniker-end
 
@@ -518,7 +518,7 @@ Per altre informazioni sulla **finestra Espressioni di** controllo, vedere Varia
 
 1. Mentre l'esecuzione è in pausa nel ciclo `for`, fare clic sulla finestra **Stack di chiamate**, visualizzata per impostazione predefinita nel riquadro inferiore destro.
 
-    Se è chiuso, aprirlo durante la sospensione  nel debugger scegliendo Debug Windows >  > **Stack di chiamate**.
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **Debug** Windows >  > **Stack di chiamate**.
 
 1. Fare **clic su F11** alcune volte fino a quando il debugger non viene sospeso nel `SendMessage` metodo . Osservare la finestra **Stack di chiamate**.
 
@@ -539,28 +539,28 @@ Per altre informazioni sulla **finestra Espressioni di** controllo, vedere Varia
 
 ::: moniker range=">=vs-2022"
 
-Lo **stack di chiamate** consente di comprendere il flusso di esecuzione dell'app, visualizzando l'ordine in cui vengono chiamati metodi e funzioni.
+Lo **stack di** chiamate consente di comprendere il flusso di esecuzione dell'app, mostrando l'ordine in cui vengono chiamati i metodi e le funzioni.
 
 1. Mentre il debugger è sospeso nel ciclo, visualizzare la finestra Stack di chiamate, che si apre per impostazione predefinita nel riquadro `for` inferiore destro dell'editor  di codice.
 
-    Se la **finestra Stack di** chiamate è chiusa,  selezionare **CTRL+D, C** o scegliere Debug Windows >  > **Stack di chiamate** dalla barra dei menu.
+    Se la **finestra Stack di** chiamate è chiusa,  premere **CTRL+D, C** oppure scegliere Debug Windows Stack di >  > **chiamate** dalla barra dei menu.
 
     Nella finestra **Stack di** chiamate verrà visualizzato il puntatore giallo in corrispondenza del metodo `Main` corrente.
 
-1. Selezionare **F11** alcune volte finché il debugger non viene sospeso nel `SendMessage` metodo .
+1. Premere **F11** alcune volte finché il debugger non viene sospeso nel `SendMessage` metodo .
 
-    La riga superiore della finestra **Stack di chiamate** mostra la funzione corrente, ovvero il metodo `SendMessage` . La seconda riga indica che il `SendMessage` metodo è stato chiamato dal metodo `Main` .
+    La riga superiore della finestra **Stack di** chiamate mostra la funzione corrente, ovvero il `SendMessage` metodo . La seconda riga indica che il `SendMessage` metodo è stato chiamato dal metodo `Main` .
 
     :::image type="content" source="media/vs-2022/get-started-call-stack.png" alt-text="Screenshot della finestra Stack di chiamate in Visual Studio 2022.":::
 
    > [!NOTE]
-   > La **finestra Stack di** chiamate è simile alla prospettiva Debug in alcuni ID, ad esempio Eclipse.
+   > La **finestra Stack di** chiamate è simile alla prospettiva Debug in alcuni elementi ID, ad esempio Eclipse.
 
-    Nella finestra **Stack di** chiamate è possibile fare doppio clic su una riga di codice per passare a tale codice sorgente, che modifica l'ambito corrente esaminato dal debugger. Questa azione non fa avanzare il debugger.
+    Nella finestra **Stack di** chiamate è possibile fare doppio clic su una riga di codice per passare a tale codice sorgente, che modifica l'ambito corrente controllato dal debugger. Questa azione non fa avanzare il debugger.
 
     È anche possibile usare i menu di scelta rapida nella finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione nelle funzioni specificate, far avanzare il debugger usando Esegui fino al **cursore** o passare al codice sorgente. 
 
-Per altre informazioni sullo **stack di chiamate,** [vedere Procedura: Esaminare lo stack di chiamate](../../debugger/how-to-use-the-call-stack-window.md).
+Per altre informazioni sullo **stack di chiamate,** [vedere Procedura: Esaminare lo stack di chiamate.](../../debugger/how-to-use-the-call-stack-window.md)
 
 ::: moniker-end
 
@@ -570,7 +570,7 @@ Per altre informazioni sullo **stack di chiamate,** [vedere Procedura: Esaminare
 
 1. Premere **F11** due volte per eseguire il `Console.WriteLine` metodo .
 
-1. Con il debugger sospeso nella chiamata al metodo , usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `Console.WriteLine` .
+1. Quando il debugger è in pausa nella chiamata al metodo, usare il mouse per afferrare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, di nuovo `SendMessage` su `Console.WriteLine` .
 
 1. Premere **F11.**
 
@@ -591,19 +591,19 @@ Per altre informazioni sullo **stack di chiamate,** [vedere Procedura: Esaminare
 
 È possibile spostare il puntatore di esecuzione per modificare il flusso dell'app durante il debug.
 
-1. Con il debugger sospeso alla chiamata al metodo nel ciclo, selezionare F11 tre volte per eseguire un'istruzione nel metodo e per passare oltre il metodo dopo `SendMessage` `for`  `SendMessage` `Console.WriteLine` l'esecuzione.
+1. Con il debugger sospeso alla chiamata al metodo nel ciclo, premere F11 tre volte per eseguire un'istruzione nel metodo e per passare oltre il metodo dopo `SendMessage` `for`  `SendMessage` `Console.WriteLine` l'esecuzione.
 
-    Il debugger viene ora sospeso alla parentesi graffa di chiusura finale del `SendMessage` metodo .
+    Il debugger è ora sospeso in corrispondenza della parentesi graffa di chiusura finale del `SendMessage` metodo .
 
 1. Usare il mouse per afferrare la freccia gialla o il puntatore di esecuzione (nel margine sinistro) e quindi trascinare il puntatore di una riga verso l'alto.
 
     Il debugger è ora di nuovo `Console.WriteLine` sull'istruzione .
 
-1. Selezionare **F11.**
+1. Premere **F11.**
 
-    Il debugger esegue nuovamente il metodo e nell'output della finestra della console verrà visualizzata una riga `Console.WriteLine` duplicata.
+    Il debugger esegue nuovamente il metodo e nell'output della finestra della console verrà visualizzata `Console.WriteLine` una riga duplicata.
 
-1. Selezionare **F5 per** continuare a eseguire l'app.
+1. Premere **F5 per** continuare a eseguire l'app.
 
 Modificando il flusso di esecuzione è possibile eseguire operazioni come testare percorsi di esecuzione del codice diversi o rieseguire il codice senza riavviare il debugger.
 
@@ -618,7 +618,7 @@ L'esercitazione è stata completata.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. È possibile ottenere un'occhiata di alto livello alle funzionalità del debugger insieme ai collegamenti ad altre informazioni.
+In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. È possibile ottenere un'introduzione di alto livello alle funzionalità del debugger insieme ai collegamenti ad altre informazioni.
 
 > [!div class="nextstepaction"]
 > [Presentazione del debugger](../../debugger/debugger-feature-tour.md)

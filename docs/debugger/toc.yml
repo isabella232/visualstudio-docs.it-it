@@ -4,12 +4,12 @@
   items:
     - name: Che cos'è il debug?
       href: what-is-debugging.md
+    - name: Presentazione del debugger
+      href: debugger-feature-tour.md
     - name: Tecniche e strumenti di debug CRT
       href: write-better-code-with-visual-studio.md
 - name: Guide rapide introduttive
   items:
-    - name: Presentazione del debugger
-      href: debugger-feature-tour.md
     - name: Eseguire il debug di un'app C# o Visual Basic
       href: quickstart-debug-with-managed.md
     - name: Eseguire il debug di un'app C++

@@ -1,6 +1,6 @@
 ---
 title: Aggiornare ed eseguire la migrazione Office soluzioni
-description: È necessario aggiornare il progetto per usarlo nelle versioni correnti di Visual Studio se si dispone di un progetto Offince creato in una versione precedente di Visual Studio.
+description: È necessario aggiornare il progetto per usarlo nelle versioni correnti di Visual Studio se si dispone di un progetto Office creato in una versione precedente di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 01515d0fb4339fd983532854e188f09c10a72022
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7a60e31b6d7d8894f43646eb45a5fdeffdb512c2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025706"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128424703"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Aggiornare ed eseguire la migrazione Office soluzioni
   Se si dispone di un progetto di Microsoft Office che è stato creato in una versione precedente di Visual Studio, è necessario aggiornare il progetto per usarlo nella versione corrente di Visual Studio. Per aggiornare un progetto di Microsoft Office, aprirlo in una versione di Visual Studio che include Microsoft Office Developer Tools. Per altre informazioni sulle versioni di Visual Studio che includono gli strumenti di sviluppo Microsoft Office, vedere Configurare un computer per sviluppare Office [soluzioni](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -37,7 +37,7 @@ ms.locfileid: "122025706"
 ## <a name="changes-to-upgraded-projects"></a>Modifiche ai progetti aggiornati
  Quando si aggiorna un progetto di Microsoft Office, Visual Studio modifica il progetto in base ai seguenti elementi:
 
-- Strumenti Visual Studio 2010 per Office runtime. Per altre informazioni, vedere panoramica [Visual Studio Tools per Office runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Strumenti Visual Studio 2010 per Office runtime. Per altre informazioni, vedere panoramica Visual Studio Tools per Office [runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)di .
 
 - I riferimenti dell'assembly corrente.
 
@@ -50,7 +50,7 @@ ms.locfileid: "122025706"
 
 - Assembly di interoperabilità primari di Microsoft Office (PIA)
 
-- Gli assembly in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Per altre informazioni su questi assembly, vedere panoramica Visual Studio Tools per Office [runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)di .
+- Gli assembly in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Per altre informazioni su questi assembly, vedere panoramica Visual Studio Tools per Office [runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 - Versioni nuove o aggiornate degli assembly dipendenti.
 
@@ -58,7 +58,7 @@ ms.locfileid: "122025706"
  Quando si aggiorna un progetto a Visual Studio 2013, Visual Studio modifica il progetto impostando come destinazione [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. La versione di .NET Framework di destinazione del progetto dipende dalla versione di Office installata nel computer. Se è installato [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] , Visual Studio modifica il progetto in base a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. In caso contrario, Visual Studio modifica il progetto in base a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
 
 > [!NOTE]
-> Potrebbe essere necessario eseguire alcuni altri passaggi per eseguire una soluzione ridestinata nello sviluppo e nei computer degli utenti finali e il progetto non verrà più compilato se usa alcune funzionalità. Per altre informazioni, vedere [Eseguire la migrazione Office soluzioni al .NET Framework 4 o versioni successive.](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+> Potrebbe essere necessario eseguire alcuni altri passaggi per eseguire una soluzione ridestinata nello sviluppo e nei computer degli utenti finali e il progetto non verrà più compilato se usa alcune funzionalità. Per altre informazioni, vedere [Eseguire la migrazione Office soluzioni al .NET Framework 4 o versione successiva.](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 
  Se la destinazione è [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva in un progetto di Office, è possibile usare alcune funzionalità che non sono disponibili quando la destinazione è .NET Framework 3.5. Per altre informazioni, vedere [Progettare e creare Office soluzioni](../vsto/designing-and-creating-office-solutions.md).
 
@@ -88,5 +88,5 @@ ms.locfileid: "122025706"
 
 ## <a name="see-also"></a>Vedi anche
 - [Procedura: Aggiornare Office soluzioni](/previous-versions/4bez6837(v=vs.140))
-- [Eseguire Office le soluzioni .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Eseguire la Office soluzioni al .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Project Aggiornamento, finestra di dialogo Opzioni](../vsto/project-upgrade-options-dialog-box.md)

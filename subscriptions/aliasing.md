@@ -8,11 +8,11 @@ ms.date: 03/19/2021
 ms.topic: conceptual
 description: Si possono verificare errori di accesso se si usano alias o nomi descrittivi
 ms.openlocfilehash: 967c1091d26c99cb5ad4d8fea972e8a500b82ef8
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127964703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428116"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>L'accesso Visual Studio sottoscrizioni potrebbe non riuscire quando si usano alias
 A seconda del tipo di account usato per l'accesso, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing".
@@ -52,7 +52,7 @@ Una mancata corrispondenza UPN può essere rilevata quando un'azienda ha un'ista
 
 ### <a name="personal-account-aliasing-issue"></a>Problema di aliasing dell'account personale
 
-Gli account di sottoscrizione personali possono anche verificarsi problemi se l'indirizzo di posta elettronica usato per accedere al portale di Sottoscrizioni di Visual Studio non corrisponde all'indirizzo di posta elettronica associato alla sottoscrizione. 
+Gli account di sottoscrizione personali possono inoltre verificarsi problemi se l'indirizzo di posta elettronica usato per accedere al portale Sottoscrizioni di Visual Studio non corrisponde all'indirizzo di posta elettronica associato alla sottoscrizione. 
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Come rilevare se l'account di sottoscrizione personale è stato intasato da un problema di aliasing
 
@@ -92,7 +92,7 @@ Entrambe queste opzioni vengono configurate nel portale di amministrazione compl
 > Per le modifiche sia singole che bulk, i sottoscrittori riceveranno un messaggio di posta elettronica con le istruzioni che l'indirizzo di posta elettronica di accesso è stato modificato e dovranno accedere usando l'indirizzo di posta elettronica aggiornato. È anche importante notare che se il sottoscrittore ha attivato in precedenza i vantaggi con l'altro indirizzo di accesso, dovrà continuare a usare l'altro indirizzo di accesso per accedervi.  
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Per assistenza per l'amministrazione di Sottoscrizioni di Visual Studio, contattare il [supporto Visual Studio sottoscrizioni .](https://aka.ms/vsadminhelp)
+- Per assistenza per l'amministrazione di Sottoscrizioni di Visual Studio, contattare [il supporto Visual Studio sottoscrizioni](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

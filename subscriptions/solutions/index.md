@@ -4,28 +4,17 @@ description: Elenco di file INCLUDEs per le sottoscrizioni Visual Studio support
 ms.topic: conceptual
 ms.assetid: 478648b9-f6f0-4ea3-83b4-5cffa196a496
 robots: noindex, nofollow
-author: evanwindom
-ms.author: v-evwin
-ms.date: 12/07/2020
-ms.openlocfilehash: 85eb4222cf69c678844df34f0b2e2426151211d451ca4191aaffa647c5985e30
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+author: CaityBuschlen
+ms.author: cabuschl
+ms.date: 08/13/2021
+ms.openlocfilehash: fac69c3ea827263f83e91f9e5cdb4cbfb7bac51b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121241781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427655"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio sottoscrizioni supportano i file INCLUDE del contenuto del widget
-
-## <a name="admin-solutions"></a>Soluzioni di amministrazione
-
-[!INCLUDE [Become a super admin](admin-solutions/includes/become-a-super-admin-managed.md)]
-
-[!INCLUDE [Become an admin](admin-solutions/includes/become-an-admin.md)]
-
-[!INCLUDE [Cannot access subscriptions](admin-solutions/includes/cannot-access-subs.md)]
-
-[!INCLUDE [I only see VSDE](admin-solutions/includes/only-see-vsde.md)]
-
 
 ## <a name="benefit-activations"></a>Attivazioni dei vantaggi
 
@@ -88,6 +77,8 @@ ms.locfileid: "121241781"
 
 [!INCLUDE [Portal outage](portal-issue/includes/portal-outage.md)]
 
+[!INCLUDE [Only see VSDE](portal-issue/includes/only-see-vsde.md)]
+
 ## <a name="purchase-renew-or-cancel-subscriptions"></a>Acquistare, rinnovare o annullare sottoscrizioni
 
 ### <a name="help-with-purchases"></a>Assistenza per gli acquisti
@@ -119,3 +110,5 @@ ms.locfileid: "121241781"
 [!INCLUDE [How do I change my sign-in email for Retail](signing-in/includes/how-do-i-change-my-sign-in-email-retail.md)]
 
 [!INCLUDE [How do I change my sign-in email for Volume Licensing](signing-in/includes/how-do-i-change-my-sign-in-email-volume-licensing.md)]
+
+[!INCLUDE [How can I become a Visual Studio subscriptions admin](signing-in/includes/become-an-admin-or-super-admin.md)]

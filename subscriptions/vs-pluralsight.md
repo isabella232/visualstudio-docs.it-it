@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: 2b4f1e75a02b766387e30471c5b6caec59d63793
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127964730"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426338"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -23,11 +23,11 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
  A seconda del tipo di sottoscrizione, non tutti i sottoscrittori che hanno usato in precedenza Pluralsight mediante una sottoscrizione di Visual Studio potranno sfruttare i nuovi vantaggi offerti da Pluralsight. Se non si è idonei per riscattare i vantaggi aggiuntivi di training Pluralsight, si riceverà una notifica quando si tenta di attivare il vantaggio nel sito Web di Pluralsight.
 
 ## <a name="activation-steps"></a>Passaggi di attivazione
-1. Per attivare la sottoscrizione, connettersi a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul collegamento **Attiva** nel riquadro del vantaggio Pluralsight.  Per restringere l'elenco dei riquadri visualizzati, è possibile scegliere un filtro di gruppo.  Pluralsight si trova nel gruppo di vantaggi Professional sviluppo.
+1. Per attivare la sottoscrizione, connettersi a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul collegamento **Attiva** nel riquadro del vantaggio Pluralsight.  Per restringere l'elenco dei riquadri visualizzati, è possibile scegliere un filtro di gruppo.  Pluralsight si trova nel gruppo di vantaggi Professional development.
    > [!div class="mx-imgBorder"]
    > ![Riquadro del vantaggio Pluralsight](_img/vs-pluralsight/vs-pluralsight-tile.png "Fare clic su Attiva per richiedere il vantaggio")
 
-Il riquadro precedente è un esempio di ciò che verrà visualizzato Visual Studio Enterprise sottoscrittore.  Se si usa una sottoscrizione Visual Studio, la durata del vantaggio Pluralsight varierà.  Per informazioni dettagliate, vedere la tabella Idoneità.
+Il riquadro precedente è un esempio di ciò che verrà visualizzato Visual Studio Enterprise sottoscrittore.  Se si usa una sottoscrizione Visual Studio diversa, la durata del vantaggio Pluralsight varierà.  Per informazioni dettagliate, vedere la tabella Idoneità.
 1. L'utente verrà reindirizzato alla pagina Pluralsight per il vantaggio incluso con la sottoscrizione di Visual Studio.
    - Specificare le informazioni di contatto richieste nel modulo
    - Fare clic sulla casella di controllo per accettare le condizioni per l'utilizzo
@@ -45,7 +45,7 @@ Il riquadro precedente è un esempio di ciò che verrà visualizzato Visual Stud
 
 1. Fare clic **su IMPOSTA PASSWORD**.
 
-1. Immettere la password desiderata nel **campo Nuova password,** immetterla nuovamente nel campo Conferma **password** e fare clic su **Salva**.
+1. Immettere la password desiderata nel **campo Nuova password,** immetterla di nuovo nel campo Conferma **password** e fare clic su **Salva**.
 
 1. Questo è tutto.  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
 
@@ -57,7 +57,7 @@ Invece del pulsante "Attiva", verrà ora visualizzato un piccolo pulsante circol
 
 Sotto il titolo Pluralsight nella parte superiore del riquadro verrà visualizzato il testo che mostra il tempo rimanente nella sottoscrizione Pluralsight.  Quando la sottoscrizione scade entro 60 giorni, il testo passa alla visualizzazione del numero di giorni rimanenti anziché dei mesi.  
 
-Nella parte inferiore del riquadro verrà visualizzato il testo che mostra sia la data di attivazione che la data di scadenza della sottoscrizione Pluralsight.
+Nella parte inferiore del riquadro verrà visualizzato un testo che mostra sia la data di attivazione che la data di scadenza della sottoscrizione Pluralsight.
 
    > [!div class="mx-imgBorder"]
    > ![Riquadro Pluralsight dopo l'attivazione](_img/vs-pluralsight/vs-pluralsight-activated.png "Dopo l'attivazione, il riquadro visualizza il numero di giorni rimanenti nella sottoscrizione, insieme alla data di scadenza e a un collegamento al portale Pluralsight.")
@@ -87,7 +87,7 @@ Alla scadenza della sottoscrizione Pluralsight, lo stato cambierà in "0 giorni 
 <sup>2</sup>*Il vantaggio Pluralsight nelle sottoscrizioni Visual Studio viene rinnovato al rinnovo della sottoscrizione. Ad esempio, se si ha una sottoscrizione annuale rinnovata ogni anno, il vantaggio è disponibile ogni anno al momento del rinnovo. Se si ha una sottoscrizione di più anni, il vantaggio Pluralsight è disponibile una sola volta durante il periodo di durata della sottoscrizione.  Se si rinnova una sottoscrizione multi-anno, il vantaggio sarà* nuovamente disponibile dopo il rinnovo.  
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per acquistare Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per l'acquisto di Visual Studio.
 
 Non si è certi della sottoscrizione in uso?  Connessione visualizzare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
@@ -111,7 +111,7 @@ R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere
 ## <a name="support-resources"></a>Risorse di supporto
 - [Pluralsight Help Center](https://help.pluralsight.com/help) fornisce assistenza in merito all'esecuzione dei corsi Pluralsight o all'uso del sito Web di Pluralsight.
 - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, contattare il supporto [Visual Studio sottoscrizioni](https://my.visualstudio.com/gethelp)
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

@@ -5,7 +5,7 @@ ms.custom:
 - remotedebugging
 - seodec18
 - SEO-VS-2020
-ms.date: 7/26/2021
+ms.date: 09/10/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e10ac45c0aee1a7298e06efe36e3334295257b7
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 4c1e1f0cca6fc29f3dfc29e87d10c5ee324700f6
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126627900"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427145"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -38,7 +38,7 @@ Per istruzioni approfondite sul debug remoto, vedere questi argomenti.
 
 |Scenario|Collegamento|
 |-|-|-|
-|Servizio app di Azure|[Eseguire il debug ASP.NET remoto in Azure](../debugger/remote-debugging-azure.md) o, Visual Studio Enterprise, il [Snapshot Debugger](../debugger/debug-live-azure-applications.md)|
+|Servizio app di Azure|[Eseguire il debug ASP.NET remoto in Azure](../debugger/remote-debugging-azure.md) o, per Visual Studio Enterprise, nel [Snapshot Debugger](../debugger/debug-live-azure-applications.md)|
 |Macchina virtuale di Azure|[Eseguire il debug remoto di ASP.NET in Azure](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[Eseguire il debug di un'applicazione Service Fabric Azure](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Debug remoto ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) [o debug remoto ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
@@ -58,15 +58,22 @@ Se si vuole semplicemente scaricare e installare il debugger remoto e non sono n
 
 ## <a name="optional-to-run-the-remote-debugger-from-a-file-share"></a><a name="fileshare_msvsmon"></a> (Facoltativo) Per eseguire il debugger remoto da una condivisione file
 
-È possibile trovare il debugger remoto (*msvsmon.exe*) in un computer con Visual Studio Community, Professional o Enterprise già installato. Per alcuni scenari, il modo più semplice per configurare il debug remoto è eseguire il debugger remoto (msvsmon.exe) da una condivisione file. Per le limitazioni di utilizzo, vedere la pagina della Guida del debugger remoto (**Guida >'utilizzo** nel debugger remoto).
+È possibile trovare il debugger remoto (*msvsmon.exe*) in un computer con Visual Studio Community, Professional o Enterprise già installato. Per alcuni scenari, il modo più semplice per configurare il debug remoto è eseguire il debugger remoto (msvsmon.exe) da una condivisione file. Per le limitazioni di utilizzo, vedere la pagina della Guida del debugger remoto ( Guida >**utilizzo** nel debugger remoto).
 
 1. Trovare *msvsmon.exe* nella directory corrispondente alla versione di Visual Studio:
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2022"
 
-   *Programmi (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   *Programmi\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   *Programmi\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2019"
 
    *Programmi (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   *Programmi (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -77,12 +84,12 @@ Se si vuole semplicemente scaricare e installare il debugger remoto e non sono n
 
    ::: moniker-end
 
-2. Condividere la **cartella Debugger** remoto nel computer Visual Studio remoto.
+2. Condividere la **cartella Remote Debugger** nel computer Visual Studio remoto.
 
 3. Nel computer remoto eseguire *msvsmon.exe* dalla cartella condivisa. Seguire le istruzioni [di installazione](#bkmk_setup).
 
 > [!TIP]
-> Per informazioni di riferimento sull'installazione dalla riga di comando e sulla riga di comando, vedere la pagina della Guida per *msvsmon.exe* digitando nella riga di comando nel computer in cui è installato Visual Studio oppure passare alla Guida ``msvsmon.exe /?`` di > **Usage** nel debugger remoto.
+> Per informazioni di riferimento sull'installazione dalla riga di comando e sulla riga di comando, vedere la pagina della Guida per *msvsmon.exe* digitando nella riga di comando nel computer in cui è installato Visual Studio oppure passare a Guida ``msvsmon.exe /?`` > **Usage** nel debugger remoto.
 
 ## <a name="set-up-the-remote-debugger"></a><a name="bkmk_setup"></a> Configurare il debugger remoto
 
@@ -118,7 +125,7 @@ Per il debug in ASP.NET e in altri ambienti server, è necessario eseguire il de
 
 4. Aggiungere il nome dell'account utente e la password.
 
-    Potrebbe essere necessario aggiungere il diritto utente Accesso come servizio **a** questo account (Trova criteri di sicurezza locali (secpol.msc) nella pagina **iniziale** o nella finestra (o digitare **secpol** al prompt dei comandi).  Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente** e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente alla finestra **Proprietà** e fare clic su **OK**. Fare clic su **Avanti**.
+    Potrebbe essere necessario aggiungere il diritto utente Accesso come servizio **a** questo account (Trova criteri di sicurezza locali (secpol.msc) nella pagina **iniziale** o nella finestra oppure digitare **secpol** al prompt dei comandi.  Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente** e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente alla finestra **Proprietà** e fare clic su **OK**. Fare clic su **Avanti**.
 
 5. Selezionare il tipo di rete con cui si vuole che Remote Tools comunichi. Almeno un tipo di rete deve essere selezionato. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo home, è necessario scegliere il secondo o il terzo elemento. Fare clic su **Avanti**.
 

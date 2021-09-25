@@ -12,11 +12,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ff4270fb819c010a31e4dce9e3e3376d41cf205
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128307201"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428433"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -206,9 +206,9 @@ La barra dei menu nella parte superiore di Visual Studio raggruppa i comandi in 
 
 ## <a name="error-list"></a>Elenco errori
 
-**L'elenco degli** errori mostra gli errori, gli avvisi e i messaggi relativi allo stato corrente del codice. Se sono presenti errori (ad esempio una parentesi graffa mancante o un punto e virgola) nel file o in un punto qualsiasi del progetto, sono elencati qui.
+**L'Elenco** errori mostra errori, avvisi e messaggi sullo stato corrente del codice. Se nel file o in un punto qualsiasi del progetto sono presenti errori, ad esempio una parentesi graffa o un punto e virgola mancanti, questi vengono elencati qui.
 
-Per aprire la **finestra Elenco errori,** scegliere il menu **Visualizza** e quindi selezionare **Elenco errori**.
+Per aprire la **finestra Elenco** errori, scegliere **il** menu Visualizza e quindi selezionare **Elenco errori**.
 
 ::: moniker range="<=vs-2019"
 
@@ -246,7 +246,7 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
 ::: moniker range="vs-2017"
 
-1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa, premere **CTRL** + **D** per accedervi.
+1. Individuare la casella di ricerca **Avvio veloce** in alto a destra nell'IDE. In alternativa, premere **CTRL** + **Q** per accedervi.
 
 1. Digitare **livello di dettaglio** nella casella di ricerca. Nei risultati visualizzati scegliere **Progetti e soluzioni -> Compila ed Esegui** nella categoria **Opzioni**.
 
@@ -258,9 +258,9 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
+   Questa volta la **finestra Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
 
-   ![Screenshot di un log di compilazione più dettagliato all'interno della finestra Output in Visual Studio 2017.](media/build-output-verbose.png)
+   ![Screenshot di un log di compilazione più dettagliato all'interno della finestra Output Visual Studio 2017.](media/build-output-verbose.png)
 
 ::: moniker-end
 
@@ -278,9 +278,9 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
+   Questa volta la **finestra Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
 
-   ![Screenshot di un log di compilazione più dettagliato nella finestra Output in Visual Studio 2019.](media/build-output-verbose.png)
+   ![Screenshot di un log di compilazione più dettagliato all'interno della finestra Output Visual Studio 2019.](media/build-output-verbose.png)
 
 ::: moniker-end
 
@@ -298,9 +298,9 @@ La casella di ricerca è un modo semplice e rapido per trovare qualsiasi element
 
 1. Compilare di nuovo il progetto facendo clic con il pulsante destro del mouse sul progetto **ConsoleApp1** in **Esplora soluzioni** e scegliendo **Ricompila** dal menu di scelta rapida.
 
-   Questa volta la finestra **Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
+   Questa volta la **finestra Output** mostra una registrazione più dettagliata dal processo di compilazione, inclusi i file in cui sono stati copiati.
 
-   :::image type="content" source="media/vs-2022/quickstart-build-output-verbose.png" alt-text="Screenshot di un log di compilazione più dettagliato all'interno della finestra Output in Visual Studio 2022.":::
+   :::image type="content" source="media/vs-2022/quickstart-build-output-verbose.png" alt-text="Screenshot di un log di compilazione più dettagliato all'interno della finestra Output Visual Studio 2022.":::
 
 ::: moniker-end
 
@@ -324,9 +324,9 @@ Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerime
 
 ::: moniker range=">=vs-2022"
 
-Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile contattarci. A tale scopo, scegliere il pulsante **Invia commenti** e suggerimenti nell'angolo superiore destro dell'IDE e usare una delle opzioni di feedback nel menu Invia **commenti e** suggerimenti.
+Se si verificano problemi durante l'uso di Visual Studio o se si hanno suggerimenti su come migliorare il prodotto, è possibile inviare un suggerimento. A tale scopo, scegliere il pulsante **Invia commenti** e suggerimenti nell'angolo superiore destro dell'IDE e usare una delle opzioni di feedback nel menu Invia **commenti e** suggerimenti.
 
-:::image type="content" source="media/vs-2022/quickstart-ide-send-feedback.png" alt-text="Screenshot del pulsante e del menu Invia commenti e suggerimenti in Visual Studio 2022.":::
+:::image type="content" source="media/vs-2022/quickstart-ide-send-feedback.png" alt-text="Screenshot del pulsante Invia commenti e suggerimenti e del menu in Visual Studio 2022.":::
 
 ::: moniker-end
 

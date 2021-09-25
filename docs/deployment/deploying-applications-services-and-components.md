@@ -2,8 +2,8 @@
 title: Presentazione della distribuzione
 description: Informazioni sulle opzioni per la distribuzione di app da Visual Studio.
 ms.custom: mvc
-ms.date: 01/29/2019
-ms.topic: quickstart
+ms.date: 09/23/2021
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de2fe433ffa327eb897ca9f2f28f0c176b7a36
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0981518581f7948db8297959ffb0816f2df34333
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146537"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426582"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -47,20 +47,22 @@ La distribuzione in una cartella locale viene in genere usata per il test o per 
 
 - **Windows desktop:** è possibile pubblicare un'applicazione desktop Windows in una cartella usando ClickOnce distribuzione. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere gli articoli seguenti:
 
+  - [Distribuire un'app desktop Windows .NET usando ClickOnce](quickstart-deploy-using-clickonce-folder.md)
   - [Distribuire un.NET Framework Windows app desktop usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
-  - [Distribuire un'app desktop .NET Windows usando ClickOnce](quickstart-deploy-using-clickonce-folder.md).
-  - [Distribuire un'app C++/CLR usando ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere [Distribuire un'app](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)nativa usando un progetto di installazione .
+  - [Distribuire un'app desktop Windows .NET usando ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+  - [Distribuire un'app C++/CLR usando ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere Distribuire un'app nativa [usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Eseguire la pubblicazione in Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python** e **Node.js**: Pubblica in Servizio app di Azure o Servizio app di Azure in Linux (usando contenitori) usando uno dei metodi seguenti:
+- **ASP.NET**, **ASP.NET Core**, **Python** e **Node.js**: pubblicare in Servizio app di Azure o Servizio app di Azure in Linux (usando contenitori) usando uno dei metodi seguenti:
 
   - Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
   - Per una distribuzione di app una tantum o manuale, usare lo strumento **Pubblica** in Visual Studio.
+  - Per creare GitHub di lavoro azione per ASP.NET e i progetti di funzioni di Azure ospitati in GitHub.com, vedere Distribuire [in Azure usando](../deployment/azure-deployment-using-github-actions.md)GitHub Actions .
 
   Per la distribuzione che offre una configurazione più personalizzata del server, è anche possibile usare lo strumento **Pubblica** per distribuire app in una macchina virtuale di Azure.
 
-  Per usare lo **strumento Pubblica,** fare clic con il pulsante destro del mouse sul Esplora soluzioni e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è necessario selezionare **Crea nuovo profilo.** Nella finestra **di** dialogo Pubblica selezionare Servizio **app** o Macchine virtuali **di Azure** e quindi seguire i passaggi di configurazione.
+  Per usare lo **strumento Pubblica,** fare clic con il pulsante destro del mouse sul progetto Esplora soluzioni e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è necessario selezionare **Crea nuovo profilo.** Nella finestra **di** dialogo Pubblica selezionare Servizio **app** o Macchine virtuali **di Azure** e quindi seguire i passaggi di configurazione.
 
   ![Screenshot che mostra la selezione Servizio app di Azure.](../deployment/media/quickstart-publish-azure-new.png "Scegliere Servizio app di Azure")
 
@@ -91,6 +93,21 @@ La distribuzione in una cartella locale viene in genere usata per il test o per 
   - [Distribuire un'app desktop Windows .NET usando ClickOnce](quickstart-deploy-using-clickonce-folder.md)
   - [Distribuire un'app C++/CLR usando ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
 
+## <a name="create-an-installer-package-windows-desktop"></a>Creare un pacchetto del programma di installazione (desktop di Windows)
+
+Se è necessaria un'installazione più complessa di un'applicazione desktop rispetto a ClickOnce, è possibile creare un pacchetto del programma di installazione di Windows (file di installazione MSI o EXE) o un programma di avvio automatico personalizzato.
+
+- È possibile creare un pacchetto del programma di installazione basato su MSI usando il set di strumenti [WiX Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Si tratta di un set di strumenti da riga di comando.
+
+- È possibile creare un pacchetto del programma di installazione MSI o EXE usando un progetto di installazione (vdproj). Per usare questa opzione, vedere estensione Programma di installazione di Visual Studio Projects e [.NET Core 3.1 e .NET 5.0](../deployment/installer-projects-net-core.md) oppure passare direttamente all'estensione [Programma di installazione di Visual Studio Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+
+- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) di Flexera Software. InstallShield può essere usato con Visual Studio 2017 e versioni successive. Community L'edizione non è supportata.
+
+  > [!NOTE]
+  > InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017 e versioni successive. Verificare con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) la disponibilità futura.
+
+- È anche possibile installare i componenti prerequisiti per le applicazioni desktop configurando un programma di installazione generico, noto come programma di avvio automatico. Per altre informazioni, vedere [Prerequisiti per la distribuzione di applicazioni](../deployment/application-deployment-prerequisites.md).
+
 ## <a name="publish-to-microsoft-store"></a>Pubblicare in Microsoft Store
 
 Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Microsoft Store.
@@ -106,19 +123,6 @@ Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Mi
 ## <a name="deploy-to-a-device-uwp"></a>Eseguire la distribuzione in un dispositivo (piattaforma UWP)
 
 Se si distribuisce un'app UWP per il test in un dispositivo, vedere Eseguire [app UWP in](../debugger/run-windows-store-apps-on-a-remote-machine.md)un computer remoto in Visual Studio .
-
-## <a name="create-an-installer-package-windows-desktop"></a>Creare un pacchetto del programma di installazione (desktop di Windows)
-
-Se è necessaria un'installazione più complessa di un'applicazione desktop di quanto ClickOnce possa fornire, è possibile creare un pacchetto del programma di installazione di Windows (file di installazione MSI o EXE) o un programma di avvio automatico personalizzato.
-
-- È possibile creare un pacchetto del programma di installazione basato su MSI usando il set di strumenti [WiX Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Si tratta di un set di strumenti da riga di comando.
-- È possibile creare un pacchetto di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) di Flexera Software. InstallShield può essere usato con Visual Studio 2017 e versioni successive. Community L'edizione non è supportata.
-
-  > [!NOTE]
-  > InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017 e versioni successive. Verificare con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) la disponibilità futura.
-
-- È possibile creare un pacchetto del programma di installazione MSI o EXE usando un progetto di installazione (vdproj). Per usare questa opzione, installare l'[estensione Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
-- È anche possibile installare i componenti prerequisiti per le applicazioni desktop configurando un programma di installazione generico, noto come programma di avvio automatico. Per altre informazioni, vedere [Prerequisiti per la distribuzione di applicazioni](../deployment/application-deployment-prerequisites.md).
 
 ## <a name="deploy-to-a-test-lab"></a>Distribuire in un lab di test
 

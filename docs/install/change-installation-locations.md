@@ -17,17 +17,17 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: be2c18e531af3a0aa6dd059206ce81db7734ab08
-ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127890592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431812"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selezionare i percorsi di installazione in Visual Studio
 
 ::: moniker range=">=vs-2022"
 
-È possibile ridurre il footprint di installazione Visual Studio'unità di sistema modificando il percorso di alcuni dei relativi file. In particolare, è possibile usare un percorso diverso per la **download cache** e i componenti **condivisi, gli strumenti e gli SDK.**
+È possibile ridurre il footprint di Visual Studio nell'unità di sistema modificando il percorso di alcuni dei relativi file. In particolare, è possibile usare un percorso diverso per la **cache di download** e i componenti **condivisi, gli strumenti e gli SDK.**
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ Pronti a iniziare? Ecco come.
 
 1. Nella sezione **Download Cache** decidere se si vuole mantenere la Download Cache e quindi scegliere dove archiviare i file corrispondenti.
 
-     ![Screenshot della sezione Download cache della scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations-cache.png "Scegliere se mantenere la download cache dopo l'installazione e quindi specificare l'unità in cui archiviare i file.")
+     ![Screenshot della sezione Download cache della scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations-cache.png "Scegliere se mantenere la cache di download dopo l'installazione e quindi specificare l'unità in cui archiviare i file.")
 
     1. Selezionare o deselezionare **Mantieni la Download Cache dopo l'installazione**.
 
@@ -78,11 +78,11 @@ Pronti a iniziare? Ecco come.
         Ad esempio, se si seleziona il carico di lavoro "Sviluppo di applicazioni desktop con C++", le dimensioni richieste temporaneamente sono 1,58 GB nell'unità di sistema, spazio che verrà liberato non appena viene completata l'installazione.
 
        > [!IMPORTANT]
-       > Il percorso viene impostato con la prima installazione e non può essere modificato in un secondo tempo dall'interfaccia utente del programma di installazione. È invece necessario usare [i parametri della riga di comando](use-command-line-parameters-to-install-visual-studio.md) per spostare la download cache.
+       > Il percorso viene impostato con la prima installazione e non può essere modificato in un secondo tempo dall'interfaccia utente del programma di installazione. È invece necessario usare [i parametri della riga di comando](use-command-line-parameters-to-install-visual-studio.md) per spostare la cache di download.
 
 1. Nella sezione **Componenti condivisi, strumenti e SDK** specificare l'unità in cui si vogliono archiviare i file condivisi dalle installazioni side-by-side di Visual Studio. Anche i SDK e gli strumenti vengono archiviati in questa directory.
 
-   ![Screenshot della sezione relativa a componenti condivisi, strumenti e SDK della scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations-shared.png "Specificare il percorso in cui archiviare i componenti condivisi, gli strumenti e gli SDK.")
+   ![Screenshot dei componenti condivisi, degli strumenti e degli SDK della scheda Percorsi di installazione del Programma di installazione di Visual Studio.](media/vs-installation-locations-shared.png "Specificare il percorso in cui archiviare componenti, strumenti e SDK condivisi.")
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Pronti a iniziare? Ecco come.
         Ad esempio, se si seleziona il carico di lavoro "Sviluppo di applicazioni desktop con C++", le dimensioni richieste temporaneamente sono 1,58 GB nell'unità di sistema, spazio che verrà liberato non appena viene completata l'installazione.
 
        > [!IMPORTANT]
-       > Il percorso viene impostato con la prima installazione e non può essere modificato in un secondo tempo dall'interfaccia utente del programma di installazione. È invece necessario usare [i parametri della riga di comando](use-command-line-parameters-to-install-visual-studio.md) per spostare la download cache.
+       > Il percorso viene impostato con la prima installazione e non può essere modificato in un secondo tempo dall'interfaccia utente del programma di installazione. È invece necessario usare [i parametri della riga di comando](use-command-line-parameters-to-install-visual-studio.md) per spostare la cache di download.
 
 1. Nella sezione **Componenti condivisi, strumenti e SDK** viene usata la stessa unità scelta nella sezione "Download cache". La directory \Microsoft\VisualStudio\Condiviso archivia i file condivisi dalle installazioni side-by-side di Visual Studio. Anche i SDK e gli strumenti vengono archiviati in questa directory.
 
@@ -120,31 +120,31 @@ Pronti a iniziare? Ecco come.
 
    :::image type="content" source="media/vs-2022/vs-installer-installation-locations-cplusplus-workload.png" border="false" alt-text="Screenshot che mostra la scheda Percorsi di installazione del Programma di installazione di Visual Studio.":::
 
-1. Nella sezione **Visual Studio IDE** accettare il percorso predefinito. Visual Studio installa il prodotto principale e include i file specifici di questa versione di Visual Studio.
+1. Nella sezione **Visual Studio IDE** accettare il percorso predefinito. Visual Studio installa il prodotto principale e include file specifici di questa versione di Visual Studio.
 
    > [!TIP]
-   > Se l'unità di sistema è un'unità SSD, è consigliabile mantenere il prodotto principale nell'unità di sistema. Motivo: quando si sviluppa con Visual Studio, si eseguono operazioni di lettura e scrittura in numerosi file, aumentando così le attività di input/output del disco. È opportuno scegliere l'unità più veloce per gestire il carico.
+   > Se l'unità di sistema è un'unità SSD (Solid State Drive), è consigliabile mantenere il prodotto principale nell'unità di sistema. Motivo: quando si sviluppa con Visual Studio, si eseguono operazioni di lettura e scrittura in numerosi file, aumentando così le attività di input/output del disco. È opportuno scegliere l'unità più veloce per gestire il carico.
 
    > [!IMPORTANT]
-   > È possibile selezionare un percorso diverso solo quando si installa per la prima volta Visual Studio. Se è già stato installato e si vuole modificare il percorso, è necessario disinstallarlo Visual Studio quindi reinstallarlo.
+   > È possibile selezionare un percorso diverso solo quando si installa per la prima volta Visual Studio. Se è già stato installato e si vuole modificare il percorso, è necessario disinstallare Visual Studio e quindi reinstallarlo.
 
-1. Nella sezione **Download cache** decidere se si vuole mantenere la download cache e, in tal caso, dove archiviare i file.
+1. Nella sezione **Download cache** decidere se si vuole mantenere la cache di download e, in tal caso, dove archiviare i file.
 
     * Selezionare o deselezionare **Mantieni la Download Cache dopo l'installazione**.
 
-      Se si decide di non mantenere la download cache, il percorso della download cache viene usato solo temporaneamente. Questa azione non ha effetto sui file di installazioni precedenti né li elimina.
+      Se si decide di non mantenere la cache di download, il percorso della cache di download viene usato solo temporaneamente. Questa azione non ha effetto sui file di installazioni precedenti né li elimina.
 
-      Ad esempio, se si seleziona il carico di lavoro "Sviluppo di applicazioni desktop con C++", le dimensioni temporaneamente richieste per il percorso della download cache sono 2,11 GB. Al termine dell'installazione, i file della cache scaricati vengono rimossi, lasciando solo i metadati del pacchetto.
+      Ad esempio, se si seleziona il carico di lavoro "Sviluppo desktop con C++", le dimensioni temporaneamente richieste per il percorso della cache di download sono 2,11 GB. Al termine dell'installazione, i file della cache scaricati vengono rimossi, lasciando solo i metadati del pacchetto.
 
-    * Specificare il percorso della cartella, inclusa l'unità, in cui archiviare i file di installazione e i manifesti dalla download cache.
+    * Specificare il percorso della cartella, inclusa l'unità, in cui archiviare i file di installazione e i manifesti dalla cache di download.
 
    > [!IMPORTANT]
-   > È possibile selezionare un percorso diverso solo quando si installa per la prima volta Visual Studio. Se è già stato installato e si vuole modificare il percorso, è necessario disinstallarlo Visual Studio quindi reinstallarlo.
+   > È possibile selezionare un percorso diverso solo quando si installa per la prima volta Visual Studio. Se è già stato installato e si vuole modificare il percorso, è necessario disinstallare Visual Studio e quindi reinstallarlo.
 
 1. Nella **sezione Componenti condivisi,** strumenti e SDK selezionare la cartella in cui archiviare i file condivisi da installazioni Visual Studio affiancate. Anche i SDK e gli strumenti vengono archiviati in questa directory.
 
    > [!IMPORTANT]
-   > Se è stato installato Visual Studio nel computer in precedenza, non sarà possibile modificare il percorso componenti condivisi, strumenti e SDK e verrà visualizzato in grigio.
+   > Se è già stato Visual Studio nel computer, non sarà possibile modificare il percorso Componenti condivisi, strumenti e SDK e verrà visualizzato in grigio.
 
 ::: moniker-end
 

@@ -24,11 +24,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f1a49c46c975d37f2b0b43531029b0ae5a28d4f8
-ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127890468"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426777"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi di modifiche al codice. Alcune modifiche non possono tuttavia essere applicate durante l'esecuzione del programma. Per applicare tali modifiche, è necessario arrestare l'esecuzione e compilare una versione aggiornata del codice.
@@ -44,7 +44,7 @@ Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi d
      Eventuali impostazioni del linker incompatibili ( ad esempio , o ...) devono `/SAFESEH` generare `/OPT:` l'avviso _LNK4075 durante_ la compilazione.  
      Esempio: `LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification`
 
-### <a name="debugger-settings-debug--options--general"></a>Impostazioni del debugger (Opzioni > debug > Generale):
+### <a name="debugger-settings-debug--options--general"></a>Impostazioni debugger (Opzioni > debug > Generale):
   - Abilita Modifica e continuazione nativo
 
      Eventuali impostazioni del compilatore o del linker incompatibili causano un errore durante Modifica e continuazione.  
@@ -88,7 +88,7 @@ Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi d
 
 - Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, debug di app o componenti UWP. A partire da Visual Studio 2015 Update 1, è possibile usare Modifica e continuazione nelle app C++ UWP e nelle app DirectX, perché ora supporta l'opzione del compilatore con l'opzione `/ZI` `/bigobj` . È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .
 
-- Debug delle app dello Store 8/8.1. Questi progetti usano il set di strumenti VC 120 e l'opzione `/bigobj` C/C++. Modifica e continuazione con è supportato solo nel set di strumenti `/bigobj` di VC 140.
+- Debug delle app dello Store 8/8.1. Questi progetti usano il set di strumenti VC 120 e l'opzione `/bigobj` C/C++. Modifica e continuazione con è supportato solo nel set di strumenti `/bigobj` vc140.
 
 - Debug in Windows 98.
 
@@ -112,7 +112,7 @@ Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi d
 
 - Sistema di compilazione FASTBuild. FASTBuild non è attualmente compatibile con l'opzione del compilatore "Abilita ricompilazione minima ( )" e pertanto Modifica e `/Gm` continuazione non è supportato.
 
-- Architetture legacy/set di strumenti vc. Con il set di strumenti VC 140, il debugger predefinito supporta Modifica e continuazione con le applicazioni X86 e X64. I set di strumenti legacy supportano solo le applicazioni X86. I set di strumenti precedenti a VC 120 devono usare il debugger legacy selezionando "Opzioni _di debug > > Generale >_ Usa modalità di compatibilità nativa" per usare Modifica e continuazione.
+- Architetture legacy/set di strumenti vc. Con il set di strumenti VC 140, il debugger predefinito supporta Modifica e continuazione con le applicazioni X86 e X64. I set di strumenti legacy supportano solo applicazioni X86. I set di strumenti precedenti a VC 120 devono usare il debugger legacy selezionando "Opzioni di _debug > > Generale >_ Usa modalità di compatibilità nativa" per usare Modifica e continuazione.
 
 ## <a name="linking-limitations"></a><a name="BKMK_Linking_limitations"></a> Limitazioni di collegamento
 

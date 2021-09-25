@@ -1,6 +1,7 @@
 ---
 title: Creare un'app Windows Forms con Visual Basic
 description: Informazioni dettagliate su come creare un'app Windows Forms in Visual Studio con Visual Basic.
+ms.custom: vs-acquisition, get-started
 ms.date: 09/27/2019
 ms.topic: tutorial
 ms.devlang: vb
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 85318331f7359400c1428af9047791e6c5f3079f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a2724d78dfdd488c5e367a6621d7ad0eb29f0325
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126628830"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429095"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creare un'app Windows Forms in Visual Studio con Visual Basic
 
@@ -73,7 +74,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Create a new project (Crea un** nuovo progetto) scegliere il modello Windows Forms App **(.NET Framework) per** Visual Basic.
+1. Nella finestra **Crea un nuovo progetto** scegliere il modello Windows Forms App **(.NET Framework)** per Visual Basic.
 
    Se si preferisce, è possibile perfezionare la ricerca per ottenere rapidamente il modello desiderato. Ad esempio, immettere o digitare *Windows Forms App* nella casella di ricerca. Scegliere quindi **Visual Basic** dall'elenco Lingua e quindi **scegliere** Windows dall'elenco Piattaforma.  
 
@@ -84,7 +85,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Successivamente, nel Programma di installazione di Visual Studio scegliere il carico di **lavoro Sviluppo per desktop .NET.**
+   > Nell'elenco a Programma di installazione di Visual Studio scegliere il carico di **lavoro Sviluppo per desktop .NET.**
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >

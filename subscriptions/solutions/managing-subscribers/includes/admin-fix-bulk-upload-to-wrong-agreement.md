@@ -7,15 +7,15 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 06/01/2021
 user.type: admin
-tags: ''
+tags: bulk, upload
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: e6afedf2035eae48483ea6cd00d95def0518d7e69a1043a95e351934af39b5b8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b6840407e8bf14dfa5c0f9db1f06707c4f98ac99
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "127892604"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431737"
 ---
 ## <a name="how-do-i-fix-a-bulk-upload-to-use-the-correct-agreement"></a>Ricerca per categorie correggere un caricamento in blocco per usare l'accordo corretto?
 
@@ -31,9 +31,8 @@ Prima di tutto, assicurarsi di caricare i sottoscrittori nel contratto corretto 
 
 ## <a name="azure-active-directory-azure-ad-group"></a>Azure Active Directory (Azure AD)
 
-Se gli utenti sono stati aggiunti tramite un Azure AD, è necessario rimuovere direttamente gli utenti dal gruppo Azure AD gruppo. Dopo la rimozione degli utenti dal gruppo, l'eliminazione nel portale di amministrazione può richiedere fino a 24 ore. 
+Se gli utenti sono stati aggiunti tramite Azure AD gruppo, è necessario rimuovere gli utenti direttamente dal Azure AD gruppo. Dopo la rimozione degli utenti dal gruppo, l'eliminazione nel portale di amministrazione può richiedere fino a 24 ore. 
 
 ## <a name="impact-of-moving-subscriptions"></a>Impatto dello spostamento delle sottoscrizioni
 
 Quando i sottoscrittori vengono spostati in un nuovo contratto, ricevono un nuovo ID sottoscrizione. Questa modifica interrompe il collegamento con la sottoscrizione di Azure associata al vantaggio di credito mensile di Azure. Quando il collegamento viene interrotto, la sottoscrizione di Azure precedente è soggetta alla disattivazione finale. Per evitare interruzioni, i sottoscrittori devono creare una nuova sottoscrizione di Azure usando il vantaggio nella nuova sottoscrizione di Visual Studio e quindi trasferire gli asset di [Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) esistenti dalla sottoscrizione di Azure precedente a quella nuova.
-

@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di app .NET in Linux con WSL
 description: Informazioni su come eseguire ed eseguire il debug delle app .NET in WSL senza uscire Visual Studio.
-ms.date: 08/06/2021
+ms.date: 09/17/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging, linux
@@ -13,18 +13,18 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: dab41bd2bbe83a648c72c64c413e8a9d5d8cf4ce
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 1ab2f44a0def0f5b766004a199c17d23ff697920
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126630779"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427291"
 ---
 # <a name="debug-net-apps-in-wsl-with-visual-studio"></a>Eseguire il debug di app .NET in WSL con Visual Studio
 
-È possibile eseguire ed eseguire facilmente il debug delle app .NET in Linux senza uscire Visual Studio WSL. Gli sviluppatori multipiattaforma possono usare questo metodo come modo semplice per testare più ambienti di destinazione.
+È possibile eseguire ed eseguire facilmente il debug delle app .NET in Linux senza Visual Studio con WSL. Gli sviluppatori multipiattaforma possono usare questo metodo come modo semplice per testare più ambienti di destinazione.
 
-Per un Windows .NET che ha come destinazione Linux, WSL si trova in una posizione ideale tra il realismo della produzione e la produttività. In Visual Studio, è già possibile eseguire il debug in un ambiente Linux remoto usando il [debugger](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)remoto o con i contenitori usando [Gli strumenti contenitore](../containers/overview.md). Quando il realistico della produzione è il problema principale, è consigliabile usare una di queste opzioni. Quando un ciclo interno semplice e veloce è più importante, WSL è un'ottima opzione.
+Per un Windows .NET che ha come destinazione Linux, WSL si trova in una posizione ideale tra il realismo della produzione e la produttività. In Visual Studio, è già possibile eseguire il debug in un ambiente Linux remoto usando il [debugger remoto](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)o con i contenitori usando Gli [strumenti contenitore](../containers/overview.md). Quando il realistico della produzione è il problema principale, è consigliabile usare una di queste opzioni. Quando un ciclo interno semplice e veloce è più importante, WSL è un'ottima opzione.
 
 Non è necessario scegliere un solo metodo. È possibile avere un profilo di avvio per Docker e WSL nello stesso progetto e scegliere quale sia appropriato per una determinata esecuzione. Dopo aver distribuito l'app, è sempre possibile usare il debugger remoto per connettersi ad essa in caso di problemi.
 
@@ -35,7 +35,9 @@ Non è necessario scegliere un solo metodo. È possibile avere un profilo di avv
 
 - Visual Studio 2019 v16.9 Preview 1 o versioni successive con il componente facoltativo Debug .NET con WSL.
 
-  Il componente facoltativo è incluso per impostazione predefinita con i carichi di lavoro multipiattaforma .NET Core o ASP.NET e sviluppo Web. È necessario installare uno o entrambi questi carichi di lavoro.
+  Per verificare la presenza del componente WSL, scegliere **Strumenti**  >  **Ottieni strumenti e funzionalità**. Nella finestra Programma di installazione di Visual Studio assicurarsi che il componente sia installato scegliendo la scheda **Singoli** componenti e digitando **WSL** come termine di ricerca.
+
+  In alcune versioni di Visual Studio, il componente facoltativo è incluso per impostazione predefinita con alcuni carichi di lavoro .NET.
 
 - Installare [WSL](/windows/wsl/about).
 
@@ -54,7 +56,7 @@ Non è necessario scegliere un solo metodo. È possibile avere un profilo di avv
     ::: moniker range=">=vs-2022"
 
     >[!NOTE]
-    > A partire da Visual Studio 2022 Preview 3, il nome del comando nel profilo di avvio è stato modificato da WSL2 a WSL.
+    > A partire Visual Studio 2022 Preview 3, il nome del comando nel profilo di avvio è stato modificato da WSL2 a WSL.
 
     ```json
     "WSL": {
@@ -163,7 +165,7 @@ Se si sta lavorando a un'applicazione che deve essere eseguita in più distribuz
 ```
 ::: moniker-end
 
-Con questi profili di avvio è possibile passare facilmente da una distribuzione di destinazione all'altra senza lasciare la comodità di Visual Studio.
+Con questi profili di avvio, è possibile passare facilmente da una distribuzione di destinazione all'altra senza lasciare la comodità di Visual Studio.
 
 ![Più profili di avvio WSL nell'elenco dei profili di avvio](media/linux-wsl2-debugging-switch-target-distribution.png)
 

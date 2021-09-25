@@ -8,14 +8,14 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
 ms.openlocfilehash: 11478550726aafafd5d2fa2e999e041c76906790
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127964712"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427544"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
-Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per altre informazioni sull'attivazione di un prodotto con una chiave, versioni di vendita al dettaglio e contratti multilicenza dei codici e limiti giornalieri per le richieste di codici Product Key, vedere la panoramica dei codici [Product Key.](product-keys.md)
+Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per altre informazioni sull'attivazione di un prodotto con una chiave, versioni di vendita al dettaglio e contratti multilicenza dei codici e limiti giornalieri di attestazione del codice Product Key, vedere la panoramica dei codici [Product Key.](product-keys.md)
 
 ## <a name="locating-and-claiming-product-keys"></a>Individuazione e richiesta dei codici Product Key
 Per visualizzare i propri codici Product Key, è necessario essere connessi alla propria sottoscrizione di Visual Studio. È possibile individuare singoli codici Product Key selezionando il collegamento **Ottieni chiave** azzurro relativo a un prodotto specifico nella pagina [Download](https://my.visualstudio.com/downloads), come illustrato di seguito.  Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Quando per uno stesso prodotto esistono più codici, nella colonna Note relativa al download verranno visualizzate apposite note per semplificare l'identificazione del codice da usare.
@@ -37,7 +37,7 @@ Sono disponibili vari tipi di chiave, a seconda del prodotto.
 |    Codice per attivazione statica    |    I codici per attivazione statica vengono offerti per i prodotti che non richiedono attivazione e possono essere usati per un numero qualsiasi di installazioni.                                                                                                                  |
 |    Codice personalizzato                 |    I codici personalizzati offrono azioni o informazioni speciali per attivare o installare il prodotto.                                                                                                                                                                |
 |    VA 1.0                     |    Più chiavi di attivazione, simili a un codice MAK.                                                                                                                                                                                                 |
-|    Codice OEM                    |    Chiavi original Equipment Manufacturer che consentono più attivazioni.                                                                                                                                                                       |
+|    Codice OEM                    |    Chiavi originali del produttore dell'apparecchiatura che consentono più attivazioni.                                                                                                                                                                       |
 |    Codice per attivazione singola DreamSpark    |    Le chiavi di vendita al dettaglio per DreamSpark consentono un'attivazione. I codici DreamSpark per attivazione singola vengono emessi in batch e sono principalmente destinati agli studenti.                                                                                     |
 |    Codice per laboratorio DreamSpark         |    Il lab usa chiavi per i programmi DreamSpark che consentono più attivazioni. I codici destinati ai laboratori per DreamSpark sono destinati a un uso all'interno dei laboratori informatici delle università.                                                                                       |
 |    Codice MAK per DreamSpark         |    Chiavi MAK per i clienti del programma DreamSpark.                                                                                                                                                                                                  |

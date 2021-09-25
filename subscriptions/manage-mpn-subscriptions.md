@@ -1,23 +1,23 @@
 ---
 title: Gestire Visual Studio sottoscrizioni da Microsoft Partner Network | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 10/28/2020
 ms.topic: how-to
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
-ms.openlocfilehash: b578ed417d2d4ac03dd7472a9cb94958b8d3c7a3
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a1ea239401805132d2205586b6167c7944cc5839
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126633524"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128430207"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestire le sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
 
-Per Visual Studio dettagliate, vedere Visual Studio offerte [ai partner nel Microsoft Partner Network (MPN).](program-mpn.md)
+Per Visual Studio dettagliate, vedere le Visual Studio offerte [ai partner nel Microsoft Partner Network (MPN).](program-mpn.md)
 
 ## <a name="microsoft-action-pack-subscribers"></a>Sottoscrittori di Microsoft Action Pack
 Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
@@ -67,4 +67,4 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 - [Microsoft 365 documentazione](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-I sottoscrittori e gli amministratori di programma devono collaborare direttamente con il team Microsoft Partner Network supporto tecnico per risolvere eventuali problemi con i sottoscrittori che accedono alle sottoscrizioni. Per assistenza, visitare la pagina del [supporto per i partner](https://partner.microsoft.com/support). (Verranno richieste le credenziali di accesso di MPN.)
+I sottoscrittori e gli amministratori del programma devono collaborare direttamente con il team di Microsoft Partner Network per risolvere eventuali problemi relativi ai sottoscrittori che accedono alle sottoscrizioni. Per assistenza, visitare la pagina del [supporto per i partner](https://partner.microsoft.com/support). (Verranno richieste le credenziali di accesso di MPN.)

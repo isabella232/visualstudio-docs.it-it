@@ -2,18 +2,18 @@
 metadata:
   title: Domande frequenti sulla fatturazione Visual Studio sottoscrizioni cloud | Microsoft Docs
   author: evanwindom
-  ms.author: v-evwin
+  ms.author: cabuschl
   manager: cabuschl
   ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
   ms.date: 03/05/2021
   ms.topic: conceptual
   description: Domande sulla fatturazione per sottoscrizioni cloud.
-  ms.openlocfilehash: c9eaad58f44955cf79154da780f9f2da9a64049b
-  ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+  ms.openlocfilehash: 1cdbedf7abe29ab63143e8b9f5567c11b818dbcd
+  ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/09/2021
-  ms.locfileid: "123965580"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "128428788"
 title: Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 summary: >
   Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/) per comprendere i vantaggi di ogni sottoscrizione di Visual Studio, esaminando le differenze tra le sottoscrizioni cloud e standard di Visual Studio, i dettagli dei vantaggi per i sottoscrittori e altri aspetti.
@@ -38,13 +38,13 @@ sections:
   - question: >
       Dove è possibile visualizzare i dati di fatturazione e utilizzo?
     answer: >
-      Ottenere informazioni sulla visualizzazione [della fattura e dell'utilizzo.](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date)
+      Ottenere informazioni sulla visualizzazione [della fattura e sull'utilizzo di](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date).
 - name: Clienti Enterprise Agreement (EA)
   questions:
   - question: >
       È possibile usare un contratto Enterprise Agreement per acquistare sottoscrizioni cloud di Visual Studio?
     answer: >
-      Sì, è possibile. È necessario essere un collaboratore o un ruolo superiore per una sottoscrizione di Azure creata per l'EA. Assicurarsi di effettuare gli acquisti di sottoscrizioni cloud di Visual Studio direttamente in Visual Studio Marketplace. Non è possibile acquistare sottoscrizioni cloud di Visual Studio usando un ordine di acquisto.
+      Sì, è possibile. Sarà necessario essere un collaboratore o un ruolo superiore per una sottoscrizione di Azure creata per l'EA. Assicurarsi di effettuare gli acquisti di sottoscrizioni cloud di Visual Studio direttamente in Visual Studio Marketplace. Non è possibile acquistare sottoscrizioni cloud di Visual Studio usando un ordine di acquisto.
   - question: >
       Come si può stabilire se sono disponibili i privilegi necessari per acquistare servizi in Visual Studio Marketplace tramite il contratto Enterprise Agreement dell'organizzazione?
     answer: >
@@ -110,13 +110,13 @@ sections:
 
       > [!NOTE]
 
-      > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per l'acquisto di Visual Studio.
+      > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a esplorare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) diverse opzioni per l'acquisto Visual Studio.
 - name: Altre domande
   questions:
   - question: >
-      È possibile usare il credito singolo Azure DevTest mensile come sottoscrittore Visual Studio per acquistare altre sottoscrizioni cloud Visual Studio cloud?
+      È possibile usare il credito singolo Azure DevTest mensile come sottoscrittore Visual Studio per acquistare più sottoscrizioni cloud Visual Studio cloud?
     answer: >
-      No, non è possibile usare il credito singolo [azure DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) mensile come sottoscrittore Visual Studio per pagare gli Visual Studio Marketplace. Tutti gli acquisti di sottoscrizioni cloud di Visual Studio verranno addebitati sulla carta di credito.
+      No, non è possibile usare il credito singolo [Azure DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) mensile come sottoscrittore Visual Studio per pagare gli Visual Studio Marketplace. Tutti gli acquisti di sottoscrizioni cloud di Visual Studio verranno addebitati sulla carta di credito.
 
       Prima di effettuare acquisti, sarà necessario [rimuovere il limite di spesa](https://azure.microsoft.com/pricing/spending-limits/).
   - question: >

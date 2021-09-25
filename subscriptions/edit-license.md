@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono modificare le assegnazioni delle sottoscrizioni.
 ms.openlocfilehash: a545a276714c7fb21d9adc966b2ef0c9e250250c
-ms.sourcegitcommit: da19ed1e48259b219c61c4cb9e98b006004a5766
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "128052834"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428049"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
 L'amministratore della sottoscrizione può apportare modifiche alle sottoscrizioni assegnate a singoli utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.

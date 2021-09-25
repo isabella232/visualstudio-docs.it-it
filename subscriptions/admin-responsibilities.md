@@ -1,18 +1,18 @@
 ---
 title: Responsabilità dell'amministratore nelle Visual Studio di | Visual Studio Mercato
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori delle sottoscrizioni.
-ms.openlocfilehash: 5f2aef531aafca6ad319fe69810d00c19e2927fb
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 89da3697482efa3b7ba7f940df00bb1fcdd2559c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428156"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Panoramica delle responsabilità degli amministratori
 Gli amministratori possono gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore ha anche la responsabilità di garantire che le sottoscrizioni siano gestite in base alle condizioni di licenza. Questo articolo descrive le responsabilità, i vantaggi e le limitazioni del ruolo di amministratore.

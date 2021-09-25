@@ -8,11 +8,11 @@ ms.date: 03/19/2021
 ms.topic: conceptual
 description: Informazioni sull'accesso GitHub Enterprise come parte delle sottoscrizioni Visual Studio
 ms.openlocfilehash: c4dfd161aa57653c1892cb38b174e7488cb14167
-ms.sourcegitcommit: da19ed1e48259b219c61c4cb9e98b006004a5766
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "128052843"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429007"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio sottoscrizioni con GitHub Enterprise 
 
@@ -44,7 +44,7 @@ Quando viene assegnata una sottoscrizione Visual Studio con GitHub Enterprise, s
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise configurazione dell'account Enterprise in sospeso](_img/access-github/pending-account-setup.png "L'organizzazione deve prima configurare un account Enterprise aziendale.")  
 
-GitHub Enterprise è gestito da un amministratore GitHub separatamente dalle sottoscrizioni Visual Studio servizio.  Quando l'azienda ha configurato un account GitHub Enterprise, si riceverà un messaggio di posta elettronica da GitHub che informa che la sottoscrizione di Visual Studio è stata collegata e che il riquadro del vantaggio verrà aggiornato come illustrato di seguito.  La configurazione di questo account può richiedere del tempo e dipende dall'azienda che completa il processo di configurazione. Dopo aver ricevuto il messaggio di posta elettronica, è possibile contattare l'amministratore dell'organizzazione GitHub appropriato per richiedere un invito all'organizzazione e/o al repo.  
+GitHub Enterprise è gestito da un amministratore GitHub separatamente dalle sottoscrizioni Visual Studio sottoscrizione.  Quando l'azienda ha configurato un account GitHub Enterprise, si riceverà un messaggio di posta elettronica da GitHub che informa che la sottoscrizione di Visual Studio è stata collegata e che il riquadro del vantaggio verrà aggiornato come illustrato di seguito.  La configurazione di questo account può richiedere del tempo e dipende dall'azienda che completa il processo di configurazione. Dopo aver ricevuto il messaggio di posta elettronica, è possibile contattare l'amministratore dell'organizzazione GitHub appropriato per richiedere un invito all'organizzazione e/o al repo.  
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise in sospeso GitHub invito](_img/access-github/pending-invite.png "Contattare l'amministratore GitHub per richiedere l'invito a un'GitHub lavoro.")  
@@ -75,7 +75,7 @@ Se non si ha di GitHub, ecco alcune risorse utili:
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q--where-is-my-github-subscription"></a>D: Dove si trova la GitHub sottoscrizione?
-A: Il processo di configurazione di un account GitHub Enterprise può richiedere del tempo.  Se si è in attesa e non si è sentito nulla, è possibile contattare l'amministratore GitHub.  È possibile che l'amministratore sia ancora al lavoro o abbia scelto di non creare un account GitHub Enterprise servizio. 
+A: Il processo di configurazione di un account GitHub Enterprise può richiedere del tempo.  Se si è in attesa e non si è sentito nulla, è possibile contattare l'amministratore GitHub.  È possibile che l'amministratore sia ancora al lavoro o che abbia scelto di non creare un account GitHub Enterprise account. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>D: Si ottengono tutti i vantaggi Visual Studio sottoscrizione?
 A: Insieme a GitHub Enterprise, si ricevono tutti i vantaggi di una sottoscrizione Visual Studio standard, inclusi download di software, servizi cloud, supporto tecnico e vantaggi per i partner, come se la sottoscrizione fosse stata acquistata separatamente.
@@ -86,7 +86,7 @@ A: Insieme a GitHub Enterprise, si ricevono tutti i vantaggi di una sottoscrizio
 - Ulteriore assistenza?  Contattare [GitHub supporto tecnico](https://support.github.com/)
 - Ottenere assistenza da altri utenti di GitHub nel [GitHub Community Forum](https://github.community/) (forum della Community GitHub).
 - Per assistenza su vendite, sottoscrizioni, account e fatturazione per Sottoscrizioni di Visual Studio, visitare la pagina [Richiesta supporto](https://aka.ms/vssubscriberhelp) microsoft.
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio support](https://visualstudio.microsoft.com/support/).
 - Ottenere [supporto tecnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 
 ## <a name="see-also"></a>Vedi anche

@@ -1,6 +1,6 @@
 ---
 title: Soluzioni di supporto per gli amministratori delle sottoscrizioni
-description: Elenco di file INCLUDEs per Visual Studio del widget di supporto dell'amministratore delle sottoscrizioni
+description: Elenco di file INCLUDEs per il contenuto del widget Visual Studio sottoscrizioni di supporto dell'amministratore
 ms.topic: conceptual
 ms.assetid: 478648b9-f6f0-4ea3-83b4-5cffa196a496
 robots: noindex, nofollow
@@ -8,11 +8,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 08/13/2021
 ms.openlocfilehash: 95a74093477657ec6e550005d8bd5c6a08ea1703
-ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "127934101"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431706"
 ---
 # <a name="visual-studio-subscriptions-admin-support-widget-content-includes-files"></a>Visual Studio sottoscrizioni di amministrazione supportano i file INCLUDE del contenuto del widget
 

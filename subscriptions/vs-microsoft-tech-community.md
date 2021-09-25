@@ -1,18 +1,18 @@
 ---
 title: Microsoft Tech Community in Visual Studio sottoscrizioni | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
 ms.date: 03/17/2021
 ms.topic: conceptual
-description: Informazioni sul vantaggio di supporto del forum microsoft tech Community incluso nelle sottoscrizioni Visual Studio selezionate.
-ms.openlocfilehash: f1078204d69b9249b1691f9c96496ba1975fffd6
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+description: Informazioni sul vantaggio del supporto del forum Community Microsoft Tech Community incluso nelle sottoscrizioni Visual Studio selezionate.
+ms.openlocfilehash: 36badd050fdd11bd1e361300ef1824775ab04d97
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428797"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Supporto del forum Community Microsoft Tech Visual Studio sottoscrizioni
 Connessione e interagire con altri utenti ed esperti tecnici Microsoft sulle procedure consigliate, sull'architettura di progettazione e sugli aggiornamenti più recenti.
@@ -36,7 +36,7 @@ Accedere al forum della community è semplice.
 0. Per **Passaggio 3: Codice di** comportamento, leggere il Codice di comportamento e quindi fare clic sulla casella di controllo per indicare l'accettazione del Codice di comportamento e delle Condizioni d'utilizzo.
 0. Fare **clic su** Registra per completare la configurazione del profilo.
 
-Tutto qui.  A questo punto è possibile usare il portale della community.  Il home page ha notizie sulla community.  Per visualizzare il contenuto specifico delle community a cui si è aggiunti, fare clic sull'elenco a discesa **hub Community** nella parte superiore della pagina e scegliere una community dall'elenco.  È sempre possibile aggiungere community all'elenco facendo clic su Browse **All Community Hubs** (Esplora tutti gli hub di Community) facendo clic sull'hub desiderato e quindi sul **pulsante Join (Aggiungi).** 
+Tutto qui.  A questo punto è possibile usare il portale della community.  Il home page ha notizie sulla community.  Per visualizzare il contenuto specifico delle community a cui si è aggiunti, fare clic sull'elenco a discesa **hub di Community** nella parte superiore della pagina e scegliere una community dall'elenco.  È sempre possibile aggiungere community all'elenco facendo clic su Browse **All Community Hubs** (Esplora tutti gli hub di Community) facendo clic sull'hub di propria scelta e quindi **sul pulsante Join (Aggiungi).** 
 
 ## <a name="eligibility"></a>Idoneità
 La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione come mostrato di seguito:
@@ -60,7 +60,7 @@ Non si è certi della sottoscrizione in uso?  Connessione per [https://my.visual
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  Contattare [il supporto Visual Studio sottoscrizioni di](https://my.visualstudio.com/gethelp).
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio Supporto tecnico](https://visualstudio.microsoft.com/support/).
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [Visual Studio support](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)

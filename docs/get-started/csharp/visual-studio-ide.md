@@ -16,11 +16,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: e912048e20ec1479eb6d9aa3afe28d63417f40ff
-ms.sourcegitcommit: 022ac348337f77c899996ac81060a969ebfb64bb
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "128134450"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128430964"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>IDE di Visual Studio | C\#
 
@@ -30,13 +30,13 @@ ms.locfileid: "128134450"
 
 È possibile configurare Visual Studio per l'uso di impostazioni di ambiente personalizzate per gli sviluppatori C#:
 
-1. Nella barra dei menu scegliere **Strumenti**  >  **Importa ed esporta** Impostazioni .
+1. Sulla barra dei menu scegliere **Strumenti**  >  **Importa ed esporta** Impostazioni .
 
 1. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** e quindi selezionare **Avanti**.
 
-1. Nella pagina **Salva Impostazioni** corrente scegliere se salvare le impostazioni correnti prima della reimpostazione. Se non sono state personalizzate impostazioni, selezionare No, reimposta semplicemente **le impostazioni sovrascrivendo le impostazioni correnti.** Selezionare quindi **Avanti**.
+1. Nella pagina **Salva Impostazioni** scegliere se salvare le impostazioni correnti prima della reimpostazione. Se non sono state personalizzate impostazioni, selezionare No, reimposta solo le **impostazioni, sovrascrivendo le impostazioni correnti.** Selezionare quindi **Avanti**.
 
-1. Nella pagina **Scegliere una raccolta predefinita di Impostazioni,** scegliere Visual **C#** e quindi selezionare **Fine.**
+1. Nella pagina **Scegliere una raccolta predefinita di** Impostazioni scegliere Visual **C#** e quindi selezionare **Fine.**
 
 1. Nella pagina **Reimpostazione completa** selezionare **Chiudi**.
 
@@ -54,6 +54,6 @@ Esplorare più approfonditamente Visual Studio seguendo uno di questi articoli i
 
 ## <a name="see-also"></a>Vedi anche
 
-- Altre [informazioni Visual Studio funzionalità .](../../ide/advanced-feature-overview.md)
+- Scoprire [altre Visual Studio funzionalità](../../ide/advanced-feature-overview.md).
 - Visitare [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
 - Leggere il [blog Visual Studio .](https://devblogs.microsoft.com/visualstudio/)

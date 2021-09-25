@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4d97f56dbf3e8c4e3b198de413f6f4700ea4eb16
-ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127890694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426300"
 ---
 # <a name="simplify-linq-expression"></a>Semplificare l'espressione LINQ
 
@@ -24,11 +24,11 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Refactoring di istanze di per e dei `SomeEnumerableType.Where(<LambdaExpression>).Single()` `SomeEnumerable.Single(<LambdaExpression>)` metodi `Enumerable.Single()` enumerabili seguenti: `SingleOrDefault()` , , , , , , e `Last()` `LastOrDefault()` `Any()` `Count()` `First()` `FirstOrDefault()` .
+**Cosa:** Refactoring delle istanze di in per e dei metodi `SomeEnumerableType.Where(<LambdaExpression>).Single()` `SomeEnumerable.Single(<LambdaExpression>)` `Enumerable.Single()` enumerabili seguenti: `SingleOrDefault()` , , , , , e `Last()` `LastOrDefault()` `Any()` `Count()` `First()` `FirstOrDefault()` .
 
-**Quando:**  Tutte le istanze in cui il metodo chiama , e così via, non hanno argomenti ed è `Single()` `SingleOrDefault()` preceduta da `Where()` un'espressione. L'input per `Where()` l'espressione non può essere costruito come albero delle espressioni.
+**Quando:**  Tutte le istanze in cui il metodo chiama , e così via, non hanno argomenti ed `Single()` `SingleOrDefault()` è preceduta da `Where()` un'espressione. L'input per `Where()` l'espressione non può essere costruito come albero delle espressioni.
 
-**Perché:** La rimozione della chiamata non necessaria a Enumerable per il metodo migliora la leggibilità e, in alcuni casi, le `.Where()` prestazioni, vedere le osservazioni.
+**Perché:** La rimozione della chiamata non necessaria a Enumerable per il metodo migliora la leggibilità e, in alcuni casi, le `.Where()` prestazioni, vedere le note.
 
 ## <a name="how-to"></a>Procedure
 
@@ -40,7 +40,7 @@ Questo refactoring si applica a:
    
 ## <a name="remarks"></a>Commenti
 
-In alcuni casi questo refactoring può ridurre le prestazioni. Le operazioni LINQ `List<T>` su e non sono `T[]` ottimizzate in questo caso e comportano prestazioni peggiori.
+In alcuni casi questo refactoring può ridurre le prestazioni. Le operazioni LINQ `List<T>` su e non sono `T[]` ottimizzate in questo caso e comportano un peggioramento delle prestazioni.
 
 ## <a name="see-also"></a>Vedi anche
 
