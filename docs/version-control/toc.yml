@@ -16,7 +16,11 @@
       href: git-team-explorer-feature-comparison.md
 - name: Novità
   items:
-    - name: Produttività migliorata con Git in Visual Studio (anteprima)
+    - name: Supporto per più repo in Visual Studio 2022 (anteprima)
+      href: 'https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/'
+    - name: Visual Studio versione 2022 (anteprima)
+      href: /visualstudio/releases/2022/release-notes-preview
+    - name: Produttività migliorata con Git in Visual Studio 2019
       href: 'https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/'
     - name: Note sulla versione di Visual Studio 2019
       href: /visualstudio/releases/2019/release-notes/

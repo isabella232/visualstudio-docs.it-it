@@ -1,6 +1,6 @@
 ---
-title: Non riesco a trovare la funzionalità IDE che voglio usare
-description: Se non si riesce a trovare la funzionalità IDE che si vuole usare, è possibile che si stia usando la versione non corretta di Visual Studio
+title: Non è possibile trovare la funzionalità IDE che si vuole usare
+description: Se non è possibile trovare la funzionalità IDE che si vuole usare, è possibile che si usi la versione non corretta di Visual Studio
 ms.topic: include
 ms.assetid: 986a4c63-610b-4d33-8b22-48452964da8b
 author: evanwindom
@@ -10,34 +10,34 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: de5ffd83117b052821f1a3ce29d13545d098069e
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 662eae10edd485d274fdae9c7650c804992cb88f
+ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915997"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129013261"
 ---
-## <a name="what-if-you-cant-find-the-ide-feature-you-want-to-use"></a>Che cosa accade se non si riesce a trovare la funzionalità IDE che si vuole usare? 
+## <a name="what-if-you-cant-find-the-ide-feature-you-want-to-use"></a>Cosa succede se non è possibile trovare la funzionalità IDE che si vuole usare? 
 
-Le funzionalità e la versione IDE specifiche disponibili variano a seconda del livello della sottoscrizione. Visual Studio verrà visualizzato come riquadro nella categoria strumenti della pagina vantaggi del [portale sottoscrizioni](https://my.visualstudio.com/benefits). 
+La versione e le funzionalità specifiche dell'IDE disponibili dipendono dal livello della sottoscrizione. Visual Studio verrà visualizzato come riquadro nella categoria strumenti nella pagina dei vantaggi del [portale delle sottoscrizioni.](https://my.visualstudio.com/benefits) 
 
-## <a name="compare-supported-visual-studio-features"></a>Confrontare le funzionalità supportate di Visual Studio 
+## <a name="compare-supported-visual-studio-features"></a>Confrontare le funzionalità Visual Studio supportate 
 
-Dopo aver annotato la versione di Visual Studio inclusa nella sottoscrizione, [confrontare le funzionalità supportate](https://visualstudio.microsoft.com/vs/compare/) per verificare se la funzionalità è disponibile nell'IDE in uso. Se si usa una versione dell'IDE che non include una funzionalità, sarà necessario scaricare l'IDE corretto. 
+Dopo aver fatto riferimento alla versione di Visual Studio inclusa nella [sottoscrizione,](https://visualstudio.microsoft.com/vs/compare/) confrontare le funzionalità supportate per verificare se la funzionalità è disponibile nell'IDE in uso. Se si usa una versione dell'IDE che non include una funzionalità, è necessario scaricare l'IDE corretto. 
 
-## <a name="upgrade-your-subscription-level"></a>Aggiornare il livello di abbonamento  
+## <a name="upgrade-your-subscription-level"></a>Aggiornare il livello di sottoscrizione  
 
-Se la funzionalità è specifica di un altro livello di sottoscrizione, sarà necessario modificare il livello di abbonamento.  
+Se la funzionalità è specifica di un altro livello di sottoscrizione, sarà necessario modificare il livello di sottoscrizione.  
 
-Se la sottoscrizione di Visual Studio viene fornita dall'ufficio o dall'Istituto di istruzione, è probabile che sia stata assegnata a un amministratore delle sottoscrizioni. Rivolgersi all'amministratore dell'organizzazione usando il pulsante "Contatta l'amministratore" nell'angolo destro dello spostamento nel [portale delle sottoscrizioni](https://my.visualstudio.com/benefits).  
+Se la Visual Studio viene fornita dall'istituto di istruzione o dall'istituto di istruzione, è probabile che sia stata assegnata dall'amministratore delle sottoscrizioni. Contattare l'amministratore dell'organizzazione usando il pulsante "Contatta l'amministratore" nell'angolo destro del riquadro di spostamento nel [portale delle sottoscrizioni.](https://my.visualstudio.com/benefits)  
 
-Se la sottoscrizione è stata acquistata direttamente oppure non si dispone di un amministratore, sarà necessario acquistare una nuova sottoscrizione al livello richiesto.  
+Se la sottoscrizione è stata acquistata direttamente o non si ha un amministratore, sarà necessario acquistare una nuova sottoscrizione al livello richiesto.  
 
 ## <a name="how-to-contact-your-admin"></a>Come contattare l'amministratore 
 
-Date le dimensioni e la complessità di molte organizzazioni, è possibile che non si sia a conoscenza dell'amministratore, ma è disponibile una funzionalità nel portale delle sottoscrizioni che consente di contattare l'amministratore. 
+Data la dimensione e la complessità di molte organizzazioni, è possibile che non si sia a conoscenza dell'amministratore, ma nel portale delle sottoscrizioni è disponibile una funzionalità che consente di contattare l'amministratore. 
 
-1. Accedere al portale delle [sottoscrizioni](https://my.visualstudio.com/benefits).  
+1. Accedere al portale [delle sottoscrizioni.](https://my.visualstudio.com/benefits)  
 1. Fare clic sul pulsante Contatta l'amministratore in alto a destra. 
 1. Immettere il messaggio per l'amministratore. 
-1. Se si vuole ricevere una copia del messaggio inviato all'amministratore, fare clic sulla casella di controllo Invia una copia. Infine, fare clic su Send.
+1. Se si desidera ricevere una copia del messaggio inviato all'amministratore, fare clic sulla casella di controllo Invia una copia. Infine, fare clic su Invia.

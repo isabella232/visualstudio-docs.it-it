@@ -10,12 +10,12 @@ user.type: admin
 tags: missing
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: f238f497d205f5de071386096c375a4284e180c0
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 1502ea473cde56c0701a87e00c180d2a4f74db41
+ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431774"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129013375"
 ---
 ## <a name="some-subscriptions-are-missing-that-i-didnt-delete-where-did-the-subscriptions-go"></a>Alcune sottoscrizioni non sono state eliminate. Dove sono le sottoscrizioni?
 In quanto amministratore con privilegi, è possibile aggiungere, modificare o rimuovere sottoscrittori da qualsiasi contratto quando si hanno le autorizzazioni appropriate. 
@@ -24,7 +24,7 @@ Tuttavia, è consigliabile avere più di un amministratore per contratto con le 
 
 1. Selezionare la scheda **Dashboard** sopra la griglia del sottoscrittore.
 2. Passare al **riquadro Modifiche** recenti.
-3. Selezionare il **Visualizza tutto modifiche** nell'angolo in basso a destra oppure scegliere l'icona Excel nell'angolo superiore destro per esportare un file.
+3. Selezionare il **Visualizza tutto modifiche** nell'angolo in basso a destra oppure scegliere l'icona Excel nell'angolo in alto a destra per esportare un file.
 
 Questi passaggi consentono di visualizzare un report delle modifiche apportate negli ultimi 30 giorni. Per motivi di privacy, microsoft conserva le informazioni solo negli ultimi 30 giorni.
 

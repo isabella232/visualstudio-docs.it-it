@@ -10,12 +10,12 @@ user.type: admin
 tags: super, admin
 subscription.type: vl, cloud, retail, partner
 sap.id: 8789faa7-9d29-25d8-018a-4f6ecee827c8
-ms.openlocfilehash: 935c3907eb6a7187185592e48a275ecb36958fb6
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 7d42752f831da42dd1e377c27529e65546233692
+ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431695"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129013371"
 ---
 ## <a name="how-to-add-another-super-admin-or-admin"></a>Come aggiungere un altro amministratore con privilegi super
 
@@ -36,4 +36,4 @@ Per verificare se si è un amministratore con privilegi di amministratore, selez
 
 Il ruolo di amministratore con privilegi di amministratore non è disponibile per i [contratti MPSA.](https://docs.microsoft.com/visualstudio/subscriptions/mpsa) Le autorizzazioni di amministratore per questi tipi di contratto vengono gestite in Microsoft [Business Center.](https://businessaccount.microsoft.com/Customer) 
 
-Per [gestire gli amministratori](https://docs.microsoft.com/visualstudio/subscriptions/cloud-admin) per le sottoscrizioni acquistate tramite Visual Studio [Marketplace,](https://marketplace.visualstudio.com/subscriptions)visitare il [portale di Azure](https://portal.azure.com/).   
+Per [gestire gli amministratori per](https://docs.microsoft.com/visualstudio/subscriptions/cloud-admin) le sottoscrizioni acquistate tramite Visual Studio [Marketplace,](https://marketplace.visualstudio.com/subscriptions)visitare il [portale di Azure](https://portal.azure.com/).   

@@ -10,12 +10,12 @@ user.type: admin
 tags: email
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: 1618de41aa65a346b7c671aab155df5c9b322ed5
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: a8a753440cbfff59c656748571a1dbe08dffe3a8
+ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431707"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129013303"
 ---
 ## <a name="update-subscribers-sign-in-email-address"></a>Aggiornare l'indirizzo di posta elettronica di accesso del sottoscrittore
 
