@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: babc486a4c8d683a3557b602273bc2e165a49420
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: da6b1c571efed870ad321420ab25f3f9d9237197
+ms.sourcegitcommit: d3e95f3b21d9cd46dd3d53cf869f74872d5cabdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126709642"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129142947"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 Consente ai motori di debug di leggere le impostazioni delle metriche in modalità remota.
@@ -25,11 +25,11 @@ Consente ai motori di debug di leggere le impostazioni delle metriche in modalit
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDebugSettingsCallback2D : IUnknown
+IDebugSettingsCallback2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
-Questa interfaccia viene implementata dal callback di eventi del gestore di debug della sessione e utilizzata dai motori di debug. Può essere usato anche in locale al posto di Dbgmetric[d].lib.
+Questa interfaccia viene implementata dal callback degli eventi della gestione del debug di sessione e utilizzata dai motori di debug. Può essere usato anche in locale al posto di Dbgmetric[d].lib.
 
 ## <a name="methods"></a>Metodi
 Nella tabella seguente vengono illustrati i metodi di `IDebugSettingsCallback2` .
@@ -54,7 +54,7 @@ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrata una funzione che accetta un **oggetto IDebugSettingsCallback2** come parametro.
+L'esempio seguente illustra una funzione che accetta un **oggetto IDebugSettingsCallback2** come parametro.
 
 ```cpp
 HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)
