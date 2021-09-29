@@ -476,7 +476,7 @@ Nell'app in esecuzione dovrebbe essere visualizzato un widget nella parte superi
 
 ::: moniker range=">=vs-2022&quot;
 
-:::image type=&quot;content&quot; source=&quot;media/vs-2022/explore-ide-live-visual-tree.png&quot; alt-text=&quot;Screenshot che mostra la finestra Albero visuale live che visualizza un albero contenente tutti gli elementi visivi per HelloWPFApp.exe.&quot;:::
+:::image type="content" source="media/vs-2022/explore-ide-live-visual-tree.png" alt-text="Screenshot che mostra la finestra Albero visuale live che visualizza un albero contenente tutti gli elementi visivi per HelloWPFApp.exe.":::
 
 ::: moniker-end
 ### <a name=&quot;build-a-release-version-of-the-application&quot;></a>Compilare una versione di rilascio dell'applicazione
