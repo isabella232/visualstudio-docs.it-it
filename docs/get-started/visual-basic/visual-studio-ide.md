@@ -511,7 +511,7 @@ Approfondire e creare un programma semplice.
 
 1. Nella barra dei menu Visual Studio scegliere **File**  >    >  **nuovo Project**. È anche possibile premere **CTRL** + **MAIUSC** + **N**.
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/file-new-project.png&quot; alt-text=&quot;Screenshot della selezione della > File > Project dalla barra Visual Studio menu.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/file-new-project.png" alt-text="Screenshot della selezione della > File > Project dalla barra Visual Studio menu." border="false":::
 
    Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file e le impostazioni di base necessari per un determinato tipo di progetto.
 
@@ -519,37 +519,37 @@ Approfondire e creare un programma semplice.
 
    Selezionare il Visual Basic **Applicazione console** e quindi selezionare **Avanti.**
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/create-project.png&quot; alt-text=&quot;Screenshot della finestra Crea un nuovo progetto con l'Visual Basic applicazione console selezionata.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/create-project.png" alt-text="Screenshot della finestra Crea un nuovo progetto con l'Visual Basic applicazione console selezionata." border="false":::
 
 1. Nella finestra **Configura il nuovo progetto** immettere **HelloWorld** nella casella **Project nome.** Facoltativamente, modificare il percorso della directory del progetto dal percorso predefinito C: Repository di *\\ origine \\ \<name> \\ \\ utenti* e quindi selezionare **Avanti.**
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/configure.png&quot; alt-text=&quot;Screenshot della finestra Configura il nuovo progetto con il nome del progetto HelloWorld immesso.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/configure.png" alt-text="Screenshot della finestra Configura il nuovo progetto con il nome del progetto HelloWorld immesso." border="false":::
 
 1. Nella finestra **Informazioni aggiuntive** verificare che **.NET 6.0** sia visualizzato nel menu a discesa **Framework** di destinazione e quindi selezionare **Crea.**
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/additional-information.png&quot; alt-text=&quot;Screenshot della finestra Informazioni aggiuntive con il punto NET 6.0 selezionato.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/additional-information.png" alt-text="Screenshot della finestra Informazioni aggiuntive con il punto NET 6.0 selezionato." border="false":::
 
    Visual Studio crea il progetto. Il programma è una semplice applicazione &quot;Hello World&quot; che chiama il metodo <xref:System.Console.WriteLine?displayProperty=nameWithType> per visualizzare la stringa **Hello, World!** in una finestra della console.
 
    I file di progetto vengono visualizzati sul lato destro dell'IDE Visual Studio, in una finestra denominata Esplora soluzioni **.** Nella finestra **Esplora soluzioni** selezionare il file **Program.vb.** Il Visual Basic per l'app viene aperto nella finestra centrale dell'editor, che occupa la maggior parte dello spazio.
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/open-program.png&quot; alt-text=&quot;Screenshot che mostra il Visual Studio ID E con il codice Program dot V B nell'editor.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/open-program.png" alt-text="Screenshot che mostra il Visual Studio ID E con il codice Program dot V B nell'editor." border="false":::
 
    Il codice viene colorato automaticamente per indicare parti diverse, ad esempio parole chiave e tipi. I numeri di riga consentono di individuare il codice.
 
    Piccole linee tratteggiate verticali nel codice indicano la struttura del codice o i blocchi di codice che si uniscono tra loro. È anche possibile selezionare i piccoli segni meno o più boxed per comprimere o espandere blocchi di codice. Questa funzionalità di struttura del codice consente di nascondere il codice che non è necessario visualizzare, riducendo al minimo il disordine sullo schermo.
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/editor-features.png&quot; alt-text=&quot;Screenshot che mostra la Visual Studio ID E con caselle rosse.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/editor-features.png" alt-text="Screenshot che mostra la Visual Studio ID E con caselle rosse." border="false":::
 
    Sono disponibili molti altri menu e finestre degli strumenti.
 
 1. Avviare l'app scegliendo  >  **Debug Avvia senza eseguire** debug dal menu Visual Studio superiore. È anche possibile premere **CTRL** + **F5.**
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/start-without-debugging.png&quot; alt-text=&quot;Screenshot che mostra la voce di menu Debug > menu Avvia senza eseguire debug.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/start-without-debugging.png" alt-text="Screenshot che mostra la voce di menu Debug > menu Avvia senza eseguire debug." border="false":::
 
    Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-   :::image type=&quot;content&quot; source=&quot;../media/vs-2019/overview-console-window.png&quot; alt-text=&quot;Screenshot della finestra di Console di debug che mostra l'output Hello World! e Premere un tasto qualsiasi per chiudere questa finestra.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="../media/vs-2019/overview-console-window.png" alt-text="Screenshot della finestra di Console di debug che mostra l'output Hello World! e Premere un tasto qualsiasi per chiudere questa finestra." border="false":::
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
@@ -596,7 +596,7 @@ Rinominare prima di tutto la `name` variabile:
    ![Screenshot che mostra l'azione Rinomina in Visual Studio.](media/rename-quick-action.png)
    ::: moniker-end
    ::: moniker range=">=vs-2022&quot;
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/rename.png&quot; alt-text=&quot;Screenshot che mostra l'azione Rinomina in Visual Studio.&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/rename.png" alt-text="Screenshot che mostra l'azione Rinomina in Visual Studio." border="false":::
    ::: moniker-end
 
    La variabile viene rinominata nel progetto, che in questo caso è solo due posizioni.
