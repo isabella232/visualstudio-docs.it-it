@@ -186,11 +186,11 @@ L'applicazione viene ora eseguita nella console e rimane aperta fino a quando no
 
 Dopo aver selezionato il modello Visual Basic progetto e aver creato un nome per il progetto, Visual Studio crea un semplice &quot;Hello World!&quot; applicazione per l'utente. Il file **Program.vb** contiene il codice predefinito che chiama il metodo per visualizzare la stringa <xref:System.Console.WriteLine%2A> letterale &quot;Hello World!&quot; nella finestra della console.
 
-:::image type=&quot;content&quot; source=&quot;media/vs-2022/vb-console-hello-world-template.png&quot; alt-text=&quot;Screenshot che mostra il codice &quot;Hello World&quot; predefinito nel file Program.vb.&quot;:::
+:::image type="content" source="media/vs-2022/vb-console-hello-world-template.png" alt-text="Screenshot che mostra il codice &quot;Hello World&quot; predefinito nel file Program.vb.":::
 
 Selezionare il **pulsante HelloWorld** o premere **CTRL** + **F5** per eseguire il codice &quot;HelloWorld&quot; predefinito in modalità debug.
 
-:::image type=&quot;content&quot; source=&quot;media/vs-2022/vb-console-hello-world-button.png&quot; alt-text=&quot;Screenshot che mostra il pulsante &quot;HelloWorld&quot; evidenziato nella barra Visual Studio barra degli strumenti.&quot;:::
+:::image type="content" source="media/vs-2022/vb-console-hello-world-button.png" alt-text="Screenshot che mostra il pulsante &quot;HelloWorld&quot; evidenziato nella barra Visual Studio barra degli strumenti.":::
 
 Quando l'applicazione viene eseguita nel Microsoft Visual Studio Console di debug, la finestra della console rimane aperta fino a quando non si preme un tasto. 
 
