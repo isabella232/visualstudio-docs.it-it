@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 80e3b300-f2fc-40d4-bbb2-c831a2fa5d34
-ms.date: 09/09/2021
+ms.date: 09/28/2021
 ms.topic: how-to
 description: Questo articolo descrive come gli amministratori possono eseguire la migrazione delle sottoscrizioni assegnate da un contratto a un altro.
-ms.openlocfilehash: c92cf112607211c5ad998a26ca5722e8207aea49
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
+ms.openlocfilehash: 74be7f7913dcfbf41c447721e6d5d4c283ba9c88
+ms.sourcegitcommit: 50b0db7f38c8eded41c6bca83ebe71ee5d74afe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013184"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129206875"
 ---
 # <a name="migrate-subscriptions-from-one-agreement-to-another"></a>Eseguire la migrazione delle sottoscrizioni da un contratto a un altro
-Se sono state Visual Studio ai sottoscrittori come parte di un contratto e la società acquista un nuovo contratto, potrebbe essere necessario eseguire la migrazione dei sottoscrittori dal contratto corrente a quello nuovo. Questo articolo illustra come spostare le sottoscrizioni assegnate nel nuovo contratto.  
+Se sono state assegnate Visual Studio sottoscrizioni ai sottoscrittori come parte di un contratto e la società acquista un nuovo contratto, potrebbe essere necessario eseguire la migrazione dei sottoscrittori dal contratto corrente a quello nuovo. Questo articolo illustra come spostare le sottoscrizioni assegnate nel nuovo contratto.  
 
 Quando si spostano i sottoscrittori nel nuovo contratto, ecco cosa accade:
 - Ottiene un nuovo GUID della sottoscrizione.
@@ -30,7 +30,7 @@ Il processo per lo spostamento dei sottoscrittori nel nuovo contratto è costitu
 > [!IMPORTANT]
 > Prima di avviare questo processo, tenere presente le considerazioni seguenti:
 > - Se il rivenditore ha selezionato l'opzione per trasferire automaticamente i sottoscrittori al nuovo contratto al momento dell'acquisto, è possibile che le modifiche non verranno visualizzati fino a 48-72 ore dopo l'invio del contratto. Prima di procedere con il processo di spostamento manuale dei sottoscrittori, rivolgersi al rivenditore.  
-> - È possibile usare Azure Active Directory (Azure AD) per semplificare il processo di spostamento dei sottoscrittori nel nuovo contratto. Per altre informazioni, vedere [Assegnazione di sottoscrizioni tramite Azure AD gruppi.](assign-azure-ad.md)
+> - È possibile usare Azure Active Directory (Azure AD) per semplificare il processo di spostamento dei sottoscrittori nel nuovo contratto. Per altre informazioni, vedere [Assegnazione di sottoscrizioni tramite Azure AD gruppi](assign-azure-ad.md).
 
 ## <a name="export-your-current-subscription-assignments"></a>Esportare le assegnazioni di sottoscrizione correnti
 Il primo passaggio per eseguire la migrazione delle sottoscrizioni assegnate da un contratto a un altro consiste nell'esportare le assegnazioni di sottoscrizione correnti come file CSV. Nel portale Sottoscrizioni di Visual Studio di amministrazione è possibile esportare un elenco dei sottoscrittori e informazioni dettagliate sulle relative assegnazioni. 
@@ -57,7 +57,7 @@ Per esportare le sottoscrizioni assegnate:
 3. Un file CSV verrà scaricato nel computer. Il nome del file rifletterà il nome e il tipo del contratto corrente e la data di creazione del file.  
 
    > [!div class="mx-imgBorder"]
-   > ![Esportare sottoscrittori](_img/exporting-subscriptions/exporting-subscriptions.png "Screenshot che mostra il pulsante Esporta per scaricare l'elenco delle sottoscrizioni assegnate.")
+   > ![Esportare sottoscrittori](_img/exporting-subscriptions/exporting-subscriptions.png "Screenshot che mostra il pulsante Esporta per scaricare l'elenco di sottoscrizioni assegnate.")
 
 ## <a name="prepare-your-subscription-list-for-upload-to-the-new-agreement"></a>Preparare l'elenco delle sottoscrizioni per il caricamento nel nuovo contratto
 Seguire questa procedura per aprire l'elenco delle sottoscrizioni esportate e spostare i dati rilevanti in un modello per il caricamento nel nuovo contratto:
@@ -86,7 +86,7 @@ Seguire questa procedura per aprire l'elenco delle sottoscrizioni esportate e sp
       > [!div class="mx-imgBorder"]
       > ![Scegliere l'accordo](_img/migrate-subscriptions/choose-agreement.png "Screenshot che mostra l'elenco a discesa per la selezione del nuovo contratto.")
    1. Selezionare **Aggiungi** e quindi **Aggiungi in blocco.**
-   1. Verrà **Upload finestra di dialogo** più sottoscrittori.  
+   1. Verrà **Upload finestra di dialogo più sottoscrittori.**  
    1. Nel passaggio 2 selezionare il **collegamento Scarica** per scaricare il modello. 
       > [!div class="mx-imgBorder"]
       > ![Scaricare il modello di aggiunta in blocco](_img/migrate-subscriptions/download-template.png "Screenshot che mostra il pulsante Scarica.")
@@ -111,23 +111,23 @@ Seguire questa procedura per aprire l'elenco delle sottoscrizioni esportate e sp
    | GUID della sottoscrizione          | GUID della sottoscrizione  |
 
    > [!TIP]
-   > Se si hanno molti sottoscrittori, può essere utile usare i tasti di scelta rapida quando si copiano e incollano i dati. Per selezionare tutte le voci in una colonna come Nome Sottoscrittore, selezionare la prima voce nella colonna (non l'intestazione di colonna), premere **CTRL+MAIUSC** e quindi premere freccia GIÙ. Verranno selezionati tutti i dati nella colonna.  
+   > Se si hanno molti sottoscrittori, può essere utile usare i tasti di scelta rapida quando si copiano e incollano i dati. Per selezionare tutte le voci in una colonna come Nome sottoscrittore, selezionare la prima voce nella colonna (non l'intestazione di colonna), selezionare e tenere premuto **CTRL+MAIUSC** e quindi premere freccia GIÙ. Verranno selezionati tutti i dati nella colonna.  
 
 4. Quando tutti i dati vengono spostati nel modello di aggiunta in blocco, salvare il modello e chiuderlo. Questo elenco è l'elenco di sottoscrizioni che verrà caricato nel nuovo contratto.
 
-## <a name="upload-your-subscription-list-to-the-new-agreement"></a>Upload l'elenco delle sottoscrizioni al nuovo contratto
-1.  Nel portale [di amministrazione,](https://manage.visualstudio.com)se la **finestra Upload più** sottoscrittori è ancora aperta, selezionare il **pulsante** Sfoglia. Passare al percorso in cui è stato salvato l'elenco delle sottoscrizioni, selezionarlo e quindi selezionare **Apri.**  
+## <a name="upload-your-subscription-list-to-the-new-agreement"></a>Upload'elenco delle sottoscrizioni al nuovo contratto
+1.  Nel portale [di amministrazione,](https://manage.visualstudio.com)se la finestra **Upload più** sottoscrittori è ancora aperta, selezionare il **pulsante** Sfoglia. Passare al percorso in cui è stato salvato l'elenco di sottoscrizioni, selezionarlo e quindi selezionare **Apri**. Se la finestra di dialogo non è aperta, scegliere **Aggiungi** e quindi selezionare **Aggiungi in blocco.**
     > [!div class="mx-imgBorder"]
-    > ![Sfogliare il modello](_img/migrate-subscriptions/browse-template.png "Screenshot che mostra il pulsante Sfoglia nella finestra Upload più sottoscrittori.")
-1. Il nome dell'elenco delle sottoscrizioni verrà visualizzato nella finestra **Upload più sottoscrittori.** Selezionare **OK** per caricare il file. 
+    > ![Sfoglia modello](_img/migrate-subscriptions/browse-template.png "Screenshot che mostra il pulsante Sfoglia nella finestra di dialogo Upload più sottoscrittori.")
+1. Il nome dell'elenco di sottoscrizioni verrà visualizzato nella finestra **Upload più sottoscrittori.** Selezionare **OK** per caricare il file. 
  
-   Nel portale di amministrazione potrebbe essere visualizzato brevemente un messaggio di stato che informa che è in corso il caricamento di un file. Al termine del caricamento, verrà visualizzato il messaggio Sottoscrittori **aggiornati correttamente.**
+   Nel portale di amministrazione potrebbe essere visualizzato brevemente un messaggio di stato che indica che è in corso il caricamento di un file. Al termine del caricamento, verrà visualizzato il messaggio **Sottoscrittori aggiornati correttamente.**
 La migrazione dei sottoscrittori dal contratto precedente a quello nuovo è stata completata.  
 > [!NOTE]
-> Dopo aver aggiunto i sottoscrittori al nuovo contratto, è necessario rimuoverli dal contratto precedente. La loro rimozione impedirà loro di ricevere notifiche relative alle sottoscrizioni precedente.
+> Dopo aver aggiunto i sottoscrittori al nuovo contratto, è necessario rimuoverli dal contratto precedente. La loro rimozione impedirà loro di ricevere notifiche sulle sottoscrizioni vecchie.
 
 ## <a name="resources"></a>Risorse
-- Per informazioni sulla gestione delle Visual Studio, vedere Supporto [Visual Studio sottoscrizioni](https://aka.ms/vsadminhelp).
+- Per informazioni sulla gestione delle Visual Studio, vedere supporto [Visual Studio sottoscrizione](https://aka.ms/vsadminhelp).
 
 ## <a name="see-also"></a>Vedi anche
 - [Visual Studio documentazione](/visualstudio/)
