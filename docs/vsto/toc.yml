@@ -38,6 +38,8 @@
               href: common-tasks-in-office-programming.md
             - name: Risorse aggiuntive per lo sviluppo di soluzioni Office
               href: additional-resources-for-developing-office-solutions.md
+            - name: Visual Studio Tools per Office Criteri del ciclo di vita di runtime
+              href: visual-studio-tools-for-office-runtime.md
         - name: Aggiornamento e migrazione di soluzioni Office
           items:
             - name: Aggiornamento e migrazione di soluzioni Office

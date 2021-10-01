@@ -1,7 +1,7 @@
 ---
 title: Creare un'app ASP.NET Core con Vue
 description: In questa esercitazione si crea un'app usando ASP.NET Core e Vue
-ms.date: 08/09/2021
+ms.date: 09/28/2021
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,16 +13,16 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 50ee00867e6729c269753edeb0cdfa44f3215c3f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 1a6c2fed5fdcbb10c186bc8f2d20b6e68e0a2c29
+ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126625757"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129339614"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>Esercitazione: Creare un'app ASP.NET Core con Vue in Visual Studio
 
-Questo articolo illustra come compilare un progetto ASP.NET Core per fungere da back-end api e come progetto Vue come interfaccia utente.
+Questo articolo illustra come compilare un progetto ASP.NET Core che funge da back-end API e un progetto Vue da fungere da interfaccia utente.
 
 Attualmente, Visual Studio include ASP.NET Core di applicazione a pagina singola che supportano Angular, React e Vue. I modelli forniscono una cartella app client predefinita nei progetti ASP.NET Core che contiene i file e le cartelle di base di ogni framework.
 
@@ -33,24 +33,24 @@ A partire Visual Studio 2022 Preview 2, è possibile usare il metodo descritto i
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Assicurarsi di avere installato quanto segue:
+Assicurarsi che siano installati gli elementi seguenti:
 
-- Visual Studio 2022 Preview 2 o versione successiva con il carico di **lavoro ASP.NET sviluppo** Web e web installato. Passare alla pagina [Visual Studio download per](https://visualstudio.microsoft.com/downloads/) installarlo gratuitamente.
-  Se è necessario installare il carico di lavoro ed è già Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
+- Visual Studio 2022 Preview 2 o versione successiva con il carico **ASP.NET di sviluppo Web** e web installato. Passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+  Se è necessario installare il carico di lavoro e si dispone già di Visual Studio, passare a Strumenti Ottieni strumenti e  >  **funzionalità...**, che apre il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 - npm ( [https://www.npmjs.com/](https://www.npmjs.com/) ) 
 - Interfaccia della riga di comando di Vue ( [https://cli.vuejs.org/](https://cli.vuejs.org/) )  
 
 ## <a name="create-the-frontend-app"></a>Creare l'app front-end
 
-1. Nella finestra di dialogo Project nuovo progetto selezionare **Crea un nuovo progetto**. 
+1. Nella finestra di dialogo Project nuovo progetto selezionare **Crea un nuovo progetto.** 
 
    :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="Creare un nuovo progetto":::
 
-1. Cercare Vue nella barra di ricerca nella parte superiore e quindi selezionare **Modello Vue JavaScript** autonomo o Modello **Vue TypeScript autonomo.**
+1. Cercare Vue nella barra di ricerca nella parte superiore e quindi selezionare **Standalone JavaScript Vue Template** (Modello JavaScript Vue autonomo) o **Standalone TypeScript Vue Template (Modello Vue TypeScript autonomo).**
 
    :::image type="content" source="media/vs-2022/vue-choose-template.png" alt-text="Scelta di un modello":::
 
-1. Assegnare un nome al progetto e alla soluzione. Quando si arriva alla **finestra Informazioni** aggiuntive, assicurarsi di selezionare l'opzione Aggiungi integrazione **per** API Web ASP.NET Project vuoto. Questa opzione aggiunge file al modello Vue in modo che possa essere collegato in un secondo momento con il ASP.NET Core progetto.
+1. Assegnare un nome al progetto e alla soluzione. Quando si arriva alla finestra **Informazioni aggiuntive,** assicurarsi di selezionare l'opzione Aggiungi integrazione per API Web ASP.NET Project **vuota.** Questa opzione aggiunge file al modello Vue in modo che possa essere associato in un secondo momento al ASP.NET Core progetto.
 
    :::image type="content" source="media/vs-2022/asp-net-core-vue-additional-info.png" alt-text="Informazioni aggiuntive":::
 
@@ -63,31 +63,46 @@ Dopo aver creato il progetto, vengono visualizzati alcuni file nuovi e modificat
 
 ## <a name="create-the-backend-app"></a>Creare l'app back-end
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nome della soluzione, passare il puntatore del mouse su Aggiungi **e** **quindi scegliere Nuovo Project**. 
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nome della soluzione, passare il mouse su Aggiungi **e** quindi **selezionare Project**. 
 
    :::image type="content" source="media/vs-2022/asp-net-core-add-project.png" alt-text="Aggiungere un nuovo progetto":::
 
 1. Cercare e selezionare il progetto ASP.NET Core'API Web.
  
-   :::image type="content" source="media/vs-2022/asp-net-core-choose-web-api-template.png" alt-text="Scegliere il modello api Web":::
+   :::image type="content" source="media/vs-2022/asp-net-core-choose-web-api-template.png" alt-text="Scegliere il modello API Web":::
 
 1. Assegnare un nome al progetto e alla soluzione. Quando si arriva alla **finestra Informazioni** aggiuntive, selezionare **.NET 6.0** come framework di destinazione.
 
    Dopo aver creato il progetto, Esplora soluzioni dovrebbe essere simile al seguente:
 
-   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-solution-explorer.png" alt-text="Esaminare i Esplora soluzioni":::
+   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-solution-explorer.png" alt-text="Diamo un'occhiata Esplora soluzioni":::
+
+1. Aprire dalla cartella Proprietà e nella sezione profili per l'app back-end impostare le porte predefinite su `launchSettings.json` 5001 e 5003. 
+
+   ```json
+   "profiles": {
+     "yourbackendapp": {
+       "commandName": "Project",
+       "launchUrl": "swagger",
+       "environmentVariables": {
+         "ASPNETCORE_ENVIRONMENT": "Development"
+       },
+       "applicationUrl": "https://localhost:5001;http://localhost:5003",
+       "dotnetRunMessages": true
+     },
+   ```
 
 ## <a name="set-the-project-properties"></a>Impostare le proprietà del progetto
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul ASP.NET Core progetto e scegliere **Proprietà**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse ASP.NET Core progetto e scegliere **Proprietà.**
 
    :::image type="content" source="media/vs-2022/asp-net-core-project-properties.png" alt-text="Aprire le proprietà del progetto"::: 
  
-1. Passare al menu Debug e selezionare l'opzione **Apri profili di avvio debug dell'interfaccia** utente. Deselezionare **l'opzione Avvia browser.**
+1. Passare al menu Debug e selezionare l'opzione **Open debug launch profiles UI (Apri profili di avvio debug dell'interfaccia** utente). Deselezionare **l'opzione Avvia browser.**
 
-   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-deselect-launch-browser.png" alt-text="Aprire l'interfaccia utente dei profili di avvio di debug"::: 
+   :::image type="content" source="media/vs-2022/asp-net-core-with-vue-deselect-launch-browser.png" alt-text="Aprire l'interfaccia utente dei profili di avvio del debug"::: 
 
-1. Fare quindi clic con il pulsante destro del mouse sul progetto Vue e **scegliere** il menu Proprietà e passare alla **sezione** Debug. Modificare debugger per avviare l'opzione **launch.json.**
+1. Fare quindi clic con il pulsante destro del mouse sul progetto Vue, **scegliere** il menu Proprietà e passare alla **sezione** Debug. Modificare debugger per l'avvio con **l'opzione launch.json.**
  
    :::image type="content" source="media/vs-2022/asp-net-core-with-vue-choose-debugger.png" alt-text="Scegliere il debugger (launch.json)":::
 
@@ -95,7 +110,7 @@ Dopo aver creato il progetto, vengono visualizzati alcuni file nuovi e modificat
 
 1. Fare clic con il pulsante destro del mouse sulla soluzione e **scegliere Imposta avvio Project**. Modificare il progetto di avvio da Progetto di avvio singolo a **Progetti di avvio multipli**. Selezionare **Avvia** per ogni azione del progetto.
   
-1. Selezionare quindi il progetto back-end e spostarlo sopra il front-end, in modo da avviarlo per primo.
+1. Selezionare quindi il progetto back-end e spostarlo sopra il front-end, in modo che sia avviato per primo.
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-vue-set-first-project.png" alt-text="Scegliere il primo progetto di avvio":::
 
@@ -103,10 +118,10 @@ Dopo aver creato il progetto, vengono visualizzati alcuni file nuovi e modificat
 
 Premere **F5** o selezionare il **pulsante Avvia** nella parte superiore della finestra. Verranno visualizzati due prompt dei comandi:
 
-- Progetto api ASP.NET Core in esecuzione
+- Progetto API ASP.NET Core in esecuzione
 - L'interfaccia della riga di comando di Vue che esegue il comando vue-cli-service serve
 
-Verrà visualizzata un'app Vue popolata tramite l'API.
+Dovrebbe essere visualizzata un'app Vue popolata tramite l'API.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -116,4 +131,4 @@ Può essere visualizzato l'errore seguente:
 [HPM] Error occurred while trying to proxy request /weatherforecast from localhost:4200 to https://localhost:5001 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
 ```
 
-Se viene visualizzato questo problema, molto probabilmente il front-end è stato avviato prima del back-end. Dopo aver visualizzato il prompt dei comandi back-end in esecuzione, è sufficiente aggiornare l'app Vue nel browser.
+Se si verifica questo problema, molto probabilmente il front-end è stato avviato prima del back-end. Quando il prompt dei comandi back-end è in esecuzione, è sufficiente aggiornare l'app Vue nel browser.

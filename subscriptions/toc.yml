@@ -198,6 +198,8 @@
           href: admin-expiration.md
         - name: Sottoscrizioni scadute
           href: handle-expired-license.md
+        - name: Sottoscrizioni rimosse da Microsoft
+          href: account-removed.md
         - name: 'Scenari di accesso del sottoscrittore  '
           href: aliasing.md
         - name: Sottoscrittori con accesso tramite posta elettronica personale

@@ -168,7 +168,7 @@
   items:
     - name: C++ >>
       href: /cpp/get-started/tutorial-console-cpp
-    - name: C#  >>
+    - name: C#   >>
       href: get-started/csharp/
     - name: Visual Basic  >>
       href: get-started/visual-basic/
@@ -176,7 +176,7 @@
       href: javascript/
     - name: Python  >>
       href: python/
-    - name: F#   >>
+    - name: F#  >>
       href: /dotnet/fsharp/
 - name: Sviluppo
   items:
@@ -194,10 +194,8 @@
           href: ide/create-new-project.md
         - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
-        - name: Aprire un progetto da un Visual Studio 2017
-          href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Aprire un progetto da un Visual Studio 2019
-          href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
+        - name: Aprire un progetto da un repository
+          href: get-started/tutorial-open-project-from-repo.md
         - name: 'Portabilità, migrazione e aggiornamento dei progetti'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
         - name: Informazioni sulle Esplora soluzioni
@@ -1460,7 +1458,7 @@
           href: ide/diagnostic-data-collection.md
     - name: Esperienze connesse in Visual Studio
       href: ide/reference/connected-experiences.md
-    - name: Risoluzione degli errori dell'IDE
+    - name: Risoluzione degli errori IDE
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: Invia commenti
   items:
