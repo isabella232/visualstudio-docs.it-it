@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ab809ea4aced244ecccd2ba04e7e3f0dbbda162
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ca3ba908b8127c92d181276c7d3b0ff6cb5fc72d
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106874"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430495"
 ---
 # <a name="install-python-interpreters"></a>Installare interpreti Python
 
@@ -28,9 +28,14 @@ In alternativa, è possibile installare gli interpreti Python standard dalla fin
 
 È anche possibile installare manualmente uno qualsiasi degli interpreti elencati nella tabella riportata di seguito al di fuori del programma di installazione di Visual Studio. Ad esempio, se Anaconda 3 è stato installato prima di installare Visual Studio, non è necessario eseguire nuovamente l'installazione tramite il programma di installazione di Visual Studio. È anche possibile installare un interprete manualmente se, ad esempio, è disponibile una versione più recente che ancora non è visualizzata nel programma di installazione di Visual Studio.
 
-::: moniker range=">=vs-2019"
+::: moniker range="<=vs-2017"
 > [!Note]
 > Visual Studio supporta Python versione 2.7, nonché dalla versione 3.5 alla 3.7. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare.
+::: moniker-end
+
+::: moniker range=">vs-2017"
+> [!Note]
+> Visual Studio supporta Python versione 3.7. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare.
 ::: moniker-end
 
 Per **Visual Studio 2015 e versioni precedenti** è necessario installare manualmente uno degli interpreti.

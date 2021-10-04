@@ -1,9 +1,9 @@
 ---
 title: Visual Studio supporto per FIPS
 titleSuffix: ''
-description: Informazioni su come Visual Studio supporta la modalità Federal Information Processing Standard di funzionamento approvata dalla pubblicazione 140-2 per Windows, Azure e .NET.
+description: Informazioni su come Visual Studio la modalità di funzionamento approvata Federal Information Processing Standard publication 140-2 per Windows, Azure e .NET.
 ms.custom: SEO-VS-2020
-ms.date: 04/14/2020
+ms.date: 10/01/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a7737bb1f0e2d38dea828a3f3191fd3d651657
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 9e0e1200d01a7cec8524dacb0232b3f2fed44f3a
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126634468"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431536"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Visual Studio supporto per la modalità di funzionamento approvata FIPS 140-2
 
-A partire dalla [versione 16.4,](/visualstudio/releases/2019/release-notes-v16.4/)Visual Studio 2019 supporta la modalità di funzionamento approvata dalla pubblicazione 140-2 di Federal Information Processing Standard (FIPS) per Windows, Azure e .NET. Con la [versione 16.5,](/visualstudio/releases/2019/release-notes-archive-v16.5)Visual Studio supporta ora la modalità di funzionamento approvata FIPS 140-2 quando si sviluppano applicazioni [C++](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)che hanno come destinazione un sistema Linux remoto.
+A partire dalla [versione 16.4,](/visualstudio/releases/2019/release-notes-v16.4/)Visual Studio 2019 supporta la modalità di funzionamento approvata dalla pubblicazione 140-2 di Federal Information Processing Standard (FIPS) per Windows, Azure e .NET. Con la [versione 16.5,](/visualstudio/releases/2019/release-notes-v16.5)Visual Studio supporta ora la modalità di funzionamento approvata FIPS 140-2 quando si sviluppano applicazioni [C++](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)che hanno come destinazione un sistema Linux remoto.
 
 Per configurare la modalità di funzionamento approvata da FIPS 140-2 per Visual Studio, installare [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) e quindi abilitare l'impostazione Criteri di gruppo Crittografia sistema: Usare algoritmi conformi a FIPS per **crittografia, hash e firma.**
 

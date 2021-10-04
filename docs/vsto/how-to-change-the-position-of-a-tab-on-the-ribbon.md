@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Modificare la posizione di una scheda sulla barra multifunzione'
-description: È possibile modificare l'ordine delle schede personalizzate in una barra multifunzione e posizionare le schede personalizzate prima o dopo una scheda incorporata nella barra multifunzione usando l'editor della raccolta schede.
+description: È possibile modificare l'ordine delle schede personalizzate in una barra multifunzione e posizionare le schede personalizzate prima o dopo una scheda incorporata sulla barra multifunzione usando l'editor della raccolta schede.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 93ce719b8db2280029ad4302adb2afc1e08140de
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3bad3a0de3d63ff911818e885ad5bb7bf697ca43
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106341"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430841"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Procedura: Modificare la posizione di una scheda sulla barra multifunzione
   È possibile modificare l'ordine delle schede personalizzate in una barra multifunzione usando **l'Editor raccolta schede**. È possibile posizionare schede personalizzate prima o dopo una scheda incorporata sulla barra multifunzione. Una scheda incorporata è una scheda già presente nella barra multifunzione di un Microsoft Office app. Ad esempio, la **scheda** Dati è una scheda predefinita in Excel.
@@ -57,7 +57,7 @@ ms.locfileid: "122106341"
 
 5. Impostare la **proprietà OfficeId** sull'ID di controllo di una scheda predefinita.
 
-     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=6627).
+     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=50745).
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)

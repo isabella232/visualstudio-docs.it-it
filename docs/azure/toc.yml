@@ -9,11 +9,11 @@
     - name: Distribuire un'app Web .NET TODO List in Azure
       href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet&preserve-view=true
     - name: Distribuzione continua in Azure con Visual Studio e Git con ASP.NET Core
-      href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1&preserve-view=true
+      href: /azure/app-service/deploy-continuous-deployment
     - name: Distribuzione continua in Azure con Azure Pipelines
       href: /azure/devops/pipelines/get-started-yaml?view=vsts&preserve-view=true
     - name: Distribuire un'app Web ASP.NET in una macchina virtuale di Azure
-      href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+      href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Connettersi ai servizi di Azure
   expanded: false
   items:

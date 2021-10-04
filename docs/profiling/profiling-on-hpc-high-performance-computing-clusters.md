@@ -1,6 +1,6 @@
 ---
 title: Profilatura su cluster HPC (High Performance Computing) | Microsoft Docs
-description: Informazioni su come eseguire la profilatura nei nodi di calcolo dei cluster HPC di Microsoft Windows usando il metodo di campionamento del Visual Studio Strumenti di profilatura.
+description: Informazioni su come eseguire la profilatura nei nodi di calcolo di microsoft Windows cluster HPC usando il metodo di campionamento del Visual Studio Strumenti di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +22,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6356a2a89fa78d02fb3f7196abd190ba12676e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0ddeb3271bbd0ddd9a31375d820fa0661fc7b9ad
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054561"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431380"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
 
@@ -37,7 +37,7 @@ ms.locfileid: "122054561"
 
 Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le operazioni seguenti:
 
-- Installare Microsoft HPC Pack 2008 nello stesso computer di Visual Studio. Il computer non deve far parte del cluster HPC. È possibile installare HPC Pack nell'[Area download Microsoft](https://www.microsoft.com/download/details.aspx?id=4812).
+- Installare Microsoft HPC Pack 2008 nello stesso computer di Visual Studio. Il computer non deve far parte del cluster HPC. È possibile installare HPC Pack nell'[Area download Microsoft](https://www.microsoft.com/download/details.aspx?id=58506).
 
 - Installare .NET Framework 4 e la versione autonoma degli strumenti di profilatura sul nodo di calcolo HPC. I programmi di installazione per .NET Framework e per il profiler autonomo sono disponibili nel supporto di installazione di Visual Studio. **Nota** È necessario riavviare il computer dopo aver installato .NET Framework e prima di installare gli strumenti di profilatura.
 
@@ -49,7 +49,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 

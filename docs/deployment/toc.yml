@@ -39,7 +39,7 @@
         - name: Importare impostazioni di pubblicazione e distribuzione in Azure
           href: tutorial-import-publish-settings-azure.md
         - name: Distribuzione continua di ASP.NET Core in Azure con Git >>
-          href: /aspnet/core/publishing/azure-continuous-deployment
+          href: /azure/app-service/deploy-continuous-deployment
     - name: C++
       items:
         - name: Creare un pacchetto di installazione

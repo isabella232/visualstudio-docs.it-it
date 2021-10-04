@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: d2f90c7b1a5b389243bf91ff46aa6892689bf17c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a6fe465c064239c66fe88b9e49b8950604f614ec
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126633276"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430573"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Aggiungere Azure SignalR usando Visual Studio Servizi connessi
 
@@ -23,10 +23,10 @@ Con Visual Studio, è possibile connettere uno degli elementi seguenti al serviz
 - .NET Framework app console
 - ASP.NET MVC (.NET Framework) 
 - ASP.NET Core
-- .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
+- .NET Core (inclusi app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App universal Windows Platform
+- App universal Windows platform
 - Xamarin
 - Cordova
 
@@ -43,7 +43,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro **del mouse sul** nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro **del** mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
 1. Nella scheda **Servizi connessi** selezionare l'icona + per **Dipendenze servizio**.
 
@@ -53,7 +53,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
     ![Aggiungere Servizio Azure SignalR](./media/azure-signalr-add-connected-service/add-signalr-service.png)
 
-    Se non è già stato eseguito l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/account/free)
+    Se non è già stato eseguito l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/free/)
 
 1. Nella schermata **Configura Azure SignalR** selezionare un componente Azure SignalR esistente e selezionare **Avanti.**
 

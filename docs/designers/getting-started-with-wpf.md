@@ -2,7 +2,7 @@
 title: Cos'è WPF?
 description: Introduzione a Windows Presentation Foundation, un framework per la creazione di applicazioni client desktop che supporta un'ampia gamma di funzionalità di sviluppo.
 ms.custom: SEO-VS-2020
-ms.date: 04/16/2018
+ms.date: 10/30/2020
 ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: TerryGLee
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc7e0149dcae4e1410239fb30d4db70090c9610
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5cf2babadfb976f6f1b5fa4b801f330babb733f4
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104885"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431549"
 ---
 # <a name="get-started-with-wpf"></a>Guida introduttiva a WPF
 

@@ -1,6 +1,6 @@
 ---
 title: Uso del Microsoft Monitoring Agent | Microsoft Docs
-description: Usare Microsoft Monitoring Agent per monitorare ASP.NET app Web e SharePoint 2010 e 2013 per errori, problemi di prestazioni e altri problemi.
+description: Usare Microsoft Monitoring Agent per monitorare le ASP.NET Web e le applicazioni SharePoint 2010 e 2013, per errori, problemi di prestazioni e altri problemi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 759020b393568147bc4d74273b2c302ae0762e47
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a9bd9ab39668b3df63c2bd35ab6f544eab7053a7
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126636531"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431606"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Uso del Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -53,7 +53,7 @@ ms.locfileid: "126636531"
 
     - Qualsiasi versione precedente di Microsoft Monitoring Agent è stata disinstallata.
 
-2. [Scaricare la versione gratuita di Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316)a 32 bit ( **MMASetup-i386.exe** ) o a 64 bit ( **MMASetup-AMD64.exe**) dall'Area download Microsoft nel server Web.
+2. [Scaricare la versione gratuita di Microsoft Monitoring Agent](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2015-and-other-products)a 32 bit ( **MMASetup-i386.exe** ) o a 64 bit ( **MMASetup-AMD64.exe**) dall'Area download Microsoft nel server Web.
 
 3. Per avviare l'installazione guidata eseguire il file eseguibile scaricato.
 
@@ -68,7 +68,7 @@ ms.locfileid: "126636531"
 
 ### <a name="q--a"></a>Domande e risposte
 
-#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a>D: Cosa succede se si ha Windows PowerShell 2.0?
+#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a>D: Cosa succede se è Windows PowerShell 2.0?
  **R:** Si consiglia di usare PowerShell 3.0. In caso contrario, sarà necessario importare i cmdlet di PowerShell di Microsoft Monitoring Agent ogni volta che si esegue PowerShell. Non sarà neanche possibile accedere al contenuto scaricabile della Guida.
 
 1. Aprire una finestra del prompt dei comandi **Windows PowerShell ISE** o **Windows PowerShell** come amministratore.
@@ -79,7 +79,7 @@ ms.locfileid: "126636531"
 
 3. [Visitare TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) per ottenere il contenuto della Guida più recente.
 
-#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> D: Ricerca per categorie le autorizzazioni per il pool di applicazioni?
+#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> D: Ricerca per categorie configurare le autorizzazioni per il pool di applicazioni?
  **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Ad esempio:
 
 - Per configurare le autorizzazioni con il comando Windows **icacls** :
@@ -115,13 +115,13 @@ ms.locfileid: "126636531"
 
 1. Nel server Web aprire una finestra del prompt dei comandi di **Windows PowerShell** o **Windows PowerShell ISE** come amministratore.
 
-     ![Aprire Windows PowerShell amministratore](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
+     ![Aprire Windows PowerShell come amministratore](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
 
 2. Eseguire il comando [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) per avviare il monitoraggio dell'applicazione. In questo modo verranno riavviate tutte le applicazioni Web nel server Web.
 
      Di seguito è riportata la sintassi breve:
 
-     **Start-WebApplicationMonitoring** *" " \<appName> "* " " *\<monitoringMode>* *\<outputPath> "* " *\<UInt32>* *\<collectionPlanPathAndFileName> "*
+     **Start-WebApplicationMonitoring** *" \<appName> "* *\<monitoringMode>* *" \<outputPath> "* *\<UInt32>* *" \<collectionPlanPathAndFileName> "*
 
      Di seguito è riportato un esempio che usa solo il nome dell'applicazione Web e la modalità **Monitor** semplice:
 
@@ -154,7 +154,7 @@ ms.locfileid: "126636531"
 
 - Per le applicazioni Web e SharePoint, l'agente registra i dati per ogni applicazione in cui è condiviso il pool di applicazioni specificato. Ciò potrebbe rallentare qualsiasi applicazione in cui è condiviso lo stesso pool di applicazioni, anche se è possibile limitare la raccolta ai moduli per una singola applicazione. Per evitare di rallentare le altre applicazioni, inserire ogni applicazione nel proprio pool di applicazioni.
 
-- Rivedere gli eventi per i quali l'agente raccoglie i dati nel piano di raccolta. Modificare il piano di raccolta per disabilitare gli eventi non rilevanti o interessanti. Ciò può migliorare le prestazioni di avvio e le prestazioni in fase di esecuzione.
+- Rivedere gli eventi per i quali l'agente raccoglie i dati nel piano di raccolta. Modificare il piano di raccolta per disabilitare gli eventi non rilevanti o interessanti. Ciò può migliorare le prestazioni di avvio e di esecuzione.
 
    Per disabilitare un evento, impostare l'attributo `enabled` per l'elemento `<DiagnosticEventSpecification>` su `false`:
 

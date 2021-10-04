@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a93abff7aa65e61830065c3217fb0fb4b37bd93a
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: dc72adf4c0e55736a61349ae1164aa852f123dd9
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126637019"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430880"
 ---
 # <a name="debug-python-and-c-together"></a>Debug contemporaneo di codice Python e C++
 
@@ -37,7 +37,7 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
 
 ![Debug in modalità mista per Python in Visual Studio](media/mixed-mode-debugging.png)
 
-![icona della fotocamera del film per il video](../install/media/video-icon.png "Guardare un video") Per un'introduzione alla compilazione, al test e al debug di moduli C nativi con Visual Studio, vedere [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: Creare moduli nativi youtube.com, 9m 09s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017.
+![icona della fotocamera del film per il video](../install/media/video-icon.png "Guardare un video") Per un'introduzione alla compilazione, al test e al debug di moduli C nativi con Visual Studio, vedere [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: creare moduli nativi) (youtube.com, 9m 09s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017.
 
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Abilitare il debug in modalità mista in un progetto Python
@@ -47,9 +47,9 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
     ![Abilitazione del debug di codice nativo](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > Quando si abilita il debug del codice nativo, la finestra di output python potrebbe scomparire immediatamente al termine del programma senza fornire il consueto premere un tasto qualsiasi **per continuare a sospendere.** Per forzare una sospensione, aggiungere l'opzione al campo Esegui argomenti interprete nella scheda Debug quando `-i` si abilita il debug del codice   >   nativo.  Questo argomento imposta l'interprete Python in modalità interattiva al termine del codice, a quel punto attende di premere **CTRL** + **Z**  >  **INVIO** per uscire.
+    > Quando si abilita il debug del codice nativo, la finestra di output di Python potrebbe scomparire immediatamente al termine del programma senza fornire la consueta pressione di un tasto qualsiasi **per continuare la** sospensione. Per forzare una sospensione, aggiungere l'opzione al campo Esegui argomenti interprete nella scheda Debug quando `-i` si abilita il debug del codice   >   nativo.  Questo argomento attiva la modalità interattiva dell'interprete Python al termine del codice e attende che l'utente premo **CTRL** + **Z**  >  **INVIO** per uscire.
 
-1. Quando si collega il debugger in modalità mista a un processo esistente (**Debug** collegamento a processo ), usare il pulsante Seleziona per aprire la  >  finestra di dialogo Seleziona tipo **di** codice.  Impostare quindi l'opzione **Esegui il debug di questi tipi di codice** e selezionare sia **Nativo** che **Python** nell'elenco:
+1. Quando si collega il debugger in modalità mista a un processo esistente **(Debug** connessione a processo ), usare il pulsante Seleziona per aprire la  >  finestra di dialogo Seleziona **tipo di** codice.  Impostare quindi l'opzione **Esegui il debug di questi tipi di codice** e selezionare sia **Nativo** che **Python** nell'elenco:
 
     ![Selezione dei tipi di codice nativo e Python](media/mixed-mode-debugging-code-type.png)
 
@@ -65,13 +65,13 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
 
 Visual Studio (2017 versione 15.5 e successive) supporta il debug in modalità mista da un progetto C/C++, ad esempio quando si [incorpora codice Python in un'altra applicazione come descritto in python.org](https://docs.python.org/3/extending/embedding.html). Per abilitare il debug in modalità mista, configurare il progetto C/C++ per avviare il **Debug Python/nativo**:
 
-1. Fare clic con il pulsante destro del mouse sul progetto C/C++ in **Esplora soluzioni** e scegliere **Proprietà**.
+1. Fare clic con il pulsante destro del mouse sul **progetto** C/C++ Esplora soluzioni e **scegliere Proprietà.**
 1. Selezionare la scheda **Debug**, selezionare **Debug Python/nativo** in **Debugger da avviare** e selezionare **OK**.
 
     ![Selezione del debugger Python/nativo in un progetto C/C++](media/mixed-mode-debugging-select-cpp-debugger.png)
 
 > [!Note]
-> Se non è possibile selezionare **Python/Debug** nativo, è prima necessario installare gli strumenti di sviluppo nativi **Python** usando il programma di installazione di Visual Studio. È possibile trovarlo come opzione nel carico di lavoro sviluppo Python. Per altre informazioni, vedere [How to install Python support in Visual Studio on Windows](installing-python-support-in-visual-studio.md).
+> Se non è possibile selezionare **Python/Debug** nativo, è prima necessario installare gli strumenti di sviluppo nativi **Python** usando il programma di installazione di Visual Studio. È possibile trovarlo come opzione nel carico di lavoro Sviluppo Python. Per altre informazioni, vedere [Come installare il supporto python in Visual Studio in Windows](installing-python-support-in-visual-studio.md).
 
 Quando si usa questo metodo, tenere presente che non è possibile eseguire il debug dell'utilità di avvio di *py.exe* stessa poiché genera un processo figlio *python.exe* a cui non verrà collegato il debugger. Se si vuole avviare *python.exe* direttamente con argomenti, modificare l'opzione **Comando** nelle proprietà **Debug Python/nativo** (illustrate nella figura precedente) per specificare il percorso completo di *python.exe*, quindi specificare gli argomenti in **Argomenti del comando**.
 
@@ -79,8 +79,8 @@ Quando si usa questo metodo, tenere presente che non è possibile eseguire il de
 
 Per tutte le versioni precedenti di Visual Studio, il debug in modalità mista diretto viene abilitato solo quando si avvia un progetto Python in Visual Studio, perché i progetti C/C++ usano solo il debugger nativo. È comunque possibile collegare il debugger separatamente:
 
-1. Avviare il progetto C++ senza eseguire il debug (**Avvia** debug  >  **senza debug** o **CTRL** + **F5**).
-1. Selezionare **Esegui debug** connessione a  >  **processo**. Nella finestra di dialogo visualizzata selezionare il processo appropriato, quindi usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice** in cui è possibile selezionare **Python**:
+1. Avviare il progetto C++ senza eseguire debug (**Debug**  >  **Avvia senza eseguire** debug o **CTRL** + **F5).**
+1. Selezionare **Debug**  >  **Attach to Process (Esegui debug connessione a processo).** Nella finestra di dialogo visualizzata selezionare il processo appropriato, quindi usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice** in cui è possibile selezionare **Python**:
 
     ![Selezione di Python come tipo di debug quando si allega un debugger](media/mixed-mode-debugging-attach-type.png)
 
@@ -96,7 +96,7 @@ Per tutte le versioni precedenti di Visual Studio, il debug in modalità mista d
 
 ### <a name="combined-call-stack"></a>Stack di chiamate combinato
 
-La **finestra Stack di** chiamate mostra gli stack frame nativi e Python interleaved, con transizioni contrassegnate tra i due elementi:
+La **finestra Stack di** chiamate mostra gli stack frame nativi e Python con interfoliazione, con transizioni contrassegnate tra i due elementi:
 
 ![Stack di chiamate combinato con debug in modalità mista](media/mixed-mode-debugging-call-stack.png)
 
@@ -110,7 +110,7 @@ Quando si usano i comandi **Esegui istruzione** (**F11**) o **Esci da istruzione
 
 ### <a name="pyobject-values-view-in-native-code"></a>Visualizzazione di valori PyObject nel codice nativo
 
-Quando un frame nativo (C o C++) è attivo, le variabili locali vengono mostrate nella finestra Variabili locali **del** debugger. Nei moduli di estensione Python nativi, molte di queste variabili sono di tipo `PyObject` (ovvero un typedef per `_object`) o di alcuni altri tipi di Python fondamentali (vedere l'elenco riportato di seguito). Nel debug in modalità mista, questi valori presentano un nodo figlio aggiuntivo con etichetta **[visualizzazione Python]**. Quando viene espanso, questo nodo illustra la rappresentazione Python della variabile, identica a quella che si vedrebbe se in un frame Python fosse presente una variabile locale che fa riferimento allo stesso oggetto. Gli elementi figlio di questo nodo sono modificabili.
+Quando è attivo un frame nativo (C o C++), le relative variabili locali vengono mostrate nella **finestra Variabili locali del** debugger. Nei moduli di estensione Python nativi, molte di queste variabili sono di tipo `PyObject` (ovvero un typedef per `_object`) o di alcuni altri tipi di Python fondamentali (vedere l'elenco riportato di seguito). Nel debug in modalità mista, questi valori presentano un nodo figlio aggiuntivo con **etichetta [visualizzazione Python]**. Quando viene espanso, questo nodo illustra la rappresentazione Python della variabile, identica a quella che si vedrebbe se in un frame Python fosse presente una variabile locale che fa riferimento allo stesso oggetto. Gli elementi figlio di questo nodo sono modificabili.
 
 ![Visualizzazione Python nella finestra Variabili locali](media/mixed-mode-debugging-python-view.png)
 
@@ -118,7 +118,7 @@ Per disabilitare questa funzionalità, fare clic con il pulsante destro del mous
 
 ![Abilitazione della visualizzazione Python nella finestra Variabili locali](media/mixed-mode-debugging-enable-python-view.png)
 
-Tipi C che mostrano **nodi [visualizzazione Python]** (se abilitati):
+Tipi C che mostrano **i nodi [visualizzazione Python]** (se abilitati):
 
 - `PyObject`
 - `PyVarObject`
@@ -135,11 +135,15 @@ Tipi C che mostrano **nodi [visualizzazione Python]** (se abilitati):
 - `PyStringObject`
 - `PyUnicodeObject`
 
-**[Visualizzazione Python]** non viene visualizzato automaticamente per i tipi creati dall'utente. Quando si creano estensioni per Python 3.x, questa mancanza in genere non rappresenta un problema perché qualsiasi oggetto ha in definitiva un campo di uno dei tipi precedenti, che fa sì che venga visualizzata `ob_base` **la [visualizzazione Python].**
+**[Visualizzazione Python]** non viene visualizzato automaticamente per i tipi creati dall'utente. Durante la creazione di estensioni per Python 3.x, questa mancanza non rappresenta in genere un problema perché qualsiasi oggetto ha in definitiva un campo di uno dei tipi precedenti, che fa sì che venga visualizzata `ob_base` **la [visualizzazione Python].**
+
+::: moniker range="<=vs-2017"
 
 Per Python 2. x, tuttavia, ogni tipo di oggetto dichiara in genere l'intestazione come raccolta di campi inline e non esiste alcuna associazione tra i tipi personalizzati creati e `PyObject` a livello del sistema dei tipi nel codice C/C++. Per abilitare i nodi **[Visualizzazione Python]** per questi tipi personalizzati, modificare il file *PythonDkm.natvis* nella [directory di installazione di Python Tools](installing-python-support-in-visual-studio.md#install-locations) e aggiungere un altro elemento nel codice XML per lo struct C o la classe C++.
 
 Un'opzione alternativa (e migliore) consiste nel seguire la proposta [PEP 3123](https://www.python.org/dev/peps/pep-3123/) e usare un campo `PyObject ob_base;` esplicito invece di `PyObject_HEAD`, sebbene ciò non sia sempre possibile per motivi di compatibilità con le versioni precedenti.
+
+::: moniker-end
 
 ### <a name="native-values-view-in-python-code"></a>Visualizzazione di valori nativi nel codice Python
 
@@ -151,9 +155,9 @@ Il nodo **[Visualizzazione C++]** offre una rappresentazione della struttura C/C
 
 ![Visualizzazione C++ nella finestra Variabili locali](media/mixed-mode-debugging-cpp-view.png)
 
-Se un campo figlio di un oggetto è di tipo o uno degli altri tipi supportati, ha un nodo di rappresentazione `PyObject` **[visualizzazione Python]** (se queste rappresentazioni sono abilitate), rendendo possibile esplorare gli oggetti grafici in cui i collegamenti non sono esposti direttamente a Python.
+Se un campo figlio di un oggetto è di tipo o uno degli altri tipi supportati, ha un nodo di rappresentazione `PyObject` **[visualizzazione Python]** (se tali rappresentazioni sono abilitate), rendendo possibile esplorare gli oggetti grafici in cui i collegamenti non sono esposti direttamente a Python.
 
-A **differenza dei nodi [visualizzazione Python],** che usano i metadati dell'oggetto Python per determinare il tipo di oggetto, non esiste un meccanismo affidabile simile per **[visualizzazione C++]**. In termini generali, dato un valore Python, ovvero un riferimento a `PyObject`, non è possibile determinare in modo affidabile la struttura C/C++ sottostante. Il debugger in modalità mista tenta di dedurre il tipo esaminando i vari campi del tipo dell'oggetto (ad esempio `PyTypeObject` a cui fa riferimento il campo `ob_type` corrispondente) che hanno tipi di puntatore a funzione. Se uno di questi puntatori a funzione fa riferimento a una funzione che può essere risolta e tale funzione ha un parametro `self` con un tipo più specifico di `PyObject*`, si presuppone che tale tipo sia il tipo sottostante. Ad esempio, se `ob_type->tp_init` di un oggetto specificato fa riferimento alla funzione seguente:
+A **differenza dei nodi [visualizzazione Python],** che usano i metadati dell'oggetto Python per determinare il tipo dell'oggetto, non esiste un meccanismo affidabile simile per **[visualizzazione C++]**. In termini generali, dato un valore Python, ovvero un riferimento a `PyObject`, non è possibile determinare in modo affidabile la struttura C/C++ sottostante. Il debugger in modalità mista tenta di dedurre il tipo esaminando i vari campi del tipo dell'oggetto (ad esempio `PyTypeObject` a cui fa riferimento il campo `ob_type` corrispondente) che hanno tipi di puntatore a funzione. Se uno di questi puntatori a funzione fa riferimento a una funzione che può essere risolta e tale funzione ha un parametro `self` con un tipo più specifico di `PyObject*`, si presuppone che tale tipo sia il tipo sottostante. Ad esempio, se `ob_type->tp_init` di un oggetto specificato fa riferimento alla funzione seguente:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

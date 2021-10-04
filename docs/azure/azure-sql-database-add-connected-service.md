@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: f44eeb9017936dd28157a35ad7c911698400f00b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 231951c261f8a2df75c743ef9b6af96397520871
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126633252"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430586"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Aggiungere una connessione a database SQL di Azure
 
-Con Visual Studio, è possibile connettere uno degli elementi seguenti a database SQL di Azure usando la **Servizi connessi** funzionalità:
+Con Visual Studio, è possibile connettere uno degli elementi seguenti a database SQL di Azure usando la Servizi connessi **funzionalità:**
 
 - .NET Framework app console
 - ASP.NET MVC (.NET Framework) 
@@ -26,7 +26,7 @@ Con Visual Studio, è possibile connettere uno degli elementi seguenti a databas
 - .NET Core (tra cui app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App Windows Universal Platform
+- App Windows universali
 - Xamarin
 - Cordova
 
@@ -39,7 +39,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 - Visual Studio con il carico di lavoro di Azure installato.
 - Progetto di uno dei tipi supportati
 
-## <a name="connect-to-azure-sql-database-using-connected-services"></a>Connessione usare database SQL di Azure Servizi connessi
+## <a name="connect-to-azure-sql-database-using-connected-services"></a>Connessione da database SQL di Azure usando Servizi connessi
 
 1. Aprire il progetto in Visual Studio.
 
@@ -53,7 +53,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
     ![Aggiungere database SQL di Azure servizio](./media/azure-sql-database-add-connected-service/azure-sql-database.png)
 
-    Se non è già stato eseguito l'accesso, accedere all'account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/account/free)
+    Se non è già stato eseguito l'accesso, accedere all'account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/free/)
 
 1. Nella schermata **Configura database SQL di Azure** selezionare un database SQL di Azure esistente e selezionare **Avanti.**
 
@@ -71,7 +71,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    1. Quando viene **visualizzata la schermata Configura** database SQL di Azure database, il nuovo database viene visualizzato nell'elenco. Selezionare il nuovo database nell'elenco e selezionare **Avanti.**
 
-1. Immettere un nome di stringa di connessione o scegliere l'impostazione predefinita e scegliere se archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
+1. Immettere un nome di stringa di connessione o scegliere il valore predefinito e scegliere se archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
 
    ![Specificare la stringa di connessione](./media/azure-sql-database-add-connected-service/connection-string.png)
 

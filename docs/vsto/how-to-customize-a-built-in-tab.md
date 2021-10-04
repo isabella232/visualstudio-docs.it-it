@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ea01db137d7c1f6144f43e84f901e92702815fdf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c97f4b3ff73c0a41495832930611a483ec073872
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046880"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430802"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Procedura: Personalizzare una scheda incorporata
   È possibile aggiungere gruppi e controlli a una scheda incorporata. Una scheda incorporata è una scheda già presente nella barra multifunzione di un'Microsoft Office applicazione. Ad esempio, la **scheda** Dati è una scheda predefinita in Excel. Quando si crea un gruppo personalizzato, esso viene visualizzato per ultimo nella scheda, ma è possibile spostarlo in un punto qualsiasi della scheda.
@@ -33,12 +33,12 @@ ms.locfileid: "122046880"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Per aggiungere gruppi in una scheda incorporata
 
-1. Fare clic con il pulsante destro del mouse sul file di codice della **barra multifunzione Esplora soluzioni** e quindi scegliere **Progettazione visualizzazioni**.
+1. Fare clic con il pulsante destro del mouse sul file **di codice della barra multifunzione Esplora soluzioni** e quindi scegliere **Progettazione visualizzazioni**.
 
     > [!NOTE]
     > Se il file di codice della barra multifunzione non viene **visualizzato** Esplora soluzioni , è necessario aggiungere **un** elemento Barra multifunzione al progetto. Vedere [Procedura: Iniziare a personalizzare la barra multifunzione.](../vsto/how-to-get-started-customizing-the-ribbon.md)
 
-2. Fare clic con il pulsante destro del mouse su una scheda qualsiasi nella finestra di progettazione della barra multifunzione e quindi scegliere **Proprietà**.
+2. Fare clic con il pulsante destro del mouse su una scheda nella finestra di progettazione della barra multifunzione e quindi scegliere **Proprietà**.
 
 3. Nella finestra **Proprietà** espandere la **proprietà ControlId** e quindi impostare la **proprietà ControlIdType** **su Office**.
 
@@ -46,9 +46,9 @@ ms.locfileid: "122046880"
 
      L'ID di controllo è il nome che identifica in modo univoco le schede, i gruppi e i controlli incorporati nelle applicazioni Microsoft Office.
 
-     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=6627).
+     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=50745).
 
-5. Dalla scheda **Office Controlli barra** multifunzione della Casella degli **strumenti** trascinare i gruppi nella scheda .
+5. Dalla scheda **Office controlli barra** multifunzione della Casella degli **strumenti** trascinare i gruppi nella scheda .
 
     > [!NOTE]
     > I gruppi incorporati non sono visualizzati nella finestra di progettazione. Pertanto, l'unico modo per determinare se si sta lavorando con una scheda predefinita è esaminare la **proprietà ControlId** della scheda.
@@ -65,9 +65,9 @@ ms.locfileid: "122046880"
 
     - **AfterOfficeId** posiziona il gruppo dopo un gruppo predefinito specificato.
 
-4. Impostare la **proprietà OfficeId** sull'ID controllo di un gruppo predefinito.
+4. Impostare la **proprietà OfficeId** sull'ID di controllo di un gruppo predefinito.
 
-     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=6627).
+     Per un elenco degli ID di controllo, vedere Office [2010 help files: Office fluent user interface control identifiers](https://www.microsoft.com/download/details.aspx?id=50745).
 
 ## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)

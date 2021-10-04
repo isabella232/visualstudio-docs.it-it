@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 71ab67e5457d4616d9abbba0570443e6a1b2a817
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 454e2065068a4f79bff96776a050a43c049af5c3
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126628158"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431302"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Estendere test codificati dell'interfaccia utente e registrazioni delle azioni
 
@@ -27,7 +27,7 @@ Il framework di test per i test codificati dell'interfaccia utente e le registra
 
 ## <a name="sample-extension-to-test-microsoft-excel"></a>Estensione di esempio per il test di Microsoft Excel
 
-Questo [post di blog](/archive/blogs/gautamg/3-introducing-sample-excel-extension) contiene un collegamento a un'[estensione di esempio](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/09/94/38/24/ExcelPluginSample.zip) per il framework di test codificato dell'interfaccia utente. È anche possibile visualizzare l'intera [serie di post di blog per l'estendibilità dei test codificati dell'interfaccia utente](/archive/blogs/gautamg/series-on-coded-ui-test-extensibility).
+Questo [post di blog](/archive/blogs/gautamg/3-introducing-sample-excel-extension) contiene un collegamento a un'estensione di esempio per il framework di test codificato dell'interfaccia utente. È anche possibile visualizzare l'intera [serie di post di blog per l'estendibilità dei test codificati dell'interfaccia utente](/archive/blogs/gautamg/series-on-coded-ui-test-extensibility).
 
 > [!NOTE]
 > L'esempio è concepito per Microsoft Excel 2010. Può funzionare o meno con altre versioni di Excel.

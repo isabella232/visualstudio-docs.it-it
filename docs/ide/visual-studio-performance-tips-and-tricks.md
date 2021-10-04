@@ -2,7 +2,7 @@
 title: Suggerimenti per migliorare le prestazioni
 description: Informazioni su come ottimizzare Visual Studio funzionalità che potrebbero non essere in uso per migliorare le prestazioni.
 ms.custom: SEO-VS-2020
-ms.date: 03/02/2021
+ms.date: 10/01/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c57e489df355e399bc970549f0725a9c495f72
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: fd712091bc494d651cb4cd334325c83378048ae1
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126628475"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431341"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -29,6 +29,9 @@ I suggerimenti per le prestazioni di Visual Studio si riferiscono a situazioni d
 Se si aggiorna il sistema da una versione di Windows a 32 bit a una versione a 64 bit, espandere la quantità di memoria virtuale disponibile per Visual Studio da 2 a 4 GB. Ciò consente a Visual Studio di gestire carichi di lavoro di dimensioni notevolmente maggiori anche tramite il processo a 32 bit.
 
 Per altre informazioni, vedere i [limiti di memoria](/windows/desktop/Memory/memory-limits-for-windows-releases) e la pagina[Use /LARGEADDRESSAWARE on 64-bit Window](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) ( Uso di /LARGEADDRESSAWARE in Windows a 64 bit).
+
+> [!TIP]
+> Visual Studio 2022 in Windows è ora un'applicazione a 64 bit. Ciò significa che è possibile aprire, modificare, eseguire ed eseguire il debug anche delle soluzioni più grandi e complesse senza memoria insufficiente. Per altre informazioni, vedere i post di blog [Visual Studio 2022 vision](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/) (Visione di Visual Studio [2022) e Visual Studio 2022 Preview 1 (Anteprima 1).](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)
 
 ## <a name="disable-automatic-file-restore"></a>Disabilitare il ripristino automatico dei file
 
@@ -72,7 +75,7 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     È consigliabile disabilitare la profilatura della CPU dopo l'uso. Questa funzionalità può utilizzare grandi quantità di risorse. Dopo aver abilitato la profilatura della CPU, questo stato viene mantenuto per le sessioni di debug successive, perciò è preferibile disattivarla al termine. È possibile risparmiare risorse disabilitando gli strumenti di diagnostica durante il debug se la funzionalità offerte non sono necessarie.
 
-    Per disabilitare la **Strumenti di diagnostica**, avviare una sessione di debug, selezionare Strumenti  >  **Opzioni**  >  **Debug**  >  **Generale**,  quindi deselezionare l'opzione Strumenti di diagnostica durante il debug .
+    Per disabilitare la **Strumenti di diagnostica**, avviare una sessione di debug, selezionare Strumenti Opzioni Generale debug e deselezionare l'opzione  >    >    >  Strumenti di diagnostica **durante il** debug .
 
     Per altre informazioni, vedere [Strumenti di profilatura](../profiling/profiling-feature-tour.md).
 
@@ -146,13 +149,13 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
 - **Aggiungere file non tracciati al file con estensione gitignore locale**
 
-    Visual Studio esegue il comando Git con file non tracciati per offrire un'esperienza uniforme quando `git status` si aggiungono nuovi file a un repository. Quando è presente un numero elevato di file non tracciati, può `git status` utilizzare memoria aggiuntiva. Per ignorare questi file e migliorare le prestazioni di , è possibile aggiungere questi file o cartelle `git status` al file con estensione gitignore locale. Per accedere al file, passare a **Git**  >  **Impostazioni**  >  **Git Repository Impostazioni**. Quindi, nella **sezione File Git** fare clic su Aggiungi per creare  un file con estensione gitignore oppure fare clic su Modifica se ne è già presente uno. 
+    Visual Studio esegue il comando Git con file non tracciati per offrire un'esperienza uniforme quando `git status` si aggiungono nuovi file a un repository. Quando è presente un numero elevato di file non tracciati, può `git status` utilizzare memoria aggiuntiva. Per ignorare questi file e migliorare le prestazioni di , è possibile aggiungere questi file o cartelle `git status` al file con estensione gitignore locale. Per accedere al file, passare a **Git**  >  **Impostazioni**  >  **Repository Git Impostazioni**. Nella sezione **File Git** fare  clic su Aggiungi per creare un  file con estensione gitignore oppure fare clic su Modifica se ne è già presente uno.
 
 ## <a name="force-a-garbage-collection"></a>Imporre una Garbage Collection
 
 CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe* in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
 
-Per forzare un'operazione di Garbage Collection, usare il tasto di scelta rapida: **CTRL** + **ALT** + **MAIUSC** + **F12**, **CTRL** + **ALT** + **MAIUSC** + **F12** (premere due volte).
+Per forzare un'operazione di Garbage Collection, usare il tasto di scelta rapida **CTRL** + **ALT** + **MAIUSC** + **F12,** **CTRL** + **ALT** + **MAIUSC** + **F12** (premere due volte).
 
 Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel proprio scenario, compilare un report tramite lo strumento per il feedback di Visual Studio poiché questo comportamento è in genere sintomo di un bug.
 

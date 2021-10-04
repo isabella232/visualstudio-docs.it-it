@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 16d67b8436368bc4b32f20e714a5c397817a1847
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a8c234db5d9b0f003fa269def46b8c3fcc3da164
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126633292"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430713"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Aggiungere cache di Azure per Redis usando Visual Studio Servizi connessi
 
-Con Visual Studio, è possibile connettere uno degli elementi seguenti a cache di Azure per Redis usando la Servizi connessi **funzionalità:**
+Con Visual Studio, è possibile connettere uno degli elementi seguenti a cache di Azure per Redis usando la **Servizi connessi** funzionalità:
 
 - .NET Framework app console
 - ASP.NET MVC (.NET Framework) 
@@ -26,7 +26,7 @@ Con Visual Studio, è possibile connettere uno degli elementi seguenti a cache d
 - .NET Core (tra cui app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
-- App Windows Universal Platform
+- App Windows universali
 - Xamarin
 - Cordova
 
@@ -39,11 +39,11 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 - Visual Studio con il carico di lavoro di Azure installato.
 - Progetto di uno dei tipi supportati
 
-## <a name="connect-to-azure-cache-for-redis-using-connected-services"></a>Connessione da cache di Azure per Redis usando Servizi connessi
+## <a name="connect-to-azure-cache-for-redis-using-connected-services"></a>Connessione usare cache di Azure per Redis Servizi connessi
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo Servizi connessi **e** scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
+1. In **Esplora soluzioni** fare clic con il pulsante destro **del** mouse sul nodo Servizi connessi e scegliere Aggiungi servizio connesso dal menu di **scelta rapida.**
 
 1. Nella scheda **Servizi connessi** selezionare l'icona + per **Dipendenze servizio**.
 
@@ -53,15 +53,15 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
     ![Aggiungere la cache di Azure per Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
-    Se non è già stato eseguito l'accesso, accedere all'account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/account/free)
+    Se non è già stato eseguito l'accesso, accedere all'account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita.](https://azure.microsoft.com/free/)
 
-1. Nella schermata **Configura cache di Azure per Redis** selezionare un cache di Azure per Redis esistente e selezionare **Avanti.**
+1. Nella schermata **Configura cache di Azure per Redis** selezionare un'cache di Azure per Redis esistente e selezionare **Avanti.**
 
     Se è necessario creare un nuovo componente, andare al passaggio successivo. In caso contrario, andare al passaggio 7.
 
     ![Connessione alle impostazioni cache di Azure per Redis](./media/azure-redis-cache-add-connected-service/created-azure-redis-cache.png)
 
-1. Per creare una cache Redis di Azure:
+1. Per creare una Cache Redis di Azure:
 
    1. Selezionare **Crea una nuova cache Redis** di Azure nella parte inferiore della schermata.
 
@@ -71,11 +71,11 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    1. Quando viene **visualizzata la schermata Configura** cache di Azure per Redis, la nuova cache viene visualizzata nell'elenco. Selezionare il nuovo database nell'elenco e selezionare **Avanti.**
 
-1. Immettere un nome di stringa di connessione o scegliere l'impostazione predefinita e scegliere se archiviare la stringa di connessione in un file di segreti locale [o](/azure/key-vault)in Azure Key Vault .
+1. Immettere un nome di stringa di connessione o scegliere il valore predefinito e scegliere se archiviare la stringa di connessione in un file di segreti locale o in [Azure Key Vault](/azure/key-vault).
 
    ![Specificare la stringa di connessione](./media/azure-redis-cache-add-connected-service/connection-string.png)
 
-1. La **schermata Riepilogo delle** modifiche mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sono ok, scegliere **Fine.**
+1. La **schermata Riepilogo delle** modifiche mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sembrano OK, scegliere **Fine**.
 
    ![Riepilogo delle modifiche](./media/azure-redis-cache-add-connected-service/summary-of-changes.png)
 

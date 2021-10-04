@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: e10c5281222e7c53410502867faa16d567d0bf4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 12915e34da0c2db4dfe2db51167874175963ccb0
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133653"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431588"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 *Authenticode* è una tecnologia Microsoft basata sulla crittografia standard che consente di firmare il codice di un'applicazione con certificati digitali che verificano l'autenticità dell'editore dell'applicazione. Usando la tecnologia Authenticode per la distribuzione di applicazioni, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] consente di ridurre i rischi di trojan horse, ovvero virus o altri programmi dannosi presentati da una terza parte malintenzionata in modo ingannevole come programmi legittimi provenienti da una fonte definita e attendibile. Firmare le distribuzioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un certificato digitale è un passaggio facoltativo per verificare che gli assembly e i file non siano stati manomessi.
@@ -44,14 +44,14 @@ ms.locfileid: "122133653"
 
 - Ricevendone uno da un gruppo dell'organizzazione responsabile della creazione di certificati digitali.
 
-- Generare un certificato personalizzato usando il cmdlet New-SelfSignedCertificate PowerShell o usando *MakeCert.exe*, incluso in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
+- Generare un certificato personalizzato usando il cmdlet New-SelfSignedCertificate PowerShell o usandoMakeCert.exe *,* incluso in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] .
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Vantaggi derivanti dall'uso di Autorità di certificazione
  Un certificato generato mediante New-SelfSignedCertificate o la *MakeCert.exe* utilità viene comunemente definito un *autocertificato* o un *certificato di prova*. Questo tipo di certificato agisce in modo analogo ai file con estensione *snk* in .NET Framework. È costituito esclusivamente da una coppia di chiavi crittografiche pubbliche/private e non contiene informazioni verificabili sull'editore. Gli autocertificati consentono di distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un elevato livello di attendibilità in una rete intranet. Tuttavia, quando sono eseguite in un computer client, queste applicazioni vengono identificate da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] come provenienti da un editore sconosciuto. Per impostazione predefinita, non è possibile usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmate con autocertificati e distribuite su Internet.
 
  Al contrario, se si riceve un certificato proveniente da una CA, ad esempio un fornitore di certificati o un reparto dell'organizzazione, il certificato offre maggiore sicurezza agli utenti. Non solo identifica l'editore del software firmato, ma verifica anche l'identità mediante un controllo con la CA che ha apposto la firma. Se la CA non è l'autorità radice, Authenticode verificherà con l'autorità radice che la CA sia autorizzata a rilasciare certificati. Per maggiore sicurezza, si consiglia di usare un certificato rilasciato da una CA, se possibile.
 
- Per altre informazioni sulla generazione di autocert, vedere [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) o [MakeCert.](/windows/desktop/SecCrypto/makecert)
+ Per altre informazioni sulla generazione di autocert, vedere [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate) o [MakeCert.](/windows/desktop/SecCrypto/makecert)
 
 ### <a name="timestamps"></a>Timestamp
  I certificati usati per firmare applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scadono dopo un determinato periodo di tempo, in genere dodici mesi. Per evitare di dover firmare costantemente le stesse applicazioni con nuovi certificati, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] supporta i timestamp. Se un'applicazione è firmata con un timestamp, il certificato continuerà a essere accettato anche dopo la scadenza, purché il timestamp sia valido. Questo consente il download e l'esecuzione delle applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con certificati scaduti ma timestamp validi. Permette anche di continuare a scaricare e installare gli aggiornamenti per le applicazioni installate con certificati scaduti.

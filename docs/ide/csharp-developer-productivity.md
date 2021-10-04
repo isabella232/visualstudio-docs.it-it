@@ -5,18 +5,18 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.date: 11/21/2019
+ms.date: 02/24/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d417f0e09c9a8d6596f1084bd8dc8772a25867de
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 094469cdbd41d57e4742023e8b99cc2b5a7c5daf
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109487"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431679"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -48,8 +48,8 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **F12** (anche  + **CTRL+CLIC)** | Vai a definizione | Consente di passare al punto in cui si trova la definizione di un simbolo |
 | **CTRL** + **F12** | Vai all'implementazione | Consente di passare da un tipo o membro di base alle varie implementazioni di questo. |
 | **MAIUSC** + **F12** | Trova tutti i riferimenti | Consente di visualizzare tutti i riferimenti di simboli o valori letterali |
-| **ALT** + **Home page** | Vai a base | Spostarsi verso l'alto nella catena di ereditarietà |
-| **CTRL** + **.** (anche **ALT)** + **Immettere** nel profilo C#) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
+| **ALT** + **Home** | Vai a base | Spostarsi verso l'alto nella catena di ereditarietà |
+| **CTRL** + **.** (anche **ALT** + **Immettere** nel profilo C#) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
 | **CTRL** + **D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
 | **MAIUSC** + **ALT**+**+**/**-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
 | **MAIUSC**  +  **ALT**  +  **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
@@ -63,7 +63,7 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **CTRL** + **MAIUSC**+**/** | Attiva/Disattiva commento per il blocco/Rimuovi commento | Questo comando aggiunge o rimuove commenti per il blocco a seconda dell'elemento selezionato |
 
 > [!NOTE]
-> Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi precedenti, ripristinare i tasti di scelta rapida alle impostazioni predefinite di Visual Studio selezionando Strumenti Importa/Esporta Impostazioni Reimposta tutte le impostazioni o Opzioni strumenti Reimpostazione tastiera  >    >     >    >    >  .
+> Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi precedenti, ripristinare i tasti di scelta rapida alle impostazioni predefinite di Visual Studio selezionando Strumenti Importa ed esporta Impostazioni Reimposta tutte le impostazioni o Opzioni strumenti Reimpostazione tastiera  >    >     >    >    >  .
 
 Per altre informazioni sui tasti di scelta rapida e i comandi, vedere [Tasti di scelta rapida per la produttività](../ide/productivity-shortcuts.md) e [Tasti di scelta rapida più comuni](default-keyboard-shortcuts-in-visual-studio.md).
 
@@ -84,13 +84,13 @@ Visual Studio offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**
 
 ![Imposizione dello stile del codice in Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
-- Aggiungere un valore predefinito o . File EditorConfig di tipo NET nel progetto scegliendo **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** cercare "editorconfig". Selezionare uno dei due modelli di elemento **File editorconfig** e quindi scegliere **Aggiungi**.
+- Aggiungere un valore predefinito o . File EditorConfig di tipo NET al progetto scegliendo **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** cercare "editorconfig". Selezionare uno dei due modelli di elemento **File editorconfig** e quindi scegliere **Aggiungi**.
 
    ![Modelli di elemento EditorConfig in Visual Studio](media/editorconfig-item-templates.png)
 
 ::: moniker range=">=vs-2019"
 
-- Creare automaticamente un file *con estensione editorconfig* in base alle impostazioni di stile del codice **in** Strumenti Opzioni >  > **Editor di testo** > **Stile codice** > **C#.**
+- Creare automaticamente un file *con estensione editorconfig* in base alle impostazioni di stile del codice in **Strumenti** Opzioni Editor di >  > **testo** > **Stile codice** > **C#.**
 
    ![Generare un file con estensione editorconfig dalle impostazioni in Visual Studio 2019](media/vs-2019/generate-editorconfig-file.png)
 
@@ -98,7 +98,7 @@ Visual Studio offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**
 
 - La [funzionalità di inferenza del codice](/visualstudio/intellicode/code-style-inference) di IntelliCode per Visual Studio deduce gli stili del codice dal codice esistente. Viene quindi creato un file EditorConfig non vuoto con le preferenze di stile del codice già definite.
 
-- Configurare il livello di gravità di una regola di stile del codice direttamente tramite l'editor. Se attualmente non si dispone di un file con estensione editorconfig, ne verrà generato uno automaticamente. Posizionare il cursore sull'errore, sull'avviso o sul suggerimento e digitare  + **CTRL.** per aprire il menu Azioni rapide e refactoring. Selezionare **Configura o Elimina problemi.** Selezionare quindi la regola e scegliere il livello di gravità che si vuole configurare per la regola. Il file EditorConfig esistente verrà così aggiornato con la nuova gravità della regola.
+- Configurare il livello di gravità di una regola di stile del codice direttamente tramite l'editor. Se attualmente non si dispone di un file editorconfig, ne verrà generato uno automaticamente. Posizionare il cursore sull'errore, sull'avviso o sul suggerimento e digitare **CTRL** + **.** per aprire il menu Azioni rapide e refactoring. Selezionare **Configura o Elimina problemi**. Selezionare quindi la regola e scegliere il livello di gravità che si vuole configurare per la regola. Il file EditorConfig esistente verrà così aggiornato con la nuova gravità della regola.
 
    ![Configurare il livello di gravità di una regola di stile del codice direttamente nell'editor](../ide/media/configure-severity-level.png)
 
@@ -242,10 +242,10 @@ Ecco un elenco di funzionalità editor e di produttività per rendere più effic
 
 | Funzionalità | Dettagli | Abilitazione |
 |-|-|-|
-| Individuare il file in Esplora soluzioni | Evidenzia il file attivo in **Esplora soluzioni** | **Strumenti**  >  **Opzioni**  >  **Progetti e soluzioni**  >  **Tenere traccia degli elementi attivi in Esplora soluzioni** |
-| Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza una lampadina di errore con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Suggerire using per i tipi negli assembly di riferimento** e **Suggerisci using per i tipi NuGet pacchetti** |
-| Abilita analisi della soluzione completa | Visualizzare tutti gli errori nella soluzione **nell'Elenco errori** | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Abilitare l'analisi completa della soluzione** |
-| Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Abilitare la navigazione nelle origini decompilate** |
+| Individuare il file in Esplora soluzioni | Evidenzia il file attivo in **Esplora soluzioni** | **Strumenti**  >  **Opzioni**  >  **Progetti e soluzioni**  >  **Tenere traccia dell'elemento attivo Esplora soluzioni** |
+| Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza una lampadina di errore con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Suggerire l'uso di per i tipi negli assembly di riferimento** e Suggerire **l'uso** per i NuGet pacchetti |
+| Abilita analisi della soluzione completa | Visualizzare tutti gli errori nella soluzione **nell'elenco errori** | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Abilitare l'analisi completa della soluzione** |
+| Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **C#**  >  **Avanzate**  >  **Abilitare lo spostamento nelle origini decompilate** |
 | Modalità di terminazione/suggerimento | Modifica il comportamento di completamento in IntelliSense. Gli sviluppatori con esperienza di IntelliJ tendono a usare un'impostazione non predefinita in questo caso. | **Menu**  >  **Modifica**  >  **IntelliSense**  >  **Attiva/Disattiva modalità di completamento** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Visualizza le informazioni di riferimento del codice e la cronologia modifiche nell'editor (gli indicatori CodeLens del controllo del codice sorgente non sono disponibili nell'edizione Visual Studio Community). | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **Tutti i linguaggi**  >  **CodeLens** |
-| [Frammenti di codice](../ide/visual-csharp-code-snippets.md) | Utili per di generare codice boilerplate comune | Digitare il nome di un frammento di codice e **premere TAB due** volte. |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Visualizza le informazioni di riferimento del codice e la cronologia modifiche nell'editor (gli indicatori CodeLens del controllo del codice sorgente non sono disponibili nell'edizione Visual Studio Community). | **Strumenti**  >  **Opzioni**  >  **Editor di testo**  >  **Tutte le lingue**  >  **CodeLens** |
+| [Frammenti di codice](../ide/visual-csharp-code-snippets.md) | Utili per di generare codice boilerplate comune | Digitare il nome di un frammento di codice e premere **TAB due** volte. |

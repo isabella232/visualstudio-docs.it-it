@@ -1,8 +1,8 @@
 ---
 title: 'Procedura: Aggiungere un file app.config a un progetto'
-description: Informazioni su come aggiungere un app.config a un progetto C# in modo da poter personalizzare il modo in cui Common Language Runtime individua e carica i file di assembly.
+description: Informazioni su come aggiungere un file app.config a un progetto C# per poter personalizzare il modo in cui Common Language Runtime individua e carica i file di assembly.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 11/20/2020
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75938513834b98789aa2b9501a9face06c7c1697
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 6c063aa1dbea8a9953bc3c9e44cf72de5514e0f8
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101804"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431627"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: Aggiungere un file di configurazione dell'applicazione a un progetto C#
 
@@ -32,11 +32,11 @@ Quando si compila il progetto, l'ambiente di sviluppo copia automaticamente il f
 
 ## <a name="to-add-an-application-configuration-file-to-a-c-project"></a>Per aggiungere un file di configurazione dell'applicazione a un progetto C#
 
-1. Sulla barra dei menu **scegliere** Project Aggiungi nuovo  >  **elemento**.
+1. Nella barra dei menu scegliere **Project**  >  **Aggiungi nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
-1. Espandere **Elementi**  >  **visual C# installati** e quindi scegliere il modello File di configurazione **dell'applicazione.**
+1. Espandere **Elementi**  >  **di Visual C# installati** e quindi scegliere il modello File di configurazione **dell'applicazione.**
 
 1. Nella casella di testo **Nome** immettere un nome e quindi scegliere il pulsante **Aggiungi**.
 

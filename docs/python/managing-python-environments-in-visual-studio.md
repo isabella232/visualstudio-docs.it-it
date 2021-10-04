@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e75f433c3949ecb623dbe14ee7289060f7cc463b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 90bd3bd30f4a30277fd36fa639760922377f5c99
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126625368"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430612"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -43,7 +43,7 @@ Se non si ha familiarità con Python in Visual Studio, vedere gli articoli segue
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> È possibile gestire gli ambienti per il codice Python aperto come cartella usando il **comando Apri**  >    >  **cartella.** La barra degli strumenti di Python consente di spostarsi tra tutti gli ambienti rilevati e anche di aggiungere un nuovo ambiente. Le informazioni sull'ambiente sono archiviate nel file PythonSettings.json nella cartella Workspace.vs.
+> È possibile gestire gli ambienti per il codice Python aperto come cartella usando il **comando Apri**  >    >  **cartella** file. La barra degli strumenti di Python consente di spostarsi tra tutti gli ambienti rilevati e anche di aggiungere un nuovo ambiente. Le informazioni sull'ambiente sono archiviate nel file PythonSettings.json nella cartella Workspace.vs.
 ::: moniker-end
 
 ## <a name="the-python-environments-window"></a>Finestra Ambienti Python
@@ -102,10 +102,13 @@ Se non viene visualizzato alcun ambiente, significa che Visual Studio non è riu
 
 Se si è certi di disporre di un interprete Python nel computer in uso, ma Visual Studio (qualsiasi versione) non lo rileva, usare il comando **+ Personalizzato** per specificarne il percorso manualmente. Vedere la sezione successiva, [Identificare manualmente un ambiente esistente](#manually-identify-an-existing-environment).
 
+::: moniker range="<=vs-2017"
+
 > [!Tip]
 > Visual Studio rileva gli aggiornamenti a un interprete esistente, ad esempio l'aggiornamento di Python 2.7.11 a 2.7.14 usando i programmi di installazione da python.org. Durante il processo di installazione, l'ambiente precedente scompare dall'elenco **Ambienti Python** prima che l'aggiornamento venga visualizzato al suo posto.
 >
 > Tuttavia, se si sposta manualmente un interprete e il relativo ambiente tramite il file system, Visual Studio non conosce il nuovo percorso. Per altre informazioni, vedere [Spostare un interprete](installing-python-interpreters.md#move-an-interpreter).
+::: moniker-end
 
 ### <a name="types-of-environments"></a>Tipi di ambienti
 

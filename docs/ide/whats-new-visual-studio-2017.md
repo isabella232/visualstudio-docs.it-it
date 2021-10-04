@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2017
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2017.
-ms.date: 12/18/2018
+ms.date: 10/01/2021
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 65ee7d1a1252e4906f291ace121f7c92c889f616
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a489aaef94f77fcca53402100ef4372c73fa6d00
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150924"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430893"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -90,7 +90,7 @@ Il nuovo strumento Controllo prestazioni di Visual Studio può essere utile per 
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Caricamento su richiesta delle estensioni più rapido
 
-Le estensioni di Visual Studio (così come le estensioni di terze parti) sono state spostate in modo da poter essere caricate su richiesta, invece che all'avvio dell'IDE. Le informazioni sulle estensioni che hanno un impatto sulle prestazioni di avvio, caricamento delle soluzioni e digitazione, È possibile visualizzare queste informazioni in **Guida alla** gestione delle  >  **Visual Studio prestazioni**.
+Le estensioni di Visual Studio (così come le estensioni di terze parti) sono state spostate in modo da poter essere caricate su richiesta, invece che all'avvio dell'IDE. Le informazioni sulle estensioni che hanno un impatto sulle prestazioni di avvio, caricamento delle soluzioni e digitazione, È possibile visualizzare queste informazioni in **Guida**  >  **alla gestione delle Visual Studio prestazioni**.
 
   ![Finestra di dialogo Opzioni in Visual Studio 2017](media/vs2017ide-manage-vs-perf.png)
 
@@ -110,7 +110,7 @@ Quando si usa Gestione roaming estensioni sono disponibili tre tipi di icona nel
 
 * ![Icona di roaming con roaming: estensione che fa parte di questo elenco di ](media/vs2017ide-roamedicon.png) **** roaming, ma non installata nel computer.
   Per eseguire l'installazione usare il pulsante **Download**.
-* ![Roaming dell'& installato con roaming & installato : tutte le estensioni che fanno parte di questo elenco di roaming e installate ](media/vs2017ide-roamedinstalledicon.png) **** nell'ambiente di sviluppo.
+* ![Roaming dell& a icona Installato con roaming & installato : tutte le estensioni che fanno parte di questo elenco di roaming e installate ](media/vs2017ide-roamedinstalledicon.png) **** nell'ambiente di sviluppo.
   Se si decide di evitare il roaming, è possibile rimuovere le estensioni usando il pulsante **Arresta roaming**.
 * ![Icona installata ](media/vs2017ide-installedicon.png) **_Installato_**: tutte le estensioni installate in questo ambiente, ma che non fanno parte dell'elenco di roaming.
   Per aggiungere le estensioni all'elenco di roaming, usare il pulsante **Avvia roaming**.
@@ -178,7 +178,7 @@ L'esperienza è stata aggiornata per consentire spostamenti più efficienti e co
 
 * **Vai a implementazione** (**CTRL** + **F12**) Passare da qualsiasi tipo o membro &ndash; di base alle varie implementazioni.
 
-* **Vai a tutti** (**CTRL** T o CTRL + ) Consente di passare +  direttamente a qualsiasi dichiarazione di  +  &ndash; file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
+* **Vai a tutti** (**CTRL** T o CTRL + , ) Consente di passare direttamente a qualsiasi +  dichiarazione di  +  &ndash; file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
 
   ![Vai a tutti migliorato](media/vs2017ide-navigation-go-to.png)
 
@@ -196,9 +196,9 @@ Per altre informazioni sulle nuove funzionalità di produttività, vedere il pos
 
 Sono stati introdotti numerosi miglioramenti in Visual Studio, tra cui la distribuzione delle istruzioni di base di C++ con Visual Studio, l'aggiornamento del compilatore aggiungendo il supporto avanzato per le funzionalità di C++11 e C++, l'aggiunta e l'aggiornamento di funzionalità nelle librerie di C++. Sono stati anche migliorati i carichi di lavoro di installazione, le prestazioni dell'IDE di C++ e altro.
 
-Sono stati corretti anche più di 250 bug e segnalati problemi nel compilatore e negli strumenti, molti inviati dai clienti tramite developer [Community per C++.](https://aka.ms/feedback/report?space=62 "Strumenti Community per sviluppatori per C++")
+Sono stati corretti anche più di 250 bug e segnalati problemi nel compilatore e negli strumenti, molti inviati dai clienti tramite developer [Community per C++.](https://aka.ms/feedback/report?space=62 "Developer Community per C++")
 
-Per informazioni dettagliate complete, vedere la pagina Novità Visual C++ [visual 2017.](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+Per informazioni dettagliate complete, vedere la pagina Novità Visual C++ [in Visual 2017.](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 
 ### <a name="debugging-and-diagnostics"></a>Debug e diagnostica
 
@@ -243,7 +243,7 @@ I contenitori consentono di ottenere una maggiore densità delle app e di ridurr
 
 Nell’ambito del carico di lavoro "Sviluppo di Azure", sono stati inclusi strumenti che consentono di sviluppare funzioni di Azure con librerie pre-compilate di classe C#. È possibile compilare, eseguire ed effettuare il debug nel computer di sviluppo locale e pubblicare direttamente in Azure da Visual Studio.
 
-Per altre informazioni, vedere la Funzioni di Azure [strumenti per Visual Studio](/azure/azure-functions/functions-develop-vs) pagina.
+Per altre informazioni, vedere la pagina [strumenti Funzioni di Azure per Visual Studio.](/azure/azure-functions/functions-develop-vs)
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Eseguire il debug di app ASP.NET in tempo reale usando punti di ancoraggio e punti di registrazione nelle applicazioni Azure in tempo reale
 
@@ -309,11 +309,11 @@ Per altre informazioni, vedere [Accelerazione hardware per le prestazioni dell'e
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-Novità della versione **15.5:** Visual Studio App Center, ora disponibile a livello generale per le app &mdash; Android, iOS, macOS e Windows, include tutto il necessario per gestire il ciclo di vita delle app, tra cui compilazioni automatizzate, test su dispositivi reali nel cloud, distribuzione a beta tester e app store e monitoraggio dell'utilizzo reale tramite dati di analisi e arresto &mdash; anomalo. Le app scritte in Objective-C, Swift, Java, C#, Xamarin e React Native sono supportate per tutte le funzionalità.
+Novità della **versione 15.5:** Visual Studio App Center ora disponibile a livello generale per le app Android, iOS, macOS e Windows ha tutto il necessario per gestire il ciclo di vita delle app, tra cui compilazioni automatizzate, test su dispositivi reali nel cloud, distribuzione a beta tester e app store e monitoraggio dell'utilizzo reale tramite dati di analisi e arresto anomalo &mdash; &mdash; del sistema. Le app scritte in Objective-C, Swift, Java, C#, Xamarin e React Native sono supportate per tutte le funzionalità.
 
   ![Ambiente di test di Visual Studio App Center](media/app-center-test-env.png)
 
-Per altre informazioni, vedere il post di blog [Introducing App Center: Build, test, distribute and monitor apps in the cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) (Introduzione a: Compilare, testare, distribuire e monitorare le app nel cloud).
+Per altre informazioni, vedere il post di blog [Introducing App Center: Build, test, distribute and monitor apps in the cloud (Introduzione a App Center: Compilare, testare, distribuire](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) e monitorare le app nel cloud).
 
 ## <a name="cross-platform-development"></a>Sviluppo multipiattaforma
 
@@ -350,7 +350,7 @@ Per altre informazioni, vedere la [pagina della guida di .NET Core.](/dotnet/cor
 
 Nell’ambito del carico di lavoro "Sviluppo di giochi per Unity", sono stati inclusi strumenti per semplificare lo sviluppo multipiattaforma per creare giochi 2D e 3D e contenuti interattivi. Puoi creare una sola volta e pubblicare in 21 piattaforme, incluse tutte le piattaforme mobili, WebGL, Mac, computer desktop Windows e Linux, Web o console, tramite Visual Studio 2017 e Unity 5.6.
 
-Per altre informazioni, vedere la pagina [Strumenti di Visual Studio per Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
+Per altre informazioni, vedere la pagina [Strumenti di Visual Studio per Unity](/visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity).
 
 ## <a name="ai-development"></a>Sviluppo AI
 
@@ -381,11 +381,11 @@ Per inoltrare suggerimenti su come migliorare Visual Studio o per altre informaz
 
 ### <a name="report-a-problem"></a>Segnalare un problema
 
-A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un problema a causa del quale Visual Studio smette di rispondere, si arresta in modo anomalo o un altro problema di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto (ad esempio screenshot e file di traccia e dump dell'heap) con Microsoft usando lo strumento Segnala un problema.  Per altre informazioni su come usare questo strumento, vedere la [pagina Come segnalare un](how-to-report-a-problem-with-visual-studio.md) problema.
+A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un problema a causa del quale Visual Studio smette di rispondere, si arresta in modo anomalo o si verifica un altro problema  di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto (ad esempio screenshot e file di dump di traccia e heap) con Microsoft usando lo strumento Segnala un problema. Per altre informazioni su come usare questo strumento, vedere la pagina [Come segnalare un](how-to-report-a-problem-with-visual-studio.md) problema.
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [note sulla versione di Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Novità di Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Novità di Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novità di C#](/dotnet/csharp/whats-new)

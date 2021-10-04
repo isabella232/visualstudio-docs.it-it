@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 83846eb0e37adb925c09cf31ebb46c8a50e2d143
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: dda0a61a0c634a227222a23176154ba6a9b2c77e
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339912"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431393"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati della fase di progettazione con finestra di progettazione XAML in Visual Studio
 
@@ -93,7 +93,7 @@ Per usare il tipo system:String, assicurarsi di includere `xmlns:system="clr-nam
 
 [![Dati in fase di progettazione con un controllo ListView](media\xaml-design-time-listview-strings.png "Dati in fase di progettazione con un controllo ListView")](media\xaml-design-time-listview-strings.png#lightbox)
 
-Questo esempio precedente mostra un controllo ListView con tre TextBlock nell'finestra di progettazione XAML.
+Questo esempio precedente mostra un controllo ListView con tre TextBlock nella finestra di progettazione XAML.
 
 È anche possibile creare una matrice di oggetti dati. Ad esempio, le proprietà pubbliche di un `City` oggetto dati possono essere costruite come dati in fase di progettazione.
 
@@ -203,7 +203,7 @@ Se si verifica un problema non elencato in questa sezione, segnalarci il problem
 
 - Supporta Windows desktop che hanno come destinazione Windows Presentation Foundation (WPF) per .NET Core e UWP. Questa funzionalità è disponibile anche per .NET Framework nel [canale di anteprima](/visualstudio/releases/2019/release-notes-preview). Per abilitarlo, passare **a** Strumenti Opzioni Funzionalità di anteprima dell'ambiente, selezionare New WPF finestra di progettazione XAML for  >    >    >   **.NET Framework** e quindi riavviare Visual Studio.
 
-- A partire Visual Studio 2019 versione 16.7, questa funzionalità funziona con tutti i controlli in-the-box dei framework WPF e UWP. Il supporto per i controlli di terze parti è ora disponibile nella [versione 16.8.](/visualstudio/releases/2019/release-notes/)
+- A partire Visual Studio 2019 versione 16.7, questa funzionalità funziona con tutti i controlli in-the-box dai framework WPF e UWP. Il supporto per i controlli di terze parti è ora disponibile nella [versione 16.8.](/visualstudio/releases/2019/release-notes/)
 
 ### <a name="the-xaml-designer-stopped-working"></a>Il finestra di progettazione XAML ha smesso di funzionare
 
@@ -211,7 +211,7 @@ Provare a chiudere e riaprire il file XAML e a pulire e ricompilare il progetto.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Dati in fase di progettazione con L'anteprima di Xamarin.Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
+- [Dati in fase di progettazione con L'anteprima di Xamarin.Forms](/xamarin/xamarin-forms/xaml/xaml-previewer/design-time-data)
 - [XAML in all WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML in all UWP](/windows/uwp/xaml-platform/xaml-overview)
 - [XAML in app Xamarin.Forms](/xamarin/xamarin-forms/xaml/)

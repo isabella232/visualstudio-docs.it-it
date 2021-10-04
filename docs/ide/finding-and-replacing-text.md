@@ -2,7 +2,7 @@
 title: Cercare e sostituire testo e selezione di più punti di inserimento
 description: Informazioni sulla funzionalità Trova e sostituisci e su come usarla per trovare e sostituire istanze di un criterio.
 ms.custom: SEO-VS-2020
-ms.date: 10/17/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -33,12 +33,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f12d801fc54088c79d22a3c69cd27206a8b667e8
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 796ccada43eed1363b80422eab03e6237a8893e1
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126625907"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431159"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -121,9 +121,9 @@ Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punt
 
 |Tasto di scelta rapida|Azione|
 |-|-|
-|**CTRL+FRECCIA DESTRA** + **ALT+** clic|Aggiungere un punto di inserimento secondario|
-|**CTRL+FRECCIA DESTRA** + **ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
-|**CTRL+FRECCIA DESTRA** + **ALT** + clic + trascinamento|Aggiungere una selezione secondaria|
+|**CTRL** + **ALT+** clic|Aggiungere un punto di inserimento secondario|
+|**CTRL** + **ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
+|**CTRL** + **ALT** + clic + trascinamento|Aggiungere una selezione secondaria|
 |**MAIUSC** + **ALT** + **.**|Aggiungere il testo successivo corrispondente come selezione|
 |**MAIUSC** + **ALT** + **;**|Aggiungere tutto il testo corrispondente come selezione|
 |**MAIUSC** + **ALT** + **,**|Rimuovere l'ultima occorrenza selezionata|

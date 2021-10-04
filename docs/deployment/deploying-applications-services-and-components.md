@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0981518581f7948db8297959ffb0816f2df34333
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: ace4dd25eb82d8e1aaf96b40ada6308d6e90fbf7
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128426582"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431653"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -45,12 +45,12 @@ La distribuzione in una cartella locale viene in genere usata per il test o per 
 
     ![Screenshot che mostra la selezione di Pubblica.](../deployment/media/quickstart-publish.png)
 
-- **Windows desktop:** è possibile pubblicare un'applicazione desktop Windows in una cartella usando ClickOnce distribuzione. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere gli articoli seguenti:
+- **Windows desktop:** è possibile pubblicare un Windows app applicazione desktop in una cartella usando ClickOnce distribuzione. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere gli articoli seguenti:
 
   - [Distribuire un'app desktop Windows .NET usando ClickOnce](quickstart-deploy-using-clickonce-folder.md)
-  - [Distribuire un.NET Framework Windows app desktop usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+  - [Distribuire un'app desktop .NET Framework Windows usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
   - [Distribuire un'app desktop Windows .NET usando ClickOnce](quickstart-deploy-using-clickonce-folder.md).
-  - [Distribuire un'app C++/CLR usando ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere Distribuire un'app nativa [usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+  - [Distribuire un'app C++/CLR usando ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere Distribuire un'app nativa usando un progetto [di installazione.](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)
 
 ## <a name="publish-to-azure"></a>Eseguire la pubblicazione in Azure
 
@@ -58,11 +58,11 @@ La distribuzione in una cartella locale viene in genere usata per il test o per 
 
   - Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
   - Per una distribuzione di app una tantum o manuale, usare lo strumento **Pubblica** in Visual Studio.
-  - Per creare GitHub di lavoro azione per ASP.NET e i progetti di funzioni di Azure ospitati in GitHub.com, vedere Distribuire [in Azure usando](../deployment/azure-deployment-using-github-actions.md)GitHub Actions .
+  - Per creare flussi GitHub di lavoro di ASP.NET e di funzioni di Azure ospitati in GitHub.com, vedere Distribuire in Azure usando GitHub [azioni.](../deployment/azure-deployment-using-github-actions.md)
 
-  Per la distribuzione che offre una configurazione più personalizzata del server, è anche possibile usare lo strumento **Pubblica** per distribuire app in una macchina virtuale di Azure.
+  Per la distribuzione che offre una configurazione più personalizzata del server, è anche possibile usare lo strumento **Pubblica** per distribuire le app in una macchina virtuale di Azure.
 
-  Per usare lo **strumento Pubblica,** fare clic con il pulsante destro del mouse sul progetto Esplora soluzioni e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è necessario selezionare **Crea nuovo profilo.** Nella finestra **di** dialogo Pubblica selezionare Servizio **app** o Macchine virtuali **di Azure** e quindi seguire i passaggi di configurazione.
+  Per usare lo strumento **Pubblica,** fare clic con il pulsante destro del mouse sul Esplora soluzioni e **scegliere Pubblica.** Se in precedenza sono stati configurati profili di pubblicazione, è necessario selezionare **Crea nuovo profilo.** Nella finestra **di** dialogo Pubblica selezionare Servizio **app o** Macchine virtuali **di Azure** e quindi seguire i passaggi di configurazione.
 
   ![Screenshot che mostra la selezione Servizio app di Azure.](../deployment/media/quickstart-publish-azure-new.png "Scegliere Servizio app di Azure")
 
@@ -70,22 +70,22 @@ La distribuzione in una cartella locale viene in genere usata per il test o per 
 
   Per le app Python, vedere anche [Python: pubblicazione nel Servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-  Per una rapida introduzione, vedere [Pubblicare in Azure](quickstart-deploy-to-azure.md) e [Pubblicare in Linux](quickstart-deploy-to-linux.md). Vedere anche [Pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione tramite Git, vedere [Distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
+  Per una rapida introduzione, vedere [Pubblicare in Azure](quickstart-deploy-to-azure.md) e [Pubblicare in Linux](quickstart-deploy-to-linux.md). Vedere anche [Pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione tramite Git, vedere [Distribuzione continua di ASP.NET Core in Azure con Git](/azure/app-service/deploy-continuous-deployment).
 
   > [!NOTE]
   > Se non si ha già un account Azure, è possibile [iscriversi qui.](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)
 
 ## <a name="publish-to-the-web-or-deploy-to-a-network-share"></a>Pubblicare sul Web o distribuire in una condivisione di rete
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: è possibile usare  lo strumento Pubblica per distribuire in un sito Web tramite FTP o Distribuzione Web. Per altre informazioni, vedere [Distribuire in un sito Web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python:** è possibile usare  lo strumento Pubblica per eseguire la distribuzione in un sito Web tramite FTP o Distribuzione Web. Per altre informazioni, vedere [Distribuire in un sito Web.](quickstart-deploy-to-a-web-site.md)
 
-    In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è necessario selezionare **Crea nuovo profilo.** Nello strumento **Pubblica** selezionare l'opzione desiderata e seguire i passaggi di configurazione.
+    In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica.** Se in precedenza sono stati configurati profili di pubblicazione, è necessario selezionare **Crea nuovo profilo.** Nello strumento **Pubblica** selezionare l'opzione desiderata e seguire i passaggi di configurazione.
 
     ![Screenshot che mostra la selezione di IIS.](../deployment/media/quickstart-publish-iis.png)
 
     Per informazioni sull'importazione di un profilo di pubblicazione in Visual Studio, vedere [Importare impostazioni di pubblicazione e distribuzione in IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per altre informazioni, vedere [Deploying ASP.NET web applications and services](/aspnet/overview/deployment) (Distribuzione di applicazioni e servizi Web ASP.NET).
+    È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per altre informazioni, vedere [Deploying ASP.NET web applications and services](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/) (Distribuzione di applicazioni e servizi Web ASP.NET).
 
 - **Windows desktop:** è possibile pubblicare un'applicazione desktop Windows in un server Web o in una condivisione file di rete usando ClickOnce distribuzione. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere gli articoli seguenti:
 
@@ -95,18 +95,18 @@ La distribuzione in una cartella locale viene in genere usata per il test o per 
 
 ## <a name="create-an-installer-package-windows-desktop"></a>Creare un pacchetto del programma di installazione (desktop di Windows)
 
-Se è necessaria un'installazione più complessa di un'applicazione desktop rispetto a ClickOnce, è possibile creare un pacchetto del programma di installazione di Windows (file di installazione MSI o EXE) o un programma di avvio automatico personalizzato.
+Se è necessaria un'installazione più complessa di un'applicazione desktop rispetto a quanto ClickOnce possa fornire, è possibile creare un pacchetto del programma di installazione di Windows (file di installazione MSI o EXE) o un programma di avvio automatico personalizzato.
 
-- È possibile creare un pacchetto del programma di installazione basato su MSI usando il set di strumenti [WiX Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Si tratta di un set di strumenti da riga di comando.
+- È possibile creare un pacchetto del programma di installazione basato su MSI usando [wix toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Si tratta di un set di strumenti da riga di comando.
 
-- È possibile creare un pacchetto del programma di installazione MSI o EXE usando un progetto di installazione (vdproj). Per usare questa opzione, vedere estensione Programma di installazione di Visual Studio Projects e [.NET Core 3.1 e .NET 5.0](../deployment/installer-projects-net-core.md) oppure passare direttamente all'estensione [Programma di installazione di Visual Studio Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- È possibile creare un pacchetto di installazione MSI o EXE usando un progetto di installazione (vdproj). Per usare questa opzione, vedere Estensione progetti Programma di installazione di Visual Studio e [.NET Core 3.1 e .NET 5.0](../deployment/installer-projects-net-core.md) oppure passare direttamente all'estensione [Programma di installazione di Visual Studio Projects.](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)
 
-- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) di Flexera Software. InstallShield può essere usato con Visual Studio 2017 e versioni successive. Community L'edizione non è supportata.
+- È possibile creare un pacchetto di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) di Flexera Software. InstallShield può essere usato con Visual Studio 2017 e versioni successive. Community L'edizione non è supportata.
 
   > [!NOTE]
   > InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017 e versioni successive. Verificare con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) la disponibilità futura.
 
-- È anche possibile installare i componenti prerequisiti per le applicazioni desktop configurando un programma di installazione generico, noto come programma di avvio automatico. Per altre informazioni, vedere [Prerequisiti per la distribuzione di applicazioni](../deployment/application-deployment-prerequisites.md).
+- È anche possibile installare i componenti prerequisiti per le applicazioni desktop configurando un programma di installazione generico, noto come programma di avvio automatico. Per altre informazioni, vedere Prerequisiti [per la distribuzione di applicazioni.](../deployment/application-deployment-prerequisites.md)
 
 ## <a name="publish-to-microsoft-store"></a>Pubblicare in Microsoft Store
 
@@ -116,15 +116,15 @@ Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Mi
 
     ![Screenshot che mostra la creazione di un pacchetto dell'app.](../deployment/media/feature-tour-create-app-package.png)
 
-- **Windows desktop:** è possibile distribuire in Microsoft Store usando il Desktop Bridge a partire da Visual Studio 2017 versione 15.4. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere [Creare il pacchetto di un'app desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Windows desktop:** è possibile eseguire la distribuzione in Microsoft Store usando il Desktop Bridge a partire Visual Studio 2017 versione 15.4. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere [Creare il pacchetto di un'app desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-    ![Screenshot che mostra la selezione Windows creazione di pacchetti dell'Project.](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Screenshot che mostra la selezione Windows creazione di pacchetti dell Project.](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-to-a-device-uwp"></a>Eseguire la distribuzione in un dispositivo (piattaforma UWP)
 
-Se si distribuisce un'app UWP per il test in un dispositivo, vedere Eseguire [app UWP in](../debugger/run-windows-store-apps-on-a-remote-machine.md)un computer remoto in Visual Studio .
+Se si distribuisce un'app UWP per il test in un dispositivo, vedere Eseguire [app UWP in un computer remoto in Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="deploy-to-a-test-lab"></a>Distribuire in un lab di test
+## <a name="deploy-to-a-test-lab"></a>Eseguire la distribuzione in un lab di test
 
 È possibile consentire operazioni più sofisticate di sviluppo e test distribuendo le applicazioni in ambienti virtuali. Per altre informazioni, vedere [Eseguire test in un ambiente lab](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
@@ -143,7 +143,7 @@ Se si distribuisce un'app UWP per il test in un dispositivo, vedere Eseguire [ap
 
 | Tipo di app | Scenario di distribuzione | Collegamento |
 | --- | --- | --- |
-| **App di Office** | È possibile pubblicare un componente aggiuntivo per Office in Visual Studio. | [Deploy and publish your Office add-in](https://dev.office.com/docs/add-ins/publish/publish) (Distribuire e pubblicare un componente aggiuntivo per Office) |
+| **App di Office** | È possibile pubblicare un componente aggiuntivo per Office in Visual Studio. | [Deploy and publish your Office add-in](/office/dev/add-ins/publish/publish) (Distribuire e pubblicare un componente aggiuntivo per Office) |
 | **Servizio WCF o OData** | I servizi WCF RIA distribuiti in un server Web possono essere usati da altre applicazioni. | [Sviluppo e distribuzione di WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch non è più supportato a partire da Visual Studio 2017, ma può essere comunque distribuito da Visual Studio 2015 e versioni precedenti. | [Distribuzione di applicazioni LightSwitch](/previous-versions/ff872288(v=vs.140)) |
 

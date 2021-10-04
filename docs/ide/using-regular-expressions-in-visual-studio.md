@@ -2,7 +2,7 @@
 title: Usa caratteri jolly
 description: Informazioni su alcuni caratteri di espressione regolare, operatori, costrutti ed esempi di criteri che è possibile usare in Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 09/13/2019
+ms.date: 12/01/2020
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e024dbebaa0c1efef096f8d9b594971a6af8047
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8825efcb35bd36d2165ad9abe490ad67ad58beb5
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078037"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431107"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -39,13 +39,13 @@ La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di
 |Trovare la corrispondenza con qualsiasi carattere singolo (ad eccezione di un'interruzione di riga). Per altre informazioni, vedere [Qualsiasi carattere](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` corrisponde a "aro" in "around" e "abo" in "about" ma non "acro" in "across"|
 |Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza zero o più volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` trova "r" in "rack", "ar" in "ark" e "aar" in "aardvark"|
 |Trova la corrispondenza con qualsiasi carattere zero o più volte.|.*|`c.*e` trova "cke" in "racket", "comme" in "comment" e "code" in "code"|
-|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza una o più volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d` corrisponde a "eed" in "feeder" e "ed" in "faded"|
+|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza una o più volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d` corrisponde a "eed" in "feeder" ed "ed" in "faded"|
 |Trova la corrispondenza con qualsiasi carattere uno o più volte.|.+|`e.+e` corrisponde a "eede" in "feeder" ma non trova corrispondenze in "feed"|
 |Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza zero o più volte (corrispondenza lazy)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`\w*?d` corrisponde a "fad" ed "ed" in "faded" ma non all'intera parola "faded" a causa della corrispondenza differita|
 |Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza una o più volte (corrispondenza lazy)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e\w+?` corrisponde a "ee" in "asleep" ed "ed" in "faded" ma non trova corrispondenze in "fade"|
 |Ancorare la stringa di corrispondenza all'[inizio di una riga o stringa](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car` corrisponde alla parola "auto" solo quando viene visualizzata all'inizio di una riga|
 |Ancorare la stringa di corrispondenza alla [fine di una riga o stringa](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`car\r?$` corrisponde a "auto" solo quando viene visualizzata alla fine di una riga|
-|Ancorare la stringa di corrispondenza alla fine del file|$|`car$` corrisponde a "auto" solo quando viene visualizzata alla fine del file|
+|Ancorare la stringa di corrispondenza alla fine del file|$|`car$` corrisponde a "car" solo quando viene visualizzata alla fine del file|
 |Trovare la corrispondenza con qualsiasi carattere singolo in un set|[abc]|`b[abc]` corrisponde a "ba", "bb" e "bc"|
 |Trovare la corrispondenza con qualsiasi carattere in un intervallo di caratteri|[a-f]|`be[n-t]` corrisponde a "bet" in "between", "ben" in "below" e "bes" in "beside", ma non trova corrispondenze in "below"|
 |Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]". Per altre informazioni, vedere [Gruppi Capture e criteri di sostituzione](#capture-groups-and-replacement-patterns). |
@@ -74,7 +74,7 @@ Per creare un gruppo Capture numerato, racchiudere la sottoespressione tra paren
 
 - **all'interno dell'espressione regolare**: usare `\number` . Ad esempio, `\1` nell'espressione regolare `(\w+)\s\1` fa riferimento al primo gruppo Capture `(\w+)`.
 
-- **in un modello di sostituzione:** usare `$number` . Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` definisce due gruppi: il primo gruppo contiene una singola cifra decimale e il secondo gruppo contiene un carattere singolo compreso tra **a** e **z**. L'espressione trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` fa riferimento solo al primo gruppo (`$1`) e converte la stringa in **z1 z2 z3 z4**.
+- **in un modello di sostituzione**: usare `$number` . Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` definisce due gruppi: il primo gruppo contiene una singola cifra decimale e il secondo gruppo contiene un carattere singolo compreso tra **a** e **z**. L'espressione trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` fa riferimento solo al primo gruppo (`$1`) e converte la stringa in **z1 z2 z3 z4**.
 
 L'immagine seguente mostra un'espressione regolare `(\w+)\s\1` e una stringa di sostituzione `$1`. Sia l'espressione regolare che il criterio di sostituzione fanno riferimento al primo gruppo Capture numerato automaticamente 1. Quando si sceglie **Sostituisci tutto** nella finestra di dialogo **Sostituzione veloce** in Visual Studio, le parole ripetute vengono rimosse dal testo.
 
@@ -91,7 +91,7 @@ I gruppi Capture denominati, come i gruppi Capture numerati, possono essere usat
 
 - **all'interno dell'espressione regolare**: usare `\k<name>` . Ad esempio, `\k<repeated>` nell'espressione regolare `(?<repeated>\w+)\s\k<repeated>` fa riferimento al gruppo Capture denominato `repeated` la cui sottoespressione è `\w+`.
 
-- **in un modello di sostituzione:** usare `${name}` . Ad esempio, `${repeated}`.
+- **in un criterio di sostituzione**: usare `${name}` . Ad esempio, `${repeated}`.
 
 A titolo di esempio, l'immagine seguente mostra un'espressione regolare `(?<repeated>\w+)\s\k<repeated>` e una stringa di sostituzione `${repeated}`. Sia l'espressione regolare che il criterio di sostituzione fanno riferimento al primo gruppo Capture denominato `repeated`. Quando si sceglie **Sostituisci tutto** nella finestra di dialogo **Sostituzione veloce** in Visual Studio, le parole ripetute vengono rimosse dal testo.
 

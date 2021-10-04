@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 920822cca275f0285f922fc49a60af3a3b152d6b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: b2e8be7668109bcd7409e5c8c17fe0ae95ec1190
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126625332"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430547"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
@@ -108,7 +108,7 @@ Esempio:
 ```json
 {
     "site_name": "web-app",
-    "python_version": ["3.5.2", "2.7.12"],
+    "python_version": ["3.5.2"],
     "use_azure": "y",
 
     "_visual_studio": {

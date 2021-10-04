@@ -1,6 +1,6 @@
 ---
 title: Individuare la DLL in cui si è | Microsoft Docs
-description: Usare la finestra Moduli per identificare la DLL esterna attiva quando l'applicazione si arresta in modo anomalo. È possibile eseguire questa operazione per una DLL di sistema o per il codice di un altro utente.
+description: Usare la finestra Moduli per identificare la DLL esterna attiva in caso di arresto anomalo dell'applicazione. È possibile eseguire questa operazione per una DLL di sistema o per il codice di un altro utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -25,14 +25,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d4336c741aac8eded2ce529f5a3fa57dd5abf1d6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a1a76976dc630074768bb14bc39fc480278962fa
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128364"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431354"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Procedura: Trovare la DLL in cui si è arrestato il programma (C#, C++, Visual Basic, F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Procedura: Trovare la DLL in cui si è generato l'arresto anomalo del programma (C#, C++, Visual Basic, F#)
 
  Se l'applicazione si arresta in modo anomalo durante la chiamata a una DLL di sistema o al codice di un altro utente, è necessario identificare la DLL attiva al momento dell'arresto. Se si verifica un arresto anomalo in una DLL esterna al programma, è possibile identificarne la posizione utilizzando la finestra **Moduli**.
 
@@ -40,7 +40,7 @@ ms.locfileid: "122128364"
 
 1. Annotare l'indirizzo in cui si è verificato l'arresto.
 
-    Se l'indirizzo non viene visualizzato nel messaggio di errore, potrebbe essere necessario usare metodi alternativi per identificare la DLL. Se si sospetta una DLL di sistema, è possibile [caricare i](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) simboli dai server di simboli Microsoft durante il debug. In caso contrario, potrebbe essere necessario [creare un file dump](../debugger/using-dump-files.md) con informazioni sull'heap. Sono [disponibili vari](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) strumenti per creare file di dump.
+    Se l'indirizzo non viene visualizzato nel messaggio di errore, potrebbe essere necessario usare metodi alternativi per identificare la DLL. Se si sospetta una DLL di sistema, è possibile [caricare i simboli](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) dai server di simboli Microsoft durante il debug. In caso contrario, potrebbe essere necessario [creare un file di dump](../debugger/using-dump-files.md) con informazioni sull'heap. Sono disponibili diversi strumenti per creare file di dump.
 
 2. Scegliere **Finestre** dal menu **Debug**, quindi **Moduli**.
 
