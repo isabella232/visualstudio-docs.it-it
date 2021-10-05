@@ -1,17 +1,17 @@
 ---
-title: Configurare Visual Studio Container Tools
+title: Configurare strumenti Visual Studio contenitore
 description: Configurare gli strumenti disponibili in Visual Studio per l'uso di contenitori Docker.
 author: ghogen
 ms.author: ghogen
 ms.topic: how-to
-ms.date: 03/20/2019
+ms.date: 09/17/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 91ed17af9900c068af7e81ce3902e68063814d82
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: abe4eea99bbf2920e65e03655d7203409743ac53
+ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126631758"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129439730"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Come configurare gli strumenti Visual Studio Container
 
@@ -45,17 +45,17 @@ La tabella seguente può essere utile per decidere come impostare queste opzioni
 | Pull automatico delle immagini Docker richieste al caricamento del progetto | On | Modello di Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si stanno semplicemente caricando progetti ed esplorando codice, è possibile disattivare questa opzione per evitare che vengano scaricate immagini del contenitore non necessarie. |
 | Avvia automaticamente i contenitori in background | On | Modello di Docker Compose | Sempre per ottenere migliori prestazioni, Visual Studio crea un contenitore con punti di montaggio di volume pronti per quando viene compilato ed eseguito il contenitore. Se si vuole controllare quando viene creato il contenitore, disattivare questa opzione. |
 | Termina automaticamente i contenitori alla chiusura della soluzione | On | Modello di Docker Compose | Disattivare questa opzione se si vuole che i contenitori della soluzione continuino a essere eseguiti dopo la chiusura della soluzione o di Visual Studio. |
-| Non chiedere di considerare attendibile il certificato SSL per localhost | Off | ASP.NET Core 2.1 | Se il certificato SSL per localhost non è attendibile, Visual Studio lo richiederà ogni volta che si eseguirà il progetto, a meno che questa casella di controllo non sia selezionata. |
+| Non chiedere di considerare attendibile il certificato SSL per localhost | Off | ASP.NET Core 2.1 | Se il certificato SSL localhost non è attendibile, Visual Studio verrà richiesto quando si esegue un progetto ASP.NET Core 2.x, a meno che questa casella di controllo non sia selezionata o che il certificato sia già attendibile. |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Nella tabella seguente vengono descritte **le impostazioni** generali:
+La tabella seguente descrive le **impostazioni** generali:
 
 | Nome | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
 | Installare Docker Desktop, se necessario | Richiedi conferma | Single Project, Docker Compose | Scegliere se si vuole che venga richiesto se Docker Desktop non è installato. |
-| Considerare attendibile ASP.NET Core certificato SSL | Richiedi conferma | ASP.NET Core Progetti 2.x | Se **l'opzione è impostata** su Richiedi conferma, se il certificato SSL localhost non è attendibile, Visual Studio verrà richiesto ogni volta che si esegue il progetto. |
+| Considerare attendibile ASP.NET Core certificato SSL | Richiedi conferma | ASP.NET Core Progetti 2.x | Se l'opzione **è** impostata su Richiedi conferma, se il certificato SSL localhost non è attendibile, Visual Studio verrà richiesto ogni volta che si esegue un progetto ASP.NET Core 2.x. |
 
 Nella tabella seguente vengono descritte **le impostazioni Project** e **Docker Compose** single-Docker Compose:
 
@@ -64,7 +64,7 @@ Nella tabella seguente vengono descritte **le impostazioni Project** e **Docker 
 | Eseguire il pull delle immagini Docker necessarie all'apertura del progetto | Vero | Single Project, Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si stanno semplicemente caricando progetti ed esplorando il codice, è possibile impostare su **False** per evitare di scaricare le immagini del contenitore non necessarie. |
 | Eseguire il pull delle immagini Docker aggiornate all'apertura del progetto | Progetti .NET Core | Single Project, Docker Compose | Quando si apre un progetto, verificare la disponibilità di aggiornamenti per le immagini e scaricarli, se disponibili. |
 | Eseguire contenitori all'apertura del progetto | Vero | Single Project, Docker Compose | Anche in questo caso, Visual Studio crea un contenitore in anticipo in modo che sia pronto per la compilazione e l'esecuzione del contenitore. Se si vuole controllare quando viene creato il contenitore, impostare su **False.** |
-| Rimuovere i contenitori alla chiusura del progetto | Vero | Single Project, Docker Compose | Impostare su **False** se si vuole che i contenitori della soluzione siano mantenuti dopo la chiusura della soluzione o la chiusura Visual Studio. |
+| Rimuovere i contenitori alla chiusura del progetto | Vero | Single Project, Docker Compose | Impostare su **False** se si desidera che i contenitori della soluzione siano mantenuti dopo la chiusura della soluzione o la chiusura Visual Studio. |
 
 Le **impostazioni della finestra degli strumenti** Contenitori controllano le impostazioni che si applicano alla finestra degli strumenti Contenitori, che mostra informazioni sui contenitori e le immagini Docker.  Vedere [Usare la finestra Contenitori](view-and-diagnose-containers.md)
 

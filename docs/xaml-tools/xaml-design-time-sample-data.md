@@ -8,23 +8,34 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: cf3fbfc29b79d04ae71fa4ba50815b22045997c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b12ab7e93fbd7c7adab188492853ec4a9230cc7d
+ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114537"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129439808"
 ---
 # <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati di esempio in fase di progettazione con finestra di progettazione XAML in Visual Studio
 
-Alcuni controlli che si distoglieno i dati, ad esempio ListView, ListBox o DataGrid, sono difficili da visualizzare senza dati. In questo documento verrà esaminato un nuovo approccio che consente agli sviluppatori che lavorano su progetti **WPF .NET Core** o **progetti wpf .NET Framework** con la nuova finestra di progettazione di abilitare i dati di esempio in questi controlli. 
+Alcuni controlli che si rivoluzionano ai dati, ad esempio , e , sono difficili `ListView` `ListBox` da visualizzare senza `DataGrid` dati. In questo articolo verrà esaminato un nuovo approccio che consente agli sviluppatori che lavorano a progetti .NET Core Windows Presentation Foundation (WPF) o progetti wpf .NET Framework con finestra di progettazione XAML in Visual Studio di abilitare i dati di esempio in questi controlli. 
 
-## <a name="sample-data-feature-basics"></a>Nozioni di base sulla funzionalità dei dati di esempio
+## <a name="requirements"></a>Requisiti
 
-I dati di esempio sono solo per la visualizzazione in fase di progettazione, ovvero vengono visualizzati solo nella finestra di progettazione XAML, non nell'app in esecuzione. Di conseguenza, viene applicato alla versione in fase di progettazione della proprietà ItemsSource `d:ItemsSource` . Per il funzionamento dei dati di esempio è necessario lo spazio dei nomi della fase di progettazione. Per iniziare, aggiungere le righe di codice seguenti all'intestazione del documento XAML, se non sono già presenti:
+La funzionalità Dati di esempio richiede Visual Studio 2019 [versione 16.10](/visualstudio/releases/2019/release-notes-v16.10) o successiva.
+
+La funzionalità supporta Windows progetti desktop che hanno come destinazione WPF per .NET Core o .NET Framework quando si usa la nuova finestra di progettazione. Per abilitare la nuova finestra di progettazione per .NET Framework:
+
+1. Passare a **Strumenti Opzioni**  >  **Opzioni Funzionalità**  >  **di** anteprima  >  **dell'ambiente**.
+2. Selezionare **New WPF finestra di progettazione XAML for .NET Framework**, quindi riavviare Visual Studio.
+
+## <a name="basics-of-the-sample-data-feature"></a>Nozioni di base sulla funzionalità Dati di esempio
+
+La funzionalità Dati di esempio è solo per la visualizzazione in fase di progettazione. Viene visualizzato solo nella finestra di progettazione XAML, non nell'app in esecuzione. Di conseguenza, viene applicato alla versione in fase di progettazione della `ItemsSource` proprietà `d:ItemsSource` . Per il funzionamento dei dati di esempio è necessario che lo spazio dei nomi della fase di progettazione funzioni. 
 
 > [!NOTE]
-> Per [altre informazioni sulle proprietà della](../xaml-tools/xaml-designtime-data.md) fase di progettazione in XAML, vedere Proprietà della fase di progettazione XAML.
+> Per altre informazioni sulle proprietà della fase di progettazione in XAML, vedere [Proprietà della fase di progettazione XAML.](../xaml-tools/xaml-designtime-data.md)
+
+Per iniziare, aggiungere le righe di codice seguenti all'intestazione del documento XAML, se non sono già presenti:
 
 ```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -32,22 +43,23 @@ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
 ```
 
-Dopo aver aggiunto gli spazi dei nomi, puoi usare per abilitare i dati `d:ItemsSource="{d:SampleData}"` di esempio in ListView, Listbox o DataGrid. Esempio:
+Dopo aver aggiunto gli spazi dei nomi, è possibile usare per abilitare i dati `d:ItemsSource="{d:SampleData}"` di esempio nel controllo , o `ListView` `Listbox` `DataGrid` . Ad esempio:
 
 ```xml
 <DataGrid d:ItemsSource="{d:SampleData}"/>
 ```
 
-[![Dati di esempio con DataGrid](media\xaml-sample-data-empty-datagrid.png "Dati di esempio abilitati in datagrid")](media\xaml-sample-data-empty-datagrid.png#lightbox)
+[![Screenshot che mostra i dati di esempio in una griglia dei dati.](media\xaml-sample-data-empty-datagrid.png "Dati di esempio abilitati in una griglia dati")](media\xaml-sample-data-empty-datagrid.png#lightbox)
 
-In questo esempio, senza `d:ItemsSource="{d:SampleData}"` il finestra di progettazione XAML verrà visualizzato un datagrid vuoto. Al contrario, `d:SampleData` con ora vengono visualizzati i dati di esempio predefiniti generati.
+In questo esempio, senza `d:ItemsSource="{d:SampleData}"` , il finestra di progettazione XAML mostra una griglia dei dati vuota. Al contrario, `d:SampleData` con , ora vengono visualizzati i dati di esempio predefiniti generati.
 
-Per impostazione predefinita, vengono visualizzati 5 elementi. È tuttavia possibile usare la **proprietà ItemCount** per specificare il numero di elementi da visualizzare. Per esempio: `d:ItemsSource="{d:SampleData ItemCount=2}"`
+Per impostazione predefinita, vengono visualizzati cinque elementi. È tuttavia possibile usare la `ItemCount` proprietà per specificare il numero di elementi da visualizzare. Ad esempio: `d:ItemsSource="{d:SampleData ItemCount=2}"`.
 
-## <a name="sample-data-works-with-datatemplates"></a>I dati di esempio funzionano con i modelli di dati
+## <a name="sample-data-with-data-templates"></a>Dati di esempio con modelli di dati
 
-Dati di esempio funziona per i controlli ListBox, ListView o DataGrid quando si usano modelli di dati. La funzionalità Dati di esempio analerà il DataTemplate e tenterà di generare i dati appropriati. I dati di esempio verranno generati solo per gli elementi in DataTemplate che usano associazioni. I dati di esempio verranno generati anche se le associazioni non hanno ancora un'origine.
-Esempio:
+La funzionalità Dati di esempio funziona per `ListBox` i controlli , o quando si usano modelli di `ListView` `DataGrid` dati. La funzionalità analerà `DataTemplate` il controllo e tenterà di generare i dati appropriati. 
+
+I dati di esempio verranno generati solo per gli elementi nei modelli di dati che usano associazioni. I dati di esempio verranno generati anche se le associazioni non hanno ancora un'origine. Ad esempio:
 
 ```xml
 <ListView d:ItemsSource="{d:SampleData ItemCount=3}">
@@ -65,32 +77,26 @@ Esempio:
 </ListView>
 ```
 
-[![ListView di dati di esempio con datatemplate](media\xaml-sample-data-templated-listview.png "Dati di esempio usati in un controllo ListView con un DataTemplate")](media\xaml-sample-data-templated-listview.png#lightbox)
+[![Screenshot che mostra i dati di esempio in una visualizzazione elenco con un modello di dati.](media\xaml-sample-data-templated-listview.png "Dati di esempio usati in una visualizzazione elenco con un modello di dati")](media\xaml-sample-data-templated-listview.png#lightbox)
 
-## <a name="enable-sample-data-with-suggested-actions"></a>Abilitare i dati di esempio con le azioni suggerite
+## <a name="sample-data-with-suggested-actions"></a>Dati di esempio con azioni suggerite
 
-Per abilitare o disabilitare facilmente i dati di esempio per un controllo dalla finestra di progettazione, è possibile usare la funzionalità Azioni suggerite. Suggested Actions (Azioni suggerite) è una lampadina nella finestra di progettazione visualizzata in alto a destra quando si seleziona un controllo. È possibile abilitare Dati di esempio selezionando il controllo, facendo clic sulla lampadina e quindi su `Show Sample Data` . Esempio:
+Per abilitare o disabilitare facilmente i dati di esempio per un controllo dalla finestra di progettazione, è possibile usare la funzionalità Azioni suggerite. Azioni suggerite è una lampadina nella finestra di progettazione visualizzata in alto a destra quando si seleziona un controllo. È possibile abilitare i dati di esempio selezionando il controllo, selezionando la lampadina e quindi **selezionando Mostra dati di esempio**. Ad esempio:
 
-[![Azioni suggerite per i dati di esempio](media\xaml-sample-data-suggested-actions.png "Abilitare i dati di esempio con le azioni suggerite")](media\xaml-sample-data-suggested-actions.png#lightbox)
+[![Screenshot che mostra i dati di esempio con Azioni suggerite.](media\xaml-sample-data-suggested-actions.png "Abilitare i dati di esempio con Azioni suggerite")](media\xaml-sample-data-suggested-actions.png#lightbox)
 
-## <a name="sample-data-with-ivalueconverters"></a>Dati di esempio con IValueConverter 
+## <a name="sample-data-with-the-ivalueconverter-interface"></a>Dati di esempio con l'interfaccia IValueConverter 
 
-I convertitori non sono completamente supportati dalla funzionalità Dati di esempio. È tuttavia possibile farlo funzionare eseguendo una o entrambe le operazioni seguenti:
-- Assicurarsi che la `Convert` funzione sia in grado di gestire uno scenario in cui il valore è già targetType.
+La funzionalità Dati di esempio non supporta completamente i convertitori o `IValueConverter` l'interfaccia. È tuttavia possibile farlo funzionare eseguendo una o entrambe le operazioni seguenti:
 
+- Assicurarsi che la `Convert` funzione possa gestire uno scenario in cui il valore è già il tipo di destinazione.
 - Implementare `ConvertBack` la funzione che riconvertirà il valore nel tipo originale. 
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se i dati di esempio non mostrano nulla o non visualizzano il tipo corretto, è possibile provare ad aggiornare la finestra di progettazione o chiudere e riaperre la pagina.
+Se i dati di esempio non mostrano nulla o non visualizzano il tipo corretto, è possibile provare ad aggiornare la finestra di progettazione o chiudere e riaprire la pagina.
 
-Se si verifica un problema che non è elencato in questa sezione o non può essere risolto aggiornando la pagina, segnalarci usando lo strumento Segnala [un](../ide/how-to-report-a-problem-with-visual-studio.md) problema.
-
-### <a name="requirements"></a>Requisiti
-
-- Dati di esempio richiede Visual Studio 2019 [versione 16.10](/visualstudio/releases/2019/release-notes-v16.10) o successiva.
-
-- Supporta Windows desktop che hanno come destinazione Windows Presentation Foundation (WPF) per .NET Core o .NET Framework quando si usa la nuova finestra di progettazione. Per abilitare la nuova finestra di progettazione per .NET Framework passare a Strumenti > Opzioni > Environment > Preview Features (Funzionalità di anteprima dell'ambiente >), selezionare New WPF finestra di progettazione XAML for .NET Framework (Nuovo finestra di progettazione XAML WPF per .NET Framework) e quindi riavviare Visual Studio.
+Se si verifica un problema che non è elencato in questa sezione o che non può essere risolto aggiornando la pagina, segnalarci il problema usando lo strumento Segnala [un](../ide/how-to-report-a-problem-with-visual-studio.md) problema.
 
 ## <a name="see-also"></a>Vedi anche
 

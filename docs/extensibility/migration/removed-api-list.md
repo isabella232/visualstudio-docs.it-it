@@ -1,6 +1,6 @@
 ---
 title: API rimosse in Visual Studio 2022 Preview
-description: Informazioni sulle API di VS SDK rimosse in Visual Studio 2022 Preview, per gli autori di estensioni che aggiornano le estensioni per funzionare con Visual Studio 2022 Preview.
+description: Informazioni sulle API di VS SDK rimosse in Visual Studio 2022 Preview, per gli autori di estensioni che aggiornano le estensioni in modo che funzionino con Visual Studio 2022 Preview.
 ms.date: 06/08/2021
 ms.topic: reference
 author: leslierichardson95
@@ -11,12 +11,12 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 4501fdb465452eff1623e39c50e8c97f3bb5ca5b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: cac7b6bcc3e6313e36c97b76a140a25e589d571b
+ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126711707"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129439782"
 ---
 # <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK ha rimosso le API
 
@@ -78,7 +78,7 @@ E `IVsTextScanner` `IVsFullTextScanner` vengono rimossi in Visual Studio 2022. T
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
-Gli utenti `IVsTextScanner` di o devono usare invece ( `IVsFullTextScanner` `IVsTextLines` [documentazione](/dotnet/apimicrosoft.visualstudio.textmanager.interop.ivstextlines.getlinetext)).
+Gli utenti `IVsTextScanner` di o devono usare invece ( `IVsFullTextScanner` `IVsTextLines` [documentazione](/dotnet/api/microsoft.visualstudio.textmanager.interop.ivstextlines.getlinetext).
 
 ## <a name="asynchronous-solution-load-and-lightweight-solution-load"></a>Caricamento asincrono della soluzione e caricamento leggero della soluzione
 
@@ -110,7 +110,7 @@ Nessuno.
 
 ## <a name="ivsdummy"></a>IVsDummy
 
-`IVsDummy`L'oggetto viene rimosso Visual Studio 2022 e non verrà sostituito. 
+`IVsDummy`L'oggetto viene rimosso in Visual Studio 2022 e non verrà sostituito. 
 
 ### <a name="recommended-updates"></a>Aggiornamenti consigliati
 
@@ -118,7 +118,7 @@ Nessuno. Tuttavia, non dovrebbe avere alcun impatto perché l'API non ha fatto n
 
 ## <a name="microsoftvisualstudioshelltask"></a>Microsoft.VisualStudio.Shell.Task
 
-La `Microsoft.VisualStudio.Shell.Task` classe è stata rinominata in modo da non essere in conflitto con la classe molto `Microsoft.VisualStudio.Shell.TaskListItem` `System.Threading.Tasks.Task` comune.
+La `Microsoft.VisualStudio.Shell.Task` classe è stata rinominata in modo da non essere in conflitto con la classe molto `Microsoft.VisualStudio.Shell.TaskListItem` `System.Threading.Tasks.Task` diffusa.
 
 ## <a name="open-from-source-safe"></a>Apri dal codice sorgente sicuro
 
@@ -132,7 +132,7 @@ Il supporto per l'apertura di una soluzione dal codice sorgente è in fase di ri
 
 Nessuno.
 
-## <a name="new-wpf-xaml-designer-for-net-framework"></a>Nuove finestra di progettazione XAML WPF per .NET Framework
+## <a name="new-wpf-xaml-designer-for-net-framework"></a>Nuovo finestra di progettazione XAML WPF per .NET Framework
 
 L'finestra di progettazione XAML WPF corrente per .NET Framework è stato deprecato e verrà sostituito con un nuovo finestra di progettazione XAML WPF per .NET Framework, basato sulla stessa architettura usata per WPF finestra di progettazione XAML per .NET (.NET Core). Ciò significa anche che wpf .NET Framework modello di estendibilità dei controlli basato su .design.dll e Microsoft. Windows. Design.Extensibility non è più supportato. Il nuovo modello finestra di progettazione XAML WPF .NET Framework fornirà lo stesso modello di estendibilità di WPF finestra di progettazione XAML per .NET (.NET Core). Se è già stata creata un'estensione .designtools.dll per .NET (.NET Core), tale estensione funzionerà per il nuovo finestra di progettazione XAML WPF per .NET Framework. Fare riferimento al collegamento alla migrazione seguente per altre informazioni su come eseguire la migrazione al nuovo modello di estendibilità per le piattaforme WPF (.NET Framework e .NET Core) e le piattaforme UWP in futuro. 
 

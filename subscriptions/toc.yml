@@ -16,15 +16,15 @@
               href: vscloud-billing-faq.yml
             - name: Acquisto per i CSP
               href: vscloud-csp.md
-        - name: Microsoft Partner Network
-          items:
-            - name: Sottoscrizioni per i partner
-              href: program-mpn.md
-            - name: Gestire le sottoscrizioni per MPN
-              href: manage-mpn-subscriptions.md
-        - name: Microsoft for Startups
-          href: program-startups.md
-    - name: Accedi
+            - name: Microsoft Partner Network
+              items:
+                - name: Sottoscrizioni per i partner
+                  href: program-mpn.md
+                - name: Gestire le sottoscrizioni per MPN
+                  href: manage-mpn-subscriptions.md
+            - name: Microsoft for Startups
+              href: program-startups.md
+    - name: Accedere al portale per i sottoscrittori
       items:
         - name: Accedere con account Microsoft
           href: sign-in-msa.md
@@ -48,164 +48,154 @@
       href: subscription-expiration.md
     - name: Modifiche a livello di sottoscrizione
       href: subscription-level-changes.md
-    - name: Sottoscrizioni rimosse dagli amministratori
+    - name: Sottoscrizioni rimosse
       href: subscription-removed.md
-    - name: Contattare l'amministratore delle sottoscrizioni
-      href: contact-my-admin.md
-    - name: Vantaggi
-      items:
-        - name: Informazioni sui vantaggi
-          href: about-benefits.md
-        - name: Offerte di sviluppo/test di Azure
-          items:
-            - name: Per singoli utenti (crediti)
-              items:
-                - name: Credito individuale per Azure DevTest
-                  href: vs-azure.md
-            - name: Per le organizzazioni
-              items:
-                - name: Azure DevTest con pagamento in base al consumo
-                  href: vs-azure-payg.md
-                - name: Azure EA DevTest
-                  href: azure-ea-devtest.md
-        - name: Strumenti
-          items:
-            - name: Azure DevOps
-              href: vs-azure-devops.md
-            - name: CAST Highlight
-              href: vs-cast.md
-            - name: CloudPilot
-              href: vs-cloudpilot.md
-            - name: GitHub Enterprise
-              href: access-github.md
-            - name: Microsoft 365 Apps for enterprise
-              href: microsoft-365-apps-for-enterprise.md
-            - name: Sviluppatore Microsoft 365
-              href: vs-m365.md
-            - name: Parasoft
-              href: vs-parasoft.md
-            - name: Power BI Pro
-              href: vs-pbi.md
-            - name: Visual Studio App Center
-              href: vs-visual-studio-app-center.md
-            - name: IDE di Visual Studio
-              href: vs-ide-benefit.md
-            - name: WhiteSource Bolt
-              href: vs-whitesource.md
-            - name: Account sviluppatore per Windows
-              href: vs-windows-dev.md
-            - name: Desktop virtuale Windows
-              href: vs-windows-virtual-desktop.md
-        - name: Sviluppo professionale
-          items:
-            - name: CODE Magazine
-              href: vs-code-magazine.md
-            - name: DataCamp
-              href: vs-datacamp.md
-            - name: LinkedIn Learning
-              href: vs-linkedin-learning.md
-            - name: Pluralsight
-              href: vs-pluralsight.md
-        - name: Supporto
-          items:
-            - name: Community di Azure
-              href: vs-azure-community.md
-            - name: Supporto Concierge
-              href: vs-concierge-chat.md
-            - name: Supporto tecnico
-              href: vs-tech-support.md
-            - name: Community degli sviluppatori
-              href: vs-developer-community.md
-            - name: Domande e risposte Microsoft
-              href: vs-microsoft-qa.md
-            - name: Microsoft Tech Community
-              href: vs-microsoft-tech-community.md
-- name: Software e chiavi
+- name: Contattare l'amministratore delle sottoscrizioni
+  href: contact-my-admin.md
+- name: Vantaggi di Azure
   items:
-    - name: Download di software
+    - name: Credito individuale per Azure DevTest
+      href: vs-azure.md
+    - name: Azure DevTest con pagamento in base al consumo
+      href: vs-azure-payg.md
+    - name: Azure EA DevTest
+      href: azure-ea-devtest.md
+    - name: Azure DevOps
+      href: vs-azure-devops.md
+- name: GitHub Enterprise
+  href: access-github.md
+- name: IDE di Visual Studio
+  href: vs-ide-benefit.md
+- name: Altri vantaggi
+  items:
+    - name: Informazioni sui vantaggi
+      href: about-benefits.md
+    - name: Strumenti
       items:
-        - name: Disponibilità dei prodotti
-          href: product-availability.md
-        - name: Scaricare il software
-          href: download-software.md
+        - name: CAST Highlight
+          href: vs-cast.md
+        - name: CloudPilot
+          href: vs-cloudpilot.md
+        - name: Microsoft 365 Apps for enterprise
+          href: microsoft-365-apps-for-enterprise.md
+        - name: Sviluppatore Microsoft 365
+          href: vs-m365.md
+        - name: Parasoft
+          href: vs-parasoft.md
+        - name: Power BI Pro
+          href: vs-pbi.md
+        - name: Visual Studio App Center
+          href: vs-visual-studio-app-center.md
+        - name: WhiteSource Bolt
+          href: vs-whitesource.md
+        - name: Account sviluppatore per Windows
+          href: vs-windows-dev.md
+        - name: Desktop virtuale Windows
+          href: vs-windows-virtual-desktop.md
+    - name: Sviluppo professionale
+      items:
+        - name: CODE Magazine
+          href: vs-code-magazine.md
+        - name: DataCamp
+          href: vs-datacamp.md
+        - name: LinkedIn Learning
+          href: vs-linkedin-learning.md
+        - name: Pluralsight
+          href: vs-pluralsight.md
+    - name: Supporto
+      items:
+        - name: Community di Azure
+          href: vs-azure-community.md
+        - name: Supporto Concierge
+          href: vs-concierge-chat.md
+        - name: Supporto tecnico
+          href: vs-tech-support.md
+        - name: Community degli sviluppatori
+          href: vs-developer-community.md
+        - name: Domande e risposte Microsoft
+          href: vs-microsoft-qa.md
+        - name: Microsoft Tech Community
+          href: vs-microsoft-tech-community.md
+- name: Download di software
+  items:
+    - name: Disponibilità dei prodotti
+      href: product-availability.md
+    - name: Scaricare il software
+      href: download-software.md
     - name: Elenco dei download di software disponibili
       href: software-download-list.md
-    - name: Codici Product Key
-      items:
-        - name: Panoramica dei codici Product Key
-          href: product-keys.md
-        - name: Trovare e richiedere chiavi
-          href: find-keys.md
-        - name: Dimostrazioni Internet
-          href: internet-demos.md
-- name: Amministratori
+- name: Codici Product Key
+  items:
+    - name: Panoramica dei codici Product Key
+      href: product-keys.md
+    - name: Trovare e richiedere chiavi
+      href: find-keys.md
+    - name: Offerte di demo Internet e Servizi Desktop remoto
+      href: internet-demos.md
+- name: Responsabilità degli amministratori
   items:
     - name: Responsabilità degli amministratori
+      href: admin-responsibilities.md
+    - name: Inventario pre-produzione
+      href: admin-inventory.md
+    - name: Gestire team di grandi dimensioni e collaboratori esterni
+      href: manage-teams.md
+    - name: Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini
+      href: assignments-orders.md
+- name: Accesso al portale di amministrazione
+  items:
+    - name: Contratti multilicenza
+      href: volume-license.md
+    - name: MPSA
+      href: mpsa.md
+    - name: Sottoscrizioni al cloud
+      href: cloud-admin.md
+    - name: Gestione dei partner per i clienti
+      href: open-migration.md
+    - name: 'Esercitazione video: Accedere al portale di amministrazione'
+      href: 'https://www.microsoft.com/videoplayer/embed/RE4th6L'
+- name: Uso del portale di amministrazione
+  items:
+    - name: Amministratori avanzati e amministratori
+      href: admin-roles.md
+    - name: Impostare le preferenze per i contratti
+      href: admin-preferences.md
+    - name: Panoramica
+      href: using-admin-portal.md
+    - name: Aggiungere sottoscrizioni mensili
+      href: add-monthly-subs.md
+    - name: Assegnare sottoscrizioni
       items:
-        - name: Responsabilità degli amministratori
-          href: admin-responsibilities.md
-        - name: Inventario pre-produzione
-          href: admin-inventory.md
-        - name: Gestire team di grandi dimensioni e collaboratori esterni
-          href: manage-teams.md
-        - name: Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini
-          href: assignments-orders.md
-    - name: Accesso al portale di amministrazione
-      items:
-        - name: Contratti multilicenza
-          href: volume-license.md
-        - name: MPSA
-          href: mpsa.md
-        - name: Sottoscrizioni al cloud
-          href: cloud-admin.md
-        - name: Gestione dei partner per i clienti
-          href: open-migration.md
-        - name: 'Esercitazione video: Accedere al portale di amministrazione'
-          href: 'https://www.microsoft.com/videoplayer/embed/RE4th6L'
-    - name: Uso del portale di amministrazione
-      items:
-        - name: Amministratori avanzati e amministratori
-          href: admin-roles.md
-        - name: Impostare le preferenze per i contratti
-          href: admin-preferences.md
-        - name: Panoramica
-          href: using-admin-portal.md
-        - name: Aggiungere sottoscrizioni mensili
-          href: add-monthly-subs.md
-        - name: Assegnare sottoscrizioni
-          items:
-            - name: Aggiungere utenti singoli
-              href: assign-license.md
-            - name: Aggiungere più utenti
-              href: assign-license-bulk.md
-            - name: Assegnare sottoscrizioni specifiche
-              href: assign-guid.md
-        - name: Spostare le sottoscrizioni in nuovi contratti
-          href: migrate-subscriptions.md
-        - name: Modificare sottoscrizioni
-          href: edit-license.md
-        - name: Eliminare sottoscrizioni
-          href: delete-license.md
-        - name: Cercare una sottoscrizione
-          href: search-license.md
-        - name: Esportare sottoscrizioni
-          href: exporting-subscriptions.md
-        - name: Sovrassegnazioni
-          href: handle-overclaimed-license.md
-        - name: Utilizzo massimo
-          href: maximum-usage.md
-        - name: Cosa accade alla scadenza dei contratti
-          href: admin-expiration.md
-        - name: Sottoscrizioni scadute
-          href: handle-expired-license.md
-        - name: Sottoscrizioni rimosse da Microsoft
-          href: account-removed.md
-        - name: 'Scenari di accesso del sottoscrittore  '
-          href: aliasing.md
-        - name: Sottoscrittori con accesso tramite posta elettronica personale
-          href: personal-email-sign-ins.md
-        - name: Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise
-          href: assign-github.md
+        - name: Aggiungere utenti singoli
+          href: assign-license.md
+        - name: Aggiungere più utenti
+          href: assign-license-bulk.md
+        - name: Assegnare sottoscrizioni specifiche
+          href: assign-guid.md
+    - name: Spostare le sottoscrizioni in nuovi contratti
+      href: migrate-subscriptions.md
+    - name: Modificare sottoscrizioni
+      href: edit-license.md
+    - name: Eliminare sottoscrizioni
+      href: delete-license.md
+    - name: Cercare una sottoscrizione
+      href: search-license.md
+    - name: Esportare sottoscrizioni
+      href: exporting-subscriptions.md
+    - name: Sovrassegnazioni
+      href: handle-overclaimed-license.md
+    - name: Utilizzo massimo
+      href: maximum-usage.md
+    - name: Cosa accade alla scadenza dei contratti
+      href: admin-expiration.md
+    - name: Sottoscrizioni scadute
+      href: handle-expired-license.md
+    - name: 'Scenari di accesso del sottoscrittore '
+      href: aliasing.md
+    - name: Sottoscrittori con accesso tramite posta elettronica personale
+      href: personal-email-sign-ins.md
+    - name: Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise
+      href: assign-github.md
 - name: Risorse
   items:
     - name: White paper sulle licenze per Visual Studio

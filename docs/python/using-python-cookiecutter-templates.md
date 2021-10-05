@@ -11,20 +11,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b2e8be7668109bcd7409e5c8c17fe0ae95ec1190
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 204e10f06dfa298e001d89781941c5638c80175b
+ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430547"
+ms.locfileid: "129439912"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) offre un'interfaccia utente grafica per individuare modelli, opzioni del modello di input e creare progetti e file. Questa estensione è inclusa in Visual Studio 2017 e versioni successive e può essere installata separatamente nelle versioni precedenti di Visual Studio.
 
-Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python mentre Visual Studio è in esecuzione, selezionare il pulsante **Home** sulla barra degli strumenti di Cookiecutter per rilevare l'interprete appena installato. Per altre informazioni sugli ambienti in generale, vedere Ambienti [Python.](managing-python-environments-in-visual-studio.md)
+Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python Visual Studio in esecuzione, selezionare il pulsante **Home** sulla barra degli strumenti Cookiecutter per rilevare l'interprete appena installato. Per altre informazioni sugli ambienti in generale, vedere Ambienti [Python.](managing-python-environments-in-visual-studio.md)
 
-Dopo l'installazione, **selezionare**  >  **Visualizza Cookiecutter Explorer** per aprire la relativa finestra:
+Dopo l'installazione, **selezionare Visualizza**  >  **Cookiecutter Explorer** per aprire la relativa finestra:
 
 ![Finestra principale di Cookiecutter](media/cookiecutter-overview.png)
 
@@ -49,7 +49,7 @@ Quando si seleziona un modello e si fa clic su **Next** (Avanti), Cookiecutter c
 
 Se si seleziona un modello dai gruppi **Recommended** (Consigliati) o **GitHub** oppure si immette un URL personalizzato nella casella di ricerca e si seleziona tale modello, questo viene clonato e installato nel computer locale. Se tale modello è stato installato in una sessione precedente di Visual Studio, questo verrà eliminato automaticamente e verrà clonata la versione più recente.
 
-Se si seleziona un  modello dal gruppo Installato o si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio il modello senza clonazione.
+Se si seleziona un  modello dal gruppo Installato o si immette un percorso di cartella personalizzato nella casella di ricerca e si seleziona tale modello, Visual Studio tale modello senza clonazione.
 
 > [!Important]
 > I modelli di Cookiecutter vengono clonati in un'unica cartella *~/.cookiecutter*. Il nome di ogni sottocartella viene definito in base al nome del repository GIT, che non include il nome utente di GitHub. Possono verificarsi conflitti se si clonano modelli diversi con lo stesso nome provenienti da autori diversi. In questo caso, Cookiecutter impedisce di sovrascrivere il modello esistente con un modello diverso con lo stesso nome. Per installare il nuovo modello, è prima necessario eliminare quello esistente.
@@ -76,18 +76,18 @@ Dopo aver creato correttamente i file, Cookiecutter offre un'opzione per aprire 
 
 ## <a name="cookiecutter-options"></a>Opzioni di Cookiecutter
 
-Le opzioni di Cookiecutter sono disponibili tramite **Strumenti**  >  **Opzioni**  >  **Cookiecutter:**
+Le opzioni cookiecutter sono disponibili tramite  >    >  **Cookiecutter** di Opzioni degli strumenti :
 
 ![Opzioni di Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Opzione | Descrizione |
 | --- | --- |
-| **URL feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
+| **URL del feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Ottimizzare i modelli di Cookiecutter per Visual Studio
 
-Per informazioni di base sulla creazione di un modello di Cookiecutter, vedere la [documentazione di Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/first_steps.html). L'estensione Cookiecutter per Visual Studio supporta modelli creati per Cookiecutter versione 1.4.
+Per informazioni di base sulla creazione di un modello di Cookiecutter, vedere la [documentazione di Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/). L'estensione Cookiecutter per Visual Studio supporta modelli creati per Cookiecutter versione 1.4.
 
 Il rendering predefinito delle variabili di un modello dipende dal tipo di dati (stringa o elenco):
 
@@ -100,7 +100,7 @@ Il rendering predefinito delle variabili di un modello dipende dal tipo di dati 
 | --- | --- |
 | Etichetta | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
 | Descrizione | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
-| URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Selezionando il collegamento ipertestuale si apre il browser predefinito dell'utente a tale URL. |
+| URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Se si seleziona il collegamento ipertestuale, il browser predefinito dell'utente viene aperto in tale URL. |
 | Selettore | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: casella di testo con un **pulsante ...** che apre una finestra di dialogo di connessione al database.</li></ul> |
 
 Esempio:

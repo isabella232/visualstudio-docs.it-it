@@ -7,12 +7,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jmartens
-ms.openlocfilehash: 85d007ae7aec5bb56b85e4b1861845f81687dd68
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 8dc1db07e8ef3e29f36219c468d26dfe1c535407
+ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126635948"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129439795"
 ---
 # <a name="team-explorer-reference"></a>Informazioni di riferimento su Team Explorer
 
@@ -77,7 +77,7 @@ Nella pagina **Elemento di lavoro** è possibile visualizzare le query degli [el
 - [Use the query editor to list and manage queries](/azure/devops/boards/queries/using-queries) (Usare l'editor di query per elencare e gestire le query)
 - [Organize query folders and set query permissions](/azure/devops/boards/queries/set-query-permissions) (Organizzare cartelle query e impostare autorizzazioni di query)
 - [Open query in Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel) (Aprire la query in Excel).
-- [Open query in Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) (Aprire la query in Project).
+- [Open query in Project](/azure/devops/boards/backlogs/create-your-backlog) (Aprire la query in Project).
 - [Email query results list using Outlook](/azure/devops/boards/queries/share-plans) (Elencare i risultati di query di posta elettronica usando Outlook)
 - [Create reports from query in Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (Creare report da query in Excel) (solo TFS)
 
@@ -104,7 +104,7 @@ Vedere:
 
 La pagina **Impostazioni** consente di configurare le funzionalità amministrative per un progetto o una raccolta di progetti. Vedere gli articoli seguenti:
 
-| Project | Raccolta di progetti | Altro |
+| Project | Raccolta di progetti | Altri |
 | - | - | - |
 | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sicurezza, Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Aree elementi di lavoro](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterazioni elementi di lavoro](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Portale Impostazioni](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Avvisi di progetto](/azure/devops/notifications/howto-manage-team-notifications) | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestione modelli di processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Impostazioni globali GIT](/azure/devops/repos/git/git-config)<br/>[Impostazioni del repository GIT](/azure/devops/repos/git/git-config) |
 
