@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 09/20/2021
+ms.date: 10/05/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: b5477e4e961bb23a1d5f10b5c123ade4d3772a54
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 106025cb29a3b1a753fbe4b6f3b2e04f31f1ecd8
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429740"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129560854"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -25,7 +25,7 @@ ms.locfileid: "128429740"
 
 ## <a name="visual-studio-2022-preview"></a>Visual Studio 2022 Preview
 
-Nella tabella seguente sono elencati i numeri di build e le date di Visual Studio 2022 Preview, fino a oggi.
+La tabella seguente elenca i numeri di build e le date di rilascio Visual Studio 2022 Preview, fino a oggi.
 
 | **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
@@ -39,7 +39,7 @@ Nella tabella seguente sono elencati i numeri di build e le date di Visual Studi
 | 17.0.0 | Preview 1 | 17 giugno 2021 | 17.0.31410.414 |
 
 > [!NOTE]
-> Per visualizzare i dati per la versione precedente, vedere i numeri di build [Visual Studio 2019](visual-studio-build-numbers-and-release-dates.md?view=vs-2019&preserve-view=true)e le date di rilascio.
+> Per visualizzare i dati per la versione precedente, vedere i [numeri di build Visual Studio 2019 e le date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2019&preserve-view=true)
 
 ::: moniker-end
 
@@ -51,6 +51,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.11.4 | Versione | 5 ottobre 2021 | 16.11.31727.386 |
 | 16.11.3 | Versione | 14 settembre 2021 | 16.11.31702.278 |
 | 16.9.11 | Versione | 14 settembre 2021 | 16.9.31702.126 |
 | 16.7.19 | Versione | 14 settembre 2021 | 16.7.31701.349 |
@@ -265,9 +266,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 16.0.0 | Preview 1 | 4 dicembre 2018 | 16.0.28329.73 |
 
 > [!NOTE]
-> Per visualizzare i dati per la *versione precedente,* vedere i numeri di build [Visual Studio 2017 e le date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
+> Per visualizzare i dati per la *versione* precedente, vedere Visual Studio di build [2017 e date di rilascio](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true).
 >
->Per visualizzare i dati per la *versione* successiva, vedere i [numeri di build Visual Studio 2022 e le date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true)
+>Per visualizzare i dati per la *versione* successiva, vedere Visual Studio numeri di [build 2022 e date di rilascio.](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true)
 
 ::: moniker-end
 
@@ -277,7 +278,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**      | **Channel** | **Data di rilascio**   | **Versione build** |
+| **Version**      | **Channel** | **Data di rilascio**   | **Versione della build** |
 |------------------|-------------|--------------------|-------------------|
 | 15.9.39          | Versione     | 14 settembre 2021 | 15.9.28307.1684   |
 | 15.9.38          | Versione     | 10 agosto 2021    | 15.9.28307.1622   |
