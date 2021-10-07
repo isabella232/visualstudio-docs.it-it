@@ -52,6 +52,10 @@
       href: subscription-removed.md
 - name: Contattare l'amministratore delle sottoscrizioni
   href: contact-my-admin.md
+- name: GitHub Enterprise
+  href: access-github.md
+- name: IDE di Visual Studio
+  href: vs-ide-benefit.md
 - name: Vantaggi di Azure
   items:
     - name: Credito individuale per Azure DevTest
@@ -62,10 +66,6 @@
       href: azure-ea-devtest.md
     - name: Azure DevOps
       href: vs-azure-devops.md
-- name: GitHub Enterprise
-  href: access-github.md
-- name: IDE di Visual Studio
-  href: vs-ide-benefit.md
 - name: Altri vantaggi
   items:
     - name: Informazioni sui vantaggi

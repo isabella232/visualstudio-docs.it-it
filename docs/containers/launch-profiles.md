@@ -1,5 +1,5 @@
 ---
-title: Gestire i profili di avvio per Docker Compose progetti
+title: Avviare un subset di Docker Compose servizio
 description: Informazioni su come usare i Docker Compose di avvio e controllare quali servizi vengono avviati quando si Docker Compose in Visual Studio.
 author: ghogen
 manager: jmartens
@@ -9,16 +9,16 @@ ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 7c6a4137046456321e54a53e58a96d1dbfdf8fe1
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: d91e58a554847fa5a713b120d2896c2e8120b2a8
+ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427382"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129595144"
 ---
 # <a name="launch-a-subset-of-compose-services"></a>Avviare un subset di servizi Compose
 
-Se si dispone di un'applicazione costituita da più servizi e usa Docker Compose, è possibile configurare i servizi eseguiti ed eseguirne il debug creando o modificando un profilo di avvio esistente nelle impostazioni di Docker Compose avvio. I profili di avvio consentono di eseguire dinamicamente solo i servizi importanti per lo scenario corrente. È possibile creare e selezionare tra i profili di avvio per personalizzare l'esperienza di debug e impostare azioni di avvio specifiche, ad esempio `Browser Launch URL` . Sarà anche possibile scegliere ogni servizio singolarmente o scegliendo un profilo Docker Compose, che esamina anche il file Compose per determinare il gruppo di servizi da eseguire.
+Se si dispone di un'applicazione costituita da più servizi e usa Docker Compose, è possibile configurare i servizi eseguiti ed eseguirne il debug creando o modificando un profilo di avvio esistente nelle impostazioni Docker Compose avvio. I profili di avvio consentono di eseguire dinamicamente solo i servizi importanti per lo scenario corrente. È possibile creare e selezionare tra i profili di avvio per personalizzare l'esperienza di debug e impostare azioni di avvio specifiche, ad esempio `Browser Launch URL` . Sarà anche possibile scegliere ogni servizio singolarmente o scegliendo un profilo Docker Compose, che esamina anche il file Compose per determinare il gruppo di servizi da eseguire.
 
 Per informazioni sui Docker Compose, vedere [Uso dei profili con Compose.](https://docs.docker.com/compose/profiles/)
  
@@ -29,7 +29,7 @@ Per informazioni sui Docker Compose, vedere [Uso dei profili con Compose.](https
 
 ## <a name="manage-launch-settings"></a>Gestire le impostazioni di avvio
 
-Si consideri il Docker Compose in cui *docker-compose.yml* ha cinque servizi e tre profili Compose (web, web1 e web2).
+Si consideri Docker Compose progetto in cui *docker-compose.yml* ha cinque servizi e tre profili Compose (web, web1 e web2).
 
 ```yml
 version: '3.9'
@@ -64,7 +64,7 @@ services:
 
 ```
 
-Sono disponibili alcune opzioni per aprire la finestra di dialogo Docker Compose impostazioni di avvio:
+Sono disponibili alcune opzioni per aprire la finestra di dialogo Docker Compose delle impostazioni di avvio:
 - In Visual Studio scegliere **Debug** Gestisci Docker Compose  >  **Avvia Impostazioni**:
 
     ![Screenshot della voce di menu Impostazioni Compose](media/launch-settings/debug-dropdown-manage-compose.png)
@@ -73,14 +73,14 @@ Sono disponibili alcune opzioni per aprire la finestra di dialogo Docker Compose
 
     ![Screenshot della voce del menu di scelta rapida](media/launch-settings/launch-settings-context-menu.png)
 
-- Usare il Avvio veloce (**CTRL** Q ) e cercare Docker Compose per trovare il comando di cui si + è fatto parte. 
+- Usare il Avvio veloce (**CTRL** Q ) e cercare Docker Compose trovare il comando di cui si + è fatto parte. 
 
 Nell'esempio seguente è selezionato il profilo Compose, che filtra l'elenco Servizi in modo da visualizzare solo i tre dei `web1` cinque inclusi nel profilo: 
 
 !["Screenshot della finestra di dialogo delle impostazioni di avvio"](media/launch-settings/launch-settings-create-profile.png)
 
 >[!NOTE]
-> La Docker Compose profili utente viene visualizzata solo se sono presenti profili definiti nei *file docker-compose.yml.*
+> La Docker Compose dei profili viene visualizzata solo se sono presenti profili definiti nei *file docker-compose.yml.*
 
 Nell'esempio seguente viene illustrata la selezione tra singoli servizi anziché applicare filtri ai servizi in un profilo Compose. In questo esempio viene illustrato l'aspetto della finestra di dialogo se è stato creato un nuovo profilo di avvio denominato che avvia solo due dei cinque servizi, con debug `test2` `webapplication1` e senza `webapplication2` debug.  Questo profilo di avvio avvia anche un browser all'avvio dell'applicazione e lo apre al home page di `webapplication1` . 
 
@@ -111,9 +111,9 @@ Queste informazioni verranno salvate in *launchSettings.json* come illustrato di
 
 ## <a name="create-a-launch-profile-that-uses-a-docker-compose-profile"></a>Creare un profilo di avvio che usa un Docker Compose di avvio
 
-È anche possibile personalizzare ulteriormente i comportamenti di avvio creando Visual Studio di avvio che usano i profili Compose.
+È anche possibile personalizzare ulteriormente i comportamenti di avvio creando Visual Studio profili di avvio che usano i profili Compose.
 
-Per creare un altro profilo che usa il profilo Compose, selezionare Usa Docker Compose **profili e** scegliere `web1` . Il profilo di avvio include ora tre servizi: (che appartiene a entrambi i profili `webapplication1` `web` e `web1` Compose) `external1` e `external2` . Per impostazione predefinita, i servizi senza codice sorgente come e hanno `external1`  `external2` l'azione predefinita **Avvia senza eseguire il debug di**. Per impostazione predefinita, le applicazioni .NET con codice sorgente **avviano il debug.**
+Per creare un altro profilo che usa il profilo Compose, selezionare Usa Docker Compose **profili e** scegliere `web1` . Il profilo di avvio include ora tre servizi: (che appartiene a entrambi i profili `webapplication1` `web` e `web1` Compose) `external1` e `external2` . Per impostazione predefinita, i servizi senza codice sorgente, ad esempio e , hanno `external1` l'azione predefinita Avvia senza eseguire il debug  `external2` **di**. Per impostazione predefinita, le applicazioni .NET con codice sorgente **avviano il debug.**
 
 > [!IMPORTANT]
 > Se un servizio non specifica un profilo Compose, verrà incluso in tutti i profili Compose in modo implicito.
@@ -138,7 +138,7 @@ Queste informazioni verranno salvate come illustrato nel codice seguente. La con
 }
 ```
 
-È anche possibile modificare l'azione di webapplication1 in **Avvia senza eseguire il debug** di . Le impostazioni in *launchSettings.json* sono simili al codice seguente:
+È anche possibile modificare l'azione di webapplication1 in **Avvia senza eseguire il debug di**. Le impostazioni in *launchSettings.json* sono simili al codice seguente:
 
 ```json
 {
@@ -177,7 +177,7 @@ Ecco una descrizione di ogni proprietà in *launchSettings.json:*
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni sul funzionamento di Strumenti contenitore, Visual Studio panoramica di compilazione e debug di Strumenti [contenitore.](container-build.md)
+Per altre informazioni sul funzionamento di Strumenti contenitore, vedere panoramica Visual Studio di compilazione e debug di Strumenti [contenitore.](container-build.md)
 
 ## <a name="see-also"></a>Vedi anche
 
