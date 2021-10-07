@@ -13,14 +13,14 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 21fabf6bbb490ebf97ef2e808ce4448f106fe469
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3e3b9207536073b2ca42d4b0e488a7374a6dbfb1
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131261"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635854"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Guida introduttiva: Analizzare i dati di utilizzo della CPU Visual Studio (ASP.NET Core)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Avvio rapido: Analizzare i dati di utilizzo della CPU Visual Studio (ASP.NET Core)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina uno strumento che identifica eventuali colli di bottiglia delle prestazioni a causa di un utilizzo intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
@@ -43,11 +43,11 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
    Nella finestra di dialogo visualizzata scegliere **MVC** nel riquadro centrale e quindi fare clic su **OK**.
    ::: moniker-end
    ::: moniker range=">=vs-2019"
-   In Visual Studio 2019 scegliere **Crea un nuovo progetto** nella finestra iniziale. Se la finestra iniziale non è aperta, scegliere **Finestra** iniziale file e quindi  >  scegliere Crea un **nuovo progetto**.
+   In Visual Studio 2019 scegliere **Crea un nuovo progetto** nella finestra iniziale. Se la finestra iniziale non è aperta, scegliere **Finestra** iniziale file , quindi scegliere Crea un  >  nuovo **progetto**.
 
    Digitare **app Web** nella casella di ricerca, scegliere **C#** come linguaggio, scegliere ASP.NET Core **Applicazione Web (Model-View-Controller)** e quindi scegliere **Avanti.** Nella schermata successiva assegnare al progetto il *nome MyProfilingApp_MVC* e quindi scegliere **Avanti.**
 
-   Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
+   Scegliere il framework di destinazione consigliato o .NET 6 e quindi scegliere **Crea**.
 
    > [!NOTE]
    > Se non viene visualizzato il **modello ASP.NET applicazione Web (.NET Core),** è possibile installarlo dalla finestra Crea un **nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. A questo punto scegliere il carico di lavoro **Sviluppo ASP.NET e Web** nel programma di installazione di Visual Studio.

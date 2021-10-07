@@ -1,6 +1,6 @@
 ---
 title: Risorse per la risoluzione dei problemi relativi a errori IDE
-description: Informazioni su come usare Knowledge Base, forum o supporto tecnico del prodotto per risolvere gli errori IDE che non sono sufficientemente informativi per risolvere un problema.
+description: Informazioni su come usare Knowledge Base, forum o supporto tecnico per risolvere gli errori IDE che non sono sufficientemente informativi per risolvere un problema.
 ms.custom: SEO-VS-2020
 ms.date: 12/18/2020
 ms.topic: troubleshooting
@@ -96,27 +96,27 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d332963ca50cd711400a19d935b4d810e755daab
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 95a263e0c54a268755522e735552a80cd5f3a9eb
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126627161"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635314"
 ---
 # <a name="resources-for-troubleshooting-ide-errors"></a>Risorse per la risoluzione dei problemi relativi a errori IDE
 
-Non tutti i messaggi di errore hanno un argomento specifico della Guida associato. Se le informazioni contenute in un messaggio di errore non consentono di risolvere il problema, è possibile consultare altre risorse, ad esempio Knowledge Base, forum o supporto tecnico del prodotto.
+Non tutti i messaggi di errore hanno un argomento specifico della Guida associato. Se le informazioni contenute in un messaggio di errore non consentono di risolvere il problema, è possibile consultare altre risorse, ad esempio articoli Knowledge Base, forum o supporto tecnico.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Risoluzione dei problemi di Visual Studio per Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Articoli della Knowledge Base
 
-È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile visualizzare gli articoli della Knowledge Base Visual Studio nella pagina [Visual Studio risoluzione dei problemi.](/troubleshoot/visualstudio/welcome-visual-studio/)
+È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile visualizzare gli articoli della Knowledge Base Visual Studio nella [pagina Visual Studio risoluzione dei](/troubleshoot/visualstudio/welcome-visual-studio/) problemi.
 
 ## <a name="developer-forums"></a>Forum per sviluppatori
 
-I forum consentono di interagire con altri sviluppatori e anche con i dipendenti Microsoft. Se si riscontra un errore per il quale non si riesce a trovare una soluzione, è possibile pubblicare domande sul problema in un forum. È anche possibile cercare nei forum per verificare se altri utenti hanno pubblicato lo stesso problema.
+I forum consentono di interagire con altri sviluppatori e anche con i dipendenti Microsoft. Se si riscontra un errore per il quale non si riesce a trovare una soluzione, è possibile pubblicare domande sul problema in un forum. È anche possibile cercare nei forum per verificare se altri utenti hanno pubblicato informazioni sullo stesso problema.
 
 Ecco un elenco di risorse del forum:
 
@@ -127,7 +127,7 @@ Ecco un elenco di risorse del forum:
 
 ## <a name="product-support"></a>Supporto per il prodotto
 
-Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com/en-us). Per informazioni sul supporto tecnico disponibile nella propria area, vedere la pagina Visual Studio [opzioni di feedback.](../../ide/feedback-options.md)
+Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com/en-us). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [la](https://developercommunity.visualstudio.com/home) pagina Community developer.
 
 ## <a name="see-also"></a>Vedi anche
 

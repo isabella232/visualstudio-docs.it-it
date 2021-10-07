@@ -1,6 +1,6 @@
 ---
 title: Esercitazione sugli unit test C#
-description: Informazioni su come creare, eseguire e personalizzare una serie di unit test usando il framework Microsoft unit test per il codice gestito e esplora Visual Studio test.
+description: Informazioni su come creare, eseguire e personalizzare una serie di unit test usando il framework di Microsoft unit test per il codice gestito e Visual Studio Test Explorer.
 ms.custom: SEO-VS-2020
 ms.date: 08/17/2021
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 9b515e9d5311556b6eed8c6417f372e2cc861d94
-ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
+ms.openlocfilehash: ccedcea78a1e05342c254cfc18cd2ca0523faec6
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122603567"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635660"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -61,7 +61,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 4. Assegnare al progetto **il nome Bank** e quindi fare clic su **Avanti.**
 
-   Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea.**
+   Scegliere il framework di destinazione consigliato o .NET 6 e quindi scegliere **Crea.**
 
    Il progetto Bank viene creato e visualizzato in **Esplora soluzioni** con il file *Program.cs* aperto nell'editor del codice.
 
@@ -155,7 +155,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 ::: moniker range="vs-2017"
 
-2. Nella finestra **di dialogo Project** espandere **Installato**, espandere **Visual C#** e quindi scegliere **Test**.
+2. Nella finestra **di dialogo Project** nuovo progetto espandere **Installato**, espandere **Visual C#** e quindi scegliere **Test**.
 
 3. Nell'elenco dei modelli selezionare **Progetto di test MSTest (.NET Core)**.
 
@@ -167,14 +167,14 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 ::: moniker range=">=vs-2019"
 
-2. Digitare **test** nella casella di ricerca, selezionare **C#** come linguaggio, quindi selezionare il modello Unit **test C# Project** for .NET Core e quindi fare clic su **Avanti.**
+2. Digitare **test** nella casella di ricerca, selezionare **C#** come linguaggio, quindi selezionare il modello **Unit test C# Project** for .NET Core e quindi fare clic su **Avanti.**
 
    > [!NOTE]
    > A partire da Visual Studio 2019 versione 16.9, il nome del modello di progetto MSTest è stato modificato da **MSTest Unit Test Project (.NET Core)** a **Unit Test Project**.
 
 3. Assegnare al progetto **il nome BankTests** e fare clic **su Avanti.**
 
-4. Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea.**
+4. Scegliere il framework di destinazione consigliato o .NET 6 e quindi scegliere **Crea.**
 
    Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
 
@@ -296,9 +296,9 @@ Un metodo di test deve soddisfare i seguenti requisiti:
 
 ## <a name="build-and-run-the-test"></a>Compilare ed eseguire il test
 
-1. Scegliere **Compila** soluzione **dal** menu Compila (o premere **CTRL**  +  **MAIUSC**  +  **B).**
+1. Scegliere **Compila** soluzione **dal** menu Compila oppure premere **CTRL**  +  **MAIUSC**  +  **B.**
 
-2. Se **Esplora test** non è aperto, aprirlo scegliendo Test Windows Esplora test dalla barra dei menu superiore  >    >   (oppure premere **CTRL**  +  **E**, **T**).
+2. Se **Esplora test** non è aperto, aprirlo scegliendo Test   >  **Windows** Esplora test dalla barra dei menu superiore o premendo  >   **CTRL**  +  **E**, **T**.
 
 3. Scegliere **Esegui tutto** per eseguire il test (o premere **CTRL**  +  **R**, **V**).
 
@@ -330,7 +330,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Eseguire nuovamente il test
 
-In **Esplora test** scegliere Esegui **tutto** per eseguire nuovamente il test (o premere **CTRL**  +  **R**, **V**). La barra verde/rossa diventa verde per indicare che il test è stato superato.
+In **Esplora test** scegliere Esegui **tutto** per rieseguire il test (o premere **CTRL**  +  **R**, **V**). La barra verde/rossa diventa verde per indicare che il test è stato superato.
 
 ![Esplora test in Visual Studio 2019 che indica che il test è stato superato](media/test-explorer-banktests-passed.png)
 

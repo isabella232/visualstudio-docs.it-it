@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a70cc43572d912c0d948a8853ab6cb695a6451ff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 251b440853520bc18e918082cc9607ed2a15ebec
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150820"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635620"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
@@ -22,13 +22,13 @@ Analisi utilizzo software di Visual Studio è stato pensato per aiutare Microsof
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]
-> Le impostazioni di consenso esplicito o di rifiuto esplicito della telemetria VSCEIP non si applicano a "Segnala un problema" in Visual Studio. Quando si segnala un problema, i log vengono raccolti e inviati a Microsoft solo quando si fornisce l'autorizzazione facendo clic su "Invia". Se si è interessati alla gestione dei log prima dell'invio a "Segnala un problema", vedere Privacy dei dati di [feedback](./developer-community-privacy.md) per altri dettagli.
+> Le impostazioni di consenso esplicito o di rifiuto della telemetria VSCEIP non si applicano a "Segnala un problema" in Visual Studio. Quando si segnala un problema, i log vengono raccolti e inviati a Microsoft solo quando si fornisce l'autorizzazione facendo clic su "Invia". Se si è interessati alla gestione dei log prima dell'invio a "Segnala un problema", vedere Privacy dei dati di [feedback](./developer-community-privacy.md) per altri dettagli.
 
 ## <a name="opt-in-or-out"></a>Acconsentire o rifiutare
 
 Analisi utilizzo software di Visual Studio è attivato per impostazione predefinita. È possibile disattivarlo o riattivarlo seguendo queste istruzioni:
 
-1. In Visual Studio, scegliere **Help**  >  **Send Feedback (Invia commenti e suggerimenti)** e quindi **selezionare Impostazioni**.
+1. Nella Visual Studio, scegliere **Help**  >  **Send Feedback (Invia commenti e suggerimenti)** e quindi **selezionare Impostazioni**.
 
    Verrà aperta la finestra di dialogo **Analisi utilizzo software di Visual Studio**.
 
@@ -73,7 +73,6 @@ Per altre informazioni sui dati raccolti, elaborati o trasmessi da Analisi utili
 ## <a name="see-also"></a>Vedi anche
 
 * [Diagnostic information collected by Visual Studio](diagnostic-data-collection.md) (Informazioni di diagnostica raccolte da Visual Studio)
-* [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)
+* [Visual Studio Developer Community](https://developercommunity.visualstudio.com/home)
 * [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)

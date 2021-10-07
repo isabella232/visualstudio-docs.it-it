@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d7285648ad1cb9f93dd11f5374f1eb2cf8ecbfdd
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: d9fa7fd2c3d0a69f7a52fabc57fae54ee53ae688
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126709926"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635568"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -65,40 +65,40 @@ Quando si esegue un'app normalmente, errori e risultati non corretti sono visibi
 
 L'esecuzione di un'app all'interno di un debugger, o in *modalità di debug*, consente al debugger di monitorare attivamente tutto ciò che accade durante l'esecuzione del programma. Consente anche di sospendere l'app in un punto qualsiasi per esaminarne lo stato e di eseguire quindi il codice riga per riga per controllare ogni dettaglio durante l'esecuzione.
 
-In Visual Studio, si entra in modalità di debug usando **F5** (o il comando di menu Debug Avvia debug o il pulsante Avvia debug Avvia debug nella barra degli  >   strumenti  Debug). ![](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
+In Visual Studio si attiva la modalità di debug usando  **F5** (o il comando di menu Avvia debug o il pulsante Avvia debug Avvia debug sulla barra degli  >   strumenti  Debug). ![](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 Se non è stata restituita un'eccezione, probabilmente si ha già un'idea di dove cercare il problema nel codice. In questi casi si usano i *punti di interruzione* con il debugger per avere l'opportunità di esaminare il codice più attentamente. I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio deve sospendere il codice in esecuzione in modo da consentire di esaminare i valori delle variabili, il comportamento della memoria o la sequenza di esecuzione del codice.
 
 In Visual Studio è possibile impostare rapidamente un punto di interruzione facendo clic sul margine sinistro accanto a una riga di codice oppure si può posizionare il cursore su una riga e premere **F9**.
 
-Per illustrare questi concetti si userà un codice di esempio che contiene già diversi bug. Verrà usato C#, ma le funzionalità di debug si applicano a Visual Basic, C++, JavaScript, Python e altri linguaggi supportati. Viene fornito anche Visual Basic codice di esempio, ma gli screenshot sono in C#.
+Per illustrare questi concetti si userà un codice di esempio che contiene già diversi bug. Verrà usato C#, ma le funzionalità di debug si applicano a Visual Basic, C++, JavaScript, Python e altri linguaggi supportati. Viene fornito anche il Visual Basic di esempio, ma gli screenshot sono in C#.
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>Creare un'app di esempio (con alcuni bug)
 
 Verrà creata un'applicazione con alcuni bug.
 
-1. È necessario aver installato Visual Studio e il carico di lavoro sviluppo multipiattaforma **.NET Core.**
+1. È necessario aver installato Visual Studio e il carico di lavoro **Sviluppo multipiattaforma .NET Core.**
 
-    Se non è già stato installato Visual Studio, passare alla pagina Visual Studio [download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
+    Se non è ancora stato installato Visual Studio, passare alla pagina [Visual Studio download](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 
-    Se è necessario installare il carico di lavoro ma è già Visual Studio, fare clic **su** Strumenti  >  **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, fare clic **su** Strumenti  >  **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica.**
 
 1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Nella finestra iniziale scegliere **Crea un nuovo progetto**. Digitare **console** nella casella di ricerca, selezionare **C#** **o Visual Basic** come linguaggio e quindi scegliere App **console** per .NET Core. Scegliere **Avanti**. Digitare un nome di progetto come **ConsoleApp_FirstApp** e fare clic su **Avanti.**
+    Nella finestra iniziale scegliere **Crea un nuovo progetto.** Digitare **console** nella casella di ricerca, selezionare **C#** o **Visual Basic** come linguaggio e quindi scegliere **App console** per .NET Core. Scegliere **Avanti**. Digitare un nome di progetto come **ConsoleApp_FirstApp** e fare clic su **Avanti.**
 
-    Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi **scegliere Crea**.
+    Scegliere il framework di destinazione consigliato o .NET 6 e quindi scegliere **Crea.**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro sinistro  della finestra di dialogo Nuovo progetto in **Visual C#** **o Visual Basic** scegliere **App console** e quindi nel riquadro centrale scegliere App **console (.NET Core)**. Digitare un nome **come** ConsoleApp_FirstApp e fare clic su **OK.**
+    Nella barra dei menu superiore scegliere **File**  >  **Nuovo**  >  **Project**. Nel riquadro sinistro  della finestra di dialogo Nuovo progetto in **Visual C#** o **Visual Basic** scegliere **App** console e quindi nel riquadro centrale scegliere **App console (.NET Core)**. Digitare un nome **come** ConsoleApp_FirstApp e fare clic su **OK.**
     ::: moniker-end
 
-    Se il modello di progetto **App** console per .NET Core non è visualizzato, passare a Strumenti Ottieni strumenti e funzionalità , che apre il  >  Programma di installazione di Visual Studio. Scegliere il **carico di lavoro sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica**.
+    Se il modello di progetto **App** console per .NET Core non è visualizzato, passare a Strumenti Ottieni strumenti e funzionalità per aprire la  >  Programma di installazione di Visual Studio. Scegliere il **carico di lavoro Sviluppo multipiattaforma .NET Core,** quindi scegliere **Modifica.**
 
     Visual Studio crea il progetto della console che viene visualizzato nel riquadro destro di Esplora soluzioni.
 
-1. In *Program.cs* (o *Program.vb*) sostituire tutto il codice predefinito con il codice seguente. Selezionare prima la scheda del linguaggio corretto, C# o Visual Basic.
+1. In *Program.cs* (o *Program.vb)* sostituire tutto il codice predefinito con il codice seguente. Selezionare prima la scheda del linguaggio corretto, C# o Visual Basic.
 
    #### <a name="c"></a>[C#](#tab/csharp)
 
@@ -377,7 +377,7 @@ Verrà creata un'applicazione con alcuni bug.
     public GType GalaxyType { get; set; }
     ```
 
-1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti di debug (**CTRL**  +  **MAIUSC**  +  **F5**) per ricompilare il codice e riavviarlo.
+1. Fare clic **sul pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug (**CTRL**  +  **MAIUSC**  +  **F5**) per ricompilare il codice e riavviarlo.
 
     Ora, quando il debugger viene sospeso in corrispondenza di `Console.WriteLine`, passando il puntatore su `theGalaxy.GalaxyType.MyGType` si noterà che il valore è impostato correttamente.
 
@@ -412,7 +412,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     Il tipo di galassia viene impostato in questo codice. Esaminarlo quindi in dettaglio.
 
-1. Fare clic sul **pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti di debug ( CTRL  +  **MAIUSC**  +  **F5**) per riavviare.
+1. Fare clic **sul pulsante Riavvia** ![riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti debug ( CTRL  +  **MAIUSC**  +  **F5**) per riavviare.
 
     Il debugger viene sospeso sulla riga di codice in cui è stato impostato il punto di interruzione.
 
@@ -426,7 +426,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     **F11** fa avanzare il debugger (ed esegue il codice) un'istruzione alla volta. **F10** (**Esegui istruzione/routine**) è un comando simile ed entrambi sono estremamente utili quando si impara a usare il debugger.
 
-1. Premere **F11** fino a quando non si arresta la riga di codice nell'istruzione per il valore `switch` 'I' `Select` (istruzione per Visual Basic). Qui si noterà un evidente problema derivante da un errore di digitazione. Si prevede che il codice passi al punto in cui viene impostato come tipo di galaxy irregolare, ma il debugger ignora completamente questo codice e si sospende nella sezione dell'istruzione ( istruzione `MyGType` `default` in `switch` `Else` Visual Basic).
+1. Premere **F11** fino a quando non si arresta la riga di codice nell'istruzione per il valore `switch` 'I' `Select` (istruzione per Visual Basic). Qui si noterà un evidente problema derivante da un errore di digitazione. È previsto che il codice passi al punto in cui viene impostato come tipo di galaxy irregolare, ma il debugger ignora completamente questo codice e si sospende nella sezione dell'istruzione ( istruzione `MyGType` `default` in `switch` `Else` Visual Basic).
 
     ![Individuare un errore di digitazione](../debugger/media/beginners-typo.png)
 

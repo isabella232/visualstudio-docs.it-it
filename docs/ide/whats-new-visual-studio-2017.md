@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a489aaef94f77fcca53402100ef4372c73fa6d00
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: bd8558309ac9c389c0254d21339fab4f9029ef51
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430893"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635750"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -110,7 +110,7 @@ Quando si usa Gestione roaming estensioni sono disponibili tre tipi di icona nel
 
 * ![Icona di roaming con roaming: estensione che fa parte di questo elenco di ](media/vs2017ide-roamedicon.png) **** roaming, ma non installata nel computer.
   Per eseguire l'installazione usare il pulsante **Download**.
-* ![Roaming dell& a icona Installato con roaming & installato : tutte le estensioni che fanno parte di questo elenco di roaming e installate ](media/vs2017ide-roamedinstalledicon.png) **** nell'ambiente di sviluppo.
+* ![Icona di roaming & installato con roaming & installato : tutte le estensioni che fanno parte di questo elenco di roaming e installate ](media/vs2017ide-roamedinstalledicon.png) **** nell'ambiente di sviluppo.
   Se si decide di evitare il roaming, è possibile rimuovere le estensioni usando il pulsante **Arresta roaming**.
 * ![Icona installata ](media/vs2017ide-installedicon.png) **_Installato_**: tutte le estensioni installate in questo ambiente, ma che non fanno parte dell'elenco di roaming.
   Per aggiungere le estensioni all'elenco di roaming, usare il pulsante **Avvia roaming**.
@@ -145,7 +145,7 @@ Per altre informazioni, vedere la sezione [Multi-caret selection](finding-and-re
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Mantenere la coerenza tra i profili dei tasti di scelta rapida
 
-**Novità nella versione 15.8**: ora è possibile mantenere la coerenza dei tasti di scelta rapida tra gli strumenti con due nuovi profili di tastiera: Visual Studio Code e ReSharper (Visual Studio). Questi schemi sono disponibili in **Strumenti**  >  **Opzioni**  >  **Tastiera**  >  **generale e** nel menu a discesa superiore.
+**Novità nella versione 15.8**: ora è possibile mantenere la coerenza dei tasti di scelta rapida tra gli strumenti con due nuovi profili di tastiera: Visual Studio Code e ReSharper (Visual Studio). È possibile trovare questi schemi in **Strumenti**  >  **Opzioni**  >  **Tastiera**  >  **generale e** nel menu a discesa superiore.
 
   ![Nuovi profili di tasti di scelta rapida per ReSharper e Visual Studio Code](media/vs-keyboard-mappings-code-resharper.png)
 
@@ -174,15 +174,15 @@ Quando si lavora con un progetto in Visual Studio, è possibile configurare il c
 
 L'esperienza è stata aggiornata per consentire spostamenti più efficienti e con meno distrazioni.
 
-* **Novità della versione 15.4:** Vai a definizione **(** **CTRL+** clic o +  **F12**) Gli utenti del mouse hanno un modo più semplice per passare alla definizione di un membro premendo CTRL e quindi facendo clic sul &ndash; membro.  È possibile premere **CTRL** e passare il mouse su un simbolo del codice per sottolinearlo e trasformarlo in un collegamento. Per altre informazioni, vedere [Vai a definizione e Visualizza definizione](go-to-and-peek-definition.md).
+* **Novità della versione 15.4:** Vai a definizione **(ctrl+** clic o +  **F12)** Gli utenti del mouse hanno un modo più semplice per passare alla definizione di un membro premendo CTRL e quindi facendo clic sul &ndash; membro.  È possibile premere **CTRL** e passare il mouse su un simbolo del codice per sottolinearlo e trasformarlo in un collegamento. Per altre informazioni, vedere [Vai a definizione e Visualizza definizione](go-to-and-peek-definition.md).
 
-* **Vai a implementazione** (**CTRL** + **F12**) Passare da qualsiasi tipo o membro &ndash; di base alle varie implementazioni.
+* **Vai a implementazione** (**CTRL** + **F12**) Consente di passare da qualsiasi tipo o membro &ndash; di base alle varie implementazioni.
 
-* **Vai a tutti** (**CTRL** T o CTRL + , ) Consente di passare direttamente a qualsiasi +  dichiarazione di  +  &ndash; file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
+* **Vai a tutti** (**CTRL** T o CTRL , ) Consente di passare direttamente a qualsiasi +  dichiarazione di  +  &ndash; file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
 
   ![Vai a tutti migliorato](media/vs2017ide-navigation-go-to.png)
 
-* **Trova tutti i riferimenti** (**MAIUSC** + **F12**) Con la colorazione della sintassi, è possibile raggruppare i risultati trova tutti i riferimenti in base a una combinazione di &ndash; progetto, definizione e percorso. È anche possibile "bloccare" i risultati in modo da poter continuare la ricerca di altri riferimenti senza perdere i risultati originali.
+* **Trova tutti i riferimenti** (**MAIUSC** + **F12**) Con la colorazione della sintassi, è possibile raggruppare i risultati di Trova tutti i riferimenti in base a una combinazione di &ndash; progetto, definizione e percorso. È anche possibile "bloccare" i risultati in modo da poter continuare la ricerca di altri riferimenti senza perdere i risultati originali.
 
   ![Nuovo strumento Trova tutti i riferimenti](media/vs2017ide-find-all-references.png)
 
@@ -190,15 +190,15 @@ L'esperienza è stata aggiornata per consentire spostamenti più efficienti e co
 
   ![Visualizzatore di struttura di Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Per altre informazioni sulle nuove funzionalità di produttività, vedere il post di blog [Visual Studio 2017: Produttività, prestazioni e](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) partner.
+Per altre informazioni sulle nuove funzionalità di produttività, vedere il post di blog [Visual Studio 2017: Productivity, Performance, and Partners (Produttività,](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) prestazioni e partner).
 
 ### <a name="visual-c"></a>Visual C++
 
 Sono stati introdotti numerosi miglioramenti in Visual Studio, tra cui la distribuzione delle istruzioni di base di C++ con Visual Studio, l'aggiornamento del compilatore aggiungendo il supporto avanzato per le funzionalità di C++11 e C++, l'aggiunta e l'aggiornamento di funzionalità nelle librerie di C++. Sono stati anche migliorati i carichi di lavoro di installazione, le prestazioni dell'IDE di C++ e altro.
 
-Sono stati corretti anche più di 250 bug e segnalati problemi nel compilatore e negli strumenti, molti inviati dai clienti tramite developer [Community per C++.](https://aka.ms/feedback/report?space=62 "Developer Community per C++")
+Sono stati corretti anche più di 250 bug e problemi segnalati nel compilatore e negli strumenti, molti dei quali inviati dai clienti tramite developer [Community per C++.](https://aka.ms/feedback/report?space=62 "Developer Community for C++")
 
-Per informazioni dettagliate complete, vedere la pagina Novità Visual C++ [in Visual 2017.](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+Per informazioni dettagliate, vedere la pagina Novità [Visual C++ in Visual 2017.](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 
 ### <a name="debugging-and-diagnostics"></a>Debug e diagnostica
 
@@ -220,9 +220,9 @@ Per altre informazioni, vedere il post del blog [Use the new Exception Helper in
 
 **Novità della versione 15.5**: la funzionalità per tornare indietro di IntelliTrace crea automaticamente uno snapshot dell'applicazione in corrispondenza di ogni punto di interruzione e ogni evento di esecuzione di passaggio del debugger. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
-È possibile spostarsi e visualizzare gli snapshot  usando i **pulsanti** Indietro e Avanti nella barra degli **strumenti Debug.** Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**. Lo spostamento indietro o in avanti su un evento attiva automaticamente il debug cronologico per l'evento selezionato.
+È possibile esplorare e visualizzare gli snapshot  usando i **pulsanti** Passo indietro e Avanti nella barra degli **strumenti Debug.** Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**. Lo spostamento indietro o in avanti su un evento attiva automaticamente il debug cronologico per l'evento selezionato.
 
-![Esempio di passaggio indietro di IntelliTrace in Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Indietro e Avanti")
+![Esempio di tornare indietro di IntelliTrace in Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Indietro e Avanti")
 
 Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/view-historical-application-state.md).
 
@@ -243,7 +243,7 @@ I contenitori consentono di ottenere una maggiore densità delle app e di ridurr
 
 Nell’ambito del carico di lavoro "Sviluppo di Azure", sono stati inclusi strumenti che consentono di sviluppare funzioni di Azure con librerie pre-compilate di classe C#. È possibile compilare, eseguire ed effettuare il debug nel computer di sviluppo locale e pubblicare direttamente in Azure da Visual Studio.
 
-Per altre informazioni, vedere la pagina [strumenti Funzioni di Azure per Visual Studio.](/azure/azure-functions/functions-develop-vs)
+Per altre informazioni, vedere la [pagina Funzioni di Azure tools for Visual Studio](/azure/azure-functions/functions-develop-vs) .
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Eseguire il debug di app ASP.NET in tempo reale usando punti di ancoraggio e punti di registrazione nelle applicazioni Azure in tempo reale
 
@@ -309,11 +309,11 @@ Per altre informazioni, vedere [Accelerazione hardware per le prestazioni dell'e
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-Novità della **versione 15.5:** Visual Studio App Center ora disponibile a livello generale per le app Android, iOS, macOS e Windows ha tutto il necessario per gestire il ciclo di vita delle app, tra cui compilazioni automatizzate, test su dispositivi reali nel cloud, distribuzione a beta tester e app store e monitoraggio dell'utilizzo reale tramite dati di analisi e arresto anomalo &mdash; &mdash; del sistema. Le app scritte in Objective-C, Swift, Java, C#, Xamarin e React Native sono supportate per tutte le funzionalità.
+Novità della versione **15.5:** Visual Studio App Center, ora disponibile a livello generale per le app &mdash; Android, iOS, macOS e Windows, include tutto il necessario per gestire il ciclo di vita delle app, tra cui compilazioni automatizzate, test su dispositivi reali nel cloud, distribuzione a beta tester e App Store e monitoraggio dell'utilizzo reale tramite dati di analisi e arresto &mdash; anomalo. Le app scritte in Objective-C, Swift, Java, C#, Xamarin e React Native sono supportate per tutte le funzionalità.
 
   ![Ambiente di test di Visual Studio App Center](media/app-center-test-env.png)
 
-Per altre informazioni, vedere il post di blog [Introducing App Center: Build, test, distribute and monitor apps in the cloud (Introduzione a App Center: Compilare, testare, distribuire](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) e monitorare le app nel cloud).
+Per altre informazioni, vedere il post di blog [Introducing App Center: Build, test, distribute and monitor apps in the cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) (Introduzione a: Compilare, testare, distribuire e monitorare le app nel cloud).
 
 ## <a name="cross-platform-development"></a>Sviluppo multipiattaforma
 
@@ -377,11 +377,11 @@ Inoltre, non dimenticare di provare la versione più recente, [Visual Studio 201
 
 È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, usandoli per migliorare i propri prodotti.
 
-Per inoltrare suggerimenti su come migliorare Visual Studio o per altre informazioni sulle opzioni di supporto tecnico per il prodotto, vedere la pagina [Inviare commenti e suggerimenti](feedback-options.md).
+Per suggerimenti su come migliorare il Visual Studio o per altre informazioni sulle opzioni di supporto del prodotto, vedere la pagina Community [developer.](https://developercommunity.visualstudio.com/home)
 
 ### <a name="report-a-problem"></a>Segnalare un problema
 
-A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un problema a causa del quale Visual Studio smette di rispondere, si arresta in modo anomalo o si verifica un altro problema  di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto (ad esempio screenshot e file di dump di traccia e heap) con Microsoft usando lo strumento Segnala un problema. Per altre informazioni su come usare questo strumento, vedere la pagina [Come segnalare un](how-to-report-a-problem-with-visual-studio.md) problema.
+A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un problema a causa del quale Visual Studio smette di rispondere, si arresta in modo anomalo o un altro problema di prestazioni, è possibile condividere facilmente i passaggi di riproduzione e i file di supporto (ad esempio screenshot e file di traccia e dump dell'heap) con Microsoft usando lo strumento Segnala un problema.  Per altre informazioni su come usare questo strumento, vedere la [pagina Come segnalare un](how-to-report-a-problem-with-visual-studio.md) problema.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,6 +1,6 @@
 ---
 title: Introduzione a Visual Studio Tools per Unity | Microsoft Docs
-description: Informazioni su come installare e configurare Visual Studio per lo sviluppo di Unity.
+description: Informazioni su come installare e configurare il Visual Studio per lo sviluppo unity.
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -12,28 +12,28 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 7ef44e9e29de9cb15cc07e278db934c9059eb08e19127e2ed65325f39096059b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c7daa1d99741cee9a480bfd2108ee093107ab58c
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121242743"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635633"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Introduzione a Visual Studio e Unity
 
 > [!NOTE]
 > Questa guida presuppone che Unity sia già stato installato usando il programma Unity Hub. Se non si ha esperienza con Unity, è consigliabile visitare Unity Learn e completare prima il percorso di apprendimento [di Unity Essentials.](https://learn.unity.com/pathway/unity-essentials)
 
-## <a name="install-unity-support-for-visual-studio"></a>Installare il supporto di Unity per Visual Studio
+## <a name="install-unity-support-for-visual-studio"></a>Installare il supporto unity per Visual Studio
 
-Visual Studio Tools per Unity è un'estensione gratuita che fornisce supporto per la scrittura e il debug di C# e altro ancora. Per un [elenco completo delle estensioni incluse,](./visual-studio-tools-for-unity.md) vedere la panoramica di Strumenti per Unity.
+Visual Studio Tools per Unity è un'estensione gratuita che fornisce supporto per la scrittura e il debug di C# e altro ancora. Per un elenco completo delle funzionalità incluse nelle estensioni, vedere la panoramica di [Tools for Unity.](./visual-studio-tools-for-unity.md)
 
 :::zone pivot="windows"
 
 > [!NOTE]
-> Questa guida all'installazione è Visual Studio. Se si usa il Visual Studio Code, visitare unity [Development with VS Code documentation](https://code.visualstudio.com/docs/other/unity).
+> Questa guida all'installazione è Visual Studio. Se si usa il Visual Studio Code, visitare la documentazione sullo sviluppo [unity VS Code .](https://code.visualstudio.com/docs/other/unity)
 
-1. [Scaricare il Visual Studio o](/visualstudio/install/install-visual-studio.md)eseguirlo se è già installato.
+1. [Scaricare il Visual Studio o](/visualstudio/install/install-visual-studio)eseguirlo se è già installato.
 2. Fare clic su **Modifica** (se già installato) o **Installa** (per le nuove installazioni) per la versione desiderata di Visual Studio.
 3. Nella scheda **Carichi di lavoro** scorrere fino alla sezione **Giochi** e selezionare il carico di lavoro Sviluppo di giochi **con Unity.**
 
@@ -43,11 +43,11 @@ Visual Studio Tools per Unity è un'estensione gratuita che fornisce supporto pe
 :::zone pivot="macos"
 
 > [!NOTE]
-> Questa guida all'installazione è Visual Studio per Mac. Se si usa il Visual Studio Code, visitare unity [Development with VS Code documentation](https://code.visualstudio.com/docs/other/unity).
+> Questa guida all'installazione è Visual Studio per Mac. Se si usa il Visual Studio Code, visitare la documentazione sullo sviluppo [unity VS Code .](https://code.visualstudio.com/docs/other/unity)
 
-Tools for Unity è incluso nell'installazione di Visual Studio per Mac e non sono necessari passaggi di installazione separati. È possibile verificarlo nel menu Visual Studio per Mac > **estensioni > game development.** **Visual Studio per Mac tools for Unity** deve essere abilitato.
+Tools per Unity è incluso nell'installazione di Visual Studio per Mac e non sono necessari passaggi di installazione separati. È possibile verificarlo nel menu **Visual Studio per Mac > Extensions > Game Development (Sviluppo di giochi).** **Visual Studio per Mac Tools per Unity** deve essere abilitato.
 
-![Visualizzazione di Gestione estensioni che mostra Visual Studio per Mac strumenti per Unity abilitati](../media/vsm/unity-workload.png)
+![Visualizzazione gestione estensioni che mostra Visual Studio per Mac Tools per Unity abilitato](../media/vsm/unity-workload.png)
 
 :::zone-end
 
@@ -57,29 +57,29 @@ Tools for Unity è incluso nell'installazione di Visual Studio per Mac e non son
 
 :::zone pivot="windows"
 
-1. Fare clic **sul menu > Ricerca aggiornamenti.**
+1. Fare clic **sul > menu Controlla aggiornamenti** .
 
-    ![Menu Verifica aggiornamenti in Visual Studio 2019](../media/vs/check-for-updates.png)
+    ![Menu Controlla aggiornamenti in Visual Studio 2019](../media/vs/check-for-updates.png)
 
-2. Se è disponibile un aggiornamento, nella Programma di installazione di Visual Studio verrà mostrata una nuova versione. Fare clic sul pulsante **Aggiorna**.
+2. Se è disponibile un aggiornamento, il Programma di installazione di Visual Studio visualizza una nuova versione. Fare clic sul pulsante **Aggiorna**.
 
 :::zone-end
 :::zone pivot="macos"
 
-1. Fare clic **Visual Studio per Mac > menu Verifica aggiornamenti per** aprire la finestra di dialogo Visual Studio **Aggiorna.**
+1. Fare clic **Visual Studio per Mac > menu Controlla aggiornamenti...** per aprire la finestra **Visual Studio di dialogo Aggiorna.**
 2. Se è disponibile un aggiornamento, fare clic sul **pulsante** Installa.
 
 :::zone-end
 
 ## <a name="configure-unity-to-use-visual-studio"></a>Configurare Unity per l'uso Visual Studio
 
-Per impostazione predefinita, Unity deve essere già configurato per usare Visual Studio o Visual Studio per Mac come editor di script. È possibile confermarlo o modificare l'editor di script esterno in una versione specifica Visual Studio dall'editor di Unity.
+Per impostazione predefinita, Unity deve essere già configurato per usare Visual Studio o Visual Studio per Mac come editor di script. È possibile confermarlo o modificare l'editor di script esterno in una versione specifica di Visual Studio dall'editor di Unity.
 
 :::zone pivot="windows"
 
-1. Nell'editor di Unity selezionare il menu **> Preferenze.**
+1. Nell'editor di Unity selezionare il **menu > Preferenze.**
 2. Selezionare la **scheda Strumenti** esterni a sinistra.
-3. L'elenco a **discesa Editor script** esterni consente di scegliere diverse installazioni di Visual Studio. È anche possibile fare **clic su Sfoglia...** nell'elenco a discesa per aggiungere una versione non in elenco.
+3. L'elenco a **discesa External Script Editor (Editor** script esterno) consente di scegliere diverse installazioni di Visual Studio. È anche possibile fare clic **su Sfoglia...** nell'elenco a discesa per aggiungere una versione non in elenco.
 
     ![Menu delle preferenze Strumenti esterni nell'editor di Unity Windows](../media/vs/preferences-external-tools.png)
 
@@ -90,9 +90,9 @@ Per impostazione predefinita, Unity deve essere già configurato per usare Visua
 :::zone-end
 :::zone pivot="macos"
 
-1. Nell'editor di Unity selezionare il menu **Unity > Preferenze.**
+1. Nell'editor di Unity selezionare unity **> menu Preferences (Preferenze).**
 2. Selezionare la **scheda Strumenti** esterni a sinistra.
-3. L'elenco a **discesa Editor script** esterni consente di scegliere diverse installazioni di Visual Studio. È anche possibile fare **clic su Sfoglia...** nell'elenco a discesa per aggiungere una versione non in elenco.
+3. L'elenco a **discesa External Script Editor (Editor** script esterno) consente di scegliere diverse installazioni di Visual Studio. È anche possibile fare clic **su Sfoglia...** nell'elenco a discesa per aggiungere una versione non in elenco.
 
     ![Menu delle preferenze Strumenti esterni nell'editor di Unity in macOS](../media/vsm/preferences-external-tools.png)
 
@@ -102,4 +102,4 @@ Per impostazione predefinita, Unity deve essere già configurato per usare Visua
 
 ## <a name="next-steps"></a>Passaggi successivi
 
- Per informazioni su come usare ed eseguire il debug del progetto Unity in Visual Studio, vedere [Using Visual Studio Tools per Unity](using-visual-studio-tools-for-unity.md).
+ Per informazioni su come usare ed eseguire il debug del progetto Unity in Visual Studio, vedere [Uso di Visual Studio Tools per Unity](using-visual-studio-tools-for-unity.md).

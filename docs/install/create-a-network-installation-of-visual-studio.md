@@ -15,35 +15,35 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6f7d0db6d1e8e526f7906ff940c07788fd4bd1b6
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 978a6676acc32336646140ee38e75d499697a457
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126627084"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635607"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
-In alcuni casi un amministratore dell'organizzazione vuole creare un punto di installazione di rete che Visual Studio file che possono essere distribuiti nelle workstation client. Ciò consente di semplificare gli scenari in cui i computer client possono avere autorizzazioni limitate o accesso limitato a Internet o quando i team interni vogliono eseguire test di compatibilità prima che l'organizzazione si standardizzi su una particolare versione del set di strumenti di sviluppo. È stato progettato Visual Studio in modo che un amministratore possa creare un _layout_ di rete che essenzialmente crea una cache di file che si trova in una condivisione di rete statica interna che include tutti i file Visual Studio sia per l'installazione iniziale che per tutti gli aggiornamenti futuri del prodotto.
+A volte un amministratore aziendale vuole creare un punto di installazione di rete che contiene Visual Studio file che possono essere distribuiti nelle workstation client. Ciò consente di semplificare gli scenari in cui i computer client possono avere autorizzazioni limitate o accesso limitato a Internet o quando i team interni vogliono eseguire test di compatibilità prima che l'organizzazione standardizzi una determinata versione del set di strumenti di sviluppo. È stato progettato Visual Studio in modo che un amministratore possa creare un _layout_ di rete che essenzialmente crea una cache di file che si trova in una condivisione di rete statica interna che include tutti i file Visual Studio sia per l'installazione iniziale che per tutti gli aggiornamenti futuri del prodotto.
 
  > [!NOTE]
  >  - Se nell'organizzazione sono in uso più edizioni di Visual Studio (ad esempio, sia Visual Studio 2019 Professional che Visual Studio 2019 Enterprise), è necessario creare una condivisione di installazione di rete separata per ogni edizione.
- >  - È consigliabile decidere come si desidera che i client ricevano gli aggiornamenti del prodotto _prima_ di eseguire l'installazione iniziale del client.  In questo modo è più semplice assicurarsi che le opzioni di configurazione siano impostate correttamente. È possibile scegliere se i client ottengono gli aggiornamenti dal percorso di layout di rete o da Internet. 
+ >  - È consigliabile decidere come si desidera che i client ricevano gli aggiornamenti del prodotto _prima_ di eseguire l'installazione iniziale del client.  In questo modo è più semplice assicurarsi che le opzioni di configurazione siano impostate correttamente. Le opzioni disponibili includono la ricezione degli aggiornamenti da parte dei client dal percorso di layout di rete o da Internet. 
  >  - Il layout di Visual Studio originale e tutti gli aggiornamenti successivi del prodotto devono trovarsi nella stessa directory di rete per garantire il corretto funzionamento delle funzionalità di ripristino e disinstallazione.
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Scaricare il programma di bootstrap di Visual Studio
 
-Scaricare un file del programma di avvio automatico per l'edizione Visual Studio desiderata. Assicurarsi di scegliere **Salva** e quindi Apri **cartella.**
+Scaricare un file del programma di avvio automatico per l'edizione Visual Studio desiderata. Assicurarsi di scegliere **Salva** e quindi Apri **cartella**.
 
 ::: moniker range="vs-2017"
 
-Per ottenere il programma di avvio automatico più recente per Visual Studio 2017 versione 15.9, passare alla pagina delle versioni precedenti di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) e scaricare uno dei file del programma di avvio automatico seguenti:
+Per ottenere il programma di avvio automatico più recente Visual Studio 2017 versione 15.9, passare alla pagina Visual Studio versioni precedenti e scaricare uno dei file del [programma](https://visualstudio.microsoft.com/vs/older-downloads/) di avvio automatico seguenti:
 
 | Edizione                                      | Nome file            |
 |----------------------------------------------|---------------------|
 | Visual Studio 2017 Enterprise versione 15.9   | vs_enterprise.exe   |
 | Visual Studio 2017 Professional versione 15.9 | vs_professional.exe |
-| Visual Studio Build Tools 2017 versione 15.9  | vs_buildtools.exe   |
+| Visual Studio 2017 Build Tools versione 15.9  | vs_buildtools.exe   |
 
 Altri programmi di avvio automatico supportati includono vs_feedbackclient.exe, vs_teamexplorer.exe, vs_testagent.exe, vs_testcontroller.exe e vs_testprofessional.exe.
 
@@ -51,7 +51,7 @@ Altri programmi di avvio automatico supportati includono vs_feedbackclient.exe, 
 
 ::: moniker range="vs-2019"
 
-Per iniziare, scaricare il programma di avvio automatico di Visual Studio 2019 dalla pagina di download di [Visual Studio](https://visualstudio.microsoft.com/downloads) o dalla pagina delle versioni di [Visual Studio 2019](/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione e l'edizione di Visual Studio.  L'eseguibile di installazione o, per essere più specifici, un file del programma di avvio automatico corrisponderà o &mdash; sarà simile a uno dei &mdash; seguenti:
+Per iniziare, scaricare il programma di avvio automatico Visual Studio 2019 dalla pagina di download di Visual Studio o dalla pagina delle versioni [di Visual Studio 2019](/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione e l'edizione di [Visual Studio.](https://visualstudio.microsoft.com/downloads)  Il file eseguibile di installazione o per essere più specifico, un file del programma di avvio automatico corrisponderà o &mdash; sarà simile a uno dei &mdash; seguenti:
 
 | Edizione                    | Scarica                                                                                                                                                                                                                           |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -66,8 +66,8 @@ Altri programmi di avvio automatico supportati [ includonovs_teamexplorer.exe](h
 ::: moniker range=">=vs-2022"
 
 >![!TIP]
-> Le versioni rilasciate Visual Studio 2022 non sono ancora disponibili. I programmi di avvio automatico seguenti sono per la versione di anteprima Visual Studio 2022.
-Per iniziare, scaricare il programma Visual Studio 2022 dalla [pagina Visual Studio download.](https://aka.ms/vs2022preview)
+> Le versioni rilasciate Visual Studio 2022 non sono ancora disponibili, i programmi di avvio automatico seguenti sono per la versione di anteprima di Visual Studio 2022.
+Iniziare scaricando il programma di Visual Studio 2022 dalla pagina [Visual Studio download.](https://aka.ms/vs2022preview)
 
 | Edizione                    | Scarica                                                                             |
 |----------------------------|--------------------------------------------------------------------------------------|
@@ -79,21 +79,21 @@ Per iniziare, scaricare il programma Visual Studio 2022 dalla [pagina Visual Stu
 ::: moniker range="vs-2017"
 
 >[!TIP]
->Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificare la versione, ecco come. In Windows aprire Esplora file, fare clic con il pulsante destro del mouse sul file del programma di avvio automatico, scegliere **Proprietà,** scegliere la **scheda** Dettagli e quindi visualizzare il numero di versione **del** prodotto. Per associare tale numero a una versione di Visual Studio, vedere Visual Studio [numeri di build e date di rilascio.](visual-studio-build-numbers-and-release-dates.md)
+>Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificare la versione, ecco come. In Windows aprire il Esplora file, fare clic con il pulsante destro del  mouse sul file del programma di avvio automatico, scegliere **Proprietà,** scegliere la scheda Dettagli e quindi visualizzare il numero di versione **del** prodotto. Per associare tale numero a una versione di Visual Studio, vedere Visual Studio [numeri di build e date di rilascio](visual-studio-build-numbers-and-release-dates.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificare la versione, ecco come. In Windows aprire Esplora file, fare clic con il pulsante destro del mouse sul file del programma di avvio automatico, scegliere **Proprietà,** scegliere la **scheda** Dettagli e quindi visualizzare il numero di versione **del** prodotto. Per associare tale numero a una versione di Visual Studio, [vedere Visual Studio 2019.](/visualstudio/releases/2019/history)
+>Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificare la versione, ecco come. In Windows aprire il Esplora file, fare clic con il pulsante destro del  mouse sul file del programma di avvio automatico, scegliere **Proprietà,** scegliere la scheda Dettagli e quindi visualizzare il numero di versione **del** prodotto. Per associare tale numero a una versione di Visual Studio, vedere Visual Studio [versioni 2019](/visualstudio/releases/2019/history).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
 >[!TIP]
->Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificare la versione, ecco come. In Windows aprire Esplora file, fare clic con il pulsante destro del mouse sul file del programma di avvio automatico, scegliere **Proprietà,** scegliere la **scheda** Dettagli e quindi visualizzare il numero di versione **del** prodotto. Per associare tale numero a una versione di Visual Studio, [vedere Visual Studio 2022.](/visualstudio/releases/2022/history)
+>Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificare la versione, ecco come. In Windows aprire il Esplora file, fare clic con il pulsante destro del  mouse sul file del programma di avvio automatico, scegliere **Proprietà,** scegliere la scheda Dettagli e quindi visualizzare il numero di versione **del** prodotto. Per associare tale numero a una versione di Visual Studio, vedere [Visual Studio 2022.](/visualstudio/releases/2022/history)
 
 ::: moniker-end
 
@@ -101,10 +101,10 @@ Per iniziare, scaricare il programma Visual Studio 2022 dalla [pagina Visual Stu
 
 Per completare questo passaggio è necessaria una connessione Internet.
 
-Aprire un prompt dei comandi, passare alla directory in cui è stato scaricato il programma di avvio automatico e usare i parametri del programma di avvio automatico come definito nella pagina Usare i parametri della riga di comando per installare [Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) per creare e gestire la cache di installazione di rete. Esempi comuni di creazione di layout iniziali sono illustrati di seguito e in Esempi di parametri della riga di comando [per l Visual Studio installazione](../install/command-line-parameter-examples.md).  
+Aprire un prompt dei comandi, passare alla directory in cui è stato scaricato il programma di avvio automatico e usare i parametri del programma di avvio [automatico come](../install/use-command-line-parameters-to-install-visual-studio.md) definito nella pagina Usare i parametri della riga di comando per installare Visual Studio per creare e gestire la cache di installazione di rete. Esempi comuni di creazione di layout iniziali sono illustrati di seguito e negli esempi di parametri della riga di comando per [l Visual Studio installazione](../install/command-line-parameter-examples.md).  
 
    > [!IMPORTANT]
-   > Un layout iniziale completo per le impostazioni locali di una singola lingua richiede circa 35 GB di spazio su disco per Visual Studio Community e 42 GB per Visual Studio Enterprise. Le [impostazioni locali aggiuntive della lingua](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) richiedono circa mezzo GB ciascuno. Per altre [informazioni, vedi la sezione](#customize-the-network-layout) Personalizzare il layout di rete. Tenere presente che anche gli aggiornamenti del layout successivi devono essere archiviati in questo stesso percorso di rete, quindi prevedere che il contenuto della directory del percorso di layout di rete possa raggiungere dimensioni piuttosto grandi nel tempo.  
+   > Un layout iniziale completo per le singole impostazioni locali della lingua richiede circa 35 GB di spazio su disco per Visual Studio Community e 42 GB per Visual Studio Enterprise. Le [impostazioni locali della lingua](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales) aggiuntive richiedono circa mezzo GB ciascuna. Per altre [informazioni, vedere la](#customize-the-network-layout) sezione Personalizzare il layout di rete. Tenere presente che anche gli aggiornamenti del layout successivi devono essere archiviati in questo stesso percorso di rete, pertanto è necessario prevedere che il contenuto della directory del percorso di layout di rete possa avere dimensioni piuttosto grandi nel tempo.  
 
 - Per creare un layout iniziale di Visual Studio Enterprise con tutti i linguaggi e tutte le funzionalità, eseguire:
 
@@ -116,15 +116,15 @@ Aprire un prompt dei comandi, passare alla directory in cui è stato scaricato i
 
 ## <a name="modify-the-responsejson-file"></a>Modificare il file response.json
 
-È possibile modificare il `response.json` file per impostare i valori predefiniti utilizzati durante l'esecuzione del programma di installazione.  Ad esempio, è possibile configurare il file per selezionare un set specifico di carichi `response.json` di lavoro che devono essere selezionati automaticamente. È anche possibile configurare per specificare se il client deve ricevere solo i file `response.json` aggiornati dal percorso di layout di rete. Per altre informazioni, vedere [Automatizzare l Visual Studio installazione con un file di risposta.](../install/automated-installation-with-response-file.md) 
+È possibile modificare il `response.json` file per impostare i valori predefiniti usati durante l'esecuzione del programma di installazione.  Ad esempio, è possibile configurare il file per selezionare un set specifico di carichi di `response.json` lavoro che devono essere selezionati automaticamente. È anche possibile configurare per specificare se il client deve ricevere solo `response.json` i file aggiornati dal percorso di layout di rete. Per altre informazioni, vedere [Automatizzare l Visual Studio installazione con un file di risposta](../install/automated-installation-with-response-file.md). 
 
-Se si verifica un problema con il programma di avvio automatico di Visual Studio che genera un errore quando lo si associa a un file, vedere Risolvere gli errori correlati alla rete durante l'installazione o l'uso della pagina Visual Studio per altre `response.json` informazioni. [](../install/troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)
+Se si verifica un problema con il programma di avvio automatico Visual Studio che genera un errore quando lo si associa a un file, vedere Risolvere gli errori correlati alla rete quando si installa o si usa la pagina Visual Studio per altre `response.json` informazioni. [](../install/troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copiare il layout in una condivisione di rete
 
 Ospitare il layout in una condivisione di rete in modo che possa essere eseguito dai computer client.
 
-Nell'esempio seguente viene utilizzato [`xcopy`](/windows-server/administration/windows-commands/xcopy/) . È anche possibile usare [`robocopy`](/windows-server/administration/windows-commands/robocopy/) , se lo si desidera.
+Nell'esempio seguente viene utilizzato [`xcopy`](/windows-server/administration/windows-commands/xcopy/) . È anche possibile usare [`robocopy`](/windows-server/administration/windows-commands/robocopy/) , nel caso in cui si desideri.
 
 ::: moniker range="vs-2017"
 
@@ -159,7 +159,7 @@ xcopy /e c:\VSLayout \\server\products\VS2022
 
 Sono disponibili varie opzioni per personalizzare il layout di rete. È possibile, ad esempio, creare un layout parziale che contenga solo un set specifico di [impostazioni locali delle lingue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [carichi di lavoro, componenti e relative dipendenze consigliate o facoltative](workload-and-component-ids.md). Questa soluzione potrebbe essere utile se si prevede di distribuire nelle workstation client solo un subset di carichi di lavoro. I parametri della riga di comando tipici per la personalizzazione del layout includono:
 
-* `--add`per specificare gli [ID dei carichi di lavoro o dei componenti.](workload-and-component-ids.md) <br>Se si usa `--add`, verranno scaricati solo i carichi di lavoro e i componenti specificati con `--add`.  Se non si usa `--add`, verranno scaricati tutti i carichi di lavoro e i componenti.
+* `--add`per specificare gli [ID del carico di lavoro o del componente.](workload-and-component-ids.md) <br>Se si usa `--add`, verranno scaricati solo i carichi di lavoro e i componenti specificati con `--add`.  Se non si usa `--add`, verranno scaricati tutti i carichi di lavoro e i componenti.
 * `--includeRecommended` per includere tutti i componenti consigliati per gli ID di carico di lavoro specificati.
 * `--includeOptional` per includere tutti i componenti consigliati e facoltativi per gli ID di carico di lavoro specificati.
 * `--lang` per specificare le [impostazioni locali delle lingue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
@@ -267,7 +267,7 @@ Quando si installa da un layout, viene acquisito il contenuto che viene installa
 > Se si vuole eseguire l'installazione da un'origine offline in un computer non connesso a Internet, specificare entrambe le `--noWeb` `--noUpdateInstaller` opzioni e . Il primo impedisce il download di carichi di lavoro, componenti e così via aggiornati. Quest'ultimo impedisce al programma di installazione di eseguire l'aggiornamento automatico dal Web.
 
 > [!IMPORTANT]
-> `--noWeb`L'opzione non arresta Visual Studio'installazione in un computer connesso a Internet dal controllo della disponibilità di aggiornamenti. Per altre informazioni, vedere la pagina [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md).
+> L'opzione non arresta Visual Studio l'installazione in un computer connesso a Internet di `--noWeb` controllare la disponibilità di aggiornamenti. Per altre informazioni, vedere la pagina [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md).
 
 ### <a name="error-codes"></a>Codici di errore
 
@@ -281,7 +281,7 @@ Man mano che diventano disponibili nuovi aggiornamenti di prodotto, è possibile
 
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-release"></a>Come creare un layout per una versione precedente di Visual Studio
 
-Prima di tutto è necessario comprendere che esistono due tipi di programmi di avvio automatico Visual Studio, uno che può essere caratterizzato dalle parole "latest", "current", "evergreen" e "tip" e uno che significa essenzialmente "versione fissa". Entrambi i tipi di file del programma di avvio automatico hanno lo stesso nome e il modo migliore per distinguere il tipo è prestare attenzione alla posizione da cui è stato ottenuto. I programmi di avvio automatico Visual Studio disponibili nella pagina di download di [Visual Studio](https://visualstudio.microsoft.com/downloads) sono considerati programmi di avvio automatico Visual Studio sempreverdi e installano sempre (o aggiornano) la versione più recente disponibile nel canale al momento dell'esecuzione del programma di avvio automatico. I Visual Studio bootstrap disponibili nella pagina versioni di [Visual Studio 2019](/visualstudio/releases/2019/history) [Visual Studio 2022](/visualstudio/releases/2022/history) o incorporati all'interno dell'aggiornamento dell'amministratore nel catalogo Microsoft Update installano una particolare versione fissa del prodotto.
+Prima di tutto è necessario comprendere che esistono due tipi di programmi di avvio automatico Visual Studio, uno che può essere caratterizzato dalle parole "latest", "current", "evergreen" e "tip" e uno che significa essenzialmente "versione fissa". Entrambi i tipi di file del programma di avvio automatico hanno lo stesso nome e il modo migliore per distinguere il tipo è prestare attenzione alla posizione da cui è stato ottenuto. I programmi di avvio automatico Visual Studio disponibili nella pagina di download [di Visual Studio](https://visualstudio.microsoft.com/downloads) sono considerati programmi di avvio automatico Visual Studio sempreverdi e installano sempre (o aggiornano) la versione più recente disponibile nel canale al momento dell'esecuzione del programma di avvio automatico. I Visual Studio bootstrap disponibili nella pagina versioni di [Visual Studio 2019](/visualstudio/releases/2019/history) [Visual Studio 2022](/visualstudio/releases/2022/history) o incorporati all'interno dell'aggiornamento amministratore nel catalogo Microsoft Update installano una particolare versione fissa del prodotto.
 
 Pertanto, se si scarica un programma di avvio automatico Visual Studio evergreen e lo si esegue tra sei mesi, verrà installata la versione di Visual Studio corrente al momento dell'esecuzione del programma di avvio automatico. È progettato per installare sempre i bit più recenti e mantenerti aggiornato.
 
@@ -295,7 +295,7 @@ Se si verifica un problema con l'installazione offline, è importante segnalarlo
 
 Per i problemi correlati all'installazione è disponibile anche un'opzione di supporto che offre una [**chat per l'installazione**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese).
 
-Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la pagina [Commenti e suggerimenti](../ide/feedback-options.md).
+Sono disponibili anche altre opzioni per il supporto. Vedere il [portale per Community](https://developercommunity.visualstudio.com/home).
 
 ## <a name="see-also"></a>Vedi anche
 

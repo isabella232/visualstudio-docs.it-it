@@ -13,18 +13,18 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3902d8119b8de8eba49cf28a7730cc41d505438
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1450cea98601c551545fb74f7aa925701f43068f
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107069"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635841"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Guida introduttiva: Analizzare i dati di utilizzo della CPU Visual Studio (C#, Visual Basic)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Avvio rapido: Analizzare i dati di utilizzo della CPU in Visual Studio (C#, Visual Basic)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina lo strumento che identifica eventuali colli di bottiglia delle prestazioni dovuti a un uso intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
-L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. Il Profiler prestazioni offre molte altre opzioni per registrare e analizzare questo tipo di dati. [PerfTips,](../profiling/perftips.md)un altro strumento di profilatura integrato nel debugger, consente anche di eseguire il codice un'istruzione alla volta e di identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
+L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se lo strumento **Utilizzo CPU** descritto qui non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi tipi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. Il Profiler prestazioni offre molte altre opzioni per registrare e analizzare questo tipo di dati. [PerfTips,](../profiling/perftips.md)un altro strumento di profilatura integrato nel debugger, consente anche di eseguire il codice un'istruzione alla volta e identificare il tempo necessario per il completamento di determinate funzioni o blocchi di codice.
 
 Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**. In Windows 7 e versioni successive, è possibile usare lo strumento di relazione finale, il [profiler delle prestazioni](../profiling/profiling-feature-tour.md).
 
@@ -33,33 +33,33 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 1. Aprire Visual Studio e creare il progetto.
 
    ::: moniker range="vs-2017"
-   Nella barra dei menu superiore scegliere **File** > **Nuovo** > **Project**.
+   Nella barra dei menu superiore scegliere **File** > **nuovo** > **Project**.
 
-   Nella finestra **di dialogo Project** nel riquadro sinistro espandere **C#** o **Visual Basic** e quindi scegliere **.NET Core.** Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al progetto *il nome MyProfilerApp*.
+   Nella finestra **di dialogo Nuovo Project** nel riquadro sinistro espandere **C#** o **Visual Basic** e quindi **scegliere .NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Assegnare quindi al progetto il *nome MyProfilerApp*.
 
    Se non viene visualizzato il modello di progetto **Applicazione console (.NET Core)**, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
    ::: moniker-end
    ::: moniker range=">=vs-2019"
    Se la finestra iniziale non è aperta, scegliere **Finestra** > **iniziale file**.
 
-   Nella finestra iniziale scegliere **Crea un nuovo progetto.**
+   Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C#** o **Visual Basic** dall'elenco Linguaggio e quindi scegliere Windows **dall'elenco** Piattaforma .
+   Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C#** **o** Visual Basic dall'elenco Linguaggio e quindi scegliere Windows **dall'elenco** Piattaforma.
 
-   Dopo aver applicato i filtri del linguaggio e della piattaforma, scegliere il modello **App** console per .NET Core e quindi **scegliere Avanti.**
+   Dopo aver applicato il linguaggio e i filtri della piattaforma, scegliere il modello **App console** per .NET Core e quindi **scegliere Avanti.**
 
    > [!NOTE]
-   > Se il modello App **console non viene** visualizzato, è possibile installarlo dalla finestra Crea un **nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
+   > Se il modello App **console** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo** progetto. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**. Scegliere quindi il carico di lavoro **Sviluppo multipiattaforma .NET Core** nel programma di installazione di Visual Studio.
 
-   Nella finestra **Configura il nuovo progetto** digitare o immettere *MyProfilerApp* nella casella **Project nome.** Scegliere quindi **Avanti.**
+   Nella finestra **Configura il nuovo progetto** digitare o immettere *MyProfilerApp* nella casella Project **nome.** Scegliere quindi **Avanti**.
 
-   Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea.**
+   Scegliere il framework di destinazione consigliato o .NET 6 e quindi scegliere **Crea**.
 
    ::: moniker-end
 
    Visual Studio aprirà il nuovo progetto.
 
-2. Aprire *Program.cs* e sostituire tutto il codice con il codice seguente:
+2. Aprire *Program.cs e* sostituire tutto il codice con il codice seguente:
 
     ```csharp
     using System;
@@ -178,7 +178,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     ```
 
     > [!NOTE]
-    > In Visual Basic assicurarsi che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà** Oggetto di  >  **avvio**  >  **dell'applicazione**).
+    > In Visual Basic assicurarsi che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà Oggetto** di  >  **avvio dell'applicazione**  >  ).
 
 ## <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
 
@@ -198,9 +198,9 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
     Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare nuovamente la finestra, fare clic su **Debug**  >  **Windows**  >  **Mostra Strumenti di diagnostica**.
+3. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su  >  **Debug Windows** Mostra  >  **Strumenti di diagnostica**.
 
-4. Fare **clic su Debug**  >  **Avvia** debug (o Avvia sulla barra degli strumenti o **F5).** 
+4. Fare **clic su Debug** Avvia  >  **debug** **(o Avvia** sulla barra degli strumenti o **F5).**
 
      Al termine del caricamento dell'applicazione viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
 

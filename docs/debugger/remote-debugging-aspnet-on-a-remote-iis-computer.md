@@ -1,6 +1,6 @@
 ---
 title: Debug remoto ASP.NET Core in un computer IIS remoto | Microsoft Docs
-description: Eseguire il ASP.NET Core di un'applicazione distribuita in un computer Internet Information Services remoto (IIS) usando Visual Studio debugger remoto.
+description: Eseguire il debug ASP.NET Core'applicazione distribuita in un computer Internet Information Services remoto (IIS) usando il debugger Visual Studio remoto.
 ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 08/27/2021
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bc4c527506c80aaf8d4a0d60a31bd1d2adb4d31f
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 376a0f438e17d1023644e545812c50cf35b34dca
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427226"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635933"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Debug remoto ASP.NET Core in un computer IIS remoto in Visual Studio
 
@@ -33,10 +33,10 @@ Questa guida illustra come impostare e configurare un Visual Studio ASP.NET Core
 Visual Studio 2019 è necessario per seguire la procedura illustrata in questo articolo.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2017 è necessario per seguire la procedura illustrata in questo articolo.
+Visual Studio 2017 è necessario seguire la procedura illustrata in questo articolo.
 ::: moniker-end
 
-Queste procedure sono state testate in queste configurazioni del server:
+Queste procedure sono state testate in queste configurazioni server:
 * Windows Server 2012 R2 e IIS 8
 * Windows Server 2016 e IIS 10
 * Windows Server 2019 e IIS 10
@@ -51,7 +51,7 @@ Questo articolo include i passaggi per configurare una configurazione di base di
 
 * Se l'app è in esecuzione in IIS e si vuole solo scaricare il debugger remoto e avviare il debug, passare a Scaricare e installare gli strumenti remoti [in Windows Server.](#BKMK_msvsmon)
 
-* Per assicurarsi che l'app sia configurata, distribuita ed eseguita correttamente in IIS in modo da poter eseguire il debug, seguire tutti i passaggi di questo argomento.
+* Per assicurarsi che l'app sia configurata, distribuita ed eseguita correttamente in IIS in modo da poter eseguire il debug, seguire tutti i passaggi descritti in questo argomento.
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Creare l ASP.NET Core app applicazione nel computer Visual Studio
 
@@ -60,10 +60,10 @@ Questo articolo include i passaggi per configurare una configurazione di base di
     ::: moniker range=">=vs-2019"
     In Visual Studio 2019 scegliere **Crea un nuovo progetto** nella finestra iniziale. Se la finestra iniziale non è aperta, scegliere **Finestra**  >  **iniziale file**. Digitare **app Web,** scegliere **C#** come linguaggio, quindi ASP.NET Core **Applicazione Web (Model-View-Controller)** e infine **scegliere Avanti.** Nella schermata successiva assegnare al progetto il **nome MyASPApp** e quindi scegliere **Avanti.**
 
-    Scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea.**
+    Scegliere il framework di destinazione consigliato o .NET 6 e quindi scegliere **Crea.**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    In Visual Studio 2017 scegliere **File > Nuovo > Project**, quindi selezionare Visual **C# > Web > ASP.NET Core Web Application**. Nella sezione ASP.NET Core modelli selezionare **Applicazione Web (Model-View-Controller).** Assicurarsi che sia ASP.NET Core 2.1, che l'opzione Abilita supporto  **Docker** non sia selezionata e che l'opzione Autenticazione sia impostata su Nessuna **autenticazione**. Assegnare al progetto **il nome MyASPApp**.
+    In Visual Studio 2017 scegliere **File > Nuovo > Project**, quindi selezionare **Visual C# > Web > ASP.NET Core Web Application**. Nella sezione ASP.NET Core modelli selezionare **Applicazione Web (Model-View-Controller).** Assicurarsi che sia ASP.NET Core 2.1, che l'opzione Abilita supporto  **Docker** non sia selezionata e che l'opzione Autenticazione sia impostata su **Nessuna autenticazione**. Assegnare al progetto **il nome MyASPApp**.
     ::: moniker-end
 
 4. Aprire il file About.cshtml.cs e impostare un punto di interruzione nel metodo . Nei modelli precedenti aprire invece HomeController.cs e impostare il punto di `OnGet` interruzione nel `About()` metodo .
@@ -74,7 +74,7 @@ Questo articolo include i passaggi per configurare una configurazione di base di
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Aggiornare le impostazioni di sicurezza del browser Windows Server
 
-Se la configurazione della sicurezza avanzata è abilitata in Internet Explorer (abilitata per impostazione predefinita), potrebbe essere necessario aggiungere alcuni domini come siti attendibili per consentire il download di alcuni componenti del server Web. Aggiungere i siti attendibili selezionando Opzioni **Internet > Sicurezza > siti attendibili > siti attendibili**. Aggiungere i domini seguenti.
+Se la configurazione della sicurezza avanzata è abilitata in Internet Explorer (abilitata per impostazione predefinita), potrebbe essere necessario aggiungere alcuni domini come siti attendibili per consentire il download di alcuni componenti del server Web. Aggiungere i siti attendibili selezionando Opzioni **Internet > Sicurezza > siti > attendibili**. Aggiungere i domini seguenti.
 
 - microsoft.com
 - go.microsoft.com
@@ -136,11 +136,11 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
    Scegliere **Modifica** per modificare il profilo e quindi scegliere **Impostazioni**. Scegliere una **configurazione** di debug e quindi scegliere **Rimuovi file aggiuntivi nella destinazione** nelle opzioni **Pubblicazione** file.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   Nella finestra **Impostazioni,** abilitare il debug facendo clic su Avanti **,** scegliere una configurazione **di debug** e quindi scegliere Rimuovi file aggiuntivi nella destinazione nelle **opzioni Pubblicazione** file. 
+   Nella finestra **Impostazioni,** abilitare il debug facendo clic su Avanti **,** scegliere una configurazione di **debug** e quindi scegliere Rimuovi file aggiuntivi nella destinazione nelle **opzioni Pubblicazione** file. 
    ::: moniker-end
 
    > [!IMPORTANT]
-   > Se si sceglie una configurazione versione, si disabilita il debug nel file *web.config* durante la pubblicazione.
+   > Se si sceglie una configurazione versione, il debug viene disabilitato nel file *web.config* quando si esegue la pubblicazione.
 
 1. Fare **clic su Salva** e quindi ripubblicare l'app.
 
@@ -152,15 +152,15 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 1. Aprire Windows Explorer e creare una nuova cartella, **C:\Publish,** in cui in seguito si distribuirà ASP.NET Core progetto.
 
-2. Se non è già aperto, aprire Gestione **Internet Information Services (IIS).** Nel riquadro sinistro di Server Manager selezionare **IIS.** Fare clic con il pulsante destro del mouse sul server e selezionare **Gestione Internet Information Services (IIS)**.
+2. Se non è già aperto, aprire gestione **Internet Information Services (IIS).** (Nel riquadro sinistro di Server Manager selezionare **IIS.** Fare clic con il pulsante destro del mouse sul server e selezionare **Gestione Internet Information Services (IIS)**.
 
 3. In **Connessioni** nel riquadro sinistro passare a **Siti**.
 
-4. Selezionare il **sito Web predefinito,** scegliere **Basic Impostazioni** e impostare **Percorso fisico** su **C:\Publish.**
+4. Selezionare sito **Web predefinito,** scegliere **Basic Impostazioni** e impostare **percorso fisico** **su C:\Publish.**
 
 5. Fare clic con il pulsante destro del mouse sul nodo **Sito Web predefinito** e scegliere **Aggiungi applicazione**.
 
-6. Impostare il **campo Alias** **su MyASPApp**, accettare il pool di applicazioni predefinito (**DefaultAppPool**) e impostare **percorso fisico** su **C:\Publish**.
+6. Impostare il **campo Alias** su **MyASPApp**, accettare il pool di applicazioni predefinito (**DefaultAppPool**) e impostare **percorso fisico** su **C:\Publish**.
 
 7. In **Connessioni** selezionare **Pool di applicazioni.** Aprire **DefaultAppPool e** impostare il campo Pool di applicazioni **su Nessun codice gestito.**
 
@@ -189,7 +189,7 @@ Scaricare la versione degli strumenti remoti che corrisponde alla versione di Vi
 
 Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [Eseguire il debugger remoto come servizio](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Connettersi all ASP.NET appalto dal computer Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Connettersi all'applicazione ASP.NET dal computer Visual Studio locale
 
 1. Nel computer Visual Studio aprire la soluzione di cui si sta tentando di eseguire il debug (**MyASPApp** se si stanno seguendo tutti i passaggi di questo articolo).
 2. In Visual Studio fare clic su **Debug > collega a processo** (CTRL+ALT+P).
@@ -223,11 +223,11 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [Eseg
 
 6. Digitare la prima lettera del nome del processo per trovare rapidamente l'app.
 
-    * Se si usa il modello [di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) in IIS, selezionare il **processo** diw3wp.execorretto. A partire da .NET Core 3, si tratta dell'impostazione predefinita.
+    * Se si usa il modello [di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) in IIS, selezionare il **processo** diw3wp.execorretto. A partire da .NET Core 3, questa è l'impostazione predefinita.
 
-    * In caso contrario, selezionare **ildotnet.exe** processo. Si tratta del modello di hosting out-of-process.
+    * In caso contrario, selezionare **dotnet.exe** processo. Si tratta del modello di hosting out-of-process.
 
-    Se sono presenti più processi che *w3wp.exe* o *dotnet.exe,* selezionare la **colonna Nome** utente. In alcuni scenari la colonna **Nome utente** mostra il nome del pool di app, ad esempio **IIS APPPOOL\DefaultAppPool.** Se viene visualizzato il pool di app, ma non è univoco, creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug e quindi è possibile trovarlo facilmente nella colonna **Nome** utente.
+    Se sono presenti più processi che *w3wp.exe* o *dotnet.exe,* controllare la **colonna Nome** utente. In alcuni scenari la colonna **Nome utente** mostra il nome del pool di app, ad esempio **IIS APPPOOL\DefaultAppPool.** Se viene visualizzato il pool di app, ma non è univoco, creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug e quindi è possibile trovarlo facilmente nella colonna **Nome** utente.
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -273,13 +273,13 @@ Porte necessarie:
 * 4024 : obbligatorio per il debug remoto da Visual Studio 2019 (per altre informazioni, vedere [Assegnazioni](../debugger/remote-debugger-port-assignments.md) delle porte del debugger remoto).
 ::: moniker-end
 ::: moniker range="vs-2017"
-* 4022 : obbligatorio per il debug remoto da Visual Studio 2017 (per altre informazioni, vedere [Assegnazioni](../debugger/remote-debugger-port-assignments.md) di porte del debugger remoto).
+* 4022 - Obbligatorio per il debug remoto da Visual Studio 2017 (per altre informazioni, vedere [Assegnazioni](../debugger/remote-debugger-port-assignments.md) delle porte del debugger remoto).
 ::: moniker-end
-* UDP 3702: (facoltativo) Porta di  individuazione consente di usare il pulsante Trova quando ci si connette al debugger remoto in Visual Studio.
+* UDP 3702 : (facoltativo) Porta  di individuazione consente di usare il pulsante Trova quando ci si connette al debugger remoto in Visual Studio.
 
 1. Per aprire una porta in Windows Server, aprire il menu **Start,** cercare Windows **Firewall con sicurezza avanzata**.
 
-2. Scegliere quindi **Regole in ingresso > nuova regola > porta** e quindi fare clic su **Avanti.** Per UDP 3702 scegliere **Regole in** uscita.
+2. Scegliere quindi **Regole in ingresso > Nuova regola > porta** e quindi fare clic su **Avanti.** Per UDP 3702 scegliere **regole in** uscita.
 
 3. In **Porte locali specifiche** immettere il numero di porta e fare clic su **Avanti.**
 

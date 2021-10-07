@@ -16,12 +16,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: a3d3591fab5eaed2d1051212dae5c626c0f501e3
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 1b2b4419afdd6f44f9d70a3f3ab23c9ce75c86bb
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126628001"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635373"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
 
@@ -129,9 +129,9 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
     ::: moniker range=">=vs-2019"
     Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL+Q** per aprire la casella di ricerca, digitare **console,** scegliere **Modelli** e quindi scegliere **App console** per .NET Core o App console **(.NET Framework)** per C#. Nella finestra di dialogo visualizzata scegliere **Avanti.**
 
-    Digitare quindi un nome come **Mixed_Mode_Calling_App** e fare clic su **Avanti** o **Crea,** a seconda dell'opzione disponibile.
+    Digitare quindi un nome come **Mixed_Mode_Calling_App** fare clic su **Avanti** o **Crea,** a seconda dell'opzione disponibile.
 
-    Per .NET Core scegliere il framework di destinazione consigliato (.NET Core 3.1) o .NET 5 e quindi scegliere **Crea**.
+    Per .NET Core scegliere il framework di destinazione consigliato o .NET 6 e quindi **scegliere Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Nella barra dei menu superiore scegliere **File**  >  **nuovo**  >  **Project**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**.
@@ -176,7 +176,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 1. Nel nuovo codice sostituire il percorso del file in `[DllImport]` con il percorso per la DLL *Mixed_Mode_Debugging.dll* appena creata. Vedere il commento del codice per i suggerimenti. Assicurarsi di sostituire il segnaposto *username*.
 
-1. Selezionare **Salva**  >  **file Program.cs** o premere **CTRL** + **S** per salvare il file.
+1. Selezionare **File**  >  **Save Program.cs (Salva file Program.cs)** o premere **CTRL** + **S** per salvare il file.
 
 ## <a name="configure-mixed-mode-debugging"></a>Configurare il debug in modalità mista
 
@@ -218,7 +218,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 1. Premere nuovamente **F11** per fare avanzare il debugger di una riga.
 
-1. Premere **MAIUSC** + **F11** o selezionare **Esci** da debug  >  **per** continuare l'esecuzione e sospendere nuovamente l'esecuzione nell'app gestita.
+1. Premere **MAIUSC** + **F11 o** selezionare **Debug**  >  **istruzione/uscita** per continuare l'esecuzione e sospendere nuovamente l'esecuzione nell'app gestita.
 
 1. Premere **F5** o selezionare la freccia verde per continuare il debug dell'app.
 

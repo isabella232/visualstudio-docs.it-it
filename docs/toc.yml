@@ -168,7 +168,7 @@
   items:
     - name: C++ >>
       href: /cpp/get-started/tutorial-console-cpp
-    - name: C#   >>
+    - name: C#  >>
       href: get-started/csharp/
     - name: Visual Basic  >>
       href: get-started/visual-basic/
@@ -1460,10 +1460,8 @@
       href: ide/reference/connected-experiences.md
     - name: Risoluzione degli errori IDE
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-- name: Invia commenti
+- name: Inviare un feedback
   items:
-    - name: Panoramica
-      href: ide/feedback-options.md
     - name: Segnalare un problema
       items:
         - name: Segnalare un problema

@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Visual Studio di sviluppo di giochi
-summary: 'Informazioni su come creare giochi usando Visual Studio, Visual Studio per Mac e gli strumenti principali che integrano con come Unity, Unreal Engine e altro ancora.'
+title: Visual Studio sullo sviluppo di giochi
+summary: 'Informazioni su come creare giochi usando Visual Studio, Visual Studio per Mac e gli strumenti principali con cui si integrano, ad esempio Unity, Unreal Engine e altro ancora.'
 brand: visual-studio
 metadata:
-  title: Visual Studio documentazione sullo sviluppo di giochi | Microsoft Docs
+  title: Visual Studio di sviluppo di giochi | Microsoft Docs
   description: Questo articolo presenta le funzionalità di Visual Studio per lo sviluppo di giochi.
   author: therealjohn
   ms.author: johmil
@@ -35,11 +35,11 @@ productDirectory:
       imageSrc: unity/media/unity-logo.png
       links:
         - url: unity/get-started/visual-studio-tools-for-unity.md
-          text: Tour Visual Studio Tools per Unity
+          text: Presentazione Visual Studio Tools per Unity
         - url: unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
           text: Introduzione a Visual Studio e Unity
         - url: unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
-          text: Risoluzione dei Visual Studio Tools per Unity
+          text: Risoluzione dei problemi Visual Studio Tools per Unity
     - title: MonoGame
       imageSrc: monogame/media/monogame-logo.png
       links:
@@ -53,26 +53,26 @@ productDirectory:
       imageSrc: unreal/media/unreal-engine-logo.png
       links:
         - url: 'https://www.unrealengine.com/features'
-          text: Panoramica del motore Unreal
-        - url: 'https://docs.unrealengine.com/GettingStarted/index.html'
-          text: Introduzione al motore Unreal
-        - url: 'https://docs.unrealengine.com/Programming/Development/VisualStudioSetup/index.html'
+          text: Panoramica di Unreal Engine
+        - url: 'https://docs.unrealengine.com/4.27/en-US/Basics/GettingStarted/'
+          text: Introduzione a Unreal Engine
+        - url: 'https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/VisualStudioSetup/'
           text: Configurazione di Visual Studio per Unreal Engine
 conceptualContent:
-  title: Alzare di livello con Visual Studio
+  title: Livello superiore con Visual Studio
   summary: 'Altre informazioni su modifica del codice, debug, compilazione e altro ancora con Visual Studio.'
   items:
     - title: Informazioni su come usare Visual Studio
       links:
         - text: Avviare una presentazione guidata
-          url: /docs/get-started/visual-studio-ide.md
+          url: /visualstudio/get-started/visual-studio-ide
           itemType: overview
         - text: Scrivere e modificare il codice
-          url: /docs/ide/index-writing-code.yml
+          url: /visualstudio/ide/index-writing-code
           itemType: tutorial
         - text: Funzionalità di debug generali
           itemType: tutorial
-          url: /docs/debugger/debugger-feature-tour.md
+          url: /visualstudio/debugger/debugger-feature-tour
     - title: Eseguire un'esercitazione
       links:
         - text: Il primo gioco con Unity
